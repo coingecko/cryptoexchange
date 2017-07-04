@@ -1,8 +1,8 @@
 require "spec_helper"
 
-RSpec.describe CryptoexchangeRuby do
+RSpec.describe Cryptoexchange do
   it "has a version number" do
-    expect(CryptoexchangeRuby::VERSION).not_to be nil
+    expect(Cryptoexchange::VERSION).not_to be nil
   end
 
   it "does something useful" do

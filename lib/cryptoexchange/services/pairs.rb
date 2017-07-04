@@ -1,4 +1,4 @@
-module CryptoexchangeRuby
+module Cryptoexchange
   module Services
     class Pairs
       def fetch(endpoint)

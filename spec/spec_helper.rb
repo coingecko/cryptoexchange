@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "cryptoexchange_ruby"
+require "cryptoexchange"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

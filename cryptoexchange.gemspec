@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'cryptoexchange_ruby/version'
+require 'cryptoexchange/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "cryptoexchange_ruby"
-  spec.version       = CryptoexchangeRuby::VERSION
+  spec.name          = "cryptoexchange"
+  spec.version       = Cryptoexchange::VERSION
   spec.authors       = ["TM Lee"]
   spec.email         = ["tm89lee@gmail.com"]
 

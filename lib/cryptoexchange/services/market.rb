@@ -1,4 +1,4 @@
-module CryptoexchangeRuby
+module Cryptoexchange
   module Services
     class Market
       def fetch(endpoint)
