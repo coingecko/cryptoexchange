@@ -8,6 +8,14 @@ module Cryptoexchange
         @target = params[:target]
         @market = params[:market]
       end
+
+      def target
+        @target.upcase
+      end
+
+      def base
+        @base.upcase
+      end
     end
   end
 end
