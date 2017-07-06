@@ -17,9 +17,10 @@ module Cryptoexchange::Exchanges
             base = currency_pair[0..2]
             target = currency_pair[3..-1]
 
-            market_pair = Cryptopia::Models::MarketPair.new
+            market_pair = Gatecoin::Models::MarketPair.new
             market_pair.base = base
             market_pair.target = target
+            market_pair.market = Gatecoin::Market::NAME
             market_pairs << market_pair
           end
           market_pairs
