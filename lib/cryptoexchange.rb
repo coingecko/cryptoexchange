@@ -16,6 +16,12 @@ require "cryptoexchange/exchanges/gatecoin/models/market_pair"
 require "cryptoexchange/exchanges/gatecoin/services/market"
 require "cryptoexchange/exchanges/gatecoin/services/pairs"
 
+require "cryptoexchange/exchanges/coinone/market"
+require "cryptoexchange/exchanges/coinone/models/ticker"
+require "cryptoexchange/exchanges/coinone/models/market_pair"
+require "cryptoexchange/exchanges/coinone/services/market"
+require "cryptoexchange/exchanges/coinone/services/pairs"
+
 require "http"
 
 module Cryptoexchange
