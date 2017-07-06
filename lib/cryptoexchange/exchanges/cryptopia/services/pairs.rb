@@ -17,6 +17,7 @@ module Cryptoexchange::Exchanges
             market_pair = Cryptopia::Models::MarketPair.new
             market_pair.base = base
             market_pair.target = target
+            market_pair.market = Cryptopia::Market::NAME
             market_pairs << market_pair
           end
           market_pairs

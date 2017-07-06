@@ -15,28 +15,22 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          # base
-          # target
-          # market (exchange_str)
-          # last
-          # bid
-          # ask
-          # high
-          # low
-          # avg
-          # volume
-          # timestamp
-
           data = output['Data']
           base, target = data['Label'].split('/')
 
           ticker = Cryptopia::Models::Ticker.new
           ticker.base = base
           ticker.target = target
-          ticker.market = 'cryptopia'
+          ticker.market = Cryptopia::Market::NAME
           ticker.last = data['LastPrice']
-          ticker.volume = data['Volume'] # TODO: Check if this is base denominated?
+          ticker.bid = data['BidPrice']
+          ticker.ask = data['AskPrice']
+          ticker.high = data['High']
+          ticker.low = data['Low']
+          ticker.volume = data['Volume']
+          ticker.change = data['Change']
           ticker.timestamp = DateTime.now.to_time.to_i
+          ticker.payload = data
           ticker
         end
       end
