@@ -21,7 +21,6 @@ module Cryptoexchange::Exchanges
           # ask
           # high
           # low
-          # avg
           # volume
           # timestamp
 
@@ -40,8 +39,8 @@ module Cryptoexchange::Exchanges
           ticker.high = ticker_match['high']
           ticker.low = ticker_match['low']
           ticker.volume = ticker_match['volume'] # TODO: Check if it is base denominated?
-          ticker.avg = ticker_match['vwap']
           ticker.timestamp = ticker_match['createDateTime'].to_i
+          ticker.payload = ticker_match
           ticker
         end
       end
