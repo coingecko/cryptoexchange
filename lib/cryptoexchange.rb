@@ -6,6 +6,7 @@ require "cryptoexchange/services/pairs"
 
 %w(
   bitflyer
+  coincheck
   coinone
   cryptopia
   gatecoin

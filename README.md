@@ -38,41 +38,41 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 
 ## Roadmap
 
-| Exchange      |Ticker | Order Book|Trade 	|Account|
-| ------------- |-------| ----------|-------|-------|
-| ANX | 		|			|		|		|
-| Gatecoin      | 	Y	|			|		|		|
-| BTCC      | 		|			|		|		|
-| OKCoin      | 		|			|		|		|
-| LakeBTC      | 		|			|		|		|
-| Huobi      | 		|			|		|		|
-| Yunbi      | 		|			|		|		|
-| BTC38      | 		|			|		|		|
-| CHBTC      | 		|			|		|		|
-| Bitstamp      | 		|			|		|		|
-| Bittrex      | 		|			|		|		|
-| GDAX      | 		|			|		|		|
-| Gemini      | 		|			|		|		|
-| Kraken      | 		|			|		|		|
-| Poloniex      | 		|			|		|		|
-| Coincheck      | 		|			|		|		|
-| Bitflyer      | 		|			|		|		|
-| Quoine      | 		|			|		|		|
-| QuadrigaCX      | 		|			|		|		|
-| Unocoin      | 		|			|		|		|
-| Coinone      | 	Y	|			|		|		|
-| Korbit     | 		|			|		|		|
-| Bithumb      | 		|			|		|		|
-| Luno      | 		|			|		|		|
-| BTC-e      | 		|			|		|		|
-| Bleutrade      | 		|			|		|		|
-| Yobit      | 		|			|		|		|
-| Bitfinex      | 		|			|		|		|
-| BTER      | 		|			|		|		|
-| Cryptopia      | 	Y	|			|		|		|
-| Livecoin      | 		|			|		|		|
-| Nova Exchange      | 		|			|		|		|
-| Bitcoin Indonesia      | 		|			|		|		|
+| Exchange          | Ticker  | Order Book | Trade   | Account |
+| ----------------- | ------- | ---------- | ------- | ------- |
+| ANX               |         |            |         |         |
+| Gatecoin          | Y       |            |         |         |
+| BTCC              |         |            |         |         |
+| OKCoin            |         |            |         |         |
+| LakeBTC           |         |            |         |         |
+| Huobi             |         |            |         |         |
+| Yunbi             |         |            |         |         |
+| BTC38             |         |            |         |         |
+| CHBTC             |         |            |         |         |
+| Bitstamp          |         |            |         |         |
+| Bittrex           |         |            |         |         |
+| GDAX              |         |            |         |         |
+| Gemini            |         |            |         |         |
+| Kraken            |         |            |         |         |
+| Poloniex          |         |            |         |         |
+| Coincheck         | Y       |            |         |         |
+| Bitflyer          | Y       |            |         |         |
+| Quoine            |         |            |         |         |
+| QuadrigaCX        |         |            |         |         |
+| Unocoin           |         |            |         |         |
+| Coinone           | Y       |            |         |         |
+| Korbit            |         |            |         |         |
+| Bithumb           |         |            |         |         |
+| Luno              |         |            |         |         |
+| BTC-e             |         |            |         |         |
+| Bleutrade         |         |            |         |         |
+| Yobit             |         |            |         |         |
+| Bitfinex          |         |            |         |         |
+| BTER              |         |            |         |         |
+| Cryptopia         | Y       |            |         |         |
+| Livecoin          |         |            |         |         |
+| Nova Exchange     |         |            |         |         |
+| Bitcoin Indonesia |         |            |         |         |
 
 
 
