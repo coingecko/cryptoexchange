@@ -2,10 +2,11 @@ module Cryptoexchange::Exchanges
   module Gatecoin
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
+        MARKET = Gatecoin::Market
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Gatecoin::Market::API_URL}/Public/LiveTickers"
 
         def fetch
-          output = super(PAIRS_URL)
+          output = super
           adapt(output)
         end
 
@@ -20,7 +21,7 @@ module Cryptoexchange::Exchanges
             market_pair = Gatecoin::Models::MarketPair.new
             market_pair.base = base
             market_pair.target = target
-            market_pair.market = Gatecoin::Market::NAME
+            market_pair.market = MARKET::NAME
             market_pairs << market_pair
           end
           market_pairs
