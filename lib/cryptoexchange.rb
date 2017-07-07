@@ -11,6 +11,7 @@ require "cryptoexchange/services/pairs"
   korbit
   cryptopia
   gatecoin
+  livecoin
 ).each do |market|
   require "cryptoexchange/exchanges/#{market}/market"
   require "cryptoexchange/exchanges/#{market}/models/ticker"
