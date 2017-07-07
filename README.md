@@ -22,6 +22,44 @@ Or install it yourself as:
 
     $ gem install cryptoexchange
 
+## Exchanges Supported
+
+| Exchange          | Ticker  | Order Book | Trade   | Account | Market List |
+| ----------------- | ------- | ---------- | ------- | ------- | ----------- |
+| ANX               |         |            |         |         |             |
+| Gatecoin          | Y       |            |         |         | Y           |
+| BTCC              |         |            |         |         |             |
+| OKCoin            |         |            |         |         |             |
+| LakeBTC           |         |            |         |         |             |
+| Huobi             |         |            |         |         |             |
+| Yunbi             |         |            |         |         |             |
+| BTC38             |         |            |         |         |             |
+| CHBTC             |         |            |         |         |             |
+| Bitstamp          |         |            |         |         |             |
+| Bittrex           |         |            |         |         |             |
+| GDAX              |         |            |         |         |             |
+| Gemini            |         |            |         |         |             |
+| Kraken            |         |            |         |         |             |
+| Poloniex          |         |            |         |         |             |
+| Coincheck         | Y       |            |         |         | User-Defined|
+| Bitflyer          | Y       |            |         |         | Y           |
+| Quoine            |         |            |         |         |             |
+| QuadrigaCX        |         |            |         |         |             |
+| Unocoin           |         |            |         |         |             |
+| Coinone           | Y       |            |         |         | Y           |
+| Korbit            | Y       |            |         |         | User-Defined|
+| Bithumb           |         |            |         |         |             |
+| Luno              |         |            |         |         |             |
+| BTC-e             |         |            |         |         |             |
+| Bleutrade         |         |            |         |         |             |
+| Yobit             |         |            |         |         |             |
+| Bitfinex          |         |            |         |         |             |
+| BTER              |         |            |         |         |             |
+| Cryptopia         | Y       |            |         |         | Y           |
+| Livecoin          |         |            |         |         |             |
+| Nova Exchange     |         |            |         |         |             |
+| Bitcoin Indonesia |         |            |         |         |             |
+
 ## Usage
 
 TODO: Write usage instructions here
@@ -35,46 +73,6 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/cryptoexchange. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Roadmap
-
-| Exchange          | Ticker  | Order Book | Trade   | Account |
-| ----------------- | ------- | ---------- | ------- | ------- |
-| ANX               |         |            |         |         |
-| Gatecoin          | Y       |            |         |         |
-| BTCC              |         |            |         |         |
-| OKCoin            |         |            |         |         |
-| LakeBTC           |         |            |         |         |
-| Huobi             |         |            |         |         |
-| Yunbi             |         |            |         |         |
-| BTC38             |         |            |         |         |
-| CHBTC             |         |            |         |         |
-| Bitstamp          |         |            |         |         |
-| Bittrex           |         |            |         |         |
-| GDAX              |         |            |         |         |
-| Gemini            |         |            |         |         |
-| Kraken            |         |            |         |         |
-| Poloniex          |         |            |         |         |
-| Coincheck         | Y       |            |         |         |
-| Bitflyer          | Y       |            |         |         |
-| Quoine            |         |            |         |         |
-| QuadrigaCX        |         |            |         |         |
-| Unocoin           |         |            |         |         |
-| Coinone           | Y       |            |         |         |
-| Korbit            | Y       |            |         |         |
-| Bithumb           |         |            |         |         |
-| Luno              |         |            |         |         |
-| BTC-e             |         |            |         |         |
-| Bleutrade         |         |            |         |         |
-| Yobit             |         |            |         |         |
-| Bitfinex          |         |            |         |         |
-| BTER              |         |            |         |         |
-| Cryptopia         | Y       |            |         |         |
-| Livecoin          |         |            |         |         |
-| Nova Exchange     |         |            |         |         |
-| Bitcoin Indonesia |         |            |         |         |
-
-
 
 ## License
 

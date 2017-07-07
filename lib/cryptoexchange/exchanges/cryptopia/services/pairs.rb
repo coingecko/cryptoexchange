@@ -2,10 +2,11 @@ module Cryptoexchange::Exchanges
   module Cryptopia
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
+        MARKET = Cryptopia::Market
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Cryptopia::Market::API_URL}/GetTradePairs"
 
         def fetch
-          output = super(PAIRS_URL)
+          output = super
           adapt(output)
         end
 
@@ -17,7 +18,7 @@ module Cryptoexchange::Exchanges
             market_pair = Cryptopia::Models::MarketPair.new
             market_pair.base = base
             market_pair.target = target
-            market_pair.market = Cryptopia::Market::NAME
+            market_pair.market = MARKET::NAME
             market_pairs << market_pair
           end
           market_pairs
