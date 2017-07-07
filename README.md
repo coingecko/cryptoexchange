@@ -61,7 +61,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 | QuadrigaCX        |         |            |         |         |
 | Unocoin           |         |            |         |         |
 | Coinone           | Y       |            |         |         |
-| Korbit            |         |            |         |         |
+| Korbit            | Y       |            |         |         |
 | Bithumb           |         |            |         |         |
 | Luno              |         |            |         |         |
 | BTC-e             |         |            |         |         |

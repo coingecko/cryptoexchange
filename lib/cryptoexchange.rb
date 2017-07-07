@@ -8,6 +8,7 @@ require "cryptoexchange/services/pairs"
   bitflyer
   coincheck
   coinone
+  korbit
   cryptopia
   gatecoin
 ).each do |market|
