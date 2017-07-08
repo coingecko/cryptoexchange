@@ -2,9 +2,7 @@
 
 # Cryptoexchange
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cryptoexchange`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Cryptoexchange is a rubygem for ruby developers to interact with multiple cryptocurrency exchange market data APIs in a single library.
 
 ## Installation
 
@@ -62,7 +60,40 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### List market pairs supported by an exchange
+```
+  Cryptoexchange::Exchanges::Bitflyer::Services::Pairs.new.fetch
+```
+
+### Query the Ticker API
+```
+  pair = Cryptoexchange::Exchanges::Bitflyer::Services::Pairs.new.fetch.first
+  ticker = Cryptoexchange::Exchanges::Bitflyer::Services::Market.new.fetch(pair)
+  ticker.base
+  ticker.target
+  ticker.last
+```
+
+### Market List
+Some exchange API do not support market pair listings. For those exchanges, we included
+a custom YML file to define the list of market pairs supported by that exchange.
+That configuration works out of the box, however if that exchange adds new market pairs,
+you as the user of Cryptoexchange can explicitly add those pairs instead of waiting
+for this library to be updated.
+
+In the table above, look for the `User-Defined` under the Market List column.
+
+The format of the yaml file should look like below.
+Name the file <exchange_name>.yml and place it under the config/cryptoexchange directory.
+```
+  :pairs:
+    - :base: BTC
+      :target: KRW
+    - :base: ETH
+      :target: KRW
+    - :base: ETC
+      :target: KRW
+```
 
 ## Development
 
