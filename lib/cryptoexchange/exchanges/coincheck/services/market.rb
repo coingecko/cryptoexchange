@@ -2,12 +2,18 @@ module Cryptoexchange::Exchanges
   module Coincheck
     module Services
       class Market < Cryptoexchange::Services::Market
+        class << self
+          def supports_individual_ticker_query?
+            true
+          end
+        end
+
         def fetch(_)
-          output = super(market_url(_))
+          output = super(ticker_url(_))
           adapt(output)
         end
 
-        def market_url(_)
+        def ticker_url(_)
           "#{Cryptoexchange::Exchanges::Coincheck::Market::API_URL}/ticker"
         end
 

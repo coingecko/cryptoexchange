@@ -2,45 +2,42 @@ module Cryptoexchange::Exchanges
   module Gatecoin
     module Services
       class Market < Cryptoexchange::Services::Market
-
-        def fetch(market_pair)
-          output = super(market_url)
-          adapt(output, market_pair)
+        class << self
+          def supports_individual_ticker_query?
+            false
+          end
         end
 
-        def market_url
+        def tickers_url
           "#{Cryptoexchange::Exchanges::Gatecoin::Market::API_URL}/Public/LiveTickers"
         end
 
-        def adapt(output, market_pair)
-          # base
-          # target
-          # market (exchange_str)
-          # last
-          # bid
-          # ask
-          # high
-          # low
-          # volume
-          # timestamp
-
-          data = output['tickers']
-          ticker_match = data.find do |datum|
-            datum['currencyPair'] == market_pair.base + market_pair.target
+        def adapt_all(output)
+          output['tickers'].map do |ticker|
+            currency_pair = ticker['currencyPair']
+            market_pair = Cryptoexchange::Exchanges::Gatecoin::Models::MarketPair.new(
+                            base: currency_pair[0..2],
+                            target: currency_pair[3..-1],
+                            market: Gatecoin::Market::NAME
+                          )
+            adapt(ticker, market_pair)
+            ticker
           end
+        end
 
+        def adapt(output, market_pair)
           ticker = Gatecoin::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = 'gatecoin'
-          ticker.last = ticker_match['last']
-          ticker.bid = ticker_match['bid']
-          ticker.ask = ticker_match['ask']
-          ticker.high = ticker_match['high']
-          ticker.low = ticker_match['low']
-          ticker.volume = ticker_match['volume'] # TODO: Check if it is base denominated?
-          ticker.timestamp = ticker_match['createDateTime'].to_i
-          ticker.payload = ticker_match
+          ticker.last = output['last']
+          ticker.bid = output['bid']
+          ticker.ask = output['ask']
+          ticker.high = output['high']
+          ticker.low = output['low']
+          ticker.volume = output['volume'] # TODO: Check if it is base denominated?
+          ticker.timestamp = output['createDateTime'].to_i
+          ticker.payload = output
           ticker
         end
       end

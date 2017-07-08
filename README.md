@@ -62,13 +62,14 @@ Or install it yourself as:
 
 ### List market pairs supported by an exchange
 ```
-  Cryptoexchange::Exchanges::Bitflyer::Services::Pairs.new.fetch
+  client = Cryptoexchange::Client.new
+  pairs = client.pairs('bitflyer')
 ```
 
 ### Query the Ticker API
 ```
-  pair = Cryptoexchange::Exchanges::Bitflyer::Services::Pairs.new.fetch.first
-  ticker = Cryptoexchange::Exchanges::Bitflyer::Services::Market.new.fetch(pair)
+  pair = client.pairs('bitflyer').first
+  ticker = client.ticker(pairs.last)
   ticker.base
   ticker.target
   ticker.last

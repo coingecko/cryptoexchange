@@ -2,13 +2,18 @@ module Cryptoexchange::Exchanges
   module Cryptopia
     module Services
       class Market < Cryptoexchange::Services::Market
+        class << self
+          def supports_individual_ticker_query?
+            true
+          end
+        end
 
         def fetch(market_pair)
-          output = super(market_url(market_pair))
+          output = super(ticker_url(market_pair))
           adapt(output)
         end
 
-        def market_url(market_pair)
+        def ticker_url(market_pair)
           base = market_pair.base
           target = market_pair.target
           "#{Cryptoexchange::Exchanges::Cryptopia::Market::API_URL}/GetMarket/#{base}_#{target}"

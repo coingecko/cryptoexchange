@@ -2,12 +2,18 @@ module Cryptoexchange::Exchanges
   module Bitflyer
     module Services
       class Market < Cryptoexchange::Services::Market
+        class << self
+          def supports_individual_ticker_query?
+            true
+          end
+        end
+
         def fetch(market_pair)
-          output = super(market_url(market_pair))
+          output = super(ticker_url(market_pair))
           adapt(output)
         end
 
-        def market_url(market_pair)
+        def ticker_url(market_pair)
           "#{Cryptoexchange::Exchanges::Bitflyer::Market::API_URL}/ticker?product_code=#{market_pair.base}_#{market_pair.target}"
         end
 

@@ -3,32 +3,42 @@ module Cryptoexchange::Exchanges
     module Services
       class Market < Cryptoexchange::Services::Market
 
-        def fetch(market_pair)
-          @output ||= super(market_url)
-          adapt(@output, market_pair)
+        class << self
+          def supports_individual_ticker_query?
+            false
+          end
         end
 
-        def market_url
+        def tickers_url
           "#{Cryptoexchange::Exchanges::Livecoin::Market::API_URL}/exchange/ticker"
         end
 
+        def adapt_all(output)
+          output.map do |ticker|
+            base, target = ticker['symbol'].split('/')
+            market_pair = Cryptoexchange::Exchanges::Livecoin::Models::MarketPair.new(
+                            base: base,
+                            target: target,
+                            market: Livecoin::Market::NAME
+                          )
+
+            adapt(ticker, market_pair)
+          end
+        end
+
         def adapt(output, market_pair)
-          data = output.find { |s| s['symbol'] == "#{market_pair.base}/#{market_pair.target}" }
-
-          base, target = data['symbol'].split('/')
-
           ticker = Livecoin::Models::Ticker.new
-          ticker.base = base
-          ticker.target = target
+          ticker.base = market_pair.base
+          ticker.target = market_pair.target
           ticker.market = Livecoin::Market::NAME
-          ticker.last = data['last']
-          ticker.bid = data['best_bid']
-          ticker.ask = data['best_ask']
-          ticker.high = data['high']
-          ticker.low = data['low']
-          ticker.volume = data['volume']
+          ticker.last = output['last']
+          ticker.bid = output['best_bid']
+          ticker.ask = output['best_ask']
+          ticker.high = output['high']
+          ticker.low = output['low']
+          ticker.volume = output['volume']
           ticker.timestamp = DateTime.now.to_time.to_i
-          ticker.payload = data
+          ticker.payload = output
           ticker
         end
       end
