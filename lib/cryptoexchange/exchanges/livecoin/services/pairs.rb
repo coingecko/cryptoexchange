@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Livecoin::Market::API_URL}/exchange/ticker"
 
         def fetch
-          output = super(PAIRS_URL)
+          output = super
           adapt(output)
         end
 

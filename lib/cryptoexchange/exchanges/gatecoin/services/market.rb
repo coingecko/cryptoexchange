@@ -8,7 +8,12 @@ module Cryptoexchange::Exchanges
           end
         end
 
-        def tickers_url
+        def fetch
+          output = super(self.ticker_url)
+          adapt_all(output)
+        end
+
+        def ticker_url
           "#{Cryptoexchange::Exchanges::Gatecoin::Market::API_URL}/Public/LiveTickers"
         end
 
@@ -21,7 +26,6 @@ module Cryptoexchange::Exchanges
                             market: Gatecoin::Market::NAME
                           )
             adapt(ticker, market_pair)
-            ticker
           end
         end
 

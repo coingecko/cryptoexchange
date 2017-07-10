@@ -2,14 +2,18 @@ module Cryptoexchange::Exchanges
   module Livecoin
     module Services
       class Market < Cryptoexchange::Services::Market
-
         class << self
           def supports_individual_ticker_query?
             false
           end
         end
 
-        def tickers_url
+        def fetch
+          output = super(self.ticker_url)
+          adapt_all(output)
+        end
+
+        def ticker_url
           "#{Cryptoexchange::Exchanges::Livecoin::Market::API_URL}/exchange/ticker"
         end
 

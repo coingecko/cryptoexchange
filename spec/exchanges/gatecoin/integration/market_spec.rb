@@ -1,8 +1,10 @@
 require 'spec_helper'
 
 RSpec.describe 'Gatecoin integration specs' do
+  client = Cryptoexchange::Client.new
+
   it 'fetch pairs' do
-    pairs = Cryptoexchange::Exchanges::Gatecoin::Services::Pairs.new.fetch
+    pairs = client.pairs('gatecoin')
     expect(pairs).not_to be_empty
 
     pair = pairs.first
@@ -13,7 +15,7 @@ RSpec.describe 'Gatecoin integration specs' do
 
   it 'fetch ticker' do
     btc_hkd_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'HKD', market: 'gatecoin')
-    ticker = Cryptoexchange::Exchanges::Gatecoin::Services::Market.new.fetch(btc_hkd_pair)
+    ticker = client.ticker(btc_hkd_pair)
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'HKD'

@@ -1,8 +1,10 @@
 require 'spec_helper'
 
 RSpec.describe 'Cryptopia integration specs' do
+  client = Cryptoexchange::Client.new
+
   it 'fetch pairs' do
-    pairs = Cryptoexchange::Exchanges::Cryptopia::Services::Pairs.new.fetch
+    pairs = client.pairs('cryptopia')
     expect(pairs).not_to be_empty
 
     pair = pairs.first
@@ -13,7 +15,7 @@ RSpec.describe 'Cryptopia integration specs' do
 
   it 'fetch ticker' do
     btc_usdt_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: 'cryptopia')
-    ticker = Cryptoexchange::Exchanges::Cryptopia::Services::Market.new.fetch(btc_usdt_pair)
+    ticker = client.ticker(btc_usdt_pair)
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USDT'
