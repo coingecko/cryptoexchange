@@ -26,6 +26,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "rb-readline"
+  
 
   spec.add_dependency "http"
+  spec.add_dependency "lru_redux"
 end

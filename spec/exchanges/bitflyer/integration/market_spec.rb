@@ -1,8 +1,10 @@
 require 'spec_helper'
 
 RSpec.describe 'Bitflyer integration specs' do
+  let(:client) { Cryptoexchange::Client.new }
+
   it 'fetch pairs' do
-    pairs = Cryptoexchange::Exchanges::Bitflyer::Services::Pairs.new.fetch
+    pairs = client.pairs('bitflyer')
     expect(pairs).not_to be_empty
 
     pair = pairs.first
@@ -13,7 +15,7 @@ RSpec.describe 'Bitflyer integration specs' do
 
   it 'fetch ticker' do
     btc_jpy_pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'jpy', market: 'bitflyer')
-    ticker = Cryptoexchange::Exchanges::Bitflyer::Services::Market.new.fetch(btc_jpy_pair)
+    ticker = client.ticker(btc_jpy_pair)
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'JPY'

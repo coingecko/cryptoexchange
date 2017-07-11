@@ -1,8 +1,10 @@
 require 'spec_helper'
 
 RSpec.describe 'Korbit integration specs' do
+  client = Cryptoexchange::Client.new
+
   it 'fetch pairs' do
-    pairs = Cryptoexchange::Exchanges::Korbit::Services::Pairs.new.fetch
+    pairs = client.pairs('korbit')
     expect(pairs).not_to be_empty
 
     pair = pairs.first
@@ -14,7 +16,7 @@ RSpec.describe 'Korbit integration specs' do
   context 'fetch ticker' do
     before(:all) do
       btc_krw_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'KRW', market: 'korbit')
-      @ticker = Cryptoexchange::Exchanges::Korbit::Services::Market.new.fetch(btc_krw_pair)
+      @ticker = client.ticker(btc_krw_pair)
     end
     it { expect(@ticker.base).to eq 'BTC' }
     it { expect(@ticker.target).to eq 'KRW' }
