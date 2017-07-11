@@ -56,7 +56,7 @@ Or install it yourself as:
 | Cryptopia         | Y       |            |         |         | Y           |
 | Livecoin          | Y       |            |         |         | Y           |
 | Nova Exchange     |         |            |         |         |             |
-| Bitcoin Indonesia |         |            |         |         |             |
+| Bitcoin Indonesia | Y       |            |         |         | User-Defined|
 
 ## Usage
 

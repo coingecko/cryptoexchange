@@ -1,6 +1,7 @@
 module Cryptoexchange
   class Client
     AVAILABLE_EXCHANGES = %w(
+                            bitcoin_indonesia
                             bitflyer
                             coincheck
                             coinone
@@ -15,13 +16,13 @@ module Cryptoexchange
     end
 
     def pairs(exchange)
-      pairs_classname = "Cryptoexchange::Exchanges::#{exchange.capitalize}::Services::Pairs"
+      pairs_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Pairs"
       Object.const_get(pairs_classname).new.fetch
     end
 
     def ticker(market_pair)
       exchange = market_pair.market
-      market_classname = "Cryptoexchange::Exchanges::#{exchange.capitalize}::Services::Market"
+      market_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Market"
       market_class = Object.const_get(market_classname)
       market = market_class.new
 
