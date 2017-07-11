@@ -54,7 +54,7 @@ Or install it yourself as:
 | Bitfinex          |         |            |         |         |             |
 | BTER              |         |            |         |         |             |
 | Cryptopia         | Y       |            |         |         | Y           |
-| Livecoin          |         |            |         |         |             |
+| Livecoin          | Y       |            |         |         | Y           |
 | Nova Exchange     |         |            |         |         |             |
 | Bitcoin Indonesia |         |            |         |         |             |
 
