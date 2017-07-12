@@ -1,6 +1,7 @@
 require "cryptoexchange/version"
 require "cryptoexchange/client"
 require "cryptoexchange/lru_ttl_cache"
+require "cryptoexchange/helpers/string_helper"
 require "cryptoexchange/models/ticker"
 require "cryptoexchange/models/market_pair"
 require "cryptoexchange/services/market"
