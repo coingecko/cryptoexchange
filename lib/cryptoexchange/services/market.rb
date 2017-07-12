@@ -17,7 +17,7 @@ module Cryptoexchange
       private
 
       def http_get(endpoint)
-        fetch_response = HTTP.get(endpoint)
+        fetch_response = HTTP.timeout(connect: 30, read: 60).get(endpoint)
       end
     end
   end

@@ -18,7 +18,7 @@ module Cryptoexchange
       end
 
       def fetch_via_api
-        fetch_response = HTTP.get(self.class::PAIRS_URL)
+        fetch_response = HTTP.timeout(connect: 30, read: 60).get(self.class::PAIRS_URL)
         JSON.parse(fetch_response.to_s)
       end
 
