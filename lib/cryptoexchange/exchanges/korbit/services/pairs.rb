@@ -2,8 +2,6 @@ module Cryptoexchange::Exchanges
   module Korbit
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        MARKET = Korbit::Market
-
         def fetch
           output = super
           adapt(output)
@@ -15,7 +13,7 @@ module Cryptoexchange::Exchanges
             market_pairs << Korbit::Models::MarketPair.new(
               base: pair[:base],
               target: pair[:target],
-              market: MARKET::NAME
+              market: Korbit::Market::NAME
             )
           end
           market_pairs

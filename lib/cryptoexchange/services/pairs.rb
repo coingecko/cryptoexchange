@@ -27,11 +27,11 @@ module Cryptoexchange
       end
 
       def user_override_path
-        "config/cryptoexchange/#{self.class::MARKET::NAME}.yml"
+        "config/cryptoexchange/#{exchange_class::NAME}.yml"
       end
 
       def default_override_path
-        File.join(File.dirname(__dir__), "exchanges/#{self.class::MARKET::NAME}/#{self.class::MARKET::NAME}.yml")
+        File.join(File.dirname(__dir__), "exchanges/#{exchange_class::NAME}/#{exchange_class::NAME}.yml")
       end
 
       def user_override_exist?
@@ -40,6 +40,11 @@ module Cryptoexchange
 
       def default_override_exist?
         File.exist? default_override_path
+      end
+
+      def exchange_class
+        exchange_name = self.class.name.split('::')[2]
+        Object.const_get "Cryptoexchange::Exchanges::#{exchange_name}::Market"
       end
     end
   end
