@@ -9,6 +9,7 @@ module Cryptoexchange
                             cryptopia
                             gatecoin
                             livecoin
+                            bitstamp
                           )
 
     def initialize(ticker_ttl: 3)
