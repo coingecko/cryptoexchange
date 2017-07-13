@@ -23,19 +23,19 @@ module Cryptoexchange::Exchanges
           data = output['Data']
           base, target = data['Label'].split('/')
 
-          ticker = Cryptopia::Models::Ticker.new
-          ticker.base = base
-          ticker.target = target
-          ticker.market = Cryptopia::Market::NAME
-          ticker.last = data['LastPrice']
-          ticker.bid = data['BidPrice']
-          ticker.ask = data['AskPrice']
-          ticker.high = data['High']
-          ticker.low = data['Low']
-          ticker.volume = data['Volume']
-          ticker.change = data['Change']
-          ticker.timestamp = DateTime.now.to_time.to_i
-          ticker.payload = data
+          ticker           = Cryptopia::Models::Ticker.new
+          ticker.base      = base
+          ticker.target    = target
+          ticker.market    = Cryptopia::Market::NAME
+          ticker.last      = data['LastPrice'] ? BigDecimal.new(data['LastPrice'].to_s) : nil
+          ticker.bid       = data['BidPrice'] ? BigDecimal.new(data['BidPrice'].to_s) : nil
+          ticker.ask       = data['AskPrice'] ? BigDecimal.new(data['AskPrice'].to_s) : nil
+          ticker.high      = data['High'] ? BigDecimal.new(data['High'].to_s) : nil
+          ticker.low       = data['Low'] ? BigDecimal.new(data['Low'].to_s) : nil
+          ticker.volume    = data['Volume'] ? BigDecimal.new(data['Volume'].to_s) : nil
+          ticker.change    = data['Change'] ? BigDecimal.new(data['Change'].to_s) : nil
+          ticker.timestamp = Time.now.to_i
+          ticker.payload   = data
           ticker
         end
       end

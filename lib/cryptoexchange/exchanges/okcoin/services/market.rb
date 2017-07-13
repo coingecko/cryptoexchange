@@ -20,18 +20,18 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          ticker = Okcoin::Models::Ticker.new
-          ticker.base = market_pair.base
-          ticker.target = market_pair.target
-          ticker.market = Okcoin::Market::NAME
-          ticker.ask = output['ticker']['sell']
-          ticker.bid = output['ticker']['buy']
-          ticker.last = output['ticker']['last']
-          ticker.high = output['ticker']['high']
-          ticker.low = output['ticker']['low']
-          ticker.volume = output['ticker']['volume'].to_f
-          ticker.timestamp = output['date']
-          ticker.payload = output
+          ticker           = Okcoin::Models::Ticker.new
+          ticker.base      = market_pair.base
+          ticker.target    = market_pair.target
+          ticker.market    = Okcoin::Market::NAME
+          ticker.ask       = output['ticker']['sell'] ? BigDecimal.new(output['ticker']['sell'].to_s) : nil
+          ticker.bid       = output['ticker']['buy'] ? BigDecimal.new(output['ticker']['buy'].to_s) : nil
+          ticker.last      = output['ticker']['last'] ? BigDecimal.new(output['ticker']['last'].to_s) : nil
+          ticker.high      = output['ticker']['high'] ? BigDecimal.new(output['ticker']['high'].to_s) : nil
+          ticker.low       = output['ticker']['low'] ? BigDecimal.new(output['ticker']['low'].to_s) : nil
+          ticker.volume    = output['ticker']['vol'] ? BigDecimal.new(output['ticker']['vol'].to_s) : nil
+          ticker.timestamp = output['date'].to_i
+          ticker.payload   = output
           ticker
         end
       end

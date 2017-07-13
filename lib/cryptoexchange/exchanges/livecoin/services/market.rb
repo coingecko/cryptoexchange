@@ -31,18 +31,18 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          ticker = Livecoin::Models::Ticker.new
-          ticker.base = market_pair.base
-          ticker.target = market_pair.target
-          ticker.market = Livecoin::Market::NAME
-          ticker.last = output['last']
-          ticker.bid = output['best_bid']
-          ticker.ask = output['best_ask']
-          ticker.high = output['high']
-          ticker.low = output['low']
-          ticker.volume = output['volume']
-          ticker.timestamp = DateTime.now.to_time.to_i
-          ticker.payload = output
+          ticker           = Livecoin::Models::Ticker.new
+          ticker.base      = market_pair.base
+          ticker.target    = market_pair.target
+          ticker.market    = Livecoin::Market::NAME
+          ticker.last      = output['last'] ? BigDecimal.new(output['last'].to_s) : nil
+          ticker.bid       = output['best_bid'] ? BigDecimal.new(output['best_bid'].to_s) : nil
+          ticker.ask       = output['best_ask'] ? BigDecimal.new(output['best_ask'].to_s) : nil
+          ticker.high      = output['high'] ? BigDecimal.new(output['high'].to_s) : nil
+          ticker.low       = output['low'] ? BigDecimal.new(output['low'].to_s) : nil
+          ticker.volume    = output['volume'] ? BigDecimal.new(output['volume'].to_s) : nil
+          ticker.timestamp = Time.now.to_i
+          ticker.payload   = output
           ticker
         end
       end

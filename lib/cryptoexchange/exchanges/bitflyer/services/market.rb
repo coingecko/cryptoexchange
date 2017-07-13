@@ -18,17 +18,17 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          ticker = Bitflyer::Models::Ticker.new
-          base, target = output['product_code'].split('_')
-          ticker.base = base
-          ticker.target = target
-          ticker.market = Bitflyer::Market::NAME
-          ticker.ask = output['best_ask']
-          ticker.bid = output['best_bid']
-          ticker.last = output['ltp']
-          ticker.volume = output['volume_by_product']
+          ticker           = Bitflyer::Models::Ticker.new
+          base, target     = output['product_code'].split('_')
+          ticker.base      = base
+          ticker.target    = target
+          ticker.market    = Bitflyer::Market::NAME
+          ticker.ask       = output['best_ask'] ? BigDecimal.new(output['best_ask'].to_s) : nil
+          ticker.bid       = output['best_bid'] ? BigDecimal.new(output['best_bid'].to_s) : nil
+          ticker.last      = output['ltp'] ? BigDecimal.new(output['ltp'].to_s) : nil
+          ticker.volume    = output['volume_by_product'] ? BigDecimal.new(output['volume_by_product'].to_s) : nil
           ticker.timestamp = Time.parse(output['timestamp']).to_i
-          ticker.payload = output
+          ticker.payload   = output
           ticker
         end
       end

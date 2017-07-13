@@ -24,18 +24,18 @@ module Cryptoexchange::Exchanges
         def adapt(output, market_pair)
           market = output['markets'][0]
 
-          ticker = Novaexchange::Models::Ticker.new
-          ticker.base = market_pair.base
-          ticker.target = market_pair.target
-          ticker.market = Novaexchange::Market::NAME
-          ticker.last = BigDecimal.new(market['last_price'])
-          ticker.bid = BigDecimal.new(market['bid'])
-          ticker.ask = BigDecimal.new(market['ask'])
-          ticker.high = BigDecimal.new(market['high24h'])
-          ticker.low = BigDecimal.new(market['low24h'])
-          ticker.volume = BigDecimal.new(market['volume24h'])
-          ticker.timestamp = DateTime.now.to_time.to_i
-          ticker.payload = market
+          ticker           = Novaexchange::Models::Ticker.new
+          ticker.base      = market_pair.base
+          ticker.target    = market_pair.target
+          ticker.market    = Novaexchange::Market::NAME
+          ticker.last      = market['last_price'] ? BigDecimal.new(market['last_price'].to_s) : nil
+          ticker.bid       = market['bid'] ? BigDecimal.new(market['bid'].to_s) : nil
+          ticker.ask       = market['ask'] ? BigDecimal.new(market['ask'].to_s) : nil
+          ticker.high      = market['high24h'] ? BigDecimal.new(market['high24h'].to_s) : nil
+          ticker.low       = market['low24h'] ? BigDecimal.new(market['low24h'].to_s) : nil
+          ticker.volume    = market['volume24h'] ? BigDecimal.new(market['volume24h'].to_s) : nil
+          ticker.timestamp = Time.now.to_i
+          ticker.payload   = market
           ticker
         end
       end
