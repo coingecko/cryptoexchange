@@ -24,10 +24,10 @@ Or install it yourself as:
 
 | Exchange          | Ticker  | Order Book | Trade   | Account | Market List |
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |
-| ANX               |         |            |         |         |             |
+| ANX               | Y       |            |         |         | User-Defined|
 | Gatecoin          | Y       |            |         |         | Y           |
 | BTCC              |         |            |         |         |             |
-| OKCoin            |         |            |         |         |             |
+| OKCoin            | Y       |            |         |         | User-Defined|
 | LakeBTC           |         |            |         |         |             |
 | Huobi             |         |            |         |         |             |
 | Yunbi             |         |            |         |         |             |

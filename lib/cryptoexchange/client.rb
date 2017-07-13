@@ -1,6 +1,7 @@
 module Cryptoexchange
   class Client
     AVAILABLE_EXCHANGES = %w(
+                            anx
                             bitcoin_indonesia
                             bitflyer
                             coincheck
@@ -10,6 +11,7 @@ module Cryptoexchange
                             gatecoin
                             livecoin
                             bitstamp
+                            okcoin
                           )
 
     def initialize(ticker_ttl: 3)
