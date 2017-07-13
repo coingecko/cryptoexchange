@@ -13,6 +13,7 @@ module Cryptoexchange
                             livecoin
                             bitstamp
                             okcoin
+                            novaexchange
                           )
 
     def initialize(ticker_ttl: 3)

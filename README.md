@@ -55,7 +55,7 @@ Or install it yourself as:
 | BTER              |         |            |         |         |             |
 | Cryptopia         | Y       |            |         |         | Y           |
 | Livecoin          | Y       |            |         |         | Y           |
-| Nova Exchange     |         |            |         |         |             |
+| Nova Exchange     | Y       |            |         |         | Y           |
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|
 
 ## Usage
