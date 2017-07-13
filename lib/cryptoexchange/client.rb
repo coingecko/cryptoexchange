@@ -11,6 +11,7 @@ module Cryptoexchange
                             cryptopia
                             gatecoin
                             livecoin
+                            bitstamp
                             okcoin
                           )
 

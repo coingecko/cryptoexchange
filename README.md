@@ -33,7 +33,7 @@ Or install it yourself as:
 | Yunbi             |         |            |         |         |             |
 | BTC38             |         |            |         |         |             |
 | CHBTC             |         |            |         |         |             |
-| Bitstamp          |         |            |         |         |             |
+| Bitstamp          | Y       |            |         |         | User-Defined|
 | Bittrex           |         |            |         |         |             |
 | GDAX              |         |            |         |         |             |
 | Gemini            |         |            |         |         |             |
