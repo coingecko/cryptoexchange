@@ -10,6 +10,7 @@ module Cryptoexchange
                             cryptopia
                             gatecoin
                             livecoin
+                            okcoin
                           )
 
     def initialize(ticker_ttl: 3)
