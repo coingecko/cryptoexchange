@@ -33,7 +33,7 @@ Or install it yourself as:
 | Yunbi             |         |            |         |         |             |
 | BTC38             |         |            |         |         |             |
 | CHBTC             |         |            |         |         |             |
-| Bitstamp          |         |            |         |         |             |
+| Bitstamp          | Y       |            |         |         | User-Defined|
 | Bittrex           |         |            |         |         |             |
 | GDAX              |         |            |         |         |             |
 | Gemini            |         |            |         |         |             |
@@ -109,4 +109,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
