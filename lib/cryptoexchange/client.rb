@@ -1,6 +1,7 @@
 module Cryptoexchange
   class Client
     AVAILABLE_EXCHANGES = %w(
+                            btcc
                             anx
                             bitcoin_indonesia
                             bitflyer
