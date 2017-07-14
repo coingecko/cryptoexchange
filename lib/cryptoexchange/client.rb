@@ -14,6 +14,7 @@ module Cryptoexchange
                             bitstamp
                             okcoin
                             novaexchange
+                            liqui
                           )
 
     def initialize(ticker_ttl: 3)
