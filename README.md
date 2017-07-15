@@ -59,6 +59,7 @@ Or install it yourself as:
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|
 | Liqui             | Y       |            |         |         | Y           |
 | HitBTC            | Y       |            |         |         | Y           |
+| CCex              | Y       |            |         |         | Y           |
 
 ## Usage
 

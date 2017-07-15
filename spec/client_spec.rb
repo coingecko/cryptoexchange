@@ -7,6 +7,7 @@ RSpec.describe Cryptoexchange::Client do
                             anx
                             bitcoin_indonesia
                             bitflyer
+                            ccex
                             coincheck
                             coinone
                             korbit
