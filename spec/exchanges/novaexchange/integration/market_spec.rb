@@ -29,21 +29,4 @@ RSpec.describe 'Novaexchange integration specs' do
     it { expect(@ticker.timestamp).to_not be nil }
     it { expect(@ticker.payload).to_not be nil }
   end
-
-  context 'ESP/DOGE special case' do
-    before(:all) do
-      esp_doge_pair = Cryptoexchange::Exchanges::Novaexchange::Models::MarketPair.new(base: 'ESP', target: 'DOGE', market: 'novaexchange')
-      @ticker = client.ticker(esp_doge_pair)
-    end
-    it { expect(@ticker.base).to eq 'ESP' }
-    it { expect(@ticker.target).to eq 'DOGE' }
-    it { expect(@ticker.market).to eq 'novaexchange' }
-    it { expect(@ticker.last).to_not be nil }
-    it { expect(@ticker.bid).to_not be nil }
-    it { expect(@ticker.ask).to_not be nil }
-    it { expect(@ticker.high).to_not be nil }
-    it { expect(@ticker.volume).to_not be nil }
-    it { expect(@ticker.timestamp).to_not be nil }
-    it { expect(@ticker.payload).to_not be nil }
-  end
 end

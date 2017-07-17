@@ -16,12 +16,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          if market_pair.base == 'ESP' && market_pair.target == 'DOGE'
-            # FIXME Remove this special case when no longer needed.
-            name = 'ESP_BLRY'
-          else
-            name = "#{market_pair.base}_#{market_pair.target}"
-          end
+          name = "#{market_pair.base}_#{market_pair.target}"
 
           "#{Cryptoexchange::Exchanges::Novaexchange::Market::API_URL}/market/info/#{name}/"
         end
