@@ -57,6 +57,7 @@ Or install it yourself as:
 | Livecoin          | Y       |            |         |         | Y           |
 | Nova Exchange     | Y       |            |         |         | Y           |
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|
+| Liqui             | Y       |            |         |         | Y           |
 
 ## Usage
 
