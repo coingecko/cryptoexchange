@@ -2,7 +2,6 @@ module Cryptoexchange::Exchanges
   module Bitflyer
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        MARKET = Bitflyer::Market
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitflyer::Market::API_URL}/markets"
 
         def fetch
@@ -21,7 +20,7 @@ module Cryptoexchange::Exchanges
               market_pairs << Bitflyer::Models::MarketPair.new(
                                 base: base,
                                 target: target,
-                                market: MARKET::NAME
+                                market: Bitflyer::Market::NAME
                               )
             end
           end
