@@ -60,6 +60,7 @@ Or install it yourself as:
 | Liqui             | Y       |            |         |         | Y           |
 | HitBTC            | Y       |            |         |         | Y           |
 | CCex              | Y       |            |         |         | Y           |
+| EtherDelta        | Y       |            |         |         | Y           |
 
 ## Usage
 
