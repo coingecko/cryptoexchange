@@ -36,7 +36,7 @@ Or install it yourself as:
 | Bitstamp          | Y       |            |         |         | User-Defined|
 | Bittrex           |         |            |         |         |             |
 | GDAX              |         |            |         |         |             |
-| Gemini            |         |            |         |         |             |
+| Gemini            | Y       |            |         |         | Y           |
 | Kraken            |         |            |         |         |             |
 | Poloniex          |         |            |         |         |             |
 | Coincheck         | Y       |            |         |         | User-Defined|

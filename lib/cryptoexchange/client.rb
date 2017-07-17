@@ -15,6 +15,7 @@ module Cryptoexchange
                             okcoin
                             novaexchange
                             liqui
+                            gemini
                           )
 
     def initialize(ticker_ttl: 3)
