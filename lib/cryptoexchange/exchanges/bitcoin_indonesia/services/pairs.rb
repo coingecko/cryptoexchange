@@ -2,7 +2,6 @@ module Cryptoexchange::Exchanges
   module BitcoinIndonesia
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        MARKET = BitcoinIndonesia::Market
 
         def fetch
           output = super
@@ -15,7 +14,7 @@ module Cryptoexchange::Exchanges
             market_pairs << BitcoinIndonesia::Models::MarketPair.new(
               base: pair[:base],
               target: pair[:target],
-              market: MARKET::NAME
+              market: BitcoinIndonesia::Market::NAME
             )
           end
           market_pairs

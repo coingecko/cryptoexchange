@@ -2,6 +2,7 @@ module Cryptoexchange::Exchanges
   module Korbit
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
+
         def fetch
           output = super
           adapt(output)
