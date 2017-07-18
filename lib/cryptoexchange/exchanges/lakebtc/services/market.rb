@@ -29,12 +29,12 @@ module Cryptoexchange::Exchanges
               ticker.market = Lakebtc::Market::NAME
 
               # NOTE: apparently it can be nil
-              ticker.ask = ticker_json['ask'] ? BigDecimal.new(ticker_json['ask']) : nil
-              ticker.bid = ticker_json['bid'] ? BigDecimal.new(ticker_json['bid']) : nil
-              ticker.last = ticker_json['last'] ? BigDecimal.new(ticker_json['last']) : nil
-              ticker.high = ticker_json['high'] ? BigDecimal.new(ticker_json['high']) : nil
-              ticker.low = ticker_json['low'] ? BigDecimal.new(ticker_json['low']) : nil
-              ticker.volume = ticker_json['volume'] ? BigDecimal.new(ticker_json['volume']) : nil
+              ticker.ask    = NumericHelper.to_d(ticker_json['ask'])
+              ticker.bid    = NumericHelper.to_d(ticker_json['bid'])
+              ticker.last   = NumericHelper.to_d(ticker_json['last'])
+              ticker.high   = NumericHelper.to_d(ticker_json['high'])
+              ticker.low    = NumericHelper.to_d(ticker_json['low'])
+              ticker.volume = NumericHelper.to_d(ticker_json['volume'])
 
               ticker.timestamp = Time.now.to_i
               ticker.payload = ticker_json
