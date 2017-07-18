@@ -10,6 +10,7 @@ module Cryptoexchange
                             korbit
                             cryptopia
                             gatecoin
+                            lakebtc
                             livecoin
                             bitstamp
                             okcoin
