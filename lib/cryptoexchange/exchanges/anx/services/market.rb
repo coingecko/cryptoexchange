@@ -22,17 +22,17 @@ module Cryptoexchange::Exchanges
           base = output['data']['vol']['currency']
           target = output['data']['high']['currency']
 
-          ticker.base = base
-          ticker.target = target
-          ticker.market = Anx::Market::NAME
-          ticker.ask = output['data']['sell']['value']
-          ticker.bid = output['data']['buy']['value']
-          ticker.last = output['data']['last']['value']
-          ticker.high = output['data']['high']['value']
-          ticker.low = output['data']['low']['value']
-          ticker.volume = output['data']['vol']['value']
-          ticker.timestamp = output['data']['dataUpdateTime']
-          ticker.payload = output
+          ticker.base      = base
+          ticker.target    = target
+          ticker.market    = Anx::Market::NAME
+          ticker.ask       = NumericHelper.to_d(output['data']['sell']['value'])
+          ticker.bid       = NumericHelper.to_d(output['data']['buy']['value'])
+          ticker.last      = NumericHelper.to_d(output['data']['last']['value'])
+          ticker.high      = NumericHelper.to_d(output['data']['high']['value'])
+          ticker.low       = NumericHelper.to_d(output['data']['low']['value'])
+          ticker.volume    = NumericHelper.to_d(output['data']['vol']['value'])
+          ticker.timestamp = output['data']['dataUpdateTime'].to_i
+          ticker.payload   = output
           ticker
         end
       end

@@ -27,12 +27,12 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Liqui::Market::NAME
-          ticker.last      = market['last'] ? BigDecimal.new(market['last'].to_s) : nil
-          ticker.bid       = market['buy'] ? BigDecimal.new(market['buy'].to_s) : nil
-          ticker.ask       = market['sell'] ? BigDecimal.new(market['sell'].to_s) : nil
-          ticker.high      = market['high'] ? BigDecimal.new(market['high'].to_s) : nil
-          ticker.low       = market['low'] ? BigDecimal.new(market['low'].to_s) : nil
-          ticker.volume    = market['vol'] ? BigDecimal.new(market['vol'].to_s) : nil
+          ticker.last      = NumericHelper.to_d(market['last'])
+          ticker.bid       = NumericHelper.to_d(market['buy'])
+          ticker.ask       = NumericHelper.to_d(market['sell'])
+          ticker.high      = NumericHelper.to_d(market['high'])
+          ticker.low       = NumericHelper.to_d(market['low'])
+          ticker.volume    = NumericHelper.to_d(market['vol'])
           ticker.timestamp = DateTime.now.to_time.to_i
           ticker.payload   = market
           ticker

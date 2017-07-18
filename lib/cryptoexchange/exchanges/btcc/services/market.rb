@@ -22,18 +22,18 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          ticker = Btcc::Models::Ticker.new
-          ticker.base = market_pair.base
-          ticker.target = market_pair.target
-          ticker.market = Btcc::Market::NAME
-          ticker.ask = output['ticker']['AskPrice']
-          ticker.bid = output['ticker']['BidPrice']
-          ticker.last = output['ticker']['Last']
-          ticker.high = output['ticker']['High']
-          ticker.low = output['ticker']['Low']
-          ticker.volume = output['ticker']['Volume']
-          ticker.timestamp = output['ticker']['Timestamp']
-          ticker.payload = output
+          ticker           = Btcc::Models::Ticker.new
+          ticker.base      = market_pair.base
+          ticker.target    = market_pair.target
+          ticker.market    = Btcc::Market::NAME
+          ticker.ask       = NumericHelper.to_d(output['ticker']['AskPrice'])
+          ticker.bid       = NumericHelper.to_d(output['ticker']['BidPrice'])
+          ticker.last      = NumericHelper.to_d(output['ticker']['Last'])
+          ticker.high      = NumericHelper.to_d(output['ticker']['High'])
+          ticker.low       = NumericHelper.to_d(output['ticker']['Low'])
+          ticker.volume    = NumericHelper.to_d(output['ticker']['Volume'])
+          ticker.timestamp = output['ticker']['Timestamp'].to_i
+          ticker.payload   = output
           ticker
         end
       end

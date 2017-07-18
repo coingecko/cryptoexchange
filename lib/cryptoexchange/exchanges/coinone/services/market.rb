@@ -19,16 +19,16 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          ticker = Coinone::Models::Ticker.new
-          ticker.base = output['currency']
-          ticker.target = 'KRW'
-          ticker.market = Coinone::Market::NAME
-          ticker.last = output['last']
-          ticker.high = output['high']
-          ticker.low = output['low']
-          ticker.volume = output['volume']
-          ticker.timestamp = output['timestamp']
-          ticker.payload = output
+          ticker           = Coinone::Models::Ticker.new
+          ticker.base      = output['currency']
+          ticker.target    = 'KRW'
+          ticker.market    = Coinone::Market::NAME
+          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.high      = NumericHelper.to_d(output['high'])
+          ticker.low       = NumericHelper.to_d(output['low'])
+          ticker.volume    = NumericHelper.to_d(output['volume'])
+          ticker.timestamp = output['timestamp'].to_i
+          ticker.payload   = output
           ticker
         end
       end

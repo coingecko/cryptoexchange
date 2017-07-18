@@ -23,19 +23,19 @@ module Cryptoexchange::Exchanges
           data = output['Data']
           base, target = data['Label'].split('/')
 
-          ticker = Cryptopia::Models::Ticker.new
-          ticker.base = base
-          ticker.target = target
-          ticker.market = Cryptopia::Market::NAME
-          ticker.last = data['LastPrice']
-          ticker.bid = data['BidPrice']
-          ticker.ask = data['AskPrice']
-          ticker.high = data['High']
-          ticker.low = data['Low']
-          ticker.volume = data['Volume']
-          ticker.change = data['Change']
-          ticker.timestamp = DateTime.now.to_time.to_i
-          ticker.payload = data
+          ticker           = Cryptopia::Models::Ticker.new
+          ticker.base      = base
+          ticker.target    = target
+          ticker.market    = Cryptopia::Market::NAME
+          ticker.last      = NumericHelper.to_d(data['LastPrice'])
+          ticker.bid       = NumericHelper.to_d(data['BidPrice'])
+          ticker.ask       = NumericHelper.to_d(data['AskPrice'])
+          ticker.high      = NumericHelper.to_d(data['High'])
+          ticker.low       = NumericHelper.to_d(data['Low'])
+          ticker.volume    = NumericHelper.to_d(data['Volume'])
+          ticker.change    = NumericHelper.to_d(data['Change'])
+          ticker.timestamp = Time.now.to_i
+          ticker.payload   = data
           ticker
         end
       end

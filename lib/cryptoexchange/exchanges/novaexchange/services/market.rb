@@ -24,18 +24,18 @@ module Cryptoexchange::Exchanges
         def adapt(output, market_pair)
           market = output['markets'][0]
 
-          ticker = Novaexchange::Models::Ticker.new
-          ticker.base = market_pair.base
-          ticker.target = market_pair.target
-          ticker.market = Novaexchange::Market::NAME
-          ticker.last = BigDecimal.new(market['last_price'])
-          ticker.bid = BigDecimal.new(market['bid'])
-          ticker.ask = BigDecimal.new(market['ask'])
-          ticker.high = BigDecimal.new(market['high24h'])
-          ticker.low = BigDecimal.new(market['low24h'])
-          ticker.volume = BigDecimal.new(market['volume24h'])
-          ticker.timestamp = DateTime.now.to_time.to_i
-          ticker.payload = market
+          ticker           = Novaexchange::Models::Ticker.new
+          ticker.base      = market_pair.base
+          ticker.target    = market_pair.target
+          ticker.market    = Novaexchange::Market::NAME
+          ticker.last      = NumericHelper.to_d(market['last_price'])
+          ticker.bid       = NumericHelper.to_d(market['bid'])
+          ticker.ask       = NumericHelper.to_d(market['ask'])
+          ticker.high      = NumericHelper.to_d(market['high24h'])
+          ticker.low       = NumericHelper.to_d(market['low24h'])
+          ticker.volume    = NumericHelper.to_d(market['volume24h'])
+          ticker.timestamp = Time.now.to_i
+          ticker.payload   = market
           ticker
         end
       end

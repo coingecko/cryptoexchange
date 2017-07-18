@@ -26,7 +26,7 @@ RSpec.describe 'Coincheck integration specs' do
     expect(ticker.ask).to_not be nil
     expect(ticker.bid).to_not be nil
     expect(ticker.volume).to_not be nil
-    expect(ticker.timestamp).to_not be nil
+    expect(ticker.timestamp).to be_a Numeric
     expect(ticker.payload).to_not be nil
   end
 end

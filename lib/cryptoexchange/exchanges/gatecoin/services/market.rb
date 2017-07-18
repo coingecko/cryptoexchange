@@ -30,18 +30,18 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          ticker = Gatecoin::Models::Ticker.new
-          ticker.base = market_pair.base
-          ticker.target = market_pair.target
-          ticker.market = 'gatecoin'
-          ticker.last = output['last']
-          ticker.bid = output['bid']
-          ticker.ask = output['ask']
-          ticker.high = output['high']
-          ticker.low = output['low']
-          ticker.volume = output['volume'] # TODO: Check if it is base denominated?
+          ticker           = Gatecoin::Models::Ticker.new
+          ticker.base      = market_pair.base
+          ticker.target    = market_pair.target
+          ticker.market    = Gatecoin::Market::NAME
+          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.bid       = NumericHelper.to_d(output['bid'])
+          ticker.ask       = NumericHelper.to_d(output['ask'])
+          ticker.high      = NumericHelper.to_d(output['high'])
+          ticker.low       = NumericHelper.to_d(output['low'])
+          ticker.volume    = NumericHelper.to_d(output['volume'])
           ticker.timestamp = output['createDateTime'].to_i
-          ticker.payload = output
+          ticker.payload   = output
           ticker
         end
       end

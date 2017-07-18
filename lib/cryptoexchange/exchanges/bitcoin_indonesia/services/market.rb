@@ -20,19 +20,19 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          output = output['ticker']
-          ticker = BitcoinIndonesia::Models::Ticker.new
-          ticker.base = market_pair.base
-          ticker.target = market_pair.target
-          ticker.market = BitcoinIndonesia::Market::NAME
-          ticker.bid = output['buy']
-          ticker.ask = output['sell']
-          ticker.last = output['last']
-          ticker.high = output['high']
-          ticker.low = output['low']
-          ticker.volume = output["vol_#{ticker.base.downcase}"].to_f
-          ticker.timestamp = output['server_time']
-          ticker.payload = output
+          output           = output['ticker']
+          ticker           = BitcoinIndonesia::Models::Ticker.new
+          ticker.base      = market_pair.base
+          ticker.target    = market_pair.target
+          ticker.market    = BitcoinIndonesia::Market::NAME
+          ticker.bid       = NumericHelper.to_d(output['buy'])
+          ticker.ask       = NumericHelper.to_d(output['sell'])
+          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.high      = NumericHelper.to_d(output['high'])
+          ticker.low       = NumericHelper.to_d(output['low'])
+          ticker.volume    = NumericHelper.to_d(output["vol_#{ticker.base.downcase}"])
+          ticker.timestamp = output['server_time'].to_i
+          ticker.payload   = output
           ticker
         end
       end

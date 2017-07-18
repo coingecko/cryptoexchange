@@ -20,18 +20,18 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          ticker = Okcoin::Models::Ticker.new
-          ticker.base = market_pair.base
-          ticker.target = market_pair.target
-          ticker.market = Okcoin::Market::NAME
-          ticker.ask = output['ticker']['sell']
-          ticker.bid = output['ticker']['buy']
-          ticker.last = output['ticker']['last']
-          ticker.high = output['ticker']['high']
-          ticker.low = output['ticker']['low']
-          ticker.volume = output['ticker']['volume'].to_f
-          ticker.timestamp = output['date']
-          ticker.payload = output
+          ticker           = Okcoin::Models::Ticker.new
+          ticker.base      = market_pair.base
+          ticker.target    = market_pair.target
+          ticker.market    = Okcoin::Market::NAME
+          ticker.ask       = NumericHelper.to_d(output['ticker']['sell'])
+          ticker.bid       = NumericHelper.to_d(output['ticker']['buy'])
+          ticker.last      = NumericHelper.to_d(output['ticker']['last'])
+          ticker.high      = NumericHelper.to_d(output['ticker']['high'])
+          ticker.low       = NumericHelper.to_d(output['ticker']['low'])
+          ticker.volume    = NumericHelper.to_d(output['ticker']['vol'])
+          ticker.timestamp = output['date'].to_i
+          ticker.payload   = output
           ticker
         end
       end

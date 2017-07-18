@@ -27,7 +27,7 @@ RSpec.describe 'Livecoin integration specs' do
     it { expect(@ticker.ask).to_not be nil }
     it { expect(@ticker.high).to_not be nil }
     it { expect(@ticker.volume).to_not be nil }
-    it { expect(@ticker.timestamp).to_not be nil }
+    it { expect(@ticker.timestamp).to be_a Numeric }
     it { expect(@ticker.payload).to_not be nil }
   end
 end
