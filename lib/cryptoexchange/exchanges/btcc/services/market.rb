@@ -26,12 +26,12 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Btcc::Market::NAME
-          ticker.ask       = output['ticker']['AskPrice'] ? BigDecimal.new(output['ticker']['AskPrice'].to_s) : nil
-          ticker.bid       = output['ticker']['BidPrice'] ? BigDecimal.new(output['ticker']['BidPrice'].to_s) : nil
-          ticker.last      = output['ticker']['Last'] ? BigDecimal.new(output['ticker']['Last'].to_s) : nil
-          ticker.high      = output['ticker']['High'] ? BigDecimal.new(output['ticker']['High'].to_s) : nil
-          ticker.low       = output['ticker']['Low'] ? BigDecimal.new(output['ticker']['Low'].to_s) : nil
-          ticker.volume    = output['ticker']['Volume'] ? BigDecimal.new(output['ticker']['Volume'].to_s) : nil
+          ticker.ask       = NumericHelper.to_d(output['ticker']['AskPrice'])
+          ticker.bid       = NumericHelper.to_d(output['ticker']['BidPrice'])
+          ticker.last      = NumericHelper.to_d(output['ticker']['Last'])
+          ticker.high      = NumericHelper.to_d(output['ticker']['High'])
+          ticker.low       = NumericHelper.to_d(output['ticker']['Low'])
+          ticker.volume    = NumericHelper.to_d(output['ticker']['Volume'])
           ticker.timestamp = output['ticker']['Timestamp'].to_i
           ticker.payload   = output
           ticker

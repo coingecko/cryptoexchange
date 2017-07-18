@@ -22,12 +22,12 @@ module Cryptoexchange::Exchanges
           ticker.base      = 'BTC'
           ticker.target    = 'JPY'
           ticker.market    = Coincheck::Market::NAME
-          ticker.ask       = output['ask'] ? BigDecimal.new(output['ask'].to_s) : nil
-          ticker.bid       = output['bid'] ? BigDecimal.new(output['bid'].to_s) : nil
-          ticker.last      = output['last'] ? BigDecimal.new(output['last'].to_s) : nil
-          ticker.high      = output['high'] ? BigDecimal.new(output['high'].to_s) : nil
-          ticker.low       = output['low'] ? BigDecimal.new(output['low'].to_s) : nil
-          ticker.volume    = output['volume'] ? BigDecimal.new(output['volume'].to_s) : nil
+          ticker.ask       = NumericHelper.to_d(output['ask'])
+          ticker.bid       = NumericHelper.to_d(output['bid'])
+          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.high      = NumericHelper.to_d(output['high'])
+          ticker.low       = NumericHelper.to_d(output['low'])
+          ticker.volume    = NumericHelper.to_d(output['volume'])
           ticker.timestamp = output['timestamp'].to_i
           ticker.payload   = output
           ticker

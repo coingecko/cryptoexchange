@@ -24,12 +24,12 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Okcoin::Market::NAME
-          ticker.ask       = output['ticker']['sell'] ? BigDecimal.new(output['ticker']['sell'].to_s) : nil
-          ticker.bid       = output['ticker']['buy'] ? BigDecimal.new(output['ticker']['buy'].to_s) : nil
-          ticker.last      = output['ticker']['last'] ? BigDecimal.new(output['ticker']['last'].to_s) : nil
-          ticker.high      = output['ticker']['high'] ? BigDecimal.new(output['ticker']['high'].to_s) : nil
-          ticker.low       = output['ticker']['low'] ? BigDecimal.new(output['ticker']['low'].to_s) : nil
-          ticker.volume    = output['ticker']['vol'] ? BigDecimal.new(output['ticker']['vol'].to_s) : nil
+          ticker.ask       = NumericHelper.to_d(output['ticker']['sell'])
+          ticker.bid       = NumericHelper.to_d(output['ticker']['buy'])
+          ticker.last      = NumericHelper.to_d(output['ticker']['last'])
+          ticker.high      = NumericHelper.to_d(output['ticker']['high'])
+          ticker.low       = NumericHelper.to_d(output['ticker']['low'])
+          ticker.volume    = NumericHelper.to_d(output['ticker']['vol'])
           ticker.timestamp = output['date'].to_i
           ticker.payload   = output
           ticker

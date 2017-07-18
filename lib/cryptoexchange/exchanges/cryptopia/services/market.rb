@@ -27,13 +27,13 @@ module Cryptoexchange::Exchanges
           ticker.base      = base
           ticker.target    = target
           ticker.market    = Cryptopia::Market::NAME
-          ticker.last      = data['LastPrice'] ? BigDecimal.new(data['LastPrice'].to_s) : nil
-          ticker.bid       = data['BidPrice'] ? BigDecimal.new(data['BidPrice'].to_s) : nil
-          ticker.ask       = data['AskPrice'] ? BigDecimal.new(data['AskPrice'].to_s) : nil
-          ticker.high      = data['High'] ? BigDecimal.new(data['High'].to_s) : nil
-          ticker.low       = data['Low'] ? BigDecimal.new(data['Low'].to_s) : nil
-          ticker.volume    = data['Volume'] ? BigDecimal.new(data['Volume'].to_s) : nil
-          ticker.change    = data['Change'] ? BigDecimal.new(data['Change'].to_s) : nil
+          ticker.last      = NumericHelper.to_d(data['LastPrice'])
+          ticker.bid       = NumericHelper.to_d(data['BidPrice'])
+          ticker.ask       = NumericHelper.to_d(data['AskPrice'])
+          ticker.high      = NumericHelper.to_d(data['High'])
+          ticker.low       = NumericHelper.to_d(data['Low'])
+          ticker.volume    = NumericHelper.to_d(data['Volume'])
+          ticker.change    = NumericHelper.to_d(data['Change'])
           ticker.timestamp = Time.now.to_i
           ticker.payload   = data
           ticker

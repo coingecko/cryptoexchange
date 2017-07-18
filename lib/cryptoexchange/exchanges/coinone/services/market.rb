@@ -23,10 +23,10 @@ module Cryptoexchange::Exchanges
           ticker.base      = output['currency']
           ticker.target    = 'KRW'
           ticker.market    = Coinone::Market::NAME
-          ticker.last      = output['last'] ? BigDecimal.new(output['last'].to_s) : nil
-          ticker.high      = output['high'] ? BigDecimal.new(output['high'].to_s) : nil
-          ticker.low       = output['low'] ? BigDecimal.new(output['low'].to_s) : nil
-          ticker.volume    = output['volume'] ? BigDecimal.new(output['volume'].to_s) : nil
+          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.high      = NumericHelper.to_d(output['high'])
+          ticker.low       = NumericHelper.to_d(output['low'])
+          ticker.volume    = NumericHelper.to_d(output['volume'])
           ticker.timestamp = output['timestamp'].to_i
           ticker.payload   = output
           ticker

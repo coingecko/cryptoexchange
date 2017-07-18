@@ -23,10 +23,10 @@ module Cryptoexchange::Exchanges
           ticker.base      = base
           ticker.target    = target
           ticker.market    = Bitflyer::Market::NAME
-          ticker.ask       = output['best_ask'] ? BigDecimal.new(output['best_ask'].to_s) : nil
-          ticker.bid       = output['best_bid'] ? BigDecimal.new(output['best_bid'].to_s) : nil
-          ticker.last      = output['ltp'] ? BigDecimal.new(output['ltp'].to_s) : nil
-          ticker.volume    = output['volume_by_product'] ? BigDecimal.new(output['volume_by_product'].to_s) : nil
+          ticker.ask       = NumericHelper.to_d(output['best_ask'])
+          ticker.bid       = NumericHelper.to_d(output['best_bid'])
+          ticker.last      = NumericHelper.to_d(output['ltp'])
+          ticker.volume    = NumericHelper.to_d(output['volume_by_product'])
           ticker.timestamp = Time.parse(output['timestamp']).to_i
           ticker.payload   = output
           ticker

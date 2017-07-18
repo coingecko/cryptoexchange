@@ -35,12 +35,12 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Livecoin::Market::NAME
-          ticker.last      = output['last'] ? BigDecimal.new(output['last'].to_s) : nil
-          ticker.bid       = output['best_bid'] ? BigDecimal.new(output['best_bid'].to_s) : nil
-          ticker.ask       = output['best_ask'] ? BigDecimal.new(output['best_ask'].to_s) : nil
-          ticker.high      = output['high'] ? BigDecimal.new(output['high'].to_s) : nil
-          ticker.low       = output['low'] ? BigDecimal.new(output['low'].to_s) : nil
-          ticker.volume    = output['volume'] ? BigDecimal.new(output['volume'].to_s) : nil
+          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.bid       = NumericHelper.to_d(output['best_bid'])
+          ticker.ask       = NumericHelper.to_d(output['best_ask'])
+          ticker.high      = NumericHelper.to_d(output['high'])
+          ticker.low       = NumericHelper.to_d(output['low'])
+          ticker.volume    = NumericHelper.to_d(output['volume'])
           ticker.timestamp = Time.now.to_i
           ticker.payload   = output
           ticker

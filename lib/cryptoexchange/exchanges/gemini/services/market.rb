@@ -35,10 +35,10 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Gemini::Market::NAME
-          ticker.ask       = output['ask'] ? BigDecimal.new(output['ask'].to_s) : nil
-          ticker.bid       = output['bid'] ? BigDecimal.new(output['bid'].to_s) : nil
-          #this is BTC's volume
-          ticker.volume    = output['volume'][market_pair.base] ? BigDecimal.new(output['volume'][market_pair.base].to_s) : nil
+          ticker.ask       = NumericHelper.to_d(output['ask'])
+          ticker.bid       = NumericHelper.to_d(output['bid'])
+          # this is BTC's volume
+          ticker.volume    = NumericHelper.to_d(output['volume'][market_pair.base])
           ticker.timestamp = output['volume']['timestamp'].to_i
           ticker.payload   = output
           ticker

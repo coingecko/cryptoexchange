@@ -28,12 +28,12 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Novaexchange::Market::NAME
-          ticker.last      = market['last_price'] ? BigDecimal.new(market['last_price'].to_s) : nil
-          ticker.bid       = market['bid'] ? BigDecimal.new(market['bid'].to_s) : nil
-          ticker.ask       = market['ask'] ? BigDecimal.new(market['ask'].to_s) : nil
-          ticker.high      = market['high24h'] ? BigDecimal.new(market['high24h'].to_s) : nil
-          ticker.low       = market['low24h'] ? BigDecimal.new(market['low24h'].to_s) : nil
-          ticker.volume    = market['volume24h'] ? BigDecimal.new(market['volume24h'].to_s) : nil
+          ticker.last      = NumericHelper.to_d(market['last_price'])
+          ticker.bid       = NumericHelper.to_d(market['bid'])
+          ticker.ask       = NumericHelper.to_d(market['ask'])
+          ticker.high      = NumericHelper.to_d(market['high24h'])
+          ticker.low       = NumericHelper.to_d(market['low24h'])
+          ticker.volume    = NumericHelper.to_d(market['volume24h'])
           ticker.timestamp = Time.now.to_i
           ticker.payload   = market
           ticker

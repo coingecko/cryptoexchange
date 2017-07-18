@@ -25,12 +25,12 @@ module Cryptoexchange::Exchanges
           ticker.base      = base
           ticker.target    = target
           ticker.market    = Anx::Market::NAME
-          ticker.ask       = output['data']['sell']['value'] ? BigDecimal.new(output['data']['sell']['value'].to_s) : nil
-          ticker.bid       = output['data']['buy']['value'] ? BigDecimal.new(output['data']['buy']['value'].to_s) : nil
-          ticker.last      = output['data']['last']['value'] ? BigDecimal.new(output['data']['last']['value'].to_s) : nil
-          ticker.high      = output['data']['high']['value'] ? BigDecimal.new(output['data']['high']['value'].to_s) : nil
-          ticker.low       = output['data']['low']['value'] ? BigDecimal.new(output['data']['low']['value'].to_s) : nil
-          ticker.volume    = output['data']['vol']['value'] ? BigDecimal.new(output['data']['vol']['value'].to_s) : nil
+          ticker.ask       = NumericHelper.to_d(output['data']['sell']['value'])
+          ticker.bid       = NumericHelper.to_d(output['data']['buy']['value'])
+          ticker.last      = NumericHelper.to_d(output['data']['last']['value'])
+          ticker.high      = NumericHelper.to_d(output['data']['high']['value'])
+          ticker.low       = NumericHelper.to_d(output['data']['low']['value'])
+          ticker.volume    = NumericHelper.to_d(output['data']['vol']['value'])
           ticker.timestamp = output['data']['dataUpdateTime'].to_i
           ticker.payload   = output
           ticker

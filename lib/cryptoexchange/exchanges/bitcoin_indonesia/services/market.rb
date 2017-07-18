@@ -25,12 +25,12 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = BitcoinIndonesia::Market::NAME
-          ticker.bid       = output['buy'] ? BigDecimal.new(output['buy'].to_s) : nil
-          ticker.ask       = output['sell'] ? BigDecimal.new(output['sell'].to_s) : nil
-          ticker.last      = output['last'] ? BigDecimal.new(output['last'].to_s) : nil
-          ticker.high      = output['high'] ? BigDecimal.new(output['high'].to_s) : nil
-          ticker.low       = output['low'] ? BigDecimal.new(output['low'].to_s) : nil
-          ticker.volume    = output["vol_#{ticker.base.downcase}"] ? BigDecimal.new(output["vol_#{ticker.base.downcase}"].to_s) : nil
+          ticker.bid       = NumericHelper.to_d(output['buy'])
+          ticker.ask       = NumericHelper.to_d(output['sell'])
+          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.high      = NumericHelper.to_d(output['high'])
+          ticker.low       = NumericHelper.to_d(output['low'])
+          ticker.volume    = NumericHelper.to_d(output["vol_#{ticker.base.downcase}"])
           ticker.timestamp = output['server_time'].to_i
           ticker.payload   = output
           ticker
