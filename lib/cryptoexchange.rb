@@ -8,7 +8,7 @@ require "cryptoexchange/models/market_pair"
 require "cryptoexchange/services/market"
 require "cryptoexchange/services/pairs"
 
-Cryptoexchange::Client::AVAILABLE_EXCHANGES.each do |market|
+Cryptoexchange::Client.available_exchanges.each do |market|
   require "cryptoexchange/exchanges/#{market}/market"
   require "cryptoexchange/exchanges/#{market}/models/ticker"
   require "cryptoexchange/exchanges/#{market}/models/market_pair"
