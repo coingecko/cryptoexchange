@@ -58,6 +58,7 @@ Or install it yourself as:
 | Nova Exchange     | Y       |            |         |         | Y           |
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|
 | Liqui             | Y       |            |         |         | Y           |
+| HitBTC            | Y       |            |         |         | Y           |
 
 ## Usage
 

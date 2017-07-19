@@ -17,6 +17,7 @@ module Cryptoexchange
                             novaexchange
                             liqui
                             gemini
+                            hitbtc
                           )
 
     def initialize(ticker_ttl: 3)
