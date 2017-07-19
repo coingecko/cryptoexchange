@@ -22,6 +22,7 @@ RSpec.describe Cryptoexchange::Client do
                             gemini
                             hitbtc
                             bithumb
+                            coin_exchange
                           ).sort
     expect(described_class.available_exchanges).to eq available_exchanges
 
