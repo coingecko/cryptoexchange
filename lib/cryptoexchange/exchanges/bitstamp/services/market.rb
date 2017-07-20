@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
         def ticker_url(market_pair)
           base = market_pair.base.downcase
           target = market_pair.target.downcase
-          "#{Cryptoexchange::Exchanges::Bitstamp::Market::API_URL}/#{base}#{target}"
+          "#{Cryptoexchange::Exchanges::Bitstamp::Market::API_URL}/ticker/#{base}#{target}"
         end
 
         def adapt(output, market_pair)
