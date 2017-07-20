@@ -1,24 +1,10 @@
 module Cryptoexchange
   class Client
-    AVAILABLE_EXCHANGES = %w(
-                            btcc
-                            anx
-                            bitcoin_indonesia
-                            bitflyer
-                            coincheck
-                            coinone
-                            korbit
-                            cryptopia
-                            gatecoin
-                            lakebtc
-                            livecoin
-                            bitstamp
-                            okcoin
-                            novaexchange
-                            liqui
-                            gemini
-                            hitbtc
-                          )
+    class << self
+      def available_exchanges
+        Dir.entries("./lib/cryptoexchange/exchanges")[2..-1].freeze
+      end
+    end
 
     def initialize(ticker_ttl: 3)
       LruTtlCache.ticker_cache(ticker_ttl)
