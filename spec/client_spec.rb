@@ -1,30 +1,17 @@
 require 'spec_helper'
 
 RSpec.describe Cryptoexchange::Client do
-  it 'loads every available exchanges according to folder name' do
-    available_exchanges = %w(
-                            btcc
-                            anx
-                            bitcoin_indonesia
-                            bitflyer
-                            ccex
-                            coincheck
-                            coinone
-                            korbit
-                            cryptopia
-                            gatecoin
-                            lakebtc
-                            livecoin
-                            bitstamp
-                            okcoin
-                            novaexchange
-                            liqui
-                            gemini
-                            hitbtc
-                            bithumb
-                            ether_delta
-                          ).sort
-    expect(described_class.available_exchanges).to eq available_exchanges
+  context 'Loads every available exchanges' do
 
+    it 'can find pairs from each exchange' do
+      available_exchanges = described_class.available_exchanges
+      available_exchanges.each do |exchange|
+        expect(described_class.new.pairs(exchange)).to_not be nil
+      end
+    end
+
+    it 'raise Name error when there is no such exchange in it' do
+      expect{described_class.new.pairs('wrong_exchange')}.to raise_error(NameError)
+    end
   end
 end
