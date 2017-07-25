@@ -2,7 +2,7 @@ module Cryptoexchange
   class Client
     class << self
       def available_exchanges
-        Dir.entries("./lib/cryptoexchange/exchanges")[2..-1].sort.freeze
+        Dir.entries("./lib/cryptoexchange/exchanges")[2..-1]
       end
     end
 
