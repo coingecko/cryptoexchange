@@ -2,7 +2,6 @@ require 'spec_helper'
 
 RSpec.describe Cryptoexchange::Client do
   context 'Loads every available exchanges' do
-
     it 'can find pairs from each exchange' do
       available_exchanges = described_class.available_exchanges
       available_exchanges.each do |exchange|
