@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          name = "#{market_pair.base}_#{market_pair.target}"
+          name = "#{market_pair.target}_#{market_pair.base}"
 
           "#{Cryptoexchange::Exchanges::Novaexchange::Market::API_URL}/market/info/#{name}/"
         end

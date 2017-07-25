@@ -61,6 +61,7 @@ Or install it yourself as:
 | HitBTC            | Y       |            |         |         | Y           |
 | CCex              | Y       |            |         |         | Y           |
 | CoinExchange      | Y       |            |         |         | Y           |
+| EtherDelta        | Y       |            |         |         | Y           |
 
 ## Usage
 
