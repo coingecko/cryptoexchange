@@ -34,7 +34,7 @@ Or install it yourself as:
 | BTC38             |         |            |         |         |             |
 | CHBTC             |         |            |         |         |             |
 | Bitstamp          | Y       |            |         |         | User-Defined|
-| Bittrex           |         |            |         |         |             |
+| Bittrex           | Y       |            |         |         | Y           |
 | GDAX              |         |            |         |         |             |
 | Gemini            | Y       |            |         |         | Y           |
 | Kraken            |         |            |         |         |             |
