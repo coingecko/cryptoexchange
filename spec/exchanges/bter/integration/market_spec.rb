@@ -1,0 +1,30 @@
+require 'spec_helper'
+
+RSpec.describe 'Bter integration specs' do
+  client = Cryptoexchange::Client.new
+
+  it 'fetch pairs' do
+    pairs = client.pairs('bter')
+    expect(pairs).not_to be_empty
+
+    pair = pairs.first
+    expect(pair.base).not_to be_nil
+    expect(pair.target).not_to be_nil
+    expect(pair.market).to eq 'bter'
+  end
+
+  it 'fetch ticker' do
+    btc_cny_pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'cny', market: 'bter')
+    ticker = client.ticker(btc_cny_pair)
+
+    expect(ticker.base).to eq 'BTC'
+    expect(ticker.target).to eq 'CNY'
+    expect(ticker.market).to eq 'bter'
+    expect(ticker.last).to_not be nil
+    expect(ticker.ask).to_not be nil
+    expect(ticker.bid).to_not be nil
+    expect(ticker.volume).to_not be nil
+    expect(ticker.timestamp).to be_a Numeric
+    expect(ticker.payload).to_not be nil
+  end
+end
