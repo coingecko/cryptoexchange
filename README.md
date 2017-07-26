@@ -38,7 +38,7 @@ Or install it yourself as:
 | GDAX              |         |            |         |         |             |
 | Gemini            | Y       |            |         |         | Y           |
 | Kraken            |         |            |         |         |             |
-| Poloniex          |         |            |         |         |             |
+| Poloniex          | Y       |            |         |         | Y           |
 | Coincheck         | Y       |            |         |         | User-Defined|
 | Bitflyer          | Y       |            |         |         | Y           |
 | Quoine            |         |            |         |         |             |
