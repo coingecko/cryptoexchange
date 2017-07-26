@@ -28,7 +28,7 @@ Or install it yourself as:
 | Gatecoin          | Y       |            |         |         | Y           |
 | BTCC              | Y       |            |         |         | User-Defined|
 | OKCoin            | Y       |            |         |         | User-Defined|
-| LakeBTC           |         |            |         |         |             |
+| LakeBTC           | Y       |            |         |         | Y           |
 | Huobi             |         |            |         |         |             |
 | Yunbi             |         |            |         |         |             |
 | BTC38             |         |            |         |         |             |
