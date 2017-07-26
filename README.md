@@ -52,7 +52,7 @@ Or install it yourself as:
 | Bleutrade         |         |            |         |         |             |
 | Yobit             |         |            |         |         |             |
 | Bitfinex          |         |            |         |         |             |
-| BTER              |         |            |         |         |             |
+| BTER              | Y       |            |         |         | Y           |
 | Cryptopia         | Y       |            |         |         | Y           |
 | Livecoin          | Y       |            |         |         | Y           |
 | Nova Exchange     | Y       |            |         |         | Y           |
