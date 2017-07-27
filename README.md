@@ -50,7 +50,7 @@ Or install it yourself as:
 | Luno              |         |            |         |         |             |
 | BTC-e             |         |            |         |         |             |
 | Bleutrade         | Y       |            |         |         | Y           |
-| Yobit             |         |            |         |         |             |
+| Yobit             | Y       |            |         |         | Y           |
 | Bitfinex          |         |            |         |         |             |
 | BTER              | Y       |            |         |         | Y           |
 | Cryptopia         | Y       |            |         |         | Y           |
