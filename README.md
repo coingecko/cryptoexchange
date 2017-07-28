@@ -49,7 +49,7 @@ Or install it yourself as:
 | Bithumb           | Y       |            |         |         | Y           |
 | Luno              |         |            |         |         |             |
 | BTC-e             |         |            |         |         |             |
-| Bleutrade         |         |            |         |         |             |
+| Bleutrade         | Y       |            |         |         | Y           |
 | Yobit             |         |            |         |         |             |
 | Bitfinex          |         |            |         |         |             |
 | BTER              | Y       |            |         |         | Y           |
