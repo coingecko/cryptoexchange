@@ -2,9 +2,8 @@ module Cryptoexchange
   class Client
     class << self
       def available_exchanges
-        root_dir = File.dirname __dir__
-        exchanges_dir = File.join(root_dir, 'cryptoexchange', 'exchanges')
-        Dir.entries(exchanges_dir)[2..-1]
+        dir = File.expand_path(File.join(File.dirname(__FILE__), 'exchanges'))
+        Dir.entries(dir)[2..-1]
       end
     end
 
