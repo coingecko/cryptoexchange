@@ -35,7 +35,7 @@ Or install it yourself as:
 | CHBTC             |         |            |         |         |             |
 | Bitstamp          | Y       |            |         |         | User-Defined|
 | Bittrex           | Y       |            |         |         | Y           |
-| GDAX              |         |            |         |         |             |
+| GDAX              | Y       |            |         |         | Y           |
 | Gemini            | Y       |            |         |         | Y           |
 | Kraken            |         |            |         |         |             |
 | Poloniex          |         |            |         |         |             |
