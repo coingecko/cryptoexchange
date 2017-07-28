@@ -62,6 +62,13 @@ Or install it yourself as:
 | CCex              | Y       |            |         |         | Y           |
 | CoinExchange      | Y       |            |         |         | Y           |
 | EtherDelta        | Y       |            |         |         | Y           |
+| Bitbay            |         |            |         |         |             |
+| Bitso             |         |            |         |         |             |
+| BTCChina          |         |            |         |         |             |
+| Coinmate          |         |            |         |         |             |
+| Itbit             |         |            |         |         |             |
+| Jubi              |         |            |         |         |             |
+| MercadoBitcoin    |         |            |         |         |             |
 
 ## Usage
 
