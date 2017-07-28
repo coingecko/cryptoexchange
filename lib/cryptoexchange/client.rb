@@ -2,8 +2,20 @@ module Cryptoexchange
   class Client
     class << self
       def available_exchanges
-        dir = File.expand_path(File.join(File.dirname(__FILE__), 'exchanges'))
-        Dir.entries(dir)[2..-1]
+        # Dir.entries("./lib/cryptoexchange/exchanges")[2..-1]
+
+        exchanges_dir = File.join(File.dirname(__dir__), "cryptoexchange", "exchanges")
+
+        # root_dir = File.dirname __dir__
+        # exchanges_dir = File.join(root_dir, 'cryptoexchange', 'exchanges')
+        puts '=========='
+        puts Dir.entries(exchanges_dir)
+        puts '=========='
+        Dir.entries(exchanges_dir).reject{|entry| entry == "." || entry == ".."}
+        # Dir.entries(exchanges_dir)[2..-1]
+
+        # dir = File.expand_path(File.join(File.dirname(__FILE__), 'lib', 'exchanges'))
+        # Dir.entries(dir)[2..-1]
       end
     end
 
