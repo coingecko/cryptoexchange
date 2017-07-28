@@ -1,11 +1,5 @@
 module Cryptoexchange
   class Client
-    class << self
-      def available_exchanges
-        exchanges_dir = File.join(File.dirname(__dir__), "cryptoexchange", "exchanges")
-        Dir.entries(exchanges_dir).reject{|entry| entry == "." || entry == ".."}
-      end
-    end
 
     def initialize(ticker_ttl: 3)
       LruTtlCache.ticker_cache(ticker_ttl)
