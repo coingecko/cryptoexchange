@@ -15,7 +15,7 @@ RSpec.describe 'Novaexchange integration specs' do
 
   context 'fetch ticker' do
     before(:all) do
-      ppc_btc_pair = Cryptoexchange::Exchanges::Novaexchange::Models::MarketPair.new(base: 'PPC', target: 'BTC', market: 'novaexchange')
+      ppc_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'PPC', target: 'BTC', market: 'novaexchange')
       @ticker = client.ticker(ppc_btc_pair)
     end
     it { expect(@ticker.base).to eq 'PPC' }
@@ -37,7 +37,7 @@ RSpec.describe 'Novaexchange integration specs' do
     # The currency pair here is chosen such that the exchange rate is extremely
     # small and will remain < 1 even with market fluctuation.
 
-    doge_btc_pair = Cryptoexchange::Exchanges::Novaexchange::Models::MarketPair.new(base: 'DOGE', target: 'BTC', market: 'novaexchange')
+    doge_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'DOGE', target: 'BTC', market: 'novaexchange')
     ticker = client.ticker(doge_btc_pair)
     it { expect(ticker.last).to be < 1 }
   end

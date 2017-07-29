@@ -15,7 +15,7 @@ RSpec.describe 'CoinExchange integration specs' do
 
   context 'fetch ticker' do
     before(:all) do
-      ltc_btc_pair = Cryptoexchange::Exchanges::CoinExchange::Models::MarketPair.new(base: 'LTC', target: 'BTC', market: 'coin_exchange')
+      ltc_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'LTC', target: 'BTC', market: 'coin_exchange')
       @ticker = client.ticker(ltc_btc_pair)
     end
     it { expect(@ticker.base).to eq 'LTC' }

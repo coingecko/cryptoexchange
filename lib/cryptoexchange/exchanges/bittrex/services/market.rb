@@ -20,7 +20,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          ticker = Bittrex::Models::Ticker.new
+          ticker = Cryptoexchange::Models::Ticker.new
           market = output['result'][0]
 
           ticker.base      = market['MarketName'].split("-")[0]

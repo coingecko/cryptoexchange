@@ -11,7 +11,7 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output['result'].map do |market|
-            CoinExchange::Models::MarketPair.new({
+            Cryptoexchange::Models::MarketPair.new({
               base: market['MarketAssetCode'],
               target: market['BaseCurrencyCode'],
               market: CoinExchange::Market::NAME

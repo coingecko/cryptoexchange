@@ -23,7 +23,7 @@ module Cryptoexchange::Exchanges
         def adapt(output, market_pair)
           market = output["#{market_pair.base}_#{market_pair.target}".downcase]
 
-          ticker = Liqui::Models::Ticker.new
+          ticker = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Liqui::Market::NAME

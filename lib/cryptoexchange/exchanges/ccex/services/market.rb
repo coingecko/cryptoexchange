@@ -28,7 +28,7 @@ module Cryptoexchange::Exchanges
           market = ticker_output['ticker']
           volume = HashHelper.dig(volumes_output, 'ticker', market_pair.base.downcase, 'vol')
 
-          ticker = Ccex::Models::Ticker.new
+          ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Ccex::Market::NAME

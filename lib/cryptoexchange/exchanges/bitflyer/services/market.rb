@@ -18,7 +18,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          ticker           = Bitflyer::Models::Ticker.new
+          ticker           = Cryptoexchange::Models::Ticker.new
           base, target     = output['product_code'].split('_')
           ticker.base      = base
           ticker.target    = target

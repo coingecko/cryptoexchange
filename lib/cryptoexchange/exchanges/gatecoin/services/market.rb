@@ -20,7 +20,7 @@ module Cryptoexchange::Exchanges
         def adapt_all(output)
           output['tickers'].map do |ticker|
             currency_pair = ticker['currencyPair']
-            market_pair = Cryptoexchange::Exchanges::Gatecoin::Models::MarketPair.new(
+            market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: currency_pair[0..2],
                             target: currency_pair[3..-1],
                             market: Gatecoin::Market::NAME
@@ -30,7 +30,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          ticker           = Gatecoin::Models::Ticker.new
+          ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Gatecoin::Market::NAME

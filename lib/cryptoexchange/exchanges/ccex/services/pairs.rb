@@ -13,7 +13,7 @@ module Cryptoexchange::Exchanges
           output['pairs'].map do |pair|
             base, target = pair.upcase.split('-')
 
-            Ccex::Models::MarketPair.new({
+            Cryptoexchange::Models::MarketPair.new({
               base: base,
               target: target,
               market: Ccex::Market::NAME

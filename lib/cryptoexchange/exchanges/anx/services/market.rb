@@ -18,7 +18,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          ticker = Anx::Models::Ticker.new
+          ticker = Cryptoexchange::Models::Ticker.new
           base = output['data']['vol']['currency']
           target = output['data']['high']['currency']
 

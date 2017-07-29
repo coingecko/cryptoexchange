@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
             output.each do |pair|
             base =
             target = pair[3..-1]
-            market_pairs << Gemini::Models::MarketPair.new(
+            market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: pair[0..2],
                               target: pair[3..-1],
                               market: Gemini::Market::NAME

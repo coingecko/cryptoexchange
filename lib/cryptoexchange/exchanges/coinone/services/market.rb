@@ -19,7 +19,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          ticker           = Coinone::Models::Ticker.new
+          ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = output['currency']
           ticker.target    = 'KRW'
           ticker.market    = Coinone::Market::NAME

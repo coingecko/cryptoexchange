@@ -21,7 +21,7 @@ module Cryptoexchange::Exchanges
 
         def adapt(output, market_pair)
           output           = output['ticker']
-          ticker           = BitcoinIndonesia::Models::Ticker.new
+          ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = BitcoinIndonesia::Market::NAME

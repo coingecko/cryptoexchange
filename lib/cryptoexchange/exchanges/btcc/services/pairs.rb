@@ -11,7 +11,7 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           market_pairs = []
           output.each do |pair|
-            market_pairs << Btcc::Models::MarketPair.new(
+            market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: pair[:base],
                               target: pair[:target],
                               market: Btcc::Market::NAME

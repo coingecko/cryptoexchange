@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
         def adapt(output, market_pair)
           market = output['markets'][0]
 
-          ticker           = Novaexchange::Models::Ticker.new
+          ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Novaexchange::Market::NAME

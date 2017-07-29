@@ -23,7 +23,7 @@ module Cryptoexchange::Exchanges
           name = "#{market_pair.base}_#{market_pair.target}"
           market = output[name]
 
-          ticker = EtherDelta::Models::Ticker.new
+          ticker = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = EtherDelta::Market::NAME

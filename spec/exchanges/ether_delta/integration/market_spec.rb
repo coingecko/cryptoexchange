@@ -15,7 +15,7 @@ RSpec.describe 'EtherDelta integration specs' do
 
   context 'fetch ticker' do
     before(:all) do
-      eth_ppt_pair = Cryptoexchange::Exchanges::EtherDelta::Models::MarketPair.new(base: 'ETH', target: 'PPT', market: 'ether_delta')
+      eth_ppt_pair = Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'PPT', market: 'ether_delta')
       @ticker = client.ticker(eth_ppt_pair)
     end
     it { expect(@ticker.base).to eq 'ETH' }

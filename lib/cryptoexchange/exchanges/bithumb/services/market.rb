@@ -19,7 +19,7 @@ module Cryptoexchange::Exchanges
 
         def adapt(output, market_pair)
           market = output['data']
-          ticker = Bithumb::Models::Ticker.new
+          ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Bithumb::Market::NAME

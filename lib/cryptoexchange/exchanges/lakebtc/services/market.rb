@@ -23,7 +23,7 @@ module Cryptoexchange::Exchanges
           output.keys.each do |pair|
             if pair.include?('btc')
               ticker_json = output[pair]
-              ticker = Lakebtc::Models::Ticker.new
+              ticker = Cryptoexchange::Models::Ticker.new
               ticker.base = 'btc'
               ticker.target = pair[3..-1]
               ticker.market = Lakebtc::Market::NAME

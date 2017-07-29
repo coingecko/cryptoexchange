@@ -13,7 +13,7 @@ module Cryptoexchange::Exchanges
           market_pairs = []
           output.keys.each do |pair|
             if pair.include?('btc')
-              market_pairs << Lakebtc::Models::MarketPair.new(
+              market_pairs << Cryptoexchange::Models::MarketPair.new(
                                 base: 'btc',
                                 target: pair[3..-1],
                                 market: Lakebtc::Market::NAME
