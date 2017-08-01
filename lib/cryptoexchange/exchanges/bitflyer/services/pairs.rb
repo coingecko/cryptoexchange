@@ -17,7 +17,7 @@ module Cryptoexchange::Exchanges
 
             if product_code =~ /\A[A-Z]{3}_[A-Z]{3}\z/
               base, target = product_code.split('_')
-              market_pairs << Bitflyer::Models::MarketPair.new(
+              market_pairs << Cryptoexchange::Models::MarketPair.new(
                                 base: base,
                                 target: target,
                                 market: Bitflyer::Market::NAME

@@ -20,7 +20,7 @@ module Cryptoexchange::Exchanges
         def adapt_all(output)
           output['result'].map do |ticker|
             currency_pair = ticker['MarketName'].split("_")
-            market_pair = Cryptoexchange::Exchanges::Bleutrade::Models::MarketPair.new(
+            market_pair = Cryptoexchange::Models::MarketPair.new(
                           base: currency_pair[1],
                           target: currency_pair[0],
                           market: Bleutrade::Market::NAME
@@ -30,7 +30,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          ticker           = Bleutrade::Models::Ticker.new
+          ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Bleutrade::Market::NAME

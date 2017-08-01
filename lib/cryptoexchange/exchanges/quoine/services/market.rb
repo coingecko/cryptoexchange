@@ -19,7 +19,7 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |pair|
-            market_pair = Cryptoexchange::Exchanges::Quoine::Models::MarketPair.new(
+            market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: pair['base_currency'],
                             target: pair['quoted_currency'],
                             market: Quoine::Market::NAME
@@ -29,7 +29,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          ticker           = Quoine::Models::Ticker.new
+          ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Quoine::Market::NAME

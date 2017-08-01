@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
           output['pairs'].keys.map do |pair|
             base, target = pair.upcase.split('_')
 
-            Liqui::Models::MarketPair.new({
+            Cryptoexchange::Models::MarketPair.new({
               base: base,
               target: target,
               market: Liqui::Market::NAME

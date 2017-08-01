@@ -13,7 +13,7 @@ module Cryptoexchange::Exchanges
           market_pairs = []
           output.each do |ticker|
             base, target = ticker['symbol'].split('/')
-            market_pair = Livecoin::Models::MarketPair.new
+            market_pair = Cryptoexchange::Models::MarketPair.new
             market_pair.base = base
             market_pair.target = target
             market_pair.market = Livecoin::Market::NAME

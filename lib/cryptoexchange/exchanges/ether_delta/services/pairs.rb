@@ -13,7 +13,7 @@ module Cryptoexchange::Exchanges
           output.keys.map do |pair|
             base, target = pair.split('_')
 
-            EtherDelta::Models::MarketPair.new({
+            Cryptoexchange::Models::MarketPair.new({
               base: base,
               target: target,
               market: EtherDelta::Market::NAME

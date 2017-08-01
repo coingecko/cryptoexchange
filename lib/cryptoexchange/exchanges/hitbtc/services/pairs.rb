@@ -11,7 +11,7 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output['symbols'].map do |market|
-            Hitbtc::Models::MarketPair.new({
+            Cryptoexchange::Models::MarketPair.new({
               base: market['commodity'],
               target: market['currency'],
               market: Hitbtc::Market::NAME

@@ -20,7 +20,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          ticker           = Bitstamp::Models::Ticker.new
+          ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Bitstamp::Market::NAME

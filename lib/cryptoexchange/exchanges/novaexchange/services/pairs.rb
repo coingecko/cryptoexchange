@@ -12,7 +12,7 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           market_pairs = []
           output['markets'].each do |ticker|
-            market_pair = Novaexchange::Models::MarketPair.new
+            market_pair = Cryptoexchange::Models::MarketPair.new
 
             # Note: The base/target are swapped intentionally. It appears that
             # the API endpoint is returning in the wrong order.

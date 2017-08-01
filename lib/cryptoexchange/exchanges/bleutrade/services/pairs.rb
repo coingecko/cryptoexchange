@@ -13,7 +13,7 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           market_pairs = []
           output['result'].each do |pair|
-            market_pairs << Bleutrade::Models::MarketPair.new(
+            market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: pair['BaseCurrency'],
                               target: pair['MarketCurrency'],
                               market: Bleutrade::Market::NAME

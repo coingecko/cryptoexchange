@@ -15,7 +15,7 @@ RSpec.describe 'Ccex integration specs' do
 
   context 'fetch ticker' do
     before(:all) do
-      usd_btc_pair = Cryptoexchange::Exchanges::Ccex::Models::MarketPair.new(base: 'USD', target: 'BTC', market: 'ccex')
+      usd_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'USD', target: 'BTC', market: 'ccex')
       @ticker = client.ticker(usd_btc_pair)
     end
     it { expect(@ticker.base).to eq 'USD' }

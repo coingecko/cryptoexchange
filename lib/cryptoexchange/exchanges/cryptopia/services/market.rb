@@ -23,7 +23,7 @@ module Cryptoexchange::Exchanges
           data = output['Data']
           base, target = data['Label'].split('/')
 
-          ticker           = Cryptopia::Models::Ticker.new
+          ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = base
           ticker.target    = target
           ticker.market    = Cryptopia::Market::NAME

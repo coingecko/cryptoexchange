@@ -20,7 +20,7 @@ module Cryptoexchange::Exchanges
         def adapt_all(output)
           output.map do |ticker|
             base, target = ticker['symbol'].split('/')
-            market_pair = Cryptoexchange::Exchanges::Livecoin::Models::MarketPair.new(
+            market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
                             target: target,
                             market: Livecoin::Market::NAME
@@ -31,7 +31,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          ticker           = Livecoin::Models::Ticker.new
+          ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Livecoin::Market::NAME

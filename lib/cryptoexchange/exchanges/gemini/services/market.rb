@@ -18,7 +18,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          ticker = Gemini::Models::Ticker.new
+          ticker = Cryptoexchange::Models::Ticker.new
 
           #this api just have bid and ask like below:
           # {

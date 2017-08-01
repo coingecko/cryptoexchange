@@ -13,7 +13,7 @@ module Cryptoexchange::Exchanges
           output.map do |pair|
             base, target = pair.upcase.split('_')
 
-            Bter::Models::MarketPair.new({
+            Cryptoexchange::Models::MarketPair.new({
               base: base,
               target: target,
               market: Bter::Market::NAME

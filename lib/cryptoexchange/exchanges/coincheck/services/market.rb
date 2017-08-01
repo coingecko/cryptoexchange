@@ -18,7 +18,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          ticker           = Coincheck::Models::Ticker.new
+          ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = 'BTC'
           ticker.target    = 'JPY'
           ticker.market    = Coincheck::Market::NAME

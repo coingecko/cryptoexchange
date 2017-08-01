@@ -12,7 +12,7 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           market_pairs = []
           output.each do |pair|
-            market_pairs << Quoine::Models::MarketPair.new(
+            market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: pair['base_currency'],
                               target: pair['quoted_currency'],
                               market: Quoine::Market::NAME

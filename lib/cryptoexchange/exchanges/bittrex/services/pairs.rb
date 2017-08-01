@@ -13,7 +13,7 @@ module Cryptoexchange::Exchanges
           pairs = output['result']
           market_pairs = []
           pairs.each do |pair|
-            market_pairs << Bittrex::Models::MarketPair.new(
+            market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: pair['BaseCurrency'],
                               target: pair['MarketCurrency'],
                               market: Bittrex::Market::NAME
