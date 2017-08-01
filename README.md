@@ -37,7 +37,7 @@ Or install it yourself as:
 | Bittrex           | Y       |            |         |         | Y           |
 | GDAX              |         |            |         |         |             |
 | Gemini            | Y       |            |         |         | Y           |
-| Kraken            |         |            |         |         |             |
+| Kraken            | Y       |            |         |         | Y           |
 | Poloniex          |         |            |         |         |             |
 | Coincheck         | Y       |            |         |         | User-Defined|
 | Bitflyer          | Y       |            |         |         | Y           |
