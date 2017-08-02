@@ -51,7 +51,7 @@ Or install it yourself as:
 | BTC-e             |         |            |         |         |             |
 | Bleutrade         | Y       |            |         |         | Y           |
 | Yobit             |         |            |         |         |             |
-| Bitfinex          |         |            |         |         |             |
+| Bitfinex          | Y       |            |         |         | Y           |
 | BTER              | Y       |            |         |         | Y           |
 | Cryptopia         | Y       |            |         |         | Y           |
 | Livecoin          | Y       |            |         |         | Y           |
