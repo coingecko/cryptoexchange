@@ -37,8 +37,8 @@ Or install it yourself as:
 | Bittrex           | Y       |            |         |         | Y           |
 | GDAX              |         |            |         |         |             |
 | Gemini            | Y       |            |         |         | Y           |
-| Kraken            |         |            |         |         |             |
 | Poloniex          | Y       |            |         |         | Y           |
+| Kraken            | Y       |            |         |         | Y           |
 | Coincheck         | Y       |            |         |         | User-Defined|
 | Bitflyer          | Y       |            |         |         | Y           |
 | Quoine            |         |            |         |         |             |
@@ -51,7 +51,7 @@ Or install it yourself as:
 | BTC-e             |         |            |         |         |             |
 | Bleutrade         | Y       |            |         |         | Y           |
 | Yobit             |         |            |         |         |             |
-| Bitfinex          |         |            |         |         |             |
+| Bitfinex          | Y       |            |         |         | Y           |
 | BTER              | Y       |            |         |         | Y           |
 | Cryptopia         | Y       |            |         |         | Y           |
 | Livecoin          | Y       |            |         |         | Y           |
