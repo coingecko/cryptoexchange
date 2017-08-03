@@ -20,11 +20,11 @@ RSpec.describe 'Yobit integration specs' do
     expect(ticker.base).to eq 'PX'
     expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'yobit'
-    expect(ticker.last).to_not be nil
-    expect(ticker.bid).to_not be nil
-    expect(ticker.ask).to_not be nil
-    expect(ticker.high).to_not be nil
-    expect(ticker.volume).to_not be nil
+    expect(ticker.last).to be_a Numeric
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.ask).to be_a Numeric
+    expect(ticker.high).to be_a Numeric
+    expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be_a Numeric
     expect(ticker.payload).to_not be nil
   end

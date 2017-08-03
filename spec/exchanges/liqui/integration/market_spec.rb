@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 RSpec.describe 'Liqui integration specs' do
-  client = Cryptoexchange::Client.new
+  let(:client) {  Cryptoexchange::Client.new }
 
   it 'fetch pairs' do
     pairs = client.pairs('liqui')
@@ -13,20 +13,19 @@ RSpec.describe 'Liqui integration specs' do
     expect(pair.market).to eq 'liqui'
   end
 
-  context 'fetch ticker' do
-    before(:all) do
-      ltc_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'LTC', target: 'BTC', market: 'liqui')
-      @ticker = client.ticker(ltc_btc_pair)
-    end
-    it { expect(@ticker.base).to eq 'LTC' }
-    it { expect(@ticker.target).to eq 'BTC' }
-    it { expect(@ticker.market).to eq 'liqui' }
-    it { expect(@ticker.last).to_not be nil }
-    it { expect(@ticker.bid).to_not be nil }
-    it { expect(@ticker.ask).to_not be nil }
-    it { expect(@ticker.high).to_not be nil }
-    it { expect(@ticker.volume).to_not be nil }
-    it { expect(@ticker.timestamp).to be_a Numeric }
-    it { expect(@ticker.payload).to_not be nil }
+  it 'fetch ticker' do
+    ltc_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'LTC', target: 'BTC', market: 'liqui')
+    ticker = client.ticker(ltc_btc_pair)
+
+    expect(ticker.base).to eq 'LTC'
+    expect(ticker.target).to eq 'BTC'
+    expect(ticker.market).to eq 'liqui'
+    expect(ticker.last).to be_a Numeric
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.ask).to be_a Numeric
+    expect(ticker.high).to be_a Numeric
+    expect(ticker.volume).to be_a Numeric
+    expect(ticker.timestamp).to be_a Numeric
+    expect(ticker.payload).to_not be nil
   end
 end
