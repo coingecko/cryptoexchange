@@ -35,10 +35,10 @@ Or install it yourself as:
 | CHBTC             |         |            |         |         |             |
 | Bitstamp          | Y       |            |         |         | User-Defined|
 | Bittrex           | Y       |            |         |         | Y           |
-| GDAX              |         |            |         |         |             |
+| GDAX              | Y       |            |         |         | Y           |
 | Gemini            | Y       |            |         |         | Y           |
-| Kraken            |         |            |         |         |             |
-| Poloniex          |         |            |         |         |             |
+| Poloniex          | Y       |            |         |         | Y           |
+| Kraken            | Y       |            |         |         | Y           |
 | Coincheck         | Y       |            |         |         | User-Defined|
 | Bitflyer          | Y       |            |         |         | Y           |
 | Quoine            |         |            |         |         |             |
@@ -51,7 +51,7 @@ Or install it yourself as:
 | BTC-e             |         |            |         |         |             |
 | Bleutrade         | Y       |            |         |         | Y           |
 | Yobit             | Y       |            |         |         | Y           |
-| Bitfinex          |         |            |         |         |             |
+| Bitfinex          | Y       |            |         |         | Y           |
 | BTER              | Y       |            |         |         | Y           |
 | Cryptopia         | Y       |            |         |         | Y           |
 | Livecoin          | Y       |            |         |         | Y           |
