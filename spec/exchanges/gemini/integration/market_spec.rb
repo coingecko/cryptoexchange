@@ -20,9 +20,9 @@ RSpec.describe 'Gemini integration specs' do
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USD'
     expect(ticker.market).to eq 'gemini'
-    expect(ticker.bid).to_not be nil
-    expect(ticker.ask).to_not be nil
-    expect(ticker.volume).to_not be nil
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.ask).to be_a Numeric
+    expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be_a Numeric
     expect(ticker.payload).to_not be nil
   end

@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 RSpec.describe 'Hitbtc integration specs' do
-  client = Cryptoexchange::Client.new
+  let(:client) { Cryptoexchange::Client.new }
 
   it 'fetch pairs' do
     pairs = client.pairs('hitbtc')
@@ -13,20 +13,19 @@ RSpec.describe 'Hitbtc integration specs' do
     expect(pair.market).to eq 'hitbtc'
   end
 
-  context 'fetch ticker' do
-    before(:all) do
-      btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'hitbtc')
-      @ticker = client.ticker(btc_usd_pair)
-    end
-    it { expect(@ticker.base).to eq 'BTC' }
-    it { expect(@ticker.target).to eq 'USD' }
-    it { expect(@ticker.market).to eq 'hitbtc' }
-    it { expect(@ticker.last).to_not be nil }
-    it { expect(@ticker.bid).to_not be nil }
-    it { expect(@ticker.ask).to_not be nil }
-    it { expect(@ticker.high).to_not be nil }
-    it { expect(@ticker.volume).to_not be nil }
-    it { expect(@ticker.timestamp).to be_a Numeric }
-    it { expect(@ticker.payload).to_not be nil }
+  it 'fetch ticker' do
+    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'hitbtc')
+    ticker = client.ticker(btc_usd_pair)
+
+    expect(ticker.base).to eq 'BTC'
+    expect(ticker.target).to eq 'USD'
+    expect(ticker.market).to eq 'hitbtc'
+    expect(ticker.last).to be_a Numeric
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.ask).to be_a Numeric
+    expect(ticker.high).to be_a Numeric
+    expect(ticker.volume).to be_a Numeric
+    expect(ticker.timestamp).to be_a Numeric
+    expect(ticker.payload).to_not be nil
   end
 end

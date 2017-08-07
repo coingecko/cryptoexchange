@@ -20,10 +20,10 @@ RSpec.describe 'Bitstamp integration specs' do
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USD'
     expect(ticker.market).to eq 'bitstamp'
-    expect(ticker.last).to_not be nil
-    expect(ticker.high).to_not be nil
-    expect(ticker.low).to_not be nil
-    expect(ticker.volume).to_not be nil
+    expect(ticker.last).to be_a Numeric
+    expect(ticker.high).to be_a Numeric
+    expect(ticker.low).to be_a Numeric
+    expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be_a Numeric
     expect(ticker.payload).to_not be nil
   end
