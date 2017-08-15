@@ -69,6 +69,7 @@ Or install it yourself as:
 | Itbit             |         |            |         |         |             |
 | Jubi              |         |            |         |         |             |
 | MercadoBitcoin    |         |            |         |         |             |
+| Viabtc            | Y       |            |         |         | User-Defined|
 
 ## Usage
 
