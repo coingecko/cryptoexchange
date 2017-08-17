@@ -32,7 +32,7 @@ Or install it yourself as:
 | Huobi             |         |            |         |         |             |
 | Yunbi             | Y       |            |         |         | Y           |
 | BTC38             |         |            |         |         |             |
-| CHBTC             |         |            |         |         |             |
+| CHBTC             | Y       |            |         |         | User-Defined|
 | Bitstamp          | Y       |            |         |         | User-Defined|
 | Bittrex           | Y       |            |         |         | Y           |
 | GDAX              | Y       |            |         |         | Y           |
