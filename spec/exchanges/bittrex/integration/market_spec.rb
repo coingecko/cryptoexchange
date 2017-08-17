@@ -13,12 +13,22 @@ RSpec.describe 'Bittrex integration specs' do
     expect(pair.market).to eq 'bittrex'
   end
 
-  it 'fetch ticker' do
-    btc_ltc_pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'ltc', market: 'bittrex')
-    ticker = client.ticker(btc_ltc_pair)
+  it 'fetch pairs and assign the correct base/target' do
+    pairs = client.pairs('bittrex')
+    expect(pairs).not_to be_empty
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'LTC'
+    pair = pairs.first
+    expect(pair.base).to eq 'LTC'
+    expect(pair.target).to eq 'BTC'
+    expect(pair.market).to eq 'bittrex'
+  end
+
+  it 'fetch ticker' do
+    pair = Cryptoexchange::Models::MarketPair.new(base: 'ltc', target: 'btc', market: 'bittrex')
+    ticker = client.ticker(pair)
+
+    expect(ticker.base).to eq 'LTC'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'bittrex'
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
