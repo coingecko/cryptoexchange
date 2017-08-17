@@ -41,7 +41,7 @@ Or install it yourself as:
 | Kraken            | Y       |            |         |         | Y           |
 | Coincheck         | Y       |            |         |         | User-Defined|
 | Bitflyer          | Y       |            |         |         | Y           |
-| Quoine            |         |            |         |         |             |
+| Quoine            | Y       |            |         |         | Y           |
 | QuadrigaCX        |         |            |         |         |             |
 | Unocoin           |         |            |         |         |             |
 | Coinone           | Y       |            |         |         | Y           |
