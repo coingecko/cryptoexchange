@@ -10,11 +10,11 @@ module Cryptoexchange
       end
 
       def target
-        @target.upcase
+        @target.to_s.upcase
       end
 
       def base
-        @base.upcase
+        @base.to_s.upcase
       end
     end
   end
