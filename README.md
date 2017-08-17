@@ -67,7 +67,7 @@ Or install it yourself as:
 | BTCChina          |         |            |         |         |             |
 | Coinmate          |         |            |         |         |             |
 | Itbit             |         |            |         |         |             |
-| Jubi              |         |            |         |         |             |
+| Jubi              | Y       |            |         |         | Y           |
 | MercadoBitcoin    |         |            |         |         |             |
 | Viabtc            | Y       |            |         |         | User-Defined|
 
