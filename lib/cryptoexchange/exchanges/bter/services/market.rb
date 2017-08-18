@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
           ticker.market    = Bter::Market::NAME
           ticker.ask       = NumericHelper.to_d(output['lowestAsk'])
           ticker.bid       = NumericHelper.to_d(output['highestBid'])
-          ticker.volume    = NumericHelper.to_d(output['baseVolume'])
+          ticker.volume    = NumericHelper.to_d(output['quoteVolume'])
           ticker.high      = NumericHelper.to_d(output['high24hr'])
           ticker.low       = NumericHelper.to_d(output['low24hr'])
           ticker.last      = NumericHelper.to_d(output['last'])
