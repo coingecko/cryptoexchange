@@ -46,7 +46,7 @@ Or install it yourself as:
 | Unocoin           |         |            |         |         |             |
 | Coinone           | Y       |            |         |         | Y           |
 | Korbit            | Y       |            |         |         | User-Defined|
-| Bithumb           | Y       |            |         |         | Y           |
+| Bithumb           | Y       |            |         |         | User-Defined|
 | Luno              |         |            |         |         |             |
 | BTC-e             |         |            |         |         |             |
 | Bleutrade         | Y       |            |         |         | Y           |
