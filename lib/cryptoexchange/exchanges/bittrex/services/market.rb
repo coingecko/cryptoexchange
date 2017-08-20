@@ -10,21 +10,22 @@ module Cryptoexchange::Exchanges
 
         def fetch(market_pair)
           output = super(ticker_url(market_pair))
-          adapt(output)
+          adapt(output, market_pair)
         end
 
         def ticker_url(market_pair)
           base = market_pair.base
           target = market_pair.target
-          "#{Cryptoexchange::Exchanges::Bittrex::Market::API_URL}/public/getmarketsummary?market=#{base}-#{target}"
+          # Bittrex pair has BTC comes first, when BTC is typically a Target not a Base
+          "#{Cryptoexchange::Exchanges::Bittrex::Market::API_URL}/public/getmarketsummary?market=#{target}-#{base}"
         end
 
-        def adapt(output)
+        def adapt(output, market_pair)
           ticker = Cryptoexchange::Models::Ticker.new
           market = output['result'][0]
 
-          ticker.base      = market['MarketName'].split("-")[0]
-          ticker.target    = market['MarketName'].split("-")[1]
+          ticker.base      = market_pair.base
+          ticker.target    = market_pair.target
           ticker.market    = Bittrex::Market::NAME
           ticker.last      = NumericHelper.to_d(market['Last'])
           ticker.high      = NumericHelper.to_d(market['High'])

@@ -20,7 +20,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          name = "#{market_pair.base}_#{market_pair.target}"
+          name = "#{market_pair.target}_#{market_pair.base}"
           market = output[name]
 
           ticker = Cryptoexchange::Models::Ticker.new

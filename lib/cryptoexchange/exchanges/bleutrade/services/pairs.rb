@@ -4,7 +4,6 @@ module Cryptoexchange::Exchanges
       class Pairs < Cryptoexchange::Services::Pairs
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Bleutrade::Market::API_URL}/public/getmarkets"
 
-
         def fetch
           output = super
           adapt(output)
@@ -13,9 +12,10 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           market_pairs = []
           output['result'].each do |pair|
+            base, target = pair['MarketName'].split("_")
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair['BaseCurrency'],
-                              target: pair['MarketCurrency'],
+                              base: base,
+                              target: target,
                               market: Bleutrade::Market::NAME
                             )
           end

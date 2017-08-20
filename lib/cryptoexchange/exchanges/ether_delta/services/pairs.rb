@@ -11,7 +11,9 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output.keys.map do |pair|
-            base, target = pair.split('_')
+            # format example: ETH_ZRX
+            # ETH is the Target, ZRX is the Base
+            target, base = pair.split('_')
 
             Cryptoexchange::Models::MarketPair.new({
               base: base,

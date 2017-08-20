@@ -19,7 +19,9 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |pair, ticker|
-            base, target = pair.split('_')
+            # Target comes first in Poloniex ie. BTC-BCN
+            # BTC cannot be a base in this pair
+            target, base = pair.split('_')
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
                             target: target,

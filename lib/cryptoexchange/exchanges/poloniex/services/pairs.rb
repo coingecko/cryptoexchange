@@ -13,7 +13,9 @@ module Cryptoexchange::Exchanges
           market_pairs = []
           output.each do |pair, ticker|
             market_pair = Cryptoexchange::Models::MarketPair.new
-            base, target = pair.split('_')
+            # Target comes first in Poloniex ie. BTC-BCN
+            # BTC cannot be a base in this pair
+            target, base = pair.split('_')
             market_pair.base = base
             market_pair.target = target
             market_pair.market = Poloniex::Market::NAME
