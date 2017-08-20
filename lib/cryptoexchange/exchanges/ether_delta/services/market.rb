@@ -30,7 +30,7 @@ module Cryptoexchange::Exchanges
           ticker.last      = NumericHelper.to_d(market['last'].to_s)
           ticker.bid       = NumericHelper.to_d(market['bid'].to_s)
           ticker.ask       = NumericHelper.to_d(market['ask'].to_s)
-          ticker.volume    = NumericHelper.to_d(market['baseVolume'].to_s)
+          ticker.volume    = NumericHelper.to_d(market['quoteVolume'].to_s)
           ticker.timestamp = DateTime.now.to_time.to_i
           ticker.payload   = market
           ticker
