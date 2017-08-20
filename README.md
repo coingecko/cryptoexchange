@@ -70,6 +70,7 @@ Or install it yourself as:
 | Jubi              | Y       |            |         |         | Y           |
 | MercadoBitcoin    |         |            |         |         |             |
 | Viabtc            | Y       |            |         |         | User-Defined|
+| Tidex             | Y       |            |         |         | Y           |
 
 ## Usage
 
