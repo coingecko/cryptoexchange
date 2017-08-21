@@ -71,6 +71,7 @@ Or install it yourself as:
 | MercadoBitcoin    |         |            |         |         |             |
 | Viabtc            | Y       |            |         |         | User-Defined|
 | Tidex             | Y       |            |         |         | Y           |
+| Bitbay            | Y       |            |         |         | User-Defined|
 
 ## Usage
 
