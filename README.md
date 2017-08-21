@@ -26,6 +26,7 @@ Or install it yourself as:
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |
 | ANX               | Y       |            |         |         | User-Defined|
 | Gatecoin          | Y       |            |         |         | Y           |
+| Bitso             | Y       |            |         |         | Y
 | BTCC              | Y       |            |         |         | User-Defined|
 | OKCoin            | Y       |            |         |         | User-Defined|
 | LakeBTC           | Y       |            |         |         | Y           |
