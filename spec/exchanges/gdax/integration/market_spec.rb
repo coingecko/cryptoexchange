@@ -25,6 +25,7 @@ RSpec.describe 'Gdax integration specs' do
     expect(ticker.ask).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be_a Numeric
+    expect(DateTime.strptime(ticker.timestamp.to_s, '%s').year).to eq Date.today.year
     expect(ticker.payload).to_not be nil
   end
 end
