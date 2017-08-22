@@ -26,6 +26,7 @@ RSpec.describe 'Hitbtc integration specs' do
     expect(ticker.high).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be_a Numeric
+    expect(DateTime.strptime(ticker.timestamp.to_s, '%s').year).to be <= 5000
     expect(ticker.payload).to_not be nil
   end
 end
