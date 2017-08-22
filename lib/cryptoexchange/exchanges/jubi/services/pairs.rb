@@ -13,7 +13,7 @@ module Cryptoexchange::Exchanges
           default_target = 'CNY'
           output.keys.map do |base|
             Cryptoexchange::Models::MarketPair.new({
-              base: base,
+              base: base.upcase,
               target: default_target,
               market: Jubi::Market::NAME
             })

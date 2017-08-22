@@ -39,7 +39,7 @@ module Cryptoexchange::Exchanges
           ticker.low       = NumericHelper.to_d(market['low'])
           ticker.volume    = NumericHelper.to_d(volume)
           ticker.timestamp = DateTime.now.to_time.to_i
-          ticker.payload   = market
+          ticker.payload   = market.merge({ "volume" => volume })
           ticker
         end
       end
