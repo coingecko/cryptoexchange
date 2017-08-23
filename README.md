@@ -43,7 +43,7 @@ Or install it yourself as:
 | Coincheck         | Y       |            |         |         | User-Defined|
 | Bitflyer          | Y       |            |         |         | Y           |
 | Quoine            | Y       |            |         |         | Y           |
-| QuadrigaCX        |         |            |         |         |             |
+| QuadrigaCX        | Y       |            |         |         | User-Defined|
 | Unocoin           |         |            |         |         |             |
 | Coinone           | Y       |            |         |         | Y           |
 | Korbit            | Y       |            |         |         | User-Defined|
