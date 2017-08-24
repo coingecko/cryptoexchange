@@ -69,7 +69,7 @@ Or install it yourself as:
 | Coinmate          |         |            |         |         |             |
 | Itbit             |         |            |         |         |             |
 | Jubi              | Y       |            |         |         | Y           |
-| MercadoBitcoin    |         |            |         |         |             |
+| MercadoBitcoin    | Y       |            |         |         | User-Defined|
 | Viabtc            | Y       |            |         |         | User-Defined|
 | Tidex             | Y       |            |         |         | Y           |
 | Bitbay            | Y       |            |         |         | User-Defined|
