@@ -30,7 +30,7 @@ Or install it yourself as:
 | BTCC              | Y       |            |         |         | User-Defined|
 | OKCoin            | Y       |            |         |         | User-Defined|
 | LakeBTC           | Y       |            |         |         | Y           |
-| Huobi             |         |            |         |         |             |
+| Huobi             | Y       |            |         |         | Y           |
 | Yunbi             | Y       |            |         |         | Y           |
 | BTC38             |         |            |         |         |             |
 | CHBTC             | Y       |            |         |         | User-Defined|
