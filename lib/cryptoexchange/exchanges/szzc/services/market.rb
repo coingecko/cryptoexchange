@@ -25,10 +25,10 @@ module Cryptoexchange::Exchanges
           ticker.market    = Szzc::Market::NAME
           ticker.ask       = NumericHelper.to_d(result['sell'] / 1e8)
           ticker.bid       = NumericHelper.to_d(result['buy'] / 1e8)
-          ticker.last      = NumericHelper.to_d(result['last24h'] / 1e8)
-          ticker.high      = NumericHelper.to_d(result['high24h'] / 1e8)
-          ticker.low       = NumericHelper.to_d(result['low24h'] / 1e8)
-          ticker.volume    = NumericHelper.to_d(result['vol24h'] / 1e8)
+          ticker.last      = NumericHelper.to_d(result['last'] / 1e8)
+          ticker.high      = NumericHelper.to_d(result['high'] / 1e8)
+          ticker.low       = NumericHelper.to_d(result['low'] / 1e8)
+          ticker.volume    = NumericHelper.to_d(result['vol'] / 1e8)
           ticker.timestamp = Time.now.to_i
           ticker.payload   = output
           ticker
