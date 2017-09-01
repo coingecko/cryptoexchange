@@ -73,6 +73,7 @@ Or install it yourself as:
 | Viabtc            | Y       |            |         |         | User-Defined|
 | Tidex             | Y       |            |         |         | Y           |
 | Bitbay            | Y       |            |         |         | User-Defined|
+| BX Thailand       | Y       |            |         |         | Y           |
 
 ## Usage
 
