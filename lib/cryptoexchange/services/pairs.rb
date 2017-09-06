@@ -17,8 +17,8 @@ module Cryptoexchange
         return fetch_via_override(default_override_path) if default_override_exist?
       end
 
-      def fetch_via_api
-        fetch_response = HTTP.timeout(:write => 2, :connect => 5, :read => 8).get(self.class::PAIRS_URL)
+      def fetch_via_api(endpoint = self.class::PAIRS_URL)
+        fetch_response = HTTP.timeout(:write => 2, :connect => 5, :read => 8).get(endpoint)
         JSON.parse(fetch_response.to_s)
       end
 

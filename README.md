@@ -30,7 +30,7 @@ Or install it yourself as:
 | BTCC              | Y       |            |         |         | User-Defined|
 | OKCoin            | Y       |            |         |         | User-Defined|
 | LakeBTC           | Y       |            |         |         | Y           |
-| Huobi             |         |            |         |         |             |
+| Huobi             | Y       |            |         |         | Y           |
 | Yunbi             | Y       |            |         |         | Y           |
 | BTC38             |         |            |         |         |             |
 | CHBTC             | Y       |            |         |         | User-Defined|
@@ -69,11 +69,12 @@ Or install it yourself as:
 | Coinmate          |         |            |         |         |             |
 | Itbit             |         |            |         |         |             |
 | Jubi              | Y       |            |         |         | Y           |
-| MercadoBitcoin    |         |            |         |         |             |
+| MercadoBitcoin    | Y       |            |         |         | User-Defined|
 | Viabtc            | Y       |            |         |         | User-Defined|
 | Tidex             | Y       |            |         |         | Y           |
 | Bitbay            | Y       |            |         |         | User-Defined|
 | SZZC              | Y       |            |         |         | Y           |
+| BX Thailand       | Y       |            |         |         | Y           |
 
 ## Usage
 
