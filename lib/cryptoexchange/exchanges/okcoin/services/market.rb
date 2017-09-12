@@ -16,7 +16,15 @@ module Cryptoexchange::Exchanges
         def ticker_url(market_pair)
           base = market_pair.base.downcase
           target = market_pair.target.downcase
-          "#{Cryptoexchange::Exchanges::Okcoin::Market::API_URL}/ticker.do?symbol=#{base}_#{target}"
+          "#{api_url(target)}/ticker.do?symbol=#{base}_#{target}"
+        end
+
+        def api_url(target)
+          if target == 'cny'
+            Cryptoexchange::Exchanges::Okcoin::Market::CN_API_URL
+          else
+            Cryptoexchange::Exchanges::Okcoin::Market::INT_API_URL
+          end
         end
 
         def adapt(output, market_pair)
