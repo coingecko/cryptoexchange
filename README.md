@@ -64,8 +64,6 @@ Or install it yourself as:
 | CCex              | Y       |            |         |         | Y           |
 | CoinExchange      | Y       |            |         |         | Y           |
 | EtherDelta        | Y       |            |         |         | Y           |
-| Bitbay            |         |            |         |         |             |
-| Bitso             |         |            |         |         |             |
 | BTCChina          |         |            |         |         |             |
 | Coinmate          |         |            |         |         |             |
 | Itbit             |         |            |         |         |             |
@@ -76,6 +74,7 @@ Or install it yourself as:
 | Bitbay            | Y       |            |         |         | User-Defined|
 | SZZC              | Y       |            |         |         | Y           |
 | BX Thailand       | Y       |            |         |         | Y           |
+| Binance           |         |            |         |         |             |
 
 ## Usage
 
