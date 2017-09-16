@@ -25,56 +25,56 @@ Or install it yourself as:
 | Exchange          | Ticker  | Order Book | Trade   | Account | Market List |
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |
 | ANX               | Y       |            |         |         | User-Defined|
-| Gatecoin          | Y       |            |         |         | Y           |
+| Binance           |         |            |         |         |             |
+| Bitbay            | Y       |            |         |         | User-Defined|
+| Bitcoin Indonesia | Y       |            |         |         | User-Defined|
+| Bitfinex          | Y       |            |         |         | Y           |
+| Bitflyer          | Y       |            |         |         | Y           |
+| Bithumb           | Y       |            |         |         | User-Defined|
 | Bitso             | Y       |            |         |         | Y           |
-| BTCC              | Y       |            |         |         | User-Defined|
-| OKCoin            | Y       |            |         |         | User-Defined|
-| LakeBTC           | Y       |            |         |         | Y           |
-| Huobi             | Y       |            |         |         | Y           |
-| Yunbi             | Y       |            |         |         | Y           |
-| Yuanbao           | Y       |            |         |         | User-Defined|
-| BTC38             |         |            |         |         |             |
-| CHBTC             | Y       |            |         |         | User-Defined|
 | Bitstamp          | Y       |            |         |         | User-Defined|
 | Bittrex           | Y       |            |         |         | Y           |
+| Bleutrade         | Y       |            |         |         | Y           |
+| BTC-e             |         |            |         |         |             |
+| BTC38             |         |            |         |         |             |
+| BTCC              | Y       |            |         |         | User-Defined|
+| BTCChina          |         |            |         |         |             |
+| BTER              | Y       |            |         |         | Y           |
+| BX Thailand       | Y       |            |         |         | Y           |
+| CCex              | Y       |            |         |         | Y           |
+| CHBTC             | Y       |            |         |         | User-Defined|
+| Coincheck         | Y       |            |         |         | User-Defined|
+| CoinExchange      | Y       |            |         |         | Y           |
+| Coinmate          |         |            |         |         |             |
+| Coinone           | Y       |            |         |         | Y           |
+| Cryptopia         | Y       |            |         |         | Y           |
+| EtherDelta        | Y       |            |         |         | Y           |
+| Gatecoin          | Y       |            |         |         | Y           |
 | GDAX              | Y       |            |         |         | Y           |
 | Gemini            | Y       |            |         |         | Y           |
-| Poloniex          | Y       |            |         |         | Y           |
-| Kraken            | Y       |            |         |         | Y           |
-| Coincheck         | Y       |            |         |         | User-Defined|
-| Bitflyer          | Y       |            |         |         | Y           |
-| Quoine            | Y       |            |         |         | Y           |
-| QuadrigaCX        | Y       |            |         |         | User-Defined|
-| Unocoin           |         |            |         |         |             |
-| Coinone           | Y       |            |         |         | Y           |
-| Korbit            | Y       |            |         |         | User-Defined|
-| Bithumb           | Y       |            |         |         | User-Defined|
-| Luno              |         |            |         |         |             |
-| BTC-e             |         |            |         |         |             |
-| Bleutrade         | Y       |            |         |         | Y           |
-| Yobit             | Y       |            |         |         | Y           |
-| Bitfinex          | Y       |            |         |         | Y           |
-| BTER              | Y       |            |         |         | Y           |
-| Cryptopia         | Y       |            |         |         | Y           |
-| Livecoin          | Y       |            |         |         | Y           |
-| Nova Exchange     | Y       |            |         |         | Y           |
-| Bitcoin Indonesia | Y       |            |         |         | User-Defined|
-| Liqui             | Y       |            |         |         | Y           |
 | HitBTC            | Y       |            |         |         | Y           |
-| CCex              | Y       |            |         |         | Y           |
-| CoinExchange      | Y       |            |         |         | Y           |
-| EtherDelta        | Y       |            |         |         | Y           |
-| BTCChina          |         |            |         |         |             |
-| Coinmate          |         |            |         |         |             |
+| Huobi             | Y       |            |         |         | Y           |
 | Itbit             |         |            |         |         |             |
 | Jubi              | Y       |            |         |         | Y           |
+| Korbit            | Y       |            |         |         | User-Defined|
+| Kraken            | Y       |            |         |         | Y           |
+| LakeBTC           | Y       |            |         |         | Y           |
+| Liqui             | Y       |            |         |         | Y           |
+| Livecoin          | Y       |            |         |         | Y           |
+| Luno              |         |            |         |         |             |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|
-| Viabtc            | Y       |            |         |         | User-Defined|
-| Tidex             | Y       |            |         |         | Y           |
-| Bitbay            | Y       |            |         |         | User-Defined|
+| Nova Exchange     | Y       |            |         |         | Y           |
+| OKCoin            | Y       |            |         |         | User-Defined|
+| Poloniex          | Y       |            |         |         | Y           |
+| QuadrigaCX        | Y       |            |         |         | User-Defined|
+| Quoine            | Y       |            |         |         | Y           |
 | SZZC              | Y       |            |         |         | Y           |
-| BX Thailand       | Y       |            |         |         | Y           |
-| Binance           |         |            |         |         |             |
+| Tidex             | Y       |            |         |         | Y           |
+| Unocoin           |         |            |         |         |             |
+| Viabtc            | Y       |            |         |         | User-Defined|
+| Yobit             | Y       |            |         |         | Y           |
+| Yuanbao           | Y       |            |         |         | User-Defined|
+| Yunbi             | Y       |            |         |         | Y           |
 
 ## Usage
 
@@ -122,7 +122,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/cryptoexchange. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/coingecko/cryptoexchange. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
