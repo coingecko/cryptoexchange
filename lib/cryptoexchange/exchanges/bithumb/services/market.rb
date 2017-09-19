@@ -4,21 +4,34 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            true
+            false
           end
         end
 
-        def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output, market_pair)
+        def fetch
+          output = super ticker_url
+          adapt_all(output)
         end
 
-        def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bithumb::Market::API_URL}/public/ticker/#{market_pair.base}"
+        def ticker_url
+          "#{Cryptoexchange::Exchanges::Bithumb::Market::API_URL}/public/ticker/all"
         end
 
-        def adapt(output, market_pair)
-          market = output['data']
+        def adapt_all(output)
+          output['data'].map do |target, ticker|
+            base = target
+            target = 'KRW'
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+                            base: base,
+                            target: target,
+                            market: Bithumb::Market::NAME
+                          )
+            adapt(ticker, market_pair, output['data']['date'])
+          end
+        end
+
+        def adapt(output, market_pair, date)
+          market = output
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
@@ -30,7 +43,7 @@ module Cryptoexchange::Exchanges
           ticker.low = NumericHelper.to_d(market['min_price'])
           #use 1day volume instead of 7days
           ticker.volume = NumericHelper.to_d(market['volume_1day'])
-          ticker.timestamp = market['date'].to_i / 1000
+          ticker.timestamp = date.to_i / 1000
           ticker.payload = market
           ticker
         end
