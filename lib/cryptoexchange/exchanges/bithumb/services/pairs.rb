@@ -2,6 +2,7 @@ module Cryptoexchange::Exchanges
   module Bithumb
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bithumb::Market::API_URL}/public/ticker/all"
 
         def fetch
           output = super
@@ -9,16 +10,16 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          market_pairs = []
-          output.each do |pair|
-            market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair[:base],
-                              target: pair[:target],
-                              market: Bithumb::Market::NAME
-                            )
+          pairs = []
+          output['data'].keys.each do |base|
+            next if base == 'date'
+            pairs << Cryptoexchange::Models::MarketPair.new(
+                base: base,
+                target: 'KRW',
+                market: Bithumb::Market::NAME
+              )
           end
-
-          market_pairs
+          pairs
         end
       end
     end
