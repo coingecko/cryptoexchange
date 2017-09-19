@@ -30,7 +30,7 @@ Or install it yourself as:
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|
 | Bitfinex          | Y       |            |         |         | Y           |
 | Bitflyer          | Y       |            |         |         | Y           |
-| Bithumb           | Y       |            |         |         | User-Defined|
+| Bithumb           | Y       |            |         |         | Y           |
 | Bitso             | Y       |            |         |         | Y           |
 | Bitstamp          | Y       |            |         |         | User-Defined|
 | Bittrex           | Y       |            |         |         | Y           |
