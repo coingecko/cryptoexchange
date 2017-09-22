@@ -16,6 +16,10 @@ module Cryptoexchange
       def base
         @base.to_s.upcase
       end
+
+      def base_raw
+        @base.to_s
+      end
     end
   end
 end
