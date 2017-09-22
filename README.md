@@ -61,7 +61,7 @@ Or install it yourself as:
 | LakeBTC           | Y       |            |         |         | Y           |
 | Liqui             | Y       |            |         |         | Y           |
 | Livecoin          | Y       |            |         |         | Y           |
-| Luno              |         |            |         |         |             |
+| Luno              | Y       |            |         |         | Y           |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|
 | Nova Exchange     | Y       |            |         |         | Y           |
 | OKCoin            | Y       |            |         |         | User-Defined|
