@@ -10,17 +10,20 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output.keys.map do |pair|
+          pairs = []
+          output.keys.each do |pair|
             # format example: ETH_ZRX
             # ETH is the Target, ZRX is the Base
             target, base = pair.split('_')
-
-            Cryptoexchange::Models::MarketPair.new({
+            # Ignore non-standard BASE
+            next if base =~ /\s/ || base =~ /0x/
+            pairs << Cryptoexchange::Models::MarketPair.new({
               base: base,
               target: target,
               market: EtherDelta::Market::NAME
             })
           end
+          pairs
         end
       end
     end
