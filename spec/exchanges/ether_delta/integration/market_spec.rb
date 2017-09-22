@@ -13,6 +13,14 @@ RSpec.describe 'EtherDelta integration specs' do
     expect(pair.market).to eq 'ether_delta'
   end
 
+  it 'does not include pairs with space or 0x' do
+    pairs = client.pairs('ether_delta')
+    pairs.each do |pair|
+      expect(pair.base).to_not match /\s/
+      expect(pair.base).to_not match /0x/
+    end
+  end
+
   it 'fetch pairs and assign the correct base/target' do
     pairs = client.pairs('ether_delta')
     expect(pairs).not_to be_empty
