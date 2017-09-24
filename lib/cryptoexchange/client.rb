@@ -36,5 +36,20 @@ module Cryptoexchange
         folder_name.split('/').last
       end
     end
+
+    def exchange_for(currency)
+      exchanges = []
+      available_exchanges.each do |exchange|
+        pairs = pairs(exchange)
+        next if pairs.is_a?(Hash) && !pairs[:error].empty?
+        pairs.each do |pair|
+          if [pair.base, pair.target].include?(currency.upcase)
+            exchanges << exchange
+            break
+          end
+        end
+      end
+      exchanges
+    end
   end
 end
