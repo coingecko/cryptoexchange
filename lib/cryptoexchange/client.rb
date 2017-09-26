@@ -49,7 +49,7 @@ module Cryptoexchange
           end
         end
       end
-      exchanges
+      exchanges.uniq.sort
     end
   end
 end
