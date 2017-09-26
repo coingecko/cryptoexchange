@@ -84,6 +84,13 @@ Or install it yourself as:
   pairs = client.pairs('bitflyer')
 ```
 
+### List exchange services for certain currency
+```
+  client.exchange_for('btc')
+
+  # ['anx', 'bianance', ...]
+```
+
 ### Query the Ticker API
 ```
   pair = client.pairs('bitflyer').first
