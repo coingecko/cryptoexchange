@@ -8,6 +8,8 @@ module Cryptoexchange
     def pairs(exchange)
       pairs_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Pairs"
       Object.const_get(pairs_classname).new.fetch
+    rescue HTTP::ConnectionError, HTTP::TimeoutError, JSON::ParserError
+      return { error: "#{exchange}'s service is temporarily unavailable." }
     end
 
     def ticker(market_pair)
@@ -24,6 +26,30 @@ module Cryptoexchange
           t.base == market_pair.base && t.target == market_pair.target
         end
       end
+    rescue HTTP::ConnectionError, HTTP::TimeoutError, JSON::ParserError
+      return { error: "#{exchange}'s service is temporarily unavailable." }
+    end
+
+    def available_exchanges
+      folder_names = Dir[File.join(File.dirname(__dir__), 'cryptoexchange', 'exchanges', '**')]
+      folder_names.map do |folder_name|
+        folder_name.split('/').last
+      end
+    end
+
+    def exchange_for(currency)
+      exchanges = []
+      available_exchanges.each do |exchange|
+        pairs = pairs(exchange)
+        next if pairs.is_a?(Hash) && !pairs[:error].empty?
+        pairs.each do |pair|
+          if [pair.base, pair.target].include?(currency.upcase)
+            exchanges << exchange
+            break
+          end
+        end
+      end
+      exchanges.uniq.sort
     end
   end
 end
