@@ -23,11 +23,15 @@ module Cryptoexchange::Exchanges
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
           order_book.market    = Gemini::Market::NAME
-          order_book.asks      = output['asks']
-          order_book.bids      = output['bids']
+          order_book.asks      = adapt_orders output['asks']
+          order_book.bids      = adapt_orders output['bids']
           order_book.timestamp = output['bids'][0]['timestamp'].to_i
           order_book.payload   = output
           order_book
+        end
+
+        def adapt_orders(orders)
+          orders.collect { |order_entry| order_entry.values }
         end
       end
     end
