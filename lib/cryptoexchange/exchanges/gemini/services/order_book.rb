@@ -25,7 +25,7 @@ module Cryptoexchange::Exchanges
           order_book.market    = Gemini::Market::NAME
           order_book.asks      = adapt_orders output['asks']
           order_book.bids      = adapt_orders output['bids']
-          order_book.timestamp = output['bids'][0]['timestamp'].to_i
+          order_book.timestamp = Time.now.to_i
           order_book.payload   = output
           order_book
         end
