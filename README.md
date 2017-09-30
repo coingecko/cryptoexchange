@@ -51,7 +51,7 @@ Or install it yourself as:
 | EtherDelta        | Y       |            |         |         | Y           |
 | Gatecoin          | Y       |            |         |         | Y           |
 | GDAX              | Y       |            |         |         | Y           |
-| Gemini            | Y       |            |         |         | Y           |
+| Gemini            | Y       | Y          |         |         | Y           |
 | HitBTC            | Y       |            |         |         | Y           |
 | Huobi             | Y       |            |         |         | Y           |
 | Itbit             |         |            |         |         |             |
@@ -98,6 +98,17 @@ Or install it yourself as:
   ticker.base
   ticker.target
   ticker.last
+```
+
+### Query the OrderBook API
+```
+  # Check if exchange has support for OrderBook
+  pair = client.pairs('bitflyer').first
+  order_book = client.order_book(pairs.last)
+  order_book.base
+  order_book.target
+  order_book.bids
+  order_book.asks
 ```
 
 ### Market List

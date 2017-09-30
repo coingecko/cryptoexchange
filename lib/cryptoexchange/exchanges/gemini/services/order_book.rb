@@ -31,6 +31,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_orders(orders)
+          # Format as: [price, amount, timestamp]
           orders.collect { |order_entry| order_entry.values }
         end
       end
