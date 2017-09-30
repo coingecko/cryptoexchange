@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitflyer.jp/v1/ticker?product_code=BTC_JPY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitflyer.jp
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2017 04:04:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '310'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=deed1406d946865cf310392beb06f7f021507003450; expires=Wed, 03-Oct-18
+        04:04:10 GMT; path=/; domain=.bitflyer.jp; HttpOnly
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Aspnet-Version:
+      - 4.0.30319
+      Request-Context:
+      - appId=cid-v1:e4fbc941-a2df-48ac-bbac-f2180e904002
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - sameorigin
+      Content-Security-Policy:
+      - 'default-src http: https: ws: wss: data: ''unsafe-inline'' ''unsafe-eval'''
+      Strict-Transport-Security:
+      - max-age=31536000
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3a7d040e6d4b6fcc-SIN
+    body:
+      encoding: UTF-8
+      string: '{"product_code":"BTC_JPY","timestamp":"2017-10-03T04:04:10.75","tick_id":5671258,"best_bid":495917.0,"best_ask":496019.0,"best_bid_size":0.7111,"best_ask_size":1.08989001,"total_bid_depth":4713.91212645,"total_ask_depth":2608.78520934,"ltp":496019.0,"volume":109592.54297206,"volume_by_product":13224.56948182}'
+    http_version: 
+  recorded_at: Tue, 03 Oct 2017 04:04:10 GMT
+recorded_with: VCR 3.0.3

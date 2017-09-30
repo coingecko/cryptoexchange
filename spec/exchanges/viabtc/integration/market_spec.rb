@@ -14,6 +14,8 @@ RSpec.describe 'Viabtc integration specs' do
   end
 
   it 'fetch ticker' do
+    pending ":error=> viabtc's service is temporarily unavailable."
+
     pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'CNY', market: 'viabtc')
     ticker = client.ticker(pair)
 
