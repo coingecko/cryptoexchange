@@ -27,4 +27,17 @@ RSpec.describe 'Gemini integration specs' do
     expect(DateTime.strptime(ticker.timestamp.to_s, '%s').year).to eq Date.today.year
     expect(ticker.payload).to_not be nil
   end
+
+  it 'fetch order book' do
+    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'gemini')
+    order_book = client.order_book(btc_usd_pair)
+
+    expect(order_book.base).to eq 'BTC'
+    expect(order_book.target).to eq 'USD'
+    expect(order_book.market).to eq 'gemini'
+    expect(order_book.asks).to_not be nil
+    expect(order_book.bids).to_not be nil
+    expect(order_book.timestamp).to be_a Numeric
+    expect(order_book.payload).to_not be nil
+  end
 end
