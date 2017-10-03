@@ -14,6 +14,8 @@ RSpec.describe 'Jubi integration specs' do
   end
 
   it 'fetch ticker' do
+    pending ":error=> jubi's service is temporarily unavailable."
+
     pair = Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'CNY', market: 'jubi')
     ticker = client.ticker(pair)
 

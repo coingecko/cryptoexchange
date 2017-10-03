@@ -4,6 +4,8 @@ RSpec.describe 'Yunbi integration specs' do
   let(:client) { Cryptoexchange::Client.new }
 
   it 'fetch pairs' do
+    pending ":error, yunbi's service is temporarily unavailable."
+
     pairs = client.pairs('yunbi')
     expect(pairs).not_to be_empty
 
@@ -14,6 +16,8 @@ RSpec.describe 'Yunbi integration specs' do
   end
 
   it 'fetch ticker' do
+    pending ":error, yunbi's service is temporarily unavailable."
+
     pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'CNY', market: 'yunbi')
     ticker = client.ticker(pair)
 
