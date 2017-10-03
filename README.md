@@ -51,7 +51,7 @@ Or install it yourself as:
 | EtherDelta        | Y       |            |         |         | Y           |
 | Gatecoin          | Y       |            |         |         | Y           |
 | GDAX              | Y       |            |         |         | Y           |
-| Gemini            | Y       | Y          |         |         | Y           |
+| Gemini            | Y       | Y          | Y       |         | Y           |
 | HitBTC            | Y       |            |         |         | Y           |
 | Huobi             | Y       |            |         |         | Y           |
 | Itbit             |         |            |         |         |             |
