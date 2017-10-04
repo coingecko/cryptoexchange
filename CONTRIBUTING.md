@@ -1,6 +1,6 @@
 # Introduction
 
-### 
+###
 
 First of all, thank you for your interest to contribute to the Cryptoexchange project.
 
