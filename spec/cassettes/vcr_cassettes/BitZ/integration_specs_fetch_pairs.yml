@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bit-z.com/api_v1/tickerall
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bit-z.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Oct 2017 10:29:25 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d00e1829c9961326b0f82c14e335f93cb1507199365; expires=Fri, 05-Oct-18
+        10:29:25 GMT; path=/; domain=.bit-z.com; HttpOnly
+      X-Powered-By:
+      - PHP/5.5.9-1ubuntu4.20
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3a8fb321ec6f3349-HKG
+    body:
+      encoding: UTF-8
+      string: '{"code":0,"msg":"Success","data":{"ltc_btc":{"date":1507199365,"last":"0.01210336","buy":"0.01210336","sell":"0.01210784","high":"0.01236472","low":"0.01210252","vol":"33104.4387"},"eth_btc":{"date":1507199365,"last":"0.06868981","buy":"0.06868981","sell":"0.06929954","high":"0.06945208","low":"0.06843190","vol":"6720.0315"},"zec_btc":{"date":1507199365,"last":"0.05711751","buy":"0.05100000","sell":"0.05711751","high":"0.05802537","low":"0.05150000","vol":"3605.4960"},"fct_btc":{"date":1507199365,"last":"0.00402859","buy":"0.00402859","sell":"0.00403550","high":"0.00431842","low":"0.00392443","vol":"83463.2900"},"lsk_btc":{"date":1507199365,"last":"0.00126869","buy":"0.00126280","sell":"0.00126869","high":"0.00131986","low":"0.00125735","vol":"192916.7300"},"xpm_btc":{"date":1507199365,"last":"0.00003346","buy":"0.00003295","sell":"0.00003346","high":"0.00003528","low":"0.00003311","vol":"3318354.6392"},"doge_btc":{"date":1507199365,"last":"0.00000029","buy":"0.00000023","sell":"0.00000025","high":"0.00000029","low":"0.00000023","vol":"91364.5805"},"etc_btc":{"date":1507199365,"last":"0.00275662","buy":"0.00275662","sell":"0.00276215","high":"0.00283815","low":"0.00275662","vol":"73115.7437"},"mzc_btc":{"date":1507199365,"last":"0.00532180","buy":"0.00500000","sell":"0.00650000","high":"0.00551996","low":"0.00530828","vol":"7002.5262"},"gxs_btc":{"date":1507199365,"last":"0.00049725","buy":"0.00049700","sell":"0.00049870","high":"0.00051681","low":"0.00049071","vol":"1333219.9856"},"hsr_btc":{"date":1507199365,"last":"0.00162400","buy":"0.00154000","sell":"0.00162400","high":"0.00162500","low":"0.00137700","vol":"13338.0266"},"blk_btc":{"date":1507199365,"last":"0.00004150","buy":"0.00004151","sell":"0.00005637","high":0,"low":0,"vol":0},"ppc_btc":{"date":1507199365,"last":"0.00029020","buy":"0.00029020","sell":"0.00029121","high":"0.00031398","low":"0.00027924","vol":"356955.7567"},"xas_btc":{"date":1507199365,"last":"0.00007800","buy":"0.00007800","sell":"0.00007810","high":"0.00008100","low":"0.00007800","vol":"37894.7157"}}}'
+    http_version: 
+  recorded_at: Thu, 05 Oct 2017 10:29:25 GMT
+recorded_with: VCR 3.0.3
