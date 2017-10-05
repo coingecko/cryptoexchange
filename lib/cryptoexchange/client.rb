@@ -34,7 +34,7 @@ module Cryptoexchange
       folder_names = Dir[File.join(File.dirname(__dir__), 'cryptoexchange', 'exchanges', '**')]
       folder_names.map do |folder_name|
         folder_name.split('/').last
-      end
+      end.sort
     end
 
     def exchange_for(currency)
