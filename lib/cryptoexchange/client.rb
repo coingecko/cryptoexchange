@@ -67,5 +67,13 @@ module Cryptoexchange
         end
       end
     end
+
+    def trades(market_pair)
+      exchange = market_pair.market
+      market_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Trades"
+      market_class = Object.const_get(market_classname)
+      trades = market_class.new
+      trades.fetch(market_pair)
+    end
   end
 end
