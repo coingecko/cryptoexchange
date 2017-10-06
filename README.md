@@ -71,6 +71,7 @@ Or install it yourself as:
 | Quoine            | Y       |            |         |         | Y           |
 | SZZC              | Y       |            |         |         | Y           |
 | Tidex             | Y       |            |         |         | Y           |
+| TuxExchange       | Y       |            |         |         | Y           |
 | Unocoin           |         |            |         |         |             |
 | Viabtc            | Y       |            |         |         | User-Defined|
 | Yobit             | Y       |            |         |         | Y           |

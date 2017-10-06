@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tuxexchange.com/api?method=getticker
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - tuxexchange.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2017 10:15:30 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSALB=Zz3ujWoDgulzkJtmGmPEnhY8rSEVDsfEuUl8UIdwSNB+sWRi/aRxXG1ks02MygJGXV0Ph5Dva1jOMqWLju+mvmwsq08kTlwUBEo0/WVMSzUHtAzDI2+B4+IL28z1;
+        Expires=Tue, 10 Oct 2017 10:15:29 GMT; Path=/
+      - __cfduid=d9dd6f05e9fc15a6be76dce83dc0088861507025729; expires=Wed, 03-Oct-18
+        10:15:29 GMT; path=/; domain=.tuxexchange.com; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3a7f23fabc590be1-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: |2-
+
+        {"BTC_LTC":{"id":"2","last":"0.01166667","lowestAsk":"0.01225","highestBid":"0.01100034","percentChange":"-4.54564421","quoteVolume":"1.0496988400000002","isFrozen":0,"baseVolume":"0.01232910","high24hr":"0.01222225","low24hr":"0.01111111"},"BTC_DOGE":{"id":"4","last":"0.00000025","lowestAsk":"0.00000026","highestBid":"0.00000024","percentChange":"-3.84615384","quoteVolume":"2384.67777777","isFrozen":0,"baseVolume":"0.00060001","high24hr":"0.00000026","low24hr":"0.00000025"},"BTC_EMC":{"id":"9","last":"0.00012","lowestAsk":"0.0002501","highestBid":"0.00013363","percentChange":"0.00000000","quoteVolume":"0","isFrozen":0,"baseVolume":"0.00000000","high24hr":"0","low24hr":"0"},"BTC_ETH":{"id":"10","last":"0.06777777","lowestAsk":"0.06888888","highestBid":"0.067","percentChange":"0.00000000","quoteVolume":"0","isFrozen":0,"baseVolume":"0.00000000","high24hr":"0","low24hr":"0"},"BTC_DCR":{"id":"11","last":"0.00772569","lowestAsk":"0.00819","highestBid":"0.00772569","percentChange":"-0.95269230","quoteVolume":"0.47384373999999996","isFrozen":0,"baseVolume":"0.00372049","high24hr":"0.00819","low24hr":"0.00772569"},"BTC_DASH":{"id":"12","last":"0.06999999","lowestAsk":"0.07697979","highestBid":"0.06666676","percentChange":"0.00000000","quoteVolume":"0.00285777","isFrozen":0,"baseVolume":"0.00020004","high24hr":"0.06999999","low24hr":"0.06999999"},"BTC_PPC":{"id":"13","last":"0.00029069","lowestAsk":"0.0003034","highestBid":"0.000278","percentChange":"0.00000000","quoteVolume":"0","isFrozen":0,"baseVolume":"0.00000000","high24hr":"0","low24hr":"0"},"BTC_XMR":{"id":"16","last":"0.0209","lowestAsk":"0.02179999","highestBid":"0.02050001","percentChange":"0.00000000","quoteVolume":"0.00956938","isFrozen":0,"baseVolume":"0.00020000","high24hr":"0.0209","low24hr":"0.0209"},"BTC_POT":{"id":"17","last":"0.00001933","lowestAsk":"0.00001927","highestBid":"0.00001811","percentChange":"0.00000000","quoteVolume":"0","isFrozen":0,"baseVolume":"0.00000000","high24hr":"0","low24hr":"0"},"BTC_ZEC":{"id":"18","last":"0.05999999","lowestAsk":"0.05999998","highestBid":"0.0565","percentChange":"0.00000000","quoteVolume":"2.3556856","isFrozen":0,"baseVolume":"0.14134111","high24hr":"0.05999999","low24hr":"0.05999999"},"BTC_NMC":{"id":"19","last":"0.00022","lowestAsk":"0.0002999","highestBid":"0.00026931","percentChange":"0.00000000","quoteVolume":"0","isFrozen":0,"baseVolume":"0.00000000","high24hr":"0","low24hr":"0"},"BTC_BLK":{"id":"20","last":"0.00004822","lowestAsk":"0.00006976","highestBid":"0.00004018","percentChange":"0.00000000","quoteVolume":"0","isFrozen":0,"baseVolume":"0.00000000","high24hr":"0","low24hr":"0"},"BTC_SYS":{"id":"22","last":"0.00001715","lowestAsk":"0.00003666","highestBid":"0.00003224","percentChange":"0.00000000","quoteVolume":"0","isFrozen":0,"baseVolume":"0.00000000","high24hr":"0","low24hr":"0"},"BTC_XCP":{"id":"23","last":"0.00233426","lowestAsk":"0.00242213","highestBid":"0.00233426","percentChange":"-2.74443467","quoteVolume":"173.92876565","isFrozen":0,"baseVolume":"0.41023762","high24hr":"0.00240013","low24hr":"0.00233426"},"BTC_PEPECASH":{"id":"24","last":"0.00000279","lowestAsk":"0.00000289","highestBid":"0.00000275","percentChange":"-5.42372881","quoteVolume":"959225.6375844601","isFrozen":0,"baseVolume":"2.58617704","high24hr":"0.00000309","low24hr":"0.00000251"},"BTC_DTB":{"id":"25","last":"0.000132","lowestAsk":"0.00013335","highestBid":"0.00010676","percentChange":"0.00000000","quoteVolume":"0","isFrozen":0,"baseVolume":"0.00000000","high24hr":"0","low24hr":"0"},"BTC_BCY":{"id":"26","last":"0.00007125","lowestAsk":"0.0000743","highestBid":"0.00006063","percentChange":"-12.37240191","quoteVolume":"89.41495468000001","isFrozen":0,"baseVolume":"0.00673031","high24hr":"0.00008131","low24hr":"0.00007125"},"BTC_GNT":{"id":"27","last":"0.00006319","lowestAsk":"0.00006544","highestBid":"0.00005711","percentChange":"0.00000000","quoteVolume":"0","isFrozen":0,"baseVolume":"0.00000000","high24hr":"0","low24hr":"0"},"BTC_ICN":{"id":"28","last":"0.00032025","lowestAsk":"0.00033626","highestBid":"0.00032025","percentChange":"0.00000000","quoteVolume":"0","isFrozen":0,"baseVolume":"0.00000000","high24hr":"0","low24hr":"0"}}
+    http_version: 
+  recorded_at: Tue, 03 Oct 2017 10:15:30 GMT
+recorded_with: VCR 3.0.3
