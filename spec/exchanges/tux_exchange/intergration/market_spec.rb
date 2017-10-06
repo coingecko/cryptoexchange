@@ -14,11 +14,11 @@ RSpec.describe 'TuxExchange integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'EMC', market: 'tux_exchange')
+    pair = Cryptoexchange::Models::MarketPair.new(base: 'EMC', target: 'BTC', market: 'tux_exchange')
     ticker = client.ticker(pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'EMC'
+    expect(ticker.base).to eq 'EMC'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'tux_exchange'
     expect(ticker.last).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
