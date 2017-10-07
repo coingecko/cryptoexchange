@@ -31,6 +31,7 @@ Or install it yourself as:
 | Bitfinex          | Y       |            |         |         | Y           |
 | Bitflyer          | Y       |            |         |         | Y           |
 | Bithumb           | Y       |            |         |         | Y           |
+| Bitkonan          | Y       |            |         |         | User-Defined|
 | Bitso             | Y       |            |         |         | Y           |
 | Bitstamp          | Y       |            |         |         | User-Defined|
 | Bittrex           | Y       |            |         |         | Y           |
