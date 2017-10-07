@@ -70,6 +70,7 @@ Or install it yourself as:
 | QuadrigaCX        | Y       |            |         |         | User-Defined|
 | Quoine            | Y       |            |         |         | Y           |
 | SZZC              | Y       |            |         |         | Y           |
+| The Rock Trading  | Y       |            |         |         | Y           |
 | Tidex             | Y       |            |         |         | Y           |
 | TuxExchange       | Y       |            |         |         | Y           |
 | Unocoin           |         |            |         |         |             |
