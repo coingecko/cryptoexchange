@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coinmate.io/api/orderBook?currencyPair=BTC_CZK&groupByPriceLimit=False
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinmate.io
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 04 Oct 2017 13:50:25 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d40a0f575a4049217dbfe4abf7b7a97751507125024; expires=Thu, 04-Oct-18
+        13:50:24 GMT; path=/; domain=.coinmate.io; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3a889c2b7aed57a1-IAD
+    body:
+      encoding: UTF-8
+      string: '{"error":false,"errorMessage":null,"data":{"asks":[{"price":94606.02,"amount":0.00049949},{"price":94606.04,"amount":11.0753345},{"price":94700,"amount":0.31475857},{"price":95121,"amount":0.002},{"price":95445.44,"amount":17.09587381},{"price":95600,"amount":0.10589927},{"price":95690,"amount":0.05372183},{"price":97000,"amount":0.1},{"price":97011,"amount":0.002},{"price":97229,"amount":0.015},{"price":97299,"amount":0.05},{"price":97397,"amount":0.05},{"price":97500,"amount":0.27115694},{"price":97500,"amount":0.00030864},{"price":97500,"amount":0.03},{"price":97500,"amount":0.1},{"price":97500,"amount":0.00094981},{"price":97550,"amount":0.0526},{"price":97700,"amount":0.08887155},{"price":97806.9,"amount":0.20053778},{"price":97999,"amount":0.21019395},{"price":98000,"amount":0.15131946},{"price":98000,"amount":0.15},{"price":98004,"amount":0.0048},{"price":98021,"amount":0.002},{"price":98130,"amount":0.10411162},{"price":98149,"amount":0.05},{"price":98300,"amount":0.00510433},{"price":98399,"amount":1.04},{"price":98400,"amount":0.05206273},{"price":98765,"amount":0.109},{"price":98800,"amount":0.1},{"price":98887,"amount":0.504},{"price":98890,"amount":0.0002},{"price":98999,"amount":0.10391066},{"price":98999,"amount":0.10403728},{"price":99000,"amount":0.12},{"price":99000,"amount":0.2713666},{"price":99100,"amount":0.2},{"price":99188.76,"amount":0.85973449},{"price":99234,"amount":2.00032813},{"price":99300,"amount":0.01010586},{"price":99653.03,"amount":0.75729094},{"price":99678,"amount":0.00503377},{"price":99703,"amount":0.05},{"price":99827.98,"amount":0.3672755},{"price":99849.17,"amount":0.34597292},{"price":99890,"amount":0.0004},{"price":99898,"amount":0.05},{"price":99957.91,"amount":0.40025394},{"price":99962,"amount":0.05000043},{"price":99980,"amount":0.5},{"price":99989,"amount":0.04},{"price":99999,"amount":0.01694266},{"price":99999,"amount":0.10489602},{"price":99999.99,"amount":1},{"price":100000,"amount":0.09155436},{"price":100000,"amount":0.2},{"price":100000,"amount":0.00501756},{"price":100000,"amount":0.2878813},{"price":100471.12,"amount":0.40191874},{"price":100500,"amount":0.04992598},{"price":100789,"amount":0.00497828},{"price":101500,"amount":0.01},{"price":101600,"amount":1},{"price":101796.08,"amount":0.62486037},{"price":102000,"amount":0.00375927},{"price":102000,"amount":0.5},{"price":102000,"amount":0.00983835},{"price":102000,"amount":0.5},{"price":102170,"amount":0.2475},{"price":102345,"amount":0.00490259},{"price":102655,"amount":1.25219466},{"price":102890.79,"amount":0.0921113},{"price":102977.13,"amount":0.47435412},{"price":103000,"amount":0.30298903},{"price":103124.62,"amount":0.3077708},{"price":103188.51,"amount":0.50925158},{"price":103190,"amount":0.2475},{"price":103201,"amount":0.0002},{"price":103278.26,"amount":0.62720132},{"price":103325.82,"amount":0.52143316},{"price":103375.05,"amount":0.66794528},{"price":103407.78,"amount":0.52322796},{"price":103475,"amount":0.0002},{"price":103499.02,"amount":0.07},{"price":103500,"amount":0.2},{"price":103501,"amount":0.03},{"price":103600,"amount":1},{"price":103777,"amount":0.4},{"price":103900,"amount":0.0516382},{"price":103918,"amount":0.03},{"price":103980.71,"amount":0.72412448},{"price":103983,"amount":0.0105762},{"price":103999,"amount":3.504},{"price":104000,"amount":0.03153356},{"price":104000,"amount":1.49},{"price":104000,"amount":0.8},{"price":104000,"amount":0.00166506},{"price":104003.01,"amount":0.08734263}],"bids":[{"price":93990,"amount":1.96234069},{"price":93969.47,"amount":0.00081164},{"price":93900,"amount":0.001},{"price":93850,"amount":0.28657185},{"price":93800,"amount":0.02124759},{"price":93800,"amount":0.0110275},{"price":93800,"amount":0.1},{"price":93554.33,"amount":0.02130339},{"price":93502,"amount":0.2},{"price":93500,"amount":0.96204919},{"price":93496.73,"amount":0.289271},{"price":93400,"amount":0.01},{"price":93298.9,"amount":0.12314713},{"price":93266,"amount":0.01501},{"price":93265,"amount":2.422158},{"price":93200,"amount":0.42768764},{"price":93179.24,"amount":0.00053783},{"price":93100,"amount":0.03},{"price":93100,"amount":1},{"price":93002,"amount":0.2},{"price":93000.01,"amount":0.00322709},{"price":93000,"amount":0.00535759},{"price":93000,"amount":0.1},{"price":93000,"amount":0.4286074},{"price":93000,"amount":0.05357592},{"price":93000,"amount":0.00535759},{"price":92750,"amount":0.02},{"price":92750,"amount":1.17984241},{"price":92597.43,"amount":0.00048363},{"price":92574.28,"amount":2.139684},{"price":92550,"amount":0.05},{"price":92521,"amount":0.00241855},{"price":92502,"amount":0.2},{"price":92500,"amount":0.00538655},{"price":92400,"amount":0.10682632},{"price":92342,"amount":0.03},{"price":92302.91,"amount":2.528518},{"price":92265.31,"amount":0.15},{"price":92229.3,"amount":9.65695323},{"price":92210,"amount":0.01},{"price":92093.39,"amount":0.252304},{"price":92011,"amount":0.002},{"price":92002,"amount":0.2},{"price":92000.01,"amount":0.03122938},{"price":92000,"amount":0.5},{"price":92000,"amount":0.48068726},{"price":92000,"amount":0.00541582},{"price":91938.32,"amount":1.5},{"price":91779.77,"amount":3.01270949},{"price":91779.76,"amount":0.00054288},{"price":91771,"amount":0.3998},{"price":91534,"amount":0.05},{"price":91504.45,"amount":17.08430603},{"price":91503,"amount":0.3},{"price":91502,"amount":0.2},{"price":91500,"amount":0.01089084},{"price":91121,"amount":0.002},{"price":91010,"amount":0.01094948},{"price":91000.16,"amount":0.06623213},{"price":91000,"amount":0.01098364},{"price":90510,"amount":0.01100996},{"price":90500,"amount":0.02},{"price":90500,"amount":0.01},{"price":90201,"amount":0.002},{"price":90108.93,"amount":1.5},{"price":90100,"amount":0.0331802},{"price":90051,"amount":0.002},{"price":90010,"amount":0.01107112},{"price":90002,"amount":0.2},{"price":90000,"amount":0.01110623},{"price":90000,"amount":0.1643563},{"price":90000,"amount":0.1},{"price":90000,"amount":0.01107235},{"price":90000,"amount":0.11072357},{"price":90000,"amount":0.00553617},{"price":90000,"amount":0.02967192},{"price":89898.71,"amount":0.14223825},{"price":89520,"amount":0.0004},{"price":89511,"amount":0.05},{"price":89510,"amount":0.01113297},{"price":89500,"amount":0.05623702},{"price":89425,"amount":0.002},{"price":89392.23,"amount":0.08},{"price":89010,"amount":0.0111955},{"price":89001,"amount":0.4},{"price":89000,"amount":0.0010888},{"price":89000,"amount":0.01},{"price":89000,"amount":0.00559838},{"price":89000,"amount":0.00223935},{"price":88510,"amount":0.01125875},{"price":88500,"amount":0.0025},{"price":88500,"amount":0.05630012},{"price":88500,"amount":0.00822409},{"price":88123,"amount":0.02},{"price":88011,"amount":0.37},{"price":88010,"amount":0.01132271},{"price":88000,"amount":0.008493},{"price":88000,"amount":0.05662},{"price":88000,"amount":0.04303551},{"price":87720,"amount":0.0025}],"timestamp":1507125025}}'
+    http_version: 
+  recorded_at: Wed, 04 Oct 2017 13:50:36 GMT
+recorded_with: VCR 3.0.3

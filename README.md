@@ -45,7 +45,7 @@ Or install it yourself as:
 | CHBTC             | Y       |            |         |         | User-Defined|
 | Coincheck         | Y       |            |         |         | User-Defined|
 | CoinExchange      | Y       |            |         |         | Y           |
-| Coinmate          |         |            |         |         |             |
+| Coinmate          | Y       | Y          |         |         | User-Defined|
 | Coinone           | Y       |            |         |         | Y           |
 | Cryptopia         | Y       |            |         |         | Y           |
 | EtherDelta        | Y       |            |         |         | Y           |
