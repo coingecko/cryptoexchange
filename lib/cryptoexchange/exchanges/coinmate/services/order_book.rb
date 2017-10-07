@@ -1,5 +1,3 @@
-require 'pry'
-
 module Cryptoexchange::Exchanges
   module Coinmate
     module Services
