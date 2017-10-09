@@ -21,10 +21,10 @@ module Cryptoexchange::Exchanges
           tickers = []
 
           output.keys.each do |pair|
-            if pair.include?('btc')
+            if pair.include?('btc') || pair.include?('eth')
               ticker_json = output[pair]
               ticker = Cryptoexchange::Models::Ticker.new
-              ticker.base = 'btc'
+              ticker.base = pair[0..2]
               ticker.target = pair[3..-1]
               ticker.market = Lakebtc::Market::NAME
 
