@@ -10,17 +10,17 @@ module Cryptoexchange::Exchanges
 
         def fetch(market_pair)
           output = super(ticker_url(market_pair))
-          adapt(output)
+          adapt(output, market_pair)
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Allcoin::Market::API_URL}/#{market_pair.base}#{market_pair.target}/money/ticker"
+          "#{Cryptoexchange::Exchanges::Allcoin::Market::API_URL}/ticker?symbol=#{market_pair.base.downcase}_#{market_pair.target.downcase}"
         end
 
-        def adapt(output)
+        def adapt(output, market_pair)
           ticker = Cryptoexchange::Models::Ticker.new
-          base = output['ticker']['vol']
-          target = output['ticker']['high']
+          base = market_pair.base
+          target = market_pair.target
 
           ticker.base      = base
           ticker.target    = target
@@ -31,7 +31,7 @@ module Cryptoexchange::Exchanges
           ticker.high      = NumericHelper.to_d(output['ticker']['high'])
           ticker.low       = NumericHelper.to_d(output['ticker']['low'])
           ticker.volume    = NumericHelper.to_d(output['ticker']['vol'])
-          ticker.timestamp = output['date']['dataUpdateTime'].to_i
+          ticker.timestamp = output['date'].to_i
           ticker.payload   = output
           ticker
         end
