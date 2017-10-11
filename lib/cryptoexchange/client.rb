@@ -23,7 +23,8 @@ module Cryptoexchange
       else
         tickers = market.fetch
         tickers.find do |t|
-          t.base == market_pair.base && t.target == market_pair.target
+          t.base.casecmp(market_pair.base) == 0 &&
+            t.target.casecmp(market_pair.target) == 0
         end
       end
     rescue HTTP::ConnectionError, HTTP::TimeoutError, JSON::ParserError
