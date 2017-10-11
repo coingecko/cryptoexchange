@@ -24,6 +24,7 @@ Or install it yourself as:
 
 | Exchange          | Ticker  | Order Book | Trade   | Account | Market List |
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |
+| Allcoin           | Y       |  Y         |         |         | User-Defined|
 | ANX               | Y       |            |         |         | User-Defined|
 | Binance           |         |            |         |         |             |
 | Bitbay            | Y       |            |         |         | User-Defined|
