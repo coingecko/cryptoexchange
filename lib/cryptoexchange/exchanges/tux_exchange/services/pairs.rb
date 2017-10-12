@@ -12,7 +12,7 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           market_pairs = []
           output.each_key do |pairs|
-            target, base = key.split("_")
+            target, base = pairs.split("_")
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: base,
                               target: target,
