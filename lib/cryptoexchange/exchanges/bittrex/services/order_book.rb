@@ -22,8 +22,8 @@ module Cryptoexchange::Exchanges
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
           order_book.market    = Bittrex::Market::NAME
-          order_book.asks      = adapt_orders(output.dig('result', 'sell'))
-          order_book.bids      = adapt_orders(output.dig('result', 'buy'))
+          order_book.asks      = adapt_orders(output['result']['sell'])
+          order_book.bids      = adapt_orders(output['result']['buy'])
           order_book.timestamp = Time.now.to_i
           order_book.payload   = output
           order_book

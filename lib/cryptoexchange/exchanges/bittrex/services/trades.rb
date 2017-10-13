@@ -12,15 +12,15 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          output.dig('result').collect do |trade|
+          output['result'].collect do |trade|
             tr = Cryptoexchange::Models::Trade.new
-            tr.trade_id  = trade.dig('Id')
+            tr.trade_id  = trade['Id']
             tr.base      = market_pair.base
             tr.target    = market_pair.target
-            tr.type      = trade.dig('OrderType')
-            tr.price     = trade.dig('Price')
-            tr.amount    = trade.dig('Total')
-            tr.timestamp = DateTime.parse(trade.dig('TimeStamp')).to_time.to_i
+            tr.type      = trade['OrderType']
+            tr.price     = trade['Price']
+            tr.amount    = trade['Total']
+            tr.timestamp = DateTime.parse(trade['TimeStamp']).to_time.to_i
             tr.payload   = trade
             tr.market    = Bittrex::Market::NAME
             tr
