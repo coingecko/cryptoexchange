@@ -39,4 +39,19 @@ RSpec.describe 'Poloniex integration specs' do
     expect(DateTime.strptime(ticker.timestamp.to_s, '%s').year).to eq Date.today.year
     expect(ticker.payload).to_not be nil
   end
+
+  it 'fetch order book' do
+    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'ETH', market: 'poloniex')
+    order_book = client.order_book(btc_usd_pair)
+
+    expect(order_book.base).to eq 'BTC'
+    expect(order_book.target).to eq 'ETH'
+    expect(order_book.market).to eq 'poloniex'
+    expect(order_book.asks).to_not be_empty
+    expect(order_book.bids).to_not be_empty
+    expect(order_book.asks.first.size).to eq 2
+    expect(order_book.bids.first.size).to eq 2
+    expect(order_book.timestamp).to be_a Numeric
+    expect(order_book.payload).to_not be nil
+  end
 end
