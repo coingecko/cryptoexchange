@@ -65,7 +65,7 @@ RSpec.describe 'Bittrex integration specs' do
     expect(trade.trade_id).to_not be_nil
     expect(trade.base).to eq 'BTC'
     expect(trade.target).to eq 'ETH'
-    expect(['BUY', 'SELL']).to include trade.type
+    expect(['buy', 'sell']).to include trade.type
     expect(trade.price).to_not be_nil
     expect(trade.amount).to_not be_nil
     expect(trade.timestamp).to be_a Numeric
