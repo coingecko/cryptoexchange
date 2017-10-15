@@ -64,7 +64,8 @@ module Cryptoexchange
       else
         order_books = order_book.fetch
         order_books.find do |o|
-          o.base == market_pair.base && o.target == market_pair.target
+          o.base.casecmp(market_pair.base) == 0 &&
+            o.target.casecmp(market_pair.target) == 0
         end
       end
     end
