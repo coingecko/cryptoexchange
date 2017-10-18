@@ -63,6 +63,7 @@ Or install it yourself as:
 | Kraken            | Y       |            |         |         | Y           |
 | LakeBTC           | Y       |            |         |         | Y           |
 | Liqui             | Y       |            |         |         | Y           |
+| LiteBit.eu        | Y       |            |         |         | Y           |
 | Livecoin          | Y       |            |         |         | Y           |
 | Luno              | Y       |            |         |         | Y           |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|
