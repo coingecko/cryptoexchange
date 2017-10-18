@@ -41,8 +41,9 @@ RSpec.describe 'CoinMate integration specs' do
     expect(order_book.market).to eq market
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
-    expect(order_book.asks.first.size).to eq 3
-    expect(order_book.bids.first.size).to eq 3
+    expect(order_book.asks.first.price).to_not be_nil
+    expect(order_book.bids.first.amount).to_not be_nil
+    expect(order_book.bids.first.timestamp).to_not be_nil
     expect(order_book.asks.count).to be > 10
     expect(order_book.bids.count).to be > 10
     expect(order_book.timestamp).to be_a Numeric
