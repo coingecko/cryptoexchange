@@ -39,6 +39,12 @@ exchanges.each do |exchange|
   pairs = client.pairs(exchange)
   puts "fetching... #{exchange}"
 
+  unless pairs.all? { |pair| pair.respond_to? :base } && pairs.all? { |pair| pair.respond_to? :target }
+    puts "***** #{exchange} *****"
+    puts pairs.inspect
+    next
+  end
+
   # Flag for review if pair has base = BTC/XBT and target = NOT FIAT
   bad_pairs = pairs.select { |pair| (pair.base == 'BTC' || pair.base == 'XBT') && ( ! fiats.include? pair.target)}
 
@@ -55,6 +61,3 @@ exchanges.each do |exchange|
     puts bad_pairs.inspect
   end
 end
-
-
-
