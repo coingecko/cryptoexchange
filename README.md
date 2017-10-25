@@ -26,8 +26,8 @@ Or install it yourself as:
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |
 | Allcoin           | Y       |  Y         |         |         | User-Defined|
 | ANX               | Y       |            |         |         | User-Defined|
-| Bit-Z             | Y       |            |         |         | Y
-| Binance           |         |            |         |         |             |
+| Bit-Z             | Y       |            |         |         | Y           |
+| Binance           | Y       | Y          |         |         | User-Defined|
 | Bitbay            | Y       |            |         |         | User-Defined|
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|
 | Bitfinex          | Y       |            |         |         | Y           |

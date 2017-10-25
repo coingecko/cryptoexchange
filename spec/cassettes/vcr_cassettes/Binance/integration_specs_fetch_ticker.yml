@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.binance.com/api/v1/ticker/24hr?symbol=ETHBTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.binance.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 16 Oct 2017 23:06:49 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - nginx
+    body:
+      encoding: UTF-8
+      string: '{"priceChange":"-0.00032200","priceChangePercent":"-0.546","weightedAvgPrice":"0.06013048","prevClosePrice":"0.05876800","lastPrice":"0.05861800","lastQty":"7.32800000","bidPrice":"0.05860000","bidQty":"8.55100000","askPrice":"0.05868000","askQty":"0.02000000","openPrice":"0.05894000","highPrice":"0.06216600","lowPrice":"0.05820900","volume":"32499.85700000","quoteVolume":"1954.23205043","openTime":1508108809488,"closeTime":1508195209488,"firstId":2109065,"lastId":2137995,"count":28928}'
+    http_version: 
+  recorded_at: Mon, 16 Oct 2017 23:03:27 GMT
+recorded_with: VCR 3.0.3
