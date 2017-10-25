@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://szzc.com/api/public/trading_pairs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - szzc.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3120'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 03 Oct 2017 04:05:47 GMT
+      Server:
+      - nginx/1.12.1
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Etag:
+      - W/"c30-AZWg2CWsDo6Gt7i/K3SVB92XgJY"
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 1f1d31d80eda203abd1dc84878ced9ed.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Uq03P1cGx7pQ-CLvpA7Zw-jx7zo18yYaTTA8PsNz-xIoLBsPjKX9GQ==
+    body:
+      encoding: UTF-8
+      string: '{"status":{"success":1,"message":{"BTCCNY":{"name":"BTCCNY","ask_asset_symbol":"CNY","ask_asset_decimals":2,"ask_asset_type":"FIAT","bid_asset_symbol":"BTC","bid_asset_decimals":3,"bid_asset_type":"COIN"},"BTSCNY":{"name":"BTSCNY","ask_asset_symbol":"CNY","ask_asset_decimals":4,"ask_asset_type":"FIAT","bid_asset_symbol":"BTS","bid_asset_decimals":4,"bid_asset_type":"COIN"},"OBSCNY":{"name":"OBSCNY","ask_asset_symbol":"CNY","ask_asset_decimals":4,"ask_asset_type":"FIAT","bid_asset_symbol":"OBS","bid_asset_decimals":4,"bid_asset_type":"COIN"},"ZGCCNY":{"name":"ZGCCNY","ask_asset_symbol":"CNY","ask_asset_decimals":3,"ask_asset_type":"FIAT","bid_asset_symbol":"ZGC","bid_asset_decimals":3,"bid_asset_type":"COIN"},"ICSCNY":{"name":"ICSCNY","ask_asset_symbol":"CNY","ask_asset_decimals":3,"ask_asset_type":"FIAT","bid_asset_symbol":"ICS","bid_asset_decimals":3,"bid_asset_type":"COIN"},"ETCCNY":{"name":"ETCCNY","ask_asset_symbol":"CNY","ask_asset_decimals":2,"ask_asset_type":"FIAT","bid_asset_symbol":"ETC","bid_asset_decimals":2,"bid_asset_type":"COIN"},"ETHCNY":{"name":"ETHCNY","ask_asset_symbol":"CNY","ask_asset_decimals":2,"ask_asset_type":"FIAT","bid_asset_symbol":"ETH","bid_asset_decimals":3,"bid_asset_type":"COIN"},"ETPCNY":{"name":"ETPCNY","ask_asset_symbol":"CNY","ask_asset_decimals":2,"ask_asset_type":"FIAT","bid_asset_symbol":"ETP","bid_asset_decimals":2,"bid_asset_type":"COIN"},"ZECCNY":{"name":"ZECCNY","ask_asset_symbol":"CNY","ask_asset_decimals":2,"ask_asset_type":"FIAT","bid_asset_symbol":"ZEC","bid_asset_decimals":3,"bid_asset_type":"COIN"},"BTMCNY":{"name":"BTMCNY","ask_asset_symbol":"CNY","ask_asset_decimals":3,"ask_asset_type":"FIAT","bid_asset_symbol":"BTM","bid_asset_decimals":3,"bid_asset_type":"COIN"},"ICOCNY":{"name":"ICOCNY","ask_asset_symbol":"CNY","ask_asset_decimals":3,"ask_asset_type":"FIAT","bid_asset_symbol":"ICO","bid_asset_decimals":3,"bid_asset_type":"COIN"},"STORJCNY":{"name":"STORJCNY","ask_asset_symbol":"CNY","ask_asset_decimals":3,"ask_asset_type":"FIAT","bid_asset_symbol":"STORJ","bid_asset_decimals":3,"bid_asset_type":"COIN"},"GXSCNY":{"name":"GXSCNY","ask_asset_symbol":"CNY","ask_asset_decimals":3,"ask_asset_type":"FIAT","bid_asset_symbol":"GXS","bid_asset_decimals":3,"bid_asset_type":"COIN"},"TICCNY":{"name":"TICCNY","ask_asset_symbol":"CNY","ask_asset_decimals":3,"ask_asset_type":"FIAT","bid_asset_symbol":"TIC","bid_asset_decimals":3,"bid_asset_type":"COIN"},"SNTCNY":{"name":"SNTCNY","ask_asset_symbol":"CNY","ask_asset_decimals":4,"ask_asset_type":"FIAT","bid_asset_symbol":"SNT","bid_asset_decimals":3,"bid_asset_type":"COIN"},"ZDCCNY":{"name":"ZDCCNY","ask_asset_symbol":"CNY","ask_asset_decimals":3,"ask_asset_type":"FIAT","bid_asset_symbol":"ZDC","bid_asset_decimals":3,"bid_asset_type":"COIN"},"CMCCNY":{"name":"CMCCNY","ask_asset_symbol":"CNY","ask_asset_decimals":4,"ask_asset_type":"FIAT","bid_asset_symbol":"CMC","bid_asset_decimals":3,"bid_asset_type":"COIN"},"XNCCNY":{"name":"XNCCNY","ask_asset_symbol":"CNY","ask_asset_decimals":4,"ask_asset_type":"FIAT","bid_asset_symbol":"XNC","bid_asset_decimals":3,"bid_asset_type":"COIN"}}}}'
+    http_version: 
+  recorded_at: Tue, 03 Oct 2017 04:05:47 GMT
+recorded_with: VCR 3.0.3

@@ -2,7 +2,6 @@ module Cryptoexchange::Exchanges
   module Coincheck
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        MARKET = Coincheck::Market
 
         def fetch
           output = super
@@ -12,10 +11,10 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           market_pairs = []
           output.each do |pair|
-            market_pairs << Coincheck::Models::MarketPair.new(
+            market_pairs << Cryptoexchange::Models::MarketPair.new(
               base: pair[:base],
               target: pair[:target],
-              market: MARKET::NAME
+              market: Coincheck::Market::NAME
             )
           end
           market_pairs

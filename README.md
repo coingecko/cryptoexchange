@@ -2,7 +2,7 @@
 
 # Cryptoexchange
 
-Cryptoexchange is a rubygem for ruby developers to interact with multiple cryptocurrency exchange market data APIs in a single library.
+Cryptoexchange is a rubygem for ruby developers to interact with over 40+ cryptocurrency exchange market data APIs in a single library.
 
 ## Installation
 
@@ -24,39 +24,57 @@ Or install it yourself as:
 
 | Exchange          | Ticker  | Order Book | Trade   | Account | Market List |
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |
-| ANX               |         |            |         |         |             |
-| Gatecoin          | Y       |            |         |         | Y           |
-| BTCC              |         |            |         |         |             |
-| OKCoin            |         |            |         |         |             |
-| LakeBTC           |         |            |         |         |             |
-| Huobi             |         |            |         |         |             |
-| Yunbi             |         |            |         |         |             |
-| BTC38             |         |            |         |         |             |
-| CHBTC             |         |            |         |         |             |
-| Bitstamp          |         |            |         |         |             |
-| Bittrex           |         |            |         |         |             |
-| GDAX              |         |            |         |         |             |
-| Gemini            |         |            |         |         |             |
-| Kraken            |         |            |         |         |             |
-| Poloniex          |         |            |         |         |             |
-| Coincheck         | Y       |            |         |         | User-Defined|
+| ANX               | Y       |            |         |         | User-Defined|
+| Binance           |         |            |         |         |             |
+| Bitbay            | Y       |            |         |         | User-Defined|
+| Bitcoin Indonesia | Y       |            |         |         | User-Defined|
+| Bitfinex          | Y       |            |         |         | Y           |
 | Bitflyer          | Y       |            |         |         | Y           |
-| Quoine            |         |            |         |         |             |
-| QuadrigaCX        |         |            |         |         |             |
-| Unocoin           |         |            |         |         |             |
-| Coinone           | Y       |            |         |         | Y           |
-| Korbit            | Y       |            |         |         | User-Defined|
-| Bithumb           |         |            |         |         |             |
-| Luno              |         |            |         |         |             |
+| Bithumb           | Y       |            |         |         | Y           |
+| Bitso             | Y       |            |         |         | Y           |
+| Bitstamp          | Y       |            |         |         | User-Defined|
+| Bittrex           | Y       |            |         |         | Y           |
+| Bleutrade         | Y       |            |         |         | Y           |
 | BTC-e             |         |            |         |         |             |
-| Bleutrade         |         |            |         |         |             |
-| Yobit             |         |            |         |         |             |
-| Bitfinex          |         |            |         |         |             |
-| BTER              |         |            |         |         |             |
+| BTC38             |         |            |         |         |             |
+| BTCC              | Y       |            |         |         | User-Defined|
+| BTCChina          |         |            |         |         |             |
+| BTER              | Y       |            |         |         | Y           |
+| BX Thailand       | Y       |            |         |         | Y           |
+| CCex              | Y       |            |         |         | Y           |
+| CHBTC             | Y       |            |         |         | User-Defined|
+| Coincheck         | Y       |            |         |         | User-Defined|
+| CoinExchange      | Y       |            |         |         | Y           |
+| Coinmate          |         |            |         |         |             |
+| Coinone           | Y       |            |         |         | Y           |
 | Cryptopia         | Y       |            |         |         | Y           |
-| Livecoin          |         |            |         |         |             |
-| Nova Exchange     |         |            |         |         |             |
-| Bitcoin Indonesia |         |            |         |         |             |
+| EtherDelta        | Y       |            |         |         | Y           |
+| Gatecoin          | Y       |            |         |         | Y           |
+| GDAX              | Y       |            |         |         | Y           |
+| Gemini            | Y       | Y          | Y       |         | Y           |
+| HitBTC            | Y       |            |         |         | Y           |
+| Huobi             | Y       |            |         |         | Y           |
+| Itbit             |         |            |         |         |             |
+| Jubi              | Y       |            |         |         | Y           |
+| Korbit            | Y       |            |         |         | User-Defined|
+| Kraken            | Y       |            |         |         | Y           |
+| LakeBTC           | Y       |            |         |         | Y           |
+| Liqui             | Y       |            |         |         | Y           |
+| Livecoin          | Y       |            |         |         | Y           |
+| Luno              | Y       |            |         |         | Y           |
+| MercadoBitcoin    | Y       |            |         |         | User-Defined|
+| Nova Exchange     | Y       |            |         |         | Y           |
+| OKCoin            | Y       |            |         |         | User-Defined|
+| Poloniex          | Y       |            |         |         | Y           |
+| QuadrigaCX        | Y       |            |         |         | User-Defined|
+| Quoine            | Y       |            |         |         | Y           |
+| SZZC              | Y       |            |         |         | Y           |
+| Tidex             | Y       |            |         |         | Y           |
+| Unocoin           |         |            |         |         |             |
+| Viabtc            | Y       |            |         |         | User-Defined|
+| Yobit             | Y       |            |         |         | Y           |
+| Yuanbao           | Y       |            |         |         | User-Defined|
+| Yunbi             | Y       |            |         |         | Y           |
 
 ## Usage
 
@@ -66,6 +84,13 @@ Or install it yourself as:
   pairs = client.pairs('bitflyer')
 ```
 
+### List exchange services for certain currency
+```
+  client.exchange_for('btc')
+
+  # ['anx', 'bianance', ...]
+```
+
 ### Query the Ticker API
 ```
   pair = client.pairs('bitflyer').first
@@ -73,6 +98,17 @@ Or install it yourself as:
   ticker.base
   ticker.target
   ticker.last
+```
+
+### Query the OrderBook API
+```
+  # Check if exchange has support for OrderBook
+  pair = client.pairs('bitflyer').first
+  order_book = client.order_book(pairs.last)
+  order_book.base
+  order_book.target
+  order_book.bids
+  order_book.asks
 ```
 
 ### Market List
@@ -104,9 +140,14 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/cryptoexchange. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/coingecko/cryptoexchange. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+When implementing a new exchange, refer to this [guide](https://github.com/coingecko/cryptoexchange/wiki/Implementing-a-New-Exchange).
+
+The [contributing guide](https://github.com/coingecko/cryptoexchange/blob/master/CONTRIBUTING.md) may also be useful to you.
+
+You can chat with the core team member or other participating in this repository chat on [https://gitter.im/cryptoexchange-api/Lobby/~chat#](https://gitter.im/cryptoexchange-api/Lobby/~chat#)
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-

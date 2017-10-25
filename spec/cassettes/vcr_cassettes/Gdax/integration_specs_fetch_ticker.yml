@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.gdax.com/products/btc-usd/ticker
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.gdax.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2017 04:00:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '156'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db5d1041fe547cd4fd61487b13ca3229a1507003234; expires=Wed, 03-Oct-18
+        04:00:34 GMT; path=/; domain=.gdax.com; HttpOnly
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, cb-session
+      Access-Control-Allow-Methods:
+      - GET,POST,DELETE,PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - cb-before, cb-after
+      Access-Control-Max-Age:
+      - '7200'
+      Cache-Control:
+      - public, max-age=1
+      Etag:
+      - W/"9c-Zd/UNZcY+ocJvF/tDD/SkKhe77I"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3a7cfec4ad3c0817-SIN
+    body:
+      encoding: UTF-8
+      string: '{"trade_id":21554152,"price":"4417.01000000","size":"0.00000225","bid":"4417","ask":"4417.01","volume":"7878.23402368","time":"2017-10-03T04:00:31.887000Z"}'
+    http_version: 
+  recorded_at: Tue, 03 Oct 2017 04:00:34 GMT
+recorded_with: VCR 3.0.3

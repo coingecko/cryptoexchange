@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://vip.bitcoin.co.id/api/btc_idr/ticker
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - vip.bitcoin.co.id
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2017 04:04:07 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dcecde3aec839f67477a8b067fbbcf48c1507003447; expires=Wed, 03-Oct-18
+        04:04:07 GMT; path=/; domain=.bitcoin.co.id; HttpOnly
+      X-Powered-By:
+      - Bitcoin Indonesia
+      V:
+      - '2'
+      Access-Control-Allow-Origin:
+      - https://vip.bitcoin.co.id
+      X-Served-By:
+      - PA2
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3a7d03f7faaa30b4-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ticker":{"high":"59950000","low":"58400000","vol_btc":"671.65214662","vol_idr":"39755351054","last":"59450100","buy":"59400100","sell":"59450000","server_time":1507003447}}'
+    http_version: 
+  recorded_at: Tue, 03 Oct 2017 04:04:07 GMT
+recorded_with: VCR 3.0.3

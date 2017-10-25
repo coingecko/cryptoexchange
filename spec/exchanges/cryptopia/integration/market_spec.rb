@@ -20,13 +20,14 @@ RSpec.describe 'Cryptopia integration specs' do
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USDT'
     expect(ticker.market).to eq 'cryptopia'
-    expect(ticker.last).to_not be nil
-    expect(ticker.bid).to_not be nil
-    expect(ticker.ask).to_not be nil
-    expect(ticker.high).to_not be nil
-    expect(ticker.volume).to_not be nil
-    expect(ticker.change).to_not be nil
-    expect(ticker.timestamp).to_not be nil
+    expect(ticker.last).to be_a Numeric
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.ask).to be_a Numeric
+    expect(ticker.high).to be_a Numeric
+    expect(ticker.volume).to be_a Numeric
+    expect(ticker.change).to be_a Numeric
+    expect(ticker.timestamp).to be_a Numeric
+    expect(DateTime.strptime(ticker.timestamp.to_s, '%s').year).to eq Date.today.year
     expect(ticker.payload).to_not be nil
   end
 end

@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 RSpec.describe 'Korbit integration specs' do
-  client = Cryptoexchange::Client.new
+  let(:client) { Cryptoexchange::Client.new }
 
   it 'fetch pairs' do
     pairs = client.pairs('korbit')
@@ -13,20 +13,20 @@ RSpec.describe 'Korbit integration specs' do
     expect(pair.market).to eq 'korbit'
   end
 
-  context 'fetch ticker' do
-    before(:all) do
-      btc_krw_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'KRW', market: 'korbit')
-      @ticker = client.ticker(btc_krw_pair)
-    end
-    it { expect(@ticker.base).to eq 'BTC' }
-    it { expect(@ticker.target).to eq 'KRW' }
-    it { expect(@ticker.market).to eq 'korbit' }
-    it { expect(@ticker.last).to_not be nil }
-    it { expect(@ticker.bid).to_not be nil }
-    it { expect(@ticker.ask).to_not be nil }
-    it { expect(@ticker.high).to_not be nil }
-    it { expect(@ticker.volume).to_not be nil }
-    it { expect(@ticker.timestamp).to_not be nil }
-    it { expect(@ticker.payload).to_not be nil }
+  it 'fetch ticker' do
+    btc_krw_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'KRW', market: 'korbit')
+    ticker = client.ticker(btc_krw_pair)
+
+    expect(ticker.base).to eq 'BTC'
+    expect(ticker.target).to eq 'KRW'
+    expect(ticker.market).to eq 'korbit'
+    expect(ticker.last).to be_a Numeric
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.ask).to be_a Numeric
+    expect(ticker.high).to be_a Numeric
+    expect(ticker.volume).to be_a Numeric
+    expect(ticker.timestamp).to be_a Numeric
+    expect(DateTime.strptime(ticker.timestamp.to_s, '%s').year).to eq Date.today.year
+    expect(ticker.payload).to_not be nil
   end
 end

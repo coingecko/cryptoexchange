@@ -20,11 +20,12 @@ RSpec.describe 'Coinone integration specs' do
     expect(ticker.base).to eq 'ETH'
     expect(ticker.target).to eq 'KRW'
     expect(ticker.market).to eq 'coinone'
-    expect(ticker.last).to_not be nil
-    expect(ticker.high).to_not be nil
-    expect(ticker.low).to_not be nil
-    expect(ticker.volume).to_not be nil
-    expect(ticker.timestamp).to_not be nil
+    expect(ticker.last).to be_a Numeric
+    expect(ticker.high).to be_a Numeric
+    expect(ticker.low).to be_a Numeric
+    expect(ticker.volume).to be_a Numeric
+    expect(ticker.timestamp).to be_a Numeric
+    expect(DateTime.strptime(ticker.timestamp.to_s, '%s').year).to eq Date.today.year
     expect(ticker.payload).to_not be nil
   end
 end

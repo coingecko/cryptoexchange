@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://novaexchange.com/remote/v2/market/info/BTC_PPC/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - novaexchange.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 03 Oct 2017 04:05:38 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '336'
+      Connection:
+      - close
+      Set-Cookie:
+      - session=ee24ea6b-2b2a-48d7-90a3-c16a887b2131; Expires=Tue, 03-Oct-2017 14:05:38
+        GMT; HttpOnly; Path=/; secure; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status": "success", "message": "Info for market: BTC_PPC", "markets":
+        [{"bid": "0.00026934", "last_price": "0.00027852", "volume24h": "0.026", "marketid":
+        181, "disabled": 1, "currency": "PPC", "marketname": "BTC_PPC", "ask": "0.00027852",
+        "low24h": "0.00027160", "change24h": "-3.7", "high24h": "0.00038118", "basecurrency":
+        "BTC"}]}'
+    http_version: 
+  recorded_at: Tue, 03 Oct 2017 04:05:38 GMT
+recorded_with: VCR 3.0.3

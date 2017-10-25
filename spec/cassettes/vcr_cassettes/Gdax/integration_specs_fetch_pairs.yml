@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.gdax.com/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.gdax.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2017 04:00:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1642'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d6a582f8b96c986705ae6cf937b7d17c51507003232; expires=Wed, 03-Oct-18
+        04:00:32 GMT; path=/; domain=.gdax.com; HttpOnly
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, cb-session
+      Access-Control-Allow-Methods:
+      - GET,POST,DELETE,PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - cb-before, cb-after
+      Access-Control-Max-Age:
+      - '7200'
+      Cache-Control:
+      - public, max-age=1
+      Etag:
+      - W/"66a-Du6kpS0yNTVMoPdoHoJV3Y4lqXU"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3a7cfebdcaca706e-SIN
+    body:
+      encoding: UTF-8
+      string: '[{"id":"LTC-EUR","base_currency":"LTC","quote_currency":"EUR","base_min_size":"0.01","base_max_size":"1000000","quote_increment":"0.01","display_name":"LTC/EUR","margin_enabled":false},{"id":"LTC-BTC","base_currency":"LTC","quote_currency":"BTC","base_min_size":"0.01","base_max_size":"1000000","quote_increment":"0.00001","display_name":"LTC/BTC","margin_enabled":false},{"id":"LTC-USD","base_currency":"LTC","quote_currency":"USD","base_min_size":"0.01","base_max_size":"1000000","quote_increment":"0.01","display_name":"LTC/USD","margin_enabled":false},{"id":"ETH-USD","base_currency":"ETH","quote_currency":"USD","base_min_size":"0.01","base_max_size":"5000","quote_increment":"0.01","display_name":"ETH/USD","margin_enabled":false},{"id":"ETH-EUR","base_currency":"ETH","quote_currency":"EUR","base_min_size":"0.01","base_max_size":"5000","quote_increment":"0.01","display_name":"ETH/EUR","margin_enabled":false},{"id":"ETH-BTC","base_currency":"ETH","quote_currency":"BTC","base_min_size":"0.01","base_max_size":"5000","quote_increment":"0.00001","display_name":"ETH/BTC","margin_enabled":false},{"id":"BTC-USD","base_currency":"BTC","quote_currency":"USD","base_min_size":"0.01","base_max_size":"250","quote_increment":"0.01","display_name":"BTC/USD","margin_enabled":false},{"id":"BTC-EUR","base_currency":"BTC","quote_currency":"EUR","base_min_size":"0.01","base_max_size":"250","quote_increment":"0.01","display_name":"BTC/EUR","margin_enabled":false},{"id":"BTC-GBP","base_currency":"BTC","quote_currency":"GBP","base_min_size":"0.01","base_max_size":"250","quote_increment":"0.01","display_name":"BTC/GBP","margin_enabled":false}]'
+    http_version: 
+  recorded_at: Tue, 03 Oct 2017 04:00:33 GMT
+recorded_with: VCR 3.0.3

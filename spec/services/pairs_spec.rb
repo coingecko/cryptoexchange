@@ -5,6 +5,7 @@ RSpec.describe Cryptoexchange::Services::Pairs do
 
   it 'fetches with API if PAIRS_URL exists' do
     stub_const("Cryptoexchange::Services::Pairs::PAIRS_URL", "https://www.someurls.com")
+    allow(HTTP).to receive(:timeout).and_return(HTTP)
     allow(HTTP).to receive(:get).and_return({})
     pairs.fetch
     expect(HTTP).to have_received(:get)
