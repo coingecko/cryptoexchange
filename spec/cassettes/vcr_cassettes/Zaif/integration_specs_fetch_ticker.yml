@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.zaif.jp/api/1/ticker/btc_jpy
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.zaif.jp
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 25 Oct 2017 13:16:45 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '130'
+      Connection:
+      - close
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Set-Cookie:
+      - api.zaif.jp.chat_client_id=; Max-Age=0; Path=/; expires=Wed, 31-Dec-97 23:59:59
+        GMT
+      - locale=ja; Max-Age=315360000; Path=/; expires=Sat, 23-Oct-2027 13:16:45 GMT
+      - session=WckEJDZ4orJo-J7sJRrIUx4PKxWmNkgwosUu1e937bolM0QRCnDAvdwLUty9Bv2YVRKMU202tgk7w5oY9mjPOIAElVwAAAAAAAAASr2O8FlHQdZ8I69C7ed9lCiMA2FwaZR9lIwHX2NzcmZ0X5SMKGEyMDRiNjAxYTkyYWVjMDJkMDBiN2ZkOTE4YzU3NGE0ZTBhM2RiMmSUjAV0b2tlbpRoBHWHlC4;
+        Path=/
+      - trading_view_user_id=-1; Path=/
+      - userhash=; Max-Age=0; Path=/; expires=Wed, 25-Oct-2017 13:16:45 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"last": 620745.0, "high": 650000.0, "low": 601000.0, "vwap": 625665.3969,
+        "volume": 11572.1032, "bid": 620745.0, "ask": 620750.0}'
+    http_version: 
+  recorded_at: Wed, 25 Oct 2017 13:16:45 GMT
+recorded_with: VCR 3.0.3

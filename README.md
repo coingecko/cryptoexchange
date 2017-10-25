@@ -82,6 +82,7 @@ Or install it yourself as:
 | Yobit             | Y       |            |         |         | Y           |
 | Yuanbao           | Y       |            |         |         | User-Defined|
 | Yunbi             | Y       |            |         |         | Y           |
+| Zaif              | Y       | Y          | Y       |         | Y           |
 
 ## Usage
 
