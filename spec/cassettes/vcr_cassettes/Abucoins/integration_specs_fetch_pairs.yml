@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.abucoins.com/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.abucoins.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 25 Oct 2017 22:55:03 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '3007'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d98a07f1f938b83f3ce729e0949b0e9951508972103; expires=Thu, 25-Oct-18
+        22:55:03 GMT; path=/; domain=.abucoins.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, ac-session
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ac-before, ac-after
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3b38c2decac66ac7-LHR
+    body:
+      encoding: UTF-8
+      string: '[{"id":"ETH-BTC","base_currency":"ETH","quote_currency":"BTC","base_min_size":"0.001","base_max_size":"100000","quote_increment":"0.00000001","display_name":"ETH/BTC"},{"id":"LTC-BTC","base_currency":"LTC","quote_currency":"BTC","base_min_size":"0.001","base_max_size":"100000","quote_increment":"0.00000001","display_name":"LTC/BTC"},{"id":"ETC-BTC","base_currency":"ETC","quote_currency":"BTC","base_min_size":"0.001","base_max_size":"100000","quote_increment":"0.00000001","display_name":"ETC/BTC"},{"id":"ZEC-BTC","base_currency":"ZEC","quote_currency":"BTC","base_min_size":"0.001","base_max_size":"100000","quote_increment":"0.00000001","display_name":"ZEC/BTC"},{"id":"STRAT-BTC","base_currency":"STRAT","quote_currency":"BTC","base_min_size":"0.01","base_max_size":"100000","quote_increment":"0.00000001","display_name":"STRAT/BTC"},{"id":"DASH-BTC","base_currency":"DASH","quote_currency":"BTC","base_min_size":"0.001","base_max_size":"100000","quote_increment":"0.00000001","display_name":"DASH/BTC"},{"id":"XMR-BTC","base_currency":"XMR","quote_currency":"BTC","base_min_size":"0.001","base_max_size":"100000","quote_increment":"0.00000001","display_name":"XMR/BTC"},{"id":"SC-BTC","base_currency":"SC","quote_currency":"BTC","base_min_size":"1","base_max_size":"100000","quote_increment":"0.00000001","display_name":"SC/BTC"},{"id":"XEM-BTC","base_currency":"XEM","quote_currency":"BTC","base_min_size":"1","base_max_size":"100000","quote_increment":"0.00000001","display_name":"XEM/BTC"},{"id":"GNT-BTC","base_currency":"GNT","quote_currency":"BTC","base_min_size":"0.01","base_max_size":"100000","quote_increment":"0.00000001","display_name":"GNT/BTC"},{"id":"REP-BTC","base_currency":"REP","quote_currency":"BTC","base_min_size":"0.01","base_max_size":"100000","quote_increment":"0.00000001","display_name":"REP/BTC"},{"id":"XRP-BTC","base_currency":"XRP","quote_currency":"BTC","base_min_size":"0.01","base_max_size":"100000","quote_increment":"0.00000001","display_name":"XRP/BTC"},{"id":"BCH-BTC","base_currency":"BCH","quote_currency":"BTC","base_min_size":"0.0001","base_max_size":"100000","quote_increment":"0.00000001","display_name":"BCH/BTC"},{"id":"BTC-PLN","base_currency":"BTC","quote_currency":"PLN","base_min_size":"0.0001","base_max_size":"100000","quote_increment":"0.01000000","display_name":"BTC/PLN"},{"id":"BTC-USD","base_currency":"BTC","quote_currency":"USD","base_min_size":"0.0001","base_max_size":"100000","quote_increment":"0.01000000","display_name":"BTC/USD"},{"id":"BTC-EUR","base_currency":"BTC","quote_currency":"EUR","base_min_size":"0.0001","base_max_size":"100000","quote_increment":"0.01000000","display_name":"BTC/EUR"},{"id":"ETH-PLN","base_currency":"ETH","quote_currency":"PLN","base_min_size":"0.0001","base_max_size":"100000","quote_increment":"0.01000000","display_name":"ETH/PLN"},{"id":"BTG-BTC","base_currency":"BTG","quote_currency":"BTC","base_min_size":"0.0001","base_max_size":"100000","quote_increment":"0.00000001","display_name":"BTG/BTC"}]'
+    http_version: 
+  recorded_at: Wed, 25 Oct 2017 22:55:03 GMT
+recorded_with: VCR 3.0.3
