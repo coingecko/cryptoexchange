@@ -67,6 +67,7 @@ Or install it yourself as:
 | Livecoin          | Y       |            |         |         | Y           |
 | Luno              | Y       |            |         |         | Y           |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|
+| Mercatox          | Y       | N          | N       | N       | Y           |
 | Nova Exchange     | Y       |            |         |         | Y           |
 | OKCoin            | Y       |            |         |         | User-Defined|
 | Poloniex          | Y       |            |         |         | Y           |
