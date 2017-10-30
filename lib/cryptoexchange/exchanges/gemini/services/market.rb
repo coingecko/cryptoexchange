@@ -37,6 +37,7 @@ module Cryptoexchange::Exchanges
           ticker.market    = Gemini::Market::NAME
           ticker.ask       = NumericHelper.to_d(output['ask'])
           ticker.bid       = NumericHelper.to_d(output['bid'])
+          ticker.last      = NumericHelper.to_d(output['last'])
           # this is Base currency's volume
           ticker.volume    = NumericHelper.to_d(output['volume'][market_pair.base])
           ticker.timestamp = output['volume']['timestamp'].to_i / 1000
