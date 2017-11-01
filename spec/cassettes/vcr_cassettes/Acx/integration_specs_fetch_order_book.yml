@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://acx.io/api/v2/order_book?market=btcaud
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - acx.io
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Nov 2017 04:36:35 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '9626'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - a3e371a6-44a4-46b4-b792-78e44397d213
+      Etag:
+      - '"37c80962ca33a8700edf34bbdd741027"'
+      X-Runtime:
+      - '0.060010'
+      X-Powered-By:
+      - acx
+      Server:
+      - acx
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - sniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"asks":[{"id":144852375,"side":"sell","ord_type":"limit","price":"8635.0","avg_price":"8635.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:31:02Z","volume":"0.9","remaining_volume":"0.5137","executed_volume":"0.3863","trades_count":6},{"id":144855156,"side":"sell","ord_type":"limit","price":"8635.0","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:36:15Z","volume":"0.2","remaining_volume":"0.2","executed_volume":"0.0","trades_count":0},{"id":144851268,"side":"sell","ord_type":"limit","price":"8637.0","avg_price":"8637.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:28:21Z","volume":"0.9999","remaining_volume":"0.5963","executed_volume":"0.4036","trades_count":4},{"id":144851518,"side":"sell","ord_type":"limit","price":"8637.01","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:28:48Z","volume":"0.8888","remaining_volume":"0.8888","executed_volume":"0.0","trades_count":0},{"id":144851612,"side":"sell","ord_type":"limit","price":"8637.02","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:29:02Z","volume":"0.7777","remaining_volume":"0.7777","executed_volume":"0.0","trades_count":0},{"id":144851712,"side":"sell","ord_type":"limit","price":"8637.03","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:29:15Z","volume":"0.6666","remaining_volume":"0.6666","executed_volume":"0.0","trades_count":0},{"id":144851786,"side":"sell","ord_type":"limit","price":"8637.04","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:29:27Z","volume":"0.6666","remaining_volume":"0.6666","executed_volume":"0.0","trades_count":0},{"id":144851878,"side":"sell","ord_type":"limit","price":"8637.05","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:29:38Z","volume":"0.5555","remaining_volume":"0.5555","executed_volume":"0.0","trades_count":0},{"id":144852130,"side":"sell","ord_type":"limit","price":"8637.06","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:30:19Z","volume":"0.4444","remaining_volume":"0.4444","executed_volume":"0.0","trades_count":0},{"id":144852211,"side":"sell","ord_type":"limit","price":"8637.07","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:30:31Z","volume":"0.3333","remaining_volume":"0.3333","executed_volume":"0.0","trades_count":0},{"id":144852345,"side":"sell","ord_type":"limit","price":"8637.08","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:30:56Z","volume":"0.2222","remaining_volume":"0.2222","executed_volume":"0.0","trades_count":0},{"id":144853621,"side":"sell","ord_type":"limit","price":"8637.09","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:33:21Z","volume":"0.1111","remaining_volume":"0.1111","executed_volume":"0.0","trades_count":0},{"id":144850785,"side":"sell","ord_type":"limit","price":"8640.0","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:27:25Z","volume":"0.77","remaining_volume":"0.77","executed_volume":"0.0","trades_count":0},{"id":144850857,"side":"sell","ord_type":"limit","price":"8643.11","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:27:33Z","volume":"0.2437","remaining_volume":"0.2437","executed_volume":"0.0","trades_count":0},{"id":144851398,"side":"sell","ord_type":"limit","price":"8645.0","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:28:35Z","volume":"0.3382","remaining_volume":"0.3382","executed_volume":"0.0","trades_count":0},{"id":144849100,"side":"sell","ord_type":"limit","price":"8647.0","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:23:01Z","volume":"2.0","remaining_volume":"2.0","executed_volume":"0.0","trades_count":0},{"id":144848842,"side":"sell","ord_type":"limit","price":"8647.4","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:22:04Z","volume":"1.5","remaining_volume":"1.5","executed_volume":"0.0","trades_count":0},{"id":144855246,"side":"sell","ord_type":"limit","price":"8664.8","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:36:27Z","volume":"0.0795","remaining_volume":"0.0795","executed_volume":"0.0","trades_count":0},{"id":144855257,"side":"sell","ord_type":"limit","price":"8682.13","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:36:28Z","volume":"0.0453","remaining_volume":"0.0453","executed_volume":"0.0","trades_count":0},{"id":144855270,"side":"sell","ord_type":"limit","price":"8690.79","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:36:29Z","volume":"0.0226","remaining_volume":"0.0226","executed_volume":"0.0","trades_count":0}],"bids":[{"id":144855301,"side":"buy","ord_type":"limit","price":"8543.77","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:36:34Z","volume":"0.5694","remaining_volume":"0.5694","executed_volume":"0.0","trades_count":0},{"id":144855300,"side":"buy","ord_type":"limit","price":"8543.75","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:36:34Z","volume":"0.2","remaining_volume":"0.2","executed_volume":"0.0","trades_count":0},{"id":144855297,"side":"buy","ord_type":"limit","price":"8543.59","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:36:34Z","volume":"0.1","remaining_volume":"0.1","executed_volume":"0.0","trades_count":0},{"id":144855286,"side":"buy","ord_type":"limit","price":"8543.58","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:36:32Z","volume":"0.5","remaining_volume":"0.5","executed_volume":"0.0","trades_count":0},{"id":144855237,"side":"buy","ord_type":"limit","price":"8543.46","avg_price":"8543.46","state":"wait","market":"btcaud","created_at":"2017-11-01T04:36:26Z","volume":"0.2431","remaining_volume":"0.2312","executed_volume":"0.0119","trades_count":1},{"id":144851850,"side":"buy","ord_type":"limit","price":"8539.75","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:29:35Z","volume":"0.1192","remaining_volume":"0.1192","executed_volume":"0.0","trades_count":0},{"id":144855252,"side":"buy","ord_type":"limit","price":"8526.37","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:36:27Z","volume":"0.0461","remaining_volume":"0.0461","executed_volume":"0.0","trades_count":0},{"id":144855266,"side":"buy","ord_type":"limit","price":"8517.82","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:36:29Z","volume":"0.0231","remaining_volume":"0.0231","executed_volume":"0.0","trades_count":0},{"id":144855280,"side":"buy","ord_type":"limit","price":"8504.95","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:36:31Z","volume":"0.1","remaining_volume":"0.1","executed_volume":"0.0","trades_count":0},{"id":144852612,"side":"buy","ord_type":"limit","price":"8503.95","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:31:45Z","volume":"0.0019","remaining_volume":"0.0019","executed_volume":"0.0","trades_count":0},{"id":144850297,"side":"buy","ord_type":"limit","price":"8503.94","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:26:33Z","volume":"0.0019","remaining_volume":"0.0019","executed_volume":"0.0","trades_count":0},{"id":144848637,"side":"buy","ord_type":"limit","price":"8503.2","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:21:19Z","volume":"0.0019","remaining_volume":"0.0019","executed_volume":"0.0","trades_count":0},{"id":144850155,"side":"buy","ord_type":"limit","price":"8500.0","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:26:18Z","volume":"0.0591","remaining_volume":"0.0591","executed_volume":"0.0","trades_count":0},{"id":144848489,"side":"buy","ord_type":"limit","price":"8442.72","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:20:53Z","volume":"0.0099","remaining_volume":"0.0099","executed_volume":"0.0","trades_count":0},{"id":144844389,"side":"buy","ord_type":"limit","price":"8440.0","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:08:09Z","volume":"0.6","remaining_volume":"0.6","executed_volume":"0.0","trades_count":0},{"id":144738941,"side":"buy","ord_type":"limit","price":"8425.0","avg_price":"8425.0","state":"wait","market":"btcaud","created_at":"2017-10-31T22:49:16Z","volume":"0.8351","remaining_volume":"0.0849","executed_volume":"0.7502","trades_count":5},{"id":144812192,"side":"buy","ord_type":"limit","price":"8420.0","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T02:03:51Z","volume":"0.1","remaining_volume":"0.1","executed_volume":"0.0","trades_count":0},{"id":144832180,"side":"buy","ord_type":"limit","price":"8410.5","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T03:16:14Z","volume":"0.255","remaining_volume":"0.255","executed_volume":"0.0","trades_count":0},{"id":144807117,"side":"buy","ord_type":"limit","price":"8410.0","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T01:47:50Z","volume":"0.0898","remaining_volume":"0.0898","executed_volume":"0.0","trades_count":0},{"id":144854585,"side":"buy","ord_type":"limit","price":"8400.84","avg_price":"0.0","state":"wait","market":"btcaud","created_at":"2017-11-01T04:35:11Z","volume":"0.0474","remaining_volume":"0.0474","executed_volume":"0.0","trades_count":0}]}'
+    http_version: 
+  recorded_at: Wed, 01 Nov 2017 04:36:35 GMT
+recorded_with: VCR 3.0.3

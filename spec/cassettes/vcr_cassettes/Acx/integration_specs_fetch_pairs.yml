@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://acx.io/api/v2/markets
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - acx.io
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Nov 2017 04:36:32 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '281'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 2c0fe0aa-3757-4565-b0d8-8840e7ecb656
+      Etag:
+      - '"41d228ef432ccf084972a59ddff4e407"'
+      X-Runtime:
+      - '0.002701'
+      X-Powered-By:
+      - acx
+      Server:
+      - acx
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - sniff
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"btcaud","name":"BTC/AUD","base_unit":"btc","quote_unit":"aud"},{"id":"bchaud","name":"BCH/AUD","base_unit":"bch","quote_unit":"aud"},{"id":"ethaud","name":"ETH/AUD","base_unit":"eth","quote_unit":"aud"},{"id":"hsraud","name":"HSR/AUD","base_unit":"hsr","quote_unit":"aud"}]'
+    http_version: 
+  recorded_at: Wed, 01 Nov 2017 04:36:32 GMT
+recorded_with: VCR 3.0.3
