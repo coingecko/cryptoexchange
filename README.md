@@ -24,7 +24,8 @@ Or install it yourself as:
 
 | Exchange          | Ticker  | Order Book | Trade   | Account | Market List |
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |
-| Allcoin           | Y       |  Y         |         |         | User-Defined|
+| Abucoins          | Y       | Y          | Y       |         | Y           |
+| Allcoin           | Y       | Y          |         |         | User-Defined|
 | ANX               | Y       |            |         |         | User-Defined|
 | Bit-Z             | Y       |            |         |         | Y           |
 | Binance           | Y       | Y          |         |         | User-Defined|
@@ -52,6 +53,7 @@ Or install it yourself as:
 | Coinone           | Y       |            |         |         | Y           |
 | Cryptopia         | Y       |            |         |         | Y           |
 | EtherDelta        | Y       |            |         |         | Y           |
+| Exmo              | Y       | Y          | Y       |         | Y           |
 | Gatecoin          | Y       |            |         |         | Y           |
 | GDAX              | Y       |            |         |         | Y           |
 | Gemini            | Y       | Y          | Y       |         | Y           |
