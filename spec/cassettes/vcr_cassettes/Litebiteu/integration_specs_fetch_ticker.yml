@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.litebit.eu/markets
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.litebit.eu
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Oct 2017 22:00:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - Masty=4mhjt7rad803464u6c4h2e8en6; path=/; HttpOnly
+      - __cfduid=dc803af6c25ff0c31f42e7a20c33e63e41507672837; expires=Wed, 10-Oct-18
+        22:00:37 GMT; path=/; domain=.litebit.eu; HttpOnly; Secure
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=15552000
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding,User-Agent
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3abcda7f6bf73eaa-ZRH
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"message":null,"result":{"btc":{"name":"Bitcoin","abbr":"btc","available":57.856278,"volume":124.063929,"buy":4206.72,"sell":4025.45},"ltc":{"name":"Litecoin","abbr":"ltc","available":5487.621435,"volume":385.319126,"buy":45.4497,"sell":41.1194},"nlg":{"name":"Gulden","abbr":"nlg","available":2912068.100987,"volume":154472.142587,"buy":0.084775,"sell":0.075979},"xrp":{"name":"Ripple","abbr":"xrp","available":1073518.950385,"volume":362894.793785,"buy":0.232756,"sell":0.2076},"nxt":{"name":"Nxt","abbr":"nxt","available":4185369.906365,"volume":16085.776705,"buy":0.059471,"sell":0.052942},"doge":{"name":"Dogecoin","abbr":"doge","available":282258445.9259,"volume":7353297.058077,"buy":0.000897,"sell":0.00078},"ppc":{"name":"Peercoin","abbr":"ppc","available":206579.247187,"volume":673.884544,"buy":1.21057,"sell":1.08414},"vtc":{"name":"Vertcoin","abbr":"vtc","available":237419.736921,"volume":5369.699791,"buy":1.04063,"sell":0.9503},"ftc":{"name":"Feathercoin","abbr":"ftc","available":7915573.617527,"volume":25875.842794,"buy":0.031294,"sell":0.02843},"blk":{"name":"Blackcoin","abbr":"blk","available":1556291.236691,"volume":17714.357983,"buy":0.158901,"sell":0.143314},"cloak":{"name":"Cloakcoin","abbr":"cloak","available":49792.667639,"volume":721.098618,"buy":5.00895,"sell":4.53179},"via":{"name":"Viacoin","abbr":"via","available":281577.531074,"volume":983.18507,"buy":0.891239,"sell":0.796415},"dgb":{"name":"DigiByte","abbr":"dgb","available":24727685.073276,"volume":2563129.247158,"buy":0.010033,"sell":0.009182},"xst":{"name":"Stealthcoin","abbr":"xst","available":1868041.508722,"volume":3433.450469,"buy":0.135457,"sell":0.120191},"dash":{"name":"Dash","abbr":"dash","available":946.556747,"volume":28.671858,"buy":258.469,"sell":235.883},"start":{"name":"Startcoin","abbr":"start","available":7480637.74506,"volume":43523.223557,"buy":0.033941,"sell":0.029597},"eth":{"name":"Ethereum","abbr":"eth","available":934.024427,"volume":258.803025,"buy":259.603,"sell":243.938},"grs":{"name":"Groestlcoin","abbr":"grs","available":2697564.878466,"volume":34509.03559,"buy":0.093676,"sell":0.082075},"club":{"name":"ClubCoin","abbr":"club","available":695466.54994,"volume":1029.527549,"buy":0.355457,"sell":0.320815},"vox":{"name":"Voxels","abbr":"vox","available":8236693.725966,"volume":39570.465059,"buy":0.030345,"sell":0.02705},"xmr":{"name":"Monero","abbr":"xmr","available":3203.119796,"volume":14.337253,"buy":77.516,"sell":68.9436},"lsk":{"name":"Lisk","abbr":"lsk","available":56712.632124,"volume":4558.292836,"buy":4.35591,"sell":3.93692},"waves":{"name":"Waves","abbr":"waves","available":68545.582307,"volume":3100.378934,"buy":3.62113,"sell":3.24176},"rise":{"name":"Rise","abbr":"rise","available":936517.564957,"volume":2850.266249,"buy":0.263839,"sell":0.238354},"emc":{"name":"EmerCoin","abbr":"emc","available":569123.823854,"volume":15725.425969,"buy":0.432459,"sell":0.385815},"exp":{"name":"Expanse","abbr":"exp","available":175320.113963,"volume":724.992998,"buy":1.41777,"sell":1.26563},"xmy":{"name":"MyriadCoin","abbr":"xmy","available":139428471.63932,"volume":3404862.699253,"buy":0.001828,"sell":0.001582},"brk":{"name":"Breakout","abbr":"brk","available":2555212.212749,"volume":22870.686613,"buy":0.097253,"sell":0.088246},"etc":{"name":"EthereumClassic","abbr":"etc","available":24290.541853,"volume":84.608109,"buy":10.1946,"sell":9.16952},"rdd":{"name":"ReddCoin","abbr":"rdd","available":269130220.48995,"volume":6196938.855079,"buy":0.000957,"sell":0.00081},"rep":{"name":"Augur","abbr":"rep","available":14556.699862,"volume":0,"buy":17.0342,"sell":15.2806},"ardr":{"name":"Ardor","abbr":"ardr","available":1354305.596734,"volume":13481.068063,"buy":0.183022,"sell":0.164305},"zec":{"name":"Zcash","abbr":"zec","available":1162.875502,"volume":2.677593,"buy":212.558,"sell":191.889},"nav":{"name":"Navcoin","abbr":"nav","available":373621.230425,"volume":8561.181999,"buy":0.670983,"sell":0.594516},"aby":{"name":"ArtByte","abbr":"aby","available":42703138.79256,"volume":818168.462739,"buy":0.006046,"sell":0.005198},"strat":{"name":"Stratis","abbr":"strat","available":80593.417593,"volume":4041.322279,"buy":3.10294,"sell":2.79237},"pivx":{"name":"PIVX","abbr":"pivx","available":87949.254837,"volume":820.949262,"buy":2.79061,"sell":2.6114},"rads":{"name":"Radium","abbr":"rads","available":82108.124084,"volume":609.378631,"buy":3.04966,"sell":2.70845},"xem":{"name":"NEM","abbr":"xem","available":1314762.568982,"volume":19159.181844,"buy":0.186125,"sell":0.169784},"crw":{"name":"Crown","abbr":"crw","available":221633.402381,"volume":382.749413,"buy":1.10842,"sell":1.00327},"ark":{"name":"ARK","abbr":"ark","available":107405.777048,"volume":2563.56021,"buy":2.2779,"sell":2.07878},"ok":{"name":"OkCash","abbr":"ok","available":1179787.366142,"volume":66275.826375,"buy":0.207562,"sell":0.19109},"xvg":{"name":"Verge","abbr":"xvg","available":50097641.585048,"volume":7142540.726464,"buy":0.005,"sell":0.004532},"xzc":{"name":"Zcoin","abbr":"xzc","available":29121.323651,"volume":129.523688,"buy":8.53165,"sell":7.70407},"bsd":{"name":"BitSend","abbr":"bsd","available":657455.886627,"volume":2570.013264,"buy":0.372165,"sell":0.339569},"ubq":{"name":"Ubiq","abbr":"ubq","available":214171.415433,"volume":2184.634723,"buy":1.1768,"sell":1.03152},"brx":{"name":"Breakout-Stake","abbr":"brx","available":709016.244194,"volume":1098.206948,"buy":0.355722,"sell":0.314371},"bcc":{"name":"Bitcoin-Cash","abbr":"bcc","available":869.855933,"volume":81.386428,"buy":287.367,"sell":256.104},"part":{"name":"Particl","abbr":"part","available":47797.161496,"volume":797.078987,"buy":5.23334,"sell":4.78312},"ptc":{"name":"Pesetacoin","abbr":"ptc","available":8681581.938663,"volume":562469.720829,"buy":0.028689,"sell":0.025778},"dcr":{"name":"Decred","abbr":"dcr","available":9733.23731,"volume":77.602016,"buy":25.7096,"sell":22.863}}}'
+    http_version: 
+  recorded_at: Tue, 10 Oct 2017 21:57:54 GMT
+recorded_with: VCR 3.0.3

@@ -30,7 +30,7 @@ RSpec.describe 'Therocktrading integration specs' do
     expect(ticker.high).to be_a Numeric
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(DateTime.strptime(ticker.timestamp.to_s, '%s').year).to eq Date.today.year
+    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
     expect(ticker.payload).to_not be nil
   end
 
@@ -47,7 +47,7 @@ RSpec.describe 'Therocktrading integration specs' do
     expect(ticker.high).to be_a Numeric
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(DateTime.strptime(ticker.timestamp.to_s, '%s').year).to eq Date.today.year
+    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
     expect(ticker.payload).to_not be nil
   end
 

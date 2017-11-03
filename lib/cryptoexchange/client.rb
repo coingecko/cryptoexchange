@@ -35,7 +35,7 @@ module Cryptoexchange
       folder_names = Dir[File.join(File.dirname(__dir__), 'cryptoexchange', 'exchanges', '**')]
       folder_names.map do |folder_name|
         folder_name.split('/').last
-      end
+      end.sort
     end
 
     def exchange_for(currency)
@@ -64,7 +64,8 @@ module Cryptoexchange
       else
         order_books = order_book.fetch
         order_books.find do |o|
-          o.base == market_pair.base && o.target == market_pair.target
+          o.base.casecmp(market_pair.base) == 0 &&
+            o.target.casecmp(market_pair.target) == 0
         end
       end
     end

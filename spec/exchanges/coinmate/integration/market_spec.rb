@@ -28,7 +28,7 @@ RSpec.describe 'CoinMate integration specs' do
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be_a Numeric
-    expect(DateTime.strptime(ticker.timestamp.to_s, '%s').year).to eq Date.today.year
+    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
     expect(ticker.payload).to_not be nil
   end
 
@@ -41,8 +41,9 @@ RSpec.describe 'CoinMate integration specs' do
     expect(order_book.market).to eq market
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
-    expect(order_book.asks.first.size).to eq 3
-    expect(order_book.bids.first.size).to eq 3
+    expect(order_book.asks.first.price).to_not be_nil
+    expect(order_book.bids.first.amount).to_not be_nil
+    expect(order_book.bids.first.timestamp).to_not be_nil
     expect(order_book.asks.count).to be > 10
     expect(order_book.bids.count).to be > 10
     expect(order_book.timestamp).to be_a Numeric

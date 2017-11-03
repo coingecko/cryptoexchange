@@ -24,8 +24,11 @@ Or install it yourself as:
 
 | Exchange          | Ticker  | Order Book | Trade   | Account | Market List |
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |
+| Abucoins          | Y       | Y          | Y       |         | Y           |
+| Allcoin           | Y       | Y          |         |         | User-Defined|
 | ANX               | Y       |            |         |         | User-Defined|
-| Binance           |         |            |         |         |             |
+| Bit-Z             | Y       |            |         |         | Y           |
+| Binance           | Y       | Y          |         |         | User-Defined|
 | Bitbay            | Y       |            |         |         | User-Defined|
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|
 | Bitfinex          | Y       |            |         |         | Y           |
@@ -50,6 +53,7 @@ Or install it yourself as:
 | Coinone           | Y       |            |         |         | Y           |
 | Cryptopia         | Y       |            |         |         | Y           |
 | EtherDelta        | Y       |            |         |         | Y           |
+| Exmo              | Y       | Y          | Y       |         | Y           |
 | Gatecoin          | Y       |            |         |         | Y           |
 | GDAX              | Y       |            |         |         | Y           |
 | Gemini            | Y       | Y          | Y       |         | Y           |
@@ -61,9 +65,11 @@ Or install it yourself as:
 | Kraken            | Y       |            |         |         | Y           |
 | LakeBTC           | Y       |            |         |         | Y           |
 | Liqui             | Y       |            |         |         | Y           |
+| LiteBit.eu        | Y       |            |         |         | Y           |
 | Livecoin          | Y       |            |         |         | Y           |
 | Luno              | Y       |            |         |         | Y           |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|
+| Mercatox          | Y       | N          | N       | N       | Y           |
 | Nova Exchange     | Y       |            |         |         | Y           |
 | OKCoin            | Y       |            |         |         | User-Defined|
 | Poloniex          | Y       |            |         |         | Y           |
