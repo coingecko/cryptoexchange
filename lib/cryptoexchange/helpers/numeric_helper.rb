@@ -2,7 +2,8 @@ class NumericHelper
   class << self
     def to_d(number)
       if number
-        number.empty? ? nil : BigDecimal.new(number.to_s)
+        num = number.to_s
+        num.empty? ? nil : BigDecimal.new(num)
       else
         nil
       end

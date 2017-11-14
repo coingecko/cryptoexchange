@@ -10,28 +10,43 @@ module Cryptoexchange::Exchanges
           end
         end
 
-        def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output, market_pair)
+        def fetch
+          output = super ticker_url
+          adapt_all(output)
         end
 
-        def ticker_url(market_pair)
+        def ticker_url
           "#{Cryptoexchange::Exchanges::EtherDelta::Market::API_URL}/returnTicker"
+        end
+
+        def adapt_all(output)
+          output.map do |pair, ticker|
+            # format example: ETH_ZRX
+            # ETH is the Target, ZRX is the Base
+            target, base = pair.split('_')
+            # Ignore non-standard BASE
+            next if base =~ /\s/ || base =~ /0x/
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+                            base: base,
+                            target: target,
+                            market: EtherDelta::Market::NAME
+                          )
+            adapt(ticker, market_pair)
+          end
         end
 
         def adapt(output, market_pair)
           name = "#{market_pair.target}_#{market_pair.base}"
-          market = output[name]
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = EtherDelta::Market::NAME
-          ticker.last      = NumericHelper.to_d(market['last'].to_s)
-          ticker.bid       = NumericHelper.to_d(market['bid'].to_s)
-          ticker.ask       = NumericHelper.to_d(market['ask'].to_s)
-          ticker.volume    = NumericHelper.to_d(market['quoteVolume'].to_s)
+          ticker.last      = NumericHelper.to_d(output['last'].to_s)
+          ticker.bid       = NumericHelper.to_d(output['bid'].to_s)
+          ticker.ask       = NumericHelper.to_d(output['ask'].to_s)
+          ticker.volume    = NumericHelper.to_d(output['quoteVolume'].to_s)
           ticker.timestamp = DateTime.now.to_time.to_i
-          ticker.payload   = market
+          ticker.payload   = output
           ticker
         end
       end
