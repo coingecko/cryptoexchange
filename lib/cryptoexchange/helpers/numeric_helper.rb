@@ -1,7 +1,11 @@
 class NumericHelper
   class << self
     def to_d(number)
-      number ? BigDecimal.new(number.to_s) : nil
+      if number
+        number.empty? ? nil : BigDecimal.new(number.to_s)
+      else
+        nil
+      end
     end
 
     def divide(number, divisor)
