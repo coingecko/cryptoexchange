@@ -32,7 +32,7 @@ module Cryptoexchange::Exchanges
                             market: EtherDelta::Market::NAME
                           )
             adapt(ticker, market_pair)
-          end
+          end.compact
         end
 
         def adapt(output, market_pair)
