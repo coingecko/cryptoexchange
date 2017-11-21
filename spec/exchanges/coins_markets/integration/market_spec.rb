@@ -14,11 +14,11 @@ RSpec.describe 'CoinsMarkets integration specs' do
   end
 
   it 'fetch ticker' do
-    dog_xgtc_pair = Cryptoexchange::Models::MarketPair.new(base: 'DOG', target: 'XGTC', market: 'coins_markets')
+    dog_xgtc_pair = Cryptoexchange::Models::MarketPair.new(base: 'XGTC', target: 'DOG', market: 'coins_markets')
     ticker = client.ticker(dog_xgtc_pair)
 
-    expect(ticker.base).to eq 'DOG'
-    expect(ticker.target).to eq 'XGTC'
+    expect(ticker.base).to eq 'XGTC'
+    expect(ticker.target).to eq 'DOG'
     expect(ticker.market).to eq 'coins_markets'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
@@ -26,8 +26,7 @@ RSpec.describe 'CoinsMarkets integration specs' do
     expect(ticker.high).to be_a Numeric
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-  #   expect(ticker.change).to be_a Numeric
-  #   expect(ticker.timestamp).to be_a Numeric
+    expect(ticker.volume).to eq (ticker.payload['24htrade'].to_f / ticker.last)
     expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
     expect(ticker.payload).to_not be nil
   end
