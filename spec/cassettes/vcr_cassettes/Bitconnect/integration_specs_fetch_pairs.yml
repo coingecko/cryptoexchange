@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitconnect.co/api/info
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitconnect.co
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 21 Nov 2017 05:23:07 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d9cc0935420f6c39b30a5290b0c5fdfff1511241787; expires=Wed, 21-Nov-18
+        05:23:07 GMT; path=/; domain=.bitconnect.co; HttpOnly; Secure
+      - bf_session=a%3A5%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%2268c58ca53238ebe500a6e9ee665cc700%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A14%3A%22112.208.153.94%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A13%3A%22http.rb%2F1.0.4%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1511241760%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3B%7D4a64a4faf90378d2909b780c949dd255;
+        path=/; httponly
+      - ci_csrf_token=77b555ab17f8d4ec451e895db339e1e0; expires=Tue, 21-Nov-2017 05:52:40
+        GMT; Max-Age=1800; path=/
+      X-Powered-By:
+      - PHP/5.5.9-1ubuntu4.21
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3c113713eca060b4-MNL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"success !!","message":"BTC_BCC Market information","markets":[{"bid":"0.03599600","last_price":"0.03599609","volume24h":"3205.30180533","currency":"BCC","marketname":"BTC_BCC","ask":"0.03599000","low24h":"0.03029119","change24h":"-1.47%","high24h":"0.03684321","basecurrency":"BTC"}]}'
+    http_version: 
+  recorded_at: Tue, 21 Nov 2017 05:23:07 GMT
+recorded_with: VCR 3.0.3
