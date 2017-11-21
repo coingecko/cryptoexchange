@@ -51,21 +51,22 @@ RSpec.describe 'Cex integration specs' do
     expect(order_book.payload).to_not be nil
   end
 
-  # it 'fetch trade' do
-  #   eth_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'cex')
-  #   trades = client.trades(eth_btc_pair)
-  #   trade = trades.sample
-  #
-  #   expect(trades).to_not be_empty
-  #   expect(trade.trade_id).to_not be_nil
-  #   expect(trade.base).to eq 'ETH'
-  #   expect(trade.target).to eq 'BTC'
-  #   expect(['buy', 'sell']).to include trade.type
-  #   expect(trade.price).to_not be_nil
-  #   expect(trade.amount).to_not be_nil
-  #   expect(trade.timestamp).to be_a Numeric
-  #   expect(trade.payload).to_not be nil
-  #   expect(trade.market).to eq 'cex'
-  # end
+  it 'fetch trade' do
+    usd_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'USD', target: 'BTC', market: 'cex')
+    trades = client.trades(usd_btc_pair)
+    trade = trades.sample
+
+    expect(trades).to_not be_empty
+    expect(trade.payload['error']).to_not eq 'Invalid Symbols Pair'
+    expect(trade.base).to eq 'USD'
+    expect(trade.target).to eq 'BTC'
+    expect(trade.market).to eq 'cex'
+    expect(trade.trade_id).to_not be_nil
+    expect(['buy', 'sell']).to include trade.type
+    expect(trade.price).to_not be_nil
+    expect(trade.amount).to_not be_nil
+    expect(trade.timestamp).to be_a Numeric
+    expect(trade.payload).to_not be nil
+  end
 
 end
