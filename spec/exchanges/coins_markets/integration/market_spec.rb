@@ -14,8 +14,8 @@ RSpec.describe 'CoinsMarkets integration specs' do
   end
 
   it 'fetch ticker' do
-    dog_xgtc_pair = Cryptoexchange::Models::MarketPair.new(base: 'DOG', target: 'XGTC', market: 'coins_markets')
-    ticker = client.ticker(dog_xgtc_pair)
+    pair = Cryptoexchange::Models::MarketPair.new(base: 'DOG', target: 'XGTC', market: 'coins_markets')
+    ticker = client.ticker(pair)
 
     expect(ticker.base).to eq 'DOG'
     expect(ticker.target).to eq 'XGTC'
