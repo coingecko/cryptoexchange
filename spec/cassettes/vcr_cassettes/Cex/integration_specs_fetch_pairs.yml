@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cex.io/api/currency_limits
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - cex.io
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 22 Nov 2017 02:32:12 GMT
+      Content-Type:
+      - text/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db83ac1e9a75190d7a243cdf288a65cdb1511317931; expires=Thu, 22-Nov-18
+        02:32:11 GMT; path=/; domain=.cex.io; HttpOnly
+      - cex-prod-session=s%3AvWaKxItPNKCF5DKQVEXGp1dy.JcsEAW1QGDHXAOKjd%2B9%2FFWgCOmi2etKH8SgOzIblnsQ;
+        Domain=.cex.io; Path=/; HttpOnly; Secure
+      X-Frame-Options:
+      - DENY
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3c187a118bf298d7-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"e":"currency_limits","ok":"ok","data":{"pairs":[{"symbol1":"BTC","symbol2":"USD","minLotSize":0.01,"minLotSizeS2":2.5,"maxLotSize":30,"minPrice":"100","maxPrice":"15000"},{"symbol1":"ETH","symbol2":"USD","minLotSize":0.1,"minLotSizeS2":2.5,"maxLotSize":1000,"minPrice":"2.5","maxPrice":"1024"},{"symbol1":"BCH","symbol2":"USD","minLotSize":0.01,"minLotSizeS2":2.5,"maxLotSize":30,"minPrice":"50","maxPrice":"5128"},{"symbol1":"DASH","symbol2":"USD","minLotSize":0.01,"minLotSizeS2":2.5,"maxLotSize":null,"minPrice":"2.5","maxPrice":"1024"},{"symbol1":"ZEC","symbol2":"USD","minLotSize":0.01,"minLotSizeS2":2.5,"maxLotSize":null,"minPrice":"2.5","maxPrice":"1024"},{"symbol1":"BTC","symbol2":"EUR","minLotSize":0.01,"minLotSizeS2":2.2,"maxLotSize":30,"minPrice":"100.00","maxPrice":"15000"},{"symbol1":"ETH","symbol2":"EUR","minLotSize":0.1,"minLotSizeS2":2.2,"maxLotSize":null,"minPrice":"2","maxPrice":"1024"},{"symbol1":"BCH","symbol2":"EUR","minLotSize":0.01,"minLotSizeS2":2.5,"maxLotSize":null,"minPrice":"50","maxPrice":"5128"},{"symbol1":"DASH","symbol2":"EUR","minLotSize":0.01,"minLotSizeS2":2.5,"maxLotSize":null,"minPrice":"2.5","maxPrice":"1024"},{"symbol1":"ZEC","symbol2":"EUR","minLotSize":0.01,"minLotSizeS2":2.5,"maxLotSize":null,"minPrice":"2.5","maxPrice":"1024"},{"symbol1":"BTC","symbol2":"GBP","minLotSize":0.01,"minLotSizeS2":2.2,"maxLotSize":null,"minPrice":"100","maxPrice":"15000"},{"symbol1":"ETH","symbol2":"GBP","minLotSize":0.1,"minLotSizeS2":2.2,"maxLotSize":null,"minPrice":"50","maxPrice":"4096"},{"symbol1":"BCH","symbol2":"GBP","minLotSize":0.01,"minLotSizeS2":2.5,"maxLotSize":null,"minPrice":"50","maxPrice":"4096"},{"symbol1":"DASH","symbol2":"GBP","minLotSize":0.01,"minLotSizeS2":2.2,"maxLotSize":null,"minPrice":"2.5","maxPrice":"1024"},{"symbol1":"ZEC","symbol2":"GBP","minLotSize":0.01,"minLotSizeS2":2.2,"maxLotSize":null,"minPrice":"2.5","maxPrice":"1024"},{"symbol1":"BTC","symbol2":"RUB","minLotSize":0.01,"minLotSizeS2":150,"maxLotSize":null,"minPrice":"10000","maxPrice":"660000"},{"symbol1":"ETH","symbol2":"BTC","minLotSize":0.1,"minLotSizeS2":0.01,"maxLotSize":1000,"minPrice":"0.001","maxPrice":"2"},{"symbol1":"BCH","symbol2":"BTC","minLotSize":0.1,"minLotSizeS2":0.01,"maxLotSize":30,"minPrice":"0.005","maxPrice":"2"},{"symbol1":"DASH","symbol2":"BTC","minLotSize":0.01,"minLotSizeS2":0.001,"maxLotSize":null,"minPrice":"0.005","maxPrice":"2"},{"symbol1":"ZEC","symbol2":"BTC","minLotSize":0.01,"minLotSizeS2":0.001,"maxLotSize":null,"minPrice":"0.005","maxPrice":"2"},{"symbol1":"GHS","symbol2":"BTC","minLotSize":1,"minLotSizeS2":0.01,"maxLotSize":null,"minPrice":"0.00001","maxPrice":"0.01"}]}}'
+    http_version: 
+  recorded_at: Wed, 22 Nov 2017 02:32:13 GMT
+recorded_with: VCR 3.0.3
