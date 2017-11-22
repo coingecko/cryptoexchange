@@ -14,12 +14,12 @@ RSpec.describe 'Cex integration specs' do
   end
 
   it 'fetch ticker' do
-    usd_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'USD', target: 'BTC', market: 'cex')
-    ticker = client.ticker(usd_btc_pair)
+    pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'cex')
+    ticker = client.ticker(pair)
 
     expect(ticker.payload['error']).to_not eq 'Invalid Symbols Pair'
-    expect(ticker.base).to eq 'USD'
-    expect(ticker.target).to eq 'BTC'
+    expect(ticker.base).to eq 'BTC'
+    expect(ticker.target).to eq 'USD'
     expect(ticker.market).to eq 'cex'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
@@ -33,8 +33,8 @@ RSpec.describe 'Cex integration specs' do
   end
 
   it 'fetch order book' do
-    eth_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'cex')
-    order_book = client.order_book(eth_btc_pair)
+    pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'cex')
+    order_book = client.order_book(pair)
 
     expect(order_book.payload['error']).to_not eq 'Invalid Symbols Pair'
     expect(order_book.base).to eq 'BTC'
@@ -52,14 +52,14 @@ RSpec.describe 'Cex integration specs' do
   end
 
   it 'fetch trade' do
-    usd_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'USD', target: 'BTC', market: 'cex')
-    trades = client.trades(usd_btc_pair)
+    pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'cex')
+    trades = client.trades(pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty
     expect(trade.payload['error']).to_not eq 'Invalid Symbols Pair'
-    expect(trade.base).to eq 'USD'
-    expect(trade.target).to eq 'BTC'
+    expect(trade.base).to eq 'BTC'
+    expect(trade.target).to eq 'USD'
     expect(trade.market).to eq 'cex'
     expect(trade.trade_id).to_not be_nil
     expect(['buy', 'sell']).to include trade.type
