@@ -8,7 +8,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Cex::Market::API_URL}/trade_history/#{market_pair.base}/#{market_pair.target}/?since=1"
+          "#{Cryptoexchange::Exchanges::Cex::Market::API_URL}/trade_history/#{market_pair.base}/#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
