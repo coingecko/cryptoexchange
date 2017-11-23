@@ -14,11 +14,11 @@ RSpec.describe 'CoinsMarkets integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'DOG', market: 'coins_markets')
+    pair = Cryptoexchange::Models::MarketPair.new(base: 'DOG', target: 'BTC', market: 'coins_markets')
     ticker = client.ticker(pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'DOG'
+    expect(ticker.base).to eq 'DOG'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'coins_markets'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
