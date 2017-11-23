@@ -10,11 +10,11 @@ RSpec.describe 'Binance integration specs' do
   it 'fetch pairs' do
     pairs = client.pairs(market)
     expect(pairs).not_to be_empty
-
-    pair = pairs.first
-    expect(pair.base).to eq 'ETH'
-    expect(pair.target).to eq 'BTC'
-    expect(pair.market).to eq market
+    hashed_pairs = pairs.map { |p| {base: p.base, target: p.target, market: p.market }}
+    expect(hashed_pairs).to include({base: 'ETH', target: 'BTC', market: market})
+    expect(hashed_pairs).to include({base: 'ETH', target: 'USDT', market: market})
+    expect(hashed_pairs).to include({base: 'LSK', target: 'BNB', market: market})
+    expect(hashed_pairs).to include({base: 'QTUM', target: 'ETH', market: market})
   end
 
   it 'fetch ticker' do
