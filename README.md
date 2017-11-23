@@ -31,6 +31,7 @@ Or install it yourself as:
 | Binance           | Y       | Y          |         |         | User-Defined|
 | Bitbay            | Y       |            |         |         | User-Defined|
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|
+| Bitconnect        | Y       |            |         |         | Y           |
 | Bitfinex          | Y       |            |         |         | Y           |
 | Bitflyer          | Y       |            |         |         | Y           |
 | Bithumb           | Y       |            |         |         | Y           |
@@ -45,15 +46,19 @@ Or install it yourself as:
 | BTCChina          |         |            |         |         |             |
 | BTER              | Y       |            |         |         | Y           |
 | BX Thailand       | Y       |            |         |         | Y           |
+| Cex               | Y       | Y          | Y       |         | Y           |
 | CCex              | Y       |            |         |         | Y           |
 | CHBTC             | Y       |            |         |         | User-Defined|
 | Coincheck         | Y       |            |         |         | User-Defined|
 | CoinExchange      | Y       |            |         |         | Y           |
 | Coinmate          | Y       | Y          |         |         | User-Defined|
 | Coinone           | Y       |            |         |         | Y           |
+| CoinsMarkets      | Y       |            |         |         | Y           |
+| COSS              | Y       |            |         |         | Y           |
 | Cryptopia         | Y       |            |         |         | Y           |
 | EtherDelta        | Y       |            |         |         | Y           |
 | Exmo              | Y       | Y          | Y       |         | Y           |
+| Gate              | Y       | Y          | Y       |         | Y           |
 | Gatecoin          | Y       |            |         |         | Y           |
 | GDAX              | Y       |            |         |         | Y           |
 | Gemini            | Y       | Y          | Y       |         | Y           |
@@ -76,6 +81,7 @@ Or install it yourself as:
 | Qryptos           | Y       |            |         |         | Y           |
 | QuadrigaCX        | Y       |            |         |         | User-Defined|
 | Quoine            | Y       |            |         |         | Y           |
+| Stocks Exchange   | Y       |            |         |         | Y           |
 | SZZC              | Y       |            |         |         | Y           |
 | The Rock Trading  | Y       |            |         |         | Y           |
 | Tidex             | Y       |            |         |         | Y           |
