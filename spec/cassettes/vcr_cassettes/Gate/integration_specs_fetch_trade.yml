@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.gate.io/api2/1/tradeHistory/BTC_USDT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - data.gate.io
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Thu, 23 Nov 2017 02:19:10 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - CF ()
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, must-revalidate
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":"true","data":[{"tradeID":"28753270","date":"2017-11-23 10:04:23","timestamp":"1511402663","type":"buy","rate":8250,"amount":0.0011,"total":9.075},{"tradeID":"28753275","date":"2017-11-23
+        10:04:28","timestamp":"1511402668","type":"buy","rate":8250.08,"amount":0.0002,"total":1.650016},{"tradeID":"28753277","date":"2017-11-23
+        10:04:32","timestamp":"1511402672","type":"buy","rate":8250,"amount":0.0032,"total":26.4},{"tradeID":"28753282","date":"2017-11-23
+        10:04:35","timestamp":"1511402675","type":"buy","rate":8250,"amount":0.0032,"total":26.4},{"tradeID":"28753294","date":"2017-11-23
+        10:04:49","timestamp":"1511402689","type":"buy","rate":8250,"amount":0.0101,"total":83.325},{"tradeID":"28753326","date":"2017-11-23
+        10:05:41","timestamp":"1511402741","type":"buy","rate":8250.01,"amount":0.0048,"total":39.600048},{"tradeID":"28753333","date":"2017-11-23
+        10:05:52","timestamp":"1511402752","type":"buy","rate":8250,"amount":0.0102,"total":84.15},{"tradeID":"28753334","date":"2017-11-23
+        10:05:52","timestamp":"1511402752","type":"buy","rate":8250,"amount":0.0102,"total":84.15},{"tradeID":"28753338","date":"2017-11-23
+        10:06:04","timestamp":"1511402764","type":"buy","rate":8250,"amount":0.0035,"total":28.875},{"tradeID":"28753355","date":"2017-11-23
+        10:06:20","timestamp":"1511402780","type":"buy","rate":8250,"amount":0.0037,"total":30.525},{"tradeID":"28753357","date":"2017-11-23
+        10:06:27","timestamp":"1511402787","type":"buy","rate":8250,"amount":0.0047,"total":38.775},{"tradeID":"28753370","date":"2017-11-23
+        10:06:50","timestamp":"1511402810","type":"buy","rate":8250,"amount":0.0099,"total":81.675},{"tradeID":"28753375","date":"2017-11-23
+        10:07:17","timestamp":"1511402837","type":"buy","rate":8250,"amount":0.0101,"total":83.325},{"tradeID":"28753385","date":"2017-11-23
+        10:07:31","timestamp":"1511402851","type":"buy","rate":8250,"amount":0.0101,"total":83.325},{"tradeID":"28753388","date":"2017-11-23
+        10:07:47","timestamp":"1511402867","type":"buy","rate":8250,"amount":0.01,"total":82.5},{"tradeID":"28753405","date":"2017-11-23
+        10:08:13","timestamp":"1511402893","type":"buy","rate":8250,"amount":0.02,"total":165},{"tradeID":"28753419","date":"2017-11-23
+        10:08:31","timestamp":"1511402911","type":"buy","rate":8250,"amount":0.0101,"total":83.325},{"tradeID":"28753432","date":"2017-11-23
+        10:08:48","timestamp":"1511402928","type":"buy","rate":8250,"amount":0.0097,"total":80.025},{"tradeID":"28753443","date":"2017-11-23
+        10:08:52","timestamp":"1511402932","type":"buy","rate":8250,"amount":0.0096,"total":79.2},{"tradeID":"28753453","date":"2017-11-23
+        10:09:23","timestamp":"1511402963","type":"buy","rate":8250,"amount":0.0102,"total":84.15},{"tradeID":"28753465","date":"2017-11-23
+        10:09:48","timestamp":"1511402988","type":"buy","rate":8250,"amount":0.0102,"total":84.15},{"tradeID":"28753471","date":"2017-11-23
+        10:09:54","timestamp":"1511402994","type":"buy","rate":8250,"amount":0.0042,"total":34.65},{"tradeID":"28753482","date":"2017-11-23
+        10:10:09","timestamp":"1511403009","type":"buy","rate":8250,"amount":0.01,"total":82.5},{"tradeID":"28753496","date":"2017-11-23
+        10:10:28","timestamp":"1511403028","type":"buy","rate":8250,"amount":0.0141,"total":116.325},{"tradeID":"28753509","date":"2017-11-23
+        10:10:45","timestamp":"1511403045","type":"buy","rate":8250,"amount":0.0063,"total":51.975},{"tradeID":"28753512","date":"2017-11-23
+        10:10:49","timestamp":"1511403049","type":"buy","rate":8250,"amount":0.006,"total":49.5},{"tradeID":"28753581","date":"2017-11-23
+        10:12:32","timestamp":"1511403152","type":"sell","rate":8180,"amount":0.0354,"total":289.572},{"tradeID":"28753591","date":"2017-11-23
+        10:12:58","timestamp":"1511403178","type":"buy","rate":8250,"amount":0.0279,"total":230.175},{"tradeID":"28753620","date":"2017-11-23
+        10:13:39","timestamp":"1511403219","type":"buy","rate":8250,"amount":0.0036,"total":29.7},{"tradeID":"28753627","date":"2017-11-23
+        10:13:49","timestamp":"1511403229","type":"buy","rate":8250.06,"amount":0.0005,"total":4.12503}],"elapsed":"2.239ms"}'
+    http_version: 
+  recorded_at: Thu, 23 Nov 2017 02:19:10 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://data.gate.io/api2/1/pairs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - data.gate.io
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Thu, 23 Nov 2017 02:19:09 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - CF ()
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, must-revalidate
+    body:
+      encoding: ASCII-8BIT
+      string: '["btc_usdt","bch_usdt","eth_usdt","etc_usdt","qtum_usdt","ltc_usdt","dash_usdt","zec_usdt","btm_usdt","eos_usdt","req_usdt","snt_usdt","omg_usdt","pay_usdt","cvc_usdt","zrx_usdt","tnt_usdt","xmr_usdt","xrp_usdt","doge_usdt","bat_usdt","llt_usdt","pst_usdt","btg_usdt","dpy_usdt","lrc_usdt","storj_usdt","rdn_usdt","stx_usdt","knc_usdt","link_usdt","cdt_usdt","ae_usdt","ae_eth","cdt_eth","rdn_eth","stx_eth","knc_eth","link_eth","req_eth","rcn_eth","trx_eth","ppt_eth","arn_eth","kick_eth","wtc_eth","bnt_eth","ven_eth","mco_eth","fun_eth","data_eth","rlc_eth","zsc_eth","wings_eth","gvt_eth","ctr_eth","veri_eth","mda_eth","rcn_usdt","trx_usdt","kick_usdt","ven_usdt","mco_usdt","fun_usdt","data_usdt","zsc_usdt","ctr_usdt","mda_usdt","powr_usdt","powr_eth","powr_btc","hsr_usdt","hsr_btc","hsr_eth","qsp_usdt","qsp_eth","ink_btc","ink_usdt","ink_eth","ink_qtum","bot_qtum","bot_usdt","bot_eth","qbt_qtum","neo_usdt","gas_usdt","neo_btc","gas_btc","eth_btc","etc_btc","etc_eth","zec_btc","dash_btc","ltc_btc","bch_btc","btg_btc","qtum_btc","qtum_eth","xrp_btc","doge_btc","xmr_btc","zrx_btc","zrx_eth","dnt_eth","dpy_eth","oax_eth","rep_eth","lrc_eth","lrc_btc","pst_eth","bcdn_eth","tnt_eth","snt_eth","snt_btc","btm_eth","llt_eth","omg_eth","omg_btc","pay_eth","pay_btc","bat_eth","bat_btc","cvc_eth","storj_eth","storj_btc","eos_eth","eos_btc"]'
+    http_version: 
+  recorded_at: Thu, 23 Nov 2017 02:19:09 GMT
+recorded_with: VCR 3.0.3
