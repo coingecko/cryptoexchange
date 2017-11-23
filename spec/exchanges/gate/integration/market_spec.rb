@@ -14,11 +14,11 @@ RSpec.describe 'Gate integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'USDT', target: 'BTC', market: 'gate')
+    pair = Cryptoexchange::Models::MarketPair.new(base: 'BCH', target: 'USDT', market: 'gate')
     ticker = client.ticker(pair)
 
-    expect(ticker.base).to eq 'USDT'
-    expect(ticker.target).to eq 'BTC'
+    expect(ticker.base).to eq 'BCH'
+    expect(ticker.target).to eq 'USDT'
     expect(ticker.market).to eq 'gate'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
@@ -31,11 +31,11 @@ RSpec.describe 'Gate integration specs' do
   end
 
   it 'fetch order book' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'USDT', target: 'BTC', market: 'gate')
+    pair = Cryptoexchange::Models::MarketPair.new(base: 'BCH', target: 'USDT', market: 'gate')
     order_book = client.order_book(pair)
 
-    expect(order_book.base).to eq 'USDT'
-    expect(order_book.target).to eq 'BTC'
+    expect(order_book.base).to eq 'BCH'
+    expect(order_book.target).to eq 'USDT'
     expect(order_book.market).to eq 'gate'
 
     expect(order_book.asks).to_not be_empty
@@ -53,14 +53,14 @@ RSpec.describe 'Gate integration specs' do
   end
 
   it 'fetch trade' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'USDT', target: 'BTC', market: 'gate')
+    pair = Cryptoexchange::Models::MarketPair.new(base: 'BCH', target: 'USDT', market: 'gate')
     trades = client.trades(pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty
     expect(trade.trade_id).to_not be_nil
-    expect(trade.base).to eq 'USDT'
-    expect(trade.target).to eq 'BTC'
+    expect(trade.base).to eq 'BCH'
+    expect(trade.target).to eq 'USDT'
     expect(trade.market).to eq 'gate'
     expect(['buy', 'sell']).to include trade.type
     expect(trade.price).to_not be_nil
