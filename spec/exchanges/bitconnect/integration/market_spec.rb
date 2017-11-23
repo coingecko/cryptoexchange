@@ -14,11 +14,11 @@ RSpec.describe 'Bitconnect integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'BCC', market: 'bitconnect')
+    pair = Cryptoexchange::Models::MarketPair.new(base: 'BCC', target: 'BTC', market: 'bitconnect')
     ticker = client.ticker(pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'BCC'
+    expect(ticker.base).to eq 'BCC'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'bitconnect'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
