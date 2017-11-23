@@ -14,10 +14,10 @@ RSpec.describe 'Gate integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'LTC', target: 'BTC', market: 'gate')
+    pair = Cryptoexchange::Models::MarketPair.new(base: 'USDT', target: 'BTC', market: 'gate')
     ticker = client.ticker(pair)
 
-    expect(ticker.base).to eq 'LTC'
+    expect(ticker.base).to eq 'USDT'
     expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'gate'
     expect(ticker.last).to be_a Numeric
