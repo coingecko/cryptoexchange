@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cex.io/api/ticker/BTC/USD
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - cex.io
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 22 Nov 2017 04:04:55 GMT
+      Content-Type:
+      - text/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d93cfda2496c7a24d6f3882586a062c1c1511323494; expires=Thu, 22-Nov-18
+        04:04:54 GMT; path=/; domain=.cex.io; HttpOnly
+      - cex-prod-session=s%3AtBnKXbJOoba7RJjPDaK5TfSY.0W5Sxv28Y3aZKRfwNDRn0K3uWLQSBApAV2oZCXI5FuY;
+        Domain=.cex.io; Path=/; HttpOnly; Secure
+      X-Frame-Options:
+      - DENY
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3c1901e33c4d7924-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timestamp":"1511323495","low":"7968.995","high":"8370","last":"8262.6184","volume":"1726.09307001","volume30d":"60987.01407587","bid":8262.6183,"ask":8270.2899}'
+    http_version: 
+  recorded_at: Wed, 22 Nov 2017 04:04:55 GMT
+recorded_with: VCR 3.0.3

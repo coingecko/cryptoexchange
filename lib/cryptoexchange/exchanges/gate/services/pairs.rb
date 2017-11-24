@@ -1,8 +1,8 @@
 module Cryptoexchange::Exchanges
-  module CoinsMarkets
+  module Gate
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::CoinsMarkets::Market::API_URL}/apicoin.php"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Gate::Market::API_URL}/pairs"
 
         def fetch
           output = super
@@ -10,12 +10,12 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output.map do |key, _|
-            target, base = key.split('_')
+          output.map do |pair|
+            base, target = pair.split('_')
             Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
-              market: CoinsMarkets::Market::NAME
+              market: Gate::Market::NAME
             )
           end
         end
