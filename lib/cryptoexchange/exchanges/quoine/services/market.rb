@@ -34,7 +34,7 @@ module Cryptoexchange::Exchanges
           ticker.target    = market_pair.target
           ticker.market    = Quoine::Market::NAME
           #use last price 24h
-          ticker.last      = NumericHelper.to_d(output['last_price_24h'])
+          ticker.last      = NumericHelper.to_d(output['last_traded_price'])
           ticker.bid       = NumericHelper.to_d(output['market_bid'])
           ticker.ask       = NumericHelper.to_d(output['market_ask'])
           ticker.high      = NumericHelper.to_d(output['high_market_ask'])
