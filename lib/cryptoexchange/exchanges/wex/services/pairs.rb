@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Wex
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Tidex::Market::API_URL}/info"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Wex::Market::API_URL}/info"
 
         def fetch
           output = super
