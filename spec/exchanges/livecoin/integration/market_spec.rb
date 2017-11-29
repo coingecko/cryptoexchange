@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Livecoin integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'livecoin') }
 
   it 'fetch pairs' do
     pairs = client.pairs('livecoin')
@@ -14,7 +15,6 @@ RSpec.describe 'Livecoin integration specs' do
   end
 
   it 'fetch ticker' do
-    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'livecoin')
     ticker = client.ticker(btc_usd_pair)
 
     expect(ticker.base).to_not be nil

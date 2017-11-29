@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Yobit integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:px_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'PX', target: 'BTC', market: 'yobit') }
 
   it 'fetch pairs' do
     pairs = client.pairs('yobit')
@@ -14,8 +15,7 @@ RSpec.describe 'Yobit integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'PX', target: 'BTC', market: 'yobit')
-    ticker = client.ticker(pair)
+    ticker = client.ticker(px_btc_pair)
 
     expect(ticker.base).to eq 'PX'
     expect(ticker.target).to eq 'BTC'

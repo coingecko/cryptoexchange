@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'EtherDelta integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:ppt_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'PPT', target: 'ETH', market: 'ether_delta') }
 
   it 'fetch pairs' do
     pairs = client.pairs('ether_delta')
@@ -31,8 +32,7 @@ RSpec.describe 'EtherDelta integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'PPT', target: 'ETH', market: 'ether_delta')
-    ticker = client.ticker(pair)
+    ticker = client.ticker(ppt_eth_pair)
 
     expect(ticker.base).to eq 'PPT'
     expect(ticker.target).to eq 'ETH'

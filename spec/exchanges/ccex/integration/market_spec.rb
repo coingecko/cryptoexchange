@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Ccex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:usd_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'USD', target: 'BTC', market: 'ccex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('ccex')
@@ -14,7 +15,6 @@ RSpec.describe 'Ccex integration specs' do
   end
 
   it 'fetch ticker' do
-    usd_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'USD', target: 'BTC', market: 'ccex')
     ticker = client.ticker(usd_btc_pair)
 
     expect(ticker.base).to eq 'USD'

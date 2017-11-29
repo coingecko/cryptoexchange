@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 RSpec.describe 'Bter integration specs' do
-  client = Cryptoexchange::Client.new
+  let(:client) { Cryptoexchange::Client.new }
+  let(:btc_cny_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'cny', market: 'bter') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bter')
@@ -14,7 +15,6 @@ RSpec.describe 'Bter integration specs' do
   end
 
   it 'fetch ticker' do
-    btc_cny_pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'cny', market: 'bter')
     ticker = client.ticker(btc_cny_pair)
 
     expect(ticker.base).to eq 'BTC'

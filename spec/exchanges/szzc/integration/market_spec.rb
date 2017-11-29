@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Szzc integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:btc_cny_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'CNY', market: 'szzc') }
 
   it 'fetch pairs' do
     pairs = client.pairs('szzc')
@@ -14,7 +15,6 @@ RSpec.describe 'Szzc integration specs' do
   end
 
   it 'fetch ticker' do
-    btc_cny_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'CNY', market: 'szzc')
     ticker = client.ticker(btc_cny_pair)
 
     expect(ticker.base).to_not be 'BTC'

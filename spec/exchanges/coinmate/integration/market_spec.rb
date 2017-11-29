@@ -2,8 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'CoinMate integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-
-  market = 'coinmate'
+  let(:btc_czk_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'czk', market: 'coinmate') }
 
   it 'fetch pairs' do
     pairs = client.pairs('coinmate')
@@ -17,12 +16,11 @@ RSpec.describe 'CoinMate integration specs' do
   end
 
   it 'fetch ticker' do
-    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'czk', market: market)
-    ticker = client.ticker(btc_usd_pair)
+    ticker = client.ticker(btc_czk_pair)
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'CZK'
-    expect(ticker.market).to eq market
+    expect(ticker.market).to eq 'coinmate'
     expect(ticker.last).to be_a Numeric
     expect(ticker.high).to be_a Numeric
     expect(ticker.low).to be_a Numeric
@@ -33,12 +31,11 @@ RSpec.describe 'CoinMate integration specs' do
   end
 
   it 'fetch order book' do
-    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'CZK', market: market)
-    order_book = client.order_book(btc_usd_pair)
+    order_book = client.order_book(btc_czk_pair)
 
     expect(order_book.base).to eq 'BTC'
     expect(order_book.target).to eq 'CZK'
-    expect(order_book.market).to eq market
+    expect(order_book.market).to eq 'coinmate'
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
     expect(order_book.asks.first.price).to_not be_nil
@@ -49,5 +46,4 @@ RSpec.describe 'CoinMate integration specs' do
     expect(order_book.timestamp).to be_a Numeric
     expect(order_book.payload).to_not be nil
   end
-
 end

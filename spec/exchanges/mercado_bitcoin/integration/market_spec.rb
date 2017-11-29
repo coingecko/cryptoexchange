@@ -1,13 +1,13 @@
 require 'spec_helper'
 
 RSpec.describe 'MercadoBitcoin integration specs' do
-  client = Cryptoexchange::Client.new
+  let(:client) { Cryptoexchange::Client.new }
+  let(:btc_brl_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'BRL', market: 'mercado_bitcoin') }
 
   it 'fetch pairs' do
     pairs = client.pairs('mercado_bitcoin')
     expect(pairs).not_to be_empty
 
-    pair = pairs.first
     expected_base = %w(BTC LTC BCH)
     expect(pairs.map(&:base)).to match_array expected_base
     expect(pairs.map(&:target).uniq).to eq %w(BRL)
@@ -15,7 +15,6 @@ RSpec.describe 'MercadoBitcoin integration specs' do
   end
 
   it 'fetch ticker' do
-    btc_brl_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'BRL', market: 'mercado_bitcoin')
     ticker = client.ticker(btc_brl_pair)
 
     expect(ticker.base).to eq 'BTC'
