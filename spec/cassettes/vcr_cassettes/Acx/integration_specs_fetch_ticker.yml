@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://acx.io/api/v2/tickers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - acx.io
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Nov 2017 04:36:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '790'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 7d50aefd-2de8-4250-a661-7a15056d7789
+      Etag:
+      - '"dc1e2a26ca7e5cdef42372233b88bbf7"'
+      X-Runtime:
+      - '0.043921'
+      X-Powered-By:
+      - acx
+      Server:
+      - acx
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - sniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"btcaud":{"name":"BTC/AUD","base_unit":"btc","quote_unit":"aud","at":1509510993,"ticker":{"buy":"8543.69","sell":"8635.0","open":8126.9,"low":"8036.0","high":"8695.47","last":"8543.46","vol":"854.2372"}},"bchaud":{"name":"BCH/AUD","base_unit":"bch","quote_unit":"aud","at":1509510993,"ticker":{"buy":"585.0","sell":"600.0","open":552.0,"low":"584.0","high":"585.0","last":"585.0","vol":"4.3158"}},"ethaud":{"name":"ETH/AUD","base_unit":"eth","quote_unit":"aud","at":1509510993,"ticker":{"buy":"402.0","sell":"411.5","open":408.0,"low":"397.0","high":"430.0","last":"405.0","vol":"169.5973"}},"hsraud":{"name":"HSR/AUD","base_unit":"hsr","quote_unit":"aud","at":1509510993,"ticker":{"buy":"13.68","sell":"13.74","open":13.24,"low":"13.22","high":"14.74","last":"13.7","vol":"510320.1947"}}}'
+    http_version: 
+  recorded_at: Wed, 01 Nov 2017 04:36:34 GMT
+recorded_with: VCR 3.0.3
