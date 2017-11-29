@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'ANX integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usd', market: 'anx') }
 
   it 'fetch pairs' do
     pairs = client.pairs('anx')
@@ -14,7 +15,6 @@ RSpec.describe 'ANX integration specs' do
   end
 
   it 'fetch ticker' do
-    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usd', market: 'anx')
     ticker = client.ticker(btc_usd_pair)
 
     expect(ticker.base).to eq 'BTC'

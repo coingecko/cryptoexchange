@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Allcoin integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usd', market: 'allcoin') }
 
   it 'fetch pairs' do
     pairs = client.pairs('allcoin')
@@ -14,7 +15,6 @@ RSpec.describe 'Allcoin integration specs' do
   end
 
   it 'fetch ticker' do
-    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usd', market: 'allcoin')
     ticker = client.ticker(btc_usd_pair)
 
     expect(ticker.base).to eq 'BTC'
@@ -30,7 +30,6 @@ RSpec.describe 'Allcoin integration specs' do
   end
 
   it 'fetch order book' do
-    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'allcoin')
     order_book = client.order_book(btc_usd_pair)
 
     expect(order_book.base).to eq 'BTC'

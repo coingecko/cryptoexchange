@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'BitZ integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:eth_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'eth', target: 'btc', market: 'bit_z') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bit_z')
@@ -14,7 +15,6 @@ RSpec.describe 'BitZ integration specs' do
   end
 
   it 'fetch ticker' do
-    eth_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'eth', target: 'btc', market: 'bit_z')
     ticker = client.ticker(eth_btc_pair)
 
     expect(ticker.base).to eq 'ETH'

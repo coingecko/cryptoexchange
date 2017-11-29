@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Bitbay integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usd', market: 'bitbay') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bitbay')
@@ -14,7 +15,6 @@ RSpec.describe 'Bitbay integration specs' do
   end
 
   it 'fetch ticker' do
-    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usd', market: 'bitbay')
     ticker = client.ticker(btc_usd_pair)
 
     expect(ticker.base).to eq 'BTC'
