@@ -20,7 +20,7 @@ module Cryptoexchange::Exchanges
             tr.type      = trade['side']
             tr.price     = trade['price']
             tr.amount    = trade['size']
-            tr.timestamp = Time.now.to_i
+            tr.timestamp = Time.parse(trade['time']).to_i
             tr.payload   = trade
             tr.market    = Abucoins::Market::NAME
             tr

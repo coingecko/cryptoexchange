@@ -20,7 +20,7 @@ module Cryptoexchange::Exchanges
             tr.type      = trade['type']
             tr.price     = trade['price']
             tr.amount    = trade['amount']
-            tr.timestamp = Time.now.to_i
+            tr.timestamp = trade['timestamp'].to_i
             tr.payload   = trade
             tr.market    = Gemini::Market::NAME
             tr
