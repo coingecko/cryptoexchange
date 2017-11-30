@@ -40,6 +40,26 @@ RSpec.describe 'wex integration specs' do
     expect(order_book.bids).to_not be_empty
     expect(order_book.asks.first.price).to_not be_nil
     expect(order_book.bids.first.amount).to_not be_nil
+    expect(order_book.bids.first.timestamp).to_not be_nil
+    expect(order_book.timestamp).to be_a Numeric
     expect(order_book.payload).to_not be nil
+  end
+
+  it 'fetch trade' do
+    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'wex')
+    trades = client.trades(btc_usd_pair)
+    trade = trades.sample
+
+    expect(trades).to_not be_empty
+    expect(trade.trade_id).to_not be_nil
+    expect(trade.base).to eq 'BTC'
+    expect(trade.target).to eq 'USD'
+    expect(trade.market).to eq 'wex'
+    expect(['bid', 'ask']).to include trade.type
+    expect(trade.price).to_not be_nil
+    expect(trade.amount).to_not be_nil
+    expect(trade.timestamp).to be_a Numeric
+    expect(trade.payload).to_not be nil
+    expect(trade.market).to eq 'wex'
   end
 end
