@@ -22,19 +22,19 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(market_pair, output)
-          output = output[symbol(market_pair)]
+          data = output[symbol(market_pair)]
 
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Wex::Market::NAME
-          ticker.ask       = NumericHelper.to_d(output['sell'])
-          ticker.bid       = NumericHelper.to_d(output['buy'])
-          ticker.last      = NumericHelper.to_d(output['last'])
-          ticker.high      = NumericHelper.to_d(output['high'])
-          ticker.low       = NumericHelper.to_d(output['low'])
-          ticker.volume    = NumericHelper.to_d(output['vol_cur'])
-          ticker.timestamp = output['updated'].to_i
+          ticker.ask       = NumericHelper.to_d(data['sell'])
+          ticker.bid       = NumericHelper.to_d(data['buy'])
+          ticker.last      = NumericHelper.to_d(data['last'])
+          ticker.high      = NumericHelper.to_d(data['high'])
+          ticker.low       = NumericHelper.to_d(data['low'])
+          ticker.volume    = NumericHelper.to_d(data['vol_cur'])
+          ticker.timestamp = data['updated'].to_i
           ticker.payload   = output
           ticker
         end
