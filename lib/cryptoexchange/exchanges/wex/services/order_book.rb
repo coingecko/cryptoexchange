@@ -39,7 +39,9 @@ module Cryptoexchange::Exchanges
           orders.collect do |order_entry|
             price = order_entry[0]
             amount = order_entry[1]
-            Cryptoexchange::Models::Order.new(price: price, amount: amount)
+            Cryptoexchange::Models::Order.new(price: price,
+                                              amount: amount,
+                                              timestamp: Time.now.to_i)
           end
         end
       end
