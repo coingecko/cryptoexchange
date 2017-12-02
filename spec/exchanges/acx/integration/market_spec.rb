@@ -46,4 +46,20 @@ RSpec.describe 'ACX integration specs' do
     expect(order_book.timestamp).to be_a Numeric
     expect(order_book.payload).to_not be nil
   end
+
+  it 'fetch trade' do
+    eth_aud_pair = Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'AUD', market: 'acx')
+    trades = client.trades(eth_aud_pair)
+    trade = trades.sample
+
+    expect(trades).to_not be_empty
+    expect(trade.trade_id).to_not be_nil
+    expect(trade.base).to eq 'ETH'
+    expect(trade.target).to eq 'AUD'
+    expect(trade.price).to_not be_nil
+    expect(trade.amount).to_not be_nil
+    expect(trade.timestamp).to be_a Numeric
+    expect(trade.payload).to_not be nil
+    expect(trade.market).to eq 'acx'
+  end
 end
