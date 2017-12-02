@@ -89,6 +89,7 @@ Or install it yourself as:
 | TuxExchange       | Y       |            |         |         | Y           |
 | Unocoin           |         |            |         |         |             |
 | Viabtc            | Y       |            |         |         | User-Defined|
+| Wex               | Y       | Y          |  Y      |         | Y           |
 | Yobit             | Y       |            |         |         | Y           |
 | Yuanbao           | Y       |            |         |         | User-Defined|
 | Yunbi             | Y       |            |         |         | Y           |
@@ -111,7 +112,7 @@ Or install it yourself as:
 ### Query the Ticker API
 ```
   pair = client.pairs('bitflyer').first
-  ticker = client.ticker(pairs.last)
+  ticker = client.ticker(pair)
   ticker.base
   ticker.target
   ticker.last
@@ -121,7 +122,7 @@ Or install it yourself as:
 ```
   # Check if exchange has support for OrderBook
   pair = client.pairs('bitflyer').first
-  order_book = client.order_book(pairs.last)
+  order_book = client.order_book(pair)
   order_book.base
   order_book.target
   order_book.bids
