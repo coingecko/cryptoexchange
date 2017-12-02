@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.abucoins.com/products/BTC-USD/ticker
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.abucoins.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 25 Oct 2017 22:35:13 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '148'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=ddc7249abe0463bb853864bf728e4c3601508970913; expires=Thu, 25-Oct-18
+        22:35:13 GMT; path=/; domain=.abucoins.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, ac-session
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ac-before, ac-after
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3b38a5d26da83602-LHR
+    body:
+      encoding: UTF-8
+      string: '{"trade_id":"869571","price":5700.24,"size":0.02474,"bid":"5649.36000000","ask":"5717.57000000","volume":"4.09127000","time":"2017-10-25T22:35:13Z"}'
+    http_version: 
+  recorded_at: Wed, 25 Oct 2017 22:35:13 GMT
+recorded_with: VCR 3.0.3

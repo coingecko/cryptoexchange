@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.itbit.com/v1/markets/XBTUSD/ticker
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.itbit.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '426'
+      X-Ratelimit-Remaining:
+      - '19999'
+      X-Ratelimit-Reset:
+      - '1507339777'
+      X-Ratelimit-Limit:
+      - '20000'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,HEAD,PUT,POST,DELETE
+      Access-Control-Allow-Headers:
+      - authorization,content-type,x-auth-nonce,x-auth-timestamp,x-requested-with
+      Expires:
+      - Sat, 07 Oct 2017 01:28:37 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 07 Oct 2017 01:28:37 GMT
+      Connection:
+      - close
+      Strict-Transport-Security:
+      - max-age=15638400; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '{"pair":"XBTUSD","bid":"4363.82","bidAmt":"1.994","ask":"4364.76","askAmt":"3.8746","lastPrice":"4364.76000000","lastAmt":"0.64100000","volume24h":"1258.37300000","volumeToday":"30.50750000","high24h":"4417.11000000","low24h":"4311.84000000","highToday":"4383.67000000","lowToday":"4357.53000000","openToday":"4364.13000000","vwapToday":"4368.87574766","vwap24h":"4373.90019879","serverTimeUTC":"2017-10-07T01:28:36.4275879Z"}'
+    http_version: 
+  recorded_at: Sat, 07 Oct 2017 01:28:37 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mercadobitcoin.net/api/BTC/ticker/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.mercadobitcoin.net
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Etag:
+      - '"1f9769c7"'
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '183'
+      Access-Control-Expose-Headers:
+      - Content-Type
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Date:
+      - Tue, 03 Oct 2017 04:05:28 GMT
+      Set-Cookie:
+      - incap_ses_577_619276=5jgldvbZL0l3gBXru+oBCIgM01kAAAAAsaJ6ZPMIc3AUYgadKk7Xag==;
+        path=/; Domain=.mercadobitcoin.net
+      - visid_incap_619276=TRAgfyQ0TPO5utHFvpHSYogM01kAAAAAQUIPAAAAAAAg/jTKSVySQsIasdwq3IZO;
+        expires=Tue, 02 Oct 2018 14:32:16 GMT; path=/; Domain=.mercadobitcoin.net
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Iinfo:
+      - 8-58801827-58799400 2CNN RT(1507003528531 96) q(0 0 0 1) r(0 0) U18
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ticker": {"high": "14900.00000000", "low": "14353.21000000", "vol":
+        "364.01231592", "last": "14700.00000000", "buy": "14605.00000000", "sell":
+        "14700.00000000", "date": 1506998526}}'
+    http_version: 
+  recorded_at: Tue, 03 Oct 2017 04:05:29 GMT
+recorded_with: VCR 3.0.3

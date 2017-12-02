@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.viabtc.com/api/v1/market/ticker?market=BTCCNY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.viabtc.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 502
+      message: Bad Gateway
+    headers:
+      Server:
+      - Tengine
+      Date:
+      - Tue, 03 Oct 2017 04:05:51 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '96'
+      Connection:
+      - close
+      Set-Cookie:
+      - aliyungf_tc=AQAAACthYS3PlAEAWpk4LfRBrWb5y20z; Path=/; HttpOnly
+      Etag:
+      - '"59bf2e6b-60"'
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        <!DOCTYPE html><html><head><meta http-equiv="refresh" content="5" /></head><body></body></html>
+    http_version: 
+  recorded_at: Tue, 03 Oct 2017 04:05:51 GMT
+recorded_with: VCR 3.0.3

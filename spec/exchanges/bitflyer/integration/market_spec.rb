@@ -20,11 +20,12 @@ RSpec.describe 'Bitflyer integration specs' do
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'JPY'
     expect(ticker.market).to eq 'bitflyer'
-    expect(ticker.last).to_not be nil
-    expect(ticker.ask).to_not be nil
-    expect(ticker.bid).to_not be nil
-    expect(ticker.volume).to_not be nil
-    expect(ticker.timestamp).to_not be nil
+    expect(ticker.last).to be_a Numeric
+    expect(ticker.ask).to be_a Numeric
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.volume).to be_a Numeric
+    expect(ticker.timestamp).to be_a Numeric
+    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
     expect(ticker.payload).to_not be nil
   end
 end

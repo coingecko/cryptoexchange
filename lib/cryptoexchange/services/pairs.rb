@@ -17,8 +17,8 @@ module Cryptoexchange
         return fetch_via_override(default_override_path) if default_override_exist?
       end
 
-      def fetch_via_api
-        fetch_response = HTTP.get(self.class::PAIRS_URL)
+      def fetch_via_api(endpoint = self.class::PAIRS_URL)
+        fetch_response = HTTP.timeout(:write => 2, :connect => 5, :read => 8).get(endpoint)
         JSON.parse(fetch_response.to_s)
       end
 
@@ -27,11 +27,11 @@ module Cryptoexchange
       end
 
       def user_override_path
-        "config/cryptoexchange/#{self.class::MARKET::NAME}.yml"
+        "config/cryptoexchange/#{exchange_class::NAME}.yml"
       end
 
       def default_override_path
-        File.join(File.dirname(__dir__), "exchanges/#{self.class::MARKET::NAME}/#{self.class::MARKET::NAME}.yml")
+        File.join(File.dirname(__dir__), "exchanges/#{exchange_class::NAME}/#{exchange_class::NAME}.yml")
       end
 
       def user_override_exist?
@@ -40,6 +40,11 @@ module Cryptoexchange
 
       def default_override_exist?
         File.exist? default_override_path
+      end
+
+      def exchange_class
+        exchange_name = self.class.name.split('::')[2]
+        Object.const_get "Cryptoexchange::Exchanges::#{exchange_name}::Market"
       end
     end
   end

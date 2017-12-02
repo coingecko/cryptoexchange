@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.gemini.com/v1/pubticker/BTCUSD
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.gemini.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Oct 2017 04:04:56 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '141'
+      Connection:
+      - close
+      Server:
+      - nginx
+    body:
+      encoding: ASCII-8BIT
+      string: '{"bid":"4407.81","ask":"4407.82","volume":{"BTC":"4835.1549187912","USD":"21292243.803004461798","timestamp":1507003200000},"last":"4407.82"}'
+    http_version: 
+  recorded_at: Tue, 03 Oct 2017 04:04:56 GMT
+recorded_with: VCR 3.0.3
