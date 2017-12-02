@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module OKEx
+  module Okex
     class Market
       NAME = 'okex'
       API_URL = 'https://www.okex.com/api/v1'
