@@ -46,4 +46,21 @@ RSpec.describe 'Okex integration specs' do
     expect(order_book.timestamp).to be_a Numeric
     expect(order_book.payload).to_not be nil
   end
+
+  it 'fetch trade' do
+    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USDT', market: 'okex')
+    trades = client.trades(btc_usd_pair)
+    trade = trades.sample
+
+    expect(trades).to_not be_empty
+    expect(trade.trade_id).to_not be_nil
+    expect(trade.base).to eq 'ETH'
+    expect(trade.target).to eq 'USDT'
+    expect(['buy', 'sell']).to include trade.type
+    expect(trade.price).to_not be_nil
+    expect(trade.amount).to_not be_nil
+    expect(trade.timestamp).to be_a Numeric
+    expect(trade.payload).to_not be nil
+    expect(trade.market).to eq 'okex'
+  end
 end
