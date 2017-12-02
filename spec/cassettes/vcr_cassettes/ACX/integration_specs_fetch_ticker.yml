@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://acx.io/api/v2/tickers/ethaud.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - acx.io
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 02 Dec 2017 10:02:42 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '134'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 7889b5c1-b348-4781-bb64-874a23ec24f1
+      Etag:
+      - '"3fc329de2413838209563a133746eb68"'
+      X-Runtime:
+      - '0.016742'
+      X-Powered-By:
+      - acx
+      Server:
+      - acx
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - sniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1512208962,"ticker":{"buy":"649.1","sell":"649.91","open":632.5,"low":"615.0","high":"649.91","last":"649.91","vol":"468.8129"}}'
+    http_version: 
+  recorded_at: Sat, 02 Dec 2017 10:02:42 GMT
+recorded_with: VCR 3.0.3
