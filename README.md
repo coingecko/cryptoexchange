@@ -25,6 +25,7 @@ Or install it yourself as:
 | Exchange          | Ticker  | Order Book | Trade   | Account | Market List |
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |
 | Abucoins          | Y       | Y          | Y       |         | Y           |
+| ACX               | Y       | Y          | Y       |         | Y           |
 | Allcoin           | Y       | Y          |         |         | User-Defined|
 | ANX               | Y       |            |         |         | User-Defined|
 | Bit-Z             | Y       |            |         |         | Y           |
