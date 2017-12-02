@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://acx.io/api/v2/order_book.json?market=ethaud
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - acx.io
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 02 Dec 2017 09:46:31 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '9730'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - fbae8400-b51e-4452-b2d3-f8a9f5b906d7
+      Etag:
+      - '"166ecbe4c779dbff66ed570dc9eb6ce7"'
+      X-Runtime:
+      - '0.120858'
+      X-Powered-By:
+      - acx
+      Server:
+      - acx
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - sniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"asks":[{"id":167529341,"side":"sell","ord_type":"limit","price":"649.91","avg_price":"649.91","state":"wait","market":"ethaud","created_at":"2017-12-01T11:27:29+11:00","volume":"5.0","remaining_volume":"1.8997","executed_volume":"3.1003","trades_count":1},{"id":167529097,"side":"sell","ord_type":"limit","price":"649.99","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-01T11:27:09+11:00","volume":"5.0","remaining_volume":"5.0","executed_volume":"0.0","trades_count":0},{"id":167525253,"side":"sell","ord_type":"limit","price":"653.85","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-01T11:21:16+11:00","volume":"4.0","remaining_volume":"4.0","executed_volume":"0.0","trades_count":0},{"id":167525412,"side":"sell","ord_type":"limit","price":"653.94","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-01T11:21:45+11:00","volume":"3.367","remaining_volume":"3.367","executed_volume":"0.0","trades_count":0},{"id":168371738,"side":"sell","ord_type":"limit","price":"655.97","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T20:31:54+11:00","volume":"0.0398","remaining_volume":"0.0398","executed_volume":"0.0","trades_count":0},{"id":168371961,"side":"sell","ord_type":"limit","price":"655.97","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T20:32:05+11:00","volume":"0.0398","remaining_volume":"0.0398","executed_volume":"0.0","trades_count":0},{"id":168372261,"side":"sell","ord_type":"limit","price":"655.97","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T20:32:23+11:00","volume":"0.0398","remaining_volume":"0.0398","executed_volume":"0.0","trades_count":0},{"id":167793872,"side":"sell","ord_type":"limit","price":"656.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T00:19:24+11:00","volume":"3.3","remaining_volume":"3.3","executed_volume":"0.0","trades_count":0},{"id":168381746,"side":"sell","ord_type":"limit","price":"669.99","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T20:46:15+11:00","volume":"5.5016","remaining_volume":"5.5016","executed_volume":"0.0","trades_count":0},{"id":167265141,"side":"sell","ord_type":"limit","price":"670.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-11-30T23:29:50+11:00","volume":"2.0","remaining_volume":"2.0","executed_volume":"0.0","trades_count":0},{"id":167328725,"side":"sell","ord_type":"limit","price":"675.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-01T01:55:14+11:00","volume":"1.979","remaining_volume":"1.979","executed_volume":"0.0","trades_count":0},{"id":167063486,"side":"sell","ord_type":"limit","price":"675.01","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-11-30T14:36:02+11:00","volume":"0.949","remaining_volume":"0.949","executed_volume":"0.0","trades_count":0},{"id":167751390,"side":"sell","ord_type":"limit","price":"675.32","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-01T22:46:44+11:00","volume":"0.0082","remaining_volume":"0.0082","executed_volume":"0.0","trades_count":0},{"id":167071230,"side":"sell","ord_type":"limit","price":"679.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-11-30T14:56:48+11:00","volume":"3.255","remaining_volume":"3.255","executed_volume":"0.0","trades_count":0},{"id":167665661,"side":"sell","ord_type":"limit","price":"680.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-01T18:47:29+11:00","volume":"15.0","remaining_volume":"15.0","executed_volume":"0.0","trades_count":0},{"id":167738442,"side":"sell","ord_type":"limit","price":"690.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-01T22:07:28+11:00","volume":"2.4595","remaining_volume":"2.4595","executed_volume":"0.0","trades_count":0},{"id":167795441,"side":"sell","ord_type":"limit","price":"696.96","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T00:22:16+11:00","volume":"5.358","remaining_volume":"5.358","executed_volume":"0.0","trades_count":0},{"id":166948982,"side":"sell","ord_type":"limit","price":"700.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-11-30T09:33:45+11:00","volume":"1.0","remaining_volume":"1.0","executed_volume":"0.0","trades_count":0},{"id":167822780,"side":"sell","ord_type":"limit","price":"700.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T01:23:23+11:00","volume":"1.0","remaining_volume":"1.0","executed_volume":"0.0","trades_count":0},{"id":167823449,"side":"sell","ord_type":"limit","price":"703.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T01:24:59+11:00","volume":"1.0","remaining_volume":"1.0","executed_volume":"0.0","trades_count":0}],"bids":[{"id":168381794,"side":"buy","ord_type":"limit","price":"648.01","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T20:46:19+11:00","volume":"1.18","remaining_volume":"1.18","executed_volume":"0.0","trades_count":0},{"id":168373719,"side":"buy","ord_type":"limit","price":"648.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T20:33:49+11:00","volume":"2.425","remaining_volume":"2.425","executed_volume":"0.0","trades_count":0},{"id":168356840,"side":"buy","ord_type":"limit","price":"645.69","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T20:10:06+11:00","volume":"1.351","remaining_volume":"1.351","executed_volume":"0.0","trades_count":0},{"id":168342494,"side":"buy","ord_type":"limit","price":"645.61","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T19:37:30+11:00","volume":"0.5059","remaining_volume":"0.5059","executed_volume":"0.0","trades_count":0},{"id":168342264,"side":"buy","ord_type":"limit","price":"645.6","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T19:36:49+11:00","volume":"0.5538","remaining_volume":"0.5538","executed_volume":"0.0","trades_count":0},{"id":168340037,"side":"buy","ord_type":"limit","price":"645.5","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T19:32:51+11:00","volume":"0.3725","remaining_volume":"0.3725","executed_volume":"0.0","trades_count":0},{"id":168229412,"side":"buy","ord_type":"limit","price":"645.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T16:50:02+11:00","volume":"0.7801","remaining_volume":"0.7801","executed_volume":"0.0","trades_count":0},{"id":168314098,"side":"buy","ord_type":"limit","price":"645.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T18:46:56+11:00","volume":"1.0","remaining_volume":"1.0","executed_volume":"0.0","trades_count":0},{"id":168363026,"side":"buy","ord_type":"limit","price":"635.06","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T20:21:34+11:00","volume":"10.0","remaining_volume":"10.0","executed_volume":"0.0","trades_count":0},{"id":168288870,"side":"buy","ord_type":"limit","price":"635.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T18:01:30+11:00","volume":"6.2028","remaining_volume":"6.2028","executed_volume":"0.0","trades_count":0},{"id":168007215,"side":"buy","ord_type":"limit","price":"634.96","avg_price":"634.96","state":"wait","market":"ethaud","created_at":"2017-12-02T09:50:31+11:00","volume":"3.6234","remaining_volume":"0.0001","executed_volume":"3.6233","trades_count":1},{"id":168230699,"side":"buy","ord_type":"limit","price":"631.1","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T16:51:33+11:00","volume":"0.4138","remaining_volume":"0.4138","executed_volume":"0.0","trades_count":0},{"id":168308534,"side":"buy","ord_type":"limit","price":"630.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T18:37:10+11:00","volume":"3.2005","remaining_volume":"3.2005","executed_volume":"0.0","trades_count":0},{"id":168343088,"side":"buy","ord_type":"limit","price":"625.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T19:39:47+11:00","volume":"8.0","remaining_volume":"8.0","executed_volume":"0.0","trades_count":0},{"id":168105240,"side":"buy","ord_type":"limit","price":"623.3","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T13:38:15+11:00","volume":"4.8029","remaining_volume":"4.8029","executed_volume":"0.0","trades_count":0},{"id":167939782,"side":"buy","ord_type":"limit","price":"621.34","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T06:49:52+11:00","volume":"0.004","remaining_volume":"0.004","executed_volume":"0.0","trades_count":0},{"id":168263098,"side":"buy","ord_type":"limit","price":"620.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T17:33:21+11:00","volume":"0.15","remaining_volume":"0.15","executed_volume":"0.0","trades_count":0},{"id":167835761,"side":"buy","ord_type":"limit","price":"617.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T01:56:25+11:00","volume":"0.5121","remaining_volume":"0.5121","executed_volume":"0.0","trades_count":0},{"id":167763874,"side":"buy","ord_type":"limit","price":"616.01","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-01T23:19:33+11:00","volume":"1.0","remaining_volume":"1.0","executed_volume":"0.0","trades_count":0},{"id":167797661,"side":"buy","ord_type":"limit","price":"611.0","avg_price":"0.0","state":"wait","market":"ethaud","created_at":"2017-12-02T00:26:53+11:00","volume":"0.05","remaining_volume":"0.05","executed_volume":"0.0","trades_count":0}]}'
+    http_version: 
+  recorded_at: Sat, 02 Dec 2017 09:46:31 GMT
+recorded_with: VCR 3.0.3
