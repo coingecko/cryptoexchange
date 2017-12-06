@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 RSpec.describe 'Coss integration specs' do
-  client = Cryptoexchange::Client.new
+  let(:client) { Cryptoexchange::Client.new }
+  let(:coss_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'COSS', target: 'ETH', market: 'coss') }
 
   it 'fetch pairs' do
     pairs = client.pairs('coss')
@@ -14,7 +15,6 @@ RSpec.describe 'Coss integration specs' do
   end
 
   it 'fetch ticker' do
-    coss_eth_pair = Cryptoexchange::Models::MarketPair.new(base: 'COSS', target: 'ETH', market: 'coss')
     ticker = client.ticker(coss_eth_pair)
 
     expect(ticker.base).to eq 'COSS'

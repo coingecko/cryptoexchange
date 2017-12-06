@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Liqui integration specs' do
   let(:client) {  Cryptoexchange::Client.new }
+  let(:ltc_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'LTC', target: 'BTC', market: 'liqui') }
 
   it 'fetch pairs' do
     pairs = client.pairs('liqui')
@@ -14,7 +15,6 @@ RSpec.describe 'Liqui integration specs' do
   end
 
   it 'fetch ticker' do
-    ltc_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'LTC', target: 'BTC', market: 'liqui')
     ticker = client.ticker(ltc_btc_pair)
 
     expect(ticker.base).to eq 'LTC'

@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 RSpec.describe 'Coinone integration specs' do
-  client = Cryptoexchange::Client.new
+  let(:client) { Cryptoexchange::Client.new }
+  let(:eth_krw_pair) { Cryptoexchange::Models::MarketPair.new(base: 'eth', target: 'krw', market: 'coinone') }
 
   it 'fetch pairs' do
     pairs = client.pairs('coinone')
@@ -14,7 +15,6 @@ RSpec.describe 'Coinone integration specs' do
   end
 
   it 'fetch ticker' do
-    eth_krw_pair = Cryptoexchange::Models::MarketPair.new(base: 'eth', target: 'krw', market: 'coinone')
     ticker = client.ticker(eth_krw_pair)
 
     expect(ticker.base).to eq 'ETH'

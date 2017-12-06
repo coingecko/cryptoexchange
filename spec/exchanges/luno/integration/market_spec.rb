@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 RSpec.describe 'Luno integration specs' do
-  client = Cryptoexchange::Client.new
+  let(:client) { Cryptoexchange::Client.new }
+  let(:xbt_zar_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'ZAR', market: 'luno') }
 
   it 'fetch pairs' do
     pairs = client.pairs('luno')
@@ -14,8 +15,7 @@ RSpec.describe 'Luno integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'ZAR', market: 'luno')
-    ticker = client.ticker(pair)
+    ticker = client.ticker(xbt_zar_pair)
 
     expect(ticker.base).to eq 'XBT'
     expect(ticker.target).to eq 'ZAR'

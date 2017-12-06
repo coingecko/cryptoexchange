@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Yuanbao integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:btc_cny_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'CNY', market: 'yuanbao') }
 
   it 'fetch pairs' do
     pairs = client.pairs('yuanbao')
@@ -15,7 +16,6 @@ RSpec.describe 'Yuanbao integration specs' do
   end
 
   it 'fetch ticker' do
-    btc_cny_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'CNY', market: 'yuanbao')
     ticker = client.ticker(btc_cny_pair)
 
     expect(ticker.base).to eq 'BTC'

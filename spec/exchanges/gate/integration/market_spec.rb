@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 RSpec.describe 'Gate integration specs' do
-  client = Cryptoexchange::Client.new
+  let(:client) { Cryptoexchange::Client.new }
+  let(:bch_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BCH', target: 'USDT', market: 'gate') }
 
   it 'fetch pairs' do
     pairs = client.pairs('gate')
@@ -14,8 +15,7 @@ RSpec.describe 'Gate integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'BCH', target: 'USDT', market: 'gate')
-    ticker = client.ticker(pair)
+    ticker = client.ticker(bch_usdt_pair)
 
     expect(ticker.base).to eq 'BCH'
     expect(ticker.target).to eq 'USDT'
@@ -31,8 +31,7 @@ RSpec.describe 'Gate integration specs' do
   end
 
   it 'fetch order book' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'BCH', target: 'USDT', market: 'gate')
-    order_book = client.order_book(pair)
+    order_book = client.order_book(bch_usdt_pair)
 
     expect(order_book.base).to eq 'BCH'
     expect(order_book.target).to eq 'USDT'
@@ -53,8 +52,7 @@ RSpec.describe 'Gate integration specs' do
   end
 
   it 'fetch trade' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'BCH', target: 'USDT', market: 'gate')
-    trades = client.trades(pair)
+    trades = client.trades(bch_usdt_pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty
