@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Kucoin integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:kcs_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'kcs', target: 'btc', market: 'kucoin') }
 
   it 'fetch pairs' do
     pairs = client.pairs('kucoin')
@@ -14,8 +15,7 @@ RSpec.describe 'Kucoin integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'kcs', target: 'btc', market: 'kucoin')
-    ticker = client.ticker(pair)
+    ticker = client.ticker(kcs_btc_pair)
 
     expect(ticker.base).to eq 'KCS'
     expect(ticker.target).to eq 'BTC'

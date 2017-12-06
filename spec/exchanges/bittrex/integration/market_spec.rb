@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Bittrex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:ltc_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ltc', target: 'btc', market: 'bittrex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bittrex')
@@ -24,8 +25,7 @@ RSpec.describe 'Bittrex integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'ltc', target: 'btc', market: 'bittrex')
-    ticker = client.ticker(pair)
+    ticker = client.ticker(ltc_btc_pair)
 
     expect(ticker.base).to eq 'LTC'
     expect(ticker.target).to eq 'BTC'

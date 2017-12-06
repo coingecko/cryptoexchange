@@ -1,0 +1,184 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.zaif.jp/api/1/currency_pairs/all
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.zaif.jp
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 25 Oct 2017 13:16:44 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '13038'
+      Connection:
+      - close
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Set-Cookie:
+      - api.zaif.jp.chat_client_id=; Max-Age=0; Path=/; expires=Wed, 31-Dec-97 23:59:59
+        GMT
+      - locale=ja; Max-Age=315360000; Path=/; expires=Sat, 23-Oct-2027 13:16:44 GMT
+      - session=KJUULJ_gUwrsR1SV7m0f5V_-Tj6vhnp3cc2htwR5UOyM2ZaN2MP1wFWtWQukkoXR-klfzk0DkO67tSP4VgV_foAElVwAAAAAAAAASryO8FlHQdZ8I68p3ON9lCiMB19jc3JmdF-UjCg5NWQzNWIwNzYyNjhkYmMzZWJiMjlkZGRhNGMxMzVmMGUwNzQ0YTcylIwFdG9rZW6UaAKMA2FwaZR9lHWHlC4;
+        Path=/
+      - trading_view_user_id=-1; Path=/
+      - userhash=; Max-Age=0; Path=/; expires=Wed, 25-Oct-2017 13:16:44 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id": 9, "title": "XCP/BTC \u53d6\u5f15\u6240 - Zaif Exchange", "seq":
+        9, "is_token": true, "item_unit_step": 1.0, "aux_unit_step": 1e-08, "currency_pair":
+        "xcp_btc", "aux_unit_point": 8, "item_unit_min": 1.0, "aux_japanese": "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3",
+        "description": "XCP/BTC\u53d6\u5f15\u6240\u3002XCP\u3068\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 1e-08, "event_number": 0, "name": "XCP/BTC", "item_japanese":
+        "XCP"}, {"id": 5, "title": "XEM/BTC", "seq": 2, "is_token": false, "item_unit_step":
+        1.0, "aux_unit_step": 1e-08, "currency_pair": "xem_btc", "aux_unit_point":
+        8, "item_unit_min": 1.0, "aux_japanese": "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3",
+        "description": "XEM\u30fb\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u306e\u53d6\u5f15\u3092\u884c\u3046\u3053\u3068\u304c\u3067\u304d\u307e\u3059",
+        "aux_unit_min": 1e-08, "event_number": 0, "name": "XEM/BTC", "item_japanese":
+        "XEM"}, {"id": 176, "title": "BCH/BTC", "seq": 179, "is_token": true, "item_unit_step":
+        0.0001, "aux_unit_step": 0.0001, "currency_pair": "bch_btc", "aux_unit_point":
+        4, "item_unit_min": 0.0001, "aux_japanese": "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3",
+        "description": "\u30d3\u30c3\u30c8\u30ad\u30e3\u30c3\u30b7\u30e5\u30fb\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u306e\u53d6\u5f15\u3092\u884c\u3046\u3053\u3068\u304c\u3067\u304d\u307e\u3059",
+        "aux_unit_min": 0.0001, "event_number": 0, "name": "BCH/BTC", "item_japanese":
+        "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u30ad\u30e3\u30c3\u30b7\u30e5"}, {"id":
+        3, "title": "MONA/BTC", "seq": 4, "is_token": false, "item_unit_step": 1.0,
+        "aux_unit_step": 1e-08, "currency_pair": "mona_btc", "aux_unit_point": 8,
+        "item_unit_min": 1.0, "aux_japanese": "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3",
+        "description": "\u30e2\u30ca\u30b3\u30a4\u30f3\u30fb\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u306e\u53d6\u5f15\u3092\u884c\u3046\u3053\u3068\u304c\u3067\u304d\u307e\u3059",
+        "aux_unit_min": 1e-08, "event_number": 0, "name": "MONA/BTC", "item_japanese":
+        "\u30e2\u30ca\u30b3\u30a4\u30f3"}, {"id": 13, "title": "SJCX/BTC \u53d6\u5f15\u6240
+        - Zaif Exchange", "seq": 13, "is_token": true, "item_unit_step": 1.0, "aux_unit_step":
+        1e-08, "currency_pair": "sjcx_btc", "aux_unit_point": 8, "item_unit_min":
+        1.0, "aux_japanese": "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3", "description":
+        "SJCX/BTC\u53d6\u5f15\u6240\u3002SJCX\u3068\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 1e-08, "event_number": 0, "name": "SJCX/BTC", "item_japanese":
+        "SJCX"}, {"id": 6, "title": "ZAIF\u53d6\u5f15\u6240 - Zaif Exchange", "seq":
+        6, "is_token": true, "item_unit_step": 0.1, "aux_unit_step": 0.0001, "currency_pair":
+        "zaif_jpy", "aux_unit_point": 4, "item_unit_min": 0.1, "aux_japanese": "\u65e5\u672c\u5186",
+        "description": "ZAIF\u53d6\u5f15\u6240\u3002ZAIF\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 0.0001, "event_number": 0, "name": "ZAIF/JPY", "item_japanese":
+        "\u30b6\u30a4\u30d5"}, {"id": 172, "title": "NCXC/JPY \u53d6\u5f15\u6240 -
+        ZAIF Exchange", "seq": 175, "is_token": true, "item_unit_step": 0.0001, "aux_unit_step":
+        0.0001, "currency_pair": "ncxc_jpy", "aux_unit_point": 4, "item_unit_min":
+        0.0001, "aux_japanese": "\u65e5\u672c\u5186", "description": "NCXC/JPY \u53d6\u5f15\u6240\u3002NCXC\u3068\u65e5\u672c\u5186\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 0.0001, "event_number": 0, "name": "NCXC/JPY", "item_japanese":
+        "NCXC"}, {"id": 22, "title": "FSCC\u53d6\u5f15\u6240 - Zaif Exchange", "seq":
+        22, "is_token": true, "item_unit_step": 0.0001, "aux_unit_step": 0.0001, "currency_pair":
+        "fscc_jpy", "aux_unit_point": 4, "item_unit_min": 0.0001, "aux_japanese":
+        "\u65e5\u672c\u5186", "description": "FSCC\u53d6\u5f15\u6240\u3002FSCC\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 0.0001, "event_number": 0, "name": "FSCC/JPY", "item_japanese":
+        "FSCC"}, {"id": 129, "title": "PEPECASH/JPY \u53d6\u5f15\u6240 - ZAIF Exchange",
+        "seq": 132, "is_token": true, "item_unit_step": 0.0001, "aux_unit_step": 0.0001,
+        "currency_pair": "pepecash_jpy", "aux_unit_point": 4, "item_unit_min": 0.0001,
+        "aux_japanese": "\u65e5\u672c\u5186", "description": "PEPECASH/JPY \u53d6\u5f15\u6240\u3002PEPECASH\u3068\u65e5\u672c\u5186\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 0.0001, "event_number": 0, "name": "PEPECASH/JPY", "item_japanese":
+        "PEPECASH"}, {"id": 173, "title": "NCXC/BTC \u53d6\u5f15\u6240 - ZAIF Exchange",
+        "seq": 176, "is_token": true, "item_unit_step": 1.0, "aux_unit_step": 1e-08,
+        "currency_pair": "ncxc_btc", "aux_unit_point": 8, "item_unit_min": 1.0, "aux_japanese":
+        "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3", "description": "NCXC/BTC \u53d6\u5f15\u6240\u3002NCXC\u3068\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 1e-08, "event_number": 0, "name": "NCXC/BTC", "item_japanese":
+        "NCXC"}, {"id": 170, "title": "CICC/JPY \u53d6\u5f15\u6240 - ZAIF Exchange",
+        "seq": 173, "is_token": true, "item_unit_step": 0.0001, "aux_unit_step": 0.0001,
+        "currency_pair": "cicc_jpy", "aux_unit_point": 4, "item_unit_min": 0.0001,
+        "aux_japanese": "\u65e5\u672c\u5186", "description": "CICC/JPY \u53d6\u5f15\u6240\u3002CICC\u3068\u65e5\u672c\u5186\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 0.0001, "event_number": 0, "name": "CICC/JPY", "item_japanese":
+        "CICC"}, {"id": 11, "title": "BCY/BTC \u53d6\u5f15\u6240 - Zaif Exchange",
+        "seq": 11, "is_token": true, "item_unit_step": 1.0, "aux_unit_step": 1e-08,
+        "currency_pair": "bitcrystals_btc", "aux_unit_point": 8, "item_unit_min":
+        1.0, "aux_japanese": "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3", "description":
+        "BCY/BTC\u53d6\u5f15\u6240\u3002BITCRYSTALS\u3068\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 1e-08, "event_number": 0, "name": "BITCRYSTALS/BTC", "item_japanese":
+        "BCY"}, {"id": 175, "title": "BCH/JPY", "seq": 178, "is_token": true, "item_unit_step":
+        0.0001, "aux_unit_step": 5.0, "currency_pair": "bch_jpy", "aux_unit_point":
+        0, "item_unit_min": 0.0001, "aux_japanese": "\u65e5\u672c\u5186", "description":
+        "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u30ad\u30e3\u30c3\u30b7\u30e5\u30fb\u65e5\u672c\u5186\u306e\u53d6\u5f15\u3092\u884c\u3046\u3053\u3068\u304c\u3067\u304d\u307e\u3059",
+        "aux_unit_min": 5.0, "event_number": 0, "name": "BCH/JPY", "item_japanese":
+        "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u30ad\u30e3\u30c3\u30b7\u30e5"}, {"id":
+        8, "title": "XCP/JPY \u53d6\u5f15\u6240 - Zaif Exchange", "seq": 8, "is_token":
+        true, "item_unit_step": 0.1, "aux_unit_step": 0.0001, "currency_pair": "xcp_jpy",
+        "aux_unit_point": 4, "item_unit_min": 0.1, "aux_japanese": "\u65e5\u672c\u5186",
+        "description": "XCP/JPY\u53d6\u5f15\u6240\u3002XCP\u3068\u65e5\u672c\u5186\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 0.0001, "event_number": 0, "name": "XCP/JPY", "item_japanese":
+        "XCP"}, {"id": 178, "title": "ETH/BTC", "seq": 181, "is_token": true, "item_unit_step":
+        0.0001, "aux_unit_step": 0.0001, "currency_pair": "eth_btc", "aux_unit_point":
+        4, "item_unit_min": 0.0001, "aux_japanese": "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3",
+        "description": "ETH/BTC \u53d6\u5f15\u6240\u3002\u30a4\u30fc\u30b5\u30ea\u30a2\u30e0\u3068\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 0.0001, "event_number": 0, "name": "ETH/BTC", "item_japanese":
+        "\u30a4\u30fc\u30b5\u30ea\u30a2\u30e0"}, {"id": 2, "title": "MONA/JPY", "seq":
+        3, "is_token": false, "item_unit_step": 1.0, "aux_unit_step": 0.1, "currency_pair":
+        "mona_jpy", "aux_unit_point": 1, "item_unit_min": 1.0, "aux_japanese": "\u65e5\u672c\u5186",
+        "description": "\u30e2\u30ca\u30b3\u30a4\u30f3\u30fb\u65e5\u672c\u5186\u306e\u53d6\u5f15\u3092\u884c\u3046\u3053\u3068\u304c\u3067\u304d\u307e\u3059",
+        "aux_unit_min": 0.1, "event_number": 0, "name": "MONA/JPY", "item_japanese":
+        "\u30e2\u30ca\u30b3\u30a4\u30f3"}, {"id": 10, "title": "BCY/JPY \u53d6\u5f15\u6240
+        - Zaif Exchange", "seq": 10, "is_token": true, "item_unit_step": 0.1, "aux_unit_step":
+        0.0001, "currency_pair": "bitcrystals_jpy", "aux_unit_point": 4, "item_unit_min":
+        0.1, "aux_japanese": "\u65e5\u672c\u5186", "description": "BCY/JPY\u53d6\u5f15\u6240\u3002BITCRYSTALS\u3068\u65e5\u672c\u5186\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 0.0001, "event_number": 0, "name": "BITCRYSTALS/JPY", "item_japanese":
+        "BCY"}, {"id": 23, "title": "FSCC/BTC \u53d6\u5f15\u6240 - Zaif Exchange",
+        "seq": 23, "is_token": true, "item_unit_step": 1.0, "aux_unit_step": 1e-08,
+        "currency_pair": "fscc_btc", "aux_unit_point": 8, "item_unit_min": 1.0, "aux_japanese":
+        "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3", "description": "FSCC/BTC\u53d6\u5f15\u6240\u3002FSCC\u3068\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 1e-08, "event_number": 0, "name": "FSCC/BTC", "item_japanese":
+        "FSCC"}, {"id": 177, "title": "ETH/JPY \u53d6\u5f15\u6240 - ZAIF Exchange",
+        "seq": 180, "is_token": true, "item_unit_step": 0.0001, "aux_unit_step": 5.0,
+        "currency_pair": "eth_jpy", "aux_unit_point": 0, "item_unit_min": 0.0001,
+        "aux_japanese": "\u65e5\u672c\u5186", "description": "ETH/JPY \u53d6\u5f15\u6240\u3002\u30a4\u30fc\u30b5\u30ea\u30a2\u30e0\u3068\u65e5\u672c\u5186\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 5.0, "event_number": 0, "name": "ETH/JPY", "item_japanese":
+        "\u30a4\u30fc\u30b5\u30ea\u30a2\u30e0"}, {"id": 7, "title": "ZAIF/BTC \u53d6\u5f15\u6240
+        - Zaif Exchange", "seq": 7, "is_token": true, "item_unit_step": 1.0, "aux_unit_step":
+        1e-08, "currency_pair": "zaif_btc", "aux_unit_point": 8, "item_unit_min":
+        1.0, "aux_japanese": "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3", "description":
+        "ZAIF/BTC\u53d6\u5f15\u6240\u3002ZAIF\u3068\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 1e-08, "event_number": 0, "name": "ZAIF/BTC", "item_japanese":
+        "\u30b6\u30a4\u30d5"}, {"id": 1, "title": "BTC/JPY", "seq": 0, "is_token":
+        false, "item_unit_step": 0.0001, "aux_unit_step": 5.0, "currency_pair": "btc_jpy",
+        "aux_unit_point": 0, "item_unit_min": 0.0001, "aux_japanese": "\u65e5\u672c\u5186",
+        "description": "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u30fb\u65e5\u672c\u5186\u306e\u53d6\u5f15\u3092\u884c\u3046\u3053\u3068\u304c\u3067\u304d\u307e\u3059",
+        "aux_unit_min": 5.0, "event_number": 0, "name": "BTC/JPY", "item_japanese":
+        "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3"}, {"id": 171, "title": "CICC/BTC \u53d6\u5f15\u6240
+        - ZAIF Exchange", "seq": 174, "is_token": true, "item_unit_step": 1.0, "aux_unit_step":
+        1e-08, "currency_pair": "cicc_btc", "aux_unit_point": 8, "item_unit_min":
+        1.0, "aux_japanese": "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3", "description":
+        "CICC/BTC \u53d6\u5f15\u6240\u3002CICC\u3068\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 1e-08, "event_number": 0, "name": "CICC/BTC", "item_japanese":
+        "CICC"}, {"id": 4, "title": "XEM/JPY", "seq": 1, "is_token": false, "item_unit_step":
+        0.1, "aux_unit_step": 0.0001, "currency_pair": "xem_jpy", "aux_unit_point":
+        4, "item_unit_min": 0.1, "aux_japanese": "\u65e5\u672c\u5186", "description":
+        "XEM\u30fb\u65e5\u672c\u5186\u306e\u53d6\u5f15\u3092\u884c\u3046\u3053\u3068\u304c\u3067\u304d\u307e\u3059",
+        "aux_unit_min": 0.0001, "event_number": 0, "name": "XEM/JPY", "item_japanese":
+        "XEM"}, {"id": 130, "title": "PEPECASH/BTC \u53d6\u5f15\u6240 - ZAIF Exchange",
+        "seq": 133, "is_token": true, "item_unit_step": 1.0, "aux_unit_step": 1e-08,
+        "currency_pair": "pepecash_btc", "aux_unit_point": 8, "item_unit_min": 1.0,
+        "aux_japanese": "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3", "description": "PEPECASH/BTC
+        \u53d6\u5f15\u6240\u3002PEPECASH\u3068\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 1e-08, "event_number": 0, "name": "PEPECASH/BTC", "item_japanese":
+        "PEPECASH"}, {"id": 12, "title": "SJCX/JPY \u53d6\u5f15\u6240 - Zaif Exchange",
+        "seq": 12, "is_token": true, "item_unit_step": 0.1, "aux_unit_step": 0.0001,
+        "currency_pair": "sjcx_jpy", "aux_unit_point": 4, "item_unit_min": 0.1, "aux_japanese":
+        "\u65e5\u672c\u5186", "description": "SJCX/JPY\u53d6\u5f15\u6240\u3002SJCX\u3068\u65e5\u672c\u5186\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 0.0001, "event_number": 0, "name": "SJCX/JPY", "item_japanese":
+        "SJCX"}, {"id": 174, "title": "JPYZ/JPY \u53d6\u5f15\u6240 - Zaif Exchange",
+        "seq": 177, "is_token": true, "item_unit_step": 0.0001, "aux_unit_step": 0.0001,
+        "currency_pair": "jpyz_jpy", "aux_unit_point": 4, "item_unit_min": 0.0001,
+        "aux_japanese": "\u65e5\u672c\u5186", "description": "JPYZ/JPY \u53d6\u5f15\u6240\u3002JPYZ\u3068\u65e5\u672c\u5186\u306e\u53d6\u5f15\u304c\u884c\u3048\u307e\u3059\u3002",
+        "aux_unit_min": 0.0001, "event_number": 0, "name": "JPYZ/JPY", "item_japanese":
+        "ZEN"}]'
+    http_version: 
+  recorded_at: Wed, 25 Oct 2017 13:16:45 GMT
+recorded_with: VCR 3.0.3

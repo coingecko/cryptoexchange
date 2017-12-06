@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Hitbtc integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'hitbtc') }
 
   it 'fetch pairs' do
     pairs = client.pairs('hitbtc')
@@ -14,7 +15,6 @@ RSpec.describe 'Hitbtc integration specs' do
   end
 
   it 'fetch ticker' do
-    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'hitbtc')
     ticker = client.ticker(btc_usd_pair)
 
     expect(ticker.base).to eq 'BTC'

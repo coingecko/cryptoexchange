@@ -2,6 +2,8 @@ require 'spec_helper'
 
 RSpec.describe 'Okcoin integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okcoin') }
+  let(:btc_cny_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'CNY', market: 'okcoin') }
 
   it 'fetch pairs' do
     pairs = client.pairs('okcoin')
@@ -14,7 +16,6 @@ RSpec.describe 'Okcoin integration specs' do
   end
 
   it 'fetch ticker USD' do
-    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okcoin')
     ticker = client.ticker(btc_usd_pair)
 
     expect(ticker.base).to eq 'BTC'
@@ -31,8 +32,7 @@ RSpec.describe 'Okcoin integration specs' do
   end
 
   it 'fetch ticker CNY' do
-    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'CNY', market: 'okcoin')
-    ticker = client.ticker(btc_usd_pair)
+    ticker = client.ticker(btc_cny_pair)
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'CNY'

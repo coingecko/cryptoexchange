@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Qryptos integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:zec_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'zec', target: 'btc', market: 'qryptos') }
 
   it 'fetch pairs' do
     pairs = client.pairs('qryptos')
@@ -14,8 +15,7 @@ RSpec.describe 'Qryptos integration specs' do
   end
 
   it 'fetch ticker' do
-    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'zec', target: 'btc', market: 'qryptos')
-    ticker = client.ticker(btc_usd_pair)
+    ticker = client.ticker(zec_btc_pair)
 
     expect(ticker.base).to eq 'ZEC'
     expect(ticker.target).to eq 'BTC'

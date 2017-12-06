@@ -4,6 +4,8 @@ RSpec.describe 'Therocktrading integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:pairs) { client.pairs('therocktrading') }
   let(:pair) { pairs.first }
+  let(:btc_eur_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'EUR', market: 'therocktrading') }
+  let(:usd_xrp_pair) { Cryptoexchange::Models::MarketPair.new(base: 'USD', target: 'XRP', market: 'therocktrading') }
 
   it 'fetch pairs' do
     expect(pairs).not_to be_empty
@@ -18,8 +20,7 @@ RSpec.describe 'Therocktrading integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'EUR', market: 'therocktrading')
-    ticker = client.ticker(pair)
+    ticker = client.ticker(btc_eur_pair)
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'EUR'
@@ -35,8 +36,7 @@ RSpec.describe 'Therocktrading integration specs' do
   end
 
   it 'fetch ticker (XRP is not treated as Base)' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'USD', target: 'XRP', market: 'therocktrading')
-    ticker = client.ticker(pair)
+    ticker = client.ticker(usd_xrp_pair)
 
     expect(ticker.base).to eq 'USD'
     expect(ticker.target).to eq 'XRP'

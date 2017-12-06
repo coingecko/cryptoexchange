@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 RSpec.describe 'Itbit integration specs' do
-  client = Cryptoexchange::Client.new
+  let(:client) { Cryptoexchange::Client.new }
+  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'USD', market: 'itbit') }
 
   it 'fetch pairs' do
     pairs = client.pairs('itbit')
@@ -14,8 +15,7 @@ RSpec.describe 'Itbit integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'USD', market: 'itbit')
-    ticker = client.ticker(pair)
+    ticker = client.ticker(xbt_usd_pair)
 
     expect(ticker.base).to eq 'XBT'
     expect(ticker.target).to eq 'USD'

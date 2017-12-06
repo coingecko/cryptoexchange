@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 RSpec.describe 'Litebiteu integration specs' do
-  client = Cryptoexchange::Client.new
+  let(:client) { Cryptoexchange::Client.new }
+  let(:btc_eur_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'EUR', market: 'litebiteu') }
 
   it 'fetch pairs' do
     pairs = client.pairs('litebiteu')
@@ -14,7 +15,6 @@ RSpec.describe 'Litebiteu integration specs' do
   end
 
   it 'fetch ticker' do
-    btc_eur_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'EUR', market: 'litebiteu')
     ticker = client.ticker(btc_eur_pair)
 
     expect(ticker.base).to eq 'BTC'

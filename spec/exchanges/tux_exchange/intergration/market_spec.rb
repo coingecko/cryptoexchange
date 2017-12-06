@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'TuxExchange integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:emc_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'EMC', target: 'BTC', market: 'tux_exchange') }
 
   it 'fetch pairs' do
     pairs = client.pairs('tux_exchange')
@@ -14,8 +15,7 @@ RSpec.describe 'TuxExchange integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'EMC', target: 'BTC', market: 'tux_exchange')
-    ticker = client.ticker(pair)
+    ticker = client.ticker(emc_btc_pair)
 
     expect(ticker.base).to eq 'EMC'
     expect(ticker.target).to eq 'BTC'

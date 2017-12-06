@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Mercatox integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:eth_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'mercatox') }
 
   it 'fetch pairs' do
     pairs = client.pairs('mercatox')
@@ -24,8 +25,7 @@ RSpec.describe 'Mercatox integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'mercatox')
-    ticker = client.ticker(pair)
+    ticker = client.ticker(eth_btc_pair)
 
     expect(ticker.base).to eq 'ETH'
     expect(ticker.target).to eq 'BTC'

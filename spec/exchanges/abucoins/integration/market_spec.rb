@@ -2,6 +2,8 @@ require 'spec_helper'
 
 RSpec.describe 'Abucoins integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usd', market: 'abucoins') }
+  let(:eth_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'abucoins') }
 
   it 'fetch pairs' do
     pairs = client.pairs('abucoins')
@@ -14,7 +16,6 @@ RSpec.describe 'Abucoins integration specs' do
   end
 
   it 'fetch ticker' do
-    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usd', market: 'abucoins')
     ticker = client.ticker(btc_usd_pair)
 
     expect(ticker.base).to eq 'BTC'
@@ -30,7 +31,6 @@ RSpec.describe 'Abucoins integration specs' do
   end
 
   it 'fetch order book' do
-    eth_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'abucoins')
     order_book = client.order_book(eth_btc_pair)
 
     expect(order_book.base).to eq 'ETH'
@@ -48,7 +48,6 @@ RSpec.describe 'Abucoins integration specs' do
   end
 
   it 'fetch trade' do
-    eth_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'abucoins')
     trades = client.trades(eth_btc_pair)
     trade = trades.sample
 

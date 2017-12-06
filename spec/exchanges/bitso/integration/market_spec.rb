@@ -1,7 +1,9 @@
 require 'spec_helper'
 
 RSpec.describe 'Bitso integration specs' do
-  client = Cryptoexchange::Client.new
+  let(:client) { Cryptoexchange::Client.new }
+  let(:btc_mxn_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'mxn', market: 'bitso') }
+
 
   it 'fetch pairs' do
     pairs = client.pairs('bitso')
@@ -14,7 +16,6 @@ RSpec.describe 'Bitso integration specs' do
   end
 
   it 'fetch ticker' do
-    btc_mxn_pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'mxn', market: 'bitso')
     ticker = client.ticker(btc_mxn_pair)
 
     expect(ticker.base).to eq 'BTC'

@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Huobi integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:eth_cny_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'CNY', market: 'huobi') }
 
   it 'fetch pairs' do
     pairs = client.pairs('huobi')
@@ -14,7 +15,6 @@ RSpec.describe 'Huobi integration specs' do
   end
 
   it 'fetch ticker' do
-    eth_cny_pair = Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'CNY', market: 'huobi')
     ticker = client.ticker(eth_cny_pair)
 
     expect(ticker.base).to eq 'ETH'

@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Chbtc integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:btc_cny_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'CNY', market: 'chbtc') }
 
   it 'fetch pairs' do
     pairs = client.pairs('chbtc')
@@ -14,8 +15,7 @@ RSpec.describe 'Chbtc integration specs' do
   end
 
   it 'fetch ticker' do
-    ltc_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'CNY', market: 'chbtc')
-    ticker = client.ticker(ltc_btc_pair)
+    ticker = client.ticker(btc_cny_pair)
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'CNY'

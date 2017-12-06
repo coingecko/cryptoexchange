@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 RSpec.describe 'Bleutrade integration specs' do
-  client = Cryptoexchange::Client.new
+  let(:client) { Cryptoexchange::Client.new }
+  let(:btc_adc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ADC', target: 'BTC', market: 'bleutrade') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bleutrade')
@@ -24,7 +25,6 @@ RSpec.describe 'Bleutrade integration specs' do
   end
 
   it 'fetch ticker' do
-    btc_adc_pair = Cryptoexchange::Models::MarketPair.new(base: 'ADC', target: 'BTC', market: 'bleutrade')
     ticker = client.ticker(btc_adc_pair)
 
     expect(ticker.base).to eq 'ADC'

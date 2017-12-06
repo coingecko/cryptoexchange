@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 RSpec.describe 'Gemini integration specs' do
-  client = Cryptoexchange::Client.new
+  let(:client) { Cryptoexchange::Client.new }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'gemini') }
 
   it 'fetch pairs' do
     pairs = client.pairs('gemini')
@@ -14,7 +15,6 @@ RSpec.describe 'Gemini integration specs' do
   end
 
   it 'fetch ticker' do
-    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'gemini')
     ticker = client.ticker(btc_usd_pair)
 
     expect(ticker.base).to eq 'BTC'
@@ -30,7 +30,6 @@ RSpec.describe 'Gemini integration specs' do
   end
 
   it 'fetch order book' do
-    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'gemini')
     order_book = client.order_book(btc_usd_pair)
 
     expect(order_book.base).to eq 'BTC'
@@ -46,7 +45,6 @@ RSpec.describe 'Gemini integration specs' do
   end
 
   it 'fetch trade' do
-    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'gemini')
     trades = client.trades(btc_usd_pair)
     trade = trades.sample
 

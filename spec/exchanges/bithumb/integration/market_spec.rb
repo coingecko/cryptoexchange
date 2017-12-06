@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Bithumb integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:btc_krw_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'krw', market: 'bithumb') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bithumb')
@@ -14,7 +15,6 @@ RSpec.describe 'Bithumb integration specs' do
   end
 
   it 'fetch ticker' do
-    btc_krw_pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'krw', market: 'bithumb')
     ticker = client.ticker(btc_krw_pair)
 
     expect(ticker.base).to eq 'BTC'

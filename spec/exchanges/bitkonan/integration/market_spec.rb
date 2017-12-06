@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Bitkonan integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usd', market: 'bitkonan') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bitkonan')
@@ -14,8 +15,7 @@ RSpec.describe 'Bitkonan integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usd', market: 'bitkonan')
-    ticker = client.ticker(pair)
+    ticker = client.ticker(btc_usd_pair)
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USD'

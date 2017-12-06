@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Cex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'cex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('cex')
@@ -14,8 +15,7 @@ RSpec.describe 'Cex integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'cex')
-    ticker = client.ticker(pair)
+    ticker = client.ticker(btc_usd_pair)
 
     expect(ticker.payload['error']).to_not eq 'Invalid Symbols Pair'
     expect(ticker.base).to eq 'BTC'
