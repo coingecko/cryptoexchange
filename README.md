@@ -74,6 +74,7 @@ Or install it yourself as:
 | Liqui             | Y       |            |         |         | Y           |
 | LiteBit.eu        | Y       |            |         |         | Y           |
 | Livecoin          | Y       |            |         |         | Y           |
+| LocalBitcoins     | Y       | Y          | Y       |         | Y           |
 | Luno              | Y       |            |         |         | Y           |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|
 | Mercatox          | Y       | N          | N       | N       | Y           |
