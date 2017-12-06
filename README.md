@@ -38,7 +38,7 @@ Or install it yourself as:
 | Bithumb           | Y       |            |         |         | Y           |
 | Bitkonan          | Y       |            |         |         | User-Defined|
 | Bitso             | Y       |            |         |         | Y           |
-| Bitstamp          | Y       |            |         |         | User-Defined|
+| Bitstamp          | Y       | Y          | Y       |         | User-Defined|
 | Bittrex           | Y       |            |         |         | Y           |
 | Bleutrade         | Y       |            |         |         | Y           |
 | BTC-e             |         |            |         |         |             |
