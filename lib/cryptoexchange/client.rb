@@ -77,5 +77,12 @@ module Cryptoexchange
       trades = market_class.new
       trades.fetch(market_pair)
     end
+
+    def account_list(exchange)
+      market_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Account"
+      market_class = Object.const_get(market_classname)
+      account = market_class.new
+      account.fetch("returnDepositAddresses")
+    end
   end
 end
