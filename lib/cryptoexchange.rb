@@ -8,6 +8,7 @@ require "cryptoexchange/models/ticker"
 require "cryptoexchange/models/market_pair"
 require "cryptoexchange/services/market"
 require "cryptoexchange/services/pairs"
+require "cryptoexchange/services/account"
 
 path_files = Dir[File.join(File.dirname(__dir__), 'lib', 'cryptoexchange', '**', '*.rb')]
 
@@ -17,3 +18,4 @@ end
 
 require "http"
 require "lru_redux"
+require 'yaml'

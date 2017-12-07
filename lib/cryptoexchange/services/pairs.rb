@@ -1,5 +1,3 @@
-require 'yaml'
-
 module Cryptoexchange
   module Services
     class Pairs
