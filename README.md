@@ -154,6 +154,15 @@ Name the file <exchange_name>.yml and place it under the config/cryptoexchange d
       :target: KRW
 ```
 
+### Query Account Currency Address
+```
+  account_list = client.account_list('bitflyer')
+  account = account_list.first
+  account.currency
+  account.address
+  account.market
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
