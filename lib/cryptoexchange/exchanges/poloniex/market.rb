@@ -3,6 +3,7 @@ module Cryptoexchange::Exchanges
     class Market
       NAME = 'poloniex'
       API_URL = 'https://poloniex.com/public'
+      API_TRADE_URL = 'https://poloniex.com/tradingApi'
     end
   end
 end
