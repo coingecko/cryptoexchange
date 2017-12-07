@@ -39,4 +39,13 @@ RSpec.describe 'Poloniex integration specs' do
     expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
     expect(ticker.payload).to_not be nil
   end
+
+  it 'fetch account info' do
+    account_list = client.account_list('poloniex')
+
+    info = account_list.sample
+    expect(info.currency).to_not be nil
+    expect(info.address).to_not be nil
+    expect(info.market).to eq 'poloniex'
+  end
 end

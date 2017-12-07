@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://poloniex.com/tradingApi
+    body:
+      encoding: US-ASCII
+      string: command=returnDepositAddresses&nonce=15126123350700500
+    headers:
+      Key:
+      - api-settings-key
+      Sign:
+      - e350c7c022e1283bd63bb3a595c8ee91c566e60a9a142e4f4a5011ace5b74dfb20b092070f761af5a4892c8d31fe633ae392958b3ea1f9a78850b6b837957f0a
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Content-Length:
+      - '54'
+      Host:
+      - poloniex.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 07 Dec 2017 02:05:35 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d29d245af1d1189e8f00c1260ea7ae8561512612335; expires=Fri, 07-Dec-18
+        02:05:35 GMT; path=/; domain=.poloniex.com; HttpOnly
+      Cache-Control:
+      - private
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3c93ebb6ceb184f6-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"BTC":"17LXLaGijTakrhZwJ4T1a5KUka7Trai5Nu","LTC":"LaxA9U54ZNvBSs4snRG644NH8novMZMCaq"}'
+    http_version:
+  recorded_at: Thu, 07 Dec 2017 02:05:35 GMT
+recorded_with: VCR 3.0.3
