@@ -66,6 +66,7 @@ Or install it yourself as:
 | HitBTC            | Y       |            |         |         | Y           |
 | Huobi             | Y       |            |         |         | Y           |
 | Itbit             | Y       |            |         |         | User-Defined|
+| KKex              | Y       | Y          | Y       |         | Y           |
 | Jubi              | Y       |            |         |         | Y           |
 | Korbit            | Y       |            |         |         | User-Defined|
 | Kraken            | Y       |            |         |         | Y           |
