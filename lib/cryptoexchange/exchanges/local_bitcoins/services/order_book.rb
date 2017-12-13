@@ -33,6 +33,7 @@ module Cryptoexchange::Exchanges
         def adapt_orders(orders)
           orders.collect do |order_entry|
             price, amount = order_entry
+            # this amount is a ceiling amount of how much user can buy
             Cryptoexchange::Models::Order.new(price: price,
                                               amount: amount,
                                               timestamp: nil)

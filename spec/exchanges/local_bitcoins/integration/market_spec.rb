@@ -53,8 +53,8 @@ RSpec.describe 'LocalBitcoins integration specs' do
     expect(trade.trade_id).to_not be_nil
     expect(trade.base).to eq 'BTC'
     expect(trade.target).to eq 'TWD'
-    # there is no this data in respond, I've write a letter to ask them
-    # expect(['buy', 'sell']).to include trade.type
+    # there is no this data in respond, I set it to nil
+    expect(trade.type).to be nil
     expect(trade.price).to_not be_nil
     expect(trade.amount).to_not be_nil
     expect(trade.timestamp).to be_a Numeric

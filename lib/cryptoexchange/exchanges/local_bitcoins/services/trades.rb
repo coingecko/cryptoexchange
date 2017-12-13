@@ -17,8 +17,8 @@ module Cryptoexchange::Exchanges
             tr.trade_id  = trade['tid']
             tr.base      = market_pair.base
             tr.target    = market_pair.target
-            # there is no type in respond, I've send mail to ask them
-            # tr.type    = xxx
+            # there is no type in respond, I will set it nil
+            tr.type      = nil
             tr.price     = trade['price']
             tr.amount    = trade['amount']
             tr.timestamp = trade['date']
