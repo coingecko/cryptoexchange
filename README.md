@@ -70,6 +70,7 @@ Or install it yourself as:
 | Korbit            | Y       |            |         |         | User-Defined|
 | Kraken            | Y       |            |         |         | Y           |
 | Kucoin            | Y       |            |         |         | Y           |
+| Kuna              | Y       | Y          | Y       |         | User-Defined|
 | LakeBTC           | Y       |            |         |         | Y           |
 | Liqui             | Y       |            |         |         | Y           |
 | LiteBit.eu        | Y       |            |         |         | Y           |
