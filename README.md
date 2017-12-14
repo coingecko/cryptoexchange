@@ -59,6 +59,7 @@ Or install it yourself as:
 | Cryptopia         | Y       |            |         |         | Y           |
 | EtherDelta        | Y       |            |         |         | Y           |
 | Exmo              | Y       | Y          | Y       |         | Y           |
+| Fisco             | Y       | Y          | Y       |         | Y
 | Gate              | Y       | Y          | Y       |         | Y           |
 | Gatecoin          | Y       |            |         |         | Y           |
 | GDAX              | Y       |            |         |         | Y           |
