@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://getbtc.org/api/stats?currency=USD
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - getbtc.org
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.6 (Ubuntu)
+      Date:
+      - Thu, 14 Dec 2017 07:56:02 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=1p122qdsimolc7ea10pue0o7p1; path=/; secure; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Powered-By:
+      - WLOX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"stats":{"bid":"16256.79","ask":"17448.55","last_price":16811.54,"last_transaction_type":"SELL","last_transaction_currency":"27","daily_change":-308.52,"daily_change_percent":-1.84,"max":"17119.04","min":"16324.87","open":17120.06,"total_btc_traded":"567.78","total_btc":"16739463","market_cap":"281363023503","trade_volume":"2027550685","request_currency":"USD"}}'
+    http_version: 
+  recorded_at: Thu, 14 Dec 2017 07:56:11 GMT
+recorded_with: VCR 3.0.3
