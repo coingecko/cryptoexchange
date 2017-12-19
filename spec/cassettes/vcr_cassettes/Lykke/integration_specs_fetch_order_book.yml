@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://public-api.lykke.com/api/OrderBook/ETHBTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - public-api.lykke.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.13.5
+      Date:
+      - Tue, 19 Dec 2017 08:59:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept
+    body:
+      encoding: UTF-8
+      string: '[{"assetPair":"ETHBTC","isBuy":false,"timestamp":"2017-12-19T08:59:18.386+00:00","prices":[{"volume":-13.970344,"price":0.0459},{"volume":-2.242331,"price":0.04591},{"volume":-57.420726,"price":0.04592},{"volume":-84.187165,"price":0.04593},{"volume":-16.824014,"price":0.04594},{"volume":-10.398038,"price":0.04595},{"volume":-9.556974,"price":0.04596},{"volume":-7.54206,"price":0.04597},{"volume":-9.116159,"price":0.04598},{"volume":-0.048121,"price":0.04599},{"volume":-28.940505,"price":0.046},{"volume":-39.168177,"price":0.04601},{"volume":-70.74074,"price":0.04602},{"volume":-3.566449,"price":0.04603},{"volume":-10.0,"price":0.04719},{"volume":-0.008178,"price":0.049},{"volume":-0.000373,"price":0.0499},{"volume":-10.0,"price":0.0499},{"volume":-1.0,"price":0.05},{"volume":-0.5,"price":0.05},{"volume":-0.130946,"price":0.05},{"volume":-1.422489,"price":0.05},{"volume":-0.001495,"price":0.051},{"volume":-1.0,"price":0.052},{"volume":-3.0,"price":0.05248},{"volume":-8.534371,"price":0.054},{"volume":-1.0,"price":0.055},{"volume":-0.2,"price":0.055},{"volume":-0.7,"price":0.05888},{"volume":-1.0,"price":0.059},{"volume":-17.0,"price":0.059},{"volume":-1.0,"price":0.06},{"volume":-0.5,"price":0.063},{"volume":-0.5,"price":0.066},{"volume":-0.704023,"price":0.07103},{"volume":-20.0,"price":0.075}]},{"assetPair":"ETHBTC","isBuy":true,"timestamp":"2017-12-19T08:59:18.386+00:00","prices":[{"volume":54.575737,"price":0.04548},{"volume":1.610786,"price":0.045469999999999997},{"volume":0.470619,"price":0.04546},{"volume":1.867053,"price":0.04545},{"volume":5.776156,"price":0.04544},{"volume":30.130824,"price":0.04543},{"volume":0.629041,"price":0.04542},{"volume":2.375989,"price":0.04541},{"volume":1.762085,"price":0.0454},{"volume":0.930238,"price":0.04539},{"volume":1.693531,"price":0.04538},{"volume":0.011009,"price":0.04537},{"volume":4.497416,"price":0.04536},{"volume":7.559558,"price":0.04535},{"volume":6.773299,"price":0.04534},{"volume":13.890463,"price":0.04533},{"volume":0.374063,"price":0.04532},{"volume":1.134515,"price":0.04531},{"volume":1.781603,"price":0.0453},{"volume":0.141439,"price":0.04529},{"volume":0.114283,"price":0.04528},{"volume":2.490734,"price":0.04527},{"volume":8.8409,"price":0.04526},{"volume":9.054287,"price":0.04525},{"volume":0.333333,"price":0.04524},{"volume":0.503757,"price":0.04523},{"volume":31.552492,"price":0.04522},{"volume":0.257808,"price":0.04521},{"volume":2.407006,"price":0.0452},{"volume":0.048755,"price":0.04518},{"volume":0.537188,"price":0.04517},{"volume":0.989087,"price":0.04516},{"volume":8.799953,"price":0.04515},{"volume":0.013258,"price":0.04513},{"volume":0.004417,"price":0.04512},{"volume":0.004658,"price":0.04511},{"volume":0.012192,"price":0.0451},{"volume":0.110827,"price":0.04509},{"volume":80.829389,"price":0.04508},{"volume":0.015608,"price":0.04507},{"volume":35.350604,"price":0.04506},{"volume":3.898222,"price":0.04504},{"volume":7.034929,"price":0.04503},{"volume":9.105108,"price":0.04502},{"volume":17.421333,"price":0.04501},{"volume":17.8627,"price":0.045},{"volume":24.416854,"price":0.04499},{"volume":0.00443,"price":0.04498},{"volume":0.033328,"price":0.04497},{"volume":0.998333,"price":0.04496},{"volume":0.959971,"price":0.04495},{"volume":0.119154,"price":0.04494},{"volume":3.329166,"price":0.04493},{"volume":135.492559,"price":0.04492},{"volume":8.430623,"price":0.04491},{"volume":0.103333,"price":0.0449},{"volume":0.181638,"price":0.04489},{"volume":3.045739,"price":0.04488},{"volume":0.333333,"price":0.04484},{"volume":0.017416,"price":0.04483},{"volume":4.348749,"price":0.04482},{"volume":3.878858,"price":0.04481},{"volume":3.883166,"price":0.04475},{"volume":40.031141,"price":0.04471},{"volume":51.104414,"price":0.0447},{"volume":3.213289,"price":0.04469},{"volume":0.600515,"price":0.04468},{"volume":87.14853,"price":0.04467},{"volume":4.271305,"price":0.04466},{"volume":1.894274,"price":0.04465},{"volume":0.286666,"price":0.04464},{"volume":0.013431,"price":0.04463},{"volume":0.919621,"price":0.04462},{"volume":0.00896,"price":0.0446},{"volume":3.896216,"price":0.04459},{"volume":1.666666,"price":0.04458},{"volume":3.987969,"price":0.04457},{"volume":0.911577,"price":0.04456},{"volume":4.052487,"price":0.04455},{"volume":0.701,"price":0.04451},{"volume":45.482123,"price":0.04448},{"volume":0.0362,"price":0.04447},{"volume":17.013415,"price":0.04446},{"volume":0.022096,"price":0.04441},{"volume":3.913763,"price":0.0444},{"volume":0.235251,"price":0.04438},{"volume":0.1,"price":0.04437},{"volume":8.251404,"price":0.04436},{"volume":0.644287,"price":0.04434},{"volume":1.586657,"price":0.04433},{"volume":0.337499,"price":0.04431},{"volume":0.233333,"price":0.04427},{"volume":3.922588,"price":0.04418},{"volume":7.908422,"price":0.04417},{"volume":2.258928,"price":0.04416},{"volume":2.204001,"price":0.04411},{"volume":0.035577,"price":0.04409},{"volume":11.868912,"price":0.04406},{"volume":35.814719,"price":0.04396},{"volume":0.012,"price":0.041},{"volume":1.141576,"price":0.039},{"volume":1.660076,"price":0.0366},{"volume":3.0,"price":0.03522},{"volume":2.7,"price":0.035},{"volume":2.0,"price":0.03476},{"volume":0.2,"price":0.03367},{"volume":10.0,"price":0.03252},{"volume":5.0,"price":0.03002},{"volume":1.0,"price":0.03},{"volume":5.0,"price":0.02855},{"volume":0.061381,"price":0.02851},{"volume":0.1,"price":0.0265},{"volume":25.0,"price":0.0251},{"volume":10.0,"price":0.02402},{"volume":5.0,"price":0.02151},{"volume":5.0,"price":0.02141},{"volume":0.109496,"price":0.02112},{"volume":32.936585,"price":0.0205},{"volume":1.0,"price":0.01802},{"volume":1.111111,"price":0.018},{"volume":5.0,"price":0.01503},{"volume":5.0,"price":0.01502},{"volume":22.189494,"price":0.015},{"volume":6.4888,"price":0.0147},{"volume":10.0,"price":0.01102},{"volume":0.021141,"price":0.01051},{"volume":10.0,"price":0.01012}]}]'
+    http_version: 
+  recorded_at: Tue, 19 Dec 2017 08:59:18 GMT
+recorded_with: VCR 3.0.3
