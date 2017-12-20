@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.exx.com/data/v1/ticker?currency=eth_hsr
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.exx.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Tengine/2.2.1
+      Date:
+      - Wed, 20 Dec 2017 09:51:51 GMT
+      Content-Type:
+      - text/javascript;charset=utf-8
+      Content-Length:
+      - '193'
+      Connection:
+      - close
+      Cndserver:
+      - cache_server_1
+    body:
+      encoding: UTF-8
+      string: '{"ticker":{"vol":"79.433","last":"24.601000000","sell":"24.920","buy":"23.035","weekRiseRate":-39.57,"riseRate":0.81,"high":"27.977","low":"20.714","monthRiseRate":23.7},"date":"1513763510888"}'
+    http_version: 
+  recorded_at: Wed, 20 Dec 2017 09:51:51 GMT
+recorded_with: VCR 3.0.3

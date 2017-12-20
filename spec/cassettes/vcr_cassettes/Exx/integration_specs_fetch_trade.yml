@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.exx.com/data/v1/trades?currency=eth_hsr
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.exx.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Tengine/2.2.1
+      Date:
+      - Wed, 20 Dec 2017 09:51:51 GMT
+      Content-Type:
+      - text/javascript;charset=utf-8
+      Content-Length:
+      - '4797'
+      Connection:
+      - close
+      Cndserver:
+      - cache_server_1
+    body:
+      encoding: UTF-8
+      string: '[{"amount":0.08,"price":21.8,"tid":5127057,"type":"buy","date":1513729867,"trade_type":"bid"},{"amount":0.83,"price":21.8,"tid":5127070,"type":"buy","date":1513729869,"trade_type":"bid"},{"amount":0.04,"price":24.0,"tid":5129638,"type":"buy","date":1513730365,"trade_type":"bid"},{"amount":0.05,"price":24.0,"tid":5129726,"type":"buy","date":1513730378,"trade_type":"bid"},{"amount":0.11,"price":24.0,"tid":5129740,"type":"buy","date":1513730380,"trade_type":"bid"},{"amount":0.09,"price":23.098,"tid":5130270,"type":"sell","date":1513730462,"trade_type":"ask"},{"amount":0.08,"price":22.998,"tid":5130289,"type":"buy","date":1513730465,"trade_type":"bid"},{"amount":0.126,"price":24.169,"tid":5146157,"type":"buy","date":1513733308,"trade_type":"bid"},{"amount":0.08,"price":24.17,"tid":5150099,"type":"sell","date":1513733864,"trade_type":"ask"},{"amount":0.04,"price":24.169,"tid":5150100,"type":"sell","date":1513733864,"trade_type":"ask"},{"amount":0.08,"price":24.17,"tid":5156242,"type":"sell","date":1513735008,"trade_type":"ask"},{"amount":2.254,"price":24.169,"tid":5156252,"type":"sell","date":1513735011,"trade_type":"ask"},{"amount":1.671,"price":24.169,"tid":5156262,"type":"sell","date":1513735013,"trade_type":"ask"},{"amount":0.08,"price":24.17,"tid":5156357,"type":"sell","date":1513735032,"trade_type":"ask"},{"amount":2.035,"price":24.169,"tid":5156380,"type":"sell","date":1513735035,"trade_type":"ask"},{"amount":0.09,"price":23.27,"tid":5166140,"type":"sell","date":1513738411,"trade_type":"ask"},{"amount":1.15,"price":23.191,"tid":5166143,"type":"sell","date":1513738414,"trade_type":"ask"},{"amount":0.007,"price":23.191,"tid":5166144,"type":"sell","date":1513738415,"trade_type":"ask"},{"amount":0.9,"price":23.191,"tid":5166146,"type":"sell","date":1513738417,"trade_type":"ask"},{"amount":0.196,"price":23.191,"tid":5166175,"type":"sell","date":1513738421,"trade_type":"ask"},{"amount":0.015,"price":23.192,"tid":5166215,"type":"sell","date":1513738426,"trade_type":"ask"},{"amount":0.006,"price":23.192,"tid":5166258,"type":"sell","date":1513738434,"trade_type":"ask"},{"amount":0.059,"price":23.192,"tid":5166297,"type":"sell","date":1513738443,"trade_type":"ask"},{"amount":0.605,"price":23.191,"tid":5166310,"type":"sell","date":1513738445,"trade_type":"ask"},{"amount":0.454,"price":23.191,"tid":5166322,"type":"sell","date":1513738447,"trade_type":"ask"},{"amount":0.986,"price":23.191,"tid":5166331,"type":"sell","date":1513738449,"trade_type":"ask"},{"amount":0.702,"price":23.191,"tid":5166342,"type":"sell","date":1513738452,"trade_type":"ask"},{"amount":0.08,"price":23.192,"tid":5166359,"type":"sell","date":1513738454,"trade_type":"ask"},{"amount":0.08,"price":23.089,"tid":5167733,"type":"sell","date":1513738678,"trade_type":"ask"},{"amount":0.056,"price":23.088,"tid":5167745,"type":"sell","date":1513738680,"trade_type":"ask"},{"amount":0.569,"price":23.088,"tid":5167750,"type":"sell","date":1513738682,"trade_type":"ask"},{"amount":0.385,"price":23.088,"tid":5167765,"type":"sell","date":1513738684,"trade_type":"ask"},{"amount":0.007,"price":24.501,"tid":5183068,"type":"buy","date":1513742932,"trade_type":"bid"},{"amount":0.01,"price":24.532,"tid":5183069,"type":"buy","date":1513742932,"trade_type":"bid"},{"amount":0.087,"price":24.601,"tid":5183079,"type":"sell","date":1513742934,"trade_type":"ask"},{"amount":0.056,"price":24.601,"tid":5183083,"type":"sell","date":1513742936,"trade_type":"ask"},{"amount":0.09,"price":22.772,"tid":5198864,"type":"sell","date":1513749666,"trade_type":"ask"},{"amount":0.867,"price":22.771,"tid":5198918,"type":"sell","date":1513749692,"trade_type":"ask"},{"amount":0.733,"price":22.771,"tid":5198920,"type":"sell","date":1513749694,"trade_type":"ask"},{"amount":1.231,"price":22.771,"tid":5198926,"type":"sell","date":1513749703,"trade_type":"ask"},{"amount":0.075,"price":22.771,"tid":5198938,"type":"sell","date":1513749707,"trade_type":"ask"},{"amount":0.094,"price":22.771,"tid":5198952,"type":"sell","date":1513749713,"trade_type":"ask"},{"amount":0.008,"price":22.77,"tid":5198955,"type":"sell","date":1513749715,"trade_type":"ask"},{"amount":0.032,"price":22.338,"tid":5199109,"type":"sell","date":1513749780,"trade_type":"ask"},{"amount":1.0,"price":24.17,"tid":5205045,"type":"buy","date":1513752048,"trade_type":"bid"},{"amount":2.222,"price":24.17,"tid":5205046,"type":"sell","date":1513752049,"trade_type":"ask"},{"amount":0.09,"price":24.171,"tid":5205053,"type":"sell","date":1513752052,"trade_type":"ask"},{"amount":1.239,"price":24.17,"tid":5205054,"type":"sell","date":1513752052,"trade_type":"ask"},{"amount":0.09,"price":24.17,"tid":5205058,"type":"sell","date":1513752054,"trade_type":"ask"},{"amount":0.03,"price":24.601,"tid":5220476,"type":"buy","date":1513759509,"trade_type":"bid"}]'
+    http_version: 
+  recorded_at: Wed, 20 Dec 2017 09:51:51 GMT
+recorded_with: VCR 3.0.3
