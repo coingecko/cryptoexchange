@@ -84,6 +84,7 @@ Or install it yourself as:
 | Ethfinex          | Y       | Y          | Y       |         | Y           |
 | Exmo              | Y       | Y          | Y       |         | Y           |
 | Extstock          | Y       | Y          | Y       |         | Y           |
+| Exx               | Y       | Y          | Y       |         | Y           |
 | Fisco             | Y       | Y          | Y       |         | Y           |
 | Gate              | Y       | Y          | Y       |         | Y           |
 | Gatecoin          | Y       |            |         |         | Y           |
