@@ -3,8 +3,7 @@ module Cryptoexchange::Exchanges
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Lykke::Market::API_URL}/AssetPairs/rate"
-        TARGETS = ['GBP', 'EUR', 'USD', 'CHF', 'ETH', 'BTC', 'JPY', 'LKK1Y', 'LKK2Y', 'LKK', 'ZAR', 'PLN', 'SEK', 'NOK', 'DILS', 'TRY',
-'HKD', 'HUF', 'MXN', 'DKK', 'ELA', 'CZK', 'SGD', 'CAD']
+        TARGETS_URL = "#{Cryptoexchange::Exchanges::Lykke::Market::API_URL}/AssetPairs/dictionary"
 
         def fetch
           output = super
@@ -14,8 +13,9 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           market_pairs = []
           output.each do |pair|
-            symbol = pair['id']
-            base, target = strip_pairs(symbol)
+            pair_object = get_pair(pair["id"])
+            base = pair_object[0]["baseAssetId"]
+            target = pair_object[0]["quotingAssetId"]
             next unless base && target
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: base,
@@ -26,28 +26,11 @@ module Cryptoexchange::Exchanges
           market_pairs
         end
 
-        def strip_pairs(pair_symbol)
-          #Match last 3 or 4 if it hits target
-          last_4 = pair_symbol[-4..-1]
-          last_3 = pair_symbol[-3..-1]
-          last_5 = pair_symbol[-5..-1]
-
-
-          if TARGETS.include? last_3
-            base = pair_symbol[0..-4]
-            target = last_3
-
-          elsif TARGETS.include? last_4
-              base = pair_symbol[0..-5]
-              target = last_4
-
-          elsif TARGETS.include? last_5
-            base = pair_symbol[0..-6]
-            target = last_5
-          end
-          [base, target]
+        def get_pair(pair)
+          pairs_output = HTTP.timeout(:write => 2, :connect => 5, :read => 8).get(TARGETS_URL)
+          pairs_parsed = JSON.parse(pairs_output.to_s)
+          pair_object = pairs_parsed.select{ |pairs| pairs["id"] == pair }
         end
-
       end
     end
   end
