@@ -1,7 +1,6 @@
 module Cryptoexchange
   module Services
     class Market
-      attr_reader :raw_response
       class << self
         def supports_individual_ticker_query?
           fail "Must define supports_individual_ticker_query? as true or false"
@@ -11,7 +10,6 @@ module Cryptoexchange
       def fetch(endpoint)
         LruTtlCache.ticker_cache.getset(endpoint) do
           response = http_get(endpoint)
-          @raw_response = response
           JSON.parse(response.to_s)
         end
       end
