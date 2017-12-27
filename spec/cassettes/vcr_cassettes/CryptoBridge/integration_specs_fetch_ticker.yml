@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crypto-bridge.org/api/v1/ticker
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.crypto-bridge.org
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 15 Dec 2017 03:21:19 GMT
+      Server:
+      - Apache/2.4.27 (Ubuntu)
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2721'
+      Etag:
+      - W/"aa1-rdIIMMnBnWe5MEn4n4fV6yZi0KM"
+      Via:
+      - 1.1 api.crypto-bridge.org (Apache/2.4.27)
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '[{"id":"BCO_BTC","last":"0.00007100","volume":"7.96918898","ask":"0.00007100","bid":"0.00006806"},{"id":"ZNY_BTC","last":"0.00002200","volume":"5.42576047","ask":"0.00002200","bid":"0.00002108"},{"id":"MONA_BTC","last":"0.00078001","volume":"0.66204713","ask":"0.00081500","bid":"0.00078001"},{"id":"MONA_ZNY","last":"34.200002","volume":"151895.03541900","ask":"33.999998","bid":"33.900003"},{"id":"XP_MONA","last":"0.000026","volume":"387.70632800","ask":"0.000026","bid":"0.000025"},{"id":"XP_ZNY","last":"0.000849","volume":"42828.27587400","ask":"0.000840","bid":"0.000600"},{"id":"XP_DOGE","last":"0.04000001","volume":"281037.53319101","ask":"0.08000000","bid":"0.04100020"},{"id":"BRIM_BTC","last":"0.00002250","volume":"0.11167941","ask":"0.00002600","bid":"0.00002250"},{"id":"XLR_BTC","last":"0.00011900","volume":"0.00237000","ask":"0.00012100","bid":"0.00011800"},{"id":"MUE_BTC","last":"0.00001414","volume":"0.01467524","ask":"0.00001560","bid":"0.00001414"},{"id":"MUE_BTS","last":"1.00000","volume":"0.00000000","ask":"1.00000","bid":"0.06000"},{"id":"FOR_BTC","last":"0.00000090","volume":"0.03653343","ask":"0.00000113","bid":"0.00000090"},{"id":"ALQO_BTC","last":"0.00000900","volume":"0.07635108","ask":"0.00000899","bid":"0.00000811"},{"id":"EOT_BTC","last":"0.00000040","volume":"0.05041797","ask":"0.00000054","bid":"0.00000040"},{"id":"LTC_BTC","last":"0.01699999","volume":"0.22267400","ask":"0.01839947","bid":"0.00881200"},{"id":"DASH_BTC","last":"0.02800000","volume":"0.00932443","ask":"0.06000000","bid":"0.02899904"},{"id":"BELA_BTC","last":"0.00001470","volume":"0.04410000","ask":"0.00001470","bid":"0.00000770"},{"id":"DGB_BTC","last":"0.00000205","volume":"0.11768630","ask":"0.00000209","bid":"0.00000205"},{"id":"BCO_BCH","last":"0.05000000","volume":"0.00000000","ask":"0.05000000","bid":"0.00005001"},{"id":"BCO_BTS","last":"3.69673","volume":"10060.09951000","ask":"4.70000","bid":"3.71000"},{"id":"BCH_BTC","last":"0.08599916","volume":"0.00225366","ask":"0.20000000","bid":"0.05500000"},{"id":"BTC_BTS","last":"53804.83438","volume":"11547.87934000","ask":"76016.37346","bid":"54355.01099"},{"id":"DOGE_BTC","last":"0.00000035","volume":"0.33950896","ask":"0.00000030","bid":"0.00000019"},{"id":"PIVX_BTC","last":"0.00028000","volume":"0.00889401","ask":"0.00038000","bid":"0.00017000"},{"id":"XVG_BTC","last":"0.00000098","volume":"0.64921654","ask":"0.00000105","bid":"0.00000090"},{"id":"XIOS_BTC","last":"0.00005500","volume":"0.06518110","ask":"0.00006000","bid":"0.00002000"},{"id":"EQT_BTC","last":"0.00002000","volume":"0.01344344","ask":"0.00002497","bid":"0.00000400"},{"id":"ETHCA_BTC","last":"0.00000698","volume":"0.00000000","ask":"0.00000900","bid":"0.00000700"}]'
+    http_version: 
+  recorded_at: Fri, 15 Dec 2017 03:21:19 GMT
+recorded_with: VCR 3.0.3
