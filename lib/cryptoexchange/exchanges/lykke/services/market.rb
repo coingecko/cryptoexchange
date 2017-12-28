@@ -23,7 +23,7 @@ module Cryptoexchange::Exchanges
         def adapt_all(output, market_pairs)
           output.map do |ticker|
             next unless market_pairs.any?{|match| "#{match.base + match.target}" == ticker["assetPair"]}
-                pair_object = market_pairs.select{ |pair| "#{pair.base + pair.target}" == ticker["assetPair"]}
+                pair_object = market_pairs.select{ |match| "#{match.base + match.target}" == ticker["assetPair"]}
                 base = pair_object[0].base
                 target = pair_object[0].target
                 market_pair = Cryptoexchange::Models::MarketPair.new(
