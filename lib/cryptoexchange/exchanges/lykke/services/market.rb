@@ -24,21 +24,18 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output, pairs_dictionary)
-          output.each do |ticker|
-              if pairs_dictionary.any?{|match| match["id"] == ticker["assetPair"]}
+          output.map do |ticker|
+
+            next unless pairs_dictionary.any?{|match| match["id"] == ticker["assetPair"]}
                 pair_object = pairs_dictionary.select{|pair| pair["id"] == ticker["assetPair"]}
                 base = pair_object[0]["baseAssetId"]
                 target = pair_object[0]["quotingAssetId"]
-              else
-              end
-              [base, target]
-            next unless base && target
-            market_pair = Cryptoexchange::Models::MarketPair.new(
-                            base: base,
-                            target: target,
-                            market: Lykke::Market::NAME
-                          )
-            adapt(ticker, market_pair)
+                market_pair = Cryptoexchange::Models::MarketPair.new(
+                                base: base,
+                                target: target,
+                                market: Lykke::Market::NAME
+                              )
+                adapt(ticker, market_pair)
           end
         end
 
