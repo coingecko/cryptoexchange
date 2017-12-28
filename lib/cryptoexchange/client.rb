@@ -1,6 +1,6 @@
 module Cryptoexchange
   class Client
-
+    
     def initialize(ticker_ttl: 3)
       LruTtlCache.ticker_cache(ticker_ttl)
     end
