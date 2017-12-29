@@ -10,22 +10,25 @@ module Cryptoexchange::Exchanges
 
         def fetch
           output = super(ticker_url)
-          market_classname = "Cryptoexchange::Exchanges::Lykke::Services::Pairs"
-          market_class = Object.const_get(market_classname)
-          market_pairs = market_class.new.fetch
-          adapt_all(output, market_pairs)
+          pairs_output = HTTP.get(dictionary_url)
+          pairs_dictionary = JSON.parse(pairs_output.to_s)
+          adapt_all(output, pairs_dictionary)
         end
 
         def ticker_url
           "#{Cryptoexchange::Exchanges::Lykke::Market::API_URL}/Market"
         end
 
-        def adapt_all(output, market_pairs)
+        def dictionary_url
+          "#{Cryptoexchange::Exchanges::Lykke::Market::API_URL}/AssetPairs/dictionary"
+        end
+
+        def adapt_all(output, pairs_dictionary)
           output.map do |ticker|
-            next unless market_pairs.any?{|match| "#{match.base + match.target}" == ticker["assetPair"]}
-                pair_object = market_pairs.select{ |match| "#{match.base + match.target}" == ticker["assetPair"]}
-                base = pair_object[0].base
-                target = pair_object[0].target
+            next unless pairs_dictionary.any?{|match| match["id"] == ticker["assetPair"]}
+            pair_object = pairs_dictionary.select{|pair| pair["id"] == ticker["assetPair"]}
+                base = pair_object[0]["baseAssetId"]
+                target = pair_object[0]["quotingAssetId"]
                 market_pair = Cryptoexchange::Models::MarketPair.new(
                                 base: base,
                                 target: target,
