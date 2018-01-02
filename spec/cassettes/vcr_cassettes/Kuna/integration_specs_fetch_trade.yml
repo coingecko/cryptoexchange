@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kuna.io/api/v2/trades?market=btcuah
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - kuna.io
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 13 Dec 2017 07:20:54 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '6882'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d9ef7b145fe966b7bc2a003f0bf8372001513149653; expires=Thu, 13-Dec-18
+        07:20:53 GMT; path=/; domain=.kuna.io; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - '"6c9d2123222b6f5bc5c05b1186422412"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0eb7e0bb-1117-40e0-be11-1d692967f0e0
+      X-Runtime:
+      - '0.038839'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3cc729d7fb0c3349-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":197184,"price":"471500.0","volume":"0.0122","funds":"5752.3","market":"btcuah","created_at":"2017-12-13T07:20:28Z","side":null},{"id":197183,"price":"471100.0","volume":"0.000212","funds":"99.8732","market":"btcuah","created_at":"2017-12-13T07:19:17Z","side":null},{"id":197180,"price":"471050.0","volume":"0.00305","funds":"1436.7025","market":"btcuah","created_at":"2017-12-13T07:14:32Z","side":null},{"id":197179,"price":"471100.0","volume":"0.005943","funds":"2799.7473","market":"btcuah","created_at":"2017-12-13T07:14:32Z","side":null},{"id":197178,"price":"471500.0","volume":"0.050277","funds":"23705.6055","market":"btcuah","created_at":"2017-12-13T07:14:32Z","side":null},{"id":197177,"price":"471995.0","volume":"0.005922","funds":"2795.15439","market":"btcuah","created_at":"2017-12-13T07:14:32Z","side":null},{"id":197176,"price":"471996.0","volume":"0.000177","funds":"83.543292","market":"btcuah","created_at":"2017-12-13T07:14:32Z","side":null},{"id":197175,"price":"471996.0","volume":"0.000624","funds":"294.525504","market":"btcuah","created_at":"2017-12-13T07:14:32Z","side":null},{"id":197174,"price":"472100.0","volume":"0.031639","funds":"14936.7719","market":"btcuah","created_at":"2017-12-13T07:14:32Z","side":null},{"id":197173,"price":"472100.0","volume":"0.002122","funds":"1001.7962","market":"btcuah","created_at":"2017-12-13T07:14:31Z","side":null},{"id":197172,"price":"472100.0","volume":"0.000246","funds":"116.1366","market":"btcuah","created_at":"2017-12-13T07:14:31Z","side":null},{"id":197160,"price":"472100.0","volume":"0.001025","funds":"483.9025","market":"btcuah","created_at":"2017-12-13T07:12:35Z","side":null},{"id":197156,"price":"472996.0","volume":"0.014799","funds":"6999.867804","market":"btcuah","created_at":"2017-12-13T07:11:14Z","side":null},{"id":197148,"price":"471995.0","volume":"0.069078","funds":"32604.47061","market":"btcuah","created_at":"2017-12-13T07:07:30Z","side":null},{"id":197143,"price":"471995.0","volume":"0.02555","funds":"12059.47225","market":"btcuah","created_at":"2017-12-13T07:06:28Z","side":null},{"id":197125,"price":"471995.0","volume":"0.03072","funds":"14499.6864","market":"btcuah","created_at":"2017-12-13T07:00:23Z","side":null},{"id":197115,"price":"471995.0","volume":"0.001059","funds":"499.842705","market":"btcuah","created_at":"2017-12-13T06:57:58Z","side":null},{"id":197114,"price":"471995.0","volume":"0.004836","funds":"2282.56782","market":"btcuah","created_at":"2017-12-13T06:57:50Z","side":null},{"id":197107,"price":"471995.0","volume":"0.008474","funds":"3999.68563","market":"btcuah","created_at":"2017-12-13T06:53:37Z","side":null},{"id":197060,"price":"472995.0","volume":"0.00063","funds":"297.98685","market":"btcuah","created_at":"2017-12-13T06:37:31Z","side":null},{"id":197058,"price":"472995.0","volume":"0.00083","funds":"392.58585","market":"btcuah","created_at":"2017-12-13T06:37:20Z","side":null},{"id":197057,"price":"472000.0","volume":"0.000642","funds":"303.024","market":"btcuah","created_at":"2017-12-13T06:37:03Z","side":null},{"id":197051,"price":"471035.0","volume":"0.043931","funds":"20693.038585","market":"btcuah","created_at":"2017-12-13T06:36:29Z","side":null},{"id":197050,"price":"471035.0","volume":"0.001","funds":"471.035","market":"btcuah","created_at":"2017-12-13T06:36:29Z","side":null},{"id":197030,"price":"471035.0","volume":"0.002043","funds":"962.324505","market":"btcuah","created_at":"2017-12-13T06:29:56Z","side":null},{"id":197028,"price":"471035.0","volume":"0.002","funds":"942.07","market":"btcuah","created_at":"2017-12-13T06:29:47Z","side":null},{"id":197026,"price":"471035.0","volume":"0.000636","funds":"299.57826","market":"btcuah","created_at":"2017-12-13T06:29:27Z","side":null},{"id":197025,"price":"471030.0","volume":"0.0036","funds":"1695.708","market":"btcuah","created_at":"2017-12-13T06:28:02Z","side":null},{"id":197024,"price":"471035.0","volume":"0.000626","funds":"294.86791","market":"btcuah","created_at":"2017-12-13T06:27:43Z","side":null},{"id":197022,"price":"471035.0","volume":"0.005305","funds":"2498.840675","market":"btcuah","created_at":"2017-12-13T06:27:06Z","side":null},{"id":197021,"price":"471040.0","volume":"0.02","funds":"9420.8","market":"btcuah","created_at":"2017-12-13T06:26:52Z","side":null},{"id":197020,"price":"471040.0","volume":"0.001","funds":"471.04","market":"btcuah","created_at":"2017-12-13T06:25:49Z","side":null},{"id":197019,"price":"471040.0","volume":"0.019","funds":"8949.76","market":"btcuah","created_at":"2017-12-13T06:25:49Z","side":null},{"id":197018,"price":"475970.0","volume":"0.008","funds":"3807.76","market":"btcuah","created_at":"2017-12-13T06:24:36Z","side":null},{"id":197017,"price":"475965.0","volume":"0.001","funds":"475.965","market":"btcuah","created_at":"2017-12-13T06:24:36Z","side":null},{"id":197016,"price":"475965.0","volume":"0.02","funds":"9519.3","market":"btcuah","created_at":"2017-12-13T06:24:35Z","side":null},{"id":197015,"price":"471035.0","volume":"0.010695","funds":"5037.719325","market":"btcuah","created_at":"2017-12-13T06:24:19Z","side":null},{"id":197014,"price":"471035.0","volume":"0.008","funds":"3768.28","market":"btcuah","created_at":"2017-12-13T06:24:19Z","side":null},{"id":197013,"price":"471050.0","volume":"0.014841","funds":"6990.85305","market":"btcuah","created_at":"2017-12-13T06:24:19Z","side":null},{"id":197012,"price":"471050.0","volume":"0.006368","funds":"2999.6464","market":"btcuah","created_at":"2017-12-13T06:24:19Z","side":null},{"id":197011,"price":"471050.0","volume":"0.001182","funds":"556.7811","market":"btcuah","created_at":"2017-12-13T06:24:19Z","side":null},{"id":197010,"price":"471050.0","volume":"0.013101","funds":"6171.22605","market":"btcuah","created_at":"2017-12-13T06:24:18Z","side":null},{"id":197009,"price":"471056.0","volume":"0.01","funds":"4710.56","market":"btcuah","created_at":"2017-12-13T06:24:18Z","side":null},{"id":197008,"price":"471061.0","volume":"0.02","funds":"9421.22","market":"btcuah","created_at":"2017-12-13T06:24:18Z","side":null},{"id":197007,"price":"471505.0","volume":"0.00212","funds":"999.5906","market":"btcuah","created_at":"2017-12-13T06:24:18Z","side":null},{"id":197006,"price":"471505.0","volume":"0.001","funds":"471.505","market":"btcuah","created_at":"2017-12-13T06:24:18Z","side":null},{"id":196991,"price":"475975.0","volume":"0.000483","funds":"229.895925","market":"btcuah","created_at":"2017-12-13T06:10:37Z","side":null},{"id":196989,"price":"475975.0","volume":"0.010544","funds":"5018.6804","market":"btcuah","created_at":"2017-12-13T06:09:28Z","side":null},{"id":196988,"price":"475974.0","volume":"0.01","funds":"4759.74","market":"btcuah","created_at":"2017-12-13T06:09:28Z","side":null},{"id":196987,"price":"475974.0","volume":"0.006756","funds":"3215.680344","market":"btcuah","created_at":"2017-12-13T06:09:28Z","side":null}]'
+    http_version: 
+  recorded_at: Wed, 13 Dec 2017 07:20:54 GMT
+recorded_with: VCR 3.0.3
