@@ -77,6 +77,7 @@ Or install it yourself as:
 | Livecoin          | Y       |            |         |         | Y           |
 | LocalBitcoins     | Y       | Y          | Y       |         | Y           |
 | Luno              | Y       |            |         |         | Y           |
+| Lykke             | Y       | Y          | N       |         | Y           |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|
 | Mercatox          | Y       | N          | N       | N       | Y           |
 | Nova Exchange     | Y       |            |         |         | Y           |
