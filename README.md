@@ -50,6 +50,7 @@ Or install it yourself as:
 | Cex               | Y       | Y          | Y       |         | Y           |
 | CCex              | Y       |            |         |         | Y           |
 | CHBTC             | Y       |            |         |         | User-Defined|
+| Cobinhood         | Y       | Y          |         |         | Y           |
 | Coincheck         | Y       |            |         |         | User-Defined|
 | CoinExchange      | Y       |            |         |         | Y           |
 | Coinmate          | Y       | Y          |         |         | User-Defined|

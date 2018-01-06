@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cobinhood.com/v1/market/tickers/BTC-USD
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.cobinhood.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - https://cobinhood.com
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 06 Jan 2018 10:01:46 GMT
+      Content-Length:
+      - '244'
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"result":{"ticker":{"trading_pair_id":"BTC-USD","timestamp":1515232860000,"24h_high":"16000","24h_low":"10000","24h_open":"14888","24h_volume":"0.29536807","last_trade_price":"13001","highest_bid":"13001","lowest_ask":"13001"}}}'
+    http_version: 
+  recorded_at: Sat, 06 Jan 2018 10:01:47 GMT
+recorded_with: VCR 3.0.3
