@@ -16,11 +16,6 @@ RSpec.describe 'Lykke integration specs' do
     expect(hashed_pairs).to include({base: 'BTC', target: 'LKK1Y', market: market})
     expect(hashed_pairs).to include({base: 'TIME', target: 'GBP', market: market})
     expect(hashed_pairs).to include({base: 'SHEELA', target: 'EUR', market: market})
-<<<<<<< HEAD
-    expect(hashed_pairs).not_to include({base: '91316bdc-f379-4442-98fd-f2c844995ca1', target: 'CHF', market: market})
-    expect(hashed_pairs).not_to include({base: 'USD', target: 'GB032548', market: market})
-=======
->>>>>>> upstream/master
   end
 
   it 'fetch ticker' do
