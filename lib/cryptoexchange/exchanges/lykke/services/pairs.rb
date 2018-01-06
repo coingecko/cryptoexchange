@@ -2,6 +2,7 @@ module Cryptoexchange::Exchanges
   module Lykke
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
+<<<<<<< HEAD
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Lykke::Market::API_URL}/AssetPairs/rate"
         TARGETS_URL = "#{Cryptoexchange::Exchanges::Lykke::Market::API_URL}/AssetPairs/dictionary"
 
@@ -21,12 +22,31 @@ module Cryptoexchange::Exchanges
             target = pair_object[0]["quotingAssetId"]
             next unless base && target
             market_pairs << Cryptoexchange::Models::MarketPair.new(
+=======
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Lykke::Market::API_URL}/AssetPairs/dictionary"
+
+        def fetch
+          output = super
+          adapt(output)
+        end
+
+        def adapt(output)
+          output.map do |pair|
+            base = pair["baseAssetId"]
+            target = pair["quotingAssetId"]
+            Cryptoexchange::Models::MarketPair.new(
+>>>>>>> upstream/master
                               base: base,
                               target: target,
                               market: Lykke::Market::NAME
                             )
+<<<<<<< HEAD
           end
           market_pairs
+=======
+
+          end
+>>>>>>> upstream/master
         end
       end
     end

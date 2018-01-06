@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kuna.io/api/v2/tickers/btcuah
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - kuna.io
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 13 Dec 2017 07:20:53 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '159'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dbd5811712b85f5eb828433fd8d85aa5f1513149652; expires=Thu, 13-Dec-18
+        07:20:52 GMT; path=/; domain=.kuna.io; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - '"589eb696094783c5b8dbdadace9a977a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c3e3bf98-424b-4136-b09d-b4411ce22e1c
+      X-Runtime:
+      - '0.012936'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3cc729cfbd9332ad-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1513149653,"ticker":{"buy":"471100.0","sell":"472996.0","low":"470000.0","high":"480000.0","last":"471500.0","vol":"19.900896","price":"9451644.223287"}}'
+    http_version: 
+  recorded_at: Wed, 13 Dec 2017 07:20:53 GMT
+recorded_with: VCR 3.0.3
