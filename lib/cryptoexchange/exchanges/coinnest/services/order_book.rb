@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Lykke
+  module Coinnest
     module Services
       class OrderBook < Cryptoexchange::Services::Market
         class << self
@@ -7,16 +7,14 @@ module Cryptoexchange::Exchanges
             true
           end
         end
-        
+
         def fetch(market_pair)
           output = super(order_book_url(market_pair))
           adapt(output, market_pair)
         end
 
         def order_book_url(market_pair)
-          base = market_pair.base
-          target = market_pair.target
-          "#{Cryptoexchange::Exchanges::Lykke::Market::API_URL}/OrderBook/#{base+target}"
+          "#{Cryptoexchange::Exchanges::Coinnest::Market::API_URL}/api/pub/depth?coin=#{market_pair.base.downcase}"
         end
 
         def adapt(output, market_pair)
@@ -25,9 +23,9 @@ module Cryptoexchange::Exchanges
 
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
-          order_book.market    = Lykke::Market::NAME
-          order_book.asks      = adapt_orders(output[0]["prices"], timestamp)
-          order_book.bids      = adapt_orders(output[1]["prices"], timestamp)
+          order_book.market    = Coinnest::Market::NAME
+          order_book.asks      = adapt_orders(output["asks"], timestamp)
+          order_book.bids      = adapt_orders(output["bids"], timestamp)
           order_book.timestamp = timestamp
           order_book.payload   = output
           order_book
@@ -35,8 +33,8 @@ module Cryptoexchange::Exchanges
 
         def adapt_orders(orders, timestamp)
           orders.collect do |order_entry|
-            Cryptoexchange::Models::Order.new(price: NumericHelper.to_d(order_entry["price"]),
-                                              amount: NumericHelper.to_d(order_entry["volume"]),
+            Cryptoexchange::Models::Order.new(price: NumericHelper.to_d(order_entry[1]),
+                                              amount: NumericHelper.to_d(order_entry[0]),
                                               timestamp: timestamp)
           end
         end
