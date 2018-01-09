@@ -53,6 +53,7 @@ Or install it yourself as:
 | Coincheck         | Y       |            |         |         | User-Defined|
 | CoinExchange      | Y       |            |         |         | Y           |
 | Coinmate          | Y       | Y          |         |         | User-Defined|
+| Coinnest          | Y       | Y          | Y       |         | User-Defined|
 | Coinone           | Y       |            |         |         | Y           |
 | CoinsMarkets      | Y       |            |         |         | Y           |
 | COSS              | Y       |            |         |         | Y           |
