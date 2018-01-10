@@ -90,6 +90,7 @@ Or install it yourself as:
 | SZZC              | Y       |            |         |         | Y           |
 | The Rock Trading  | Y       |            |         |         | Y           |
 | Tidex             | Y       |            |         |         | Y           |
+| Trade Satoshi     | Y       |            |         |         | Y           |
 | TuxExchange       | Y       |            |         |         | Y           |
 | Unocoin           |         |            |         |         |             |
 | Viabtc            | Y       |            |         |         | User-Defined|
