@@ -54,6 +54,7 @@ Or install it yourself as:
 | CCex              | Y       |            |         |         | Y           |
 | CHBTC             | Y       |            |         |         | User-Defined|
 | Cobinhood         | Y       | Y          |         |         | Y           |
+| CoinEgg           | Y       | Y          | Y       |         | User-Defined|
 | Coincheck         | Y       |            |         |         | User-Defined|
 | CoinExchange      | Y       |            |         |         | Y           |
 | Coinbene          | Y       | Y          | Y       |         | Y           |
