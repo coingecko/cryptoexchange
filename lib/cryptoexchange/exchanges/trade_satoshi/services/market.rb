@@ -30,18 +30,18 @@ module Cryptoexchange::Exchanges
         end
 
         # {
-        #   "market":"PAK_BTC",
-        #   "high":0.00000000,
-        #   "low":0.00000000,
-        #   "volume":0.00000000,
-        #   "baseVolume":0.00000000,
-        #   "last":0.00000070,
-        #   "bid":0.00000075,
-        #   "ask":0.00000514,
-        #   "openBuyOrders":41,
-        #   "openSellOrders":13,
+        #   "market":"LTC_BTC",
+        #   "high":0.01749999,
+        #   "low":0.01520006,
+        #   "volume":469.05469918,
+        #   "baseVolume":7.71450537,
+        #   "last":0.01680000,
+        #   "bid":0.01680000,
+        #   "ask":0.01699999,
+        #   "openBuyOrders":59,
+        #   "openSellOrders":70,
         #   "change":0.0
-        # },
+        # }
         def adapt(output, market_pair)
           market = output
           # raise output.inspect
@@ -49,12 +49,12 @@ module Cryptoexchange::Exchanges
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = TradeSatoshi::Market::NAME
-          ticker.ask = NumericHelper.to_d(market['sell'])
-          ticker.bid = NumericHelper.to_d(market['buy'])
+          ticker.ask = NumericHelper.to_d(market['ask'])
+          ticker.bid = NumericHelper.to_d(market['bid'])
           ticker.last = NumericHelper.to_d(market['last'])
           ticker.high = NumericHelper.to_d(market['high'])
           ticker.low = NumericHelper.to_d(market['low'])
-          ticker.volume = NumericHelper.to_d(market['baseVolume'])
+          ticker.volume = NumericHelper.to_d(market['volume'])
           ticker.timestamp = DateTime.now.to_time.to_i
           ticker.payload = market
           ticker
