@@ -5,41 +5,47 @@ module Cryptoexchange
     end
 
     def pairs(exchange)
-      pairs_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Pairs"
-      Object.const_get(pairs_classname).new.fetch
-    rescue HTTP::ConnectionError => e
-      return { error: "#{exchange}'s service has connection error", message: e.to_s }
-    rescue HTTP::TimeoutError => e
-      return { error: "#{exchange}'s service time out", message: e.to_s }
-    rescue JSON::ParserError => e
-      return { error: "#{exchange}'s service does not send JSON", message: e.to_s }
-    rescue TypeError => e
-      return { error: "#{exchange}'s service does not respond with right format", message: e.to_s }
+      begin
+        pairs_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Pairs"
+        pairs_class = Object.const_get(pairs_classname)
+        pairs_object = pairs_class.new
+        pairs_object.fetch
+      rescue HTTP::ConnectionError => e
+        raise Cryptoexchange::HttpConnectionError, e
+      rescue HTTP::TimeoutError => e
+        raise Cryptoexchange::HttpTimeoutError, e
+      rescue JSON::ParserError => e
+        raise Cryptoexchange::JsonParseError, e
+      rescue TypeError => e
+        raise Cryptoexchange::TypeFormatError, e
+      end
     end
 
     def ticker(market_pair)
-      exchange = market_pair.market
-      market_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Market"
-      market_class = Object.const_get(market_classname)
-      market = market_class.new
+      begin
+        exchange = market_pair.market
+        market_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Market"
+        market_class = Object.const_get(market_classname)
+        market = market_class.new
 
-      if market_class.supports_individual_ticker_query?
-        market.fetch(market_pair)
-      else
-        tickers = market.fetch
-        tickers.find do |t|
-          t.base.casecmp(market_pair.base) == 0 &&
-            t.target.casecmp(market_pair.target) == 0
+        if market_class.supports_individual_ticker_query?
+          market.fetch(market_pair)
+        else
+          tickers = market.fetch
+          tickers.find do |t|
+            t.base.casecmp(market_pair.base) == 0 &&
+              t.target.casecmp(market_pair.target) == 0
+          end
         end
+      rescue HTTP::ConnectionError => e
+        raise Cryptoexchange::HttpConnectionError, e
+      rescue HTTP::TimeoutError => e
+        raise Cryptoexchange::HttpTimeoutError, e
+      rescue JSON::ParserError => e
+        raise Cryptoexchange::JsonParseError, e
+      rescue TypeError => e
+        raise Cryptoexchange::TypeFormatError, e
       end
-    rescue HTTP::ConnectionError => e
-      return { error: "#{exchange}'s service has connection error", message: e.to_s }
-    rescue HTTP::TimeoutError => e
-      return { error: "#{exchange}'s service time out", message: e.to_s }
-    rescue JSON::ParserError => e
-      return { error: "#{exchange}'s service does not send JSON", message: e.to_s }
-    rescue TypeError => e
-      return { error: "#{exchange}'s service does not respond with right format", message: e.to_s }
     end
 
     def available_exchanges
