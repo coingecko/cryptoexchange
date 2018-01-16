@@ -7,8 +7,14 @@ module Cryptoexchange
     def pairs(exchange)
       pairs_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Pairs"
       Object.const_get(pairs_classname).new.fetch
-    rescue HTTP::ConnectionError, HTTP::TimeoutError, JSON::ParserError
-      return { error: "#{exchange}'s service is temporarily unavailable." }
+    rescue HTTP::ConnectionError => e
+      return { error: "#{exchange}'s service has connection error", message: e.to_s }
+    rescue HTTP::TimeoutError => e
+      return { error: "#{exchange}'s service time out", message: e.to_s }
+    rescue JSON::ParserError => e
+      return { error: "#{exchange}'s service does not send JSON", message: e.to_s }
+    rescue TypeError => e
+      return { error: "#{exchange}'s service does not respond with right format", message: e.to_s }
     end
 
     def ticker(market_pair)
@@ -26,8 +32,14 @@ module Cryptoexchange
             t.target.casecmp(market_pair.target) == 0
         end
       end
-    rescue HTTP::ConnectionError, HTTP::TimeoutError, JSON::ParserError
-      return { error: "#{exchange}'s service is temporarily unavailable." }
+    rescue HTTP::ConnectionError => e
+      return { error: "#{exchange}'s service has connection error", message: e.to_s }
+    rescue HTTP::TimeoutError => e
+      return { error: "#{exchange}'s service time out", message: e.to_s }
+    rescue JSON::ParserError => e
+      return { error: "#{exchange}'s service does not send JSON", message: e.to_s }
+    rescue TypeError => e
+      return { error: "#{exchange}'s service does not respond with right format", message: e.to_s }
     end
 
     def available_exchanges
