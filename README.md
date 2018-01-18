@@ -66,6 +66,7 @@ Or install it yourself as:
 | Gemini            | Y       | Y          | Y       |         | Y           |
 | HitBTC            | Y       |            |         |         | Y           |
 | Huobi             | Y       |            |         |         | Y           |
+| InfinityCoin      | Y       |            |         |         | Y           |  
 | Itbit             | Y       |            |         |         | User-Defined|
 | Jubi              | Y       |            |         |         | Y           |
 | Korbit            | Y       |            |         |         | User-Defined|
