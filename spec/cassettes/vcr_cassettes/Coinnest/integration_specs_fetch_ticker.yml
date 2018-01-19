@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinnest.co.kr/api/pub/ticker?coin=btc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinnest.co.kr
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 09 Jan 2018 13:01:07 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d377e095be54ccfa796b6495d9ee3cf141515502866; expires=Wed, 09-Jan-19
+        13:01:06 GMT; path=/; domain=.coinnest.co.kr; HttpOnly
+      - __cfruid=20a47f7e61d16452f20c75a1b0148b2f7904f862-1515502867; path=/; domain=.coinnest.co.kr;
+        HttpOnly
+      Strict-Transport-Security:
+      - max-age=2592000
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3da795556d6b2d11-KUL
+    body:
+      encoding: UTF-8
+      string: '{"high":22298000,"low":19200500,"buy":20798000,"sell":20929500,"last":20799500,"vol":496.547,"time":1515502811}
+
+'
+    http_version: 
+  recorded_at: Tue, 09 Jan 2018 13:01:07 GMT
+recorded_with: VCR 3.0.3
