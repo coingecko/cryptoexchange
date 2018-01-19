@@ -53,11 +53,12 @@ Or install it yourself as:
 | Coincheck         | Y       |            |         |         | User-Defined|
 | CoinExchange      | Y       |            |         |         | Y           |
 | Coinmate          | Y       | Y          |         |         | User-Defined|
+| Coinnest          | Y       | Y          | Y       |         | User-Defined|
 | Coinone           | Y       |            |         |         | Y           |
 | CoinsMarkets      | Y       |            |         |         | Y           |
 | COSS              | Y       |            |         |         | Y           |
 | CryptoBridge      | Y       |            |         |         | Y           |
-| Cryptopia         | Y       |            |         |         | Y           |
+| Cryptopia         | Y       | Y          | Y       |         | Y           |
 | EtherDelta        | Y       |            |         |         | Y           |
 | Exmo              | Y       | Y          | Y       |         | Y           |
 | Gate              | Y       | Y          | Y       |         | Y           |
@@ -92,6 +93,7 @@ Or install it yourself as:
 | SZZC              | Y       |            |         |         | Y           |
 | The Rock Trading  | Y       |            |         |         | Y           |
 | Tidex             | Y       |            |         |         | Y           |
+| Trade Satoshi     | Y       |            |         |         | Y           |
 | TuxExchange       | Y       |            |         |         | Y           |
 | Unocoin           |         |            |         |         |             |
 | Viabtc            | Y       |            |         |         | User-Defined|
