@@ -58,7 +58,7 @@ Or install it yourself as:
 | CoinsMarkets      | Y       |            |         |         | Y           |
 | COSS              | Y       |            |         |         | Y           |
 | CryptoBridge      | Y       |            |         |         | Y           |
-| Cryptopia         | Y       |            |         |         | Y           |
+| Cryptopia         | Y       | Y          | Y       |         | Y           |
 | EtherDelta        | Y       |            |         |         | Y           |
 | Exmo              | Y       | Y          | Y       |         | Y           |
 | Gate              | Y       | Y          | Y       |         | Y           |
