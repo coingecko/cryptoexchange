@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinnest.co.kr/api/pub/trades?coin=btc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinnest.co.kr
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 09 Jan 2018 01:51:37 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d804999357ba14a789e072dfba15558761515462697; expires=Wed, 09-Jan-19
+        01:51:37 GMT; path=/; domain=.coinnest.co.kr; HttpOnly
+      - __cfruid=a5cffea300b8b9f765080445293437e06c21da45-1515462697; path=/; domain=.coinnest.co.kr;
+        HttpOnly
+      - lang=ko_KR; expires=Fri, 07-Jan-2028 01:51:37 GMT; Max-Age=315360000; path=/
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/7.0.18
+      Strict-Transport-Security:
+      - max-age=2592000
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3da3c0a22c0433e5-HKG
+    body:
+      encoding: UTF-8
+      string: '[{"date":"1515462639","price":21694500,"amount":0.0163,"tid":"555896","type":"buy"},{"date":"1515462638","price":21694000,"amount":0.0193,"tid":"555895","type":"sell"},{"date":"1515462631","price":21694500,"amount":0.0611,"tid":"555894","type":"buy"},{"date":"1515462631","price":21694500,"amount":0.3664,"tid":"555893","type":"buy"},{"date":"1515462626","price":21694000,"amount":0.2,"tid":"555892","type":"sell"},{"date":"1515462575","price":21694000,"amount":0.0551,"tid":"555891","type":"sell"},{"date":"1515462571","price":21694000,"amount":0.7087,"tid":"555890","type":"buy"},{"date":"1515462571","price":21688500,"amount":0.1259,"tid":"555889","type":"buy"},{"date":"1515462559","price":21689000,"amount":0.0386,"tid":"555888","type":"buy"},{"date":"1515462553","price":21450000,"amount":0.0028,"tid":"555887","type":"sell"},{"date":"1515462542","price":21450000,"amount":0.1655,"tid":"555886","type":"buy"},{"date":"1515462529","price":21300000,"amount":0.0033,"tid":"555885","type":"buy"},{"date":"1515462529","price":21300000,"amount":0.7539,"tid":"555884","type":"buy"},{"date":"1515462519","price":21296500,"amount":0.047,"tid":"555883","type":"sell"},{"date":"1515462519","price":21300000,"amount":0.2784,"tid":"555882","type":"sell"},{"date":"1515462462","price":21296500,"amount":0.0043,"tid":"555881","type":"sell"},{"date":"1515462456","price":21300500,"amount":0.328,"tid":"555880","type":"buy"},{"date":"1515462444","price":21296500,"amount":0.0685,"tid":"555879","type":"sell"},{"date":"1515462443","price":21300500,"amount":0.0889,"tid":"555878","type":"buy"},{"date":"1515462433","price":21300000,"amount":0.068,"tid":"555877","type":"buy"},{"date":"1515462421","price":21296500,"amount":0.1571,"tid":"555876","type":"sell"},{"date":"1515462413","price":21300500,"amount":0.1193,"tid":"555875","type":"buy"},{"date":"1515462403","price":21300500,"amount":0.1377,"tid":"555874","type":"buy"},{"date":"1515462403","price":21300000,"amount":0.1033,"tid":"555873","type":"buy"},{"date":"1515462395","price":21300000,"amount":0.3947,"tid":"555872","type":"sell"},{"date":"1515462388","price":21300500,"amount":0.0138,"tid":"555871","type":"sell"},{"date":"1515462380","price":21301000,"amount":0.05,"tid":"555870","type":"buy"},{"date":"1515462369","price":21301000,"amount":0.0938,"tid":"555869","type":"buy"},{"date":"1515462364","price":21301000,"amount":0.0354,"tid":"555868","type":"buy"},{"date":"1515462360","price":21301000,"amount":0.0038,"tid":"555867","type":"sell"},{"date":"1515462360","price":21301500,"amount":0.0279,"tid":"555866","type":"sell"},{"date":"1515462350","price":21699000,"amount":0.0274,"tid":"555865","type":"buy"},{"date":"1515462320","price":21300000,"amount":0.0853,"tid":"555864","type":"sell"},{"date":"1515462291","price":21110500,"amount":0.002,"tid":"555863","type":"sell"},{"date":"1515462281","price":21700500,"amount":0.1255,"tid":"555862","type":"buy"},{"date":"1515462268","price":21107000,"amount":0.0277,"tid":"555861","type":"sell"},{"date":"1515462268","price":21107500,"amount":0.0546,"tid":"555860","type":"sell"},{"date":"1515462248","price":21699500,"amount":0.0466,"tid":"555859","type":"buy"},{"date":"1515462248","price":21699500,"amount":0.0066,"tid":"555858","type":"sell"},{"date":"1515462238","price":21703000,"amount":0.0922,"tid":"555857","type":"buy"},{"date":"1515462185","price":21390000,"amount":0.0199,"tid":"555856","type":"sell"},{"date":"1515462182","price":21300500,"amount":0.0734,"tid":"555855","type":"sell"},{"date":"1515462182","price":21301000,"amount":0.0106,"tid":"555854","type":"sell"},{"date":"1515462162","price":21300500,"amount":0.003,"tid":"555853","type":"sell"},{"date":"1515462161","price":21300500,"amount":0.0177,"tid":"555852","type":"sell"},{"date":"1515462161","price":21300500,"amount":0.0223,"tid":"555851","type":"sell"},{"date":"1515462154","price":21710500,"amount":0.0104,"tid":"555850","type":"buy"},{"date":"1515462028","price":21716000,"amount":0.0219,"tid":"555849","type":"sell"},{"date":"1515462023","price":21716000,"amount":0.0622,"tid":"555848","type":"sell"},{"date":"1515462022","price":21716000,"amount":0.1735,"tid":"555847","type":"sell"}]'
+    http_version: 
+  recorded_at: Tue, 09 Jan 2018 01:51:37 GMT
+recorded_with: VCR 3.0.3
