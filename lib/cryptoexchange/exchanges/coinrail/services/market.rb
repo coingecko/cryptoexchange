@@ -21,7 +21,7 @@ module Cryptoexchange::Exchanges
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
-          ticker.market = Coinrail::Market::NAME
+          ticker.market = Coinrai::Market::NAME
           ticker.ask = NumericHelper.to_d(output['sell'])
           ticker.bid = NumericHelper.to_d(output['buy'])
           ticker.last = NumericHelper.to_d(output['last'])
