@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.zb.com/data/v1/ticker/?market=btc_usdt
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.zb.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.2
+      Date:
+      - Sun, 21 Jan 2018 06:56:22 GMT
+      Content-Type:
+      - text/javascript;charset=utf-8
+      Content-Length:
+      - '140'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Cndserver:
+      - cache_server_1
+    body:
+      encoding: UTF-8
+      string: '{"ticker":{"vol":"2167.3391","last":"12689.17","sell":"12689.51","buy":"12689.17","high":"13648.48","low":"12350.0"},"date":"1516517780947"}'
+    http_version: 
+  recorded_at: Sun, 21 Jan 2018 06:56:22 GMT
+recorded_with: VCR 3.0.3
