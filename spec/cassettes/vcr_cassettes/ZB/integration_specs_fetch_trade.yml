@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.zb.com/data/v1/trades?market=btc_usdt
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.zb.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.2
+      Date:
+      - Tue, 23 Jan 2018 15:28:58 GMT
+      Content-Type:
+      - text/javascript;charset=utf-8
+      Content-Length:
+      - '5192'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Cndserver:
+      - cache_server_1
+    body:
+      encoding: UTF-8
+      string: '[{"amount":"0.0001","price":"11289.01","tid":36400724,"type":"buy","date":1516721321,"trade_type":"bid"},{"amount":"0.0001","price":"11290.0","tid":36400726,"type":"buy","date":1516721321,"trade_type":"bid"},{"amount":"0.0027","price":"11298.11","tid":36400781,"type":"buy","date":1516721325,"trade_type":"bid"},{"amount":"0.0132","price":"11296.27","tid":36400782,"type":"buy","date":1516721325,"trade_type":"bid"},{"amount":"0.0159","price":"11299.95","tid":36400783,"type":"buy","date":1516721325,"trade_type":"bid"},{"amount":"0.0144","price":"11294.4","tid":36400784,"type":"buy","date":1516721325,"trade_type":"bid"},{"amount":"0.0234","price":"11294.34","tid":36400785,"type":"buy","date":1516721325,"trade_type":"bid"},{"amount":"0.0482","price":"11295.58","tid":36400786,"type":"buy","date":1516721325,"trade_type":"bid"},{"amount":"0.0860","price":"11299.98","tid":36400787,"type":"buy","date":1516721325,"trade_type":"bid"},{"amount":"0.0045","price":"11296.63","tid":36400800,"type":"buy","date":1516721326,"trade_type":"bid"},{"amount":"0.0045","price":"11299.98","tid":36400801,"type":"buy","date":1516721326,"trade_type":"bid"},{"amount":"0.0400","price":"11295.07","tid":36400819,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0400","price":"11299.98","tid":36400820,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0466","price":"11297.19","tid":36400821,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0278","price":"11299.34","tid":36400822,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0014","price":"11299.6","tid":36400823,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0758","price":"11299.98","tid":36400824,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0180","price":"11297.55","tid":36400825,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0129","price":"11299.61","tid":36400826,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0030","price":"11295.36","tid":36400827,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0339","price":"11301.0","tid":36400828,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0042","price":"11299.09","tid":36400829,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0004","price":"11298.45","tid":36400831,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0054","price":"11299.17","tid":36400832,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0100","price":"11301.0","tid":36400833,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0062","price":"11299.85","tid":36400840,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0027","price":"11296.84","tid":36400841,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0011","price":"11297.08","tid":36400842,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0100","price":"11301.0","tid":36400843,"type":"buy","date":1516721328,"trade_type":"bid"},{"amount":"0.0100","price":"11298.39","tid":36400855,"type":"buy","date":1516721330,"trade_type":"bid"},{"amount":"0.0100","price":"11301.0","tid":36400856,"type":"buy","date":1516721330,"trade_type":"bid"},{"amount":"0.0084","price":"11299.66","tid":36400857,"type":"buy","date":1516721330,"trade_type":"bid"},{"amount":"0.0016","price":"11300.83","tid":36400858,"type":"buy","date":1516721330,"trade_type":"bid"},{"amount":"0.0100","price":"11301.0","tid":36400860,"type":"buy","date":1516721330,"trade_type":"bid"},{"amount":"0.0174","price":"11300.34","tid":36400874,"type":"buy","date":1516721330,"trade_type":"bid"},{"amount":"0.0166","price":"11299.78","tid":36400875,"type":"buy","date":1516721330,"trade_type":"bid"},{"amount":"0.0680","price":"11298.84","tid":36400876,"type":"buy","date":1516721330,"trade_type":"bid"},{"amount":"0.1020","price":"11301.0","tid":36400877,"type":"buy","date":1516721330,"trade_type":"bid"},{"amount":"0.0020","price":"11294.57","tid":36400898,"type":"buy","date":1516721332,"trade_type":"bid"},{"amount":"0.0040","price":"11298.95","tid":36400905,"type":"sell","date":1516721332,"trade_type":"ask"},{"amount":"0.0107","price":"11294.98","tid":36400906,"type":"sell","date":1516721332,"trade_type":"ask"},{"amount":"0.0042","price":"11298.97","tid":36400908,"type":"buy","date":1516721332,"trade_type":"bid"},{"amount":"0.0058","price":"11294.87","tid":36400909,"type":"buy","date":1516721332,"trade_type":"bid"},{"amount":"0.0100","price":"11300.4","tid":36400911,"type":"buy","date":1516721332,"trade_type":"bid"},{"amount":"0.0331","price":"11299.49","tid":36400926,"type":"buy","date":1516721334,"trade_type":"bid"},{"amount":"0.1614","price":"11296.83","tid":36400927,"type":"buy","date":1516721334,"trade_type":"bid"},{"amount":"0.0118","price":"11296.2","tid":36400928,"type":"buy","date":1516721334,"trade_type":"bid"},{"amount":"0.1201","price":"11298.07","tid":36400931,"type":"buy","date":1516721334,"trade_type":"bid"},{"amount":"0.2982","price":"11298.54","tid":36400932,"type":"buy","date":1516721334,"trade_type":"bid"},{"amount":"0.0115","price":"11300.86","tid":36400933,"type":"buy","date":1516721334,"trade_type":"bid"}]'
+    http_version: 
+  recorded_at: Tue, 23 Jan 2018 15:28:58 GMT
+recorded_with: VCR 3.0.3
