@@ -59,10 +59,11 @@ Or install it yourself as:
 | CHBTC             | Y       |            |         |         | User-Defined|
 | Cobinhood         | Y       | Y          |         |         | Y           |
 | CoinEgg           | Y       | Y          | Y       |         | User-Defined|
-| Coincheck         | Y       |            |         |         | User-Defined|
-| Coinfalcon        | Y       | Y          | Y       |         | Y           |
 | CoinExchange      | Y       |            |         |         | Y           |
 | Coinbene          | Y       | Y          | Y       |         | Y           |
+| Coincheck         | Y       |            |         |         | User-Defined|
+| Coinfalcon        | Y       | Y          | Y       |         | Y           |
+| Coinhouse         | Y       |            |         |         | Y           |
 | Coinmate          | Y       | Y          |         |         | User-Defined|
 | Coinnest          | Y       | Y          | Y       |         | User-Defined|
 | Coinroom          | Y       |            |         |         | Y           |
