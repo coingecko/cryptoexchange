@@ -70,6 +70,7 @@ Or install it yourself as:
 | HitBTC            | Y       |            |         |         | Y           |
 | Hksy              | Y       |            | Y       |         | User-Defined|
 | Huobi             | Y       |            |         |         | Y           |
+| Idex              | Y       | Y          | Y       |         | Y           |
 | Itbit             | Y       |            |         |         | User-Defined|
 | KKex              | Y       | Y          | Y       |         | Y           |
 | Jubi              | Y       |            |         |         | Y           |
