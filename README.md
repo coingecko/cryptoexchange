@@ -29,7 +29,7 @@ Or install it yourself as:
 | Allcoin           | Y       | Y          |         |         | User-Defined|
 | ANX               | Y       |            |         |         | User-Defined|
 | Bit-Z             | Y       |            |         |         | Y           |
-| Binance           | Y       | Y          |         |         | User-Defined|
+| Binance           | Y       | Y          |         |         | Y           |
 | Bitbay            | Y       |            |         |         | User-Defined|
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|
 | Bitconnect        | Y       |            |         |         | Y           |
