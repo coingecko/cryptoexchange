@@ -66,6 +66,7 @@ Or install it yourself as:
 | GDAX              | Y       |            |         |         | Y           |
 | Gemini            | Y       | Y          | Y       |         | Y           |
 | HitBTC            | Y       |            |         |         | Y           |
+| Hksy              | Y       |            | Y       |         | User-Defined|
 | Huobi             | Y       |            |         |         | Y           |
 | Itbit             | Y       |            |         |         | User-Defined|
 | Jubi              | Y       |            |         |         | Y           |
