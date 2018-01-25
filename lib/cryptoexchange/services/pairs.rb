@@ -22,6 +22,11 @@ module Cryptoexchange
         JSON.parse(fetch_response.to_s)
       end
 
+      def fetch_via_api_using_post(endpoint = self.class::PAIRS_URL)
+        fetch_response = HTTP.timeout(:write => 2, :connect => 5, :read => 8).post(endpoint)
+        JSON.parse(fetch_response.to_s)
+      end
+
       def fetch_via_override(path)
         YAML.load_file(path)[:pairs]
       end
