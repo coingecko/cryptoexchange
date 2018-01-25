@@ -38,15 +38,6 @@ module Cryptoexchange::Exchanges
               timestamp: DateTime.now.to_time.to_i
           end
         end
-
-        private
-
-        def http_get(endpoint)
-          ctx = OpenSSL::SSL::SSLContext.new
-          ctx.verify_mode = OpenSSL::SSL::VERIFY_NONE
-          fetch_response = HTTP.timeout(:write => 2, :connect => 5, :read => 8).get(endpoint, ssl_context: ctx)
-        end
-
       end
     end
   end
