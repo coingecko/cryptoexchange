@@ -71,6 +71,7 @@ Or install it yourself as:
 | Hksy              | Y       |            | Y       |         | User-Defined|
 | Huobi             | Y       |            |         |         | Y           |
 | Itbit             | Y       |            |         |         | User-Defined|
+| KKex              | Y       | Y          | Y       |         | Y           |
 | Jubi              | Y       |            |         |         | Y           |
 | Korbit            | Y       |            |         |         | User-Defined|
 | Kraken            | Y       |            |         |         | Y           |

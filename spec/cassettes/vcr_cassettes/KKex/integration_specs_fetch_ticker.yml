@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kkex.com/api/v1/ticker?symbol=ETHBTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - kkex.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 07 Dec 2017 05:25:12 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '182'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Language, Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Language:
+      - en
+      Set-Cookie:
+      - django_language=en; Path=/
+      - sessionid=yrwpnbfm972ofzdlfj6bnffdlcdw424i; httponly; Path=/
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      - max-age=63072000; includeSubdomains; preload
+    body:
+      encoding: ASCII-8BIT
+      string: '{"date": 1512624312, "ticker": {"sell": "0.02975", "buy": "0.03042",
+        "last": "0.03093", "vol": "19.184550039", "high": "0.03595", "low": "0.0301",
+        "open": "0.03595"}, "result": true}'
+    http_version: 
+  recorded_at: Thu, 07 Dec 2017 05:25:12 GMT
+recorded_with: VCR 3.0.3
