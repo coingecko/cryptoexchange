@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bibox.com/v1/mdata?cmd=ticker&pair=BIX_BTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bibox.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 25 Jan 2018 02:15:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '221'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d493eabc90fddab8018595b7ed0d687f91516846519; expires=Fri, 25-Jan-19
+        02:15:19 GMT; path=/; domain=.bibox.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - undefined
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-access-token, X-Requested-With
+      Access-Control-Max-Age:
+      - '172800'
+      X-Ca-Request-Id:
+      - 1D70CCC5-D778-4E86-93F6-03E7A82B50ED
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"dd-6YyNJw5G622ByLi4bWJt1WtCtlc"
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e27b95b8c3d8532-HKG
+    body:
+      encoding: UTF-8
+      string: '{"result":{"buy":"0.00011291","high":"0.00011499","last":"0.00011291","low":"0.00010787","sell":"0.000113","timestamp":1516846518390,"vol":"11958551","last_cny":"8.16","last_usd":"1.28","percent":"+0.52%"},"cmd":"ticker"}'
+    http_version: 
+  recorded_at: Thu, 25 Jan 2018 02:15:19 GMT
+recorded_with: VCR 3.0.3
