@@ -5,46 +5,26 @@ module Cryptoexchange
     end
 
     def pairs(exchange)
-      begin
-        pairs_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Pairs"
-        pairs_class = Object.const_get(pairs_classname)
-        pairs_object = pairs_class.new
-        pairs_object.fetch
-      rescue HTTP::ConnectionError => e
-        raise Cryptoexchange::HttpConnectionError, e
-      rescue HTTP::TimeoutError => e
-        raise Cryptoexchange::HttpTimeoutError, e
-      rescue JSON::ParserError => e
-        raise Cryptoexchange::JsonParseError, e
-      rescue TypeError => e
-        raise Cryptoexchange::TypeFormatError, e
-      end
+      pairs_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Pairs"
+      pairs_class = Object.const_get(pairs_classname)
+      pairs_object = pairs_class.new
+      pairs_object.fetch
     end
 
     def ticker(market_pair)
-      begin
-        exchange = market_pair.market
-        market_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Market"
-        market_class = Object.const_get(market_classname)
-        market = market_class.new
+      exchange = market_pair.market
+      market_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Market"
+      market_class = Object.const_get(market_classname)
+      market = market_class.new
 
-        if market_class.supports_individual_ticker_query?
-          market.fetch(market_pair)
-        else
-          tickers = market.fetch
-          tickers.find do |t|
-            t.base.casecmp(market_pair.base) == 0 &&
-              t.target.casecmp(market_pair.target) == 0
-          end
+      if market_class.supports_individual_ticker_query?
+        market.fetch(market_pair)
+      else
+        tickers = market.fetch
+        tickers.find do |t|
+          t.base.casecmp(market_pair.base) == 0 &&
+            t.target.casecmp(market_pair.target) == 0
         end
-      rescue HTTP::ConnectionError => e
-        raise Cryptoexchange::HttpConnectionError, e
-      rescue HTTP::TimeoutError => e
-        raise Cryptoexchange::HttpTimeoutError, e
-      rescue JSON::ParserError => e
-        raise Cryptoexchange::JsonParseError, e
-      rescue TypeError => e
-        raise Cryptoexchange::TypeFormatError, e
       end
     end
 
