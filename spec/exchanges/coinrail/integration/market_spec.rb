@@ -14,22 +14,22 @@ RSpec.describe 'Coinrail integration specs' do
     expect(pair.market).to eq 'coinrail'
   end
 
-  # it 'fetch ticker' do
-  #   ticker = client.ticker(btc_krw_pair)
-  #
-  #   expect(ticker.base).to eq 'BTC'
-  #   expect(ticker.target).to eq 'KRW'
-  #   expect(ticker.market).to eq 'coinnest'
-  #   expect(ticker.last).to be_a Numeric
-  #   expect(ticker.ask).to be_a Numeric
-  #   expect(ticker.bid).to be_a Numeric
-  #   expect(ticker.low).to be_a Numeric
-  #   expect(ticker.high).to be_a Numeric
-  #   expect(ticker.volume).to be_a Numeric
-  #   expect(ticker.timestamp).to be_a Numeric
-  #   expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
-  #   expect(ticker.payload).to_not be nil
-  # end
+  it 'fetch ticker' do
+    ticker = client.ticker(btc_krw_pair)
+
+    expect(ticker.base).to eq 'BTC'
+    expect(ticker.target).to eq 'KRW'
+    expect(ticker.market).to eq 'coinrail'
+    expect(ticker.last).to be_a Numeric
+    expect(ticker.ask).to be_a Numeric
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.low).to be_a Numeric
+    expect(ticker.high).to be_a Numeric
+    expect(ticker.volume).to be_a Numeric
+    expect(ticker.timestamp).to be_a Numeric
+    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.payload).to_not be nil
+  end
   #
   # it 'fetch order book' do
   #   order_book = client.order_book(btc_krw_pair)
