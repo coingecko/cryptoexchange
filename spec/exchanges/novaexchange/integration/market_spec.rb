@@ -41,4 +41,8 @@ RSpec.describe 'Novaexchange integration specs' do
     ticker = client.ticker(doge_btc_pair)
     expect(ticker.last).to be < 1
   end
+
+  it 'fail to parse ticker' do
+    expect { client.ticker(Cryptoexchange::Models::MarketPair.new(base: 'ctic2', target: 'esp2', market: 'novaexchange')) }.to raise_error(Cryptoexchange::ResultParseError)
+  end
 end

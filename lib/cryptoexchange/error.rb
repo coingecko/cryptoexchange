@@ -16,4 +16,7 @@ module Cryptoexchange
 
   class TypeFormatError < Error
   end
+
+  class ResultParseError < Error
+  end
 end

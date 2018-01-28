@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.cryptopia.co.nz/api/GetMarket/JET_LTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.cryptopia.co.nz
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/10.0
+      Date:
+      - Sun, 28 Jan 2018 09:07:50 GMT
+      Connection:
+      - close
+      Content-Length:
+      - '78'
+      Set-Cookie:
+      - "___utmvaYfuYcMIB=QjB\x01VnnG; path=/; Max-Age=900"
+      - '___utmvbYfuYcMIB=DZxXaJOKaly: jth; path=/; Max-Age=900'
+      - ___utmvmYfuYcMIB=UpURPcUDcDL; path=/; Max-Age=900
+      - incap_ses_967_1244263=LxeMQ/uRpwv7CixhdXlrDeaSbVoAAAAATUjeuvMwgirjZIUHwDSWKA==;
+        path=/; Domain=.cryptopia.co.nz
+      - nlbi_1244263=y+sOJaCRtV5Sh/DLa3N1fgAAAAA62CR3waZ/PreZmFa7Bhri; path=/; Domain=.cryptopia.co.nz
+      - visid_incap_1244263=RnQ4eF9uSBSPQTGttE+yaOWSbVoAAAAAQUIPAAAAAACQ5jasce2ZPVemUGO34JRd;
+        expires=Sun, 27 Jan 2019 11:16:47 GMT; path=/; Domain=.cryptopia.co.nz
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Iinfo:
+      - 12-38830536-38830539 NNNN CT(187 194 0) RT(1517130469827 35) q(0 0 4 1) r(7
+        7) U2
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: UTF-8
+      string: '{"Success":true,"Message":null,"Data":null,"Error":"Market JET_LTC
+        not found"}'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 09:07:51 GMT
+recorded_with: VCR 3.0.3

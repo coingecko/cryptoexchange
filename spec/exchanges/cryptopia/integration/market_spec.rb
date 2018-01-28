@@ -66,4 +66,8 @@ RSpec.describe 'Cryptopia integration specs' do
     expect(trade.payload).to_not be nil
   end
 
+  it 'fail to parse ticker' do
+    expect { client.ticker(Cryptoexchange::Models::MarketPair.new(base: 'jet', target: 'ltc', market: 'cryptopia')) }.to raise_error(Cryptoexchange::ResultParseError)
+  end
+
 end

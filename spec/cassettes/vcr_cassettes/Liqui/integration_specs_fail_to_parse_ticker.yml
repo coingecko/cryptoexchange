@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.liqui.io/api/3/ticker/btc_ltc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.liqui.io
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Jan 2018 09:13:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d6090be0b7120f5c0c20224b058c6bf171517130780; expires=Mon, 28-Jan-19
+        09:13:00 GMT; path=/; domain=.liqui.io; HttpOnly; Secure
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e42d55179de6f96-SIN
+    body:
+      encoding: UTF-8
+      string: '{"success":0,"error":"not available"}'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 09:13:01 GMT
+recorded_with: VCR 3.0.3
