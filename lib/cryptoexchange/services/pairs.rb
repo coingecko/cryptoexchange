@@ -18,8 +18,22 @@ module Cryptoexchange
       end
 
       def fetch_via_api(endpoint = self.class::PAIRS_URL)
-        fetch_response = HTTP.timeout(:write => 2, :connect => 5, :read => 8).get(endpoint)
-        JSON.parse(fetch_response.to_s)
+        begin
+          fetch_response = HTTP.timeout(:write => 2, :connect => 5, :read => 8).get(endpoint)
+          if fetch_response.code == 200
+            fetch_response.parse :json
+          else
+            raise Cryptoexchange::HttpResponseError, { response: fetch_response }
+          end
+        rescue HTTP::ConnectionError => e
+          raise Cryptoexchange::HttpConnectionError, { error: e, response: fetch_response }
+        rescue HTTP::TimeoutError => e
+          raise Cryptoexchange::HttpTimeoutError, { error: e, response: fetch_response }
+        rescue JSON::ParserError => e
+          raise Cryptoexchange::JsonParseError, { error: e, response: fetch_response }
+        rescue TypeError => e
+          raise Cryptoexchange::TypeFormatError, { error: e, response: fetch_response }
+        end
       end
 
       def fetch_via_override(path)

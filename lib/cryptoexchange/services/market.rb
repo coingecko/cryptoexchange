@@ -9,8 +9,22 @@ module Cryptoexchange
 
       def fetch(endpoint)
         LruTtlCache.ticker_cache.getset(endpoint) do
-          response = http_get(endpoint)
-          JSON.parse(response.to_s)
+          begin
+            response = http_get(endpoint)
+            if response.code == 200
+              response.parse :json
+            else
+              raise Cryptoexchange::HttpResponseError, { response: response }
+            end
+          rescue HTTP::ConnectionError => e
+            raise Cryptoexchange::HttpConnectionError, { error: e, response: response }
+          rescue HTTP::TimeoutError => e
+            raise Cryptoexchange::HttpTimeoutError, { error: e, response: response }
+          rescue JSON::ParserError => e
+            raise Cryptoexchange::JsonParseError, { error: e, response: response }
+          rescue TypeError => e
+            raise Cryptoexchange::TypeFormatError, { error: e, response: response }
+          end
         end
       end
 
