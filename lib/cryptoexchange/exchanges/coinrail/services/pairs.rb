@@ -13,7 +13,6 @@ module Cryptoexchange::Exchanges
                               market: Coinrail::Market::NAME
                             )
           end
-
           market_pairs
         end
 
