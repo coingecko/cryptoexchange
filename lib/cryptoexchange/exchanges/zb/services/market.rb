@@ -7,14 +7,14 @@ module Cryptoexchange::Exchanges
             true
           end
         end
-        
+
         def fetch(market_pair)
           output = super(ticker_url(market_pair))
           adapt(output, market_pair)
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Zb::Market::API_URL}/ticker/?market=#{market_pair.base.downcase}_#{market_pair.target.downcase}"
+          "#{Cryptoexchange::Exchanges::Zb::Market::API_URL}/ticker?market=#{market_pair.base.downcase}_#{market_pair.target.downcase}"
         end
 
         def adapt(output, market_pair)
