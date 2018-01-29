@@ -13,6 +13,8 @@ module Cryptoexchange
             response = http_get(endpoint)
             if response.code == 200
               response.parse :json
+            elsif response.code == 400
+              raise Cryptoexchange::HttpBadRequestError, { response: response }
             else
               raise Cryptoexchange::HttpResponseError, { response: response }
             end

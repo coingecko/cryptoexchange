@@ -30,31 +30,36 @@ RSpec.describe Cryptoexchange::Services::Pairs do
   end
 
   context 'error propagation' do
-    let(:market) { Cryptoexchange::Services::Market.new }
+    let(:pairs) { Cryptoexchange::Exchanges::Gdax::Services::Pairs.new }
 
     it 'throws Cryptoexchange::HttpResponseError' do
-      expect(market).to receive(:http_get).with('http://someendpoint.com') { HTTP::Response.new(status: 500, body: {}, version: '1.1') }
-      expect{ market.fetch('http://someendpoint.com') }.to raise_error(Cryptoexchange::HttpResponseError)
+      expect(pairs).to receive(:http_get) { HTTP::Response.new(status: 500, body: {}, version: '1.1') }
+      expect{ pairs.fetch_via_api }.to raise_error(Cryptoexchange::HttpResponseError)
+    end
+
+    it 'throws Cryptoexchange::HttpBadRequestError' do
+      expect(pairs).to receive(:http_get) { HTTP::Response.new(status: 400, body: {}, version: '1.1') }
+      expect{ pairs.fetch }.to raise_error(Cryptoexchange::HttpBadRequestError)
     end
 
     it 'throws Cryptoexchange::HttpConnectionError' do
-      expect(market).to receive(:http_get).with('http://someendpoint.com') { raise HTTP::ConnectionError }
-      expect{ market.fetch('http://someendpoint.com') }.to raise_error(Cryptoexchange::HttpConnectionError)
+      expect(pairs).to receive(:http_get) { raise HTTP::ConnectionError }
+      expect{ pairs.fetch }.to raise_error(Cryptoexchange::HttpConnectionError)
     end
 
     it 'throws Cryptoexchange::HttpTimeoutError' do
-      expect(market).to receive(:http_get).with('http://someendpoint.com') { raise HTTP::TimeoutError }
-      expect{ market.fetch('http://someendpoint.com') }.to raise_error(Cryptoexchange::HttpTimeoutError)
+      expect(pairs).to receive(:http_get) { raise HTTP::TimeoutError }
+      expect{ pairs.fetch }.to raise_error(Cryptoexchange::HttpTimeoutError)
     end
 
     it 'throws Cryptoexchange::JsonParseError' do
-      expect(market).to receive(:http_get).with('http://someendpoint.com') { raise JSON::ParserError }
-      expect{ market.fetch('http://someendpoint.com') }.to raise_error(Cryptoexchange::JsonParseError)
+      expect(pairs).to receive(:http_get) { raise JSON::ParserError }
+      expect{ pairs.fetch }.to raise_error(Cryptoexchange::JsonParseError)
     end
 
     it 'throws Cryptoexchange::TypeFormatError' do
-      expect(market).to receive(:http_get).with('http://someendpoint.com') { raise TypeError }
-      expect{ market.fetch('http://someendpoint.com') }.to raise_error(Cryptoexchange::TypeFormatError)
+      expect(pairs).to receive(:http_get) { raise TypeError }
+      expect{ pairs.fetch }.to raise_error(Cryptoexchange::TypeFormatError)
     end
   end
 end

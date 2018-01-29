@@ -19,9 +19,11 @@ module Cryptoexchange
 
       def fetch_via_api(endpoint = self.class::PAIRS_URL)
         begin
-          fetch_response = HTTP.timeout(:write => 2, :connect => 5, :read => 8).get(endpoint)
+          fetch_response = http_get(endpoint)
           if fetch_response.code == 200
             fetch_response.parse :json
+          elsif fetch_response.code == 400
+            raise Cryptoexchange::HttpBadRequestError, { response: fetch_response }
           else
             raise Cryptoexchange::HttpResponseError, { response: fetch_response }
           end
@@ -59,6 +61,10 @@ module Cryptoexchange
       def exchange_class
         exchange_name = self.class.name.split('::')[2]
         Object.const_get "Cryptoexchange::Exchanges::#{exchange_name}::Market"
+      end
+
+      def http_get(endpoint)
+        fetch_response = HTTP.timeout(:write => 2, :connect => 5, :read => 8).get(endpoint)
       end
     end
   end

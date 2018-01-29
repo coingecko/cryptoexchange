@@ -31,6 +31,11 @@ RSpec.describe Cryptoexchange::Services::Market do
       expect{ market.fetch('http://someendpoint.com') }.to raise_error(Cryptoexchange::HttpResponseError)
     end
 
+    it 'throws Cryptoexchange::HttpBadRequestError' do
+      expect(market).to receive(:http_get).with('http://someendpoint.com') { HTTP::Response.new(status: 400, body: {}, version: '1.1') }
+      expect{ market.fetch('http://someendpoint.com') }.to raise_error(Cryptoexchange::HttpBadRequestError)
+    end
+
     it 'throws Cryptoexchange::HttpConnectionError' do
       expect(market).to receive(:http_get).with('http://someendpoint.com') { raise HTTP::ConnectionError }
       expect{ market.fetch('http://someendpoint.com') }.to raise_error(Cryptoexchange::HttpConnectionError)

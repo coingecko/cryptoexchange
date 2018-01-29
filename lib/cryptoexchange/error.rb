@@ -5,6 +5,9 @@ module Cryptoexchange
   class HttpResponseError < Error
   end
 
+  class HttpBadRequestError < Error
+  end
+
   class HttpConnectionError < Error
   end
 
