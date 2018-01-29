@@ -6,9 +6,8 @@ module Cryptoexchange::Exchanges
           def supports_individual_ticker_query?
             false
           end
-          require 'byebug'
         end
-
+    
         def fetch
           raw_output = super(ticker_url)
           output = []
@@ -35,7 +34,6 @@ module Cryptoexchange::Exchanges
                             target: target,
                             market: Coinrail::Market::NAME
                           )
-                          byebug
               adapt(pair, market_pair)
           end
         end
@@ -46,15 +44,10 @@ module Cryptoexchange::Exchanges
           ticker.target = market_pair.target
 
           ticker.market = Coinrail::Market::NAME
-          # ticker.ask = NumericHelper.to_d(output['sell'])
-          # ticker.bid = NumericHelper.to_d(output['buy'])
           ticker.last = NumericHelper.to_d(output["last24_price"])
-          # ticker.high = NumericHelper.to_d(output['high'])
-          # ticker.low = NumericHelper.to_d(output['low'])
           ticker.volume = NumericHelper.to_d(output["trade_amount"])
-          ticker.timestamp = output['time'].to_i
+          ticker.timestamp = Time.now.to_i
           ticker.payload = output
-          byebug
           ticker
         end
       end

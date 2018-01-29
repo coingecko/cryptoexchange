@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Coinnest
+  module Coinrail
     module Services
       class Trades < Cryptoexchange::Services::Market
         def fetch(market_pair)
@@ -8,20 +8,18 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Coinnest::Market::API_URL}/api/pub/trades?coin=#{market_pair.base.downcase}"
+          "#{Cryptoexchange::Exchanges::Coinrail::Market::API_URL}/public/last/transaction?currency=#{market_pair.base}-#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
-          output.collect do |trade|
+          output['transaction_list'].collect do |trade|
             tr = Cryptoexchange::Models::Trade.new
-            tr.trade_id  = trade['tid']
             tr.base      = market_pair.base
             tr.target    = market_pair.target
-            tr.market    = Coinnest::Market::NAME
-            tr.type      = trade['type']
+            tr.market    = Coinrail::Market::NAME
             tr.price     = trade['price']
-            tr.amount    = trade['amount']
-            tr.timestamp = trade['date'].to_i
+            tr.amount    = trade['qty']
+            tr.timestamp = trade['time'].to_i
             tr.payload   = trade
             tr
           end
