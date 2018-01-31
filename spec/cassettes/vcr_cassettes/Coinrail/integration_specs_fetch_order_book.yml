@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinrail.co.kr/public/orderbook?currency=BTC-KRW
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinrail.co.kr
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '2465'
+      Connection:
+      - close
+      Access-Control-Allow-Headers:
+      - X-COINRAIL-PAYLOAD, X-COINRAIL-SIGNATURE
+      Access-Control-Allow-Methods:
+      - POST, GET, DELETE, PUT, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '3600'
+      Date:
+      - Mon, 29 Jan 2018 15:16:44 GMT
+      Server:
+      - nginx/1.12.1
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 785798fff734e0009a9ec9b7a34d6d1b.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - IePAJc_06l-gnkFr9NAtLUvYf3RDdKSAnHtQOsH4Qw1k1SRrjBxxFQ==
+    body:
+      encoding: UTF-8
+      string: '{"ask_orderbook":[{"qty":"0.06080000","price":"12660000"},{"qty":"0.15460000","price":"12663000"},{"qty":"0.00010000","price":"12695000"},{"qty":"0.00010000","price":"12698000"},{"qty":"0.31220000","price":"12699000"},{"qty":"0.36200000","price":"12700000"},{"qty":"0.59890000","price":"12724000"},{"qty":"0.00010000","price":"12750000"},{"qty":"0.00760000","price":"12790000"},{"qty":"0.15270000","price":"12798000"},{"qty":"0.02360000","price":"12799000"},{"qty":"0.10450000","price":"12890000"},{"qty":"0.10460000","price":"12980000"},{"qty":"0.00030000","price":"12997000"},{"qty":"0.15380000","price":"12998000"},{"qty":"0.01490000","price":"12999000"},{"qty":"0.19750000","price":"13000000"},{"qty":"0.70460000","price":"13050000"},{"qty":"0.27310000","price":"13100000"},{"qty":"0.01230000","price":"13110000"},{"qty":"0.01230000","price":"13200000"},{"qty":"0.00610000","price":"13205000"},{"qty":"0.00010000","price":"13220000"},{"qty":"0.40810000","price":"13300000"},{"qty":"0.64150000","price":"13350000"},{"qty":"0.30000000","price":"13400000"},{"qty":"0.00610000","price":"13436000"},{"qty":"0.05400000","price":"13470000"},{"qty":"1.57230000","price":"13500000"},{"qty":"0.02000000","price":"13600000"}],"bid_orderbook":[{"qty":"0.00010000","price":"12602000"},{"qty":"0.00010000","price":"12601000"},{"qty":"0.03050000","price":"12600000"},{"qty":"0.15820000","price":"12561000"},{"qty":"0.02360000","price":"12560000"},{"qty":"0.06200000","price":"12555000"},{"qty":"0.00010000","price":"12538000"},{"qty":"0.00010000","price":"12537000"},{"qty":"0.00010000","price":"12536000"},{"qty":"0.06200000","price":"12534000"},{"qty":"0.02590000","price":"12533000"},{"qty":"0.00010000","price":"12532000"},{"qty":"0.00010000","price":"12531000"},{"qty":"0.00010000","price":"12530000"},{"qty":"0.00010000","price":"12529000"},{"qty":"0.00010000","price":"12528000"},{"qty":"0.00010000","price":"12527000"},{"qty":"0.00010000","price":"12526000"},{"qty":"0.12580000","price":"12525000"},{"qty":"0.00010000","price":"12524000"},{"qty":"0.00010000","price":"12523000"},{"qty":"0.03110000","price":"12510000"},{"qty":"0.15710000","price":"12509000"},{"qty":"0.04520000","price":"12502000"},{"qty":"0.34890000","price":"12499000"},{"qty":"0.43530000","price":"12497000"},{"qty":"0.09020000","price":"12484000"},{"qty":"0.00110000","price":"12483000"},{"qty":"0.13230000","price":"12440000"},{"qty":"0.02000000","price":"12429000"}],"error_code":0,"message":""}'
+    http_version: 
+  recorded_at: Mon, 29 Jan 2018 15:16:45 GMT
+recorded_with: VCR 3.0.3
