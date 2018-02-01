@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://crix-api-endpoint.upbit.com/v1/crix/candles/days/?code=CRIX.UPBIT.KRW-ETH
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - crix-api-endpoint.upbit.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Feb 2018 16:30:10 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Application-Context:
+      - stockplus_quotation_api:aws_production:10080
+    body:
+      encoding: UTF-8
+      string: '[{"code":"CRIX.UPBIT.KRW-ETH","candleDateTime":"2018-02-01T00:00:00+00:00","candleDateTimeKst":"2018-02-01T09:00:00+09:00","openingPrice":1257000.00000000,"highPrice":1305500.00000000,"lowPrice":1162000.00000000,"tradePrice":1162000.00000000,"candleAccTradeVolume":186880.55239727,"candleAccTradePrice":234039510979.86329500,"timestamp":1517502612330,"prevClosingPrice":1257500.00000000,"change":"FALL","changePrice":95500.00000000,"changeRate":0.0759443340,"signedChangePrice":-95500.00000000,"signedChangeRate":-0.0759443340}]'
+    http_version: 
+  recorded_at: Thu, 01 Feb 2018 16:30:10 GMT
+recorded_with: VCR 3.0.3

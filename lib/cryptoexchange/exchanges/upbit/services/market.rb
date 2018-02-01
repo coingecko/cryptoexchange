@@ -1,50 +1,37 @@
 module Cryptoexchange::Exchanges
-  module Bithumb
+  module Upbit
     module Services
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            false
+            true
           end
+          require 'byebug'
         end
 
-        def fetch
-          output = super ticker_url
-          adapt_all(output)
+        def fetch(market_pair)
+          output = super(ticker_url(market_pair))
+          adapt(output, market_pair)
         end
 
-        def ticker_url
-          "#{Cryptoexchange::Exchanges::Bithumb::Market::API_URL}/public/ticker/all"
+        def ticker_url(market_pair)
+          "#{Cryptoexchange::Exchanges::Upbit::Market::API_URL}/days/?code=CRIX.UPBIT.#{market_pair.target}-#{market_pair.base}"
         end
 
-        def adapt_all(output)
-          output['data'].map do |target, ticker|
-            base = target
-            target = 'KRW'
-            market_pair = Cryptoexchange::Models::MarketPair.new(
-                            base: base,
-                            target: target,
-                            market: Bithumb::Market::NAME
-                          )
-            adapt(ticker, market_pair, output['data']['date'])
-          end
-        end
-
-        def adapt(output, market_pair, date)
-          market = output
+        def adapt(output, market_pair)
           ticker = Cryptoexchange::Models::Ticker.new
+          byebug
           ticker.base = market_pair.base
           ticker.target = market_pair.target
-          ticker.market = Bithumb::Market::NAME
-          ticker.ask = NumericHelper.to_d(market['sell_price'])
-          ticker.bid = NumericHelper.to_d(market['buy_price'])
-          ticker.last = NumericHelper.to_d(market['closing_price'])
-          ticker.high = NumericHelper.to_d(market['max_price'])
-          ticker.low = NumericHelper.to_d(market['min_price'])
-          #use 1day volume instead of 7days
-          ticker.volume = NumericHelper.to_d(market['volume_1day'])
-          ticker.timestamp = date.to_i / 1000
-          ticker.payload = market
+          ticker.market = Upbit::Market::NAME
+          # ticker.ask = NumericHelper.to_d(output['sell'])
+          # ticker.bid = NumericHelper.to_d(output['buy'])
+          ticker.last = NumericHelper.to_d(output[0]["tradePrice"])
+          ticker.high = NumericHelper.to_d(output[0]["highPrice"])
+          ticker.low = NumericHelper.to_d(output[0]["lowPrice"])
+          ticker.volume = NumericHelper.to_d(output[0]["candleAccTradeVolume"])
+          ticker.timestamp = DateTime.parse(output[0]["candleDateTime"]).strftime("%s").to_i
+          ticker.payload = output
           ticker
         end
       end
