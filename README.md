@@ -62,6 +62,7 @@ Or install it yourself as:
 | CryptoBridge      | Y       |            |         |         | Y           |
 | Cryptopia         | Y       | Y          | Y       |         | Y           |
 | EtherDelta        | Y       |            |         |         | Y           |
+| Ethfinex          | Y       | Y          | Y       |         | Y           |
 | Exmo              | Y       | Y          | Y       |         | Y           |
 | Gate              | Y       | Y          | Y       |         | Y           |
 | Gatecoin          | Y       |            |         |         | Y           |
