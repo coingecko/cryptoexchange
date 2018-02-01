@@ -107,6 +107,7 @@ Or install it yourself as:
 | Yuanbao           | Y       |            |         |         | User-Defined|
 | Yunbi             | Y       |            |         |         | Y           |
 | Zaif              | Y       | Y          | Y       |         | Y           |
+| ZB                | Y       | Y          | Y       |         | Y           |
 
 ## Usage
 
