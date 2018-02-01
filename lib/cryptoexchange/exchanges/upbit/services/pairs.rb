@@ -5,20 +5,15 @@ module Cryptoexchange::Exchanges
 
         def fetch
           output = super
-          adapt(output)
-        end
-
-        def adapt(output)
-          pairs = []
-          output['data'].keys.each do |base|
-            next if base == 'date'
-            pairs << Cryptoexchange::Models::MarketPair.new(
-                base: base,
-                target: 'KRW',
-                market: Upbit::Market::NAME
-              )
+          market_pairs = []
+          output.each do |pair|
+            market_pairs << Cryptoexchange::Models::MarketPair.new(
+                              base: pair[:base],
+                              target: pair[:target],
+                              market: Upbit::Market::NAME
+                            )
           end
-          pairs
+          market_pairs
         end
       end
     end
