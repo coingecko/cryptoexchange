@@ -7,7 +7,7 @@ module Cryptoexchange::Exchanges
             false
           end
         end
-    
+
         def fetch
           raw_output = super(ticker_url)
           output = []
@@ -23,7 +23,7 @@ module Cryptoexchange::Exchanges
 
         def ticker_url
           # No API endpoint available to obtain tickers (as at 29/01/2018), hence the URL below:
-          "https://coinrail.co.kr/main/market_info?v=#{(Time.now.to_f * 1000).to_i}"
+          "#{Cryptoexchange::Exchanges::Coinrail::Market::TICKER_URL}"
         end
 
         def adapt_all(output)
