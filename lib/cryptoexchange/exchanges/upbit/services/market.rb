@@ -6,7 +6,6 @@ module Cryptoexchange::Exchanges
           def supports_individual_ticker_query?
             true
           end
-          require 'byebug'
         end
 
         def fetch(market_pair)
@@ -20,7 +19,6 @@ module Cryptoexchange::Exchanges
 
         def adapt(output, market_pair)
           ticker = Cryptoexchange::Models::Ticker.new
-          byebug
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Upbit::Market::NAME
