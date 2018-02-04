@@ -2,15 +2,15 @@ module Cryptoexchange::Exchanges
   module Bigone
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bigone::Market::API_URL}"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bigone::Market::API_URL}/markets"
 
         def fetch
           output = super
           market_pairs = []
-          output.each do |pair|
+          output['data'].each do |pair|
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair[1][0]["base"],
-                              target: pair[1][0]["quote"],
+                              base: pair['base'],
+                              target: pair['quote'],
                               market: Bigone::Market::NAME
                             )
           end
