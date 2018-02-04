@@ -28,7 +28,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rb-readline"
   spec.add_development_dependency "vcr", "~> 3.0.3"
   spec.add_development_dependency "webmock"
-  spec.add_development_dependency "byebug"
 
 <<<<<<< HEAD
   spec.add_dependency "http", '~> 2.2.2'

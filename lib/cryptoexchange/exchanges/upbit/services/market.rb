@@ -22,8 +22,6 @@ module Cryptoexchange::Exchanges
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Upbit::Market::NAME
-          # ticker.ask = NumericHelper.to_d(output['sell'])
-          # ticker.bid = NumericHelper.to_d(output['buy'])
           ticker.last = NumericHelper.to_d(output[0]["tradePrice"])
           ticker.high = NumericHelper.to_d(output[0]["highPrice"])
           ticker.low = NumericHelper.to_d(output[0]["lowPrice"])
