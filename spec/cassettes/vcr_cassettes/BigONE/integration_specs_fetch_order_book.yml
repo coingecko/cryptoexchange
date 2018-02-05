@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.big.one/markets/ETH-BTC/book
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.big.one
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 04 Feb 2018 14:28:52 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - BODID=2A30CF62-01CB-4E5B-B35A-BD71CB5D83DC; Path=/; Domain=big.one; Max-Age=31536000;
+        Secure
+      - __cfduid=dd200d51d9669af5858aa07174c87dd141517754532; expires=Mon, 04-Feb-19
+        14:28:52 GMT; path=/; domain=.big.one; HttpOnly; Secure
+      X-Build-Info:
+      - 7ecb3115d510c99009fe5bd2d341a7cab43203ea-go1.9.3
+      X-Request-Id:
+      - 547FA5FB-0B92-4AE3-93AC-64AE53BC4C0D
+      X-Runtime:
+      - '0.001631'
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e7e51a39ac52d11-KUL
+    body:
+      encoding: UTF-8
+      string: '{"data":{"type":"orderbook","asks":[{"type":"order","price":"0.10160000","amount":"16.29390000"},{"type":"order","price":"0.10191500","amount":"0.20000000"},{"type":"order","price":"0.10215500","amount":"0.09460000"},{"type":"order","price":"0.10282500","amount":"0.02970000"},{"type":"order","price":"0.10294700","amount":"0.31000000"},{"type":"order","price":"0.10311168","amount":"0.19610000"},{"type":"order","price":"0.10312700","amount":"0.02190000"},{"type":"order","price":"0.10327600","amount":"1.40660000"},{"type":"order","price":"0.10347000","amount":"0.04000000"},{"type":"order","price":"0.10348600","amount":"0.04000000"},{"type":"order","price":"0.10380544","amount":"0.87910000"},{"type":"order","price":"0.10427400","amount":"0.04000000"},{"type":"order","price":"0.10427402","amount":"0.02000000"},{"type":"order","price":"0.10449920","amount":"0.49180000"},{"type":"order","price":"0.10467100","amount":"0.08000000"},{"type":"order","price":"0.10468600","amount":"0.13000000"},{"type":"order","price":"0.10519296","amount":"1.73120000"},{"type":"order","price":"0.10585100","amount":"4.23570000"},{"type":"order","price":"0.10588672","amount":"0.27060000"},{"type":"order","price":"0.10615300","amount":"0.05870000"},{"type":"order","price":"0.10621100","amount":"0.04220000"},{"type":"order","price":"0.10658048","amount":"1.14120000"},{"type":"order","price":"0.10700400","amount":"0.17660000"},{"type":"order","price":"0.10727424","amount":"0.98900000"},{"type":"order","price":"0.10782800","amount":"0.10000000"},{"type":"order","price":"0.10789000","amount":"0.11270000"},{"type":"order","price":"0.10796800","amount":"0.30900000"},{"type":"order","price":"0.10830000","amount":"0.33120000"},{"type":"order","price":"0.10831000","amount":"0.12190000"},{"type":"order","price":"0.10866176","amount":"3.84430000"},{"type":"order","price":"0.10868800","amount":"0.26000000"},{"type":"order","price":"0.10905300","amount":"0.26000000"},{"type":"order","price":"0.10906100","amount":"0.01080000"},{"type":"order","price":"0.10935552","amount":"1.14610000"},{"type":"order","price":"0.11004928","amount":"0.19810000"},{"type":"order","price":"0.11074304","amount":"0.22240000"},{"type":"order","price":"0.11143680","amount":"0.27780000"},{"type":"order","price":"0.11213056","amount":"0.55040000"},{"type":"order","price":"0.11253500","amount":"0.91050000"},{"type":"order","price":"0.11282432","amount":"1.06120000"},{"type":"order","price":"0.11351808","amount":"0.41260000"},{"type":"order","price":"0.11362000","amount":"0.03190000"},{"type":"order","price":"0.11398200","amount":"0.02110000"},{"type":"order","price":"0.11421184","amount":"0.21200000"},{"type":"order","price":"0.11490560","amount":"0.25510000"},{"type":"order","price":"0.11559936","amount":"0.52660000"},{"type":"order","price":"0.11585100","amount":"0.08000000"},{"type":"order","price":"0.11600000","amount":"0.20000000"},{"type":"order","price":"0.11629312","amount":"0.07010000"},{"type":"order","price":"0.11650000","amount":"0.79250000"}],"bids":[{"type":"order","price":"0.10135803","amount":"2.02820000"},{"type":"order","price":"0.10135303","amount":"0.07820000"},{"type":"order","price":"0.10134920","amount":"0.22610000"},{"type":"order","price":"0.10122400","amount":"0.27000000"},{"type":"order","price":"0.10065544","amount":"0.29120000"},{"type":"order","price":"0.10063500","amount":"0.12020000"},{"type":"order","price":"0.10052333","amount":"2.00000000"},{"type":"order","price":"0.10033700","amount":"0.05210000"},{"type":"order","price":"0.10029540","amount":"5.00000000"},{"type":"order","price":"0.10000001","amount":"3.10330000"},{"type":"order","price":"0.10000000","amount":"3.22000000"},{"type":"order","price":"0.09996168","amount":"0.83770000"},{"type":"order","price":"0.09926792","amount":"0.28840000"},{"type":"order","price":"0.09900000","amount":"10.00000000"},{"type":"order","price":"0.09880000","amount":"0.52000000"},{"type":"order","price":"0.09857416","amount":"0.11960000"},{"type":"order","price":"0.09830000","amount":"0.10000000"},{"type":"order","price":"0.09792010","amount":"9.65750000"},{"type":"order","price":"0.09788040","amount":"1.49390000"},{"type":"order","price":"0.09784300","amount":"8.57510000"},{"type":"order","price":"0.09750000","amount":"30.00000000"},{"type":"order","price":"0.09718664","amount":"1.50950000"},{"type":"order","price":"0.09700000","amount":"30.00000000"},{"type":"order","price":"0.09649288","amount":"0.73520000"},{"type":"order","price":"0.09584001","amount":"0.10000000"},{"type":"order","price":"0.09583001","amount":"0.15160000"},{"type":"order","price":"0.09579912","amount":"1.89360000"},{"type":"order","price":"0.09550020","amount":"0.20000000"},{"type":"order","price":"0.09550001","amount":"0.10000000"},{"type":"order","price":"0.09510536","amount":"1.96020000"},{"type":"order","price":"0.09500000","amount":"16.21050000"},{"type":"order","price":"0.09441160","amount":"0.35790000"},{"type":"order","price":"0.09371784","amount":"1.95660000"},{"type":"order","price":"0.09360000","amount":"1.95370000"},{"type":"order","price":"0.09302408","amount":"1.26220000"},{"type":"order","price":"0.09233032","amount":"0.40870000"},{"type":"order","price":"0.09163656","amount":"0.80700000"},{"type":"order","price":"0.09100000","amount":"6.78000000"},{"type":"order","price":"0.09094280","amount":"1.48180000"},{"type":"order","price":"0.09048000","amount":"1.71780000"},{"type":"order","price":"0.09046000","amount":"5.00000000"},{"type":"order","price":"0.09024904","amount":"0.52040000"},{"type":"order","price":"0.09001000","amount":"2.00000000"},{"type":"order","price":"0.09000068","amount":"2.00000000"},{"type":"order","price":"0.09000000","amount":"53.42040000"},{"type":"order","price":"0.08955528","amount":"0.25690000"},{"type":"order","price":"0.08888000","amount":"3.61040000"},{"type":"order","price":"0.08886152","amount":"0.08610000"},{"type":"order","price":"0.08816776","amount":"0.23710000"},{"type":"order","price":"0.08799968","amount":"2.00000000"}]}}'
+    http_version: 
+  recorded_at: Sun, 04 Feb 2018 14:28:52 GMT
+recorded_with: VCR 3.0.3
