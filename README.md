@@ -95,6 +95,7 @@ Or install it yourself as:
 | Qryptos           | Y       |            |         |         | Y           |
 | QuadrigaCX        | Y       |            |         |         | User-Defined|
 | Quoine            | Y       |            |         |         | Y           |
+| RadarRelay        | Y       |            |         |         | User-Defined|
 | Stocks Exchange   | Y       |            |         |         | Y           |
 | SZZC              | Y       |            |         |         | Y           |
 | The Rock Trading  | Y       |            |         |         | Y           |
