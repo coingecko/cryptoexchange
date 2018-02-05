@@ -9,8 +9,8 @@ module Cryptoexchange::Exchanges
           market_pairs = []
           output['data'].each do |pair|
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair['base'],
-                              target: pair['quote'],
+                              base: pair['quote'],
+                              target: pair['base'],
                               market: Bigone::Market::NAME
                             )
           end

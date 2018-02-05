@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'BigONE integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'ETH', market: 'bigone') }
+  let(:btc_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'bigone') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bigone')
@@ -17,8 +17,8 @@ RSpec.describe 'BigONE integration specs' do
   it 'fetch ticker' do
     ticker = client.ticker(btc_eth_pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'ETH'
+    expect(ticker.base).to eq 'ETH'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'bigone'
     expect(ticker.last).to be_a Numeric
     expect(ticker.low).to be_a Numeric
@@ -32,8 +32,8 @@ RSpec.describe 'BigONE integration specs' do
   it 'fetch order book' do
     order_book = client.order_book(btc_eth_pair)
 
-    expect(order_book.base).to eq 'BTC'
-    expect(order_book.target).to eq 'ETH'
+    expect(order_book.base).to eq 'ETH'
+    expect(order_book.target).to eq 'BTC'
     expect(order_book.market).to eq 'bigone'
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
@@ -51,8 +51,8 @@ RSpec.describe 'BigONE integration specs' do
     trade = trades.sample
 
     expect(trades).to_not be_empty
-    expect(trade.base).to eq 'BTC'
-    expect(trade.target).to eq 'ETH'
+    expect(trade.base).to eq 'ETH'
+    expect(trade.target).to eq 'BTC'
     expect(trade.market).to eq 'bigone'
     expect(trade.trade_id).to_not be_nil
     expect(['buy', 'sell']).to include trade.type
