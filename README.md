@@ -99,11 +99,12 @@ Or install it yourself as:
 | SZZC              | Y       |            |         |         | Y           |
 | The Rock Trading  | Y       |            |         |         | Y           |
 | Tidex             | Y       |            |         |         | Y           |
+| TradeOgre         | Y       | Y          | Y       |         | Y           |
 | Trade Satoshi     | Y       |            |         |         | Y           |
 | TuxExchange       | Y       |            |         |         | Y           |
 | Unocoin           |         |            |         |         |             |
 | Viabtc            | Y       |            |         |         | User-Defined|
-| Wex               | Y       | Y          |  Y      |         | Y           |
+| Wex               | Y       | Y          | Y       |         | Y           |
 | Yobit             | Y       |            |         |         | Y           |
 | Yuanbao           | Y       |            |         |         | User-Defined|
 | Yunbi             | Y       |            |         |         | Y           |
