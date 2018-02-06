@@ -1,6 +1,7 @@
 require "cryptoexchange/version"
 require "cryptoexchange/client"
 require "cryptoexchange/lru_ttl_cache"
+require "cryptoexchange/helpers/token_helper"
 require "cryptoexchange/helpers/string_helper"
 require "cryptoexchange/helpers/numeric_helper"
 require "cryptoexchange/helpers/hash_helper"

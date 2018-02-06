@@ -11,12 +11,10 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           pairs = []
-          output.keys.each do |pair|
-            # format example: ETH_ZRX
-            # ETH is the Target, ZRX is the Base
-            target, base = pair.split('_')
-            # Ignore non-standard BASE
-            next if base =~ /\s/ || base =~ /0x/
+          output.each do |key, value|
+            target, base = key.split('_')
+            base = TokenHelper.get_symbol(value['tokenAddr']) if base =~ /\s/ || base =~ /0x/
+            # pairs << base
             pairs << Cryptoexchange::Models::MarketPair.new({
               base: base,
               target: target,
