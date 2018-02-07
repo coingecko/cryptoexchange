@@ -3,7 +3,7 @@ module TokenHelper
     API_URL = 'https://api.ethplorer.io/getTokenInfo'
     def get_symbol(token)
       endpoint = "#{API_URL}/#{token}?apiKey=buoc5056EEZGf105"
-      LruTtlCache.ticker_cache.getset(endpoint) do
+      LruTtlCache.token_cache.getset(endpoint) do
         response = http_get(endpoint)
         if response.code == 200
           response.parse(:json)['symbol']
