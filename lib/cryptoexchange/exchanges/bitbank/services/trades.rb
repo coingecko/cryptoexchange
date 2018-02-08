@@ -14,10 +14,10 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          output.collect do |trade|
+          output['data']['transactions'].collect do |trade|
             tr = Cryptoexchange::Models::Trade.new
-            tr.trade_id  = trade['transaction_id']
-            tr.type = trade['side']
+            tr.trade_id  = trade['transaction_id'].to_s
+            tr.type      = trade['side']
             tr.base      = market_pair.base
             tr.target    = market_pair.target
             tr.price     = trade['price']
