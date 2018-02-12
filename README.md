@@ -54,6 +54,7 @@ Or install it yourself as:
 | CHBTC             | Y       |            |         |         | User-Defined|
 | Cobinhood         | Y       | Y          |         |         | Y           |
 | Coincheck         | Y       |            |         |         | User-Defined|
+| Coinex            | Y       | Y          | Y       |         | Y           |
 | CoinExchange      | Y       |            |         |         | Y           |
 | Coinmate          | Y       | Y          |         |         | User-Defined|
 | Coinnest          | Y       | Y          | Y       |         | User-Defined|
