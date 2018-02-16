@@ -60,6 +60,7 @@ Or install it yourself as:
 | Coinone           | Y       |            |         |         | Y           |
 | CoinsMarkets      | Y       |            |         |         | Y           |
 | COSS              | Y       |            |         |         | Y           |
+| CRXZone           | Y       | Y          | Y       |         | Y           |
 | CryptoBridge      | Y       |            |         |         | Y           |
 | Cryptopia         | Y       | Y          | Y       |         | Y           |
 | EtherDelta        | Y       |            |         |         | Y           |
