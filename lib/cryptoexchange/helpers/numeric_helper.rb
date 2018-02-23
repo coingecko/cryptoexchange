@@ -7,6 +7,8 @@ class NumericHelper
       else
         nil
       end
+    rescue
+      nil
     end
 
     def divide(number, divisor)
