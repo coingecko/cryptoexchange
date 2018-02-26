@@ -26,9 +26,9 @@ module Cryptoexchange::Exchanges
           volume = 0
           raw_output = HTTP.get(volume_url(market_pair))
           output = JSON.parse(raw_output)
-          output.each do |ticker|
-            volume = volume + ticker["candleAccTradeVolume"]
-          end
+            output.each do |ticker|
+              volume = volume + ticker["candleAccTradeVolume"]
+            end
           {"volume"=>volume}
         end
 

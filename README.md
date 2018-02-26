@@ -104,7 +104,7 @@ Or install it yourself as:
 | TradeOgre         | Y       | Y          | Y       |         | Y           |
 | Trade Satoshi     | Y       |            |         |         | Y           |
 | TuxExchange       | Y       |            |         |         | Y           |
-| Upbit             | Y       |            |         |         | User-Defined|
+| Upbit             | Y       |            |         |         | Y           |
 | Unocoin           |         |            |         |         |             |
 | Viabtc            | Y       |            |         |         | User-Defined|
 | Wex               | Y       | Y          | Y       |         | Y           |

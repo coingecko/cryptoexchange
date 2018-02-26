@@ -2,13 +2,10 @@ module Cryptoexchange::Exchanges
   module Upbit
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        require 'byebug'
-        byebug
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Upbit::Market::PAIRS_URL}"
 
         def fetch
-          byebug
-          raw_output = HTTP.get(PAIRS_URL)
+          raw_output = HTTP.use(:auto_inflate).headers("Accept-Encoding" => "gzip").get(PAIRS_URL)
           output = JSON.parse(raw_output)
           market_pairs = []
           output.each do |pair|
@@ -18,7 +15,6 @@ module Cryptoexchange::Exchanges
                               market: Upbit::Market::NAME
                             )
           end
-          byebug
           market_pairs
         end
       end
