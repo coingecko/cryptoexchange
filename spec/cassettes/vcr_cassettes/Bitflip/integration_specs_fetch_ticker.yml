@@ -1,0 +1,135 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.bitflip.cc/method/market.getOHLC
+    body:
+      encoding: UTF-8
+      string: '{"pair":"btc:usd"}'
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitflip.cc
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 25 Feb 2018 05:53:40 GMT
+      Content-Type:
+      - application/json; charset=utf8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d710babfbc8e739d7a144c11d08268bba1519538019; expires=Mon, 25-Feb-19
+        05:53:39 GMT; path=/; domain=.bitflip.cc; HttpOnly; Secure
+      X-Server-Time:
+      - '1519538020177'
+      X-Api-Version:
+      - '1.0'
+      Referrer-Policy:
+      - origin-when-cross-origin
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - frame-ancestors 'none'
+      X-Response-Time:
+      - '1'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3f2867cdd9326f84-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[null,{"volume":0.8935289599999999,"high":11111.12,"low":9901,"open":10654.19,"close":10395,"ohlc_avg":10515.3275,"hlc_avg":10469.04}]'
+    http_version: 
+  recorded_at: Sun, 25 Feb 2018 05:53:40 GMT
+- request:
+    method: post
+    uri: https://api.bitflip.cc/method/market.getRates
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitflip.cc
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 25 Feb 2018 05:54:31 GMT
+      Content-Type:
+      - application/json; charset=utf8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d545368a8025ada5e3e0df46e6dd2cd331519538070; expires=Mon, 25-Feb-19
+        05:54:30 GMT; path=/; domain=.bitflip.cc; HttpOnly; Secure
+      X-Server-Time:
+      - '1519538071281'
+      X-Api-Version:
+      - '1.0'
+      Referrer-Policy:
+      - origin-when-cross-origin
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - frame-ancestors 'none'
+      X-Response-Time:
+      - '3'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3f28690cf95670aa-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[null,[{"pair":"USD:EUR","buy":0.82,"sell":0.84},{"pair":"USD:RUB","buy":56.74,"sell":56.81},{"pair":"USD:THB","buy":0,"sell":99},{"pair":"USD:UAH","buy":2.73,"sell":27.1},{"pair":"BTC:USD","buy":10111.04,"sell":10395.97},{"pair":"BTC:EUR","buy":8200.95,"sell":11999.96},{"pair":"BTC:RUB","buy":560006.01,"sell":593000},{"pair":"BTC:THB","buy":0,"sell":9999999},{"pair":"BTC:UAH","buy":71800.01,"sell":300000},{"pair":"LTC:BTC","buy":0.0202,"sell":0.0213},{"pair":"LTC:USD","buy":210.01,"sell":218.99},{"pair":"LTC:EUR","buy":167.7,"sell":249.97},{"pair":"LTC:RUB","buy":11605.04,"sell":12499.99},{"pair":"LTC:THB","buy":0,"sell":0},{"pair":"LTC:UAH","buy":3400.07,"sell":8699.92},{"pair":"ETH:BTC","buy":0.0851,"sell":0.0871},{"pair":"ETH:USD","buy":855.01,"sell":879.98},{"pair":"ETH:EUR","buy":701.37,"sell":959.94},{"pair":"ETH:RUB","buy":48200.01,"sell":49999.99},{"pair":"ETH:THB","buy":0,"sell":1000000},{"pair":"ETH:UAH","buy":12606.01,"sell":41134.43},{"pair":"DASH:BTC","buy":0.061,"sell":0.0675},{"pair":"DASH:USD","buy":659.99,"sell":660},{"pair":"DASH:EUR","buy":472.44,"sell":643.75},{"pair":"DASH:RUB","buy":35900.01,"sell":39800},{"pair":"DASH:THB","buy":0,"sell":0},{"pair":"DASH:UAH","buy":4129.1,"sell":31026.63},{"pair":"DOGE:BTC","buy":6.3e-7,"sell":6.6e-7},{"pair":"DOGE:USD","buy":0.006554,"sell":0.006878},{"pair":"DOGE:EUR","buy":0.004402,"sell":0.005988},{"pair":"DOGE:RUB","buy":0.3778,"sell":0.3981},{"pair":"DOGE:THB","buy":0,"sell":289},{"pair":"DOGE:UAH","buy":0.170001,"sell":0.2},{"pair":"XRP:BTC","buy":9.002e-5,"sell":9.808e-5},{"pair":"XRP:USD","buy":0.9401,"sell":0.9797},{"pair":"XRP:EUR","buy":0.7439,"sell":0.9798},{"pair":"XRP:RUB","buy":53.01,"sell":55},{"pair":"XRP:THB","buy":0,"sell":0.99},{"pair":"XRP:UAH","buy":27,"sell":34.99},{"pair":"BCH:BTC","buy":0.15811,"sell":1.9},{"pair":"BCH:USD","buy":1661,"sell":46660},{"pair":"BCH:EUR","buy":2001,"sell":14999.99},{"pair":"BCH:RUB","buy":180600,"sell":400000},{"pair":"BCH:THB","buy":0,"sell":0},{"pair":"BCH:UAH","buy":11155,"sell":0},{"pair":"FLIP:BTC","buy":3.9e-6,"sell":4.3e-6},{"pair":"FLIP:USD","buy":0.043,"sell":0.0436},{"pair":"FLIP:EUR","buy":0.034,"sell":0.0369},{"pair":"FLIP:RUB","buy":2.42,"sell":2.44},{"pair":"FLIP:THB","buy":0,"sell":0.89},{"pair":"FLIP:UAH","buy":0.9,"sell":0.91},{"pair":"R:BTC","buy":0.00020102,"sell":0.00025},{"pair":"R:USD","buy":2.1201,"sell":2.8977},{"pair":"R:EUR","buy":1.8,"sell":2.5},{"pair":"R:RUB","buy":133.51,"sell":146.29},{"pair":"R:THB","buy":0,"sell":0},{"pair":"R:UAH","buy":30.34,"sell":89.98},{"pair":"RMC:BTC","buy":0.82,"sell":0.8996},{"pair":"RMC:USD","buy":5005,"sell":15554.55},{"pair":"RMC:EUR","buy":1020.56,"sell":15550},{"pair":"RMC:RUB","buy":400020,"sell":999099.01},{"pair":"RMC:THB","buy":0,"sell":0},{"pair":"RMC:UAH","buy":0.09,"sell":0},{"pair":"BTG:BTC","buy":0.01,"sell":0.129999},{"pair":"BTG:USD","buy":132,"sell":190},{"pair":"BTG:EUR","buy":100,"sell":270.44},{"pair":"BTG:RUB","buy":9000,"sell":18000},{"pair":"BTG:THB","buy":0,"sell":0},{"pair":"BTG:UAH","buy":1300.06,"sell":8932.04},{"pair":"XRB:BTC","buy":0.00120001,"sell":0.00149977},{"pair":"XRB:USD","buy":13.11,"sell":13.99},{"pair":"XRB:EUR","buy":11.01,"sell":14.59},{"pair":"XRB:RUB","buy":705,"sell":790},{"pair":"XRB:THB","buy":0,"sell":0},{"pair":"XRB:UAH","buy":182.00000004,"sell":658.15085},{"pair":"TRX:BTC","buy":4.0e-6,"sell":5.0e-6},{"pair":"TRX:USD","buy":0.04400011,"sell":0.04599999},{"pair":"TRX:EUR","buy":0.02500009,"sell":0.04499999},{"pair":"TRX:RUB","buy":2.53000001,"sell":2.63999999},{"pair":"TRX:THB","buy":0,"sell":0},{"pair":"TRX:UAH","buy":1.00000007,"sell":1.48499999},{"pair":"FOOD:BTC","buy":2.0e-6,"sell":3.0e-6},{"pair":"FOOD:USD","buy":0.02030018,"sell":0.02279999},{"pair":"FOOD:EUR","buy":0.015,"sell":0.02999999},{"pair":"FOOD:RUB","buy":1.21000056,"sell":1.26999999},{"pair":"FOOD:THB","buy":0,"sell":30},{"pair":"FOOD:UAH","buy":0.25000016,"sell":0.7},{"pair":"REAL:BTC","buy":0,"sell":0.001},{"pair":"REAL:USD","buy":0.61100001,"sell":0.71},{"pair":"REAL:EUR","buy":0.12423751,"sell":0.64999999},{"pair":"REAL:RUB","buy":41.5000003,"sell":42.6},{"pair":"REAL:THB","buy":0,"sell":127},{"pair":"REAL:UAH","buy":5.51250056,"sell":19.99},{"pair":"EOS:BTC","buy":0.000686,"sell":0.007777},{"pair":"EOS:USD","buy":9.070001,"sell":11.08},{"pair":"EOS:EUR","buy":6.60000006,"sell":9.99999999},{"pair":"EOS:RUB","buy":510,"sell":618},{"pair":"EOS:THB","buy":0,"sell":0},{"pair":"EOS:UAH","buy":61.00000012,"sell":349.99999999},{"pair":"BTW:BTC","buy":1.2e-5,"sell":1.3e-5},{"pair":"BTW:USD","buy":0.1335,"sell":0.1349},{"pair":"BTW:EUR","buy":0.0953,"sell":0.12},{"pair":"BTW:RUB","buy":7.45,"sell":7.57},{"pair":"BTW:THB","buy":0,"sell":0.99999999},{"pair":"BTW:UAH","buy":2.16,"sell":4}]]'
+    http_version: 
+  recorded_at: Sun, 25 Feb 2018 05:54:31 GMT
+recorded_with: VCR 3.0.3
