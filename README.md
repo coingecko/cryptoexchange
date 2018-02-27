@@ -77,6 +77,7 @@ Or install it yourself as:
 | Itbit             | Y       |            |         |         | User-Defined|
 | KKex              | Y       | Y          | Y       |         | Y           |
 | Jubi              | Y       |            |         |         | Y           |
+| Koinex            | Y       |            |         |         | Y           |
 | Korbit            | Y       |            |         |         | User-Defined|
 | Kraken            | Y       |            |         |         | Y           |
 | Kucoin            | Y       |            |         |         | Y           |
