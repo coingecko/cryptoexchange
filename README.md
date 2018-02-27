@@ -56,6 +56,7 @@ Or install it yourself as:
 | Cobinhood         | Y       | Y          |         |         | Y           |
 | Coincheck         | Y       |            |         |         | User-Defined|
 | CoinExchange      | Y       |            |         |         | Y           |
+| Coinbene          | Y       | Y          | Y       |         | Y           |
 | Coinmate          | Y       | Y          |         |         | User-Defined|
 | Coinnest          | Y       | Y          | Y       |         | User-Defined|
 | Coinone           | Y       |            |         |         | Y           |
