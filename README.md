@@ -37,6 +37,7 @@ Or install it yourself as:
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|
 | Bitconnect        | Y       |            |         |         | Y           |
 | Bitfinex          | Y       |            |         |         | Y           |
+| Bitflip           | Y       | Y          | Y       |         | Y           |
 | Bitflyer          | Y       |            |         |         | Y           |
 | Bithumb           | Y       |            |         |         | Y           |
 | Bitkonan          | Y       |            |         |         | User-Defined|

@@ -1,31 +1,30 @@
 module Cryptoexchange::Exchanges
-  module Coinnest
+  module Bitflip
     module Services
       class Trades < Cryptoexchange::Services::Market
+
         def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output, market_pair)
-          # output = super(ticker_url)
-          # pairs_output = HTTP.get(dictionary_url)
-          # pairs_dictionary = JSON.parse(pairs_output.to_s)
-          # adapt_all(output, pairs_dictionary)
+          pair_combined = "#{market_pair.base.downcase}:#{market_pair.target.downcase}"
+          raw_output = HTTP.post(tradebook_url, :body => "{\"pair\":\"#{pair_combined}\"}")
+          output = JSON.parse(raw_output)
+          adapt(output[1], market_pair)
         end
 
-        def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Coinnest::Market::API_URL}/api/pub/trades?coin=#{market_pair.base.downcase}"
+        def tradebook_url
+          "#{Cryptoexchange::Exchanges::Bitflip::Market::API_URL}market.getTrades"
         end
 
         def adapt(output, market_pair)
           output.collect do |trade|
             tr = Cryptoexchange::Models::Trade.new
-            tr.trade_id  = trade['tid']
+            tr.trade_id  = trade['id']
             tr.base      = market_pair.base
             tr.target    = market_pair.target
-            tr.market    = Coinnest::Market::NAME
+            tr.market    = Bitflip::Market::NAME
             tr.type      = trade['type']
             tr.price     = trade['price']
             tr.amount    = trade['amount']
-            tr.timestamp = trade['date'].to_i
+            tr.timestamp = trade['timestamp'].to_i
             tr.payload   = trade
             tr
           end

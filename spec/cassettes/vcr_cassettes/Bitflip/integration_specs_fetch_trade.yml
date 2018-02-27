@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.bitflip.cc/method/market.getTrades
+    body:
+      encoding: UTF-8
+      string: '{"pair":"btc:usd"}'
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitflip.cc
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 27 Feb 2018 10:48:59 GMT
+      Content-Type:
+      - application/json; charset=utf8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Server-Time:
+      - '1519728539957'
+      X-Api-Version:
+      - '1.0'
+      Referrer-Policy:
+      - origin-when-cross-origin
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - frame-ancestors 'none'
+      X-Response-Time:
+      - '4'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload;
+    body:
+      encoding: ASCII-8BIT
+      string: '[null,[{"id":"vbNmanyBJh","type":"sell","amount":0.0207528,"rate":10835,"price":224.856588,"timestamp":1519728299},{"id":"vbwTRNqNYb","type":"sell","amount":0.00178714,"rate":10835,"price":19.3636619,"timestamp":1519727772},{"id":"vbwTyU6Emi","type":"sell","amount":0.00178714,"rate":10835,"price":19.3636619,"timestamp":1519727772},{"id":"vbwjZPfG8S","type":"sell","amount":0.0025974,"rate":10835,"price":28.142829,"timestamp":1519727734},{"id":"vbwQ63vq6B","type":"sell","amount":0.0025974,"rate":10835,"price":28.142829,"timestamp":1519727642},{"id":"vbHZsTzHPF","type":"sell","amount":0.00997107,"rate":10835,"price":108.03654345,"timestamp":1519727424},{"id":"vbHWWM4ejy","type":"sell","amount":0.00184586,"rate":10835,"price":19.9998931,"timestamp":1519727418},{"id":"vbHG3gyEqn","type":"sell","amount":0.00184586,"rate":10835,"price":19.9998931,"timestamp":1519727417},{"id":"vbHGFW3fhE","type":"sell","amount":0.00769805,"rate":10835,"price":83.40837175,"timestamp":1519727414},{"id":"vbHnBVbtVK","type":"sell","amount":0.00635387,"rate":10835,"price":68.84418145,"timestamp":1519727412},{"id":"vbBKfpD2pc","type":"sell","amount":0.00184586,"rate":10835,"price":19.9998931,"timestamp":1519727408},{"id":"vbB886snD2","type":"sell","amount":0.00184586,"rate":10835,"price":19.9998931,"timestamp":1519727407},{"id":"vbB6neCpnF","type":"sell","amount":0.00320293,"rate":10835,"price":34.70374655,"timestamp":1519727392},{"id":"vbB6n2rxEg","type":"sell","amount":0.00199187,"rate":10835.01,"price":21.58193136,"timestamp":1519727392},{"id":"vbB4P9uUeL","type":"sell","amount":0.00141476,"rate":10835.01,"price":15.32893874,"timestamp":1519727390},{"id":"vbBk7eJzq6","type":"sell","amount":0.00184586,"rate":10835.01,"price":19.99991155,"timestamp":1519727382},{"id":"vbBdC5TBmP","type":"sell","amount":0.00149358,"rate":10835.01,"price":16.18295423,"timestamp":1519727380},{"id":"vbBgDN58GW","type":"sell","amount":0.00184586,"rate":10835.01,"price":19.99991155,"timestamp":1519727372},{"id":"vbB3gACsdX","type":"sell","amount":0.00184586,"rate":10835.01,"price":19.99991155,"timestamp":1519727369},{"id":"vbBMRgnSRM","type":"sell","amount":0.00019152,"rate":10835.01,"price":2.07512111,"timestamp":1519727265},{"id":"vbBMRP4BwK","type":"sell","amount":0.00537621,"rate":10835.02,"price":58.25134287,"timestamp":1519727265},{"id":"vbRmNB4Q4h","type":"buy","amount":0.00212754,"rate":10880,"price":23.1476352,"timestamp":1519726857},{"id":"vbyN6k6mLb","type":"buy","amount":0.017982,"rate":10835.2,"price":194.8385664,"timestamp":1519726686},{"id":"vbmJyaREJy","type":"sell","amount":3.59e-6,"rate":10835,"price":0.03889765,"timestamp":1519726434},{"id":"vbmJyyMywU","type":"sell","amount":0.00124331,"rate":10835,"price":13.47126385,"timestamp":1519726434},{"id":"vbmZdJGXnG","type":"buy","amount":0.01862035,"rate":10888.84,"price":202.75401189,"timestamp":1519726395},{"id":"vbmZE45cnS","type":"buy","amount":0.00111026,"rate":10866.69,"price":12.06485123,"timestamp":1519726395},{"id":"vbmZEHMymQ","type":"buy","amount":8.08e-5,"rate":10849.99,"price":0.87667919,"timestamp":1519726395},{"id":"vbQPrLMv3h","type":"sell","amount":0.001861,"rate":10794.88,"price":20.08927168,"timestamp":1519724206},{"id":"vbAk7k22Zz","type":"buy","amount":0.001178,"rate":10849.99,"price":12.78128822,"timestamp":1519724088},{"id":"vbAEiKNeak","type":"sell","amount":0.0045,"rate":10790,"price":48.555,"timestamp":1519724082},{"id":"vbFh2A8LsH","type":"sell","amount":0.00134956,"rate":10790,"price":14.5617524,"timestamp":1519723827},{"id":"vbFJTUYnzN","type":"sell","amount":0.00183868,"rate":10790,"price":19.8393572,"timestamp":1519723759},{"id":"vbnFH96CDb","type":"sell","amount":0.0025974,"rate":10700,"price":27.79218,"timestamp":1519722897},{"id":"vY6zr2Jz7j","type":"buy","amount":0.00121183,"rate":10796.96,"price":13.08408003,"timestamp":1519722000},{"id":"vY6N6M2jZv","type":"sell","amount":0.00105559,"rate":10767.77,"price":11.36635033,"timestamp":1519721951},{"id":"vY6ZTr8cuz","type":"buy","amount":0.00144618,"rate":10796.51,"price":15.61369683,"timestamp":1519721865},{"id":"vY4aMnByAf","type":"buy","amount":0.00160687,"rate":10801.67,"price":17.35687947,"timestamp":1519721786},{"id":"vY4LT5DrHY","type":"buy","amount":0.00100429,"rate":10805.51,"price":10.85186563,"timestamp":1519721751},{"id":"vY4yGgVy34","type":"buy","amount":0.00125536,"rate":10806.06,"price":13.56549548,"timestamp":1519721712},{"id":"vY4VvyYM9e","type":"buy","amount":0.00155101,"rate":10802.64,"price":16.75500266,"timestamp":1519721685},{"id":"vY5YefBaY5","type":"buy","amount":0.001866,"rate":10806.69,"price":20.16528354,"timestamp":1519721634},{"id":"vY5MGHEAAH","type":"buy","amount":0.00242346,"rate":10802.74,"price":26.18000828,"timestamp":1519721499},{"id":"vYk8ch7mYL","type":"buy","amount":0.00242327,"rate":10797.41,"price":26.16503973,"timestamp":1519721433},{"id":"vYd24FTE7D","type":"sell","amount":0.00965329,"rate":10802.98,"price":104.2842988,"timestamp":1519721072},{"id":"vYd2NPUGBS","type":"buy","amount":0.00118431,"rate":10827.15,"price":12.82270201,"timestamp":1519721070},{"id":"vYE4Me9cD4","type":"buy","amount":0.001032,"rate":10825.95,"price":11.1723804,"timestamp":1519721007},{"id":"vYgucH2PcW","type":"sell","amount":0.00624344,"rate":10777.61,"price":67.28936137,"timestamp":1519720753},{"id":"vYTTut3rFE","type":"buy","amount":0.0012902,"rate":10798.65,"price":13.93241823,"timestamp":1519720155},{"id":"vYTAzJvbWb","type":"buy","amount":0.00123761,"rate":10795.43,"price":13.36053212,"timestamp":1519720020}]]'
+    http_version: 
+  recorded_at: Tue, 27 Feb 2018 10:49:00 GMT
+recorded_with: VCR 3.0.3

@@ -8,7 +8,7 @@ module Cryptoexchange::Exchanges
           end
         end
         BUY_SELL = []
-        require 'byebug'
+
         def fetch(market_pair)
           pair_combined = "#{market_pair.base.downcase}:#{market_pair.target.downcase}"
           raw_output = HTTP.post(ohlc_url, :body => "{\"pair\":\"#{pair_combined}\"}")
@@ -40,7 +40,6 @@ module Cryptoexchange::Exchanges
 
         def adapt(ohlc_output, buy_sell_output, market_pair)
           ticker = Cryptoexchange::Models::Ticker.new
-          byebug
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Bitflip::Market::NAME
@@ -51,7 +50,7 @@ module Cryptoexchange::Exchanges
           ticker.low = NumericHelper.to_d(ohlc_output[1]['low'])
           ticker.volume = NumericHelper.to_d(ohlc_output[1]['volume'])
           ticker.timestamp = Time.now.to_i
-          ticker.payload = output
+          ticker.payload = [ohlc_output[1], buy_sell_output[0]]
           ticker
         end
       end
