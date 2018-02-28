@@ -15,8 +15,8 @@ module Cryptoexchange::Exchanges
               base: market['MarketAssetCode'],
               target: market['BaseCurrencyCode'],
               market: CoinExchange::Market::NAME
-            })
-          end
+            }) if market['Active']
+          end.compact
         end
       end
     end
