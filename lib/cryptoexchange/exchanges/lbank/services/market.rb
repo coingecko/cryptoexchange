@@ -8,43 +8,40 @@ module Cryptoexchange::Exchanges
           end
         end
 
-        def fetch
-          output = super(ticker_url)
-          adapt_all(output)
+        def fetch(market_pair)
+          output = super(ticker_url(market_pair))
+          adapt(output, market_pair)
         end
 
-        def ticker_url
-          "#{Cryptoexchange::Exchanges::Lbank::Market::API_URL}?symbol=all"
+        def ticker_url(market_pair)
+          market = "#{market_pair.base}_#{market_pair.target}".downcase
+          "#{Cryptoexchange::Exchanges::Lbank::Market::API_URL}?symbol=#{market}"
         end
 
-        def adapt_all(output)
-          tickers = []
+        def adapt(output,market_pair)
+          ticker_json=output['ticker']
+          
+          ticker = Cryptoexchange::Models::Ticker.new
+          ticker.base      = market_pair.base
+          ticker.target    = market_pair.target
+          ticker.market    = Lbank::Market::NAME
 
-          output.keys.each do |pair|
-            if pair.include?('btc') || pair.include?('eth')
-              ticker_json = output[pair]
-              ticker = Cryptoexchange::Models::Ticker.new
-              ticker.base = pair[0..2]
-              ticker.target = pair[3..-1]
-              ticker.market = Lbank::Market::NAME
+          ticker.change    = NumericHelper.to_d(ticker_json['change'])
+          ticker.high      = NumericHelper.to_d(ticker_json['high'])
+          ticker.latest    = NumericHelper.to_d(ticker_json['latest'])
+          ticker.low       = NumericHelper.to_d(ticker_json['low'])
+          ticker.turnover  = NumericHelper.to_d(ticker_json['turnover'])
+          ticker.vol       = NumericHelper.to_d(ticker_json['vol'])
+         
+          
+          ticker.timestamp = DateTime.now.to_time.to_i
+         
+          ticker
+        end
 
-              # NOTE: apparently it can be nil
-              ticker.change    = NumericHelper.to_d(ticker_json['ask'])
-              ticker.high    = NumericHelper.to_d(ticker_json['bid'])
-              ticker.latest   = NumericHelper.to_d(ticker_json['last'])
-              ticker.low   = NumericHelper.to_d(ticker_json['high'])
-              ticker.turnover    = NumericHelper.to_d(ticker_json['low'])
-              ticker.vol = NumericHelper.to_d(ticker_json['volume'])
-
-              ticker.timestamp = Time.now.to_i
-
-              tickers << ticker
-            end
-          end
-
-          tickers
+         
         end
       end
     end
   end
-end
+
