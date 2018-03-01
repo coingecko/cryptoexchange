@@ -19,7 +19,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output,market_pair)
-          ticker_json=output['ticker']
+          ticker_json = output['ticker']
           
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
@@ -28,15 +28,14 @@ module Cryptoexchange::Exchanges
 
           ticker.change    = NumericHelper.to_d(ticker_json['change'])
           ticker.high      = NumericHelper.to_d(ticker_json['high'])
-          ticker.latest    = NumericHelper.to_d(ticker_json['latest'])
+          ticker.last      = NumericHelper.to_d(ticker_json['latest'])
           ticker.low       = NumericHelper.to_d(ticker_json['low'])
-          ticker.turnover  = NumericHelper.to_d(ticker_json['turnover'])
-          ticker.vol       = NumericHelper.to_d(ticker_json['vol'])
-         
-          
-          ticker.timestamp = DateTime.now.to_time.to_i
-         
+          ticker.volume    = NumericHelper.to_d(ticker_json['vol'])
+                  
+          ticker.timestamp = output['timestamp']
+          ticker.payload   = output
           ticker
+
         end
 
          
