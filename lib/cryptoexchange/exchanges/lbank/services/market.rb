@@ -15,7 +15,7 @@ module Cryptoexchange::Exchanges
 
         def ticker_url(market_pair)
           market = "#{market_pair.base}_#{market_pair.target}".downcase
-          "#{Cryptoexchange::Exchanges::Lbank::Market::API_URL}?symbol=#{market}"
+          "#{Cryptoexchange::Exchanges::Lbank::Market::API_URL}/ticker.do/?symbol=#{market}"
         end
 
         def adapt(output,market_pair)
