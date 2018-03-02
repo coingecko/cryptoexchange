@@ -35,12 +35,9 @@ module Cryptoexchange::Exchanges
           ticker.timestamp = output['timestamp']
           ticker.payload   = output
           ticker
-
-        end
-
-         
         end
       end
     end
   end
+end
 
