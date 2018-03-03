@@ -23,7 +23,7 @@ module Cryptoexchange::Exchanges
             tr.trade_id  = trade['id']
             tr.type      = trade['maker_type']
             tr.price     = trade['price']
-            tr.amount    = trade['amount']
+            tr.amount    = trade['btc']
             tr.timestamp = trade['timestamp'].to_i
             tr.payload   = trade
             trades << tr
