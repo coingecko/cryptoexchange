@@ -28,7 +28,6 @@ module Cryptoexchange::Exchanges
           ticker.last      = NumericHelper.to_d(ticker_data['last_price'])
           ticker.high      = NumericHelper.to_d(ticker_data['max'])
           ticker.low       = NumericHelper.to_d(ticker_data['min'])
-          ticker.volume    = NumericHelper.divide(NumericHelper.to_d(ticker_data['total_btc_traded']), ticker.last)
           ticker.timestamp = Time.now.to_i
           ticker.payload   = output
           ticker
