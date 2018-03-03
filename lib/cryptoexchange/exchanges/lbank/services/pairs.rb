@@ -15,8 +15,8 @@ module Cryptoexchange::Exchanges
            
               base, target = pair.split('_')
               market_pairs << Cryptoexchange::Models::MarketPair.new(
-                                base: base,
-                                target: target,
+                                base: base.upcase,
+                                target: target.upcase,
                                 market: Lbank::Market::NAME
                               )
            
