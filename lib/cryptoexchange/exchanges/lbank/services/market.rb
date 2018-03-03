@@ -32,7 +32,7 @@ module Cryptoexchange::Exchanges
           ticker.low       = NumericHelper.to_d(ticker_json['low'])
           ticker.volume    = NumericHelper.to_d(ticker_json['vol'])
                   
-          ticker.timestamp = output['timestamp']
+          ticker.timestamp = output['timestamp']/1000 #devide 1000 for converting to unix timestamp
           ticker.payload   = output
           ticker
         end
