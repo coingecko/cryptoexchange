@@ -4,7 +4,7 @@ http_interactions:
     method: get
     uri: https://getbtc.org/api/order-book?currency=USD
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       Connection:
@@ -12,7 +12,7 @@ http_interactions:
       Host:
       - getbtc.org
       User-Agent:
-      - http.rb/1.0.4
+      - http.rb/3.0.0
   response:
     status:
       code: 200
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.4.6 (Ubuntu)
       Date:
-      - Thu, 14 Dec 2017 07:56:03 GMT
+      - Sat, 03 Mar 2018 02:17:52 GMT
       Content-Type:
       - text/html
       Transfer-Encoding:
@@ -29,7 +29,7 @@ http_interactions:
       Connection:
       - close
       Set-Cookie:
-      - PHPSESSID=sei2dnuu6ji0j3hurvg71grdb1; path=/; secure; HttpOnly
+      - PHPSESSID=oqvnibv720dvh39vstr1gfese1; path=/; secure; HttpOnly
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
@@ -44,7 +44,7 @@ http_interactions:
       - WLOX
     body:
       encoding: ASCII-8BIT
-      string: '{"order-book":{"request_currency":"USD","bid":[],"ask":[]}}'
+      string: '{"order-book":{"request_currency":"USD","bid":[{"price":"11141.46","order_amount":"4.81000000","order_value":"53590.42","converted_from":null,"timestamp":"1520043467"},{"price":"11140.47","order_amount":"0.42266500","order_value":"4708.69","converted_from":null,"timestamp":"1520043467"},{"price":"10637.41","order_amount":"0.00009401","order_value":"1.00","converted_from":null,"timestamp":"1520002861"},{"price":"10602.63","order_amount":"0.00198064","order_value":"21.00","converted_from":null,"timestamp":"1520002861"},{"price":"10567.86","order_amount":"0.00088003","order_value":"9.30","converted_from":null,"timestamp":"1520002861"},{"price":"10533.08","order_amount":"0.00094939","order_value":"10.00","converted_from":null,"timestamp":"1520002861"},{"price":"10350.15","order_amount":"0.00019323","order_value":"2.00","converted_from":null,"timestamp":"1519725661"},{"price":"9862.89","order_amount":"0.00047653","order_value":"4.70","converted_from":null,"timestamp":"1519958665"}],"ask":[{"price":"11264.00","order_amount":"0.00542657","order_value":"61.12","converted_from":null,"timestamp":"1519798199"},{"price":"11750.00","order_amount":"0.00085423","order_value":"10.04","converted_from":null,"timestamp":"1519918829"},{"price":"11764.22","order_amount":"0.00008500","order_value":"1.00","converted_from":null,"timestamp":"1519142468"},{"price":"11800.00","order_amount":"0.01000000","order_value":"118.00","converted_from":null,"timestamp":"1519212762"},{"price":"11802.23","order_amount":"0.00025673","order_value":"3.03","converted_from":null,"timestamp":"1519241855"},{"price":"11878.25","order_amount":"0.00008587","order_value":"1.02","converted_from":null,"timestamp":"1519241855"},{"price":"12063.88","order_amount":"0.00155837","order_value":"18.80","converted_from":null,"timestamp":"1519247922"},{"price":"12385.00","order_amount":"0.09990000","order_value":"1237.26","converted_from":null,"timestamp":"1517395823"},{"price":"12577.96","order_amount":"0.00500000","order_value":"62.89","converted_from":null,"timestamp":"1519812671"},{"price":"12601.63","order_amount":"0.00059516","order_value":"7.50","converted_from":null,"timestamp":"1517325175"},{"price":"13612.65","order_amount":"0.00320400","order_value":"43.61","converted_from":null,"timestamp":"1519776098"},{"price":"15569.91","order_amount":"0.01297955","order_value":"202.09","converted_from":null,"timestamp":"1516092494"},{"price":"15577.96","order_amount":"0.00500000","order_value":"77.89","converted_from":null,"timestamp":"1519812725"},{"price":"15660.99","order_amount":"0.00415044","order_value":"65.00","converted_from":null,"timestamp":"1516653133"},{"price":"15812.80","order_amount":"0.00008221","order_value":"1.30","converted_from":null,"timestamp":"1516653429"},{"price":"16978.60","order_amount":"0.29800000","order_value":"5059.62","converted_from":null,"timestamp":"1515655827"},{"price":"17469.80","order_amount":"0.00006869","order_value":"1.20","converted_from":null,"timestamp":"1515436614"},{"price":"17836.20","order_amount":"0.00012715","order_value":"2.27","converted_from":null,"timestamp":"1515368049"},{"price":"18000.00","order_amount":"0.09679414","order_value":"1742.29","converted_from":null,"timestamp":"1515272055"},{"price":"18070.20","order_amount":"0.00099612","order_value":"18.00","converted_from":null,"timestamp":"1515356971"},{"price":"18341.75","order_amount":"0.00023662","order_value":"4.34","converted_from":null,"timestamp":"1513951768"},{"price":"18559.14","order_amount":"0.00083517","order_value":"15.50","converted_from":null,"timestamp":"1515424558"},{"price":"19800.04","order_amount":"0.00011170","order_value":"2.21","converted_from":null,"timestamp":"1513775770"},{"price":"19846.93","order_amount":"0.00009221","order_value":"1.83","converted_from":null,"timestamp":"1513723056"},{"price":"20182.00","order_amount":"0.00002973","order_value":"0.60","converted_from":null,"timestamp":"1513588653"}]}}'
     http_version: 
-  recorded_at: Thu, 14 Dec 2017 07:56:13 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Sat, 03 Mar 2018 02:18:20 GMT
+recorded_with: VCR 4.0.0

@@ -4,7 +4,7 @@ http_interactions:
     method: get
     uri: https://getbtc.org/api/stats?currency=USD
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       Connection:
@@ -12,7 +12,7 @@ http_interactions:
       Host:
       - getbtc.org
       User-Agent:
-      - http.rb/1.0.4
+      - http.rb/3.0.0
   response:
     status:
       code: 200
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.4.6 (Ubuntu)
       Date:
-      - Thu, 14 Dec 2017 07:56:02 GMT
+      - Sat, 03 Mar 2018 02:17:50 GMT
       Content-Type:
       - text/html
       Transfer-Encoding:
@@ -29,7 +29,7 @@ http_interactions:
       Connection:
       - close
       Set-Cookie:
-      - PHPSESSID=1p122qdsimolc7ea10pue0o7p1; path=/; secure; HttpOnly
+      - PHPSESSID=j5q73bu3qiac4ihs8uuesg0sd5; path=/; secure; HttpOnly
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
@@ -44,7 +44,7 @@ http_interactions:
       - WLOX
     body:
       encoding: ASCII-8BIT
-      string: '{"stats":{"bid":"16256.79","ask":"17448.55","last_price":16811.54,"last_transaction_type":"SELL","last_transaction_currency":"27","daily_change":-308.52,"daily_change_percent":-1.84,"max":"17119.04","min":"16324.87","open":17120.06,"total_btc_traded":"567.78","total_btc":"16739463","market_cap":"281363023503","trade_volume":"2027550685","request_currency":"USD"}}'
+      string: '{"stats":{"bid":"11141.46","ask":"11264.00","last_price":11337.94,"last_transaction_type":"SELL","last_transaction_currency":"27","daily_change":290.57,"daily_change_percent":2.56,"max":"11351.69","min":"11050.06","open":11047.37,"total_btc_traded":"567.68","total_btc":"16894363","market_cap":"185996484778","trade_volume":"790675904","request_currency":"USD"}}'
     http_version: 
-  recorded_at: Thu, 14 Dec 2017 07:56:11 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Sat, 03 Mar 2018 02:18:18 GMT
+recorded_with: VCR 4.0.0

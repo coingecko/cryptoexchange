@@ -32,7 +32,8 @@ module Cryptoexchange::Exchanges
 
         def adapt_orders(orders)
           orders.collect do |order_entry|
-            price, amount = order_entry
+            price = order_entry['price']
+            amount = order_entry['order_amount']
             Cryptoexchange::Models::Order.new(price: price,
                                               amount: amount,
                                               timestamp: nil)
