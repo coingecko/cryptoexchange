@@ -23,7 +23,7 @@ module Cryptoexchange::Exchanges
             tr.type      = trade['type']
             tr.price     = trade['price']
             tr.amount    = trade['amount']
-            tr.timestamp = trade['date_ms']
+            tr.timestamp = trade['date_ms']/1000 #convert millisecond to second
             tr.payload   = trade
             
             tr

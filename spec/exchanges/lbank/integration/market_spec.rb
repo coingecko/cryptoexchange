@@ -57,6 +57,7 @@ RSpec.describe 'Lbank integration specs' do
     expect(trade.price).to_not be_nil
     expect(trade.amount).to_not be_nil
     expect(trade.timestamp).to be_a Numeric
+    expect(2000..Date.today.year).to include(Time.at(trade.timestamp).year)
     expect(trade.payload).to_not be nil
 
   end
