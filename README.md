@@ -94,6 +94,7 @@ Or install it yourself as:
 | Nova Exchange     | Y       |            |         |         | Y           |
 | OKCoin            | Y       |            |         |         | User-Defined|
 | OKEx              | Y       | Y          | Y       |         | User-Defined|
+| Paymium           | Y       | Y          | Y       |         | User-Defined|
 | Poloniex          | Y       |            |         |         | Y           |
 | Qryptos           | Y       |            |         |         | Y           |
 | QuadrigaCX        | Y       |            |         |         | User-Defined|
