@@ -80,7 +80,7 @@ Or install it yourself as:
 | Koinex            | Y       |            |         |         | Y           |
 | Korbit            | Y       |            |         |         | User-Defined|
 | Kraken            | Y       |            |         |         | Y           |
-| Kucoin            | Y       |            |         |         | Y           |
+| Kucoin            | Y       | Y          | Y       |         | Y           |
 | Kuna              | Y       | Y          | Y       |         | User-Defined|
 | LakeBTC           | Y       |            |         |         | Y           |
 | Liqui             | Y       |            |         |         | Y           |
