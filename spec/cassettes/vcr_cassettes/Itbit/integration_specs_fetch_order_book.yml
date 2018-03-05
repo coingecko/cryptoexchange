@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.itbit.com/v1/markets/XBTBTC/order_book
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.itbit.com
+      User-Agent:
+      - http.rb/2.2.2
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Access-Control-Allow-Headers:
+      - authorization,content-type,x-auth-nonce,x-auth-timestamp,x-requested-with
+      Access-Control-Allow-Methods:
+      - GET,HEAD,PUT,POST,DELETE
+      Access-Control-Expose-Headers:
+      - X-Requested-With
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ratelimit-Limit:
+      - '20000'
+      X-Ratelimit-Remaining:
+      - '19999'
+      X-Ratelimit-Reset:
+      - '1520272192'
+      Content-Length:
+      - '143'
+      Date:
+      - Mon, 05 Mar 2018 17:48:52 GMT
+      Connection:
+      - close
+      Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' ''unsafe-inline'' ''unsafe-eval''
+        data: *.hubspot.net *.itbit.com *.hs-analytics.net *.hsforms.net *.hs-scripts.com
+        *.desk.com *.newrelic.com *.linkedin.com *.twitter.com *.facebook.com *.hsleadflows.net
+        *.hubspot.com *.hsstatic.net *.interssl.com *.geotrust.com *.jquery.com oss.maxcdn.com
+        *.googleapis.com *.google-analytics.com *.googleadservices.com *.google.com
+        https://chart.googleapis.com/chart https://www.google.com/ads https://fonts.googleapis.com/
+        https://fonts.gstatic.com/ https://themes.googleusercontent.com/ *.googleusercontent.com
+        https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ *.cloudflare.com;
+        img-src ''self'' data: *.interssl.com *.geotrust.com *.jquery.com oss.maxcdn.com
+        stats.g.doubleclick.net *.google-analytics.com *.googleadservices.com *.google.com
+        https://chart.googleapis.com/chart https://www.google.com/ads https://fonts.googleapis.com/
+        https://fonts.gstatic.com/ https://themes.googleusercontent.com/ *.googleusercontent.com
+        https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ *.cloudflare.com;
+        style-src ''self'' ''unsafe-inline'' *.hubspot.net *.itbit.com *.hs-analytics.net
+        *.hsforms.net *.hs-scripts.com *.desk.com *.newrelic.com *.linkedin.com *.twitter.com
+        *.facebook.com *.hsleadflows.net *.hubspot.com *.hsstatic.net *.interssl.com
+        *.googleapis.com *.jquery.com oss.maxcdn.com stats.g.doubleclick.net *.google-analytics.com
+        *.googleadservices.com *.google.com https://chart.googleapis.com/chart https://www.google.com/ads
+        https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://themes.googleusercontent.com/
+        *.googleusercontent.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/
+        *.cloudflare.com; child-src ''self'' *.interssl.com *.jquery.com oss.maxcdn.com
+        stats.g.doubleclick.net *.google-analytics.com *.googleadservices.com *.google.com
+        https://chart.googleapis.com/chart https://www.google.com/ads https://fonts.googleapis.com/
+        https://fonts.gstatic.com/ https://themes.googleusercontent.com/ *.googleusercontent.com
+        https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ *.cloudflare.com;
+        frame-src ''self'' *.hubspot.net *.itbit.com *.hs-analytics.net *.hsforms.net
+        *.hs-scripts.com *.desk.com *.newrelic.com *.linkedin.com *.twitter.com *.facebook.com
+        *.hsleadflows.net *.hubspot.com *.hsstatic.net *.interssl.com *.paypal.com  *.jquery.com
+        *.google-analytics.com *.googleadservices.com *.google.com https://chart.googleapis.com/chart
+        https://www.google.com/ads https://fonts.googleapis.com/ https://fonts.gstatic.com/
+        https://themes.googleusercontent.com/ *.googleusercontent.com https://www.google.com/recaptcha/
+        https://www.gstatic.com/recaptcha/ *.cloudflare.com; form-action ''self''
+        products.geotrust.com *.interssl.com *.jquery.com *.cloudflare.com; font-src
+        ''self'' data: *.hubspot.net *.itbit.com *.hs-analytics.net *.hsforms.net
+        *.hs-scripts.com *.desk.com *.newrelic.com *.linkedin.com *.twitter.com *.facebook.com
+        *.hsleadflows.net *.hubspot.com *.hsstatic.net *.interssl.com interssl.com
+        https://fonts.googleapis.com/ https://fonts.gstatic.com/ https://themes.googleusercontent.com/
+        *.googleusercontent.com fonts.gstatic.com;'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=15768000 ; includeSubDomains ; preload
+    body:
+      encoding: UTF-8
+      string: '{"code":80012,"description":"No market matching the provided ticker
+        symbol could be found.","requestId":"02d2cc94-4728-4a87-8278-77948cad6a1e"}'
+    http_version: 
+  recorded_at: Mon, 05 Mar 2018 17:48:52 GMT
+recorded_with: VCR 3.0.3
