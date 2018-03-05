@@ -64,7 +64,7 @@ module Cryptoexchange
       end
 
       def http_get(endpoint)
-        fetch_response = HTTP.timeout(:write => 2, :connect => 5, :read => 8).get(endpoint)
+        fetch_response = HTTP.timeout(:write => 2, :connect => 15, :read => 18).get(endpoint)
       end
     end
   end
