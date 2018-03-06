@@ -12,18 +12,17 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          output.collect do |trade|
-            trade_json=trade['recentTrades']
-
+          trades = output['recentTrades']
+          trades.collect do |trade|
             tr = Cryptoexchange::Models::Trade.new
             tr.base      = market_pair.base
             tr.target    = market_pair.target
             tr.market    = Itbit::Market::NAME
 
-            tr.trade_id  = trade_json['matchNumber']
-            tr.price     = trade_json['price']
-            tr.amount    = trade_json['amount']
-            tr.timestamp = DateTime.strptime(trade_json['timestamp'],'%FT%T').to_time.to_i
+            tr.trade_id  = trade['matchNumber']
+            tr.price     = trade['price']
+            tr.amount    = trade['amount']
+            tr.timestamp = DateTime.strptime(trade['timestamp'],'%FT%T').to_time.to_i
             tr.payload   = trade
             
             tr
