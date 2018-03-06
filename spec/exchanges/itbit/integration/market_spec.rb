@@ -41,4 +41,21 @@ RSpec.describe 'Itbit integration specs' do
     expect(order_book.timestamp).to be_a Numeric
     expect(order_book.payload).to_not be nil
   end
+
+  it 'fetch trade' do
+    trades = client.trades(xbt_usd_pair)
+    trade = trades.sample
+
+    expect(trades).to_not be_empty
+    expect(trade.base).to eq 'XBT'
+    expect(trade.target).to eq 'USD'
+    expect(trade.market).to eq 'itbit'
+    expect(trade.trade_id).to_not be_nil
+    expect(trade.price).to_not be_nil
+    expect(trade.amount).to_not be_nil
+    expect(trade.timestamp).to be_a Numeric
+    expect(2000..Date.today.year).to include(Time.at(trade.timestamp).year)
+    expect(trade.payload).to_not be nil
+
+  end
 end
