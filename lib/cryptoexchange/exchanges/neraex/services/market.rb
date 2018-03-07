@@ -24,13 +24,13 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Neraex::Market::NAME
-          ticker.last      = NumericHelper.to_d(output.dig('ticker', 'last'))
-          ticker.bid       = NumericHelper.to_d(output.dig('ticker', 'buy'))
-          ticker.ask       = NumericHelper.to_d(output.dig('ticker', 'buy'))
-          ticker.high      = NumericHelper.to_d(output.dig('ticker', 'high'))
-          ticker.low       = NumericHelper.to_d(output.dig('ticker', 'low'))
-          ticker.volume    = NumericHelper.to_d(output.dig('ticker', 'vol'))
-          ticker.timestamp = NumericHelper.to_d(output.dig('at'))
+          ticker.last      = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'last'))
+          ticker.bid       = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'buy'))
+          ticker.ask       = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'buy'))
+          ticker.high      = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'high'))
+          ticker.low       = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'low'))
+          ticker.volume    = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'vol'))
+          ticker.timestamp = NumericHelper.to_d(HashHelper.dig(output, 'at'))
           ticker.payload   = output
           ticker
         end
