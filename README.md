@@ -91,6 +91,7 @@ Or install it yourself as:
 | Lykke             | Y       | Y          | N       |         | Y           |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|
 | Mercatox          | Y       | N          | N       | N       | Y           |
+| Neraex            | Y       | Y          | Y       |         | Y           |
 | Nova Exchange     | Y       |            |         |         | Y           |
 | OKCoin            | Y       |            |         |         | User-Defined|
 | OKEx              | Y       | Y          | Y       |         | User-Defined|
