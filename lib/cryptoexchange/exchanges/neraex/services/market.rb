@@ -26,7 +26,7 @@ module Cryptoexchange::Exchanges
           ticker.market    = Neraex::Market::NAME
           ticker.last      = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'last'))
           ticker.bid       = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'buy'))
-          ticker.ask       = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'buy'))
+          ticker.ask       = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'sell'))
           ticker.high      = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'high'))
           ticker.low       = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'low'))
           ticker.volume    = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'vol'))
