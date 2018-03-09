@@ -75,6 +75,7 @@ Or install it yourself as:
 | Hksy              | Y       |            | Y       |         | User-Defined|
 | Huobi             | Y       |            |         |         | Y           |
 | Itbit             | Y       | Y          | Y       |         | User-Defined|
+| Idex              | Y       | Y          | Y       |         | Y           |
 | KKex              | Y       | Y          | Y       |         | Y           |
 | Jubi              | Y       |            |         |         | Y           |
 | Koinex            | Y       |            |         |         | Y           |
@@ -92,6 +93,7 @@ Or install it yourself as:
 | Lykke             | Y       | Y          | N       |         | Y           |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|
 | Mercatox          | Y       | N          | N       | N       | Y           |
+| Neraex            | Y       | Y          | Y       |         | Y           |
 | Nova Exchange     | Y       |            |         |         | Y           |
 | OKCoin            | Y       |            |         |         | User-Defined|
 | OKEx              | Y       | Y          | Y       |         | User-Defined|
