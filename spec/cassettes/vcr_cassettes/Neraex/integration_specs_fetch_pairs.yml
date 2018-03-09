@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://neraex.pro/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - neraex.pro
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '397'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 6f03ee42-6d2a-4dc2-9c44-b5c73a44de29
+      Etag:
+      - '"d5e12d0503baa56bcd862a6fc147843b"'
+      X-Runtime:
+      - '0.004107'
+      Date:
+      - Wed, 07 Mar 2018 15:07:04 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      Server:
+      - nginx/1.10.2 + Phusion Passenger 5.1.2
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"btcjpy","name":"BTC/JPY"},{"id":"ethjpy","name":"ETH/JPY"},{"id":"rssjpy","name":"RSS/JPY"},{"id":"accjpy","name":"ACC/JPY"},{"id":"eosbtc","name":"EOS/BTC"},{"id":"sntbtc","name":"SNT/BTC"},{"id":"omgbtc","name":"OMG/BTC"},{"id":"paybtc","name":"PAY/BTC"},{"id":"hsrjpy","name":"HSR/JPY"},{"id":"kncbtc","name":"KNC/BTC"},{"id":"skbjpy","name":"SKB/JPY"},{"id":"skbbtc","name":"SKB/BTC"}]'
+    http_version: 
+  recorded_at: Wed, 07 Mar 2018 15:07:04 GMT
+recorded_with: VCR 4.0.0
