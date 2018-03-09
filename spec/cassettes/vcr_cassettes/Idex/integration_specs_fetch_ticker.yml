@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.idex.market/returnTicker
+    body:
+      encoding: UTF-8
+      string: '{"market":"ETH_SNT"}'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+      Host:
+      - api.idex.market
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 25 Jan 2018 09:52:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '198'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0f402c8047fc90080788b432071815d61516873948; expires=Fri, 25-Jan-19
+        09:52:28 GMT; path=/; domain=.idex.market; HttpOnly; Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"c6-BVFhq0WPdcsikoWKy4l3f8RFfNI"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e2a5703dd543379-HKG
+    body:
+      encoding: UTF-8
+      string: '{"last":"0.00029193","high":"0.00029193","low":"0.00027662","lowestAsk":"0.00048595","highestBid":"0.00020093","percentChange":"5.5346685","baseVolume":"23.422724774478010378","quoteVolume":"80333"}'
+    http_version: 
+  recorded_at: Thu, 25 Jan 2018 09:52:29 GMT
+recorded_with: VCR 3.0.3
