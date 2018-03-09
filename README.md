@@ -74,7 +74,7 @@ Or install it yourself as:
 | HitBTC            | Y       |            |         |         | Y           |
 | Hksy              | Y       |            | Y       |         | User-Defined|
 | Huobi             | Y       |            |         |         | Y           |
-| Itbit             | Y       |            |         |         | User-Defined|
+| Itbit             | Y       | Y          | Y       |         | User-Defined|
 | KKex              | Y       | Y          | Y       |         | Y           |
 | Jubi              | Y       |            |         |         | Y           |
 | Koinex            | Y       |            |         |         | Y           |
@@ -83,6 +83,7 @@ Or install it yourself as:
 | Kucoin            | Y       |            |         |         | Y           |
 | Kuna              | Y       | Y          | Y       |         | User-Defined|
 | LakeBTC           | Y       |            |         |         | Y           |
+| Lbank             | Y       | Y          | Y       |         | Y           |
 | Liqui             | Y       |            |         |         | Y           |
 | LiteBit.eu        | Y       |            |         |         | Y           |
 | Livecoin          | Y       |            |         |         | Y           |
