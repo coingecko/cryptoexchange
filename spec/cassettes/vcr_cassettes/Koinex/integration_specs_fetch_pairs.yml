@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://koinex.in/api/ticker
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - koinex.in
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 17 Feb 2018 09:40:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=da42236ce7efeb445ae8a82f5b7b1efdd1518860440; expires=Sun, 17-Feb-19
+        09:40:40 GMT; path=/; domain=.koinex.in; HttpOnly; Secure
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"d3f89ffb86c663b5e1a45a00c41fe609"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2a063404-d12f-43a6-907a-5c54894516a4
+      X-Runtime:
+      - '0.005509'
+      Vary:
+      - Origin
+      Strict-Transport-Security:
+      - max-age=0; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3ee7c95859e82ce7-KUL
+    body:
+      encoding: UTF-8
+      string: '{"prices":{"BTC":"705000.0","ETH":"63105.0","XRP":"72.9","BCH":"100760.0","LTC":"14797.0","MIOTA":140.85,"OMG":1173.35,"GNT":30.29},"stats":{"ETH":{"last_traded_price":63105,"lowest_ask":"63200.0","highest_bid":"63105.0","min_24hrs":"59005.0","max_24hrs":"63901.0","vol_24hrs":1312},"BTC":{"last_traded_price":705000,"lowest_ask":"704999.99","highest_bid":"704004.0","min_24hrs":"631000.0","max_24hrs":"712000.0","vol_24hrs":113},"LTC":{"last_traded_price":14797,"lowest_ask":"14799.0","highest_bid":"14797.0","min_24hrs":"13678.0","max_24hrs":"14850.0","vol_24hrs":8213},"XRP":{"last_traded_price":72,"lowest_ask":"72.9","highest_bid":"72.85","min_24hrs":"69.6","max_24hrs":"73.75","vol_24hrs":2423092},"BCH":{"last_traded_price":100760,"lowest_ask":"101000.0","highest_bid":"100760.0","min_24hrs":"93290.0","max_24hrs":"103000.0","vol_24hrs":541}}}'
+    http_version: 
+  recorded_at: Sat, 17 Feb 2018 09:40:40 GMT
+recorded_with: VCR 3.0.3

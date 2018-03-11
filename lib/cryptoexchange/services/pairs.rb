@@ -38,6 +38,11 @@ module Cryptoexchange
         end
       end
 
+      def fetch_via_api_using_post(endpoint = self.class::PAIRS_URL)
+        fetch_response = HTTP.timeout(:write => 2, :connect => 5, :read => 8).post(endpoint)
+        JSON.parse(fetch_response.to_s)
+      end
+
       def fetch_via_override(path)
         YAML.load_file(path)[:pairs]
       end
@@ -64,7 +69,7 @@ module Cryptoexchange
       end
 
       def http_get(endpoint)
-        fetch_response = HTTP.timeout(:write => 2, :connect => 5, :read => 8).get(endpoint)
+        fetch_response = HTTP.timeout(:write => 2, :connect => 15, :read => 18).get(endpoint)
       end
     end
   end

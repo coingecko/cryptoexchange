@@ -28,7 +28,9 @@ Or install it yourself as:
 | ACX               | Y       | Y          | Y       |         | Y           |
 | Allcoin           | Y       | Y          |         |         | User-Defined|
 | ANX               | Y       |            |         |         | User-Defined|
+| Bancor            | Y       | N          | N       |         | Y           |
 | Bibox             | Y       | Y          | Y       |         | Y           |
+| BigONE            | Y       | Y          | Y       |         | Y           |
 | Bit-Z             | Y       |            |         |         | Y           |
 | Binance           | Y       | Y          |         |         | Y           |
 | Bitbay            | Y       |            |         |         | User-Defined|
@@ -54,6 +56,7 @@ Or install it yourself as:
 | Cobinhood         | Y       | Y          |         |         | Y           |
 | Coincheck         | Y       |            |         |         | User-Defined|
 | CoinExchange      | Y       |            |         |         | Y           |
+| Coinbene          | Y       | Y          | Y       |         | Y           |
 | Coinmate          | Y       | Y          |         |         | User-Defined|
 | Coinnest          | Y       | Y          | Y       |         | User-Defined|
 | Coinone           | Y       |            |         |         | Y           |
@@ -71,9 +74,11 @@ Or install it yourself as:
 | HitBTC            | Y       |            |         |         | Y           |
 | Hksy              | Y       |            | Y       |         | User-Defined|
 | Huobi             | Y       |            |         |         | Y           |
+| Idex              | Y       | Y          | Y       |         | Y           |
 | Itbit             | Y       |            |         |         | User-Defined|
 | KKex              | Y       | Y          | Y       |         | Y           |
 | Jubi              | Y       |            |         |         | Y           |
+| Koinex            | Y       |            |         |         | Y           |
 | Korbit            | Y       |            |         |         | User-Defined|
 | Kraken            | Y       |            |         |         | Y           |
 | Kucoin            | Y       |            |         |         | Y           |
@@ -87,6 +92,7 @@ Or install it yourself as:
 | Lykke             | Y       | Y          | N       |         | Y           |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|
 | Mercatox          | Y       | N          | N       | N       | Y           |
+| Neraex            | Y       | Y          | Y       |         | Y           |
 | Nova Exchange     | Y       |            |         |         | Y           |
 | OKCoin            | Y       |            |         |         | User-Defined|
 | OKEx              | Y       | Y          | Y       |         | User-Defined|
@@ -94,19 +100,23 @@ Or install it yourself as:
 | Qryptos           | Y       |            |         |         | Y           |
 | QuadrigaCX        | Y       |            |         |         | User-Defined|
 | Quoine            | Y       |            |         |         | Y           |
+| RadarRelay        | Y       |            |         |         | User-Defined|
 | Stocks Exchange   | Y       |            |         |         | Y           |
 | SZZC              | Y       |            |         |         | Y           |
 | The Rock Trading  | Y       |            |         |         | Y           |
 | Tidex             | Y       |            |         |         | Y           |
+| TradeOgre         | Y       | Y          | Y       |         | Y           |
 | Trade Satoshi     | Y       |            |         |         | Y           |
 | TuxExchange       | Y       |            |         |         | Y           |
+| Upbit             | Y       |            |         |         | Y           |
 | Unocoin           |         |            |         |         |             |
 | Viabtc            | Y       |            |         |         | User-Defined|
-| Wex               | Y       | Y          |  Y      |         | Y           |
+| Wex               | Y       | Y          | Y       |         | Y           |
 | Yobit             | Y       |            |         |         | Y           |
 | Yuanbao           | Y       |            |         |         | User-Defined|
 | Yunbi             | Y       |            |         |         | Y           |
 | Zaif              | Y       | Y          | Y       |         | Y           |
+| ZB                | Y       | Y          | Y       |         | Y           |
 
 ## Usage
 
