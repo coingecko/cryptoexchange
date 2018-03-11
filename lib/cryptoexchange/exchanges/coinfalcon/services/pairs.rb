@@ -3,7 +3,7 @@ module Cryptoexchange::Exchanges
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Coinfalcon::Market::API_URL}markets"
-        require 'byebug'
+
         def fetch
           output = super
           adapt(output['data'])
@@ -19,7 +19,7 @@ module Cryptoexchange::Exchanges
                               market: Coinfalcon::Market::NAME
                             )
           end
-          byebug
+          
           market_pairs
         end
       end
