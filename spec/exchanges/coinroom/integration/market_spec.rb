@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Coinroom integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_krw_pair) { Cryptoexchange::Models::MarketPair.new(base: 'USD', target: 'BTC', market: 'coinroom') }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'coinroom') }
 
   it 'fetch pairs' do
     pairs = client.pairs('coinroom')
@@ -15,10 +15,10 @@ RSpec.describe 'Coinroom integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_krw_pair)
+    ticker = client.ticker(btc_usd_pair)
 
-    expect(ticker.base).to eq 'USD'
-    expect(ticker.target).to eq 'BTC'
+    expect(ticker.base).to eq 'BTC'
+    expect(ticker.target).to eq 'USD'
     expect(ticker.market).to eq 'coinroom'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
@@ -32,7 +32,7 @@ RSpec.describe 'Coinroom integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(btc_krw_pair)
+    order_book = client.order_book(btc_usd_pair)
 
     expect(order_book.base).to eq 'USD'
     expect(order_book.target).to eq 'BTC'
@@ -49,7 +49,7 @@ RSpec.describe 'Coinroom integration specs' do
   end
 
   it 'fetch trade' do
-    trades = client.trades(btc_krw_pair)
+    trades = client.trades(btc_usd_pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty

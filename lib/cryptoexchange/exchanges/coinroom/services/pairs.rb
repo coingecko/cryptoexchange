@@ -22,6 +22,8 @@ module Cryptoexchange::Exchanges
           market_pairs
         end
 
+        private
+        
         #call this method to retrieve and write pairs to coinroom.yml file
         def retrieve_new_pairs
           all_currencies = fetch_via_api(AVAILABLE_CURRENCIES)
