@@ -60,6 +60,7 @@ Or install it yourself as:
 | Coinmate          | Y       | Y          |         |         | User-Defined|
 | Coinnest          | Y       | Y          | Y       |         | User-Defined|
 | Coinone           | Y       |            |         |         | Y           |
+| Coinroom          | Y       | Y          | Y       |         | User-Defined|
 | CoinsMarkets      | Y       |            |         |         | Y           |
 | COSS              | Y       |            |         |         | Y           |
 | CryptoBridge      | Y       |            |         |         | Y           |
@@ -92,6 +93,7 @@ Or install it yourself as:
 | Lykke             | Y       | Y          | N       |         | Y           |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|
 | Mercatox          | Y       | N          | N       | N       | Y           |
+| Neraex            | Y       | Y          | Y       |         | Y           |
 | Nova Exchange     | Y       |            |         |         | Y           |
 | OKCoin            | Y       |            |         |         | User-Defined|
 | OKEx              | Y       | Y          | Y       |         | User-Defined|

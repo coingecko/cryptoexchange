@@ -1,0 +1,48 @@
+module Cryptoexchange::Exchanges
+  module Coinroom
+    module Services
+      class OrderBook < Cryptoexchange::Services::Market
+        class << self
+          def supports_individual_ticker_query?
+            true
+          end
+        end
+
+        def fetch(market_pair)
+          params = {}
+          params['realCurrency'] = market_pair.target
+          params['cryptoCurrency'] = market_pair.base
+          output = fetch_using_post(order_book_url, params, true)
+          adapt(output, market_pair)
+        end
+
+        def order_book_url
+          "#{Cryptoexchange::Exchanges::Coinroom::Market::API_URL}/orderbook"
+        end
+
+        def adapt(output, market_pair)
+          order_book = Cryptoexchange::Models::OrderBook.new
+
+          order_book.base      = market_pair.base
+          order_book.target    = market_pair.target
+          order_book.market    = Coinroom::Market::NAME
+          order_book.asks      = adapt_orders(output['data']['asks'])
+          order_book.bids      = adapt_orders(output['data']['bids'])
+          order_book.timestamp = Time.now.to_i
+          order_book.payload   = output
+          order_book
+        end
+
+        def adapt_orders(orders)
+          orders.collect do |order_entry|
+            price = order_entry["price"]
+            amount = order_entry["amount"]
+            Cryptoexchange::Models::Order.new(price: price,
+                                              amount: amount,
+                                              timestamp: nil)
+          end
+        end
+      end
+    end
+  end
+end
