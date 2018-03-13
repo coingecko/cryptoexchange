@@ -26,6 +26,7 @@ Or install it yourself as:
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |
 | Abucoins          | Y       | Y          | Y       |         | Y           |
 | ACX               | Y       | Y          | Y       |         | Y           |
+| AEX               | Y       | Y          | Y       |         | Y           |
 | Allcoin           | Y       | Y          |         |         | User-Defined|
 | ANX               | Y       |            |         |         | User-Defined|
 | Bancor            | Y       | N          | N       |         | Y           |
@@ -34,6 +35,7 @@ Or install it yourself as:
 | Bit-Z             | Y       |            |         |         | Y           |
 | Binance           | Y       | Y          |         |         | Y           |
 | Bitbay            | Y       |            |         |         | User-Defined|
+| Bitbank           | Y       | Y          | Y       |         | User-Defined|
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|
 | Bitconnect        | Y       |            |         |         | Y           |
 | Bitfinex          | Y       |            |         |         | Y           |
@@ -54,6 +56,7 @@ Or install it yourself as:
 | CCex              | Y       |            |         |         | Y           |
 | CHBTC             | Y       |            |         |         | User-Defined|
 | Cobinhood         | Y       | Y          |         |         | Y           |
+| CoinEgg           | Y       | Y          | Y       |         | User-Defined|
 | Coincheck         | Y       |            |         |         | User-Defined|
 | CoinExchange      | Y       |            |         |         | Y           |
 | Coinbene          | Y       | Y          | Y       |         | Y           |
