@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://public.bitbank.cc/btc_jpy/transactions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - public.bitbank.cc
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain
+      Content-Length:
+      - '6247'
+      Connection:
+      - close
+      Date:
+      - Thu, 08 Feb 2018 11:31:39 GMT
+      Last-Modified:
+      - Thu, 08 Feb 2018 11:31:38 GMT
+      Etag:
+      - '"d0e53bc23689477f9cecbeb32dddd96e"'
+      Server:
+      - AmazonS3
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 498232ad85e18662fee2f522eb7fffb9.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - hhT-PMI3tbKuqSqNhUH4ETIwnuQHEHjsEQDaLoYgKaekBoOyHXRd2g==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":1,"data":{"transactions":[{"transaction_id":3551310,"side":"sell","price":"927013","amount":"0.1338","executed_at":1518089496549},{"transaction_id":3551309,"side":"sell","price":"927014","amount":"0.0001","executed_at":1518089496498},{"transaction_id":3551308,"side":"sell","price":"927014","amount":"0.0002","executed_at":1518089496460},{"transaction_id":3551307,"side":"sell","price":"927014","amount":"0.1143","executed_at":1518089496426},{"transaction_id":3551306,"side":"sell","price":"927024","amount":"0.0029","executed_at":1518089496390},{"transaction_id":3551305,"side":"buy","price":"927204","amount":"0.0130","executed_at":1518089495404},{"transaction_id":3551304,"side":"buy","price":"927109","amount":"0.0007","executed_at":1518089492526},{"transaction_id":3551303,"side":"sell","price":"927024","amount":"0.0100","executed_at":1518089491486},{"transaction_id":3551302,"side":"sell","price":"927207","amount":"0.0539","executed_at":1518089485390},{"transaction_id":3551301,"side":"sell","price":"927014","amount":"0.0002","executed_at":1518089483624},{"transaction_id":3551300,"side":"sell","price":"927015","amount":"0.0460","executed_at":1518089483593},{"transaction_id":3551299,"side":"sell","price":"927015","amount":"0.0005","executed_at":1518089483564},{"transaction_id":3551298,"side":"sell","price":"927021","amount":"0.0149","executed_at":1518089483535},{"transaction_id":3551297,"side":"sell","price":"927030","amount":"0.0010","executed_at":1518089483493},{"transaction_id":3551296,"side":"sell","price":"928015","amount":"0.0006","executed_at":1518089479045},{"transaction_id":3551295,"side":"buy","price":"929039","amount":"0.0024","executed_at":1518089478129},{"transaction_id":3551294,"side":"buy","price":"929039","amount":"0.0050","executed_at":1518089478041},{"transaction_id":3551293,"side":"buy","price":"929039","amount":"0.0050","executed_at":1518089477983},{"transaction_id":3551292,"side":"buy","price":"929039","amount":"0.0050","executed_at":1518089477928},{"transaction_id":3551291,"side":"buy","price":"929039","amount":"0.0050","executed_at":1518089477871},{"transaction_id":3551290,"side":"buy","price":"929039","amount":"0.0050","executed_at":1518089477815},{"transaction_id":3551289,"side":"buy","price":"929039","amount":"0.0050","executed_at":1518089477759},{"transaction_id":3551288,"side":"buy","price":"929038","amount":"0.0450","executed_at":1518089477703},{"transaction_id":3551287,"side":"buy","price":"929029","amount":"0.0050","executed_at":1518089477649},{"transaction_id":3551286,"side":"buy","price":"929006","amount":"0.0005","executed_at":1518089477588},{"transaction_id":3551285,"side":"buy","price":"929006","amount":"0.0005","executed_at":1518089477527},{"transaction_id":3551284,"side":"buy","price":"929006","amount":"0.0010","executed_at":1518089477471},{"transaction_id":3551283,"side":"buy","price":"928373","amount":"0.0050","executed_at":1518089477413},{"transaction_id":3551282,"side":"buy","price":"928373","amount":"0.0050","executed_at":1518089477357},{"transaction_id":3551281,"side":"buy","price":"928373","amount":"0.0050","executed_at":1518089477301},{"transaction_id":3551280,"side":"buy","price":"928015","amount":"0.0006","executed_at":1518089477246},{"transaction_id":3551279,"side":"sell","price":"927015","amount":"0.0095","executed_at":1518089477132},{"transaction_id":3551278,"side":"sell","price":"927025","amount":"0.0005","executed_at":1518089477051},{"transaction_id":3551277,"side":"buy","price":"929017","amount":"0.0005","executed_at":1518089467348},{"transaction_id":3551276,"side":"buy","price":"929017","amount":"0.0050","executed_at":1518089467317},{"transaction_id":3551275,"side":"buy","price":"929017","amount":"0.0050","executed_at":1518089467289},{"transaction_id":3551274,"side":"buy","price":"929017","amount":"0.0050","executed_at":1518089467260},{"transaction_id":3551273,"side":"buy","price":"929016","amount":"0.0250","executed_at":1518089467228},{"transaction_id":3551272,"side":"buy","price":"929016","amount":"0.0400","executed_at":1518089467178},{"transaction_id":3551271,"side":"sell","price":"927207","amount":"0.0100","executed_at":1518089464076},{"transaction_id":3551270,"side":"buy","price":"928117","amount":"0.0009","executed_at":1518089463094},{"transaction_id":3551269,"side":"buy","price":"928374","amount":"0.0005","executed_at":1518089449075},{"transaction_id":3551268,"side":"buy","price":"928302","amount":"0.0003","executed_at":1518089437065},{"transaction_id":3551267,"side":"sell","price":"927063","amount":"0.0010","executed_at":1518089435978},{"transaction_id":3551266,"side":"sell","price":"930011","amount":"0.0048","executed_at":1518089433210},{"transaction_id":3551265,"side":"sell","price":"930011","amount":"0.0002","executed_at":1518089433108},{"transaction_id":3551264,"side":"sell","price":"930011","amount":"0.0048","executed_at":1518089433053},{"transaction_id":3551263,"side":"sell","price":"930011","amount":"0.0002","executed_at":1518089432144},{"transaction_id":3551262,"side":"sell","price":"930011","amount":"0.0048","executed_at":1518089432110},{"transaction_id":3551261,"side":"sell","price":"930011","amount":"0.0002","executed_at":1518089432039},{"transaction_id":3551260,"side":"sell","price":"930011","amount":"0.0048","executed_at":1518089432006},{"transaction_id":3551259,"side":"sell","price":"930127","amount":"0.0101","executed_at":1518089430109},{"transaction_id":3551258,"side":"buy","price":"930101","amount":"0.0100","executed_at":1518089429310},{"transaction_id":3551257,"side":"sell","price":"930011","amount":"0.0002","executed_at":1518089429176},{"transaction_id":3551256,"side":"sell","price":"930011","amount":"0.0050","executed_at":1518089429118},{"transaction_id":3551255,"side":"sell","price":"930011","amount":"0.0013","executed_at":1518089429061},{"transaction_id":3551254,"side":"buy","price":"930137","amount":"0.1489","executed_at":1518089428724},{"transaction_id":3551253,"side":"buy","price":"930136","amount":"0.0050","executed_at":1518089428697},{"transaction_id":3551252,"side":"buy","price":"930136","amount":"0.0050","executed_at":1518089428670},{"transaction_id":3551251,"side":"buy","price":"930136","amount":"0.0373","executed_at":1518089428639}]}}'
+    http_version: 
+  recorded_at: Thu, 08 Feb 2018 11:31:38 GMT
+recorded_with: VCR 3.0.3

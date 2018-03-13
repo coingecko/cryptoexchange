@@ -34,6 +34,7 @@ Or install it yourself as:
 | Bit-Z             | Y       |            |         |         | Y           |
 | Binance           | Y       | Y          |         |         | Y           |
 | Bitbay            | Y       |            |         |         | User-Defined|
+| Bitbank           | Y       | Y          | Y       |         | User-Defined|
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|
 | Bitconnect        | Y       |            |         |         | Y           |
 | Bitfinex          | Y       |            |         |         | Y           |
