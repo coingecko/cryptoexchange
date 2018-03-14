@@ -15,11 +15,11 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url_one(market_pair)
-          "#{Cryptoexchange::Exchanges::Gopax::Market::API_URL}trading-pairs/#{market_pair.base}-#{market_pair.target}/ticker"
+          "#{Cryptoexchange::Exchanges::Gopax::Market::API_URL}/trading-pairs/#{market_pair.base}-#{market_pair.target}/ticker"
         end
 
         def ticker_url_two(market_pair)
-          "#{Cryptoexchange::Exchanges::Gopax::Market::API_URL}trading-pairs/#{market_pair.base}-#{market_pair.target}/stats"
+          "#{Cryptoexchange::Exchanges::Gopax::Market::API_URL}/trading-pairs/#{market_pair.base}-#{market_pair.target}/stats"
         end
 
         def adapt(ticker1, ticker2, market_pair)

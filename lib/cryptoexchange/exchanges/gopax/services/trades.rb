@@ -8,7 +8,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Gopax::Market::API_URL}trading-pairs/#{market_pair.base}-#{market_pair.target}/trades"
+          "#{Cryptoexchange::Exchanges::Gopax::Market::API_URL}/trading-pairs/#{market_pair.base}-#{market_pair.target}/trades"
         end
 
         def adapt(output, market_pair)

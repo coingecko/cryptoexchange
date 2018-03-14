@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Gopax
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Gopax::Market::API_URL}trading-pairs"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Gopax::Market::API_URL}/trading-pairs"
 
         def fetch
           output = super
@@ -18,7 +18,7 @@ module Cryptoexchange::Exchanges
                               market: Gopax::Market::NAME
                             )
           end
-      
+
           market_pairs
         end
       end

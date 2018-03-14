@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def order_book(market_pair)
-          "#{Cryptoexchange::Exchanges::Gopax::Market::API_URL}trading-pairs/#{market_pair.base}-#{market_pair.target}/book"
+          "#{Cryptoexchange::Exchanges::Gopax::Market::API_URL}/trading-pairs/#{market_pair.base}-#{market_pair.target}/book"
         end
 
         def adapt(output, market_pair)
@@ -31,7 +31,6 @@ module Cryptoexchange::Exchanges
 
         def adapt_orders(orders)
           orders.collect do |order_entry|
-            price, amount = order_entry
             Cryptoexchange::Models::Order.new(price: order_entry[1],
                                               amount: order_entry[2],
                                               timestamp: Time.now.to_i)
