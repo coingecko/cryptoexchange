@@ -60,7 +60,7 @@ Or install it yourself as:
 | Coinmate          | Y       | Y          |         |         | User-Defined|
 | Coinnest          | Y       | Y          | Y       |         | User-Defined|
 | Coinone           | Y       |            |         |         | Y           |
-| Coinroom          | Y       | Y          | Y       |         | User-Defined|
+| Coinroom          | Y       |            |         |         | User-Defined|
 | CoinsMarkets      | Y       |            |         |         | Y           |
 | COSS              | Y       |            |         |         | Y           |
 | CryptoBridge      | Y       |            |         |         | Y           |
