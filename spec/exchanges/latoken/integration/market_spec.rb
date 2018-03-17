@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Latoken integration specs' do
   client = Cryptoexchange::Client.new
-  let(:la_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'eth', target: 'la', market: 'latoken') }
+  let(:la_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'la', target: 'eth', market: 'latoken') }
 
   it 'fetch pairs' do
     pairs = client.pairs('latoken')
@@ -17,8 +17,8 @@ RSpec.describe 'Latoken integration specs' do
   it 'fetch ticker' do
     ticker = client.ticker(la_eth_pair)
 
-    expect(ticker.base).to eq 'ETH'
-    expect(ticker.target).to eq 'LA'
+    expect(ticker.base).to eq 'LA'
+    expect(ticker.target).to eq 'ETH'
     expect(ticker.market).to eq 'latoken'
     expect(ticker.last).to be_a Numeric
     expect(ticker.bid).to be_a Numeric

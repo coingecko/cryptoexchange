@@ -14,8 +14,8 @@ module Cryptoexchange::Exchanges
           market_pairs = []
           output.each do |pair|
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair["baseSymbol"],
-                              target: pair["targetSymbol"],
+                              base: pair["targetSymbol"],
+                              target: pair["baseSymbol"],
                               market: Latoken::Market::NAME
                             )
           end

@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Latoken::Market::API_URL}/v1/coingecko/market/#{market_pair.base}/#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::Latoken::Market::API_URL}/v1/coingecko/market/#{market_pair.target}/#{market_pair.base}"
         end
 
         def adapt(output, market_pair)
@@ -27,7 +27,7 @@ module Cryptoexchange::Exchanges
           ticker.last = NumericHelper.to_d(output['last_price'])
           ticker.high = NumericHelper.to_d(output['high'])
           ticker.low = NumericHelper.to_d(output['low'])
-          ticker.volume = NumericHelper.to_d(output['volume'])
+          ticker.volume = NumericHelper.to_d(output['volume']) / ticker.last
           ticker.timestamp = output['timestamp'].to_i
           ticker.payload = output
           ticker
