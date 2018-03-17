@@ -89,6 +89,7 @@ Or install it yourself as:
 | Kucoin            | Y       |            |         |         | Y           |
 | Kuna              | Y       | Y          | Y       |         | User-Defined|
 | LakeBTC           | Y       |            |         |         | Y           |
+| Latoken           | Y       |            |         |         | Y           |
 | Lbank             | Y       | Y          | Y       |         | Y           |
 | Liqui             | Y       |            |         |         | Y           |
 | LiteBit.eu        | Y       |            |         |         | Y           |
