@@ -60,6 +60,7 @@ Or install it yourself as:
 | Cobinhood         | Y       | Y          |         |         | Y           |
 | CoinEgg           | Y       | Y          | Y       |         | User-Defined|
 | Coincheck         | Y       |            |         |         | User-Defined|
+| Coinfalcon        | Y       | Y          | Y       |         | Y           |
 | CoinExchange      | Y       |            |         |         | Y           |
 | Coinbene          | Y       | Y          | Y       |         | Y           |
 | Coinmate          | Y       | Y          |         |         | User-Defined|
