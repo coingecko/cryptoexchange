@@ -35,7 +35,7 @@ module Cryptoexchange::Exchanges
           ticker.target    = market_pair.target
           ticker.market    = Coinfalcon::Market::NAME
           ticker.last      = NumericHelper.to_d(output['last_price'])
-          ticker.volume    = NumericHelper.to_d(output['volume'])
+          ticker.volume    = NumericHelper.to_d(output['volume']) / ticker.last
           ticker.timestamp = Time.now.to_i
           ticker.payload   = output
           ticker
