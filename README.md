@@ -47,6 +47,7 @@ Or install it yourself as:
 | Bitstamp          | Y       | Y          | Y       |         | User-Defined|
 | Bittrex           | Y       |            |         |         | Y           |
 | Bleutrade         | Y       |            |         |         | Y           |
+| BtcAlpha          | Y       | Y          | Y       |         | Y           |
 | BTC-e             |         |            |         |         |             |
 | BTC38             |         |            |         |         |             |
 | BTCC              | Y       |            |         |         | User-Defined|

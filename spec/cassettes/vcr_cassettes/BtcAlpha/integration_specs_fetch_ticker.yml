@@ -1,0 +1,113 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://btc-alpha.com/api/charts/BTC_USD/1/chart?limit=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - btc-alpha.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Thu, 08 Mar 2018 02:30:25 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d4f35dc711554ad6a9169a9cb4f9cb5831520476224; expires=Fri, 08-Mar-19
+        02:30:24 GMT; path=/; domain=.btc-alpha.com; HttpOnly; Secure
+      Location:
+      - "/api/charts/BTC_USD/1/chart/?limit=1"
+      Vary:
+      - Accept-Language
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3f81e1346a6a7014-SIN
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 08 Mar 2018 02:30:25 GMT
+- request:
+    method: get
+    uri: https://btc-alpha.com/api/charts/BTC_USD/1/chart/?limit=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/3.0.0
+      Host:
+      - btc-alpha.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 08 Mar 2018 02:30:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d73320ebcf3cfbc35e4f04187cea403dc1520476225; expires=Fri, 08-Mar-19
+        02:30:25 GMT; path=/; domain=.btc-alpha.com; HttpOnly; Secure
+      Vary:
+      - Accept, Accept-Language
+      Allow:
+      - GET, HEAD, OPTIONS
+      Etag:
+      - '"813b234ed2f7d239446c9a143a3b7a6c"'
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3f81e1381eac1117-SIN
+    body:
+      encoding: UTF-8
+      string: '[{"time":1520476200,"open":9934.664,"close":9936.719,"low":9934.664,"high":9936.719,"volume":0.098484}]'
+    http_version: 
+  recorded_at: Thu, 08 Mar 2018 02:30:26 GMT
+recorded_with: VCR 4.0.0
