@@ -47,20 +47,4 @@ RSpec.describe 'Bits Blockchain integration specs' do
     expect(order_book.timestamp).to be_a Numeric
     expect(order_book.payload).to_not be nil
   end
-
-  it 'fetch trade' do
-    trades = client.trades(atmc_usd_pair)
-    trade = trades.sample
-
-    expect(trades).to_not be_empty
-    expect(trade.base).to eq 'ATMC'
-    expect(trade.target).to eq 'USD'
-    expect(trade.market).to eq 'bits_blockchain'
-    expect(trade.trade_id).to_not be_nil
-    expect(['buy', 'sell']).to include trade.type
-    expect(trade.price).to_not be_nil
-    expect(trade.amount).to_not be_nil
-    expect(trade.timestamp).to be_a Numeric
-    expect(trade.payload).to_not be nil
-  end
 end
