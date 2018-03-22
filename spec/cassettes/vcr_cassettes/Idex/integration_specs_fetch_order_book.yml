@@ -5,47 +5,47 @@ http_interactions:
     uri: https://api.idex.market/returnOrderBook
     body:
       encoding: UTF-8
-      string: '{"market":"ETH_SNT"}'
+      string: '{"market":"SNT_ETH"}'
     headers:
       Connection:
       - close
       Content-Type:
-      - application/json
+      - application/json; charset=UTF-8
       Host:
       - api.idex.market
       User-Agent:
-      - http.rb/1.0.4
+      - http.rb/3.0.0
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Thu, 25 Jan 2018 09:52:29 GMT
+      - Thu, 22 Mar 2018 07:14:32 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '3629'
+      - '36'
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d6656193fae68bece07db3145fa94df4a1516873949; expires=Fri, 25-Jan-19
-        09:52:29 GMT; path=/; domain=.idex.market; HttpOnly; Secure
+      - __cfduid=d9c327080a43c244f8c9f5141a51525121521702871; expires=Fri, 22-Mar-19
+        07:14:31 GMT; path=/; domain=.idex.market; HttpOnly; Secure
       X-Powered-By:
       - Express
       Access-Control-Allow-Origin:
       - "*"
       Etag:
-      - W/"e2d-jDn+X3LkLb/fKXab+/qBQZX3dzI"
+      - W/"24-RJCekHLH0CBsRiLEfxkiRRPzcYo"
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 3e2a5706ff9833b5-HKG
+      - 3ff6dca3a9cfa326-HKG
     body:
       encoding: UTF-8
-      string: '{"asks":[{"timestamp":1516771461,"price":"0.00048595","amount":"4115.649758205576705422","total":"1.999999999999999999","orderHash":"0xc68d65c5f45054961f8c3d13fa5e869ba32b708ed2a1e9486a8b6a5d49d21c32","params":{"tokenBuy":"0x0000000000000000000000000000000000000000","buySymbol":"ETH","buyPrecision":18,"amountBuy":"1999999999999999999","tokenSell":"0x744d70fdbe2ba4cf95131626614a1763df805b9e","sellSymbol":"SNT","sellPrecision":18,"amountSell":"4115649758205576705422","expires":190000,"nonce":105168,"user":"0xe7545f76ecbc8435d348c79db53ea6e6693578ff"}},{"timestamp":1516650335,"price":"0.00058","amount":"980","total":"0.5684","orderHash":"0xc28560436b32b07dfe8e86179e0cca5888e27d2b77e4f16941f754967fa4c280","params":{"tokenBuy":"0x0000000000000000000000000000000000000000","buySymbol":"ETH","buyPrecision":18,"amountBuy":"568400000000000000","tokenSell":"0x744d70fdbe2ba4cf95131626614a1763df805b9e","sellSymbol":"SNT","sellPrecision":18,"amountSell":"980000000000000000000","expires":190000,"nonce":20,"user":"0xe995741f83d84dd6268dbb516f361ec45fe924eb"}},{"timestamp":1515847680,"price":"0.00312","amount":"100","total":"0.312","orderHash":"0xcd827f58c3be3dbe6628f91c87b5094759e9e189c75e95ad0dc0e3d57a6c530d","params":{"tokenBuy":"0x0000000000000000000000000000000000000000","buySymbol":"ETH","buyPrecision":18,"amountBuy":"312000000000000000","tokenSell":"0x744d70fdbe2ba4cf95131626614a1763df805b9e","sellSymbol":"SNT","sellPrecision":18,"amountSell":"100000000000000000000","expires":190000,"nonce":224,"user":"0xac38e3421774e2358960b8b62d5e95f5d3ee84a0"}}],"bids":[{"timestamp":1516864201,"price":"0.00020093","amount":"1293","total":"0.25980249","orderHash":"0xe391c4997069bfd1577ed803f4454fd7d5dde86002afb4f49034e81cff8959ea","params":{"tokenBuy":"0x744d70fdbe2ba4cf95131626614a1763df805b9e","buySymbol":"SNT","buyPrecision":18,"amountBuy":"1293000000000000000000","tokenSell":"0x0000000000000000000000000000000000000000","sellSymbol":"ETH","sellPrecision":18,"amountSell":"259802490000000000","expires":190000,"nonce":283,"user":"0x4b8e763e54893f6473271add79b697c81ef0d1e6"}},{"timestamp":1516864319,"price":"0.00015555","amount":"1285","total":"0.19988175","orderHash":"0x1907252b9d1055dc545cf042c6137ec6e19ca406b4b0651e854d12bbb9c22b5d","params":{"tokenBuy":"0x744d70fdbe2ba4cf95131626614a1763df805b9e","buySymbol":"SNT","buyPrecision":18,"amountBuy":"1285000000000000000000","tokenSell":"0x0000000000000000000000000000000000000000","sellSymbol":"ETH","sellPrecision":18,"amountSell":"199881750000000000","expires":190000,"nonce":286,"user":"0x4b8e763e54893f6473271add79b697c81ef0d1e6"}},{"timestamp":1516810504,"price":"0.00007788","amount":"3000","total":"0.23364","orderHash":"0x1716837b3e6df805d7bbb605bcdba3f5efe1d0e118338df8b696e803056ac074","params":{"tokenBuy":"0x744d70fdbe2ba4cf95131626614a1763df805b9e","buySymbol":"SNT","buyPrecision":18,"amountBuy":"3000000000000000000000","tokenSell":"0x0000000000000000000000000000000000000000","sellSymbol":"ETH","sellPrecision":18,"amountSell":"233640000000000000","expires":190000,"nonce":335,"user":"0xac38e3421774e2358960b8b62d5e95f5d3ee84a0"}},{"timestamp":1516771484,"price":"0.00007787","amount":"20000","total":"1.5574","orderHash":"0x58b129c31f475c685fff1accb939c45fab108a4abb2c4523d01cfc42a3896cc1","params":{"tokenBuy":"0x744d70fdbe2ba4cf95131626614a1763df805b9e","buySymbol":"SNT","buyPrecision":18,"amountBuy":"20000000000000000000000","tokenSell":"0x0000000000000000000000000000000000000000","sellSymbol":"ETH","sellPrecision":18,"amountSell":"1557400000000000000","expires":190000,"nonce":105170,"user":"0xe7545f76ecbc8435d348c79db53ea6e6693578ff"}}]}'
+      string: '{"error":"Market SNT_ETH not found"}'
     http_version: 
-  recorded_at: Thu, 25 Jan 2018 09:52:29 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Thu, 22 Mar 2018 07:14:32 GMT
+recorded_with: VCR 4.0.0

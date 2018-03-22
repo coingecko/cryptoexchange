@@ -83,7 +83,7 @@ Or install it yourself as:
 | Hksy              | Y       |            | Y       |         | User-Defined|
 | Huobi             | Y       |            |         |         | Y           |
 | Itbit             | Y       | Y          | Y       |         | User-Defined|
-| Idex              | Y       | Y          | Y       |         | Y           |
+| Idex              | Y       | Unstable   | Y       |         | Y           |
 | KKex              | Y       | Y          | Y       |         | Y           |
 | Jubi              | Y       |            |         |         | Y           |
 | Koinex            | Y       |            |         |         | Y           |

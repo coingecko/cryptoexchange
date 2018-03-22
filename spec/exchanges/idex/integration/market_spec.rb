@@ -29,7 +29,7 @@ RSpec.describe 'Idex integration specs' do
     expect(ticker.payload).to_not be nil
   end
 
-  it 'fetch order book' do
+  pending 'fetch order book' do
     order_book = client.order_book(snt_eth_pair)
 
     expect(order_book.base).to eq 'SNT'
