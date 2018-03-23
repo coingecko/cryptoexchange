@@ -50,7 +50,11 @@ module Cryptoexchange::Exchanges
         end
 
         def na_to_nil(value)
-          nil if value == 'N/A'
+          if value == 'N/A'
+            nil
+          else
+            value
+          end
         end
       end
     end

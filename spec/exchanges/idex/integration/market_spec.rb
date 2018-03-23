@@ -21,8 +21,8 @@ RSpec.describe 'Idex integration specs' do
     expect(ticker.target).to eq 'ETH'
     expect(ticker.market).to eq 'idex'
     expect(ticker.last).to be_a Numeric
-    expect(ticker.ask).to be_a Numeric
-    expect(ticker.bid).to be_a Numeric
+    expect(ticker.ask).to be_nil
+    expect(ticker.bid).to be_nil
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be_a Numeric
     expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
