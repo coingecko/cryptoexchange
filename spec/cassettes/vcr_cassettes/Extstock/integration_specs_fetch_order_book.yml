@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://extstock.com/api/v1/order_book?market=eth_ltc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - extstock.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Mar 2018 07:51:31 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '10021'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dac3c4036fccdf8a69ff567d59dc5a92d1521013890; expires=Thu, 14-Mar-19
+        07:51:30 GMT; path=/; domain=.extstock.com; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - a2326b1c-31ca-4c55-b249-37cc872b60a5
+      Etag:
+      - '"b732d54722a020cd086a808ab64c8792"'
+      X-Runtime:
+      - '0.198535'
+      X-Powered-By:
+      - Phusion Passenger 5.2.1
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3fb527d268ce30cc-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"asks":[{"id":1867209,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"3.9840416","state":"wait","market":"eth_ltc","created_at":"2018-03-13T17:58:51-04:00","volume":"0.0704","remaining_volume":"0.01024733","executed_volume":"0.06015267","trades_count":2},{"id":1867799,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T18:05:38-04:00","volume":"0.0188","remaining_volume":"0.0188","executed_volume":"0.0","trades_count":0},{"id":1868092,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T18:08:27-04:00","volume":"0.06898","remaining_volume":"0.06898","executed_volume":"0.0","trades_count":0},{"id":1868633,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T18:15:06-04:00","volume":"0.03","remaining_volume":"0.03","executed_volume":"0.0","trades_count":0},{"id":1868757,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T18:16:42-04:00","volume":"0.04312","remaining_volume":"0.04312","executed_volume":"0.0","trades_count":0},{"id":1869547,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T18:24:25-04:00","volume":"0.09107","remaining_volume":"0.09107","executed_volume":"0.0","trades_count":0},{"id":1869722,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T18:26:03-04:00","volume":"0.08551598","remaining_volume":"0.08551598","executed_volume":"0.0","trades_count":0},{"id":1870255,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T18:34:09-04:00","volume":"0.0557","remaining_volume":"0.0557","executed_volume":"0.0","trades_count":0},{"id":1870546,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T18:38:30-04:00","volume":"0.00069","remaining_volume":"0.00069","executed_volume":"0.0","trades_count":0},{"id":1871263,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T18:46:08-04:00","volume":"0.05776","remaining_volume":"0.05776","executed_volume":"0.0","trades_count":0},{"id":1873138,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T19:14:49-04:00","volume":"0.0654","remaining_volume":"0.0654","executed_volume":"0.0","trades_count":0},{"id":1873548,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T19:19:35-04:00","volume":"0.0618","remaining_volume":"0.0618","executed_volume":"0.0","trades_count":0},{"id":1873779,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T19:22:05-04:00","volume":"0.05404014","remaining_volume":"0.05404014","executed_volume":"0.0","trades_count":0},{"id":1875175,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T19:36:13-04:00","volume":"0.10594397","remaining_volume":"0.10594397","executed_volume":"0.0","trades_count":0},{"id":1875272,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T19:37:18-04:00","volume":"0.01414517","remaining_volume":"0.01414517","executed_volume":"0.0","trades_count":0},{"id":1875754,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T19:45:03-04:00","volume":"0.1272","remaining_volume":"0.1272","executed_volume":"0.0","trades_count":0},{"id":1875782,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T19:46:01-04:00","volume":"0.059","remaining_volume":"0.059","executed_volume":"0.0","trades_count":0},{"id":1876527,"side":"sell","ord_type":"limit","price":"3.9840416","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T19:54:16-04:00","volume":"0.01654","remaining_volume":"0.01654","executed_volume":"0.0","trades_count":0},{"id":1848041,"side":"sell","ord_type":"limit","price":"3.9842946","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T14:29:23-04:00","volume":"0.04","remaining_volume":"0.04","executed_volume":"0.0","trades_count":0},{"id":1875155,"side":"sell","ord_type":"limit","price":"3.98448688","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T19:36:06-04:00","volume":"0.00567382","remaining_volume":"0.00567382","executed_volume":"0.0","trades_count":0}],"bids":[{"id":1895159,"side":"buy","ord_type":"limit","price":"3.98222","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T23:20:00-04:00","volume":"0.01","remaining_volume":"0.01","executed_volume":"0.0","trades_count":0},{"id":1899418,"side":"buy","ord_type":"limit","price":"3.98222","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-14T00:04:49-04:00","volume":"0.06373971","remaining_volume":"0.06373971","executed_volume":"0.0","trades_count":0},{"id":1895618,"side":"buy","ord_type":"limit","price":"3.9821188","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T23:24:49-04:00","volume":"0.06429655","remaining_volume":"0.06429655","executed_volume":"0.0","trades_count":0},{"id":1896088,"side":"buy","ord_type":"limit","price":"3.9821188","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T23:29:45-04:00","volume":"0.1","remaining_volume":"0.1","executed_volume":"0.0","trades_count":0},{"id":1896386,"side":"buy","ord_type":"limit","price":"3.9821188","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T23:33:11-04:00","volume":"0.03507836","remaining_volume":"0.03507836","executed_volume":"0.0","trades_count":0},{"id":1896594,"side":"buy","ord_type":"limit","price":"3.9821188","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T23:35:59-04:00","volume":"0.07218959","remaining_volume":"0.07218959","executed_volume":"0.0","trades_count":0},{"id":1897448,"side":"buy","ord_type":"limit","price":"3.9821188","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T23:45:51-04:00","volume":"0.03057","remaining_volume":"0.03057","executed_volume":"0.0","trades_count":0},{"id":1897695,"side":"buy","ord_type":"limit","price":"3.9821188","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T23:47:44-04:00","volume":"0.02822","remaining_volume":"0.02822","executed_volume":"0.0","trades_count":0},{"id":1898406,"side":"buy","ord_type":"limit","price":"3.9821188","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-13T23:54:19-04:00","volume":"0.062","remaining_volume":"0.062","executed_volume":"0.0","trades_count":0},{"id":1898992,"side":"buy","ord_type":"limit","price":"3.9821188","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-14T00:00:28-04:00","volume":"0.01459","remaining_volume":"0.01459","executed_volume":"0.0","trades_count":0},{"id":1899083,"side":"buy","ord_type":"limit","price":"3.9821188","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-14T00:01:11-04:00","volume":"0.0584","remaining_volume":"0.0584","executed_volume":"0.0","trades_count":0},{"id":1899683,"side":"buy","ord_type":"limit","price":"3.9821188","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-14T00:07:46-04:00","volume":"0.0521","remaining_volume":"0.0521","executed_volume":"0.0","trades_count":0},{"id":1902352,"side":"buy","ord_type":"limit","price":"3.981208","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-14T00:42:37-04:00","volume":"0.03156099","remaining_volume":"0.03156099","executed_volume":"0.0","trades_count":0},{"id":1901545,"side":"buy","ord_type":"limit","price":"3.98052996","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-14T00:34:37-04:00","volume":"0.10672","remaining_volume":"0.10672","executed_volume":"0.0","trades_count":0},{"id":1902004,"side":"buy","ord_type":"limit","price":"3.98052996","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-14T00:38:56-04:00","volume":"0.078","remaining_volume":"0.078","executed_volume":"0.0","trades_count":0},{"id":1902187,"side":"buy","ord_type":"limit","price":"3.98052996","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-14T00:40:51-04:00","volume":"0.04425","remaining_volume":"0.04425","executed_volume":"0.0","trades_count":0},{"id":1902856,"side":"buy","ord_type":"limit","price":"3.98052996","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-14T00:48:16-04:00","volume":"0.0458303","remaining_volume":"0.0458303","executed_volume":"0.0","trades_count":0},{"id":1903548,"side":"buy","ord_type":"limit","price":"3.98052996","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-14T00:55:10-04:00","volume":"0.041","remaining_volume":"0.041","executed_volume":"0.0","trades_count":0},{"id":1903962,"side":"buy","ord_type":"limit","price":"3.98052996","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-14T00:59:16-04:00","volume":"0.0044","remaining_volume":"0.0044","executed_volume":"0.0","trades_count":0},{"id":1904520,"side":"buy","ord_type":"limit","price":"3.98052996","avg_price":"0.0","state":"wait","market":"eth_ltc","created_at":"2018-03-14T01:05:21-04:00","volume":"0.1095","remaining_volume":"0.1095","executed_volume":"0.0","trades_count":0}]}'
+    http_version: 
+  recorded_at: Wed, 14 Mar 2018 07:51:30 GMT
+recorded_with: VCR 4.0.0

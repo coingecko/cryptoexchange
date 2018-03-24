@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://public.bitbank.cc/btc_jpy/ticker
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - public.bitbank.cc
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain
+      Content-Length:
+      - '144'
+      Connection:
+      - close
+      Date:
+      - Thu, 08 Feb 2018 11:31:38 GMT
+      Last-Modified:
+      - Thu, 08 Feb 2018 11:31:38 GMT
+      Etag:
+      - '"95d72dfb5187479682fc76486ae62745"'
+      Server:
+      - AmazonS3
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 498232ad85e18662fee2f522eb7fffb9.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - ZfQrTLi0rbIvy4ljcpcsZQibLq9oOCsFeoAHJvTlFC96A94XrO0N-Q==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":1,"data":{"sell":"927203","buy":"927013","high":"945028","low":"820196","last":"927013","vol":"1551.8684","timestamp":1518089497970}}'
+    http_version: 
+  recorded_at: Thu, 08 Feb 2018 11:31:38 GMT
+recorded_with: VCR 3.0.3

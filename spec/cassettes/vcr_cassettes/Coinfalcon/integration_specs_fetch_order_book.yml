@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coinfalcon.com/api/v1/markets/ETH-BTC/orders
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinfalcon.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 11 Mar 2018 07:26:48 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '102'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d382c719902e8602f8f15c705bb4246b51520753207; expires=Mon, 11-Mar-19
+        07:26:47 GMT; path=/; domain=.coinfalcon.com; HttpOnly; Secure
+      Accept-Encoding:
+      - gzip
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Cf-Connecting-Ip:
+      - 115.133.65.24
+      Cf-Ipcountry:
+      - MY
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      Etag:
+      - W/"c4a192ca58ec6b7764a8d7620037769e"
+      User-Agent:
+      - http.rb/3.0.0
+      Vary:
+      - Origin
+      Version:
+      - HTTP/1.1
+      X-Forwarded-For:
+      - 115.133.65.24, 162.158.166.160, 115.133.65.24
+      X-Forwarded-Port:
+      - '80'
+      X-Forwarded-Proto:
+      - http
+      X-Nginx-Proxy:
+      - 'true'
+      X-Ratelimit-Limit:
+      - '3'
+      X-Ratelimit-Remaining:
+      - '2'
+      X-Ratelimit-Reset:
+      - '1'
+      X-Real-Ip:
+      - 115.133.65.24
+      X-Request-Id:
+      - c9821bc6-54d8-4427-94b9-9e13b6292c12
+      X-Runtime:
+      - '0.041651'
+      Strict-Transport-Security:
+      - max-age=15552000
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3f9c4b7d3f887074-SIN
+    body:
+      encoding: UTF-8
+      string: '{"data":{"bids":[{"price":"0.078","size":"0.0033548"}],"asks":[{"price":"0.08182","size":"0.19316"}]}}'
+    http_version: 
+  recorded_at: Sun, 11 Mar 2018 07:26:48 GMT
+recorded_with: VCR 4.0.0
