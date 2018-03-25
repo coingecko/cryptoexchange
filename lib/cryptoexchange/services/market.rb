@@ -30,7 +30,7 @@ module Cryptoexchange
         end
       end
 
-      def fetch_using_post(endpoint, params)
+      def fetch_using_post(endpoint, params, submit_as_form = false)
         LruTtlCache.ticker_cache.getset(endpoint) do
           response = http_post(endpoint, params)
           JSON.parse(response.to_s)
