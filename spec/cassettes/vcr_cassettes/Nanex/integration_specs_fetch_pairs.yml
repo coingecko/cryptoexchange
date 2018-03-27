@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nanex.co/api/public/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - nanex.co
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 27 Mar 2018 12:48:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=da4701a19a924d2c2a806f548993406f31522154925; expires=Wed, 27-Mar-19
+        12:48:45 GMT; path=/; domain=.nanex.co; HttpOnly; Secure
+      Etag:
+      - W/"feecd09740c4cd305e9a42570b78c18d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3ec7a96a-2975-40de-a4b8-9ea2105d01aa
+      X-Runtime:
+      - '0.003864'
+      Vary:
+      - Origin
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4021f91dc9003313-HKG
+    body:
+      encoding: UTF-8
+      string: '{"btcnano":{"base":"BTC","quote":"NANO","volume":"13.99449000","last_trade":"1191.00000","price_change":"2.67","quote_volume":"16717.38006695"},"ltcnano":{"base":"LTC","quote":"NANO","volume":"66.99378000","last_trade":"20.33334","price_change":"1.66","quote_volume":"1418.52038715"},"grlcnano":{"base":"GRLC","quote":"NANO","volume":"17321.46377000","last_trade":"0.00703","price_change":"-3.57","quote_volume":"120.55897196"},"ethnano":{"base":"ETH","quote":"NANO","volume":"21.72005000","last_trade":"69.00000","price_change":"-1.43","quote_volume":"1523.55712738"},"btcpnano":{"base":"BTCP","quote":"NANO","volume":"8453.11485000","last_trade":"3.83799","price_change":"4.54","quote_volume":"32127.84723964"},"dcrnano":{"base":"DCR","quote":"NANO","volume":"0.00006000","last_trade":"7.07499","price_change":"3.28","quote_volume":"0.00042450"},"phrnano":{"base":"PHR","quote":"NANO","volume":"3089.28781000","last_trade":"0.22070","price_change":"-11.72","quote_volume":"790.63338031"},"rvnnano":{"base":"RVN","quote":"NANO","volume":"300059.95932000","last_trade":"0.00725","price_change":"45.29","quote_volume":"1871.91324311"}}'
+    http_version: 
+  recorded_at: Tue, 27 Mar 2018 12:48:45 GMT
+recorded_with: VCR 4.0.0
