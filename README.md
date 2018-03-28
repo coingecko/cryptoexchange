@@ -33,6 +33,7 @@ Or install it yourself as:
 | Bibox             | Y       | Y          | Y       |         | Y           |
 | BigONE            | Y       | Y          | Y       |         | Y           |
 | Bit-Z             | Y       |            |         |         | Y           |
+| Bit2C             | Y       | Y          | Y       |         | User-Defined|
 | Binance           | Y       | Y          |         |         | Y           |
 | Bitbay            | Y       |            |         |         | User-Defined|
 | Bitbank           | Y       | Y          | Y       |         | User-Defined|
