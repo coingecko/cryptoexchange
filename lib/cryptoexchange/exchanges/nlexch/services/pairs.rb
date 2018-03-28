@@ -1,8 +1,8 @@
 module Cryptoexchange::Exchanges
-  module NLexch
+  module Nlexch
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::NLexch::Market::API_URL}/markets"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Nlexch::Market::API_URL}/markets"
 
         def fetch
           output = super
@@ -21,7 +21,7 @@ module Cryptoexchange::Exchanges
 
             market_pair.base = base
             market_pair.target = target
-            market_pair.market = NLexch::Market::NAME
+            market_pair.market = Nlexch::Market::NAME
             market_pairs << market_pair
           end
           market_pairs

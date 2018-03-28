@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module NLexch
+  module Nlexch
     module Services
       class Market < Cryptoexchange::Services::Market
         class << self
@@ -15,7 +15,7 @@ module Cryptoexchange::Exchanges
 
         def ticker_url(market_pair)
           parameter = "#{market_pair.base.downcase}#{market_pair.target.downcase}"
-          "#{Cryptoexchange::Exchanges::NLexch::Market::API_URL}/tickers/#{parameter}"
+          "#{Cryptoexchange::Exchanges::Nlexch::Market::API_URL}/tickers/#{parameter}"
         end
 
         def adapt(output, market_pair)
@@ -23,7 +23,7 @@ module Cryptoexchange::Exchanges
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
-          ticker.market    = NLexch::Market::NAME
+          ticker.market    = Nlexch::Market::NAME
           ticker.last      = NumericHelper.to_d(data_ticker['last'])
           ticker.bid       = NumericHelper.to_d(data_ticker['buy'])
           ticker.ask       = NumericHelper.to_d(data_ticker['sell'])

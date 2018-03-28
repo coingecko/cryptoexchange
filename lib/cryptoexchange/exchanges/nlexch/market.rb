@@ -1,7 +1,7 @@
 module Cryptoexchange::Exchanges
-  module NLexch
+  module Nlexch
     class Market
-      NAME = 'NLexch'
+      NAME = 'nlexch'
       API_URL = 'https://www.nlexch.com/api/v2'
     end
   end

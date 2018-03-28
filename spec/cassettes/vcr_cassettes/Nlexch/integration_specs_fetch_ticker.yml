@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.nlexch.com/api/v2/tickers/ltcbtc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.nlexch.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Wed, 28 Mar 2018 03:15:34 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '117'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 3206c437-4611-4869-81a3-ebb90f4daade
+      Etag:
+      - '"0a31c934f30d2f9ba10ce4e2db2acf7e"'
+      X-Runtime:
+      - '0.004958'
+      X-Powered-By:
+      - Phusion Passenger 5.1.12
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1522206932,"ticker":{"buy":"0.0001","sell":"0.025","low":"0.0204","high":"0.0204","last":"0.0204","vol":"0.0"}}'
+    http_version: 
+  recorded_at: Wed, 28 Mar 2018 03:15:34 GMT
+recorded_with: VCR 4.0.0

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe 'NLexch integration specs' do
+RSpec.describe 'Nlexch integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:ltc_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'LTC', target: 'BTC', market: 'nlexch') }
 
