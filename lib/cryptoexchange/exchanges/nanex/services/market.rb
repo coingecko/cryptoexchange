@@ -19,8 +19,8 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |_pair, ticker|
-            base        = ticker['base']
-            target      = ticker['quote']
+            base        = ticker['quote']
+            target      = ticker['base']
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
@@ -36,7 +36,7 @@ module Cryptoexchange::Exchanges
           ticker.target    = market_pair.target
           ticker.market    = Nanex::Market::NAME
           ticker.last      = NumericHelper.to_d(output['last_trade'])
-          ticker.volume    = NumericHelper.to_d(output['volume'])
+          ticker.volume    = NumericHelper.to_d(output['quote_volume'])
           ticker.timestamp = Time.now.to_i
           ticker.payload   = output
           ticker

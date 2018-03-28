@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Nanex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_nano_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'nano', market: 'nanex') }
+  let(:nano_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'nano', target: 'btc', market: 'nanex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('nanex')
@@ -15,10 +15,10 @@ RSpec.describe 'Nanex integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_nano_pair)
+    ticker = client.ticker(nano_btc_pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'NANO'
+    expect(ticker.base).to eq 'NANO'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'nanex'
     expect(ticker.last).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
