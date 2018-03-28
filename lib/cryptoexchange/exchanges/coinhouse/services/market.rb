@@ -19,8 +19,9 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |key, value|
-            target = key[-3..-1]
-            base   = key.chomp(target)
+            separator = /(USDT|BTC|BCH|ETH)\z/i =~ key
+            base      = key[0..separator - 1]
+            target    = key[separator..-1]
             market_pair = Cryptoexchange::Models::MarketPair.new(
                 base: base,
                 target: target,

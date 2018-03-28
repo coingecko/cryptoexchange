@@ -3,7 +3,7 @@ module Cryptoexchange::Exchanges
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Coinhouse::Market::API_URL}/tickers"
-        TARGET = 'BTC'
+        TARGET    = 'BTC'
 
         def fetch
           output = super
@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
             base, target = strip_pairs(pair)
             next unless base && target
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-              base: base,
+              base:   base,
               target: target,
               market: Coinhouse::Market::NAME
             )
@@ -25,8 +25,9 @@ module Cryptoexchange::Exchanges
         end
 
         def strip_pairs(pair_symbol)
-          target = pair_symbol[-3..-1]
-          base = pair_symbol.chomp(target)
+          separator = /(USDT|BTC|BCH|ETH)\z/i =~ pair_symbol
+          base      = pair_symbol[0..separator - 1]
+          target    = pair_symbol[separator..-1]
 
           [base, target]
         end
