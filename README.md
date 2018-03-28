@@ -132,6 +132,7 @@ Or install it yourself as:
 | Upbit             | Y       |            |         |         | Y           |
 | Unocoin           |         |            |         |         |             |
 | Viabtc            | Y       |            |         |         | User-Defined|
+| Waves             | Y       | N          | Y       |         | Y           |
 | Wex               | Y       | Y          | Y       |         | Y           |
 | Yobit             | Y       |            |         |         | Y           |
 | Yuanbao           | Y       |            |         |         | User-Defined|
