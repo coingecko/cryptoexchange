@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kkex.com/api/v1/depth?size=20&symbol=ETHBTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - kkex.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 07 Dec 2017 05:25:12 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '751'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Language, Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Language:
+      - en
+      Set-Cookie:
+      - django_language=en; Path=/
+      - sessionid=7650qdnlwdw6rb8zw8j5hgqfrtszkrqg; httponly; Path=/
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      - max-age=63072000; includeSubdomains; preload
+    body:
+      encoding: ASCII-8BIT
+      string: '{"bids": [["0.02975", "44.211400000"], ["0.02973", "24.580740000"],
+        ["0.02971", "45.618580000"], ["0.02967", "44.919980000"], ["0.02963", "65.159420000"],
+        ["0.02959", "9.580800000"], ["0.02958", "37.574700000"], ["0.02952", "22.455000000"],
+        ["0.02951", "8.193580000"], ["0.02944", "12.644660000"], ["0.02941", "16.137660000"],
+        ["0.02938", "43.003820000"], ["0.02935", "14.979980000"], ["0.02000", "9.356250250"],
+        ["0.01889", "1.022503036"], ["0.00599", "0.998000000"]], "result": true, "asks":
+        [["0.03041", "22.190000000"], ["0.03042", "17.270000000"], ["0.03056", "6.230000000"],
+        ["0.03064", "3.770000000"], ["0.03066", "22.890000000"], ["0.03074", "16.980000000"],
+        ["0.03991", "0.297000000"], ["0.12250", "0.073502980"], ["0.45172", "0.024501020"]]}'
+    http_version: 
+  recorded_at: Thu, 07 Dec 2017 05:25:12 GMT
+recorded_with: VCR 3.0.3

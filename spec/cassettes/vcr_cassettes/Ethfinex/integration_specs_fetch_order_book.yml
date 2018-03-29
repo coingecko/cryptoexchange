@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ethfinex.com/v2/book/tETHUSD/P0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.ethfinex.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 23 Jan 2018 16:54:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7d6981856cad524feb938ca540d41c161516726454; expires=Wed, 23-Jan-19
+        16:54:14 GMT; path=/; domain=.ethfinex.com; HttpOnly
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-BFX-APIKEY,X-BFX-PAYLOAD,X-BFX-SIGNATURE,Content-Type,X-CSRF-Token,bfx-token,bfx-signature,bfx-apikey,bfx-nonce,bfx-flags
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e1c46142b0231d4-SIN
+    body:
+      encoding: UTF-8
+      string: "[[1007,6,25.84131257],[1006.7,2,15.45675303],[1006.6,1,100],[1006.5,1,1],[1006.1,2,1.14878052],[1006,1,6.1848],[1005.9,1,0.7367],[1005.4,1,0.5],[1005,1,0.03888888],[1004.5,1,0.08],[1004.3,1,1.69098],[1004.2,1,2.23649999],[1004.1,1,67.66444765],[1004,2,50.25775116],[1003.9,1,0.15],[1003.3,2,33.16503758],[1003.1,1,40],[1002.9,1,0.37520838],[1002.8,1,0.36212543],[1002.7,2,17.409],[1002.1,1,9.455],[1002,4,112.166],[1001.9,1,14.144],[1001.8,1,0.25],[1001.3,1,0.7684625],[1007.1,1,-9.35736779],[1007.3,3,-74.27024088],[1007.8,1,-0.02],[1007.9,1,-1],[1008.5,1,-0.05411944],[1008.7,1,-4.13115089],[1009,1,-9.99024],[1009.5,3,-12.011],[1009.7,1,-1],[1009.9,1,-2],[1010,6,-267.26068082],[1010.1,2,-3.547],[1010.2,1,-1.333],[1010.3,4,-5.32600001],[1010.5,5,-5.397],[1010.6,3,-2.51572158],[1010.7,2,-1.227],[1010.8,2,-372.827],[1011.1,1,-9.455],[1011.5,1,-7.409],[1011.6,1,-0.5],[1012.1,1,-71.01741268],[1012.2,4,-25.6373],[1013,1,-100],[1014.5,1,-16.591]]"
+    http_version: 
+  recorded_at: Tue, 23 Jan 2018 16:54:15 GMT
+recorded_with: VCR 3.0.3

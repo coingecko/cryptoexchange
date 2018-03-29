@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://c-cex.com/t/terra-ltc.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - c-cex.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 14 Dec 2017 08:19:49 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '188'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=da224cf295bd759ee94fc04390370bbf21513239589; expires=Fri, 14-Dec-18
+        08:19:49 GMT; path=/; domain=.c-cex.com; HttpOnly
+      Last-Modified:
+      - Wed, 08 Nov 2017 08:31:19 GMT
+      Etag:
+      - '"bc-55d74830bdd3d"'
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3ccfbd87ee1713c5-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ticker":{"high":0.00007,"low":0.00007,"avg":0.00007,"lastbuy":0.00007,"lastsell":0.00007,"buy":0.00000081,"sell":0.0007,"lastprice":0.00007,"buysupport":0.25377829,"updated":1510129877}}'
+    http_version: 
+  recorded_at: Thu, 14 Dec 2017 08:19:49 GMT
+- request:
+    method: get
+    uri: https://c-cex.com/t/volume_ltc.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - c-cex.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 14 Dec 2017 08:19:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '6529'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=df9912c09b0719778c3673bb2ab3dbd221513239590; expires=Fri, 14-Dec-18
+        08:19:50 GMT; path=/; domain=.c-cex.com; HttpOnly
+      Last-Modified:
+      - Thu, 14 Dec 2017 08:19:46 GMT
+      Etag:
+      - '"1981-560488c05b071"'
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3ccfbd90fe025396-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ticker":{"usd":{"last":0.00321027,"vol":80.38328341},"btc":{"last":56.33802817,"vol":863.26466652},"611":{"last":0.001719,"vol":0},"9coin":{"last":0.000049,"vol":0},"abc":{"last":1250,"vol":0},"acp":{"last":0.00009009,"vol":0},"adcn":{"last":0.00056527,"vol":0},"adl":{"last":0,"vol":0},"aib":{"last":0.00007997,"vol":0.0039985},"pai":{"last":0,"vol":0},"aio":{"last":0.033,"vol":0},"alt":{"last":0.00133531,"vol":0.09053327},"apc":{"last":0.00730022,"vol":0},"apw":{"last":0.00000094,"vol":0},"arc":{"last":0.02738518,"vol":0},"bash":{"last":0.00001111,"vol":0},"bay":{"last":0.00325485,"vol":0},"bbp":{"last":0.00004795,"vol":0},"bdl":{"last":0.001,"vol":0},"bee":{"last":0.00000008,"vol":0},"bitcf":{"last":0.00184166,"vol":0},"bitrs":{"last":0.00058195,"vol":0},"biz":{"last":0.00001999,"vol":0},"blc":{"last":0.00872404,"vol":0},"bost":{"last":0.0001528,"vol":0},"bq":{"last":0.000142,"vol":0},"bsdb":{"last":0,"vol":0},"brit":{"last":0.00003008,"vol":0},"btchc":{"last":0.00000008,"vol":0},"btcs":{"last":0.0002,"vol":0},"btcz":{"last":0.00004578,"vol":1.9640487},"btlc":{"last":0,"vol":0},"btxc":{"last":0.24875002,"vol":0},"btq":{"last":0.00039999,"vol":0},"burst":{"last":0.00573157,"vol":0},"calc":{"last":0.0003,"vol":0},"ccrb":{"last":0.00502001,"vol":0},"cesc":{"last":0.00006297,"vol":0},"cnb":{"last":0.03996,"vol":0},"cnt":{"last":0.0021565,"vol":0.1556178},"cj":{"last":0.0003,"vol":0},"crc":{"last":0.00048,"vol":0},"cre":{"last":0.005,"vol":0},"crpc":{"last":0.00000001,"vol":0},"crw":{"last":0.022,"vol":0},"ctic3":{"last":0.01060833,"vol":0},"cto":{"last":0.0089,"vol":0.018334},"ctc":{"last":0,"vol":0},"das":{"last":0.000629,"vol":0},"dash":{"last":1.39201681,"vol":0},"dazz":{"last":0.00000035,"vol":0.35966667},"deep":{"last":0.208,"vol":0},"desh":{"last":0.00000928,"vol":0},"deus":{"last":0.002,"vol":0},"doge":{"last":0.00001138,"vol":8.79226307},"drm8":{"last":0.00000088,"vol":0},"drz":{"last":0.008999,"vol":0},"gac":{"last":0.00000054,"vol":0},"eag":{"last":0,"vol":0},"ebh":{"last":0.00000168,"vol":0},"ec":{"last":0.075,"vol":0},"ecn":{"last":0.014325,"vol":0},"el":{"last":0.00008,"vol":0},"eli":{"last":0.028,"vol":0},"elm":{"last":0.1011,"vol":0},"ert":{"last":0,"vol":0},"etc":{"last":0.11,"vol":1.48312834},"eth":{"last":2.45,"vol":5.35921448},"ethg":{"last":0.00201313,"vol":0.05544445},"ett":{"last":0,"vol":0},"etx":{"last":0.0369986,"vol":0},"evr":{"last":0.024975,"vol":0},"fch":{"last":0.000046,"vol":0},"fork":{"last":0.00470724,"vol":2.25716119},"futc":{"last":0.00000738,"vol":0},"gary":{"last":0.95,"vol":0},"gbc":{"last":0.0000162,"vol":0},"gbrc":{"last":0.00007776,"vol":0},"gcc24":{"last":0.7999999,"vol":0},"gd2":{"last":0,"vol":0},"geluk":{"last":0.00001638,"vol":0},"gld":{"last":0.0007078,"vol":0.00604427},"gltc":{"last":0.00249999,"vol":0},"gmx":{"last":0.00021927,"vol":0},"grc":{"last":0.00021976,"vol":0},"grs":{"last":0.008,"vol":0},"grwi":{"last":0,"vol":0},"guc":{"last":0.00674857,"vol":0},"heat":{"last":0.00228571,"vol":0.05734332},"hop":{"last":0.000092,"vol":0},"hsr":{"last":0.09538744,"vol":0},"icobi":{"last":0.0003,"vol":0},"ilc":{"last":0.00033872,"vol":0},"iot":{"last":0.00009847,"vol":0},"jns":{"last":0,"vol":0},"klc":{"last":0.000005,"vol":0},"kpl":{"last":0.001,"vol":0},"krone":{"last":0.009,"vol":0},"krs":{"last":0.0000095,"vol":0},"ldcn":{"last":0.0002885,"vol":0},"linda":{"last":0.000006,"vol":0},"log":{"last":0.00936561,"vol":0},"loyal":{"last":0,"vol":0},"lts":{"last":0.0070999,"vol":0},"leo":{"last":0.7498994,"vol":0},"ltcr":{"last":0.000368,"vol":0},"mbl":{"last":0.00029999,"vol":0},"mcap":{"last":0.00400001,"vol":18.23102748},"men":{"last":0.0000028,"vol":0},"mcr":{"last":0,"vol":0},"mhc":{"last":0.00002,"vol":0},"mix":{"last":0.00009098,"vol":0},"mlm":{"last":0.0028944,"vol":1.32651752},"moin":{"last":0.00199999,"vol":0},"namo":{"last":0,"vol":0},"ndc":{"last":40,"vol":0},"newb":{"last":0.00009999,"vol":0},"nlc2":{"last":0.0021978,"vol":0},"note":{"last":0.00047885,"vol":0},"nvc":{"last":0.13199997,"vol":0},"nxt":{"last":0.00663516,"vol":0},"od":{"last":0,"vol":0},"odn":{"last":0.00145321,"vol":0.10870269},"ogt":{"last":0,"vol":0},"omni":{"last":9.7,"vol":0},"opnc":{"last":0.0035,"vol":0},"orme":{"last":0.07887911,"vol":0},"otc":{"last":0.04,"vol":0},"otx":{"last":0.00073927,"vol":0},"ox":{"last":0.00000974,"vol":0},"pcs":{"last":0.0011001,"vol":0},"pguc":{"last":0.42073384,"vol":0},"phx":{"last":0.0001,"vol":0},"piex":{"last":0.0047738,"vol":0},"pizza":{"last":0.000012,"vol":0},"poly":{"last":0.00000024,"vol":0},"prc":{"last":0.00095844,"vol":0},"pres":{"last":0.000099,"vol":0},"proc":{"last":0.0004,"vol":0},"propy":{"last":0,"vol":0},"pts":{"last":0.0001,"vol":0},"pura":{"last":0.0052947,"vol":0},"r":{"last":0.005,"vol":0},"rbies":{"last":0,"vol":0},"rgc":{"last":0.000248,"vol":0},"rkc":{"last":0,"vol":0},"rev":{"last":0.02709999,"vol":0},"rhfc":{"last":0.00001201,"vol":0},"rolc":{"last":0.08,"vol":0},"sgc":{"last":0.00000419,"vol":0},"sib":{"last":0.1,"vol":0},"sikka":{"last":0,"vol":0},"smly":{"last":0.00000012,"vol":4.52971318},"riya":{"last":0.0030001,"vol":0},"tcash":{"last":0.00599679,"vol":0},"tcoin":{"last":0.00000276,"vol":0},"tera":{"last":0.00000002,"vol":0},"teri":{"last":0.00000001,"vol":0},"tesla":{"last":0.00800132,"vol":0},"tlac":{"last":0,"vol":0},"toa":{"last":0.00030022,"vol":0},"trc":{"last":0.00199601,"vol":0},"trump":{"last":0.00979989,"vol":0},"uno":{"last":1.46139752,"vol":0},"uny":{"last":0.00009457,"vol":0},"usdt":{"last":0.00585083,"vol":0},"uta":{"last":0.0006323,"vol":0},"vak":{"last":0,"vol":0},"vrs":{"last":0.00000029,"vol":0},"vsx":{"last":0.05,"vol":0},"vuc":{"last":0.000018,"vol":0},"wa":{"last":0.002,"vol":0},"wcn":{"last":0.0000228,"vol":0},"wthc":{"last":1.74125,"vol":1.57015375},"wop":{"last":0.00037962,"vol":0},"xaur":{"last":0.00210751,"vol":0},"xb":{"last":0,"vol":0},"xbp":{"last":0.00003164,"vol":0},"xbta":{"last":0,"vol":0},"xby":{"last":0.00071584,"vol":0.30293774},"xcxt":{"last":0.00007,"vol":0},"xgb":{"last":0.01312789,"vol":0},"xhi":{"last":0.00013792,"vol":0},"xid":{"last":0.004,"vol":0},"xnc":{"last":0,"vol":0},"xodus":{"last":0.00000042,"vol":0},"xom":{"last":0.0154845,"vol":0},"xot":{"last":65555.98888889,"vol":0},"xto":{"last":0,"vol":0},"xtp":{"last":1991.9998,"vol":0},"xvg":{"last":0.00004948,"vol":1.44891301},"xza":{"last":0,"vol":0},"yoc":{"last":0.00107033,"vol":0.01136927},"zec":{"last":2.6049947,"vol":0},"zeni":{"last":0.3,"vol":0},"zny":{"last":0.00113733,"vol":5.55028057},"zsc":{"last":0.0007,"vol":0.01071443}}}'
+    http_version: 
+  recorded_at: Thu, 14 Dec 2017 08:19:50 GMT
+recorded_with: VCR 3.0.3

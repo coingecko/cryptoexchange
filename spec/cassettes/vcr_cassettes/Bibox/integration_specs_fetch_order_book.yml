@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bibox.com/v1/mdata?cmd=depth&pair=BIX_BTC&size=15
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bibox.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 25 Jan 2018 02:15:19 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dcd710f3cd84fd1e0fbeb1a9580cbdcde1516846519; expires=Fri, 25-Jan-19
+        02:15:19 GMT; path=/; domain=.bibox.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - undefined
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-access-token, X-Requested-With
+      Access-Control-Max-Age:
+      - '172800'
+      X-Ca-Request-Id:
+      - 0D76CB62-2E94-4119-8401-71302CE6FF45
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"53d-aEGMDEIbkJ8z0yqKy20qO7QHw9c"
+      Vary:
+      - Accept-Encoding
+      X-Ca-Error-Message:
+      - OK
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e27b95bf9d884fc-HKG
+    body:
+      encoding: UTF-8
+      string: '{"result":{"pair":"BIX_BTC","update_time":1516846519436,"asks":[{"price":"0.000113","volume":"5961.6309"},{"price":"0.0001131","volume":"312.4463"},{"price":"0.000114","volume":"97.889"},{"price":"0.00011455","volume":"481.0855"},{"price":"0.00011457","volume":"40.8511"},{"price":"0.0001148","volume":"24.8272"},{"price":"0.0001149","volume":"792.6465"},{"price":"0.000115","volume":"21461.3571"},{"price":"0.0001151","volume":"938.0855"},{"price":"0.0001153","volume":"728.0388"},{"price":"0.00011533","volume":"535.4698"},{"price":"0.00011535","volume":"241.103"},{"price":"0.00011538","volume":"6.3436"},{"price":"0.00011567","volume":"349.7616"},{"price":"0.0001158","volume":"863.0772"}],"bids":[{"price":"0.00011291","volume":"2138"},{"price":"0.0001128","volume":"26.6273"},{"price":"0.00011275","volume":"148.9929"},{"price":"0.00011274","volume":"240.2809"},{"price":"0.00011244","volume":"13.1663"},{"price":"0.00011201","volume":"466.3522"},{"price":"0.000112","volume":"1139.5586"},{"price":"0.0001118","volume":"63.3398"},{"price":"0.00011162","volume":"4256.0347"},{"price":"0.00011111","volume":"50"},{"price":"0.000111","volume":"322.373"},{"price":"0.0001105","volume":"1996.6353"},{"price":"0.0001102","volume":"13.6115"},{"price":"0.00011001","volume":"248.3047"},{"price":"0.00011","volume":"5024.8613"}]},"cmd":"depth"}'
+    http_version: 
+  recorded_at: Thu, 25 Jan 2018 02:15:19 GMT
+recorded_with: VCR 3.0.3

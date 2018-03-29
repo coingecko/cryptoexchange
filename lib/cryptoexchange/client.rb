@@ -1,15 +1,14 @@
 module Cryptoexchange
   class Client
-
     def initialize(ticker_ttl: 3)
       LruTtlCache.ticker_cache(ticker_ttl)
     end
 
     def pairs(exchange)
       pairs_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Pairs"
-      Object.const_get(pairs_classname).new.fetch
-    rescue HTTP::ConnectionError, HTTP::TimeoutError, JSON::ParserError
-      return { error: "#{exchange}'s service is temporarily unavailable." }
+      pairs_class = Object.const_get(pairs_classname)
+      pairs_object = pairs_class.new
+      pairs_object.fetch
     end
 
     def ticker(market_pair)
@@ -27,8 +26,9 @@ module Cryptoexchange
             t.target.casecmp(market_pair.target) == 0
         end
       end
-    rescue HTTP::ConnectionError, HTTP::TimeoutError, JSON::ParserError
-      return { error: "#{exchange}'s service is temporarily unavailable." }
+
+      rescue NoMethodError => e
+        raise Cryptoexchange::ResultParseError, { response: "General no method error thrown" }
     end
 
     def available_exchanges

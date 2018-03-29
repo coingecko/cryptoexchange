@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.latoken.com/v1/coingecko/market/ETH/LA
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.latoken.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare
+      Date:
+      - Fri, 16 Mar 2018 09:33:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"ask":0.000338,"bid":0.00031792,"last_price":0.00033694,"high":0.00034331,"low":0.0003194,"volume":238.6178398628,"timestamp":1521192834}'
+    http_version: 
+  recorded_at: Fri, 16 Mar 2018 09:33:54 GMT
+recorded_with: VCR 3.0.3

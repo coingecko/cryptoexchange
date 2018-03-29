@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coinroom.com/api/ticker/BTC/USD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinroom.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 12 Mar 2018 07:01:35 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db5ccaa2135899ef484eecc96f64808711520838094; expires=Tue, 12-Mar-19
+        07:01:34 GMT; path=/; domain=.coinroom.com; HttpOnly; Secure
+      - eec65a58188aa86962ef62bb6ff6293c2d4f856d=b60j0lno01e3jqm49m5n5r5htcb8g74rcljug59o0rv3nbhnkirjkv7fkujehqhsek5vctnqf4f1ai78s1knvneuaisqi4o1omd4u03;
+        path=/; HttpOnly
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=15552000; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3fa463e8fb7c2ced-KUL
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "low": 8207.63,
+            "high": 10149.84,
+            "vwap": 9376.9544932163,
+            "volume": 2.8003025,
+            "last": 9856.83,
+            "ask": 9857.4,
+            "bid": 9580.94
+        }
+    http_version: 
+  recorded_at: Mon, 12 Mar 2018 07:01:59 GMT
+recorded_with: VCR 4.0.0

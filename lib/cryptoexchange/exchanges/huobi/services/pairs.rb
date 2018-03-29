@@ -3,7 +3,6 @@ module Cryptoexchange::Exchanges
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
         PAIRS_URLS = [
-          "#{Cryptoexchange::Exchanges::Huobi::Market::DOT_COM_API_URL}/v1/common/symbols",
           "#{Cryptoexchange::Exchanges::Huobi::Market::DOT_PRO_API_URL}/v1/common/symbols"
         ]
 

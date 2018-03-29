@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tradeogre.com/api/v1/markets
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - tradeogre.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 06 Feb 2018 05:20:54 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '[{"BTC-AEON":{"initialprice":"0.00038000","price":"0.00035000","high":"0.00045000","low":"0.00035000","volume":"0.02148867"}},{"BTC-BTN":{"initialprice":"0.00000054","price":"0.00000054","high":"0.00000054","low":"0.00000054","volume":"0.00127059"}},{"BTC-COAL":{"initialprice":"0.00000998","price":"0.00000998","high":"0.00000998","low":"0.00000998","volume":"0.00028767"}},{"BTC-ETN":{"initialprice":"0.00000750","price":"0.00000700","high":"0.00000866","low":"0.00000606","volume":"0.08650511"}},{"BTC-FBF":{"initialprice":"0.00000029","price":"0.00000029","high":"0.00000029","low":"0.00000029","volume":"0.00105717"}},{"BTC-LTC":{"initialprice":"0.01838800","price":"0.01929880","high":"0.01929992","low":"0.01778000","volume":"0.13942167"}},{"BTC-SUMO":{"initialprice":"0.00030004","price":"0.00030003","high":"0.00030004","low":"0.00030003","volume":"0.00299834"}},{"BTC-TRTL":{"initialprice":"0.00000005","price":"0.00000004","high":"0.00000007","low":"0.00000004","volume":"5.56732737"}},{"BTC-XMR":{"initialprice":"0.02999999","price":"0.02999999","high":"0.02999999","low":"0.02510000","volume":"0.02089013"}},{"BTC-XVG":{"initialprice":"0.00000778","price":"0.00000775","high":"0.00000778","low":"0.00000774","volume":"0.00439410"}}]'
+    http_version: 
+  recorded_at: Tue, 06 Feb 2018 05:20:55 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cobinhood.com/v1/market/orderbooks/BTC-USD
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.cobinhood.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - https://cobinhood.com
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 06 Jan 2018 10:12:03 GMT
+      Content-Length:
+      - '827'
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"result":{"orderbook":{"sequence":0,"bids":[["13001.1","1","0.01"],["13001","1","0.04804863"],["13000","1","0.004"],["10005","1","0.05"],["10000.1","1","0.03"],["10000","1","0.00265705"],["958.3","1","0.76"],["958.2","1","0.08"],["958.1","1","0.4"],["56","1","1"],["11","1","9"],["10","1","5"],["5.6","1","5"]],"asks":[["17999.8","1","0.05313375"],["17999.9","1","0.2033"],["18000","1","0.01"],["18199.9","1","0.01919825"],["18200","1","0.0199576"],["18497.6","1","0.1"],["18499.3","1","0.0069417"],["18499.8","1","0.002"],["18990","1","0.05"],["19000","1","0.05"],["19128","1","0.3"],["19129","1","0.00358099"],["19400","1","0.01"],["24780","2","0.39793939"],["24789","1","0.0205"],["24895","1","0.51712562"],["26000","1","0.03"],["175000","2","0.0597289"],["400000","1","0.03"],["999999999.9","1","0.002"]]}}}'
+    http_version: 
+  recorded_at: Sat, 06 Jan 2018 10:12:03 GMT
+recorded_with: VCR 3.0.3
