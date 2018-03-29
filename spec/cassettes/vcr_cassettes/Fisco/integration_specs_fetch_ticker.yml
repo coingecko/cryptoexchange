@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.fcce.jp/api/1/ticker/btc_jpy
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.fcce.jp
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 14 Dec 2017 06:56:36 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '135'
+      Connection:
+      - close
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Set-Cookie:
+      - api.fcce.jp.chat_client_id=; Max-Age=0; Path=/; expires=Wed, 31-Dec-97 23:59:59
+        GMT
+      - locale=ja; Max-Age=315360000; Path=/; expires=Sun, 12-Dec-2027 06:56:36 GMT
+      - session=o6ObIHPPnLr1YUacoyFHyCKzFQilhK-KT8iKdxrPYOv9tk2IuNezmF1AFJ04XdUveBfs8RzOdfyAi-XktLtbIIAElVwAAAAAAAAASqQgMlpHQdaMiCkin8l9lCiMA2FwaZR9lIwFdG9rZW6UjCgyNzRhNzc3NDJkMTg5MTNlNjI2MWI4MWI3YzI1Zjk2ZjUyM2IyNjMzlIwHX2NzcmZ0X5RoBHWHlC4;
+        Path=/
+      - trading_view_user_id=-1; Path=/
+      - userhash=; Max-Age=0; Path=/; expires=Thu, 14-Dec-2017 06:56:36 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"last": 1910280.0, "high": 1960000.0, "low": 1863500.0, "vwap": 1917950.7333,
+        "volume": 3474.4999, "bid": 1910025.0, "ask": 1910240.0}'
+    http_version: 
+  recorded_at: Thu, 14 Dec 2017 06:56:36 GMT
+recorded_with: VCR 3.0.3
