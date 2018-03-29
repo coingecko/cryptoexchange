@@ -83,6 +83,7 @@ Or install it yourself as:
 | Gatecoin          | Y       |            |         |         | Y           |
 | GDAX              | Y       |            |         |         | Y           |
 | Gemini            | Y       | Y          | Y       |         | Y           |
+| GetBTC            | Y       | Y          | Y       |         | User-Defined|
 | GOPAX             | Y       | Y          | Y       |         | Y           |
 | HitBTC            | Y       |            |         |         | Y           |
 | Hksy              | Y       |            | Y       |         | User-Defined|
