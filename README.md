@@ -127,7 +127,7 @@ Or install it yourself as:
 | Tidex             | Y       |            |         |         | Y           |
 | TradeOgre         | Y       | Y          | Y       |         | Y           |
 | Trade Satoshi     | Y       |            |         |         | Y           |
-| TrustDex          | Y       |            |         |         | Y           |
+| TrustDex **       | Y       |            |         |         | Y           |
 | TuxExchange       | Y       |            |         |         | Y           |
 | Upbit             | Y       |            |         |         | Y           |
 | Unocoin           |         |            |         |         |             |
@@ -138,6 +138,8 @@ Or install it yourself as:
 | Yunbi             | Y       |            |         |         | Y           |
 | Zaif              | Y       | Y          | Y       |         | Y           |
 | ZB                | Y       | Y          | Y       |         | Y           |
+
+** Mapping and data may be incorrect (Cannot determine correctness)
 
 ## Usage
 
