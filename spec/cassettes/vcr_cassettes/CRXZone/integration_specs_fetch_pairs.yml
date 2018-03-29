@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.crxzone.com/API/CurrencyPairs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.crxzone.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - ASP.NET_SessionId=1mb1uxlclzzloyqlsyzufeqf; path=/; HttpOnly
+      Server:
+      - Mega_Server
+      Date:
+      - Tue, 13 Feb 2018 14:54:54 GMT
+      Connection:
+      - close
+      Content-Length:
+      - '855'
+    body:
+      encoding: UTF-8
+      string: '{"ErrorMessage":null,"IsSuccess":true,"Result":[{"ID":1,"PrimaryCurrencyName":"BTC","PrimaryCurrencyCode":"BTC","SecondaryCurrencyName":"USD","SecondaryCurrencyCode":"USD","MinimumOrderAmount":0.0000000100},{"ID":5,"PrimaryCurrencyName":"LTC","PrimaryCurrencyCode":"LTC","SecondaryCurrencyName":"USD","SecondaryCurrencyCode":"USD","MinimumOrderAmount":0.0000000100},{"ID":1009,"PrimaryCurrencyName":"LTC","PrimaryCurrencyCode":"LTC","SecondaryCurrencyName":"SGD","SecondaryCurrencyCode":"SGD","MinimumOrderAmount":0.0000000100},{"ID":1010,"PrimaryCurrencyName":"BTC","PrimaryCurrencyCode":"BTC","SecondaryCurrencyName":"SGD","SecondaryCurrencyCode":"SGD","MinimumOrderAmount":0.0000000100},{"ID":1013,"PrimaryCurrencyName":"DOGE","PrimaryCurrencyCode":"DOGE","SecondaryCurrencyName":"SGD","SecondaryCurrencyCode":"SGD","MinimumOrderAmount":1.0000000000}]}'
+    http_version: 
+  recorded_at: Tue, 13 Feb 2018 14:55:22 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.lbank.info/v1/currencyPairs.do
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.lbank.info
+      User-Agent:
+      - http.rb/2.2.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Tengine
+      Date:
+      - Sat, 03 Mar 2018 13:04:48 GMT
+      Content-Type:
+      - text/plain;charset=ISO-8859-1
+      Content-Length:
+      - '688'
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ISO-8859-1
+      string: '["eth_btc","etc_btc","zec_btc","bch_btc","qtum_btc","vet_btc","sc_btc","bts_btc","fil6_btc","fil12_btc","fil36_btc","xwc_btc","zec_eth","qtum_eth","vet_eth","bch_eth","btm_eth","xwc_eth","bts_eth","yoyow_eth","ink_eth","ink_qtum","bot_qtum","yoyow_bts","btg_btc","tgc_eth","uip_eth","bcd_btc","neo_btc","cmt_eth","cmt_btc","sbtc_btc","zsc_eth","ent_qtum","pst_eth","chat_qtum","btf_btc","qbt_qtum","ltc_btc","dash_btc","eos_eth","mda_eth","dct_eth","fil6_eth","fil12_eth","fil36_eth","nas_eth","lch_eth","dbc_neo","dbc_eth","seer_eth","seer_bts","aac_eth","aac_qtum","bto_eth","put_eth","put_qtum","ocn_eth","bec_eth","bec_btc","ptr_eth","abt_btc","abt_eth","trx_eth","ddd_eth","bsb_eth"]'
+    http_version: 
+  recorded_at: Sat, 03 Mar 2018 13:04:48 GMT
+recorded_with: VCR 3.0.3
