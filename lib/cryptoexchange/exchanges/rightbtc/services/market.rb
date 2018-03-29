@@ -7,28 +7,31 @@ module Cryptoexchange::Exchanges
             false
           end
         end
-        TARGETS = ['ETH', 'BTC', 'BCY', 'ETP']
 
         def fetch
-          output = super ticker_url
-          adapt_all(output)
+          output = super(ticker_url)
+          pairs = super(pairs_url)
+          adapt_all(output, pairs['status']['message'])
         end
 
         def ticker_url
           "#{Cryptoexchange::Exchanges::Rightbtc::Market::API_URL}/tickers"
         end
 
-        def adapt_all(output)
+        def pairs_url
+          "#{Cryptoexchange::Exchanges::Rightbtc::Market::API_URL}/trading_pairs"
+        end
+
+        def adapt_all(output, pairs)
           markets = output['result']
-          markets.map do |market|
-            pair = market['market']
-            base, target = strip_pairs(pair)
+          markets.map do |ticker|
+            pair_object = pairs.select{|pair| pair == ticker['market']}
             market_pair = Cryptoexchange::Models::MarketPair.new(
-                base: base,
-                target: target,
+                base: pair_object.values[0]['bid_asset_symbol'],
+                target: pair_object.values[0]['ask_asset_symbol'],
                 market: Rightbtc::Market::NAME
             )
-            adapt(market, market_pair)
+            adapt(ticker, market_pair)
           end
         end
 
@@ -47,19 +50,6 @@ module Cryptoexchange::Exchanges
           ticker.payload   = output
           ticker
         end
-
-        def strip_pairs(pair)
-          #Match last 3 or 4 if it hits target
-          last_3 = pair[-3..-1]
-
-          if TARGETS.include? last_3
-            base = pair[0..-4]
-            target = last_3
-          end
-
-          [base, target]
-        end
-
       end
     end
   end
