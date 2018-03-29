@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://infinitycoin.exchange/marketapi
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - infinitycoin.exchange
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 Jan 2018 07:20:56 GMT
+      Server:
+      - Apache/2.4.7
+      X-Powered-By:
+      - PHP/5.5.9-1ubuntu4.21
+      Set-Cookie:
+      - PHPSESSID=4vafvpv3utao51ud5iet9s2oi0; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '217'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: '{"stats":{"daily_high":"0.00000167","daily_low":"0.00000150","last_price":"0.00000163","daily_change":{"value":5.1,"change":"up"},"bitstampPrice":"11195.00","xin_volume":"9655627.70679529","btc_volume":"15.14716378"}}'
+    http_version: 
+  recorded_at: Thu, 18 Jan 2018 07:20:56 GMT
+recorded_with: VCR 3.0.3
