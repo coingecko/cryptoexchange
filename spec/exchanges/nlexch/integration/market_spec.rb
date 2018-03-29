@@ -5,7 +5,6 @@ RSpec.describe 'Nlexch integration specs' do
   let(:ltc_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'LTC', target: 'BTC', market: 'nlexch') }
 
   it 'fetch pairs' do
-    pending ":error, nlexch's service is temporarily unavailable."
 
     pairs = client.pairs('nlexch')
     expect(pairs).not_to be_empty
@@ -17,8 +16,6 @@ RSpec.describe 'Nlexch integration specs' do
   end
 
   it 'fetch ticker' do
-    pending ":error, nlexch's service is temporarily unavailable."
-
     ticker = client.ticker(ltc_btc_pair)
 
     expect(ticker.base).to eq 'LTC'

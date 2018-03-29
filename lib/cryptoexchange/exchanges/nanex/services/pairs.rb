@@ -11,8 +11,8 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output.collect do |_pair, value|
-            base = value['base']
-            target = value['quote']
+            base = value['quote']
+            target = value['base']
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
