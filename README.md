@@ -127,6 +127,7 @@ Or install it yourself as:
 | Tidex             | Y       |            |         |         | Y           |
 | TradeOgre         | Y       | Y          | Y       |         | Y           |
 | Trade Satoshi     | Y       |            |         |         | Y           |
+| TrustDex          | Y       |            |         |         | Y           |
 | TuxExchange       | Y       |            |         |         | Y           |
 | Upbit             | Y       |            |         |         | Y           |
 | Unocoin           |         |            |         |         |             |
