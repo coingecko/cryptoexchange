@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinegg.com/api/v1/ticker?coin=eth
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinegg.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.2
+      Date:
+      - Thu, 11 Jan 2018 08:44:40 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.6.9
+      Set-Cookie:
+      - lang=en_US; expires=Sun, 09-Jan-2028 08:44:40 GMT; Max-Age=315360000; path=/
+    body:
+      encoding: UTF-8
+      string: '{"high":"0.09851238","low":"0.08245174","buy":"0.08999","sell":"0.09036237","last":"0.09036548","vol":"32542"}'
+    http_version: 
+  recorded_at: Thu, 11 Jan 2018 08:44:40 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://novaexchange.com/remote/v2/market/info/ESP2_CTIC2/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - novaexchange.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 28 Jan 2018 09:04:21 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '55'
+      Connection:
+      - close
+      Set-Cookie:
+      - session=765853ad-6630-479c-afb7-fe7830cb035f; Expires=Sun, 28-Jan-2018 19:04:21
+        GMT; HttpOnly; Path=/; secure; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status": "error", "message": "No such market listed"}'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 09:04:21 GMT
+recorded_with: VCR 3.0.3

@@ -21,6 +21,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
+          handle_invalid(output)
           ticker = Cryptoexchange::Models::Ticker.new
           market = output['result'][0]
 
@@ -36,6 +37,12 @@ module Cryptoexchange::Exchanges
           ticker.timestamp = DateTime.now.to_time.to_i
           ticker.payload   = market
           ticker
+        end
+
+        def handle_invalid(output)
+          if output['message'] == 'INVALID_MARKET'
+            raise Cryptoexchange::ResultParseError, { response: output }
+          end
         end
       end
     end

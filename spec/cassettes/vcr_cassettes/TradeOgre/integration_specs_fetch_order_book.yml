@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tradeogre.com/api/v1/orders/BTC-AEON
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - tradeogre.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 06 Feb 2018 05:20:57 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"buy":{"0.00020000":"2.49500000","0.00022000":"2.49500000","0.00023000":"2.49500000","0.00024000":"45.60464958","0.00025000":"2.49500000","0.00026000":"2.49500000","0.00027000":"2.49500000","0.00028000":"2.49500000","0.00029000":"2.49500000","0.00032000":"62.37500000","0.00035000":"1.60592073"},"sell":{"0.00045000":"1.89334688","0.00045999":"5.14252534","0.00046000":"6.25614684","0.00062600":"5.00000000","0.00062776":"19.44458962","0.00072870":"6.81571697"}}'
+    http_version: 
+  recorded_at: Tue, 06 Feb 2018 05:20:57 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openapi.hksy.com/app/coinMarket/v1/selectCoinMarketbyCoinName?coinName=BTC&payCoinName=HKD
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - openapi.hksy.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Tengine
+      Date:
+      - Thu, 04 Jan 2018 09:40:50 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '460'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,HEAD,OPTIONS,PATCH
+      Access-Control-Allow-Headers:
+      - X-Requested-With,X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Ca-Signature-Method,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5
+      Access-Control-Max-Age:
+      - '172800'
+      X-Ca-Request-Id:
+      - 177FDBF6-B547-47E8-9DEE-C5D98CB7000A
+      Set-Cookie:
+      - aliyungf_tc=AQAAAA1f9maixAoAPT1ZL9pjFaAIpVap; Path=/; HttpOnly
+      X-Application-Context:
+      - yobtc-gateway-server:prod:8080
+    body:
+      encoding: UTF-8
+      string: '{"model":{"logo":"https://shangya-oss.oss-cn-hongkong.aliyuncs.com/v2/images/coinLogo/bc56ac0f-5848-46a9-b0f7-5c3c6d07afae.png","defaultenname":"BTC","defaultcnname":"比特币BTC","newclinchprice":"121500.00000000","newclinchtype":2,"buyprice":"115008.00000000","sellprice":"122000.00000000","count24":"873.01820000","money24":"105941778.33790000","range24":"1.25","highprice":"124540.00000000","lowprice":"115000.00000000"},"count":1,"code":0,"message":"OK"}'
+    http_version: 
+  recorded_at: Thu, 04 Jan 2018 09:40:50 GMT
+recorded_with: VCR 3.0.3

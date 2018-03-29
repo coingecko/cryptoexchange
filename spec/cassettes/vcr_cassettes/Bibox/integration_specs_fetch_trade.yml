@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bibox.com/v1/mdata?cmd=deals&pair=BIX_BTC&size=15
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bibox.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 25 Jan 2018 02:15:19 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d2a19e838fdbfdfd9ebc1727f850872fa1516846519; expires=Fri, 25-Jan-19
+        02:15:19 GMT; path=/; domain=.bibox.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - undefined
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-access-token, X-Requested-With
+      Access-Control-Max-Age:
+      - '172800'
+      X-Ca-Request-Id:
+      - EFF3776F-335B-480B-8C0E-BEBEB7B8B99A
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"558-AhtXrAeErAOzk7Ffmbz3vy1Gc+Q"
+      Vary:
+      - Accept-Encoding
+      X-Ca-Error-Message:
+      - OK
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e27b95d0d7384d2-HKG
+    body:
+      encoding: UTF-8
+      string: '{"result":[{"pair":"BIX_BTC","price":"0.00011291","amount":"1080.0000","time":1516846516000,"side":2},{"pair":"BIX_BTC","price":"0.00011300","amount":"6.4078","time":1516846513000,"side":1},{"pair":"BIX_BTC","price":"0.00011293","amount":"26.5381","time":1516846509000,"side":1},{"pair":"BIX_BTC","price":"0.00011282","amount":"36.2771","time":1516846502000,"side":1},{"pair":"BIX_BTC","price":"0.00011282","amount":"7.8229","time":1516846502000,"side":2},{"pair":"BIX_BTC","price":"0.00011300","amount":"17.3465","time":1516846500000,"side":1},{"pair":"BIX_BTC","price":"0.00011300","amount":"166.6030","time":1516846496000,"side":1},{"pair":"BIX_BTC","price":"0.00011300","amount":"119.8206","time":1516846489000,"side":1},{"pair":"BIX_BTC","price":"0.00011299","amount":"33.5632","time":1516846489000,"side":1},{"pair":"BIX_BTC","price":"0.00011288","amount":"416.0000","time":1516846487000,"side":2},{"pair":"BIX_BTC","price":"0.00011288","amount":"954.0000","time":1516846487000,"side":2},{"pair":"BIX_BTC","price":"0.00011288","amount":"256.0000","time":1516846485000,"side":1},{"pair":"BIX_BTC","price":"0.00011300","amount":"166.1796","time":1516846485000,"side":1},{"pair":"BIX_BTC","price":"0.00011300","amount":"166.1796","time":1516846477000,"side":1},{"pair":"BIX_BTC","price":"0.00011290","amount":"26.2287","time":1516846473000,"side":1}],"cmd":"deals"}'
+    http_version: 
+  recorded_at: Thu, 25 Jan 2018 02:15:19 GMT
+recorded_with: VCR 3.0.3

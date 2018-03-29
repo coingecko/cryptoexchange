@@ -40,4 +40,8 @@ RSpec.describe 'Bittrex integration specs' do
     expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
     expect(ticker.payload).to_not be nil
   end
+
+  it 'fail to parse ticker' do
+    expect { client.ticker(Cryptoexchange::Models::MarketPair.new(base: 'ingt', target: 'btc', market: 'bittrex')) }.to raise_error(Cryptoexchange::ResultParseError)
+  end
 end
