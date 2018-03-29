@@ -1,0 +1,118 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kkex.com/api/v1/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - kkex.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 07 Dec 2017 05:25:12 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '5568'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Language, Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Language:
+      - en
+      Set-Cookie:
+      - django_language=en; Path=/
+      - sessionid=aob5vswi29looutmfdtei70xkd33uysq; httponly; Path=/
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      - max-age=63072000; includeSubdomains; preload
+    body:
+      encoding: ASCII-8BIT
+      string: '{"products": [{"status": "OPEN", "min_bid_amount": "0.01", "code":
+        300005, "base_asset": "BTC", "fee_policy": {"ask_fee_rate": "0.002", "bid_fee_rate":
+        "0.002", "fee_type": "bid"}, "symbol": "ETHBTC", "price_scale": 100000, "min_bid_size":
+        "0.001", "max_bid_amount": "1000", "mark_asset": "ETH", "merge": ["0.00001",
+        "0.0001", "0.001"], "min_ask_size": "0.001", "min_price": "0.001", "agreements":
+        [], "max_ask_size": "100", "max_price": "1000", "max_bid_size": "100"}, {"status":
+        "OPEN", "min_bid_amount": "0.01", "code": 300001, "base_asset": "BTC", "fee_policy":
+        {"ask_fee_rate": "0.002", "bid_fee_rate": "0.002", "fee_type": "bid"}, "symbol":
+        "BCHBTC", "price_scale": 100000, "min_bid_size": "0.01", "max_bid_amount":
+        "1000", "mark_asset": "BCH", "merge": ["0.00001", "0.0001", "0.001"], "min_ask_size":
+        "0.01", "min_price": "0.001", "agreements": [], "max_ask_size": "1000", "max_price":
+        "1000", "max_bid_size": "1000"}, {"status": "OPEN", "min_bid_amount": "0.01",
+        "code": 300007, "base_asset": "BTC", "fee_policy": {"ask_fee_rate": "0.002",
+        "bid_fee_rate": "0.002", "fee_type": "bid"}, "symbol": "BCDBTC", "price_scale":
+        100000, "min_bid_size": "0.01", "max_bid_amount": "1000", "mark_asset": "BCD",
+        "merge": ["0.00001", "0.0001", "0.001"], "min_ask_size": "0.01", "min_price":
+        "0.0001", "agreements": [], "max_ask_size": "1000", "max_price": "1000", "max_bid_size":
+        "1000"}, {"status": "OPEN", "min_bid_amount": "0.01", "code": 300004, "base_asset":
+        "BTC", "fee_policy": {"ask_fee_rate": "0.002", "bid_fee_rate": "0.002", "fee_type":
+        "bid"}, "symbol": "BTGBTC", "price_scale": 100000, "min_bid_size": "0.01",
+        "max_bid_amount": "1000", "mark_asset": "BTG", "merge": ["0.00001", "0.0001",
+        "0.001"], "min_ask_size": "0.01", "min_price": "0.001", "agreements": ["btg"],
+        "max_ask_size": "1000", "max_price": "1000", "max_bid_size": "1000"}, {"status":
+        "OPEN", "min_bid_amount": "0.01", "code": 300002, "base_asset": "BTC", "fee_policy":
+        {"ask_fee_rate": "0.002", "bid_fee_rate": "0.002", "fee_type": "bid"}, "symbol":
+        "BT1BTC", "price_scale": 100000, "min_bid_size": "0.01", "max_bid_amount":
+        "1000", "mark_asset": "BT1", "merge": ["0.00001", "0.0001", "0.001"], "min_ask_size":
+        "0.01", "min_price": "0.001", "agreements": ["bt1_bt2"], "max_ask_size": "1000",
+        "max_price": "1000", "max_bid_size": "1000"}, {"status": "OPEN", "min_bid_amount":
+        "0.01", "code": 300003, "base_asset": "BTC", "fee_policy": {"ask_fee_rate":
+        "0.002", "bid_fee_rate": "0.002", "fee_type": "bid"}, "symbol": "BT2BTC",
+        "price_scale": 100000, "min_bid_size": "0.01", "max_bid_amount": "1000", "mark_asset":
+        "BT2", "merge": ["0.00001", "0.0001", "0.001"], "min_ask_size": "0.01", "min_price":
+        "0.001", "agreements": ["bt1_bt2"], "max_ask_size": "1000", "max_price": "1000",
+        "max_bid_size": "1000"}], "all_products": [{"status": "OPEN", "min_bid_amount":
+        "0.01", "code": 300005, "base_asset": "BTC", "fee_policy": {"ask_fee_rate":
+        "0.002", "bid_fee_rate": "0.002", "fee_type": "bid"}, "symbol": "ETHBTC",
+        "price_scale": 100000, "min_bid_size": "0.001", "max_bid_amount": "1000",
+        "mark_asset": "ETH", "merge": ["0.00001", "0.0001", "0.001"], "min_ask_size":
+        "0.001", "min_price": "0.001", "agreements": [], "max_ask_size": "100", "max_price":
+        "1000", "max_bid_size": "100"}, {"status": "OPEN", "min_bid_amount": "0.01",
+        "code": 300001, "base_asset": "BTC", "fee_policy": {"ask_fee_rate": "0.002",
+        "bid_fee_rate": "0.002", "fee_type": "bid"}, "symbol": "BCHBTC", "price_scale":
+        100000, "min_bid_size": "0.01", "max_bid_amount": "1000", "mark_asset": "BCH",
+        "merge": ["0.00001", "0.0001", "0.001"], "min_ask_size": "0.01", "min_price":
+        "0.001", "agreements": [], "max_ask_size": "1000", "max_price": "1000", "max_bid_size":
+        "1000"}, {"status": "OPEN", "min_bid_amount": "0.01", "code": 300007, "base_asset":
+        "BTC", "fee_policy": {"ask_fee_rate": "0.002", "bid_fee_rate": "0.002", "fee_type":
+        "bid"}, "symbol": "BCDBTC", "price_scale": 100000, "min_bid_size": "0.01",
+        "max_bid_amount": "1000", "mark_asset": "BCD", "merge": ["0.00001", "0.0001",
+        "0.001"], "min_ask_size": "0.01", "min_price": "0.0001", "agreements": [],
+        "max_ask_size": "1000", "max_price": "1000", "max_bid_size": "1000"}, {"status":
+        "OPEN", "min_bid_amount": "0.01", "code": 300004, "base_asset": "BTC", "fee_policy":
+        {"ask_fee_rate": "0.002", "bid_fee_rate": "0.002", "fee_type": "bid"}, "symbol":
+        "BTGBTC", "price_scale": 100000, "min_bid_size": "0.01", "max_bid_amount":
+        "1000", "mark_asset": "BTG", "merge": ["0.00001", "0.0001", "0.001"], "min_ask_size":
+        "0.01", "min_price": "0.001", "agreements": ["btg"], "max_ask_size": "1000",
+        "max_price": "1000", "max_bid_size": "1000"}, {"status": "OPEN", "min_bid_amount":
+        "0.01", "code": 300002, "base_asset": "BTC", "fee_policy": {"ask_fee_rate":
+        "0.002", "bid_fee_rate": "0.002", "fee_type": "bid"}, "symbol": "BT1BTC",
+        "price_scale": 100000, "min_bid_size": "0.01", "max_bid_amount": "1000", "mark_asset":
+        "BT1", "merge": ["0.00001", "0.0001", "0.001"], "min_ask_size": "0.01", "min_price":
+        "0.001", "agreements": ["bt1_bt2"], "max_ask_size": "1000", "max_price": "1000",
+        "max_bid_size": "1000"}, {"status": "OPEN", "min_bid_amount": "0.01", "code":
+        300003, "base_asset": "BTC", "fee_policy": {"ask_fee_rate": "0.002", "bid_fee_rate":
+        "0.002", "fee_type": "bid"}, "symbol": "BT2BTC", "price_scale": 100000, "min_bid_size":
+        "0.01", "max_bid_amount": "1000", "mark_asset": "BT2", "merge": ["0.00001",
+        "0.0001", "0.001"], "min_ask_size": "0.01", "min_price": "0.001", "agreements":
+        ["bt1_bt2"], "max_ask_size": "1000", "max_price": "1000", "max_bid_size":
+        "1000"}], "result": true}'
+    http_version: 
+  recorded_at: Thu, 07 Dec 2017 05:25:12 GMT
+recorded_with: VCR 3.0.3

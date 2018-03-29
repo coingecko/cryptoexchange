@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://extstock.com/api/v1/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - extstock.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Mar 2018 07:51:30 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '801'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dd22825675b45f268b7ee865bc306691e1521013889; expires=Thu, 14-Mar-19
+        07:51:29 GMT; path=/; domain=.extstock.com; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 4726e28f-f004-47d8-93d1-48d6a6a91645
+      Etag:
+      - '"05588a85459500435c38f848b6153765"'
+      X-Runtime:
+      - '0.006180'
+      X-Powered-By:
+      - Phusion Passenger 5.2.1
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3fb527caad7531f2-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"btc_usd","name":"BTC/USD"},{"id":"btc_eur","name":"BTC/EUR"},{"id":"ltc_btc","name":"LTC/BTC"},{"id":"ltc_usd","name":"LTC/USD"},{"id":"ltc_eur","name":"LTC/EUR"},{"id":"dash_btc","name":"DASH/BTC"},{"id":"dash_usd","name":"DASH/USD"},{"id":"dash_eur","name":"DASH/EUR"},{"id":"dash_ltc","name":"DASH/LTC"},{"id":"dash_eth","name":"DASH/ETH"},{"id":"eth_btc","name":"ETH/BTC"},{"id":"eth_usd","name":"ETH/USD"},{"id":"eth_eur","name":"ETH/EUR"},{"id":"eth_ltc","name":"ETH/LTC"},{"id":"bch_usd","name":"BCH/USD"},{"id":"bch_btc","name":"BCH/BTC"},{"id":"bch_eur","name":"BCH/EUR"},{"id":"bch_ltc","name":"BCH/LTC"},{"id":"bch_eth","name":"BCH/ETH"},{"id":"bch_dash","name":"BCH/DASH"},{"id":"nebl_eth","name":"NEBL/ETH"},{"id":"xnode_eth","name":"XNODE/ETH"},{"id":"ctr_eth","name":"CTR/ETH"}]'
+    http_version: 
+  recorded_at: Wed, 14 Mar 2018 07:51:28 GMT
+recorded_with: VCR 4.0.0

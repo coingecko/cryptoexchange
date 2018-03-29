@@ -24,8 +24,8 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Acx::Market::NAME
-          ticker.ask       = NumericHelper.to_d(output['ticker']['buy'])
-          ticker.bid       = NumericHelper.to_d(output['ticker']['sell'])
+          ticker.ask       = NumericHelper.to_d(output['ticker']['sell'])
+          ticker.bid       = NumericHelper.to_d(output['ticker']['buy'])
           ticker.high      = NumericHelper.to_d(output['ticker']['high'])
           ticker.low       = NumericHelper.to_d(output['ticker']['low'])
           ticker.last      = NumericHelper.to_d(output['ticker']['last'])

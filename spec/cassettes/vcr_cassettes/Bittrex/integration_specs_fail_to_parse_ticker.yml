@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bittrex.com/api/v1.1/public/getmarketsummary?market=BTC-INGT
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bittrex.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Jan 2018 08:50:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d9a39fb4b67d281eee834e0714718cee41517129447; expires=Mon, 28-Jan-19
+        08:50:47 GMT; path=/; domain=.bittrex.com; HttpOnly
+      Cache-Control:
+      - public, max-age=1
+      Expires:
+      - Sun, 28 Jan 2018 08:50:49 GMT
+      Last-Modified:
+      - Sun, 28 Jan 2018 08:50:48 GMT
+      Vary:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      Cf-Cache-Status:
+      - MISS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e42b4c4d8bf7032-SIN
+    body:
+      encoding: UTF-8
+      string: '{"success":false,"message":"INVALID_MARKET","result":null}'
+    http_version: 
+  recorded_at: Sun, 28 Jan 2018 08:50:50 GMT
+recorded_with: VCR 3.0.3

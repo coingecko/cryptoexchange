@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://neraex.pro/api/v2/tickers/btcjpy
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - neraex.pro
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '139'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - c2cb65d1-93b4-4156-93c8-5089052aea6e
+      Etag:
+      - '"5654648755882ea4c4e6f876e482ef7d"'
+      X-Runtime:
+      - '0.007773'
+      Date:
+      - Wed, 07 Mar 2018 15:07:04 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      Server:
+      - nginx/1.10.2 + Phusion Passenger 5.1.2
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1520435224,"ticker":{"buy":"1026565.0","sell":"1135044.0","low":"1099942.0","high":"1177044.0","last":"1132973.0","vol":"1438.7348"}}'
+    http_version: 
+  recorded_at: Wed, 07 Mar 2018 15:07:04 GMT
+recorded_with: VCR 4.0.0

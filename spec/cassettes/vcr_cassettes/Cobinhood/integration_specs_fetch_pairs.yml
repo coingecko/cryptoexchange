@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cobinhood.com/v1/market/trading_pairs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.cobinhood.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - https://cobinhood.com
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 06 Jan 2018 10:01:46 GMT
+      Content-Length:
+      - '1192'
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"result":{"trading_pairs":[{"id":"BTC-USD","base_currency_id":"BTC","quote_currency_id":"USD","base_max_size":"10000","base_min_size":"0.002","quote_increment":"0.1"},{"id":"ETH-USD","base_currency_id":"ETH","quote_currency_id":"USD","base_max_size":"100000","base_min_size":"0.04","quote_increment":"0.01"},{"id":"ETH-BTC","base_currency_id":"ETH","quote_currency_id":"BTC","base_max_size":"100000","base_min_size":"0.04","quote_increment":"0.000001"},{"id":"COB-USD","base_currency_id":"COB","quote_currency_id":"USD","base_max_size":"100000","base_min_size":"100","quote_increment":"0.001"},{"id":"COB-BTC","base_currency_id":"COB","quote_currency_id":"BTC","base_max_size":"100000","base_min_size":"100","quote_increment":"0.00000001"},{"id":"CMT-BTC","base_currency_id":"CMT","quote_currency_id":"BTC","base_max_size":"100000","base_min_size":"150","quote_increment":"0.00000001"},{"id":"COB-ETH","base_currency_id":"COB","quote_currency_id":"ETH","base_max_size":"100000","base_min_size":"100","quote_increment":"0.000001"},{"id":"CMT-ETH","base_currency_id":"CMT","quote_currency_id":"ETH","base_max_size":"100000","base_min_size":"150","quote_increment":"0.000001"}]}}'
+    http_version: 
+  recorded_at: Sat, 06 Jan 2018 10:01:46 GMT
+recorded_with: VCR 3.0.3

@@ -10,18 +10,17 @@ module Cryptoexchange::Exchanges
 
         def fetch(market_pair)
           output = super(ticker_url(market_pair))
-          adapt(output)
+          adapt(output, market_pair)
         end
 
         def ticker_url(market_pair)
           "#{Cryptoexchange::Exchanges::Bitflyer::Market::API_URL}/ticker?product_code=#{market_pair.base}_#{market_pair.target}"
         end
 
-        def adapt(output)
+        def adapt(output, market_pair)
           ticker           = Cryptoexchange::Models::Ticker.new
-          base, target     = output['product_code'].split('_')
-          ticker.base      = base
-          ticker.target    = target
+          ticker.base      = market_pair.base
+          ticker.target    = market_pair.target
           ticker.market    = Bitflyer::Market::NAME
           ticker.ask       = NumericHelper.to_d(output['best_ask'])
           ticker.bid       = NumericHelper.to_d(output['best_bid'])

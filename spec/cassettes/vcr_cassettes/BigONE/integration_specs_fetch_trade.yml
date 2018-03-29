@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.big.one/markets/ETH-BTC/trades
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.big.one
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 05 Feb 2018 04:59:17 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - BODID=1A8E1545-55A0-4CF2-97E5-59A030C655D6; Path=/; Domain=big.one; Max-Age=31536000;
+        Secure
+      - __cfduid=de451d81620ea946106ec78c75c60e8631517806757; expires=Tue, 05-Feb-19
+        04:59:17 GMT; path=/; domain=.big.one; HttpOnly; Secure
+      X-Build-Info:
+      - 7ecb3115d510c99009fe5bd2d341a7cab43203ea-go1.9.3
+      X-Request-Id:
+      - FCF4917D-603D-4741-8006-79AFA0634CD1
+      X-Runtime:
+      - '0.001309'
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e834caaf85b2cbd-KUL
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"type":"trade","trade_id":"7506ecaa-b9c8-48c2-85cb-209f99e9743b","trade_side":"ASK","price":"0.10216030","amount":"0.01830000","created_at":"2018-02-05T04:58:56.905272697Z"},{"type":"trade","trade_id":"5e3d374d-ce8f-46f4-9d5d-134824539527","trade_side":"BID","price":"0.10277980","amount":"0.01000000","created_at":"2018-02-05T04:56:37.510864514Z"},{"type":"trade","trade_id":"600f2162-7b14-4d82-a9c0-09f2a570a00c","trade_side":"BID","price":"0.10280960","amount":"0.20000000","created_at":"2018-02-05T04:56:03.570028396Z"},{"type":"trade","trade_id":"cfe41b0d-c501-47a2-8703-852b3f1c946e","trade_side":"ASK","price":"0.10216020","amount":"0.03180000","created_at":"2018-02-05T04:54:22.600346358Z"},{"type":"trade","trade_id":"532a1278-a3c9-4f56-a8ba-53226911a77a","trade_side":"ASK","price":"0.10216000","amount":"0.56150000","created_at":"2018-02-05T04:54:10.996374807Z"},{"type":"trade","trade_id":"6710016e-1901-418f-8e14-93a79d0dafa3","trade_side":"ASK","price":"0.10216020","amount":"0.18250000","created_at":"2018-02-05T04:54:10.79568342Z"},{"type":"trade","trade_id":"a86e3ff3-feec-444d-a14f-df79834a5673","trade_side":"ASK","price":"0.10216020","amount":"0.03020000","created_at":"2018-02-05T04:54:00.999197605Z"},{"type":"trade","trade_id":"e5b105dc-6c15-41f9-b5cb-8db696c16cd9","trade_side":"BID","price":"0.10214020","amount":"0.00470000","created_at":"2018-02-05T04:49:31.599001089Z"},{"type":"trade","trade_id":"3ba17875-006c-4ae7-bfe9-8238f5e103c3","trade_side":"BID","price":"0.10214020","amount":"0.06000000","created_at":"2018-02-05T04:49:27.632154131Z"},{"type":"trade","trade_id":"4817f27d-8754-49e8-9051-5e03635a40d8","trade_side":"BID","price":"0.10214020","amount":"0.07000000","created_at":"2018-02-05T04:49:23.561584242Z"},{"type":"trade","trade_id":"6441e740-553d-4c8a-a038-dc595b21b0ac","trade_side":"BID","price":"0.10214020","amount":"0.09000000","created_at":"2018-02-05T04:49:22.113335432Z"},{"type":"trade","trade_id":"30f20420-15f7-4ff7-8c4f-b9f44e7562bd","trade_side":"BID","price":"0.10214020","amount":"0.09000000","created_at":"2018-02-05T04:49:18.587696011Z"},{"type":"trade","trade_id":"a88d4255-5dd5-4784-aa71-fefecae05379","trade_side":"BID","price":"0.10214020","amount":"0.16000000","created_at":"2018-02-05T04:49:13.290221279Z"},{"type":"trade","trade_id":"7055b9d4-4d09-4cc5-bc6c-fcf61a3cef54","trade_side":"BID","price":"0.10214020","amount":"0.04000000","created_at":"2018-02-05T04:49:11.171792641Z"},{"type":"trade","trade_id":"5c293b9d-027c-4667-b624-1f53bf2ddd09","trade_side":"BID","price":"0.10214020","amount":"0.04000000","created_at":"2018-02-05T04:49:07.064398488Z"},{"type":"trade","trade_id":"a120b741-eb65-4bf5-bb64-96d36342683b","trade_side":"BID","price":"0.10214020","amount":"0.11000000","created_at":"2018-02-05T04:49:05.960216207Z"},{"type":"trade","trade_id":"fb4de5bd-6ba0-4f40-93a3-44a5f610126a","trade_side":"BID","price":"0.10214020","amount":"0.21000000","created_at":"2018-02-05T04:49:05.807297355Z"},{"type":"trade","trade_id":"35cf385d-47a3-469a-9741-8ffee663e9ca","trade_side":"BID","price":"0.10214020","amount":"0.08000000","created_at":"2018-02-05T04:49:03.456134656Z"},{"type":"trade","trade_id":"59e7f3d9-ce5a-4987-85f3-2ef52bb2e19c","trade_side":"BID","price":"0.10214020","amount":"0.04000000","created_at":"2018-02-05T04:49:01.076861197Z"},{"type":"trade","trade_id":"cf935008-cb8a-41b2-8195-5bec39f61449","trade_side":"BID","price":"0.10214020","amount":"0.31000000","created_at":"2018-02-05T04:49:00.952142086Z"},{"type":"trade","trade_id":"cadbae24-f2b6-4251-a943-42eff649f2f6","trade_side":"BID","price":"0.10214020","amount":"0.31000000","created_at":"2018-02-05T04:48:56.598028553Z"},{"type":"trade","trade_id":"d6d96fec-9c75-47c9-9916-e6611408d043","trade_side":"BID","price":"0.10214020","amount":"0.10000000","created_at":"2018-02-05T04:48:55.550417375Z"},{"type":"trade","trade_id":"a0cfe54c-b49d-45aa-966a-fa18b3ac9c04","trade_side":"ASK","price":"0.10214020","amount":"0.09110000","created_at":"2018-02-05T04:48:50.867257346Z"},{"type":"trade","trade_id":"b718fd3e-aa82-4ed4-942a-1b1f60bce9e9","trade_side":"BID","price":"0.10288960","amount":"0.03000000","created_at":"2018-02-05T04:46:00.938416181Z"},{"type":"trade","trade_id":"7500142c-8b55-46d9-bcd8-17c0b169090a","trade_side":"BID","price":"0.10212040","amount":"0.04550000","created_at":"2018-02-05T04:44:43.962782747Z"},{"type":"trade","trade_id":"b667b952-9fc1-4c62-b4ce-5da01121e6ff","trade_side":"BID","price":"0.10212040","amount":"0.50000000","created_at":"2018-02-05T04:44:40.313604531Z"},{"type":"trade","trade_id":"2c57d488-4920-4ab1-b157-098fdcb3b7d5","trade_side":"BID","price":"0.10212040","amount":"3.60000000","created_at":"2018-02-05T04:44:40.240634955Z"},{"type":"trade","trade_id":"b68e2dbd-af32-4ba9-868a-f0a93a28b031","trade_side":"BID","price":"0.10212040","amount":"0.50000000","created_at":"2018-02-05T04:44:38.755010779Z"},{"type":"trade","trade_id":"2e391df6-c7f6-450c-9423-8cba1a455d71","trade_side":"BID","price":"0.10212040","amount":"0.50000000","created_at":"2018-02-05T04:44:37.091079545Z"},{"type":"trade","trade_id":"baac55e8-2399-4c35-b528-f432a52abb38","trade_side":"BID","price":"0.10212040","amount":"0.37000000","created_at":"2018-02-05T04:44:35.439205144Z"},{"type":"trade","trade_id":"9c3918e3-8054-4e7c-aae7-7a087b9f1279","trade_side":"BID","price":"0.10210520","amount":"0.31000000","created_at":"2018-02-05T04:44:08.49311094Z"},{"type":"trade","trade_id":"c615541c-bc1d-4e3d-8567-cdfa3511d816","trade_side":"BID","price":"0.10210520","amount":"0.50000000","created_at":"2018-02-05T04:44:04.939833894Z"},{"type":"trade","trade_id":"fbe9630c-9630-472a-ac26-e4aeaed063ca","trade_side":"BID","price":"0.10210520","amount":"0.31000000","created_at":"2018-02-05T04:44:03.372335279Z"},{"type":"trade","trade_id":"b365f172-1e46-4e95-bc02-727632618e03","trade_side":"BID","price":"0.10210520","amount":"0.26000000","created_at":"2018-02-05T04:44:01.925999012Z"},{"type":"trade","trade_id":"b91340ba-b8f3-4b05-8cf0-3bd84278eaa2","trade_side":"BID","price":"0.10210520","amount":"0.37000000","created_at":"2018-02-05T04:43:59.759493126Z"},{"type":"trade","trade_id":"60f73ec0-5e36-43c6-9e07-6166384123d7","trade_side":"BID","price":"0.10210520","amount":"0.31000000","created_at":"2018-02-05T04:43:59.723453349Z"},{"type":"trade","trade_id":"471e84d0-ab64-4975-867f-df8544ce71fd","trade_side":"BID","price":"0.10210520","amount":"0.31000000","created_at":"2018-02-05T04:43:54.367313983Z"},{"type":"trade","trade_id":"dd214574-8085-4292-b053-d3710ce71f51","trade_side":"BID","price":"0.10210520","amount":"0.31000000","created_at":"2018-02-05T04:43:52.057114099Z"},{"type":"trade","trade_id":"9e0fe317-5566-4cc4-a505-db5dc60d3b71","trade_side":"BID","price":"0.10210520","amount":"1.80000000","created_at":"2018-02-05T04:43:50.690740675Z"},{"type":"trade","trade_id":"055a0446-4921-4f01-8032-267680c416e9","trade_side":"BID","price":"0.10210520","amount":"0.21000000","created_at":"2018-02-05T04:43:50.637090875Z"},{"type":"trade","trade_id":"1ba679e3-d16e-4e83-9693-3b5b9ae66592","trade_side":"BID","price":"0.10210520","amount":"0.21000000","created_at":"2018-02-05T04:43:49.053376074Z"},{"type":"trade","trade_id":"09b7ae5c-1c02-4c46-b3c5-7d597b5a66be","trade_side":"BID","price":"0.10210520","amount":"0.30000000","created_at":"2018-02-05T04:43:44.872552548Z"},{"type":"trade","trade_id":"9a2d263d-e7c1-4b55-8dc1-29877968cf9e","trade_side":"BID","price":"0.10210520","amount":"0.31000000","created_at":"2018-02-05T04:43:43.090471564Z"},{"type":"trade","trade_id":"3297ac01-387e-4a0c-be80-62b57d4d9805","trade_side":"BID","price":"0.10210520","amount":"0.31000000","created_at":"2018-02-05T04:43:40.397714151Z"},{"type":"trade","trade_id":"53cc8ee1-7ca8-46af-9473-8e9762209341","trade_side":"BID","price":"0.10210520","amount":"0.02100000","created_at":"2018-02-05T04:43:38.336384262Z"},{"type":"trade","trade_id":"6d4e7853-9714-4dae-b2ef-32ff2d22772e","trade_side":"BID","price":"0.10210000","amount":"0.27900000","created_at":"2018-02-05T04:43:38.300394333Z"},{"type":"trade","trade_id":"05076896-e252-4252-aa31-4e637408a8c8","trade_side":"BID","price":"0.10210520","amount":"0.43000000","created_at":"2018-02-05T04:43:36.337278139Z"},{"type":"trade","trade_id":"6c69d69b-60f1-42ee-9d2c-b1ae538f873c","trade_side":"BID","price":"0.10210520","amount":"0.43000000","created_at":"2018-02-05T04:43:33.050407198Z"},{"type":"trade","trade_id":"1f1a799b-b654-4e8c-a2c4-82e1214b6d77","trade_side":"BID","price":"0.10210520","amount":"0.41000000","created_at":"2018-02-05T04:43:31.978730929Z"},{"type":"trade","trade_id":"9f636713-c8ea-40ca-8b89-d2b28730bf54","trade_side":"BID","price":"0.10210520","amount":"2.37350000","created_at":"2018-02-05T04:43:30.12603732Z"}]}'
+    http_version: 
+  recorded_at: Mon, 05 Feb 2018 04:59:17 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.radarrelay.com/v0/ticker/DAI/WETH
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.radarrelay.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.2
+      Date:
+      - Mon, 05 Feb 2018 06:39:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '107'
+      Connection:
+      - close
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"6b-RZR6Jht08ULsaK0LR796zBCvpVk"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"baseVolume":35599.08884678,"quoteVolume":43.1896184,"high":930.29825,"low":774.88965,"last":501.22800862}'
+    http_version: 
+  recorded_at: Mon, 05 Feb 2018 06:39:57 GMT
+recorded_with: VCR 3.0.3
