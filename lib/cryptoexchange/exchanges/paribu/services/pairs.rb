@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
                               target: target,
                               market: Paribu::Market::NAME
                             )
-          end
+           end
           market_pairs
         end
       end
