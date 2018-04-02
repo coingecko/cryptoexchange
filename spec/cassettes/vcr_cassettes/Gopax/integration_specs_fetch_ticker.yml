@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.gopax.co.kr/trading-pairs/ETH-KRW/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.gopax.co.kr
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 12 Mar 2018 14:18:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '99'
+      Connection:
+      - close
+      X-Powered-By:
+      - Express
+      X-Ratelimit-Limit:
+      - '20'
+      X-Ratelimit-Remaining:
+      - '19'
+      Etag:
+      - W/"63-mDEys2fCxP8rg8pcR+bKQKX0CBY"
+    body:
+      encoding: UTF-8
+      string: '{"price":799500,"ask":800000,"bid":799000,"volume":2493.79970035,"time":"2018-03-12T14:17:31.652Z"}'
+    http_version: 
+  recorded_at: Mon, 12 Mar 2018 14:18:46 GMT
+- request:
+    method: get
+    uri: https://api.gopax.co.kr/trading-pairs/ETH-KRW/stats
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.gopax.co.kr
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 12 Mar 2018 14:18:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '114'
+      Connection:
+      - close
+      X-Powered-By:
+      - Express
+      X-Ratelimit-Limit:
+      - '20'
+      X-Ratelimit-Remaining:
+      - '18'
+      Etag:
+      - W/"72-PkORv+NzeKQ8JGFDh4DTPDLRb0M"
+    body:
+      encoding: UTF-8
+      string: '{"open":784500,"high":814000,"low":771500,"close":799500,"volume":2493.79970035,"time":"2018-03-12T14:17:31.652Z"}'
+    http_version: 
+  recorded_at: Mon, 12 Mar 2018 14:18:46 GMT
+recorded_with: VCR 4.0.0
