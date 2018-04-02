@@ -79,13 +79,17 @@ Or install it yourself as:
 | Ethfinex          | Y       | Y          | Y       |         | Y           |
 | Exmo              | Y       | Y          | Y       |         | Y           |
 | Extstock          | Y       | Y          | Y       |         | Y           |
+| Fisco             | Y       | Y          | Y       |         | Y           |
 | Gate              | Y       | Y          | Y       |         | Y           |
 | Gatecoin          | Y       |            |         |         | Y           |
 | GDAX              | Y       |            |         |         | Y           |
 | Gemini            | Y       | Y          | Y       |         | Y           |
+| GetBTC            | Y       | Y          | Y       |         | User-Defined|
+| GOPAX             | Y       | Y          | Y       |         | Y           |
 | HitBTC            | Y       |            |         |         | Y           |
 | Hksy              | Y       |            | Y       |         | User-Defined|
 | Huobi             | Y       |            |         |         | Y           |
+| InfinityCoin      | Y       |            |         |         | Y           |
 | Itbit             | Y       | Y          | Y       |         | User-Defined|
 | Idex              | Y       | Unstable   | Y       |         | Y           |
 | KKex              | Y       | Y          | Y       |         | Y           |
@@ -123,6 +127,7 @@ Or install it yourself as:
 | Tidex             | Y       |            |         |         | Y           |
 | TradeOgre         | Y       | Y          | Y       |         | Y           |
 | Trade Satoshi     | Y       |            |         |         | Y           |
+| TrustDex **       | Y       |            |         |         | Y           |
 | TuxExchange       | Y       |            |         |         | Y           |
 | Upbit             | Y       |            |         |         | Y           |
 | Unocoin           |         |            |         |         |             |
@@ -133,6 +138,8 @@ Or install it yourself as:
 | Yunbi             | Y       |            |         |         | Y           |
 | Zaif              | Y       | Y          | Y       |         | Y           |
 | ZB                | Y       | Y          | Y       |         | Y           |
+
+** Mapping and data may be incorrect (Cannot determine correctness)
 
 ## Usage
 
