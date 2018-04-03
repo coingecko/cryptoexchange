@@ -1,0 +1,380 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crex24.com/CryptoExchangeService/BotPublic/ReturnOrderBook?request=%5BPairName=BTC_DOGE%5D
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.crex24.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 30 Mar 2018 06:46:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=de2c8ac566276b00b92a9b293caad2b221522392411; expires=Sat, 30-Mar-19
+        06:46:51 GMT; path=/; domain=.crex24.com; HttpOnly; Secure
+      Cache-Control:
+      - private
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 40389f1c5bdba2a8-HKG
+    body:
+      encoding: UTF-8
+      string: "{\r\n  \"Error\": null,\r\n  \"BuyOrders\": [\r\n    {\r\n      \"Id\":
+        0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000384000000,\r\n      \"CoinCount\": 1427.000000000000000,\r\n      \"AccumulateMoneyVolume\":
+        0.000547968000,\r\n      \"AccumulateMoneyCount\": 1427.000000000000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
+        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000383000000,\r\n      \"CoinCount\": 5996.000000000000000,\r\n      \"AccumulateMoneyVolume\":
+        0.002844436000,\r\n      \"AccumulateMoneyCount\": 7423.000000000000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
+        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000382000000,\r\n      \"CoinCount\": 17539.000000000000000,\r\n      \"AccumulateMoneyVolume\":
+        0.009544334000,\r\n      \"AccumulateMoneyCount\": 24962.000000000000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
+        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000381000000,\r\n      \"CoinCount\": 13261.000000000000000,\r\n      \"AccumulateMoneyVolume\":
+        0.014596775000,\r\n      \"AccumulateMoneyCount\": 38223.000000000000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
+        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000380000000,\r\n      \"CoinCount\": 22.000000000000000,\r\n      \"AccumulateMoneyVolume\":
+        0.014605135000,\r\n      \"AccumulateMoneyCount\": 38245.000000000000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
+        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000375000000,\r\n      \"CoinCount\": 1500.000000000000000,\r\n      \"AccumulateMoneyVolume\":
+        0.015167635000,\r\n      \"AccumulateMoneyCount\": 39745.000000000000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
+        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000373000000,\r\n      \"CoinCount\": 18287.000000000000000,\r\n      \"AccumulateMoneyVolume\":
+        0.021988686000,\r\n      \"AccumulateMoneyCount\": 58032.000000000000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
+        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000372000000,\r\n      \"CoinCount\": 8288.000000000000000,\r\n      \"AccumulateMoneyVolume\":
+        0.025071822000,\r\n      \"AccumulateMoneyCount\": 66320.000000000000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
+        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000370000000,\r\n      \"CoinCount\": 262842.177043100000000,\r\n      \"AccumulateMoneyVolume\":
+        0.122323427506,\r\n      \"AccumulateMoneyCount\": 329162.177043100000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
+        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000362000000,\r\n      \"CoinCount\": 2000.000000000000000,\r\n      \"AccumulateMoneyVolume\":
+        0.123047427506,\r\n      \"AccumulateMoneyCount\": 331162.177043100000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
+        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000361000000,\r\n      \"CoinCount\": 203.000000000000000,\r\n      \"AccumulateMoneyVolume\":
+        0.123120710506,\r\n      \"AccumulateMoneyCount\": 331365.177043100000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
+        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000360000000,\r\n      \"CoinCount\": 286079.170737910000000,\r\n      \"AccumulateMoneyVolume\":
+        0.226109211972,\r\n      \"AccumulateMoneyCount\": 617444.347781010000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
+        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000355000000,\r\n      \"CoinCount\": 19.000000000000000,\r\n      \"AccumulateMoneyVolume\":
+        0.226115956972,\r\n      \"AccumulateMoneyCount\": 617463.347781010000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
+        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000350000000,\r\n      \"CoinCount\": 326921.728967890000000,\r\n      \"AccumulateMoneyVolume\":
+        0.340538562111,\r\n      \"AccumulateMoneyCount\": 944385.076748900000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
+        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000340000000,\r\n      \"CoinCount\": 40158.770111690000000,\r\n      \"AccumulateMoneyVolume\":
+        0.354192543949,\r\n      \"AccumulateMoneyCount\": 984543.846860590000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
+        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000270000000,\r\n      \"CoinCount\": 11227.000000000000000,\r\n      \"AccumulateMoneyVolume\":
+        0.357223833949,\r\n      \"AccumulateMoneyCount\": 995770.846860590000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
+        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000210000000,\r\n      \"CoinCount\": 25948.000000000000000,\r\n      \"AccumulateMoneyVolume\":
+        0.362672913949,\r\n      \"AccumulateMoneyCount\": 1021718.846860590000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
+        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
+        0.000000010000000,\r\n      \"CoinCount\": 7550.000000000000000,\r\n      \"AccumulateMoneyVolume\":
+        0.362748413949,\r\n      \"AccumulateMoneyCount\": 1029268.846860590000,\r\n
+        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
+        0,\r\n      \"StopPrice\": 0.0\r\n    }\r\n  ],\r\n  \"SellOrders\": [\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000395000000,\r\n      \"CoinCount\": 21817.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.008617715000,\r\n      \"AccumulateMoneyCount\":
+        21817.000000000000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000402000000,\r\n      \"CoinCount\": 5409.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.010792133000,\r\n      \"AccumulateMoneyCount\":
+        27226.000000000000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000403000000,\r\n      \"CoinCount\": 8118.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.014063687000,\r\n      \"AccumulateMoneyCount\":
+        35344.000000000000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000404000000,\r\n      \"CoinCount\": 3327.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.015407795000,\r\n      \"AccumulateMoneyCount\":
+        38671.000000000000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000405000000,\r\n      \"CoinCount\": 6368.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.017986835000,\r\n      \"AccumulateMoneyCount\":
+        45039.000000000000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000406000000,\r\n      \"CoinCount\": 2210.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.018884095000,\r\n      \"AccumulateMoneyCount\":
+        47249.000000000000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000409000000,\r\n      \"CoinCount\": 14120.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.024659175000,\r\n      \"AccumulateMoneyCount\":
+        61369.000000000000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000410000000,\r\n      \"CoinCount\": 146800.574676040000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.084847410617,\r\n      \"AccumulateMoneyCount\":
+        208169.574676040000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000411000000,\r\n      \"CoinCount\": 16807.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.091755087617,\r\n      \"AccumulateMoneyCount\":
+        224976.574676040000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000412000000,\r\n      \"CoinCount\": 49.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.091775275617,\r\n      \"AccumulateMoneyCount\":
+        225025.574676040000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000414000000,\r\n      \"CoinCount\": 2589.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.092847121617,\r\n      \"AccumulateMoneyCount\":
+        227614.574676040000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000417000000,\r\n      \"CoinCount\": 2077.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.093713230617,\r\n      \"AccumulateMoneyCount\":
+        229691.574676040000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000419000000,\r\n      \"CoinCount\": 15225.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.100092505617,\r\n      \"AccumulateMoneyCount\":
+        244916.574676040000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000420000000,\r\n      \"CoinCount\": 115281.982691040000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.148510938347,\r\n      \"AccumulateMoneyCount\":
+        360198.557367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000428000000,\r\n      \"CoinCount\": 1055.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.148962478347,\r\n      \"AccumulateMoneyCount\":
+        361253.557367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000435000000,\r\n      \"CoinCount\": 31642.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.162726748347,\r\n      \"AccumulateMoneyCount\":
+        392895.557367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000440000000,\r\n      \"CoinCount\": 14200.200000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.168974836347,\r\n      \"AccumulateMoneyCount\":
+        407095.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000442000000,\r\n      \"CoinCount\": 5000.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.171184836347,\r\n      \"AccumulateMoneyCount\":
+        412095.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000444000000,\r\n      \"CoinCount\": 5000.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.173404836347,\r\n      \"AccumulateMoneyCount\":
+        417095.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000446000000,\r\n      \"CoinCount\": 5000.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.175634836347,\r\n      \"AccumulateMoneyCount\":
+        422095.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000448000000,\r\n      \"CoinCount\": 5000.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.177874836347,\r\n      \"AccumulateMoneyCount\":
+        427095.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000450000000,\r\n      \"CoinCount\": 16993.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.185521686347,\r\n      \"AccumulateMoneyCount\":
+        444088.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000455000000,\r\n      \"CoinCount\": 5000.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.187796686347,\r\n      \"AccumulateMoneyCount\":
+        449088.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000460000000,\r\n      \"CoinCount\": 5047.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.190118306347,\r\n      \"AccumulateMoneyCount\":
+        454135.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000465000000,\r\n      \"CoinCount\": 5811.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.192820421347,\r\n      \"AccumulateMoneyCount\":
+        459946.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000480000000,\r\n      \"CoinCount\": 50.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.192844421347,\r\n      \"AccumulateMoneyCount\":
+        459996.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000550000000,\r\n      \"CoinCount\": 993.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.193390571347,\r\n      \"AccumulateMoneyCount\":
+        460989.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000590000000,\r\n      \"CoinCount\": 117.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.193459601347,\r\n      \"AccumulateMoneyCount\":
+        461106.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000620000000,\r\n      \"CoinCount\": 12265.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.201063901347,\r\n      \"AccumulateMoneyCount\":
+        473371.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000631000000,\r\n      \"CoinCount\": 37.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.201087248347,\r\n      \"AccumulateMoneyCount\":
+        473408.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000641000000,\r\n      \"CoinCount\": 699.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.201535307347,\r\n      \"AccumulateMoneyCount\":
+        474107.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000710000000,\r\n      \"CoinCount\": 5358.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.205339487347,\r\n      \"AccumulateMoneyCount\":
+        479465.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000750000000,\r\n      \"CoinCount\": 6000.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.209839487347,\r\n      \"AccumulateMoneyCount\":
+        485465.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000800000000,\r\n      \"CoinCount\": 77.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.209901087347,\r\n      \"AccumulateMoneyCount\":
+        485542.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000815000000,\r\n      \"CoinCount\": 6135.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.214901112347,\r\n      \"AccumulateMoneyCount\":
+        491677.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000860000000,\r\n      \"CoinCount\": 9000.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.222641112347,\r\n      \"AccumulateMoneyCount\":
+        500677.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000870000000,\r\n      \"CoinCount\": 83272.816563520000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.295088462757,\r\n      \"AccumulateMoneyCount\":
+        583950.573930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000900000000,\r\n      \"CoinCount\": 1682.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.296602262757,\r\n      \"AccumulateMoneyCount\":
+        585632.573930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000935000000,\r\n      \"CoinCount\": 16043.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.311602467757,\r\n      \"AccumulateMoneyCount\":
+        601675.573930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000000970000000,\r\n      \"CoinCount\": 8570.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.319915367757,\r\n      \"AccumulateMoneyCount\":
+        610245.573930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000001000000000,\r\n      \"CoinCount\": 30.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.319945367757,\r\n      \"AccumulateMoneyCount\":
+        610275.573930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000001060000000,\r\n      \"CoinCount\": 100014.520000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.425960758957,\r\n      \"AccumulateMoneyCount\":
+        710290.093930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000001070000000,\r\n      \"CoinCount\": 7477.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.433961148957,\r\n      \"AccumulateMoneyCount\":
+        717767.093930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000001100000000,\r\n      \"CoinCount\": 30.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.433994148957,\r\n      \"AccumulateMoneyCount\":
+        717797.093930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000001200000000,\r\n      \"CoinCount\": 10.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.434006148957,\r\n      \"AccumulateMoneyCount\":
+        717807.093930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000001230000000,\r\n      \"CoinCount\": 8130.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.444006048957,\r\n      \"AccumulateMoneyCount\":
+        725937.093930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000001470000000,\r\n      \"CoinCount\": 3501.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.449152518957,\r\n      \"AccumulateMoneyCount\":
+        729438.093930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
+        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
+        true,\r\n      \"CoinPrice\": 0.000027800000000,\r\n      \"CoinCount\": 3589.000000000000000,\r\n
+        \     \"AccumulateMoneyVolume\": 0.548926718957,\r\n      \"AccumulateMoneyCount\":
+        733027.093930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
+        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    }\r\n
+        \ ]\r\n}"
+    http_version: 
+  recorded_at: Fri, 30 Mar 2018 06:46:52 GMT
+recorded_with: VCR 4.0.0

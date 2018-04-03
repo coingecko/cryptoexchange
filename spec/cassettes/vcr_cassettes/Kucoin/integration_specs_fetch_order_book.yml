@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kucoin.com/v1/open/orders?symbol=KCS-BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.kucoin.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 05 Mar 2018 12:45:56 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - https://www.kucoin.com
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Accept-Language
+      Access-Control-Allow-Methods:
+      - POST, GET, PUT, OPTIONS, DELETE, PATCH
+      Access-Control-Max-Age:
+      - '86400'
+      Kc-Node:
+      - localhost
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"code":"OK","msg":"Operation succeeded.","timestamp":1520253956605,"data":{"SELL":[[3.2448E-4,3.9825,0.00129225],[3.2453E-4,11.3537,0.00368461],[3.2454E-4,3.4796,0.00112927],[3.2456E-4,3.734,0.00121191],[3.2458E-4,10.7851,0.00350063],[3.2462E-4,3.4093,0.00110673]],"BUY":[[3.218E-4,90.0622,0.02898202],[3.215E-4,221.7345,0.07128765],[3.2094E-4,8.6613,0.00277976],[3.2075E-4,22.0,0.0070565],[3.2058E-4,9.4582,0.00303211],[3.205E-4,1.3581,4.3527E-4]]}}'
+    http_version: 
+  recorded_at: Mon, 05 Mar 2018 12:45:56 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinrail.co.kr/public/last/transaction?currency=BTC-KRW
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinrail.co.kr
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1470'
+      Connection:
+      - close
+      Access-Control-Allow-Headers:
+      - X-COINRAIL-PAYLOAD, X-COINRAIL-SIGNATURE
+      Access-Control-Allow-Methods:
+      - POST, GET, DELETE, PUT, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '3600'
+      Date:
+      - Thu, 01 Feb 2018 10:15:06 GMT
+      Server:
+      - nginx/1.12.1
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 e56a28552ea707fbe41d2459b224fe31.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - WDJtZ6IsPpR5vq8gI0nmI6f6WSe7BIsW1c2CzTqKL6XWQKJ6LOGRfw==
+    body:
+      encoding: UTF-8
+      string: '{"transaction_list":[{"time":"2018-02-01 19:14:59.0","qty":"0.02260000","price":"10210000"},{"time":"2018-02-01
+        19:14:52.0","qty":"0.01420000","price":"10210000"},{"time":"2018-02-01 19:14:46.0","qty":"0.00770000","price":"10210000"},{"time":"2018-02-01
+        19:14:44.0","qty":"0.03400000","price":"10221000"},{"time":"2018-02-01 19:14:41.0","qty":"0.02860000","price":"10210000"},{"time":"2018-02-01
+        19:14:29.0","qty":"0.52690000","price":"10210000"},{"time":"2018-02-01 19:14:18.0","qty":"0.19030000","price":"10210000"},{"time":"2018-02-01
+        19:13:30.0","qty":"0.00510000","price":"10221000"},{"time":"2018-02-01 19:13:30.0","qty":"0.07590000","price":"10221000"},{"time":"2018-02-01
+        19:13:30.0","qty":"0.00010000","price":"10220000"},{"time":"2018-02-01 19:13:12.0","qty":"0.08980000","price":"10213000"},{"time":"2018-02-01
+        19:13:09.0","qty":"0.98410000","price":"10213000"},{"time":"2018-02-01 19:13:08.0","qty":"0.00830000","price":"10220000"},{"time":"2018-02-01
+        19:12:43.0","qty":"0.00010000","price":"10220000"},{"time":"2018-02-01 19:12:43.0","qty":"0.21800000","price":"10220000"},{"time":"2018-02-01
+        19:12:33.0","qty":"0.12780000","price":"10220000"},{"time":"2018-02-01 19:12:20.0","qty":"0.02730000","price":"10221000"},{"time":"2018-02-01
+        19:12:15.0","qty":"0.03680000","price":"10221000"},{"time":"2018-02-01 19:12:09.0","qty":"0.14360000","price":"10221000"},{"time":"2018-02-01
+        19:12:09.0","qty":"0.00580000","price":"10226000"}],"error_code":0,"message":""}'
+    http_version: 
+  recorded_at: Thu, 01 Feb 2018 10:15:06 GMT
+recorded_with: VCR 3.0.3
