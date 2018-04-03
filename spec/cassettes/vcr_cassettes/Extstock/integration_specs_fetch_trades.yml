@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://extstock.com/api/v1/trades?market=eth_ltc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - extstock.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Mar 2018 08:00:22 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '7708'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=deae3b49e312fd0b69ed4a2b1613729941521014421; expires=Thu, 14-Mar-19
+        08:00:21 GMT; path=/; domain=.extstock.com; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 1b3f5a62-df85-4f67-a159-d0977b4f3a44
+      Etag:
+      - '"af82c85a8366a66fcb0b1e95cdbc154c"'
+      X-Runtime:
+      - '0.098430'
+      X-Powered-By:
+      - Phusion Passenger 5.2.1
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3fb534c7bb0630cc-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":1078227,"price":"3.9840416","volume":"0.01396131","funds":"0.055622439830496","market":"eth_ltc","created_at":"2018-03-14T04:00:02-04:00","side":null},{"id":1078226,"price":"3.9840416","volume":"0.05776","funds":"0.230118242816","market":"eth_ltc","created_at":"2018-03-14T04:00:01-04:00","side":null},{"id":1078225,"price":"3.9840416","volume":"0.00069","funds":"0.002748988704","market":"eth_ltc","created_at":"2018-03-14T04:00:01-04:00","side":null},{"id":1078224,"price":"3.9840416","volume":"0.0557","funds":"0.22191111712","market":"eth_ltc","created_at":"2018-03-14T04:00:01-04:00","side":null},{"id":1078223,"price":"3.9840416","volume":"0.02188869","funds":"0.087205451529504","market":"eth_ltc","created_at":"2018-03-14T04:00:01-04:00","side":null},{"id":1078071,"price":"3.9840416","volume":"0.06362729","funds":"0.253493770255264","market":"eth_ltc","created_at":"2018-03-14T03:55:37-04:00","side":null},{"id":1078070,"price":"3.9840416","volume":"0.09107","funds":"0.362826668512","market":"eth_ltc","created_at":"2018-03-14T03:55:37-04:00","side":null},{"id":1078069,"price":"3.9840416","volume":"0.00370271","funds":"0.014751750672736","market":"eth_ltc","created_at":"2018-03-14T03:55:37-04:00","side":null},{"id":1077973,"price":"3.9840416","volume":"0.03941729","funds":"0.157040123119264","market":"eth_ltc","created_at":"2018-03-14T03:51:49-04:00","side":null},{"id":1077972,"price":"3.9840416","volume":"0.03","funds":"0.119521248","market":"eth_ltc","created_at":"2018-03-14T03:51:49-04:00","side":null},{"id":1077971,"price":"3.9840416","volume":"0.06898","funds":"0.274819189568","market":"eth_ltc","created_at":"2018-03-14T03:51:48-04:00","side":null},{"id":1077970,"price":"3.9840416","volume":"0.0188","funds":"0.07489998208","market":"eth_ltc","created_at":"2018-03-14T03:51:48-04:00","side":null},{"id":1077969,"price":"3.9840416","volume":"0.01024733","funds":"0.040825789008928","market":"eth_ltc","created_at":"2018-03-14T03:51:48-04:00","side":null},{"id":1077945,"price":"3.9840416","volume":"0.04472316","funds":"0.178178929923456","market":"eth_ltc","created_at":"2018-03-14T03:51:03-04:00","side":null},{"id":1077881,"price":"3.9840416","volume":"0.01542951","funds":"0.061471809707616","market":"eth_ltc","created_at":"2018-03-14T03:48:42-04:00","side":null},{"id":1077880,"price":"3.9840416","volume":"0.00957049","funds":"0.038129230292384","market":"eth_ltc","created_at":"2018-03-14T03:48:42-04:00","side":null},{"id":1077834,"price":"3.9840416","volume":"0.02","funds":"0.079680832","market":"eth_ltc","created_at":"2018-03-14T03:47:57-04:00","side":null},{"id":1077789,"price":"3.9840416","volume":"0.03402","funds":"0.135537095232","market":"eth_ltc","created_at":"2018-03-14T03:46:09-04:00","side":null},{"id":1077709,"price":"3.9840416","volume":"0.01060951","funds":"0.042268729195616","market":"eth_ltc","created_at":"2018-03-14T03:43:20-04:00","side":null},{"id":1077708,"price":"3.9840416","volume":"0.01749049","funds":"0.069682839764384","market":"eth_ltc","created_at":"2018-03-14T03:43:20-04:00","side":null},{"id":1077664,"price":"3.9840416","volume":"0.01779989","funds":"0.070915502235424","market":"eth_ltc","created_at":"2018-03-14T03:41:26-04:00","side":null},{"id":1077652,"price":"3.9840416","volume":"0.00510962","funds":"0.020356938640192","market":"eth_ltc","created_at":"2018-03-14T03:40:52-04:00","side":null},{"id":1077651,"price":"3.9840416","volume":"0.02909038","funds":"0.115897284079808","market":"eth_ltc","created_at":"2018-03-14T03:40:52-04:00","side":null},{"id":1077605,"price":"3.9840416","volume":"0.07010413","funds":"0.279297770251808","market":"eth_ltc","created_at":"2018-03-14T03:39:18-04:00","side":null},{"id":1077604,"price":"3.9840416","volume":"0.00811555","funds":"0.03233268880688","market":"eth_ltc","created_at":"2018-03-14T03:39:18-04:00","side":null},{"id":1077602,"price":"3.9840416","volume":"0.01368445","funds":"0.05451941807312","market":"eth_ltc","created_at":"2018-03-14T03:39:03-04:00","side":null},{"id":1077601,"price":"3.9840416","volume":"0.0213","funds":"0.08486008608","market":"eth_ltc","created_at":"2018-03-14T03:39:02-04:00","side":null},{"id":1077600,"price":"3.9840416","volume":"0.02937877","funds":"0.117046241836832","market":"eth_ltc","created_at":"2018-03-14T03:39:02-04:00","side":null},{"id":1077589,"price":"3.9840416","volume":"0.01362123","funds":"0.054267546963168","market":"eth_ltc","created_at":"2018-03-14T03:38:30-04:00","side":null},{"id":1077588,"price":"3.9840416","volume":"0.034","funds":"0.1354574144","market":"eth_ltc","created_at":"2018-03-14T03:38:30-04:00","side":null},{"id":1077587,"price":"3.9840416","volume":"0.03407877","funds":"0.135771237356832","market":"eth_ltc","created_at":"2018-03-14T03:38:30-04:00","side":null},{"id":1077516,"price":"3.9840416","volume":"0.00192123","funds":"0.007654260243168","market":"eth_ltc","created_at":"2018-03-14T03:36:06-04:00","side":null},{"id":1077515,"price":"3.9840416","volume":"0.02477877","funds":"0.098719650476832","market":"eth_ltc","created_at":"2018-03-14T03:36:05-04:00","side":null},{"id":1077443,"price":"3.9840416","volume":"0.059","funds":"0.2350584544","market":"eth_ltc","created_at":"2018-03-14T03:32:49-04:00","side":null},{"id":1077369,"price":"3.9840416","volume":"0.04622123","funds":"0.184147303123168","market":"eth_ltc","created_at":"2018-03-14T03:30:41-04:00","side":null},{"id":1077368,"price":"3.9840416","volume":"0.01041247","funds":"0.041483713638752","market":"eth_ltc","created_at":"2018-03-14T03:30:41-04:00","side":null},{"id":1077363,"price":"3.9840416","volume":"0.02","funds":"0.079680832","market":"eth_ltc","created_at":"2018-03-14T03:30:24-04:00","side":null},{"id":1077135,"price":"3.9840416","volume":"0.03396895","funds":"0.13533370990832","market":"eth_ltc","created_at":"2018-03-14T03:21:23-04:00","side":null},{"id":1077134,"price":"3.9840416","volume":"0.02803105","funds":"0.11167686929168","market":"eth_ltc","created_at":"2018-03-14T03:21:23-04:00","side":null},{"id":1077069,"price":"3.9840416","volume":"0.03266895","funds":"0.13015445582832","market":"eth_ltc","created_at":"2018-03-14T03:18:04-04:00","side":null},{"id":1077068,"price":"3.9840416","volume":"0.00033105","funds":"0.00131891697168","market":"eth_ltc","created_at":"2018-03-14T03:18:03-04:00","side":null},{"id":1077041,"price":"3.9840416","volume":"0.02","funds":"0.079680832","market":"eth_ltc","created_at":"2018-03-14T03:16:43-04:00","side":null},{"id":1077008,"price":"3.9840416","volume":"0.01565459","funds":"0.062368537790944","market":"eth_ltc","created_at":"2018-03-14T03:15:24-04:00","side":null},{"id":1077007,"price":"3.9840416","volume":"0.00434541","funds":"0.017312294209056","market":"eth_ltc","created_at":"2018-03-14T03:15:24-04:00","side":null},{"id":1076921,"price":"3.9840416","volume":"0.0067745","funds":"0.0269898898192","market":"eth_ltc","created_at":"2018-03-14T03:11:51-04:00","side":null},{"id":1076920,"price":"3.9840416","volume":"0.0923588","funds":"0.36796130132608","market":"eth_ltc","created_at":"2018-03-14T03:11:51-04:00","side":null},{"id":1076919,"price":"3.9840416","volume":"0.04727223","funds":"0.188334530844768","market":"eth_ltc","created_at":"2018-03-14T03:11:51-04:00","side":null},{"id":1076794,"price":"3.9840416","volume":"0.00832777","funds":"0.033178182115232","market":"eth_ltc","created_at":"2018-03-14T03:07:33-04:00","side":null},{"id":1076793,"price":"3.9840416","volume":"0.0151","funds":"0.06015902816","market":"eth_ltc","created_at":"2018-03-14T03:07:33-04:00","side":null},{"id":1076792,"price":"3.9840416","volume":"0.0073479","funds":"0.02927433927264","market":"eth_ltc","created_at":"2018-03-14T03:07:33-04:00","side":null}]'
+    http_version: 
+  recorded_at: Wed, 14 Mar 2018 08:00:20 GMT
+recorded_with: VCR 4.0.0

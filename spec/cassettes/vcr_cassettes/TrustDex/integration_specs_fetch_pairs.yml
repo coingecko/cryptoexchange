@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://trustdex.io/market/api/return_ticket.php
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - trustdex.io
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 07 Dec 2017 06:48:52 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding,User-Agent
+      Server:
+      - Trusbank Websphere 12.3 build 3.456.234.2600
+    body:
+      encoding: UTF-8
+      string: '[{"VND_BTC":{"id":"1","coin":"VND_BTC","last":"316664999.99932","highestBid":"316663547.20023","lowestAsk":"316664999.99932","percentChange":"2949.198074","baseVolume":"184627263083.48","quoteVolume":"282560876.45992","isFrozen":"0","high24hr":"322069088.43809","low24hr":"277394000"}},{"USDT_BTC":{"id":"2","coin":"USDT_BTC","last":"13949.99999997","highestBid":"13949.93600001","lowestAsk":"13949.99999997","percentChange":"0.12992062","baseVolume":"8133359.6072017","quoteVolume":"12447.61570308","isFrozen":"0","high24hr":"14188.06556996","low24hr":"12220.00000000"}},{"BTC_ETH":{"id":"3","coin":"BTC_ETH","last":"0.02990000","highestBid":"0.02982073","lowestAsk":"0.02990000","percentChange":"-0.16542480","baseVolume":"540.6170987805","quoteVolume":"338421.26786178","isFrozen":"0","high24hr":"0.03611286","low24hr":"0.02900304"}},{"BTC_LTC":{"id":"4","coin":"BTC_LTC","last":"0.00681194","highestBid":"0.00681194","lowestAsk":"0.00682418","percentChange":"-0.16314308","baseVolume":"141.3583030435","quoteVolume":"387636.10260748","isFrozen":"0","high24hr":"0.00828857","low24hr":"0.00652112"}},{"BTC_DASH":{"id":"5","coin":"BTC_DASH","last":"0.04796209","highestBid":"0.04796209","lowestAsk":"0.04797810","percentChange":"-0.17659485","baseVolume":"90.128835216","quoteVolume":"35033.86990426","isFrozen":"0","high24hr":"0.05869352","low24hr":"0.04607966"}},{"AIC_BTC":{"id":"6","coin":"AIC_BTC","last":"14647.499999969","highestBid":"14647.432800011","lowestAsk":"14647.499999969","percentChange":"0.136416651","baseVolume":"8540027.5875618","quoteVolume":"13069.996488234","isFrozen":"0","high24hr":"14897.468848458","low24hr":"12831"}},{"VND_ETH":{"id":"7","coin":"VND_ETH","last":"9440930.004313","highestBid":"9440930.004313","lowestAsk":"9479798.948042","percentChange":"-1417.470401","baseVolume":"37827828823.182","quoteVolume":"1790660537.4709","isFrozen":"0","high24hr":"10170394.27754","low24hr":"9082270"}},{"USDT_ETH":{"id":"8","coin":"USDT_ETH","last":"415.90000019","highestBid":"415.90000019","lowestAsk":"417.61228846","percentChange":"-0.06244363","baseVolume":"1666424.1772327","quoteVolume":"78883.72411766","isFrozen":"0","high24hr":"448.03499020","low24hr":"400.10000000"}},{"VND_DASH":{"id":"9","coin":"VND_DASH","last":"15041198.565237","highestBid":"15132871.068112","lowestAsk":"15208734.468112","percentChange":"-1809.446283","baseVolume":"4070209920.6813","quoteVolume":"119955514.59697","isFrozen":"0","high24hr":"16570999.999773","low24hr":"14369100"}},{"USDT_DASH":{"id":"10","coin":"USDT_DASH","last":"662.60786631","highestBid":"666.64630256","lowestAsk":"669.98830256","percentChange":"-0.07971129","baseVolume":"179304.40179213","quoteVolume":"5284.38390295","isFrozen":"0","high24hr":"729.99999999","low24hr":"633.00000000"}},{"VND_LTC":{"id":"11","coin":"VND_LTC","last":"2157173.622727","highestBid":"2157173.622727","lowestAsk":"2163645.097627","percentChange":"-1235.585743","baseVolume":"9784443123.9292","quoteVolume":"2031504050.096","isFrozen":"0","high24hr":"2319940.0227","low24hr":"2043000"}},{"USDT_LTC":{"id":"12","coin":"USDT_LTC","last":"95.02967501","highestBid":"95.02967501","lowestAsk":"95.31476201","percentChange":"-0.05443109","baseVolume":"431032.73673697","quoteVolume":"89493.57048881","isFrozen":"0","high24hr":"102.20000100","low24hr":"90.00000000"}},{"VND_AIC":{"id":"13","coin":"VND_AIC","last":"23835","highestBid":"22927","lowestAsk":"24743","percentChange":"3","baseVolume":"4696671.44244751","quoteVolume":"78339.43301541","isFrozen":"0","high24hr":"24761.16","low24hr":"21278.98"}},{"AIC_ETH":{"id":"14","coin":"AIC_ETH","last":"436.6950001995","highestBid":"436.6950001995","lowestAsk":"438.492902883","percentChange":"-0.0655658115","baseVolume":"1749745.3860943","quoteVolume":"82827.910323543","isFrozen":"0","high24hr":"470.43673971","low24hr":"420.105"}},{"AIC_DASH":{"id":"15","coin":"AIC_DASH","last":"695.7382596255","highestBid":"699.978617688","lowestAsk":"703.487717688","percentChange":"-0.0836968545","baseVolume":"188269.62188173","quoteVolume":"5548.6030980975","isFrozen":"0","high24hr":"766.4999999895","low24hr":"664.65"}},{"AIC_LTC":{"id":"16","coin":"AIC_LTC","last":"99.7811587605","highestBid":"99.7811587605","lowestAsk":"100.0805001105","percentChange":"-0.0571526445","baseVolume":"452584.37357382","quoteVolume":"93968.249013251","isFrozen":"0","high24hr":"107.31000105","low24hr":"94.5"}}]'
+    http_version: 
+  recorded_at: Thu, 07 Dec 2017 06:48:52 GMT
+recorded_with: VCR 3.0.3

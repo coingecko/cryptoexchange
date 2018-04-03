@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bitsblockchain.net/moon/v1/market/topOrderBook/ANX/ATMCUSD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bitsblockchain.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Mar 2018 15:50:54 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d73430d08045e12b1692ae2f522c198181521647454; expires=Thu, 21-Mar-19
+        15:50:54 GMT; path=/; domain=.bitsblockchain.net; HttpOnly
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - DENY
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3ff193ac0b6a3210-SIN
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "timestamp": "1521647454129",
+          "data": [
+            {
+              "market": "ANX",
+              "asks": [
+                {
+                  "total": 131716000.00,
+                  "price": 7.45000000,
+                  "quantity": 17680000.00000000
+                },
+                {
+                  "total": 153000000.00,
+                  "price": 7.65000000,
+                  "quantity": 20000000.00000000
+                },
+                {
+                  "total": 160000000.00,
+                  "price": 8.00000000,
+                  "quantity": 20000000.00000000
+                }
+              ],
+              "ccyPair": "ATMCUSD",
+              "timestampMillis": "1521647432826",
+              "bids": [
+                {
+                  "total": 180.80000000,
+                  "price": 0.50000000,
+                  "quantity": 361.60000000
+                }
+              ]
+            }
+          ],
+          "event": "orderBook"
+        }
+    http_version: 
+  recorded_at: Wed, 21 Mar 2018 15:50:54 GMT
+recorded_with: VCR 4.0.0
