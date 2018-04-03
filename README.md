@@ -119,6 +119,7 @@ Or install it yourself as:
 | Nova Exchange     | Y       |            |         |         | Y           |
 | OKCoin            | Y       |            |         |         | User-Defined|
 | OKEx              | Y       | Y          | Y       |         | User-Defined|
+| Paribu            | Y       |            |         |         | Y           |
 | Poloniex          | Y       |            |         |         | Y           |
 | Qryptos           | Y       |            |         |         | Y           |
 | QuadrigaCX        | Y       |            |         |         | User-Defined|
