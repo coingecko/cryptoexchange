@@ -44,6 +44,7 @@ Or install it yourself as:
 | Bithumb           | Y       |            |         |         | Y           |
 | Bitkonan          | Y       |            |         |         | User-Defined|
 | Bitmex            | Y       | Y          | Y       |         | Y           |
+| Bits Blockchain   | Y       | Y          |         |         | Y           |
 | Bitso             | Y       |            |         |         | Y           |
 | Bitstamp          | Y       | Y          | Y       |         | User-Defined|
 | Bittrex           | Y       |            |         |         | Y           |
