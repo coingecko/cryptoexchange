@@ -121,6 +121,7 @@ Or install it yourself as:
 | OKCoin            | Y       |            |         |         | User-Defined|
 | OKEx              | Y       | Y          | Y       |         | User-Defined|
 | Paribu            | Y       |            |         |         | Y           |
+| Paymium           | Y       | Y          | Y       |         | User-Defined|
 | Poloniex          | Y       |            |         |         | Y           |
 | Qryptos           | Y       |            |         |         | Y           |
 | QuadrigaCX        | Y       |            |         |         | User-Defined|
