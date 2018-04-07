@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.southxchange.com/api/trades/DOGE/BTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.southxchange.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 07 Feb 2018 07:28:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - ARRAffinity=6bfef760ff79b66c668c1c8579e4915a4529b9accccaa2bc6635349db4409266;Path=/;HttpOnly;Domain=www.southxchange.com
+      - __cfduid=d56af7ea4f4c742cde8034c91c612d6791517988481; expires=Thu, 07-Feb-19
+        07:28:01 GMT; path=/; domain=.southxchange.com; HttpOnly
+      - _culture=en-US; path=/
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      Vary:
+      - Accept-Encoding
+      X-Aspnetmvc-Version:
+      - '5.2'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      X-Frame-Options:
+      - DENY
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e94a146dea7a32c-HKG
+    body:
+      encoding: UTF-8
+      string: '[{"At":1517987805,"Amount":368.66071429,"Price":0.00000056,"Type":"buy"},{"At":1517987491,"Amount":715.71428571,"Price":0.00000056,"Type":"buy"},{"At":1517987403,"Amount":5044.35714286,"Price":0.00000056,"Type":"buy"},{"At":1517986960,"Amount":20804.72999456,"Price":0.00000055,"Type":"sell"},{"At":1517986457,"Amount":20756.51785714,"Price":0.00000056,"Type":"buy"},{"At":1517986260,"Amount":0.01162366,"Price":0.00000056,"Type":"buy"},{"At":1517984918,"Amount":35243.56378949,"Price":0.00000055,"Type":"sell"},{"At":1517984907,"Amount":10165.20918182,"Price":0.00000055,"Type":"sell"},{"At":1517984693,"Amount":24600.04981818,"Price":0.00000055,"Type":"sell"},{"At":1517983071,"Amount":11654.33928571,"Price":0.00000056,"Type":"buy"},{"At":1517983071,"Amount":14462.50524512,"Price":0.00000056,"Type":"buy"},{"At":1517983070,"Amount":2682.7415406,"Price":0.00000056,"Type":"buy"},{"At":1517983050,"Amount":3173,"Price":0.00000055,"Type":"buy"},{"At":1517981615,"Amount":2562.85714286,"Price":0.00000056,"Type":"buy"},{"At":1517981528,"Amount":5314.29073636,"Price":0.00000055,"Type":"buy"},{"At":1517981502,"Amount":3039.09090909,"Price":0.00000055,"Type":"buy"},{"At":1517981435,"Amount":58565.74545455,"Price":0.00000055,"Type":"buy"},{"At":1517981435,"Amount":28752.52818181,"Price":0.00000055,"Type":"buy"},{"At":1517981025,"Amount":132.34545455,"Price":0.00000055,"Type":"buy"},{"At":1517980892,"Amount":103998.11428571,"Price":0.00000055,"Type":"sell"}]'
+    http_version: 
+  recorded_at: Wed, 07 Feb 2018 07:28:02 GMT
+recorded_with: VCR 3.0.3

@@ -127,6 +127,7 @@ Or install it yourself as:
 | QuadrigaCX        | Y       |            |         |         | User-Defined|
 | Quoine            | Y       |            |         |         | Y           |
 | RadarRelay        | Y       |            |         |         | User-Defined|
+| SouthXchange      | Y       | Y          | Y       |         | Y           |
 | Stocks Exchange   | Y       |            |         |         | Y           |
 | SZZC              | Y       |            |         |         | Y           |
 | The Rock Trading  | Y       |            |         |         | Y           |
