@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.aex.com/ticker.php?c=ltc&mk_type=btc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.aex.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 Jan 2018 09:10:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache,must-revalidate
+      Set-Cookie:
+      - __jsluid=d9cd88b66dc5f020b78417265810d60a; max-age=31536000; path=/; HttpOnly
+      X-Cache:
+      - bypass
+    body:
+      encoding: UTF-8
+      string: '{"ticker":{"high":0.017,"low":0.0148,"last":0.0161,"vol":1267.853381,"buy":0.0161,"sell":0.0165}}'
+    http_version: 
+  recorded_at: Thu, 18 Jan 2018 09:10:15 GMT
+recorded_with: VCR 3.0.3

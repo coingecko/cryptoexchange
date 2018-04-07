@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.btcbox.co.jp/api/v1/ticker/BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - curl/7.54.0
+      Connection:
+      - close
+      Host:
+      - www.btcbox.co.jp
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 25 Mar 2018 13:30:08 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dfece8f18cfcb9b1f61712d438de3d6741521984608; expires=Mon, 25-Mar-19
+        13:30:08 GMT; path=/; domain=.btcbox.co.jp; HttpOnly
+      - lang=ja_JP; expires=Wed, 22-Mar-2028 13:30:08 GMT; Max-Age=315360000; path=/
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4011baf92c032d0b-KUL
+    body:
+      encoding: UTF-8
+      string: '{"high":943000,"low":886074,"buy":895903,"sell":898203,"last":896690,"vol":11218.9257}'
+    http_version: 
+  recorded_at: Sun, 25 Mar 2018 13:30:08 GMT
+- request:
+    method: get
+    uri: https://www.btcbox.co.jp/api/v1/ticker/BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - curl/7.54.0
+      Connection:
+      - close
+      Host:
+      - www.btcbox.co.jp
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 25 Mar 2018 13:30:31 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d923981618aad61f9221e8c3c4707bbd71521984631; expires=Mon, 25-Mar-19
+        13:30:31 GMT; path=/; domain=.btcbox.co.jp; HttpOnly
+      - lang=ja_JP; expires=Wed, 22-Mar-2028 13:30:31 GMT; Max-Age=315360000; path=/
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4011bb8a3dae2d17-KUL
+    body:
+      encoding: UTF-8
+      string: '{"high":943000,"low":886074,"buy":896024,"sell":899123,"last":896690,"vol":11218.9257}'
+    http_version: 
+  recorded_at: Sun, 25 Mar 2018 13:30:31 GMT
+recorded_with: VCR 4.0.0

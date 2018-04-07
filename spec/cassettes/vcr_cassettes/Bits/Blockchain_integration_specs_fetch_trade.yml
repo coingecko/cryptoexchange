@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bitsblockchain.net/api/v1/api/pub/trades?coin=atmc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bitsblockchain.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 22 Mar 2018 14:25:20 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d81893fd684d4bb15fe40d1e5893650381521728720; expires=Fri, 22-Mar-19
+        14:25:20 GMT; path=/; domain=.bitsblockchain.net; HttpOnly
+      Last-Modified:
+      - Thu, 22 Mar 2018 06:25:48 GMT
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3ff953b8db47179e-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        <!DOCTYPE html><html lang="en" ng-controller="BootController as boot"><head><meta charset="UTF-8"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="Content-Security-Policy" content="default-src * blob: data: gap: ; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src 'self' 'unsafe-inline' *; connect-src * ws://* wss://*;"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="keywords" ng-attr-content="{{ boot.config.html.keywords }}"><meta name="description" ng-attr-content="{{ boot.config.html.description }}"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="format-detection" content="telephone=no"><title ng-bind="title">Loading...</title><style type="text/css">.splash,.splash-maintenance{min-height:100%;left:0;top:0}.ng-hide{display:none!important}.splash{background:#fafafa;color:#bdbdbd;position:fixed;height:100%;width:100%;display:flex;display:-webkit-flex;flex-direction:column;-webkit-flex-direction:column;align-items:center;-webkit-align-items:center;justify-content:space-around;-webkit-justify-content:space-around}@keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.splash-loader{width:70px;height:70px;margin-top:60px;opacity:.3;animation:spin .5s infinite linear;display:block}.splash-img{width:80vmin;height:80vmin;background-color:transparent;background-size:contain;background-repeat:no-repeat;background-position:center;margin-top:20px}.splash .prefs{font-size:1.5em;position:absolute;bottom:0;left:0;padding:15px;color:#bdbdbd}.splash .prefs i{font-size:1em}.splash .splash-box{flex:1;-webkit-flex:1;display:flex;display:-webkit-flex;flex-direction:column;align-items:center;justify-content:center;-webkit-flex-direction:column;-webkit-align-items:center;-webkit-justify-content:center}.splash #progress{width:50vmin}.splash-maintenance{background:#fafafa;color:gray;position:fixed;height:100%;width:100%;display:flex;display:-webkit-flex;flex-direction:column;-webkit-flex-direction:column;align-items:center;-webkit-align-items:center;justify-content:center;-webkit-justify-content:center;text-align:center}.maintenance-socialmedia{display:inline-block;color:#fff;margin:20px 5px 0;background:#d02628;line-height:48px;border-radius:50%;width:50px;height:50px;text-align:center;font-size:25px}.splash-maintenance-text{text-transform:initial;color:#464646}.splash-maintenance-img{height:150px}</style><base href="/"><link rel="shortcut icon" href="imageskey/favicon?v=1" type="image/x-icon"><script type="text/javascript">if (window.sessionStorage.getItem('BASE_URL')) {
+          var baseTags = document.getElementsByTagName("base");
+          for ( var i = 0; i < baseTags.length; i++ ) {
+            var baseTag = baseTags[i];
+            baseTag.remove();
+          }
+        }
+        if (window.sessionStorage.getItem('CORDOVA_URL')) {
+          var linkTags = document.getElementsByTagName("link");
+          for ( var i = 0; i < linkTags.length; i++ ) {
+            var linkTag = linkTags[i];
+            if ( linkTag.getAttribute('rel') === 'shortcut icon' ) {
+              linkTag.remove();
+              break;
+            }
+          }
+        }</script><script type="text/javascript" src="main-44241082f7ceaf0d6669.js"></script></head><body><div ng-controller="SplashController as splash" remove-if="splash.finishedLoading"><div id="splash" ng-class="{ 'ng-hide': splash.isError() || splash.isBootFail() }" class="splash"><div class="splash-box"><img id="splash-loader" src="images/bootloader-spinner.png" class="splash-loader"></div><div class="splash-box"><div id="splash-img" class="splash-img"></div></div><div class="splash-box">&nbsp;</div></div><div ng-class="{ 'ng-hide': !splash.isError() }" class="splash-maintenance ng-hide"><img id="splash-maintenance-img" src="images/site-maintenance.svg" class="splash-maintenance-img"><div ng-bind-html="maintenanceHtml"></div></div><div id="external-verify" ng-show="isExternalVerified == false" style="display:none;" class="splash-maintenance"><img id="splash-external-img" src="images/site-maintenance.svg" class="splash-maintenance-img"><div ng-bind-html="maintenanceHtml"></div><h2 ng-show="isExternalVerified == false" class="isNotVerifiedText">Site Owner, Please contact support team</h2></div></div><app-content></app-content></body></html>
+    http_version: 
+  recorded_at: Thu, 22 Mar 2018 14:25:20 GMT
+recorded_with: VCR 4.0.0

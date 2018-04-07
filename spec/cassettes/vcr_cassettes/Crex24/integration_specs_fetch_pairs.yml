@@ -1,0 +1,759 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.crex24.com/CryptoExchangeService/BotPublic/ReturnTicker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.crex24.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 30 Mar 2018 06:47:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=deefa0fb043e6d050c49512548d52ade21522392448; expires=Sat, 30-Mar-19
+        06:47:28 GMT; path=/; domain=.crex24.com; HttpOnly; Secure
+      Cache-Control:
+      - private
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4038a0031879a2d2-HKG
+    body:
+      encoding: UTF-8
+      string: "{\r\n  \"Error\": null,\r\n  \"Tickers\": [\r\n    {\r\n      \"PairId\":
+        3,\r\n      \"PairName\": \"BTC_LTC\",\r\n      \"Last\": 0.016955030000000,\r\n
+        \     \"LowPrice\": 0.015655040000000,\r\n      \"HighPrice\": 0.017410900000000,\r\n
+        \     \"PercentChange\": 6.2438,\r\n      \"BaseVolume\": 6.5408771003976388000000000000,\r\n
+        \     \"QuoteVolume\": 403.063900140000000,\r\n      \"VolumeInBtc\": 6.5408771003976388000000000000,\r\n
+        \     \"VolumeInUsd\": 48037.055012424577501548508151\r\n    },\r\n    {\r\n
+        \     \"PairId\": 6,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"Last\":
+        0.000000384000000,\r\n      \"LowPrice\": 0.000000370000000,\r\n      \"HighPrice\":
+        0.000000395000000,\r\n      \"PercentChange\": -2.5381,\r\n      \"BaseVolume\":
+        0.1197434060000000000000000000,\r\n      \"QuoteVolume\": 315102.000000000000000,\r\n
+        \     \"VolumeInBtc\": 0.1197434060000000000000000000,\r\n      \"VolumeInUsd\":
+        891.0723896822052686100000000\r\n    },\r\n    {\r\n      \"PairId\": 9,\r\n
+        \     \"PairName\": \"BTC_DASH\",\r\n      \"Last\": 0.045524300000000,\r\n
+        \     \"LowPrice\": 0.042466900000000,\r\n      \"HighPrice\": 0.047452000000000,\r\n
+        \     \"PercentChange\": 4.1203,\r\n      \"BaseVolume\": 1.4225598298778556000000000000,\r\n
+        \     \"QuoteVolume\": 31.641600000000000,\r\n      \"VolumeInBtc\": 1.4225598298778556000000000000,\r\n
+        \     \"VolumeInUsd\": 10317.552315443901164779334655\r\n    },\r\n    {\r\n
+        \     \"PairId\": 12,\r\n      \"PairName\": \"BTC_ETH\",\r\n      \"Last\":
+        0.055426300000000,\r\n      \"LowPrice\": 0.053827600000000,\r\n      \"HighPrice\":
+        0.055776000000000,\r\n      \"PercentChange\": 1.0816,\r\n      \"BaseVolume\":
+        6.5118236133850753000000000000,\r\n      \"QuoteVolume\": 118.736419740000000,\r\n
+        \     \"VolumeInBtc\": 6.5118236133850753000000000000,\r\n      \"VolumeInUsd\":
+        47326.736200471916136640565988\r\n    },\r\n    {\r\n      \"PairId\": 15,\r\n
+        \     \"PairName\": \"BTC_ZEC\",\r\n      \"Last\": 0.026930800000000,\r\n
+        \     \"LowPrice\": 0.025964500000000,\r\n      \"HighPrice\": 0.027501730000000,\r\n
+        \     \"PercentChange\": 3.6510,\r\n      \"BaseVolume\": 1.1921231003646714000000000000,\r\n
+        \     \"QuoteVolume\": 44.312600000000000,\r\n      \"VolumeInBtc\": 1.1921231003646714000000000000,\r\n
+        \     \"VolumeInUsd\": 8358.731793066015748330974027\r\n    },\r\n    {\r\n
+        \     \"PairId\": 18,\r\n      \"PairName\": \"BTC_XMR\",\r\n      \"Last\":
+        0.024874580000000,\r\n      \"LowPrice\": 0.023927240000000,\r\n      \"HighPrice\":
+        0.024980400000000,\r\n      \"PercentChange\": 0.6534,\r\n      \"BaseVolume\":
+        2.0242198845968550000000000000,\r\n      \"QuoteVolume\": 82.439900000000000,\r\n
+        \     \"VolumeInBtc\": 2.0242198845968550000000000000,\r\n      \"VolumeInUsd\":
+        14385.336693956843814349617466\r\n    },\r\n    {\r\n      \"PairId\": 22,\r\n
+        \     \"PairName\": \"BTC_GAME\",\r\n      \"Last\": 0.000145000000000,\r\n
+        \     \"LowPrice\": 0.000145000000000,\r\n      \"HighPrice\": 0.000145000000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 19,\r\n      \"PairName\": \"BTC_XEM\",\r\n      \"Last\":
+        0.000030650000000,\r\n      \"LowPrice\": 0.000030650000000,\r\n      \"HighPrice\":
+        0.000031200000000,\r\n      \"PercentChange\": -1.7628,\r\n      \"BaseVolume\":
+        0.0003986244000000000000000000,\r\n      \"QuoteVolume\": 12.620000000000000,\r\n
+        \     \"VolumeInBtc\": 0.0003986244000000000000000000,\r\n      \"VolumeInUsd\":
+        2.9764176537480000000000000000\r\n    },\r\n    {\r\n      \"PairId\": 27,\r\n
+        \     \"PairName\": \"RUB_BTC\",\r\n      \"Last\": 392545.000000000000000,\r\n
+        \     \"LowPrice\": 360000.000000000000000,\r\n      \"HighPrice\": 458000.000000000000000,\r\n
+        \     \"PercentChange\": -12.3784,\r\n      \"BaseVolume\": 73616.563010434204600000000000,\r\n
+        \     \"QuoteVolume\": 0.166030000000000,\r\n      \"VolumeInBtc\": 0.166030000000000,\r\n
+        \     \"VolumeInUsd\": 1213.0879921944504267000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 25,\r\n      \"PairName\": \"USD_BTC\",\r\n      \"Last\":
+        7106.770000000000000,\r\n      \"LowPrice\": 6712.880000000000000,\r\n      \"HighPrice\":
+        7904.000000000000000,\r\n      \"PercentChange\": -7.7043,\r\n      \"BaseVolume\":
+        3782.8807971274704968000000000,\r\n      \"QuoteVolume\": 0.518370000000000,\r\n
+        \     \"VolumeInBtc\": 0.518370000000000,\r\n      \"VolumeInUsd\": 3782.8807971274704968000000000\r\n
+        \   },\r\n    {\r\n      \"PairId\": 29,\r\n      \"PairName\": \"EUR_BTC\",\r\n
+        \     \"Last\": 5623.730000000000000,\r\n      \"LowPrice\": 5291.580000000000000,\r\n
+        \     \"HighPrice\": 6074.890000000000000,\r\n      \"PercentChange\": -6.7848,\r\n
+        \     \"BaseVolume\": 1301.7812499534263494000000000,\r\n      \"QuoteVolume\":
+        0.217650000000000,\r\n      \"VolumeInBtc\": 0.217650000000000,\r\n      \"VolumeInUsd\":
+        1601.3573564763720000000000000\r\n    },\r\n    {\r\n      \"PairId\": 31,\r\n
+        \     \"PairName\": \"JPY_BTC\",\r\n      \"Last\": 728002.000000000000000,\r\n
+        \     \"LowPrice\": 678682.171224340000000,\r\n      \"HighPrice\": 788604.000000000000000,\r\n
+        \     \"PercentChange\": -7.2664,\r\n      \"BaseVolume\": 15289.743506830000000000000000,\r\n
+        \     \"QuoteVolume\": 0.020000000000000,\r\n      \"VolumeInBtc\": 0.020000000000000,\r\n
+        \     \"VolumeInUsd\": 142.10290000000000000000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 33,\r\n      \"PairName\": \"CNY_BTC\",\r\n      \"Last\":
+        42990.400000000000000,\r\n      \"LowPrice\": 40010.600000000000000,\r\n      \"HighPrice\":
+        46516.800000000000000,\r\n      \"PercentChange\": -7.1850,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 35,\r\n      \"PairName\": \"BTC_BCN\",\r\n
+        \     \"Last\": 0.000000320000000,\r\n      \"LowPrice\": 0.000000320000000,\r\n
+        \     \"HighPrice\": 0.000000320000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0002048300000000000000000000,\r\n      \"QuoteVolume\":
+        621.000000000000000,\r\n      \"VolumeInBtc\": 0.0002048300000000000000000000,\r\n
+        \     \"VolumeInUsd\": 1.5340728866000000000000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 37,\r\n      \"PairName\": \"BTC_DGB\",\r\n      \"Last\":
+        0.000002500000000,\r\n      \"LowPrice\": 0.000002470000000,\r\n      \"HighPrice\":
+        0.000002650000000,\r\n      \"PercentChange\": -2.7237,\r\n      \"BaseVolume\":
+        0.00893918000000000000000,\r\n      \"QuoteVolume\": 3396.00000000,\r\n      \"VolumeInBtc\":
+        0.00893918000000000000000,\r\n      \"VolumeInUsd\": 65.241175599740257500000000000\r\n
+        \   },\r\n    {\r\n      \"PairId\": 41,\r\n      \"PairName\": \"BTC_ETC\",\r\n
+        \     \"Last\": 0.002048380000000,\r\n      \"LowPrice\": 0.001969510000000,\r\n
+        \     \"HighPrice\": 0.002119200000000,\r\n      \"PercentChange\": 4.0045,\r\n
+        \     \"BaseVolume\": 0.1863308365881217000000000000,\r\n      \"QuoteVolume\":
+        87.680000000000000,\r\n      \"VolumeInBtc\": 0.1863308365881217000000000000,\r\n
+        \     \"VolumeInUsd\": 1296.6987250212884800598940000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 39,\r\n      \"PairName\": \"BTC_BCH\",\r\n      \"Last\":
+        0.105278000000000,\r\n      \"LowPrice\": 0.098206200000000,\r\n      \"HighPrice\":
+        0.107539000000000,\r\n      \"PercentChange\": -0.1603,\r\n      \"BaseVolume\":
+        4.3665827109658212000000000000,\r\n      \"QuoteVolume\": 42.643989520000000,\r\n
+        \     \"VolumeInBtc\": 4.3665827109658212000000000000,\r\n      \"VolumeInUsd\":
+        32543.217329706661106256101692\r\n    },\r\n    {\r\n      \"PairId\": 49,\r\n
+        \     \"PairName\": \"BTC_BTS\",\r\n      \"Last\": 0.000017240000000,\r\n
+        \     \"LowPrice\": 0.000016010000000,\r\n      \"HighPrice\": 0.000017990000000,\r\n
+        \     \"PercentChange\": 7.6827,\r\n      \"BaseVolume\": 0.0034191000000000000000000000,\r\n
+        \     \"QuoteVolume\": 190.000000000000000,\r\n      \"VolumeInBtc\": 0.0034191000000000000000000000,\r\n
+        \     \"VolumeInUsd\": 24.434399988000000000000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 50,\r\n      \"PairName\": \"BTC_XGOX\",\r\n      \"Last\":
+        0.000000110000000,\r\n      \"LowPrice\": 0.000000110000000,\r\n      \"HighPrice\":
+        0.000000110000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 52,\r\n      \"PairName\": \"BTC_BTG\",\r\n
+        \     \"Last\": 0.006397970000000,\r\n      \"LowPrice\": 0.006225410000000,\r\n
+        \     \"HighPrice\": 0.006543050000000,\r\n      \"PercentChange\": -1.7601,\r\n
+        \     \"BaseVolume\": 0.0868927293365695000000000000,\r\n      \"QuoteVolume\":
+        13.677263850000000,\r\n      \"VolumeInBtc\": 0.0868927293365695000000000000,\r\n
+        \     \"VolumeInUsd\": 641.31842200704284198056015300\r\n    },\r\n    {\r\n
+        \     \"PairId\": 61,\r\n      \"PairName\": \"EUR_DGB\",\r\n      \"Last\":
+        0.020000000000000,\r\n      \"LowPrice\": 0.020000000000000,\r\n      \"HighPrice\":
+        0.020000000000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 64,\r\n      \"PairName\": \"USD_XGOX\",\r\n
+        \     \"Last\": 0.000040000000000,\r\n      \"LowPrice\": 0.000030000000000,\r\n
+        \     \"HighPrice\": 0.000650000000000,\r\n      \"PercentChange\": -93.8462,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        67,\r\n      \"PairName\": \"BTC_MDC\",\r\n      \"Last\": 0.000001000000000,\r\n
+        \     \"LowPrice\": 0.000001000000000,\r\n      \"HighPrice\": 0.000001000000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 70,\r\n      \"PairName\": \"BTC_ARTX\",\r\n      \"Last\":
+        0.000029880000000,\r\n      \"LowPrice\": 0.000029880000000,\r\n      \"HighPrice\":
+        0.000029880000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 76,\r\n      \"PairName\": \"BTC_JOY\",\r\n
+        \     \"Last\": 0.000000500000000,\r\n      \"LowPrice\": 0.000000500000000,\r\n
+        \     \"HighPrice\": 0.000000500000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        82,\r\n      \"PairName\": \"BTC_STAK\",\r\n      \"Last\": 0.000040140000000,\r\n
+        \     \"LowPrice\": 0.000040140000000,\r\n      \"HighPrice\": 0.000040140000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 85,\r\n      \"PairName\": \"USD_STAK\",\r\n      \"Last\":
+        0.006000000000000,\r\n      \"LowPrice\": 0.006000000000000,\r\n      \"HighPrice\":
+        0.006000000000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 88,\r\n      \"PairName\": \"USD_TLC\",\r\n
+        \     \"Last\": 0.343000000000000,\r\n      \"LowPrice\": 0.343000000000000,\r\n
+        \     \"HighPrice\": 0.343000000000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 246.20000000000000000000000000,\r\n      \"QuoteVolume\":
+        994.300000000000000,\r\n      \"VolumeInBtc\": 0.0256529400000000000000000000,\r\n
+        \     \"VolumeInUsd\": 246.20000000000000000000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 91,\r\n      \"PairName\": \"BTC_HWC\",\r\n      \"Last\":
+        0.000756000000000,\r\n      \"LowPrice\": 0.000756000000000,\r\n      \"HighPrice\":
+        0.000756000000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 94,\r\n      \"PairName\": \"BTC_UNI\",\r\n
+        \     \"Last\": 0.000009800000000,\r\n      \"LowPrice\": 0.000009800000000,\r\n
+        \     \"HighPrice\": 0.000009800000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        100,\r\n      \"PairName\": \"BTC_HIGHT\",\r\n      \"Last\": 0.000002500000000,\r\n
+        \     \"LowPrice\": 0.000002500000000,\r\n      \"HighPrice\": 0.000002500000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.00013880000000000000000,\r\n
+        \     \"QuoteVolume\": 34.70000000,\r\n      \"VolumeInBtc\": 0.00013880000000000000000,\r\n
+        \     \"VolumeInUsd\": 1.0080433280000000000000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 109,\r\n      \"PairName\": \"BTC_YTN\",\r\n      \"Last\":
+        0.000004080000000,\r\n      \"LowPrice\": 0.000003670000000,\r\n      \"HighPrice\":
+        0.000004160000000,\r\n      \"PercentChange\": 4.0816,\r\n      \"BaseVolume\":
+        0.0125303069000000000000000000,\r\n      \"QuoteVolume\": 3249.610000000000000,\r\n
+        \     \"VolumeInBtc\": 0.0125303069000000000000000000,\r\n      \"VolumeInUsd\":
+        93.42513311029726727200000000\r\n    },\r\n    {\r\n      \"PairId\": 115,\r\n
+        \     \"PairName\": \"BTC_XTL\",\r\n      \"Last\": 0.000000030000000,\r\n
+        \     \"LowPrice\": 0.000000030000000,\r\n      \"HighPrice\": 0.000000040000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0585221100000000000000000000,\r\n
+        \     \"QuoteVolume\": 1548832.000000000000000,\r\n      \"VolumeInBtc\":
+        0.0585221100000000000000000000,\r\n      \"VolumeInUsd\": 442.87171382667776030000000000\r\n
+        \   },\r\n    {\r\n      \"PairId\": 243,\r\n      \"PairName\": \"BTC_TLR\",\r\n
+        \     \"Last\": 0.000012510000000,\r\n      \"LowPrice\": 0.000012500000000,\r\n
+        \     \"HighPrice\": 0.000019000000000,\r\n      \"PercentChange\": -13.4256,\r\n
+        \     \"BaseVolume\": 0.0244158700000000000000000000,\r\n      \"QuoteVolume\":
+        1470.000000000000000,\r\n      \"VolumeInBtc\": 0.0244158700000000000000000000,\r\n
+        \     \"VolumeInUsd\": 185.75726405578143410000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 280,\r\n      \"PairName\": \"BTC_CRP\",\r\n      \"Last\":
+        0.000001800000000,\r\n      \"LowPrice\": 0.000001790000000,\r\n      \"HighPrice\":
+        0.000001870000000,\r\n      \"PercentChange\": -1.0989,\r\n      \"BaseVolume\":
+        0.1148554100000000000000000000,\r\n      \"QuoteVolume\": 63440.000000000000000,\r\n
+        \     \"VolumeInBtc\": 0.1148554100000000000000000000,\r\n      \"VolumeInUsd\":
+        817.9283344844725219000000000\r\n    },\r\n    {\r\n      \"PairId\": 283,\r\n
+        \     \"PairName\": \"BTC_NXB\",\r\n      \"Last\": 0.000000030000000,\r\n
+        \     \"LowPrice\": 0.000000020000000,\r\n      \"HighPrice\": 0.000000030000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0242760800000000000000000000,\r\n
+        \     \"QuoteVolume\": 813536.000000000000000,\r\n      \"VolumeInBtc\": 0.0242760800000000000000000000,\r\n
+        \     \"VolumeInUsd\": 177.69586282073580620000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 208,\r\n      \"PairName\": \"BTC_NBR\",\r\n      \"Last\":
+        0.000000560000000,\r\n      \"LowPrice\": 0.000000510000000,\r\n      \"HighPrice\":
+        0.000000590000000,\r\n      \"PercentChange\": 9.8039,\r\n      \"BaseVolume\":
+        0.2898125200000000000000000000,\r\n      \"QuoteVolume\": 513106.000000000000000,\r\n
+        \     \"VolumeInBtc\": 0.2898125200000000000000000000,\r\n      \"VolumeInUsd\":
+        2123.8013694797458947000000000\r\n    },\r\n    {\r\n      \"PairId\": 315,\r\n
+        \     \"PairName\": \"BTC_BTE\",\r\n      \"Last\": 0.000000020000000,\r\n
+        \     \"LowPrice\": 0.000000010000000,\r\n      \"HighPrice\": 0.000000020000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.02458321000000000000000,\r\n
+        \     \"QuoteVolume\": 1251211.00000000,\r\n      \"VolumeInBtc\": 0.02458321000000000000000,\r\n
+        \     \"VolumeInUsd\": 176.81552484198821880000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 248,\r\n      \"PairName\": \"BTC_IPBC\",\r\n      \"Last\":
+        0.000028500000000,\r\n      \"LowPrice\": 0.000025000000000,\r\n      \"HighPrice\":
+        0.000029980000000,\r\n      \"PercentChange\": 5.4384,\r\n      \"BaseVolume\":
+        0.0156670300000000000000000000,\r\n      \"QuoteVolume\": 580.000000000000000,\r\n
+        \     \"VolumeInBtc\": 0.0156670300000000000000000000,\r\n      \"VolumeInUsd\":
+        118.86386315052332600000000000\r\n    },\r\n    {\r\n      \"PairId\": 299,\r\n
+        \     \"PairName\": \"BTC_ELI\",\r\n      \"Last\": 0.000002550000000,\r\n
+        \     \"LowPrice\": 0.000002000000000,\r\n      \"HighPrice\": 0.000003410000000,\r\n
+        \     \"PercentChange\": -25.2199,\r\n      \"BaseVolume\": 0.0028052600000000000000000000,\r\n
+        \     \"QuoteVolume\": 1200.000000000000000,\r\n      \"VolumeInBtc\": 0.0028052600000000000000000000,\r\n
+        \     \"VolumeInUsd\": 19.984072598767868800000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 103,\r\n      \"PairName\": \"BTC_FNO\",\r\n      \"Last\":
+        0.000002800000000,\r\n      \"LowPrice\": 0.000002510000000,\r\n      \"HighPrice\":
+        0.000002800000000,\r\n      \"PercentChange\": 11.5538,\r\n      \"BaseVolume\":
+        0.0029840932000000000000000000,\r\n      \"QuoteVolume\": 1161.750000000000000,\r\n
+        \     \"VolumeInBtc\": 0.0029840932000000000000000000,\r\n      \"VolumeInUsd\":
+        22.612165801560000000000000000\r\n    },\r\n    {\r\n      \"PairId\": 249,\r\n
+        \     \"PairName\": \"BTC_ZZC\",\r\n      \"Last\": 0.000038000000000,\r\n
+        \     \"LowPrice\": 0.000022010000000,\r\n      \"HighPrice\": 0.000045500000000,\r\n
+        \     \"PercentChange\": 72.6488,\r\n      \"BaseVolume\": 0.2832998200000000000000000000,\r\n
+        \     \"QuoteVolume\": 7712.000000000000000,\r\n      \"VolumeInBtc\": 0.2832998200000000000000000000,\r\n
+        \     \"VolumeInUsd\": 0.00000000\r\n    },\r\n    {\r\n      \"PairId\":
+        277,\r\n      \"PairName\": \"BTC_BOST\",\r\n      \"Last\": 0.000001800000000,\r\n
+        \     \"LowPrice\": 0.000001120000000,\r\n      \"HighPrice\": 0.000002590000000,\r\n
+        \     \"PercentChange\": 60.7143,\r\n      \"BaseVolume\": 0.1161146200000000000000000000,\r\n
+        \     \"QuoteVolume\": 47595.000000000000000,\r\n      \"VolumeInBtc\": 0.1161146200000000000000000000,\r\n
+        \     \"VolumeInUsd\": 882.3722922130000000000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 296,\r\n      \"PairName\": \"BTC_MK\",\r\n      \"Last\":
+        0.000000020000000,\r\n      \"LowPrice\": 0.000000010000000,\r\n      \"HighPrice\":
+        0.000000020000000,\r\n      \"PercentChange\": 100.0,\r\n      \"BaseVolume\":
+        0.00073762000000000000000,\r\n      \"QuoteVolume\": 38381.00000000,\r\n      \"VolumeInBtc\":
+        0.00073762000000000000000,\r\n      \"VolumeInUsd\": 5.5699004876000000000000000000\r\n
+        \   },\r\n    {\r\n      \"PairId\": 293,\r\n      \"PairName\": \"BTC_FTOKEN\",\r\n
+        \     \"Last\": 0.000000700000000,\r\n      \"LowPrice\": 0.000000510000000,\r\n
+        \     \"HighPrice\": 0.000000770000000,\r\n      \"PercentChange\": -9.0909,\r\n
+        \     \"BaseVolume\": 0.2897298300000000000000000000,\r\n      \"QuoteVolume\":
+        426680.000000000000000,\r\n      \"VolumeInBtc\": 0.2897298300000000000000000000,\r\n
+        \     \"VolumeInUsd\": 2201.1946628726825064000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 244,\r\n      \"PairName\": \"BTC_BBS\",\r\n      \"Last\":
+        0.000000001000000,\r\n      \"LowPrice\": 0.000000001000000,\r\n      \"HighPrice\":
+        0.000000001000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.00003376000000000000000,\r\n      \"QuoteVolume\": 33760.00000000,\r\n      \"VolumeInBtc\":
+        0.00003376000000000000000,\r\n      \"VolumeInUsd\": 0.2343020373000000000000000000\r\n
+        \   },\r\n    {\r\n      \"PairId\": 133,\r\n      \"PairName\": \"BTC_CNTF\",\r\n
+        \     \"Last\": 0.000002000000000,\r\n      \"LowPrice\": 0.000000350000000,\r\n
+        \     \"HighPrice\": 0.000022000000000,\r\n      \"PercentChange\": 471.4286,\r\n
+        \     \"BaseVolume\": 0.0351724089688470000000000000,\r\n      \"QuoteVolume\":
+        2921.821545520000000,\r\n      \"VolumeInBtc\": 0.0351724089688470000000000000,\r\n
+        \     \"VolumeInUsd\": 264.22857035590349259712094400\r\n    },\r\n    {\r\n
+        \     \"PairId\": 184,\r\n      \"PairName\": \"BTC_SLD\",\r\n      \"Last\":
+        0.000005000000000,\r\n      \"LowPrice\": 0.000005000000000,\r\n      \"HighPrice\":
+        0.000005350000000,\r\n      \"PercentChange\": -6.5421,\r\n      \"BaseVolume\":
+        0.00383045700000000000000,\r\n      \"QuoteVolume\": 724.02000000,\r\n      \"VolumeInBtc\":
+        0.00383045700000000000000,\r\n      \"VolumeInUsd\": 28.707412080042250000000000000\r\n
+        \   },\r\n    {\r\n      \"PairId\": 297,\r\n      \"PairName\": \"BTC_BZK\",\r\n
+        \     \"Last\": 0.000000370000000,\r\n      \"LowPrice\": 0.000000370000000,\r\n
+        \     \"HighPrice\": 0.000001400000000,\r\n      \"PercentChange\": -68.1034,\r\n
+        \     \"BaseVolume\": 0.0133351600000000000000000000,\r\n      \"QuoteVolume\":
+        12938.000000000000000,\r\n      \"VolumeInBtc\": 0.0133351600000000000000000000,\r\n
+        \     \"VolumeInUsd\": 98.40690528519104400000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 245,\r\n      \"PairName\": \"BTC_CREP\",\r\n      \"Last\":
+        0.000000620000000,\r\n      \"LowPrice\": 0.000000600000000,\r\n      \"HighPrice\":
+        0.000000890000000,\r\n      \"PercentChange\": -21.5190,\r\n      \"BaseVolume\":
+        0.0031127000000000000000000000,\r\n      \"QuoteVolume\": 3798.000000000000000,\r\n
+        \     \"VolumeInBtc\": 0.0031127000000000000000000000,\r\n      \"VolumeInUsd\":
+        23.589654558519180000000000000\r\n    },\r\n    {\r\n      \"PairId\": 190,\r\n
+        \     \"PairName\": \"BTC_KRB\",\r\n      \"Last\": 0.000065000000000,\r\n
+        \     \"LowPrice\": 0.000065000000000,\r\n      \"HighPrice\": 0.000074990000000,\r\n
+        \     \"PercentChange\": -13.3218,\r\n      \"BaseVolume\": 0.0007275204980000000000000000,\r\n
+        \     \"QuoteVolume\": 9.740200000000000,\r\n      \"VolumeInBtc\": 0.0007275204980000000000000000,\r\n
+        \     \"VolumeInUsd\": 5.5272707848000000000000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 300,\r\n      \"PairName\": \"BTC_PROUD\",\r\n      \"Last\":
+        0.000005000000000,\r\n      \"LowPrice\": 0.000005000000000,\r\n      \"HighPrice\":
+        0.000005000000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0013700000000000000000000000,\r\n      \"QuoteVolume\": 274.000000000000000,\r\n
+        \     \"VolumeInBtc\": 0.0013700000000000000000000000,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 311,\r\n      \"PairName\": \"BTC_URALS\",\r\n
+        \     \"Last\": 0.000001980000000,\r\n      \"LowPrice\": 0.000001980000000,\r\n
+        \     \"HighPrice\": 0.000002000000000,\r\n      \"PercentChange\": -1.0,\r\n
+        \     \"BaseVolume\": 0.0010098000000000000000000000,\r\n      \"QuoteVolume\":
+        510.000000000000000,\r\n      \"VolumeInBtc\": 0.0010098000000000000000000000,\r\n
+        \     \"VolumeInUsd\": 12.342000000000000000000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 312,\r\n      \"PairName\": \"RUB_URALS\",\r\n      \"Last\":
+        0.500000000000000,\r\n      \"LowPrice\": 0.500000000000000,\r\n      \"HighPrice\":
+        9.480000000000000,\r\n      \"PercentChange\": -94.7257,\r\n      \"BaseVolume\":
+        50.00000000000000000000000,\r\n      \"QuoteVolume\": 100.00000000,\r\n      \"VolumeInBtc\":
+        0.00019800000000000000000,\r\n      \"VolumeInUsd\": 2.42000000000000000000000\r\n
+        \   },\r\n    {\r\n      \"PairId\": 181,\r\n      \"PairName\": \"BTC_NCN\",\r\n
+        \     \"Last\": 0.000000330000000,\r\n      \"LowPrice\": 0.000000120000000,\r\n
+        \     \"HighPrice\": 0.000000330000000,\r\n      \"PercentChange\": 13.7931,\r\n
+        \     \"BaseVolume\": 0.00136152380000000000000,\r\n      \"QuoteVolume\":
+        10585.09000000,\r\n      \"VolumeInBtc\": 0.00136152380000000000000,\r\n      \"VolumeInUsd\":
+        10.086990040076000000000000000\r\n    },\r\n    {\r\n      \"PairId\": 232,\r\n
+        \     \"PairName\": \"BTC_SAKE\",\r\n      \"Last\": 0.000000040000000,\r\n
+        \     \"LowPrice\": 0.000000040000000,\r\n      \"HighPrice\": 0.000000090000000,\r\n
+        \     \"PercentChange\": -55.5556,\r\n      \"BaseVolume\": 0.00003996000000000000000,\r\n
+        \     \"QuoteVolume\": 999.00000000,\r\n      \"VolumeInBtc\": 0.00003996000000000000000,\r\n
+        \     \"VolumeInUsd\": 0.2964436596000000000000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 284,\r\n      \"PairName\": \"BTC_XP\",\r\n      \"Last\":
+        0.000000030000000,\r\n      \"LowPrice\": 0.000000020000000,\r\n      \"HighPrice\":
+        0.000000030000000,\r\n      \"PercentChange\": 50.0,\r\n      \"BaseVolume\":
+        0.00010322000000000000000,\r\n      \"QuoteVolume\": 4514.00000000,\r\n      \"VolumeInBtc\":
+        0.00010322000000000000000,\r\n      \"VolumeInUsd\": 0.7671637482000000000000000000\r\n
+        \   },\r\n    {\r\n      \"PairId\": 205,\r\n      \"PairName\": \"BTC_NYC\",\r\n
+        \     \"Last\": 0.000000020000000,\r\n      \"LowPrice\": 0.000000010000000,\r\n
+        \     \"HighPrice\": 0.000000020000000,\r\n      \"PercentChange\": 100.0,\r\n
+        \     \"BaseVolume\": 0.00331289000000000000000,\r\n      \"QuoteVolume\":
+        330981.00000000,\r\n      \"VolumeInBtc\": 0.00331289000000000000000,\r\n
+        \     \"VolumeInUsd\": 24.561471786383626000000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 241,\r\n      \"PairName\": \"BTC_WGR\",\r\n      \"Last\":
+        0.000016500000000,\r\n      \"LowPrice\": 0.000016000000000,\r\n      \"HighPrice\":
+        0.000017010000000,\r\n      \"PercentChange\": 3.125,\r\n      \"BaseVolume\":
+        0.1875896100000000000000000000,\r\n      \"QuoteVolume\": 11277.000000000000000,\r\n
+        \     \"VolumeInBtc\": 0.1875896100000000000000000000,\r\n      \"VolumeInUsd\":
+        1391.3674584099000000000000000\r\n    },\r\n    {\r\n      \"PairId\": 298,\r\n
+        \     \"PairName\": \"BTC_BTCZ\",\r\n      \"Last\": 0.000000370000000,\r\n
+        \     \"LowPrice\": 0.000000350000000,\r\n      \"HighPrice\": 0.000000400000000,\r\n
+        \     \"PercentChange\": -7.5,\r\n      \"BaseVolume\": 0.0002922300000000000000000000,\r\n
+        \     \"QuoteVolume\": 799.000000000000000,\r\n      \"VolumeInBtc\": 0.0002922300000000000000000000,\r\n
+        \     \"VolumeInUsd\": 2.1548044492921698000000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 285,\r\n      \"PairName\": \"BTC_MIC3\",\r\n      \"Last\":
+        0.000000000100000,\r\n      \"LowPrice\": 0.000000000100000,\r\n      \"HighPrice\":
+        0.000000000100000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.00017155000000000000000,\r\n      \"QuoteVolume\": 1715500.00000000,\r\n
+        \     \"VolumeInBtc\": 0.00017155000000000000000,\r\n      \"VolumeInUsd\":
+        171.55000000000000000000000\r\n    },\r\n    {\r\n      \"PairId\": 73,\r\n
+        \     \"PairName\": \"BTC_XGOD\",\r\n      \"Last\": 0.000000030000000,\r\n
+        \     \"LowPrice\": 0.000000030000000,\r\n      \"HighPrice\": 0.000000030000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.00000135000000000000000,\r\n
+        \     \"QuoteVolume\": 45.00000000,\r\n      \"VolumeInBtc\": 0.00000135000000000000000,\r\n
+        \     \"VolumeInUsd\": 0.0101372715000000000000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 254,\r\n      \"PairName\": \"BTC_TNR\",\r\n      \"Last\":
+        0.000295000000000,\r\n      \"LowPrice\": 0.000295000000000,\r\n      \"HighPrice\":
+        0.000295000000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.00649000000000000000000,\r\n      \"QuoteVolume\": 22.00000000,\r\n      \"VolumeInBtc\":
+        0.00649000000000000000000,\r\n      \"VolumeInUsd\": 48.354638850000000000000000000\r\n
+        \   },\r\n    {\r\n      \"PairId\": 229,\r\n      \"PairName\": \"BTC_TTC\",\r\n
+        \     \"Last\": 0.000000030000000,\r\n      \"LowPrice\": 0.000000030000000,\r\n
+        \     \"HighPrice\": 0.000000030000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0000149100000000000000000000,\r\n      \"QuoteVolume\":
+        497.000000000000000,\r\n      \"VolumeInBtc\": 0.0000149100000000000000000000,\r\n
+        \     \"VolumeInUsd\": 0.1074228656537148000000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 316,\r\n      \"PairName\": \"BTC_DMB\",\r\n      \"Last\":
+        0.000000660000000,\r\n      \"LowPrice\": 0.000000650000000,\r\n      \"HighPrice\":
+        0.000000660000000,\r\n      \"PercentChange\": 1.5385,\r\n      \"BaseVolume\":
+        0.00038710000000000000000,\r\n      \"QuoteVolume\": 594.00000000,\r\n      \"VolumeInBtc\":
+        0.00038710000000000000000,\r\n      \"VolumeInUsd\": 2.6270528016987800000000000000\r\n
+        \   },\r\n    {\r\n      \"PairId\": 238,\r\n      \"PairName\": \"BTC_PUT\",\r\n
+        \     \"Last\": 0.000000800000000,\r\n      \"LowPrice\": 0.000000800000000,\r\n
+        \     \"HighPrice\": 0.000001800000000,\r\n      \"PercentChange\": -55.5556,\r\n
+        \     \"BaseVolume\": 0.0018660000000000000000000000,\r\n      \"QuoteVolume\":
+        2292.000000000000000,\r\n      \"VolumeInBtc\": 0.0018660000000000000000000000,\r\n
+        \     \"VolumeInUsd\": 12.875847840000000000000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 97,\r\n      \"PairName\": \"BTC_NEET\",\r\n      \"Last\":
+        0.000025000000000,\r\n      \"LowPrice\": 0.000025000000000,\r\n      \"HighPrice\":
+        0.000025000000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 106,\r\n      \"PairName\": \"BTC_TLC\",\r\n
+        \     \"Last\": 0.000025800000000,\r\n      \"LowPrice\": 0.000025800000000,\r\n
+        \     \"HighPrice\": 0.000025800000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        112,\r\n      \"PairName\": \"BTC_BPESO\",\r\n      \"Last\": 0.000000070000000,\r\n
+        \     \"LowPrice\": 0.000000070000000,\r\n      \"HighPrice\": 0.000000070000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 118,\r\n      \"PairName\": \"BTC_INN\",\r\n      \"Last\":
+        0.000040000000000,\r\n      \"LowPrice\": 0.000040000000000,\r\n      \"HighPrice\":
+        0.000040000000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 121,\r\n      \"PairName\": \"BTC_DCASH\",\r\n
+        \     \"Last\": 0.000000260000000,\r\n      \"LowPrice\": 0.000000260000000,\r\n
+        \     \"HighPrice\": 0.000000260000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        124,\r\n      \"PairName\": \"BTC_MOUSE\",\r\n      \"Last\": 0.000001420000000,\r\n
+        \     \"LowPrice\": 0.000001420000000,\r\n      \"HighPrice\": 0.000001420000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 127,\r\n      \"PairName\": \"BTC_MAG\",\r\n      \"Last\":
+        0.000022000000000,\r\n      \"LowPrice\": 0.000022000000000,\r\n      \"HighPrice\":
+        0.000022000000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 130,\r\n      \"PairName\": \"USD_MAG\",\r\n
+        \     \"Last\": 0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 136,\r\n      \"PairName\": \"EUR_CNTF\",\r\n      \"Last\":
+        0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\":
+        0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        139,\r\n      \"PairName\": \"BTC_OMEGA\",\r\n      \"Last\": 0.000005500000000,\r\n
+        \     \"LowPrice\": 0.000005500000000,\r\n      \"HighPrice\": 0.000005500000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 142,\r\n      \"PairName\": \"BTC_RLD\",\r\n      \"Last\":
+        0.000005000000000,\r\n      \"LowPrice\": 0.000005000000000,\r\n      \"HighPrice\":
+        0.000005000000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 145,\r\n      \"PairName\": \"BTC_BTX\",\r\n
+        \     \"Last\": 0.000100000000000,\r\n      \"LowPrice\": 0.000100000000000,\r\n
+        \     \"HighPrice\": 0.000100000000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        148,\r\n      \"PairName\": \"EUR_BTX\",\r\n      \"Last\": 10.000000000000000,\r\n
+        \     \"LowPrice\": 10.000000000000000,\r\n      \"HighPrice\": 10.000000000000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 151,\r\n      \"PairName\": \"BTC_BTDX\",\r\n      \"Last\":
+        0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\":
+        0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        154,\r\n      \"PairName\": \"EUR_BTDX\",\r\n      \"Last\": 0.0,\r\n      \"LowPrice\":
+        0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 157,\r\n      \"PairName\": \"BTC_BSD\",\r\n
+        \     \"Last\": 0.000030020000000,\r\n      \"LowPrice\": 0.000030020000000,\r\n
+        \     \"HighPrice\": 0.000030020000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        160,\r\n      \"PairName\": \"EUR_BSD\",\r\n      \"Last\": 0.0,\r\n      \"LowPrice\":
+        0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 163,\r\n      \"PairName\": \"BTC_ERC\",\r\n
+        \     \"Last\": 0.000064300000000,\r\n      \"LowPrice\": 0.000064300000000,\r\n
+        \     \"HighPrice\": 0.000064300000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        166,\r\n      \"PairName\": \"EUR_ERC\",\r\n      \"Last\": 0.0,\r\n      \"LowPrice\":
+        0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 169,\r\n      \"PairName\": \"BTC_DMD\",\r\n
+        \     \"Last\": 0.000110020000000,\r\n      \"LowPrice\": 0.000110020000000,\r\n
+        \     \"HighPrice\": 0.000110020000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        172,\r\n      \"PairName\": \"EUR_DMD\",\r\n      \"Last\": 0.0,\r\n      \"LowPrice\":
+        0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 175,\r\n      \"PairName\": \"BTC_MEC\",\r\n
+        \     \"Last\": 0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 178,\r\n      \"PairName\": \"EUR_MEC\",\r\n      \"Last\":
+        0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\":
+        0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        187,\r\n      \"PairName\": \"BTC_NIHL\",\r\n      \"Last\": 0.0,\r\n      \"LowPrice\":
+        0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 193,\r\n      \"PairName\": \"BTC_SWIPP\",\r\n
+        \     \"Last\": 0.000005250000000,\r\n      \"LowPrice\": 0.000005250000000,\r\n
+        \     \"HighPrice\": 0.000005250000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        196,\r\n      \"PairName\": \"BTC_PRE\",\r\n      \"Last\": 0.000000020000000,\r\n
+        \     \"LowPrice\": 0.000000020000000,\r\n      \"HighPrice\": 0.000000020000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 199,\r\n      \"PairName\": \"BTC_FUTR\",\r\n      \"Last\":
+        0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\":
+        0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        202,\r\n      \"PairName\": \"BTC_BXC\",\r\n      \"Last\": 0.000000500000000,\r\n
+        \     \"LowPrice\": 0.000000500000000,\r\n      \"HighPrice\": 0.000000500000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 211,\r\n      \"PairName\": \"BTC_BUZZ\",\r\n      \"Last\":
+        0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\":
+        0.0,\r\n      \"BaseVolume\": 0.0023530000000000000000000000,\r\n      \"QuoteVolume\":
+        117650.000000000000000,\r\n      \"VolumeInBtc\": 0.0023530000000000000000000000,\r\n
+        \     \"VolumeInUsd\": 17.665665160000000000000000000\r\n    },\r\n    {\r\n
+        \     \"PairId\": 217,\r\n      \"PairName\": \"BTC_ZER\",\r\n      \"Last\":
+        0.000149850000000,\r\n      \"LowPrice\": 0.000149850000000,\r\n      \"HighPrice\":
+        0.000149850000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 220,\r\n      \"PairName\": \"USD_ZER\",\r\n
+        \     \"Last\": 1.490000000000000,\r\n      \"LowPrice\": 1.490000000000000,\r\n
+        \     \"HighPrice\": 1.490000000000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        223,\r\n      \"PairName\": \"BTC_STEEP\",\r\n      \"Last\": 0.000000150000000,\r\n
+        \     \"LowPrice\": 0.000000150000000,\r\n      \"HighPrice\": 0.000000150000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 226,\r\n      \"PairName\": \"BTC_UCH\",\r\n      \"Last\":
+        0.000010000000000,\r\n      \"LowPrice\": 0.000010000000000,\r\n      \"HighPrice\":
+        0.000010000000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 235,\r\n      \"PairName\": \"BTC_FUTX\",\r\n
+        \     \"Last\": 0.000300000000000,\r\n      \"LowPrice\": 0.000300000000000,\r\n
+        \     \"HighPrice\": 0.000300000000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        242,\r\n      \"PairName\": \"BTC_DCBL\",\r\n      \"Last\": 0.0,\r\n      \"LowPrice\":
+        0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 246,\r\n      \"PairName\": \"BTC_LIZ\",\r\n
+        \     \"Last\": 0.000075230000000,\r\n      \"LowPrice\": 0.000075230000000,\r\n
+        \     \"HighPrice\": 0.000075230000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        247,\r\n      \"PairName\": \"USD_LIZ\",\r\n      \"Last\": 0.0,\r\n      \"LowPrice\":
+        0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 250,\r\n      \"PairName\": \"USD_ZZC\",\r\n
+        \     \"Last\": 0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 251,\r\n      \"PairName\": \"BTC_DRT\",\r\n      \"Last\":
+        0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\":
+        0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        252,\r\n      \"PairName\": \"BTC_WILD\",\r\n      \"Last\": 0.0,\r\n      \"LowPrice\":
+        0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 253,\r\n      \"PairName\": \"ETH_WILD\",\r\n
+        \     \"Last\": 0.000250000000000,\r\n      \"LowPrice\": 0.000250000000000,\r\n
+        \     \"HighPrice\": 0.000250000000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        255,\r\n      \"PairName\": \"BTC_DRM\",\r\n      \"Last\": 0.000002000000000,\r\n
+        \     \"LowPrice\": 0.000002000000000,\r\n      \"HighPrice\": 0.000002000000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 256,\r\n      \"PairName\": \"BTC_SXUT\",\r\n      \"Last\":
+        0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\":
+        0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        257,\r\n      \"PairName\": \"BTC_SXDT\",\r\n      \"Last\": 0.000053120000000,\r\n
+        \     \"LowPrice\": 0.000053120000000,\r\n      \"HighPrice\": 0.000053120000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 258,\r\n      \"PairName\": \"BTC_XEF\",\r\n      \"Last\":
+        0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\":
+        0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        259,\r\n      \"PairName\": \"BTC_BBT\",\r\n      \"Last\": 0.000020230000000,\r\n
+        \     \"LowPrice\": 0.000020230000000,\r\n      \"HighPrice\": 0.000020230000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 260,\r\n      \"PairName\": \"BTC_BZL\",\r\n      \"Last\":
+        0.000014200000000,\r\n      \"LowPrice\": 0.000014200000000,\r\n      \"HighPrice\":
+        0.000014200000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 261,\r\n      \"PairName\": \"BTC_MXT\",\r\n
+        \     \"Last\": 0.000155230000000,\r\n      \"LowPrice\": 0.000155230000000,\r\n
+        \     \"HighPrice\": 0.000155230000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        262,\r\n      \"PairName\": \"BTC_ICH\",\r\n      \"Last\": 0.000003990000000,\r\n
+        \     \"LowPrice\": 0.000003990000000,\r\n      \"HighPrice\": 0.000003990000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 263,\r\n      \"PairName\": \"BTC_PIPL\",\r\n      \"Last\":
+        0.000056390000000,\r\n      \"LowPrice\": 0.000056390000000,\r\n      \"HighPrice\":
+        0.000056390000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 264,\r\n      \"PairName\": \"BTC_SCS\",\r\n
+        \     \"Last\": 0.000399990000000,\r\n      \"LowPrice\": 0.000399990000000,\r\n
+        \     \"HighPrice\": 0.000399990000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        265,\r\n      \"PairName\": \"BTC_XTM\",\r\n      \"Last\": 0.000180000000000,\r\n
+        \     \"LowPrice\": 0.000180000000000,\r\n      \"HighPrice\": 0.000180000000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 266,\r\n      \"PairName\": \"USD_DRM\",\r\n      \"Last\":
+        0.014000000000000,\r\n      \"LowPrice\": 0.014000000000000,\r\n      \"HighPrice\":
+        0.014000000000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 267,\r\n      \"PairName\": \"BTC_VSL\",\r\n
+        \     \"Last\": 0.000013500000000,\r\n      \"LowPrice\": 0.000013500000000,\r\n
+        \     \"HighPrice\": 0.000013500000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        268,\r\n      \"PairName\": \"BTC_VOT\",\r\n      \"Last\": 0.000001000000000,\r\n
+        \     \"LowPrice\": 0.000001000000000,\r\n      \"HighPrice\": 0.000001000000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 269,\r\n      \"PairName\": \"BTC_TGN\",\r\n      \"Last\":
+        0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\":
+        0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        270,\r\n      \"PairName\": \"BTC_GOL\",\r\n      \"Last\": 0.0,\r\n      \"LowPrice\":
+        0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 271,\r\n      \"PairName\": \"BTC_FLASH\",\r\n
+        \     \"Last\": 0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 272,\r\n      \"PairName\": \"USD_FLASH\",\r\n
+        \     \"Last\": 0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 273,\r\n      \"PairName\": \"EUR_FLASH\",\r\n
+        \     \"Last\": 0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 274,\r\n      \"PairName\": \"RUB_FLASH\",\r\n
+        \     \"Last\": 0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 275,\r\n      \"PairName\": \"CNY_FLASH\",\r\n
+        \     \"Last\": 0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 276,\r\n      \"PairName\": \"JPY_FLC\",\r\n      \"Last\":
+        0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\":
+        0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        278,\r\n      \"PairName\": \"BTC_MGN\",\r\n      \"Last\": 0.0,\r\n      \"LowPrice\":
+        0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 279,\r\n      \"PairName\": \"USD_VSL\",\r\n
+        \     \"Last\": 0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 281,\r\n      \"PairName\": \"BTC_DTL\",\r\n      \"Last\":
+        0.000140000000000,\r\n      \"LowPrice\": 0.000140000000000,\r\n      \"HighPrice\":
+        0.000140000000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 282,\r\n      \"PairName\": \"BTC_PNX\",\r\n
+        \     \"Last\": 0.000003100000000,\r\n      \"LowPrice\": 0.000003100000000,\r\n
+        \     \"HighPrice\": 0.000003100000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        286,\r\n      \"PairName\": \"USD_MIC3\",\r\n      \"Last\": 0.000100000000000,\r\n
+        \     \"LowPrice\": 0.000100000000000,\r\n      \"HighPrice\": 0.000100000000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 287,\r\n      \"PairName\": \"BTC_LILI\",\r\n      \"Last\":
+        0.000000430000000,\r\n      \"LowPrice\": 0.000000430000000,\r\n      \"HighPrice\":
+        0.000000430000000,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 288,\r\n      \"PairName\": \"BTC_ONION\",\r\n
+        \     \"Last\": 0.000200200000000,\r\n      \"LowPrice\": 0.000200200000000,\r\n
+        \     \"HighPrice\": 0.000200200000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        289,\r\n      \"PairName\": \"USD_ONION\",\r\n      \"Last\": 0.0,\r\n      \"LowPrice\":
+        0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 290,\r\n      \"PairName\": \"EUR_ONION\",\r\n
+        \     \"Last\": 0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 291,\r\n      \"PairName\": \"RUB_ONION\",\r\n
+        \     \"Last\": 50.000000000000000,\r\n      \"LowPrice\": 50.000000000000000,\r\n
+        \     \"HighPrice\": 50.000000000000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        294,\r\n      \"PairName\": \"BTC_KREDS\",\r\n      \"Last\": 0.0,\r\n      \"LowPrice\":
+        0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 295,\r\n      \"PairName\": \"BTC_CIF\",\r\n
+        \     \"Last\": 0.000000390000000,\r\n      \"LowPrice\": 0.000000390000000,\r\n
+        \     \"HighPrice\": 0.000000390000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        301,\r\n      \"PairName\": \"USD_PROUD\",\r\n      \"Last\": 0.0,\r\n      \"LowPrice\":
+        0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 302,\r\n      \"PairName\": \"RUB_PROUD\",\r\n
+        \     \"Last\": 0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 303,\r\n      \"PairName\": \"EUR_PROUD\",\r\n
+        \     \"Last\": 0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 304,\r\n      \"PairName\": \"JPY_PROUD\",\r\n
+        \     \"Last\": 0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 305,\r\n      \"PairName\": \"CNY_PROUD\",\r\n
+        \     \"Last\": 0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 306,\r\n      \"PairName\": \"BTC_XMCC\",\r\n      \"Last\":
+        0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\":
+        0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        307,\r\n      \"PairName\": \"BTC_BCD\",\r\n      \"Last\": 0.0,\r\n      \"LowPrice\":
+        0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 308,\r\n      \"PairName\": \"USD_BCD\",\r\n
+        \     \"Last\": 0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 309,\r\n      \"PairName\": \"EUR_BCD\",\r\n      \"Last\":
+        0.0,\r\n      \"LowPrice\": 0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\":
+        0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        310,\r\n      \"PairName\": \"BTC_VEGI\",\r\n      \"Last\": 0.0,\r\n      \"LowPrice\":
+        0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    },\r\n    {\r\n      \"PairId\": 313,\r\n      \"PairName\": \"USD_URALS\",\r\n
+        \     \"Last\": 0.024200000000000,\r\n      \"LowPrice\": 0.024200000000000,\r\n
+        \     \"HighPrice\": 0.024200000000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        314,\r\n      \"PairName\": \"BTC_IRD\",\r\n      \"Last\": 0.000001550000000,\r\n
+        \     \"LowPrice\": 0.000001550000000,\r\n      \"HighPrice\": 0.000001550000000,\r\n
+        \     \"PercentChange\": 0.0,\r\n      \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\":
+        0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n
+        \   {\r\n      \"PairId\": 317,\r\n      \"PairName\": \"BTC_CCASH\",\r\n
+        \     \"Last\": 0.000012500000000,\r\n      \"LowPrice\": 0.000012500000000,\r\n
+        \     \"HighPrice\": 0.000012500000000,\r\n      \"PercentChange\": 0.0,\r\n
+        \     \"BaseVolume\": 0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\":
+        0.0,\r\n      \"VolumeInUsd\": 0.0\r\n    },\r\n    {\r\n      \"PairId\":
+        318,\r\n      \"PairName\": \"BTC_SLRC\",\r\n      \"Last\": 0.0,\r\n      \"LowPrice\":
+        0.0,\r\n      \"HighPrice\": 0.0,\r\n      \"PercentChange\": 0.0,\r\n      \"BaseVolume\":
+        0.0,\r\n      \"QuoteVolume\": 0.0,\r\n      \"VolumeInBtc\": 0.0,\r\n      \"VolumeInUsd\":
+        0.0\r\n    }\r\n  ]\r\n}"
+    http_version: 
+  recorded_at: Fri, 30 Mar 2018 06:47:28 GMT
+recorded_with: VCR 4.0.0
