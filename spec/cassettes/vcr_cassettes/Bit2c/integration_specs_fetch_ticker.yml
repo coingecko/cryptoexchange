@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bit2c.co.il/Exchanges/BTCNIS/Ticker.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bit2c.co.il
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 24 Mar 2018 15:57:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dd11e5f9a2ba1e3cb9cba07d28fb7d5f61521907078; expires=Sun, 24-Mar-19
+        15:57:58 GMT; path=/; domain=.bit2c.co.il; HttpOnly; Secure
+      Cache-Control:
+      - private
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=31536000;includeSubdomains
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 400a562759d517a4-SIN
+    body:
+      encoding: UTF-8
+      string: '{"h":30466.53000000,"l":30774.26000000,"ll":31000,"a":3.8001644666551354452493550215,"av":30620.246161118445497719364594,"c":2.2798846150927497089147477400}'
+    http_version: 
+  recorded_at: Sat, 24 Mar 2018 15:57:59 GMT
+recorded_with: VCR 4.0.0

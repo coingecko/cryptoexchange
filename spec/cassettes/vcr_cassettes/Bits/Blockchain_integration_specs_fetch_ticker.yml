@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bitsblockchain.net/moon/v1/market/tick/ANX/ATMCUSD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bitsblockchain.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Mar 2018 15:38:42 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d9da86391bf6f76aa471e835ba5e425741521646722; expires=Thu, 21-Mar-19
+        15:38:42 GMT; path=/; domain=.bitsblockchain.net; HttpOnly
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - DENY
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3ff181cebeb93084-SIN
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "timestamp": "1521646722410",
+          "data": [
+            {
+              "ATMCUSD": {
+                "vwap": 2.5,
+                "last": 7.45,
+                "ask_diff": 0.0,
+                "market": "ANX",
+                "bid_diff": 0.0,
+                "ccyPair": "ATMCUSD",
+                "volume": 3900000.0,
+                "timestampMillis": "1521646684523",
+                "last_diff": 0.0,
+                "mid": 3.975,
+                "high": 7.5,
+                "ask": 7.45,
+                "low": 7.45,
+                "bid": 0.5
+              }
+            }
+          ],
+          "event": "marketTick"
+        }
+    http_version: 
+  recorded_at: Wed, 21 Mar 2018 15:38:42 GMT
+recorded_with: VCR 4.0.0

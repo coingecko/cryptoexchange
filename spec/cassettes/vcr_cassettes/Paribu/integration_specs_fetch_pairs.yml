@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.paribu.com/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.paribu.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 31 Mar 2018 12:20:49 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '135'
+      Connection:
+      - close
+      Set-Cookie:
+      - XSRF-TOKEN=eyJpdiI6Ilk3algwd1RQck5BSkFsc0NnblFoeHc9PSIsInZhbHVlIjoiWmhHVEZqazNxYTV2THpMNER4bHd3Z1RhbkprdFRpYlM1MGNVSTdGTlwveDRGWFN6aTVSaGdRWnlJOFwvNUcycWJHYzJUZ1FlYXpyK01NSk5GTFlvOWdUQT09IiwibWFjIjoiOTA3ODI3NzNkOGYwNGI1ZjQ1MzVjOWNjZjEyZTdkNWNkYjVmMDg4YjA2NzFhODBkMmVhYzI1YTM3NTJlMjYzMSJ9;
+        expires=Sun, 01-Apr-2018 00:20:47 GMT; Max-Age=43200; path=/
+      - __cfduid=d79b585592d87957c33d2a2bbead3ee6a1522498848; expires=Sun, 31-Mar-19
+        12:20:48 GMT; path=/; domain=.paribu.com; HttpOnly
+      - laravel_session=eyJpdiI6IllEZ0lweTRDV3l6Z0Fueit4SUNkK0E9PSIsInZhbHVlIjoiM1wvSGRcL3lcLzR5eTJ1aXZYWXJCSkVzdnN3MnpMb1hEazZTb2FRVGdFM1wvTEh0T3E4bmhOY1FUWlhuS2EzT3ZPa0tScXNXbHRoVDlYbzRvakxMMEtydDd3PT0iLCJtYWMiOiIzOWNmYjI4YTU4N2JlZmJjMDE2ODQ5MjM4MGE1M2M2Nzk5OWUwZGZlYzExMTg5YjdmZjI5YTg2M2VkZmU5MGJkIn0%3D;
+        expires=Sun, 01-Apr-2018 00:20:47 GMT; Max-Age=43200; path=/; HttpOnly
+      Cache-Control:
+      - no-cache
+      Accept-Ranges:
+      - bytes
+      X-Turbo-Charged-By:
+      - LiteSpeed
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4042c5ac9da92cff-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"BTC_TL":{"last":28300,"lowestAsk":28300.02,"highestBid":28300,"percentChange":-0.09,"volume":760.5,"high24hr":28800,"low24hr":27400}}'
+    http_version: 
+  recorded_at: Sat, 31 Mar 2018 12:20:49 GMT
+recorded_with: VCR 4.0.0
