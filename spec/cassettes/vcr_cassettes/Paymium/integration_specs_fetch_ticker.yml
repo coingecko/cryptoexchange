@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://paymium.com/api/v1/data/eur/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - paymium.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.9.15
+      Date:
+      - Mon, 05 Mar 2018 06:59:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Etag:
+      - W/"091e4356f7e6306c019642fe44490c49"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 57d77275-c74d-41fd-ab1d-55b1f336d573
+      X-Ratelimit-Limit:
+      - '86400'
+      X-Ratelimit-Remaining:
+      - '86351'
+      X-Runtime:
+      - '0.010132'
+      X-Powered-By:
+      - Phusion Passenger 4.0.55
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Methods:
+      - GET, DELETE, POST, OPTIONS, PUT
+      Access-Control-Allow-Headers:
+      - Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization,Api-Key,Api-Token,Api-Signature,Api-Nonce
+    body:
+      encoding: UTF-8
+      string: '{"high":9200.0,"low":8802.92,"volume":12.62548118,"bid":9000.01,"ask":9100.0,"midpoint":9050.005,"vwap":9069.62212623,"at":1520233104,"price":9000.01,"open":9000.0,"variation":0.0001,"currency":"EUR","trade_id":"5bc8753a-717b-4c1b-9579-bbfacd191f67","size":0.00455}'
+    http_version: 
+  recorded_at: Mon, 05 Mar 2018 06:59:49 GMT
+recorded_with: VCR 4.0.0

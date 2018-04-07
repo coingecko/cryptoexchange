@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coinhouse.eu/v2/tickers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinhouse.eu
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '9525'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - e2df66af-d8a9-4406-a3a8-36c540417c06
+      Etag:
+      - W/"70b82b03ae6cea5309dfe5ef4bed3ed4"
+      X-Runtime:
+      - '1.429442'
+      Date:
+      - Wed, 24 Jan 2018 08:28:11 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.12
+      Server:
+      - nginx/1.12.2 + Phusion Passenger 5.1.12
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - "___utmvamkufpoaB=Qdb\x01hbpr; path=/; Max-Age=900"
+      - '___utmvbmkufpoaB=nZBXaaOhalE: ptg; path=/; Max-Age=900'
+      - ___utmvmmkufpoaB=MMrbVQXHQqD; path=/; Max-Age=900
+      - incap_ses_881_1591197=lq+DCGS4GQNxSlup9fA5DJpDaFoAAAAAStwBZBJ3ikZ2Ajac869JzA==;
+        path=/; Domain=.coinhouse.eu
+      - visid_incap_1591197=Qn4cyayhTnOwhuQZAGPT8ZpDaFoAAAAAQUIPAAAAAAA5Sdi26VU0Z0Vecc2w5pz2;
+        expires=Wed, 23 Jan 2019 08:32:26 GMT; path=/; Domain=.coinhouse.eu
+      X-Iinfo:
+      - 2-1354742-1354748 NNNN CT(0 0 0) RT(1516782489044 317) q(0 0 0 -1) r(16 16)
+        U2
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ltcbtc":{"buy":"0.0164102","sell":"0.017299","low":"0.016","high":"0.0179999","last":"0.0164102","baseVolume":"1.5162154763437726","quoteVolume":"91.73570558"},"dogebtc":{"buy":"0.0000006","sell":"0.00000068","low":"0.00000052","high":"0.00000068","last":"0.00000056","baseVolume":"0.1002237557087303","quoteVolume":"179488.0619937"},"dashbtc":{"buy":"0.01","sell":"0.734","low":"0.0","high":"0.0","last":"0.0799","baseVolume":"0.0","quoteVolume":"0.0"},"gamebtc":{"buy":"0.0002","sell":"0.0026585","low":"0.0","high":"0.0","last":"0.000658","baseVolume":"0.0","quoteVolume":"0.0"},"dgbbtc":{"buy":"0.000004","sell":"0.000009","low":"0.00000399","high":"0.00000415","last":"0.00000399","baseVolume":"0.0024450736744197","quoteVolume":"605.12849805"},"navbtc":{"buy":"0.00000001","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"pivxbtc":{"buy":"0.00075001","sell":"1.0","low":"0.0","high":"0.0","last":"1000.0","baseVolume":"0.0","quoteVolume":"0.0"},"sysbtc":{"buy":"0.00000002","sell":"0.00610555","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"vtcbtc":{"buy":"0.0000453","sell":"0.0005","low":"0.0","high":"0.0","last":"0.000454","baseVolume":"0.0","quoteVolume":"0.0"},"qtumbtc":{"buy":"0.0034567","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"stratbtc":{"buy":"0.001311","sell":"10.0","low":"0.0","high":"0.0","last":"0.001","baseVolume":"0.0","quoteVolume":"0.0"},"hsrbtc":{"buy":"0.00000001","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"nxsbtc":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"xvgbtc":{"buy":"0.0000075","sell":"0.00000999","low":"0.0000076","high":"0.0000076","last":"0.0000076","baseVolume":"0.000050496304788","quoteVolume":"6.64425063"},"monabtc":{"buy":"0.0000005","sell":"0.00099","low":"0.0","high":"0.0","last":"0.0001","baseVolume":"0.0","quoteVolume":"0.0"},"iocbtc":{"buy":"0.00000001","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"fairbtc":{"buy":"0.00001803","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"xzcbtc":{"buy":"0.000001","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"ppcbtc":{"buy":"0.000001","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"viabtc":{"buy":"0.00021","sell":"0.005","low":"0.0","high":"0.0","last":"0.0002757","baseVolume":"0.0","quoteVolume":"0.0"},"btgbtc":{"buy":"0.0084","sell":"0.05","low":"0.0084","high":"0.0084","last":"0.0084","baseVolume":"0.0","quoteVolume":"0.0"},"cnxbtc":{"buy":"0.0000005","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"blockbtc":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"purabtc":{"buy":"0.00000001","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"potbtc":{"buy":"0.0000006","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"baybtc":{"buy":"0.00000014","sell":"0.0","low":"0.00000001","high":"0.005396","last":"0.00000014","baseVolume":"0.0","quoteVolume":"0.0"},"partbtc":{"buy":"0.00000001","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"grsbtc":{"buy":"0.00000001","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"ftcbtc":{"buy":"0.000003","sell":"0.000038","low":"0.0","high":"0.0","last":"0.000038","baseVolume":"0.0","quoteVolume":"0.0"},"nmcbtc":{"buy":"0.00000001","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"neblbtc":{"buy":"0.0000012","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"crmbtc":{"buy":"0.00000117","sell":"0.00000892","low":"0.0","high":"0.0","last":"0.000008","baseVolume":"0.0","quoteVolume":"0.0"},"okbtc":{"buy":"0.000003","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"sibbtc":{"buy":"0.0","sell":"0.01002558","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"ionbtc":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"blkbtc":{"buy":"0.00000001","sell":"0.0237111","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"crwbtc":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"xwcbtc":{"buy":"0.00000002","sell":"0.00199999","low":"0.0","high":"0.0","last":"0.00199","baseVolume":"0.0","quoteVolume":"0.0"},"rbybtc":{"buy":"0.00000001","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"grcbtc":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"rddbtc":{"buy":"0.00000081","sell":"0.00000145","low":"0.00000103","high":"0.00000126","last":"0.0000011","baseVolume":"0.0124411771141181","quoteVolume":"11363.4197955"},"cloakbtc":{"buy":"0.00000001","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"xbcbtc":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"pinkbtc":{"buy":"0.0000047","sell":"0.00000475","low":"0.00000473","high":"0.00000473","last":"0.00000473","baseVolume":"0.0002293659819935","quoteVolume":"48.49175095"},"radsbtc":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"flobtc":{"buy":"0.00000001","sell":"0.001","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"vrcbtc":{"buy":"0.00000001","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"xpmbtc":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"btmbtc":{"buy":"0.00000001","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"muebtc":{"buy":"0.00000001","sell":"0.0001","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"hbcbtc":{"buy":"0.000265","sell":"0.000343","low":"0.00026","high":"0.00044028","last":"0.00044028","baseVolume":"0.0240282398758552","quoteVolume":"78.08362606"},"ecabtc":{"buy":"0.00000038","sell":"0.00000039","low":"0.00000037","high":"0.0000004","last":"0.00000039","baseVolume":"6.8234723184210329","quoteVolume":"17424614.52505453"},"infobtc":{"buy":"0.00000014","sell":"0.00000019","low":"0.00000019","high":"0.00000019","last":"0.00000019","baseVolume":"0.0001909999999991","quoteVolume":"1005.26315789"},"x314btc":{"buy":"0.0000001","sell":"0.00000088","low":"0.0000001","high":"0.00000088","last":"0.00000088","baseVolume":"0.0001769999999944","quoteVolume":"201.13636363"},"slmbtc":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"foxybtc":{"buy":"0.0","sell":"0.00000003","low":"0.00000001","high":"0.00000005","last":"0.00000003","baseVolume":"0.0214413172476961","quoteVolume":"1665097.35693383"},"munbtc":{"buy":"0.000001","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"xpbtc":{"buy":"0.00000011","sell":"0.00000013","low":"0.00000011","high":"0.00000014","last":"0.00000011","baseVolume":"0.0075768103168032","quoteVolume":"59547.96624037"},"forbtc":{"buy":"0.00000001","sell":"0.00009999","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"dealbtc":{"buy":"0.00000001","sell":"0.00000002","low":"0.00000001","high":"0.00000002","last":"0.00000002","baseVolume":"0.0026278731930094","quoteVolume":"131393.65965047"},"sglbtc":{"buy":"0.000033","sell":"0.000049","low":"0.000044","high":"0.000056","last":"0.000044","baseVolume":"0.0576692389932654","quoteVolume":"1222.4454938"},"moonbtc":{"buy":"0.00000002","sell":"0.00000004","low":"0.00000002","high":"0.00000004","last":"0.00000004","baseVolume":"0.0525896077401942","quoteVolume":"1632396.74818887"},"mutbtc":{"buy":"0.0","sell":"0.00000001","low":"0.00000001","high":"0.00000001","last":"0.00000001","baseVolume":"0.0592488681711486","quoteVolume":"5924886.81711486"},"pokerbtc":{"buy":"0.0","sell":"0.000008","low":"0.000001","high":"0.000001","last":"0.000001","baseVolume":"0.0002","quoteVolume":"200.0"},"ufobtc":{"buy":"0.00000032","sell":"0.00000055","low":"0.00000032","high":"0.00000055","last":"0.00000032","baseVolume":"0.0002021294572115","quoteVolume":"486.59773561"},"neetbtc":{"buy":"0.00005201","sell":"0.00009388","low":"0.00005101","high":"0.00009999","last":"0.00009459","baseVolume":"0.3927788571221635","quoteVolume":"4392.20240236"},"abjbtc":{"buy":"0.000009","sell":"0.000031","low":"0.00001","high":"0.0000337","last":"0.00001","baseVolume":"2.245494313823299","quoteVolume":"67984.55681666"},"cheesebtc":{"buy":"0.00000001","sell":"0.000005","low":"0.0","high":"0.0","last":"0.0","baseVolume":"0.0","quoteVolume":"0.0"},"bankbtc":{"buy":"0.000027","sell":"0.00004","low":"0.000017","high":"0.00004299","last":"0.0000419","baseVolume":"0.00637731558085","quoteVolume":"326.544008"},"usxbtc":{"buy":"0.00000121","sell":"0.00000138","low":"0.00000089","high":"0.0000015","last":"0.00000139","baseVolume":"3.0172496797507377","quoteVolume":"2320631.76346754"}}'
+    http_version: 
+  recorded_at: Wed, 24 Jan 2018 08:28:12 GMT
+recorded_with: VCR 3.0.3
