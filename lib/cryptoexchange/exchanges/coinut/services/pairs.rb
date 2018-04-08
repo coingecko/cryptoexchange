@@ -10,7 +10,7 @@ module Cryptoexchange::Exchanges
         
         def fetch
           if auth_file_exist?          
-            username, api_key = retrieve_auth_credentials(auth_details_path)
+            username, api_key = retrieve_auth_credentials
             output = prepare_and_send_request(username, api_key)
             adapt(output)
           else
