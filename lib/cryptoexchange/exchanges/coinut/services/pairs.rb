@@ -4,12 +4,18 @@ module Cryptoexchange::Exchanges
       class Pairs < Cryptoexchange::Services::Pairs
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Coinut::Market::API_URL}"
 
-        def fetch(username, api_key)
-          payload = generate_payload
-          hmac_hex = generate_signature(api_key, payload)
-          headers = generate_headers(username, hmac_hex)
-          output = fetch_via_api_using_post(self.class::PAIRS_URL, headers, payload)
-          adapt(output)
+        #specify username and api_key in yml file. E.g.
+        # :username: <username>
+        # :api_key: <api_key>
+        
+        def fetch
+          if auth_file_exist?          
+            username, api_key = retrieve_auth_credentials
+            output = prepare_and_send_request
+            adapt(output)
+          else
+            raise Cryptoexchange::Error, { response: "Must include auth file named coinut_auth.yml in config/cryptoexchange."}
+          end
         end
 
         def adapt(output)
@@ -24,6 +30,18 @@ module Cryptoexchange::Exchanges
         end
 
         private
+
+        def prepare_and_send_request(username, api_key)
+          payload = generate_payload
+          hmac_hex = generate_signature(api_key, payload)
+          headers = generate_headers(username, hmac_hex)
+          output = fetch_via_api_using_post(self.class::PAIRS_URL, headers, payload)
+        end
+
+        def retrieve_auth_credentials
+          auth_credentials = YAML.load_file(path)
+          return auth_credentials[:username], auth_credentials[:api_key]
+        end
 
         def generate_nonce
           SecureRandom.random_number(99999)
