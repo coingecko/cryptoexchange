@@ -30,7 +30,7 @@ module Cryptoexchange::Exchanges
           order_book
         end
 
-        def adapt_orders(orders, timestamp)
+        def adapt_orders(orders)
           orders.collect do |order_entry|
             Cryptoexchange::Models::Order.new(price: order_entry["price"],
                                               amount: order_entry["qty"],
