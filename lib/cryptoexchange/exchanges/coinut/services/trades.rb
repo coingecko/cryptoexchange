@@ -8,7 +8,7 @@ module Cryptoexchange::Exchanges
           adapt(output, market_pair)
         end
 
-        def ticker_url(market_pair)
+        def ticker_url
           "#{Cryptoexchange::Exchanges::Coinut::Market::API_URL}"
         end
 
@@ -40,6 +40,11 @@ module Cryptoexchange::Exchanges
         def retrieve_auth_credentials
           auth_credentials = YAML.load_file(auth_details_path)
           return auth_credentials[:username], auth_credentials[:api_key]
+        end
+
+        def exchange_class
+          exchange_name = self.class.name.split('::')[2]
+          Object.const_get "Cryptoexchange::Exchanges::#{exchange_name}::Market"
         end
 
         def auth_details_path

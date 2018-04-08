@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
           adapt(output, market_pair)
         end
 
-        def ticker_url(market_pair)
+        def ticker_url
           "#{Cryptoexchange::Exchanges::Coinut::Market::API_URL}"
         end
 
