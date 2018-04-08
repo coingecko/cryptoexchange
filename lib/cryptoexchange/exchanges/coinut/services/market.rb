@@ -59,7 +59,12 @@ module Cryptoexchange::Exchanges
         end
 
         def auth_details_path
-          "config/cryptoexchange/#{NAME}_auth.yml"
+          "config/cryptoexchange/#{exchange_class::NAME}_auth.yml"
+        end
+
+        def exchange_class
+          exchange_name = self.class.name.split('::')[2]
+          Object.const_get "Cryptoexchange::Exchanges::#{exchange_name}::Market"
         end
 
         def generate_nonce

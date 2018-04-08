@@ -9,6 +9,7 @@ module Cryptoexchange::Exchanges
         # :api_key: <api_key>
         
         def fetch
+          byebug
           if auth_file_exist?          
             username, api_key = retrieve_auth_credentials
             output = prepare_and_send_request(username, api_key)
