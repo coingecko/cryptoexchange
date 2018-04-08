@@ -10,11 +10,11 @@ module Cryptoexchange::Exchanges
         
         def fetch
           if auth_file_exist?          
-            username, api_key = retrieve_auth_credentials
+            username, api_key = retrieve_auth_credentials(auth_details_path)
             output = prepare_and_send_request(username, api_key)
             adapt(output)
           else
-            raise Cryptoexchange::Error, { response: "Must include auth file named coinut_auth.yml in config/cryptoexchange."}
+            raise Cryptoexchange::Error, { response: "Must include auth file named coinut_auth.yml in config/cryptoexchange"}
           end
         end
 
@@ -39,7 +39,7 @@ module Cryptoexchange::Exchanges
         end
 
         def retrieve_auth_credentials
-          auth_credentials = YAML.load_file(path)
+          auth_credentials = YAML.load_file(auth_details_path)
           return auth_credentials[:username], auth_credentials[:api_key]
         end
 
