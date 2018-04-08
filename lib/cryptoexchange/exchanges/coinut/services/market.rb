@@ -41,15 +41,6 @@ module Cryptoexchange::Exchanges
           output = fetch_using_post(ticker_url, payload, headers)
         end
 
-        def retrieve_auth_credentials
-          auth_credentials = YAML.load_file(auth_details_path)
-          return auth_credentials[:username], auth_credentials[:api_key]
-        end
-
-        def generate_nonce
-          SecureRandom.random_number(99999)
-        end
-
         def generate_payload(market_pair_id)
           '{"nonce":' + generate_nonce.to_s + ',"request":"inst_tick", "inst_id":' + market_pair_id + ' }'
         end
@@ -61,6 +52,19 @@ module Cryptoexchange::Exchanges
         def generate_headers(username, hmac_hex)
           {"X-USER" => username, "X-SIGNATURE" => hmac_hex}
         end  
+
+        def retrieve_auth_credentials
+          auth_credentials = YAML.load_file(auth_details_path)
+          return auth_credentials[:username], auth_credentials[:api_key]
+        end
+
+        def auth_details_path
+          "config/cryptoexchange/#{exchange_class::NAME}_auth.yml"
+        end
+
+        def generate_nonce
+          SecureRandom.random_number(99999)
+        end
       end
     end
   end

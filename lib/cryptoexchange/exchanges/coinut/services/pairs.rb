@@ -38,6 +38,14 @@ module Cryptoexchange::Exchanges
           output = fetch_via_api_using_post(self.class::PAIRS_URL, headers, payload)
         end
 
+        def generate_payload 
+          '{"nonce":' + generate_nonce.to_s + ',"request":"inst_list", "sec_type":"SPOT"}'
+        end
+
+        def generate_signature(api_key, payload)
+          OpenSSL::HMAC.hexdigest(OpenSSL::Digest.new('sha256'), api_key, payload)
+        end
+
         def retrieve_auth_credentials
           auth_credentials = YAML.load_file(auth_details_path)
           return auth_credentials[:username], auth_credentials[:api_key]
@@ -45,14 +53,6 @@ module Cryptoexchange::Exchanges
 
         def generate_nonce
           SecureRandom.random_number(99999)
-        end
-
-        def generate_payload 
-          '{"nonce":' + generate_nonce.to_s + ',"request":"inst_list", "sec_type":"SPOT"}'
-        end
-
-        def generate_signature(api_key, payload)
-          OpenSSL::HMAC.hexdigest(OpenSSL::Digest.new('sha256'), api_key, payload)
         end
 
         def generate_headers(username, hmac_hex)

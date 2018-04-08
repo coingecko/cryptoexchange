@@ -48,6 +48,18 @@ module Cryptoexchange::Exchanges
           output = fetch_using_post(ticker_url, payload, headers)
         end
 
+        def generate_payload(market_pair_id)
+          '{"nonce":' + generate_nonce.to_s + ',"request":"inst_order_book", "inst_id":' + market_pair_id + ', "top_n": 200, "decimal_places": 2 }'
+        end
+
+        def generate_signature(api_key, payload)
+          OpenSSL::HMAC.hexdigest(OpenSSL::Digest.new('sha256'), api_key, payload)
+        end
+
+        def generate_headers(username, hmac_hex)
+          {"X-USER" => username, "X-SIGNATURE" => hmac_hex}
+        end 
+
         def retrieve_auth_credentials
           auth_credentials = YAML.load_file(auth_details_path)
           return auth_credentials[:username], auth_credentials[:api_key]
@@ -60,19 +72,6 @@ module Cryptoexchange::Exchanges
         def generate_nonce
           SecureRandom.random_number(99999)
         end
-
-        def generate_payload(market_pair_id)
-          '{"nonce":' + generate_nonce.to_s + ',"request":"inst_order_book", "inst_id":' + market_pair_id + ', "top_n": 200, "decimal_places": 2 }'
-        end
-
-        def generate_signature(api_key, payload)
-          OpenSSL::HMAC.hexdigest(OpenSSL::Digest.new('sha256'), api_key, payload)
-        end
-
-        def generate_headers(username, hmac_hex)
-          {"X-USER" => username, "X-SIGNATURE" => hmac_hex}
-        end  
-
       end
     end
   end
