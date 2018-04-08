@@ -19,7 +19,7 @@ module Cryptoexchange::Exchanges
             tr.base      = market_pair.base
             tr.target    = market_pair.target
             tr.market    = Coinut::Market::NAME
-            tr.type      = trans["side"]
+            tr.type      = trade["side"]
             tr.price     = trade["price"]
             tr.amount    = trade["qty"]
             tr.timestamp = trade["timestamp"]
