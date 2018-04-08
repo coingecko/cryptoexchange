@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new(
               base: hash["base"],
               target: hash["quote"],
-              inst_id: hash["inst_id"],
+              inst_id: hash["inst_id"].to_s,
               market: Coinut::Market::NAME
             )
           end
