@@ -49,7 +49,7 @@ module Cryptoexchange::Exchanges
         end
 
         def retrieve_auth_credentials
-          auth_credentials = YAML.load_file(path)
+          auth_credentials = YAML.load_file(auth_details_path)
           return auth_credentials[:username], auth_credentials[:api_key]
         end
 
