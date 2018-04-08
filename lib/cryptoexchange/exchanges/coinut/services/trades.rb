@@ -42,6 +42,10 @@ module Cryptoexchange::Exchanges
           return auth_credentials[:username], auth_credentials[:api_key]
         end
 
+        def auth_details_path
+          "config/cryptoexchange/#{exchange_class::NAME}_auth.yml"
+        end
+
         def generate_nonce
           SecureRandom.random_number(99999)
         end
