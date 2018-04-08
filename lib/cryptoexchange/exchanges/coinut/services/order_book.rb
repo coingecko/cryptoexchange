@@ -1,35 +1,42 @@
 module Cryptoexchange::Exchanges
   module Coinut
     module Services
-      class Market < Cryptoexchange::Services::Market
+      class OrderBook < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
             true
           end
         end
-
         def fetch(market_pair)
           username, api_key = retrieve_auth_credentials
           output = prepare_and_send_request(username, api_key, market_pair)
           adapt(output, market_pair)
         end
 
-        def ticker_url(market_pair)
+        def order_book_url(market_pair)
           "#{Cryptoexchange::Exchanges::Coinut::Market::API_URL}"
         end
 
         def adapt(output, market_pair)
-          ticker           = Cryptoexchange::Models::Ticker.new
-          ticker.base      = market_pair.base
-          ticker.target    = market_pair.target
-          ticker.market    = Coinut::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['last'])
-          ticker.high      = NumericHelper.to_d(output['highest_buy'])
-          ticker.low       = NumericHelper.to_d(output['lowest_sell'])
-          ticker.volume    = NumericHelper.to_d(output['volume24'])
-          ticker.timestamp = Time.now.to_i
-          ticker.payload   = output
-          ticker
+          order_book = Cryptoexchange::Models::OrderBook.new
+          timestamp = Time.now.to_i
+          order_book.base      = market_pair.base
+          order_book.target    = market_pair.target
+          order_book.market    = Coinut::Market::NAME
+          order_book.asks      = adapt_orders(output["sell"])
+          order_book.bids      = adapt_orders(output["buy"])
+          order_book.timestamp = Time.now.to_i
+          order_book.payload   = output
+          order_book
+        end
+
+        def adapt_orders(orders, timestamp)
+          orders.collect do |order_entry|
+            Cryptoexchange::Models::Order.new(price: order_entry["price"],
+                                              amount: order_entry["qty"],
+                                              timestamp: nil)
+          end
+
         end
 
         private
@@ -51,7 +58,7 @@ module Cryptoexchange::Exchanges
         end
 
         def generate_payload(market_pair_id)
-          '{"nonce":' + generate_nonce.to_s + ',"request":"inst_tick", "inst_id":' + market_pair_id + ' }'
+          '{"nonce":' + generate_nonce.to_s + ',"request":"inst_order_book", "inst_id":' + market_pair_id + ', "top_n": 200, "decimal_places": 2 }'
         end
 
         def generate_signature(api_key, payload)
@@ -61,6 +68,7 @@ module Cryptoexchange::Exchanges
         def generate_headers(username, hmac_hex)
           {"X-USER" => username, "X-SIGNATURE" => hmac_hex}
         end  
+
       end
     end
   end

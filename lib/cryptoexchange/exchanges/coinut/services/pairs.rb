@@ -11,7 +11,7 @@ module Cryptoexchange::Exchanges
         def fetch
           if auth_file_exist?          
             username, api_key = retrieve_auth_credentials
-            output = prepare_and_send_request
+            output = prepare_and_send_request(username, api_key)
             adapt(output)
           else
             raise Cryptoexchange::Error, { response: "Must include auth file named coinut_auth.yml in config/cryptoexchange."}
@@ -57,8 +57,7 @@ module Cryptoexchange::Exchanges
 
         def generate_headers(username, hmac_hex)
           {"X-USER" => username, "X-SIGNATURE" => hmac_hex}
-        end
-
+        end  
       end
     end
   end
