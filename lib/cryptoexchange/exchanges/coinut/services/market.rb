@@ -59,7 +59,7 @@ module Cryptoexchange::Exchanges
         end
 
         def auth_details_path
-          "config/cryptoexchange/#{exchange_class::NAME}_auth.yml"
+          "config/cryptoexchange/#{NAME}_auth.yml"
         end
 
         def generate_nonce
