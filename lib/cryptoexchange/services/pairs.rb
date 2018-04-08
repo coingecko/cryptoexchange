@@ -41,7 +41,7 @@ module Cryptoexchange
       def fetch_via_api_using_post(endpoint = self.class::PAIRS_URL, headers = false, body = false)
         fetch_response = 
           if headers && body
-            HTTP.timeout(:write => 5, :connect => 15, :read => 16).headers(headers).post(endpoint, body: body)
+            HTTP.timeout(:write => 2, :connect => 5, :read => 8).headers(headers).post(endpoint, body: body)
           else
             HTTP.timeout(:write => 2, :connect => 5, :read => 8).post(endpoint)
           end
