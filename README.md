@@ -44,6 +44,7 @@ Or install it yourself as:
 | Bithumb           | Y       |            |         |         | Y           |
 | Bitkonan          | Y       |            |         |         | User-Defined|
 | Bitmex            | Y       | Y          | Y       |         | Y           |
+| Bits Blockchain   | Y       | Y          |         |         | Y           |
 | Bitso             | Y       |            |         |         | Y           |
 | Bitstamp          | Y       | Y          | Y       |         | User-Defined|
 | Bittrex           | Y       |            |         |         | Y           |
@@ -55,6 +56,7 @@ Or install it yourself as:
 | BTCC              | Y       |            |         |         | User-Defined|
 | BTCChina          |         |            |         |         |             |
 | BTER              | Y       |            |         |         | Y           |
+| Buyucoin          | Y       | N          | N       |         | Y           |
 | BX Thailand       | Y       |            |         |         | Y           |
 | Cex               | Y       | Y          | Y       |         | Y           |
 | CCex              | Y       |            |         |         | Y           |
@@ -62,9 +64,11 @@ Or install it yourself as:
 | Cobinhood         | Y       | Y          |         |         | Y           |
 | CoinEgg           | Y       | Y          | Y       |         | User-Defined|
 | Coincheck         | Y       |            |         |         | User-Defined|
+| Coinex            | Y       | Y          | Y       |         | Y           |
 | Coinfalcon        | Y       | Y          | Y       |         | Y           |
 | CoinExchange      | Y       |            |         |         | Y           |
 | Coinbene          | Y       | Y          | Y       |         | Y           |
+| Coinhouse         | Y       |            |         |         | Y           |
 | Coinmate          | Y       | Y          |         |         | User-Defined|
 | Coinnest          | Y       | Y          | Y       |         | User-Defined|
 | Coinroom          | Y       |            |         |         | Y           |
@@ -72,8 +76,10 @@ Or install it yourself as:
 | Coinrail          | Y       | Y          | Y       |         | Y           |
 | CoinsMarkets      | Y       |            |         |         | Y           |
 | COSS              | Y       |            |         |         | Y           |
+| Crex24            | Y       | Y          | Y       |         | Y           |
 | CRXZone           | Y       | Y          | Y       |         | Y           |
 | CryptoBridge      | Y       |            |         |         | Y           |
+| CryptoHub         | Y       | N          | N       |         | Y           |
 | Cryptopia         | Y       | Y          | Y       |         | Y           |
 | EtherDelta        | Y       |            |         |         | Y           |
 | Ethfinex          | Y       | Y          | Y       |         | Y           |
@@ -93,6 +99,7 @@ Or install it yourself as:
 | Itbit             | Y       | Y          | Y       |         | User-Defined|
 | Idex              | Y       | Unstable   | Y       |         | Y           |
 | KKex              | Y       | Y          | Y       |         | Y           |
+| KyberNetwork      | Y       | N          | N       |         | Y           |
 | Jubi              | Y       |            |         |         | Y           |
 | Koinex            | Y       |            |         |         | Y           |
 | Korbit            | Y       |            |         |         | User-Defined|
@@ -116,12 +123,15 @@ Or install it yourself as:
 | Nova Exchange     | Y       |            |         |         | Y           |
 | OKCoin            | Y       |            |         |         | User-Defined|
 | OKEx              | Y       | Y          | Y       |         | User-Defined|
+| Paribu            | Y       |            |         |         | Y           |
+| Paymium           | Y       | Y          | Y       |         | User-Defined|
 | Poloniex          | Y       |            |         |         | Y           |
 | Qryptos           | Y       |            |         |         | Y           |
 | QuadrigaCX        | Y       |            |         |         | User-Defined|
 | Quoine            | Y       |            |         |         | Y           |
 | RadarRelay        | Y       |            |         |         | User-Defined|
 | RightBTC          | Y       | Y          | Y       |         | Y           |
+| SouthXchange      | Y       | Y          | Y       |         | Y           |
 | Stocks Exchange   | Y       |            |         |         | Y           |
 | SZZC              | Y       |            |         |         | Y           |
 | The Rock Trading  | Y       |            |         |         | Y           |
@@ -133,6 +143,7 @@ Or install it yourself as:
 | Upbit             | Y       |            |         |         | Y           |
 | Unocoin           |         |            |         |         |             |
 | Viabtc            | Y       |            |         |         | User-Defined|
+| Waves             | Y       | N          | Y       |         | Y           |
 | Wex               | Y       | Y          | Y       |         | Y           |
 | Yobit             | Y       |            |         |         | Y           |
 | Yuanbao           | Y       |            |         |         | User-Defined|

@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinex.com/v1/market/list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinex.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 12 Feb 2018 01:26:32 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '450'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3de3b8c8e94c15643d1ed380626aa52b1518398792; expires=Tue, 12-Feb-19
+        01:26:32 GMT; path=/; domain=.coinex.com; HttpOnly; Secure
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3ebbc2a21dfc33df-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n  \"code\": 0, \n  \"data\": [\n    \"CETBCH\", \n    \"BTCBCH\",
+        \n    \"LTCBCH\", \n    \"ETHBCH\", \n    \"ETCBCH\", \n    \"EOSBCH\", \n
+        \   \"XMRBCH\", \n    \"ZECBCH\", \n    \"DASHBCH\", \n    \"DOGEBCH\", \n
+        \   \"BTMBCH\", \n    \"LTCBTC\", \n    \"ETHBTC\", \n    \"ETCBTC\", \n    \"EOSBTC\",
+        \n    \"XMRBTC\", \n    \"ZECBTC\", \n    \"DASHBTC\", \n    \"DOGEBTC\",
+        \n    \"BTMBTC\", \n    \"BCHUSDT\", \n    \"BTCUSDT\", \n    \"LTCUSDT\",
+        \n    \"ETHUSDT\", \n    \"CDYBCH\", \n    \"BTVBCH\"\n  ], \n  \"message\":
+        \"Ok\"\n}\n"
+    http_version: 
+  recorded_at: Mon, 12 Feb 2018 01:26:32 GMT
+recorded_with: VCR 3.0.3
