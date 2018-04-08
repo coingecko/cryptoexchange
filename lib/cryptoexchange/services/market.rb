@@ -30,14 +30,9 @@ module Cryptoexchange
         end
       end
 
-      def fetch_using_post(endpoint, params, submit_as_form = false)
+      def fetch_using_post(endpoint, params)
         LruTtlCache.ticker_cache.getset(endpoint) do
-          response = 
-            if submit_as_form
-              http_post_using_form(endpoint, params)
-            else
-              http_post(endpoint, params)
-            end
+          response = http_post(endpoint, params)
           JSON.parse(response.to_s)
         end
       end
@@ -51,10 +46,6 @@ module Cryptoexchange
 
       def http_post(endpoint, params)
         HTTP.timeout(:write => 2, :connect => 5, :read => 8).post(endpoint, :json => params)
-      end
-
-      def http_post_using_form(endpoint, params)
-        HTTP.timeout(:write => 2, :connect => 5, :read => 8).post(endpoint, :form => params)
       end
     end
   end

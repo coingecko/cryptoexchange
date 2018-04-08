@@ -4,11 +4,15 @@ module Cryptoexchange
       LruTtlCache.ticker_cache(ticker_ttl)
     end
 
-    def pairs(exchange)
+    def pairs(exchange, username = nil, api_key = nil)
       pairs_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Pairs"
       pairs_class = Object.const_get(pairs_classname)
       pairs_object = pairs_class.new
-      pairs_object.fetch
+      if username && api_key 
+        pairs_object.fetch(username, api_key)
+      else
+        pairs_object.fetch
+      end
     end
 
     def ticker(market_pair)
