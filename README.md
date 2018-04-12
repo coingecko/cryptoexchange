@@ -93,6 +93,7 @@ Or install it yourself as:
 | Gemini            | Y       | Y          | Y       |         | Y           |
 | GetBTC            | Y       | Y          | Y       |         | User-Defined|
 | GOPAX             | Y       | Y          | Y       |         | Y           |
+| Graviex           | Y       |            |         |         |             |
 | HitBTC            | Y       |            |         |         | Y           |
 | Hksy              | Y       |            | Y       |         | User-Defined|
 | Huobi             | Y       |            |         |         | Y           |
@@ -117,7 +118,7 @@ Or install it yourself as:
 | Luno              | Y       |            |         |         | Y           |
 | Lykke             | Y       | Y          | N       |         | Y           |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|
-| MercadoNiobioCash | N       | N          | N       |         | N
+| MercadoNiobioCash | Y       | N          | N       |         | N
 | Mercatox          | Y       | N          | N       | N       | Y           |
 | Nanex             | Y       | N          | N       | N       | Y           |
 | Neraex            | Y       | Y          | Y       |         | Y           |
@@ -131,11 +132,12 @@ Or install it yourself as:
 | Qryptos           | Y       |            |         |         | Y           |
 | QuadrigaCX        | Y       |            |         |         | User-Defined|
 | Quoine            | Y       |            |         |         | Y           |
-| RadarRelay        | Y       |            |         |         | User-Defined|
+| RadarRelay        | Y       |            |         |         |			 |
 | RightBTC          | Y       | Y          | Y       |         | Y           |
 | SouthXchange      | Y       | Y          | Y       |         | Y           |
 | Stocks Exchange   | Y       |            |         |         | Y           |
 | SZZC              | Y       |            |         |         | Y           |
+| TemBTC		    | Y       |            | Y       |         | Y           |
 | The Rock Trading  | Y       |            |         |         | Y           |
 | Tidex             | Y       |            |         |         | Y           |
 | TradeOgre         | Y       | Y          | Y       |         | Y           |
