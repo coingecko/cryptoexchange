@@ -4,7 +4,7 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            true
+            false
           end
         end
 
@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Graviex::Market::API_URL}/ticker/#{market pair.base}.json"
+          "#{Cryptoexchange::Exchanges::Graviex::Market::API_URL}"
         end
 
         def adapt(output, market_pair)

@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module MercadoBitcoin
+  module TemBTC
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
 
@@ -12,7 +12,7 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new(
               base: pair[:base],
               target: pair[:target],
-              market: MercadoBitcoin::Market::NAME
+              market: TemBTC::Market::NAME
             )
           end
         end

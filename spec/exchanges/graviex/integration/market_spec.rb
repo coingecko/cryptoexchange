@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Graviex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_brl_pair) { Cryptoexchange::Models::MarketPair.new(base: 'GIO', target: 'BTC', market: 'graviex') }
+  let(:gio_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'GIO', target: 'BTC', market: 'graviex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('graviex')
