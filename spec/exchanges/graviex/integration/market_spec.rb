@@ -1,25 +1,25 @@
 require 'spec_helper'
 
-RSpec.describe 'MercadoNiobioCash integration specs' do
+RSpec.describe 'Graviex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:nbr_brl_pair) { Cryptoexchange::Models::MarketPair.new(base: 'NBR', target: 'BRL', market: 'mercado_niobio_cash') }
+  let(:btc_brl_pair) { Cryptoexchange::Models::MarketPair.new(base: 'GIO', target: 'BTC', market: 'graviex') }
 
   it 'fetch pairs' do
-    pairs = client.pairs('mercado_niobio_cash')
+    pairs = client.pairs('graviex')
     expect(pairs).not_to be_empty
 
-    expected_base = %w(NBR)
+    expected_base = %w(BTC LTC ETH DOGE)
     expect(pairs.map(&:base)).to match_array expected_base
-    expect(pairs.map(&:target).uniq).to eq %w(BRL)
-    expect(pairs.map(&:market).uniq).to eq %w(mercado_bitcoin)
+    expect(pairs.map(&:target).uniq).to eq %w(BTC)
+    expect(pairs.map(&:market).uniq).to eq %w(graviex)
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(nbr_brl_pair)
+    ticker = client.ticker(btc_brl_pair)
 
-    expect(ticker.base).to eq 'NBR'
-    expect(ticker.target).to eq 'BRL'
-    expect(ticker.market).to eq 'mercado_niobio_cash'
+    expect(ticker.base).to eq 'GIO'
+    expect(ticker.target).to eq 'BTC'
+    expect(ticker.market).to eq 'graviex'
     expect(ticker.last).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
