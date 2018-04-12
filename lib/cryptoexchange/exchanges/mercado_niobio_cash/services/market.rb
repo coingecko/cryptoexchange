@@ -4,13 +4,13 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            true
+            false
           end
         end
 
         def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output, market_pair)
+          output = super(ticker_url)
+          adapt(output)
         end
 
         def ticker_url(market_pair)
