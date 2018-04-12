@@ -61,7 +61,7 @@ module Cryptoexchange
       end
 
       def auth_details_path
-        "config/cryptoexchange/#{exchange_class::NAME}_auth.yml"
+        "config/cryptoexchange/cryptoexchange_api_keys.yml"
       end
 
       def default_override_path
