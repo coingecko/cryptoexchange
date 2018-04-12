@@ -2,11 +2,15 @@ module Cryptoexchange::Exchanges
   module Crxzone
     module Services
       class Trades < Cryptoexchange::Services::Market
-        
+
         def fetch(market_pair)
-          pair_id = get_id(market_pair)
-          output = super(trades_url(pair_id))
-          adapt(output["Result"], market_pair)
+          result = IdFetcher.get_id(market_pair.base.upcase, market_pair.target.upcase)
+          if result.length > 0
+            pair = result.first
+            pair_id = pair["ID"]
+            output = super(trades_url(pair_id))
+            adapt(output["Result"], market_pair)
+          end
         end
 
         def trades_url(pair_id)
@@ -28,14 +32,6 @@ module Cryptoexchange::Exchanges
             tr.payload   = trade
             tr
           end
-        end
-
-        def get_id(market_pair)
-          currency_pairs = Cryptoexchange::Exchanges::Crxzone::Services::Pairs::CURRENCY_IDS
-          pair_id = currency_pairs.select{ |object|
-            object[:base] == market_pair.base.upcase &&
-            object[:target] == market_pair.target.upcase }
-          pair_id[0][:id]
         end
       end
     end

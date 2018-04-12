@@ -18,10 +18,6 @@ module Cryptoexchange::Exchanges
                               target: pair["SecondaryCurrencyCode"],
                               market: Crxzone::Market::NAME
                             )
-           CURRENCY_IDS << {id: pair["ID"],
-                            base: pair["PrimaryCurrencyCode"],
-                            target: pair["SecondaryCurrencyCode"]
-                          }
           end
           market_pairs
         end
