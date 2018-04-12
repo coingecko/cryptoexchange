@@ -117,6 +117,7 @@ Or install it yourself as:
 | Luno              | Y       |            |         |         | Y           |
 | Lykke             | Y       | Y          | N       |         | Y           |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|
+| MercadoNiobioCash | N       | N          | N       |         | N
 | Mercatox          | Y       | N          | N       | N       | Y           |
 | Nanex             | Y       | N          | N       | N       | Y           |
 | Neraex            | Y       | Y          | Y       |         | Y           |
