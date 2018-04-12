@@ -15,7 +15,7 @@ module Cryptoexchange::Exchanges
             output = prepare_and_send_request
             adapt(output)
           else
-            raise Cryptoexchange::Error, { response: "Must include auth file named coinut_auth.yml in config/cryptoexchange"}
+            raise Cryptoexchange::Error, { response: "Must include auth file named cryptoexchange_api_keys.yml in config/cryptoexchange"}
           end
         end
 
