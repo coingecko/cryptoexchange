@@ -8,13 +8,26 @@ module Cryptoexchange::Exchanges
           end
         end
 
-        def fetch(market_pair)
-          output = super(ticker_url)
-          adapt(output)
+        def fetch
+          output = super ticker_url
+          adapt_all(output)
         end
 
-        def ticker_url(market_pair)
+        def ticker_url
           "#{Cryptoexchange::Exchanges::MercadoBitcoin::Market::API_URL}"
+        end
+        
+                def adapt_all(output)
+          output['data'].map do |target, ticker|
+            base = target
+            target = BRL
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+                            base: base,
+                            target: target,
+                            market: MercadoNiobioCash::Market::NAME
+                          )
+            adapt(ticker, market_pair, output['data']['date'])
+          end
         end
 
         def adapt(output, market_pair)
@@ -26,7 +39,7 @@ module Cryptoexchange::Exchanges
           ticker.last      = NumericHelper.to_d(ticker_json['last'])
           ticker.high      = NumericHelper.to_d(ticker_json['high'])
           ticker.low       = NumericHelper.to_d(ticker_json['low'])
-          ticker.volume    = NumericHelper.to_d(ticker_json['BRL'])
+          ticker.volume    = NumericHelper.to_d(ticker_json['NBR']) #Volume is the base currency, in this case, NBR
           ticker.timestamp = ticker_json['date']
           ticker.payload   = output
           ticker
