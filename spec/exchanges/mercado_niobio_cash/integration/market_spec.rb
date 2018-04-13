@@ -11,7 +11,7 @@ RSpec.describe 'MercadoNiobioCash integration specs' do
     expected_base = %w(NBR)
     expect(pairs.map(&:base)).to match_array expected_base
     expect(pairs.map(&:target).uniq).to eq %w(BRL)
-    expect(pairs.map(&:market).uniq).to eq %w(mercado_bitcoin)
+    expect(pairs.map(&:market).uniq).to eq %w(mercado_niobio_cash)
   end
 
   it 'fetch ticker' do
