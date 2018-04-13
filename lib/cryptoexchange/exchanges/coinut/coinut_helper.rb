@@ -7,7 +7,8 @@ module CoinutHelper
     payload = generate_payload(inst_id, order_book, trade)
     hmac_hex = generate_signature(api_key, payload)
     headers = generate_headers(username, hmac_hex)
-    # send the request to coinut's api with appropriate signature, headers and payload
+    
+    # send the request to coinut's api with appropriate signature, headers and payload    
     output = 
       if inst_id && order_book
         fetch_using_post(order_book_url, payload, headers)

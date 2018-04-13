@@ -16,10 +16,10 @@ module Cryptoexchange::Exchanges
         def adapt(output, market_pair)
           output["trades"].collect do |trade|
             tr = Cryptoexchange::Models::Trade.new
-            tr.trade_id  = trade["trans_id"]
             tr.base      = market_pair.base
             tr.target    = market_pair.target
             tr.market    = Coinut::Market::NAME
+            tr.trade_id  = trade["trans_id"]
             tr.type      = trade["side"]
             tr.price     = trade["price"]
             tr.amount    = trade["qty"]
