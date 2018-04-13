@@ -8,10 +8,10 @@ RSpec.describe 'MercadoNiobioCash integration specs' do
     pairs = client.pairs('mercado_niobio_cash')
     expect(pairs).not_to be_empty
 
-    expected_base = %w(NBR)
-    expect(pairs.map(&:base)).to match_array expected_base
-    expect(pairs.map(&:target).uniq).to eq %w(BRL)
-    expect(pairs.map(&:market).uniq).to eq %w(mercado_niobio_cash)
+    pair = pairs.first
+    expect(pair.base).to_not be nil
+    expect(pair.target).to_not be nil
+    expect(pair.market).to eq 'mercado_niobio_cash'
   end
 
   it 'fetch ticker' do

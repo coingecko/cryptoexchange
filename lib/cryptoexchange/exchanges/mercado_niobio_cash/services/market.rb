@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::MercadoBitcoin::Market::API_URL}"
+          "#{Cryptoexchange::Exchanges::MercadoNiobioCash::Market::API_URL}"
         end
         
                 def adapt_all(output)
