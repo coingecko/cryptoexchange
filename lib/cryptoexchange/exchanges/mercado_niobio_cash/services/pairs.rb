@@ -15,7 +15,7 @@ module Cryptoexchange::Exchanges
             next if base == 'date'
             pairs << Cryptoexchange::Models::MarketPair.new(
                 base: NBR,
-                target: 'BRL',
+                target: BRL,
                 market: MercadoNiobioCash::Market::NAME
               )
           end
