@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.rightbtc.com/api/public/depth/ETHBTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.rightbtc.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1242'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Sun, 04 Feb 2018 16:27:51 GMT
+      Server:
+      - nginx/1.12.1
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Etag:
+      - W/"4da-JFVqs5LXZ26x/g/puHr5TZFr43U"
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 1a629d8fe32e33972e289357f4305ead.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - T9A4-44rPe63TO6EU0X3m0r1Nb6EYfIErRfVl1cikbLBTvCyZ46Mcg==
+    body:
+      encoding: UTF-8
+      string: '{"status":{"success":1,"message":null},"result":{"market":"ETHBTC","ask":[[10310138,7399727812,7399727812],[10434692,202151993,7601879805],[10434695,59968540,7661848345],[10434698,132994732,7794843077],[10434713,11617660,7806460737],[10459910,361365,7806822102],[10461854,2520519,7809342621],[10463384,97251,7809439872],[10463385,1023876,7810463748],[10464307,32540,7810496288],[10464533,29151075,7839647363],[10464639,54113,7839701476],[10464649,29525986,7869227462],[10464862,10665598,7879893060],[10465284,176383,7880069443],[10469694,854735,7880924178],[10512640,13163300000,21044224178],[11154000,2261061,21046485239]],"bid":[[10115950,124650967,124650967],[10110730,512735225,637386192],[10110729,293572500,930958692],[10110236,399293264,1330251956],[10109780,13687,1330265643],[10100000,8427198,1338692841],[10096256,1028680568,2367373409],[10096250,12195121,2379568530],[10095287,124402,2379692932],[10080794,124580,2379817512],[10076618,200000000,2579817512],[10076550,800000000,3379817512],[10069103,59118,3379876630],[10066702,250000000,3629876630],[10066700,800000000,4429876630],[10066301,124760,4430001390],[10062389,71012,4430072402],[10060568,118895000,4548967402],[10056850,18965052,4567932454],[10052732,58899,4567991353]]}}'
+    http_version: 
+  recorded_at: Sun, 04 Feb 2018 16:27:51 GMT
+recorded_with: VCR 3.0.3

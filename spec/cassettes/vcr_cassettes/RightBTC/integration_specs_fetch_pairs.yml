@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.rightbtc.com/api/public/trading_pairs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.rightbtc.com
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '5850'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Sun, 04 Feb 2018 15:53:25 GMT
+      Server:
+      - nginx/1.12.1
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Etag:
+      - W/"16da-PgqFKP+rAlXlN9gT38VdmFR2K1k"
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 83ba6c67b083d9831e50a1f727f01d14.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - RFx2PyCciJSY7wrFCsOLKCQT5I9dZv9EpeoKBgQT8dJUKWJ8Ax8F8g==
+    body:
+      encoding: UTF-8
+      string: '{"status":{"success":1,"message":{"ETHBTC":{"name":"ETHBTC","ask_asset_symbol":"BTC","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"ETH","bid_asset_decimals":8,"bid_asset_type":"COIN"},"ETPBTC":{"name":"ETPBTC","ask_asset_symbol":"BTC","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"ETP","bid_asset_decimals":8,"bid_asset_type":"COIN"},"LTCBTC":{"name":"LTCBTC","ask_asset_symbol":"BTC","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"LTC","bid_asset_decimals":8,"bid_asset_type":"COIN"},"DLTBTC":{"name":"DLTBTC","ask_asset_symbol":"BTC","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"DLT","bid_asset_decimals":8,"bid_asset_type":"COIN"},"ZGCBTC":{"name":"ZGCBTC","ask_asset_symbol":"BTC","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"ZGC","bid_asset_decimals":8,"bid_asset_type":"COIN"},"ETCBTC":{"name":"ETCBTC","ask_asset_symbol":"BTC","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"ETC","bid_asset_decimals":8,"bid_asset_type":"COIN"},"BCCBTC":{"name":"BCCBTC","ask_asset_symbol":"BTC","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"BCC","bid_asset_decimals":8,"bid_asset_type":"COIN"},"INDBTC":{"name":"INDBTC","ask_asset_symbol":"BTC","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"IND","bid_asset_decimals":8,"bid_asset_type":"COIN"},"BTMBTC":{"name":"BTMBTC","ask_asset_symbol":"BTC","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"BTM","bid_asset_decimals":8,"bid_asset_type":"COIN"},"MVCBTC":{"name":"MVCBTC","ask_asset_symbol":"BTC","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"MVC","bid_asset_decimals":8,"bid_asset_type":"COIN"},"XRBBTC":{"name":"XRBBTC","ask_asset_symbol":"BTC","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"XRB","bid_asset_decimals":8,"bid_asset_type":"COIN"},"NXSBTC":{"name":"NXSBTC","ask_asset_symbol":"BTC","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"NXS","bid_asset_decimals":8,"bid_asset_type":"COIN"},"MTXBTC":{"name":"MTXBTC","ask_asset_symbol":"BTC","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"MTX","bid_asset_decimals":8,"bid_asset_type":"COIN"},"ZGCETP":{"name":"ZGCETP","ask_asset_symbol":"ETP","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"ZGC","bid_asset_decimals":8,"bid_asset_type":"COIN"},"ZDCETP":{"name":"ZDCETP","ask_asset_symbol":"ETP","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"ZDC","bid_asset_decimals":8,"bid_asset_type":"COIN"},"INDETP":{"name":"INDETP","ask_asset_symbol":"ETP","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"IND","bid_asset_decimals":8,"bid_asset_type":"COIN"},"BTMETP":{"name":"BTMETP","ask_asset_symbol":"ETP","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"BTM","bid_asset_decimals":8,"bid_asset_type":"COIN"},"XRBETP":{"name":"XRBETP","ask_asset_symbol":"ETP","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"XRB","bid_asset_decimals":8,"bid_asset_type":"COIN"},"MTXETP":{"name":"MTXETP","ask_asset_symbol":"ETP","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"MTX","bid_asset_decimals":8,"bid_asset_type":"COIN"},"MVCETH":{"name":"MVCETH","ask_asset_symbol":"ETH","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"MVC","bid_asset_decimals":8,"bid_asset_type":"COIN"},"INDETH":{"name":"INDETH","ask_asset_symbol":"ETH","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"IND","bid_asset_decimals":8,"bid_asset_type":"COIN"},"BTMETH":{"name":"BTMETH","ask_asset_symbol":"ETH","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"BTM","bid_asset_decimals":8,"bid_asset_type":"COIN"},"XRBETH":{"name":"XRBETH","ask_asset_symbol":"ETH","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"XRB","bid_asset_decimals":8,"bid_asset_type":"COIN"},"NXSETH":{"name":"NXSETH","ask_asset_symbol":"ETH","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"NXS","bid_asset_decimals":8,"bid_asset_type":"COIN"},"MTXETH":{"name":"MTXETH","ask_asset_symbol":"ETH","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"MTX","bid_asset_decimals":8,"bid_asset_type":"COIN"},"BTCBCY":{"name":"BTCBCY","ask_asset_symbol":"BCY","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"BTC","bid_asset_decimals":8,"bid_asset_type":"COIN"},"ETHBCY":{"name":"ETHBCY","ask_asset_symbol":"BCY","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"ETH","bid_asset_decimals":8,"bid_asset_type":"COIN"},"ETPBCY":{"name":"ETPBCY","ask_asset_symbol":"BCY","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"ETP","bid_asset_decimals":8,"bid_asset_type":"COIN"},"ECHBTC":{"name":"ECHBTC","ask_asset_symbol":"BTC","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"ECH","bid_asset_decimals":8,"bid_asset_type":"COIN"},"ECHETH":{"name":"ECHETH","ask_asset_symbol":"ETH","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"ECH","bid_asset_decimals":8,"bid_asset_type":"COIN"},"ECHETP":{"name":"ECHETP","ask_asset_symbol":"ETP","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"ECH","bid_asset_decimals":8,"bid_asset_type":"COIN"},"CMCBTC":{"name":"CMCBTC","ask_asset_symbol":"BTC","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"CMC","bid_asset_decimals":8,"bid_asset_type":"COIN"},"CMCETH":{"name":"CMCETH","ask_asset_symbol":"ETH","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"CMC","bid_asset_decimals":8,"bid_asset_type":"COIN"},"CMCETP":{"name":"CMCETP","ask_asset_symbol":"ETP","ask_asset_decimals":8,"ask_asset_type":"FIAT","bid_asset_symbol":"CMC","bid_asset_decimals":8,"bid_asset_type":"COIN"}}}}'
+    http_version: 
+  recorded_at: Sun, 04 Feb 2018 15:53:25 GMT
+recorded_with: VCR 3.0.3
