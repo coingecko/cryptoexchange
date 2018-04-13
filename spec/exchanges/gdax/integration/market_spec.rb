@@ -39,10 +39,10 @@ RSpec.describe 'Gdax integration specs' do
     expect(order_book.bids).to_not be_empty
     expect(order_book.asks.first.price).to_not be_nil
     expect(order_book.bids.first.amount).to_not be_nil
-    expect(order_book.bids.first.timestamp).to_not be_nil
+    expect(order_book.bids.first.timestamp).to be_nil
     expect(order_book.asks.count).to be > 10
     expect(order_book.bids.count).to be > 10
-    expect(order_book.timestamp).to be_a String
+    expect(order_book.timestamp).to be_a Integer
     expect(order_book.payload).to_not be nil
   end
 
