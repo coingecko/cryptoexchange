@@ -124,6 +124,7 @@ Or install it yourself as:
 | Nova Exchange     | Y       |            |         |         | Y           |
 | OKCoin            | Y       |            |         |         | User-Defined|
 | OKEx              | Y       | Y          | Y       |         | User-Defined|
+| Ore Bz            | Y       | Y          | Y       |         | Y           |
 | Paribu            | Y       |            |         |         | Y           |
 | Paymium           | Y       | Y          | Y       |         | User-Defined|
 | Poloniex          | Y       |            |         |         | Y           |
@@ -187,6 +188,19 @@ Or install it yourself as:
   order_book.target
   order_book.bids
   order_book.asks
+```
+
+### Query the Trades API
+```
+  # Check if exchange has support for Trades
+  # returns array
+
+  pair = client.pairs('neraex').first
+  trades = client.trades(pair)
+  trades[0].base
+  trades[0].target
+  trades[0].price
+  trades[0].amount
 ```
 
 ### Market List
