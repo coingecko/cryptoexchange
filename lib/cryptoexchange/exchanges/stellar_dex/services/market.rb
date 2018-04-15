@@ -39,11 +39,7 @@ module Cryptoexchange::Exchanges
         def adapt(output, market_pair)
           ticker = Cryptoexchange::Models::Ticker.new
 
-          volume = if market_pair.target == "XLM"
-            calculate_base_volume(output['volume24h_XLM'], output['price'])
-          else
-            nil
-          end
+          volume = calculate_base_volume(output['volume24h_XLM'], output['price'], market_pair)
 
           ticker.base = market_pair.base
           ticker.target = market_pair.target
@@ -57,8 +53,12 @@ module Cryptoexchange::Exchanges
           ticker
         end
 
-        def calculate_base_volume(volume_target, price_target)
-          volume_target / price_target
+        def calculate_base_volume(volume_in_xlm, price_in_xlm, market_pair)
+          if market_pair.target == "XLM"
+            volume_in_xlm / price_in_xlm
+          elsif market_pair.base == "XLM"
+            volume_in_xlm
+          end
         rescue StandardError
           nil
         end
