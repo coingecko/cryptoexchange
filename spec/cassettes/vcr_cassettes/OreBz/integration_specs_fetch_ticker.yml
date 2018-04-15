@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ore.bz/api/v2/tickers/gbcusd.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ore.bz
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Apr 2018 05:55:29 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '129'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db38174720e408b9d9c229ffef88fdccc1523771729; expires=Mon, 15-Apr-19
+        05:55:29 GMT; path=/; domain=.ore.bz; HttpOnly
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 2fda46ee-821d-4e5a-af24-2532bb889497
+      Etag:
+      - '"9f710b9372a61e008dcfc3612702a234"'
+      X-Runtime:
+      - '0.010698'
+      X-Powered-By:
+      - Phusion Passenger 5.0.4
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 40bc29db69488502-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1523771729,"ticker":{"buy":"0.0021","sell":"0.0024","low":"0.0021","high":"0.00215","last":"0.00215","vol":"139455.90171"}}'
+    http_version: 
+  recorded_at: Sun, 15 Apr 2018 05:55:29 GMT
+recorded_with: VCR 4.0.0
