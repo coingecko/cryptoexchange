@@ -133,6 +133,7 @@ Or install it yourself as:
 | RadarRelay        | Y       |            |         |         | User-Defined|
 | RightBTC          | Y       | Y          | Y       |         | Y           |
 | SouthXchange      | Y       | Y          | Y       |         | Y           |
+| Stellar Dex       | Y       |            |         |         | User-Defined|
 | Stocks Exchange   | Y       |            |         |         | Y           |
 | SZZC              | Y       |            |         |         | Y           |
 | The Rock Trading  | Y       |            |         |         | Y           |
