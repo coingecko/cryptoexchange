@@ -12,7 +12,7 @@ RSpec.describe 'OreBz integration specs' do
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
-    expect(pair.market).to eq 'ore.bz'
+    expect(pair.market).to eq 'ore_bz'
   end
 
   it 'fetch ticker' do
