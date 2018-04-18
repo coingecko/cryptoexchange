@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://freiexchange.com/api/public/ANC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freiexchange.com
+      User-Agent:
+      - http.rb/2.2.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Apr 2018 09:05:09 GMT
+      Server:
+      - Apache/2.4.25
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - sameorigin
+      X-Xss-Protection:
+      - 1; mode=block
+      Set-Cookie:
+      - ci_session=rruqcpt09toscdb644vvqsafo3r3f89v; expires=Wed, 18-Apr-2018 09:25:09
+        GMT; Max-Age=1200; path=/; domain=.freiexchange.com; secure; HttpOnly; Secure
+      - csrf_cookie_name=c6129a979cac8f5005aca3dab1972276; expires=Wed, 18-Apr-2018
+        10:05:09 GMT; Max-Age=3600; path=/; domain=.freiexchange.com; secure; HttpOnly;
+        Secure
+      Content-Length:
+      - '173'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: '{"public":{"marketname":"ANC_BTC","marketid":"6","volume":"271","average":"0.00009629","high":"0.00009700","low":"0.00009555","volume_btc":"0.02618836","last":"0.00009555"}}'
+    http_version: 
+  recorded_at: Wed, 18 Apr 2018 09:05:10 GMT
+recorded_with: VCR 3.0.3
