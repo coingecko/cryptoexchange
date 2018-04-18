@@ -1,5 +1,3 @@
-require "http"
-
 module Cryptoexchange::Exchanges
   module Coinlink
     module Services
