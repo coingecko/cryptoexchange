@@ -23,28 +23,28 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          puts output
-          output['data'].map do |target|
-            base = target
-            target = 'KRW'
-            market_pair = Cryptoexchange::Models::MarketPair.new(
-                            base: base,
-                            target: target,
-                            market: Coinlink::Market::NAME
-                          )
-            adapt(ticker, market_pair)
+          output['data'].map do |data|
+            data.map do |base, ticker|
+              target = 'KRW'
+              market_pair = Cryptoexchange::Models::MarketPair.new(
+                              base: base,
+                              target: target,
+                              market: Coinlink::Market::NAME
+                            )
+              adapt(ticker, market_pair)
+            end
           end
         end
 
         def adapt(output, market_pair)
-          market = output
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Coinlink::Market::NAME
-          ticker.last = NumericHelper.to_d(market[market_pair.base]['close_price'])
-          ticker.timestamp = market[market_pair.base]['close_price'].to_i
-          ticker.payload = market
+
+          ticker.last = NumericHelper.to_d(output['close_price'])
+          ticker.timestamp = output['date'].to_i
+          ticker.payload = output
           ticker
         end
       end   
