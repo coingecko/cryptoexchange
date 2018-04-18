@@ -14,6 +14,11 @@ RSpec.describe 'Upbit integration specs' do
     expect(pair.market).to eq 'upbit'
   end
 
+  it 'does not include non ACTIVE pairs' do
+    pairs = client.pairs('upbit')
+    expect((pairs.select { |p| p.base == 'TRIG' }).empty?).to be true
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(eth_krw_pair)
 

@@ -8,11 +8,14 @@ module Cryptoexchange::Exchanges
           raw_output = HTTP.use(:auto_inflate).headers("Accept-Encoding" => "gzip").get(PAIRS_URL)
           output     = JSON.parse(raw_output)
           output.map do |pair|
-            next unless pair['marketState'] == "ACTIVE"
-            Cryptoexchange::Models::MarketPair.new(
-              base:   pair["baseCurrencyCode"],
-              target: pair["quoteCurrencyCode"],
-              market: Upbit::Market::NAME)
+            if pair['marketState'] == "ACTIVE"
+              Cryptoexchange::Models::MarketPair.new(
+                base:   pair["baseCurrencyCode"],
+                target: pair["quoteCurrencyCode"],
+                market: Upbit::Market::NAME)
+            else
+              nil
+            end
           end.compact
         end
       end
