@@ -87,6 +87,7 @@ Or install it yourself as:
 | Extstock          | Y       | Y          | Y       |         | Y           |
 | Exx               | Y       | Y          | Y       |         | Y           |
 | Fisco             | Y       | Y          | Y       |         | Y           |
+| Forkdelta         | Y       | N          | N       |         | Y           |
 | Gate              | Y       | Y          | Y       |         | Y           |
 | Gatecoin          | Y       |            |         |         | Y           |
 | GDAX              | Y       |            |         |         | Y           |
