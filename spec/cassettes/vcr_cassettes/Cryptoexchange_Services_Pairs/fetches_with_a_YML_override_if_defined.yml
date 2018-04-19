@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://raw.githubusercontent.com/tmlee/cryptoexchange/feature/override_pairs_url/spec/anx_mock_url.yml
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - raw.githubusercontent.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/plain; charset=utf-8
+      Content-Security-Policy:
+      - default-src 'none'; style-src 'unsafe-inline'; sandbox
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      Etag:
+      - '"e530e2c6f4c696bd348f99eb83013b783e2ba420"'
+      Cache-Control:
+      - max-age=300
+      X-Geo-Block-List:
+      - ''
+      X-Github-Request-Id:
+      - F876:2DBC:9A3A9:A2905:5AD85762
+      Content-Length:
+      - '45'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 19 Apr 2018 08:46:28 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - close
+      X-Served-By:
+      - cache-sin18021-SIN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1524127588.834652,VS0,VE294
+      Vary:
+      - Authorization,Accept-Encoding, Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fastly-Request-Id:
+      - e8079997405d0db2f520be27f363f7c6170fb89d
+      Expires:
+      - Thu, 19 Apr 2018 08:51:28 GMT
+      Source-Age:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ":pairs:\n  - :base: MOCK\n    :target: USD\n    "
+    http_version: 
+  recorded_at: Thu, 19 Apr 2018 08:46:28 GMT
+recorded_with: VCR 4.0.0

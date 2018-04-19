@@ -3,6 +3,15 @@ require 'spec_helper'
 RSpec.describe Cryptoexchange::Services::Pairs do
   let(:pairs) { Cryptoexchange::Services::Pairs.new }
 
+  it 'fetches with a YML override if defined' do
+    anx_pairs = Cryptoexchange::Exchanges::Anx::Services::Pairs.new
+    allow(anx_pairs).to receive(:url_list_override_exist?).and_return true
+    allow(anx_pairs).to receive(:read_url_list).and_return YAML.load_file('spec/pairs_override_url.yml')
+    pairs = anx_pairs.fetch
+    expect(pairs.first.base).to eq 'MOCK'
+    expect(pairs.first.target).to eq 'USD'
+  end
+
   it 'fetches with API if PAIRS_URL exists' do
     stub_const("Cryptoexchange::Services::Pairs::PAIRS_URL", "https://www.someurls.com")
     allow(HTTP).to receive(:timeout).and_return(HTTP)

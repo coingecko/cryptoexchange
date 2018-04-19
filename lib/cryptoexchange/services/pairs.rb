@@ -10,6 +10,13 @@ module Cryptoexchange
         # If PAIRS_URL provided, use that to fetch market pairs
         return fetch_via_api if self.class::PAIRS_URL
 
+        # If gem user has an overriden yaml using URL, use that
+        # return fetch_via_url_override(user_override_url) if user_override_url_exist?
+        if url_list_override_exist?
+          market_override_url = read_url_list[:"#{exchange_class::NAME}"]
+          return fetch_via_override_url(market_override_url) if market_override_url
+        end
+
         # If gem user has an overriden yaml, use that
         return fetch_via_override(user_override_path) if user_override_exist?
 
@@ -43,6 +50,10 @@ module Cryptoexchange
         JSON.parse(fetch_response.to_s)
       end
 
+      def fetch_via_override_url(url)
+        YAML::load(HTTP.get(url).body.to_s)[:pairs]
+      end
+
       def fetch_via_override(path)
         YAML.load_file(path)[:pairs]
       end
@@ -53,6 +64,14 @@ module Cryptoexchange
 
       def default_override_path
         File.join(File.dirname(__dir__), "exchanges/#{exchange_class::NAME}/#{exchange_class::NAME}.yml")
+      end
+
+      def read_url_list
+        YAML.load_file("config/cryptoexchange/url_pairs_list.yml")
+      end
+
+      def url_list_override_exist?
+        File.exist? "config/cryptoexchange/url_pairs_list.yml"
       end
 
       def user_override_exist?
