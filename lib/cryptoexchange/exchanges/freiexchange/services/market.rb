@@ -4,34 +4,45 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            true
+            false
           end
         end
 
-        def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output, market_pair)
+        def fetch
+          output = super ticker_url
+          adapt_all(output)
         end
 
-        def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Freiexchange::Market::API_URL}/public/#{market_pair.base}"
+        def ticker_url
+          "#{Cryptoexchange::Exchanges::Freiexchange::Market::API_URL}/returnTicker"
         end
 
-        def adapt(output, market_pair)
+        def adapt_all(output)
+          output.map do |pair, ticker|
+            base, target = pair.split("_")
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+                            base: base,
+                            target: target,
+                            market: Freiexchange::Market::NAME
+                          )
+            adapt(market_pair, ticker)
+          end
+        end
+
+        def adapt(market_pair, output)
+          market = output
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Freiexchange::Market::NAME
-
-          ticker.volume = NumericHelper.to_d(output['public']['volume'])
-          ticker.high = NumericHelper.to_d(output['public']['high'])
-          ticker.low = NumericHelper.to_d(output['public']['low'])
-          ticker.last = NumericHelper.to_d(output['public']['last'])
+          ticker.volume = NumericHelper.to_d(market.first['volume24h'])
+          ticker.high = NumericHelper.to_d(market.first['high'])
+          ticker.low = NumericHelper.to_d(market.first['low'])
+          ticker.last = NumericHelper.to_d(market.first['last'])
           ticker.timestamp = Time.now.to_i
-          ticker.payload = output
+          ticker.payload = market
           ticker
         end
-
       end
     end
   end
