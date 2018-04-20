@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://open-api.coinlink.co.kr/openApi/orderbook?apiKey=TEST1&currency=BTC&lineArr=AP
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Secretheader:
+      - 4b5bbbb4f562e01077600db506816a55bd7da91f2aef0b0cf1d93c5779565942
+      Connection:
+      - close
+      Host:
+      - open-api.coinlink.co.kr
+      User-Agent:
+      - http.rb/2.2.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 20 Apr 2018 07:19:06 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '3901'
+      Connection:
+      - close
+      Set-Cookie:
+      - WMONID=MWGiQbALAqu; Expires=Sat, 20-Apr-2019 16:19:6 GMT; Path=/
+    body:
+      encoding: UTF-8
+      string: '{"status":"0","message":"정상처리","orderNumber":0,"data":{"order_currency":"BTC","asks":[{"it_market_cost":"30000000","it_action":"sell","nResCoin":"0.0017"},{"it_market_cost":"29000000","it_action":"sell","nResCoin":"0.0082"},{"it_market_cost":"26780000","it_action":"sell","nResCoin":"0.0011"},{"it_market_cost":"26501000","it_action":"sell","nResCoin":"0.0652"},{"it_market_cost":"26000000","it_action":"sell","nResCoin":"0.02"},{"it_market_cost":"25700000","it_action":"sell","nResCoin":"0.015"},{"it_market_cost":"25000000","it_action":"sell","nResCoin":"0.01"},{"it_market_cost":"24000000","it_action":"sell","nResCoin":"0.0053"},{"it_market_cost":"23740000","it_action":"sell","nResCoin":"0.003"},{"it_market_cost":"22938000","it_action":"sell","nResCoin":"0.006"},{"it_market_cost":"21458500","it_action":"sell","nResCoin":"0.0019"},{"it_market_cost":"21000000","it_action":"sell","nResCoin":"0.01"},{"it_market_cost":"20495000","it_action":"sell","nResCoin":"0.0342"},{"it_market_cost":"20001000","it_action":"sell","nResCoin":"0.001"},{"it_market_cost":"19000000","it_action":"sell","nResCoin":"0.0105"},{"it_market_cost":"18627000","it_action":"sell","nResCoin":"0.0056"},{"it_market_cost":"18459000","it_action":"sell","nResCoin":"0.0123"},{"it_market_cost":"18000000","it_action":"sell","nResCoin":"0.1"},{"it_market_cost":"17500000","it_action":"sell","nResCoin":"0.0726"},{"it_market_cost":"17415000","it_action":"sell","nResCoin":"0.00935683"},{"it_market_cost":"17390000","it_action":"sell","nResCoin":"0.1"},{"it_market_cost":"16819500","it_action":"sell","nResCoin":"0.0032"},{"it_market_cost":"16800000","it_action":"sell","nResCoin":"0.0044"},{"it_market_cost":"16500000","it_action":"sell","nResCoin":"0.1097"},{"it_market_cost":"16000000","it_action":"sell","nResCoin":"0.0832"},{"it_market_cost":"15900000","it_action":"sell","nResCoin":"0.11"},{"it_market_cost":"15196500","it_action":"sell","nResCoin":"0.0001"},{"it_market_cost":"14100000","it_action":"sell","nResCoin":"0.0603"},{"it_market_cost":"13400000","it_action":"sell","nResCoin":"0.01"},{"it_market_cost":"13065500","it_action":"sell","nResCoin":"0.0017"},{"it_market_cost":"13050000","it_action":"sell","nResCoin":"0.003"},{"it_market_cost":"13000000","it_action":"sell","nResCoin":"0.007"},{"it_market_cost":"12690000","it_action":"sell","nResCoin":"0.01273261"},{"it_market_cost":"12687000","it_action":"sell","nResCoin":"0.1424"},{"it_market_cost":"12500000","it_action":"sell","nResCoin":"0.03"},{"it_market_cost":"12000000","it_action":"sell","nResCoin":"0.02"},{"it_market_cost":"11995500","it_action":"sell","nResCoin":"0.0242"},{"it_market_cost":"9000000","it_action":"sell","nResCoin":"0.0132"},{"it_market_cost":"8600000","it_action":"sell","nResCoin":"0.1"},{"it_market_cost":"6999000","it_action":"sell","nResCoin":"0.07455718"},{"it_market_cost":"6939500","it_action":"sell","nResCoin":"0.0249"},{"it_market_cost":"6939000","it_action":"sell","nResCoin":"0.07"},{"it_market_cost":"6750000","it_action":"sell","nResCoin":"0.11394586"},{"it_market_cost":"6749500","it_action":"sell","nResCoin":"0.00378995"}],"bids":[{"it_market_cost":"5515500","it_action":"buy","nResCoin":"0.003"},{"it_market_cost":"5515000","it_action":"buy","nResCoin":"0.0144"},{"it_market_cost":"5514000","it_action":"buy","nResCoin":"0.0764"},{"it_market_cost":"5512500","it_action":"buy","nResCoin":"0.0453"},{"it_market_cost":"5501000","it_action":"buy","nResCoin":"0.0285"},{"it_market_cost":"4800000","it_action":"buy","nResCoin":"0.0047"},{"it_market_cost":"4500000","it_action":"buy","nResCoin":"0.02"},{"it_market_cost":"3880000","it_action":"buy","nResCoin":"0.0049"},{"it_market_cost":"2004000","it_action":"buy","nResCoin":"0.002"},{"it_market_cost":"1000000","it_action":"buy","nResCoin":"0.001"},{"it_market_cost":"10000","it_action":"buy","nResCoin":"0.0019"}],"payment_currency":"KRW","timestamp":1524208746}}'
+    http_version: 
+  recorded_at: Fri, 20 Apr 2018 07:19:07 GMT
+recorded_with: VCR 3.0.3
