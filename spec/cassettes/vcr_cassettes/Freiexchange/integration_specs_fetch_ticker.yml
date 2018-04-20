@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://freiexchange.com/api/public/ANC
+    uri: https://freiexchange.com/api/returnTicker
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 18 Apr 2018 09:05:09 GMT
+      - Fri, 20 Apr 2018 06:05:25 GMT
       Server:
       - Apache/2.4.25
       Expires:
@@ -28,8 +28,6 @@ http_interactions:
       - no-store, no-cache, must-revalidate
       Pragma:
       - no-cache
-      Vary:
-      - Accept-Encoding
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -37,20 +35,287 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       Set-Cookie:
-      - ci_session=rruqcpt09toscdb644vvqsafo3r3f89v; expires=Wed, 18-Apr-2018 09:25:09
+      - ci_session=5sl6r6alup25bnueamenmo55nao7i8qj; expires=Fri, 20-Apr-2018 06:25:25
         GMT; Max-Age=1200; path=/; domain=.freiexchange.com; secure; HttpOnly; Secure
-      - csrf_cookie_name=c6129a979cac8f5005aca3dab1972276; expires=Wed, 18-Apr-2018
-        10:05:09 GMT; Max-Age=3600; path=/; domain=.freiexchange.com; secure; HttpOnly;
+      - csrf_cookie_name=f26aa7944a86a86b79eafa5b374b7171; expires=Fri, 20-Apr-2018
+        07:05:24 GMT; Max-Age=3600; path=/; domain=.freiexchange.com; secure; HttpOnly;
         Secure
       Content-Length:
-      - '173'
+      - '7645'
       Connection:
       - close
       Content-Type:
-      - text/html; charset=UTF-8
+      - application/json
     body:
-      encoding: UTF-8
-      string: '{"public":{"marketname":"ANC_BTC","marketid":"6","volume":"271","average":"0.00009629","high":"0.00009700","low":"0.00009555","volume_btc":"0.02618836","last":"0.00009555"}}'
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "FRC_BTC": [
+                {
+                    "marketid": "1",
+                    "volume24h": "1008.78622170",
+                    "average24h": "0.00000091",
+                    "high": "0.00000091",
+                    "low": "0.00000091",
+                    "last": "0.00000091",
+                    "volume24h_btc": "0.00091799",
+                    "percent_change_24h": "0.000000000000"
+                }
+            ],
+            "SDR_BTC": [
+                {
+                    "marketid": "3",
+                    "volume24h": "0.00000000",
+                    "average24h": "0.00000000",
+                    "high": "0.00000000",
+                    "low": "0.00000000",
+                    "last": "0.00001000",
+                    "volume24h_btc": "0.00000000",
+                    "percent_change_24h": null
+                }
+            ],
+            "ANC_BTC": [
+                {
+                    "marketid": "6",
+                    "volume24h": "7444.73307427",
+                    "average24h": "0.00010457",
+                    "high": "0.00011490",
+                    "low": "0.00009001",
+                    "last": "0.00009100",
+                    "volume24h_btc": "0.80078590",
+                    "percent_change_24h": "-14.912087912088"
+                }
+            ],
+            "XWC_BTC": [
+                {
+                    "marketid": "7",
+                    "volume24h": "183.61436722",
+                    "average24h": "0.00000519",
+                    "high": "0.00000523",
+                    "low": "0.00000512",
+                    "last": "0.00000523",
+                    "volume24h_btc": "0.00095699",
+                    "percent_change_24h": "0.764818355641"
+                }
+            ],
+            "LTC_BTC": [
+                {
+                    "marketid": "8",
+                    "volume24h": "0.40751126",
+                    "average24h": "0.01622098",
+                    "high": "0.01997778",
+                    "low": "0.01508666",
+                    "last": "0.01530000",
+                    "volume24h_btc": "0.00634226",
+                    "percent_change_24h": "-6.019477124183"
+                }
+            ],
+            "SLM_BTC": [
+                {
+                    "marketid": "9",
+                    "volume24h": "7.74789796",
+                    "average24h": "0.00000110",
+                    "high": "0.00000110",
+                    "low": "0.00000110",
+                    "last": "0.00000110",
+                    "volume24h_btc": "0.00000852",
+                    "percent_change_24h": "0.000000000000"
+                }
+            ],
+            "CHAN_BTC": [
+                {
+                    "marketid": "10",
+                    "volume24h": "0.09480042",
+                    "average24h": "0.00000480",
+                    "high": "0.00000481",
+                    "low": "0.00000481",
+                    "last": "0.00000481",
+                    "volume24h_btc": "0.00000045",
+                    "percent_change_24h": "0.207900207900"
+                }
+            ],
+            "DOGE_BTC": [
+                {
+                    "marketid": "11",
+                    "volume24h": "1349.79999999",
+                    "average24h": "0.00000083",
+                    "high": "0.00000089",
+                    "low": "0.00000067",
+                    "last": "0.00000067",
+                    "volume24h_btc": "0.00118950",
+                    "percent_change_24h": "-23.880597014925"
+                }
+            ],
+            "ILC_BTC": [
+                {
+                    "marketid": "12",
+                    "volume24h": "0.61231280",
+                    "average24h": "0.00000112",
+                    "high": "0.00000112",
+                    "low": "0.00000112",
+                    "last": "0.00000112",
+                    "volume24h_btc": "0.00000068",
+                    "percent_change_24h": "0.000000000000"
+                }
+            ],
+            "DTC_BTC": [
+                {
+                    "marketid": "13",
+                    "volume24h": "611.59937602",
+                    "average24h": "0.00000102",
+                    "high": "0.00000129",
+                    "low": "0.00000084",
+                    "last": "0.00000084",
+                    "volume24h_btc": "0.00064937",
+                    "percent_change_24h": "-21.428571428571"
+                }
+            ],
+            "MRN_BTC": [
+                {
+                    "marketid": "14",
+                    "volume24h": "4.55237387",
+                    "average24h": "0.00000004",
+                    "high": "0.00000004",
+                    "low": "0.00000004",
+                    "last": "0.00000004",
+                    "volume24h_btc": "0.00000018",
+                    "percent_change_24h": "0.000000000000"
+                }
+            ],
+            "TOKC_BTC": [
+                {
+                    "marketid": "15",
+                    "volume24h": "17.28047475",
+                    "average24h": "0.00000016",
+                    "high": "0.00000016",
+                    "low": "0.00000016",
+                    "last": "0.00000016",
+                    "volume24h_btc": "0.00000276",
+                    "percent_change_24h": "0.000000000000"
+                }
+            ],
+            "NYC_BTC": [
+                {
+                    "marketid": "16",
+                    "volume24h": "0.00000000",
+                    "average24h": "0.00000000",
+                    "high": "0.00000000",
+                    "low": "0.00000000",
+                    "last": "0.00000001",
+                    "volume24h_btc": "0.00000000",
+                    "percent_change_24h": null
+                }
+            ],
+            "SUPP_BTC": [
+                {
+                    "marketid": "17",
+                    "volume24h": "0.61466757",
+                    "average24h": "0.00000500",
+                    "high": "0.00000500",
+                    "low": "0.00000500",
+                    "last": "0.00000500",
+                    "volume24h_btc": "0.00000307",
+                    "percent_change_24h": "0.000000000000"
+                }
+            ],
+            "ATB_BTC": [
+                {
+                    "marketid": "18",
+                    "volume24h": "0.02350469",
+                    "average24h": "0.00000104",
+                    "high": "0.00000104",
+                    "low": "0.00000104",
+                    "last": "0.00000104",
+                    "volume24h_btc": "0.00000002",
+                    "percent_change_24h": "0.000000000000"
+                }
+            ],
+            "CDT_BTC": [
+                {
+                    "marketid": "19",
+                    "volume24h": "0.24305237",
+                    "average24h": "0.00000015",
+                    "high": "0.00000015",
+                    "low": "0.00000015",
+                    "last": "0.00000015",
+                    "volume24h_btc": "0.00000003",
+                    "percent_change_24h": "0.000000000000"
+                }
+            ],
+            "QRK_BTC": [
+                {
+                    "marketid": "20",
+                    "volume24h": "0.35046000",
+                    "average24h": "0.00000150",
+                    "high": "0.00000150",
+                    "low": "0.00000150",
+                    "last": "0.00000150",
+                    "volume24h_btc": "0.00000052",
+                    "percent_change_24h": "0.000000000000"
+                }
+            ],
+            "DYOR_BTC": [
+                {
+                    "marketid": "21",
+                    "volume24h": "0.00000000",
+                    "average24h": "0.00000000",
+                    "high": "0.00000000",
+                    "low": "0.00000000",
+                    "last": "0.00000001",
+                    "volume24h_btc": "0.00000000",
+                    "percent_change_24h": null
+                }
+            ],
+            "XCN_BTC": [
+                {
+                    "marketid": "22",
+                    "volume24h": "9423.37500000",
+                    "average24h": "0.00000016",
+                    "high": "0.00000016",
+                    "low": "0.00000016",
+                    "last": "0.00000016",
+                    "volume24h_btc": "0.00150774",
+                    "percent_change_24h": "0.000000000000"
+                }
+            ],
+            "DIME_BTC": [
+                {
+                    "marketid": "23",
+                    "volume24h": "0.00000000",
+                    "average24h": "0.00000000",
+                    "high": "0.00000000",
+                    "low": "0.00000000",
+                    "last": "0.00000001",
+                    "volume24h_btc": "0.00000000",
+                    "percent_change_24h": null
+                }
+            ],
+            "HUM_BTC": [
+                {
+                    "marketid": "24",
+                    "volume24h": "0.00000000",
+                    "average24h": "0.00000000",
+                    "high": "0.00000000",
+                    "low": "0.00000000",
+                    "last": "0.00000001",
+                    "volume24h_btc": "0.00000000",
+                    "percent_change_24h": null
+                }
+            ],
+            "MANNA_BTC": [
+                {
+                    "marketid": "25",
+                    "volume24h": "200.00000000",
+                    "average24h": "0.00000105",
+                    "high": "0.00000110",
+                    "low": "0.00000100",
+                    "last": "0.00000110",
+                    "volume24h_btc": "0.00021990",
+                    "percent_change_24h": "4.545454545455"
+                }
+            ],
+            "SKC_BTC": []
+        }
     http_version: 
-  recorded_at: Wed, 18 Apr 2018 09:05:10 GMT
+  recorded_at: Fri, 20 Apr 2018 06:05:25 GMT
 recorded_with: VCR 3.0.3
