@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graviex.net/api/v2/tickers/giobtc.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - graviex.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '203'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      - max-age=31536000
+      X-Request-Id:
+      - d53989d1-3fda-473e-bd23-565598f735ec
+      Etag:
+      - '"1b07a734e4f42a6fa285a75eb5373213"'
+      X-Runtime:
+      - '0.008712'
+      Date:
+      - Fri, 20 Apr 2018 21:38:09 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.2.2
+      Server:
+      - nginx/1.12.2 + Phusion Passenger 5.2.2
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1524260289,"ticker":{"buy":"0.000000089","sell":"0.000000094","low":"0.000000077","high":"0.000000109","last":"0.000000089","vol":"3910682.8956","volbtc":"0.3441262231241","change":"-0.183486239"}}'
+    http_version: 
+  recorded_at: Fri, 20 Apr 2018 21:38:09 GMT
+recorded_with: VCR 4.0.0
