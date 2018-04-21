@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.paradex.io/consumer/v0/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Api-Key:
+      - PadexApiKeyPlaceholder
+      Connection:
+      - close
+      Host:
+      - api.paradex.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Sat, 21 Apr 2018 04:36:20 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3029'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id": 9, "symbol": "BAT/WETH", "baseToken": "BAT", "quoteToken":
+        "WETH", "minOrderSize": "0E-18", "maxOrderSize": "50.000000000000000000",
+        "priceMaxDecimals": 6, "amountMaxDecimals": 5}, {"id": 1, "symbol": "MKR/WETH",
+        "baseToken": "MKR", "quoteToken": "WETH", "minOrderSize": "0E-18", "maxOrderSize":
+        "50.000000000000000000", "priceMaxDecimals": 5, "amountMaxDecimals": 3}, {"id":
+        5, "symbol": "EOS/WETH", "baseToken": "EOS", "quoteToken": "WETH", "minOrderSize":
+        "0E-18", "maxOrderSize": "50.000000000000000000", "priceMaxDecimals": 5, "amountMaxDecimals":
+        5}, {"id": 10, "symbol": "WETH/DAI", "baseToken": "WETH", "quoteToken": "DAI",
+        "minOrderSize": "0E-18", "maxOrderSize": "40000.000000000000000000", "priceMaxDecimals":
+        5, "amountMaxDecimals": 5}, {"id": 6, "symbol": "OMG/WETH", "baseToken": "OMG",
+        "quoteToken": "WETH", "minOrderSize": "0E-18", "maxOrderSize": "50.000000000000000000",
+        "priceMaxDecimals": 5, "amountMaxDecimals": 5}, {"id": 3, "symbol": "REP/WETH",
+        "baseToken": "REP", "quoteToken": "WETH", "minOrderSize": "0E-18", "maxOrderSize":
+        "50.000000000000000000", "priceMaxDecimals": 5, "amountMaxDecimals": 5}, {"id":
+        8, "symbol": "SNT/WETH", "baseToken": "SNT", "quoteToken": "WETH", "minOrderSize":
+        "0E-18", "maxOrderSize": "50.000000000000000000", "priceMaxDecimals": 6, "amountMaxDecimals":
+        5}, {"id": 4, "symbol": "ZRX/WETH", "baseToken": "ZRX", "quoteToken": "WETH",
+        "minOrderSize": "0E-18", "maxOrderSize": "50.000000000000000000", "priceMaxDecimals":
+        6, "amountMaxDecimals": 5}, {"id": 12, "symbol": "MKR/DAI", "baseToken": "MKR",
+        "quoteToken": "DAI", "minOrderSize": "0E-18", "maxOrderSize": "40000.000000000000000000",
+        "priceMaxDecimals": 4, "amountMaxDecimals": 4}, {"id": 13, "symbol": "REP/DAI",
+        "baseToken": "REP", "quoteToken": "DAI", "minOrderSize": "0E-18", "maxOrderSize":
+        "40000.000000000000000000", "priceMaxDecimals": 4, "amountMaxDecimals": 4},
+        {"id": 14, "symbol": "ZRX/DAI", "baseToken": "ZRX", "quoteToken": "DAI", "minOrderSize":
+        "0E-18", "maxOrderSize": "40000.000000000000000000", "priceMaxDecimals": 4,
+        "amountMaxDecimals": 4}, {"id": 15, "symbol": "SPANK/WETH", "baseToken": "SPANK",
+        "quoteToken": "WETH", "minOrderSize": "0E-18", "maxOrderSize": "50.000000000000000000",
+        "priceMaxDecimals": 6, "amountMaxDecimals": 5}, {"id": 16, "symbol": "REQ/WETH",
+        "baseToken": "REQ", "quoteToken": "WETH", "minOrderSize": "0E-18", "maxOrderSize":
+        "50.000000000000000000", "priceMaxDecimals": 6, "amountMaxDecimals": 5}, {"id":
+        17, "symbol": "NMR/WETH", "baseToken": "NMR", "quoteToken": "WETH", "minOrderSize":
+        "0E-18", "maxOrderSize": "50.000000000000000000", "priceMaxDecimals": 5, "amountMaxDecimals":
+        5}, {"id": 18, "symbol": "NMR/DAI", "baseToken": "NMR", "quoteToken": "DAI",
+        "minOrderSize": "0E-18", "maxOrderSize": "40000.000000000000000000", "priceMaxDecimals":
+        5, "amountMaxDecimals": 5}, {"id": 19, "symbol": "OMG/DAI", "baseToken": "OMG",
+        "quoteToken": "DAI", "minOrderSize": "0E-18", "maxOrderSize": "40000.000000000000000000",
+        "priceMaxDecimals": 3, "amountMaxDecimals": 4}]'
+    http_version: 
+  recorded_at: Sat, 21 Apr 2018 04:36:20 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.paradex.io/consumer/v0/ticker?market=WETH/DAI
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Api-Key:
+      - PadexApiKeyPlaceholder
+      Connection:
+      - close
+      Host:
+      - api.paradex.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Sat, 21 Apr 2018 04:38:56 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '58'
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"last": "614.35", "bid": "605.62665", "ask": "611.71335"}'
+    http_version: 
+  recorded_at: Sat, 21 Apr 2018 04:38:56 GMT
+- request:
+    method: get
+    uri: https://api.paradex.io/consumer/v0/ohlcv?amount=1&market=WETH/DAI&period=1d
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Api-Key:
+      - 1PGoOus4eBiv2q67HXnTLyKjNrwVQGHK
+      Connection:
+      - close
+      Host:
+      - api.paradex.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Sat, 21 Apr 2018 04:38:57 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '204'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"date": "2018-04-21T00:00:00Z", "open": "616.771310000000000000",
+        "high": "614.350000000000000000", "low": "614.350000000000000000", "close":
+        "614.350000000000000000", "volume": "5.000000000000000000"}]'
+    http_version: 
+  recorded_at: Sat, 21 Apr 2018 04:38:58 GMT
+recorded_with: VCR 4.0.0
