@@ -34,12 +34,12 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Gate::Market::NAME
-          ticker.ask       = NumericHelper.to_d(output['lowestAsk'])
-          ticker.bid       = NumericHelper.to_d(output['highestBid'])
+          ticker.ask       = NumericHelper.to_d(output['sell'])
+          ticker.bid       = NumericHelper.to_d(output['buy'])
           ticker.last      = NumericHelper.to_d(output['last'])
-          ticker.high      = NumericHelper.to_d(output['high24hr'])
-          ticker.low       = NumericHelper.to_d(output['low24hr'])
-          ticker.volume    = NumericHelper.to_d(output['quoteVolume'])
+          ticker.high      = NumericHelper.to_d(output['high'])
+          ticker.low       = NumericHelper.to_d(output['low'])
+          ticker.volume    = NumericHelper.to_d(output["vol_#{market_pair.base.downcase}"])
           ticker.timestamp = Time.now.to_i
           ticker.payload   = output
           ticker

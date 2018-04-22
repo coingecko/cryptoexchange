@@ -2,9 +2,9 @@
 http_interactions:
 - request:
     method: get
-    uri: http://data.gate.io/api2/1/pairs
+    uri: http://data.gate.io/api/1/pairs
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       Connection:
@@ -12,22 +12,25 @@ http_interactions:
       Host:
       - data.gate.io
       User-Agent:
-      - http.rb/1.0.4
+      - http.rb/3.0.0
   response:
     status:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx/1.10.3 (Ubuntu)
       Date:
-      - Thu, 23 Nov 2017 12:16:17 GMT
+      - Sun, 22 Apr 2018 08:06:39 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
       - chunked
       Connection:
       - close
+      Set-Cookie:
+      - AWSALB=bPeQ5WJ8N8mJscwBL5PAKTEwY6LzHAbKf+EheQBrfGCdhfNFlAvIveBnrty/TvNBoKTofLOdY+IJ3Nokv6xkOnInCjDWZHVawx/AiqiGJVnYvpdeaqTBFE+j2NUP;
+        Expires=Sun, 29 Apr 2018 08:06:39 GMT; Path=/
+      Server:
+      - nginx/1.10.3 (Ubuntu)
       X-Frame-Options:
       - SAMEORIGIN
       X-Powered-By:
@@ -38,7 +41,7 @@ http_interactions:
       - no-cache, must-revalidate
     body:
       encoding: ASCII-8BIT
-      string: '["btc_usdt","bch_usdt","eth_usdt","etc_usdt","qtum_usdt","ltc_usdt","dash_usdt","zec_usdt","btm_usdt","eos_usdt","req_usdt","snt_usdt","omg_usdt","pay_usdt","cvc_usdt","zrx_usdt","tnt_usdt","xmr_usdt","xrp_usdt","doge_usdt","bat_usdt","llt_usdt","pst_usdt","btg_usdt","dpy_usdt","lrc_usdt","storj_usdt","rdn_usdt","stx_usdt","knc_usdt","link_usdt","cdt_usdt","ae_usdt","ae_eth","cdt_eth","rdn_eth","stx_eth","knc_eth","link_eth","req_eth","rcn_eth","trx_eth","ppt_eth","arn_eth","kick_eth","wtc_eth","bnt_eth","ven_eth","mco_eth","fun_eth","data_eth","rlc_eth","zsc_eth","wings_eth","gvt_eth","ctr_eth","veri_eth","mda_eth","rcn_usdt","trx_usdt","kick_usdt","ven_usdt","mco_usdt","fun_usdt","data_usdt","zsc_usdt","ctr_usdt","mda_usdt","powr_usdt","powr_eth","powr_btc","fil_usdt","bcd_usdt","bcd_btc","hsr_usdt","hsr_btc","hsr_eth","qsp_usdt","qsp_eth","ink_btc","ink_usdt","ink_eth","ink_qtum","bot_qtum","bot_usdt","bot_eth","qbt_qtum","neo_usdt","gas_usdt","neo_btc","gas_btc","eth_btc","etc_btc","etc_eth","zec_btc","dash_btc","ltc_btc","bch_btc","btg_btc","qtum_btc","qtum_eth","xrp_btc","doge_btc","xmr_btc","zrx_btc","zrx_eth","dnt_eth","dpy_eth","oax_eth","rep_eth","lrc_eth","lrc_btc","pst_eth","bcdn_eth","tnt_eth","snt_eth","snt_btc","btm_eth","llt_eth","omg_eth","omg_btc","pay_eth","pay_btc","bat_eth","bat_btc","cvc_eth","storj_eth","storj_btc","eos_eth","eos_btc"]'
+      string: '["btc_usdt","bch_usdt","eth_usdt","etc_usdt","qtum_usdt","ltc_usdt","dash_usdt","zec_usdt","btm_usdt","eos_usdt","req_usdt","snt_usdt","omg_usdt","pay_usdt","cvc_usdt","zrx_usdt","tnt_usdt","xmr_usdt","xrp_usdt","doge_usdt","bat_usdt","pst_usdt","btg_usdt","dpy_usdt","lrc_usdt","storj_usdt","rdn_usdt","stx_usdt","knc_usdt","link_usdt","cdt_usdt","ae_usdt","ae_eth","ae_btc","cdt_eth","rdn_eth","stx_eth","knc_eth","link_eth","req_eth","rcn_eth","trx_eth","arn_eth","kick_eth","bnt_eth","ven_eth","mco_eth","fun_eth","data_eth","rlc_eth","zsc_eth","wings_eth","ctr_eth","mda_eth","rcn_usdt","trx_usdt","kick_usdt","ven_usdt","mco_usdt","fun_usdt","data_usdt","zsc_usdt","mda_usdt","xtz_usdt","gnt_usdt","gnt_eth","gem_usdt","gem_eth","rfr_usdt","rfr_eth","dadi_usdt","dadi_eth","abt_usdt","abt_eth","ledu_usdt","ledu_btc","ledu_eth","ost_usdt","ost_eth","xlm_usdt","xlm_eth","xlm_btc","mobi_usdt","mobi_eth","mobi_btc","ocn_usdt","ocn_eth","ocn_btc","zpt_usdt","zpt_eth","zpt_btc","cofi_usdt","cofi_eth","jnt_usdt","jnt_eth","jnt_btc","blz_usdt","blz_eth","gxs_usdt","gxs_btc","mtn_usdt","mtn_eth","ruff_usdt","ruff_eth","ruff_btc","tnc_usdt","tnc_eth","tnc_btc","zil_usdt","zil_eth","tio_usdt","tio_eth","bto_usdt","bto_eth","theta_usdt","theta_eth","ddd_usdt","ddd_eth","ddd_btc","mkr_usdt","mkr_eth","dai_usdt","smt_usdt","smt_eth","mdt_usdt","mdt_eth","mdt_btc","mana_usdt","mana_eth","lun_usdt","lun_eth","salt_usdt","salt_eth","fuel_usdt","fuel_eth","elf_usdt","elf_eth","drgn_usdt","drgn_eth","gtc_usdt","gtc_eth","gtc_btc","qlc_usdt","qlc_btc","qlc_eth","dbc_usdt","dbc_btc","dbc_eth","bnty_usdt","bnty_eth","lend_usdt","lend_eth","icx_usdt","icx_eth","btf_usdt","btf_btc","ada_usdt","ada_btc","lsk_usdt","lsk_btc","waves_usdt","waves_btc","bifi_usdt","bifi_btc","mds_eth","mds_usdt","dgd_usdt","dgd_eth","qash_usdt","qash_eth","qash_btc","powr_usdt","powr_eth","powr_btc","fil_usdt","bcd_usdt","bcd_btc","sbtc_usdt","sbtc_btc","god_usdt","god_btc","bcx_usdt","bcx_btc","hsr_usdt","hsr_btc","hsr_eth","qsp_usdt","qsp_eth","ink_btc","ink_usdt","ink_eth","ink_qtum","med_qtum","med_eth","med_usdt","bot_qtum","bot_usdt","bot_eth","qbt_qtum","qbt_eth","qbt_usdt","tsl_qtum","tsl_usdt","gnx_usdt","gnx_eth","neo_usdt","gas_usdt","neo_btc","gas_btc","iota_usdt","iota_btc","nas_usdt","nas_eth","nas_btc","eth_btc","etc_btc","etc_eth","zec_btc","dash_btc","ltc_btc","bch_btc","btg_btc","qtum_btc","qtum_eth","xrp_btc","doge_btc","xmr_btc","zrx_btc","zrx_eth","dnt_eth","dpy_eth","oax_eth","rep_eth","lrc_eth","lrc_btc","pst_eth","bcdn_eth","bcdn_usdt","tnt_eth","snt_eth","snt_btc","btm_eth","btm_btc","llt_eth","snet_eth","snet_usdt","llt_snet","omg_eth","omg_btc","pay_eth","pay_btc","bat_eth","bat_btc","cvc_eth","storj_eth","storj_btc","eos_eth","eos_btc","bts_usdt","bts_btc","tips_eth","xmc_btc","cs_eth","cs_usdt","man_eth","man_usdt","rem_eth","lym_eth","lym_usdt","instar_eth","ont_eth","ont_usdt","bft_eth","bft_usdt","iht_eth","iht_usdt","senc_eth","senc_usdt","tomo_eth","elec_eth","ship_eth","tfd_eth","hav_eth","hur_eth","lst_eth","swh_eth","swh_usdt"]'
     http_version: 
-  recorded_at: Thu, 23 Nov 2017 12:16:17 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Sun, 22 Apr 2018 08:06:39 GMT
+recorded_with: VCR 4.0.0
