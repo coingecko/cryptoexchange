@@ -135,6 +135,7 @@ Or install it yourself as:
 | RightBTC          | Y       | Y          | Y       |         | Y           |
 | SouthXchange      | Y       | Y          | Y       |         | Y           |
 | Stocks Exchange   | Y       |            |         |         | Y           |
+| Switcheo          | Y       | N          | N       |         | Y           |
 | SZZC              | Y       |            |         |         | Y           |
 | The Rock Trading  | Y       |            |         |         | Y           |
 | Tidex             | Y       |            |         |         | Y           |
