@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.coinut.com/
+    body:
+      encoding: UTF-8
+      string: '{"nonce":29103,"request":"inst_tick", "inst_id":852380 }'
+    headers:
+      X-Signature:
+      - 0b7cd485ae8a72ffb116a4dc315fcabccc4fec788b8cab0601d151de7b5b93ec
+      Connection:
+      - close
+      Host:
+      - api.coinut.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 23 Apr 2018 06:20:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '454'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0e40a87cb0c2d4cfcaf973d67db6e6111524464445; expires=Tue, 23-Apr-19
+        06:20:45 GMT; path=/; domain=.coinut.com; HttpOnly
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 40fe39e34ee53210-SIN
+    body:
+      encoding: UTF-8
+      string: '{"high24":"11876.26000000","highest_buy":"11663.35000000","inst_id":852380,"last":"11876.26000000","low24":"10002.77000000","lowest_sell":"11691.86000000","nonce":29103,"open_interest":"0.00000000","prev_trans_id":2421767187,"price_change_24":"0.17433023","reply":"inst_tick","status":["OK"],"timestamp":1524464445296641,"trans_id":2421767632,"volume":"3.13233885","volume24":"0.06440000","volume24_quote":"713.20039346","volume_quote":"31239.97515938"}
+
+'
+    http_version: 
+  recorded_at: Mon, 23 Apr 2018 06:20:46 GMT
+recorded_with: VCR 4.0.0
