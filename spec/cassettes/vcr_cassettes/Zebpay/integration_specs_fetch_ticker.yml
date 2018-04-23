@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.zebapi.com/api/v1/market/ticker-new/BTC/INR
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.zebapi.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, must-revalidate, no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '175'
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - Sun, 15 Apr 2018 08:23:57 GMT
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 15 Apr 2018 08:23:57 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"market":502600.0,"buy":502999.0,"sell":502600.0,"volume":288.57559156,"24hoursHigh":510200.0,"24hoursLow":470000.0,"virtualCurrency":"btc","currency":"inr","pair":"btc-inr"}'
+    http_version: 
+  recorded_at: Sun, 15 Apr 2018 08:24:26 GMT
+recorded_with: VCR 4.0.0
