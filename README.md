@@ -93,6 +93,7 @@ Or install it yourself as:
 | CoinsMarkets      | Y       |            |         |         | Y           |
 | Coinsuper         | Y       |            |         |         | Y           |
 | Coinstock         | Y       | Y          | Y       |         | Y           |
+| Coinut            | Y       | Y          | Y       | Y       | Y           |
 | COSS              | Y       |            |         |         | Y           |
 | Cpdax             | Y       |            |         |         | Y           |
 | Crex24            | Y       | Y          | Y       |         | Y           |

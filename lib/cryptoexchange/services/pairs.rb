@@ -40,12 +40,29 @@ module Cryptoexchange
         end
       end
 
+      def fetch_via_api_using_post(endpoint = self.class::PAIRS_URL, headers = false, body = false)
+        fetch_response = if headers && body
+                           HTTP.timeout(:write => 2, :connect => 5, :read => 8).headers(headers).post(endpoint, body: body)
+                         else
+                           HTTP.timeout(:write => 2, :connect => 5, :read => 8).post(endpoint)
+                         end
+        JSON.parse(fetch_response.to_s)
+      end
+
       def fetch_via_override(path)
         YAML.load_file(path)[:pairs]
       end
 
+      def fetch_auth_credentials(path)
+        YAML.load_file(path)
+      end
+
       def user_override_path
         "config/cryptoexchange/#{exchange_class::NAME}.yml"
+      end
+
+      def auth_details_path
+        "config/cryptoexchange/cryptoexchange_api_keys.yml"
       end
 
       def default_override_path
@@ -58,6 +75,10 @@ module Cryptoexchange
 
       def default_override_exist?
         File.exist? default_override_path
+      end
+
+      def auth_file_exist?
+        File.exist? auth_details_path
       end
 
       def exchange_class
