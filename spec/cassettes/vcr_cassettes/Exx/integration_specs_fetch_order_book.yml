@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.exx.com/data/v1/depth?currency=eth_hsr
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.exx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 03 Mar 2018 02:40:25 GMT
+      Server:
+      - nginx/1.12.2
+      Content-Type:
+      - text/javascript;charset=utf-8
+      Content-Length:
+      - '639'
+      Cndserver:
+      - cache_server_1
+      X-Via:
+      - 1.1 anxun44:9 (Cdn Cache Server V2.0)
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"timestamp":1520044823,"asks":[["160000.000","0.017"],["1600.000","0.010"],["160.000","0.001"],["150.000","0.095"],["149.000","0.500"],["147.800","1.661"],["138.000","1.470"],["119.992","0.094"],["119.980","0.130"],["117.000","0.098"],["112.000","2.000"]],"bids":[["77.797","0.352"],["77.796","0.041"],["77.490","0.004"],["66.300","0.041"],["63.990","0.105"],["47.500","0.036"],["47.400","0.200"],["47.100","0.100"],["46.758","0.305"],["19.333","0.050"],["14.746","0.020"],["1.360","1.000"],["0.538","1.115"],["0.537","1.050"],["0.497","1.050"],["0.338","5.020"],["0.088","0.032"],["0.010","1.000"],["0.002","37.560"],["0.001","12.000"]]}'
+    http_version: 
+  recorded_at: Sat, 03 Mar 2018 02:40:24 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coinroom.com/api/availableCurrencies
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinroom.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 24 Mar 2018 09:30:12 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d062ddaaf202f66c9bf709a669adb31791521883812; expires=Sun, 24-Mar-19
+        09:30:12 GMT; path=/; domain=.coinroom.com; HttpOnly; Secure
+      - eec65a58188aa86962ef62bb6ff6293c2d4f856d=18kg5mmacfpgm1r18gnoj4v4afuh41sk3kbtssjq8044kbdtfmie8ssnqti8njsldmau5qstddk49qk7fccnf7idundb6phj14urpv1;
+        path=/; HttpOnly
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=15552000; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 40081e240e1c2cdb-KUL
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "real": [
+                "USD",
+                "EUR",
+                "PLN",
+                "GBP",
+                "NOK",
+                "CHF",
+                "CZK",
+                "DKK"
+            ],
+            "crypto": [
+                "BTC",
+                "LTC",
+                "ETH",
+                "DASH",
+                "XMR",
+                "BCC",
+                "PIVX",
+                "ZCOIN",
+                "LSK",
+                "ZEC",
+                "BURST",
+                "VIA",
+                "ETC"
+            ]
+        }
+    http_version: 
+  recorded_at: Sat, 24 Mar 2018 09:30:38 GMT
+recorded_with: VCR 4.0.0

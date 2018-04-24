@@ -17,12 +17,7 @@ module Cryptoexchange::Exchanges
 
         def ticker_url(market_pair)
           name = "#{market_pair.base}#{market_pair.target}".downcase
-
-          if market_pair.target == 'CNY'
-            base = Cryptoexchange::Exchanges::Huobi::Market::DOT_COM_API_URL
-          else
-            base = Cryptoexchange::Exchanges::Huobi::Market::DOT_PRO_API_URL
-          end
+          base = Cryptoexchange::Exchanges::Huobi::Market::DOT_PRO_API_URL
 
           "#{base}/market/detail/merged?symbol=#{name}"
         end

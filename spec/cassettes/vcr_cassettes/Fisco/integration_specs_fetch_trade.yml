@@ -1,0 +1,286 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.fcce.jp/api/1/trades/btc_jpy
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.fcce.jp
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 14 Dec 2017 06:56:36 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '18824'
+      Connection:
+      - close
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Set-Cookie:
+      - api.fcce.jp.chat_client_id=; Max-Age=0; Path=/; expires=Wed, 31-Dec-97 23:59:59
+        GMT
+      - locale=ja; Max-Age=315360000; Path=/; expires=Sun, 12-Dec-2027 06:56:36 GMT
+      - session=VZ8C-EgiigI3saWUveaMjrA9nB03gmbjttlKZIjqc8SvJWreqrnIy1E-6SXiOk1VXuS_U8Z-z4eE1erLwYuol4AElVwAAAAAAAAASqQgMlpHQdaMiCk-4KR9lCiMB19jc3JmdF-UjChiNDJhNjEyMmYzMTVjYTBhNjMzY2I3ZTc0NTVlYmJlOWZjMmIwN2VllIwFdG9rZW6UaAKMA2FwaZR9lHWHlC4;
+        Path=/
+      - trading_view_user_id=-1; Path=/
+      - userhash=; Max-Age=0; Path=/; expires=Thu, 14-Dec-2017 06:56:36 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"date": 1513234596, "price": 1910240.0, "amount": 0.0045, "tid":
+        86872393, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date": 1513234595,
+        "price": 1910280.0, "amount": 0.0132, "tid": 86872392, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234595, "price": 1910280.0, "amount": 0.0591,
+        "tid": 86872391, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date":
+        1513234595, "price": 1910275.0, "amount": 0.0132, "tid": 86872390, "currency_pair":
+        "btc_jpy", "trade_type": "bid"}, {"date": 1513234594, "price": 1910275.0,
+        "amount": 0.01, "tid": 86872389, "currency_pair": "btc_jpy", "trade_type":
+        "bid"}, {"date": 1513234594, "price": 1910025.0, "amount": 0.0075, "tid":
+        86872388, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date": 1513234594,
+        "price": 1910025.0, "amount": 0.01, "tid": 86872387, "currency_pair": "btc_jpy",
+        "trade_type": "ask"}, {"date": 1513234594, "price": 1910050.0, "amount": 0.0225,
+        "tid": 86872386, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date":
+        1513234592, "price": 1910280.0, "amount": 0.0152, "tid": 86872385, "currency_pair":
+        "btc_jpy", "trade_type": "bid"}, {"date": 1513234592, "price": 1910280.0,
+        "amount": 0.0154, "tid": 86872384, "currency_pair": "btc_jpy", "trade_type":
+        "bid"}, {"date": 1513234591, "price": 1910280.0, "amount": 0.0917, "tid":
+        86872382, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date": 1513234591,
+        "price": 1910275.0, "amount": 0.0232, "tid": 86872381, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234591, "price": 1910245.0, "amount": 0.0202,
+        "tid": 86872380, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date":
+        1513234591, "price": 1910020.0, "amount": 0.058, "tid": 86872379, "currency_pair":
+        "btc_jpy", "trade_type": "ask"}, {"date": 1513234591, "price": 1910280.0,
+        "amount": 0.0033, "tid": 86872378, "currency_pair": "btc_jpy", "trade_type":
+        "bid"}, {"date": 1513234589, "price": 1910280.0, "amount": 0.01, "tid": 86872377,
+        "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date": 1513234589, "price":
+        1910015.0, "amount": 0.0298, "tid": 86872376, "currency_pair": "btc_jpy",
+        "trade_type": "ask"}, {"date": 1513234589, "price": 1910045.0, "amount": 0.0202,
+        "tid": 86872375, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date":
+        1513234589, "price": 1910015.0, "amount": 0.0004, "tid": 86872374, "currency_pair":
+        "btc_jpy", "trade_type": "ask"}, {"date": 1513234589, "price": 1910280.0,
+        "amount": 0.027, "tid": 86872373, "currency_pair": "btc_jpy", "trade_type":
+        "bid"}, {"date": 1513234589, "price": 1910270.0, "amount": 0.023, "tid": 86872372,
+        "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date": 1513234588, "price":
+        1910240.0, "amount": 0.0052, "tid": 86872371, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234587, "price": 1910275.0, "amount": 0.0227,
+        "tid": 86872369, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date":
+        1513234587, "price": 1910275.0, "amount": 0.0654, "tid": 86872368, "currency_pair":
+        "btc_jpy", "trade_type": "bid"}, {"date": 1513234586, "price": 1910015.0,
+        "amount": 0.0026, "tid": 86872366, "currency_pair": "btc_jpy", "trade_type":
+        "ask"}, {"date": 1513234585, "price": 1910015.0, "amount": 0.0204, "tid":
+        86872364, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date": 1513234585,
+        "price": 1910280.0, "amount": 0.2023, "tid": 86872363, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234585, "price": 1910275.0, "amount": 0.2977,
+        "tid": 86872362, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date":
+        1513234585, "price": 1910280.0, "amount": 0.0654, "tid": 86872360, "currency_pair":
+        "btc_jpy", "trade_type": "bid"}, {"date": 1513234584, "price": 1910300.0,
+        "amount": 0.0335, "tid": 86872359, "currency_pair": "btc_jpy", "trade_type":
+        "ask"}, {"date": 1513234584, "price": 1910300.0, "amount": 0.0164, "tid":
+        86872358, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date": 1513234584,
+        "price": 1910300.0, "amount": 0.0153, "tid": 86872357, "currency_pair": "btc_jpy",
+        "trade_type": "ask"}, {"date": 1513234584, "price": 1910305.0, "amount": 0.0183,
+        "tid": 86872356, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date":
+        1513234582, "price": 1910725.0, "amount": 0.0254, "tid": 86872355, "currency_pair":
+        "btc_jpy", "trade_type": "bid"}, {"date": 1513234581, "price": 1910370.0,
+        "amount": 0.0052, "tid": 86872353, "currency_pair": "btc_jpy", "trade_type":
+        "ask"}, {"date": 1513234576, "price": 1910305.0, "amount": 0.0071, "tid":
+        86872347, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date": 1513234576,
+        "price": 1910830.0, "amount": 0.076, "tid": 86872345, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234576, "price": 1910825.0, "amount": 0.01,
+        "tid": 86872344, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date":
+        1513234574, "price": 1910305.0, "amount": 0.04, "tid": 86872343, "currency_pair":
+        "btc_jpy", "trade_type": "ask"}, {"date": 1513234574, "price": 1910305.0,
+        "amount": 0.01, "tid": 86872342, "currency_pair": "btc_jpy", "trade_type":
+        "ask"}, {"date": 1513234571, "price": 1910825.0, "amount": 0.0342, "tid":
+        86872338, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date": 1513234571,
+        "price": 1910820.0, "amount": 0.0654, "tid": 86872337, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234571, "price": 1910760.0, "amount": 0.0004,
+        "tid": 86872336, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date":
+        1513234569, "price": 1910300.0, "amount": 0.05, "tid": 86872334, "currency_pair":
+        "btc_jpy", "trade_type": "ask"}, {"date": 1513234569, "price": 1910825.0,
+        "amount": 0.003, "tid": 86872333, "currency_pair": "btc_jpy", "trade_type":
+        "bid"}, {"date": 1513234567, "price": 1910830.0, "amount": 0.2642, "tid":
+        86872330, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date": 1513234566,
+        "price": 1910830.0, "amount": 0.0847, "tid": 86872329, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234566, "price": 1911000.0, "amount": 0.0053,
+        "tid": 86872328, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date":
+        1513234564, "price": 1911020.0, "amount": 0.02, "tid": 86872325, "currency_pair":
+        "btc_jpy", "trade_type": "bid"}, {"date": 1513234564, "price": 1910300.0,
+        "amount": 0.034, "tid": 86872324, "currency_pair": "btc_jpy", "trade_type":
+        "ask"}, {"date": 1513234564, "price": 1910480.0, "amount": 0.016, "tid": 86872323,
+        "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date": 1513234564, "price":
+        1911110.0, "amount": 0.004, "tid": 86872322, "currency_pair": "btc_jpy", "trade_type":
+        "ask"}, {"date": 1513234563, "price": 1911110.0, "amount": 0.043, "tid": 86872321,
+        "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date": 1513234563, "price":
+        1911575.0, "amount": 0.0054, "tid": 86872320, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234563, "price": 1911355.0, "amount": 0.0172,
+        "tid": 86872319, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date":
+        1513234562, "price": 1911100.0, "amount": 0.0226, "tid": 86872317, "currency_pair":
+        "btc_jpy", "trade_type": "bid"}, {"date": 1513234561, "price": 1910030.0,
+        "amount": 0.0007, "tid": 86872316, "currency_pair": "btc_jpy", "trade_type":
+        "bid"}, {"date": 1513234561, "price": 1910020.0, "amount": 0.024, "tid": 86872315,
+        "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date": 1513234556, "price":
+        1911260.0, "amount": 0.0094, "tid": 86872312, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234556, "price": 1911040.0, "amount": 0.016,
+        "tid": 86872311, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date":
+        1513234554, "price": 1910020.0, "amount": 0.0026, "tid": 86872308, "currency_pair":
+        "btc_jpy", "trade_type": "ask"}, {"date": 1513234554, "price": 1910405.0,
+        "amount": 0.005, "tid": 86872307, "currency_pair": "btc_jpy", "trade_type":
+        "ask"}, {"date": 1513234554, "price": 1910830.0, "amount": 0.0041, "tid":
+        86872306, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date": 1513234554,
+        "price": 1910860.0, "amount": 0.005, "tid": 86872305, "currency_pair": "btc_jpy",
+        "trade_type": "ask"}, {"date": 1513234554, "price": 1911020.0, "amount": 0.0333,
+        "tid": 86872304, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date":
+        1513234552, "price": 1911355.0, "amount": 0.005, "tid": 86872303, "currency_pair":
+        "btc_jpy", "trade_type": "bid"}, {"date": 1513234552, "price": 1910180.0,
+        "amount": 0.0009, "tid": 86872302, "currency_pair": "btc_jpy", "trade_type":
+        "bid"}, {"date": 1513234551, "price": 1910180.0, "amount": 0.0041, "tid":
+        86872300, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date": 1513234551,
+        "price": 1910120.0, "amount": 0.005, "tid": 86872299, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234550, "price": 1910020.0, "amount": 0.006,
+        "tid": 86872298, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date":
+        1513234549, "price": 1910020.0, "amount": 0.005, "tid": 86872297, "currency_pair":
+        "btc_jpy", "trade_type": "ask"}, {"date": 1513234549, "price": 1910030.0,
+        "amount": 0.005, "tid": 86872296, "currency_pair": "btc_jpy", "trade_type":
+        "ask"}, {"date": 1513234549, "price": 1910110.0, "amount": 0.005, "tid": 86872295,
+        "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date": 1513234549, "price":
+        1910220.0, "amount": 0.0001, "tid": 86872294, "currency_pair": "btc_jpy",
+        "trade_type": "ask"}, {"date": 1513234549, "price": 1910665.0, "amount": 0.0098,
+        "tid": 86872293, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date":
+        1513234549, "price": 1910680.0, "amount": 0.0051, "tid": 86872292, "currency_pair":
+        "btc_jpy", "trade_type": "ask"}, {"date": 1513234549, "price": 1910680.0,
+        "amount": 0.008, "tid": 86872291, "currency_pair": "btc_jpy", "trade_type":
+        "ask"}, {"date": 1513234549, "price": 1910680.0, "amount": 0.006, "tid": 86872290,
+        "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date": 1513234549, "price":
+        1910680.0, "amount": 0.0053, "tid": 86872289, "currency_pair": "btc_jpy",
+        "trade_type": "ask"}, {"date": 1513234548, "price": 1912920.0, "amount": 0.0101,
+        "tid": 86872288, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date":
+        1513234548, "price": 1912920.0, "amount": 0.1, "tid": 86872287, "currency_pair":
+        "btc_jpy", "trade_type": "ask"}, {"date": 1513234548, "price": 1913120.0,
+        "amount": 0.0052, "tid": 86872286, "currency_pair": "btc_jpy", "trade_type":
+        "bid"}, {"date": 1513234547, "price": 1913120.0, "amount": 0.1155, "tid":
+        86872284, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date": 1513234547,
+        "price": 1913100.0, "amount": 0.01, "tid": 86872283, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234547, "price": 1913000.0, "amount": 0.0084,
+        "tid": 86872282, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date":
+        1513234547, "price": 1912995.0, "amount": 0.0007, "tid": 86872281, "currency_pair":
+        "btc_jpy", "trade_type": "bid"}, {"date": 1513234547, "price": 1912025.0,
+        "amount": 0.0003, "tid": 86872280, "currency_pair": "btc_jpy", "trade_type":
+        "bid"}, {"date": 1513234547, "price": 1911950.0, "amount": 0.005, "tid": 86872279,
+        "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date": 1513234547, "price":
+        1911860.0, "amount": 0.0018, "tid": 86872278, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234547, "price": 1911730.0, "amount": 0.0076,
+        "tid": 86872277, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date":
+        1513234547, "price": 1911000.0, "amount": 0.0035, "tid": 86872276, "currency_pair":
+        "btc_jpy", "trade_type": "bid"}, {"date": 1513234547, "price": 1910970.0,
+        "amount": 0.0068, "tid": 86872275, "currency_pair": "btc_jpy", "trade_type":
+        "bid"}, {"date": 1513234547, "price": 1910915.0, "amount": 0.0202, "tid":
+        86872274, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date": 1513234547,
+        "price": 1910800.0, "amount": 0.0052, "tid": 86872273, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234546, "price": 1910310.0, "amount": 0.023,
+        "tid": 86872272, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date":
+        1513234546, "price": 1910915.0, "amount": 0.002, "tid": 86872267, "currency_pair":
+        "btc_jpy", "trade_type": "bid"}, {"date": 1513234546, "price": 1910310.0,
+        "amount": 0.02, "tid": 86872266, "currency_pair": "btc_jpy", "trade_type":
+        "ask"}, {"date": 1513234545, "price": 1910970.0, "amount": 0.0154, "tid":
+        86872265, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date": 1513234545,
+        "price": 1910920.0, "amount": 0.0006, "tid": 86872264, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234543, "price": 1910920.0, "amount": 0.0424,
+        "tid": 86872263, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date":
+        1513234542, "price": 1910220.0, "amount": 0.0007, "tid": 86872262, "currency_pair":
+        "btc_jpy", "trade_type": "ask"}, {"date": 1513234542, "price": 1910870.0,
+        "amount": 0.0126, "tid": 86872261, "currency_pair": "btc_jpy", "trade_type":
+        "bid"}, {"date": 1513234539, "price": 1910915.0, "amount": 0.0035, "tid":
+        86872260, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date": 1513234538,
+        "price": 1911630.0, "amount": 0.0464, "tid": 86872257, "currency_pair": "btc_jpy",
+        "trade_type": "ask"}, {"date": 1513234537, "price": 1911630.0, "amount": 0.0008,
+        "tid": 86872256, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date":
+        1513234537, "price": 1911000.0, "amount": 0.02, "tid": 86872255, "currency_pair":
+        "btc_jpy", "trade_type": "bid"}, {"date": 1513234537, "price": 1911000.0,
+        "amount": 0.0183, "tid": 86872254, "currency_pair": "btc_jpy", "trade_type":
+        "bid"}, {"date": 1513234536, "price": 1911000.0, "amount": 0.0016, "tid":
+        86872253, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date": 1513234536,
+        "price": 1911000.0, "amount": 0.009, "tid": 86872252, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234536, "price": 1911000.0, "amount": 0.0011,
+        "tid": 86872251, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date":
+        1513234536, "price": 1910805.0, "amount": 0.0023, "tid": 86872250, "currency_pair":
+        "btc_jpy", "trade_type": "bid"}, {"date": 1513234536, "price": 1910805.0,
+        "amount": 0.013, "tid": 86872249, "currency_pair": "btc_jpy", "trade_type":
+        "ask"}, {"date": 1513234536, "price": 1910805.0, "amount": 0.0079, "tid":
+        86872248, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date": 1513234535,
+        "price": 1910805.0, "amount": 0.005, "tid": 86872247, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234535, "price": 1910805.0, "amount": 0.0038,
+        "tid": 86872246, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date":
+        1513234535, "price": 1910805.0, "amount": 0.0042, "tid": 86872245, "currency_pair":
+        "btc_jpy", "trade_type": "bid"}, {"date": 1513234534, "price": 1910805.0,
+        "amount": 0.01, "tid": 86872244, "currency_pair": "btc_jpy", "trade_type":
+        "bid"}, {"date": 1513234534, "price": 1911000.0, "amount": 0.0006, "tid":
+        86872243, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date": 1513234534,
+        "price": 1911000.0, "amount": 0.0194, "tid": 86872242, "currency_pair": "btc_jpy",
+        "trade_type": "ask"}, {"date": 1513234534, "price": 1911000.0, "amount": 0.0095,
+        "tid": 86872241, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date":
+        1513234534, "price": 1911000.0, "amount": 0.002, "tid": 86872240, "currency_pair":
+        "btc_jpy", "trade_type": "ask"}, {"date": 1513234534, "price": 1911100.0,
+        "amount": 0.0256, "tid": 86872239, "currency_pair": "btc_jpy", "trade_type":
+        "ask"}, {"date": 1513234528, "price": 1911730.0, "amount": 0.0024, "tid":
+        86872229, "currency_pair": "btc_jpy", "trade_type": "bid"}, {"date": 1513234528,
+        "price": 1911560.0, "amount": 0.0052, "tid": 86872228, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234528, "price": 1911330.0, "amount": 0.0052,
+        "tid": 86872227, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date":
+        1513234528, "price": 1911500.0, "amount": 0.0052, "tid": 86872226, "currency_pair":
+        "btc_jpy", "trade_type": "ask"}, {"date": 1513234528, "price": 1911560.0,
+        "amount": 0.01, "tid": 86872225, "currency_pair": "btc_jpy", "trade_type":
+        "ask"}, {"date": 1513234528, "price": 1911710.0, "amount": 0.0001, "tid":
+        86872224, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date": 1513234527,
+        "price": 1911860.0, "amount": 0.0032, "tid": 86872223, "currency_pair": "btc_jpy",
+        "trade_type": "bid"}, {"date": 1513234526, "price": 1911730.0, "amount": 0.005,
+        "tid": 86872219, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date":
+        1513234526, "price": 1911850.0, "amount": 0.005, "tid": 86872218, "currency_pair":
+        "btc_jpy", "trade_type": "ask"}, {"date": 1513234524, "price": 1911950.0,
+        "amount": 0.0003, "tid": 86872217, "currency_pair": "btc_jpy", "trade_type":
+        "ask"}, {"date": 1513234524, "price": 1912000.0, "amount": 0.002, "tid": 86872216,
+        "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date": 1513234524, "price":
+        1912135.0, "amount": 0.0005, "tid": 86872215, "currency_pair": "btc_jpy",
+        "trade_type": "ask"}, {"date": 1513234524, "price": 1912245.0, "amount": 0.0032,
+        "tid": 86872214, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date":
+        1513234523, "price": 1912245.0, "amount": 0.01, "tid": 86872212, "currency_pair":
+        "btc_jpy", "trade_type": "ask"}, {"date": 1513234522, "price": 1912245.0,
+        "amount": 0.02, "tid": 86872211, "currency_pair": "btc_jpy", "trade_type":
+        "ask"}, {"date": 1513234520, "price": 1912245.0, "amount": 0.0167, "tid":
+        86872210, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date": 1513234520,
+        "price": 1912245.0, "amount": 0.088, "tid": 86872209, "currency_pair": "btc_jpy",
+        "trade_type": "ask"}, {"date": 1513234518, "price": 1912245.0, "amount": 0.01,
+        "tid": 86872208, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date":
+        1513234518, "price": 1912245.0, "amount": 0.008, "tid": 86872206, "currency_pair":
+        "btc_jpy", "trade_type": "ask"}, {"date": 1513234517, "price": 1912870.0,
+        "amount": 0.01, "tid": 86872205, "currency_pair": "btc_jpy", "trade_type":
+        "bid"}, {"date": 1513234517, "price": 1912245.0, "amount": 0.04, "tid": 86872204,
+        "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date": 1513234516, "price":
+        1913000.0, "amount": 0.5, "tid": 86872203, "currency_pair": "btc_jpy", "trade_type":
+        "ask"}, {"date": 1513234516, "price": 1913000.0, "amount": 0.1568, "tid":
+        86872202, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date": 1513234516,
+        "price": 1913000.0, "amount": 0.002, "tid": 86872201, "currency_pair": "btc_jpy",
+        "trade_type": "ask"}, {"date": 1513234516, "price": 1913805.0, "amount": 0.0047,
+        "tid": 86872200, "currency_pair": "btc_jpy", "trade_type": "ask"}, {"date":
+        1513234516, "price": 1913970.0, "amount": 0.0934, "tid": 86872199, "currency_pair":
+        "btc_jpy", "trade_type": "bid"}, {"date": 1513234516, "price": 1913945.0,
+        "amount": 0.0277, "tid": 86872198, "currency_pair": "btc_jpy", "trade_type":
+        "bid"}, {"date": 1513234515, "price": 1913200.0, "amount": 0.0153, "tid":
+        86872197, "currency_pair": "btc_jpy", "trade_type": "ask"}]'
+    http_version: 
+  recorded_at: Thu, 14 Dec 2017 06:56:37 GMT
+recorded_with: VCR 3.0.3

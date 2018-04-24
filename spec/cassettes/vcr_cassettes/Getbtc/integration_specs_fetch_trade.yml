@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://getbtc.org/api/transactions?currency=USD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - getbtc.org
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.6 (Ubuntu)
+      Date:
+      - Sat, 03 Mar 2018 02:17:53 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=7qg0ms3nmu17pbb8evo6fe3614; path=/; secure; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Powered-By:
+      - WLOX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"transactions":{"0":{"id":"1076313","date":"2018-03-03 05:17:13","timestamp":"1520043433","btc":"0.00170000","maker_type":"buy","price":"11337.94","amount":"19.27","currency":"USD"},"1":{"id":"1076312","date":"2018-03-03
+        05:17:09","timestamp":"1520043429","btc":"0.15240000","maker_type":"buy","price":"11431.75","amount":"1742.20","currency":"RUB"},"2":{"id":"1076311","date":"2018-03-03
+        05:17:05","timestamp":"1520043425","btc":"0.26490000","maker_type":"buy","price":"10655.62","amount":"2822.67","currency":"EUR"},"3":{"id":"1076310","date":"2018-03-03
+        05:17:02","timestamp":"1520043422","btc":"0.00430000","maker_type":"buy","price":"11857.32","amount":"50.99","currency":"BEN"},"4":{"id":"1076309","date":"2018-03-03
+        05:17:02","timestamp":"1520043422","btc":"0.00410000","maker_type":"buy","price":"62564.73","amount":"256.52","currency":"BTW"},"5":{"id":"1076308","date":"2018-03-03
+        05:16:15","timestamp":"1520043375","btc":"0.16580000","maker_type":"buy","price":"11348.67","amount":"1881.61","currency":"USD"},"6":{"id":"1076307","date":"2018-03-03
+        05:16:11","timestamp":"1520043371","btc":"0.19330000","maker_type":"buy","price":"11462.10","amount":"2215.62","currency":"RUB"},"7":{"id":"1076306","date":"2018-03-03
+        05:16:07","timestamp":"1520043367","btc":"0.22110000","maker_type":"buy","price":"10654.81","amount":"2355.78","currency":"EUR"},"8":{"id":"1076305","date":"2018-03-03
+        05:16:01","timestamp":"1520043361","btc":"0.00440000","maker_type":"buy","price":"11894.65","amount":"52.34","currency":"BEN"},"9":{"id":"1076304","date":"2018-03-03
+        05:16:01","timestamp":"1520043361","btc":"0.00430000","maker_type":"buy","price":"62499.47","amount":"268.75","currency":"BTW"},"request_currency":"USD"}}'
+    http_version: 
+  recorded_at: Sat, 03 Mar 2018 02:18:21 GMT
+recorded_with: VCR 4.0.0
