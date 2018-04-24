@@ -153,6 +153,7 @@ Or install it yourself as:
 | Yunbi             | Y       |            |         |         | Y           |
 | Zaif              | Y       | Y          | Y       |         | Y           |
 | ZB                | Y       | Y          | Y       |         | Y           |
+| Zebpay            | Y       |            |         |         | User-Defined|
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 
