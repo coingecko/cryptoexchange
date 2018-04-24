@@ -81,6 +81,7 @@ Or install it yourself as:
 | CryptoBridge      | Y       |            |         |         | Y           |
 | CryptoHub         | Y       | N          | N       |         | Y           |
 | Cryptopia         | Y       | Y          | Y       |         | Y           |
+| Dsx               | Y       | Y          | Y       |         | Y           |
 | EtherDelta        | Y       |            |         |         | Y           |
 | Ethfinex          | Y       | Y          | Y       |         | Y           |
 | Exmo              | Y       | Y          | Y       |         | Y           |
