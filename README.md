@@ -88,6 +88,7 @@ Or install it yourself as:
 | Exx               | Y       | Y          | Y       |         | Y           |
 | Fisco             | Y       | Y          | Y       |         | Y           |
 | Forkdelta         | Y       | N          | N       |         | Y           |
+| Freiexchange      | Y       | Y          |         |         | User-Defined|
 | Gate              | Y       | Y          | Y       |         | Y           |
 | Gatecoin          | Y       |            |         |         | Y           |
 | GDAX              | Y       |            |         |         | Y           |
