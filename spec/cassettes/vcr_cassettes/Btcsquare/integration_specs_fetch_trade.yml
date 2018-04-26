@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.btcsquare.net/api/v1/history/BTC-LTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.btcsquare.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Apr 2018 09:33:11 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dad11dfb7bef3c24d8fb57d69484892391524735190; expires=Fri, 26-Apr-19
+        09:33:10 GMT; path=/; domain=.btcsquare.net; HttpOnly; Secure
+      Expires:
+      - '0'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 41180bdbbc20a33e-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: 'null'
+    http_version: 
+  recorded_at: Thu, 26 Apr 2018 09:33:11 GMT
+recorded_with: VCR 4.0.0
