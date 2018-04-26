@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Btc24::Market::API_URL}/quotehistory/#{market_pair.base.downcase}#{market_pair.target.downcase}/1440/bars/bid?timestamp=#{Time.now.to_i - 86400 * 7}&count=1"
+          "#{Cryptoexchange::Exchanges::Btc24::Market::API_URL}/quotehistory/#{market_pair.base.upcase}#{market_pair.target.upcase}/1440/bars/bid?timestamp=#{Time.now.to_i - 86400 * 7}&count=1"
         end
 
         def adapt(output,market_pair)

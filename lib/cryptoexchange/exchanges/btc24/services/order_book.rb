@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Btc24::Market::API_URL}/level2/#{market_pair.base.downcase}#{market_pair.target.downcase}"
+          "#{Cryptoexchange::Exchanges::Btc24::Market::API_URL}/level2/#{market_pair.base.upcase}#{market_pair.target.upcase}"
         end
 
         def adapt(output, market_pair)
