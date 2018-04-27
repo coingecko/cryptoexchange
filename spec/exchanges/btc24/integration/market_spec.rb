@@ -14,7 +14,7 @@ RSpec.describe 'Btc24 integration specs' do
   end
 
   it 'fetch ticker' do
-    pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'bitbank')
+    pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'btc24')
     ticker = client.ticker(pair)
 
     expect(ticker.base).to eq 'BTC'
@@ -22,6 +22,9 @@ RSpec.describe 'Btc24 integration specs' do
     expect(ticker.market).to eq 'btc24'
     expect(ticker.last).to_not be nil
     expect(ticker.high).to_not be nil
+    expect(ticker.low).to_not be nil
+    expect(ticker.ask).to_not be nil
+    expect(ticker.bid).to_not be nil
     expect(ticker.volume).to_not be nil
     expect(ticker.timestamp).to be_a Numeric
     expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
