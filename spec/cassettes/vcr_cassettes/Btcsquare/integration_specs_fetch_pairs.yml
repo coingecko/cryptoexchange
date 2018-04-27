@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.btcsquare.net/api/v1/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.btcsquare.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Apr 2018 09:31:16 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d5412313c3b6051af01de448942fb66351524735075; expires=Fri, 26-Apr-19
+        09:31:15 GMT; path=/; domain=.btcsquare.net; HttpOnly; Secure
+      Expires:
+      - '0'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4118090d8ffda35c-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"BTC-LTC":{"initialprice":"0.00000000","price":"0.00000000","high":"0.00000000","low":"0.00000000","volume":"0.000","bid":"0.01377090","ask":"0.01577080"}},{"BTC-BCH":{"initialprice":"0.14980900","price":"0.14980900","high":"0.14980900","low":"0.14980900","volume":"0.010","bid":"0.08132228","ask":"0.09432220"}},{"BTC-XVG":{"initialprice":"0.00000730","price":"0.00000730","high":"0.00000730","low":"0.00000730","volume":"0.020","bid":"0.00001530","ask":"0.00001550"}},{"BTC-ZEC":{"initialprice":"0.00000000","price":"0.00000000","high":"0.00000000","low":"0.00000000","volume":"0.000","bid":"0.01830009","ask":"0.02830000"}},{"BTC-BTG":{"initialprice":"0.00811742","price":"0.00811742","high":"0.00811742","low":"0.00811742","volume":"0.010","bid":"0.00496190","ask":"0.00596178"}},{"BTC-DASH":{"initialprice":"0.05284770","price":"0.05284770","high":"0.05284770","low":"0.05284770","volume":"0.040","bid":"0.03935620","ask":"0.04735610"}},{"BTC-NMC":{"initialprice":"0.00000000","price":"0.00000000","high":"0.00000000","low":"0.00000000","volume":"0.000","bid":"0.00017712","ask":"0.00023207"}},{"BTC-PPC":{"initialprice":"0.00000000","price":"0.00000000","high":"0.00000000","low":"0.00000000","volume":"0.000","bid":"0.00025476","ask":"0.00025485"}}]'
+    http_version: 
+  recorded_at: Thu, 26 Apr 2018 09:31:16 GMT
+recorded_with: VCR 4.0.0

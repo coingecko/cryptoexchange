@@ -55,6 +55,7 @@ Or install it yourself as:
 | BTC38             |         |            |         |         |             |
 | BTCC              | Y       |            |         |         | User-Defined|
 | BTCChina          |         |            |         |         |             |
+| Btcsquare         | Y       | Y          | Unstable|         | Y           |
 | BTER              | Y       |            |         |         | Y           |
 | Buyucoin          | Y       | N          | N       |         | Y           |
 | BX Thailand       | Y       |            |         |         | Y           |
