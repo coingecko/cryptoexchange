@@ -106,6 +106,7 @@ Or install it yourself as:
 | Itbit             | Y       | Y          | Y       |         | User-Defined|
 | Idex              | Y       | Unstable   | Y       |         | Y           |
 | KKex              | Y       | Y          | Y       |         | Y           |
+| Kkcoin            | Y       | Y          | Y       |         | Y           |
 | KyberNetwork      | Y       | N          | N       |         | Y           |
 | Jubi              | Y       |            |         |         | Y           |
 | Koinex            | Y       |            |         |         | Y           |
