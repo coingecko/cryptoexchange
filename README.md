@@ -42,6 +42,7 @@ Or install it yourself as:
 | Bitfinex          | Y       |            |         |         | Y           |
 | Bitflyer          | Y       |            |         |         | Y           |
 | Bithumb           | Y       |            |         |         | Y           |
+| Bitibu            | Y       | Y          | Y       |         | Y           |
 | Bitkonan          | Y       |            |         |         | User-Defined|
 | Bitmex            | Y       | Y          | Y       |         | Y           |
 | Bits Blockchain   | Y       | Y          |         |         | Y           |
