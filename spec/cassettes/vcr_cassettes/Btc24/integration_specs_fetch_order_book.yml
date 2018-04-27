@@ -2,33 +2,40 @@
 http_interactions:
 - request:
     method: get
-    uri: https://cryptottlivewebapi.btc24.io:8443/api/v1/public/level2/btcusd
+    uri: https://cryptottlivewebapi.btc24.io:8443/api/v1/public/level2/BTCUSD
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
+      Accept-Encoding:
+      - gzip
+      Connection:
+      - close
       Host:
-      - cryptottlivewebapi.btc24.io
+      - cryptottlivewebapi.btc24.io:8443
       User-Agent:
-      - http.rb/1.0.4
+      - http.rb/3.0.0
   response:
     status:
       code: 200
       message: OK
     headers:
-      Content-Encoding:
-      - 'gzip'
       Content-Length:
-      - '478'
+      - '449'
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Thu, 26 Apr 2018 11:40:30 GMT
+      Content-Encoding:
+      - gzip
       Server:
       - Microsoft-HTTPAPI/2.0
+      Date:
+      - Fri, 27 Apr 2018 12:07:39 GMT
+      Connection:
+      - close
     body:
       encoding: UTF-8
-      string: '[{"Timestamp":1524742822281,"BestBid":{"Volume":0.02,"Price":8806.9,"Type":"Bid"},"BestAsk":{"Volume":1.48,"Price":8874.637,"Type":"Ask"},"Bids":[{"Volume":0.02,"Price":8806.9,"Type":"Bid"},{"Volume":1.94,"Price":8799.515,"Type":"Bid"},{"Volume":1.67,"Price":8796.171,"Type":"Bid"},{"Volume":2.5,"Price":8796.134,"Type":"Bid"},{"Volume":0.57,"Price":8795.594,"Type":"Bid"},{"Volume":0.16,"Price":8794.9,"Type":"Bid"},{"Volume":0.1,"Price":8790.981,"Type":"Bid"},{"Volume":0.05,"Price":8788.586,"Type":"Bid"},{"Volume":1,"Price":8785.3,"Type":"Bid"},{"Volume":0.11,"Price":8785.142,"Type":"Bid"},{"Volume":3.16,"Price":8781.221,"Type":"Bid"},{"Volume":6,"Price":8777.1,"Type":"Bid"},{"Volume":2.64,"Price":8776.074,"Type":"Bid"},{"Volume":0.02,"Price":8775.482,"Type":"Bid"},{"Volume":0.05,"Price":8774.985,"Type":"Bid"},{"Volume":8.05,"Price":8774.9,"Type":"Bid"},{"Volume":0.01,"Price":8773.9,"Type":"Bid"},{"Volume":5.32,"Price":8772.9,"Type":"Bid"},{"Volume":4.5,"Price":8770.848,"Type":"Bid"},{"Volume":0.3,"Price":8767.047,"Type":"Bid"}],"Asks":[{"Volume":1.48,"Price":8874.637,"Type":"Ask"},{"Volume":1.87,"Price":8889.302,"Type":"Ask"},{"Volume":2.12,"Price":8889.324,"Type":"Ask"},{"Volume":1.75,"Price":8889.346,"Type":"Ask"},{"Volume":2.37,"Price":8890.808,"Type":"Ask"},{"Volume":0.3,"Price":8893.757,"Type":"Ask"},{"Volume":2.5,"Price":8896.007,"Type":"Ask"},{"Volume":2.4,"Price":8901.462,"Type":"Ask"},{"Volume":2.65,"Price":8906.547,"Type":"Ask"},{"Volume":3.2,"Price":8912.276,"Type":"Ask"},{"Volume":0.22,"Price":8913.385,"Type":"Ask"},{"Volume":0.02,"Price":8914.763,"Type":"Ask"},{"Volume":2.5,"Price":8921.343,"Type":"Ask"},{"Volume":8.96,"Price":8925.1,"Type":"Ask"},{"Volume":5.29,"Price":8926.069,"Type":"Ask"},{"Volume":6.38,"Price":8926.456,"Type":"Ask"},{"Volume":4.05,"Price":8928.946,"Type":"Ask"},{"Volume":0.19,"Price":8932.088,"Type":"Ask"},{"Volume":0.4,"Price":8943.1,"Type":"Ask"},{"Volume":0.05,"Price":8946.078,"Type":"Ask"}],"Symbol":"BTCUSD"}]'
+      string: !binary |-
+        H4sIAAAAAAAEAJ2WyW7CQAyG7zxFlDOyxp69t9I+QCVoL4hDFw5RiUClPaCKd68HCVV4EmFxjCefPb+3ZPk7adpF16/336/9rr1r0JNL1iTvHZkpH874aNZ98BG/2rQv281Pv+YnAxSmxfL01b0XQ6YcIJ9Mi8OuWNrCTZrj2c39/nPAjcFLN9ZlwAs3hTu76T72bFrefpcqPlqJenBEOtjkAViJUo1SCBoYJem0Yq1EUwDyygvLRBXWJQ3sAKXaAhttlr2E9YIlacEHVVgEVyULueCqwARW3jnmW+8clb2MEFKNcl8pB0Gy3I/JKgNXar0Y4tHO8HKEAicqKlNl5NwH7gxVYOTEDLAa1EJyNZoGu2pVthYvsMGtpV9914plPd5MykqNk1GgrDqkqIERz/n5pyNCdMrQdoANVseSVFz1pl4xzxMaFUwgWtMm9ue8hnW8VyXM/WpUgglkonnVOlImSw6UTfFsu1biak3blMDpFFM1jTaXEquaa2CQMkFWBUbISbIquSTF8h+H/DiMipXVZdZnldaKdaZsX1Vcw58+CY+MwmltzQ/923ZzWmaLh+f5Yzs5rv4ARh9ZWzEKAAA=
     http_version: 
-  recorded_at: Thu, 26 Apr 2018 11:40:30 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Fri, 27 Apr 2018 12:07:40 GMT
+recorded_with: VCR 4.0.0

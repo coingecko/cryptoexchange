@@ -1,3 +1,5 @@
+require 'zlib'
+
 module Cryptoexchange::Exchanges
   module Btc24
     module Services
@@ -9,7 +11,31 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          output = super(ticker_url(market_pair))
+          endpoint = ticker_url(market_pair)
+          output = ''
+          LruTtlCache.ticker_cache.getset(endpoint) do
+            begin
+              response = http_get(endpoint)
+              if response.code == 200
+                io = StringIO.new(response.body, 'rb')
+                gz = Zlib::GzipReader.new(io)
+                data = gz.read
+                output = JSON.parse(data)
+              elsif response.code == 400
+                raise Cryptoexchange::HttpBadRequestError, { response: response }
+              else
+                raise Cryptoexchange::HttpResponseError, { response: response }
+              end
+            rescue HTTP::ConnectionError => e
+              raise Cryptoexchange::HttpConnectionError, { error: e, response: response }
+            rescue HTTP::TimeoutError => e
+              raise Cryptoexchange::HttpTimeoutError, { error: e, response: response }
+            rescue JSON::ParserError => e
+              raise Cryptoexchange::JsonParseError, { error: e, response: response }
+            rescue TypeError => e
+              raise Cryptoexchange::TypeFormatError, { error: e, response: response }
+            end
+          end
           adapt(output,market_pair)
         end
 
@@ -23,7 +49,7 @@ module Cryptoexchange::Exchanges
           market           = output.first
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
-          ticker.market    = Bitbank::Market::NAME
+          ticker.market    = Btc24::Market::NAME
           ticker.high      = NumericHelper.to_d(market['DailyBestBuyPrice'])
           ticker.low       = NumericHelper.to_d(market['DailyBestSellPrice'])
           ticker.ask       = NumericHelper.to_d(market['BestAsk'])
@@ -50,6 +76,16 @@ module Cryptoexchange::Exchanges
           ticker.timestamp = time
           ticker.payload   = output
           ticker
+        end
+
+        def http_get(endpoint)
+          fetch_response = HTTP.timeout(:write => 2, :connect => 15, :read => 18)
+                               .follow.get(endpoint, {
+                headers: {
+                    "Accept-Encoding" => "gzip"
+                }
+              }
+          )
         end
       end
     end
