@@ -1,3 +1,5 @@
+require 'zlib'
+
 module Cryptoexchange
   module Services
     class Market
@@ -12,7 +14,14 @@ module Cryptoexchange
           begin
             response = http_get(endpoint)
             if response.code == 200
-              response.parse :json
+              if response.headers['Content-Encoding'] == 'gzip'
+                io = StringIO.new(response.body, 'rb')
+                gz = Zlib::GzipReader.new(io)
+                data = gz.read
+                JSON.parse(data)
+              else
+                response.parse :json
+              end
             elsif response.code == 400
               raise Cryptoexchange::HttpBadRequestError, { response: response }
             else
