@@ -30,18 +30,18 @@ module Cryptoexchange::Exchanges
         end
 
         #  [
-        #    "KK_ETH", // Symbol -> 0
-        #    "0.00000523", // Best bid price -> 1
-        #    "30582", // Best bid amount -> 2
-        #    "0.00000526", // Best ask price -> 3
-        #    "321179", // Best ask amount -> 4
+        #    "KK_ETH",      // Symbol                        -> 0
+        #    "0.00000523",  // Best bid price                -> 1
+        #    "30582",       // Best bid amount               -> 2
+        #    "0.00000526",  // Best ask price                -> 3
+        #    "321179",      // Best ask amount               -> 4
         #    "-0.00000005", // Price change of last 24 hours -> 5
-        #    "-0.0095", // Price change rate -> 6
-        #    "0.00000522", // Last trade price -> 7
-        #    "232.88", // Daily volume -> 8
-        #    "0.00000530", // Daily high -> 9
-        #    "0.00000495", // Daily low -> 10
-        #    "46576000.00" / / Daily amount -> 11
+        #    "-0.0095",     // Price change rate             -> 6
+        #    "0.00000522",  // Last trade price              -> 7
+        #    "232.88",      // Daily volume                  -> 8
+        #    "0.00000530",  // Daily high                    -> 9
+        #    "0.00000495",  // Daily low                     -> 10
+        #    "46576000.00"  // Daily amount                  -> 11
         #  ]
 
         def adapt(market_pair, output)
