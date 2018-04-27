@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitibu.com/api/v2/tickers/btcusd.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitibu.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Apr 2018 02:30:11 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '122'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d44d8613ac39a0a9bb500818fde441c101524796210; expires=Sat, 27-Apr-19
+        02:30:10 GMT; path=/; domain=.bitibu.com; HttpOnly
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 548fa3f4-bbc3-4379-a8f8-c1f654fa2ef4
+      Etag:
+      - '"9f4797c5925a0ccc21b140113d6988e9"'
+      X-Runtime:
+      - '0.024662'
+      X-Powered-By:
+      - Phusion Passenger 5.2.3
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 411ddd9e3c073120-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1524796211,"ticker":{"buy":"9300.0","sell":"9310.0","low":"8730.0","high":"9300.0","last":"9300.0","vol":"22.7876"}}'
+    http_version: 
+  recorded_at: Fri, 27 Apr 2018 02:30:11 GMT
+recorded_with: VCR 4.0.0
