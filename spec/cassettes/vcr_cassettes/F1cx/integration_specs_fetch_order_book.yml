@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://f1cx.com/api/v2/order_book.json?market=mtcltc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - f1cx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Apr 2018 01:28:23 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '9564'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dec394e250a3080c2e47d004ef481c4f71524792502; expires=Sat, 27-Apr-19
+        01:28:22 GMT; path=/; domain=.f1cx.com; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - fc2d9a3e-032f-4cd2-8798-47d702db6a84
+      Etag:
+      - '"586ef494058d8b01e9b8d4e607666f8e"'
+      X-Runtime:
+      - '0.048503'
+      X-Powered-By:
+      - Phusion Passenger 5.1.12
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 411d8315092010f9-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"asks":[{"id":34005,"side":"sell","ord_type":"limit","price":"0.00000025","avg_price":"0.00000025","state":"wait","market":"mtcltc","created_at":"2018-04-24T07:50:50-05:00","volume":"2825.0","remaining_volume":"2721.6856","executed_volume":"103.3144","trades_count":1},{"id":32971,"side":"sell","ord_type":"limit","price":"0.00000028","avg_price":"0.00000028","state":"wait","market":"mtcltc","created_at":"2018-04-18T05:43:11-05:00","volume":"235455.125","remaining_volume":"181720.8574","executed_volume":"53734.2676","trades_count":3},{"id":33016,"side":"sell","ord_type":"limit","price":"0.00000028","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-04-19T06:52:12-05:00","volume":"2618.4375","remaining_volume":"2618.4375","executed_volume":"0.0","trades_count":0},{"id":32198,"side":"sell","ord_type":"limit","price":"0.00000029","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-03-24T16:36:47-05:00","volume":"50000.0","remaining_volume":"50000.0","executed_volume":"0.0","trades_count":0},{"id":25989,"side":"sell","ord_type":"limit","price":"0.0000003","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-02-19T04:46:19-05:00","volume":"50000.0","remaining_volume":"50000.0","executed_volume":"0.0","trades_count":0},{"id":32108,"side":"sell","ord_type":"limit","price":"0.0000003","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-03-23T01:31:57-05:00","volume":"50000.0","remaining_volume":"50000.0","executed_volume":"0.0","trades_count":0},{"id":32802,"side":"sell","ord_type":"limit","price":"0.00000039","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-04-15T04:22:14-05:00","volume":"50000.0","remaining_volume":"50000.0","executed_volume":"0.0","trades_count":0},{"id":32092,"side":"sell","ord_type":"limit","price":"0.0000004","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-03-22T08:52:00-05:00","volume":"8000.0","remaining_volume":"8000.0","executed_volume":"0.0","trades_count":0},{"id":32279,"side":"sell","ord_type":"limit","price":"0.0000004","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-03-27T04:07:11-05:00","volume":"10000.0","remaining_volume":"10000.0","executed_volume":"0.0","trades_count":0},{"id":25536,"side":"sell","ord_type":"limit","price":"0.00000048","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-02-15T00:27:58-05:00","volume":"50000.0","remaining_volume":"50000.0","executed_volume":"0.0","trades_count":0},{"id":28922,"side":"sell","ord_type":"limit","price":"0.00000048","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-02-21T06:01:28-05:00","volume":"2900.0","remaining_volume":"2900.0","executed_volume":"0.0","trades_count":0},{"id":32801,"side":"sell","ord_type":"limit","price":"0.00000051","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-04-15T04:17:29-05:00","volume":"30000.0","remaining_volume":"30000.0","executed_volume":"0.0","trades_count":0},{"id":1231,"side":"sell","ord_type":"limit","price":"0.00000053","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-02-04T07:31:26-05:00","volume":"450000.0","remaining_volume":"450000.0","executed_volume":"0.0","trades_count":0},{"id":32806,"side":"sell","ord_type":"limit","price":"0.00000098","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-04-15T04:57:40-05:00","volume":"20000.0","remaining_volume":"20000.0","executed_volume":"0.0","trades_count":0},{"id":24949,"side":"sell","ord_type":"limit","price":"0.00000099","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-02-10T10:43:52-05:00","volume":"50000.0","remaining_volume":"50000.0","executed_volume":"0.0","trades_count":0},{"id":25595,"side":"sell","ord_type":"limit","price":"0.000001","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-02-15T12:05:11-05:00","volume":"450000.0","remaining_volume":"450000.0","executed_volume":"0.0","trades_count":0},{"id":32730,"side":"sell","ord_type":"limit","price":"0.000001","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-04-13T07:00:23-05:00","volume":"1000000.0","remaining_volume":"1000000.0","executed_volume":"0.0","trades_count":0},{"id":18034,"side":"sell","ord_type":"limit","price":"0.00000182","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-02-08T05:26:26-05:00","volume":"450000.0","remaining_volume":"450000.0","executed_volume":"0.0","trades_count":0},{"id":3378,"side":"sell","ord_type":"limit","price":"0.00000189","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-02-05T17:29:28-05:00","volume":"50000.0","remaining_volume":"50000.0","executed_volume":"0.0","trades_count":0},{"id":3383,"side":"sell","ord_type":"limit","price":"0.00000228","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-02-05T17:29:59-05:00","volume":"50000.0","remaining_volume":"50000.0","executed_volume":"0.0","trades_count":0}],"bids":[{"id":32961,"side":"buy","ord_type":"limit","price":"0.0000002","avg_price":"0.0000002","state":"wait","market":"mtcltc","created_at":"2018-04-18T00:47:49-05:00","volume":"264217.35","remaining_volume":"25547.1119","executed_volume":"238670.2381","trades_count":4},{"id":33190,"side":"buy","ord_type":"limit","price":"0.0000002","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-04-23T00:13:13-05:00","volume":"70855.8349","remaining_volume":"70855.8349","executed_volume":"0.0","trades_count":0},{"id":34199,"side":"buy","ord_type":"limit","price":"0.0000002","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-04-25T00:12:10-05:00","volume":"4184.0817","remaining_volume":"4184.0817","executed_volume":"0.0","trades_count":0},{"id":32332,"side":"buy","ord_type":"limit","price":"0.00000019","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-03-28T08:03:16-05:00","volume":"330750.0","remaining_volume":"330750.0","executed_volume":"0.0","trades_count":0},{"id":32330,"side":"buy","ord_type":"limit","price":"0.00000016","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-03-28T07:48:50-05:00","volume":"46757.8125","remaining_volume":"46757.8125","executed_volume":"0.0","trades_count":0},{"id":32107,"side":"buy","ord_type":"limit","price":"0.00000012","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-03-23T00:55:34-05:00","volume":"155745.6129","remaining_volume":"155745.6129","executed_volume":"0.0","trades_count":0},{"id":33045,"side":"buy","ord_type":"limit","price":"0.00000011","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-04-19T13:33:11-05:00","volume":"13545454.0","remaining_volume":"13545454.0","executed_volume":"0.0","trades_count":0},{"id":32037,"side":"buy","ord_type":"limit","price":"0.0000001","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-03-20T08:31:17-05:00","volume":"807975.0","remaining_volume":"807975.0","executed_volume":"0.0","trades_count":0},{"id":32023,"side":"buy","ord_type":"limit","price":"0.00000009","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-03-20T03:54:13-05:00","volume":"50000.0","remaining_volume":"50000.0","executed_volume":"0.0","trades_count":0},{"id":29543,"side":"buy","ord_type":"limit","price":"0.00000008","avg_price":"0.00000008","state":"wait","market":"mtcltc","created_at":"2018-02-28T13:39:24-05:00","volume":"125000.0","remaining_volume":"31448.0026","executed_volume":"93551.9974","trades_count":1},{"id":31928,"side":"buy","ord_type":"limit","price":"0.00000008","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-03-18T13:42:21-05:00","volume":"142399.8507","remaining_volume":"142399.8507","executed_volume":"0.0","trades_count":0},{"id":32000,"side":"buy","ord_type":"limit","price":"0.00000008","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-03-19T13:46:21-05:00","volume":"75435.9375","remaining_volume":"75435.9375","executed_volume":"0.0","trades_count":0},{"id":32362,"side":"buy","ord_type":"limit","price":"0.00000008","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-03-29T14:04:15-05:00","volume":"155859.375","remaining_volume":"155859.375","executed_volume":"0.0","trades_count":0},{"id":32525,"side":"buy","ord_type":"limit","price":"0.00000008","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-04-04T06:19:12-05:00","volume":"311718.75","remaining_volume":"311718.75","executed_volume":"0.0","trades_count":0},{"id":32993,"side":"buy","ord_type":"limit","price":"0.00000008","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-04-18T11:01:54-05:00","volume":"83.3075","remaining_volume":"83.3075","executed_volume":"0.0","trades_count":0},{"id":33166,"side":"buy","ord_type":"limit","price":"0.00000008","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-04-22T12:04:23-05:00","volume":"34829.1925","remaining_volume":"34829.1925","executed_volume":"0.0","trades_count":0},{"id":1001,"side":"buy","ord_type":"limit","price":"0.00000001","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-02-02T12:56:56-05:00","volume":"3573067.0","remaining_volume":"3573067.0","executed_volume":"0.0","trades_count":0},{"id":32015,"side":"buy","ord_type":"limit","price":"0.00000001","avg_price":"0.0","state":"wait","market":"mtcltc","created_at":"2018-03-19T19:49:51-05:00","volume":"12345060.0","remaining_volume":"12345060.0","executed_volume":"0.0","trades_count":0}]}'
+    http_version: 
+  recorded_at: Fri, 27 Apr 2018 01:28:23 GMT
+recorded_with: VCR 4.0.0
