@@ -14,21 +14,40 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Btc24::Market::API_URL}/quotehistory/#{market_pair.base.upcase}#{market_pair.target.upcase}/d1/bars/bid?timestamp=#{(Time.now.to_i - 86400 * 7)*1000}&count=1"
+          "#{Cryptoexchange::Exchanges::Btc24::Market::API_URL}/ticker/#{market_pair.base.upcase}#{market_pair.target.upcase}"
         end
 
         def adapt(output,market_pair)
           ticker           = Cryptoexchange::Models::Ticker.new
 
-          bid              = output['Bars'].first
+          market           = output.first
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Bitbank::Market::NAME
-          ticker.last      = NumericHelper.to_d(bid['Close'])
-          ticker.high      = NumericHelper.to_d(bid['High'])
-          ticker.low       = NumericHelper.to_d(bid['Low'])
-          ticker.volume    = NumericHelper.to_d(bid['Volume'])
-          ticker.timestamp = bid['Timestamp'] / 1000
+          ticker.high      = NumericHelper.to_d(market['DailyBestBuyPrice'])
+          ticker.low       = NumericHelper.to_d(market['DailyBestSellPrice'])
+          ticker.ask       = NumericHelper.to_d(market['BestAsk'])
+          ticker.bid       = NumericHelper.to_d(market['BestBid'])
+          ticker.volume    = NumericHelper.to_d(market['DailyTradedTotalVolume'])
+          time             = 0
+          if market.key?('LastBuyTimestamp')
+            if (time < market['LastBuyTimestamp'])
+              time         = market['LastBuyTimestamp']
+              ticker.last  = market['LastBuyPrice']
+            end
+          end
+          if market.key?('LastSellTimestamp')
+            if (time < market['LastSellTimestamp'])
+              time         = market['LastSellTimestamp']
+              ticker.last  = market['LastSellPrice']
+            end
+          end
+          if time == 0
+            time           = Time.now.to_i
+          else
+            time          /= 1000
+          end
+          ticker.timestamp = time
           ticker.payload   = output
           ticker
         end
