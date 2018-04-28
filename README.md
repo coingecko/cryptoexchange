@@ -80,6 +80,7 @@ Or install it yourself as:
 | COSS              | Y       |            |         |         | Y           |
 | Crex24            | Y       | Y          | Y       |         | Y           |
 | CRXZone           | Y       | Y          | Y       |         | Y           |
+| Cryptex           | Y       | Y          | Y       |         | User-Defined|
 | CryptoBridge      | Y       |            |         |         | Y           |
 | CryptoHub         | Y       | N          | N       |         | Y           |
 | Cryptopia         | Y       | Y          | Y       |         | Y           |
