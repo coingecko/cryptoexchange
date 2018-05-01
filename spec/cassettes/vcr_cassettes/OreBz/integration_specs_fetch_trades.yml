@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ore.bz/api/v2/trades.json?market=gbcusd
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ore.bz
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Apr 2018 05:55:30 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '7452'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d183e261fb9854925524504af894e5feb1523771729; expires=Mon, 15-Apr-19
+        05:55:29 GMT; path=/; domain=.ore.bz; HttpOnly
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 04074f20-cc76-4084-83d0-85969440a384
+      Etag:
+      - '"3d2794ef3ca824ee04c3ba0570054072"'
+      X-Runtime:
+      - '0.031913'
+      X-Powered-By:
+      - Phusion Passenger 5.0.4
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 40bc29dfeec284d8-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":23841,"price":"0.00215","volume":"45116.279069","funds":"96.99999999835","market":"gbcusd","created_at":"2018-04-14T18:21:04+03:00","side":null},{"id":23840,"price":"0.00212","volume":"4894.171885","funds":"10.3756443962","market":"gbcusd","created_at":"2018-04-14T15:32:06+03:00","side":null},{"id":23839,"price":"0.00212","volume":"89445.450756","funds":"189.62435560272","market":"gbcusd","created_at":"2018-04-14T15:31:53+03:00","side":null},{"id":23838,"price":"0.0021","volume":"313.0","funds":"0.6573","market":"gbcusd","created_at":"2018-04-13T20:03:33+03:00","side":null},{"id":23835,"price":"0.00251","volume":"9163.346613","funds":"22.99999999863","market":"gbcusd","created_at":"2018-04-13T13:15:26+03:00","side":null},{"id":23834,"price":"0.00249","volume":"60240.963855","funds":"149.99999999895","market":"gbcusd","created_at":"2018-04-13T13:14:39+03:00","side":null},{"id":23833,"price":"0.00253","volume":"89636.299488","funds":"226.77983770464","market":"gbcusd","created_at":"2018-04-13T12:51:26+03:00","side":null},{"id":23818,"price":"0.00249","volume":"36144.578313","funds":"89.99999999937","market":"gbcusd","created_at":"2018-04-12T17:06:33+03:00","side":null},{"id":23817,"price":"0.00245","volume":"12244.897959","funds":"29.99999999955","market":"gbcusd","created_at":"2018-04-12T14:44:11+03:00","side":null},{"id":23809,"price":"0.00247","volume":"66396.761133","funds":"163.99999999851","market":"gbcusd","created_at":"2018-04-12T12:13:29+03:00","side":null},{"id":23806,"price":"0.00249","volume":"20080.321285","funds":"49.99999999965","market":"gbcusd","created_at":"2018-04-12T08:05:30+03:00","side":null},{"id":23805,"price":"0.00251","volume":"79681.2749","funds":"199.999999999","market":"gbcusd","created_at":"2018-04-11T21:41:10+03:00","side":null},{"id":23804,"price":"0.00248","volume":"39516.129032","funds":"97.99999999936","market":"gbcusd","created_at":"2018-04-11T20:06:28+03:00","side":null},{"id":23803,"price":"0.00245","volume":"15102.040816","funds":"36.9999999992","market":"gbcusd","created_at":"2018-04-11T18:21:48+03:00","side":null},{"id":23798,"price":"0.0025","volume":"48000.0","funds":"120.0","market":"gbcusd","created_at":"2018-04-11T16:00:29+03:00","side":null},{"id":23795,"price":"0.00248","volume":"20161.290322","funds":"49.99999999856","market":"gbcusd","created_at":"2018-04-11T13:19:11+03:00","side":null},{"id":23794,"price":"0.00246","volume":"63414.634146","funds":"155.99999999916","market":"gbcusd","created_at":"2018-04-11T07:29:12+03:00","side":null},{"id":23793,"price":"0.0025","volume":"80000.0","funds":"200.0","market":"gbcusd","created_at":"2018-04-10T22:26:17+03:00","side":null},{"id":23792,"price":"0.00244","volume":"20491.803278","funds":"49.99999999832","market":"gbcusd","created_at":"2018-04-10T17:53:23+03:00","side":null},{"id":23789,"price":"0.00248","volume":"40322.580645","funds":"99.9999999996","market":"gbcusd","created_at":"2018-04-10T16:30:30+03:00","side":null},{"id":23786,"price":"0.00245","volume":"80816.32653","funds":"197.9999999985","market":"gbcusd","created_at":"2018-04-10T09:03:39+03:00","side":null},{"id":23785,"price":"0.00247","volume":"42105.263157","funds":"103.99999999779","market":"gbcusd","created_at":"2018-04-10T08:03:44+03:00","side":null},{"id":23784,"price":"0.0025","volume":"53600.0","funds":"134.0","market":"gbcusd","created_at":"2018-04-10T07:02:00+03:00","side":null},{"id":23783,"price":"0.00248","volume":"32258.064516","funds":"79.99999999968","market":"gbcusd","created_at":"2018-04-09T22:02:10+03:00","side":null},{"id":23782,"price":"0.00245","volume":"20408.163265","funds":"49.99999999925","market":"gbcusd","created_at":"2018-04-09T19:16:00+03:00","side":null},{"id":23781,"price":"0.00243","volume":"23045.267489","funds":"55.99999999827","market":"gbcusd","created_at":"2018-04-09T12:07:12+03:00","side":null},{"id":23769,"price":"0.00239","volume":"83682.008368","funds":"199.99999999952","market":"gbcusd","created_at":"2018-04-09T11:11:53+03:00","side":null},{"id":23720,"price":"0.00249","volume":"2008.032128","funds":"4.99999999872","market":"gbcusd","created_at":"2018-04-08T20:08:26+03:00","side":null},{"id":23719,"price":"0.00253","volume":"39525.691699","funds":"99.99999999847","market":"gbcusd","created_at":"2018-04-08T17:26:23+03:00","side":null},{"id":23718,"price":"0.00256","volume":"3906.25","funds":"10.0","market":"gbcusd","created_at":"2018-04-08T16:33:28+03:00","side":null},{"id":23717,"price":"0.00259","volume":"17374.517375","funds":"45.00000000125","market":"gbcusd","created_at":"2018-04-08T14:35:28+03:00","side":null},{"id":23716,"price":"0.00259","volume":"1930.50193","funds":"4.9999999987","market":"gbcusd","created_at":"2018-04-08T14:35:10+03:00","side":null},{"id":23715,"price":"0.00264","volume":"26515.151515","funds":"69.9999999996","market":"gbcusd","created_at":"2018-04-08T13:30:24+03:00","side":null},{"id":23710,"price":"0.00261","volume":"19157.088122","funds":"49.99999999842","market":"gbcusd","created_at":"2018-04-07T20:19:08+03:00","side":null},{"id":23709,"price":"0.00257","volume":"38132.295719","funds":"97.99999999783","market":"gbcusd","created_at":"2018-04-07T19:01:58+03:00","side":null},{"id":23708,"price":"0.0026","volume":"67307.692307","funds":"174.9999999982","market":"gbcusd","created_at":"2018-04-07T18:05:12+03:00","side":null},{"id":23707,"price":"0.00262","volume":"20229.007633","funds":"52.99999999846","market":"gbcusd","created_at":"2018-04-07T17:44:25+03:00","side":null},{"id":23706,"price":"0.00265","volume":"50566.037735","funds":"133.99999999775","market":"gbcusd","created_at":"2018-04-07T14:23:57+03:00","side":null},{"id":23705,"price":"0.00269","volume":"50142.314388","funds":"134.88282570372","market":"gbcusd","created_at":"2018-04-07T10:44:44+03:00","side":null},{"id":23704,"price":"0.00269","volume":"93135.683421","funds":"250.53498840249","market":"gbcusd","created_at":"2018-04-07T10:44:29+03:00","side":null},{"id":23703,"price":"0.00283","volume":"93247.580517","funds":"263.89065286311","market":"gbcusd","created_at":"2018-04-07T09:55:53+03:00","side":null},{"id":23589,"price":"0.0028","volume":"58571.428571","funds":"163.9999999988","market":"gbcusd","created_at":"2018-04-06T21:53:30+03:00","side":null},{"id":23588,"price":"0.00278","volume":"71942.446043","funds":"199.99999999954","market":"gbcusd","created_at":"2018-04-06T20:35:20+03:00","side":null},{"id":23586,"price":"0.00274","volume":"31021.89781","funds":"84.9999999994","market":"gbcusd","created_at":"2018-04-06T16:37:25+03:00","side":null},{"id":23583,"price":"0.00284","volume":"60211.267605","funds":"170.9999999982","market":"gbcusd","created_at":"2018-04-06T13:08:45+03:00","side":null},{"id":23582,"price":"0.00281","volume":"88967.97153","funds":"249.9999999993","market":"gbcusd","created_at":"2018-04-06T12:25:16+03:00","side":null},{"id":23581,"price":"0.00201","volume":"313.0","funds":"0.62913","market":"gbcusd","created_at":"2018-04-06T11:55:16+03:00","side":null},{"id":23580,"price":"0.00279","volume":"41218.637992","funds":"114.99999999768","market":"gbcusd","created_at":"2018-04-06T11:32:54+03:00","side":null},{"id":23579,"price":"0.00275","volume":"54545.454545","funds":"149.99999999875","market":"gbcusd","created_at":"2018-04-06T09:38:15+03:00","side":null},{"id":23570,"price":"0.00279","volume":"16399.11207","funds":"45.7535226753","market":"gbcusd","created_at":"2018-04-05T20:48:10+03:00","side":null}]'
+    http_version: 
+  recorded_at: Sun, 15 Apr 2018 05:55:30 GMT
+recorded_with: VCR 4.0.0
