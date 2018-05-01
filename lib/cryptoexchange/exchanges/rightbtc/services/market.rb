@@ -41,11 +41,11 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Rightbtc::Market::NAME
-          ticker.ask       = NumericHelper.to_d(output['sell'].to_f/(i))
-          ticker.bid       = NumericHelper.to_d(output['buy'].to_f/(i))
-          ticker.last      = NumericHelper.to_d(output['last'].to_f/(i))
-          ticker.high      = NumericHelper.to_d(output['high'].to_f/(i))
-          ticker.low       = NumericHelper.to_d(output['low'].to_f/(i))
+          ticker.ask       = NumericHelper.to_d(output['sell'])
+          ticker.bid       = NumericHelper.to_d(output['buy'])
+          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.high      = NumericHelper.to_d(output['high'])
+          ticker.low       = NumericHelper.to_d(output['low'])
           ticker.volume    = NumericHelper.to_d(output['vol24h'].to_f/(i))
           ticker.timestamp = Time.now.to_i
           ticker.payload   = output
