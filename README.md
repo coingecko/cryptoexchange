@@ -86,6 +86,7 @@ Or install it yourself as:
 | Exmo              | Y       | Y          | Y       |         | Y           |
 | Extstock          | Y       | Y          | Y       |         | Y           |
 | Exx               | Y       | Y          | Y       |         | Y           |
+| F1cx              | Y       | Y          | Y       |         | Y           |
 | Fisco             | Y       | Y          | Y       |         | Y           |
 | Forkdelta         | Y       | N          | N       |         | Y           |
 | Freiexchange      | Y       | Y          |         |         | User-Defined|
