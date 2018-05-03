@@ -11,14 +11,16 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output['data'].map do |based, pair|
-            pair.map do |pair|
-              Cryptoexchange::Models::MarketPair.new(
-                base: pair['short_code'],
-                target: pair['currency'],
-                market: Sistemkoin::Market::NAME)
+          market_pairs = []
+          output['data'].each do |based, pair|
+            pair.each do |pair|
+              market_pairs << Cryptoexchange::Models::MarketPair.new(
+                                base: pair['short_code'],
+                                target: pair['currency'],
+                                market: Sistemkoin::Market::NAME)
             end
           end
+          market_pairs
         end
       end
     end
