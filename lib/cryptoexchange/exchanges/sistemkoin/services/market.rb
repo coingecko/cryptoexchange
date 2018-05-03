@@ -18,18 +18,21 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          market_pairs = []
-          pairs = []
+          tickers = []
           output['data'].map do |based, pair|
             pair.map do |pair|
-              pairs << pair
-              market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair['short_code'],
-                              target: pair['currency'],
-                              market: Sistemkoin::Market::NAME)                                                       
+              tickers << pair                                                      
             end
           end
-          adapt(pairs, market_pairs)
+          
+          tickers.map do |ticker|
+            market_pairs = Cryptoexchange::Models::MarketPair.new(
+                             base: ticker['short_code'],
+                             target: ticker['currency'],
+                             market: Sistemkoin::Market::NAME) 
+            
+            adapt(ticker, market_pairs)
+          end
         end
 
         def adapt(output, market_pair)
