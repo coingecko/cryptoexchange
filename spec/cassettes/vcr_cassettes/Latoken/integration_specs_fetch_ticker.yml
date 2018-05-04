@@ -12,29 +12,36 @@ http_interactions:
       Host:
       - api.latoken.com
       User-Agent:
-      - http.rb/2.1.0
+      - http.rb/3.0.0
   response:
     status:
       code: 200
       message: OK
     headers:
-      Server:
-      - cloudflare
       Date:
-      - Fri, 16 Mar 2018 09:33:54 GMT
+      - Fri, 04 May 2018 13:00:28 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Connection:
-      - keep-alive
       Transfer-Encoding:
       - chunked
-      Status:
-      - 200 OK
-      Content-Encoding:
-      - gzip
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=df8f0a5e820d915086a8b3662f54a0b061525438828; expires=Sat, 04-May-19
+        13:00:28 GMT; path=/; domain=.latoken.com; HttpOnly; Secure
+      X-Powered-By:
+      - Express
+      Etag:
+      - W/"8a-NYwYmzDIaxTb5u9VkvD0nVo65UE"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 415b26849cb24f3e-DME
     body:
       encoding: UTF-8
-      string: '{"ask":0.000338,"bid":0.00031792,"last_price":0.00033694,"high":0.00034331,"low":0.0003194,"volume":238.6178398628,"timestamp":1521192834}'
+      string: '{"ask":0.0003161,"bid":0.0003152,"last_price":0.0003152,"high":0.00034,"low":0.0003163,"volume":345.79267989888734,"timestamp":1525438828}'
     http_version: 
-  recorded_at: Fri, 16 Mar 2018 09:33:54 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Fri, 04 May 2018 13:00:28 GMT
+recorded_with: VCR 4.0.0
