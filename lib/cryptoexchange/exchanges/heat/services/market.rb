@@ -20,8 +20,8 @@ module Cryptoexchange::Exchanges
         def adapt_all(output)
           output.map do |ticker|
                 market_pair = Cryptoexchange::Models::MarketPair.new(
-                                base: ticker["assetProperties"] ? JSON.parse(ticker["assetProperties"].split(",")[0].delete("[")) : "HEAT",
-                                target: ticker["currencyProperties"] ? JSON.parse(ticker["currencyProperties"].split(",")[0].delete("[")) : "HEAT",
+                                base: ticker["assetProperties"] ? ticker["assetProperties"].split(",")[0].delete("[").tr('"','') : "HEAT",
+                                target: ticker["currencyProperties"] ? ticker["currencyProperties"].split(",")[0].delete("[").tr('"','') : "HEAT",
                                 market: Heat::Market::NAME
                               )
                 adapt(ticker, market_pair)

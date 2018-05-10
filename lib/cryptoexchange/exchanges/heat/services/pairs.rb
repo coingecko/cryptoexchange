@@ -12,9 +12,10 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           market_pairs = []
           output.each do |pair|
+
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair["assetProperties"] ? JSON.parse(pair["assetProperties"].split(",")[0].delete("[")) : "HEAT",
-                              target: pair["currencyProperties"] ? JSON.parse(pair["currencyProperties"].split(",")[0].delete("[")) : "HEAT",
+                              base: pair["assetProperties"] ? pair["assetProperties"].split(",")[0].delete("[").tr('"','') : "HEAT",
+                              target: pair["currencyProperties"] ? pair["currencyProperties"].split(",")[0].delete("[").tr('"','') : "HEAT",
                               market: Heat::Market::NAME
                             )
           end
