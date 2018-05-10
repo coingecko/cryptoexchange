@@ -100,6 +100,7 @@ Or install it yourself as:
 | Gemini            | Y       | Y          | Y       |         | Y           |
 | GetBTC            | Y       | Y          | Y       |         | User-Defined|
 | GOPAX             | Y       | Y          | Y       |         | Y           |
+| HEAT              | Y       | Y          | Y       |         | Y           |
 | HitBTC            | Y       |            |         |         | Y           |
 | Hksy              | Y       |            | Y       |         | User-Defined|
 | Huobi             | Y       |            |         |         | Y           |
