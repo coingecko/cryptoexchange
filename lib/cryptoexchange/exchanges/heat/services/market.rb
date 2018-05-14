@@ -14,12 +14,13 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Heat::Market::TICKER_URL}"
+          "#{Cryptoexchange::Exchanges::Heat::Market::API_URL}/exchange/markets/all/change/true/0/1/0/100"
         end
 
         def adapt_all(output)
           output.map do |ticker|
                 market_pair = Cryptoexchange::Models::MarketPair.new(
+                      # if pair["assetProperties"] or pair["currencyProperties"] does not exist for either base or target, it means the asset / currency = 'HEAT'
                                 base: ticker["assetProperties"] ? ticker["assetProperties"].split(",")[0].delete("[").tr('"','') : "HEAT",
                                 target: ticker["currencyProperties"] ? ticker["currencyProperties"].split(",")[0].delete("[").tr('"','') : "HEAT",
                                 market: Heat::Market::NAME

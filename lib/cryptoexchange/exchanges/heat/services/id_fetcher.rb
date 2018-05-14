@@ -11,6 +11,7 @@ module Cryptoexchange::Exchanges
            PAIR_SYMBOLS << pairs_response.parse(:json)
           end
             # filtering through asset dictionary to find market_pair and obtaining the market_pair base and target's ID
+            # HEAT id = 0 by default
             base_id = base == 'HEAT' ? 0 : (PAIR_SYMBOLS[0].select{ |s| s['symbol'] == base })[0]['asset']
             target_id = target == 'HEAT' ? 0 : (PAIR_SYMBOLS[0].select{ |s| s['symbol'] == target })[0]['asset']
           [base_id, target_id]
