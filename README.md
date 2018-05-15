@@ -110,6 +110,7 @@ Or install it yourself as:
 | Kkcoin            | Y       | Y          | Y       |         | Y           |
 | KyberNetwork      | Y       | N          | N       |         | Y           |
 | Jubi              | Y       |            |         |         | Y           |
+| Koinok            | Y       |            |         |         | Y           |
 | Koinex            | Y       |            |         |         | Y           |
 | Korbit            | Y       |            |         |         | User-Defined|
 | Kraken            | Y       |            |         |         | Y           |
