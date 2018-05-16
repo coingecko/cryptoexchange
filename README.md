@@ -141,6 +141,7 @@ Or install it yourself as:
 | Quoine            | Y       |            |         |         | Y           |
 | RadarRelay        | Y       |            |         |         | User-Defined|
 | RightBTC          | Y       | Y          | Y       |         | Y           |
+| Sigen             | Y       |            |         |         | Y           |
 | SouthXchange      | Y       | Y          | Y       |         | Y           |
 | Stocks Exchange   | Y       |            |         |         | Y           |
 | Switcheo          | Y       | N          | N       |         | Y           |
