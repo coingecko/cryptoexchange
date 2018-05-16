@@ -24,8 +24,6 @@ module Cryptoexchange::Exchanges
             # format example: ETH_ZRX
             # ETH is the Target, ZRX is the Base
             target, base = pair.split('_')
-            # Ignore non-standard BASE
-            next if base =~ /\s/ || base =~ /0x/
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
                             target: target,

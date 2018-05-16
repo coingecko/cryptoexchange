@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cryptex.net/api/v1/btc_usd/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - cryptex.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 28 Apr 2018 05:39:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '109'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3fc5a7e3d6c8b905e2ff5a71077cc2f51524893989; expires=Sun, 28-Apr-19
+        05:39:49 GMT; path=/; domain=.cryptex.net; HttpOnly; Secure
+      X-Frame-Options:
+      - DENY
+      Vary:
+      - Cookie
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 412730cbab843192-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status": "ok", "data": {"last": "8970.287", "low": "8782.318", "high":
+        "9214.224", "volume": "390476.274"}}'
+    http_version: 
+  recorded_at: Sat, 28 Apr 2018 05:39:50 GMT
+recorded_with: VCR 4.0.0

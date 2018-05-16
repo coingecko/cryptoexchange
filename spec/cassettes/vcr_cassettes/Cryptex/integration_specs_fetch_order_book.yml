@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cryptex.net/api/v1/btc_usd/orderbook
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - cryptex.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 28 Apr 2018 05:39:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '668'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d321417d496f9895a17603f10b25ca45c1524893990; expires=Sun, 28-Apr-19
+        05:39:50 GMT; path=/; domain=.cryptex.net; HttpOnly; Secure
+      X-Frame-Options:
+      - DENY
+      Vary:
+      - Cookie
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 412730d34987aa20-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status": "ok", "data": {"bids": [[8747.115, 0.10985739], [8704.343,
+        0.11431467], [8682.80513412, 0.00680177]], "asks": [[9204.0, 0.68071931],
+        [9444.0, 0.10964782], [9463.418, 0.12022644], [9482.376, 0.13182567], [9502.375,
+        0.14454398], [9521.413, 0.15848932], [9541.492, 0.17378008], [9561.11, 0.19054607],
+        [9580.269, 0.20892961], [9600.469, 0.22908677], [9620.209, 0.25118864], [9639.489,
+        0.27542287], [9659.31, 0.30199517], [9679.173, 0.33113112], [9699.075, 0.36307805],
+        [9719.019, 0.39810717], [9739.004, 0.43651583], [9759.03, 0.47863009], [9779.597,
+        0.52480746], [9799.706, 0.57543994], [9819.855, 0.63095734], [9840.047, 0.69183097],
+        [9900.869, 0.91201084]]}}'
+    http_version: 
+  recorded_at: Sat, 28 Apr 2018 05:39:51 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kkcoin.com/rest/book?symbol=ePRX_ETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.kkcoin.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Apr 2018 10:31:50 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d6e5b55918374dcab8207df70b94d5c701524825110; expires=Sat, 27-Apr-19
+        10:31:50 GMT; path=/; domain=.kkcoin.com; HttpOnly; Secure
+      - lang=en; expires=Fri, 04-May-2018 10:31:50 GMT; Max-Age=604800; path=/
+      Cache-Control:
+      - private, must-revalidate
+      X-Ratelimit-Limit:
+      - '100'
+      X-Ratelimit-Remaining:
+      - '99'
+      X-Ratelimit-Reset:
+      - '1524825170'
+      Etag:
+      - '"4ccf6002f832e805e82b9d85f572fe772b10e818"'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1;mode=block
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 41209f2dabbda2b4-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"a":[["0.00004050","1000"],["0.00004100","3000"],["0.00004200","5000"],["0.00004300","6000"],["0.00004400","2000"],["0.00004600","2000"],["0.00004800","2000"],["0.00005950","1000"],["0.00006150","1000"],["0.00006600","1234"],["0.00007500","1352"],["0.00008200","1000"],["0.00009500","1000"],["0.00009898","5000"],["0.00012000","1000"],["0.00013000","2000"],["0.00014000","1000"],["0.00015000","1000"],["0.00016000","1000"],["0.00022000","1000"],["0.00023000","1000"],["0.00024000","1000"],["0.00025000","1000"],["0.00031000","1000"],["0.00032000","1000"],["0.00050000","1700"]],"b":[["0.00000010","24866"],["0.00002900","2995"],["0.00003000","7099"],["0.00003400","7533"],["0.00003500","6220"],["0.00003600","1500"],["0.00003650","1723"]]}'
+    http_version: 
+  recorded_at: Fri, 27 Apr 2018 10:31:50 GMT
+recorded_with: VCR 4.0.0

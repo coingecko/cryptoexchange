@@ -39,9 +39,11 @@ Or install it yourself as:
 | Bitbank           | Y       | Y          | Y       |         | User-Defined|
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|
 | Bitconnect        | Y       |            |         |         | Y           |
+| Bitebtc           | Y       | Y          | Y       |         | Y           |
 | Bitfinex          | Y       |            |         |         | Y           |
 | Bitflyer          | Y       |            |         |         | Y           |
 | Bithumb           | Y       |            |         |         | Y           |
+| Bitibu            | Y       | Y          | Y       |         | Y           |
 | Bitkonan          | Y       |            |         |         | User-Defined|
 | Bitmex            | Y       | Y          | Y       |         | Y           |
 | Bits Blockchain   | Y       | Y          |         |         | Y           |
@@ -55,6 +57,7 @@ Or install it yourself as:
 | BTC38             |         |            |         |         |             |
 | BTCC              | Y       |            |         |         | User-Defined|
 | BTCChina          |         |            |         |         |             |
+| Btcsquare         | Y       | Y          | Unstable|         | Y           |
 | BTER              | Y       |            |         |         | Y           |
 | Buyucoin          | Y       | N          | N       |         | Y           |
 | BX Thailand       | Y       |            |         |         | Y           |
@@ -78,15 +81,18 @@ Or install it yourself as:
 | COSS              | Y       |            |         |         | Y           |
 | Crex24            | Y       | Y          | Y       |         | Y           |
 | CRXZone           | Y       | Y          | Y       |         | Y           |
+| Cryptex           | Y       | Y          | Y       |         | User-Defined|
 | CryptoBridge      | Y       |            |         |         | Y           |
 | CryptoHub         | Y       | N          | N       |         | Y           |
 | Cryptopia         | Y       | Y          | Y       |         | Y           |
+| Dsx               | Y       | Y          | Y       |         | Y           |
 | EtherDelta        | Y       |            |         |         | Y           |
 | Ethfinex          | Y       | Y          | Y       |         | Y           |
 | Exmo              | Y       | Y          | Y       |         | Y           |
 | Extstock          | Y       | Y          | Y       |         | Y           |
 | Exx               | Y       | Y          | Y       |         | Y           |
 | F1cx              | Y       | Y          | Y       |         | Y           |
+| Fex               | Y       | N          | N       |         | Y           |
 | Fisco             | Y       | Y          | Y       |         | Y           |
 | Forkdelta         | Y       | N          | N       |         | Y           |
 | Freiexchange      | Y       | Y          |         |         | User-Defined|
@@ -103,8 +109,10 @@ Or install it yourself as:
 | Itbit             | Y       | Y          | Y       |         | User-Defined|
 | Idex              | Y       | Unstable   | Y       |         | Y           |
 | KKex              | Y       | Y          | Y       |         | Y           |
+| Kkcoin            | Y       | Y          | Y       |         | Y           |
 | KyberNetwork      | Y       | N          | N       |         | Y           |
 | Jubi              | Y       |            |         |         | Y           |
+| Koinok            | Y       |            |         |         | Y           |
 | Koinex            | Y       |            |         |         | Y           |
 | Korbit            | Y       |            |         |         | User-Defined|
 | Kraken            | Y       |            |         |         | Y           |
@@ -127,6 +135,7 @@ Or install it yourself as:
 | Nova Exchange     | Y       |            |         |         | Y           |
 | OKCoin            | Y       |            |         |         | User-Defined|
 | OKEx              | Y       | Y          | Y       |         | User-Defined|
+| Ore Bz            | Y       | Y          | Y       |         | Y           |
 | Paribu            | Y       |            |         |         | Y           |
 | Paymium           | Y       | Y          | Y       |         | User-Defined|
 | Poloniex          | Y       |            |         |         | Y           |
@@ -135,6 +144,8 @@ Or install it yourself as:
 | Quoine            | Y       |            |         |         | Y           |
 | RadarRelay        | Y       |            |         |         | User-Defined|
 | RightBTC          | Y       | Y          | Y       |         | Y           |
+| Sigen             | Y       |            |         |         | Y           |
+| Sistemkoin        | Y       |            |         |         | Y           |
 | SouthXchange      | Y       | Y          | Y       |         | Y           |
 | Stocks Exchange   | Y       |            |         |         | Y           |
 | Switcheo          | Y       | N          | N       |         | Y           |
@@ -192,6 +203,19 @@ Or install it yourself as:
   order_book.target
   order_book.bids
   order_book.asks
+```
+
+### Query the Trades API
+```
+  # Check if exchange has support for Trades
+  # returns array
+
+  pair = client.pairs('neraex').first
+  trades = client.trades(pair)
+  trades[0].base
+  trades[0].target
+  trades[0].price
+  trades[0].amount
 ```
 
 ### Market List

@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ore.bz/api/v2/markets.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ore.bz
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Apr 2018 05:55:28 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '642'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=ddb7b75f553ea33d67ce315fabade341b1523771728; expires=Mon, 15-Apr-19
+        05:55:28 GMT; path=/; domain=.ore.bz; HttpOnly
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 2e535e4b-85a6-4fb6-b1de-c84f2aaa2f8d
+      Etag:
+      - '"22f02d49d4ca57061ff5e2860a68c3ef"'
+      X-Runtime:
+      - '0.004760'
+      X-Powered-By:
+      - Phusion Passenger 5.0.4
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 40bc29d6ec0d3367-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"btcusd","name":"BTC/USD"},{"id":"dashusd","name":"DASH/USD"},{"id":"ltcusd","name":"LTC/USD"},{"id":"dogeusd","name":"DOGE/USD"},{"id":"gbcusd","name":"GBC/USD"},{"id":"gbcbtc","name":"GBC/BTC"},{"id":"ethusd","name":"ETH/USD"},{"id":"ethbtc","name":"ETH/BTC"},{"id":"briausd","name":"BRIA/USD"},{"id":"briabtc","name":"BRIA/BTC"},{"id":"gbceth","name":"GBC/ETH"},{"id":"briaeth","name":"BRIA/ETH"},{"id":"gbcbria","name":"GBC/BRIA"},{"id":"zecusd","name":"ZEC/USD"},{"id":"zecbtc","name":"ZEC/BTC"},{"id":"bchusd","name":"BCH/USD"},{"id":"bchbtc","name":"BCH/BTC"},{"id":"dashbtc","name":"DASH/BTC"},{"id":"ltcbtc","name":"LTC/BTC"}]'
+    http_version: 
+  recorded_at: Sun, 15 Apr 2018 05:55:28 GMT
+recorded_with: VCR 4.0.0

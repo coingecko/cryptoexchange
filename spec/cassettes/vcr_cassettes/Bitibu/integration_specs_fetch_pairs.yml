@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitibu.com/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitibu.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Apr 2018 02:30:10 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '401'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dacedb02e8ceca36389d1e5564e170e9e1524796210; expires=Sat, 27-Apr-19
+        02:30:10 GMT; path=/; domain=.bitibu.com; HttpOnly
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 20079b39-bfae-4e2c-8482-927ae903975f
+      Etag:
+      - '"adf78a38afe87498b045390430eefe22"'
+      X-Runtime:
+      - '0.015405'
+      X-Powered-By:
+      - Phusion Passenger 5.2.3
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 411ddd992d2917e6-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"btcusd","name":"BTC/USD"},{"id":"ltcusd","name":"LTC/USD"},{"id":"ethusd","name":"ETH/USD"},{"id":"dogeusd","name":"DOGE/USD"},{"id":"btxusd","name":"BTX/USD"},{"id":"dashusd","name":"DASH/USD"},{"id":"bcausd","name":"BCA/USD"},{"id":"dgbusd","name":"DGB/USD"},{"id":"xsnusd","name":"XSN/USD"},{"id":"btcltc","name":"LTC/BTC"},{"id":"btcbca","name":"BCA/BTC"},{"id":"btgusd","name":"BTG/USD"}]'
+    http_version: 
+  recorded_at: Fri, 27 Apr 2018 02:30:10 GMT
+recorded_with: VCR 4.0.0
