@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sigen.pro/v1/web-public/statistic/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sigen.pro
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 15 May 2018 09:45:14 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=b483538d4da1704d31f7c4b9b189d6a2; path=/; HttpOnly
+      - __cfduid=dc2ebb5ac3ef63d7ebf375ae79c29d9101526377513; expires=Wed, 15-May-19
+        09:45:13 GMT; path=/; domain=.sigen.pro; HttpOnly; Secure
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=2592000
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 41b4aba62979aa50-SIN
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"data":{"ticker":{"SPA_BTC":{"last":"0.000000040","lowestAsk":"0.000000050","highestBid":"0.000000040","percentChange":"-33.33","baseVolume":"7952134.96523074","quoteVolume":"0.03040210","high24hr":"0.000000060","low24hr":"0.000000040","fee":"0.1%","id":1},"SPA_LTC":{"last":"0.0000013","lowestAsk":"0.0000052","highestBid":"0.0000015","percentChange":"-77.59","baseVolume":"4774745.72619984","quoteVolume":"2.66857038","high24hr":"0.0000058","low24hr":"0.0000013","fee":"0.1%","id":2},"LTC_BTC":{"last":"0.016676","lowestAsk":0,"highestBid":0,"percentChange":"0.00","baseVolume":0,"quoteVolume":"0.00000000","high24hr":"0.016676","low24hr":"0.016676","fee":"0.1%","id":3}},"p2p":null,"capital":{"BTC":null,"LTC":null,"SPA":null},"count":3184016888,"gtime":1526377493,"time":0.03585195541381836}}'
+    http_version: 
+  recorded_at: Tue, 15 May 2018 09:45:14 GMT
+recorded_with: VCR 4.0.0

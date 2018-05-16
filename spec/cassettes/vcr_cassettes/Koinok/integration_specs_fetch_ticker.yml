@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.koinok.com/api/brain/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.koinok.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 15 May 2018 08:14:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1242'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dfe38305ac86fcd85bec4b11776e249181526372048; expires=Wed, 15-May-19
+        08:14:08 GMT; path=/; domain=.koinok.com; HttpOnly; Secure
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Authorization, X-Requested-With, Content-Type, Accept, X-Authorization,
+        X-Access-Token
+      Etag:
+      - W/"4da-pTkiryzTWxw6yqVsPWuev6x/w2o"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 41b42635b8413162-SIN
+    body:
+      encoding: UTF-8
+      string: '{"result":[{"marketSymbol":"BTC-INR","high24":631250,"low24":604890,"price":625460,"volume":2.9013,"highestBid":623600,"lowestAsk":649090},{"marketSymbol":"CAS-INR","high24":2.42,"low24":2.17,"price":2.42,"volume":39924,"highestBid":2.2,"lowestAsk":2.38},{"marketSymbol":"CVC-INR","high24":26.11,"low24":24.36,"price":26.11,"volume":1875,"highestBid":25.93,"lowestAsk":26.14},{"marketSymbol":"ETH-INR","high24":52520,"low24":51502.8,"price":52520,"volume":0.2081,"highestBid":52794,"lowestAsk":53275.2},{"marketSymbol":"GAS-INR","high24":1954.34,"low24":1840.75,"price":1883.65,"volume":116.4909,"highestBid":1881.78,"lowestAsk":1932.23},{"marketSymbol":"NEO-INR","high24":4949,"low24":4657.95,"price":4900.26,"volume":89.2533,"highestBid":4457.97,"lowestAsk":4934.3},{"marketSymbol":"TRX-INR","high24":5.3,"low24":5.09,"price":5.21,"volume":6054,"highestBid":5.08,"lowestAsk":5.21},{"marketSymbol":"VIB-INR","high24":12.5,"low24":11.78,"price":12.5,"volume":8707,"highestBid":12.39,"lowestAsk":12.5},{"marketSymbol":"XDCE-INR","high24":0.62,"low24":0.59,"price":0.61,"volume":8964,"highestBid":0.6,"lowestAsk":0.61},{"marketSymbol":"XRP-INR","high24":53.38,"low24":51.04,"price":52.64,"volume":27725.4,"highestBid":52.43,"lowestAsk":53.12}]}'
+    http_version: 
+  recorded_at: Tue, 15 May 2018 08:14:11 GMT
+recorded_with: VCR 4.0.0

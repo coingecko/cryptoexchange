@@ -39,6 +39,7 @@ Or install it yourself as:
 | Bitbank           | Y       | Y          | Y       |         | User-Defined|
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|
 | Bitconnect        | Y       |            |         |         | Y           |
+| Bitebtc           | Y       | Y          | Y       |         | Y           |
 | Bitfinex          | Y       |            |         |         | Y           |
 | Bitflyer          | Y       |            |         |         | Y           |
 | Bithumb           | Y       |            |         |         | Y           |
@@ -110,6 +111,7 @@ Or install it yourself as:
 | Kkcoin            | Y       | Y          | Y       |         | Y           |
 | KyberNetwork      | Y       | N          | N       |         | Y           |
 | Jubi              | Y       |            |         |         | Y           |
+| Koinok            | Y       |            |         |         | Y           |
 | Koinex            | Y       |            |         |         | Y           |
 | Korbit            | Y       |            |         |         | User-Defined|
 | Kraken            | Y       |            |         |         | Y           |
@@ -141,6 +143,7 @@ Or install it yourself as:
 | Quoine            | Y       |            |         |         | Y           |
 | RadarRelay        | Y       |            |         |         | User-Defined|
 | RightBTC          | Y       | Y          | Y       |         | Y           |
+| Sigen             | Y       |            |         |         | Y           |
 | Sistemkoin        | Y       |            |         |         | Y           |
 | SouthXchange      | Y       | Y          | Y       |         | Y           |
 | Stocks Exchange   | Y       |            |         |         | Y           |
