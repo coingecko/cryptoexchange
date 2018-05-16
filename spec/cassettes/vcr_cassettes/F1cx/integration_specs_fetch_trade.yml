@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://f1cx.com/api/v2/trades.json?market=mtcltc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - f1cx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Apr 2018 01:28:24 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '7377'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d23f89b145bcd901db5c83cd4569c4be81524792503; expires=Sat, 27-Apr-19
+        01:28:23 GMT; path=/; domain=.f1cx.com; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 23d69412-28aa-4405-8227-a877aa04326e
+      Etag:
+      - '"8a0c9f4b746ef50fccda99a9b2142748"'
+      X-Runtime:
+      - '0.035796'
+      X-Powered-By:
+      - Phusion Passenger 5.1.12
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 411d831d4c70114d-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":21770,"price":"0.00000025","volume":"103.3144","funds":"0.0000258286","market":"mtcltc","created_at":"2018-04-24T07:53:09-05:00","side":null},{"id":21767,"price":"0.00000028","volume":"2996.1193","funds":"0.000838913404","market":"mtcltc","created_at":"2018-04-24T07:41:06-05:00","side":null},{"id":21759,"price":"0.00000028","volume":"0.0008","funds":"0.000000000224","market":"mtcltc","created_at":"2018-04-24T07:24:37-05:00","side":null},{"id":21288,"price":"0.00000028","volume":"50738.1475","funds":"0.0142066813","market":"mtcltc","created_at":"2018-04-21T13:42:07-05:00","side":null},{"id":21287,"price":"0.00000028","volume":"9976.1382","funds":"0.002793318696","market":"mtcltc","created_at":"2018-04-21T13:42:07-05:00","side":null},{"id":21256,"price":"0.0000002","volume":"2000.0","funds":"0.0004","market":"mtcltc","created_at":"2018-04-18T11:31:40-05:00","side":null},{"id":21255,"price":"0.0000002","volume":"625.0","funds":"0.000125","market":"mtcltc","created_at":"2018-04-18T11:25:15-05:00","side":null},{"id":21238,"price":"0.0000002","volume":"165576.7619","funds":"0.03311535238","market":"mtcltc","created_at":"2018-04-18T04:24:15-05:00","side":null},{"id":21237,"price":"0.0000002","volume":"70468.4762","funds":"0.01409369524","market":"mtcltc","created_at":"2018-04-18T04:23:47-05:00","side":null},{"id":21236,"price":"0.00000021","volume":"165576.7619","funds":"0.034771119999","market":"mtcltc","created_at":"2018-04-18T04:23:40-05:00","side":null},{"id":21235,"price":"0.00000022","volume":"48378.0","funds":"0.01064316","market":"mtcltc","created_at":"2018-04-18T04:22:01-05:00","side":null},{"id":21230,"price":"0.00000028","volume":"23.8618","funds":"0.000006681304","market":"mtcltc","created_at":"2018-04-17T13:04:19-05:00","side":null},{"id":21223,"price":"0.00000024","volume":"1623722.1613","funds":"0.389693318712","market":"mtcltc","created_at":"2018-04-17T13:00:37-05:00","side":null},{"id":21222,"price":"0.00000024","volume":"633333.3333","funds":"0.151999999992","market":"mtcltc","created_at":"2018-04-17T11:10:28-05:00","side":null},{"id":21221,"price":"0.00000024","volume":"2371296.3333","funds":"0.569111119992","market":"mtcltc","created_at":"2018-04-17T10:46:38-05:00","side":null},{"id":21213,"price":"0.00000024","volume":"1737505.0","funds":"0.4170012","market":"mtcltc","created_at":"2018-04-17T09:53:35-05:00","side":null},{"id":21207,"price":"0.00000024","volume":"1000000.0","funds":"0.24","market":"mtcltc","created_at":"2018-04-17T09:03:25-05:00","side":null},{"id":21186,"price":"0.00000022","volume":"450000.0","funds":"0.099","market":"mtcltc","created_at":"2018-04-16T02:51:39-05:00","side":null},{"id":21153,"price":"0.00000021","volume":"450000.0","funds":"0.0945","market":"mtcltc","created_at":"2018-04-15T01:04:19-05:00","side":null},{"id":21152,"price":"0.00000025","volume":"61437.4662","funds":"0.01535936655","market":"mtcltc","created_at":"2018-04-14T11:27:41-05:00","side":null},{"id":21118,"price":"0.0000002","volume":"418978.0821","funds":"0.08379561642","market":"mtcltc","created_at":"2018-04-11T15:02:51-05:00","side":null},{"id":21117,"price":"0.0000002","volume":"31021.9179","funds":"0.00620438358","market":"mtcltc","created_at":"2018-04-11T15:02:51-05:00","side":null},{"id":21081,"price":"0.00000025","volume":"36576.1895","funds":"0.009144047375","market":"mtcltc","created_at":"2018-04-07T23:16:12-05:00","side":null},{"id":21080,"price":"0.00000025","volume":"1.5443","funds":"0.000000386075","market":"mtcltc","created_at":"2018-04-07T16:47:23-05:00","side":null},{"id":21075,"price":"0.0000002","volume":"418978.0821","funds":"0.08379561642","market":"mtcltc","created_at":"2018-04-07T06:51:33-05:00","side":null},{"id":21061,"price":"0.00000025","volume":"351984.8","funds":"0.0879962","market":"mtcltc","created_at":"2018-04-04T00:37:06-05:00","side":null},{"id":21060,"price":"0.00000025","volume":"50000.0","funds":"0.0125","market":"mtcltc","created_at":"2018-04-04T00:37:06-05:00","side":null},{"id":21059,"price":"0.00000025","volume":"50000.0","funds":"0.0125","market":"mtcltc","created_at":"2018-04-04T00:37:06-05:00","side":null},{"id":20984,"price":"0.00000025","volume":"50000.0","funds":"0.0125","market":"mtcltc","created_at":"2018-03-29T07:42:51-05:00","side":null},{"id":20983,"price":"0.00000025","volume":"163508.5524","funds":"0.0408771381","market":"mtcltc","created_at":"2018-03-29T07:42:50-05:00","side":null},{"id":20978,"price":"0.00000025","volume":"48395.0963","funds":"0.012098774075","market":"mtcltc","created_at":"2018-03-27T21:04:49-05:00","side":null},{"id":20977,"price":"0.00000024","volume":"50537.9035","funds":"0.01212909684","market":"mtcltc","created_at":"2018-03-27T21:04:30-05:00","side":null},{"id":20943,"price":"0.00000025","volume":"48637.9824","funds":"0.0121594956","market":"mtcltc","created_at":"2018-03-25T04:35:19-05:00","side":null},{"id":20942,"price":"0.00000025","volume":"0.0176","funds":"0.0000000044","market":"mtcltc","created_at":"2018-03-25T04:35:19-05:00","side":null},{"id":20940,"price":"0.00000025","volume":"29167.0","funds":"0.00729175","market":"mtcltc","created_at":"2018-03-24T06:17:45-05:00","side":null},{"id":20924,"price":"0.00000018","volume":"2.1503","funds":"0.000000387054","market":"mtcltc","created_at":"2018-03-23T14:15:15-05:00","side":null},{"id":20923,"price":"0.00000025","volume":"2.1557","funds":"0.000000538925","market":"mtcltc","created_at":"2018-03-23T14:14:43-05:00","side":null},{"id":20916,"price":"0.00000018","volume":"2.6999","funds":"0.000000485982","market":"mtcltc","created_at":"2018-03-23T14:04:18-05:00","side":null},{"id":20915,"price":"0.00000025","volume":"2.7067","funds":"0.000000676675","market":"mtcltc","created_at":"2018-03-23T14:03:30-05:00","side":null},{"id":20914,"price":"0.00000018","volume":"4.044","funds":"0.00000072792","market":"mtcltc","created_at":"2018-03-23T14:00:40-05:00","side":null},{"id":20907,"price":"0.00000025","volume":"828.12","funds":"0.00020703","market":"mtcltc","created_at":"2018-03-23T13:56:52-05:00","side":null},{"id":20900,"price":"0.00000025","volume":"41390.3701","funds":"0.010347592525","market":"mtcltc","created_at":"2018-03-21T22:28:13-05:00","side":null},{"id":20899,"price":"0.00000025","volume":"191641.6299","funds":"0.047910407475","market":"mtcltc","created_at":"2018-03-21T22:28:13-05:00","side":null},{"id":20895,"price":"0.00000025","volume":"8102.92","funds":"0.00202573","market":"mtcltc","created_at":"2018-03-21T00:29:42-05:00","side":null},{"id":20880,"price":"0.00000025","volume":"1.0663","funds":"0.000000266575","market":"mtcltc","created_at":"2018-03-20T14:10:08-05:00","side":null},{"id":20879,"price":"0.00000018","volume":"39.1798","funds":"0.000007052364","market":"mtcltc","created_at":"2018-03-20T07:05:10-05:00","side":null},{"id":20873,"price":"0.00000025","volume":"250254.3838","funds":"0.06256359595","market":"mtcltc","created_at":"2018-03-19T12:21:29-05:00","side":null},{"id":20872,"price":"0.00000025","volume":"10000.0","funds":"0.0025","market":"mtcltc","created_at":"2018-03-19T12:21:29-05:00","side":null},{"id":20871,"price":"0.00000025","volume":"30000.0","funds":"0.0075","market":"mtcltc","created_at":"2018-03-19T12:21:29-05:00","side":null},{"id":20870,"price":"0.00000025","volume":"10000.0","funds":"0.0025","market":"mtcltc","created_at":"2018-03-19T12:21:29-05:00","side":null}]'
+    http_version: 
+  recorded_at: Fri, 27 Apr 2018 01:28:24 GMT
+recorded_with: VCR 4.0.0

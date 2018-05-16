@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://f1cx.com/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - f1cx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Apr 2018 01:28:16 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '100'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d17b03533e1443c7602af6e808ba83cd81524792495; expires=Sat, 27-Apr-19
+        01:28:15 GMT; path=/; domain=.f1cx.com; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 496422e5-8086-41f4-9e83-e117018cc3c8
+      Etag:
+      - '"8907ad1598ce16d7ac4bdbf0fa8825d8"'
+      X-Runtime:
+      - '0.003928'
+      X-Powered-By:
+      - Phusion Passenger 5.1.12
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 411d82eb491b179e-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"mtcbtc","name":"MTC/BTC"},{"id":"mtcltc","name":"MTC/LTC"},{"id":"mtcdge","name":"MTC/DGE"}]'
+    http_version: 
+  recorded_at: Fri, 27 Apr 2018 01:28:16 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://f1cx.com/api/v2/tickers/mtcltc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - f1cx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Apr 2018 01:28:22 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '137'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0df6cb0ebf753e92b4dadac6cdad06f01524792502; expires=Sat, 27-Apr-19
+        01:28:22 GMT; path=/; domain=.f1cx.com; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 937bd34b-0312-4e06-8f63-c365774d0a48
+      Etag:
+      - '"6567bbed6454da8434314c8ff2915049"'
+      X-Runtime:
+      - '0.007628'
+      X-Powered-By:
+      - Phusion Passenger 5.1.12
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 411d831238ab179e-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1524792502,"ticker":{"buy":"0.0000002","sell":"0.00000025","low":"0.00000025","high":"0.00000028","last":"0.00000025","vol":"0.0"}}'
+    http_version: 
+  recorded_at: Fri, 27 Apr 2018 01:28:22 GMT
+recorded_with: VCR 4.0.0
