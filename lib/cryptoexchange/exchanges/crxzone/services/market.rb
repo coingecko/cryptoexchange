@@ -7,7 +7,7 @@
             true
           end
         end
-      
+
         def fetch(market_pair)
           result = IdFetcher.get_id(market_pair.base.upcase, market_pair.target.upcase)
           if result.length > 0
