@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://novadex.io/all_price_ticker.php
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - novadex.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 18 May 2018 11:24:14 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc7d420bf86bfc862f4329cb69ff01c7d1526642654; expires=Sat, 18-May-19
+        11:24:14 GMT; path=/; domain=.novadex.io; HttpOnly; Secure
+      - novadex_sess_3=f8d0f8cb55dd2e3fd52aa24e424a77f0ff7b36e6; path=/
+      - novadex_sess_3=f8d0f8cb55dd2e3fd52aa24e424a77f0ff7b36e6; path=/
+      X-Powered-By:
+      - PHP/5.3.29
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 41cdf4cdcc3833af-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"eth_btc":{"open":"0.08396742","last":"0.08411354","high":"0.08511389","low":"0.08263853","change":"-0.27","volume":"314.88500000"},"qtum_btc":{"open":"0.00192886","last":"0.00192114","high":"0.00196831","low":"0.00186574","change":"-1.93","volume":"1056.20040000"},"xrp_btc":{"open":"0.00008233","last":"0.00008240","high":"0.00008399","low":"0.00008101","change":"-0.73","volume":"133719.39280000"},"neo_btc":{"open":"0.00722000","last":"0.00721999","high":"0.00739792","low":"0.00707211","change":"-2.09","volume":"719.21490000"},"ada_btc":{"open":"0.00002956","last":"0.00002950","high":"0.00003046","low":"0.00002904","change":"-2.35","volume":"517927.77560000"},"etc_btc":{"open":"0.00213000","last":"0.00212340","high":"0.00220000","low":"0.00207000","change":"-1.11","volume":"1782.27970000"},"ltc_btc":{"open":"0.01631710","last":"0.01635789","high":"0.01685000","low":"0.01621001","change":"-2.09","volume":"332.38140000"},"dash_btc":{"open":"0.04731988","last":"0.04720500","high":"0.04971030","low":"0.04670000","change":"-5.45","volume":"158.85360000"},"xmr_btc":{"open":"0.02322621","last":"0.02334212","high":"0.02428999","low":"0.02320000","change":"-3.14","volume":"174.94230000"},"xlm_btc":{"open":"0.00003820","last":"0.00003830","high":"0.00003976","low":"0.00003774","change":"-2.72","volume":"113931.87640000"},"vvi_usd":{"open":"0.29100000","last":"0.29900000","high":"0.29900000","low":"0.29900000","change":"2.75","volume":"0.00000000"},"vvi_btc":{"open":"0.00003678","low":"0.00003665","high":"0.00003682","last":"0.00003671","change":"5.07","volume":"601834.26900000"},"vvi_eth":{"open":"0.00043746","low":"0.00043653","high":"0.00043809","last":"0.00043699","change":"5.64","volume":"607931.35620000"},"ltc_eth":{"open":"0.19400002","last":"0.19450000","high":"0.19889798","low":"0.19400000","change":"-1.41","volume":"28.20440000"},"qtum_eth":{"open":"0.02273680","last":"0.02263538","high":"0.02344733","low":"0.02254280","change":"-2.00","volume":"188.19380000"},"dash_eth":{"open":"0.56066360","last":"0.56010350","high":"0.58880232","low":"0.55811746","change":"-5.33","volume":"2.61520000"},"xrp_eth":{"open":"0.00098101","last":"0.00098312","high":"0.00099159","low":"0.00097400","change":"0.17","volume":"23548.94730000"},"etc_eth":{"open":"0.02520596","last":"0.02532102","high":"0.02604220","low":"0.02491824","change":"-0.46","volume":"608.34100000"},"neo_eth":{"open":"0.08519728","last":"0.08612796","high":"0.08755453","low":"0.08510851","change":"-1.07","volume":"55.43710000"},"ada_eth":{"open":"0.00034933","last":"0.00035000","high":"0.00036099","low":"0.00034812","change":"-2.51","volume":"54449.29630000"},"xmr_eth":{"open":"0.27906699","last":"0.27709788","high":"0.29099995","low":"0.27709715","change":"-2.98","volume":"13.02540000"},"xlm_eth":{"open":"0.00045623","last":"0.00045402","high":"0.00046999","low":"0.00045207","change":"-3.24","volume":"6031.27380000"},"nec_eth":{"open":"0.00073017","last":"0.00073075","high":"0.00075323","low":"0.00070612","change":"2.82","volume":"0.00000000"},"nec_btc":{"open":"0.00006133","last":"0.00006139","high":"0.00006270","low":"0.00005981","change":"2.25","volume":"0.00000000"},"khc_btc":{"open":"0.00012266","last":"0.00012278","high":"0.00012539","low":"0.00011962","change":"2.25","volume":"0.00000000"},"khc_eth":{"open":"0.00146034","last":"0.00146151","high":"0.00150646","low":"0.00141225","change":"2.82","volume":"0.00000000"},"dfct_btc":{"open":"0.00012266","last":"0.00012278","high":"0.00012539","low":"0.00011962","change":"2.25","volume":"0.00000000"},"dfct_eth":{"open":"0.00146034","last":"0.00146151","high":"0.00150646","low":"0.00141225","change":"2.82","volume":"0.00000000"},"abr_btc":{"open":"0.00012266","last":"0.00012278","high":"0.00012539","low":"0.00011962","change":"2.25","volume":"0.00000000"},"abr_eth":{"open":"0.00146034","last":"0.00146151","high":"0.00150646","low":"0.00141225","change":"2.82","volume":"0.00000000"}}'
+    http_version: 
+  recorded_at: Fri, 18 May 2018 11:24:14 GMT
+recorded_with: VCR 4.0.0
