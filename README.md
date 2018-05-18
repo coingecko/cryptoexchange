@@ -78,6 +78,7 @@ Or install it yourself as:
 | Coinrail          | Y       | Y          | Y       |         | Y           |
 | CoinsMarkets      | Y       |            |         |         | Y           |
 | COSS              | Y       |            |         |         | Y           |
+| Cpdax             | Y       |            |         |         | Y           |
 | Crex24            | Y       | Y          | Y       |         | Y           |
 | CRXZone           | Y       | Y          | Y       |         | Y           |
 | Cryptex           | Y       | Y          | Y       |         | User-Defined|
