@@ -35,6 +35,7 @@ Or install it yourself as:
 | Bit-Z             | Y       |            |         |         | Y           |
 | Bit2C             | Y       | Y          | Y       |         | User-Defined|
 | Binance           | Y       | Y          |         |         | Y           |
+| bisq              | Y       |            | Y       |         | Y           |
 | Bitbay            | Y       |            |         |         | User-Defined|
 | Bitbank           | Y       | Y          | Y       |         | User-Defined|
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|

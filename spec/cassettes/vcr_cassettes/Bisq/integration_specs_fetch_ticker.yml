@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://markets.bisq.network/api/ticker?market=bch_btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - markets.bisq.network
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 18 May 2018 06:17:47 GMT
+      Server:
+      - Apache/2.4.18 (Ubuntu)
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '199'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+            {
+                "last": "0.15200000",
+                "high": "0.15200000",
+                "low": "0.15200000",
+                "volume_left": 0,
+                "volume_right": 0,
+                "buy": null,
+                "sell": null
+            }
+        ]
+    http_version: 
+  recorded_at: Fri, 18 May 2018 06:17:47 GMT
+recorded_with: VCR 4.0.0
