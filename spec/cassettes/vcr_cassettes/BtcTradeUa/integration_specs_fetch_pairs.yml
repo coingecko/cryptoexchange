@@ -1,0 +1,156 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://btc-trade.com.ua/api/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - btc-trade.com.ua
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.13.1
+      Date:
+      - Sat, 19 May 2018 01:45:52 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Cookie
+      Cache-Control:
+      - max-age=0
+      X-Upstream:
+      - crypton_time
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ppc_btc": {"sell": "0.0003500000", "currency_trade": "PPC", "buy_usd":
+        "0.0000084291", "buy": "0.0002200000", "last": "0", "updated": 1526694307,
+        "vol": "0", "sell_usd": "0.0000134099", "last_usd": "0", "currency_base":
+        "BTC", "vol_cur": "0", "high": "0", "low": "0", "vol_cur_usd": "0", "avg":
+        "0", "usd_rate": "26.1"}, "ltc_uah": {"sell": "3470.0000000000", "currency_trade":
+        "LTC", "buy_usd": "128.5440613026", "buy": "3355.0000000000", "last": "3350.9970804597",
+        "updated": 1526694305, "vol": "42.6091100000", "sell_usd": "132.9501915708",
+        "last_usd": "128.3906927379", "currency_base": "UAH", "vol_cur": "142810.7940660000",
+        "high": "3500.0000000000", "low": "1534.0000000000", "vol_cur_usd": "5471.6779335632",
+        "avg": "127.5063709265", "usd_rate": "26.1"}, "dash_btc": {"sell": "0.0548950000",
+        "currency_trade": "DASH", "buy_usd": "0.0017011877", "buy": "0.0444010000",
+        "last": "0", "updated": 1526694306, "vol": "0", "sell_usd": "0.0021032567",
+        "last_usd": "0", "currency_base": "BTC", "vol_cur": "0", "high": "0", "low":
+        "0", "vol_cur_usd": "0", "avg": "0", "usd_rate": "26.1"}, "iti_uah": {"sell":
+        "530.0000000000", "currency_trade": "ITI", "buy_usd": "18.2758620689", "buy":
+        "477.0000000000", "last": "0", "updated": 1526694307, "vol": "0", "sell_usd":
+        "20.3065134099", "last_usd": "0", "currency_base": "UAH", "vol_cur": "0",
+        "high": "0", "low": "0", "vol_cur_usd": "0", "avg": "0", "usd_rate": "26.1"},
+        "xrp_uah": {"sell": "17.3300000000", "currency_trade": "XRP", "buy_usd": "0.6486628352",
+        "buy": "16.9301000000", "last": "16.8200001335", "updated": 1526694309, "vol":
+        "4482.5071070000", "sell_usd": "0.6639846743", "last_usd": "0.6444444495",
+        "currency_base": "UAH", "vol_cur": "75485.3883360000", "high": "17.3299996355",
+        "low": "16.5000000000", "vol_cur_usd": "2892.1604726436", "avg": "0.6471288919",
+        "usd_rate": "26.1"}, "xem_uah": {"sell": "8.0500000000", "currency_trade":
+        "XEM", "buy_usd": "0.3049808429", "buy": "7.9600000000", "last": "8.1000000000",
+        "updated": 1526694308, "vol": "2773.6929750000", "sell_usd": "0.3084291187",
+        "last_usd": "0.3103448275", "currency_base": "UAH", "vol_cur": "22059.5929230000",
+        "high": "8.2299003103", "low": "7.6700000000", "vol_cur_usd": "845.1951311494",
+        "avg": "0.3044916876", "usd_rate": "26.1"}, "sib_uah": {"sell": "26.3400000000",
+        "currency_trade": "SIB", "buy_usd": "0.6896551724", "buy": "18.0000000000",
+        "last": "0", "updated": 1526694307, "vol": "0", "sell_usd": "1.0091954022",
+        "last_usd": "0", "currency_base": "UAH", "vol_cur": "0", "high": "0", "low":
+        "0", "vol_cur_usd": "0", "avg": "0", "usd_rate": "26.1"}, "nvc_btc": {"sell":
+        "0.0005390000", "currency_trade": "NVC", "buy_usd": "0.0000149463", "buy":
+        "0.0003901000", "last": "0", "updated": 1526694305, "vol": "0", "sell_usd":
+        "0.0000206513", "last_usd": "0", "currency_base": "BTC", "vol_cur": "0", "high":
+        "0", "low": "0", "vol_cur_usd": "0", "avg": "0", "usd_rate": "26.1"}, "btc_uah":
+        {"sell": "208899.9100000000", "currency_trade": "BTC", "buy_usd": "7988.5057854406",
+        "buy": "208500.0010000000", "last": "208499.5170431536", "updated": 1526694305,
+        "vol": "10.5740480000", "sell_usd": "8003.8279693486", "last_usd": "7988.4872430327",
+        "currency_base": "UAH", "vol_cur": "2190150.4602780002", "high": "212465.6923076923",
+        "low": "177591.0000000000", "vol_cur_usd": "83913.8107386206", "avg": "7925.9173886354",
+        "usd_rate": "26.1"}, "krb_uah": {"sell": "12.7699999000", "currency_trade":
+        "KRB", "buy_usd": "0.4712647509", "buy": "12.3000100000", "last": "12.7699999866",
+        "updated": 1526694308, "vol": "3302.8026390000", "sell_usd": "0.4892720268",
+        "last_usd": "0.4892720301", "currency_base": "UAH", "vol_cur": "40572.1107440000",
+        "high": "12.8000000300", "low": "12.0100000000", "vol_cur_usd": "1554.4870016858",
+        "avg": "0.4713255900", "usd_rate": "26.1"}, "btc_usdt": {"sell": "8700.0000000000",
+        "currency_trade": "BTC", "buy_usd": "300.5363984674", "buy": "7844.0000000000",
+        "last": "0", "updated": 1526694309, "vol": "0", "sell_usd": "333.3333333333",
+        "last_usd": "0", "currency_base": "USDT", "vol_cur": "0", "high": "0", "low":
+        "0", "vol_cur_usd": "0", "avg": "0", "usd_rate": "26.1"}, "zec_uah": {"sell":
+        "8996.0000000000", "currency_trade": "ZEC", "buy_usd": "341.2367816091", "buy":
+        "8906.2800000000", "last": "8906.1187894321", "updated": 1526694308, "vol":
+        "88.5653160000", "sell_usd": "344.6743295019", "last_usd": "341.2306049590",
+        "currency_base": "UAH", "vol_cur": "768279.0973760000", "high": "8999.9978702505",
+        "low": "6409.5000000000", "vol_cur_usd": "29435.9807423754", "avg": "331.0919385806",
+        "usd_rate": "26.1"}, "dash_uah": {"sell": "10975.0000000000", "currency_trade":
+        "DASH", "buy_usd": "372.1072796934", "buy": "9712.0000000000", "last": "9711.3073286052",
+        "updated": 1526694307, "vol": "0.3375100000", "sell_usd": "420.4980842911",
+        "last_usd": "372.0807405595", "currency_base": "UAH", "vol_cur": "3439.2453740000",
+        "high": "10999.8086305359", "low": "9711.3073286052", "vol_cur_usd": "131.7718534099",
+        "avg": "392.1855578499", "usd_rate": "26.1"}, "status": true, "ltc_btc": {"sell":
+        "0.0168300000", "currency_trade": "LTC", "buy_usd": "0.0006130268", "buy":
+        "0.0160000000", "last": "0.0160018047", "updated": 1526694306, "vol": "0.9220210000",
+        "sell_usd": "0.0006448275", "last_usd": "0.0006130959", "currency_base": "BTC",
+        "vol_cur": "0.0147540000", "high": "0.0160018047", "low": "0.0160018047",
+        "vol_cur_usd": "0.0005652873", "avg": "0.0006130959", "usd_rate": "26.1"},
+        "doge_uah": {"sell": "0.1059000000", "currency_trade": "DOGE", "buy_usd":
+        "0.0039361685", "buy": "0.1027340000", "last": "0.1059000000", "updated":
+        1526694307, "vol": "1942142.6137450000", "sell_usd": "0.0040574712", "last_usd":
+        "0.0040574712", "currency_base": "UAH", "vol_cur": "201363.0790480000", "high":
+        "0.1077450008", "low": "0.1012000000", "vol_cur_usd": "7715.0604999233", "avg":
+        "0.0039750642", "usd_rate": "26.1"}, "tlr_uah": {"sell": "1.4049979900", "currency_trade":
+        "TLR", "buy_usd": "0.0506636398", "buy": "1.3223210000", "last": "1.4049982343",
+        "updated": 1526694308, "vol": "9342.4766230000", "sell_usd": "0.0538313406",
+        "last_usd": "0.0538313499", "currency_base": "UAH", "vol_cur": "12629.2368250000",
+        "high": "1.4189999955", "low": "1.3210000059", "vol_cur_usd": "483.8788055555",
+        "avg": "0.0521715223", "usd_rate": "26.1"}, "nvc_uah": {"sell": "111.0000000000",
+        "currency_trade": "NVC", "buy_usd": "3.8697356321", "buy": "101.0001000000",
+        "last": "111.0000000000", "updated": 1526694305, "vol": "1.2186110000", "sell_usd":
+        "4.2528735632", "last_usd": "4.2528735632", "currency_base": "UAH", "vol_cur":
+        "135.2658210000", "high": "111.0000000000", "low": "111.0000000000", "vol_cur_usd":
+        "5.1825985057", "avg": "4.2528735632", "usd_rate": "26.1"}, "eth_uah": {"sell":
+        "17101.0000000000", "currency_trade": "ETH", "buy_usd": "655.1762452107",
+        "buy": "17100.1000000000", "last": "17101.0000000000", "updated": 1526694308,
+        "vol": "59.6832000000", "sell_usd": "655.2107279693", "last_usd": "655.2107279693",
+        "currency_base": "UAH", "vol_cur": "1022418.7070460001", "high": "17419.9952394718",
+        "low": "16445.0000000000", "vol_cur_usd": "39173.1305381609", "avg": "655.7665391485",
+        "usd_rate": "26.1"}, "etc_uah": {"sell": "452.0000000000", "currency_trade":
+        "ETC", "buy_usd": "17.2030651340", "buy": "449.0000000000", "last": "448.9997092419",
+        "updated": 1526694308, "vol": "258.8257590000", "sell_usd": "17.3180076628",
+        "last_usd": "17.2030539939", "currency_base": "UAH", "vol_cur": "116062.1401460000",
+        "high": "500.0000000000", "low": "424.4300000000", "vol_cur_usd": "4446.8252929501",
+        "avg": "17.1896063276", "usd_rate": "26.1"}, "bch_uah": {"sell": "32000.0000000000",
+        "currency_trade": "BCH", "buy_usd": "1111.1111111111", "buy": "29000.0000000000",
+        "last": "31299.0000000000", "updated": 1526694308, "vol": "2.4723770000",
+        "sell_usd": "1226.0536398467", "last_usd": "1199.1954022988", "currency_base":
+        "UAH", "vol_cur": "73187.3189020000", "high": "31581.0000000000", "low": "28998.2334619625",
+        "vol_cur_usd": "2804.1118353256", "avg": "1139.1875331376", "usd_rate": "26.1"},
+        "doge_btc": {"sell": "0.0000005128", "currency_trade": "DOGE", "buy_usd":
+        "0.0000000188", "buy": "0.0000004923", "last": "0", "updated": 1526694307,
+        "vol": "0", "sell_usd": "0.0000000196", "last_usd": "0", "currency_base":
+        "BTC", "vol_cur": "0", "high": "0", "low": "0", "vol_cur_usd": "0", "avg":
+        "0", "usd_rate": "26.1"}, "usdt_uah": {"sell": "25.5889999900", "currency_trade":
+        "USDT", "buy_usd": "0.9682758620", "buy": "25.2720000000", "last": "25.2710001363",
+        "updated": 1526694309, "vol": "517.5805000000", "sell_usd": "0.9804214555",
+        "last_usd": "0.9682375531", "currency_base": "UAH", "vol_cur": "13145.4468260000",
+        "high": "25.5880000000", "low": "25.2710000276", "vol_cur_usd": "503.6569665134",
+        "avg": "0.9723132198", "usd_rate": "26.1"}, "xmr_uah": {"sell": "4864.9999980000",
+        "currency_trade": "XMR", "buy_usd": "168.6981226053", "buy": "4403.0210000000",
+        "last": "4865.0000000000", "updated": 1526694308, "vol": "6.7448850000", "sell_usd":
+        "186.3984673563", "last_usd": "186.3984674329", "currency_base": "UAH", "vol_cur":
+        "30348.6442810000", "high": "4865.0000000000", "low": "3011.0157403148", "vol_cur_usd":
+        "1162.7833057854", "avg": "167.7265861828", "usd_rate": "26.1"}}'
+    http_version: 
+  recorded_at: Sat, 19 May 2018 01:45:52 GMT
+recorded_with: VCR 4.0.0
