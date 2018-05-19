@@ -74,6 +74,7 @@ Or install it yourself as:
 | Coinhouse         | Y       |            |         |         | Y           |
 | Coinmate          | Y       | Y          |         |         | User-Defined|
 | Coinnest          | Y       | Y          | Y       |         | User-Defined|
+| Coinnox           | Y       | Y          | Y       |         | Y           |
 | Coinroom          | Y       |            |         |         | Y           |
 | Coinone           | Y       | Y          | Y       |         | Y           |
 | Coinrail          | Y       | Y          | Y       |         | Y           |
