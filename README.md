@@ -135,6 +135,7 @@ Or install it yourself as:
 | Nova Exchange     | Y       |            |         |         | Y           |
 | OKCoin            | Y       |            |         |         | User-Defined|
 | OKEx              | Y       | Y          | Y       |         | User-Defined|
+| Ooobtc            | Y       | Y          | Y       |         | Y           |
 | Ore Bz            | Y       | Y          | Y       |         | Y           |
 | Paribu            | Y       |            |         |         | Y           |
 | Paymium           | Y       | Y          | Y       |         | User-Defined|
