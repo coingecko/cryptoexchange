@@ -1,0 +1,101 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ooobtc.com/open/getorderbook?kv=eth_btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.ooobtc.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 20 May 2018 11:12:39 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Powered-By:
+      - Java
+      Server:
+      - Tomcat CentOs
+      Access-Control-Allow-Origin:
+      - ''
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept,AUTHORIZATION-CLIENT,AUTHORIZATION-UID,AUTHORIZATION-TOKEN,lang
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"msg":"success","data":{"buy":[{"price":"0.08530031","number":1.4668,"total":"0.125118494708","tag":"Buy
+        1"},{"price":"0.08529015","number":185.8875,"total":"15.854372758125","tag":"Buy
+        2"},{"price":"0.08511711","number":54.3077,"total":"4.622514474747","tag":"Buy
+        3"},{"price":"0.08510971","number":352.3525,"total":"29.988619092775","tag":"Buy
+        4"},{"price":"0.08502131","number":30.7597,"total":"2.615229989207","tag":"Buy
+        5"},{"price":"0.08486060","number":31.8607,"total":"2.703718118420","tag":"Buy
+        6"},{"price":"0.08432123","number":55.4152,"total":"4.672677824696","tag":"Buy
+        7"},{"price":"0.08431802","number":11.8151,"total":"0.996225838102","tag":"Buy
+        8"},{"price":"0.08415272","number":130.6699,"total":"10.996227507128","tag":"Buy
+        9"},{"price":"0.08409670","number":301.6768,"total":"25.370023346560","tag":"Buy
+        10"},{"price":"0.08405902","number":278.1991,"total":"23.385143710882","tag":"Buy
+        11"},{"price":"0.08398254","number":171.7402,"total":"14.423178216108","tag":"Buy
+        12"},{"price":"0.08398134","number":4.6848,"total":"0.393435781632","tag":"Buy
+        13"},{"price":"0.08397875","number":187.1375,"total":"15.715573328125","tag":"Buy
+        14"},{"price":"0.08397844","number":170.4039,"total":"14.310253691916","tag":"Buy
+        15"},{"price":"0.08396237","number":136.9471,"total":"11.498403080627","tag":"Buy
+        16"},{"price":"0.08394111","number":151.4459,"total":"12.712536950949","tag":"Buy
+        17"},{"price":"0.08388694","number":262.1601,"total":"21.991808579094","tag":"Buy
+        18"},{"price":"0.08388234","number":219.1937,"total":"18.386480469258","tag":"Buy
+        19"},{"price":"0.08387670","number":13.6626,"total":"1.145973801420","tag":"Buy
+        20"},{"price":"0.08387540","number":220.8804,"total":"18.526431902160","tag":"Buy
+        21"},{"price":"0.08367506","number":314.2032,"total":"26.290971612192","tag":"Buy
+        22"},{"price":"0.08360942","number":0.7981,"total":"0.066728678102","tag":"Buy
+        23"},{"price":"0.08359430","number":146.7947,"total":"12.271200190210","tag":"Buy
+        24"},{"price":"0.03112000","number":594,"total":"3.080880000000","tag":"Buy
+        25"}],"sell":[{"price":"0.09000000","number":5.995,"total":"0.539550000000","tag":"Sell
+        30"},{"price":"0.08702205","number":5.0342,"total":"0.438086404110","tag":"Sell
+        29"},{"price":"0.08700631","number":296.1852,"total":"25.769981328612","tag":"Sell
+        28"},{"price":"0.08699595","number":185.8875,"total":"16.171459655625","tag":"Sell
+        27"},{"price":"0.08558715","number":220.8804,"total":"18.904523926860","tag":"Sell
+        26"},{"price":"0.08558349","number":110.2003,"total":"9.431326273047","tag":"Sell
+        25"},{"price":"0.08556897","number":183.3303,"total":"15.687384940791","tag":"Sell
+        24"},{"price":"0.08556085","number":259.7446,"total":"22.223968758910","tag":"Sell
+        23"},{"price":"0.08554843","number":363.2112,"total":"31.072147918416","tag":"Sell
+        22"},{"price":"0.08552775","number":239.8529,"total":"20.514078867975","tag":"Sell
+        21"},{"price":"0.08552589","number":197.9608,"total":"16.930773605112","tag":"Sell
+        20"},{"price":"0.08552571","number":2.2184,"total":"0.189730235064","tag":"Sell
+        19"},{"price":"0.08552323","number":67.4889,"total":"5.771868717147","tag":"Sell
+        18"},{"price":"0.08551908","number":112.2596,"total":"9.600337713168","tag":"Sell
+        17"},{"price":"0.08551856","number":290.8157,"total":"24.870139889392","tag":"Sell
+        16"},{"price":"0.08551783","number":225.8374,"total":"19.313124380842","tag":"Sell
+        15"},{"price":"0.08551501","number":89.7619,"total":"7.675989776119","tag":"Sell
+        14"},{"price":"0.08551414","number":126.3631,"total":"10.805831824234","tag":"Sell
+        13"},{"price":"0.08551232","number":121.9179,"total":"10.425482478528","tag":"Sell
+        12"},{"price":"0.08551034","number":103.7664,"total":"8.873100144576","tag":"Sell
+        11"},{"price":"0.08550355","number":238.7913,"total":"20.417503859115","tag":"Sell
+        10"},{"price":"0.08550266","number":64.1114,"total":"5.481695236324","tag":"Sell
+        9"},{"price":"0.08548497","number":88.3607,"total":"7.553511788679","tag":"Sell
+        8"},{"price":"0.08548245","number":20.3365,"total":"1.738413844425","tag":"Sell
+        7"},{"price":"0.08547767","number":89.1499,"total":"7.620325732733","tag":"Sell
+        6"},{"price":"0.08547533","number":37.5208,"total":"3.207102761864","tag":"Sell
+        5"},{"price":"0.08547376","number":161.6256,"total":"13.814747744256","tag":"Sell
+        4"},{"price":"0.08545493","number":8.7181,"total":"0.745004625233","tag":"Sell
+        3"},{"price":"0.08544846","number":290.9163,"total":"24.858349823898","tag":"Sell
+        2"},{"price":"0.08538272","number":162.104,"total":"13.840880442880","tag":"Sell
+        1"}]}}'
+    http_version: 
+  recorded_at: Sun, 20 May 2018 11:12:39 GMT
+recorded_with: VCR 4.0.0
