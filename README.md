@@ -28,6 +28,7 @@ Or install it yourself as:
 | ACX               | Y       | Y          | Y       |         | Y           |
 | AEX               | Y       | Y          | Y       |         | Y           |
 | Allcoin           | Y       | Y          |         |         | User-Defined|
+| Altex             | Y       | Y          |         |         | Y           |
 | ANX               | Y       |            |         |         | User-Defined|
 | Bancor            | Y       | N          | N       |         | Y           |
 | Bibox             | Y       | Y          | Y       |         | Y           |
