@@ -133,6 +133,7 @@ Or install it yourself as:
 | Nanex             | Y       | N          | N       | N       | Y           |
 | Neraex            | Y       | Y          | Y       |         | Y           |
 | NLexch            | Y       |            |         |         | Y           |
+| Novadex           | Y       | N          | N       |         | Y           |
 | Nova Exchange     | Y       |            |         |         | Y           |
 | OKCoin            | Y       |            |         |         | User-Defined|
 | OKEx              | Y       | Y          | Y       |         | User-Defined|
