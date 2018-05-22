@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coinstock.me/api/v2/tickers.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinstock.me
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 May 2018 09:01:19 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3077'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7b4e85c95f4762d2437bbdc1c8a6cd901526979679; expires=Wed, 22-May-19
+        09:01:19 GMT; path=/; domain=.coinstock.me; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 6f1ae000-cb2a-455d-bf3c-22372e1241e0
+      Etag:
+      - '"79333a75999183a9f4541d1b346c4fe1"'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 41ee18f56aca84c0-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"btcusd":{"at":1526979679,"ticker":{"buy":"8250.0","sell":"8432.325","low":"8250.0","high":"8525.0","last":"8300.0","vol":"53.13810455","volbtc":"444446.38694539","change":"-0.022379269729093051"}},"ltcusd":{"at":1526979679,"ticker":{"buy":"132.373","sell":"139.155","low":"132.373","high":"138.88","last":"133.299","vol":"1247.2938414","volbtc":"168758.3321504822","change":"-0.039639483865390018803899107"}},"dashusd":{"at":1526979679,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"400.0","vol":"0.0","volbtc":0,"change":"0.0"}},"zecusd":{"at":1526979679,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"245.0","vol":"0.0","volbtc":0,"change":"0.0"}},"ethusd":{"at":1526979679,"ticker":{"buy":"681.023","sell":"702.5","low":"681.023","high":"718.97","last":"692.9","vol":"616.7146","volbtc":"430940.32670137","change":"-0.035965217391304347826086957"}},"dogeusd":{"at":1526979679,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0043","vol":"0.0","volbtc":0,"change":"0.0"}},"tlrusd":{"at":1526979679,"ticker":{"buy":"0.04578001","sell":"0.04859","low":"0.04579","high":"0.04976","last":"0.04654","vol":"1231835.469","volbtc":"59066.66127097","change":"-0.038826931"}},"mdcusd":{"at":1526979679,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"ltcbtc":{"at":1526979679,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0163","vol":"0.0","volbtc":0,"change":"0.0"}},"dashbtc":{"at":1526979679,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0468","vol":"0.0","volbtc":0,"change":"0.0"}},"zecbtc":{"at":1526979679,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0288","vol":"0.0","volbtc":0,"change":"0.0"}},"ethbtc":{"at":1526979679,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.08085","vol":"0.0","volbtc":0,"change":"-0.000000000000000123685837972"}},"dogebtc":{"at":1526979679,"ticker":{"buy":"0.0","sell":"0.00000052","low":"0.0","high":"0.0","last":"0.0000005","vol":"0.0","volbtc":0,"change":"0.0"}},"tlrbtc":{"at":1526979679,"ticker":{"buy":"0.0","sell":"0.00000666","low":"0.0","high":"0.0","last":"0.00000886","vol":"0.0","volbtc":0,"change":"0.0"}},"mdcbtc":{"at":1526979679,"ticker":{"buy":"0.0","sell":"0.000035","low":"0.00000034","high":"0.000038","last":"0.000038","vol":"23.72029254","volbtc":"0.0002597799994636","change":"0.0"}},"dogetlr":{"at":1526979679,"ticker":{"buy":"0.05000003","sell":"0.11699999","low":"0.103","high":"0.10399999","last":"0.103","vol":"779.12580615","volbtc":"80.4644498933299518","change":"0.03"}},"tlrrur":{"at":1526979679,"ticker":{"buy":"3.50000001","sell":"5.997","low":"0.0","high":"0.0","last":"5.0","vol":"0.0","volbtc":0,"change":"0.0"}},"usdrur":{"at":1526979679,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"62.0","vol":"0.0","volbtc":0,"change":"0.0"}},"mdcrur":{"at":1526979679,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}}}'
+    http_version: 
+  recorded_at: Tue, 22 May 2018 09:01:19 GMT
+recorded_with: VCR 4.0.0
