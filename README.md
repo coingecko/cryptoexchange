@@ -78,6 +78,7 @@ Or install it yourself as:
 | Coinone           | Y       | Y          | Y       |         | Y           |
 | Coinrail          | Y       | Y          | Y       |         | Y           |
 | CoinsMarkets      | Y       |            |         |         | Y           |
+| Coinstock         | Y       | Y          | Y       |         | Y           |
 | COSS              | Y       |            |         |         | Y           |
 | Cpdax             | Y       |            |         |         | Y           |
 | Crex24            | Y       | Y          | Y       |         | Y           |
