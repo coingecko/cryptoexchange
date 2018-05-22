@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.trade.mn/public/orderbook/BTCUSD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.trade.mn
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 May 2018 14:06:25 GMT
+      Server:
+      - Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips PHP/5.6.31
+      X-Powered-By:
+      - Express
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2681'
+      Etag:
+      - W/"a79-o7uzvY3rwoNZNBqaB694bCN+Qis"
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":{"timestamp":1526997985312,"order_currency":"BTC","payment_currency":"USD","bids":[{"price":"8,146.614","quantity":"0.00141553"},{"price":"8,146.614","quantity":"0.02826629"},{"price":"8,146.613","quantity":"0.007"},{"price":"8,146.613","quantity":"0.003215"},{"price":"8,146.572","quantity":"0.3214"},{"price":"8,146.572","quantity":"0.01448"},{"price":"8,146.572","quantity":"0.02281011"},{"price":"8,107.087","quantity":"0.05"},{"price":"8,107.087","quantity":"0.09743655"},{"price":"8,107.086","quantity":"0.1014868"},{"price":"8,106.670","quantity":"0.0641"},{"price":"8,105.049","quantity":"0.00115534"},{"price":"8,105.008","quantity":"0.032138"},{"price":"8,026.453","quantity":"0.10216842"},{"price":"8,026.452","quantity":"0.025"},{"price":"8,026.452","quantity":"0.01453"},{"price":"8,026.036","quantity":"0.021093"},{"price":"8,024.290","quantity":"0.019"},{"price":"7,897.187","quantity":"0.026444"},{"price":"7,897.187","quantity":"0.05"},{"price":"7,606.238","quantity":"0.01"},{"price":"7,439.981","quantity":"0.01"},{"price":"7,398.417","quantity":"0.01"},{"price":"7,273.725","quantity":"0.01"},{"price":"7,065.904","quantity":"0.0608"},{"price":"6,504.788","quantity":"0.0064"},{"price":"5,818.980","quantity":"0.00357"},{"price":"4,987.697","quantity":"1.2168"},{"price":"9.144","quantity":"0.07"},{"price":"7.980","quantity":"1."}],"asks":[{"price":"8,346.080","quantity":"0.02878"},{"price":"8,349.776","quantity":"0.05"},{"price":"8,349.776","quantity":"0.03114941"},{"price":"8,349.776","quantity":"0.018"},{"price":"8,354.388","quantity":"0.024714"},{"price":"8,354.392","quantity":"0.06154722"},{"price":"8,395.956","quantity":"0.05"},{"price":"8,395.957","quantity":"0.0055"},{"price":"8,412.582","quantity":"0.15295023"},{"price":"8,416.739","quantity":"0.03"},{"price":"8,437.521","quantity":"0.08583766"},{"price":"8,437.521","quantity":"0.007485"},{"price":"8,519.818","quantity":"0.205"},{"price":"8,520.649","quantity":"0.009"},{"price":"8,520.649","quantity":"0.1"},{"price":"8,541.431","quantity":"0.1"},{"price":"8,553.900","quantity":"0.08965261"},{"price":"8,561.714","quantity":"0.000663"},{"price":"8,562.213","quantity":"0.02"},{"price":"8,582.995","quantity":"0.0357982"},{"price":"8,582.995","quantity":"0.21215603"},{"price":"8,603.777","quantity":"0.2"},{"price":"8,645.341","quantity":"0.00201584"},{"price":"8,728.470","quantity":"0.03765072"},{"price":"8,728.470","quantity":"0.05"},{"price":"8,778.347","quantity":"0.04500075"},{"price":"8,853.162","quantity":"0.00735197"},{"price":"8,915.508","quantity":"0.00078462"},{"price":"8,936.290","quantity":"0.02994"},{"price":"8,998.221","quantity":"0.02"}]}}'
+    http_version: 
+  recorded_at: Tue, 22 May 2018 14:06:25 GMT
+recorded_with: VCR 4.0.0

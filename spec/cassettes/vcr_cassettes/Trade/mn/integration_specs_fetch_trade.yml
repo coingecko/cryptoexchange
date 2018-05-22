@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.trade.mn/public/recent_transactions/BTCUSD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.trade.mn
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 May 2018 14:10:42 GMT
+      Server:
+      - Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips PHP/5.6.31
+      X-Powered-By:
+      - Express
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3168'
+      Etag:
+      - W/"c60-pGSL+GbuLApRv9fpNdZixAACRng"
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":[{"price":"8,146.614","quantity":"0.00325023","total":"26.478","type":"bid","date":"2018-05-22
+        21:07:17"},{"price":"8,146.989","quantity":"0.06091144","total":"496.245","type":"ask","date":"2018-05-22
+        19:11:24"},{"price":"8,146.989","quantity":"0.03888856","total":"316.825","type":"bid","date":"2018-05-22
+        19:11:14"},{"price":"8,146.989","quantity":"0.06091144","total":"496.245","type":"bid","date":"2018-05-22
+        19:11:06"},{"price":"8,146.989","quantity":"0.0998","total":"813.07","type":"ask","date":"2018-05-22
+        19:10:34"},{"price":"8,354.392","quantity":"0.00138722","total":"11.589","type":"ask","date":"2018-05-22
+        19:01:02"},{"price":"8,354.392","quantity":"0.03837587","total":"320.607","type":"ask","date":"2018-05-22
+        19:01:02"},{"price":"8,354.392","quantity":"0.00998","total":"83.377","type":"ask","date":"2018-05-22
+        19:01:02"},{"price":"8,146.618","quantity":"0.0499","total":"406.516","type":"bid","date":"2018-05-22
+        18:59:02"},{"price":"8,208.922","quantity":"0.06946966","total":"570.271","type":"bid","date":"2018-05-22
+        18:50:59"},{"price":"8,208.926","quantity":"0.02526637","total":"207.41","type":"ask","date":"2018-05-22
+        18:50:33"},{"price":"8,208.922","quantity":"0.03267352","total":"268.214","type":"bid","date":"2018-05-22
+        18:41:10"},{"price":"8,208.960","quantity":"0.01976329","total":"162.236","type":"bid","date":"2018-05-22
+        18:41:09"},{"price":"8,208.960","quantity":"0.008982","total":"73.733","type":"bid","date":"2018-05-22
+        18:26:01"},{"price":"8,229.700","quantity":"0.1996","total":"1642.648","type":"ask","date":"2018-05-22
+        18:21:10"},{"price":"8,208.922","quantity":"0.00484241","total":"39.751","type":"bid","date":"2018-05-22
+        17:57:10"},{"price":"8,208.922","quantity":"0.00499","total":"40.963","type":"bid","date":"2018-05-22
+        17:53:21"},{"price":"8,208.922","quantity":"0.12754441","total":"1047.002","type":"bid","date":"2018-05-22
+        17:46:20"},{"price":"8,312.828","quantity":"0.002495","total":"20.741","type":"ask","date":"2018-05-22
+        17:36:35"},{"price":"8,208.918","quantity":"0.0198602","total":"163.031","type":"bid","date":"2018-05-22
+        17:04:48"},{"price":"8,208.918","quantity":"0.0364705","total":"299.383","type":"bid","date":"2018-05-22
+        17:01:05"},{"price":"8,312.828","quantity":"0.3614756","total":"3004.885","type":"ask","date":"2018-05-22
+        16:27:04"},{"price":"8,250.482","quantity":"0.04686531","total":"386.661","type":"bid","date":"2018-05-22
+        16:24:57"},{"price":"8,250.482","quantity":"0.01847916","total":"152.462","type":"bid","date":"2018-05-22
+        16:23:04"},{"price":"8,312.828","quantity":"0.23102616","total":"1920.481","type":"bid","date":"2018-05-22
+        16:00:52"},{"price":"8,312.828","quantity":"0.00264338","total":"21.974","type":"bid","date":"2018-05-22
+        16:00:40"},{"price":"8,312.828","quantity":"0.028443","total":"236.442","type":"ask","date":"2018-05-22
+        15:55:09"},{"price":"8,312.828","quantity":"0.0317364","total":"263.819","type":"ask","date":"2018-05-22
+        15:55:09"},{"price":"8,312.828","quantity":"0.00998","total":"82.962","type":"ask","date":"2018-05-22
+        15:55:08"},{"price":"8,312.828","quantity":"0.01996","total":"165.924","type":"ask","date":"2018-05-22
+        15:55:08"}]}'
+    http_version: 
+  recorded_at: Tue, 22 May 2018 14:10:42 GMT
+recorded_with: VCR 4.0.0
