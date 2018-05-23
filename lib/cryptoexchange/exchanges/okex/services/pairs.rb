@@ -2,21 +2,22 @@ module Cryptoexchange::Exchanges
   module Okex
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Okex::Market::API_URL}/tickers.do"
+
         def fetch
           output = super
           adapt(output)
         end
 
         def adapt(output)
-          market_pairs = []
-          output.each do |pair|
-            market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair[:base],
-                              target: pair[:target],
-                              market: Okex::Market::NAME
-                            )
+          output['tickers'].map do |pair|
+            base, target = pair['symbol'].split("_")
+            Cryptoexchange::Models::MarketPair.new(
+              base:   base,
+              target: target,
+              market: Okex::Market::NAME
+            )
           end
-          market_pairs
         end
       end
     end
