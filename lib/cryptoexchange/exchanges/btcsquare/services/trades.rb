@@ -14,7 +14,6 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          puts output
           output.map do |trade|
             tr = Cryptoexchange::Models::Trade.new
             tr.base      = market_pair.base
