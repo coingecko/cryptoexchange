@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ooobtc.com/open/getorderhistory?kv=eth_btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.ooobtc.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 20 May 2018 11:12:39 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Powered-By:
+      - Java
+      Server:
+      - Tomcat CentOs
+      Access-Control-Allow-Origin:
+      - ''
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept,AUTHORIZATION-CLIENT,AUTHORIZATION-UID,AUTHORIZATION-TOKEN,lang
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"msg":"success","data":[{"time":"19:10:54","price":"0.08530031","number":"274.8751","ordertype":"sell"},{"time":"19:10:54","price":"0.08531574","number":"4.2361","ordertype":"sell"},{"time":"19:07:01","price":"0.08531574","number":"0.7981","ordertype":"sell"},{"time":"19:03:11","price":"0.08530031","number":"19.8433","ordertype":"buy"},{"time":"19:03:10","price":"0.08536667","number":"103.8746","ordertype":"sell"},{"time":"19:03:10","price":"0.08536782","number":"23.0768","ordertype":"sell"},{"time":"18:59:18","price":"0.08538272","number":"16.4501","ordertype":"buy"},{"time":"18:59:17","price":"0.08541251","number":"51.4380","ordertype":"sell"},{"time":"18:59:17","price":"0.08541763","number":"59.4647","ordertype":"sell"},{"time":"18:59:17","price":"0.08542283","number":"24.7464","ordertype":"sell"},{"time":"18:55:27","price":"0.08542283","number":"138.3387","ordertype":"buy"},{"time":"18:51:35","price":"0.08541763","number":"132.3548","ordertype":"sell"},{"time":"18:51:34","price":"0.08541763","number":"171.7523","ordertype":"buy"},{"time":"18:47:41","price":"0.08544846","number":"35.1501","ordertype":"buy"},{"time":"18:47:41","price":"0.08542939","number":"236.5943","ordertype":"buy"},{"time":"18:43:51","price":"0.08536782","number":"286.8430","ordertype":"sell"},{"time":"18:43:51","price":"0.08541631","number":"85.6891","ordertype":"sell"},{"time":"18:39:59","price":"0.08541631","number":"19.6312","ordertype":"sell"},{"time":"18:36:08","price":"0.08542939","number":"133.5561","ordertype":"buy"},{"time":"18:36:06","price":"0.08541631","number":"152.6423","ordertype":"sell"},{"time":"18:32:15","price":"0.08545493","number":"20.3532","ordertype":"buy"},{"time":"18:28:25","price":"0.08545493","number":"17.5180","ordertype":"buy"},{"time":"18:28:25","price":"0.08542876","number":"92.7321","ordertype":"buy"},{"time":"18:28:25","price":"0.08542867","number":"135.9850","ordertype":"buy"},{"time":"18:28:25","price":"0.08542475","number":"92.0796","ordertype":"buy"},{"time":"18:24:36","price":"0.08542475","number":"203.4126","ordertype":"buy"},{"time":"18:24:36","price":"0.08540553","number":"24.2414","ordertype":"buy"},{"time":"18:24:36","price":"0.08539316","number":"52.5202","ordertype":"buy"},{"time":"18:20:47","price":"0.08539316","number":"276.7221","ordertype":"buy"},{"time":"18:20:47","price":"0.08537062","number":"97.2052","ordertype":"buy"}]}'
+    http_version: 
+  recorded_at: Sun, 20 May 2018 11:12:39 GMT
+recorded_with: VCR 4.0.0

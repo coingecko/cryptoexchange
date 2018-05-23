@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ooobtc.com/open/getallticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.ooobtc.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 20 May 2018 11:12:38 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Powered-By:
+      - Java
+      Server:
+      - Tomcat CentOs
+      Access-Control-Allow-Origin:
+      - ''
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept,AUTHORIZATION-CLIENT,AUTHORIZATION-UID,AUTHORIZATION-TOKEN,lang
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"msg":"success","data":[{"tickername":"eth_btc","timestamp":1526814758,"lastprice":"0.08530031","bid":"0.08530031","ask":"0.08538272","volume":"81537.9985"},{"tickername":"stx_btc","timestamp":1526814758,"lastprice":"0.00007575","bid":"0.00007555","ask":"0.00007575","volume":"97842.2148"},{"tickername":"icx_btc","timestamp":1526814758,"lastprice":"0.00042682","bid":"0.00042682","ask":"0.00042891","volume":"97074.3292"},{"tickername":"via_btc","timestamp":1526814758,"lastprice":"0.00023400","bid":"0.00023318","ask":"0.00023400","volume":"253237.8613"},{"tickername":"grs_btc","timestamp":1526814758,"lastprice":"0.00014101","bid":"0.00014092","ask":"0.00014101","volume":"20854.7402"},{"tickername":"xlr_btc","timestamp":1526814758,"lastprice":"0.00069666","bid":"0.00069659","ask":"0.00069666","volume":"316.9398"},{"tickername":"hot_btc","timestamp":1526814758,"lastprice":"0.00000014","bid":"0.00000010","ask":"0.00000102","volume":"11995249.7728"},{"tickername":"dcr_btc","timestamp":1526814758,"lastprice":"0.01307940","bid":"0.01307906","ask":"0.01307940","volume":"56022.2900"},{"tickername":"rhoc_btc","timestamp":1526814758,"lastprice":"0.00018221","bid":"0.00018167","ask":"0.00018221","volume":"64689.1362"},{"tickername":"zil_btc","timestamp":1526814758,"lastprice":"0.00001823","bid":"0.00001823","ask":"0.00001826","volume":"11749506.9676"},{"tickername":"gnt_btc","timestamp":1526814758,"lastprice":"0.00006335","bid":"0.00006309","ask":"0.00006420","volume":"370133.1252"},{"tickername":"uqc_btc","timestamp":1526814758,"lastprice":"0.00018400","bid":"0.00018273","ask":"0.00018400","volume":"422.8889"},{"tickername":"bela_btc","timestamp":1526814758,"lastprice":"0.00000838","bid":"0.00000838","ask":"0.00000989","volume":"4200.2575"},{"tickername":"ae_btc","timestamp":1526814758,"lastprice":"0.00045588","bid":"0.00045588","ask":"0.00045651","volume":"530311.0535"},{"tickername":"snt_btc","timestamp":1526814758,"lastprice":"0.00001409","bid":"0.00001398","ask":"0.00001409","volume":"4863737.4883"}]}'
+    http_version: 
+  recorded_at: Sun, 20 May 2018 11:12:38 GMT
+recorded_with: VCR 4.0.0
