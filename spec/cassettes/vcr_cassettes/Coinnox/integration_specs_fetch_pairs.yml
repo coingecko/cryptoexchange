@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coinnox.com/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinnox.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 19 May 2018 08:05:42 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '708'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d292e1c4c68462ebe1e98623f5252d3a31526717142; expires=Sun, 19-May-19
+        08:05:42 GMT; path=/; domain=.coinnox.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - coinnox.com
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Vary:
+      - Origin
+      Version:
+      - HTTP/1.1
+      Host:
+      - coinnox.com
+      X-Real-Ip:
+      - 59.148.173.158
+      X-Forwarded-For:
+      - 59.148.173.158, 59.148.173.158
+      X-Forwarded-Proto:
+      - https
+      X-Forwarded-Ssl:
+      - 'on'
+      X-Forwarded-Port:
+      - '443'
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - HK
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 59.148.173.158
+      X-Forwarded-Host:
+      - coinnox.com
+      Etag:
+      - W/"8f8e03ed4f004f4aeb2ba5f49bf7c253"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dd87052f-25a4-4041-9180-9f975d1c724f
+      X-Runtime:
+      - '0.004213'
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=31536000
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 41d50f59dbf67020-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"trfbtc","name":"TRF/BTC"},{"id":"ltcbtc","name":"LTC/BTC"},{"id":"dashbtc","name":"DASH/BTC"},{"id":"xzcbtc","name":"XZC/BTC"},{"id":"ethbtc","name":"ETH/BTC"},{"id":"dopebtc","name":"DOPE/BTC"},{"id":"bchbtc","name":"BCH/BTC"},{"id":"alqobtc","name":"ALQO/BTC"},{"id":"kmdbtc","name":"KMD/BTC"},{"id":"navbtc","name":"NAV/BTC"},{"id":"pivxbtc","name":"PIVX/BTC"},{"id":"superbtc","name":"SUPER/BTC"},{"id":"thcbtc","name":"THC/BTC"},{"id":"xvgbtc","name":"XVG/BTC"},{"id":"zecbtc","name":"ZEC/BTC"},{"id":"zenbtc","name":"ZEN/BTC"},{"id":"cannbtc","name":"CANN/BTC"},{"id":"qaubtc","name":"QAU/BTC"},{"id":"jcbtc","name":"JC/BTC"},{"id":"fvitbtc","name":"FVIT/BTC"},{"id":"ppibtc","name":"PPI/BTC"}]'
+    http_version: 
+  recorded_at: Sat, 19 May 2018 08:05:42 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coinnox.com/api/v2/trades?limit=50&market=trfbtc&order_by=desc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinnox.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 19 May 2018 08:05:45 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '7081'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8cd51b004cb2635bf90bd139f9599cff1526717145; expires=Sun, 19-May-19
+        08:05:45 GMT; path=/; domain=.coinnox.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - coinnox.com
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Vary:
+      - Origin
+      Version:
+      - HTTP/1.1
+      Host:
+      - coinnox.com
+      X-Real-Ip:
+      - 59.148.173.158
+      X-Forwarded-For:
+      - 59.148.173.158, 59.148.173.158
+      X-Forwarded-Proto:
+      - https
+      X-Forwarded-Ssl:
+      - 'on'
+      X-Forwarded-Port:
+      - '443'
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - HK
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 59.148.173.158
+      X-Forwarded-Host:
+      - coinnox.com
+      Etag:
+      - W/"6ce1b4af9d898e220d13efd7c218e814"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - eb26c6fe-624b-422d-8f46-281e1d81233d
+      X-Runtime:
+      - '0.018337'
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=31536000
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 41d50f6c7aa5a9ba-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":1237,"price":"0.00001666","volume":"10.47984","funds":"0.0001745941344","market":"trfbtc","created_at":"2018-05-19T06:59:33+02:00","side":null},{"id":1236,"price":"0.00001666","volume":"0.47984","funds":"0.0000079941344","market":"trfbtc","created_at":"2018-05-19T06:59:33+02:00","side":null},{"id":1235,"price":"0.00001667","volume":"3.43984","funds":"0.0000573421328","market":"trfbtc","created_at":"2018-05-19T06:59:14+02:00","side":null},{"id":1234,"price":"0.00001667","volume":"1.47984","funds":"0.0000246689328","market":"trfbtc","created_at":"2018-05-19T06:59:13+02:00","side":null},{"id":1233,"price":"0.00001668","volume":"1.47984","funds":"0.0000246837312","market":"trfbtc","created_at":"2018-05-19T06:56:05+02:00","side":null},{"id":1232,"price":"0.00001669","volume":"10.0","funds":"0.0001669","market":"trfbtc","created_at":"2018-05-19T06:55:55+02:00","side":null},{"id":1231,"price":"0.00001669","volume":"1.0","funds":"0.00001669","market":"trfbtc","created_at":"2018-05-19T06:55:55+02:00","side":null},{"id":1230,"price":"0.00001671","volume":"2.0","funds":"0.00003342","market":"trfbtc","created_at":"2018-05-19T06:55:43+02:00","side":null},{"id":1167,"price":"0.00001675","volume":"10.0","funds":"0.0001675","market":"trfbtc","created_at":"2018-05-15T11:10:52+02:00","side":null},{"id":1166,"price":"0.00001675","volume":"1.0","funds":"0.00001675","market":"trfbtc","created_at":"2018-05-15T11:10:52+02:00","side":null},{"id":1165,"price":"0.00001676","volume":"40.0","funds":"0.0006704","market":"trfbtc","created_at":"2018-05-15T11:10:40+02:00","side":null},{"id":1164,"price":"0.00001676","volume":"2.0","funds":"0.00003352","market":"trfbtc","created_at":"2018-05-15T11:10:40+02:00","side":null},{"id":1163,"price":"0.00001676","volume":"2.0","funds":"0.00003352","market":"trfbtc","created_at":"2018-05-15T11:10:40+02:00","side":null},{"id":1158,"price":"0.00001677","volume":"7.3181521","funds":"0.000122725410717","market":"trfbtc","created_at":"2018-05-15T06:40:40+02:00","side":null},{"id":1157,"price":"0.00001677","volume":"5.65907605","funds":"0.0000949027053585","market":"trfbtc","created_at":"2018-05-15T06:40:40+02:00","side":null},{"id":1156,"price":"0.00001677","volume":"1.65907605","funds":"0.0000278227053585","market":"trfbtc","created_at":"2018-05-15T06:40:40+02:00","side":null},{"id":1135,"price":"0.00001678","volume":"9.0","funds":"0.00015102","market":"trfbtc","created_at":"2018-05-14T17:45:39+02:00","side":null},{"id":1134,"price":"0.00001678","volume":"1.0","funds":"0.00001678","market":"trfbtc","created_at":"2018-05-14T17:45:39+02:00","side":null},{"id":1133,"price":"0.00001679","volume":"9.0","funds":"0.00015111","market":"trfbtc","created_at":"2018-05-14T17:45:28+02:00","side":null},{"id":1132,"price":"0.00001679","volume":"2.0","funds":"0.00003358","market":"trfbtc","created_at":"2018-05-14T17:45:28+02:00","side":null},{"id":1095,"price":"0.00001681","volume":"14.0","funds":"0.00023534","market":"trfbtc","created_at":"2018-05-13T12:40:53+02:00","side":null},{"id":1094,"price":"0.00001681","volume":"4.0","funds":"0.00006724","market":"trfbtc","created_at":"2018-05-13T12:40:53+02:00","side":null},{"id":1093,"price":"0.00001682","volume":"13.0","funds":"0.00021866","market":"trfbtc","created_at":"2018-05-13T12:39:19+02:00","side":null},{"id":1092,"price":"0.00001682","volume":"1.0","funds":"0.00001682","market":"trfbtc","created_at":"2018-05-13T12:33:33+02:00","side":null},{"id":1091,"price":"0.00001682","volume":"1.0","funds":"0.00001682","market":"trfbtc","created_at":"2018-05-13T12:33:20+02:00","side":null},{"id":1090,"price":"0.00001682","volume":"1.0","funds":"0.00001682","market":"trfbtc","created_at":"2018-05-13T12:32:57+02:00","side":null},{"id":1089,"price":"0.00001683","volume":"15.0","funds":"0.00025245","market":"trfbtc","created_at":"2018-05-13T12:28:37+02:00","side":null},{"id":1088,"price":"0.00001683","volume":"5.0","funds":"0.00008415","market":"trfbtc","created_at":"2018-05-13T12:28:37+02:00","side":null},{"id":1087,"price":"0.00001684","volume":"10.0","funds":"0.0001684","market":"trfbtc","created_at":"2018-05-13T12:26:16+02:00","side":null},{"id":1086,"price":"0.00001685","volume":"13.0","funds":"0.00021905","market":"trfbtc","created_at":"2018-05-13T12:23:55+02:00","side":null},{"id":1085,"price":"0.00001685","volume":"3.0","funds":"0.00005055","market":"trfbtc","created_at":"2018-05-13T12:23:55+02:00","side":null},{"id":1084,"price":"0.00001686","volume":"5.0","funds":"0.0000843","market":"trfbtc","created_at":"2018-05-13T12:22:45+02:00","side":null},{"id":1083,"price":"0.00001686","volume":"6.0","funds":"0.00010116","market":"trfbtc","created_at":"2018-05-13T12:22:45+02:00","side":null},{"id":1075,"price":"0.00001688","volume":"5.0","funds":"0.0000844","market":"trfbtc","created_at":"2018-05-10T09:35:57+02:00","side":null},{"id":1074,"price":"0.00001688","volume":"7.0","funds":"0.00011816","market":"trfbtc","created_at":"2018-05-10T09:35:57+02:00","side":null},{"id":1073,"price":"0.00001725","volume":"30.0","funds":"0.0005175","market":"trfbtc","created_at":"2018-05-10T09:35:46+02:00","side":null},{"id":1072,"price":"0.00001735","volume":"30.0","funds":"0.0005205","market":"trfbtc","created_at":"2018-05-10T09:35:39+02:00","side":null},{"id":1071,"price":"0.00001735","volume":"30.0","funds":"0.0005205","market":"trfbtc","created_at":"2018-05-09T07:43:04+02:00","side":null},{"id":1070,"price":"0.00001725","volume":"10.0","funds":"0.0001725","market":"trfbtc","created_at":"2018-05-09T07:42:58+02:00","side":null},{"id":1069,"price":"0.00001725","volume":"30.0","funds":"0.0005175","market":"trfbtc","created_at":"2018-05-09T07:42:48+02:00","side":null},{"id":1068,"price":"0.00001735","volume":"40.0","funds":"0.000694","market":"trfbtc","created_at":"2018-05-07T06:46:27+02:00","side":null},{"id":1067,"price":"0.00001755","volume":"20.0","funds":"0.000351","market":"trfbtc","created_at":"2018-05-07T06:46:18+02:00","side":null},{"id":1066,"price":"0.00001765","volume":"20.0","funds":"0.000353","market":"trfbtc","created_at":"2018-05-07T06:46:09+02:00","side":null},{"id":1065,"price":"0.00001765","volume":"20.0","funds":"0.000353","market":"trfbtc","created_at":"2018-05-04T07:28:56+02:00","side":null},{"id":1064,"price":"0.00001755","volume":"20.0","funds":"0.000351","market":"trfbtc","created_at":"2018-05-04T07:28:49+02:00","side":null},{"id":1063,"price":"0.00001735","volume":"40.0","funds":"0.000694","market":"trfbtc","created_at":"2018-05-04T07:28:41+02:00","side":null},{"id":1062,"price":"0.00001725","volume":"40.0","funds":"0.00069","market":"trfbtc","created_at":"2018-05-04T07:28:33+02:00","side":null},{"id":1061,"price":"0.00001725","volume":"20.0","funds":"0.000345","market":"trfbtc","created_at":"2018-05-04T07:28:25+02:00","side":null},{"id":1060,"price":"0.00001735","volume":"20.0","funds":"0.000347","market":"trfbtc","created_at":"2018-05-04T07:28:16+02:00","side":null},{"id":1059,"price":"0.00001755","volume":"20.0","funds":"0.000351","market":"trfbtc","created_at":"2018-05-03T18:19:07+02:00","side":null}]'
+    http_version: 
+  recorded_at: Sat, 19 May 2018 08:05:45 GMT
+recorded_with: VCR 4.0.0
