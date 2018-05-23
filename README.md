@@ -52,6 +52,7 @@ Or install it yourself as:
 | Bittrex           | Y       |            |         |         | Y           |
 | Bleutrade         | Y       |            |         |         | Y           |
 | BtcAlpha          | Y       | Y          | Y       |         | Y           |
+| BtcTradeUa        | Y       | Y          | Y       |         | Y           |
 | BTCBox            | Y       | Y          |         |         | User-Defined|
 | BTC-e             |         |            |         |         |             |
 | BTC38             |         |            |         |         |             |
