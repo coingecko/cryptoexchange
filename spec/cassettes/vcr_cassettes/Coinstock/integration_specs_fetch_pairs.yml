@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coinstock.me/api/v2/markets.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinstock.me
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 May 2018 09:01:14 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '638'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=de37be12c3a65aafc5e80a8822206fddd1526979673; expires=Wed, 22-May-19
+        09:01:13 GMT; path=/; domain=.coinstock.me; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - e13b20c6-835a-425b-afde-a8459504a823
+      Etag:
+      - '"007913fd04f25dd638415a70b4f8ffba"'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 41ee18cc6b443355-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"btcusd","name":"BTC/USD"},{"id":"ltcusd","name":"LTC/USD"},{"id":"dashusd","name":"DASH/USD"},{"id":"zecusd","name":"ZEC/USD"},{"id":"ethusd","name":"ETH/USD"},{"id":"dogeusd","name":"DOGE/USD"},{"id":"tlrusd","name":"TLR/USD"},{"id":"mdcusd","name":"MDC/USD"},{"id":"ltcbtc","name":"LTC/BTC"},{"id":"dashbtc","name":"DASH/BTC"},{"id":"zecbtc","name":"ZEC/BTC"},{"id":"ethbtc","name":"ETH/BTC"},{"id":"dogebtc","name":"DOGE/BTC"},{"id":"tlrbtc","name":"TLR/BTC"},{"id":"mdcbtc","name":"MDC/BTC"},{"id":"dogetlr","name":"DOGE/TLR"},{"id":"tlrrur","name":"TLR/RUR"},{"id":"usdrur","name":"USD/RUR"},{"id":"mdcrur","name":"MDC/RUR"}]'
+    http_version: 
+  recorded_at: Tue, 22 May 2018 09:01:14 GMT
+recorded_with: VCR 4.0.0

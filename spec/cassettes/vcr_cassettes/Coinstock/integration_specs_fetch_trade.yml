@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coinstock.me/api/v2/trades.json?market=btcusd
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinstock.me
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 May 2018 09:01:26 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '6998'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8ddcb6a478c2be8fb4d8d3dbb746fe611526979685; expires=Wed, 22-May-19
+        09:01:25 GMT; path=/; domain=.coinstock.me; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Request-Id:
+      - 6dd9be6d-194e-4e37-8229-4a4a1a1ebe63
+      Etag:
+      - '"22d927d9a31ac51aa74bdac17cb50274"'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 41ee19199e3b84fc-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":32148,"price":"8300.0","volume":"0.07642","funds":"634.286","market":"btcusd","created_at":"2018-05-22T12:01:17+03:00","side":null},{"id":32146,"price":"8316.336","volume":"0.01796","funds":"149.36139456","market":"btcusd","created_at":"2018-05-22T12:00:34+03:00","side":null},{"id":32141,"price":"8320.0","volume":"0.12649","funds":"1052.3968","market":"btcusd","created_at":"2018-05-22T11:59:18+03:00","side":null},{"id":32138,"price":"8301.0","volume":"0.04104","funds":"340.67304","market":"btcusd","created_at":"2018-05-22T11:57:58+03:00","side":null},{"id":32131,"price":"8334.14","volume":"0.02047","funds":"170.5998458","market":"btcusd","created_at":"2018-05-22T11:56:03+03:00","side":null},{"id":32126,"price":"8305.0","volume":"0.13524","funds":"1123.1682","market":"btcusd","created_at":"2018-05-22T11:54:50+03:00","side":null},{"id":32121,"price":"8305.0","volume":"0.05556","funds":"461.4258","market":"btcusd","created_at":"2018-05-22T11:52:49+03:00","side":null},{"id":32114,"price":"8337.34","volume":"0.02154","funds":"179.5863036","market":"btcusd","created_at":"2018-05-22T11:51:35+03:00","side":null},{"id":32109,"price":"8302.0","volume":"0.01881","funds":"156.16062","market":"btcusd","created_at":"2018-05-22T11:50:29+03:00","side":null},{"id":32101,"price":"8301.0","volume":"0.03701","funds":"307.22001","market":"btcusd","created_at":"2018-05-22T11:48:36+03:00","side":null},{"id":32099,"price":"8301.0","volume":"0.08465","funds":"702.67965","market":"btcusd","created_at":"2018-05-22T11:47:56+03:00","side":null},{"id":32091,"price":"8348.0","volume":"0.05789","funds":"483.26572","market":"btcusd","created_at":"2018-05-22T11:46:37+03:00","side":null},{"id":32088,"price":"8348.0","volume":"0.02731","funds":"227.98388","market":"btcusd","created_at":"2018-05-22T11:45:45+03:00","side":null},{"id":32086,"price":"8348.0","volume":"0.01828","funds":"152.60144","market":"btcusd","created_at":"2018-05-22T11:45:15+03:00","side":null},{"id":32081,"price":"8301.0","volume":"0.08837","funds":"733.55937","market":"btcusd","created_at":"2018-05-22T11:43:37+03:00","side":null},{"id":32077,"price":"8348.0","volume":"0.02162","funds":"180.48376","market":"btcusd","created_at":"2018-05-22T11:43:09+03:00","side":null},{"id":32071,"price":"8335.0","volume":"0.01692","funds":"141.0282","market":"btcusd","created_at":"2018-05-22T11:41:02+03:00","side":null},{"id":32068,"price":"8335.0","volume":"0.01852","funds":"154.3642","market":"btcusd","created_at":"2018-05-22T11:40:19+03:00","side":null},{"id":32064,"price":"8340.0","volume":"0.03348","funds":"279.2232","market":"btcusd","created_at":"2018-05-22T11:39:50+03:00","side":null},{"id":32061,"price":"8344.0","volume":"0.04855","funds":"405.1012","market":"btcusd","created_at":"2018-05-22T11:38:50+03:00","side":null},{"id":32056,"price":"8333.0","volume":"0.08657","funds":"721.38781","market":"btcusd","created_at":"2018-05-22T11:37:31+03:00","side":null},{"id":32051,"price":"8300.0","volume":"0.02075","funds":"172.225","market":"btcusd","created_at":"2018-05-22T11:35:34+03:00","side":null},{"id":32048,"price":"8300.0","volume":"0.05771","funds":"478.993","market":"btcusd","created_at":"2018-05-22T11:35:06+03:00","side":null},{"id":32044,"price":"8300.0","volume":"0.03026","funds":"251.158","market":"btcusd","created_at":"2018-05-22T11:34:12+03:00","side":null},{"id":32038,"price":"8300.0","volume":"0.01947","funds":"161.601","market":"btcusd","created_at":"2018-05-22T11:33:00+03:00","side":null},{"id":32035,"price":"8300.0","volume":"0.03734","funds":"309.922","market":"btcusd","created_at":"2018-05-22T11:31:58+03:00","side":null},{"id":32031,"price":"8292.0","volume":"0.03301","funds":"273.71892","market":"btcusd","created_at":"2018-05-22T11:31:22+03:00","side":null},{"id":32028,"price":"8300.0","volume":"0.02955","funds":"245.265","market":"btcusd","created_at":"2018-05-22T11:30:06+03:00","side":null},{"id":32024,"price":"8300.0","volume":"0.04488","funds":"372.504","market":"btcusd","created_at":"2018-05-22T11:29:40+03:00","side":null},{"id":32021,"price":"8291.0","volume":"0.13577","funds":"1125.66907","market":"btcusd","created_at":"2018-05-22T11:28:34+03:00","side":null},{"id":32016,"price":"8291.0","volume":"0.02004","funds":"166.15164","market":"btcusd","created_at":"2018-05-22T11:27:39+03:00","side":null},{"id":32011,"price":"8291.0","volume":"0.01639","funds":"135.88949","market":"btcusd","created_at":"2018-05-22T11:25:50+03:00","side":null},{"id":32004,"price":"8290.0","volume":"0.05396","funds":"447.3284","market":"btcusd","created_at":"2018-05-22T11:24:00+03:00","side":null},{"id":32001,"price":"8290.0","volume":"0.06314","funds":"523.4306","market":"btcusd","created_at":"2018-05-22T11:23:25+03:00","side":null},{"id":31997,"price":"8289.0","volume":"0.09958","funds":"825.41862","market":"btcusd","created_at":"2018-05-22T11:22:27+03:00","side":null},{"id":31991,"price":"8288.43","volume":"0.04026","funds":"333.6921918","market":"btcusd","created_at":"2018-05-22T11:20:32+03:00","side":null},{"id":31987,"price":"8290.0","volume":"0.01537","funds":"127.4173","market":"btcusd","created_at":"2018-05-22T11:18:40+03:00","side":null},{"id":31982,"price":"8291.0","volume":"0.02117","funds":"175.52047","market":"btcusd","created_at":"2018-05-22T11:17:07+03:00","side":null},{"id":31980,"price":"8291.0","volume":"0.19785","funds":"1640.37435","market":"btcusd","created_at":"2018-05-22T11:16:41+03:00","side":null},{"id":31975,"price":"8290.0","volume":"0.05323","funds":"441.2767","market":"btcusd","created_at":"2018-05-22T11:15:40+03:00","side":null},{"id":31971,"price":"8290.0","volume":"0.02616","funds":"216.8664","market":"btcusd","created_at":"2018-05-22T11:14:22+03:00","side":null},{"id":31968,"price":"8290.0","volume":"0.36026","funds":"2986.5554","market":"btcusd","created_at":"2018-05-22T11:13:38+03:00","side":null},{"id":31966,"price":"8290.0","volume":"0.15834","funds":"1312.6386","market":"btcusd","created_at":"2018-05-22T11:13:12+03:00","side":null},{"id":31960,"price":"8288.43","volume":"0.04175","funds":"346.0419525","market":"btcusd","created_at":"2018-05-22T11:11:37+03:00","side":null},{"id":31958,"price":"8288.43","volume":"0.11861","funds":"983.0906823","market":"btcusd","created_at":"2018-05-22T11:11:14+03:00","side":null},{"id":31952,"price":"8288.43","volume":"0.03694","funds":"306.1746042","market":"btcusd","created_at":"2018-05-22T11:09:27+03:00","side":null},{"id":31947,"price":"8301.0","volume":"0.02537","funds":"210.59637","market":"btcusd","created_at":"2018-05-22T11:07:53+03:00","side":null},{"id":31941,"price":"8301.0","volume":"0.06054","funds":"502.54254","market":"btcusd","created_at":"2018-05-22T11:05:54+03:00","side":null},{"id":31938,"price":"8340.0","volume":"0.06542","funds":"545.6028","market":"btcusd","created_at":"2018-05-22T11:05:10+03:00","side":null},{"id":31933,"price":"8340.0","volume":"0.04942","funds":"412.1628","market":"btcusd","created_at":"2018-05-22T11:04:07+03:00","side":null}]'
+    http_version: 
+  recorded_at: Tue, 22 May 2018 09:01:26 GMT
+recorded_with: VCR 4.0.0
