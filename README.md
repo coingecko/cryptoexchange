@@ -70,6 +70,7 @@ Or install it yourself as:
 | Coincheck         | Y       |            |         |         | User-Defined|
 | Coinex            | Y       | Y          | Y       |         | Y           |
 | Coinfalcon        | Y       | Y          | Y       |         | Y           |
+| Coingi            | Y       | Y          | Y       |         | Y           |
 | CoinExchange      | Y       |            |         |         | Y           |
 | Coinbene          | Y       | Y          | Y       |         | Y           |
 | Coinhouse         | Y       |            |         |         | Y           |

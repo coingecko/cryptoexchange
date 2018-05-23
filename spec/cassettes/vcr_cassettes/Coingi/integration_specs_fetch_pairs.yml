@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coingi.com/current/24hour-rolling-aggregation
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coingi.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 17 May 2018 09:14:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dae9bb56f33447024f104a64bfca0fb131526548459; expires=Fri, 17-May-19
+        09:14:19 GMT; path=/; domain=.coingi.com; HttpOnly
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Coingi API 1.6.0
+      X-Coingi-Cached:
+      - '1'
+      X-Coingi-Cache-Timestamp:
+      - '1526548450'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 41c4f91d9adfa2ae-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"currencyPair":{"base":"btc","counter":"eur"},"last":7042.912,"lowestAsk":7033.3,"highestBid":7008.632,"baseVolume":0.02146265,"counterVolume":150.66,"high":7075.228,"low":6986.708},{"currencyPair":{"base":"btc","counter":"usd"},"last":8318.565,"lowestAsk":8451.264,"highestBid":8279.45,"baseVolume":0.01412094,"counterVolume":117.88,"high":8364.046,"low":8312.861},{"currencyPair":{"base":"ppc","counter":"btc"},"last":0.00033,"lowestAsk":0.00034,"highestBid":0.00031,"baseVolume":152.26723813,"counterVolume":0.05024818,"high":0.00033,"low":0.00033},{"currencyPair":{"base":"vtc","counter":"btc"},"last":0.00028,"lowestAsk":0.00028,"highestBid":0.00026,"baseVolume":69.67589131,"counterVolume":0.01950924,"high":0.00028,"low":0.00028}]'
+    http_version: 
+  recorded_at: Thu, 17 May 2018 09:14:20 GMT
+recorded_with: VCR 4.0.0
