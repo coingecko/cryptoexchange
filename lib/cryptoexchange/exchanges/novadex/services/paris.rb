@@ -1,8 +1,8 @@
 module Cryptoexchange::Exchanges
-  module Okex
+  module Novadex
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Okex::Market::API_URL}/tickers.do"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Novadex::Market::API_URL}/all_price_ticker.php"
 
         def fetch
           output = super
@@ -10,12 +10,12 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output['tickers'].map do |pair|
-            base, target = pair['symbol'].split("_")
+          output.map do |pair, _ticker|
+            base, target = pair.split('_')
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
-              market: Okex::Market::NAME
+              market: Novadex::Market::NAME
             )
           end
         end

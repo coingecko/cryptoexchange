@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cpdax.com/api/v1/ticker/BAT-BTC/detailed
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.cpdax.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 18 May 2018 09:48:21 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Access-Control-Expose-Headers:
+      - Date
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Application-Context:
+      - application:prod,batch:9002
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Content-Security-Policy:
+      - base-uri 'self'; default-src 'self' https://*.cpdax.com https://cpdax.com;script-src
+        https://*.cpdax.com https://cpdax.com https://*.intercom.io https://*.gstatic.com
+        https://*.intercomcdn.com https://*.google.com https://*.google-analytics.com
+        https://*.intercomassets.com https://*.twitter.com 'nonce-dmFyIHNkZiA9ICcxMjMxMjMn';style-src
+        https://* 'unsafe-inline';connect-src 'self' https://*.cpdax.com https://cpdax.com
+        https://*.cpdax.com:8443 https://cpdax.com:8443 wss://*.cpdax.com:8443 wss://*.cpdax.com:8443
+        https://*.intercom.io wss://*.intercom.io https://app.getsentry.com https://js.intercomcdn.com
+        https://*.coinplugapis.com https://*.tradingview.com https://*.twitter.com
+        https://*.google.com;font-src 'self' https://fonts.gstatic.com https://js.intercomcdn.com
+        https://cdn.rawgit.com;child-src 'self' https://www.cpdax.com https://cpdax.com
+        https://www.google.com https://*.twitter.com https://intercom-sheets.com;img-src
+        'self' https://*.cpdax.com https://cpdax.com https://*.google-analytics.com
+        https://js.intercomcdn.com https://static.intercomassets.com https://*.twitter.com
+        https://stats.g.doubleclick.net https://*.google.com https://*.google.co.kr
+        https://*.google.co.jp data:;object-src 'self'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"ticker":{"timestamp":1526636896000,"last":0.000045020000000000,"bid":0.000044550000000000,"ask":0.000045020000000000,"low":0.000043730000000000,"high":0.000049060000000000,"volume":2806835.585332380000000000,"currency_pair":"BAT-BTC"}}}'
+    http_version: 
+  recorded_at: Fri, 18 May 2018 09:48:22 GMT
+recorded_with: VCR 4.0.0

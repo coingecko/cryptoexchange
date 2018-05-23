@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Okex
+  module Novadex
     module Services
       class Market < Cryptoexchange::Services::Market
         class << self
@@ -9,40 +9,37 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch
-          output = super(ticker_url)
+          output = super ticker_url
           adapt_all(output)
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Okex::Market::API_URL}/tickers.do"
+          "#{Cryptoexchange::Exchanges::Novadex::Market::API_URL}/all_price_ticker.php"
         end
 
-
         def adapt_all(output)
-          timestamp = output['date']
-          output['tickers'].map do |ticker|
-            base, target = ticker['symbol'].split('_')
+          output.map do |pair, ticker|
+            base, target = pair.split('_')
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
-              market: Okex::Market::NAME
+              market: Novadex::Market::NAME
             )
-            adapt(ticker, market_pair, timestamp)
+            adapt(ticker, market_pair)
           end
         end
 
-        def adapt(output, market_pair, timestamp)
-          ticker           = Cryptoexchange::Models::Ticker.new
+        def adapt(output, market_pair)
+          ticker = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
-          ticker.market    = Okex::Market::NAME
-          ticker.ask       = NumericHelper.to_d(output['sell'])
-          ticker.bid       = NumericHelper.to_d(output['buy'])
+          ticker.market    = Novadex::Market::NAME
           ticker.last      = NumericHelper.to_d(output['last'])
           ticker.high      = NumericHelper.to_d(output['high'])
           ticker.low       = NumericHelper.to_d(output['low'])
-          ticker.volume    = NumericHelper.to_d(output['vol'])
-          ticker.timestamp = NumericHelper.to_d(timestamp)
+          ticker.volume    = NumericHelper.to_d(output['volume'])
+          ticker.change    = NumericHelper.to_d(output['change'])
+          ticker.timestamp = Time.now.to_i
           ticker.payload   = output
           ticker
         end
