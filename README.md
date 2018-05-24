@@ -24,6 +24,7 @@ Or install it yourself as:
 
 | Exchange          | Ticker  | Order Book | Trade   | Account | Market List |
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |
+| Abcc              | Y       | N          | N       |         | Y           |
 | Abucoins          | Y       | Y          | Y       |         | Y           |
 | ACX               | Y       | Y          | Y       |         | Y           |
 | AEX               | Y       | Y          | Y       |         | Y           |
