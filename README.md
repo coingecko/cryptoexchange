@@ -173,6 +173,7 @@ Or install it yourself as:
 | Unocoin           |         |            |         |         |             |
 | Viabtc            | Y       |            |         |         | User-Defined|
 | Waves             | Y       | N          | Y       |         | Y           |
+| Wcx               | Y       | Y          | Y       |         | Y           |
 | Wex               | Y       | Y          | Y       |         | Y           |
 | Yobit             | Y       |            |         |         | Y           |
 | Yuanbao           | Y       |            |         |         | User-Defined|
