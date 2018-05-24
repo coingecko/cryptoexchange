@@ -1,0 +1,93 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.wcex.com/ticker/ETH-BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.wcex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '153'
+      Connection:
+      - close
+      Date:
+      - Thu, 24 May 2018 08:30:15 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - WCX-AC,WCX-AT
+      Etag:
+      - W/"99-LqxasALYN0jMIG/CS0gvzzOtTWQ"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 96d42faebb6637ed78ff5050f67e2560.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Gton-9_iC5Hn3ZET2AybhM9I-iCtKMgrkTnxV-E7m1lCjO5cJP9K5A==
+    body:
+      encoding: UTF-8
+      string: '{"timestamp":"1527150614907.495","product":"ETH-BTC","price":"0.076333","bid":"0.076275","ask":"0.07639","bid_size":"0.42300000","ask_size":"1.90500000"}'
+    http_version: 
+  recorded_at: Thu, 24 May 2018 08:30:15 GMT
+- request:
+    method: get
+    uri: https://api.wcex.com/candles/ETH-BTC/1D
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.wcex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1614'
+      Connection:
+      - close
+      Date:
+      - Thu, 24 May 2018 08:30:15 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - WCX-AC,WCX-AT
+      Etag:
+      - W/"64e-bouVPdtmQ1chnUMYNionOdxAgh4"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 be9861e47e16586c9437d505fd6f0c0d.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - "-zt8wsIEI5Yg8PM8pCR7le2gsQ29YDPvPybTrIx8xTlPQrTCKOOtWQ=="
+    body:
+      encoding: UTF-8
+      string: '[["1527120000","0.076894","0.079011","0.076325","0.076333","6616.575000"],["1527033600","0.080344","0.08091","0.075728","0.076883","30669.755000"],["1526947200","0.083005","0.083733","0.08008","0.080349","18428.148000"],["1526860800","0.083885","0.084235","0.082371","0.083018","9348.513896"],["1526774400","0.084624","0.08583","0.083847","0.08389","7116.243000"],["1526688000","0.084203","0.085706","0.083424","0.084637","8290.331000"],["1526601600","0.082886","0.084308","0.082618","0.084205","11949.201000"],["1526515200","0.084735","0.08537","0.082578","0.082923","13253.823000"],["1526428800","0.083174","0.084748","0.082596","0.084704","15252.245000"],["1526342400","0.083937","0.084843","0.082357","0.083176","16749.965000"],["1526256000","0.083991","0.084721","0.082312","0.083985","16473.128889"],["1526169600","0.080715","0.085126","0.079986","0.083993","13603.126000"],["1526083200","0.08055","0.081095","0.077431","0.080715","11228.620000"],["1525996800","0.080213","0.082205","0.078143","0.080549","17560.967000"],["1525910400","0.080725","0.081992","0.080116","0.080213","11135.770000"],["1525824000","0.081487","0.081655","0.07901","0.080724","18514.282545"],["1525737600","0.080333","0.08211","0.079023","0.081493","15915.736000"],["1525651200","0.082125","0.082442","0.074794","0.080365","50023.585000"],["1525564800","0.083011","0.084394","0.079863","0.082132","17804.904000"],["1525478400","0.080937","0.083201","0.08062","0.083011","17827.757000"],["1525392000","0.079859","0.082998","0.079334","0.080915","13541.931000"],["1525305600","0.074493","0.080777","0.074413","0.07984","2827.406000"]]'
+    http_version: 
+  recorded_at: Thu, 24 May 2018 08:30:16 GMT
+recorded_with: VCR 4.0.0
