@@ -20,7 +20,7 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
-              market: 'coinbene'
+              market: Coinbene::Market::NAME
             )
           end.compact
         end
