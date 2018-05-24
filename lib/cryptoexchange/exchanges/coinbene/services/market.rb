@@ -4,34 +4,22 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            false
+            true
           end
         end
 
-        def fetch
-          output = super(ticker_url)
-          adapt_all(output)
+        def fetch(market_pair)
+          output = super(ticker_url(market_pair))
+          adapt(output, market_pair)
         end
 
-        def ticker_url
-          "#{Cryptoexchange::Exchanges::Coinbene::Market::API_URL}/market/ticker?symbol=all"
-        end
-
-        def adapt_all(output)
-          output['ticker'].map do |ticker|
-            separator = /(USDT|BTC|ETH)\z/ =~ ticker['symbol']
-            base = ticker['symbol'][0..separator - 1]
-            target   = ticker['symbol'][separator..-1]
-            market_pair = Cryptoexchange::Models::MarketPair.new(
-                            base: base,
-                            target: target,
-                            market: Coinbene::Market::NAME
-                          )
-            adapt(ticker, market_pair)
-          end
+        def ticker_url(market_pair)
+          "#{Cryptoexchange::Exchanges::Coinbene::Market::API_URL}/market/ticker?symbol=#{market_pair.base}#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
+          output           = output['ticker'].first
+
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target

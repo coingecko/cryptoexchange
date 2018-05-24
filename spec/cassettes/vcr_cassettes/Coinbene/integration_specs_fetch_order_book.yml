@@ -2,9 +2,9 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.coinbene.com/v1/market/orderbooks?symbol=ETHBTC
+    uri: http://api.coinbene.com/v1/market/orderbook?symbol=ETHBTC
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       Connection:
@@ -12,39 +12,27 @@ http_interactions:
       Host:
       - api.coinbene.com
       User-Agent:
-      - http.rb/1.0.4
+      - http.rb/3.0.0
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Fri, 23 Feb 2018 08:19:13 GMT
+      - Thu, 24 May 2018 06:49:33 GMT
       Content-Type:
-      - text/html; charset=UTF-8
+      - application/json;charset=UTF-8
       Transfer-Encoding:
       - chunked
       Connection:
       - close
       Set-Cookie:
-      - acw_tc=AQAAAASpqkG0qA0AStaMdlhdPL5Jv3K6; Path=/; HttpOnly
-      Server:
-      - nginx/1.12.2
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Request-Headers:
-      - "*"
-      Access-Control-Allow-Methods:
-      - POST,GET
-      Access-Control-Allow-Headers:
-      - Origin, X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept, Authorization
-      Access-Control-Expose-Headers:
-      - Origin, X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept, Authorization
+      - acw_tc=AQAAAMsS5mbOaAUAQwNkdkwRBQsCOsxq; Path=/; HttpOnly
+      X-Application-Context:
+      - exchange-openapi:prod:8601
     body:
       encoding: UTF-8
-      string: '{"orderbook":{"asks":[{"price":"0.08492400","quantity":"0.00210000"},{"price":"0.08497400","quantity":"0.30000000"},{"price":"0.08502300","quantity":"0.30000000"},{"price":"0.08507500","quantity":"0.30000000"},{"price":"0.08512600","quantity":"0.30000000"},{"price":"0.08517800","quantity":"0.00500000"},{"price":"0.08522900","quantity":"0.30000000"},{"price":"0.08528000","quantity":"0.30000000"},{"price":"0.08533100","quantity":"0.30000000"},{"price":"0.08538200","quantity":"0.30000000"},{"price":"0.08543300","quantity":"0.30000000"},{"price":"0.08548400","quantity":"0.30000000"},{"price":"0.08553500","quantity":"0.30000000"},{"price":"0.08558600","quantity":"0.30000000"},{"price":"0.08563700","quantity":"0.30000000"},{"price":"0.08568800","quantity":"0.30000000"},{"price":"0.08573900","quantity":"0.30000000"},{"price":"0.08579000","quantity":"0.30000000"},{"price":"0.08584100","quantity":"0.30000000"},{"price":"0.08589200","quantity":"0.30000000"},{"price":"0.08594300","quantity":"0.30000000"},{"price":"0.08599400","quantity":"0.30000000"},{"price":"0.08604500","quantity":"0.30000000"},{"price":"0.08609600","quantity":"0.30000000"},{"price":"0.08614700","quantity":"0.30000000"},{"price":"0.08619800","quantity":"0.30000000"},{"price":"0.08624900","quantity":"0.30000000"},{"price":"0.08629500","quantity":"0.00430000"},{"price":"0.08964000","quantity":"0.00350000"},{"price":"0.08968000","quantity":"0.06400000"},{"price":"0.09060000","quantity":"0.00090000"},{"price":"0.09316000","quantity":"0.29690000"},{"price":"0.09388000","quantity":"0.30000000"},{"price":"0.09392000","quantity":"0.30000000"},{"price":"0.09396000","quantity":"0.30000000"},{"price":"0.09400000","quantity":"0.26000000"},{"price":"0.09404000","quantity":"0.26000000"},{"price":"0.09408000","quantity":"0.21000000"},{"price":"0.09412000","quantity":"0.16000000"},{"price":"0.09416000","quantity":"0.30000000"},{"price":"0.09480000","quantity":"1.78390000"},{"price":"0.09844000","quantity":"0.01160000"},{"price":"0.09860000","quantity":"0.04000000"},{"price":"0.09868000","quantity":"0.26420000"},{"price":"0.48000000","quantity":"0.48000000"}],"bids":[{"price":"0.08482200","quantity":"0.58220000"},{"price":"0.08477100","quantity":"0.30000000"},{"price":"0.08472200","quantity":"0.30000000"},{"price":"0.08467300","quantity":"0.30000000"},{"price":"0.08462300","quantity":"0.30000000"},{"price":"0.08457300","quantity":"0.16630000"},{"price":"0.08452300","quantity":"0.18540000"},{"price":"0.08447300","quantity":"0.01350000"},{"price":"0.08442300","quantity":"0.30000000"},{"price":"0.08437400","quantity":"0.14090000"},{"price":"0.08432400","quantity":"0.28340000"},{"price":"0.08427300","quantity":"0.22490000"},{"price":"0.08422400","quantity":"0.24930000"},{"price":"0.08417400","quantity":"0.30000000"},{"price":"0.08412400","quantity":"0.28960000"},{"price":"0.08407400","quantity":"0.28340000"},{"price":"0.08402400","quantity":"0.30000000"},{"price":"0.08397400","quantity":"0.26680000"},{"price":"0.08392400","quantity":"0.24990000"},{"price":"0.08387400","quantity":"0.30000000"},{"price":"0.08382400","quantity":"0.30000000"},{"price":"0.08377400","quantity":"0.30000000"},{"price":"0.08372400","quantity":"0.26660000"},{"price":"0.08367400","quantity":"0.30000000"},{"price":"0.08362400","quantity":"0.30000000"},{"price":"0.08357400","quantity":"0.30000000"},{"price":"0.08352400","quantity":"0.30000000"},{"price":"0.08347400","quantity":"0.23320000"},{"price":"0.08342400","quantity":"0.24960000"},{"price":"0.08337400","quantity":"0.24960000"},{"price":"0.08332400","quantity":"0.21600000"},{"price":"0.08327600","quantity":"0.30000000"},{"price":"0.08322700","quantity":"0.28320000"},{"price":"0.08317800","quantity":"0.29830000"},{"price":"0.08312900","quantity":"0.28320000"},{"price":"0.08308000","quantity":"0.23680000"},{"price":"0.08303100","quantity":"0.24960000"},{"price":"0.08298200","quantity":"0.28320000"},{"price":"0.08293300","quantity":"0.30000000"},{"price":"0.08288400","quantity":"0.30000000"},{"price":"0.08283500","quantity":"0.30000000"},{"price":"0.08278500","quantity":"0.30000000"},{"price":"0.08273700","quantity":"0.23240000"},{"price":"0.08268800","quantity":"0.30000000"},{"price":"0.08263900","quantity":"0.24930000"},{"price":"0.08259000","quantity":"0.24930000"},{"price":"0.08254100","quantity":"0.30000000"},{"price":"0.08249200","quantity":"0.30000000"},{"price":"0.08244300","quantity":"0.30000000"},{"price":"0.08239400","quantity":"0.21280000"},{"price":"0.08234500","quantity":"0.24900000"},{"price":"0.08229600","quantity":"0.08570000"},{"price":"0.08224700","quantity":"0.24900000"},{"price":"0.08219800","quantity":"0.30000000"},{"price":"0.08214900","quantity":"0.13120000"},{"price":"0.08210000","quantity":"0.28740000"},{"price":"0.08205100","quantity":"0.27480000"},{"price":"0.08200200","quantity":"0.30000000"},{"price":"0.08195300","quantity":"0.30000000"},{"price":"0.08190400","quantity":"0.28730000"},{"price":"0.08185500","quantity":"0.28730000"},{"price":"0.08180600","quantity":"0.30000000"},{"price":"0.08175600","quantity":"0.30000000"},{"price":"0.08170700","quantity":"0.26790000"},{"price":"0.08165900","quantity":"0.24190000"},{"price":"0.08161200","quantity":"0.29000000"},{"price":"0.08156400","quantity":"0.30000000"},{"price":"0.08151500","quantity":"0.30000000"},{"price":"0.08146600","quantity":"0.30000000"},{"price":"0.08141700","quantity":"0.30000000"},{"price":"0.08136800","quantity":"0.30000000"},{"price":"0.08131900","quantity":"0.30000000"},{"price":"0.01324000","quantity":"0.01300000"},{"price":"0.00000200","quantity":"549.32600000"}]},"status":"ok","symbol":"ETHBTC","timestamp":1519345153901}'
+      string: '{"symbol":"ETHBTC","orderbook":null,"status":"ok","timestamp":1527115773358}'
     http_version: 
-  recorded_at: Fri, 23 Feb 2018 08:19:13 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Thu, 24 May 2018 06:49:33 GMT
+recorded_with: VCR 4.0.0
