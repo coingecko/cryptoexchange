@@ -1,7 +1,7 @@
 module Cryptoexchange::Exchanges
-  module Wcex
+  module Wcx
     class Market
-      NAME    = 'wcex'
+      NAME    = 'wcx'
       API_URL = 'https://api.wcex.com'
     end
   end

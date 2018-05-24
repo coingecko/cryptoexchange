@@ -1,8 +1,8 @@
 module Cryptoexchange::Exchanges
-  module Wcex
+  module Wcx
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Wcex::Market::API_URL}/products"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Wcx::Market::API_URL}/products"
 
         def fetch
           output = super
@@ -15,7 +15,7 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
-              market: Wcex::Market::NAME
+              market: Wcx::Market::NAME
             )
           end
         end
