@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'pry'
 
 RSpec.describe 'Coinbene integration specs' do
   let(:client) { Cryptoexchange::Client.new }

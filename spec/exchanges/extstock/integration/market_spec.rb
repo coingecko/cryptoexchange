@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'pry'
 
 RSpec.describe 'Extstock integration specs' do
   let(:client) { Cryptoexchange::Client.new }
