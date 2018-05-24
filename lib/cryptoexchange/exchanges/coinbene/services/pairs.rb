@@ -10,16 +10,19 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output['ticker'].map do |pair|
-            separator = /(USDT|BTC|ETH)\z/ =~ pair['symbol']
+          pairs = output['ticker'].map do |pair|
+            separator = /(USDT|BTC|ETH|BITCNY)\z/ =~ pair['symbol']
+
+            next if separator.nil?
+
             base   = pair['symbol'][0..separator - 1]
             target = pair['symbol'][separator..-1]
             Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
-              market: Coinbene::Market::NAME
+              market: 'coinbene'
             )
-          end
+          end.compact
         end
       end
     end
