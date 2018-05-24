@@ -1,3 +1,4 @@
+require 'pry'
 module Cryptoexchange::Exchanges
   module Coinbene
     module Services
@@ -20,7 +21,7 @@ module Cryptoexchange::Exchanges
             tr.type      = trade['take'] == '--' ? nil : trade['take']
             tr.price     = trade['price']
             tr.amount    = trade['quantity']
-            tr.timestamp = Time.parse(trade['time']).to_i
+            tr.timestamp = trade['time'] / 1000
             tr.payload   = trade
             tr.market    = Coinbene::Market::NAME
             tr
