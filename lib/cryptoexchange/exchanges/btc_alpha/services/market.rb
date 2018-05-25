@@ -14,8 +14,8 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          base = market_pair.base
-          target = market_pair.target
+          base = market_pair.base_raw
+          target = market_pair.target_raw
           "#{Cryptoexchange::Exchanges::BtcAlpha::Market::TICKER_URL}/charts/#{base}_#{target}/D/chart?limit=1"
         end
 

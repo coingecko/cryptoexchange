@@ -8,8 +8,8 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          base   = market_pair.base
-          target = market_pair.target
+          base   = market_pair.base_raw
+          target = market_pair.target_raw
           "#{Cryptoexchange::Exchanges::BtcAlpha::Market::API_URL}/orderbook/#{base}_#{target}?status=2"
         end
 

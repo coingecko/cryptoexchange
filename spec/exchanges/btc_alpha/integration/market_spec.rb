@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'BtcAlpha integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'btc_alpha') }
+  let(:lhcoin_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'LHCoin', target: 'ETH', market: 'btc_alpha') }
 
   it 'fetch pairs' do
     pairs = client.pairs('btc_alpha')
@@ -15,10 +15,10 @@ RSpec.describe 'BtcAlpha integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_usd_pair)
+    ticker = client.ticker(lhcoin_eth_pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'USD'
+    expect(ticker.base).to eq 'LHCOIN'
+    expect(ticker.target).to eq 'ETH'
     expect(ticker.market).to eq 'btc_alpha'
     expect(ticker.last).to be_a Numeric
     expect(ticker.high).to be_a Numeric
@@ -30,10 +30,10 @@ RSpec.describe 'BtcAlpha integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(btc_usd_pair)
+    order_book = client.order_book(lhcoin_eth_pair)
 
-    expect(order_book.base).to eq 'BTC'
-    expect(order_book.target).to eq 'USD'
+    expect(order_book.base).to eq 'LHCOIN'
+    expect(order_book.target).to eq 'ETH'
     expect(order_book.market).to eq 'btc_alpha'
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
@@ -47,13 +47,13 @@ RSpec.describe 'BtcAlpha integration specs' do
   end
 
   it 'fetch trade' do
-    trades = client.trades(btc_usd_pair)
+    trades = client.trades(lhcoin_eth_pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty
     expect(trade.trade_id).to_not be_nil
-    expect(trade.base).to eq 'BTC'
-    expect(trade.target).to eq 'USD'
+    expect(trade.base).to eq 'LHCOIN'
+    expect(trade.target).to eq 'ETH'
     expect(trade.price).to_not be nil
     expect(trade.amount).to_not be nil
     expect(trade.timestamp).to be_a Numeric
