@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.huobi.pro/v1/hadax/common/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.huobi.pro
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 25 May 2018 04:24:33 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d626e44cc0b418fa9e5211d983a37acdc1527222273; expires=Sat, 25-May-19
+        04:24:33 GMT; path=/; domain=.api.huobi.pro; HttpOnly
+      X-Application-Context:
+      - dawn-broker-pro:default,prd:8080
+      X-Request-Id:
+      - efc0ce98d69757bdbf55489fc783334c
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42053ba6ce798466-HKG
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","data":[{"base-currency":"gve","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"inc","quote-currency":"btc","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"bkbt","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"ae","quote-currency":"btc","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"ren","quote-currency":"btc","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"pc","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"get","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"man","quote-currency":"btc","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"hot","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"gtc","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"portal","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"datx","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"18t","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"but","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"lxt","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"cdc","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"uuu","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"aac","quote-currency":"btc","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"cnn","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"uip","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"uc","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"gsc","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"iic","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"mex","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"egcc","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"she","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"gve","quote-currency":"eth","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"inc","quote-currency":"eth","price-precision":8,"amount-precision":4,"symbol-partition":"hadax"},{"base-currency":"bkbt","quote-currency":"eth","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"ae","quote-currency":"eth","price-precision":6,"amount-precision":4,"symbol-partition":"hadax"},{"base-currency":"ren","quote-currency":"eth","price-precision":6,"amount-precision":4,"symbol-partition":"hadax"},{"base-currency":"pc","quote-currency":"eth","price-precision":8,"amount-precision":4,"symbol-partition":"hadax"},{"base-currency":"get","quote-currency":"eth","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"man","quote-currency":"eth","price-precision":6,"amount-precision":4,"symbol-partition":"hadax"},{"base-currency":"hot","quote-currency":"eth","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"gtc","quote-currency":"eth","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"portal","quote-currency":"eth","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"datx","quote-currency":"eth","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"18t","quote-currency":"eth","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"but","quote-currency":"eth","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"lxt","quote-currency":"eth","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"cdc","quote-currency":"eth","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"uuu","quote-currency":"eth","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"aac","quote-currency":"eth","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"cnn","quote-currency":"eth","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"uip","quote-currency":"eth","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"uc","quote-currency":"eth","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"gsc","quote-currency":"eth","price-precision":8,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"iic","quote-currency":"eth","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"mex","quote-currency":"eth","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"egcc","quote-currency":"eth","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"},{"base-currency":"she","quote-currency":"eth","price-precision":10,"amount-precision":2,"symbol-partition":"hadax"}]}'
+    http_version: 
+  recorded_at: Fri, 25 May 2018 04:24:33 GMT
+recorded_with: VCR 4.0.0
