@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.abcc.com/api/v2/tickers.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.abcc.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 24 May 2018 05:19:17 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '4840'
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSALB=zYLl0CMqHNVhnoNLrksF+3ISo1CCbiBtfwyTWImaM1Zwv5r8UmXfhPTdVaVKaMFbhqoF9q1Bw82GULhrHa3Z3VYswV3eoniCBmiBHHpeQnZjYYpdgRaWCiajiyfi;
+        Expires=Thu, 31 May 2018 05:19:17 GMT; Path=/
+      Server:
+      - nginx
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"300a62428911888c14a092de2b8fbc6f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 13b6141c-cfb4-4343-8579-feeae920fc5c
+      X-Runtime:
+      - '0.093943'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ltcbtc":{"at":1527139157,"ticker":{"buy":"0.015742","sell":"0.015773","low":"0.015506","high":"0.016038","last":"0.015764","vol":"871.93"}},"ethbtc":{"at":1527139157,"ticker":{"buy":"0.078861","sell":"0.079041","low":"0.075779","high":"0.081098","last":"0.078916","vol":"1889.95"}},"ltceth":{"at":1527139157,"ticker":{"buy":"0.19933","sell":"0.19983","low":"0.19737","high":"0.20645","last":"0.19957","vol":"840.31"}},"btcusdt":{"at":1527139157,"ticker":{"buy":"7676.4","sell":"7697.6","low":"7426.2","high":"7953.77","last":"7683.8","vol":"137.325501"}},"ethusdt":{"at":1527139157,"ticker":{"buy":"606.55","sell":"607.75","low":"563.12","high":"644.07","last":"607.33","vol":"927.887206"}},"qtumbtc":{"at":1527139157,"ticker":{"buy":"0.001778","sell":"0.001784","low":"0.001736","high":"0.001849","last":"0.00178","vol":"12300.88"}},"qtumeth":{"at":1527139157,"ticker":{"buy":"0.022552","sell":"0.02257","low":"0.022495","high":"0.023208","last":"0.022564","vol":"9068.75"}},"bchbtc":{"at":1527139157,"ticker":{"buy":"0.13514","sell":"0.13527","low":"0.12941","high":"0.13911","last":"0.13519","vol":"1238.43"}},"bcheth":{"at":1527139157,"ticker":{"buy":"1.23935","sell":"1.70759","low":"1.67238","high":"1.7788","last":"1.70526","vol":"62.844"}},"eosbtc":{"at":1527139157,"ticker":{"buy":"0.00145255","sell":"0.00145501","low":"0.00138677","high":"0.00151964","last":"0.00145454","vol":"52827.0"}},"eoseth":{"at":1527139157,"ticker":{"buy":"0.018392","sell":"0.018428","low":"0.018015","high":"0.018855","last":"0.018412","vol":"29080.45"}},"xrpbtc":{"at":1527139157,"ticker":{"buy":"0.00007969","sell":"0.00008008","low":"0.0000767","high":"0.00008066","last":"0.00007999","vol":"400616.0"}},"xrpeth":{"at":1527139157,"ticker":{"buy":"0.00101067","sell":"0.0010123","low":"0.00098161","high":"0.00103533","last":"0.0010114","vol":"233389.0"}},"dashbtc":{"at":1527139157,"ticker":{"buy":"0.044902","sell":"0.044993","low":"0.043888","high":"0.045883","last":"0.044915","vol":"324.29"}},"dasheth":{"at":1527139157,"ticker":{"buy":"0.56849","sell":"0.56905","low":"0.55024","high":"0.59109","last":"0.56898","vol":"392.028"}},"omgbtc":{"at":1527139157,"ticker":{"buy":"0.001462","sell":"0.001472","low":"0.001343","high":"0.001481","last":"0.001468","vol":"17426.64"}},"omgeth":{"at":1527139157,"ticker":{"buy":"0.018576","sell":"0.018603","low":"0.017506","high":"0.019042","last":"0.018585","vol":"12869.33"}},"wiccbtc":{"at":1527139157,"ticker":{"buy":"0.00022539","sell":"0.00033334","low":"0.00020104","high":"0.00023141","last":"0.00022698","vol":"78031.0"}},"wicceth":{"at":1527139157,"ticker":{"buy":"0.00286915","sell":"0.00287299","low":"0.00262234","high":"0.0028951","last":"0.00287018","vol":"84062.0"}},"etcbtc":{"at":1527139157,"ticker":{"buy":"0.002005","sell":"0.002009","low":"0.001944","high":"0.00204","last":"0.002008","vol":"6168.38"}},"etceth":{"at":1527139157,"ticker":{"buy":"0.025386","sell":"0.025405","low":"0.024951","high":"0.026016","last":"0.025397","vol":"8981.67"}},"zrxbtc":{"at":1527139157,"ticker":{"buy":"0.00017344","sell":"0.00017443","low":"0.00013468","high":"0.00021382","last":"0.00017364","vol":"305043.0"}},"zrxeth":{"at":1527139157,"ticker":{"buy":"0.00220157","sell":"0.00221005","low":"0.00170424","high":"0.00267993","last":"0.00220296","vol":"116008.0"}},"funbtc":{"at":1527139157,"ticker":{"buy":"0.00000468","sell":"0.00000479","low":"0.0000044","high":"0.00000525","last":"0.00000474","vol":"2156752.0"}},"funeth":{"at":1527139157,"ticker":{"buy":"0.00005971","sell":"0.00005984","low":"0.00005746","high":"0.00006532","last":"0.00005979","vol":"3763756.0"}},"cvcbtc":{"at":1527139157,"ticker":{"buy":"0.00004011","sell":"0.00004044","low":"0.00003766","high":"0.00004054","last":"0.00004021","vol":"194301.0"}},"cvceth":{"at":1527139157,"ticker":{"buy":"0.00050755","sell":"0.00050857","low":"0.00047789","high":"0.00052227","last":"0.00050842","vol":"460568.0"}},"gntbtc":{"at":1527139157,"ticker":{"buy":"0.0000636","sell":"0.00006388","low":"0.00005994","high":"0.00006725","last":"0.00006364","vol":"167230.0"}},"gnteth":{"at":1527139157,"ticker":{"buy":"0.00080707","sell":"0.00080865","low":"0.00076157","high":"0.00086052","last":"0.00080769","vol":"283565.0"}},"batbtc":{"at":1527139157,"ticker":{"buy":"0.00004211","sell":"0.00004248","low":"0.00003619","high":"0.00004347","last":"0.00004238","vol":"252540.0"}},"bateth":{"at":1527139157,"ticker":{"buy":"0.0005345","sell":"0.00053543","low":"0.00047465","high":"0.00055723","last":"0.00053478","vol":"460037.0"}},"lendbtc":{"at":1527139157,"ticker":{"buy":"0.00000605","sell":"0.00000618","low":"0.0000056","high":"0.00000625","last":"0.00000613","vol":"3015165.0"}},"lendeth":{"at":1527139157,"ticker":{"buy":"0.00007725","sell":"0.00007747","low":"0.00007298","high":"0.00007846","last":"0.00007743","vol":"3147593.0"}}}'
+    http_version: 
+  recorded_at: Thu, 24 May 2018 05:19:17 GMT
+recorded_with: VCR 4.0.0
