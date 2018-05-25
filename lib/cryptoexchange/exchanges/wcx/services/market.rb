@@ -23,7 +23,7 @@ module Cryptoexchange::Exchanges
         def candles_url(market_pair)
           base = market_pair.base
           target = market_pair.target
-          "#{Cryptoexchange::Exchanges::Wcx::Market::API_URL}/candles/#{base}-#{target}/1D"
+          "#{Cryptoexchange::Exchanges::Wcx::Market::API_URL}/candles/#{base}-#{target}/240"
         end
 
         # ticker output
@@ -49,6 +49,9 @@ module Cryptoexchange::Exchanges
         def adapt(ticker_output, candle_output, market_pair)
           ticker = Cryptoexchange::Models::Ticker.new
           candle_data = candle_output.first
+          volume = candle_data[0..5].map do |vol|
+            vol[-1].to_f
+          end.sum
 
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
@@ -58,7 +61,7 @@ module Cryptoexchange::Exchanges
           ticker.last      = NumericHelper.to_d(ticker_output['price'])
           ticker.high      = NumericHelper.to_d(candle_data[2])
           ticker.low       = NumericHelper.to_d(candle_data[3])
-          ticker.volume    = NumericHelper.to_d(candle_data[-1])
+          ticker.volume    = NumericHelper.to_d(volume)
           ticker.timestamp = ticker_output['timestamp'].to_i / 1000
           ticker.payload   = [ticker_output, candle_output]
           ticker
