@@ -18,10 +18,14 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - nginx/1.12.2
+      Date:
+      - Sat, 26 May 2018 09:13:32 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '203'
+      - '200'
       Connection:
       - close
       Status:
@@ -32,26 +36,25 @@ http_interactions:
       - "*"
       Strict-Transport-Security:
       - max-age=0; includeSubDomains
+      - max-age=0; includeSubDomains
       - max-age=31536000
-      X-Request-Id:
-      - d53989d1-3fda-473e-bd23-565598f735ec
       Etag:
-      - '"1b07a734e4f42a6fa285a75eb5373213"'
+      - '"6edb46a01d82121905d5ca57c19c4edc"'
       X-Runtime:
-      - '0.008712'
-      Date:
-      - Fri, 20 Apr 2018 21:38:09 GMT
+      - '0.007764'
+      X-Request-Id:
+      - 0df0785a-4553-4f02-bf9f-88b4b6bfc31e
       X-Powered-By:
-      - Phusion Passenger 5.2.2
-      Server:
-      - nginx/1.12.2 + Phusion Passenger 5.2.2
+      - Phusion Passenger 5.1.12
       X-Frame-Options:
+      - DENY
       - DENY
       X-Content-Type-Options:
       - nosniff
+      - nosniff
     body:
       encoding: ASCII-8BIT
-      string: '{"at":1524260289,"ticker":{"buy":"0.000000089","sell":"0.000000094","low":"0.000000077","high":"0.000000109","last":"0.000000089","vol":"3910682.8956","volbtc":"0.3441262231241","change":"-0.183486239"}}'
+      string: '{"at":1527326029,"ticker":{"buy":"0.000000089","sell":"0.00000009","low":"0.000000085","high":"0.00000009","last":"0.000000088","vol":"1551295.0227","volbtc":"0.134975523092","change":"-0.011235955"}}'
     http_version: 
-  recorded_at: Fri, 20 Apr 2018 21:38:09 GMT
+  recorded_at: Sat, 26 May 2018 09:13:32 GMT
 recorded_with: VCR 4.0.0
