@@ -49,9 +49,11 @@ module Cryptoexchange::Exchanges
         def adapt(ticker_output, candle_output, market_pair)
           ticker = Cryptoexchange::Models::Ticker.new
           candle_data = candle_output.first
-          volume = candle_data[0..5].map do |vol|
-            vol[-1].to_f
-          end.sum
+          volume = 0
+          candle_data[0..5].map do |vol|
+            volume += vol[-1].to_f
+          end
+
 
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
