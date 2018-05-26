@@ -111,6 +111,7 @@ Or install it yourself as:
 | Gemini            | Y       | Y          | Y       |         | Y           |
 | GetBTC            | Y       | Y          | Y       |         | User-Defined|
 | GOPAX             | Y       | Y          | Y       |         | Y           |
+| Graviex           | Y       | N          | N       |         | Y           |
 | Hadax             | Y       | N          | N       |         | Y           |
 | HitBTC            | Y       |            |         |         | Y           |
 | Hksy              | Y       |            | Y       |         | User-Defined|
