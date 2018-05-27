@@ -44,14 +44,6 @@ module Cryptoexchange
 
       private
 
-      def fetch_auth_credentials(path)
-        YAML.load_file(path)
-      end
-
-      def auth_details_path
-        "config/cryptoexchange/cryptoexchange_api_keys.yml"
-      end
-
       def http_get(endpoint)
         HTTP.timeout(:write => 2, :connect => 15, :read => 18).follow.get(endpoint)
       end

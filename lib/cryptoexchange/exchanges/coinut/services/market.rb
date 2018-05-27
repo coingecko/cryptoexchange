@@ -2,7 +2,6 @@ module Cryptoexchange::Exchanges
   module Coinut
     module Services
       class Market < Cryptoexchange::Services::Market
-        include CoinutHelper
         class << self
           def supports_individual_ticker_query?
             true
@@ -10,12 +9,24 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          output = prepare_and_send_request(market_pair.inst_id)
+          authentication = Cryptoexchange::Exchanges::Coinut::Authentication.new(
+            :market,
+            Cryptoexchange::Exchanges::Coinut::Market::NAME
+          )
+          authentication.validate_credentials!
+
+          payload_ = payload(market_pair)
+          headers = authentication.headers(payload_)
+          output = fetch_using_post(ticker_url, payload_, headers)
           adapt(output, market_pair)
         end
 
+        def payload(market_pair)
+          '{"nonce":' + SecureRandom.random_number(99999).to_s + ',"request":"inst_tick", "inst_id":' + market_pair.inst_id + ' }'
+        end
+
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Coinut::Market::API_URL}"
+          Cryptoexchange::Exchanges::Coinut::Market::API_URL
         end
 
         def adapt(output, market_pair)

@@ -22,4 +22,7 @@ module Cryptoexchange
 
   class ResultParseError < Error
   end
+
+  class CredentialsMissingError < Error
+  end
 end

@@ -2,21 +2,26 @@ module Cryptoexchange::Exchanges
   module Coinut
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        include CoinutHelper
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Coinut::Market::API_URL}"        
-
-        #specify username and api_key in yml file. E.g.
-        # coinut:
-        #   username: <username>
-        #   key: <api_key>
         
         def fetch
-          if auth_file_exist?          
-            output = prepare_and_send_request
-            adapt(output)
-          else
-            raise Cryptoexchange::Error, { response: "Must include auth file named cryptoexchange_api_keys.yml in config/cryptoexchange"}
-          end
+          authentication = Cryptoexchange::Exchanges::Coinut::Authentication.new(
+            :pairs,
+            Cryptoexchange::Exchanges::Coinut::Market::NAME
+          )
+          authentication.validate_credentials!
+
+          payload_ = payload
+          headers = authentication.headers(payload_)
+          output = fetch_via_api_using_post(pairs_url, headers, payload_)
+          adapt(output)
+        end
+
+        def payload
+          '{"nonce":' + SecureRandom.random_number(99999).to_s + ',"request":"inst_list", "sec_type":"SPOT"}'
+        end
+
+        def pairs_url
+          Cryptoexchange::Exchanges::Coinut::Market::API_URL
         end
 
         def adapt(output)
