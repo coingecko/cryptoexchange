@@ -42,7 +42,7 @@ module Cryptoexchange::Exchanges
           ticker.high      = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'high'))
           ticker.low       = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'low'))
           ticker.volume    = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'vol'))
-          ticker.timestamp = NumericHelper.to_d(output['at'])
+          ticker.timestamp = output['at']
           ticker.payload   = output
           ticker
         end
