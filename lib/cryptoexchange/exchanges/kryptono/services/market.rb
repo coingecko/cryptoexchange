@@ -10,7 +10,7 @@ module Cryptoexchange::Exchanges
 
         def fetch(market_pair)
           ticker_output = super(ticker_url(market_pair, "1m"))
-          volume_output = super(ticker_url(market_pair, "1d"))
+          volume_output = super(ticker_url(market_pair, "4h"))
           adapt(ticker_output, volume_output, market_pair)
         end
 
@@ -32,7 +32,10 @@ module Cryptoexchange::Exchanges
 
         def adapt(ticker_output, volume_output, market_pair)
           ticker_value     = ticker_output['series'].last
-          volume           = volume_output['series'].last[-1]
+          volume           = 0
+          volume_output['series'].last(6).map do |vol|
+            volume += vol[-1].to_f
+          end
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
