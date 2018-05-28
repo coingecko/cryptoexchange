@@ -175,6 +175,7 @@ Or install it yourself as:
 | TuxExchange       | Y       |            |         |         | Y           |
 | Upbit             | Y       |            |         |         | Y           |
 | Unocoin           |         |            |         |         |             |
+| Vertpig           | Y       | Y          | N       |         | Y           |
 | Viabtc            | Y       |            |         |         | User-Defined|
 | Waves             | Y       | N          | Y       |         | Y           |
 | Wcx               | Y       | Y          | Y       |         | Y           |
