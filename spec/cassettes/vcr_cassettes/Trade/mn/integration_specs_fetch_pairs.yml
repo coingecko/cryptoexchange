@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.trade.mn/public/pairs
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.trade.mn
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 May 2018 13:37:28 GMT
+      Server:
+      - Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips PHP/5.6.31
+      X-Powered-By:
+      - Express
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '58'
+      Etag:
+      - W/"3a-ncIQILgh7GFpPXBnrtGJSz+v0KE"
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","supported_pairs":["BTCUSD","ETHUSD"]}'
+    http_version: 
+  recorded_at: Tue, 22 May 2018 13:37:55 GMT
+recorded_with: VCR 4.0.0

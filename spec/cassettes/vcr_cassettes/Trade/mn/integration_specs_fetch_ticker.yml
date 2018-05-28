@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.trade.mn/public/ticker/BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.trade.mn
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 May 2018 13:46:10 GMT
+      Server:
+      - Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips PHP/5.6.31
+      X-Powered-By:
+      - Express
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '282'
+      Etag:
+      - W/"11a-Ik2NNjtO6z2F7lOwI3RxiZJsJwg"
+      Vary:
+      - Accept-Encoding
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":{"opening_price":"8250.94059653","closing_price":"8146.61376937","min_price":"8105.0076478","max_price":"8354.3924985","units_traded":"5.96134762","buy_price":"8146.61418501","sell_price":"8346.07967015","last_price":"8146.61376937","date":1526996770948}}'
+    http_version: 
+  recorded_at: Tue, 22 May 2018 13:46:50 GMT
+recorded_with: VCR 4.0.0
