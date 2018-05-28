@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.wcex.com/products
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.wcex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '54'
+      Connection:
+      - close
+      Date:
+      - Thu, 24 May 2018 08:30:14 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - WCX-AC,WCX-AT
+      Etag:
+      - W/"36-9Q2x5nFuyOL+Pu+9J5En8coX2/w"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 22a5db324556e0bf8d7ec8f0ac25d684.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - IoEoYVb5cye284sJmqS9m8HxFj06AnpzuvE3T3NPJDdp63YhR6Kegw==
+    body:
+      encoding: UTF-8
+      string: '["ETH-BTC","LTC-BTC","BTC-USDC","ETH-USDC","LTC-USDC"]'
+    http_version: 
+  recorded_at: Thu, 24 May 2018 08:30:14 GMT
+recorded_with: VCR 4.0.0
