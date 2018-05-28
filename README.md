@@ -116,19 +116,20 @@ Or install it yourself as:
 | HitBTC            | Y       |            |         |         | Y           |
 | Hksy              | Y       |            | Y       |         | User-Defined|
 | Huobi             | Y       |            |         |         | Y           |
+| Idex              | Y       | Unstable   | Y       |         | Y           |
 | InfinityCoin      | Y       |            |         |         | Y           |
 | Itbit             | Y       | Y          | Y       |         | User-Defined|
-| Idex              | Y       | Unstable   | Y       |         | Y           |
+| Jubi              | Y       |            |         |         | Y           |
 | KKex              | Y       | Y          | Y       |         | Y           |
 | Kkcoin            | Y       | Y          | Y       |         | Y           |
-| KyberNetwork      | Y       | N          | N       |         | Y           |
-| Jubi              | Y       |            |         |         | Y           |
-| Koinok            | Y       |            |         |         | Y           |
 | Koinex            | Y       |            |         |         | Y           |
+| Koinok            | Y       |            |         |         | Y           |
 | Korbit            | Y       |            |         |         | User-Defined|
 | Kraken            | Y       |            |         |         | Y           |
+| Kryptono          | Y       | Y          | Y       |         | User-Defined|
 | Kucoin            | Y       | Y          | Y       |         | Y           |
 | Kuna              | Y       | Y          | Y       |         | User-Defined|
+| KyberNetwork      | Y       | N          | N       |         | Y           |
 | LakeBTC           | Y       |            |         |         | Y           |
 | Latoken           | Y       |            |         |         | Y           |
 | Lbank             | Y       | Y          | Y       |         | Y           |
