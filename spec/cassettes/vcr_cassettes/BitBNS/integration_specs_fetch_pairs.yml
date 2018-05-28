@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitbns.com/order/getTickerWithVolume/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitbns.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 31 Mar 2018 15:32:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4092'
+      Connection:
+      - close
+      Set-Cookie:
+      - XSRF-TOKEN=9gBXzwJn-owLCALUD_vEXm4HYkJsr45NO5BY; Path=/
+      - __cfduid=dddf6c87b92f07f10c059e4171e98e58b1522510329; expires=Sun, 31-Mar-19
+        15:32:09 GMT; path=/; domain=.bitbns.com; HttpOnly; Secure
+      - __cfruid=a7dc76f663fdc30c693f9eb1bdbdcd1ac25ebf48-1522510329; path=/; domain=.bitbns.com;
+        HttpOnly
+      - _csrf=J750a7O24gWt7QKKGeY_K-Go; Path=/
+      - _csrf=l7D2WMaXpkwllKw_TX564NqE; Path=/
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - DENY
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Surrogate-Control:
+      - no-store
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, proxy-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Access-Control-Allow-Origin:
+      - https://www.bitbns.com
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Etag:
+      - W/"ffc-/ZpsFcGZxWIWSyuod8I6P75LTdU"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4043ddf71e1c2cf3-KUL
+    body:
+      encoding: UTF-8
+      string: '{"BTC":{"highest_buy_bid":505000,"lowest_sell_bid":507990,"last_traded_price":507990,"volume":{"max":513799,"min":490000,"rate":0,"volume":20.15751294}},"XRP":{"highest_buy_bid":36.52,"lowest_sell_bid":36.74,"last_traded_price":36.5,"volume":{"max":36.99,"min":35.2,"volume":723407.23}},"NEO":{"highest_buy_bid":3665,"lowest_sell_bid":3700,"last_traded_price":3700,"volume":{"max":3819.5,"min":3628.5,"volume":1021.1034}},"GAS":{"highest_buy_bid":1178,"lowest_sell_bid":1180,"last_traded_price":1178,"volume":{"max":1180,"min":1144.74,"volume":2742.0865}},"ETH":{"highest_buy_bid":28340,"lowest_sell_bid":28800,"last_traded_price":28330,"volume":{"max":29808.33,"min":27325,"volume":331.5447}},"XLM":{"highest_buy_bid":15.06,"lowest_sell_bid":15.29,"last_traded_price":15.04,"volume":{"max":15.34,"min":13.26,"volume":325469.72}},"RPX":{"highest_buy_bid":5.12,"lowest_sell_bid":5.19,"last_traded_price":5.19,"volume":{"max":5.28,"min":4.97,"volume":511543.61}},"DBC":{"highest_buy_bid":2.63,"lowest_sell_bid":2.66,"last_traded_price":2.63,"volume":{"max":2.98,"min":2.5,"volume":163046.03}},"LTC":{"highest_buy_bid":8700,"lowest_sell_bid":8888,"last_traded_price":8700,"volume":{"max":8899.99,"min":8205,"volume":197.2079}},"XMR":{"highest_buy_bid":12800,"lowest_sell_bid":12900,"last_traded_price":12800,"volume":{"max":13200,"min":12400,"volume":18.8634}},"DASH":{"highest_buy_bid":21150,"lowest_sell_bid":24500,"last_traded_price":21001,"volume":{"max":24500,"min":21163,"volume":16.4605}},"DOGE":{"highest_buy_bid":0.2,"lowest_sell_bid":0.21,"last_traded_price":0.21,"volume":{"max":0.22,"min":0.2,"volume":6029756}},"BCH":{"highest_buy_bid":50000,"lowest_sell_bid":52900,"last_traded_price":50000,"volume":{"max":53000,"min":49500,"volume":11.5361}},"SC":{"highest_buy_bid":0.79,"lowest_sell_bid":0.8,"last_traded_price":0.8,"volume":{"max":0.82,"min":0.78,"volume":4052591}},"TRX":{"highest_buy_bid":2.61,"lowest_sell_bid":2.65,"last_traded_price":2.61,"volume":{"max":3.14,"min":2.56,"volume":6313894}},"ETN":{"highest_buy_bid":1.57,"lowest_sell_bid":1.59,"last_traded_price":1.57,"volume":{"max":1.62,"min":1.46,"volume":1262272.1}},"ONT":{"highest_buy_bid":157.01,"lowest_sell_bid":161.79,"last_traded_price":161.96,"volume":{"max":169,"min":157.23,"volume":20970.23}},"ZIL":{"highest_buy_bid":3.23,"lowest_sell_bid":3.44,"last_traded_price":3.39,"volume":{"max":3.49,"min":3.03,"volume":124506}},"EOS":{"highest_buy_bid":426.6,"lowest_sell_bid":438,"last_traded_price":438.97,"volume":{"max":440,"min":416,"volume":1193}},"POLY":{"highest_buy_bid":22.7,"lowest_sell_bid":23.9,"last_traded_price":22.7,"volume":{"max":24.79,"min":22.37,"volume":27716.1}},"DGB":{"highest_buy_bid":1.3,"lowest_sell_bid":1.31,"last_traded_price":1.31,"volume":{"max":1.36,"min":1.26,"volume":469122}},"NCASH":{"highest_buy_bid":2.02,"lowest_sell_bid":2.16,"last_traded_price":2.16,"volume":{"max":2.2,"min":1.95,"volume":144899}},"ADA":{"highest_buy_bid":10.8,"lowest_sell_bid":10.81,"last_traded_price":10.8,"volume":{"max":10.8,"min":10.24,"volume":303901.4}},"ICX":{"highest_buy_bid":169,"lowest_sell_bid":175,"last_traded_price":168.2,"volume":{"max":184.99,"min":162,"volume":2388.81}},"VEN":{"highest_buy_bid":173.2,"lowest_sell_bid":187,"last_traded_price":188,"volume":{"max":195,"min":171.92,"volume":1733.8}},"OMG":{"highest_buy_bid":590.01,"lowest_sell_bid":626,"last_traded_price":590,"volume":{"max":637,"min":570,"volume":335.58}},"REQ":{"highest_buy_bid":12.17,"lowest_sell_bid":12.39,"last_traded_price":12.17,"volume":{"max":13.3,"min":11.6,"volume":26419.1}},"DGD":{"highest_buy_bid":18255,"lowest_sell_bid":19799,"last_traded_price":18255,"volume":{"max":20200,"min":18629.5,"volume":6.835}},"QLC":{"highest_buy_bid":10.07,"lowest_sell_bid":10.54,"last_traded_price":10.54,"volume":{"max":11.95,"min":10,"volume":14522.68}},"POWR":{"highest_buy_bid":21.25,"lowest_sell_bid":21.98,"last_traded_price":21.25,"volume":{"max":22,"min":20.53,"volume":5898.04}},"WPR":{"highest_buy_bid":7.2,"lowest_sell_bid":7.28,"last_traded_price":7.2,"volume":{"max":7.26,"min":6.41,"volume":49282.9}}}'
+    http_version: 
+  recorded_at: Sat, 31 Mar 2018 15:32:09 GMT
+recorded_with: VCR 4.0.0
