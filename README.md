@@ -96,6 +96,7 @@ Or install it yourself as:
 | Cryptopia         | Y       | Y          | Y       |         | Y           |
 | Ddex              | Y       |            |         |         | Y           |
 | Dsx               | Y       | Y          | Y       |         | Y           |
+| Ercdex            | Y       | Y          |         |         | Y           |
 | EtherDelta        | Y       |            |         |         | Y           |
 | Ethfinex          | Y       | Y          | Y       |         | Y           |
 | Exmo              | Y       | Y          | Y       |         | Y           |
