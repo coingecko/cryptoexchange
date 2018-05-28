@@ -43,6 +43,7 @@ Or install it yourself as:
 | Bitconnect        | Y       |            |         |         | Y           |
 | Bitebtc           | Y       | Y          | Y       |         | Y           |
 | Bitfinex          | Y       |            |         |         | Y           |
+| Bitflip           | Y       | Y          | Y       |         | Y           |
 | Bitflyer          | Y       |            |         |         | Y           |
 | Bithash           | Y       | Y          | Y       |         | Y           |
 | Bithumb           | Y       |            |         |         | Y           |

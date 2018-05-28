@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.bitflip.cc/method/market.getOrderBook
+    body:
+      encoding: UTF-8
+      string: '{"pair":"btc:usd"}'
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitflip.cc
+      User-Agent:
+      - http.rb/1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 27 Feb 2018 05:53:12 GMT
+      Content-Type:
+      - application/json; charset=utf8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Server-Time:
+      - '1519710792287'
+      X-Api-Version:
+      - '1.0'
+      Referrer-Policy:
+      - origin-when-cross-origin
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - frame-ancestors 'none'
+      X-Response-Time:
+      - '5'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload;
+    body:
+      encoding: ASCII-8BIT
+      string: '[null,{"buy":[{"amount":0.00150713,"rate":10611.02,"price":15.99218657},{"amount":0.00053103,"rate":10611.01,"price":5.63476464},{"amount":0.02,"rate":10611,"price":212.22},{"amount":0.00100659,"rate":10610.01,"price":10.67992996},{"amount":0.00154303,"rate":10609,"price":16.37000527},{"amount":0.0020682,"rate":10601.02,"price":21.92502956},{"amount":0.00306756,"rate":10555.99,"price":32.38113268},{"amount":0.08656376,"rate":10550,"price":913.247668},{"amount":0.00170882,"rate":10533.53,"price":17.99990673},{"amount":0.00190013,"rate":10525.55,"price":19.99991332},{"amount":0.00285302,"rate":10515.17,"price":29.99999031},{"amount":0.00271224,"rate":10505.15,"price":28.49248803},{"amount":0.00479087,"rate":10500.85,"price":50.30820723},{"amount":0.00358671,"rate":10444.44,"price":37.46117739},{"amount":0.00460911,"rate":10414.15,"price":47.9999629},{"amount":0.0123397,"rate":10409.77,"price":128.45343886},{"amount":0.00238442,"rate":10333.33,"price":24.63899871},{"amount":0.00179465,"rate":10222.99,"price":18.346689},{"amount":0.00722726,"rate":10195,"price":73.6819157},{"amount":0.00319109,"rate":10168,"price":32.44700312},{"amount":0.00272432,"rate":10111.12,"price":27.54592643},{"amount":0.00298999,"rate":10033.5,"price":30.00006466},{"amount":0.0014,"rate":10000,"price":14},{"amount":0.0030003,"rate":9999.01,"price":30.0000297},{"amount":0.00216407,"rate":9980,"price":21.5974186},{"amount":0.09920226,"rate":9900,"price":982.102374},{"amount":0.05065878,"rate":9890,"price":501.0153342},{"amount":0.00100166,"rate":9700,"price":9.716102},{"amount":0.001,"rate":9602.06,"price":9.60206},{"amount":0.00100685,"rate":9550,"price":9.6154175},{"amount":0.01476929,"rate":9504,"price":140.36733216},{"amount":0.03214159,"rate":9333.7,"price":299.99995858},{"amount":0.00676914,"rate":8900,"price":60.245346},{"amount":0.00113636,"rate":8800,"price":9.999968},{"amount":0.0083056,"rate":8258.24,"price":68.58963814},{"amount":0.00650678,"rate":8178.92,"price":53.21843307},{"amount":0.00179415,"rate":8000,"price":14.3532},{"amount":0.003187,"rate":7500.01,"price":23.90253187},{"amount":0.00144056,"rate":7450,"price":10.732172},{"amount":0.00456658,"rate":7200,"price":32.879376},{"amount":0.00545454,"rate":5500,"price":29.99997},{"amount":0.0044742,"rate":5050,"price":22.59471},{"amount":0.0021633,"rate":5000,"price":10.8165},{"amount":0.00345845,"rate":2828.28,"price":9.78146496},{"amount":0.001117,"rate":2649,"price":2.958933},{"amount":0.00196803,"rate":1800,"price":3.542454},{"amount":0.001,"rate":1312.04,"price":1.31204},{"amount":0.005,"rate":200,"price":1},{"amount":0.001,"rate":60,"price":0.06},{"amount":7.1599996,"rate":50,"price":357.99998}],"sell":[{"amount":0.00116063,"rate":10798.98,"price":12.53362015},{"amount":0.01508437,"rate":10798.99,"price":162.89596078},{"amount":0.00056822,"rate":10799,"price":6.13620778},{"amount":0.02963401,"rate":10800,"price":320.047308},{"amount":0.01862035,"rate":10888.84,"price":202.75401189},{"amount":0.00964858,"rate":10888.85,"price":105.06194033},{"amount":0.00183168,"rate":10938.55,"price":20.03592326},{"amount":0.0344736,"rate":10970,"price":378.175392},{"amount":0.04,"rate":10990,"price":439.6},{"amount":0.0036949,"rate":10999.99,"price":40.64386305},{"amount":0.018273,"rate":11000,"price":201.003},{"amount":0.00061365,"rate":11111.12,"price":6.81833878},{"amount":0.04373476,"rate":11200,"price":489.829312},{"amount":0.00531252,"rate":11222.01,"price":59.61715256},{"amount":0.00491247,"rate":11500,"price":56.493405},{"amount":0.00214138,"rate":11529,"price":24.68797002},{"amount":0.00163922,"rate":11529.94,"price":18.90010824},{"amount":0.00101192,"rate":11529.95,"price":11.667387},{"amount":0.002181,"rate":11529.98,"price":25.14688638},{"amount":0.0222,"rate":11689,"price":259.4958},{"amount":0.0019706,"rate":11700,"price":23.05602},{"amount":0.00325648,"rate":11881.01,"price":38.69027144},{"amount":0.00540584,"rate":11951,"price":64.60519384},{"amount":0.00875093,"rate":11998.8,"price":105.00065888},{"amount":0.01354479,"rate":12000,"price":162.53748},{"amount":0.01434317,"rate":12449,"price":178.55812333},{"amount":0.03958341,"rate":12500,"price":494.792625},{"amount":0.002,"rate":12550,"price":25.1},{"amount":0.00265962,"rate":12800,"price":34.043136},{"amount":0.00380233,"rate":13149.83,"price":49.9999931},{"amount":0.00110491,"rate":13499.99,"price":14.91627395},{"amount":0.00447099,"rate":13500,"price":60.358365},{"amount":0.00781,"rate":13751,"price":107.39531},{"amount":0.0014,"rate":13999,"price":19.5986},{"amount":0.00121081,"rate":14399,"price":17.43445319},{"amount":0.02212305,"rate":14551,"price":321.91250055},{"amount":0.03698959,"rate":15000,"price":554.84385},{"amount":0.0013549,"rate":15500,"price":21.00095},{"amount":0.014,"rate":15701,"price":219.814},{"amount":0.004995,"rate":16800,"price":83.916},{"amount":0.00049769,"rate":16980.89,"price":8.45121914},{"amount":0.0294914,"rate":16988,"price":500.9999032},{"amount":0.0125,"rate":17455,"price":218.1875},{"amount":0.00100112,"rate":18600,"price":18.620832},{"amount":0.03943254,"rate":18977,"price":748.31131158},{"amount":0.00150127,"rate":18990,"price":28.5091173},{"amount":0.04795081,"rate":19300,"price":925.450633},{"amount":0.002,"rate":19900,"price":39.8},{"amount":0.01662481,"rate":20000,"price":332.4962},{"amount":0.0010286,"rate":45000,"price":46.287}]}]'
+    http_version: 
+  recorded_at: Tue, 27 Feb 2018 05:53:12 GMT
+recorded_with: VCR 3.0.3
