@@ -38,7 +38,7 @@ module Cryptoexchange::Exchanges
           ticker.last = NumericHelper.to_d(output[1]['last'])
           ticker.ask = NumericHelper.to_d(output[1]['ask'])
           ticker.bid = NumericHelper.to_d(output[1]['bid'])
-          ticker.volume = NumericHelper.to_d(output[1]['baseVolume'])
+          ticker.volume = NumericHelper.to_d(output[1]['quoteVolume'])
           ticker.timestamp = Time.now.to_i
           ticker.payload = output
           ticker
