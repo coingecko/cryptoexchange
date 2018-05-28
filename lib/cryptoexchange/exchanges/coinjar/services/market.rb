@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
           ticker.target    = market_pair.target
           ticker.market    = Coinjar::Market::NAME
 
-          ticker.volume    = NumericHelper.to_d(output['volume'])
+          ticker.volume    = NumericHelper.to_d(output['volume_24h'])
           ticker.last      = NumericHelper.to_d(output['last'])
           ticker.bid       = NumericHelper.to_d(output['bid'])
           ticker.ask       = NumericHelper.to_d(output['ask'])
