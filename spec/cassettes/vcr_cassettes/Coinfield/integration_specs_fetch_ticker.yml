@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://platform.coinfield.com/api/v2//tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - platform.coinfield.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 29 May 2018 16:52:37 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d009ca7bfcf7b500e7093bca2ad9afd241527612757; expires=Wed, 29-May-19
+        16:52:37 GMT; path=/; domain=.coinfield.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Version:
+      - HTTP/1.1
+      Host:
+      - platform.coinfield.com
+      X-Real-Ip:
+      - 73.97.148.141
+      X-Forwarded-For:
+      - 73.97.148.141
+      X-Forwarded-Host:
+      - platform.coinfield.com
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Original-Uri:
+      - "/api/v2//tickers"
+      X-Scheme:
+      - https
+      X-Original-Forwarded-For:
+      - 73.97.148.141
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - US
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 73.97.148.141
+      Etag:
+      - W/"186bd43cc5eb25a50628936548964f02"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 462a2155-29ec-480b-9c4c-aeeeca2f6ec8
+      X-Runtime:
+      - '0.036594'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 422a78f63b662a5b-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"btccad":{"at":1527612757,"ticker":{"buy":"9345.0","sell":"10488.0","low":"9345.0","high":"10600.0","last":"9345.0","open":9598.7,"vol":"33.7881"}},"xrpcad":{"at":1527612757,"ticker":{"buy":"0.8","sell":"0.88","low":"0.75","high":"0.88","last":"0.88","open":0.8,"vol":"115336.4307"}},"bchcad":{"at":1527612757,"ticker":{"buy":"1252.89","sell":"1449.9","low":"1159.56","high":"1449.9","last":"1314.05","open":1241.61,"vol":"556.5165"}},"ltccad":{"at":1527612757,"ticker":{"buy":"143.09","sell":"158.41","low":"144.32","high":"162.73","last":"158.52","open":159.95,"vol":"1816.5217"}},"ethcad":{"at":1527612757,"ticker":{"buy":"750.0","sell":"848.0","low":"700.0","high":"849.91","last":"700.0","open":706.72,"vol":"13.8293"}},"dashcad":{"at":1527612757,"ticker":{"buy":"429.0","sell":"488.0","low":"0.0","high":"0.0","last":"429.0","open":429.0,"vol":"0.0"}},"ethbtc":{"at":1527612757,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","open":"0.0","vol":"0.0"}},"xrpbtc":{"at":1527612757,"ticker":{"buy":"0.0","sell":"0.05","low":"0.0","high":"0.0","last":"0.0","open":"0.0","vol":"0.0"}},"ltcbtc":{"at":1527612757,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","open":"0.0","vol":"0.0"}},"dashbtc":{"at":1527612757,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","open":"0.0","vol":"0.0"}},"bchbtc":{"at":1527612757,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","open":"0.0","vol":"0.0"}},"btcusd":{"at":1527612757,"ticker":{"buy":"7300.0","sell":"7850.0","low":"7300.0","high":"7677.39","last":"7300.0","open":7471.27,"vol":"2.4968"}},"xrpusd":{"at":1527612757,"ticker":{"buy":"0.56","sell":"0.78","low":"0.57","high":"0.64","last":"0.58","open":0.59,"vol":"52991.0421"}}}'
+    http_version: 
+  recorded_at: Tue, 29 May 2018 16:52:37 GMT
+recorded_with: VCR 4.0.0
