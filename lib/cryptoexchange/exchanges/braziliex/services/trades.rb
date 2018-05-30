@@ -2,6 +2,7 @@ module Cryptoexchange::Exchanges
   module Braziliex
     module Services
       class Trades < Cryptoexchange::Services::Market
+
         def fetch(market_pair)
           output = super(ticker_url(market_pair))
           adapt(output, market_pair)

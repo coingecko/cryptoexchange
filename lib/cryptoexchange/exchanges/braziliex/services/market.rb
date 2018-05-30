@@ -35,10 +35,10 @@ module Cryptoexchange::Exchanges
           ticker.target = market_pair.target
           ticker.market = Braziliex::Market::NAME
           ticker.last = NumericHelper.to_d(output['last'].to_f)
-          ticker.bid = NumericHelper.to_d(output['highestBid'].to_f)
-          ticker.ask = NumericHelper.to_d(output['lowestAsk'].to_f)
-          ticker.high = NumericHelper.to_d(output['highestBid24'].to_f)
-          ticker.low = NumericHelper.to_d(output['lowestAsk24'].to_f)
+          ticker.bid = NumericHelper.to_d(output['highestBid24'].to_f)
+          ticker.ask = NumericHelper.to_d(output['lowestAsk24'].to_f)
+          ticker.high = NumericHelper.to_d(output['highestBid'].to_f)
+          ticker.low = NumericHelper.to_d(output['lowestAsk'].to_f)
           ticker.volume = NumericHelper.to_d(output['baseVolume24'].to_f)
           ticker.timestamp = Time.now.to_i
           ticker.payload = output

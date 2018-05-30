@@ -54,6 +54,7 @@ Or install it yourself as:
 | Bitstamp          | Y       | Y          | Y       |         | User-Defined|
 | Bittrex           | Y       |            |         |         | Y           |
 | Bleutrade         | Y       |            |         |         | Y           |
+| Braziliex         | Y       | Y          | Y       |         | Y           |
 | BtcAlpha          | Y       | Y          | Y       |         | Y           |
 | BtcTradeUa        | Y       | Y          | Y       |         | Y           |
 | BTCBox            | Y       | Y          |         |         | User-Defined|

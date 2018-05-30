@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Braziliex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_brl_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'BRL', market: 'braziliex') }
+  let(:eth_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'braziliex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('braziliex')
@@ -15,10 +15,10 @@ RSpec.describe 'Braziliex integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_brl_pair)
+    ticker = client.ticker(eth_btc_pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'BRL'
+    expect(ticker.base).to eq 'ETH'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'braziliex'
     expect(ticker.last).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
@@ -32,10 +32,10 @@ RSpec.describe 'Braziliex integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(btc_brl_pair)
+    order_book = client.order_book(eth_btc_pair)
 
-    expect(order_book.base).to eq 'BTC'
-    expect(order_book.target).to eq 'BRL'
+    expect(order_book.base).to eq 'ETH'
+    expect(order_book.target).to eq 'BTC'
     expect(order_book.market).to eq 'braziliex'
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
@@ -49,12 +49,12 @@ RSpec.describe 'Braziliex integration specs' do
   end
 
   it 'fetch trade' do
-    trades = client.trades(btc_brl_pair)
+    trades = client.trades(eth_btc_pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty
-    expect(trade.base).to eq 'BTC'
-    expect(trade.target).to eq 'BRL'
+    expect(trade.base).to eq 'ETH'
+    expect(trade.target).to eq 'BTC'
     expect(trade.market).to eq 'braziliex'
     expect(trade.trade_id).to_not be_nil
     expect(['buy', 'sell']).to include trade.type
