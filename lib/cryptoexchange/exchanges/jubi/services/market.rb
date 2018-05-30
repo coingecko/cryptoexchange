@@ -21,10 +21,10 @@ module Cryptoexchange::Exchanges
           default_target = 'CNY'
           output.map do |base, ticker|
             market_pair = Cryptoexchange::Models::MarketPair.new(
-                            base: base,
-                            target: default_target,
-                            market: Jubi::Market::NAME
-                          )
+              base: base,
+              target: default_target,
+              market: Jubi::Market::NAME
+            )
 
             adapt(ticker, market_pair)
           end
