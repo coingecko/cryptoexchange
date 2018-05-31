@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://braziliex.com/api/v1/public/orderbook/eth_btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - braziliex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 30 May 2018 13:34:04 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d54d7538dc5d5743ac70a0721ee03c3101527687243; expires=Thu, 30-May-19
+        13:34:03 GMT; path=/; domain=.braziliex.com; HttpOnly
+      - connect.sid=s%3ADR3gax38UBeupsEgqtUg5Wv2ZO-CyYFG.%2F6jMaG9puhpf4qXRmYKKFx%2FfH8PrcePgnqp3k%2B9NgpU;
+        Path=/; HttpOnly
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Proxy-Cache:
+      - EXPIRED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4231937839f5654b-SYD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"asks":[{"price":0.0788,"amount":0.1392},{"price":0.079,"amount":0.01389},{"price":0.0792,"amount":0.1185},{"price":0.07949999,"amount":0.11007299},{"price":0.0795,"amount":0.14084465},{"price":0.08,"amount":0.02613756},{"price":0.0802,"amount":0.00324189},{"price":0.082,"amount":0.00777397},{"price":0.08589,"amount":0.2396982},{"price":0.095,"amount":0.05716562},{"price":0.09613999,"amount":0.55887403},{"price":0.15,"amount":0.23059273},{"price":0.1844,"amount":0.22364675},{"price":0.19,"amount":2},{"price":0.3,"amount":0.08134531}],"bids":[{"price":0.07481,"amount":0.23724448},{"price":0.0748,"amount":0.1432},{"price":0.07468,"amount":0.1305},{"price":0.07456,"amount":0.1305},{"price":0.07443,"amount":0.1302},{"price":0.07426,"amount":0.12247015},{"price":0.07402,"amount":0.1306},{"price":0.07384,"amount":0.1308},{"price":0.07364,"amount":0.1298},{"price":0.07336,"amount":0.1308},{"price":0.07311,"amount":0.1307},{"price":0.07282,"amount":0.1306},{"price":0.07223,"amount":0.1325},{"price":0.0722,"amount":0.1325},{"price":0.07014,"amount":1.3313},{"price":0.066,"amount":0.37135727},{"price":0.062,"amount":0.25},{"price":0.055,"amount":1.69822246},{"price":0.05,"amount":5},{"price":0.04,"amount":1.19530625},{"price":0.008,"amount":1}]}'
+    http_version: 
+  recorded_at: Wed, 30 May 2018 13:34:04 GMT
+recorded_with: VCR 4.0.0
