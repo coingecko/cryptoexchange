@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.oasisdex.com/v1/pairs/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.oasisdex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 23 May 2018 17:02:40 GMT
+      Content-Length:
+      - '1780'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"data":{"1ST/ETH":{"base":"1ST","quote":"ETH","basePrecision":"18","quotePrecision":"18","active":true},"BAT/ETH":{"base":"BAT","quote":"ETH","basePrecision":"18","quotePrecision":"18","active":true},"DGD/ETH":{"base":"DGD","quote":"ETH","basePrecision":"9","quotePrecision":"18","active":true},"ETH/DAI":{"base":"ETH","quote":"DAI","basePrecision":"18","quotePrecision":"18","active":true},"GNT/ETH":{"base":"GNT","quote":"ETH","basePrecision":"18","quotePrecision":"18","active":true},"GUP/ETH":{"base":"GUP","quote":"ETH","basePrecision":"3","quotePrecision":"18","active":true},"ICN/ETH":{"base":"ICN","quote":"ETH","basePrecision":"18","quotePrecision":"18","active":true},"MKR/DAI":{"base":"MKR","quote":"DAI","basePrecision":"18","quotePrecision":"18","active":true},"MKR/ETH":{"base":"MKR","quote":"ETH","basePrecision":"18","quotePrecision":"18","active":true},"MLN/ETH":{"base":"MLN","quote":"ETH","basePrecision":"18","quotePrecision":"18","active":true},"NMR/ETH":{"base":"NMR","quote":"ETH","basePrecision":"18","quotePrecision":"18","active":true},"PLU/ETH":{"base":"PLU","quote":"ETH","basePrecision":"18","quotePrecision":"18","active":true},"REP/ETH":{"base":"REP","quote":"ETH","basePrecision":"18","quotePrecision":"18","active":true},"RHOC/ETH":{"base":"RHOC","quote":"ETH","basePrecision":"8","quotePrecision":"18","active":true},"SAI/DAI":{"base":"SAI","quote":"DAI","basePrecision":"18","quotePrecision":"18","active":true},"SNGLS/ETH":{"base":"SNGLS","quote":"ETH","basePrecision":"0","quotePrecision":"18","active":true},"TIME/ETH":{"base":"TIME","quote":"ETH","basePrecision":"8","quotePrecision":"18","active":true},"VSL/ETH":{"base":"VSL","quote":"ETH","basePrecision":"18","quotePrecision":"18","active":true}},"time":1527094960,"message":"success"}
+
+'
+    http_version: 
+  recorded_at: Wed, 23 May 2018 17:02:40 GMT
+recorded_with: VCR 4.0.0

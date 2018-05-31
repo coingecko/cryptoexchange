@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.oasisdex.com/v1/markets/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.oasisdex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 23 May 2018 17:12:12 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"1ST/ETH":{"pair":"1ST/ETH","price":"null","last":"null","vol":"0","ask":"null","bid":"null","low":"null","high":"null","active":true},"BAT/ETH":{"pair":"BAT/ETH","price":"null","last":"null","vol":"0","ask":"null","bid":"0.00000010","low":"null","high":"null","active":true},"DGD/ETH":{"pair":"DGD/ETH","price":"null","last":"null","vol":"0","ask":"null","bid":"0.18574000","low":"null","high":"null","active":true},"ETH/DAI":{"pair":"ETH/DAI","price":"630.79132815","last":"583.13363943","vol":"996.06219201","ask":"596.00000000","bid":"579.88619550","low":"569.41920000","high":"682.98996000","active":true},"GNT/ETH":{"pair":"GNT/ETH","price":"null","last":"null","vol":"0","ask":"null","bid":"null","low":"null","high":"null","active":true},"GUP/ETH":{"pair":"GUP/ETH","price":"null","last":"null","vol":"0","ask":"null","bid":"null","low":"null","high":"null","active":true},"ICN/ETH":{"pair":"ICN/ETH","price":"null","last":"null","vol":"0","ask":"null","bid":"0.00000010","low":"null","high":"null","active":true},"MKR/DAI":{"pair":"MKR/DAI","price":"840.74096981","last":"712.74520648","vol":"48.95781157","ask":"789.42733275","bid":"736.41131265","low":"712.74520648","high":"919.08442587","active":true},"MKR/ETH":{"pair":"MKR/ETH","price":"1.31254717","last":"1.31799000","vol":"167.50810024","ask":"1.31799000","bid":"1.28702399","low":"1.27200000","high":"1.31799000","active":true},"MLN/ETH":{"pair":"MLN/ETH","price":"null","last":"null","vol":"0","ask":"null","bid":"null","low":"null","high":"null","active":true},"NMR/ETH":{"pair":"NMR/ETH","price":"null","last":"null","vol":"0","ask":"null","bid":"null","low":"null","high":"null","active":true},"PLU/ETH":{"pair":"PLU/ETH","price":"null","last":"null","vol":"0","ask":"null","bid":"null","low":"null","high":"null","active":true},"REP/ETH":{"pair":"REP/ETH","price":"null","last":"null","vol":"0","ask":"0.75000000","bid":"null","low":"null","high":"null","active":true},"RHOC/ETH":{"pair":"RHOC/ETH","price":"null","last":"null","vol":"0","ask":"0.10000000","bid":"null","low":"null","high":"null","active":true},"SAI/DAI":{"pair":"SAI/DAI","price":"null","last":"null","vol":"0","ask":"null","bid":"null","low":"null","high":"null","active":true},"SNGLS/ETH":{"pair":"SNGLS/ETH","price":"null","last":"null","vol":"0","ask":"null","bid":"null","low":"null","high":"null","active":true},"TIME/ETH":{"pair":"TIME/ETH","price":"null","last":"null","vol":"0","ask":"null","bid":"null","low":"null","high":"null","active":true},"VSL/ETH":{"pair":"VSL/ETH","price":"null","last":"null","vol":"0","ask":"null","bid":"null","low":"null","high":"null","active":true}},"time":1527095529,"message":"success"}
+
+'
+    http_version: 
+  recorded_at: Wed, 23 May 2018 17:12:12 GMT
+recorded_with: VCR 4.0.0

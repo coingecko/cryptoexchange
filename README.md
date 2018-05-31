@@ -149,6 +149,7 @@ Or install it yourself as:
 | NLexch            | Y       |            |         |         | Y           |
 | Novadex           | Y       | N          | N       |         | Y           |
 | Nova Exchange     | Y       |            |         |         | Y           |
+| OasisDEX          | Y       |            |         |         | Y           |
 | OKCoin            | Y       |            |         |         | User-Defined|
 | OKEx              | Y       | Y          | Y       |         | Y           |
 | Ooobtc            | Y       | Y          | Y       |         | Y           |
