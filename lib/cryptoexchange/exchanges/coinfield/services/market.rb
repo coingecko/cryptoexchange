@@ -20,7 +20,6 @@ module Cryptoexchange::Exchanges
         def adapt_all(output)
           output.map do |pair, ticker|
             separator = /(cad|usd|btc)\z/ =~ pair
-
             next if separator.nil?
 
             base    = pair[0..separator -1]
