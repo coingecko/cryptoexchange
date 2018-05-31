@@ -121,6 +121,7 @@ Or install it yourself as:
 | Idex              | Y      | Unstable   | Y        |         | Y            |
 | InfinityCoin      | Y      |            |          |         | Y            |
 | Itbit             | Y      | Y          | Y        |         | User-Defined |
+| Jex               | Y      | N          | N        |         | Y            |
 | Jubi              | Y      |            |          |         | Y            |
 | KKex              | Y      | Y          | Y        |         | Y            |
 | Kkcoin            | Y      | Y          | Y        |         | Y            |
