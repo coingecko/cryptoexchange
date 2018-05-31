@@ -18,19 +18,32 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          market_pairs = []
-          output.map do |pair, ticker|
-            separator = /( CALL | PUT |ETF)/ =~ pair
-            unless !separator.nil?
-              base, target = pair.split('/')
-              market_pair = Cryptoexchange::Models::MarketPair.new(
-                base: base.upcase,
-                target: target.upcase,
-                market: Jex::Market::NAME
-              )
-
-              adapt(ticker, market_pair)
+          market_pairs = {}
+          output.each do |pair|
+            if !derivative(pair[0])
+            market_pairs[pair[0]] = pair[1]
             end
+          end
+          market_pairs.map do |pair, ticker|
+            base, target = pair.split('/')
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+              base: base.upcase,
+              target: target.upcase,
+              market: Jex::Market::NAME
+            )
+            adapt(ticker, market_pair)
+          end
+        end
+
+        def derivative(pair)
+          etf = /(ETF)/ =~ pair
+          option = /( PUT | CALL)/ =~ pair
+          if etf && !pair.include?("/")
+            true  
+          elsif option && pair.count("/") > 1
+            true
+          else
+            false
           end
         end
 

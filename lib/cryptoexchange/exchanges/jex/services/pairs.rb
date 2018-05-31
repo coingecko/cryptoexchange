@@ -12,8 +12,7 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           market_pairs = []
           output.map do |pair, ticker|
-            separator = /(CALL|PUT|ETF)/ =~ pair
-            unless !separator.nil?
+            if !derivative(pair)
               base, target = pair.split('/')
               market_pairs << Cryptoexchange::Models::MarketPair.new(
                 base: base.upcase,
@@ -24,6 +23,19 @@ module Cryptoexchange::Exchanges
           end
           market_pairs
         end
+
+        def derivative(pair)
+          etf = /(ETF)/ =~ pair
+          option = /( PUT | CALL)/ =~ pair
+          if etf && !pair.include?("/")
+            true  
+          elsif option && pair.count("/") > 1
+            true
+          else
+            false
+          end
+        end
+
       end
     end
   end
