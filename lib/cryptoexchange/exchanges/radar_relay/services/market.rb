@@ -35,6 +35,7 @@ module Cryptoexchange::Exchanges
         private
 
         def value_divisor(amount)
+          return if amount.zero?
           # For radar_relay, price denominated in different format
           1.0/amount
         end
