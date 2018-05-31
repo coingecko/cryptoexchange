@@ -20,7 +20,7 @@ module Cryptoexchange::Exchanges
                               market: Exmo::Market::NAME
                             )
           end
-          end
+          
           market_pairs
         end
       end
