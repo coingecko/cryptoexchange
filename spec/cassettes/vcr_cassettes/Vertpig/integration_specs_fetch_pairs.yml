@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.vertpig.com/api/v1.1/public/getmarketsummaries
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.vertpig.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 28 May 2018 07:47:25 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=b23f83e2ab72af81487b9337f923cb0e; path=/; secure; HttpOnly
+      - __cfduid=d1ac609e44f65e1f6dbe9b4d339b679c61527493644; expires=Tue, 28-May-19
+        07:47:24 GMT; path=/; domain=.vertpig.com; HttpOnly; Secure
+      - heroku-session-affinity=ACyDaANoA24IAdhkunv///8HYgAHiE1iAAbv62EBbAAAAAFtAAAABXdlYi4xastZLhnBSkjQv/U+PaeOzKZOGT+w;
+        Version=1; Expires=Tue, 29-May-2018 07:47:25 GMT; Max-Age=86400; Domain=www.vertpig.com;
+        Path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Via:
+      - 1.1 vegur
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 421f1ceead1b3427-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"message":"","result":[{"MarketName":"VTCEUR","MarketPairing":"EUR","MarketPairingName":"Euro","Bid":"1.52","Ask":"1.54","Last":"1.52","Volume":"99.00000000","VTC_Volume":"99.00000000","Paired_Volume":"151.03","EUR_Volume":"151.03","High24hr":"1.53","Low24hr":"1.52"},{"MarketName":"VTCBTC","MarketPairing":"BTC","MarketPairingName":"Bitcoin","Bid":"0.00023083","Ask":"0.00023188","Last":"0.00023138","Volume":"757.67050645","VTC_Volume":"757.67050645","Paired_Volume":"0.17854553","BTC_Volume":"0.17854553","High24hr":"0.00024047","Low24hr":"0.00023000"},{"MarketName":"VTCLTC","MarketPairing":"LTC","MarketPairingName":"Litecoin","Bid":"0.01447610","Ask":"0.01451136","Last":"0.01412043","Volume":"1012.06828231","VTC_Volume":"1012.06828231","Paired_Volume":"14.42176414","LTC_Volume":"14.42176414","High24hr":"0.01504743","Low24hr":"0.01400000"}]}'
+    http_version: 
+  recorded_at: Mon, 28 May 2018 07:47:25 GMT
+recorded_with: VCR 4.0.0

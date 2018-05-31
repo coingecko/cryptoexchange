@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.vertpig.com/api/v1.1/public/getorderbook?market=VTCEUR
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.vertpig.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 28 May 2018 07:47:28 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=1a71e3eb62bc0764a2deba52857fe09f; path=/; secure; HttpOnly
+      - __cfduid=d46116e832a82388efd60f7182267552a1527493647; expires=Tue, 28-May-19
+        07:47:27 GMT; path=/; domain=.vertpig.com; HttpOnly; Secure
+      - heroku-session-affinity=ACyDaANoA24IARTb94P///8HYgAHiFBiAAB+z2EBbAAAAAFtAAAABXdlYi4xamzw+onb0kKmpNGqI4Ox4LDEhRzb;
+        Version=1; Expires=Tue, 29-May-2018 07:47:28 GMT; Max-Age=86400; Domain=www.vertpig.com;
+        Path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Via:
+      - 1.1 vegur
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 421f1cff781784a2-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"message":"","result":{"buy":[{"Quantity":"5.20000000","Rate":"1.52"},{"Quantity":"2.77777778","Rate":"1.51"},{"Quantity":"73.80000000","Rate":"1.50"},{"Quantity":"2.82258065","Rate":"1.49"},{"Quantity":"2.84552846","Rate":"1.48"},{"Quantity":"40.00000000","Rate":"1.47"},{"Quantity":"2.86885246","Rate":"1.46"},{"Quantity":"17.89256198","Rate":"1.45"},{"Quantity":"11.03330283","Rate":"1.44"},{"Quantity":"2.94117647","Rate":"1.43"},{"Quantity":"2.96610169","Rate":"1.42"},{"Quantity":"26.22002442","Rate":"1.40"},{"Quantity":"3.01724138","Rate":"1.39"},{"Quantity":"3.04347826","Rate":"1.38"},{"Quantity":"3.07017544","Rate":"1.37"},{"Quantity":"3.09734513","Rate":"1.36"},{"Quantity":"7.29134340","Rate":"1.35"},{"Quantity":"3.12500000","Rate":"1.34"},{"Quantity":"3.15315315","Rate":"1.33"},{"Quantity":"3.18181818","Rate":"1.32"},{"Quantity":"3.21100917","Rate":"1.31"},{"Quantity":"26.72897196","Rate":"1.30"},{"Quantity":"3.27102804","Rate":"1.28"},{"Quantity":"10.00000000","Rate":"1.27"},{"Quantity":"3.33333333","Rate":"1.26"},{"Quantity":"23.36538462","Rate":"1.25"},{"Quantity":"3.39805825","Rate":"1.24"},{"Quantity":"3.43137255","Rate":"1.22"},{"Quantity":"3.46534653","Rate":"1.21"},{"Quantity":"23.50000000","Rate":"1.20"},{"Quantity":"3.53535354","Rate":"1.19"},{"Quantity":"3.57142857","Rate":"1.18"},{"Quantity":"3.60824742","Rate":"1.16"},{"Quantity":"23.64583333","Rate":"1.15"},{"Quantity":"12.98245614","Rate":"1.14"},{"Quantity":"3.72340426","Rate":"1.13"},{"Quantity":"13.76344086","Rate":"1.12"},{"Quantity":"41.80434783","Rate":"1.10"},{"Quantity":"3.84615385","Rate":"1.09"},{"Quantity":"13.88888889","Rate":"1.08"},{"Quantity":"3.93258427","Rate":"1.07"},{"Quantity":"13.97727273","Rate":"1.06"},{"Quantity":"14.02298851","Rate":"1.04"},{"Quantity":"4.06976744","Rate":"1.03"},{"Quantity":"14.11764706","Rate":"1.02"},{"Quantity":"4.16666667","Rate":"1.01"},{"Quantity":"93.21686747","Rate":"1.00"},{"Quantity":"4.26829268","Rate":"0.98"},{"Quantity":"4.32098765","Rate":"0.97"},{"Quantity":"4.37500000","Rate":"0.96"},{"Quantity":"4.43037975","Rate":"0.95"},{"Quantity":"4.48717949","Rate":"0.94"},{"Quantity":"4.54545455","Rate":"0.92"},{"Quantity":"4.60526316","Rate":"0.91"},{"Quantity":"4.66666667","Rate":"0.90"},{"Quantity":"4.72972973","Rate":"0.89"},{"Quantity":"4.79452055","Rate":"0.88"},{"Quantity":"4.86111111","Rate":"0.86"},{"Quantity":"4.92957746","Rate":"0.85"},{"Quantity":"5.00000000","Rate":"0.84"},{"Quantity":"5.07246377","Rate":"0.83"},{"Quantity":"5.14705882","Rate":"0.82"},{"Quantity":"5.22388060","Rate":"0.80"},{"Quantity":"5.30303030","Rate":"0.79"},{"Quantity":"5.38461538","Rate":"0.78"},{"Quantity":"5.46875000","Rate":"0.77"},{"Quantity":"5.55555556","Rate":"0.76"},{"Quantity":"5.64516129","Rate":"0.74"},{"Quantity":"5.73770492","Rate":"0.73"},{"Quantity":"5.83333333","Rate":"0.72"},{"Quantity":"5.93220339","Rate":"0.71"},{"Quantity":"6.03448276","Rate":"0.70"},{"Quantity":"6.14035088","Rate":"0.68"},{"Quantity":"6.25000000","Rate":"0.67"},{"Quantity":"6.36363636","Rate":"0.66"},{"Quantity":"6.48148148","Rate":"0.65"},{"Quantity":"6.60377358","Rate":"0.64"},{"Quantity":"6.73076923","Rate":"0.62"},{"Quantity":"6.86274510","Rate":"0.61"},{"Quantity":"7.00000000","Rate":"0.60"},{"Quantity":"7.14285714","Rate":"0.59"},{"Quantity":"7.29166667","Rate":"0.58"},{"Quantity":"7.44680851","Rate":"0.56"},{"Quantity":"7.60869565","Rate":"0.55"},{"Quantity":"7.77777778","Rate":"0.54"},{"Quantity":"7.95454545","Rate":"0.53"},{"Quantity":"8.13953488","Rate":"0.52"},{"Quantity":"8.33333333","Rate":"0.50"},{"Quantity":"8.53658537","Rate":"0.49"},{"Quantity":"8.75000000","Rate":"0.48"},{"Quantity":"8.97435897","Rate":"0.47"},{"Quantity":"9.21052632","Rate":"0.46"},{"Quantity":"9.45945946","Rate":"0.44"},{"Quantity":"9.72222222","Rate":"0.43"},{"Quantity":"10.00000000","Rate":"0.42"},{"Quantity":"10.29411765","Rate":"0.41"},{"Quantity":"10.60606061","Rate":"0.40"},{"Quantity":"10.93750000","Rate":"0.38"},{"Quantity":"11.29032258","Rate":"0.37"},{"Quantity":"11.66666667","Rate":"0.36"},{"Quantity":"12.06896552","Rate":"0.35"},{"Quantity":"12.50000000","Rate":"0.34"},{"Quantity":"12.96296296","Rate":"0.32"},{"Quantity":"13.46153846","Rate":"0.31"},{"Quantity":"14.00000000","Rate":"0.30"},{"Quantity":"14.58333333","Rate":"0.29"},{"Quantity":"15.21739130","Rate":"0.28"},{"Quantity":"15.90909091","Rate":"0.26"},{"Quantity":"16.66666667","Rate":"0.25"},{"Quantity":"17.50000000","Rate":"0.24"},{"Quantity":"18.42105263","Rate":"0.23"},{"Quantity":"19.44444444","Rate":"0.22"},{"Quantity":"20.58823529","Rate":"0.20"},{"Quantity":"21.87500000","Rate":"0.19"},{"Quantity":"23.33333333","Rate":"0.18"},{"Quantity":"25.00000000","Rate":"0.17"},{"Quantity":"26.92307692","Rate":"0.16"},{"Quantity":"29.16666667","Rate":"0.14"},{"Quantity":"31.81818182","Rate":"0.13"},{"Quantity":"35.00000000","Rate":"0.12"},{"Quantity":"38.88888889","Rate":"0.11"},{"Quantity":"43.75000000","Rate":"0.10"},{"Quantity":"50.00000000","Rate":"0.08"},{"Quantity":"58.33333333","Rate":"0.07"},{"Quantity":"70.00000000","Rate":"0.06"},{"Quantity":"87.50000000","Rate":"0.05"},{"Quantity":"116.66666667","Rate":"0.04"},{"Quantity":"175.00000000","Rate":"0.02"}],"sell":[{"Quantity":"3.69888054","Rate":"1.54"},{"Quantity":"4.71317829","Rate":"1.55"},{"Quantity":"23.69230769","Rate":"1.56"},{"Quantity":"2.67175573","Rate":"1.57"},{"Quantity":"23.65151515","Rate":"1.58"},{"Quantity":"21.63157895","Rate":"1.60"},{"Quantity":"5.61194030","Rate":"1.61"},{"Quantity":"23.59259259","Rate":"1.62"},{"Quantity":"2.57352941","Rate":"1.63"},{"Quantity":"23.55474453","Rate":"1.64"},{"Quantity":"23.53623188","Rate":"1.66"},{"Quantity":"2.51798561","Rate":"1.67"},{"Quantity":"23.50000000","Rate":"1.68"},{"Quantity":"2.48226950","Rate":"1.69"},{"Quantity":"23.46478873","Rate":"1.70"},{"Quantity":"13.87778501","Rate":"1.72"},{"Quantity":"2.43055556","Rate":"1.73"},{"Quantity":"23.41379310","Rate":"1.74"},{"Quantity":"2.39726027","Rate":"1.75"},{"Quantity":"23.38095238","Rate":"1.76"},{"Quantity":"23.36486486","Rate":"1.78"},{"Quantity":"2.34899329","Rate":"1.79"},{"Quantity":"23.33333333","Rate":"1.80"},{"Quantity":"2.31788079","Rate":"1.81"},{"Quantity":"23.30263158","Rate":"1.82"},{"Quantity":"23.28758170","Rate":"1.84"},{"Quantity":"2.27272727","Rate":"1.85"},{"Quantity":"23.25806452","Rate":"1.86"},{"Quantity":"2.24358974","Rate":"1.87"},{"Quantity":"23.22929936","Rate":"1.88"},{"Quantity":"23.21518987","Rate":"1.90"},{"Quantity":"2.20125786","Rate":"1.91"},{"Quantity":"2.18750000","Rate":"1.92"},{"Quantity":"2.17391304","Rate":"1.93"},{"Quantity":"2.16049383","Rate":"1.94"},{"Quantity":"2.14723926","Rate":"1.96"},{"Quantity":"2.13414634","Rate":"1.97"},{"Quantity":"2.12121212","Rate":"1.98"},{"Quantity":"2.10843373","Rate":"1.99"},{"Quantity":"2.09580838","Rate":"2.00"},{"Quantity":"2.08333333","Rate":"2.02"},{"Quantity":"2.07100592","Rate":"2.03"},{"Quantity":"2.05882353","Rate":"2.04"},{"Quantity":"2.04678363","Rate":"2.05"},{"Quantity":"2.03488372","Rate":"2.06"},{"Quantity":"2.02312139","Rate":"2.08"},{"Quantity":"2.01149425","Rate":"2.09"},{"Quantity":"2.00000000","Rate":"2.10"},{"Quantity":"1.98863636","Rate":"2.11"},{"Quantity":"1.97740113","Rate":"2.12"},{"Quantity":"1.96629213","Rate":"2.14"},{"Quantity":"1.95530726","Rate":"2.15"},{"Quantity":"1.94444444","Rate":"2.16"},{"Quantity":"1.93370166","Rate":"2.17"},{"Quantity":"1.92307692","Rate":"2.18"},{"Quantity":"1.91256831","Rate":"2.20"},{"Quantity":"1.90217391","Rate":"2.21"},{"Quantity":"1.89189189","Rate":"2.22"},{"Quantity":"1.88172043","Rate":"2.23"},{"Quantity":"1.87165775","Rate":"2.24"},{"Quantity":"1.86170213","Rate":"2.26"},{"Quantity":"1.85185185","Rate":"2.27"},{"Quantity":"1.84210526","Rate":"2.28"},{"Quantity":"1.83246073","Rate":"2.29"},{"Quantity":"11.82291667","Rate":"2.30"},{"Quantity":"1.81347150","Rate":"2.32"},{"Quantity":"1.80412371","Rate":"2.33"},{"Quantity":"1.79487179","Rate":"2.34"},{"Quantity":"1.78571429","Rate":"2.35"},{"Quantity":"1.77664975","Rate":"2.36"},{"Quantity":"1.76767677","Rate":"2.38"},{"Quantity":"1.75879397","Rate":"2.39"},{"Quantity":"1.75000000","Rate":"2.40"},{"Quantity":"1.74129353","Rate":"2.41"},{"Quantity":"1.73267327","Rate":"2.42"},{"Quantity":"1.72413793","Rate":"2.44"},{"Quantity":"1.71568627","Rate":"2.45"},{"Quantity":"1.70731707","Rate":"2.46"},{"Quantity":"1.69902913","Rate":"2.47"},{"Quantity":"1.69082126","Rate":"2.48"},{"Quantity":"11.68269231","Rate":"2.50"},{"Quantity":"1.67464115","Rate":"2.51"},{"Quantity":"1.66666667","Rate":"2.52"},{"Quantity":"1.65876777","Rate":"2.53"},{"Quantity":"1.65094340","Rate":"2.54"},{"Quantity":"1.64319249","Rate":"2.56"},{"Quantity":"1.63551402","Rate":"2.57"},{"Quantity":"1.62790698","Rate":"2.58"},{"Quantity":"1.62037037","Rate":"2.59"},{"Quantity":"1.61290323","Rate":"2.60"},{"Quantity":"1.60550459","Rate":"2.62"},{"Quantity":"1.59817352","Rate":"2.63"},{"Quantity":"1.59090909","Rate":"2.64"},{"Quantity":"1.58371041","Rate":"2.65"},{"Quantity":"1.57657658","Rate":"2.66"},{"Quantity":"1.56950673","Rate":"2.68"},{"Quantity":"1.56250000","Rate":"2.69"},{"Quantity":"1.55555556","Rate":"2.70"},{"Quantity":"10.00000000","Rate":"3.00"},{"Quantity":"129.95047587","Rate":"4.70"},{"Quantity":"49.98000000","Rate":"4.80"},{"Quantity":"20.00000000","Rate":"5.00"}]}}'
+    http_version: 
+  recorded_at: Mon, 28 May 2018 07:47:28 GMT
+recorded_with: VCR 4.0.0
