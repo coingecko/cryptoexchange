@@ -15,10 +15,11 @@ module Cryptoexchange::Exchanges
           pairs.each do |pair|
             base, target = pair.split('_')
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-              base: base,
-              target: target,
-              market: Exmo::Market::NAME
-            )
+                              base: base,
+                              target: target,
+                              market: Exmo::Market::NAME
+                            )
+          end
           end
           market_pairs
         end
