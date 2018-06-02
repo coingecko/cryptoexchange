@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://platform.coinfield.com/api/v2//markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - platform.coinfield.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 29 May 2018 16:52:37 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d4004e8f215fa4d1dc100470f4b5404641527612757; expires=Wed, 29-May-19
+        16:52:37 GMT; path=/; domain=.coinfield.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Version:
+      - HTTP/1.1
+      Host:
+      - platform.coinfield.com
+      X-Real-Ip:
+      - 73.97.148.141
+      X-Forwarded-For:
+      - 73.97.148.141
+      X-Forwarded-Host:
+      - platform.coinfield.com
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Original-Uri:
+      - "/api/v2//markets"
+      X-Scheme:
+      - https
+      X-Original-Forwarded-For:
+      - 73.97.148.141
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - US
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 73.97.148.141
+      Etag:
+      - W/"0bfc98bb22ef88ab4b912bb13a35c920"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dbec4ca6-8fbc-4f06-a9e2-ba4d5c256482
+      X-Runtime:
+      - '0.056467'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 422a78f3feab2a85-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"btccad","name":"BTC/CAD"},{"id":"xrpcad","name":"XRP/CAD"},{"id":"bchcad","name":"BCH/CAD"},{"id":"ltccad","name":"LTC/CAD"},{"id":"ethcad","name":"ETH/CAD"},{"id":"dashcad","name":"DASH/CAD"},{"id":"ethbtc","name":"ETH/BTC"},{"id":"xrpbtc","name":"XRP/BTC"},{"id":"ltcbtc","name":"LTC/BTC"},{"id":"dashbtc","name":"DASH/BTC"},{"id":"bchbtc","name":"BCH/BTC"},{"id":"btcusd","name":"BTC/USD"},{"id":"xrpusd","name":"XRP/USD"}]'
+    http_version: 
+  recorded_at: Tue, 29 May 2018 16:52:37 GMT
+recorded_with: VCR 4.0.0

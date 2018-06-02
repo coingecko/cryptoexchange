@@ -74,6 +74,7 @@ Or install it yourself as:
 | Coincheck         | Y       |            |         |         | User-Defined|
 | Coinex            | Y       | Y          | Y       |         | Y           |
 | Coinfalcon        | Y       | Y          | Y       |         | Y           |
+| Coinfield         | Y       | N          | N       |         | Y           |
 | Coingi            | Y       | Y          | Y       |         | Y           |
 | CoinExchange      | Y       |            |         |         | Y           |
 | Coinbene          | Y       | Y          | Y       |         | Y           |
@@ -195,19 +196,22 @@ Or install it yourself as:
 ## Usage
 
 ### List market pairs supported by an exchange
+
 ```
   client = Cryptoexchange::Client.new
   pairs = client.pairs('bitflyer')
 ```
 
 ### List exchange services for certain currency
+
 ```
   client.exchange_for('btc')
 
-  # ['anx', 'bianance', ...]
+  # ['anx', 'binance', ...]
 ```
 
 ### Query the Ticker API
+
 ```
   pair = client.pairs('bitflyer').first
   ticker = client.ticker(pair)
@@ -217,6 +221,7 @@ Or install it yourself as:
 ```
 
 ### Query the OrderBook API
+
 ```
   # Check if exchange has support for OrderBook
   pair = client.pairs('bitflyer').first
@@ -228,6 +233,7 @@ Or install it yourself as:
 ```
 
 ### Query the Trades API
+
 ```
   # Check if exchange has support for Trades
   # returns array
@@ -241,6 +247,7 @@ Or install it yourself as:
 ```
 
 ### Market List
+
 Some exchange API do not support market pair listings. For those exchanges, we included
 a custom YML file to define the list of market pairs supported by that exchange.
 That configuration works out of the box, however if that exchange adds new market pairs,
@@ -251,6 +258,7 @@ In the table above, look for the `User-Defined` under the Market List column.
 
 The format of the yaml file should look like below.
 Name the file <exchange_name>.yml and place it under the config/cryptoexchange directory.
+
 ```
   :pairs:
     - :base: BTC
