@@ -103,6 +103,7 @@ Or install it yourself as:
 | EtherDelta        | Y       |            |         |         | Y           |
 | Ethfinex          | Y       | Y          | Y       |         | Y           |
 | Exmo              | Y       | Y          | Y       |         | Y           |
+| Exrates           | Y       | N          | N       |         | Y           |
 | Extstock          | Y       | Y          | Y       |         | Y           |
 | Exx               | Y       | Y          | Y       |         | Y           |
 | F1cx              | Y       | Y          | Y       |         | Y           |
