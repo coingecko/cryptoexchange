@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.jex.com/api/v2/pub/jexcap
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.jex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 30 May 2018 20:02:13 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dec791b1b5813d1bb3e56eb20bb72e0591527710533; expires=Thu, 30-May-19
+        20:02:13 GMT; path=/; domain=.jex.com; HttpOnly
+      - aliyungf_tc=AQAAAN5tzVFGsAwApGqeohFofiPWfpxi; Path=/; HttpOnly
+      - jex_session_id=30462a87-5b2b-4fdf-9a31-e4eff53c70f0kRtL; Domain=.jex.com;
+        Path=/; Secure; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4233cc0fe85f79a3-SEA
+    body:
+      encoding: UTF-8
+      string: '{"ltc/btc":{"id":6,"last":"0.01578300","lowestAsk":"0.01582200","highestBid":"0.01574800","percentChange":"0.0045000000","baseVolume":"65229.50510000","quoteVolume":"1038.28591771","isFrozen":"0","high24hr":"0.01615600","low24hr":"0.01555700"},"jex/btc":{"id":14,"last":"0.00000364","lowestAsk":"0.00000365","highestBid":"0.00000361","percentChange":"0.0282000000","baseVolume":"19412379.00000000","quoteVolume":"68.90335608","isFrozen":"0","high24hr":"0.00000371","low24hr":"0.00000338"},"eos/usdt":{"id":69,"last":"11.77880000","lowestAsk":"11.77880000","highestBid":"11.77770000","percentChange":"-0.0042000000","baseVolume":"12439265.91003640","quoteVolume":"151151989.14861401","isFrozen":"0","high24hr":"12.56660000","low24hr":"11.70000000"},"eos/btc":{"id":68,"last":"0.00161067","lowestAsk":"0.00161101","highestBid":"0.00161034","percentChange":"0.0113000000","baseVolume":"1939015.25582503","quoteVolume":"3160.86242566","isFrozen":"0","high24hr":"0.00166439","low24hr":"0.00160000"},"ETH/USDT
+        591.05 PUT 2018/05/31":{"id":192,"last":"0.44940000","lowestAsk":"0.45300000","highestBid":"0.44380000","percentChange":"-0.0428000000","baseVolume":"2443042.00000000","quoteVolume":"941425.23690000","isFrozen":"0","high24hr":"0.51120000","low24hr":"0.27800000"},"币安ETF":{"id":24,"last":"0.00018837","lowestAsk":"0.00018876","highestBid":"0.00018804","percentChange":"0.0015000000","baseVolume":"10924743.00000000","quoteVolume":"2074.37463136","isFrozen":"0","high24hr":"0.00019432","low24hr":"0.00018737"},"HT/USDT
+        3.83 CALL 2018/06/01":{"id":194,"last":"0.14730000","lowestAsk":"0.14880000","highestBid":"0.14570000","percentChange":"-0.0502000000","baseVolume":"4760887.00000000","quoteVolume":"1033206.45350000","isFrozen":"0","high24hr":"0.28850000","low24hr":"0.13370000"},"BNB/USDT
+        12.78 PUT 2018/06/01":{"id":200,"last":"0.40350000","lowestAsk":"0.40670000","highestBid":"0.39480000","percentChange":"-0.0906000000","baseVolume":"5049494.00000000","quoteVolume":"2034521.94500000","isFrozen":"0","high24hr":"0.48070000","low24hr":"0.32180000"},"火币ETF":{"id":15,"last":"0.00019734","lowestAsk":"0.00019773","highestBid":"0.00019700","percentChange":"0.0000000000","baseVolume":"16580821.00000000","quoteVolume":"3293.53159408","isFrozen":"0","high24hr":"0.00020320","low24hr":"0.00019646"},"ETH/USDT
+        591.05 CALL 2018/05/31":{"id":190,"last":"0.02460000","lowestAsk":"0.02620000","highestBid":"0.02300000","percentChange":"-0.3333000000","baseVolume":"3047700.00000000","quoteVolume":"374346.06050000","isFrozen":"0","high24hr":"0.22100000","low24hr":"0.02410000"},"eth/usdt":{"id":34,"last":"556.11000000","lowestAsk":"557.08000000","highestBid":"555.23000000","percentChange":"0.0012000000","baseVolume":"6849.18900000","quoteVolume":"3928897.56755700","isFrozen":"0","high24hr":"592.02000000","low24hr":"549.71000000"},"dash/btc":{"id":78,"last":"0.04051900","lowestAsk":"0.04051900","highestBid":"0.04042300","percentChange":"-0.0223000000","baseVolume":"3753.68359883","quoteVolume":"157.08803283","isFrozen":"0","high24hr":"0.04278400","low24hr":"0.04046300"},"eth/btc":{"id":3,"last":"0.07518900","lowestAsk":"0.07536400","highestBid":"0.07503400","percentChange":"0.0034000000","baseVolume":"31232.44190000","quoteVolume":"2368.87333918","isFrozen":"0","high24hr":"0.07778900","low24hr":"0.07448400"},"DASH/USDT
+        382.08 CALL 2018/06/05":{"id":182,"last":"0.08210000","lowestAsk":"0.08300000","highestBid":"0.08110000","percentChange":"-0.2113000000","baseVolume":"4080144.00000000","quoteVolume":"525985.40820000","isFrozen":"0","high24hr":"0.16960000","low24hr":"0.08130000"},"EOS/USDT
+        11.96 CALL 2018/06/04":{"id":202,"last":"0.43980000","lowestAsk":"0.44380000","highestBid":"0.43610000","percentChange":"-0.0459000000","baseVolume":"2271660.00000000","quoteVolume":"1316533.38540000","isFrozen":"0","high24hr":"0.70170000","low24hr":"0.42990000"},"btc/usdt":{"id":27,"last":"7372.13000000","lowestAsk":"7381.34000000","highestBid":"7363.63000000","percentChange":"-0.0012000000","baseVolume":"2415.99150000","quoteVolume":"18189034.45716300","isFrozen":"0","high24hr":"7619.94000000","low24hr":"7323.66000000"},"EOS/USDT
+        11.96 PUT 2018/06/04":{"id":204,"last":"0.51730000","lowestAsk":"0.52500000","highestBid":"0.51000000","percentChange":"0.0015000000","baseVolume":"2407574.00000000","quoteVolume":"1136721.76970000","isFrozen":"0","high24hr":"0.54470000","low24hr":"0.39460000"},"dash/usdt":{"id":79,"last":"295.95000000","lowestAsk":"296.37000000","highestBid":"295.54000000","percentChange":"-0.0396000000","baseVolume":"6062.94609880","quoteVolume":"1891888.47133658","isFrozen":"0","high24hr":"321.47000000","low24hr":"295.53000000"},"BNB/USDT
+        12.78 CALL 2018/06/01":{"id":198,"last":"0.20220000","lowestAsk":"0.20810000","highestBid":"0.20220000","percentChange":"0.0135000000","baseVolume":"5249068.00000000","quoteVolume":"1491956.69910000","isFrozen":"0","high24hr":"0.36980000","low24hr":"0.18360000"},"ht/usdt":{"id":164,"last":"3.71480000","lowestAsk":"3.71520000","highestBid":"3.71130000","percentChange":"0.0011000000","baseVolume":"14882835.99597120","quoteVolume":"56449971.35516089","isFrozen":"0","high24hr":"3.93760000","low24hr":"3.65390000"},"BNB/USDT":{"id":165,"last":"12.36370000","lowestAsk":"12.39590000","highestBid":"12.33030000","percentChange":"0.0056000000","baseVolume":"149713.62000000","quoteVolume":"1875820.92605100","isFrozen":"0","high24hr":"12.79480000","low24hr":"12.18550000"},"HT/USDT
+        3.83 PUT 2018/06/01":{"id":196,"last":"0.26150000","lowestAsk":"0.26660000","highestBid":"0.25690000","percentChange":"-0.0435000000","baseVolume":"4576889.00000000","quoteVolume":"1139498.90650000","isFrozen":"0","high24hr":"0.32430000","low24hr":"0.17960000"},"DASH/USDT
+        382.08 PUT 2018/06/05":{"id":184,"last":"0.93520000","lowestAsk":"0.94640000","highestBid":"0.92310000","percentChange":"0.0701000000","baseVolume":"3931321.00000000","quoteVolume":"3265412.42690000","isFrozen":"0","high24hr":"0.93960000","low24hr":"0.77290000"}}'
+    http_version: 
+  recorded_at: Wed, 30 May 2018 20:02:13 GMT
+recorded_with: VCR 4.0.0
