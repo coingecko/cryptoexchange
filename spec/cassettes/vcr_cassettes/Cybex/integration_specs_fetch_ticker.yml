@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://beijing.51nebula.com/
+    body:
+      encoding: UTF-8
+      string: '{"jsonrpc":"2.0","method":"get_ticker","params":["JADE.USDT","JADE.BTC"],"id":1}'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Host:
+      - beijing.51nebula.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 03 Jun 2018 12:38:47 GMT
+      Content-Length:
+      - '300'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":1,"jsonrpc":"2.0","result":{"base":"JADE.USDT","quote":"JADE.BTC","latest":"7696.99671338445841684","lowest_ask":"7703.07052631578881119","highest_bid":"7700.64307692307647812","percent_change":"0.67782080933009858","base_volume":"28144.79434200005562161","quote_volume":"3.67238000000000797"}}'
+    http_version: 
+  recorded_at: Sun, 03 Jun 2018 12:38:47 GMT
+recorded_with: VCR 4.0.0
