@@ -3,9 +3,10 @@ module Cryptoexchange::Exchanges
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Idex::Market::API_URL}/returnTicker"
+        HTTP_METHOD = 'POST'
 
         def fetch
-          output = fetch_via_api_using_post
+          output = super
           pair_list = filter_nil_pair(output)
           adapt(pair_list)
         end
