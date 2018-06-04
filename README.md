@@ -96,6 +96,7 @@ Or install it yourself as:
 | Cryptex           | Y       | Y          | Y       |         | User-Defined|
 | CryptoBridge      | Y       |            |         |         | Y           |
 | CryptoHub         | Y       | N          | N       |         | Y           |
+| Cryptobulls       | Y       | N          | N       |         | Y           |
 | Cryptopia         | Y       | Y          | Y       |         | Y           |
 | Ddex              | Y       |            |         |         | Y           |
 | Dsx               | Y       | Y          | Y       |         | Y           |
