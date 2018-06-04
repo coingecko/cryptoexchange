@@ -169,6 +169,7 @@ Or install it yourself as:
 | Sigen             | Y       |            |         |         | Y           |
 | Sistemkoin        | Y       |            |         |         | Y           |
 | SouthXchange      | Y       | Y          | Y       |         | Y           |
+| Stellarport       | Y       | N          | N       |         | Y           |
 | Stocks Exchange   | Y       |            |         |         | Y           |
 | Switcheo          | Y       | N          | N       |         | Y           |
 | SZZC              | Y       |            |         |         | Y           |
