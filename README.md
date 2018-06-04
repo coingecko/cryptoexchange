@@ -157,6 +157,7 @@ Or install it yourself as:
 | OKCoin            | Y       |            |         |         | User-Defined|
 | OKEx              | Y       | Y          | Y       |         | Y           |
 | Ooobtc            | Y       | Y          | Y       |         | Y           |
+| Openledger        | Y       | Y          | Y       |         | Y           |
 | Ore Bz            | Y       | Y          | Y       |         | Y           |
 | Paribu            | Y       |            |         |         | Y           |
 | Paymium           | Y       | Y          | Y       |         | User-Defined|
