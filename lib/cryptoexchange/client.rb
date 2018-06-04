@@ -21,7 +21,10 @@ module Cryptoexchange
         market.fetch(market_pair)
       else
         tickers = market.fetch
-        tickers
+        tickers.find do |t|
+          t.base.casecmp(market_pair.base) == 0 &&
+            t.target.casecmp(market_pair.target) == 0
+        end
       end
 
       rescue NoMethodError => e
