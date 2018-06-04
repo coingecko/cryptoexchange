@@ -98,6 +98,7 @@ Or install it yourself as:
 | CryptoHub         | Y       | N          | N       |         | Y           |
 | Cryptobulls       | Y       | N          | N       |         | Y           |
 | Cryptopia         | Y       | Y          | Y       |         | Y           |
+| Cybex             | Y       | Y          | Y       |         | Y           |
 | Ddex              | Y       |            |         |         | Y           |
 | Dsx               | Y       | Y          | Y       |         | Y           |
 | Ercdex            | Y       | Y          |         |         | Y           |
