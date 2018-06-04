@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.cryptobulls.exchange/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.cryptobulls.exchange
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 04 Jun 2018 03:35:47 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-Length:
+      - '2520'
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSALB=lGCHCAvkhZ1S+W5xC24JqHhdXqnEHHgJzbrZi6XkYGN87JIvW8rCmOU711dmUZpLAOrQTjLusVbt2JwNPTnwalQtWkKm7MMLsIp+04tnPQ3gWcCidh6UpWmpGyPn;
+        Expires=Mon, 11 Jun 2018 03:35:47 GMT; Path=/
+      - ci_session=dfeg8kj9c55i0knkjb0g8er5m5afde59; expires=Mon, 04-Jun-2018 05:35:47
+        GMT; Max-Age=7200; path=/; HttpOnly
+      Server:
+      - Apache/2.4.33 (Amazon) PHP/7.0.29
+      X-Powered-By:
+      - PHP/7.0.29
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"btceth":{"price_change_24h":"3.20924262","price_change_7d":"4.14507772","last_price":"0.08040000","lowest_ask":"0.07672000","highest_bid":"0.07810000","volume":{"btc_trade":788.11683116,"fee_collected":1.57623366232}},"btcltc":{"price_change_24h":"-5.98765432","price_change_7d":"-3.48542459","last_price":"0.01523000","lowest_ask":"0.01620000","highest_bid":"0.01620000","volume":{"btc_trade":18.66399956,"fee_collected":0.03732799912}},"btcsil":{"price_change_24h":0,"price_change_7d":"0.00000000","last_price":"0.00009000","lowest_ask":"0.00009200","highest_bid":"0.00009000","volume":{"btc_trade":0.818,"fee_collected":0.001636}},"btcposya":{"price_change_24h":0,"price_change_7d":0,"last_price":"0.00008400","lowest_ask":0,"highest_bid":0,"volume":{"btc_trade":0.001008,"fee_collected":2.016e-6}},"btcmgc":{"price_change_24h":"-1.23456790","price_change_7d":"-9.60451977","last_price":"0.00000160","lowest_ask":"0.00000130","highest_bid":"0.00000162","volume":{"btc_trade":0.156087,"fee_collected":0.000312174}},"btceos":{"price_change_24h":"-1.85154639","price_change_7d":"14.01676647","last_price":"0.00190408","lowest_ask":"0.00194000","highest_bid":"0.00194000","volume":{"btc_trade":7.66860864,"fee_collected":0.01533721728}},"btcicx":{"price_change_24h":"-2.35485181","price_change_7d":"1.90677966","last_price":"0.00036075","lowest_ask":"0.00036945","highest_bid":"0.00036945","volume":{"btc_trade":1.53255,"fee_collected":0.0030651}},"btctrx":{"price_change_24h":"-1.23456790","price_change_7d":"-11.60220994","last_price":"0.00000800","lowest_ask":"0.00000810","highest_bid":"0.00000810","volume":{"btc_trade":0.149,"fee_collected":0.000298}},"btcven":{"price_change_24h":"-0.76561822","price_change_7d":"5.54039874","last_price":"0.00050290","lowest_ask":"0.00050678","highest_bid":"0.00050678","volume":{"btc_trade":10.2347088,"fee_collected":0.0204694176}},"btcomg":{"price_change_24h":"-3.95734003","price_change_7d":"10.13812950","last_price":"0.00153092","lowest_ask":"0.00159400","highest_bid":"0.00159400","volume":{"btc_trade":6.24984,"fee_collected":0.01249968}},"btczil":{"price_change_24h":"1.20554551","price_change_7d":"14.45126108","last_price":"0.00001679","lowest_ask":"0.00001659","highest_bid":"0.00001659","volume":{"btc_trade":0.46530366,"fee_collected":0.00093060732}},"btcae":{"price_change_24h":"-2.60441309","price_change_7d":"10.99754902","last_price":"0.00045287","lowest_ask":"0.00046498","highest_bid":"0.00046498","volume":{"btc_trade":10.20534,"fee_collected":0.02041068}}}'
+    http_version: 
+  recorded_at: Mon, 04 Jun 2018 03:35:47 GMT
+recorded_with: VCR 4.0.0
