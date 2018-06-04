@@ -3,8 +3,10 @@ require 'yaml'
 module Cryptoexchange
   module Services
     class Pairs
-      PAIRS_URL = nil
-      MARKET = nil
+      PAIRS_URL   = nil
+      HTTP_METHOD = 'GET'
+      POST_PARAMS = nil
+      MARKET      = nil
 
       def fetch
         # If PAIRS_URL provided, use that to fetch market pairs
@@ -17,9 +19,9 @@ module Cryptoexchange
         return fetch_via_override(default_override_path) if default_override_exist?
       end
 
-      def fetch_via_api(endpoint = self.class::PAIRS_URL)
+      def fetch_via_api(endpoint = self.class::PAIRS_URL, params = self.class::POST_PARAMS)
         begin
-          fetch_response = http_get(endpoint)
+          fetch_response = self.class::HTTP_METHOD == 'POST' ? http_post(endpoint, params) : http_get(endpoint)
           if fetch_response.code == 200
             fetch_response.parse :json
           elsif fetch_response.code == 400
@@ -36,11 +38,6 @@ module Cryptoexchange
         rescue TypeError => e
           raise Cryptoexchange::TypeFormatError, { error: e, response: fetch_response }
         end
-      end
-
-      def fetch_via_api_using_post(endpoint = self.class::PAIRS_URL)
-        fetch_response = HTTP.timeout(:write => 2, :connect => 5, :read => 8).post(endpoint)
-        JSON.parse(fetch_response.to_s)
       end
 
       def fetch_via_override(path)
@@ -69,8 +66,11 @@ module Cryptoexchange
       end
 
       def http_get(endpoint)
-        fetch_response = HTTP.timeout(:write => 2, :connect => 15, :read => 18)
-                             .follow.get(endpoint)
+        HTTP.timeout(:write => 2, :connect => 15, :read => 18).follow.get(endpoint)
+      end
+
+      def http_post(endpoint, params)
+        HTTP.timeout(:write => 2, :connect => 5, :read => 8).post(endpoint, json: params)
       end
     end
   end
