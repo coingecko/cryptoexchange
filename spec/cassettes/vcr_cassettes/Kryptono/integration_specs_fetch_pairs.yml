@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kryptono.exchange/v1/getmarketsummaries
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.kryptono.exchange
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4654'
+      Etag:
+      - W/"122e-7GhDzu13XJOsaCE+Ao+HxH+zTR0"
+      Date:
+      - Tue, 05 Jun 2018 07:08:59 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"message":"","result":[{"MarketName":"NPXS-ETH","High":0,"Low":0,"BaseVolume":0,"Last":0,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":null,"Bid":0,"Ask":0,"PrevDay":0},{"MarketName":"GTO-BTC","High":0.000038,"Low":0.0000305,"BaseVolume":45.55554717,"Last":0.0000312,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":1460113.6913461538,"Bid":"0.00003800","Ask":"0.00003000","PrevDay":0.000033},{"MarketName":"GTO-KNOW","High":2.6,"Low":1,"BaseVolume":40126842.614,"Last":1.12,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":35827538.04821428,"Bid":"2.30000000","Ask":"0.75000000","PrevDay":2},{"MarketName":"KNOW-ETH","High":0.0003971,"Low":0.000275,"BaseVolume":441.39074185,"Last":0.00035462,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":1244686.542919181,"Bid":"0.00035700","Ask":"0.00035420","PrevDay":0.000305},{"MarketName":"XPX-KNOW","High":0.2199,"Low":0.08589854,"BaseVolume":580825.33713305,"Last":0.11,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":5280230.337573182,"Bid":"0.21000000","Ask":"0.02010000","PrevDay":0.2199},{"MarketName":"ETH-USDT","High":626.55,"Low":576.81,"BaseVolume":279581.37787,"Last":578.56,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":483.23661827641047,"Bid":"702.09827188","Ask":"570.06000000","PrevDay":622},{"MarketName":"TRX-ETH","High":0.00012956,"Low":0.00009818,"BaseVolume":134.14834038,"Last":0.00011002,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":1219308.6746046175,"Bid":0.00011002,"Ask":0.00011002,"PrevDay":0.000105},{"MarketName":"GTO-ETH","High":0.00046718,"Low":0.00039489,"BaseVolume":68.82382306,"Last":0.00039856,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":172681.21000602166,"Bid":"0.00039676","Ask":"0.00039000","PrevDay":0.0004159},{"MarketName":"ETH-BTC","High":0.081,"Low":0.0756,"BaseVolume":11.02466462,"Last":0.078258,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":140.8758800378236,"Bid":"0.08100000","Ask":"0.07919000","PrevDay":0.0756},{"MarketName":"BTC-USDT","High":7895.67316556,"Low":7367.71,"BaseVolume":147960.89616845,"Last":7380.88,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":20.046511549903265,"Bid":"7412.68000000","Ask":7380.88,"PrevDay":7678.03},{"MarketName":"KNOW-USDT","High":0.3,"Low":0.159,"BaseVolume":215437.89354326,"Last":0.20502379,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":1050794.6104364765,"Bid":"0.22000000","Ask":"0.20400000","PrevDay":0.1770743},{"MarketName":"TRX-BTC","High":0.000011,"Low":0.00000759,"BaseVolume":7.19863967,"Last":0.0000091,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":791059.3043956045,"Bid":"0.00000950","Ask":"0.00000901","PrevDay":0.00000801},{"MarketName":"NPXS-KNOW","High":0,"Low":0,"BaseVolume":0,"Last":0,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":null,"Bid":0,"Ask":0,"PrevDay":0},{"MarketName":"XEM-KNOW","High":2.9871,"Low":0.82337753,"BaseVolume":505819.48576641,"Last":1.15,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":439843.0311012261,"Bid":"2.50000000","Ask":"1.15000000","PrevDay":2.9871},{"MarketName":"XPX-ETH","High":0.00004888,"Low":0.0000257,"BaseVolume":173.98943165,"Last":0.0000443,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":3927526.6738148984,"Bid":"0.00004420","Ask":"0.00004201","PrevDay":0.00004},{"MarketName":"XEM-ETH","High":0.00055,"Low":0.0004,"BaseVolume":10.69285344,"Last":0.00044989,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":23767.706417124187,"Bid":"0.00044988","Ask":"0.00044987","PrevDay":0.00053},{"MarketName":"NPXS-BTC","High":0,"Low":0,"BaseVolume":0,"Last":0,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":null,"Bid":0,"Ask":0,"PrevDay":0},{"MarketName":"TRX-KNOW","High":0.4892247,"Low":0.2484105,"BaseVolume":524838.22016134,"Last":0.31076246,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":1688872.6526406694,"Bid":"0.32450000","Ask":"0.30903815","PrevDay":0.4},{"MarketName":"XEM-BTC","High":0.0000395,"Low":0.000032,"BaseVolume":6.91342863,"Last":0.0000339,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":203935.94778761064,"Bid":"0.00003696","Ask":"0.00003270","PrevDay":0.00003366},{"MarketName":"XPX-BTC","High":0.00000419,"Low":0.00000232,"BaseVolume":5.63281811,"Last":0.00000349,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":1613987.9971346704,"Bid":"0.00000351","Ask":"0.00000331","PrevDay":0.0000036},{"MarketName":"KNOW-BTC","High":0.0000397,"Low":0.00002033,"BaseVolume":19.86936023,"Last":0.00002801,"TimeStamp":"2018-06-05T05:00:00.000Z","Volume":709366.662977508,"Bid":"0.00002807","Ask":"0.00002800","PrevDay":0.00002301}],"volumes":[{"CoinName":"ETH","Volume":829.04519038},{"CoinName":"BTC","Volume":96.19445843},{"CoinName":"KNOW","Volume":41738325.6570608},{"CoinName":"USDT","Volume":642980.16758171}]}'
+    http_version: 
+  recorded_at: Tue, 05 Jun 2018 07:08:59 GMT
+recorded_with: VCR 4.0.0

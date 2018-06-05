@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Kryptono integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:eos_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'KNOW', market: 'kryptono') }
+  let(:know_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'KNOW', target: 'BTC', market: 'kryptono') }
 
   it 'fetch pairs' do
     pairs = client.pairs('kryptono')
@@ -15,14 +15,16 @@ RSpec.describe 'Kryptono integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(eos_btc_pair)
+    ticker = client.ticker(know_btc_pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'KNOW'
+    expect(ticker.base).to eq 'KNOW'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'kryptono'
     expect(ticker.last).to be_a Numeric
     expect(ticker.high).to be_a Numeric
     expect(ticker.low).to be_a Numeric
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.ask).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be_a Numeric
     expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
@@ -30,10 +32,10 @@ RSpec.describe 'Kryptono integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(eos_btc_pair)
+    order_book = client.order_book(know_btc_pair)
 
-    expect(order_book.base).to eq 'BTC'
-    expect(order_book.target).to eq 'KNOW'
+    expect(order_book.base).to eq 'KNOW'
+    expect(order_book.target).to eq 'BTC'
     expect(order_book.market).to eq 'kryptono'
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
@@ -47,12 +49,12 @@ RSpec.describe 'Kryptono integration specs' do
   end
 
   it 'fetch trade' do
-    trades = client.trades(eos_btc_pair)
+    trades = client.trades(know_btc_pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty
-    expect(trade.base).to eq 'BTC'
-    expect(trade.target).to eq 'KNOW'
+    expect(trade.base).to eq 'KNOW'
+    expect(trade.target).to eq 'BTC'
     expect(trade.trade_id).to_not be nil
     expect(trade.price).to_not be nil
     expect(trade.amount).to_not be nil
