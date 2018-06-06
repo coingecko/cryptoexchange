@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://stat-api.openledger.info/api/v1/ticker?market=ETH_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - stat-api.openledger.info
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3
+      Date:
+      - Mon, 04 Jun 2018 02:35:15 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '162'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"result":{"Bid":"0.076714591650033266799","Ask":"0.0785","Last":"0.0785","High":"0.0785","Low":"0.075827169757387358416","BaseVolume":"0.245255"}}'
+    http_version: 
+  recorded_at: Mon, 04 Jun 2018 02:35:15 GMT
+recorded_with: VCR 4.0.0

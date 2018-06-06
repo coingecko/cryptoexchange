@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://stat-api.openledger.info/api/v1/orderbook?market=ETH_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - stat-api.openledger.info
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3
+      Date:
+      - Mon, 04 Jun 2018 02:35:16 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"result":[{"Ask":[{"Quantity":"0.148065","Rate":"0.0785"},{"Quantity":"2","Rate":"0.079"},{"Quantity":"2","Rate":"0.0795"},{"Quantity":"2","Rate":"0.08"},{"Quantity":"0.024881","Rate":"0.08199991961737872272"},{"Quantity":"2","Rate":"0.082"},{"Quantity":"0.361417","Rate":"0.082359988600425547221"},{"Quantity":"2","Rate":"0.084"},{"Quantity":"4","Rate":"0.08439"},{"Quantity":"0.316879","Rate":"0.084949996686432360617"},{"Quantity":"0.492229","Rate":"0.084999481948442696387"},{"Quantity":"0.170257","Rate":"0.084999970632631844799"},{"Quantity":"0.000430","Rate":"0.085"},{"Quantity":"0.204729","Rate":"0.085894996801238158295"},{"Quantity":"0.367895","Rate":"0.085899998640916565867"},{"Quantity":"2","Rate":"0.086"},{"Quantity":"2.590112","Rate":"0.087999997683497856463"},{"Quantity":"2.129965","Rate":"0.088"},{"Quantity":"0.194876","Rate":"0.088768396313553233851"},{"Quantity":"6.036912","Rate":"0.088768408418078646831"},{"Quantity":"0.030000","Rate":"0.08888"},{"Quantity":"0.500000","Rate":"0.08910024"},{"Quantity":"0.600000","Rate":"0.0899997"},{"Quantity":"0.013184","Rate":"0.09"},{"Quantity":"0.500000","Rate":"0.09010024"},{"Quantity":"1","Rate":"0.09110024"},{"Quantity":"0.045000","Rate":"0.093"},{"Quantity":"0.098390","Rate":"0.09433956702916963106"},{"Quantity":"5.882478","Rate":"0.095343843189893782858"},{"Quantity":"0.119193","Rate":"0.095344105778023877241"},{"Quantity":"0.700000","Rate":"0.0959996"},{"Quantity":"0.700000","Rate":"0.0999996"},{"Quantity":"0.953039","Rate":"0.1"},{"Quantity":"0.050000","Rate":"0.1"},{"Quantity":"0.001457","Rate":"0.1"},{"Quantity":"0.540711","Rate":"0.100000018494167864164"},{"Quantity":"5.911131","Rate":"0.101919273993420210108"},{"Quantity":"0.049901","Rate":"0.10499989980160718222"},{"Quantity":"0.647749","Rate":"0.104999961404803403787"},{"Quantity":"0.050000","Rate":"0.105"},{"Quantity":"9","Rate":"0.106"},{"Quantity":"5.726281","Rate":"0.108494708869508848762"},{"Quantity":"0.600000","Rate":"0.109999966666666666666"},{"Quantity":"0.099891","Rate":"0.11"},{"Quantity":"0.000001","Rate":"0.112999991983935807357"},{"Quantity":"0.000500","Rate":"0.1185"},{"Quantity":"0.050000","Rate":"0.12"},{"Quantity":"5","Rate":"0.126"},{"Quantity":"0.048000","Rate":"0.13"},{"Quantity":"0.045541","Rate":"0.15"}],"Bid":[{"Quantity":"0.054379","Rate":"0.075827169757387358416"},{"Quantity":"0.190020","Rate":"0.075000105252078728554"},{"Quantity":"1.560000","Rate":"0.075"},{"Quantity":"2.280000","Rate":"0.07313"},{"Quantity":"0.014606","Rate":"0.073004929481035191017"},{"Quantity":"0.421132","Rate":"0.072600016146956298737"},{"Quantity":"0.003907","Rate":"0.071520348093166112106"},{"Quantity":"0.057291","Rate":"0.071500212981035151407"},{"Quantity":"0.139860","Rate":"0.071500071500071500071"},{"Quantity":"2.670000","Rate":"0.0714"},{"Quantity":"2","Rate":"0.07139"},{"Quantity":"0.014291","Rate":"0.069974109579455601427"},{"Quantity":"0.080000","Rate":"0.06988"},{"Quantity":"0.158155","Rate":"0.06890025607789826436"},{"Quantity":"0.050000","Rate":"0.06888"},{"Quantity":"0.050000","Rate":"0.06888"},{"Quantity":"0.100000","Rate":"0.06808"},{"Quantity":"0.025711","Rate":"0.068000855664890513787"},{"Quantity":"0.100000","Rate":"0.06788"},{"Quantity":"0.100000","Rate":"0.06728"},{"Quantity":"0.149031","Rate":"0.067100133529265723238"},{"Quantity":"0.060000","Rate":"0.06708"},{"Quantity":"0.475386","Rate":"0.0670340312924654912"},{"Quantity":"0.080000","Rate":"0.06688"},{"Quantity":"0.080000","Rate":"0.06655"},{"Quantity":"0.080000","Rate":"0.06608"},{"Quantity":"0.100000","Rate":"0.065888"},{"Quantity":"0.070000","Rate":"0.065875285714285714285"},{"Quantity":"0.080000","Rate":"0.065558"},{"Quantity":"0.042549","Rate":"0.0655502"},{"Quantity":"0.050000","Rate":"0.06555"},{"Quantity":"0.152671","Rate":"0.065500324226604921694"},{"Quantity":"0.017842","Rate":"0.065467436386055374957"},{"Quantity":"0.100000","Rate":"0.0654665"},{"Quantity":"0.050000","Rate":"0.06508"},{"Quantity":"0.300000","Rate":"0.0650007"},{"Quantity":"0.080000","Rate":"0.06488"},{"Quantity":"0.050000","Rate":"0.06388"},{"Quantity":"0.050000","Rate":"0.06288"},{"Quantity":"0.060000","Rate":"0.06238"},{"Quantity":"0.160590","Rate":"0.062270377981194345849"},{"Quantity":"0.181328","Rate":"0.062267658607606106061"},{"Quantity":"0.244620","Rate":"0.062267598724552366936"},{"Quantity":"0.275790","Rate":"0.062267558649697233402"},{"Quantity":"0.367215","Rate":"0.062267527197963046171"},{"Quantity":"0.308407","Rate":"0.062267490686009072427"},{"Quantity":"0.408494","Rate":"0.062267475164873902676"},{"Quantity":"0.408494","Rate":"0.062267475164873902676"},{"Quantity":"0.708185","Rate":"0.062267472482472800186"},{"Quantity":"0.698314","Rate":"0.062267447022399665479"}]}]}'
+    http_version: 
+  recorded_at: Mon, 04 Jun 2018 02:35:16 GMT
+recorded_with: VCR 4.0.0
