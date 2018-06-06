@@ -1,0 +1,92 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coindelta.com/api/v1/public/getticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coindelta.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Wed, 06 Jun 2018 01:38:26 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d4773b686ce725f3d13510efdfd272cb71528249105; expires=Thu, 06-Jun-19
+        01:38:25 GMT; path=/; domain=.coindelta.com; HttpOnly; Secure
+      Location:
+      - "/api/v1/public/getticker/"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 426728cfd81533b5-HKG
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 06 Jun 2018 01:38:26 GMT
+- request:
+    method: get
+    uri: https://api.coindelta.com/api/v1/public/getticker/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/3.0.0
+      Host:
+      - api.coindelta.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 06 Jun 2018 01:38:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8ec0240194a00d490ab600b7fa6da3581528249106; expires=Thu, 06-Jun-19
+        01:38:26 GMT; path=/; domain=.coindelta.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      - Authorization, Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Allow:
+      - OPTIONS, GET
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 426728d26c7d342d-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"Ask":525000.0,"Bid":513301.0,"MarketName":"btc-inr","Last":525000.0},{"Ask":40887.99,"Bid":40500.01,"MarketName":"eth-inr","Last":40499.99},{"Ask":8200.0,"Bid":8199.99,"MarketName":"ltc-inr","Last":8200.0},{"Ask":814.99,"Bid":776.0,"MarketName":"omg-inr","Last":815.0},{"Ask":997.0,"Bid":927.5,"MarketName":"qtum-inr","Last":998.99},{"Ask":0.0926998,"Bid":0.0655,"MarketName":"eth-btc","Last":0.0735},{"Ask":0.02,"Bid":0.013,"MarketName":"ltc-btc","Last":0.0135},{"Ask":0.0026,"Bid":0.00135,"MarketName":"omg-btc","Last":0.0017989},{"Ask":0.003,"Bid":0.00135,"MarketName":"qtum-btc","Last":0.0025},{"Ask":46.0,"Bid":45.14,"MarketName":"xrp-inr","Last":45.11},{"Ask":9.45e-05,"Bid":7.8e-05,"MarketName":"xrp-btc","Last":9.449e-05},{"Ask":76994.0,"Bid":71501.0,"MarketName":"bch-inr","Last":76996.0},{"Ask":8.4,"Bid":8.24,"MarketName":"zil-inr","Last":8.26},{"Ask":89.98,"Bid":86.0,"MarketName":"zrx-inr","Last":89.99},{"Ask":100.0,"Bid":94.03,"MarketName":"knc-inr","Last":100.0},{"Ask":927.0,"Bid":887.0,"MarketName":"eos-inr","Last":885.0},{"Ask":16700.0,"Bid":16101.0,"MarketName":"zec-inr","Last":16700.0},{"Ask":3850.0,"Bid":3500.01,"MarketName":"neo-inr","Last":3880.0},{"Ask":1458.0,"Bid":1315.09,"MarketName":"gas-inr","Last":1458.0},{"Ask":4.17,"Bid":4.13,"MarketName":"trx-inr","Last":4.17},{"Ask":41.89,"Bid":40.5,"MarketName":"gnt-inr","Last":41.89},{"Ask":20.0,"Bid":18.73,"MarketName":"bat-inr","Last":20.0},{"Ask":23.0,"Bid":20.7,"MarketName":"cvc-inr","Last":23.0},{"Ask":139.89,"Bid":134.5,"MarketName":"eng-inr","Last":139.89},{"Ask":7.1,"Bid":6.75,"MarketName":"mana-inr","Last":7.15},{"Ask":9.07,"Bid":8.2,"MarketName":"spank-inr","Last":8.5},{"Ask":188.98,"Bid":183.11,"MarketName":"icx-inr","Last":188.98},{"Ask":4.5,"Bid":4.2,"MarketName":"cnd-inr","Last":4.17},{"Ask":154.98,"Bid":142.02,"MarketName":"aion-inr","Last":154.98},{"Ask":14.7,"Bid":14.36,"MarketName":"act-inr","Last":14.36},{"Ask":71.74,"Bid":65.57,"MarketName":"grs-inr","Last":71.74},{"Ask":68.6,"Bid":64.01,"MarketName":"dai-inr","Last":64.01},{"Ask":16.0,"Bid":15.35,"MarketName":"qkc-inr","Last":15.79}]'
+    http_version: 
+  recorded_at: Wed, 06 Jun 2018 01:38:26 GMT
+recorded_with: VCR 4.0.0
