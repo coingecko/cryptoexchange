@@ -177,6 +177,7 @@ Or install it yourself as:
 | Switcheo          | Y       | N          | N       |         | Y           |
 | SZZC              | Y       |            |         |         | Y           |
 | The Rock Trading  | Y       |            |         |         | Y           |
+| The Token Store   | Y       | Y          | Y       |         | Y           |
 | Tidex             | Y       |            |         |         | Y           |
 | TradeOgre         | Y       | Y          | Y       |         | Y           |
 | Trade Satoshi     | Y       |            |         |         | Y           |
