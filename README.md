@@ -50,6 +50,7 @@ Or install it yourself as:
 | Bitibu            | Y       | Y          | Y       |         | Y           |
 | Bitkonan          | Y       |            |         |         | User-Defined|
 | Bitmex            | Y       | Y          | Y       |         | Y           |
+| Bitpaction        | Y       | Y          | Y       |         | Y           |
 | Bits Blockchain   | Y       | Y          |         |         | Y           |
 | Bitso             | Y       |            |         |         | Y           |
 | Bitstamp          | Y       | Y          | Y       |         | User-Defined|

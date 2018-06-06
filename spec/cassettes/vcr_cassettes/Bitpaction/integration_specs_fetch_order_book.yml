@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitpaction.com/api/v1/market/buys-list?symbol=BPS-BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitpaction.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Thu, 17 May 2018 04:41:47 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"message":"","code":200,"lang":"en-US","data":[{"data":[{"number":8626.21300000,"total":0.1191391175270000,"price":0.00001,"type":"buy"},{"number":56152.55740000,"total":0.0207686173970000,"price":0.00000,"type":"buy"}],"decimal":5},{"data":[{"number":5478.65050000,"total":0.0837692421290000,"price":0.000015,"type":"buy"},{"number":560.10190000,"total":0.0067328352970000,"price":0.000012,"type":"buy"},{"number":1730.44820000,"total":0.0199379088190000,"price":0.000011,"type":"buy"},{"number":857.01240000,"total":0.0086991312820000,"price":0.000010,"type":"buy"},{"number":5.00000000,"total":0.0000450000000000,"price":0.000009,"type":"buy"},{"number":202.55060000,"total":0.0016690169440000,"price":0.000008,"type":"buy"},{"number":172.15800000,"total":0.0010346695800000,"price":0.000006,"type":"buy"},{"number":7.27540000,"total":0.0000419063040000,"price":0.000005,"type":"buy"},{"number":4843.18960000,"total":0.0158387898010000,"price":0.000003,"type":"buy"},{"number":468.04190000,"total":0.0012945650340000,"price":0.000002,"type":"buy"},{"number":127.05890000,"total":0.0001775569040000,"price":0.000001,"type":"buy"},{"number":50327.28300000,"total":0.0006671128300000,"price":0.000000,"type":"buy"}],"decimal":6},{"data":[{"number":368.45550000,"total":0.0057110602500000,"price":0.0000155,"type":"buy"},{"number":1607.68230000,"total":0.0247681095800000,"price":0.0000154,"type":"buy"},{"number":900.00000000,"total":0.0137700000000000,"price":0.0000153,"type":"buy"},{"number":1185.19670000,"total":0.0180742496750000,"price":0.0000152,"type":"buy"},{"number":985.85190000,"total":0.0149652318420000,"price":0.0000151,"type":"buy"},{"number":431.46410000,"total":0.0064805907820000,"price":0.0000150,"type":"buy"},{"number":560.10190000,"total":0.0067328352970000,"price":0.0000120,"type":"buy"},{"number":1707.34030000,"total":0.0196798719190000,"price":0.0000115,"type":"buy"},{"number":7.00000000,"total":0.0000794500000000,"price":0.0000113,"type":"buy"},{"number":7.00000000,"total":0.0000784000000000,"price":0.0000112,"type":"buy"},{"number":9.10790000,"total":0.0001001869000000,"price":0.0000110,"type":"buy"},{"number":5.00000000,"total":0.0000545000000000,"price":0.0000109,"type":"buy"},{"number":5.00000000,"total":0.0000540000000000,"price":0.0000108,"type":"buy"},{"number":5.00000000,"total":0.0000535000000000,"price":0.0000107,"type":"buy"},{"number":5.00000000,"total":0.0000530000000000,"price":0.0000106,"type":"buy"},{"number":11.00000000,"total":0.0001156100000000,"price":0.0000105,"type":"buy"},{"number":5.00000000,"total":0.0000517500000000,"price":0.0000103,"type":"buy"},{"number":11.00000000,"total":0.0001130800000000,"price":0.0000102,"type":"buy"},{"number":796.67140000,"total":0.0080702812820000,"price":0.0000101,"type":"buy"},{"number":13.34100000,"total":0.0001334100000000,"price":0.0000100,"type":"buy"},{"number":5.00000000,"total":0.0000450000000000,"price":0.0000090,"type":"buy"},{"number":202.55060000,"total":0.0016690169440000,"price":0.0000082,"type":"buy"},{"number":172.15800000,"total":0.0010346695800000,"price":0.0000060,"type":"buy"},{"number":7.27540000,"total":0.0000419063040000,"price":0.0000057,"type":"buy"},{"number":4662.30100000,"total":0.0152923472800000,"price":0.0000032,"type":"buy"}],"decimal":7},{"data":[{"number":368.45550000,"total":0.0057110602500000,"price":0.00001550,"type":"buy"},{"number":980.21600000,"total":0.0151051285600000,"price":0.00001541,"type":"buy"},{"number":627.46630000,"total":0.0096629810200000,"price":0.00001540,"type":"buy"},{"number":900.00000000,"total":0.0137700000000000,"price":0.00001530,"type":"buy"},{"number":1185.19670000,"total":0.0180742496750000,"price":0.00001525,"type":"buy"},{"number":985.85190000,"total":0.0149652318420000,"price":0.00001518,"type":"buy"},{"number":431.46410000,"total":0.0064805907820000,"price":0.00001502,"type":"buy"},{"number":100.19130000,"total":0.0012093089910000,"price":0.00001207,"type":"buy"},{"number":459.91060000,"total":0.0055235263060000,"price":0.00001201,"type":"buy"},{"number":101.00000000,"total":0.0011665500000000,"price":0.00001155,"type":"buy"},{"number":577.83120000,"total":0.0066681720480000,"price":0.00001154,"type":"buy"},{"number":350.50650000,"total":0.0040413399450000,"price":0.00001153,"type":"buy"},{"number":678.00260000,"total":0.0078038099260000,"price":0.00001151,"type":"buy"},{"number":7.00000000,"total":0.0000794500000000,"price":0.00001135,"type":"buy"},{"number":7.00000000,"total":0.0000784000000000,"price":0.00001120,"type":"buy"},{"number":9.10790000,"total":0.0001001869000000,"price":0.00001100,"type":"buy"},{"number":5.00000000,"total":0.0000545000000000,"price":0.00001090,"type":"buy"},{"number":5.00000000,"total":0.0000540000000000,"price":0.00001080,"type":"buy"},{"number":5.00000000,"total":0.0000535000000000,"price":0.00001070,"type":"buy"},{"number":5.00000000,"total":0.0000530000000000,"price":0.00001060,"type":"buy"},{"number":11.00000000,"total":0.0001156100000000,"price":0.00001051,"type":"buy"},{"number":5.00000000,"total":0.0000517500000000,"price":0.00001035,"type":"buy"},{"number":11.00000000,"total":0.0001130800000000,"price":0.00001028,"type":"buy"},{"number":796.67140000,"total":0.0080702812820000,"price":0.00001013,"type":"buy"},{"number":13.34100000,"total":0.0001334100000000,"price":0.00001000,"type":"buy"}],"decimal":8}]}'
+    http_version: 
+  recorded_at: Thu, 17 May 2018 04:41:47 GMT
+- request:
+    method: get
+    uri: https://api.bitpaction.com/api/v1/market/sells-list?symbol=BPS-BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitpaction.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Thu, 17 May 2018 04:41:47 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"message":"","code":200,"lang":"en-US","data":[{"data":[{"number":54.00000000,"total":0.0548644000000000,"price":0.00102,"type":"sell"},{"number":26.23900000,"total":0.0264833300000000,"price":0.00101,"type":"sell"},{"number":854.20300000,"total":0.8542030000000000,"price":0.00100,"type":"sell"},{"number":15.29000000,"total":0.0151371000000000,"price":0.00099,"type":"sell"},{"number":1954.40000000,"total":1.8962764800000000,"price":0.00098,"type":"sell"},{"number":512.23900000,"total":0.3994396200000000,"price":0.00078,"type":"sell"},{"number":26.20300000,"total":0.0097524400000000,"price":0.00038,"type":"sell"},{"number":24.29300000,"total":0.0082730100000000,"price":0.00035,"type":"sell"},{"number":506.82700000,"total":0.1720916400000000,"price":0.00034,"type":"sell"},{"number":25.38820000,"total":0.0079632240000000,"price":0.00032,"type":"sell"},{"number":25.38200000,"total":0.0078684200000000,"price":0.00031,"type":"sell"},{"number":3549.38100000,"total":1.0333172900000000,"price":0.00030,"type":"sell"},{"number":33.39100000,"total":0.0090735800000000,"price":0.00028,"type":"sell"},{"number":25.39000000,"total":0.0051479000000000,"price":0.00021,"type":"sell"},{"number":5474.29300000,"total":1.0468093200000000,"price":0.00020,"type":"sell"},{"number":234.84500000,"total":0.0401984000000000,"price":0.00018,"type":"sell"},{"number":5003.77550000,"total":0.5009016836500000,"price":0.00011,"type":"sell"},{"number":444.94200000,"total":0.0408019000000000,"price":0.00010,"type":"sell"},{"number":103.94200000,"total":0.0089528200000000,"price":0.00009,"type":"sell"},{"number":985.29300000,"total":0.0718388500000000,"price":0.00008,"type":"sell"},{"number":450.29300000,"total":0.0281503500000000,"price":0.00007,"type":"sell"},{"number":925.29300000,"total":0.0544325600000000,"price":0.00006,"type":"sell"},{"number":7191.88400000,"total":0.3082913250000000,"price":0.00005,"type":"sell"},{"number":5145.78390000,"total":0.1931248972760000,"price":0.00004,"type":"sell"},{"number":9351.25710000,"total":0.2644631329330000,"price":0.00003,"type":"sell"}],"decimal":5},{"data":[{"number":323.29300000,"total":0.0193975800000000,"price":0.000060,"type":"sell"},{"number":579.00000000,"total":0.0337235200000000,"price":0.000059,"type":"sell"},{"number":23.00000000,"total":0.0013114600000000,"price":0.000058,"type":"sell"},{"number":2346.00000000,"total":0.1103184000000000,"price":0.000048,"type":"sell"},{"number":14.00000000,"total":0.0006537400000000,"price":0.000047,"type":"sell"},{"number":12.00000000,"total":0.0005497200000000,"price":0.000046,"type":"sell"},{"number":12.00000000,"total":0.0005377200000000,"price":0.000045,"type":"sell"},{"number":2.92000000,"total":0.0001282900000000,"price":0.000044,"type":"sell"},{"number":6.29000000,"total":0.0002676900000000,"price":0.000043,"type":"sell"},{"number":1230.39100000,"total":0.0514504220000000,"price":0.000042,"type":"sell"},{"number":3568.28300000,"total":0.1443853430000000,"price":0.000041,"type":"sell"},{"number":3125.00000000,"total":0.1244096100000000,"price":0.000040,"type":"sell"},{"number":3.95500000,"total":0.0001480108000000,"price":0.000038,"type":"sell"},{"number":1.28300000,"total":0.0000474710000000,"price":0.000037,"type":"sell"},{"number":8.28290000,"total":0.0002859854760000,"price":0.000035,"type":"sell"},{"number":2001.29300000,"total":0.0680439620000000,"price":0.000034,"type":"sell"},{"number":1.38200000,"total":0.0000456060000000,"price":0.000033,"type":"sell"},{"number":2.76500000,"total":0.0000877390000000,"price":0.000032,"type":"sell"},{"number":1.82300000,"total":0.0000565130000000,"price":0.000031,"type":"sell"},{"number":5301.39120000,"total":0.1590417360000000,"price":0.000030,"type":"sell"},{"number":223.19100000,"total":0.0062515799100000,"price":0.000029,"type":"sell"},{"number":850.32650000,"total":0.0229673187650000,"price":0.000028,"type":"sell"},{"number":459.97380000,"total":0.0124018112500000,"price":0.000027,"type":"sell"},{"number":1796.59020000,"total":0.0458120680480000,"price":0.000026,"type":"sell"},{"number":719.78440000,"total":0.0179886189600000,"price":0.000025,"type":"sell"}],"decimal":6},{"data":[{"number":23.00000000,"total":0.0009292000000000,"price":0.0000404,"type":"sell"},{"number":219.00000000,"total":0.0088162300000000,"price":0.0000403,"type":"sell"},{"number":1627.00000000,"total":0.0652914300000000,"price":0.0000402,"type":"sell"},{"number":64.00000000,"total":0.0025631100000000,"price":0.0000401,"type":"sell"},{"number":565.00000000,"total":0.0225830000000000,"price":0.0000400,"type":"sell"},{"number":1033.00000000,"total":0.0411554200000000,"price":0.0000399,"type":"sell"},{"number":1527.00000000,"total":0.0606711900000000,"price":0.0000398,"type":"sell"},{"number":1.28000000,"total":0.0000486400000000,"price":0.0000380,"type":"sell"},{"number":1.28300000,"total":0.0000477276000000,"price":0.0000372,"type":"sell"},{"number":1.39200000,"total":0.0000516432000000,"price":0.0000371,"type":"sell"},{"number":1.28300000,"total":0.0000474710000000,"price":0.0000370,"type":"sell"},{"number":1.29000000,"total":0.0000451500000000,"price":0.0000350,"type":"sell"},{"number":6.99290000,"total":0.0002408354760000,"price":0.0000345,"type":"sell"},{"number":2001.29300000,"total":0.0680439620000000,"price":0.0000340,"type":"sell"},{"number":1.38200000,"total":0.0000456060000000,"price":0.0000330,"type":"sell"},{"number":1.28300000,"total":0.0000410560000000,"price":0.0000320,"type":"sell"},{"number":1.48200000,"total":0.0000466830000000,"price":0.0000315,"type":"sell"},{"number":1.82300000,"total":0.0000565130000000,"price":0.0000310,"type":"sell"},{"number":5301.39120000,"total":0.1590417360000000,"price":0.0000300,"type":"sell"},{"number":223.19100000,"total":0.0062515799100000,"price":0.0000281,"type":"sell"},{"number":850.32650000,"total":0.0229673187650000,"price":0.0000271,"type":"sell"},{"number":425.01110000,"total":0.0114752997000000,"price":0.0000270,"type":"sell"},{"number":34.96270000,"total":0.0009265115500000,"price":0.0000265,"type":"sell"},{"number":1796.59020000,"total":0.0458120680480000,"price":0.0000255,"type":"sell"},{"number":719.78440000,"total":0.0179886189600000,"price":0.0000250,"type":"sell"}],"decimal":7},{"data":[{"number":144.00000000,"total":0.0057240000000000,"price":0.00003975,"type":"sell"},{"number":129.00000000,"total":0.0051264600000000,"price":0.00003974,"type":"sell"},{"number":69.00000000,"total":0.0027413700000000,"price":0.00003973,"type":"sell"},{"number":850.00000000,"total":0.0337535000000000,"price":0.00003971,"type":"sell"},{"number":1.28000000,"total":0.0000486400000000,"price":0.00003800,"type":"sell"},{"number":1.28300000,"total":0.0000477276000000,"price":0.00003720,"type":"sell"},{"number":1.39200000,"total":0.0000516432000000,"price":0.00003710,"type":"sell"},{"number":1.28300000,"total":0.0000474710000000,"price":0.00003700,"type":"sell"},{"number":1.29000000,"total":0.0000451500000000,"price":0.00003500,"type":"sell"},{"number":6.99290000,"total":0.0002408354760000,"price":0.00003444,"type":"sell"},{"number":2001.29300000,"total":0.0680439620000000,"price":0.00003400,"type":"sell"},{"number":1.38200000,"total":0.0000456060000000,"price":0.00003300,"type":"sell"},{"number":1.28300000,"total":0.0000410560000000,"price":0.00003200,"type":"sell"},{"number":1.48200000,"total":0.0000466830000000,"price":0.00003150,"type":"sell"},{"number":1.82300000,"total":0.0000565130000000,"price":0.00003100,"type":"sell"},{"number":5301.39120000,"total":0.1590417360000000,"price":0.00003000,"type":"sell"},{"number":223.19100000,"total":0.0062515799100000,"price":0.00002801,"type":"sell"},{"number":850.32650000,"total":0.0229673187650000,"price":0.00002701,"type":"sell"},{"number":425.01110000,"total":0.0114752997000000,"price":0.00002700,"type":"sell"},{"number":34.96270000,"total":0.0009265115500000,"price":0.00002650,"type":"sell"},{"number":1698.38500000,"total":0.0433088175000000,"price":0.00002550,"type":"sell"},{"number":98.20520000,"total":0.0025032505480000,"price":0.00002549,"type":"sell"},{"number":358.31600000,"total":0.0089579000000000,"price":0.00002500,"type":"sell"},{"number":123.83280000,"total":0.0030945816720000,"price":0.00002499,"type":"sell"},{"number":237.63560000,"total":0.0059361372880000,"price":0.00002498,"type":"sell"}],"decimal":8}]}'
+    http_version: 
+  recorded_at: Thu, 17 May 2018 04:41:47 GMT
+recorded_with: VCR 4.0.0

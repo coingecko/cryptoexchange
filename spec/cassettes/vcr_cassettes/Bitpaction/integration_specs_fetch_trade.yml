@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitpaction.com/api/v1/market/deals-list?symbol=BPS-BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitpaction.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Thu, 17 May 2018 04:42:02 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"message":"","code":200,"lang":"en-US","data":[{"date":"12:22:14","number":8.49380000,"price":0.00001937,"type":"sell"},{"date":"12:21:37","number":22.69670000,"price":0.00001937,"type":"sell"},{"date":"12:21:37","number":20.00000000,"price":0.00002009,"type":"sell"},{"date":"12:21:37","number":30.00000000,"price":0.00002100,"type":"sell"},{"date":"12:21:37","number":18.53800000,"price":0.00002100,"type":"sell"},{"date":"12:21:37","number":41.80640000,"price":0.00002103,"type":"sell"},{"date":"12:21:37","number":49.58460000,"price":0.00002150,"type":"sell"},{"date":"12:21:37","number":150.57600000,"price":0.00002165,"type":"sell"},{"date":"12:21:37","number":32.58460000,"price":0.00002165,"type":"sell"},{"date":"12:21:37","number":9.77180000,"price":0.00002200,"type":"sell"},{"date":"12:21:37","number":1.10350000,"price":0.00002250,"type":"sell"},{"date":"12:20:36","number":101.70450000,"price":0.00002250,"type":"sell"},{"date":"12:20:36","number":105.00000000,"price":0.00002270,"type":"sell"},{"date":"12:18:18","number":23.00720000,"price":0.00002499,"type":"buy"},{"date":"02:38:37","number":2.08280000,"price":0.00002499,"type":"buy"},{"date":"16:19:35","number":20.00000000,"price":0.00002489,"type":"buy"},{"date":"15:11:15","number":10.00000000,"price":0.00002110,"type":"sell"},{"date":"15:09:57","number":961.00000000,"price":0.00002110,"type":"buy"},{"date":"04:41:50","number":39.88850000,"price":0.00002100,"type":"buy"},{"date":"00:53:02","number":15.03730000,"price":0.00002650,"type":"buy"},{"date":"23:40:18","number":425.43660000,"price":0.00001518,"type":"buy"},{"date":"23:39:17","number":436.56340000,"price":0.00001518,"type":"sell"},{"date":"22:59:20","number":149.67350000,"price":0.00002701,"type":"buy"},{"date":"22:59:20","number":1.82000000,"price":0.00002701,"type":"buy"},{"date":"22:57:40","number":100.00000000,"price":0.00002695,"type":"buy"},{"date":"22:57:40","number":12.00000000,"price":0.00002695,"type":"buy"},{"date":"22:56:26","number":1.80000000,"price":0.00002610,"type":"buy"},{"date":"22:55:50","number":74.85830000,"price":0.00002499,"type":"buy"},{"date":"21:46:25","number":1.58360000,"price":0.00002489,"type":"buy"},{"date":"21:35:23","number":82.72760000,"price":0.00002489,"type":"buy"},{"date":"14:32:10","number":190.00000000,"price":0.00002489,"type":"buy"},{"date":"14:17:48","number":91.32490000,"price":0.00002489,"type":"buy"},{"date":"14:17:48","number":0.57500000,"price":0.00002489,"type":"buy"},{"date":"14:17:48","number":12.00000000,"price":0.00002479,"type":"buy"},{"date":"14:17:48","number":20.00000000,"price":0.00002479,"type":"buy"},{"date":"12:25:33","number":99.90010000,"price":0.00001501,"type":"sell"},{"date":"08:49:21","number":39.92850000,"price":0.00001150,"type":"sell"},{"date":"08:49:21","number":7.00000000,"price":0.00001150,"type":"sell"},{"date":"08:49:21","number":5.00000000,"price":0.00001158,"type":"sell"},{"date":"08:49:21","number":6.00000000,"price":0.00001165,"type":"sell"},{"date":"08:49:21","number":9.00000000,"price":0.00001180,"type":"sell"},{"date":"08:49:21","number":7.00000000,"price":0.00001201,"type":"sell"},{"date":"08:49:21","number":7.00000000,"price":0.00001203,"type":"sell"},{"date":"08:49:21","number":20.00000000,"price":0.00001220,"type":"sell"},{"date":"08:49:21","number":35.00000000,"price":0.00001226,"type":"sell"},{"date":"08:49:21","number":5.00000000,"price":0.00001227,"type":"sell"},{"date":"08:49:21","number":100.00010000,"price":0.00001228,"type":"sell"},{"date":"08:49:21","number":7.00000000,"price":0.00001250,"type":"sell"},{"date":"08:49:09","number":7.00000000,"price":0.00001300,"type":"sell"},{"date":"08:49:09","number":36.63530000,"price":0.00001300,"type":"sell"}]}'
+    http_version: 
+  recorded_at: Thu, 17 May 2018 04:42:02 GMT
+recorded_with: VCR 4.0.0
