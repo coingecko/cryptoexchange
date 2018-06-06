@@ -31,6 +31,7 @@ Or install it yourself as:
 | Allcoin           | Y       | Y          |         |         | User-Defined|
 | ANX               | Y       |            |         |         | User-Defined|
 | Bancor            | Y       | N          | N       |         | Y           |
+| Bcex              | Y       | Y          | Y       |         | Y           |
 | Bibox             | Y       | Y          | Y       |         | Y           |
 | BigONE            | Y       | Y          | Y       |         | Y           |
 | Bit-Z             | Y       |            |         |         | Y           |
