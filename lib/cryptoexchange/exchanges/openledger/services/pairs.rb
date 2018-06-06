@@ -12,8 +12,8 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           output['result'].map do |pair|
             Cryptoexchange::Models::MarketPair.new(
-              base:   pair['MarketCurrency'],
-              target: pair['BaseCurrency'],
+              base:   pair['BaseCurrency'],
+              target: pair['MarketCurrency'],
               market: Openledger::Market::NAME
             )
           end
