@@ -72,6 +72,7 @@ Or install it yourself as:
 | Cobinhood         | Y       | Y          |         |         | Y           |
 | CoinEgg           | Y       | Y          | Y       |         | User-Defined|
 | Coincheck         | Y       |            |         |         | User-Defined|
+| Coindelta         | Y       | N          | N       |         | Y           |
 | Coinex            | Y       | Y          | Y       |         | Y           |
 | Coinfalcon        | Y       | Y          | Y       |         | Y           |
 | Coinfield         | Y       | N          | N       |         | Y           |
