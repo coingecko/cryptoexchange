@@ -169,7 +169,7 @@ Or install it yourself as:
 | Sigen             | Y       |            |         |         | Y           |
 | Sistemkoin        | Y       |            |         |         | Y           |
 | SouthXchange      | Y       | Y          | Y       |         | Y           |
-| Stellarport       | Y       | N          | N       |         | Y           |
+| Stellarport ***   | Y       | N          | N       |         | Y           |
 | Stocks Exchange   | Y       |            |         |         | Y           |
 | Switcheo          | Y       | N          | N       |         | Y           |
 | SZZC              | Y       |            |         |         | Y           |
@@ -195,6 +195,8 @@ Or install it yourself as:
 | Zebpay            | Y       |            |         |         | User-Defined|
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
+*** Stellarport API claims to only show the top 100 pairs. Should the pair increase to > 100, this API might have to be revised. (42 trading pairs as of 6/6/2018)
+
 
 ## Usage
 
