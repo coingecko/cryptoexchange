@@ -19,7 +19,7 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |pair, ticker|
-            next if ticker['isFrozen'] == 1
+            next if ticker['isFrozen'].to_i == 1
             base, target = pair.split('_')
             market_pair  = Cryptoexchange::Models::MarketPair.new(
               base:   base,
