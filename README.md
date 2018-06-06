@@ -173,6 +173,7 @@ Or install it yourself as:
 | RadarRelay        | Y       |            |         |         | User-Defined|
 | RightBTC          | Y       | Y          | Y       |         | Y           |
 | Sigen             | Y       |            |         |         | Y           |
+| Simex             | Y       | N          | N       |         | Y           |
 | Sistemkoin        | Y       |            |         |         | Y           |
 | SouthXchange      | Y       | Y          | Y       |         | Y           |
 | Stocks Exchange   | Y       |            |         |         | Y           |
@@ -233,7 +234,7 @@ Or install it yourself as:
 
 ```
   # Check if exchange has support for OrderBook
-  pair = client.pairs('bitflyer').first
+  pair = client.pairs('bitbank').first
   order_book = client.order_book(pair)
   order_book.base
   order_book.target
