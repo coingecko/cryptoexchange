@@ -17,10 +17,10 @@ module Cryptoexchange::Exchanges
 
         def list_all_combinations(output)
           pairs_list = []
-          symbols = output['result'].map { |asset| asset['symbol'] }
-          symbols = symbols - OMITTED_SYMBOLS
-          symbols.delete_if { |sym| /\A(#{Cryptoexchange::Exchanges::Cybex::Market::OMITTED_GATEWAY}\.)/.match?(sym)}
-          symbols = symbols.map { |a| a.split('.').last }
+          symbols    = output['result'].map { |asset| asset['symbol'] }
+          symbols    = symbols - OMITTED_SYMBOLS
+          symbols.delete_if { |sym| !/\A(#{Cryptoexchange::Exchanges::Cybex::Market::OMITTED_GATEWAY}\.)/.match(sym).nil? }
+          symbols      = symbols.map { |a| a.split('.').last }
           symbol_pairs = symbols.product(MAIN_TARGET_SYMBOLS)
           symbol_pairs.map do |pair|
             next if pair[0] == pair[1] || pair[0] == 'USDT'
