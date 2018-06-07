@@ -154,6 +154,7 @@ Or install it yourself as:
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|
 | Mercatox          | Y       | N          | N       | N       | Y           |
 | Nanex             | Y       | N          | N       | N       | Y           |
+| Nebula            | Y       | N          | Y       |         | Y           |
 | Neraex            | Y       | Y          | Y       |         | Y           |
 | NLexch            | Y       |            |         |         | Y           |
 | Novadex           | Y       | N          | N       |         | Y           |
