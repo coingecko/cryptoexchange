@@ -5,8 +5,7 @@ module Cryptoexchange::Exchanges
         SECONDS = 86400
 
         def fetch(market_pair)
-          base        = market_pair.base
-          target      = market_pair.target
+          base, target = Cybex::Market.prepend_symbol_prefix(market_pair)
           now         = transform_time_string(Time.now.utc)
           one_day_ago = transform_time_string(Time.now.utc - SECONDS)
           output      = fetch_using_post(ticker_url,

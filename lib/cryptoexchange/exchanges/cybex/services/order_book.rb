@@ -11,8 +11,7 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          base   = market_pair.base
-          target = market_pair.target
+          base, target = Cybex::Market.prepend_symbol_prefix(market_pair)
           output = fetch_using_post(ticker_url, { "jsonrpc": "2.0", "method": "get_order_book", "params": ["#{target}", "#{base}", "#{MAXIMUM_DEPTH}"], "id": 1 })
           # puts output
           adapt(output, market_pair)
