@@ -2,12 +2,16 @@ module Cryptoexchange::Exchanges
   module Coinut
     class Authentication < Cryptoexchange::Services::Authentication
       def signature(payload)
-        api_key = Cryptoexchange::Credentials.get(@exchange).dig('api_key')
+        # Instead of dig for earlier version of Ruby support
+        exchange = Cryptoexchange::Credentials.get(@exchange)
+        api_key = exchange ? exchange['api_key'] : nil
         OpenSSL::HMAC.hexdigest(OpenSSL::Digest.new('sha256'), api_key, payload)
       end
 
       def headers(payload)
-        username = Cryptoexchange::Credentials.get(@exchange).dig('username')
+        # Instead of dig for earlier version of Ruby support
+        exchange = Cryptoexchange::Credentials.get(@exchange)
+        username = exchange ? exchange['username'] : nil
         { 'X-USER' => username, 'X-SIGNATURE' => signature(payload) }
       end
 

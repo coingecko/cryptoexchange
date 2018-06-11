@@ -6,7 +6,8 @@ module Cryptoexchange
           raise Cryptoexchange::CredentialsMissingError, "#{filename} does not exist!"
         end
 
-        exchange_credentials = credentials.dig(exchange)
+        # Instead of dig for earlier version of Ruby support
+        exchange_credentials = credentials ? credentials[exchange] : nil
         raise Cryptoexchange::CredentialsMissingError, "Credentials for #{exchange} does not exist!" unless exchange_credentials
 
         exchange_credentials
