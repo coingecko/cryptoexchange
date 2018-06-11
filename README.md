@@ -159,6 +159,7 @@ Or install it yourself as:
 | Novadex           | Y       | N          | N       |         | Y           |
 | Nova Exchange     | Y       |            |         |         | Y           |
 | OasisDEX          | Y       |            |         |         | Y           |
+| Octaex            | Y       | Y          | Y       |         | Y           |
 | OKCoin            | Y       |            |         |         | User-Defined|
 | OKEx              | Y       | Y          | Y       |         | Y           |
 | Ooobtc            | Y       | Y          | Y       |         | Y           |
