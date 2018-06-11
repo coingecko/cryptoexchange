@@ -70,6 +70,7 @@ Or install it yourself as:
 | Buyucoin          | Y       | N          | N       |         | Y           |
 | BX Thailand       | Y       |            |         |         | Y           |
 | Cex               | Y       | Y          | Y       |         | Y           |
+| Cfinex            | Y       | Y          | Y       |         | Y           |
 | CCex              | Y       |            |         |         | Y           |
 | CHBTC             | Y       |            |         |         | User-Defined|
 | Cobinhood         | Y       | Y          |         |         | Y           |
