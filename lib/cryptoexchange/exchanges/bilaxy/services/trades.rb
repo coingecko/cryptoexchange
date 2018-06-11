@@ -8,7 +8,9 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          id = market_pair.id
+          pairs = Cryptoexchange::Exchanges::Bilaxy::Services::Pairs.new.fetch
+          pair = pairs.select { |p| p.base == market_pair.base && p.target == market_pair.target }.first
+          id = pair.id
           "#{Cryptoexchange::Exchanges::Bilaxy::Market::API_URL}/orders?symbol=#{id}"
         end
 
