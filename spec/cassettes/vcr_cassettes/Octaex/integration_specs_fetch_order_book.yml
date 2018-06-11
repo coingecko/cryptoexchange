@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://octaex.com/api/trade/depth?market=btc_usd
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - octaex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 11 Jun 2018 02:54:16 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=l8444djptf9kjbt83g98npqhc4; path=/; HttpOnly
+      - __cfduid=d8b3ce4c42ddbf1719cdd17dbb8368afa1528685655; expires=Tue, 11-Jun-19
+        02:54:15 GMT; path=/; domain=.octaex.com; HttpOnly; Secure
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4290cac32c8532ad-HKG
+    body:
+      encoding: UTF-8
+      string: '{"buy":[{"id":30497,"price":"7200.000000","amount":"199.512300"},{"id":30499,"price":"7100.000000","amount":"152.250000"},{"id":30496,"price":"7050.000000","amount":"2.850000"},{"id":30494,"price":"7000.000000","amount":"20.000000"},{"id":10291,"price":"6386.640000","amount":"25.151200"},{"id":10292,"price":"6200.000000","amount":"50.000000"},{"id":1222,"price":"4062.500000","amount":"0.866000"},{"id":1220,"price":"4050.000000","amount":"1.560000"},{"id":1219,"price":"4000.000000","amount":"2.566000"}],"sell":[{"id":9093,"price":"12455.220000","amount":"5.660000"},{"id":10296,"price":"10000.000000","amount":"3.000000"},{"id":30485,"price":"9859.360000","amount":"2.185800"},{"id":30484,"price":"9858.250000","amount":"0.566300"},{"id":30481,"price":"9855.630000","amount":"100.000000"},{"id":30479,"price":"9850.675800","amount":"150.000000"},{"id":30476,"price":"9811.208900","amount":"23.526800"},{"id":30474,"price":"9800.555000","amount":"120.248900"},{"id":42870,"price":"9775.563300","amount":"9.434200"}]}'
+    http_version: 
+  recorded_at: Mon, 11 Jun 2018 02:54:16 GMT
+recorded_with: VCR 4.0.0
