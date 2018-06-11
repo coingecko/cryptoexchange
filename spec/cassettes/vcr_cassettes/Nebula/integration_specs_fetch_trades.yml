@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nebula.exchange/v1/trades/CAV_ETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.nebula.exchange
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 07 Jun 2018 04:01:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=ddc5b988bb4d93bbbf10d0422274cc71f1528344116; expires=Fri, 07-Jun-19
+        04:01:56 GMT; path=/; domain=.nebula.exchange; HttpOnly
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"2173-ltpKBP/T2SmZ1+6XG0C0ooWghTQ"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Vary:
+      - Origin
+      X-Download-Options:
+      - noopen
+      X-Xss-Protection:
+      - 1; mode=block
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 427038674847a2b4-HKG
+    body:
+      encoding: UTF-8
+      string: '[{"id":302,"timestamp":1528318821,"price":0.0001,"amount":11146.627974525845,"side":"buy"},{"id":301,"timestamp":1528318821,"price":0.0000998,"amount":2835.628990474155,"side":"buy"},{"id":300,"timestamp":1528309894,"price":0.0000998,"amount":6662.501252222044,"side":"buy"},{"id":299,"timestamp":1528309894,"price":0.0000997999,"amount":965,"side":"buy"},{"id":298,"timestamp":1528302082,"price":0.000087,"amount":844.7221860491536,"side":"sell"},{"id":297,"timestamp":1528300076,"price":0.000087,"amount":10930.648927586208,"side":"buy"},{"id":296,"timestamp":1528300076,"price":0.000086999,"amount":1334.97176,"side":"buy"},{"id":295,"timestamp":1528234320,"price":0.0000715,"amount":10851.871948,"side":"sell"},{"id":294,"timestamp":1527481963,"price":0.00012,"amount":14700,"side":"sell"},{"id":293,"timestamp":1527437034,"price":0.00012,"amount":349,"side":"sell"},{"id":292,"timestamp":1527436881,"price":0.00012,"amount":1658.9930034,"side":"sell"},{"id":291,"timestamp":1527346529,"price":0.0000803,"amount":349,"side":"sell"},{"id":290,"timestamp":1527433805,"price":0.00012,"amount":8006.9522731,"side":"sell"},{"id":289,"timestamp":1527330805,"price":0.000115,"amount":0.004862000000230182,"side":"buy"},{"id":288,"timestamp":1527419672,"price":0.000125,"amount":2044,"side":"buy"},{"id":287,"timestamp":1527331044,"price":0.0001199,"amount":54659.3740693831,"side":"buy"},{"id":286,"timestamp":1527346467,"price":0.00012,"amount":2044.9161916666662,"side":"sell"},{"id":285,"timestamp":1527339642,"price":0.00012,"amount":668,"side":"sell"},{"id":284,"timestamp":1527330532,"price":0.000115,"amount":3590.1,"side":"buy"},{"id":283,"timestamp":1527338605,"price":0.00012,"amount":6453.750475,"side":"sell"},{"id":282,"timestamp":1527196336,"price":0.00013,"amount":10,"side":"sell"},{"id":281,"timestamp":1527199345,"price":0.00012,"amount":1054.1689735331038,"side":"sell"},{"id":280,"timestamp":1527321478,"price":0.000115,"amount":17650,"side":"buy"},{"id":279,"timestamp":1527141696,"price":0.00012,"amount":2135,"side":"buy"},{"id":278,"timestamp":1527214005,"price":0.00012,"amount":30945.093188466897,"side":"sell"},{"id":277,"timestamp":1526999559,"price":0.0000712,"amount":1000,"side":"sell"},{"id":276,"timestamp":1527169728,"price":0.00012,"amount":4000,"side":"sell"},{"id":275,"timestamp":1527161673,"price":0.0001741,"amount":396,"side":"buy"},{"id":274,"timestamp":1527153200,"price":0.000083,"amount":6189.650904,"side":"sell"},{"id":273,"timestamp":1527158108,"price":0.00012,"amount":0.7378380000000107,"side":"buy"},{"id":272,"timestamp":1526944330,"price":0.000199,"amount":3517.5879396984924,"side":"buy"},{"id":271,"timestamp":1526999737,"price":0.000070001,"amount":2556.92093585389,"side":"sell"},{"id":270,"timestamp":1527032153,"price":0.000070001,"amount":2000,"side":"sell"},{"id":269,"timestamp":1526999675,"price":0.0000711,"amount":2164.9832630098454,"side":"sell"},{"id":268,"timestamp":1526944077,"price":0.00018888,"amount":1000,"side":"buy"},{"id":267,"timestamp":1526949522,"price":0.00019,"amount":4500,"side":"sell"},{"id":266,"timestamp":1526999737,"price":0.0000704,"amount":33.93448413626364,"side":"sell"},{"id":265,"timestamp":1526980634,"price":0.0000703,"amount":1062.1689735331,"side":"sell"},{"id":264,"timestamp":1526980598,"price":0.00019,"amount":6,"side":"buy"},{"id":263,"timestamp":1526954229,"price":0.00005,"amount":1000,"side":"sell"},{"id":262,"timestamp":1526944191,"price":0.000199,"amount":349.1644680851059,"side":"buy"},{"id":261,"timestamp":1526944077,"price":0.00019,"amount":3431.664468085106,"side":"buy"},{"id":260,"timestamp":1526944191,"price":0.000198,"amount":2000,"side":"buy"},{"id":259,"timestamp":1526944077,"price":0.0001839,"amount":68.33553191489386,"side":"buy"},{"id":258,"timestamp":1526943266,"price":0.0001429996,"amount":1875,"side":"buy"},{"id":257,"timestamp":1526944191,"price":0.00019,"amount":2150.835531914894,"side":"buy"},{"id":256,"timestamp":1526943377,"price":0.0001429996,"amount":898,"side":"buy"},{"id":255,"timestamp":1526943670,"price":0.0001839,"amount":1374.5744680851062,"side":"buy"},{"id":254,"timestamp":1526943670,"price":0.00018,"amount":1285,"side":"buy"},{"id":253,"timestamp":1526942924,"price":0.000125,"amount":414.0025215933,"side":"buy"},{"id":252,"timestamp":1526943266,"price":0.0001429995,"amount":8125,"side":"buy"},{"id":251,"timestamp":1526943008,"price":0.00014,"amount":6178.25,"side":"buy"},{"id":250,"timestamp":1526941375,"price":0.000115,"amount":500,"side":"buy"},{"id":249,"timestamp":1526943008,"price":0.000139,"amount":2309.4763431866413,"side":"buy"},{"id":248,"timestamp":1526942924,"price":0.000139,"amount":8671.994956813358,"side":"buy"},{"id":247,"timestamp":1526942120,"price":0.0001163,"amount":5292,"side":"buy"},{"id":246,"timestamp":1526942924,"price":0.00012,"amount":414.00252159334104,"side":"buy"},{"id":245,"timestamp":1526942557,"price":0.000118,"amount":800,"side":"buy"},{"id":244,"timestamp":1526942272,"price":0.0001169,"amount":1453,"side":"buy"},{"id":243,"timestamp":1526916810,"price":0.0001,"amount":1087.910574,"side":"buy"},{"id":242,"timestamp":1526941249,"price":0.000115,"amount":1500,"side":"buy"},{"id":241,"timestamp":1526940443,"price":0.0001141,"amount":2519.627179,"side":"buy"},{"id":240,"timestamp":1526871959,"price":0.000045,"amount":4800.703817383317,"side":"sell"},{"id":239,"timestamp":1526916810,"price":0.0001163,"amount":2960.372821,"side":"buy"},{"id":238,"timestamp":1526871959,"price":0.000046,"amount":623.01593625498,"side":"sell"},{"id":237,"timestamp":1526925068,"price":0.0001163,"amount":20,"side":"buy"},{"id":236,"timestamp":1526900483,"price":0.00006,"amount":88.283395,"side":"buy"},{"id":235,"timestamp":1526916810,"price":0.00006,"amount":111.716605,"side":"buy"},{"id":234,"timestamp":1526886381,"price":0.00006,"amount":800,"side":"sell"},{"id":233,"timestamp":1526853083,"price":0.0000502,"amount":4670.807132858991,"side":"sell"},{"id":232,"timestamp":1526871959,"price":0.000047,"amount":1453.1914893617022,"side":"sell"},{"id":231,"timestamp":1526853121,"price":0.0000502,"amount":1131.219478583609,"side":"buy"},{"id":230,"timestamp":1526871432,"price":0.000046,"amount":308.98406374501997,"side":"sell"},{"id":229,"timestamp":1526846352,"price":0.000051,"amount":2000,"side":"sell"},{"id":228,"timestamp":1526853044,"price":0.0000503,"amount":1000,"side":"sell"},{"id":227,"timestamp":1526871432,"price":0.0000502,"amount":996.01593625498,"side":"sell"},{"id":226,"timestamp":1526852873,"price":0.000051,"amount":5142.417832882353,"side":"sell"},{"id":225,"timestamp":1526847192,"price":0.000139,"amount":15,"side":"buy"},{"id":224,"timestamp":1526849535,"price":0.000051,"amount":11198.316873,"side":"sell"},{"id":223,"timestamp":1526840194,"price":0.00008,"amount":74.51201140911465,"side":"sell"},{"id":222,"timestamp":1526840979,"price":0.000051,"amount":1289,"side":"sell"},{"id":221,"timestamp":1526840194,"price":0.0000503,"amount":2504.9701789264413,"side":"sell"},{"id":220,"timestamp":1526840393,"price":0.000139,"amount":15,"side":"buy"},{"id":219,"timestamp":1526840194,"price":0.00008001,"amount":3125,"side":"sell"},{"id":218,"timestamp":1526840194,"price":0.00007035,"amount":826.3249425234352,"side":"sell"},{"id":217,"timestamp":1526840194,"price":0.0000502,"amount":329.1928671410087,"side":"sell"},{"id":216,"timestamp":1526830587,"price":0.00008,"amount":223.5089905258013,"side":"sell"},{"id":215,"timestamp":1526830587,"price":0.000083,"amount":5510.4,"side":"sell"},{"id":214,"timestamp":1526830587,"price":0.00008151,"amount":170.09100947419907,"side":"sell"},{"id":213,"timestamp":1526771437,"price":0.000111,"amount":5934.2956746,"side":"buy"},{"id":212,"timestamp":1526830587,"price":0.00008305,"amount":1800,"side":"sell"},{"id":211,"timestamp":1526772670,"price":0.00008,"amount":621.5144502284,"side":"sell"},{"id":210,"timestamp":1526770427,"price":0.000112,"amount":4759.755497888889,"side":"sell"},{"id":209,"timestamp":1526772670,"price":0.000085,"amount":100,"side":"sell"},{"id":208,"timestamp":1526736352,"price":0.000087,"amount":1195.172596,"side":"sell"},{"id":207,"timestamp":1526766629,"price":0.0001125,"amount":1011.476635,"side":"sell"},{"id":206,"timestamp":1526770427,"price":0.0001125,"amount":417.91261288266713,"side":"sell"},{"id":205,"timestamp":1526762002,"price":0.0001125,"amount":800.9296888888889,"side":"sell"},{"id":204,"timestamp":1526676288,"price":0.00011,"amount":847.2222222222222,"side":"buy"},{"id":203,"timestamp":1526656659,"price":0.00004195,"amount":3350.1400559,"side":"sell"}]'
+    http_version: 
+  recorded_at: Thu, 07 Jun 2018 04:01:57 GMT
+recorded_with: VCR 4.0.0
