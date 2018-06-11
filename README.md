@@ -183,6 +183,7 @@ Or install it yourself as:
 | The Rock Trading  | Y       |            |         |         | Y           |
 | The Token Store   | Y       | Y          | Y       |         | Y           |
 | Tidex             | Y       |            |         |         | Y           |
+| Topbtc            | Y       | N          | N       |         | Y           |
 | TradeOgre         | Y       | Y          | Y       |         | Y           |
 | Trade Satoshi     | Y       |            |         |         | Y           |
 | Trade.mn          | Y       | Y          | Y       |         | Y           |
