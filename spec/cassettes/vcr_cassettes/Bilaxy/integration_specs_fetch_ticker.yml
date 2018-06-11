@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.bilaxy.com/v1/ticker?symbol=16
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bilaxy.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 06 Jun 2018 03:41:16 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db7ad7a3efe45cf489a222bf6baff3f4b1528256476; expires=Thu, 06-Jun-19
+        03:41:16 GMT; path=/; domain=.bilaxy.com; HttpOnly
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4267dcbfc67d3283-HKG
+    body:
+      encoding: UTF-8
+      string: '{"code":"200","data":{"high":"0.0191","vol":"5","last":"0.0191","low":"0.0191","buy":"0.019062","sell":"0.0299"}}'
+    http_version: 
+  recorded_at: Wed, 06 Jun 2018 03:41:16 GMT
+recorded_with: VCR 4.0.0
