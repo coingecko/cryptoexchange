@@ -34,6 +34,7 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Octaex::Market::NAME
+          ticker.last      = NumericHelper.to_d(output['new_price'])
           ticker.ask       = NumericHelper.to_d(output['sell_price'])
           ticker.bid       = NumericHelper.to_d(output['buy_price'])
           ticker.high      = NumericHelper.to_d(output['max_price'])
