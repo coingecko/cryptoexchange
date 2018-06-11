@@ -34,7 +34,7 @@ Or install it yourself as:
 | Bcex              | Y       | Y          | Y       |         | Y           |
 | Bibox             | Y       | Y          | Y       |         | Y           |
 | BigONE            | Y       | Y          | Y       |         | Y           |
-| Bilaxy            | Y       | Y          | Y       |         | Y           |
+| Bilaxy            | Y       | Y          | Y       |         | User-Defined***|
 | Bit-Z             | Y       |            |         |         | Y           |
 | Bit2C             | Y       | Y          | Y       |         | User-Defined|
 | Binance           | Y       | Y          |         |         | Y           |
@@ -202,6 +202,7 @@ Or install it yourself as:
 | Zebpay            | Y       |            |         |         | User-Defined|
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
+*** User-Defined requires pair id
 
 ## Usage
 
