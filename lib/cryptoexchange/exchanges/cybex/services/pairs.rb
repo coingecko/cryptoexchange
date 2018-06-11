@@ -32,7 +32,7 @@ module Cryptoexchange::Exchanges
 
         def adapt(pair_list)
           pair_list.map do |pair|
-            target, base = pair
+            base, target = pair
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
