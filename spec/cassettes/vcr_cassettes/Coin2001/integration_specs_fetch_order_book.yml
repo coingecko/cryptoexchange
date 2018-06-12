@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coin2001.com/api/v1/public/getOrderBook?market=BTC_LTC&type=both
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coin2001.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Tue, 12 Jun 2018 05:28:41 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      X-Application-Context:
+      - application:production
+      Set-Cookie:
+      - JSESSIONID=3DA6E3D81661726CA72B422AA6101B31; Path=/; HttpOnly
+      X-Locale:
+      - en-US
+      Content-Language:
+      - en
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"message":"","result":{"buy":[{"Quantity":0.3091739,"Rate":0.01469052},{"Quantity":0.43835374,"Rate":0.01460143},{"Quantity":0.15971783,"Rate":0.01450937},{"Quantity":0.34121537,"Rate":0.01450937},{"Quantity":0.38366671,"Rate":0.01445903},{"Quantity":0.35164641,"Rate":0.01445394},{"Quantity":0.12042685,"Rate":0.01445394},{"Quantity":0.16481386,"Rate":0.01438817},{"Quantity":0.17265002,"Rate":0.01431149},{"Quantity":0.33091254,"Rate":0.01431149},{"Quantity":0.24698544,"Rate":0.01431149},{"Quantity":0.20142502,"Rate":0.01427021},{"Quantity":0.16959107,"Rate":0.01423983},{"Quantity":0.13410853,"Rate":0.0141898},{"Quantity":0.12229376,"Rate":0.01416395},{"Quantity":0.1493293,"Rate":0.01415896},{"Quantity":0.45182658,"Rate":0.01411414},{"Quantity":0.22002071,"Rate":0.0141023},{"Quantity":0.23941086,"Rate":0.01408024},{"Quantity":0.43711502,"Rate":0.01394317},{"Quantity":0.28258583,"Rate":0.01389418},{"Quantity":0.46999172,"Rate":0.01386887},{"Quantity":0.08016278,"Rate":0.01382009},{"Quantity":0.17884924,"Rate":0.01379185},{"Quantity":0.13991135,"Rate":0.0137699},{"Quantity":0.23259794,"Rate":0.01372133},{"Quantity":0.33091254,"Rate":0.01372133},{"Quantity":0.33307159,"Rate":0.01368174},{"Quantity":0.12213455,"Rate":0.01359856},{"Quantity":0.12583829,"Rate":0.01347299},{"Quantity":0.30007592,"Rate":0.01347299},{"Quantity":0.1493293,"Rate":0.01342151},{"Quantity":0.36923462,"Rate":0.01337903},{"Quantity":0.73504378,"Rate":0.0102249}],"sell":[{"Quantity":0.17003045,"Rate":0.01633694},{"Quantity":0.47656423,"Rate":0.01633694},{"Quantity":0.35286472,"Rate":0.01639099},{"Quantity":0.23169484,"Rate":0.01639455},{"Quantity":0.21901926,"Rate":0.01645599},{"Quantity":0.37786839,"Rate":0.01645599},{"Quantity":0.41669435,"Rate":0.01650031},{"Quantity":0.33766611,"Rate":0.01650031},{"Quantity":0.07220415,"Rate":0.01661892},{"Quantity":0.34267888,"Rate":0.01678103},{"Quantity":0.16168651,"Rate":0.01678103},{"Quantity":0.07722341,"Rate":0.01678103},{"Quantity":0.09867901,"Rate":0.01678185},{"Quantity":0.21420565,"Rate":0.01694478},{"Quantity":0.17569677,"Rate":0.01694478},{"Quantity":0.08598984,"Rate":0.01705033},{"Quantity":0.21019739,"Rate":0.01721427},{"Quantity":0.23886066,"Rate":0.01721427},{"Quantity":0.10202536,"Rate":0.01722482},{"Quantity":0.46575369,"Rate":0.0172698},{"Quantity":0.20915101,"Rate":0.01743654},{"Quantity":0.35175396,"Rate":0.01743654},{"Quantity":0.22718687,"Rate":0.01753836},{"Quantity":0.23169484,"Rate":0.01754217},{"Quantity":0.2313572,"Rate":0.01756497},{"Quantity":3.65773795,"Rate":0.02},{"Quantity":1.23987736,"Rate":0.022},{"Quantity":0.04292,"Rate":1125.0}]}}'
+    http_version: 
+  recorded_at: Tue, 12 Jun 2018 05:28:42 GMT
+recorded_with: VCR 4.0.0
