@@ -2,15 +2,26 @@ module Cryptoexchange::Exchanges
   module Coinut
     module Services
       class Trades < Cryptoexchange::Services::Market
-        include CoinutHelper
-
         def fetch(market_pair)
-          output = prepare_and_send_request(market_pair.inst_id, false, true)
+          authentication = Cryptoexchange::Exchanges::Coinut::Authentication.new(
+            :trades,
+            Cryptoexchange::Exchanges::Coinut::Market::NAME
+          )
+          authentication.validate_credentials!
+
+          payload_ = payload(market_pair)
+          headers = authentication.headers(payload_)
+          output = fetch_using_post(ticker_url, payload_, headers)
           adapt(output, market_pair)
         end
 
+        def payload(market_pair)
+          '{"nonce":' + SecureRandom.random_number(99999).to_s + ',"request":"inst_trade", "inst_id":' + market_pair.inst_id + ' }'
+        end
+
+
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Coinut::Market::API_URL}"
+          Cryptoexchange::Exchanges::Coinut::Market::API_URL
         end
 
         def adapt(output, market_pair)

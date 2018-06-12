@@ -1,11 +1,16 @@
 require 'spec_helper'
-require 'pry'
+require 'yaml'
+
 RSpec.describe 'Coinut integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:btc_sgd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'SGD', market: 'coinut', inst_id: "852380") }
+  let(:filename) { Cryptoexchange::Credentials.send(:filename) }
+
+  before do
+    Cryptoexchange::Credentials.stub(:get).with('coinut').and_return({ 'username' => 'blah', 'api_key' => 'blah' })
+  end
 
   it 'fetch pairs' do
-    pending "response: Must include auth file named cryptoexchange_api_keys.yml in config/cryptoexchange"
     pairs = client.pairs('coinut')
     expect(pairs).not_to be_empty
 
@@ -16,7 +21,6 @@ RSpec.describe 'Coinut integration specs' do
   end
 
   it 'fetch ticker' do
-    pending "response: Must include auth file named cryptoexchange_api_keys.yml in config/cryptoexchange"
     ticker = client.ticker(btc_sgd_pair)
 
     expect(ticker.base).to eq 'BTC'
@@ -35,7 +39,6 @@ RSpec.describe 'Coinut integration specs' do
   end
 
   it 'fetch order book' do
-    pending "response: Must include auth file named cryptoexchange_api_keys.yml in config/cryptoexchange"
     order_book = client.order_book(btc_sgd_pair)
 
     expect(order_book.base).to eq 'BTC'
@@ -51,10 +54,11 @@ RSpec.describe 'Coinut integration specs' do
   end
 
   it 'fetch trade' do
-    pending "response: Must include auth file named cryptoexchange_api_keys.yml in config/cryptoexchange"
     trades = client.trades(btc_sgd_pair)
 
     expect(trades).to_not be_empty
+
+    trade = trades.first
     expect(trade.trade_id).to_not be_nil
     expect(trade.base).to eq 'BTC'
     expect(trade.target).to eq 'SGD'

@@ -53,16 +53,8 @@ module Cryptoexchange
         YAML.load_file(path)[:pairs]
       end
 
-      def fetch_auth_credentials(path)
-        YAML.load_file(path)
-      end
-
       def user_override_path
         "config/cryptoexchange/#{exchange_class::NAME}.yml"
-      end
-
-      def auth_details_path
-        "config/cryptoexchange/cryptoexchange_api_keys.yml"
       end
 
       def default_override_path
@@ -75,10 +67,6 @@ module Cryptoexchange
 
       def default_override_exist?
         File.exist? default_override_path
-      end
-
-      def auth_file_exist?
-        File.exist? auth_details_path
       end
 
       def exchange_class
