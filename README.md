@@ -69,11 +69,12 @@ Or install it yourself as:
 | BTER              | Y       |            |         |         | Y           |
 | Buyucoin          | Y       | N          | N       |         | Y           |
 | BX Thailand       | Y       |            |         |         | Y           |
+| CCex              | Y       |            |         |         | Y           |
 | Cex               | Y       | Y          | Y       |         | Y           |
 | Cfinex            | Y       | Y          | Y       |         | Y           |
-| CCex              | Y       |            |         |         | Y           |
 | CHBTC             | Y       |            |         |         | User-Defined|
 | Cobinhood         | Y       | Y          |         |         | Y           |
+| Coin2001          | Y       | Y          | Y       |         | Y           |
 | CoinEgg           | Y       | Y          | Y       |         | User-Defined|
 | Coincheck         | Y       |            |         |         | User-Defined|
 | Coinex            | Y       | Y          | Y       |         | Y           |
