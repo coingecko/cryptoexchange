@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cdn.singularx.com/v1/Ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - cdn.singularx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1470'
+      Connection:
+      - close
+      Server:
+      - nginx
+      Date:
+      - Wed, 13 Jun 2018 03:18:13 GMT
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, If-None-Match
+      Access-Control-Allow-Methods:
+      - POST, PUT, GET, DELETE, OPTIONS
+      Cache-Control:
+      - public, max-age=60
+      Etag:
+      - W/"5be-/vCTao7Bs1weS0inIMC+AinHU40"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 520e7d107c18540788439f1b4047cc24.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - tKY3C4FGX8UmT4dhVjq5TZWQ0ruaLOpzyKztIDb1t_6LtyT2UPgilw==
+    body:
+      encoding: UTF-8
+      string: '{"ETH_XES":{"last":"0.00027472527472527473","quoteVolume":"362.87508722958827516","baseVolume":"0.099690958030106669","ask":"5555.55555555555555555556","bid":"0.00017"},"ETH_SNGLS":{"last":"0.00008808","quoteVolume":"39961","baseVolume":"3.575938380000000001","ask":"1.135332e-14","bid":"10000000000000"},"ETH_CENNZ":{"last":"0.000294","quoteVolume":"148596.588516805619157466","baseVolume":"54.687033498739227438","ask":"3412.96928327645051194539","bid":"0.000279"},"ETH_TROLL":{"quoteVolume":"0","baseVolume":"0","ask":"1000","bid":"0.001"},"ETH_TRX":{"quoteVolume":"0","baseVolume":"0","ask":"1.17647059e-12","bid":"1000000"},"ETH_NFC":{"quoteVolume":"0","baseVolume":"0","ask":"22222.22222222222222222222","bid":"0.00002"},"ETH_EXL":{"quoteVolume":"0","baseVolume":"0","ask":"10000"},"ETH_SNT":{"quoteVolume":"0","baseVolume":"0","ask":"13.33333333333333333333"},"ETH_PLU":{"quoteVolume":"0","baseVolume":"0","ask":"0.2"},"ETH_HAPPY":{"quoteVolume":"0","baseVolume":"0","ask":"3003.003003003003003003"},"ETH_SPECT":{"quoteVolume":"0","baseVolume":"0","ask":"5e-13"},"ETH_BTKN":{"quoteVolume":"0","baseVolume":"0","ask":"905.79710144927536231884"},"ETH_BAT":{"quoteVolume":"0","baseVolume":"0","ask":"1.8018018018018018018"},"ETH_YEEZY":{"quoteVolume":"0","baseVolume":"0","ask":"2857.14285714285714285714"},"ETH_GRMTK":{"quoteVolume":"0","baseVolume":"0","ask":"1000"},"ETH_KIN":{"quoteVolume":"0","baseVolume":"0","ask":"3333333.33333333333333333333","bid":"3e-7"}}'
+    http_version: 
+  recorded_at: Wed, 13 Jun 2018 03:18:13 GMT
+recorded_with: VCR 4.0.0
