@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://safe.trade/api/v2/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - safe.trade
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 14 Jun 2018 03:39:41 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '997'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d726c0e714a14200d698791360c31a63e1528947580; expires=Fri, 14-Jun-19
+        03:39:40 GMT; path=/; domain=.safe.trade; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Version:
+      - HTTP/1.0
+      Host:
+      - safe.trade
+      X-Real-Ip:
+      - 172.17.0.2
+      X-Forwarded-For:
+      - 118.140.214.74, 172.68.253.236, 172.17.0.2
+      X-Forwarded-Proto:
+      - http
+      X-Forwarded-Ssl:
+      - 'on'
+      X-Forwarded-Port:
+      - '443'
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - HK
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 118.140.214.74
+      Etag:
+      - W/"212c8cd92b519d085fed022e659fd8bb"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bc8df6df-422f-4c57-a71a-316029d6d58c
+      X-Runtime:
+      - '0.021040'
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=31536000
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42a9c56cdb623409-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"safebtcz":{"at":1528947581,"ticker":{"buy":"29.0","sell":"31.99","low":"28.5","high":"34.48","last":"31.99","vol":"15204.84"}},"safebtc":{"at":1528947581,"ticker":{"buy":"0.0000085","sell":"0.00000869","low":"0.000007","high":"0.00001016","last":"0.000008","vol":"72042.7146"}},"btczltc":{"at":1528947581,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"zensafe":{"at":1528947581,"ticker":{"buy":"180.0","sell":"0.0","low":"0.0","high":"0.0","last":"330.0","vol":"0.0"}},"xsgsafe":{"at":1528947581,"ticker":{"buy":"0.0","sell":"0.0","low":"3.0","high":"3.0","last":"3.0","vol":"0.0"}},"xsgbtc":{"at":1528947581,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"cmmsafe":{"at":1528947581,"ticker":{"buy":"0.0","sell":"1.6","low":"0.9","high":"2.0","last":"1.5","vol":"200.9337"}},"safeltc":{"at":1528947581,"ticker":{"buy":"0.0","sell":"0.0006","low":"0.00049001","high":"0.00049001","last":"0.00049001","vol":"0.08"}}}'
+    http_version: 
+  recorded_at: Thu, 14 Jun 2018 03:39:41 GMT
+recorded_with: VCR 4.0.0

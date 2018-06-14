@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://safe.trade/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - safe.trade
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 14 Jun 2018 03:39:40 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '213'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d624064ef7be634522d3019fc9fc3f5bd1528947579; expires=Fri, 14-Jun-19
+        03:39:39 GMT; path=/; domain=.safe.trade; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Version:
+      - HTTP/1.0
+      Host:
+      - safe.trade
+      X-Real-Ip:
+      - 172.17.0.2
+      X-Forwarded-For:
+      - 118.140.214.74, 172.68.253.236, 172.17.0.2
+      X-Forwarded-Proto:
+      - http
+      X-Forwarded-Ssl:
+      - 'on'
+      X-Forwarded-Port:
+      - '443'
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - HK
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 118.140.214.74
+      Etag:
+      - W/"b68df8b1202bb0d3c74b7b90896c32c9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6c26f932-32a5-42ce-9344-17011c3f55bc
+      X-Runtime:
+      - '0.003623'
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=31536000
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42a9c5663ff884fc-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"safebtcz","name":"SAFE/BTCZ"},{"id":"safebtc","name":"SAFE/BTC"},{"id":"btczltc","name":"BTCZ/LTC"},{"id":"zensafe","name":"ZEN/SAFE"},{"id":"cmmsafe","name":"CMM/SAFE"},{"id":"safeltc","name":"SAFE/LTC"}]'
+    http_version: 
+  recorded_at: Thu, 14 Jun 2018 03:39:40 GMT
+recorded_with: VCR 4.0.0
