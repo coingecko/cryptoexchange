@@ -178,6 +178,7 @@ Or install it yourself as:
 | RightBTC          | Y       | Y          | Y       |         | Y           |
 | Sigen             | Y       |            |         |         | Y           |
 | Simex             | Y       | N          | N       |         | Y           |
+| Singularx         | Y       | N          | N       |         | Y           |
 | Sistemkoin        | Y       |            |         |         | Y           |
 | SouthXchange      | Y       | Y          | Y       |         | Y           |
 | Stocks Exchange   | Y       |            |         |         | Y           |
