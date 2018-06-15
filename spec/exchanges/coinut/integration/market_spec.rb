@@ -7,7 +7,7 @@ RSpec.describe 'Coinut integration specs' do
   let(:filename) { Cryptoexchange::Credentials.send(:filename) }
 
   before do
-    Cryptoexchange::Credentials.stub(:get).with('coinut').and_return({ 'username' => 'blah', 'api_key' => 'blah' })
+    allow(Cryptoexchange::Credentials).to receive(:get).with('coinut').and_return({ 'username' => 'blah', 'api_key' => 'blah' })
   end
 
   it 'fetch pairs' do
