@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.coinut.com/
+    body:
+      encoding: UTF-8
+      string: '{"nonce":25144,"request":"inst_list", "sec_type":"SPOT"}'
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinut.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 23 Apr 2018 06:12:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1428'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8b1e7ced500328a9facab3969971336e1524463928; expires=Tue, 23-Apr-19
+        06:12:08 GMT; path=/; domain=.coinut.com; HttpOnly
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 40fe2d428a103138-SIN
+    body:
+      encoding: UTF-8
+      string: '{"SPOT":{"BTCSGD":[{"base":"BTC","decimal_places":2,"inst_id":852380,"quote":"SGD"}],"BTCUSD":[{"base":"BTC","decimal_places":2,"inst_id":852379,"quote":"USD"}],"BTCUSDT":[{"base":"BTC","decimal_places":2,"inst_id":490589,"quote":"USDT"}],"ETCBTC":[{"base":"ETC","decimal_places":6,"inst_id":3,"quote":"BTC"}],"ETCLTC":[{"base":"ETC","decimal_places":4,"inst_id":490588,"quote":"LTC"}],"ETCUSDT":[{"base":"ETC","decimal_places":2,"inst_id":490592,"quote":"USDT"}],"ETHBTC":[{"base":"ETH","decimal_places":5,"inst_id":2,"quote":"BTC"}],"ETHLTC":[{"base":"ETH","decimal_places":3,"inst_id":490569,"quote":"LTC"}],"ETHUSDT":[{"base":"ETH","decimal_places":2,"inst_id":490591,"quote":"USDT"}],"LTCBTC":[{"base":"LTC","decimal_places":5,"inst_id":1,"quote":"BTC"}],"LTCSGD":[{"base":"LTC","decimal_places":2,"inst_id":852381,"quote":"SGD"}],"LTCUSD":[{"base":"LTC","decimal_places":2,"inst_id":852234,"quote":"USD"}],"LTCUSDT":[{"base":"LTC","decimal_places":2,"inst_id":490590,"quote":"USDT"}],"USDTSGD":[{"base":"USDT","decimal_places":3,"inst_id":899746,"quote":"SGD"}],"USDTUSD":[{"base":"USDT","decimal_places":3,"inst_id":852220,"quote":"USD"}],"XMRBTC":[{"base":"XMR","decimal_places":5,"inst_id":852383,"quote":"BTC"}],"XMRLTC":[{"base":"XMR","decimal_places":3,"inst_id":852384,"quote":"LTC"}],"XMRUSDT":[{"base":"XMR","decimal_places":2,"inst_id":852382,"quote":"USDT"}]},"nonce":25144,"reply":"inst_list","status":["OK"]}
+
+'
+    http_version: 
+  recorded_at: Mon, 23 Apr 2018 06:12:09 GMT
+recorded_with: VCR 4.0.0
