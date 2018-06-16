@@ -183,6 +183,7 @@ Or install it yourself as:
 | Singularx         | Y       | N          | N       |         | Y           |
 | Sistemkoin        | Y       |            |         |         | Y           |
 | SouthXchange      | Y       | Y          | Y       |         | Y           |
+| Stellar Dex       | Y       |            |         |         | User-Defined|
 | Stocks Exchange   | Y       |            |         |         | Y           |
 | Switcheo          | Y       | N          | N       |         | Y           |
 | SZZC              | Y       |            |         |         | Y           |
