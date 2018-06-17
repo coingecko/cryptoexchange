@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://joyso.io/api/v1/tickers/market
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - joyso.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 17 Jun 2018 14:23:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=da3df238121eaa9870b63d3173bc794341529245382; expires=Mon, 17-Jun-19
+        14:23:02 GMT; path=/; domain=.joyso.io; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"b395f7c1041b75c72020cb35ef79f477"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Runtime:
+      - '0.012021'
+      Referrer-Policy:
+      - origin-when-cross-origin
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42c62bf68df331c2-SIN
+    body:
+      encoding: UTF-8
+      string: '{"tickers":[{"pair":"ETH_DAI","base_volume":"0.0","qoute_volume":"0.0","last":"0.9"},{"pair":"ETH_MITH","base_volume":"0.0","qoute_volume":"0.0","last":"0.00079999"},{"pair":"ETH_BTM","base_volume":"0.0","qoute_volume":"0.0","last":"0.00084"},{"pair":"ETH_GNO","base_volume":"0.0","qoute_volume":"0.0","last":"0.1277"},{"pair":"ETH_NCT","base_volume":"0.0","qoute_volume":"0.0","last":"0.0000141"},{"pair":"ETH_AE","base_volume":"0.0","qoute_volume":"0.0","last":"0.005"},{"pair":"ETH_ZIL","base_volume":"0.0","qoute_volume":"0.0","last":"0.000186"},{"pair":"ETH_CMT","base_volume":"0.0","qoute_volume":"0.0","last":"0.00041001"},{"pair":"ETH_DML","base_volume":"0.0","qoute_volume":"0.0","last":"0.000208"},{"pair":"ETH_DAT","base_volume":"0.0","qoute_volume":"0.0","last":"0.000035"},{"pair":"ETH_TOMO","base_volume":"0.0","qoute_volume":"0.0","last":"0.0025"},{"pair":"ETH_GTO","base_volume":"0.0","qoute_volume":"0.0","last":"0.003"},{"pair":"ETH_HOT","base_volume":"0.0","qoute_volume":"0.0","last":"0.000001325"},{"pair":"ETH_BITCAR","base_volume":"0.0","qoute_volume":"0.0","last":"0.000105"},{"pair":"ETH_VERI","base_volume":"0.0","qoute_volume":"0.0","last":null},{"pair":"ETH_IOST","base_volume":"0.0","qoute_volume":"0.0","last":"0.0000515"},{"pair":"ETH_RHOC","base_volume":"0.0","qoute_volume":"0.0","last":null},{"pair":"ETH_NEXO","base_volume":"0.0","qoute_volume":"0.0","last":"0.000226001"},{"pair":"ETH_BLZ","base_volume":"0.0","qoute_volume":"0.0","last":"0.000559153"},{"pair":"ETH_GEN","base_volume":"0.0","qoute_volume":"0.0","last":"0.0001"},{"pair":"ETH_MAN","base_volume":"0.0","qoute_volume":"0.0","last":null},{"pair":"ETH_OWD","base_volume":"0.0","qoute_volume":"0.0","last":"0.000028"},{"pair":"ETH_CTXC","base_volume":"0.0","qoute_volume":"0.0","last":null},{"pair":"ETH_POLY","base_volume":"0.0","qoute_volume":"0.0","last":"0.0009001"},{"pair":"ETH_WTC","base_volume":"0.0","qoute_volume":"0.0","last":null},{"pair":"ETH_FMF","base_volume":"0.0","qoute_volume":"0.0","last":"0.00011"},{"pair":"ETH_HYDRO","base_volume":"0.0","qoute_volume":"0.0","last":"0.000005011"},{"pair":"ETH_OMG","base_volume":"0.0","qoute_volume":"0.0","last":"0.0192"},{"pair":"ETH_USDT","base_volume":"0.0","qoute_volume":"0.0","last":"0.0014578"},{"pair":"ETH_PPT","base_volume":"0.0","qoute_volume":"0.0","last":"0.0285"},{"pair":"ETH_BITO","base_volume":"0.0","qoute_volume":"0.0","last":"0.000197"},{"pair":"ETH_RDN","base_volume":"0.0","qoute_volume":"0.0","last":"0.003045"},{"pair":"ETH_COB","base_volume":"0.0","qoute_volume":"0.0","last":"0.0001187"},{"pair":"ETH_JOY","base_volume":"18.74173787","qoute_volume":"191168.000001","last":"0.000090002"},{"pair":"ETH_PLR","base_volume":"0.0","qoute_volume":"0.0","last":"0.000342"}]}'
+    http_version: 
+  recorded_at: Sun, 17 Jun 2018 14:23:02 GMT
+recorded_with: VCR 4.0.0
