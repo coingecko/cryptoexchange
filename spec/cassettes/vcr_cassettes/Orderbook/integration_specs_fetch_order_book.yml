@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.orderbook.io/markets/TAAS-ETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.orderbook.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 Jun 2018 05:14:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0f3ae1bf19a47a6ff9b8cd7137cda01d1529298866; expires=Tue, 18-Jun-19
+        05:14:26 GMT; path=/; domain=.orderbook.io; HttpOnly
+      X-Rate-Limit-Remaining:
+      - '58'
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Reset:
+      - '1529298903'
+      Vary:
+      - origin,accept-encoding
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=31536000
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42cb45bbdfec30ba-SIN
+    body:
+      encoding: UTF-8
+      string: '{"buy":[{"price":"1000000000","amount":"50000000"}],"sell":[{"price":"11000000000","amount":"23900000"}]}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 05:14:27 GMT
+recorded_with: VCR 4.0.0
