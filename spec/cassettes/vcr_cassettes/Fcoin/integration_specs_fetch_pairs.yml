@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.fcoin.com/v2/public/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.fcoin.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 Jun 2018 15:24:21 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - nginx
+    body:
+      encoding: UTF-8
+      string: '{"status":0,"data":[{"name":"btcusdt","base_currency":"btc","quote_currency":"usdt","price_decimal":2,"amount_decimal":4},{"name":"ethusdt","base_currency":"eth","quote_currency":"usdt","price_decimal":2,"amount_decimal":4},{"name":"bchusdt","base_currency":"bch","quote_currency":"usdt","price_decimal":2,"amount_decimal":4},{"name":"ltcusdt","base_currency":"ltc","quote_currency":"usdt","price_decimal":2,"amount_decimal":4},{"name":"ftusdt","base_currency":"ft","quote_currency":"usdt","price_decimal":6,"amount_decimal":2},{"name":"fteth","base_currency":"ft","quote_currency":"eth","price_decimal":8,"amount_decimal":2},{"name":"zipeth","base_currency":"zip","quote_currency":"eth","price_decimal":8,"amount_decimal":2},{"name":"etcusdt","base_currency":"etc","quote_currency":"usdt","price_decimal":2,"amount_decimal":4},{"name":"ftbtc","base_currency":"ft","quote_currency":"btc","price_decimal":8,"amount_decimal":2},{"name":"icxeth","base_currency":"icx","quote_currency":"eth","price_decimal":6,"amount_decimal":4},{"name":"omgeth","base_currency":"omg","quote_currency":"eth","price_decimal":6,"amount_decimal":4},{"name":"zileth","base_currency":"zil","quote_currency":"eth","price_decimal":8,"amount_decimal":2},{"name":"btmusdt","base_currency":"btm","quote_currency":"usdt","price_decimal":4,"amount_decimal":2}]}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 15:24:21 GMT
+recorded_with: VCR 4.0.0
