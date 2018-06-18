@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.gdax.com/products/btc-usd/trades
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.gdax.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 23 Apr 2018 06:43:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '11356'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d5e2ed193ef898d887cc13fa631456bf51524465801; expires=Tue, 23-Apr-19
+        06:43:21 GMT; path=/; domain=.gdax.com; HttpOnly
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, cb-session, cb-fp
+      Access-Control-Allow-Methods:
+      - GET,POST,DELETE,PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - cb-before, cb-after
+      Access-Control-Max-Age:
+      - '7200'
+      Cache-Control:
+      - public, max-age=5
+      Cb-After:
+      - '42122484'
+      Cb-Before:
+      - '42122583'
+      Etag:
+      - W/"2c5c-73qLU62B15PK8FgP3GorJlfHdfE"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 40fe5afb4c4b2d17-KUL
+    body:
+      encoding: UTF-8
+      string: '[{"time":"2018-04-23T06:43:21.866Z","trade_id":42122583,"price":"8871.99000000","size":"0.62313026","side":"sell"},{"time":"2018-04-23T06:43:21.866Z","trade_id":42122582,"price":"8871.00000000","size":"0.00133000","side":"sell"},{"time":"2018-04-23T06:43:21.866Z","trade_id":42122581,"price":"8871.00000000","size":"0.61227607","side":"sell"},{"time":"2018-04-23T06:43:21.554Z","trade_id":42122580,"price":"8871.00000000","size":"0.88772393","side":"sell"},{"time":"2018-04-23T06:43:21.554Z","trade_id":42122579,"price":"8871.00000000","size":"0.00100000","side":"sell"},{"time":"2018-04-23T06:43:21.554Z","trade_id":42122578,"price":"8870.75000000","size":"0.00888850","side":"sell"},{"time":"2018-04-23T06:43:21.554Z","trade_id":42122577,"price":"8870.00000000","size":"0.00106000","side":"sell"},{"time":"2018-04-23T06:43:21.554Z","trade_id":42122576,"price":"8870.00000000","size":"0.00120000","side":"sell"},{"time":"2018-04-23T06:43:21.554Z","trade_id":42122575,"price":"8870.00000000","size":"0.07402233","side":"sell"},{"time":"2018-04-23T06:43:21.183Z","trade_id":42122574,"price":"8869.99000000","size":"0.01900000","side":"buy"},{"time":"2018-04-23T06:43:20.388Z","trade_id":42122573,"price":"8870.00000000","size":"0.00450000","side":"sell"},{"time":"2018-04-23T06:43:17.875Z","trade_id":42122572,"price":"8870.00000000","size":"0.03220000","side":"sell"},{"time":"2018-04-23T06:43:06.761Z","trade_id":42122571,"price":"8870.00000000","size":"0.01400000","side":"sell"},{"time":"2018-04-23T06:42:54.238Z","trade_id":42122570,"price":"8870.00000000","size":"0.13927767","side":"sell"},{"time":"2018-04-23T06:42:54.238Z","trade_id":42122569,"price":"8870.00000000","size":"0.05000000","side":"sell"},{"time":"2018-04-23T06:42:54.238Z","trade_id":42122568,"price":"8870.00000000","size":"0.03300000","side":"sell"},{"time":"2018-04-23T06:42:54.238Z","trade_id":42122567,"price":"8870.00000000","size":"0.23122233","side":"sell"},{"time":"2018-04-23T06:42:43.253Z","trade_id":42122566,"price":"8869.99000000","size":"0.02140000","side":"buy"},{"time":"2018-04-23T06:42:37.94Z","trade_id":42122565,"price":"8870.00000000","size":"0.01018462","side":"sell"},{"time":"2018-04-23T06:42:33.89Z","trade_id":42122564,"price":"8870.00000000","size":"0.30909339","side":"sell"},{"time":"2018-04-23T06:42:32.474Z","trade_id":42122563,"price":"8869.99000000","size":"0.02070000","side":"buy"},{"time":"2018-04-23T06:42:20.986Z","trade_id":42122562,"price":"8869.99000000","size":"0.11290000","side":"buy"},{"time":"2018-04-23T06:42:14.002Z","trade_id":42122561,"price":"8870.00000000","size":"0.27944913","side":"sell"},{"time":"2018-04-23T06:42:00.37Z","trade_id":42122560,"price":"8869.99000000","size":"0.48447070","side":"buy"},{"time":"2018-04-23T06:41:57.088Z","trade_id":42122559,"price":"8870.00000000","size":"0.33600000","side":"sell"},{"time":"2018-04-23T06:41:44.236Z","trade_id":42122558,"price":"8870.00000000","size":"0.02220000","side":"sell"},{"time":"2018-04-23T06:41:43.297Z","trade_id":42122557,"price":"8869.99000000","size":"0.04983452","side":"buy"},{"time":"2018-04-23T06:41:22.062Z","trade_id":42122556,"price":"8870.00000000","size":"0.31185053","side":"sell"},{"time":"2018-04-23T06:41:22.062Z","trade_id":42122555,"price":"8870.00000000","size":"0.07154947","side":"sell"},{"time":"2018-04-23T06:41:10.049Z","trade_id":42122554,"price":"8869.99000000","size":"0.06993725","side":"buy"},{"time":"2018-04-23T06:41:09.532Z","trade_id":42122553,"price":"8870.00000000","size":"0.04470000","side":"sell"},{"time":"2018-04-23T06:41:04.845Z","trade_id":42122552,"price":"8870.00000000","size":"0.00200000","side":"sell"},{"time":"2018-04-23T06:40:56.628Z","trade_id":42122551,"price":"8870.00000000","size":"0.04496094","side":"sell"},{"time":"2018-04-23T06:40:56.593Z","trade_id":42122550,"price":"8869.99000000","size":"0.01629900","side":"buy"},{"time":"2018-04-23T06:40:56.593Z","trade_id":42122549,"price":"8869.99000000","size":"0.00100100","side":"buy"},{"time":"2018-04-23T06:40:44.657Z","trade_id":42122548,"price":"8870.00000000","size":"0.26659325","side":"sell"},{"time":"2018-04-23T06:40:44.157Z","trade_id":42122547,"price":"8870.00000000","size":"0.02240000","side":"sell"},{"time":"2018-04-23T06:40:40.608Z","trade_id":42122546,"price":"8870.00000000","size":"0.26560417","side":"sell"},{"time":"2018-04-23T06:40:38.546Z","trade_id":42122545,"price":"8869.67000000","size":"0.00143000","side":"sell"},{"time":"2018-04-23T06:40:38.546Z","trade_id":42122544,"price":"8869.67000000","size":"0.09007938","side":"sell"},{"time":"2018-04-23T06:40:35.486Z","trade_id":42122543,"price":"8869.67000000","size":"0.00992062","side":"sell"},{"time":"2018-04-23T06:40:34.472Z","trade_id":42122542,"price":"8869.66000000","size":"0.00024607","side":"sell"},{"time":"2018-04-23T06:40:34.472Z","trade_id":42122541,"price":"8869.66000000","size":"0.01000000","side":"sell"},{"time":"2018-04-23T06:40:33.464Z","trade_id":42122540,"price":"8869.59000000","size":"0.01000000","side":"sell"},{"time":"2018-04-23T06:40:33.464Z","trade_id":42122539,"price":"8869.59000000","size":"0.00108000","side":"sell"},{"time":"2018-04-23T06:40:33.464Z","trade_id":42122538,"price":"8869.59000000","size":"0.00140901","side":"sell"},{"time":"2018-04-23T06:40:33.464Z","trade_id":42122537,"price":"8869.58000000","size":"0.00196000","side":"sell"},{"time":"2018-04-23T06:40:33.464Z","trade_id":42122536,"price":"8869.58000000","size":"0.00186023","side":"sell"},{"time":"2018-04-23T06:40:33.464Z","trade_id":42122535,"price":"8869.57000000","size":"0.00107083","side":"sell"},{"time":"2018-04-23T06:40:33.464Z","trade_id":42122534,"price":"8866.93000000","size":"0.00200000","side":"sell"},{"time":"2018-04-23T06:40:33.464Z","trade_id":42122533,"price":"8866.93000000","size":"0.00127000","side":"sell"},{"time":"2018-04-23T06:40:33.464Z","trade_id":42122532,"price":"8866.93000000","size":"0.00100000","side":"sell"},{"time":"2018-04-23T06:40:33.464Z","trade_id":42122531,"price":"8866.54000000","size":"0.00169000","side":"sell"},{"time":"2018-04-23T06:40:33.464Z","trade_id":42122530,"price":"8866.54000000","size":"0.00197368","side":"sell"},{"time":"2018-04-23T06:40:32.401Z","trade_id":42122529,"price":"8866.53000000","size":"0.12660000","side":"buy"},{"time":"2018-04-23T06:40:30.007Z","trade_id":42122528,"price":"8866.53000000","size":"1.07791199","side":"buy"},{"time":"2018-04-23T06:40:30.007Z","trade_id":42122527,"price":"8866.53000000","size":"0.17403800","side":"buy"},{"time":"2018-04-23T06:40:28.535Z","trade_id":42122526,"price":"8866.53000000","size":"0.10754085","side":"sell"},{"time":"2018-04-23T06:40:28.535Z","trade_id":42122525,"price":"8864.00000000","size":"0.00170000","side":"sell"},{"time":"2018-04-23T06:40:28.535Z","trade_id":42122524,"price":"8864.00000000","size":"0.00100000","side":"sell"},{"time":"2018-04-23T06:40:28.535Z","trade_id":42122523,"price":"8863.63000000","size":"0.01000000","side":"sell"},{"time":"2018-04-23T06:40:28.535Z","trade_id":42122522,"price":"8863.63000000","size":"0.03300000","side":"sell"},{"time":"2018-04-23T06:40:28.535Z","trade_id":42122521,"price":"8863.63000000","size":"0.00187000","side":"sell"},{"time":"2018-04-23T06:40:28.535Z","trade_id":42122520,"price":"8863.63000000","size":"0.20835825","side":"sell"},{"time":"2018-04-23T06:40:28.425Z","trade_id":42122519,"price":"8863.63000000","size":"0.28575598","side":"sell"},{"time":"2018-04-23T06:40:27.403Z","trade_id":42122518,"price":"8863.63000000","size":"0.13135819","side":"sell"},{"time":"2018-04-23T06:40:26.403Z","trade_id":42122517,"price":"8863.63000000","size":"0.02017884","side":"sell"},{"time":"2018-04-23T06:40:26.4Z","trade_id":42122516,"price":"8863.62000000","size":"0.87842081","side":"buy"},{"time":"2018-04-23T06:40:26.4Z","trade_id":42122515,"price":"8863.62000000","size":"0.27000000","side":"buy"},{"time":"2018-04-23T06:40:26.4Z","trade_id":42122514,"price":"8863.62000000","size":"0.10352918","side":"buy"},{"time":"2018-04-23T06:40:26.395Z","trade_id":42122513,"price":"8863.63000000","size":"0.17778815","side":"sell"},{"time":"2018-04-23T06:40:22.355Z","trade_id":42122512,"price":"8863.63000000","size":"0.01025088","side":"sell"},{"time":"2018-04-23T06:40:21.338Z","trade_id":42122511,"price":"8863.63000000","size":"0.15373806","side":"sell"},{"time":"2018-04-23T06:40:20.315Z","trade_id":42122510,"price":"8863.63000000","size":"0.00141107","side":"sell"},{"time":"2018-04-23T06:40:20.276Z","trade_id":42122509,"price":"8863.62000000","size":"0.40220000","side":"buy"},{"time":"2018-04-23T06:40:13.455Z","trade_id":42122508,"price":"8863.62000000","size":"0.11870000","side":"buy"},{"time":"2018-04-23T06:40:13.043Z","trade_id":42122507,"price":"8863.63000000","size":"0.00191905","side":"sell"},{"time":"2018-04-23T06:40:11.253Z","trade_id":42122506,"price":"8863.62000000","size":"0.07393127","side":"buy"},{"time":"2018-04-23T06:40:10.589Z","trade_id":42122505,"price":"8863.62000000","size":"0.33263955","side":"buy"},{"time":"2018-04-23T06:40:10.589Z","trade_id":42122504,"price":"8863.62000000","size":"0.22800000","side":"buy"},{"time":"2018-04-23T06:40:10.589Z","trade_id":42122503,"price":"8863.62000000","size":"0.06880180","side":"buy"},{"time":"2018-04-23T06:40:07.966Z","trade_id":42122502,"price":"8863.63000000","size":"0.00924153","side":"sell"},{"time":"2018-04-23T06:40:07.966Z","trade_id":42122501,"price":"8863.63000000","size":"0.00085847","side":"sell"},{"time":"2018-04-23T06:39:57.033Z","trade_id":42122500,"price":"8863.63000000","size":"0.01014153","side":"sell"},{"time":"2018-04-23T06:39:57.033Z","trade_id":42122499,"price":"8863.63000000","size":"0.01055847","side":"sell"},{"time":"2018-04-23T06:39:57.033Z","trade_id":42122498,"price":"8863.63000000","size":"0.00170000","side":"sell"},{"time":"2018-04-23T06:39:44.824Z","trade_id":42122497,"price":"8863.62000000","size":"0.07640000","side":"buy"},{"time":"2018-04-23T06:39:38.9Z","trade_id":42122496,"price":"8863.62000000","size":"0.03994005","side":"buy"},{"time":"2018-04-23T06:39:34.202Z","trade_id":42122495,"price":"8863.62000000","size":"0.02590000","side":"buy"},{"time":"2018-04-23T06:39:07.583Z","trade_id":42122494,"price":"8863.62000000","size":"0.04864815","side":"buy"},{"time":"2018-04-23T06:39:03.252Z","trade_id":42122493,"price":"8863.63000000","size":"0.12112365","side":"sell"},{"time":"2018-04-23T06:38:59.816Z","trade_id":42122492,"price":"8863.63000000","size":"0.01230000","side":"sell"},{"time":"2018-04-23T06:38:47.876Z","trade_id":42122491,"price":"8863.63000000","size":"0.20000000","side":"sell"},{"time":"2018-04-23T06:38:47.315Z","trade_id":42122490,"price":"8863.62000000","size":"0.08850000","side":"buy"},{"time":"2018-04-23T06:38:42.424Z","trade_id":42122489,"price":"8862.84000000","size":"0.17653844","side":"buy"},{"time":"2018-04-23T06:38:41.895Z","trade_id":42122488,"price":"8862.85000000","size":"0.00112493","side":"sell"},{"time":"2018-04-23T06:38:35.59Z","trade_id":42122487,"price":"8862.85000000","size":"0.12940000","side":"sell"},{"time":"2018-04-23T06:38:34.18Z","trade_id":42122486,"price":"8862.84000000","size":"0.26615391","side":"buy"},{"time":"2018-04-23T06:38:34.18Z","trade_id":42122485,"price":"8862.84000000","size":"0.00100000","side":"buy"},{"time":"2018-04-23T06:38:34.18Z","trade_id":42122484,"price":"8862.84000000","size":"0.10000000","side":"buy"}]'
+    http_version: 
+  recorded_at: Mon, 23 Apr 2018 06:43:22 GMT
+recorded_with: VCR 4.0.0

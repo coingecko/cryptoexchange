@@ -122,6 +122,7 @@ Or install it yourself as:
 | Gate              | Y       | Y          | Y       |         | Y           |
 | Gatecoin          | Y       |            |         |         | Y           |
 | GDAX              | Y       |            |         |         | Y           |
+| GDAX              | Y       | Y          | Y       |         | Y           |
 | Gemini            | Y       | Y          | Y       |         | Y           |
 | GetBTC            | Y       | Y          | Y       |         | User-Defined|
 | GOPAX             | Y       | Y          | Y       |         | Y           |
