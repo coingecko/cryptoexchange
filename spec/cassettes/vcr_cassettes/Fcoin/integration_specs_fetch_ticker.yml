@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.fcoin.com/v2/market/ticker/ethusdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.fcoin.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 Jun 2018 15:25:05 GMT
+      Content-Length:
+      - '238'
+      Connection:
+      - close
+      Server:
+      - nginx
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":0,"data":{"ticker":[497.010000000,4.380000000,496.980000000,0.260200000,497.050000000,1.197589340,498.030000000,502.850000000,487.110000000,1206605.609217398,598658463.365743551400000000],"type":"ticker.ethusdt","seq":51676737}}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 15:25:05 GMT
+recorded_with: VCR 4.0.0

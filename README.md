@@ -115,6 +115,7 @@ Or install it yourself as:
 | Extstock          | Y       | Y          | Y       |         | Y           |
 | Exx               | Y       | Y          | Y       |         | Y           |
 | F1cx              | Y       | Y          | Y       |         | Y           |
+| Fcoin             | Y       | Y          | Y       |         | Y           |
 | Fex               | Y       | N          | N       |         | Y           |
 | Fisco             | Y       | Y          | Y       |         | Y           |
 | Forkdelta         | Y       | N          | N       |         | Y           |
