@@ -1,0 +1,133 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://joyso.io/api/v1/system
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - joyso.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 17 Jun 2018 15:30:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d76b35da6710623bca271aa9dd37ef93a1529249450; expires=Mon, 17-Jun-19
+        15:30:50 GMT; path=/; domain=.joyso.io; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"45378175eaf4a606a502952cd562faa7"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Runtime:
+      - '0.019371'
+      Referrer-Policy:
+      - origin-when-cross-origin
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42c68f4a8ac0a8f4-SIN
+    body:
+      encoding: UTF-8
+      string: '{"contracts":["04f062809b244e37e7fdc21d9409469c989c2342"],"joy":"dde12a12a6f67156e0da672be05c374e1b0a3e57","default_token":"dde12a12a6f67156e0da672be05c374e1b0a3e57","tokens":[{"address":"89d24a6b4ccb1b6faa2625fe562bdd9a23260359","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"DAI","name":"DAI
+        Stablecoin","index":3,"allowance_changeable":true},{"address":"3893b9422cd5d70a81edeffe3d5a1c6a978310bb","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"MITH","name":"Mithril","index":5,"allowance_changeable":true},{"address":"cb97e65f07da24d46bcdd078ebebd7c6e6e3d750","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":8,"symbol":"BTM","name":"Bytom","index":6,"allowance_changeable":true},{"address":"6810e776880c02933d47db1b9fc05908e5386b96","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"GNO","name":"GNOSIS","index":7,"allowance_changeable":true},{"address":"9e46a38f5daabe8683e10793b06749eef7d733d1","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"NCT","name":"Polyswarm","index":8,"allowance_changeable":true},{"address":"5ca9a71b1d01849c0a95490cc00559717fcf0d1d","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"AE","name":"Aeternity","index":9,"allowance_changeable":true},{"address":"05f4a42e251f2d52b8ed15e9fedaacfcef1fad27","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":12,"symbol":"ZIL","name":"Zilliqa","index":10,"allowance_changeable":true},{"address":"f85feea2fdd81d51177f6b8f35f0e6734ce45f5f","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"CMT","name":"CyberMiles","index":13,"allowance_changeable":true},{"address":"bcdfe338d55c061c084d81fd793ded00a27f226d","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"DML","name":"Decentralized
+        Machine Learning","index":15,"allowance_changeable":true},{"address":"81c9151de0c8bafcd325a57e3db5a5df1cebf79c","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"DAT","name":"DATUM","index":16,"allowance_changeable":true},{"address":"8b353021189375591723e7384262f45709a3c3dc","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"TOMO","name":"TomoChain","index":18,"allowance_changeable":true},{"address":"c5bbae50781be1669306b9e001eff57a2957b09d","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":5,"symbol":"GTO","name":"Gifto","index":20,"allowance_changeable":true},{"address":"6c6ee5e31d828de241282b9606c8e98ea48526e2","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"HOT","name":"HoloToken","index":22,"allowance_changeable":true},{"address":"08b4c866ae9d1be56a06e0c302054b4ffe067b43","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":8,"symbol":"BITCAR","name":"BitCar","index":28,"allowance_changeable":true},{"address":"8f3470a7388c05ee4e7af3d01d8c722b0ff52374","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"VERI","name":"Veritaseum","index":26,"allowance_changeable":true},{"address":"fa1a856cfa3409cfa145fa4e20eb270df3eb21ab","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"IOST","name":"IOSToken","index":27,"allowance_changeable":true},{"address":"e1aee98495365fc179699c1bb3e761fa716bee62","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"BZNT","name":"BezantToken","index":30,"allowance_changeable":true},{"address":"168296bb09e24a88805cb9c33356536b980d3fc5","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":8,"symbol":"RHOC","name":"RHOC","index":35,"allowance_changeable":true},{"address":"b62132e35a6c13ee1ee0f84dc5d40bad8d815206","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"NEXO","name":"Nexo","index":23,"allowance_changeable":true},{"address":"5732046a883704404f284ce41ffadd5b007fd668","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"BLZ","name":"Bluzelle
+        Token","index":24,"allowance_changeable":true},{"address":"543ff227f64aa17ea132bf9886cab5db55dcaddf","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"GEN","name":"DAOstack","index":25,"allowance_changeable":true},{"address":"e25bcec5d3801ce3a794079bf94adf1b8ccd802d","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"MAN","name":"MATRIX
+        AI Network","index":32,"allowance_changeable":true},{"address":"365fcd974f79cb0e2d9c6f0e37104a009172d3a7","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":8,"symbol":"OWD","name":"Owlstand","index":44,"allowance_changeable":true},{"address":"e41d2489571d322189246dafa5ebde1f4699f498","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"ZRX","name":"
+        Protocol Token","index":34,"allowance_changeable":true},{"address":"ea11755ae41d889ceec39a63e6ff75a02bc1c00d","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"CTXC","name":"Cortex
+        Coin","index":43,"allowance_changeable":true},{"address":"a4e8c3ec456107ea67d3075bf9e3df3a75823db0","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"LOOM","name":"LoomToken","index":42,"allowance_changeable":true},{"address":"9992ec3cf6a55b00978cddf2b27bc6882d88d1ec","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"POLY","name":"Polymath","index":41,"allowance_changeable":true},{"address":"b7cb1c96db6b22b0d3d9536e0108d062bd488f74","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"WTC","name":"Walton
+        Token","index":38,"allowance_changeable":true},{"address":"a974c709cfb4566686553a20790685a47aceaa33","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"XIN","name":"Mixin","index":36,"allowance_changeable":false},{"address":"b4d0fdfc8497aef97d3c2892ae682ee06064a2bc","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"FMF","name":"Formosa
+        Financial Token","index":46,"allowance_changeable":true},{"address":"ebbdf302c940c6bfd49c6b165f457fdb324649bc","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"HYDRO","name":"Hydrogen","index":12,"allowance_changeable":false},{"address":"d26114cd6ee289accf82350c8d8487fedb8a0c07","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"OMG","name":"OmiseGO","index":4,"allowance_changeable":false},{"address":"dac17f958d2ee523a2206206994597c13d831ec7","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":6,"symbol":"USDT","name":"Tether","index":2,"allowance_changeable":false},{"address":"d4fa1460f537bb9085d22c7bccb5dd450ef28e3a","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":8,"symbol":"PPT","name":"Populous","index":11,"allowance_changeable":false},{"address":"93b1e78a3e652cd2e71c4a767595b77282344932","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"BITO","name":"BitoPro
+        Coin","index":45,"allowance_changeable":true},{"address":"255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"RDN","name":"Raiden
+        Network","index":17,"allowance_changeable":false},{"address":"b2f7eb1f2c37645be61d73953035360e768d81e6","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"COB","name":"Cobinhood","index":19,"allowance_changeable":false},{"address":"0000000000000000000000000000000000000000","price":"1.0","withdraw_fee":"600000000000000","gas_fee":"450000000000000","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"ETH","name":"Ethereum","index":0,"allowance_changeable":true},{"address":"e3818504c1b32bf1557b16c238b2e01fd3149c17","price":"","withdraw_fee":"","gas_fee":"","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":18,"symbol":"PLR","name":"PILLAR","index":29,"allowance_changeable":false},{"address":"dde12a12a6f67156e0da672be05c374e1b0a3e57","price":"0.000113999","withdraw_fee":"5263204","gas_fee":"3947403","tradable":true,"withdrawable":true,"depositable":true,"disabled":false,"decimals":6,"symbol":"JOY","name":"JOYSO","index":1,"allowance_changeable":true}],"taker_fee":10,"maker_fee":0,"gas_price":6000000000,"tradable":true,"withdrawable":true,"deposit_confirmations":20}'
+    http_version: 
+  recorded_at: Sun, 17 Jun 2018 15:30:51 GMT
+- request:
+    method: get
+    uri: https://joyso.io/api/v1/orders?base=0000000000000000000000000000000000000000&contract=04f062809b244e37e7fdc21d9409469c989c2342&locale=en&token=dac17f958d2ee523a2206206994597c13d831ec7
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - joyso.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 17 Jun 2018 15:30:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d52770c9fe19ccbf88b33effb25476d241529249451; expires=Mon, 17-Jun-19
+        15:30:51 GMT; path=/; domain=.joyso.io; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"465af4d75297d2b8d54c816f26528fcb"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Runtime:
+      - '0.007859'
+      Referrer-Policy:
+      - origin-when-cross-origin
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42c68f4e1f16a90c-SIN
+    body:
+      encoding: UTF-8
+      string: '{"buy":{"0.0011234":"2758000"},"sell":{}}'
+    http_version: 
+  recorded_at: Sun, 17 Jun 2018 15:30:51 GMT
+recorded_with: VCR 4.0.0

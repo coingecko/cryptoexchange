@@ -136,6 +136,7 @@ Or install it yourself as:
 | InfinityCoin      | Y       |            |         |         | Y           |
 | Itbit             | Y       | Y          | Y       |         | User-Defined|
 | Jex               | Y       | N          | N       |         | Y           |
+| Joyso             | Y       | Y          |         |         | Y           |
 | Jubi              | Y       |            |         |         | Y           |
 | KKex              | Y       | Y          | Y       |         | Y           |
 | Kkcoin            | Y       | Y          | Y       |         | Y           |
