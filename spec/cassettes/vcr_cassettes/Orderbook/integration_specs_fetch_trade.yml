@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.orderbook.io/markets/TAAS-ETH/trades
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.orderbook.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 Jun 2018 05:15:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d4208ffc27a99fdacb11062436ae350d01529298949; expires=Tue, 18-Jun-19
+        05:15:49 GMT; path=/; domain=.orderbook.io; HttpOnly
+      X-Rate-Limit-Remaining:
+      - '59'
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Reset:
+      - '1529299009'
+      Vary:
+      - origin,accept-encoding
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=31536000
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42cb47c0dc39316e-SIN
+    body:
+      encoding: UTF-8
+      string: '[{"id":14807,"block":5249092,"timestamp":1520961499000,"market":"TAAS-ETH","type":"buy","price":"0.025","amount":"0.006"},{"id":14806,"block":5249089,"timestamp":1520961441000,"market":"TAAS-ETH","type":"buy","price":"0.025","amount":"0.005"},{"id":14708,"block":5172130,"timestamp":1519832791000,"market":"TAAS-ETH","type":"buy","price":"0.025","amount":"1"},{"id":14693,"block":5089028,"timestamp":1518615465000,"market":"TAAS-ETH","type":"buy","price":"0.025","amount":"0.001"},{"id":14690,"block":5073975,"timestamp":1518396603000,"market":"TAAS-ETH","type":"buy","price":"0.025","amount":"0.0001"},{"id":14679,"block":5066478,"timestamp":1518288078000,"market":"TAAS-ETH","type":"buy","price":"0.025","amount":"1.4"},{"id":14678,"block":5066402,"timestamp":1518286821000,"market":"TAAS-ETH","type":"buy","price":"0.0093","amount":"0.001"},{"id":14653,"block":5010486,"timestamp":1517473190000,"market":"TAAS-ETH","type":"sell","price":"0.0093","amount":"5"},{"id":14652,"block":5010486,"timestamp":1517473190000,"market":"TAAS-ETH","type":"sell","price":"0.00931","amount":"0.2"},{"id":14651,"block":5010486,"timestamp":1517473190000,"market":"TAAS-ETH","type":"sell","price":"0.0097","amount":"0.03"},{"id":14650,"block":5010486,"timestamp":1517473190000,"market":"TAAS-ETH","type":"sell","price":"0.01","amount":"3"},{"id":14649,"block":5010486,"timestamp":1517473190000,"market":"TAAS-ETH","type":"sell","price":"0.015","amount":"0.019856"},{"id":14648,"block":5010486,"timestamp":1517473190000,"market":"TAAS-ETH","type":"sell","price":"0.024","amount":"0.0998"},{"id":14646,"block":5006444,"timestamp":1517414007000,"market":"TAAS-ETH","type":"buy","price":"0.025","amount":"0.001"},{"id":14399,"block":4879555,"timestamp":1515495831000,"market":"TAAS-ETH","type":"buy","price":"0.024","amount":"0.0002"},{"id":14299,"block":4777598,"timestamp":1513959449000,"market":"TAAS-ETH","type":"buy","price":"0.025","amount":"0.001"},{"id":14267,"block":4757947,"timestamp":1513656040000,"market":"TAAS-ETH","type":"buy","price":"0.024","amount":"0.0001"},{"id":14217,"block":4724728,"timestamp":1513156421000,"market":"TAAS-ETH","type":"buy","price":"0.025","amount":"0.0001"},{"id":14216,"block":4721626,"timestamp":1513109735000,"market":"TAAS-ETH","type":"buy","price":"0.025","amount":"0.0001"},{"id":14215,"block":4721609,"timestamp":1513109383000,"market":"TAAS-ETH","type":"sell","price":"0.015","amount":"0.0001"},{"id":14214,"block":4721595,"timestamp":1513109226000,"market":"TAAS-ETH","type":"buy","price":"0.025","amount":"0.0001"},{"id":14213,"block":4721594,"timestamp":1513109221000,"market":"TAAS-ETH","type":"sell","price":"0.015","amount":"0.01"},{"id":14164,"block":4645541,"timestamp":1511982456000,"market":"TAAS-ETH","type":"buy","price":"0.025","amount":"0.01"},{"id":14163,"block":4645538,"timestamp":1511982423000,"market":"TAAS-ETH","type":"buy","price":"0.025","amount":"0.01"},{"id":14161,"block":4644913,"timestamp":1511972949000,"market":"TAAS-ETH","type":"buy","price":"0.05","amount":"0.00001"},{"id":14157,"block":4641872,"timestamp":1511931233000,"market":"TAAS-ETH","type":"buy","price":"0.0151","amount":"0.02"},{"id":13730,"block":4571097,"timestamp":1510941788000,"market":"TAAS-ETH","type":"sell","price":"0.0151","amount":"1"},{"id":13729,"block":4571097,"timestamp":1510941788000,"market":"TAAS-ETH","type":"sell","price":"0.0152","amount":"3.004"},{"id":13631,"block":4549001,"timestamp":1510633735000,"market":"TAAS-ETH","type":"sell","price":"0.0152","amount":"1.996"},{"id":13630,"block":4548987,"timestamp":1510633492000,"market":"TAAS-ETH","type":"buy","price":"0.1","amount":"2"},{"id":13622,"block":4546109,"timestamp":1510593686000,"market":"TAAS-ETH","type":"sell","price":"0.018","amount":"1.9998"},{"id":13621,"block":4546087,"timestamp":1510593354000,"market":"TAAS-ETH","type":"sell","price":"0.019","amount":"1"},{"id":13555,"block":4528465,"timestamp":1510349258000,"market":"TAAS-ETH","type":"sell","price":"0.018","amount":"0.0001"},{"id":13554,"block":4528459,"timestamp":1510349135000,"market":"TAAS-ETH","type":"buy","price":"1.5","amount":"0.00001"},{"id":13549,"block":4527884,"timestamp":1510341817000,"market":"TAAS-ETH","type":"sell","price":"0.018","amount":"0.0001"},{"id":13548,"block":4527883,"timestamp":1510341805000,"market":"TAAS-ETH","type":"buy","price":"1.5","amount":"0.0001"},{"id":13416,"block":4514091,"timestamp":1510149621000,"market":"TAAS-ETH","type":"buy","price":"1.5","amount":"0.0001"},{"id":13403,"block":4512818,"timestamp":1510132721000,"market":"TAAS-ETH","type":"buy","price":"1.5","amount":"0.0001"},{"id":10505,"block":4358933,"timestamp":1507803665000,"market":"TAAS-ETH","type":"buy","price":"1.5","amount":"0.0001"},{"id":8779,"block":4311681,"timestamp":1506381750000,"market":"TAAS-ETH","type":"sell","price":"0.015","amount":"9.970044"},{"id":5038,"block":4203629,"timestamp":1503696167000,"market":"TAAS-ETH","type":"buy","price":"1.5","amount":"0.01"},{"id":2114,"block":4176671,"timestamp":1503128643000,"market":"TAAS-ETH","type":"buy","price":"1.5","amount":"0.2"},{"id":228,"block":4162503,"timestamp":1502834215000,"market":"TAAS-ETH","type":"buy","price":"0.01446","amount":"1"},{"id":122,"block":4102288,"timestamp":1501558635000,"market":"TAAS-ETH","type":"buy","price":"0.015","amount":"10"},{"id":51,"block":3951525,"timestamp":1498805621000,"market":"TAAS-ETH","type":"sell","price":"0.0083623","amount":"0.001"},{"id":50,"block":3951379,"timestamp":1498803000000,"market":"TAAS-ETH","type":"sell","price":"0.0083623","amount":"0.001"},{"id":49,"block":3951341,"timestamp":1498802301000,"market":"TAAS-ETH","type":"buy","price":"0.015","amount":"0.0001"},{"id":48,"block":3951261,"timestamp":1498801284000,"market":"TAAS-ETH","type":"buy","price":"0.015","amount":"0.0001"},{"id":37,"block":3943738,"timestamp":1498671145000,"market":"TAAS-ETH","type":"sell","price":"0.0083623","amount":"0.0045"},{"id":36,"block":3942496,"timestamp":1498649112000,"market":"TAAS-ETH","type":"buy","price":"0.015","amount":"0.014"},{"id":35,"block":3942444,"timestamp":1498647839000,"market":"TAAS-ETH","type":"buy","price":"0.015","amount":"0.015"},{"id":13,"block":3934803,"timestamp":1498515823000,"market":"TAAS-ETH","type":"buy","price":"0.008832","amount":"13"},{"id":12,"block":3934802,"timestamp":1498515807000,"market":"TAAS-ETH","type":"buy","price":"0.00871078","amount":"9"},{"id":8,"block":3924965,"timestamp":1498344189000,"market":"TAAS-ETH","type":"buy","price":"0.00871078","amount":"1"},{"id":7,"block":3891783,"timestamp":1497773217000,"market":"TAAS-ETH","type":"sell","price":"0.007","amount":"0.04"},{"id":6,"block":3891773,"timestamp":1497773103000,"market":"TAAS-ETH","type":"buy","price":"0.008","amount":"0.04"},{"id":5,"block":3881591,"timestamp":1497608402000,"market":"TAAS-ETH","type":"buy","price":"0.008","amount":"0.01"},{"id":4,"block":3881474,"timestamp":1497606376000,"market":"TAAS-ETH","type":"buy","price":"0.0012","amount":"0.05"},{"id":3,"block":3881406,"timestamp":1497605365000,"market":"TAAS-ETH","type":"buy","price":"0.0012","amount":"0.05"},{"id":2,"block":3881371,"timestamp":1497604871000,"market":"TAAS-ETH","type":"buy","price":"0.0011","amount":"0.05"},{"id":1,"block":3881344,"timestamp":1497604510000,"market":"TAAS-ETH","type":"buy","price":"0.001","amount":"0.1"}]'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 05:15:50 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.orderbook.io/info/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.orderbook.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 Jun 2018 05:04:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d83ddf712fb6b346de550ea7e1cc489a71529298265; expires=Tue, 18-Jun-19
+        05:04:25 GMT; path=/; domain=.orderbook.io; HttpOnly
+      X-Rate-Limit-Remaining:
+      - '58'
+      X-Rate-Limit-Limit:
+      - '60'
+      X-Rate-Limit-Reset:
+      - '1529298325'
+      Vary:
+      - origin,accept-encoding
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=31536000
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42cb370d28566fd8-SIN
+    body:
+      encoding: UTF-8
+      string: '{"1ST-ETH":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.00048","percentChange":"-99.460674157303370787","lowestAsk":"0.000585","highestBid":"0.00035"},"ANT-ETH":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.007","percentChange":"-30","lowestAsk":"0.0064","highestBid":"0.0055"},"GNO-ETH":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.24","percentChange":"+45.454545454545454545","lowestAsk":"0.24","highestBid":"0.18"},"AMM-ETH":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.0007","percentChange":"0","lowestAsk":"0.0006","highestBid":"0.00059"},"BENJA-ETH":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.000089","percentChange":"+1945.977011494252873563","lowestAsk":"0","highestBid":"0"},"CHSB-ETH":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.00006","percentChange":"-39.393939393939393939","lowestAsk":"0.000081","highestBid":"0.00006"},"CHSB-OUSD":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.102","percentChange":"0","lowestAsk":"10","highestBid":"0.102"},"OBTC-ETH":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"13.5","percentChange":"+3.926096997690531178","lowestAsk":"13.5","highestBid":"12.9"},"OUSD-ETH":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.0016","percentChange":"+35.593220338983050847","lowestAsk":"0.00205419","highestBid":"0.0016"},"GLBX-ETH":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.00056","percentChange":"0","lowestAsk":"0.00045","highestBid":"0"},"GLBX-OBTC":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.000022","percentChange":"-45","lowestAsk":"0.000034","highestBid":"0"},"GLBX-OUSD":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.3885","percentChange":"0","lowestAsk":"0.5","highestBid":"0"},"HKN-ETH":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.0042","percentChange":"-22.222222222222222222","lowestAsk":"0.005","highestBid":"0.0042"},"HKN-OUSD":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"4","percentChange":"+185.714285714285714286","lowestAsk":"0","highestBid":"0"},"IBA-ETH":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.00006","percentChange":"-36.775553213909378293","lowestAsk":"0.00005","highestBid":"0.0000005"},"SRG-ETH":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.005119454","percentChange":"0","lowestAsk":"0.00325","highestBid":"0"},"TAAS-ETH":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.025","percentChange":"0","lowestAsk":"0.011","highestBid":"0.001"},"WRC-ETH":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.0002801","percentChange":"-0.0042999936002752","lowestAsk":"0","highestBid":"0"},"BOTC-ETH":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.002","percentChange":"0","lowestAsk":"0","highestBid":"0"},"BOTC-OBTC":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0","percentChange":"0","lowestAsk":"0","highestBid":"0"},"BOTC-OUSD":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0","percentChange":"0","lowestAsk":"0","highestBid":"0"},"OUSD-OBTC":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.0001098","percentChange":"-0.181818181818181818","lowestAsk":"0","highestBid":"0"},"AMM-OUSD":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"1","percentChange":"0","lowestAsk":"0","highestBid":"0"},"TAAS-OUSD":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"4","percentChange":"0","lowestAsk":"0","highestBid":"0"},"UBT-ETH":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0.00021499","percentChange":"0","lowestAsk":"0.00025","highestBid":"0"},"UBT-OBTC":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0","percentChange":"0","lowestAsk":"0","highestBid":"0"},"UBT-OUSD":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0","percentChange":"0","lowestAsk":"0","highestBid":"0"},"SRG-OUSD":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0","percentChange":"0","lowestAsk":"0","highestBid":"0"},"IBA-OUSD":{"baseVolume":"0","quoteVolume":"0","high24hr":"0","low24hr":"0","last":"0","percentChange":"0","lowestAsk":"0","highestBid":"0.1"}}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 05:04:25 GMT
+recorded_with: VCR 4.0.0
