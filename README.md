@@ -183,6 +183,7 @@ Or install it yourself as:
 | Quoine            | Y       |            |         |         | Y           |
 | RadarRelay        | Y       |            |         |         | User-Defined|
 | RightBTC          | Y       | Y          | Y       |         | Y           |
+| SafeTrade         | Y       | N          | N       |         | Y           |
 | Sigen             | Y       |            |         |         | Y           |
 | Simex             | Y       | N          | N       |         | Y           |
 | Singularx         | Y       | N          | N       |         | Y           |
