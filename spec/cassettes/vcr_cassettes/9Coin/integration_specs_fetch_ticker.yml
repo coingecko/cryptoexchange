@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.9coin.com/home/api/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.9coin.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Jun 2018 09:20:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '6589'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - PHPSESSID=ehctefnpn7cb77qblsv9vgrtk6; path=/
+      - SERVERID=6143d5983060614dbe536d288bab08f4|1529486459|1529486459;Path=/
+      - __cdnuid=1a18ffc3402778975cb78f03c4263574; max-age=31536000; path=/; HttpOnly
+      - odrthink_language=en-us; expires=Mon, 23-Jul-2018 17:20:59 GMT; Max-Age=2880000;
+        path=/
+      - yunsuo_session_verify=ac692fed13181c36209301b30b74f330; expires=Sat, 23-Jun-18
+        17:20:59 GMT; path=/; HttpOnly
+      - yunsuo_session_verify=ac692fed13181c36209301b30b74f330; expires=Sat, 23-Jun-18
+        17:20:59 GMT; path=/; HttpOnly
+      - yunsuo_session_verify=ac692fed13181c36209301b30b74f330; expires=Sat, 23-Jun-18
+        17:20:59 GMT; path=/; HttpOnly
+      - yunsuo_session_verify=ac692fed13181c36209301b30b74f330; expires=Sat, 23-Jun-18
+        17:20:59 GMT; path=/; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      X-Cdn-Edge:
+      - 9b7b529,-
+      X-Cache:
+      - bypass
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"message":"","data":[{"cy_mark":"GZR_ETH","buy_one_price":"0.00005326","sell_one_price":"0.00025000","new_price":"0.00011597","24H_max_price":"0.00021721","24H_min_price":"0.00008613","24H_done_money":"30.8414498062896000"},{"cy_mark":"DANG_ETH","buy_one_price":"0.00010000","sell_one_price":"0.00011000","new_price":"0.00010219","24H_max_price":"0.00011759","24H_min_price":"0.00008533","24H_done_money":"1552.7613514569983036"},{"cy_mark":"SKY_ETH","buy_one_price":"0.01123100","sell_one_price":"0.01435200","new_price":"0.01367900","24H_max_price":"0.01653300","24H_min_price":"0.01241900","24H_done_money":"147.5284623838891800"},{"cy_mark":"SKY_BTC","buy_one_price":"0.00090000","sell_one_price":"0.00100000","new_price":"0.00093700","24H_max_price":"0.00115800","24H_min_price":"0.00091700","24H_done_money":"21.3972081032000000"},{"cy_mark":"BQT_ETH","buy_one_price":"0.00013816","sell_one_price":"0.00014612","new_price":"0.00014126","24H_max_price":"0.00014819","24H_min_price":"0.00013646","24H_done_money":"164.6839422772618501"},{"cy_mark":"ETH_BTC","buy_one_price":"0.07903000","sell_one_price":"0.07953000","new_price":"0.07926900","24H_max_price":"0.07936200","24H_min_price":"0.07743200","24H_done_money":"47.5788564255000000"},{"cy_mark":"BTC_USDT","buy_one_price":"6585.00000000","sell_one_price":"6650.00000000","new_price":"6619.57000000","24H_max_price":"6729.92000000","24H_min_price":"6578.15000000","24H_done_money":"224196.1067634600000000"},{"cy_mark":"LTC_ETH","buy_one_price":"0.18235000","sell_one_price":"0.18503000","new_price":"0.18298000","24H_max_price":"0.18837000","24H_min_price":"0.18280000","24H_done_money":"230.4668283107000000"},{"cy_mark":"EOS_BTC","buy_one_price":"0.00156000","sell_one_price":"0.00157200","new_price":"0.00156445","24H_max_price":"0.00157750","24H_min_price":"0.00155003","24H_done_money":"38.6845172899280000"},{"cy_mark":"OMG_BTC","buy_one_price":"0.00135700","sell_one_price":"0.00136800","new_price":"0.00136000","24H_max_price":"0.00138800","24H_min_price":"0.00135200","24H_done_money":"19.0663617731000000"},{"cy_mark":"BTM_BTC","buy_one_price":"0.00007860","sell_one_price":"0.00007980","new_price":"0.00007906","24H_max_price":"0.00008173","24H_min_price":"0.00007768","24H_done_money":"26.6174036043360000"},{"cy_mark":"AE_BTC","buy_one_price":"0.00038500","sell_one_price":"0.00038790","new_price":"0.00038690","24H_max_price":"0.00038930","24H_min_price":"0.00038370","24H_done_money":"12.9635656445800000"},{"cy_mark":"TRX_BTC","buy_one_price":"0.00000715","sell_one_price":"0.00000726","new_price":"0.00000718","24H_max_price":"0.00000724","24H_min_price":"0.00000667","24H_done_money":"18.8868540739650000"},{"cy_mark":"SNT_BTC","buy_one_price":"0.00001076","sell_one_price":"0.00001095","new_price":"0.00001080","24H_max_price":"0.00001118","24H_min_price":"0.00001079","24H_done_money":"8.6639311748870000"},{"cy_mark":"RDN_BTC","buy_one_price":"0.00012800","sell_one_price":"0.00013650","new_price":"0.00013019","24H_max_price":"0.00014192","24H_min_price":"0.00012762","24H_done_money":"14.5365239558700000"},{"cy_mark":"WICC_BTC","buy_one_price":"0.00009930","sell_one_price":"0.00011500","new_price":"0.00010701","24H_max_price":"0.00011795","24H_min_price":"0.00010109","24H_done_money":"31.7378631210900000"},{"cy_mark":"EOS_ETH","buy_one_price":"0.01933200","sell_one_price":"0.02003100","new_price":"0.01967700","24H_max_price":"0.02025500","24H_min_price":"0.01955600","24H_done_money":"417.2417058521000000"},{"cy_mark":"ETC_ETH","buy_one_price":"0.02856200","sell_one_price":"0.02920300","new_price":"0.02903900","24H_max_price":"0.02994800","24H_min_price":"0.02864400","24H_done_money":"367.3745615025800000"},{"cy_mark":"BTM_ETH","buy_one_price":"0.00097200","sell_one_price":"0.00101600","new_price":"0.00099200","24H_max_price":"0.00106300","24H_min_price":"0.00098700","24H_done_money":"256.7259840100000000"},{"cy_mark":"AE_ETH","buy_one_price":"0.00482000","sell_one_price":"0.00506000","new_price":"0.00489000","24H_max_price":"0.00503300","24H_min_price":"0.00475500","24H_done_money":"232.3671287300000000"},{"cy_mark":"TRX_ETH","buy_one_price":"0.00009070","sell_one_price":"0.00009150","new_price":"0.00009100","24H_max_price":"0.00009173","24H_min_price":"0.00008471","24H_done_money":"144.1738355459000000"},{"cy_mark":"OMG_ETH","buy_one_price":"0.01700000","sell_one_price":"0.01740000","new_price":"0.01720600","24H_max_price":"0.01783300","24H_min_price":"0.01706200","24H_done_money":"187.8699436154000000"},{"cy_mark":"SNT_ETH","buy_one_price":"0.00013700","sell_one_price":"0.00014100","new_price":"0.00013888","24H_max_price":"0.00014382","24H_min_price":"0.00013767","24H_done_money":"216.6194593256000000"},{"cy_mark":"RDN_ETH","buy_one_price":"0.00162000","sell_one_price":"0.00166000","new_price":"0.00164260","24H_max_price":"0.00180998","24H_min_price":"0.00162672","24H_done_money":"202.4252829273000000"},{"cy_mark":"WICC_ETH","buy_one_price":"0.00130000","sell_one_price":"0.00140000","new_price":"0.00135099","24H_max_price":"0.00143298","24H_min_price":"0.00131667","24H_done_money":"304.4415173495740000"},{"cy_mark":"ETC_BTC","buy_one_price":"0.00226600","sell_one_price":"0.00230000","new_price":"0.00227400","24H_max_price":"0.00233900","24H_min_price":"0.00225400","24H_done_money":"19.2304434593000000"},{"cy_mark":"ETH_USDT","buy_one_price":"518.00000000","sell_one_price":"534.00000000","new_price":"526.33000000","24H_max_price":"544.14000000","24H_min_price":"512.65000000","24H_done_money":"216401.3059776000000000"},{"cy_mark":"LTC_BTC","buy_one_price":"0.01445000","sell_one_price":"0.01465000","new_price":"0.01458100","24H_max_price":"0.01471700","24H_min_price":"0.01448300","24H_done_money":"21.0517828782000000"},{"cy_mark":"KMC_USDT","buy_one_price":"0.00700000","sell_one_price":"0.01110000","new_price":"0.00906000","24H_max_price":"0.01042000","24H_min_price":"0.00768000","24H_done_money":"160992.5970051940000000"},{"cy_mark":"MVT_ETH","buy_one_price":"0.00008197","sell_one_price":"0.00009632","new_price":"0.00008557","24H_max_price":"0.00009393","24H_min_price":"0.00008436","24H_done_money":"23.2242447999400000"},{"cy_mark":"MVT_BTC","buy_one_price":"0.00000795","sell_one_price":"0.00001352","new_price":"0.00000983","24H_max_price":"0.00001259","24H_min_price":"0.00000888","24H_done_money":"5.1374311078940000"},{"cy_mark":"DANG_USDT","buy_one_price":"0.05300000","sell_one_price":"0.05630000","new_price":"0.05479400","24H_max_price":"0.05727700","24H_min_price":"0.05099200","24H_done_money":"720914.4421555189577700"}]}'
+    http_version: 
+  recorded_at: Wed, 20 Jun 2018 09:20:59 GMT
+recorded_with: VCR 4.0.0
