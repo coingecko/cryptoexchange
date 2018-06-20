@@ -29,7 +29,7 @@ module Cryptoexchange::Exchanges
           ticker.bid       = NumericHelper.to_d(output['bid'])
           ticker.ask       = NumericHelper.to_d(output['ask'])
 
-          ticker.timestamp = DateTime.rfc3339(output['transition_time']).to_time.to_i
+          ticker.timestamp = DateTime.rfc3339(output['current_time']).to_time.to_i
           ticker.payload   = output
           ticker
         end
