@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-            "#{Cryptoexchange::Exchanges::Koinex::Market::API_URL}/ticker"
+          "#{Cryptoexchange::Exchanges::Koinex::Market::API_URL}/ticker"
         end
 
         def adapt_all(output)
@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
                             target: target,
-                            market: "koinex"
+                            market: Koinex::Market::NAME
                           )
             adapt(market_pair, tickers, [pair, tickers])
           end
@@ -34,7 +34,7 @@ module Cryptoexchange::Exchanges
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
-          ticker.market = 'koinex'
+          ticker.market = Koinex::Market::NAME
           ticker.last = NumericHelper.to_d(tickers['last_traded_price'].to_f)
           ticker.bid = NumericHelper.to_d(tickers['highest_bid'].to_f)
           ticker.ask = NumericHelper.to_d(tickers['lowest_ask'].to_f)
