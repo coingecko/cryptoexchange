@@ -103,6 +103,7 @@ Or install it yourself as:
 | CredoEx           | Y       |            |         |         | Y           |          |
 | Crex24            | Y       | Y          | Y       |         | Y           |          |
 | CRXZone           | Y       | Y          | Y       |         | Y           |          |
+| Cryptagio         | Y       | Y          | Y       |         | Y           | Y        |
 | Cryptex           | Y       | Y          | Y       |         | User-Defined|          |
 | CryptoBridge      | Y       |            |         |         | Y           |          |
 | CryptoHub         | Y       | N          | N       |         | Y           |          |
