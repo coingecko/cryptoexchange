@@ -132,6 +132,7 @@ Or install it yourself as:
 | HitBTC            | Y       |            |         |         | Y           |
 | Hksy              | Y       |            | Y       |         | User-Defined|
 | Huobi             | Y       |            |         |         | Y           |
+| Idax              | Y       | N          | N       |         | Y           |
 | Idcm              | Y       |            |         |         | Y           |
 | Idex              | Y       | Unstable   | Y       |         | Y           |
 | InfinityCoin      | Y       |            |         |         | Y           |
