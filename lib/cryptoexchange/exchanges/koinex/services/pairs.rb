@@ -11,12 +11,15 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           market_pairs = []
-          output.each do |currency, price|
-            market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: currency,
-                              target: "INR",
-                              market: Koinex::Market::NAME
-                            )
+          output.each do |target_raw|
+            target = GetSymbol.get_symbol(target_raw[0])
+            target_raw[1].each do |base|
+              market_pairs << Cryptoexchange::Models::MarketPair.new(
+                                base: base[0],
+                                target: target,
+                                market: Koinex::Market::NAME
+                              )
+            end
           end
           market_pairs
         end
