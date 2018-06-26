@@ -10,7 +10,7 @@ module Cryptoexchange::Exchanges
 
         def fetch
           output = super(ticker_url)
-          adapt_all(output)
+          adapt_all(output['stats']).flatten
         end
 
         def ticker_url
@@ -18,27 +18,29 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          output["stats"]["inr"].map do |pair, tickers|
-            base = pair
-            target = "INR"
-            market_pair = Cryptoexchange::Models::MarketPair.new(
-                            base: base,
-                            target: target,
-                            market: Koinex::Market::NAME
-                          )
-            adapt(market_pair, tickers, [pair, tickers])
+          output.map do |market|
+            market[1].map do |ticker|
+                market_pair = Cryptoexchange::Models::MarketPair.new(
+                                base: ticker[0],
+                                target: GetSymbol.get_symbol(market[0]),
+                                market: Koinex::Market::NAME
+                              )
+              adapt(market_pair, ticker[1])
+            end
           end
         end
 
-        def adapt(market_pair, tickers, output)
+        def adapt(market_pair, output)
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Koinex::Market::NAME
-          ticker.last = NumericHelper.to_d(tickers['last_traded_price'].to_f)
-          ticker.bid = NumericHelper.to_d(tickers['highest_bid'].to_f)
-          ticker.ask = NumericHelper.to_d(tickers['lowest_ask'].to_f)
-          ticker.volume = NumericHelper.to_d(tickers['vol_24hrs'].to_f)
+          ticker.ask       = NumericHelper.to_d(output['lowest_ask'])
+          ticker.bid       = NumericHelper.to_d(output['highest_bid'])
+          ticker.last      = NumericHelper.to_d(output['last_traded_price'])
+          ticker.high      = NumericHelper.to_d(output['max_24hrs'])
+          ticker.low       = NumericHelper.to_d(output['min_24hrs'])
+          ticker.volume    = NumericHelper.to_d(output['vol_24hrs'])
           ticker.timestamp = Time.now.to_i
           ticker.payload = output
           ticker
