@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://omnitrade.io/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - omnitrade.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 26 Jun 2018 18:56:34 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '234'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d5fc24ab942962d6772182ae8fe1e99981530039393; expires=Wed, 26-Jun-19
+        18:56:33 GMT; path=/; domain=.omnitrade.io; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"2584af55b32f706c4647ea538cf283c3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bf9555e0-88d3-4c1c-9032-e5d86dbe092f
+      X-Runtime:
+      - '0.023988'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains;
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4311e500ace74c06-GRU
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"btcbrl","name":"BTC/BRL"},{"id":"ltcbrl","name":"LTC/BRL"},{"id":"bchbrl","name":"BCH/BRL"},{"id":"btgbrl","name":"BTG/BRL"},{"id":"ethbrl","name":"ETH/BRL"},{"id":"dashbrl","name":"DASH/BRL"},{"id":"dcrbrl","name":"DCR/BRL"}]'
+    http_version: 
+  recorded_at: Tue, 26 Jun 2018 18:56:34 GMT
+recorded_with: VCR 4.0.0

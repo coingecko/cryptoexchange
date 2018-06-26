@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://omnitrade.io/api/v2/tickers/btcbrl
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - omnitrade.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Jun 2018 12:56:13 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '120'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d10e930fdf113c2f34c48743ec964ab811530104173; expires=Thu, 27-Jun-19
+        12:56:13 GMT; path=/; domain=.omnitrade.io; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"86de9cff9c2540614b7f0d07b6cb89c9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 364bb0c7-5371-44f4-aa20-9112dcbf49fd
+      X-Runtime:
+      - '0.017779'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains;
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4318128968d14c84-GRU
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1530104173,"ticker":{"buy":23790.0,"sell":24500.0,"low":23727.0,"high":27750.0,"last":23790.0,"vol":"2.75206081"}}'
+    http_version: 
+  recorded_at: Wed, 27 Jun 2018 12:56:13 GMT
+recorded_with: VCR 4.0.0
