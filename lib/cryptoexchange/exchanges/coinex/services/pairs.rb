@@ -11,7 +11,8 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output['data'].map do |pair|
-            separator = /(USDT|BTC|BCH)\z/ =~ pair
+            separator = Cryptoexchange::Exchanges::Coinex::Market::SEPARATOR_REGEX =~ pair
+            next unless separator
             base = pair[0..separator - 1]
             target = pair[separator..-1]
             Cryptoexchange::Models::MarketPair.new({

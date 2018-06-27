@@ -20,7 +20,7 @@ module Cryptoexchange::Exchanges
         def adapt_all(output)
           timestamp = output['data']['date'] / 1000
           output['data']['ticker'].map do |pair, market|
-            separator = /(USDT|BTC|BCH)\z/ =~ pair
+            separator = Cryptoexchange::Exchanges::Coinex::Market::SEPARATOR_REGEX =~ pair
             base = pair[0..separator - 1]
             target = pair[separator..-1]
             market_pair = Cryptoexchange::Models::MarketPair.new(
