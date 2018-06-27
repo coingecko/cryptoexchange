@@ -4,7 +4,7 @@ http_interactions:
     method: get
     uri: https://api.coinex.com/v1/market/list
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       Connection:
@@ -12,39 +12,45 @@ http_interactions:
       Host:
       - api.coinex.com
       User-Agent:
-      - http.rb/1.0.4
+      - http.rb/3.0.0
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Mon, 12 Feb 2018 01:26:32 GMT
+      - Wed, 27 Jun 2018 06:22:29 GMT
       Content-Type:
-      - application/json
+      - text/html
       Content-Length:
-      - '450'
+      - '1061'
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d3de3b8c8e94c15643d1ed380626aa52b1518398792; expires=Tue, 12-Feb-19
-        01:26:32 GMT; path=/; domain=.coinex.com; HttpOnly; Secure
+      - __cfduid=db8272b6fdd7c4f153e6128d5f0dddd231530080547; expires=Thu, 27-Jun-19
+        06:22:27 GMT; path=/; domain=.coinex.com; HttpOnly; Secure
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 3ebbc2a21dfc33df-HKG
+      - 4315d1baae512d1d-KUL
     body:
       encoding: ASCII-8BIT
-      string: "{\n  \"code\": 0, \n  \"data\": [\n    \"CETBCH\", \n    \"BTCBCH\",
-        \n    \"LTCBCH\", \n    \"ETHBCH\", \n    \"ETCBCH\", \n    \"EOSBCH\", \n
-        \   \"XMRBCH\", \n    \"ZECBCH\", \n    \"DASHBCH\", \n    \"DOGEBCH\", \n
-        \   \"BTMBCH\", \n    \"LTCBTC\", \n    \"ETHBTC\", \n    \"ETCBTC\", \n    \"EOSBTC\",
-        \n    \"XMRBTC\", \n    \"ZECBTC\", \n    \"DASHBTC\", \n    \"DOGEBTC\",
-        \n    \"BTMBTC\", \n    \"BCHUSDT\", \n    \"BTCUSDT\", \n    \"LTCUSDT\",
-        \n    \"ETHUSDT\", \n    \"CDYBCH\", \n    \"BTVBCH\"\n  ], \n  \"message\":
-        \"Ok\"\n}\n"
+      string: '{"code": 0, "data": ["TRXETH", "SEERBTC", "CETBTC", "DOGEBTC", "KANETH",
+        "LTCBTC", "QTUMBTC", "ETHBCH", "EOSUSDT", "WINGSBTC", "VETETH", "ETHBTC",
+        "LTCBCH", "BBNBTC", "XMVBCH", "DCRBCH", "BBNETH", "DCRBTC", "MTBCH", "XMRBCH",
+        "CETUSDT", "NEOBTC", "CTXCBCH", "ZILBCH", "BTCBCH", "WINGSETH", "CTXCBTC",
+        "XRPBCH", "ETCBCH", "MTETH", "XRPBTC", "ETCBTC", "CETBCH", "BTMETH", "OMGETH",
+        "EOSETH", "DASHUSDT", "CTXCETH", "ZILETH", "HSRBCH", "DASHBCH", "VETBTC",
+        "SEERBCH", "HYDROBTC", "EOSDACBTC", "ZRXETH", "SCBTC", "BBNBCH", "MTBTC",
+        "XMRBTC", "OMGBTC", "BTMBTC", "EOSBTC", "VETBCH", "BCHUSDT", "LOOMBCH", "LTCUSDT",
+        "LOOMBTC", "OMGBCH", "BTMBCH", "EOSBCH", "BTCUSDT", "NANOBTC", "ZRXBTC", "HYDROBCH",
+        "LOOMETH", "ZILBTC", "ETHUSDT", "DASHBTC", "WINGSBCH", "XRPUSDT", "DOGEBCH",
+        "TRXBCH", "RHOCBCH", "CDYBCH", "ZECBCH", "SCUSDT", "XMCBCH", "HSRBTC", "XMCBTC",
+        "KANBCH", "XMVBTC", "QTUMBCH", "XMRUSDT", "KANBTC", "SCBCH", "NEOBCH", "HYDROETH",
+        "TRXBTC", "RHOCBTC", "ZECBTC", "NANOBCH", "ZRXBCH", "BTVBCH", "SEERETH", "ZECUSDT",
+        "CETETH", "EOSDACBCH"], "message": "OK"}'
     http_version: 
-  recorded_at: Mon, 12 Feb 2018 01:26:32 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Wed, 27 Jun 2018 06:22:29 GMT
+recorded_with: VCR 4.0.0
