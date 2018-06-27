@@ -19,10 +19,8 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |pair, ticker|
-            target_matcher = /\A(ETH|BTC|USDT)/i.match(pair).to_s
+            target, base = pair.split("_")
 
-            base        = pair.sub(target_matcher, '')
-            target      = target_matcher
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,

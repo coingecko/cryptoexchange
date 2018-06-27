@@ -19,22 +19,22 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 04 Jun 2018 03:35:48 GMT
+      - Wed, 27 Jun 2018 06:43:14 GMT
       Content-Type:
-      - text/html; charset=UTF-8
-      Content-Length:
-      - '2520'
+      - application/json
+      Transfer-Encoding:
+      - chunked
       Connection:
       - close
       Set-Cookie:
-      - AWSALB=P0NXxdNFBWgNBKNuWChup7fhIsep1yNm0DHA3wKKcQQ1R+/ErSqrPKPywHiY/i+sdc39u7V/xCa5d/k6RSPd2sYjv+qT3ZhfzFUjrmAIsfN5m7ENph5mLKPA+Qj3;
-        Expires=Mon, 11 Jun 2018 03:35:48 GMT; Path=/
-      - ci_session=fofb41gb5gu6u2hg5kc5s0j3u11sh87q; expires=Mon, 04-Jun-2018 05:35:48
+      - AWSALB=QBGm3OXF9xNarQkaazZDysfkxmJRpbLKBfzYLV0RkrkHktBcIiVc4FdAbUH4BVACHi71kATH9SdOYvooYlwKEtZIodT7q0hBEOwyOAkMPdgLCDl0VlpttIziX9BY;
+        Expires=Wed, 04 Jul 2018 06:43:13 GMT; Path=/
+      - ci_session=h913ftvfeilpn4bv36k032uug7m9ncut; expires=Wed, 27-Jun-2018 08:43:13
         GMT; Max-Age=7200; path=/; HttpOnly
       Server:
-      - Apache/2.4.33 (Amazon) PHP/7.0.29
+      - Apache/2.4.33 (Amazon) PHP/7.0.30
       X-Powered-By:
-      - PHP/7.0.29
+      - PHP/7.0.30
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
@@ -42,8 +42,439 @@ http_interactions:
       Pragma:
       - no-cache
     body:
-      encoding: UTF-8
-      string: '{"btceth":{"price_change_24h":"3.20924262","price_change_7d":"4.14507772","last_price":"0.08040000","lowest_ask":"0.07672000","highest_bid":"0.07810000","volume":{"btc_trade":788.11683116,"fee_collected":1.57623366232}},"btcltc":{"price_change_24h":"-5.98765432","price_change_7d":"-3.48542459","last_price":"0.01523000","lowest_ask":"0.01620000","highest_bid":"0.01620000","volume":{"btc_trade":18.66399956,"fee_collected":0.03732799912}},"btcsil":{"price_change_24h":0,"price_change_7d":"0.00000000","last_price":"0.00009000","lowest_ask":"0.00009200","highest_bid":"0.00009000","volume":{"btc_trade":0.818,"fee_collected":0.001636}},"btcposya":{"price_change_24h":0,"price_change_7d":0,"last_price":"0.00008400","lowest_ask":0,"highest_bid":0,"volume":{"btc_trade":0.001008,"fee_collected":2.016e-6}},"btcmgc":{"price_change_24h":"-1.23456790","price_change_7d":"-9.60451977","last_price":"0.00000160","lowest_ask":"0.00000130","highest_bid":"0.00000162","volume":{"btc_trade":0.156087,"fee_collected":0.000312174}},"btceos":{"price_change_24h":"-1.85154639","price_change_7d":"14.01676647","last_price":"0.00190408","lowest_ask":"0.00194000","highest_bid":"0.00194000","volume":{"btc_trade":7.66860864,"fee_collected":0.01533721728}},"btcicx":{"price_change_24h":"-2.35485181","price_change_7d":"1.90677966","last_price":"0.00036075","lowest_ask":"0.00036945","highest_bid":"0.00036945","volume":{"btc_trade":1.53255,"fee_collected":0.0030651}},"btctrx":{"price_change_24h":"-1.23456790","price_change_7d":"-11.60220994","last_price":"0.00000800","lowest_ask":"0.00000810","highest_bid":"0.00000810","volume":{"btc_trade":0.149,"fee_collected":0.000298}},"btcven":{"price_change_24h":"-0.76561822","price_change_7d":"5.54039874","last_price":"0.00050290","lowest_ask":"0.00050678","highest_bid":"0.00050678","volume":{"btc_trade":10.2347088,"fee_collected":0.0204694176}},"btcomg":{"price_change_24h":"-3.95734003","price_change_7d":"10.13812950","last_price":"0.00153092","lowest_ask":"0.00159400","highest_bid":"0.00159400","volume":{"btc_trade":6.24984,"fee_collected":0.01249968}},"btczil":{"price_change_24h":"1.20554551","price_change_7d":"14.45126108","last_price":"0.00001679","lowest_ask":"0.00001659","highest_bid":"0.00001659","volume":{"btc_trade":0.46530366,"fee_collected":0.00093060732}},"btcae":{"price_change_24h":"-2.60441309","price_change_7d":"10.99754902","last_price":"0.00045287","lowest_ask":"0.00046498","highest_bid":"0.00046498","volume":{"btc_trade":10.20534,"fee_collected":0.02041068}}}'
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "btc_eth": {
+                "price_change_24h": "0.66611203",
+                "price_change_7d": "-7.60556258",
+                "last_price": "0.07308400",
+                "lowest_ask": "0.07260040",
+                "highest_bid": "0.07490000",
+                "volume": {
+                    "btc_trade": 3.48278792,
+                    "fee_collected": 0.00696557584
+                }
+            },
+            "btc_ltc": {
+                "price_change_24h": "-4.20201464",
+                "price_change_7d": 0,
+                "last_price": "0.01253440",
+                "lowest_ask": "0.01308420",
+                "highest_bid": "0.01313700",
+                "volume": {
+                    "btc_trade": 0.775112,
+                    "fee_collected": 0.001550224
+                }
+            },
+            "btc_mgc": {
+                "price_change_24h": "0.00000000",
+                "price_change_7d": "100.00000000",
+                "last_price": "0.00000140",
+                "lowest_ask": 0,
+                "highest_bid": "0.00000140",
+                "volume": {
+                    "btc_trade": 0.014,
+                    "fee_collected": 2.8e-5
+                }
+            },
+            "btc_gcg": {
+                "price_change_24h": "0.00000000",
+                "price_change_7d": "12.35955056",
+                "last_price": "0.00000300",
+                "lowest_ask": "0.00000300",
+                "highest_bid": "0.00000304",
+                "volume": {
+                    "btc_trade": 0.926964,
+                    "fee_collected": 0.001853928
+                }
+            },
+            "btc_sil": {
+                "price_change_24h": 0,
+                "price_change_7d": 0,
+                "last_price": "0.00007000",
+                "lowest_ask": 0,
+                "highest_bid": 0,
+                "volume": {
+                    "btc_trade": 0,
+                    "fee_collected": 0
+                }
+            },
+            "btc_posya": {
+                "price_change_24h": 0,
+                "price_change_7d": 0,
+                "last_price": "0.00005200",
+                "lowest_ask": 0,
+                "highest_bid": 0,
+                "volume": {
+                    "btc_trade": 0,
+                    "fee_collected": 0
+                }
+            },
+            "btc_trx": {
+                "price_change_24h": "-5.00000000",
+                "price_change_7d": 0,
+                "last_price": "0.00000627",
+                "lowest_ask": "0.00000660",
+                "highest_bid": "0.00000660",
+                "volume": {
+                    "btc_trade": 0.2211,
+                    "fee_collected": 0.0004422
+                }
+            },
+            "btc_ven": {
+                "price_change_24h": "-3.58675012",
+                "price_change_7d": 0,
+                "last_price": "0.00041127",
+                "lowest_ask": "0.00042657",
+                "highest_bid": "0.00042740",
+                "volume": {
+                    "btc_trade": 0.502704,
+                    "fee_collected": 0.001005408
+                }
+            },
+            "btc_omg": {
+                "price_change_24h": "-5.30151357",
+                "price_change_7d": "-14.92805755",
+                "last_price": "0.00118250",
+                "lowest_ask": "0.00124870",
+                "highest_bid": "0.00125600",
+                "volume": {
+                    "btc_trade": 0.97248,
+                    "fee_collected": 0.00194496
+                }
+            },
+            "btc_zil": {
+                "price_change_24h": "-5.74074074",
+                "price_change_7d": 0,
+                "last_price": "0.00001018",
+                "lowest_ask": "0.00001080",
+                "highest_bid": "0.00001090",
+                "volume": {
+                    "btc_trade": 0.04196,
+                    "fee_collected": 8.392e-5
+                }
+            },
+            "btc_ae": {
+                "price_change_24h": "-4.09619709",
+                "price_change_7d": 0,
+                "last_price": "0.00029430",
+                "lowest_ask": "0.00030687",
+                "highest_bid": "0.00030960",
+                "volume": {
+                    "btc_trade": 0.360702,
+                    "fee_collected": 0.000721404
+                }
+            },
+            "btc_gnt": {
+                "price_change_24h": "-6.90527135",
+                "price_change_7d": 0,
+                "last_price": "0.00004786",
+                "lowest_ask": "0.00005141",
+                "highest_bid": "0.00005250",
+                "volume": {
+                    "btc_trade": 0.19854,
+                    "fee_collected": 0.00039708
+                }
+            },
+            "btc_bnb": {
+                "price_change_24h": "-2.61075615",
+                "price_change_7d": 0,
+                "last_price": "0.00230160",
+                "lowest_ask": "0.00236250",
+                "highest_bid": "0.00236330",
+                "volume": {
+                    "btc_trade": 0.046649,
+                    "fee_collected": 9.3298e-5
+                }
+            },
+            "btc_zrx": {
+                "price_change_24h": "-8.66432496",
+                "price_change_7d": 0,
+                "last_price": "0.00010141",
+                "lowest_ask": "0.00011103",
+                "highest_bid": "0.00011140",
+                "volume": {
+                    "btc_trade": 0.21244,
+                    "fee_collected": 0.00042488
+                }
+            },
+            "btc_btm": {
+                "price_change_24h": "-6.35395875",
+                "price_change_7d": 0,
+                "last_price": "0.00005630",
+                "lowest_ask": "0.00005994",
+                "highest_bid": "0.00006012",
+                "volume": {
+                    "btc_trade": 0.11642,
+                    "fee_collected": 0.00023284
+                }
+            },
+            "btc_mkr": {
+                "price_change_24h": "-4.97680639",
+                "price_change_7d": 0,
+                "last_price": "0.07886640",
+                "lowest_ask": "0.08299700",
+                "highest_bid": "0.08359390",
+                "volume": {
+                    "btc_trade": 1.618634,
+                    "fee_collected": 0.003237268
+                }
+            },
+            "btc_rep": {
+                "price_change_24h": "-3.47436812",
+                "price_change_7d": 0,
+                "last_price": "0.00048730",
+                "lowest_ask": "0.00050484",
+                "highest_bid": "0.00050640",
+                "volume": {
+                    "btc_trade": 0.0198428,
+                    "fee_collected": 3.96856e-5
+                }
+            },
+            "btc_ppt": {
+                "price_change_24h": 0,
+                "price_change_7d": 0,
+                "last_price": "0.00817290",
+                "lowest_ask": 0,
+                "highest_bid": 0,
+                "volume": {
+                    "btc_trade": 0,
+                    "fee_collected": 0
+                }
+            },
+            "btc_iost": {
+                "price_change_24h": "-4.25531915",
+                "price_change_7d": 0,
+                "last_price": "0.00000360",
+                "lowest_ask": 0,
+                "highest_bid": "0.00000380",
+                "volume": {
+                    "btc_trade": 0.02224,
+                    "fee_collected": 4.448e-5
+                }
+            },
+            "btc_snt": {
+                "price_change_24h": 0,
+                "price_change_7d": 0,
+                "last_price": "0.00000907",
+                "lowest_ask": 0,
+                "highest_bid": 0,
+                "volume": {
+                    "btc_trade": 0,
+                    "fee_collected": 0
+                }
+            },
+            "btc_aion": {
+                "price_change_24h": "0.00000000",
+                "price_change_7d": 0,
+                "last_price": "0.00017816",
+                "lowest_ask": "0.00017816",
+                "highest_bid": "0.00017950",
+                "volume": {
+                    "btc_trade": 0.008908,
+                    "fee_collected": 1.7816e-5
+                }
+            },
+            "btc_dgd": {
+                "price_change_24h": "-5.80067347",
+                "price_change_7d": 0,
+                "last_price": "0.01471450",
+                "lowest_ask": "0.01562060",
+                "highest_bid": 0,
+                "volume": {
+                    "btc_trade": 0.1213404,
+                    "fee_collected": 0.0002426808
+                }
+            },
+            "btc_lrc": {
+                "price_change_24h": "-3.18877551",
+                "price_change_7d": 0,
+                "last_price": "0.00005313",
+                "lowest_ask": "0.00005430",
+                "highest_bid": "0.00005488",
+                "volume": {
+                    "btc_trade": 0.010801,
+                    "fee_collected": 2.1602e-5
+                }
+            },
+            "btc_bat": {
+                "price_change_24h": "-9.01763224",
+                "price_change_7d": 0,
+                "last_price": "0.00003612",
+                "lowest_ask": "0.00003970",
+                "highest_bid": "0.00003970",
+                "volume": {
+                    "btc_trade": 0.03791,
+                    "fee_collected": 7.582e-5
+                }
+            },
+            "btc_elf": {
+                "price_change_24h": "1.04907754",
+                "price_change_7d": 0,
+                "last_price": "0.00008380",
+                "lowest_ask": "0.00008293",
+                "highest_bid": "0.00008570",
+                "volume": {
+                    "btc_trade": 0.0066692,
+                    "fee_collected": 1.33384e-5
+                }
+            },
+            "btc_cmt": {
+                "price_change_24h": "0.00000000",
+                "price_change_7d": 0,
+                "last_price": "0.00002357",
+                "lowest_ask": "0.00002357",
+                "highest_bid": "0.00002390",
+                "volume": {
+                    "btc_trade": 0.04714,
+                    "fee_collected": 9.428e-5
+                }
+            },
+            "btc_bnt": {
+                "price_change_24h": "-3.18003506",
+                "price_change_7d": 0,
+                "last_price": "0.00046400",
+                "lowest_ask": "0.00047924",
+                "highest_bid": "0.00047924",
+                "volume": {
+                    "btc_trade": 0.188648,
+                    "fee_collected": 0.000377296
+                }
+            },
+            "btc_wtc": {
+                "price_change_24h": "-6.08372270",
+                "price_change_7d": 0,
+                "last_price": "0.00098490",
+                "lowest_ask": "0.00104600",
+                "highest_bid": "0.00104870",
+                "volume": {
+                    "btc_trade": 0.051159,
+                    "fee_collected": 0.000102318
+                }
+            },
+            "btc_knc": {
+                "price_change_24h": "0.00000000",
+                "price_change_7d": 0,
+                "last_price": "0.00013765",
+                "lowest_ask": "0.00013765",
+                "highest_bid": "0.00013765",
+                "volume": {
+                    "btc_trade": 0.96355,
+                    "fee_collected": 0.0019271
+                }
+            },
+            "btc_dentacoin": {
+                "price_change_24h": 0,
+                "price_change_7d": "-14.28571429",
+                "last_price": "0.00000006",
+                "lowest_ask": 0,
+                "highest_bid": 0,
+                "volume": {
+                    "btc_trade": 0,
+                    "fee_collected": 0
+                }
+            },
+            "btc_poly": {
+                "price_change_24h": "0.00000000",
+                "price_change_7d": 0,
+                "last_price": "0.00004795",
+                "lowest_ask": "0.00004795",
+                "highest_bid": "0.00004795",
+                "volume": {
+                    "btc_trade": 0.005754,
+                    "fee_collected": 1.1508e-5
+                }
+            },
+            "btc_ethos": {
+                "price_change_24h": "0.00000000",
+                "price_change_7d": 0,
+                "last_price": "0.00019831",
+                "lowest_ask": "0.00019831",
+                "highest_bid": "0.00019832",
+                "volume": {
+                    "btc_trade": 3.17304,
+                    "fee_collected": 0.00634608
+                }
+            },
+            "btc_qash": {
+                "price_change_24h": "0.00000000",
+                "price_change_7d": 0,
+                "last_price": "0.00003923",
+                "lowest_ask": "0.00003923",
+                "highest_bid": "0.00003923",
+                "volume": {
+                    "btc_trade": 0.07846,
+                    "fee_collected": 0.00015692
+                }
+            },
+            "btc_fun": {
+                "price_change_24h": "0.00000000",
+                "price_change_7d": 0,
+                "last_price": "0.00000378",
+                "lowest_ask": "0.00000378",
+                "highest_bid": 0,
+                "volume": {
+                    "btc_trade": 0.00378,
+                    "fee_collected": 7.56e-6
+                }
+            },
+            "btc_theta": {
+                "price_change_24h": "0.00000000",
+                "price_change_7d": 0,
+                "last_price": "0.00002779",
+                "lowest_ask": "0.00002779",
+                "highest_bid": "0.00002779",
+                "volume": {
+                    "btc_trade": 0.05558,
+                    "fee_collected": 0.00011116
+                }
+            },
+            "btc_eng": {
+                "price_change_24h": "0.00000000",
+                "price_change_7d": 0,
+                "last_price": "0.00024114",
+                "lowest_ask": "0.00024114",
+                "highest_bid": "0.00024114",
+                "volume": {
+                    "btc_trade": 0.024114,
+                    "fee_collected": 4.8228e-5
+                }
+            },
+            "btc_nuls": {
+                "price_change_24h": "0.00000000",
+                "price_change_7d": 0,
+                "last_price": "0.00033235",
+                "lowest_ask": "0.00033235",
+                "highest_bid": "0.00033235",
+                "volume": {
+                    "btc_trade": 0.166175,
+                    "fee_collected": 0.00033235
+                }
+            },
+            "btc_storm": {
+                "price_change_24h": "0.00000000",
+                "price_change_7d": 0,
+                "last_price": "0.00000261",
+                "lowest_ask": "0.00000261",
+                "highest_bid": "0.00000261",
+                "volume": {
+                    "btc_trade": 0.0261,
+                    "fee_collected": 5.22e-5
+                }
+            },
+            "btc_rlc": {
+                "price_change_24h": 0,
+                "price_change_7d": 0,
+                "last_price": "0.00013190",
+                "lowest_ask": 0,
+                "highest_bid": 0,
+                "volume": {
+                    "btc_trade": 0,
+                    "fee_collected": 0
+                }
+            }
+        }
     http_version: 
-  recorded_at: Mon, 04 Jun 2018 03:35:48 GMT
+  recorded_at: Wed, 27 Jun 2018 06:43:14 GMT
 recorded_with: VCR 4.0.0
