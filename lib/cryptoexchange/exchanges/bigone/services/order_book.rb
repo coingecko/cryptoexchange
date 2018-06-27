@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bigone::Market::API_URL}/markets/#{market_pair.base}-#{market_pair.target}/book"
+          "#{Cryptoexchange::Exchanges::Bigone::Market::API_URL}/markets/#{market_pair.base}-#{market_pair.target}/depth"
         end
 
         def adapt(output, market_pair)
@@ -24,8 +24,8 @@ module Cryptoexchange::Exchanges
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
           order_book.market    = Bigone::Market::NAME
-          order_book.asks      = adapt_orders(output["data"]["asks"])
-          order_book.bids      = adapt_orders(output["data"]["bids"])
+          order_book.asks      = adapt_orders(output['data']['asks'])
+          order_book.bids      = adapt_orders(output['data']['bids'])
           order_book.timestamp = timestamp
           order_book.payload   = output
           order_book
@@ -33,9 +33,8 @@ module Cryptoexchange::Exchanges
 
         def adapt_orders(orders)
           orders.collect do |order_entry|
-            Cryptoexchange::Models::Order.new(price: order_entry["price"],
-                                              amount: order_entry["amount"],
-                                              timestamp: nil)
+            Cryptoexchange::Models::Order.new(price: order_entry['price'],
+                                              amount: order_entry['amount'])
           end
         end
       end
