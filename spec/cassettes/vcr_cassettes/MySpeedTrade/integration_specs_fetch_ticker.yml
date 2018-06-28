@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://myspeedtrade.com/api/v2/tickers/dogebtc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - myspeedtrade.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '143'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=63072000; includeSubDomains
+      X-Request-Id:
+      - c8ab340d-382e-45f9-b105-94eee7c3c524
+      Etag:
+      - '"af24fd93a446dee45d1a165f207d53af"'
+      X-Runtime:
+      - '0.015913'
+      Date:
+      - Thu, 28 Jun 2018 16:03:18 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1530201798,"ticker":{"buy":"0.0","sell":"0.00000046","low":"0.0","high":"0.0","last":"0.00000046","vol":"0.0","volbtc":0,"change":"0.0"}}'
+    http_version: 
+  recorded_at: Thu, 28 Jun 2018 16:03:18 GMT
+recorded_with: VCR 4.0.0

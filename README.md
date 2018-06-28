@@ -160,6 +160,7 @@ Or install it yourself as:
 | Lykke             | Y       | Y          | N       |         | Y           |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|
 | Mercatox          | Y       | N          | N       | N       | Y           |
+| Myspeedtrade      | Y       | Y          |         |         | Y           |
 | Nanex             | Y       | N          | N       | N       | Y           |
 | Nebula            | Y       | N          | Y       |         | Y           |
 | Neraex            | Y       | Y          | Y       |         | Y           |
