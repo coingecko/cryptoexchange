@@ -14,33 +14,35 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Bigone::Market::API_URL}/markets"
+          "#{Cryptoexchange::Exchanges::Bigone::Market::API_URL}/tickers"
         end
 
         def adapt_all(output)
           output['data'].map do |pair|
-            base = pair['quote']
-            target = pair['base']
-            market_pair = Cryptoexchange::Models::MarketPair.new(
-                            base: base,
-                            target: target,
-                            market: Bigone::Market::NAME
-                          )
-            adapt(market_pair, pair['ticker'])
+            base, target = pair['market_id'].split('-')
+            market_pair  = Cryptoexchange::Models::MarketPair.new(
+              base:   base,
+              target: target,
+              market: Bigone::Market::NAME
+            )
+            adapt(market_pair, pair)
           end
         end
 
         def adapt(market_pair, output)
-          ticker = Cryptoexchange::Models::Ticker.new
-          ticker.base = market_pair.base
-          ticker.target = market_pair.target
-          ticker.market = Bigone::Market::NAME
-          ticker.last = NumericHelper.to_d(output['price'].to_f)
-          ticker.high = NumericHelper.to_d(output['high'].to_f)
-          ticker.low = NumericHelper.to_d(output['low'].to_f)
-          ticker.volume = NumericHelper.to_d(output['volume'].to_f)
+          ticker           = Cryptoexchange::Models::Ticker.new
+          ticker.base      = market_pair.base
+          ticker.target    = market_pair.target
+          ticker.market    = Bigone::Market::NAME
+          ticker.last      = NumericHelper.to_d(output['close'].to_f)
+          ticker.high      = NumericHelper.to_d(output['high'].to_f)
+          ticker.low       = NumericHelper.to_d(output['low'].to_f)
+          ticker.bid       = NumericHelper.to_d(HashHelper.dig(output, 'bid', 'price'))
+          ticker.ask       = NumericHelper.to_d(HashHelper.dig(output, 'ask', 'price'))
+          ticker.volume    = NumericHelper.to_d(output['volume'].to_f)
+          ticker.change    = NumericHelper.to_d(output['daily_change_perc'])
           ticker.timestamp = Time.now.to_i
-          ticker.payload = output
+          ticker.payload   = output
           ticker
         end
       end

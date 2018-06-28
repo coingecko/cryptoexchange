@@ -12,16 +12,16 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          output["data"].collect do |trade|
+          output['data']['edges'].collect do |trade|
             tr = Cryptoexchange::Models::Trade.new
-            tr.trade_id  = trade["trade_id"]
+            tr.trade_id  = HashHelper.dig(trade, 'node', 'id')
             tr.base      = market_pair.base
             tr.target    = market_pair.target
             tr.market    = Bigone::Market::NAME
-            tr.type      = trade["trade_side"] == "ASK" ? "sell" : "buy"
-            tr.price     = trade["price"]
-            tr.amount    = trade["amount"]
-            tr.timestamp = trade["created_at"].to_i
+            tr.type      = HashHelper.dig(trade, 'node', 'taker_side') == "ASK" ? "sell" : "buy"
+            tr.price     = HashHelper.dig(trade, 'node', 'price')
+            tr.amount    = HashHelper.dig(trade, 'node', 'amount')
+            tr.timestamp = Time.parse(HashHelper.dig(trade, 'node', 'inserted_at')).to_i
             tr.payload   = trade
             tr
           end
