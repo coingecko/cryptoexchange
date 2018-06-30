@@ -21,6 +21,8 @@ RSpec.describe 'RadarRelay integration specs' do
     expect(ticker.target).to eq 'WETH'
     expect(ticker.market).to eq 'radar_relay'
     expect(ticker.last).to be_a Numeric
+    puts ticker.last.to_f
+    expect(ticker.last).to be < 100 # Test if number is reasonable
     expect(ticker.high).to be_a Numeric
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric

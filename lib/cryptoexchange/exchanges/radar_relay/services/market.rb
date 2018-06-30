@@ -23,21 +23,13 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = RadarRelay::Market::NAME
-          ticker.last      = value_divisor(NumericHelper.to_d(output['last']))
-          ticker.high      = output['high'] == "NA" ? nil : value_divisor(NumericHelper.to_d(output['high']))
-          ticker.low       = output['low'] == "NA" ? nil : value_divisor(NumericHelper.to_d(output['low']))
+          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.high      = output['high'] == "NA" ? nil : NumericHelper.to_d(output['high'])
+          ticker.low       = output['low'] == "NA" ? nil : NumericHelper.to_d(output['low'])
           ticker.volume    = NumericHelper.to_d(output['baseVolume'])
           ticker.timestamp = Time.now.to_i
           ticker.payload   = output
           ticker
-        end
-
-        private
-
-        def value_divisor(amount)
-          return if amount.zero?
-          # For radar_relay, price denominated in different format
-          1.0/amount
         end
       end
     end
