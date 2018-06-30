@@ -131,6 +131,7 @@ Or install it yourself as:
 | Hadax             | Y       | N          | N       |         | Y           |
 | HitBTC            | Y       |            |         |         | Y           |
 | Hksy              | Y       |            | Y       |         | User-Defined|
+| Hotbit            | Y       | N          | N       |         | Y           |
 | Huobi             | Y       |            |         |         | Y           |
 | Idcm              | Y       |            |         |         | Y           |
 | Idex              | Y       | Unstable   | Y       |         | Y           |
