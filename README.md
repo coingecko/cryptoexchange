@@ -91,6 +91,7 @@ Or install it yourself as:
 | Coinbene          | Y       | Y          | Y       |         | Y           | Y        | coinbene          |
 | Coincheck         | Y       |            |         |         | User-Defined|          | coincheck         |
 | Coinex            | Y       | Y          | Y       |         | Y           | Y        | coinex            |
+| Coinexmarket      | Y       | Y          | Y       |         | Y           |          | coinexmarket      |
 | Coinfalcon        | Y       | Y          | Y       |         | Y           |          | coinfalcon        |
 | Coinfield         | Y       | N          | N       |         | Y           | Y        | coinfield         |
 | Coingi            | Y       | Y          | Y       |         | Y           | Y        | coingi            |
