@@ -5,11 +5,11 @@ module Cryptoexchange::Services
       @exchange = exchange
     end
 
-    def signature(payload)
+    def signature(payload:)
       raise NotImplementedError, 'signature method is not defined!'
     end
 
-    def headers(payload)
+    def headers(payload:)
       raise NotImplementedError, 'header method is not defined!'
     end
 

@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Coinut
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        
+
         def fetch
           authentication = Cryptoexchange::Exchanges::Coinut::Authentication.new(
             :pairs,

@@ -3,6 +3,6 @@ module Cryptoexchange::Exchanges
     class Market < Cryptoexchange::Models::Market
       NAME = 'coinut'
       API_URL = 'https://api.coinut.com'
-    end  
+    end
   end
 end

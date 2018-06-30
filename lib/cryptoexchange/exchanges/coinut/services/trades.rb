@@ -39,7 +39,6 @@ module Cryptoexchange::Exchanges
             tr
           end
         end
-        
       end
     end
   end
