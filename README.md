@@ -34,7 +34,7 @@ Or install it yourself as:
 | Bcex              | Y       | Y          | Y       |         | Y           |
 | Bibox             | Y       | Y          | Y       |         | Y           |
 | BigONE            | Y       | Y          | Y       |         | Y           |
-| Bilaxy            | Y       | Y          | Y       |         | User-Defined***|
+| Bilaxy            | Y       | Y          | Y       |         | Y           |
 | Bit-Z             | Y       |            |         |         | Y           |
 | Bit2C             | Y       | Y          | Y       |         | User-Defined|
 | Binance           | Y       | Y          |         |         | Y           |
