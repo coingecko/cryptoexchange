@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://omnitrade.io/api/v2/order_book?market=btcbrl
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - omnitrade.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 26 Jun 2018 18:08:14 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7a7bc779ac211072e0c862910b1691671530036494; expires=Wed, 26-Jun-19
+        18:08:14 GMT; path=/; domain=.omnitrade.io; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=300, public
+      X-Request-Id:
+      - f6e60bb8-f63f-4e6d-b731-54845daad323
+      X-Runtime:
+      - '0.019792'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains;
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 43119e389df44c5a-GRU
+    body:
+      encoding: ASCII-8BIT
+      string: '{"asks":[{"id":285903,"side":"sell","ord_type":"limit","price":"27000.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-26T12:43:54-03:00","volume":"0.01064338","remaining_volume":"0.01064338","executed_volume":"0.0","trades_count":0},{"id":285960,"side":"sell","ord_type":"limit","price":"27000.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-26T13:06:00-03:00","volume":"0.00508802","remaining_volume":"0.00508802","executed_volume":"0.0","trades_count":0},{"id":285779,"side":"sell","ord_type":"limit","price":"27750.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-26T11:48:44-03:00","volume":"0.10473339","remaining_volume":"0.10473339","executed_volume":"0.0","trades_count":0},{"id":261379,"side":"sell","ord_type":"limit","price":"28000.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-20T09:34:41-03:00","volume":"0.00955329","remaining_volume":"0.00955329","executed_volume":"0.0","trades_count":0},{"id":197143,"side":"sell","ord_type":"limit","price":"29400.0","avg_price":"29400.0","state":"wait","market":"btcbrl","created_at":"2018-06-09T07:44:08-03:00","volume":"0.06802721","remaining_volume":"0.06774807","executed_volume":"0.00027914","trades_count":1},{"id":197140,"side":"sell","ord_type":"limit","price":"29500.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-09T07:43:27-03:00","volume":"0.0338983","remaining_volume":"0.0338983","executed_volume":"0.0","trades_count":0},{"id":197133,"side":"sell","ord_type":"limit","price":"29600.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-09T07:42:36-03:00","volume":"0.01689189","remaining_volume":"0.01689189","executed_volume":"0.0","trades_count":0},{"id":197152,"side":"sell","ord_type":"limit","price":"29600.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-09T07:45:03-03:00","volume":"0.03378378","remaining_volume":"0.03378378","executed_volume":"0.0","trades_count":0},{"id":197168,"side":"sell","ord_type":"limit","price":"29800.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-09T07:51:52-03:00","volume":"0.01677852","remaining_volume":"0.01677852","executed_volume":"0.0","trades_count":0},{"id":197167,"side":"sell","ord_type":"limit","price":"30000.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-09T07:51:38-03:00","volume":"0.03333333","remaining_volume":"0.03333333","executed_volume":"0.0","trades_count":0},{"id":198665,"side":"sell","ord_type":"limit","price":"30800.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-09T12:45:58-03:00","volume":"0.00046753","remaining_volume":"0.00046753","executed_volume":"0.0","trades_count":0},{"id":213074,"side":"sell","ord_type":"limit","price":"31000.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-11T12:01:49-03:00","volume":"0.00401162","remaining_volume":"0.00401162","executed_volume":"0.0","trades_count":0},{"id":267109,"side":"sell","ord_type":"limit","price":"32000.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-21T17:31:40-03:00","volume":"0.05608086","remaining_volume":"0.05608086","executed_volume":"0.0","trades_count":0},{"id":254315,"side":"sell","ord_type":"limit","price":"35000.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-18T19:51:10-03:00","volume":"0.01143677","remaining_volume":"0.01143677","executed_volume":"0.0","trades_count":0},{"id":1649,"side":"sell","ord_type":"limit","price":"55000.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-02-26T09:57:09-03:00","volume":"0.04","remaining_volume":"0.04","executed_volume":"0.0","trades_count":0}],"bids":[{"id":286226,"side":"buy","ord_type":"limit","price":"24825.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-26T15:08:07-03:00","volume":"0.00224532","remaining_volume":"0.00224532","executed_volume":"0.0","trades_count":0},{"id":286212,"side":"buy","ord_type":"limit","price":"24816.0","avg_price":"24816.0","state":"wait","market":"btcbrl","created_at":"2018-06-26T15:01:59-03:00","volume":"0.00426236","remaining_volume":"0.00245397","executed_volume":"0.00180839","trades_count":1},{"id":286169,"side":"buy","ord_type":"limit","price":"24588.0","avg_price":"24588.0","state":"wait","market":"btcbrl","created_at":"2018-06-26T14:42:26-03:00","volume":"0.00722069","remaining_volume":"0.0068847","executed_volume":"0.00033599","trades_count":1},{"id":286177,"side":"buy","ord_type":"limit","price":"24588.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-26T14:45:45-03:00","volume":"0.00108996","remaining_volume":"0.00108996","executed_volume":"0.0","trades_count":0},{"id":286198,"side":"buy","ord_type":"limit","price":"24567.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-26T14:56:51-03:00","volume":"0.00564139","remaining_volume":"0.00564139","executed_volume":"0.0","trades_count":0},{"id":285906,"side":"buy","ord_type":"limit","price":"24501.0","avg_price":"24501.0","state":"wait","market":"btcbrl","created_at":"2018-06-26T12:45:21-03:00","volume":"0.0144566","remaining_volume":"0.00936858","executed_volume":"0.00508802","trades_count":1},{"id":285877,"side":"buy","ord_type":"limit","price":"24500.0","avg_price":"24500.0","state":"wait","market":"btcbrl","created_at":"2018-06-26T12:35:42-03:00","volume":"0.01224489","remaining_volume":"0.00330179","executed_volume":"0.0089431","trades_count":2},{"id":285490,"side":"buy","ord_type":"limit","price":"24400.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-26T09:32:47-03:00","volume":"0.29516673","remaining_volume":"0.29516673","executed_volume":"0.0","trades_count":0},{"id":285640,"side":"buy","ord_type":"limit","price":"24400.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-26T10:47:07-03:00","volume":"0.00568451","remaining_volume":"0.00568451","executed_volume":"0.0","trades_count":0},{"id":285879,"side":"buy","ord_type":"limit","price":"24100.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-26T12:36:28-03:00","volume":"0.4","remaining_volume":"0.4","executed_volume":"0.0","trades_count":0},{"id":285897,"side":"buy","ord_type":"limit","price":"23800.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-26T12:42:11-03:00","volume":"0.00771837","remaining_volume":"0.00771837","executed_volume":"0.0","trades_count":0},{"id":285886,"side":"buy","ord_type":"limit","price":"23500.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-26T12:38:02-03:00","volume":"0.4","remaining_volume":"0.4","executed_volume":"0.0","trades_count":0},{"id":285922,"side":"buy","ord_type":"limit","price":"22750.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-26T12:50:44-03:00","volume":"0.4","remaining_volume":"0.4","executed_volume":"0.0","trades_count":0},{"id":283458,"side":"buy","ord_type":"limit","price":"22150.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-25T18:28:19-03:00","volume":"0.00975981","remaining_volume":"0.00975981","executed_volume":"0.0","trades_count":0},{"id":229938,"side":"buy","ord_type":"limit","price":"22100.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-13T20:59:17-03:00","volume":"0.01131221","remaining_volume":"0.01131221","executed_volume":"0.0","trades_count":0},{"id":270263,"side":"buy","ord_type":"limit","price":"21500.0","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2018-06-22T11:31:50-03:00","volume":"0.00465116","remaining_volume":"0.00465116","executed_volume":"0.0","trades_count":0},{"id":499,"side":"buy","ord_type":"limit","price":"0.01","avg_price":"0.0","state":"wait","market":"btcbrl","created_at":"2017-12-14T16:30:36-02:00","volume":"259.1802","remaining_volume":"259.1802","executed_volume":"0.0","trades_count":0}]}'
+    http_version: 
+  recorded_at: Tue, 26 Jun 2018 18:08:14 GMT
+recorded_with: VCR 4.0.0

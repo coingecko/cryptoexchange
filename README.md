@@ -173,6 +173,7 @@ Or install it yourself as:
 | Octaex            | Y       | Y          | Y       |         | Y           |
 | OKCoin            | Y       |            |         |         | User-Defined|
 | OKEx              | Y       | Y          | Y       |         | Y           |
+| OmniTrade         | Y       | Y          | Y       | Y       | Y           |
 | Ooobtc            | Y       | Y          | Y       |         | Y           |
 | Openledger        | Y       | Y          | Y       |         | Y           |
 | OrderBook         | Y       | Y          | Y       |         | Y           |
