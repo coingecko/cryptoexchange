@@ -34,7 +34,7 @@ Or install it yourself as:
 | Bcex              | Y       | Y          | Y       |         | Y           |
 | Bibox             | Y       | Y          | Y       |         | Y           |
 | BigONE            | Y       | Y          | Y       |         | Y           |
-| Bilaxy            | Y       | Y          | Y       |         | User-Defined***|
+| Bilaxy            | Y       | Y          | Y       |         | Y           |
 | Bit-Z             | Y       |            |         |         | Y           |
 | Bit2C             | Y       | Y          | Y       |         | User-Defined|
 | Binance           | Y       | Y          |         |         | Y           |
@@ -133,6 +133,7 @@ Or install it yourself as:
 | Hksy              | Y       |            | Y       |         | User-Defined|
 | Hotbit            | Y       | N          | N       |         | Y           |
 | Huobi             | Y       |            |         |         | Y           |
+| Idax              | Y       | N          | N       |         | Y           |
 | Idcm              | Y       |            |         |         | Y           |
 | Idex              | Y       | Unstable   | Y       |         | Y           |
 | InfinityCoin      | Y       |            |         |         | Y           |
@@ -192,11 +193,13 @@ Or install it yourself as:
 | SouthXchange      | Y       | Y          | Y       |         | Y           |
 | Stocks Exchange   | Y       |            |         |         | Y           |
 | Switcheo          | Y       | N          | N       |         | Y           |
+| Syex              | Y       | N          | N       |         | Y           |
 | SZZC              | Y       |            |         |         | Y           |
 | The Rock Trading  | Y       |            |         |         | Y           |
 | The Token Store   | Y       | Y          | Y       |         | Y           |
 | Tidex             | Y       |            |         |         | Y           |
 | Tokenjar          | Y       |            |         |         | Y           |
+| Tokenomy          | Y       | Y          | Y       |         | Y           |
 | Topbtc            | Y       | N          | N       |         | Y           |
 | TradeOgre         | Y       | Y          | Y       |         | Y           |
 | Trade Satoshi     | Y       |            |         |         | Y           |

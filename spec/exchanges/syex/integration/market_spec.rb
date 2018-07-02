@@ -1,28 +1,28 @@
 require 'spec_helper'
 
-RSpec.describe 'RadarRelay integration specs' do
+RSpec.describe 'Syex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:dai_weth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'dai', target: 'weth', market: 'radar_relay') }
+  let(:sy_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'SY', target: 'USDT', market: 'syex') }
 
   it 'fetch pairs' do
-    pairs = client.pairs('radar_relay')
+    pairs = client.pairs('syex')
     expect(pairs).not_to be_empty
 
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
-    expect(pair.market).to eq 'radar_relay'
+    expect(pair.market).to eq 'syex'
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(dai_weth_pair)
+    ticker = client.ticker(sy_usdt_pair)
 
-    expect(ticker.base).to eq 'DAI'
-    expect(ticker.target).to eq 'WETH'
-    expect(ticker.market).to eq 'radar_relay'
+    expect(ticker.base).to eq 'SY'
+    expect(ticker.target).to eq 'USDT'
+    expect(ticker.market).to eq 'syex'
     expect(ticker.last).to be_a Numeric
-    puts ticker.last.to_f
-    expect(ticker.last).to be < 100 # Test if number is reasonable
+    expect(ticker.ask).to be_a Numeric
+    expect(ticker.bid).to be_a Numeric
     expect(ticker.high).to be_a Numeric
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric

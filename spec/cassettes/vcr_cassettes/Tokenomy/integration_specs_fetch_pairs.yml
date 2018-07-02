@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://exchange.tokenomy.com/api/summaries
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - exchange.tokenomy.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Jun 2018 23:40:41 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db3b9c682cf42d681e8cdc726638ea7b41530142841; expires=Thu, 27-Jun-19
+        23:40:41 GMT; path=/; domain=.tokenomy.com; HttpOnly; Secure
+      - tokex_api=6cebef084abe911cc55b557a1a27ab55; expires=Thu, 28-Jun-2018 11:40:41
+        GMT; Max-Age=43200; path=/; domain=exchange.tokenomy.com; secure
+      X-Powered-By:
+      - TOKENOMY
+      Access-Control-Allow-Origin:
+      - https://tokenomy.com
+      X-Served-By:
+      - A1
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 431bc296dd04a2e4-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"tickers":{"ten_btc":{"high":"0.00003695","low":"0.00003518","vol_ten":"352836.97539980","vol_btc":"12.85400597","last":"0.00003643","buy":"0.00003514","sell":"0.00003655","name":"Tokenomy"},"eth_btc":{"high":"0.07316","low":"0.07046","vol_eth":"203.39113528","vol_btc":"14.58337178","last":"0.07218","buy":"0.07118","sell":"0.0723","name":"Ethereum"},"trx_btc":{"high":"0.00000656","low":"0.00000622","vol_trx":"2616904.03932528","vol_btc":"16.66364328","last":"0.00000639","buy":"0.00000627","sell":"0.0000064","name":"Tron"},"ven_btc":{"high":"0.00043539","low":"0.00041115","vol_ven":"27499.11353603","vol_btc":"11.50879959","last":"0.00043264","buy":"0.00042509","sell":"0.00043368","name":"VeChain"},"omg_btc":{"high":"0.00154","low":"0.00125","vol_omg":"345.41821153","vol_btc":"0.46124855","last":"0.001497","buy":"0.00125","sell":"0.00154","name":"OmiseGO"},"brd_btc":{"high":"0.00006992","low":"0.00006525","vol_brd":"203782.59029061","vol_btc":"13.65692553","last":"0.00006719","buy":"0.00006614","sell":"0.00006735","name":"Bread"},"veri_btc":{"high":"0.007563","low":"0.006913","vol_veri":"59.65329078","vol_btc":"0.43921135","last":"0.007528","buy":"0.00739","sell":"0.00754","name":"Veritaseum"},"npxs_btc":{"high":"0.00000093","low":"0.00000082","vol_npxs":"1328047.33239017","vol_btc":"1.15759398","last":"0.00000091","buy":"0.00000091","sell":"0.00000092","name":"PundiX"},"qash_btc":{"high":"0.00005","low":"0.00005","vol_qash":"0.00000000","vol_btc":"0.00000000","last":"0.00005","buy":"0.00004011","sell":"0.00007797","name":"Qash"},"ten_eth":{"high":"0.000524","low":"0.000479","vol_ten":"235676.37621482","vol_eth":"120.88771191","last":"0.000509","buy":"0.000499","sell":"0.000509","name":"Tokenomy"},"trx_eth":{"high":"0.000137","low":"0.000085","vol_trx":"376172.82528279","vol_eth":"33.80181187","last":"0.00009","buy":"0.000088","sell":"0.000089","name":"Tron"},"ven_eth":{"high":"0.006059","low":"0.00576","vol_ven":"2384.18098954","vol_eth":"14.03922042","last":"0.006056","buy":"0.005934","sell":"0.006054","name":"VeChain"},"omg_eth":{"high":"0.02175","low":"0.01748","vol_omg":"44.47228021","vol_eth":"0.86063784","last":"0.02081","buy":"0.02053","sell":"0.02095","name":"OmiseGO"},"brd_eth":{"high":"0.000995","low":"0.000915","vol_brd":"14489.90502994","vol_eth":"13.66132450","last":"0.00094","buy":"0.000922","sell":"0.00094","name":"Bread"},"veri_eth":{"high":"0.1071","low":"0.0972","vol_veri":"80.02309685","vol_eth":"8.22102475","last":"0.1038","buy":"0.1033","sell":"0.1053","name":"Veritaseum"},"npxs_eth":{"high":"0.00001286","low":"0.00001161","vol_npxs":"5294.77057837","vol_eth":"0.06584596","last":"0.00001286","buy":"0.000012","sell":"0.000013","name":"PundiX"},"trx_ten":{"high":"0.1828","low":"0.1714","vol_trx":"3505941.11828083","vol_ten":"613782.14138460","last":"0.1761","buy":"0.1754","sell":"0.1762","name":"Tron"},"ae_ten":{"high":"8.4903","low":"7.9703","vol_ae":"3015.90824667","vol_ten":"24741.53300037","last":"8.3093","buy":"8.2599","sell":"8.322","name":"Aeternity"},"cmt_ten":{"high":"0.6283","low":"0.5826","vol_cmt":"245380.21079575","vol_ten":"149238.66343088","last":"0.6233","buy":"0.6218","sell":"0.6249","name":"CyberMiles"},"elf_ten":{"high":"2.526","low":"2.235","vol_elf":"51068.97325967","vol_ten":"121121.43480780","last":"2.4314","buy":"2.4157","sell":"2.4278","name":"Aelf"},"zil_ten":{"high":"0.3001","low":"0.2767","vol_zil":"581957.77710591","vol_ten":"165414.94098331","last":"0.2899","buy":"0.2884","sell":"0.2899","name":"Zilliqa"},"zrx_ten":{"high":"2.9137","low":"2.7527","vol_zrx":"57186.79919589","vol_ten":"160715.11001567","last":"2.8951","buy":"2.883","sell":"2.8975","name":"0x"}},"prices_24h":{"tenbtc":"3645","ethbtc":"7158000","trxbtc":"625","venbtc":"41672","omgbtc":"152800","brdbtc":"6553","veribtc":"744400","npxsbtc":"89","qashbtc":"5000","teneth":"51200","trxeth":"8800","veneth":"589400","omgeth":"2149000","brdeth":"92400","verieth":"10460000","npxseth":"1458","trxten":"17200000","aeten":"820270000","cmtten":"61230000","elften":"235870000","zilten":"28440000","zrxten":"284180000"},"prices_7d":{"tenbtc":"3918","ethbtc":"8006000","trxbtc":"736","venbtc":"47112","omgbtc":"136000","brdbtc":"7173","veribtc":"988100","npxsbtc":"189","qashbtc":"5000","teneth":"49200","trxeth":"9300","veneth":"598200","omgeth":"1715000","brdeth":"90600","verieth":"12420000","npxseth":"2197","trxten":"18900000","aeten":"990780000","cmtten":"78440000","elften":"259180000","zilten":"33650000","zrxten":"334060000"},"server_time":1530142841}'
+    http_version: 
+  recorded_at: Wed, 27 Jun 2018 23:40:41 GMT
+recorded_with: VCR 4.0.0

@@ -4,7 +4,7 @@ http_interactions:
     method: get
     uri: https://api.radarrelay.com/v0/ticker/DAI/WETH
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       Connection:
@@ -12,33 +12,39 @@ http_interactions:
       Host:
       - api.radarrelay.com
       User-Agent:
-      - http.rb/1.0.4
+      - http.rb/3.0.0
   response:
     status:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx/1.10.2
-      Date:
-      - Mon, 05 Feb 2018 06:39:57 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '107'
-      Connection:
-      - close
       X-Powered-By:
       - Express
       Access-Control-Allow-Origin:
       - "*"
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '119'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '109'
       Etag:
-      - W/"6b-RZR6Jht08ULsaK0LR796zBCvpVk"
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS
+      - W/"6d-dXBpjS+HUHt5O7fHj/S1Fq7rWPk"
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Sat, 30 Jun 2018 09:05:03 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
     body:
       encoding: UTF-8
-      string: '{"baseVolume":35599.08884678,"quoteVolume":43.1896184,"high":930.29825,"low":774.88965,"last":501.22800862}'
+      string: '{"baseVolume":217.80447256,"quoteVolume":92428.85201407,"high":0.00245674,"low":0.00215716,"last":0.00217632}'
     http_version: 
-  recorded_at: Mon, 05 Feb 2018 06:39:57 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Sat, 30 Jun 2018 09:05:03 GMT
+recorded_with: VCR 4.0.0
