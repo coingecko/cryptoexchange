@@ -130,7 +130,6 @@ Or install it yourself as:
 | Graviex           | Y       | N          | N       |         | Y           |
 | Hadax             | Y       | N          | N       |         | Y           |
 | HitBTC            | Y       |            |         |         | Y           |
-| Hksy              | Y       |            | Y       |         | User-Defined|
 | Huobi             | Y       |            |         |         | Y           |
 | Idax              | Y       | N          | N       |         | Y           |
 | Idcm              | Y       |            |         |         | Y           |
@@ -192,6 +191,7 @@ Or install it yourself as:
 | SouthXchange      | Y       | Y          | Y       |         | Y           |
 | Stocks Exchange   | Y       |            |         |         | Y           |
 | Switcheo          | Y       | N          | N       |         | Y           |
+| Syex              | Y       | N          | N       |         | Y           |
 | SZZC              | Y       |            |         |         | Y           |
 | The Rock Trading  | Y       |            |         |         | Y           |
 | The Token Store   | Y       | Y          | Y       |         | Y           |

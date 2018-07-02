@@ -1,31 +1,40 @@
 module Cryptoexchange::Exchanges
-  module Hksy
+  module Syex
     module Services
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            true
+            false
           end
         end
 
-        def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output, market_pair)
+        def fetch
+          output = super(ticker_url)
+          adapt_all(output)
         end
 
-        def ticker_url(market_pair)
-          base = market_pair.base
-          target = market_pair.target
-          "#{Cryptoexchange::Exchanges::Hksy::Market::MARKET_API_URL}/selectCoinMarketbyCoinName?coinName=#{base}&payCoinName=#{target}"
+        def ticker_url
+          "#{Cryptoexchange::Exchanges::Syex::Market::API_URL}/selectCoinMarket?payCoinName=USDT"
+        end
+
+        def adapt_all(output)
+          output['model'].map do |ticker|
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+              base: ticker['defaultenname'],
+              target: Syex::Market::TARGET_SYM,
+              market: Syex::Market::NAME
+            )
+            adapt(ticker, market_pair)
+          end
         end
 
         def adapt(output, market_pair)
-          market = output["model"]
+          market = output
 
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
-          ticker.market    = Hksy::Market::NAME
+          ticker.market    = Syex::Market::NAME
           ticker.ask       = NumericHelper.to_d(market['sellprice'])
           ticker.bid       = NumericHelper.to_d(market['buyprice'])
           ticker.last      = NumericHelper.to_d(market['newclinchprice'])

@@ -1,17 +1,19 @@
 module Cryptoexchange::Exchanges
-  module Hksy
+  module Syex
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Syex::Market::API_URL}/selectCoinMarket?payCoinName=USDT"
+
         def fetch
           adapt(super)
         end
 
         def adapt(output)
-          output.map do |pair|
+          output['model'].map do |pair|
             Cryptoexchange::Models::MarketPair.new(
-              base: pair[:base],
-              target: pair[:target],
-              market: Hksy::Market::NAME
+              base: pair['defaultenname'],
+              target: Syex::Market::TARGET_SYM,
+              market: Syex::Market::NAME
             )
           end
         end
