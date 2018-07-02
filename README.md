@@ -130,6 +130,8 @@ Or install it yourself as:
 | Graviex           | Y       | N          | N       |         | Y           |
 | Hadax             | Y       | N          | N       |         | Y           |
 | HitBTC            | Y       |            |         |         | Y           |
+| Hksy              | Y       |            | Y       |         | User-Defined|
+| Hotbit            | Y       | N          | N       |         | Y           |
 | Huobi             | Y       |            |         |         | Y           |
 | Idax              | Y       | N          | N       |         | Y           |
 | Idcm              | Y       |            |         |         | Y           |
