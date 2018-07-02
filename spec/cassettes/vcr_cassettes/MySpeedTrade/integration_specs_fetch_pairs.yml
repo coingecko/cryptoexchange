@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://myspeedtrade.com/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - myspeedtrade.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1417'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=63072000; includeSubDomains
+      X-Request-Id:
+      - 45eb6d42-a13b-49f9-ba64-07ea594a02fc
+      Etag:
+      - '"a618cab30a797f4c1a27b58fe13afd46"'
+      X-Runtime:
+      - '0.010332'
+      Date:
+      - Wed, 27 Jun 2018 08:26:03 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"pacdoge","name":"$PAC/DOGE"},{"id":"pacbtc","name":"$PAC/BTC"},{"id":"pacltc","name":"$PAC/LTC"},{"id":"anubtc","name":"ANU/BTC"},{"id":"anudoge","name":"ANU/DOGE"},{"id":"anultc","name":"ANU/LTC"},{"id":"dogebtc","name":"DOGE/BTC"},{"id":"dogeltc","name":"DOGE/LTC"},{"id":"glpnbtc","name":"GLPN/BTC"},{"id":"glpnltc","name":"GLPN/LTC"},{"id":"glpndoge","name":"GLPN/DOGE"},{"id":"gpcbtc","name":"GPC/BTC"},{"id":"gpcdoge","name":"GPC/DOGE"},{"id":"gpcltc","name":"GPC/LTC"},{"id":"lgcbtc","name":"LGC/BTC"},{"id":"lgcdoge","name":"LGC/DOGE"},{"id":"lgcltc","name":"LGC/LTC"},{"id":"lobsbtc","name":"LOBS/BTC"},{"id":"lobsdoge","name":"LOBS/DOGE"},{"id":"lobsltc","name":"LOBS/LTC"},{"id":"lpcbtc","name":"LPC/BTC"},{"id":"ltcbtc","name":"LTC/BTC"},{"id":"ltcdoge","name":"LTC/DOGE"},{"id":"ltcbbtc","name":"LTCB/BTC"},{"id":"ltcbdoge","name":"LTCB/DOGE"},{"id":"ltcbltc","name":"LTCB/LTC"},{"id":"mgcbtc","name":"MGC/BTC"},{"id":"mgcdoge","name":"MGC/DOGE"},{"id":"mgcltc","name":"MGC/LTC"},{"id":"mlmbtc","name":"MLM/BTC"},{"id":"mlmdoge","name":"MLM/DOGE"},{"id":"mlmltc","name":"MLM/LTC"},{"id":"nylbtc","name":"NYL/BTC"},{"id":"nyldoge","name":"NYL/DOGE"},{"id":"nylltc","name":"NYL/LTC"},{"id":"sptdcbtc","name":"SPTDC/BTC"},{"id":"sptdcdoge","name":"SPTDC/DOGE"},{"id":"sptdcltc","name":"SPTDC/LTC"},{"id":"wvpbtc","name":"WVP/BTC"},{"id":"wvpdoge","name":"WVP/DOGE"},{"id":"wvpltc","name":"WVP/LTC"}]'
+    http_version: 
+  recorded_at: Wed, 27 Jun 2018 08:26:03 GMT
+recorded_with: VCR 4.0.0
