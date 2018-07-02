@@ -7,7 +7,6 @@ module Cryptoexchange::Exchanges
             false
           end
         end
-        TARGETS = ['BTC', 'ETH', 'USDT']
 
         def fetch
           output = super(ticker_url)
@@ -21,7 +20,7 @@ module Cryptoexchange::Exchanges
         def adapt_all(output)
           output.map do |pair|
             symbol = pair[0].upcase
-            base, target = strip_pairs(symbol)
+            base, target = symbol.split(/(BTC$)+|(ETH$)+(.*)|(USDT$)+(.*)/)
             next unless base && target
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base.upcase,
@@ -46,21 +45,6 @@ module Cryptoexchange::Exchanges
           ticker.timestamp = output['at']
           ticker.payload = output
           ticker
-        end
-
-        def strip_pairs(pair_symbol)
-          #Match last 3 or 4 if it hits target
-          last_4 = pair_symbol[-4..-1]
-          last_3 = pair_symbol[-3..-1]
-
-          if TARGETS.include? last_4
-            base = pair_symbol[0..-5]
-            target = last_4
-          elsif TARGETS.include? last_3
-            base = pair_symbol[0..-4]
-            target = last_3
-          end
-          [base, target]
         end
       end
     end
