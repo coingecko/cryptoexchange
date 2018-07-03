@@ -13,8 +13,8 @@ module Cryptoexchange::Exchanges
           market_pairs = []
           output.each do |pair|
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair["name"].split("/").first,
-                              target: pair["name"].split("/").last,
+                              base: pair['name'].split('/').first,
+                              target: pair['name'].split('/').last,
                               market: Otcbtc::Market::NAME
                             )
           end

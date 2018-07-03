@@ -53,7 +53,7 @@ RSpec.describe 'OTCBTC integration specs' do
     expect(trade.trade_id).to_not be_nil
     expect(trade.base).to eq 'ETH'
     expect(trade.target).to eq 'USDT'
-    expect(['up', 'down']).to include trade.type
+    expect(['buy', 'sell']).to include trade.type
     expect(trade.price).to_not be_nil
     expect(trade.amount).to_not be_nil
     expect(trade.timestamp).to be_a Numeric
