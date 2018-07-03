@@ -19,8 +19,8 @@ module Cryptoexchange::Exchanges
             tr.base      = market_pair.base
             tr.target    = market_pair.target
             tr.type      = trade['side'] == 'up' ? 'buy' : 'sell'
-            tr.price     = trade['price']
-            tr.amount    = trade['volume']
+            tr.price     = NumericHelper.to_d(trade['price'])
+            tr.amount    = NumericHelper.to_d(trade['volume'])
             tr.timestamp = trade['at']
             tr.payload   = trade
             tr.market    = Otcbtc::Market::NAME
