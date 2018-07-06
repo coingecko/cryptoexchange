@@ -220,7 +220,7 @@ Or install it yourself as:
 | Yunbi             | Y       |            |         |         | Y           |
 | Zaif              | Y       | Y          | Y       |         | Y           |
 | ZB                | Y       | Y          | Y       |         | Y           |
-| Zebpay            | Y       |            |         |         | User-Defined|
+| Zebpay            | Y       |            |         |         | Y           |
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 *** User-Defined requires pair id
