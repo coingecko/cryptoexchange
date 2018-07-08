@@ -208,7 +208,7 @@ Or install it yourself as:
 | Trade.mn          | Y       | Y          | Y       |         | Y           |
 | TrustDex **       | Y       |            |         |         | Y           |
 | TuxExchange       | Y       |            |         |         | Y           |
-| Upbit             | Y       |            |         |         | Y           |
+| Upbit             | Y       | Y          | Y       |         | Y           |
 | Unocoin           |         |            |         |         |             |
 | Vertpig           | Y       | Y          | N       |         | Y           |
 | Viabtc            | Y       |            |         |         | User-Defined|
