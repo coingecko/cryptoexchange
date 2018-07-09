@@ -22,6 +22,7 @@ Or install it yourself as:
 
 ## Exchanges Supported
 
+
 | Exchange          | Ticker  | Order Book | Trade   | Account | Market List | Pair URL |
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |----------|
 | Abcc              | Y       | N          | N       |         | Y           |          |
@@ -211,6 +212,7 @@ Or install it yourself as:
 | TradeOgre         | Y       | Y          | Y       |         | Y           |          |
 | Trade Satoshi     | Y       |            |         |         | Y           |          |
 | Trade.mn          | Y       | Y          | Y       |         | Y           |          |
+| TrocaNinja        | Y       | N          | N       |         | Y           |          |
 | TrustDex **       | Y       |            |         |         | Y           |          |
 | TuxExchange       | Y       |            |         |         | Y           |          |
 | Upbit             | Y       | Y          | Y       |         | Y           |          |
