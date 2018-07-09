@@ -14,6 +14,11 @@ RSpec.describe 'Gate integration specs' do
     expect(pair.market).to eq 'gate'
   end
 
+  it 'give trade url' do
+    trade_page_url = Cryptoexchange::Exchanges::Gate::Market.trade_page_url base: bch_usdt_pair.base, target: bch_usdt_pair.target
+    expect(trade_page_url).to eq "https://gate.io/trade/BCH_USDT"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(bch_usdt_pair)
 
