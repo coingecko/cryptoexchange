@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.upbit.com/v1/orderbook?markets=KRW-BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.upbit.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 08 Jul 2018 06:57:42 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1005'
+      Connection:
+      - close
+      Expires:
+      - '0'
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      X-Xss-Protection:
+      - 1; mode=block
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - DENY
+      Etag:
+      - '"00f6ac9fd7dc019146ddac2042c0468fb"'
+      X-Content-Type-Options:
+      - nosniff
+      X-Application-Context:
+      - stockplus_quotation_api:aws_production:10080
+    body:
+      encoding: UTF-8
+      string: '[{"market":"KRW-BTC","timestamp":1531033067244,"total_ask_size":14.15659026,"total_bid_size":17.29897415,"orderbook_units":[{"ask_price":7516000.0,"bid_price":7513000.0,"ask_size":5.0,"bid_size":0.62009224},{"ask_price":7517000.0,"bid_price":7512000.0,"ask_size":0.51864889,"bid_size":0.53908467},{"ask_price":7518000.0,"bid_price":7511000.0,"ask_size":1.74996936,"bid_size":1.97687604},{"ask_price":7519000.0,"bid_price":7510000.0,"ask_size":3.072561,"bid_size":9.26492059},{"ask_price":7520000.0,"bid_price":7506000.0,"ask_size":2.57430873,"bid_size":1.00013449},{"ask_price":7521000.0,"bid_price":7505000.0,"ask_size":0.00034,"bid_size":0.0001345},{"ask_price":7522000.0,"bid_price":7503000.0,"ask_size":1.04248012,"bid_size":0.00013454},{"ask_price":7523000.0,"bid_price":7502000.0,"ask_size":0.0002,"bid_size":0.14013456},{"ask_price":7524000.0,"bid_price":7500000.0,"ask_size":0.0002,"bid_size":1.41739587},{"ask_price":7525000.0,"bid_price":7499000.0,"ask_size":0.19788216,"bid_size":2.34006665}]}]'
+    http_version: 
+  recorded_at: Sun, 08 Jul 2018 06:57:42 GMT
+recorded_with: VCR 4.0.0
