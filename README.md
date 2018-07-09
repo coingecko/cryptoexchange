@@ -185,7 +185,7 @@ Or install it yourself as:
 | Qryptos           | Y       |            |         |         | Y           |
 | QuadrigaCX        | Y       |            |         |         | User-Defined|
 | Quoine            | Y       |            |         |         | Y           |
-| RadarRelay        | Y       |            |         |         | User-Defined|
+| RadarRelay        | Y       |            |         |         | Y           |
 | RightBTC          | Y       | Y          | Y       |         | Y           |
 | SafeTrade         | Y       | N          | N       |         | Y           |
 | Sigen             | Y       |            |         |         | Y           |
