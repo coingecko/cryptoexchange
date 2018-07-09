@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Upbit::Market::API_URL}/orderbook?markets=#{market_pair.base.upcase}-#{market_pair.target.upcase}"
+          "#{Cryptoexchange::Exchanges::Upbit::Market::API_URL}/orderbook?markets=#{market_pair.target.upcase}-#{market_pair.base.upcase}"
         end
 
         def adapt(output, market_pair)

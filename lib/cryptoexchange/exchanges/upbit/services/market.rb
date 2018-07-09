@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Upbit::Market::API_URL}/ticker?markets=#{market_pair.base}-#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::Upbit::Market::API_URL}/ticker?markets=#{market_pair.target}-#{market_pair.base}"
         end
 
         def adapt(output, market_pair)
@@ -25,7 +25,7 @@ module Cryptoexchange::Exchanges
           ticker.last = NumericHelper.to_d(output[0]['trade_price'])
           ticker.high = NumericHelper.to_d(output[0]['high_price'])
           ticker.low = NumericHelper.to_d(output[0]['low_price'])
-          ticker.volume = NumericHelper.to_d(output[0]['acc_trade_volume'])
+          ticker.volume = NumericHelper.to_d(output[0]['acc_trade_volume_24h'])
           ticker.timestamp = Time.now.to_i
           ticker.payload = output
           ticker

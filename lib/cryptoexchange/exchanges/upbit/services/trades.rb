@@ -9,7 +9,7 @@ module Cryptoexchange::Exchanges
         end
 
         def trades_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Upbit::Market::API_URL}/trades/ticks?market=#{market_pair.base}-#{market_pair.target}&count=200"
+          "#{Cryptoexchange::Exchanges::Upbit::Market::API_URL}/trades/ticks?market=#{market_pair.target}-#{market_pair.base}&count=200"
         end
 
         def adapt(output, market_pair)
