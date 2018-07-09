@@ -19,11 +19,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 08 Jul 2018 06:57:37 GMT
+      - Mon, 09 Jul 2018 01:21:21 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '806'
+      - '810'
       Connection:
       - close
       Expires:
@@ -37,61 +37,14 @@ http_interactions:
       X-Frame-Options:
       - DENY
       Etag:
-      - '"005398296a05d4b70df56b86e2dd721e5"'
+      - '"037dd3a534237ce9b2ba20ac99627ea8c"'
       X-Content-Type-Options:
       - nosniff
       X-Application-Context:
       - stockplus_quotation_api:aws_production:10080
     body:
       encoding: UTF-8
-      string: '[{"market":"KRW-BTC","trade_date":"20180708","trade_time":"065725","trade_date_kst":"20180708","trade_time_kst":"155725","trade_timestamp":1531033045000,"opening_price":7564000.00000000,"high_price":7585000.00000000,"low_price":7450000.00000000,"trade_price":7517000.0,"prev_closing_price":7550000.00000000,"change":"FALL","change_price":33000.00000000,"change_rate":0.0043708609,"signed_change_price":-33000.00000000,"signed_change_rate":-0.0043708609,"trade_volume":0.0002,"acc_trade_price":7945257420.25687000,"acc_trade_price_24h":18663661697.71772000,"acc_trade_volume":1055.82333907,"acc_trade_volume_24h":2492.79203083,"highest_52_week_price":28885000.00000000,"highest_52_week_date":"2018-01-06","lowest_52_week_price":4175000.00000000,"lowest_52_week_date":"2017-09-25","timestamp":1531033050308}]'
+      string: '[{"market":"KRW-BTC","trade_date":"20180709","trade_time":"012117","trade_date_kst":"20180709","trade_time_kst":"102117","trade_timestamp":1531099277000,"opening_price":7515000.00000000,"high_price":7524000.00000000,"low_price":7489000.00000000,"trade_price":7493000.0,"prev_closing_price":7516000.00000000,"change":"FALL","change_price":23000.00000000,"change_rate":0.0030601384,"signed_change_price":-23000.00000000,"signed_change_rate":-0.0030601384,"trade_volume":0.02988133,"acc_trade_price":1156285198.895980000,"acc_trade_price_24h":19626619325.58046000,"acc_trade_volume":154.03836681,"acc_trade_volume_24h":2610.95429354,"highest_52_week_price":28885000.00000000,"highest_52_week_date":"2018-01-06","lowest_52_week_price":4175000.00000000,"lowest_52_week_date":"2017-09-25","timestamp":1531099282464}]'
     http_version: 
-  recorded_at: Sun, 08 Jul 2018 06:57:37 GMT
-- request:
-    method: get
-    uri: https://api.upbit.com/v1/ticker?markets=KRW-BTC
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      Connection:
-      - close
-      Host:
-      - api.upbit.com
-      User-Agent:
-      - http.rb/3.0.0
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Sun, 08 Jul 2018 06:57:42 GMT
-      Content-Type:
-      - application/json;charset=UTF-8
-      Content-Length:
-      - '814'
-      Connection:
-      - close
-      Expires:
-      - '0'
-      Cache-Control:
-      - no-cache, no-store, max-age=0, must-revalidate
-      X-Xss-Protection:
-      - 1; mode=block
-      Pragma:
-      - no-cache
-      X-Frame-Options:
-      - DENY
-      Etag:
-      - '"020c4178947abb8ac972eb07d4e8a85eb"'
-      X-Content-Type-Options:
-      - nosniff
-      X-Application-Context:
-      - stockplus_quotation_api:aws_production:10080
-    body:
-      encoding: UTF-8
-      string: '[{"market":"KRW-BTC","trade_date":"20180708","trade_time":"065725","trade_date_kst":"20180708","trade_time_kst":"155725","trade_timestamp":1531033045000,"opening_price":7564000.00000000,"high_price":7585000.00000000,"low_price":7450000.00000000,"trade_price":7517000.00000000,"prev_closing_price":7550000.00000000,"change":"FALL","change_price":33000.00000000,"change_rate":0.0043708609,"signed_change_price":-33000.00000000,"signed_change_rate":-0.0043708609,"trade_volume":0.00020000,"acc_trade_price":7945257420.25687000,"acc_trade_price_24h":18663661697.71772,"acc_trade_volume":1055.82333907,"acc_trade_volume_24h":2492.79203083,"highest_52_week_price":28885000.00000000,"highest_52_week_date":"2018-01-06","lowest_52_week_price":4175000.00000000,"lowest_52_week_date":"2017-09-25","timestamp":1531033050308}]'
-    http_version: 
-  recorded_at: Sun, 08 Jul 2018 06:57:42 GMT
+  recorded_at: Mon, 09 Jul 2018 01:21:21 GMT
 recorded_with: VCR 4.0.0
