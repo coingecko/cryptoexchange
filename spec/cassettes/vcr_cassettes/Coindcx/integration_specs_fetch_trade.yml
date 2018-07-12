@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coindcx.com/exchange/v1/trades/QSPBTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coindcx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Jul 2018 03:57:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"97431aeba94a7557d8767d94044dec71"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8c6ce763-252a-49c1-b360-03d5e98a6738
+      X-Runtime:
+      - '0.008105'
+      Vary:
+      - Origin
+      X-Powered-By:
+      - Phusion Passenger 4.0.60
+      Server:
+      - nginx/1.12.1 + Phusion Passenger 4.0.60
+    body:
+      encoding: UTF-8
+      string: '{"trade_data":[{"p":"0.00001063","q":"989.0","T":1531280653472.0,"m":false},{"p":"0.00001064","q":"12.0","T":1531280665938.0,"m":false},{"p":"0.00001064","q":"207.0","T":1531280757950.0,"m":false},{"p":"0.00001064","q":"21.0","T":1531280927094.0,"m":false},{"p":"0.00001063","q":"91.0","T":1531280954666.0,"m":false},{"p":"0.00001063","q":"308.0","T":1531280959826.0,"m":false},{"p":"0.00001064","q":"1600.0","T":1531280970535.0,"m":false},{"p":"0.00001063","q":"124.0","T":1531281093579.0,"m":false},{"p":"0.00001063","q":"96.0","T":1531281093619.0,"m":false},{"p":"0.00001063","q":"96.0","T":1531281094613.0,"m":false},{"p":"0.00001063","q":"96.0","T":1531281095604.0,"m":false},{"p":"0.00001063","q":"96.0","T":1531281096606.0,"m":false},{"p":"0.00001063","q":"96.0","T":1531281097609.0,"m":false},{"p":"0.00001063","q":"24.0","T":1531281098621.0,"m":false},{"p":"0.00001064","q":"72.0","T":1531281098621.0,"m":false},{"p":"0.00001064","q":"95.0","T":1531281099619.0,"m":false},{"p":"0.0000106","q":"3033.0","T":1531281134171.0,"m":true},{"p":"0.00001059","q":"565.0","T":1531281135657.0,"m":true},{"p":"0.00001059","q":"538.0","T":1531281135834.0,"m":true},{"p":"0.00001059","q":"565.0","T":1531281137220.0,"m":true},{"p":"0.0000106","q":"46.0","T":1531281138186.0,"m":false},{"p":"0.0000106","q":"2987.0","T":1531281141747.0,"m":false},{"p":"0.00001063","q":"94.0","T":1531281144307.0,"m":false},{"p":"0.00001059","q":"3590.0","T":1531281200416.0,"m":true},{"p":"0.00001058","q":"4683.0","T":1531281216359.0,"m":true},{"p":"0.00001058","q":"317.0","T":1531281226708.0,"m":true},{"p":"0.00001058","q":"116.0","T":1531281227618.0,"m":false},{"p":"0.0000106","q":"711.0","T":1531281227618.0,"m":false},{"p":"0.00001056","q":"417.0","T":1531281227980.0,"m":true},{"p":"0.00001062","q":"62.0","T":1531281267398.0,"m":false}]}'
+    http_version: 
+  recorded_at: Wed, 11 Jul 2018 03:57:22 GMT
+recorded_with: VCR 4.0.0

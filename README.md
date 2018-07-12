@@ -77,6 +77,7 @@ Or install it yourself as:
 | Coin2001          | Y       | Y          | Y       |         | Y           |
 | CoinEgg           | Y       | Y          | Y       |         | User-Defined|
 | Coincheck         | Y       |            |         |         | User-Defined|
+| Coindcx           | Y       | Y          | Y       |         | Y           |
 | Coinex            | Y       | Y          | Y       |         | Y           |
 | Coinfalcon        | Y       | Y          | Y       |         | Y           |
 | Coinfield         | Y       | N          | N       |         | Y           |
