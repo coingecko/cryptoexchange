@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.qbtc.com/json/depthTable.do?symbol=BCH&tradeMarket=USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.qbtc.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Jul 2018 15:02:33 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - JSESSIONID=659407E3E1D6952B9D36C0663FB31807; Path=/; HttpOnly
+      - __cdnuid=a864adbea42f1bdb4a8d6ca383183f99; max-age=31536000; path=/; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE
+      Access-Control-Max-Age:
+      - '0'
+      Access-Control-Allow-Headers:
+      - Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified,
+        Cache-Control, Expires, Content-Type, X-E4M-With,userId,token
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Xdomainrequestallowed:
+      - '1'
+      X-Cdn-Edge:
+      - 2774ac3,-
+      X-Cache:
+      - bypass
+    body:
+      encoding: UTF-8
+      string: '{"statusCode":200,"message":"操作成功","result":{"sell":[{"amount":"0.06014319","price":"895.21"},{"amount":"0.1568","price":"905.6"},{"amount":"0.225","price":"935.82"},{"amount":"0.053","price":"953.8"},{"amount":"0.042","price":"999.5"},{"amount":"0.0389","price":"1015.82"},{"amount":"0.04","price":"1055.82"},{"amount":"0.04153","price":"1098.53"},{"amount":"0.042","price":"1125.3"},{"amount":"0.0386","price":"1151.65"},{"amount":"0.0296","price":"1189.2"},{"amount":"0.03","price":"1200.01"},{"amount":"0.0351","price":"1215.6"},{"amount":"0.05","price":"1252.02"},{"amount":"0.05","price":"1278.7"},{"amount":"0.052","price":"1300"},{"amount":"0.0523","price":"1325.87"},{"amount":"0.1126","price":"1390.98"},{"amount":"0.1","price":"1412.3"},{"amount":"0.112","price":"1468.989"},{"amount":"0.2038914","price":"1500"},{"amount":"0.06","price":"1538.85"},{"amount":"0.0521","price":"1635.831"},{"amount":"0.1","price":"1700.01"},{"amount":"0.1","price":"1728.62"},{"amount":"0.11","price":"1805.812"},{"amount":"0.06","price":"1835.82"},{"amount":"0.051","price":"1865.02"},{"amount":"0.035","price":"1895.53"},{"amount":"0.3","price":"1989"},{"amount":"0.23","price":"1997"},{"amount":"0.5","price":"1999"},{"amount":"0.0123","price":"2011.7"},{"amount":"0.056","price":"2056.7"},{"amount":"0.041","price":"2121.13"},{"amount":"0.0312","price":"2178.98"},{"amount":"0.0412","price":"2207.7"}],"buy":[{"amount":"0.342045","price":"643.7"},{"amount":"0.11","price":"620"},{"amount":"0.12","price":"600"},{"amount":"0.32","price":"593.7"},{"amount":"0.22","price":"581.06"},{"amount":"0.227","price":"572.02"},{"amount":"0.3","price":"550.6"},{"amount":"0.23","price":"523.6"},{"amount":"0.27","price":"510.8"},{"amount":"0.6","price":"500"},{"amount":"0.35","price":"486.58"},{"amount":"0.25","price":"480.02"}]}}'
+    http_version: 
+  recorded_at: Sun, 15 Jul 2018 15:02:33 GMT
+recorded_with: VCR 4.0.0
