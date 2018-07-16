@@ -156,6 +156,7 @@ Or install it yourself as:
 | LakeBTC           | Y       |            |         |         | Y           |
 | Latoken           | Y       |            |         |         | Y           |
 | Lbank             | Y       | Y          | Y       |         | Y           |
+| Liqnet            | Y       | Y          | Y       |         | Y           |
 | Liqui             | Y       |            |         |         | Y           |
 | LiteBit.eu        | Y       |            |         |         | Y           |
 | Livecoin          | Y       |            |         |         | Y           |

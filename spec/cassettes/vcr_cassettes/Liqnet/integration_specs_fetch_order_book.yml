@@ -1,0 +1,216 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.liqnet.com/public/rest/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.liqnet.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 16 Jun 2018 09:32:57 GMT
+      Content-Type:
+      - text/plain
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d128d1a2d52eac642093c550d96743bba1529141576; expires=Sun, 16-Jun-19
+        09:32:56 GMT; path=/; domain=.liqnet.com; HttpOnly
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42bc45a21ad1a978-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: "[\r\n  {\r\n    \"id\": \"5a733158d0538024488645d4\",\r\n    \"market\":
+        \"LTC/BTC\",\r\n    \"coin_name\": \"Litecoin\",\r\n    \"last_price\": 0.01480825,\r\n
+        \   \"change\": -0.99,\r\n    \"volume_24hr\": 420.18096824,\r\n    \"high_24hr\":
+        0.01498994,\r\n    \"low_24hr\": 0.01471555,\r\n    \"top_bid\": 0.01515989,\r\n
+        \   \"top_ask\": 0.01516089,\r\n    \"is_frozen\": false,\r\n    \"takerFee\":
+        0.2,\r\n    \"makerFee\": 0.1,\r\n    \"takerLENdiscont\": 0.0,\r\n    \"makerLENdiscont\":
+        0.0,\r\n    \"decimal_places\": 8,\r\n    \"tradingWorks\": false,\r\n    \"depositWorks\":
+        true,\r\n    \"withdrawWorks\": true\r\n  },\r\n  {\r\n    \"id\": \"5a7331e9d0538024488645d5\",\r\n
+        \   \"market\": \"ETH/BTC\",\r\n    \"coin_name\": \"Ethereum\",\r\n    \"last_price\":
+        0.07699152,\r\n    \"change\": 0.89,\r\n    \"volume_24hr\": 326.43467346,\r\n
+        \   \"high_24hr\": 0.07740348,\r\n    \"low_24hr\": 0.07594266,\r\n    \"top_bid\":
+        0.07564097,\r\n    \"top_ask\": 0.07564098,\r\n    \"is_frozen\": false,\r\n
+        \   \"takerFee\": 0.2,\r\n    \"makerFee\": 0.1,\r\n    \"takerLENdiscont\":
+        0.0,\r\n    \"makerLENdiscont\": 0.0,\r\n    \"decimal_places\": 8,\r\n    \"tradingWorks\":
+        false,\r\n    \"depositWorks\": true,\r\n    \"withdrawWorks\": true\r\n  },\r\n
+        \ {\r\n    \"id\": \"5a7331f2d0538024488645d6\",\r\n    \"market\": \"BCH/BTC\",\r\n
+        \   \"coin_name\": \"Bitcoin Cash\",\r\n    \"last_price\": 0.131702,\r\n
+        \   \"change\": -0.12,\r\n    \"volume_24hr\": 273.90304134,\r\n    \"high_24hr\":
+        0.13332689,\r\n    \"low_24hr\": 0.13104737,\r\n    \"top_bid\": 0.13256933,\r\n
+        \   \"top_ask\": 0.13256934,\r\n    \"is_frozen\": false,\r\n    \"takerFee\":
+        0.2,\r\n    \"makerFee\": 0.1,\r\n    \"takerLENdiscont\": 0.0,\r\n    \"makerLENdiscont\":
+        0.0,\r\n    \"decimal_places\": 8,\r\n    \"tradingWorks\": false,\r\n    \"depositWorks\":
+        true,\r\n    \"withdrawWorks\": true\r\n  },\r\n  {\r\n    \"id\": \"5ac6dca9c546f1214925964d\",\r\n
+        \   \"market\": \"PPC/BTC\",\r\n    \"coin_name\": \"Peercoin\",\r\n    \"last_price\":
+        0.00025995,\r\n    \"change\": 2.19,\r\n    \"volume_24hr\": 566.20798835,\r\n
+        \   \"high_24hr\": 0.000263,\r\n    \"low_24hr\": 0.00025021,\r\n    \"top_bid\":
+        0.00023097,\r\n    \"top_ask\": 0.00023098,\r\n    \"is_frozen\": false,\r\n
+        \   \"takerFee\": 0.2,\r\n    \"makerFee\": 0.1,\r\n    \"takerLENdiscont\":
+        0.0,\r\n    \"makerLENdiscont\": 0.0,\r\n    \"decimal_places\": 8,\r\n    \"tradingWorks\":
+        true,\r\n    \"depositWorks\": true,\r\n    \"withdrawWorks\": true\r\n  },\r\n
+        \ {\r\n    \"id\": \"5afeec5bc2fc7f7c68913fc4\",\r\n    \"market\": \"DASH/BTC\",\r\n
+        \   \"coin_name\": \"DASH\",\r\n    \"last_price\": 0.04010988,\r\n    \"change\":
+        0.64,\r\n    \"volume_24hr\": 572.90541009,\r\n    \"high_24hr\": 0.04016401,\r\n
+        \   \"low_24hr\": 0.03956839,\r\n    \"top_bid\": 0.03958194,\r\n    \"top_ask\":
+        0.03958195,\r\n    \"is_frozen\": false,\r\n    \"takerFee\": 0.2,\r\n    \"makerFee\":
+        0.1,\r\n    \"takerLENdiscont\": 0.0,\r\n    \"makerLENdiscont\": 0.0,\r\n
+        \   \"decimal_places\": 8,\r\n    \"tradingWorks\": false,\r\n    \"depositWorks\":
+        true,\r\n    \"withdrawWorks\": true\r\n  }\r\n]"
+    http_version: 
+  recorded_at: Sat, 16 Jun 2018 09:32:57 GMT
+- request:
+    method: get
+    uri: https://api.liqnet.com/public/rest/marketOrderBook?id=5a7331e9d0538024488645d5
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.liqnet.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 16 Jun 2018 09:32:58 GMT
+      Content-Type:
+      - text/plain
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dd9513c9b2e03eb1e2ee10ad308cdbd401529141577; expires=Sun, 16-Jun-19
+        09:32:57 GMT; path=/; domain=.liqnet.com; HttpOnly
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42bc45a9cbda312c-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: "{\r\n  \"asks\": [\r\n    [\r\n      0.07564098,\r\n      0.39583806\r\n
+        \   ],\r\n    [\r\n      0.075658,\r\n      0.15657938\r\n    ],\r\n    [\r\n
+        \     0.07567605,\r\n      15.5474\r\n    ],\r\n    [\r\n      0.07567805,\r\n
+        \     0.11398461\r\n    ],\r\n    [\r\n      0.07568106,\r\n      9.0\r\n
+        \   ],\r\n    [\r\n      0.07569108,\r\n      0.38899907\r\n    ],\r\n    [\r\n
+        \     0.07569392,\r\n      0.36891891\r\n    ],\r\n    [\r\n      0.075712,\r\n
+        \     6.0\r\n    ],\r\n    [\r\n      0.07574214,\r\n      0.01804815\r\n
+        \   ],\r\n    [\r\n      0.0757547,\r\n      9.447\r\n    ],\r\n    [\r\n
+        \     0.07575471,\r\n      7.0\r\n    ],\r\n    [\r\n      0.07578807,\r\n
+        \     0.00234636\r\n    ],\r\n    [\r\n      0.07580021,\r\n      3.0\r\n
+        \   ],\r\n    [\r\n      0.07580022,\r\n      7.0\r\n    ],\r\n    [\r\n      0.07582527,\r\n
+        \     0.079167\r\n    ],\r\n    [\r\n      0.07583513,\r\n      56.96246859\r\n
+        \   ],\r\n    [\r\n      0.07583514,\r\n      11.895\r\n    ],\r\n    [\r\n
+        \     0.07583515,\r\n      5.0\r\n    ],\r\n    [\r\n      0.07585313,\r\n
+        \     3.6101\r\n    ],\r\n    [\r\n      0.07588394,\r\n      34.93780822\r\n
+        \   ],\r\n    [\r\n      0.07588409,\r\n      4.0\r\n    ],\r\n    [\r\n      0.07589408,\r\n
+        \     1.0\r\n    ],\r\n    [\r\n      0.07591849,\r\n      0.653794\r\n    ],\r\n
+        \   [\r\n      0.0759185,\r\n      0.01704675\r\n    ],\r\n    [\r\n      0.07594257,\r\n
+        \     0.32661278\r\n    ],\r\n    [\r\n      0.07594258,\r\n      0.35899999\r\n
+        \   ],\r\n    [\r\n      0.07594927,\r\n      56.7624\r\n    ],\r\n    [\r\n
+        \     0.0759516,\r\n      0.0425\r\n    ],\r\n    [\r\n      0.07596463,\r\n
+        \     0.01\r\n    ],\r\n    [\r\n      0.07596633,\r\n      0.26380108\r\n
+        \   ],\r\n    [\r\n      0.07596687,\r\n      0.00353025\r\n    ],\r\n    [\r\n
+        \     0.0760037,\r\n      0.0014\r\n    ],\r\n    [\r\n      0.07600463,\r\n
+        \     0.00216067\r\n    ],\r\n    [\r\n      0.07602719,\r\n      0.0277\r\n
+        \   ],\r\n    [\r\n      0.07602745,\r\n      0.20075715\r\n    ],\r\n    [\r\n
+        \     0.07603906,\r\n      0.16096716\r\n    ],\r\n    [\r\n      0.07604178,\r\n
+        \     3.0\r\n    ],\r\n    [\r\n      0.07606457,\r\n      3.32411446\r\n
+        \   ],\r\n    [\r\n      0.07607463,\r\n      7.42022401\r\n    ],\r\n    [\r\n
+        \     0.0760929,\r\n      0.00271016\r\n    ],\r\n    [\r\n      0.07616415,\r\n
+        \     0.00865044\r\n    ],\r\n    [\r\n      0.07620722,\r\n      0.01786567\r\n
+        \   ],\r\n    [\r\n      0.07623689,\r\n      0.158333\r\n    ],\r\n    [\r\n
+        \     0.07623919,\r\n      567.624\r\n    ],\r\n    [\r\n      0.07629709,\r\n
+        \     0.00403016\r\n    ],\r\n    [\r\n      0.07630113,\r\n      0.0057774\r\n
+        \   ],\r\n    [\r\n      0.07634218,\r\n      11.70395943\r\n    ],\r\n    [\r\n
+        \     0.07634219,\r\n      0.01971514\r\n    ],\r\n    [\r\n      0.07634238,\r\n
+        \     0.66937918\r\n    ],\r\n    [\r\n      0.07635297,\r\n      0.01642384\r\n
+        \   ],\r\n    [\r\n      0.077154,\r\n      6.0\r\n    ],\r\n    [\r\n      0.07724418,\r\n
+        \     0.1198789\r\n    ],\r\n    [\r\n      0.0772542,\r\n      0.02\r\n    ],\r\n
+        \   [\r\n      0.07727424,\r\n      0.34673837\r\n    ],\r\n    [\r\n      0.0773043,\r\n
+        \     0.52427245\r\n    ],\r\n    [\r\n      0.07751472,\r\n      25.256\r\n
+        \   ],\r\n    [\r\n      0.07752474,\r\n      6.0\r\n    ],\r\n    [\r\n      0.07754478,\r\n
+        \     0.34462604\r\n    ],\r\n    [\r\n      0.07758486,\r\n      0.5927847\r\n
+        \   ],\r\n    [\r\n      0.07759488,\r\n      27.18098558\r\n    ],\r\n    [\r\n
+        \     0.07764498,\r\n      0.01388519\r\n    ],\r\n    [\r\n      0.077655,\r\n
+        \     0.01\r\n    ],\r\n    [\r\n      0.07766502,\r\n      0.08590931\r\n
+        \   ],\r\n    [\r\n      0.07768506,\r\n      0.16636024\r\n    ],\r\n    [\r\n
+        \     0.0777051,\r\n      55.93478\r\n    ],\r\n    [\r\n      0.07773516,\r\n
+        \     0.02927\r\n    ],\r\n    [\r\n      0.07778526,\r\n      0.3871479\r\n
+        \   ],\r\n    [\r\n      0.0778053,\r\n      4.29220027\r\n    ],\r\n    [\r\n
+        \     0.07781532,\r\n      0.34236738\r\n    ],\r\n    [\r\n      0.0778554,\r\n
+        \     0.19954\r\n    ],\r\n    [\r\n      0.07797564,\r\n      0.09192296\r\n
+        \   ],\r\n    [\r\n      0.07799568,\r\n      0.36842214\r\n    ],\r\n    [\r\n
+        \     0.0780057,\r\n      0.34087612\r\n    ],\r\n    [\r\n      0.0780558,\r\n
+        \     0.05\r\n    ],\r\n    [\r\n      0.07808586,\r\n      0.353094\r\n    ]\r\n
+        \ ],\r\n  \"bids\": [\r\n    [\r\n      0.07564097,\r\n      281.54132582\r\n
+        \   ],\r\n    [\r\n      0.0754488,\r\n      0.02\r\n    ],\r\n    [\r\n      0.07528912,\r\n
+        \     0.70385136\r\n    ],\r\n    [\r\n      0.07520118,\r\n      8.52180419\r\n
+        \   ],\r\n    [\r\n      0.07520116,\r\n      7.74868434\r\n    ],\r\n    [\r\n
+        \     0.0752009,\r\n      0.00403468\r\n    ],\r\n    [\r\n      0.07519345,\r\n
+        \     1.641\r\n    ],\r\n    [\r\n      0.07519344,\r\n      8.0\r\n    ],\r\n
+        \   [\r\n      0.07515039,\r\n      1.83\r\n    ],\r\n    [\r\n      0.07514818,\r\n
+        \     5.8\r\n    ],\r\n    [\r\n      0.07514582,\r\n      0.079167\r\n    ],\r\n
+        \   [\r\n      0.07510513,\r\n      3.7\r\n    ],\r\n    [\r\n      0.07510175,\r\n
+        \     0.90654788\r\n    ],\r\n    [\r\n      0.07509525,\r\n      3.5562\r\n
+        \   ],\r\n    [\r\n      0.07508251,\r\n      9.28534968\r\n    ],\r\n    [\r\n
+        \     0.07505989,\r\n      6.0\r\n    ],\r\n    [\r\n      0.07502964,\r\n
+        \     0.87231518\r\n    ],\r\n    [\r\n      0.07501986,\r\n      8.0\r\n
+        \   ],\r\n    [\r\n      0.07501198,\r\n      0.02229443\r\n    ],\r\n    [\r\n
+        \     0.07498254,\r\n      1.0015\r\n    ],\r\n    [\r\n      0.07497066,\r\n
+        \     94.86829277\r\n    ],\r\n    [\r\n      0.07497065,\r\n      64.2991261\r\n
+        \   ],\r\n    [\r\n      0.07497051,\r\n      52.307\r\n    ],\r\n    [\r\n
+        \     0.07497048,\r\n      56.7624\r\n    ],\r\n    [\r\n      0.07497047,\r\n
+        \     18.8826\r\n    ],\r\n    [\r\n      0.07496616,\r\n      3.32411446\r\n
+        \   ],\r\n    [\r\n      0.07486437,\r\n      0.2287591\r\n    ],\r\n    [\r\n
+        \     0.07486218,\r\n      0.0040435\r\n    ],\r\n    [\r\n      0.07476298,\r\n
+        \     0.1001001\r\n    ],\r\n    [\r\n      0.07476297,\r\n      117.648\r\n
+        \   ],\r\n    [\r\n      0.07476295,\r\n      29.9310883\r\n    ],\r\n    [\r\n
+        \     0.07476274,\r\n      0.00355087\r\n    ],\r\n    [\r\n      0.07475289,\r\n
+        \     0.00406645\r\n    ],\r\n    [\r\n      0.0747502,\r\n      0.03\r\n
+        \   ],\r\n    [\r\n      0.0747445,\r\n      567.624\r\n    ],\r\n    [\r\n
+        \     0.07471908,\r\n      0.04917094\r\n    ],\r\n    [\r\n      0.07471305,\r\n
+        \     0.00284199\r\n    ],\r\n    [\r\n      0.07470318,\r\n      0.00216705\r\n
+        \   ],\r\n    [\r\n      0.07468728,\r\n      0.158333\r\n    ],\r\n    [\r\n
+        \     0.07468058,\r\n      0.09782442\r\n    ],\r\n    [\r\n      0.07467535,\r\n
+        \     0.46682244\r\n    ],\r\n    [\r\n      0.07466423,\r\n      0.01814802\r\n
+        \   ],\r\n    [\r\n      0.07466038,\r\n      0.00148375\r\n    ],\r\n    [\r\n
+        \     0.07465972,\r\n      0.00235222\r\n    ],\r\n    [\r\n      0.07465588,\r\n
+        \     0.10487196\r\n    ],\r\n    [\r\n      0.07464508,\r\n      0.110671\r\n
+        \   ],\r\n    [\r\n      0.0746405,\r\n      0.13370758\r\n    ],\r\n    [\r\n
+        \     0.07463503,\r\n      0.02757788\r\n    ],\r\n    [\r\n      0.07463323,\r\n
+        \     0.00407564\r\n    ],\r\n    [\r\n      0.07461547,\r\n      0.48648479\r\n
+        \   ],\r\n    [\r\n      0.07459827,\r\n      0.40575885\r\n    ],\r\n    [\r\n
+        \     0.07459551,\r\n      0.0269549\r\n    ],\r\n    [\r\n      0.07458059,\r\n
+        \     0.02775336\r\n    ],\r\n    [\r\n      0.07456557,\r\n      0.0277\r\n
+        \   ]\r\n  ],\r\n  \"ask_count\": 75,\r\n  \"bid_count\": 54,\r\n  \"market_id\":
+        \"5a7331e9d0538024488645d5\"\r\n}"
+    http_version: 
+  recorded_at: Sat, 16 Jun 2018 09:32:58 GMT
+recorded_with: VCR 4.0.0

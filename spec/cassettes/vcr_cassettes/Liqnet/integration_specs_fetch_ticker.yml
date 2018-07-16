@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.liqnet.com/public/rest/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.liqnet.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 16 Jun 2018 09:24:19 GMT
+      Content-Type:
+      - text/plain
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dee430e8b93c7aeaa27aa069e866853891529141058; expires=Sun, 16-Jun-19
+        09:24:18 GMT; path=/; domain=.liqnet.com; HttpOnly
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42bc39026a89a95a-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: "[\r\n  {\r\n    \"id\": \"5a733158d0538024488645d4\",\r\n    \"market\":
+        \"LTC/BTC\",\r\n    \"coin_name\": \"Litecoin\",\r\n    \"last_price\": 0.01479375,\r\n
+        \   \"change\": -1.08,\r\n    \"volume_24hr\": 413.66179513,\r\n    \"high_24hr\":
+        0.01498994,\r\n    \"low_24hr\": 0.01471555,\r\n    \"top_bid\": 0.01515989,\r\n
+        \   \"top_ask\": 0.01516089,\r\n    \"is_frozen\": false,\r\n    \"takerFee\":
+        0.2,\r\n    \"makerFee\": 0.1,\r\n    \"takerLENdiscont\": 0.0,\r\n    \"makerLENdiscont\":
+        0.0,\r\n    \"decimal_places\": 8,\r\n    \"tradingWorks\": false,\r\n    \"depositWorks\":
+        true,\r\n    \"withdrawWorks\": true\r\n  },\r\n  {\r\n    \"id\": \"5a7331e9d0538024488645d5\",\r\n
+        \   \"market\": \"ETH/BTC\",\r\n    \"coin_name\": \"Ethereum\",\r\n    \"last_price\":
+        0.07696012,\r\n    \"change\": 0.85,\r\n    \"volume_24hr\": 321.29583599,\r\n
+        \   \"high_24hr\": 0.07740348,\r\n    \"low_24hr\": 0.07594266,\r\n    \"top_bid\":
+        0.07564097,\r\n    \"top_ask\": 0.07564098,\r\n    \"is_frozen\": false,\r\n
+        \   \"takerFee\": 0.2,\r\n    \"makerFee\": 0.1,\r\n    \"takerLENdiscont\":
+        0.0,\r\n    \"makerLENdiscont\": 0.0,\r\n    \"decimal_places\": 8,\r\n    \"tradingWorks\":
+        false,\r\n    \"depositWorks\": true,\r\n    \"withdrawWorks\": true\r\n  },\r\n
+        \ {\r\n    \"id\": \"5a7331f2d0538024488645d6\",\r\n    \"market\": \"BCH/BTC\",\r\n
+        \   \"coin_name\": \"Bitcoin Cash\",\r\n    \"last_price\": 0.13148489,\r\n
+        \   \"change\": -0.29,\r\n    \"volume_24hr\": 269.80445254,\r\n    \"high_24hr\":
+        0.13332689,\r\n    \"low_24hr\": 0.13104737,\r\n    \"top_bid\": 0.13256933,\r\n
+        \   \"top_ask\": 0.13256934,\r\n    \"is_frozen\": false,\r\n    \"takerFee\":
+        0.2,\r\n    \"makerFee\": 0.1,\r\n    \"takerLENdiscont\": 0.0,\r\n    \"makerLENdiscont\":
+        0.0,\r\n    \"decimal_places\": 8,\r\n    \"tradingWorks\": false,\r\n    \"depositWorks\":
+        true,\r\n    \"withdrawWorks\": true\r\n  },\r\n  {\r\n    \"id\": \"5ac6dca9c546f1214925964d\",\r\n
+        \   \"market\": \"PPC/BTC\",\r\n    \"coin_name\": \"Peercoin\",\r\n    \"last_price\":
+        0.00025812,\r\n    \"change\": 1.47,\r\n    \"volume_24hr\": 556.6020107,\r\n
+        \   \"high_24hr\": 0.000263,\r\n    \"low_24hr\": 0.00025021,\r\n    \"top_bid\":
+        0.00023097,\r\n    \"top_ask\": 0.00023098,\r\n    \"is_frozen\": false,\r\n
+        \   \"takerFee\": 0.2,\r\n    \"makerFee\": 0.1,\r\n    \"takerLENdiscont\":
+        0.0,\r\n    \"makerLENdiscont\": 0.0,\r\n    \"decimal_places\": 8,\r\n    \"tradingWorks\":
+        true,\r\n    \"depositWorks\": true,\r\n    \"withdrawWorks\": true\r\n  },\r\n
+        \ {\r\n    \"id\": \"5afeec5bc2fc7f7c68913fc4\",\r\n    \"market\": \"DASH/BTC\",\r\n
+        \   \"coin_name\": \"DASH\",\r\n    \"last_price\": 0.04010159,\r\n    \"change\":
+        0.62,\r\n    \"volume_24hr\": 563.30350172,\r\n    \"high_24hr\": 0.04016401,\r\n
+        \   \"low_24hr\": 0.03956839,\r\n    \"top_bid\": 0.03958194,\r\n    \"top_ask\":
+        0.03958195,\r\n    \"is_frozen\": false,\r\n    \"takerFee\": 0.2,\r\n    \"makerFee\":
+        0.1,\r\n    \"takerLENdiscont\": 0.0,\r\n    \"makerLENdiscont\": 0.0,\r\n
+        \   \"decimal_places\": 8,\r\n    \"tradingWorks\": false,\r\n    \"depositWorks\":
+        true,\r\n    \"withdrawWorks\": true\r\n  }\r\n]"
+    http_version: 
+  recorded_at: Sat, 16 Jun 2018 09:24:20 GMT
+recorded_with: VCR 4.0.0
