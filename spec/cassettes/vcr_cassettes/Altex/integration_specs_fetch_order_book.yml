@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.altex.exchange/v1/orderBook/market/BTC_ETN
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.altex.exchange
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 21 May 2018 08:44:35 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=de3b6a24b351fa7b9a1e47d344ea86b071526892275; expires=Tue, 21-May-19
+        08:44:35 GMT; path=/; domain=.altex.exchange; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 41e5c30ec83f307e-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"data":[{"uid":"cfdfb5fba5dd01d43d677f2f48dca727a5182ddf99b39952707ac1650652852b532f93a543b3d5be","amount":"1000.00000000","price":"0.00000100","summary":"0.00100000","type":"buy","timestamp":"1526720382"},{"uid":"453fc3831ab83fc1f171afbb1884cbf54d0d94ac4965312d2bce919fbf0aa279ed06077acbadde70","amount":"100.00000000","price":"0.00000101","summary":"0.00010100","type":"buy","timestamp":"1526857192"},{"uid":"259690ce149371f621c241f3b92e7992a12bd27ac031275a2800a627c20e9b607a8be7fd7c12c3b0","amount":"1075.60500000","price":"0.00000200","summary":"0.00215121","type":"buy","timestamp":"1526235746"},{"uid":"e1bd64b96b4acaf9ec0a5e7e4dd2134a79f8b1a7b2bc87b3fe49705ea9fe7c3521c963be50eb8926","amount":"1500.00000000","price":"0.00000201","summary":"0.00301500","type":"buy","timestamp":"1526720362"},{"uid":"66f55b0e9f59eebfb5eba24d111c51ef6ad543caed29138a655086b7df5cd465c0ed7aa2a31e645b","amount":"1861.36363636","price":"0.00000264","summary":"0.00491400","type":"buy","timestamp":"1526581269"},{"uid":"475e4e30916bce7c1e2ca77b652f1d8d96895f81738284ef18bad8cb824499733a9faa8a36bd055a","amount":"95.43773585","price":"0.00000265","summary":"0.00025291","type":"buy","timestamp":"1526625598"},{"uid":"6a0fe8d379c221ddfb3adb4d804609750f4170d44714170cc5286372636e8f004bbdb58feef5ca34","amount":"676.10526316","price":"0.00000266","summary":"0.00179844","type":"buy","timestamp":"1526747865"},{"uid":"4b2bd53d13cddc1afa5102f0dc1d78dd4742a00e339e189be3de4da0199cd7998c32117f80e8ae97","amount":"8665.49438202","price":"0.00000267","summary":"0.02313687","type":"buy","timestamp":"1526721925"},{"uid":"804b61b6fd549db3caa035c90be6ca201981babb3d712ee97c842bf1f2cea6a5da373d8b3a0a4ed4","amount":"52.26250000","price":"0.00000285","summary":"0.00014895","type":"sell","timestamp":"1526844282"},{"uid":"bf275f960cbb89cff0256c6365797547cf97fd6b1d1171bee59b9fdfd877aa50519f45882105ede6","amount":"110.00000000","price":"0.00000300","summary":"0.00033000","type":"sell","timestamp":"1526837833"},{"uid":"91b737ebde6ee93892f118ece70e10be0bb8a1f93e50835417c9b7067b12abe49ba9d2633b59c9f5","amount":"2166.85298000","price":"0.00000308","summary":"0.00667391","type":"sell","timestamp":"1526818697"},{"uid":"7790b48161c68ab8cb57ba89d53e61c7ab13404d569141937b5fefe6a8608a4db28f5c715899331e","amount":"1076.82467532","price":"0.00000308","summary":"0.00331662","type":"sell","timestamp":"1526643344"},{"uid":"fe35f54d6aa5b135db210f1f5ac60d7c962c3f03d4ea62d5cbb64c730f435c9723c96fc40e676e90","amount":"271.45777685","price":"0.00000309","summary":"0.00083880","type":"sell","timestamp":"1526585553"},{"uid":"a210172e4dc0d3ace90f22786a03527fe26853643773b34b143c5a52032ff0b489e8eddd84c18acb","amount":"25.00000000","price":"0.00000330","summary":"0.00008250","type":"sell","timestamp":"1526461769"},{"uid":"fe5ba837c66fe2445e96a0d2c79cee50044475028dd8558179ce276adedafb57d7dcff35e84b44fd","amount":"164.85000000","price":"0.00000348","summary":"0.00057368","type":"sell","timestamp":"1526321379"},{"uid":"5f2c1fae6ba8bd85541eb4c6645d9495ac50ab40ad2abff5dd035b50495f66cb975c9d11615f4057","amount":"150.00000000","price":"0.00000519","summary":"0.00077850","type":"sell","timestamp":"1525472696"},{"uid":"bf764d01840f155708f5f180bc937b091af57eec6b17574cbbfa1e1d5f8d008bfb6a581502b82ecb","amount":"10.00000000","price":"0.00010000","summary":"0.00100000","type":"sell","timestamp":"1526133232"},{"uid":"400066f6ae1ed760cc42f0d9e2552209a61125553678216bd104356c0459720eace913204e1d84fb","amount":"20.00000000","price":"8000.00000000","summary":"160000.00000000","type":"sell","timestamp":"1526396108"}]}'
+    http_version: 
+  recorded_at: Mon, 21 May 2018 08:44:35 GMT
+recorded_with: VCR 4.0.0
