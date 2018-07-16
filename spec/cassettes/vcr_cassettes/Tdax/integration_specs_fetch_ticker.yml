@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tdax.com/public/getmarketsummaries?market=BTC_THB
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.tdax.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 16 Jul 2018 01:30:44 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '228'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dd53edd451b07c8edefd2c6936369168e1531704644; expires=Tue, 16-Jul-19
+        01:30:44 GMT; path=/; domain=.tdax.com; HttpOnly; Secure
+      X-Kong-Upstream-Latency:
+      - '101'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.11.2
+      Strict-Transport-Security:
+      - max-age=0
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 43b0b48d1fbeaab0-SIN
+    body:
+      encoding: UTF-8
+      string: '[{"Ask":211221.71,"BaseVolume":108.45291741,"Bid":207483.15,"High":217531.57,"Last":211801.38,"Low":207483.15,"MarketName":"BTC_THB","OpenBuyOrders":40,"OpenSellOrders":66,"PercentChange":1.502384662832762,"Volume":22628123.81}]'
+    http_version: 
+  recorded_at: Mon, 16 Jul 2018 01:30:44 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tdax.com/public/getmarkets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.tdax.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 16 Jul 2018 01:30:44 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0da92a38d512fbb517be51a99f27716f1531704644; expires=Tue, 16-Jul-19
+        01:30:44 GMT; path=/; domain=.tdax.com; HttpOnly; Secure
+      X-Kong-Upstream-Latency:
+      - '13'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.11.2
+      Strict-Transport-Security:
+      - max-age=0
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 43b0b48bcdcfaa80-SIN
+    body:
+      encoding: UTF-8
+      string: '[{"MarketCurrency":"BTC","BaseCurrency":"THB","MarketCurrencyLong":"Bitcoin","BaseCurrencyLong":"ThaiBaht","MinTradeSize":0.0005,"MarketName":"BTC-THB"},{"MarketCurrency":"BTG","BaseCurrency":"THB","MarketCurrencyLong":"BitcoinGold","BaseCurrencyLong":"ThaiBaht","MinTradeSize":0.0005,"MarketName":"BTG-THB"},{"MarketCurrency":"ETH","BaseCurrency":"THB","MarketCurrencyLong":"Ethereum","BaseCurrencyLong":"ThaiBaht","MinTradeSize":0.005,"MarketName":"ETH-THB"},{"MarketCurrency":"KNC","BaseCurrency":"THB","MarketCurrencyLong":"KyberNetwork","BaseCurrencyLong":"ThaiBaht","MinTradeSize":1,"MarketName":"KNC-THB"},{"MarketCurrency":"LTC","BaseCurrency":"THB","MarketCurrencyLong":"Litecoin","BaseCurrencyLong":"ThaiBaht","MinTradeSize":0.01,"MarketName":"LTC-THB"},{"MarketCurrency":"NEO","BaseCurrency":"THB","MarketCurrencyLong":"NEO","BaseCurrencyLong":"ThaiBaht","MinTradeSize":0.1,"MarketName":"NEO-THB"},{"MarketCurrency":"OMG","BaseCurrency":"THB","MarketCurrencyLong":"OmiseGO","BaseCurrencyLong":"ThaiBaht","MinTradeSize":0.2,"MarketName":"OMG-THB"},{"MarketCurrency":"POWR","BaseCurrency":"THB","MarketCurrencyLong":"PowerLedger","BaseCurrencyLong":"ThaiBaht","MinTradeSize":0.01,"MarketName":"POWR-THB"},{"MarketCurrency":"RPX","BaseCurrency":"THB","MarketCurrencyLong":"RedPulse","BaseCurrencyLong":"ThaiBaht","MinTradeSize":0.1,"MarketName":"RPX-THB"},{"MarketCurrency":"USDT","BaseCurrency":"THB","MarketCurrencyLong":"Tether","BaseCurrencyLong":"ThaiBaht","MinTradeSize":1,"MarketName":"USDT-THB"},{"MarketCurrency":"XZC","BaseCurrency":"THB","MarketCurrencyLong":"ZCoin","BaseCurrencyLong":"ThaiBaht","MinTradeSize":0.0001,"MarketName":"XZC-THB"},{"MarketCurrency":"BTG","BaseCurrency":"BTC","MarketCurrencyLong":"BitcoinGold","BaseCurrencyLong":"Bitcoin","MinTradeSize":0.0005,"MarketName":"BTG-BTC"},{"MarketCurrency":"ETH","BaseCurrency":"BTC","MarketCurrencyLong":"Ethereum","BaseCurrencyLong":"Bitcoin","MinTradeSize":0.005,"MarketName":"ETH-BTC"},{"MarketCurrency":"KNC","BaseCurrency":"BTC","MarketCurrencyLong":"KyberNetwork","BaseCurrencyLong":"Bitcoin","MinTradeSize":1,"MarketName":"KNC-BTC"},{"MarketCurrency":"LTC","BaseCurrency":"BTC","MarketCurrencyLong":"Litecoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0.01,"MarketName":"LTC-BTC"},{"MarketCurrency":"NEO","BaseCurrency":"BTC","MarketCurrencyLong":"NEO","BaseCurrencyLong":"Bitcoin","MinTradeSize":0.1,"MarketName":"NEO-BTC"},{"MarketCurrency":"OMG","BaseCurrency":"BTC","MarketCurrencyLong":"OmiseGO","BaseCurrencyLong":"Bitcoin","MinTradeSize":0.2,"MarketName":"OMG-BTC"},{"MarketCurrency":"POWR","BaseCurrency":"BTC","MarketCurrencyLong":"PowerLedger","BaseCurrencyLong":"Bitcoin","MinTradeSize":0.01,"MarketName":"POWR-BTC"},{"MarketCurrency":"RPX","BaseCurrency":"BTC","MarketCurrencyLong":"RedPulse","BaseCurrencyLong":"Bitcoin","MinTradeSize":0.1,"MarketName":"RPX-BTC"},{"MarketCurrency":"XZC","BaseCurrency":"BTC","MarketCurrencyLong":"ZCoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0.0001,"MarketName":"XZC-BTC"},{"MarketCurrency":"BTG","BaseCurrency":"ETH","MarketCurrencyLong":"BitcoinGold","BaseCurrencyLong":"Ethereum","MinTradeSize":0.0005,"MarketName":"BTG-ETH"},{"MarketCurrency":"KNC","BaseCurrency":"ETH","MarketCurrencyLong":"KyberNetwork","BaseCurrencyLong":"Ethereum","MinTradeSize":1,"MarketName":"KNC-ETH"},{"MarketCurrency":"LTC","BaseCurrency":"ETH","MarketCurrencyLong":"Litecoin","BaseCurrencyLong":"Ethereum","MinTradeSize":0.01,"MarketName":"LTC-ETH"},{"MarketCurrency":"NEO","BaseCurrency":"ETH","MarketCurrencyLong":"NEO","BaseCurrencyLong":"Ethereum","MinTradeSize":0.1,"MarketName":"NEO-ETH"},{"MarketCurrency":"OMG","BaseCurrency":"ETH","MarketCurrencyLong":"OmiseGO","BaseCurrencyLong":"Ethereum","MinTradeSize":0.2,"MarketName":"OMG-ETH"},{"MarketCurrency":"POWR","BaseCurrency":"ETH","MarketCurrencyLong":"PowerLedger","BaseCurrencyLong":"Ethereum","MinTradeSize":0.01,"MarketName":"POWR-ETH"},{"MarketCurrency":"RPX","BaseCurrency":"ETH","MarketCurrencyLong":"RedPulse","BaseCurrencyLong":"Ethereum","MinTradeSize":0.1,"MarketName":"RPX-ETH"},{"MarketCurrency":"XZC","BaseCurrency":"ETH","MarketCurrencyLong":"ZCoin","BaseCurrencyLong":"Ethereum","MinTradeSize":0.0001,"MarketName":"XZC-ETH"},{"MarketCurrency":"BTC","BaseCurrency":"USDT","MarketCurrencyLong":"Bitcoin","BaseCurrencyLong":"Tether","MinTradeSize":0.0005,"MarketName":"BTC-USDT"},{"MarketCurrency":"ETH","BaseCurrency":"USDT","MarketCurrencyLong":"Ethereum","BaseCurrencyLong":"Tether","MinTradeSize":0.005,"MarketName":"ETH-USDT"},{"MarketCurrency":"XZC","BaseCurrency":"USDT","MarketCurrencyLong":"ZCoin","BaseCurrencyLong":"Tether","MinTradeSize":0.0001,"MarketName":"XZC-USDT"}]'
+    http_version: 
+  recorded_at: Mon, 16 Jul 2018 01:30:44 GMT
+recorded_with: VCR 4.0.0
