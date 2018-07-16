@@ -183,6 +183,7 @@ Or install it yourself as:
 | Paribu            | Y       |            |         |         | Y           |
 | Paymium           | Y       | Y          | Y       |         | User-Defined|
 | Poloniex          | Y       |            |         |         | Y           |
+| QBTC              | Y       | Y          | Y       |         | Y           |
 | Qryptos           | Y       |            |         |         | Y           |
 | QuadrigaCX        | Y       |            |         |         | User-Defined|
 | Quoine            | Y       |            |         |         | Y           |
