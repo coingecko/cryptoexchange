@@ -70,6 +70,7 @@ Or install it yourself as:
 | BTER              | Y       |            |         |         | Y           |
 | Buyucoin          | Y       | N          | N       |         | Y           |
 | BX Thailand       | Y       |            |         |         | Y           |
+| CPatex            | Y       | Y          | Y       |         | Y           |
 | CCex              | Y       |            |         |         | Y           |
 | Cex               | Y       | Y          | Y       |         | Y           |
 | Cfinex            | Y       | Y          | Y       |         | Y           |

@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://c-patex.com/api/v2/tickers/blcbtc.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - c-patex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '140'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=63072000; includeSubDomains
+      X-Request-Id:
+      - ab71cc80-131c-4c2d-bc05-64b70b31f5e6
+      Etag:
+      - '"403698473b05f472c03e0de0299ecdf6"'
+      X-Runtime:
+      - '0.009993'
+      Date:
+      - Tue, 10 Jul 2018 14:55:38 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.11
+      Server:
+      - nginx/1.12.1 + Phusion Passenger 5.1.11
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1531234538,"ticker":{"buy":"0.00000236","sell":"0.00000241","low":"0.000002","high":"0.000002","last":"0.000002","vol":"993.3028457"}}'
+    http_version: 
+  recorded_at: Tue, 10 Jul 2018 14:55:38 GMT
+recorded_with: VCR 4.0.0
