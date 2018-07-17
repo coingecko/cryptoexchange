@@ -15,7 +15,7 @@ RSpec.describe 'Gate integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = Cryptoexchange::Exchanges::Gate::Market.trade_page_url base: bch_usdt_pair.base, target: bch_usdt_pair.target
+    trade_page_url = client.trade_url 'gate', base: bch_usdt_pair.base, target: bch_usdt_pair.target
     expect(trade_page_url).to eq "https://gate.io/trade/BCH_USDT"
   end
 

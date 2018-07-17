@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Huobi integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:market) { 'huobi' }
   let(:pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'huobi') }
 
   it 'fetch pairs' do
@@ -15,7 +16,7 @@ RSpec.describe 'Huobi integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = Cryptoexchange::Exchanges::Huobi::Market.trade_page_url base: pair.base, target: pair.target
+    trade_page_url = client.trade_url market, base: pair.base, target: pair.target
     expect(trade_page_url).to eq "https://www.huobi.pro/ETH_BTC/exchange/"
   end
 
