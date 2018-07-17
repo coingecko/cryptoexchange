@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Abucoins
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'abucoins'
       API_URL = 'https://api.abucoins.com'
     end

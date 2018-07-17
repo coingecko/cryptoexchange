@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module BtcAlpha
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'btc_alpha'
       API_URL = 'https://btc-alpha.com/api/v1'
       TICKER_URL = 'https://btc-alpha.com/api'

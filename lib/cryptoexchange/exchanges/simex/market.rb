@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Simex
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'simex'
       API_URL = 'https://simex.global/api/pairs'
     end

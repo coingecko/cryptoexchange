@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Huobi
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'huobi'
       DOT_PRO_API_URL = 'https://api.huobi.pro'
 

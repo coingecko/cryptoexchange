@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Exrates
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME='exrates'
       API_URL = 'https://exrates.me/public/coinmarketcap/ticker'
     end

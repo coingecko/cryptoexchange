@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Bit2c
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'bit2c'
       API_URL = 'https://bit2c.co.il'
     end

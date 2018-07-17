@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Forkdelta
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME      = 'forkdelta'
       API_URL   = 'https://api.forkdelta.com'
       TOKEN_URL = 'https://forkdelta.github.io/config/main.json'
