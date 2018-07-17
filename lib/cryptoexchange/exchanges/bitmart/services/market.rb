@@ -25,9 +25,12 @@ module Cryptoexchange::Exchanges
           ticker.market    = Bitmart::Market::NAME
           ticker.ask       = NumericHelper.to_d(output['ask_1'])
           ticker.bid       = NumericHelper.to_d(output['bid_1'])
+          ticker.high      = NumericHelper.to_d(output['high_24h'])
+          ticker.low       = NumericHelper.to_d(output['low_24h'])
+          ticker.change    = NumericHelper.to_d(output['priceChange'])
           ticker.last      = NumericHelper.to_d(output['new_24h'])
           ticker.volume    = NumericHelper.to_d(output['volume'])
-          ticker.timestamp = output['openTime']
+          ticker.timestamp = output['closeTime'] / 1000
           ticker.payload   = output
           ticker
         end
