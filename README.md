@@ -22,7 +22,6 @@ Or install it yourself as:
 
 ## Exchanges Supported
 
-<<<<<<< HEAD
 | Exchange          | Ticker  | Order Book | Trade   | Account | Market List | Pair URL |
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |----------|
 | Abcc              | Y       | N          | N       |         | Y           |          |
