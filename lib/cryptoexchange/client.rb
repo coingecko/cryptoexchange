@@ -4,7 +4,7 @@ module Cryptoexchange
       LruTtlCache.ticker_cache(ticker_ttl)
     end
 
-    def trade_url(exchange, args={})
+    def trade_page_url(exchange, args={})
       pairs_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Market"
       pairs_class = Object.const_get(pairs_classname)
       pairs_class.trade_page_url(base: args[:base], target: args[:target])

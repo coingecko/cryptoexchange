@@ -286,7 +286,7 @@ Or install it yourself as:
 ### Get Exchange Trade URL (Work in Progress)
 
 ```
-  client.trade_url 'binance', base: 'BTC', target: 'USDT'
+  client.trade_page_url 'binance', base: 'BTC', target: 'USDT'
 
 ```
 
