@@ -283,6 +283,14 @@ Or install it yourself as:
   trades[0].amount
 ```
 
+### Get Exchange Trade URL (Work in Progress)
+
+```
+  client.trade_url 'binance', base: 'BTC', target: 'USDT'
+
+```
+
+
 ### Market List
 
 Some exchange API do not support market pair listings. For those exchanges, we included
