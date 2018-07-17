@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Binance
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'binance'
       API_URL = 'https://www.binance.com/api/v1'
 

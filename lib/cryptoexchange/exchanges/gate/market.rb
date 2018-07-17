@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Gate
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'gate'
       API_URL = 'http://data.gate.io/api2/1'
 
