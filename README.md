@@ -40,6 +40,7 @@ Or install it yourself as:
 | Binance           | Y       | Y          |         |         | Y           | Y        |
 | Bitbay            | Y       |            |         |         | User-Defined|          |
 | BitBNS            | Y       |            |         |         | Y           |          |
+| Bitbox            | Y       | Y          | Y       |         | Y           |          |
 | Bitbank           | Y       | Y          | Y       |         | User-Defined|          |
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|          |
 | Bitconnect        | Y       |            |         |         | Y           |          |
