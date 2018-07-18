@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api-dev.bitso.com/v3/ticker?book=btc_mxn
+    uri: https://api.bitso.com/v3/ticker?book=btc_mxn
     body:
       encoding: UTF-8
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Connection:
       - close
       Host:
-      - api-dev.bitso.com
+      - api.bitso.com
       User-Agent:
       - http.rb/3.0.0
   response:
@@ -19,16 +19,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 16 Jul 2018 07:32:41 GMT
+      - Wed, 18 Jul 2018 08:14:22 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '226'
+      - '227'
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=da7d2b230cb5adfca3bc72620cb707ce01531726360; expires=Tue, 16-Jul-19
-        07:32:40 GMT; path=/; domain=.bitso.com; HttpOnly; Secure
+      - __cfduid=dd9dd0d3d280a0580fae128f24fc4547c1531901661; expires=Thu, 18-Jul-19
+        08:14:21 GMT; path=/; domain=.bitso.com; HttpOnly; Secure
       Strict-Transport-Security:
       - max-age=2592000
       Expect-Ct:
@@ -36,10 +36,10 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 43b2c6ba3a502cbd-KUL
+      - 43c37e88bb172ccf-KUL
     body:
       encoding: UTF-8
-      string: '{"success":true,"payload":{"high":"121000.00","last":"120470.54","created_at":"2018-07-16T07:32:41+00:00","book":"btc_mxn","volume":"69.15363493","vwap":"120298.01144330","low":"120353.31","ask":"121000.00","bid":"120467.53"}}'
+      string: '{"success":true,"payload":{"high":"139988.72","last":"139337.07","created_at":"2018-07-18T08:14:22+00:00","book":"btc_mxn","volume":"296.46126498","vwap":"134421.18240685","low":"137914.41","ask":"139280.35","bid":"138050.00"}}'
     http_version: 
-  recorded_at: Mon, 16 Jul 2018 07:32:41 GMT
+  recorded_at: Wed, 18 Jul 2018 08:14:22 GMT
 recorded_with: VCR 4.0.0
