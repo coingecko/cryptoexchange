@@ -27,7 +27,9 @@ module Cryptoexchange::Exchanges
           ticker.market    = C2cx::Market::NAME
           ticker.low       = NumericHelper.to_d(data['low'])
           ticker.high      = NumericHelper.to_d(data['high'])
-          ticker.last      = NumericHelper.to_d(data['last'])          
+          ticker.last      = NumericHelper.to_d(data['last'])
+          ticker.bid       = NumericHelper.to_d(data['buy'])
+          ticker.ask       = NumericHelper.to_d(data['sell'])         
           ticker.volume    = NumericHelper.divide(NumericHelper.to_d(data['volume']), ticker.last)
           ticker.timestamp = Time.now.to_i
           ticker.payload   = data
