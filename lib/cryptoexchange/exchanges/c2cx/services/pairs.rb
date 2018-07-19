@@ -11,16 +11,16 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(response)
-          pairs = []
+          market_pairs = []
           response['data']['SupportPairs'].each do |pair|
             base, target = pair.split('_')
-            pairs << Cryptoexchange::Models::MarketPair.new(
+            market_pairs << Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
               market: C2cx::Market::NAME
             )
           end
-          pairs
+          market_pairs
         end
 
       end
