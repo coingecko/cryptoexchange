@@ -27,19 +27,19 @@ module Cryptoexchange::Exchanges
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
           order_book.market    = C2cx::Market::NAME
-          order_book.asks      = adapt_orders(data['asks'])
-          order_book.bids      = adapt_orders(data['bids'])
+          order_book.asks      = adapt_orders(data['asks'], timestamp)
+          order_book.bids      = adapt_orders(data['bids'], timestamp)
           order_book.timestamp = timestamp
           order_book.payload   = response
           order_book
         end
 
-        def adapt_orders(orders)
+        def adapt_orders(orders, timestamp)
           orders.collect do |order|
             price, amount = order
             Cryptoexchange::Models::Order.new(price:     price,
                                               amount:    amount,
-                                              timestamp: nil)
+                                              timestamp: timestamp)
           end
         end
       end
