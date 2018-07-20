@@ -14,6 +14,11 @@ RSpec.describe 'TheTokenStore integration specs' do
     expect(pair.market).to eq 'thetokenstore'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'thetokenstore', base: evn_eth_pair.base, target: evn_eth_pair.target
+    expect(trade_page_url).to eq "https://token.store/trade/EVN"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(evn_eth_pair)
 
