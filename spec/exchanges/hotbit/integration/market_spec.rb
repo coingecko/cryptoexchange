@@ -14,6 +14,11 @@ RSpec.describe 'Hotbit Coin integration specs' do
     expect(pair.market).to eq 'hotbit'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'hotbit', base: eng_eth_pair.base, target: eng_eth_pair.target
+    expect(trade_page_url).to eq "https://www.hotbit.io/exchange?symbol=ENG_ETH"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(eng_eth_pair)
 
