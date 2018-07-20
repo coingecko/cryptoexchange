@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Thetokenstore
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'thetokenstore'
       API_URL = 'https://v1.api.token.store'
     end

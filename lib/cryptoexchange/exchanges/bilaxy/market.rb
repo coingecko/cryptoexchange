@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Bilaxy
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME    = 'bilaxy'
       API_URL = 'http://api.bilaxy.com/v1'
       PAIRS_API_URL = 'https://www.bilaxy.com/api/v2/market/coins'

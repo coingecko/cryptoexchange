@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Zebpay
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'zebpay'
       API_URL = 'https://www.zebapi.com/api/v1'
     end
