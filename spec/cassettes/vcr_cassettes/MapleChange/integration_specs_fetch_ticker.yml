@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maplechange.com/api/v2/tickers.do
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - maplechange.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Jul 2018 09:10:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '11076'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d07007ed9d7ef7b4a11a24ded1ba657a51532077845; expires=Sat, 20-Jul-19
+        09:10:45 GMT; path=/; domain=.maplechange.com; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      - max-age=31536000
+      X-Request-Id:
+      - fcebf810-6e04-47a5-b3ca-69788ad3e4b4
+      Etag:
+      - '"7e8b900d273eb33f4b1c12f04c5a5355"'
+      X-Runtime:
+      - '2.939215'
+      X-Powered-By:
+      - Phusion Passenger 5.2.3
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 43d44be90cb16fa8-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"waebtc":{"at":1532077847,"ticker":{"buy":"0.00000003","sell":"0.00000005","low":"0.00000005","high":"0.00000005","last":"0.00000005","vol":"0.0","volbtc":0,"change":"0.0"}},"ltcbtc":{"at":1532077847,"ticker":{"buy":"0.0","sell":"0.015","low":"0.0015","high":"0.015","last":"0.0015","vol":"0.008637","volbtc":"0.0000129555","change":"-0.9"}},"dogebtc":{"at":1532077847,"ticker":{"buy":"0.00000048","sell":"0.0","low":"0.00000042","high":"0.00000048","last":"0.00000048","vol":"0.0","volbtc":0,"change":"0.0"}},"ethbtc":{"at":1532077847,"ticker":{"buy":"0.0","sell":"0.0715","low":"0.0","high":"0.0","last":"0.077","vol":"0.0","volbtc":0,"change":"0.0"}},"spesbtc":{"at":1532077847,"ticker":{"buy":"0.00000002","sell":"0.00000011","low":"0.0000001","high":"0.0000001","last":"0.0000001","vol":"0.0","volbtc":0,"change":"0.0"}},"xunbtc":{"at":1532077847,"ticker":{"buy":"0.0000002","sell":"0.0000007","low":"0.0","high":"0.0","last":"0.0000007","vol":"0.0","volbtc":0,"change":"0.0"}},"xaxbtc":{"at":1532077847,"ticker":{"buy":"0.00000053","sell":"0.000018","low":"0.0","high":"0.0","last":"0.000018","vol":"0.0","volbtc":0,"change":"0.0"}},"babybtc":{"at":1532077847,"ticker":{"buy":"0.0","sell":"0.00000005","low":"0.0","high":"0.0","last":"0.00000007","vol":"0.0","volbtc":0,"change":"0.0"}},"xgoxbtc":{"at":1532077847,"ticker":{"buy":"0.00000002","sell":"0.0000001","low":"0.0","high":"0.0","last":"0.00000008","vol":"0.0","volbtc":0,"change":"0.0"}},"irdbtc":{"at":1532077847,"ticker":{"buy":"0.00000099","sell":"0.00000293","low":"0.0","high":"0.0","last":"0.000003","vol":"0.0","volbtc":0,"change":"0.0"}},"waeeth":{"at":1532077847,"ticker":{"buy":"0.0","sell":"0.000005","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"speseth":{"at":1532077847,"ticker":{"buy":"0.0","sell":"0.00003556","low":"0.0","high":"0.0","last":"0.00003556","vol":"0.0","volbtc":0,"change":"0.0"}},"xuneth":{"at":1532077847,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.00000099","vol":"0.0","volbtc":0,"change":"-0.000000000000000101010101010100999897969594939"}},"xgoxeth":{"at":1532077847,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"irdeth":{"at":1532077847,"ticker":{"buy":"0.0","sell":"0.001","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"dogewae":{"at":1532077847,"ticker":{"buy":"5.0","sell":"50.0","low":"1.0","high":"1.0","last":"1.0","vol":"0.0","volbtc":0,"change":"0.0"}},"speswae":{"at":1532077847,"ticker":{"buy":"0.5","sell":"3.0","low":"0.0","high":"0.0","last":"0.5","vol":"0.0","volbtc":0,"change":"0.0"}},"xunwae":{"at":1532077847,"ticker":{"buy":"1.0","sell":"0.0","low":"0.0","high":"0.0","last":"1.0","vol":"0.0","volbtc":0,"change":"0.0"}},"spesltc":{"at":1532077847,"ticker":{"buy":"0.0","sell":"0.0001","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"irdltc":{"at":1532077847,"ticker":{"buy":"0.0","sell":"0.0008","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"gzrobtc":{"at":1532077847,"ticker":{"buy":"0.00000003","sell":"0.00000029","low":"0.00000029","high":"0.00000029","last":"0.00000029","vol":"688.96551723","volbtc":"0.0001997999999967","change":"0.526315789"}},"gzroeth":{"at":1532077847,"ticker":{"buy":"0.0","sell":"0.00005","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"gzrowae":{"at":1532077847,"ticker":{"buy":"0.5","sell":"5.0","low":"0.0","high":"0.0","last":"5.0","vol":"0.0","volbtc":0,"change":"0.0"}},"gzroltc":{"at":1532077847,"ticker":{"buy":"0.0","sell":"70.8317","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"mribtc":{"at":1532077847,"ticker":{"buy":"0.0","sell":"0.00015","low":"0.0","high":"0.0","last":"0.00015","vol":"0.0","volbtc":0,"change":"0.0"}},"mrixgox":{"at":1532077848,"ticker":{"buy":"0.0002","sell":"0.0","low":"0.0","high":"0.0","last":"1500.0","vol":"0.0","volbtc":0,"change":"0.0"}},"xgodxgox":{"at":1532077848,"ticker":{"buy":"0.1","sell":"5.0","low":"0.0","high":"0.0","last":"5.0","vol":"0.0","volbtc":0,"change":"0.0"}},"msrbtc":{"at":1532077848,"ticker":{"buy":"0.000015","sell":"0.000095","low":"0.0","high":"0.0","last":"0.0000381","vol":"0.0","volbtc":0,"change":"0.0"}},"xaobtc":{"at":1532077848,"ticker":{"buy":"0.00000025","sell":"0.00000082","low":"0.00000082","high":"0.00000085","last":"0.00000082","vol":"9552.69330276","volbtc":"0.0079733069902731","change":"-0.046511628"}},"ryobtc":{"at":1532077848,"ticker":{"buy":"0.00002001","sell":"0.000075","low":"0.0","high":"0.0","last":"0.00002001","vol":"0.0","volbtc":0,"change":"0.0"}},"sumobtc":{"at":1532077848,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"wowbtc":{"at":1532077848,"ticker":{"buy":"0.0","sell":"0.0000017","low":"0.0","high":"0.0","last":"0.00000175","vol":"0.0","volbtc":0,"change":"0.0"}},"egembtc":{"at":1532077848,"ticker":{"buy":"0.00000001","sell":"0.0000021","low":"0.0000021","high":"0.0000021","last":"0.0000021","vol":"0.0","volbtc":0,"change":"0.0"}},"egemeth":{"at":1532077848,"ticker":{"buy":"0.0","sell":"0.0000563","low":"0.0","high":"0.0","last":"0.0000563","vol":"0.0","volbtc":0,"change":"0.0"}},"egemwae":{"at":1532077848,"ticker":{"buy":"0.0","sell":"75.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"egemltc":{"at":1532077848,"ticker":{"buy":"0.0","sell":"0.00049","low":"0.0","high":"0.0","last":"0.0005","vol":"0.0","volbtc":0,"change":"0.0"}},"mztbtc":{"at":1532077848,"ticker":{"buy":"0.0","sell":"0.00005","low":"0.0","high":"0.0","last":"0.00005","vol":"0.0","volbtc":0,"change":"0.0"}},"mztltc":{"at":1532077848,"ticker":{"buy":"0.0","sell":"0.00915","low":"0.0","high":"0.0","last":"0.00915","vol":"0.0","volbtc":0,"change":"0.0"}},"dnrbtc":{"at":1532077848,"ticker":{"buy":"0.0","sell":"0.1","low":"0.0","high":"0.0","last":"0.000103","vol":"0.0","volbtc":0,"change":"0.0"}},"xshbtc":{"at":1532077848,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"dnregem":{"at":1532077848,"ticker":{"buy":"36.0","sell":"50.0","low":"0.0","high":"0.0","last":"38.0","vol":"0.0","volbtc":0,"change":"0.0"}},"xshegem":{"at":1532077848,"ticker":{"buy":"1.0","sell":"0.0","low":"0.0","high":"0.0","last":"2.0","vol":"0.0","volbtc":0,"change":"0.0"}},"dnrxsh":{"at":1532077848,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"dgbbtc":{"at":1532077848,"ticker":{"buy":"0.0000034","sell":"0.00000699","low":"0.0","high":"0.0","last":"0.0000034","vol":"0.0","volbtc":0,"change":"0.0"}},"etnxbtc":{"at":1532077848,"ticker":{"buy":"0.0","sell":"0.00000001","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"civbtc":{"at":1532077848,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"trtlbtc":{"at":1532077848,"ticker":{"buy":"0.0","sell":"0.00000001","low":"0.00000001","high":"0.00000001","last":"0.00000001","vol":"0.0","volbtc":0,"change":"0.0"}},"trtleth":{"at":1532077848,"ticker":{"buy":"0.00000001","sell":"0.00000005","low":"0.0","high":"0.0","last":"0.00000001","vol":"0.0","volbtc":0,"change":"0.0"}},"trtlwae":{"at":1532077848,"ticker":{"buy":"0.01","sell":"0.2","low":"0.0","high":"0.0","last":"0.1","vol":"0.0","volbtc":0,"change":"0.0"}},"trtlltc":{"at":1532077848,"ticker":{"buy":"0.0","sell":"0.0000003","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"vtcbtc":{"at":1532077848,"ticker":{"buy":"0.00000008","sell":"0.00016117","low":"0.0","high":"0.0","last":"0.0001443","vol":"0.0","volbtc":0,"change":"0.0"}},"vtcegem":{"at":1532077848,"ticker":{"buy":"23.75","sell":"0.0","low":"0.0","high":"0.0","last":"30.0","vol":"0.0","volbtc":0,"change":"0.0"}},"cnmcbtc":{"at":1532077848,"ticker":{"buy":"0.0000005","sell":"0.00002","low":"0.0","high":"0.0","last":"0.000025","vol":"0.0","volbtc":0,"change":"0.0"}},"motabtc":{"at":1532077849,"ticker":{"buy":"0.00000054","sell":"0.000003","low":"0.0","high":"0.0","last":"0.000001","vol":"0.0","volbtc":0,"change":"0.0"}},"festbtc":{"at":1532077849,"ticker":{"buy":"0.00000079","sell":"0.00000085","low":"0.0000008","high":"0.00000089","last":"0.0000008","vol":"53.73549999","volbtc":"0.0000473081299911","change":"0.025641026"}},"grwibtc":{"at":1532077849,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"ethobtc":{"at":1532077849,"ticker":{"buy":"0.0000045","sell":"0.000008","low":"0.0000055","high":"0.00000625","last":"0.00000625","vol":"3327.22264397","volbtc":"0.0194392078155075","change":"0.136363636"}},"joybtc":{"at":1532077849,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"xgodbtc":{"at":1532077849,"ticker":{"buy":"0.0","sell":"0.0000001","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"parsbtc":{"at":1532077849,"ticker":{"buy":"0.0","sell":"0.00000001","low":"0.0","high":"0.0","last":"0.00000001","vol":"0.0","volbtc":0,"change":"0.0"}},"brbbtc":{"at":1532077849,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"skxbtc":{"at":1532077849,"ticker":{"buy":"0.0000025","sell":"0.00000775","low":"0.0","high":"0.0","last":"0.00000835","vol":"0.0","volbtc":0,"change":"0.0"}},"pgnbtc":{"at":1532077849,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"xsfbtc":{"at":1532077849,"ticker":{"buy":"0.0000001","sell":"0.00001","low":"0.000001","high":"0.000001","last":"0.000001","vol":"20.0","volbtc":"0.00002","change":"-0.990909091"}},"reexbtc":{"at":1532077849,"ticker":{"buy":"0.00000001","sell":"0.00000002","low":"0.00000001","high":"0.00000001","last":"0.00000001","vol":"1705666.23048153","volbtc":"0.0170566623048153","change":"0.0"}},"unabtc":{"at":1532077849,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"nbxbtc":{"at":1532077849,"ticker":{"buy":"0.00000004","sell":"0.00000005","low":"0.00000004","high":"0.00000007","last":"0.00000004","vol":"60838.36652842","volbtc":"0.0024346464331366","change":"0.0"}},"b2bbtc":{"at":1532077849,"ticker":{"buy":"0.0000011","sell":"0.00000116","low":"0.00000114","high":"0.0000012","last":"0.00000114","vol":"0.0","volbtc":0,"change":"0.0"}},"b2beth":{"at":1532077849,"ticker":{"buy":"0.00000006","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"b2bltc":{"at":1532077849,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"ethoeth":{"at":1532077849,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}},"xbibtc":{"at":1532077849,"ticker":{"buy":"0.0000023","sell":"0.000029","low":"0.0","high":"0.0","last":"0.0","vol":"0.0","volbtc":0,"change":0}}}'
+    http_version: 
+  recorded_at: Fri, 20 Jul 2018 09:10:50 GMT
+recorded_with: VCR 4.0.0
