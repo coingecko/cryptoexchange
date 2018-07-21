@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Bitmart integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_jpy_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ABT', target: 'BTC', market: 'bitmart') }
+  let(:abt_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ABT', target: 'BTC', market: 'bitmart', inst_id: '45') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bitmart')
@@ -12,10 +12,11 @@ RSpec.describe 'Bitmart integration specs' do
     expect(pair.base).to eq 'ABT'
     expect(pair.target).to eq 'BTC'
     expect(pair.market).to eq 'bitmart'
+    expect(pair.inst_id).to eq 45
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_jpy_pair)
+    ticker = client.ticker(abt_btc_pair)
 
     expect(ticker.base).to eq 'ABT'
     expect(ticker.target).to eq 'BTC'
@@ -32,7 +33,7 @@ RSpec.describe 'Bitmart integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(btc_jpy_pair)
+    order_book = client.order_book(abt_btc_pair)
 
     expect(order_book.base).to eq 'ABT'
     expect(order_book.target).to eq 'BTC'
@@ -46,7 +47,7 @@ RSpec.describe 'Bitmart integration specs' do
   end
 
   it 'fetch trade' do
-    trades = client.trades(btc_jpy_pair)
+    trades = client.trades(abt_btc_pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty

@@ -16,6 +16,7 @@ module Cryptoexchange::Exchanges
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                     base: base,
                     target: target,
+                    inst_id: value['symbolId'],
                     market: Bitmart::Market::NAME
                   )
           end
