@@ -110,6 +110,7 @@ Or install it yourself as:
 | Cryptopia         | Y       | Y          | Y       |         | Y           |          |
 | Cybex             | Y       | Y          | Y       |         | Y           |          |
 | Ddex              | Y       |            |         |         | Y           |          |
+| DEx.top           | Y       | Y          | Y       |         | Y           |          |
 | Dsx               | Y       | Y          | Y       |         | Y           |          |
 | Ercdex            | Y       | Y          |         |         | Y           |          |
 | EtherDelta        | Y       |            |         |         | Y           |          |
