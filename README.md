@@ -208,6 +208,7 @@ Or install it yourself as:
 | Tidex             | Y       |            |         |         | Y           |          |
 | Tokenjar          | Y       |            |         |         | Y           |          |
 | Tokenomy          | Y       | Y          | Y       |         | Y           |          |
+| Top100Exchange    | Y       |            |         |         | Y           |          |
 | Topbtc            | Y       | N          | N       |         | Y           |          |
 | TradeOgre         | Y       | Y          | Y       |         | Y           |          |
 | Trade Satoshi     | Y       |            |         |         | Y           |          |

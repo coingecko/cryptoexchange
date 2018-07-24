@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://member.top100exchange.co.uk/API.svc/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - member.top100exchange.co.uk
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 24 Jul 2018 11:39:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1481'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3964422d69615c9c998b90e521e2e8841532432391; expires=Wed, 24-Jul-19
+        11:39:51 GMT; path=/; domain=.top100exchange.co.uk; HttpOnly
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 43f61bcdccb5a9d8-SIN
+    body:
+      encoding: UTF-8
+      string: '[{"data":{"FirstPrice":7638.83390000,"HighestPrice":8204.36775000,"LastPrice":8188.04065000,"LowestPrice":7629.45105000,"PercentChanged":7.19,"TradedAmount":836902.04630462,"TradedVolume":107.26660000},"pair":"BTC-USD"},{"data":{"FirstPrice":19.76792100,"HighestPrice":19.88664800,"LastPrice":19.82728400,"LowestPrice":19.68877000,"PercentChanged":0.30,"TradedAmount":2370.00204789,"TradedVolume":119.78770000},"pair":"BTC-ETH"},{"data":{"FirstPrice":0.07960900,"HighestPrice":0.07984700,"LastPrice":0.07913200,"LowestPrice":0.07905300,"PercentChanged":-0.60,"TradedAmount":116.61696660,"TradedVolume":1467.83160000},"pair":"ETH-BTC"},{"data":{"FirstPrice":462.00154000,"HighestPrice":477.49236000,"LastPrice":476.62125000,"LowestPrice":445.85950000,"PercentChanged":3.16,"TradedAmount":845613.03993439,"TradedVolume":1847.31100000},"pair":"ETH-USD"},{"data":{"FirstPrice":0.00002642,"HighestPrice":0.00002713,"LastPrice":0.00002538,"LowestPrice":0.00002517,"PercentChanged":-3.94,"TradedAmount":115.74899798,"TradedVolume":4398648.00000000},"pair":"VVI-BTC"},{"data":{"FirstPrice":0.19400000,"HighestPrice":0.20720000,"LastPrice":0.19820000,"LowestPrice":0.19000000,"PercentChanged":2.16,"TradedAmount":1238909.87170000,"TradedVolume":6299812.00000000},"pair":"VVI-USD"},{"data":{"FirstPrice":0.00041177,"HighestPrice":0.00045253,"LastPrice":0.00042886,"LowestPrice":0.00041163,"PercentChanged":4.15,"TradedAmount":2325.41170942,"TradedVolume":5402334.00000000},"pair":"VVI-ETH"}]'
+    http_version: 
+  recorded_at: Tue, 24 Jul 2018 11:39:54 GMT
+recorded_with: VCR 4.0.0
