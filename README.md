@@ -137,6 +137,7 @@ Or install it yourself as:
 | Hksy              | Y       |            | Y       |         | User-Defined|          |
 | Hotbit            | Y       | N          | N       |         | Y           |          |
 | Huobi             | Y       |            |         |         | Y           | Y        |
+| iCoinbay          | Y       | Y          | Y       |         | Y           |          |
 | Idax              | Y       | N          | N       |         | Y           |          |
 | Idcm              | Y       |            |         |         | Y           |          |
 | Idex              | Y       | Unstable   | Y       |         | Y           |          |

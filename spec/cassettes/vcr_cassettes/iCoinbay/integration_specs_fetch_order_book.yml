@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.icoinbay.com/api/v1/getDepth?symbol=eth_btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.icoinbay.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 24 Jul 2018 09:25:52 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSALB=kVvL++oIgsOarfR3ls02BD0Y6zc7o9jgGr1rF8vULRnwshQ3quMoQx4YcfgAAL9xZ94HIZJrLmM6XS0qPajLRsfpYNpOMm9Fao29sinHwnmbWJsPSVa4eYMuYCWM;
+        Expires=Tue, 31 Jul 2018 09:25:52 GMT; Path=/
+      X-Application-Context:
+      - szzc-three-api:production:30561
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"code":"0","msg":"","body":{"sells":[["0.058753","0.089"],["0.058757","0.334"],["0.058760","0.275"],["0.058784","0.379"],["0.058798","0.165"],["0.058812","0.378"],["0.058813","0.185"],["0.058817","0.221"],["0.058828","0.071"],["0.058872","0.156"],["0.058886","0.297"],["0.058924","0.324"],["0.058925","0.145"],["0.058946","0.384"],["0.058956","0.145"],["0.058969","0.279"],["0.059000","0.162"],["0.059079","0.097"],["0.059121","0.134"],["0.059136","0.260"]],"buys":[["0.058711","0.143"],["0.058681","0.314"],["0.058679","0.237"],["0.058668","0.149"],["0.058666","0.153"],["0.058661","0.215"],["0.058660","0.360"],["0.058645","0.347"],["0.058626","0.218"],["0.058620","0.390"],["0.058602","0.337"],["0.058571","0.024"],["0.058554","0.292"],["0.058551","0.116"],["0.058534","0.156"],["0.058524","0.320"],["0.058502","0.102"],["0.058501","0.345"],["0.058494","0.194"],["0.058452","0.394"]]},"paramList":[],"array":[]}'
+    http_version: 
+  recorded_at: Tue, 24 Jul 2018 09:25:52 GMT
+recorded_with: VCR 4.0.0
