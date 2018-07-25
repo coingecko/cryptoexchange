@@ -66,6 +66,7 @@ Or install it yourself as:
 | BTC-e             |         |            |         |         |             |          |
 | BTC38             |         |            |         |         |             |          |
 | BTCC              | Y       |            |         |         | User-Defined|          |
+| BTCMarkets        | Y       | Y          |         |         | Y           | Y        |
 | BTCChina          |         |            |         |         |             |          |
 | Btcsquare         | Y       | Y          | Unstable|         | Y           |          |
 | BTER              | Y       |            |         |         | Y           |          |
