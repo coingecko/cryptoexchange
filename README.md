@@ -185,6 +185,7 @@ Or install it yourself as:
 | OrderBook         | Y       | Y          | Y       |         | Y           |          |
 | Ore Bz            | Y       | Y          | Y       |         | Y           |          |
 | Paribu            | Y       |            |         |         | Y           |          |
+| Paybis            |         |            |         |         |             | Y        |
 | Paymium           | Y       | Y          | Y       |         | User-Defined|          |
 | Poloniex          | Y       |            |         |         | Y           |          |
 | QBTC              | Y       | Y          | Y       |         | Y           |          |
