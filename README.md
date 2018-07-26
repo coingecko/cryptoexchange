@@ -88,6 +88,7 @@ Or install it yourself as:
 | CoinExchange      | Y       |            |         |         | Y           |          |
 | Coinbene          | Y       | Y          | Y       |         | Y           |          |
 | Coinhouse         | Y       |            |         |         | Y           |          |
+| Coinhub           | Y       | Y          | Y       |         | Y           | Y        |
 | CoinJar           | Y       | Y          | Y       |         | Y           |          |
 | Coinmate          | Y       | Y          |         |         | User-Defined|          |
 | Coinnest          | Y       | Y          | Y       |         | User-Defined|          |
