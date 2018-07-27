@@ -14,6 +14,11 @@ RSpec.describe 'Coinrail integration specs' do
     expect(pair.market).to eq 'coinrail'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'coinrail', base: btc_krw_pair.base, target: btc_krw_pair.target
+    expect(trade_page_url).to eq "https://coinrail.co.kr/api/public/system/market/info?fiat_currency=KRW&lang=ko"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_krw_pair)
 
