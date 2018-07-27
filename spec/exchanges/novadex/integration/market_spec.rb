@@ -15,6 +15,11 @@ RSpec.describe 'Novadex integration specs' do
     expect(pair.market).to eq 'novadex'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'novadex', base: qtum_btc_pair.base, target: qtum_btc_pair.target
+    expect(trade_page_url).to eq "https://www.novadex.io/user_trade.php?ekind=QTUM_BTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(qtum_btc_pair)
 
