@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module F1cx
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'f1cx'
       API_URL = 'https://f1cx.com/api/v2'
     end

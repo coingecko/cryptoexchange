@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Viabtc
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'viabtc'
       API_URL = 'https://www.viabtc.com/api/v1'
     end

@@ -17,6 +17,11 @@ RSpec.describe 'Binance integration specs' do
     expect(hashed_pairs).to include({base: 'QTUM', target: 'ETH', market: market})
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: btc_eur_pair.base, target: btc_eur_pair.target
+    expect(trade_page_url).to eq "https://www.binance.com/trade.html?symbol=ETH_BTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_eur_pair)
 

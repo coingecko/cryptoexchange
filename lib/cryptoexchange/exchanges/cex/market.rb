@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Cex
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'cex'
       API_URL = 'https://cex.io/api'
     end

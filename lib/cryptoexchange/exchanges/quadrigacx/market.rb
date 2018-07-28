@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Quadrigacx
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'quadrigacx'
       API_URL = 'https://api.quadrigacx.com/v2'
     end

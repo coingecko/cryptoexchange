@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Bitflyer
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'bitflyer'
       API_URL = 'https://api.bitflyer.jp/v1'
     end
