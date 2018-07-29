@@ -52,6 +52,7 @@ Or install it yourself as:
 | Bithumb           | Y       |            |         |         | Y           |          |
 | Bitibu            | Y       | Y          | Y       |         | Y           |          |
 | Bitkonan          | Y       |            |         |         | User-Defined|          |
+| Bitliber          | Y       | Y          | Y       |         | Y           | Y        |
 | Bitmex            | Y       | Y          | Y       |         | Y           |          |
 | Bitpaction        | Y       | Y          | Y       |         | Y           |          |
 | Bits Blockchain   | Y       | Y          |         |         | Y           |          |

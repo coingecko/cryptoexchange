@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitliber.com/api/v1/public/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitliber.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0
+      Date:
+      - Sat, 21 Jul 2018 01:25:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '631'
+      Connection:
+      - close
+      X-Powered-By:
+      - Express
+      Etag:
+      - W/"277-mryBn4oArWxegr3f0jAVTdPHOCI"
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","error":null,"result":[{"pair":"AEON-BTC","volume":0.00552331,"change":0.96702207,"last":0.0002036,"high":0.0002054,"low":0.00020165,"bid":0.0002036,"ask":0.000204},{"pair":"XMR-BTC","volume":0,"change":0,"last":0.0193,"high":0,"low":0,"bid":0.0192,"ask":0.0193},{"pair":"AEON-XMR","volume":0,"change":0,"last":0.0094,"high":0,"low":0,"bid":0.00894758,"ask":0.009},{"pair":"ETN-BTC","volume":0.00109214,"change":-1.89873418,"last":0.00000155,"high":0.00000158,"low":0.00000155,"bid":0.00000155,"ask":0.00000158},{"pair":"ETN-XMR","volume":0,"change":0,"last":0.00009,"high":0,"low":0,"bid":0.000089,"ask":0.000091}]}'
+    http_version: 
+  recorded_at: Sat, 21 Jul 2018 01:25:47 GMT
+recorded_with: VCR 4.0.0

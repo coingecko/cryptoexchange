@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitliber.com/api/v1/public/pairs
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitliber.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0
+      Date:
+      - Sat, 21 Jul 2018 01:25:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '647'
+      Connection:
+      - close
+      X-Powered-By:
+      - Express
+      Etag:
+      - W/"287-coGbZp510OSsOg4KvWRSpaPWNAQ"
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","error":null,"result":[{"pair":"AEON-BTC","baseCurrency":"AEON","quoteCurrency":"BTC","baseCurrencyLong":"Aeon","quoteCurrencyLong":"Bitcoin"},{"pair":"XMR-BTC","baseCurrency":"XMR","quoteCurrency":"BTC","baseCurrencyLong":"Monero","quoteCurrencyLong":"Bitcoin"},{"pair":"ETN-BTC","baseCurrency":"ETN","quoteCurrency":"BTC","baseCurrencyLong":"Electroneum","quoteCurrencyLong":"Bitcoin"},{"pair":"AEON-XMR","baseCurrency":"AEON","quoteCurrency":"XMR","baseCurrencyLong":"Aeon","quoteCurrencyLong":"Monero"},{"pair":"ETN-XMR","baseCurrency":"ETN","quoteCurrency":"XMR","baseCurrencyLong":"Electroneum","quoteCurrencyLong":"Monero"}]}'
+    http_version: 
+  recorded_at: Sat, 21 Jul 2018 01:25:45 GMT
+recorded_with: VCR 4.0.0

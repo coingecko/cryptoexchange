@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitliber.com/api/v1/public/orders/AEON-BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitliber.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0
+      Date:
+      - Sat, 21 Jul 2018 01:25:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '715'
+      Connection:
+      - close
+      X-Powered-By:
+      - Express
+      Etag:
+      - W/"2cb-xpeaURItM5/JIR+jgH4lEpeSvNI"
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","error":null,"result":{"buy":[{"price":0.0002036,"size":16.75418371},{"price":0.0002036,"size":147.34774067},{"price":0.00020165,"size":49.59087528},{"price":0.000201,"size":72.233445},{"price":0.0002008,"size":19.7501494},{"price":0.0002008,"size":45.53530876},{"price":0.000198,"size":10.1010101},{"price":0.0001945,"size":27.76349614},{"price":0.000192,"size":50},{"price":0.00019,"size":26.83378947},{"price":0.000185,"size":20},{"price":0.00018,"size":50},{"price":0.00017,"size":53.882624},{"price":2e-8,"size":1000}],"sell":[{"price":0.000204,"size":18.90652199},{"price":0.0002054,"size":26.34},{"price":0.000207,"size":39.82239492},{"price":0.0002285,"size":33},{"price":0.0003,"size":40}]}}'
+    http_version: 
+  recorded_at: Sat, 21 Jul 2018 01:25:49 GMT
+recorded_with: VCR 4.0.0
