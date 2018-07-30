@@ -9,12 +9,14 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          output = super(ticker_url(market_pair))
+          params = { symbol: "#{market_pair.base.downcase}2#{market_pair.target.downcase}"}
+          response = HTTP.timeout(:write => 4, :connect => 8, :read => 15).post(ticker_url, :form => params)
+          output = JSON.parse(response)
           adapt(output, market_pair)
         end
 
-        def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Allcoin::Market::API_URL}/ticker?symbol=#{market_pair.base.downcase}_#{market_pair.target.downcase}"
+        def ticker_url
+          "#{Cryptoexchange::Exchanges::Allcoin::Market::API_URL}/Api_Order/ticker"
         end
 
         def adapt(output, market_pair)
@@ -25,13 +27,13 @@ module Cryptoexchange::Exchanges
           ticker.base      = base
           ticker.target    = target
           ticker.market    = Allcoin::Market::NAME
-          ticker.ask       = NumericHelper.to_d(output['ticker']['sell'])
-          ticker.bid       = NumericHelper.to_d(output['ticker']['buy'])
-          ticker.last      = NumericHelper.to_d(output['ticker']['last'])
-          ticker.high      = NumericHelper.to_d(output['ticker']['high'])
-          ticker.low       = NumericHelper.to_d(output['ticker']['low'])
-          ticker.volume    = NumericHelper.to_d(output['ticker']['vol'])
-          ticker.timestamp = output['date'].to_i
+          ticker.ask       = NumericHelper.to_d(output['data']['sell'])
+          ticker.bid       = NumericHelper.to_d(output['data']['buy'])
+          ticker.last      = NumericHelper.to_d(output['data']['last'])
+          ticker.high      = NumericHelper.to_d(output['data']['high'])
+          ticker.low       = NumericHelper.to_d(output['data']['low'])
+          ticker.volume    = NumericHelper.to_d(output['data']['vol'])
+          ticker.timestamp = Time.now.to_i
           ticker.payload   = output
           ticker
         end
