@@ -103,7 +103,7 @@ Or install it yourself as:
 | Cointiger         | Y       | Y          | Y       |         | Y           |          |
 | Coinut            | Y       | Y          | Y       | Y       | Y           |          |
 | COSS              | Y       |            |         |         | Y           |          |
-| Cpdax             | Y       |            |         |         | Y           |          |
+| Cpdax             | Y       | Y          | Y       |         | Y           |          |
 | CredoEx           | Y       |            |         |         | Y           |          |
 | Crex24            | Y       | Y          | Y       |         | Y           |          |
 | CRXZone           | Y       | Y          | Y       |         | Y           |          |
