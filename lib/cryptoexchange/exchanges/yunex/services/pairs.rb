@@ -15,7 +15,7 @@ module Cryptoexchange::Exchanges
             output["data"].each do |market|
               market["plist"].each do |pair|
                 market_pair = Cryptoexchange::Models::MarketPair.new
-                target, base = pair['symbol'].split('_')
+                base, target = pair['symbol'].split('_')
 
                 market_pair.base = base
                 market_pair.target = target
