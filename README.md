@@ -28,7 +28,7 @@ Or install it yourself as:
 | Abucoins          | Y       | Y          | Y       |         | Y           |          |
 | ACX               | Y       | Y          | Y       |         | Y           |          |
 | AEX               | Y       | Y          | Y       |         | Y           |          |
-| Allcoin           | Y       | Y          |         |         | User-Defined|          |
+| Allcoin           | Y       |            |         |         | User-Defined|          |
 | ANX               | Y       |            |         |         | User-Defined|          |
 | Bancor            | Y       | N          | N       |         | Y           |          |
 | Bcex              | Y       | Y          | Y       |         | Y           |          |
