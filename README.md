@@ -184,6 +184,7 @@ Or install it yourself as:
 | Openledger        | Y       | Y          | Y       |         | Y           |          |
 | OrderBook         | Y       | Y          | Y       |         | Y           |          |
 | Ore Bz            | Y       | Y          | Y       |         | Y           |          |
+| OTCBTC            | Y       | Y          | Y       |         | Y           |          |
 | Paribu            | Y       |            |         |         | Y           |          |
 | Paymium           | Y       | Y          | Y       |         | User-Defined|          |
 | Poloniex          | Y       |            |         |         | Y           |          |
