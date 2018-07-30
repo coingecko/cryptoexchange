@@ -2,20 +2,23 @@ module Cryptoexchange::Exchanges
   module Zebpay
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Zebpay::Market::API_URL}/market"
 
         def fetch
           output = super
-          market_pairs = []
-          output.each do |pair|
-            market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair[:base],
-                              target: pair[:target],
-                              market: Zebpay::Market::NAME
-                            )
-          end
-          market_pairs
+          adapt(output)
         end
 
+        def adapt(output)
+          output.map do |output|
+            base, target = output['pair'].split('-')
+            Cryptoexchange::Models::MarketPair.new(
+              base: base,
+              target: target,
+              market: Zebpay::Market::NAME
+              )
+          end
+        end
       end
     end
   end

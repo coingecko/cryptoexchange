@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Bitbank
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'bitbank'
       API_URL = 'https://public.bitbank.cc'
     end
