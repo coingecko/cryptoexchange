@@ -160,6 +160,7 @@ Or install it yourself as:
 | LocalBitcoins     | Y       | Y          | Y       |         | Y           |
 | Luno              | Y       |            |         |         | Y           |
 | Lykke             | Y       | Y          | N       |         | Y           |
+| MaxMaicoin        | Y       | Y          | Y       |         | Y           |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|
 | Mercatox          | Y       | N          | N       | N       | Y           |
 | Myspeedtrade      | Y       | Y          |         |         | Y           |
