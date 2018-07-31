@@ -22,7 +22,6 @@ Or install it yourself as:
 
 ## Exchanges Supported
 
-
 | Exchange          | Ticker  | Order Book | Trade   | Account | Market List | Pair URL | slug              |
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |----------|-------------------|
 | Abcc              | Y       | N          | N       |         | Y           |          | abcc              |
@@ -103,7 +102,7 @@ Or install it yourself as:
 | Cointiger         | Y       | Y          | Y       |         | Y           |          | cointiger         |
 | Coinut            | Y       | Y          | Y       | Y       | Y           |          | coinut            |
 | COSS              | Y       |            |         |         | Y           |          | coss              |
-| Cpdax             | Y       |            |         |         | Y           |          | cpdax             |
+| Cpdax             | Y       | Y          | Y       |         | Y           |          | cpdax             |
 | CredoEx           | Y       |            |         |         | Y           |          | credoex           |
 | Crex24            | Y       | Y          | Y       |         | Y           |          | crex24            |
 | CRXZone           | Y       | Y          | Y       |         | Y           |          | crxzone           |
