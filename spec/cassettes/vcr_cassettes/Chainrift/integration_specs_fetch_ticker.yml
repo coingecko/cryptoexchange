@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.chainrift.com/Public/Market
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.chainrift.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 31 Jul 2018 02:12:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSALB=YahUVTz5nkYr/coMckDLDO/GF/984+WOoorrZh2B8WH0/+Q25IFMf2U8PjMwDBHzT0Kzeqs3URf0NJfAVJdZ2xAgi88xerhQHT8utEAFCfnFCLiBGX1dzk/fX7T+;
+        Expires=Tue, 07 Aug 2018 02:12:33 GMT; Path=/
+      - __cfduid=dae37b10c3c1bfb774860eff5f5eedfe11533003152; expires=Wed, 31-Jul-19
+        02:12:32 GMT; path=/; domain=.chainrift.com; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 442c8a672bd32cc9-KUL
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"data":[{"symbol":"EOS/BTC","last":0.00104666,"change":0.0,"volume":0.0,"high":0.0016,"low":0.00104666,"bid":0.0001,"ask":0.00095743,"timestamp":"2018-07-26T06:25:26.000","openbuyorders":1,"opensellorders":7,"prevday":0.0,"created":"2018-03-15T10:51:46.000"},{"symbol":"PART/BTC","last":0.00075000,"change":0.0,"volume":0.0,"high":0.00075000,"low":0.00072000,"bid":0.00072000,"ask":0.00085000,"timestamp":"2018-07-23T08:04:31.000","openbuyorders":7,"opensellorders":4,"prevday":0.00072000,"created":"2018-03-15T10:51:46.000"},{"symbol":"IQ/BTC","last":0.00000606,"change":0.0,"volume":0.0,"high":0.00000606,"low":0.00000606,"bid":0.0,"ask":0.00000276,"timestamp":"2018-07-19T15:24:45.000","openbuyorders":0,"opensellorders":13,"prevday":0.0,"created":"2018-07-18T16:58:28.000"},{"symbol":"POOR/BTC","last":0.0,"change":0.0,"volume":0.0,"high":0.0,"low":0.0,"bid":0.0,"ask":0.0,"timestamp":"2018-01-01T00:00:00.000","openbuyorders":5,"opensellorders":5,"prevday":0.0,"created":"2018-07-18T16:58:42.000"},{"symbol":"EOSDAC/BTC","last":0.00000752,"change":0.0,"volume":0.0,"high":0.00000752,"low":0.00000752,"bid":0.0,"ask":0.00000402,"timestamp":"2018-07-19T17:09:04.000","openbuyorders":0,"opensellorders":12,"prevday":0.0,"created":"2018-05-16T07:07:52.000"}]}'
+    http_version: 
+  recorded_at: Tue, 31 Jul 2018 02:12:33 GMT
+recorded_with: VCR 4.0.0

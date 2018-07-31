@@ -77,7 +77,10 @@ Or install it yourself as:
 | CPatex            | Y       | Y          | Y       |         | Y           |          | c_patex           |
 | CCex              | Y       |            |         |         | Y           |          | ccex              |
 | Cex               | Y       | Y          | Y       |         | Y           |          | cex               |
-| Cfinex            | Y       | Y          | Y       |         | Y           |          | cfinex            |
+| Cfinex            | Y       | Y          | Y       |         | Y           |          | cfinex            
+|
+| Chainrift         | Y       | Y          | Y       |         | Y           |          | chainrift
+|
 | CHBTC             | Y       |            |         |         | User-Defined|          | chbtc             |
 | Cobinhood         | Y       | Y          |         |         | Y           |          | cobinhood         |
 | Coin2001          | Y       | Y          | Y       |         | Y           |          | coin2001          |
