@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://a.yunex.io/api/market/depth?level=10&symbol=btc_usdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - a.yunex.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - YunEX
+      Date:
+      - Mon, 30 Jul 2018 09:27:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '491'
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - x-requested-with,content-type,Tradepwd,token,-xx-device
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"data":{"asks":[["8163.8679","0.0295"],["8199.0511","0.0166"],["8240.0464","0.0169"],["8302.6295","0.0107"],["8344.3512","0.0134"],["8344.5599","0.001"],["8386.2827","0.0103"],["8428.4248","0.0097"],["8470.567","0.0156"],["8512.9198","0.0057"]],"bids":[["8138.2209","0.0041"],["8097.7323","0.0078"],["8097.7321","0.0019"],["8017.5587","0.0185"],["7977.6704","0.0132"],["7938.58","0.0172"],["7899.0846","0.0156"],["7820.8777","0.0038"],["7781.7733","0.0025"],["7742.8644","0.0125"]]},"ok":1}'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2018 09:27:50 GMT
+recorded_with: VCR 4.0.0

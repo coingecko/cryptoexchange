@@ -1,8 +1,8 @@
 module Cryptoexchange::Exchanges
-  module Cpdax
+  module TrocaNinja
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Cpdax::Market::API_URL}/tickers"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::TrocaNinja::Market::API_URL}/volume"
 
         def fetch
           output = super
@@ -11,11 +11,11 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output.map do |pair|
-            base, target = pair['currency_pair'].split("-")
+            target, base = pair['parName'].split("_")
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
-              market: Cpdax::Market::NAME
+              market: TrocaNinja::Market::NAME
             )
           end
         end

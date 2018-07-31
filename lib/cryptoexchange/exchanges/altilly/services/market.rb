@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Cpdax
+  module Altilly
     module Services
       class Market < Cryptoexchange::Services::Market
         class << self
@@ -14,18 +14,19 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Cpdax::Market::API_URL}/tickers/detailed"
+          "#{Cryptoexchange::Exchanges::Altilly::Market::API_URL}/public/ticker"
         end
 
         def adapt_all(output)
-          output.map do |ticker|
-            base, target = ticker['currency_pair'].split('-')
+          output.map do |pair|
+            symbol = pair['symbol'].upcase
+            base, target = symbol.split(/(BTC$)+|(ETH$)+|(USDT$)+|(LTC$)+/)
             market_pair  = Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
-              market: Cpdax::Market::NAME
+              market: Altilly::Market::NAME
             )
-            adapt(market_pair, ticker)
+            adapt(market_pair, pair)
           end
         end
 
@@ -33,15 +34,14 @@ module Cryptoexchange::Exchanges
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
-          ticker.market    = Cpdax::Market::NAME
+          ticker.market    = Altilly::Market::NAME
           ticker.last      = NumericHelper.to_d(output['last'])
           ticker.high      = NumericHelper.to_d(output['high'])
           ticker.low       = NumericHelper.to_d(output['low'])
           ticker.bid       = NumericHelper.to_d(output['bid'])
           ticker.ask       = NumericHelper.to_d(output['ask'])
           ticker.volume    = NumericHelper.to_d(output['volume'])
-          ticker.change    = NumericHelper.to_d(output['rate'])
-          ticker.timestamp = NumericHelper.to_d(output['timestamp'])
+          ticker.timestamp = DateTime.parse(output['timestamp']).to_time.to_i
           ticker.payload   = output
           ticker
         end

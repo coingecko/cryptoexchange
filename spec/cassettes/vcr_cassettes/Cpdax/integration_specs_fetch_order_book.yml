@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.cpdax.com/v1/tickers
+    uri: https://api.cpdax.com/v1/orderbook/BAT-BTC
     body:
       encoding: UTF-8
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 30 Jul 2018 15:44:06 GMT
+      - Mon, 30 Jul 2018 15:52:34 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -61,7 +61,7 @@ http_interactions:
         https://*.google.co.kr https://*.google.co.jp data:;object-src 'self'
     body:
       encoding: UTF-8
-      string: '[{"timestamp":1532965442,"last":"0.00003771","currency_pair":"BAT-BTC"},{"timestamp":1532965440,"last":"0.09998295","currency_pair":"BCH-BTC"},{"timestamp":1528676174,"last":"1016100.00000000","currency_pair":"BCH-KRW"},{"timestamp":1528677915,"last":"7331000.00000000","currency_pair":"BTC-KRW"},{"timestamp":1532965440,"last":"0.00098980","currency_pair":"EOS-BTC"},{"timestamp":1528677865,"last":"12480.00000000","currency_pair":"EOS-KRW"},{"timestamp":1532965424,"last":"0.00209471","currency_pair":"ETC-BTC"},{"timestamp":1528677955,"last":"14050.00000000","currency_pair":"ETC-KRW"},{"timestamp":1532965438,"last":"0.05638217","currency_pair":"ETH-BTC"},{"timestamp":1528677855,"last":"563250.00000000","currency_pair":"ETH-KRW"},{"timestamp":1532965443,"last":"0.00001785","currency_pair":"GTO-BTC"},{"timestamp":1528677855,"last":"197.00000000","currency_pair":"GTO-KRW"},{"timestamp":1532965441,"last":"0.00010723","currency_pair":"KNC-BTC"},{"timestamp":1528677965,"last":"1215.00000000","currency_pair":"KNC-KRW"},{"timestamp":1532965442,"last":"0.01019384","currency_pair":"LTC-BTC"},{"timestamp":1528677995,"last":"115050.00000000","currency_pair":"LTC-KRW"},{"timestamp":1532965377,"last":"0.00000183","currency_pair":"PAL-BTC"}]'
+      string: '{"bids":[{"price":"0.00003748","size":"307.43101000"},{"price":"0.00003747","size":"1055.52689000"},{"price":"0.00003746","size":"673.99837000"},{"price":"0.00003740","size":"422.88000000"},{"price":"0.00003720","size":"249.89510000"},{"price":"0.00003710","size":"353.44000000"},{"price":"0.00003700","size":"352.00000000"},{"price":"0.00003620","size":"591.09000000"},{"price":"0.00003610","size":"537.93000000"},{"price":"0.00003600","size":"179.59680000"},{"price":"0.00003590","size":"206.93200000"},{"price":"0.00003570","size":"34.60000000"},{"price":"0.00003550","size":"179.21700000"},{"price":"0.00003538","size":"8491.37224420"},{"price":"0.00003389","size":"120.00000000"}],"asks":[{"price":"0.00003749","size":"308.75920000"},{"price":"0.00003750","size":"130.87000000"},{"price":"0.00003754","size":"45.10000000"},{"price":"0.00003761","size":"988.57538481"},{"price":"0.00003762","size":"1350.72180821"},{"price":"0.00003767","size":"38.80000000"},{"price":"0.00003770","size":"504.27280000"},{"price":"0.00003778","size":"1194.66840627"},{"price":"0.00003786","size":"524.33000000"},{"price":"0.00003790","size":"1170.40470000"},{"price":"0.00003800","size":"231.40000000"},{"price":"0.00003820","size":"245.83000000"},{"price":"0.00003830","size":"278.01000000"},{"price":"0.00003840","size":"27.61000000"},{"price":"0.00003870","size":"1314.67550000"}],"product_id":"BAT-BTC"}'
     http_version: 
-  recorded_at: Mon, 30 Jul 2018 15:44:06 GMT
+  recorded_at: Mon, 30 Jul 2018 15:52:34 GMT
 recorded_with: VCR 4.0.0

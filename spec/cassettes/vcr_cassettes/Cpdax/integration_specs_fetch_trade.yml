@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.cpdax.com/v1/tickers
+    uri: https://api.cpdax.com/v1/trades/BAT-BTC
     body:
       encoding: UTF-8
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 30 Jul 2018 15:44:06 GMT
+      - Mon, 30 Jul 2018 15:52:35 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -61,7 +61,7 @@ http_interactions:
         https://*.google.co.kr https://*.google.co.jp data:;object-src 'self'
     body:
       encoding: UTF-8
-      string: '[{"timestamp":1532965442,"last":"0.00003771","currency_pair":"BAT-BTC"},{"timestamp":1532965440,"last":"0.09998295","currency_pair":"BCH-BTC"},{"timestamp":1528676174,"last":"1016100.00000000","currency_pair":"BCH-KRW"},{"timestamp":1528677915,"last":"7331000.00000000","currency_pair":"BTC-KRW"},{"timestamp":1532965440,"last":"0.00098980","currency_pair":"EOS-BTC"},{"timestamp":1528677865,"last":"12480.00000000","currency_pair":"EOS-KRW"},{"timestamp":1532965424,"last":"0.00209471","currency_pair":"ETC-BTC"},{"timestamp":1528677955,"last":"14050.00000000","currency_pair":"ETC-KRW"},{"timestamp":1532965438,"last":"0.05638217","currency_pair":"ETH-BTC"},{"timestamp":1528677855,"last":"563250.00000000","currency_pair":"ETH-KRW"},{"timestamp":1532965443,"last":"0.00001785","currency_pair":"GTO-BTC"},{"timestamp":1528677855,"last":"197.00000000","currency_pair":"GTO-KRW"},{"timestamp":1532965441,"last":"0.00010723","currency_pair":"KNC-BTC"},{"timestamp":1528677965,"last":"1215.00000000","currency_pair":"KNC-KRW"},{"timestamp":1532965442,"last":"0.01019384","currency_pair":"LTC-BTC"},{"timestamp":1528677995,"last":"115050.00000000","currency_pair":"LTC-KRW"},{"timestamp":1532965377,"last":"0.00000183","currency_pair":"PAL-BTC"}]'
+      string: '[{"price":"0.00003748","size":"80.40000000","side":"buy","created_at":"2018-07-31T00:52:24+09:00"},{"price":"0.00003749","size":"26.91000000","side":"sell","created_at":"2018-07-31T00:52:21+09:00"},{"price":"0.00003748","size":"143.60470000","side":"buy","created_at":"2018-07-31T00:52:20+09:00"},{"price":"0.00003749","size":"172.86000000","side":"sell","created_at":"2018-07-31T00:52:17+09:00"},{"price":"0.00003748","size":"187.20000000","side":"buy","created_at":"2018-07-31T00:52:15+09:00"},{"price":"0.00003749","size":"84.97080000","side":"sell","created_at":"2018-07-31T00:52:12+09:00"},{"price":"0.00003748","size":"110.70000000","side":"buy","created_at":"2018-07-31T00:52:07+09:00"},{"price":"0.00003761","size":"89.09000000","side":"sell","created_at":"2018-07-31T00:52:03+09:00"},{"price":"0.00003749","size":"114.56300000","side":"sell","created_at":"2018-07-31T00:52:03+09:00"},{"price":"0.00003761","size":"632.10967000","side":"sell","created_at":"2018-07-31T00:51:58+09:00"}]'
     http_version: 
-  recorded_at: Mon, 30 Jul 2018 15:44:06 GMT
+  recorded_at: Mon, 30 Jul 2018 15:52:35 GMT
 recorded_with: VCR 4.0.0

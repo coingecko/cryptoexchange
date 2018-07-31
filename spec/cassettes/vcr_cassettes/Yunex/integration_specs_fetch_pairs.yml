@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://a.yunex.io/api/base/coins/tree
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - a.yunex.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - YunEX
+      Date:
+      - Mon, 30 Jul 2018 09:27:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - x-requested-with,content-type,Tradepwd,token,-xx-device
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"base_coin_id":1,"base_symbol":"usdt","plist":[{"base_coin_id":1,"coin_id":7,"cur_price":"8138.2209","logo":"https://s.yunex.io/static/uploads/201805/b0c6f660f982862.png","max_price":"8302.8371","min_price":"8138.2209","name":"BTC/USDT","pair_id":1,"price_precision":4,"rate":"-1.98","symbol":"btc_usdt","volume":"53.4444"},{"base_coin_id":1,"coin_id":4,"cur_price":"462","logo":"https://s.yunex.io/static/uploads/201805/7df824893d1027a.png","max_price":"497","min_price":"462","name":"ETH/USDT","pair_id":4,"price_precision":4,"rate":"0","symbol":"eth_usdt","volume":"237.459"},{"base_coin_id":1,"coin_id":25,"cur_price":"0.1495","logo":"https://s.yunex.io/static/uploads/201807/4c127681a30f0df.png","max_price":"0.1503","min_price":"0.1494","name":"KT/USDT","pair_id":39,"price_precision":4,"rate":"-0.2","symbol":"kt_usdt","volume":"171462.3599"},{"base_coin_id":1,"coin_id":10,"cur_price":"0.1061","logo":"https://s.yunex.io/static/uploads/201805/ea209d5c2f5c590.png","max_price":"0.1161","min_price":"0.0951","name":"YUN/USDT","pair_id":15,"price_precision":4,"rate":"-2.74","symbol":"yun_usdt","volume":"759348.4575"},{"base_coin_id":1,"coin_id":15,"cur_price":"0.0435","logo":"https://s.yunex.io/static/uploads/201806/f7011ac854e04ca.png","max_price":"0.0468","min_price":"0.0417","name":"SNET/USDT","pair_id":19,"price_precision":4,"rate":"0.23","symbol":"snet_usdt","volume":"2764723.7019"},{"base_coin_id":1,"coin_id":27,"cur_price":"850","logo":"https://s.yunex.io/static/uploads/201806/2a3234ddfdb704c.png","max_price":"850","min_price":"834.8093","name":"BCH/USDT","pair_id":25,"price_precision":4,"rate":"1.81","symbol":"bch_usdt","volume":"35.2011"}],"precision":6},{"base_coin_id":4,"base_symbol":"eth","plist":[{"base_coin_id":4,"coin_id":7,"cur_price":"17.1385","logo":"https://s.yunex.io/static/uploads/201807/b0c6f660f982862.png","max_price":"17.4954","min_price":"17.1385","name":"BTC/ETH","pair_id":29,"price_precision":4,"rate":"-2.03","symbol":"btc_eth","volume":"6.4294"},{"base_coin_id":4,"coin_id":15,"cur_price":"0.0000927","logo":"https://s.yunex.io/static/uploads/201807/f7011ac854e04ca.png","max_price":"0.00009973","min_price":"0.00008823","name":"SNET/ETH","pair_id":31,"price_precision":8,"rate":"-0.05","symbol":"snet_eth","volume":"3160006.2"},{"base_coin_id":4,"coin_id":10,"cur_price":"0.00022122","logo":"https://s.yunex.io/static/uploads/201807/ea209d5c2f5c590.png","max_price":"0.00023932","min_price":"0.0002138","name":"YUN/ETH","pair_id":35,"price_precision":8,"rate":"-3.52","symbol":"yun_eth","volume":"5573447.1261"},{"base_coin_id":4,"coin_id":31,"cur_price":"0.00000416","logo":"https://s.yunex.io/static/uploads/201807/eabd8f04baad6d3.png","max_price":"0.00000416","min_price":"0.00000416","name":"RATING/ETH","pair_id":37,"price_precision":8,"rate":"0","symbol":"rating_eth","volume":"158329987.2"}],"precision":6},{"base_coin_id":25,"base_symbol":"kt","plist":[{"base_coin_id":25,"coin_id":7,"cur_price":"54378.5646","logo":"https://s.yunex.io/static/uploads/201807/b0c6f660f982862.png","max_price":"56053.5644","min_price":"53790.7846","name":"BTC/KT","pair_id":41,"price_precision":4,"rate":"-2.98","symbol":"btc_kt","volume":"15.4864"},{"base_coin_id":25,"coin_id":4,"cur_price":"3102.645","logo":"https://s.yunex.io/static/uploads/201807/7df824893d1027a.png","max_price":"3186.7574","min_price":"2946.4615","name":"ETH/KT","pair_id":43,"price_precision":4,"rate":"-0.69","symbol":"eth_kt","volume":"115.2395"},{"base_coin_id":25,"coin_id":10,"cur_price":"0.6891","logo":"https://s.yunex.io/static/uploads/201807/ea209d5c2f5c590.png","max_price":"0.7591","min_price":"0.6756","name":"YUN/KT","pair_id":45,"price_precision":4,"rate":"-5.6","symbol":"yun_kt","volume":"2086104.8912"},{"base_coin_id":25,"coin_id":15,"cur_price":"0.2812","logo":"https://s.yunex.io/static/uploads/201807/f7011ac854e04ca.png","max_price":"0.319","min_price":"0.2755","name":"SNET/KT","pair_id":47,"price_precision":4,"rate":"-5.31","symbol":"snet_kt","volume":"18485728.5384"}],"precision":6}],"ok":1}'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2018 09:27:50 GMT
+recorded_with: VCR 4.0.0

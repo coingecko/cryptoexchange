@@ -1,8 +1,8 @@
 module Cryptoexchange::Exchanges
-  module Cpdax
+  module Altilly
     class Market < Cryptoexchange::Models::Market
-      NAME = 'cpdax'
-      API_URL = 'https://api.cpdax.com/v1'
+      NAME = 'altilly'
+      API_URL = 'https://api.altilly.com/api'
     end
   end
 end

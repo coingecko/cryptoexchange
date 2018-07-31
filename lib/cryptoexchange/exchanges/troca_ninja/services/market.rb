@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Cpdax
+  module TrocaNinja
     module Services
       class Market < Cryptoexchange::Services::Market
         class << self
@@ -14,34 +14,33 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Cpdax::Market::API_URL}/tickers/detailed"
+          "#{Cryptoexchange::Exchanges::TrocaNinja::Market::API_URL}/volume"
         end
 
         def adapt_all(output)
           output.map do |ticker|
-            base, target = ticker['currency_pair'].split('-')
+            target, base = ticker['parName'].split("_")
             market_pair  = Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
-              market: Cpdax::Market::NAME
+              market: TrocaNinja::Market::NAME
             )
-            adapt(market_pair, ticker)
+            adapt(ticker, market_pair)
           end
         end
 
-        def adapt(market_pair, output)
+        def adapt(output, market_pair)
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
-          ticker.market    = Cpdax::Market::NAME
+          ticker.market    = TrocaNinja::Market::NAME
           ticker.last      = NumericHelper.to_d(output['last'])
-          ticker.high      = NumericHelper.to_d(output['high'])
-          ticker.low       = NumericHelper.to_d(output['low'])
+          ticker.high      = NumericHelper.to_d(output['high24hr'])
+          ticker.low       = NumericHelper.to_d(output['low24hr'])
           ticker.bid       = NumericHelper.to_d(output['bid'])
           ticker.ask       = NumericHelper.to_d(output['ask'])
-          ticker.volume    = NumericHelper.to_d(output['volume'])
-          ticker.change    = NumericHelper.to_d(output['rate'])
-          ticker.timestamp = NumericHelper.to_d(output['timestamp'])
+          ticker.volume    = NumericHelper.to_d(output['quoteVolume'])
+          ticker.timestamp = Time.now.to_i
           ticker.payload   = output
           ticker
         end

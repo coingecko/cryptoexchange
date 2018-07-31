@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://peatio.cryptagio.com/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - peatio.cryptagio.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 Jun 2018 15:47:30 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1258'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d33004cc9b5232c0b833bf593d1cc8ad91529768849; expires=Sun, 23-Jun-19
+        15:47:29 GMT; path=/; domain=.cryptagio.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Version:
+      - HTTP/1.0
+      Host:
+      - peatio.cryptagio.com
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - MY
+      X-Forwarded-For:
+      - 175.137.97.165
+      X-Forwarded-Proto:
+      - https
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 175.137.97.165
+      X-Forwarded-Host:
+      - peatio.cryptagio.com
+      Etag:
+      - W/"3f1e5daff7717289db36a3a99d15919b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 36263ef4-425b-4ad7-be65-98fad567eb65
+      X-Runtime:
+      - '0.004705'
+      Strict-Transport-Security:
+      - max-age=2592000; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42f817ee4e1aa960-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"0xbtceth","name":"0XBTC/ETH","base_unit":"0xbtc","quote_unit":"eth","amount_fixed":1,"price_fixed":6},{"id":"0xbtcbtc","name":"0XBTC/BTC","base_unit":"0xbtc","quote_unit":"btc","amount_fixed":1,"price_fixed":7},{"id":"hotbtc","name":"HOT/BTC","base_unit":"hot","quote_unit":"btc","amount_fixed":0,"price_fixed":8},{"id":"hoteth","name":"HOT/ETH","base_unit":"hot","quote_unit":"eth","amount_fixed":0,"price_fixed":8},{"id":"btcusdt","name":"BTC/USDT","base_unit":"btc","quote_unit":"usdt","amount_fixed":5,"price_fixed":1},{"id":"ethusdt","name":"ETH/USDT","base_unit":"eth","quote_unit":"usdt","amount_fixed":4,"price_fixed":2},{"id":"omgusdt","name":"OMG/USDT","base_unit":"omg","quote_unit":"usdt","amount_fixed":2,"price_fixed":4},{"id":"ethbtc","name":"ETH/BTC","base_unit":"eth","quote_unit":"btc","amount_fixed":4,"price_fixed":6},{"id":"omgeth","name":"OMG/ETH","base_unit":"omg","quote_unit":"eth","amount_fixed":2,"price_fixed":6},{"id":"veneth","name":"VEN/ETH","base_unit":"ven","quote_unit":"eth","amount_fixed":0,"price_fixed":8},{"id":"omgbtc","name":"OMG/BTC","base_unit":"omg","quote_unit":"btc","amount_fixed":2,"price_fixed":7},{"id":"venbtc","name":"VEN/BTC","base_unit":"ven","quote_unit":"btc","amount_fixed":0,"price_fixed":8}]'
+    http_version: 
+  recorded_at: Sat, 23 Jun 2018 15:47:30 GMT
+recorded_with: VCR 4.0.0
