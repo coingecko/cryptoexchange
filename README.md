@@ -22,211 +22,215 @@ Or install it yourself as:
 
 ## Exchanges Supported
 
-| Exchange          | Ticker  | Order Book | Trade   | Account | Market List | Pair URL |
-| ----------------- | ------- | ---------- | ------- | ------- | ----------- |----------|
-| Abcc              | Y       | N          | N       |         | Y           |          |
-| Abucoins          | Y       | Y          | Y       |         | Y           |          |
-| ACX               | Y       | Y          | Y       |         | Y           |          |
-| AEX               | Y       | Y          | Y       |         | Y           |          |
-| Allcoin           | Y       | Y          |         |         | User-Defined|          |
-| ANX               | Y       |            |         |         | User-Defined|          |
-| Bancor            | Y       | N          | N       |         | Y           |          |
-| Bcex              | Y       | Y          | Y       |         | Y           |          |
-| Bibox             | Y       | Y          | Y       |         | Y           |          |
-| BigONE            | Y       | Y          | Y       |         | Y           |          |
-| Bilaxy            | Y       | Y          | Y       |         | Y           |          |
-| Bit-Z             | Y       |            |         |         | Y           |          |
-| Bit2C             | Y       | Y          | Y       |         | User-Defined|          |
-| Binance           | Y       | Y          |         |         | Y           | Y        |
-| Bitbay            | Y       |            |         |         | User-Defined|          |
-| BitBNS            | Y       |            |         |         | Y           |          |
-| Bitbank           | Y       | Y          | Y       |         | User-Defined|          |
-| Bitcoin Indonesia | Y       |            |         |         | User-Defined|          |
-| Bitconnect        | Y       |            |         |         | Y           |          |
-| Bitebtc           | Y       | Y          | Y       |         | Y           |          |
-| Bitfinex          | Y       |            |         |         | Y           |          |
-| Bitflyer          | Y       |            |         |         | Y           |          |
-| Bitforex          | Y       | N          | N       |         | Y           |          |
-| Bithash           | Y       | Y          | Y       |         | Y           |          |
-| Bithumb           | Y       |            |         |         | Y           |          |
-| Bitibu            | Y       | Y          | Y       |         | Y           |          |
-| Bitkonan          | Y       |            |         |         | User-Defined|          |
-| Bitmex            | Y       | Y          | Y       |         | Y           |          |
-| Bitpaction        | Y       | Y          | Y       |         | Y           |          |
-| Bits Blockchain   | Y       | Y          |         |         | Y           |          |
-| Bitso             | Y       |            |         |         | Y           |          |
-| Bitstamp          | Y       | Y          | Y       |         | User-Defined|          |
-| Bittrex           | Y       |            |         |         | Y           |          |
-| Bleutrade         | Y       |            |         |         | Y           |          |
-| Braziliex         | Y       | Y          | Y       |         | Y           |          |
-| BtcAlpha          | Y       | Y          | Y       |         | Y           |          |
-| BtcTradeUa        | Y       | Y          | Y       |         | Y           |          |
-| BTCBox            | Y       | Y          |         |         | User-Defined|          |
-| BTC-e             |         |            |         |         |             |          |
-| BTC38             |         |            |         |         |             |          |
-| BTCC              | Y       |            |         |         | User-Defined|          |
-| BTCChina          |         |            |         |         |             |          |
-| Btcsquare         | Y       | Y          | Unstable|         | Y           |          |
-| BTER              | Y       |            |         |         | Y           |          |
-| Buyucoin          | Y       | N          | N       |         | Y           |          |
-| BX Thailand       | Y       |            |         |         | Y           |          |
-| C2CX              | Y       | Y          | N       |         | Y           |          |
-| CPatex            | Y       | Y          | Y       |         | Y           |          |
-| CCex              | Y       |            |         |         | Y           |          |
-| Cex               | Y       | Y          | Y       |         | Y           |          |
-| Cfinex            | Y       | Y          | Y       |         | Y           |          |
-| CHBTC             | Y       |            |         |         | User-Defined|          |
-| Cobinhood         | Y       | Y          |         |         | Y           |          |
-| Coin2001          | Y       | Y          | Y       |         | Y           |          |
-| CoinEgg           | Y       | Y          | Y       |         | User-Defined|          |
-| Coincheck         | Y       |            |         |         | User-Defined|          |
-| Coinex            | Y       | Y          | Y       |         | Y           |          |
-| Coinfalcon        | Y       | Y          | Y       |         | Y           |          |
-| Coinfield         | Y       | N          | N       |         | Y           |          |
-| Coingi            | Y       | Y          | Y       |         | Y           |          |
-| CoinExchange      | Y       |            |         |         | Y           |          |
-| Coinbene          | Y       | Y          | Y       |         | Y           |          |
-| Coinhouse         | Y       |            |         |         | Y           |          |
-| CoinJar           | Y       | Y          | Y       |         | Y           |          |
-| Coinmate          | Y       | Y          |         |         | User-Defined|          |
-| Coinnest          | Y       | Y          | Y       |         | User-Defined|          |
-| Coinnox           | Y       | Y          | Y       |         | Y           |          |
-| Coinroom          | Y       |            |         |         | Y           |          |
-| Coinone           | Y       | Y          | Y       |         | Y           |          |
-| Coinrail          | Y       | Y          | Y       |         | Y           |          |
-| CoinsMarkets      | Y       |            |         |         | Y           |          |
-| Coinsuper         | Y       |            |         |         | Y           |          |
-| Coinstock         | Y       | Y          | Y       |         | Y           |          |
-| Cointiger         | Y       | Y          | Y       |         | Y           |          |
-| Coinut            | Y       | Y          | Y       | Y       | Y           |          |
-| COSS              | Y       |            |         |         | Y           |          |
-| Cpdax             | Y       |            |         |         | Y           |          |
-| CredoEx           | Y       |            |         |         | Y           |          |
-| Crex24            | Y       | Y          | Y       |         | Y           |          |
-| CRXZone           | Y       | Y          | Y       |         | Y           |          |
-| Cryptex           | Y       | Y          | Y       |         | User-Defined|          |
-| CryptoBridge      | Y       |            |         |         | Y           |          |
-| CryptoHub         | Y       | N          | N       |         | Y           |          |
-| Cryptobulls       | Y       | N          | N       |         | Y           |          |
-| Cryptopia         | Y       | Y          | Y       |         | Y           |          |
-| Cybex             | Y       | Y          | Y       |         | Y           |          |
-| Ddex              | Y       |            |         |         | Y           |          |
-| Dsx               | Y       | Y          | Y       |         | Y           |          |
-| Ercdex            | Y       | Y          |         |         | Y           |          |
-| EtherDelta        | Y       |            |         |         | Y           |          |
-| Ethfinex          | Y       | Y          | Y       |         | Y           |          |
-| Exmo              | Y       | Y          | Y       |         | Y           |          |
-| Exrates           | Y       | N          | N       |         | Y           |          |
-| Extstock          | Y       | Y          | Y       |         | Y           |          |
-| Exx               | Y       | Y          | Y       |         | Y           |          |
-| F1cx              | Y       | Y          | Y       |         | Y           |          |
-| Fcoin             | Y       | Y          | Y       |         | Y           | Y        |
-| Fex               | Y       | N          | N       |         | Y           |          |
-| Fisco             | Y       | Y          | Y       |         | Y           |          |
-| Forkdelta         | Y       | N          | N       |         | Y           |          |
-| Freiexchange      | Y       | Y          |         |         | User-Defined|          |
-| Gate              | Y       | Y          | Y       |         | Y           | Y        |
-| Gatecoin          | Y       |            |         |         | Y           |          |
-| GDAX              | Y       |            |         |         | Y           |          |
-| Gemini            | Y       | Y          | Y       |         | Y           |          |
-| GetBTC            | Y       | Y          | Y       |         | User-Defined|          |
-| GOPAX             | Y       | Y          | Y       |         | Y           |          |
-| Graviex           | Y       | N          | N       |         | Y           |          |
-| Hadax             | Y       | N          | N       |         | Y           |          |
-| HitBTC            | Y       |            |         |         | Y           |          |
-| Hksy              | Y       |            | Y       |         | User-Defined|          |
-| Hotbit            | Y       | N          | N       |         | Y           |          |
-| Huobi             | Y       |            |         |         | Y           | Y        |
-| Idax              | Y       | N          | N       |         | Y           |          |
-| Idcm              | Y       |            |         |         | Y           |          |
-| Idex              | Y       | Unstable   | Y       |         | Y           |          |
-| InfinityCoin      | Y       |            |         |         | Y           |          |
-| Itbit             | Y       | Y          | Y       |         | User-Defined|          |
-| Jex               | Y       | N          | N       |         | Y           |          |
-| Joyso             | Y       | Y          |         |         | Y           |          |
-| Jubi              | Y       |            |         |         | Y           |          |
-| KKex              | Y       | Y          | Y       |         | Y           |          |
-| Kkcoin            | Y       | Y          | Y       |         | Y           |          |
-| Koinex            | Y       |            |         |         | Y           |          |
-| Koinok            | Y       |            |         |         | Y           |          |
-| Korbit            | Y       |            |         |         | User-Defined|          |
-| Kraken            | Y       |            |         |         | Y           |          |
-| Kryptono          | Y       | Y          | Y       |         | User-Defined|          |
-| Kucoin            | Y       | Y          | Y       |         | Y           |          |
-| Kuna              | Y       | Y          | Y       |         | User-Defined|          |
-| KyberNetwork      | Y       | N          | N       |         | Y           |          |
-| LakeBTC           | Y       |            |         |         | Y           |          |
-| Latoken           | Y       |            |         |         | Y           |          |
-| Lbank             | Y       | Y          | Y       |         | Y           |          |
-| Liqui             | Y       |            |         |         | Y           |          |
-| LiteBit.eu        | Y       |            |         |         | Y           |          |
-| Livecoin          | Y       |            |         |         | Y           |          |
-| LocalBitcoins     | Y       | Y          | Y       |         | Y           |          |
-| Luno              | Y       |            |         |         | Y           |          |
-| Lykke             | Y       | Y          | N       |         | Y           |          |
-| MercadoBitcoin    | Y       |            |         |         | User-Defined|          |
-| Mercatox          | Y       | N          | N       | N       | Y           |          |
-| Myspeedtrade      | Y       | Y          |         |         | Y           |          |
-| Nanex             | Y       | N          | N       | N       | Y           |          |
-| Nebula            | Y       | N          | Y       |         | Y           |          |
-| Neraex            | Y       | Y          | Y       |         | Y           |          |
-| Ninecoin          | Y       |            |         |         | Y           |          |
-| NLexch            | Y       |            |         |         | Y           |          |
-| Novadex           | Y       | N          | N       |         | Y           |          |
-| Nova Exchange     | Y       |            |         |         | Y           |          |
-| OasisDEX          | Y       |            |         |         | Y           |          |
-| Octaex            | Y       | Y          | Y       |         | Y           |          |
-| OKCoin            | Y       |            |         |         | User-Defined|          |
-| OKEx              | Y       | Y          | Y       |         | Y           |          |
-| OmniTrade         | Y       | Y          | Y       | Y       | Y           |          |
-| Ooobtc            | Y       | Y          | Y       |         | Y           |          |
-| Openledger        | Y       | Y          | Y       |         | Y           |          |
-| OrderBook         | Y       | Y          | Y       |         | Y           |          |
-| Ore Bz            | Y       | Y          | Y       |         | Y           |          |
-| Paribu            | Y       |            |         |         | Y           |          |
-| Paymium           | Y       | Y          | Y       |         | User-Defined|          |
-| Poloniex          | Y       |            |         |         | Y           |          |
-| QBTC              | Y       | Y          | Y       |         | Y           |          |
-| Qryptos           | Y       |            |         |         | Y           |          |
-| QuadrigaCX        | Y       |            |         |         | User-Defined|          |
-| Quoine            | Y       |            |         |         | Y           |          |
-| RadarRelay        | Y       |            |         |         | Y           |          |
-| RightBTC          | Y       | Y          | Y       |         | Y           |          |
-| SafeTrade         | Y       | N          | N       |         | Y           |          |
-| Sigen             | Y       |            |         |         | Y           |          |
-| Simex             | Y       | N          | N       |         | Y           |          |
-| Singularx         | Y       | N          | N       |         | Y           |          |
-| Sistemkoin        | Y       |            |         |         | Y           |          |
-| SouthXchange      | Y       | Y          | Y       |         | Y           |          |
-| Stocks Exchange   | Y       |            |         |         | Y           |          |
-| Switcheo          | Y       | N          | N       |         | Y           |          |
-| Syex              | Y       | N          | N       |         | Y           |          |
-| SZZC              | Y       |            |         |         | Y           |          |
-| Tdax              | Y       | N          | Y       |         | Y           |          |
-| The Rock Trading  | Y       |            |         |         | Y           |          |
-| The Token Store   | Y       | Y          | Y       |         | Y           |          |
-| Tidex             | Y       |            |         |         | Y           |          |
-| Tokenjar          | Y       |            |         |         | Y           |          |
-| Tokenomy          | Y       | Y          | Y       |         | Y           |          |
-| Topbtc            | Y       | N          | N       |         | Y           |          |
-| TradeOgre         | Y       | Y          | Y       |         | Y           |          |
-| Trade Satoshi     | Y       |            |         |         | Y           |          |
-| Trade.mn          | Y       | Y          | Y       |         | Y           |          |
-| TrustDex **       | Y       |            |         |         | Y           |          |
-| TuxExchange       | Y       |            |         |         | Y           |          |
-| Upbit             | Y       | Y          | Y       |         | Y           |          |
-| Unocoin           |         |            |         |         |             |          |
-| Vertpig           | Y       | Y          | N       |         | Y           |          |
-| Viabtc            | Y       |            |         |         | User-Defined|          |
-| Waves             | Y       | N          | Y       |         | Y           |          |
-| Wcx               | Y       | Y          | Y       |         | Y           |          |
-| Wex               | Y       | Y          | Y       |         | Y           |          |
-| Yobit             | Y       |            |         |         | Y           |          |
-| Yuanbao           | Y       |            |         |         | User-Defined|          |
-| Yunbi             | Y       |            |         |         | Y           |          |
-| Zaif              | Y       | Y          | Y       |         | Y           |          |
-| ZB                | Y       | Y          | Y       |         | Y           |          |
-| Zebpay            | Y       |            |         |         | Y           |          |
+| Exchange          | Ticker  | Order Book | Trade   | Account | Market List | Pair URL | slug              |
+| ----------------- | ------- | ---------- | ------- | ------- | ----------- |----------|-------------------|
+| Abcc              | Y       | N          | N       |         | Y           |          | abcc              |
+| Abucoins          | Y       | Y          | Y       |         | Y           |          | abucoins          |
+| ACX               | Y       | Y          | Y       |         | Y           |          | acx               |
+| AEX               | Y       | Y          | Y       |         | Y           |          | aex               |
+| Allcoin           | Y       | Y          |         |         | User-Defined|          | allcoin           |
+| Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |
+| ANX               | Y       |            |         |         | User-Defined|          | anx               |
+| Bancor            | Y       | N          | N       |         | Y           |          | bancor            |
+| Bcex              | Y       | Y          | Y       |         | Y           |          | bcex              |
+| Bibox             | Y       | Y          | Y       |         | Y           |          | bibox             |
+| BigONE            | Y       | Y          | Y       |         | Y           |          | bigone            |
+| Bilaxy            | Y       | Y          | Y       |         | Y           |          | bilaxy            |
+| Binance           | Y       | Y          |         |         | Y           | Y        | binance           |
+| Bit2C             | Y       | Y          | Y       |         | User-Defined|          | bit2c             |
+| Bit-Z             | Y       |            |         |         | Y           |          | bit_z             |
+| Bitbank           | Y       | Y          | Y       |         | User-Defined|          | bitbank           |
+| Bitbay            | Y       |            |         |         | User-Defined|          | bitbay            |
+| BitBNS            | Y       |            |         |         | Y           |          | bitbns            |
+| Bitbox            | Y       | Y          | Y       |         | Y           |          | bitbox            |
+| Bitcoin Indonesia | Y       |            |         |         | User-Defined|          | bitcoin_indonesia |
+| Bitconnect        | Y       |            |         |         | Y           |          | bitconnect        |
+| Bitebtc           | Y       | Y          | Y       |         | Y           |          | bitebtc           |
+| Bitfinex          | Y       |            |         |         | Y           |          | bitfinex          |
+| Bitflyer          | Y       |            |         |         | Y           |          | bitflyer          |
+| Bitforex          | Y       | N          | N       |         | Y           |          | bitforex          |
+| Bithash           | Y       | Y          | Y       |         | Y           |          | bithash           |
+| Bithumb           | Y       |            |         |         | Y           |          | bithumb           |
+| Bitibu            | Y       | Y          | Y       |         | Y           |          | bitibu            |
+| Bitkonan          | Y       |            |         |         | User-Defined|          | bitkonan          |
+| Bitmex            | Y       | Y          | Y       |         | Y           |          | bitmex            |
+| Bitpaction        | Y       | Y          | Y       |         | Y           |          | bitpaction        |
+| Bits Blockchain   | Y       | Y          |         |         | Y           |          | bits_blockchain   |
+| Bitso             | Y       |            |         |         | Y           |          | bitso             |
+| Bitstamp          | Y       | Y          | Y       |         | User-Defined|          | bitstamp          |
+| Bittrex           | Y       |            |         |         | Y           |          | bittrex           |
+| Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |
+| Braziliex         | Y       | Y          | Y       |         | Y           |          | braziliex         |
+| BTC38             |         |            |         |         |             |          |                   |
+| BTC-e             |         |            |         |         |             |          |                   |
+| BtcAlpha          | Y       | Y          | Y       |         | Y           |          | btc_alpha         |
+| BtcTradeUa        | Y       | Y          | Y       |         | Y           |          | btc_trade_ua      |
+| BTCBox            | Y       | Y          |         |         | User-Defined|          | btcbox            |
+| BTCC              | Y       |            |         |         | User-Defined|          | btcc              |
+| BTCChina          |         |            |         |         |             |          |                   |
+| Btcsquare         | Y       | Y          | Unstable|         | Y           |          | btcsquare         |
+| BTER              | Y       |            |         |         | Y           |          | bter              |
+| Buyucoin          | Y       | N          | N       |         | Y           |          | buyucoin          |
+| BX Thailand       | Y       |            |         |         | Y           |          | bx_thailand       |
+| C2CX              | Y       | Y          | N       |         | Y           |          | c2cx              |
+| CPatex            | Y       | Y          | Y       |         | Y           |          | c_patex           |
+| CCex              | Y       |            |         |         | Y           |          | ccex              |
+| Cex               | Y       | Y          | Y       |         | Y           |          | cex               |
+| Cfinex            | Y       | Y          | Y       |         | Y           |          | cfinex            |
+| CHBTC             | Y       |            |         |         | User-Defined|          | chbtc             |
+| Cobinhood         | Y       | Y          |         |         | Y           |          | cobinhood         |
+| Coin2001          | Y       | Y          | Y       |         | Y           |          | coin2001          |
+| CoinEgg           | Y       | Y          | Y       |         | User-Defined|          | coin_egg          |
+| CoinExchange      | Y       |            |         |         | Y           |          | coin_exchange     |
+| Coinbene          | Y       | Y          | Y       |         | Y           |          | coinbene          |
+| Coincheck         | Y       |            |         |         | User-Defined|          | coincheck         |
+| Coinex            | Y       | Y          | Y       |         | Y           |          | coinex            |
+| Coinfalcon        | Y       | Y          | Y       |         | Y           |          | coinfalcon        |
+| Coinfield         | Y       | N          | N       |         | Y           |          | coinfield         |
+| Coingi            | Y       | Y          | Y       |         | Y           |          | coingi            |
+| Coinhouse         | Y       |            |         |         | Y           |          | coinhouse         |
+| CoinJar           | Y       | Y          | Y       |         | Y           |          | coinjar           |
+| Coinmate          | Y       | Y          |         |         | User-Defined|          | coinmate          |
+| Coinnest          | Y       | Y          | Y       |         | User-Defined|          | coinnest          |
+| Coinnox           | Y       | Y          | Y       |         | Y           |          | coinnox           |
+| Coinone           | Y       | Y          | Y       |         | Y           |          | coinone           |
+| Coinrail          | Y       | Y          | Y       |         | Y           |          | coinrail          |
+| Coinroom          | Y       |            |         |         | Y           |          | coinroom          |
+| CoinsMarkets      | Y       |            |         |         | Y           |          | coin_markets      |
+| Coinstock         | Y       | Y          | Y       |         | Y           |          | coinstock         |
+| Coinsuper         | Y       |            |         |         | Y           |          | coinsuper         |
+| Cointiger         | Y       | Y          | Y       |         | Y           |          | cointiger         |
+| Coinut            | Y       | Y          | Y       | Y       | Y           |          | coinut            |
+| COSS              | Y       |            |         |         | Y           |          | coss              |
+| Cpdax             | Y       | Y          | Y       |         | Y           |          | cpdax             |
+| CredoEx           | Y       |            |         |         | Y           |          | credoex           |
+| Crex24            | Y       | Y          | Y       |         | Y           |          | crex24            |
+| CRXZone           | Y       | Y          | Y       |         | Y           |          | crxzone           |
+| Cryptagio         | Y       | Y          | Y       |         | Y           | Y        | cryptagio         |
+| Cryptex           | Y       | Y          | Y       |         | User-Defined|          | cryptex           |
+| CryptoBridge      | Y       |            |         |         | Y           |          | crypto_bridge     |
+| CryptoHub         | Y       | N          | N       |         | Y           |          | crypto_hub        |
+| Cryptobulls       | Y       | N          | N       |         | Y           |          | cryptobulls       |
+| Cryptopia         | Y       | Y          | Y       |         | Y           |          | cryptopia         |
+| Cybex             | Y       | Y          | Y       |         | Y           |          | cybex             |
+| Ddex              | Y       |            |         |         | Y           |          | ddex              |
+| Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |
+| Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |
+| EtherDelta        | Y       |            |         |         | Y           |          | ether_delta       |
+| Ethfinex          | Y       | Y          | Y       |         | Y           |          | ethfinex          |
+| Exmo              | Y       | Y          | Y       |         | Y           |          | exmo              |
+| Exrates           | Y       | N          | N       |         | Y           |          | exrates           |
+| Extstock          | Y       | Y          | Y       |         | Y           |          | extstock          |
+| Exx               | Y       | Y          | Y       |         | Y           |          | exx               |
+| F1cx              | Y       | Y          | Y       |         | Y           |          | f1cx              |
+| Fcoin             | Y       | Y          | Y       |         | Y           | Y        | fcoin             |
+| Fex               | Y       | N          | N       |         | Y           |          | fex               |
+| Fisco             | Y       | Y          | Y       |         | Y           |          | fisco             |
+| Forkdelta         | Y       | N          | N       |         | Y           |          | forkdelta         |
+| Freiexchange      | Y       | Y          |         |         | User-Defined|          | freiexchange      |
+| Gate              | Y       | Y          | Y       |         | Y           | Y        | gate              |
+| Gatecoin          | Y       |            |         |         | Y           |          | gatecoin          |
+| GDAX              | Y       |            |         |         | Y           |          | gdax              |
+| Gemini            | Y       | Y          | Y       |         | Y           |          | gemini            |
+| GetBTC            | Y       | Y          | Y       |         | User-Defined|          | getbtc            |
+| GOPAX             | Y       | Y          | Y       |         | Y           |          | gopax             |
+| Graviex           | Y       | N          | N       |         | Y           |          | graviex           |
+| Hadax             | Y       | N          | N       |         | Y           |          | hadax             |
+| Hikenex           | Y       | N          | N       |         | Y           | N        | hikenex           |
+| HitBTC            | Y       |            |         |         | Y           |          | hitbtc            |
+| Hotbit            | Y       | N          | N       |         | Y           |          | hotbit            |
+| Huobi             | Y       |            |         |         | Y           | Y        | huobi             |
+| Idax              | Y       | N          | N       |         | Y           |          | idax              |
+| Idcm              | Y       |            |         |         | Y           |          | idcm              |
+| Idex              | Y       | Unstable   | Y       |         | Y           |          | idex              |
+| InfinityCoin      | Y       |            |         |         | Y           |          | infinity_coin     |
+| Itbit             | Y       | Y          | Y       |         | User-Defined|          | itbit             |
+| Jex               | Y       | N          | N       |         | Y           |          | jex               |
+| Joyso             | Y       | Y          |         |         | Y           |          | joyso             |
+| Jubi              | Y       |            |         |         | Y           |          | jubi              |
+| KKex              | Y       | Y          | Y       |         | Y           |          | k_kex             |
+| Kkcoin            | Y       | Y          | Y       |         | Y           |          | kkcoin            |
+| Koinex            | Y       |            |         |         | Y           |          | koinex            |
+| Koinok            | Y       |            |         |         | Y           |          | koinok            |
+| Korbit            | Y       |            |         |         | User-Defined|          | korbit            |
+| Kraken            | Y       |            |         |         | Y           |          | kraken            |
+| Kryptono          | Y       | Y          | Y       |         | User-Defined|          | kryptono          |
+| Kucoin            | Y       | Y          | Y       |         | Y           |          | kucoin            |
+| Kuna              | Y       | Y          | Y       |         | User-Defined|          | kuna              |
+| KyberNetwork      | Y       | N          | N       |         | Y           |          | kyber_network     |
+| LakeBTC           | Y       |            |         |         | Y           |          | lakebtc           |
+| Latoken           | Y       |            |         |         | Y           |          | latoken           |
+| Lbank             | Y       | Y          | Y       |         | Y           |          | lbank             |
+| Liqui             | Y       |            |         |         | Y           |          | liqui             |
+| LiteBit.eu        | Y       |            |         |         | Y           |          | litebiteu         |
+| Livecoin          | Y       |            |         |         | Y           |          | livecoin          |
+| Luno              | Y       |            |         |         | Y           |          | luno              |
+| Lykke             | Y       | Y          | N       |         | Y           |          | lykke             |
+| MercadoBitcoin    | Y       |            |         |         | User-Defined|          | mercado_bitcoin   |
+| Mercatox          | Y       | N          | N       | N       | Y           |          | mercatox          |
+| Myspeedtrade      | Y       | Y          |         |         | Y           |          | myspeedtrade      |
+| Nanex             | Y       | N          | N       | N       | Y           |          | nanex             |
+| Nebula            | Y       | N          | Y       |         | Y           |          | nebula            |
+| Neraex            | Y       | Y          | Y       |         | Y           |          | neraex            |
+| Ninecoin          | Y       |            |         |         | Y           |          | ninecoin          |
+| NLexch            | Y       |            |         |         | Y           |          | nlexch            |
+| Novadex           | Y       | N          | N       |         | Y           |          | novadex           |
+| Nova Exchange     | Y       |            |         |         | Y           |          | novaexchange      |
+| OasisDEX          | Y       |            |         |         | Y           |          | oasisdex          |
+| Octaex            | Y       | Y          | Y       |         | Y           |          | octaex            |
+| OKCoin            | Y       |            |         |         | User-Defined|          | okcoin            |
+| OKEx              | Y       | Y          | Y       |         | Y           |          | okex              |
+| OmniTrade         | Y       | Y          | Y       | Y       | Y           |          | omnitrade         |
+| Ooobtc            | Y       | Y          | Y       |         | Y           |          | ooobtc            |
+| Openledger        | Y       | Y          | Y       |         | Y           |          | openledger        |
+| OrderBook         | Y       | Y          | Y       |         | Y           |          | orderbook         |
+| Ore Bz            | Y       | Y          | Y       |         | Y           |          | ore_bz            |
+| OTCBTC            | Y       | Y          | Y       |         | Y           |          | otcbtc            |
+| Paribu            | Y       |            |         |         | Y           |          | paribu            |
+| Paymium           | Y       | Y          | Y       |         | User-Defined|          | paymium           |
+| Poloniex          | Y       |            |         |         | Y           |          | poloniex          |
+| QBTC              | Y       | Y          | Y       |         | Y           |          | qbtc              |
+| Qryptos           | Y       |            |         |         | Y           |          | qryptos           |
+| QuadrigaCX        | Y       |            |         |         | User-Defined|          | quadrigacx        |
+| Quoine            | Y       |            |         |         | Y           |          | quoine            |
+| RadarRelay        | Y       |            |         |         | Y           |          | radar_relay       |
+| RightBTC          | Y       | Y          | Y       |         | Y           |          | rightbtc          |
+| SafeTrade         | Y       | N          | N       |         | Y           |          | safe_trade        |
+| Sigen             | Y       |            |         |         | Y           |          | sigen             |
+| Simex             | Y       | N          | N       |         | Y           |          | simex             |
+| Singularx         | Y       | N          | N       |         | Y           |          | singularx         |
+| Sistemkoin        | Y       |            |         |         | Y           |          | sistemkoin        |
+| SouthXchange      | Y       | Y          | Y       |         | Y           |          | south_xchange     |
+| Stocks Exchange   | Y       |            |         |         | Y           |          | stocks_exchange   |
+| Switcheo          | Y       | N          | N       |         | Y           |          | switcheo          |
+| Syex              | Y       | N          | N       |         | Y           |          | syex              |
+| SZZC              | Y       |            |         |         | Y           |          | szzc              |
+| Tdax              | Y       | N          | Y       |         | Y           |          | tdax              |
+| The Rock Trading  | Y       |            |         |         | Y           |          | therocktrading    |
+| The Token Store   | Y       | Y          | Y       |         | Y           |          | thetokenstore     |
+| Tidex             | Y       |            |         |         | Y           |          | tidex             |
+| Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |
+| Tokenomy          | Y       | Y          | Y       |         | Y           |          | tokenomy          |
+| Topbtc            | Y       | N          | N       |         | Y           |          | topbtc            |
+| TradeOgre         | Y       | Y          | Y       |         | Y           |          | trade_ogre        |
+| Trade Satoshi     | Y       |            |         |         | Y           |          | trade_satoshi     |
+| Trade.mn          | Y       | Y          | Y       |         | Y           |          | trademn           |
+| TrocaNinja        | Y       | N          | N       |         | Y           |          | troca_ninja       |
+| TrustDex **       | Y       |            |         |         | Y           |          | trust_dex         |
+| TuxExchange       | Y       |            |         |         | Y           |          | tux_exchange      |
+| Unocoin           |         |            |         |         |             |          | unocoin           |
+| Upbit             | Y       | Y          | Y       |         | Y           |          | upbit             |
+| Vertpig           | Y       | Y          | N       |         | Y           |          | vertpig           |
+| Viabtc            | Y       |            |         |         | User-Defined|          | viabtc            |
+| Waves             | Y       | N          | Y       |         | Y           |          | waves             |
+| Wcx               | Y       | Y          | Y       |         | Y           |          | wcx               |
+| Wex               | Y       | Y          | Y       |         | Y           |          | wex               |
+| Yobit             | Y       |            |         |         | Y           |          | yobit             |
+| Yuanbao           | Y       |            |         |         | User-Defined|          | yuanbao           |
+| Yunbi             | Y       |            |         |         | Y           |          | yunbi             |
+| Zaif              | Y       | Y          | Y       |         | Y           |          | zaif              |
+| ZB                | Y       | Y          | Y       |         | Y           |          | zb                |
+| Zebpay            | Y       |            |         |         | Y           |          | zebpay
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 *** User-Defined requires pair id

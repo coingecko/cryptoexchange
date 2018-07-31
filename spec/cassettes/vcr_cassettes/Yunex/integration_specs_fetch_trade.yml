@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://a.yunex.io/api/order/trade/recent?count=10&symbol=btc_usdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - a.yunex.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - YunEX
+      Date:
+      - Mon, 30 Jul 2018 09:27:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1458'
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - x-requested-with,content-type,Tradepwd,token,-xx-device
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"data":{"list":[{"pair_id":1,"trade_id":"T180730bbc12f87896296297","trade_by":1,"timestamp":1532942662617757440,"price":"8138.2209","volume":"0.0061","id":75429},{"pair_id":1,"trade_id":"T180730266ed3faa7cfa726d","trade_by":2,"timestamp":1532931398040612096,"price":"8158.2981","volume":"0.2","id":75426},{"pair_id":1,"trade_id":"T18073062a30e5bc98687891","trade_by":1,"timestamp":1532931379246060288,"price":"8158.4617","volume":"0.2","id":75423},{"pair_id":1,"trade_id":"T1807308a21236a72bc5e933","trade_by":2,"timestamp":1532931315456549376,"price":"8158.5079","volume":"0.2","id":75420},{"pair_id":1,"trade_id":"T180730110ca5907ee940f5e","trade_by":1,"timestamp":1532931291259193088,"price":"8158.5744","volume":"0.2","id":75417},{"pair_id":1,"trade_id":"T18073022337975a9db3e33c","trade_by":2,"timestamp":1532931243841397760,"price":"8158.684","volume":"0.2","id":75414},{"pair_id":1,"trade_id":"T180730216eac6c19e6a0cde","trade_by":1,"timestamp":1532931226167622144,"price":"8158.7357","volume":"0.2","id":75411},{"pair_id":1,"trade_id":"T1807309e99cf35533585dea","trade_by":1,"timestamp":1532931203193268992,"price":"8158.8891","volume":"0.2","id":75408},{"pair_id":1,"trade_id":"T1807302bb8b2013fb892bf6","trade_by":2,"timestamp":1532930323337146368,"price":"8161.0431","volume":"0.2","id":75405},{"pair_id":1,"trade_id":"T18073087a2e2eead3174806","trade_by":2,"timestamp":1532930295084872704,"price":"8161.1229","volume":"0.2","id":75402}]},"ok":1}'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2018 09:27:51 GMT
+recorded_with: VCR 4.0.0
