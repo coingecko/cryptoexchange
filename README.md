@@ -136,6 +136,7 @@ Or install it yourself as:
 | GOPAX             | Y       | Y          | Y       |         | Y           |          | gopax             |
 | Graviex           | Y       | N          | N       |         | Y           |          | graviex           |
 | Hadax             | Y       | N          | N       |         | Y           |          | hadax             |
+| Hikenex           | Y       | N          | N       |         | Y           | N        | hikenex           |
 | HitBTC            | Y       |            |         |         | Y           |          | hitbtc            |
 | Hotbit            | Y       | N          | N       |         | Y           |          | hotbit            |
 | Huobi             | Y       |            |         |         | Y           | Y        | huobi             |
