@@ -187,6 +187,8 @@ Or install it yourself as:
 | Ore Bz            | Y       | Y          | Y       |         | Y           |          | ore_bz            |
 | OTCBTC            | Y       | Y          | Y       |         | Y           |          | otcbtc            |
 | Paribu            | Y       |            |         |         | Y           |          | paribu            |
+| Paro Exchange     | Y       |            |         |         | Y           |          | paroexchange   
+|
 | Paymium           | Y       | Y          | Y       |         | User-Defined|          | paymium           |
 | Poloniex          | Y       |            |         |         | Y           |          | poloniex          |
 | QBTC              | Y       | Y          | Y       |         | Y           |          | qbtc              |
