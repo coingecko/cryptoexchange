@@ -77,6 +77,7 @@ Or install it yourself as:
 | CCex              | Y       |            |         |         | Y           |          | ccex              |
 | Cex               | Y       | Y          | Y       |         | Y           |          | cex               |
 | Cfinex            | Y       | Y          | Y       |         | Y           |          | cfinex            |
+| Chaoex            | Y       | Y          | Y       |         | Y           | N        | chaoex            |
 | CHBTC             | Y       |            |         |         | User-Defined|          | chbtc             |
 | Cobinhood         | Y       | Y          |         |         | Y           |          | cobinhood         |
 | Coin2001          | Y       | Y          | Y       |         | Y           |          | coin2001          |
