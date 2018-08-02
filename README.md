@@ -80,6 +80,7 @@ Or install it yourself as:
 | CHBTC             | Y       |            |         |         | User-Defined|          | chbtc             |
 | Cobinhood         | Y       | Y          |         |         | Y           |          | cobinhood         |
 | Coin2001          | Y       | Y          | Y       |         | Y           |          | coin2001          |
+| Coinbe            | Y       |            |         |         | Y           |          | coinbe            |
 | CoinEgg           | Y       | Y          | Y       |         | User-Defined|          | coin_egg          |
 | CoinExchange      | Y       |            |         |         | Y           |          | coin_exchange     |
 | Coinbene          | Y       | Y          | Y       |         | Y           |          | coinbene          |
