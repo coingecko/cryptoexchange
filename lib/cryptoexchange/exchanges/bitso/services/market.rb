@@ -14,7 +14,9 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitso::Market::API_URL}/ticker?book=#{market_pair.base}_#{market_pair.target}"
+          base = market_pair.base.downcase
+          target = market_pair.target.downcase
+          "#{Cryptoexchange::Exchanges::Bitso::Market::API_URL}/ticker?book=#{base}_#{target}"
         end
 
         def adapt(output, market_pair)

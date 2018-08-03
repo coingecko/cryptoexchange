@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://credoex.com/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - credoex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 16 Jul 2018 00:03:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '960'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d72620e944c9905ae99238576e015d9361531699402; expires=Tue, 16-Jul-19
+        00:03:22 GMT; path=/; domain=.credoex.com; HttpOnly
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - rpcgppd39r00vdj21nekvmhn7e6fe62a
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      Access-Control-Allow-Origin:
+      - https://credoex.com https://www.credoex.com https://beta.credoex.com https://credoex.ngrok.io
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 43b0348f3ed7a978-SIN
+    body:
+      encoding: UTF-8
+      string: '{"ZRX-CREDO":{"volume":171.04048018410796,"open":24.2,"low":0.0,"high":50.0,"close":32.0},"REP-CREDO":{"volume":2.9553647882909884,"open":816.4455841968334,"low":0.0,"high":2097.731483156036,"close":0.0},"GNT-CREDO":{"volume":398.5386962112496,"open":0.0,"low":0.0,"high":22.0,"close":0.0},"DAI-CREDO":{"volume":137.95308025018468,"open":28.273,"low":0.0,"high":34.0,"close":0.0},"CVC-CREDO":{"volume":694.5059766695815,"open":3.97164312,"low":3.5,"high":5.75,"close":5.25},"CREDO-USD":{"volume":0.0,"open":0.0,"low":0.0,"high":0.0,"close":0.0},"CREDO-TUSD":{"volume":2547.893358408309,"open":0.02686108,"low":0.02686106,"high":0.039,"close":0.03899999},"CREDO-ETH":{"volume":109959.698928826,"open":7.36225e-5,"low":5.6279126e-5,"high":8.588e-5,"close":8.495e-5},"BNT-CREDO":{"volume":67.11470419491715,"open":81.0,"low":40.0,"high":83.0,"close":62.148988},"BAT-CREDO":{"volume":587.5677187695157,"open":7.8617802331267645,"low":0.0,"high":10.98,"close":7.9}}'
+    http_version: 
+  recorded_at: Mon, 16 Jul 2018 00:03:22 GMT
+recorded_with: VCR 4.0.0

@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Graviex
-    class Market 
+    class Market < Cryptoexchange::Models::Market
       NAME = 'graviex'
       API_URL = 'https://graviex.net/api/v2'
     end

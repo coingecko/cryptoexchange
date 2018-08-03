@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Szzc
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'szzc'
       API_URL = 'https://szzc.com/api/public'
     end

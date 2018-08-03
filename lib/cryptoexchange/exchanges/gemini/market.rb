@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Gemini
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'gemini'
       API_URL = 'https://api.gemini.com/v1'
     end

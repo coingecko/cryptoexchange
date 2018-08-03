@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitbox.me/trade/public/v2/outpost/orderbook?currencyPair=BTC.XRP&orderCount=200
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitbox.me
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.2
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Wed, 18 Jul 2018 07:20:33 GMT
+      Content-Length:
+      - '603'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"responseCode":"0000","errorMessage":null,"errorMessageDetail":null,"errorAction":null,"responseData":{"ASK":[{"a":0.1,"b":170.0},{"a":1.7E-4,"b":200.0},{"a":1.6E-4,"b":100.0},{"a":1.5E-4,"b":100.0},{"a":1.4E-4,"b":100.0},{"a":1.3E-4,"b":100.0},{"a":1.2E-4,"b":100.0},{"a":1.1E-4,"b":100.0},{"a":1.0E-4,"b":100.0},{"a":9.0E-5,"b":100.0},{"a":7.5E-5,"b":300.0},{"a":7.4E-5,"b":200.0},{"a":7.114E-5,"b":499.0},{"a":7.1E-5,"b":99.0},{"a":7.0E-5,"b":51.0}],"BID":[{"a":6.9E-5,"b":102.0},{"a":6.853E-5,"b":51.0},{"a":6.848E-5,"b":51.0},{"a":6.8E-5,"b":200.0},{"a":6.4E-5,"b":100.0},{"a":6.3E-5,"b":300.0}]}}'
+    http_version: 
+  recorded_at: Wed, 18 Jul 2018 07:20:33 GMT
+recorded_with: VCR 4.0.0
