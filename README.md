@@ -206,6 +206,7 @@ Or install it yourself as:
 | Syex              | Y       | N          | N       |         | Y           |          | syex              |
 | SZZC              | Y       |            |         |         | Y           |          | szzc              |
 | Tdax              | Y       | N          | Y       |         | Y           |          | tdax              |
+| TheCoin           | Y       | Y          | Y       |         | Y           |          | thecoin           |
 | The Rock Trading  | Y       |            |         |         | Y           |          | therocktrading    |
 | The Token Store   | Y       | Y          | Y       |         | Y           |          | thetokenstore     |
 | Tidex             | Y       |            |         |         | Y           |          | tidex             |

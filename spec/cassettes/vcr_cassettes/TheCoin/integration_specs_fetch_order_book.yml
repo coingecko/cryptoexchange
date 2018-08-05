@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://trade.thecoin.pw/api/v1/public/getorderbook?market=BTC-LEA&type=both
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - trade.thecoin.pw
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 05 Aug 2018 16:26:17 GMT
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"message":"","result":{"buy":[],"sell":[{"Quantity":2500,"Rate":"0.00000003"},{"Quantity":2500,"Rate":"0.00000004"},{"Quantity":4000,"Rate":"0.00000005"},{"Quantity":2896,"Rate":"0.00000006"},{"Quantity":7094,"Rate":"0.00000007"}]}}'
+    http_version: 
+  recorded_at: Sun, 05 Aug 2018 16:26:44 GMT
+recorded_with: VCR 4.0.0

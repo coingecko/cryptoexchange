@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://trade.thecoin.pw/api/v1/public/getmarkethistory?market=BTC-LEA
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - trade.thecoin.pw
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 05 Aug 2018 16:31:27 GMT
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"message":"","result":[{"Id":14,"TimeStamp":"2018-07-20T16:06:03.420","Quantity":4000,"Price":5e-8,"Total":0.00019999999999999998,"FillType":"FILL","OrderType":"SELL"}]}'
+    http_version: 
+  recorded_at: Sun, 05 Aug 2018 16:31:53 GMT
+recorded_with: VCR 4.0.0
