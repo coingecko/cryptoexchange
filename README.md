@@ -111,6 +111,7 @@ Or install it yourself as:
 | CryptoBridge      | Y       |            |         |         | Y           |          | crypto_bridge     |
 | CryptoHub         | Y       | N          | N       |         | Y           |          | crypto_hub        |
 | Cryptobulls       | Y       | N          | N       |         | Y           |          | cryptobulls       |
+| Cryptonit         | Y       | Y          | Y       |         | Y           | Y        | cryptonit         |
 | Cryptopia         | Y       | Y          | Y       |         | Y           |          | cryptopia         |
 | Cybex             | Y       | Y          | Y       |         | Y           |          | cybex             |
 | Ddex              | Y       |            |         |         | Y           |          | ddex              |
