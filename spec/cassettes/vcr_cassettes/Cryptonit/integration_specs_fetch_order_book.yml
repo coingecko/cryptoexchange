@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cryptonit.net/api/order_book/etheur
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.cryptonit.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 05 Aug 2018 23:06:57 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8da048ee256212b66d7907d0e81948a01533510416; expires=Mon, 05-Aug-19
+        23:06:56 GMT; path=/; domain=.cryptonit.net; HttpOnly; Secure
+      Cache-Control:
+      - no-cache, private
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 445ceac7df468466-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timestamp":1533510417,"bids":[[351.64,0.5855972],[351.62,0.7928908],[351.08,1.1841544],[351.06,1.6340773],[350.87,1.8096486],[350.85,3.9339235]],"asks":[[357.09,3.92376],[357.39,2.40028],[357.53,1.05436],[357.65,1.02227],[357.9,0.99727],[358.09,0.58204999],[412,0.35923811],[444,0.20930232],[790,50],[800,0.44470887],[1500,10],[2000,10],[2999,0.18643848],[3000,10],[4000,10],[5000,10],[6000,10],[7000,10]]}'
+    http_version: 
+  recorded_at: Sun, 05 Aug 2018 23:06:57 GMT
+recorded_with: VCR 4.0.0

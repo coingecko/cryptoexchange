@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cryptonit.net/api/ticker/etheur
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.cryptonit.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 05 Aug 2018 23:06:56 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0310c8bcce26f8edd9219d30c7d9dd0e1533510415; expires=Mon, 05-Aug-19
+        23:06:55 GMT; path=/; domain=.cryptonit.net; HttpOnly; Secure
+      Cache-Control:
+      - no-cache, private
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 445ceac2fe27849c-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"high":354.52,"last":354.52,"timestamp":1533470343,"bid":357.09,"vwap":null,"volume":0.28119711,"low":354.52,"ask":351.64,"open":359}'
+    http_version: 
+  recorded_at: Sun, 05 Aug 2018 23:06:56 GMT
+recorded_with: VCR 4.0.0
