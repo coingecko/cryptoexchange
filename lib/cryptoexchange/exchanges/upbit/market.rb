@@ -1,9 +1,12 @@
 module Cryptoexchange::Exchanges
   module Upbit
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'upbit'
-      API_URL = 'https://crix-api-endpoint.upbit.com/v1/crix/candles'
-      PAIRS_URL = 'https://s3.ap-northeast-2.amazonaws.com/crix-production/crix_master'
+      API_URL = 'https://api.upbit.com/v1'
+
+      def self.trade_page_url(args={})
+        "https://upbit.com/exchange?code=CRIX.UPBIT.#{args[:base]}-#{args[:target]}"
+      end
     end
   end
 end

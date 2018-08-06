@@ -14,6 +14,11 @@ RSpec.describe 'Idcm Coin integration specs' do
     expect(pair.market).to eq 'idcm'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'idcm', base: eos_vusd_pair.base, target: eos_vusd_pair.target
+    expect(trade_page_url).to eq "https://www.idcm.io/trading/EOS_VUSD"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(eos_vusd_pair)
 

@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module Cybex
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME            = 'cybex'
       API_URL         = 'https://beijing.51nebula.com'
       USED_GATEWAY    = 'JADE'

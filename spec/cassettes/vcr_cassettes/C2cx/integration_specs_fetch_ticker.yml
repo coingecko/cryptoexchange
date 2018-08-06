@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.c2cx.com/v1/ticker/?symbol=BTC_ETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.c2cx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 19 Jul 2018 11:14:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '158'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc08f89f5b4935a55f179795e4909a1861531998865; expires=Fri, 19-Jul-19
+        11:14:25 GMT; path=/; domain=.c2cx.com; HttpOnly; Secure
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 43ccc3ad5e56314a-SIN
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"message":"success","data":{"timestamp":"1531998865","high":0.0673,"last":0.0647,"low":0.0644,"buy":0.0646,"sell":0.0648,"volume":439.9537343836}}'
+    http_version: 
+  recorded_at: Thu, 19 Jul 2018 11:14:25 GMT
+recorded_with: VCR 4.0.0

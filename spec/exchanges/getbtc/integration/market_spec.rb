@@ -14,6 +14,11 @@ RSpec.describe 'Getbtc integration specs' do
     expect(pair.market).to eq 'getbtc'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'getbtc', base: btc_usd_pair.base, target: btc_usd_pair.target
+    expect(trade_page_url).to eq "https://getbtc.org/buy-sell.php?currency=BTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_usd_pair)
 

@@ -2,21 +2,24 @@ module Cryptoexchange::Exchanges
   module Upbit
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Upbit::Market::PAIRS_URL}"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Upbit::Market::API_URL}/market/all"
 
         def fetch
-          raw_output = HTTP.use(:auto_inflate).headers("Accept-Encoding" => "gzip").get(PAIRS_URL)
-          output     = JSON.parse(raw_output)
-          output.map do |pair|
-            if pair['marketState'] == "ACTIVE"
-              Cryptoexchange::Models::MarketPair.new(
-                base:   pair["baseCurrencyCode"],
-                target: pair["quoteCurrencyCode"],
-                market: Upbit::Market::NAME)
-            else
-              nil
-            end
-          end.compact
+          output = super
+          adapt(output)
+        end
+
+        def adapt(output)
+          market_pairs = []
+          output.each do |pair|
+            target, base = pair['market'].split('-')
+            market_pairs << Cryptoexchange::Models::MarketPair.new(
+                              base: base,
+                              target: target,
+                              market: Upbit::Market::NAME
+                            )
+          end
+          market_pairs
         end
       end
     end

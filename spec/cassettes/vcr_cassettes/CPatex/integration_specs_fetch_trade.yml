@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://c-patex.com/api/v2/trades.json?market=blcbtc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - c-patex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '7640'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=63072000; includeSubDomains
+      X-Request-Id:
+      - 273b3a30-3e2c-4f19-bdda-ff241c5987f5
+      Etag:
+      - '"7848ffef564763827c5496c277c3b73c"'
+      X-Runtime:
+      - '0.032842'
+      Date:
+      - Tue, 10 Jul 2018 14:55:41 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.11
+      Server:
+      - nginx/1.12.1 + Phusion Passenger 5.1.11
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":38365,"price":"0.000002","volume":"993.3028457","funds":"0.0019866056914","market":"blcbtc","created_at":"2018-07-09T21:08:40+00:00","side":null},{"id":38160,"price":"0.00000185","volume":"202.18000464","funds":"0.000374033008584","market":"blcbtc","created_at":"2018-07-08T04:18:48+00:00","side":null},{"id":38150,"price":"0.00000198","volume":"9.36411727","funds":"0.0000185409521946","market":"blcbtc","created_at":"2018-07-07T21:25:05+00:00","side":null},{"id":38131,"price":"0.00000198","volume":"1781.40163148","funds":"0.0035271752303304","market":"blcbtc","created_at":"2018-07-07T16:21:01+00:00","side":null},{"id":38036,"price":"0.00000208","volume":"42.57368381","funds":"0.0000885532623248","market":"blcbtc","created_at":"2018-07-07T00:40:25+00:00","side":null},{"id":38002,"price":"0.00000203","volume":"0.04926108","funds":"0.0000000999999924","market":"blcbtc","created_at":"2018-07-06T13:25:01+00:00","side":null},{"id":38001,"price":"0.00000189","volume":"518.94288078","funds":"0.0009808020446742","market":"blcbtc","created_at":"2018-07-06T13:25:01+00:00","side":null},{"id":37777,"price":"0.00000198","volume":"29.68828232","funds":"0.0000587827989936","market":"blcbtc","created_at":"2018-07-04T19:43:58+00:00","side":null},{"id":37706,"price":"0.00000198","volume":"1389.33053196","funds":"0.0027508744532808","market":"blcbtc","created_at":"2018-07-04T08:44:05+00:00","side":null},{"id":37630,"price":"0.00000199","volume":"659.66562814","funds":"0.0013127345999986","market":"blcbtc","created_at":"2018-07-03T12:03:46+00:00","side":null},{"id":37539,"price":"0.00000193","volume":"390.86451536","funds":"0.0007543685146448","market":"blcbtc","created_at":"2018-07-03T02:01:48+00:00","side":null},{"id":37537,"price":"0.00000193","volume":"872.8637375","funds":"0.001684627013375","market":"blcbtc","created_at":"2018-07-03T02:01:03+00:00","side":null},{"id":37457,"price":"0.00000197","volume":"430.0","funds":"0.0008471","market":"blcbtc","created_at":"2018-07-02T13:41:44+00:00","side":null},{"id":37351,"price":"0.00000198","volume":"576.9643145","funds":"0.00114238934271","market":"blcbtc","created_at":"2018-07-01T09:08:53+00:00","side":null},{"id":37178,"price":"0.00000204","volume":"252.0","funds":"0.00051408","market":"blcbtc","created_at":"2018-06-30T19:06:36+00:00","side":null},{"id":37176,"price":"0.00000204","volume":"1000.0","funds":"0.00204","market":"blcbtc","created_at":"2018-06-30T19:05:05+00:00","side":null},{"id":37101,"price":"0.00000199","volume":"450.0","funds":"0.0008955","market":"blcbtc","created_at":"2018-06-30T13:46:40+00:00","side":null},{"id":37085,"price":"0.00000197","volume":"300.0","funds":"0.000591","market":"blcbtc","created_at":"2018-06-30T09:59:51+00:00","side":null},{"id":36968,"price":"0.0000019","volume":"2423.0355855","funds":"0.00460376761245","market":"blcbtc","created_at":"2018-06-29T16:04:13+00:00","side":null},{"id":36911,"price":"0.0000019","volume":"944.49387578","funds":"0.001794538363982","market":"blcbtc","created_at":"2018-06-29T09:05:47+00:00","side":null},{"id":36622,"price":"0.0000019","volume":"798.8","funds":"0.00151772","market":"blcbtc","created_at":"2018-06-28T13:26:42+00:00","side":null},{"id":36528,"price":"0.00000187","volume":"800.0","funds":"0.001496","market":"blcbtc","created_at":"2018-06-27T17:05:30+00:00","side":null},{"id":36527,"price":"0.00000188","volume":"800.0","funds":"0.001504","market":"blcbtc","created_at":"2018-06-27T17:05:30+00:00","side":null},{"id":36521,"price":"0.00000203","volume":"621.85032068","funds":"0.0012623561509804","market":"blcbtc","created_at":"2018-06-27T16:29:05+00:00","side":null},{"id":36478,"price":"0.00000202","volume":"204.92885113","funds":"0.0004139562792826","market":"blcbtc","created_at":"2018-06-27T12:17:28+00:00","side":null},{"id":36400,"price":"0.00000193","volume":"125.10216485","funds":"0.0002414471781605","market":"blcbtc","created_at":"2018-06-27T08:47:53+00:00","side":null},{"id":36169,"price":"0.00000195","volume":"484.104316","funds":"0.0009440034162","market":"blcbtc","created_at":"2018-06-27T01:11:42+00:00","side":null},{"id":36163,"price":"0.00000206","volume":"101.5643334","funds":"0.000209222526804","market":"blcbtc","created_at":"2018-06-27T00:36:32+00:00","side":null},{"id":36117,"price":"0.00000209","volume":"702.77942584","funds":"0.0014688090000056","market":"blcbtc","created_at":"2018-06-26T21:47:36+00:00","side":null},{"id":36114,"price":"0.00000209","volume":"304.9","funds":"0.000637241","market":"blcbtc","created_at":"2018-06-26T21:38:41+00:00","side":null},{"id":36111,"price":"0.00000209","volume":"2055.0","funds":"0.00429495","market":"blcbtc","created_at":"2018-06-26T21:36:00+00:00","side":null},{"id":35988,"price":"0.00000209","volume":"1380.58359543","funds":"0.0028854197144487","market":"blcbtc","created_at":"2018-06-26T15:07:13+00:00","side":null},{"id":35905,"price":"0.00000199","volume":"3000.0","funds":"0.00597","market":"blcbtc","created_at":"2018-06-26T12:38:28+00:00","side":null},{"id":35891,"price":"0.00000199","volume":"21.82363885","funds":"0.0000434290413115","market":"blcbtc","created_at":"2018-06-26T12:22:29+00:00","side":null},{"id":35688,"price":"0.00000207","volume":"3500.0","funds":"0.007245","market":"blcbtc","created_at":"2018-06-26T06:08:17+00:00","side":null},{"id":35518,"price":"0.00000197","volume":"1479.98757817","funds":"0.0029155755289949","market":"blcbtc","created_at":"2018-06-26T01:08:00+00:00","side":null},{"id":35503,"price":"0.00000197","volume":"3185.0524954","funds":"0.006274553415938","market":"blcbtc","created_at":"2018-06-26T00:48:33+00:00","side":null},{"id":35439,"price":"0.00000197","volume":"3249.23857868","funds":"0.0064009999999996","market":"blcbtc","created_at":"2018-06-25T23:18:27+00:00","side":null},{"id":35323,"price":"0.00000193","volume":"7926.16790411","funds":"0.0152975040549323","market":"blcbtc","created_at":"2018-06-25T20:14:41+00:00","side":null},{"id":35298,"price":"0.00000197","volume":"1629.97338123","funds":"0.0032110475610231","market":"blcbtc","created_at":"2018-06-25T19:11:20+00:00","side":null},{"id":35285,"price":"0.00000197","volume":"3200.82008201","funds":"0.0063056155615597","market":"blcbtc","created_at":"2018-06-25T18:45:16+00:00","side":null},{"id":35280,"price":"0.00000197","volume":"3107.2815534","funds":"0.006121344660198","market":"blcbtc","created_at":"2018-06-25T18:18:18+00:00","side":null},{"id":35275,"price":"0.00000196","volume":"7950.00001667","funds":"0.0155820000326732","market":"blcbtc","created_at":"2018-06-25T18:06:49+00:00","side":null},{"id":35124,"price":"0.000002","volume":"1255.23065895","funds":"0.0025104613179","market":"blcbtc","created_at":"2018-06-25T12:11:13+00:00","side":null},{"id":34982,"price":"0.00000206","volume":"0.35126651","funds":"0.0000007236090106","market":"blcbtc","created_at":"2018-06-25T05:24:33+00:00","side":null},{"id":34977,"price":"0.00000206","volume":"174.64873349","funds":"0.0003597763909894","market":"blcbtc","created_at":"2018-06-25T04:53:35+00:00","side":null},{"id":34976,"price":"0.00000206","volume":"900.04","funds":"0.0018540824","market":"blcbtc","created_at":"2018-06-25T04:53:09+00:00","side":null},{"id":34975,"price":"0.00000206","volume":"675.8","funds":"0.001392148","market":"blcbtc","created_at":"2018-06-25T04:52:16+00:00","side":null},{"id":34974,"price":"0.00000206","volume":"1358.0","funds":"0.00279748","market":"blcbtc","created_at":"2018-06-25T04:51:37+00:00","side":null},{"id":34962,"price":"0.00000207","volume":"3093.61558165","funds":"0.0064037842540155","market":"blcbtc","created_at":"2018-06-25T04:04:28+00:00","side":null}]'
+    http_version: 
+  recorded_at: Tue, 10 Jul 2018 14:55:41 GMT
+recorded_with: VCR 4.0.0

@@ -14,6 +14,11 @@ RSpec.describe 'Vertpig integration specs' do
     expect(pair.market).to eq 'vertpig'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'vertpig', base: vtc_eur_pair.base, target: vtc_eur_pair.target
+    expect(trade_page_url).to eq "https://www.vertpig.com/exchange/VTCEUR"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(vtc_eur_pair)
 

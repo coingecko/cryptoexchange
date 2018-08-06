@@ -14,6 +14,11 @@ RSpec.describe 'ZB integration specs' do
     expect(pair.market).to eq 'zb'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'zb', base: btc_usdt_pair.base, target: btc_usdt_pair.target
+    expect(trade_page_url).to eq "https://trans.zb.com/btcusdt"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_usdt_pair)
 

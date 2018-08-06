@@ -14,6 +14,11 @@ RSpec.describe 'Koinok integration specs' do
     expect(pair.market).to eq 'koinok'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'koinok', base: btc_inr_pair.base, target: btc_inr_pair.target
+    expect(trade_page_url).to eq "https://www.koinok.com/exchange/BTC-INR"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_inr_pair)
 
@@ -25,8 +30,8 @@ RSpec.describe 'Koinok integration specs' do
     expect(ticker.low).to be_a Numeric
     expect(ticker.last).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.bid).to be_a Numeric 
-    expect(ticker.ask).to be_a Numeric    
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.ask).to be_a Numeric
 
     expect(ticker.timestamp).to be_a Numeric
     expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)

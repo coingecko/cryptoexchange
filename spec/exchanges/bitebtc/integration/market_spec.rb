@@ -14,6 +14,11 @@ RSpec.describe 'Bitebtc integration specs' do
     expect(pair.market).to eq 'bitebtc'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'bitebtc', base: eth_btc_pair.base, target: eth_btc_pair.target
+    expect(trade_page_url).to eq "https://bitebtc.com/trade/ETH_BTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(eth_btc_pair)
 

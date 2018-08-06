@@ -1,0 +1,150 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitlish.com/api/v1/trades_history?pair_id=btcusd
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitlish.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 Aug 2018 14:30:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '7635'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d19f92f8f203a963d3685bbb7ef76afd51533393035; expires=Sun, 04-Aug-19
+        14:30:35 GMT; path=/; domain=.bitlish.com; HttpOnly; Secure
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Content-Security-Policy:
+      - 'default-src https: wss:; script-src https: ''unsafe-eval'' ''unsafe-inline'';
+        style-src https: ''unsafe-inline''; img-src https: data: blob:; font-src https:
+        data:; report-uri /csp-report'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4451b905e8a3a936-SIN
+    body:
+      encoding: UTF-8
+      string: '{"list": [{"amount": 5.06898, "created": 1533296763761377, "dir": "ask",
+        "price": 7359}, {"amount": 1, "created": 1533296838225338, "dir": "ask", "price":
+        7360}, {"amount": 0.33617886, "created": 1533296930371428, "dir": "ask", "price":
+        7380}, {"amount": 6.06, "created": 1533296951746289, "dir": "ask", "price":
+        7378}, {"amount": 8, "created": 1533297070924197, "dir": "ask", "price": 7384},
+        {"amount": 8.00898, "created": 1533297112876859, "dir": "ask", "price": 7383.44},
+        {"amount": 8, "created": 1533297147388576, "dir": "ask", "price": 7382}, {"amount":
+        8, "created": 1533297440781182, "dir": "ask", "price": 7384}, {"amount": 1,
+        "created": 1533297463311754, "dir": "ask", "price": 7385}, {"amount": 7.7,
+        "created": 1533297501638223, "dir": "ask", "price": 7388}, {"amount": 8.3,
+        "created": 1533297535715935, "dir": "ask", "price": 7387}, {"amount": 6.3328,
+        "created": 1533297578316094, "dir": "ask", "price": 7389.4}, {"amount": 5,
+        "created": 1533297609958132, "dir": "ask", "price": 7385}, {"amount": 1, "created":
+        1533297634013740, "dir": "bid", "price": 7371}, {"amount": 8, "created": 1533297666717010,
+        "dir": "ask", "price": 7389.66}, {"amount": 8.7328, "created": 1533297688919161,
+        "dir": "ask", "price": 7387.71}, {"amount": 8, "created": 1533297714610816,
+        "dir": "ask", "price": 7385.38}, {"amount": 2, "created": 1533297744299742,
+        "dir": "bid", "price": 7372}, {"amount": 0.0009033, "created": 1533297785358342,
+        "dir": "bid", "price": 7370.77}, {"amount": 6, "created": 1533297841612945,
+        "dir": "ask", "price": 7386}, {"amount": 5, "created": 1533297911092427, "dir":
+        "ask", "price": 7385}, {"amount": 1, "created": 1533297994252568, "dir": "ask",
+        "price": 7373}, {"amount": 6, "created": 1533298035904580, "dir": "ask", "price":
+        7385.9}, {"amount": 8, "created": 1533298064204950, "dir": "ask", "price":
+        7389}, {"amount": 8, "created": 1533298097519658, "dir": "ask", "price": 7389.03},
+        {"amount": 8, "created": 1533298211698458, "dir": "ask", "price": 7383}, {"amount":
+        8, "created": 1533298228001706, "dir": "ask", "price": 7386}, {"amount": 8.7337,
+        "created": 1533298246321604, "dir": "ask", "price": 7382}, {"amount": 8, "created":
+        1533298276470626, "dir": "ask", "price": 7383.01}, {"amount": 8, "created":
+        1533298309594496, "dir": "ask", "price": 7384}, {"amount": 7, "created": 1533298326993259,
+        "dir": "ask", "price": 7388}, {"amount": 5, "created": 1533298351296054, "dir":
+        "ask", "price": 7383.5}, {"amount": 6.7337, "created": 1533298375813164, "dir":
+        "ask", "price": 7387.84}, {"amount": 8.5, "created": 1533298402132412, "dir":
+        "ask", "price": 7386.33}, {"amount": 7.111, "created": 1533298451706510, "dir":
+        "ask", "price": 7387.63}, {"amount": 7.3447, "created": 1533298652274728,
+        "dir": "ask", "price": 7389}, {"amount": 8.7337, "created": 1533298701591068,
+        "dir": "ask", "price": 7383}, {"amount": 8, "created": 1533298738808802, "dir":
+        "ask", "price": 7388}, {"amount": 8, "created": 1533298754367633, "dir": "ask",
+        "price": 7387}, {"amount": 8, "created": 1533298770922600, "dir": "ask", "price":
+        7386}, {"amount": 8, "created": 1533298792001232, "dir": "ask", "price": 7383},
+        {"amount": 8, "created": 1533298814151623, "dir": "ask", "price": 7382.55},
+        {"amount": 8, "created": 1533298842830568, "dir": "ask", "price": 7380}, {"amount":
+        5, "created": 1533298888564066, "dir": "ask", "price": 7387.3}, {"amount":
+        5, "created": 1533298913275079, "dir": "ask", "price": 7387.8}, {"amount":
+        7, "created": 1533298936443039, "dir": "ask", "price": 7387.5}, {"amount":
+        5, "created": 1533298962969924, "dir": "ask", "price": 7387.66}, {"amount":
+        6, "created": 1533298998172905, "dir": "ask", "price": 7387.61}, {"amount":
+        8, "created": 1533299082391751, "dir": "ask", "price": 7387.2}, {"amount":
+        5, "created": 1533299169193737, "dir": "ask", "price": 7387.6}, {"amount":
+        5, "created": 1533299200925751, "dir": "ask", "price": 7387.1}, {"amount":
+        8, "created": 1533299232215658, "dir": "ask", "price": 7385.6}, {"amount":
+        8, "created": 1533300638385269, "dir": "ask", "price": 7389}, {"amount": 8,
+        "created": 1533300659609167, "dir": "ask", "price": 7389.8}, {"amount": 8,
+        "created": 1533300726038159, "dir": "ask", "price": 7389.65}, {"amount": 8,
+        "created": 1533300750743728, "dir": "ask", "price": 7388.07}, {"amount": 1,
+        "created": 1533301160849302, "dir": "ask", "price": 7390}, {"amount": 3, "created":
+        1533301186399527, "dir": "bid", "price": 7380}, {"amount": 1, "created": 1533301245328009,
+        "dir": "bid", "price": 7405}, {"amount": 1, "created": 1533301299467578, "dir":
+        "bid", "price": 7400}, {"amount": 3, "created": 1533301333399439, "dir": "ask",
+        "price": 7410}, {"amount": 7, "created": 1533301350127698, "dir": "ask", "price":
+        7411}, {"amount": 5, "created": 1533301370913041, "dir": "ask", "price": 7405},
+        {"amount": 0.00762819, "created": 1533301521410193, "dir": "ask", "price":
+        7449.99}, {"amount": 0.0054, "created": 1533301543751179, "dir": "ask", "price":
+        7449.99}, {"amount": 1, "created": 1533302174937225, "dir": "bid", "price":
+        7385}, {"amount": 3, "created": 1533302200540776, "dir": "ask", "price": 7410},
+        {"amount": 7, "created": 1533302223564527, "dir": "ask", "price": 7411}, {"amount":
+        8.7, "created": 1533302263622073, "dir": "ask", "price": 7409}, {"amount":
+        0.502, "created": 1533302287467170, "dir": "ask", "price": 7425}, {"amount":
+        8, "created": 1533302328229488, "dir": "ask", "price": 7408}, {"amount": 7,
+        "created": 1533302687767371, "dir": "ask", "price": 7418}, {"amount": 7.7,
+        "created": 1533302914109563, "dir": "ask", "price": 7415}, {"amount": 8, "created":
+        1533302991682789, "dir": "ask", "price": 7417}, {"amount": 8, "created": 1533303014969395,
+        "dir": "ask", "price": 7416.5}, {"amount": 8, "created": 1533303041315347,
+        "dir": "ask", "price": 7412}, {"amount": 0.501, "created": 1533303117179089,
+        "dir": "ask", "price": 7420}, {"amount": 1, "created": 1533303410531051, "dir":
+        "ask", "price": 7400}, {"amount": 7, "created": 1533303480275319, "dir": "ask",
+        "price": 7418}, {"amount": 7, "created": 1533304100677219, "dir": "ask", "price":
+        7419}, {"amount": 7, "created": 1533304263852302, "dir": "ask", "price": 7419.98},
+        {"amount": 1, "created": 1533304279393976, "dir": "ask", "price": 7420}, {"amount":
+        0.07999164, "created": 1533304754395516, "dir": "ask", "price": 7563.29},
+        {"amount": 1, "created": 1533305586312190, "dir": "ask", "price": 7450}, {"amount":
+        1, "created": 1533305652863812, "dir": "ask", "price": 7450}, {"amount": 1,
+        "created": 1533305675018924, "dir": "bid", "price": 7445}, {"amount": 1, "created":
+        1533306159032106, "dir": "bid", "price": 7455}, {"amount": 1, "created": 1533306164242877,
+        "dir": "ask", "price": 7460}, {"amount": 0.00105178, "created": 1533309363951968,
+        "dir": "ask", "price": 7606.12}, {"amount": 0.00105, "created": 1533326506378703,
+        "dir": "bid", "price": 7463.45}, {"amount": 0.00665, "created": 1533326506381540,
+        "dir": "bid", "price": 7463.45}, {"amount": 6.999e-05, "created": 1533328738937361,
+        "dir": "bid", "price": 7463.45}, {"amount": 0.001, "created": 1533386752091981,
+        "dir": "bid", "price": 7371}, {"amount": 0.3352, "created": 1533386752095641,
+        "dir": "bid", "price": 7370.77}, {"amount": 9.67e-05, "created": 1533386791789652,
+        "dir": "bid", "price": 7370.77}, {"amount": 0.0037033, "created": 1533386791792771,
+        "dir": "bid", "price": 7348.77}, {"amount": 9.67e-05, "created": 1533386845268799,
+        "dir": "bid", "price": 7348.77}, {"amount": 0.0070033, "created": 1533386845284591,
+        "dir": "bid", "price": 7333.77}, {"amount": 9.67e-05, "created": 1533387022927599,
+        "dir": "bid", "price": 7333.77}, {"amount": 0.0070033, "created": 1533387022931077,
+        "dir": "bid", "price": 7320.77}], "pair_id": "btcusd"}'
+    http_version: 
+  recorded_at: Sat, 04 Aug 2018 14:30:40 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://c-patex.com/api/v2/markets.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - c-patex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2072'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=63072000; includeSubDomains
+      X-Request-Id:
+      - 2be4cec9-df35-4771-adf0-9ccf9a4163a7
+      Etag:
+      - '"25cba75841f3f0a8b1b05bd30e8143a5"'
+      X-Runtime:
+      - '0.009724'
+      Date:
+      - Tue, 10 Jul 2018 14:55:37 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.11
+      Server:
+      - nginx/1.12.1 + Phusion Passenger 5.1.11
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"btcars","name":"BTC/ARS"},{"id":"bchbtc","name":"BCH/BTC"},{"id":"dashbtc","name":"DASH/BTC"},{"id":"ltcbtc","name":"LTC/BTC"},{"id":"blcbtc","name":"BLC/BTC"},{"id":"bbtcblc","name":"BBTC/BLC"},{"id":"eltblc","name":"ELT/BLC"},{"id":"litblc","name":"LIT/BLC"},{"id":"phoblc","name":"PHO/BLC"},{"id":"umoblc","name":"UMO/BLC"},{"id":"patsbtc","name":"PATS/BTC"},{"id":"btgbtc","name":"BTG/BTC"},{"id":"phobtc","name":"PHO/BTC"},{"id":"blcltc","name":"BLC/LTC"},{"id":"bbtcltc","name":"BBTC/LTC"},{"id":"eltltc","name":"ELT/LTC"},{"id":"pholtc","name":"PHO/LTC"},{"id":"litltc","name":"LIT/LTC"},{"id":"umoltc","name":"UMO/LTC"},{"id":"xngbtc","name":"XNG/BTC"},{"id":"patsltc","name":"PATS/LTC"},{"id":"bbtcbtc","name":"BBTC/BTC"},{"id":"umobtc","name":"UMO/BTC"},{"id":"litbtc","name":"LIT/BTC"},{"id":"embltc","name":"EMB/LTC"},{"id":"htmlbtc","name":"HTML/BTC"},{"id":"htmlltc","name":"HTML/LTC"},{"id":"embblc","name":"EMB/BLC"},{"id":"eltbtc","name":"ELT/BTC"},{"id":"dogebtc","name":"DOGE/BTC"},{"id":"embdoge","name":"EMB/DOGE"},{"id":"phodoge","name":"PHO/DOGE"},{"id":"pcnbtc","name":"PCN/BTC"},{"id":"dvrsbtc","name":"DVRS/BTC"},{"id":"pcndoge","name":"PCN/DOGE"},{"id":"dvrsdoge","name":"DVRS/DOGE"},{"id":"colxbtc","name":"COLX/BTC"},{"id":"rddbtc","name":"RDD/BTC"},{"id":"dogepats","name":"DOGE/PATS"},{"id":"phopats","name":"PHO/PATS"},{"id":"embpats","name":"EMB/PATS"},{"id":"dogeltc","name":"DOGE/LTC"},{"id":"dogebch","name":"DOGE/BCH"},{"id":"ltcbch","name":"LTC/BCH"},{"id":"pcnbch","name":"PCN/BCH"},{"id":"pcnltc","name":"PCN/LTC"},{"id":"blcbch","name":"BLC/BCH"},{"id":"mdcbtc","name":"MDC/BTC"},{"id":"eccbtc","name":"ECC/BTC"},{"id":"asicltc","name":"ASIC/LTC"},{"id":"ohmcbtc","name":"OHMC/BTC"},{"id":"givebtc","name":"GIVE/BTC"},{"id":"giveltc","name":"GIVE/LTC"},{"id":"xsrbtc","name":"XSR/BTC"},{"id":"pacbtc","name":"PAC/BTC"},{"id":"rupbtc","name":"RUP/BTC"},{"id":"ethbtc","name":"ETH/BTC"},{"id":"compbtc","name":"COMP/BTC"},{"id":"compdoge","name":"COMP/DOGE"},{"id":"ethltc","name":"ETH/LTC"},{"id":"dembtc","name":"DEM/BTC"}]'
+    http_version: 
+  recorded_at: Tue, 10 Jul 2018 14:55:37 GMT
+recorded_with: VCR 4.0.0

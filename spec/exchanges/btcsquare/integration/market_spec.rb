@@ -14,6 +14,11 @@ RSpec.describe 'Btcsquare integration specs' do
     expect(pair.market).to eq 'btcsquare'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'btcsquare', base: ltc_btc_pair.base, target: ltc_btc_pair.target
+    expect(trade_page_url).to eq "https://www.btcsquare.net/exchange/LTC/BTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(ltc_btc_pair)
 

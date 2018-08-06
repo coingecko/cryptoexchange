@@ -14,6 +14,11 @@ RSpec.describe 'RadarRelay integration specs' do
     expect(pair.market).to eq 'radar_relay'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'radar_relay', base: dai_weth_pair.base, target: dai_weth_pair.target
+    expect(trade_page_url).to eq "https://app.radarrelay.com/DAI/WETH"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(dai_weth_pair)
 

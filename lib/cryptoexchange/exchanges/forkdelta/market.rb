@@ -1,9 +1,13 @@
 module Cryptoexchange::Exchanges
   module Forkdelta
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME      = 'forkdelta'
       API_URL   = 'https://api.forkdelta.com'
       TOKEN_URL = 'https://forkdelta.github.io/config/main.json'
+
+      def self.trade_page_url(args={})
+        "https://forkdelta.github.io/#!/trade/#{args[:base]}-#{args[:target]}"
+      end
 
       class << self
         def fetch_symbol

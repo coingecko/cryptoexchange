@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.tidebit.com/api/v2/markets.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.tidebit.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 16:13:25 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2138'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dcd33a507acfcdba78e093dba672e1e751533140005; expires=Thu, 01-Aug-19
+        16:13:25 GMT; path=/; domain=.tidebit.com; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=63072000; includeSubDomains
+      X-Request-Id:
+      - 48420b12-4616-4aeb-a7d5-0a80a6966265
+      Etag:
+      - W/"ad3e25d52d68ae9d5f9120bf98ec1d44"
+      X-Runtime:
+      - '0.005967'
+      X-Powered-By:
+      - Phusion Passenger 5.3.3
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 443997874c442d05-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"btchkd","name":"BTC/HKD","bid_fixed":2,"ask_fixed":3,"price_group_fixed":null},{"id":"ethhkd","name":"ETH/HKD","bid_fixed":2,"ask_fixed":3,"price_group_fixed":null},{"id":"btcusd","name":"BTC/USD","bid_fixed":2,"ask_fixed":3,"price_group_fixed":null},{"id":"bchhkx","name":"BCH/HKX","bid_fixed":2,"ask_fixed":4,"price_group_fixed":null},{"id":"ltchkx","name":"LTC/HKX","bid_fixed":2,"ask_fixed":4,"price_group_fixed":null},{"id":"etchkx","name":"ETC/HKX","bid_fixed":2,"ask_fixed":4,"price_group_fixed":null},{"id":"ethusd","name":"ETH/USD","bid_fixed":2,"ask_fixed":3,"price_group_fixed":null},{"id":"hkxhkd","name":"HKX/HKD","bid_fixed":4,"ask_fixed":4,"price_group_fixed":4},{"id":"eoshkd","name":"EOS/HKD","bid_fixed":2,"ask_fixed":4,"price_group_fixed":null},{"id":"xpaeth","name":"XPA/ETH","bid_fixed":8,"ask_fixed":2,"price_group_fixed":8},{"id":"neohkd","name":"NEO/HKD","bid_fixed":2,"ask_fixed":4,"price_group_fixed":null},{"id":"usxusd","name":"USX/USD","bid_fixed":4,"ask_fixed":4,"price_group_fixed":4},{"id":"usxhkx","name":"USX/HKX","bid_fixed":4,"ask_fixed":4,"price_group_fixed":4},{"id":"btchkx","name":"BTC/HKX","bid_fixed":2,"ask_fixed":4,"price_group_fixed":null},{"id":"ethhkx","name":"ETH/HKX","bid_fixed":2,"ask_fixed":4,"price_group_fixed":null},{"id":"xpahkx","name":"XPA/HKX","bid_fixed":4,"ask_fixed":4,"price_group_fixed":null},{"id":"cbthkx","name":"CBT/HKX","bid_fixed":4,"ask_fixed":4,"price_group_fixed":null},{"id":"eoshkx","name":"EOS/HKX","bid_fixed":2,"ask_fixed":4,"price_group_fixed":null},{"id":"eosusx","name":"EOS/USX","bid_fixed":2,"ask_fixed":4,"price_group_fixed":null},{"id":"btcusx","name":"BTC/USX","bid_fixed":2,"ask_fixed":4,"price_group_fixed":null},{"id":"likehkx","name":"LIKE/HKX","bid_fixed":2,"ask_fixed":4,"price_group_fixed":null},{"id":"cbteth","name":"CBT/ETH","bid_fixed":8,"ask_fixed":4,"price_group_fixed":8},{"id":"ethusx","name":"ETH/USX","bid_fixed":2,"ask_fixed":4,"price_group_fixed":null},{"id":"xpausx","name":"XPA/USX","bid_fixed":4,"ask_fixed":4,"price_group_fixed":null},{"id":"cbtusx","name":"CBT/USX","bid_fixed":4,"ask_fixed":4,"price_group_fixed":null}]'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 16:13:25 GMT
+recorded_with: VCR 4.0.0
