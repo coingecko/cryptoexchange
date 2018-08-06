@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.tidebit.com/api/v2/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.tidebit.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 16:19:11 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3062'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3711ed373cb50b3562e9422113cc34111533140350; expires=Thu, 01-Aug-19
+        16:19:10 GMT; path=/; domain=.tidebit.com; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=63072000; includeSubDomains
+      X-Request-Id:
+      - e9fcf1c7-bfc1-44f8-86d6-213702ed2651
+      Etag:
+      - W/"8512a7d7c5c354264de418a40baf0e12"
+      X-Runtime:
+      - '0.007912'
+      X-Powered-By:
+      - Phusion Passenger 5.3.3
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 44399ff77f732ccf-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"btchkd":{"at":1533140350,"ticker":{"buy":58724.0,"sell":59200.0,"low":58000.0,"high":61000.0,"last":59200.0,"open":60119.44,"vol":20.394}},"ethhkd":{"at":1533140350,"ticker":{"buy":3357.04,"sell":3363.42,"low":3250.0,"high":3420.4,"last":3357.04,"open":3355.0,"vol":224.714}},"btcusd":{"at":1533140350,"ticker":{"buy":6501.0,"sell":8988.0,"low":7800.0,"high":7800.0,"last":7800.0,"open":7800.0,"vol":0.0}},"ethusd":{"at":1533140350,"ticker":{"buy":408.0,"sell":500.0,"low":0.0,"high":0.0,"last":500.0,"open":500.0,"vol":0.0}},"xpaeth":{"at":1533140350,"ticker":{"buy":8.001e-05,"sell":0.00012424,"low":0.0001242,"high":0.0001242,"last":0.0001242,"open":0.0001244,"vol":45933.0}},"neohkd":{"at":1533140350,"ticker":{"buy":235.0,"sell":264.26,"low":236.09,"high":236.09,"last":236.09,"open":250.0,"vol":0.243}},"cbteth":{"at":1533140350,"ticker":{"buy":0.00010001,"sell":0.000198,"low":0.0,"high":0.0,"last":0.000197,"open":0.000197,"vol":0.0}},"hkxhkd":{"at":1533140350,"ticker":{"buy":0.9999,"sell":1.0001,"low":0.0,"high":0.0,"last":0.9999,"open":0.9999,"vol":0.0}},"usxusd":{"at":1533140350,"ticker":{"buy":0.9999,"sell":1.0001,"low":0.0,"high":0.0,"last":0.9999,"open":0.9999,"vol":0.0}},"usxhkx":{"at":1533140350,"ticker":{"buy":0.0,"sell":0.0,"low":0.0,"high":0.0,"last":1.0,"open":1.0,"vol":0.0}},"btchkx":{"at":1533140350,"ticker":{"buy":0.0,"sell":61888.88,"low":0.0,"high":0.0,"last":603000.0,"open":603000.0,"vol":0.0}},"ethhkx":{"at":1533140350,"ticker":{"buy":0.0,"sell":4849.99,"low":0.0,"high":0.0,"last":4849.98,"open":4849.98,"vol":0.0}},"xpahkx":{"at":1533140350,"ticker":{"buy":0.01,"sell":2.0,"low":0.0,"high":0.0,"last":0.001,"open":0.001,"vol":0.0}},"cbthkx":{"at":1533140350,"ticker":{"buy":0.0,"sell":5.0,"low":0.0,"high":0.0,"last":0.0,"open":0.0,"vol":0.0}},"btcusx":{"at":1533140350,"ticker":{"buy":0.0,"sell":0.0,"low":0.0,"high":0.0,"last":0.0,"open":0.0,"vol":0.0}},"ethusx":{"at":1533140350,"ticker":{"buy":0.0,"sell":0.0,"low":0.0,"high":0.0,"last":0.0,"open":0.0,"vol":0.0}},"xpausx":{"at":1533140350,"ticker":{"buy":0.0,"sell":0.26,"low":0.0,"high":0.0,"last":0.0,"open":0.0,"vol":0.0}},"cbtusx":{"at":1533140350,"ticker":{"buy":0.0,"sell":0.0,"low":0.0,"high":0.0,"last":0.0,"open":0.0,"vol":0.0}},"eoshkd":{"at":1533140350,"ticker":{"buy":59.0,"sell":75.0,"low":0.0,"high":0.0,"last":63.05,"open":63.05,"vol":0.0}},"eoshkx":{"at":1533140350,"ticker":{"buy":0.0,"sell":110.0,"low":0.0,"high":0.0,"last":70000.0,"open":70000.0,"vol":0.0}},"eosusx":{"at":1533140350,"ticker":{"buy":0.0,"sell":0.0,"low":0.0,"high":0.0,"last":0.0,"open":0.0,"vol":0.0}},"likehkx":{"at":1533140350,"ticker":{"buy":0.05,"sell":0.06,"low":0.05,"high":0.05,"last":0.05,"open":0.05,"vol":128000.0}},"bchhkx":{"at":1533140350,"ticker":{"buy":0.0,"sell":10000.0,"low":0.0,"high":0.0,"last":0.0,"open":0.0,"vol":0.0}},"ltchkx":{"at":1533140350,"ticker":{"buy":0.0,"sell":1000.0,"low":0.0,"high":0.0,"last":0.0,"open":0.0,"vol":0.0}},"etchkx":{"at":1533140350,"ticker":{"buy":120.01,"sell":132.0,"low":0.0,"high":0.0,"last":131.0,"open":131.0,"vol":0.0}}}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 16:19:11 GMT
+recorded_with: VCR 4.0.0

@@ -14,6 +14,11 @@ RSpec.describe 'Coinnest integration specs' do
     expect(pair.market).to eq 'coinnest'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'coinnest', base: btc_krw_pair.base, target: btc_krw_pair.target
+    expect(trade_page_url).to eq "https://www.coinnest.co.kr/market-btc"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_krw_pair)
 

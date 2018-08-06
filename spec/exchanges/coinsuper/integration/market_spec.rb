@@ -14,6 +14,11 @@ RSpec.describe 'Coinsuper integration specs' do
     expect(pair.market).to eq 'coinsuper'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'coinsuper', base: bch_btc_pair.base, target: bch_btc_pair.target
+    expect(trade_page_url).to eq "https://www.coinsuper.com/trade?symbol=BCH%2FBTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(bch_btc_pair)
 

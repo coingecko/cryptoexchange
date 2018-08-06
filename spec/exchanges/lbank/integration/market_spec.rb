@@ -13,6 +13,12 @@ RSpec.describe 'Lbank integration specs' do
     expect(pair.market).to eq 'lbank'
   end
 
+  it 'give trade url' do
+    eth_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'lbank')
+    trade_page_url = client.trade_page_url 'lbank', base: eth_btc_pair.base, target: eth_btc_pair.target
+    expect(trade_page_url).to eq "https://www.lbank.info/exchange.html?asset=eth&post=btc"
+  end
+
   it 'fetch ticker' do
     eth_btc_pair = Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'lbank')
     ticker = client.ticker(eth_btc_pair)

@@ -14,6 +14,11 @@ RSpec.describe 'TradeOgre integration specs' do
     expect(pair.market).to eq 'trade_ogre'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'trade_ogre', base: aeon_btc_pair.base, target: aeon_btc_pair.target
+    expect(trade_page_url).to eq "https://tradeogre.com/exchange/AEON-BTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(aeon_btc_pair)
 

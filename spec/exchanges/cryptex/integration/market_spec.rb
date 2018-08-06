@@ -14,6 +14,11 @@ RSpec.describe 'Cryptex integration specs' do
     expect(pair.market).to eq 'cryptex'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'cryptex', base: btc_usd_pair.base, target: btc_usd_pair.target
+    expect(trade_page_url).to eq "https://cryptex.net/trade/BTCUSD"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_usd_pair)
 

@@ -30,4 +30,9 @@ RSpec.describe 'Coss integration specs' do
     expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
     expect(ticker.payload).to_not be nil
   end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'coss', base: coss_eth_pair.base, target: coss_eth_pair.target
+    expect(trade_page_url).to eq "https://exchange.coss.io/exchange/coss-eth"
+  end
 end

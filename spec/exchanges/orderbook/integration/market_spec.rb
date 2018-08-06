@@ -14,6 +14,11 @@ RSpec.describe 'Orderbook integration specs' do
     expect(pair.market).to eq 'orderbook'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'orderbook', base: taas_eth_pair.base, target: taas_eth_pair.target
+    expect(trade_page_url).to eq "https://www.orderbook.io/#/trading/TAAS-ETH"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(taas_eth_pair)
 

@@ -14,6 +14,11 @@ RSpec.describe 'Coinhouse integration specs' do
     expect(pair.market).to eq 'coinhouse'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'coinhouse', base: ltc_btc_pair.base, target: ltc_btc_pair.target
+    expect(trade_page_url).to eq "https://coinhouse.eu/markets/LTCBTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(ltc_btc_pair)
 

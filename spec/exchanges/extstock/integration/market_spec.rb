@@ -14,6 +14,11 @@ RSpec.describe 'Extstock integration specs' do
     expect(pair.market).to eq 'extstock'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'extstock', base: eth_ltc_pair.base, target: eth_ltc_pair.target
+    expect(trade_page_url).to eq "https://extstock.com/markets/ETH_LTC"
+  end
+
   it 'fetch pairs and assign the correct base/target' do
     pairs = client.pairs('extstock')
     expect(pairs).not_to be_empty
