@@ -98,6 +98,7 @@ Or install it yourself as:
 | Coinrail          | Y       | Y          | Y       |         | Y           |          | coinrail          |
 | Coinroom          | Y       |            |         |         | Y           |          | coinroom          |
 | CoinsMarkets      | Y       |            |         |         | Y           |          | coin_markets      |
+| CoinSquare        | Y       | Y          | Y       |         | Y           |          | coinsquare        |
 | Coinstock         | Y       | Y          | Y       |         | Y           |          | coinstock         |
 | Coinsuper         | Y       |            |         |         | Y           |          | coinsuper         |
 | Cointiger         | Y       | Y          | Y       |         | Y           |          | cointiger         |
