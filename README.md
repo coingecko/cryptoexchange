@@ -173,6 +173,8 @@ Or install it yourself as:
 | Nanex             | Y       | N          | N       | N       | Y           |          | nanex             |
 | Nebula            | Y       | N          | Y       |         | Y           |          | nebula            |
 | Neraex            | Y       | Y          | Y       |         | Y           |          | neraex            |
+| Nibyx             | Y       |            |         |         | Y           |          | nibyx
+|
 | Ninecoin          | Y       |            |         |         | Y           |          | ninecoin          |
 | NLexch            | Y       |            |         |         | Y           |          | nlexch            |
 | Novadex           | Y       | N          | N       |         | Y           |          | novadex           |
