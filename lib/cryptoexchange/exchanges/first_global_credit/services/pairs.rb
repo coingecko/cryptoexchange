@@ -14,9 +14,8 @@ module Cryptoexchange::Exchanges
           output.each do |out|
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: out['base_currency'],
-                              market: out['currency_pair'],
+                              market: FirstGlobalCredit::Market::NAME,
                               target: out['float_currency'],
-                              second_market: FirstGlobalCredit::Market::NAME
                             )
           end
           market_pairs

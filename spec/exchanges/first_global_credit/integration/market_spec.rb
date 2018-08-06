@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'FirstGlobalCredit integration specs' do
   client = Cryptoexchange::Client.new
-  let(:btc_inr_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BCH', target: 'USD', market: 'BCHUSD', second_market: 'first_global_credit') }
+  let(:btc_inr_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BCH', target: 'USD', market: 'first_global_credit') }
 
   it 'fetch pairs' do
     pairs = client.pairs('first_global_credit')
@@ -11,7 +11,7 @@ RSpec.describe 'FirstGlobalCredit integration specs' do
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
-    expect(pair.second_market).to eq 'first_global_credit'
+    expect(pair.market).to eq 'first_global_credit'
   end
 
   it 'fetch ticker' do
