@@ -231,6 +231,7 @@ Or install it yourself as:
 | Zaif              | Y       | Y          | Y       |         | Y           |          | zaif              |
 | ZB                | Y       | Y          | Y       |         | Y           |          | zb                |
 | Zebpay            | Y       |            |         |         | Y           |          | zebpay
+| Coinchangex       | Y       | N          | N          |         | User-Defined|         | coinchangex
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 *** User-Defined requires pair id
