@@ -168,6 +168,7 @@ Or install it yourself as:
 | Livecoin          | Y       |            |         |         | Y           |          | livecoin          |
 | Luno              | Y       |            |         |         | Y           |          | luno              |
 | Lykke             | Y       | Y          | N       |         | Y           |          | lykke             |
+| MaxMaicoin        | Y       | Y          | Y       |         | Y           |          | max_maicoin       |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|          | mercado_bitcoin   |
 | Mercatox          | Y       | N          | N       | N       | Y           |          | mercatox          |
 | Myspeedtrade      | Y       | Y          |         |         | Y           |          | myspeedtrade      |
