@@ -118,6 +118,7 @@ Or install it yourself as:
 | Cryptopia         | Y       | Y          | Y       |         | Y           |          | cryptopia         |
 | Cybex             | Y       | Y          | Y       |         | Y           |          | cybex             |
 | Ddex              | Y       |            |         |         | Y           | Y        | ddex              |
+| Digifinex         | Y       |            |         |         | Y           |          | digifinex         |
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |
 | EtherDelta        | Y       |            |         |         | Y           |          | ether_delta       |
