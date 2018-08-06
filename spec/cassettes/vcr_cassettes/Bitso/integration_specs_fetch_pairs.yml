@@ -2,33 +2,33 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api-dev.bitso.com/v3/available_books
+    uri: https://api.bitso.com/v3/available_books
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       Connection:
       - close
       Host:
-      - api-dev.bitso.com
+      - api.bitso.com
       User-Agent:
-      - http.rb/2.1.0
+      - http.rb/3.0.0
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Tue, 03 Oct 2017 04:04:12 GMT
+      - Wed, 18 Jul 2018 08:14:21 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1248'
+      - '2044'
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=dcc7e6341580eb318781755fb8754138d1507003452; expires=Wed, 03-Oct-18
-        04:04:12 GMT; path=/; domain=.bitso.com; HttpOnly
+      - __cfduid=de836f3ad10c35e6918bc02518d6555481531901660; expires=Thu, 18-Jul-19
+        08:14:20 GMT; path=/; domain=.bitso.com; HttpOnly; Secure
       Access-Control-Allow-Origin:
       - "*"
       X-Frame-Options:
@@ -39,13 +39,23 @@ http_interactions:
       - nosniff
       X-Permitted-Cross-Domain-Policies:
       - master-only
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=2592000
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
-      - cloudflare-nginx
+      - cloudflare
       Cf-Ray:
-      - 3a7d041859f97032-SIN
+      - 43c37e817b3b2cf3-KUL
     body:
       encoding: ASCII-8BIT
-      string: '{"success":true,"payload":[{"book":"btc_mxn","minimum_price":"5.00","maximum_price":"80000000000000.00","minimum_amount":"0.0002","maximum_amount":"80000000000000.00","minimum_value":"5","maximum_value":"80000000000000.00"},{"book":"eth_mxn","minimum_price":"10.00","maximum_price":"80000000000000.00","minimum_amount":"0.0500000","maximum_amount":"80000000000000.00","minimum_value":"1.00","maximum_value":"10000000.00"},{"book":"eth_btc","minimum_price":"0.00000100","maximum_price":"80000000000000.00","minimum_amount":"0.00000100","maximum_amount":"80000000000000.00","minimum_value":"0.00000100","maximum_value":"80000000000000.00"},{"book":"xrp_btc","minimum_price":"0.00000100","maximum_price":"80000000000000.00","minimum_amount":"0.00000100","maximum_amount":"80000000000000.00","minimum_value":"0.00000100","maximum_value":"80000000000000.00"},{"book":"xrp_mxn","minimum_price":"0.00000100","maximum_price":"80000000000000.00","minimum_amount":"0.00000100","maximum_amount":"80000000000000.00","minimum_value":"0.00000100","maximum_value":"80000000000000.00"},{"book":"bch_btc","minimum_price":"0.01","maximum_price":"80000.00","minimum_amount":"0.00015","maximum_amount":"500.00000000","minimum_value":"0.001","maximum_value":"100.00"}]}'
+      string: '{"success":true,"payload":[{"book":"btc_mxn","minimum_price":"500.00","maximum_price":"16000000.00","minimum_amount":"0.000075","maximum_amount":"500.00000000","minimum_value":"5","maximum_value":"10000000.00"},{"book":"eth_btc","minimum_price":"0.00000100","maximum_price":"5000.00000000","minimum_amount":"0.00000100","maximum_amount":"1000.00000000","minimum_value":"0.00000100","maximum_value":"2000.00000000"},{"book":"eth_mxn","minimum_price":"10.00","maximum_price":"200000.00","minimum_amount":"0.001","maximum_amount":"100000.00000000","minimum_value":"5.00","maximum_value":"10000000.00"},{"book":"xrp_btc","minimum_price":"0.00000100","maximum_price":"5000.00000000","minimum_amount":"0.00000100","maximum_amount":"100000.00000000","minimum_value":"0.000025","maximum_value":"2000.00000000"},{"book":"xrp_mxn","minimum_price":"0.0000100","maximum_price":"5000.00000000","minimum_amount":"0.5","maximum_amount":"500000.00000000","minimum_value":"5","maximum_value":"10000000.00000000"},{"book":"ltc_btc","minimum_price":"0.01","maximum_price":"80000.00","minimum_amount":"0.00015","maximum_amount":"500.00000000","minimum_value":"0.000025","maximum_value":"1500.00"},{"book":"ltc_mxn","minimum_price":"10","maximum_price":"50000.00","minimum_amount":"0.001","maximum_amount":"100000.00000000","minimum_value":"5","maximum_value":"10000000.00"},{"book":"bch_btc","minimum_price":"0.0001","maximum_price":"8000.00","minimum_amount":"0.0001","maximum_amount":"8000.00","minimum_value":"0.000025","maximum_value":"8000.00"},{"book":"bch_mxn","minimum_price":"10","maximum_price":"200000.00","minimum_amount":"0.001","maximum_amount":"100000.00000000","minimum_value":"5","maximum_value":"10000000.00"},{"book":"tusd_btc","minimum_price":"0.000001","maximum_price":"0.01","minimum_amount":"1.00","maximum_amount":"3000000","minimum_value":"0.000025","maximum_value":"1000"},{"book":"tusd_mxn","minimum_price":"6.50","maximum_price":"40.00","minimum_amount":"0.25","maximum_amount":"3000000","minimum_value":"5","maximum_value":"3000000"}]}'
     http_version: 
-  recorded_at: Tue, 03 Oct 2017 04:04:12 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Wed, 18 Jul 2018 08:14:21 GMT
+recorded_with: VCR 4.0.0

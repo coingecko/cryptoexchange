@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://peatio.cryptagio.com/api/v2/trades?market=omgbtc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - peatio.cryptagio.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 24 Jun 2018 04:50:30 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '6403'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7e8fb77cd03b7512f3f985ea33e1569f1529815829; expires=Mon, 24-Jun-19
+        04:50:29 GMT; path=/; domain=.cryptagio.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Version:
+      - HTTP/1.0
+      Host:
+      - peatio.cryptagio.com
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - MY
+      X-Forwarded-For:
+      - 175.137.97.165
+      X-Forwarded-Proto:
+      - https
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 175.137.97.165
+      X-Forwarded-Host:
+      - peatio.cryptagio.com
+      Etag:
+      - W/"943703cb80d6a1c7bdd792578b9a6eff"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 408b9b37-4834-4e81-9495-5f9fce6d57ef
+      X-Runtime:
+      - '0.033366'
+      Strict-Transport-Security:
+      - max-age=2592000; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42fc92e338793126-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":10016294,"price":"0.0012725","volume":"0.83","funds":"0.001056175","market":"omgbtc","created_at":1529815806,"side":"buy"},{"id":10016290,"price":"0.001272","volume":"0.64","funds":"0.00081408","market":"omgbtc","created_at":1529815745,"side":"buy"},{"id":10016283,"price":"0.0012745","volume":"0.88","funds":"0.00112156","market":"omgbtc","created_at":1529815614,"side":"sell"},{"id":10016279,"price":"0.0012745","volume":"0.12","funds":"0.00015294","market":"omgbtc","created_at":1529815584,"side":"sell"},{"id":10016263,"price":"0.001279","volume":"0.85","funds":"0.00108715","market":"omgbtc","created_at":1529815404,"side":"sell"},{"id":10016250,"price":"0.0012755","volume":"0.19","funds":"0.000242345","market":"omgbtc","created_at":1529815262,"side":"buy"},{"id":10016247,"price":"0.001275","volume":"0.19","funds":"0.00024225","market":"omgbtc","created_at":1529815204,"side":"sell"},{"id":10016246,"price":"0.001274","volume":"0.95","funds":"0.0012103","market":"omgbtc","created_at":1529815187,"side":"sell"},{"id":10016236,"price":"0.0012725","volume":"0.75","funds":"0.000954375","market":"omgbtc","created_at":1529815020,"side":"buy"},{"id":10016227,"price":"0.0012745","volume":"0.76","funds":"0.00096862","market":"omgbtc","created_at":1529814889,"side":"buy"},{"id":10016219,"price":"0.001276","volume":"0.51","funds":"0.00065076","market":"omgbtc","created_at":1529814781,"side":"buy"},{"id":10016216,"price":"0.001276","volume":"0.77","funds":"0.00098252","market":"omgbtc","created_at":1529814755,"side":"sell"},{"id":10016209,"price":"0.0012795","volume":"0.24","funds":"0.00030708","market":"omgbtc","created_at":1529814630,"side":"buy"},{"id":10016198,"price":"0.001283","volume":"0.46","funds":"0.00059018","market":"omgbtc","created_at":1529814476,"side":"buy"},{"id":10016188,"price":"0.0012865","volume":"0.43","funds":"0.000553195","market":"omgbtc","created_at":1529814356,"side":"sell"},{"id":10016187,"price":"0.001285","volume":"0.9","funds":"0.0011565","market":"omgbtc","created_at":1529814322,"side":"sell"},{"id":10016177,"price":"0.001283","volume":"0.99","funds":"0.00127017","market":"omgbtc","created_at":1529814190,"side":"buy"},{"id":10016169,"price":"0.0012945","volume":"0.74","funds":"0.00095793","market":"omgbtc","created_at":1529814034,"side":"buy"},{"id":10016161,"price":"0.001297","volume":"0.27","funds":"0.00035019","market":"omgbtc","created_at":1529813941,"side":"sell"},{"id":10016150,"price":"0.001298","volume":"0.68","funds":"0.00088264","market":"omgbtc","created_at":1529813794,"side":"sell"},{"id":10016141,"price":"0.0012995","volume":"0.31","funds":"0.000402845","market":"omgbtc","created_at":1529813651,"side":"buy"},{"id":10016133,"price":"0.0012985","volume":"0.6","funds":"0.0007791","market":"omgbtc","created_at":1529813571,"side":"buy"},{"id":10016126,"price":"0.0013005","volume":"0.84","funds":"0.00109242","market":"omgbtc","created_at":1529813465,"side":"sell"},{"id":10016123,"price":"0.0012995","volume":"0.25","funds":"0.000324875","market":"omgbtc","created_at":1529813369,"side":"sell"},{"id":10016121,"price":"0.0012995","volume":"0.14","funds":"0.00018193","market":"omgbtc","created_at":1529813345,"side":"sell"},{"id":10016114,"price":"0.001298","volume":"0.66","funds":"0.00085668","market":"omgbtc","created_at":1529813232,"side":"buy"},{"id":10016110,"price":"0.0012975","volume":"0.12","funds":"0.0001557","market":"omgbtc","created_at":1529813213,"side":"sell"},{"id":10016101,"price":"0.0013025","volume":"0.91","funds":"0.001185275","market":"omgbtc","created_at":1529813106,"side":"buy"},{"id":10016099,"price":"0.0013065","volume":"0.25","funds":"0.000326625","market":"omgbtc","created_at":1529813056,"side":"sell"},{"id":10016091,"price":"0.001311","volume":"0.15","funds":"0.00019665","market":"omgbtc","created_at":1529812967,"side":"sell"},{"id":10016080,"price":"0.001313","volume":"0.65","funds":"0.00085345","market":"omgbtc","created_at":1529812811,"side":"buy"},{"id":10016070,"price":"0.0013135","volume":"0.61","funds":"0.000801235","market":"omgbtc","created_at":1529812705,"side":"sell"},{"id":10016062,"price":"0.0013155","volume":"0.12","funds":"0.00015786","market":"omgbtc","created_at":1529812592,"side":"buy"},{"id":10016054,"price":"0.0013155","volume":"0.96","funds":"0.00126288","market":"omgbtc","created_at":1529812504,"side":"sell"},{"id":10016052,"price":"0.0013155","volume":"0.72","funds":"0.00094716","market":"omgbtc","created_at":1529812445,"side":"sell"},{"id":10016046,"price":"0.001316","volume":"0.64","funds":"0.00084224","market":"omgbtc","created_at":1529812394,"side":"sell"},{"id":10016043,"price":"0.001316","volume":"0.52","funds":"0.00068432","market":"omgbtc","created_at":1529812380,"side":"sell"},{"id":10016040,"price":"0.0013155","volume":"0.47","funds":"0.000618285","market":"omgbtc","created_at":1529812328,"side":"sell"},{"id":10016031,"price":"0.001315","volume":"0.19","funds":"0.00024985","market":"omgbtc","created_at":1529812164,"side":"sell"},{"id":10016027,"price":"0.001314","volume":"0.31","funds":"0.00040734","market":"omgbtc","created_at":1529812115,"side":"sell"},{"id":10016019,"price":"0.001312","volume":"0.25","funds":"0.000328","market":"omgbtc","created_at":1529811981,"side":"buy"},{"id":10016013,"price":"0.001312","volume":"0.78","funds":"0.00102336","market":"omgbtc","created_at":1529811927,"side":"buy"},{"id":10016009,"price":"0.001312","volume":"0.59","funds":"0.00077408","market":"omgbtc","created_at":1529811859,"side":"buy"},{"id":10016000,"price":"0.001316","volume":"0.46","funds":"0.00060536","market":"omgbtc","created_at":1529811694,"side":"sell"},{"id":10015998,"price":"0.001316","volume":"0.48","funds":"0.00063168","market":"omgbtc","created_at":1529811669,"side":"buy"},{"id":10015988,"price":"0.001316","volume":"0.49","funds":"0.00064484","market":"omgbtc","created_at":1529811549,"side":"sell"},{"id":10015978,"price":"0.001316","volume":"0.44","funds":"0.00057904","market":"omgbtc","created_at":1529811402,"side":"buy"},{"id":10015977,"price":"0.001317","volume":"0.48","funds":"0.00063216","market":"omgbtc","created_at":1529811386,"side":"buy"},{"id":10015966,"price":"0.001317","volume":"0.21","funds":"0.00027657","market":"omgbtc","created_at":1529811233,"side":"sell"},{"id":10015965,"price":"0.001317","volume":"0.83","funds":"0.00109311","market":"omgbtc","created_at":1529811210,"side":"sell"}]'
+    http_version: 
+  recorded_at: Sun, 24 Jun 2018 04:50:30 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otcbtc.com/api/v2/tickers/ethusdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - otcbtc.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Jul 2018 09:30:16 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '167'
+      Connection:
+      - close
+      Server:
+      - nginx/1.12.2
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"f3bac91c0b931832bd38ff46580c62eb"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 035005ee-c795-4dab-9d77-b097ae639a98
+      X-Runtime:
+      - '0.006443'
+      X-Protected-By:
+      - Sqreen
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '1'
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1530610211,"ticker":{"open":450.24790931,"buy":"475.0","sell":"481.48682999","low":"445.667474","high":"485.556726","last":"475.81186402","vol":"1184.17635606"}}'
+    http_version: 
+  recorded_at: Tue, 03 Jul 2018 09:30:16 GMT
+recorded_with: VCR 4.0.0

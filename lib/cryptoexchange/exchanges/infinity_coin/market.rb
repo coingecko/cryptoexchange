@@ -1,6 +1,6 @@
 module Cryptoexchange::Exchanges
   module InfinityCoin
-    class Market
+    class Market < Cryptoexchange::Models::Market
       NAME = 'infinity_coin'
       API_URL = 'https://infinitycoin.exchange'
     end

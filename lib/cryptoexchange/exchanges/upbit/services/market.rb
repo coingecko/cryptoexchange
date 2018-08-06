@@ -9,40 +9,25 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          ticker_output = super(ticker_url(market_pair))
-          volume_output = sum_volume(market_pair)
-          adapt(ticker_output, volume_output, market_pair)
+          output = super(ticker_url(market_pair))
+          adapt(output, market_pair)
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Upbit::Market::API_URL}/days/?code=CRIX.UPBIT.#{market_pair.target}-#{market_pair.base}"
+          "#{Cryptoexchange::Exchanges::Upbit::Market::API_URL}/ticker?markets=#{market_pair.target}-#{market_pair.base}"
         end
 
-        def volume_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Upbit::Market::API_URL}/minutes/10?code=CRIX.UPBIT.#{market_pair.target}-#{market_pair.base}&count=145"
-        end
-
-        def sum_volume(market_pair)
-          volume = 0
-          raw_output = HTTP.get(volume_url(market_pair))
-          output = JSON.parse(raw_output)
-            output.each do |ticker|
-              volume = volume + ticker["candleAccTradeVolume"]
-            end
-          {"volume"=>volume}
-        end
-
-        def adapt(ticker_output, volume_output, market_pair)
+        def adapt(output, market_pair)
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Upbit::Market::NAME
-          ticker.last = NumericHelper.to_d(ticker_output[0]["tradePrice"])
-          ticker.high = NumericHelper.to_d(ticker_output[0]["highPrice"])
-          ticker.low = NumericHelper.to_d(ticker_output[0]["lowPrice"])
-          ticker.volume = NumericHelper.to_d(volume_output["volume"])
-          ticker.timestamp = Time.now.to_i
-          ticker.payload = ticker_output.push(volume_output)
+          ticker.last = NumericHelper.to_d(output[0]['trade_price'])
+          ticker.high = NumericHelper.to_d(output[0]['high_price'])
+          ticker.low = NumericHelper.to_d(output[0]['low_price'])
+          ticker.volume = NumericHelper.to_d(output[0]['acc_trade_volume_24h'])
+          ticker.timestamp = output[0]['trade_timestamp'].to_i / 1000
+          ticker.payload = output
           ticker
         end
       end
