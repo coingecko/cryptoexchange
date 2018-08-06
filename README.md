@@ -30,7 +30,9 @@ Or install it yourself as:
 | AEX               | Y       | Y          | Y       |         | Y           |          | aex               |
 | Allcoin           | Y       | Y          |         |         | User-Defined|          | allcoin           |
 | Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |
-| ANX               | Y       |            |         |         | User-Defined|          | anx               |
+| ANX               | Y       |            |         |         | User-Defined|          | anx   
+|
+| B2BX              | Y       | Y          |         |         | Y           |          | b2bx              |
 | Bancor            | Y       | N          | N       |         | Y           |          | bancor            |
 | Bcex              | Y       | Y          | Y       |         | Y           |          | bcex              |
 | Bibox             | Y       | Y          | Y       |         | Y           |          | bibox             |
