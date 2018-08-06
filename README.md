@@ -225,6 +225,7 @@ Or install it yourself as:
 | TuxExchange       | Y       |            |         |         | Y           |          | tux_exchange      |
 | Unocoin           |         |            |         |         |             |          | unocoin           |
 | Upbit             | Y       | Y          | Y       |         | Y           | Y        | upbit             |
+| Vebitcoin         | Y       | N          | N       |         | Y           | N        | vebitcoin         |
 | Vertpig           | Y       | Y          | N       |         | Y           | Y        | vertpig           |
 | Viabtc            | Y       |            |         |         | User-Defined|          | viabtc            |
 | Waves             | Y       | N          | Y       |         | Y           |          | waves             |
