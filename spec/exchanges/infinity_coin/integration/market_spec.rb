@@ -14,6 +14,11 @@ RSpec.describe 'Infinity Coin integration specs' do
     expect(pair.market).to eq 'infinity_coin'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'infinity_coin', base: xin_btc_pair.base, target: xin_btc_pair.target
+    expect(trade_page_url).to eq "https://infinitycoin.exchange/exchange/XIN"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(xin_btc_pair)
 

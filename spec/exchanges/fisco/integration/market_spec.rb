@@ -14,6 +14,11 @@ RSpec.describe 'Fisco integration specs' do
     expect(pair.market).to eq 'fisco'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'fisco', base: btc_jpy_pair.base, target: btc_jpy_pair.target
+    expect(trade_page_url).to eq "https://fcce.jp/trade_BTC_JPY"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_jpy_pair)
 
