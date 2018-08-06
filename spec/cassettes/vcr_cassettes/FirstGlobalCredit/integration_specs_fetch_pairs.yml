@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://trading.firstglobalcredit.com/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - trading.firstglobalcredit.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 06 Aug 2018 11:48:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1881'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d338e90d8d1676244d23e01848e8fcc4c1533556091; expires=Tue, 06-Aug-19
+        11:48:11 GMT; path=/; domain=.firstglobalcredit.com; HttpOnly
+      Cache-Control:
+      - private
+      X-Aspnetmvc-Version:
+      - '5.2'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 446145e53f93b6da-KIV
+    body:
+      encoding: UTF-8
+      string: '[{"currency_pair":"BCHUSD","bid":692.21372,"ask":692.96631,"last_price":693.112995,"base_currency":"BCH","base_volume":93.1664917742857,"float_currency":"USD","float_volume":65382.0556881817,"timestamp":"2018-08-06T11:48:13.331Z"},{"currency_pair":"BTCBCH","bid":10.0126773,"ask":10.0351251,"last_price":10.0505394,"base_currency":"BTC","base_volume":0.451179834285714,"float_currency":"BCH","float_volume":4.50275967109294,"timestamp":"2018-08-06T11:48:13.331Z"},{"currency_pair":"BTCCHF","bid":6948.1655889,"ask":6950.9359092,"last_price":6952.95013467,"base_currency":"BTC","base_volume":90.3306969364811,"float_currency":"CHF","float_volume":631292.33136099,"timestamp":"2018-08-06T11:48:13.331Z"},{"currency_pair":"BTCEUR","bid":6036.2944996,"ask":6038.88283506,"last_price":6040.3436896,"base_currency":"BTC","base_volume":113.263392159338,"float_currency":"EUR","float_volume":687322.874705474,"timestamp":"2018-08-06T11:48:13.331Z"},{"currency_pair":"BTCGBP","bid":5386.99158616,"ask":5388.94727394,"last_price":5390.82471938,"base_currency":"BTC","base_volume":135.483795356481,"float_currency":"GBP","float_volume":731393.871459345,"timestamp":"2018-08-06T11:48:13.331Z"},{"currency_pair":"BTCUSD","bid":6965.40339,"ask":6966.59659,"last_price":6967.6804425,"base_currency":"BTC","base_volume":435.554899179336,"float_currency":"USD","float_volume":3054863.0087361,"timestamp":"2018-08-06T11:48:13.331Z"},{"currency_pair":"ETHUSD","bid":407.09635,"ask":407.513655,"last_price":407.01639,"base_currency":"ETH","base_volume":91.3240245742858,"float_currency":"USD","float_volume":37272.5433831495,"timestamp":"2018-08-06T11:48:13.331Z"},{"currency_pair":"XAIBTC","bid":0.00000770000042393804,"ask":0.00000828999964141985,"last_price":0.00000781,"base_currency":"XAI","base_volume":62000,"float_currency":"BTC","float_volume":0.48458,"timestamp":"2018-08-06T11:48:13.331Z"}]'
+    http_version: 
+  recorded_at: Mon, 06 Aug 2018 11:48:13 GMT
+recorded_with: VCR 4.0.0

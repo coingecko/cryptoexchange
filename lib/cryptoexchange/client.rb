@@ -18,7 +18,7 @@ module Cryptoexchange
     end
 
     def ticker(market_pair)
-      exchange = market_pair.market
+      exchange = market_pair.second_market || market_pair.market
       market_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Market"
       market_class = Object.const_get(market_classname)
       market = market_class.new
@@ -82,3 +82,4 @@ module Cryptoexchange
     end
   end
 end
+

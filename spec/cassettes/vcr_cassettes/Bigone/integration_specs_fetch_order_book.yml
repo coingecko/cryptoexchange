@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://big.one/api/v2/markets/ETH-BTC/depth
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - big.one
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 06 Aug 2018 11:48:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '5626'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc27b83e0d74c840e72f4146ae4ce57a91533556087; expires=Tue, 06-Aug-19
+        11:48:07 GMT; path=/; domain=.big.one; HttpOnly; Secure
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2l44i8nqsddijelel807q5o4
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 446145ca49d9b6e6-KIV
+    body:
+      encoding: UTF-8
+      string: '{"data":{"market_uuid":"38dd30bf-76c2-4777-ae2a-a3222433eef3","market_id":"ETH-BTC","bids":[{"price":"0.058397","order_count":1,"amount":"1.5267"},{"price":"0.058387","order_count":1,"amount":"0.0477"},{"price":"0.05823795","order_count":1,"amount":"0.2199"},{"price":"0.05816091","order_count":1,"amount":"0.1874"},{"price":"0.058126","order_count":1,"amount":"0.341"},{"price":"0.05801603","order_count":1,"amount":"0.6482"},{"price":"0.05796215","order_count":1,"amount":"2"},{"price":"0.05796214","order_count":1,"amount":"0.6841"},{"price":"0.057838","order_count":1,"amount":"0.0002"},{"price":"0.05783602","order_count":1,"amount":"0.2538"},{"price":"0.057836","order_count":1,"amount":"0.0036"},{"price":"0.0578347","order_count":1,"amount":"0.046"},{"price":"0.05781235","order_count":1,"amount":"0.8407"},{"price":"0.057808","order_count":1,"amount":"0.0001"},{"price":"0.05780599","order_count":1,"amount":"0.0861"},{"price":"0.05766006","order_count":1,"amount":"20"},{"price":"0.05766005","order_count":1,"amount":"1.3971"},{"price":"0.057545","order_count":1,"amount":"0.0414"},{"price":"0.05753641","order_count":1,"amount":"0.703"},{"price":"0.0575","order_count":1,"amount":"1.5"},{"price":"0.05740957","order_count":1,"amount":"0.0498"},{"price":"0.05720001","order_count":1,"amount":"2.9469"},{"price":"0.0572","order_count":2,"amount":"3.0499"},{"price":"0.057184","order_count":1,"amount":"0.0439"},{"price":"0.05704288","order_count":1,"amount":"20"},{"price":"0.0566","order_count":1,"amount":"5"},{"price":"0.0563869","order_count":1,"amount":"0.0902"},{"price":"0.05606938","order_count":1,"amount":"0.973"},{"price":"0.055662","order_count":2,"amount":"0.0488"},{"price":"0.055183","order_count":1,"amount":"1.8479"},{"price":"0.055171","order_count":2,"amount":"0.135"},{"price":"0.055169","order_count":1,"amount":"0.0538"},{"price":"0.055157","order_count":1,"amount":"0.1212"},{"price":"0.055","order_count":1,"amount":"3.0028"},{"price":"0.054984","order_count":3,"amount":"0.6628"},{"price":"0.05498","order_count":1,"amount":"0.0004"},{"price":"0.05497803","order_count":1,"amount":"0.128"},{"price":"0.054978","order_count":2,"amount":"0.1379"},{"price":"0.054962","order_count":1,"amount":"0.122"},{"price":"0.05496003","order_count":1,"amount":"0.0977"},{"price":"0.0549584","order_count":1,"amount":"0.1277"},{"price":"0.054891","order_count":1,"amount":"0.0328"},{"price":"0.05472795","order_count":1,"amount":"0.0783"},{"price":"0.054499","order_count":1,"amount":"0.2027"},{"price":"0.054487","order_count":1,"amount":"0.0647"},{"price":"0.05436009","order_count":1,"amount":"0.5322"},{"price":"0.05378","order_count":1,"amount":"0.0744"},{"price":"0.05366633","order_count":1,"amount":"0.496"},{"price":"0.0536663","order_count":1,"amount":"0.0536"},{"price":"0.05297257","order_count":1,"amount":"0.0725"}],"asks":[{"price":"0.05859992","order_count":1,"amount":"5.97"},{"price":"0.05860992","order_count":1,"amount":"2"},{"price":"0.05869","order_count":1,"amount":"0.0792"},{"price":"0.05869399","order_count":1,"amount":"6.0215"},{"price":"0.05876378","order_count":1,"amount":"20"},{"price":"0.0588","order_count":1,"amount":"0.0212"},{"price":"0.0589","order_count":1,"amount":"10"},{"price":"0.05897238","order_count":1,"amount":"3.5309"},{"price":"0.059","order_count":1,"amount":"10"},{"price":"0.05923466","order_count":1,"amount":"4.9112"},{"price":"0.05926308","order_count":1,"amount":"0.1655"},{"price":"0.05926921","order_count":1,"amount":"2.988"},{"price":"0.05928952","order_count":1,"amount":"2.7947"},{"price":"0.05958504","order_count":1,"amount":"5.359"},{"price":"0.05962493","order_count":1,"amount":"0.3735"},{"price":"0.05962494","order_count":1,"amount":"15.2"},{"price":"0.05970988","order_count":1,"amount":"5.6386"},{"price":"0.05995684","order_count":1,"amount":"0.2465"},{"price":"0.06","order_count":1,"amount":"0.0604"},{"price":"0.06010561","order_count":1,"amount":"0.9848"},{"price":"0.060194","order_count":1,"amount":"0.02"},{"price":"0.060195","order_count":1,"amount":"0.05"},{"price":"0.0606506","order_count":1,"amount":"0.2728"},{"price":"0.06134436","order_count":1,"amount":"0.3218"},{"price":"0.06203812","order_count":1,"amount":"0.2335"},{"price":"0.06273188","order_count":1,"amount":"0.5491"},{"price":"0.063299","order_count":2,"amount":"0.1007"},{"price":"0.06342564","order_count":1,"amount":"0.3631"},{"price":"0.0641194","order_count":1,"amount":"0.1128"},{"price":"0.06436","order_count":1,"amount":"1"},{"price":"0.06481316","order_count":1,"amount":"0.1998"},{"price":"0.06540129","order_count":1,"amount":"0.079"},{"price":"0.06550692","order_count":1,"amount":"0.4218"},{"price":"0.06620068","order_count":1,"amount":"0.6998"},{"price":"0.06689444","order_count":1,"amount":"0.0171"},{"price":"0.0675882","order_count":1,"amount":"0.1767"},{"price":"0.06828196","order_count":1,"amount":"0.4253"},{"price":"0.06897572","order_count":1,"amount":"0.064"},{"price":"0.069","order_count":2,"amount":"0.0615"},{"price":"0.06932431","order_count":1,"amount":"0.039"},{"price":"0.06966948","order_count":1,"amount":"0.3616"},{"price":"0.06995608","order_count":1,"amount":"0.1566"},{"price":"0.07036324","order_count":1,"amount":"0.372"},{"price":"0.071057","order_count":1,"amount":"0.2136"},{"price":"0.07175076","order_count":1,"amount":"0.2115"},{"price":"0.07187098","order_count":1,"amount":"0.025"},{"price":"0.07235834","order_count":1,"amount":"1"},{"price":"0.07244452","order_count":1,"amount":"0.1789"},{"price":"0.07313828","order_count":1,"amount":"0.2648"},{"price":"0.07383204","order_count":1,"amount":"0.3099"}]}}'
+    http_version: 
+  recorded_at: Mon, 06 Aug 2018 11:48:07 GMT
+recorded_with: VCR 4.0.0
