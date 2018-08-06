@@ -14,6 +14,11 @@ RSpec.describe 'F1cx integration specs' do
     expect(pair.market).to eq 'f1cx'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'f1cx', base: mtc_ltc_pair.base, target: mtc_ltc_pair.target
+    expect(trade_page_url).to eq "https://f1cx.com/markets/MTCLTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(mtc_ltc_pair)
 

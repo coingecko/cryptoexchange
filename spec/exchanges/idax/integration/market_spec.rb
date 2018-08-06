@@ -14,6 +14,11 @@ RSpec.describe 'Idax integration specs' do
     expect(pair.market).to eq 'idax'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'idax', base: pair.base, target: pair.target
+    expect(trade_page_url).to eq "https://www.idax.mn/#/exchange?pairname=ETH_BTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(pair)
 
@@ -30,4 +35,3 @@ RSpec.describe 'Idax integration specs' do
     expect(ticker.payload).to_not be nil
   end
 end
- 

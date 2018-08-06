@@ -15,6 +15,11 @@ RSpec.describe 'Ooobtc integration specs' do
     expect(pair.market).to eq 'ooobtc'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'ooobtc', base: eth_btc_pair.base, target: eth_btc_pair.target
+    expect(trade_page_url).to eq "https://www.ooobtc.com/trading?coin=ETH&current=BTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(eth_btc_pair)
 

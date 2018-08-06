@@ -14,6 +14,11 @@ RSpec.describe 'Bigone integration specs' do
     expect(pair.market).to eq 'bigone'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'bigone', base: eth_btc_pair.base, target: eth_btc_pair.target
+    expect(trade_page_url).to eq "https://big.one/trade/ETH-BTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(eth_btc_pair)
 

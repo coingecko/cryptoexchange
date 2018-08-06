@@ -14,6 +14,11 @@ RSpec.describe 'Bitibu integration specs' do
     expect(pair.market).to eq 'bitibu'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'bitibu', base: btc_usd_pair.base, target: btc_usd_pair.target
+    expect(trade_page_url).to eq "https://bitibu.com/markets/BTCUSD"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_usd_pair)
 

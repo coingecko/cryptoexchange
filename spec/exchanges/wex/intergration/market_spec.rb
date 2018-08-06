@@ -13,6 +13,12 @@ RSpec.describe 'wex integration specs' do
     expect(pair.market).to eq 'wex'
   end
 
+  it 'give trade url' do
+    btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usd', market: 'wex')
+    trade_page_url = client.trade_page_url 'wex', base: btc_usd_pair.base, target: btc_usd_pair.target
+    expect(trade_page_url).to eq "https://wex.nz/exchange/btc_usd"
+  end
+
   it 'fetch ticker' do
     btc_usd_pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usd', market: 'wex')
     ticker = client.ticker(btc_usd_pair)

@@ -14,6 +14,11 @@ RSpec.describe 'BtcTradeUa integration specs' do
     expect(pair.market).to eq 'btc_trade_ua'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'btc_trade_ua', base: ltc_uah_pair.base, target: ltc_uah_pair.target
+    expect(trade_page_url).to eq "https://btc-trade.com.ua/stock/LTC_UAH"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(ltc_uah_pair)
 
