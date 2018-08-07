@@ -29,7 +29,7 @@ module Cryptoexchange::Exchanges
           ticker.low       = NumericHelper.to_d(output['data']['low'])
           ticker.bid       = NumericHelper.to_d(output['data']['bid'])
           ticker.ask       = NumericHelper.to_d(output['data']['ask'])
-          ticker.volume    = NumericHelper.to_d(output['data']['base_volume'])
+          ticker.volume    = NumericHelper.to_d(output['data']['vol'])
           ticker.change    = NumericHelper.to_d(output['data']['change_daily'])
 
           ticker.timestamp = output['data']['timestamps'].to_i / 1000
