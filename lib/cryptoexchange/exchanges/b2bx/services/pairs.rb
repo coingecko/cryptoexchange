@@ -10,8 +10,8 @@ module Cryptoexchange::Exchanges
           output = JSON.parse(raw_output)
           output.each do |pair|
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair['ProfitCurrency'],
-                              target: pair['MarginCurrency'],
+                              base: pair['MarginCurrency'],
+                              target: pair['ProfitCurrency'],
                               market: B2bx::Market::NAME
                             )
           end
