@@ -71,6 +71,7 @@ Or install it yourself as:
 | BTCC              | Y       |            |         |         | User-Defined|          | btcc              |
 | BTCChina          |         |            |         |         |             |          |                   |
 | Btcsquare         | Y       | Y          | Unstable|         | Y           | Y        | btcsquare         |
+| BTCTurk           | Y       | Y          |         |         | Y           |          | btcturk           |
 | BTER              | Y       |            |         |         | Y           |          | bter              |
 | Buyucoin          | Y       | N          | N       |         | Y           |          | buyucoin          |
 | BX Thailand       | Y       |            |         |         | Y           |          | bx_thailand       |
