@@ -1,0 +1,154 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://letsdocoinz.com/api/2/public/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - letsdocoinz.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Wed, 08 Aug 2018 11:34:04 GMT
+      Content-Type:
+      - text/html; charset=iso-8859-1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d15b561e59d9e24f6f94d99def879e93d1533728044; expires=Thu, 08-Aug-19
+        11:34:04 GMT; path=/; domain=.letsdocoinz.com; HttpOnly
+      Location:
+      - https://letsdocoinz.com/api/2/public/ticker/
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4471abf3c8446f78-SIN
+    body:
+      encoding: ISO-8859-1
+      string: |
+        <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+        <html><head>
+        <title>301 Moved Permanently</title>
+        <style>
+            body {margin: 20px; font-family: helvetica, sans-serif; max-width: 800px;}
+            .error {color: #e00;}
+            pre {font-size: 16px;}
+            h1 {font-size: 28px;}
+        </style>
+        </head><body>
+        <h1>Moved Permanently</h1>
+        <p>The document has moved <a href="https://letsdocoinz.com/api/2/public/ticker/">here</a>.</p>
+        </body></html>
+    http_version: 
+  recorded_at: Wed, 08 Aug 2018 16:34:23 GMT
+- request:
+    method: get
+    uri: https://letsdocoinz.com/api/2/public/ticker/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/3.0.0
+      Host:
+      - letsdocoinz.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Aug 2018 11:34:07 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d562d913f452e32907cdc6dbdc38180291533728045; expires=Thu, 08-Aug-19
+        11:34:05 GMT; path=/; domain=.letsdocoinz.com; HttpOnly
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4471abfbef0970a4-SIN
+    body:
+      encoding: UTF-8
+      string: '[{"id":3,"pair":"XMR\/BTC","cur1_id":2,"cur2_id":1,"status":"Active","order":1,"price_min":"0.00000001","price_max":"1.00000000","amount_min":"0.00100000","ask":"0.02599990","bid":"0.01200000","last":"0.02900000","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:05","symbol":"XMR-BTC","volume_cur2":0},{"id":5,"pair":"ETH\/BTC","cur1_id":5,"cur2_id":1,"status":"Active","order":2,"price_min":"0.00000001","price_max":"1.00000000","amount_min":"0.00100000","ask":"0.08000000","bid":"0.03000000","last":"0.09999999","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:05","symbol":"ETH-BTC","volume_cur2":0},{"id":2,"pair":"AEON\/BTC","cur1_id":3,"cur2_id":1,"status":"Active","order":3,"price_min":"0.00000001","price_max":"0.10000000","amount_min":"0.01000000","ask":"0.00024999","bid":"0.00020000","last":"0.00020000","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:05","symbol":"AEON-BTC","volume_cur2":0},{"id":4,"pair":"ETN\/BTC","cur1_id":4,"cur2_id":1,"status":"Active","order":5,"price_min":"0.00000001","price_max":"0.00100000","amount_min":"1.00000000","ask":"0.00000147","bid":"0.00000100","last":"0.00000100","open":"0.00000109","change":-8.26,"volume":"21.000","timestamp":"2018-08-08
+        11:34:05","symbol":"ETN-BTC","volume_cur2":2.1e-5},{"id":28,"pair":"ETN\/ETH","cur1_id":4,"cur2_id":5,"status":"Active","order":5,"price_min":"0.00000001","price_max":"1.00000000","amount_min":"1.00000000","ask":"0.00002998","bid":"0.00000202","last":"0.00001501","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:05","symbol":"ETN-ETH","volume_cur2":0},{"id":7,"pair":"DOGX\/BTC","cur1_id":6,"cur2_id":1,"status":"Active","order":6,"price_min":"0.00000001","price_max":"1000000.00000000","amount_min":"1.00000000","ask":"0.00000013","bid":"0.00000011","last":"0.00000030","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:05","symbol":"DOGX-BTC","volume_cur2":0},{"id":25,"pair":"DOGX\/ETH","cur1_id":6,"cur2_id":5,"status":"Active","order":7,"price_min":"0.00000001","price_max":"0.00001200","amount_min":"0.10000000","ask":"0.00000874","bid":"0.00000040","last":"0.00000019","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:05","symbol":"DOGX-ETH","volume_cur2":0},{"id":26,"pair":"DOGX\/DOGE","cur1_id":6,"cur2_id":16,"status":"Active","order":7,"price_min":"0.00000001","price_max":"2.00000000","amount_min":"1.00000000","ask":"0.25200001","bid":"0.07200000","last":"0.07200000","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:05","symbol":"DOGX-DOGE","volume_cur2":0},{"id":10,"pair":"DOGX\/ETN","cur1_id":6,"cur2_id":4,"status":"Active","order":7,"price_min":"0.00000001","price_max":"1000000.00000000","amount_min":"1.00000000","ask":"0.10000000","bid":"0.04000000","last":"0.02300002","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:05","symbol":"DOGX-ETN","volume_cur2":0},{"id":9,"pair":"XRP\/BTC","cur1_id":7,"cur2_id":1,"status":"Active","order":8,"price_min":"0.00000001","price_max":"0.10000000","amount_min":"0.00100000","ask":"0.00008700","bid":"0.00002020","last":"0.00002020","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:05","symbol":"XRP-BTC","volume_cur2":0},{"id":11,"pair":"CLO\/BTC","cur1_id":8,"cur2_id":1,"status":"Active","order":9,"price_min":"0.00000001","price_max":"1000000.00000000","amount_min":"1.00000000","ask":"0.00000500","bid":"0.00000030","last":"0.00000500","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"CLO-BTC","volume_cur2":0},{"id":8,"pair":"AION\/BTC","cur1_id":9,"cur2_id":1,"status":"Active","order":10,"price_min":"0.00000001","price_max":"1000000.00000000","amount_min":"1.00000000","ask":"-","bid":"0.00000090","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"AION-BTC","volume_cur2":0},{"id":12,"pair":"SLB\/BTC","cur1_id":10,"cur2_id":1,"status":"Active","order":11,"price_min":"0.00000001","price_max":"1000000.00000000","amount_min":"1.00000000","ask":"0.00003220","bid":"0.00003210","last":"0.00003500","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"SLB-BTC","volume_cur2":0},{"id":13,"pair":"SKY\/BTC","cur1_id":11,"cur2_id":1,"status":"Active","order":12,"price_min":"0.00000001","price_max":"1000000.00000000","amount_min":"0.10000000","ask":"-","bid":"0.00006000","last":"0.10000000","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"SKY-BTC","volume_cur2":0},{"id":14,"pair":"ETC\/BTC","cur1_id":12,"cur2_id":1,"status":"Active","order":13,"price_min":"0.00000001","price_max":"1000000.00000000","amount_min":"0.00100000","ask":"0.00700000","bid":"0.00010001","last":"0.00005007","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"ETC-BTC","volume_cur2":0},{"id":15,"pair":"ETSC\/BTC","cur1_id":13,"cur2_id":1,"status":"Active","order":14,"price_min":"0.00000001","price_max":"0.10000000","amount_min":"1.00000000","ask":"0.00000900","bid":"0.00000007","last":"0.00000997","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"ETSC-BTC","volume_cur2":0},{"id":49,"pair":"LTC\/ETH","cur1_id":29,"cur2_id":5,"status":"Active","order":15,"price_min":"0.00000001","price_max":"0.10000000","amount_min":"0.01000000","ask":"-","bid":"0.00040000","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"LTC-ETH","volume_cur2":0},{"id":50,"pair":"DOGE\/LTC","cur1_id":16,"cur2_id":29,"status":"Active","order":15,"price_min":"0.00000001","price_max":"0.10000000","amount_min":"1.00000000","ask":"0.00006990","bid":"0.00000060","last":"0.00000003","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"DOGE-LTC","volume_cur2":0},{"id":51,"pair":"ETN\/LTC","cur1_id":4,"cur2_id":29,"status":"Active","order":15,"price_min":"0.00000001","price_max":"0.10000000","amount_min":"1.00000000","ask":"0.00009888","bid":"0.00000040","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"ETN-LTC","volume_cur2":0},{"id":52,"pair":"ETNX\/LTC","cur1_id":17,"cur2_id":29,"status":"Active","order":15,"price_min":"0.00000001","price_max":"0.00100000","amount_min":"10.00000000","ask":"0.00000008","bid":"0.00000002","last":"0.00000009","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"ETNX-LTC","volume_cur2":0},{"id":6,"pair":"LTC\/BTC","cur1_id":29,"cur2_id":1,"status":"Active","order":15,"price_min":"0.00000001","price_max":"0.01000000","amount_min":"0.01000000","ask":"-","bid":"0.00023000","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"LTC-BTC","volume_cur2":0},{"id":16,"pair":"YTN\/BTC","cur1_id":14,"cur2_id":1,"status":"Active","order":16,"price_min":"0.00000001","price_max":"1000000.00000000","amount_min":"1.00000000","ask":"0.00000348","bid":"0.00000150","last":"0.00000348","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"YTN-BTC","volume_cur2":0},{"id":36,"pair":"DOGE\/ETH","cur1_id":16,"cur2_id":5,"status":"Active","order":17,"price_min":"0.00000001","price_max":"0.01000000","amount_min":"1.00000000","ask":"0.00011000","bid":"0.00000151","last":"0.00000110","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"DOGE-ETH","volume_cur2":0},{"id":17,"pair":"DOGE\/BTC","cur1_id":16,"cur2_id":1,"status":"Active","order":17,"price_min":"0.00000001","price_max":"0.01000000","amount_min":"1.00000000","ask":"0.00000042","bid":"0.00000028","last":"0.00000040","open":"0.00000040","change":0,"volume":"349.820","timestamp":"2018-08-08
+        11:34:06","symbol":"DOGE-BTC","volume_cur2":0.000139928},{"id":18,"pair":"ETNX\/BTC","cur1_id":17,"cur2_id":1,"status":"Active","order":18,"price_min":"0.00000001","price_max":"0.00000010","amount_min":"10.00000000","ask":"0.00000001","bid":"-","last":"0.00000001","open":"0.00000001","change":0,"volume":"78.000","timestamp":"2018-08-08
+        11:34:06","symbol":"ETNX-BTC","volume_cur2":7.8e-7},{"id":37,"pair":"ETNX\/ETH","cur1_id":17,"cur2_id":5,"status":"Active","order":18,"price_min":"0.00000001","price_max":"0.00000100","amount_min":"10.00000000","ask":"0.00000002","bid":"0.00000001","last":"0.00000001","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"ETNX-ETH","volume_cur2":0},{"id":21,"pair":"ETNX\/ETN","cur1_id":17,"cur2_id":4,"status":"Active","order":19,"price_min":"0.00000010","price_max":"1.00000000","amount_min":"10.00000000","ask":"0.00057999","bid":"0.00045000","last":"0.00040000","open":"0.00059999","change":-33.33,"volume":"16278.000","timestamp":"2018-08-08
+        11:34:06","symbol":"ETNX-ETN","volume_cur2":6.5112000000000005},{"id":20,"pair":"ETZ\/BTC","cur1_id":19,"cur2_id":1,"status":"Active","order":21,"price_min":"0.00000001","price_max":"1.00000000","amount_min":"1.00000000","ask":"-","bid":"0.00001000","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"ETZ-BTC","volume_cur2":0},{"id":22,"pair":"XMV\/BTC","cur1_id":20,"cur2_id":1,"status":"Active","order":22,"price_min":"0.00000001","price_max":"1000000.00000000","amount_min":"0.10000000","ask":"0.00002990","bid":"0.00000140","last":"0.00000002","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"XMV-BTC","volume_cur2":0},{"id":23,"pair":"RTO\/BTC","cur1_id":21,"cur2_id":1,"status":"Active","order":23,"price_min":"0.00000001","price_max":"1000000.00000000","amount_min":"1.00000000","ask":"-","bid":"0.00000004","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"RTO-BTC","volume_cur2":0},{"id":24,"pair":"ETNX\/DOGE","cur1_id":17,"cur2_id":16,"status":"Active","order":24,"price_min":"0.00000001","price_max":"1.00000000","amount_min":"1.00000000","ask":"0.00279999","bid":"0.00035000","last":"0.00000220","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"ETNX-DOGE","volume_cur2":0},{"id":27,"pair":"GSD\/BTC","cur1_id":22,"cur2_id":1,"status":"Active","order":30,"price_min":"0.00000001","price_max":"1.00000000","amount_min":"1.00000000","ask":"0.00000004","bid":"0.00000003","last":"0.00000004","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"GSD-BTC","volume_cur2":0},{"id":30,"pair":"GSD\/ETH","cur1_id":22,"cur2_id":5,"status":"Active","order":31,"price_min":"0.00000001","price_max":"1.00000000","amount_min":"1.00000000","ask":"0.00000077","bid":"0.00000069","last":"0.00000077","open":"0.00000078","change":-1.28,"volume":"700.000","timestamp":"2018-08-08
+        11:34:06","symbol":"GSD-ETH","volume_cur2":0.000539},{"id":29,"pair":"EOSC\/BTC","cur1_id":23,"cur2_id":1,"status":"Active","order":40,"price_min":"0.00000001","price_max":"0.00100000","amount_min":"1.00000000","ask":"0.00000050","bid":"0.00000014","last":"0.00000168","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"EOSC-BTC","volume_cur2":0},{"id":31,"pair":"EOSC\/ETH","cur1_id":23,"cur2_id":5,"status":"Active","order":40,"price_min":"0.00000001","price_max":"0.01000000","amount_min":"1.00000000","ask":"0.00000090","bid":"0.00000030","last":"0.00000090","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"EOSC-ETH","volume_cur2":0},{"id":33,"pair":"VIC\/ETH","cur1_id":24,"cur2_id":5,"status":"Active","order":50,"price_min":"0.00000001","price_max":"0.01000000","amount_min":"1.00000000","ask":"-","bid":"0.00000010","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"VIC-ETH","volume_cur2":0},{"id":32,"pair":"VIC\/BTC","cur1_id":24,"cur2_id":1,"status":"Active","order":50,"price_min":"0.00000001","price_max":"0.00100000","amount_min":"1.00000000","ask":"0.00001419","bid":"0.00000200","last":"0.00001419","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"VIC-BTC","volume_cur2":0},{"id":34,"pair":"WOW\/BTC","cur1_id":25,"cur2_id":1,"status":"Active","order":60,"price_min":"0.00000001","price_max":"0.00100000","amount_min":"1.00000000","ask":"-","bid":"0.00000003","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:06","symbol":"WOW-BTC","volume_cur2":0},{"id":35,"pair":"WOW\/ETH","cur1_id":25,"cur2_id":5,"status":"Active","order":60,"price_min":"0.00000001","price_max":"0.01000000","amount_min":"1.00000000","ask":"-","bid":"0.00000010","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:07","symbol":"WOW-ETH","volume_cur2":0},{"id":38,"pair":"GEM\/BTC","cur1_id":26,"cur2_id":1,"status":"Active","order":70,"price_min":"0.00000001","price_max":"0.00100000","amount_min":"1.00000000","ask":"0.00000004","bid":"0.00000003","last":"0.00000003","open":"0.00000003","change":0,"volume":"458.000","timestamp":"2018-08-08
+        11:34:07","symbol":"GEM-BTC","volume_cur2":1.3739999999999999e-5},{"id":39,"pair":"GEM\/ETH","cur1_id":26,"cur2_id":5,"status":"Active","order":71,"price_min":"0.00000001","price_max":"0.01000000","amount_min":"1.00000000","ask":"0.00012999","bid":"0.00000005","last":"0.00000005","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:07","symbol":"GEM-ETH","volume_cur2":0},{"id":40,"pair":"GEM\/DOGE","cur1_id":26,"cur2_id":16,"status":"Active","order":73,"price_min":"0.00000001","price_max":"10.00000000","amount_min":"1.00000000","ask":"0.00901000","bid":"0.00850100","last":"0.00850100","open":"0.00801000","change":6.13,"volume":"1600.000","timestamp":"2018-08-08
+        11:34:07","symbol":"GEM-DOGE","volume_cur2":13.6016},{"id":41,"pair":"MDX\/BTC","cur1_id":27,"cur2_id":1,"status":"Active","order":80,"price_min":"0.00000001","price_max":"0.00100000","amount_min":"1.00000000","ask":"-","bid":"0.00000001","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:07","symbol":"MDX-BTC","volume_cur2":0},{"id":42,"pair":"MDX\/ETH","cur1_id":27,"cur2_id":5,"status":"Active","order":81,"price_min":"0.00000001","price_max":"0.01000000","amount_min":"1.00000000","ask":"-","bid":"0.00000003","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:07","symbol":"MDX-ETH","volume_cur2":0},{"id":43,"pair":"ETHO\/BTC","cur1_id":28,"cur2_id":1,"status":"Active","order":90,"price_min":"0.00000001","price_max":"0.00100000","amount_min":"1.00000000","ask":"-","bid":"0.00000002","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:07","symbol":"ETHO-BTC","volume_cur2":0},{"id":44,"pair":"ETHO\/ETH","cur1_id":28,"cur2_id":5,"status":"Active","order":90,"price_min":"0.00000001","price_max":"0.00100000","amount_min":"1.00000000","ask":"-","bid":"0.00000012","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:07","symbol":"ETHO-ETH","volume_cur2":0},{"id":45,"pair":"ETN\/XMR","cur1_id":4,"cur2_id":2,"status":"Active","order":100,"price_min":"0.00000001","price_max":"0.00100000","amount_min":"1.00000000","ask":"0.00013900","bid":"0.00000051","last":"0.00013999","open":"0.00010000","change":39.99,"volume":"200.000","timestamp":"2018-08-08
+        11:34:07","symbol":"ETN-XMR","volume_cur2":0.027998},{"id":46,"pair":"ETNX\/XMR","cur1_id":17,"cur2_id":2,"status":"Active","order":101,"price_min":"0.00000001","price_max":"0.00100000","amount_min":"1.00000000","ask":"0.00000100","bid":"0.00000001","last":"0.00000001","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:07","symbol":"ETNX-XMR","volume_cur2":0},{"id":48,"pair":"AIC\/ETH","cur1_id":30,"cur2_id":5,"status":"Active","order":110,"price_min":"0.01040000","price_max":"0.10000000","amount_min":"0.01000000","ask":"-","bid":"0.01040000","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:07","symbol":"AIC-ETH","volume_cur2":0},{"id":47,"pair":"AIC\/BTC","cur1_id":30,"cur2_id":1,"status":"Active","order":110,"price_min":"0.00060000","price_max":"0.00100000","amount_min":"0.01000000","ask":"0.00061300","bid":"0.00061299","last":"0.00060000","open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:07","symbol":"AIC-BTC","volume_cur2":0},{"id":53,"pair":"CCX\/BTC","cur1_id":31,"cur2_id":1,"status":"Active","order":120,"price_min":"0.00000001","price_max":"0.00100000","amount_min":"1.00000000","ask":"-","bid":"0.00000001","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:07","symbol":"CCX-BTC","volume_cur2":0},{"id":54,"pair":"CCX\/ETH","cur1_id":31,"cur2_id":5,"status":"Active","order":120,"price_min":"0.00000001","price_max":"0.00100000","amount_min":"1.00000000","ask":"-","bid":"0.00000001","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:07","symbol":"CCX-ETH","volume_cur2":0},{"id":55,"pair":"CCX\/DOGE","cur1_id":31,"cur2_id":16,"status":"Active","order":120,"price_min":"0.00000001","price_max":"10.00000000","amount_min":"1.00000000","ask":"-","bid":"0.00210200","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:07","symbol":"CCX-DOGE","volume_cur2":0},{"id":56,"pair":"CCX\/XMR","cur1_id":31,"cur2_id":2,"status":"Active","order":120,"price_min":"0.00000001","price_max":"0.01000000","amount_min":"1.00000000","ask":"-","bid":"0.00000002","last":0,"open":0,"change":0,"volume":0,"timestamp":"2018-08-08
+        11:34:07","symbol":"CCX-XMR","volume_cur2":0}]'
+    http_version: 
+  recorded_at: Wed, 08 Aug 2018 16:34:26 GMT
+recorded_with: VCR 4.0.0
