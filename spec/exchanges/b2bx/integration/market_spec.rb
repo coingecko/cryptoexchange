@@ -30,6 +30,7 @@ RSpec.describe 'B2bx integration specs' do
   end
 
   it 'fetch order book' do
+    pending 'fetch order book disabled due to timestamp in curl'
     order_book = client.order_book(eth_btc_pair)
 
     expect(order_book.base).to eq 'ETH'
