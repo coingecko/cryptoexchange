@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://p2pb2b.io/api/v2/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - p2pb2b.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 08 Aug 2018 12:05:58 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - XSRF-TOKEN=eyJpdiI6InJnaThvNU43RStkdndXdENZQVhmekE9PSIsInZhbHVlIjoid3hhU2tOaTZLeHJpXC9oTWowM1JOclVsM3QxRVU2M1wvcWw3R3pFcXpXTWdjMVlwMVFYb05RbG1YblA2cE5sRklUcFA1RThZaXFPTjU0OGdiTWpCV1loQT09IiwibWFjIjoiYzVlMzYwZmJjOTgyZDJjMDIwMWRlNDQ3YWRlNjAwYTUwOGE5NWYyMjRiMTIyOGJlNWQ2ZGU0NTdjYjdiMGI5MSJ9;
+        expires=Fri, 15-Jul-2118 12:05:58 GMT; Max-Age=3153600000; path=/
+      - __cfduid=d5138158bf2564f9513fdefdab62780001533729958; expires=Thu, 08-Aug-19
+        12:05:58 GMT; path=/; domain=.p2pb2b.io; HttpOnly; Secure
+      - p2pb2b_session=eyJpdiI6ImthV0tqQTFOTkp4NVRGXC9hb3RsWURRPT0iLCJ2YWx1ZSI6IlFiell2alwvYXBDOFhBUkFKN1VqUW4reitHRE1VQUkxQ1F3Snk3TUhTTG9ja0xMVkpGTllRYnFmTVNTYVFFR09GdEp5WFdldEJyaHlBSjF5N25oVndodz09IiwibWFjIjoiMmViYzZkOGJhNmIwNTMxNzc3NzM0MWM1MGM4NzAwMjY5MzQxZmUwN2VkZjE1NWE0M2U5ODgzZDAxZWIwOTg5YiJ9;
+        expires=Fri, 15-Jul-2118 12:05:58 GMT; Max-Age=3153600000; path=/; httponly
+      Cache-Control:
+      - no-cache, private
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4471daadbbd0309c-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ethbtc":{"at":1533729958,"ticker":{"buy":"0.05391283","sell":"0.05977559","low":"0.05635","high":"0.0573","last":"0.056588","vol":"27.99535816"}},"btcusd":{"at":1533729958,"ticker":{"buy":"6547.098123","sell":"8972.898123","low":"6794.19899999","high":"7091.68912001","last":"6874.575","vol":"158.07758762"}},"ethusd":{"at":1533729958,"ticker":{"buy":"383.579213","sell":"511.000019","low":"385","high":"420.98310492","last":"388.1199997","vol":"70.97925179"}},"bccbtc":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0.09393659","high":"0.09910611","last":"0.0953483","vol":"1148.68586101"}},"btgbtc":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0.00275538","high":"0.0028781","last":"0.00282923","vol":"1147.42148513"}},"ltcbtc":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0.01003","high":"0.01016103","last":"0.01014059","vol":"612.12554227"}},"dogebtc":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"3.9e-7","high":"4.0e-7","last":"3.9e-7","vol":"187951.71022854"}},"atbbtc":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0","high":"0","last":"0","vol":"0"}},"etcbtc":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0.00244835","high":"0.00259977","last":"0.00253214","vol":"341.49693821"}},"bnbbtc":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0.0018898","high":"0.00188999","last":"0.00188998","vol":"524.47079669"}},"tusdbtc":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0.00015465","high":"0.00015998","last":"0.00015998","vol":"5702.79843018"}},"echtbtc":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0","high":"0","last":"0","vol":"0"}},"bccusd":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"643.506981","high":"712.1725462","last":"653.4359","vol":"103.9097479"}},"btgusd":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"19.10279333","high":"20.086187","last":"19.38999604","vol":"202.13790267"}},"ltcusd":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"68.79999877","high":"71.53690368","last":"69.81249735","vol":"114.58807039"}},"dogeusd":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0","high":"0","last":"0","vol":"0"}},"atbusd":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0","high":"0","last":"0","vol":"0"}},"etcusd":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"16.77","high":"18.016499","last":"17.299994","vol":"332.88268058"}},"bnbusd":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"13.570027","high":"13.98955699","last":"13.570027","vol":"551.88235225"}},"tusdusd":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"1.09802997","high":"1.1035906","last":"1.09802997","vol":"5992.35203339"}},"echtusd":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0","high":"0","last":"0","vol":"0"}},"bcceth":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"1.66273004","high":"1.80747844","last":"1.75088529","vol":"99.77101653"}},"btgeth":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0.04987867","high":"0.05355011","last":"0.0535325","vol":"107.0928868"}},"ltceth":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0.1766741","high":"0.18252116","last":"0.18041052","vol":"111.46674271"}},"dogeeth":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0","high":"0","last":"0","vol":"0"}},"atbeth":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0","high":"0","last":"0","vol":"0"}},"etceth":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0.04284056","high":"0.04661495","last":"0.04511586","vol":"205.67506886"}},"bnbeth":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0.03357483","high":"0.0336202","last":"0.03357483","vol":"220.41872803"}},"tusdeth":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0.00244182","high":"0.00283167","last":"0.00283167","vol":"2162.36071745"}},"echteth":{"at":1533729958,"ticker":{"buy":"0","sell":"0","low":"0","high":"0","last":"0","vol":"0"}}}'
+    http_version: 
+  recorded_at: Wed, 08 Aug 2018 17:06:17 GMT
+recorded_with: VCR 4.0.0
