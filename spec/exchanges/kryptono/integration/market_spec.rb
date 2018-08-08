@@ -14,6 +14,11 @@ RSpec.describe 'Kryptono integration specs' do
     expect(pair.market).to eq 'kryptono'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'kryptono', base: know_btc_pair.base, target: know_btc_pair.target
+    expect(trade_page_url).to eq "https://kryptono.exchange/k/accounts/trade?s=KNOW_BTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(know_btc_pair)
 

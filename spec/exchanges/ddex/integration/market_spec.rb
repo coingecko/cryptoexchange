@@ -14,6 +14,11 @@ RSpec.describe 'Ddex integration specs' do
     expect(pair.market).to eq 'ddex'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'ddex', base: abt_eth_pair.base, target: abt_eth_pair.target
+    expect(trade_page_url).to eq "https://ddex.io/trade/ABT-ETH"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(abt_eth_pair)
 

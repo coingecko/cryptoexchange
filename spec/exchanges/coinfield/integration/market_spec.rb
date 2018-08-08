@@ -14,6 +14,11 @@ RSpec.describe 'Coinfield integration specs' do
     expect(pair.market).to eq 'coinfield'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'coinfield', base: btc_cad_pair.base, target: btc_cad_pair.target
+    expect(trade_page_url).to eq "https://trade.coinfield.com/pro/trade/BTC-CAD"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_cad_pair)
 

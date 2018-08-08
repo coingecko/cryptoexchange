@@ -14,6 +14,11 @@ RSpec.describe 'Bit2c integration specs' do
     expect(pair.market).to eq 'bit2c'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'bit2c', base: btc_nis_pair.base, target: btc_nis_pair.target
+    expect(trade_page_url).to eq "https://bit2c.co.il/order?pair=BTCNIS"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_nis_pair)
 

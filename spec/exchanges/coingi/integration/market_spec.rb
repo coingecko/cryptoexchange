@@ -14,6 +14,11 @@ RSpec.describe 'Coingi integration specs' do
     expect(pair.market).to eq 'coingi'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'coingi', base: btc_eur_pair.base, target: btc_eur_pair.target
+    expect(trade_page_url).to eq "https://coingi.com/trade/BTC-EUR"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_eur_pair)
 

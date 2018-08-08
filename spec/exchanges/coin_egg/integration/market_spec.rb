@@ -15,6 +15,11 @@ RSpec.describe 'CoinEgg integration specs' do
     end
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'coin_egg', base: eth_btc_pair.base, target: eth_btc_pair.target
+    expect(trade_page_url).to eq "https://www.coinegg.com/btc/eth/"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(eth_btc_pair)
 

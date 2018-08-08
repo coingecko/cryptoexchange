@@ -55,8 +55,9 @@ module Cryptoexchange::Exchanges
 
         def hydrate_market_id_cache(output)
           @market_id_cache = {}
+
           output['result'].each do |market|
-            key = "#{market['MarketAssetCode']}_#{market['BaseCurrencyCode']}"
+            key = "#{market['MarketAssetCode'].upcase}_#{market['BaseCurrencyCode']}"
             @market_id_cache[key] = market['MarketID']
           end
         end
