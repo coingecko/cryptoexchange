@@ -24,7 +24,8 @@ Or install it yourself as:
 
 | Exchange          | Ticker  | Order Book | Trade   | Account | Market List | Pair URL | slug              |
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |----------|-------------------|
-| Abcc              | Y       | N          | N       |         | Y           | Y        | abcc              |
+| 58Coin            | Y       | Y          | Y       |         | Y           | Y        | fifty_eight_coin  |
+| Abcc              | Y       | N          | N       |         | Y           |          | abcc              |
 | Abucoins          | Y       | Y          | Y       |         | Y           |          | abucoins          |
 | ACX               | Y       | Y          | Y       |         | Y           | Y        | acx               |
 | AEX               | Y       | Y          | Y       |         | Y           |          | aex               |
@@ -166,6 +167,7 @@ Or install it yourself as:
 | LakeBTC           | Y       |            |         |         | Y           |          | lakebtc           |
 | Latoken           | Y       |            |         |         | Y           | Y        | latoken           |
 | Lbank             | Y       | Y          | Y       |         | Y           | Y        | lbank             |
+| LetsDoCoinz       | Y       | N          | N       |         | N           |          | lets_do_coinz     |
 | Liqui             | Y       |            |         |         | Y           |          | liqui             |
 | LiteBit.eu        | Y       |            |         |         | Y           |          | litebiteu         |
 | Livecoin          | Y       |            |         |         | Y           |          | livecoin          |
@@ -192,6 +194,7 @@ Or install it yourself as:
 | OrderBook         | Y       | Y          | Y       |         | Y           | Y        | orderbook         |
 | Ore Bz            | Y       | Y          | Y       |         | Y           | Y        | ore_bz            |
 | OTCBTC            | Y       | Y          | Y       |         | Y           |          | otcbtc            |
+| P2pb2b            | Y       | N          | N       |         | N           |          | p2pb2b            |
 | Paribu            | Y       |            |         |         | Y           |          | paribu            |
 | Paymium           | Y       | Y          | Y       |         | User-Defined|          | paymium           |
 | Poloniex          | Y       |            |         |         | Y           |          | poloniex          |
@@ -216,6 +219,7 @@ Or install it yourself as:
 | The Token Store   | Y       | Y          | Y       |         | Y           | Y        | thetokenstore     |
 | Tidebit           | Y       | Y          | Y       |         | Y           |          | tidebit           |
 | Tidex             | Y       |            |         |         | Y           |          | tidex             |
+| TiDeal            | Y       | N          | N       |         | N           |          | ti_deal           |
 | Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |
 | Tokenomy          | Y       | Y          | Y       |         | Y           | Y        | tokenomy          |
 | Topbtc            | Y       | N          | N       |         | Y           | Y        | topbtc            |
