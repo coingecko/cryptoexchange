@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coinsquare.com/api/v1/data/quotes
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinsquare.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3
+      Date:
+      - Mon, 06 Aug 2018 15:49:35 GMT
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '3560'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - http://localhost:8080
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin,Content-Type,Accept
+      Accept-Ranges:
+      - bytes
+    body:
+      encoding: UTF-8
+      string: '{ "quotes":[{"ticker":"CAD","base":"BTC","status":"open","last":"11153","volume":"800331591","volbase":"87946775099","bid":"11056","ask":"11115","low24":"10735","high24":"11269","ret24":"0.0113348"},{"ticker":"USD","base":"BTC","status":"open","last":"14332","volume":"2925547","volbase":"419770671","bid":"14165","ask":"14813","low24":"13752","high24":"14496","ret24":"-0.00132395"},{"ticker":"EUR","base":"BTC","status":"open","last":"16568","volume":"0","volbase":"0","bid":"16429","ask":"17428","low24":"16208","high24":"16751","ret24":"-0.00360837"},{"ticker":"GBP","base":"BTC","status":"open","last":"18690","volume":"0","volbase":"0","bid":"18483","ask":"19301","low24":"18184","high24":"18710","ret24":"0.00117849"},{"ticker":"AUD","base":"BTC","status":"open","last":"103400","volume":"0","volbase":"0","bid":"","ask":"","low24":"103435","high24":"103435","ret24":"0"},{"ticker":"XAU","base":"BTC","status":"index","last":"558100","volume":"0","volbase":"0","bid":"","ask":"","low24":"547718","high24":"563780","ret24":"-0.00338528"},{"ticker":"XAG","base":"BTC","status":"index","last":"7079","volume":"0","volbase":"0","bid":"","ask":"","low24":"6966","high24":"7150","ret24":"-0.00575843"},{"ticker":"LTC","base":"BTC","status":"open","last":"1051700","volume":"1258247235977","volbase":"13381435836","bid":"1051000","ask":"1061700","low24":"1045699","high24":"1084000","ret24":"-0.00960822"},{"ticker":"BCH","base":"BTC","status":"open","last":"9920300","volume":"1254555625","volbase":"126009441","bid":"9990900","ask":"10245000","low24":"9899200","high24":"10249500","ret24":"-0.00602509"},{"ticker":"XRP","base":"BTC","status":"open","last":"6065","volume":"11374264579001","volbase":"705893240","bid":"6114","ask":"6207","low24":"6058","high24":"6478","ret24":"-0.0166991"},{"ticker":"DOGE","base":"BTC","status":"open","last":"41","volume":"827997084711491","volbase":"340364413","bid":"40","ask":"41","low24":"40","high24":"42","ret24":"0"},{"ticker":"ETH","base":"BTC","status":"open","last":"5802900","volume":"470834427584","volbase":"27337032079","bid":"5800300","ask":"5845000","low24":"5660000","high24":"5898900","ret24":"-0.000539095"},{"ticker":"DASH","base":"BTC","status":"open","last":"2948900","volume":"3055604381","volbase":"91524073","bid":"2845000","ask":"3049900","low24":"2865100","high24":"3084400","ret24":"-0.00281716"},{"ticker":"CSC","base":"BTC","status":"open","last":"80628","volume":"4880947047","volbase":"3945394","bid":"80754","ask":"81649","low24":"80390","high24":"80905","ret24":"0.000235706"},{"ticker":"CNY","base":"BTC","status":"index","last":"5540","volume":"0","volbase":"0","bid":"","ask":"","low24":"5540","high24":"5540","ret24":"0"},{"ticker":"XAG.ML","base":"BTC","status":"open","last":"6982","volume":"0","volbase":"0","bid":"7039","ask":"7143","low24":"6982","high24":"6982","ret24":"0"},{"ticker":"XAG.X","base":"BTC","status":"open","last":"7020","volume":"193080188","volbase":"13553","bid":"7062","ask":"7161","low24":"6997","high24":"7020","ret24":"0.00328712"},{"ticker":"XAU.I","base":"BTC","status":"open","last":"557000","volume":"0","volbase":"0","bid":"558400","ask":"564400","low24":"557000","high24":"557000","ret24":"0"},{"ticker":"BTC","base":"CAD","status":"open","last":"896620","volbase":"","bid":"899685","ask":"904486","low24":"887390","high24":"931532","ret24":"-0.0112078"},{"ticker":"BTC","base":"USD","status":"index","last":"697500","volume":"0","volbase":"0","bid":"","ask":"","low24":"689714","high24":"714453","ret24":"0.000912586"}],
+        "volbasesum":"130352763799" }'
+    http_version: 
+  recorded_at: Mon, 06 Aug 2018 15:49:35 GMT
+recorded_with: VCR 4.0.0
