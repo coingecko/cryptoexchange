@@ -20,7 +20,7 @@ RSpec.describe 'Btcturk integration specs' do
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'TRY'
     expect(ticker.market).to eq 'btcturk'
-    expect(ticker.last).to be_a Numeric
+    expect(ticker.last).to be > 0.0
     expect(ticker.low).to be_a Numeric
     expect(ticker.high).to be_a Numeric
     expect(ticker.bid).to be_a Numeric

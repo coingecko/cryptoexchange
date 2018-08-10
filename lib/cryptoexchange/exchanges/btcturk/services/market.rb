@@ -35,7 +35,7 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Btcturk::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['close'].to_f)
+          ticker.last      = NumericHelper.to_d(output['last'].to_f)
           ticker.high      = NumericHelper.to_d(output['high'].to_f)
           ticker.low       = NumericHelper.to_d(output['low'].to_f)
           ticker.bid       = NumericHelper.to_d(output['bid'].to_f)

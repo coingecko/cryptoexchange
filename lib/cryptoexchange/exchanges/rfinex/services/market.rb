@@ -35,7 +35,7 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Rfinex::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['ticker']['close'].to_f)
+          ticker.last      = NumericHelper.to_d(output['ticker']['last'].to_f)
           ticker.high      = NumericHelper.to_d(output['ticker']['high'].to_f)
           ticker.low       = NumericHelper.to_d(output['ticker']['low'].to_f)
           ticker.bid       = NumericHelper.to_d(output['ticker']['buy'].to_f)

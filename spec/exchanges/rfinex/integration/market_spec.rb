@@ -20,7 +20,7 @@ RSpec.describe 'Rfinex integration specs' do
     expect(ticker.base).to eq 'EOS'
     expect(ticker.target).to eq 'ETH'
     expect(ticker.market).to eq 'rfinex'
-    expect(ticker.last).to be_a Numeric
+    expect(ticker.last).to be > 0.0
     expect(ticker.low).to be_a Numeric
     expect(ticker.high).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
