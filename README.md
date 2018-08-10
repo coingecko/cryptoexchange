@@ -169,6 +169,7 @@ Or install it yourself as:
 | LakeBTC           | Y       |            |         |         | Y           |          | lakebtc           |
 | Latoken           | Y       |            |         |         | Y           | Y        | latoken           |
 | Lbank             | Y       | Y          | Y       |         | Y           | Y        | lbank             |
+| LetsDoCoinz       | Y       | N          | N       |         | N           |          | lets_do_coinz     |
 | Liqui             | Y       |            |         |         | Y           |          | liqui             |
 | LiteBit.eu        | Y       |            |         |         | Y           |          | litebiteu         |
 | Livecoin          | Y       |            |         |         | Y           |          | livecoin          |
