@@ -200,6 +200,7 @@ Or install it yourself as:
 | QuadrigaCX        | Y       |            |         |         | User-Defined|          | quadrigacx        |
 | Quoine            | Y       |            |         |         | Y           |          | quoine            |
 | RadarRelay        | Y       |            |         |         | Y           | Y        | radar_relay       |
+| Rfinex            | Y       | Y          | Y       |         | Y           |          | rfinex            |
 | RightBTC          | Y       | Y          | Y       |         | Y           |          | rightbtc          |
 | SafeTrade         | Y       | N          | N       |         | Y           |          | safe_trade        |
 | Sigen             | Y       |            |         |         | Y           | Y        | sigen             |
