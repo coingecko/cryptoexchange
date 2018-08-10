@@ -72,6 +72,7 @@ Or install it yourself as:
 | BTCC              | Y       |            |         |         | User-Defined|          | btcc              |
 | BTCChina          |         |            |         |         |             |          |                   |
 | Btcsquare         | Y       | Y          | Unstable|         | Y           | Y        | btcsquare         |
+| BTCTurk           | Y       | Y          |         |         | Y           |          | btcturk           |
 | BTER              | Y       |            |         |         | Y           |          | bter              |
 | Buyucoin          | Y       | N          | N       |         | Y           |          | buyucoin          |
 | BX Thailand       | Y       |            |         |         | Y           |          | bx_thailand       |
@@ -150,6 +151,8 @@ Or install it yourself as:
 | Idcm              | Y       |            |         |         | Y           | Y        | idcm              |
 | Idex              | Y       | Unstable   | Y       |         | Y           | Y        | idex              |
 | InfinityCoin      | Y       |            |         |         | Y           | Y        | infinity_coin     |
+| InstantBitex      | Y       | Y          | Y       |         | Y           |          | instantbitex
+|
 | Itbit             | Y       | Y          | Y       |         | User-Defined|          | itbit             |
 | Jex               | Y       | N          | N       |         | Y           |          | jex               |
 | Joyso             | Y       | Y          |         |         | Y           |          | joyso             |
@@ -201,6 +204,7 @@ Or install it yourself as:
 | QuadrigaCX        | Y       |            |         |         | User-Defined|          | quadrigacx        |
 | Quoine            | Y       |            |         |         | Y           |          | quoine            |
 | RadarRelay        | Y       |            |         |         | Y           | Y        | radar_relay       |
+| Rfinex            | Y       | Y          | Y       |         | Y           |          | rfinex            |
 | RightBTC          | Y       | Y          | Y       |         | Y           |          | rightbtc          |
 | SafeTrade         | Y       | N          | N       |         | Y           |          | safe_trade        |
 | Sigen             | Y       |            |         |         | Y           | Y        | sigen             |
@@ -209,7 +213,7 @@ Or install it yourself as:
 | Sistemkoin        | Y       |            |         |         | Y           |          | sistemkoin        |
 | SouthXchange      | Y       | Y          | Y       |         | Y           | Y        | south_xchange     |
 | Stocks Exchange   | Y       |            |         |         | Y           | Y        | stocks_exchange   |
-| Switcheo          | Y       | N          | N       |         | Y           |          | switcheo          |
+| Switcheo          | Y       | N          | N       |         | Y           | Y        | switcheo          |
 | Syex              | Y       | N          | N       |         | Y           | Y        | syex              |
 | SZZC              | Y       |            |         |         | Y           |          | szzc              |
 | Tdax              | Y       | N          | Y       |         | Y           |          | tdax              |
