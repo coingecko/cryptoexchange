@@ -131,9 +131,10 @@ Or install it yourself as:
 | F1cx              | Y       | Y          | Y       |         | Y           | Y        | f1cx              |
 | Fcoin             | Y       | Y          | Y       |         | Y           | Y        | fcoin             |
 | Fex               | Y       | N          | N       |         | Y           |          | fex               |
-| Fisco             | Y       | Y          | Y       |         | Y           | Y        | fisco             |
-| Forkdelta         | Y       | N          | N       |         | Y           | Y        | forkdelta         |
-| Freiexchange      | Y       | Y          |         |         | User-Defined| Y        | freiexchange      |
+| FirstGlobalCredit | Y       | N          | N       |         | Y           |          |first_global_credit|
+| Fisco             | Y       | Y          | Y       |         | Y           |          | fisco             |
+| Forkdelta         | Y       | N          | N       |         | Y           |          | forkdelta         |
+| Freiexchange      | Y       | Y          |         |         | User-Defined|          | freiexchange      |
 | Gate              | Y       | Y          | Y       |         | Y           | Y        | gate              |
 | Gatecoin          | Y       |            |         |         | Y           |          | gatecoin          |
 | GDAX              | Y       |            |         |         | Y           |          | gdax              |
