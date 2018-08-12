@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cxihub.com/market/v1/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.cxihub.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 12 Aug 2018 10:29:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1371'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Content-Security-Policy:
+      - 'default-src ''none''; img-src * ''self'' data: https:; style-src ''self''
+        ''unsafe-inline'';'
+      Etag:
+      - W/"55b-2CxLptwDp92WCCFOf4t/GNxZbC4"
+      X-Cache-Status:
+      - HIT
+    body:
+      encoding: UTF-8
+      string: '{"signature":"1534069767021.3jK5jGETpXDkp","success":true,"message":"","type":"market","action":"market","id":null,"data":[{"rate":0.09011838,"sellString":"0.09074654","buy":0.09004524,"volumeString":"0.00000000","rateString":"0.09011838","sell":0.09074654,"changePercent":0,"buyString":"0.09004524","volume":0,"market":"btc/bch"},{"rate":454633,"sellString":"475240.00000000","buy":447550,"volumeString":"0.00000000","rateString":"454633.0","sell":475240,"changePercent":0,"buyString":"447550.00000000","volume":0,"market":"inr/btc"},{"rate":0.051867,"sellString":"0.05291651","buy":0.0512571,"volumeString":"0.00000000","rateString":"0.051867","sell":0.05291651,"changePercent":0,"buyString":"0.05125710","volume":0,"market":"btc/eth"},{"rate":0.00915302,"sellString":"0.00935611","buy":0.009134,"volumeString":"0.00000000","rateString":"0.00915302","sell":0.00935611,"changePercent":0,"buyString":"0.00913400","volume":0,"market":"btc/ltc"},{"rate":0.00013868,"sellString":"0.00013924","buy":0.00013758,"volumeString":"0.00000000","rateString":"0.00013868","sell":0.00013924,"changePercent":0,"buyString":"0.00013758","volume":0,"market":"btc/via"},{"rate":0.0000488,"sellString":"0.00004975","buy":0.0000482,"volumeString":"0.00000000","rateString":"0.0000488","sell":0.00004975,"changePercent":0,"buyString":"0.00004820","volume":0,"market":"btc/xrp"}],"status":200}'
+    http_version: 
+  recorded_at: Sun, 12 Aug 2018 10:29:28 GMT
+recorded_with: VCR 4.0.0
