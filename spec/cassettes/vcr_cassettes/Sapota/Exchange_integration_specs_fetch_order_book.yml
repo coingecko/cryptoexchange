@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sapotaexchange.com/api/1/open_trades/LTC/BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sapotaexchange.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 12 Aug 2018 18:01:36 GMT
+      Server:
+      - Apache/2.4.18 (Ubuntu)
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - 'default-src ''self'' data: http://www.google-analytics.com http://*.uservoice.com
+        https://*.uservoice.com; script-src ''self'' ''unsafe-eval'' http://www.google-analytics.com
+        http://*.uservoice.com https://*.uservoice.com; style-src ''self'' data: ''unsafe-inline'';
+        font-src ''self'' data:'
+      X-Permitted-Cross-Domain-Policies:
+      - master-only
+      Content-Length:
+      - '978'
+      Set-Cookie:
+      - PLAY_SESSION=45c1b15edb510ba5d751f2b244ce5e41203294f2-csrfToken=7e569bb67c96bef2965e4a404236c85a3508d737-1534096896613-6d875159344e331807840f53;
+        Path=/; HTTPOnly
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"asks":[{"amount":"0.87660000","price":"0.00978503"},{"amount":"7.33100000","price":"0.00998552"},{"amount":"8.00000000","price":"0.01023548"},{"amount":"5.34000000","price":"0.01048900"},{"amount":"42.63640000","price":"0.01049424"},{"amount":"6.11040000","price":"0.01049530"},{"amount":"2.84000000","price":"0.01055201"},{"amount":"12.55000000","price":"0.01055202"},{"amount":"7.55500000","price":"0.01055205"},{"amount":"2.44400000","price":"0.01055301"},{"amount":"1.55600000","price":"0.01055302"},{"amount":"1.66500000","price":"0.01055304"},{"amount":"2.77500000","price":"0.01055306"},{"amount":"2.33300000","price":"0.01080660"}],"bids":[{"amount":"1.00000000","price":"0.00920754"},{"amount":"0.88545000","price":"0.00920739"},{"amount":"1.62560000","price":"0.00920649"},{"amount":"3.00000000","price":"0.00920635"},{"amount":"1.28500000","price":"0.00920626"},{"amount":"2.18000000","price":"0.00920619"}],"total_base":"104.01240000","total_counter":"0.09184501"}'
+    http_version: 
+  recorded_at: Sun, 12 Aug 2018 18:01:36 GMT
+recorded_with: VCR 4.0.0

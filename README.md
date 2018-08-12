@@ -255,6 +255,7 @@ Or install it yourself as:
 | Rfinex            | Y       | Y          | Y       |         | Y           |          | rfinex            |
 | RightBTC          | Y       | Y          | Y       |         | Y           |          | rightbtc          |
 | SafeTrade         | Y       | N          | N       |         | Y           |          | safe_trade        |
+| SapotaExchange    | Y       | Y          | Y       |         | Y           |          | sapotaexchange    |
 | Sigen             | Y       |            |         |         | Y           | Y        | sigen             |
 | Simex             | Y       | N          | N       |         | Y           | Y        | simex             |
 | Singularx         | Y       | N          | N       |         | Y           |          | singularx         |

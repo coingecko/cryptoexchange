@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sapotaexchange.com/api/1/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sapotaexchange.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 12 Aug 2018 17:55:53 GMT
+      Server:
+      - Apache/2.4.18 (Ubuntu)
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - 'default-src ''self'' data: http://www.google-analytics.com http://*.uservoice.com
+        https://*.uservoice.com; script-src ''self'' ''unsafe-eval'' http://www.google-analytics.com
+        http://*.uservoice.com https://*.uservoice.com; style-src ''self'' data: ''unsafe-inline'';
+        font-src ''self'' data:'
+      X-Permitted-Cross-Domain-Policies:
+      - master-only
+      Content-Length:
+      - '392'
+      Set-Cookie:
+      - PLAY_SESSION=a0b22752c17c158db1a1ca5b14fd5c97225e438e-csrfToken=fa7bc37c1a95ce77ad55e8d33353f2017e77c569-1534096553460-40c4c0ea889ad4d787ab3c1f;
+        Path=/; HTTPOnly
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '[{"first":"0.00192350","low":"0.0019235","high":"0.0019256","last":"0.00192480","volume":"17326.79485","base":"SAP","counter":"BTC"},{"first":"0.19720000","low":"0.1972","high":"0.212361","last":"0.21236100","volume":"17922.987","base":"SAP","counter":"LTC"},{"first":"0.00926245","low":"0.00920754","high":"0.00955491","last":"0.00955491","volume":"28934.8589","base":"LTC","counter":"BTC"}]'
+    http_version: 
+  recorded_at: Sun, 12 Aug 2018 17:55:53 GMT
+recorded_with: VCR 4.0.0
