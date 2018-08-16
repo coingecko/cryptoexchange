@@ -16,7 +16,7 @@ RSpec.describe 'Forkdelta integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'forkdelta', base: stu_eth_pair.base, target: stu_eth_pair.target
-    expect(trade_page_url).to eq "https://forkdelta.github.io/#!/trade/STU-ETH"
+    expect(trade_page_url).to eq "https://forkdelta.app/#!/trade/STU-ETH"
   end
 
   it 'fetch ticker' do
