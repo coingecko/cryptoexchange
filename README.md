@@ -151,7 +151,6 @@ Or install it yourself as:
 | Idex              | Y       | Unstable   | Y       |         | Y           | Y        | idex              |
 | InfinityCoin      | Y       |            |         |         | Y           | Y        | infinity_coin     |
 | InstantBitex      | Y       | Y          | Y       |         | Y           |          | instantbitex
-|
 | Itbit             | Y       | Y          | Y       |         | User-Defined|          | itbit             |
 | Jex               | Y       | N          | N       |         | Y           |          | jex               |
 | Joyso             | Y       | Y          |         |         | Y           |          | joyso             |
