@@ -37,7 +37,7 @@ module Cryptoexchange::Exchanges
           ticker.market    = Nanex::Market::NAME
           ticker.last      = NumericHelper.to_d(output['last_trade'])
           ticker.volume    = NumericHelper.to_d(output['quote_volume'])
-          ticker.timestamp = Time.now.to_i
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

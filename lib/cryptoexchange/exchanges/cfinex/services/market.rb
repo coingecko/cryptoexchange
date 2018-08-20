@@ -42,7 +42,7 @@ module Cryptoexchange::Exchanges
           ticker.high      = NumericHelper.to_d(output['high24hr'])
           ticker.low       = NumericHelper.to_d(output['low24hr'])
           ticker.change    = NumericHelper.to_d(output['percentChange'])
-          ticker.timestamp = Time.now.to_i
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

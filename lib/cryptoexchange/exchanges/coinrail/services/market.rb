@@ -46,7 +46,7 @@ module Cryptoexchange::Exchanges
           ticker.market = Coinrail::Market::NAME
           ticker.last = NumericHelper.to_d(output["last24_price"])
           ticker.volume = NumericHelper.to_d(output["trade_amount"])
-          ticker.timestamp = Time.now.to_i
+          ticker.timestamp = nil
           ticker.payload = output
           ticker
         end
