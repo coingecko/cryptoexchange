@@ -217,6 +217,7 @@ Or install it yourself as:
 | Tdax              | Y       | N          | Y       |         | Y           |          | tdax              |
 | The Rock Trading  | Y       |            |         |         | Y           |          | therocktrading    |
 | The Token Store   | Y       | Y          | Y       |         | Y           | Y        | thetokenstore     |
+| The Token Store   | Y       | Y          | Y       |         | Y           |          | thinkbit          |
 | Tidebit           | Y       | Y          | Y       |         | Y           |          | tidebit           |
 | Tidex             | Y       |            |         |         | Y           |          | tidex             |
 | Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |
