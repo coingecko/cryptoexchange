@@ -244,6 +244,7 @@ Or install it yourself as:
 | Zebpay            | Y       |            |         |         | Y           |          | Zebpay            |
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
+
 *** User-Defined requires pair id
 
 ## Usage
