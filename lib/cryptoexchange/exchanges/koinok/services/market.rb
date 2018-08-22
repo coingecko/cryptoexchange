@@ -42,7 +42,7 @@ module Cryptoexchange::Exchanges
           ticker.bid = NumericHelper.to_d(output['highestBid'])
           ticker.ask = NumericHelper.to_d(output['lowestAsk'])
 
-          ticker.timestamp = Time.now.to_i
+          ticker.timestamp = nil
           ticker.payload = output
           ticker
         end

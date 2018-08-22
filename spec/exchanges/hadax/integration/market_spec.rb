@@ -14,6 +14,11 @@ RSpec.describe 'Hadax integration specs' do
     expect(pair.market).to eq 'hadax'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'hadax', base: bkbt_btc_pair.base, target: bkbt_btc_pair.target
+    expect(trade_page_url).to eq "https://www.hadax.com/BKBT_BTC/exchange/"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(bkbt_btc_pair)
 

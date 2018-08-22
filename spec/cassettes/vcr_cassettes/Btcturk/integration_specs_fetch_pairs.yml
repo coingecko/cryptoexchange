@@ -1,0 +1,104 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.btcturk.com/api/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.btcturk.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '1415'
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Etag:
+      - '"da23449d-f272-44f2-b886-d83885405d7c"'
+      Vary:
+      - Accept-Encoding
+      Ratelimit-Limit:
+      - '10'
+      Ratelimit-Remaining:
+      - '9'
+      Request-Context:
+      - appId=cid-v1:d672206b-5ee8-42f2-91b5-713de13155fd
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1;mode=block
+      Content-Security-Policy:
+      - script-src 'self' * www.googletagmanager.com use.fontawesome.com www.googleadservices.com
+        fontawesome.com connect.facebook.net stats.g.doubleclick.net ping.typekit.net
+        p.typekit.net use.typekit.net www.google.com www.youtube.com i.ytimg.com  www.google-analytics.com
+        ajax.googleapis.com www.gstatic.com apis.google.com az732725.vo.msecnd.net
+        bam.nr-data.net 'unsafe-inline' 'unsafe-eval';style-src 'self' fontawesome.com
+        ping.typekit.net www.youtube.com i.ytimg.com p.typekit.net use.typekit.net
+        cdnbtctrader.blob.core.windows.net fonts.googleapis.com az732725.vo.msecnd.net
+        'unsafe-inline';img-src 'self' fontawesome.com www.googleadservices.com www.youtube.com
+        i.ytimg.com www.facebook.com www.google.com.tr stats.g.doubleclick.net googleads.g.doubleclick.net
+        ping.typekit.net p.typekit.net use.typekit.net cdnbtctrader.blob.core.windows.net
+        www.google-analytics.com www.google.com ssl.gstatic.com fontawesome.com az732725.vo.msecnd.net
+        data:;object-src 'self' fontawesome.com ping.typekit.net p.typekit.net www.youtube.com
+        i.ytimg.com use.typekit.net cdnbtctrader.blob.core.windows.net pusher.com;
+      X-Content-Security-Policy:
+      - script-src 'self' * www.googletagmanager.com use.fontawesome.com www.googleadservices.com
+        fontawesome.com connect.facebook.net stats.g.doubleclick.net ping.typekit.net
+        p.typekit.net use.typekit.net www.google.com www.youtube.com i.ytimg.com  www.google-analytics.com
+        ajax.googleapis.com www.gstatic.com apis.google.com az732725.vo.msecnd.net
+        bam.nr-data.net 'unsafe-inline' 'unsafe-eval';style-src 'self' fontawesome.com
+        ping.typekit.net www.youtube.com i.ytimg.com p.typekit.net use.typekit.net
+        cdnbtctrader.blob.core.windows.net fonts.googleapis.com az732725.vo.msecnd.net
+        'unsafe-inline';img-src 'self' fontawesome.com www.googleadservices.com www.youtube.com
+        i.ytimg.com www.facebook.com www.google.com.tr stats.g.doubleclick.net googleads.g.doubleclick.net
+        ping.typekit.net p.typekit.net use.typekit.net cdnbtctrader.blob.core.windows.net
+        www.google-analytics.com www.google.com ssl.gstatic.com fontawesome.com az732725.vo.msecnd.net
+        data:;object-src 'self' fontawesome.com ping.typekit.net p.typekit.net www.youtube.com
+        i.ytimg.com use.typekit.net cdnbtctrader.blob.core.windows.net pusher.com;
+      X-Webkit-Csp:
+      - script-src 'self' * www.googletagmanager.com use.fontawesome.com www.googleadservices.com
+        fontawesome.com connect.facebook.net stats.g.doubleclick.net ping.typekit.net
+        p.typekit.net use.typekit.net www.google.com www.youtube.com i.ytimg.com  www.google-analytics.com
+        ajax.googleapis.com www.gstatic.com apis.google.com az732725.vo.msecnd.net
+        bam.nr-data.net 'unsafe-inline' 'unsafe-eval';style-src 'self' fontawesome.com
+        ping.typekit.net www.youtube.com i.ytimg.com p.typekit.net use.typekit.net
+        cdnbtctrader.blob.core.windows.net fonts.googleapis.com az732725.vo.msecnd.net
+        'unsafe-inline';img-src 'self' fontawesome.com www.googleadservices.com www.youtube.com
+        i.ytimg.com www.facebook.com www.google.com.tr stats.g.doubleclick.net googleads.g.doubleclick.net
+        ping.typekit.net p.typekit.net use.typekit.net cdnbtctrader.blob.core.windows.net
+        www.google-analytics.com www.google.com ssl.gstatic.com fontawesome.com az732725.vo.msecnd.net
+        data:;object-src 'self' fontawesome.com ping.typekit.net p.typekit.net www.youtube.com
+        i.ytimg.com use.typekit.net cdnbtctrader.blob.core.windows.net pusher.com;
+      Access-Control-Allow-Origin:
+      - "*"
+      Set-Cookie:
+      - ARRAffinity=82cbea8b60264a0f38b57eed29999b11d1eba567fc07318f282c123a9eaf5300;Path=/;HttpOnly;Domain=www.btcturk.com
+      Date:
+      - Wed, 08 Aug 2018 15:55:12 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '[{"pair":"BTCTRY","high":37398.0,"last":34600.0,"timestamp":1533743712.0,"bid":34600.0,"volume":404.88,"low":33801.0,"ask":34721.0,"open":37200.0,"average":35412.93,"daily":0.0,"dailyPercent":0.0,"denominatorsymbol":"TRY","numeratorsymbol":"BTC"},{"pair":"BTCUSDT","high":7100.0,"last":6286.0,"timestamp":1533743712.0,"bid":6351.0,"volume":9.94,"low":6286.0,"ask":6544.0,"open":7100.0,"average":6675.68,"daily":0.0,"dailyPercent":0.0,"denominatorsymbol":"USDT","numeratorsymbol":"BTC"},{"pair":"ETHTRY","high":2154.0,"last":1970.0,"timestamp":1533743712.0,"bid":1960.0,"volume":3734.56,"low":1912.0,"ask":1970.0,"open":2145.0,"average":2010.23,"daily":0.0,"dailyPercent":0.0,"denominatorsymbol":"TRY","numeratorsymbol":"ETH"},{"pair":"LTCTRY","high":392.0,"last":344.5,"timestamp":1533743712.0,"bid":337.4,"volume":2877.64,"low":337.0,"ask":344.5,"open":391.98,"average":358.55,"daily":0.0,"dailyPercent":0.0,"denominatorsymbol":"TRY","numeratorsymbol":"LTC"},{"pair":"XRPTRY","high":2.16,"last":1.84,"timestamp":1533743712.0,"bid":1.83,"volume":7608138.33,"low":1.8,"ask":1.84,"open":2.16,"average":1.94,"daily":0.0,"dailyPercent":0.0,"denominatorsymbol":"TRY","numeratorsymbol":"XRP"},{"pair":"USDTTRY","high":5.43,"last":5.33,"timestamp":1533743712.0,"bid":5.33,"volume":611471.82,"low":5.17,"ask":5.37,"open":5.27,"average":5.3,"daily":0.0,"dailyPercent":0.0,"denominatorsymbol":"TRY","numeratorsymbol":"USDT"}]'
+    http_version: 
+  recorded_at: Wed, 08 Aug 2018 15:55:20 GMT
+recorded_with: VCR 4.0.0
