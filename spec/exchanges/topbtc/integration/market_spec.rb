@@ -14,6 +14,11 @@ RSpec.describe 'Topbtc integration specs' do
     expect(pair.market).to eq 'topbtc'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'topbtc', base: uqc_btc_pair.base, target: uqc_btc_pair.target
+    expect(trade_page_url).to eq "https://topbtc.com/home/market/index/market/BTC/coin/UQC.html"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(uqc_btc_pair)
 
@@ -26,9 +31,9 @@ RSpec.describe 'Topbtc integration specs' do
     expect(ticker.ask).to be_a Numeric
     expect(ticker.high).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
+
+    expect(ticker.timestamp).to be nil
     
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
     expect(ticker.payload).to_not be nil
   end
 end

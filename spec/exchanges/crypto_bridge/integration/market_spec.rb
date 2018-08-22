@@ -24,8 +24,13 @@ RSpec.describe 'CryptoBridge integration specs' do
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
+    
     expect(ticker.payload).to_not be nil
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'crypto_bridge', base: bco_btc_pair.base, target: bco_btc_pair.target
+    expect(trade_page_url).to eq "https://wallet.crypto-bridge.org/market/BRIDGE.BCO_BRIDGE.BTC"
   end
 end

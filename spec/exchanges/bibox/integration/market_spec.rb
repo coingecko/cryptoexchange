@@ -14,6 +14,11 @@ RSpec.describe 'Bibox integration specs' do
     expect(pair.market).to eq 'bibox'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'bibox', base: bix_btc_pair.base, target: bix_btc_pair.target
+    expect(trade_page_url).to eq "https://www.bibox.com/exchange?coinPair=BIX_BTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(bix_btc_pair)
 

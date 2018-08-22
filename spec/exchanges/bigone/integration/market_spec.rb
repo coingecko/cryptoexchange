@@ -14,6 +14,11 @@ RSpec.describe 'Bigone integration specs' do
     expect(pair.market).to eq 'bigone'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'bigone', base: eth_btc_pair.base, target: eth_btc_pair.target
+    expect(trade_page_url).to eq "https://big.one/trade/ETH-BTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(eth_btc_pair)
 
@@ -27,8 +32,7 @@ RSpec.describe 'Bigone integration specs' do
     expect(ticker.ask).to be_a Numeric
     expect(ticker.change).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
   end
 

@@ -14,6 +14,11 @@ RSpec.describe 'Syex integration specs' do
     expect(pair.market).to eq 'syex'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'syex', base: sy_usdt_pair.base, target: sy_usdt_pair.target
+    expect(trade_page_url).to eq "https://www.syex.io/#/tradeCenter?payCoinName=USDT&coinName=SY"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(sy_usdt_pair)
 
@@ -26,8 +31,8 @@ RSpec.describe 'Syex integration specs' do
     expect(ticker.high).to be_a Numeric
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
+    
     expect(ticker.payload).to_not be nil
   end
 end

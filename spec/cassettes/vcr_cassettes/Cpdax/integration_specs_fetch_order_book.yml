@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cpdax.com/v1/orderbook/BAT-BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.cpdax.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 30 Jul 2018 15:52:34 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      X-Frame-Options:
+      - DENY
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      X-Application-Context:
+      - application:prod:9005
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Content-Security-Policy:
+      - base-uri 'self'; default-src 'self' https://*.cpdax.com https://cpdax.com;media-src
+        https://*.intercomcdn.com;script-src https://*.cpdax.com https://cpdax.com
+        https://*.intercom.io https://*.gstatic.com https://*.intercomcdn.com https://*.google.com
+        https://*.google-analytics.com https://*.intercomassets.com https://*.twitter.com
+        https://*.daumcdn.net 'nonce-dmFyIHNkZiA9ICcxMjMxMjMn';style-src https://*
+        'unsafe-inline';connect-src 'self' https://*.cpdax.com https://cpdax.com https://*.cpdax.com:8443
+        https://cpdax.com:8443 wss://*.cpdax.com:8443 wss://*.cpdax.com:8443 https://*.intercom.io
+        wss://*.intercom.io https://app.getsentry.com https://js.intercomcdn.com https://*.coinplugapis.com
+        https://*.tradingview.com https://*.twitter.com https://*.google.com;font-src
+        'self' https://fonts.gstatic.com https://js.intercomcdn.com https://cdn.rawgit.com;child-src
+        'self' https://www.cpdax.com https://cpdax.com https://www.google.com https://*.twitter.com
+        https://intercom-sheets.com;img-src 'self' https://*.cpdax.com https://cpdax.com
+        https://*.google-analytics.com https://js.intercomcdn.com https://static.intercomassets.com
+        https://*.twitter.com https://stats.g.doubleclick.net https://*.google.com
+        https://*.google.co.kr https://*.google.co.jp data:;object-src 'self'
+    body:
+      encoding: UTF-8
+      string: '{"bids":[{"price":"0.00003748","size":"307.43101000"},{"price":"0.00003747","size":"1055.52689000"},{"price":"0.00003746","size":"673.99837000"},{"price":"0.00003740","size":"422.88000000"},{"price":"0.00003720","size":"249.89510000"},{"price":"0.00003710","size":"353.44000000"},{"price":"0.00003700","size":"352.00000000"},{"price":"0.00003620","size":"591.09000000"},{"price":"0.00003610","size":"537.93000000"},{"price":"0.00003600","size":"179.59680000"},{"price":"0.00003590","size":"206.93200000"},{"price":"0.00003570","size":"34.60000000"},{"price":"0.00003550","size":"179.21700000"},{"price":"0.00003538","size":"8491.37224420"},{"price":"0.00003389","size":"120.00000000"}],"asks":[{"price":"0.00003749","size":"308.75920000"},{"price":"0.00003750","size":"130.87000000"},{"price":"0.00003754","size":"45.10000000"},{"price":"0.00003761","size":"988.57538481"},{"price":"0.00003762","size":"1350.72180821"},{"price":"0.00003767","size":"38.80000000"},{"price":"0.00003770","size":"504.27280000"},{"price":"0.00003778","size":"1194.66840627"},{"price":"0.00003786","size":"524.33000000"},{"price":"0.00003790","size":"1170.40470000"},{"price":"0.00003800","size":"231.40000000"},{"price":"0.00003820","size":"245.83000000"},{"price":"0.00003830","size":"278.01000000"},{"price":"0.00003840","size":"27.61000000"},{"price":"0.00003870","size":"1314.67550000"}],"product_id":"BAT-BTC"}'
+    http_version: 
+  recorded_at: Mon, 30 Jul 2018 15:52:34 GMT
+recorded_with: VCR 4.0.0

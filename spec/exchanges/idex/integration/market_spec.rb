@@ -14,6 +14,11 @@ RSpec.describe 'Idex integration specs' do
     expect(pair.market).to eq 'idex'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'idex', base: snt_eth_pair.base, target: snt_eth_pair.target
+    expect(trade_page_url).to eq "https://idex.market/ETH/SNT"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(snt_eth_pair)
 
@@ -24,8 +29,8 @@ RSpec.describe 'Idex integration specs' do
     expect(ticker.ask).to be_nil
     expect(ticker.bid).to be_nil
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
+    
     expect(ticker.payload).to_not be nil
   end
 
