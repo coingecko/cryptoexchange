@@ -181,6 +181,7 @@ Or install it yourself as:
 | Myspeedtrade      | Y       | Y          |         |         | Y           |          | myspeedtrade      |
 | Nanex             | Y       | N          | N       | N       | Y           |          | nanex             |
 | Nebula            | Y       | N          | Y       |         | Y           |          | nebula            |
+| Negociecoins      | Y       | Y          | Y       |         | User-Defined|          | negociecoins      |
 | Neraex            | Y       | Y          | Y       |         | Y           | Y        | neraex            |
 | Ninecoin          | Y       |            |         |         | Y           |          | ninecoin          |
 | NLexch            | Y       |            |         |         | Y           | Y        | nlexch            |
