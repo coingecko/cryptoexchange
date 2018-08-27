@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
         def ticker_url(market_pair)
           base = market_pair.base.downcase
           target = market_pair.target.downcase
-          "#{Cryptoexchange::Exchanges::Bitbay::Market::API_URL}/#{base}#{target}/ticker.json"
+          "#{Cryptoexchange::Exchanges::Bitbay::Market::API_URL}/#{base}#{target}/all.json"
         end
 
         def adapt(output, market_pair)
@@ -30,7 +30,7 @@ module Cryptoexchange::Exchanges
           ticker.high      = NumericHelper.to_d(output['max'])
           ticker.low       = NumericHelper.to_d(output['min'])
           ticker.volume    = NumericHelper.to_d(output["volume"])
-          ticker.timestamp = DateTime.now.to_time.to_i
+          ticker.timestamp = NumericHelper.to_d(output["transactions"].first["date"])
           ticker.payload   = output
           ticker
         end
