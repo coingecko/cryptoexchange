@@ -14,6 +14,11 @@ RSpec.describe 'BTCBox integration specs' do
     expect(pair.market).to eq 'btcbox'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'btcbox', base: btc_jpy_pair.base, target: btc_jpy_pair.target
+    expect(trade_page_url).to eq "https://www.btcbox.co.jp/market-BTC.html"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_jpy_pair)
 
@@ -26,8 +31,8 @@ RSpec.describe 'BTCBox integration specs' do
     expect(ticker.low).to be_a Numeric
     expect(ticker.high).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
+    
     expect(ticker.payload).to_not be nil
   end
 

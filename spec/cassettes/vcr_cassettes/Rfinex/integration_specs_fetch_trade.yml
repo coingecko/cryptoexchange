@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://rfinex.com/markets/eoseth.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - rfinex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - nginx/1.12.1
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Ua-Compatible:
+      - chrome=1
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Sat, 03 Jan 2009 00:00:00 GMT
+      X-Request-Id:
+      - 78681473-7ace-4e66-be70-e7e8beed60a4
+      X-Runtime:
+      - '0.021549'
+      Content-Length:
+      - '7687'
+      Date:
+      - Tue, 07 Aug 2018 18:02:52 GMT
+      Connection:
+      - close
+      Set-Cookie:
+      - XSRF-TOKEN=0SdKZxxnxEAyx3CJiDO55j%2BkaJMhxbeEaK8HvlLombM%3D; path=/
+      - _peatio_session=f0bcd23a7600fbed25782656572d4eef; path=/; expires=Tue, 07
+        Aug 2018 19:02:52 -0000; HttpOnly
+      - market_id=eoseth; path=/
+    body:
+      encoding: UTF-8
+      string: '{"asks":[["0.017337","3.9657"],["0.01734","2.205"],["0.017342","3.918"],["0.017343","0.007"],["0.017346","0.014"],["0.01735","0.005"],["0.017351","0.009"],["0.017352","0.004"],["0.017353","1.038"],["0.017358","0.082"],["0.017359","10.233"],["0.01736","0.964"],["0.017361","0.046"],["0.017362","0.014"],["0.017363","0.207"],["0.017365","0.014"],["0.017367","11.185"],["0.017368","0.005"],["0.017369","0.009"],["0.01737","0.024"],["0.017372","1.478"],["0.017373","6.675"],["0.017374","0.046"],["0.017375","0.004"],["0.017378","0.06"],["0.01738","0.005"],["0.017381","5.926"],["0.017382","5.699"],["0.017383","29.458"],["0.017384","0.005"]],"bids":[["0.017335","0.006"],["0.017332","0.006"],["0.017329","0.006"],["0.017328","0.008"],["0.017325","0.006"],["0.017317","6.092"],["0.017312","0.2"],["0.017311","0.018"],["0.017309","0.018"],["0.017306","0.017"],["0.017305","0.03"],["0.017304","0.148"],["0.017303","0.208"],["0.017301","23.066"],["0.0173","0.09"],["0.017299","13.614"],["0.017298","3.839"],["0.017297","0.012"],["0.017295","0.006"],["0.017291","0.035"],["0.01729","0.068"],["0.017289","0.002"],["0.017288","0.412"],["0.017285","1.44"],["0.017283","0.16"],["0.017281","0.313"],["0.017279","0.022"],["0.017278","0.018"],["0.017276","0.213"],["0.017275","1.628"]],"trades":[{"tid":3240291,"type":"sell","date":1533664920,"price":"0.01733648","amount":"7.4329","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240273,"type":"buy","date":1533664696,"price":"0.01733684","amount":"4.1616","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240263,"type":"sell","date":1533664582,"price":"0.01733651","amount":"2.3223","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240258,"type":"buy","date":1533664531,"price":"0.017337","amount":"0.04","owner_sn":"PEABEHC7THKTIO"},{"tid":3240257,"type":"buy","date":1533664530,"price":"0.017337","amount":"1.73","owner_sn":"PEABEHC7THKTIO"},{"tid":3240256,"type":"buy","date":1533664529,"price":"0.017337","amount":"0.019","owner_sn":"PEABEHC7THKTIO"},{"tid":3240255,"type":"buy","date":1533664529,"price":"0.017337","amount":"0.376","owner_sn":"PEABEHC7THKTIO"},{"tid":3240253,"type":"buy","date":1533664528,"price":"0.017337","amount":"1.9673","owner_sn":"PEABEHC7THKTIO"},{"tid":3240252,"type":"buy","date":1533664528,"price":"0.017336","amount":"0.384","owner_sn":"PEABEHC7THKTIO"},{"tid":3240251,"type":"buy","date":1533664528,"price":"0.017335","amount":"2.5437","owner_sn":"PEABEHC7THKTIO"},{"tid":3240250,"type":"buy","date":1533664527,"price":"0.017335","amount":"0.567","owner_sn":"PEABEHC7THKTIO"},{"tid":3240249,"type":"buy","date":1533664526,"price":"0.017335","amount":"0.016","owner_sn":"PEABEHC7THKTIO"},{"tid":3240248,"type":"sell","date":1533664526,"price":"0.01733319","amount":"5.7137","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240247,"type":"buy","date":1533664526,"price":"0.017335","amount":"0.21","owner_sn":"PEABEHC7THKTIO"},{"tid":3240246,"type":"buy","date":1533664525,"price":"0.017335","amount":"0.011","owner_sn":"PEABEHC7THKTIO"},{"tid":3240245,"type":"buy","date":1533664524,"price":"0.017335","amount":"0.021","owner_sn":"PEABEHC7THKTIO"},{"tid":3240244,"type":"buy","date":1533664523,"price":"0.017335","amount":"0.447","owner_sn":"PEABEHC7THKTIO"},{"tid":3240243,"type":"buy","date":1533664522,"price":"0.017335","amount":"0.011","owner_sn":"PEABEHC7THKTIO"},{"tid":3240242,"type":"buy","date":1533664521,"price":"0.017335","amount":"0.02","owner_sn":"PEABEHC7THKTIO"},{"tid":3240241,"type":"buy","date":1533664521,"price":"0.017335","amount":"1.477","owner_sn":"PEABEHC7THKTIO"},{"tid":3240240,"type":"buy","date":1533664520,"price":"0.017335","amount":"0.04","owner_sn":"PEABEHC7THKTIO"},{"tid":3240239,"type":"buy","date":1533664519,"price":"0.017335","amount":"0.387","owner_sn":"PEABEHC7THKTIO"},{"tid":3240234,"type":"sell","date":1533664472,"price":"0.01733208","amount":"5.7902","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240229,"type":"buy","date":1533664416,"price":"0.01733349","amount":"4.208","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240221,"type":"sell","date":1533664299,"price":"0.01733277","amount":"3.1008","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240216,"type":"buy","date":1533664246,"price":"0.01733469","amount":"5.6124","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240210,"type":"sell","date":1533664192,"price":"0.01733275","amount":"12.558","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240205,"type":"buy","date":1533664132,"price":"0.01733488","amount":"4.6907","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240202,"type":"sell","date":1533664081,"price":"0.01733457","amount":"9.258","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240197,"type":"buy","date":1533664031,"price":"0.01733496","amount":"5.5226","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240189,"type":"buy","date":1533663919,"price":"0.01733438","amount":"4.0911","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240180,"type":"sell","date":1533663806,"price":"0.01733287","amount":"5.9792","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240174,"type":"buy","date":1533663756,"price":"0.01733405","amount":"3.0725","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240165,"type":"sell","date":1533663651,"price":"0.01733379","amount":"4.8294","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240159,"type":"buy","date":1533663601,"price":"0.01733476","amount":"5.5735","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240154,"type":"sell","date":1533663542,"price":"0.01733294","amount":"14.5376","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240148,"type":"sell","date":1533663491,"price":"0.0173335","amount":"6.3197","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240133,"type":"buy","date":1533663318,"price":"0.01733476","amount":"2.9146","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240126,"type":"sell","date":1533663262,"price":"0.01733209","amount":"4.148","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240120,"type":"buy","date":1533663210,"price":"0.0173338","amount":"0.5241","owner_sn":"PEAYXDXDSGITIO"}],"ticker":{"low":"0.01718301","high":"0.017337","last":"0.01733648","volume":"61315.3786","sell":"0.017337","buy":"0.017335","open":0.01718337,"at":1533664972,"coin_icon":"/icons/eos.png","logo":"https://rfinex.com/icons/eos.png","exchange_rate":0.01733648,"usd_rate":409.6,"cny_rate":2798.56},"market":{"id":"eoseth","code":10,"name":"EOS/ETH","base_unit":"eos","quote_unit":"eth","price_group_fixed":8,"bid":{"fee":0.001,"currency":"eth","fixed":8},"ask":{"fee":0.001,"currency":"eos","fixed":4},"sort_order":1,"visible":true,"latest_price":"0.01733648","local_cny_price":"48.5171","local_usd_price":"7.101","local_eur_price":"7.101","volume":"61315.3786","last":"0.01733648","low":"0.01718301","high":"0.017337","open":0.01718374,"trades_sell":[{"tid":3240291,"type":"sell","date":1533664920,"price":"0.01733648","amount":"7.4329","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240263,"type":"sell","date":1533664582,"price":"0.01733651","amount":"2.3223","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240248,"type":"sell","date":1533664526,"price":"0.01733319","amount":"5.7137","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240234,"type":"sell","date":1533664472,"price":"0.01733208","amount":"5.7902","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240221,"type":"sell","date":1533664299,"price":"0.01733277","amount":"3.1008","owner_sn":"PEAYXDXDSGITIO"}],"trades_buy":[{"tid":3240273,"type":"buy","date":1533664696,"price":"0.01733684","amount":"4.1616","owner_sn":"PEAYXDXDSGITIO"},{"tid":3240258,"type":"buy","date":1533664531,"price":"0.017337","amount":"0.04","owner_sn":"PEABEHC7THKTIO"},{"tid":3240257,"type":"buy","date":1533664530,"price":"0.017337","amount":"1.73","owner_sn":"PEABEHC7THKTIO"},{"tid":3240256,"type":"buy","date":1533664529,"price":"0.017337","amount":"0.019","owner_sn":"PEABEHC7THKTIO"},{"tid":3240255,"type":"buy","date":1533664529,"price":"0.017337","amount":"0.376","owner_sn":"PEABEHC7THKTIO"}]}}'
+    http_version: 
+  recorded_at: Tue, 07 Aug 2018 18:02:52 GMT
+recorded_with: VCR 4.0.0

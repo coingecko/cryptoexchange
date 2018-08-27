@@ -14,6 +14,11 @@ RSpec.describe 'KKex integration specs' do
     expect(pair.market).to eq 'k_kex'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'k_kex', base: eth_btc_pair.base, target: eth_btc_pair.target
+    expect(trade_page_url).to eq "https://kkex.com/trading?symbol=ETHBTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(eth_btc_pair)
 
@@ -42,7 +47,7 @@ RSpec.describe 'KKex integration specs' do
     expect(order_book.bids.first.timestamp).to be_nil
     expect(order_book.asks.count).to be > 0
     expect(order_book.bids.count).to be > 0
-    expect(order_book.timestamp).to be_a Numeric
+    expect(order_book.timestamp).to be nil
     expect(order_book.payload).to_not be nil
   end
 

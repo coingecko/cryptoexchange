@@ -4,7 +4,7 @@ RSpec.describe 'C2cx integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'C2CX' }
   let(:btc_eth_pair) do
-    Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'ETH', market: market)
+    Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: market)
   end
 
   it 'fetch pairs' do
@@ -20,8 +20,8 @@ RSpec.describe 'C2cx integration specs' do
   it 'fetch ticker' do
     ticker = client.ticker(btc_eth_pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'ETH'
+    expect(ticker.base).to eq 'ETH'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq market
     expect(ticker.last).to be_a Numeric
     expect(ticker.low).to be_a Numeric
@@ -37,8 +37,8 @@ RSpec.describe 'C2cx integration specs' do
   it 'fetch order book' do
     order_book = client.order_book(btc_eth_pair)
 
-    expect(order_book.base).to eq 'BTC'
-    expect(order_book.target).to eq 'ETH'
+    expect(order_book.base).to eq 'ETH'
+    expect(order_book.target).to eq 'BTC'
     expect(order_book.market).to eq market
 
     expect(order_book.asks).to_not be_empty

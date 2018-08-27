@@ -1,0 +1,209 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitlish.com/api/v1/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitlish.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 04 Aug 2018 03:07:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '12253'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d09c7e4d83a8934f9ae4c4c8bc84d7d8c1533352056; expires=Sun, 04-Aug-19
+        03:07:36 GMT; path=/; domain=.bitlish.com; HttpOnly; Secure
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Content-Security-Policy:
+      - 'default-src https: wss:; script-src https: ''unsafe-eval'' ''unsafe-inline'';
+        style-src https: ''unsafe-inline''; img-src https: data: blob:; font-src https:
+        data:; report-uri /csp-report'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 444dd0907c90a93c-SIN
+    body:
+      encoding: UTF-8
+      string: '{"bchbtc": {"ask": "0.0986400000000000", "bid": "0.0978500000000000",
+        "first": "0.10082", "last": "0.10082", "max": "0.10082", "min": "0.10082",
+        "prc": "0", "sum": "0", "updated": "0"}, "bcheur": {"ask": "640.4800000000000000",
+        "bid": "589.5000000000000000", "first": "693.4", "last": "693.4", "max": "693.4",
+        "min": "693.4", "prc": "0", "sum": "0", "updated": "0"}, "bchgbp": {"ask":
+        null, "bid": null, "first": "0", "last": "0", "max": "0", "min": "0", "prc":
+        "0", "sum": "0", "updated": "0"}, "bchtdt": {"ask": null, "bid": null, "first":
+        "0", "last": "0", "max": "0", "min": "0", "prc": "0", "sum": "0", "updated":
+        "0"}, "btceur": {"ask": "6474.0900000000000000", "bid": "6437.4100000000000000",
+        "first": "6339.39", "last": "6437.4", "max": "6479.71", "min": "6311.5", "prc":
+        "0.0155", "sum": "165.79304735", "updated": "1533351193350826"}, "btcgbp":
+        {"ask": "5900.0000000000000000", "bid": "5619.2000000000000000", "first":
+        "5754.57", "last": "5965", "max": "5965", "min": "5754.57", "prc": "0.0366",
+        "sum": "0.02084685", "updated": "1533281206028361"}, "btcjpy": {"ask": "837400.0000000000000000",
+        "bid": "808300.0000000000000000", "first": "836450", "last": "836450", "max":
+        "836450", "min": "836450", "prc": "0", "sum": "0.00135509", "updated": "1533280730432397"},
+        "btcrub": {"ask": "496283.0000000000000000", "bid": "462549.0000000000000000",
+        "first": "488106", "last": "495434", "max": "495434", "min": "450630.25",
+        "prc": "0.015", "sum": "10.13126475", "updated": "1533312215028753"}, "btctdt":
+        {"ask": "7550.0500000000000000", "bid": "7250.0700000000000000", "first":
+        "7500", "last": "7500", "max": "7500", "min": "7500", "prc": "0", "sum": "0",
+        "updated": "0"}, "btcusd": {"ask": "7606.1200000000000000", "bid": "7463.4500000000000000",
+        "first": "7350", "last": "7463.45", "max": "7606.12", "min": "7348.9", "prc":
+        "0.0154", "sum": "1077.71468507", "updated": "1533328738937361"}, "btgbtc":
+        {"ask": "0.0033200000000000", "bid": "0.0032900000000000", "first": "0.00401",
+        "last": "0.00401", "max": "0.00401", "min": "0.00401", "prc": "0", "sum":
+        "0", "updated": "0"}, "btgeur": {"ask": "22.5000000000000000", "bid": "19.7000000000000000",
+        "first": "22.1", "last": "22.1", "max": "22.1", "min": "22.1", "prc": "0",
+        "sum": "0", "updated": "0"}, "btggbp": {"ask": null, "bid": null, "first":
+        "0", "last": "0", "max": "0", "min": "0", "prc": "0", "sum": "0", "updated":
+        "0"}, "btgtdt": {"ask": null, "bid": null, "first": "0", "last": "0", "max":
+        "0", "min": "0", "prc": "0", "sum": "0", "updated": "0"}, "dshbtc": {"ask":
+        "0.0287300000000000", "bid": "0.0283900000000000", "first": "0.0292", "last":
+        "0.0292", "max": "0.0292", "min": "0.0292", "prc": "0", "sum": "0", "updated":
+        "0"}, "dsheur": {"ask": "191.4000000000000000", "bid": "172.7000000000000000",
+        "first": "185.7", "last": "185.7", "max": "185.7", "min": "185.7", "prc":
+        "0", "sum": "0.0004", "updated": "1533298883973177"}, "dshgbp": {"ask": null,
+        "bid": null, "first": "0", "last": "0", "max": "0", "min": "0", "prc": "0",
+        "sum": "0", "updated": "0"}, "dshrub": {"ask": "14141.0000000000000000", "bid":
+        "12755.0000000000000000", "first": "14226", "last": "14226", "max": "14226",
+        "min": "14226", "prc": "0", "sum": "0", "updated": "0"}, "dshtdt": {"ask":
+        null, "bid": null, "first": "0", "last": "0", "max": "0", "min": "0", "prc":
+        "0", "sum": "0", "updated": "0"}, "dshusd": {"ask": "218.3000000000000000",
+        "bid": "208.1000000000000000", "first": "257.8", "last": "257.8", "max": "257.8",
+        "min": "257.8", "prc": "0", "sum": "0", "updated": "0"}, "ethbtc": {"ask":
+        "0.0562000000000000", "bid": "0.0558400000000000", "first": "0.05549", "last":
+        "0.05584", "max": "0.05642", "min": "0.05549", "prc": "0.0063", "sum": "8.56458675",
+        "updated": "1533351173687995"}, "etheur": {"ask": "370.0000000000000000",
+        "bid": "339.7800000000000000", "first": "360.37", "last": "370", "max": "370",
+        "min": "360.37", "prc": "0.0267", "sum": "0.09260916", "updated": "1533323535334411"},
+        "ethgbp": {"ask": "340.0000000000000000", "bid": "311.1100000000000000", "first":
+        "345", "last": "345", "max": "345", "min": "345", "prc": "0", "sum": "0",
+        "updated": "0"}, "ethjpy": {"ask": "49100.0000000000000000", "bid": "44120.0000000000000000",
+        "first": "44350", "last": "44350", "max": "44350", "min": "44350", "prc":
+        "0", "sum": "10", "updated": "1533282177880488"}, "ethrub": {"ask": "25932.5000000000000000",
+        "bid": "25492.0000000000000000", "first": "25932.5", "last": "25932.5", "max":
+        "25932.5", "min": "25932.5", "prc": "0", "sum": "0.08026474", "updated": "1533351154928400"},
+        "ethtdt": {"ask": "420.0000000000000000", "bid": "380.0000000000000000", "first":
+        "419.01", "last": "419.01", "max": "419.01", "min": "419.01", "prc": "0",
+        "sum": "0", "updated": "0"}, "ethusd": {"ask": "427.1200000000000000", "bid":
+        "411.7700000000000000", "first": "409.17", "last": "414", "max": "414", "min":
+        "404", "prc": "0.0118", "sum": "3090.75586763", "updated": "1533303455238516"},
+        "hbzbtc": {"ask": "0.0000010800000000", "bid": "0.0000001000000000", "first":
+        "1.07e-06", "last": "1.08e-06", "max": "1.08e-06", "min": "1.07e-06", "prc":
+        "0.0093", "sum": "6495.9074074", "updated": "1533347800221861"}, "hbzeth":
+        {"ask": "0.0000182600000000", "bid": "0.0000144800000000", "first": "1.885e-05",
+        "last": "1.885e-05", "max": "1.885e-05", "min": "1.885e-05", "prc": "0", "sum":
+        "0", "updated": "0"}, "hbzeur": {"ask": "0.0130000000000000", "bid": "0.0025000000000000",
+        "first": "0.01399", "last": "0.01399", "max": "0.01399", "min": "0.01399",
+        "prc": "0", "sum": "0", "updated": "0"}, "hbzusd": {"ask": "0.0118000000000000",
+        "bid": "0.0030000000000000", "first": "0.0109", "last": "0.0109", "max": "0.0109",
+        "min": "0.0109", "prc": "0", "sum": "0", "updated": "0"}, "iotbtc": {"ask":
+        null, "bid": null, "first": "0.00011", "last": "0.00011", "max": "0.00011",
+        "min": "0.00011", "prc": "0", "sum": "0", "updated": "0"}, "ioteth": {"ask":
+        null, "bid": null, "first": "0", "last": "0", "max": "0", "min": "0", "prc":
+        "0", "sum": "0", "updated": "0"}, "ioteur": {"ask": null, "bid": null, "first":
+        "0", "last": "0", "max": "0", "min": "0", "prc": "0", "sum": "0", "updated":
+        "0"}, "iotgbp": {"ask": null, "bid": "0.9000000000000000", "first": "0", "last":
+        "0", "max": "0", "min": "0", "prc": "0", "sum": "0", "updated": "0"}, "iottdt":
+        {"ask": null, "bid": null, "first": "0", "last": "0", "max": "0", "min": "0",
+        "prc": "0", "sum": "0", "updated": "0"}, "ltcbtc": {"ask": "0.0104300000000000",
+        "bid": "0.0103700000000000", "first": "0.0102", "last": "0.0102", "max": "0.0102",
+        "min": "0.0102", "prc": "0", "sum": "0", "updated": "0"}, "ltceur": {"ask":
+        "70.5000000000000000", "bid": "62.4400000000000000", "first": "69.63", "last":
+        "69.63", "max": "69.63", "min": "69.63", "prc": "0", "sum": "0.0067", "updated":
+        "1533317232466099"}, "ltcgbp": {"ask": null, "bid": null, "first": "0", "last":
+        "0", "max": "0", "min": "0", "prc": "0", "sum": "0", "updated": "0"}, "ltcrub":
+        {"ask": "5211.0000000000000000", "bid": "4613.0000000000000000", "first":
+        "5096", "last": "5096", "max": "5096", "min": "5096", "prc": "0", "sum": "0.2478668",
+        "updated": "1533305416871716"}, "ltctdt": {"ask": null, "bid": null, "first":
+        "0", "last": "0", "max": "0", "min": "0", "prc": "0", "sum": "0", "updated":
+        "0"}, "ltcusd": {"ask": "79.3300000000000000", "bid": "76.1800000000000000",
+        "first": "79.14", "last": "79.14", "max": "79.14", "min": "79.14", "prc":
+        "0", "sum": "0.14796563", "updated": "1533342994450906"}, "tdteur": {"ask":
+        "0.8628000000000000", "bid": "0.8561000000000000", "first": "0.8547", "last":
+        "0.86", "max": "0.86", "min": "0.8547", "prc": "0.0062", "sum": "12.52", "updated":
+        "1533351153732976"}, "tdtgbp": {"ask": "0.7752000000000000", "bid": "0.7621000000000000",
+        "first": "0.7669", "last": "0.7669", "max": "0.7669", "min": "0.7669", "prc":
+        "0", "sum": "0", "updated": "0"}, "tdtjpy": {"ask": "112.7500000000000000",
+        "bid": "110.5000000000000000", "first": "111.5", "last": "111.5", "max": "111.5",
+        "min": "111.5", "prc": "0", "sum": "0", "updated": "0"}, "tdtrub": {"ask":
+        "63.9500000000000000", "bid": "62.9000000000000000", "first": "63.55", "last":
+        "63.55", "max": "63.55", "min": "63.55", "prc": "0", "sum": "0", "updated":
+        "0"}, "tdtusd": {"ask": "1.0000000000000000", "bid": "0.9999900000000000",
+        "first": "1", "last": "1", "max": "1", "min": "1", "prc": "0", "sum": "10",
+        "updated": "1533309202069349"}, "xdgbtc": {"ask": "0.0000009800000000", "bid":
+        "0.0000002600000000", "first": "2.6e-07", "last": "2.6e-07", "max": "2.6e-07",
+        "min": "2.6e-07", "prc": "0", "sum": "0", "updated": "0"}, "xdgeur": {"ask":
+        "0.0068000000000000", "bid": "0.0010000000000000", "first": "0.001", "last":
+        "0.001", "max": "0.001", "min": "0.001", "prc": "0", "sum": "0", "updated":
+        "0"}, "xdggbp": {"ask": null, "bid": null, "first": "0", "last": "0", "max":
+        "0", "min": "0", "prc": "0", "sum": "0", "updated": "0"}, "xdgtdt": {"ask":
+        null, "bid": null, "first": "0", "last": "0", "max": "0", "min": "0", "prc":
+        "0", "sum": "0", "updated": "0"}, "xembtc": {"ask": "0.0000230000000000",
+        "bid": "0.0000150100000000", "first": "2.3e-05", "last": "2.3e-05", "max":
+        "2.3e-05", "min": "2.3e-05", "prc": "0", "sum": "12", "updated": "1533291184306554"},
+        "xemeth": {"ask": null, "bid": "0.0002000000000000", "first": "0", "last":
+        "0", "max": "0", "min": "0", "prc": "0", "sum": "0", "updated": "0"}, "xemeur":
+        {"ask": null, "bid": "0.1000000000000000", "first": "0.1479", "last": "0.1479",
+        "max": "0.1479", "min": "0.1479", "prc": "0", "sum": "10", "updated": "1533290977773491"},
+        "xemgbp": {"ask": null, "bid": "0.0770000000000000", "first": "0", "last":
+        "0", "max": "0", "min": "0", "prc": "0", "sum": "0", "updated": "0"}, "xemjpy":
+        {"ask": null, "bid": "11.3300000000000000", "first": "0", "last": "0", "max":
+        "0", "min": "0", "prc": "0", "sum": "0", "updated": "0"}, "xemtdt": {"ask":
+        null, "bid": "0.0999000000000000", "first": "0", "last": "0", "max": "0",
+        "min": "0", "prc": "0", "sum": "0", "updated": "0"}, "xmrbtc": {"ask": "0.0161800000000000",
+        "bid": "0.0160000000000000", "first": "0.01644", "last": "0.01644", "max":
+        "0.01644", "min": "0.01644", "prc": "0", "sum": "0", "updated": "0"}, "xmreur":
+        {"ask": "109.2600000000000000", "bid": "96.0600000000000000", "first": "101.9",
+        "last": "101.9", "max": "101.9", "min": "101.9", "prc": "0", "sum": "0", "updated":
+        "0"}, "xmrgbp": {"ask": null, "bid": null, "first": "0", "last": "0", "max":
+        "0", "min": "0", "prc": "0", "sum": "0", "updated": "0"}, "xmrtdt": {"ask":
+        null, "bid": null, "first": "0", "last": "0", "max": "0", "min": "0", "prc":
+        "0", "sum": "0", "updated": "0"}, "xrpbtc": {"ask": "0.0000593600000000",
+        "bid": "0.0000590900000000", "first": "5.931e-05", "last": "5.931e-05", "max":
+        "5.931e-05", "min": "5.931e-05", "prc": "0", "sum": "0", "updated": "0"},
+        "xrpeur": {"ask": "0.4013700000000000", "bid": "0.3550000000000000", "first":
+        "0.34729", "last": "0.34729", "max": "0.34729", "min": "0.34729", "prc": "0",
+        "sum": "0", "updated": "0"}, "xrpgbp": {"ask": null, "bid": null, "first":
+        "0", "last": "0", "max": "0", "min": "0", "prc": "0", "sum": "0", "updated":
+        "0"}, "xrptdt": {"ask": null, "bid": null, "first": "0", "last": "0", "max":
+        "0", "min": "0", "prc": "0", "sum": "0", "updated": "0"}, "zecbtc": {"ask":
+        "0.0252600000000000", "bid": "0.0248400000000000", "first": "0.0244", "last":
+        "0.02479", "max": "0.02479", "min": "0.0244", "prc": "0.016", "sum": "19.30453934",
+        "updated": "1533322868122682"}, "zeceur": {"ask": "168.0000000000000000",
+        "bid": "151.5000000000000000", "first": "181.9", "last": "181.9", "max": "181.9",
+        "min": "181.9", "prc": "0", "sum": "0", "updated": "0"}, "zecgbp": {"ask":
+        null, "bid": null, "first": "0", "last": "0", "max": "0", "min": "0", "prc":
+        "0", "sum": "0", "updated": "0"}, "zecrub": {"ask": "12397.0000000000000000",
+        "bid": "11192.0000000000000000", "first": "11061", "last": "11061", "max":
+        "11061", "min": "11061", "prc": "0", "sum": "1.6786", "updated": "1533319531097860"},
+        "zectdt": {"ask": null, "bid": null, "first": "0", "last": "0", "max": "0",
+        "min": "0", "prc": "0", "sum": "0", "updated": "0"}, "zecusd": {"ask": "192.3000000000000000",
+        "bid": "182.5000000000000000", "first": "189.2", "last": "189.2", "max": "189.2",
+        "min": "189.2", "prc": "0", "sum": "1.67154407", "updated": "1533319488503314"}}'
+    http_version: 
+  recorded_at: Sat, 04 Aug 2018 03:07:36 GMT
+recorded_with: VCR 4.0.0

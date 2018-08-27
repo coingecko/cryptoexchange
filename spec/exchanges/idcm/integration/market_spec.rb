@@ -14,6 +14,11 @@ RSpec.describe 'Idcm Coin integration specs' do
     expect(pair.market).to eq 'idcm'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'idcm', base: eos_vusd_pair.base, target: eos_vusd_pair.target
+    expect(trade_page_url).to eq "https://www.idcm.io/trading/EOS_VUSD"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(eos_vusd_pair)
 
@@ -25,7 +30,7 @@ RSpec.describe 'Idcm Coin integration specs' do
     expect(ticker.low).to be_a Numeric
     expect(ticker.change).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
   end
 end

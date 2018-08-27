@@ -63,4 +63,10 @@ RSpec.describe 'Okex integration specs' do
     expect(trade.payload).to_not be nil
     expect(trade.market).to eq 'okex'
   end
+
+  it 'give trade url' do
+    pair = Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USDT', market: 'okex')
+    trade_page_url = client.trade_page_url 'okex', base: pair.base, target: pair.target
+    expect(trade_page_url).to eq "https://www.okex.com/market?product=eth_usdt"
+  end
 end

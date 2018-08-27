@@ -11,11 +11,12 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output.map do |pair|
-            base, target = pair['name'].split('/')
+            base, target = pair["name"].split("/")
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
-              market: SafeTrade::Market::NAME
+              market: SafeTrade::Market::NAME,
+              inst_id: pair["id"],
             )
           end
         end
