@@ -54,6 +54,7 @@ Or install it yourself as:
 | Bithash           | Y       | Y          | Y       |         | Y           | Y        | bithash           |
 | Bithumb           | Y       |            |         |         | Y           |          | bithumb           |
 | Bitibu            | Y       | Y          | Y       |         | Y           | Y        | bitibu            |
+| Bitinka           | Y       | Y          |         |         | Y           |          | bitinka           |
 | Bitkonan          | Y       |            |         |         | User-Defined|          | bitkonan          |
 | Bitlish           | Y       | Y          | Y       |         | Y           |          | bitlish           |
 | Bitmex            | Y       | Y          | Y       |         | Y           |          | bitmex            |
