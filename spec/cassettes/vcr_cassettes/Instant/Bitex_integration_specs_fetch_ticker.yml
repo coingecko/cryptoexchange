@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.instantbitex.com/customticker/ETH_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.instantbitex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 31 Jul 2018 03:53:22 GMT
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, X-Auth-Token, Origin, Authorization, X-Requested-With, Application
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - no-cache, private
+      Set-Cookie:
+      - XSRF-TOKEN=eyJpdiI6ImZ6eWxaNFpkb3hCVmd4VjlEVHJSM1E9PSIsInZhbHVlIjoiNjZkb1RaQXFTRUtvVm5YcTR6NzE5alkrRFk5MFdDYXlMMzZ5alZndkIyT3RNRG1jQXdYTmJpTkVObEJ5a3R3eDk1NFwvOGxQZHM0MmE5cm95UWdCeE9nPT0iLCJtYWMiOiI1YjU3M2Y2YjFmMjBkMmZjYWVmMTY2MjRjYmY0YTNkMzNlNGM1YTJjN2FjZjAyNjIwMDFiZDRiZmE4NDg4MjhlIn0%3D;
+        expires=Tue, 31-Jul-2018 05:53:22 GMT; Max-Age=7200; path=/
+      - laravel_session=eyJpdiI6IlwvS3ExMHN0MHJXY0E3S0tWZHRSYUFRPT0iLCJ2YWx1ZSI6IkVBQUxNMWEySWhKSFBkWlNzQURuRXZyajlubFBrR0p5VHUxVTM3MUI2VzdSTFE1R3F6R2UxU3ZhZElhUTZJM2dIZER5Q3FkbWc0M3J5VE9YdExuTXh3PT0iLCJtYWMiOiIzNzkzNWY1MjdkZTIyOWQxODI2OGJlNjY3YzlmOTc3ZDczMDQ0ODJmNzViYWMzYTVlOTk2YmRiYTMzODc0NWIzIn0%3D;
+        expires=Tue, 31-Jul-2018 05:53:22 GMT; Max-Age=7200; path=/; HttpOnly
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '217'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: '{"status":"1","message":"Success","combinations":{"last":"0.05565400","lowestAsk":"0.05565400","highestBid":"0.05653000","change24hr":"-1.07","volume24hr":"92.26460187","low24hr":"0.05565400","high24hr":"0.05653000"}}'
+    http_version: 
+  recorded_at: Tue, 31 Jul 2018 03:53:22 GMT
+recorded_with: VCR 4.0.0

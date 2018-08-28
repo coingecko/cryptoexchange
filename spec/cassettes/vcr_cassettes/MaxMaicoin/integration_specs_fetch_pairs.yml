@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://max-api.maicoin.com/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - max-api.maicoin.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 31 Jul 2018 08:35:38 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '5898'
+      Connection:
+      - close
+      Server:
+      - nginx
+      Etag:
+      - '"a9f4b6accd9f174fda90aa7004b662b4"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6e3b8263-11e4-4c97-83b7-35637cf481bd
+      X-Runtime:
+      - '0.010142'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"btctwd","name":"BTC/TWD","base_unit":"btc","base_unit_precision":8,"quote_unit":"twd","quote_unit_precision":1},{"id":"ethtwd","name":"ETH/TWD","base_unit":"eth","base_unit_precision":6,"quote_unit":"twd","quote_unit_precision":1},{"id":"ltctwd","name":"LTC/TWD","base_unit":"ltc","base_unit_precision":4,"quote_unit":"twd","quote_unit_precision":1},{"id":"mithtwd","name":"MITH/TWD","base_unit":"mith","base_unit_precision":2,"quote_unit":"twd","quote_unit_precision":3},{"id":"bchtwd","name":"BCH/TWD","base_unit":"bch","base_unit_precision":6,"quote_unit":"twd","quote_unit_precision":1},{"id":"usdttwd","name":"USDT/TWD","base_unit":"usdt","base_unit_precision":2,"quote_unit":"twd","quote_unit_precision":1},{"id":"ethbtc","name":"ETH/BTC","base_unit":"eth","base_unit_precision":4,"quote_unit":"btc","quote_unit_precision":6},{"id":"mitheth","name":"MITH/ETH","base_unit":"mith","base_unit_precision":2,"quote_unit":"eth","quote_unit_precision":6},{"id":"trxtwd","name":"TRX/TWD","base_unit":"trx","base_unit_precision":1,"quote_unit":"twd","quote_unit_precision":4},{"id":"trxbtc","name":"TRX/BTC","base_unit":"trx","base_unit_precision":1,"quote_unit":"btc","quote_unit_precision":8},{"id":"trxeth","name":"TRX/ETH","base_unit":"trx","base_unit_precision":1,"quote_unit":"eth","quote_unit_precision":8},{"id":"trxusdt","name":"TRX/USDT","base_unit":"trx","base_unit_precision":1,"quote_unit":"usdt","quote_unit_precision":6},{"id":"btcusdt","name":"BTC/USDT","base_unit":"btc","base_unit_precision":6,"quote_unit":"usdt","quote_unit_precision":2},{"id":"ethusdt","name":"ETH/USDT","base_unit":"eth","base_unit_precision":5,"quote_unit":"usdt","quote_unit_precision":2},{"id":"bchusdt","name":"BCH/USDT","base_unit":"bch","base_unit_precision":5,"quote_unit":"usdt","quote_unit_precision":2},{"id":"ltcusdt","name":"LTC/USDT","base_unit":"ltc","base_unit_precision":5,"quote_unit":"usdt","quote_unit_precision":2},{"id":"mithbtc","name":"MITH/BTC","base_unit":"mith","base_unit_precision":2,"quote_unit":"btc","quote_unit_precision":8},{"id":"mithusdt","name":"MITH/USDT","base_unit":"mith","base_unit_precision":2,"quote_unit":"usdt","quote_unit_precision":5},{"id":"cccxbtc","name":"CCCX/BTC","base_unit":"cccx","base_unit_precision":1,"quote_unit":"btc","quote_unit_precision":8},{"id":"cccxeth","name":"CCCX/ETH","base_unit":"cccx","base_unit_precision":1,"quote_unit":"eth","quote_unit_precision":8},{"id":"cccxtwd","name":"CCCX/TWD","base_unit":"cccx","base_unit_precision":1,"quote_unit":"twd","quote_unit_precision":4},{"id":"cccxusdt","name":"CCCX/USDT","base_unit":"cccx","base_unit_precision":1,"quote_unit":"usdt","quote_unit_precision":6},{"id":"eosbtc","name":"EOS/BTC","base_unit":"eos","base_unit_precision":3,"quote_unit":"btc","quote_unit_precision":8},{"id":"eoseth","name":"EOS/ETH","base_unit":"eos","base_unit_precision":3,"quote_unit":"eth","quote_unit_precision":6},{"id":"eostwd","name":"EOS/TWD","base_unit":"eos","base_unit_precision":3,"quote_unit":"twd","quote_unit_precision":3},{"id":"eosusdt","name":"EOS/USDT","base_unit":"eos","base_unit_precision":3,"quote_unit":"usdt","quote_unit_precision":5},{"id":"palbtc","name":"PAL/BTC","base_unit":"pal","base_unit_precision":1,"quote_unit":"btc","quote_unit_precision":8},{"id":"paleth","name":"PAL/ETH","base_unit":"pal","base_unit_precision":1,"quote_unit":"eth","quote_unit_precision":8},{"id":"paltwd","name":"PAL/TWD","base_unit":"pal","base_unit_precision":1,"quote_unit":"twd","quote_unit_precision":4},{"id":"batbtc","name":"BAT/BTC","base_unit":"bat","base_unit_precision":2,"quote_unit":"btc","quote_unit_precision":8},{"id":"bateth","name":"BAT/ETH","base_unit":"bat","base_unit_precision":2,"quote_unit":"eth","quote_unit_precision":6},{"id":"battwd","name":"BAT/TWD","base_unit":"bat","base_unit_precision":2,"quote_unit":"twd","quote_unit_precision":3},{"id":"batusdt","name":"BAT/USDT","base_unit":"bat","base_unit_precision":2,"quote_unit":"usdt","quote_unit_precision":5},{"id":"zrxbtc","name":"ZRX/BTC","base_unit":"zrx","base_unit_precision":2,"quote_unit":"btc","quote_unit_precision":8},{"id":"zrxeth","name":"ZRX/ETH","base_unit":"zrx","base_unit_precision":2,"quote_unit":"eth","quote_unit_precision":6},{"id":"zrxtwd","name":"ZRX/TWD","base_unit":"zrx","base_unit_precision":2,"quote_unit":"twd","quote_unit_precision":2},{"id":"zrxusdt","name":"ZRX/USDT","base_unit":"zrx","base_unit_precision":2,"quote_unit":"usdt","quote_unit_precision":4},{"id":"gntbtc","name":"GNT/BTC","base_unit":"gnt","base_unit_precision":2,"quote_unit":"btc","quote_unit_precision":8},{"id":"gnteth","name":"GNT/ETH","base_unit":"gnt","base_unit_precision":2,"quote_unit":"eth","quote_unit_precision":6},{"id":"gnttwd","name":"GNT/TWD","base_unit":"gnt","base_unit_precision":2,"quote_unit":"twd","quote_unit_precision":3},{"id":"gntusdt","name":"GNT/USDT","base_unit":"gnt","base_unit_precision":2,"quote_unit":"usdt","quote_unit_precision":5},{"id":"omgbtc","name":"OMG/BTC","base_unit":"omg","base_unit_precision":3,"quote_unit":"btc","quote_unit_precision":8},{"id":"omgeth","name":"OMG/ETH","base_unit":"omg","base_unit_precision":3,"quote_unit":"eth","quote_unit_precision":6},{"id":"omgtwd","name":"OMG/TWD","base_unit":"omg","base_unit_precision":3,"quote_unit":"twd","quote_unit_precision":3},{"id":"omgusdt","name":"OMG/USDT","base_unit":"omg","base_unit_precision":3,"quote_unit":"usdt","quote_unit_precision":5},{"id":"kncbtc","name":"KNC/BTC","base_unit":"knc","base_unit_precision":2,"quote_unit":"btc","quote_unit_precision":8},{"id":"knceth","name":"KNC/ETH","base_unit":"knc","base_unit_precision":2,"quote_unit":"eth","quote_unit_precision":6},{"id":"knctwd","name":"KNC/TWD","base_unit":"knc","base_unit_precision":2,"quote_unit":"twd","quote_unit_precision":2},{"id":"kncusdt","name":"KNC/USDT","base_unit":"knc","base_unit_precision":2,"quote_unit":"usdt","quote_unit_precision":4}]'
+    http_version: 
+  recorded_at: Tue, 31 Jul 2018 08:35:38 GMT
+recorded_with: VCR 4.0.0

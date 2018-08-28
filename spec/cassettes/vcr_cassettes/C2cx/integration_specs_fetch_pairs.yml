@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.c2cx.com/v1/ExchangePolicy
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.c2cx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 23 Aug 2018 10:26:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '7840'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=de3fb4f8a7d59bbcaa0f9a51a4442040e1535019980; expires=Fri, 23-Aug-19
+        10:26:20 GMT; path=/; domain=.c2cx.com; HttpOnly; Secure
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 44ece15e69b8bcec-KUL
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"message":"success","data":{"SupportPairs":["BTC_BCH","BTC_DASH","BTC_ETH","BTC_FUN","BTC_SKY","BTC_TNB","BTC_UCASH","BTC_ZRX","DRG_BCH","DRG_BTC","DRG_BTG","DRG_DASH","DRG_ETC","DRG_ETH","DRG_FUN","DRG_LTC","DRG_SKY","DRG_TNB","DRG_ZEC","DRG_ZRX","USDT_BCH","USDT_BTC","USDT_BTG","USDT_DASH","USDT_DRG","USDT_ETC","USDT_ETH","USDT_FUN","USDT_LTC","USDT_SKY","USDT_TNB","USDT_UCASH","USDT_ZEC","USDT_ZRX","DRG_OMG","USDT_OMG","BTC_OMG","DRG_RCN","USDT_RCN","BTC_RCN","DRG_XRP","USDT_XRP","BTC_XRP","DRG_EOS","USDT_EOS","BTC_EOS","DRG_WAX","USDT_WAX","BTC_WAX","DRG_XLM","USDT_XLM","BTC_XLM","BTC_ETC","BTC_LTC","BTC_BTG","BTC_ZEC","BTC_TRIA","BTC_BEZ","BTC_SLRM"],"TransferFee":[{"Symbol":"BTC","PercentageWithdrawalFee":0.001,"MinWithdrawalFee":0.0005,"DepositFee":0.001,"DepositFeeRuleThreshold":0.5,"DepositComfirmation":1,"MakerTradingFee":0.001,"TakerTradingFee":0.001},{"Symbol":"ETH","PercentageWithdrawalFee":0.001,"MinWithdrawalFee":0.005,"DepositFee":0.002,"DepositFeeRuleThreshold":0.5,"DepositComfirmation":20,"MakerTradingFee":0.001,"TakerTradingFee":0.001},{"Symbol":"ETC","PercentageWithdrawalFee":0.001,"MinWithdrawalFee":0.05,"DepositFee":0,"DepositFeeRuleThreshold":0,"DepositComfirmation":20,"MakerTradingFee":0.001,"TakerTradingFee":0.001},{"Symbol":"SKY","PercentageWithdrawalFee":0,"MinWithdrawalFee":0.01,"DepositFee":0,"DepositFeeRuleThreshold":0,"DepositComfirmation":1,"MakerTradingFee":0.002,"TakerTradingFee":0.002},{"Symbol":"BCH","PercentageWithdrawalFee":0.001,"MinWithdrawalFee":0.0005,"DepositFee":0,"DepositFeeRuleThreshold":0,"DepositComfirmation":4,"MakerTradingFee":0.001,"TakerTradingFee":0.001},{"Symbol":"BTG","PercentageWithdrawalFee":0,"MinWithdrawalFee":0,"DepositFee":0,"DepositFeeRuleThreshold":0,"DepositComfirmation":4,"MakerTradingFee":0.001,"TakerTradingFee":0.001},{"Symbol":"USDT","PercentageWithdrawalFee":0.001,"MinWithdrawalFee":2.5,"DepositFee":1,"DepositFeeRuleThreshold":500,"DepositComfirmation":20,"MakerTradingFee":0.001,"TakerTradingFee":0.001},{"Symbol":"ZEC","PercentageWithdrawalFee":0.001,"MinWithdrawalFee":0.005,"DepositFee":0,"DepositFeeRuleThreshold":0,"DepositComfirmation":20,"MakerTradingFee":0.001,"TakerTradingFee":0.001},{"Symbol":"LTC","PercentageWithdrawalFee":0,"MinWithdrawalFee":0.001,"DepositFee":0,"DepositFeeRuleThreshold":0,"DepositComfirmation":0,"MakerTradingFee":0.001,"TakerTradingFee":0.001},{"Symbol":"DASH","PercentageWithdrawalFee":0.001,"MinWithdrawalFee":0.01,"DepositFee":0,"DepositFeeRuleThreshold":0,"DepositComfirmation":0,"MakerTradingFee":0.001,"TakerTradingFee":0.001},{"Symbol":"ZRX","PercentageWithdrawalFee":0.001,"MinWithdrawalFee":2.5,"DepositFee":0,"DepositFeeRuleThreshold":0,"DepositComfirmation":20,"MakerTradingFee":0.0015,"TakerTradingFee":0.0015},{"Symbol":"FUN","PercentageWithdrawalFee":0.001,"MinWithdrawalFee":50,"DepositFee":0,"DepositFeeRuleThreshold":0,"DepositComfirmation":20,"MakerTradingFee":0.0015,"TakerTradingFee":0.0015},{"Symbol":"TNB","PercentageWithdrawalFee":0.001,"MinWithdrawalFee":30,"DepositFee":0,"DepositFeeRuleThreshold":0,"DepositComfirmation":20,"MakerTradingFee":0.0015,"TakerTradingFee":0.0015},{"Symbol":"UCASH","PercentageWithdrawalFee":0.001,"MinWithdrawalFee":5,"DepositFee":5,"DepositFeeRuleThreshold":5000,"DepositComfirmation":20,"MakerTradingFee":0.0015,"TakerTradingFee":0.0015}],"OrderPolicy":[{"Pair":"USDT_BTC","Pricedigits":-1,"Quantitydigits":4,"MinOrderQuantity":0},{"Pair":"DRG_BTC","Pricedigits":0,"Quantitydigits":4,"MinOrderQuantity":0.01},{"Pair":"USDT_BCH","Pricedigits":0,"Quantitydigits":4,"MinOrderQuantity":0},{"Pair":"DRG_BCH","Pricedigits":1,"Quantitydigits":4,"MinOrderQuantity":0.01},{"Pair":"BTC_BCH","Pricedigits":3,"Quantitydigits":4,"MinOrderQuantity":0.01},{"Pair":"USDT_ETH","Pricedigits":0,"Quantitydigits":4,"MinOrderQuantity":0},{"Pair":"DRG_ETH","Pricedigits":2,"Quantitydigits":4,"MinOrderQuantity":0.1},{"Pair":"BTC_ETH","Pricedigits":4,"Quantitydigits":4,"MinOrderQuantity":0},{"Pair":"USDT_DASH","Pricedigits":0,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"DRG_DASH","Pricedigits":1,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"BTC_DASH","Pricedigits":4,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"USDT_ZEC","Pricedigits":1,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"DRG_ZEC","Pricedigits":2,"Quantitydigits":2,"MinOrderQuantity":0.05},{"Pair":"BTC_ZEC","Pricedigits":4,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"USDT_LTC","Pricedigits":1,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"DRG_LTC","Pricedigits":2,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"BTC_LTC","Pricedigits":5,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"USDT_BTG","Pricedigits":1,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"DRG_BTG","Pricedigits":2,"Quantitydigits":4,"MinOrderQuantity":0.1},{"Pair":"BTC_BTG","Pricedigits":5,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"USDT_ETC","Pricedigits":1,"Quantitydigits":1,"MinOrderQuantity":0},{"Pair":"DRG_ETC","Pricedigits":3,"Quantitydigits":2,"MinOrderQuantity":0.05},{"Pair":"BTC_ETC","Pricedigits":6,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"USDT_EOS","Pricedigits":1,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"DRG_EOS","Pricedigits":3,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"BTC_EOS","Pricedigits":5,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"USDT_SKY","Pricedigits":1,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"DRG_SKY","Pricedigits":2,"Quantitydigits":2,"MinOrderQuantity":1},{"Pair":"BTC_SKY","Pricedigits":5,"Quantitydigits":2,"MinOrderQuantity":1},{"Pair":"USDT_XRP","Pricedigits":3,"Quantitydigits":2,"MinOrderQuantity":1},{"Pair":"DRG_XRP","Pricedigits":4,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"BTC_XRP","Pricedigits":7,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"USDT_XLM","Pricedigits":3,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"DRG_XLM","Pricedigits":5,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"BTC_XLM","Pricedigits":7,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"USDT_DRG","Pricedigits":2,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"USDT_OMG","Pricedigits":2,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"DRG_OMG","Pricedigits":3,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"BTC_OMG","Pricedigits":5,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"USDT_ZRX","Pricedigits":3,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"DRG_ZRX","Pricedigits":4,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"BTC_ZRX","Pricedigits":7,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"USDT_WAX","Pricedigits":3,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"DRG_WAX","Pricedigits":4,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"BTC_WAX","Pricedigits":7,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"USDT_RCN","Pricedigits":4,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"DRG_RCN","Pricedigits":4,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"BTC_RCN","Pricedigits":7,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"USDT_FUN","Pricedigits":4,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"DRG_FUN","Pricedigits":5,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"BTC_FUN","Pricedigits":8,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"USDT_TNB","Pricedigits":4,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"DRG_TNB","Pricedigits":5,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"BTC_TNB","Pricedigits":8,"Quantitydigits":2,"MinOrderQuantity":0},{"Pair":"USDT_UCASH","Pricedigits":4,"Quantitydigits":2,"MinOrderQuantity":50},{"Pair":"BTC_UCASH","Pricedigits":8,"Quantitydigits":2,"MinOrderQuantity":50},{"Pair":"BTC_BEZ","Pricedigits":8,"Quantitydigits":2,"MinOrderQuantity":50},{"Pair":"BTC_SLRM","Pricedigits":7,"Quantitydigits":2,"MinOrderQuantity":50},{"Pair":"BTC_TRIA","Pricedigits":6,"Quantitydigits":2,"MinOrderQuantity":50}]}}'
+    http_version: 
+  recorded_at: Thu, 23 Aug 2018 10:26:20 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.instantbitex.com/availablepairs
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.instantbitex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 31 Jul 2018 03:28:14 GMT
+      Server:
+      - Apache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, X-Auth-Token, Origin, Authorization, X-Requested-With, Application
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cache-Control:
+      - no-cache, private
+      Set-Cookie:
+      - XSRF-TOKEN=eyJpdiI6ImtyU3k4VTk1UFNUOFM0SmR1eDhhR0E9PSIsInZhbHVlIjoiVzlJTlcxSFlqUm1RdEp5OFNWYWZVT1BmejBlMDc0XC9nXC9BOEZpM1BVTk5aSUVmMVlqcU1GanY1U0JPd2g3c2NtRWFheUtwSytHWUN1M1dEWFNxRDB4QT09IiwibWFjIjoiYjM4ODQ0YmI2NzU1OTE2NDA2YzI3MDc5ZDljZTExZGU0OTMyZmI2MjNlYWJjNTRkNTRkMTljNjg0NTE5MGZmMyJ9;
+        expires=Tue, 31-Jul-2018 05:28:14 GMT; Max-Age=7200; path=/
+      - laravel_session=eyJpdiI6IjdmRnhPQjlZMU9RdFBreHlySFNXRHc9PSIsInZhbHVlIjoiNUM4ZGFjQXVGUjMzRU5aM21sOFFzWFp5ZWxWTHA0ME84bWprWlR4aXdCMXpzZjZuXC9qS1BkbzE4OGlzc284ZW1GeXowRnpKaE5JVVpjekltNmFmZ1d3PT0iLCJtYWMiOiI3OWFkZDUzOGQ5Y2FlZWFhMmIzN2FjOWRiMTJjYTA3YmMzNWYxNjNhZmNkYjA4OTMyMDhlNTAwM2UwY2YzNmY4In0%3D;
+        expires=Tue, 31-Jul-2018 05:28:14 GMT; Max-Age=7200; path=/; HttpOnly
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '194'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: '{"status":"1","message":"Success","combinations":["ETH_BTC","XRP_BTC","BCH_BTC","LTC_BTC","EOS_BTC","BTC_USDT","DOGE_BTC","ZEC_BTC","BTG_BTC","XMR_BTC","ETC_BTC","DASH_BTC","VEN_BTC","IBX_BTC"]}'
+    http_version: 
+  recorded_at: Tue, 31 Jul 2018 03:28:14 GMT
+recorded_with: VCR 4.0.0

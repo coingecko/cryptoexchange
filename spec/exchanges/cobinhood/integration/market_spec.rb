@@ -14,6 +14,11 @@ RSpec.describe 'Cobinhood integration specs' do
     expect(pair.market).to eq 'cobinhood'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'cobinhood', base: usd_btc_pair.base, target: usd_btc_pair.target
+    expect(trade_page_url).to eq "https://cobinhood.com/trade/BTC-USD"
+  end
+
   it 'fetch pairs and assign the correct base/target' do
     pairs = client.pairs('cobinhood')
     expect(pairs).not_to be_empty
@@ -57,6 +62,7 @@ RSpec.describe 'Cobinhood integration specs' do
     expect(order_book.asks.count).to be > 10
     expect(order_book.bids.count).to be > 10
     expect(order_book.timestamp).to be_a Numeric
+    expect(2000..Date.today.year).to include(Time.at(order_book.timestamp).year)
     expect(order_book.payload).to_not be nil
   end
 

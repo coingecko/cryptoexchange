@@ -36,7 +36,7 @@ module Cryptoexchange::Exchanges
           ticker.market = Joyso::Market::NAME
           ticker.last = NumericHelper.to_d(output['last'])
           ticker.volume = NumericHelper.to_d(output['qoute_volume'])
-          ticker.timestamp = Time.now.to_i
+          ticker.timestamp = nil
           ticker.payload = output
           ticker
         end
