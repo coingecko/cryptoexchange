@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://exchange.gbx.gi/api/v1/market/hour24Market
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - exchange.gbx.gi
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 28 Aug 2018 13:40:51 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d83e6d692b892820c30a6411f8f0ecac91535463651; expires=Wed, 28-Aug-19
+        13:40:51 GMT; path=/; domain=.gbx.gi; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4517312adf0d853e-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n\t\"code\":\"1000\",\n\t\"data\":{\n\t\t\"BCH/BTC\":{\n\t\t\t\"baseVolume\":\"430.1986\",\n\t\t\t\"high24hr\":\"0.08050800\",\n\t\t\t\"highestBid\":\"0.07885100\",\n\t\t\t\"id\":1,\n\t\t\t\"isFrozen\":0,\n\t\t\t\"last\":\"0.07885800\",\n\t\t\t\"low24Hr\":\"0.07823100\",\n\t\t\t\"lowestAsk\":\"0.07885499\",\n\t\t\t\"percentChange\":\"0.0007\",\n\t\t\t\"quoteVolume\":\"34.0128\"\n\t\t},\n\t\t\"BCH/ETH\":{\n\t\t\t\"baseVolume\":\"886.2444\",\n\t\t\t\"high24hr\":\"1.93738000\",\n\t\t\t\"highestBid\":\"1.92219000\",\n\t\t\t\"id\":1,\n\t\t\t\"isFrozen\":0,\n\t\t\t\"last\":\"1.92239000\",\n\t\t\t\"low24Hr\":\"1.90148999\",\n\t\t\t\"lowestAsk\":\"1.92542000\",\n\t\t\t\"percentChange\":\"0.0072\",\n\t\t\t\"quoteVolume\":\"1698.5165\"\n\t\t},\n\t\t\"BTC/USD\":{\n\t\t\t\"baseVolume\":\"126.8174\",\n\t\t\t\"high24hr\":\"7075.50\",\n\t\t\t\"highestBid\":\"7064.40\",\n\t\t\t\"id\":1,\n\t\t\t\"isFrozen\":0,\n\t\t\t\"last\":\"7064.30\",\n\t\t\t\"low24Hr\":\"6691.50\",\n\t\t\t\"lowestAsk\":\"7065.50\",\n\t\t\t\"percentChange\":\"0.0541\",\n\t\t\t\"quoteVolume\":\"877071.2918\"\n\t\t},\n\t\t\"ETC/BTC\":{\n\t\t\t\"baseVolume\":\"8082.1683\",\n\t\t\t\"high24hr\":\"0.00186300\",\n\t\t\t\"highestBid\":\"0.00184049\",\n\t\t\t\"id\":1,\n\t\t\t\"isFrozen\":0,\n\t\t\t\"last\":\"0.00184050\",\n\t\t\t\"low24Hr\":\"0.00181960\",\n\t\t\t\"lowestAsk\":\"0.00184489\",\n\t\t\t\"percentChange\":\"-0.0070\",\n\t\t\t\"quoteVolume\":\"14.8889\"\n\t\t},\n\t\t\"ETC/ETH\":{\n\t\t\t\"baseVolume\":\"4316.6877\",\n\t\t\t\"high24hr\":\"0.04532500\",\n\t\t\t\"highestBid\":\"0.04489200\",\n\t\t\t\"id\":1,\n\t\t\t\"isFrozen\":0,\n\t\t\t\"last\":\"0.04488700\",\n\t\t\t\"low24Hr\":\"0.04381300\",\n\t\t\t\"lowestAsk\":\"0.04498000\",\n\t\t\t\"percentChange\":\"-0.0010\",\n\t\t\t\"quoteVolume\":\"192.9420\"\n\t\t},\n\t\t\"ETH/BTC\":{\n\t\t\t\"baseVolume\":\"374.0010\",\n\t\t\t\"high24hr\":\"0.04169600\",\n\t\t\t\"highestBid\":\"0.04094100\",\n\t\t\t\"id\":1,\n\t\t\t\"isFrozen\":0,\n\t\t\t\"last\":\"0.04099700\",\n\t\t\t\"low24Hr\":\"0.04079600\",\n\t\t\t\"lowestAsk\":\"0.04100100\",\n\t\t\t\"percentChange\":\"-0.0039\",\n\t\t\t\"quoteVolume\":\"15.4199\"\n\t\t},\n\t\t\"ETH/USD\":{\n\t\t\t\"baseVolume\":\"441.2358\",\n\t\t\t\"high24hr\":\"289.93\",\n\t\t\t\"highestBid\":\"288.99\",\n\t\t\t\"id\":1,\n\t\t\t\"isFrozen\":0,\n\t\t\t\"last\":\"288.98\",\n\t\t\t\"low24Hr\":\"274.18\",\n\t\t\t\"lowestAsk\":\"289.02\",\n\t\t\t\"percentChange\":\"0.0492\",\n\t\t\t\"quoteVolume\":\"124904.2679\"\n\t\t},\n\t\t\"LTC/BTC\":{\n\t\t\t\"baseVolume\":\"4528.2488\",\n\t\t\t\"high24hr\":\"0.00889680\",\n\t\t\t\"highestBid\":\"0.00871020\",\n\t\t\t\"id\":1,\n\t\t\t\"isFrozen\":0,\n\t\t\t\"last\":\"0.00871210\",\n\t\t\t\"low24Hr\":\"0.00849200\",\n\t\t\t\"lowestAsk\":\"0.00871350\",\n\t\t\t\"percentChange\":\"0.0195\",\n\t\t\t\"quoteVolume\":\"39.3890\"\n\t\t},\n\t\t\"LTC/ETH\":{\n\t\t\t\"baseVolume\":\"1682.7355\",\n\t\t\t\"high24hr\":\"0.21412500\",\n\t\t\t\"highestBid\":\"0.21248000\",\n\t\t\t\"id\":1,\n\t\t\t\"isFrozen\":0,\n\t\t\t\"last\":\"0.21245000\",\n\t\t\t\"low24Hr\":\"0.20695500\",\n\t\t\t\"lowestAsk\":\"0.21292000\",\n\t\t\t\"percentChange\":\"0.0261\",\n\t\t\t\"quoteVolume\":\"354.5111\"\n\t\t},\n\t\t\"RKT/BTC\":{\n\t\t\t\"baseVolume\":\"402778.9645\",\n\t\t\t\"high24hr\":\"0.00000740\",\n\t\t\t\"highestBid\":\"0.00000704\",\n\t\t\t\"id\":1,\n\t\t\t\"isFrozen\":0,\n\t\t\t\"last\":\"0.00000713\",\n\t\t\t\"low24Hr\":\"0.00000704\",\n\t\t\t\"lowestAsk\":\"0.00000719\",\n\t\t\t\"percentChange\":\"-0.0300\",\n\t\t\t\"quoteVolume\":\"2.8987\"\n\t\t},\n\t\t\"RKT/ETH\":{\n\t\t\t\"baseVolume\":\"630724.2057\",\n\t\t\t\"high24hr\":\"0.00016771\",\n\t\t\t\"highestBid\":\"0.00016300\",\n\t\t\t\"id\":1,\n\t\t\t\"isFrozen\":0,\n\t\t\t\"last\":\"0.00016402\",\n\t\t\t\"low24Hr\":\"0.00016387\",\n\t\t\t\"lowestAsk\":\"0.00016895\",\n\t\t\t\"percentChange\":\"-0.0040\",\n\t\t\t\"quoteVolume\":\"104.0405\"\n\t\t},\n\t\t\"RKT/USD\":{\n\t\t\t\"baseVolume\":\"51628.0000\",\n\t\t\t\"high24hr\":\"0.05\",\n\t\t\t\"highestBid\":\"0.04\",\n\t\t\t\"id\":1,\n\t\t\t\"isFrozen\":0,\n\t\t\t\"last\":\"0.05\",\n\t\t\t\"low24Hr\":\"0.05\",\n\t\t\t\"lowestAsk\":\"0.05\",\n\t\t\t\"percentChange\":\"0.0000\",\n\t\t\t\"quoteVolume\":\"2581.4000\"\n\t\t},\n\t\t\"T2T/ETH\":{\n\t\t\t\"baseVolume\":\"9953005.9056\",\n\t\t\t\"high24hr\":\"0.00002750\",\n\t\t\t\"highestBid\":\"0.00001915\",\n\t\t\t\"id\":1,\n\t\t\t\"isFrozen\":0,\n\t\t\t\"last\":\"0.00002480\",\n\t\t\t\"low24Hr\":\"0.00001860\",\n\t\t\t\"lowestAsk\":\"0.00002490\",\n\t\t\t\"percentChange\":\"0.1272\",\n\t\t\t\"quoteVolume\":\"217.0489\"\n\t\t}\n\t},\n\t\"msg\":\"success\"\n}"
+    http_version: 
+  recorded_at: Tue, 28 Aug 2018 13:40:52 GMT
+recorded_with: VCR 4.0.0
