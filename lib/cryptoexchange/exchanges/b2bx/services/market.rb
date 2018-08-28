@@ -15,12 +15,12 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::B2bx::Market::API_URL}/public/ticker"
+          "#{Cryptoexchange::Exchanges::B2bx::Market::API_URL}"
         end
 
         def adapt_all(output)
           output.map do |pair|
-            symbol = pair['Symbol'].gsub(".", "")
+            symbol = pair['Instrument']
             base, target = symbol.split(/(BTC$)+|(ETH$)+(.*)|(USDT$)+(.*)|(USD$)+(.*)|(BCH$)+(.*)|(DASH$)+(.*)|(XRP$)+(.*)|(OMG$)+(.*)|(XMR$)+(.*)|(LTC$)+(.*)/)
             market_pair  = Cryptoexchange::Models::MarketPair.new(
               base:   base,
@@ -36,11 +36,11 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = B2bx::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['LastBuyPrice'].to_f)
+          ticker.last      = NumericHelper.to_d(output['LastTradedPx'].to_f)
           ticker.bid       = NumericHelper.to_d(output['BestBid'])
-          ticker.ask       = NumericHelper.to_d(output['BestAsk'])
-          ticker.volume    = NumericHelper.to_d(output['DailyTradedTotalVolume'].to_f)
-          ticker.timestamp = nil
+          ticker.ask       = NumericHelper.to_d(output['BestOffer'])
+          ticker.volume    = NumericHelper.to_d(output['CurrentDayVolume'].to_f)
+          ticker.timestamp = output['TimeStamp'].to_i/1000
           ticker.payload   = output
           ticker
         end
