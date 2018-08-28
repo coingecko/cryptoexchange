@@ -28,7 +28,7 @@ module Cryptoexchange
       else
         tickers = market.fetch
 
-        if market_pair.base_raw.casecmp(market_pair.base) != 0
+        if market_pair.base_raw.present? && market_pair.base_raw.casecmp(market_pair.base) != 0
           tickers.find do |t|
             t.base_raw.casecmp(market_pair.base_raw) &&
               t.base.casecmp(market_pair.base) == 0 &&
