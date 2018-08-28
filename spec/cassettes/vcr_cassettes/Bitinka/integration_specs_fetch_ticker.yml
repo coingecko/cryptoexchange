@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bitinka.com/api/apinka/ticker?format=json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bitinka.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 27 Aug 2018 17:49:42 GMT
+      Server:
+      - Apache/2.4.29 (Debian)
+      Set-Cookie:
+      - ci_session=a%3A5%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%2249a15f7e9a577d83e42cc4e1ef73f595%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A11%3A%2281.152.9.82%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A13%3A%22http.rb%2F3.0.0%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1535392182%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3B%7Dc30e870e91eee0f7a7e22652321da9c4;
+        path=/
+      - ci_session=a%3A6%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%2249a15f7e9a577d83e42cc4e1ef73f595%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A11%3A%2281.152.9.82%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A13%3A%22http.rb%2F3.0.0%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1535392182%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3Bs%3A8%3A%22language%22%3Bs%3A4%3A%22peru%22%3B%7D5af21becc661a6911261f7a09349b74f;
+        path=/
+      Status:
+      - '200'
+      Content-Length:
+      - '2453'
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ETH":{"volumen24hours":{"ETH":15708.08,"BTC":644.25274498},"ask":0.04164478,"bid":0.04084257,"last":0.04164061},"ACT":{"volumen24hours":{"ACT":13404201.28,"BTC":69.67703884},"ask":5.23e-6,"bid":5.17e-6,"last":5.23e-6},"BCH":{"volumen24hours":{"BCH":8187.26,"BTC":641.567637},"ask":0.07966111,"bid":0.07825103,"last":0.07965315},"BTG":{"volumen24hours":{"BTG":82497.88,"BTC":240.65032408},"ask":0.00297022,"bid":0.00293729,"last":0.00296993},"DASH":{"volumen24hours":{"DASH":14294.32,"BTC":307.12642982},"ask":0.02298577,"bid":0.02257822,"last":0.02298347},"GAS":{"volumen24hours":{"GAS":78758.46,"BTC":68.06732712},"ask":0.00088982,"bid":0.00087663,"last":0.00088973},"LTC":{"volumen24hours":{"LTC":54965.3,"BTC":469.20697178},"ask":0.00866276,"bid":0.00850836,"last":0.00866189},"NANO":{"volumen24hours":{"NANO":97468.88,"BTC":47.46106524},"ask":0.00045303,"bid":0.00045005,"last":0.00045299},"NEO":{"volumen24hours":{"NEO":30379.82,"BTC":80.45649998},"ask":0.00279587,"bid":0.00274658,"last":0.00279559},"SSC":{"volumen24hours":{"SSC":15917773.6475,"BTC":26.37883578},"ask":1.66e-6,"bid":1.54e-6,"last":1.56e-6},"SSP":{"volumen24hours":{"SSP":74993.84,"BTC":0.00693208},"ask":1.0e-7,"bid":1.0e-7,"last":9.0e-8},"VEX":{"volumen24hours":{"VEX":6108675.24,"BTC":34.4180636},"ask":5.74e-6,"bid":5.3e-6,"last":5.39e-6},"XRP":{"volumen24hours":{"XRP":5369412.88,"BTC":260.79016202},"ask":4.933e-5,"bid":4.841e-5,"last":4.933e-5},"USD":{"volumen24hours":{"BTC":1949.98,"USD":13057076.8},"ask":6668.9271,"bid":6837.33435,"last":6840.52},"EUR":{"volumen24hours":{"BTC":1531.38,"EUR":8816560.24},"ask":5709.0231,"bid":5824.8013,"last":5823.76},"ARS":{"volumen24hours":{"BTC":596.08412362,"ARS":121597735.51},"ask":209646.819375,"bid":216908.54,"last":210270.22},"BOB":{"volumen24hours":{"BTC":175.47413802,"BOB":8114700.6204543},"ask":45742.1679,"bid":47581.0076,"last":46897.27},"BRL":{"volumen24hours":{"BTC":265.7,"BRL":6840366.38},"ask":25650.4644,"bid":26460.7678,"last":26198.14},"CLP":{"volumen24hours":{"BTC":304.12,"CLP":1364126935.26},"ask":4109675.8032,"bid":4537962.38511,"last":4469260.8},"CNY":{"volumen24hours":{"BTC":223.76304576,"CNY":10256826.13},"ask":42622.2906,"bid":46753.9504,"last":46346.03},"COP":{"volumen24hours":{"BTC":472.07811704,"COP":8921912125.2148},"ask":18139481.712,"bid":20227911.80725,"last":18595644.48},"PEN":{"volumen24hours":{"BTC":475.67929738,"PEN":10499983.78},"ask":21860.7444,"bid":22539.911975,"last":22344.06}}'
+    http_version: 
+  recorded_at: Mon, 27 Aug 2018 17:49:44 GMT
+recorded_with: VCR 4.0.0
