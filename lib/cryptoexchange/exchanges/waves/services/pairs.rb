@@ -12,12 +12,14 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           output.collect do |pair|
             base, target = pair['symbol'].split("/")
+            next if base.nil? || base.empty? || target.nil? || target.empty?
+
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
               market: Waves::Market::NAME
             )
-          end
+          end.compact
         end
       end
     end
