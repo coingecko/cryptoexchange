@@ -22,7 +22,7 @@ module Cryptoexchange
       end
 
       def base_raw
-        return @base if @base_raw.nil? || @base_raw.empty
+        return @base if @base_raw.nil? || @base_raw.empty?
         @base_raw
       end
 
