@@ -32,6 +32,7 @@ Or install it yourself as:
 | Allcoin           | Y       | Y          |         |         | User-Defined|          | allcoin           |
 | Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |
 | ANX               | Y       |            |         |         | User-Defined|          | anx               |
+| AXNET             | Y       | Y          | Y       |         | Y           | Y        | axnet             |
 | B2BX              | Y       | Y          |         |         | Y           |          | b2bx              |
 | Bancor            | Y       | N          | N       |         | Y           |          | bancor            |
 | Bcex              | Y       | Y          | Y       |         | Y           | Y        | bcex              |
