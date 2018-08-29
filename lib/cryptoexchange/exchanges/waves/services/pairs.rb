@@ -18,8 +18,8 @@ module Cryptoexchange::Exchanges
               base:   base,
               target: target,
               market: Waves::Market::NAME
-            ).compact
-          end
+            )
+          end.compact
         end
       end
     end
