@@ -107,6 +107,8 @@ Or install it yourself as:
 | Coinrail          | Y       | Y          | Y       |         | Y           | Y        | coinrail          |
 | Coinroom          | Y       |            |         |         | Y           |          | coinroom          |
 | CoinsMarkets      | Y       |            |         |         | Y           |          | coin_markets      |
+| Coinsbank         | Y       |            |         |         | Y           |          | coinsbank        
+|
 | Coinstock         | Y       | Y          | Y       |         | Y           |          | coinstock         |
 | Coinsuper         | Y       |            |         |         | Y           | Y        | coinsuper         |
 | Cointiger         | Y       | Y          | Y       |         | Y           |          | cointiger         |
