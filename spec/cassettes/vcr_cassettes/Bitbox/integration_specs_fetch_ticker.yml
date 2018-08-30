@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.bitbox.me/trade/public/v1/outpost/ohlc?currencyPairs=BTC.XRP&limit=2&timeFrame=1800
+    uri: https://api.bitbox.me/trade/public/v1/outpost/ohlc?currencyPairs=BTC.XRP&limit=1&timeFrame=60
     body:
       encoding: UTF-8
       string: ''
@@ -23,20 +23,59 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       X-Datastream-Midmile-Rtt:
-      - '87'
+      - '105'
       X-Datastream-Origin-Mex-Latency:
       - '9'
       X-Datastream-Cache-Status:
       - '0'
       Date:
-      - Mon, 27 Aug 2018 21:11:14 GMT
+      - Tue, 21 Aug 2018 16:09:58 GMT
       Content-Length:
-      - '356'
+      - '239'
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"responseCode":"0000","errorMessage":null,"errorMessageDetail":null,"errorAction":null,"responseData":{"BTC.XRP":[{"timeFrame":1800,"open":4.82E-5,"high":4.82E-5,"low":4.82E-5,"close":4.82E-5,"volume":309.0,"closeTime":1535286600000},{"timeFrame":1800,"open":4.85E-5,"high":4.85E-5,"low":4.85E-5,"close":4.85E-5,"volume":82.0,"closeTime":1535295600000}]}}'
+      string: '{"responseCode":"0000","errorMessage":null,"errorMessageDetail":null,"errorAction":null,"responseData":{"BTC.XRP":[{"timeFrame":60,"open":5.217E-5,"high":5.217E-5,"low":5.217E-5,"close":5.217E-5,"volume":316.0,"closeTime":1534833900000}]}}'
     http_version: 
-  recorded_at: Mon, 27 Aug 2018 21:11:15 GMT
+  recorded_at: Tue, 21 Aug 2018 16:09:58 GMT
+- request:
+    method: get
+    uri: https://api.bitbox.me/trade/public/v1/outpost/ohlc?currencyPairs=BTC.XRP&limit=100&timeFrame=1800
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitbox.me
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.2
+      Content-Type:
+      - application/json;charset=UTF-8
+      X-Datastream-Midmile-Rtt:
+      - '105'
+      X-Datastream-Origin-Mex-Latency:
+      - '11'
+      X-Datastream-Cache-Status:
+      - '0'
+      Date:
+      - Tue, 21 Aug 2018 16:09:58 GMT
+      Content-Length:
+      - '12120'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"responseCode":"0000","errorMessage":null,"errorMessageDetail":null,"errorAction":null,"responseData":{"BTC.XRP":[{"timeFrame":1800,"open":5.9E-5,"high":5.9E-5,"low":5.9E-5,"close":5.9E-5,"volume":60000.0,"closeTime":1533160800000},{"timeFrame":1800,"open":5.8E-5,"high":5.8E-5,"low":5.8E-5,"close":5.8E-5,"volume":6822000.0,"closeTime":1533180600000},{"timeFrame":1800,"open":5.8E-5,"high":5.8E-5,"low":5.8E-5,"close":5.8E-5,"volume":9684000.0,"closeTime":1533182400000},{"timeFrame":1800,"open":5.8E-5,"high":5.8E-5,"low":5.8E-5,"close":5.8E-5,"volume":9702000.0,"closeTime":1533184200000},{"timeFrame":1800,"open":5.8E-5,"high":5.8E-5,"low":5.7E-5,"close":5.7E-5,"volume":3342001.0,"closeTime":1533186000000},{"timeFrame":1800,"open":5.75E-5,"high":5.75E-5,"low":5.75E-5,"close":5.75E-5,"volume":1522.0,"closeTime":1533196800000},{"timeFrame":1800,"open":5.76E-5,"high":5.76E-5,"low":5.76E-5,"close":5.76E-5,"volume":11274.0,"closeTime":1533198600000},{"timeFrame":1800,"open":5.75E-5,"high":5.75E-5,"low":5.75E-5,"close":5.75E-5,"volume":18.0,"closeTime":1533202200000},{"timeFrame":1800,"open":5.76E-5,"high":5.76E-5,"low":5.76E-5,"close":5.76E-5,"volume":65.0,"closeTime":1533204000000},{"timeFrame":1800,"open":5.73E-5,"high":5.73E-5,"low":5.73E-5,"close":5.73E-5,"volume":1527.0,"closeTime":1533254400000},{"timeFrame":1800,"open":5.76E-5,"high":5.76E-5,"low":5.76E-5,"close":5.76E-5,"volume":20.0,"closeTime":1533259800000},{"timeFrame":1800,"open":5.9E-5,"high":5.9E-5,"low":5.87E-5,"close":5.87E-5,"volume":1688.0,"closeTime":1533261600000},{"timeFrame":1800,"open":5.88E-5,"high":5.9E-5,"low":5.88E-5,"close":5.9E-5,"volume":178.0,"closeTime":1533265200000},{"timeFrame":1800,"open":6.01E-5,"high":6.01E-5,"low":6.01E-5,"close":6.01E-5,"volume":730.0,"closeTime":1533279600000},{"timeFrame":1800,"open":5.98E-5,"high":5.98E-5,"low":5.98E-5,"close":5.98E-5,"volume":56.0,"closeTime":1533283200000},{"timeFrame":1800,"open":5.98E-5,"high":5.98E-5,"low":5.95E-5,"close":5.95E-5,"volume":9549.0,"closeTime":1533294000000},{"timeFrame":1800,"open":5.96E-5,"high":5.97E-5,"low":5.96E-5,"close":5.97E-5,"volume":500.0,"closeTime":1533304800000},{"timeFrame":1800,"open":5.87E-5,"high":5.87E-5,"low":5.87E-5,"close":5.87E-5,"volume":20.0,"closeTime":1533313800000},{"timeFrame":1800,"open":5.88E-5,"high":5.88E-5,"low":5.88E-5,"close":5.88E-5,"volume":35.0,"closeTime":1533317400000},{"timeFrame":1800,"open":5.9E-5,"high":5.9E-5,"low":5.9E-5,"close":5.9E-5,"volume":4772.0,"closeTime":1533353400000},{"timeFrame":1800,"open":5.91E-5,"high":5.91E-5,"low":5.91E-5,"close":5.91E-5,"volume":788.0,"closeTime":1533360600000},{"timeFrame":1800,"open":5.99E-5,"high":5.99E-5,"low":5.99E-5,"close":5.99E-5,"volume":2386.0,"closeTime":1533393000000},{"timeFrame":1800,"open":6.029E-5,"high":6.039E-5,"low":6.029E-5,"close":6.039E-5,"volume":610.0,"closeTime":1533396600000},{"timeFrame":1800,"open":6.1E-5,"high":6.1E-5,"low":6.1E-5,"close":6.1E-5,"volume":20.0,"closeTime":1533402000000},{"timeFrame":1800,"open":6.14E-5,"high":6.14E-5,"low":6.14E-5,"close":6.14E-5,"volume":500.0,"closeTime":1533418200000},{"timeFrame":1800,"open":6.14E-5,"high":6.14E-5,"low":6.14E-5,"close":6.14E-5,"volume":1964.0,"closeTime":1533432600000},{"timeFrame":1800,"open":6.17E-5,"high":6.17E-5,"low":6.17E-5,"close":6.17E-5,"volume":11579.0,"closeTime":1533443400000},{"timeFrame":1800,"open":6.19E-5,"high":6.19E-5,"low":6.19E-5,"close":6.19E-5,"volume":15492.0,"closeTime":1533452400000},{"timeFrame":1800,"open":6.16E-5,"high":6.19E-5,"low":6.16E-5,"close":6.19E-5,"volume":67.0,"closeTime":1533477600000},{"timeFrame":1800,"open":6.12E-5,"high":6.15E-5,"low":6.12E-5,"close":6.15E-5,"volume":39.0,"closeTime":1533484800000},{"timeFrame":1800,"open":6.16E-5,"high":6.16E-5,"low":6.16E-5,"close":6.16E-5,"volume":50.0,"closeTime":1533508200000},{"timeFrame":1800,"open":6.09E-5,"high":6.09E-5,"low":6.09E-5,"close":6.09E-5,"volume":20.0,"closeTime":1533526200000},{"timeFrame":1800,"open":6.07E-5,"high":6.07E-5,"low":6.07E-5,"close":6.07E-5,"volume":20.0,"closeTime":1533540600000},{"timeFrame":1800,"open":6.07E-5,"high":6.07E-5,"low":6.07E-5,"close":6.07E-5,"volume":50.0,"closeTime":1533556800000},{"timeFrame":1800,"open":6.08E-5,"high":6.08E-5,"low":6.08E-5,"close":6.08E-5,"volume":1997.0,"closeTime":1533567600000},{"timeFrame":1800,"open":6.06E-5,"high":6.06E-5,"low":6.06E-5,"close":6.06E-5,"volume":18.0,"closeTime":1533582000000},{"timeFrame":1800,"open":5.96E-5,"high":5.96E-5,"low":5.96E-5,"close":5.96E-5,"volume":730.0,"closeTime":1533601800000},{"timeFrame":1800,"open":5.88E-5,"high":5.88E-5,"low":5.85E-5,"close":5.85E-5,"volume":404.0,"closeTime":1533605400000},{"timeFrame":1800,"open":5.82E-5,"high":5.82E-5,"low":5.82E-5,"close":5.82E-5,"volume":18.0,"closeTime":1533610800000},{"timeFrame":1800,"open":5.9E-5,"high":5.9E-5,"low":5.9E-5,"close":5.9E-5,"volume":1.0,"closeTime":1533614400000},{"timeFrame":1800,"open":5.89E-5,"high":5.91E-5,"low":5.89E-5,"close":5.91E-5,"volume":385.0,"closeTime":1533618000000},{"timeFrame":1800,"open":5.87E-5,"high":5.87E-5,"low":5.87E-5,"close":5.87E-5,"volume":384.0,"closeTime":1533625200000},{"timeFrame":1800,"open":5.855E-5,"high":5.855E-5,"low":5.84E-5,"close":5.84E-5,"volume":500.0,"closeTime":1533627000000},{"timeFrame":1800,"open":5.87E-5,"high":5.88E-5,"low":5.87E-5,"close":5.88E-5,"volume":7671.0,"closeTime":1533630600000},{"timeFrame":1800,"open":5.8E-5,"high":5.8E-5,"low":5.8E-5,"close":5.8E-5,"volume":41.0,"closeTime":1533641400000},{"timeFrame":1800,"open":5.79E-5,"high":5.79E-5,"low":5.79E-5,"close":5.79E-5,"volume":293.0,"closeTime":1533648600000},{"timeFrame":1800,"open":5.77E-5,"high":5.77E-5,"low":5.77E-5,"close":5.77E-5,"volume":18.0,"closeTime":1533650400000},{"timeFrame":1800,"open":5.73E-5,"high":5.73E-5,"low":5.73E-5,"close":5.73E-5,"volume":21.0,"closeTime":1533663000000},{"timeFrame":1800,"open":5.66E-5,"high":5.66E-5,"low":5.66E-5,"close":5.66E-5,"volume":19.0,"closeTime":1533682800000},{"timeFrame":1800,"open":5.63E-5,"high":5.675E-5,"low":5.63E-5,"close":5.674E-5,"volume":936.0,"closeTime":1533684600000},{"timeFrame":1800,"open":5.49E-5,"high":5.49E-5,"low":5.49E-5,"close":5.49E-5,"volume":50.0,"closeTime":1533691800000},{"timeFrame":1800,"open":5.43E-5,"high":5.43E-5,"low":5.43E-5,"close":5.43E-5,"volume":1850.0,"closeTime":1533702600000},{"timeFrame":1800,"open":5.4E-5,"high":5.4E-5,"low":5.4E-5,"close":5.4E-5,"volume":331.0,"closeTime":1533708000000},{"timeFrame":1800,"open":5.34E-5,"high":5.34E-5,"low":5.34E-5,"close":5.34E-5,"volume":1000.0,"closeTime":1533709800000},{"timeFrame":1800,"open":5.368E-5,"high":5.368E-5,"low":5.36E-5,"close":5.36E-5,"volume":6442.0,"closeTime":1533717000000},{"timeFrame":1800,"open":5.36E-5,"high":5.36E-5,"low":5.36E-5,"close":5.36E-5,"volume":4960.0,"closeTime":1533738600000},{"timeFrame":1800,"open":5.36E-5,"high":5.37E-5,"low":5.36E-5,"close":5.37E-5,"volume":5160.0,"closeTime":1533744000000},{"timeFrame":1800,"open":5.36E-5,"high":5.36E-5,"low":5.36E-5,"close":5.36E-5,"volume":2560.0,"closeTime":1533753000000},{"timeFrame":1800,"open":5.36E-5,"high":5.36E-5,"low":5.36E-5,"close":5.36E-5,"volume":7570.0,"closeTime":1533767400000},{"timeFrame":1800,"open":5.36E-5,"high":5.36E-5,"low":5.36E-5,"close":5.36E-5,"volume":4769.0,"closeTime":1533771000000},{"timeFrame":1800,"open":5.491E-5,"high":5.491E-5,"low":5.491E-5,"close":5.491E-5,"volume":109.0,"closeTime":1533803400000},{"timeFrame":1800,"open":5.491E-5,"high":5.491E-5,"low":5.39E-5,"close":5.39E-5,"volume":250.0,"closeTime":1533805200000},{"timeFrame":1800,"open":5.42E-5,"high":5.42E-5,"low":5.42E-5,"close":5.42E-5,"volume":126.0,"closeTime":1533814200000},{"timeFrame":1800,"open":5.35E-5,"high":5.35E-5,"low":5.35E-5,"close":5.35E-5,"volume":128.0,"closeTime":1533819600000},{"timeFrame":1800,"open":5.37E-5,"high":5.37E-5,"low":5.37E-5,"close":5.37E-5,"volume":128.0,"closeTime":1533825000000},{"timeFrame":1800,"open":5.4E-5,"high":5.4E-5,"low":5.37E-5,"close":5.37E-5,"volume":478.0,"closeTime":1533828600000},{"timeFrame":1800,"open":5.35E-5,"high":5.35E-5,"low":5.35E-5,"close":5.35E-5,"volume":129.0,"closeTime":1533830400000},{"timeFrame":1800,"open":5.251E-5,"high":5.251E-5,"low":5.251E-5,"close":5.251E-5,"volume":166.0,"closeTime":1533864600000},{"timeFrame":1800,"open":5.0E-5,"high":5.01E-5,"low":5.0E-5,"close":5.01E-5,"volume":12000.0,"closeTime":1533956400000},{"timeFrame":1800,"open":4.9E-5,"high":4.9E-5,"low":4.9E-5,"close":4.9E-5,"volume":300.0,"closeTime":1534084200000},{"timeFrame":1800,"open":4.73E-5,"high":4.73E-5,"low":4.73E-5,"close":4.73E-5,"volume":100.0,"closeTime":1534136400000},{"timeFrame":1800,"open":4.7E-5,"high":4.7E-5,"low":4.7E-5,"close":4.7E-5,"volume":16584.0,"closeTime":1534172400000},{"timeFrame":1800,"open":4.39E-5,"high":4.39E-5,"low":4.39E-5,"close":4.39E-5,"volume":82.0,"closeTime":1534206600000},{"timeFrame":1800,"open":4.36E-5,"high":4.36E-5,"low":4.36E-5,"close":4.36E-5,"volume":50.0,"closeTime":1534226400000},{"timeFrame":1800,"open":4.36E-5,"high":4.36E-5,"low":4.36E-5,"close":4.36E-5,"volume":480.0,"closeTime":1534291200000},{"timeFrame":1800,"open":4.36E-5,"high":4.36E-5,"low":4.36E-5,"close":4.36E-5,"volume":15.0,"closeTime":1534294800000},{"timeFrame":1800,"open":4.36E-5,"high":4.5E-5,"low":4.36E-5,"close":4.5E-5,"volume":2152.0,"closeTime":1534307400000},{"timeFrame":1800,"open":4.525E-5,"high":4.56E-5,"low":4.525E-5,"close":4.56E-5,"volume":977.9989035,"closeTime":1534323600000},{"timeFrame":1800,"open":4.43E-5,"high":4.43E-5,"low":4.43E-5,"close":4.43E-5,"volume":340.0,"closeTime":1534393800000},{"timeFrame":1800,"open":4.56E-5,"high":4.56E-5,"low":4.56E-5,"close":4.56E-5,"volume":1007.0010965,"closeTime":1534438800000},{"timeFrame":1800,"open":4.71E-5,"high":4.71E-5,"low":4.71E-5,"close":4.71E-5,"volume":2850.0,"closeTime":1534442400000},{"timeFrame":1800,"open":4.65E-5,"high":4.65E-5,"low":4.62E-5,"close":4.62E-5,"volume":86.0,"closeTime":1534469400000},{"timeFrame":1800,"open":4.65E-5,"high":4.65E-5,"low":4.65E-5,"close":4.65E-5,"volume":518.0,"closeTime":1534471200000},{"timeFrame":1800,"open":4.66E-5,"high":4.66E-5,"low":4.66E-5,"close":4.66E-5,"volume":3361.0,"closeTime":1534489200000},{"timeFrame":1800,"open":4.89E-5,"high":4.89E-5,"low":4.89E-5,"close":4.89E-5,"volume":905.0,"closeTime":1534501800000},{"timeFrame":1800,"open":5.41E-5,"high":5.41E-5,"low":5.41E-5,"close":5.41E-5,"volume":105.0,"closeTime":1534550400000},{"timeFrame":1800,"open":5.48E-5,"high":5.48E-5,"low":5.48E-5,"close":5.48E-5,"volume":82.0,"closeTime":1534552200000},{"timeFrame":1800,"open":5.39E-5,"high":5.39E-5,"low":5.39E-5,"close":5.39E-5,"volume":10000.0,"closeTime":1534561200000},{"timeFrame":1800,"open":5.38E-5,"high":5.38E-5,"low":5.38E-5,"close":5.38E-5,"volume":10018.0,"closeTime":1534564800000},{"timeFrame":1800,"open":5.4E-5,"high":5.4E-5,"low":5.4E-5,"close":5.4E-5,"volume":12000.0,"closeTime":1534681800000},{"timeFrame":1800,"open":5.31E-5,"high":5.31E-5,"low":5.31E-5,"close":5.31E-5,"volume":35.0,"closeTime":1534748400000},{"timeFrame":1800,"open":5.22E-5,"high":5.22E-5,"low":5.22E-5,"close":5.22E-5,"volume":35.0,"closeTime":1534750200000},{"timeFrame":1800,"open":5.24E-5,"high":5.24E-5,"low":5.24E-5,"close":5.24E-5,"volume":723.0,"closeTime":1534752000000},{"timeFrame":1800,"open":5.22E-5,"high":5.22E-5,"low":5.22E-5,"close":5.22E-5,"volume":33.0,"closeTime":1534757400000},{"timeFrame":1800,"open":5.24E-5,"high":5.24E-5,"low":5.24E-5,"close":5.24E-5,"volume":3236.0,"closeTime":1534764600000},{"timeFrame":1800,"open":5.201E-5,"high":5.201E-5,"low":5.201E-5,"close":5.201E-5,"volume":2693.0,"closeTime":1534771800000},{"timeFrame":1800,"open":5.09E-5,"high":5.09E-5,"low":5.09E-5,"close":5.09E-5,"volume":29.0,"closeTime":1534777200000},{"timeFrame":1800,"open":5.1E-5,"high":5.1E-5,"low":5.1E-5,"close":5.1E-5,"volume":1455.0,"closeTime":1534818600000},{"timeFrame":1800,"open":5.05E-5,"high":5.05E-5,"low":5.05E-5,"close":5.05E-5,"volume":100.0,"closeTime":1534820400000},{"timeFrame":1800,"open":5.217E-5,"high":5.217E-5,"low":5.217E-5,"close":5.217E-5,"volume":316.0,"closeTime":1534834800000}]}}'
+    http_version: 
+  recorded_at: Tue, 21 Aug 2018 16:09:58 GMT
 recorded_with: VCR 4.0.0
