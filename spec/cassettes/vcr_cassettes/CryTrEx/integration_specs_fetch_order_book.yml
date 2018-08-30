@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://crytrex.com/public_api/order-book?currency=USD&market=BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - crytrex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 17 Aug 2018 19:07:03 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - WLOX
+      Access-Control-Allow-Origin:
+      - "*, *"
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - PHPSESSID=fmqs60aic4ml2oesb1u0jbp332; path=/; secure; HttpOnly
+      Vary:
+      - Accept-Encoding,User-Agent
+      Content-Type:
+      - text/html; charset=UTF-8
+      Via:
+      - 1.1 stark
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"order-book":{"market":"BTC","currency":"USD","bid":[{"price":6000,"order_amount":0.00423193,"order_value":25.39,"converted_from":null,"timestamp":1534427150}],"ask":[{"price":8998,"order_amount":0.04378134,"order_value":393.94,"converted_from":null,"timestamp":1534278228}]}}'
+    http_version: 
+  recorded_at: Fri, 17 Aug 2018 19:07:03 GMT
+recorded_with: VCR 4.0.0
