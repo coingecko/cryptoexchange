@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dobitrade.com/market/quote?market=ltc_btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dobitrade.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Aug 2018 23:20:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - yd_cookie=77851c1a-0767-45875a94c53540d0206f31e39f19d17b5a86; Expires=1535678405;
+        Path=/; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server:
+      - WAF/2.4-12.1
+    body:
+      encoding: UTF-8
+      string: '{"status":1,"msg":"","data":{"last":"0.00860699","ratio":"-0.25%","eq":{"cny":"408.29","usd":"59.675"},"high":"0.00875899","low":"0.00855396","buy":"0.00846415","sale":"0.00925850","sell":"0.00925850","volume":"2303685.445","amount":"19937.68067721"}}'
+    http_version: 
+  recorded_at: Thu, 30 Aug 2018 23:20:08 GMT
+recorded_with: VCR 4.0.0
