@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openapi.bitmart.com/market/deal?symbol=45
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - openapi.bitmart.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE
+      Access-Control-Max-Age:
+      - '3600'
+      Access-Control-Allow-Headers:
+      - x-requested-with
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Thu, 30 Aug 2018 05:04:44 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '[{"amount":"0.00030580","createTime":1535586820000,"price":"0.00002780","count":"11","entrustType":0},{"amount":"0.00039760","createTime":1535580691000,"price":"0.00002840","count":"14","entrustType":1},{"amount":"0.00046410","createTime":1535571911000,"price":"0.00002730","count":"17","entrustType":0},{"amount":"0.00049500","createTime":1535562945000,"price":"0.00002750","count":"18","entrustType":1},{"amount":"0.00035880","createTime":1535561376000,"price":"0.00002760","count":"13","entrustType":0},{"amount":"0.00025020","createTime":1535547620000,"price":"0.00002780","count":"9","entrustType":1},{"amount":"0.00028900","createTime":1535546416000,"price":"0.00002890","count":"10","entrustType":0},{"amount":"0.00043350","createTime":1535543684000,"price":"0.00002890","count":"15","entrustType":0},{"amount":"0.00057800","createTime":1535542887000,"price":"0.00002890","count":"20","entrustType":0},{"amount":"0.00028900","createTime":1535541311000,"price":"0.00002890","count":"10","entrustType":0},{"amount":"0.00109820","createTime":1535539401000,"price":"0.00002890","count":"38","entrustType":0},{"amount":"0.00060690","createTime":1535538994000,"price":"0.00002890","count":"21","entrustType":0},{"amount":"0.00034680","createTime":1535538206000,"price":"0.00002890","count":"12","entrustType":0},{"amount":"0.00046240","createTime":1535537015000,"price":"0.00002890","count":"16","entrustType":0},{"amount":"0.00054910","createTime":1535536662000,"price":"0.00002890","count":"19","entrustType":0},{"amount":"0.00034680","createTime":1535535477000,"price":"0.00002890","count":"12","entrustType":0},{"amount":"0.00026010","createTime":1535535046000,"price":"0.00002890","count":"9","entrustType":0},{"amount":"0.00086700","createTime":1535534286000,"price":"0.00002890","count":"30","entrustType":0},{"amount":"0.00028900","createTime":1535531943000,"price":"0.00002890","count":"10","entrustType":0},{"amount":"0.00118490","createTime":1535531212000,"price":"0.00002890","count":"41","entrustType":0}]'
+    http_version: 
+  recorded_at: Thu, 30 Aug 2018 05:04:44 GMT
+recorded_with: VCR 4.0.0
