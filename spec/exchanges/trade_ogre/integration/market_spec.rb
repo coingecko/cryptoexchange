@@ -16,7 +16,7 @@ RSpec.describe 'TradeOgre integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'trade_ogre', base: aeon_btc_pair.base, target: aeon_btc_pair.target
-    expect(trade_page_url).to eq "https://tradeogre.com/exchange/AEON-BTC"
+    expect(trade_page_url).to eq "https://tradeogre.com/exchange/BTC-AEON"
   end
 
   it 'fetch ticker' do
@@ -27,8 +27,8 @@ RSpec.describe 'TradeOgre integration specs' do
     expect(ticker.market).to eq 'trade_ogre'
     expect(ticker.last).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
+    
     expect(ticker.payload).to_not be nil
   end
 

@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openapi.bitmart.com/market/depth?precision=6&symbol=45
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - openapi.bitmart.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE
+      Access-Control-Max-Age:
+      - '3600'
+      Access-Control-Allow-Headers:
+      - x-requested-with
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Type:
+      - text/plain;charset=UTF-8
+      Content-Length:
+      - '1422'
+      Date:
+      - Thu, 30 Aug 2018 05:04:44 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"buys":[{"amount":"28","total":"28.00","price":"0.000028","count":"1"},{"amount":"79","total":"107.00","price":"0.000027","count":"4"},{"amount":"156","total":"263.00","price":"0.000026","count":"7"},{"amount":"18","total":"281.00","price":"0.000024","count":"2"},{"amount":"12","total":"293.00","price":"0.000023","count":"1"},{"amount":"14","total":"307.00","price":"0.000020","count":"1"},{"amount":"49","total":"356.00","price":"0.000018","count":"2"},{"amount":"7","total":"363.00","price":"0.000017","count":"1"},{"amount":"10","total":"373.00","price":"0.000011","count":"1"},{"amount":"41","total":"414.00","price":"0.000010","count":"1"}],"sells":[{"amount":"30","total":"30.00","price":"0.000028","count":"2"},{"amount":"49","total":"79.00","price":"0.000029","count":"2"},{"amount":"31","total":"110.00","price":"0.000030","count":"2"},{"amount":"24","total":"134.00","price":"0.000031","count":"2"},{"amount":"21","total":"155.00","price":"0.000032","count":"2"},{"amount":"6","total":"161.00","price":"0.000034","count":"1"},{"amount":"13","total":"174.00","price":"0.000035","count":"1"},{"amount":"22","total":"196.00","price":"0.000036","count":"1"},{"amount":"16","total":"212.00","price":"0.000038","count":"1"},{"amount":"10","total":"222.00","price":"0.000041","count":"1"},{"amount":"6","total":"228.00","price":"0.000046","count":"1"},{"amount":"9","total":"237.00","price":"0.000048","count":"2"}]}'
+    http_version: 
+  recorded_at: Thu, 30 Aug 2018 05:04:44 GMT
+recorded_with: VCR 4.0.0

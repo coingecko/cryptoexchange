@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://tradeogre.com/api/v1'
 
       def self.trade_page_url(args={})
-        "https://tradeogre.com/exchange/#{args[:base]}-#{args[:target]}"
+        "https://tradeogre.com/exchange/#{args[:target]}-#{args[:base]}"
       end
     end
   end

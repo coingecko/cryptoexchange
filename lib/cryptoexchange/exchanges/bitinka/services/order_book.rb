@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module B2bx
+  module Bitinka
     module Services
       class OrderBook < Cryptoexchange::Services::Market
         class << self
@@ -9,13 +9,14 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          raw_output = HTTP.use(:auto_inflate).headers("Accept-Encoding" => "gzip").get(ticker_url(market_pair))
-          output = JSON.parse(raw_output)
-          adapt(output['Ticks'][-1], market_pair)
+          output = super(ticker_url(market_pair))
+          adapt(output, market_pair)
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::B2bx::Market::API_URL}/public/quotehistory/#{market_pair.base}#{market_pair.target}/level2?timestamp=#{((DateTime.now - (1/1440.0)).strftime('%Q')).to_i}&count=100"
+          # currency is the determined by the coin / currency BTC is traded in
+          currency = market_pair.base == 'BTC' ? market_pair.target : market_pair.base
+          "#{Cryptoexchange::Exchanges::Bitinka::Market::API_URL}/order_book/#{currency }?format=json"
         end
 
         def adapt(output, market_pair)
@@ -23,18 +24,19 @@ module Cryptoexchange::Exchanges
 
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
-          order_book.market    = B2bx::Market::NAME
-          order_book.asks      = adapt_orders(output['Asks'])
-          order_book.bids      = adapt_orders(output['Bids'])
-          order_book.timestamp = output['Timestamp']/1000
+          order_book.market    = Bitinka::Market::NAME
+          order_book.asks      = adapt_orders(output['orders']['sales'])
+          order_book.bids      = adapt_orders(output['orders']['purchases'])
+          order_book.timestamp = nil
           order_book.payload   = output
           order_book
         end
 
         def adapt_orders(orders)
+          orders = orders.values.flatten
           orders.collect do |order_entry|
             Cryptoexchange::Models::Order.new(price: order_entry['Price'],
-                                              amount: order_entry['Volume'])
+                                              amount: order_entry['Amount'])
           end
         end
       end
