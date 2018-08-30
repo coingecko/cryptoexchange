@@ -73,6 +73,7 @@ Or install it yourself as:
 | BTCBox            | Y       | Y          |         |         | User-Defined| Y        | btcbox            |
 | BTCC              | Y       |            |         |         | User-Defined|          | btcc              |
 | BTCChina          |         |            |         |         |             |          |                   |
+| BTCMarkets        | Y       | Y          |         |         | Y           | Y        | btcmarkets        |
 | Btcsquare         | Y       | Y          | Unstable|         | Y           | Y        | btcsquare         |
 | BTCTurk           | Y       | Y          |         |         | Y           |          | btcturk           |
 | BTER              | Y       |            |         |         | Y           |          | bter              |

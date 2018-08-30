@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.btcmarkets.net/data/market/active
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.btcmarkets.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 25 Jul 2018 07:39:02 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d77bfc57f99a3d9530400d2b51a5ec4aa1532504341; expires=Thu, 25-Jul-19
+        07:39:01 GMT; path=/; domain=.btcmarkets.net; HttpOnly
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 43fcf868abff70c2-SIN
+    body:
+      encoding: UTF-8
+      string: '{"result":"success","markets":[{"id":2001,"instrument":"BTC","currency":"AUD","agency":"BTCMarkets"},{"id":2002,"instrument":"LTC","currency":"AUD","agency":"BTCMarkets"},{"id":2006,"instrument":"LTC","currency":"BTC","agency":"BTCMarkets"},{"id":2007,"instrument":"ETH","currency":"BTC","agency":"BTCMarkets"},{"id":2010,"instrument":"ETH","currency":"AUD","agency":"BTCMarkets"},{"id":2014,"instrument":"ETC","currency":"AUD","agency":"BTCMarkets"},{"id":2015,"instrument":"ETC","currency":"BTC","agency":"BTCMarkets"},{"id":2016,"instrument":"XRP","currency":"AUD","agency":"BTCMarkets"},{"id":2017,"instrument":"XRP","currency":"BTC","agency":"BTCMarkets"},{"id":2018,"instrument":"BCH","currency":"AUD","agency":"BTCMarkets"},{"id":2019,"instrument":"BCH","currency":"BTC","agency":"BTCMarkets"},{"id":2020,"instrument":"POWR","currency":"AUD","agency":"BTCMarkets"},{"id":2021,"instrument":"POWR","currency":"BTC","agency":"BTCMarkets"},{"id":2022,"instrument":"OMG","currency":"AUD","agency":"BTCMarkets"},{"id":2023,"instrument":"OMG","currency":"BTC","agency":"BTCMarkets"}]}'
+    http_version: 
+  recorded_at: Wed, 25 Jul 2018 07:39:02 GMT
+recorded_with: VCR 4.0.0
