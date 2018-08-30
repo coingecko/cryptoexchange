@@ -11,14 +11,10 @@ module Cryptoexchange
       end
 
       def base_raw
-        return nil if @base_raw&.casecmp(@base) == 0
-
         @base_raw
       end
 
       def target_raw
-        return nil if @target_raw&.casecmp(@target) == 0
-
         @target_raw
       end
 
