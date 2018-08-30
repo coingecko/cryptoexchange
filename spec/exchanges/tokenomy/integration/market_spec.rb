@@ -14,6 +14,11 @@ RSpec.describe 'Tokenomy integration specs' do
     expect(pair.market).to eq 'tokenomy'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'tokenomy', base: ten_btc_pair.base, target: ten_btc_pair.target
+    expect(trade_page_url).to eq "https://exchange.tokenomy.com/market/TENBTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(ten_btc_pair)
 

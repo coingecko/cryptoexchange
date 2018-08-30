@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.thinkbit.com/v2/handicap/ETH_BTC?accuracy=1&offset=0&size=50
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.thinkbit.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '344'
+      Connection:
+      - close
+      Date:
+      - Tue, 21 Aug 2018 11:05:11 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 2e506e9ca9f917cce65011567b65d797.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Nv7Nm9HeIFR0hkkKDinfD9Dd5OUNvadv4UHxa9ff_O4IPmH-zyLBWw==
+    body:
+      encoding: UTF-8
+      string: '{"code":0,"data":{"asks":[{"values":["0.043967","0.1"]},{"values":["0.044152","1.09"]},{"values":["0.044288","2.08"]},{"values":["0.044581","0.22"]},{"values":["0.044883","6.1"]}],"bids":[{"values":["0.043686","0.1"]},{"values":["0.043501","1.07"]},{"values":["0.043309","3.02"]},{"values":["0.043068","4.98"]},{"values":["0.042773","0.15"]}]}}'
+    http_version: 
+  recorded_at: Tue, 21 Aug 2018 11:05:11 GMT
+recorded_with: VCR 4.0.0

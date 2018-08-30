@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ax.net/api/return24Orderbook?market=TUSD_ETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ax.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 27 Aug 2018 14:47:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '64'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d287359f74cd10a99e15cfe6e7e22454a1535381232; expires=Tue, 27-Aug-19
+        14:47:12 GMT; path=/; domain=.ax.net; HttpOnly; Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Surrogate-Control:
+      - no-store
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, proxy-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Etag:
+      - W/"40-d2oWn1Md14o/1W5l4vZIKrzyX0A"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 450f54fe889175fa-ARN
+    body:
+      encoding: UTF-8
+      string: '{"asks":[[0,0],[0,0]],"bids":[[0,0],[0,0]],"isFrozen":0,"seq":0}'
+    http_version: 
+  recorded_at: Mon, 27 Aug 2018 14:46:37 GMT
+recorded_with: VCR 4.0.0

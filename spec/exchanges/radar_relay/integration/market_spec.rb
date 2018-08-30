@@ -14,6 +14,11 @@ RSpec.describe 'RadarRelay integration specs' do
     expect(pair.market).to eq 'radar_relay'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'radar_relay', base: dai_weth_pair.base, target: dai_weth_pair.target
+    expect(trade_page_url).to eq "https://app.radarrelay.com/DAI/WETH"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(dai_weth_pair)
 
@@ -21,13 +26,12 @@ RSpec.describe 'RadarRelay integration specs' do
     expect(ticker.target).to eq 'WETH'
     expect(ticker.market).to eq 'radar_relay'
     expect(ticker.last).to be_a Numeric
-    puts ticker.last.to_f
     expect(ticker.last).to be < 100 # Test if number is reasonable
     expect(ticker.high).to be_a Numeric
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
+    
     expect(ticker.payload).to_not be nil
   end
 end

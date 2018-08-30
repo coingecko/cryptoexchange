@@ -39,7 +39,7 @@ module Cryptoexchange::Exchanges
           ticker.low       = NumericHelper.to_d(output['lowestAsk'])
           ticker.change    = NumericHelper.to_d(output['percentChange'])
           ticker.volume    = NumericHelper.to_d(output['quoteVolume'])
-          ticker.timestamp = Time.now.to_i
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

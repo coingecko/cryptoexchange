@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Cpdax
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Cpdax::Market::API_URL}/ticker"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Cpdax::Market::API_URL}/tickers"
 
         def fetch
           output = super
@@ -10,8 +10,8 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output['data']['tickerList'].map do |ticker|
-            base, target = ticker['currency_pair'].split("-")
+          output.map do |pair|
+            base, target = pair['currency_pair'].split("-")
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,

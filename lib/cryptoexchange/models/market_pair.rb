@@ -1,10 +1,12 @@
 module Cryptoexchange
   module Models
     class MarketPair
-      attr_accessor :base, :target, :market
-      attr_reader :base_raw, :target_raw, :inst_id
+      attr_accessor :base, :target, :market, :base_raw, :target_raw
+      attr_reader :inst_id
 
       def initialize(params = {})
+        @base_raw = params[:base_raw]
+        @target_raw = params[:target_raw]
         @base   = params[:base]
         @target = params[:target]
         @market = params[:market]
@@ -20,11 +22,13 @@ module Cryptoexchange
       end
 
       def base_raw
-        @base
+        return @base if @base_raw.nil? || @base_raw.empty?
+        @base_raw
       end
 
       def target_raw
-        @target
+        return @target if @target_raw.nil? || @target_raw.empty?
+        @target_raw
       end
     end
   end

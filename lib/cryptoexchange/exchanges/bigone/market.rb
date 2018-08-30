@@ -3,6 +3,10 @@ module Cryptoexchange::Exchanges
     class Market < Cryptoexchange::Models::Market
       NAME = 'bigone'
       API_URL = 'https://big.one/api/v2'
+
+      def self.trade_page_url(args={})
+        "https://big.one/trade/#{args[:base]}-#{args[:target]}"
+      end
     end
   end
 end
