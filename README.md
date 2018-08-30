@@ -58,6 +58,7 @@ Or install it yourself as:
 | Bitinka           | Y       | Y          |         |         | Y           |          | bitinka           |
 | Bitkonan          | Y       |            |         |         | User-Defined|          | bitkonan          |
 | Bitlish           | Y       | Y          | Y       |         | Y           |          | bitlish           |
+| Bitmart           | Y       | Y          | Y       |         | Y           |          | bitmart           |
 | Bitmex            | Y       | Y          | Y       |         | Y           |          | bitmex            |
 | Bitpaction        | Y       | Y          | Y       |         | Y           |          | bitpaction        |
 | Bits Blockchain   | Y       | Y          |         |         | Y           |          | bits_blockchain   |
