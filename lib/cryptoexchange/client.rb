@@ -27,18 +27,9 @@ module Cryptoexchange
         market.fetch(market_pair)
       else
         tickers = market.fetch
-
-        if !market_pair.base_raw.nil? && market_pair.base_raw.casecmp(market_pair.base) != 0
-          tickers.find do |t|
-            t.base_raw.casecmp(market_pair.base_raw) == 0 &&
-              t.base.casecmp(market_pair.base) == 0 &&
-              t.target.casecmp(market_pair.target) == 0
-          end
-        else
-          tickers.find do |t|
-            t.base.casecmp(market_pair.base) == 0 &&
-              t.target.casecmp(market_pair.target) == 0
-          end
+        tickers.find do |t|
+          t.base.casecmp(market_pair.base) == 0 &&
+            t.target.casecmp(market_pair.target) == 0
         end
       end
     end

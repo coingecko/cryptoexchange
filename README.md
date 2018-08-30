@@ -124,6 +124,7 @@ Or install it yourself as:
 | Cryptobulls       | Y       | N          | N       |         | Y           |          | cryptobulls       |
 | Cryptonit         | Y       | Y          | Y       |         | Y           | Y        | cryptonit         |
 | Cryptopia         | Y       | Y          | Y       |         | Y           |          | cryptopia         |
+| Crytrex           | Y       | Y          | Y       |         | Y           |          | crytrex           |
 | Cybex             | Y       | Y          | Y       |         | Y           |          | cybex             |
 | Ddex              | Y       |            |         |         | Y           | Y        | ddex              |
 | DEx.top           | Y       | Y          | Y       |         | Y           |          | dextop            |
