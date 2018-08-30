@@ -32,6 +32,7 @@ Or install it yourself as:
 | Allcoin           | Y       | Y          |         |         | User-Defined|          | allcoin           |
 | Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |
 | ANX               | Y       |            |         |         | User-Defined|          | anx               |
+| AXNET             | Y       | Y          | Y       |         | Y           | Y        | axnet             |
 | B2BX              | Y       | Y          |         |         | Y           |          | b2bx              |
 | Bancor            | Y       | N          | N       |         | Y           |          | bancor            |
 | Bcex              | Y       | Y          | Y       |         | Y           | Y        | bcex              |
@@ -54,6 +55,7 @@ Or install it yourself as:
 | Bithash           | Y       | Y          | Y       |         | Y           | Y        | bithash           |
 | Bithumb           | Y       |            |         |         | Y           |          | bithumb           |
 | Bitibu            | Y       | Y          | Y       |         | Y           | Y        | bitibu            |
+| Bitinka           | Y       | Y          |         |         | Y           |          | bitinka           |
 | Bitkonan          | Y       |            |         |         | User-Defined|          | bitkonan          |
 | Bitlish           | Y       | Y          | Y       |         | Y           |          | bitlish           |
 | Bitmart           | Y       | Y          | Y       |         | Y           |          | bitmart           |
@@ -72,6 +74,7 @@ Or install it yourself as:
 | BTCBox            | Y       | Y          |         |         | User-Defined| Y        | btcbox            |
 | BTCC              | Y       |            |         |         | User-Defined|          | btcc              |
 | BTCChina          |         |            |         |         |             |          |                   |
+| BTCMarkets        | Y       | Y          |         |         | Y           | Y        | btcmarkets        |
 | Btcsquare         | Y       | Y          | Unstable|         | Y           | Y        | btcsquare         |
 | BTCTurk           | Y       | Y          |         |         | Y           |          | btcturk           |
 | BTER              | Y       |            |         |         | Y           |          | bter              |
@@ -96,6 +99,7 @@ Or install it yourself as:
 | Coinfield         | Y       | N          | N       |         | Y           | Y        | coinfield         |
 | Coingi            | Y       | Y          | Y       |         | Y           | Y        | coingi            |
 | Coinhouse         | Y       |            |         |         | Y           | Y        | coinhouse         |
+| Coinhub           | Y       | Y          | Y       |         | Y           | Y        | coinhub           |
 | CoinJar           | Y       | Y          | Y       |         | Y           |          | coinjar           |
 | Coinmate          | Y       | Y          |         |         | User-Defined|          | coinmate          |
 | Coinnest          | Y       | Y          | Y       |         | User-Defined| Y        | coinnest          |
@@ -104,6 +108,7 @@ Or install it yourself as:
 | Coinrail          | Y       | Y          | Y       |         | Y           | Y        | coinrail          |
 | Coinroom          | Y       |            |         |         | Y           |          | coinroom          |
 | CoinsMarkets      | Y       |            |         |         | Y           |          | coin_markets      |
+| Coinsbank         | Y       |            |         |         | Y           |          | coinsbank         |
 | Coinstock         | Y       | Y          | Y       |         | Y           |          | coinstock         |
 | Coinsuper         | Y       |            |         |         | Y           | Y        | coinsuper         |
 | Cointiger         | Y       | Y          | Y       |         | Y           |          | cointiger         |
@@ -120,8 +125,10 @@ Or install it yourself as:
 | Cryptobulls       | Y       | N          | N       |         | Y           |          | cryptobulls       |
 | Cryptonit         | Y       | Y          | Y       |         | Y           | Y        | cryptonit         |
 | Cryptopia         | Y       | Y          | Y       |         | Y           |          | cryptopia         |
+| Crytrex           | Y       | Y          | Y       |         | Y           |          | crytrex           |
 | Cybex             | Y       | Y          | Y       |         | Y           |          | cybex             |
 | Ddex              | Y       |            |         |         | Y           | Y        | ddex              |
+| DEx.top           | Y       | Y          | Y       |         | Y           |          | dextop            |
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |
@@ -142,6 +149,7 @@ Or install it yourself as:
 | GDAX              | Y       |            |         |         | Y           |          | gdax              |
 | Gemini            | Y       | Y          | Y       |         | Y           |          | gemini            |
 | GetBTC            | Y       | Y          | Y       |         | User-Defined| Y        | getbtc            |
+| Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |     
 | GOPAX             | Y       | Y          | Y       |         | Y           | Y        | gopax             |
 | Graviex           | Y       | N          | N       |         | Y           |          | graviex           |
 | Hadax             | Y       | N          | N       |         | Y           | Y        | hadax             |
