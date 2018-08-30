@@ -22,13 +22,11 @@ module Cryptoexchange
       end
 
       def base_raw
-        return @base if @base_raw.nil? || @base_raw.empty?
-        @base_raw
+        @base_raw || @base
       end
 
       def target_raw
-        return @target if @target_raw.nil? || @target_raw.empty?
-        @target_raw
+        @target_raw || @target
       end
     end
   end
