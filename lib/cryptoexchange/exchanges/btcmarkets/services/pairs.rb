@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Btcmarkets
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "https://www.btcmarkets.net/data/market/active"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Btcmarkets::Market::API_URL}/v2/market/active"
 
         def fetch
           output = super

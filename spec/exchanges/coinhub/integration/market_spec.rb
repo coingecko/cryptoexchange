@@ -27,8 +27,7 @@ RSpec.describe 'Coinhub integration specs' do
     expect(ticker.ask).to be_a Numeric
     expect(ticker.change).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
   end
   
@@ -45,7 +44,7 @@ RSpec.describe 'Coinhub integration specs' do
     expect(order_book.bids.first.timestamp).to be_nil
     expect(order_book.asks.count).to be > 10
     expect(order_book.bids.count).to be > 10
-    expect(order_book.timestamp).to be_a Numeric
+    expect(order_book.timestamp).to be nil
     expect(order_book.payload).to_not be nil
   end
 
@@ -62,6 +61,7 @@ RSpec.describe 'Coinhub integration specs' do
     expect(trade.price).to_not be_nil
     expect(trade.amount).to_not be_nil
     expect(trade.timestamp).to be_a Numeric
+    expect(2000..Date.today.year).to include(Time.at(trade.timestamp).year)
     expect(trade.payload).to_not be nil
   end
 end

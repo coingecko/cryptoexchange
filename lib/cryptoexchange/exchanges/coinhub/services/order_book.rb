@@ -26,7 +26,7 @@ module Cryptoexchange::Exchanges
           order_book.market    = Coinhub::Market::NAME
           order_book.asks      = adapt_orders(output['ask'])
           order_book.bids      = adapt_orders(output['bid'])
-          order_book.timestamp = Time.now.to_i
+          order_book.timestamp = nil
           order_book.payload   = output
           order_book
         end

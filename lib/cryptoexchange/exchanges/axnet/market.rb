@@ -6,7 +6,6 @@ module Cryptoexchange::Exchanges
 
       def self.trade_page_url(args={})
         "https://dex.ax.net/#{args[:base]}_#{args[:target]}"
-        # "http://52.52.32.26/#{args[:base]}_#{args[:target]}"
       end
     end
   end
