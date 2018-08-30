@@ -13,6 +13,12 @@ RSpec.describe 'Bitbank integration specs' do
     expect(pair.market).to eq 'bitbank'
   end
 
+  it 'give trade url' do
+    pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'JPY', market: 'bitbank')
+    trade_page_url = client.trade_page_url 'bitbank', base: pair.base, target: pair.target
+    expect(trade_page_url).to eq "https://bitbank.cc/app/trade/BTC_JPY"
+  end
+
   it 'fetch ticker' do
     pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'JPY', market: 'bitbank')
     ticker = client.ticker(pair)

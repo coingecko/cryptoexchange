@@ -1,0 +1,150 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cryptonit.net/api/trading-pairs-info
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.cryptonit.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Sun, 05 Aug 2018 23:06:55 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d50ee66d49150f8743d0ef79bd45aac361533510414; expires=Mon, 05-Aug-19
+        23:06:54 GMT; path=/; domain=.cryptonit.net; HttpOnly; Secure
+      Location:
+      - http://api.cryptonit.net/api/trading-pairs-info/
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 445ceabb8aee8466-HKG
+    body:
+      encoding: UTF-8
+      string: |-
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="UTF-8" />
+                <meta http-equiv="refresh" content="0;url=http://api.cryptonit.net/api/trading-pairs-info/" />
+
+                <title>Redirecting to http://api.cryptonit.net/api/trading-pairs-info/</title>
+            </head>
+            <body>
+                Redirecting to <a href="http://api.cryptonit.net/api/trading-pairs-info/">http://api.cryptonit.net/api/trading-pairs-info/</a>.
+            </body>
+        </html>
+    http_version: 
+  recorded_at: Sun, 05 Aug 2018 23:06:55 GMT
+- request:
+    method: get
+    uri: http://api.cryptonit.net/api/trading-pairs-info/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/3.0.0
+      Host:
+      - api.cryptonit.net
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Sun, 05 Aug 2018 23:06:55 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Cache-Control:
+      - max-age=3600
+      Expires:
+      - Mon, 06 Aug 2018 00:06:55 GMT
+      Location:
+      - https://api.cryptonit.net/api/trading-pairs-info/
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 445ceabf01e08502-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Sun, 05 Aug 2018 23:06:55 GMT
+- request:
+    method: get
+    uri: https://api.cryptonit.net/api/trading-pairs-info/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/3.0.0
+      Host:
+      - api.cryptonit.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 05 Aug 2018 23:06:55 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0310c8bcce26f8edd9219d30c7d9dd0e1533510415; expires=Mon, 05-Aug-19
+        23:06:55 GMT; path=/; domain=.cryptonit.net; HttpOnly; Secure
+      Cache-Control:
+      - no-cache, private
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 445ceabf4d31849c-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"base_decimals":8,"minimum_order":0.001,"name":"BTC\/EUR","counter_decimals":2,"trading":"Enabled","url_symbol":"btceur","description":"BTC\/EUR"},{"base_decimals":8,"minimum_order":0.01,"name":"ETH\/EUR","counter_decimals":2,"trading":"Enabled","url_symbol":"etheur","description":"ETH\/EUR"},{"base_decimals":8,"minimum_order":0.001,"name":"ETH\/BTC","counter_decimals":8,"trading":"Enabled","url_symbol":"ethbtc","description":"ETH\/BTC"},{"base_decimals":2,"minimum_order":1,"name":"ETN\/BTC","counter_decimals":8,"trading":"Enabled","url_symbol":"etnbtc","description":"ETN\/BTC"},{"base_decimals":2,"minimum_order":10,"name":"NOM\/ETH","counter_decimals":8,"trading":"Enabled","url_symbol":"nometh","description":"NOM\/ETH"},{"base_decimals":8,"minimum_order":0.1,"name":"FIN\/NOM","counter_decimals":2,"trading":"Enabled","url_symbol":"finnom","description":"FIN\/NOM"}]'
+    http_version: 
+  recorded_at: Sun, 05 Aug 2018 23:06:55 GMT
+recorded_with: VCR 4.0.0

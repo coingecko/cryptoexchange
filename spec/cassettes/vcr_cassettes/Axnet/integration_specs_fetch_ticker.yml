@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ax.net/api/returnTicker?market=TUSD_ETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ax.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 27 Aug 2018 14:47:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '142'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dee8d54958b2fc2dc5854010c1c1b1b141535381231; expires=Tue, 27-Aug-19
+        14:47:11 GMT; path=/; domain=.ax.net; HttpOnly; Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Surrogate-Control:
+      - no-store
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, proxy-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Etag:
+      - W/"8e-pepjcWlL9Cl48+KEz8qPK9JGtJk"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 450f54f5cdb77690-ARN
+    body:
+      encoding: UTF-8
+      string: '{"last":0.001,"lowestAsk":0,"highestBid":0.001,"percentChange":-0.08823529411764706,"baseVolume":0.34,"quoteVolume":280,"high":0.0015,"low":0}'
+    http_version: 
+  recorded_at: Mon, 27 Aug 2018 14:46:36 GMT
+recorded_with: VCR 4.0.0

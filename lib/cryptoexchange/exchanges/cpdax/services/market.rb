@@ -4,35 +4,44 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            true
+            false
           end
         end
 
-        def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output, market_pair)
+        def fetch
+          output = super(ticker_url)
+          adapt_all(output)
         end
 
-        def ticker_url(market_pair)
-          base = market_pair.base
-          target = market_pair.target
-          "#{Cryptoexchange::Exchanges::Cpdax::Market::API_URL}/ticker/#{base}-#{target}/detailed"
+        def ticker_url
+          "#{Cryptoexchange::Exchanges::Cpdax::Market::API_URL}/tickers/detailed"
         end
 
-        def adapt(output, market_pair)
+        def adapt_all(output)
+          output.map do |ticker|
+            base, target = ticker['currency_pair'].split('-')
+            market_pair  = Cryptoexchange::Models::MarketPair.new(
+              base:   base,
+              target: target,
+              market: Cpdax::Market::NAME
+            )
+            adapt(market_pair, ticker)
+          end
+        end
+
+        def adapt(market_pair, output)
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
-          ticker.market    = market_pair.market
-
-          ticker.last      = NumericHelper.to_d(output['data']['ticker']['last'])
-          ticker.bid       = NumericHelper.to_d(output['data']['ticker']['bid'])
-          ticker.ask       = NumericHelper.to_d(output['data']['ticker']['ask'])
-          ticker.low       = NumericHelper.to_d(output['data']['ticker']['low'])
-          ticker.high      = NumericHelper.to_d(output['data']['ticker']['high'])
-          ticker.volume    = NumericHelper.to_d(output['data']['ticker']['volume'])
-
-          ticker.timestamp = output['data']['ticker']['timestamp'].to_i / 1000
+          ticker.market    = Cpdax::Market::NAME
+          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.high      = NumericHelper.to_d(output['high'])
+          ticker.low       = NumericHelper.to_d(output['low'])
+          ticker.bid       = NumericHelper.to_d(output['bid'])
+          ticker.ask       = NumericHelper.to_d(output['ask'])
+          ticker.volume    = NumericHelper.divide(NumericHelper.to_d(output['volume']), ticker.last)
+          ticker.change    = NumericHelper.to_d(output['rate'])
+          ticker.timestamp = NumericHelper.to_d(output['timestamp'])
           ticker.payload   = output
           ticker
         end

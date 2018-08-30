@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.altilly.com/api/public/orderbook/LTCBTC?limit=100
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.altilly.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 24 Jul 2018 02:51:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '186'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0dde14509987ea50e75d5a75817c07ba1532400680; expires=Wed, 24-Jul-19
+        02:51:20 GMT; path=/; domain=.altilly.com; HttpOnly; Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"ba-OXdIGQrbBmFWxRAhELAUDZgkbPA"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 43f3159e3ec730d8-SIN
+    body:
+      encoding: UTF-8
+      string: '{"ask":[{"price":"0.01900000","size":"1.10240000"},{"price":"0.02000000","size":"3.40360000"}],"bid":[{"price":"0.00100000","size":"28.89990000"}],"timestamp":"2018-07-24T02:53:59.138Z"}'
+    http_version: 
+  recorded_at: Tue, 24 Jul 2018 02:51:21 GMT
+recorded_with: VCR 4.0.0

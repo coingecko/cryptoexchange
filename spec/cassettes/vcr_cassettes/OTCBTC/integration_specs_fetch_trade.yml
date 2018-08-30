@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otcbtc.com/api/v2/trades?market=ethusdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - otcbtc.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Jul 2018 09:30:16 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '8475'
+      Connection:
+      - close
+      Server:
+      - nginx/1.12.2
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"293b1aaa62fbb1e97c83ae6bfe62f88a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b41d294a-c2e2-4269-b8a3-40c4eb30f223
+      X-Runtime:
+      - '0.030491'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      X-Xss-Protection:
+      - '1'
+      X-Content-Type-Options:
+      - nosniff
+      X-Protected-By:
+      - Sqreen
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":2983419,"price":"475.81186402","volume":"2.75563563","funds":"1311.1641256702270326","market":"ethusdt","created_at":"2018-07-03T17:28:22+08:00","at":1530610102,"side":"down"},{"id":2983295,"price":"478.37251639","volume":"1.48008526","funds":"708.0321102979474114","market":"ethusdt","created_at":"2018-07-03T17:24:05+08:00","at":1530609845,"side":"up"},{"id":2983260,"price":"476.53670619","volume":"4.67782729","funds":"2229.1564089022939251","market":"ethusdt","created_at":"2018-07-03T17:22:14+08:00","at":1530609734,"side":"up"},{"id":2983245,"price":"474.86827015","volume":"2.43976873","funds":"1158.5687563811624095","market":"ethusdt","created_at":"2018-07-03T17:21:22+08:00","at":1530609682,"side":"down"},{"id":2983228,"price":"476.05965844","volume":"3.69534024","funds":"1759.2024124739876256","market":"ethusdt","created_at":"2018-07-03T17:20:09+08:00","at":1530609609,"side":"down"},{"id":2983203,"price":"477.28100246","volume":"2.1066848","funds":"1005.480633211244608","market":"ethusdt","created_at":"2018-07-03T17:18:50+08:00","at":1530609530,"side":"up"},{"id":2983193,"price":"475.0","volume":"0.00064158","funds":"0.3047505","market":"ethusdt","created_at":"2018-07-03T17:18:04+08:00","at":1530609484,"side":"up"},{"id":2982946,"price":"474.99210354","volume":"0.47626097","funds":"226.2201999743008338","market":"ethusdt","created_at":"2018-07-03T17:02:52+08:00","at":1530608572,"side":"up"},{"id":2982907,"price":"474.45202482","volume":"2.8127479","funds":"1334.513936463202878","market":"ethusdt","created_at":"2018-07-03T17:01:19+08:00","at":1530608479,"side":"up"},{"id":2982896,"price":"470.0","volume":"0.029","funds":"13.63","market":"ethusdt","created_at":"2018-07-03T17:01:14+08:00","at":1530608474,"side":"down"},{"id":2982865,"price":"475.0","volume":"0.212","funds":"100.7","market":"ethusdt","created_at":"2018-07-03T17:00:07+08:00","at":1530608407,"side":"up"},{"id":2982812,"price":"473.26","volume":"1.52129203","funds":"719.9666661178","market":"ethusdt","created_at":"2018-07-03T16:58:42+08:00","at":1530608322,"side":"up"},{"id":2982811,"price":"473.26","volume":"0.076","funds":"35.96776","market":"ethusdt","created_at":"2018-07-03T16:58:42+08:00","at":1530608322,"side":"up"},{"id":2982809,"price":"473.26","volume":"0.00081058","funds":"0.3836150908","market":"ethusdt","created_at":"2018-07-03T16:58:39+08:00","at":1530608319,"side":"down"},{"id":2982774,"price":"473.29","volume":"0.00010261","funds":"0.0485642869","market":"ethusdt","created_at":"2018-07-03T16:57:42+08:00","at":1530608262,"side":"up"},{"id":2982773,"price":"473.29","volume":"1.598","funds":"756.31742","market":"ethusdt","created_at":"2018-07-03T16:57:42+08:00","at":1530608262,"side":"down"},{"id":2982714,"price":"473.311384","volume":"0.249","funds":"117.854534616","market":"ethusdt","created_at":"2018-07-03T16:56:07+08:00","at":1530608167,"side":"up"},{"id":2982704,"price":"473.2637","volume":"0.499","funds":"236.1585863","market":"ethusdt","created_at":"2018-07-03T16:56:04+08:00","at":1530608164,"side":"up"},{"id":2982699,"price":"473.212124","volume":"0.249","funds":"117.829818876","market":"ethusdt","created_at":"2018-07-03T16:56:01+08:00","at":1530608161,"side":"down"},{"id":2982667,"price":"473.390792","volume":"0.99","funds":"468.65688408","market":"ethusdt","created_at":"2018-07-03T16:55:28+08:00","at":1530608128,"side":"up"},{"id":2982665,"price":"472.9739","volume":"0.772","funds":"365.1358508","market":"ethusdt","created_at":"2018-07-03T16:55:24+08:00","at":1530608124,"side":"down"},{"id":2982660,"price":"473.093012","volume":"0.10011608","funds":"47.36421783683296","market":"ethusdt","created_at":"2018-07-03T16:55:21+08:00","at":1530608121,"side":"up"},{"id":2982656,"price":"473.093012","volume":"1.927","funds":"911.650234124","market":"ethusdt","created_at":"2018-07-03T16:55:18+08:00","at":1530608118,"side":"up"},{"id":2982651,"price":"473.093012","volume":"0.10016617","funds":"47.38791506580404","market":"ethusdt","created_at":"2018-07-03T16:55:17+08:00","at":1530608117,"side":"up"},{"id":2982648,"price":"473.093012","volume":"0.499","funds":"236.073412988","market":"ethusdt","created_at":"2018-07-03T16:55:17+08:00","at":1530608117,"side":"up"},{"id":2982642,"price":"473.043382","volume":"0.09981927","funds":"47.21884506957114","market":"ethusdt","created_at":"2018-07-03T16:55:16+08:00","at":1530608116,"side":"down"},{"id":2982641,"price":"474.65","volume":"0.000397","funds":"0.18843605","market":"ethusdt","created_at":"2018-07-03T16:55:16+08:00","at":1530608116,"side":"down"},{"id":2982638,"price":"475.0","volume":"0.00031182","funds":"0.1481145","market":"ethusdt","created_at":"2018-07-03T16:55:15+08:00","at":1530608115,"side":"up"},{"id":2982634,"price":"475.0","volume":"0.01455105","funds":"6.91174875","market":"ethusdt","created_at":"2018-07-03T16:55:14+08:00","at":1530608114,"side":"up"},{"id":2982627,"price":"475.0","volume":"0.10002976","funds":"47.514136","market":"ethusdt","created_at":"2018-07-03T16:55:11+08:00","at":1530608111,"side":"up"},{"id":2982622,"price":"475.0","volume":"0.1000798","funds":"47.537905","market":"ethusdt","created_at":"2018-07-03T16:55:09+08:00","at":1530608109,"side":"up"},{"id":2982619,"price":"475.0","volume":"0.879","funds":"417.525","market":"ethusdt","created_at":"2018-07-03T16:55:05+08:00","at":1530608105,"side":"down"},{"id":2982607,"price":"475.35575411","volume":"3.74939267","funds":"1782.2953801023563737","market":"ethusdt","created_at":"2018-07-03T16:55:01+08:00","at":1530608101,"side":"up"},{"id":2982605,"price":"475.0","volume":"0.214","funds":"101.65","market":"ethusdt","created_at":"2018-07-03T16:55:00+08:00","at":1530608100,"side":"down"},{"id":2982502,"price":"475.02616109","volume":"3.56967416","funds":"1695.6886125669704344","market":"ethusdt","created_at":"2018-07-03T16:51:24+08:00","at":1530607884,"side":"down"},{"id":2982451,"price":"477.25105194","volume":"1.10218479","funds":"526.0188504597679926","market":"ethusdt","created_at":"2018-07-03T16:50:12+08:00","at":1530607812,"side":"up"},{"id":2982400,"price":"477.12848976","volume":"0.73245051","funds":"349.4730056602417776","market":"ethusdt","created_at":"2018-07-03T16:48:41+08:00","at":1530607721,"side":"up"},{"id":2982299,"price":"476.84331132","volume":"4.34423214","funds":"2071.5180387803698248","market":"ethusdt","created_at":"2018-07-03T16:45:10+08:00","at":1530607510,"side":"up"},{"id":2982215,"price":"475.88855452","volume":"3.17087824","funds":"1508.9846621925216448","market":"ethusdt","created_at":"2018-07-03T16:41:54+08:00","at":1530607314,"side":"down"},{"id":2982149,"price":"478.93127913","volume":"0.73719366","funds":"353.0651025503263158","market":"ethusdt","created_at":"2018-07-03T16:39:52+08:00","at":1530607192,"side":"up"},{"id":2982112,"price":"478.75026622","volume":"4.37252818","funds":"2093.3490302294520796","market":"ethusdt","created_at":"2018-07-03T16:38:39+08:00","at":1530607119,"side":"down"},{"id":2982085,"price":"478.82456433","volume":"3.9526753","funds":"1892.638028460452049","market":"ethusdt","created_at":"2018-07-03T16:37:56+08:00","at":1530607076,"side":"down"},{"id":2982004,"price":"478.887738","volume":"0.2088172","funds":"99.9999965634936","market":"ethusdt","created_at":"2018-07-03T16:35:08+08:00","at":1530606908,"side":"down"},{"id":2981982,"price":"479.0","volume":"0.28580006","funds":"136.89822874","market":"ethusdt","created_at":"2018-07-03T16:34:32+08:00","at":1530606872,"side":"up"},{"id":2981980,"price":"479.0","volume":"0.141","funds":"67.539","market":"ethusdt","created_at":"2018-07-03T16:34:31+08:00","at":1530606871,"side":"up"},{"id":2981977,"price":"479.0","volume":"0.109","funds":"52.211","market":"ethusdt","created_at":"2018-07-03T16:34:23+08:00","at":1530606863,"side":"up"},{"id":2981975,"price":"479.0","volume":"0.267","funds":"127.893","market":"ethusdt","created_at":"2018-07-03T16:34:19+08:00","at":1530606859,"side":"down"},{"id":2981916,"price":"480.25079253","volume":"0.31978366","funds":"153.5763561531440598","market":"ethusdt","created_at":"2018-07-03T16:33:07+08:00","at":1530606787,"side":"up"},{"id":2981860,"price":"479.19290528","volume":"2.98857332","funds":"1432.1031318530951296","market":"ethusdt","created_at":"2018-07-03T16:31:31+08:00","at":1530606691,"side":"down"},{"id":2981828,"price":"480.65129905","volume":"0.94983624","funds":"456.540022640767572","market":"ethusdt","created_at":"2018-07-03T16:30:17+08:00","at":1530606617,"side":"up"}]'
+    http_version: 
+  recorded_at: Tue, 03 Jul 2018 09:30:16 GMT
+recorded_with: VCR 4.0.0

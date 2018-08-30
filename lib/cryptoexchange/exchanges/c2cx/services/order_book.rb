@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
         def order_book_url(market_pair)
           base   = market_pair.base.upcase
           target = market_pair.target.upcase
-          "#{Cryptoexchange::Exchanges::C2cx::Market::API_URL}/getorderbook?symbol=#{base}_#{target}"
+          "#{Cryptoexchange::Exchanges::C2cx::Market::API_URL}/getorderbook?symbol=#{target}_#{base}"
         end
 
         def adapt(response, market_pair)
