@@ -21,13 +21,10 @@ module Cryptoexchange::Exchanges
           output["assets"].map do |asset|
             next if asset["id"] == "XLM-native" || asset["price_XLM"].nil? || asset["volume24h_XLM"].nil?
 
-            base_raw = asset["id"]
-            base = asset["code"]
+            base = asset["id"]
             target = "XLM"
-
             market_pair = Cryptoexchange::Models::MarketPair.new(
-              base_raw: base_raw,
-              base: base,
+              base:   base,
               target: target,
               market: StellarTerm::Market::NAME
             )
@@ -37,7 +34,6 @@ module Cryptoexchange::Exchanges
 
         def adapt(asset, market_pair)
           ticker           = Cryptoexchange::Models::Ticker.new
-          ticker.base_raw  = market_pair.base_raw
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = StellarTerm::Market::NAME
