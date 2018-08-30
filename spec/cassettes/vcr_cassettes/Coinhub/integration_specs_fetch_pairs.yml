@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.coinhub.io/en/gateway/coinhub/public/products
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.coinhub.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Jul 2018 18:00:36 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d1e48378b29e0e5f5ab154a83b63872ae1532628035; expires=Fri, 26-Jul-19
+        18:00:35 GMT; path=/; domain=.coinhub.io; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=15768000
+      Cache-Control:
+      - no-cache, max-age=0
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Thu, 26 Jul 2018 18:00:36 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4408c443bfe52cc3-KUL
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"missing_authenticators":[],"infos":[],"warnings":[],"errors":[],"results":[{"id":49,"fromSymbol":"ETH","toSymbol":"USD"},{"id":193,"fromSymbol":"BCH","toSymbol":"USD"},{"id":202,"fromSymbol":"BTC","toSymbol":"SGD"},{"id":6,"fromSymbol":"BTC","toSymbol":"USD"},{"id":10,"fromSymbol":"ETH","toSymbol":"BTC"},{"id":115,"fromSymbol":"LTC","toSymbol":"USD"},{"id":151,"fromSymbol":"BCH","toSymbol":"BTC"},{"id":190,"fromSymbol":"LTC","toSymbol":"ETH"},{"id":196,"fromSymbol":"ZIL","toSymbol":"ETH"},{"id":12,"fromSymbol":"LTC","toSymbol":"BTC"},{"id":132,"fromSymbol":"BBI","toSymbol":"ETH"},{"id":135,"fromSymbol":"BBI","toSymbol":"BTC"},{"id":139,"fromSymbol":"HBZ","toSymbol":"ETH"},{"id":142,"fromSymbol":"HBZ","toSymbol":"BTC"},{"id":160,"fromSymbol":"EXY","toSymbol":"ETH"},{"id":166,"fromSymbol":"Fundz","toSymbol":"ETH"},{"id":169,"fromSymbol":"Fundz","toSymbol":"BTC"},{"id":172,"fromSymbol":"CEDEX","toSymbol":"ETH"},{"id":181,"fromSymbol":"AMN","toSymbol":"BTC"},{"id":184,"fromSymbol":"AMN","toSymbol":"ETH"},{"id":114,"fromSymbol":"DRG","toSymbol":"ETH"},{"id":118,"fromSymbol":"DRG","toSymbol":"USD"},{"id":154,"fromSymbol":"BDT","toSymbol":"ETH"},{"id":99,"fromSymbol":"DASH","toSymbol":"USD"},{"id":111,"fromSymbol":"DRG","toSymbol":"BTC"}]}'
+    http_version: 
+  recorded_at: Thu, 26 Jul 2018 18:00:36 GMT
+recorded_with: VCR 4.0.0
