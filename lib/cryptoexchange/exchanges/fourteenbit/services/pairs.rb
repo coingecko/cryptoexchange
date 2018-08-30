@@ -1,9 +1,9 @@
 module Cryptoexchange::Exchanges
-    module FourteenBit
+    module Fourteenbit
       module Services
         class Pairs < Cryptoexchange::Services::Pairs
           
-          PAIRS_URL = "#{Cryptoexchange::Exchanges::FourteenBit::Market::API_URL}"
+          PAIRS_URL = "#{Cryptoexchange::Exchanges::Fourteenbit::Market::API_URL}"
   
           def fetch
             response = super
@@ -17,7 +17,7 @@ module Cryptoexchange::Exchanges
               market_pairs << Cryptoexchange::Models::MarketPair.new(
                 base: base,
                 target: target,
-                market: FourteenBit::Market::NAME
+                market: Fourteenbit::Market::NAME
               )
             end
             market_pairs

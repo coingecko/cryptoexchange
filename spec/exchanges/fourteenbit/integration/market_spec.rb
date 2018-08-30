@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-RSpec.describe 'FourteenBit integration specs' do
+RSpec.describe 'Fourteenbit integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:market) { 'foruteenbit' }
+  let(:market) { 'fourteenbit' }
   let(:eth_BTC_pair) do
     Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: market)
   end
