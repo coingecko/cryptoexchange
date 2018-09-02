@@ -13,6 +13,12 @@ RSpec.describe 'Zaif integration specs' do
     expect(pair.market).to eq 'zaif'
   end
 
+  it 'give trade url' do
+    pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'JPY', market: 'zaif')
+    trade_page_url = client.trade_page_url 'zaif', base: pair.base, target: pair.target
+    expect(trade_page_url).to eq "https://zaif.jp/trade_btc_jpy"
+  end
+
   it 'fetch ticker' do
     pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'JPY', market: 'zaif')
     ticker = client.ticker(pair)
@@ -25,8 +31,8 @@ RSpec.describe 'Zaif integration specs' do
     expect(ticker.ask).to_not be nil
     expect(ticker.high).to_not be nil
     expect(ticker.volume).to_not be nil
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
+    
     expect(ticker.payload).to_not be nil
   end
 

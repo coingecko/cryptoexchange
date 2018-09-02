@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bitinka.com/api/apinka/order_book/ETH?format=json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bitinka.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 27 Aug 2018 17:49:48 GMT
+      Server:
+      - Apache/2.4.29 (Debian)
+      Set-Cookie:
+      - ci_session=a%3A5%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%22260c02ee30d4bd1cf4b33c944d51bfe3%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A11%3A%2281.152.9.82%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A13%3A%22http.rb%2F3.0.0%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1535392188%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3B%7Df826d4a8ecda534e8181cd8c825200a0;
+        path=/
+      - ci_session=a%3A6%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%22260c02ee30d4bd1cf4b33c944d51bfe3%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A11%3A%2281.152.9.82%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A13%3A%22http.rb%2F3.0.0%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1535392188%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3Bs%3A8%3A%22language%22%3Bs%3A4%3A%22peru%22%3B%7D4d56dcd5970c720113816d64135e1ba3;
+        path=/
+      Status:
+      - '200'
+      Content-Length:
+      - '752'
+      Connection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: '{"orders":{"sales":{"ETH":[{"Amount":6.44,"Price":0.04164061},{"Amount":6.97,"Price":0.04164061},{"Amount":3.14,"Price":0.04164061},{"Amount":3.86,"Price":0.04164061},{"Amount":4.26,"Price":0.04164061},{"Amount":0.05,"Price":0.04164061},{"Amount":2.41,"Price":0.04162428},{"Amount":6.33,"Price":0.04162428},{"Amount":7.23,"Price":0.04162428},{"Amount":6.04,"Price":0.04162428}]},"purchases":{"ETH":[{"Amount":4.37,"Price":0.04083849},{"Amount":3.45,"Price":0.04083849},{"Amount":3.13,"Price":0.04082166},{"Amount":1.7,"Price":0.04082166},{"Amount":10.05,"Price":0.04082166},{"Amount":6.84,"Price":0.04081572},{"Amount":0.18,"Price":0.04081572},{"Amount":6.91,"Price":0.04081572},{"Amount":10.7,"Price":0.04083387},{"Amount":2.05,"Price":0.04083387}]}}}'
+    http_version: 
+  recorded_at: Mon, 27 Aug 2018 17:49:46 GMT
+recorded_with: VCR 4.0.0

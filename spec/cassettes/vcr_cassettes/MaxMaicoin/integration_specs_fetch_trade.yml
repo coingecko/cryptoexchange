@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://max-api.maicoin.com/api/v2/trades?limit=50&market=btctwd&offset=0&order_by=desc&page=1&pagination=true
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - max-api.maicoin.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 31 Jul 2018 08:35:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '6157'
+      Connection:
+      - close
+      Server:
+      - nginx
+      Page:
+      - '1'
+      Per-Page:
+      - '50'
+      Total-Pages:
+      - '269'
+      Total-Count:
+      - '13443'
+      Etag:
+      - '"c227cb65cf630aa1142b2161effd9121"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e3784f21-020a-4273-ab7e-61489f252bd2
+      X-Runtime:
+      - '0.021810'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":449793,"price":"247491.1","volume":"0.18282967","funds":"45248.7","market":"btctwd","created_at":1533022129,"side":"bid"},{"id":449686,"price":"247491.1","volume":"0.06867033","funds":"16995.2","market":"btctwd","created_at":1533021031,"side":"bid"},{"id":449685,"price":"247491.1","volume":"0.03132967","funds":"7753.8","market":"btctwd","created_at":1533021031,"side":"bid"},{"id":449337,"price":"247491.1","volume":"0.16867033","funds":"41744.4","market":"btctwd","created_at":1533017491,"side":"bid"},{"id":449325,"price":"245780.6","volume":"0.01695878","funds":"4168.1","market":"btctwd","created_at":1533017305,"side":"bid"},{"id":449301,"price":"249999.0","volume":"0.09415884","funds":"23539.6","market":"btctwd","created_at":1533017084,"side":"ask"},{"id":449076,"price":"250000.0","volume":"0.044164","funds":"11041.0","market":"btctwd","created_at":1533015262,"side":"ask"},{"id":449075,"price":"250000.0","volume":"0.1","funds":"25000.0","market":"btctwd","created_at":1533015262,"side":"ask"},{"id":449074,"price":"250000.0","volume":"2.0","funds":"500000.0","market":"btctwd","created_at":1533015261,"side":"ask"},{"id":449073,"price":"249990.0","volume":"0.45","funds":"112495.5","market":"btctwd","created_at":1533015261,"side":"ask"},{"id":449072,"price":"249259.5","volume":"0.6","funds":"149555.7","market":"btctwd","created_at":1533015261,"side":"ask"},{"id":449071,"price":"248990.0","volume":"0.01","funds":"2489.9","market":"btctwd","created_at":1533015261,"side":"ask"},{"id":449070,"price":"248990.0","volume":"0.15","funds":"37348.5","market":"btctwd","created_at":1533015261,"side":"ask"},{"id":449069,"price":"248799.0","volume":"0.0496997","funds":"12365.2","market":"btctwd","created_at":1533015261,"side":"ask"},{"id":449068,"price":"248552.0","volume":"0.01","funds":"2485.5","market":"btctwd","created_at":1533015261,"side":"ask"},{"id":449067,"price":"248400.0","volume":"0.1","funds":"24840.0","market":"btctwd","created_at":1533015261,"side":"ask"},{"id":449066,"price":"248100.0","volume":"0.01560012","funds":"3870.3","market":"btctwd","created_at":1533015261,"side":"ask"},{"id":449065,"price":"247000.0","volume":"0.00413223","funds":"1020.6","market":"btctwd","created_at":1533015261,"side":"ask"},{"id":449064,"price":"246666.6","volume":"0.01","funds":"2466.6","market":"btctwd","created_at":1533015261,"side":"ask"},{"id":449063,"price":"246500.0","volume":"0.1","funds":"24650.0","market":"btctwd","created_at":1533015261,"side":"ask"},{"id":449062,"price":"246500.0","volume":"0.01","funds":"2465.0","market":"btctwd","created_at":1533015261,"side":"ask"},{"id":449061,"price":"246450.0","volume":"0.045","funds":"11090.2","market":"btctwd","created_at":1533015260,"side":"ask"},{"id":449060,"price":"245575.9","volume":"0.3","funds":"73672.7","market":"btctwd","created_at":1533015260,"side":"ask"},{"id":449059,"price":"245555.5","volume":"0.102","funds":"25046.6","market":"btctwd","created_at":1533015260,"side":"ask"},{"id":449058,"price":"245555.5","volume":"0.0504299","funds":"12383.3","market":"btctwd","created_at":1533015260,"side":"ask"},{"id":448444,"price":"244356.7","volume":"0.0225","funds":"5498.0","market":"btctwd","created_at":1533009821,"side":"bid"},{"id":448443,"price":"244500.0","volume":"0.1","funds":"24450.0","market":"btctwd","created_at":1533009820,"side":"bid"},{"id":448281,"price":"244357.4","volume":"0.0007139","funds":"174.4","market":"btctwd","created_at":1533008519,"side":"bid"},{"id":448094,"price":"246936.4","volume":"0.2","funds":"49387.2","market":"btctwd","created_at":1533007167,"side":"ask"},{"id":447839,"price":"247000.0","volume":"0.05","funds":"12350.0","market":"btctwd","created_at":1533006195,"side":"ask"},{"id":447834,"price":"246599.0","volume":"0.1","funds":"24659.9","market":"btctwd","created_at":1533006128,"side":"ask"},{"id":447827,"price":"247000.0","volume":"0.15","funds":"37050.0","market":"btctwd","created_at":1533006064,"side":"ask"},{"id":447826,"price":"246990.0","volume":"0.02","funds":"4939.8","market":"btctwd","created_at":1533006064,"side":"ask"},{"id":447825,"price":"246000.0","volume":"0.03","funds":"7380.0","market":"btctwd","created_at":1533006064,"side":"ask"},{"id":447818,"price":"245999.0","volume":"0.1","funds":"24599.9","market":"btctwd","created_at":1533005998,"side":"ask"},{"id":447807,"price":"245980.0","volume":"0.1","funds":"24598.0","market":"btctwd","created_at":1533005866,"side":"ask"},{"id":447800,"price":"245989.0","volume":"0.1","funds":"24598.9","market":"btctwd","created_at":1533005801,"side":"ask"},{"id":447789,"price":"245980.0","volume":"0.1","funds":"24598.0","market":"btctwd","created_at":1533005734,"side":"ask"},{"id":447749,"price":"245990.0","volume":"0.08","funds":"19679.2","market":"btctwd","created_at":1533005321,"side":"ask"},{"id":447739,"price":"245900.0","volume":"0.15","funds":"36885.0","market":"btctwd","created_at":1533005254,"side":"ask"},{"id":447735,"price":"245899.0","volume":"0.05","funds":"12294.9","market":"btctwd","created_at":1533005190,"side":"ask"},{"id":447726,"price":"245880.0","volume":"0.1","funds":"24588.0","market":"btctwd","created_at":1533005124,"side":"ask"},{"id":447718,"price":"245879.0","volume":"0.1","funds":"24587.9","market":"btctwd","created_at":1533005053,"side":"ask"},{"id":447713,"price":"245880.0","volume":"0.1","funds":"24588.0","market":"btctwd","created_at":1533004986,"side":"ask"},{"id":447706,"price":"245800.0","volume":"0.0175","funds":"4301.5","market":"btctwd","created_at":1533004921,"side":"ask"},{"id":447516,"price":"241035.0","volume":"0.234","funds":"56402.1","market":"btctwd","created_at":1533003081,"side":"bid"},{"id":447515,"price":"241510.0","volume":"0.1","funds":"24151.0","market":"btctwd","created_at":1533003081,"side":"bid"},{"id":447514,"price":"242010.0","volume":"0.05","funds":"12100.5","market":"btctwd","created_at":1533003081,"side":"bid"},{"id":447494,"price":"245900.0","volume":"0.08133387","funds":"19999.9","market":"btctwd","created_at":1533002855,"side":"ask"},{"id":447278,"price":"245990.0","volume":"0.00053823","funds":"132.3","market":"btctwd","created_at":1533000445,"side":"ask"}]'
+    http_version: 
+  recorded_at: Tue, 31 Jul 2018 08:35:39 GMT
+recorded_with: VCR 4.0.0

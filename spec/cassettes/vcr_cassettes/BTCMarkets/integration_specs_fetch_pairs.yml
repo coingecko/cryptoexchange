@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.btcmarkets.net/v2/market/active
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.btcmarkets.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Aug 2018 04:47:05 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d35bd0eda611663bfb5e4c5d3b3a6d77d1535604425; expires=Fri, 30-Aug-19
+        04:47:05 GMT; path=/; domain=.btcmarkets.net; HttpOnly
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 45249e09483ebcec-KUL
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"errorCode":null,"errorMessage":null,"markets":[{"instrument":"BTC","currency":"AUD"},{"instrument":"LTC","currency":"AUD"},{"instrument":"LTC","currency":"BTC"},{"instrument":"ETH","currency":"BTC"},{"instrument":"ETH","currency":"AUD"},{"instrument":"ETC","currency":"AUD"},{"instrument":"ETC","currency":"BTC"},{"instrument":"XRP","currency":"AUD"},{"instrument":"XRP","currency":"BTC"},{"instrument":"BCH","currency":"AUD"},{"instrument":"BCH","currency":"BTC"},{"instrument":"POWR","currency":"AUD"},{"instrument":"POWR","currency":"BTC"},{"instrument":"OMG","currency":"AUD"},{"instrument":"OMG","currency":"BTC"}]}'
+    http_version: 
+  recorded_at: Thu, 30 Aug 2018 04:47:05 GMT
+recorded_with: VCR 4.0.0
