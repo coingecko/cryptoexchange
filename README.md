@@ -131,6 +131,7 @@ Or install it yourself as:
 | Ddex              | Y       |            |         |         | Y           | Y        | ddex              |
 | DEx.top           | Y       | Y          | Y       |         | Y           |          | dextop            |
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |
+| Dobitrade         | Y       | Y          | N       |         | Y           |          | dobitrade         |
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |
 | Escodex           | Y       |            |         |         | Y           | Y        | escodex           |
