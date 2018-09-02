@@ -40,6 +40,7 @@ Or install it yourself as:
 | BigONE            | Y       | Y          | Y       |         | Y           | Y        | bigone            |
 | Bilaxy            | Y       | Y          | Y       |         | Y           |          | bilaxy            |
 | Binance           | Y       | Y          |         |         | Y           | Y        | binance           |
+| Bisq              | Y       |            | Y       |         | Y           |          | bisq              |
 | Bit2C             | Y       | Y          | Y       |         | User-Defined| Y        | bit2c             |
 | Bit-Z             | Y       |            |         |         | Y           |          | bit_z             |
 | Bitbank           | Y       | Y          | Y       |         | User-Defined| Y        | bitbank           |
@@ -132,8 +133,7 @@ Or install it yourself as:
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |
-| Escodex           | Y       |            |         |         | Y           | Y        | escodex
-|
+| Escodex           | Y       |            |         |         | Y           | Y        | escodex           |
 | EtherDelta        | Y       |            |         |         | Y           |          | ether_delta       |
 | Ethfinex          | Y       | Y          | Y       |         | Y           |          | ethfinex          |
 | Exmo              | Y       | Y          | Y       |         | Y           | Y        | exmo              |
