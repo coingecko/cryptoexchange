@@ -132,6 +132,8 @@ Or install it yourself as:
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |
+| Escodex           | Y       |            |         |         | Y           | Y        | escodex
+|
 | EtherDelta        | Y       |            |         |         | Y           |          | ether_delta       |
 | Ethfinex          | Y       | Y          | Y       |         | Y           |          | ethfinex          |
 | Exmo              | Y       | Y          | Y       |         | Y           | Y        | exmo              |
