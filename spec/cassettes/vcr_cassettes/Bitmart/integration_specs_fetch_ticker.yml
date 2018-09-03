@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openapi.bitmart.com/ticker/ABT_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - openapi.bitmart.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE
+      Access-Control-Max-Age:
+      - '3600'
+      Access-Control-Allow-Headers:
+      - x-requested-with
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Thu, 30 Aug 2018 05:04:44 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"priceChange":"-3.81%","symbolId":45,"website":"https://www.bitmart.com/trade?symbol=ABT_BTC","depthEndPrecision":8,"ask_1":"0.00002830","anchorId":2,"anchorName":"BTC","pair":"ABT_BTC","volume":"551.00000000","coinId":24,"depthStartPrecision":6,"high_24h":"0.00002890","low_24h":"0.00002730","new_24h":"0.00002780","closeTime":1535605484704,"bid_1":"0.00002780","coinName":"ABT","baseVolume":"0.01582560","openTime":1535519084704}'
+    http_version: 
+  recorded_at: Thu, 30 Aug 2018 05:04:44 GMT
+recorded_with: VCR 4.0.0

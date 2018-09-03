@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://broker.negociecoins.com.br/api/v3/btcbrl/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - broker.negociecoins.com.br
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 05 Aug 2018 05:41:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '126'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d92b416e5584ecf51ebb6e3487bd27e691533447691; expires=Mon, 05-Aug-19
+        05:41:31 GMT; path=/; domain=.negociecoins.com.br; HttpOnly
+      Cache-Control:
+      - public, max-age=7
+      Expires:
+      - Sun, 05 Aug 2018 05:41:38 GMT
+      Last-Modified:
+      - Sun, 05 Aug 2018 05:41:28 GMT
+      Vary:
+      - "*"
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4456ef686cfaaa2c-SIN
+    body:
+      encoding: UTF-8
+      string: '{"buy":27221.1900,"date":1533446150,"high":28800.0000,"last":27221.1900,"low":27100.0000,"sell":27399.0000,"vol":219.41861624}'
+    http_version: 
+  recorded_at: Sun, 05 Aug 2018 05:41:31 GMT
+recorded_with: VCR 4.0.0

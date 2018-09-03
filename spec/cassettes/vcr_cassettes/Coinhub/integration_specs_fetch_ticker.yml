@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.coinhub.io/en/gateway/coinhub/public/returnTicker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.coinhub.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Jul 2018 18:07:03 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d6d93544484e66e72879d4892577622371532628358; expires=Fri, 26-Jul-19
+        18:05:58 GMT; path=/; domain=.coinhub.io; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=15768000
+      Cache-Control:
+      - no-cache, max-age=0
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Thu, 26 Jul 2018 18:05:59 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4408cc291b582cbd-KUL
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"missing_authenticators":[],"infos":[],"warnings":[],"errors":[],"results":{"ETH-USD":{"last":475.39,"lowestAsk":4.79e-6,"highestBid":4.77e-6,"changePrice":2.90490709,"changeTrade":15.18,"volume24hr":261.69,"high24hr":800,"low24hr":455.54},"BCH-USD":{"last":831.11,"lowestAsk":8.35e-6,"highestBid":8.3e-6,"changePrice":-6.81958413,"changeTrade":19.48218852,"volume24hr":233.90235623,"high24hr":864.94,"low24hr":825.22},"BTC-SGD":{"last":11202.98,"lowestAsk":0.00011232,"highestBid":0.00011196,"changePrice":75.42803589,"changeTrade":-9.16039334,"volume24hr":140.66055461,"high24hr":11548.57,"low24hr":11012.98},"BTC-USD":{"last":8213.95,"lowestAsk":8.22e-5,"highestBid":8.214e-5,"changePrice":60.65808787,"changeTrade":16.08236842,"volume24hr":114.44263634,"high24hr":8415.15,"low24hr":8071.74},"ETH-BTC":{"last":0.05821216,"lowestAsk":0,"highestBid":0,"changePrice":-0.00015592,"changeTrade":-0.80292359,"volume24hr":115.51597915,"high24hr":0.05825873,"low24hr":0.05696874},"LTC-USD":{"last":86.76,"lowestAsk":8.7e-7,"highestBid":8.7e-7,"changePrice":-0.26875057,"changeTrade":16.05868125,"volume24hr":128.9738,"high24hr":88.35,"low24hr":85.03},"BCH-BTC":{"last":0.10133738,"lowestAsk":0,"highestBid":0,"changePrice":-0.00164378,"changeTrade":21.47456105,"volume24hr":130.9938,"high24hr":0.10354913,"low24hr":0.10167694},"LTC-ETH":{"last":0.18201201,"lowestAsk":0,"highestBid":0,"changePrice":-0.00163921,"changeTrade":23.8717,"volume24hr":191.8973,"high24hr":0.18528692,"low24hr":0.18149068},"ZIL-ETH":{"last":8.029e-5,"lowestAsk":0,"highestBid":0,"changePrice":0,"changeTrade":0,"volume24hr":0,"high24hr":0,"low24hr":0},"LTC-BTC":{"last":0.01057825,"lowestAsk":0,"highestBid":0,"changePrice":-0.00013925,"changeTrade":19.43748207,"volume24hr":126.98658207,"high24hr":0.01074322,"low24hr":0.01041707},"BBI-ETH":{"last":0.00018998,"lowestAsk":0,"highestBid":0,"changePrice":5.95e-6,"changeTrade":-6011.7827432,"volume24hr":522.46951108,"high24hr":0.00026995,"low24hr":0.00017},"BBI-BTC":{"last":1.8e-5,"lowestAsk":0,"highestBid":0,"changePrice":0,"changeTrade":0,"volume24hr":3024,"high24hr":1.0e-5,"low24hr":1.0e-5},"HBZ-ETH":{"last":1.79e-5,"lowestAsk":0,"highestBid":0,"changePrice":-2.0e-8,"changeTrade":2063.89644091,"volume24hr":2535.38387201,"high24hr":1.5e-5,"low24hr":1.5e-5},"HBZ-BTC":{"last":1.0e-6,"lowestAsk":0,"highestBid":0,"changePrice":0,"changeTrade":0,"volume24hr":0,"high24hr":0,"low24hr":0},"EXY-ETH":{"last":0,"lowestAsk":0,"highestBid":0,"changePrice":0,"changeTrade":0,"volume24hr":0,"high24hr":0,"low24hr":0},"Fundz-ETH":{"last":1.15e-5,"lowestAsk":0,"highestBid":0,"changePrice":0,"changeTrade":0,"volume24hr":100,"high24hr":1.15e-5,"low24hr":1.15e-5},"Fundz-BTC":{"last":0,"lowestAsk":0,"highestBid":0,"changePrice":0,"changeTrade":0,"volume24hr":0,"high24hr":0,"low24hr":0},"CEDEX-ETH":{"last":0.0002389,"lowestAsk":0,"highestBid":0,"changePrice":-8.667e-5,"changeTrade":-253.28626976,"volume24hr":232.86773,"high24hr":0.0002389,"low24hr":0.0002389},"AMN-BTC":{"last":0,"lowestAsk":0,"highestBid":0,"changePrice":0,"changeTrade":0,"volume24hr":0,"high24hr":0,"low24hr":0},"AMN-ETH":{"last":0,"lowestAsk":0,"highestBid":0,"changePrice":0,"changeTrade":0,"volume24hr":0,"high24hr":0,"low24hr":0},"DRG-ETH":{"last":0,"lowestAsk":0,"highestBid":0,"changePrice":0,"changeTrade":0,"volume24hr":0,"high24hr":0,"low24hr":0},"DRG-USD":{"last":0,"lowestAsk":1.0e-8,"highestBid":0,"changePrice":0,"changeTrade":0,"volume24hr":0,"high24hr":0,"low24hr":0},"BDT-ETH":{"last":0.00041,"lowestAsk":0,"highestBid":0,"changePrice":-0.000231,"changeTrade":-1500,"volume24hr":100,"high24hr":0.001169,"low24hr":0.001169},"DASH-USD":{"last":245.48,"lowestAsk":2.45e-6,"highestBid":2.45e-6,"changePrice":0,"changeTrade":0,"volume24hr":0,"high24hr":0,"low24hr":0},"DRG-BTC":{"last":0,"lowestAsk":0,"highestBid":0,"changePrice":0,"changeTrade":0,"volume24hr":0,"high24hr":0,"low24hr":0}}}'
+    http_version: 
+  recorded_at: Thu, 26 Jul 2018 18:07:03 GMT
+recorded_with: VCR 4.0.0
