@@ -22,7 +22,7 @@ module Cryptoexchange::Exchanges
             tr.type      = trade['type']
             tr.price     = trade['price']
             tr.amount    = trade['volume']
-            tr.timestamp = trade['created']
+            tr.timestamp = trade['created'].to_i
             tr.payload   = trade
             tr
           end
