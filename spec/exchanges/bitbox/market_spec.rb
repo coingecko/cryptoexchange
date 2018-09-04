@@ -2,5 +2,5 @@ require 'spec_helper'
 
 RSpec.describe Cryptoexchange::Exchanges::Bitbox::Market do
   it { expect(described_class::NAME).to eq 'bitbox' }
-  it { expect(described_class::API_URL).to eq 'https://api.bitbox.me/trade/public' }
+  it { expect(described_class::API_URL).to eq 'https://openapi.bitbox.me/v1/market/public/' }
 end

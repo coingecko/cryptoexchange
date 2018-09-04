@@ -3,6 +3,11 @@ require 'spec_helper'
 RSpec.describe 'Bitbox integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:xrp_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'xrp', target: 'btc', market: 'bitbox') }
+  let(:filename) { Cryptoexchange::Credentials.send(:filename) }
+
+  before do
+    allow(Cryptoexchange::Credentials).to receive(:get).with('bitbox').and_return({ 'api_key' => 'blah', 'api_secret' => 'blah' })
+  end
 
   it 'fetch pairs' do
     pairs = client.pairs('bitbox')
@@ -21,39 +26,10 @@ RSpec.describe 'Bitbox integration specs' do
     expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'bitbox'
     expect(ticker.last).to be_a Numeric
-    expect(ticker.high).to be_a Numeric
-    expect(ticker.low).to be_a Numeric
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.ask).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
-  end
-
-  it 'fetch order book' do
-    order_book = client.order_book(xrp_btc_pair)
-
-    expect(order_book.base).to eq 'XRP'
-    expect(order_book.target).to eq 'BTC'
-    expect(order_book.market).to eq 'bitbox'
-    expect(order_book.asks).to_not be_empty
-    expect(order_book.bids).to_not be_empty
-    expect(order_book.asks.first.price).to_not be_nil
-    expect(order_book.bids.first.amount).to_not be_nil
-    expect(order_book.timestamp).to be_a Numeric
-    expect(order_book.payload).to_not be nil
-  end
-
-  it 'fetch trade' do
-    trades = client.trades(xrp_btc_pair)
-    trade = trades.sample
-
-    expect(trades).to_not be_empty
-    expect(trade.base).to eq 'XRP'
-    expect(trade.target).to eq 'BTC'
-    expect(trade.market).to eq 'bitbox'
-    expect(['buy', 'sell']).to include trade.type
-    expect(trade.price).to_not be_nil
-    expect(trade.amount).to_not be_nil
-    expect(trade.timestamp).to be_a Numeric
-    expect(trade.payload).to_not be nil
   end
 end

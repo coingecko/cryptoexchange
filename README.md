@@ -46,7 +46,7 @@ Or install it yourself as:
 | Bitbank           | Y       | Y          | Y       |         | User-Defined| Y        | bitbank           |
 | Bitbay            | Y       |            |         |         | User-Defined|          | bitbay            |
 | BitBNS            | Y       |            |         |         | Y           |          | bitbns            |
-| Bitbox            | Y       | Y          | Y       |         | Y           |          | bitbox            |
+| Bitbox (Auth)     | Y       |            |         |         | User-Defined|          | bitbox            |
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|          | bitcoin_indonesia |
 | Bitconnect        | Y       |            |         |         | Y           |          | bitconnect        |
 | Bitebtc           | Y       | Y          | Y       |         | Y           | Y        | bitebtc           |
@@ -114,7 +114,7 @@ Or install it yourself as:
 | Coinstock         | Y       | Y          | Y       |         | Y           |          | coinstock         |
 | Coinsuper         | Y       |            |         |         | Y           | Y        | coinsuper         |
 | Cointiger         | Y       | Y          | Y       |         | Y           |          | cointiger         |
-| Coinut            | Y       | Y          | Y       | Y       | Y           |          | coinut            |
+| Coinut (Auth)     | Y       | Y          | Y       | Y       | Y           |          | coinut            |
 | COSS              | Y       |            |         |         | Y           | Y        | coss              |
 | Cpdax             | Y       | Y          | Y       |         | Y           |          | cpdax             |
 | CredoEx           | Y       |            |         |         | Y           |          | credoex           |
