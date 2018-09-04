@@ -1,19 +1,18 @@
 module Cryptoexchange::Exchanges
   module Ice3x
     module Services
-      require 'byebug'
       class Pairs < Cryptoexchange::Services::Pairs
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Ice3x::Market::API_URL}/stats/marketdepthbtcav"
 
         def fetch
-          byebug
           output = super
           market_pairs = []
-          output['response']['entities'][0].each do |pair|
-            pair = pair.split('\/')
+          output['response']['entities'].each do |pair|
+            base, target = pair['pair_name'].split('/')
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: base,
-                              target: target,
+                              base: base.upcase,
+                              target: target.upcase,
+                              inst_id: pair['pair_id'],
                               market: Ice3x::Market::NAME
                             )
           end
