@@ -18,9 +18,8 @@ module Cryptoexchange::Exchanges
           timestamp = (Time.now.to_i * 1000).to_s
           payload_ = payload(timestamp, market_pair)
           headers = authentication.headers(payload_, timestamp)
-          api_url = "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}" + endpoint + params(market_pair)
-
-          output = HTTP.headers(headers).get(api_url)
+          api_url = "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}" + endpoint + "?" + params(market_pair)
+          output = HTTP.timeout(:write => 2, :connect => 15, :read => 18).headers(headers).get(api_url).parse :json
           adapt(output, market_pair)
         end
 
@@ -37,10 +36,11 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}/currentTickValue?coinPair=#{market_pair.target}.#{market_pair.base}"
+          "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}/currentTickValue?coinPair=#{market_pair.base}.#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
+          output = output["responseData"]
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
