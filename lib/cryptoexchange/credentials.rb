@@ -19,7 +19,7 @@ module Cryptoexchange
       end
 
       def credentials
-        YAML.load_file(filename)
+        YAML.load(ERB.new(File.read(filename)).result)
       end
     end
   end
