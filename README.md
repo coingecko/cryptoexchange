@@ -121,6 +121,7 @@ Or install it yourself as:
 | Crex24            | Y       | Y          | Y       |         | Y           | Y        | crex24            |
 | CRXZone           | Y       | Y          | Y       |         | Y           | Y        | crxzone           |
 | Cryptagio         | Y       | Y          | Y       |         | Y           | Y        | cryptagio         |
+| Cryptaldash       | Y       | Y          | Y       |         | Y           |          | cryptaldash       |
 | Cryptex           | Y       | Y          | Y       |         | User-Defined| Y        | cryptex           |
 | CryptoBridge      | Y       |            |         |         | Y           | Y        | crypto_bridge     |
 | CryptoHub         | Y       | N          | N       |         | Y           |          | crypto_hub        |
