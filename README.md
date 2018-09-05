@@ -46,7 +46,7 @@ Or install it yourself as:
 | Bitbank           | Y       | Y          | Y       |         | User-Defined| Y        | bitbank           |
 | Bitbay            | Y       |            |         |         | User-Defined|          | bitbay            |
 | BitBNS            | Y       |            |         |         | Y           |          | bitbns            |
-| Bitbox (Auth)     | Y       |            |         |         | User-Defined|          | bitbox            |
+| Bitbox (Auth)     | Y       |            |         |         | User-Defined| Y        | bitbox            |
 | Bitcoin Indonesia | Y       |            |         |         | User-Defined|          | bitcoin_indonesia |
 | Bitconnect        | Y       |            |         |         | Y           |          | bitconnect        |
 | Bitebtc           | Y       | Y          | Y       |         | Y           | Y        | bitebtc           |

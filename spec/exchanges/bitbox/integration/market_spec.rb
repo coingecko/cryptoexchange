@@ -9,6 +9,11 @@ RSpec.describe 'Bitbox integration specs' do
     allow(Cryptoexchange::Credentials).to receive(:get).with('bitbox').and_return({ 'api_key' => 'blah', 'api_secret' => 'blah' })
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'bitbox', base: xrp_btc_pair.base, target: xrp_btc_pair.target
+    expect(trade_page_url).to eq "https://www.bitbox.me/exchange?coin=XRP&market=BTC"
+  end
+
   it 'fetch pairs' do
     pairs = client.pairs('bitbox')
     expect(pairs).not_to be_empty
