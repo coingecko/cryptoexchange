@@ -1,0 +1,95 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitkub.com/api/market/asks?lmt=20&sym=THB_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitkub.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 05 Sep 2018 01:40:38 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - XSRF-TOKEN=eyJpdiI6IjVnbzhOa0NVb2lcL2hCSVBjRXFoVEJ3PT0iLCJ2YWx1ZSI6IkFyR0VIVHRINVdJcHYrb2cwMFwvXC9sd21rTDFSOWRjNkxGNzRPQWRKTUI1ZFdnckNNR3NKaW0rXC9uYStxZUM2c2lYaTc2N1NHakhGNHlkSXl1cmZQc05RPT0iLCJtYWMiOiI3ZWZjMTQxNTNhZmMzMGYwZjg3MTA0MTg2Mzg1YzY2NDIxYmY1Y2Q5YjE0ZmE3MDA1YmJkOWQyZjhmNTRmZjgxIn0%3D;
+        expires=Wed, 05-Sep-2018 03:40:38 GMT; Max-Age=7200; path=/
+      - __cfduid=d56f63da35a6ff46ad613d6c1cf36cbd91536111638; expires=Thu, 05-Sep-19
+        01:40:38 GMT; path=/; domain=.bitkub.com; HttpOnly
+      - laravel_session=eyJpdiI6ImVKXC9RSU1YSk8wcjh1SVFQYmRNZnNBPT0iLCJ2YWx1ZSI6IjhKWUdsZEhlQ0Z2SmdBNExlYWU4S2t2cnRraTk5ZjVFblhaODdcL3NBK0VUcDRUa21tTEEzSnNCYXYxZmhhUDl5VnJrRDJ0NW9vYVdWZWFGQXFBTUk0QT09IiwibWFjIjoiNzFlY2EzNzVkYjYwMDA0MGY4MDA4YzVkYmNhYjliMzYyMzEyNGRmMDdkZDNjMGNmZmI1MDQ3ZDE4ODBjNmEyZiJ9;
+        expires=Wed, 05-Sep-2018 03:40:38 GMT; Max-Age=7200; path=/; httponly
+      Cache-Control:
+      - no-cache, private
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4554fd2a8d1ea356-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":0,"result":[[553410,1536080551,"7485.55","239120.00","0.03130458"],[552740,1536075809,"2395.44","239544.00","0.01000000"],[552827,1536076391,"1379.00","239544.00","0.00575676"],[555698,1536111288,"60463.55","239870.00","0.25206800"],[555693,1536111284,"75858.82","239910.00","0.31619700"],[555679,1536111105,"65916.20","239916.00","0.27474700"],[555690,1536111279,"51353.92","239920.00","0.21404600"],[555704,1536111468,"117487.50","239932.00","0.48967000"],[555695,1536111284,"91911.28","239934.00","0.38306900"],[555677,1536111059,"51967.87","239992.00","0.21654000"],[45377,1533894638,"1199.98","239995.00","0.00500000"],[553570,1536085511,"2322.22","240000.00","0.00967591"],[554118,1536089058,"60.22","240000.00","0.00025092"],[555687,1536111221,"113439.05","240009.00","0.47264500"],[555689,1536111279,"70861.12","240016.00","0.29523500"],[555701,1536111382,"76939.70","240033.00","0.32053800"],[555688,1536111279,"87567.31","240040.00","0.36480300"],[555714,1536111623,"50095.44","240046.00","0.20869100"],[555692,1536111279,"97051.01","240088.00","0.40423100"],[555696,1536111284,"87490.88","240101.00","0.36439200"]]}'
+    http_version: 
+  recorded_at: Wed, 05 Sep 2018 01:40:38 GMT
+- request:
+    method: get
+    uri: https://api.bitkub.com/api/market/bids?lmt=20&sym=THB_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitkub.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 05 Sep 2018 01:40:38 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - XSRF-TOKEN=eyJpdiI6ImFOQklQamdUYll5UDl1NzBnN1JqV0E9PSIsInZhbHVlIjoiU0h6NlFSWlY2NDU0VWx5UlBjaVF4UUgwS3hpT0lmYkd6S0dOb0x2ZkdcLzVRSVFZZ251UkpxcVlZXC9hRXo1bFlJZm5HUGNuaFpCM2NXazhXMHVsd2xkUT09IiwibWFjIjoiODllMjUwNjJlNmMzZDc4MGI2YzNlZTgwZWU2NzcwNmJmNTEzYmI3ODgyMmMzYmY5Zjg4Y2I3Njg2Mjk4Mjk4OSJ9;
+        expires=Wed, 05-Sep-2018 03:40:38 GMT; Max-Age=7200; path=/
+      - __cfduid=d56f63da35a6ff46ad613d6c1cf36cbd91536111638; expires=Thu, 05-Sep-19
+        01:40:38 GMT; path=/; domain=.bitkub.com; HttpOnly
+      - laravel_session=eyJpdiI6IkxsN0diM3p3a1BpN2QxMmRjK05RbGc9PSIsInZhbHVlIjoiR0xITWwxVzczRGRoY1wvU2xjQXhpQTNTajdRcHdhUERNNTllaENvUEt0NnBwc3JXWVFMWHZuVTlZSXRtVTlnYVh1cHRmXC9nVkcyMG03ZnVXakZDYWJ1UT09IiwibWFjIjoiOTA5MTk1ZmUxNzA4MGExZmIzNzNhZWFlMjFmNjc4YTQ3MmJhMTBlMWMxNDM3NjIwZDBlMThlYzk5NTQ2NjZiZiJ9;
+        expires=Wed, 05-Sep-2018 03:40:38 GMT; Max-Age=7200; path=/; httponly
+      Cache-Control:
+      - no-cache, private
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4554fd2d1f5ea356-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":0,"result":[[489417,1536109778,"2586.03","237650.00","0.01088167"],[482012,1536066125,"1600.73","237257.00","0.00674681"],[489645,1536111329,"79387.93","237044.00","0.33490799"],[489648,1536111346,"107531.23","236985.00","0.45374698"],[489641,1536111221,"117513.32","236933.00","0.49597700"],[489652,1536111420,"80469.38","236929.00","0.33963499"],[489650,1536111356,"54441.34","236924.00","0.22978398"],[489634,1536111161,"57780.05","236920.00","0.24388000"],[489647,1536111340,"52190.56","236910.00","0.22029699"],[489642,1536111228,"103036.25","236890.00","0.43495398"],[489651,1536111414,"104068.18","236882.00","0.43932498"],[489639,1536111211,"69737.90","236875.00","0.29440802"],[489643,1536111232,"86751.16","236871.00","0.36623799"],[489636,1536111165,"87179.93","236855.00","0.36807299"],[489637,1536111166,"95924.38","236855.00","0.40499199"],[489646,1536111334,"90408.83","236854.00","0.38170700"],[489649,1536111351,"56989.64","236843.00","0.24062201"],[489644,1536111237,"79902.04","236831.00","0.33737998"],[489635,1536111162,"54340.38","236802.00","0.22947601"],[489633,1536111161,"90710.84","236778.00","0.38310501"]]}'
+    http_version: 
+  recorded_at: Wed, 05 Sep 2018 01:40:38 GMT
+recorded_with: VCR 4.0.0

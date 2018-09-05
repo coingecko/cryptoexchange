@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitkub.com/api/market/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitkub.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 05 Sep 2018 01:40:37 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - XSRF-TOKEN=eyJpdiI6IjVWbnk2ZVVxSXBSQU9hU2pKT3FxVkE9PSIsInZhbHVlIjoiVVVDOVVyVWVBODc5NXBMOEdsZG5td0ZhYlN6WWpHXC9LVTJBVm91YXVlaHQ3cnlvK01qZHRyRXJ5dm9rM0xKTUhOdEVoV0VHTU5pNnk1V1lIemJmdk53PT0iLCJtYWMiOiJiNjgzN2ExYmRkYTI5NWJjMTMzMzE5NjIyZDY0M2FiZmU2YzE5MjBiNjBlMTEwZmE0MzlmZjc0MDJlNmQxZGNhIn0%3D;
+        expires=Wed, 05-Sep-2018 03:40:37 GMT; Max-Age=7200; path=/
+      - __cfduid=d2d124bbfbd2f63eb97d18cab38ce3c801536111637; expires=Thu, 05-Sep-19
+        01:40:37 GMT; path=/; domain=.bitkub.com; HttpOnly
+      - laravel_session=eyJpdiI6ImJpakYydUxySUZKNTIyejdFQUVrenc9PSIsInZhbHVlIjoiVmIxMjhPMm1KRmNxU1NZTWd4UzJDWXc3Mmp5WkRKVUJcL0hDd25LU2tvNXlVVDdmRFNMNExTYzI4VFByRFIyM29JZys2Nmx1YUJJMmx6N29yTzF6WGdBPT0iLCJtYWMiOiIzMTczYzJmNjEwZDkxYjJmNTFlMDMzNDA4MzA5NmEwN2FiYTdiMTlkZGU4YzcyYzEzZWE4NjRmZmM5MTNlZWFmIn0%3D;
+        expires=Wed, 05-Sep-2018 03:40:37 GMT; Max-Age=7200; path=/; httponly
+      Cache-Control:
+      - no-cache, private
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4554fd280ca0a32c-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":0,"result":[{"id":1,"symbol":"THB_BTC","info":"Thai Baht to
+        Bitcoin"},{"id":2,"symbol":"THB_ETH","info":"Thai Baht to Ethereum"},{"id":3,"symbol":"THB_WAN","info":"Thai
+        Baht to Wancoin"},{"id":4,"symbol":"THB_ADA","info":"Thai Baht to Cardano"},{"id":5,"symbol":"THB_OMG","info":"Thai
+        Baht to OmiseGo"},{"id":6,"symbol":"THB_BCH","info":"Thai Baht to Bitcoin
+        Cash"}]}'
+    http_version: 
+  recorded_at: Wed, 05 Sep 2018 01:40:37 GMT
+recorded_with: VCR 4.0.0

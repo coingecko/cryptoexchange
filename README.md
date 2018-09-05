@@ -58,6 +58,7 @@ Or install it yourself as:
 | Bitibu            | Y       | Y          | Y       |         | Y           | Y        | bitibu            |
 | Bitinka           | Y       | Y          |         |         | Y           |          | bitinka           |
 | Bitkonan          | Y       |            |         |         | User-Defined|          | bitkonan          |
+| Bitkub            | Y       | Y          | Y       |         | Y           | Y        | bitkub            |
 | Bitlish           | Y       | Y          | Y       |         | Y           |          | bitlish           |
 | Bitmart           | Y       | Y          | Y       |         | Y           |          | bitmart           |
 | Bitmex            | Y       | Y          | Y       |         | Y           |          | bitmex            |

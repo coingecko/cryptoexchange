@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitkub.com/api/market/trades?lmt=20&sym=THB_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitkub.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 05 Sep 2018 01:40:39 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - XSRF-TOKEN=eyJpdiI6Imc1RU9hN2FcL01nTEFUYjA1UEw2QVFRPT0iLCJ2YWx1ZSI6InhaOThwaVlPcTZtZ0F0Y1RlaTdNSWZaQjZzVjk5RWZ5aVpJRlRqUU13TlRHdnJVOHIyUTIrT0YrdFN2RlRVdEoxRjBKY0dcL2pXK3R6OHVBR1pMbGRWdz09IiwibWFjIjoiNzZhNmQwYjE3N2ZlY2I0NTcwNzgyZjQzYzBlZjZiOTU0ZmM2ODQ5YzdkYTc1NmJhNTVjZjY5ZWZkYWZmNTE5YyJ9;
+        expires=Wed, 05-Sep-2018 03:40:39 GMT; Max-Age=7200; path=/
+      - __cfduid=d75e15103e025857d971445a1efd5340a1536111639; expires=Thu, 05-Sep-19
+        01:40:39 GMT; path=/; domain=.bitkub.com; HttpOnly
+      - laravel_session=eyJpdiI6IkZOdDRhRExNa0Z6dFwvSGk0aG9admdRPT0iLCJ2YWx1ZSI6ImNndG5ORXczZDlta2pYVE9RTFh1eEJPa1FjSGJ1RWFDMWhLY045SU8wZHV5V05nN09oanMwY05aTm52SGx0NEJvcnQxWXBjZWQrVmc1VFJGaDB6VG53PT0iLCJtYWMiOiI1MzFiYjFmZDZhMDY3NGQ4NTRhNmExYzBhMWY5N2FhODY0YzRmMDBhMzE2NjUzNTBhYWYzNTA5NzFkYzJlN2RiIn0%3D;
+        expires=Wed, 05-Sep-2018 03:40:39 GMT; Max-Age=7200; path=/; httponly
+      Cache-Control:
+      - no-cache, private
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4554fd2fc800a35c-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":0,"result":[[1536110648,"237726.00","0.27658800","SELL"],[1536110223,"237832.00","0.11048300","SELL"],[1536109440,"237634.00","0.21047100","SELL"],[1536109136,"237774.00","0.16039200","SELL"],[1536108737,"237382.00","0.14478465","SELL"],[1536108735,"237500.00","0.02105263","SELL"],[1536108733,"237520.00","0.00385853","SELL"],[1536102991,"238899.00","0.11149402","BUY"],[1536099422,"239074.00","0.03130603","BUY"],[1536089638,"239097.00","0.03130302","BUY"],[1536085901,"238908.00","0.29488600","SELL"],[1536085165,"238385.00","0.03777398","SELL"],[1536084299,"239000.00","0.00022602","SELL"],[1536083983,"239120.00","0.00025092","BUY"],[1536083865,"239000.00","0.01170774","BUY"],[1536083673,"238053.00","0.11678000","SELL"],[1536083372,"238076.00","0.36076500","SELL"],[1536083070,"238016.00","0.02594000","SELL"],[1536082646,"238055.00","0.00004703","SELL"],[1536082646,"238079.00","0.32545297","SELL"]]}'
+    http_version: 
+  recorded_at: Wed, 05 Sep 2018 01:40:39 GMT
+recorded_with: VCR 4.0.0

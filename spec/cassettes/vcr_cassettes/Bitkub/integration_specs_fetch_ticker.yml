@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitkub.com/api/market/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitkub.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 05 Sep 2018 01:40:38 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - XSRF-TOKEN=eyJpdiI6InJoSzZBelpQV1hCTWlwdmdhTDg1cEE9PSIsInZhbHVlIjoiMXRNODVZTVRERzFcL2tkTFZ6Rk9NOE8wUk1lZ09RVWZ4eDJMSU9RYkp4TUhFQ1VoNFNjTDJidjNCRGFHdkV6K1wvelpZVjFnR0IzVzUzV1loaHBUc0tGUT09IiwibWFjIjoiYmU2ZGZmMGU5MzA2MjY5MjYzOWI0ZDMyNDEwNWZkOGRmZjc3OWRiMDA0NjkzYTRlOTIwZTg3NjU4MTJkZjZiOCJ9;
+        expires=Wed, 05-Sep-2018 03:40:38 GMT; Max-Age=7200; path=/
+      - __cfduid=d98c2ad5534699d92ae70556c5ad370e01536111637; expires=Thu, 05-Sep-19
+        01:40:37 GMT; path=/; domain=.bitkub.com; HttpOnly
+      - laravel_session=eyJpdiI6ImNUM0hpeFcxVzFHckVYVjR1MjFJanc9PSIsInZhbHVlIjoidk90T3lMd0Ezb0txbGhBS1JvaTZ3YlAwQ2R1bm9oNG9wVHdOMTBVMFZzV3pQaXFWcUZjWVdJT1g5NzJpYlQ4SHlvdU83b3lNZzFaWkg5ZDVRZXlnWGc9PSIsIm1hYyI6ImUyNzZlNGU5ZGEwOTgyYjJjZTdkNzUwOTUzN2M4MWFhNmQ2N2U4MThiZDUxNjM2MjliYzVmZjcwODE3ZTNkMjUifQ%3D%3D;
+        expires=Wed, 05-Sep-2018 03:40:38 GMT; Max-Age=7200; path=/; httponly
+      Cache-Control:
+      - no-cache, private
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4554fd29480ea350-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"THB_BTC":{"id":1,"last":"237726.00000000","lowestAsk":"239120.00000000","highestBid":"237650.00000000","percentChange":"1.26","baseVolume":"20.49275041","quoteVolume":"4868544.15000000","isFrozen":"0","high24hr":"239983.00000000","low24hr":"233700.00000000"},"THB_ETH":{"id":2,"last":"9310.00000000","lowestAsk":"9324.00000000","highestBid":"9239.00000000","percentChange":"-0.44","baseVolume":"302.74812134","quoteVolume":"2817983.37000000","isFrozen":"0","high24hr":"9507.00000000","low24hr":"9186.00000000"},"THB_WAN":{"id":3,"last":"41.00000000","lowestAsk":"44.30000000","highestBid":"42.42000000","percentChange":"-8.89","baseVolume":"1159.51380255","quoteVolume":"51305.24000000","isFrozen":"0","high24hr":"45.00000000","low24hr":"41.00000000"},"THB_ADA":{"id":4,"last":"3.45000000","lowestAsk":"3.45000000","highestBid":"3.40000000","percentChange":"1.17","baseVolume":"58134.34315894","quoteVolume":"198473.75000000","isFrozen":"0","high24hr":"3.46000000","low24hr":"3.36000000"},"THB_OMG":{"id":5,"last":"161.03000000","lowestAsk":"161.60000000","highestBid":"158.92000000","percentChange":"11.33","baseVolume":"2230.34782805","quoteVolume":"342484.43000000","isFrozen":"0","high24hr":"164.14000000","low24hr":"143.92000000"},"THB_BCH":{"id":6,"last":"20524.00000000","lowestAsk":"20524.00000000","highestBid":"20335.00000000","percentChange":"0.15","baseVolume":"5.51257957","quoteVolume":"113554.96000000","isFrozen":"0","high24hr":"21018.00000000","low24hr":"20232.00000000"}}'
+    http_version: 
+  recorded_at: Wed, 05 Sep 2018 01:40:38 GMT
+recorded_with: VCR 4.0.0
