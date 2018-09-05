@@ -25,6 +25,8 @@ RSpec.describe 'Bitbox integration specs' do
   end
 
   it 'fetch ticker' do
+    pending "Skip this test due to restriction"
+    fail
     ticker = client.ticker(xrp_btc_pair)
 
     expect(ticker.base).to eq 'XRP'
