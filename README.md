@@ -148,6 +148,7 @@ Or install it yourself as:
 | Fisco             | Y       | Y          | Y       |         | Y           | Y        | fisco             |
 | Forkdelta         | Y       | N          | N       |         | Y           | Y        | forkdelta         |
 | Freiexchange      | Y       | Y          |         |         | User-Defined| Y        | freiexchange      |
+| Fyrus             | Y       |            |         |         | Y           |          | fyrus             |
 | Gate              | Y       | Y          | Y       |         | Y           | Y        | gate              |
 | Gatecoin          | Y       |            |         |         | Y           |          | gatecoin          |
 | GDAX              | Y       |            |         |         | Y           |          | gdax              |

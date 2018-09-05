@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fyrus.pro/api/v1/market/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - fyrus.pro
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 05 Sep 2018 21:27:19 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '328'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0208d9ffcb1908aeb2257e5a4896cb6a1536182839; expires=Thu, 05-Sep-19
+        21:27:19 GMT; path=/; domain=.fyrus.pro; HttpOnly
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 455bc77cdac8bbea-LHR
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"data":{"bch_usdt":{"symbol":"bch_usdt","price":"545.53","baseVolume":"4671712.9"},"btc_usdt":{"symbol":"btc_usdt","price":"6961.82","baseVolume":"79656331.16"},"eth_usdt":{"symbol":"eth_usdt","price":"245.33","baseVolume":"17214096.97"},"ltc_usdt":{"symbol":"ltc_usdt","price":"60.33","baseVolume":"1365247.46"}}}'
+    http_version: 
+  recorded_at: Wed, 05 Sep 2018 21:27:19 GMT
+recorded_with: VCR 4.0.0
