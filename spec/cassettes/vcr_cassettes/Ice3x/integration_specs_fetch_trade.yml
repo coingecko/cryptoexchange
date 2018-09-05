@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ice3x.com/api/v1/trade/list?pair_id=3
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ice3x.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Sep 2018 00:12:14 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d6bdf32c96963d63d145a132c296b76ab1536019933; expires=Wed, 04-Sep-19
+        00:12:13 GMT; path=/; domain=.ice3x.com; HttpOnly; Secure
+      - session=eyJpdiI6IkFtVG1sSUJNek5waTVLNldZcG5ROUE9PSIsInZhbHVlIjoibWsrRHJZQVZtcE9HcUljc0hJYW95S1VPaEVDQ0h6MlJnMk9iaFhPZUJlY2RoWkliWjlsUjBHVXBDeEtsNjdOMiIsIm1hYyI6ImYyMjAzOTBiNTJkYzM1MzBhNGNiMzI5OGM5YTZhZDMyOGJjODQ0NjUzMzAzOWRkNjk4ZWE4OTdlODBhOTJhZGUifQ%3D%3D;
+        path=/; httponly
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store, private
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - origin, content-type, accept, Sign
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '59'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 454c3e458cfb6a9d-LHR
+    body:
+      encoding: UTF-8
+      string: '{"errors":false,"response":{"entities":[{"trade_id":"1489026","pair_id":"3","type":"buy","price":106041.83,"volume":0.0836,"created":"1535952147"},{"trade_id":"1489027","pair_id":"3","type":"buy","price":106041.83,"volume":0.01001052,"created":"1535952592"},{"trade_id":"1489029","pair_id":"3","type":"buy","price":106102.01,"volume":0.05021801,"created":"1535958164"},{"trade_id":"1489030","pair_id":"3","type":"sell","price":106500.01,"volume":0.06670001,"created":"1535958447"},{"trade_id":"1489031","pair_id":"3","type":"buy","price":106102.01,"volume":0.003,"created":"1535958639"},{"trade_id":"1489032","pair_id":"3","type":"sell","price":106900,"volume":0.00469197,"created":"1535960925"},{"trade_id":"1489033","pair_id":"3","type":"sell","price":106900,"volume":0.00467726,"created":"1535961088"},{"trade_id":"1489038","pair_id":"3","type":"sell","price":106900,"volume":0.05014851,"created":"1535962686"},{"trade_id":"1489040","pair_id":"3","type":"sell","price":106900,"volume":0.003,"created":"1535962960"},{"trade_id":"1489045","pair_id":"3","type":"buy","price":106900.01,"volume":0.0996,"created":"1535967744"},{"trade_id":"1489048","pair_id":"3","type":"sell","price":107000,"volume":0.00046728,"created":"1535969008"},{"trade_id":"1489051","pair_id":"3","type":"buy","price":107000,"volume":0.000999,"created":"1535971809"},{"trade_id":"1489053","pair_id":"3","type":"sell","price":107700,"volume":9.369e-5,"created":"1535972317"},{"trade_id":"1489055","pair_id":"3","type":"buy","price":107700,"volume":0.01873101,"created":"1535973366"},{"trade_id":"1489057","pair_id":"3","type":"buy","price":107700,"volume":0.01573977,"created":"1535973893"},{"trade_id":"1489072","pair_id":"3","type":"sell","price":108000,"volume":0.20842108,"created":"1535978738"},{"trade_id":"1489074","pair_id":"3","type":"sell","price":108200,"volume":0.01168142,"created":"1535982089"},{"trade_id":"1489083","pair_id":"3","type":"sell","price":108201,"volume":0.375957,"created":"1535982740"},{"trade_id":"1489084","pair_id":"3","type":"buy","price":108200.01,"volume":0.019579,"created":"1535982841"},{"trade_id":"1489085","pair_id":"3","type":"buy","price":108200,"volume":0.000421,"created":"1535982841"},{"trade_id":"1489086","pair_id":"3","type":"sell","price":108201,"volume":0.00300001,"created":"1535982971"},{"trade_id":"1489087","pair_id":"3","type":"sell","price":108496,"volume":0.00066086,"created":"1535984326"},{"trade_id":"1489088","pair_id":"3","type":"sell","price":108685.66,"volume":0.01800951,"created":"1535984609"},{"trade_id":"1489093","pair_id":"3","type":"sell","price":108739,"volume":0.00063037,"created":"1535987028"},{"trade_id":"1489094","pair_id":"3","type":"buy","price":108300.42,"volume":0.00068667,"created":"1535987380"},{"trade_id":"1489095","pair_id":"3","type":"buy","price":108300,"volume":0.01041175,"created":"1535987753"},{"trade_id":"1489096","pair_id":"3","type":"sell","price":108999,"volume":0.00192795,"created":"1535988693"},{"trade_id":"1489097","pair_id":"3","type":"sell","price":108999,"volume":0.00040054,"created":"1535988693"},{"trade_id":"1489098","pair_id":"3","type":"sell","price":109000,"volume":0.00458715,"created":"1535991137"},{"trade_id":"1489099","pair_id":"3","type":"sell","price":109000,"volume":0.00229358,"created":"1535991693"},{"trade_id":"1489100","pair_id":"3","type":"buy","price":108999,"volume":0.01228537,"created":"1535994569"},{"trade_id":"1489101","pair_id":"3","type":"sell","price":109000,"volume":0.00040054,"created":"1535994816"},{"trade_id":"1489102","pair_id":"3","type":"buy","price":108430.24,"volume":0.00058844,"created":"1535995028"},{"trade_id":"1489103","pair_id":"3","type":"buy","price":108300,"volume":0.00805547,"created":"1535995435"},{"trade_id":"1489104","pair_id":"3","type":"buy","price":108201,"volume":0.03959229,"created":"1535995446"},{"trade_id":"1489105","pair_id":"3","type":"buy","price":108201,"volume":0.0004621,"created":"1535997801"},{"trade_id":"1489109","pair_id":"3","type":"buy","price":108201.01,"volume":0.02336272,"created":"1536004358"},{"trade_id":"1489111","pair_id":"3","type":"sell","price":109000,"volume":0.5,"created":"1536014322"}]},"pagination":{"items_per_page":100,"total_items":38,"current_page":1,"total_pages":1}}'
+    http_version: 
+  recorded_at: Tue, 04 Sep 2018 00:12:14 GMT
+recorded_with: VCR 4.0.0
