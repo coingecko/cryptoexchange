@@ -9,34 +9,46 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output['responseData'], market_pair)
+          authentication = Cryptoexchange::Exchanges::Bitbox::Authentication.new(
+            :market,
+            Cryptoexchange::Exchanges::Bitbox::Market::NAME
+          )
+          authentication.validate_credentials!
+
+          timestamp = (Time.now.to_i * 1000).to_s
+          payload_ = payload(timestamp, market_pair)
+          headers = authentication.headers(payload_, timestamp)
+          api_url = "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}" + endpoint + "?" + params(market_pair)
+          output = HTTP.timeout(:write => 2, :connect => 15, :read => 18).headers(headers).get(api_url).parse :json
+          adapt(output, market_pair)
         end
 
-        def volume_ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}/v1/outpost/ohlc?currencyPairs=#{market_pair.target}.#{market_pair.base}&timeFrame=1800&limit=100"
+        def endpoint
+          "/v1/market/public/currentTickValue"
+        end
+
+        def params(market_pair)
+          "coinPair=#{market_pair.base}.#{market_pair.target}"
+        end
+
+        def payload(timestamp, market_pair)
+          "12345" + timestamp + "GET" + endpoint + params(market_pair)
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}/v1/outpost/ohlc?currencyPairs=#{market_pair.target}.#{market_pair.base}&timeFrame=60&limit=1"
+          "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}/currentTickValue?coinPair=#{market_pair.base}.#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
-          volume_resp = HTTP.timeout(:write => 2, :connect => 15, :read => 18).follow.get(volume_ticker_url(market_pair))
-          volume_output = JSON.parse volume_resp.body
-          total_volume = volume_output['responseData'].values[0].select do |s| 
-            s["closeTime"]/1000 > (Time.now.to_i - (60 * 60 * 24))
-          end.inject(0) { |sum, s| sum + (s["volume"] * s["close"]) }
-
-          output = output.values[0][0]
+          output = output["responseData"]
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Bitbox::Market::NAME
-          ticker.last = NumericHelper.to_d(output['close'])
-          ticker.high = NumericHelper.to_d(output['high'])
-          ticker.low = NumericHelper.to_d(output['low'])
-          ticker.volume = total_volume
+          ticker.last = NumericHelper.to_d(output['last'])
+          ticker.bid = NumericHelper.to_d(output['bid'])
+          ticker.ask = NumericHelper.to_d(output['ask'])
+          ticker.volume = NumericHelper.divide(output['volume'], ticker.last)
           ticker.timestamp = nil
           ticker.payload = output
           ticker
