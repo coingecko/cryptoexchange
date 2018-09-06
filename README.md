@@ -40,6 +40,7 @@ Or install it yourself as:
 | BigONE            | Y       | Y          | Y       |         | Y           | Y        | bigone            |
 | Bilaxy            | Y       | Y          | Y       |         | Y           |          | bilaxy            |
 | Binance           | Y       | Y          |         |         | Y           | Y        | binance           |
+| Bishang           | Y       |            |         |         | Y           |          | bishang           |
 | Bisq              | Y       |            | Y       |         | Y           |          | bisq              |
 | Bit2C             | Y       | Y          | Y       |         | User-Defined| Y        | bit2c             |
 | Bit-Z             | Y       |            |         |         | Y           |          | bit_z             |

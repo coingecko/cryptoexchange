@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bishang.pro:91/api/v1/allticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bishang.pro:91
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '1026'
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - IIS
+      X-Aspnet-Version:
+      - '0'
+      X-Powered-By:
+      - WAF/2.0
+      Date:
+      - Tue, 04 Sep 2018 00:29:04 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"date":"1536020941","ticker":[{"symbol":"eth_btc","buy":0.0397850000,"high":0.0400010000,"last":0.0397850000,"low":0.0396580000,"sell":0.0398000000,"change":"0.0013","vol":"443.7754405900"},{"symbol":"btc_usdt","buy":7276.2900000000,"high":7334.5000000000,"last":7276.2900000000,"low":7270.5500000000,"sell":7277.5900000000,"change":"-0.0020","vol":"499.3711482000"},{"symbol":"eth_usdt","buy":290.3600000000,"high":293.1100000000,"last":290.3600000000,"low":288.6700000000,"sell":296.7700000000,"change":"0.0012","vol":"407.9965969700"},{"symbol":"emc_usdt","buy":0.0039563800,"high":0.0042460200,"last":0.0039593900,"low":0.0038616700,"sell":0.0041626200,"change":"-0.0409","vol":"1558110.5159619400"},{"symbol":"bec_eth","buy":0.0057250000,"high":0.0059226000,"last":0.0057280300,"low":0.0056641500,"sell":0.0058326000,"change":"0.0024","vol":"1210.1534274700"},{"symbol":"bub_eth","buy":0.0000000000,"high":0.0000000000,"last":0.0000000000,"low":0.0000000000,"sell":0.0000000000,"change":"-1.0000","vol":"0.0000000000"}]}'
+    http_version: 
+  recorded_at: Tue, 04 Sep 2018 00:29:05 GMT
+recorded_with: VCR 4.0.0
