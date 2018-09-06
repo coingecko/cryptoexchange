@@ -8,7 +8,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::NanuExchange::Market::API_URL}=returnTradeHistory&currencyPair=#{market_pair.base}_#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::NanuExchange::Market::API_URL}=returnTradeHistory&currencyPair=#{market_pair.target}_#{market_pair.base}"
         end
 
         def adapt(output, market_pair)

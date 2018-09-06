@@ -25,11 +25,11 @@ module Cryptoexchange::Exchanges
                             target: target.upcase,
                             market: Bishang::Market::NAME
                           )
-            adapt(market_pair, pair, output['date'])
+            adapt(market_pair, pair)
           end
         end
 
-        def adapt(market_pair, pair, date)
+        def adapt(market_pair, pair)
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
@@ -41,8 +41,8 @@ module Cryptoexchange::Exchanges
           ticker.low = NumericHelper.to_d(pair['low'])
           ticker.change = NumericHelper.to_d(pair['change'])
           ticker.volume = NumericHelper.to_d(pair['vol'])
-          ticker.timestamp = date.to_i
-          ticker.payload = [pair, date]
+          ticker.timestamp = nil
+          ticker.payload = pair
           ticker
         end
       end
