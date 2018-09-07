@@ -14,6 +14,11 @@ RSpec.describe 'Coinchangex integration specs' do
     expect(pair.market).to eq 'coinchangex'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'coinchangex', base: stu_eth_pair.base, target: stu_eth_pair.target
+    expect(trade_page_url).to eq "https://www.coinchangex.com/#!/trade/STU-ETH"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(stu_eth_pair)
 

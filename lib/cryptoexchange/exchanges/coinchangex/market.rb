@@ -5,6 +5,10 @@ module Cryptoexchange::Exchanges
       API_URL   = 'https://api.coinchangex.com'
       TOKEN_URL = 'https://www.coinchangex.com/config/main.json'
 
+      def self.trade_page_url(args={})
+        "https://www.coinchangex.com/#!/trade/#{args[:base]}-#{args[:target]}"
+      end
+
       class << self
         def fetch_symbol
           begin
