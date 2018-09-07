@@ -264,6 +264,7 @@ Or install it yourself as:
 | Yunbi             | Y       |            |         |         | Y           |          | yunbi             |
 | Zaif              | Y       | Y          | Y       |         | Y           | Y        | zaif              |
 | ZB                | Y       | Y          | Y       |         | Y           | Y        | zb                |
+| ZBG               | Y       | Y          | Y       |         | Y           |          | zbg               |
 | Zebpay            | Y       |            |         |         | Y           |          | Zebpay            |
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
