@@ -108,6 +108,7 @@ Or install it yourself as:
 | Coinnest          | Y       | Y          | Y       |         | User-Defined| Y        | coinnest          |
 | Coinnox           | Y       | Y          | Y       |         | Y           |          | coinnox           |
 | Coinone           | Y       | Y          | Y       |         | Y           |          | coinone           |
+| Coinplace         | Y       |            |         |         | Y           |          | coinplace         |
 | Coinrail          | Y       | Y          | Y       |         | Y           | Y        | coinrail          |
 | Coinroom          | Y       |            |         |         | Y           |          | coinroom          |
 | CoinsMarkets      | Y       |            |         |         | Y           |          | coin_markets      |
