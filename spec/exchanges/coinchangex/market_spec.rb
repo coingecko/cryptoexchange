@@ -9,7 +9,7 @@ RSpec.describe Cryptoexchange::Exchanges::Coinchangex::Market do
     VCR.use_cassette('coinchangex/fetch_symbol') do
       output = described_class.fetch_symbol
       expect(output).to_not be_nil
-      expect(output.count).to be > 100
+      expect(output.count).to be > 20
     end
   end
 end

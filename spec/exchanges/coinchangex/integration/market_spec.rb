@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Coinchangex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:stu_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'STU', target: 'ETH', market: 'coinchangex') }
+  let(:stu_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'zrx', target: 'eth', market: 'coinchangex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('coinchangex')
@@ -16,13 +16,13 @@ RSpec.describe 'Coinchangex integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'coinchangex', base: stu_eth_pair.base, target: stu_eth_pair.target
-    expect(trade_page_url).to eq "https://www.coinchangex.com/#!/trade/STU-ETH"
+    expect(trade_page_url).to eq "https://www.coinchangex.com/#!/trade/ZRX-ETH"
   end
 
   it 'fetch ticker' do
     ticker = client.ticker(stu_eth_pair)
 
-    expect(ticker.base).to eq 'STU'
+    expect(ticker.base).to eq 'ZRX'
     expect(ticker.target).to eq 'ETH'
     expect(ticker.market).to eq 'coinchangex'
     expect(ticker.last).to be_a Numeric
