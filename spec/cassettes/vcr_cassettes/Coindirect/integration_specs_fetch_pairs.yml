@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coindirect.com/api/v1/exchange/market
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coindirect.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 08 Sep 2018 09:06:12 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Application-Context:
+      - application:production:8080
+      Access-Control-Expose-Headers:
+      - X-Api-List-Total, X-Api-List-Start
+      X-Api-List-Total:
+      - '15'
+      X-Api-List-Start:
+      - 'null'
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":1,"maximumPrice":1000000.000000000000000000,"maximumQuantity":100.000000000000000000,"maximumValue":null,"minimumPrice":5000.000000000000000000,"minimumQuantity":0.001000000000000000,"minimumValue":null,"status":"open","stepSize":0.000100000000000000,"summary":{"bestAsk":102444.000000000000000000,"bestBid":102281.000000000000000000,"change24h":-0.03,"id":1,"lastPrice":101900.000000000000000000,"volume24h":0.4111},"symbol":"BTC-ZAR","tickSize":0.010000000000000000},{"id":3,"maximumPrice":100000.000000000000000000,"maximumQuantity":1000.000000000000000000,"maximumValue":null,"minimumPrice":500.000000000000000000,"minimumQuantity":0.010000000000000000,"minimumValue":null,"status":"open","stepSize":0.001000000000000000,"summary":{"bestAsk":3466.700000000000000000,"bestBid":3463.700000000000000000,"change24h":-0.04,"id":3,"lastPrice":3439.500000000000000000,"volume24h":4.0000},"symbol":"ETH-ZAR","tickSize":0.010000000000000000},{"id":6,"maximumPrice":1000.000000000000000000,"maximumQuantity":200000.000000000000000000,"maximumValue":null,"minimumPrice":0.500000000000000000,"minimumQuantity":5.000000000000000000,"minimumValue":null,"status":"open","stepSize":1.000000000000000000,"summary":{"bestAsk":4.641740000000000000,"bestBid":4.634520000000000000,"change24h":-0.01,"id":6,"lastPrice":4.628050000000000000,"volume24h":250.0000},"symbol":"XRP-ZAR","tickSize":0.000010000000000000},{"id":5,"maximumPrice":10000.000000000000000000,"maximumQuantity":10000.000000000000000000,"maximumValue":null,"minimumPrice":10.000000000000000000,"minimumQuantity":0.100000000000000000,"minimumValue":null,"status":"open","stepSize":0.010000000000000000,"summary":{"bestAsk":899.600000000000000000,"bestBid":899.000000000000000000,"change24h":0.00,"id":5,"lastPrice":930.500000000000000000,"volume24h":0.0000},"symbol":"LTC-ZAR","tickSize":0.010000000000000000},{"id":4,"maximumPrice":100000.000000000000000000,"maximumQuantity":100.000000000000000000,"maximumValue":null,"minimumPrice":500.000000000000000000,"minimumQuantity":0.010000000000000000,"minimumValue":null,"status":"open","stepSize":0.001000000000000000,"summary":{"bestAsk":8010.900000000000000000,"bestBid":7994.900000000000000000,"change24h":0.00,"id":4,"lastPrice":8307.600000000000000000,"volume24h":0.0000},"symbol":"BCH-ZAR","tickSize":0.010000000000000000},{"id":2,"maximumPrice":1000.000000000000000000,"maximumQuantity":100000.000000000000000000,"maximumValue":null,"minimumPrice":1.000000000000000000,"minimumQuantity":10.000000000000000000,"minimumValue":null,"status":"open","stepSize":0.100000000000000000,"summary":{"bestAsk":13.680000000000000000,"bestBid":13.680000000000000000,"change24h":0.00,"id":2,"lastPrice":13.680000000000000000,"volume24h":0.0000},"symbol":"USDT-ZAR","tickSize":0.010000000000000000},{"id":15,"maximumPrice":0.010000000000000000,"maximumQuantity":200000.000000000000000000,"maximumValue":null,"minimumPrice":0.000010000000000000,"minimumQuantity":1.000000000000000000,"minimumValue":null,"status":"open","stepSize":1.000000000000000000,"summary":{"bestAsk":0.000045310000000000,"bestBid":0.000045240000000000,"change24h":0.00,"id":15,"lastPrice":0.000045880000000000,"volume24h":0.0000},"symbol":"XRP-BTC","tickSize":1.0000000000E-8},{"id":8,"maximumPrice":10000.000000000000000000,"maximumQuantity":1000.000000000000000000,"maximumValue":null,"minimumPrice":50.000000000000000000,"minimumQuantity":0.010000000000000000,"minimumValue":null,"status":"open","stepSize":0.000010000000000000,"summary":{"bestAsk":218.540000000000000000,"bestBid":218.400000000000000000,"change24h":-0.01,"id":8,"lastPrice":221.150000000000000000,"volume24h":1.2000},"symbol":"ETH-USDT","tickSize":0.010000000000000000},{"id":9,"maximumPrice":10000.000000000000000000,"maximumQuantity":500.000000000000000000,"maximumValue":null,"minimumPrice":50.000000000000000000,"minimumQuantity":0.010000000000000000,"minimumValue":null,"status":"open","stepSize":0.000010000000000000,"summary":{"bestAsk":505.470000000000000000,"bestBid":503.960000000000000000,"change24h":0.00,"id":9,"lastPrice":521.250000000000000000,"volume24h":0.0000},"symbol":"BCH-USDT","tickSize":0.010000000000000000},{"id":10,"maximumPrice":1000.000000000000000000,"maximumQuantity":10000.000000000000000000,"maximumValue":null,"minimumPrice":5.000000000000000000,"minimumQuantity":0.100000000000000000,"minimumValue":null,"status":"open","stepSize":0.000010000000000000,"summary":{"bestAsk":56.750000000000000000,"bestBid":56.640000000000000000,"change24h":0.00,"id":10,"lastPrice":57.220000000000000000,"volume24h":0.0000},"symbol":"LTC-USDT","tickSize":0.010000000000000000}]'
+    http_version: 
+  recorded_at: Sat, 08 Sep 2018 09:07:15 GMT
+recorded_with: VCR 4.0.0
