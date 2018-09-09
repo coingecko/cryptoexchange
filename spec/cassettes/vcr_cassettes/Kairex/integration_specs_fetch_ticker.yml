@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kairex.com/v1/market/ticker?base=KAI&quote=BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.kairex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 09 Sep 2018 21:44:09 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '226'
+      Connection:
+      - close
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"base":"KAI","open":"0.00000076","high":"0.00000077","low":"0.00000075","close":"0.00000077","volume":"894845.69638082","total":"0.68093383","closed":"0.00000076","change":"0.00000001","changePercent":"1.3200","rankNum":null}'
+    http_version: 
+  recorded_at: Sun, 09 Sep 2018 21:44:09 GMT
+recorded_with: VCR 4.0.0
