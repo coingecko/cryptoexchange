@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://broadcast.exchanges.lo/v1/pairs
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - broadcast.exchanges.lo
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.2
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Powered-By:
+      - PHP/7.2.6
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Fri, 31 Aug 2018 13:10:21 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: '[["BTC","BCH"],["BTC","LTC"],["BTC","DASH"],["BTC","ZEC"],["BTC","ETH"],["BTC","DOGE"],["BTC","WCO"]]'
+    http_version: 
+  recorded_at: Fri, 31 Aug 2018 13:10:21 GMT
+recorded_with: VCR 4.0.0

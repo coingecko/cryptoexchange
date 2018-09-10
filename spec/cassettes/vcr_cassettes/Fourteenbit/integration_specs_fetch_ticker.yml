@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://broadcast.exchanges.lo/v1/market
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - broadcast.exchanges.lo
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.2
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Powered-By:
+      - PHP/7.2.6
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Fri, 31 Aug 2018 13:10:22 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"market":"BCH\/BTC","bid":0.02623922,"ask":0.02687557,"last":0.02623922,"variation24hr":-6.04,"volume24hr":2.95808918},{"market":"LTC\/BTC","bid":0.008513,"ask":0.0087267,"last":0.008513,"variation24hr":-2.52,"volume24hr":11.12172526},{"market":"DASH\/BTC","bid":5.3e-7,"ask":6.2e-7,"last":5.9e-7,"variation24hr":3.51,"volume24hr":2313457.03705449},{"market":"ZEC\/BTC","bid":4.3e-7,"ask":4.4e-7,"last":4.3e-7,"variation24hr":16.22,"volume24hr":2079089.83445341},{"market":"ETH\/BTC","bid":1.214e-5,"ask":2.584e-5,"last":1.209e-5,"variation24hr":-47.75,"volume24hr":1208.99347797},{"market":"DOGE\/BTC","bid":0.00010696,"ask":0.00010985,"last":0.00010735,"variation24hr":0,"volume24hr":0},{"market":"WCO\/BTC","bid":2.35e-6,"ask":2.75e-6,"last":2.35e-6,"variation24hr":-14.55,"volume24hr":1050.88702104},{"market":"BTC\/USD","bid":6878.2595,"ask":6963.6038,"last":6985.4912,"variation24hr":-0.83,"volume24hr":0.00445959}]'
+    http_version: 
+  recorded_at: Fri, 31 Aug 2018 13:10:22 GMT
+recorded_with: VCR 4.0.0
