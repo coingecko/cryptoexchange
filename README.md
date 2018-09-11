@@ -141,6 +141,7 @@ Or install it yourself as:
 | Escodex           | Y       |            |         |         | Y           | Y        | escodex           |
 | EtherDelta        | Y       |            |         |         | Y           |          | ether_delta       |
 | Ethfinex          | Y       | Y          | Y       |         | Y           |          | ethfinex          |
+| Everbloom         | Y       |            |         |         | Y           |          | everbloom         |
 | Exmo              | Y       | Y          | Y       |         | Y           | Y        | exmo              |
 | Exrates           | Y       | N          | N       |         | Y           |          | exrates           |
 | Extstock          | Y       | Y          | Y       |         | Y           | Y        | extstock          |
