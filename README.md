@@ -29,7 +29,7 @@ Or install it yourself as:
 | Abucoins          | Y       | Y          | Y       |         | Y           |          | abucoins          |
 | ACX               | Y       | Y          | Y       |         | Y           | Y        | acx               |
 | AEX               | Y       | Y          | Y       |         | Y           |          | aex               |
-| Allcoin           | Y       | Y          |         |         | User-Defined|          | allcoin           |
+| Allcoin           | Y       | Y          | Y       |         | Y           |          | allcoin           |
 | Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |
 | ANX               | Y       |            |         |         | User-Defined|          | anx               |
 | AXNET             | Y       | Y          | Y       |         | Y           | Y        | axnet             |
