@@ -2,47 +2,47 @@ module Cryptoexchange::Exchanges
   module BitZ
     module Services
       class Market < Cryptoexchange::Services::Market
+        RESOLUTION = '1day'
+        SIZE       = '1'
         class << self
           def supports_individual_ticker_query?
-            false
+            true
           end
         end
 
-        def fetch
-          output = super(ticker_url)
-          adapt_all(output)
+        def fetch(market_pair)
+          output       = super(ticker_url(market_pair))
+          kline_output = super(kline_url(market_pair))
+          adapt(output, kline_output, market_pair)
         end
 
-        def ticker_url
-          "#{Cryptoexchange::Exchanges::BitZ::Market::API_URL}/tickerall"
+        def ticker_url(market_pair)
+          base   = market_pair.base.downcase
+          target = market_pair.target.downcase
+          "#{Cryptoexchange::Exchanges::BitZ::Market::API_URL}/Market/ticker?symbol=#{base}_#{target}"
         end
 
-        def adapt_all(output)
-          output["data"].map do |key, value|
-            base = key.split("_").first
-            target = key.split("_").last
-            market_pair = Cryptoexchange::Models::MarketPair.new(
-                            base: base,
-                            target: target,
-                            market: BitZ::Market::NAME
-                          )
-            adapt(value,market_pair)
-          end
+        def kline_url(market_pair)
+          base   = market_pair.base.downcase
+          target = market_pair.target.downcase
+          "#{Cryptoexchange::Exchanges::BitZ::Market::API_URL}/Market/kline?symbol=#{base}_#{target}&resolution=#{RESOLUTION}&size=#{SIZE}"
         end
 
-        def adapt(output, market_pair)
-          ticker = Cryptoexchange::Models::Ticker.new
-          ticker.base = market_pair.base
-          ticker.target = market_pair.target
-          ticker.market = BitZ::Market::NAME
-          ticker.ask = NumericHelper.to_d(output['sell'])
-          ticker.bid = NumericHelper.to_d(output['buy'])
-          ticker.last = NumericHelper.to_d(output['last'])
-          ticker.high = NumericHelper.to_d(output['high'])
-          ticker.low = NumericHelper.to_d(output['low'])
-          ticker.volume = NumericHelper.to_d(output['vol'])
-          ticker.timestamp = NumericHelper.to_d(output['date'])
-          ticker.payload = output
+        def adapt(output, kline_output, market_pair)
+          market = HashHelper.dig(output, 'data')
+          bar = HashHelper.dig(kline_output, 'data', 'bars').first
+          ticker           = Cryptoexchange::Models::Ticker.new
+          ticker.base      = market_pair.base
+          ticker.target    = market_pair.target
+          ticker.market    = BitZ::Market::NAME
+          ticker.ask       = NumericHelper.to_d(market['askPrice'])
+          ticker.bid       = NumericHelper.to_d(market['bidPrice'])
+          ticker.last      = NumericHelper.to_d(bar['close'])
+          ticker.high      = NumericHelper.to_d(bar['high'])
+          ticker.low       = NumericHelper.to_d(bar['low'])
+          ticker.volume    = NumericHelper.to_d(market['volume'])
+          ticker.timestamp = Time.parse(bar['datetime']).to_i
+          ticker.payload   = [output, kline_output]
           ticker
         end
       end
