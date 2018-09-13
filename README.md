@@ -108,6 +108,7 @@ Or install it yourself as:
 | Coinhub           | Y       | Y          | Y       |         | Y           | Y        | coinhub           |
 | CoinJar           | Y       | Y          | Y       |         | Y           |          | coinjar           |
 | Coinmate          | Y       | Y          |         |         | User-Defined|          | coinmate          |
+| Coinmex           | Y       | Y          | Y       |         | Y           |          | coinmex           |
 | Coinnest          | Y       | Y          | Y       |         | User-Defined| Y        | coinnest          |
 | Coinnox           | Y       | Y          | Y       |         | Y           |          | coinnox           |
 | Coinone           | Y       | Y          | Y       |         | Y           |          | coinone           |
