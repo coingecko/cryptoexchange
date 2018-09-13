@@ -64,6 +64,7 @@ Or install it yourself as:
 | Bitmart           | Y       | Y          | Y       |         | Y           |          | bitmart           |
 | Bitmex            | Y       | Y          | Y       |         | Y           |          | bitmex            |
 | Bitpaction        | Y       | Y          | Y       |         | Y           |          | bitpaction        |
+| Bitrue            | Y       | N          | N       |         | Y           | Y        | bitrue            |
 | Bits Blockchain   | Y       | Y          |         |         | Y           |          | bits_blockchain   |
 | Bitso             | Y       |            |         |         | Y           |          | bitso             |
 | Bitstamp          | Y       | Y          | Y       |         | User-Defined|          | bitstamp          |
