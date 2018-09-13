@@ -69,6 +69,7 @@ Or install it yourself as:
 | Bitstamp          | Y       | Y          | Y       |         | User-Defined|          | bitstamp          |
 | Bittrex           | Y       |            |         |         | Y           |          | bittrex           |
 | Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |
+| Blockonix         | Y       | Y          | Y       |         | Y           |          | blockonix         |
 | Braziliex         | Y       | Y          | Y       |         | Y           |          | braziliex         |
 | BTC38             |         |            |         |         |             |          |                   |
 | BTC-e             |         |            |         |         |             |          |                   |
