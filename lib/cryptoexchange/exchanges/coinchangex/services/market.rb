@@ -37,10 +37,10 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Coinchangex::Market::NAME
-          ticker.ask       = NumericHelper.to_d(output['ask'])
-          ticker.bid       = NumericHelper.to_d(output['bid'])
-          ticker.last      = NumericHelper.to_d(output['last'])
-          ticker.volume    = NumericHelper.to_d(output['quoteVolume'])
+          ticker.ask       = NumericHelper.to_d(output['ask'].to_f)
+          ticker.bid       = NumericHelper.to_d(output['bid'].to_f)
+          ticker.last      = NumericHelper.to_d(output['last'].to_f)
+          ticker.volume    = NumericHelper.to_d(output['quoteVolume'].to_f)
           ticker.timestamp = Time.parse(output['updated']).to_i
           ticker.payload   = output
           ticker
