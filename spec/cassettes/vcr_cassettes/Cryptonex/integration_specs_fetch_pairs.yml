@@ -1,0 +1,111 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://userapi.cryptonex.org/api
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": 2,
+          "jsonrpc": "2.0",
+          "method": "currency_pair.get_rate_list"
+        }
+    headers:
+      Connection:
+      - close
+      Host:
+      - userapi.cryptonex.org
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 06 Sep 2018 10:32:34 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '16852'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dcfe0a45cd06d4c95620f79cd6265ce331536229954; expires=Fri, 06-Sep-19
+        10:32:34 GMT; path=/; domain=.cryptonex.org; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 456045c079fc6aaf-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":2,"jsonrpc":"2.0","result":{"rates":[{"alias":"ETH/KRW","ask":"258414.26","base_currency":"eth","base_type":"crypto","bid":"248126.45","convert_type":"cancel","last24_price":"258219.69","last_price":"256747.31","rel_currency_id":"krw","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:10.781992","value_last_24h":"1231.00833317"},{"alias":"BTC/BYN","ask":"13784.81","base_currency":"btc","base_type":"crypto","bid":"13235.87","convert_type":"cancel","last24_price":"13798.77","last_price":"13141.77","rel_currency_id":"byn","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:11.126326","value_last_24h":"11.66426615"},{"alias":"CNX/USD","ask":"2.17","base_currency":"cnx","base_type":"crypto","bid":"2.01","convert_type":"cross","last24_price":"2.13","last_price":"2.01","rel_currency_id":"usd","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:12.060452","value_last_24h":"294083.14413739"},{"alias":"CNX/PLN","ask":"8.09","base_currency":"cnx","base_type":"crypto","bid":"7.49","convert_type":"cancel","last24_price":"7.92","last_price":"7.92","rel_currency_id":"pln","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:12.18991","value_last_24h":"3992.14135526"},{"alias":"BTC/JPY","ask":"726430.95","base_currency":"btc","base_type":"crypto","bid":"697502.78","convert_type":"cancel","last24_price":"724072.16","last_price":"722441.9","rel_currency_id":"jpy","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:12.301481","value_last_24h":"238.14161382"},{"alias":"CNX/VND","ask":"50231.13","base_currency":"cnx","base_type":"crypto","bid":"46533.21","convert_type":"cancel","last24_price":"49059.73","last_price":"46129.86","rel_currency_id":"vnd","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:12.781752","value_last_24h":"5469.03601478"},{"alias":"ETH/COP","ask":"710425.52","base_currency":"eth","base_type":"crypto","bid":"682142.57","convert_type":"cancel","last24_price":"705708.36","last_price":"673483.35","rel_currency_id":"cop","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:13.149972","value_last_24h":"67.47267701"},{"alias":"ETH/USD","ask":"230.35","base_currency":"eth","base_type":"crypto","bid":"221.18","convert_type":"cancel","last24_price":"230.03","last_price":"229.6","rel_currency_id":"usd","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:13.37256","value_last_24h":"22103.85394086"},{"alias":"ETH/MYR","ask":"953.98","base_currency":"eth","base_type":"crypto","bid":"916","convert_type":"cancel","last24_price":"952.74","last_price":"908.36","rel_currency_id":"myr","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:13.723283","value_last_24h":"75.92592158"},{"alias":"ETH/TRY","ask":"1516.5","base_currency":"eth","base_type":"crypto","bid":"1456.13","convert_type":"cancel","last24_price":"1506.39","last_price":"1506.39","rel_currency_id":"try","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:13.948246","value_last_24h":"264.5500195"},{"alias":"BTC/KRW","ask":"7321245.3","base_currency":"btc","base_type":"crypto","bid":"7029696.21","convert_type":"cancel","last24_price":"7333489.65","last_price":"6989702.32","rel_currency_id":"krw","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:14.514326","value_last_24h":"294.92003078"},{"alias":"BTC/UAH","ask":"184734.86","base_currency":"btc","base_type":"crypto","bid":"177378.29","convert_type":"cancel","last24_price":"184879.56","last_price":"184733.86","rel_currency_id":"uah","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:14.865102","value_last_24h":"33.30854663"},{"alias":"CNX/INR","ask":"156.49","base_currency":"cnx","base_type":"crypto","bid":"144.97","convert_type":"cancel","last24_price":"154.01","last_price":"145.14","rel_currency_id":"inr","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:15.314858","value_last_24h":"15798.84909577"},{"alias":"CNX/ETH","ask":"0.00962016","base_currency":"cnx","base_type":"crypto","bid":"0.00891934","convert_type":"cross","last24_price":"0.00945178","last_price":"0.00885234","rel_currency_id":"eth","rel_type":"crypto","update_stamp":"2018-09-06
+        10:32:15.432195","value_last_24h":"364811.64584984"},{"alias":"CNX/BTC","ask":"0.00033964","base_currency":"cnx","base_type":"crypto","bid":"0.00031483","convert_type":"cross","last24_price":"0.00033576","last_price":"0.00033521","rel_currency_id":"btc","rel_type":"crypto","update_stamp":"2018-09-06
+        10:32:16.004202","value_last_24h":"328292.51811424"},{"alias":"BTC/EUR","ask":"5615.9","base_currency":"btc","base_type":"crypto","bid":"5392.26","convert_type":"cancel","last24_price":"5605.73","last_price":"5609.38","rel_currency_id":"eur","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:16.239539","value_last_24h":"1781.51687195"},{"alias":"ETH/KZT","ask":"85218.19","base_currency":"eth","base_type":"crypto","bid":"81825.55","convert_type":"cancel","last24_price":"85440.75","last_price":"85440.75","rel_currency_id":"kzt","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:11.231879","value_last_24h":"79.09362855"},{"alias":"BTC/GBP","ask":"5046.75","base_currency":"btc","base_type":"crypto","bid":"4845.78","convert_type":"cancel","last24_price":"5000.48","last_price":"4842.5","rel_currency_id":"gbp","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:11.352853","value_last_24h":"56.96671978"},{"alias":"ETH/BRL","ask":"954.76","base_currency":"eth","base_type":"crypto","bid":"916.75","convert_type":"cancel","last24_price":"956.04","last_price":"955.57","rel_currency_id":"brl","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:11.36912","value_last_24h":"259.28978993"},{"alias":"ETH/AED","ask":"846.17","base_currency":"eth","base_type":"crypto","bid":"812.48","convert_type":"cancel","last24_price":"842.49","last_price":"843.06","rel_currency_id":"aed","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:11.385146","value_last_24h":"288.90904496"},{"alias":"ETH/UAH","ask":"6520.49","base_currency":"eth","base_type":"crypto","bid":"6260.9","convert_type":"cancel","last24_price":"6500.57","last_price":"6262.66","rel_currency_id":"uah","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:11.602363","value_last_24h":"194.52613686"},{"alias":"ETH/JPY","ask":"25640.46","base_currency":"eth","base_type":"crypto","bid":"24619.68","convert_type":"cancel","last24_price":"25543.07","last_price":"24513.38","rel_currency_id":"jpy","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:11.724018","value_last_24h":"881.49051568"},{"alias":"ETH/CNY","ask":"1574.2","base_currency":"eth","base_type":"crypto","bid":"1511.53","convert_type":"cancel","last24_price":"1560.62","last_price":"1504.02","rel_currency_id":"cny","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:11.834575","value_last_24h":"1742.04185488"},{"alias":"BTC/AED","ask":"23973.07","base_currency":"btc","base_type":"crypto","bid":"23018.41","convert_type":"cancel","last24_price":"23802.35","last_price":"23814.1","rel_currency_id":"aed","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:11.947924","value_last_24h":"54.76638378"},{"alias":"ETH/RUB","ask":"15743.51","base_currency":"eth","base_type":"crypto","bid":"15116.74","convert_type":"cancel","last24_price":"15659.88","last_price":"15686.55","rel_currency_id":"rub","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:12.081691","value_last_24h":"376.22219846"},{"alias":"ETH/BYN","ask":"486.56","base_currency":"eth","base_type":"crypto","bid":"467.19","convert_type":"cancel","last24_price":"486.84","last_price":"466","rel_currency_id":"byn","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:12.414803","value_last_24h":"59.65611956"},{"alias":"BTC/BRL","ask":"27049.71","base_currency":"btc","base_type":"crypto","bid":"25972.53","convert_type":"cancel","last24_price":"26942.86","last_price":"25943.67","rel_currency_id":"brl","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:12.428673","value_last_24h":"42.25735389"},{"alias":"CNX/MYR","ask":"9","base_currency":"cnx","base_type":"crypto","bid":"8.34","convert_type":"cancel","last24_price":"8.89","last_price":"8.89","rel_currency_id":"myr","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:12.443932","value_last_24h":"5378.42659336"},{"alias":"CNX/KRW","ask":"2437.83","base_currency":"cnx","base_type":"crypto","bid":"2258.36","convert_type":"cancel","last24_price":"2400.94","last_price":"2400.94","rel_currency_id":"krw","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:12.55503","value_last_24h":"21653.43974662"},{"alias":"CNX/BRL","ask":"9.01","base_currency":"cnx","base_type":"crypto","bid":"8.34","convert_type":"cross","last24_price":"8.87","last_price":"8.37","rel_currency_id":"brl","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:12.900265","value_last_24h":"19033.91743991"},{"alias":"ETH/GEL","ask":"563.68","base_currency":"eth","base_type":"crypto","bid":"541.24","convert_type":"cancel","last24_price":"563.18","last_price":"562","rel_currency_id":"gel","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:13.259131","value_last_24h":"55.60732537"},{"alias":"ETH/EUR","ask":"198.22","base_currency":"eth","base_type":"crypto","bid":"190.33","convert_type":"cancel","last24_price":"197.92","last_price":"190.39","rel_currency_id":"eur","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:13.388933","value_last_24h":"13395.84152982"},{"alias":"BTC/CNY","ask":"44599.36","base_currency":"btc","base_type":"crypto","bid":"42823.31","convert_type":"cancel","last24_price":"44481.35","last_price":"42679.52","rel_currency_id":"cny","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:13.498763","value_last_24h":"421.00868974"},{"alias":"CNX/RUB","ask":"148.52","base_currency":"cnx","base_type":"crypto","bid":"137.59","convert_type":"cross","last24_price":"147.74","last_price":"145.45","rel_currency_id":"rub","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:13.614643","value_last_24h":"149783.95210482"},{"alias":"ETH/GBP","ask":"178.13","base_currency":"eth","base_type":"crypto","bid":"171.04","convert_type":"cancel","last24_price":"177.95","last_price":"176.91","rel_currency_id":"gbp","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:13.840156","value_last_24h":"339.12364568"},{"alias":"CNX/CNY","ask":"14.85","base_currency":"cnx","base_type":"crypto","bid":"13.76","convert_type":"cancel","last24_price":"14.59","last_price":"13.65","rel_currency_id":"cny","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:14.173321","value_last_24h":"60658.93392737"},{"alias":"ETH/VND","ask":"5324591.51","base_currency":"eth","base_type":"crypto","bid":"5112612.68","convert_type":"cancel","last24_price":"5291212.07","last_price":"5065463.61","rel_currency_id":"vnd","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:14.292109","value_last_24h":"239.03517443"},{"alias":"BTC/COP","ask":"20127370.43","base_currency":"btc","base_type":"crypto","bid":"19325851.53","convert_type":"cancel","last24_price":"19954264.13","last_price":"19957026.95","rel_currency_id":"cop","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:14.399493","value_last_24h":"12.2784847"},{"alias":"BTC/TRY","ask":"42964.72","base_currency":"btc","base_type":"crypto","bid":"41253.76","convert_type":"cancel","last24_price":"42711.85","last_price":"40925.79","rel_currency_id":"try","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:14.625739","value_last_24h":"36.29734107"},{"alias":"CNX/TRY","ask":"14.31","base_currency":"cnx","base_type":"crypto","bid":"13.25","convert_type":"cancel","last24_price":"14.17","last_price":"14.17","rel_currency_id":"try","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:14.739278","value_last_24h":"6441.91461066"},{"alias":"CNX/BYN","ask":"4.59","base_currency":"cnx","base_type":"crypto","bid":"4.25","convert_type":"cancel","last24_price":"4.46","last_price":"4.26","rel_currency_id":"byn","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:15.089882","value_last_24h":"3293.62534956"},{"alias":"BTC/MYR","ask":"27027.54","base_currency":"btc","base_type":"crypto","bid":"25951.24","convert_type":"cancel","last24_price":"27053.97","last_price":"26785.23","rel_currency_id":"myr","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:15.207917","value_last_24h":"13.79886203"},{"alias":"BTC/PLN","ask":"24295.4","base_currency":"btc","base_type":"crypto","bid":"23327.9","convert_type":"cancel","last24_price":"24168.8","last_price":"23290.25","rel_currency_id":"pln","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:15.539852","value_last_24h":"12.18679959"},{"alias":"CNX/GBP","ask":"1.68","base_currency":"cnx","base_type":"crypto","bid":"1.56","convert_type":"cross","last24_price":"1.65","last_price":"1.67","rel_currency_id":"gbp","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:15.889938","value_last_24h":"58776.23211888"},{"alias":"BTC/GEL","ask":"15969.88","base_currency":"btc","base_type":"crypto","bid":"15333.92","convert_type":"cancel","last24_price":"15915.7","last_price":"15245.24","rel_currency_id":"gel","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:16.121152","value_last_24h":"7.96311582"},{"alias":"CNX/COP","ask":"6702.01","base_currency":"cnx","base_type":"crypto","bid":"6208.62","convert_type":"cancel","last24_price":"6567.48","last_price":"6567.48","rel_currency_id":"cop","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:16.348214","value_last_24h":"3813.76424192"},{"alias":"CNX/JPY","ask":"241.89","base_currency":"cnx","base_type":"crypto","bid":"224.08","convert_type":"cancel","last24_price":"238.88","last_price":"238.88","rel_currency_id":"jpy","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:10.438245","value_last_24h":"16866.79915599"},{"alias":"ETH/PLN","ask":"857.54","base_currency":"eth","base_type":"crypto","bid":"823.4","convert_type":"cancel","last24_price":"855.93","last_price":"855.57","rel_currency_id":"pln","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:10.543129","value_last_24h":"71.13313131"},{"alias":"BTC/VND","ask":"150853288","base_currency":"btc","base_type":"crypto","bid":"144845957.69","convert_type":"cancel","last24_price":"150998594.03","last_price":"150261299.02","rel_currency_id":"vnd","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:10.673028","value_last_24h":"38.8778604"},{"alias":"BTC/RUB","ask":"446036","base_currency":"btc","base_type":"crypto","bid":"428273.81","convert_type":"cancel","last24_price":"443695.45","last_price":"424302.66","rel_currency_id":"rub","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:10.90123","value_last_24h":"216.77540014"},{"alias":"ETH/INR","ask":"16587.97","base_currency":"eth","base_type":"crypto","bid":"15927.58","convert_type":"cancel","last24_price":"16550.42","last_price":"15798.19","rel_currency_id":"inr","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:11.006857","value_last_24h":"474.90418722"},{"alias":"CNX/UAH","ask":"61.51","base_currency":"cnx","base_type":"crypto","bid":"56.98","convert_type":"cancel","last24_price":"60.45","last_price":"56.38","rel_currency_id":"uah","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:11.490368","value_last_24h":"4364.1333607"},{"alias":"BTC/KZT","ask":"2414353.26","base_currency":"btc","base_type":"crypto","bid":"2318208.07","convert_type":"cancel","last24_price":"2398910.01","last_price":"2410037.98","rel_currency_id":"kzt","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:12.676399","value_last_24h":"14.60957379"},{"alias":"CNX/GEL","ask":"5.32","base_currency":"cnx","base_type":"crypto","bid":"4.93","convert_type":"cancel","last24_price":"5.25","last_price":"5.25","rel_currency_id":"gel","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:13.029943","value_last_24h":"3699.6258455"},{"alias":"CNX/EUR","ask":"1.87","base_currency":"cnx","base_type":"crypto","bid":"1.73","convert_type":"cross","last24_price":"1.84","last_price":"1.83","rel_currency_id":"eur","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:14.066557","value_last_24h":"262855.4360681"},{"alias":"BTC/INR","ask":"469960.88","base_currency":"btc","base_type":"crypto","bid":"451245.94","convert_type":"cancel","last24_price":"470280.55","last_price":"449491.17","rel_currency_id":"inr","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:14.757734","value_last_24h":"64.48326461"},{"alias":"BTC/USD","ask":"6526.33","base_currency":"btc","base_type":"crypto","bid":"6266.44","convert_type":"cancel","last24_price":"6513.64","last_price":"6262.82","rel_currency_id":"usd","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:14.981351","value_last_24h":"2888.77357183"},{"alias":"CNX/KZT","ask":"803.93","base_currency":"cnx","base_type":"crypto","bid":"744.75","convert_type":"cancel","last24_price":"789.22","last_price":"789.22","rel_currency_id":"kzt","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:15.666372","value_last_24h":"5763.02632732"},{"alias":"CNX/AED","ask":"7.98","base_currency":"cnx","base_type":"crypto","bid":"7.39","convert_type":"cancel","last24_price":"7.87","last_price":"7.87","rel_currency_id":"aed","rel_type":"fiat","update_stamp":"2018-09-06
+        10:32:15.773194","value_last_24h":"5509.30571651"}]}}
+
+'
+    http_version: 
+  recorded_at: Thu, 06 Sep 2018 10:32:34 GMT
+recorded_with: VCR 4.0.0
