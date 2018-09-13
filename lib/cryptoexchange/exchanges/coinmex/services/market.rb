@@ -25,10 +25,8 @@ module Cryptoexchange::Exchanges
           ticker.market    = Coinmex::Market::NAME
           ticker.high       = NumericHelper.to_d(output[1])
           ticker.low       = NumericHelper.to_d(output[2])
-          ticker.ask       = NumericHelper.to_d(output[3])
-          ticker.bid       = NumericHelper.to_d(output[4])
-          ticker.last      = NumericHelper.to_d(output[5])
-          ticker.volume    = NumericHelper.to_d(output[6])
+          ticker.last      = NumericHelper.to_d(output[3])
+          ticker.volume    = NumericHelper.to_d(output[4])
           ticker.timestamp = output[0]/1000
           ticker.payload   = output
           ticker
