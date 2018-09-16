@@ -22,7 +22,7 @@ module Cryptoexchange::Exchanges
 
           output.map do |pair_id, ticker|
             market_pair = pairs.find{ |p| p.inst_id == pair_id }
-            adapt(market_pair, ticker)
+            adapt(market_pair, ticker) if market_pair
           end
         end
 
