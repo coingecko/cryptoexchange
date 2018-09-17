@@ -154,6 +154,7 @@ Or install it yourself as:
 | Extstock          | Y       | Y          | Y       |         | Y           | Y        | extstock          |
 | Exx               | Y       | Y          | Y       |         | Y           | Y        | exx               |
 | F1cx              | Y       | Y          | Y       |         | Y           | Y        | f1cx              |
+| FatBTC            | Y       | Y          | Y       |         | Y           |          | fatbtc            |
 | Fcoin             | Y       | Y          | Y       |         | Y           | Y        | fcoin             |
 | Fex               | Y       | N          | N       |         | Y           |          | fex               |
 | Fisco             | Y       | Y          | Y       |         | Y           | Y        | fisco             |
