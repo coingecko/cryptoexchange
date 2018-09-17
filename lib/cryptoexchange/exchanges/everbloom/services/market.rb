@@ -33,12 +33,12 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Everbloom::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['last'].to_f)
-          ticker.high      = NumericHelper.to_d(output['high'].to_f)
-          ticker.low       = NumericHelper.to_d(output['low'].to_f)
-          ticker.bid       = NumericHelper.to_d(output['highestBid'].to_f)
-          ticker.ask       = NumericHelper.to_d(output['lowestAsk'].to_f)
-          ticker.volume    = NumericHelper.to_d(output['volume'].to_f)
+          ticker.last      = NumericHelper.divide(NumericHelper.to_d(output['last'].to_f), 1e18)
+          ticker.high      = NumericHelper.divide(NumericHelper.to_d(output['high'].to_f), 1e18)
+          ticker.low       = NumericHelper.divide(NumericHelper.to_d(output['low'].to_f), 1e18)
+          ticker.bid       = NumericHelper.divide(NumericHelper.to_d(output['highestBid'].to_f), 1e18)
+          ticker.ask       = NumericHelper.divide(NumericHelper.to_d(output['lowestAsk'].to_f), 1e18)
+          ticker.volume    = NumericHelper.divide(NumericHelper.to_d(output['volume'].to_f), 1e18)
           ticker.timestamp = output['updatedAt']
           ticker.payload   = output
           ticker
