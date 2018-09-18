@@ -10,12 +10,7 @@ RSpec.describe 'Lykke integration specs' do
   it 'fetch pairs' do
     pairs = client.pairs(market)
     expect(pairs).not_to be_empty
-    hashed_pairs = pairs.map { |p| {base: p.base, target: p.target, market: p.market }}
-    expect(hashed_pairs).to include({base: 'ETH', target: 'BTC', market: market})
-    expect(hashed_pairs).to include({base: 'LKK1Y', target: 'USD', market: market})
-    expect(hashed_pairs).to include({base: 'BTC', target: 'LKK1Y', market: market})
-    expect(hashed_pairs).to include({base: 'TIME', target: 'GBP', market: market})
-    expect(hashed_pairs).to include({base: 'SHEELA', target: 'EUR', market: market})
+    expect(pairs).not_to include nil
   end
 
   it 'fetch ticker' do
@@ -29,8 +24,7 @@ RSpec.describe 'Lykke integration specs' do
     expect(ticker.ask).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.last).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(DateTime.strptime(ticker.timestamp.to_s, '%s').year).to eq Date.today.year
+    expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
   end
 

@@ -14,6 +14,11 @@ RSpec.describe 'SouthXchange integration specs' do
     expect(pair.market).to eq 'south_xchange'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'south_xchange', base: doge_btc_pair.base, target: doge_btc_pair.target
+    expect(trade_page_url).to eq "https://www.southxchange.com/Market/Book/DOGE/BTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(doge_btc_pair)
 
@@ -22,8 +27,7 @@ RSpec.describe 'SouthXchange integration specs' do
     expect(ticker.market).to eq 'south_xchange'
     expect(ticker.last).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be_nil
     expect(ticker.payload).to_not be nil
   end
 

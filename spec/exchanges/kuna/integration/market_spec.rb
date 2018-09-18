@@ -61,4 +61,9 @@ RSpec.describe 'Kuna integration specs' do
     expect(trade.market).to eq 'kuna'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'kuna', base: btc_uah_pair.base, target: btc_uah_pair.target
+    expect(trade_page_url).to eq "https://kuna.io/markets/btcuah"
+  end
+
 end

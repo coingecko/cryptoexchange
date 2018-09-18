@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.altilly.com/api/public/trades/LTCBTC?by=timestamp&limit=100&sort=DESC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.altilly.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 24 Jul 2018 03:01:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '6501'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db0d5337335d54da9a1f0a82f6fc072201532401261; expires=Wed, 24-Jul-19
+        03:01:01 GMT; path=/; domain=.altilly.com; HttpOnly; Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"1965-b0x7Ft1UP5uZ99//+kk9niCDfO4"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 43f323ccba0a31bc-SIN
+    body:
+      encoding: UTF-8
+      string: '[{"id":1083347,"uuid":"bf012c9d-9e48-4055-94cc-21f98ce75ec1","price":"0.01399000","quantity":"0.00900000","side":"buy","timestamp":"2018-07-18T05:38:12.670Z","unixtimestamp":1531892292},{"id":1083346,"uuid":"697fddc4-8391-4088-b3d3-e34c444a1206","price":"0.01490000","quantity":"0.03800000","side":"buy","timestamp":"2018-07-18T05:38:12.670Z","unixtimestamp":1531892292},{"id":1083282,"uuid":"cbe759bf-25e0-4c2b-a226-4b20bb548022","price":"0.01450000","quantity":"0.00780000","side":"buy","timestamp":"2018-07-17T04:56:02.344Z","unixtimestamp":1531803362},{"id":1083238,"uuid":"3cd13ced-40db-47c9-8be5-9477f3f97ac3","price":"0.00700000","quantity":"0.23520000","side":"sell","timestamp":"2018-07-16T10:24:11.820Z","unixtimestamp":1531736651},{"id":1082848,"uuid":"8f861fd8-4334-4bc8-9824-e2e5b52c08ef","price":"0.01450000","quantity":"0.01510000","side":"buy","timestamp":"2018-07-12T19:19:17.392Z","unixtimestamp":1531423157},{"id":1081138,"uuid":"6917c96f-e4fb-4ad6-89a9-143b681ba36a","price":"0.01400000","quantity":"0.02550000","side":"sell","timestamp":"2018-06-24T22:40:07.979Z","unixtimestamp":1529880007},{"id":1081105,"uuid":"d000320f-79cb-40e7-aba5-dce4d985fd9c","price":"0.01400000","quantity":"0.06380000","side":"sell","timestamp":"2018-06-24T17:05:57.819Z","unixtimestamp":1529859957},{"id":1081055,"uuid":"f4b64fec-f6f6-473e-b450-7ade30371b23","price":"0.01400000","quantity":"0.12670000","side":"sell","timestamp":"2018-06-24T06:40:28.689Z","unixtimestamp":1529822428},{"id":1080868,"uuid":"b88c987a-1302-42fb-95a5-22061dc9855f","price":"0.01400000","quantity":"0.31240000","side":"sell","timestamp":"2018-06-22T22:41:59.175Z","unixtimestamp":1529707319},{"id":1080867,"uuid":"49017138-906b-4f95-994d-6ba90fecb175","price":"0.01420000","quantity":"1.00000000","side":"sell","timestamp":"2018-06-22T22:41:54.757Z","unixtimestamp":1529707314},{"id":1080866,"uuid":"107bf435-50cc-4b0c-9e91-404725e2acee","price":"0.01430000","quantity":"1.00000000","side":"sell","timestamp":"2018-06-22T22:41:51.224Z","unixtimestamp":1529707311},{"id":1080865,"uuid":"8786d09c-2eab-4f75-8720-872101c38b05","price":"0.01450000","quantity":"1.00000000","side":"sell","timestamp":"2018-06-22T22:41:48.165Z","unixtimestamp":1529707308},{"id":1080864,"uuid":"990fa4ef-24da-4812-9c5d-62d58987ae2f","price":"0.01480000","quantity":"1.00000000","side":"sell","timestamp":"2018-06-22T22:41:45.624Z","unixtimestamp":1529707305},{"id":1080863,"uuid":"1099062d-b25a-4cb6-8581-f83d9abd3544","price":"0.01483000","quantity":"1.00000000","side":"sell","timestamp":"2018-06-22T22:41:42.741Z","unixtimestamp":1529707302},{"id":1080862,"uuid":"18a690f4-0d91-45d3-a040-a23678eb7a26","price":"0.01500000","quantity":"0.03310000","side":"sell","timestamp":"2018-06-22T22:41:39.814Z","unixtimestamp":1529707299},{"id":1080856,"uuid":"9394f09f-9ed5-4433-9ea6-513112c57c90","price":"0.01500000","quantity":"4.94670000","side":"sell","timestamp":"2018-06-22T21:54:39.867Z","unixtimestamp":1529704479},{"id":1080855,"uuid":"d427efbf-5444-4df5-a203-c514b951ddce","price":"0.01501000","quantity":"0.00670000","side":"sell","timestamp":"2018-06-22T21:54:09.095Z","unixtimestamp":1529704449},{"id":1079530,"uuid":"1072b50a-3baa-44ab-a80d-fcac49290ffe","price":"0.01500000","quantity":"0.02020000","side":"sell","timestamp":"2018-06-14T06:53:27.422Z","unixtimestamp":1528959207},{"id":1078681,"uuid":"8781c6b9-44d5-4242-99b9-8e36e3587fd1","price":"0.01600000","quantity":"0.71940000","side":"sell","timestamp":"2018-06-08T19:34:43.264Z","unixtimestamp":1528486483},{"id":1078576,"uuid":"a4ec4d3c-bfbd-471d-85a6-b5231b16c9c6","price":"0.01600000","quantity":"0.05100000","side":"sell","timestamp":"2018-06-07T23:39:53.167Z","unixtimestamp":1528414793},{"id":1078568,"uuid":"3977e508-9e90-409a-a494-56d1413b0950","price":"0.01600000","quantity":"0.05360000","side":"sell","timestamp":"2018-06-07T19:58:49.808Z","unixtimestamp":1528401529},{"id":1078343,"uuid":"21ecad07-b8d5-4a24-82ff-df4b242bed70","price":"0.01600000","quantity":"0.03360000","side":"sell","timestamp":"2018-06-06T13:17:49.571Z","unixtimestamp":1528291069},{"id":1078127,"uuid":"09ccf0f4-24bf-4b1a-a0db-d67f1006fb3b","price":"0.01600000","quantity":"0.01000000","side":"sell","timestamp":"2018-06-04T03:47:19.423Z","unixtimestamp":1528084039},{"id":1077937,"uuid":"1754fa5a-c138-4804-82c0-b6cef37a6661","price":"0.01600000","quantity":"0.10000000","side":"sell","timestamp":"2018-06-01T12:08:43.646Z","unixtimestamp":1527854923},{"id":1077904,"uuid":"3d3c2bc6-e3b0-47e8-ba51-0e26da6ff958","price":"0.01600000","quantity":"0.01240000","side":"sell","timestamp":"2018-06-01T08:30:48.391Z","unixtimestamp":1527841848},{"id":1077869,"uuid":"4e43a52f-a68b-40a4-9401-d8af09d2ad62","price":"0.01600000","quantity":"0.02000000","side":"sell","timestamp":"2018-06-01T07:25:15.778Z","unixtimestamp":1527837915},{"id":1077797,"uuid":"73ed6cf6-a9c1-4271-954a-9f8888616f1b","price":"0.01664000","quantity":"0.05440000","side":"buy","timestamp":"2018-05-23T10:04:50.950Z","unixtimestamp":1527069890},{"id":1077791,"uuid":"3d5acc8c-7f33-4184-abdb-1c21d3dbe1df","price":"0.01664000","quantity":"0.17300000","side":"buy","timestamp":"2018-05-16T20:24:17.551Z","unixtimestamp":1526502257},{"id":1077786,"uuid":"41562b2b-7756-4f03-84ac-694df65f31a3","price":"0.01690000","quantity":"0.01000000","side":"sell","timestamp":"2018-05-16T09:52:57.201Z","unixtimestamp":1526464377},{"id":1077747,"uuid":"848004be-e844-4e3b-98b1-861d471a6eb8","price":"0.01732000","quantity":"0.02000000","side":"buy","timestamp":"2018-05-11T10:41:52.273Z","unixtimestamp":1526035312},{"id":1077743,"uuid":"cbc8c480-7879-4893-a061-c7f7f89177b8","price":"0.01700000","quantity":"0.01000000","side":"sell","timestamp":"2018-05-10T01:52:26.296Z","unixtimestamp":1525917146},{"id":1077742,"uuid":"9c85d7cf-61c8-4a59-8167-f865bc22b170","price":"0.01732000","quantity":"0.01000000","side":"buy","timestamp":"2018-05-10T01:51:52.817Z","unixtimestamp":1525917112},{"id":1077735,"uuid":"eab13d33-ab2e-4c40-87ca-f0403edbb903","price":"0.01500000","quantity":"0.02000000","side":"sell","timestamp":"2018-05-08T12:27:04.561Z","unixtimestamp":1525782424},{"id":1077734,"uuid":"e0e47a85-b6bb-48bb-ae05-7bf9cac439dc","price":"0.01690000","quantity":"0.07000000","side":"buy","timestamp":"2018-05-08T12:07:59.172Z","unixtimestamp":1525781279},{"id":1077725,"uuid":"9f85b300-a955-4c44-9753-e51870668745","price":"0.01690000","quantity":"0.01000000","side":"buy","timestamp":"2018-05-07T04:27:01.310Z","unixtimestamp":1525667221}]'
+    http_version: 
+  recorded_at: Tue, 24 Jul 2018 03:01:02 GMT
+recorded_with: VCR 4.0.0

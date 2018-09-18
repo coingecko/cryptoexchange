@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.cpdax.com/api/v1/ticker
+    uri: https://api.cpdax.com/v1/tickers
     body:
       encoding: UTF-8
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 18 May 2018 09:48:21 GMT
+      - Mon, 30 Jul 2018 15:44:06 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -28,44 +28,40 @@ http_interactions:
       - close
       Server:
       - nginx/1.10.3 (Ubuntu)
-      Access-Control-Expose-Headers:
-      - Date
-      Cache-Control:
-      - no-cache, no-store, must-revalidate
-      Pragma:
-      - no-cache
+      X-Frame-Options:
+      - DENY
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
       X-Xss-Protection:
       - 1; mode=block
       - 1; mode=block
       X-Application-Context:
-      - application:prod:9002
+      - application:prod:9005
       Vary:
       - Accept-Encoding
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       Content-Security-Policy:
-      - base-uri 'self'; default-src 'self' https://*.cpdax.com https://cpdax.com;script-src
-        https://*.cpdax.com https://cpdax.com https://*.intercom.io https://*.gstatic.com
-        https://*.intercomcdn.com https://*.google.com https://*.google-analytics.com
-        https://*.intercomassets.com https://*.twitter.com 'nonce-dmFyIHNkZiA9ICcxMjMxMjMn';style-src
-        https://* 'unsafe-inline';connect-src 'self' https://*.cpdax.com https://cpdax.com
-        https://*.cpdax.com:8443 https://cpdax.com:8443 wss://*.cpdax.com:8443 wss://*.cpdax.com:8443
-        https://*.intercom.io wss://*.intercom.io https://app.getsentry.com https://js.intercomcdn.com
-        https://*.coinplugapis.com https://*.tradingview.com https://*.twitter.com
-        https://*.google.com;font-src 'self' https://fonts.gstatic.com https://js.intercomcdn.com
-        https://cdn.rawgit.com;child-src 'self' https://www.cpdax.com https://cpdax.com
-        https://www.google.com https://*.twitter.com https://intercom-sheets.com;img-src
-        'self' https://*.cpdax.com https://cpdax.com https://*.google-analytics.com
-        https://js.intercomcdn.com https://static.intercomassets.com https://*.twitter.com
-        https://stats.g.doubleclick.net https://*.google.com https://*.google.co.kr
-        https://*.google.co.jp data:;object-src 'self'
+      - base-uri 'self'; default-src 'self' https://*.cpdax.com https://cpdax.com;media-src
+        https://*.intercomcdn.com;script-src https://*.cpdax.com https://cpdax.com
+        https://*.intercom.io https://*.gstatic.com https://*.intercomcdn.com https://*.google.com
+        https://*.google-analytics.com https://*.intercomassets.com https://*.twitter.com
+        https://*.daumcdn.net 'nonce-dmFyIHNkZiA9ICcxMjMxMjMn';style-src https://*
+        'unsafe-inline';connect-src 'self' https://*.cpdax.com https://cpdax.com https://*.cpdax.com:8443
+        https://cpdax.com:8443 wss://*.cpdax.com:8443 wss://*.cpdax.com:8443 https://*.intercom.io
+        wss://*.intercom.io https://app.getsentry.com https://js.intercomcdn.com https://*.coinplugapis.com
+        https://*.tradingview.com https://*.twitter.com https://*.google.com;font-src
+        'self' https://fonts.gstatic.com https://js.intercomcdn.com https://cdn.rawgit.com;child-src
+        'self' https://www.cpdax.com https://cpdax.com https://www.google.com https://*.twitter.com
+        https://intercom-sheets.com;img-src 'self' https://*.cpdax.com https://cpdax.com
+        https://*.google-analytics.com https://js.intercomcdn.com https://static.intercomassets.com
+        https://*.twitter.com https://stats.g.doubleclick.net https://*.google.com
+        https://*.google.co.kr https://*.google.co.jp data:;object-src 'self'
     body:
       encoding: UTF-8
-      string: '{"data":{"tickerList":[{"timestamp":1526636896000,"last":"0.00004502","currency_pair":"BAT-BTC"},{"timestamp":1526636878000,"last":"0.14857188","currency_pair":"BCH-BTC"},{"timestamp":1526636583000,"last":"1328500","currency_pair":"BCH-KRW"},{"timestamp":1526636900000,"last":"8887500","currency_pair":"BTC-KRW"},{"timestamp":1526636704000,"last":"0.00156229","currency_pair":"EOS-BTC"},{"timestamp":1526636714000,"last":"13920","currency_pair":"EOS-KRW"},{"timestamp":1526636872000,"last":"0.00212771","currency_pair":"ETC-BTC"},{"timestamp":1526636872000,"last":"19040","currency_pair":"ETC-KRW"},{"timestamp":1526636866000,"last":"0.08417989","currency_pair":"ETH-BTC"},{"timestamp":1526636694000,"last":"755450","currency_pair":"ETH-KRW"},{"timestamp":1526636890000,"last":"0.00003762","currency_pair":"GTO-BTC"},{"timestamp":1526636868000,"last":"334","currency_pair":"GTO-KRW"},{"timestamp":1526636884000,"last":"0.00022791","currency_pair":"KNC-BTC"},{"timestamp":1526636511000,"last":"2060","currency_pair":"KNC-KRW"},{"timestamp":1526636860000,"last":"0.01631964","currency_pair":"LTC-BTC"},{"timestamp":1526636890000,"last":"145050","currency_pair":"LTC-KRW"}]}}'
+      string: '[{"timestamp":1532965442,"last":"0.00003771","currency_pair":"BAT-BTC"},{"timestamp":1532965440,"last":"0.09998295","currency_pair":"BCH-BTC"},{"timestamp":1528676174,"last":"1016100.00000000","currency_pair":"BCH-KRW"},{"timestamp":1528677915,"last":"7331000.00000000","currency_pair":"BTC-KRW"},{"timestamp":1532965440,"last":"0.00098980","currency_pair":"EOS-BTC"},{"timestamp":1528677865,"last":"12480.00000000","currency_pair":"EOS-KRW"},{"timestamp":1532965424,"last":"0.00209471","currency_pair":"ETC-BTC"},{"timestamp":1528677955,"last":"14050.00000000","currency_pair":"ETC-KRW"},{"timestamp":1532965438,"last":"0.05638217","currency_pair":"ETH-BTC"},{"timestamp":1528677855,"last":"563250.00000000","currency_pair":"ETH-KRW"},{"timestamp":1532965443,"last":"0.00001785","currency_pair":"GTO-BTC"},{"timestamp":1528677855,"last":"197.00000000","currency_pair":"GTO-KRW"},{"timestamp":1532965441,"last":"0.00010723","currency_pair":"KNC-BTC"},{"timestamp":1528677965,"last":"1215.00000000","currency_pair":"KNC-KRW"},{"timestamp":1532965442,"last":"0.01019384","currency_pair":"LTC-BTC"},{"timestamp":1528677995,"last":"115050.00000000","currency_pair":"LTC-KRW"},{"timestamp":1532965377,"last":"0.00000183","currency_pair":"PAL-BTC"}]'
     http_version: 
-  recorded_at: Fri, 18 May 2018 09:48:21 GMT
+  recorded_at: Mon, 30 Jul 2018 15:44:06 GMT
 recorded_with: VCR 4.0.0

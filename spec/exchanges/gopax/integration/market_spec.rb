@@ -14,6 +14,11 @@ RSpec.describe 'Gopax integration specs' do
     expect(pair.market).to eq 'gopax'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'gopax', base: eth_krw_pair.base, target: eth_krw_pair.target
+    expect(trade_page_url).to eq "https://www.gopax.co.kr/exchange/ETH-KRW"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(eth_krw_pair)
 

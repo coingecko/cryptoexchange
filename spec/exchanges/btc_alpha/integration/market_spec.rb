@@ -14,6 +14,11 @@ RSpec.describe 'BtcAlpha integration specs' do
     expect(pair.market).to eq 'btc_alpha'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'btc_alpha', base: lhcoin_eth_pair.base, target: lhcoin_eth_pair.target
+    expect(trade_page_url).to eq "https://btc-alpha.com/exchange/LHCOIN_ETH"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(lhcoin_eth_pair)
 

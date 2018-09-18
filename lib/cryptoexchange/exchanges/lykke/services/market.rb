@@ -27,15 +27,15 @@ module Cryptoexchange::Exchanges
           output.map do |ticker|
             next unless pairs_dictionary.any?{|match| match["id"] == ticker["assetPair"]}
             pair_object = pairs_dictionary.select{|pair| pair["id"] == ticker["assetPair"]}
-                base = pair_object[0]["baseAssetId"]
-                target = pair_object[0]["quotingAssetId"]
-                market_pair = Cryptoexchange::Models::MarketPair.new(
-                                base: base,
-                                target: target,
-                                market: Lykke::Market::NAME
-                              )
-                adapt(ticker, market_pair)
-          end
+            base = pair_object[0]["baseAssetId"]
+            target = pair_object[0]["quotingAssetId"]
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+                            base: base,
+                            target: target,
+                            market: Lykke::Market::NAME
+                          )
+            adapt(ticker, market_pair)
+          end.compact
         end
 
         def adapt(ticker_output, market_pair)
@@ -47,7 +47,7 @@ module Cryptoexchange::Exchanges
         ticker.ask       = NumericHelper.to_d(ticker_output['ask'])
         ticker.last      = NumericHelper.to_d(ticker_output['lastPrice'])
         ticker.volume    = NumericHelper.divide(NumericHelper.to_d(ticker_output['volume24H']), ticker.last)
-        ticker.timestamp = Time.now.to_i
+        ticker.timestamp = nil
         ticker.payload   = ticker_output
         ticker
         end

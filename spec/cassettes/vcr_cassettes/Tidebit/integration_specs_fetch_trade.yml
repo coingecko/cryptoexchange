@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.tidebit.com/api/v2/trades.json?limit=50&market=btchkd&order_by=desc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.tidebit.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 16:58:14 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '7728'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dbb212e2c03d676324de17e75be3ac2241533142694; expires=Thu, 01-Aug-19
+        16:58:14 GMT; path=/; domain=.tidebit.com; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=63072000; includeSubDomains
+      X-Request-Id:
+      - e9d975b8-deb7-456b-89b1-7e2a172bbf07
+      Etag:
+      - W/"ee116000fbd690e0689e11717921ebd2"
+      X-Runtime:
+      - '0.023581'
+      X-Powered-By:
+      - Phusion Passenger 5.3.3
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4439d9309e6f2cc3-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":224745,"price":"59200.0","volume":"0.079","funds":"4676.8","market":"btchkd","created_at":"2018-08-02T00:03:06+08:00","at":1533139386,"side":"up"},{"id":224744,"price":"59200.0","volume":"0.006","funds":"355.2","market":"btchkd","created_at":"2018-08-01T23:26:43+08:00","at":1533137203,"side":"up"},{"id":224742,"price":"59200.0","volume":"0.331","funds":"19595.2","market":"btchkd","created_at":"2018-08-01T21:53:42+08:00","at":1533131622,"side":"up"},{"id":224660,"price":"59200.0","volume":"0.379","funds":"22436.8","market":"btchkd","created_at":"2018-08-01T18:42:54+08:00","at":1533120174,"side":"up"},{"id":224626,"price":"59200.0","volume":"1.0","funds":"59200.0","market":"btchkd","created_at":"2018-08-01T18:02:38+08:00","at":1533117758,"side":"up"},{"id":224581,"price":"59190.0","volume":"0.295","funds":"17461.05","market":"btchkd","created_at":"2018-08-01T16:52:11+08:00","at":1533113531,"side":"up"},{"id":224580,"price":"59000.0","volume":"0.012","funds":"708.0","market":"btchkd","created_at":"2018-08-01T16:52:11+08:00","at":1533113531,"side":"up"},{"id":224579,"price":"59000.0","volume":"0.463","funds":"27317.0","market":"btchkd","created_at":"2018-08-01T16:52:11+08:00","at":1533113531,"side":"up"},{"id":224575,"price":"58990.0","volume":"0.575","funds":"33919.25","market":"btchkd","created_at":"2018-08-01T16:46:16+08:00","at":1533113176,"side":"up"},{"id":224571,"price":"58990.0","volume":"0.062","funds":"3657.38","market":"btchkd","created_at":"2018-08-01T16:41:02+08:00","at":1533112862,"side":"up"},{"id":224568,"price":"58990.0","volume":"0.497","funds":"29318.03","market":"btchkd","created_at":"2018-08-01T16:37:29+08:00","at":1533112649,"side":"up"},{"id":224567,"price":"58900.0","volume":"0.561","funds":"33042.9","market":"btchkd","created_at":"2018-08-01T16:37:29+08:00","at":1533112649,"side":"up"},{"id":224544,"price":"58100.0","volume":"0.129","funds":"7494.9","market":"btchkd","created_at":"2018-08-01T16:00:15+08:00","at":1533110415,"side":"up"},{"id":224534,"price":"58100.0","volume":"0.542","funds":"31490.2","market":"btchkd","created_at":"2018-08-01T15:49:16+08:00","at":1533109756,"side":"down"},{"id":224533,"price":"58103.0","volume":"0.008","funds":"464.824","market":"btchkd","created_at":"2018-08-01T15:49:16+08:00","at":1533109756,"side":"down"},{"id":224526,"price":"58200.0","volume":"0.2","funds":"11640.0","market":"btchkd","created_at":"2018-08-01T15:40:40+08:00","at":1533109240,"side":"up"},{"id":224471,"price":"58002.0","volume":"0.7","funds":"40601.4","market":"btchkd","created_at":"2018-08-01T14:25:46+08:00","at":1533104746,"side":"up"},{"id":224470,"price":"58002.0","volume":"0.069","funds":"4002.138","market":"btchkd","created_at":"2018-08-01T14:12:38+08:00","at":1533103958,"side":"up"},{"id":224468,"price":"58001.0","volume":"0.687","funds":"39846.687","market":"btchkd","created_at":"2018-08-01T13:13:16+08:00","at":1533100396,"side":"down"},{"id":224467,"price":"58010.0","volume":"0.401","funds":"23262.01","market":"btchkd","created_at":"2018-08-01T13:12:03+08:00","at":1533100323,"side":"up"},{"id":224465,"price":"58010.0","volume":"0.057","funds":"3306.57","market":"btchkd","created_at":"2018-08-01T12:50:23+08:00","at":1533099023,"side":"up"},{"id":224464,"price":"58000.0","volume":"0.245","funds":"14210.0","market":"btchkd","created_at":"2018-08-01T12:32:09+08:00","at":1533097929,"side":"down"},{"id":224463,"price":"58500.0","volume":"0.085","funds":"4972.5","market":"btchkd","created_at":"2018-08-01T12:31:32+08:00","at":1533097892,"side":"up"},{"id":224462,"price":"58500.0","volume":"0.004","funds":"234.0","market":"btchkd","created_at":"2018-08-01T12:30:31+08:00","at":1533097831,"side":"down"},{"id":224460,"price":"59000.0","volume":"2.106","funds":"124254.0","market":"btchkd","created_at":"2018-08-01T12:25:25+08:00","at":1533097525,"side":"up"},{"id":224459,"price":"58999.0","volume":"1.099","funds":"64839.901","market":"btchkd","created_at":"2018-08-01T12:25:24+08:00","at":1533097524,"side":"up"},{"id":224441,"price":"58500.0","volume":"0.131","funds":"7663.5","market":"btchkd","created_at":"2018-08-01T12:06:48+08:00","at":1533096408,"side":"up"},{"id":224408,"price":"58500.0","volume":"0.315","funds":"18427.5","market":"btchkd","created_at":"2018-08-01T11:27:00+08:00","at":1533094020,"side":"up"},{"id":224407,"price":"58500.0","volume":"0.214","funds":"12519.0","market":"btchkd","created_at":"2018-08-01T11:27:00+08:00","at":1533094020,"side":"down"},{"id":224369,"price":"59000.0","volume":"0.086","funds":"5074.0","market":"btchkd","created_at":"2018-08-01T10:32:08+08:00","at":1533090728,"side":"up"},{"id":224367,"price":"58500.0","volume":"0.036","funds":"2106.0","market":"btchkd","created_at":"2018-08-01T10:32:08+08:00","at":1533090728,"side":"up"},{"id":224366,"price":"58500.0","volume":"0.019","funds":"1111.5","market":"btchkd","created_at":"2018-08-01T10:32:08+08:00","at":1533090728,"side":"down"},{"id":224365,"price":"58505.0","volume":"0.02","funds":"1170.1","market":"btchkd","created_at":"2018-08-01T10:29:10+08:00","at":1533090550,"side":"down"},{"id":224364,"price":"58888.0","volume":"0.004","funds":"235.552","market":"btchkd","created_at":"2018-08-01T10:28:51+08:00","at":1533090531,"side":"up"},{"id":224363,"price":"58888.0","volume":"0.08","funds":"4711.04","market":"btchkd","created_at":"2018-08-01T10:23:44+08:00","at":1533090224,"side":"down"},{"id":224362,"price":"59000.0","volume":"0.799","funds":"47141.0","market":"btchkd","created_at":"2018-08-01T10:17:24+08:00","at":1533089844,"side":"up"},{"id":224361,"price":"59000.0","volume":"0.046","funds":"2714.0","market":"btchkd","created_at":"2018-08-01T10:17:19+08:00","at":1533089839,"side":"up"},{"id":224358,"price":"59000.0","volume":"0.3","funds":"17700.0","market":"btchkd","created_at":"2018-08-01T10:14:34+08:00","at":1533089674,"side":"up"},{"id":224357,"price":"59000.0","volume":"0.084","funds":"4956.0","market":"btchkd","created_at":"2018-08-01T10:14:24+08:00","at":1533089664,"side":"up"},{"id":224356,"price":"59000.0","volume":"0.033","funds":"1947.0","market":"btchkd","created_at":"2018-08-01T10:13:59+08:00","at":1533089639,"side":"up"},{"id":224355,"price":"59000.0","volume":"0.25","funds":"14750.0","market":"btchkd","created_at":"2018-08-01T10:13:51+08:00","at":1533089631,"side":"down"},{"id":224354,"price":"59001.0","volume":"0.284","funds":"16756.284","market":"btchkd","created_at":"2018-08-01T10:13:10+08:00","at":1533089590,"side":"up"},{"id":224353,"price":"59001.0","volume":"0.2","funds":"11800.2","market":"btchkd","created_at":"2018-08-01T10:10:23+08:00","at":1533089423,"side":"down"},{"id":224350,"price":"59001.01","volume":"0.05","funds":"2950.0505","market":"btchkd","created_at":"2018-08-01T10:06:46+08:00","at":1533089206,"side":"up"},{"id":224348,"price":"59001.01","volume":"0.179","funds":"10561.18079","market":"btchkd","created_at":"2018-08-01T09:56:50+08:00","at":1533088610,"side":"up"},{"id":224347,"price":"59001.01","volume":"0.87","funds":"51330.8787","market":"btchkd","created_at":"2018-08-01T09:56:01+08:00","at":1533088561,"side":"up"},{"id":224346,"price":"59001.01","volume":"0.184","funds":"10856.18584","market":"btchkd","created_at":"2018-08-01T09:55:41+08:00","at":1533088541,"side":"up"},{"id":224345,"price":"59001.01","volume":"0.421","funds":"24839.42521","market":"btchkd","created_at":"2018-08-01T09:54:39+08:00","at":1533088479,"side":"up"},{"id":224344,"price":"59001.01","volume":"0.5","funds":"29500.505","market":"btchkd","created_at":"2018-08-01T09:54:31+08:00","at":1533088471,"side":"up"},{"id":224343,"price":"59001.01","volume":"0.13","funds":"7670.1313","market":"btchkd","created_at":"2018-08-01T09:52:10+08:00","at":1533088330,"side":"up"}]'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 16:58:14 GMT
+recorded_with: VCR 4.0.0

@@ -32,9 +32,6 @@ module Cryptoexchange
             t.target.casecmp(market_pair.target) == 0
         end
       end
-
-      rescue NoMethodError => e
-        raise Cryptoexchange::ResultParseError, { response: "General no method error thrown" }
     end
 
     def available_exchanges

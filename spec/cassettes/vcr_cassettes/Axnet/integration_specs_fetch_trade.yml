@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ax.net/api/return24Trades?market=TUSD_ETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ax.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 27 Aug 2018 14:50:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '244'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d69ecafff1cc452db024b8398db4087ea1535381401; expires=Tue, 27-Aug-19
+        14:50:01 GMT; path=/; domain=.ax.net; HttpOnly; Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Surrogate-Control:
+      - no-store
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, proxy-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Etag:
+      - W/"f4-ySu+aqKkPK8q6WiUdA8M6OmM5wU"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 450f591f290975d6-ARN
+    body:
+      encoding: UTF-8
+      string: '[{"token":"TUSD","basetoken":"ETH","type":"sell","price":"0.001","amount":"160","total":"0.16","timestamp":1535345107226},{"token":"TUSD","basetoken":"ETH","type":"sell","price":"0.0015","amount":"120","total":"0.18","timestamp":1535345102856}]'
+    http_version: 
+  recorded_at: Mon, 27 Aug 2018 14:49:26 GMT
+recorded_with: VCR 4.0.0

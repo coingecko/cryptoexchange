@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://peatio.cryptagio.com/api/v2/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - peatio.cryptagio.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 24 Jun 2018 04:06:17 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1605'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db26f766f6cf68b7a0371ecc98c967b621529813176; expires=Mon, 24-Jun-19
+        04:06:16 GMT; path=/; domain=.cryptagio.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Version:
+      - HTTP/1.0
+      Host:
+      - peatio.cryptagio.com
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - MY
+      X-Forwarded-For:
+      - 175.137.97.165
+      X-Forwarded-Proto:
+      - https
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 175.137.97.165
+      X-Forwarded-Host:
+      - peatio.cryptagio.com
+      Etag:
+      - W/"80a608803bdc09117b177526e960c131"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7b1abff8-116a-40b4-bcf8-786b62d59fd1
+      X-Runtime:
+      - '0.056130'
+      Strict-Transport-Security:
+      - max-age=2592000; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42fc521face530cc-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"venbtc":{"at":1529813177,"ticker":{"buy":"0.00043247","sell":"0.00043479","low":"0.00043456","high":"0.00046194","last":"0.00043456","vol":"1175.0"}},"omgbtc":{"at":1529813177,"ticker":{"buy":"0.001298","sell":"0.0013039","low":"0.0013025","high":"0.0013695","last":"0.0013025","vol":"465.69"}},"veneth":{"at":1529813177,"ticker":{"buy":"0.00566322","sell":"0.00570265","low":"0.00568226","high":"0.00606061","last":"0.00568226","vol":"1211.0"}},"omgeth":{"at":1529813177,"ticker":{"buy":"0.017017","sell":"0.017141","low":"0.016967","high":"0.018079","last":"0.017079","vol":"460.93"}},"ethbtc":{"at":1529813177,"ticker":{"buy":"0.076185","sell":"0.076486","low":"0.075781","high":"0.077429","last":"0.076489","vol":"6.0422"}},"omgusdt":{"at":1529813177,"ticker":{"buy":"0.0003","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"ethusdt":{"at":1529813177,"ticker":{"buy":"458.32","sell":"459.84","low":"455.68","high":"480.48","last":"461.01","vol":"5.7481"}},"btcusdt":{"at":1529813177,"ticker":{"buy":"6006.3","sell":"6028.8","low":"6010.8","high":"6250.5","last":"6017.6","vol":"4.1125"}},"hoteth":{"at":1529813177,"ticker":{"buy":"0.000001","sell":"0.0","low":"0.0","high":"0.0","last":"0.000001","vol":"0.0"}},"hotbtc":{"at":1529813177,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.00000017","vol":"0.0"}},"0xbtcbtc":{"at":1529813177,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0003948","vol":"0.0"}},"0xbtceth":{"at":1529813177,"ticker":{"buy":"0.002","sell":"0.002302","low":"0.002","high":"0.00225","last":"0.002","vol":"1.0"}}}'
+    http_version: 
+  recorded_at: Sun, 24 Jun 2018 04:06:24 GMT
+recorded_with: VCR 4.0.0

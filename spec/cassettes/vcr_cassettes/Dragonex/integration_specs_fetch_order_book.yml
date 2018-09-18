@@ -1,0 +1,101 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openapi.dragonex.io/api/v1/market/sell/?symbol_id=101
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - openapi.dragonex.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 09 Sep 2018 03:17:43 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '486'
+      Connection:
+      - close
+      Mycode:
+      - '1'
+      Et:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 09 Sep 2018 03:17:42 GMT
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"ok": true, "code": 1, "data": [{"price": "6161.9927", "volume": "0.0004"},
+        {"price": "6179.7223", "volume": "0.2400"}, {"price": "6181.0147", "volume":
+        "0.0450"}, {"price": "6182.3124", "volume": "0.0660"}, {"price": "6183.6219",
+        "volume": "0.1550"}, {"price": "6184.9141", "volume": "0.3318"}, {"price":
+        "6186.2150", "volume": "0.0400"}, {"price": "6187.5187", "volume": "0.0400"},
+        {"price": "6188.8106", "volume": "0.0200"}, {"price": "6190.1149", "volume":
+        "0.1378"}], "msg": "ok"}'
+    http_version: 
+  recorded_at: Sun, 09 Sep 2018 03:17:43 GMT
+- request:
+    method: get
+    uri: https://openapi.dragonex.io/api/v1/market/buy/?symbol_id=101
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - openapi.dragonex.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 09 Sep 2018 03:17:43 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '486'
+      Connection:
+      - close
+      Mycode:
+      - '1'
+      Et:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Sun, 09 Sep 2018 03:17:42 GMT
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"ok": true, "code": 1, "data": [{"price": "6160.7577", "volume": "0.0038"},
+        {"price": "6160.0006", "volume": "0.1333"}, {"price": "6159.7145", "volume":
+        "0.1381"}, {"price": "6150.0000", "volume": "0.0113"}, {"price": "6142.5676",
+        "volume": "0.0725"}, {"price": "6141.3388", "volume": "0.1100"}, {"price":
+        "6140.0311", "volume": "0.2400"}, {"price": "6138.7247", "volume": "0.1800"},
+        {"price": "6137.4328", "volume": "0.0522"}, {"price": "6136.1086", "volume":
+        "0.2567"}], "msg": "ok"}'
+    http_version: 
+  recorded_at: Sun, 09 Sep 2018 03:17:43 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kline.zbg.com/api/data/v1/trades?marketName=ETH_USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - kline.zbg.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Fri, 07 Sep 2018 09:59:21 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1241'
+      Connection:
+      - close
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Clienttype,Sign,Timestamp,Userid
+      Access-Control-Allow-Methods:
+      - GET,POST
+      Access-Control-Allow-Credentials:
+      - 'true'
+    body:
+      encoding: UTF-8
+      string: '{"datas":[["T","330","1536314358","ETH_USDT","bid","224.67","0.003"],["T","330","1536314344","ETH_USDT","ask","224.25","0.003"],["T","330","1536314339","ETH_USDT","bid","224.5","0.038"],["T","330","1536314334","ETH_USDT","bid","224.49","0.056"],["T","330","1536314329","ETH_USDT","ask","224.51","0.042"],["T","330","1536314328","ETH_USDT","bid","224.49","0.002"],["T","330","1536314324","ETH_USDT","bid","224.5","0.023"],["T","330","1536314320","ETH_USDT","bid","224.44","0.065"],["T","330","1536314318","ETH_USDT","ask","224.51","0.002"],["T","330","1536314311","ETH_USDT","ask","224.49","0.069"],["T","330","1536314303","ETH_USDT","ask","224.27","0.002"],["T","330","1536314302","ETH_USDT","ask","224.5","0.078"],["T","330","1536314292","ETH_USDT","bid","224.3","0.002"],["T","330","1536314285","ETH_USDT","ask","224.41","0.003"],["T","330","1536314281","ETH_USDT","bid","224.5","0.160"],["T","330","1536314276","ETH_USDT","ask","224.5","0.203"],["T","330","1536314272","ETH_USDT","bid","224.5","0.175"],["T","330","1536314270","ETH_USDT","bid","224.61","0.004"],["T","330","1536314269","ETH_USDT","bid","224.5","0.162"],["T","330","1536314264","ETH_USDT","bid","224.47","0.150"]],"resMsg":{"code":"1","method":null,"message":"success
+        !"}}'
+    http_version: 
+  recorded_at: Fri, 07 Sep 2018 09:59:21 GMT
+recorded_with: VCR 4.0.0

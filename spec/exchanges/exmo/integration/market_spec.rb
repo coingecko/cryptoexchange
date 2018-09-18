@@ -58,4 +58,9 @@ RSpec.describe 'Exmo integration specs' do
     expect(trade.payload).to_not be nil
     expect(trade.market).to eq 'exmo'
   end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'exmo', base: btc_usd_pair.base, target: btc_usd_pair.target
+    expect(trade_page_url).to eq "https://exmo.com/en/trade#?pair=BTC_USD"
+  end
 end

@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cryptaldash.com/v1/orderbook/CRDBTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.cryptaldash.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 05 Sep 2018 13:31:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d102852dec82c1878eda680ab90f8b2331536154307; expires=Thu, 05-Sep-19
+        13:31:47 GMT; path=/; domain=.cryptaldash.com; HttpOnly
+      Strict-Transport-Security:
+      - max-age=2592000
+      Api-Supported-Versions:
+      - '1.0'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 45590ee76d33bb8a-LHR
+    body:
+      encoding: UTF-8
+      string: '{"status":1,"message":"OK","symbol":"CRDBTC","asks":[{"price":0.000003150,"amount":16460.209469806},{"price":0.000003110,"amount":1519.544000000},{"price":0.000002900,"amount":2161.601325000},{"price":0.000002500,"amount":9858.756920818},{"price":0.000001800,"amount":349105.594244910},{"price":0.000001790,"amount":52298.222625000},{"price":0.000001780,"amount":22570.226900000},{"price":0.000001770,"amount":14340.009206250},{"price":0.000001760,"amount":21510.014454670},{"price":0.000001750,"amount":21625.016390569}],"bids":[{"price":0.000000860,"amount":150000.000000000},{"price":0.000000870,"amount":150000.000000000},{"price":0.000000880,"amount":181003.000000000},{"price":0.000000890,"amount":31899.000000000},{"price":0.000000900,"amount":1900000.000000000},{"price":0.000001000,"amount":709087.000000000},{"price":0.000001010,"amount":351312.000000000},{"price":0.000001030,"amount":31899.000000000},{"price":0.000001040,"amount":849756.292521649},{"price":0.000001050,"amount":884381.309429551}]}'
+    http_version: 
+  recorded_at: Wed, 05 Sep 2018 13:31:47 GMT
+recorded_with: VCR 4.0.0

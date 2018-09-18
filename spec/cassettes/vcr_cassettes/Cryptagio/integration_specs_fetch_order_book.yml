@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://peatio.cryptagio.com/api/v2/order_book?market=omgbtc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - peatio.cryptagio.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 24 Jun 2018 04:30:28 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '8913'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0333a55f9a89e1064b1cad3ce12e5ce81529814627; expires=Mon, 24-Jun-19
+        04:30:27 GMT; path=/; domain=.cryptagio.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Version:
+      - HTTP/1.0
+      Host:
+      - peatio.cryptagio.com
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - MY
+      X-Forwarded-For:
+      - 175.137.97.165
+      X-Forwarded-Proto:
+      - https
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 175.137.97.165
+      X-Forwarded-Host:
+      - peatio.cryptagio.com
+      Etag:
+      - W/"da8f697fc7d083b38eceefc0025c1cd3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - de794017-9ed9-423a-88f9-d96d440a5acc
+      X-Runtime:
+      - '0.031759'
+      Strict-Transport-Security:
+      - max-age=2592000; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 42fc758cfb8430ea-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"asks":[{"id":4170110,"side":"sell","ord_type":"limit","price":"0.0012839","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814570,"origin_volume":"1.0","remaining_volume":"1.0","executed_volume":"0.0","trades_count":0},{"id":4170685,"side":"sell","ord_type":"limit","price":"0.0012849","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814608,"origin_volume":"1.19","remaining_volume":"1.19","executed_volume":"0.0","trades_count":0},{"id":4170878,"side":"sell","ord_type":"limit","price":"0.0012859","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814619,"origin_volume":"1.2","remaining_volume":"1.2","executed_volume":"0.0","trades_count":0},{"id":4169246,"side":"sell","ord_type":"limit","price":"0.0012869","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814508,"origin_volume":"1.57","remaining_volume":"1.57","executed_volume":"0.0","trades_count":0},{"id":4167754,"side":"sell","ord_type":"limit","price":"0.0012879","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814398,"origin_volume":"2.27","remaining_volume":"2.27","executed_volume":"0.0","trades_count":0},{"id":4170011,"side":"sell","ord_type":"limit","price":"0.0012889","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814562,"origin_volume":"1.69","remaining_volume":"1.69","executed_volume":"0.0","trades_count":0},{"id":4163650,"side":"sell","ord_type":"limit","price":"0.0012899","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814104,"origin_volume":"1.27","remaining_volume":"1.27","executed_volume":"0.0","trades_count":0},{"id":4164930,"side":"sell","ord_type":"limit","price":"0.0012909","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814194,"origin_volume":"0.78","remaining_volume":"0.78","executed_volume":"0.0","trades_count":0},{"id":4167338,"side":"sell","ord_type":"limit","price":"0.0012919","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814373,"origin_volume":"0.82","remaining_volume":"0.82","executed_volume":"0.0","trades_count":0},{"id":4163027,"side":"sell","ord_type":"limit","price":"0.0012969","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814063,"origin_volume":"2.88","remaining_volume":"2.88","executed_volume":"0.0","trades_count":0},{"id":4167719,"side":"sell","ord_type":"limit","price":"0.0012979","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814396,"origin_volume":"0.8","remaining_volume":"0.8","executed_volume":"0.0","trades_count":0},{"id":4165692,"side":"sell","ord_type":"limit","price":"0.0013019","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814253,"origin_volume":"1.37","remaining_volume":"1.37","executed_volume":"0.0","trades_count":0},{"id":4170226,"side":"sell","ord_type":"limit","price":"0.0013049","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814578,"origin_volume":"0.82","remaining_volume":"0.82","executed_volume":"0.0","trades_count":0},{"id":4170709,"side":"sell","ord_type":"limit","price":"0.0013059","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814609,"origin_volume":"1.28","remaining_volume":"1.28","executed_volume":"0.0","trades_count":0},{"id":4170747,"side":"sell","ord_type":"limit","price":"0.0013069","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814612,"origin_volume":"1.06","remaining_volume":"1.06","executed_volume":"0.0","trades_count":0},{"id":3018511,"side":"sell","ord_type":"limit","price":"0.0123456","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529681369,"origin_volume":"0.01","remaining_volume":"0.01","executed_volume":"0.0","trades_count":0}],"bids":[{"id":4170865,"side":"buy","ord_type":"limit","price":"0.001275","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814619,"origin_volume":"1.29","remaining_volume":"1.29","executed_volume":"0.0","trades_count":0},{"id":4170513,"side":"buy","ord_type":"limit","price":"0.001274","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814597,"origin_volume":"1.7","remaining_volume":"1.7","executed_volume":"0.0","trades_count":0},{"id":4170178,"side":"buy","ord_type":"limit","price":"0.001272","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814575,"origin_volume":"1.24","remaining_volume":"1.24","executed_volume":"0.0","trades_count":0},{"id":4163269,"side":"buy","ord_type":"limit","price":"0.001271","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814079,"origin_volume":"1.03","remaining_volume":"1.03","executed_volume":"0.0","trades_count":0},{"id":4163554,"side":"buy","ord_type":"limit","price":"0.00127","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814098,"origin_volume":"1.24","remaining_volume":"1.24","executed_volume":"0.0","trades_count":0},{"id":4163557,"side":"buy","ord_type":"limit","price":"0.001269","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814098,"origin_volume":"0.72","remaining_volume":"0.72","executed_volume":"0.0","trades_count":0},{"id":4166767,"side":"buy","ord_type":"limit","price":"0.0012681","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814334,"origin_volume":"1.48","remaining_volume":"1.48","executed_volume":"0.0","trades_count":0},{"id":4168744,"side":"buy","ord_type":"limit","price":"0.0012671","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814470,"origin_volume":"1.71","remaining_volume":"1.71","executed_volume":"0.0","trades_count":0},{"id":4167409,"side":"buy","ord_type":"limit","price":"0.0012661","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814376,"origin_volume":"1.0","remaining_volume":"1.0","executed_volume":"0.0","trades_count":0},{"id":4168999,"side":"buy","ord_type":"limit","price":"0.0012651","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814490,"origin_volume":"2.29","remaining_volume":"2.29","executed_volume":"0.0","trades_count":0},{"id":4169380,"side":"buy","ord_type":"limit","price":"0.0012641","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814518,"origin_volume":"1.0","remaining_volume":"1.0","executed_volume":"0.0","trades_count":0},{"id":4170089,"side":"buy","ord_type":"limit","price":"0.0012631","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814568,"origin_volume":"1.08","remaining_volume":"1.08","executed_volume":"0.0","trades_count":0},{"id":4170092,"side":"buy","ord_type":"limit","price":"0.0012621","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814569,"origin_volume":"1.15","remaining_volume":"1.15","executed_volume":"0.0","trades_count":0},{"id":4170338,"side":"buy","ord_type":"limit","price":"0.0012611","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814585,"origin_volume":"1.96","remaining_volume":"1.96","executed_volume":"0.0","trades_count":0},{"id":4170988,"side":"buy","ord_type":"limit","price":"0.0012601","stop_price":null,"avg_price":"0.0","state":"wait","base_unit":"omg","quote_unit":"btc","market":"omgbtc","created_at":1529814628,"origin_volume":"1.11","remaining_volume":"1.11","executed_volume":"0.0","trades_count":0}]}'
+    http_version: 
+  recorded_at: Sun, 24 Jun 2018 04:30:28 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://p2pb2b.io/api/v2/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - p2pb2b.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 03 Sep 2018 15:55:17 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - XSRF-TOKEN=eyJpdiI6IkhSd0xSS3VXY1d5NEJKaFVYTk5HcHc9PSIsInZhbHVlIjoiREoxM291a2dYY0hwZjM0MEh5UXZJaXhMNFNiOHVZc2dwbG1obE9YRGpoeGJwbkpidHpZS0RKYVBsdU9ycjdlTiIsIm1hYyI6IjRlNjZlZTNlOTZiNzAwNzgyZDgzYzBmMzBiY2IwYmEwMWJmMzlhZGZlMzU5MTNmZGE2NWE1NTM5YWZiMjM1YmEifQ%3D%3D;
+        expires=Wed, 10-Aug-2118 15:55:17 GMT; Max-Age=3153600000; path=/
+      - __cfduid=d759d7adf1fb3b4bcab8e4d5e6ce36c6c1535990117; expires=Tue, 03-Sep-19
+        15:55:17 GMT; path=/; domain=.p2pb2b.io; HttpOnly; Secure
+      - p2pb2b_session=eyJpdiI6IjF6dkdYXC9PenM0WElJRnVjUzVWMkVBPT0iLCJ2YWx1ZSI6IkJLZWdhZHBicUF4NE55ZWE5QjFuRkRaclN4ZFN4SERoNkNXT2hubHhlNTdndGwyWHNGRGk5a2UwU0NTQ1VYZFIiLCJtYWMiOiI5MzhhNzViYTUyMDUzZWU4OTBjM2JiNDMxMjAxMjdkMTRhMWY4YTBlMzBmYzhmOTlmNjA5MDY1NWVhYmQ5ZTJiIn0%3D;
+        expires=Wed, 10-Aug-2118 15:55:17 GMT; Max-Age=3153600000; path=/; httponly
+      Cache-Control:
+      - no-cache, private
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4549665a4fb26abb-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ethbtc":{"at":1535990117,"ticker":{"buy":"0.0355111","sell":"0.04370032","low":"0.03962994","high":"0.04045221","last":"0.03962994","vol":"228.2840825"}},"btcusd":{"at":1535990117,"ticker":{"buy":"5987.0982132","sell":"8192.62480736","low":"7263","high":"8029.99999999","last":"7437.99999998","vol":"323.66263496"}},"ethusd":{"at":1535990117,"ticker":{"buy":"240.000001","sell":"511.000019","low":"289.99999964","high":"298.22624322","last":"293.53233821","vol":"118.76230784"}},"bccbtc":{"at":1535990117,"ticker":{"buy":"0.0775","sell":"0.09585719","low":"0.08682723","high":"0.08953341","last":"0.08685292","vol":"1053.87945517"}},"btgbtc":{"at":1535990117,"ticker":{"buy":"0.00185008","sell":"0.00242255","low":"0.00211013","high":"0.00242254","last":"0.0021998","vol":"2058.56142183"}},"ltcbtc":{"at":1535990117,"ticker":{"buy":"0.00800001","sell":"0.0098553","low":"0.008938","high":"0.009093","last":"0.0089558","vol":"1095.01175671"}},"dogebtc":{"at":1535990117,"ticker":{"buy":"0.00000068","sell":"0.00000077","low":"0.00000069","high":"0.00000077","last":"0.00000073","vol":"36921849.59660076"}},"atbbtc":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"0.00000454","high":"0.00000467","last":"0.00000463","vol":"218642.20815851"}},"etcbtc":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"0.00183052","high":"0.00197268","last":"0.00196084","vol":"588.14126196"}},"bnbbtc":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"0.00150001","high":"0.00162956","last":"0.00162886","vol":"1150.38860325"}},"tusdbtc":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"0.00013895","high":"0.00015499","last":"0.00013921","vol":"11240.90880106"}},"echtbtc":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"0.0000006","high":"0.0000006","last":"0.0000006","vol":"1989559.54772144"}},"bccusd":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"634.5","high":"659.99999995","last":"654.39610217","vol":"222.88407853"}},"btgusd":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"15.45502073","high":"16.49999988","last":"16","vol":"438.83210476"}},"ltcusd":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"65.3","high":"67.75183569","last":"67.5373675","vol":"223.81244784"}},"dogeusd":{"at":1535990117,"ticker":{"buy":"0.005","sell":"0.00554462","low":"0.00507953","high":"0.00579999","last":"0.00532829","vol":"11712488.81580538"}},"atbusd":{"at":1535990117,"ticker":{"buy":"0.02689189","sell":"0.04499999","low":"0.04199998","high":"0.04499998","last":"0.04199998","vol":"1928085.58679279"}},"etcusd":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"13.43","high":"14.53759999","last":"14.53759999","vol":"650.675289"}},"bnbusd":{"at":1535990117,"ticker":{"buy":"1.40000001","sell":"13.6000271","low":"11.91809397","high":"13.39744851","last":"12.19949334","vol":"1109.60016393"}},"tusdusd":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"1.09958534","high":"1.10924263","last":"1.10900941","vol":"10854.67379438"}},"lnkusd":{"at":1535990117,"ticker":{"buy":"0","sell":"10","low":"0","high":"0","last":"0","vol":"0"}},"echtusd":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"0.00474601","high":"0.00480234","last":"0.00474601","vol":"2412956.61422921"}},"bcceth":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"2.18906858","high":"2.23632667","last":"2.2353905","vol":"226.66862308"}},"btgeth":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"0.053","high":"0.05954813","last":"0.0549999","vol":"225.86287876"}},"ltceth":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"0.22476563","high":"0.22774086","last":"0.226","vol":"201.85343517"}},"dogeeth":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"0.00001703","high":"0.00001926","last":"0.00001833","vol":"11631834.27083273"}},"atbeth":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"0.00010999","high":"0.00011","last":"0.00010999","vol":"1598335.09280249"}},"etceth":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"0.04545853","high":"0.0499","last":"0.0499","vol":"219.03123511"}},"bnbeth":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"0.04140738","high":"0.04258759","last":"0.04140738","vol":"421.02662592"}},"tusdeth":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"0.00357568","high":"0.00379551","last":"0.00362374","vol":"4469.90129638"}},"echteth":{"at":1535990117,"ticker":{"buy":"0","sell":"0","low":"0.00001618","high":"0.00001631","last":"0.00001618","vol":"2176853.20747989"}}}'
+    http_version: 
+  recorded_at: Mon, 03 Sep 2018 15:55:17 GMT
+recorded_with: VCR 4.0.0

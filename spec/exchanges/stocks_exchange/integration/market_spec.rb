@@ -28,4 +28,9 @@ RSpec.describe 'StocksExchange integration specs' do
     expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
     expect(ticker.payload).to_not be nil
   end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'stocks_exchange', base: eth_btc_pair.base, target: eth_btc_pair.target
+    expect(trade_page_url).to eq "https://app.stocks.exchange/en/basic-trade/pair/BTC/ETH/1D"
+  end
 end

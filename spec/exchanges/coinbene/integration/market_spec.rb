@@ -14,6 +14,11 @@ RSpec.describe 'Coinbene integration specs' do
     expect(pair.market).to eq 'coinbene'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'coinbene', base: eth_btc_pair.base, target: eth_btc_pair.target
+    expect(trade_page_url).to eq "https://www.coinbene.com/#/market?pairId=ETHBTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(eth_btc_pair)
 
@@ -23,8 +28,8 @@ RSpec.describe 'Coinbene integration specs' do
     expect(ticker.last).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
+    
     expect(ticker.payload).to_not be nil
   end
 

@@ -41,7 +41,7 @@ module Cryptoexchange::Exchanges
           ticker.ask       = NumericHelper.to_d(HashHelper.dig(output, 'ask', 'price'))
           ticker.volume    = NumericHelper.to_d(output['volume'].to_f)
           ticker.change    = NumericHelper.to_d(output['daily_change_perc'])
-          ticker.timestamp = Time.now.to_i
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end
