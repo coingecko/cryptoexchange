@@ -5,6 +5,8 @@ module Cryptoexchange
                     :bid, :ask, :high, :low, :change,
                     :volume, :timestamp, :payload
 
+      # Volume is always in base
+
       def initialize(params = {})
         params.each { |key, value| send "#{key}=", value }
       end
