@@ -58,6 +58,7 @@ Or install it yourself as:
 | Bithash           | Y       | Y          | Y       |         | Y           | Y        | bithash           |
 | Bithumb           | Y       |            |         |         | Y           |          | bithumb           |
 | Bitibu            | Y       | Y          | Y       |         | Y           | Y        | bitibu            |
+| Bitinfi           | Y       | Y          |         |         | Y           |          | bitinfi           |
 | Bitinka           | Y       | Y          |         |         | Y           |          | bitinka           |
 | Bitkonan          | Y       |            |         |         | User-Defined|          | bitkonan          |
 | Bitkub            | Y       | Y          | Y       |         | Y           | Y        | bitkub            |
