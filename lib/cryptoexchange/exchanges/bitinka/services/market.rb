@@ -18,28 +18,35 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          output.map do |pair|
-            base, target =  pair[1]['volumen24hours'].keys
-            market_pair  = Cryptoexchange::Models::MarketPair.new(
-              base:   base,
-              target: target,
-              market: Bitinka::Market::NAME
-            )
-            adapt(market_pair, pair)
+          tickers = []
+          output.each do |base, pairs|
+            base = base
+            pairs.each do |pair_output|
+              target = pair_output["symbol"].split("_").last
+
+              market_pair = Cryptoexchange::Models::MarketPair.new(
+                base: base,
+                target: target,
+                market: Cryptoexchange::Exchanges::Bitinka::Market::NAME
+              )
+              tickers << adapt(market_pair, pair_output)
+            end
           end
+
+          tickers
         end
 
-        def adapt(market_pair, output)
+        def adapt(market_pair, pair_output)
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
-          ticker.market    = Bitinka::Market::NAME
-          ticker.last      = NumericHelper.to_d(output[1]['last'].to_f)
-          ticker.bid       = NumericHelper.to_d(output[1]['bid'].to_f)
-          ticker.ask       = NumericHelper.to_d(output[1]['ask'].to_f)
-          ticker.volume    = NumericHelper.to_d(output[1]['volumen24hours'].flatten[1].to_f)
+          ticker.market    = Cryptoexchange::Exchanges::Bitinka::Market::NAME
+          ticker.last      = NumericHelper.to_d(pair_output['lastPrice'])
+          ticker.bid       = NumericHelper.to_d(pair_output['bid'])
+          ticker.ask       = NumericHelper.to_d(pair_output['ask'])
+          ticker.volume    = NumericHelper.to_d(pair_output['volumen24hours'])
           ticker.timestamp = nil
-          ticker.payload   = output
+          ticker.payload   = pair_output
           ticker
         end
       end
