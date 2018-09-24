@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.palitanx.com/v1/public/getmarkethistory/BTC-LTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.palitanx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Sep 2018 10:59:02 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '5839'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d5e48c1b6034054adab0756f9a250085a1536922741; expires=Sat, 14-Sep-19
+        10:59:01 GMT; path=/; domain=.palitanx.com; HttpOnly
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains;
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - PHP/7.1.17
+      Cache-Control:
+      - no-cache, private, max-age=300
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '58'
+      Expires:
+      - Fri, 14 Sep 2018 11:04:02 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 45a2577e7e0cbc14-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"message":"","result":[{"Quantity":"0.22490209","Price":"0.0115","Total":"0.00258637","OrderType":"SELL","TimeStamp":"2018-08-11T02:00:47"},{"Quantity":"0.11455029","Price":"0.012","Total":"0.0013746","OrderType":"SELL","TimeStamp":"2018-08-07T16:29:47"},{"Quantity":"0.17464686","Price":"0.0115","Total":"0.00200844","OrderType":"SELL","TimeStamp":"2018-08-07T16:08:25"},{"Quantity":"0.19562138","Price":"0.0115","Total":"0.00224965","OrderType":"SELL","TimeStamp":"2018-08-07T15:08:26"},{"Quantity":"0.11520676","Price":"0.0115","Total":"0.00132488","OrderType":"SELL","TimeStamp":"2018-08-05T16:38:03"},{"Quantity":"0.37026824","Price":"0.0115","Total":"0.00425808","OrderType":"SELL","TimeStamp":"2018-08-04T12:17:41"},{"Quantity":"0.27231195","Price":"0.011","Total":"0.00299543","OrderType":"SELL","TimeStamp":"2018-08-04T12:13:56"},{"Quantity":"0.22768805","Price":"0.011","Total":"0.00250457","OrderType":"SELL","TimeStamp":"2018-08-04T11:36:44"},{"Quantity":"0.5","Price":"0.01075","Total":"0.005375","OrderType":"SELL","TimeStamp":"2018-08-04T11:04:35"},{"Quantity":"0.10142768","Price":"0.01","Total":"0.00101428","OrderType":"BUY","TimeStamp":"2018-08-03T16:17:31"},{"Quantity":"0.08805818","Price":"0.012","Total":"0.0010567","OrderType":"SELL","TimeStamp":"2018-07-31T10:16:57"},{"Quantity":"0.06326227","Price":"0.01772","Total":"0.00112101","OrderType":"SELL","TimeStamp":"2018-07-08T08:47:02"},{"Quantity":"0.09417691","Price":"0.017","Total":"0.00160101","OrderType":"SELL","TimeStamp":"2018-07-07T23:32:20"},{"Quantity":"0.1","Price":"0.017","Total":"0.0017","OrderType":"SELL","TimeStamp":"2018-07-07T12:48:10"},{"Quantity":"0.09314948","Price":"0.017","Total":"0.00158354","OrderType":"SELL","TimeStamp":"2018-07-07T12:48:10"},{"Quantity":"0.06800059","Price":"0.017","Total":"0.00115601","OrderType":"SELL","TimeStamp":"2018-07-06T09:44:51"},{"Quantity":"0.06554613","Price":"0.017","Total":"0.00111428","OrderType":"SELL","TimeStamp":"2018-07-05T20:11:42"},{"Quantity":"0.07166848","Price":"0.017","Total":"0.00121836","OrderType":"SELL","TimeStamp":"2018-07-05T20:05:12"},{"Quantity":"0.08478212","Price":"0.0169","Total":"0.00143282","OrderType":"SELL","TimeStamp":"2018-06-28T13:24:53"},{"Quantity":"0.3079528","Price":"0.0161","Total":"0.00495804","OrderType":"BUY","TimeStamp":"2018-05-30T12:43:42"},{"Quantity":"0.5","Price":"0.016205","Total":"0.0081025","OrderType":"BUY","TimeStamp":"2018-05-30T12:43:31"},{"Quantity":"0.28006356","Price":"0.016206","Total":"0.00453871","OrderType":"BUY","TimeStamp":"2018-05-30T12:43:20"},{"Quantity":"0.09283286","Price":"0.01772","Total":"0.001645","OrderType":"SELL","TimeStamp":"2018-05-17T07:26:19"},{"Quantity":"0.1699366","Price":"0.016206","Total":"0.00275399","OrderType":"BUY","TimeStamp":"2018-05-12T09:45:17"},{"Quantity":"0.26840164","Price":"0.01651111","Total":"0.00443161","OrderType":"BUY","TimeStamp":"2018-05-12T09:42:46"},{"Quantity":"0.11847829","Price":"0.01772","Total":"0.00209944","OrderType":"SELL","TimeStamp":"2018-05-11T05:38:21"},{"Quantity":"0.14678208","Price":"0.01771","Total":"0.00259951","OrderType":"SELL","TimeStamp":"2018-05-09T05:40:19"},{"Quantity":"0.05847199","Price":"0.01770999","Total":"0.00103554","OrderType":"SELL","TimeStamp":"2018-05-09T03:46:44"},{"Quantity":"0.09152801","Price":"0.01770999","Total":"0.00162096","OrderType":"SELL","TimeStamp":"2018-05-08T14:28:05"},{"Quantity":"0.18203856","Price":"0.01771","Total":"0.0032239","OrderType":"SELL","TimeStamp":"2018-05-08T11:33:10"},{"Quantity":"0.32235543","Price":"0.01621","Total":"0.00522538","OrderType":"BUY","TimeStamp":"2018-05-08T10:57:13"},{"Quantity":"0.16172906","Price":"0.01771","Total":"0.00286422","OrderType":"SELL","TimeStamp":"2018-05-08T10:06:06"},{"Quantity":"0.11004751","Price":"0.0161","Total":"0.00177176","OrderType":"BUY","TimeStamp":"2018-05-08T05:19:19"},{"Quantity":"0.19977833","Price":"0.01615","Total":"0.00322642","OrderType":"BUY","TimeStamp":"2018-05-08T05:18:38"},{"Quantity":"0.18190685","Price":"0.0165","Total":"0.00300146","OrderType":"BUY","TimeStamp":"2018-05-08T05:18:32"},{"Quantity":"0.4905497","Price":"0.01615","Total":"0.00792238","OrderType":"BUY","TimeStamp":"2018-05-07T06:12:39"},{"Quantity":"0.20154408","Price":"0.01771","Total":"0.00356935","OrderType":"SELL","TimeStamp":"2018-05-05T20:39:46"},{"Quantity":"0.27275018","Price":"0.017707","Total":"0.00482959","OrderType":"SELL","TimeStamp":"2018-05-05T20:39:45"},{"Quantity":"0.249","Price":"0.0165","Total":"0.0041085","OrderType":"SELL","TimeStamp":"2018-05-05T20:39:45"},{"Quantity":"0.25","Price":"0.0165","Total":"0.004125","OrderType":"BUY","TimeStamp":"2018-05-05T17:15:11"},{"Quantity":"0.20995776","Price":"0.01615","Total":"0.00339082","OrderType":"BUY","TimeStamp":"2018-05-04T13:55:12"},{"Quantity":"0.09971387","Price":"0.01615","Total":"0.00161038","OrderType":"BUY","TimeStamp":"2018-05-01T17:22:11"},{"Quantity":"0.10014613","Price":"0.01615","Total":"0.00161736","OrderType":"BUY","TimeStamp":"2018-05-01T17:22:10"},{"Quantity":"0.05724982","Price":"0.017707","Total":"0.00101372","OrderType":"SELL","TimeStamp":"2018-05-01T01:05:39"},{"Quantity":"0.09054881","Price":"0.0177065","Total":"0.0016033","OrderType":"SELL","TimeStamp":"2018-04-30T21:27:41"},{"Quantity":"0.39986","Price":"0.016151","Total":"0.00645814","OrderType":"BUY","TimeStamp":"2018-04-30T13:10:27"},{"Quantity":"0.582","Price":"0.0161","Total":"0.0093702","OrderType":"BUY","TimeStamp":"2018-04-29T10:37:34"},{"Quantity":"0.2493929","Price":"0.016124","Total":"0.00402121","OrderType":"BUY","TimeStamp":"2018-04-29T09:35:12"},{"Quantity":"0.06220355","Price":"0.016124","Total":"0.00100297","OrderType":"BUY","TimeStamp":"2018-04-29T09:35:12"},{"Quantity":"0.097","Price":"0.016125","Total":"0.00156413","OrderType":"BUY","TimeStamp":"2018-04-27T11:14:27"}]}'
+    http_version: 
+  recorded_at: Fri, 14 Sep 2018 10:59:02 GMT
+recorded_with: VCR 4.0.0

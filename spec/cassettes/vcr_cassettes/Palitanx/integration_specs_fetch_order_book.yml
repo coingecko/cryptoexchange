@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.palitanx.com/v1/public/getorderbook/BTC-LTC/both
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.palitanx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Sep 2018 10:59:01 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '369'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=df66c40c5dc4b18547eff6cc6de5202641536922739; expires=Sat, 14-Sep-19
+        10:58:59 GMT; path=/; domain=.palitanx.com; HttpOnly
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains;
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - PHP/7.1.17
+      Cache-Control:
+      - no-cache, private, max-age=300
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '58'
+      Expires:
+      - Fri, 14 Sep 2018 11:04:01 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 45a25773df1e0cd7-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"message":"","result":{"buy":[{"Quantity":"1500","Rate":"0.000001"},{"Quantity":"0.14070236","Rate":"0.0085"}],"sell":[{"Quantity":"0.29","Rate":"0.01773"},{"Quantity":"0.25","Rate":"0.01774"},{"Quantity":"0.44","Rate":"0.01772"},{"Quantity":"0.00298364","Rate":"123.71774"},{"Quantity":"0.5","Rate":"0.012"},{"Quantity":"0.79453024","Rate":"0.0115"}]}}'
+    http_version: 
+  recorded_at: Fri, 14 Sep 2018 10:59:01 GMT
+recorded_with: VCR 4.0.0
