@@ -164,6 +164,7 @@ Or install it yourself as:
 | GDAX              | Y       |            |         |         | Y           |          | gdax              |
 | Gemini            | Y       | Y          | Y       |         | Y           |          | gemini            |
 | GetBTC            | Y       | Y          | Y       |         | User-Defined| Y        | getbtc            |
+| Ginero            | Y       | Y          |         |         | Y           |          | ginero            |
 | Gobaba            | Y       |            |         |         | Y           |          | gobaba            |
 | Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |     
 | GOPAX             | Y       | Y          | Y       |         | Y           | Y        | gopax             |
