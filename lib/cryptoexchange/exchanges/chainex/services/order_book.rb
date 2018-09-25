@@ -18,7 +18,6 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          #puts output[1]['orders'][0]
           order_book = Cryptoexchange::Models::OrderBook.new
 
           order_book.base      = market_pair.base
@@ -33,7 +32,6 @@ module Cryptoexchange::Exchanges
 
         def adapt_orders(orders)
           orders.collect do |order_entry|
-            #puts order_entry['price'].inspect
             Cryptoexchange::Models::Order.new(
              price: order_entry['price'],
              amount: order_entry['amount']
