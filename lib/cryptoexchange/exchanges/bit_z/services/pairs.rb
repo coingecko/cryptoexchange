@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module BitZ
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::BitZ::Market::API_URL}/tickerall"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::BitZ::Market::API_URL}/Market/symbolList"
 
         def fetch
           output = super
@@ -10,18 +10,14 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          market_pairs = []
-          pairs = output["data"]
-          pairs.each_key do |pair|
-            base = pair.split("_").first
-            target = pair.split("_").last
-            market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: base,
-                              target: target,
-                              market: BitZ::Market::NAME
-                            )
+          pairs = output['data']
+          pairs.map do |_key, value|
+            Cryptoexchange::Models::MarketPair.new(
+              base:   value['coinFrom'],
+              target: value['coinTo'],
+              market: BitZ::Market::NAME
+            )
           end
-          market_pairs
         end
       end
     end
