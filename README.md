@@ -92,6 +92,7 @@ Or install it yourself as:
 | Cex               | Y       | Y          | Y       |         | Y           |          | cex               |
 | Cfinex            | Y       | Y          | Y       |         | Y           | Y        | cfinex            |
 | Chainrift         | Y       | Y          | Y       |         | Y           |          | chainrift         |
+| ChainEX           | Y       | Y          | Y       |         | Y           |          | chainex           |
 | Chaoex            | Y       | Y          | Y       |         | Y           | N        | chaoex            |
 | CHBTC             | Y       |            |         |         | User-Defined|          | chbtc             |
 | Cobinhood         | Y       | Y          |         |         | Y           | Y        | cobinhood         |
