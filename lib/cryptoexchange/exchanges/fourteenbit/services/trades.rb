@@ -8,7 +8,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Fourteenbit::Market::API_URL}/trades/#{market_pair.base}/#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::Fourteenbit::Market::API_URL}/trade/#{market_pair.base}/#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
