@@ -216,6 +216,7 @@ Or install it yourself as:
 | Novadex           | Y       | N          | N       |         | Y           | Y        | novadex           |
 | Nova Exchange     | Y       |            |         |         | Y           |          | novaexchange      |
 | OasisDEX          | Y       |            |         |         | Y           |          | oasisdex          |
+| OAX               | Y       |            |         |         | Y           |          | oax               |
 | Octaex            | Y       | Y          | Y       |         | Y           |          | octaex            |
 | OKCoin            | Y       |            |         |         | User-Defined|          | okcoin            |
 | OKEx              | Y       | Y          | Y       |         | Y           | Y        | okex              |
