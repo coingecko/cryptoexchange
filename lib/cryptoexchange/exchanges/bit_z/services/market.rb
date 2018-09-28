@@ -4,6 +4,7 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
+            # set to bulk process to save requests
             false
           end
         end
@@ -14,7 +15,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::BitZ::Market::API_URL}/tickerall"
+          "#{Cryptoexchange::Exchanges::BitZ::Market::API_URL}/Market/tickerall"
         end
 
         def adapt_all(output)
@@ -26,7 +27,7 @@ module Cryptoexchange::Exchanges
                             target: target,
                             market: BitZ::Market::NAME
                           )
-            adapt(value,market_pair)
+            adapt(value, market_pair)
           end
         end
 
@@ -35,13 +36,13 @@ module Cryptoexchange::Exchanges
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = BitZ::Market::NAME
-          ticker.ask = NumericHelper.to_d(output['sell'])
-          ticker.bid = NumericHelper.to_d(output['buy'])
-          ticker.last = NumericHelper.to_d(output['last'])
+          ticker.ask = NumericHelper.to_d(output['askPrice'])
+          ticker.bid = NumericHelper.to_d(output['bidPrice'])
+          ticker.last = NumericHelper.to_d(output['now'])
           ticker.high = NumericHelper.to_d(output['high'])
           ticker.low = NumericHelper.to_d(output['low'])
-          ticker.volume = NumericHelper.to_d(output['vol'])
-          ticker.timestamp = NumericHelper.to_d(output['date'])
+          ticker.volume = NumericHelper.to_d(output['volume'])
+          ticker.timestamp = nil
           ticker.payload = output
           ticker
         end
