@@ -1,0 +1,207 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinchangex.com/returnTicker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinchangex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Fri, 28 Sep 2018 08:00:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '6315'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"ETH_0x922a690": {"tokenAddr": "0x922a690cca871d19e8cc0ee5a49bf08893797e43",
+        "quoteVolume": "2888240.0", "baseVolume": "6.0653040", "last": "0.00000210000",
+        "bid": "4.0000e-7", "ask": "0.00000210000", "updated": "2018-09-28T08:00:08.633408"},
+        "ETH_0xe2d4ea9": {"tokenAddr": "0xe2d4ea9fd5eccc15ae06b3bc5c6b8778408d42c3",
+        "quoteVolume": "0", "baseVolume": "0", "last": null, "bid": null, "ask": "4.50000e-8",
+        "updated": "2018-09-28T08:00:15.486321"}, "ETH_0xfde08ae": {"tokenAddr": "0xfde08ae31a62b326c9f52ab7390ba37258fe2fd3",
+        "quoteVolume": "0", "baseVolume": "0", "last": null, "bid": null, "ask": "0.0000020000",
+        "updated": "2018-09-28T08:00:22.524332"}, "ETH_0x42c8414": {"tokenAddr": "0x42c8414c5a6bdaf193e459ac26ed0ce11a44e9b4",
+        "quoteVolume": "0", "baseVolume": "0", "last": null, "bid": null, "ask": null,
+        "updated": "2018-09-28T08:00:24.807128"}, "ETH_0x05f4a42": {"tokenAddr": "0x05f4a42e251f2d52b8ed15e9fedaacfcef1fad27",
+        "quoteVolume": "389522.54", "baseVolume": "59.516000", "last": "0.00015567425",
+        "bid": "0.00014941609", "ask": "0.000155342", "updated": "2018-09-28T07:59:47.792206"},
+        "ETH_0x45ed02e": {"tokenAddr": "0x45ed02e374aef2e4b34c04e86ad9d45891d10751",
+        "quoteVolume": "115015.92", "baseVolume": "3.8292983", "last": "0.000010000",
+        "bid": "0.0000380000", "ask": "0.008", "updated": "2018-09-28T08:00:17.947802"},
+        "ETH_0x3821173": {"tokenAddr": "0x382117315856a533549ea621542ccce13e54ae82",
+        "quoteVolume": "24700.000", "baseVolume": "0.00094390000", "last": "3.70000e-8",
+        "bid": null, "ask": null, "updated": "2018-09-28T08:00:27.090905"}, "ETH_0xe4ffee3":
+        {"tokenAddr": "0xe4ffee3b33360e21ea2aec37a39901cb720eb84c", "quoteVolume":
+        "105.00000", "baseVolume": "0.061949000", "last": "0.00058899", "bid": null,
+        "ask": "0.000375", "updated": "2018-09-28T08:00:29.368882"}, "ETH_0x20871ef":
+        {"tokenAddr": "0x20871ef4fc0b8c5ee4fb03f698c4f4f752dda6e5", "quoteVolume":
+        "0", "baseVolume": "0", "last": null, "bid": null, "ask": "0.1", "updated":
+        "2018-09-28T08:00:31.635133"}, "ETH_0xcafdc51": {"tokenAddr": "0xcafdc517691fcf4d1186953f02f19ced50efc9e2",
+        "quoteVolume": "14.000000", "baseVolume": "0.0028440000", "last": "0.0002594",
+        "bid": "0.000061990000", "ask": null, "updated": "2018-09-28T08:00:33.913026"},
+        "ETH_0x077dc3c": {"tokenAddr": "0x077dc3c0c9543df1cdd78386df3204e69e0dd274",
+        "quoteVolume": "0", "baseVolume": "0", "last": null, "bid": null, "ask": "0.0000120000",
+        "updated": "2018-09-28T08:00:36.177596"}, "ETH_0xba21845": {"tokenAddr": "0xba2184520a1cc49a6159c57e61e1844e085615b6",
+        "quoteVolume": "4957066.5", "baseVolume": "99.400000", "last": "0.0000210852580000",
+        "bid": null, "ask": null, "updated": "2018-09-28T08:00:38.447133"}, "ETH_0x670699a":
+        {"tokenAddr": "0x670699ada430bd6eb3ce761f8307c52c396add05", "quoteVolume":
+        "0", "baseVolume": "0", "last": null, "bid": null, "ask": null, "updated":
+        "2018-09-28T08:00:40.708897"}, "ETH_0x50a7da1": {"tokenAddr": "0x50a7da1bd921ac68d0978c00c1d66637c968159c",
+        "quoteVolume": "0", "baseVolume": "0", "last": null, "bid": null, "ask": null,
+        "updated": "2018-09-28T08:00:42.965816"}, "ETH_0x263c618": {"tokenAddr": "0x263c618480dbe35c300d8d5ecda19bbb986acaed",
+        "quoteVolume": "99460.699", "baseVolume": "71.400000", "last": "0.00080084280",
+        "bid": "0.00076907397", "ask": "0.00080046475", "updated": "2018-09-28T08:00:45.241459"},
+        "ETH_0x5ca9a71": {"tokenAddr": "0x5ca9a71b1d01849c0a95490cc00559717fcf0d1d",
+        "quoteVolume": "18709.285", "baseVolume": "78.916000", "last": "0.0045701850",
+        "bid": "0.0043824919", "ask": "0.0045599314", "updated": "2018-09-28T07:59:59.540425"},
+        "ETH_0x994f0df": {"tokenAddr": "0x994f0dffdbae0bbf09b652d6f11a493fd33f42b9",
+        "quoteVolume": "356.03914", "baseVolume": "0.049845479", "last": "0.00014000000",
+        "bid": null, "ask": null, "updated": "2018-09-28T08:00:01.810358"}, "ETH_0x17e16d3":
+        {"tokenAddr": "0x17e16d30a05324b44cf78df847137fa1220448f8", "quoteVolume":
+        "0", "baseVolume": "0", "last": null, "bid": null, "ask": null, "updated":
+        "2018-09-28T08:00:04.091463"}, "ETH_0x89d24a6": {"tokenAddr": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+        "quoteVolume": "46963.732", "baseVolume": "107.79638", "last": "0.0043928662",
+        "bid": "0.0042212981", "ask": "0.004393596", "updated": "2018-09-28T08:00:06.372224"},
+        "ETH_0xf8e386e": {"tokenAddr": "0xf8e386eda857484f5a12e4b5daa9984e06e73705",
+        "quoteVolume": "494141.54", "baseVolume": "97.300000", "last": "0.00017980138",
+        "bid": "0.0001726562", "ask": "0.00017953149", "updated": "2018-09-28T08:00:10.908740"},
+        "ETH_0xd4078bd": {"tokenAddr": "0xd4078bdb652610ad5383a747d130cbe905911102",
+        "quoteVolume": "0", "baseVolume": "0", "last": null, "bid": null, "ask": null,
+        "updated": "2018-09-28T08:00:13.189545"}, "ETH_0xe41d248": {"tokenAddr": "0xe41d2489571d322189246dafa5ebde1f4699f498",
+        "quoteVolume": "29757.584", "baseVolume": "71.802000", "last": "0.0030698137",
+        "bid": "0.0029676852", "ask": "0.0030888152", "updated": "2018-09-28T08:00:47.505251"},
+        "ETH_0x88fcfbc": {"tokenAddr": "0x88fcfbc22c6d3dbaa25af478c578978339bde77a",
+        "quoteVolume": "81222.088", "baseVolume": "110.00533", "last": "0.0010272125",
+        "bid": "0.00097758812", "ask": "0.0010174897", "updated": "2018-09-28T08:00:52.050388"},
+        "ETH_0x08f5a92": {"tokenAddr": "0x08f5a9235b08173b7569f83645d2c7fb55e8ccd8",
+        "quoteVolume": "1326751.2", "baseVolume": "136.15226", "last": "0.00011780726",
+        "bid": "0.00012146099", "ask": "0.00012641858", "updated": "2018-09-28T07:59:50.073606"},
+        "ETH_0xf230b79": {"tokenAddr": "0xf230b790e05390fc8295f4d3f60332c93bed42e2",
+        "quoteVolume": "776113.52", "baseVolume": "65.755000", "last": "0.0000999279670000",
+        "bid": "0.0000970046060000", "ask": "0.00010081266", "updated": "2018-09-28T07:59:52.736896"},
+        "ETH_0x7b267ee": {"tokenAddr": "0x7b267eea6e679e747c0cb1d6b453a976d3638d27",
+        "quoteVolume": "0", "baseVolume": "0", "last": null, "bid": null, "ask": "0.00064",
+        "updated": "2018-09-28T07:59:55.009709"}, "ETH_0xd850942": {"tokenAddr": "0xd850942ef8811f2a866692a623011bde52a462c1",
+        "quoteVolume": "1641.2093", "baseVolume": "8.4330000", "last": "0.0040264624",
+        "bid": null, "ask": null, "updated": "2018-09-28T07:59:57.278071"}, "ETH_0x436f0f3":
+        {"tokenAddr": "0x436f0f3a982074c4a05084485d421466a994fe53", "quoteVolume":
+        "11360.810", "baseVolume": "0.48389583", "last": "0.0000408800000000", "bid":
+        null, "ask": null, "updated": "2018-09-28T08:00:20.225754"}}'
+    http_version: 
+  recorded_at: Fri, 28 Sep 2018 08:00:53 GMT
+- request:
+    method: get
+    uri: https://www.coinchangex.com/config/main.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.coinchangex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Fri, 28 Sep 2018 08:00:53 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3811'
+      Last-Modified:
+      - Fri, 28 Sep 2018 06:44:17 GMT
+      Connection:
+      - close
+      Etag:
+      - '"5badcdc1-ee3"'
+      Accept-Ranges:
+      - bytes
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "contractEtherDelta": "smart_contract/etherdelta.sol",
+          "contractToken": "smart_contract/token.sol",
+          "contractReserveToken": "smart_contract/reservetoken.sol",
+          "contractEtherDeltaAddrs": [
+            { "addr": "0x2f23228b905CEB4734EB42d9B42805296667C93b", "info": "Deployed 08/05/2018 -- THE LATEST SMART CONTRACT" }
+          ],
+          "ethTestnet": false,
+          "ethChainId": 1,
+          "ethProvider": "http://localhost:8545",
+          "ethGasPrice": 10500000000,
+          "ethAddr": "0x0000000000000000000000000000000000000000",
+          "ethAddrPrivateKey": "",
+          "gasApprove": 250000,
+          "gasDeposit": 250000,
+          "gasWithdraw": 250000,
+          "gasTrade": 250000,
+          "gasOrder": 250000,
+          "minOrderSize": 0.0001,
+          "socketServer": "https://api.coinchangex.com",
+          "userCookie": "EtherDelta",
+          "eventsCacheCookie": "EtherDelta_eventsCache",
+          "ordersCacheCookie": "EtherDelta_ordersCache",
+          "etherscanAPIKey": "GCGR1C9I17TYIRNYUDDEIJH1K5BRPH4UDE",
+          "ledgerPath": "m/44'/60'/0'/0",
+          "bases": [
+            { "addr": "0x0000000000000000000000000000000000000000", "name": "ETH", "decimals": 18 }
+          ],
+          "tokens": [
+            { "addr": "0x0000000000000000000000000000000000000000", "name": "ETH", "decimals": 18 },
+            { "addr": "0x88FCFBc22C6d3dBaa25aF478C578978339BDe77a", "name": "FYN", "decimals": 18 },
+            { "addr": "0x05f4a42e251f2d52b8ed15e9fedaacfcef1fad27", "name": "ZIL", "decimals": 12 },
+            { "addr": "0x08f5a9235b08173b7569f83645d2c7fb55e8ccd8", "name": "TNT", "decimals": 8 },
+            { "addr": "0xf230b790e05390fc8295f4d3f60332c93bed42e2", "name": "TRX", "decimals": 6 },
+            { "addr": "0x7b267eea6e679e747c0cb1d6b453a976d3638d27", "name": "CMAP", "decimals": 18 },
+            { "addr": "0xd850942ef8811f2a866692a623011bde52a462c1", "name": "VEN", "decimals": 18 },
+            { "addr": "0x5ca9a71b1d01849c0a95490cc00559717fcf0d1d", "name": "AE", "decimals": 18 },
+            { "addr": "0x994f0dffdbae0bbf09b652d6f11a493fd33f42b9", "name": "EAGLE", "decimals": 18 },
+            { "addr": "0x17e16d30a05324b44cf78df847137fa1220448f8", "name": "Cyber", "decimals": 8 },
+            { "addr": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359", "name": "DAI", "decimals": 18 },
+            { "addr": "0x922a690cca871d19e8cc0ee5a49bf08893797e43", "name": "EPTK", "decimals": 8 },
+            { "addr": "0xf8e386eda857484f5a12e4b5daa9984e06e73705", "name": "IND", "decimals": 18 },
+            { "addr": "0xd4078bdb652610ad5383a747d130cbe905911102", "name": "VAI", "decimals": 18 },
+            { "addr": "0xE2d4eA9fD5EcCc15ae06B3bc5c6B8778408d42C3", "name": "SMPay", "decimals": 8 },
+            { "addr": "0x45ed02e374aef2e4b34c04e86ad9d45891d10751", "name": "DFS", "decimals": 18 },
+            { "addr": "0x436f0f3a982074c4a05084485d421466a994fe53", "name": "RTE", "decimals": 18 },
+            { "addr": "0xfde08ae31a62b326c9f52ab7390ba37258fe2fd3", "name": "RW", "decimals": 5 },
+            { "addr": "0x42C8414C5a6bDaF193e459ac26eD0CE11A44E9B4", "name": "TMB", "decimals": 18 },
+            { "addr": "0x382117315856a533549eA621542Ccce13E54aE82", "name": "BTB", "decimals": 18 },
+            { "addr": "0xe4ffee3b33360e21ea2aec37a39901cb720eb84c", "name": "MDX", "decimals": 10 },
+            { "addr": "0x20871EF4fc0b8c5eE4fB03f698c4f4f752Dda6E5", "name": "HTS", "decimals": 18 },
+            { "addr": "0xcafdc517691fcf4d1186953f02f19ced50efc9e2", "name": "EXBT", "decimals": 18 },
+            { "addr": "0x077DC3c0c9543df1cdD78386DF3204E69E0DD274", "name": "PBK", "decimals": 7 },
+            { "addr": "0xba2184520a1cc49a6159c57e61e1844e085615b6", "name": "HGT", "decimals": 8 },
+            { "addr": "0x670699ada430bd6eb3ce761f8307c52c396add05", "name": "EXT", "decimals": 0 },    { "addr": "0x50A7Da1bd921ac68D0978C00c1D66637c968159c", "name": "TSU", "decimals": 18 },
+            { "addr": "0x263c618480dbe35c300d8d5ecda19bbb986acaed", "name": "MOT", "decimals": 18 },    { "addr": "0xe41d2489571d322189246dafa5ebde1f4699f498", "name": "ZRX", "decimals": 18 }
+          ],
+          "defaultPair": { "token": "TNT", "base": "ETH" }
+        }
+    http_version: 
+  recorded_at: Fri, 28 Sep 2018 08:00:53 GMT
+recorded_with: VCR 4.0.0
