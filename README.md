@@ -36,6 +36,7 @@ Or install it yourself as:
 | B2BX              | Y       | Y          |         |         | Y           |          | b2bx              |
 | Bancor            | Y       | N          | N       |         | Y           |          | bancor            |
 | Bcex              | Y       | Y          | Y       |         | Y           | Y        | bcex              |
+| Bcoin             | Y       |            |         |         | Y           | Y        | bcoin             |
 | Bgogo             | Y       | Y          | Y       |         | Y           | Y        | bgogo             |
 | Bibox             | Y       | Y          | Y       |         | Y           | Y        | bibox             |
 | BigONE            | Y       | Y          | Y       |         | Y           | Y        | bigone            |
