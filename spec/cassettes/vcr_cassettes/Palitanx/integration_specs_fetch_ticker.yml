@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.palitanx.com/v1/public/getmarketsummaries
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.palitanx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Aug 2018 13:44:46 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d837329e750031d8c0e89ca2a3822b48a1534167885; expires=Tue, 13-Aug-19
+        13:44:45 GMT; path=/; domain=.palitanx.com; HttpOnly
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains;
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - PHP/7.1.17
+      Cache-Control:
+      - no-cache, private, max-age=300
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '58'
+      Expires:
+      - Mon, 13 Aug 2018 13:49:46 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 449b9e43e8a1aa08-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"message":"","result":[{"MarketName":"BTC-XAP2","Bid":null,"Ask":null,"Last":null,"High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":0,"OpenSellOrders":0},{"MarketName":"BTC-ADN","Bid":null,"Ask":null,"Last":null,"High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":0,"OpenSellOrders":1},{"MarketName":"BTC-BCC","Bid":"0.0000805","Ask":"0.0000805","Last":"0.0000805","High":"0.00009898","Low":"0.00007052","Volume":"821.77091088","BaseVolume":"0.07337623","OpenBuyOrders":7,"OpenSellOrders":29},{"MarketName":"BTC-ZNCO","Bid":null,"Ask":"0.00000004","Last":"0.00000004","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":1,"OpenSellOrders":1},{"MarketName":"BTC-ULTRA","Bid":"0.000002","Ask":"0.00000299","Last":"0.00000299","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":0,"OpenSellOrders":1},{"MarketName":"CIV-DOGE","Bid":null,"Ask":null,"Last":null,"High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":3,"OpenSellOrders":5},{"MarketName":"CIV-XHV","Bid":null,"Ask":null,"Last":null,"High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":1,"OpenSellOrders":1},{"MarketName":"BTC-GRFT","Bid":null,"Ask":null,"Last":null,"High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":0,"OpenSellOrders":0},{"MarketName":"CIV-BCH","Bid":null,"Ask":null,"Last":null,"High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":7,"OpenSellOrders":0},{"MarketName":"CIV-BTCP","Bid":null,"Ask":null,"Last":null,"High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":2,"OpenSellOrders":1},{"MarketName":"BTC-OLMP","Bid":null,"Ask":null,"Last":null,"High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":0,"OpenSellOrders":8},{"MarketName":"BTC-WAE","Bid":null,"Ask":null,"Last":null,"High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":0,"OpenSellOrders":1},{"MarketName":"BTC-POLIS","Bid":null,"Ask":null,"Last":null,"High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":0,"OpenSellOrders":0},{"MarketName":"CIV-GBX","Bid":null,"Ask":null,"Last":null,"High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":1,"OpenSellOrders":0},{"MarketName":"CIV-POLIS","Bid":null,"Ask":null,"Last":null,"High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":2,"OpenSellOrders":0},{"MarketName":"CIV-ADN","Bid":null,"Ask":null,"Last":null,"High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":2,"OpenSellOrders":0},{"MarketName":"BTC-DEV","Bid":null,"Ask":null,"Last":null,"High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":0,"OpenSellOrders":1},{"MarketName":"CIV-BCC","Bid":null,"Ask":null,"Last":null,"High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":1,"OpenSellOrders":0},{"MarketName":"CIV-ULTRA","Bid":"0.055","Ask":"0.085","Last":"0.055","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":1,"OpenSellOrders":0},{"MarketName":"CIV-ZNCO","Bid":null,"Ask":"0.2","Last":"0.2","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":0,"OpenSellOrders":0},{"MarketName":"CIV-XAP2","Bid":"0.14","Ask":"0.15","Last":"0.14","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":2,"OpenSellOrders":0},{"MarketName":"CIV-DEV","Bid":null,"Ask":null,"Last":null,"High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":2,"OpenSellOrders":0},{"MarketName":"BTC-REEF","Bid":"0.00000002","Ask":"0.00000002","Last":"0.00000002","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":8,"OpenSellOrders":74},{"MarketName":"BTC-XTL","Bid":"0.00000005","Ask":"0.00000012","Last":"0.00000012","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":1,"OpenSellOrders":8},{"MarketName":"BTC-NYX","Bid":"0.0000125","Ask":"0.00195","Last":"0.0000125","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":0,"OpenSellOrders":11},{"MarketName":"BTC-SOLACE","Bid":"0.00000002","Ask":"0.00000005","Last":"0.00000002","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":0,"OpenSellOrders":13},{"MarketName":"BTC-CROP","Bid":"0.00004","Ask":"0.000041","Last":"0.00004","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":0,"OpenSellOrders":4},{"MarketName":"BTC-XHV","Bid":null,"Ask":"0.0003","Last":"0.0003","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":4,"OpenSellOrders":1},{"MarketName":"BTC-BTCP","Bid":null,"Ask":"0.0056907","Last":"0.0056907","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":2,"OpenSellOrders":9},{"MarketName":"BTC-CIV","Bid":"0.000018","Ask":"0.00006399","Last":"0.00006399","High":"0.000064","Low":"0.00002784","Volume":"4123.65144521","BaseVolume":"0.15431036","OpenBuyOrders":22,"OpenSellOrders":45},{"MarketName":"BTC-HODL","Bid":"0.00000028","Ask":null,"Last":"0.00000028","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":1,"OpenSellOrders":13},{"MarketName":"BTC-GBX","Bid":"0.001045","Ask":null,"Last":"0.001045","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":1,"OpenSellOrders":5},{"MarketName":"BTC-KKC","Bid":"0.0000001","Ask":"0.000001","Last":"0.0000001","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":4,"OpenSellOrders":18},{"MarketName":"BTC-ETN","Bid":"0.0000025","Ask":"0.0000045","Last":"0.0000025","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":0,"OpenSellOrders":5},{"MarketName":"BTC-DOGE","Bid":"0.00000038","Ask":"0.00000051","Last":"0.00000038","High":"0.00000038","Low":"0.00000038","Volume":"4244.8160602","BaseVolume":"0.00161303","OpenBuyOrders":0,"OpenSellOrders":6},{"MarketName":"BTC-MMO","Bid":"0.0000135","Ask":"0.00000499","Last":"0.00000499","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":1,"OpenSellOrders":23},{"MarketName":"BTC-LTC","Bid":"0.01","Ask":"0.0115","Last":"0.0115","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":1,"OpenSellOrders":6},{"MarketName":"BTC-XMR","Bid":"0.02701","Ask":"0.028053","Last":"0.02701","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":0,"OpenSellOrders":1},{"MarketName":"CIV-OLMP","Bid":"0.15","Ask":"0.3","Last":"0.3","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":2,"OpenSellOrders":2},{"MarketName":"CIV-HODL","Bid":"0.00139","Ask":"0.0051","Last":"0.0051","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":3,"OpenSellOrders":0},{"MarketName":"CIV-SOLACE","Bid":"0.0001","Ask":"0.00184996","Last":"0.00184996","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":2,"OpenSellOrders":3},{"MarketName":"CIV-MMO","Bid":null,"Ask":"0.01","Last":"0.01","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":2,"OpenSellOrders":0},{"MarketName":"CIV-KKC","Bid":"0.000205","Ask":"0.0089","Last":"0.000205","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":6,"OpenSellOrders":25},{"MarketName":"CIV-XMR","Bid":"99","Ask":null,"Last":"99","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":2,"OpenSellOrders":0},{"MarketName":"CIV-CROP","Bid":"0.025","Ask":"0.18","Last":"0.18","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":1,"OpenSellOrders":3},{"MarketName":"CIV-GRFT","Bid":"0.00892359","Ask":null,"Last":"0.00892359","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":1,"OpenSellOrders":0},{"MarketName":"CIV-LTC","Bid":"45","Ask":"200","Last":"200","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":2,"OpenSellOrders":1},{"MarketName":"CIV-XTL","Bid":"0.0001","Ask":"0.002","Last":"0.002","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":4,"OpenSellOrders":1},{"MarketName":"CIV-REEF","Bid":"0.05","Ask":"0.001","Last":"0.001","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":2,"OpenSellOrders":3},{"MarketName":"CIV-ETN","Bid":"0.001","Ask":"0.01501","Last":"0.001","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":4,"OpenSellOrders":0},{"MarketName":"CIV-WAE","Bid":null,"Ask":"0.01","Last":"0.01","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":1,"OpenSellOrders":0},{"MarketName":"CIV-NYX","Bid":"0.5","Ask":null,"Last":"0.5","High":null,"Low":null,"Volume":null,"BaseVolume":null,"OpenBuyOrders":2,"OpenSellOrders":2}]}'
+    http_version: 
+  recorded_at: Mon, 13 Aug 2018 13:44:46 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.palitanx.com/v1/public/getmarkets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.palitanx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Aug 2018 13:25:39 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d341205cec714874c3e2107f24717085c1534166738; expires=Tue, 13-Aug-19
+        13:25:38 GMT; path=/; domain=.palitanx.com; HttpOnly
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains;
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - PHP/7.1.17
+      Cache-Control:
+      - no-cache, private, max-age=300
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '58'
+      Expires:
+      - Mon, 13 Aug 2018 13:30:39 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 449b82434b626fc6-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"message":"","result":[{"MarketCurrency":"XAP2","BaseCurrency":"BTC","MarketCurrencyLong":"Apolloncoin2","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-XAP2","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"ADN","BaseCurrency":"BTC","MarketCurrencyLong":"Adrenaline","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-ADN","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"BCC","BaseCurrency":"BTC","MarketCurrencyLong":"Bitconnect","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-BCC","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"ZNCO","BaseCurrency":"BTC","MarketCurrencyLong":"Zncoin","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-ZNCO","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"ULTRA","BaseCurrency":"BTC","MarketCurrencyLong":"Ultranatum","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-ULTRA","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"GRFT","BaseCurrency":"BTC","MarketCurrencyLong":"Graft","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-GRFT","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"OLMP","BaseCurrency":"BTC","MarketCurrencyLong":"Olympic","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-OLMP","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"WAE","BaseCurrency":"BTC","MarketCurrencyLong":"WeyCoin","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-WAE","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"POLIS","BaseCurrency":"BTC","MarketCurrencyLong":"Polis","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-POLIS","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"DEV","BaseCurrency":"BTC","MarketCurrencyLong":"Deviant","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-DEV","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"REEF","BaseCurrency":"BTC","MarketCurrencyLong":"Reef
+        Coin","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-REEF","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"XTL","BaseCurrency":"BTC","MarketCurrencyLong":"Stellite","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-XTL","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"NYX","BaseCurrency":"BTC","MarketCurrencyLong":"Nyxcoin","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-NYX","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"SOLACE","BaseCurrency":"BTC","MarketCurrencyLong":"Solacecoin","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-SOLACE","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"CROP","BaseCurrency":"BTC","MarketCurrencyLong":"Cropcoin","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-CROP","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"XHV","BaseCurrency":"BTC","MarketCurrencyLong":"Haven","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-XHV","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"BTCP","BaseCurrency":"BTC","MarketCurrencyLong":"Bitcoin
+        Private","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-BTCP","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"CIV","BaseCurrency":"BTC","MarketCurrencyLong":"Civitas","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-CIV","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"HODL","BaseCurrency":"BTC","MarketCurrencyLong":"Hodlcoin","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-HODL","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"GBX","BaseCurrency":"BTC","MarketCurrencyLong":"GoByte","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-GBX","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"KKC","BaseCurrency":"BTC","MarketCurrencyLong":"Koala
+        Kash","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-KKC","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"ETN","BaseCurrency":"BTC","MarketCurrencyLong":"Electroneum","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-ETN","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"DOGE","BaseCurrency":"BTC","MarketCurrencyLong":"Dogecoin","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-DOGE","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"MMO","BaseCurrency":"BTC","MarketCurrencyLong":"MMOCoin","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-MMO","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"LTC","BaseCurrency":"BTC","MarketCurrencyLong":"Litecoin","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-LTC","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"XMR","BaseCurrency":"BTC","MarketCurrencyLong":"Monero","BaseCurrencyLong":"Bitcoin","MarketName":"BTC-XMR","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"MMO","BaseCurrency":"CIV","MarketCurrencyLong":"MMOCoin","BaseCurrencyLong":"Civitas","MarketName":"CIV-MMO","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"KKC","BaseCurrency":"CIV","MarketCurrencyLong":"Koala
+        Kash","BaseCurrencyLong":"Civitas","MarketName":"CIV-KKC","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"XTL","BaseCurrency":"CIV","MarketCurrencyLong":"Stellite","BaseCurrencyLong":"Civitas","MarketName":"CIV-XTL","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"REEF","BaseCurrency":"CIV","MarketCurrencyLong":"Reef
+        Coin","BaseCurrencyLong":"Civitas","MarketName":"CIV-REEF","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"GRFT","BaseCurrency":"CIV","MarketCurrencyLong":"Graft","BaseCurrencyLong":"Civitas","MarketName":"CIV-GRFT","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"DOGE","BaseCurrency":"CIV","MarketCurrencyLong":"Dogecoin","BaseCurrencyLong":"Civitas","MarketName":"CIV-DOGE","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"XHV","BaseCurrency":"CIV","MarketCurrencyLong":"Haven","BaseCurrencyLong":"Civitas","MarketName":"CIV-XHV","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"LTC","BaseCurrency":"CIV","MarketCurrencyLong":"Litecoin","BaseCurrencyLong":"Civitas","MarketName":"CIV-LTC","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"BCH","BaseCurrency":"CIV","MarketCurrencyLong":"Bitcoin
+        Cash","BaseCurrencyLong":"Civitas","MarketName":"CIV-BCH","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"BTCP","BaseCurrency":"CIV","MarketCurrencyLong":"Bitcoin
+        Private","BaseCurrencyLong":"Civitas","MarketName":"CIV-BTCP","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"WAE","BaseCurrency":"CIV","MarketCurrencyLong":"WeyCoin","BaseCurrencyLong":"Civitas","MarketName":"CIV-WAE","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"NYX","BaseCurrency":"CIV","MarketCurrencyLong":"Nyxcoin","BaseCurrencyLong":"Civitas","MarketName":"CIV-NYX","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"ETN","BaseCurrency":"CIV","MarketCurrencyLong":"Electroneum","BaseCurrencyLong":"Civitas","MarketName":"CIV-ETN","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"GBX","BaseCurrency":"CIV","MarketCurrencyLong":"GoByte","BaseCurrencyLong":"Civitas","MarketName":"CIV-GBX","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"POLIS","BaseCurrency":"CIV","MarketCurrencyLong":"Polis","BaseCurrencyLong":"Civitas","MarketName":"CIV-POLIS","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"ADN","BaseCurrency":"CIV","MarketCurrencyLong":"Adrenaline","BaseCurrencyLong":"Civitas","MarketName":"CIV-ADN","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"OLMP","BaseCurrency":"CIV","MarketCurrencyLong":"Olympic","BaseCurrencyLong":"Civitas","MarketName":"CIV-OLMP","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"BCC","BaseCurrency":"CIV","MarketCurrencyLong":"Bitconnect","BaseCurrencyLong":"Civitas","MarketName":"CIV-BCC","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"ULTRA","BaseCurrency":"CIV","MarketCurrencyLong":"Ultranatum","BaseCurrencyLong":"Civitas","MarketName":"CIV-ULTRA","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"ZNCO","BaseCurrency":"CIV","MarketCurrencyLong":"Zncoin","BaseCurrencyLong":"Civitas","MarketName":"CIV-ZNCO","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"XAP2","BaseCurrency":"CIV","MarketCurrencyLong":"Apolloncoin2","BaseCurrencyLong":"Civitas","MarketName":"CIV-XAP2","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"DEV","BaseCurrency":"CIV","MarketCurrencyLong":"Deviant","BaseCurrencyLong":"Civitas","MarketName":"CIV-DEV","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"HODL","BaseCurrency":"CIV","MarketCurrencyLong":"Hodlcoin","BaseCurrencyLong":"Civitas","MarketName":"CIV-HODL","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"SOLACE","BaseCurrency":"CIV","MarketCurrencyLong":"Solacecoin","BaseCurrencyLong":"Civitas","MarketName":"CIV-SOLACE","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"XMR","BaseCurrency":"CIV","MarketCurrencyLong":"Monero","BaseCurrencyLong":"Civitas","MarketName":"CIV-XMR","MinTradeSize":"0","IsActive":true},{"MarketCurrency":"CROP","BaseCurrency":"CIV","MarketCurrencyLong":"Cropcoin","BaseCurrencyLong":"Civitas","MarketName":"CIV-CROP","MinTradeSize":"0","IsActive":true}]}'
+    http_version: 
+  recorded_at: Mon, 13 Aug 2018 13:25:39 GMT
+recorded_with: VCR 4.0.0

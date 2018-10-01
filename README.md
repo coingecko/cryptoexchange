@@ -226,6 +226,7 @@ Or install it yourself as:
 | Ore Bz            | Y       | Y          | Y       |         | Y           | Y        | ore_bz            |
 | OTCBTC            | Y       | Y          | Y       |         | Y           |          | otcbtc            |
 | P2pb2b            | Y       |            |         |         | Y           |          | p2pb2b            |
+| Palitanx          | Y       | Y          | Y       |         | Y           |          | palitanx          |
 | Paribu            | Y       |            |         |         | Y           |          | paribu            |
 | Paro Exchange     | Y       |            |         |         | Y           |          | paroexchange      |
 | Paymium           | Y       | Y          | Y       |         | User-Defined|          | paymium           |
