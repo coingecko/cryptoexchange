@@ -29,7 +29,7 @@ Or install it yourself as:
 | Abucoins          | Y       | Y          | Y       |         | Y           |          | abucoins          |
 | ACX               | Y       | Y          | Y       |         | Y           | Y        | acx               |
 | AEX               | Y       | Y          | Y       |         | Y           |          | aex               |
-| Allcoin           | Y       | Y          |         |         | User-Defined|          | allcoin           |
+| Allcoin           | Y       | Y          | Y       |         | Y           |          | allcoin           |
 | Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |
 | ANX               | Y       |            |         |         | User-Defined|          | anx               |
 | AXNET             | Y       | Y          | Y       |         | Y           | Y        | axnet             |
@@ -155,6 +155,7 @@ Or install it yourself as:
 | Extstock          | Y       | Y          | Y       |         | Y           | Y        | extstock          |
 | Exx               | Y       | Y          | Y       |         | Y           | Y        | exx               |
 | F1cx              | Y       | Y          | Y       |         | Y           | Y        | f1cx              |
+| FatBTC            | Y       | Y          | Y       |         | Y           |          | fatbtc            |
 | Fcoin             | Y       | Y          | Y       |         | Y           | Y        | fcoin             |
 | Fex               | Y       | N          | N       |         | Y           |          | fex               |
 | Fisco             | Y       | Y          | Y       |         | Y           | Y        | fisco             |

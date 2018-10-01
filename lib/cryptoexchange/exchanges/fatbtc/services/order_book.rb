@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Allcoin
+  module Fatbtc
     module Services
       class OrderBook < Cryptoexchange::Services::Market
         class << self
@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Allcoin::Market::API_URL}/Api_Order/depth?symbol=#{market_pair.base.downcase}2#{market_pair.target.downcase}"
+          "#{Cryptoexchange::Exchanges::Fatbtc::Market::API_URL}/depth/#{market_pair.base}#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
@@ -22,10 +22,10 @@ module Cryptoexchange::Exchanges
 
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
-          order_book.market    = Allcoin::Market::NAME
-          order_book.asks      = adapt_orders output['data']['asks']
-          order_book.bids      = adapt_orders output['data']['bids']
-          order_book.timestamp = output['data']['date']
+          order_book.market    = Fatbtc::Market::NAME
+          order_book.asks      = adapt_orders(output['asks'])
+          order_book.bids      = adapt_orders(output['bids'])
+          order_book.timestamp = output['timestamp']/1000
           order_book.payload   = output
           order_book
         end
@@ -33,8 +33,7 @@ module Cryptoexchange::Exchanges
         def adapt_orders(orders)
           orders.collect do |order_entry|
             Cryptoexchange::Models::Order.new(price: order_entry[0],
-                                              amount: order_entry[1],
-                                              timestamp: nil)
+                                              amount: order_entry[1])
           end
         end
       end

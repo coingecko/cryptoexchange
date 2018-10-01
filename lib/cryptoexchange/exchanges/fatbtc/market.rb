@@ -1,8 +1,8 @@
 module Cryptoexchange::Exchanges
-  module Allcoin
+  module Fatbtc
     class Market < Cryptoexchange::Models::Market
-      NAME = 'allcoin'
-      API_URL = 'https://www.allcoin.ca'
+      NAME = 'fatbtc'
+      API_URL = 'https://www.fatbtc.com/m'
     end
   end
 end
