@@ -172,7 +172,7 @@ Or install it yourself as:
 | GetBTC            | Y       | Y          | Y       |         | User-Defined| Y        | getbtc            |
 | Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |     
 | Gobaba            | Y       |            |         |         | Y           |          | gobaba            |
-| Golix             | Y       | Y          |         |         | Y           |          | golix             |
+| golix (API Failed)| Y       | Y          |         |         | Y           |          | golix             |
 | GOPAX             | Y       | Y          | Y       |         | Y           | Y        | gopax             |
 | Graviex           | Y       | N          | N       |         | Y           |          | graviex           |
 | Hadax             | Y       | N          | N       |         | Y           | Y        | hadax             |
