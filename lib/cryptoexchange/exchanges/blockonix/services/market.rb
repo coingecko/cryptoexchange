@@ -19,7 +19,7 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |pair|
-            target, base = pair[0].split('/')
+            base, target = pair[0].split('/')
             market_pair  = Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
@@ -39,7 +39,7 @@ module Cryptoexchange::Exchanges
           ticker.low       = NumericHelper.to_d(output['low_24_hours'].to_f)
           ticker.bid       = NumericHelper.to_d(output['highest_bid'].to_f)
           ticker.ask       = NumericHelper.to_d(output['lowest_ask'].to_f)
-          ticker.volume    = NumericHelper.to_d(output['base_vol'].to_f)
+          ticker.volume    = NumericHelper.to_d(output['quote_volume'].to_f)
           ticker.change    = NumericHelper.to_d(output['change'].to_f)
           ticker.timestamp = nil
           ticker.payload   = output
