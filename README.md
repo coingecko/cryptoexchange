@@ -170,8 +170,9 @@ Or install it yourself as:
 | GDAX              | Y       |            |         |         | Y           |          | gdax              |
 | Gemini            | Y       | Y          | Y       |         | Y           |          | gemini            |
 | GetBTC            | Y       | Y          | Y       |         | User-Defined| Y        | getbtc            |
-| Gobaba            | Y       |            |         |         | Y           |          | gobaba            |
 | Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |     
+| Gobaba            | Y       |            |         |         | Y           |          | gobaba            |
+| Golix             | Y       | Y          |         |         | Y           |          | golix             |
 | GOPAX             | Y       | Y          | Y       |         | Y           | Y        | gopax             |
 | Graviex           | Y       | N          | N       |         | Y           |          | graviex           |
 | Hadax             | Y       | N          | N       |         | Y           | Y        | hadax             |
