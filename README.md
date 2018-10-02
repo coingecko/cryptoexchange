@@ -278,6 +278,7 @@ Or install it yourself as:
 | Vertpig           | Y       | Y          | N       |         | Y           | Y        | vertpig           |
 | Viabtc            | Y       |            |         |         | User-Defined|          | viabtc            |
 | Waves             | Y       | N          | Y       |         | Y           |          | waves             |
+| WazirX            | Y       |            |         |         | Y           |          | wazirx            |
 | Wcx               | Y       | Y          | Y       |         | Y           |          | wcx               |
 | Wex               | Y       | Y          | Y       |         | Y           | Y        | wex               |
 | Yobit             | Y       |            |         |         | Y           |          | yobit             |
