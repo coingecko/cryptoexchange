@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.chainex.io/market/orders/ETH/BTC/ALL/200
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.chainex.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 25 Sep 2018 13:10:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2480'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dacfbd84f9d10986c5bba6b275d84def01537881045; expires=Wed, 25-Sep-19
+        13:10:45 GMT; path=/; domain=.chainex.io; HttpOnly
+      Cache-Control:
+      - no-cache, must-revalidate
+      Content-Language:
+      - en
+      Expires:
+      - '0'
+      Vary:
+      - Accept
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 45fdbb98cfb38070-CPT
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":[{"type":"buy","count":19,"orders":[{"price":"0.03174048","amount":"0.89734728","total":"0.02848223"},{"price":"0.03085455","amount":"0.59530853","total":"0.01836797"},{"price":"0.03066370","amount":"0.27417400","total":"0.00840718"},{"price":"0.02982911","amount":"0.67595338","total":"0.02016308"},{"price":"0.02951106","amount":"0.34902247","total":"0.01030002"},{"price":"0.02813730","amount":"0.23530159","total":"0.00662075"},{"price":"0.02739798","amount":"0.83061952","total":"0.02275729"},{"price":"0.02706222","amount":"2.20087694","total":"0.05956061"},{"price":"0.02669239","amount":"5.76407162","total":"0.15385684"},{"price":"0.02653620","amount":"0.05688724","total":"0.00150957"},{"price":"0.02648158","amount":"1.20635664","total":"0.03194622"},{"price":"0.02644358","amount":"1.60469564","total":"0.04243389"},{"price":"0.02640422","amount":"1.06502793","total":"0.02812123"},{"price":"0.02623979","amount":"2.00047239","total":"0.05249197"},{"price":"0.02608720","amount":"0.80796623","total":"0.02107757"},{"price":"0.02604848","amount":"1.25159125","total":"0.03260204"},{"price":"0.02602433","amount":"0.10080642","total":"0.00262341"},{"price":"0.02592612","amount":"0.07341838","total":"0.00190345"},{"price":"0.02489367","amount":"0.04130155","total":"0.00102814"}]},{"type":"sell","count":17,"orders":[{"price":"0.04725000","amount":"1.35000000","total":"0.06378750"},{"price":"0.04153011","amount":"4.70304029","total":"0.19531778"},{"price":"0.04127213","amount":"2.57881106","total":"0.10643302"},{"price":"0.04008249","amount":"3.16193128","total":"0.12673807"},{"price":"0.03998449","amount":"1.19193859","total":"0.04765905"},{"price":"0.03997281","amount":"3.40999600","total":"0.13630712"},{"price":"0.03974033","amount":"2.03998752","total":"0.08106977"},{"price":"0.03948860","amount":"1.67743323","total":"0.06623948"},{"price":"0.03906540","amount":"0.85455634","total":"0.03338358"},{"price":"0.03845214","amount":"2.95197464","total":"0.11350974"},{"price":"0.03844817","amount":"4.82256284","total":"0.18541871"},{"price":"0.03830588","amount":"3.19829706","total":"0.12251358"},{"price":"0.03814210","amount":"3.28203405","total":"0.12518367"},{"price":"0.03801745","amount":"3.79970693","total":"0.14445516"},{"price":"0.03776232","amount":"1.98803367","total":"0.07507276"},{"price":"0.03743940","amount":"1.43654808","total":"0.05378349"},{"price":"0.03609312","amount":"2.27797361","total":"0.08221917"}]}]}'
+    http_version: 
+  recorded_at: Tue, 25 Sep 2018 13:10:46 GMT
+recorded_with: VCR 4.0.0
