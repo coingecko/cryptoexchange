@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module BitZ
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::BitZ::Market::API_URL}/tickerall"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::BitZ::Market::API_URL}/Market/symbolList"
 
         def fetch
           output = super

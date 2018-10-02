@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://altmarkets.cc/api/v1/public/getorderbook?market=BTC-ELENA&type=both
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - altmarkets.cc
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 18 Sep 2018 11:40:42 GMT
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"message":"","result":{"buy":[{"Quantity":200,"Rate":"0.00000107"},{"Quantity":93.96264113,"Rate":"0.00000106"},{"Quantity":6120,"Rate":"0.00000105"},{"Quantity":56898,"Rate":"0.00000100"},{"Quantity":10000,"Rate":"0.00000050"},{"Quantity":10000,"Rate":"0.00000020"},{"Quantity":10000,"Rate":"0.00000015"},{"Quantity":15000,"Rate":"0.00000004"},{"Quantity":1000,"Rate":"0.00000003"}],"sell":[{"Quantity":64239.95,"Rate":"0.00000150"},{"Quantity":46.6159007,"Rate":"0.00000400"},{"Quantity":8151.0595,"Rate":"0.00000429"},{"Quantity":105.156046,"Rate":"0.00000499"},{"Quantity":66.225166,"Rate":"0.00000655"},{"Quantity":140,"Rate":"0.00002949"},{"Quantity":44.833954,"Rate":"0.00002950"},{"Quantity":3300,"Rate":"0.00002954"},{"Quantity":200,"Rate":"0.00003000"},{"Quantity":300,"Rate":"0.00004990"},{"Quantity":100,"Rate":"0.00005000"},{"Quantity":100,"Rate":"0.00005200"},{"Quantity":10,"Rate":"0.00005400"},{"Quantity":10,"Rate":"0.00006100"},{"Quantity":10,"Rate":"0.00006200"},{"Quantity":10,"Rate":"0.00006300"},{"Quantity":10,"Rate":"0.00006400"},{"Quantity":100,"Rate":"0.00008000"},{"Quantity":100,"Rate":"0.00008500"},{"Quantity":100,"Rate":"0.00009000"},{"Quantity":100,"Rate":"0.00009500"},{"Quantity":100,"Rate":"0.00015000"}]}}'
+    http_version: 
+  recorded_at: Tue, 18 Sep 2018 11:40:42 GMT
+recorded_with: VCR 4.0.0

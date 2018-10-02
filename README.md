@@ -29,8 +29,9 @@ Or install it yourself as:
 | Abucoins          | Y       | Y          | Y       |         | Y           |          | abucoins          |
 | ACX               | Y       | Y          | Y       |         | Y           | Y        | acx               |
 | AEX               | Y       | Y          | Y       |         | Y           |          | aex               |
-| Allcoin           | Y       | Y          |         |         | User-Defined|          | allcoin           |
+| Allcoin           | Y       | Y          | Y       |         | Y           |          | allcoin           |
 | Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |
+| Altmarkets        | Y       | Y          | Y       |         | Y           | Y        | altmarkets        |
 | ANX               | Y       |            |         |         | User-Defined|          | anx               |
 | AXNET             | Y       | Y          | Y       |         | Y           | Y        | axnet             |
 | B2BX              | Y       | Y          |         |         | Y           |          | b2bx              |
@@ -71,6 +72,7 @@ Or install it yourself as:
 | Bitstamp          | Y       | Y          | Y       |         | User-Defined|          | bitstamp          |
 | Bittrex           | Y       |            |         |         | Y           |          | bittrex           |
 | Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |
+| Blockonix         | Y       | Y          | Y       |         | Y           |          | blockonix         |
 | Braziliex         | Y       | Y          | Y       |         | Y           |          | braziliex         |
 | BTC38             |         |            |         |         |             |          |                   |
 | BTC-e             |         |            |         |         |             |          |                   |
@@ -92,10 +94,12 @@ Or install it yourself as:
 | Cex               | Y       | Y          | Y       |         | Y           |          | cex               |
 | Cfinex            | Y       | Y          | Y       |         | Y           | Y        | cfinex            |
 | Chainrift         | Y       | Y          | Y       |         | Y           |          | chainrift         |
+| ChainEX           | Y       | Y          | Y       |         | Y           |          | chainex           |
 | Chaoex            | Y       | Y          | Y       |         | Y           | N        | chaoex            |
 | CHBTC             | Y       |            |         |         | User-Defined|          | chbtc             |
 | Cobinhood         | Y       | Y          |         |         | Y           | Y        | cobinhood         |
 | Coin2001          | Y       | Y          | Y       |         | Y           |          | coin2001          |
+| Coinall           | Y       | Y          | Y       |         | Y           |          | coinall           |
 | Coinchangex       | Y       | N          | N       |         | Y           | Y        | coinchangex       |
 | CoinEgg           | Y       | Y          | Y       |         | User-Defined| Y        | coin_egg          |
 | CoinExchange      | Y       |            |         |         | Y           |          | coin_exchange     |
@@ -119,6 +123,7 @@ Or install it yourself as:
 | Coinroom          | Y       |            |         |         | Y           |          | coinroom          |
 | CoinsMarkets      | Y       |            |         |         | Y           |          | coin_markets      |
 | Coinsbank         | Y       |            |         |         | Y           |          | coinsbank         |
+| Coinsbit          | Y       |            |         |         | Y           |          | coinsbit          |
 | Coinstock         | Y       | Y          | Y       |         | Y           |          | coinstock         |
 | Coinsuper         | Y       |            |         |         | Y           | Y        | coinsuper         |
 | Cointiger         | Y       | Y          | Y       |         | Y           |          | cointiger         |
@@ -147,6 +152,7 @@ Or install it yourself as:
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |
 | Escodex           | Y       |            |         |         | Y           | Y        | escodex           |
 | EtherDelta        | Y       |            |         |         | Y           |          | ether_delta       |
+| Ethex             | Y       | N          | N       |         | Y           | N        | ethex             |
 | Ethfinex          | Y       | Y          | Y       |         | Y           |          | ethfinex          |
 | Everbloom         | Y       |            |         |         | Y           |          | everbloom         |
 | Exmo              | Y       | Y          | Y       |         | Y           | Y        | exmo              |
@@ -154,6 +160,7 @@ Or install it yourself as:
 | Extstock          | Y       | Y          | Y       |         | Y           | Y        | extstock          |
 | Exx               | Y       | Y          | Y       |         | Y           | Y        | exx               |
 | F1cx              | Y       | Y          | Y       |         | Y           | Y        | f1cx              |
+| FatBTC            | Y       | Y          | Y       |         | Y           |          | fatbtc            |
 | Fcoin             | Y       | Y          | Y       |         | Y           | Y        | fcoin             |
 | Fex               | Y       | N          | N       |         | Y           |          | fex               |
 | Fisco             | Y       | Y          | Y       |         | Y           | Y        | fisco             |
@@ -164,9 +171,10 @@ Or install it yourself as:
 | GDAX              | Y       |            |         |         | Y           |          | gdax              |
 | Gemini            | Y       | Y          | Y       |         | Y           |          | gemini            |
 | GetBTC            | Y       | Y          | Y       |         | User-Defined| Y        | getbtc            |
+| Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |
 | Ginero            | Y       | Y          |         |         | Y           |          | ginero            |
 | Gobaba            | Y       |            |         |         | Y           |          | gobaba            |
-| Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |     
+| golix (API Failed)| Y       | Y          |         |         | Y           |          | golix             |
 | GOPAX             | Y       | Y          | Y       |         | Y           | Y        | gopax             |
 | Graviex           | Y       | N          | N       |         | Y           |          | graviex           |
 | Hadax             | Y       | N          | N       |         | Y           | Y        | hadax             |
@@ -217,6 +225,7 @@ Or install it yourself as:
 | Novadex           | Y       | N          | N       |         | Y           | Y        | novadex           |
 | Nova Exchange     | Y       |            |         |         | Y           |          | novaexchange      |
 | OasisDEX          | Y       |            |         |         | Y           |          | oasisdex          |
+| OAX               | Y       |            |         |         | Y           |          | oax               |
 | Octaex            | Y       | Y          | Y       |         | Y           |          | octaex            |
 | OKCoin            | Y       |            |         |         | User-Defined|          | okcoin            |
 | OKEx              | Y       | Y          | Y       |         | Y           | Y        | okex              |
@@ -257,6 +266,7 @@ Or install it yourself as:
 | Tidex             | Y       |            |         |         | Y           |          | tidex             |
 | Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |
 | Tokenomy          | Y       | Y          | Y       |         | Y           | Y        | tokenomy          |
+| TokensNet         | Y       | Y          | Y       |         | Y           | N        | tokens_net        |
 | Topbtc            | Y       | N          | N       |         | Y           | Y        | topbtc            |
 | TradeOgre         | Y       | Y          | Y       |         | Y           | Y        | trade_ogre        |
 | Trade Satoshi     | Y       |            |         |         | Y           | Y        | trade_satoshi     |
@@ -270,6 +280,7 @@ Or install it yourself as:
 | Vertpig           | Y       | Y          | N       |         | Y           | Y        | vertpig           |
 | Viabtc            | Y       |            |         |         | User-Defined|          | viabtc            |
 | Waves             | Y       | N          | Y       |         | Y           |          | waves             |
+| WazirX            | Y       |            |         |         | Y           |          | wazirx            |
 | Wcx               | Y       | Y          | Y       |         | Y           |          | wcx               |
 | Wex               | Y       | Y          | Y       |         | Y           | Y        | wex               |
 | Yobit             | Y       |            |         |         | Y           |          | yobit             |

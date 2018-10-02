@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://x.wazirx.com/api/v2/depth?limit=100&market=btcinr
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - x.wazirx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Sep 2018 10:45:41 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '722'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0ca75c8f1dbb498f1213c6e50bcd2a081536835541; expires=Fri, 13-Sep-19
+        10:45:41 GMT; path=/; domain=.wazirx.com; HttpOnly; Secure
+      Version:
+      - HTTP/1.1
+      Host:
+      - wazirx.com
+      X-Real-Ip:
+      - 100.127.0.0
+      X-Forwarded-For:
+      - 86.181.90.72, 141.101.107.254, 100.127.0.0
+      X-Forwarded-Proto:
+      - https
+      X-Forwarded-Port:
+      - '443'
+      X-Amzn-Trace-Id:
+      - Root=1-5b9a3fd5-f9124fee482d8b6165f68eb6
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - GB
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 86.181.90.72
+      X-Forwarded-Host:
+      - wazirx.com
+      Etag:
+      - W/"9dc685c5b048c9636272df5852aa1690"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3a49b94a-a5a9-4c78-ba02-cb91765bd777
+      X-Runtime:
+      - '0.007410'
+      Access-Control-Allow-Origin:
+      - https://wazirx.com
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Headers:
+      - User-Agent,Keep-Alive,Content-Type,access-key,api-key,signature,tonce,username
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, DELETE, PUT, PATCH
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 459a06933b7b34b2-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timestamp":1536835541,"asks":[["507999.0","0.3131"],["508000.0","0.0769"],["508102.0","0.001"],["509999.0","0.0032"],["517500.0","0.0048"],["525000.0","0.0011"],["536000.0","0.0219"],["544400.0","0.001"],["550000.0","0.0065"],["556000.0","0.0018"],["560000.0","0.0036"],["565000.0","0.0188"],["590000.0","0.0017"],["600000.0","0.0337"],["618000.0","0.0504"],["632000.0","0.0016"]],"bids":[["494600.0","0.0312"],["494599.01","0.0157"],["494599.0","0.0817"],["494499.0","0.0031"],["490200.0","0.0099"],["487100.0","0.0586"],["475000.0","0.0095"],["462202.0","0.0039"],["450000.0","0.001"],["400000.0","0.0023"],["315000.0","0.0369"],["123.0","4.6463"],["100.0","1.0"],["6.0","35.1152"],["5.0","13.0948"],["1.0","15.955"]]}'
+    http_version: 
+  recorded_at: Thu, 13 Sep 2018 10:45:41 GMT
+recorded_with: VCR 4.0.0
