@@ -65,6 +65,7 @@ Or install it yourself as:
 | Bitlish           | Y       | Y          | Y       |         | Y           |          | bitlish           |
 | Bitmart           | Y       | Y          | Y       |         | Y           |          | bitmart           |
 | Bitmex            | Y       | Y          | Y       |         | Y           |          | bitmex            |
+| BitOnBay          | Y       |            |         |         | Y           |          | bitonbay          |
 | Bitpaction        | Y       | Y          | Y       |         | Y           |          | bitpaction        |
 | Bitrue            | Y       | N          | N       |         | Y           | Y        | bitrue            |
 | Bits Blockchain   | Y       | Y          |         |         | Y           |          | bits_blockchain   |
