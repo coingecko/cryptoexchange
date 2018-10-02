@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Airswap integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:eth_dai_pair) { Cryptoexchange::Models::MarketPair.new(base: 'eth', target: 'dai', market: 'airswap') }
+  let(:dai_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'dai', target: 'eth', market: 'airswap') }
 
   it 'fetch pairs' do
     pairs = client.pairs('airswap')
@@ -15,10 +15,10 @@ RSpec.describe 'Airswap integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(eth_dai_pair)
+    ticker = client.ticker(dai_eth_pair)
 
-    expect(ticker.base).to eq 'ETH'
-    expect(ticker.target).to eq 'DAI'
+    expect(ticker.base).to eq 'DAI'
+    expect(ticker.target).to eq 'ETH'
     expect(ticker.market).to eq 'airswap'
 
     expect(ticker.volume).to be_a Numeric
