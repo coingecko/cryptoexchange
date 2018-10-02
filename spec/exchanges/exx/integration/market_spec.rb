@@ -16,7 +16,7 @@ RSpec.describe 'Exx integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'exx', base: eth_hsr_pair.base, target: eth_hsr_pair.target
-    expect(trade_page_url).to eq "https://www.exx.com/tradePros/ETH_HSR"
+    expect(trade_page_url).to eq "https://www.exx.com/tradeCoding/eth_hsr"
   end
 
   it 'fetch ticker' do
