@@ -119,6 +119,7 @@ Or install it yourself as:
 | Coinroom          | Y       |            |         |         | Y           |          | coinroom          |
 | CoinsMarkets      | Y       |            |         |         | Y           |          | coin_markets      |
 | Coinsbank         | Y       |            |         |         | Y           |          | coinsbank         |
+| Coinsbit          | Y       |            |         |         | Y           |          | coinsbit          |
 | Coinstock         | Y       | Y          | Y       |         | Y           |          | coinstock         |
 | Coinsuper         | Y       |            |         |         | Y           | Y        | coinsuper         |
 | Cointiger         | Y       | Y          | Y       |         | Y           |          | cointiger         |
