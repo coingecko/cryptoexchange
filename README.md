@@ -261,6 +261,7 @@ Or install it yourself as:
 | Tidex             | Y       |            |         |         | Y           |          | tidex             |
 | Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |
 | Tokenomy          | Y       | Y          | Y       |         | Y           | Y        | tokenomy          |
+| TokensNet         | Y       | Y          | Y       |         | Y           | N        | tokens_net        |
 | Topbtc            | Y       | N          | N       |         | Y           | Y        | topbtc            |
 | TradeOgre         | Y       | Y          | Y       |         | Y           | Y        | trade_ogre        |
 | Trade Satoshi     | Y       |            |         |         | Y           | Y        | trade_satoshi     |
