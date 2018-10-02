@@ -1,0 +1,122 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ethex.market:5055/ticker24
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.ethex.market:5055
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 23 Sep 2018 07:28:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - X-Requested-With,content-type
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "ETH_BAT": {
+            "last": "0.00072755",
+            "lowestAsk": "0.0007451",
+            "highestBid": "0.000711",
+            "volume": "3.940215355",
+            "high24hr": "0.00072755",
+            "low24hr": "0.000716822"
+          },
+          "ETH_DAI": {
+            "last": "0.004135405",
+            "lowestAsk": "0.004198",
+            "highestBid": "0.003501",
+            "volume": "3.95977434965",
+            "high24hr": "0.004135405",
+            "low24hr": "0.004135405"
+          },
+          "ETH_STORJ": {
+            "last": null,
+            "lowestAsk": "0.001240899",
+            "highestBid": "0.001221088",
+            "volume": "0",
+            "high24hr": null,
+            "low24hr": null
+          },
+          "ETH_STORM": {
+            "last": null,
+            "lowestAsk": "0.00003271",
+            "highestBid": "0.000032723",
+            "volume": "0",
+            "high24hr": null,
+            "low24hr": null
+          },
+          "ETH_ZRX": {
+            "last": null,
+            "lowestAsk": "0.002616959",
+            "highestBid": "0.002603281",
+            "volume": "0",
+            "high24hr": null,
+            "low24hr": null
+          },
+          "ETH_DENT": {
+            "last": "0.000008946",
+            "lowestAsk": null,
+            "highestBid": "0.0000085",
+            "volume": "0.789457662",
+            "high24hr": "0.000008946",
+            "low24hr": "0.000008946"
+          },
+          "ETH_PRL": {
+            "last": null,
+            "lowestAsk": "0.00026433",
+            "highestBid": "0.000251",
+            "volume": "0",
+            "high24hr": null,
+            "low24hr": null
+          },
+          "ETH_KNC": {
+            "last": "0.001646441",
+            "lowestAsk": null,
+            "highestBid": "0.00151",
+            "volume": "0.79847449177",
+            "high24hr": "0.001646441",
+            "low24hr": "0.001646441"
+          },
+          "ETH_REP": {
+            "last": null,
+            "lowestAsk": "0.05679527",
+            "highestBid": "0.0556",
+            "volume": "0",
+            "high24hr": null,
+            "low24hr": null
+          },
+          "ETH_REQ": {
+            "last": "0.000173",
+            "lowestAsk": "0.000173329",
+            "highestBid": "0.0001731",
+            "volume": "0.7093",
+            "high24hr": "0.000173",
+            "low24hr": "0.000173"
+          }
+        }
+    http_version: 
+  recorded_at: Sun, 23 Sep 2018 07:28:48 GMT
+recorded_with: VCR 4.0.0

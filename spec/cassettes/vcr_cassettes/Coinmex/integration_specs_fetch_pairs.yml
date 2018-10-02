@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.coinmex.com/api/v1/spot/public/products
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.coinmex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Sep 2018 18:56:08 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db157a79db87a08411f64abeaf4829d291536605767; expires=Tue, 10-Sep-19
+        18:56:07 GMT; path=/; domain=.coinmex.com; HttpOnly
+      - locale=en-US; Max-Age=604800; Expires=Mon, 17-Sep-2018 18:56:08 GMT; Path=/
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '10'
+      X-Ratelimit-Remaining:
+      - '9'
+      X-Ratelimit-Used:
+      - '1'
+      X-Ratelimit-Reset:
+      - '1536605769332'
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 45841cde6bd06a13-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"baseCurrency":"CT","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"1","code":"CT_USDT","quoteCurrency":"USDT","quoteIncrement":"0.0001","quotePrecision":"4","volumeIncrement":"4"},{"baseCurrency":"LTC","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"0.01","code":"LTC_BTC","quoteCurrency":"BTC","quoteIncrement":"0.0001","quotePrecision":"8","volumeIncrement":"4"},{"baseCurrency":"BCH","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"0.001","code":"BCH_BTC","quoteCurrency":"BTC","quoteIncrement":"0.0001","quotePrecision":"8","volumeIncrement":"4"},{"baseCurrency":"ETH","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"0.001","code":"ETH_BTC","quoteCurrency":"BTC","quoteIncrement":"0.0001","quotePrecision":"8","volumeIncrement":"4"},{"baseCurrency":"ETC","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"0.01","code":"ETC_BTC","quoteCurrency":"BTC","quoteIncrement":"0.0001","quotePrecision":"8","volumeIncrement":"4"},{"baseCurrency":"BTC","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"0.001","code":"BTC_USDT","quoteCurrency":"USDT","quoteIncrement":"0.0001","quotePrecision":"4","volumeIncrement":"4"},{"baseCurrency":"ETH","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"0.001","code":"ETH_USDT","quoteCurrency":"USDT","quoteIncrement":"0.0001","quotePrecision":"4","volumeIncrement":"4"},{"baseCurrency":"LTC","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"0.01","code":"LTC_USDT","quoteCurrency":"USDT","quoteIncrement":"0.0001","quotePrecision":"4","volumeIncrement":"4"},{"baseCurrency":"BCH","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"0.001","code":"BCH_USDT","quoteCurrency":"USDT","quoteIncrement":"0.0001","quotePrecision":"4","volumeIncrement":"4"},{"baseCurrency":"ETC","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"0.01","code":"ETC_USDT","quoteCurrency":"USDT","quoteIncrement":"0.0001","quotePrecision":"4","volumeIncrement":"4"},{"baseCurrency":"ETC","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"0.01","code":"ETC_ETH","quoteCurrency":"ETH","quoteIncrement":"0.0001","quotePrecision":"6","volumeIncrement":"4"},{"baseCurrency":"DDD","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"1","code":"DDD_ETH","quoteCurrency":"ETH","quoteIncrement":"0.0001","quotePrecision":"8","volumeIncrement":"4"},{"baseCurrency":"MVP","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"20","code":"MVP_ETH","quoteCurrency":"ETH","quoteIncrement":"0.00000001","quotePrecision":"8","volumeIncrement":"4"},{"baseCurrency":"BAIC","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"100","code":"BAIC_ETH","quoteCurrency":"ETH","quoteIncrement":"0.0001","quotePrecision":"8","volumeIncrement":"4"},{"baseCurrency":"WIN","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"50","code":"WIN_ETH","quoteCurrency":"ETH","quoteIncrement":"0.0001","quotePrecision":"8","volumeIncrement":"4"},{"baseCurrency":"GET","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"5","code":"GET_ETH","quoteCurrency":"ETH","quoteIncrement":"0.0001","quotePrecision":"8","volumeIncrement":"4"},{"baseCurrency":"OF","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"100","code":"OF_ETH","quoteCurrency":"ETH","quoteIncrement":"0.0001","quotePrecision":"10","volumeIncrement":"4"},{"baseCurrency":"MDS","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"3","code":"MDS_ETH","quoteCurrency":"ETH","quoteIncrement":"0.0001","quotePrecision":"8","volumeIncrement":"4"},{"baseCurrency":"GNX","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"20","code":"GNX_ETH","quoteCurrency":"ETH","quoteIncrement":"0.0001","quotePrecision":"8","volumeIncrement":"4"},{"baseCurrency":"DPY","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"0.5","code":"DPY_ETH","quoteCurrency":"ETH","quoteIncrement":"0.0001","quotePrecision":"6","volumeIncrement":"4"},{"baseCurrency":"HUR","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"5","code":"HUR_ETH","quoteCurrency":"ETH","quoteIncrement":"0.0001","quotePrecision":"8","volumeIncrement":"4"},{"baseCurrency":"HUR","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"5","code":"HUR_USDT","quoteCurrency":"USDT","quoteIncrement":"0.0001","quotePrecision":"4","volumeIncrement":"4"},{"baseCurrency":"PAG","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"10","code":"PAG_ETH","quoteCurrency":"ETH","quoteIncrement":"0.0001","quotePrecision":"8","volumeIncrement":"4"},{"baseCurrency":"YOU","baseIncrement":"0.0001","baseMaxSize":"100000.00","baseMinSize":"5","code":"YOU_USDT","quoteCurrency":"USDT","quoteIncrement":"0.0001","quotePrecision":"4","volumeIncrement":"4"},{"baseCurrency":"SDS","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"5","code":"SDS_ETH","quoteCurrency":"ETH","quoteIncrement":"0.0001","quotePrecision":"8","volumeIncrement":"4"},{"baseCurrency":"FTI","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"20","code":"FTI_ETH","quoteCurrency":"ETH","quoteIncrement":"0.0001","quotePrecision":"8","volumeIncrement":"4"},{"baseCurrency":"ONG","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"15","code":"ONG_USDT","quoteCurrency":"USDT","quoteIncrement":"0.0001","quotePrecision":"4","volumeIncrement":"4"},{"baseCurrency":"ONT","baseIncrement":"0","baseMaxSize":"100000.00","baseMinSize":"0.5","code":"ONT_USDT","quoteCurrency":"USDT","quoteIncrement":"0.0001","quotePrecision":"4","volumeIncrement":"4"},{"baseCurrency":"PST","baseIncrement":"0.00000001","baseMaxSize":"100000.00","baseMinSize":"1","code":"PST_ETH","quoteCurrency":"ETH","quoteIncrement":"0.00000001","quotePrecision":"8","volumeIncrement":"8"},{"baseCurrency":"BKBT","baseIncrement":"0.00000001","baseMaxSize":"100000.00","baseMinSize":"100","code":"BKBT_ETH","quoteCurrency":"ETH","quoteIncrement":"0.00000001","quotePrecision":"8","volumeIncrement":"8"},{"baseCurrency":"PVB","baseIncrement":"0.00000001","baseMaxSize":"100000.00","baseMinSize":"10","code":"PVB_ETH","quoteCurrency":"ETH","quoteIncrement":"0.00000001","quotePrecision":"8","volumeIncrement":"8"},{"baseCurrency":"BTM","baseIncrement":"0.00000001","baseMaxSize":"100000.00","baseMinSize":"1","code":"BTM_ETH","quoteCurrency":"ETH","quoteIncrement":"0.00000001","quotePrecision":"8","volumeIncrement":"8"},{"baseCurrency":"EOS","baseIncrement":"0.0001","baseMaxSize":"100000.00","baseMinSize":"0.1","code":"EOS_USDT","quoteCurrency":"USDT","quoteIncrement":"0.0001","quotePrecision":"4","volumeIncrement":"4"},{"baseCurrency":"EOS","baseIncrement":"0.00000001","baseMaxSize":"100000.00","baseMinSize":"0.1","code":"EOS_BTC","quoteCurrency":"BTC","quoteIncrement":"0.00000001","quotePrecision":"8","volumeIncrement":"8"},{"baseCurrency":"EOS","baseIncrement":"0.00000001","baseMaxSize":"100000.00","baseMinSize":"0.1","code":"EOS_ETH","quoteCurrency":"ETH","quoteIncrement":"0.00000001","quotePrecision":"8","volumeIncrement":"8"},{"baseCurrency":"EOSC","baseIncrement":"0.00000001","baseMaxSize":"100000.00","baseMinSize":"10","code":"EOSC_ETH","quoteCurrency":"ETH","quoteIncrement":"0.00000001","quotePrecision":"8","volumeIncrement":"8"},{"baseCurrency":"ZXT","baseIncrement":"0.00000001","baseMaxSize":"100000.00","baseMinSize":"10","code":"ZXT_ETH","quoteCurrency":"ETH","quoteIncrement":"0.00000001","quotePrecision":"8","volumeIncrement":"8"}]'
+    http_version: 
+  recorded_at: Mon, 10 Sep 2018 18:56:08 GMT
+recorded_with: VCR 4.0.0
