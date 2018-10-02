@@ -97,6 +97,7 @@ Or install it yourself as:
 | CHBTC             | Y       |            |         |         | User-Defined|          | chbtc             |
 | Cobinhood         | Y       | Y          |         |         | Y           | Y        | cobinhood         |
 | Coin2001          | Y       | Y          | Y       |         | Y           |          | coin2001          |
+| Coinall           | Y       | Y          | Y       |         | Y           |          | coinall           |
 | Coinchangex       | Y       | N          | N       |         | Y           | Y        | coinchangex       |
 | CoinEgg           | Y       | Y          | Y       |         | User-Defined| Y        | coin_egg          |
 | CoinExchange      | Y       |            |         |         | Y           |          | coin_exchange     |

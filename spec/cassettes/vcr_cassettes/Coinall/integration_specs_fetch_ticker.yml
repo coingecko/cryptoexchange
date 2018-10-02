@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.coinall.com/api/spot/v3/products/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.coinall.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 12 Sep 2018 17:20:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d767a14af439ddbbe0d0ce348a1f2fc251536772848; expires=Thu, 12-Sep-19
+        17:20:48 GMT; path=/; domain=.coinall.com; HttpOnly
+      - locale=en_US; Max-Age=604800; Expires=Wed, 19-Sep-2018 17:20:48 GMT; Path=/
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '33'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 45940bff3ab1348e-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"product_id":"BTC-USDT","last":"6271.6029","best_ask":"6272.3028","best_bid":"6271.6029","open_24h":"6247.3276","high_24h":"6321.154","low_24h":"6189.8196","base_volume_24h":"86","timestamp":"2018-09-12T17:20:32.768Z","quote_volume_24h":"541675"},{"product_id":"ETH-USDT","last":"171.1449","best_ask":"171.1448","best_bid":"171.1196","open_24h":"182.4591","high_24h":"186.6342","low_24h":"167.29","base_volume_24h":"213","timestamp":"2018-09-12T17:20:40.724Z","quote_volume_24h":"37649"},{"product_id":"ETH-BTC","last":"0.02730443","best_ask":"0.02730443","best_bid":"0.02730007","open_24h":"0.0292333","high_24h":"0.02955865","low_24h":"0.02686048","base_volume_24h":"3","timestamp":"2018-09-12T17:20:40.724Z","quote_volume_24h":"0"},{"product_id":"OKB-USDT","last":"1.1654","best_ask":"1.1647","best_bid":"1.1644","open_24h":"1.2227","high_24h":"1.244","low_24h":"1.12","base_volume_24h":"12805","timestamp":"2018-09-12T17:20:37.168Z","quote_volume_24h":"15190"},{"product_id":"OKB-BTC","last":"0.00018576","best_ask":"0.00018576","best_bid":"0.00018575","open_24h":"0.00019562","high_24h":"0.000198","low_24h":"0.00018","base_volume_24h":"1287681","timestamp":"2018-09-12T17:20:37.196Z","quote_volume_24h":"246"},{"product_id":"OKB-ETH","last":"0.00680199","best_ask":"0.006802","best_bid":"0.00680199","open_24h":"0.0066979","high_24h":"0.007038","low_24h":"0.00638","base_volume_24h":"13","timestamp":"2018-09-12T17:20:37.212Z","quote_volume_24h":"0"},{"product_id":"CAC-USDT","last":"0.01931","best_ask":"0.01932","best_bid":"0.01931","open_24h":"0.02294","high_24h":"0.02976","low_24h":"0.019","base_volume_24h":"182689053","timestamp":"2018-09-12T17:20:38.176Z","quote_volume_24h":"3922615"},{"product_id":"CAC-BTC","last":"0.00000311","best_ask":"0.00000316","best_bid":"0.00000306","open_24h":"0.00000341","high_24h":"0.00000429","low_24h":"0.00000301","base_volume_24h":"335934","timestamp":"2018-09-12T17:20:38.197Z","quote_volume_24h":"1"},{"product_id":"CAC-ETH","last":"0.00011265","best_ask":"0.00011273","best_bid":"0.00011268","open_24h":"0.00012545","high_24h":"0.00014905","low_24h":"0.00011","base_volume_24h":"115385332","timestamp":"2018-09-12T17:20:38.199Z","quote_volume_24h":"13848"}]'
+    http_version: 
+  recorded_at: Wed, 12 Sep 2018 17:20:48 GMT
+recorded_with: VCR 4.0.0
