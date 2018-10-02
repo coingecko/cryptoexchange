@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Blockonix integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:eth_bdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BDT', inst_id: 'baseAddress=0x0000000000000000000000000000000000000000&quoteAddress=0x741f58cd68d24f361cc0ee0d3aaf7df2bf16132e', market: 'blockonix') }
+  let(:eth_bdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BDT', target: 'ETH', inst_id: 'baseAddress=0x0000000000000000000000000000000000000000&quoteAddress=0x741f58cd68d24f361cc0ee0d3aaf7df2bf16132e', market: 'blockonix') }
 
   it 'fetch pairs' do
     pairs = client.pairs('blockonix')
@@ -17,8 +17,8 @@ RSpec.describe 'Blockonix integration specs' do
   it 'fetch ticker' do
     ticker = client.ticker(eth_bdt_pair)
 
-    expect(ticker.base).to eq 'ETH'
-    expect(ticker.target).to eq 'BDT'
+    expect(ticker.base).to eq 'BDT'
+    expect(ticker.target).to eq 'ETH'
     expect(ticker.market).to eq 'blockonix'
     expect(ticker.last).to be_a Numeric
     expect(ticker.low).to be_a Numeric
@@ -34,8 +34,8 @@ RSpec.describe 'Blockonix integration specs' do
   it 'fetch order book' do
     order_book = client.order_book(eth_bdt_pair)
 
-    expect(order_book.base).to eq 'ETH'
-    expect(order_book.target).to eq 'BDT'
+    expect(order_book.base).to eq 'BDT'
+    expect(order_book.target).to eq 'ETH'
     expect(order_book.market).to eq 'blockonix'
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
@@ -53,8 +53,8 @@ RSpec.describe 'Blockonix integration specs' do
     trade = trades.sample
 
     expect(trades).to_not be_empty
-    expect(trade.base).to eq 'ETH'
-    expect(trade.target).to eq 'BDT'
+    expect(trade.base).to eq 'BDT'
+    expect(trade.target).to eq 'ETH'
     expect(trade.market).to eq 'blockonix'
     expect(trade.trade_id).to_not be_nil
     expect(['buy', 'sell']).to include trade.type
