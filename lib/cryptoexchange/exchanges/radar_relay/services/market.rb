@@ -9,26 +9,33 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(market_pair, output)
+          ticker_output = super(ticker_url(market_pair))
+          candle_output = super(candle_url(market_pair))
+          adapt(market_pair, ticker_output, candle_output.first)
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::RadarRelay::Market::API_URL}/ticker/#{market_pair.base}/#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::RadarRelay::Market::API_URL}/markets/#{market_pair.base}-#{market_pair.target}/ticker"
         end
 
-        def adapt(market_pair, output)
+        def candle_url(market_pair)
+          "#{Cryptoexchange::Exchanges::RadarRelay::Market::API_URL}/markets/#{market_pair.base}-#{market_pair.target}/candles"
+        end
+
+        def adapt(market_pair, ticker_output, candle_output)
           ticker = Cryptoexchange::Models::Ticker.new
 
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = RadarRelay::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['last'])
-          ticker.high      = output['high'] == "NA" ? nil : NumericHelper.to_d(output['high'])
-          ticker.low       = output['low'] == "NA" ? nil : NumericHelper.to_d(output['low'])
-          ticker.volume    = NumericHelper.to_d(output['quoteVolume'])
-          ticker.timestamp = nil
-          ticker.payload   = output
+          ticker.bid       = NumericHelper.to_d(ticker_output['bestBid'])
+          ticker.ask       = NumericHelper.to_d(ticker_output['bestAsk'])
+          ticker.last      = NumericHelper.to_d(candle_output['close'])
+          ticker.high      = NumericHelper.to_d(candle_output['high'])
+          ticker.low       = NumericHelper.to_d(candle_output['low'])
+          ticker.volume    = NumericHelper.to_d(candle_output['baseTokenVolume'])
+          ticker.timestamp = NumericHelper.to_d(ticker_output['timestamp'])
+          ticker.payload   = [ticker_output, candle_output]
           ticker
         end
       end
