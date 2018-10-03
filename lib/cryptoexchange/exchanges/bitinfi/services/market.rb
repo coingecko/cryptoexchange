@@ -34,11 +34,11 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Bitinfi::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['close'].to_f)
-          ticker.high      = NumericHelper.to_d(output['high'].to_f)
-          ticker.low       = NumericHelper.to_d(output['low'].to_f)
-          ticker.volume    = NumericHelper.to_d(output['volume'].to_f)
-          ticker.change    = NumericHelper.to_d(output['upDownRate'].to_f)
+          ticker.last      = NumericHelper.to_d(output['close'])
+          ticker.high      = NumericHelper.to_d(output['high'])
+          ticker.low       = NumericHelper.to_d(output['low'])
+          ticker.volume    = NumericHelper.to_d(output['volume'])
+          ticker.change    = NumericHelper.to_d(output['upDownRate'])
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
