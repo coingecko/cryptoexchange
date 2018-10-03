@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitmax.io/api/v1/ticker/24hr
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitmax.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 02 Oct 2018 11:38:59 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '5365'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d9a55960a5dad0f6d19de84e8fb42666d1538480339; expires=Wed, 02-Oct-19
+        11:38:59 GMT; path=/; domain=.bitmax.io; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Frame-Operations:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4636e2c7ce5e3427-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"symbol":"ETC/USDT","interval":"1d","barStartTime":1538480100000,"openPrice":"11.1617","closePrice":"11.2147","highPrice":"11.3782","lowPrice":"11.1294","volume":"16228.56929"},{"symbol":"ETC/BTC","interval":"1d","barStartTime":1538480100000,"openPrice":"0.00170599","closePrice":"0.00170599","highPrice":"0.00170701","lowPrice":"0.00170501","volume":"6481.16474"},{"symbol":"OLT/BTC","interval":"1d","barStartTime":0,"openPrice":"0.00000000","closePrice":"0.00000000","highPrice":"0.00000000","lowPrice":"0.00000000","volume":"0.00"},{"symbol":"ZRX/BTC","interval":"1d","barStartTime":0,"openPrice":"0.00000000","closePrice":"0.00000000","highPrice":"0.00000000","lowPrice":"0.00000000","volume":"0.000"},{"symbol":"IOST/BTC","interval":"1d","barStartTime":1538480100000,"openPrice":"0.00000191","closePrice":"0.00000205","highPrice":"0.00000206","lowPrice":"0.00000205","volume":"12492020.36"},{"symbol":"LBA/BTC","interval":"1d","barStartTime":1538480100000,"openPrice":"0.00000423","closePrice":"0.00000470","highPrice":"0.00000470","lowPrice":"0.00000448","volume":"32143.13"},{"symbol":"SEELE/ETH","interval":"1d","barStartTime":0,"openPrice":"0.00000000","closePrice":"0.00000000","highPrice":"0.00000000","lowPrice":"0.00000000","volume":"0.00"},{"symbol":"BCH/BTC","interval":"1d","barStartTime":1538480100000,"openPrice":"0.081316","closePrice":"0.081751","highPrice":"0.081963","lowPrice":"0.081699","volume":"1089.9045904"},{"symbol":"ZIL/BTC","interval":"1d","barStartTime":1538480100000,"openPrice":"0.00000555","closePrice":"0.00000566","highPrice":"0.00000566","lowPrice":"0.00000566","volume":"262201.38"},{"symbol":"ZRX/ETH","interval":"1d","barStartTime":0,"openPrice":"0.00000000","closePrice":"0.00000000","highPrice":"0.00000000","lowPrice":"0.00000000","volume":"0.000"},{"symbol":"LFT/ETH","interval":"1d","barStartTime":0,"openPrice":"0.00000000","closePrice":"0.00000000","highPrice":"0.00000000","lowPrice":"0.00000000","volume":"0.00"},{"symbol":"LTC/USDT","interval":"1d","barStartTime":1538480100000,"openPrice":"60.011","closePrice":"60.231","highPrice":"61.779","lowPrice":"59.551","volume":"4657.923113"},{"symbol":"LTC/ETH","interval":"1d","barStartTime":1538480100000,"openPrice":"0.265799","closePrice":"0.263541","highPrice":"0.263541","lowPrice":"0.263541","volume":"286.670164"},{"symbol":"IOST/ETH","interval":"1d","barStartTime":1538480100000,"openPrice":"0.00005495","closePrice":"0.00005854","highPrice":"0.00005906","lowPrice":"0.00005854","volume":"2001615.42"},{"symbol":"BAT/ETH","interval":"1d","barStartTime":0,"openPrice":"0.00000000","closePrice":"0.00000000","highPrice":"0.00000000","lowPrice":"0.00000000","volume":"0.000"},{"symbol":"ETC/ETH","interval":"1d","barStartTime":1538480100000,"openPrice":"0.0491179","closePrice":"0.0491549","highPrice":"0.0491549","lowPrice":"0.0489441","volume":"1123.10213"},{"symbol":"ETH/BTC","interval":"1d","barStartTime":1538480100000,"openPrice":"0.034819","closePrice":"0.034764","highPrice":"0.034856","lowPrice":"0.034718","volume":"6471.3609116"},{"symbol":"OLT/ETH","interval":"1d","barStartTime":0,"openPrice":"0.00000000","closePrice":"0.00000000","highPrice":"0.00000000","lowPrice":"0.00000000","volume":"0.00"},{"symbol":"ELF/BTC","interval":"1d","barStartTime":1538480100000,"openPrice":"0.00005225","closePrice":"0.00005622","highPrice":"0.00005644","lowPrice":"0.00005596","volume":"301674.260"},{"symbol":"LBA/ETH","interval":"1d","barStartTime":1538480100000,"openPrice":"0.00012201","closePrice":"0.00013499","highPrice":"0.00013499","lowPrice":"0.00012801","volume":"366713.76"},{"symbol":"BCH/ETH","interval":"1d","barStartTime":1538480100000,"openPrice":"2.33061","closePrice":"2.35959","highPrice":"2.35959","lowPrice":"2.35506","volume":"31.5374002"},{"symbol":"BTC/USDT","interval":"1d","barStartTime":1538480100000,"openPrice":"6599.8","closePrice":"6573.9","highPrice":"6597.1","lowPrice":"6561.7","volume":"603.24224917"},{"symbol":"ZIL/ETH","interval":"1d","barStartTime":1538480100000,"openPrice":"0.00015994","closePrice":"0.00016350","highPrice":"0.00016350","lowPrice":"0.00016329","volume":"724040.96"},{"symbol":"BCH/USDT","interval":"1d","barStartTime":1538480100000,"openPrice":"530.01","closePrice":"537.38","highPrice":"553.81","lowPrice":"525.32","volume":"1218.3029829"},{"symbol":"ELF/ETH","interval":"1d","barStartTime":1538480100000,"openPrice":"0.00150291","closePrice":"0.00161370","highPrice":"0.00162073","lowPrice":"0.00161014","volume":"97426.186"},{"symbol":"ETH/USDT","interval":"1d","barStartTime":1538480100000,"openPrice":"229.86","closePrice":"228.91","highPrice":"229.67","lowPrice":"228.32","volume":"10751.0626371"},{"symbol":"LFT/BTC","interval":"1d","barStartTime":0,"openPrice":"0.00000000","closePrice":"0.00000000","highPrice":"0.00000000","lowPrice":"0.00000000","volume":"0.00"},{"symbol":"BAT/BTC","interval":"1d","barStartTime":0,"openPrice":"0.00000000","closePrice":"0.00000000","highPrice":"0.00000000","lowPrice":"0.00000000","volume":"0.000"},{"symbol":"SEELE/BTC","interval":"1d","barStartTime":0,"openPrice":"0.00000000","closePrice":"0.00000000","highPrice":"0.00000000","lowPrice":"0.00000000","volume":"0.00"},{"symbol":"LTC/BTC","interval":"1d","barStartTime":1538480100000,"openPrice":"0.0092521","closePrice":"0.0091721","highPrice":"0.0091929","lowPrice":"0.0091621","volume":"6441.230816"}]'
+    http_version: 
+  recorded_at: Tue, 02 Oct 2018 11:38:59 GMT
+recorded_with: VCR 4.0.0

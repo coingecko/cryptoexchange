@@ -65,6 +65,7 @@ Or install it yourself as:
 | Bitkub            | Y       | Y          | Y       |         | Y           | Y        | bitkub            |
 | Bitlish           | Y       | Y          | Y       |         | Y           |          | bitlish           |
 | Bitmart           | Y       | Y          | Y       |         | Y           |          | bitmart           |
+| Bitmax            | Y       | Y          | Y       |         | Y           | Y        | bitmax            |
 | Bitmex            | Y       | Y          | Y       |         | Y           |          | bitmex            |
 | BitOnBay          | Y       |            |         |         | Y           |          | bitonbay          |
 | Bitpaction        | Y       | Y          | Y       |         | Y           |          | bitpaction        |
