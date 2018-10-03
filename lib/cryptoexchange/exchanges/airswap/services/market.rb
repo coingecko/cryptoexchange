@@ -35,11 +35,10 @@ module Cryptoexchange::Exchanges
           ticker.target    = market_pair.target
           ticker.market    = Airswap::Market::NAME
 
-          ticker.volume    = NumericHelper.to_d(output['baseVolume'])
+          ticker.volume    = NumericHelper.to_d(output['quoteVolume'])
           ticker.last      = NumericHelper.to_d(output['last'])
           ticker.high      = NumericHelper.to_d(output['high24hr'])
           ticker.low       = NumericHelper.to_d(output['low24hr'])
-          ticker.timestamp = Time.now.to_i
           ticker.payload   = output
           ticker
         end
