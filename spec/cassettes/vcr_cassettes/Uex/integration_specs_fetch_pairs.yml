@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://open-api.uex.com/open/api/common/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - open-api.uex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 03 Oct 2018 16:40:59 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8f2ada0d681997772f00f03fd54c06761538584858; expires=Thu, 03-Oct-19
+        16:40:58 GMT; path=/; domain=.uex.com; HttpOnly; Secure
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4640da8898e131f8-SIN
+    body:
+      encoding: UTF-8
+      string: '{"code":"0","msg":"suc","data":[{"symbol":"ethusdt","count_coin":"USDT","amount_precision":3,"base_coin":"ETH","price_precision":2},{"symbol":"btcusdt","count_coin":"USDT","amount_precision":3,"base_coin":"BTC","price_precision":2},{"symbol":"bchusdt","count_coin":"USDT","amount_precision":3,"base_coin":"BCH","price_precision":2},{"symbol":"ethbtc","count_coin":"BTC","amount_precision":3,"base_coin":"ETH","price_precision":6},{"symbol":"bchbtc","count_coin":"BTC","amount_precision":3,"base_coin":"BCH","price_precision":6},{"symbol":"lbabtc","count_coin":"BTC","amount_precision":0,"base_coin":"LBA","price_precision":8},{"symbol":"fmfusdt","count_coin":"USDT","amount_precision":0,"base_coin":"FMF","price_precision":8},{"symbol":"fmfeth","count_coin":"ETH","amount_precision":0,"base_coin":"FMF","price_precision":8},{"symbol":"olteth","count_coin":"ETH","amount_precision":0,"base_coin":"OLT","price_precision":8},{"symbol":"polybtc","count_coin":"BTC","amount_precision":0,"base_coin":"POLY","price_precision":8},{"symbol":"boxeth","count_coin":"ETH","amount_precision":0,"base_coin":"BOX","price_precision":8},{"symbol":"knteth","count_coin":"ETH","amount_precision":0,"base_coin":"KNT","price_precision":8},{"symbol":"reneth","count_coin":"ETH","amount_precision":0,"base_coin":"REN","price_precision":8},{"symbol":"lbaeth","count_coin":"ETH","amount_precision":0,"base_coin":"LBA","price_precision":8},{"symbol":"exceth","count_coin":"ETH","amount_precision":0,"base_coin":"EXC","price_precision":8},{"symbol":"manaeth","count_coin":"ETH","amount_precision":0,"base_coin":"MANA","price_precision":8},{"symbol":"zileth","count_coin":"ETH","amount_precision":0,"base_coin":"ZIL","price_precision":8},{"symbol":"ratingeth","count_coin":"ETH","amount_precision":0,"base_coin":"RATING","price_precision":8},{"symbol":"ttceth","count_coin":"ETH","amount_precision":0,"base_coin":"TTC","price_precision":8},{"symbol":"mvlbtc","count_coin":"BTC","amount_precision":0,"base_coin":"MVL","price_precision":8},{"symbol":"ucnusdt","count_coin":"USDT","amount_precision":0,"base_coin":"UCN","price_precision":8},{"symbol":"ucneth","count_coin":"ETH","amount_precision":0,"base_coin":"UCN","price_precision":8},{"symbol":"ucnbtc","count_coin":"BTC","amount_precision":0,"base_coin":"UCN","price_precision":8},{"symbol":"dtaeth","count_coin":"ETH","amount_precision":0,"base_coin":"DTA","price_precision":8},{"symbol":"boxusdt","count_coin":"USDT","amount_precision":0,"base_coin":"BOX","price_precision":8},{"symbol":"cnnusdt","count_coin":"USDT","amount_precision":0,"base_coin":"CNN","price_precision":8},{"symbol":"leeketh","count_coin":"ETH","amount_precision":0,"base_coin":"LEEK","price_precision":8},{"symbol":"polyusdt","count_coin":"USDT","amount_precision":0,"base_coin":"POLY","price_precision":8},{"symbol":"ctxceth","count_coin":"ETH","amount_precision":0,"base_coin":"CTXC","price_precision":8},{"symbol":"cosmeth","count_coin":"ETH","amount_precision":0,"base_coin":"COSM","price_precision":8},{"symbol":"cnneth","count_coin":"ETH","amount_precision":0,"base_coin":"CNN","price_precision":8},{"symbol":"cennzeth","count_coin":"ETH","amount_precision":0,"base_coin":"CENNZ","price_precision":8}]}'
+    http_version:
+  recorded_at: Wed, 03 Oct 2018 16:40:58 GMT
+recorded_with: VCR 4.0.0
