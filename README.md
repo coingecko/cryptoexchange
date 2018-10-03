@@ -178,6 +178,7 @@ Or install it yourself as:
 | GOPAX             | Y       | Y          | Y       |         | Y           | Y        | gopax             |
 | Graviex           | Y       | N          | N       |         | Y           |          | graviex           |
 | Hadax             | Y       | N          | N       |         | Y           | Y        | hadax             |
+| Hb.top            | Y       | N          | N       |         | Y           | N        | hb_top            |
 | Hikenex           | Y       | N          | N       |         | Y           | N        | hikenex           |
 | HitBTC            | Y       |            |         |         | Y           |          | hitbtc            |
 | Hotbit            | Y       | N          | N       |         | Y           | Y        | hotbit            |
