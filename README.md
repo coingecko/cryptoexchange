@@ -29,6 +29,7 @@ Or install it yourself as:
 | Abucoins          | Y       | Y          | Y       |         | Y           |          | abucoins          |
 | ACX               | Y       | Y          | Y       |         | Y           | Y        | acx               |
 | AEX               | Y       | Y          | Y       |         | Y           |          | aex               |
+| Airswap           | Y       |            |         |         |             |          | airswap           |
 | Allcoin           | Y       | Y          | Y       |         | Y           |          | allcoin           |
 | Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |
 | Altmarkets        | Y       | Y          | Y       |         | Y           | Y        | altmarkets        |
