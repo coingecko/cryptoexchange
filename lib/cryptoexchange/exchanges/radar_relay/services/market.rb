@@ -10,19 +10,19 @@ module Cryptoexchange::Exchanges
 
         def fetch(market_pair)
           ticker_output = super(ticker_url(market_pair))
-          candle_output = super(candle_url(market_pair))
-          adapt(market_pair, ticker_output, candle_output.first)
+          stats_output  = super(stats_url(market_pair))
+          adapt(market_pair, ticker_output, stats_output)
         end
 
         def ticker_url(market_pair)
           "#{Cryptoexchange::Exchanges::RadarRelay::Market::API_URL}/markets/#{market_pair.base}-#{market_pair.target}/ticker"
         end
 
-        def candle_url(market_pair)
-          "#{Cryptoexchange::Exchanges::RadarRelay::Market::API_URL}/markets/#{market_pair.base}-#{market_pair.target}/candles"
+        def stats_url(market_pair)
+          "#{Cryptoexchange::Exchanges::RadarRelay::Market::API_URL}/markets/#{market_pair.base}-#{market_pair.target}/stats"
         end
 
-        def adapt(market_pair, ticker_output, candle_output)
+        def adapt(market_pair, ticker_output, stats_output)
           ticker = Cryptoexchange::Models::Ticker.new
 
           ticker.base      = market_pair.base
@@ -30,12 +30,11 @@ module Cryptoexchange::Exchanges
           ticker.market    = RadarRelay::Market::NAME
           ticker.bid       = NumericHelper.to_d(ticker_output['bestBid'])
           ticker.ask       = NumericHelper.to_d(ticker_output['bestAsk'])
-          ticker.last      = NumericHelper.to_d(candle_output['close'])
-          ticker.high      = NumericHelper.to_d(candle_output['high'])
-          ticker.low       = NumericHelper.to_d(candle_output['low'])
-          ticker.volume    = NumericHelper.to_d(candle_output['baseTokenVolume'])
+          ticker.last      = NumericHelper.to_d(ticker_output['price'])
+          ticker.volume    = NumericHelper.divide(NumericHelper.to_d(stats_output['volume24Hour']), ticker.last)
+          ticker.change    = NumericHelper.to_d(stats_output['percentChange24Hour'])
           ticker.timestamp = NumericHelper.to_d(ticker_output['timestamp'])
-          ticker.payload   = [ticker_output, candle_output]
+          ticker.payload   = [ticker_output, stats_output]
           ticker
         end
       end

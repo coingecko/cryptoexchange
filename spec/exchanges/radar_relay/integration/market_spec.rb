@@ -29,8 +29,7 @@ RSpec.describe 'RadarRelay integration specs' do
     expect(ticker.last).to be < 100 # Test if number is reasonable
     expect(ticker.bid).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
-    expect(ticker.high).to be_a Numeric
-    expect(ticker.low).to be_a Numeric
+    expect(ticker.change).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be_a Numeric
     expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
