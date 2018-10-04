@@ -9,26 +9,32 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(market_pair, output)
+          ticker_output = super(ticker_url(market_pair))
+          stats_output  = super(stats_url(market_pair))
+          adapt(market_pair, ticker_output, stats_output)
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::RadarRelay::Market::API_URL}/ticker/#{market_pair.base}/#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::RadarRelay::Market::API_URL}/markets/#{market_pair.base}-#{market_pair.target}/ticker"
         end
 
-        def adapt(market_pair, output)
+        def stats_url(market_pair)
+          "#{Cryptoexchange::Exchanges::RadarRelay::Market::API_URL}/markets/#{market_pair.base}-#{market_pair.target}/stats"
+        end
+
+        def adapt(market_pair, ticker_output, stats_output)
           ticker = Cryptoexchange::Models::Ticker.new
 
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = RadarRelay::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['last'])
-          ticker.high      = output['high'] == "NA" ? nil : NumericHelper.to_d(output['high'])
-          ticker.low       = output['low'] == "NA" ? nil : NumericHelper.to_d(output['low'])
-          ticker.volume    = NumericHelper.to_d(output['quoteVolume'])
-          ticker.timestamp = nil
-          ticker.payload   = output
+          ticker.bid       = NumericHelper.to_d(ticker_output['bestBid'])
+          ticker.ask       = NumericHelper.to_d(ticker_output['bestAsk'])
+          ticker.last      = NumericHelper.to_d(ticker_output['price'])
+          ticker.volume    = NumericHelper.divide(NumericHelper.to_d(stats_output['volume24Hour']), ticker.last)
+          ticker.change    = NumericHelper.to_d(stats_output['percentChange24Hour'])
+          ticker.timestamp = NumericHelper.to_d(ticker_output['timestamp'])
+          ticker.payload   = [ticker_output, stats_output]
           ticker
         end
       end

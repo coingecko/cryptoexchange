@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.radarrelay.com/v0/ticker/DAI/WETH
+    uri: https://api.radarrelay.com/v2/markets/BAT-WETH/ticker
     body:
       encoding: UTF-8
       string: ''
@@ -29,13 +29,11 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '109'
+      - '279'
       Etag:
-      - W/"6d-dXBpjS+HUHt5O7fHj/S1Fq7rWPk"
-      Vary:
-      - Accept-Encoding
+      - W/"117-xn7of5+9zmoxkNkb+Y2hLPmAGVI"
       Date:
-      - Sat, 30 Jun 2018 09:05:03 GMT
+      - Wed, 03 Oct 2018 01:29:30 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -44,7 +42,52 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"baseVolume":217.80447256,"quoteVolume":92428.85201407,"high":0.00245674,"low":0.00215716,"last":0.00217632}'
+      string: '{"transactionHash":"0xb5e2a62237353db4d0533609058cc22f94ebb6ff3ac086dc22dce1054be0cd9c","price":"0.00075952759419","size":"0.1215670233021937","timestamp":1538462067,"bestBid":"0.0007513366666666667","bestAsk":"0.0007614050958562797996","spreadPercentage":"0.013223485427675149"}'
     http_version: 
-  recorded_at: Sat, 30 Jun 2018 09:05:03 GMT
+  recorded_at: Wed, 03 Oct 2018 01:29:30 GMT
+- request:
+    method: get
+    uri: https://api.radarrelay.com/v2/markets/BAT-WETH/stats
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.radarrelay.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '118'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '212'
+      Etag:
+      - W/"d4-63WLcqXa/n/yCdXEHom9/oMZaBk"
+      Date:
+      - Wed, 03 Oct 2018 01:29:30 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"numBidsWithinRange":16,"numAsksWithinRange":14,"baseTokenAvailable":"55743.3002156154","quoteTokenAvailable":"51.146782182219134","volume24Hour":"8.063313427993494","percentChange24Hour":"0.018106209203506602"}'
+    http_version: 
+  recorded_at: Wed, 03 Oct 2018 01:29:30 GMT
 recorded_with: VCR 4.0.0
