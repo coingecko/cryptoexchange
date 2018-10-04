@@ -216,6 +216,7 @@ Or install it yourself as:
 | Livecoin          | Y       |            |         |         | Y           |          | livecoin          |
 | Luno              | Y       |            |         |         | Y           |          | luno              |
 | Lykke             | Y       | Y          | N       |         | Y           |          | lykke             |
+| Maplechange       | Y       | Y          |         |         | Y           | Y        | maplechange       |
 | MaxMaicoin        | Y       | Y          | Y       |         | Y           |          | max_maicoin       |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|          | mercado_bitcoin   |
 | Mercatox          | Y       | N          | N       | N       | Y           |          | mercatox          |
