@@ -280,6 +280,7 @@ Or install it yourself as:
 | TrocaNinja        | Y       | N          | N       |         | Y           |          | troca_ninja       |
 | TrustDex **       | Y       |            |         |         | Y           |          | trust_dex         |
 | TuxExchange       | Y       |            |         |         | Y           |          | tux_exchange      |
+| UEX               | Y       |            |         |         | Y           |          | uex               |
 | Unocoin           |         |            |         |         |             |          | unocoin           |
 | Upbit             | Y       | Y          | Y       |         | Y           | Y        | upbit             |
 | Vebitcoin         | Y       | N          | N       |         | Y           | N        | vebitcoin         |
