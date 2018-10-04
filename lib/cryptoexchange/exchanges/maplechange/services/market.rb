@@ -20,22 +20,24 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |ticker|
-            timestamp = ticker[1]['at']
             symbol = ticker[0].upcase
-            base, target = symbol.split(/(BTC$)+|(ETH$)+|(WAE$)+|(LTC$)+|(XGOX$)+|(EGEM$)+|(XSH$)+/)
-            market_pair = Cryptoexchange::Models::MarketPair.new(
-              base: base,
-              target: target,
-              market: Maplechange::Market::NAME
-            )
-            adapt(ticker, market_pair, timestamp)
+            # base, target = symbol.split(/(BTC$)+|(ETH$)+|(WAE$)+|(LTC$)+|(XGOX$)+|(EGEM$)+|(XSH$)+/)
+            # market_pair = Cryptoexchange::Models::MarketPair.new(
+            #   base: base,
+            #   target: target,
+            #   market: Maplechange::Market::NAME
+            # )
+            adapt(ticker)
           end
         end
 
-        def adapt(output, market_pair, timestamp)
+        def adapt(output)
+          return unless output[1]['ticker']['name']
+          target, base = output[1]['ticker']['name'].split("/")
+
           ticker           = Cryptoexchange::Models::Ticker.new
-          ticker.base      = market_pair.base
-          ticker.target    = market_pair.target
+          ticker.base      = base
+          ticker.target    = target
           ticker.market    = Maplechange::Market::NAME
           ticker.ask       = NumericHelper.to_d(output[1]['ticker']['sell'])
           ticker.bid       = NumericHelper.to_d(output[1]['ticker']['buy'])
@@ -44,7 +46,7 @@ module Cryptoexchange::Exchanges
           ticker.high      = NumericHelper.to_d(output[1]['ticker']['high'])
           ticker.low       = NumericHelper.to_d(output[1]['ticker']['low'])
           ticker.volume    = NumericHelper.to_d(output[1]['ticker']['vol'])
-          ticker.timestamp = NumericHelper.to_d(timestamp)
+          ticker.timestamp = output[1]['at']
           ticker.payload   = output
           ticker
         end
