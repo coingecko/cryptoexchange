@@ -52,7 +52,6 @@ Or install it yourself as:
 | Bitbay            | Y       |            |         |         | User-Defined|          | bitbay            |
 | BitBNS            | Y       |            |         |         | Y           |          | bitbns            |
 | Bitbox (Auth)     | Y       |            |         |         | User-Defined| Y        | bitbox            |
-| Bitcoin Indonesia | Y       |            |         |         | User-Defined|          | bitcoin_indonesia |
 | Bitconnect        | Y       |            |         |         | Y           |          | bitconnect        |
 | Bitebtc           | Y       | Y          | Y       |         | Y           | Y        | bitebtc           |
 | Bitfinex          | Y       |            |         |         | Y           |          | bitfinex          |
@@ -191,8 +190,9 @@ Or install it yourself as:
 | Idax              | Y       | N          | N       |         | Y           | Y        | idax              |
 | Idcm              | Y       |            |         |         | Y           | Y        | idcm              |
 | Idex              | Y       | Unstable   | Y       |         | Y           | Y        | idex              |
+| Indodax           | Y       | Y          | Y       |         | User-Defined| N        | indodax           |
 | InfinityCoin      | Y       |            |         |         | Y           | Y        | infinity_coin     |
-| InstantBitex      | Y       | Y          | Y       |         | Y           |          | instantbitex
+| InstantBitex      | Y       | Y          | Y       |         | Y           |          | instantbitex      |
 | Itbit             | Y       | Y          | Y       |         | User-Defined|          | itbit             |
 | Jex               | Y       | N          | N       |         | Y           |          | jex               |
 | Joyso             | Y       | Y          |         |         | Y           |          | joyso             |

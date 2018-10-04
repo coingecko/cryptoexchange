@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module BitcoinIndonesia
+  module Indodax
     module Services
       class Market < Cryptoexchange::Services::Market
         class << self
@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
         def ticker_url(market_pair)
           base = market_pair.base.downcase
           target = market_pair.target.downcase
-          "#{Cryptoexchange::Exchanges::BitcoinIndonesia::Market::API_URL}/#{base}_#{target}/ticker"
+          "#{Cryptoexchange::Exchanges::Indodax::Market::API_URL}/#{base}_#{target}/ticker"
         end
 
         def adapt(output, market_pair)
@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
-          ticker.market    = BitcoinIndonesia::Market::NAME
+          ticker.market    = Indodax::Market::NAME
           ticker.bid       = NumericHelper.to_d(output['buy'])
           ticker.ask       = NumericHelper.to_d(output['sell'])
           ticker.last      = NumericHelper.to_d(output['last'])
