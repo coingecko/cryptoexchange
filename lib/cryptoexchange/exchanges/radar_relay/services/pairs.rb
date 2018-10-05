@@ -5,8 +5,15 @@ module Cryptoexchange::Exchanges
         PAIRS_URL = "#{Cryptoexchange::Exchanges::RadarRelay::Market::API_URL}/markets"
 
         def fetch
-          output = super
-          adapt(output)
+          outputs = []
+          (1..25).each do |page_id|
+            pair_url = PAIRS_URL + "?page=#{page_id}&perPage=100"
+            puts pair_url
+            output = fetch_via_api(pair_url)
+            break if output.empty?
+            outputs = outputs + output
+          end
+          adapt(outputs)
         end
 
         def adapt(output)
