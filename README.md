@@ -72,6 +72,7 @@ Or install it yourself as:
 | Bitpaction        | Y       | Y          | Y       |         | Y           |          | bitpaction        |
 | Bitrue            | Y       | N          | N       |         | Y           | Y        | bitrue            |
 | Bits Blockchain   | Y       | Y          |         |         | Y           |          | bits_blockchain   |
+| Bitselly          | Y       |            |         |         | Y           |          | bitselly          |
 | Bitso             | Y       |            |         |         | Y           |          | bitso             |
 | Bitstamp          | Y       | Y          | Y       |         | User-Defined|          | bitstamp          |
 | Bittrex           | Y       |            |         |         | Y           |          | bittrex           |
