@@ -10,6 +10,9 @@ require "cryptoexchange/models/market_pair"
 require "cryptoexchange/models/market"
 require "cryptoexchange/services/market"
 require "cryptoexchange/services/pairs"
+require "cryptoexchange/services/market_stream"
+require "cryptoexchange/services/trade_stream"
+require "cryptoexchange/services/order_book_stream"
 require "cryptoexchange/services/authentication"
 
 path_files = Dir[File.join(File.dirname(__dir__), 'lib', 'cryptoexchange', '**', '*.rb')]
@@ -20,3 +23,4 @@ end
 
 require "http"
 require "lru_redux"
+require "websocket-eventmachine-client"
