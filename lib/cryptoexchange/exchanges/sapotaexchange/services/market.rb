@@ -9,23 +9,25 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch
-          raw_output = HTTP.get(ticker_url)
-          output = JSON.parse(raw_output)
+          output = super(ticker_url)
           adapt_all(output)
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Sapotaexchange::Market::API_URL}/ticker"
+          "#{Cryptoexchange::Exchanges::Sapotaexchange::Market::API_URL}/tickers"
         end
 
         def adapt_all(output)
           output.map do |pair|
+            symbol = pair[0].upcase
+            base, target = symbol.split(/(BTC$)+|(ETH$)+(.*)|(LTC$)+(.*)/)
+            next unless base && target
             market_pair  = Cryptoexchange::Models::MarketPair.new(
-              base:   pair['base'],
-              target: pair['counter'],
+              base:   base,
+              target: target,
               market: Sapotaexchange::Market::NAME
             )
-            adapt(market_pair, pair)
+            adapt(market_pair, pair[1])
           end
         end
 
@@ -34,11 +36,13 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Sapotaexchange::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['last'].to_f)
-          ticker.high      = NumericHelper.to_d(output['high'].to_f)
-          ticker.low       = NumericHelper.to_d(output['low'].to_f)
-          ticker.volume    = NumericHelper.to_d(output['volume'].to_f)
-          ticker.timestamp = nil
+          ticker.last      = NumericHelper.to_d(output['ticker']['last'])
+          ticker.bid       = NumericHelper.to_d(output['ticker']['buy'])
+          ticker.ask       = NumericHelper.to_d(output['ticker']['sell'])
+          ticker.high      = NumericHelper.to_d(output['ticker']['high'])
+          ticker.low       = NumericHelper.to_d(output['ticker']['low'])
+          ticker.volume    = NumericHelper.to_d(output['ticker']['vol'])
+          ticker.timestamp = output['at']
           ticker.payload   = output
           ticker
         end

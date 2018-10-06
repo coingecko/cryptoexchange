@@ -2,16 +2,16 @@ module Cryptoexchange::Exchanges
   module Sapotaexchange
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Sapotaexchange::Market::API_URL}/ticker"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Sapotaexchange::Market::API_URL}/markets"
 
         def fetch
-          raw_output = HTTP.get(PAIRS_URL)
-          output = JSON.parse(raw_output)
+          output = super
           market_pairs = []
           output.each do |pair|
+            base, target = pair['name'].split('/')
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair['base'],
-                              target: pair['counter'],
+                              base: base,
+                              target: target,
                               market: Sapotaexchange::Market::NAME
                             )
           end

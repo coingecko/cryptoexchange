@@ -4,8 +4,7 @@ module Cryptoexchange::Exchanges
       class Trades < Cryptoexchange::Services::Market
 
         def fetch(market_pair)
-          raw_output = HTTP.get(ticker_url(market_pair))
-          output = JSON.parse(raw_output)
+          output = super(ticker_url(market_pair))
           adapt(output, market_pair)
         end
 
