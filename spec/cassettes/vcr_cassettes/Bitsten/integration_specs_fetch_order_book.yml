@@ -1,0 +1,313 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitsten.com/api/v1/public/getorderbook/STN_BTC/both/100
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitsten.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 07 Oct 2018 02:42:22 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '6891'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d92baea848908977a401bb719dd48a1091538880142; expires=Mon, 07-Oct-19
+        02:42:22 GMT; path=/; domain=.bitsten.com; HttpOnly; Secure
+      - ci_session=7ecskhn4aq7vck0m7vh1basf35rld5l8; expires=Sun, 07-Oct-2018 04:42:22
+        GMT; Max-Age=7200; path=/; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Accept-Ranges:
+      - bytes
+      X-Turbo-Charged-By:
+      - LiteSpeed
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 465d039c3fc9849c-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "success": true,
+            "message": "",
+            "result": {
+                "buylimit": [
+                    {
+                        "price": "0.00000302",
+                        "amount": "2068.83112583"
+                    },
+                    {
+                        "price": "0.00000299",
+                        "amount": "2295.13500000"
+                    },
+                    {
+                        "price": "0.00000286",
+                        "amount": "601.00000000"
+                    },
+                    {
+                        "price": "0.00000280",
+                        "amount": "305.13928571"
+                    },
+                    {
+                        "price": "0.00000270",
+                        "amount": "1362.00000000"
+                    },
+                    {
+                        "price": "0.00000265",
+                        "amount": "159.17358490"
+                    },
+                    {
+                        "price": "0.00000260",
+                        "amount": "3654.43119658"
+                    },
+                    {
+                        "price": "0.00000253",
+                        "amount": "25650.84584980"
+                    },
+                    {
+                        "price": "0.00000250",
+                        "amount": "100.00000000"
+                    },
+                    {
+                        "price": "0.00000200",
+                        "amount": "6886.97500000"
+                    },
+                    {
+                        "price": "0.00000002",
+                        "amount": "600.00000000"
+                    }
+                ],
+                "selllimit": [
+                    {
+                        "price": "0.00000339",
+                        "amount": "1010.53109200"
+                    },
+                    {
+                        "price": "0.00000342",
+                        "amount": "1532.42520000"
+                    },
+                    {
+                        "price": "0.00000343",
+                        "amount": "2147.91600000"
+                    },
+                    {
+                        "price": "0.00000350",
+                        "amount": "915.52380000"
+                    },
+                    {
+                        "price": "0.00000353",
+                        "amount": "1424.02270000"
+                    },
+                    {
+                        "price": "0.00000356",
+                        "amount": "1597.45298665"
+                    },
+                    {
+                        "price": "0.00000360",
+                        "amount": "100.00000000"
+                    },
+                    {
+                        "price": "0.00000370",
+                        "amount": "100.00000000"
+                    },
+                    {
+                        "price": "0.00000375",
+                        "amount": "100.00000000"
+                    },
+                    {
+                        "price": "0.00000377",
+                        "amount": "505.02565400"
+                    },
+                    {
+                        "price": "0.00000378",
+                        "amount": "1872.20570000"
+                    },
+                    {
+                        "price": "0.00000380",
+                        "amount": "100.00000000"
+                    },
+                    {
+                        "price": "0.00000388",
+                        "amount": "320.96990155"
+                    },
+                    {
+                        "price": "0.00000390",
+                        "amount": "5500.00000000"
+                    },
+                    {
+                        "price": "0.00000410",
+                        "amount": "100.00000000"
+                    },
+                    {
+                        "price": "0.00000420",
+                        "amount": "100.00000000"
+                    },
+                    {
+                        "price": "0.00000449",
+                        "amount": "511.05117617"
+                    },
+                    {
+                        "price": "0.00000450",
+                        "amount": "23.69847017"
+                    },
+                    {
+                        "price": "0.00000485",
+                        "amount": "59.09950570"
+                    },
+                    {
+                        "price": "0.00000549",
+                        "amount": "500.00000000"
+                    },
+                    {
+                        "price": "0.00000550",
+                        "amount": "1299.14846638"
+                    },
+                    {
+                        "price": "0.00000600",
+                        "amount": "188.71663303"
+                    },
+                    {
+                        "price": "0.00000649",
+                        "amount": "505.00643752"
+                    },
+                    {
+                        "price": "0.00000700",
+                        "amount": "28.49648951"
+                    },
+                    {
+                        "price": "0.00000750",
+                        "amount": "1030.48163303"
+                    },
+                    {
+                        "price": "0.00000845",
+                        "amount": "9.00175226"
+                    },
+                    {
+                        "price": "0.00000850",
+                        "amount": "59.96431624"
+                    },
+                    {
+                        "price": "0.00000875",
+                        "amount": "5.00000000"
+                    },
+                    {
+                        "price": "0.00000997",
+                        "amount": "1000.00000000"
+                    },
+                    {
+                        "price": "0.00001000",
+                        "amount": "5000.00000000"
+                    },
+                    {
+                        "price": "0.00002890",
+                        "amount": "499.02247977"
+                    },
+                    {
+                        "price": "0.00004604",
+                        "amount": "753.54031669"
+                    },
+                    {
+                        "price": "0.00005000",
+                        "amount": "490.00000000"
+                    },
+                    {
+                        "price": "0.00005100",
+                        "amount": "1000.00000000"
+                    },
+                    {
+                        "price": "0.00005406",
+                        "amount": "5.00000000"
+                    },
+                    {
+                        "price": "0.00007800",
+                        "amount": "122.01885300"
+                    },
+                    {
+                        "price": "0.00009900",
+                        "amount": "8005.19961864"
+                    },
+                    {
+                        "price": "0.00010000",
+                        "amount": "880.63828389"
+                    },
+                    {
+                        "price": "0.00010048",
+                        "amount": "399.20019951"
+                    },
+                    {
+                        "price": "0.00011000",
+                        "amount": "5.00000000"
+                    },
+                    {
+                        "price": "0.00021000",
+                        "amount": "127.96424405"
+                    },
+                    {
+                        "price": "0.00040500",
+                        "amount": "5.00000000"
+                    },
+                    {
+                        "price": "0.00050000",
+                        "amount": "8983.21214706"
+                    },
+                    {
+                        "price": "0.00061000",
+                        "amount": "1200.00353492"
+                    },
+                    {
+                        "price": "0.00061700",
+                        "amount": "998.00000000"
+                    },
+                    {
+                        "price": "0.00095000",
+                        "amount": "656.00000000"
+                    },
+                    {
+                        "price": "0.00099400",
+                        "amount": "5.00411260"
+                    },
+                    {
+                        "price": "0.00100000",
+                        "amount": "20.00779797"
+                    },
+                    {
+                        "price": "0.00500000",
+                        "amount": "5.00000000"
+                    },
+                    {
+                        "price": "0.00520000",
+                        "amount": "300.00000000"
+                    },
+                    {
+                        "price": "0.05000000",
+                        "amount": "1140.25267511"
+                    }
+                ]
+            }
+        }
+    http_version: 
+  recorded_at: Sun, 07 Oct 2018 02:42:22 GMT
+recorded_with: VCR 4.0.0
