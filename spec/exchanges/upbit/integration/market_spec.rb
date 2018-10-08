@@ -16,7 +16,7 @@ RSpec.describe 'Upbit integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'upbit', base: krw_btc_pair.base, target: krw_btc_pair.target
-    expect(trade_page_url).to eq "https://upbit.com/exchange?code=CRIX.UPBIT.BTC-KRW"
+    expect(trade_page_url).to eq "https://upbit.com/exchange?code=CRIX.UPBIT.KRW-BTC"
   end
 
   it 'does not include non ACTIVE pairs' do
