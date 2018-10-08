@@ -13,6 +13,11 @@ RSpec.describe 'MaxMaicoin integration specs' do
     expect(pair.market).to eq 'max_maicoin'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'max_maicoin', base: 'BTC', target: 'TWD'
+    expect(trade_page_url).to eq "https://max.maicoin.com/markets/btctwd"
+  end
+
   it 'fetch ticker' do
     btc_twd_pair = Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'TWD', market: 'max_maicoin')
     ticker = client.ticker(btc_twd_pair)
