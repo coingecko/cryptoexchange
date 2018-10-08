@@ -75,6 +75,7 @@ Or install it yourself as:
 | Bitso             | Y       |            |         |         | Y           |          | bitso             |
 | Bitstamp          | Y       | Y          | Y       |         | User-Defined|          | bitstamp          |
 | Bittrex           | Y       |            |         |         | Y           |          | bittrex           |
+| Blackturtle       | Y       |            | Y       |         | Y           |          | blackturtle       |
 | Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |
 | Blockonix         | Y       | Y          | Y       |         | Y           |          | blockonix         |
 | Braziliex         | Y       | Y          | Y       |         | Y           |          | braziliex         |
