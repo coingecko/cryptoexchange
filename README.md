@@ -150,7 +150,7 @@ Or install it yourself as:
 | Ddex              | Y       |            |         |         | Y           | Y        | ddex              |
 | DEx.top           | Y       | Y          | Y       |         | Y           |          | dextop            |
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |
-| Dobitrade         | Y       | Y          | N       |         | Y           |          | dobitrade         |
+| Dobitrade         | Y       | Y          | N       |         | Y           | Y        | dobitrade         |
 | Dragonex          | Y       | Y          | N       |         | Y           | Y        | dragonex          |
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |
@@ -208,16 +208,16 @@ Or install it yourself as:
 | Kucoin            | Y       | Y          | Y       |         | Y           | Y        | kucoin            |
 | Kuna              | Y       | Y          | Y       |         | User-Defined| Y        | kuna              |
 | KyberNetwork      | Y       | N          | N       |         | Y           | Y        | kyber_network     |
-| LakeBTC           | Y       |            |         |         | Y           |          | lakebtc           |
+| LakeBTC           | Y       |            |         |         | Y           | Y         | lakebtc           |
 | Latoken           | Y       |            |         |         | Y           | Y        | latoken           |
 | Lbank             | Y       | Y          | Y       |         | Y           | Y        | lbank             |
 | Liqui             | Y       |            |         |         | Y           |          | liqui             |
 | LiteBit.eu        | Y       |            |         |         | Y           |          | litebiteu         |
 | Livecoin          | Y       |            |         |         | Y           |          | livecoin          |
-| Luno              | Y       |            |         |         | Y           |          | luno              |
+| Luno              | Y       |            |         |         | Y           | Y        | luno              |
 | Lykke             | Y       | Y          | N       |         | Y           |          | lykke             |
 | Maplechange       | Y       | Y          |         |         | Y           | Y        | maplechange       |
-| MaxMaicoin        | Y       | Y          | Y       |         | Y           |          | max_maicoin       |
+| MaxMaicoin        | Y       | Y          | Y       |         | Y           | Y        | max_maicoin       |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|          | mercado_bitcoin   |
 | Mercatox          | Y       | N          | N       | N       | Y           |          | mercatox          |
 | Myspeedtrade      | Y       | Y          |         |         | Y           |          | myspeedtrade      |
@@ -245,11 +245,11 @@ Or install it yourself as:
 | Paribu            | Y       |            |         |         | Y           |          | paribu            |
 | Paro Exchange     | Y       |            |         |         | Y           |          | paroexchange      |
 | Paymium           | Y       | Y          | Y       |         | User-Defined|          | paymium           |
-| Poloniex          | Y       |            |         |         | Y           |          | poloniex          |
+| Poloniex          | Y       |            |         |         | Y           | Y        | poloniex          |
 | QBTC              | Y       | Y          | Y       |         | Y           |          | qbtc              |
 | Qryptos           | Y       |            |         |         | Y           |          | qryptos           |
 | QuadrigaCX        | Y       |            |         |         | User-Defined|          | quadrigacx        |
-| Quoine            | Y       |            |         |         | Y           |          | quoine            |
+| Quoine            | Y       |            |         |         | Y           | Y        | quoine            |
 | RadarRelay        | Y       |            |         |         | Y           | Y        | radar_relay       |
 | Raisex            | Y       |            |         |         | Y           |          | raisex            |
 | Rfinex            | Y       | Y          | Y       |         | Y           |          | rfinex            |
@@ -290,7 +290,7 @@ Or install it yourself as:
 | WazirX            | Y       |            |         |         | Y           |          | wazirx            |
 | Wcx               | Y       | Y          | Y       |         | Y           |          | wcx               |
 | Wex               | Y       | Y          | Y       |         | Y           | Y        | wex               |
-| Yobit             | Y       |            |         |         | Y           |          | yobit             |
+| Yobit             | Y       |            |         |         | Y           | Y        | yobit             |
 | Yuanbao           | Y       |            |         |         | User-Defined|          | yuanbao           |
 | Yunbi             | Y       |            |         |         | Y           |          | yunbi             |
 | Zaif              | Y       | Y          | Y       |         | Y           | Y        | zaif              |
