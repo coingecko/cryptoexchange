@@ -62,6 +62,7 @@ Or install it yourself as:
 | Bitibu            | Y       | Y          | Y       |         | Y           | Y        | bitibu            |
 | Bitinfi           | Y       | Y          |         |         | Y           |          | bitinfi           |
 | Bitinka           | Y       | Y          |         |         | Y           |          | bitinka           |
+| Bitker            | Y       |            |         |         | Y           |          | bitker            |
 | Bitkonan          | Y       |            |         |         | User-Defined|          | bitkonan          |
 | Bitkub            | Y       | Y          | Y       |         | Y           | Y        | bitkub            |
 | Bitlish           | Y       | Y          | Y       |         | Y           |          | bitlish           |
