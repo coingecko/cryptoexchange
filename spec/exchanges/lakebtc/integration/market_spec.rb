@@ -14,6 +14,11 @@ RSpec.describe 'Lakebtc integration specs' do
     expect(pair.market).to eq 'lakebtc'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'lakebtc', base: btc_usd_pair.base, target: btc_usd_pair.target
+    expect(trade_page_url).to eq "https://www.lakebtc.com/deposits/new?currency=usd"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_usd_pair)
 
@@ -27,7 +32,7 @@ RSpec.describe 'Lakebtc integration specs' do
     expect(ticker.bid).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
-    
+
     expect(ticker.payload).to_not be nil
   end
 end
