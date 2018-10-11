@@ -95,6 +95,7 @@ Or install it yourself as:
 | BX Thailand       | Y       |            |         |         | Y           |          | bx_thailand       |
 | Bytex             | Y       | N          | N       |         | Y           | N        | bytex             |
 | C2CX              | Y       | Y          | N       |         | Y           |          | c2cx              |
+| Cashierest        | Y       |            |         |         | Y           |          | cashierest        |
 | CPatex            | Y       | Y          | Y       |         | Y           |          | c_patex           |
 | CCex              | Y       |            |         |         | Y           |          | ccex              |
 | Cex               | Y       | Y          | Y       |         | Y           |          | cex               |
