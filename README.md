@@ -200,6 +200,7 @@ Or install it yourself as:
 | Idax              | Y       | N          | N       |         | Y           | Y        | idax              |
 | Idcm              | Y       |            |         |         | Y           | Y        | idcm              |
 | Idex              | Y       | Unstable   | Y       |         | Y           | Y        | idex              |
+| Incorex           | Y       | Y          | Y       |         | Y           | Y        | incorex           |
 | Indodax           | Y       | Y          | Y       |         | User-Defined| N        | indodax           |
 | InfinityCoin      | Y       |            |         |         | Y           | Y        | infinity_coin     |
 | InstantBitex      | Y       | Y          | Y       |         | Y           |          | instantbitex      |
