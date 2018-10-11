@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cryptonbtc.com/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.cryptonbtc.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 12 Aug 2018 16:37:24 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '8527'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d1488d337a71ead54523ab6e75e9191451534091843; expires=Mon, 12-Aug-19
+        16:37:23 GMT; path=/; domain=.cryptonbtc.com; HttpOnly; Secure
+      Cache-Control:
+      - public, no-cache, must-revalidate
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 44945dc42daeaa50-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":{"BCH-BTC":{"base":"BCH","enabled":true,"hidden":false,"id":"BCH-BTC","minSize":0.001,"name":"BCH-BTC","priceStep":1e-06,"quote":"BTC"},"BCH-PAI":{"base":"BCH","enabled":true,"hidden":false,"id":"BCH-PAI","minSize":0.001,"name":"BCH-PAI","priceStep":0.01,"quote":"PAI"},"BCH-USDT":{"base":"BCH","enabled":true,"hidden":false,"id":"BCH-USDT","minSize":0.001,"name":"BCH-USDT","priceStep":0.01,"quote":"USDT"},"BCH3NX-BTC":{"base":"BCH3NX","enabled":true,"hidden":false,"id":"BCH3NX-BTC","minSize":0.008,"name":"BCH3NX-BTC","priceStep":1e-08,"quote":"BTC"},"BCH3NX-PAI":{"base":"BCH3NX","enabled":true,"hidden":false,"id":"BCH3NX-PAI","minSize":0.008,"name":"BCH3NX-PAI","priceStep":0.001,"quote":"PAI"},"BCH3NX-USDT":{"base":"BCH3NX","enabled":true,"hidden":false,"id":"BCH3NX-USDT","minSize":0.008,"name":"BCH3NX-USDT","priceStep":0.01,"quote":"USDT"},"BCH3X-BTC":{"base":"BCH3X","enabled":true,"hidden":false,"id":"BCH3X-BTC","minSize":0.07,"name":"BCH3X-BTC","priceStep":1e-08,"quote":"BTC"},"BCH3X-PAI":{"base":"BCH3X","enabled":true,"hidden":false,"id":"BCH3X-PAI","minSize":0.07,"name":"BCH3X-PAI","priceStep":0.0001,"quote":"PAI"},"BCH3X-USDT":{"base":"BCH3X","enabled":true,"hidden":false,"id":"BCH3X-USDT","minSize":0.07,"name":"BCH3X-USDT","priceStep":0.0001,"quote":"USDT"},"BTC-PAI":{"base":"BTC","enabled":true,"hidden":false,"id":"BTC-PAI","minSize":0.002,"name":"BTC-PAI","priceStep":0.01,"quote":"PAI"},"BTC-USDT":{"base":"BTC","enabled":true,"hidden":false,"id":"BTC-USDT","minSize":0.002,"name":"BTC-USDT","priceStep":0.01,"quote":"USDT"},"BTC3NX-PAI":{"base":"BTC3NX","enabled":true,"hidden":false,"id":"BTC3NX-PAI","minSize":0.03,"name":"BTC3NX-PAI","priceStep":0.0001,"quote":"PAI"},"BTC3NX-USDT":{"base":"BTC3NX","enabled":true,"hidden":false,"id":"BTC3NX-USDT","minSize":0.03,"name":"BTC3NX-USDT","priceStep":0.0001,"quote":"USDT"},"BTC3X-PAI":{"base":"BTC3X","enabled":true,"hidden":false,"id":"BTC3X-PAI","minSize":0.02,"name":"BTC3X-PAI","priceStep":0.001,"quote":"PAI"},"BTC3X-USDT":{"base":"BTC3X","enabled":true,"hidden":false,"id":"BTC3X-USDT","minSize":0.02,"name":"BTC3X-USDT","priceStep":0.01,"quote":"USDT"},"BTM-BTC":{"base":"BTM","enabled":true,"hidden":false,"id":"BTM-BTC","minSize":1.0,"name":"BTM-BTC","priceStep":1e-08,"quote":"BTC"},"BTM-PAI":{"base":"BTM","enabled":true,"hidden":false,"id":"BTM-PAI","minSize":1.0,"name":"BTM-PAI","priceStep":1e-06,"quote":"PAI"},"BTM-USDT":{"base":"BTM","enabled":true,"hidden":false,"id":"BTM-USDT","minSize":1.0,"name":"BTM-USDT","priceStep":1e-05,"quote":"USDT"},"CMT-BTC":{"base":"CMT","enabled":true,"hidden":false,"id":"CMT-BTC","minSize":1.0,"name":"CMT-BTC","priceStep":1e-08,"quote":"BTC"},"CMT-PAI":{"base":"CMT","enabled":true,"hidden":false,"id":"CMT-PAI","minSize":1.0,"name":"CMT-PAI","priceStep":1e-06,"quote":"PAI"},"CMT-USDT":{"base":"CMT","enabled":true,"hidden":false,"id":"CMT-USDT","minSize":1.0,"name":"CMT-USDT","priceStep":1e-06,"quote":"USDT"},"CRY-PAI":{"base":"CRY","enabled":true,"hidden":true,"id":"CRY-PAI","minSize":1.0,"name":"CRY-PAI","priceStep":1e-05,"quote":"PAI"},"CRY-USDT":{"base":"CRY","enabled":true,"hidden":false,"id":"CRY-USDT","minSize":1.0,"name":"CRY-USDT","priceStep":1e-05,"quote":"USDT"},"CTXC-BTC":{"base":"CTXC","enabled":true,"hidden":false,"id":"CTXC-BTC","minSize":1.0,"name":"CTXC-BTC","priceStep":1e-08,"quote":"BTC"},"CTXC-PAI":{"base":"CTXC","enabled":true,"hidden":false,"id":"CTXC-PAI","minSize":1.0,"name":"CTXC-PAI","priceStep":1e-05,"quote":"PAI"},"CTXC-USDT":{"base":"CTXC","enabled":true,"hidden":false,"id":"CTXC-USDT","minSize":1.0,"name":"CTXC-USDT","priceStep":1e-05,"quote":"USDT"},"EOS-BTC":{"base":"EOS","enabled":true,"hidden":false,"id":"EOS-BTC","minSize":0.1,"name":"EOS-BTC","priceStep":1e-08,"quote":"BTC"},"EOS-PAI":{"base":"EOS","enabled":true,"hidden":false,"id":"EOS-PAI","minSize":0.1,"name":"EOS-PAI","priceStep":0.0001,"quote":"PAI"},"EOS-USDT":{"base":"EOS","enabled":true,"hidden":false,"id":"EOS-USDT","minSize":0.1,"name":"EOS-USDT","priceStep":0.0001,"quote":"USDT"},"ETH-BTC":{"base":"ETH","enabled":true,"hidden":false,"id":"ETH-BTC","minSize":0.02,"name":"ETH-BTC","priceStep":1e-06,"quote":"BTC"},"ETH-PAI":{"base":"ETH","enabled":true,"hidden":false,"id":"ETH-PAI","minSize":0.02,"name":"ETH-PAI","priceStep":0.01,"quote":"PAI"},"ETH-USDT":{"base":"ETH","enabled":true,"hidden":false,"id":"ETH-USDT","minSize":0.02,"name":"ETH-USDT","priceStep":0.01,"quote":"USDT"},"ETH3NX-BTC":{"base":"ETH3NX","enabled":true,"hidden":false,"id":"ETH3NX-BTC","minSize":0.04,"name":"ETH3NX-BTC","priceStep":1e-08,"quote":"BTC"},"ETH3NX-PAI":{"base":"ETH3NX","enabled":true,"hidden":false,"id":"ETH3NX-PAI","minSize":0.04,"name":"ETH3NX-PAI","priceStep":0.0001,"quote":"PAI"},"ETH3NX-USDT":{"base":"ETH3NX","enabled":true,"hidden":false,"id":"ETH3NX-USDT","minSize":0.04,"name":"ETH3NX-USDT","priceStep":0.0001,"quote":"USDT"},"ETH3X-BTC":{"base":"ETH3X","enabled":true,"hidden":false,"id":"ETH3X-BTC","minSize":0.03,"name":"ETH3X-BTC","priceStep":1e-08,"quote":"BTC"},"ETH3X-PAI":{"base":"ETH3X","enabled":true,"hidden":false,"id":"ETH3X-PAI","minSize":0.03,"name":"ETH3X-PAI","priceStep":0.0001,"quote":"PAI"},"ETH3X-USDT":{"base":"ETH3X","enabled":true,"hidden":false,"id":"ETH3X-USDT","minSize":0.03,"name":"ETH3X-USDT","priceStep":0.01,"quote":"USDT"},"LTC-BTC":{"base":"LTC","enabled":true,"hidden":false,"id":"LTC-BTC","minSize":0.01,"name":"LTC-BTC","priceStep":1e-08,"quote":"BTC"},"LTC-PAI":{"base":"LTC","enabled":true,"hidden":false,"id":"LTC-PAI","minSize":0.01,"name":"LTC-PAI","priceStep":0.001,"quote":"PAI"},"LTC-USDT":{"base":"LTC","enabled":true,"hidden":false,"id":"LTC-USDT","minSize":0.01,"name":"LTC-USDT","priceStep":0.01,"quote":"USDT"},"LTC3NX-BTC":{"base":"LTC3NX","enabled":true,"hidden":false,"id":"LTC3NX-BTC","minSize":0.02,"name":"LTC3NX-BTC","priceStep":1e-08,"quote":"BTC"},"LTC3NX-PAI":{"base":"LTC3NX","enabled":true,"hidden":false,"id":"LTC3NX-PAI","minSize":0.02,"name":"LTC3NX-PAI","priceStep":0.001,"quote":"PAI"},"LTC3NX-USDT":{"base":"LTC3NX","enabled":true,"hidden":false,"id":"LTC3NX-USDT","minSize":0.02,"name":"LTC3NX-USDT","priceStep":0.01,"quote":"USDT"},"LTC3X-BTC":{"base":"LTC3X","enabled":true,"hidden":false,"id":"LTC3X-BTC","minSize":0.02,"name":"LTC3X-BTC","priceStep":1e-08,"quote":"BTC"},"LTC3X-PAI":{"base":"LTC3X","enabled":true,"hidden":false,"id":"LTC3X-PAI","minSize":0.02,"name":"LTC3X-PAI","priceStep":0.001,"quote":"PAI"},"LTC3X-USDT":{"base":"LTC3X","enabled":true,"hidden":false,"id":"LTC3X-USDT","minSize":0.02,"name":"LTC3X-USDT","priceStep":0.01,"quote":"USDT"},"MAID-BTC":{"base":"MAID","enabled":true,"hidden":false,"id":"MAID-BTC","minSize":1.0,"name":"MAID-BTC","priceStep":1e-08,"quote":"BTC"},"MAID-PAI":{"base":"MAID","enabled":true,"hidden":false,"id":"MAID-PAI","minSize":1.0,"name":"MAID-PAI","priceStep":1e-06,"quote":"PAI"},"MAID-USDT":{"base":"MAID","enabled":true,"hidden":false,"id":"MAID-USDT","minSize":1.0,"name":"MAID-USDT","priceStep":1e-05,"quote":"USDT"},"OMNI-BTC":{"base":"OMNI","enabled":true,"hidden":false,"id":"OMNI-BTC","minSize":0.07,"name":"OMNI-BTC","priceStep":1e-08,"quote":"BTC"},"OMNI-PAI":{"base":"OMNI","enabled":true,"hidden":false,"id":"OMNI-PAI","minSize":0.07,"name":"OMNI-PAI","priceStep":0.0001,"quote":"PAI"},"OMNI-USDT":{"base":"OMNI","enabled":true,"hidden":false,"id":"OMNI-USDT","minSize":0.07,"name":"OMNI-USDT","priceStep":0.0001,"quote":"USDT"},"PAI-BTC":{"base":"PAI","enabled":true,"hidden":false,"id":"PAI-BTC","minSize":0.8,"name":"PAI-BTC","priceStep":1e-08,"quote":"BTC"},"PAI-USDT":{"base":"PAI","enabled":true,"hidden":false,"id":"PAI-USDT","minSize":0.8,"name":"PAI-USDT","priceStep":1e-05,"quote":"USDT"},"TRX-BTC":{"base":"TRX","enabled":true,"hidden":false,"id":"TRX-BTC","minSize":1.0,"name":"TRX-BTC","priceStep":1e-08,"quote":"BTC"},"TRX-PAI":{"base":"TRX","enabled":true,"hidden":false,"id":"TRX-PAI","minSize":1.0,"name":"TRX-PAI","priceStep":1e-07,"quote":"PAI"},"TRX-USDT":{"base":"TRX","enabled":true,"hidden":false,"id":"TRX-USDT","minSize":1.0,"name":"TRX-USDT","priceStep":1e-06,"quote":"USDT"},"VEN-BTC":{"base":"VEN","enabled":true,"hidden":false,"id":"VEN-BTC","minSize":0.4,"name":"VEN-BTC","priceStep":1e-08,"quote":"BTC"},"VEN-PAI":{"base":"VEN","enabled":true,"hidden":false,"id":"VEN-PAI","minSize":0.4,"name":"VEN-PAI","priceStep":1e-05,"quote":"PAI"},"VEN-USDT":{"base":"VEN","enabled":true,"hidden":false,"id":"VEN-USDT","minSize":0.4,"name":"VEN-USDT","priceStep":1e-05,"quote":"USDT"}},"success":true}
+
+'
+    http_version: 
+  recorded_at: Sun, 12 Aug 2018 16:37:24 GMT
+recorded_with: VCR 4.0.0

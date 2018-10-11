@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cryptonbtc.com/markets/ETH-BTC/orderbook?depth=50
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.cryptonbtc.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 12 Aug 2018 17:12:07 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '985'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d40b021bed68b413b4bfbea6c64e2dca01534093926; expires=Mon, 12-Aug-19
+        17:12:06 GMT; path=/; domain=.cryptonbtc.com; HttpOnly; Secure
+      Cache-Control:
+      - public, no-cache, must-revalidate
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 449490a18ffc3204-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":{"asks":[[0.050911,11.83033586],[0.050991,85.64227893],[0.051035,20.70132675],[0.051091,17.70208601],[0.051169,15.73993649],[0.051294,25.85260662],[0.051332,32.34282167],[0.051363,22.79518587],[0.051379,27.09124329],[0.051484,58.31937852],[0.051732,23.30992837],[0.06993,0.09533525],[0.070715,0.19837032],[0.071125,0.17380499],[0.07116,0.20202767],[0.07124,0.07928704],[0.071821,0.05261803],[0.07196,0.10693098],[0.07267,0.08566445]],"bids":[[0.050847,59.20207944],[0.050808,85.6731432],[0.050804,90.2840087],[0.050745,95.28800428],[0.050734,67.54617155],[0.050689,170.5970315],[0.050617,62.30113693],[0.050606,124.4141111],[0.05057,129.37853305],[0.050535,163.66054664],[0.050484,122.06867122],[0.0207,0.29734674],[0.020677,0.25958611],[0.020483,0.81653459],[0.020446,0.59878922],[0.020382,0.18523112],[0.020348,0.49115604],[0.020285,0.05553314],[0.020271,0.43586807],[0.020265,0.40261073],[0.020211,0.27649594],[0.020206,0.31208664],[0.020125,0.56281611]]},"success":true}
+
+'
+    http_version: 
+  recorded_at: Sun, 12 Aug 2018 17:12:07 GMT
+recorded_with: VCR 4.0.0
