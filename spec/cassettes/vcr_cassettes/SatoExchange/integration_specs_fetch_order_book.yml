@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.satoexchange.com/api/v1/get_market_orders/?market_id=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.satoexchange.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Oct 2018 16:47:49 GMT
+      Server:
+      - Apache
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - PHPSESSID=qgnajmuvgqrce19n49p4a3s5u0; path=/
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: '{"market":{"id":"1","slug":"BCH\/BTC","created_date":"1527778551","last_price":"0.07500000","high":"0","low":"0","ask":"0.30000000","bid":"0.04500000","growth":"0","volume":"0.00000000"},"buy_orders":[{"price":"0.04500000","amount":"0.00504627","total":"0.00022708"},{"price":"0.01050001","amount":"0.03969425","total":"0.00041679"},{"price":"0.01000000","amount":"0.03834500","total":"0.00038345"}],"sell_orders":[{"price":"0.30000000","amount":"0.01000000","total":"0.00300000"},{"price":"0.40000000","amount":"0.01000000","total":"0.00400000"},{"price":"0.60000000","amount":"0.01000000","total":"0.00600000"},{"price":"0.80000000","amount":"0.01000000","total":"0.00800000"},{"price":"0.89000000","amount":"0.01038889","total":"0.00924611"},{"price":"0.90000000","amount":"0.00453736","total":"0.00408362"},{"price":"1.00000000","amount":"0.01000000","total":"0.01000000"},{"price":"10.00000000","amount":"0.01000000","total":"0.10000000"},{"price":"100.00000000","amount":"0.01000000","total":"1.00000000"}],"status":{"type":"success","msg":"Query
+        successful"}}'
+    http_version: 
+  recorded_at: Thu, 11 Oct 2018 16:47:49 GMT
+recorded_with: VCR 4.0.0

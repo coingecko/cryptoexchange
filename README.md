@@ -350,6 +350,7 @@ Or install it yourself as:
 | Rfinex            | Y       | Y          | Y       |         | Y           |          | rfinex            |       |
 | RightBTC          | Y       | Y [x]      | Y       |         | Y           |          | rightbtc          |       |
 | SafeTrade         | Y       | N          | N       |         | Y           |          | safe_trade        |       |
+| SatoExchange      | Y       | Y [x]      | Y       |         | Y           |          | satoexchange      |
 | SaturnNetwork     | Y       |            |         |         | Y           | Y        | saturn_network    |       |
 | Secondbtc         | Y       | N          | N       |         | Y           | Y        | secondbtc         |       |
 | Shortex           | Y       | Y [x]      |         |         | Y           | Y        | shortex           |       |
