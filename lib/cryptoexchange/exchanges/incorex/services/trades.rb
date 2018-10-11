@@ -17,7 +17,7 @@ module Cryptoexchange::Exchanges
             tr.trade_id  = trade['trade_id']
             tr.base      = market_pair.base
             tr.target    = market_pair.target
-            tr.type      = trade['type']
+            tr.type      = trade['type'] == 1 ? 'buy' : 'sell'
             tr.price     = trade['price']
             tr.amount    = trade['amount']
             tr.timestamp = trade['date']
