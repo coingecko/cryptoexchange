@@ -18,7 +18,6 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          timestamp = output['timestamp']
           output['ticker'].map do |pair|
             base, target = pair['symbol'].split('_')
             market_pair  = Cryptoexchange::Models::MarketPair.new(
@@ -26,11 +25,11 @@ module Cryptoexchange::Exchanges
               target: target,
               market: Tokok::Market::NAME
             )
-            adapt(market_pair, pair, timestamp)
+            adapt(market_pair, pair)
           end
         end
 
-        def adapt(market_pair, output, timestamp)
+        def adapt(market_pair, output)
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
@@ -41,7 +40,7 @@ module Cryptoexchange::Exchanges
           ticker.bid       = NumericHelper.to_d(output['buy'])
           ticker.ask       = NumericHelper.to_d(output['sell'])
           ticker.volume    = NumericHelper.to_d(output['vol'])
-          ticker.timestamp = timestamp/1000
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end
