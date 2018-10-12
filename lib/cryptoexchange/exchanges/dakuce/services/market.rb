@@ -34,10 +34,10 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Dakuce::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['close'])
+          ticker.last      = NumericHelper.to_d(output['last'])
           ticker.high      = NumericHelper.to_d(output['high'])
           ticker.low       = NumericHelper.to_d(output['low'])
-          ticker.volume    = NumericHelper.to_d(output['volume'])
+          ticker.volume    = NumericHelper.to_d(output['volume']/output['last'].to_f)
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
