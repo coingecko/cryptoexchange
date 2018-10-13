@@ -97,6 +97,7 @@ Or install it yourself as:
 | C2CX              | Y       | Y          | N       |         | Y           |          | c2cx              |
 | CPatex            | Y       | Y          | Y       |         | Y           |          | c_patex           |
 | CCex              | Y       |            |         |         | Y           |          | ccex              |
+| Ccore             | Y       |            |         |         | Y           |          | ccore             |
 | Cex               | Y       | Y          | Y       |         | Y           |          | cex               |
 | Cfinex            | Y       | Y          | Y       |         | Y           | Y        | cfinex            |
 | Chainrift         | Y       | Y          | Y       |         | Y           |          | chainrift         |
