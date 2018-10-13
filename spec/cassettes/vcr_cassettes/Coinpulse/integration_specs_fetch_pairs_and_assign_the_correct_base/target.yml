@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://coinpulse.io/api/v1/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinpulse.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Wed, 31 Oct 2018 23:51:37 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Cache-Control:
+      - max-age=3600
+      Expires:
+      - Thu, 01 Nov 2018 00:51:37 GMT
+      Location:
+      - https://www.coinpulse.io/api/v1/markets
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 472a07dc5299ba84-ATL
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Wed, 31 Oct 2018 23:51:37 GMT
+- request:
+    method: get
+    uri: https://www.coinpulse.io/api/v1/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/3.0.0
+      Host:
+      - www.coinpulse.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 31 Oct 2018 23:51:37 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSALB=BcaERH05DV1OOOsJ+hPVthgHnImjZYECItyRChceud4zgAXTetI9vLQVqRYThCYQW82PnfQwe8sZ1UQCtG47hFx3TwaeR40dVrTtcEs6/YlZFVQJgyvQVLE4N5Tf;
+        Expires=Wed, 07 Nov 2018 23:51:37 GMT; Path=/
+      - __cfduid=dbd011e2ba1fcf5a0abcc6788d0a19e6e1541029897; expires=Thu, 31-Oct-19
+        23:51:37 GMT; path=/; domain=.coinpulse.io; HttpOnly; Secure
+      - ci_session=k8rq4e5m0o2qoqoup4p75paaufj4aljq; expires=Thu, 01-Nov-2018 01:51:37
+        GMT; Max-Age=7200; path=/; HttpOnly
+      - csrf_cookie_name=afa7459930891b7da372687c3930c367; expires=Thu, 01-Nov-2018
+        01:51:37 GMT; Max-Age=7200; path=/
+      X-Powered-By:
+      - PHP/7.1.17
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Ci-Csrf-Token:
+      - afa7459930891b7da372687c3930c367
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 472a07dd4dc842e8-ATL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":"true","result":[{"MarketCurrency":"BTC","BaseCurrency":"USDT","MarketCurrencyFullName":"Bitcoin","Active":true},{"MarketCurrency":"ETH","BaseCurrency":"BTC","MarketCurrencyFullName":"Ethereum","Active":true},{"MarketCurrency":"ETH","BaseCurrency":"USDT","MarketCurrencyFullName":"Ethereum","Active":true},{"MarketCurrency":"LTC","BaseCurrency":"BTC","MarketCurrencyFullName":"Litecoin","Active":true},{"MarketCurrency":"LTC","BaseCurrency":"ETH","MarketCurrencyFullName":"Litecoin","Active":true},{"MarketCurrency":"LTC","BaseCurrency":"CPEX","MarketCurrencyFullName":"Litecoin","Active":true},{"MarketCurrency":"LTC","BaseCurrency":"USDT","MarketCurrencyFullName":"Litecoin","Active":true},{"MarketCurrency":"DASH","BaseCurrency":"ETH","MarketCurrencyFullName":"DASH","Active":true},{"MarketCurrency":"DASH","BaseCurrency":"BTC","MarketCurrencyFullName":"DASH","Active":true},{"MarketCurrency":"DASH","BaseCurrency":"CPEX","MarketCurrencyFullName":"DASH","Active":true},{"MarketCurrency":"ZEC","BaseCurrency":"BTC","MarketCurrencyFullName":"Z-cash","Active":true},{"MarketCurrency":"ZEC","BaseCurrency":"ETH","MarketCurrencyFullName":"Z-cash","Active":true},{"MarketCurrency":"ZEC","BaseCurrency":"CPEX","MarketCurrencyFullName":"Z-cash","Active":true},{"MarketCurrency":"XRP","BaseCurrency":"BTC","MarketCurrencyFullName":"Ripple","Active":true},{"MarketCurrency":"XRP","BaseCurrency":"ETH","MarketCurrencyFullName":"Ripple","Active":true},{"MarketCurrency":"XRP","BaseCurrency":"CPEX","MarketCurrencyFullName":"Ripple","Active":true},{"MarketCurrency":"CPEX","BaseCurrency":"BTC","MarketCurrencyFullName":"CPEX","Active":true},{"MarketCurrency":"CPEX","BaseCurrency":"ETH","MarketCurrencyFullName":"CPEX","Active":true},{"MarketCurrency":"CPEX","BaseCurrency":"USDT","MarketCurrencyFullName":"CPEX","Active":true},{"MarketCurrency":"APL","BaseCurrency":"CPEX","MarketCurrencyFullName":"Apollo","Active":true},{"MarketCurrency":"APL","BaseCurrency":"ETH","MarketCurrencyFullName":"Apollo","Active":true},{"MarketCurrency":"APL","BaseCurrency":"BTC","MarketCurrencyFullName":"Apollo","Active":true},{"MarketCurrency":"HYDRO","BaseCurrency":"BTC","MarketCurrencyFullName":"HYDRO","Active":true},{"MarketCurrency":"HYDRO","BaseCurrency":"ETH","MarketCurrencyFullName":"HYDRO","Active":true},{"MarketCurrency":"HYDRO","BaseCurrency":"CPEX","MarketCurrencyFullName":"HYDRO","Active":true},{"MarketCurrency":"XVG","BaseCurrency":"BTC","MarketCurrencyFullName":"Verge","Active":true},{"MarketCurrency":"XVG","BaseCurrency":"ETH","MarketCurrencyFullName":"Verge","Active":true},{"MarketCurrency":"XVG","BaseCurrency":"CPEX","MarketCurrencyFullName":"Verge","Active":true},{"MarketCurrency":"WHEN","BaseCurrency":"BTC","MarketCurrencyFullName":"WHEN","Active":true},{"MarketCurrency":"WHEN","BaseCurrency":"ETH","MarketCurrencyFullName":"WHEN","Active":true},{"MarketCurrency":"WHEN","BaseCurrency":"CPEX","MarketCurrencyFullName":"WHEN","Active":true},{"MarketCurrency":"LMA","BaseCurrency":"BTC","MarketCurrencyFullName":"LaMoneda","Active":true},{"MarketCurrency":"LMA","BaseCurrency":"ETH","MarketCurrencyFullName":"LaMoneda","Active":true},{"MarketCurrency":"LMA","BaseCurrency":"CPEX","MarketCurrencyFullName":"LaMoneda","Active":true},{"MarketCurrency":"OMG","BaseCurrency":"BTC","MarketCurrencyFullName":"OmiseGO","Active":true},{"MarketCurrency":"OMG","BaseCurrency":"ETH","MarketCurrencyFullName":"OmiseGO","Active":true},{"MarketCurrency":"OMG","BaseCurrency":"CPEX","MarketCurrencyFullName":"OmiseGO","Active":true}]}'
+    http_version: 
+  recorded_at: Wed, 31 Oct 2018 23:51:37 GMT
+recorded_with: VCR 4.0.0

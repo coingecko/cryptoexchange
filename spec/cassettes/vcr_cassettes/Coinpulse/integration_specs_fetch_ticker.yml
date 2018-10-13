@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://coinpulse.io/api/v1/ticker/ETH_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinpulse.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Sat, 13 Oct 2018 17:53:56 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Cache-Control:
+      - max-age=3600
+      Expires:
+      - Sat, 13 Oct 2018 18:53:56 GMT
+      Location:
+      - https://www.coinpulse.io/api/v1/ticker/ETH_BTC
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4693ab2604cf0a0c-ATL
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Sat, 13 Oct 2018 17:53:56 GMT
+- request:
+    method: get
+    uri: https://www.coinpulse.io/api/v1/ticker/ETH_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/3.0.0
+      Host:
+      - www.coinpulse.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 13 Oct 2018 17:53:56 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSALB=3gmExcObzDZEg1ycJmNw0aaPTEgD5+EKDsO4oukJjY4daGPJBrtL+BNVvXvBhEHvaB1H+WvqJT2CaTJZdjEmC8IkkspbYdnfrItJ06guEukqMPTZnsoirr1bmpjc;
+        Expires=Sat, 20 Oct 2018 17:53:56 GMT; Path=/
+      - __cfduid=da4709b3081bae1ac64169dfec7df944f1539453236; expires=Sun, 13-Oct-19
+        17:53:56 GMT; path=/; domain=.coinpulse.io; HttpOnly; Secure
+      - ci_session=6rqb6gd9p2e5k8ke7lged9dn5h0mlut5; expires=Sat, 13-Oct-2018 19:53:56
+        GMT; Max-Age=7200; path=/; HttpOnly
+      - csrf_cookie_name=7149b69eecdc0bb6ef627077e66398ce; expires=Sat, 13-Oct-2018
+        19:53:56 GMT; Max-Age=7200; path=/
+      X-Powered-By:
+      - PHP/7.1.17
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Ci-Csrf-Token:
+      - 7149b69eecdc0bb6ef627077e66398ce
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4693ab26eab5ba84-ATL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":"true","result":[{"Bid":"0.0251","Ask":"0.043","Last":"0.0399","High":"0.00","Low":"0.00","BaseVolume":"0.00"}]}'
+    http_version: 
+  recorded_at: Sat, 13 Oct 2018 17:53:56 GMT
+recorded_with: VCR 4.0.0
