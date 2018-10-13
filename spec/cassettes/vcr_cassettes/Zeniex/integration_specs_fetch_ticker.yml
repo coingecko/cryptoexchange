@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openapi.zeniex.com/open/api/get_tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - openapi.zeniex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 13 Oct 2018 21:46:39 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - Tengine/2.2.1
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"code":"0","msg":"suc","data":[{"symbol":"ethbtc","high":0.03197800,"vol":544.66200000,"last":0.0317650000000000,"low":0.03117300,"buy":0.031642,"sell":0.055766,"time":1539467188875},{"symbol":"etcbtc","high":0.00152700,"vol":29209.23000000,"last":0.0015170000000000,"low":0.00146700,"buy":0.001513,"sell":0.001519,"time":1539467113462},{"symbol":"btmbtc","high":0.00002810,"vol":2354.00000000,"last":0.0000278900000000,"low":0.00002763,"buy":2.0E-5,"sell":2.831E-5,"time":1539467193498},{"symbol":"dddbtc","high":0.00001045,"vol":58.00000000,"last":0.0000104500000000,"low":0.00001045,"buy":1.041E-5,"sell":1.045E-5,"time":1539244623641},{"symbol":"eonbtc","high":0.00000160,"vol":3511930.00000000,"last":0.0000016000000000,"low":0.00000160,"buy":1.05E-6,"sell":1.6E-6,"time":1539447003685},{"symbol":"egccbtc","high":1.6E-7,"vol":4119.00000000,"last":1.600000000E-7,"low":1.6E-7,"buy":1.2E-7,"sell":2.1E-7,"time":1536630107670},{"symbol":"btmeth","high":0.00089632,"vol":2240.00000000,"last":0.0008802200000000,"low":0.00087075,"buy":7.4513E-4,"sell":9.0E-4,"time":1539467176437},{"symbol":"pxceth","high":0.00000505,"vol":106313973.00000000,"last":0.0000049500000000,"low":0.00000485,"buy":4.9E-6,"sell":4.95E-6,"time":1539453622926},{"symbol":"uuueth","high":0.00000401,"vol":88803.00000000,"last":0.0000020100000000,"low":0.00000201,"buy":2.02E-6,"sell":7.99E-6,"time":1536489766799},{"symbol":"eoneth","high":0.00004556,"vol":3408295.00000000,"last":0.0000455600000000,"low":0.00004556,"buy":3.18E-5,"sell":6.8E-5,"time":1539446861609},{"symbol":"egcceth","high":0.00000439,"vol":334432.00000000,"last":0.0000033000000000,"low":0.00000330,"buy":3.3E-6,"sell":4.56E-6,"time":1538374315764},{"symbol":"zxgeth","high":0.00032200,"vol":3514330.00000000,"last":0.0003215000000000,"low":0.00029995,"buy":3.118E-4,"sell":3.22E-4,"time":1539467041466}]}'
+    http_version: 
+  recorded_at: Sat, 13 Oct 2018 21:46:39 GMT
+recorded_with: VCR 4.0.0
