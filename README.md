@@ -288,6 +288,7 @@ Or install it yourself as:
 | UEX               | Y       |            |         |         | Y           |          | uex               |
 | Unocoin           |         |            |         |         |             |          | unocoin           |
 | Upbit             | Y       | Y          | Y       |         | Y           | Y        | upbit             |
+| Vaultmex          | Y       | Y          | Y       |         | Y           | Y        | vaultmex          |
 | Vebitcoin         | Y       | N          | N       |         | Y           | N        | vebitcoin         |
 | Vertpig           | Y       | Y          | N       |         | Y           | Y        | vertpig           |
 | Viabtc            | Y       |            |         |         | User-Defined|          | viabtc            |
