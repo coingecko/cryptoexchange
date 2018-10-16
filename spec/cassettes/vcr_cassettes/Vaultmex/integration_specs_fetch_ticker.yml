@@ -1,0 +1,716 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://vaultmex.com/v1/market/summary
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - vaultmex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Sun, 14 Oct 2018 03:12:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '15238'
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - no-store, no-cache
+      Etag:
+      - W/"3b86-4199418662"
+      Set-Cookie:
+      - exchange=s%3AfMhulPXOsYtsawAeNxrOtjat.b7970E2qxPMeMVf3lylgNzgesZErwYhtjQIo%2BeZO2Wk;
+        Path=/; Expires=Sun, 14 Oct 2018 15:12:38 GMT; HttpOnly
+      - incap_ses_531_1776550=Ft7yDQD4RRyTYEL3mn5eBya0wlsAAAAAt8j59bEUXt5xNxI6kni4Ww==;
+        path=/; Domain=.vaultmex.com
+      - visid_incap_1776550=1LPW09zsTBiixdLrGygc1CW0wlsAAAAAQUIPAAAAAADzYOlBzYJl1Ievc0cPCNKh;
+        expires=Sun, 13 Oct 2019 10:46:40 GMT; path=/; Domain=.vaultmex.com
+      Vary:
+      - Accept-Encoding
+      X-Iinfo:
+      - 10-130422513-130422803 NNNN CT(24 26 0) RT(1539486757077 855) q(0 0 0 0) r(1
+        1) U2
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: UTF-8
+      string: |-
+        [
+          {
+            "market_id": 1,
+            "code": "LTC",
+            "exchange": "BTC",
+            "last_price": "0.00879500",
+            "yesterday_price": "0.00801540",
+            "change": "9.73",
+            "24hhigh": "0.00879500",
+            "24hlow": "0.00879400",
+            "24hvol": "1142.361",
+            "top_bid": "0.00801540",
+            "top_ask": "0.00879999"
+          },
+          {
+            "market_id": 2,
+            "code": "BCH",
+            "exchange": "BTC",
+            "last_price": "0.00000000",
+            "yesterday_price": "0.00000000",
+            "change": "0.00",
+            "24hhigh": "0.00000000",
+            "24hlow": "0.00000000",
+            "24hvol": "0.000",
+            "top_bid": "0.00000001",
+            "top_ask": "0.00000000"
+          },
+          {
+            "market_id": 5,
+            "code": "DASH",
+            "exchange": "BTC",
+            "last_price": "0.02839400",
+            "yesterday_price": "0.02142550",
+            "change": "-2.09",
+            "24hhigh": "0.02839400",
+            "24hlow": "0.02839400",
+            "24hvol": "100.000",
+            "top_bid": "0.02142550",
+            "top_ask": "0.03101010"
+          },
+          {
+            "market_id": 6,
+            "code": "DOGE",
+            "exchange": "BTC",
+            "last_price": "0.00000088",
+            "yesterday_price": "0.00000082",
+            "change": "131.58",
+            "24hhigh": "0.00000090",
+            "24hlow": "0.00000081",
+            "24hvol": "10137463.690",
+            "top_bid": "0.00000082",
+            "top_ask": "0.00000088"
+          },
+          {
+            "market_id": 7,
+            "code": "ZEC",
+            "exchange": "BTC",
+            "last_price": "0.00000000",
+            "yesterday_price": "0.00000000",
+            "change": "0.00",
+            "24hhigh": "0.00000000",
+            "24hlow": "0.00000000",
+            "24hvol": "0.000",
+            "top_bid": "0.00000001",
+            "top_ask": "0.00000000"
+          },
+          {
+            "market_id": 13,
+            "code": "QNO",
+            "exchange": "BTC",
+            "last_price": "0.00004500",
+            "yesterday_price": "0.00001500",
+            "change": "100.00",
+            "24hhigh": "0.00004500",
+            "24hlow": "0.00004500",
+            "24hvol": "12452.000",
+            "top_bid": "0.00001500",
+            "top_ask": "0.00004578"
+          },
+          {
+            "market_id": 20,
+            "code": "XDNA",
+            "exchange": "BTC",
+            "last_price": "0.00001900",
+            "yesterday_price": "0.00002000",
+            "change": "-98.73",
+            "24hhigh": "0.00001900",
+            "24hlow": "0.00001900",
+            "24hvol": "6.000",
+            "top_bid": "0.00000210",
+            "top_ask": "0.00002000"
+          },
+          {
+            "market_id": 44,
+            "code": "BTXC",
+            "exchange": "BTC",
+            "last_price": "0.00000000",
+            "yesterday_price": "0.00000000",
+            "change": "0.00",
+            "24hhigh": "0.00000000",
+            "24hlow": "0.00000000",
+            "24hvol": "0.000",
+            "top_bid": "0.00001250",
+            "top_ask": "0.00003000"
+          },
+          {
+            "market_id": 53,
+            "code": "HLX",
+            "exchange": "BTC",
+            "last_price": "0.00000500",
+            "yesterday_price": "0.00001000",
+            "change": "-90.00",
+            "24hhigh": "0.00001000",
+            "24hlow": "0.00000500",
+            "24hvol": "590.000",
+            "top_bid": "0.00000025",
+            "top_ask": "0.00000040"
+          },
+          {
+            "market_id": 63,
+            "code": "XBTE",
+            "exchange": "BTC",
+            "last_price": "0.00000005",
+            "yesterday_price": "0.00000002",
+            "change": "-99.00",
+            "24hhigh": "0.00000005",
+            "24hlow": "0.00000005",
+            "24hvol": "2287922.959",
+            "top_bid": "0.00000002",
+            "top_ask": "0.00000004"
+          },
+          {
+            "market_id": 74,
+            "code": "PGD",
+            "exchange": "BTC",
+            "last_price": "0.00000002",
+            "yesterday_price": "0.00000004",
+            "change": "-98.67",
+            "24hhigh": "0.00000002",
+            "24hlow": "0.00000002",
+            "24hvol": "9044.500",
+            "top_bid": "0.00000001",
+            "top_ask": "0.00000009"
+          },
+          {
+            "market_id": 119,
+            "code": "LGS",
+            "exchange": "BTC",
+            "last_price": "0.00000000",
+            "yesterday_price": "0.00000000",
+            "change": "0.00",
+            "24hhigh": "0.00000000",
+            "24hlow": "0.00000000",
+            "24hvol": "0.000",
+            "top_bid": "0.00000001",
+            "top_ask": "0.00000000"
+          },
+          {
+            "market_id": 144,
+            "code": "BEC",
+            "exchange": "BTC",
+            "last_price": "0.00004400",
+            "yesterday_price": "0.00006003",
+            "change": "-44.22",
+            "24hhigh": "0.00007600",
+            "24hlow": "0.00004335",
+            "24hvol": "88687.487",
+            "top_bid": "0.00005000",
+            "top_ask": "0.00006479"
+          },
+          {
+            "market_id": 197,
+            "code": "TRY",
+            "exchange": "BTC",
+            "last_price": "0.00002608",
+            "yesterday_price": "0.00002603",
+            "change": "100.00",
+            "24hhigh": "0.00002608",
+            "24hlow": "0.00002604",
+            "24hvol": "99165.000",
+            "top_bid": "0.00002600",
+            "top_ask": "0.00002609"
+          },
+          {
+            "market_id": 254,
+            "code": "ASAFE2",
+            "exchange": "BTC",
+            "last_price": "0.00000398",
+            "yesterday_price": "0.00000399",
+            "change": "-92.04",
+            "24hhigh": "0.00000398",
+            "24hlow": "0.00000398",
+            "24hvol": "3002.390",
+            "top_bid": "0.00000155",
+            "top_ask": "0.00000398"
+          },
+          {
+            "market_id": 270,
+            "code": "SCH",
+            "exchange": "BTC",
+            "last_price": "0.00000100",
+            "yesterday_price": "0.00000010",
+            "change": "-90.00",
+            "24hhigh": "0.00000100",
+            "24hlow": "0.00000100",
+            "24hvol": "920.000",
+            "top_bid": "0.00000010",
+            "top_ask": "0.00000444"
+          },
+          {
+            "market_id": 286,
+            "code": "GCASH",
+            "exchange": "BTC",
+            "last_price": "0.00000200",
+            "yesterday_price": "0.00000320",
+            "change": "-60.00",
+            "24hhigh": "0.00000200",
+            "24hlow": "0.00000200",
+            "24hvol": "100.000",
+            "top_bid": "0.00000000",
+            "top_ask": "0.00000150"
+          },
+          {
+            "market_id": 322,
+            "code": "MIA",
+            "exchange": "BTC",
+            "last_price": "0.00140000",
+            "yesterday_price": "0.00140000",
+            "change": "0.00",
+            "24hhigh": "0.00140000",
+            "24hlow": "0.00010000",
+            "24hvol": "11.000",
+            "top_bid": "0.00000000",
+            "top_ask": "0.00006899"
+          },
+          {
+            "market_id": 341,
+            "code": "PLT",
+            "exchange": "BTC",
+            "last_price": "0.00018000",
+            "yesterday_price": "0.00018998",
+            "change": "-65.71",
+            "24hhigh": "0.00018000",
+            "24hlow": "0.00018000",
+            "24hvol": "1.000",
+            "top_bid": "0.00000100",
+            "top_ask": "0.00018997"
+          },
+          {
+            "market_id": 361,
+            "code": "XCL",
+            "exchange": "BTC",
+            "last_price": "0.00000005",
+            "yesterday_price": "0.00000008",
+            "change": "-99.89",
+            "24hhigh": "0.00000010",
+            "24hlow": "0.00000005",
+            "24hvol": "17999.800",
+            "top_bid": "0.00000005",
+            "top_ask": "0.00000400"
+          },
+          {
+            "market_id": 382,
+            "code": "PHC",
+            "exchange": "BTC",
+            "last_price": "0.00000000",
+            "yesterday_price": "0.00000000",
+            "change": "0.00",
+            "24hhigh": "0.00000000",
+            "24hlow": "0.00000000",
+            "24hvol": "0.000",
+            "top_bid": "0.00000010",
+            "top_ask": "1.00000000"
+          },
+          {
+            "market_id": 404,
+            "code": "SHUT",
+            "exchange": "BTC",
+            "last_price": "0.00000020",
+            "yesterday_price": "0.00000025",
+            "change": "17.65",
+            "24hhigh": "0.00000020",
+            "24hlow": "0.00000015",
+            "24hvol": "1267.000",
+            "top_bid": "0.00000001",
+            "top_ask": "0.00000020"
+          },
+          {
+            "market_id": 427,
+            "code": "ZCL",
+            "exchange": "BTC",
+            "last_price": "0.00000000",
+            "yesterday_price": "0.00000000",
+            "change": "0.00",
+            "24hhigh": "0.00000000",
+            "24hlow": "0.00000000",
+            "24hvol": "0.000",
+            "top_bid": "0.00000000",
+            "top_ask": "0.50000000"
+          },
+          {
+            "market_id": 451,
+            "code": "SUN",
+            "exchange": "BTC",
+            "last_price": "0.00000046",
+            "yesterday_price": "0.00000052",
+            "change": "-17.86",
+            "24hhigh": "0.00000046",
+            "24hlow": "0.00000046",
+            "24hvol": "800.696",
+            "top_bid": "0.00000000",
+            "top_ask": "0.00000063"
+          },
+          {
+            "market_id": 476,
+            "code": "PWC",
+            "exchange": "BTC",
+            "last_price": "0.00000000",
+            "yesterday_price": "0.00000000",
+            "change": "0.00",
+            "24hhigh": "0.00000000",
+            "24hlow": "0.00000000",
+            "24hvol": "0.000",
+            "top_bid": "0.00000000",
+            "top_ask": "0.00000005"
+          },
+          {
+            "market_id": 502,
+            "code": "ANON",
+            "exchange": "BTC",
+            "last_price": "0.00008000",
+            "yesterday_price": "0.00008000",
+            "change": "-92.00",
+            "24hhigh": "0.00008000",
+            "24hlow": "0.00008000",
+            "24hvol": "4.964",
+            "top_bid": "0.00008000",
+            "top_ask": "0.00017000"
+          },
+          {
+            "market_id": 529,
+            "code": "CBTC",
+            "exchange": "BTC",
+            "last_price": "0.00000001",
+            "yesterday_price": "0.00000001",
+            "change": "0.00",
+            "24hhigh": "0.00000001",
+            "24hlow": "0.00000001",
+            "24hvol": "184094.000",
+            "top_bid": "0.00000000",
+            "top_ask": "0.00000001"
+          },
+          {
+            "market_id": 557,
+            "code": "PROUD",
+            "exchange": "BTC",
+            "last_price": "0.00000200",
+            "yesterday_price": "0.00000199",
+            "change": "0.50",
+            "24hhigh": "0.00000200",
+            "24hlow": "0.00000200",
+            "24hvol": "67.000",
+            "top_bid": "0.00000001",
+            "top_ask": "0.00000215"
+          },
+          {
+            "market_id": 670,
+            "code": "REEX",
+            "exchange": "BTC",
+            "last_price": "0.00000001",
+            "yesterday_price": "0.00000001",
+            "change": "0.00",
+            "24hhigh": "0.00000001",
+            "24hlow": "0.00000001",
+            "24hvol": "20000.000",
+            "top_bid": "0.00000000",
+            "top_ask": "0.00000001"
+          },
+          {
+            "market_id": 699,
+            "code": "NDX",
+            "exchange": "BTC",
+            "last_price": "0.00050000",
+            "yesterday_price": "0.00000000",
+            "change": "100.00",
+            "24hhigh": "0.00050000",
+            "24hlow": "0.00050000",
+            "24hvol": "0.250",
+            "top_bid": "0.00000000",
+            "top_ask": "0.00050000"
+          },
+          {
+            "market_id": 731,
+            "code": "BZX",
+            "exchange": "BTC",
+            "last_price": "0.00000595",
+            "yesterday_price": "0.00000737",
+            "change": "-33.89",
+            "24hhigh": "0.00000595",
+            "24hlow": "0.00000595",
+            "24hvol": "441.532",
+            "top_bid": "0.00000595",
+            "top_ask": "0.00000670"
+          },
+          {
+            "market_id": 763,
+            "code": "OMEN",
+            "exchange": "BTC",
+            "last_price": "0.00030000",
+            "yesterday_price": "0.00000000",
+            "change": "100.00",
+            "24hhigh": "0.00030000",
+            "24hlow": "0.00030000",
+            "24hvol": "0.634",
+            "top_bid": "0.00000020",
+            "top_ask": "0.00003000"
+          },
+          {
+            "market_id": 796,
+            "code": "COMC",
+            "exchange": "BTC",
+            "last_price": "0.00000012",
+            "yesterday_price": "0.00000013",
+            "change": "-88.00",
+            "24hhigh": "0.00000029",
+            "24hlow": "0.00000012",
+            "24hvol": "5417.444",
+            "top_bid": "0.00000060",
+            "top_ask": "0.00000029"
+          },
+          {
+            "market_id": 830,
+            "code": "SHDB",
+            "exchange": "BTC",
+            "last_price": "0.00000001",
+            "yesterday_price": "0.00000001",
+            "change": "0.00",
+            "24hhigh": "0.00000001",
+            "24hlow": "0.00000001",
+            "24hvol": "51758.612",
+            "top_bid": "0.00000000",
+            "top_ask": "0.00000001"
+          },
+          {
+            "market_id": 865,
+            "code": "POT",
+            "exchange": "BTC",
+            "last_price": "0.00000800",
+            "yesterday_price": "0.00000800",
+            "change": "-99.99",
+            "24hhigh": "0.00000800",
+            "24hlow": "0.00000800",
+            "24hvol": "2999.998",
+            "top_bid": "0.00000250",
+            "top_ask": "0.00000785"
+          },
+          {
+            "market_id": 901,
+            "code": "XVP",
+            "exchange": "BTC",
+            "last_price": "0.00000199",
+            "yesterday_price": "0.00000990",
+            "change": "-79.90",
+            "24hhigh": "0.00000199",
+            "24hlow": "0.00000150",
+            "24hvol": "648.000",
+            "top_bid": "0.00000026",
+            "top_ask": "0.00000200"
+          },
+          {
+            "market_id": 938,
+            "code": "QUAR",
+            "exchange": "BTC",
+            "last_price": "0.00000400",
+            "yesterday_price": "0.00000450",
+            "change": "300.00",
+            "24hhigh": "0.00000400",
+            "24hlow": "0.00000400",
+            "24hvol": "339.022",
+            "top_bid": "0.00000125",
+            "top_ask": "0.00000400"
+          },
+          {
+            "market_id": 976,
+            "code": "SND",
+            "exchange": "BTC",
+            "last_price": "0.00000000",
+            "yesterday_price": "0.00000000",
+            "change": "0.00",
+            "24hhigh": "0.00000000",
+            "24hlow": "0.00000000",
+            "24hvol": "0.000",
+            "top_bid": "0.00000000",
+            "top_ask": "0.00000000"
+          },
+          {
+            "market_id": 1015,
+            "code": "TGCH",
+            "exchange": "BTC",
+            "last_price": "0.00001000",
+            "yesterday_price": "0.00000000",
+            "change": "25.00",
+            "24hhigh": "0.00001000",
+            "24hlow": "0.00000800",
+            "24hvol": "725.000",
+            "top_bid": "0.00000101",
+            "top_ask": "0.00000490"
+          },
+          {
+            "market_id": 1055,
+            "code": "NATU",
+            "exchange": "BTC",
+            "last_price": "0.00000290",
+            "yesterday_price": "0.00000050",
+            "change": "-94.20",
+            "24hhigh": "0.00000290",
+            "24hlow": "0.00000290",
+            "24hvol": "35.000",
+            "top_bid": "0.00000066",
+            "top_ask": "0.00000498"
+          },
+          {
+            "market_id": 1096,
+            "code": "WFF",
+            "exchange": "BTC",
+            "last_price": "0.00000002",
+            "yesterday_price": "0.00000002",
+            "change": "-96.00",
+            "24hhigh": "0.00000002",
+            "24hlow": "0.00000002",
+            "24hvol": "12773.500",
+            "top_bid": "0.00000000",
+            "top_ask": "0.00000002"
+          },
+          {
+            "market_id": 1138,
+            "code": "SIERRA",
+            "exchange": "BTC",
+            "last_price": "0.00000097",
+            "yesterday_price": "0.00000140",
+            "change": "-83.83",
+            "24hhigh": "0.00000097",
+            "24hlow": "0.00000096",
+            "24hvol": "2198.737",
+            "top_bid": "0.00000001",
+            "top_ask": "0.00000096"
+          },
+          {
+            "market_id": 1181,
+            "code": "UNI",
+            "exchange": "BTC",
+            "last_price": "0.00000000",
+            "yesterday_price": "0.00000000",
+            "change": "0.00",
+            "24hhigh": "0.00000000",
+            "24hlow": "0.00000000",
+            "24hvol": "0.000",
+            "top_bid": "0.00000001",
+            "top_ask": "0.00000000"
+          },
+          {
+            "market_id": 1225,
+            "code": "MYMN",
+            "exchange": "BTC",
+            "last_price": "0.00000010",
+            "yesterday_price": "0.00000004",
+            "change": "100.00",
+            "24hhigh": "0.00000010",
+            "24hlow": "0.00000002",
+            "24hvol": "377439.957",
+            "top_bid": "0.00000002",
+            "top_ask": "0.00000011"
+          },
+          {
+            "market_id": 1270,
+            "code": "SEDUS",
+            "exchange": "BTC",
+            "last_price": "0.00000351",
+            "yesterday_price": "0.00002160",
+            "change": "-20.95",
+            "24hhigh": "0.00001999",
+            "24hlow": "0.00000305",
+            "24hvol": "3025.100",
+            "top_bid": "0.00000351",
+            "top_ask": "0.00001895"
+          },
+          {
+            "market_id": 1316,
+            "code": "KERA",
+            "exchange": "BTC",
+            "last_price": "0.00000000",
+            "yesterday_price": "0.00000000",
+            "change": "0.00",
+            "24hhigh": "0.00000000",
+            "24hlow": "0.00000000",
+            "24hvol": "0.000",
+            "top_bid": "0.00000001",
+            "top_ask": "0.00000000"
+          },
+          {
+            "market_id": 1363,
+            "code": "GPKR",
+            "exchange": "BTC",
+            "last_price": "0.00000000",
+            "yesterday_price": "0.00000000",
+            "change": "0.00",
+            "24hhigh": "0.00000000",
+            "24hlow": "0.00000000",
+            "24hvol": "0.000",
+            "top_bid": "0.00000001",
+            "top_ask": "0.00000000"
+          },
+          {
+            "market_id": 1411,
+            "code": "HNDC",
+            "exchange": "BTC",
+            "last_price": "0.00000001",
+            "yesterday_price": "0.00000001",
+            "change": "0.00",
+            "24hhigh": "0.00000001",
+            "24hlow": "0.00000001",
+            "24hvol": "511800.000",
+            "top_bid": "0.00000000",
+            "top_ask": "0.00000001"
+          },
+          {
+            "market_id": 1460,
+            "code": "BRG",
+            "exchange": "BTC",
+            "last_price": "0.00039000",
+            "yesterday_price": "0.00000000",
+            "change": "8.33",
+            "24hhigh": "0.00039000",
+            "24hlow": "0.00032000",
+            "24hvol": "55.410",
+            "top_bid": "0.00000001",
+            "top_ask": "0.00000000"
+          },
+          {
+            "market_id": 1510,
+            "code": "MGR",
+            "exchange": "BTC",
+            "last_price": "0.00000000",
+            "yesterday_price": "0.00000000",
+            "change": "0.00",
+            "24hhigh": "0.00000000",
+            "24hlow": "0.00000000",
+            "24hvol": "0.000",
+            "top_bid": "0.00000001",
+            "top_ask": "0.00000000"
+          }
+        ]
+    http_version: 
+  recorded_at: Sun, 14 Oct 2018 03:12:39 GMT
+recorded_with: VCR 4.0.0
