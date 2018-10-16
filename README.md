@@ -169,6 +169,7 @@ Or install it yourself as:
 | Fex               | Y       | N          | N       |         | Y           |          | fex               |
 | Fisco             | Y       | Y          | Y       |         | Y           | Y        | fisco             |
 | Forkdelta         | Y       | N          | N       |         | Y           | Y        | forkdelta         |
+| Forkonex          | Y       |            |         |         | Y           | Y        | forkonex          |
 | Freiexchange      | Y       | Y          |         |         | User-Defined| Y        | freiexchange      |
 | Gate              | Y       | Y          | Y       |         | Y           | Y        | gate              |
 | Gatecoin          | Y       |            |         |         | Y           |          | gatecoin          |
