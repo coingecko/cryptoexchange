@@ -77,6 +77,7 @@ Or install it yourself as:
 | Bits Blockchain   | Y       | Y          |         |         | Y           |          | bits_blockchain   |
 | Bitso             | Y       |            |         |         | Y           |          | bitso             |
 | Bitstamp          | Y       | Y          | Y       |         | User-Defined|          | bitstamp          |
+| Bitsten           | Y       | Y          | N       |         | Y           | Y        | bitsten           |
 | Bittrex           | Y       |            |         |         | Y           |          | bittrex           |
 | Bkex              | Y       | N          | N       |         | Y           | Y        | bkex              |
 | Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |
