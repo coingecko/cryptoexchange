@@ -32,6 +32,7 @@ Or install it yourself as:
 | Airswap           | Y       |            |         |         |             |          | airswap           |
 | Allcoin           | Y       | Y          | Y       |         | Y           |          | allcoin           |
 | Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |
+| Alluma            | Y       | N          | N       |         | Y           | N        | alluma            |
 | Altmarkets        | Y       | Y          | Y       |         | Y           | Y        | altmarkets        |
 | ANX               | Y       |            |         |         | User-Defined|          | anx               |
 | AXNET             | Y       | Y          | Y       |         | Y           | Y        | axnet             |
