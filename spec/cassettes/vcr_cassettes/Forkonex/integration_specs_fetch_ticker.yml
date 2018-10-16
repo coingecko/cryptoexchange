@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.forkonex.com/v2/tickers/btcbtx.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.forkonex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '163'
+      Connection:
+      - close
+      Date:
+      - Tue, 16 Oct 2018 02:25:03 GMT
+      X-Amzn-Requestid:
+      - b01dfcac-d0ea-11e8-8bec-f92038dd2276
+      X-Runtime:
+      - '0.009970'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amzn-Remapped-Content-Length:
+      - '163'
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Request-Id:
+      - fc148568-3d3b-4621-b3f2-1bd00bf502cd
+      X-Amz-Apigw-Id:
+      - O1jP2HALIAMFUpA=
+      X-Amzn-Remapped-Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Etag:
+      - '"2fd222300a4dfaf4dd7a847048f51117"'
+      X-Amzn-Remapped-Date:
+      - Tue, 16 Oct 2018 02:25:03 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 4d73794262e13b26d5b2997660cfc992.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - GVRuByD21NG7SN1vFHVWb1_hymXZymQ5D827-mddchqmfBuakFO64w==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1539656703,"ticker":{"buy":"0.00012","sell":"0.00012814","low":"0.00012814","high":"0.00012814","last":"0.00012814","basevol":"0.00029741294","vol":"2.321"}}'
+    http_version: 
+  recorded_at: Tue, 16 Oct 2018 02:25:03 GMT
+recorded_with: VCR 4.0.0

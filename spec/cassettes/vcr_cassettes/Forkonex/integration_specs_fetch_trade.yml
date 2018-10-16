@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.forkonex.com/v2/trades.json?market=btcbtx
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.forkonex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '5914'
+      Connection:
+      - close
+      Date:
+      - Tue, 16 Oct 2018 02:25:03 GMT
+      X-Amzn-Requestid:
+      - b0322156-d0ea-11e8-b52c-17158de0412a
+      X-Runtime:
+      - '0.015950'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amzn-Remapped-Content-Length:
+      - '5914'
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Request-Id:
+      - 25b4a228-ee16-4e98-b99a-f6990c481ebe
+      X-Amz-Apigw-Id:
+      - O1jP3HTXIAMF9yQ=
+      X-Amzn-Remapped-Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Etag:
+      - '"ceb7cec544bc8e336e6c2dbcfc7e77f7"'
+      X-Amzn-Remapped-Date:
+      - Tue, 16 Oct 2018 02:25:03 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 e37bd04c281bc29e72ab40c248147cae.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - BUY4uzA_eLTwoIqmQnhpIzc9ahkjyGugKoumypALV9-FLS87fM_irw==
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":412,"price":"0.00012814","volume":"2.321","funds":"0.00029741294","market":"btcbtx","created_at":"2018-10-16T02:24:17Z","side":null},{"id":411,"price":"0.00012","volume":"0.34477892","funds":"0.0000413734704","market":"btcbtx","created_at":"2018-10-15T02:16:01Z","side":null},{"id":410,"price":"0.00013833","volume":"0.78780768","funds":"0.0001089774363744","market":"btcbtx","created_at":"2018-10-15T02:15:43Z","side":null},{"id":324,"price":"0.00013833","volume":"0.000109","funds":"0.00000001507797","market":"btcbtx","created_at":"2018-10-01T06:55:15Z","side":null},{"id":294,"price":"0.00013842","volume":"0.07684812","funds":"0.0000106373167704","market":"btcbtx","created_at":"2018-09-23T18:51:53Z","side":null},{"id":248,"price":"0.00014","volume":"1.48626823","funds":"0.0002080775522","market":"btcbtx","created_at":"2018-09-18T05:30:29Z","side":null},{"id":247,"price":"0.0001453","volume":"0.75014056","funds":"0.000108995423368","market":"btcbtx","created_at":"2018-09-18T05:30:29Z","side":null},{"id":234,"price":"0.00014968","volume":"1.0","funds":"0.00014968","market":"btcbtx","created_at":"2018-09-13T21:38:09Z","side":null},{"id":233,"price":"0.00015091","volume":"1.51466947","funds":"0.0002285787697177","market":"btcbtx","created_at":"2018-09-13T15:58:58Z","side":null},{"id":226,"price":"0.00014","volume":"0.51373177","funds":"0.0000719224478","market":"btcbtx","created_at":"2018-09-10T23:55:43Z","side":null},{"id":178,"price":"0.00014911","volume":"0.73100101","funds":"0.0001089995606011","market":"btcbtx","created_at":"2018-09-08T18:50:06Z","side":null},{"id":177,"price":"0.00015091","volume":"0.76422124","funds":"0.0001153286273284","market":"btcbtx","created_at":"2018-09-07T18:54:15Z","side":null},{"id":176,"price":"0.00014999","volume":"2.29296579","funds":"0.0003439219388421","market":"btcbtx","created_at":"2018-09-07T18:54:02Z","side":null},{"id":163,"price":"0.00014999","volume":"0.70703421","funds":"0.0001060480611579","market":"btcbtx","created_at":"2018-09-05T05:52:02Z","side":null},{"id":146,"price":"0.00015293","volume":"0.71272994","funds":"0.0001089977897242","market":"btcbtx","created_at":"2018-09-03T12:01:47Z","side":null},{"id":145,"price":"0.00016081","volume":"0.67779999","funds":"0.0001089970163919","market":"btcbtx","created_at":"2018-09-03T12:01:47Z","side":null},{"id":144,"price":"0.0001649","volume":"0.33057936","funds":"0.000054512536464","market":"btcbtx","created_at":"2018-09-03T12:01:47Z","side":null},{"id":137,"price":"0.0001649","volume":"0.33041288","funds":"0.000054485083912","market":"btcbtx","created_at":"2018-09-01T23:41:47Z","side":null},{"id":136,"price":"0.00016501","volume":"0.6605416","funds":"0.000108995969416","market":"btcbtx","created_at":"2018-08-31T14:31:26Z","side":null},{"id":135,"price":"0.00016926","volume":"0.64395608","funds":"0.0001089960061008","market":"btcbtx","created_at":"2018-08-30T15:09:35Z","side":null},{"id":134,"price":"0.00017326","volume":"0.62908944","funds":"0.0001089960363744","market":"btcbtx","created_at":"2018-08-30T15:09:28Z","side":null},{"id":126,"price":"0.00017589","volume":"0.61967202","funds":"0.0001089941115978","market":"btcbtx","created_at":"2018-08-28T15:55:38Z","side":null},{"id":121,"price":"0.00017597","volume":"0.61939771","funds":"0.0001089954150287","market":"btcbtx","created_at":"2018-08-27T21:10:35Z","side":null},{"id":120,"price":"0.00017627","volume":"0.6183527","funds":"0.000108997030429","market":"btcbtx","created_at":"2018-08-27T21:10:23Z","side":null},{"id":119,"price":"0.00018","volume":"1.99","funds":"0.0003582","market":"btcbtx","created_at":"2018-08-27T21:10:15Z","side":null},{"id":116,"price":"0.00018","volume":"0.01","funds":"0.0000018","market":"btcbtx","created_at":"2018-08-27T06:00:18Z","side":null},{"id":109,"price":"0.00019","volume":"2.78407614","funds":"0.0005289744666","market":"btcbtx","created_at":"2018-08-24T17:53:22Z","side":null},{"id":108,"price":"0.000185","volume":"0.10667856","funds":"0.0000197355336","market":"btcbtx","created_at":"2018-08-24T17:50:46Z","side":null},{"id":107,"price":"0.000185","volume":"1.89332144","funds":"0.0003502644664","market":"btcbtx","created_at":"2018-08-24T17:50:06Z","side":null},{"id":98,"price":"0.00019259","volume":"2.6336429","funds":"0.000507213286111","market":"btcbtx","created_at":"2018-08-21T09:57:10Z","side":null},{"id":97,"price":"0.00019","volume":"1.0","funds":"0.00019","market":"btcbtx","created_at":"2018-08-21T09:56:56Z","side":null},{"id":82,"price":"0.00019259","volume":"0.22217657","funds":"0.0000427889856163","market":"btcbtx","created_at":"2018-08-19T21:32:09Z","side":null},{"id":81,"price":"0.00019259","volume":"1.04210872","funds":"0.0002006997183848","market":"btcbtx","created_at":"2018-08-19T21:31:34Z","side":null},{"id":80,"price":"0.00019199","volume":"1.0","funds":"0.00019199","market":"btcbtx","created_at":"2018-08-19T21:31:17Z","side":null},{"id":61,"price":"0.00023365","volume":"1.09374867","funds":"0.0002555543767455","market":"btcbtx","created_at":"2018-08-15T17:16:06Z","side":null},{"id":60,"price":"0.00023365","volume":"1.0","funds":"0.00023365","market":"btcbtx","created_at":"2018-08-15T17:15:18Z","side":null},{"id":45,"price":"0.00021715","volume":"0.6296657","funds":"0.000136731906755","market":"btcbtx","created_at":"2018-08-09T16:16:36Z","side":null},{"id":44,"price":"0.00021676","volume":"2.998663","funds":"0.00064999019188","market":"btcbtx","created_at":"2018-08-09T16:16:36Z","side":null},{"id":15,"price":"0.00021676","volume":"0.001337","funds":"0.00000028980812","market":"btcbtx","created_at":"2018-08-07T06:56:12Z","side":null},{"id":9,"price":"0.00021715","volume":"1.3703343","funds":"0.000297568093245","market":"btcbtx","created_at":"2018-08-06T19:42:19Z","side":null},{"id":1,"price":"0.00021715","volume":"4.7867","funds":"0.001039431905","market":"btcbtx","created_at":"2018-08-05T18:46:09Z","side":null}]'
+    http_version: 
+  recorded_at: Tue, 16 Oct 2018 02:25:03 GMT
+recorded_with: VCR 4.0.0

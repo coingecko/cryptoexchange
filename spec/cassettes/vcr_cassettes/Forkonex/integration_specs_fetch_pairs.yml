@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.forkonex.com/v2/markets.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.forkonex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '374'
+      Connection:
+      - close
+      Date:
+      - Tue, 16 Oct 2018 02:25:03 GMT
+      X-Amzn-Requestid:
+      - b016a989-d0ea-11e8-836a-9dbda856a329
+      X-Runtime:
+      - '0.002698'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amzn-Remapped-Content-Length:
+      - '374'
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Request-Id:
+      - 2f7676ad-8aee-48dd-86db-201483618d43
+      X-Amz-Apigw-Id:
+      - O1jP2GqVIAMFfug=
+      X-Amzn-Remapped-Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Status:
+      - 200 OK
+      X-Powered-By:
+      - Phusion Passenger 5.3.1
+      Etag:
+      - '"392799a581aeea90a0280f6b38281689"'
+      X-Amzn-Remapped-Date:
+      - Tue, 16 Oct 2018 02:25:03 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 f39b9c400a8054ff971b4542bf843323.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 587ACvaOUHY2N_WhrvhQAa1ccgYNdjuC-EEgNBTNgFwkR8LLEdzvIQ==
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"btcbtx","name":"BTC/BTX"},{"id":"btcgod","name":"BTC/GOD"},{"id":"btcbtg","name":"BTC/BTG"},{"id":"btcbcd","name":"BTC/BCD"},{"id":"btcbcx","name":"BTC/BCX"},{"id":"btcbtcp","name":"BTC/BTCP"},{"id":"btcsbtc","name":"BTC/SBTC"},{"id":"btclbtc","name":"BTC/LBTC"},{"id":"btcbca","name":"BTC/BCA"},{"id":"btcbtc2","name":"BTC/BTC2"},{"id":"btcanon","name":"BTC/ANON"}]'
+    http_version: 
+  recorded_at: Tue, 16 Oct 2018 02:25:03 GMT
+recorded_with: VCR 4.0.0
