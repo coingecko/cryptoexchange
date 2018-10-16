@@ -21,7 +21,7 @@ module Cryptoexchange::Exchanges
         def adapt_all(output)
           output.map do |pair|
             symbol = pair['Instrument']
-            base, target = symbol.split(/(BTC$)+|(ETH$)+(.*)|(USDT$)+(.*)|(USD$)+(.*)|(BCH$)+(.*)|(DASH$)+(.*)|(XRP$)+(.*)|(OMG$)+(.*)|(XMR$)+(.*)|(LTC$)+(.*)/)
+            base, target = symbol.split(Cryptoexchange::Exchanges::B2bx::Market::SUPPORTED_PAIRS_REGEX)
             market_pair  = Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
