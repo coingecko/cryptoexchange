@@ -139,6 +139,7 @@ Or install it yourself as:
 | Crytrex           | Y       | Y          | Y       |         | Y           |          | crytrex           |
 | Cybex             | Y       | Y          | Y       |         | Y           |          | cybex             |
 | Ddex              | Y       |            |         |         | Y           | Y        | ddex              |
+| DEEX              | Y       |            |         |         | Y           |          | deex              |
 | DEx.top           | Y       | Y          | Y       |         | Y           |          | dextop            |
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |
 | Dobitrade         | Y       | Y          | N       |         | Y           |          | dobitrade         |
