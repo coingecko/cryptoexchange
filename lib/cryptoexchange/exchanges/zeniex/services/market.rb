@@ -7,7 +7,7 @@ module Cryptoexchange::Exchanges
             false
           end
         end
-require 'byebug'
+
         def fetch
           output = super(ticker_url)
           adapt_all(output)
