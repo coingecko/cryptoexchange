@@ -310,6 +310,7 @@ Or install it yourself as:
 | ZB                | Y       | Y          | Y       |         | Y           | Y        | zb                |
 | ZBG               | Y       | Y          | Y       |         | Y           |          | zbg               |
 | Zebpay            | Y       |            |         |         | Y           |          | Zebpay            |
+| ZG.TOP            | Y       | Y          | Y       |         | Y           |          | zgtop             |
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 
