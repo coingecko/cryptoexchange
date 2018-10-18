@@ -157,6 +157,7 @@ Or install it yourself as:
 | Cybex             | Y       | Y          | Y       |         | Y           |          | cybex             |
 | Dakuce            | Y       | Y          | Y       |         | Y           |          | dakuce            |
 | Ddex              | Y       |            |         |         | Y           | Y        | ddex              |
+| DEEX              | Y       |            |         |         | Y           |          | deex              |
 | DEx.top           | Y       | Y          | Y       |         | Y           |          | dextop            |
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |
 | Dobitrade         | Y       | Y          | N       |         | Y           | Y        | dobitrade         |
