@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tideal.com/api/v2/trades.json?limit=50&market=ethbtc&order_by=desc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - tideal.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 Oct 2018 10:18:56 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '7520'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dee003e2f7b165543af009428bf20a2781539857936; expires=Fri, 18-Oct-19
+        10:18:56 GMT; path=/; domain=.tideal.com; HttpOnly
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - ccf6599d-c389-4a22-b858-a975eac9d8c9
+      Etag:
+      - W/"9b5e0e259d3c419bda311e70605df836"
+      X-Runtime:
+      - '0.018769'
+      X-Powered-By:
+      - Phusion Passenger 5.2.3
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 46ba4386899978a4-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":5076106,"price":"0.031502","volume":"0.0005926","funds":"0.0000186680852","market":"ethbtc","created_at":"2018-10-18T18:18:41+08:00","side":null},{"id":5076105,"price":"0.031502","volume":"0.0000878","funds":"0.0000027658756","market":"ethbtc","created_at":"2018-10-18T18:18:40+08:00","side":null},{"id":5076101,"price":"0.031502","volume":"0.0089608","funds":"0.0002822831216","market":"ethbtc","created_at":"2018-10-18T18:18:36+08:00","side":null},{"id":5076095,"price":"0.031502","volume":"0.0011128","funds":"0.0000350554256","market":"ethbtc","created_at":"2018-10-18T18:18:20+08:00","side":null},{"id":5076091,"price":"0.031502","volume":"0.0055312","funds":"0.0001742438624","market":"ethbtc","created_at":"2018-10-18T18:18:16+08:00","side":null},{"id":5076084,"price":"0.031502","volume":"0.0009","funds":"0.0000283518","market":"ethbtc","created_at":"2018-10-18T18:17:59+08:00","side":null},{"id":5076083,"price":"0.031502","volume":"0.0004","funds":"0.0000126008","market":"ethbtc","created_at":"2018-10-18T18:17:59+08:00","side":null},{"id":5076082,"price":"0.031502","volume":"0.0050329","funds":"0.0001585464158","market":"ethbtc","created_at":"2018-10-18T18:17:55+08:00","side":null},{"id":5076081,"price":"0.031502","volume":"0.0071608","funds":"0.0002255795216","market":"ethbtc","created_at":"2018-10-18T18:17:55+08:00","side":null},{"id":5076080,"price":"0.031501","volume":"0.0000015","funds":"0.0000000472515","market":"ethbtc","created_at":"2018-10-18T18:17:55+08:00","side":null},{"id":5076071,"price":"0.031501","volume":"0.0074516","funds":"0.0002347328516","market":"ethbtc","created_at":"2018-10-18T18:17:35+08:00","side":null},{"id":5076062,"price":"0.031502","volume":"0.0126332","funds":"0.0003979710664","market":"ethbtc","created_at":"2018-10-18T18:17:14+08:00","side":null},{"id":5076052,"price":"0.031502","volume":"0.0071726","funds":"0.0002259512452","market":"ethbtc","created_at":"2018-10-18T18:16:53+08:00","side":null},{"id":5076043,"price":"0.031502","volume":"0.0033263","funds":"0.0001047851026","market":"ethbtc","created_at":"2018-10-18T18:16:33+08:00","side":null},{"id":5076034,"price":"0.031502","volume":"0.0034396","funds":"0.0001083542792","market":"ethbtc","created_at":"2018-10-18T18:16:13+08:00","side":null},{"id":5076033,"price":"0.031501","volume":"0.0002468","funds":"0.0000077744468","market":"ethbtc","created_at":"2018-10-18T18:16:13+08:00","side":null},{"id":5076032,"price":"0.031501","volume":"0.0000118","funds":"0.0000003717118","market":"ethbtc","created_at":"2018-10-18T18:16:13+08:00","side":null},{"id":5076031,"price":"0.031501","volume":"0.0000118","funds":"0.0000003717118","market":"ethbtc","created_at":"2018-10-18T18:16:13+08:00","side":null},{"id":5076030,"price":"0.0315","volume":"0.0016541","funds":"0.00005210415","market":"ethbtc","created_at":"2018-10-18T18:16:12+08:00","side":null},{"id":5076022,"price":"0.0315","volume":"0.0031818","funds":"0.0001002267","market":"ethbtc","created_at":"2018-10-18T18:15:51+08:00","side":null},{"id":5076021,"price":"0.0315","volume":"0.0048359","funds":"0.00015233085","market":"ethbtc","created_at":"2018-10-18T18:15:51+08:00","side":null},{"id":5076011,"price":"0.0315","volume":"0.0087856","funds":"0.0002767464","market":"ethbtc","created_at":"2018-10-18T18:15:30+08:00","side":null},{"id":5076010,"price":"0.031499","volume":"0.0021267","funds":"0.0000669889233","market":"ethbtc","created_at":"2018-10-18T18:15:30+08:00","side":null},{"id":5076009,"price":"0.031499","volume":"0.0032893","funds":"0.0001036096607","market":"ethbtc","created_at":"2018-10-18T18:15:30+08:00","side":null},{"id":5076008,"price":"0.031497","volume":"0.0000742","funds":"0.0000023370774","market":"ethbtc","created_at":"2018-10-18T18:15:30+08:00","side":null},{"id":5075998,"price":"0.031494","volume":"0.004044","funds":"0.000127361736","market":"ethbtc","created_at":"2018-10-18T18:15:10+08:00","side":null},{"id":5075997,"price":"0.031494","volume":"0.000004","funds":"0.000000125976","market":"ethbtc","created_at":"2018-10-18T18:15:10+08:00","side":null},{"id":5075988,"price":"0.031499","volume":"0.0097833","funds":"0.0003081641667","market":"ethbtc","created_at":"2018-10-18T18:14:50+08:00","side":null},{"id":5075987,"price":"0.031498","volume":"0.0003886","funds":"0.0000122401228","market":"ethbtc","created_at":"2018-10-18T18:14:49+08:00","side":null},{"id":5075979,"price":"0.031492","volume":"0.0029145","funds":"0.000091783434","market":"ethbtc","created_at":"2018-10-18T18:14:29+08:00","side":null},{"id":5075978,"price":"0.031495","volume":"0.00002","funds":"0.0000006299","market":"ethbtc","created_at":"2018-10-18T18:14:29+08:00","side":null},{"id":5075977,"price":"0.031496","volume":"0.001937","funds":"0.000061007752","market":"ethbtc","created_at":"2018-10-18T18:14:29+08:00","side":null},{"id":5075964,"price":"0.031497","volume":"0.002985","funds":"0.000094018545","market":"ethbtc","created_at":"2018-10-18T18:14:09+08:00","side":null},{"id":5075954,"price":"0.031498","volume":"0.0220614","funds":"0.0006948899772","market":"ethbtc","created_at":"2018-10-18T18:13:48+08:00","side":null},{"id":5075947,"price":"0.0315","volume":"0.00002","funds":"0.00000063","market":"ethbtc","created_at":"2018-10-18T18:13:34+08:00","side":null},{"id":5075946,"price":"0.031501","volume":"0.0060321","funds":"0.0001900171821","market":"ethbtc","created_at":"2018-10-18T18:13:34+08:00","side":null},{"id":5075945,"price":"0.031502","volume":"0.0019165","funds":"0.000060373583","market":"ethbtc","created_at":"2018-10-18T18:13:34+08:00","side":null},{"id":5075944,"price":"0.031502","volume":"0.0019165","funds":"0.000060373583","market":"ethbtc","created_at":"2018-10-18T18:13:33+08:00","side":null},{"id":5075943,"price":"0.031503","volume":"0.0020734","funds":"0.0000653183202","market":"ethbtc","created_at":"2018-10-18T18:13:33+08:00","side":null},{"id":5075942,"price":"0.031503","volume":"0.010002","funds":"0.000315093006","market":"ethbtc","created_at":"2018-10-18T18:13:33+08:00","side":null},{"id":5075941,"price":"0.031503","volume":"0.002","funds":"0.000063006","market":"ethbtc","created_at":"2018-10-18T18:13:33+08:00","side":null},{"id":5075937,"price":"0.031503","volume":"0.008732","funds":"0.000275084196","market":"ethbtc","created_at":"2018-10-18T18:13:29+08:00","side":null},{"id":5075936,"price":"0.031503","volume":"0.039831","funds":"0.001254795993","market":"ethbtc","created_at":"2018-10-18T18:13:29+08:00","side":null},{"id":5075935,"price":"0.031503","volume":"0.020734","funds":"0.000653183202","market":"ethbtc","created_at":"2018-10-18T18:13:29+08:00","side":null},{"id":5075934,"price":"0.031504","volume":"0.0009912","funds":"0.0000312267648","market":"ethbtc","created_at":"2018-10-18T18:13:28+08:00","side":null},{"id":5075933,"price":"0.031504","volume":"0.014928","funds":"0.000470291712","market":"ethbtc","created_at":"2018-10-18T18:13:28+08:00","side":null},{"id":5075932,"price":"0.031504","volume":"0.014928","funds":"0.000470291712","market":"ethbtc","created_at":"2018-10-18T18:13:28+08:00","side":null},{"id":5075931,"price":"0.031504","volume":"0.014928","funds":"0.000470291712","market":"ethbtc","created_at":"2018-10-18T18:13:28+08:00","side":null},{"id":5075930,"price":"0.031504","volume":"0.014928","funds":"0.000470291712","market":"ethbtc","created_at":"2018-10-18T18:13:28+08:00","side":null},{"id":5075929,"price":"0.031504","volume":"0.014928","funds":"0.000470291712","market":"ethbtc","created_at":"2018-10-18T18:13:28+08:00","side":null}]'
+    http_version: 
+  recorded_at: Thu, 18 Oct 2018 10:18:56 GMT
+recorded_with: VCR 4.0.0

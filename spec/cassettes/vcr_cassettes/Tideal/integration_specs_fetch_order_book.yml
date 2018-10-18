@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tideal.com/api/v2/order_book.json?market=ethbtc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - tideal.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 Oct 2018 10:18:55 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '10092'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3e92d482602946de13efe3839574b0361539857935; expires=Fri, 18-Oct-19
+        10:18:55 GMT; path=/; domain=.tideal.com; HttpOnly
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 1495e4ac-cda9-4ed3-910c-409da130c47d
+      Etag:
+      - W/"697e00f16cfdf46f043a95e3a94cca07"
+      X-Runtime:
+      - '0.026972'
+      X-Powered-By:
+      - Phusion Passenger 5.2.3
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 46ba43802f55778a-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"asks":[{"id":34370109,"side":"sell","ord_type":"limit","price":"0.031502","avg_price":"0.031502","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:15:15+08:00","volume":"0.0336828","remaining_volume":"0.0110647","executed_volume":"0.0226181","trades_count":8},{"id":34370366,"side":"sell","ord_type":"limit","price":"0.031502","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:15:36+08:00","volume":"0.0298677","remaining_volume":"0.0298677","executed_volume":"0.0","trades_count":0},{"id":34370626,"side":"sell","ord_type":"limit","price":"0.031502","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:15:57+08:00","volume":"0.0240351","remaining_volume":"0.0240351","executed_volume":"0.0","trades_count":0},{"id":34370862,"side":"sell","ord_type":"limit","price":"0.031502","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:16:18+08:00","volume":"0.0199936","remaining_volume":"0.0199936","executed_volume":"0.0","trades_count":0},{"id":34371108,"side":"sell","ord_type":"limit","price":"0.031502","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:16:39+08:00","volume":"0.0185211","remaining_volume":"0.0185211","executed_volume":"0.0","trades_count":0},{"id":34371366,"side":"sell","ord_type":"limit","price":"0.031502","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:16:59+08:00","volume":"0.0148225","remaining_volume":"0.0148225","executed_volume":"0.0","trades_count":0},{"id":34371591,"side":"sell","ord_type":"limit","price":"0.031502","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:17:20+08:00","volume":"0.0028158","remaining_volume":"0.0028158","executed_volume":"0.0","trades_count":0},{"id":34371855,"side":"sell","ord_type":"limit","price":"0.031502","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:17:40+08:00","volume":"0.0005303","remaining_volume":"0.0005303","executed_volume":"0.0","trades_count":0},{"id":34372353,"side":"sell","ord_type":"limit","price":"0.031503","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:18:21+08:00","volume":"0.0000001","remaining_volume":"0.0000001","executed_volume":"0.0","trades_count":0},{"id":34372631,"side":"sell","ord_type":"limit","price":"0.031505","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:18:42+08:00","volume":"0.0000001","remaining_volume":"0.0000001","executed_volume":"0.0","trades_count":0},{"id":34370110,"side":"sell","ord_type":"limit","price":"0.031508","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:15:15+08:00","volume":"0.0418363","remaining_volume":"0.0418363","executed_volume":"0.0","trades_count":0},{"id":34370367,"side":"sell","ord_type":"limit","price":"0.031508","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:15:36+08:00","volume":"0.0418363","remaining_volume":"0.0418363","executed_volume":"0.0","trades_count":0},{"id":34370627,"side":"sell","ord_type":"limit","price":"0.031508","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:15:57+08:00","volume":"0.0418363","remaining_volume":"0.0418363","executed_volume":"0.0","trades_count":0},{"id":34370863,"side":"sell","ord_type":"limit","price":"0.031508","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:16:18+08:00","volume":"0.0418363","remaining_volume":"0.0418363","executed_volume":"0.0","trades_count":0},{"id":34371109,"side":"sell","ord_type":"limit","price":"0.031508","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:16:39+08:00","volume":"0.0418363","remaining_volume":"0.0418363","executed_volume":"0.0","trades_count":0},{"id":34371367,"side":"sell","ord_type":"limit","price":"0.031508","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:16:59+08:00","volume":"0.0418363","remaining_volume":"0.0418363","executed_volume":"0.0","trades_count":0},{"id":34371592,"side":"sell","ord_type":"limit","price":"0.031508","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:17:20+08:00","volume":"0.0418363","remaining_volume":"0.0418363","executed_volume":"0.0","trades_count":0},{"id":34371856,"side":"sell","ord_type":"limit","price":"0.031508","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:17:40+08:00","volume":"0.0389542","remaining_volume":"0.0389542","executed_volume":"0.0","trades_count":0},{"id":34372121,"side":"sell","ord_type":"limit","price":"0.031508","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:18:01+08:00","volume":"0.0283086","remaining_volume":"0.0283086","executed_volume":"0.0","trades_count":0},{"id":34372354,"side":"sell","ord_type":"limit","price":"0.031508","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:18:21+08:00","volume":"0.0238412","remaining_volume":"0.0238412","executed_volume":"0.0","trades_count":0}],"bids":[{"id":34372088,"side":"buy","ord_type":"limit","price":"0.031501","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:17:59+08:00","volume":"0.0009697","remaining_volume":"0.0009697","executed_volume":"0.0","trades_count":0},{"id":34372321,"side":"buy","ord_type":"limit","price":"0.031501","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:18:20+08:00","volume":"0.0006143","remaining_volume":"0.0006143","executed_volume":"0.0","trades_count":0},{"id":34372578,"side":"buy","ord_type":"limit","price":"0.031501","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:18:40+08:00","volume":"0.0006143","remaining_volume":"0.0006143","executed_volume":"0.0","trades_count":0},{"id":34371090,"side":"buy","ord_type":"limit","price":"0.0315","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:16:37+08:00","volume":"0.0000703","remaining_volume":"0.0000703","executed_volume":"0.0","trades_count":0},{"id":34371577,"side":"buy","ord_type":"limit","price":"0.0315","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:17:18+08:00","volume":"0.0000342","remaining_volume":"0.0000342","executed_volume":"0.0","trades_count":0},{"id":34371831,"side":"buy","ord_type":"limit","price":"0.0315","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:17:38+08:00","volume":"0.0001","remaining_volume":"0.0001","executed_volume":"0.0","trades_count":0},{"id":34371578,"side":"buy","ord_type":"limit","price":"0.031499","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:17:18+08:00","volume":"0.0011021","remaining_volume":"0.0011021","executed_volume":"0.0","trades_count":0},{"id":34372579,"side":"buy","ord_type":"limit","price":"0.031499","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:18:40+08:00","volume":"0.0000073","remaining_volume":"0.0000073","executed_volume":"0.0","trades_count":0},{"id":34371833,"side":"buy","ord_type":"limit","price":"0.031498","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:17:38+08:00","volume":"0.000235","remaining_volume":"0.000235","executed_volume":"0.0","trades_count":0},{"id":34372089,"side":"buy","ord_type":"limit","price":"0.031498","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:17:59+08:00","volume":"0.000235","remaining_volume":"0.000235","executed_volume":"0.0","trades_count":0},{"id":34372322,"side":"buy","ord_type":"limit","price":"0.031498","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:18:20+08:00","volume":"0.000235","remaining_volume":"0.000235","executed_volume":"0.0","trades_count":0},{"id":34372580,"side":"buy","ord_type":"limit","price":"0.031498","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:18:40+08:00","volume":"0.000235","remaining_volume":"0.000235","executed_volume":"0.0","trades_count":0},{"id":34371579,"side":"buy","ord_type":"limit","price":"0.031496","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:17:18+08:00","volume":"0.0006165","remaining_volume":"0.0006165","executed_volume":"0.0","trades_count":0},{"id":34371835,"side":"buy","ord_type":"limit","price":"0.031496","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:17:38+08:00","volume":"0.0006078","remaining_volume":"0.0006078","executed_volume":"0.0","trades_count":0},{"id":34372090,"side":"buy","ord_type":"limit","price":"0.031496","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:17:59+08:00","volume":"0.0006078","remaining_volume":"0.0006078","executed_volume":"0.0","trades_count":0},{"id":34372323,"side":"buy","ord_type":"limit","price":"0.031496","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:18:20+08:00","volume":"0.0006078","remaining_volume":"0.0006078","executed_volume":"0.0","trades_count":0},{"id":34371329,"side":"buy","ord_type":"limit","price":"0.031495","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:16:57+08:00","volume":"0.001029","remaining_volume":"0.001029","executed_volume":"0.0","trades_count":0},{"id":34371330,"side":"buy","ord_type":"limit","price":"0.031494","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:16:57+08:00","volume":"0.0030824","remaining_volume":"0.0030824","executed_volume":"0.0","trades_count":0},{"id":34371580,"side":"buy","ord_type":"limit","price":"0.031494","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:17:18+08:00","volume":"0.001","remaining_volume":"0.001","executed_volume":"0.0","trades_count":0},{"id":34371837,"side":"buy","ord_type":"limit","price":"0.031494","avg_price":"0.0","state":"wait","market":"ethbtc","created_at":"2018-10-18T18:17:38+08:00","volume":"0.001","remaining_volume":"0.001","executed_volume":"0.0","trades_count":0}]}'
+    http_version: 
+  recorded_at: Thu, 18 Oct 2018 10:18:55 GMT
+recorded_with: VCR 4.0.0
