@@ -279,6 +279,7 @@ Or install it yourself as:
 | The Rock Trading  | Y       |            |         |         | Y           |          | therocktrading    |
 | The Token Store   | Y       | Y          | Y       |         | Y           | Y        | thetokenstore     |
 | Thinkbit          | Y       | Y          | Y       |         | Y           |          | thinkbit          |
+| Tideal            | Y       | Y          | Y       |         | Y           |          | tideal            |
 | Tidebit           | Y       | Y          | Y       |         | Y           |          | tidebit           |
 | Tidex             | Y       |            |         |         | Y           |          | tidex             |
 | Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |
