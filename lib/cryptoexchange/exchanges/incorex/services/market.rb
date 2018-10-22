@@ -7,7 +7,6 @@ module Cryptoexchange::Exchanges
             false
           end
         end
-
         def fetch
           output = super ticker_url
           adapt_all output
@@ -37,6 +36,7 @@ module Cryptoexchange::Exchanges
           ticker.bid       = NumericHelper.to_d(output[1]) #buy_price
           ticker.ask       = NumericHelper.to_d(output[2]) #sell_price
           ticker.last      = NumericHelper.to_d(output[5]) #last_trade
+          ticker.change    = NumericHelper.to_d(output[4]) #24h_change
           ticker.high      = NumericHelper.to_d(output[7]) #high
           ticker.low       = NumericHelper.to_d(output[8]) #low
           ticker.volume    = NumericHelper.to_d(output[6]) #  the total value of all deals within the last 24 hours

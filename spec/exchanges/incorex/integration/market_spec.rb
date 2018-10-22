@@ -22,6 +22,9 @@ RSpec.describe 'Incorex integration specs' do
     expect(ticker.market).to eq 'incorex'
     expect(ticker.bid).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
+    expect(ticker.low).to be_a Numeric
+    expect(ticker.high).to be_a Numeric
+    expect(ticker.change).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be_a Numeric
     expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
@@ -38,7 +41,7 @@ RSpec.describe 'Incorex integration specs' do
     expect(order_book.bids).to_not be_empty
     expect(order_book.asks.first.price).to_not be_nil
     expect(order_book.bids.first.amount).to_not be_nil
-    expect(order_book.bids.first.timestamp).to_not be_nil
+    expect(order_book.bids.first.timestamp).to be_nil
     expect(order_book.timestamp).to be_a Numeric
     expect(order_book.payload).to_not be nil
   end
@@ -58,5 +61,4 @@ RSpec.describe 'Incorex integration specs' do
     expect(trade.payload).to_not be nil
     expect(trade.market).to eq 'incorex'
   end
-
 end

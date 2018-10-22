@@ -20,7 +20,6 @@ module Cryptoexchange::Exchanges
                               market: Incorex::Market::NAME
                             )
           end
-          
           market_pairs
         end
       end

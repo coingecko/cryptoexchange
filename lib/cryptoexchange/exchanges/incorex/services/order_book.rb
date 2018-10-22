@@ -35,7 +35,7 @@ module Cryptoexchange::Exchanges
             price, quantity, amount = order_entry
             Cryptoexchange::Models::Order.new(price: price,
                                               amount: quantity,
-                                              timestamp: Time.now.to_i)
+                                              timestamp: nil)
           end
         end
       end
