@@ -6,7 +6,7 @@ module Cryptoexchange::Exchanges
         # Query K line part
         SEARCH_TIMESTAMP = 0
         COUNT            = 1
-        KLINE_TYPE       = 6
+        KLINE_TYPE       = 1
 
         class << self
           def supports_individual_ticker_query?
