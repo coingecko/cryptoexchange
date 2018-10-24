@@ -15,7 +15,8 @@ module Cryptoexchange::Exchanges
         end
 
         def inject_inst_id(market_pair)
-          if market_pair.inst_id.nil?
+          # todo: refactor to global
+          if !(market_pair.respond_to? :inst_id) || (market_pair.send(:inst_id).nil?)
             market_pairs = Cryptoexchange::Client.new.pairs(Dragonex::Market::NAME)
             market_pair = market_pairs.detect { |mp| mp.base == market_pair.base && mp.target == market_pair.target }
           end
