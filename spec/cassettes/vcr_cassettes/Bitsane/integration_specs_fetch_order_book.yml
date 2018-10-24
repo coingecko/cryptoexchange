@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitsane.com/api/public/orderbook?pair=ETH_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitsane.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - system-ns.com/LoadBalancer
+      Date:
+      - Wed, 24 Oct 2018 07:18:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"statusCode":0,"statusText":"Success","result":{"bids":[{"price":"0.03119748","amount":"31.08900000","timestamp":0},{"price":"0.03118750","amount":"11.96700000","timestamp":0},{"price":"0.03116754","amount":"25.98300000","timestamp":0},{"price":"0.03115756","amount":"4.00900000","timestamp":0},{"price":"0.03114758","amount":"232.03700000","timestamp":0},{"price":"0.03113760","amount":"43.85000000","timestamp":0},{"price":"0.03112762","amount":"298.12500000","timestamp":0},{"price":"0.03110766","amount":"0.02000000","timestamp":0},{"price":"0.03108770","amount":"14.32200000","timestamp":0},{"price":"0.03107772","amount":"254.88300000","timestamp":0},{"price":"0.03107520","amount":"0.05609318","timestamp":0},{"price":"0.03106774","amount":"15.67300000","timestamp":0},{"price":"0.03105886","amount":"3.21953000","timestamp":0},{"price":"0.03105484","amount":"0.32072294","timestamp":0},{"price":"0.03104107","amount":"31.52260000","timestamp":0},{"price":"0.03104106","amount":"156.31900000","timestamp":0},{"price":"0.03103780","amount":"6.37000000","timestamp":0},{"price":"0.03103285","amount":"1.07000000","timestamp":0},{"price":"0.03103284","amount":"0.01604999","timestamp":0},{"price":"0.03102782","amount":"7.98000000","timestamp":0},{"price":"0.03101624","amount":"0.03279066","timestamp":0},{"price":"0.03101544","amount":"0.23910000","timestamp":0},{"price":"0.03101248","amount":"18.12481874","timestamp":0},{"price":"0.03101006","amount":"30.19906602","timestamp":0},{"price":"0.03100786","amount":"175.34906837","timestamp":0},{"price":"0.03100396","amount":"365.43700000","timestamp":0},{"price":"0.03099850","amount":"1.03364467","timestamp":0},{"price":"0.03099751","amount":"0.12820513","timestamp":0},{"price":"0.03099477","amount":"4.00600000","timestamp":0},{"price":"0.03099054","amount":"2.22641808","timestamp":0},{"price":"0.03098686","amount":"0.35427886","timestamp":0},{"price":"0.03098058","amount":"1.00000000","timestamp":0},{"price":"0.03097560","amount":"64.84545782","timestamp":0},{"price":"0.03097509","amount":"5.88347986","timestamp":0},{"price":"0.03096452","amount":"1.00000000","timestamp":0},{"price":"0.03095070","amount":"1.87999927","timestamp":0},{"price":"0.03095068","amount":"0.08696872","timestamp":0},{"price":"0.03095067","amount":"11.51070883","timestamp":0},{"price":"0.03090080","amount":"0.30681294","timestamp":0},{"price":"0.03089633","amount":"2.71774029","timestamp":0},{"price":"0.03089423","amount":"0.73730867","timestamp":0},{"price":"0.03089360","amount":"0.03566448","timestamp":0},{"price":"0.03089256","amount":"1.45056215","timestamp":0}],"asks":[{"price":"0.03148284","amount":"8.00000000","timestamp":0},{"price":"0.03149286","amount":"48.10199994","timestamp":0},{"price":"0.03150288","amount":"31.91899978","timestamp":0},{"price":"0.03151290","amount":"91.05099974","timestamp":0},{"price":"0.03153294","amount":"223.91899994","timestamp":0},{"price":"0.03154296","amount":"11.89499970","timestamp":0},{"price":"0.03155298","amount":"38.50000000","timestamp":0},{"price":"0.03156300","amount":"28.67799987","timestamp":0},{"price":"0.03157302","amount":"7.51099989","timestamp":0},{"price":"0.03158304","amount":"80.52799983","timestamp":0},{"price":"0.03159306","amount":"560.74399978","timestamp":0},{"price":"0.03160308","amount":"7.97799992","timestamp":0},{"price":"0.03162312","amount":"0.37699980","timestamp":0},{"price":"0.03166276","amount":"0.20288840","timestamp":0},{"price":"0.03166320","amount":"1000.80999993","timestamp":0},{"price":"0.03167322","amount":"250.00000000","timestamp":0},{"price":"0.03168324","amount":"0.29499981","timestamp":0},{"price":"0.03168620","amount":"0.06505103","timestamp":0},{"price":"0.03168624","amount":"5.59779323","timestamp":0},{"price":"0.03168733","amount":"0.44669146","timestamp":0},{"price":"0.03169126","amount":"3.00000000","timestamp":0},{"price":"0.03169176","amount":"2.00000000","timestamp":0},{"price":"0.03169326","amount":"5.19799982","timestamp":0},{"price":"0.03169628","amount":"0.06482401","timestamp":0},{"price":"0.03169703","amount":"304.58529994","timestamp":0},{"price":"0.03169704","amount":"365.43699979","timestamp":0},{"price":"0.03170135","amount":"0.31670543","timestamp":0},{"price":"0.03170328","amount":"1.00000000","timestamp":0},{"price":"0.03171636","amount":"1.81912993","timestamp":0},{"price":"0.03171641","amount":"0.12198448","timestamp":0},{"price":"0.03172638","amount":"0.90233112","timestamp":0},{"price":"0.03172640","amount":"161.66205179","timestamp":0},{"price":"0.03172821","amount":"2.09999996","timestamp":0},{"price":"0.03173121","amount":"0.04790331","timestamp":0},{"price":"0.03173500","amount":"2.69578509","timestamp":0},{"price":"0.03173584","amount":"83.90257133","timestamp":0},{"price":"0.03173594","amount":"0.04254356","timestamp":0},{"price":"0.03173606","amount":"0.13999973","timestamp":0},{"price":"0.03173644","amount":"3.60440238","timestamp":0},{"price":"0.03173919","amount":"7.97778960","timestamp":0},{"price":"0.03174151","amount":"1.92284236","timestamp":0},{"price":"0.03175133","amount":"0.00648697","timestamp":0},{"price":"0.03175189","amount":"0.27568343","timestamp":0},{"price":"0.03175192","amount":"0.36329173","timestamp":0},{"price":"0.03175200","amount":"0.16602418","timestamp":0},{"price":"0.03175310","amount":"2.20801779","timestamp":0},{"price":"0.03175338","amount":"0.04999971","timestamp":0},{"price":"0.03175848","amount":"11.05999972","timestamp":0},{"price":"0.03176340","amount":"2.50000000","timestamp":0},{"price":"0.03176411","amount":"0.58358946","timestamp":0}]}}'
+    http_version: 
+  recorded_at: Wed, 24 Oct 2018 07:18:53 GMT
+recorded_with: VCR 4.0.0
