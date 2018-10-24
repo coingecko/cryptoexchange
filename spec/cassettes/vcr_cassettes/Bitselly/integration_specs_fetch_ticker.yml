@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitselly.com/api/v1/public/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitselly.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 12 Oct 2018 11:05:49 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d9b356dfd1dd0a4e7e50d9b96487811bd1539342348; expires=Sat, 12-Oct-19
+        11:05:48 GMT; path=/; domain=.bitselly.com; HttpOnly; Secure
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 468917f0896f350c-LHR
+    body:
+      encoding: UTF-8
+      string: '[{"last":"0.03132700","open":"0.03197300","low":"0.03090500","high":"0.03197300","volume":"379.87981503","volume_quote":"12245.60700000","timestamp":"2018-10-12
+        08:19:25","symbol":"ETH-BTC"},{"last":"0.00000350","open":"0.00000355","low":"0.00000344","high":"0.00000355","volume":"1.69940173","volume_quote":"493696.00000000","timestamp":"2018-10-12
+        08:22:36","symbol":"TRX-BTC"},{"last":"0.06950300","open":"0.07162600","low":"0.06950300","high":"0.07162600","volume":"63.50544708","volume_quote":"913.70800000","timestamp":"2018-10-12
+        05:18:42","symbol":"BCH-BTC"},{"last":"0.02494000","open":"0.02580300","low":"0.02449300","high":"0.02580300","volume":"99.87869505","volume_quote":"4070.75900000","timestamp":"2018-10-12
+        05:33:17","symbol":"DASH-BTC"},{"last":"0.00835300","open":"0.00830000","low":"0.00822100","high":"0.00835300","volume":"275.54758869","volume_quote":"33512.51000000","timestamp":"2018-10-12
+        05:37:44","symbol":"LTC-BTC"},{"last":"0.00384900","open":"0.00386000","low":"0.00379300","high":"0.00396000","volume":"0.82147797","volume_quote":"214.08000000","timestamp":"2018-10-12
+        05:41:05","symbol":"BTG-BTC"},{"last":"0.00048000","open":"0.00049300","low":"0.00047800","high":"0.00049300","volume":"2.05705600","volume_quote":"4294.94000000","timestamp":"2018-10-12
+        05:46:06","symbol":"OMG-BTC"},{"last":"0.00021214","open":"0.00021219","low":"0.00021213","high":"0.00021219","volume":"1.80737387","volume_quote":"8520.00000000","timestamp":"2018-10-12
+        05:53:04","symbol":"VEN-BTC"},{"last":"0.00012101","open":"0.00012942","low":"0.00012039","high":"0.00012942","volume":"0.69851058","volume_quote":"5598.00000000","timestamp":"2018-10-12
+        07:44:09","symbol":"ZRX-BTC"},{"last":"0.00192300","open":"0.00194300","low":"0.00181300","high":"0.00194300","volume":"0.58320003","volume_quote":"315.88200000","timestamp":"2018-10-12
+        07:47:04","symbol":"REP-BTC"},{"last":"0.00002755","open":"0.00002569","low":"0.00002569","high":"0.00002755","volume":"0.36462284","volume_quote":"13501.00000000","timestamp":"2018-10-12
+        07:50:49","symbol":"BAT-BTC"},{"last":"0.00005910","open":"0.00005880","low":"0.00005877","high":"0.00005911","volume":"0.48031248","volume_quote":"8160.00000000","timestamp":"2018-10-12
+        07:52:10","symbol":"KNC-BTC"},{"last":"0.00006640","open":"0.00006640","low":"0.00006640","high":"0.00006640","volume":"0.00000000","volume_quote":"0.00000000","timestamp":"2018-10-12
+        00:00:05","symbol":"BIXCPRO-BTC"},{"last":"0.00009810","open":"0.00009920","low":"0.00009590","high":"0.00009920","volume":"0.07409309","volume_quote":"766.46000000","timestamp":"2018-10-12
+        07:53:21","symbol":"ICX-BTC"},{"last":"0.00000522","open":"0.00000541","low":"0.00000509","high":"0.00000541","volume":"0.09176575","volume_quote":"17934.00000000","timestamp":"2018-10-12
+        07:55:11","symbol":"ZIL-BTC"},{"last":"0.00017910","open":"0.00018470","low":"0.00017610","high":"0.00018470","volume":"0.05491523","volume_quote":"310.10000000","timestamp":"2018-10-12
+        07:57:38","symbol":"AE-BTC"},{"last":"0.00002662","open":"0.00002880","low":"0.00002662","high":"0.00002880","volume":"0.13421506","volume_quote":"4846.00000000","timestamp":"2018-10-12
+        08:01:15","symbol":"BTM-BTC"},{"last":"0.00002408","open":"0.00002525","low":"0.00002408","high":"0.00002525","volume":"0.06734880","volume_quote":"2790.00000000","timestamp":"2018-10-12
+        08:03:07","symbol":"GNT-BTC"},{"last":"0.00050870","open":"0.00049570","low":"0.00047960","high":"0.00050870","volume":"0.37575245","volume_quote":"759.65000000","timestamp":"2018-10-12
+        08:13:51","symbol":"PPT-BTC"},{"last":"0.00000555","open":"0.00000542","low":"0.00000542","high":"0.00000555","volume":"0.04305252","volume_quote":"7780.00000000","timestamp":"2018-10-12
+        08:16:43","symbol":"SNT-BTC"},{"last":"0.00000900","open":"0.00000900","low":"0.00000900","high":"0.00000900","volume":"0.00000000","volume_quote":"0.00000000","timestamp":"2018-10-12
+        00:00:07","symbol":"ATRK-BTC"},{"last":"2.25877000","open":"2.22839000","low":"2.22839000","high":"2.25877000","volume":"550.91240351","volume_quote":"243.90100000","timestamp":"2018-10-12
+        04:16:35","symbol":"BCH-ETH"},{"last":"0.81115000","open":"0.81439000","low":"0.81115000","high":"0.81439000","volume":"22.71649816","volume_quote":"27.92600000","timestamp":"2018-10-12
+        04:33:22","symbol":"DASH-ETH"},{"last":"0.26800000","open":"0.25977000","low":"0.25977000","high":"0.26800000","volume":"1241.26978952","volume_quote":"4631.92600000","timestamp":"2018-10-12
+        04:19:14","symbol":"LTC-ETH"},{"last":"0.01539100","open":"0.01567600","low":"0.01539100","high":"0.01567600","volume":"7.77347488","volume_quote":"505.03000000","timestamp":"2018-10-12
+        04:21:11","symbol":"OMG-ETH"},{"last":"0.00396821","open":"0.00333482","low":"0.00333482","high":"0.00396821","volume":"13.99197363","volume_quote":"3546.00000000","timestamp":"2018-10-12
+        04:22:46","symbol":"ZRX-ETH"},{"last":"0.05815000","open":"0.06092000","low":"0.05815000","high":"0.06092000","volume":"22.45171298","volume_quote":"386.02000000","timestamp":"2018-10-12
+        04:24:34","symbol":"REP-ETH"},{"last":"0.00082212","open":"0.00080643","low":"0.00080643","high":"0.00082212","volume":"2.09384127","volume_quote":"2556.00000000","timestamp":"2018-10-12
+        04:26:03","symbol":"BAT-ETH"},{"last":"0.00187290","open":"0.00184590","low":"0.00184590","high":"0.00187290","volume":"1.10875680","volume_quote":"592.00000000","timestamp":"2018-10-12
+        04:31:18","symbol":"KNC-ETH"}]'
+    http_version: 
+  recorded_at: Fri, 12 Oct 2018 11:05:49 GMT
+recorded_with: VCR 4.0.0
