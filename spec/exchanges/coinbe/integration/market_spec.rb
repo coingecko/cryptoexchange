@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Coinbe.net integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'ETH', market: 'coinbe') }
+  let(:xin_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XIN', target: 'BTC', market: 'coinbe') }
 
   it 'fetch pairs' do
     pairs = client.pairs('coinbe')
@@ -15,10 +15,10 @@ RSpec.describe 'Coinbe.net integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_eth_pair)
+    ticker = client.ticker(xin_btc_pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'ETH'
+    expect(ticker.base).to eq 'XIN'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'coinbe'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
