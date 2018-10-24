@@ -14,16 +14,14 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Alluma::Market::API_URL}/server/misc/tickerData"
+          "#{Cryptoexchange::Exchanges::Alluma::Market::API_URL}/server/misc/all_ticker"
         end
 
         def adapt_all(output)
-          output.map do |ticker|
-            symbol = ticker['Instrument']
-            base, target = symbol.split(/(BTC$)+|(ETH$)+|(TUSD$)+|(INR$)+|(PHP$)+|(LTC$)+|(XRP$)+|(DASH$)+/)
-            market_pair  = Cryptoexchange::Models::MarketPair.new(
-              base:   base,
-              target: target,
+          output['data'].map do |ticker|
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+              base:   ticker['target'],
+              target: ticker['base'],
               market: Alluma::Market::NAME
             )
             adapt(market_pair, ticker)
