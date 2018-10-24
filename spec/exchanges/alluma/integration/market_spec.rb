@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Alluma integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_inr_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'INR', market: 'alluma') }
+  let(:fuel_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'FUEL', target: 'ETH', market: 'alluma') }
 
   it 'fetch pairs' do
     pairs = client.pairs('alluma')
@@ -15,10 +15,10 @@ RSpec.describe 'Alluma integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_inr_pair)
+    ticker = client.ticker(fuel_eth_pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'INR'
+    expect(ticker.base).to eq 'FUEL'
+    expect(ticker.target).to eq 'ETH'
     expect(ticker.market).to eq 'alluma'
     expect(ticker.last).to be_a Numeric
     expect(ticker.low).to be_a Numeric
