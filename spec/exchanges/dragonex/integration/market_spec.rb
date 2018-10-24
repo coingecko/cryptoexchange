@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Dragonex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_usdt_pair) { Cryptoexchange::Models::Dragonex::MarketPair.new(base: 'BTC', target: 'USDT', id: 101, market: 'dragonex') }
+  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: 'dragonex', inst_id: 101) }
 
   it 'fetch pairs' do
     pairs = client.pairs('dragonex')
@@ -11,7 +11,7 @@ RSpec.describe 'Dragonex integration specs' do
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
-    expect(pair.id).to_not be nil
+    expect(pair.inst_id).to_not be nil
     expect(pair.market).to eq 'dragonex'
   end
 

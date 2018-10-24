@@ -2,6 +2,106 @@
 http_interactions:
 - request:
     method: get
+    uri: https://openapi.dragonex.io/api/v1/symbol/all/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - openapi.dragonex.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Wed, 24 Oct 2018 02:40:56 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '4531'
+      Connection:
+      - close
+      Mycode:
+      - '1'
+      Et:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Wed, 24 Oct 2018 02:40:55 GMT
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"ok": true, "code": 1, "msg": "", "data": [{"symbol": "usdt_dc", "symbol_id":
+        10002}, {"symbol": "gas_usdt", "symbol_id": 99}, {"symbol": "btc_usdt", "symbol_id":
+        101}, {"symbol": "eth_usdt", "symbol_id": 103}, {"symbol": "dt_eth", "symbol_id":
+        1040103}, {"symbol": "dt_dc", "symbol_id": 1040002}, {"symbol": "dt_usdt",
+        "symbol_id": 104}, {"symbol": "nuls_usdt", "symbol_id": 106}, {"symbol": "tnb_eth",
+        "symbol_id": 1070103}, {"symbol": "tnb_usdt", "symbol_id": 107}, {"symbol":
+        "rcn_eth", "symbol_id": 1080103}, {"symbol": "rcn_usdt", "symbol_id": 108},
+        {"symbol": "lrc_eth", "symbol_id": 1090103}, {"symbol": "lrc_usdt", "symbol_id":
+        109}, {"symbol": "knc_eth", "symbol_id": 1100103}, {"symbol": "knc_usdt",
+        "symbol_id": 110}, {"symbol": "bch_usdt", "symbol_id": 111}, {"symbol": "eos_eth",
+        "symbol_id": 1130103}, {"symbol": "eos_usdt", "symbol_id": 113}, {"symbol":
+        "qtum_eth", "symbol_id": 1150103}, {"symbol": "qtum_usdt", "symbol_id": 115},
+        {"symbol": "safe_usdt", "symbol_id": 117}, {"symbol": "cmt_eth", "symbol_id":
+        1180103}, {"symbol": "cmt_usdt", "symbol_id": 118}, {"symbol": "cht_usdt",
+        "symbol_id": 119}, {"symbol": "snet_usdt", "symbol_id": 123}, {"symbol": "meet_eth",
+        "symbol_id": 1240103}, {"symbol": "meet_usdt", "symbol_id": 124}, {"symbol":
+        "abt_eth", "symbol_id": 1250103}, {"symbol": "abt_usdt", "symbol_id": 125},
+        {"symbol": "fdz_eth", "symbol_id": 1280103}, {"symbol": "neo_eth", "symbol_id":
+        1290103}, {"symbol": "neo_usdt", "symbol_id": 129}, {"symbol": "ltc_eth",
+        "symbol_id": 1300103}, {"symbol": "ltc_usdt", "symbol_id": 130}, {"symbol":
+        "xmr_usdt", "symbol_id": 131}, {"symbol": "imt_dt", "symbol_id": 1320104},
+        {"symbol": "imt_eth", "symbol_id": 1320103}, {"symbol": "ae_eth", "symbol_id":
+        1330103}, {"symbol": "ae_usdt", "symbol_id": 133}, {"symbol": "icx_eth", "symbol_id":
+        1340103}, {"symbol": "icx_usdt", "symbol_id": 134}, {"symbol": "eosdac_eth",
+        "symbol_id": 1350103}, {"symbol": "trx_dt", "symbol_id": 1360104}, {"symbol":
+        "trx_eth", "symbol_id": 1360103}, {"symbol": "ven_dt", "symbol_id": 1370104},
+        {"symbol": "omg_dt", "symbol_id": 1380104}, {"symbol": "omg_eth", "symbol_id":
+        1380103}, {"symbol": "ctxc_dt", "symbol_id": 1390104}, {"symbol": "ctxc_eth",
+        "symbol_id": 1390103}, {"symbol": "gxs_dt", "symbol_id": 1400104}, {"symbol":
+        "gxs_eth", "symbol_id": 1400103}, {"symbol": "gxs_usdt", "symbol_id": 140},
+        {"symbol": "true_eth", "symbol_id": 1410103}, {"symbol": "xrp_usdt", "symbol_id":
+        142}, {"symbol": "ada_usdt", "symbol_id": 143}, {"symbol": "cdc_eth", "symbol_id":
+        1440103}, {"symbol": "xmc_eth", "symbol_id": 1450103}, {"symbol": "eon_eth",
+        "symbol_id": 1480103}, {"symbol": "ont_usdt", "symbol_id": 149}, {"symbol":
+        "zil_usdt", "symbol_id": 150}, {"symbol": "wan_eth", "symbol_id": 1510103},
+        {"symbol": "dcr_eth", "symbol_id": 1520103}, {"symbol": "data_eth", "symbol_id":
+        1530103}, {"symbol": "rep_usdt", "symbol_id": 154}, {"symbol": "iost_usdt",
+        "symbol_id": 155}, {"symbol": "mkr_usdt", "symbol_id": 156}, {"symbol": "wicc_usdt",
+        "symbol_id": 157}, {"symbol": "gnt_usdt", "symbol_id": 158}, {"symbol": "mana_usdt",
+        "symbol_id": 160}, {"symbol": "ppt_usdt", "symbol_id": 161}, {"symbol": "wtc_usdt",
+        "symbol_id": 162}, {"symbol": "meetone_eth", "symbol_id": 1630103}, {"symbol":
+        "keos_eth", "symbol_id": 1650103}, {"symbol": "tac_usdt", "symbol_id": 166},
+        {"symbol": "snt_usdt", "symbol_id": 167}, {"symbol": "aion_usdt", "symbol_id":
+        168}, {"symbol": "loom_usdt", "symbol_id": 169}, {"symbol": "lrn_eth", "symbol_id":
+        1700103}, {"symbol": "add_eth", "symbol_id": 1710103}, {"symbol": "cet_eth",
+        "symbol_id": 1720103}, {"symbol": "atd_eth", "symbol_id": 1740103}, {"symbol":
+        "vet_eth", "symbol_id": 1750103}, {"symbol": "palt_usdt", "symbol_id": 176},
+        {"symbol": "bqt_eth", "symbol_id": 1770103}, {"symbol": "zen_usdt", "symbol_id":
+        178}, {"symbol": "horus_eth", "symbol_id": 1790103}, {"symbol": "agi_usdt",
+        "symbol_id": 180}, {"symbol": "blz_usdt", "symbol_id": 181}, {"symbol": "qkc_usdt",
+        "symbol_id": 183}, {"symbol": "vib_usdt", "symbol_id": 184}, {"symbol": "iq_eth",
+        "symbol_id": 1890103}, {"symbol": "black_eth", "symbol_id": 1900103}, {"symbol":
+        "eox_eth", "symbol_id": 1910103}, {"symbol": "inb_usdt", "symbol_id": 192},
+        {"symbol": "pt_dt", "symbol_id": 1930104}, {"symbol": "pt_usdt", "symbol_id":
+        193}, {"symbol": "nash_usdt", "symbol_id": 194}, {"symbol": "iota_usdt", "symbol_id":
+        197}, {"symbol": "xlm_usdt", "symbol_id": 198}, {"symbol": "etc_usdt", "symbol_id":
+        199}, {"symbol": "abbc_usdt", "symbol_id": 201}, {"symbol": "rstr_usdt", "symbol_id":
+        203}]}'
+    http_version: 
+  recorded_at: Wed, 24 Oct 2018 02:40:56 GMT
+- request:
+    method: get
     uri: https://openapi.dragonex.io/api/v1/market/kline/?count=1&kline_type=6&st=0&symbol_id=101
     body:
       encoding: UTF-8
@@ -21,11 +121,11 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sun, 09 Sep 2018 03:17:43 GMT
+      - Wed, 24 Oct 2018 02:40:56 GMT
       Content-Type:
       - text/html; charset=utf-8
       Content-Length:
-      - '310'
+      - '311'
       Connection:
       - close
       Mycode:
@@ -35,15 +135,15 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Expires:
-      - Sun, 09 Sep 2018 03:17:42 GMT
+      - Wed, 24 Oct 2018 02:40:55 GMT
       Cache-Control:
       - no-cache
     body:
       encoding: UTF-8
       string: '{"ok": true, "code": 1, "msg": "", "data": {"columns": ["amount", "close_price",
         "max_price", "min_price", "open_price", "pre_close_price", "timestamp", "usdt_amount",
-        "volume"], "lists": [["5864591.1984", "6161.2528", "6452.4518", "6131.5024",
-        "6412.8828", "0.0000", 1536422400, "5864591.1984", "945.0829"]]}}'
+        "volume"], "lists": [["7462279.8553", "6565.3019", "6587.3540", "6554.2792",
+        "6559.4668", "0.0000", 1540310400, "7462279.8553", "1137.5167"]]}}'
     http_version: 
-  recorded_at: Sun, 09 Sep 2018 03:17:43 GMT
+  recorded_at: Wed, 24 Oct 2018 02:40:56 GMT
 recorded_with: VCR 4.0.0
