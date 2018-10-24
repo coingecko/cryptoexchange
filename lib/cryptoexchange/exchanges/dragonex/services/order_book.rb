@@ -15,12 +15,12 @@ module Cryptoexchange::Exchanges
         end
 
         def asks_url(market_pair)
-          id = market_pair.id
+          id = market_pair.inst_id
           "#{Cryptoexchange::Exchanges::Dragonex::Market::API_URL}/api/v1/market/sell/?symbol_id=#{id}"
         end
 
         def bids_url(market_pair)
-          id = market_pair.id
+          id = market_pair.inst_id
           "#{Cryptoexchange::Exchanges::Dragonex::Market::API_URL}/api/v1/market/buy/?symbol_id=#{id}"
         end
 

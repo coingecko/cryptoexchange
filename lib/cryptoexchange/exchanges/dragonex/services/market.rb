@@ -14,14 +14,23 @@ module Cryptoexchange::Exchanges
           end
         end
 
+        def inject_inst_id(market_pair)
+          if market_pair.inst_id.nil?
+            market_pairs = Cryptoexchange::Client.new.pairs(Dragonex::Market::NAME)
+            market_pair = market_pairs.detect { |mp| mp.base == market_pair.base && mp.target == market_pair.target }
+          end
+
+          market_pair
+        end
+
         def fetch(market_pair)
+          market_pair = inject_inst_id(market_pair)
           output = super(ticker_url(market_pair))
           adapt(output, market_pair)
         end
 
         def ticker_url(market_pair)
-          id = market_pair.id
-          "#{Cryptoexchange::Exchanges::Dragonex::Market::API_URL}/api/v1/market/kline/?symbol_id=#{id}&kline_type=#{KLINE_TYPE}&st=#{SEARCH_TIMESTAMP}&count=#{COUNT}"
+          "#{Cryptoexchange::Exchanges::Dragonex::Market::API_URL}/api/v1/market/kline/?symbol_id=#{market_pair.inst_id}&kline_type=#{KLINE_TYPE}&st=#{SEARCH_TIMESTAMP}&count=#{COUNT}"
         end
 
         def adapt(output, market_pair)
