@@ -112,6 +112,7 @@ Or install it yourself as:
 | Coinchangex       | Y       | N          | N       |         | Y           | Y        | coinchangex       |
 | CoinEgg           | Y       | Y          | Y       |         | User-Defined| Y        | coin_egg          |
 | CoinExchange      | Y       |            |         |         | Y           |          | coin_exchange     |
+| Coinbe            | Y       |            |         |         | Y           |          | coinbe            |
 | Coinbene          | Y       | Y          | Y       |         | Y           | Y        | coinbene          |
 | Coincheck         | Y       |            |         |         | User-Defined|          | coincheck         |
 | Coindirect        | Y       | N          | N       |         | Y           | Y        | coindirect        |
