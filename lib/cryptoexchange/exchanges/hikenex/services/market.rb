@@ -36,7 +36,7 @@ module Cryptoexchange::Exchanges
           ticker.market    = Hikenex::Market::NAME
           ticker.last      = NumericHelper.to_d(output['price'])
           ticker.volume    = NumericHelper.to_d(output['volumn'])
-          ticker.timestamp = Time.now.to_i
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ice3x.com/api/v1/stats/marketdepthbtcav
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ice3x.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 03 Sep 2018 22:51:44 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8b969cec79d9a87d08b70325f796428a1536015102; expires=Tue, 03-Sep-19
+        22:51:42 GMT; path=/; domain=.ice3x.com; HttpOnly; Secure
+      - session=eyJpdiI6IkJzNXo0VmVWTG04K1FPR3J5eUNka1E9PSIsInZhbHVlIjoiQ0swMkg5VVRBZ3ljTExNdGJZV042bndYcThZc3AwMEdjTkhOWVVnXC9tVzk2XC9BWUVTbldvS0kxVU5FUXo2cEVaIiwibWFjIjoiOTc4YWYzOWNhZjNhZjA2ZTQ1YzBjZGFkOWVhNDk1NjFkNGMyOWZiNjYwMWYwY2I2ZTNjZDBiNGE3NjQyYTFhMSJ9;
+        path=/; httponly
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store, private
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - origin, content-type, accept, Sign
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '59'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 454bc8593bc30ce3-LHR
+    body:
+      encoding: UTF-8
+      string: '{"errors":false,"response":{"entities":[{"pair_id":"3","vol":"1.65509185","pair_name":"btc\/zar","last_price":"109000.00","max_bid":"109400.00","min_ask":"106000.00"},{"pair_id":"4","vol":"0.00","pair_name":"btc\/ngn","last_price":"1000105.00","max_bid":"2130000.00","min_ask":"6999999.00"},{"pair_id":"6","vol":"1.26639616","pair_name":"ltc\/zar","last_price":"1000.0001","max_bid":"1785.00","min_ask":"1100.00"},{"pair_id":"11","vol":"13.43552493","pair_name":"eth\/zar","last_price":"4350.00","max_bid":"4200.00","min_ask":"4400.00"},{"pair_id":"12","vol":"0.00","pair_name":"eth\/ngn","last_price":"6410.00","max_bid":"21231.00","min_ask":"640949.00"},{"pair_id":"13","vol":"0.01085805","pair_name":"eth\/btc","last_price":"0.05999","max_bid":"0.0005","min_ask":"0.05999"},{"pair_id":"14","vol":"0.00668076","pair_name":"bch\/btc","last_price":"0.13","max_bid":"0.03334","min_ask":"0.13"},{"pair_id":"15","vol":"0.00","pair_name":"bch\/zar","last_price":"9500.00","max_bid":"8100.0001","min_ask":"9500.00"},{"pair_id":"16","vol":"0.04521375","pair_name":"ltc\/btc","last_price":"0.0144789","max_bid":"0.00499111","min_ask":"0.0144789"},{"pair_id":"17","vol":"0.00214962","pair_name":"zec\/btc","last_price":"0.054","max_bid":"0.0201","min_ask":"0.054"},{"pair_id":"18","vol":"0.00953453","pair_name":"dash\/btc","last_price":"0.055","max_bid":"0.025","min_ask":"0.055"},{"pair_id":"19","vol":"31525.92948717","pair_name":"doge\/btc","last_price":"0.0000007","max_bid":"0.0000005","min_ask":"0.00000078"},{"pair_id":"20","vol":"4.94560312","pair_name":"xmr\/btc","last_price":"0.018","max_bid":"0.0165","min_ask":"0.026"},{"pair_id":"21","vol":"0.00","pair_name":"xmr\/zar","last_price":"1200.00000001","max_bid":"1500.00","min_ask":"2397.00"},{"pair_id":"23","vol":"0.02866157","pair_name":"neo\/btc","last_price":"0.0054","max_bid":"0.002901","min_ask":"0.0054"},{"pair_id":"24","vol":"1772.47552916","pair_name":"ada\/zar","last_price":"1.67","max_bid":"1.55","min_ask":"1.67"},{"pair_id":"25","vol":"39.535","pair_name":"ada\/btc","last_price":"0.00001799","max_bid":"0.0000146","min_ask":"0.00001799"}]},"pagination":{"items_per_page":1000,"total_items":17,"current_page":1,"total_pages":1}}'
+    http_version: 
+  recorded_at: Mon, 03 Sep 2018 22:51:48 GMT
+recorded_with: VCR 4.0.0

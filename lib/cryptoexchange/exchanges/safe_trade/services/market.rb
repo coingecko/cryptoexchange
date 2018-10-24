@@ -18,16 +18,11 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          output.map do |pair, ticker|
-            separator   = /(BTCZ|BTC|LTC|SAFE)\z/i =~ pair
-            base        = pair[0..separator - 1]
-            target      = pair[separator..-1]
-            market_pair = Cryptoexchange::Models::MarketPair.new(
-              base:   base,
-              target: target,
-              market: SafeTrade::Market::NAME
-            )
-            adapt(market_pair, ticker)
+          pairs = Cryptoexchange::Exchanges::SafeTrade::Services::Pairs.new.fetch
+
+          output.map do |pair_id, ticker|
+            market_pair = pairs.find{ |p| p.inst_id == pair_id }
+            adapt(market_pair, ticker) if market_pair
           end
         end
 

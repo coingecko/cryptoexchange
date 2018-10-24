@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitmax.io/api/v1/depth?symbol=ETH-BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitmax.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 02 Oct 2018 11:38:59 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '482'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dcaa1015366c94c81afe45ce5222f03a21538480339; expires=Wed, 02-Oct-19
+        11:38:59 GMT; path=/; domain=.bitmax.io; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Frame-Operations:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4636e2c8bb548839-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"m":"depth","s":"ETH/BTC","asks":[["0.03479","0.0664"],["0.034791","8.7312"],["0.034797","2.104"],["0.034799","0.472"],["0.0348","0.048"],["0.034805","0.0448"],["0.034811","0.0448"],["0.034814","0.7096"],["0.034817","2.184"],["0.034818","0.0832"]],"bids":[["0.034772","1.7016"],["0.034758","10.3576"],["0.03475","29.7790739"],["0.034749","0.4872"],["0.034744","6.6336"],["0.034739","4.9288"],["0.034735","0.0496"],["0.034733","3.9616"],["0.034731","15.7856"],["0.03473","0.6328"]]}'
+    http_version: 
+  recorded_at: Tue, 02 Oct 2018 11:38:59 GMT
+recorded_with: VCR 4.0.0

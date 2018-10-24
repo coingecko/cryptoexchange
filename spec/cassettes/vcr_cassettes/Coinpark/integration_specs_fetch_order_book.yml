@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinpark.cc/v1/mdata?cmd=depth&pair=BIX_USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinpark.cc
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Tengine
+      Date:
+      - Sun, 07 Oct 2018 03:19:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '924'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - undefined
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-access-token, X-Requested-With
+      Access-Control-Max-Age:
+      - '172800'
+      X-Ca-Request-Id:
+      - 684ED21F-7408-4A15-AD64-277162780C60
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"39c-mNoXm9ASSr6WkjH8HPLUNRR0LV8"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '{"result":{"pair":"BIX_USDT","update_time":1538882394320,"bids":[{"price":"0.3503","volume":"41.7317"},{"price":"0.3502","volume":"22.7436"}],"asks":[{"price":"0.4793","volume":"15"},{"price":"0.4794","volume":"28.0916"},{"price":"0.4795","volume":"71.4147"},{"price":"0.4796","volume":"8.0918"},{"price":"0.4797","volume":"1.6427"},{"price":"0.4799","volume":"189.7021"},{"price":"0.49","volume":"76.8371"},{"price":"0.5999","volume":"10.3845"},{"price":"0.6071","volume":"16.4943"},{"price":"0.6076","volume":"48.5245"},{"price":"0.6883","volume":"82.3383"},{"price":"0.8","volume":"264.404"},{"price":"1","volume":"232.8368"},{"price":"1.1","volume":"10"},{"price":"1.2","volume":"10"},{"price":"1.3","volume":"10"},{"price":"1.4","volume":"10"},{"price":"1.5","volume":"10"},{"price":"2","volume":"193.508"},{"price":"5","volume":"1"},{"price":"10","volume":"6.9524"},{"price":"10000","volume":"0.0256"}]},"cmd":"depth"}'
+    http_version: 
+  recorded_at: Sun, 07 Oct 2018 03:19:54 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,441 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitmax.io/api/v1/products
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitmax.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 02 Oct 2018 11:38:59 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '8551'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d58c178d330b5263dcfd6b859fd3983751538480338; expires=Wed, 02-Oct-19
+        11:38:58 GMT; path=/; domain=.bitmax.io; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Frame-Operations:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4636e2c538cc3283-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        [
+          {
+            "symbol" : "LBA/BTC",
+            "baseAsset" : "LBA",
+            "quoteAsset" : "BTC",
+            "priceScale" : 8,
+            "qtyScale" : 2,
+            "notionalScale" : 8,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.001",
+            "maxNotional" : "100.000",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "BCH/USDT",
+            "baseAsset" : "BCH",
+            "quoteAsset" : "USDT",
+            "priceScale" : 2,
+            "qtyScale" : 7,
+            "notionalScale" : 4,
+            "minQty" : "0.01",
+            "maxQty" : "1000.00",
+            "minNotional" : "10",
+            "maxNotional" : "1000000",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "BCH/BTC",
+            "baseAsset" : "BCH",
+            "quoteAsset" : "BTC",
+            "priceScale" : 6,
+            "qtyScale" : 7,
+            "notionalScale" : 8,
+            "minQty" : "0.01",
+            "maxQty" : "1000.00",
+            "minNotional" : "0.001",
+            "maxNotional" : "100.000",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "LBA/ETH",
+            "baseAsset" : "LBA",
+            "quoteAsset" : "ETH",
+            "priceScale" : 8,
+            "qtyScale" : 2,
+            "notionalScale" : 7,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.01",
+            "maxNotional" : "1000.00",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "OLT/BTC",
+            "baseAsset" : "OLT",
+            "quoteAsset" : "BTC",
+            "priceScale" : 8,
+            "qtyScale" : 2,
+            "notionalScale" : 8,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.001",
+            "maxNotional" : "100.000",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "ETC/USDT",
+            "baseAsset" : "ETC",
+            "quoteAsset" : "USDT",
+            "priceScale" : 4,
+            "qtyScale" : 5,
+            "notionalScale" : 4,
+            "minQty" : "1",
+            "maxQty" : "100000",
+            "minNotional" : "10",
+            "maxNotional" : "1000000",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "ETC/ETH",
+            "baseAsset" : "ETC",
+            "quoteAsset" : "ETH",
+            "priceScale" : 7,
+            "qtyScale" : 5,
+            "notionalScale" : 7,
+            "minQty" : "1",
+            "maxQty" : "100000",
+            "minNotional" : "0.01",
+            "maxNotional" : "1000.00",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "BTC/USDT",
+            "baseAsset" : "BTC",
+            "quoteAsset" : "USDT",
+            "priceScale" : 1,
+            "qtyScale" : 8,
+            "notionalScale" : 4,
+            "minQty" : "0.001",
+            "maxQty" : "100.000",
+            "minNotional" : "10",
+            "maxNotional" : "1000000",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "ZRX/ETH",
+            "baseAsset" : "ZRX",
+            "quoteAsset" : "ETH",
+            "priceScale" : 8,
+            "qtyScale" : 3,
+            "notionalScale" : 7,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.01",
+            "maxNotional" : "1000.00",
+            "status" : "NoTrading"
+          },
+          {
+            "symbol" : "BAT/ETH",
+            "baseAsset" : "BAT",
+            "quoteAsset" : "ETH",
+            "priceScale" : 8,
+            "qtyScale" : 3,
+            "notionalScale" : 7,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.01",
+            "maxNotional" : "1000.00",
+            "status" : "NoTrading"
+          },
+          {
+            "symbol" : "ELF/ETH",
+            "baseAsset" : "ELF",
+            "quoteAsset" : "ETH",
+            "priceScale" : 8,
+            "qtyScale" : 3,
+            "notionalScale" : 7,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.01",
+            "maxNotional" : "1000.00",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "LTC/USDT",
+            "baseAsset" : "LTC",
+            "quoteAsset" : "USDT",
+            "priceScale" : 3,
+            "qtyScale" : 6,
+            "notionalScale" : 4,
+            "minQty" : "0.1",
+            "maxQty" : "10000.0",
+            "minNotional" : "10",
+            "maxNotional" : "1000000",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "BAT/BTC",
+            "baseAsset" : "BAT",
+            "quoteAsset" : "BTC",
+            "priceScale" : 8,
+            "qtyScale" : 3,
+            "notionalScale" : 8,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.001",
+            "maxNotional" : "100.000",
+            "status" : "NoTrading"
+          },
+          {
+            "symbol" : "LTC/BTC",
+            "baseAsset" : "LTC",
+            "quoteAsset" : "BTC",
+            "priceScale" : 7,
+            "qtyScale" : 6,
+            "notionalScale" : 8,
+            "minQty" : "0.1",
+            "maxQty" : "10000.0",
+            "minNotional" : "0.001",
+            "maxNotional" : "100.000",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "BCH/ETH",
+            "baseAsset" : "BCH",
+            "quoteAsset" : "ETH",
+            "priceScale" : 5,
+            "qtyScale" : 7,
+            "notionalScale" : 7,
+            "minQty" : "0.01",
+            "maxQty" : "1000.00",
+            "minNotional" : "0.01",
+            "maxNotional" : "1000.00",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "ZIL/BTC",
+            "baseAsset" : "ZIL",
+            "quoteAsset" : "BTC",
+            "priceScale" : 8,
+            "qtyScale" : 2,
+            "notionalScale" : 8,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.001",
+            "maxNotional" : "100.000",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "ZIL/ETH",
+            "baseAsset" : "ZIL",
+            "quoteAsset" : "ETH",
+            "priceScale" : 8,
+            "qtyScale" : 2,
+            "notionalScale" : 7,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.01",
+            "maxNotional" : "1000.00",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "OLT/ETH",
+            "baseAsset" : "OLT",
+            "quoteAsset" : "ETH",
+            "priceScale" : 8,
+            "qtyScale" : 2,
+            "notionalScale" : 7,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.01",
+            "maxNotional" : "1000.00",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "ETH/BTC",
+            "baseAsset" : "ETH",
+            "quoteAsset" : "BTC",
+            "priceScale" : 6,
+            "qtyScale" : 7,
+            "notionalScale" : 8,
+            "minQty" : "0.01",
+            "maxQty" : "1000.00",
+            "minNotional" : "0.001",
+            "maxNotional" : "100.000",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "ZRX/BTC",
+            "baseAsset" : "ZRX",
+            "quoteAsset" : "BTC",
+            "priceScale" : 8,
+            "qtyScale" : 3,
+            "notionalScale" : 8,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.001",
+            "maxNotional" : "100.000",
+            "status" : "NoTrading"
+          },
+          {
+            "symbol" : "SEELE/BTC",
+            "baseAsset" : "SEELE",
+            "quoteAsset" : "BTC",
+            "priceScale" : 8,
+            "qtyScale" : 2,
+            "notionalScale" : 8,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.001",
+            "maxNotional" : "100.000",
+            "status" : "NoTrading"
+          },
+          {
+            "symbol" : "LFT/BTC",
+            "baseAsset" : "LFT",
+            "quoteAsset" : "BTC",
+            "priceScale" : 8,
+            "qtyScale" : 2,
+            "notionalScale" : 8,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.001",
+            "maxNotional" : "100.000",
+            "status" : "NoTrading"
+          },
+          {
+            "symbol" : "ETC/BTC",
+            "baseAsset" : "ETC",
+            "quoteAsset" : "BTC",
+            "priceScale" : 8,
+            "qtyScale" : 5,
+            "notionalScale" : 8,
+            "minQty" : "1",
+            "maxQty" : "100000",
+            "minNotional" : "0.001",
+            "maxNotional" : "100.000",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "LFT/ETH",
+            "baseAsset" : "LFT",
+            "quoteAsset" : "ETH",
+            "priceScale" : 8,
+            "qtyScale" : 2,
+            "notionalScale" : 7,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.01",
+            "maxNotional" : "1000.00",
+            "status" : "NoTrading"
+          },
+          {
+            "symbol" : "SEELE/ETH",
+            "baseAsset" : "SEELE",
+            "quoteAsset" : "ETH",
+            "priceScale" : 8,
+            "qtyScale" : 2,
+            "notionalScale" : 7,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.01",
+            "maxNotional" : "1000.00",
+            "status" : "NoTrading"
+          },
+          {
+            "symbol" : "LTC/ETH",
+            "baseAsset" : "LTC",
+            "quoteAsset" : "ETH",
+            "priceScale" : 6,
+            "qtyScale" : 6,
+            "notionalScale" : 7,
+            "minQty" : "0.1",
+            "maxQty" : "10000.0",
+            "minNotional" : "0.01",
+            "maxNotional" : "1000.00",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "IOST/ETH",
+            "baseAsset" : "IOST",
+            "quoteAsset" : "ETH",
+            "priceScale" : 8,
+            "qtyScale" : 2,
+            "notionalScale" : 7,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.01",
+            "maxNotional" : "1000.00",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "ETH/USDT",
+            "baseAsset" : "ETH",
+            "quoteAsset" : "USDT",
+            "priceScale" : 2,
+            "qtyScale" : 7,
+            "notionalScale" : 4,
+            "minQty" : "0.01",
+            "maxQty" : "1000.00",
+            "minNotional" : "10",
+            "maxNotional" : "1000000",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "ELF/BTC",
+            "baseAsset" : "ELF",
+            "quoteAsset" : "BTC",
+            "priceScale" : 8,
+            "qtyScale" : 3,
+            "notionalScale" : 8,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.001",
+            "maxNotional" : "100.000",
+            "status" : "Normal"
+          },
+          {
+            "symbol" : "IOST/BTC",
+            "baseAsset" : "IOST",
+            "quoteAsset" : "BTC",
+            "priceScale" : 8,
+            "qtyScale" : 2,
+            "notionalScale" : 8,
+            "minQty" : "10",
+            "maxQty" : "1000000",
+            "minNotional" : "0.001",
+            "maxNotional" : "100.000",
+            "status" : "Normal"
+          }
+        ]
+    http_version: 
+  recorded_at: Tue, 02 Oct 2018 11:38:59 GMT
+recorded_with: VCR 4.0.0

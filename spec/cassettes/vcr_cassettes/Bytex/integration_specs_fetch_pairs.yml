@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openapi.bytex.io/open/api/get_ticker?symbol=all
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - openapi.bytex.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 16 Sep 2018 03:08:02 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - SCOUTER=x19redtojaahu8; Max-Age=2147483647; Expires=Fri, 04-Oct-2086 06:22:09
+        GMT; Path=/
+      - __cfduid=d29eb134bfc4f3daa65caf27feabfca5b1537067281; expires=Mon, 16-Sep-19
+        03:08:01 GMT; path=/; domain=.bytex.io; HttpOnly; Secure
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 45b0204e9816a2c6-HKG
+    body:
+      encoding: UTF-8
+      string: '{"code":"0","msg":"suc","data":{"qtumbtc":{"high":0.00056000,"vol":386694.48000000,"last":0.0004000000000000,"low":0.00029300,"buy":"0.000400","sell":"0.000450","time":1537060448108},"btcusdt":{"high":6585.92000000,"vol":2244.31398200,"last":6502.6600000000000000,"low":5420.00000000,"buy":"6429.00","sell":"6541.53","time":1537067275040},"botbtc":{"high":0.00000200,"vol":0.03000000,"last":0.0000020000000000,"low":0.00000200,"buy":"0.00000211","sell":"0.00001788","time":1536084106453},"bytbtc":{"high":0.00000699,"vol":1289757535.81776119,"last":0.0000033000000000,"low":0.00000264,"buy":"0.00000311","sell":"0.00000550","time":1537067267327},"botusdt":{"high":0.07940000,"vol":1303.07000000,"last":0.0768000000000000,"low":0.07540000,"buy":"0.0290","sell":"0.0888","time":1537067271769},"ethbtc":{"high":0.04000000,"vol":35797.72972000,"last":0.0334000000000000,"low":0.01625000,"buy":"0.024000","sell":"0.033670","time":1537066802672},"bchbtc":{"high":0.07798000,"vol":1155.93621000,"last":0.0399950000000000,"low":0.03999500,"buy":"0.039996","sell":"0.077980","time":1537028687612},"boeusdt":{"high":0.03970000,"vol":1352.21000000,"last":0.0383000000000000,"low":0.03330000,"buy":"0.0333","sell":"0.0397","time":1537067272820},"bchusdt":{"high":463.00000000,"vol":1.38644000,"last":442.8700000000000000,"low":387.00000000,"buy":"388.00","sell":"446.00","time":1537067273074},"qtumusdt":{"high":3.60500000,"vol":1134283.84372428,"last":3.4400000000000000,"low":2.86500000,"buy":"3.433","sell":"3.452","time":1537067272956},"bytusdt":{"high":0.04500000,"vol":2356782800.56727615,"last":0.0230000000000000,"low":0.01720000,"buy":"0.0230","sell":"0.0233","time":1537067278798},"ethusdt":{"high":227.09000000,"vol":256549.93536621,"last":218.6200000000000000,"low":198.00000000,"buy":"218.00","sell":"218.99","time":1537067276175},"boebtc":{"high":0.00000518,"vol":0.58343629,"last":0.0000049500000000,"low":0.00000495,"buy":"0.00000495","sell":"0.00000518","time":1535508666960}}}'
+    http_version: 
+  recorded_at: Sun, 16 Sep 2018 03:08:02 GMT
+recorded_with: VCR 4.0.0

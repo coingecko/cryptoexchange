@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://crytrex.com/public_api/stats?currency=USD&market=BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - crytrex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 17 Aug 2018 18:59:47 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - WLOX
+      Access-Control-Allow-Origin:
+      - "*, *"
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - PHPSESSID=tn0e9a9bvkbkhr4l391u87ipt2; path=/; secure; HttpOnly
+      Vary:
+      - Accept-Encoding,User-Agent
+      Content-Type:
+      - text/html; charset=UTF-8
+      Via:
+      - 1.1 stark
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"stats":{"market":"BTC","bid":6000,"ask":8998,"last_price":6000,"last_transaction_type":"SELL","last_transaction_currency":"USD","daily_change":-2999,"daily_change_percent":-49.98,"max":6000,"min":6000,"open":8999,"market_cap":111478159123,"global_units":17207187,"global_volume":6694753348,"24h_volume":1.60842,"24h_volume_buy":0,"24h_volume_sell":1.60842,"1h_volume":0,"1h_volume_buy":0,"1h_volume_sell":0,"currency":"USD"}}'
+    http_version: 
+  recorded_at: Fri, 17 Aug 2018 18:59:48 GMT
+recorded_with: VCR 4.0.0

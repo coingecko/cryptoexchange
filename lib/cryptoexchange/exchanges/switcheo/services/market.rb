@@ -14,33 +14,31 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Switcheo::Market::API_URL}/v1/trades/tickers"
+          "#{Cryptoexchange::Exchanges::Switcheo::Market::API_URL}/v2/tickers/last_24_hours"
         end
 
         def adapt_all(output)
-          output.map do |pair|
-            base, target = pair['symbol'].split('_')
+          output.map do |ticker|
+            base, target = ticker['pair'].split("_")
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
               market: Switcheo::Market::NAME
             )
-            adapt(pair, market_pair)
+            adapt(ticker, market_pair)
           end
         end
 
         def adapt(output, market_pair)
-          ticker = Cryptoexchange::Models::Ticker.new
+          ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Switcheo::Market::NAME
-          ticker.ask       = NumericHelper.to_d(output['ask_price'])
-          ticker.bid       = NumericHelper.to_d(output['bid_price'])
-          ticker.last      = NumericHelper.to_d(output['last_price'])
-          ticker.high      = NumericHelper.to_d(output['high_price'])
-          ticker.low       = NumericHelper.to_d(output['low_price'])
+          ticker.last      = NumericHelper.to_d(output['close'])
+          ticker.high      = NumericHelper.to_d(output['high'])
+          ticker.low       = NumericHelper.to_d(output['low'])
           ticker.volume    = NumericHelper.to_d(output['quote_volume'])
-          ticker.timestamp = output['close_time']
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end
@@ -48,3 +46,4 @@ module Cryptoexchange::Exchanges
     end
   end
 end
+

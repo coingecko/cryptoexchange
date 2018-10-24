@@ -21,6 +21,8 @@ module Cryptoexchange::Exchanges
           timestamp = output['data']['date'] / 1000
           output['data']['ticker'].map do |pair, market|
             separator = Cryptoexchange::Exchanges::Coinex::Market::SEPARATOR_REGEX =~ pair
+            next if separator.nil?
+
             base = pair[0..separator - 1]
             target = pair[separator..-1]
             market_pair = Cryptoexchange::Models::MarketPair.new(
@@ -29,7 +31,7 @@ module Cryptoexchange::Exchanges
                            market: Coinex::Market::NAME
                          )
             adapt(market, market_pair, timestamp)
-          end
+          end.compact
         end
 
         def adapt(output, market_pair, timestamp)

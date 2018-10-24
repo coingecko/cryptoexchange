@@ -25,7 +25,7 @@ module Cryptoexchange::Exchanges
           order_book.market    = Cobinhood::Market::NAME
           order_book.asks      = adapt_orders output["result"]["orderbook"]['asks']
           order_book.bids      = adapt_orders output["result"]["orderbook"]['bids']
-          order_book.timestamp = DateTime.now.to_time.to_i
+          order_book.timestamp = nil
           order_book.payload   = output
           order_book
         end
@@ -35,7 +35,7 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::Order.new \
               price: price,
               amount: amount,
-              timestamp: DateTime.now.to_time.to_i
+              timestamp: nil
           end
         end
       end

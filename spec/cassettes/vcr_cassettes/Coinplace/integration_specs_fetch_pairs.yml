@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coinplace.pro/share/ticker.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinplace.pro
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Sep 2018 17:05:10 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '6920'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dfb4004f013108050b959b262ac72e69b1536858310; expires=Fri, 13-Sep-19
+        17:05:10 GMT; path=/; domain=.coinplace.pro; HttpOnly; Secure
+      Last-Modified:
+      - Thu, 13 Sep 2018 17:04:18 GMT
+      Etag:
+      - '"5b9a9892-1b08"'
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 459c327a5d151147-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"BTC_LRC":{"last":"0.00001726","lowestAsk":"0.0000191","highestBid":"0.000015","percentChange":"-0.1765095419","quoteVolume":"0.05140366","high24hr":"0.00001851","low24hr":"0.00001501"},"BTC_CPL":{"last":"0.00000645","lowestAsk":"0.0000077","highestBid":"0.00000635","percentChange":"3.5135476625","quoteVolume":"0.02302386","high24hr":"0.00000769","low24hr":"0.0000064"},"ETH_CPL":{"last":"0.00033668","lowestAsk":"0.0003769","highestBid":"0.000295","percentChange":"3.7619047619","quoteVolume":"0.21282161","high24hr":"0.0003765","low24hr":"0.00014271"},"BTC_AION":{"last":"0.00007603","lowestAsk":"0.00009105","highestBid":"0.00007102","percentChange":"-0.2045721325","quoteVolume":"0.04218747","high24hr":"0.00009099","low24hr":"0.00007129"},"BTC_SNT":{"last":"0.00000588","lowestAsk":"0.0000069","highestBid":"0.0000052","percentChange":"-0.1361723616","quoteVolume":"0.02277481","high24hr":"0.0000069","low24hr":"0.0000053"},"BTC_IOTX":{"last":"0.00000164","lowestAsk":"0.00000198","highestBid":"0.00000141","percentChange":"0.0926365796","quoteVolume":"0.03996922","high24hr":"0.00000186","low24hr":"0.00000148"},"BTC_ICX":{"last":"0.00010823","lowestAsk":"0.000114","highestBid":"0.0000909","percentChange":"-0.0596618695","quoteVolume":"0.04328394","high24hr":"0.00011387","low24hr":"0.00009121"},"BTC_BNB":{"last":"0.00145378","lowestAsk":"0.0017786","highestBid":"0.0013838","percentChange":"-0.1629926403","quoteVolume":"2.27607013","high24hr":"0.00177592","low24hr":"0.00138461"},"ETH_BNB":{"last":"0","lowestAsk":"0.03815","highestBid":"0.03102","percentChange":"0","quoteVolume":"0","high24hr":"0","low24hr":"0"},"BTC_GNT":{"last":"0.00002294","lowestAsk":"0.00002572","highestBid":"0.00002043","percentChange":"-0.0701696513","quoteVolume":"0.07351758","high24hr":"0.00002571","low24hr":"0.00002053"},"BTC_AE":{"last":"0.00017927","lowestAsk":"0.0001848","highestBid":"0.0001505","percentChange":"-0.0875837892","quoteVolume":"0.08227903","high24hr":"0.00018471","low24hr":"0.00015152"},"BTC_VEN":{"last":"0.00013872","lowestAsk":"0","highestBid":"0","percentChange":"0.7235149942","quoteVolume":"0","high24hr":"0","low24hr":"0"},"BTC_ZIL":{"last":"0.00000608","lowestAsk":"0.00000615","highestBid":"0.000005","percentChange":"-0.0697391304","quoteVolume":"0.05177162","high24hr":"0.00000613","low24hr":"0.00000509"},"BTC_MFT":{"last":"0.00000085","lowestAsk":"0","highestBid":"0.00000085","percentChange":"0.0694117647","quoteVolume":"0","high24hr":"0","low24hr":"0"},"BTC_QKC":{"last":"0.00000401","lowestAsk":"0.00000471","highestBid":"0.00000377","percentChange":"0.107050173","quoteVolume":"0.02007695","high24hr":"0.00000471","low24hr":"0.00000377"},"BTC_ELF":{"last":"0.00006158","lowestAsk":"0.00006893","highestBid":"0.00005317","percentChange":"-0.200326859","quoteVolume":"0.08211657","high24hr":"0.0000685","low24hr":"0.0000532"},"BTC_RHOC":{"last":"0.00005956","lowestAsk":"0.0000725","highestBid":"0.0000583","percentChange":"-0.4349208378","quoteVolume":"0.03956737","high24hr":"0.00007235","low24hr":"0.0000583"},"BTC_CTX":{"last":"0.0000005","lowestAsk":"0.00000057","highestBid":"0.0000004","percentChange":"-0.0375586854","quoteVolume":"0.02712088","high24hr":"0.00000056","low24hr":"0.0000004"},"BTC_OMG":{"last":"0.00059636","lowestAsk":"0.0006976","highestBid":"0.0005516","percentChange":"-0.2059053093","quoteVolume":"3.27338914","high24hr":"0.00069726","low24hr":"0.00055188"},"BTC_ABYSS":{"last":"0.00000335","lowestAsk":"0.00000393","highestBid":"0.0000017","percentChange":"-0.4875283447","quoteVolume":"0.031686","high24hr":"0.00000359","low24hr":"0.00000204"},"BTC_PPT":{"last":"0.00075254","lowestAsk":"0.00086146","highestBid":"0.0007072","percentChange":"-0.2978992718","quoteVolume":"0.05583034","high24hr":"0.00084752","low24hr":"0.00070739"},"BTC_ZRX":{"last":"0.00013084","lowestAsk":"0.000135","highestBid":"0.000106","percentChange":"-0.284112656","quoteVolume":"0.06270148","high24hr":"0.00013477","low24hr":"0.00010625"},"ETH_ZRX":{"last":"0.00263948","lowestAsk":"0.00277","highestBid":"0.0022","percentChange":"-0.0009376865","quoteVolume":"0","high24hr":"0","low24hr":"0"},"BTC_DGD":{"last":"0.00817475","lowestAsk":"0.009614","highestBid":"0.007695","percentChange":"-0.3393977797","quoteVolume":"0.04394477","high24hr":"0.00957169","low24hr":"0.00769698"},"BTC_IOST":{"last":"0.00000226","lowestAsk":"0.00000252","highestBid":"0.00000195","percentChange":"-0.2388561817","quoteVolume":"0.05915841","high24hr":"0.00000245","low24hr":"0.00000201"},"BTC_MKR":{"last":"0.07133","lowestAsk":"0.075","highestBid":"0.06032","percentChange":"-0.2406074806","quoteVolume":"0.02005843","high24hr":"0.07459501","low24hr":"0.06042533"},"BTC_SOFIN":{"last":"0.00006092","lowestAsk":"0.000047","highestBid":"0","percentChange":"0.0078626418","quoteVolume":"0","high24hr":"0","low24hr":"0"},"ETH_SOFIN":{"last":"0","lowestAsk":"0.0013524","highestBid":"0","percentChange":"0","quoteVolume":"0","high24hr":"0","low24hr":"0"},"BTC_REP":{"last":"0.00260546","lowestAsk":"0.00315","highestBid":"0.00255","percentChange":"-0.1851643132","quoteVolume":"0.1558955","high24hr":"0.0031182","low24hr":"0.00256085"},"BTC_ETD":{"last":"0.00001753","lowestAsk":"0","highestBid":"0","percentChange":"0.3149489534","quoteVolume":"0","high24hr":"0","low24hr":"0"},"BTC_TNS":{"last":"0.00000067","lowestAsk":"0","highestBid":"0.00000065","percentChange":"-0.0195195195","quoteVolume":"0","high24hr":"0","low24hr":"0"},"BTC_HT":{"last":"0.00030845","lowestAsk":"0.0003242","highestBid":"0.0002612","percentChange":"-0.165690186","quoteVolume":"0.06843734","high24hr":"0.0003239","low24hr":"0.00026355"},"BTC_TUSD":{"last":"0.00013869","lowestAsk":"0.00013994","highestBid":"0.00013493","percentChange":"0.1359611414","quoteVolume":"0.08402876","high24hr":"0.00013979","low24hr":"0.00013518"},"BTC_BIX":{"last":"0.00006571","lowestAsk":"0.0000732","highestBid":"0.0000621","percentChange":"0.0209733402","quoteVolume":"0.03582966","high24hr":"0.00007314","low24hr":"0.00006221"},"BTC_GIG9":{"last":"0","lowestAsk":"0.000015","highestBid":"0","percentChange":"0","quoteVolume":"0","high24hr":"0","low24hr":"0"},"BTC_CMA":{"last":"0","lowestAsk":"0.0000002","highestBid":"0","percentChange":"0","quoteVolume":"0","high24hr":"0","low24hr":"0"},"ETH_CMA":{"last":"0","lowestAsk":"0","highestBid":"0.00000948","percentChange":"0","quoteVolume":"0","high24hr":"0","low24hr":"0"},"BTC_ETA":{"last":"0","lowestAsk":"0.000001","highestBid":"0","percentChange":"0","quoteVolume":"0","high24hr":"0","low24hr":"0"},"ETH_ETA":{"last":"0","lowestAsk":"0.00002","highestBid":"0","percentChange":"0","quoteVolume":"0","high24hr":"0","low24hr":"0"},"BTC_ZPAY":{"last":"0","lowestAsk":"0.00004","highestBid":"0","percentChange":"0","quoteVolume":"0","high24hr":"0","low24hr":"0"},"ETH_ZPAY":{"last":"0","lowestAsk":"0.0011","highestBid":"0","percentChange":"0","quoteVolume":"0","high24hr":"0","low24hr":"0"}}'
+    http_version: 
+  recorded_at: Thu, 13 Sep 2018 17:05:10 GMT
+recorded_with: VCR 4.0.0

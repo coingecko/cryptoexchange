@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.oax.com/api/market/getTrades?market=ETH/BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.oax.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 27 Sep 2018 17:05:31 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"code":"1","success":true,"msg":null,"data":[{"id":2060882,"amount":0.00139017,"qty":0.041500000000000000,"price":0.033498000000000000,"type":"buy","createTime":"2018-09-28
+        01:04:23","createTimeMs":1538067863000},{"id":2060851,"amount":0.00720726,"qty":0.215200000000000000,"price":0.033491000000000000,"type":"sell","createTime":"2018-09-28
+        01:03:05","createTimeMs":1538067785000},{"id":2060807,"amount":0.01441453,"qty":0.430400000000000000,"price":0.033491000000000000,"type":"sell","createTime":"2018-09-28
+        01:01:47","createTimeMs":1538067707000},{"id":2060794,"amount":0.00332141,"qty":0.099200000000000000,"price":0.033482000000000000,"type":"buy","createTime":"2018-09-28
+        01:01:34","createTimeMs":1538067694000},{"id":2060790,"amount":0.01007139,"qty":0.300800000000000000,"price":0.033482000000000000,"type":"buy","createTime":"2018-09-28
+        01:01:32","createTimeMs":1538067692000},{"id":2060788,"amount":0.00810240,"qty":0.242000000000000000,"price":0.033481000000000000,"type":"buy","createTime":"2018-09-28
+        01:01:31","createTimeMs":1538067691000},{"id":2060786,"amount":0.00191506,"qty":0.057200000000000000,"price":0.033480000000000000,"type":"buy","createTime":"2018-09-28
+        01:01:31","createTimeMs":1538067691000},{"id":2060757,"amount":0.00008367,"qty":0.002500000000000000,"price":0.033466000000000000,"type":"sell","createTime":"2018-09-28
+        01:00:03","createTimeMs":1538067603000},{"id":2060696,"amount":0.01127036,"qty":0.336700000000000000,"price":0.033473000000000000,"type":"buy","createTime":"2018-09-28
+        00:59:11","createTimeMs":1538067551000},{"id":2060694,"amount":0.01004130,"qty":0.300000000000000000,"price":0.033471000000000000,"type":"buy","createTime":"2018-09-28
+        00:59:10","createTimeMs":1538067550000},{"id":2060647,"amount":0.00001004,"qty":0.000300000000000000,"price":0.033455000000000000,"type":"sell","createTime":"2018-09-28
+        00:58:18","createTimeMs":1538067498000},{"id":2060607,"amount":0.00016732,"qty":0.005000000000000000,"price":0.033464000000000000,"type":"sell","createTime":"2018-09-28
+        00:57:00","createTimeMs":1538067420000},{"id":2060565,"amount":0.00016732,"qty":0.005000000000000000,"price":0.033463000000000000,"type":"sell","createTime":"2018-09-28
+        00:55:03","createTimeMs":1538067303000},{"id":2060519,"amount":0.00668131,"qty":0.199800000000000000,"price":0.033440000000000000,"type":"sell","createTime":"2018-09-28
+        00:53:32","createTimeMs":1538067212000},{"id":2060478,"amount":0.01003620,"qty":0.300000000000000000,"price":0.033454000000000000,"type":"buy","createTime":"2018-09-28
+        00:52:00","createTimeMs":1538067120000},{"id":2060407,"amount":0.00829684,"qty":0.248000000000000000,"price":0.033455000000000000,"type":"sell","createTime":"2018-09-28
+        00:50:39","createTimeMs":1538067039000},{"id":2060399,"amount":0.02114356,"qty":0.632000000000000000,"price":0.033455000000000000,"type":"sell","createTime":"2018-09-28
+        00:50:36","createTimeMs":1538067036000},{"id":2060397,"amount":0.00354665,"qty":0.106000000000000000,"price":0.033459000000000000,"type":"sell","createTime":"2018-09-28
+        00:50:36","createTimeMs":1538067036000},{"id":2060395,"amount":0.00354676,"qty":0.106000000000000000,"price":0.033460000000000000,"type":"sell","createTime":"2018-09-28
+        00:50:36","createTimeMs":1538067036000},{"id":2060393,"amount":0.00100386,"qty":0.030000000000000000,"price":0.033462000000000000,"type":"sell","createTime":"2018-09-28
+        00:50:36","createTimeMs":1538067036000},{"id":2060391,"amount":0.00087004,"qty":0.026000000000000000,"price":0.033463000000000000,"type":"sell","createTime":"2018-09-28
+        00:50:36","createTimeMs":1538067036000},{"id":2060385,"amount":0.00267704,"qty":0.080000000000000000,"price":0.033463000000000000,"type":"sell","createTime":"2018-09-28
+        00:50:33","createTimeMs":1538067033000},{"id":2060383,"amount":0.00736208,"qty":0.220000000000000000,"price":0.033464000000000000,"type":"sell","createTime":"2018-09-28
+        00:50:33","createTimeMs":1538067033000},{"id":2060366,"amount":0.00069306,"qty":0.020700000000000000,"price":0.033481000000000000,"type":"buy","createTime":"2018-09-28
+        00:50:03","createTimeMs":1538067003000},{"id":2060306,"amount":0.00013389,"qty":0.004000000000000000,"price":0.033472000000000000,"type":"buy","createTime":"2018-09-28
+        00:48:06","createTimeMs":1538066886000},{"id":2060281,"amount":0.01157958,"qty":0.346000000000000000,"price":0.033467000000000000,"type":"sell","createTime":"2018-09-28
+        00:46:35","createTimeMs":1538066795000},{"id":2060230,"amount":0.00984900,"qty":0.294000000000000000,"price":0.033500000000000000,"type":"buy","createTime":"2018-09-28
+        00:45:04","createTimeMs":1538066704000},{"id":2060167,"amount":0.00781057,"qty":0.233200000000000000,"price":0.033493000000000000,"type":"sell","createTime":"2018-09-28
+        00:43:19","createTimeMs":1538066599000},{"id":2060058,"amount":0.00033476,"qty":0.010000000000000000,"price":0.033476000000000000,"type":"buy","createTime":"2018-09-28
+        00:41:40","createTimeMs":1538066500000},{"id":2060056,"amount":0.00288881,"qty":0.086300000000000000,"price":0.033474000000000000,"type":"buy","createTime":"2018-09-28
+        00:41:40","createTimeMs":1538066500000},{"id":2060054,"amount":0.01171185,"qty":0.349900000000000000,"price":0.033472000000000000,"type":"buy","createTime":"2018-09-28
+        00:41:40","createTimeMs":1538066500000}]}'
+    http_version: 
+  recorded_at: Thu, 27 Sep 2018 17:05:31 GMT
+recorded_with: VCR 4.0.0

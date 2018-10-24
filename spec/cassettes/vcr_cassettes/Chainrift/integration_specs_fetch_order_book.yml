@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.chainrift.com/v1/Public/GetOrderBook?symbol=EOS/BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.chainrift.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 22 Aug 2018 01:36:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSALB=HW7DB174cHKtsE9q7Z9/5Mbu43xaJ4PINWMnOCMXckgFmeHQFoFoz95WEvHpoNe2JeuBcurqhk2CrQImNkqsxHSwL2Rml/UpXTOxFsVmRnv+r+pjK7nHUd6XxCi7;
+        Expires=Wed, 29 Aug 2018 01:36:15 GMT; Path=/
+      - __cfduid=d81da78fe1657867d02501df989a6a54c1534901774; expires=Thu, 22-Aug-19
+        01:36:14 GMT; path=/; domain=.chainrift.com; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 44e19b79c99a30f6-SIN
+    body:
+      encoding: UTF-8
+      string: '{"pair":"EOS/BTC","success":true,"data":[{"quantity":0.14930212,"price":0.00074098,"type":"Buy"},{"quantity":98.54708081,"price":0.00073951,"type":"Buy"},{"quantity":13.66171655,"price":0.00073810,"type":"Buy"},{"quantity":0.19229824,"price":0.00073641,"type":"Buy"},{"quantity":0.16640817,"price":0.00073071,"type":"Buy"},{"quantity":256.20103852,"price":0.00073028,"type":"Buy"},{"quantity":41.17029147,"price":0.00073006,"type":"Buy"},{"quantity":0.21654361,"price":0.00072969,"type":"Buy"},{"quantity":0.21504617,"price":0.00072516,"type":"Buy"},{"quantity":67.95965811,"price":0.00072506,"type":"Buy"},{"quantity":0.25634062,"price":0.00071832,"type":"Buy"},{"quantity":141.95938913,"price":0.00071658,"type":"Buy"},{"quantity":285.34215623,"price":0.00071578,"type":"Buy"},{"quantity":0.19367727,"price":0.00071105,"type":"Buy"},{"quantity":186.34586046,"price":0.00070572,"type":"Buy"},{"quantity":129.96284169,"price":0.00070455,"type":"Buy"},{"quantity":0.15026286,"price":0.00070187,"type":"Buy"},{"quantity":0.18325715,"price":0.00070150,"type":"Buy"},{"quantity":0.15613435,"price":0.00070006,"type":"Buy"},{"quantity":93.05581936,"price":0.00069952,"type":"Buy"},{"quantity":306.43249166,"price":0.00069879,"type":"Buy"},{"quantity":0.18322373,"price":0.00069743,"type":"Buy"},{"quantity":0.76617798,"price":0.00069658,"type":"Buy"},{"quantity":257.36115558,"price":0.00069439,"type":"Buy"},{"quantity":227.99262491,"price":0.00069389,"type":"Buy"},{"quantity":130.19768705,"price":0.00078759,"type":"Sell"},{"quantity":222.47694386,"price":0.00079239,"type":"Sell"},{"quantity":117.88523286,"price":0.00079625,"type":"Sell"},{"quantity":49.58091826,"price":0.00079895,"type":"Sell"},{"quantity":3.76623138,"price":0.00080283,"type":"Sell"},{"quantity":23.76828297,"price":0.00080624,"type":"Sell"},{"quantity":91.31288331,"price":0.00080937,"type":"Sell"},{"quantity":156.04049719,"price":0.00081344,"type":"Sell"},{"quantity":200.76040044,"price":0.00081398,"type":"Sell"},{"quantity":60.24939592,"price":0.00081821,"type":"Sell"},{"quantity":23.08563831,"price":0.00082547,"type":"Sell"},{"quantity":149.86442374,"price":0.00083060,"type":"Sell"},{"quantity":6.97635749,"price":0.00083639,"type":"Sell"},{"quantity":4.53865671,"price":0.00083796,"type":"Sell"},{"quantity":8.12231211,"price":0.00083887,"type":"Sell"},{"quantity":113.30579575,"price":0.00084626,"type":"Sell"},{"quantity":8.93618730,"price":0.00084873,"type":"Sell"},{"quantity":189.22915340,"price":0.00084987,"type":"Sell"},{"quantity":100.00216587,"price":0.00085737,"type":"Sell"},{"quantity":13.40042363,"price":0.00085778,"type":"Sell"},{"quantity":242.92392675,"price":0.00086003,"type":"Sell"},{"quantity":2.98655409,"price":0.00086174,"type":"Sell"},{"quantity":4.56830161,"price":0.00086211,"type":"Sell"},{"quantity":1.31714547,"price":0.00086607,"type":"Sell"},{"quantity":189.42346809,"price":0.00086873,"type":"Sell"}],"method":"Public/GetOrderBook"}'
+    http_version: 
+  recorded_at: Wed, 22 Aug 2018 01:36:15 GMT
+recorded_with: VCR 4.0.0

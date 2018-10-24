@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'RadarRelay integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:dai_weth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'dai', target: 'weth', market: 'radar_relay') }
+  let(:bat_weth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BAT', target: 'WETH', market: 'radar_relay') }
 
   it 'fetch pairs' do
     pairs = client.pairs('radar_relay')
@@ -14,17 +14,22 @@ RSpec.describe 'RadarRelay integration specs' do
     expect(pair.market).to eq 'radar_relay'
   end
 
-  it 'fetch ticker' do
-    ticker = client.ticker(dai_weth_pair)
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'radar_relay', base: bat_weth_pair.base, target: bat_weth_pair.target
+    expect(trade_page_url).to eq "https://app.radarrelay.com/BAT/WETH"
+  end
 
-    expect(ticker.base).to eq 'DAI'
+  it 'fetch ticker' do
+    ticker = client.ticker(bat_weth_pair)
+
+    expect(ticker.base).to eq 'BAT'
     expect(ticker.target).to eq 'WETH'
     expect(ticker.market).to eq 'radar_relay'
     expect(ticker.last).to be_a Numeric
-    puts ticker.last.to_f
     expect(ticker.last).to be < 100 # Test if number is reasonable
-    expect(ticker.high).to be_a Numeric
-    expect(ticker.low).to be_a Numeric
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.ask).to be_a Numeric
+    expect(ticker.change).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be_a Numeric
     expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)

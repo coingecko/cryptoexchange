@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coinsbank.com/sapi/head
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinsbank.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 02 Aug 2018 16:10:33 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d9624eeb019de743bc5af37647a77ddc01533226231; expires=Fri, 02-Aug-19
+        16:10:31 GMT; path=/; domain=.coinsbank.com; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4441d0ac5c872cf3-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"balance":null,"baseBalance":null,"baseCurrency":null,"currencies":["BTC","LTC","EUR","USD","GBP","JPY","AUD","CHF","RUB","XRP","ETH"],"languages":[{"id":"1","name":"English","code":"en"}],"notifications":null,"operations":null,"orders":null,"pairs":[{"pair_code":"BTCUSD","base_code":"BTC","quote_code":"USD","lot":"0.00010000","rate":"0.01000000"},{"pair_code":"BTCGBP","base_code":"BTC","quote_code":"GBP","lot":"0.00010000","rate":"0.01000000"},{"pair_code":"BTCEUR","base_code":"BTC","quote_code":"EUR","lot":"0.00010000","rate":"0.01000000"},{"pair_code":"LTCEUR","base_code":"LTC","quote_code":"EUR","lot":"0.00100000","rate":"0.00001000"},{"pair_code":"LTCUSD","base_code":"LTC","quote_code":"USD","lot":"0.00100000","rate":"0.00001000"},{"pair_code":"LTCBTC","base_code":"LTC","quote_code":"BTC","lot":"0.00100000","rate":"0.00001000"},{"pair_code":"LTCGBP","base_code":"LTC","quote_code":"GBP","lot":"0.00100000","rate":"0.00001000"},{"pair_code":"EURGBP","base_code":"EUR","quote_code":"GBP","lot":"0.00100000","rate":"0.00001000"},{"pair_code":"EURUSD","base_code":"EUR","quote_code":"USD","lot":"0.00100000","rate":"0.00001000"},{"pair_code":"GBPUSD","base_code":"GBP","quote_code":"USD","lot":"0.00100000","rate":"0.00001000"},{"pair_code":"EURRUB","base_code":"EUR","quote_code":"RUB","lot":"0.00100000","rate":"0.00001000"},{"pair_code":"XRPUSD","base_code":"XRP","quote_code":"USD","lot":"0.00100000","rate":"0.00001000"},{"pair_code":"XRPEUR","base_code":"XRP","quote_code":"EUR","lot":"0.00100000","rate":"0.00001000"},{"pair_code":"XRPBTC","base_code":"XRP","quote_code":"BTC","lot":"1.00000000","rate":"0.00000001"},{"pair_code":"ETHUSD","base_code":"ETH","quote_code":"USD","lot":"0.00100000","rate":"0.00001000"},{"pair_code":"ETHEUR","base_code":"ETH","quote_code":"EUR","lot":"0.00100000","rate":"0.00001000"},{"pair_code":"ETHBTC","base_code":"ETH","quote_code":"BTC","lot":"0.10000000","rate":"0.00000010"}],"profile":null,"verification":null,"rates":{"BTCUSD":"7573.0300","BTCGBP":"5785.9800","BTCEUR":"6457.0100","LTCEUR":"65.4663","LTCUSD":"76.1545","LTCBTC":"0.0101","LTCGBP":"58.4409","EURGBP":"0.89","EURUSD":"1.17","GBPUSD":"1.30","EURRUB":"73.68","XRPUSD":"0.4339","XRPEUR":"0.3728","XRPBTC":"0.0001","ETHUSD":"411.5790","ETHEUR":"353.6315","ETHBTC":"0.0547"},"country_ip":"MY","newsLiner":[],"smsCommission":0.1,"freeze":null,"corporate":null,"cpyAvailable":null,"ratesChanges":{"BTCUSD":-0.6799,"BTCGBP":-0.2186,"BTCEUR":-1.1137,"LTCEUR":-1.2752,"LTCUSD":-1.8093,"LTCBTC":-0.7835,"LTCGBP":-1.2287,"EURGBP":0.6238,"EURUSD":-0.0685,"GBPUSD":-0.9883,"EURRUB":0.3167,"XRPUSD":-3.6305,"XRPEUR":-3.4126,"XRPBTC":-2.6342,"ETHUSD":-2.5241,"ETHEUR":-2.034,"ETHBTC":-1.4097},"freezeCurrency":null,"withdrawalsLiner":null,"rippleAddress":"rhvXPd5koNrifWhwhReKJvapd2ihbCewE3","tickets":null}'
+    http_version: 
+  recorded_at: Thu, 02 Aug 2018 16:10:33 GMT
+recorded_with: VCR 4.0.0

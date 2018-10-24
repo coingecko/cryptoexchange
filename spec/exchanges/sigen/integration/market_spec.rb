@@ -14,6 +14,11 @@ RSpec.describe 'Sigen integration specs' do
     expect(pair.market).to eq 'sigen'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'sigen', base: spa_btc_pair.base, target: spa_btc_pair.target
+    expect(trade_page_url).to eq "https://sigen.pro/trading/SPABTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(spa_btc_pair)
 
@@ -29,8 +34,8 @@ RSpec.describe 'Sigen integration specs' do
     expect(ticker.high).to be_a Numeric
     expect(ticker.low).to be_a Numeric
 
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
+    
     expect(ticker.payload).to_not be nil
   end
 end

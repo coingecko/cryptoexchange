@@ -15,6 +15,11 @@ RSpec.describe 'OreBz integration specs' do
     expect(pair.market).to eq 'ore_bz'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'ore_bz', base: gbc_usd_pair.base, target: gbc_usd_pair.target
+    expect(trade_page_url).to eq "https://ore.bz/markets/GBCUSD"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(gbc_usd_pair)
 

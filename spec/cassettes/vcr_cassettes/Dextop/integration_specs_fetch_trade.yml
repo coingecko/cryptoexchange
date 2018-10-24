@@ -1,0 +1,114 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://dex.top/v1/tradehistory/ETH_SNT/3
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - dex.top
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Server:
+      - openresty/1.13.6.1
+      Date:
+      - Sun, 22 Jul 2018 20:19:05 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '191'
+      Connection:
+      - close
+      Location:
+      - https://dex.top/v1/tradehistory/ETH_SNT/3
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - origin
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>openresty/1.13.6.1</center>\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Sun, 22 Jul 2018 20:19:05 GMT
+- request:
+    method: get
+    uri: https://dex.top/v1/tradehistory/ETH_SNT/3
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/3.0.0
+      Host:
+      - dex.top
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 22 Jul 2018 20:19:05 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '581'
+      Connection:
+      - close
+      Grpc-Metadata-Content-Type:
+      - application/grpc
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - origin
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "records": [
+            {
+              "pairId": "ETH_SNT",
+              "timeMs": "1532290090372",
+              "action": "Sell",
+              "price": "0.00015871",
+              "amount": "3643.88321325",
+              "value": "0.57832070"
+            },
+            {
+              "pairId": "ETH_SNT",
+              "timeMs": "1532289068353",
+              "action": "Buy",
+              "price": "0.00015836",
+              "amount": "3470.21123781",
+              "value": "0.54954265"
+            },
+            {
+              "pairId": "ETH_SNT",
+              "timeMs": "1532288133170",
+              "action": "Sell",
+              "price": "0.00015835",
+              "amount": "4678.04811045",
+              "value": "0.74076891"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 22 Jul 2018 20:19:05 GMT
+recorded_with: VCR 4.0.0

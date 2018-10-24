@@ -14,6 +14,11 @@ RSpec.describe 'Neraex integration specs' do
     expect(pair.market).to eq 'neraex'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'neraex', base: btc_jpy_pair.base, target: btc_jpy_pair.target
+    expect(trade_page_url).to eq "https://neraex.pro/markets/btcjpy"
+  end
+
   it 'fetch pairs and assign the correct base/target' do
     pairs = client.pairs('neraex')
     expect(pairs).not_to be_empty

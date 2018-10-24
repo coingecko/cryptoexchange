@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://trade.alluma.io/server/misc/all_ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - trade.alluma.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 24 Oct 2018 04:09:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0e0abb7cadd433fe1daa82ddd3b363fe1540354160; expires=Thu, 24-Oct-19
+        04:09:20 GMT; path=/; domain=.alluma.io; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 46e996614a572ccf-KUL
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"OMSId":1,"InstrumentId":75,"BestBid":0,"BestOffer":11.3,"LastTradedPx":10.95,"LastTradedQty":498.076,"LastTradeTime":1538986394743,"SessionOpen":10.91,"SessionHigh":11.3,"SessionLow":10.9,"SessionClose":11.29568999,"Volume":498.076,"CurrentDayVolume":1919.474,"CurrentDayNumTrades":8,"CurrentDayPxChange":-0.34568999,"Rolling24HrVolume":1919.474,"Rolling24NumTrades":8,"Rolling24HrPxChange":0.36663611365719523,"TimeStamp":"1538986394743","Instrument":"ETCTUSD","hidePair":false,"auditVisible":true,"base":"TUSD","target":"ETC"},{"OMSId":1,"InstrumentId":71,"BestBid":439.12757241,"BestOffer":443.41402826,"LastTradedPx":436.95663338,"LastTradedQty":0.00001,"LastTradeTime":1540318655992,"SessionOpen":436.95663338,"SessionHigh":436.95663338,"SessionLow":436.95663338,"SessionClose":443.5,"Volume":0.00001,"CurrentDayVolume":0,"CurrentDayNumTrades":0,"CurrentDayPxChange":0,"Rolling24HrVolume":0,"Rolling24NumTrades":0,"Rolling24HrPxChange":0,"TimeStamp":"1540318655992","Instrument":"BCHTUSD","hidePair":false,"auditVisible":true,"base":"TUSD","target":"BCH"},{"OMSId":1,"InstrumentId":59,"BestBid":0.00011344,"BestOffer":0.00011378,"LastTradedPx":0.00011427,"LastTradedQty":1182.4,"LastTradeTime":1540354159277,"SessionOpen":0.00011092,"SessionHigh":0.00011489,"SessionLow":0.00011032,"SessionClose":0.00011103,"Volume":1182.4,"CurrentDayVolume":3751713.42202574,"CurrentDayNumTrades":4458,"CurrentDayPxChange":0.00000324,"Rolling24HrVolume":21464139.36844046,"Rolling24NumTrades":25433,"Rolling24HrPxChange":2.825519661657518,"TimeStamp":"1540354159277","Instrument":"FUELETH","hidePair":false,"auditVisible":true,"base":"ETH","target":"FUEL"},{"OMSId":1,"InstrumentId":25,"BestBid":0.00000357,"BestOffer":0.00000364,"LastTradedPx":0.00000364,"LastTradedQty":217.42,"LastTradeTime":1540354159082,"SessionOpen":0.00000351,"SessionHigh":0.00000369,"SessionLow":0.00000348,"SessionClose":0.00000354,"Volume":217.42,"CurrentDayVolume":1178343.21661738,"CurrentDayNumTrades":6491,"CurrentDayPxChange":1e-7,"Rolling24HrVolume":6929915.47033854,"Rolling24NumTrades":38259,"Rolling24HrPxChange":4.2979942693409745,"TimeStamp":"1540354159082","Instrument":"FUELBTC","hidePair":false,"auditVisible":true,"base":"BTC","target":"FUEL"},{"OMSId":1,"InstrumentId":68,"BestBid":6375.10090669,"BestOffer":6434.23376877,"LastTradedPx":6417.48517835,"LastTradedQty":0.00001949,"LastTradeTime":1540305332203,"SessionOpen":6417.48517835,"SessionHigh":6417.48517835,"SessionLow":6417.48517835,"SessionClose":6403.5,"Volume":0.00001949,"CurrentDayVolume":0,"CurrentDayNumTrades":0,"CurrentDayPxChange":0,"Rolling24HrVolume":0,"Rolling24NumTrades":0,"Rolling24HrPxChange":0,"TimeStamp":"1540305332203","Instrument":"BTCTUSD","hidePair":false,"auditVisible":true,"base":"TUSD","target":"BTC"},{"OMSId":1,"InstrumentId":74,"BestBid":51.86363503,"BestOffer":52.35301023,"LastTradedPx":52.29437482,"LastTradedQty":0.0001,"LastTradeTime":1539708653940,"SessionOpen":52.87933257,"SessionHigh":52.87933257,"SessionLow":52.29437482,"SessionClose":53.465,"Volume":0.0001,"CurrentDayVolume":0,"CurrentDayNumTrades":0,"CurrentDayPxChange":0,"Rolling24HrVolume":0,"Rolling24NumTrades":0,"Rolling24HrPxChange":0,"TimeStamp":"1539708653956","Instrument":"LTCTUSD","hidePair":false,"auditVisible":true,"base":"TUSD","target":"LTC"},{"OMSId":1,"InstrumentId":69,"BestBid":200.21235013,"BestOffer":202.35162265,"LastTradedPx":202.02,"LastTradedQty":1.89,"LastTradeTime":1540201275788,"SessionOpen":202,"SessionHigh":202.02,"SessionLow":202,"SessionClose":200.36914535,"Volume":1.89,"CurrentDayVolume":0,"CurrentDayNumTrades":0,"CurrentDayPxChange":0,"Rolling24HrVolume":0,"Rolling24NumTrades":0,"Rolling24HrPxChange":0,"TimeStamp":"1540201275788","Instrument":"ETHTUSD","hidePair":false,"auditVisible":true,"base":"TUSD","target":"ETH"},{"OMSId":1,"InstrumentId":72,"BestBid":0.015,"BestOffer":0.025,"LastTradedPx":0.02,"LastTradedQty":70000,"LastTradeTime":1540201640921,"SessionOpen":0.02,"SessionHigh":0.02,"SessionLow":0.02,"SessionClose":0.015,"Volume":70000,"CurrentDayVolume":170000,"CurrentDayNumTrades":2,"CurrentDayPxChange":0.005,"Rolling24HrVolume":170000,"Rolling24NumTrades":2,"Rolling24HrPxChange":0,"TimeStamp":"1540201640921","Instrument":"FUELTUSD","hidePair":false,"auditVisible":true,"base":"TUSD","target":"FUEL"},{"OMSId":1,"InstrumentId":78,"BestBid":3.33838735,"BestOffer":3.37499854,"LastTradedPx":3.07103915,"LastTradedQty":0.42554144,"LastTradeTime":1539523470999,"SessionOpen":3.06434699,"SessionHigh":3.10073251,"SessionLow":3.0504162,"SessionClose":3.491,"Volume":0.42554144,"CurrentDayVolume":0,"CurrentDayNumTrades":0,"CurrentDayPxChange":0,"Rolling24HrVolume":0,"Rolling24NumTrades":0,"Rolling24HrPxChange":0,"TimeStamp":"1539523470999","Instrument":"OMGTUSD","hidePair":false,"auditVisible":true,"base":"TUSD","target":"OMG"},{"OMSId":1,"InstrumentId":12,"BestBid":0.00007105,"BestOffer":0.00007248,"LastTradedPx":0.0000719,"LastTradedQty":11.39610514,"LastTradeTime":1540354159261,"SessionOpen":0.0000715,"SessionHigh":0.00007301,"SessionLow":0.00007114,"SessionClose":0.00007224,"Volume":11.39610514,"CurrentDayVolume":157149.26922466,"CurrentDayNumTrades":6922,"CurrentDayPxChange":-3.4e-7,"Rolling24HrVolume":924752.1325008,"Rolling24NumTrades":40529,"Rolling24HrPxChange":3.0676605504587156,"TimeStamp":"1540354159277","Instrument":"XRPBTC","hidePair":false,"auditVisible":true,"base":"BTC","target":"XRP"},{"OMSId":1,"InstrumentId":6,"BestBid":0.06842123,"BestOffer":0.06869546,"LastTradedPx":0.06869491,"LastTradedQty":0.02,"LastTradeTime":1540354159277,"SessionOpen":0.06835043,"SessionHigh":0.06914217,"SessionLow":0.06814181,"SessionClose":0.0686162,"Volume":0.02,"CurrentDayVolume":37.01081616,"CurrentDayNumTrades":3124,"CurrentDayPxChange":0.00007871,"Rolling24HrVolume":208.81977874,"Rolling24NumTrades":18077,"Rolling24HrPxChange":0.5672294896091129,"TimeStamp":"1540354159292","Instrument":"BCHBTC","hidePair":false,"auditVisible":true,"base":"BTC","target":"BCH"},{"OMSId":1,"InstrumentId":5,"BestBid":0.03147624,"BestOffer":0.03153925,"LastTradedPx":0.03150771,"LastTradedQty":0.1,"LastTradeTime":1540354159277,"SessionOpen":0.03162167,"SessionHigh":0.03169069,"SessionLow":0.03146608,"SessionClose":0.03165332,"Volume":0.1,"CurrentDayVolume":293.54999402,"CurrentDayNumTrades":3410,"CurrentDayPxChange":-0.00014561,"Rolling24HrVolume":1636.60878997,"Rolling24NumTrades":18629,"Rolling24HrPxChange":-0.02310011838810674,"TimeStamp":"1540354159292","Instrument":"ETHBTC","hidePair":false,"auditVisible":true,"base":"BTC","target":"ETH"},{"OMSId":1,"InstrumentId":77,"BestBid":0.86212642,"BestOffer":0.87293835,"LastTradedPx":0.80388514,"LastTradedQty":18.45661236,"LastTradeTime":1539718600863,"SessionOpen":0.80906178,"SessionHigh":0.81730728,"SessionLow":0.80388514,"SessionClose":0.83651922,"Volume":18.45661236,"CurrentDayVolume":0,"CurrentDayNumTrades":0,"CurrentDayPxChange":0,"Rolling24HrVolume":0,"Rolling24NumTrades":0,"Rolling24HrPxChange":0,"TimeStamp":"1539718600863","Instrument":"ZRXTUSD","hidePair":false,"auditVisible":true,"base":"TUSD","target":"ZRX"},{"OMSId":1,"InstrumentId":70,"BestBid":0.45688142,"BestOffer":0.46145402,"LastTradedPx":0.45,"LastTradedQty":1273,"LastTradeTime":1540201375046,"SessionOpen":0.45,"SessionHigh":0.45,"SessionLow":0.45,"SessionClose":0.43764357,"Volume":1273,"CurrentDayVolume":0,"CurrentDayNumTrades":0,"CurrentDayPxChange":0,"Rolling24HrVolume":0,"Rolling24NumTrades":0,"Rolling24HrPxChange":0,"TimeStamp":"1540201375046","Instrument":"XRPTUSD","hidePair":false,"auditVisible":true,"base":"TUSD","target":"XRP"}]}'
+    http_version: 
+  recorded_at: Wed, 24 Oct 2018 04:09:21 GMT
+recorded_with: VCR 4.0.0

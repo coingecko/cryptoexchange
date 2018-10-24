@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://golix.com/api/v1/depth?limit=300&market=btcusd
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - golix.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '200'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=63072000; includeSubDomains
+      X-Request-Id:
+      - 370a31d4-104c-4bfb-bcf6-b886834ff971
+      Etag:
+      - W/"a4e00ba738c57a1751dd9349e1fc8d0e"
+      X-Runtime:
+      - '0.009309'
+      Date:
+      - Mon, 10 Sep 2018 19:54:52 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timestamp":1536609292,"asks":[["100000.0","0.01"],["30000.0","0.013"]],"bids":[["13500.0","0.0405"],["11950.0","0.1066"],["11801.0","0.0056"],["11800.0","0.0002"],["9231.0","0.0499"],["2.0","0.5"]]}'
+    http_version: 
+  recorded_at: Mon, 10 Sep 2018 19:54:52 GMT
+recorded_with: VCR 4.0.0

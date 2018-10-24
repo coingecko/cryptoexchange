@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kairex.com/v1/market/orderbook?base=KAI&quote=BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.kairex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 09 Sep 2018 21:55:47 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1830'
+      Connection:
+      - close
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"symbolPair":"KAIBTC","orderSeq":53616,"base":"KAI","quote":"BTC","price":"0.00000077","closed":"0.00000076","bid":[{"price":"0.00000076","sumAmount":"44642.93026315","changePercent":"0.0"},{"price":"0.00000075","sumAmount":"556544.17550911","changePercent":"-1.3200"},{"price":"0.00000074","sumAmount":"148728.73394427","changePercent":"-2.6300"},{"price":"0.00000073","sumAmount":"228382.74657533","changePercent":"-3.9500"},{"price":"0.00000072","sumAmount":"510909.01525276","changePercent":"-5.2600"},{"price":"0.00000071","sumAmount":"317896.84366193","changePercent":"-6.5800"},{"price":"0.0000007","sumAmount":"32608.3142857","changePercent":"-7.8900"},{"price":"0.00000069","sumAmount":"21005","changePercent":"-9.2100"},{"price":"0.00000068","sumAmount":"20100","changePercent":"-10.5300"},{"price":"0.00000067","sumAmount":"20576.19402985","changePercent":"-11.8400"},{"price":"0.00000066","sumAmount":"20100","changePercent":"-13.1600"}],"ask":[{"price":"0.00000077","sumAmount":"19496.2473246","changePercent":"1.3200"},{"price":"0.00000078","sumAmount":"133585.9018764","changePercent":"2.6300"},{"price":"0.00000079","sumAmount":"596146.77151694","changePercent":"3.9500"},{"price":"0.0000008","sumAmount":"721045.3433001","changePercent":"5.2600"},{"price":"0.00000081","sumAmount":"195944.12672187","changePercent":"6.5800"},{"price":"0.00000082","sumAmount":"194624.3798731","changePercent":"7.8900"},{"price":"0.00000083","sumAmount":"324554.9711904","changePercent":"9.2100"},{"price":"0.00000084","sumAmount":"312222.41980904","changePercent":"10.5300"},{"price":"0.00000085","sumAmount":"449865.84375632","changePercent":"11.8400"},{"price":"0.00000086","sumAmount":"229913.3359469","changePercent":"13.1600"},{"price":"0.00000087","sumAmount":"2352.43092856","changePercent":"14.4700"}],"symbol":"KAI/BTC"}'
+    http_version: 
+  recorded_at: Sun, 09 Sep 2018 21:55:47 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,438 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://dex.top/v1/pairlist/ETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - dex.top
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Server:
+      - openresty/1.13.6.1
+      Date:
+      - Sun, 22 Jul 2018 18:25:33 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '191'
+      Connection:
+      - close
+      Location:
+      - https://dex.top/v1/pairlist/ETH
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - origin
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>openresty/1.13.6.1</center>\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Sun, 22 Jul 2018 18:25:33 GMT
+- request:
+    method: get
+    uri: https://dex.top/v1/pairlist/ETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/3.0.0
+      Host:
+      - dex.top
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 22 Jul 2018 18:25:34 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Grpc-Metadata-Content-Type:
+      - application/grpc
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - origin
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "pairs": [
+            {
+              "pairId": "ETH_SNT",
+              "timeMs": "1532283432897",
+              "openPrice": "0.00015927",
+              "lastPrice": "0.00015768",
+              "volume24": "239.790",
+              "amount24": "1513807.948",
+              "change24": "-0.00000159",
+              "changePercent24": "-0.998",
+              "high24": "0.00016007",
+              "low24": "0.00015675"
+            },
+            {
+              "pairId": "ETH_PAL",
+              "timeMs": "1532283835274",
+              "openPrice": "0.00003624",
+              "lastPrice": "0.00003729",
+              "volume24": "167.692",
+              "amount24": "4585550.106",
+              "change24": "0.00000105",
+              "changePercent24": "2.897",
+              "high24": "0.00003734",
+              "low24": "0.00003549"
+            },
+            {
+              "pairId": "ETH_HSC",
+              "timeMs": "1532278246361",
+              "openPrice": "0.00000501",
+              "lastPrice": "0.00000478",
+              "volume24": "140.591",
+              "amount24": "28560732.793",
+              "change24": "-0.00000023",
+              "changePercent24": "-4.591",
+              "high24": "0.00000510",
+              "low24": "0.00000473"
+            },
+            {
+              "pairId": "ETH_TTC",
+              "timeMs": "1532283630419",
+              "openPrice": "0.00020690",
+              "lastPrice": "0.00020705",
+              "volume24": "61.359",
+              "amount24": "295175.555",
+              "change24": "0.00000015",
+              "changePercent24": "0.072",
+              "high24": "0.00021340",
+              "low24": "0.00020600"
+            },
+            {
+              "pairId": "ETH_LOOM",
+              "timeMs": "1532281304844",
+              "openPrice": "0.00045223",
+              "lastPrice": "0.00044317",
+              "volume24": "59.765",
+              "amount24": "134872.496",
+              "change24": "-0.00000906",
+              "changePercent24": "-2.003",
+              "high24": "0.00045223",
+              "low24": "0.00043746"
+            },
+            {
+              "pairId": "ETH_ZIL",
+              "timeMs": "1532278916966",
+              "openPrice": "0.00015995",
+              "lastPrice": "0.00016001",
+              "volume24": "48.161",
+              "amount24": "302537.443",
+              "change24": "0.00000006",
+              "changePercent24": "0.038",
+              "high24": "0.00016145",
+              "low24": "0.00015664"
+            },
+            {
+              "pairId": "ETH_MEDX",
+              "timeMs": "1532282957044",
+              "openPrice": "0.00001121",
+              "lastPrice": "0.00001118",
+              "volume24": "47.899",
+              "amount24": "4253655.782",
+              "change24": "-0.00000003",
+              "changePercent24": "-0.268",
+              "high24": "0.00001145",
+              "low24": "0.00001083"
+            },
+            {
+              "pairId": "ETH_CHSB",
+              "timeMs": "1532266987949",
+              "openPrice": "0.00002502",
+              "lastPrice": "0.00002462",
+              "volume24": "30.358",
+              "amount24": "1175468.000",
+              "change24": "-0.00000040",
+              "changePercent24": "-1.599",
+              "high24": "0.00002897",
+              "low24": "0.00002320"
+            },
+            {
+              "pairId": "ETH_KNC",
+              "timeMs": "1532283282618",
+              "openPrice": "0.00206624",
+              "lastPrice": "0.00203546",
+              "volume24": "30.209",
+              "amount24": "14779.709",
+              "change24": "-0.00003078",
+              "changePercent24": "-1.490",
+              "high24": "0.00207185",
+              "low24": "0.00203089"
+            },
+            {
+              "pairId": "ETH_AIT",
+              "timeMs": "1532258091253",
+              "openPrice": "0.00004156",
+              "lastPrice": "0.00004214",
+              "volume24": "26.863",
+              "amount24": "651114.000",
+              "change24": "0.00000058",
+              "changePercent24": "1.396",
+              "high24": "0.00004282",
+              "low24": "0.00003921"
+            },
+            {
+              "pairId": "ETH_TFD",
+              "timeMs": "1532236998915",
+              "openPrice": "0.00007021",
+              "lastPrice": "0.00007476",
+              "volume24": "20.790",
+              "amount24": "283865.922",
+              "change24": "0.00000455",
+              "changePercent24": "6.481",
+              "high24": "0.00007567",
+              "low24": "0.00007021"
+            },
+            {
+              "pairId": "ETH_CTXC",
+              "timeMs": "1532279381622",
+              "openPrice": "0.00119448",
+              "lastPrice": "0.00120095",
+              "volume24": "18.935",
+              "amount24": "15953.590",
+              "change24": "0.00000647",
+              "changePercent24": "0.542",
+              "high24": "0.00120812",
+              "low24": "0.00115057"
+            },
+            {
+              "pairId": "ETH_LND",
+              "timeMs": "1532276580220",
+              "openPrice": "0.00001070",
+              "lastPrice": "0.00001065",
+              "volume24": "13.532",
+              "amount24": "1265859.028",
+              "change24": "-0.00000005",
+              "changePercent24": "-0.467",
+              "high24": "0.00001083",
+              "low24": "0.00001061"
+            },
+            {
+              "pairId": "ETH_XYO",
+              "timeMs": "1532263408661",
+              "openPrice": "0.00000623",
+              "lastPrice": "0.00000627",
+              "volume24": "10.784",
+              "amount24": "1704550.654",
+              "change24": "0.00000004",
+              "changePercent24": "0.642",
+              "high24": "0.00000647",
+              "low24": "0.00000567"
+            },
+            {
+              "pairId": "ETH_TAU",
+              "timeMs": "1532264457370",
+              "openPrice": "0.00013202",
+              "lastPrice": "0.00014070",
+              "volume24": "8.870",
+              "amount24": "63859.132",
+              "change24": "0.00000868",
+              "changePercent24": "6.575",
+              "high24": "0.00014515",
+              "low24": "0.00012560"
+            },
+            {
+              "pairId": "ETH_SNTR",
+              "timeMs": "1532259268857",
+              "openPrice": "0.00000017",
+              "lastPrice": "0.00000016",
+              "volume24": "7.990",
+              "amount24": "47613970.588",
+              "change24": "-0.00000001",
+              "changePercent24": "-5.882",
+              "high24": "0.00000017",
+              "low24": "0.00000016"
+            },
+            {
+              "pairId": "ETH_VITE",
+              "timeMs": "1532278106438",
+              "openPrice": "0.00020169",
+              "lastPrice": "0.00020272",
+              "volume24": "4.085",
+              "amount24": "20503.738",
+              "change24": "0.00000103",
+              "changePercent24": "0.511",
+              "high24": "0.00020311",
+              "low24": "0.00019604"
+            },
+            {
+              "pairId": "ETH_MTC",
+              "timeMs": "1532226041243",
+              "openPrice": "0.00039100",
+              "lastPrice": "0.00042970",
+              "volume24": "2.260",
+              "amount24": "5289.428",
+              "change24": "0.00003870",
+              "changePercent24": "9.898",
+              "high24": "0.00042970",
+              "low24": "0.00039100"
+            },
+            {
+              "pairId": "ETH_RTE",
+              "timeMs": "1532201469626",
+              "openPrice": "0.00029000",
+              "lastPrice": "0.00029000",
+              "volume24": "1.450",
+              "amount24": "5000.000",
+              "change24": "0.00000000",
+              "changePercent24": "0.000",
+              "high24": "0.00029000",
+              "low24": "0.00029000"
+            },
+            {
+              "pairId": "ETH_YEE",
+              "timeMs": "1532255834320",
+              "openPrice": "0.00002815",
+              "lastPrice": "0.00002760",
+              "volume24": "0.579",
+              "amount24": "20746.000",
+              "change24": "-0.00000055",
+              "changePercent24": "-1.954",
+              "high24": "0.00002815",
+              "low24": "0.00002760"
+            },
+            {
+              "pairId": "ETH_UPP",
+              "timeMs": "1532201556762",
+              "openPrice": "0.00049000",
+              "lastPrice": "0.00049000",
+              "volume24": "0.132",
+              "amount24": "269.190",
+              "change24": "0.00000000",
+              "changePercent24": "0.000",
+              "high24": "0.00049000",
+              "low24": "0.00049000"
+            },
+            {
+              "pairId": "ETH_HPB",
+              "timeMs": "0",
+              "openPrice": "0",
+              "lastPrice": "0.00473282",
+              "volume24": "0",
+              "amount24": "0",
+              "change24": "0",
+              "changePercent24": "0",
+              "high24": "0",
+              "low24": "0"
+            },
+            {
+              "pairId": "ETH_BUT",
+              "timeMs": "0",
+              "openPrice": "0",
+              "lastPrice": "0.00003019",
+              "volume24": "0",
+              "amount24": "0",
+              "change24": "0",
+              "changePercent24": "0",
+              "high24": "0",
+              "low24": "0"
+            },
+            {
+              "pairId": "ETH_TRAC",
+              "timeMs": "0",
+              "openPrice": "0",
+              "lastPrice": "0",
+              "volume24": "0",
+              "amount24": "0",
+              "change24": "0",
+              "changePercent24": "0",
+              "high24": "0",
+              "low24": "0"
+            },
+            {
+              "pairId": "ETH_TOMO",
+              "timeMs": "0",
+              "openPrice": "0",
+              "lastPrice": "0",
+              "volume24": "0",
+              "amount24": "0",
+              "change24": "0",
+              "changePercent24": "0",
+              "high24": "0",
+              "low24": "0"
+            },
+            {
+              "pairId": "ETH_XUC",
+              "timeMs": "0",
+              "openPrice": "0",
+              "lastPrice": "0.00100900",
+              "volume24": "0",
+              "amount24": "0",
+              "change24": "0",
+              "changePercent24": "0",
+              "high24": "0",
+              "low24": "0"
+            },
+            {
+              "pairId": "ETH_MVC",
+              "timeMs": "0",
+              "openPrice": "0",
+              "lastPrice": "0",
+              "volume24": "0",
+              "amount24": "0",
+              "change24": "0",
+              "changePercent24": "0",
+              "high24": "0",
+              "low24": "0"
+            },
+            {
+              "pairId": "ETH_DCC",
+              "timeMs": "0",
+              "openPrice": "0",
+              "lastPrice": "0.00022200",
+              "volume24": "0",
+              "amount24": "0",
+              "change24": "0",
+              "changePercent24": "0",
+              "high24": "0",
+              "low24": "0"
+            },
+            {
+              "pairId": "ETH_QKC",
+              "timeMs": "0",
+              "openPrice": "0",
+              "lastPrice": "0.00028150",
+              "volume24": "0",
+              "amount24": "0",
+              "change24": "0",
+              "changePercent24": "0",
+              "high24": "0",
+              "low24": "0"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 22 Jul 2018 18:25:34 GMT
+recorded_with: VCR 4.0.0

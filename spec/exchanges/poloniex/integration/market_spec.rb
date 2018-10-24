@@ -14,6 +14,11 @@ RSpec.describe 'Poloniex integration specs' do
     expect(pair.market).to eq 'poloniex'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'poloniex', base: ltc_btc_pair.base, target: ltc_btc_pair.target
+    expect(trade_page_url).to eq "https://poloniex.com/exchange#ltc_btc"
+  end
+
   it 'fetch pairs and assign the correct base/target' do
     pairs = client.pairs('poloniex')
     expect(pairs).not_to be_empty
@@ -35,8 +40,8 @@ RSpec.describe 'Poloniex integration specs' do
     expect(ticker.ask).to be_a Numeric
     expect(ticker.high).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
+
     expect(ticker.payload).to_not be nil
   end
 end

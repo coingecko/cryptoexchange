@@ -17,6 +17,11 @@ RSpec.describe 'Trade Satoshi integration specs' do
     expect(pair.market).to eq 'trade_satoshi'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'trade_satoshi', base: base, target: target
+    expect(trade_page_url).to eq "https://tradesatoshi.com/Exchange?market=LTC_BTC"
+  end
+
   # {
   #   "market":"LTC_BTC",
   #   "high":0.01749999,
@@ -40,8 +45,8 @@ RSpec.describe 'Trade Satoshi integration specs' do
     expect(ticker.high).to eq 0.01749999
     expect(ticker.low).to eq 0.01520006
     expect(ticker.volume).to eq 469.05469918
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
+    
     expect(ticker.payload).to_not be nil
   end
 end

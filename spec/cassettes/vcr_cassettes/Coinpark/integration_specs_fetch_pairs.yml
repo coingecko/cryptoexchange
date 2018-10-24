@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinpark.cc/v1/mdata?cmd=pairList
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinpark.cc
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Tengine
+      Date:
+      - Sun, 07 Oct 2018 03:19:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1338'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - undefined
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-access-token, X-Requested-With
+      Access-Control-Max-Age:
+      - '172800'
+      X-Ca-Request-Id:
+      - 2FBA5AA7-3BCD-4117-9AB5-274EB4AB7A72
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"53a-m+kOZsry3FWaN9vuS7aPnluduKU"
+    body:
+      encoding: UTF-8
+      string: '{"result":[{"id":199,"pair":"BIX_BTC","pair_type":1},{"id":200,"pair":"BIX_ETH","pair_type":1},{"id":201,"pair":"BIX_USDT","pair_type":1},{"id":202,"pair":"ETH_BTC","pair_type":1},{"id":203,"pair":"BTC_USDT","pair_type":0},{"id":204,"pair":"ETH_USDT","pair_type":0},{"id":205,"pair":"ETC_BTC","pair_type":1},{"id":206,"pair":"ETC_ETH","pair_type":1},{"id":207,"pair":"ETC_USDT","pair_type":0},{"id":208,"pair":"BCH_BTC","pair_type":1},{"id":209,"pair":"BCH_ETH","pair_type":1},{"id":210,"pair":"BCH_USDT","pair_type":0},{"id":211,"pair":"LTC_BTC","pair_type":1},{"id":212,"pair":"LTC_ETH","pair_type":1},{"id":213,"pair":"LTC_USDT","pair_type":0},{"id":214,"pair":"CP_BTC","pair_type":1},{"id":215,"pair":"CP_ETH","pair_type":1},{"id":216,"pair":"CP_USDT","pair_type":1},{"id":217,"pair":"NEO_BTC","pair_type":1},{"id":218,"pair":"NEO_ETH","pair_type":1},{"id":219,"pair":"NEO_USDT","pair_type":1},{"id":220,"pair":"MCO_ETH","pair_type":1},{"id":221,"pair":"QKC_ETH","pair_type":1},{"id":222,"pair":"ZIL_ETH","pair_type":1},{"id":223,"pair":"LOOM_ETH","pair_type":1},{"id":224,"pair":"GOT_ETH","pair_type":1},{"id":225,"pair":"IOST_ETH","pair_type":1},{"id":226,"pair":"OMG_ETH","pair_type":1},{"id":227,"pair":"OMG_BTC","pair_type":1},{"id":229,"pair":"BTM_ETH","pair_type":1},{"id":230,"pair":"BTM_BTC","pair_type":1}],"cmd":"pairList"}'
+    http_version: 
+  recorded_at: Sun, 07 Oct 2018 03:19:54 GMT
+recorded_with: VCR 4.0.0

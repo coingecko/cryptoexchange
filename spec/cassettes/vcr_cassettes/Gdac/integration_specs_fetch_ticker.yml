@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://marketapi.gdac.co.kr/v1/public/marketsummaries
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - marketapi.gdac.co.kr
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 20 Oct 2018 20:25:37 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - nginx/1.12.1
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"message":"","result":[{"marketName":"ETH-BOS","high":0.00026350,"low":0.00025050,"volume":776952.74954225,"baseVolume":199.66986513,"last":2.52E-4,"bid":2.51E-4,"ask":2.635E-4,"prevDay":2.605E-4},{"marketName":"KRW-BOS","high":59.30000000,"low":57.00000000,"volume":224157270.98556638,"baseVolume":13021475125.00000000,"last":58.2,"bid":58.0,"ask":58.6,"prevDay":59.1},{"marketName":"KRW-BTC","high":7353000.00000000,"low":7268000.00000000,"volume":2767.61204190,"baseVolume":20183279123.00000000,"last":7291000.0,"bid":7286000.0,"ask":7293000.0,"prevDay":7300000.0},{"marketName":"KRW-CMT","high":116.50000000,"low":110.50000000,"volume":122582858.96638663,"baseVolume":14117483865.00000000,"last":115.5,"bid":115.0,"ask":116.0,"prevDay":115.5},{"marketName":"KRW-ETC","high":10750.00000000,"low":10400.00000000,"volume":836583.97746586,"baseVolume":8873316312.00000000,"last":10650.0,"bid":10600.0,"ask":10700.0,"prevDay":10700.0},{"marketName":"KRW-ETH","high":236500.00000000,"low":227500.00000000,"volume":58137.76594584,"baseVolume":13410078948.00000000,"last":230500.0,"bid":229500.0,"ask":230500.0,"prevDay":231000.0},{"marketName":"KRW-OMG","high":3760.00000000,"low":3600.00000000,"volume":4020567.86426252,"baseVolume":14650683940.00000000,"last":3700.0,"bid":3685.0,"ask":3720.0,"prevDay":3655.0},{"marketName":"KRW-PCH","high":8.80000000,"low":8.03000000,"volume":1130794666.75992397,"baseVolume":9243127044.00000000,"last":8.1,"bid":8.09,"ask":8.1,"prevDay":8.12},{"marketName":"ETH-RDN","high":0.00316000,"low":0.00265000,"volume":74354.19207871,"baseVolume":210.47977172,"last":0.002905,"bid":0.00284,"ask":0.00297,"prevDay":0.00279},{"marketName":"KRW-RDN","high":741.00000000,"low":619.00000000,"volume":69023.78379620,"baseVolume":45545693.00000000,"last":671.0,"bid":667.0,"ask":677.0,"prevDay":625.0},{"marketName":"KRW-UPP","high":32.80000000,"low":30.70000000,"volume":246764369.22847373,"baseVolume":7871217322.00000000,"last":31.7,"bid":31.65,"ask":32.0,"prevDay":31.5},{"marketName":"KRW-XLM","high":290.00000000,"low":271.00000000,"volume":29462445.32624740,"baseVolume":8303464491.00000000,"last":278.5,"bid":278.0,"ask":279.5,"prevDay":278.5},{"marketName":"KRW-ZRX","high":1060.00000000,"low":994.00000000,"volume":186012.52547001,"baseVolume":190920575.00000000,"last":1020.0,"bid":1015.0,"ask":1020.0,"prevDay":1025.0}]}'
+    http_version: 
+  recorded_at: Sat, 20 Oct 2018 20:25:37 GMT
+recorded_with: VCR 4.0.0

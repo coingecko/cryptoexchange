@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module BtcAlpha
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::BtcAlpha::Market::API_URL}/pairs"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::BtcAlpha::Market::API_URL}/pairs/"
 
         def fetch
           output = super

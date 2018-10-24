@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
         def ticker_url(market_pair)
           base   = market_pair.base.upcase
           target = market_pair.target.upcase
-          "#{Cryptoexchange::Exchanges::C2cx::Market::API_URL}/ticker/?symbol=#{base}_#{target}"
+          "#{Cryptoexchange::Exchanges::C2cx::Market::API_URL}/ticker/?symbol=#{target}_#{base}"
         end
 
         def adapt(response, market_pair)
@@ -30,7 +30,7 @@ module Cryptoexchange::Exchanges
           ticker.last      = NumericHelper.to_d(data['last'])
           ticker.bid       = NumericHelper.to_d(data['buy'])
           ticker.ask       = NumericHelper.to_d(data['sell'])         
-          ticker.volume    = NumericHelper.divide(NumericHelper.to_d(data['volume']), ticker.last)
+          ticker.volume    = NumericHelper.to_d(data['volume'])
           ticker.timestamp = data['timestamp'].to_i
           ticker.payload   = data
           ticker

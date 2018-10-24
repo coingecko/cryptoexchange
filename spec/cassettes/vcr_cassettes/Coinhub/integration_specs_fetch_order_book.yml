@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.coinhub.io/en/gateway/public/bestOffer
+    body:
+      encoding: UTF-8
+      string: '{"market":"ETH-USD","count":20}'
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Host:
+      - www.coinhub.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 26 Jul 2018 18:20:07 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d704ed922b49df2cf7d9f8568f0e20a2b1532629204; expires=Fri, 26-Jul-19
+        18:20:04 GMT; path=/; domain=.coinhub.io; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=15768000
+      Cache-Control:
+      - no-cache, max-age=0
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Thu, 26 Jul 2018 18:20:05 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4408e0d159352cbd-KUL
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"missing_authenticators":[],"infos":[],"warnings":[],"errors":[],"results":{"bid":[[476.2,0.7],[475.88,1.13],[474.74,1.55],[474.63,0.81],[474.49,1.44],[473.59,1.38],[472.54,19.05],[472.23,3.3],[472.1,31.99],[472.07,13.56],[471.83,3.92],[471.49,4.54],[470.04,4.92],[468.26,5.42],[467.37,4.51],[466.48,4.13],[465.59,4.12],[463.83,5.45],[461.19,5.97],[460.31,3.88]],"ask":[[478.79,2.36],[478.84,3.38],[479.1,5.23],[479.17,3.28],[479.28,1.51],[479.52,0.22],[479.75,3.34],[480.01,6.02],[480.08,1.53],[480.19,1.53],[480.69,8.83],[481.1,1.47],[484.21,9.52],[486.36,19.32],[486.38,11.2],[486.67,9.23],[900,0.2],[1000,0.2]],"lastQuote":476.2,"rate24h":469.29,"current_rates":[]}}'
+    http_version: 
+  recorded_at: Thu, 26 Jul 2018 18:20:07 GMT
+recorded_with: VCR 4.0.0

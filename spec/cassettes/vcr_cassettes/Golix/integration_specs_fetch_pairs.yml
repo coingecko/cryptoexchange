@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://golix.com/api/v1/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - golix.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2737'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=63072000; includeSubDomains
+      X-Request-Id:
+      - 71063cc0-17dd-4ec2-992c-efc318e7a509
+      Etag:
+      - W/"19f2115a23e8e8638eb9c4d3b2481e02"
+      X-Runtime:
+      - '0.017731'
+      Date:
+      - Mon, 10 Sep 2018 19:32:07 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"btcusd","name":"BTC/USD"},{"id":"btczar","name":"BTC/ZAR"},{"id":"dashusd","name":"DASH/USD"},{"id":"ltcusd","name":"LTC/USD"},{"id":"btgusd","name":"BTG/USD"},{"id":"ethusd","name":"ETH/USD"},{"id":"dashbtc","name":"DASH/BTC"},{"id":"xlmusd","name":"XLM/USD"},{"id":"xlmbtc","name":"XLM/BTC"},{"id":"bchzar","name":"BCH/ZAR"},{"id":"btckes","name":"BTC/KES"},{"id":"bchkes","name":"BCH/KES"},{"id":"btcugx","name":"BTC/UGX"},{"id":"bchugx","name":"BCH/UGX"},{"id":"xlmkes","name":"XLM/KES"},{"id":"xlmzar","name":"XLM/ZAR"},{"id":"xlmugx","name":"XLM/UGX"},{"id":"btctzs","name":"BTC/TZS"},{"id":"btcrwf","name":"BTC/RWF"},{"id":"btcxaf","name":"BTC/XAF"},{"id":"btcngn","name":"BTC/NGN"},{"id":"bchtzs","name":"BCH/TZS"},{"id":"bchrwf","name":"BCH/RWF"},{"id":"bchxaf","name":"BCH/XAF"},{"id":"bchngn","name":"BCH/NGN"},{"id":"xlmtzs","name":"XLM/TZS"},{"id":"xlmrwf","name":"XLM/RWF"},{"id":"xlmxaf","name":"XLM/XAF"},{"id":"xlmngn","name":"XLM/NGN"},{"id":"dalazar","name":"DALA/ZAR"},{"id":"dalaugx","name":"DALA/UGX"},{"id":"rmtngn","name":"RMT/NGN"},{"id":"xdcezar","name":"XDCE/ZAR"},{"id":"xdcekes","name":"XDCE/KES"},{"id":"xdceugx","name":"XDCE/UGX"},{"id":"xdcengn","name":"XDCE/NGN"},{"id":"xdcetzs","name":"XDCE/TZS"},{"id":"xdcerwf","name":"XDCE/RWF"},{"id":"xdcexaf","name":"XDCE/XAF"},{"id":"dashzar","name":"DASH/ZAR"},{"id":"dashkes","name":"DASH/KES"},{"id":"dashugx","name":"DASH/UGX"},{"id":"dashngn","name":"DASH/NGN"},{"id":"dashtzs","name":"DASH/TZS"},{"id":"dashrwf","name":"DASH/RWF"},{"id":"dashxaf","name":"DASH/XAF"},{"id":"ethzar","name":"ETH/ZAR"},{"id":"ethkes","name":"ETH/KES"},{"id":"ethugx","name":"ETH/UGX"},{"id":"ethngn","name":"ETH/NGN"},{"id":"ethtzs","name":"ETH/TZS"},{"id":"ethrwf","name":"ETH/RWF"},{"id":"ethxaf","name":"ETH/XAF"},{"id":"glxzar","name":"GLX/ZAR"},{"id":"glxkes","name":"GLX/KES"},{"id":"glxugx","name":"GLX/UGX"},{"id":"glxngn","name":"GLX/NGN"},{"id":"glxtzs","name":"GLX/TZS"},{"id":"glxrwf","name":"GLX/RWF"},{"id":"glxxaf","name":"GLX/XAF"},{"id":"btcglx","name":"BTC/GLX"},{"id":"ethglx","name":"ETH/GLX"},{"id":"steemngn","name":"STEEM/NGN"},{"id":"steemzar","name":"STEEM/ZAR"},{"id":"steemkes","name":"STEEM/KES"},{"id":"steemugx","name":"STEEM/UGX"},{"id":"steemtzs","name":"STEEM/TZS"},{"id":"steemrwf","name":"STEEM/RWF"},{"id":"steemxaf","name":"STEEM/XAF"},{"id":"rmeshugx","name":"RMESH/UGX"},{"id":"rmeshusdt","name":"RMESH/USDT"},{"id":"steemusdt","name":"STEEM/USDT"},{"id":"zarusdt","name":"ZAR/USDT"},{"id":"ugxusdt","name":"UGX/USDT"},{"id":"kesusdt","name":"KES/USDT"},{"id":"xafusdt","name":"XAF/USDT"},{"id":"ngnusdt","name":"NGN/USDT"},{"id":"rwfusdt","name":"RWF/USDT"},{"id":"tzsusdt","name":"TZS/USDT"},{"id":"glxusdt","name":"GLX/USDT"}]'
+    http_version: 
+  recorded_at: Mon, 10 Sep 2018 19:32:14 GMT
+recorded_with: VCR 4.0.0

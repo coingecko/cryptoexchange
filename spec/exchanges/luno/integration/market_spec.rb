@@ -14,6 +14,11 @@ RSpec.describe 'Luno integration specs' do
     expect(pair.market).to eq 'luno'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'luno', base: xbt_zar_pair.base, target: xbt_zar_pair.target
+    expect(trade_page_url).to eq "https://www.luno.com/trade/XBTZAR"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(xbt_zar_pair)
 
