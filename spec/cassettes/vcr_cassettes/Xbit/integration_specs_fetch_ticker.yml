@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://xbit.com.ec/api/market
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - xbit.com.ec
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 25 Oct 2018 18:46:01 GMT
+      Server:
+      - Apache/2.4.18 (Ubuntu)
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '394'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: '[{"market":"USD/BTC","bid":6200,"ask":7500,"last":0,"high":0,"low":0,"variation24hr":0,"volume24hr":0},{"market":"USD/BCH","bid":0,"ask":0,"last":0,"high":0,"low":0,"variation24hr":0,"volume24hr":0},{"market":"USD/ETH","bid":0,"ask":0,"last":0,"high":0,"low":0,"variation24hr":0,"volume24hr":0},{"market":"USD/WCO","bid":0,"ask":0.05,"last":0,"high":0,"low":0,"variation24hr":0,"volume24hr":0}]'
+    http_version: 
+  recorded_at: Thu, 25 Oct 2018 18:46:02 GMT
+recorded_with: VCR 4.0.0
