@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.exchange.trade.io/marketdata-ws/24hr
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.exchange.trade.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 24 Oct 2018 16:51:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d87b942d5fa12cbd89ec166d0ab68caa81540399868; expires=Thu, 24-Oct-19
+        16:51:08 GMT; path=/; domain=.trade.io; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - https://exchange.trade.io
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - DNT, X-CustomHeader, Keep-Alive, User-Agent, X-Requested-With, If-Modified-Since,
+        Cache-Control, Content-Type, Authorization, querystring
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 46edf247ae2169ef-LHR
+    body:
+      encoding: UTF-8
+      string: '[{"instrument":"zrx_tio","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.0,"high":0.0,"volume":0.0,"open":0.0,"close":0.0},{"instrument":"bch_usdt","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":444.8986,"high":454.2361,"volume":6.24488726,"open":446.2272,"close":450.6579},{"instrument":"rep_eth","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.06523080,"high":0.07114790,"volume":11.79823038,"open":0.06542590,"close":0.07006820},{"instrument":"eth_usdt","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":205.3229,"high":208.1621,"volume":98.87224824,"open":205.7121,"close":206.8582},{"instrument":"omg_tio","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.0,"high":0.0,"volume":0.0,"open":0.0,"close":0.0},{"instrument":"rep_tio","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.0,"high":0.0,"volume":0.0,"open":0.0,"close":0.0},{"instrument":"bat_usdt","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.2530,"high":0.2848,"volume":1777.81059551,"open":0.2585,"close":0.2769},{"instrument":"dog_eth","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.00001720,"high":0.00002740,"volume":8749.00209999,"open":0.00002740,"close":0.00001720},{"instrument":"bch_eth","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":2.15883460,"high":2.18321330,"volume":0.89216409,"open":2.16828280,"close":2.17858280},{"instrument":"ltc_eth","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.25576300,"high":0.25892850,"volume":7.92712928,"open":0.25817910,"close":0.25761750},{"instrument":"bch_tio","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.0,"high":0.0,"volume":0.0,"open":0.0,"close":0.0},{"instrument":"bat_tio","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.0,"high":0.0,"volume":0.0,"open":0.0,"close":0.0},{"instrument":"btc_usdt","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":6540.8264,"high":6619.4426,"volume":6.04682030,"open":6559.7672,"close":6599.1803},{"instrument":"zrx_eth","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.00413750,"high":0.00437120,"volume":979.52372397,"open":0.00435580,"close":0.00416950},{"instrument":"zrx_btc","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.00012980,"high":0.00013713,"volume":3978.51869767,"open":0.00013651,"close":0.00013114},{"instrument":"tio_btc","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.0,"high":0.0,"volume":0.0,"open":0.0,"close":0.0},{"instrument":"dog_btc","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.0,"high":0.0,"volume":0.0,"open":0.0,"close":0.0},{"instrument":"tio_usdt","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.0,"high":0.0,"volume":0.0,"open":0.0,"close":0.0},{"instrument":"ltc_btc","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.00804073,"high":0.00813881,"volume":35.75783256,"open":0.00809840,"close":0.00808142},{"instrument":"omg_eth","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.01638410,"high":0.01715140,"volume":4985.53192300,"open":0.01679730,"close":0.01675730},{"instrument":"ttv_eth","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.00004000,"high":0.00007998,"volume":13066.49730176,"open":0.00005000,"close":0.00007998},{"instrument":"bch_btc","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.06773443,"high":0.06880322,"volume":4.25382368,"open":0.06808282,"close":0.06836398},{"instrument":"ttv_btc","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.00000349,"high":0.00000349,"volume":0.0,"open":0.00000349,"close":0.00000349},{"instrument":"ltc_tio","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.0,"high":0.0,"volume":0.0,"open":0.0,"close":0.0},{"instrument":"ltc_usdt","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":52.9223,"high":53.7278,"volume":46.18810065,"open":53.1105,"close":53.2663},{"instrument":"bat_btc","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.00003857,"high":0.00004299,"volume":1585.67147371,"open":0.00003941,"close":0.00004217},{"instrument":"rep_btc","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.00205129,"high":0.00224426,"volume":9.05185905,"open":0.00205129,"close":0.0022},{"instrument":"tio_eth","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.0,"high":0.0,"volume":0.0,"open":0.0,"close":0.0},{"instrument":"zrx_usdt","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.8552,"high":0.9017,"volume":4966.29272187,"open":0.8957,"close":0.8645},{"instrument":"ttv_tio","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.0,"high":0.0,"volume":0.0,"open":0.0,"close":0.0},{"instrument":"omg_usdt","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":3.3896,"high":3.5596,"volume":5330.4600,"open":3.4573,"close":3.4654},{"instrument":"eth_btc","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.03128853,"high":0.03162384,"volume":43.57432980,"open":0.03137269,"close":0.03137839},{"instrument":"omg_btc","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.00051689,"high":0.00054029,"volume":5777.93485698,"open":0.00052706,"close":0.00052591},{"instrument":"dog_tio","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.0,"high":0.0,"volume":0.0,"open":0.0,"close":0.0},{"instrument":"bat_eth","start":"2018-10-23T16:51:08.1440984Z","end":"2018-10-24T16:51:08.1440984Z","low":0.00122410,"high":0.00135070,"volume":630.81293932,"open":0.00126080,"close":0.00134190}]'
+    http_version: 
+  recorded_at: Wed, 24 Oct 2018 16:51:08 GMT
+recorded_with: VCR 4.0.0

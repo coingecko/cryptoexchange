@@ -291,6 +291,7 @@ Or install it yourself as:
 | Topbtc            | Y       | N          | N       |         | Y           | Y        | topbtc            |
 | TradeOgre         | Y       | Y          | Y       |         | Y           | Y        | trade_ogre        |
 | Trade Satoshi     | Y       |            |         |         | Y           | Y        | trade_satoshi     |
+| Trade.io          | Y       |            |         |         | Y           |          | tradeio           |
 | Trade.mn          | Y       | Y          | Y       |         | Y           |          | trademn           |
 | TrocaNinja        | Y       | N          | N       |         | Y           |          | troca_ninja       |
 | TrustDex **       | Y       |            |         |         | Y           |          | trust_dex         |
