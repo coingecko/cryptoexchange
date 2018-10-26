@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Korbit integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:market) { 'korbit' }
   let(:btc_krw_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'KRW', market: 'korbit') }
 
   it 'fetch pairs' do
@@ -12,6 +13,11 @@ RSpec.describe 'Korbit integration specs' do
     expect(pair.base).to eq 'BTC'
     expect(pair.target).to eq 'KRW'
     expect(pair.market).to eq 'korbit'
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: btc_krw_pair.base, target: btc_krw_pair.target
+    expect(trade_page_url).to eq "https://www.korbit.co.kr"
   end
 
   it 'fetch ticker' do

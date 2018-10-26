@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'BITKER integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:market) { 'bitker' }
   let(:eth_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'bitker') }
 
   it 'fetch pairs' do
@@ -12,6 +13,11 @@ RSpec.describe 'BITKER integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'bitker'
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: eth_btc_pair.base, target: eth_btc_pair.target
+    expect(trade_page_url).to eq "https://www.bitker.com/#/bbTrades/eth_btc"
   end
 
   it 'fetch ticker' do

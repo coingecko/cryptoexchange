@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Exrates integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:market) { 'exrates' }
   let(:lsk_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'LSK', target: 'USD', market: 'exrates') }
 
   it 'fetch pairs' do
@@ -12,6 +13,11 @@ RSpec.describe 'Exrates integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'exmo'
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: lsk_usd_pair.base, target: lsk_usd_pair.target
+    expect(trade_page_url).to eq "https://exrates.me/dashboard"
   end
 
   it 'fetch ticker' do

@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Kraken integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:market) { 'kraken' }
   let(:bch_eur_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BCH', target: 'EUR', market: 'kraken') }
 
   it 'fetch pairs' do
@@ -12,6 +13,11 @@ RSpec.describe 'Kraken integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'kraken'
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: bch_eur_pair.base, target: bch_eur_pair.target
+    expect(trade_page_url).to eq "https://trade.kraken.com/markets/kraken/bch/eur"
   end
 
   it 'fetch ticker' do
