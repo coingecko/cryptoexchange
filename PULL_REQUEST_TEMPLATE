@@ -4,5 +4,11 @@
 - [ ] I have added Specs
 - [ ] (If implementing Market Ticker) I have verified that the `volume` refers to BASE
 - [ ] (If implementing Market Ticker) I have verified that the `base` and `target` is assigned correctly
+- [ ] I have verified at least **ONE** ticker volume matches volume shown on the trading page (use script below)
 
-
+```
+client = Cryptoexchange::Client.new
+pairs = client.pairs 'exchange_name'
+tickers = pairs.map do |p| client.ticker p end
+sorted_tickers = tickers.sort_by do |t| t.volume end.reverse
+```
