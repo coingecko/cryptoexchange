@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hpx.com/data/v2/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hpx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 14 Oct 2018 22:37:41 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '3563'
+      Connection:
+      - close
+      Set-Cookie:
+      - SERVERID=4e89ccd909f5cd2a0fa2151043901fb1|1539556661|1539556661;Path=/
+      - acw_tc=2f58916315395566619715292e03cdc2681c155a70d0f3a0663241013b9520;path=/;HttpOnly;Max-Age=1800
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=86400;
+    body:
+      encoding: UTF-8
+      string: '{"channel":null,"code":"0000","data":[{"symbol":"hc_cnyt","ticker":{"buy":12.24600000,"high":13.28300000,"last":12.97700000,"low":12.54600000,"sell":13.63900000,"vol":542876.0540}},{"symbol":"btc_cnyt","ticker":{"buy":43327.45000000,"high":44179.57000000,"last":44027.12000000,"low":43671.48000000,"sell":44695.84000000,"vol":3514.7660}},{"symbol":"eos_eth","ticker":{"buy":0.02616300,"high":0.02642300,"last":0.02616300,"low":0.02595100,"sell":0.02616300,"vol":54385.5580}},{"symbol":"eth_cnyt","ticker":{"buy":1340.37000000,"high":1404.95000000,"last":1380.98000000,"low":1376.41000000,"sell":1424.06000000,"vol":15878.2010}},{"symbol":"hc_eth","ticker":{"buy":0.00060000,"high":0.00943200,"last":0.00930800,"low":0.00902000,"sell":0.01900000,"vol":203587.7700}},{"symbol":"neo_cnyt","ticker":{"buy":70.00000000,"high":113.40000000,"last":110.30000000,"low":109.40000000,"sell":292.00000000,"vol":21701.2360}},{"symbol":"eos_cnyt","ticker":{"buy":37.00000000,"high":37.73000000,"last":37.11200000,"low":37.00100000,"sell":70.00000000,"vol":141133.4710}},{"symbol":"zec_eth","ticker":{"buy":0.32000000,"high":0.55814000,"last":0.55554000,"low":0.54731000,"sell":0.99900000,"vol":1807.5580}},{"symbol":"ltc_eth","ticker":{"buy":0.15652000,"high":0.26862000,"last":0.26542000,"low":0.26435000,"sell":0.30000000,"vol":1455.6830}},{"symbol":"hpy_cnyt","ticker":{"buy":0.01000000,"high":0.02710000,"last":0.02590000,"low":0.02530000,"sell":0.10000000,"vol":4615359.0580}},{"symbol":"trx_eth","ticker":{"buy":0.00007993,"high":0.00011199,"last":0.00011126,"low":0.00010983,"sell":0.00011200,"vol":3526084.8040}},{"symbol":"eet_cnyt","ticker":{"buy":0.10000000,"high":0,"last":0.900000000000,"low":0,"sell":1.60000000,"vol":0}},{"symbol":"neo_eth","ticker":{"buy":0.04910000,"high":0.08103500,"last":0.07992400,"low":0.07891900,"sell":0.09300000,"vol":1777.6180}},{"symbol":"btv_cnyt","ticker":{"buy":0.04100000,"high":0.09900000,"last":0.09900000,"low":0.09900000,"sell":0.09800000,"vol":15.3010}},{"symbol":"gsc_eth","ticker":{"buy":0.00005014,"high":0.00005244,"last":0.00005121,"low":0.00005091,"sell":0.00005321,"vol":639833.1100}},{"symbol":"doge_cnyt","ticker":{"buy":0.01266000,"high":0.03652800,"last":0.03631500,"low":0.03614200,"sell":0.04700000,"vol":36223969.7530}},{"symbol":"leek_cnyt","ticker":{"buy":0.11990000,"high":0.14950000,"last":0.14300000,"low":0.14180000,"sell":0.35600000,"vol":5911591.1080}},{"symbol":"trx_cnyt","ticker":{"buy":0.07120000,"high":0.16970000,"last":0.16650000,"low":0.16140000,"sell":0.59200000,"vol":3650046.7180}},{"symbol":"zec_cnyt","ticker":{"buy":753.00000000,"high":766.53000000,"last":753.02000000,"low":753.01000000,"sell":1500.00000000,"vol":2128.8530}},{"symbol":"ltc_cnyt","ticker":{"buy":305.00000000,"high":375.33000000,"last":367.13000000,"low":364.65000000,"sell":699.99000000,"vol":2231.5410}},{"symbol":"add_eth","ticker":{"buy":0,"high":0.00001811,"last":0.00001788,"low":0.00001776,"sell":0.00001812,"vol":212425.5170}},{"symbol":"add_cnyt","ticker":{"buy":0.00020000,"high":0.02990000,"last":0.02970000,"low":0.02940000,"sell":0.03000000,"vol":268802.6330}},{"symbol":"ftt_cnyt","ticker":{"buy":0.00400000,"high":0.01630000,"last":0.01560000,"low":0.01510000,"sell":0.02500000,"vol":4507525.6860}},{"symbol":"ftt_eth","ticker":{"buy":0.00000116,"high":0.00001305,"last":0.00001295,"low":0.00001281,"sell":0.00008520,"vol":5340429.4180}},{"symbol":"cx_eth","ticker":{"buy":0.00012826,"high":0.00012932,"last":0.00012877,"low":0.00012827,"sell":0.00012933,"vol":434281.6400}}],"id":null,"message":"成功"}'
+    http_version: 
+  recorded_at: Sun, 14 Oct 2018 22:37:42 GMT
+recorded_with: VCR 4.0.0

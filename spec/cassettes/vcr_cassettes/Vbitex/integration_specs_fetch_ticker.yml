@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.vbitex.com/Home/markets/tickers.html
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.vbitex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 25 Oct 2018 09:25:04 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - PHPSESSID=5hcucmcj3flpfac7qp5sb84jv2; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '[{"volume_24h":"180.59490176","volume_anchor_24h":"8006335.8914338478460000","new_price":"44904.69670000","24H_min":{"price":"42100.00000000"},"24H_max":{"price":"45523.91790000"},"symbol":"BTC_VB","submit_time":1540458486},{"volume_24h":"3346.34000000","volume_anchor_24h":"1359026.2258640000000000","new_price":"453.82710000","24H_min":{"price":"344.00000000"},"24H_max":{"price":"459.06940000"},"symbol":"LTC_VB","submit_time":1540458486},{"volume_24h":"77473.84000000","volume_anchor_24h":"2313804.0736620000000000","new_price":"30.34660000","24H_min":{"price":"27.56580000"},"24H_max":{"price":"31.99270000"},"symbol":"QTUM_VB","submit_time":1540458486},{"volume_24h":"81933428.00000000","volume_anchor_24h":"2152370.7374000000000000","new_price":"0.02550000","24H_min":{"price":"0.02440000"},"24H_max":{"price":"0.02830000"},"symbol":"Doge_VB","submit_time":1540458486},{"volume_24h":"6099532.00000000","volume_anchor_24h":"742428.1793940000000000","new_price":"0.11700300","24H_min":{"price":"0.11700300"},"24H_max":{"price":"0.12510000"},"symbol":"XDAG_VB","submit_time":1540458486},{"volume_24h":"35185660.00000000","volume_anchor_24h":"1615244.5988000000000000","new_price":"0.04980000","24H_min":{"price":"0.03350000"},"24H_max":{"price":"0.05940000"},"symbol":"SC_VB","submit_time":1540458486},{"volume_24h":"510241094.84000000","volume_anchor_24h":"171701512.7831080000000000","new_price":"0.35460000","24H_min":{"price":"0.29000000"},"24H_max":{"price":"0.38000000"},"symbol":"RVN_VB","submit_time":1540458486},{"volume_24h":"84355.21881800","volume_anchor_24h":"321.4453043990000000","new_price":"0.00360000","24H_min":{"price":"0.00210000"},"24H_max":{"price":"0.00550000"},"symbol":"WFC_VB","submit_time":1540458486},{"volume_24h":"16524.48000000","volume_anchor_24h":"13603.7747800000000000","new_price":"0.73880000","24H_min":{"price":"0.71000000"},"24H_max":{"price":"0.94870000"},"symbol":"UT_VB","submit_time":1540458486}]'
+    http_version: 
+  recorded_at: Thu, 25 Oct 2018 09:25:04 GMT
+recorded_with: VCR 4.0.0
