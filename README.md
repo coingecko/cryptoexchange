@@ -260,6 +260,7 @@ Or install it yourself as:
 | Paro Exchange     | Y       |            |         |         | Y           |          | paroexchange      |
 | Paymium           | Y       | Y          | Y       |         | User-Defined|          | paymium           |
 | Poloniex          | Y       |            |         |         | Y           | Y        | poloniex          |
+| Purcow            | Y       |            |         |         | Y           | Y        | purcow            |
 | QBTC              | Y       | Y          | Y       |         | Y           |          | qbtc              |
 | Qryptos           | Y       |            |         |         | Y           |          | qryptos           |
 | QuadrigaCX        | Y       |            |         |         | User-Defined|          | quadrigacx        |
