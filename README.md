@@ -64,7 +64,7 @@ Or install it yourself as:
 | Bitibu            | Y       | Y          | Y       |         | Y           | Y        | bitibu            |
 | Bitinfi           | Y       | Y          |         |         | Y           |          | bitinfi           |
 | Bitinka           | Y       | Y          |         |         | Y           |          | bitinka           |
-| Bitker            | Y       |            |         |         | Y           |          | bitker            |
+| Bitker            | Y       |            |         |         | Y           | Y        | bitker            |
 | Bitkonan          | Y       |            |         |         | User-Defined|          | bitkonan          |
 | Bitkub            | Y       | Y          | Y       |         | Y           | Y        | bitkub            |
 | Bitlish           | Y       | Y          | Y       |         | Y           |          | bitlish           |
@@ -169,10 +169,10 @@ Or install it yourself as:
 | Escodex           | Y       |            |         |         | Y           | Y        | escodex           |
 | EtherDelta        | Y       |            |         |         | Y           |          | ether_delta       |
 | Ethex             | Y       | N          | N       |         | Y           | N        | ethex             |
-| Ethfinex          | Y       | Y          | Y       |         | Y           |          | ethfinex          |
+| Ethfinex          | Y       | Y          | Y       |         | Y           | Y        | ethfinex          |
 | Everbloom         | Y       |            |         |         | Y           |          | everbloom         |
 | Exmo              | Y       | Y          | Y       |         | Y           | Y        | exmo              |
-| Exrates           | Y       | N          | N       |         | Y           |          | exrates           |
+| Exrates           | Y       | N          | N       |         | Y           | Y        | exrates           |
 | Extstock          | Y       | Y          | Y       |         | Y           | Y        | extstock          |
 | Exx               | Y       | Y          | Y       |         | Y           | Y        | exx               |
 | F1cx              | Y       | Y          | Y       |         | Y           | Y        | f1cx              |
@@ -195,7 +195,7 @@ Or install it yourself as:
 | Hadax             | Y       | N          | N       |         | Y           | Y        | hadax             |
 | Hb.top            | Y       | N          | N       |         | Y           | N        | hb_top            |
 | Hikenex           | Y       | N          | N       |         | Y           | N        | hikenex           |
-| HitBTC            | Y       |            |         |         | Y           |          | hitbtc            |
+| HitBTC            | Y       |            |         |         | Y           | Y        | hitbtc            |
 | Hotbit            | Y       | N          | N       |         | Y           | Y        | hotbit            |
 | HPX               | Y       | Y          | Y       |         | Y           |          | hpx               |
 | Huobi             | Y       |            |         |         | Y           | Y        | huobi             |
@@ -217,8 +217,8 @@ Or install it yourself as:
 | Kkcoin            | Y       | Y          | Y       |         | Y           | Y        | kkcoin            |
 | Koinex            | Y       |            |         |         | Y           |          | koinex            |
 | Koinok            | Y       |            |         |         | Y           | Y        | koinok            |
-| Korbit            | Y       |            |         |         | User-Defined|          | korbit            |
-| Kraken            | Y       |            |         |         | Y           |          | kraken            |
+| Korbit            | Y       |            |         |         | User-Defined| Y        | korbit            |
+| Kraken            | Y       |            |         |         | Y           | Y        | kraken            |
 | Kryptono          | Y       | Y          | Y       |         | User-Defined| Y        | kryptono          |
 | Kucoin            | Y       | Y          | Y       |         | Y           | Y        | kucoin            |
 | Kuna              | Y       | Y          | Y       |         | User-Defined| Y        | kuna              |
