@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.zg.top/API/api/v1/ticker?symbol=35
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.zg.top
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 Oct 2018 16:13:04 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Via-Jsl:
+      - 9afbeda,-
+      Set-Cookie:
+      - __jsluid=a2b1a0d179584c5557a3e2b60ccb939d; max-age=31536000; path=/; HttpOnly
+      X-Cache:
+      - bypass
+    body:
+      encoding: UTF-8
+      string: '{"code":"200","data":{"high":"6780.15","vol":"1129.298","last":"6703.18","low":"6679.8","buy":"6679.8","sell":"6707.48"}}'
+    http_version: 
+  recorded_at: Thu, 18 Oct 2018 16:13:04 GMT
+- request:
+    method: get
+    uri: https://www.zg.top/API/api/v1/ticker?symbol=35
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.zg.top
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 Oct 2018 16:17:37 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Via-Jsl:
+      - 9afbeda,-
+      Set-Cookie:
+      - __jsluid=c43a2acc26822d55802acc858977255b; max-age=31536000; path=/; HttpOnly
+      X-Cache:
+      - bypass
+    body:
+      encoding: UTF-8
+      string: '{"code":"200","data":{"high":"6780.15","vol":"1129.298","last":"6702.28","low":"6679.8","buy":"6679.8","sell":"6707.48"}}'
+    http_version: 
+  recorded_at: Thu, 18 Oct 2018 16:17:37 GMT
+recorded_with: VCR 4.0.0
