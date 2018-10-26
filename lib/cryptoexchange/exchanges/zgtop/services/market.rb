@@ -9,8 +9,19 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
+          market_pair = inject_inst_id(market_pair)
           output = super(ticker_url(market_pair))
           adapt(output['data'], market_pair)
+        end
+
+        def inject_inst_id(market_pair)
+          # todo: refactor to global
+          if !(market_pair.respond_to? :inst_id) || (market_pair.send(:inst_id).nil?)
+            market_pairs = Cryptoexchange::Client.new.pairs(Zgtop::Market::NAME)
+            market_pair = market_pairs.detect { |mp| mp.base == market_pair.base && mp.target == market_pair.target }
+          end
+
+          market_pair
         end
 
         def ticker_url(market_pair)
