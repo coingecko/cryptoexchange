@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Bittrex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:market) { 'bittrex' }
   let(:ltc_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ltc', target: 'btc', market: 'bittrex') }
 
   it 'fetch pairs' do
@@ -12,6 +13,11 @@ RSpec.describe 'Bittrex integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'bittrex'
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: ltc_btc_pair.base, target: ltc_btc_pair.target
+    expect(trade_page_url).to eq "https://bittrex.com/Market/Index?MarketName=BTC-LTC"
   end
 
   it 'fetch pairs and assign the correct base/target' do

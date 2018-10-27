@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Coinjar integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:market) { 'coinjar' }
   let(:btc_aud_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'AUD', market: 'coinjar') }
 
   it 'fetch pairs' do
@@ -12,6 +13,11 @@ RSpec.describe 'Coinjar integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'coinjar'
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: btc_aud_pair.base, target: btc_aud_pair.target
+    expect(trade_page_url).to eq "https://exchange.coinjar.com/trade"
   end
 
   it 'fetch ticker' do

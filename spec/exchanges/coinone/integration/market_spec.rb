@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Coinone integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:market) { 'coinone' }
   let(:eth_krw_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'KRW', market: 'coinone') }
 
   it 'fetch pairs' do
@@ -12,6 +13,11 @@ RSpec.describe 'Coinone integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'coinone'
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: eth_krw_pair.base, target: eth_krw_pair.target
+    expect(trade_page_url).to eq "https://coinone.co.kr/exchange/trade/eth/krw"
   end
 
   it 'fetch ticker' do

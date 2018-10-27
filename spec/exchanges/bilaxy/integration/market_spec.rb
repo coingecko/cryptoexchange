@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Bilaxy integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:market) { 'bilaxy' }
   let(:eos_eth_pair) { Cryptoexchange::Models::Bilaxy::MarketPair.new(base: 'EOS', target: 'ETH', id: 16, market: 'bilaxy') }
 
   it 'fetch pairs' do
@@ -13,6 +14,11 @@ RSpec.describe 'Bilaxy integration specs' do
     expect(pair.target).to_not be nil
     expect(pair.id).to_not be nil
     expect(pair.market).to eq 'bilaxy'
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: eos_eth_pair.base, target: eos_eth_pair.target
+    expect(trade_page_url).to eq "https://bilaxy.com/exchange"
   end
 
   it 'fetch ticker' do

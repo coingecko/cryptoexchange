@@ -43,7 +43,7 @@ Or install it yourself as:
 | Bgogo             | Y       | Y          | Y       |         | Y           | Y        | bgogo             |
 | Bibox             | Y       | Y          | Y       |         | Y           | Y        | bibox             |
 | BigONE            | Y       | Y          | Y       |         | Y           | Y        | bigone            |
-| Bilaxy            | Y       | Y          | Y       |         | Y           |          | bilaxy            |
+| Bilaxy            | Y       | Y          | Y       |         | Y           | Y        | bilaxy            |
 | Binance           | Y       | Y          |         |         | Y           | Y        | binance           |
 | Bishang           | Y       |            |         |         | Y           |          | bishang           |
 | Bisq              | Y       |            | Y       |         | Y           |          | bisq              |
@@ -79,7 +79,7 @@ Or install it yourself as:
 | Bitso             | Y       |            |         |         | Y           |          | bitso             |
 | Bitstamp          | Y       | Y          | Y       |         | User-Defined|          | bitstamp          |
 | Bitsten           | Y       | Y          | N       |         | Y           | Y        | bitsten           |
-| Bittrex           | Y       |            |         |         | Y           |          | bittrex           |
+| Bittrex           | Y       |            |         |         | Y           | Y        | bittrex           |
 | Bkex              | Y       | N          | N       |         | Y           | Y        | bkex              |
 | Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |
 | Blockonix         | Y       | Y          | Y       |         | Y           |          | blockonix         |
@@ -124,12 +124,12 @@ Or install it yourself as:
 | Coingi            | Y       | Y          | Y       |         | Y           | Y        | coingi            |
 | Coinhouse         | Y       |            |         |         | Y           | Y        | coinhouse         |
 | Coinhub           | Y       | Y          | Y       |         | Y           | Y        | coinhub           |
-| CoinJar           | Y       | Y          | Y       |         | Y           |          | coinjar           |
+| CoinJar           | Y       | Y          | Y       |         | Y           | Y        | coinjar           |
 | Coinmate          | Y       | Y          |         |         | User-Defined|          | coinmate          |
 | Coinmex           | Y       | Y          | Y       |         | Y           |          | coinmex           |
 | Coinnest          | Y       | Y          | Y       |         | User-Defined| Y        | coinnest          |
 | Coinnox           | Y       | Y          | Y       |         | Y           |          | coinnox           |
-| Coinone           | Y       | Y          | Y       |         | Y           |          | coinone           |
+| Coinone           | Y       | Y          | Y       |         | Y           | Y        | coinone           |
 | Coinpark          | Y       | Y          | Y       |         | Y           | Y        | coinpark          |
 | Coinplace         | Y       |            |         |         | Y           |          | coinplace         |
 | Coinrail          | Y       | Y          | Y       |         | Y           | Y        | coinrail          |
@@ -184,7 +184,7 @@ Or install it yourself as:
 | Freiexchange      | Y       | Y          |         |         | User-Defined| Y        | freiexchange      |
 | Gate              | Y       | Y          | Y       |         | Y           | Y        | gate              |
 | Gatecoin          | Y       |            |         |         | Y           |          | gatecoin          |
-| GDAX              | Y       |            |         |         | Y           |          | gdax              |
+| GDAX(Coinbase Pro)| Y       |            |         |         | Y           | Y        | gdax              |
 | Gemini            | Y       | Y          | Y       |         | Y           |          | gemini            |
 | GetBTC            | Y       | Y          | Y       |         | User-Defined| Y        | getbtc            |
 | Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |     
