@@ -244,6 +244,7 @@ Or install it yourself as:
 | NLexch            | Y       |            |         |         | Y           | Y        | nlexch            |
 | Novadex           | Y       | N          | N       |         | Y           | Y        | novadex           |
 | Nova Exchange     | Y       |            |         |         | Y           |          | novaexchange      |
+| Nuex              | Y       | Y          |         |         | Y           |          | nuex              |
 | OasisDEX          | Y       |            |         |         | Y           |          | oasisdex          |
 | OAX               | Y       |            |         |         | Y           |          | oax               |
 | Octaex            | Y       | Y          | Y       |         | Y           |          | octaex            |

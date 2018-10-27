@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nuex.com/api/v1/exchangeInfo
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.nuex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 25 Oct 2018 20:29:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '9906'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d2b4b035fb07a591efb841a0632d6378c1540499348; expires=Fri, 25-Oct-19
+        20:29:08 GMT; path=/; domain=.nuex.com; HttpOnly; Secure
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Etag:
+      - W/"26b2-SWOj6eMj5IwMpe156GcnPnoiSn0"
+      Via:
+      - 1.1 vegur
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 46f76efe0e506a91-LHR
+    body:
+      encoding: UTF-8
+      string: '{"timezone":"UTC","serverTime":1540499348459,"rateLimits":[{"rateLimitType":"REQUEST","interval":"MINUTE","limit":1200},{"rateLimitType":"ORDERS","interval":"SECOND","limit":10},{"rateLimitType":"REQUEST","interval":"DAY","limit":100000}],"exchangeFilters":[],"symbols":[{"symbol":"RCNBTC","status":"TRADING","baseAsset":"RCN","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"AMBBTC","status":"TRADING","baseAsset":"AMB","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"ICNBTC","status":"TRADING","baseAsset":"ICN","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"DOGEBTC","status":"TRADING","baseAsset":"DOGE","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"FUNETH","status":"TRADING","baseAsset":"FUN","quoteAsset":"ETH","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"ZRXBTC","status":"TRADING","baseAsset":"ZRX","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"BTCEURN","status":"TRADING","baseAsset":"BTC","quoteAsset":"EURN","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"ZRXETH","status":"TRADING","baseAsset":"ZRX","quoteAsset":"ETH","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"LTCBTC","status":"TRADING","baseAsset":"LTC","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"BATBTC","status":"TRADING","baseAsset":"BAT","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"SNTBTC","status":"TRADING","baseAsset":"SNT","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"MTLBTC","status":"TRADING","baseAsset":"MTL","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"NPXSBTC","status":"TRADING","baseAsset":"NPXS","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"ASTBTC","status":"TRADING","baseAsset":"AST","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"BNTBTC","status":"TRADING","baseAsset":"BNT","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"MCOBTC","status":"TRADING","baseAsset":"MCO","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"ENJBTC","status":"TRADING","baseAsset":"ENJ","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"DGDBTC","status":"TRADING","baseAsset":"DGD","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"QSPBTC","status":"TRADING","baseAsset":"QSP","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"STORJBTC","status":"TRADING","baseAsset":"STORJ","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"GNTETH","status":"TRADING","baseAsset":"GNT","quoteAsset":"ETH","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"RDNBTC","status":"TRADING","baseAsset":"RDN","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"BTCPAX","status":"TRADING","baseAsset":"BTC","quoteAsset":"PAX","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"EDGBTC","status":"TRADING","baseAsset":"EDG","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"VIBEBTC","status":"TRADING","baseAsset":"VIBE","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"ANTBTC","status":"TRADING","baseAsset":"ANT","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"BTCLRX","status":"TRADING","baseAsset":"BTC","quoteAsset":"LRX","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"PPTBTC","status":"TRADING","baseAsset":"PPT","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"SALTBTC","status":"TRADING","baseAsset":"SALT","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"BTGBTC","status":"TRADING","baseAsset":"BTG","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"OMGBTC","status":"TRADING","baseAsset":"OMG","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"REPBTC","status":"TRADING","baseAsset":"REP","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"ZILBTC","status":"TRADING","baseAsset":"ZIL","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"LRCBTC","status":"TRADING","baseAsset":"LRC","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"PAYBTC","status":"TRADING","baseAsset":"PAY","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"REQBTC","status":"TRADING","baseAsset":"REQ","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"WPRBTC","status":"TRADING","baseAsset":"WPR","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"BTCUSDT","status":"TRADING","baseAsset":"BTC","quoteAsset":"USDT","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"ZECBTC","status":"TRADING","baseAsset":"ZEC","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"INSBTC","status":"TRADING","baseAsset":"INS","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"MANABTC","status":"TRADING","baseAsset":"MANA","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"CVCBTC","status":"TRADING","baseAsset":"CVC","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"MANAETH","status":"TRADING","baseAsset":"MANA","quoteAsset":"ETH","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"DASHBTC","status":"TRADING","baseAsset":"DASH","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"KNCBTC","status":"TRADING","baseAsset":"KNC","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"NCASHBTC","status":"TRADING","baseAsset":"NCASH","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"RLCBTC","status":"TRADING","baseAsset":"RLC","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"MLNBTC","status":"TRADING","baseAsset":"MLN","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"ETHOSBTC","status":"TRADING","baseAsset":"ETHOS","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"FUNBTC","status":"TRADING","baseAsset":"FUN","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"AEBTC","status":"TRADING","baseAsset":"AE","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"BATETH","status":"TRADING","baseAsset":"BAT","quoteAsset":"ETH","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"AGIBTC","status":"TRADING","baseAsset":"AGI","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"CSCBTC","status":"TRADING","baseAsset":"CSC","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"CSCXRP","status":"TRADING","baseAsset":"CSC","quoteAsset":"XRP","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"NOKUBTC","status":"TRADING","baseAsset":"NOKU","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"BTCTUSD","status":"TRADING","baseAsset":"BTC","quoteAsset":"TUSD","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"APPCBTC","status":"TRADING","baseAsset":"APPC","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"OMGETH","status":"TRADING","baseAsset":"OMG","quoteAsset":"ETH","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"GNTBTC","status":"TRADING","baseAsset":"GNT","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"ETHBTC","status":"TRADING","baseAsset":"ETH","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"BCHBTC","status":"TRADING","baseAsset":"BCH","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"XRPBTC","status":"TRADING","baseAsset":"XRP","quoteAsset":"BTC","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]},{"symbol":"PPTETH","status":"TRADING","baseAsset":"PPT","quoteAsset":"ETH","baseAssetPrecision":8,"quotePrecision":8,"orderTypes":["LIMIT","MARKET"]}]}'
+    http_version: 
+  recorded_at: Thu, 25 Oct 2018 20:29:22 GMT
+recorded_with: VCR 4.0.0
