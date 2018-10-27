@@ -15,8 +15,8 @@ module Cryptoexchange::Exchanges
           )
           authentication.validate_credentials!
 
-          headers = authentication.headers(payload: nil)
-          output = Cryptoexchange::Exchanges::Paradex::Market.fetch_via_api(ticker_url(market_pair), headers)
+          headers = authentication.headers(nil)
+          output  = Cryptoexchange::Exchanges::Paradex::Market.fetch_via_api(ticker_url(market_pair), headers)
           adapt(output, market_pair)
         end
 

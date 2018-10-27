@@ -26,7 +26,6 @@ RSpec.describe 'Paradex integration specs' do
   end
 
   it 'fetch ticker' do
-    allow(Cryptoexchange::Exchanges::Paradex::Market).to receive(:fetch_api_key).and_return "PadexApiKeyPlaceholder"
     ticker = client.ticker(hav_weth_pair)
 
     expect(ticker.base).to eq 'HAV'

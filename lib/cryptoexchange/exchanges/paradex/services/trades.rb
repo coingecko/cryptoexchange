@@ -9,20 +9,20 @@ module Cryptoexchange::Exchanges
           )
           authentication.validate_credentials!
 
-          headers = authentication.headers(payload: nil)
-          output = Cryptoexchange::Exchanges::Paradex::Market.fetch_via_api(ticker_url(market_pair), headers)
+          headers = authentication.headers(nil)
+          output  = Cryptoexchange::Exchanges::Paradex::Market.fetch_via_api(ticker_url(market_pair), headers)
           adapt(output, market_pair)
         end
 
         def ticker_url(market_pair)
-          base = market_pair.base
+          base   = market_pair.base
           target = market_pair.target
           "#{Cryptoexchange::Exchanges::Paradex::Market::API_URL}/v0/tradeHistory?market=#{base}/#{target}"
         end
 
         def adapt(output, market_pair)
           output['trades'].collect do |trade|
-            tr = Cryptoexchange::Models::Trade.new
+            tr           = Cryptoexchange::Models::Trade.new
             tr.trade_id  = trade['id']
             tr.base      = market_pair.base
             tr.target    = market_pair.target

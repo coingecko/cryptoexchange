@@ -1,7 +1,7 @@
 module Cryptoexchange::Exchanges
   module Paradex
     class Authentication < Cryptoexchange::Services::Authentication
-      def headers(payload: payload)
+      def headers(payload)
         api_key = HashHelper.dig(Cryptoexchange::Credentials.get(@exchange), 'api_key')
         { 'API-KEY' => api_key }
       end
