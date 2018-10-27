@@ -5,11 +5,15 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://api.paradex.io/consumer'
 
       class << self
-        def fetch_via_api(endpoint)
-          api_key = fetch_api_key(user_api_key_path)
+        def trade_page_url(args={})
+          base = args[:base].downcase
+          target =args[:target].downcase
+          "https://paradex.io/market/#{base}-#{target}"
+        end
 
+        def fetch_via_api(endpoint, headers)
           begin
-            fetch_response = HTTP.timeout(write: 2, connect: 15, read: 18).headers("API-KEY": "#{api_key}")
+            fetch_response = HTTP.timeout(write: 2, connect: 15, read: 18).headers(headers)
                                .get(endpoint)
             if fetch_response.code == 200
               fetch_response.parse :json
@@ -27,20 +31,6 @@ module Cryptoexchange::Exchanges
           rescue TypeError => e
             raise Cryptoexchange::TypeFormatError, { error: e, response: fetch_response }
           end
-        end
-
-        def fetch_api_key(path)
-          raise Cryptoexchange::ApiKeyMissingError, { error: "Please set api_key in 'config/cryptoexchange/paradex.yml'"} unless user_api_key_exist?
-
-          YAML.load_file(path)[:api_key]
-        end
-
-        def user_api_key_path
-          "config/cryptoexchange/paradex.yml"
-        end
-
-        def user_api_key_exist?
-          File.exist? user_api_key_path
         end
       end
     end

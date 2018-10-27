@@ -5,7 +5,18 @@ module Cryptoexchange::Exchanges
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Paradex::Market::API_URL}/v0/markets"
 
         def fetch
-          output = Cryptoexchange::Exchanges::Paradex::Market.fetch_via_api(PAIRS_URL)
+          authentication = Cryptoexchange::Exchanges::Paradex::Authentication.new(
+            :pairs,
+            Paradex::Market::NAME
+          )
+          authentication.validate_credentials!
+
+          headers = authentication.headers(payload: nil)
+          output  = Cryptoexchange::Exchanges::Paradex::Market.fetch_via_api(PAIRS_URL, headers)
+          adapt(output)
+        end
+
+        def adapt(output)
           output.map do |pair|
             Cryptoexchange::Models::MarketPair.new(
               base:   pair['baseToken'],

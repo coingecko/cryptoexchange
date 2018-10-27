@@ -2,11 +2,15 @@ require 'spec_helper'
 
 RSpec.describe 'Paradex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:hav_weth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'HAV', target: 'WETH', market: 'paradex') }
   let(:weth_dai_pair) { Cryptoexchange::Models::MarketPair.new(base: 'WETH', target: 'DAI', market: 'paradex') }
+  let(:filename) { Cryptoexchange::Credentials.send(:filename) }
+
+  before do
+    allow(Cryptoexchange::Credentials).to receive(:get).with('paradex').and_return({ 'api_key' => 'blah'})
+  end
 
   it 'fetch pairs' do
-    allow(Cryptoexchange::Exchanges::Paradex::Market).to receive(:fetch_api_key).and_return "PadexApiKeyPlaceholder"
-
     pairs = client.pairs('paradex')
     expect(pairs).not_to be_empty
 
@@ -16,12 +20,17 @@ RSpec.describe 'Paradex integration specs' do
     expect(pair.market).to eq 'paradex'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'paradex', base: weth_dai_pair.base, target: weth_dai_pair.target
+    expect(trade_page_url).to eq "https://paradex.io/market/weth-dai"
+  end
+
   it 'fetch ticker' do
     allow(Cryptoexchange::Exchanges::Paradex::Market).to receive(:fetch_api_key).and_return "PadexApiKeyPlaceholder"
-    ticker = client.ticker(weth_dai_pair)
+    ticker = client.ticker(hav_weth_pair)
 
-    expect(ticker.base).to eq 'WETH'
-    expect(ticker.target).to eq 'DAI'
+    expect(ticker.base).to eq 'HAV'
+    expect(ticker.target).to eq 'WETH'
     expect(ticker.market).to eq 'paradex'
     expect(ticker.last).to be_a Numeric
     expect(ticker.bid).to be_a Numeric

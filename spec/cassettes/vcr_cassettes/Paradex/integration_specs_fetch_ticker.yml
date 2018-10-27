@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.paradex.io/consumer/v0/ticker?market=WETH/DAI
+    uri: https://api.paradex.io/consumer/v0/ticker?market=HAV/WETH
     body:
       encoding: UTF-8
       string: ''
     headers:
       Api-Key:
-      - PadexApiKeyPlaceholder
+      - blah
       Connection:
       - close
       Host:
@@ -20,26 +20,37 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx/1.6.2
       Date:
-      - Sat, 21 Apr 2018 04:38:56 GMT
+      - Sat, 27 Oct 2018 07:47:57 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '58'
+      - '55'
       Connection:
       - close
+      Set-Cookie:
+      - __cfduid=d8fda83784a1cb2c64b09d449a9100e941540626476; expires=Sun, 27-Oct-19
+        07:47:56 GMT; path=/; domain=.paradex.io; HttpOnly; Secure
       X-Frame-Options:
       - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 47038eb4fa69a338-HKG
     body:
       encoding: ASCII-8BIT
-      string: '{"last": "614.35", "bid": "605.62665", "ask": "611.71335"}'
+      string: '{"last": "0.00064", "bid": "0.00064", "ask": "0.00065"}'
     http_version: 
-  recorded_at: Sat, 21 Apr 2018 04:38:56 GMT
+  recorded_at: Sat, 27 Oct 2018 07:47:57 GMT
 - request:
     method: get
-    uri: https://api.paradex.io/consumer/v0/ohlcv?amount=1&market=WETH/DAI&period=1d
+    uri: https://api.paradex.io/consumer/v0/ohlcv?amount=1&market=HAV/WETH&period=1d
     body:
       encoding: UTF-8
       string: ''
@@ -57,25 +68,33 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx/1.6.2
       Date:
-      - Sat, 21 Apr 2018 04:38:57 GMT
+      - Sat, 27 Oct 2018 07:47:58 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '204'
+      - '127'
       Connection:
       - close
-      Vary:
-      - Accept-Encoding
+      Set-Cookie:
+      - __cfduid=da66ad0fedf7d24be5d3db5aa77e1730d1540626477; expires=Sun, 27-Oct-19
+        07:47:57 GMT; path=/; domain=.paradex.io; HttpOnly; Secure
       X-Frame-Options:
       - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 47038ebb4e0f84c6-HKG
     body:
       encoding: ASCII-8BIT
-      string: '[{"date": "2018-04-21T00:00:00Z", "open": "616.771310000000000000",
-        "high": "614.350000000000000000", "low": "614.350000000000000000", "close":
-        "614.350000000000000000", "volume": "5.000000000000000000"}]'
+      string: '[{"date": "2018-10-27T00:00:00Z", "open": "0.00063", "high": "0.00064",
+        "low": "0.00064", "close": "0.00064", "volume": "500"}]'
     http_version: 
-  recorded_at: Sat, 21 Apr 2018 04:38:58 GMT
+  recorded_at: Sat, 27 Oct 2018 07:47:58 GMT
 recorded_with: VCR 4.0.0

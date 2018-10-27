@@ -3,7 +3,14 @@ module Cryptoexchange::Exchanges
     module Services
       class Trades < Cryptoexchange::Services::Market
         def fetch(market_pair)
-          output = Cryptoexchange::Exchanges::Paradex::Market.fetch_via_api(ticker_url(market_pair))
+          authentication = Cryptoexchange::Exchanges::Paradex::Authentication.new(
+            :market,
+            Paradex::Market::NAME
+          )
+          authentication.validate_credentials!
+
+          headers = authentication.headers(payload: nil)
+          output = Cryptoexchange::Exchanges::Paradex::Market.fetch_via_api(ticker_url(market_pair), headers)
           adapt(output, market_pair)
         end
 

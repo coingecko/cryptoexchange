@@ -9,8 +9,15 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          ticker = Cryptoexchange::Exchanges::Paradex::Market.fetch_via_api(ticker_url(market_pair))
-          ohlcv  = Cryptoexchange::Exchanges::Paradex::Market.fetch_via_api(ohlcv_url(market_pair))
+          authentication = Cryptoexchange::Exchanges::Paradex::Authentication.new(
+            :market,
+            Paradex::Market::NAME
+          )
+          authentication.validate_credentials!
+
+          headers = authentication.headers(payload: nil)
+          ticker = Cryptoexchange::Exchanges::Paradex::Market.fetch_via_api(ticker_url(market_pair), headers)
+          ohlcv  = Cryptoexchange::Exchanges::Paradex::Market.fetch_via_api(ohlcv_url(market_pair), headers)
           adapt(ticker, ohlcv, market_pair)
         end
 
@@ -42,6 +49,7 @@ module Cryptoexchange::Exchanges
           ticker.volume    = NumericHelper.to_d(ohlcv.first['volume'])
           ticker.timestamp = Time.parse(ohlcv.first['date']).to_i
           ticker.payload   = { ticker_info: output, ohlcv_info: ohlcv }
+          puts ticker.payload
           ticker
         end
       end

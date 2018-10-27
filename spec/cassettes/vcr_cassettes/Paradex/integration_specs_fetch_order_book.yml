@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Api-Key:
-      - PadexApiKeyPlaceholder
+      - blah
       Connection:
       - close
       Host:
@@ -20,36 +20,43 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx/1.6.2
       Date:
-      - Sat, 21 Apr 2018 04:38:59 GMT
+      - Sat, 27 Oct 2018 07:43:50 GMT
       Content-Type:
       - application/json
-      Content-Length:
-      - '1035'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - close
+      Set-Cookie:
+      - __cfduid=d3a37f0586741b89593910b219c7e52091540626229; expires=Sun, 27-Oct-19
+        07:43:49 GMT; path=/; domain=.paradex.io; HttpOnly; Secure
       Vary:
       - Accept-Encoding
       X-Frame-Options:
       - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 470388b09b6c8460-HKG
     body:
       encoding: ASCII-8BIT
-      string: '{"marketId": 10, "marketSymbol": "WETH/DAI", "bids": [{"price": "605.62665",
-        "amount": "1.89886"}, {"price": "604.45714", "amount": "8.27189"}, {"price":
-        "603.04556", "amount": "6.633"}, {"price": "597.32189", "amount": "8.37069"},
-        {"price": "596.50367", "amount": "8.38218"}, {"price": "510.6422", "amount":
-        "0.25"}, {"price": "488.88305", "amount": "3"}, {"price": "404.43794", "amount":
-        "1.27151"}], "asks": [{"price": "611.71335", "amount": "2.3"}, {"price": "614.72343",
-        "amount": "10"}, {"price": "614.98965", "amount": "2.3"}, {"price": "617.00628",
-        "amount": "5.7"}, {"price": "624.55565", "amount": "10"}, {"price": "625.91847",
-        "amount": "10"}, {"price": "626", "amount": "3"}, {"price": "650", "amount":
-        "10"}, {"price": "660", "amount": "2.49"}, {"price": "700", "amount": "10"},
-        {"price": "800", "amount": "10"}, {"price": "819", "amount": "2.5"}, {"price":
-        "899", "amount": "1"}, {"price": "927", "amount": "2.5"}, {"price": "1347",
-        "amount": "1.248"}, {"price": "1999", "amount": "1"}, {"price": "5999", "amount":
-        "1"}]}'
+      string: '{"marketId": 10, "marketSymbol": "WETH/DAI", "bids": [{"price": "200.63908",
+        "amount": "193.13287"}, {"price": "200.61634", "amount": "173.83928"}, {"price":
+        "199.40902", "amount": "174.89179"}, {"price": "199.24", "amount": "194.48906"},
+        {"price": "198.01661", "amount": "195.69065"}, {"price": "198.00048", "amount":
+        "176.13594"}, {"price": "196.78338", "amount": "177.22533"}, {"price": "195.77733",
+        "amount": "178.13605"}], "asks": [{"price": "206.52979", "amount": "50"},
+        {"price": "206.84388", "amount": "45"}, {"price": "207.99372", "amount": "50"},
+        {"price": "208.05114", "amount": "90"}, {"price": "209.22373", "amount": "50"},
+        {"price": "209.45961", "amount": "90"}, {"price": "210.66687", "amount": "45"},
+        {"price": "211.68344", "amount": "45"}]}'
     http_version: 
-  recorded_at: Sat, 21 Apr 2018 04:38:59 GMT
+  recorded_at: Sat, 27 Oct 2018 07:43:50 GMT
 recorded_with: VCR 4.0.0
