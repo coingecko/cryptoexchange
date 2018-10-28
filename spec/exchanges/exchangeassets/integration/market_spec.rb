@@ -14,6 +14,11 @@ RSpec.describe 'ExchangeAssets integration specs' do
     expect(pair.market).to eq 'exchangeassets'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url btc_usd_pair.market, base: btc_usd_pair.base, target: btc_usd_pair.target
+    expect(trade_page_url).to eq "https://exchange-assets.com/ru/?market=btc_usd"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_usd_pair)
 
