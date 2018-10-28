@@ -12,8 +12,8 @@ module Cryptoexchange::Exchanges
           market_pairs = []
           output['list'].each do |pair|
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair['mrkCoinName'],
-                              target: pair['trdCoinName'],
+                              base: pair['trdCoinName'],
+                              target: pair['mrkCoinName'],
                               inst_id: "#{pair['mrkCoin']}-#{pair['trdCoin']}",
                               market: Coinzest::Market::NAME
                             )

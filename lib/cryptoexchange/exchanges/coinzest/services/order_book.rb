@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Coinzest::Market::API_URL}/bid_price/#{market_pair.base}-#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::Coinzest::Market::API_URL}/bid_price/#{market_pair.target}-#{market_pair.base}"
         end
 
         def adapt(output, market_pair)

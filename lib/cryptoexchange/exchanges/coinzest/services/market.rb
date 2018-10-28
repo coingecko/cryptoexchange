@@ -7,7 +7,6 @@ module Cryptoexchange::Exchanges
             false
           end
         end
-        
         def fetch
           ctx = OpenSSL::SSL::SSLContext.new
           ctx.verify_mode = OpenSSL::SSL::VERIFY_NONE
@@ -22,7 +21,7 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output['result'].map do |pair|
-            base, target = pair['MarketName'].split('-')
+            target, base = pair['MarketName'].split('-')
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
                             target: target,
@@ -42,7 +41,7 @@ module Cryptoexchange::Exchanges
           ticker.ask = NumericHelper.to_d(output['Ask'])
           ticker.high = NumericHelper.to_d(output['High'])
           ticker.low = NumericHelper.to_d(output['Low'])
-          ticker.volume = NumericHelper.to_d(output['BaseVolume'])
+          ticker.volume = NumericHelper.to_d(output['BaseVolume']/output['Last'])
           ticker.timestamp = output['TimeStamp']/1000
           ticker.payload = output
           ticker
