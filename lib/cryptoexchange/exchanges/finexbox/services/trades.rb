@@ -10,7 +10,7 @@ module Cryptoexchange::Exchanges
         def ticker_url(market_pair)
           base   = market_pair.base.downcase
           target = market_pair.target.downcase
-          "#{Cryptoexchange::Exchanges::Finexbox::Market::API_URL}/history?market=#{base}_#{target}&count=100"
+          "#{Cryptoexchange::Exchanges::Finexbox::Market::API_URL}/history?market=#{base}_#{target}&count=200"
         end
 
         def adapt(output, market_pair)
