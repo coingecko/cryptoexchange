@@ -242,6 +242,7 @@ Or install it yourself as:
 | Nebula            | Y       | N          | Y       |         | Y           |          | nebula            |
 | Negociecoins      | Y       | Y          | Y       |         | User-Defined|          | negociecoins      |
 | Neraex            | Y       | Y          | Y       |         | Y           | Y        | neraex            |
+| Newdex            | Y       | N          | N       |         | Y           | Y        | newdex            |
 | Ninecoin          | Y       |            |         |         | Y           |          | ninecoin          |
 | NLexch            | Y       |            |         |         | Y           | Y        | nlexch            |
 | Novadex           | Y       | N          | N       |         | Y           | Y        | novadex           |
