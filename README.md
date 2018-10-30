@@ -141,6 +141,7 @@ Or install it yourself as:
 | Coinsuper         | Y       |            |         |         | Y           | Y        | coinsuper         |
 | Cointiger         | Y       | Y          | Y       |         | Y           |          | cointiger         |
 | Coinut (Auth)     | Y       | Y          | Y       | Y       | Y           |          | coinut            |
+| Coinzest          | Y       | Y          |         |         | Y           |          | coinzest          |
 | COSS              | Y       |            |         |         | Y           | Y        | coss              |
 | Cpdax             | Y       | Y          | Y       |         | Y           |          | cpdax             |
 | CredoEx           | Y       |            |         |         | Y           |          | credoex           |

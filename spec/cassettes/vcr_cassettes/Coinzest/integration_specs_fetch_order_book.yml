@@ -1,0 +1,136 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinzest.co.kr/api/public/bid_price/KRW-BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinzest.co.kr
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Sun, 28 Oct 2018 00:12:11 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1580'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+         "bid_price":  {
+          "bidList":   [
+              {
+            "price": "7269000.0",
+            "quantity": "9.36850492"
+           },
+              {
+            "price": "7268000.0",
+            "quantity": "0.05538327"
+           },
+              {
+            "price": "7261000.0",
+            "quantity": "0.00403576"
+           },
+              {
+            "price": "7258000.0",
+            "quantity": "3.0039041"
+           },
+              {
+            "price": "7251000.0",
+            "quantity": "1.02504039"
+           },
+              {
+            "price": "7249000.0",
+            "quantity": "0.38041683"
+           },
+              {
+            "price": "7238000.0",
+            "quantity": "0.00070544"
+           },
+              {
+            "price": "7202000.0",
+            "quantity": "0.29497292"
+           },
+              {
+            "price": "7200000.0",
+            "quantity": "0.20621869"
+           },
+              {
+            "price": "7195000.0",
+            "quantity": "0.04820305"
+           }
+          ],
+          "totalAskQty": "2.75933795",
+          "askList":   [
+              {
+            "price": "7285000.0",
+            "quantity": "0.00005644"
+           },
+              {
+            "price": "7286000.0",
+            "quantity": "0.12158588"
+           },
+              {
+            "price": "7287000.0",
+            "quantity": "1.00946937"
+           },
+              {
+            "price": "7290000.0",
+            "quantity": "0.11235066"
+           },
+              {
+            "price": "7299000.0",
+            "quantity": "0.02058295"
+           },
+              {
+            "price": "7300000.0",
+            "quantity": "0.31118951"
+           },
+              {
+            "price": "7310000.0",
+            "quantity": "0.00242493"
+           },
+              {
+            "price": "7320000.0",
+            "quantity": "0.93893934"
+           },
+              {
+            "price": "7321000.0",
+            "quantity": "0.00041926"
+           },
+              {
+            "price": "7322000.0",
+            "quantity": "0.24231961"
+           }
+          ],
+          "totalBidQty": "14.38738537",
+          "trdCoin": "001",
+          "mrkCoin": "000"
+         },
+         "success": true,
+         "message": ""
+        }
+    http_version: 
+  recorded_at: Sun, 28 Oct 2018 00:12:28 GMT
+recorded_with: VCR 4.0.0
