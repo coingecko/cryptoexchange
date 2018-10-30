@@ -351,6 +351,25 @@ Or install it yourself as:
   ticker.last
 ```
 
+### Query the Ticker stream API
+
+```
+  pair = client.pairs('bitfinex').first
+  thread = client.ticker_stream(
+    market_pair: pair,
+    onopen: Proc.new { puts 'Opened!' },
+    onmessage: Proc.new do |ticker|
+                 puts ticker.base
+                 puts ticker.target
+                 puts ticker.last
+                 # ...
+               end,
+    onclose: Proc.new { puts 'Closed!' },
+  )
+
+  thread.kill
+```
+
 ### Query the OrderBook API
 
 ```
@@ -361,6 +380,24 @@ Or install it yourself as:
   order_book.target
   order_book.bids
   order_book.asks
+```
+
+### Query the OrderBook stream API
+
+```
+  pair = client.pairs('bitfinex').first
+  thread = client.order_book_stream(
+    market_pair: pair,
+    onopen: Proc.new { puts 'Opened!' },
+    onmessage: Proc.new do |order_book|
+                 puts order_book.asks[0].price if order_book.asks[0]
+                 puts order_book.bids[0].price if order_book.bids[0]
+                 # ...
+               end,
+    onclose: Proc.new { puts 'Closed!' },
+  )
+
+  thread.kill
 ```
 
 ### Query the Trades API
@@ -375,6 +412,25 @@ Or install it yourself as:
   trades[0].target
   trades[0].price
   trades[0].amount
+```
+
+### Query the Trade stream API
+
+```
+  pair = client.pairs('bitfinex').first
+  thread = client.trade_stream(
+    market_pair: pair,
+    onopen: Proc.new { puts 'Opened!' },
+    onmessage: Proc.new do |trade|
+                 puts trade.trade_id
+                 puts trade.price
+                 puts trade.amount
+                 # ...
+               end,
+    onclose: Proc.new { puts 'Closed!' },
+  )
+
+  thread.kill
 ```
 
 ### Get Exchange Trade URL (Work in Progress)
