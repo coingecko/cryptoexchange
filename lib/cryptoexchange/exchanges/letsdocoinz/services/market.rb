@@ -39,7 +39,7 @@ module Cryptoexchange::Exchanges
           ticker.ask       = NumericHelper.to_d(output['ask'])
           ticker.volume    = NumericHelper.to_d(output['volume'])
           ticker.change    = NumericHelper.to_d(output['change'])
-          ticker.timestamp = DateTime.parse(output['timestamp']).to_time.to_i
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

@@ -4,6 +4,11 @@ RSpec.describe 'Letsdocoinz integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:pk_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'PK', target: 'BTC', market: 'letsdocoinz') }
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url pk_btc_pair.market, base: pk_btc_pair.base, target: pk_btc_pair.target
+    expect(trade_page_url).to eq "https://letsdocoinz.com/PK-BTC"
+  end
+
   it 'fetch pairs' do
     pairs = client.pairs('letsdocoinz')
     expect(pairs).not_to be_empty
@@ -25,8 +30,7 @@ RSpec.describe 'Letsdocoinz integration specs' do
     expect(ticker.ask).to be_a Numeric
     expect(ticker.change).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
   end
   #
