@@ -116,6 +116,7 @@ Or install it yourself as:
 | Coinbe            | Y       |            |         |         | Y           |          | coinbe            |
 | Coinbene          | Y       | Y          | Y       |         | Y           | Y        | coinbene          |
 | Coincheck         | Y       |            |         |         | User-Defined|          | coincheck         |
+| Coindeal          | Y       | Y          |         |         | Y           |          | coindeal          |
 | Coindirect        | Y       | N          | N       |         | Y           | Y        | coindirect        |
 | Coineal           | Y       | Y          | Y       |         | Y           |          | coineal           |
 | Coinex            | Y       | Y          | Y       |         | Y           | Y        | coinex            |
