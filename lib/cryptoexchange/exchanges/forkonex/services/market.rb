@@ -21,8 +21,8 @@ module Cryptoexchange::Exchanges
 
         def adapt(output, market_pair)
           ticker           = Cryptoexchange::Models::Ticker.new
-          ticker.base      = market_pair.base
-          ticker.target    = market_pair.target
+          ticker.base      = market_pair.target
+          ticker.target    = market_pair.base
           ticker.market    = market_pair.market
 
           ticker.last      = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'last'))
@@ -30,7 +30,7 @@ module Cryptoexchange::Exchanges
           ticker.ask       = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'sell'))
           ticker.high      = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'high'))
           ticker.low       = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'low'))
-          ticker.volume    = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'basevol'))
+          ticker.volume    = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'vol'))
           ticker.timestamp = NumericHelper.to_d(HashHelper.dig(output, 'at'))
           ticker.payload   = output
           ticker

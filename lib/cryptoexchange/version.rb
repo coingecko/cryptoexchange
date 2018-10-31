@@ -1,3 +1,3 @@
 module Cryptoexchange
-  VERSION = "0.24.1"
+  VERSION = "0.24.4"
 end

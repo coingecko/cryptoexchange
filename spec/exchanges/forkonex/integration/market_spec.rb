@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Forkonex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_btx_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'BTX', market: 'forkonex') }
+  let(:btc_btc2_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'BTC2', market: 'forkonex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('forkonex')
@@ -15,10 +15,10 @@ RSpec.describe 'Forkonex integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_btx_pair)
+    ticker = client.ticker(btc_btc2_pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'BTX'
+    expect(ticker.base).to eq 'BTC2'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'forkonex'
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
@@ -31,10 +31,10 @@ RSpec.describe 'Forkonex integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(btc_btx_pair)
+    order_book = client.order_book(btc_btc2_pair)
 
     expect(order_book.base).to eq 'BTC'
-    expect(order_book.target).to eq 'BTX'
+    expect(order_book.target).to eq 'BTC2'
     expect(order_book.market).to eq 'forkonex'
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
@@ -48,12 +48,12 @@ RSpec.describe 'Forkonex integration specs' do
   end
 
   it 'fetch trade' do
-    trades = client.trades(btc_btx_pair)
+    trades = client.trades(btc_btc2_pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty
     expect(trade.base).to eq 'BTC'
-    expect(trade.target).to eq 'BTX'
+    expect(trade.target).to eq 'BTC2'
     expect(trade.market).to eq 'forkonex'
     expect(trade.trade_id).to_not be_nil
     expect(trade.type).to be_nil
