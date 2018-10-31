@@ -4,6 +4,11 @@ RSpec.describe 'CoinAsset integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:btc_thb_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'THB', market: 'coinasset', inst_id: 49) }
 
+  it 'has trade_page_url' do
+    trade_page_url = client.trade_page_url btc_thb_pair.market, base: btc_thb_pair.base, target: btc_thb_pair.target
+    expect(trade_page_url).to eq "https://coinasset.co.th/exchange/THB-BTC"
+  end
+
   it 'fetch pairs' do
     pairs = client.pairs('coinasset')
     expect(pairs).not_to be_empty
