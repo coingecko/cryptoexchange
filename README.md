@@ -225,9 +225,10 @@ Or install it yourself as:
 | Kucoin            | Y       | Y          | Y       |         | Y           | Y        | kucoin            |
 | Kuna              | Y       | Y          | Y       |         | User-Defined| Y        | kuna              |
 | KyberNetwork      | Y       | N          | N       |         | Y           | Y        | kyber_network     |
-| LakeBTC           | Y       |            |         |         | Y           | Y         | lakebtc           |
+| LakeBTC           | Y       |            |         |         | Y           | Y        | lakebtc           |
 | Latoken           | Y       |            |         |         | Y           | Y        | latoken           |
 | Lbank             | Y       | Y          | Y       |         | Y           | Y        | lbank             |
+| Letsdocoinz       | Y       |            |         |         | Y           |          | letsdocoinz       |
 | Liqui             | Y       |            |         |         | Y           |          | liqui             |
 | LiteBit.eu        | Y       |            |         |         | Y           |          | litebiteu         |
 | Livecoin          | Y       |            |         |         | Y           |          | livecoin          |
