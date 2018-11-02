@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://xapi.finexbox.com/v1/orders?count=200&market=eth_btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - xapi.finexbox.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 15 May 2018 06:42:15 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc44e1d084fd1e6562ed6a16cc0c689e11526366534; expires=Wed, 15-May-19
+        06:42:14 GMT; path=/; domain=.xapi.finexbox.com; HttpOnly; Secure
+      X-Powered-By:
+      - PHP/7.1.14
+      Cache-Control:
+      - no-cache, private
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"result":{"buy":[{"amount":"0.14429176","price":"0.08480325"},{"amount":"0.06292000","price":"0.08479310"},{"amount":"0.04693100","price":"0.08478295"},{"amount":"0.06860000","price":"0.08477280"},{"amount":"0.19391079","price":"0.08476265"},{"amount":"0.86599799","price":"0.08475250"},{"amount":"0.33079596","price":"0.08474235"},{"amount":"0.43207956","price":"0.08473220"},{"amount":"0.19895553","price":"0.08472205"},{"amount":"0.06342864","price":"0.08471190"},{"amount":"0.29066000","price":"0.08470175"},{"amount":"0.40969600","price":"0.08469160"},{"amount":"0.31394569","price":"0.08468145"},{"amount":"0.15683900","price":"0.08467130"},{"amount":"0.04580000","price":"0.08466115"},{"amount":"0.02756094","price":"0.08465100"},{"amount":"0.46910235","price":"0.08464085"},{"amount":"0.53142246","price":"0.08463070"},{"amount":"0.05090000","price":"0.08462055"},{"amount":"0.20812435","price":"0.08461040"},{"amount":"0.33850000","price":"0.08460025"},{"amount":"0.40605149","price":"0.08459010"},{"amount":"0.26235818","price":"0.08457995"},{"amount":"0.62996875","price":"0.08456980"},{"amount":"0.40050456","price":"0.08455965"},{"amount":"0.84031419","price":"0.08454950"},{"amount":"0.12112275","price":"0.08453935"},{"amount":"0.21983813","price":"0.08452920"},{"amount":"0.31421624","price":"0.08451905"},{"amount":"28.60269209","price":"0.08450890"},{"amount":"0.54261734","price":"0.08449875"}],"sell":[{"amount":"0.34576480","price":"0.08523970"},{"amount":"0.37753000","price":"0.08524985"},{"amount":"1.33064579","price":"0.08526000"},{"amount":"0.46036009","price":"0.08527015"},{"amount":"2.25477670","price":"0.08528030"},{"amount":"2.46983229","price":"0.08529045"},{"amount":"0.85211473","price":"0.08530060"},{"amount":"0.53115979","price":"0.08531075"},{"amount":"1.11106528","price":"0.08532090"},{"amount":"0.23698000","price":"0.08533105"},{"amount":"0.70848366","price":"0.08534120"},{"amount":"2.43532858","price":"0.08535135"},{"amount":"0.96027802","price":"0.08536150"}]}}'
+    http_version: 
+  recorded_at: Tue, 15 May 2018 06:42:15 GMT
+recorded_with: VCR 4.0.0

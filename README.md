@@ -186,6 +186,7 @@ Or install it yourself as:
 | Fisco             | Y       | Y          | Y       |         | Y           | Y        | fisco             |
 | Forkdelta         | Y       | N          | N       |         | Y           | Y        | forkdelta         |
 | Freiexchange      | Y       | Y          |         |         | User-Defined| Y        | freiexchange      |
+| FinexBox          | Y       | Y          |         |         | Y           | Y        | finexbox          |
 | Gate              | Y       | Y          | Y       |         | Y           | Y        | gate              |
 | Gatecoin          | Y       |            |         |         | Y           |          | gatecoin          |
 | GDAX(Coinbase Pro)| Y       |            |         |         | Y           | Y        | gdax              |
