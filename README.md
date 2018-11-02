@@ -51,6 +51,7 @@ Or install it yourself as:
 | Bit-Z             | Y       |            |         |         | Y           |          | bit_z             |
 | Bitbank           | Y       | Y          | Y       |         | User-Defined| Y        | bitbank           |
 | Bitbay            | Y       |            |         |         | User-Defined|          | bitbay            |
+| Bitbegin          | Y       | N          | N       |         | Y           | Y        | bitbegin          |
 | BitBNS            | Y       |            |         |         | Y           |          | bitbns            |
 | Bitbox (Auth)     | Y       |            |         |         | User-Defined| Y        | bitbox            |
 | Bitconnect        | Y       |            |         |         | Y           |          | bitconnect        |

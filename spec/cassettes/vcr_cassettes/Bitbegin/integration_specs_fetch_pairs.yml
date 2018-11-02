@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitbegin.io/api/getmarkets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitbegin.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Oct 2018 04:07:24 GMT
+      Content-Type:
+      - text/plain;charset=ISO-8859-1
+      Content-Length:
+      - '7480'
+      Connection:
+      - close
+      Server:
+      - nginx/1.12.1
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ISO-8859-1
+      string: '{"result":[{"MarketCurrency":"EXBT","BaseCurrency":"BINS","MarketCurrencyLong":"EXHIBITTOKEN
+        ","BaseCurrencyLong":"BITSENSE","MinTradeSize":"0.0000000","MarketName":"EXBT_BINS","IsActive":true,"Created":"2018-09-30
+        09:57:00.0"},{"MarketCurrency":"OMG","BaseCurrency":"BIB","MarketCurrencyLong":"OMISEGO","BaseCurrencyLong":"BITBEGIN
+        COIN","MinTradeSize":"0.0000000","MarketName":"OMG_BIB","IsActive":true,"Created":"2018-10-24
+        19:57:56.0"},{"MarketCurrency":"ICX","BaseCurrency":"BIB","MarketCurrencyLong":"ICON","BaseCurrencyLong":"BITBEGIN
+        COIN","MinTradeSize":"0.0000000","MarketName":"ICX_BIB","IsActive":true,"Created":"2018-10-24
+        19:59:05.0"},{"MarketCurrency":"GVT","BaseCurrency":"BIB","MarketCurrencyLong":"GENESIS
+        VISION","BaseCurrencyLong":"BITBEGIN COIN","MinTradeSize":"0.0000000","MarketName":"GVT_BIB","IsActive":true,"Created":"2018-10-24
+        19:56:19.0"},{"MarketCurrency":"TUSD","BaseCurrency":"BIB","MarketCurrencyLong":"TRUEUSD
+        ","BaseCurrencyLong":"BITBEGIN COIN","MinTradeSize":"0.0000000","MarketName":"TUSD_BIB","IsActive":true,"Created":"2018-10-24
+        19:58:04.0"},{"MarketCurrency":"STCDR","BaseCurrency":"BINS","MarketCurrencyLong":"SMARTER  THAN
+        CRYPTO","BaseCurrencyLong":"BITSENSE","MinTradeSize":"0.0000000","MarketName":"STCDR_BINS","IsActive":true,"Created":"2018-09-20
+        22:55:45.0"},{"MarketCurrency":"STCDR","BaseCurrency":"ETH","MarketCurrencyLong":"SMARTER  THAN
+        CRYPTO","BaseCurrencyLong":"ETHEREUM","MinTradeSize":"0.0000000","MarketName":"STCDR_ETH","IsActive":true,"Created":"2018-09-20
+        22:55:20.0"},{"MarketCurrency":"BIB","BaseCurrency":"BTC","MarketCurrencyLong":"BITBEGIN
+        COIN","BaseCurrencyLong":"BITCOIN","MinTradeSize":"0.0000000","MarketName":"BIB_BTC","IsActive":true,"Created":"2018-10-22
+        10:11:37.0"},{"MarketCurrency":"BAT","BaseCurrency":"BTC","MarketCurrencyLong":"BASIC
+        ATTENTION TOKEN","BaseCurrencyLong":"BITCOIN","MinTradeSize":"0.0000000","MarketName":"BAT_BTC","IsActive":true,"Created":"2018-10-06
+        10:23:55.0"},{"MarketCurrency":"ICX","BaseCurrency":"BTC","MarketCurrencyLong":"ICON","BaseCurrencyLong":"BITCOIN","MinTradeSize":"0.0000000","MarketName":"ICX_BTC","IsActive":true,"Created":"2018-10-06
+        12:16:19.0"},{"MarketCurrency":"TUSD","BaseCurrency":"BTC","MarketCurrencyLong":"TRUEUSD
+        ","BaseCurrencyLong":"BITCOIN","MinTradeSize":"0.0000000","MarketName":"TUSD_BTC","IsActive":true,"Created":"2018-10-06
+        12:34:54.0"},{"MarketCurrency":"OMG","BaseCurrency":"BTC","MarketCurrencyLong":"OMISEGO","BaseCurrencyLong":"BITCOIN","MinTradeSize":"0.0000000","MarketName":"OMG_BTC","IsActive":true,"Created":"2018-10-06
+        11:58:00.0"},{"MarketCurrency":"SHEL","BaseCurrency":"ETH","MarketCurrencyLong":"SHELTERDAO","BaseCurrencyLong":"ETHEREUM","MinTradeSize":"0.0000000","MarketName":"SHEL_ETH","IsActive":true,"Created":"2018-09-29
+        15:55:13.0"},{"MarketCurrency":"BIB","BaseCurrency":"ETH","MarketCurrencyLong":"BITBEGIN
+        COIN","BaseCurrencyLong":"ETHEREUM","MinTradeSize":"0.0000000","MarketName":"BIB_ETH","IsActive":true,"Created":"2018-10-22
+        10:11:50.0"},{"MarketCurrency":"EXBT","BaseCurrency":"ETH","MarketCurrencyLong":"EXHIBITTOKEN
+        ","BaseCurrencyLong":"ETHEREUM","MinTradeSize":"0.0000000","MarketName":"EXBT_ETH","IsActive":true,"Created":"2018-09-30
+        09:53:49.0"},{"MarketCurrency":"BINS","BaseCurrency":"BTC","MarketCurrencyLong":"BITSENSE","BaseCurrencyLong":"BITCOIN","MinTradeSize":"0.0000000","MarketName":"BINS_BTC","IsActive":true,"Created":"2018-09-20
+        22:41:51.0"},{"MarketCurrency":"SHEL","BaseCurrency":"BINS","MarketCurrencyLong":"SHELTERDAO","BaseCurrencyLong":"BITSENSE","MinTradeSize":"0.0000000","MarketName":"SHEL_BINS","IsActive":true,"Created":"2018-09-29
+        15:55:01.0"},{"MarketCurrency":"TUSD","BaseCurrency":"ETH","MarketCurrencyLong":"TRUEUSD
+        ","BaseCurrencyLong":"ETHEREUM","MinTradeSize":"0.0000000","MarketName":"TUSD_ETH","IsActive":true,"Created":"2018-10-06
+        12:33:50.0"},{"MarketCurrency":"BAT","BaseCurrency":"ETH","MarketCurrencyLong":"BASIC
+        ATTENTION TOKEN","BaseCurrencyLong":"ETHEREUM","MinTradeSize":"0.0000000","MarketName":"BAT_ETH","IsActive":true,"Created":"2018-10-06
+        10:38:38.0"},{"MarketCurrency":"OMG","BaseCurrency":"ETH","MarketCurrencyLong":"OMISEGO","BaseCurrencyLong":"ETHEREUM","MinTradeSize":"0.0000000","MarketName":"OMG_ETH","IsActive":true,"Created":"2018-10-06
+        11:55:50.0"},{"MarketCurrency":"BINS","BaseCurrency":"ETH","MarketCurrencyLong":"BITSENSE","BaseCurrencyLong":"ETHEREUM","MinTradeSize":"0.0000000","MarketName":"BINS_ETH","IsActive":true,"Created":"2018-09-20
+        22:41:18.0"},{"MarketCurrency":"GVT","BaseCurrency":"ETH","MarketCurrencyLong":"GENESIS
+        VISION","BaseCurrencyLong":"ETHEREUM","MinTradeSize":"0.0000000","MarketName":"GVT_ETH","IsActive":true,"Created":"2018-10-06
+        12:23:53.0"},{"MarketCurrency":"GVT","BaseCurrency":"BTC","MarketCurrencyLong":"GENESIS
+        VISION","BaseCurrencyLong":"BITCOIN","MinTradeSize":"0.0000000","MarketName":"GVT_BTC","IsActive":true,"Created":"2018-10-06
+        12:25:28.0"},{"MarketCurrency":"BAT","BaseCurrency":"BINS","MarketCurrencyLong":"BASIC
+        ATTENTION TOKEN","BaseCurrencyLong":"BITSENSE","MinTradeSize":"0.0000000","MarketName":"BAT_BINS","IsActive":true,"Created":"2018-10-06
+        10:28:07.0"},{"MarketCurrency":"ETH","BaseCurrency":"BTC","MarketCurrencyLong":"ETHEREUM","BaseCurrencyLong":"BITCOIN","MinTradeSize":"0.0000000","MarketName":"ETH_BTC","IsActive":true,"Created":"2018-09-20
+        22:47:51.0"},{"MarketCurrency":"TUSD","BaseCurrency":"BINS","MarketCurrencyLong":"TRUEUSD
+        ","BaseCurrencyLong":"BITSENSE","MinTradeSize":"0.0000000","MarketName":"TUSD_BINS","IsActive":true,"Created":"2018-10-06
+        12:36:02.0"},{"MarketCurrency":"BAT","BaseCurrency":"BIB","MarketCurrencyLong":"BASIC
+        ATTENTION TOKEN","BaseCurrencyLong":"BITBEGIN COIN","MinTradeSize":"0.0000000","MarketName":"BAT_BIB","IsActive":true,"Created":"2018-10-24
+        19:58:20.0"},{"MarketCurrency":"ICX","BaseCurrency":"ETH","MarketCurrencyLong":"ICON","BaseCurrencyLong":"ETHEREUM","MinTradeSize":"0.0000000","MarketName":"ICX_ETH","IsActive":true,"Created":"2018-10-06
+        12:14:57.0"},{"MarketCurrency":"BIB","BaseCurrency":"NGN","MarketCurrencyLong":"BITBEGIN
+        COIN","BaseCurrencyLong":"NAIRA","MinTradeSize":"0.0000000","MarketName":"BIB_NGN","IsActive":true,"Created":"2018-10-22
+        10:11:23.0"},{"MarketCurrency":"OMG","BaseCurrency":"BINS","MarketCurrencyLong":"OMISEGO","BaseCurrencyLong":"BITSENSE","MinTradeSize":"0.0000000","MarketName":"OMG_BINS","IsActive":true,"Created":"2018-10-06
+        11:59:12.0"},{"MarketCurrency":"GVT","BaseCurrency":"BINS","MarketCurrencyLong":"GENESIS
+        VISION","BaseCurrencyLong":"BITSENSE","MinTradeSize":"0.0000000","MarketName":"GVT_BINS","IsActive":true,"Created":"2018-10-06
+        12:26:20.0"},{"MarketCurrency":"TUSD","BaseCurrency":"NGN","MarketCurrencyLong":"TRUEUSD
+        ","BaseCurrencyLong":"NAIRA","MinTradeSize":"0.0000000","MarketName":"TUSD_NGN","IsActive":true,"Created":"2018-10-06
+        12:37:05.0"},{"MarketCurrency":"BINS","BaseCurrency":"NGN","MarketCurrencyLong":"BITSENSE","BaseCurrencyLong":"NAIRA","MinTradeSize":"0.0000000","MarketName":"BINS_NGN","IsActive":true,"Created":"2018-09-20
+        22:44:14.0"},{"MarketCurrency":"ETH","BaseCurrency":"NGN","MarketCurrencyLong":"ETHEREUM","BaseCurrencyLong":"NAIRA","MinTradeSize":"0.0000000","MarketName":"ETH_NGN","IsActive":true,"Created":"2018-09-20
+        22:48:38.0"},{"MarketCurrency":"BTC","BaseCurrency":"NGN","MarketCurrencyLong":"BITCOIN","BaseCurrencyLong":"NAIRA","MinTradeSize":"0.0000000","MarketName":"BTC_NGN","IsActive":true,"Created":"2018-10-01
+        18:31:46.0"}],"success":true,"message":""}'
+    http_version: 
+  recorded_at: Sun, 28 Oct 2018 04:07:24 GMT
+recorded_with: VCR 4.0.0
