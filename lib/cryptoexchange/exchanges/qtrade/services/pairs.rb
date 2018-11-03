@@ -21,6 +21,7 @@ module Cryptoexchange::Exchanges
             market_pair.market = Qtrade::Market::NAME
             market_pairs << market_pair
           end
+          market_pairs
         end
       end
     end
