@@ -4,17 +4,32 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            true
+            false
           end
         end
 
-        def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output, market_pair)
+        def fetch
+          output = super(ticker_url)
+          adapt_all(output)
         end
 
-        def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Coinpulse::Market::API_URL}/ticker/#{market_pair.base}_#{market_pair.target}"
+        def ticker_url
+          # See comments here: https://github.com/coingecko/cryptoexchange/pull/1064
+          # As of 11/04/18 ticker urls don't return the correct volume value
+          # Need to use a endpoint to retrieve all tickers instead
+          "#{Cryptoexchange::Exchanges::Coinpulse::Market::API_URL}/returnTicker"
+        end
+
+        def adapt_all(output)
+          output.map do |key, pair|
+              base, target = key.split("_")
+              market_pair = Cryptoexchange::Models::MarketPair.new(
+                base: base,
+                target: target,
+                market: Coinrail::Market::NAME
+              )
+              adapt(pair, market_pair)
+          end
         end
 
         def adapt(output, market_pair)
@@ -25,14 +40,11 @@ module Cryptoexchange::Exchanges
           ticker.base      = base
           ticker.target    = target
           ticker.market    = Coinpulse::Market::NAME
-
-          if output.key?('result') and !output['result'][0].nil?
-            ticker.ask       = NumericHelper.to_d(output['result'][0]['Ask'])
-            ticker.bid       = NumericHelper.to_d(output['result'][0]['Bid'])
-            ticker.high      = NumericHelper.to_d(output['result'][0]['High'])
-            ticker.last      = NumericHelper.to_d(output['result'][0]['Last'])
-            ticker.volume    = NumericHelper.to_d(output['result'][0]['BaseVolume'])
-          end
+          ticker.ask       = NumericHelper.to_d(output['lowestAsk'])
+          ticker.bid       = NumericHelper.to_d(output['highestBid'])
+          ticker.high      = NumericHelper.to_d(output['high24hr'])
+          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.volume    = NumericHelper.to_d(output['baseVolume'])
 
           ticker.timestamp = nil
           ticker.payload   = output
