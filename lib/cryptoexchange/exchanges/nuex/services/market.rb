@@ -7,6 +7,7 @@ module Cryptoexchange::Exchanges
             false
           end
         end
+
         def fetch
           output = super(ticker_url)
           adapt_all(output)
@@ -18,7 +19,8 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |pair|
-            base, target = pair['symbol'].split(/(BTC)+(.*)|(ETH$)+(.*)|(XRP$)+(.*)/)
+            # find match by capturing BTC / ETH / XRP and removing any empty strings returned
+            base, target = pair['symbol'].split(/(BTC)+(.*)|(ETH$)+(.*)|(XRP$)+(.*)/).reject(&:empty?)
             next unless base && target
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
@@ -41,7 +43,7 @@ module Cryptoexchange::Exchanges
           ticker.low = NumericHelper.to_d(output['lowPrice'])
           ticker.volume = NumericHelper.to_d(output['volume'].to_f/output['lastPrice'].to_f)
           ticker.change = NumericHelper.to_d(output['priceChangePercent'])
-          ticker.timestamp = output['closeTime']/1000
+          ticker.timestamp = nil
           ticker.payload = output
           ticker
         end
