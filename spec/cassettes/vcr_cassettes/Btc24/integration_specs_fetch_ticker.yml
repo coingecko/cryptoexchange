@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cryptottlivewebapi.btc24.io:8443/api/v1/public/ticker/BTCUSD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      Connection:
+      - close
+      Host:
+      - cryptottlivewebapi.btc24.io:8443
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '203'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      Server:
+      - Microsoft-HTTPAPI/2.0
+      Date:
+      - Fri, 27 Apr 2018 12:15:16 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: !binary |-
+        H4sIAAAAAAAEAG2PvQ7CIBhF9z5F09kQKNAWN7Gjg0nRxTigZWiE1PRnaIzvLtSQ0KbrOffeD26fKE5K2ehJdLJWtWgHqa+tHo1K9jEEkOyWgUrpwK8kH6ftLlf94Jrnrnkui87YmhcsJRDQNHP+JP8l0RgbkuZtPaJpWhCIKCowDEPhXRwKv5xDDAFj1Dt7dDVM8oIxlOUFCTLhLgr41oPdXw79y1GcUYA84009M4gAxjOtJvNotYUJF8dLVSbR9/4D9NEtWYsBAAA=
+    http_version: 
+  recorded_at: Fri, 27 Apr 2018 12:15:18 GMT
+recorded_with: VCR 4.0.0

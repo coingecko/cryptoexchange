@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cryptottlivewebapi.btc24.io:8443/api/v1/public/level2/BTCUSD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip
+      Connection:
+      - close
+      Host:
+      - cryptottlivewebapi.btc24.io:8443
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '457'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Encoding:
+      - gzip
+      Server:
+      - Microsoft-HTTPAPI/2.0
+      Date:
+      - Fri, 27 Apr 2018 12:15:16 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: !binary |-
+        H4sIAAAAAAAEAKWVv24CMQzGd57idDOykjhxkm6lfYBK0C6IoX8YTuUEKu2AKt69zgmGOlfhtiPO/Rz7s/Ox/Jw07aLr1/v3x37XXjU2OJ/QukjJpykfzvho1r3wEX/atA/bzUe/5l8GTJyWyN1b91wCGY0FRDsEF4ddibWFnDTHc6Lr/WuVyEbwJDJRgO95CnjO073sObT8TzlVLxYlbABN1sGCdTlBIKdhnSQJMkUVCZFGYA1qJef/xiU6dX5RIDOCOqNSyCKEijaskk6kVKNGORrAIOCYdUIhOLkSMUBQXWtAdsuoS0qhK1Y5Wg8hC5S42aiCHTgvYX6/WbXHZR4S5qJVz9aCq6pWNjyyk8Rj05Ysx1tYO1rzqlgWu9eIZf3K+KoanPAOjFzDaRAXYdn8AOegg0l6ZVQWbUfuJbBG2bFk+S1br6xZlpw8IKnE8mC8hNn4clYqLSec4jl2Wa0g2QRe13HtXpj57zArpa7mlB3o1sNBdS+BT0pWKs1sED7yA4uQBewNGxOhruFAElY/RDlhbwhM0q4H1rDqXtY5STQCetVOW8gVnGC05MG/5of+absZXG1xcz+/bSfH1Rc0AUpsOgoAAA==
+    http_version: 
+  recorded_at: Fri, 27 Apr 2018 12:15:18 GMT
+recorded_with: VCR 4.0.0
