@@ -33,6 +33,7 @@ module Cryptoexchange::Exchanges
           ticker.ask       = NumericHelper.to_d(output['sell_price'])
           ticker.high      = NumericHelper.to_d(output['max_price'])
           ticker.low       = NumericHelper.to_d(output['min_price'])
+          ticker.last      = NumericHelper.to_d(output['new_price'])
           ticker.volume    = NumericHelper.to_d(output['24h_num'])
           ticker.timestamp = nil
           ticker.payload   = [pair, output]
