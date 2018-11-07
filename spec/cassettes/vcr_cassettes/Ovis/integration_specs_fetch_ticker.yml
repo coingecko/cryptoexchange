@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ovis.com.tr/public/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.ovis.com.tr
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 07 Oct 2018 22:39:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '10662'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=da0b00743806da888f9e2e9db640c309d1538951947; expires=Mon, 07-Oct-19
+        22:39:07 GMT; path=/; domain=.ovis.com.tr; HttpOnly; Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, auth_token,ovs_token
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, OPTIONS
+      Etag:
+      - W/"29a6-0+Q2zBCseaNIGH7i9Du+w/A31fQ"
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4663dca69cbb06dc-LHR
+    body:
+      encoding: UTF-8
+      string: '{"status":1,"data":[{"id":"BTCTRL","ask":"42750.00","bid":"42011.00","last":"42257.00","high":"43000.00","low":"41000.00","volume":"240.33","daily_change":"315.00","daily_change_perc":"0.75","name":"BTC/TRL","prec_start_index":2,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"BTC","curr_main_name":"Bitcoin","curr_main_limit":0.001,"curr_target_limit":10,"do":1},{"id":"ETHTRL","ask":"1579.000","bid":"1319.000","last":"1372.000","high":"1383.000","low":"1352.000","volume":"179.82","daily_change":"-7.000","daily_change_perc":"-0.51","name":"ETH/TRL","prec_start_index":3,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"ETH","curr_main_name":"Ethereum","curr_main_limit":0.001,"curr_target_limit":10,"do":2},{"id":"DSHTRL","ask":"1275.000","bid":"939.000","last":"1102.000","high":"1135.000","low":"1077.000","volume":"176.96","daily_change":"-1.000","daily_change_perc":"-0.09","name":"DSH/TRL","prec_start_index":3,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"DSH","curr_main_name":"Dashcoin","curr_main_limit":0.001,"curr_target_limit":10,"do":3},{"id":"LTCTRL","ask":"400.0000","bid":"338.0000","last":"353.0000","high":"357.0000","low":"347.0000","volume":"1672.50","daily_change":"-4.0000","daily_change_perc":"-1.12","name":"LTC/TRL","prec_start_index":4,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"LTC","curr_main_name":"Litecoin","curr_main_limit":0.01,"curr_target_limit":10,"do":4},{"id":"DOGTRL","ask":"0.04070","bid":"0.02710","last":"0.03380","high":"0.03480","low":"0.03320","volume":"27093118.46","daily_change":"-0.00060","daily_change_perc":"-1.74","name":"DOG/TRL","prec_start_index":5,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"DOG","curr_main_name":"Dogecoin","curr_main_limit":10,"curr_target_limit":10,"do":5},{"id":"ETCTRL","ask":"76.0000","bid":"56.0000","last":"66.0000","high":"67.0000","low":"65.0000","volume":"11173.32","daily_change":"-1.0000","daily_change_perc":"-1.49","name":"ETC/TRL","prec_start_index":4,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"ETC","curr_main_name":"Ethereum Classic","curr_main_limit":0.01,"curr_target_limit":10,"do":6},{"id":"IOTTRL","ask":"4.0000","bid":"3.2000","last":"3.5000","high":"3.5000","low":"3.4000","volume":"290667.56","daily_change":"0.0000","daily_change_perc":"0.00","name":"IOT/TRL","prec_start_index":4,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"IOT","curr_main_name":"Iota","curr_main_limit":1,"curr_target_limit":10,"do":7},{"id":"OMGTRL","ask":"25.000","bid":"20.000","last":"21.000","high":"21.000","low":"21.000","volume":"57214.30","daily_change":"0.000","daily_change_perc":"0.00","name":"OMG/TRL","prec_start_index":3,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"OMG","curr_main_name":"OmiseGo","curr_main_limit":0.1,"curr_target_limit":10,"do":8},{"id":"NEOTRL","ask":"126.000","bid":"94.000","last":"110.000","high":"112.000","low":"108.000","volume":"1600.20","daily_change":"0.000","daily_change_perc":"0.00","name":"NEO/TRL","prec_start_index":3,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"NEO","curr_main_name":"Neo","curr_main_limit":0.01,"curr_target_limit":10,"do":9},{"id":"EOSTRL","ask":"40.4000","bid":"29.8000","last":"35.1000","high":"35.3000","low":"34.3000","volume":"41133.80","daily_change":"-0.2000","daily_change_perc":"-0.57","name":"EOS/TRL","prec_start_index":4,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"EOS","curr_main_name":"Eos","curr_main_limit":0.05,"curr_target_limit":10,"do":10},{"id":"XRPTRL","ask":"3.2500","bid":"2.8800","last":"2.9000","high":"3.1600","low":"2.8500","volume":"274007.32","daily_change":"-0.2500","daily_change_perc":"-7.94","name":"XRP/TRL","prec_start_index":4,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"XRP","curr_main_name":"Ripple","curr_main_limit":1,"curr_target_limit":10,"do":11},{"id":"XMRTRL","ask":"689.000","bid":"590.000","last":"688.000","high":"700.000","low":"684.000","volume":"869.68","daily_change":"-9.000","daily_change_perc":"-1.29","name":"XMR/TRL","prec_start_index":3,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"XMR","curr_main_name":"Monero","curr_main_limit":0.01,"curr_target_limit":10,"do":12},{"id":"ZECTRL","ask":"877.000","bid":"649.000","last":"759.000","high":"783.000","low":"751.000","volume":"732.74","daily_change":"-19.000","daily_change_perc":"-2.44","name":"ZEC/TRL","prec_start_index":3,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"ZEC","curr_main_name":"ZCash","curr_main_limit":0.001,"curr_target_limit":10,"do":13},{"id":"BCHTRL","ask":"3609.000","bid":"2888.000","last":"3137.000","high":"3162.000","low":"3048.000","volume":"345.86","daily_change":"-12.000","daily_change_perc":"-0.38","name":"BCH/TRL","prec_start_index":3,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"BCH","curr_main_name":"Bitcoin Cash","curr_main_limit":0.001,"curr_target_limit":10,"do":14},{"id":"BTGTRL","ask":"190.000","bid":"139.000","last":"164.000","high":"189.000","low":"162.000","volume":"1046.64","daily_change":"-2.000","daily_change_perc":"-1.20","name":"BTG/TRL","prec_start_index":3,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"BTG","curr_main_name":"Bitcoin Gold","curr_main_limit":0.05,"curr_target_limit":10,"do":15},{"id":"ETHBTC","ask":"0.0370000","bid":"0.0286000","last":"0.0337000","high":"0.0341000","low":"0.0335000","volume":"157.91","daily_change":"-0.0003000","daily_change_perc":"-0.88","name":"ETH/BTC","prec_start_index":7,"cur_target":"BTC","curr_target_name":"Bitcoin","curr_main":"ETH","curr_main_name":"Ethereum","curr_main_limit":0.001,"curr_target_limit":0.001,"do":16},{"id":"LTCBTC","ask":"0.00994000","bid":"0.00734000","last":"0.00864000","high":"0.00883000","low":"0.00858000","volume":"712.86","daily_change":"-0.00015000","daily_change_perc":"-1.71","name":"LTC/BTC","prec_start_index":8,"cur_target":"BTC","curr_target_name":"Bitcoin","curr_main":"LTC","curr_main_name":"Litecoin","curr_main_limit":0.01,"curr_target_limit":0.001,"do":17},{"id":"XRPBTC","ask":"0.00008200","bid":"0.00006000","last":"0.00007100","high":"0.00007800","low":"0.00007100","volume":"116673.42","daily_change":"-0.00000700","daily_change_perc":"-8.97","name":"XRP/BTC","prec_start_index":8,"cur_target":"BTC","curr_target_name":"Bitcoin","curr_main":"XRP","curr_main_name":"Ripple","curr_main_limit":1,"curr_target_limit":0.001,"do":18},{"id":"LTCETH","ask":"0.2899999999999999800","bid":"0.2099999999999999922","last":"0.2500000000000000000","high":"0.2600000000000000089","low":"0.2500000000000000000","volume":"245.39","daily_change":"-0.0100000000000000089","daily_change_perc":"-3.85","name":"LTC/ETH","prec_start_index":19,"cur_target":"ETH","curr_target_name":"Ethereum","curr_main":"LTC","curr_main_name":"Litecoin","curr_main_limit":0.01,"curr_target_limit":0.001,"do":19},{"id":"XRPETH","ask":"0.00240000","bid":"0.00178000","last":"0.00209000","high":"0.00227000","low":"0.00207000","volume":"33734.76","daily_change":"-0.00017000","daily_change_perc":"-7.52","name":"XRP/ETH","prec_start_index":8,"cur_target":"ETH","curr_target_name":"Ethereum","curr_main":"XRP","curr_main_name":"Ripple","curr_main_limit":1,"curr_target_limit":0.001,"do":20},{"id":"TRXTRL","ask":"0.1660","bid":"0.1330","last":"0.1560","high":"0.1580","low":"0.1400","volume":"1412669.39","daily_change":"0.0150","daily_change_perc":"10.64","name":"TRX/TRL","prec_start_index":4,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"TRX","curr_main_name":"TRON","curr_main_limit":10,"curr_target_limit":10,"do":21},{"id":"SNTTRL","ask":"0.280","bid":"0.200","last":"0.240","high":"0.250","low":"0.230","volume":"503358.40","daily_change":"0.010","daily_change_perc":"4.35","name":"SNT/TRL","prec_start_index":3,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"SNT","curr_main_name":"Status","curr_main_limit":10,"curr_target_limit":10,"do":22},{"id":"XLMTRL","ask":"1.720","bid":"1.280","last":"1.480","high":"1.500","low":"1.440","volume":"219573.32","daily_change":"-0.020","daily_change_perc":"-1.33","name":"XLM/TRL","prec_start_index":3,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"XLM","curr_main_name":"Stellar","curr_main_limit":10,"curr_target_limit":10,"do":23},{"id":"GVTTRL","ask":"77.200","bid":"56.600","last":"67.100","high":"77.000","low":"63.900","volume":"4840.47","daily_change":"-3.000","daily_change_perc":"-4.28","name":"GVT/TRL","prec_start_index":3,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"GVT","curr_main_name":"Genesis Vision","curr_main_limit":0.1,"curr_target_limit":10,"do":24},{"id":"ABTCTRL","ask":"1.00000000","bid":"0.10000000","last":"0.00000000","high":"0.00000000","low":"0.00000000","volume":"0.00","daily_change":"0.00000000","daily_change_perc":"0.00","name":"ABTC/TRL","prec_start_index":8,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"ABTC","curr_main_name":"AML Bitcoin","curr_main_limit":0.001,"curr_target_limit":10,"do":26},{"id":"ABTCBTC","ask":"0.00000000","bid":"0.00000000","last":"0.00000000","high":"0.00000000","low":"0.00000000","volume":"0.00","daily_change":"0.00000000","daily_change_perc":"0.00","name":"ABTC/BTC","prec_start_index":8,"cur_target":"BTC","curr_target_name":"Bitcoin","curr_main":"ABTC","curr_main_name":"AML
+        Bitcoin","curr_main_limit":0.001,"curr_target_limit":0.00001,"do":27},{"id":"ABTCETH","ask":"0.00000000","bid":"0.00000000","last":"0.00000000","high":"0.00000000","low":"0.00000000","volume":"0.00","daily_change":"0.00000000","daily_change_perc":"0.00","name":"ABTC/ETH","prec_start_index":8,"cur_target":"ETH","curr_target_name":"Ethereum","curr_main":"ABTC","curr_main_name":"AML
+        Bitcoin","curr_main_limit":0.001,"curr_target_limit":0.00001,"do":28},{"id":"JOINTBTC","ask":"0.000020","bid":"0.000000","last":"0.000000","high":"0.000000","low":"0.000000","volume":"0.00","daily_change":"0.000000","daily_change_perc":"0.00","name":"JOINT/BTC","prec_start_index":6,"cur_target":"BTC","curr_target_name":"Bitcoin","curr_main":"JOINT","curr_main_name":"JOINT","curr_main_limit":100,"curr_target_limit":0.001,"do":29},{"id":"QTUMTRL","ask":"26.600","bid":"19.600","last":"23.100","high":"23.200","low":"22.600","volume":"6157.64","daily_change":"0.000","daily_change_perc":"0.00","name":"QTUM/TRL","prec_start_index":3,"cur_target":"TRL","curr_target_name":"Türk
+        Lirası","curr_main":"QTUM","curr_main_name":"QTUM","curr_main_limit":0.1,"curr_target_limit":10,"do":30}],"debug":null}'
+    http_version: 
+  recorded_at: Sun, 07 Oct 2018 22:39:07 GMT
+recorded_with: VCR 4.0.0

@@ -263,6 +263,7 @@ Or install it yourself as:
 | OrderBook         | Y       | Y          | Y       |         | Y           | Y        | orderbook         |
 | Ore Bz            | Y       | Y          | Y       |         | Y           | Y        | ore_bz            |
 | OTCBTC            | Y       | Y          | Y       |         | Y           |          | otcbtc            |
+| Ovis              | Y       |            |         |         | Y           |          | ovis              |
 | P2pb2b            | Y       |            |         |         | Y           |          | p2pb2b            |
 | Paribu            | Y       |            |         |         | Y           |          | paribu            |
 | Paro Exchange     | Y       |            |         |         | Y           |          | paroexchange      |
