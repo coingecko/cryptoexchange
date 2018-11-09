@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sapotaexchange.com/api/v2/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sapotaexchange.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 06 Oct 2018 17:20:22 GMT
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.8/2017-09-14)
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '897'
+      X-Meta-Request-Version:
+      - 0.2.8
+      Etag:
+      - '"4808d6bf702a4361eda174e3f7d25646"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 460934ec-37b3-485e-a903-77dc6d60e347
+      X-Runtime:
+      - '0.644671'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ethbtc":{"at":1538846421,"ticker":{"buy":"0.035448","sell":"0.033664","low":"0.033881","high":"0.034392","last":"0.034373","vol":"29822.15193"}},"ltceth":{"at":1538846422,"ticker":{"buy":"0.26871","sell":"0.25371","low":"0.25369","high":"0.25889","last":"0.25519","vol":"2081.12583"}},"ltcbtc":{"at":1538846422,"ticker":{"buy":"0.009424","sell":"0.008822","low":"0.008813","high":"0.00892","last":"0.008816","vol":"4019.15919"}},"sapotabtc":{"at":1538846422,"ticker":{"buy":"0.00159786","sell":"0.00104131","low":"0.00156921","high":"0.00159986","last":"0.0015968","vol":"5706.291"}},"sapotaltc":{"at":1538846422,"ticker":{"buy":"0.16334074","sell":"0.13143425","low":"0.14618509","high":"0.16459641","last":"0.15814929","vol":"5947.132"}},"sapotaeth":{"at":1538846422,"ticker":{"buy":"0.04699348","sell":"0.03499207","low":"0.04614021","high":"0.0469485","last":"0.04614021","vol":"4995.661"}}}'
+    http_version: 
+  recorded_at: Sat, 06 Oct 2018 17:20:23 GMT
+recorded_with: VCR 4.0.0

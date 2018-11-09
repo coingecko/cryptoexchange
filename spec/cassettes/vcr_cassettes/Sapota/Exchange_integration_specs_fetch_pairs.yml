@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sapotaexchange.com/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - sapotaexchange.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 06 Oct 2018 17:11:08 GMT
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.8/2017-09-14)
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '217'
+      X-Meta-Request-Version:
+      - 0.2.8
+      Etag:
+      - '"e4e9e5cfba162eda7379d8be49d55a0a"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cb9b1ae4-7d19-4a69-b10b-4ae3d9d089dd
+      X-Runtime:
+      - '0.014122'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"ethbtc","name":"ETH/BTC"},{"id":"ltceth","name":"LTC/ETH"},{"id":"ltcbtc","name":"LTC/BTC"},{"id":"sapotabtc","name":"SAPOTA/BTC"},{"id":"sapotaltc","name":"SAPOTA/LTC"},{"id":"sapotaeth","name":"SAPOTA/ETH"}]'
+    http_version: 
+  recorded_at: Sat, 06 Oct 2018 17:11:09 GMT
+recorded_with: VCR 4.0.0
