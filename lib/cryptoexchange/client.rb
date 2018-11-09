@@ -1,7 +1,7 @@
 module Cryptoexchange
   class Client
-    def initialize(ticker_ttl: 3)
-      LruTtlCache.ticker_cache(ticker_ttl)
+    def initialize(ticker_ttl: 3, cache_size: 200)
+      LruTtlCache.ticker_cache(ticker_ttl, cache_size)
     end
 
     def trade_page_url(exchange, args={})
