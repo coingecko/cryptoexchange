@@ -74,6 +74,7 @@ Or install it yourself as:
 | Bitmex            | Y       | Y          | Y       |         | Y           |          | bitmex            |
 | BitOnBay          | Y       |            |         |         | Y           |          | bitonbay          |
 | Bitpaction        | Y       | Y          | Y       |         | Y           |          | bitpaction        |
+| Bitrabbit         | Y       | N          | N       |         | Y           | Y        | bitrabbit         |
 | Bitrue            | Y       | N          | N       |         | Y           | Y        | bitrue            |
 | Bits Blockchain   | Y       | Y          |         |         | Y           |          | bits_blockchain   |
 | Bitsane           | Y       | Y          |         |         | Y           |          | bitsane           |
