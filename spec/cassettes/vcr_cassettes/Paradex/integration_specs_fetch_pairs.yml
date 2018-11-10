@@ -1,0 +1,166 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.paradex.io/consumer/v0/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Api-Key:
+      - blah
+      Connection:
+      - close
+      Host:
+      - api.paradex.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 27 Oct 2018 07:52:53 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d2e1e31db58627a92e139ebbf7a8aaf7a1540626772; expires=Sun, 27-Oct-19
+        07:52:52 GMT; path=/; domain=.paradex.io; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 470395efbc678466-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id": 9, "symbol": "BAT/WETH", "baseToken": "BAT", "quoteToken":
+        "WETH", "minOrderSize": "0E-18", "maxOrderSize": "40.000000000000000000",
+        "priceMaxDecimals": 6, "amountMaxDecimals": 5, "state": "enabled"}, {"id":
+        1, "symbol": "MKR/WETH", "baseToken": "MKR", "quoteToken": "WETH", "minOrderSize":
+        "0E-18", "maxOrderSize": "40.000000000000000000", "priceMaxDecimals": 5, "amountMaxDecimals":
+        3, "state": "enabled"}, {"id": 10, "symbol": "WETH/DAI", "baseToken": "WETH",
+        "quoteToken": "DAI", "minOrderSize": "0E-18", "maxOrderSize": "40000.000000000000000000",
+        "priceMaxDecimals": 5, "amountMaxDecimals": 5, "state": "enabled"}, {"id":
+        6, "symbol": "OMG/WETH", "baseToken": "OMG", "quoteToken": "WETH", "minOrderSize":
+        "0E-18", "maxOrderSize": "40.000000000000000000", "priceMaxDecimals": 5, "amountMaxDecimals":
+        5, "state": "enabled"}, {"id": 3, "symbol": "REP/WETH", "baseToken": "REP",
+        "quoteToken": "WETH", "minOrderSize": "0E-18", "maxOrderSize": "40.000000000000000000",
+        "priceMaxDecimals": 5, "amountMaxDecimals": 5, "state": "enabled"}, {"id":
+        8, "symbol": "SNT/WETH", "baseToken": "SNT", "quoteToken": "WETH", "minOrderSize":
+        "0E-18", "maxOrderSize": "40.000000000000000000", "priceMaxDecimals": 6, "amountMaxDecimals":
+        5, "state": "enabled"}, {"id": 4, "symbol": "ZRX/WETH", "baseToken": "ZRX",
+        "quoteToken": "WETH", "minOrderSize": "0E-18", "maxOrderSize": "40.000000000000000000",
+        "priceMaxDecimals": 6, "amountMaxDecimals": 5, "state": "enabled"}, {"id":
+        12, "symbol": "MKR/DAI", "baseToken": "MKR", "quoteToken": "DAI", "minOrderSize":
+        "0E-18", "maxOrderSize": "40000.000000000000000000", "priceMaxDecimals": 4,
+        "amountMaxDecimals": 4, "state": "enabled"}, {"id": 13, "symbol": "REP/DAI",
+        "baseToken": "REP", "quoteToken": "DAI", "minOrderSize": "0E-18", "maxOrderSize":
+        "40000.000000000000000000", "priceMaxDecimals": 4, "amountMaxDecimals": 4,
+        "state": "enabled"}, {"id": 14, "symbol": "ZRX/DAI", "baseToken": "ZRX", "quoteToken":
+        "DAI", "minOrderSize": "0E-18", "maxOrderSize": "40000.000000000000000000",
+        "priceMaxDecimals": 4, "amountMaxDecimals": 4, "state": "enabled"}, {"id":
+        16, "symbol": "REQ/WETH", "baseToken": "REQ", "quoteToken": "WETH", "minOrderSize":
+        "0E-18", "maxOrderSize": "40.000000000000000000", "priceMaxDecimals": 6, "amountMaxDecimals":
+        5, "state": "enabled"}, {"id": 17, "symbol": "NMR/WETH", "baseToken": "NMR",
+        "quoteToken": "WETH", "minOrderSize": "0E-18", "maxOrderSize": "40.000000000000000000",
+        "priceMaxDecimals": 5, "amountMaxDecimals": 5, "state": "enabled"}, {"id":
+        18, "symbol": "NMR/DAI", "baseToken": "NMR", "quoteToken": "DAI", "minOrderSize":
+        "0E-18", "maxOrderSize": "40000.000000000000000000", "priceMaxDecimals": 5,
+        "amountMaxDecimals": 5, "state": "enabled"}, {"id": 19, "symbol": "OMG/DAI",
+        "baseToken": "OMG", "quoteToken": "DAI", "minOrderSize": "0E-18", "maxOrderSize":
+        "40000.000000000000000000", "priceMaxDecimals": 3, "amountMaxDecimals": 4,
+        "state": "enabled"}, {"id": 20, "symbol": "BAT/DAI", "baseToken": "BAT", "quoteToken":
+        "DAI", "minOrderSize": "0E-18", "maxOrderSize": "40000.000000000000000000",
+        "priceMaxDecimals": 4, "amountMaxDecimals": 3, "state": "enabled"}, {"id":
+        21, "symbol": "REQ/DAI", "baseToken": "REQ", "quoteToken": "DAI", "minOrderSize":
+        "0E-18", "maxOrderSize": "40000.000000000000000000", "priceMaxDecimals": 4,
+        "amountMaxDecimals": 3, "state": "enabled"}, {"id": 22, "symbol": "SNT/DAI",
+        "baseToken": "SNT", "quoteToken": "DAI", "minOrderSize": "0E-18", "maxOrderSize":
+        "40000.000000000000000000", "priceMaxDecimals": 4, "amountMaxDecimals": 3,
+        "state": "enabled"}, {"id": 23, "symbol": "ANT/DAI", "baseToken": "ANT", "quoteToken":
+        "DAI", "minOrderSize": "0E-18", "maxOrderSize": "40000.000000000000000000",
+        "priceMaxDecimals": 4, "amountMaxDecimals": 3, "state": "enabled"}, {"id":
+        24, "symbol": "AST/DAI", "baseToken": "AST", "quoteToken": "DAI", "minOrderSize":
+        "0E-18", "maxOrderSize": "40000.000000000000000000", "priceMaxDecimals": 4,
+        "amountMaxDecimals": 3, "state": "enabled"}, {"id": 25, "symbol": "CVC/DAI",
+        "baseToken": "CVC", "quoteToken": "DAI", "minOrderSize": "0E-18", "maxOrderSize":
+        "40000.000000000000000000", "priceMaxDecimals": 4, "amountMaxDecimals": 3,
+        "state": "enabled"}, {"id": 26, "symbol": "DNT/DAI", "baseToken": "DNT", "quoteToken":
+        "DAI", "minOrderSize": "0E-18", "maxOrderSize": "40000.000000000000000000",
+        "priceMaxDecimals": 4, "amountMaxDecimals": 3, "state": "enabled"}, {"id":
+        27, "symbol": "HT/DAI", "baseToken": "HT", "quoteToken": "DAI", "minOrderSize":
+        "0E-18", "maxOrderSize": "40000.000000000000000000", "priceMaxDecimals": 4,
+        "amountMaxDecimals": 3, "state": "enabled"}, {"id": 28, "symbol": "BNB/DAI",
+        "baseToken": "BNB", "quoteToken": "DAI", "minOrderSize": "0E-18", "maxOrderSize":
+        "40000.000000000000000000", "priceMaxDecimals": 4, "amountMaxDecimals": 3,
+        "state": "enabled"}, {"id": 29, "symbol": "KIN/DAI", "baseToken": "KIN", "quoteToken":
+        "DAI", "minOrderSize": "0E-18", "maxOrderSize": "40000.000000000000000000",
+        "priceMaxDecimals": 6, "amountMaxDecimals": 3, "state": "enabled"}, {"id":
+        30, "symbol": "KNC/DAI", "baseToken": "KNC", "quoteToken": "DAI", "minOrderSize":
+        "0E-18", "maxOrderSize": "40000.000000000000000000", "priceMaxDecimals": 4,
+        "amountMaxDecimals": 3, "state": "enabled"}, {"id": 31, "symbol": "MANA/DAI",
+        "baseToken": "MANA", "quoteToken": "DAI", "minOrderSize": "0E-18", "maxOrderSize":
+        "40000.000000000000000000", "priceMaxDecimals": 4, "amountMaxDecimals": 3,
+        "state": "enabled"}, {"id": 32, "symbol": "RHOC/DAI", "baseToken": "RHOC",
+        "quoteToken": "DAI", "minOrderSize": "0E-18", "maxOrderSize": "40000.000000000000000000",
+        "priceMaxDecimals": 4, "amountMaxDecimals": 3, "state": "enabled"}, {"id":
+        33, "symbol": "STORJ/DAI", "baseToken": "STORJ", "quoteToken": "DAI", "minOrderSize":
+        "0E-18", "maxOrderSize": "40000.000000000000000000", "priceMaxDecimals": 4,
+        "amountMaxDecimals": 3, "state": "enabled"}, {"id": 34, "symbol": "TUSD/DAI",
+        "baseToken": "TUSD", "quoteToken": "DAI", "minOrderSize": "0E-18", "maxOrderSize":
+        "40000.000000000000000000", "priceMaxDecimals": 4, "amountMaxDecimals": 3,
+        "state": "enabled"}, {"id": 35, "symbol": "ZXC/DAI", "baseToken": "ZXC", "quoteToken":
+        "DAI", "minOrderSize": "0E-18", "maxOrderSize": "40000.000000000000000000",
+        "priceMaxDecimals": 4, "amountMaxDecimals": 3, "state": "enabled"}, {"id":
+        36, "symbol": "ANT/WETH", "baseToken": "ANT", "quoteToken": "WETH", "minOrderSize":
+        "0E-18", "maxOrderSize": "40.000000000000000000", "priceMaxDecimals": 6, "amountMaxDecimals":
+        3, "state": "enabled"}, {"id": 37, "symbol": "AST/WETH", "baseToken": "AST",
+        "quoteToken": "WETH", "minOrderSize": "0E-18", "maxOrderSize": "40.000000000000000000",
+        "priceMaxDecimals": 6, "amountMaxDecimals": 3, "state": "enabled"}, {"id":
+        38, "symbol": "BNB/WETH", "baseToken": "BNB", "quoteToken": "WETH", "minOrderSize":
+        "0E-18", "maxOrderSize": "40.000000000000000000", "priceMaxDecimals": 6, "amountMaxDecimals":
+        3, "state": "enabled"}, {"id": 39, "symbol": "CVC//WETH", "baseToken": "CVC",
+        "quoteToken": "WETH", "minOrderSize": "0E-18", "maxOrderSize": "40.000000000000000000",
+        "priceMaxDecimals": 6, "amountMaxDecimals": 3, "state": "enabled"}, {"id":
+        40, "symbol": "DNT/WETH", "baseToken": "DNT", "quoteToken": "WETH", "minOrderSize":
+        "0E-18", "maxOrderSize": "40.000000000000000000", "priceMaxDecimals": 6, "amountMaxDecimals":
+        3, "state": "enabled"}, {"id": 41, "symbol": "HT/WETH", "baseToken": "HT",
+        "quoteToken": "WETH", "minOrderSize": "0E-18", "maxOrderSize": "40.000000000000000000",
+        "priceMaxDecimals": 6, "amountMaxDecimals": 3, "state": "enabled"}, {"id":
+        42, "symbol": "KIN/WETH", "baseToken": "KIN", "quoteToken": "WETH", "minOrderSize":
+        "0E-18", "maxOrderSize": "40.000000000000000000", "priceMaxDecimals": 8, "amountMaxDecimals":
+        3, "state": "enabled"}, {"id": 43, "symbol": "KNC/WETH", "baseToken": "KNC",
+        "quoteToken": "WETH", "minOrderSize": "0E-18", "maxOrderSize": "40.000000000000000000",
+        "priceMaxDecimals": 6, "amountMaxDecimals": 3, "state": "enabled"}, {"id":
+        44, "symbol": "MANA/WETH", "baseToken": "MANA", "quoteToken": "WETH", "minOrderSize":
+        "0E-18", "maxOrderSize": "40.000000000000000000", "priceMaxDecimals": 6, "amountMaxDecimals":
+        3, "state": "enabled"}, {"id": 45, "symbol": "RHOC/WETH", "baseToken": "RHOC",
+        "quoteToken": "WETH", "minOrderSize": "0E-18", "maxOrderSize": "40.000000000000000000",
+        "priceMaxDecimals": 6, "amountMaxDecimals": 3, "state": "enabled"}, {"id":
+        46, "symbol": "STORJ/WETH", "baseToken": "STORJ", "quoteToken": "WETH", "minOrderSize":
+        "0E-18", "maxOrderSize": "40.000000000000000000", "priceMaxDecimals": 6, "amountMaxDecimals":
+        3, "state": "enabled"}, {"id": 47, "symbol": "TUSD/WETH", "baseToken": "TUSD",
+        "quoteToken": "WETH", "minOrderSize": "0E-18", "maxOrderSize": "40.000000000000000000",
+        "priceMaxDecimals": 6, "amountMaxDecimals": 3, "state": "enabled"}, {"id":
+        48, "symbol": "ZXC/WETH", "baseToken": "ZXC", "quoteToken": "WETH", "minOrderSize":
+        "0E-18", "maxOrderSize": "40.000000000000000000", "priceMaxDecimals": 6, "amountMaxDecimals":
+        3, "state": "enabled"}, {"id": 49, "symbol": "HAV/WETH", "baseToken": "HAV",
+        "quoteToken": "WETH", "minOrderSize": "0E-18", "maxOrderSize": "40.000000000000000000",
+        "priceMaxDecimals": 5, "amountMaxDecimals": 5, "state": "enabled"}]'
+    http_version: 
+  recorded_at: Sat, 27 Oct 2018 07:52:53 GMT
+recorded_with: VCR 4.0.0

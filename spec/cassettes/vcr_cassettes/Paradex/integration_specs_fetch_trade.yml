@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.paradex.io/consumer/v0/tradeHistory?market=WETH/DAI
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Api-Key:
+      - blah
+      Connection:
+      - close
+      Host:
+      - api.paradex.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 27 Oct 2018 07:52:46 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=da2234ede764b897b4e0d9e2c26dc0a261540626765; expires=Sun, 27-Oct-19
+        07:52:45 GMT; path=/; domain=.paradex.io; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 470395c6987a8526-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count": 7901, "trades": [{"id": 20015, "created": "2018-10-26T08:03:11Z",
+        "completed": "2018-10-26T08:05:38Z", "type": "sell", "price": "198.68216",
+        "amount": "0.6", "total": "119.209296", "market": "WETH/DAI", "state": "confirmed"},
+        {"id": 19849, "created": "2018-10-25T00:23:15Z", "completed": "2018-10-25T00:24:30Z",
+        "type": "buy", "price": "205.69439", "amount": "6.20802", "total": "1276.9548870078",
+        "market": "WETH/DAI", "state": "confirmed"}, {"id": 19848, "created": "2018-10-25T00:21:38Z",
+        "completed": "2018-10-25T00:23:18Z", "type": "buy", "price": "205.69439",
+        "amount": "6.20207", "total": "1275.7310053873", "market": "WETH/DAI", "state":
+        "confirmed"}, {"id": 19847, "created": "2018-10-25T00:20:47Z", "completed":
+        "2018-10-25T00:21:37Z", "type": "buy", "price": "205.69439", "amount": "6.19612",
+        "total": "1274.5071237668", "market": "WETH/DAI", "state": "confirmed"}, {"id":
+        19846, "created": "2018-10-25T00:20:12Z", "completed": "2018-10-25T00:21:03Z",
+        "type": "buy", "price": "205.69439", "amount": "6.19018", "total": "1273.2852990902",
+        "market": "WETH/DAI", "state": "confirmed"}, {"id": 19845, "created": "2018-10-25T00:19:07Z",
+        "completed": "2018-10-25T00:20:24Z", "type": "buy", "price": "205.69439",
+        "amount": "6.18425", "total": "1272.0655313575", "market": "WETH/DAI", "state":
+        "confirmed"}, {"id": 19844, "created": "2018-10-25T00:17:43Z", "completed":
+        "2018-10-25T00:19:23Z", "type": "buy", "price": "205.69439", "amount": "6.17832",
+        "total": "1270.8457636248", "market": "WETH/DAI", "state": "confirmed"}, {"id":
+        19843, "created": "2018-10-25T00:16:45Z", "completed": "2018-10-25T00:17:36Z",
+        "type": "buy", "price": "205.69439", "amount": "6.17241", "total": "1269.6301097799",
+        "market": "WETH/DAI", "state": "confirmed"}, {"id": 19842, "created": "2018-10-25T00:15:49Z",
+        "completed": "2018-10-25T00:16:39Z", "type": "buy", "price": "205.69439",
+        "amount": "6.17043", "total": "1269.2228348877", "market": "WETH/DAI", "state":
+        "confirmed"}, {"id": 19836, "created": "2018-10-24T22:51:30Z", "completed":
+        "2018-10-24T22:54:00Z", "type": "buy", "price": "206.39899", "amount": "50",
+        "total": "10319.9495", "market": "WETH/DAI", "state": "confirmed"}]}'
+    http_version: 
+  recorded_at: Sat, 27 Oct 2018 07:52:46 GMT
+recorded_with: VCR 4.0.0

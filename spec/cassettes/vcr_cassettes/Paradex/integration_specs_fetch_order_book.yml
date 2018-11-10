@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.paradex.io/consumer/v0/orderbook?market=WETH/DAI
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Api-Key:
+      - blah
+      Connection:
+      - close
+      Host:
+      - api.paradex.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 27 Oct 2018 07:43:50 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3a37f0586741b89593910b219c7e52091540626229; expires=Sun, 27-Oct-19
+        07:43:49 GMT; path=/; domain=.paradex.io; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 470388b09b6c8460-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"marketId": 10, "marketSymbol": "WETH/DAI", "bids": [{"price": "200.63908",
+        "amount": "193.13287"}, {"price": "200.61634", "amount": "173.83928"}, {"price":
+        "199.40902", "amount": "174.89179"}, {"price": "199.24", "amount": "194.48906"},
+        {"price": "198.01661", "amount": "195.69065"}, {"price": "198.00048", "amount":
+        "176.13594"}, {"price": "196.78338", "amount": "177.22533"}, {"price": "195.77733",
+        "amount": "178.13605"}], "asks": [{"price": "206.52979", "amount": "50"},
+        {"price": "206.84388", "amount": "45"}, {"price": "207.99372", "amount": "50"},
+        {"price": "208.05114", "amount": "90"}, {"price": "209.22373", "amount": "50"},
+        {"price": "209.45961", "amount": "90"}, {"price": "210.66687", "amount": "45"},
+        {"price": "211.68344", "amount": "45"}]}'
+    http_version: 
+  recorded_at: Sat, 27 Oct 2018 07:43:50 GMT
+recorded_with: VCR 4.0.0

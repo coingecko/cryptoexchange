@@ -264,6 +264,7 @@ Or install it yourself as:
 | Ore Bz            | Y       | Y          | Y       |         | Y           | Y        | ore_bz            |
 | OTCBTC            | Y       | Y          | Y       |         | Y           |          | otcbtc            |
 | P2pb2b            | Y       |            |         |         | Y           |          | p2pb2b            |
+| Paradex(Auth)     | Y       | Y          | Y       |         | Y           | Y        | paradex           |
 | Paribu            | Y       |            |         |         | Y           |          | paribu            |
 | Paro Exchange     | Y       |            |         |         | Y           |          | paroexchange      |
 | Paymium           | Y       | Y          | Y       |         | User-Defined|          | paymium           |
