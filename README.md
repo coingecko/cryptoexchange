@@ -81,6 +81,7 @@ Or install it yourself as:
 | Bitstamp          | Y       | Y          | Y       |         | User-Defined|          | bitstamp          |
 | Bitsten           | Y       | Y          | N       |         | Y           | Y        | bitsten           |
 | Bittrex           | Y       |            |         |         | Y           | Y        | bittrex           |
+| Biztranex         | Y       | Y          | Y       |         | Y           | Y        | biztranex         |
 | Bkex              | Y       | N          | N       |         | Y           | Y        | bkex              |
 | Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |
 | Blockonix         | Y       | Y          | Y       |         | Y           |          | blockonix         |

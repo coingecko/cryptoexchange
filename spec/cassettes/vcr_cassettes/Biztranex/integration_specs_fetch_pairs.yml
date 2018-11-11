@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://biztranex.com/api-v1/public/getmarkets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - biztranex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 11 Nov 2018 03:19:17 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '4841'
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=a79782529dd13150d402b62517a46f07; path=/api-v1; domain=biztranex.com;
+        HttpOnly
+      - PHPSESSID=a79782529dd13150d402b62517a46f07; path=/api-v1; domain=biztranex.com;
+        secure
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 +0000
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"msg":"","result":[{"MarketCurrency":"ETH","BaseCurrency":"BTC","MarketCurrencyLong":"Ethereum","BaseCurrencyLong":"Bitcoin","MinTradeSize":0.001,"MarketName":"BTC-ETH","IsActive":true},{"MarketCurrency":"LTC","BaseCurrency":"BTC","MarketCurrencyLong":"LiteCoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0.001,"MarketName":"BTC-LTC","IsActive":true},{"MarketCurrency":"BCH","BaseCurrency":"BTC","MarketCurrencyLong":"BitcoinCash","BaseCurrencyLong":"Bitcoin","MinTradeSize":0.001,"MarketName":"BTC-BCH","IsActive":true},{"MarketCurrency":"XRP","BaseCurrency":"BTC","MarketCurrencyLong":"Ripple","BaseCurrencyLong":"Bitcoin","MinTradeSize":0.1,"MarketName":"BTC-XRP","IsActive":true},{"MarketCurrency":"CTXC","BaseCurrency":"BTC","MarketCurrencyLong":"Cortex","BaseCurrencyLong":"Bitcoin","MinTradeSize":0.1,"MarketName":"BTC-CTXC","IsActive":true},{"MarketCurrency":"ADA","BaseCurrency":"BTC","MarketCurrencyLong":"Cardano","BaseCurrencyLong":"Bitcoin","MinTradeSize":0.1,"MarketName":"BTC-ADA","IsActive":true},{"MarketCurrency":"TRX","BaseCurrency":"BTC","MarketCurrencyLong":"Tron","BaseCurrencyLong":"Bitcoin","MinTradeSize":1,"MarketName":"BTC-TRX","IsActive":true},{"MarketCurrency":"ZRX","BaseCurrency":"BTC","MarketCurrencyLong":"0x","BaseCurrencyLong":"Bitcoin","MinTradeSize":0.1,"MarketName":"BTC-ZRX","IsActive":true},{"MarketCurrency":"ZIL","BaseCurrency":"BTC","MarketCurrencyLong":"Zilliqa","BaseCurrencyLong":"Bitcoin","MinTradeSize":1,"MarketName":"BTC-ZIL","IsActive":true},{"MarketCurrency":"PCH","BaseCurrency":"BTC","MarketCurrencyLong":"Popchain","BaseCurrencyLong":"Bitcoin","MinTradeSize":1,"MarketName":"BTC-PCH","IsActive":true},{"MarketCurrency":"SC","BaseCurrency":"BTC","MarketCurrencyLong":"Siacoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":1,"MarketName":"BTC-SC","IsActive":true},{"MarketCurrency":"LTC","BaseCurrency":"ETH","MarketCurrencyLong":"LiteCoin","BaseCurrencyLong":"Ethereum","MinTradeSize":0.001,"MarketName":"ETH-LTC","IsActive":true},{"MarketCurrency":"ETC","BaseCurrency":"ETH","MarketCurrencyLong":"EthereumClassic","BaseCurrencyLong":"Ethereum","MinTradeSize":0.01,"MarketName":"ETH-ETC","IsActive":true},{"MarketCurrency":"BCH","BaseCurrency":"ETH","MarketCurrencyLong":"BitcoinCash","BaseCurrencyLong":"Ethereum","MinTradeSize":0.001,"MarketName":"ETH-BCH","IsActive":true},{"MarketCurrency":"XRP","BaseCurrency":"ETH","MarketCurrencyLong":"Ripple","BaseCurrencyLong":"Ethereum","MinTradeSize":0.1,"MarketName":"ETH-XRP","IsActive":true},{"MarketCurrency":"CTXC","BaseCurrency":"ETH","MarketCurrencyLong":"Cortex","BaseCurrencyLong":"Ethereum","MinTradeSize":0.1,"MarketName":"ETH-CTXC","IsActive":true},{"MarketCurrency":"ADA","BaseCurrency":"ETH","MarketCurrencyLong":"Cardano","BaseCurrencyLong":"Ethereum","MinTradeSize":0.1,"MarketName":"ETH-ADA","IsActive":true},{"MarketCurrency":"TRX","BaseCurrency":"ETH","MarketCurrencyLong":"Tron","BaseCurrencyLong":"Ethereum","MinTradeSize":1,"MarketName":"ETH-TRX","IsActive":true},{"MarketCurrency":"ZRX","BaseCurrency":"ETH","MarketCurrencyLong":"0x","BaseCurrencyLong":"Ethereum","MinTradeSize":0.1,"MarketName":"ETH-ZRX","IsActive":true},{"MarketCurrency":"ZIL","BaseCurrency":"ETH","MarketCurrencyLong":"Zilliqa","BaseCurrencyLong":"Ethereum","MinTradeSize":1,"MarketName":"ETH-ZIL","IsActive":true},{"MarketCurrency":"PCH","BaseCurrency":"ETH","MarketCurrencyLong":"Popchain","BaseCurrencyLong":"Ethereum","MinTradeSize":1,"MarketName":"ETH-PCH","IsActive":true},{"MarketCurrency":"SC","BaseCurrency":"ETH","MarketCurrencyLong":"Siacoin","BaseCurrencyLong":"Ethereum","MinTradeSize":1,"MarketName":"ETH-SC","IsActive":true},{"MarketCurrency":"BTC","BaseCurrency":"USDT","MarketCurrencyLong":"Bitcoin","BaseCurrencyLong":"Tether
+        USD","MinTradeSize":0.0005,"MarketName":"USDT-BTC","IsActive":true},{"MarketCurrency":"ETH","BaseCurrency":"USDT","MarketCurrencyLong":"Ethereum","BaseCurrencyLong":"Tether
+        USD","MinTradeSize":0.001,"MarketName":"USDT-ETH","IsActive":true},{"MarketCurrency":"BCH","BaseCurrency":"USDT","MarketCurrencyLong":"BitcoinCash","BaseCurrencyLong":"Tether
+        USD","MinTradeSize":0.001,"MarketName":"USDT-BCH","IsActive":true},{"MarketCurrency":"XRP","BaseCurrency":"USDT","MarketCurrencyLong":"Ripple","BaseCurrencyLong":"Tether
+        USD","MinTradeSize":0.1,"MarketName":"USDT-XRP","IsActive":true},{"MarketCurrency":"CTXC","BaseCurrency":"USDT","MarketCurrencyLong":"Cortex","BaseCurrencyLong":"Tether
+        USD","MinTradeSize":0.1,"MarketName":"USDT-CTXC","IsActive":true},{"MarketCurrency":"ADA","BaseCurrency":"USDT","MarketCurrencyLong":"Cardano","BaseCurrencyLong":"Tether
+        USD","MinTradeSize":0.1,"MarketName":"USDT-ADA","IsActive":true},{"MarketCurrency":"TRX","BaseCurrency":"USDT","MarketCurrencyLong":"Tron","BaseCurrencyLong":"Tether
+        USD","MinTradeSize":1,"MarketName":"USDT-TRX","IsActive":true}]}'
+    http_version: 
+  recorded_at: Sun, 11 Nov 2018 03:19:17 GMT
+recorded_with: VCR 4.0.0

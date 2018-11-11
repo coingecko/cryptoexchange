@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://biztranex.com/api-v1/public/getmarketsummary?market=BTC-ETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - biztranex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 11 Nov 2018 03:19:41 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '188'
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=422f12940a632bf653ad64467a6a90b1; path=/api-v1; domain=biztranex.com;
+        HttpOnly
+      - PHPSESSID=422f12940a632bf653ad64467a6a90b1; path=/api-v1; domain=biztranex.com;
+        secure
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 +0000
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"msg":"","result":{"MarketName":"BTC-ETH","High":"0.03494174","Low":"0.03285500","Volume":234.17422687,"Last":"0.03295800","TimeStamp":"2018-11-11
+        10:11:41","Change":0.21}}'
+    http_version: 
+  recorded_at: Sun, 11 Nov 2018 03:19:41 GMT
+recorded_with: VCR 4.0.0
