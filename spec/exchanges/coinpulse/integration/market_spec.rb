@@ -19,8 +19,8 @@ RSpec.describe 'Coinpulse integration specs' do
     expect(pairs).not_to be_empty
 
     pair = pairs.first
-    expect(pair.base).to eq 'USDT'
-    expect(pair.target).to eq 'BTC'
+    expect(pair.base).to eq 'BTC'
+    expect(pair.target).to eq 'USDT'
     expect(pair.market).to eq 'coinpulse'
   end
 

@@ -9,7 +9,7 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch
-          output = super(ticker_url)
+          output = super ticker_url
           adapt_all(output)
         end
 
@@ -28,6 +28,7 @@ module Cryptoexchange::Exchanges
                 target: target,
                 market: Coinrail::Market::NAME
               )
+
               adapt(pair, market_pair)
           end
         end

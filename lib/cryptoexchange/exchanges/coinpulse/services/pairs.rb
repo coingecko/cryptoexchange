@@ -13,8 +13,8 @@ module Cryptoexchange::Exchanges
           result = if output.key?('result') then output['result'] else [] end
           result.map do |pair|
             Cryptoexchange::Models::MarketPair.new(
-              base: pair['BaseCurrency'],
-              target: pair['MarketCurrency'],
+              target: pair['BaseCurrency'],
+              base: pair['MarketCurrency'],
               market: Coinpulse::Market::NAME
             )
           end
