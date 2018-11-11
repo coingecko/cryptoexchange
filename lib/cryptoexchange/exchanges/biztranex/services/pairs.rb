@@ -18,7 +18,7 @@ module Cryptoexchange::Exchanges
               target: pair['BaseCurrency'],
               market: Biztranex::Market::NAME
             )
-          end
+          end.compact
         end
       end
     end
