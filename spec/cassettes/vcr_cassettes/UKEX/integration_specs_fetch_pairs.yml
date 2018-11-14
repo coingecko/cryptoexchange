@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ukex.com/api/index/pairs
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.ukex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 09:13:20 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3b1cc0642325605efa3917b7a8784b031542186799; expires=Thu, 14-Nov-19
+        09:13:19 GMT; path=/; domain=.ukex.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.6.31
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With,X_Requested_With,TOKEN,ID
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 47985c86985d9c35-AMS
+    body:
+      encoding: UTF-8
+      string: '["ETH_BTC","LTC_BTC","XMR_BTC","BCH_BTC","LTC_ETH","XMR_ETH","DASH_ETH","ZEC_ETH","ETH_BUC","BTC_BUC","DASH_BUC","BCH_BUC","ZEC_BUC","LTC_BUC","BTC_GBP","ETH_GBP","BTC_EUR","ETH_EUR","LBA_ETH","QKC_ETH","HOT_ETH","OMG_ETH","ZRX_ETH","DOGE_BUC","DOGE_BTC","AE_ETH","DASH_BTC","ZEC_BTC","BTM_ETH"]'
+    http_version: 
+  recorded_at: Wed, 14 Nov 2018 09:13:49 GMT
+recorded_with: VCR 4.0.0

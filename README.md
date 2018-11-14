@@ -311,6 +311,7 @@ Or install it yourself as:
 | TrustDex **       | Y       |            |         |         | Y           |          | trust_dex         |
 | TuxExchange       | Y       |            |         |         | Y           |          | tux_exchange      |
 | UEX               | Y       |            |         |         | Y           |          | uex               |
+| UKEX              | Y       | Y          | Y       |         | Y           | Y        | ukex              |
 | Unocoin           |         |            |         |         |             |          | unocoin           |
 | Upbit             | Y       | Y          | Y       |         | Y           | Y        | upbit             |
 | Vaultmex          | Y       | Y          | Y       |         | Y           | Y        | vaultmex          |

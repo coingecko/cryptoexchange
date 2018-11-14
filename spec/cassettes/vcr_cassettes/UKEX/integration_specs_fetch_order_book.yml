@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ukex.com/api/index/orderBook/eth_gbp
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.ukex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 09:22:20 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d2256fdd544e1d7a4dab0b447d506c68f1542187339; expires=Thu, 14-Nov-19
+        09:22:19 GMT; path=/; domain=.ukex.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.6.31
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With,X_Requested_With,TOKEN,ID
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 479869ba0edc9bdb-AMS
+    body:
+      encoding: UTF-8
+      string: '{"result":"true","asks":[["160.29","0.0626"],["160.22","0.074"],["160.2","0.0558"],["160.11","0.0111"],["160.08","0.0315"],["160.07","0.0727"],["160.03","0.0283"],["160.01","0.0187"],["159.91","0.0367"],["159.89","0.0599"],["159.85","0.0071"],["159.36","0.99"]],"bids":[["157.25","1"],["156.68","0.0999"],["156.63","0.0721"],["156.55","0.0959"],["156.5","0.0051"],["156.46","0.0779"],["156.42","0.0198"],["156.38","0.0687"],["156.31","0.0012"],["156.29","0.015"],["156.28","0.0368"],["155.53","0.0027"]]}'
+    http_version: 
+  recorded_at: Wed, 14 Nov 2018 09:22:49 GMT
+recorded_with: VCR 4.0.0
