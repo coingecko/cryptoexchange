@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://biztranex.com/api-v1/public/getorderbook?market=BTC-ETH&type=both
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - biztranex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 11 Nov 2018 03:19:17 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '4745'
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=0e8a0bc5f89251353d75531fe580117d; path=/api-v1; domain=biztranex.com;
+        HttpOnly
+      - PHPSESSID=0e8a0bc5f89251353d75531fe580117d; path=/api-v1; domain=biztranex.com;
+        secure
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 +0000
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"msg":"","result":{"BUY":[{"Quantity":"0.03180000","Rate":"0.03130202"},{"Quantity":"0.04350000","Rate":"0.03130197"},{"Quantity":"0.08620000","Rate":"0.03130194"},{"Quantity":"0.11890000","Rate":"0.03130187"},{"Quantity":"0.15160000","Rate":"0.03130185"},{"Quantity":"0.16590000","Rate":"0.03130183"},{"Quantity":"0.21360000","Rate":"0.03130179"},{"Quantity":"0.24320000","Rate":"0.03130173"},{"Quantity":"0.27970000","Rate":"0.03130170"},{"Quantity":"0.30350000","Rate":"0.03130168"},{"Quantity":"0.32850000","Rate":"0.03130163"},{"Quantity":"0.37000000","Rate":"0.03130156"},{"Quantity":"0.36800000","Rate":"0.03130150"},{"Quantity":"0.39460000","Rate":"0.03130147"},{"Quantity":"0.42610000","Rate":"0.03130146"},{"Quantity":"0.45800000","Rate":"0.03130144"},{"Quantity":"0.47960000","Rate":"0.03130140"},{"Quantity":"0.51530000","Rate":"0.03130132"},{"Quantity":"0.55420000","Rate":"0.03130125"},{"Quantity":"0.60040000","Rate":"0.03130121"},{"Quantity":"0.63660000","Rate":"0.03130120"},{"Quantity":"0.68470000","Rate":"0.03130118"},{"Quantity":"0.70430000","Rate":"0.03130112"},{"Quantity":"0.75050000","Rate":"0.03130105"},{"Quantity":"0.79350000","Rate":"0.03130097"},{"Quantity":"0.83810000","Rate":"0.03130093"},{"Quantity":"0.86720000","Rate":"0.03130091"},{"Quantity":"0.91700000","Rate":"0.03130087"},{"Quantity":"0.93160000","Rate":"0.03130083"},{"Quantity":"0.96130000","Rate":"0.03130078"},{"Quantity":"1.00530000","Rate":"0.03130071"},{"Quantity":"1.03840000","Rate":"0.03130068"},{"Quantity":"1.06490000","Rate":"0.03130065"},{"Quantity":"1.10230000","Rate":"0.03130061"},{"Quantity":"1.15230000","Rate":"0.03130060"},{"Quantity":"1.16410000","Rate":"0.03130053"},{"Quantity":"1.19970000","Rate":"0.03130045"},{"Quantity":"1.24910000","Rate":"0.03130039"},{"Quantity":"1.26650000","Rate":"0.03130031"},{"Quantity":"1.28430000","Rate":"0.03130024"},{"Quantity":"1.29480000","Rate":"0.03130018"},{"Quantity":"1.32610000","Rate":"0.03130016"},{"Quantity":"1.36960000","Rate":"0.03130011"},{"Quantity":"1.41290000","Rate":"0.03130010"},{"Quantity":"1.45490000","Rate":"0.03130002"},{"Quantity":"1.48820000","Rate":"0.03129994"},{"Quantity":"1.52460000","Rate":"0.03129986"},{"Quantity":"1.56290000","Rate":"0.03129982"},{"Quantity":"1.57510000","Rate":"0.03129976"},{"Quantity":"1.61070000","Rate":"0.03129971"},{"Quantity":"0.04034408","Rate":"0.03114000"}],"SELL":[{"Quantity":"0.03280000","Rate":"0.03500352"},{"Quantity":"0.04880000","Rate":"0.03500356"},{"Quantity":"0.07820000","Rate":"0.03500358"},{"Quantity":"0.09260000","Rate":"0.03500364"},{"Quantity":"0.11290000","Rate":"0.03500369"},{"Quantity":"0.14810000","Rate":"0.03500376"},{"Quantity":"0.18130000","Rate":"0.03500383"},{"Quantity":"0.22160000","Rate":"0.03500389"},{"Quantity":"0.25740000","Rate":"0.03500397"},{"Quantity":"0.27500000","Rate":"0.03500402"},{"Quantity":"0.30420000","Rate":"0.03500410"},{"Quantity":"0.33530000","Rate":"0.03500414"},{"Quantity":"0.36690000","Rate":"0.03500418"},{"Quantity":"0.38750000","Rate":"0.03500423"},{"Quantity":"0.41210000","Rate":"0.03500429"},{"Quantity":"0.43700000","Rate":"0.03500432"},{"Quantity":"0.46490000","Rate":"0.03500436"},{"Quantity":"0.47490000","Rate":"0.03500441"},{"Quantity":"0.49520000","Rate":"0.03500442"},{"Quantity":"0.52840000","Rate":"0.03500448"},{"Quantity":"0.54900000","Rate":"0.03500456"},{"Quantity":"0.58370000","Rate":"0.03500460"},{"Quantity":"0.61990000","Rate":"0.03500466"},{"Quantity":"0.65240000","Rate":"0.03500469"},{"Quantity":"0.69970000","Rate":"0.03500474"},{"Quantity":"0.72600000","Rate":"0.03500482"},{"Quantity":"0.75360000","Rate":"0.03500490"},{"Quantity":"0.80330000","Rate":"0.03500495"},{"Quantity":"0.84720000","Rate":"0.03500501"},{"Quantity":"0.88920000","Rate":"0.03500505"},{"Quantity":"0.91010000","Rate":"0.03500513"},{"Quantity":"0.95970000","Rate":"0.03500517"},{"Quantity":"0.97700000","Rate":"0.03500521"},{"Quantity":"0.99530000","Rate":"0.03500523"},{"Quantity":"1.01660000","Rate":"0.03500525"},{"Quantity":"1.06330000","Rate":"0.03500527"},{"Quantity":"1.10720000","Rate":"0.03500530"},{"Quantity":"1.11990000","Rate":"0.03500535"},{"Quantity":"1.13690000","Rate":"0.03500541"},{"Quantity":"1.15270000","Rate":"0.03500548"},{"Quantity":"1.17160000","Rate":"0.03500551"},{"Quantity":"1.21640000","Rate":"0.03500552"},{"Quantity":"1.26590000","Rate":"0.03500558"},{"Quantity":"1.31240000","Rate":"0.03500563"},{"Quantity":"1.33150000","Rate":"0.03500564"},{"Quantity":"1.36970000","Rate":"0.03500571"},{"Quantity":"1.39650000","Rate":"0.03500576"},{"Quantity":"1.41260000","Rate":"0.03500579"},{"Quantity":"1.44200000","Rate":"0.03500586"},{"Quantity":"1.48630000","Rate":"0.03500594"},{"Quantity":"0.10000000","Rate":"0.04000000"}]}}'
+    http_version: 
+  recorded_at: Sun, 11 Nov 2018 03:19:17 GMT
+recorded_with: VCR 4.0.0
