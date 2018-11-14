@@ -162,6 +162,7 @@ Or install it yourself as:
 | Crytrex           | Y       | Y          | Y       |         | Y           |          | crytrex           |
 | Cybex             | Y       | Y          | Y       |         | Y           |          | cybex             |
 | Dakuce            | Y       | Y          | Y       |         | Y           |          | dakuce            |
+| Dcoin             | Y       | N          | N       |         | Y           | Y        | dcoin             |
 | Ddex              | Y       |            |         |         | Y           | Y        | ddex              |
 | DEEX              | Y       |            |         |         | Y           |          | deex              |
 | DEx.top           | Y       | Y          | Y       |         | Y           |          | dextop            |
