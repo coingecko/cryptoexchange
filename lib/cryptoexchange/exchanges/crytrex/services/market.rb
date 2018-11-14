@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Crytrex::Market::API_URL}/stats?market=#{market_pair.base}&currency=#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::Crytrex::Market::API_URL}/stats?market=#{market_pair.target}&currency=#{market_pair.base}"
         end
 
         def adapt(output, market_pair)
@@ -26,7 +26,7 @@ module Cryptoexchange::Exchanges
           ticker.change    = NumericHelper.to_d(output['daily_change_percent'])
           ticker.ask       = NumericHelper.to_d(output['ask'])
           ticker.bid       = NumericHelper.to_d(output['bid'])
-          ticker.volume    = NumericHelper.divide(NumericHelper.to_d(output['24h_volume']), ticker.last)
+          ticker.volume    = NumericHelper.to_d(output['24h_volume'])
           ticker.timestamp = nil
           ticker.payload   = output
           ticker

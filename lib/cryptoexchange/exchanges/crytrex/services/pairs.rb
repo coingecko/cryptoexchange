@@ -9,8 +9,8 @@ module Cryptoexchange::Exchanges
           market_pairs = []
           output['result'].each do |pair|
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair['Market'],
-                              target: pair['Currency'],
+                              base: pair['Currency'],
+                              target: pair['Market'],
                               market: Crytrex::Market::NAME
                             )
           end

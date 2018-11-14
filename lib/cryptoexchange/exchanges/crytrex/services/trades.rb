@@ -9,7 +9,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Crytrex::Market::API_URL}/transactions?market=#{market_pair.base}&currency=#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::Crytrex::Market::API_URL}/transactions?market=#{market_pair.target}&currency=#{market_pair.base}"
         end
 
         def adapt(output, market_pair)
