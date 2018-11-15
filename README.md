@@ -106,6 +106,7 @@ Or install it yourself as:
 | CCex              | Y       |            |         |         | Y           |          | ccex              |
 | Cex               | Y       | Y          | Y       |         | Y           |          | cex               |
 | Cfinex            | Y       | Y          | Y       |         | Y           | Y        | cfinex            |
+| Chaince           | Y       |            |         |         | Y           | Y        | chaince           |
 | Chainrift         | Y       | Y          | Y       |         | Y           |          | chainrift         |
 | ChainEX           | Y       | Y          | Y       |         | Y           |          | chainex           |
 | Chaoex            | Y       | Y          | Y       |         | Y           | N        | chaoex            |
