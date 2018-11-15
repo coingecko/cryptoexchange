@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinfield.com/v1/orderbook/btccad
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinfield.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Thu, 15 Nov 2018 14:34:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4546'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Set-Cookie:
+      - route=5178343a232338acb8d6a95576f31ee1; Domain=api.coinfield.com; Path=/;
+        HttpOnly
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 515eaae8-76c2-4364-bfe6-1f3a24095240
+      X-Runtime:
+      - '0.015900'
+      X-Proxy-Runtime:
+      - 22ms
+      X-Fuse-Cached:
+      - 'false'
+      Etag:
+      - W/"11c2-MolYZiG80B0jJ+KSbuOCbPKMLnU"
+    body:
+      encoding: UTF-8
+      string: '{"market":"btccad","total_asks":1.2045036,"total_bids":7.250672399999999,"bids_hash":"f2ab5114f67e86ba58ec33a504231b6d","asks_hash":"421ae87010e52ac15bb929905e23bf6c","bids":[{"id":"pd211dur0v10024pi4","price":"7101.73","volume":"0.0045","timestamp":"2018-11-15T14:34:09.000000Z"},{"id":"pd211duqpvf0024mt9","price":"6920.0","volume":"0.1467","timestamp":"2018-11-15T12:34:55.000000Z"},{"id":"pd211dur0hj0024pap","price":"6864.76","volume":"0.016539","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd211dur0hj0024pah","price":"6851.03","volume":"0.0151836","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd211dur0hj0024pb2","price":"6838.02","volume":"0.0145194","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd211dur0hj0024paq","price":"6824.34","volume":"2.0942","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd211dur0hj0024pb6","price":"6818.2","volume":"0.0136968","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd211dur0hj0024paj","price":"6800.47","volume":"0.5136","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd211dur0ud0024pht","price":"6798.26","volume":"0.0013","timestamp":"2018-11-15T14:33:49.000000Z"},{"id":"pd211dur0hj0024pav","price":"6780.75","volume":"0.0081504","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd211dur0hj0024pba","price":"6767.19","volume":"0.0150606","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd211dur0hj0024pao","price":"6748.24","volume":"2.5775","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd211dur0hj0024pag","price":"6736.09","volume":"0.007434","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd211dur0hj0024pb4","price":"6719.93","volume":"0.0137382","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd211dur0hj0024pak","price":"6713.88","volume":"0.0085254","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd211dur0hj0024pas","price":"6702.47","volume":"1.7407","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd211dur0hj0024pal","price":"6685.71","volume":"0.011793","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd211dur0hj0024pam","price":"6666.32","volume":"0.014736","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd211dur0hj0024pb5","price":"6652.32","volume":"0.0168762","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd211dur0hj0024pat","price":"6636.36","volume":"0.0159198","timestamp":"2018-11-15T14:26:59.000000Z"}],"asks":[{"id":"pd111dur0ug0024phv","price":"7106.62","volume":"0.0043","timestamp":"2018-11-15T14:33:52.000000Z"},{"id":"pd111dur0um0024pi2","price":"7106.62","volume":"0.004","timestamp":"2018-11-15T14:33:58.000000Z"},{"id":"pd111dur0hj0024pbt","price":"7362.86","volume":"0.0066678","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd111dur0hj0024pc4","price":"7372.43","volume":"0.0103836","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd111dur0hj0024pc5","price":"7379.07","volume":"0.0080112","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd111dur0hj0024pc8","price":"7385.71","volume":"0.0157422","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd111dur0hj0024pc7","price":"7401.22","volume":"0.0050358","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd111dur0hj0024pc9","price":"7423.42","volume":"0.0093024","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd111dur0hj0024pcb","price":"7439.75","volume":"0.006066","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd111dur0uk0024pi0","price":"7447.31","volume":"0.0014","timestamp":"2018-11-15T14:33:56.000000Z"},{"id":"pd111dur0hj0024pca","price":"7456.12","volume":"0.0074244","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd111dur0so0024phg","price":"7464.55","volume":"0.0014","timestamp":"2018-11-15T14:32:56.000000Z"},{"id":"pd111dur0hj0024pck","price":"7468.8","volume":"0.0087894","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd111dur0hj0024pcj","price":"7485.23","volume":"0.0107124","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd111dur0hj0024pce","price":"7503.19","volume":"0.0126648","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd111dur0hj0024pcd","price":"7511.45","volume":"0.2734","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd111dur0hj0024pcg","price":"7531.73","volume":"0.3326","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd111dur0hj0024pcc","price":"7543.03","volume":"0.4626","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd111dur0hj0024pcq","price":"7553.59","volume":"0.0078426","timestamp":"2018-11-15T14:26:59.000000Z"},{"id":"pd111dur0hj0024pcf","price":"7566.43","volume":"0.016161","timestamp":"2018-11-15T14:26:59.000000Z"}],"timestamp":"2018-11-15T14:34:10.405Z","took":"22ms"}'
+    http_version: 
+  recorded_at: Thu, 15 Nov 2018 14:34:10 GMT
+recorded_with: VCR 4.0.0

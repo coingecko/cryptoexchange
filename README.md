@@ -125,7 +125,7 @@ Or install it yourself as:
 | Coineal           | Y       | Y          | Y       |         | Y           |          | coineal           |
 | Coinex            | Y       | Y          | Y       |         | Y           | Y        | coinex            |
 | Coinfalcon        | Y       | Y          | Y       |         | Y           |          | coinfalcon        |
-| Coinfield         | Y       | N          | N       |         | Y           | Y        | coinfield         |
+| Coinfield         | Y       | Y          | N       |         | Y           | Y        | coinfield         |
 | Coingi            | Y       | Y          | Y       |         | Y           | Y        | coingi            |
 | Coinhouse         | Y       |            |         |         | Y           | Y        | coinhouse         |
 | Coinhub           | Y       | Y          | Y       |         | Y           | Y        | coinhub           |
