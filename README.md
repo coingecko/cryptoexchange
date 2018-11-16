@@ -86,6 +86,7 @@ Or install it yourself as:
 | Bkex              | Y       | N          | N       |         | Y           | Y        | bkex              |
 | Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |
 | Blockonix         | Y       | Y          | Y       |         | Y           |          | blockonix         |
+| Blokmy            | Y       | Y          | Y       |         | Y           | Y        | blokmy            |
 | Braziliex         | Y       | Y          | Y       |         | Y           |          | braziliex         |
 | BTC38             |         |            |         |         |             |          |                   |
 | BTC-e             |         |            |         |         |             |          |                   |

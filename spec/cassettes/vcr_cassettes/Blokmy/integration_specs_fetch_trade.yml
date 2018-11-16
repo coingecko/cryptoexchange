@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://blokmy.com/api/v2/trades.json?market=btcmyr
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - blokmy.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 10 Nov 2018 07:47:00 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '7125'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Set-Cookie:
+      - _mkra_stck=postgresql%3A1541836025.9471498; path=/; max-age=10; expires=Sat,
+        10 Nov 2018 07:47:10 -0000; HttpOnly; secure
+      - _session_id=7Kku3Ebuji9daUvFw4YqVe4MQz8xejaPFieNhUeuryoiDT1UllrloariXNvZBWb5nQ%3D%3D--BVRvLP%2BtxS0CZIx3--lF4Z%2BT3NfJ4PO9yxEgVjLw%3D%3D;
+        path=/; secure; HttpOnly
+      - _session_id=reJ%2F0Evr%2F9pV6e50yfrntTbXUJJcsa7K75HrSfu6WtPbxJp3VLlHQQqBYXPHECG6Jw%3D%3D--ZbcX4IG2c3ONy7%2Bn--iXqv5sr8Zp0Pt6no1Zw6Xw%3D%3D;
+        path=/; secure; HttpOnly
+      - incap_ses_530_1813126=CliCHXnwahmARn+dJfFaB/SM5lsAAAAAa3a5z3aqWehbfkuMUcjqVQ==;
+        path=/; Domain=.blokmy.com
+      - visid_incap_1813126=YV7pAKbdTEmq/diNfGeqjPSM5lsAAAAAQUIPAAAAAACLut8xfcmYF59B80UHLfhb;
+        expires=Sat, 09 Nov 2019 12:39:14 GMT; path=/; Domain=.blokmy.com
+      Etag:
+      - W/"44b05427d396413070e6f72411039cae"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 335e7f92-f816-4cf4-96a2-b91c72fdae3d
+      X-Runtime:
+      - '0.019152'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Iinfo:
+      - 10-20935975-20936313 NNNN CT(0 0 0) RT(1541836019641 617) q(0 0 0 -1) r(3
+        3) U2
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":375329,"price":"26288.95","volume":"0.026525","funds":"697.31439875","market":"btcmyr","created_at":"2018-11-09T22:42:35+08:00","side":null},{"id":375328,"price":"26288.95","volume":"0.013175","funds":"346.35691625","market":"btcmyr","created_at":"2018-11-09T22:42:35+08:00","side":null},{"id":375327,"price":"26288.95","volume":"0.026525","funds":"697.31439875","market":"btcmyr","created_at":"2018-11-09T22:42:35+08:00","side":null},{"id":375326,"price":"26290.49","volume":"0.673474","funds":"17705.96146226","market":"btcmyr","created_at":"2018-11-09T22:42:35+08:00","side":null},{"id":375325,"price":"26290.49","volume":"0.191371","funds":"5031.23736179","market":"btcmyr","created_at":"2018-11-09T22:42:35+08:00","side":null},{"id":375324,"price":"26290.49","volume":"0.288826","funds":"7593.37706474","market":"btcmyr","created_at":"2018-11-09T22:42:35+08:00","side":null},{"id":375323,"price":"26290.49","volume":"0.671474","funds":"17653.38048226","market":"btcmyr","created_at":"2018-11-09T22:42:35+08:00","side":null},{"id":375322,"price":"26290.49","volume":"0.002","funds":"52.58098","market":"btcmyr","created_at":"2018-11-09T22:42:35+08:00","side":null},{"id":375321,"price":"26300.0","volume":"0.055","funds":"1446.5","market":"btcmyr","created_at":"2018-11-09T22:42:14+08:00","side":null},{"id":375320,"price":"26500.0","volume":"0.1","funds":"2650.0","market":"btcmyr","created_at":"2018-11-09T17:36:26+08:00","side":null},{"id":375319,"price":"26890.0","volume":"0.0215","funds":"578.135","market":"btcmyr","created_at":"2018-11-08T22:35:03+08:00","side":null},{"id":375317,"price":"27262.79","volume":"0.1","funds":"2726.279","market":"btcmyr","created_at":"2018-11-07T10:23:55+08:00","side":null},{"id":375316,"price":"14000.0","volume":"0.000142","funds":"1.988","market":"btcmyr","created_at":"2018-11-07T09:51:18+08:00","side":null},{"id":375315,"price":"14000.0","volume":"0.38179","funds":"5345.06","market":"btcmyr","created_at":"2018-11-07T09:34:04+08:00","side":null},{"id":375314,"price":"14000.0","volume":"0.114755","funds":"1606.57","market":"btcmyr","created_at":"2018-11-07T09:34:04+08:00","side":null},{"id":375313,"price":"14000.0","volume":"0.003455","funds":"48.37","market":"btcmyr","created_at":"2018-11-07T09:34:04+08:00","side":null},{"id":375312,"price":"27153.34","volume":"1.0","funds":"27153.34","market":"btcmyr","created_at":"2018-11-07T08:28:14+08:00","side":null},{"id":375311,"price":"27153.34","volume":"0.000073","funds":"1.98219382","market":"btcmyr","created_at":"2018-11-07T08:28:14+08:00","side":null},{"id":375310,"price":"27001.0","volume":"0.197728","funds":"5338.853728","market":"btcmyr","created_at":"2018-11-07T08:26:05+08:00","side":null},{"id":375309,"price":"27001.0","volume":"0.002012","funds":"54.326012","market":"btcmyr","created_at":"2018-11-07T08:26:05+08:00","side":null},{"id":375308,"price":"27001.0","volume":"0.061","funds":"1647.061","market":"btcmyr","created_at":"2018-11-07T08:26:05+08:00","side":null},{"id":375307,"price":"27001.0","volume":"0.1","funds":"2700.1","market":"btcmyr","created_at":"2018-11-07T08:25:04+08:00","side":null},{"id":375306,"price":"27001.0","volume":"0.02","funds":"540.02","market":"btcmyr","created_at":"2018-11-07T08:25:04+08:00","side":null},{"id":375305,"price":"27001.0","volume":"0.044862","funds":"1211.318862","market":"btcmyr","created_at":"2018-11-07T08:25:04+08:00","side":null},{"id":375304,"price":"27001.0","volume":"0.038277","funds":"1033.517277","market":"btcmyr","created_at":"2018-11-07T08:25:04+08:00","side":null},{"id":375303,"price":"27001.0","volume":"0.062","funds":"1674.062","market":"btcmyr","created_at":"2018-11-07T08:25:04+08:00","side":null},{"id":375302,"price":"27001.0","volume":"0.061","funds":"1647.061","market":"btcmyr","created_at":"2018-11-07T08:25:04+08:00","side":null},{"id":375301,"price":"27001.0","volume":"0.413121","funds":"11154.680121","market":"btcmyr","created_at":"2018-11-07T08:25:03+08:00","side":null},{"id":375300,"price":"27000.02","volume":"0.525879","funds":"14198.74351758","market":"btcmyr","created_at":"2018-11-07T08:25:03+08:00","side":null},{"id":375299,"price":"27000.02","volume":"0.272095","funds":"7346.5704419","market":"btcmyr","created_at":"2018-11-07T08:25:03+08:00","side":null},{"id":375298,"price":"27000.02","volume":"0.202026","funds":"5454.70604052","market":"btcmyr","created_at":"2018-11-07T08:25:03+08:00","side":null},{"id":375297,"price":"27000.0","volume":"1.0","funds":"27000.0","market":"btcmyr","created_at":"2018-11-07T08:25:03+08:00","side":null},{"id":375296,"price":"27000.0","volume":"0.297974","funds":"8045.298","market":"btcmyr","created_at":"2018-11-07T08:25:03+08:00","side":null},{"id":375295,"price":"27000.0","volume":"0.702026","funds":"18954.702","market":"btcmyr","created_at":"2018-11-07T08:25:03+08:00","side":null},{"id":375294,"price":"27000.0","volume":"0.297974","funds":"8045.298","market":"btcmyr","created_at":"2018-11-07T08:25:03+08:00","side":null},{"id":375293,"price":"26900.0","volume":"0.883859","funds":"23775.8071","market":"btcmyr","created_at":"2018-11-07T08:16:58+08:00","side":null},{"id":375292,"price":"26690.1","volume":"0.049363","funds":"1317.5034063","market":"btcmyr","created_at":"2018-11-06T16:33:33+08:00","side":null},{"id":375291,"price":"26692.68","volume":"0.038931","funds":"1039.17272508","market":"btcmyr","created_at":"2018-11-06T16:33:33+08:00","side":null},{"id":375290,"price":"26706.0","volume":"0.001115","funds":"29.77719","market":"btcmyr","created_at":"2018-11-06T16:33:33+08:00","side":null},{"id":375289,"price":"26706.0","volume":"0.000385","funds":"10.28181","market":"btcmyr","created_at":"2018-11-06T16:33:33+08:00","side":null},{"id":375288,"price":"26706.0","volume":"0.010206","funds":"272.561436","market":"btcmyr","created_at":"2018-11-06T16:33:32+08:00","side":null},{"id":375285,"price":"26692.54","volume":"0.000475","funds":"12.6789565","market":"btcmyr","created_at":"2018-11-06T13:14:52+08:00","side":null},{"id":375284,"price":"26689.03","volume":"0.003253","funds":"86.81941459","market":"btcmyr","created_at":"2018-11-06T13:14:52+08:00","side":null},{"id":375279,"price":"26800.0","volume":"0.1","funds":"2680.0","market":"btcmyr","created_at":"2018-11-06T13:12:38+08:00","side":null},{"id":375278,"price":"26615.17","volume":"0.1","funds":"2661.517","market":"btcmyr","created_at":"2018-11-06T13:11:46+08:00","side":null},{"id":375277,"price":"26900.0","volume":"0.000036","funds":"0.9684","market":"btcmyr","created_at":"2018-11-06T09:10:45+08:00","side":null},{"id":375276,"price":"26900.0","volume":"0.004105","funds":"110.4245","market":"btcmyr","created_at":"2018-11-05T11:03:10+08:00","side":null},{"id":375275,"price":"26900.0","volume":"0.112","funds":"3012.8","market":"btcmyr","created_at":"2018-11-05T11:02:11+08:00","side":null},{"id":375274,"price":"26672.44","volume":"0.375905","funds":"10026.3035582","market":"btcmyr","created_at":"2018-11-05T00:03:54+08:00","side":null},{"id":375273,"price":"26400.0","volume":"0.010816","funds":"285.5424","market":"btcmyr","created_at":"2018-11-04T23:35:45+08:00","side":null}]'
+    http_version: 
+  recorded_at: Sat, 10 Nov 2018 07:47:01 GMT
+recorded_with: VCR 4.0.0
