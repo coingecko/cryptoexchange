@@ -35,6 +35,7 @@ Or install it yourself as:
 | Alluma            | Y       | N          | N       |         | Y           | N        | alluma            |
 | Altmarkets        | Y       | Y          | Y       |         | Y           | Y        | altmarkets        |
 | ANX               | Y       |            |         |         | User-Defined|          | anx               |
+| Aphelion          | Y       |            |         |         | Y           | Y        | aphelion          |
 | AXNET             | Y       | Y          | Y       |         | Y           | Y        | axnet             |
 | B2BX              | Y       | Y          |         |         | Y           |          | b2bx              |
 | Bancor            | Y       | N          | N       |         | Y           |          | bancor            |
