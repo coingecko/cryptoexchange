@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitholic.com/public/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitholic.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 17 Nov 2018 10:39:51 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dbfa722d017bd442738a762ce970e6e291542451189; expires=Sun, 17-Nov-19
+        10:39:49 GMT; path=/; domain=.bitholic.com; HttpOnly; Secure
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 47b19360fc312d59-TXL
+    body:
+      encoding: UTF-8
+      string: '{"market":{"QTUM_BTC":{"last":"1814.92827000","ask":"1814.99936000","bid":"1814.92827000","percentChange":"1.58","volume24h":"1.35287241"},"BTC_WAX":{"last":"0.00001823","ask":"0.00001824","bid":"0.00001799","percentChange":"4.71","volume24h":"15221.72340604"},"BTC_MEDX":{"last":"0.00000102","ask":"0.00000103","bid":"0.00000100","percentChange":"-1.92","volume24h":"87895.24043387"},"BTC_TUSD":{"last":"0.00018285","ask":"0.00018285","bid":"0.00018256","percentChange":"1.20","volume24h":"1969.22461173"},"BTC_BCH":{"last":"0.06884240","ask":"0.06911575","bid":"0.06877426","percentChange":"-1.97","volume24h":"2.28493274"},"BTC_LTC":{"last":"0.00755251","ask":"0.00755651","bid":"0.00755251","percentChange":"-2.04","volume24h":"39.00139439"},"BTC_ETH":{"last":"0.03144570","ask":"0.03146818","bid":"0.03144570","percentChange":"-1.34","volume24h":"5884.66512536"},"BTC_ETC":{"last":"0.00134588","ask":"0.00134588","bid":"0.00134579","percentChange":"-0.82","volume24h":"1109.21879654"},"QTUM_MED":{"last":"0.00125000","ask":"0.00126000","bid":"0.00125000","percentChange":"-2.90","volume24h":"40670.67432405"},"QTUM_BCH":{"last":"121.21180000","ask":"121.21185000","bid":"120.61124000","percentChange":"-4.20","volume24h":"0.79360618"},"QTUM_LTC":{"last":"13.72437000","ask":"13.72430000","bid":"13.71160000","percentChange":"-0.39","volume24h":"33.55950976"},"QTUM_ETH":{"last":"56.97830000","ask":"57.15875000","bid":"56.97830000","percentChange":"-0.01","volume24h":"21.58746671"},"QTUM_ETC":{"last":"2.44115000","ask":"2.44007000","bid":"2.43770000","percentChange":"0.58","volume24h":"248.75552167"}}}'
+    http_version: 
+  recorded_at: Sat, 17 Nov 2018 10:39:51 GMT
+recorded_with: VCR 4.0.0

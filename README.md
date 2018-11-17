@@ -63,6 +63,7 @@ Or install it yourself as:
 | Bitflyer          | Y       |            |         |         | Y           |          | bitflyer          |
 | Bitforex          | Y       | N          | N       |         | Y           |          | bitforex          |
 | Bithash           | Y       | Y          | Y       |         | Y           | Y        | bithash           |
+| Bitholic          | Y       | Y          | Y       |         | Y           |          | bitholic          |
 | Bithumb           | Y       |            |         |         | Y           |          | bithumb           |
 | Bitibu            | Y       | Y          | Y       |         | Y           | Y        | bitibu            |
 | Bitinfi           | Y       | Y          |         |         | Y           |          | bitinfi           |
