@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://exchange-assets.com/api/public/ticker/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - exchange-assets.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 13 Oct 2018 22:54:00 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '6270'
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"atb_btc":{"ask":"0.000004","ask_24h_max":"0.000004","ask_24h_min":"0.000004","ask_24h_avg":"0.000004","ask_percent_change":"0","bid":"0.00000301","bid_24h_max":"0.00000301","bid_24h_min":"0.00000301","bid_24h_avg":"0.00000301","bid_percent_change":"0","vol_24h":"0","updated":"1539471001"},"atb_usd":{"ask":"0.02000001","ask_24h_max":"0.02000001","ask_24h_min":"0.02000001","ask_24h_avg":"0.02000001","ask_percent_change":"0","bid":"0.02","bid_24h_max":"0.02","bid_24h_min":"0.02","bid_24h_avg":"0.02","bid_percent_change":"0","vol_24h":"0.01771582","updated":"1539471001"},"btc_usd":{"ask":"6590","ask_24h_max":"6590","ask_24h_min":"6500","ask_24h_avg":"6565.57142857","ask_percent_change":"0.37","bid":"6434","bid_24h_max":"6434","bid_24h_min":"6434","bid_24h_avg":"6434","bid_percent_change":"0","vol_24h":"5.9548341","updated":"1539471001"},"$btw_btc":{"ask":"0.00000333","ask_24h_max":"0.00000333","ask_24h_min":"0.00000333","ask_24h_avg":"0.00000333","ask_percent_change":"0","bid":"0.00000165","bid_24h_max":"0.00000165","bid_24h_min":"0.00000165","bid_24h_avg":"0.00000165","bid_percent_change":"0","vol_24h":"0","updated":"1539471001"},"$btw_usd":{"ask":"0.0092","ask_24h_max":"0.0094","ask_24h_min":"0.0092","ask_24h_avg":"0.00924286","ask_percent_change":"-0.46","bid":"0.00900001","bid_24h_max":"0.00900001","bid_24h_min":"0.00900001","bid_24h_avg":"0.00900001","bid_percent_change":"0","vol_24h":"0.03762564","updated":"1539471001"},"dogx_btc":{"ask":"0.00000279","ask_24h_max":"0.0000028","ask_24h_min":"0.00000249","ask_24h_avg":"0.0000027","ask_percent_change":"3.33","bid":"0.00000189","bid_24h_max":"0.000002","bid_24h_min":"0.00000188","bid_24h_avg":"0.00000188","bid_percent_change":"0.53","vol_24h":"0.00054323","updated":"1539471001"},"dogx_usd":{"ask":"0.019","ask_24h_max":"0.0191","ask_24h_min":"0.0173","ask_24h_avg":"0.01842857","ask_percent_change":"3.1","bid":"0.01021","bid_24h_max":"0.019","bid_24h_min":"0.01021","bid_24h_avg":"0.01134636","bid_percent_change":"-10.02","vol_24h":"4.22055173","updated":"1539471001"},"dogx_waves":{"ask":"0.11","ask_24h_max":"0.11","ask_24h_min":"0.11","ask_24h_avg":"0.11","ask_percent_change":"0","bid":"0.005","bid_24h_max":"0.005","bid_24h_min":"0.005","bid_24h_avg":"0.005","bid_percent_change":"0","vol_24h":"0","updated":"1539471001"},"lgs_btc":{"ask":"0.00561","ask_24h_max":"0.00561","ask_24h_min":"0.00561","ask_24h_avg":"0.00561","ask_percent_change":"0","bid":"0.00081","bid_24h_max":"0.00081","bid_24h_min":"0.0008","bid_24h_avg":"0.00080371","bid_percent_change":"0.78","vol_24h":"0","updated":"1539471001"},"lgs_usd":{"ask":"7.5","ask_24h_max":"7.5","ask_24h_min":"7.00000001","ask_24h_avg":"7.21785717","ask_percent_change":"3.91","bid":"7.0000001","bid_24h_max":"7.0000001","bid_24h_min":"7","bid_24h_avg":"7.00000004","bid_percent_change":"0","vol_24h":"0.05070065","updated":"1539471001"},"mbi_btc":{"ask":"0.00001","ask_24h_max":"0.00001","ask_24h_min":"0.00001","ask_24h_avg":"0.00001","ask_percent_change":"0","bid":"0.000004","bid_24h_max":"0.000004","bid_24h_min":"0.000004","bid_24h_avg":"0.000004","bid_percent_change":"0","vol_24h":"0","updated":"1539471001"},"mbi_usd":{"ask":"0.084","ask_24h_max":"0.084","ask_24h_min":"0.084","ask_24h_avg":"0.084","ask_percent_change":"0","bid":"0.036","bid_24h_max":"0.036","bid_24h_min":"0.036","bid_24h_avg":"0.036","bid_percent_change":"0","vol_24h":"0","updated":"1539471001"},"$pac_usd":{"ask":"0.0027","ask_24h_max":"0.0027","ask_24h_min":"0.0027","ask_24h_avg":"0.0027","ask_percent_change":"0","bid":"0.00001511","bid_24h_max":"0.00001511","bid_24h_min":"0.000015","bid_24h_avg":"0.00001507","bid_percent_change":"0.27","vol_24h":"0","updated":"1539471001"},"peng_btc":{"ask":"0.00000003","ask_24h_max":"0.00000003","ask_24h_min":"0.00000003","ask_24h_avg":"0.00000003","ask_percent_change":"0","bid":"0.00000001","bid_24h_max":"0.00000001","bid_24h_min":"0.00000001","bid_24h_avg":"0.00000001","bid_percent_change":"0","vol_24h":"0","updated":"1539471001"},"peng_usd":{"ask":"0.000131","ask_24h_max":"0.00015111","ask_24h_min":"0.000122","ask_24h_avg":"0.0001323","ask_percent_change":"-0.98","bid":"0.000121","bid_24h_max":"0.000121","bid_24h_min":"0.000121","bid_24h_avg":"0.000121","bid_percent_change":"0","vol_24h":"0.08120812","updated":"1539471001"},"pt_btc":{"ask":"0.00001","ask_24h_max":"0.00001","ask_24h_min":"0.00001","ask_24h_avg":"0.00001","ask_percent_change":"0","bid":"0.00000012","bid_24h_max":"0.00000012","bid_24h_min":"0.00000012","bid_24h_avg":"0.00000012","bid_percent_change":"0","vol_24h":"0","updated":"1539471001"},"pt_usd":{"ask":"0.07","ask_24h_max":"0.07","ask_24h_min":"0.06","ask_24h_avg":"0.06407143","ask_percent_change":"9.25","bid":"0.05","bid_24h_max":"0.05","bid_24h_min":"0.05","bid_24h_avg":"0.05","bid_percent_change":"0","vol_24h":"0.00807592","updated":"1539471001"},"rdd_btc":{"ask":"0.00000073","ask_24h_max":"0.00000073","ask_24h_min":"0.00000073","ask_24h_avg":"0.00000073","ask_percent_change":"0","bid":"0.00000048","bid_24h_max":"0.00000048","bid_24h_min":"0.00000048","bid_24h_avg":"0.00000048","bid_percent_change":"0","vol_24h":"0","updated":"1539471001"},"rdd_usd":{"ask":"0.0034","ask_24h_max":"0.0034","ask_24h_min":"0.00303399","ask_24h_avg":"0.0030366","ask_percent_change":"11.97","bid":"0.00300103","bid_24h_max":"0.00303333","bid_24h_min":"0.00300103","bid_24h_avg":"0.0030331","bid_percent_change":"-1.06","vol_24h":"0.56316925","updated":"1539471001"},"tks_btc":{"ask":"0.0001","ask_24h_max":"0.0001","ask_24h_min":"0.0001","ask_24h_avg":"0.0001","ask_percent_change":"0","bid":"0.00005","bid_24h_max":"0.00005","bid_24h_min":"0.00005","bid_24h_avg":"0.00005","bid_percent_change":"0","vol_24h":"0","updated":"1539471001"},"waves_btc":{"ask":"0.00035","ask_24h_max":"0.00035","ask_24h_min":"0.00035","ask_24h_avg":"0.00035","ask_percent_change":"0","bid":"0.00031","bid_24h_max":"0.00031","bid_24h_min":"0.00031","bid_24h_avg":"0.00031","bid_percent_change":"0","vol_24h":"0","updated":"1539471001"},"waves_usd":{"ask":"2.4","ask_24h_max":"2.4","ask_24h_min":"2.4","ask_24h_avg":"2.4","ask_percent_change":"0","bid":"2.000001","bid_24h_max":"2.000001","bid_24h_min":"2.000001","bid_24h_avg":"2.000001","bid_percent_change":"0","vol_24h":"0","updated":"1539471001"}}'
+    http_version: 
+  recorded_at: Sat, 13 Oct 2018 22:54:00 GMT
+recorded_with: VCR 4.0.0
