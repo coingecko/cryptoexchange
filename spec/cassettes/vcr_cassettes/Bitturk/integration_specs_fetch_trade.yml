@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitturk.com/v1/transactions?Pair=BTCTRY
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitturk.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Nov 2018 13:00:17 GMT
+      Content-Type:
+      - text/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - ARRAffinity=68a8348961bef8789812a08a500c13286e4f282d8fa0b5c1596557d53e419726;Path=/;HttpOnly;Domain=api.bitturk.com
+      - __cfduid=d233d1575fb5eea147e0ce3628186ccd21542718816; expires=Wed, 20-Nov-19
+        13:00:16 GMT; path=/; domain=.bitturk.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Request-Context:
+      - appId=cid-v1:1ba624f9-2c48-45b3-9105-bbe4013f2cc7
+      X-Powered-By:
+      - ASP.NET
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 47cb193a3cdaa9a2-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"date":1542643294.03744,"price":28725.000000000000,"amount":0.003907080000},{"date":1542644290.15962,"price":28495.000000000000,"amount":0.000436870000},{"date":1542645707.76123,"price":28360.000000000000,"amount":0.003530000000},{"date":1542680024.98188,"price":26510.000000000000,"amount":0.023950000000},{"date":1542681763.5581,"price":26500.000000000000,"amount":0.000007000000},{"date":1542681763.66584,"price":26500.000000000000,"amount":0.009236000000},{"date":1542681763.7721,"price":26500.000000000000,"amount":0.009949260000},{"date":1542705868.39173,"price":26500.000000000000,"amount":0.008800000000},{"date":1542710370.91489,"price":25120.000000000000,"amount":0.000033830000},{"date":1542710371.01535,"price":25120.000000000000,"amount":0.011296170000},{"date":1542713135.27594,"price":25120.000000000000,"amount":0.021330000000},{"date":1542715541.34229,"price":25120.000000000000,"amount":0.017373830000},{"date":1542715566.48983,"price":25000.000000000000,"amount":0.010000000000},{"date":1542723997.86994,"price":24185.000000000000,"amount":0.004836880000},{"date":1542727049.12657,"price":24900.000000000000,"amount":0.003652190000},{"date":1542727350.15676,"price":24925.000000000000,"amount":0.002199000000},{"date":1542727418.05179,"price":24940.000000000000,"amount":0.003100000000},{"date":1542729347.80901,"price":25000.000000000000,"amount":0.013956170000},{"date":1542729483.97545,"price":24785.000000000000,"amount":0.007443830000}]'
+    http_version: 
+  recorded_at: Tue, 20 Nov 2018 13:00:17 GMT
+recorded_with: VCR 4.0.0
