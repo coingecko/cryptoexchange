@@ -218,6 +218,7 @@ Or install it yourself as:
 | Joyso             | Y       | Y          |         |         | Y           |          | joyso             |
 | Jubi              | Y       |            |         |         | Y           |          | jubi              |
 | Kairex            | Y       | Y          |         |         | Y           |          | kairex            |
+| Kineticex         | Y       | N          | N       |         | Y           | Y        | kineticex         |
 | KKex              | Y       | Y          | Y       |         | Y           | Y        | k_kex             |
 | Kkcoin            | Y       | Y          | Y       |         | Y           | Y        | kkcoin            |
 | Koinex            | Y       |            |         |         | Y           |          | koinex            |
