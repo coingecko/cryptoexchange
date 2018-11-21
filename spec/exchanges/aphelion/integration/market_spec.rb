@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Aphelion integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:neo_aph_pair) { Cryptoexchange::Models::MarketPair.new(base: 'NEO', target: 'APH', market: 'aphelion') }
+  let(:aph_neo_pair) { Cryptoexchange::Models::MarketPair.new(base: 'APH', target: 'NEO', market: 'aphelion') }
 
   it 'fetch pairs' do
     pairs = client.pairs('aphelion')
@@ -20,10 +20,10 @@ RSpec.describe 'Aphelion integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(neo_aph_pair)
+    ticker = client.ticker(aph_neo_pair)
 
-    expect(ticker.base).to eq 'NEO'
-    expect(ticker.target).to eq 'APH'
+    expect(ticker.base).to eq 'APH'
+    expect(ticker.target).to eq 'NEO'
     expect(ticker.market).to eq 'aphelion'
     expect(ticker.last).to be_a Numeric
     expect(ticker.change).to be_a Numeric
@@ -37,7 +37,7 @@ RSpec.describe 'Aphelion integration specs' do
   end
 
   # it 'fetch order book' do
-  #   order_book = client.order_book(neo_aph_pair)
+  #   order_book = client.order_book(aph_neo_pair)
   #
   #   expect(order_book.base).to eq 'NEO'
   #   expect(order_book.target).to eq 'APH'
@@ -54,7 +54,7 @@ RSpec.describe 'Aphelion integration specs' do
   # end
   #
   # it 'fetch trade' do
-  #   trades = client.trades(neo_aph_pair)
+  #   trades = client.trades(aph_neo_pair)
   #   trade = trades.sample
   #
   #   expect(trades).to_not be_empty
