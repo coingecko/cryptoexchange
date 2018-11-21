@@ -74,6 +74,7 @@ Or install it yourself as:
 | Bitmart           | Y       | Y          | Y       |         | Y           |          | bitmart           |
 | Bitmax            | Y       | Y          | Y       |         | Y           | Y        | bitmax            |
 | Bitmex            | Y       | Y          | Y       |         | Y           |          | bitmex            |
+| Bitnaru           | Y       |            |         |         | Y           | Y        | bitnaru           |
 | BitOnBay          | Y       |            |         |         | Y           |          | bitonbay          |
 | Bitpaction        | Y       | Y          | Y       |         | Y           |          | bitpaction        |
 | Bitrabbit         | Y       | N          | N       |         | Y           | Y        | bitrabbit         |
