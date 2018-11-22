@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://aliencloud.xyz/api/1.0/trade/pairs
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - aliencloud.xyz
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 22 Nov 2018 21:09:24 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=a63crfnpmbcqcuhloj6vpg3tpg; path=/; HttpOnly
+      - __cfduid=dab3c3e406f487028dd492671b74c1f4e1542920963; expires=Fri, 22-Nov-19
+        21:09:23 GMT; path=/; domain=.aliencloud.xyz; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 47de6078ecf8c2a1-FRA
+    body:
+      encoding: UTF-8
+      string: '[{"pairName":"xem_btc","openValue":1.866e-5,"minValue":1.82e-5,"maxValue":1.866e-5,"closeValue":1.862e-5,"volume":27.52477034},{"pairName":"dash_eth","openValue":0.74872,"minValue":0.74866,"maxValue":0.82916,"closeValue":0.8231,"volume":2177.24389959},{"pairName":"agi_eth","openValue":0.00028943,"minValue":0.0002873,"maxValue":0.00029224,"closeValue":0.00029224,"volume":1101.83403944},{"pairName":"vet_btc","openValue":1.25e-6,"minValue":1.21e-6,"maxValue":1.26e-6,"closeValue":1.26e-6,"volume":44.52402359},{"pairName":"icx_usd","openValue":0.2969,"minValue":0.2904,"maxValue":0.302,"closeValue":0.2947,"volume":169340.062568},{"pairName":"ada_btc","openValue":1.026e-5,"minValue":1.016e-5,"maxValue":1.033e-5,"closeValue":1.023e-5,"volume":68.1078956},{"pairName":"dash_btc","openValue":0.024426,"minValue":0.023914,"maxValue":0.02447,"closeValue":0.024166,"volume":69.189971128},{"pairName":"xlm_usd","openValue":0.20172,"minValue":0.19563,"maxValue":0.21488,"closeValue":0.19664,"volume":355694.28469},{"pairName":"iost_btc","openValue":1.28e-6,"minValue":1.25e-6,"maxValue":1.29e-6,"closeValue":1.26e-6,"volume":37.09327780221},{"pairName":"dcr_btc","openValue":0.005553,"minValue":0.00546,"maxValue":0.005717,"closeValue":0.005629,"volume":39.034078689},{"pairName":"xmr_eth","openValue":0.50754,"minValue":0.49098,"maxValue":0.51389,"closeValue":0.51389,"volume":3126.52225809},{"pairName":"usd_rub","openValue":65.9686,"minValue":65.599,"maxValue":66.0025,"closeValue":65.9062,"volume":8528102.2792493},{"pairName":"nxt_btc","openValue":8.36e-6,"minValue":8.28e-6,"maxValue":8.63e-6,"closeValue":8.48e-6,"volume":39.395947609505},{"pairName":"gnt_btc","openValue":2.025e-5,"minValue":2.023e-5,"maxValue":2.126e-5,"closeValue":2.125e-5,"volume":40.12484731},{"pairName":"qtum_btc","openValue":0.000538,"minValue":0.00053,"maxValue":0.000541,"closeValue":0.000531,"volume":67.08896967},{"pairName":"xrp_eth","openValue":0.00327797,"minValue":0.00325203,"maxValue":0.0033026,"closeValue":0.0033026,"volume":2687.27414281},{"pairName":"doge_btc","openValue":5.0e-7,"minValue":4.9e-7,"maxValue":5.4e-7,"closeValue":5.4e-7,"volume":43.674811881512},{"pairName":"gnt_eth","openValue":0.00068199,"minValue":0.00068104,"maxValue":0.0007149,"closeValue":0.00071136,"volume":1234.9273037799983},{"pairName":"zec_btc","openValue":0.019305,"minValue":0.018097,"maxValue":0.01948,"closeValue":0.018337,"volume":39.506888174},{"pairName":"neo_btc","openValue":0.002,"minValue":0.001953,"maxValue":0.00201,"closeValue":0.001984,"volume":71.14571122},{"pairName":"miota_usd","openValue":0.3222,"minValue":0.3164,"maxValue":0.3272,"closeValue":0.3221,"volume":157940.595443},{"pairName":"lrc_btc","openValue":1.032e-5,"minValue":1.027e-5,"maxValue":1.104e-5,"closeValue":1.096e-5,"volume":40.36973888},{"pairName":"aion_btc","openValue":3.9e-5,"minValue":3.89e-5,"maxValue":4.02e-5,"closeValue":3.97e-5,"volume":34.423992855},{"pairName":"req_eth","openValue":0.00019107,"minValue":0.00018671,"maxValue":0.00019571,"closeValue":0.00019288,"volume":1201.02297992},{"pairName":"ltc_usd","openValue":35.23,"minValue":34.08,"maxValue":35.56,"closeValue":34.15,"volume":436099.0510243},{"pairName":"vet_eth","openValue":4.196e-5,"minValue":4.159e-5,"maxValue":4.243e-5,"closeValue":4.175e-5,"volume":1111.0218102299993},{"pairName":"etc_btc","openValue":0.001252,"minValue":0.001244,"maxValue":0.001259,"closeValue":0.001257,"volume":58.94101193},{"pairName":"trx_usd","openValue":0.0158,"minValue":0.01514,"maxValue":0.01592,"closeValue":0.01514,"volume":150970.71802500013},{"pairName":"bts_btc","openValue":1.176e-5,"minValue":1.17e-5,"maxValue":1.193e-5,"closeValue":1.193e-5,"volume":43.70033185},{"pairName":"bts_eth","openValue":0.00039677,"minValue":0.00039227,"maxValue":0.00041008,"closeValue":0.00041008,"volume":1581.66060157},{"pairName":"agi_btc","openValue":8.66e-6,"minValue":8.41e-6,"maxValue":8.69e-6,"closeValue":8.54e-6,"volume":34.51646619},{"pairName":"miota_btc","openValue":6.969e-5,"minValue":6.926e-5,"maxValue":7.119e-5,"closeValue":7.097e-5,"volume":36.87643639},{"pairName":"trx_btc","openValue":3.14e-6,"minValue":3.14e-6,"maxValue":3.2e-6,"closeValue":3.18e-6,"volume":31.34530985},{"pairName":"xrp_usd","openValue":0.44974,"minValue":0.43752,"maxValue":0.45301,"closeValue":0.44102,"volume":341588.257309},{"pairName":"rdn_eth","openValue":0.0020803,"minValue":0.0020684,"maxValue":0.00211,"closeValue":0.0020828,"volume":1094.2409842},{"pairName":"qtum_eth","openValue":0.018064,"minValue":0.018033,"maxValue":0.018188,"closeValue":0.018185,"volume":2152.62902073},{"pairName":"btc_usd","openValue":4583.77,"minValue":4501.76,"maxValue":4642.48,"closeValue":4536.32,"volume":3173183.9222203},{"pairName":"btg_btc","openValue":0.004654,"minValue":0.004516,"maxValue":0.004668,"closeValue":0.00454,"volume":35.29939136},{"pairName":"sc_btc","openValue":7.2e-7,"minValue":6.9e-7,"maxValue":7.4e-7,"closeValue":7.2e-7,"volume":89.76834438},{"pairName":"eos_btc","openValue":0.0008272,"minValue":0.0008239,"maxValue":0.000829,"closeValue":0.0008256,"volume":29.608970477},{"pairName":"lrc_eth","openValue":0.00034837,"minValue":0.000345,"maxValue":0.00036515,"closeValue":0.00034502,"volume":1063.52147829},{"pairName":"icx_btc","openValue":6.44e-5,"minValue":6.43e-5,"maxValue":6.53e-5,"closeValue":6.5e-5,"volume":36.122549794},{"pairName":"arct_btc","openValue":0,"minValue":0,"maxValue":0,"closeValue":0,"volume":0},{"pairName":"bcn_btc","openValue":2.0e-7,"minValue":2.1e-7,"maxValue":2.1e-7,"closeValue":2.1e-7,"volume":0.2846501531155632},{"pairName":"ada_eth","openValue":0.00034563,"minValue":0.00034357,"maxValue":0.00034894,"closeValue":0.00034857,"volume":2559.63710455},{"pairName":"neo_usd","openValue":9.108,"minValue":8.867,"maxValue":9.185,"closeValue":8.969,"volume":265038.467834},{"pairName":"bch_usd","openValue":0,"minValue":0,"maxValue":0,"closeValue":0,"volume":0},{"pairName":"iost_eth","openValue":4.398e-5,"minValue":4.274e-5,"maxValue":4.408e-5,"closeValue":4.325e-5,"volume":1255.1362572700023},{"pairName":"eth_usd","openValue":136.49,"minValue":131.95,"maxValue":139,"closeValue":132.94,"volume":2532469.0638946},{"pairName":"omg_eth","openValue":0.014624,"minValue":0.014499,"maxValue":0.014738,"closeValue":0.014542,"volume":1137.43214701},{"pairName":"aion_eth","openValue":0.00132,"minValue":0.001311,"maxValue":0.001366,"closeValue":0.001361,"volume":1276.45491625},{"pairName":"data_eth","openValue":0.00017069,"minValue":0.00016971,"maxValue":0.00017624,"closeValue":0.00017465,"volume":1144.31193061},{"pairName":"eos_usd","openValue":3.9438,"minValue":3.7398,"maxValue":3.9812,"closeValue":3.8131,"volume":403606.871979},{"pairName":"data_btc","openValue":5.08e-6,"minValue":5.03e-6,"maxValue":5.29e-6,"closeValue":5.09e-6,"volume":39.10349853},{"pairName":"req_btc","openValue":5.54e-6,"minValue":5.51e-6,"maxValue":5.73e-6,"closeValue":5.62e-6,"volume":40.15575451},{"pairName":"omg_btc","openValue":0.000434,"minValue":0.000422,"maxValue":0.000437,"closeValue":0.000424,"volume":43.389259329},{"pairName":"eth_btc","openValue":0.029831,"minValue":0.029207,"maxValue":0.029892,"closeValue":0.029359,"volume":85.696374514},{"pairName":"ont_btc","openValue":0.0002228,"minValue":0.0002162,"maxValue":0.0002232,"closeValue":0.0002203,"volume":78.177971259},{"pairName":"rdn_btc","openValue":6.187e-5,"minValue":6.036e-5,"maxValue":6.21e-5,"closeValue":6.081e-5,"volume":37.21346777},{"pairName":"etc_usd","openValue":5.7259,"minValue":5.6537,"maxValue":5.8189,"closeValue":5.6982,"volume":870903.386293},{"pairName":"qtum_usd","openValue":2.689,"minValue":2.598,"maxValue":2.713,"closeValue":2.606,"volume":369922.706456},{"pairName":"ada_usd","openValue":0.05008,"minValue":0.04755,"maxValue":0.05059,"closeValue":0.04997,"volume":304930.412871}]'
+    http_version: 
+  recorded_at: Thu, 22 Nov 2018 21:09:24 GMT
+recorded_with: VCR 4.0.0
