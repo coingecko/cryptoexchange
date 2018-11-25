@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://cryptoexchange.ws/en/gateway/public/bestOffer
+    body:
+      encoding: UTF-8
+      string: '{"market":"ETH-BTC","count":50}'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Host:
+      - cryptoexchange.ws
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 25 Nov 2018 10:17:45 GMT
+      Server:
+      - Apache/2.4.10 (Debian)
+      Strict-Transport-Security:
+      - max-age=15768000
+      Cache-Control:
+      - no-cache, max-age=0
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Sun, 25 Nov 2018 10:17:45 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"missing_authenticators":[],"infos":[],"warnings":[],"errors":[],"results":{"bid":[[0.02953174,3.0391],[0.02949791,5.2889],[0.02946493,2.9699]],"ask":[[0.02972702,6.5867]],"lastQuote":0.0297051,"rate24h":0.03001027,"current_rates":[]}}'
+    http_version: 
+  recorded_at: Sun, 25 Nov 2018 10:17:45 GMT
+recorded_with: VCR 4.0.0

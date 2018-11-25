@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://cryptoexchange.ws/en/gateway/public/lastTrades
+    body:
+      encoding: UTF-8
+      string: '{"market":"ETH-BTC","count":50}'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Host:
+      - cryptoexchange.ws
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 25 Nov 2018 10:33:27 GMT
+      Server:
+      - Apache/2.4.10 (Debian)
+      Strict-Transport-Security:
+      - max-age=15768000
+      Cache-Control:
+      - no-cache, max-age=0
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Sun, 25 Nov 2018 10:33:27 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"missing_authenticators":[],"infos":[],"warnings":[],"errors":[],"results":[{"time":1543141836000,"type":2,"nominal":0.2558284,"rate":0.02974419,"price":0.00760941},{"time":1543141685000,"type":1,"nominal":0.35404838,"rate":0.02989329,"price":0.01058367},{"time":1543141469000,"type":2,"nominal":0.39142551,"rate":0.02961149,"price":0.01159069},{"time":1543141257000,"type":1,"nominal":0.4383275,"rate":0.02974734,"price":0.01303908},{"time":1543141149000,"type":2,"nominal":0.3240834,"rate":0.02959376,"price":0.00959085},{"time":1543140985000,"type":1,"nominal":0.4064452,"rate":0.0297051,"price":0.0120735},{"time":1543140900000,"type":1,"nominal":0.46313067,"rate":0.0297051,"price":0.01375734},{"time":1543140198000,"type":2,"nominal":0.22729686,"rate":0.02960484,"price":0.00672909},{"time":1543140147000,"type":2,"nominal":0.23777535,"rate":0.02961836,"price":0.00704252},{"time":1543140088000,"type":1,"nominal":0.17179896,"rate":0.02978485,"price":0.00511701},{"time":1543140000000,"type":2,"nominal":0.17235412,"rate":0.02961669,"price":0.00510456},{"time":1543139846000,"type":2,"nominal":0.47249741,"rate":0.02963853,"price":0.01400413},{"time":1543139711000,"type":1,"nominal":0.31473033,"rate":0.02978709,"price":0.0093749},{"time":1543139660000,"type":1,"nominal":0.35699045,"rate":0.02981752,"price":0.01064457},{"time":1543139610000,"type":2,"nominal":0.44305826,"rate":0.02964491,"price":0.01313442},{"time":1543139498000,"type":2,"nominal":0.21614108,"rate":0.02964491,"price":0.00640748},{"time":1543139464000,"type":2,"nominal":0.2957608,"rate":0.02964491,"price":0.0087678},{"time":1543139328000,"type":1,"nominal":0.28014312,"rate":0.02980976,"price":0.008351},{"time":1543139294000,"type":2,"nominal":0.2480859,"rate":0.02966108,"price":0.0073585},{"time":1543139260000,"type":1,"nominal":0.44879316,"rate":0.02980976,"price":0.01337842},{"time":1543139087000,"type":2,"nominal":0.37728281,"rate":0.02964835,"price":0.01118581},{"time":1543138945000,"type":1,"nominal":0.18225449,"rate":0.02980703,"price":0.00543247},{"time":1543138785000,"type":2,"nominal":0.22592255,"rate":0.02964337,"price":0.00669711},{"time":1543138750000,"type":2,"nominal":0.21484034,"rate":0.02964337,"price":0.00636859},{"time":1543138645000,"type":1,"nominal":0.19731013,"rate":0.02980703,"price":0.00588123},{"time":1543138131000,"type":2,"nominal":0.46597501,"rate":0.02978865,"price":0.01388077},{"time":1543138077000,"type":2,"nominal":0.37161525,"rate":0.02979579,"price":0.01107257},{"time":1543137924000,"type":2,"nominal":0.27739429,"rate":0.02977398,"price":0.00825913},{"time":1543137870000,"type":1,"nominal":0.15588256,"rate":0.02992322,"price":0.00466451},{"time":1543137818000,"type":1,"nominal":0.34067797,"rate":0.02992425,"price":0.01019453},{"time":1543137604000,"type":1,"nominal":0.41136593,"rate":0.02992092,"price":0.01230845},{"time":1543137552000,"type":1,"nominal":0.46077241,"rate":0.02996753,"price":0.01380821},{"time":1543137400000,"type":1,"nominal":0.33542257,"rate":0.02996753,"price":0.01005179},{"time":1543137326000,"type":2,"nominal":0.41200208,"rate":0.0297241,"price":0.01224639},{"time":1543137169000,"type":1,"nominal":0.16017723,"rate":0.02996753,"price":0.00480012},{"time":1543136997000,"type":2,"nominal":0.34039204,"rate":0.02980339,"price":0.01014484},{"time":1543136948000,"type":1,"nominal":0.31915023,"rate":0.02995884,"price":0.00956137},{"time":1543136806000,"type":1,"nominal":0.49534516,"rate":0.03003374,"price":0.01487707},{"time":1543136745000,"type":2,"nominal":0.48389094,"rate":0.02980339,"price":0.01442159},{"time":1543136615000,"type":1,"nominal":0.47004054,"rate":0.02994542,"price":0.01407556},{"time":1543136264000,"type":1,"nominal":0.29537909,"rate":0.03001503,"price":0.00886581},{"time":1543135979000,"type":1,"nominal":0.29761051,"rate":0.03001503,"price":0.00893279},{"time":1543135862000,"type":2,"nominal":0.21632485,"rate":0.02978983,"price":0.00644428},{"time":1543135768000,"type":1,"nominal":0.15064508,"rate":0.02994018,"price":0.00451034},{"time":1543135544000,"type":2,"nominal":0.22717836,"rate":0.02980023,"price":0.00676997},{"time":1543135457000,"type":2,"nominal":0.26538154,"rate":0.02980062,"price":0.00790853},{"time":1543135164000,"type":1,"nominal":0.16361,"rate":0.0300316,"price":0.00491347},{"time":1543135112000,"type":2,"nominal":0.31427998,"rate":0.02980062,"price":0.00936574},{"time":1543135021000,"type":2,"nominal":0.37847863,"rate":0.02980585,"price":0.01128088},{"time":1543134959000,"type":2,"nominal":0.18527725,"rate":0.02980585,"price":0.00552235}]}'
+    http_version: 
+  recorded_at: Sun, 25 Nov 2018 10:33:27 GMT
+recorded_with: VCR 4.0.0

@@ -160,6 +160,7 @@ Or install it yourself as:
 | CryptoBridge      | Y       |            |         |         | Y           | Y        | crypto_bridge     |
 | CryptoHub         | Y       | N          | N       |         | Y           |          | crypto_hub        |
 | Cryptobulls       | Y       | N          | N       |         | Y           |          | cryptobulls       |
+| Cryptoexchange.ws | Y       | Y          | Y       |         | Y           | Y        | cryptoexchange_ws |
 | Cryptology        | Y       |            |         |         | Y           |          | cryptology        |
 | Cryptonit         | Y       | Y          | Y       |         | Y           | Y        | cryptonit         |
 | Cryptopia         | Y       | Y          | Y       |         | Y           |          | cryptopia         |

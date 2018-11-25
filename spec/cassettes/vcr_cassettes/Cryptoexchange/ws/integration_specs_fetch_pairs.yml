@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cryptoexchange.ws/en/gateway/public/returnTicker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - cryptoexchange.ws
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 25 Nov 2018 09:38:19 GMT
+      Server:
+      - Apache/2.4.10 (Debian)
+      Strict-Transport-Security:
+      - max-age=15768000
+      Cache-Control:
+      - no-cache, max-age=0
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Sun, 25 Nov 2018 09:38:19 GMT
+      X-Frame-Options:
+      - SAMEORIGIN
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"missing_authenticators":[],"infos":[],"warnings":[],"errors":[],"results":{"DASH-EUR":{"last":77.2147586,"lowestAsk":76.94896758,"highestBid":75.42522564,"changePrice":0,"changeTrade":3.58253839,"volume24hr":67.9540044,"high24hr":91.25860299,"low24hr":74.48646578},"DOGE-EUR":{"last":0.00187901,"lowestAsk":0.00197739,"highestBid":0.00190175,"changePrice":0,"changeTrade":564062.64727822,"volume24hr":2301076.3992307,"high24hr":0.00217711,"low24hr":0.00184394},"ETH-EUR":{"last":92.42723039,"lowestAsk":91.92779969,"highestBid":91.74412777,"changePrice":0,"changeTrade":9.589564,"volume24hr":95.47397512,"high24hr":108.47821419,"low24hr":91.88957376},"ETH-BTC":{"last":0.02978865,"lowestAsk":0.02980703,"highestBid":0.02958422,"changePrice":0,"changeTrade":37.09365488,"volume24hr":272.58927207,"high24hr":0.03102292,"low24hr":0.0297241},"LTC-EUR":{"last":25.09149535,"lowestAsk":25.09149535,"highestBid":24.56980352,"changePrice":0,"changeTrade":14.43330779,"volume24hr":45.4585875,"high24hr":28.85377254,"low24hr":24.41761297},"BTC-EUR":{"last":3205.04425,"lowestAsk":3237.25575,"highestBid":3184.4179,"changePrice":0,"changeTrade":16.41272935,"volume24hr":52.16596205,"high24hr":3835.58316883,"low24hr":3176.673417},"ITL-EUR":{"last":2.31e-5,"lowestAsk":2.31e-5,"highestBid":2.09e-5,"changePrice":2.2e-6,"changeTrade":215771570.81379,"volume24hr":393789020.72986,"high24hr":2.674e-5,"low24hr":2.09e-5},"DASH-BTC":{"last":0.02353549,"lowestAsk":0.02401107,"highestBid":0.02353549,"changePrice":0,"changeTrade":15.7707045,"volume24hr":133.92092938,"high24hr":0.02498332,"low24hr":0.02305794},"DOGE-BTC":{"last":5.7e-7,"lowestAsk":7.9e-7,"highestBid":5.7e-7,"changePrice":3.0e-8,"changeTrade":68582.75597771,"volume24hr":1093016.784325,"high24hr":5.8e-7,"low24hr":5.1e-7},"LTC-BTC":{"last":0.00770721,"lowestAsk":0.009,"highestBid":0.0077047,"changePrice":0.00015934,"changeTrade":8.3845519,"volume24hr":32.10384632,"high24hr":0.00777161,"low24hr":0.00744931},"ITL-BTC":{"last":0,"lowestAsk":2.0e-8,"highestBid":0,"changePrice":0,"changeTrade":0,"volume24hr":0,"high24hr":0,"low24hr":0},"ITL-DASH":{"last":0,"lowestAsk":9.0e-8,"highestBid":6.0e-8,"changePrice":0,"changeTrade":0,"volume24hr":0,"high24hr":0,"low24hr":0},"ITL-DOGE":{"last":0.00693,"lowestAsk":0.00707,"highestBid":0.00693,"changePrice":0,"changeTrade":0,"volume24hr":5520298.1085364,"high24hr":0.00707,"low24hr":0.00679209},"ITL-ETH":{"last":0,"lowestAsk":1.4e-7,"highestBid":4.0e-8,"changePrice":0,"changeTrade":0,"volume24hr":0,"high24hr":0,"low24hr":0},"ITL-LTC":{"last":0,"lowestAsk":4.5e-7,"highestBid":1.5e-7,"changePrice":0,"changeTrade":0,"volume24hr":0,"high24hr":0,"low24hr":0},"DASH-ETH":{"last":0.82087107,"lowestAsk":0.82199331,"highestBid":0.80894579,"changePrice":0.01314504,"changeTrade":0.36812172,"volume24hr":9.27174276,"high24hr":0.82834539,"low24hr":0.79317344},"DOGE-ETH":{"last":2.047e-5,"lowestAsk":2.116e-5,"highestBid":2.108e-5,"changePrice":1.45e-6,"changeTrade":248696.96924454,"volume24hr":1295482.4246838,"high24hr":2.099e-5,"low24hr":1.847e-5},"DOGE-LTC":{"last":7.797e-5,"lowestAsk":7.932e-5,"highestBid":7.598e-5,"changePrice":6.16e-6,"changeTrade":82757.90869037,"volume24hr":474202.04225587,"high24hr":7.891e-5,"low24hr":6.893e-5},"DOGE-DASH":{"last":2.538e-5,"lowestAsk":2.577e-5,"highestBid":2.477e-5,"changePrice":1.71e-6,"changeTrade":68641.01304472,"volume24hr":885379.98918119,"high24hr":2.618e-5,"low24hr":2.221e-5},"LTC-DASH":{"last":0.32560716,"lowestAsk":0.32640198,"highestBid":0.32430734,"changePrice":0.00906461,"changeTrade":1.11507482,"volume24hr":12.52977963,"high24hr":0.33309584,"low24hr":0.31109626},"LTC-ETH":{"last":0.26577734,"lowestAsk":0.27077819,"highestBid":0.26674675,"changePrice":0.00754552,"changeTrade":1.45520071,"volume24hr":12.03162791,"high24hr":0.2722601,"low24hr":0.25307348},"Ethos-EUR":{"last":0.09637931,"lowestAsk":0,"highestBid":0.09407905,"changePrice":0,"changeTrade":0,"volume24hr":16053.92803368,"high24hr":0.13038879,"low24hr":0.09095291},"Ethos-BTC":{"last":3.001e-5,"lowestAsk":5.1e-5,"highestBid":2.958e-5,"changePrice":0,"changeTrade":0,"volume24hr":2977.48062522,"high24hr":3.316e-5,"low24hr":2.911e-5},"Ethos-ETH":{"last":0.00106667,"lowestAsk":0.00106667,"highestBid":0.00104555,"changePrice":0,"changeTrade":340.69876215,"volume24hr":10746.77243004,"high24hr":0.00120367,"low24hr":0.00100682},"Ethos-DASH":{"last":0.0012603,"lowestAsk":0.00128576,"highestBid":0.0012603,"changePrice":0,"changeTrade":0,"volume24hr":2256.50326842,"high24hr":0.00144563,"low24hr":0.00124432},"Ethos-LTC":{"last":0.0040172,"lowestAsk":0.00394708,"highestBid":0.00386892,"changePrice":0,"changeTrade":183.54896544,"volume24hr":5496.85278009,"high24hr":0.00455427,"low24hr":0.0037382}}}'
+    http_version: 
+  recorded_at: Sun, 25 Nov 2018 09:38:19 GMT
+recorded_with: VCR 4.0.0
