@@ -30,6 +30,7 @@ Or install it yourself as:
 | ACX               | Y       | Y          | Y       |         | Y           | Y        | acx               |
 | AEX               | Y       | Y          | Y       |         | Y           |          | aex               |
 | Airswap           | Y       |            |         |         |             |          | airswap           |
+| Allbit            | Y       | N          | N       |         | Y           | Y        | allbit            |
 | Allcoin           | Y       | Y          | Y       |         | Y           |          | allcoin           |
 | Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |
 | Alluma            | Y       | N          | N       |         | Y           | N        | alluma            |
