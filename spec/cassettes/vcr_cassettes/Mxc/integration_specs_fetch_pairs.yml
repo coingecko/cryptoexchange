@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mxc.com/open/api/v1/data/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.mxc.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Nov 2018 07:55:05 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Cdn-Edge:
+      - cb634c7,-
+      Set-Cookie:
+      - __cdnuid=df715fe93ba65ffee0b31007e3037744; max-age=31536000; path=/; HttpOnly
+      X-Cache:
+      - bypass
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"data":["love_usdt","tusd_usdt","bsv_usdt","eos_usdt","bch_usdt","mx_usdt","pax_usdt","eth_usdt","zil_usdt","swag_usdt","snt_usdt","wicc_usdt","sex_usdt","neo_usdt","ltc_usdt","etc_usdt","btc_usdt","love_eth","knc_eth","tusd_eth","qkc_eth","hqt_eth","lqd_eth","ae_eth","btcc_eth","gmb_eth","mft_eth","omg_eth","ykc_eth","eos_eth","bqt_eth","zrx_eth","hot_eth","ftm_eth","mx_eth","rfr_eth","link_eth","pax_eth","ncash_eth","nex_eth","elf_eth","ycc_eth","hpt_eth","iotx_eth","iost_eth","zil_eth","buc_eth","swag_eth","mana_eth","sex_eth","ruff_eth","loom_eth","love_btc","tusd_btc","omg_btc","eos_btc","pax_btc","eth_btc","snt_btc","sex_btc","ltc_btc","etc_btc"],"msg":"OK"}'
+    http_version: 
+  recorded_at: Wed, 28 Nov 2018 07:55:05 GMT
+recorded_with: VCR 4.0.0
