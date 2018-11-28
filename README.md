@@ -103,6 +103,7 @@ Or install it yourself as:
 | BTER              | Y       |            |         |         | Y           |          | bter              |
 | Buyucoin          | Y       | N          | N       |         | Y           |          | buyucoin          |
 | BX Thailand       | Y       |            |         |         | Y           |          | bx_thailand       |
+| BW                | Y       |            |         |         | Y           | Y        | bw                |
 | Bytex             | Y       | N          | N       |         | Y           | N        | bytex             |
 | C2CX              | Y       | Y          | N       |         | Y           |          | c2cx              |
 | CPatex            | Y       | Y          | Y       |         | Y           |          | c_patex           |
