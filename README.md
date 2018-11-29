@@ -291,6 +291,7 @@ Or install it yourself as:
 | Sistemkoin        | Y       |            |         |         | Y           |          | sistemkoin        |
 | SouthXchange      | Y       | Y          | Y       |         | Y           | Y        | south_xchange     |
 | Stocks Exchange   | Y       |            |         |         | Y           | Y        | stocks_exchange   |
+| Swiftex           | Y       | Y          |         |         | Y           | Y        | swiftex           |
 | Switcheo          | Y       | N          | N       |         | Y           | Y        | switcheo          |
 | Syex              | Y       | N          | N       |         | Y           | Y        | syex              |
 | SZZC              | Y       |            |         |         | Y           |          | szzc              |
