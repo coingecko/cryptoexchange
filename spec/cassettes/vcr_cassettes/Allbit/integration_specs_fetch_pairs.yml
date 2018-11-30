@@ -1,0 +1,128 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://allbit.com/api/coin-market-cap-data/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - allbit.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 10 Nov 2018 08:30:18 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '6486'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=df598aead9a583356c5e4d4713ba9e5441541838618; expires=Sun, 10-Nov-19
+        08:30:18 GMT; path=/; domain=.allbit.com; HttpOnly; Secure
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 47772803f9938827-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ETH_FXT": {"baseAssetName": "FuzeX", "quoteAssetName": "Ethereum",
+        "last": "0.00004200", "quoteVolume": "0.00000000", "high24hr": "0.00004200",
+        "quoteAsset": "ETH", "highestBid": "0.00004202", "baseAsset": "FXT", "isFrozen":
+        0, "percentChange": "0.00000000", "low24hr": "0.00004200", "lowestAsk": "0.00006500",
+        "id": 19, "baseVolume": "0.00000000"}, "ETH_NEXO": {"baseAssetName": "Nexo",
+        "quoteAssetName": "Ethereum", "last": "0.00065200", "quoteVolume": "202.22160269",
+        "high24hr": "0.00071500", "quoteAsset": "ETH", "highestBid": "0.00066000",
+        "baseAsset": "NEXO", "isFrozen": 0, "percentChange": "3.08137421", "low24hr":
+        "0.00064500", "lowestAsk": "0.00071450", "id": 20, "baseVolume": "288667.18412814"},
+        "ETH_NPXS": {"baseAssetName": "Pundi X", "quoteAssetName": "Ethereum", "last":
+        "0.00000729", "quoteVolume": "44620.81636091", "high24hr": "0.00000735", "quoteAsset":
+        "ETH", "highestBid": "0.00000720", "baseAsset": "NPXS", "isFrozen": 0, "percentChange":
+        "-1.21951220", "low24hr": "0.00000725", "lowestAsk": "0.00000729", "id": 12,
+        "baseVolume": "6127742416.18823719"}, "ETH_DENT": {"baseAssetName": "DENT",
+        "quoteAssetName": "Ethereum", "last": "0.00001200", "quoteVolume": "10038.77195112",
+        "high24hr": "0.00001200", "quoteAsset": "ETH", "highestBid": "0.00001000",
+        "baseAsset": "DENT", "isFrozen": 0, "percentChange": "0.00000000", "low24hr":
+        "0.00001200", "lowestAsk": "0.00001800", "id": 13, "baseVolume": "836564329.25999343"},
+        "ETH_ZPR": {"baseAssetName": "ZPER", "quoteAssetName": "Ethereum", "last":
+        "0.00001707", "quoteVolume": "19200.19480198", "high24hr": "0.00001707", "quoteAsset":
+        "ETH", "highestBid": "0.00000170", "baseAsset": "ZPR", "isFrozen": 0, "percentChange":
+        "-0.05854801", "low24hr": "0.00001707", "lowestAsk": "0.00001707", "id": 18,
+        "baseVolume": "1116056616.79366469"}, "ETH_GTO": {"baseAssetName": "Gifto",
+        "quoteAssetName": "Ethereum", "last": "0.00030000", "quoteVolume": "14397.83095845",
+        "high24hr": "0.00030000", "quoteAsset": "ETH", "highestBid": "0.00003527",
+        "baseAsset": "GTO", "isFrozen": 0, "percentChange": "-1.31578947", "low24hr":
+        "0.00030000", "lowestAsk": "0.00035260", "id": 10, "baseVolume": "47381599.75442000"},
+        "ETH_KIN": {"baseAssetName": "Kin", "quoteAssetName": "Ethereum", "last":
+        "0.00000027", "quoteVolume": "0.00000000", "high24hr": "0.00000027", "quoteAsset":
+        "ETH", "highestBid": "0.00000025", "baseAsset": "KIN", "isFrozen": 0, "percentChange":
+        "0.00000000", "low24hr": "0.00000027", "lowestAsk": "0.00000027", "id": 22,
+        "baseVolume": "0.00000000"}, "ETH_LYM": {"baseAssetName": "Lympo", "quoteAssetName":
+        "Ethereum", "last": "0.00008319", "quoteVolume": "4.43949648", "high24hr":
+        "0.00008433", "quoteAsset": "ETH", "highestBid": "0.00008319", "baseAsset":
+        "LYM", "isFrozen": 0, "percentChange": "0.00000000", "low24hr": "0.00008319",
+        "lowestAsk": "0.00008873", "id": 16, "baseVolume": "52915.02016000"}, "ETH_APOT":
+        {"baseAssetName": "APOT", "quoteAssetName": "Ethereum", "last": "0.00046600",
+        "quoteVolume": "12690.27997157", "high24hr": "0.00050050", "quoteAsset": "ETH",
+        "highestBid": "0.00046440", "baseAsset": "APOT", "isFrozen": 0, "percentChange":
+        "4.71910112", "low24hr": "0.00044000", "lowestAsk": "0.00046989", "id": 23,
+        "baseVolume": "28772941.10709178"}, "ETH_LOOM": {"baseAssetName": "Loom Network",
+        "quoteAssetName": "Ethereum", "last": "0.00053557", "quoteVolume": "818.25624838",
+        "high24hr": "0.00053558", "quoteAsset": "ETH", "highestBid": "0.00045540",
+        "baseAsset": "LOOM", "isFrozen": 0, "percentChange": "0.57274844", "low24hr":
+        "0.00053252", "lowestAsk": "0.00059550", "id": 11, "baseVolume": "1533715.58725257"},
+        "ETH_ELF": {"baseAssetName": "aelf", "quoteAssetName": "Ethereum", "last":
+        "0.00150792", "quoteVolume": "2044.33337650", "high24hr": "0.00150905", "quoteAsset":
+        "ETH", "highestBid": "0.00000301", "baseAsset": "ELF", "isFrozen": 0, "percentChange":
+        "-0.02983353", "low24hr": "0.00150691", "lowestAsk": "0.00500000", "id": 8,
+        "baseVolume": "1355351.31631134"}, "ETH_DAI": {"baseAssetName": "Dai", "quoteAssetName":
+        "Ethereum", "last": "0.00500000", "quoteVolume": "0.00000000", "high24hr":
+        "0.00510000", "quoteAsset": "ETH", "highestBid": "0.00043200", "baseAsset":
+        "DAI", "isFrozen": 0, "percentChange": "0.00000000", "low24hr": "0.00500000",
+        "lowestAsk": "0.01000000", "id": 24, "baseVolume": "0.00000000"}, "ETH_IHT":
+        {"baseAssetName": "I HOUSE TOKEN", "quoteAssetName": "Ethereum", "last": "0.00013000",
+        "quoteVolume": "0.00000000", "high24hr": "0.00013000", "quoteAsset": "ETH",
+        "highestBid": "0.00012000", "baseAsset": "IHT", "isFrozen": 0, "percentChange":
+        "0.00000000", "low24hr": "0.00013000", "lowestAsk": "0.00014000", "id": 17,
+        "baseVolume": "0.00000000"}, "ETH_TIC": {"baseAssetName": "Thingschain", "quoteAssetName":
+        "Ethereum", "last": "0.00000150", "quoteVolume": "0.53978422", "high24hr":
+        "0.00000200", "quoteAsset": "ETH", "highestBid": "0.00000080", "baseAsset":
+        "TIC", "isFrozen": 0, "percentChange": "50.00000000", "low24hr": "0.00000090",
+        "lowestAsk": "0.00000150", "id": 26, "baseVolume": "453856.14385614"}, "ETH_SRN":
+        {"baseAssetName": "SIRIN", "quoteAssetName": "Ethereum", "last": "0.00058800",
+        "quoteVolume": "0.00000000", "high24hr": "0.00058800", "quoteAsset": "ETH",
+        "highestBid": "0.00005879", "baseAsset": "SRN", "isFrozen": 0, "percentChange":
+        "0.00000000", "low24hr": "0.00058800", "lowestAsk": "0.00200000", "id": 15,
+        "baseVolume": "0.00000000"}, "ETH_WTC": {"baseAssetName": "Waltonchain", "quoteAssetName":
+        "Ethereum", "last": "0.01420000", "quoteVolume": "53881.72175926", "high24hr":
+        "0.01425000", "quoteAsset": "ETH", "highestBid": "0.01260000", "baseAsset":
+        "WTC", "isFrozen": 0, "percentChange": "-0.35087719", "low24hr": "0.01250000",
+        "lowestAsk": "0.01780000", "id": 14, "baseVolume": "3788219.12522316"}, "ETH_MKR":
+        {"baseAssetName": "Maker", "quoteAssetName": "Ethereum", "last": "3.17710862",
+        "quoteVolume": "0.00000000", "high24hr": "3.17710862", "quoteAsset": "ETH",
+        "highestBid": "0.31771086", "baseAsset": "MKR", "isFrozen": 0, "percentChange":
+        "0.00000000", "low24hr": "3.17710862", "lowestAsk": "0.00000000", "id": 25,
+        "baseVolume": "0.00000000"}, "ETH_DCC": {"baseAssetName": "Distributed Credit
+        Chain", "quoteAssetName": "Ethereum", "last": "0.00002080", "quoteVolume":
+        "8611.20000000", "high24hr": "0.00002080", "quoteAsset": "ETH", "highestBid":
+        "0.00002000", "baseAsset": "DCC", "isFrozen": 0, "percentChange": "2.46305419",
+        "low24hr": "0.00002080", "lowestAsk": "0.00002700", "id": 21, "baseVolume":
+        "414000000.00000000"}}'
+    http_version: 
+  recorded_at: Sat, 10 Nov 2018 08:30:18 GMT
+recorded_with: VCR 4.0.0

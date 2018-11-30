@@ -30,11 +30,13 @@ Or install it yourself as:
 | ACX               | Y       | Y          | Y       |         | Y           | Y        | acx               |
 | AEX               | Y       | Y          | Y       |         | Y           |          | aex               |
 | Airswap           | Y       |            |         |         |             |          | airswap           |
+| Allbit            | Y       | N          | N       |         | Y           | Y        | allbit            |
 | Allcoin           | Y       | Y          | Y       |         | Y           |          | allcoin           |
 | Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |
 | Alluma            | Y       | N          | N       |         | Y           | N        | alluma            |
 | Altmarkets        | Y       | Y          | Y       |         | Y           | Y        | altmarkets        |
 | ANX               | Y       |            |         |         | User-Defined|          | anx               |
+| Aphelion          | Y       |            |         |         | Y           | Y        | aphelion          |
 | AXNET             | Y       | Y          | Y       |         | Y           | Y        | axnet             |
 | B2BX              | Y       | Y          |         |         | Y           |          | b2bx              |
 | Bancor            | Y       | N          | N       |         | Y           |          | bancor            |
@@ -86,6 +88,7 @@ Or install it yourself as:
 | Bkex              | Y       | N          | N       |         | Y           | Y        | bkex              |
 | Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |
 | Blockonix         | Y       | Y          | Y       |         | Y           |          | blockonix         |
+| Blokmy            | Y       | Y          | Y       |         | Y           | Y        | blokmy            |
 | Braziliex         | Y       | Y          | Y       |         | Y           |          | braziliex         |
 | BTC38             |         |            |         |         |             |          |                   |
 | BTC-e             |         |            |         |         |             |          |                   |
