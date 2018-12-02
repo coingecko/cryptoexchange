@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://market.openbit.online/Mapi/Index/marketInfo
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - market.openbit.online
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 02 Dec 2018 12:52:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=4ge18hgptm2dut5lgrafmluo1d; path=/
+      - __cfduid=de7642ac79344c4281a61fd4cd609cf261543755140; expires=Mon, 02-Dec-19
+        12:52:20 GMT; path=/; domain=.openbit.online; HttpOnly; Secure
+      X-Powered-By:
+      - PHP/7.1.24
+      - PleskLin
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      - private, must-revalidate
+      Pragma:
+      - no-cache
+      Ms-Author-Via:
+      - DAV
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 482dee1becdebde8-AMS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":1,"data":{"market":[{"id":"29","name":"Hmn(HMN\/BTC)","new_price":3.6e-5,"buy_price":3.0e-6,"sell_price":0,"min_price":2.16e-5,"max_price":7.2000000000000005e-6,"change":65.99,"volume":8},{"id":"28","name":"Nodify(NFY\/BTC)","new_price":9.72e-5,"buy_price":0,"sell_price":0,"min_price":0.00011339999999999999,"max_price":1.62e-5,"change":0,"volume":0.4},{"id":"22","name":"Litecoin(LTC\/BTC)","new_price":0.012745600000000003,"buy_price":0.0053712,"sell_price":0.0015964,"min_price":0.007966,"max_price":0.0095592,"change":-0.09,"volume":0.7400000000000001},{"id":"26","name":"Pws(PWS\/BTC)","new_price":3.0e-6,"buy_price":0,"sell_price":0,"min_price":7.0e-6,"max_price":4.000000000000001e-6,"change":0,"volume":1.6},{"id":"24","name":"Doge(DOGE\/BTC)","new_price":2.0e-7,"buy_price":0,"sell_price":1.6e-6,"min_price":2.0e-6,"max_price":1.6e-6,"change":-163.64,"volume":1534.572},{"id":"18","name":"Openbit(OPN\/BTC)","new_price":0.001152,"buy_price":0.00072,"sell_price":0.0009216000000000001,"min_price":0.0008064,"max_price":0.00023040000000000002,"change":0.03,"volume":17.2884},{"id":"32","name":"Mog(MOGWAI\/BTC)","new_price":0,"buy_price":0,"sell_price":0,"min_price":0,"max_price":0,"change":-0,"volume":0}]}}'
+    http_version: 
+  recorded_at: Sun, 02 Dec 2018 12:52:20 GMT
+recorded_with: VCR 4.0.0
