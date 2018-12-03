@@ -301,6 +301,7 @@ Or install it yourself as:
 | Tideal            | Y       | Y          | Y       |         | Y           |          | tideal            |
 | Tidebit           | Y       | Y          | Y       |         | Y           |          | tidebit           |
 | Tidex             | Y       |            |         |         | Y           |          | tidex             |
+| Tokenize          | Y       |            |         |         | Y           |          | tokenize          |
 | Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |
 | Tokenomy          | Y       | Y          | Y       |         | Y           | Y        | tokenomy          |
 | TokensNet         | Y       | Y          | Y       |         | Y           | N        | tokens_net        |
