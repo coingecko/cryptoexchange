@@ -1,7 +1,7 @@
 module Cryptoexchange::Exchanges
-  module Bitbox
+  module BitboxPrivate
     class Market < Cryptoexchange::Models::Market
-      NAME = 'bitbox'
+      NAME = 'bitbox_private'
       API_URL = 'https://openapi.bitbox.me'
 
       def self.trade_page_url(args={})

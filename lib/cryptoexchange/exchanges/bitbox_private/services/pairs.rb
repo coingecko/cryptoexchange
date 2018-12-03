@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Bitbox
+  module BitboxPrivate
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
         def fetch
@@ -13,7 +13,7 @@ module Cryptoexchange::Exchanges
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: pair[:base],
                               target: pair[:target],
-                              market: Bitbox::Market::NAME
+                              market: BitboxPrivate::Market::NAME
                             )
           end
           market_pairs

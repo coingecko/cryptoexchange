@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Bitbox
+  module BitboxPrivate
     module Services
       class Market < Cryptoexchange::Services::Market
         class << self
@@ -9,16 +9,16 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          authentication = Cryptoexchange::Exchanges::Bitbox::Authentication.new(
+          authentication = Cryptoexchange::Exchanges::BitboxPrivate::Authentication.new(
             :market,
-            Cryptoexchange::Exchanges::Bitbox::Market::NAME
+            Cryptoexchange::Exchanges::BitboxPrivate::Market::NAME
           )
           authentication.validate_credentials!
 
           timestamp = (Time.now.to_i * 1000).to_s
           payload_ = payload(timestamp, market_pair)
           headers = authentication.headers(payload_, timestamp)
-          api_url = "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}" + endpoint + "?" + params(market_pair)
+          api_url = "#{Cryptoexchange::Exchanges::BitboxPrivate::Market::API_URL}" + endpoint + "?" + params(market_pair)
           output = HTTP.timeout(:write => 2, :connect => 15, :read => 18).headers(headers).get(api_url).parse :json
           adapt(output, market_pair)
         end
@@ -36,7 +36,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}/currentTickValue?coinPair=#{market_pair.base}.#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::BitboxPrivate::Market::API_URL}/currentTickValue?coinPair=#{market_pair.base}.#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
@@ -44,7 +44,7 @@ module Cryptoexchange::Exchanges
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
-          ticker.market = Bitbox::Market::NAME
+          ticker.market = BitboxPrivate::Market::NAME
           ticker.last = NumericHelper.to_d(output['last'])
           ticker.bid = NumericHelper.to_d(output['bid'])
           ticker.ask = NumericHelper.to_d(output['ask'])
