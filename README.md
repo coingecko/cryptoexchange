@@ -209,6 +209,7 @@ Or install it yourself as:
 | HitBTC            | Y       |            |         |         | Y           | Y        | hitbtc            |
 | Hotbit            | Y       | N          | N       |         | Y           | Y        | hotbit            |
 | HPX               | Y       | Y          | Y       |         | Y           |          | hpx               |
+| Hubi              | Y       |            |         |         | Y           |          | hubi              |
 | Huobi             | Y       |            |         |         | Y           | Y        | huobi             |
 | Ice3x             | Y       | Y          | Y       |         | Y           |          | ice3x             |
 | Idax              | Y       | N          | N       |         | Y           | Y        | idax              |
