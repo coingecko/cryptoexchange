@@ -282,6 +282,7 @@ Or install it yourself as:
 | Negociecoins      | Y       | Y          | Y       |         | User-Defined|          | negociecoins      |
 | Neraex            | Y       | Y          | Y       |         | Y           | Y        | neraex            |
 | Newdex            | Y       | N          | N       |         | Y           | Y        | newdex            |
+| Nexybit           | Y       | Y          | N       |         | Y           | N        | nexybit           |
 | Ninecoin (Halted) | Y       |            |         |         | Y           |          | ninecoin          |
 | NLexch            | Y       |            |         |         | Y           | Y        | nlexch            |
 | Novadex           | Y       | N          | N       |         | Y           | Y        | novadex           |
