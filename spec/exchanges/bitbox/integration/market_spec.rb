@@ -2,17 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Bitbox integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:xrp_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'xrp', target: 'btc', market: 'bitbox') }
-  let(:filename) { Cryptoexchange::Credentials.send(:filename) }
-
-  before do
-    allow(Cryptoexchange::Credentials).to receive(:get).with('bitbox').and_return({ 'api_key' => 'blah', 'api_secret' => 'blah' })
-  end
-
-  it 'give trade url' do
-    trade_page_url = client.trade_page_url 'bitbox', base: xrp_btc_pair.base, target: xrp_btc_pair.target
-    expect(trade_page_url).to eq "https://www.bitbox.me/exchange?coin=XRP&market=BTC"
-  end
+  let(:xlm_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'xlm', target: 'btc', market: 'bitbox') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bitbox')
@@ -25,18 +15,18 @@ RSpec.describe 'Bitbox integration specs' do
   end
 
   it 'fetch ticker' do
-    pending "Skip this test due to restriction"
-    fail
-    ticker = client.ticker(xrp_btc_pair)
+    ticker = client.ticker(xlm_btc_pair)
 
-    expect(ticker.base).to eq 'XRP'
+    expect(ticker.base).to eq 'XLM'
     expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'bitbox'
     expect(ticker.last).to be_a Numeric
-    expect(ticker.bid).to be_a Numeric
-    expect(ticker.ask).to be_a Numeric
+    expect(ticker.low).to be_a Numeric
+    expect(ticker.high).to be_a Numeric
+    expect(ticker.change).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be nil
+    expect(ticker.timestamp).to be_a Numeric
+    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
     expect(ticker.payload).to_not be nil
   end
 end

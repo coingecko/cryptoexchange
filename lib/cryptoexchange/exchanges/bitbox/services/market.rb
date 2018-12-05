@@ -4,52 +4,41 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            true
+            false
           end
         end
 
-        def fetch(market_pair)
-          authentication = Cryptoexchange::Exchanges::Bitbox::Authentication.new(
-            :market,
-            Cryptoexchange::Exchanges::Bitbox::Market::NAME
-          )
-          authentication.validate_credentials!
-
-          timestamp = (Time.now.to_i * 1000).to_s
-          payload_ = payload(timestamp, market_pair)
-          headers = authentication.headers(payload_, timestamp)
-          api_url = "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}" + endpoint + "?" + params(market_pair)
-          output = HTTP.timeout(:write => 2, :connect => 15, :read => 18).headers(headers).get(api_url).parse :json
-          adapt(output, market_pair)
+        def fetch
+          output = super(ticker_url)
+          adapt_all(output)
         end
 
-        def endpoint
-          "/v1/market/public/currentTickValue"
+        def ticker_url
+          "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}/market/prices"
         end
 
-        def params(market_pair)
-          "coinPair=#{market_pair.base}.#{market_pair.target}"
+        def adapt_all(output)
+          output["responseData"].map do |output|
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+                            base: output["b"],
+                            target: output["a"],
+                            market: Bitbox::Market::NAME
+                          )
+            adapt(market_pair, output)
+          end
         end
 
-        def payload(timestamp, market_pair)
-          "12345" + timestamp + "GET" + endpoint + params(market_pair)
-        end
-
-        def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}/currentTickValue?coinPair=#{market_pair.base}.#{market_pair.target}"
-        end
-
-        def adapt(output, market_pair)
-          output = output["responseData"]
+        def adapt(market_pair, output)
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Bitbox::Market::NAME
-          ticker.last = NumericHelper.to_d(output['last'])
-          ticker.bid = NumericHelper.to_d(output['bid'])
-          ticker.ask = NumericHelper.to_d(output['ask'])
-          ticker.volume = NumericHelper.divide(output['volume'], ticker.last)
-          ticker.timestamp = nil
+          ticker.last = NumericHelper.to_d(output['g'])
+          ticker.low = NumericHelper.to_d(output['f'])
+          ticker.high = NumericHelper.to_d(output['e'])
+          ticker.change = NumericHelper.to_d(output['i'])
+          ticker.volume = NumericHelper.to_d(output['h'])
+          ticker.timestamp = Time.now.to_i
           ticker.payload = output
           ticker
         end

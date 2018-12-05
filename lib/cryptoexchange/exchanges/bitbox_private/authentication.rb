@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Bitbox
+  module BitboxPrivate
     class Authentication < Cryptoexchange::Services::Authentication
       def signature(payload)
         api_secret = HashHelper.dig(Cryptoexchange::Credentials.get(@exchange), 'api_secret')
@@ -11,7 +11,7 @@ module Cryptoexchange::Exchanges
         {
           "X-API-Key" => api_key,
           "X-API-SIGN" => signature(payload),
-          "X-API-TIMESTAMP" => timestamp, 
+          "X-API-TIMESTAMP" => timestamp,
           "X-API-NONCE" => "12345"
         }
       end
