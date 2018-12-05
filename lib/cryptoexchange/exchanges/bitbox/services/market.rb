@@ -19,9 +19,12 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output["responseData"].map do |output|
+            base = output["b"] == "LINK" ? "LN" : output["b"]
+            target = output["a"] == "LINK" ? "LN" : output["a"]
+
             market_pair = Cryptoexchange::Models::MarketPair.new(
-                            base: output["b"],
-                            target: output["a"],
+                            base: base,
+                            target: target,
                             market: Bitbox::Market::NAME
                           )
             adapt(market_pair, output)
@@ -37,7 +40,7 @@ module Cryptoexchange::Exchanges
           ticker.low = NumericHelper.to_d(output['f'])
           ticker.high = NumericHelper.to_d(output['e'])
           ticker.change = NumericHelper.to_d(output['i'])
-          ticker.volume = NumericHelper.to_d(output['h'])
+          ticker.volume = NumericHelper.to_d(output['n'])
           ticker.timestamp = Time.now.to_i
           ticker.payload = output
           ticker
