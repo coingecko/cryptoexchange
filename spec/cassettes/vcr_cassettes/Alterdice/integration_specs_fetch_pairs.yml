@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.alterdice.com/v1/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.alterdice.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 15 Nov 2018 15:40:58 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=c0c1r186thajdefftduha27ep5; path=/; HttpOnly
+      - __cfduid=d616499258c075ee55b9f76e2aef77d4c1542296458; expires=Fri, 15-Nov-19
+        15:40:58 GMT; path=/; domain=.alterdice.com; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 47a2d1beca038ac8-KBP
+    body:
+      encoding: UTF-8
+      string: '["BTCUSD","ETHUSD","ETHBTC","BCHUSD","BCHBTC","LTCUSD","LTCBTC","EDRUSD","EDRBTC"]'
+    http_version: 
+  recorded_at: Thu, 15 Nov 2018 15:41:00 GMT
+recorded_with: VCR 4.0.0
