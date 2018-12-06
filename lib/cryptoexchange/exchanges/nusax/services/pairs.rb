@@ -1,5 +1,3 @@
-# require 'pry'
-
 module Cryptoexchange::Exchanges
   module Nusax
     module Services
@@ -8,16 +6,14 @@ module Cryptoexchange::Exchanges
 
         def fetch
           output = super
-          market_pairs = []
-          pairs = output.map{|pair| pair["name"]}
-          pairs.each do |pair|
-            market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair.split("/")[0],
-                              target: pair.split("/")[1],
-                              market: Nusax::Market::NAME
-                            )
+          output.map do |pair|
+            Cryptoexchange::Models::MarketPair.new(
+              base: pair["name"].split("/")[0],
+              target: pair["name"].split("/")[1],
+              market: Nusax::Market::NAME,
+              inst_id: pair["id"]
+            )
           end
-          market_pairs
         end
       end
     end

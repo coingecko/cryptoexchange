@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe 'Nusax integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'nusax' }
-  let(:pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'nusax') }
+  let(:pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'nusax', inst_id: 'ETHBTC') }
 
   it 'fetch pairs' do
     pairs = client.pairs('nusax')
