@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nusax.co.id/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - nusax.co.id
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 06 Dec 2018 03:48:00 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d04b3ec6b8b757b8a5b14154e105ae07a1544068080; expires=Fri, 06-Dec-19
+        03:48:00 GMT; path=/; domain=.nusax.co.id; HttpOnly
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 2001:e68:6e46:6c00:758b:3930:41b3:b38b
+      Access-Control-Allow-Origin:
+      - "*"
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - MY
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=63072000; includeSubDomains
+      X-Forwarded-Proto:
+      - https
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      X-Request-Id:
+      - 0c2299ee-50de-44f8-86fc-8a256e437635
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Version:
+      - HTTP/1.1
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Host:
+      - nusax.co.id
+      Etag:
+      - W/"e75a5d82cb0d297d3038ccac24dbac17"
+      X-Runtime:
+      - '0.005294'
+      X-Forwarded-For:
+      - 2001:e68:6e46:6c00:758b:3930:41b3:b38b
+      X-Powered-By:
+      - Phusion Passenger 5.3.5
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 484bc63ff9ef30a2-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"datpeth","name":"DATP/ETH"},{"id":"datpidr","name":"DATP/IDR"},{"id":"wtneth","name":"WTN/ETH"},{"id":"entsbtc","name":"ENTS/BTC"},{"id":"entseth","name":"ENTS/ETH"},{"id":"entsidr","name":"ENTS/IDR"},{"id":"nstbtc","name":"NST/BTC"},{"id":"sumobtc","name":"SUMO/BTC"},{"id":"ETHBTC","name":"ETH/BTC"},{"id":"ZENBTC","name":"ZEN/BTC"},{"id":"VIPSETH","name":"VIPS/ETH"},{"id":"VIPSBTC","name":"VIPS/BTC"},{"id":"NUSAETH","name":"NUSA/ETH"},{"id":"NUSABTC","name":"NUSA/BTC"},{"id":"MAMEIDR","name":"MAME/IDR"},{"id":"MAMEETH","name":"MAME/ETH"},{"id":"MAMEBTC","name":"MAME/BTC"},{"id":"DOGEBTC","name":"DOGE/BTC"},{"id":"CNXBTC","name":"CNX/BTC"},{"id":"B2GBTC","name":"B2G/BTC"}]'
+    http_version: 
+  recorded_at: Thu, 06 Dec 2018 03:48:00 GMT
+recorded_with: VCR 4.0.0
