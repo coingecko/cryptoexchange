@@ -16,7 +16,6 @@ module Cryptoexchange::Exchanges
                               target: pair.split("/")[1],
                               market: Nusax::Market::NAME
                             )
-                            # test
           end
           market_pairs
         end

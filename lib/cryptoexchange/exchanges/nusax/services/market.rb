@@ -5,42 +5,24 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            false
+            true
           end
         end
 
-        def fetch
-          output = super(ticker_url)
-          adapt_all(output)
+        def fetch(market_pair)
+          output = super(ticker_url(market_pair))
+          adapt(output, market_pair)
         end
 
-        def ticker_url
-          "#{Cryptoexchange::Exchanges::Nusax::Market::API_URL}/tickers"
-        end
-
-        def adapt_all(output)
-          keys =  output.each_with_object([]) do |(k,v),keys|
-                    keys << k
-                  end
-          tickers = keys.each.with_index do |key, index|
-            output[keys[index]]["ticker"]
-          end
-          tickers.each do |ticker|
-            market_pairs = []
-            binding.pry
-            pairs = output.map{|pair| pair["name"]}
-              pairs.each do |pair|
-                market_pairs << Cryptoexchange::Models::MarketPair.new(
-                                  base: pair.split("/")[0],
-                                  target: pair.split("/")[1],
-                                  market: Nusax::Market::NAME
-                                )
-              adapt(market_pairs, nil)
-            end
-          end
+        def ticker_url(market_pair)
+          trading_pair_id = "#{market_pair.base}#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::Nusax::Market::API_URL}/tickers/#{trading_pair_id}"
         end
 
         def adapt(output, market_pair)
+          ticker = Cryptoexchange::Models::Ticker.new
+          market = output["ticker"]
+
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
