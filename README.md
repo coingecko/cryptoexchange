@@ -32,8 +32,9 @@ Or install it yourself as:
 | Airswap           | Y       |            |         |         |             |          | airswap           |
 | Allbit            | Y       | N          | N       |         | Y           | Y        | allbit            |
 | Allcoin           | Y       | Y          | Y       |         | Y           |          | allcoin           |
-| Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |
 | Alluma            | Y       | N          | N       |         | Y           | N        | alluma            |
+| Alterdice         | Y       |            |         |         | Y           | Y        | alterdice         |
+| Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |
 | Altmarkets        | Y       | Y          | Y       |         | Y           | Y        | altmarkets        |
 | ANX               | Y       |            |         |         | User-Defined|          | anx               |
 | Aphelion          | Y       |            |         |         | Y           | Y        | aphelion          |
