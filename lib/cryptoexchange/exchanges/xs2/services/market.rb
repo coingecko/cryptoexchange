@@ -37,8 +37,8 @@ module Cryptoexchange::Exchanges
           ticker.bid       = NumericHelper.to_d(summary['buy'])
           ticker.ask       = NumericHelper.to_d(summary['sell'])
           ticker.last      = NumericHelper.to_d(summary['price'])
-          ticker.high      = NumericHelper.to_d(summary['high'])
-          ticker.low       = NumericHelper.to_d(summary['low'])
+          ticker.high      = NumericHelper.to_d(summary['high'] != nil ? summary['high'] : summary['price'])
+          ticker.low       = NumericHelper.to_d(summary['low'] != nil ? summary['low'] : summary['price'])
           ticker.volume    = NumericHelper.to_d(summary['volume'])
           ticker.timestamp = Time.parse(summary['utc']).to_i
           ticker.payload   = summary
