@@ -10,6 +10,7 @@ RSpec.describe 'Newdex integration specs' do
 
     pair = pairs.first
     expect(pair.base).to_not be nil
+    expect(pair.base.length).to be < 5
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'newdex'
   end
