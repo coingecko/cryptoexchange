@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://huulk.com/api/public/market/cpc-btc/ticker/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - huulk.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 11 Nov 2018 09:49:20 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '259'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d4cd364d0478f04758af531ab93b9e7a11541929760; expires=Mon, 11-Nov-19
+        09:49:20 GMT; path=/; domain=.huulk.com; HttpOnly; Secure
+      Vary:
+      - Accept, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      Cache-Control:
+      - public, s-maxage=1, max-age=1
+      Expires:
+      - Sun, 11 Nov 2018 09:49:21 GMT
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'self'; script-src 'self'; style-src 'self'; img-src 'none'; font-src
+        'none'; connect-src 'self'; media-src 'none'; child-src 'none'; worker-src
+        'none'; frame-ancestors 'self'; form-action 'self'; upgrade-insecure-requests;
+        block-all-mixed-content; referrer origin-when-cross-origin;
+      X-Frame-Options:
+      - SAMEORIGIN
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 477fd92c7dfc6b61-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"price":{"last":"0.00008514","low":"0.00007983","high":"0.00010838","change":"0.00002855","best_bid":"0.00009001","best_ask":"0.00010838"},"volume":{"24h":"1466.11679","30d":"50206.07345326","3m":"79294.51171105","6m":"79294.51171105","1y":"79294.51171105"}}'
+    http_version: 
+  recorded_at: Sun, 11 Nov 2018 09:49:20 GMT
+recorded_with: VCR 4.0.0

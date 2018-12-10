@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://huulk.com/api/public/market/cpc-btc/depth/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - huulk.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 11 Nov 2018 10:14:52 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1670'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d22514c9ca099fc273d030881cd96e55e1541931292; expires=Mon, 11-Nov-19
+        10:14:52 GMT; path=/; domain=.huulk.com; HttpOnly; Secure
+      Vary:
+      - Accept, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      Cache-Control:
+      - public, s-maxage=1, max-age=1
+      Expires:
+      - Sun, 11 Nov 2018 10:14:53 GMT
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'self'; script-src 'self'; style-src 'self'; img-src 'none'; font-src
+        'none'; connect-src 'self'; media-src 'none'; child-src 'none'; worker-src
+        'none'; frame-ancestors 'self'; form-action 'self'; upgrade-insecure-requests;
+        block-all-mixed-content; referrer origin-when-cross-origin;
+      X-Frame-Options:
+      - SAMEORIGIN
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 477ffe90fc5f6a79-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"bids":[["0.0000015","217511.9"],["0.00000151","119711.9"],["0.00002765","20560.9"],["0.00002766","13260.9"],["0.000062","10494.9"],["0.00007018","10493.9"],["0.0000735","10483.9"],["0.00007581","9503.9"],["0.0000801","9489.9"],["0.00008099","8473.9"],["0.00008106","7473.9"],["0.00008508","7373.9"],["0.00008513","3970.9"],["0.00008514","3770.9"],["0.00008515","2257.7"],["0.00008516","2137.7"],["0.00008555","2135"],["0.00009","2070"],["0.00009001","2000"]],"asks":[["0.00010838","80"],["0.00010839","391.01650268"],["0.0001084","800.01650268"],["0.00010989","1797.01650268"],["0.00010995","1847.01650268"],["0.00011999","1914.01650268"],["0.00012971","2885.01650268"],["0.00012974","5859.01650268"],["0.0001379","7169.01650268"],["0.000138","9109.38627725"],["0.00015","9129.38627725"],["0.00015589","9229.38627725"],["0.000158","9329.38627725"],["0.00016666","10851.38627725"],["0.00016667","16851.38627725"],["0.0001751","17351.38627725"],["0.00017583","17410.38627725"],["0.00017951","17709.38627725"],["0.00018201","18209.38627725"],["0.000185","18218.61627725"],["0.00019","18313.61627725"],["0.00022631","19583.61627725"],["0.00022632","22215.61627725"],["0.00022638","27915.61627725"],["0.00033333","29415.61627725"],["0.00111109","40524.61627725"],["0.0011111","40632.61627725"],["0.0011165","40642.61627725"],["0.0017","40742.61627725"],["0.00199999","50741.61627725"],["0.002","57452.07089305"],["0.003","57467.07089305"],["0.04545455","57467.15889305"],["0.3","57567.15889305"],["0.5","57567.17889305"],["0.6","57569.17889305"],["1","57574.49889305"],["83.33333333","57574.51089305"]],"totals":[["1.45681908","217511.9"],["89.03597576","57574.51089305"]]}'
+    http_version: 
+  recorded_at: Sun, 11 Nov 2018 10:14:52 GMT
+recorded_with: VCR 4.0.0

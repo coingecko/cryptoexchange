@@ -213,6 +213,7 @@ Or install it yourself as:
 | Hotbit            | Y       | N          | N       |         | Y           | Y        | hotbit            |
 | HPX               | Y       | Y          | Y       |         | Y           |          | hpx               |
 | Huobi             | Y       |            |         |         | Y           | Y        | huobi             |
+| Huulk             | Y       | Y          |         |         | Y           | Y        | huulk             |
 | Ice3x             | Y       | Y          | Y       |         | Y           |          | ice3x             |
 | Idax              | Y       | N          | N       |         | Y           | Y        | idax              |
 | Idcm              | Y       |            |         |         | Y           | Y        | idcm              |
