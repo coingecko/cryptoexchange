@@ -14,6 +14,11 @@ RSpec.describe 'Bitflyer integration specs' do
     expect(pair.market).to eq 'bitflyer'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url btc_jpy_pair.market, base: btc_jpy_pair.base, target: btc_jpy_pair.target
+    expect(trade_page_url).to eq "https://bitflyer.com/en-jp/ex/simpleex"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_jpy_pair)
 
