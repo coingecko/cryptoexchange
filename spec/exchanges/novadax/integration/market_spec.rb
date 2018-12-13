@@ -20,7 +20,7 @@ RSpec.describe 'Novadax integration specs' do
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'BRL'
     expect(ticker.market).to eq 'novadax'
-    expect(ticker.last).to be nil
+    expect(ticker.last).to be_a Numeric
     expect(ticker.high).to be_a Numeric
     expect(ticker.low).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
