@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.novadax.com/v1/data/ticker?coin=BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.novadax.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 05 Dec 2018 15:02:26 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '{"code":"A10000","message":"Success","data":{"vol":7.656349380000000000,"high":15480.00000000,"low":14928.45000000,"buy":15075.00000000,"sell":15075.00000000,"date":1544020892000}}'
+    http_version: 
+  recorded_at: Wed, 05 Dec 2018 15:02:27 GMT
+recorded_with: VCR 4.0.0
