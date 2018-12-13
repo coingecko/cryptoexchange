@@ -32,8 +32,9 @@ Or install it yourself as:
 | Airswap           | Y       |            |         |         |             |          | airswap           |
 | Allbit            | Y       | N          | N       |         | Y           | Y        | allbit            |
 | Allcoin           | Y       | Y          | Y       |         | Y           |          | allcoin           |
-| Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |
 | Alluma            | Y       | N          | N       |         | Y           | N        | alluma            |
+| Alterdice         | Y       |            |         |         | Y           | Y        | alterdice         |
+| Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |
 | Altmarkets        | Y       | Y          | Y       |         | Y           | Y        | altmarkets        |
 | ANX               | Y       |            |         |         | User-Defined|          | anx               |
 | Aphelion          | Y       |            |         |         | Y           | Y        | aphelion          |
@@ -104,6 +105,7 @@ Or install it yourself as:
 | BTER              | Y       |            |         |         | Y           |          | bter              |
 | Buyucoin          | Y       | N          | N       |         | Y           |          | buyucoin          |
 | BX Thailand       | Y       |            |         |         | Y           |          | bx_thailand       |
+| BW                | Y       |            |         |         | Y           | Y        | bw                |
 | Bytex             | Y       | N          | N       |         | Y           | N        | bytex             |
 | C2CX              | Y       | Y          | N       |         | Y           |          | c2cx              |
 | CPatex            | Y       | Y          | Y       |         | Y           |          | c_patex           |
@@ -259,6 +261,7 @@ Or install it yourself as:
 | NLexch            | Y       |            |         |         | Y           | Y        | nlexch            |
 | Novadex           | Y       | N          | N       |         | Y           | Y        | novadex           |
 | Novadax           | Y       | N          | Y       |         | User-Defined| N        | novadax           |
+| Nusax             | Y       |            |         |         | Y           | Y        | nusax             |
 | Nova Exchange     | Y       |            |         |         | Y           |          | novaexchange      |
 | OasisDEX          | Y       |            |         |         | Y           |          | oasisdex          |
 | OAX               | Y       |            |         |         | Y           |          | oax               |
