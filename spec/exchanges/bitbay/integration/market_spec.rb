@@ -14,6 +14,11 @@ RSpec.describe 'Bitbay integration specs' do
     expect(pair.market).to eq 'bitbay'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url btc_usd_pair.market
+    expect(trade_page_url).to eq "https://bitbay.net/en/exchange-rate"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_usd_pair)
 
