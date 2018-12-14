@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://swiftex.co/api/v2/depth.json?market=mynt-btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - swiftex.co
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 29 Nov 2018 14:52:20 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '725'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc00a2b35cdbf3c0ffdae6754d102c20b1543503140; expires=Fri, 29-Nov-19
+        14:52:20 GMT; path=/; domain=.swiftex.co; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - dc070d95-4042-4ad4-9670-8f1f9ef37f1e
+      Etag:
+      - '"c7ef4fc8f7a937ec9350bbfbd5e64d1a"'
+      X-Runtime:
+      - '0.004040'
+      X-Powered-By:
+      - Phusion Passenger 5.3.5
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4815e5c3aae596a0-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timestamp":1543503140,"asks":[["0.000009","1500.0"],["0.000006","1500.0"],["0.000003","1500.0"],["0.00000195","1500.0"],["0.00000099","100000.0"],["0.00000095","22000.0"],["0.0000009","10000.0"],["0.0000008","10000.0"],["0.0000007","10000.0"],["0.0000006","10000.0"],["0.0000005","10000.0"],["0.00000045","5000.0"],["0.0000004","5000.0"],["0.00000035","5000.0"],["0.0000003","29442.145908"],["0.0000002","40000.0"],["0.0000001","30000.0"],["0.00000009","183273.087"],["0.00000008","296514.62875"],["0.00000007","200879.676172"],["0.00000006","675435.480696"],["0.00000005","781984.801929"],["0.00000004","892319.224852"]],"bids":[["0.00000003","271774.268683"],["0.00000002","671342.004248"],["0.00000001","586855.39864"]]}'
+    http_version: 
+  recorded_at: Thu, 29 Nov 2018 14:52:20 GMT
+recorded_with: VCR 4.0.0

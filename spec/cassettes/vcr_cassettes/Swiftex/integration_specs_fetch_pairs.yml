@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://swiftex.co/api/v2/tickers.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - swiftex.co
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 29 Nov 2018 14:52:19 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1077'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0f43c6aa38393a8a112dc89189ac914d1543503139; expires=Fri, 29-Nov-19
+        14:52:19 GMT; path=/; domain=.swiftex.co; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 423782a1-8539-42e6-b0d8-d106c1b9c09a
+      Etag:
+      - '"4cf64431ef1d945849dee8bb7099d598"'
+      X-Runtime:
+      - '0.011857'
+      X-Powered-By:
+      - Phusion Passenger 5.3.5
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4815e5be6fb0c2c4-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"mynt-btc":{"at":1543503139,"ticker":{"buy":"0.00000003","sell":"0.00000004","low":"0.00000003","high":"0.00000003","last":"0.00000003","vol":"588502.3257"}},"ufo-btc":{"at":1543503139,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.00000002","vol":"0.0"}},"ltc-btc":{"at":1543503139,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"rvn-btc":{"at":1543503139,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0000079","high":"0.0000079","last":"0.0000079","vol":"0.0"}},"mymn-btc":{"at":1543503139,"ticker":{"buy":"0.00000002","sell":"0.00000003","low":"0.00000002","high":"0.00000002","last":"0.00000002","vol":"0.0"}},"cpr-btc":{"at":1543503139,"ticker":{"buy":"0.0","sell":"0.00000001","low":"0.0","high":"0.0","last":"0.00000001","vol":"0.0"}},"dgb-btc":{"at":1543503139,"ticker":{"buy":"0.0","sell":"0.0","low":"0.00000308","high":"0.00000308","last":"0.00000308","vol":"19833.24556"}},"vls-btc":{"at":1543503139,"ticker":{"buy":"0.0","sell":"0.00004","low":"0.00002","high":"0.00002","last":"0.00002","vol":"0.0"}}}'
+    http_version: 
+  recorded_at: Thu, 29 Nov 2018 14:52:19 GMT
+recorded_with: VCR 4.0.0
