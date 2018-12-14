@@ -222,6 +222,7 @@ Or install it yourself as:
 | Indodax           | Y       | Y          | Y       |         | User-Defined| N        | indodax           |
 | InfinityCoin      | Y       |            |         |         | Y           | Y        | infinity_coin     |
 | InstantBitex      | Y       | Y          | Y       |         | Y           |          | instantbitex      |
+| Iqfinex           | Y       | Y          | Y       |         | Y           | Y        |
 | Ironex            | Y       |            |         |         | Y           |          | ironex            |
 | Itbit             | Y       | Y          | Y       |         | User-Defined|          | itbit             |
 | Jex               | Y       | N          | N       |         | Y           |          | jex               |
