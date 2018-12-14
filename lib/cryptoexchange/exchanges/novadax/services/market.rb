@@ -23,6 +23,7 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Novadax::Market::NAME
+          ticker.last      = data_ticker['transType'] == 'SELL' ? NumericHelper.to_d(data_ticker['sell']) : NumericHelper.to_d(data_ticker['buy'])
           ticker.bid       = NumericHelper.to_d(data_ticker['buy'])
           ticker.ask       = NumericHelper.to_d(data_ticker['sell'])
           ticker.high      = NumericHelper.to_d(data_ticker['high'])

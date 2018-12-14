@@ -2,6 +2,7 @@ module Cryptoexchange::Exchanges
   module Novadax
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
+       PAIRS_URL = "#{Cryptoexchange::Exchanges::Novadax::Market::API_URL}/data/market"
 
         def fetch
           output = super
@@ -9,10 +10,10 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output.map do |pair|
+          output['data'].map do |pair|
             Cryptoexchange::Models::MarketPair.new(
-              base: pair[:base],
-              target: pair[:target],
+              base: pair,
+              target: 'BRL',
               market: Novadax::Market::NAME
             )
           end
