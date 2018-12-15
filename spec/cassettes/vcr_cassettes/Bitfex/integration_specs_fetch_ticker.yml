@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitfex.trade/api/v1/ticker/BTC_RUR
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitfex.trade
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Dec 2018 18:50:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.206846'
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"last":231071.8,"high":234356.29,"low":225366.32,"buy":228219.06,"sell":230120.89,"vol":0.44111686,"updated":1544899848}'
+    http_version: 
+  recorded_at: Sat, 15 Dec 2018 18:50:48 GMT
+recorded_with: VCR 4.0.0
