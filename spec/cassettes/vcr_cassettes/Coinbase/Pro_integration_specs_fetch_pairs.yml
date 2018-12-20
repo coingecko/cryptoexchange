@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pro.coinbase.com/products
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.pro.coinbase.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 26 Nov 2018 23:01:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '8708'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3c703701e3bf9c18692f487c1ca8f36d1543273315; expires=Tue, 26-Nov-19
+        23:01:55 GMT; path=/; domain=.pro.coinbase.com; HttpOnly
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, cb-session, cb-fp
+      Access-Control-Allow-Methods:
+      - GET,POST,DELETE,PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - cb-before, cb-after, cb-gdpr
+      Access-Control-Max-Age:
+      - '7200'
+      Cache-Control:
+      - public, max-age=5
+      Etag:
+      - W/"2204-ATymnjSMp845eG364Lnf/PklxZg"
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 47fffad0db706a97-LHR
+    body:
+      encoding: UTF-8
+      string: '[{"id":"BCH-USD","base_currency":"BCH","quote_currency":"USD","base_min_size":"0.01","base_max_size":"350","quote_increment":"0.01","display_name":"BCH/USD","status":"online","margin_enabled":false,"status_message":null,"min_market_funds":"10","max_market_funds":"1000000","post_only":false,"limit_only":true,"cancel_only":false,"accessible":false},{"id":"BCH-BTC","base_currency":"BCH","quote_currency":"BTC","base_min_size":"0.01","base_max_size":"200","quote_increment":"0.00001","display_name":"BCH/BTC","status":"online","margin_enabled":false,"status_message":null,"min_market_funds":"0.001","max_market_funds":"30","post_only":false,"limit_only":true,"cancel_only":false,"accessible":true},{"id":"BCH-EUR","base_currency":"BCH","quote_currency":"EUR","base_min_size":"0.01","base_max_size":"120","quote_increment":"0.01","display_name":"BCH/EUR","status":"online","margin_enabled":false,"status_message":null,"min_market_funds":"10","max_market_funds":"200000","post_only":false,"limit_only":true,"cancel_only":false,"accessible":true},{"id":"BCH-GBP","base_currency":"BCH","quote_currency":"GBP","base_min_size":"0.01","base_max_size":"120","quote_increment":"0.01","display_name":"BCH/GBP","status":"online","margin_enabled":false,"status_message":null,"min_market_funds":"10","max_market_funds":"1000000","post_only":false,"limit_only":false,"cancel_only":true,"accessible":false},{"id":"BTC-GBP","base_currency":"BTC","quote_currency":"GBP","base_min_size":"0.001","base_max_size":"20","quote_increment":"0.01","display_name":"BTC/GBP","status":"online","margin_enabled":false,"status_message":null,"min_market_funds":"10","max_market_funds":"200000","post_only":false,"limit_only":false,"cancel_only":false,"accessible":false},{"id":"BTC-EUR","base_currency":"BTC","quote_currency":"EUR","base_min_size":"0.001","base_max_size":"50","quote_increment":"0.01","display_name":"BTC/EUR","status":"online","margin_enabled":false,"status_message":null,"min_market_funds":"10","max_market_funds":"600000","post_only":false,"limit_only":false,"cancel_only":false,"accessible":true},{"id":"BTC-USDC","base_currency":"BTC","quote_currency":"USDC","base_min_size":"0.001","base_max_size":"70","quote_increment":"0.01","display_name":"BTC/USDC","status":"online","margin_enabled":false,"status_message":"","min_market_funds":"10","max_market_funds":"1000000","post_only":false,"limit_only":false,"cancel_only":false,"accessible":true},{"id":"ETH-USDC","base_currency":"ETH","quote_currency":"USDC","base_min_size":"0.01","base_max_size":"700","quote_increment":"0.01","display_name":"ETH/USDC","status":"online","margin_enabled":false,"status_message":"","min_market_funds":"10","max_market_funds":"1000000","post_only":false,"limit_only":false,"cancel_only":false,"accessible":true},{"id":"ZRX-EUR","base_currency":"ZRX","quote_currency":"EUR","base_min_size":"1","base_max_size":"150000","quote_increment":"0.000001","display_name":"ZRX/EUR","status":"online","margin_enabled":false,"status_message":"","min_market_funds":"10","max_market_funds":"100000","post_only":false,"limit_only":false,"cancel_only":false,"accessible":true},{"id":"ZRX-USD","base_currency":"ZRX","quote_currency":"USD","base_min_size":"1","base_max_size":"150000","quote_increment":"0.000001","display_name":"ZRX/USD","status":"online","margin_enabled":false,"status_message":"","min_market_funds":"10","max_market_funds":"100000","post_only":false,"limit_only":false,"cancel_only":false,"accessible":false},{"id":"BAT-USDC","base_currency":"BAT","quote_currency":"USDC","base_min_size":"1","base_max_size":"300000","quote_increment":"0.000001","display_name":"BAT/USDC","status":"online","margin_enabled":false,"status_message":"","min_market_funds":"10","max_market_funds":"100000","post_only":false,"limit_only":false,"cancel_only":false,"accessible":true},{"id":"ETC-EUR","base_currency":"ETC","quote_currency":"EUR","base_min_size":"0.1","base_max_size":"5000","quote_increment":"0.01","display_name":"ETC/EUR","status":"online","margin_enabled":false,"status_message":"","min_market_funds":"10","max_market_funds":"100000","post_only":false,"limit_only":false,"cancel_only":false,"accessible":true},{"id":"BTC-USD","base_currency":"BTC","quote_currency":"USD","base_min_size":"0.001","base_max_size":"70","quote_increment":"0.01","display_name":"BTC/USD","status":"online","margin_enabled":false,"status_message":null,"min_market_funds":"10","max_market_funds":"1000000","post_only":false,"limit_only":false,"cancel_only":false,"accessible":false},{"id":"ETH-BTC","base_currency":"ETH","quote_currency":"BTC","base_min_size":"0.01","base_max_size":"600","quote_increment":"0.00001","display_name":"ETH/BTC","status":"online","margin_enabled":false,"status_message":null,"min_market_funds":"0.001","max_market_funds":"50","post_only":false,"limit_only":false,"cancel_only":false,"accessible":true},{"id":"ETH-EUR","base_currency":"ETH","quote_currency":"EUR","base_min_size":"0.01","base_max_size":"400","quote_increment":"0.01","display_name":"ETH/EUR","status":"online","margin_enabled":false,"status_message":null,"min_market_funds":"10","max_market_funds":"400000","post_only":false,"limit_only":false,"cancel_only":false,"accessible":true},{"id":"ETH-USD","base_currency":"ETH","quote_currency":"USD","base_min_size":"0.01","base_max_size":"700","quote_increment":"0.01","display_name":"ETH/USD","status":"online","margin_enabled":false,"status_message":null,"min_market_funds":"10","max_market_funds":"1000000","post_only":false,"limit_only":false,"cancel_only":false,"accessible":false},{"id":"LTC-BTC","base_currency":"LTC","quote_currency":"BTC","base_min_size":"0.1","base_max_size":"2000","quote_increment":"0.00001","display_name":"LTC/BTC","status":"online","margin_enabled":false,"status_message":null,"min_market_funds":"0.001","max_market_funds":"30","post_only":false,"limit_only":false,"cancel_only":false,"accessible":true},{"id":"LTC-EUR","base_currency":"LTC","quote_currency":"EUR","base_min_size":"0.1","base_max_size":"1000","quote_increment":"0.01","display_name":"LTC/EUR","status":"online","margin_enabled":false,"status_message":null,"min_market_funds":"10","max_market_funds":"200000","post_only":false,"limit_only":false,"cancel_only":false,"accessible":true},{"id":"LTC-USD","base_currency":"LTC","quote_currency":"USD","base_min_size":"0.1","base_max_size":"4000","quote_increment":"0.01","display_name":"LTC/USD","status":"online","margin_enabled":false,"status_message":null,"min_market_funds":"10","max_market_funds":"1000000","post_only":false,"limit_only":false,"cancel_only":false,"accessible":false},{"id":"ETC-USD","base_currency":"ETC","quote_currency":"USD","base_min_size":"0.1","base_max_size":"5000","quote_increment":"0.01","display_name":"ETC/USD","status":"online","margin_enabled":false,"status_message":"","min_market_funds":"10","max_market_funds":"100000","post_only":false,"limit_only":false,"cancel_only":false,"accessible":false},{"id":"ETC-BTC","base_currency":"ETC","quote_currency":"BTC","base_min_size":"0.1","base_max_size":"5000","quote_increment":"0.00001","display_name":"ETC/BTC","status":"online","margin_enabled":false,"status_message":"","min_market_funds":"0.001","max_market_funds":"30","post_only":false,"limit_only":false,"cancel_only":false,"accessible":true},{"id":"ZRX-BTC","base_currency":"ZRX","quote_currency":"BTC","base_min_size":"1","base_max_size":"150000","quote_increment":"0.00000001","display_name":"ZRX/BTC","status":"online","margin_enabled":false,"status_message":"","min_market_funds":"0.001","max_market_funds":"30","post_only":false,"limit_only":false,"cancel_only":false,"accessible":true},{"id":"ETC-GBP","base_currency":"ETC","quote_currency":"GBP","base_min_size":"0.1","base_max_size":"5000","quote_increment":"0.01","display_name":"ETC/GBP","status":"online","margin_enabled":false,"status_message":null,"min_market_funds":"10","max_market_funds":"100000","post_only":false,"limit_only":false,"cancel_only":false,"accessible":false},{"id":"ETH-GBP","base_currency":"ETH","quote_currency":"GBP","base_min_size":"0.01","base_max_size":"350","quote_increment":"0.01","display_name":"ETH/GBP","status":"online","margin_enabled":false,"status_message":null,"min_market_funds":"10","max_market_funds":"1000000","post_only":false,"limit_only":false,"cancel_only":false,"accessible":false},{"id":"LTC-GBP","base_currency":"LTC","quote_currency":"GBP","base_min_size":"0.1","base_max_size":"1000","quote_increment":"0.01","display_name":"LTC/GBP","status":"online","margin_enabled":false,"status_message":null,"min_market_funds":"10","max_market_funds":"1000000","post_only":false,"limit_only":false,"cancel_only":false,"accessible":false}]'
+    http_version: 
+  recorded_at: Mon, 26 Nov 2018 23:01:56 GMT
+recorded_with: VCR 4.0.0
