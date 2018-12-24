@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://alpha.tradesprite.com/hydrasocket/v2/ticks
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - alpha.tradesprite.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 Dec 2018 06:15:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3380'
+      Connection:
+      - close
+      Server:
+      - Cowboy
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - clgsp730rg3blqnmmlpqa3l7g6n86dk5
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","error":"","data":{"BTC":{"stats":{"XRP-CGC":{"volume":16868.756,"open_price":9.243,"moving_stats_minutes":1440,"low_price":8.7712,"instrument_code":1312,"high_price":10.6905,"exchange":11,"close_price":10.5926},"XRP-BTC":{"volume":20859.0,"open_price":9.214e-5,"moving_stats_minutes":1440,"low_price":9.209e-5,"instrument_code":3312,"high_price":9.247e-5,"exchange":11,"close_price":9.247e-5},"XLM-CGC":{"volume":221.982,"open_price":3.0032,"moving_stats_minutes":1440,"low_price":2.9703,"instrument_code":1310,"high_price":3.2657,"exchange":11,"close_price":3.2657},"NEO-CGC":{"volume":0.0,"open_price":200.0,"moving_stats_minutes":1440,"low_price":200.0,"instrument_code":1309,"high_price":200.0,"exchange":11,"close_price":200.0},"IMVR-CGC":{"volume":0.0,"open_price":0.0,"moving_stats_minutes":0,"low_price":0.0,"instrument_code":1314,"high_price":0.0,"exchange":11,"close_price":0.0},"ETH-CGC":{"volume":53.767573,"open_price":3213.0,"moving_stats_minutes":1440,"low_price":3094.0,"instrument_code":1304,"high_price":3690.0,"exchange":11,"close_price":3638.0},"ETH-BTC":{"volume":22.088,"open_price":0.028662,"moving_stats_minutes":1440,"low_price":0.028567,"instrument_code":3304,"high_price":0.028762,"exchange":11,"close_price":0.028567},"EOS-CGC":{"volume":0.0016,"open_price":66.0,"moving_stats_minutes":1440,"low_price":66.0,"instrument_code":1308,"high_price":66.0,"exchange":11,"close_price":66.0},"DASH-CGC":{"volume":0.12871,"open_price":2185.0,"moving_stats_minutes":1440,"low_price":2109.0,"instrument_code":1313,"high_price":2185.0,"exchange":11,"close_price":2109.0},"CGC-USDT":{"volume":280599.0,"open_price":0.0395,"moving_stats_minutes":1440,"low_price":0.039,"instrument_code":2301,"high_price":0.0402,"exchange":11,"close_price":0.0399},"BTC-USDT":{"volume":1.39955198,"open_price":4033.31,"moving_stats_minutes":1440,"low_price":4020.54,"instrument_code":2303,"high_price":4033.36,"exchange":11,"close_price":4033.36},"BTC-CGC":{"volume":0.74657605,"open_price":97140.0,"moving_stats_minutes":1440,"low_price":95372.0,"instrument_code":1303,"high_price":1.29e5,"exchange":11,"close_price":1.29e5},"BCH-CGC":{"volume":0.0,"open_price":0.0,"moving_stats_minutes":0,"low_price":0.0,"instrument_code":1307,"high_price":0.0,"exchange":11,"close_price":0.0},"ADA-CGC":{"volume":471.572,"open_price":1.0362,"moving_stats_minutes":1440,"low_price":0.9675,"instrument_code":1311,"high_price":1.0362,"exchange":11,"close_price":1.0199}},"prices":{"XRP-CGC":{"ltp":10.5926,"bid_price":10.5926,"ask_price":10.6242},"XRP-BTC":{"ltp":9.247e-5,"bid_price":9.214e-5,"ask_price":9.247e-5},"XLM-CGC":{"ltp":3.2657,"bid_price":3.4019,"ask_price":3.4245},"NEO-CGC":{"ltp":200.0,"bid_price":210.0,"ask_price":212.0},"IMVR-CGC":{"ltp":0.0031,"bid_price":0.00313,"ask_price":0.014},"ETH-CGC":{"ltp":3638.0,"bid_price":3603.0,"ask_price":3613.0},"ETH-BTC":{"ltp":0.028567,"bid_price":0.028567,"ask_price":0.06},"EOS-CGC":{"ltp":66.0,"bid_price":74.0,"ask_price":75.0},"DASH-CGC":{"ltp":2109.0,"bid_price":2352.0,"ask_price":2362.0},"CGC-USDT":{"ltp":0.0399,"bid_price":0.0399,"ask_price":0.0401},"BTC-USDT":{"ltp":4033.36,"bid_price":4020.54,"ask_price":0.0},"BTC-CGC":{"ltp":1.29e5,"bid_price":104469.0,"ask_price":195372.0},"BCH-CGC":{"ltp":50102.0,"bid_price":50102.0,"ask_price":5.055e5},"ADA-CGC":{"ltp":1.0199,"bid_price":1.1871,"ask_price":1.1917}}}}}'
+    http_version: 
+  recorded_at: Mon, 24 Dec 2018 06:15:42 GMT
+recorded_with: VCR 4.0.0
