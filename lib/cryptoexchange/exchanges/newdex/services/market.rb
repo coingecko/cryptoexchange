@@ -24,18 +24,18 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          base, target     = output['symbol'].split('_')
-          ticker           = Cryptoexchange::Models::Ticker.new
-          ticker.base      = base
-          ticker.target    = target
-          ticker.market    = Newdex::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['last'])
-          ticker.high      = NumericHelper.to_d(output['high'])
-          ticker.low       = NumericHelper.to_d(output['low'])
-          ticker.change    = NumericHelper.to_d(output['change'])
-          ticker.volume    = NumericHelper.to_d(output['amount'])
-          ticker.timestamp = nil
-          ticker.payload   = output
+          _string, base, target = output['symbol'].split('-')
+          ticker                = Cryptoexchange::Models::Ticker.new
+          ticker.base           = base
+          ticker.target         = target
+          ticker.market         = Newdex::Market::NAME
+          ticker.last           = NumericHelper.to_d(output['last'])
+          ticker.high           = NumericHelper.to_d(output['high'])
+          ticker.low            = NumericHelper.to_d(output['low'])
+          ticker.change         = NumericHelper.to_d(output['change'])
+          ticker.volume         = NumericHelper.to_d(output['amount'])
+          ticker.timestamp      = nil
+          ticker.payload        = output
           ticker
         end
       end
