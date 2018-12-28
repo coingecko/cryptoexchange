@@ -95,6 +95,7 @@ Or install it yourself as:
 | BTC38             |         |            |         |         |             |          |                   |
 | BTC-e             |         |            |         |         |             |          |                   |
 | BtcAlpha          | Y       | Y          | Y       |         | Y           | Y        | btc_alpha         |
+| BTC Exchange      | Y       | Y          | Y       |         | Y           | Y        | btc_exchange      |
 | BtcTradeUa        | Y       | Y          | Y       |         | Y           | Y        | btc_trade_ua      |
 | BTCBox            | Y       | Y          |         |         | User-Defined| Y        | btcbox            |
 | BTCC              | Y       |            |         |         | User-Defined|          | btcc              |
