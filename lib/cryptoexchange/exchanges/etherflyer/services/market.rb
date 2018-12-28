@@ -18,33 +18,27 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
+          timestamp = output['date']
           output['ticker'].map do |ticker|
-            base, target = ticker['symbol'].split('_')
-            market_pair  = Cryptoexchange::Models::MarketPair.new(
-              base:   base,
-              target: target,
-              market: Etherflyer::Market::NAME
-            )
-            adapt(ticker, market_pair)
-          end
+            next unless ticker['symbol']
+            adapt(ticker, timestamp)
+          end.compact
         end
 
-        def adapt(output, market_pair)
-          if output.empty?
-            nil
-          else
-            ticker           = Cryptoexchange::Models::Ticker.new
-            ticker.base      = market_pair.base
-            ticker.target    = market_pair.target
-            ticker.market    = Etherflyer::Market::NAME
-            ticker.ask       = NumericHelper.to_d(output['sell'])
-            ticker.bid       = NumericHelper.to_d(output['buy'])
-            ticker.last      = NumericHelper.to_d(output['last'])
-            ticker.change    = NumericHelper.to_d(output['change'])
-            ticker.volume    = NumericHelper.to_d(output['volume'])
-            ticker.payload   = output
-            ticker
-          end
+        def adapt(output, timestamp)
+          base, target     = output['symbol'].split("_")
+          ticker           = Cryptoexchange::Models::Ticker.new
+          ticker.base      = base
+          ticker.target    = target
+          ticker.market    = Etherflyer::Market::NAME
+          ticker.ask       = NumericHelper.to_d(output['sell'])
+          ticker.bid       = NumericHelper.to_d(output['buy'])
+          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.change    = NumericHelper.to_d(output['change'])
+          ticker.volume    = NumericHelper.to_d(output['volume'])
+          ticker.timestamp = NumericHelper.to_d(timestamp)
+          ticker.payload   = output
+          ticker
         end
       end
     end

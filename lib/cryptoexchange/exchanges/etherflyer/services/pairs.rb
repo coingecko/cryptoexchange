@@ -10,16 +10,15 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          market_pairs = []
-          output['ticker'].each do |ticker|
-            base, target = ticker["symbol"].split("_")
-            market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: base,
-                              target: target,
-                              market: Etherflyer::Market::NAME
-                            )
-          end
-          market_pairs
+          output['ticker'].map do |pair|
+            next unless pair['symbol']
+            base, target = pair['symbol'].split("_")
+            Cryptoexchange::Models::MarketPair.new(
+              base:   base,
+              target: target,
+              market: Etherflyer::Market::NAME
+            )
+          end.compact
         end
       end
     end

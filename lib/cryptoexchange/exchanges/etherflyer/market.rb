@@ -1,7 +1,7 @@
 module Cryptoexchange::Exchanges
   module Etherflyer
     class Market < Cryptoexchange::Models::Market
-      NAME = 'Etherflyer'
+      NAME = 'etherflyer'
       API_URL = 'https://open.etherflyer.com'
 
       def self.trade_page_url(args={})
