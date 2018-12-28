@@ -182,6 +182,7 @@ Or install it yourself as:
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |
 | Escodex           | Y       |            |         |         | Y           | Y        | escodex           |
 | EtherDelta        | Y       |            |         |         | Y           |          | ether_delta       |
+| Etherflyer        | Y       | Y          | N       |         | Y           | Y        | etherflyer        |
 | Ethex             | Y       | N          | N       |         | Y           | N        | ethex             |
 | Ethfinex          | Y       | Y          | Y       |         | Y           | Y        | ethfinex          |
 | Everbloom         | Y       |            |         |         | Y           |          | everbloom         |
