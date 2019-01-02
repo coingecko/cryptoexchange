@@ -211,7 +211,7 @@ Or install it yourself as:
 | Hadax             | Y       | N          | N       |         | Y           | Y        | hadax             |
 | Hb.top            | Y       | N          | N       |         | Y           | N        | hb_top            |
 | Hikenex           | Y       | N          | N       |         | Y           | N        | hikenex           |
-| HitBTC            | Y       |            |         |         | Y           | Y        | hitbtc            |
+| HitBTC            | Y       | Y          | Y       |         | Y           | Y        | hitbtc            |
 | Hotbit            | Y       | N          | N       |         | Y           | Y        | hotbit            |
 | HPX               | Y       | Y          | Y       |         | Y           |          | hpx               |
 | Huobi             | Y       |            |         |         | Y           | Y        | huobi             |
