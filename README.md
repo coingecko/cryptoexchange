@@ -172,7 +172,7 @@ Or install it yourself as:
 | Cybex             | Y       | Y          | Y       |         | Y           |          | cybex             |
 | Dakuce            | Y       | Y          | Y       |         | Y           |          | dakuce            |
 | Dcoin             | Y       | N          | N       |         | Y           | Y        | dcoin             |
-| Ddex              | Y       |            |         |         | Y           | Y        | ddex              |
+| Ddex              | Y       | Y          | Y       |         | Y           | Y        | ddex              |
 | DEEX              | Y       |            |         |         | Y           |          | deex              |
 | DEx.top           | Y       | Y          | Y       |         | Y           |          | dextop            |
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |
