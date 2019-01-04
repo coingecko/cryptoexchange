@@ -14,6 +14,11 @@ RSpec.describe 'BitBNS integration specs' do
     expect(pair.market).to eq 'bitbns'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url btc_inr_pair.market, base: btc_inr_pair.base, target: btc_inr_pair.target
+    expect(trade_page_url).to eq "https://bitbns.com/trade/#/btc"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_inr_pair)
 

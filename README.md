@@ -30,11 +30,14 @@ Or install it yourself as:
 | ACX               | Y       | Y          | Y       |         | Y           | Y        | acx               |
 | AEX               | Y       | Y          | Y       |         | Y           |          | aex               |
 | Airswap           | Y       |            |         |         |             |          | airswap           |
+| Allbit            | Y       | N          | N       |         | Y           | Y        | allbit            |
 | Allcoin           | Y       | Y          | Y       |         | Y           |          | allcoin           |
-| Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |
 | Alluma            | Y       | N          | N       |         | Y           | N        | alluma            |
+| Alterdice         | Y       |            |         |         | Y           | Y        | alterdice         |
+| Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |
 | Altmarkets        | Y       | Y          | Y       |         | Y           | Y        | altmarkets        |
 | ANX               | Y       |            |         |         | User-Defined|          | anx               |
+| Aphelion          | Y       |            |         |         | Y           | Y        | aphelion          |
 | AXNET             | Y       | Y          | Y       |         | Y           | Y        | axnet             |
 | B2BX              | Y       | Y          |         |         | Y           |          | b2bx              |
 | Bancor            | Y       | N          | N       |         | Y           |          | bancor            |
@@ -54,6 +57,7 @@ Or install it yourself as:
 | Bitbegin          | Y       | N          | N       |         | Y           | Y        | bitbegin          |
 | BitBNS            | Y       |            |         |         | Y           |          | bitbns            |
 | Bitbox (Auth)     | Y       |            |         |         | User-Defined| Y        | bitbox            |
+| Bitbox (Public)   | Y       |            |         |         | Y           | Y        | bitbox            |
 | Bitconnect        | Y       |            |         |         | Y           |          | bitconnect        |
 | Bitebtc           | Y       | Y          | Y       |         | Y           | Y        | bitebtc           |
 | Bitex.la          | Y       | Y          |         |         | Y           |          | bitex             |
@@ -86,6 +90,7 @@ Or install it yourself as:
 | Bkex              | Y       | N          | N       |         | Y           | Y        | bkex              |
 | Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |
 | Blockonix         | Y       | Y          | Y       |         | Y           |          | blockonix         |
+| Blokmy            | Y       | Y          | Y       |         | Y           | Y        | blokmy            |
 | Braziliex         | Y       | Y          | Y       |         | Y           |          | braziliex         |
 | BTC38             |         |            |         |         |             |          |                   |
 | BTC-e             |         |            |         |         |             |          |                   |
@@ -100,12 +105,14 @@ Or install it yourself as:
 | BTER              | Y       |            |         |         | Y           |          | bter              |
 | Buyucoin          | Y       | N          | N       |         | Y           |          | buyucoin          |
 | BX Thailand       | Y       |            |         |         | Y           |          | bx_thailand       |
+| BW                | Y       |            |         |         | Y           | Y        | bw                |
 | Bytex             | Y       | N          | N       |         | Y           | N        | bytex             |
 | C2CX              | Y       | Y          | N       |         | Y           |          | c2cx              |
 | CPatex            | Y       | Y          | Y       |         | Y           |          | c_patex           |
 | CCex              | Y       |            |         |         | Y           |          | ccex              |
 | Cex               | Y       | Y          | Y       |         | Y           |          | cex               |
 | Cfinex            | Y       | Y          | Y       |         | Y           | Y        | cfinex            |
+| Chaince           | Y       |            |         |         | Y           | Y        | chaince           |
 | Chainrift         | Y       | Y          | Y       |         | Y           |          | chainrift         |
 | ChainEX           | Y       | Y          | Y       |         | Y           |          | chainex           |
 | Chaoex            | Y       | Y          | Y       |         | Y           | N        | chaoex            |
@@ -165,7 +172,7 @@ Or install it yourself as:
 | Cybex             | Y       | Y          | Y       |         | Y           |          | cybex             |
 | Dakuce            | Y       | Y          | Y       |         | Y           |          | dakuce            |
 | Dcoin             | Y       | N          | N       |         | Y           | Y        | dcoin             |
-| Ddex              | Y       |            |         |         | Y           | Y        | ddex              |
+| Ddex              | Y       | Y          | Y       |         | Y           | Y        | ddex              |
 | DEEX              | Y       |            |         |         | Y           |          | deex              |
 | DEx.top           | Y       | Y          | Y       |         | Y           |          | dextop            |
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |
@@ -175,6 +182,7 @@ Or install it yourself as:
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |
 | Escodex           | Y       |            |         |         | Y           | Y        | escodex           |
 | EtherDelta        | Y       |            |         |         | Y           |          | ether_delta       |
+| Etherflyer        | Y       | Y          | N       |         | Y           | Y        | etherflyer        |
 | Ethex             | Y       | N          | N       |         | Y           | N        | ethex             |
 | Ethfinex          | Y       | Y          | Y       |         | Y           | Y        | ethfinex          |
 | Everbloom         | Y       |            |         |         | Y           |          | everbloom         |
@@ -203,7 +211,7 @@ Or install it yourself as:
 | Hadax             | Y       | N          | N       |         | Y           | Y        | hadax             |
 | Hb.top            | Y       | N          | N       |         | Y           | N        | hb_top            |
 | Hikenex           | Y       | N          | N       |         | Y           | N        | hikenex           |
-| HitBTC            | Y       |            |         |         | Y           | Y        | hitbtc            |
+| HitBTC            | Y       | Y          | Y       |         | Y           | Y        | hitbtc            |
 | Hotbit            | Y       | N          | N       |         | Y           | Y        | hotbit            |
 | HPX               | Y       | Y          | Y       |         | Y           |          | hpx               |
 | Huobi             | Y       |            |         |         | Y           | Y        | huobi             |
@@ -215,6 +223,7 @@ Or install it yourself as:
 | Indodax           | Y       | Y          | Y       |         | User-Defined| N        | indodax           |
 | InfinityCoin      | Y       |            |         |         | Y           | Y        | infinity_coin     |
 | InstantBitex      | Y       | Y          | Y       |         | Y           |          | instantbitex      |
+| Iqfinex           | Y       | Y          | Y       |         | Y           | Y        |
 | Ironex            | Y       |            |         |         | Y           |          | ironex            |
 | Itbit             | Y       | Y          | Y       |         | User-Defined|          | itbit             |
 | Jex               | Y       | N          | N       |         | Y           |          | jex               |
@@ -254,6 +263,8 @@ Or install it yourself as:
 | Ninecoin          | Y       |            |         |         | Y           |          | ninecoin          |
 | NLexch            | Y       |            |         |         | Y           | Y        | nlexch            |
 | Novadex           | Y       | N          | N       |         | Y           | Y        | novadex           |
+| Novadax           | Y       | N          | Y       |         | User-Defined| N        | novadax           |
+| Nusax             | Y       |            |         |         | Y           | Y        | nusax             |
 | Nova Exchange     | Y       |            |         |         | Y           |          | novaexchange      |
 | OasisDEX          | Y       |            |         |         | Y           |          | oasisdex          |
 | OAX               | Y       |            |         |         | Y           |          | oax               |
@@ -288,6 +299,7 @@ Or install it yourself as:
 | Sistemkoin        | Y       |            |         |         | Y           |          | sistemkoin        |
 | SouthXchange      | Y       | Y          | Y       |         | Y           | Y        | south_xchange     |
 | Stocks Exchange   | Y       |            |         |         | Y           | Y        | stocks_exchange   |
+| Swiftex           | Y       | Y          |         |         | Y           | Y        | swiftex           |
 | Switcheo          | Y       | N          | N       |         | Y           | Y        | switcheo          |
 | Syex              | Y       | N          | N       |         | Y           | Y        | syex              |
 | SZZC              | Y       |            |         |         | Y           |          | szzc              |

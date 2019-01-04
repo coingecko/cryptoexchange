@@ -39,7 +39,7 @@ module Cryptoexchange::Exchanges
           ticker.bid = NumericHelper.to_d(output['buy'])
           ticker.high = NumericHelper.to_d(output['high'])
           ticker.low = NumericHelper.to_d(output['low'])
-          ticker.change = NumericHelper.to_d(output['changePercentage'].gsub(/[+-]|(%)/, ''))
+          ticker.change = NumericHelper.to_d(output['changePercentage'].to_f)
           ticker.volume = NumericHelper.to_d(output['volume'])
           ticker.timestamp = nil
           ticker.payload = output
