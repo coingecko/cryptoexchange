@@ -151,6 +151,7 @@ Or install it yourself as:
 | Coinsbit          | Y       |            |         |         | Y           |          | coinsbit          |
 | Coinstock         | Y       | Y          | Y       |         | Y           |          | coinstock         |
 | Coinsuper         | Y       |            |         |         | Y           | Y        | coinsuper         |
+| Cointeb           | Y       | Y          | Y       |         | Y           |          | cointeb           |
 | Cointiger         | Y       | Y          | Y       |         | Y           |          | cointiger         |
 | Coinut (Auth)     | Y       | Y          | Y       | Y       | Y           |          | coinut            |
 | Coinzest          | Y       | Y          |         |         | Y           |          | coinzest          |
