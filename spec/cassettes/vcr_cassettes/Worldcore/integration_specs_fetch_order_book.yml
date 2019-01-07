@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.worldcore.trade/market/panel
+    body:
+      encoding: UTF-8
+      string: pair=ltc_btc
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Connection:
+      - close
+      Host:
+      - api.worldcore.trade
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 05 Jan 2019 23:41:20 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1583'
+      Connection:
+      - close
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - content-type,X-Requested-With
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"result":{"book_sell":[{"price":0.0091,"amount":1.915362,"value":0.01742979},{"price":0.00951,"amount":4.650197,"value":0.04422337},{"price":0.00952,"amount":1.499178,"value":0.01427217},{"price":0.00953,"amount":2.061366,"value":0.01964482},{"price":0.00954,"amount":1.458103,"value":0.0139103},{"price":0.00955,"amount":1.892029,"value":0.01806888},{"price":0.00956,"amount":0.890231,"value":0.00851061},{"price":0.00957,"amount":3.098264,"value":0.02965039},{"price":0.0096,"amount":2.573634,"value":0.02470689},{"price":0.00964,"amount":0.21408,"value":0.00206373},{"price":0.00966,"amount":0.622074,"value":0.00600923},{"price":0.00969,"amount":0.241169,"value":0.00233693}],"book_buy":[{"price":0.009036,"amount":0.046924,"value":0.00042401},{"price":0.009,"amount":2.545305,"value":0.02290775},{"price":0.00818,"amount":0.774541,"value":0.00633575},{"price":0.00816,"amount":0.940379,"value":0.00767349},{"price":0.00814,"amount":1.506616,"value":0.01226385},{"price":0.00813,"amount":0.228384,"value":0.00185676},{"price":0.0081,"amount":1.076031,"value":0.00871585},{"price":0.00808,"amount":2.180153,"value":0.01761564},{"price":0.00807,"amount":1.397102,"value":0.01127461},{"price":0.00803,"amount":4.676629,"value":0.03755333},{"price":0.008,"amount":1.339138,"value":0.0107131},{"price":0.00799,"amount":2.026363,"value":0.01619064},{"price":0.00798,"amount":4.072804,"value":0.03250098},{"price":0.00793,"amount":2.046135,"value":0.01622585}],"volumes":{"sell":21.115687,"buy":0.2022516},"time":1546731680035,"cur":"ltc","ecur":"btc","pair":"ltc_btc"}}'
+    http_version: 
+  recorded_at: Sat, 05 Jan 2019 23:41:20 GMT
+recorded_with: VCR 4.0.0
