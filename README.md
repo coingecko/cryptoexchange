@@ -247,6 +247,7 @@ Or install it yourself as:
 | Liqui             | Y       |            |         |         | Y           |          | liqui             |
 | LiteBit.eu        | Y       |            |         |         | Y           |          | litebiteu         |
 | Livecoin          | Y       |            |         |         | Y           |          | livecoin          |
+| LocalTrade        | Y       |            |         |         | Y           | Y        | localtrade        |
 | Luno              | Y       |            |         |         | Y           | Y        | luno              |
 | Lykke             | Y       | Y          | N       |         | Y           |          | lykke             |
 | Maplechange       | Y       | Y          |         |         | Y           | Y        | maplechange       |
