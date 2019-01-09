@@ -41,6 +41,7 @@ Or install it yourself as:
 | AXNET             | Y       | Y          | Y       |         | Y           | Y        | axnet             |
 | B2BX              | Y       | Y          |         |         | Y           |          | b2bx              |
 | Bancor            | Y       | N          | N       |         | Y           |          | bancor            |
+| Bankera           | Y       | Y          | Y       |         | Y           | Y        | bankera           |
 | Bcex              | Y       | Y          | Y       |         | Y           | Y        | bcex              |
 | Bcoin             | Y       |            |         |         | Y           | Y        | bcoin             |
 | Bgogo             | Y       | Y          | Y       |         | Y           | Y        | bgogo             |
