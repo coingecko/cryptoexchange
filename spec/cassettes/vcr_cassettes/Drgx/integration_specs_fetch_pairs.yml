@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://feeds-api.drgx.io/drgx/tickers.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - feeds-api.drgx.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 09 Jan 2019 08:52:27 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1438'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d31e5195831eed6b68478c9c2d831ea6a1547023947; expires=Thu, 09-Jan-20
+        08:52:27 GMT; path=/; domain=.drgx.io; HttpOnly; Secure
+      X-Amz-Id-2:
+      - JllEWORs5r+PNtDIbxiI63uSZnKkzg+FLrclNujgMHy06nZIfvSu0k+UxlP2GsyBsp1i0HxLwQU=
+      X-Amz-Request-Id:
+      - 6D77BF736E03E28B
+      Cache-Control:
+      - max-age=60, public
+      Last-Modified:
+      - Wed, 09 Jan 2019 08:51:58 GMT
+      Etag:
+      - '"a9029145423b9dac438273cc3dd12d78"'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4965aaf629dfbd6f-CDG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"DRG_USD":{"id":3,"last":"0.09","lowestAsk":"0","highestBid":"0","percentChange":"0","baseVolume":"0","quoteVolume":-1,"high24hr":"0.09","low24hr":"0.09"},"XRP_DRG":{"id":7,"last":"4.9","lowestAsk":"7.91","highestBid":"4.52","percentChange":"0","baseVolume":"0","quoteVolume":-1,"high24hr":"4.9","low24hr":"4.9"},"DRG_BTC":{"id":10,"last":"0.0000127","lowestAsk":"0.0000128","highestBid":"0.000011","percentChange":"0.007936507936507936","baseVolume":"399029.91","quoteVolume":-1,"high24hr":"0.0000127","low24hr":"0.0000122"},"DRG_ETH":{"id":11,"last":"0.000316","lowestAsk":"0.000317","highestBid":"0.00029","percentChange":"0.0031746031746031746","baseVolume":"208710.236","quoteVolume":-1,"high24hr":"0.000316","low24hr":"0.000277"},"ETH_BTC":{"id":15,"last":"0.037606","lowestAsk":"0.038702","highestBid":"0.036448","percentChange":"0.011376166527714277","baseVolume":"1805.472","quoteVolume":-1,"high24hr":"0.037671","low24hr":"0.037191"},"XRP_BTC":{"id":16,"last":"0","lowestAsk":"0","highestBid":"0","percentChange":"0","baseVolume":"0","quoteVolume":-1,"high24hr":"0","low24hr":"0"},"XRP_ETH":{"id":17,"last":"0","lowestAsk":"0","highestBid":"0","percentChange":"0","baseVolume":"0","quoteVolume":-1,"high24hr":"0","low24hr":"0"},"DRG_EUR":{"id":19,"last":"0.0482","lowestAsk":"0.0494","highestBid":"0.0471","percentChange":"0.23589743589743592","baseVolume":"450623.113","quoteVolume":-1,"high24hr":"0.0511","low24hr":"0.0378"}}'
+    http_version: 
+  recorded_at: Wed, 09 Jan 2019 08:52:27 GMT
+recorded_with: VCR 4.0.0
