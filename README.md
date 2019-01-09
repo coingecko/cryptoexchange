@@ -111,6 +111,7 @@ Or install it yourself as:
 | CPatex            | Y       | Y          | Y       |         | Y           |          | c_patex           |
 | CCex              | Y       |            |         |         | Y           |          | ccex              |
 | Cex               | Y       | Y          | Y       |         | Y           |          | cex               |
+| Cezex             | Y       | N          | N       |         | Y           | Y        | coinchangex       |
 | Cfinex            | Y       | Y          | Y       |         | Y           | Y        | cfinex            |
 | Chaince           | Y       |            |         |         | Y           | Y        | chaince           |
 | Chainrift         | Y       | Y          | Y       |         | Y           |          | chainrift         |

@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://beta.cezex.io/api/v2/tickers/giobtc.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - beta.cezex.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.2
+      Date:
+      - Sat, 26 May 2018 09:13:32 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '200'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      - max-age=0; includeSubDomains
+      - max-age=31536000
+      Etag:
+      - '"6edb46a01d82121905d5ca57c19c4edc"'
+      X-Runtime:
+      - '0.007764'
+      X-Request-Id:
+      - 0df0785a-4553-4f02-bf9f-88b4b6bfc31e
+      X-Powered-By:
+      - Phusion Passenger 5.1.12
+      X-Frame-Options:
+      - DENY
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1527326029,"ticker":{"buy":"0.000000089","sell":"0.00000009","low":"0.000000085","high":"0.00000009","last":"0.000000088","vol":"1551295.0227","volbtc":"0.134975523092","change":"-0.011235955"}}'
+    http_version: 
+  recorded_at: Sat, 26 May 2018 09:13:32 GMT
+recorded_with: VCR 4.0.0
