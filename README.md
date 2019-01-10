@@ -74,6 +74,7 @@ Or install it yourself as:
 | Bitinka           | Y       | Y          |         |         | Y           |          | bitinka           |
 | Bitker            | Y       |            |         |         | Y           | Y        | bitker            |
 | Bitkonan          | Y       |            |         |         | User-Defined|          | bitkonan          |
+| Bitkop            | Y       | Y          | Y       |         | Y           | Y        | bitkop            |
 | Bitkub            | Y       | Y          | Y       |         | Y           | Y        | bitkub            |
 | Bitlish           | Y       | Y          | Y       |         | Y           |          | bitlish           |
 | Bitmart           | Y       | Y          | Y       |         | Y           |          | bitmart           |
