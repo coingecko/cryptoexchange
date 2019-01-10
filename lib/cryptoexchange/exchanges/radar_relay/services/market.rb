@@ -46,7 +46,7 @@ module Cryptoexchange::Exchanges
           vol = NumericHelper.to_d(stats_output['volume24Hour'])
           ticker.volume    = (vol.nil? || vol == "") ? 0 : NumericHelper.divide(vol, ticker.last)
           ticker.change    = NumericHelper.to_d(stats_output['percentChange24Hour'])
-          ticker.timestamp = NumericHelper.to_d(ticker_output['timestamp'])
+          ticker.timestamp = nil
           ticker.payload   = [ticker_output, stats_output]
           ticker
         end
