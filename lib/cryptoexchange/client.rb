@@ -15,6 +15,9 @@ module Cryptoexchange
       pairs_class = Object.const_get(pairs_classname)
       pairs_object = pairs_class.new
       pairs_object.fetch
+    rescue HttpConnectionError, HttpTimeoutError, HttpBadRequestError, JsonParseError, TypeFormatError => e
+      # temporary or permanent failure, omit
+      {error: e}
     end
 
     def ticker(market_pair)
