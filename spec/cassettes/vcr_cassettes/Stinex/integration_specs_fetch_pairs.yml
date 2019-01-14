@@ -1,0 +1,96 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.stinex.net/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.stinex.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 27 Nov 2018 15:34:09 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d9130b44bd4f14becd3535a45c03afb711543332849; expires=Wed, 27-Nov-19
+        15:34:09 GMT; path=/; domain=.stinex.net; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Access-Control-Allow-Origin:
+      - https://trade.stinex.net
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Version:
+      - HTTP/1.1
+      Host:
+      - api.stinex.net
+      X-Real-Ip:
+      - 81.168.92.227
+      X-Forwarded-For:
+      - 81.168.92.227
+      X-Forwarded-Host:
+      - api.stinex.net
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Original-Uri:
+      - "/api/v2/markets"
+      X-Scheme:
+      - https
+      X-Original-Forwarded-For:
+      - 81.168.92.227
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - GB
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 81.168.92.227
+      Etag:
+      - W/"1b3be3663e7b61a6e097cb6bfe9f9516"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c0f8fda7-4a28-41f5-a319-91a902ca8a5c
+      X-Runtime:
+      - '0.031247'
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      X-Robots-Tag:
+      - noindex
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4805a842ff9d96be-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"btcusd","name":"BTC/USD"},{"id":"entrcusd","name":"ENTRC/USD"},{"id":"ethusd","name":"ETH/USD"},{"id":"tusdusd","name":"TUSD/USD"},{"id":"entrcbtc","name":"ENTRC/BTC"},{"id":"btctusd","name":"BTC/TUSD"},{"id":"entrctusd","name":"ENTRC/TUSD"},{"id":"ethtusd","name":"ETH/TUSD"},{"id":"entrceth","name":"ENTRC/ETH"},{"id":"cvcentrc","name":"CVC/ENTRC"},{"id":"dententrc","name":"DENT/ENTRC"},{"id":"cvcbtc","name":"CVC/BTC"},{"id":"cvceth","name":"CVC/ETH"},{"id":"hsteth","name":"HST/ETH"},{"id":"dentbtc","name":"DENT/BTC"},{"id":"denteth","name":"DENT/ETH"},{"id":"hotbtc","name":"HOT/BTC"},{"id":"hoteth","name":"HOT/ETH"},{"id":"dgxbtc","name":"DGX/BTC"},{"id":"dgxeth","name":"DGX/ETH"},{"id":"dgxentrc","name":"DGX/ENTRC"},{"id":"elfbtc","name":"ELF/BTC"},{"id":"gnobtc","name":"GNO/BTC"},{"id":"gntbtc","name":"GNT/BTC"},{"id":"hstbtc","name":"HST/BTC"},{"id":"kncbtc","name":"KNC/BTC"},{"id":"knceth","name":"KNC/ETH"},{"id":"mtlbtc","name":"MTL/BTC"},{"id":"mtleth","name":"MTL/ETH"},{"id":"omgeth","name":"OMG/ETH"},{"id":"gnoeth","name":"GNO/ETH"},{"id":"mtlentrc","name":"MTL/ENTRC"},{"id":"elfeth","name":"ELF/ETH"},{"id":"nasbtc","name":"NAS/BTC"},{"id":"naseth","name":"NAS/ETH"},{"id":"nasentrc","name":"NAS/ENTRC"},{"id":"npxseth","name":"NPXS/ETH"},{"id":"nexobtc","name":"NEXO/BTC"},{"id":"nexoeth","name":"NEXO/ETH"},{"id":"nexoentrc","name":"NEXO/ENTRC"},{"id":"paxeth","name":"PAX/ETH"},{"id":"npxsbtc","name":"NPXS/BTC"},{"id":"payeth","name":"PAY/ETH"},{"id":"ppteth","name":"PPT/ETH"},{"id":"paxbtc","name":"PAX/BTC"},{"id":"omgbtc","name":"OMG/BTC"},{"id":"paybtc","name":"PAY/BTC"},{"id":"pptbtc","name":"PPT/BTC"},{"id":"powrbtc","name":"POWR/BTC"},{"id":"powreth","name":"POWR/ETH"},{"id":"probtc","name":"PRO/BTC"},{"id":"proeth","name":"PRO/ETH"},{"id":"qashbtc","name":"QASH/BTC"},{"id":"qasheth","name":"QASH/ETH"},{"id":"qrlbtc","name":"QRL/BTC"},{"id":"qrleth","name":"QRL/ETH"},{"id":"rdnbtc","name":"RDN/BTC"},{"id":"rdneth","name":"RDN/ETH"},{"id":"repeth","name":"REP/ETH"},{"id":"repbtc","name":"REP/BTC"},{"id":"saltbtc","name":"SALT/BTC"},{"id":"sntbtc","name":"SNT/BTC"},{"id":"salteth","name":"SALT/ETH"},{"id":"snteth","name":"SNT/ETH"},{"id":"storjbtc","name":"STORJ/BTC"},{"id":"stormbtc","name":"STORM/BTC"},{"id":"stormeth","name":"STORM/ETH"},{"id":"storjeth","name":"STORJ/ETH"},{"id":"tenbtc","name":"TEN/BTC"},{"id":"teneth","name":"TEN/ETH"},{"id":"tntbtc","name":"TNT/BTC"},{"id":"zileth","name":"ZIL/ETH"},{"id":"tnteth","name":"TNT/ETH"},{"id":"ukgbtc","name":"UKG/BTC"},{"id":"ukgeth","name":"UKG/ETH"},{"id":"uppbtc","name":"UPP/BTC"},{"id":"uppeth","name":"UPP/ETH"},{"id":"zcobtc","name":"ZCO/BTC"},{"id":"zcoeth","name":"ZCO/ETH"},{"id":"zilbtc","name":"ZIL/BTC"},{"id":"zrxbtc","name":"ZRX/BTC"},{"id":"zrxeth","name":"ZRX/ETH"}]'
+    http_version: 
+  recorded_at: Tue, 27 Nov 2018 15:34:09 GMT
+recorded_with: VCR 4.0.0

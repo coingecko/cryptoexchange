@@ -302,6 +302,7 @@ Or install it yourself as:
 | Singularx         | Y       | N          | N       |         | Y           |          | singularx         |
 | Sistemkoin        | Y       |            |         |         | Y           |          | sistemkoin        |
 | SouthXchange      | Y       | Y          | Y       |         | Y           | Y        | south_xchange     |
+| Stinex            | Y       | Y          | Y       |         | Y           | Y        | stinex            |
 | Stocks Exchange   | Y       |            |         |         | Y           | Y        | stocks_exchange   |
 | Swiftex           | Y       | Y          |         |         | Y           | Y        | swiftex           |
 | Switcheo          | Y       | N          | N       |         | Y           | Y        | switcheo          |

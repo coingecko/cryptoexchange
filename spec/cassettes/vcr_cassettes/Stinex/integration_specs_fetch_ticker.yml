@@ -1,0 +1,95 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.stinex.net/api/v2/tickers/ethusd
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.stinex.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 27 Nov 2018 15:34:09 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '116'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dbf3051165270dc8139970f49ea8c8e6d1543332849; expires=Wed, 27-Nov-19
+        15:34:09 GMT; path=/; domain=.stinex.net; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - https://trade.stinex.net
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Origin
+      Version:
+      - HTTP/1.1
+      Host:
+      - api.stinex.net
+      X-Real-Ip:
+      - 81.168.92.227
+      X-Forwarded-For:
+      - 81.168.92.227
+      X-Forwarded-Host:
+      - api.stinex.net
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Original-Uri:
+      - "/api/v2/tickers/ethusd"
+      X-Scheme:
+      - https
+      X-Original-Forwarded-For:
+      - 81.168.92.227
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - GB
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 81.168.92.227
+      Etag:
+      - W/"f3fff855f1fe4ede44058afcbff82266"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f0ab181d-0d28-4243-afb3-4d2e591436b8
+      X-Runtime:
+      - '0.018394'
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      X-Robots-Tag:
+      - noindex
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4805a8449d8996c4-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1543332849,"ticker":{"buy":"98.0","sell":"115.0","low":"98.0","high":"115.0","last":"98.0","vol":"0.8695652"}}'
+    http_version: 
+  recorded_at: Tue, 27 Nov 2018 15:34:09 GMT
+recorded_with: VCR 4.0.0
