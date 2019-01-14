@@ -314,6 +314,7 @@ Or install it yourself as:
 | Tidebit           | Y       | Y          | Y       |         | Y           |          | tidebit           |
 | Tidex             | Y       |            |         |         | Y           |          | tidex             |
 | Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |
+| Tokenmom          | Y       | Y          | Y       |         | Y           | Y        | tokenmom          |
 | Tokenomy          | Y       | Y          | Y       |         | Y           | Y        | tokenomy          |
 | TokensNet         | Y       | Y          | Y       |         | Y           | N        | tokens_net        |
 | Tokok             | Y       | Y          | Y       |         | Y           |          | tokok             |
