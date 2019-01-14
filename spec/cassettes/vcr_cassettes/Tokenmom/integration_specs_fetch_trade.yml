@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tokenmom.com/market/get_trades?market_id=TM-WETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.tokenmom.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Jan 2019 10:35:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","trades":[{"id":1453,"type":0,"maker_address":"0x6cd11f533396f0bc72e6424355ebdbcdb5262ea5","taker_address":"0xdc8c0cf4beb2fa1f34aa395f331e323776a0c8a5","txHash":"0xb38b91b86e2498f23da2a5df22ab9afa11a5c66a1126b6ae435abc93b01897f7","amount":"243.9223530000","price":"0.0017000000","reward_status":null,"created_at":"2018-12-11T05:38:10.000Z","updated_at":"2018-12-11T05:38:10.000Z","market_id":"TM-WETH"}]}'
+    http_version: 
+  recorded_at: Fri, 11 Jan 2019 10:35:36 GMT
+recorded_with: VCR 4.0.0

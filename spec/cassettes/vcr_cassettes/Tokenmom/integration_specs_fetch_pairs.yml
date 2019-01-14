@@ -1,0 +1,37 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tokenmom.com/market/get_markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.tokenmom.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Jan 2019 10:03:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      
+      Connection:
+      - close
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","markets":[{"base_token":"WETH","base_token_decimals":18,"base_token_address":"0xc778417e063141139fce010982780140aa0cd5ab","tokens":[{"market_id":"TM-WETH","token_symbol":"TM","token_name":"Tokenmom","token_address":"0x91495d6969120fc016bb687ead5f5ce56f135504","token_decimals":18,"last_price":"0.0017000000","today_change":"21.43","today_volume":145.54681871624797}]},{"base_token":"TM","base_token_decimals":18,"base_token_address":"0x91495D6969120fc016BB687EaD5F5cE56F135504","markets":[{"market_id":"ZRX-TM","token_symbol":"ZRX","token_name":"ZRX","token_address":"0xE41d2489571d322189246DaFA5ebDe1F4699F498","token_decimals":18,"last_price":"--","today_change":"--","today_volume":0}]}]}'
+    http_version: 
+  recorded_at: Fri, 11 Jan 2019 10:03:47 GMT
+recorded_with: VCR 4.0.0
