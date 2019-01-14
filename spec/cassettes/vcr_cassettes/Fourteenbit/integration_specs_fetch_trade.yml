@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://14bit.com/api/trade/BTC/WCO
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - 14bit.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 28 Sep 2018 18:16:49 GMT
+      Server:
+      - Apache/2.4.18 (Ubuntu)
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '252'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: '[{"at":1538144341,"amount":20000,"price":3.5e-6,"type":"sell"},{"at":1538125065,"amount":100000,"price":0.0005,"type":"sell"},{"at":1538111703,"amount":30904,"price":3.5e-6,"type":"sell"},{"at":1538062752,"amount":3.334984,"price":3.5e-6,"type":"buy"}]'
+    http_version: 
+  recorded_at: Fri, 28 Sep 2018 18:16:49 GMT
+recorded_with: VCR 4.0.0

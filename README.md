@@ -24,6 +24,7 @@ Or install it yourself as:
 
 | Exchange          | Ticker  | Order Book | Trade   | Account | Market List | Pair URL | slug              |
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |----------|-------------------|
+| 14Bit             | Y       | N          | Y       |         | Y           | Y        | fourteenbit       |
 | 58Coin            | Y       | Y          | Y       |         | Y           | Y        | fifty_eight_coin  |
 | Abcc              | Y       | N          | N       |         | Y           | Y        | abcc              |
 | Abucoins          | Y       | Y          | Y       |         | Y           |          | abucoins          |

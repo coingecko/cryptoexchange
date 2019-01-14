@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://14bit.com/api/market
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - 14bit.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 28 Sep 2018 18:16:48 GMT
+      Server:
+      - Apache/2.4.18 (Ubuntu)
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '363'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: '[{"market":"BTC/BCH","bid":0,"ask":0,"last":0.0001,"high":0.91112173,"low":0.0001,"variation24hr":0,"volume24hr":0},{"market":"BTC/ETH","bid":0,"ask":0.04631728,"last":0.0463,"high":0,"low":0.0425,"variation24hr":0,"volume24hr":0},{"market":"BTC/WCO","bid":0,"ask":3.5e-6,"last":3.5e-6,"high":0.5244771,"low":3.49e-6,"variation24hr":0,"volume24hr":150907.334984}]'
+    http_version: 
+  recorded_at: Fri, 28 Sep 2018 18:16:48 GMT
+recorded_with: VCR 4.0.0
