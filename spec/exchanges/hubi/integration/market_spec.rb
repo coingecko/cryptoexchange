@@ -3,6 +3,7 @@ require 'spec_helper'
 RSpec.describe 'Hubi integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: 'Hubi') }
+  let(:market) { 'hubi' }
 
   it 'fetch pairs' do
     pairs = client.pairs('hubi')
@@ -32,5 +33,10 @@ RSpec.describe 'Hubi integration specs' do
     expect(ticker.timestamp).to be_a Numeric
     expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
     expect(ticker.payload).to_not be nil
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: btc_usdt_pair.base, target: btc_usdt_pair.target
+    expect(trade_page_url).to eq "https://www.hubi.com/#/exchange/BTC_USDT"
   end
 end
