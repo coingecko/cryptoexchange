@@ -24,6 +24,8 @@ module Cryptoexchange::Exchanges
           ticker.market    = Dobitrade::Market::NAME
           ticker.ask       = NumericHelper.to_d(output['sell'])
           ticker.bid       = NumericHelper.to_d(output['buy'])
+          ticker.high      = NumericHelper.to_d(output['high'])
+          ticker.low       = NumericHelper.to_d(output['low'])
           ticker.last      = NumericHelper.to_d(output['last'])
           ticker.volume    = NumericHelper.to_d(output['volume'])
           ticker.timestamp = nil
