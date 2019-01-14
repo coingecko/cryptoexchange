@@ -17,7 +17,6 @@ module Cryptoexchange::Exchanges
                 target: target,
                 market: Tokenmom::Market::NAME
               )
-            end
           end
         end
       end
