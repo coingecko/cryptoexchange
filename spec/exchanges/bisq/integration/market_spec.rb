@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Bisq integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:bch_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BCH', target: 'BTC', market: 'bisq') }
+  let(:xmr_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XMR', target: 'BTC', market: 'bisq') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bisq')
@@ -15,9 +15,9 @@ RSpec.describe 'Bisq integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(bch_btc_pair)
+    ticker = client.ticker(xmr_btc_pair)
 
-    expect(ticker.base).to eq 'BCH'
+    expect(ticker.base).to eq 'XMR'
     expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'bisq'
 
@@ -31,11 +31,11 @@ RSpec.describe 'Bisq integration specs' do
   end
 
   it 'fetch trade' do
-    trades = client.trades(bch_btc_pair)
+    trades = client.trades(xmr_btc_pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty
-    expect(trade.base).to eq 'BCH'
+    expect(trade.base).to eq 'XMR'
     expect(trade.target).to eq 'BTC'
     expect(trade.market).to eq 'bisq'
 
