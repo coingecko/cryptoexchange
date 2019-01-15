@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ukex.com/api/index/tradeHistory/eth_gbp
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.ukex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 09:26:55 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db732c7f4e37d66db97fa1d7a8329dd321542187612; expires=Thu, 14-Nov-19
+        09:26:52 GMT; path=/; domain=.ukex.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.6.31
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With,X_Requested_With,TOKEN,ID
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4798705faacb2b6a-AMS
+    body:
+      encoding: UTF-8
+      string: '{"result":"true","data":[{"tradeID":"16788852","date":"2018-11-14 17:26:36","type":"sell","rate":"156.65","amount":0.0044,"total":0.68926},{"tradeID":"16788828","date":"2018-11-14
+        17:26:06","type":"sell","rate":"157.34","amount":0.085,"total":13.3739},{"tradeID":"16788824","date":"2018-11-14
+        17:25:35","type":"sell","rate":"157.32","amount":0.0196,"total":3.083472},{"tradeID":"16788816","date":"2018-11-14
+        17:25:04","type":"sell","rate":"158.3","amount":0.0205,"total":3.24515},{"tradeID":"16788800","date":"2018-11-14
+        17:24:34","type":"sell","rate":"158.43","amount":0.0365,"total":5.782695},{"tradeID":"16788789","date":"2018-11-14
+        17:24:03","type":"buy","rate":"158.14","amount":0.0312,"total":4.933968},{"tradeID":"16788785","date":"2018-11-14
+        17:23:33","type":"sell","rate":"157.71","amount":0.0484,"total":7.633164},{"tradeID":"16788770","date":"2018-11-14
+        17:23:02","type":"buy","rate":"157.52","amount":0.0217,"total":3.418184},{"tradeID":"16788759","date":"2018-11-14
+        17:22:32","type":"buy","rate":"157.99","amount":0.063,"total":9.95337},{"tradeID":"16788750","date":"2018-11-14
+        17:22:01","type":"buy","rate":"157.36","amount":0.025,"total":3.934},{"tradeID":"16788739","date":"2018-11-14
+        17:21:31","type":"sell","rate":"157.81","amount":0.0419,"total":6.612239},{"tradeID":"16788725","date":"2018-11-14
+        17:21:00","type":"buy","rate":"157.69","amount":0.0943,"total":14.870167},{"tradeID":"16788721","date":"2018-11-14
+        17:20:30","type":"sell","rate":"157.5","amount":0.0272,"total":4.284},{"tradeID":"16788704","date":"2018-11-14
+        17:19:59","type":"sell","rate":"157.26","amount":0.0139,"total":2.185914},{"tradeID":"16788694","date":"2018-11-14
+        17:19:29","type":"sell","rate":"157.04","amount":0.0714,"total":11.212656},{"tradeID":"16788685","date":"2018-11-14
+        17:18:58","type":"buy","rate":"158.3","amount":0.0936,"total":14.81688},{"tradeID":"16788675","date":"2018-11-14
+        17:18:28","type":"sell","rate":"157.56","amount":0.0927,"total":14.605812},{"tradeID":"16788666","date":"2018-11-14
+        17:17:57","type":"sell","rate":"157.71","amount":0.0917,"total":14.462007},{"tradeID":"16788655","date":"2018-11-14
+        17:17:27","type":"buy","rate":"156.82","amount":0.0488,"total":7.652816},{"tradeID":"16788640","date":"2018-11-14
+        17:16:56","type":"sell","rate":"158.17","amount":0.0721,"total":11.404057},{"tradeID":"16788636","date":"2018-11-14
+        17:16:26","type":"buy","rate":"158.46","amount":0.091,"total":14.41986},{"tradeID":"16788620","date":"2018-11-14
+        17:15:55","type":"sell","rate":"157.21","amount":0.0475,"total":7.467475},{"tradeID":"16788611","date":"2018-11-14
+        17:15:25","type":"buy","rate":"157.34","amount":0.0302,"total":4.751668},{"tradeID":"16788603","date":"2018-11-14
+        17:14:54","type":"buy","rate":"157.58","amount":0.0478,"total":7.532324},{"tradeID":"16788597","date":"2018-11-14
+        17:14:24","type":"buy","rate":"157.87","amount":0.0234,"total":3.694158},{"tradeID":"16788575","date":"2018-11-14
+        17:13:53","type":"buy","rate":"157.9","amount":0.0691,"total":10.91089},{"tradeID":"16788571","date":"2018-11-14
+        17:13:23","type":"sell","rate":"156.99","amount":0.0799,"total":12.543501},{"tradeID":"16788563","date":"2018-11-14
+        17:12:52","type":"buy","rate":"158.52","amount":0.0543,"total":8.607636},{"tradeID":"16788545","date":"2018-11-14
+        17:12:22","type":"buy","rate":"157.86","amount":0.0556,"total":8.777016},{"tradeID":"16788535","date":"2018-11-14
+        17:11:51","type":"buy","rate":"157.21","amount":0.0614,"total":9.652694},{"tradeID":"16788531","date":"2018-11-14
+        17:11:21","type":"sell","rate":"157.44","amount":0.058,"total":9.13152},{"tradeID":"16788508","date":"2018-11-14
+        17:10:50","type":"sell","rate":"158.65","amount":0.0386,"total":6.12389},{"tradeID":"16788504","date":"2018-11-14
+        17:10:20","type":"buy","rate":"157.03","amount":0.0316,"total":4.962148},{"tradeID":"16788494","date":"2018-11-14
+        17:09:49","type":"sell","rate":"157.14","amount":0.0343,"total":5.389902},{"tradeID":"16788483","date":"2018-11-14
+        17:09:19","type":"sell","rate":"158.6","amount":0.0073,"total":1.15778},{"tradeID":"16788467","date":"2018-11-14
+        17:08:49","type":"sell","rate":"157.71","amount":0.071,"total":11.19741},{"tradeID":"16788463","date":"2018-11-14
+        17:08:19","type":"buy","rate":"157.54","amount":0.0633,"total":9.972282},{"tradeID":"16788445","date":"2018-11-14
+        17:07:48","type":"buy","rate":"157.95","amount":0.059,"total":9.31905},{"tradeID":"16788434","date":"2018-11-14
+        17:07:17","type":"sell","rate":"157.77","amount":0.0126,"total":1.987902},{"tradeID":"16788426","date":"2018-11-14
+        17:06:47","type":"buy","rate":"158.18","amount":0.0103,"total":1.629254},{"tradeID":"16788415","date":"2018-11-14
+        17:06:16","type":"sell","rate":"157.73","amount":0.0225,"total":3.548925},{"tradeID":"16788398","date":"2018-11-14
+        17:05:46","type":"buy","rate":"157.84","amount":0.0909,"total":14.347656},{"tradeID":"16788394","date":"2018-11-14
+        17:05:15","type":"sell","rate":"157.4","amount":0.0212,"total":3.33688},{"tradeID":"16788379","date":"2018-11-14
+        17:04:45","type":"sell","rate":"157.63","amount":0.0054,"total":0.851202},{"tradeID":"16788375","date":"2018-11-14
+        17:04:14","type":"buy","rate":"157.57","amount":0.0151,"total":2.379307},{"tradeID":"16788357","date":"2018-11-14
+        17:03:44","type":"buy","rate":"159.32","amount":0.0615,"total":9.79818},{"tradeID":"16788348","date":"2018-11-14
+        17:03:13","type":"buy","rate":"158.54","amount":0.0175,"total":2.77445},{"tradeID":"16788340","date":"2018-11-14
+        17:02:43","type":"buy","rate":"158.61","amount":0.0104,"total":1.649544},{"tradeID":"16788329","date":"2018-11-14
+        17:02:12","type":"buy","rate":"157.81","amount":0.0886,"total":13.981966},{"tradeID":"16788311","date":"2018-11-14
+        17:01:42","type":"sell","rate":"157.66","amount":0.0507,"total":7.993362}],"elapsed":"0.0008ms"}'
+    http_version: 
+  recorded_at: Wed, 14 Nov 2018 09:27:24 GMT
+recorded_with: VCR 4.0.0

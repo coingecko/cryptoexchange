@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ukex.com/api/index/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.ukex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 09:19:43 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc540d6b216e7f11dd4f4f3fb82497d7b1542187182; expires=Thu, 14-Nov-19
+        09:19:42 GMT; path=/; domain=.ukex.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.6.31
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With,X_Requested_With,TOKEN,ID
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 479865e08f86bf89-AMS
+    body:
+      encoding: UTF-8
+      string: '{"eth_btc":{"result":"true","last":0.03246582,"lowestAsk":"0.03246582","highestBid":"0.03246582","percentChange":-1.16,"baseVolume":3088.3556,"quoteVolume":94.04587607,"high24hr":0.03300361,"low24hr":0.03219917},"ltc_btc":{"result":"true","last":0.0077944,"lowestAsk":"0.00779440","highestBid":"0.00782070","percentChange":-2.13,"baseVolume":4087.2339,"quoteVolume":30.05543939,"high24hr":0.0080129,"low24hr":0.00767844},"xmr_btc":{"result":"true","last":0.016498,"lowestAsk":"0.01656758","highestBid":"0.01628795","percentChange":-1.07,"baseVolume":1066.1054,"quoteVolume":17.61557026,"high24hr":0.01670776,"low24hr":0.01626215},"bch_btc":{"result":"true","last":0.07929022,"lowestAsk":"0.07929022","highestBid":"0.07929022","percentChange":-0.83,"baseVolume":3694.2586,"quoteVolume":275.24134367,"high24hr":0.08597797,"low24hr":0.07896325},"ltc_eth":{"result":"true","last":0.241169,"lowestAsk":"0.25055700","highestBid":"0.23522400","percentChange":-0.42,"baseVolume":729.9093,"quoteVolume":205.676569,"high24hr":0.244645,"low24hr":0.23678},"xmr_eth":{"result":"true","last":0.503787,"lowestAsk":"0.50953500","highestBid":"0.50083600","percentChange":-1.56,"baseVolume":245.3346,"quoteVolume":115.9506,"high24hr":0.512289,"low24hr":0.494891},"dash_eth":{"result":"true","last":0.785665,"lowestAsk":"0.79908000","highestBid":"0.77224400","percentChange":0.74,"baseVolume":101.3758,"quoteVolume":84.82317,"high24hr":0.791188,"low24hr":0.765256},"zec_eth":{"result":"true","last":0.615685,"lowestAsk":"0.62626500","highestBid":"0.61169900","percentChange":-2.81,"baseVolume":159.8354,"quoteVolume":105.289236,"high24hr":0.646884,"low24hr":0.609999},"eth_buc":{"result":"true","last":142.366942,"lowestAsk":"144.77957200","highestBid":"142.30847400","percentChange":-1.76,"baseVolume":1109.5282,"quoteVolume":160125.710433,"high24hr":146.580581,"low24hr":142.117942},"btc_buc":{"result":"true","last":4392.122153,"lowestAsk":"4443.49662800","highestBid":"4380.43452200","percentChange":0.16,"baseVolume":247.0117,"quoteVolume":1067152.099344,"high24hr":4423.865322,"low24hr":4380.3002},"dash_buc":{"result":"true","last":113.122089,"lowestAsk":"114.18803200","highestBid":"111.34036100","percentChange":1.14,"baseVolume":250.6994,"quoteVolume":28084.79769,"high24hr":114.231536,"low24hr":110.192563},"bch_buc":{"result":"true","last":351.288857,"lowestAsk":"359.43664900","highestBid":"343.55503300","percentChange":-0.35,"baseVolume":2572.4324,"quoteVolume":866961.534732,"high24hr":380.538322,"low24hr":349.103535},"zec_buc":{"result":"true","last":88.990033,"lowestAsk":"90.12981200","highestBid":"87.41803800","percentChange":-1.8,"baseVolume":5428.1932,"quoteVolume":433995.396422,"high24hr":91.128577,"low24hr":86.052741},"ltc_buc":{"result":"true","last":34.62804,"lowestAsk":"35.33965400","highestBid":"34.10301200","percentChange":-1.03,"baseVolume":2160.9022,"quoteVolume":63274.376141,"high24hr":35.417353,"low24hr":33.973287},"btc_gbp":{"result":"true","last":4854.31,"lowestAsk":"4926.52000000","highestBid":"4827.68000000","percentChange":-1.22,"baseVolume":130.56,"quoteVolume":637421.53,"high24hr":4960.43,"low24hr":4841.47},"eth_gbp":{"result":"true","last":157.04,"lowestAsk":"162.51000000","highestBid":"151.29000000","percentChange":-1.58,"baseVolume":129.86,"quoteVolume":20740.22,"high24hr":163.24,"low24hr":155.46},"btc_eur":{"result":"true","last":5599.32,"lowestAsk":"5627.62000000","highestBid":"5528.17000000","percentChange":-0.23,"baseVolume":130.45,"quoteVolume":729987.29,"high24hr":5663.83,"low24hr":5525.28},"eth_eur":{"result":"true","last":180.18,"lowestAsk":"187.44000000","highestBid":"173.84000000","percentChange":-1.88,"baseVolume":127.03,"quoteVolume":23205.17,"high24hr":185.45,"low24hr":178.79},"lba_eth":{"result":"true","last":0.00028096,"lowestAsk":"0.00029633","highestBid":"0.00027467","percentChange":0.47,"baseVolume":532788.4257,"quoteVolume":150.2119753,"high24hr":0.00030271,"low24hr":0.00026778},"qkc_eth":{"result":"true","last":0.00027825,"lowestAsk":"0.00028145","highestBid":"0.00027351","percentChange":10.75,"baseVolume":615200.56,"quoteVolume":165.34700012,"high24hr":0.00027825,"low24hr":0.00025019},"hot_eth":{"result":"true","last":4.74e-6,"lowestAsk":"0.00000539","highestBid":"0.00000401","percentChange":1.93,"baseVolume":5849713.45,"quoteVolume":30.28390695,"high24hr":4.8e-6,"low24hr":4.55e-6},"omg_eth":{"result":"true","last":0.01533778,"lowestAsk":"0.01557923","highestBid":"0.01528151","percentChange":-1.38,"baseVolume":6498.3606,"quoteVolume":100.50098196,"high24hr":0.01566452,"low24hr":0.01514324},"zrx_eth":{"result":"true","last":0.00306549,"lowestAsk":"0.00310457","highestBid":"0.00304187","percentChange":-4.81,"baseVolume":56654.88,"quoteVolume":172.61855428,"high24hr":0.0032589,"low24hr":0.00301611},"doge_buc":{"result":"true","last":0.001989,"lowestAsk":"0.00261000","highestBid":"0.00143600","percentChange":-5.01,"baseVolume":39537163.7884,"quoteVolume":81172.483346,"high24hr":0.002098,"low24hr":0.001925},"doge_btc":{"result":"true","last":4.4e-7,"lowestAsk":"0.00000044","highestBid":"0.00000044","percentChange":-4.34,"baseVolume":462889.6457,"quoteVolume":0.20820705,"high24hr":4.7e-7,"low24hr":4.1e-7},"ae_eth":{"result":"true","last":0.00536623,"lowestAsk":"0.00574148","highestBid":"0.00507439","percentChange":-1.31,"baseVolume":17513.6198,"quoteVolume":95.34857774,"high24hr":0.00554184,"low24hr":0.00535233},"dash_btc":{"result":"true","last":0.02542952,"lowestAsk":"0.02573899","highestBid":"0.02524389","percentChange":-0.21,"baseVolume":373.3497,"quoteVolume":9.76138407,"high24hr":0.02563843,"low24hr":0.02495199},"zec_btc":{"result":"true","last":0.01999848,"lowestAsk":"0.02029877","highestBid":"0.01982633","percentChange":-3.69,"baseVolume":928.6815,"quoteVolume":21.92919782,"high24hr":0.02110528,"low24hr":0.01982301},"btm_eth":{"result":"true","last":0.00087082,"lowestAsk":"0.00090808","highestBid":"0.00083439","percentChange":-0.11,"baseVolume":128543.9309,"quoteVolume":89.97902025,"high24hr":0.00089608,"low24hr":0.00085368}}'
+    http_version: 
+  recorded_at: Wed, 14 Nov 2018 09:20:11 GMT
+recorded_with: VCR 4.0.0
