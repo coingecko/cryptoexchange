@@ -11,9 +11,7 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output.map do |pair, _ticker|
-            separator = /(USDT|BTC|ETH)\z/i =~ pair
-            base      = pair[0..separator - 1]
-            target    = pair[separator..-1]
+            base, target = Abcc::Market.separate_symbol(pair)
             Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
