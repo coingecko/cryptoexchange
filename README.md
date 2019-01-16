@@ -270,6 +270,7 @@ Or install it yourself as:
 | Novadax           | Y       | N          | Y       |         | User-Defined| N        | novadax           |
 | Nusax             | Y       |            |         |         | Y           | Y        | nusax             |
 | Nova Exchange     | Y       |            |         |         | Y           |          | novaexchange      |
+| Nuex              | Y       | Y          |         |         | Y           |          | nuex              |
 | OasisDEX          | Y       |            |         |         | Y           |          | oasisdex          |
 | OAX               | Y       |            |         |         | Y           |          | oax               |
 | Octaex            | Y       | Y          | Y       |         | Y           |          | octaex            |
