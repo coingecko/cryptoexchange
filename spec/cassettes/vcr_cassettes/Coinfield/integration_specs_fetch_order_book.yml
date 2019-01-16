@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinfield.com/v1/depth/btccad
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinfield.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Jan 2019 14:56:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7761f9b955aa731d8ea6d4d8dc916e4a1547650599; expires=Thu, 16-Jan-20
+        14:56:39 GMT; path=/; domain=.coinfield.com; HttpOnly; Secure
+      - route=a690befdcc81457b323b225bcb3933a6; Domain=api.coinfield.com; Path=/;
+        HttpOnly
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 84a88dd4-15a8-4d64-a65e-9dcd245deaa1
+      X-Runtime:
+      - '0.012052'
+      X-Proxy-Runtime:
+      - 26ms
+      X-Fuse-Cached:
+      - 'false'
+      Etag:
+      - W/"3cc-TdLT9FQSU3LqhcrcbFjHrtDUZLU"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49a16e17bbd4a2ba-HKG
+    body:
+      encoding: UTF-8
+      string: '{"market":"btccad","bids":[["4769.9","0.0034"],["4722.99","0.2"],["4720.99","0.2"],["4700.01","0.2"],["4700.0","0.62077"],["4600.0","0.5"],["4577.0","0.2"],["4557.6","0.0013"],["4542.41","0.00911025"],["4505.2","0.0039942"],["4493.94","0.00706725"],["4484.95","0.004761"],["4471.94","0.01212165"],["4464.34","0.00260955"],["4456.75","0.01220535"],["4451.85","0.0081162"],["4440.72","0.0031689"],["4434.95","2.7927"],["4428.49","0.001"],["4427.85","0.0072558"]],"asks":[["5134.66","1.266"],["5125.44","0.0101994"],["5117.76","0.0072186"],["5103.98","0.013716"],["5091.25","0.004998"],["5077.54","0.01512"],["5072.98","0.0095646"],["5061.33","3.9754"],["5054.29","0.0013"],["5048.21","0.0155508"],["5033.61","1.0445"],["5023.6","0.009807"],["5019.56","0.005862"],["5013.9","0.0013"],["5008.54","0.006039"],["5000.0","0.06436946"],["4918.16","0.09975"],["4892.81","0.1027475"],["4863.4","0.2899052"],["4819.67","0.0043"]],"timestamp":"2019-01-16T14:56:40.269Z","took":"26ms"}'
+    http_version: 
+  recorded_at: Wed, 16 Jan 2019 14:56:40 GMT
+recorded_with: VCR 4.0.0
