@@ -11,7 +11,7 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output['result'].map do |value|
-            target, base = value['MarketName'].split('-')
+            base, target = value['MarketName'].split('-')
             Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,

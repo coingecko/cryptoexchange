@@ -264,7 +264,7 @@ Or install it yourself as:
 | Negociecoins      | Y       | Y          | Y       |         | User-Defined|          | negociecoins      |
 | Neraex            | Y       | Y          | Y       |         | Y           | Y        | neraex            |
 | Newdex            | Y       | N          | N       |         | Y           | Y        | newdex            |
-| Ninecoin          | Y       |            |         |         | Y           |          | ninecoin          |
+| Ninecoin (Halted) | Y       |            |         |         | Y           |          | ninecoin          |
 | NLexch            | Y       |            |         |         | Y           | Y        | nlexch            |
 | Novadex           | Y       | N          | N       |         | Y           | Y        | novadex           |
 | Novadax           | Y       | N          | Y       |         | User-Defined| N        | novadax           |
