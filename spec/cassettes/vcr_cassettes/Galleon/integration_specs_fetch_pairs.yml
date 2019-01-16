@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://galleon.exchange/api/v2/tickers.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - galleon.exchange
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Jan 2019 15:48:18 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '232'
+      Connection:
+      - close
+      Accept-Encoding:
+      - gzip
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"26086af5cc580aa49b1fb0f1840389b2"
+      Host:
+      - galleon.exchange
+      User-Agent:
+      - http.rb/3.0.0
+      Version:
+      - HTTP/1.1
+      X-Amzn-Trace-Id:
+      - Root=1-5c3f5242-98939fb06fd15960220109c0
+      X-Forwarded-For:
+      - 45.56.150.194, 172.31.8.211
+      X-Forwarded-Host:
+      - galleon.exchange
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Forwarded-Server:
+      - 17069ef6f3bb
+      X-Real-Ip:
+      - 172.31.8.211
+      X-Request-Id:
+      - 7a546838-1919-4638-bc3a-1e8bbaa84dca
+      X-Runtime:
+      - '0.005815'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"grinbtc":{"at":1547653698,"ticker":{"buy":"0.001","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"grineth":{"at":1547653698,"ticker":{"buy":"0.18","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}}}'
+    http_version: 
+  recorded_at: Wed, 16 Jan 2019 15:48:18 GMT
+recorded_with: VCR 4.0.0
