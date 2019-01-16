@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Coss integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:coss_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'COSS', target: 'ETH', market: 'coss') }
+  let(:coss_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'COSS', market: 'coss') }
 
   it 'fetch pairs' do
     pairs = client.pairs('coss')
@@ -17,8 +17,8 @@ RSpec.describe 'Coss integration specs' do
   it 'fetch ticker' do
     ticker = client.ticker(coss_eth_pair)
 
-    expect(ticker.base).to eq 'COSS'
-    expect(ticker.target).to eq 'ETH'
+    expect(ticker.base).to eq 'ETH'
+    expect(ticker.target).to eq 'COSS'
     expect(ticker.market).to eq 'coss'
     expect(ticker.last).to be_a Numeric
     expect(ticker.bid).to be nil
@@ -33,6 +33,6 @@ RSpec.describe 'Coss integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'coss', base: coss_eth_pair.base, target: coss_eth_pair.target
-    expect(trade_page_url).to eq "https://exchange.coss.io/exchange/coss-eth"
+    expect(trade_page_url).to eq "https://exchange.coss.io/exchange/eth-coss"
   end
 end

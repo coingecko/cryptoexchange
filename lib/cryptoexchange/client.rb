@@ -15,6 +15,9 @@ module Cryptoexchange
       pairs_class = Object.const_get(pairs_classname)
       pairs_object = pairs_class.new
       pairs_object.fetch
+    rescue HttpResponseError, HttpConnectionError, HttpTimeoutError, HttpBadRequestError, JsonParseError, JSON::ParserError, TypeFormatError, CredentialsMissingError, OpenSSL::SSL::SSLError, HTTP::Redirector::EndlessRedirectError => e
+      # temporary or permanent failure, omit
+      return {error: [e]}
     end
 
     def ticker(market_pair)
@@ -46,7 +49,7 @@ module Cryptoexchange
       available_exchanges.each do |exchange|
         pairs = pairs(exchange)
         next if pairs.is_a?(Hash) && !pairs[:error].empty?
-        pairs.each do |pair|
+        pairs.compact.each do |pair|
           if [pair.base, pair.target].include?(currency.upcase)
             exchanges << exchange
             break
