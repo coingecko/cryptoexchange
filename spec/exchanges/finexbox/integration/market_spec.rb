@@ -8,7 +8,7 @@ RSpec.describe 'Finexbox integration specs' do
     pairs = client.pairs('finexbox')
     expect(pairs).not_to be_empty
 
-    pair = pairs.sample
+    pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'finexbox'
