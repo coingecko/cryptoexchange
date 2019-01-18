@@ -140,6 +140,7 @@ Or install it yourself as:
 | Coinhouse         | Y       |            |         |         | Y           | Y        | coinhouse         |
 | Coinhub           | Y       | Y          | Y       |         | Y           | Y        | coinhub           |
 | CoinJar           | Y       | Y          | Y       |         | Y           | Y        | coinjar           |
+| Coinlim           | Y       | N          | N       |         | Y           | N        | coinlim           |
 | Coinmate          | Y       | Y          |         |         | User-Defined|          | coinmate          |
 | Coinmex           | Y       | Y          | Y       |         | Y           |          | coinmex           |
 | Coinnest          | Y       | Y          | Y       |         | User-Defined| Y        | coinnest          |
