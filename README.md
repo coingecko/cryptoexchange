@@ -206,7 +206,8 @@ Or install it yourself as:
 | GDAX(Coinbase Pro)| Y       |            |         |         | Y           | Y        | gdax              |
 | Gemini            | Y       | Y          | Y       |         | Y           |          | gemini            |
 | GetBTC            | Y       | Y          | Y       |         | User-Defined| Y        | getbtc            |
-| Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |     
+| Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |
+| Ginero            | Y       | Y          |         |         | Y           |          | ginero            |
 | Gobaba            | Y       |            |         |         | Y           |          | gobaba            |
 | golix (API Failed)| Y       | Y          |         |         | Y           |          | golix             |
 | GOPAX             | Y       | Y          | Y       |         | Y           | Y        | gopax             |

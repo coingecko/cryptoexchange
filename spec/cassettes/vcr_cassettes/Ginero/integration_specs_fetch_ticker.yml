@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ginero.io/api/market/summary
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ginero.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 Sep 2018 12:51:47 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '742'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d9c2edc5e436ddf37c6185b7927f400c21537793506; expires=Tue, 24-Sep-19
+        12:51:46 GMT; path=/; domain=.ginero.io; HttpOnly; Secure
+      - hl=en; expires=Tue, 24-Sep-2019 12:51:47 GMT; Max-Age=31536000; path=/
+      Cache-Control:
+      - no-cache, private
+      Vary:
+      - User-Agent
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 45f56268e90e6a43-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: |2-
+
+        {"BTCVND":{"last":14775611162,"high":0,"low":0,"vwap":0,"volume":0,"bid":15397767441,"ask":16250000000,"timestamp":1537793507,"open":0},"ETHVND":{"last":1100000000,"high":0,"low":0,"vwap":0,"volume":0,"bid":0,"ask":550903488,"timestamp":1537793507,"open":0},"BCHVND":{"last":0,"high":0,"low":0,"vwap":0,"volume":0,"bid":1100674418,"ask":0,"timestamp":1537793507,"open":0},"LTCVND":{"last":0,"high":0,"low":0,"vwap":0,"volume":0,"bid":134906976,"ask":136514418,"timestamp":1537793507,"open":0},"DASHVND":{"last":446441860,"high":0,"low":0,"vwap":0,"volume":0,"bid":480000000,"ask":456604651,"timestamp":1537793507,"open":0},"GINVND":{"last":99000,"high":0,"low":0,"vwap":0,"volume":0,"bid":33500,"ask":100000,"timestamp":1537793507,"open":0}}
+    http_version: 
+  recorded_at: Mon, 24 Sep 2018 12:51:47 GMT
+recorded_with: VCR 4.0.0
