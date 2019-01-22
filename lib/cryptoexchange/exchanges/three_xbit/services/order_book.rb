@@ -15,7 +15,7 @@ module Cryptoexchange::Exchanges
 
         def order_book_url(market_pair)
           base   = market_pair.base.downcase
-          target = market_pair.target.downcase
+          target = market_pair.target == 'USD' ? 'credit' : market_pair.target.downcase
           "#{Cryptoexchange::Exchanges::ThreeXbit::Market::API_URL}/v1/orderbook/#{target}/#{base}/"
         end
 

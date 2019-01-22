@@ -24,9 +24,11 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
+          target = output['market'] == 'CREDIT' ? 'USD' : output['market']
+
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = output['symbol']
-          ticker.target    = output['market']
+          ticker.target    = target
           ticker.market    = ThreeXbit::Market::NAME
           ticker.last      = NumericHelper.to_d(output['last'])
           ticker.high      = NumericHelper.to_d(output['max'])

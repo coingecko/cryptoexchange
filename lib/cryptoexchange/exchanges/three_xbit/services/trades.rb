@@ -9,14 +9,14 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          base = market_pair.base.downcase
-          target = market_pair.target.downcase
+          base   = market_pair.base.downcase
+          target = market_pair.target == 'USD' ? 'credit' : market_pair.target.downcase
           "#{Cryptoexchange::Exchanges::ThreeXbit::Market::API_URL}/v1/history/#{target}/#{base}/"
         end
 
         def adapt(output, market_pair)
           output['results'].collect do |trade|
-            tr = Cryptoexchange::Models::Trade.new
+            tr           = Cryptoexchange::Models::Trade.new
             tr.trade_id  = trade['transaction_id']
             tr.base      = market_pair.base
             tr.target    = market_pair.target

@@ -3,6 +3,7 @@ require 'spec_helper'
 RSpec.describe 'ThreeXbit integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:doge_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'DOGE', target: 'BTC', market: 'three_xbit') }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'three_xbit')  }
 
   it 'fetch pairs' do
     pairs = client.pairs('three_xbit')
@@ -20,10 +21,10 @@ RSpec.describe 'ThreeXbit integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(doge_btc_pair)
+    ticker = client.ticker(btc_usd_pair)
 
-    expect(ticker.base).to eq 'DOGE'
-    expect(ticker.target).to eq 'BTC'
+    expect(ticker.base).to eq 'BTC'
+    expect(ticker.target).to eq 'USD'
     expect(ticker.market).to eq 'three_xbit'
     expect(ticker.last).to be_a Numeric
     expect(ticker.low).to be_a Numeric

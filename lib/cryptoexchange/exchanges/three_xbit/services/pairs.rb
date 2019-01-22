@@ -11,7 +11,8 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output.map do |pair, _ticker|
-            target, base = pair.split('_')
+            raw_target, base = pair.split('_')
+            target = raw_target == 'CREDIT' ? 'USD' : raw_target
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
