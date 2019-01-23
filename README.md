@@ -352,7 +352,7 @@ Or install it yourself as:
 | Zebpay            | Y       |            |         |         | Y           |          | Zebpay            |
 | Zeniex            | Y       | Y          | Y       |         | Y           |          | zeniex            |
 | ZG                | Y       | Y          | Y       |         | Y           | Y        | zg                |
-| ZG.TOP            | Y       | Y          | Y       |         | Y           |          | zgtop             |
+| ZG.TOP            | Y       |            |         |         | Y           |          | zgtop             |
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 

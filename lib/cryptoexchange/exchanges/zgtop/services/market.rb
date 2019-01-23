@@ -4,29 +4,30 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            true
+            false
           end
         end
 
-        def fetch(market_pair)
-          market_pair = inject_inst_id(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output['data'], market_pair)
+        def fetch
+          output = super(ticker_url)
+          adapt_all(output)
         end
 
-        def inject_inst_id(market_pair)
-          # todo: refactor to global
-          if !(market_pair.respond_to? :inst_id) || (market_pair.send(:inst_id).nil?)
-            market_pairs = Cryptoexchange::Client.new.pairs(Zgtop::Market::NAME)
-            market_pair = market_pairs.detect { |mp| mp.base == market_pair.base && mp.target == market_pair.target }
+        def ticker_url
+          "#{Cryptoexchange::Exchanges::Zgtop::Market::API_URL}/tickers"
+        end
+
+        def adapt_all(output)
+          output['data'].map do |output|
+            base, target = output['symbol'].split("_")
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+                            base: base,
+                            target: target,
+                            market: Zgtop::Market::NAME
+                          )
+            adapt(output, market_pair)
           end
-
-          market_pair
-        end
-
-        def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Zgtop::Market::API_URL}/ticker?symbol=#{market_pair.inst_id}"
-        end
+        end        
 
         def adapt(output, market_pair)
           ticker = Cryptoexchange::Models::Ticker.new
@@ -34,12 +35,12 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Zgtop::Market::NAME
-          ticker.ask       = NumericHelper.to_d(output['sell'])
-          ticker.bid       = NumericHelper.to_d(output['buy'])
+
           ticker.high      = NumericHelper.to_d(output['high'])
           ticker.low       = NumericHelper.to_d(output['low'])
-          ticker.last      = NumericHelper.to_d(output['last'])
-          ticker.volume    = NumericHelper.to_d(output['vol'])
+          ticker.last      = NumericHelper.to_d(output['prevClose'])
+          ticker.volume    = NumericHelper.to_d(output['volume'])
+          
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
