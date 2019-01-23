@@ -347,7 +347,7 @@ Or install it yourself as:
 | ZBG               | Y       | Y          | Y       |         | Y           |          | zbg               |
 | Zebpay            | Y       |            |         |         | Y           |          | Zebpay            |
 | Zeniex            | Y       | Y          | Y       |         | Y           |          | zeniex            |
-| ZG.TOP            | Y       | Y          | Y       |         | Y           |          | zgtop             |
+| ZG.TOP            | Y       |            |         |         | Y           |          | zgtop             |
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 
