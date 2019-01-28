@@ -55,6 +55,7 @@ Or install it yourself as:
 | Bishang           | Y       |            |         |         | Y           |          | bishang           |
 | Bisq              | Y       |            | Y       |         | Y           |          | bisq              |
 | Bit2C             | Y       | Y          | Y       |         | User-Defined| Y        | bit2c             |
+| Bitalong          | Y       | Y          | Y       |         | Y           | Y        | bitalong          |
 | Bit-Z             | Y       |            |         |         | Y           |          | bit_z             |
 | Bitbank           | Y       | Y          | Y       |         | User-Defined| Y        | bitbank           |
 | Bitbay            | Y       |            |         |         | User-Defined|          | bitbay            |
