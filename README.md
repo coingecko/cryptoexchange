@@ -46,6 +46,7 @@ Or install it yourself as:
 | Bcoin             | Y       |            |         |         | Y           | Y        | bcoin             |
 | Bgogo             | Y       | Y          | Y       |         | Y           | Y        | bgogo             |
 | Bibox             | Y       | Y          | Y       |         | Y           | Y        | bibox             |
+| Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |
 | BigONE            | Y       | Y          | Y       |         | Y           | Y        | bigone            |
 | Bilaxy            | Y       | Y          | Y       |         | Y           | Y        | bilaxy            |
 | Binance           | Y       | Y          |         |         | Y           | Y        | binance           |
