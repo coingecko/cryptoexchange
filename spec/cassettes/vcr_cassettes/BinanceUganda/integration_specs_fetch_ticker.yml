@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBTC
+    uri: https://api.binance.co.ug/api/v1/ticker/24hr?symbol=BNBUGX
     body:
       encoding: UTF-8
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Connection:
       - close
       Host:
-      - api.binance.com
+      - api.binance.co.ug
       User-Agent:
       - http.rb/3.0.0
   response:
@@ -19,13 +19,13 @@ http_interactions:
       message: OK
     headers:
       Content-Type:
-      - application/json;charset=utf-8
+      - application/json
       Transfer-Encoding:
       - chunked
       Connection:
       - close
       Date:
-      - Tue, 29 Jan 2019 14:25:03 GMT
+      - Tue, 29 Jan 2019 14:25:05 GMT
       Server:
       - nginx
       Vary:
@@ -53,12 +53,12 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 4b6a36ce887a1dca580b142a77ee06df.cloudfront.net (CloudFront)
+      - 1.1 4eba4d81962fdc39fd45a14ee348ff00.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - a9_C6O9CAZMa0kqvcW7euXivor38sofynA1i-u9fJ1v7HNAF1hsF1g==
+      - FP-gM6SJ6iZPIpnKv8RdUOgBzkGyy8yMMRQkJq2xjU0khb7s8yCh5w==
     body:
-      encoding: UTF-8
-      string: '{"symbol":"ETHBTC","priceChange":"0.00056500","priceChangePercent":"1.867","weightedAvgPrice":"0.03043293","prevClosePrice":"0.03026300","lastPrice":"0.03082800","lastQty":"0.48600000","bidPrice":"0.03082600","bidQty":"0.48600000","askPrice":"0.03083100","askQty":"0.48600000","openPrice":"0.03026300","highPrice":"0.03099900","lowPrice":"0.02980500","volume":"264824.06200000","quoteVolume":"8059.37123114","openTime":1548685503543,"closeTime":1548771903543,"firstId":104498242,"lastId":104693709,"count":195468}'
+      encoding: ASCII-8BIT
+      string: '{"symbol":"BNBUGX","priceChange":"-821.00","priceChangePercent":"-3.445","weightedAvgPrice":"21447.18","prevClosePrice":"25357.00","lastPrice":"23014.00","lastQty":"0.70207000","bidPrice":"21919.00","bidQty":"5.22123000","askPrice":"23090.00","askQty":"13.42586000","openPrice":"23835.00","highPrice":"23835.00","lowPrice":"20241.00","volume":"184.58221000","quoteVolume":"3958767.09","openTime":1548685502195,"closeTime":1548771902195,"firstId":5578,"lastId":5630,"count":53}'
     http_version: 
-  recorded_at: Tue, 29 Jan 2019 14:25:03 GMT
+  recorded_at: Tue, 29 Jan 2019 14:25:05 GMT
 recorded_with: VCR 4.0.0

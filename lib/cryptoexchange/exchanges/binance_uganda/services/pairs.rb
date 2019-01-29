@@ -1,8 +1,8 @@
 module Cryptoexchange::Exchanges
-  module Binance
+  module BinanceUganda
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Binance::Market::API_URL}/exchangeInfo"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::BinanceUganda::Market::API_URL}/exchangeInfo"
 
         def fetch
           output = super
@@ -18,7 +18,7 @@ module Cryptoexchange::Exchanges
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: base,
                               target: target,
-                              market: Binance::Market::NAME
+                              market: BinanceUganda::Market::NAME
                             )
           end
           market_pairs
