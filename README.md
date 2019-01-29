@@ -305,6 +305,7 @@ Or install it yourself as:
 | Simex             | Y       | N          | N       |         | Y           | Y        | simex             |
 | Singularx         | Y       | N          | N       |         | Y           |          | singularx         |
 | Sistemkoin        | Y       |            |         |         | Y           |          | sistemkoin        |
+| 6X                | Y       |            |         |         | Y           | Y        | six_x             |
 | SouthXchange      | Y       | Y          | Y       |         | Y           | Y        | south_xchange     |
 | Stocks Exchange   | Y       |            |         |         | Y           | Y        | stocks_exchange   |
 | Swiftex           | Y       | Y          |         |         | Y           | Y        | swiftex           |
