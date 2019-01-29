@@ -59,6 +59,7 @@ Or install it yourself as:
 | BitBNS            | Y       |            |         |         | Y           |          | bitbns            |
 | Bitbox (Auth)     | Y       |            |         |         | User-Defined| Y        | bitbox            |
 | Bitbox (Public)   | Y       |            |         |         | Y           | Y        | bitbox            |
+| Bitc3             | Y       | N          | N       |         | Y           | Y        | bitc3             |
 | Bitconnect        | Y       |            |         |         | Y           |          | bitconnect        |
 | Bitebtc           | Y       | Y          | Y       |         | Y           | Y        | bitebtc           |
 | Bitex.la          | Y       | Y          |         |         | Y           |          | bitex             |
