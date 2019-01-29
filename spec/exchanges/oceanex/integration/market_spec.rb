@@ -17,7 +17,7 @@ RSpec.describe 'Oceanex integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'oceanex', base: btc_usdt_pair.base, target: btc_usdt_pair.target
-    expect(trade_page_url).to eq "https://oceanex.pro/trade/?market=btcusdt"
+    expect(trade_page_url).to eq "https://oceanex.pro/trades/btcusdt"
   end
 
   it 'fetch ticker' do

@@ -7,7 +7,7 @@ module Cryptoexchange::Exchanges
       def self.trade_page_url(args = {})
         base   = args[:base].downcase
         target = args[:target].downcase
-        "https://oceanex.pro/trade/?market=#{base}#{target}"
+        "https://oceanex.pro/trades/#{base}#{target}"
       end
     end
   end
