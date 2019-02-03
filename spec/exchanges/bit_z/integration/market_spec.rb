@@ -17,7 +17,7 @@ RSpec.describe 'BitZ integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url market, base: ltc_btc_pair.base, target: ltc_btc_pair.target
-    expect(trade_page_url).to eq "https://bitz.com/exchange/ltc_btc"
+    expect(trade_page_url).to eq "https://bit-z.com/exchange/ltc_btc"
   end
 
   it 'fetch ticker' do

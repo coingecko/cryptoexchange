@@ -35,7 +35,7 @@ module Cryptoexchange::Exchanges
           ticker.market    = Bitonbay::Market::NAME
           ticker.last      = NumericHelper.to_d(output['24h_price'].to_f)
           ticker.volume    = NumericHelper.to_d(output['24h_amount'].to_f)
-          ticker.timestamp = DateTime.parse(output['last_date']).to_time.to_i
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end
