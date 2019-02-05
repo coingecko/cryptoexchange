@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitstorage.finance/api/transactions?currency=USD&market=BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitstorage.finance
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Feb 2019 03:28:13 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '699'
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=e7n83bh4vs5dvt9ig14saju5a1; path=/; HttpOnly
+      - PHPSESSID=u73seqgp7k6leoq39oe1k7g2v0; path=/; HttpOnly
+      - PHPSESSID=vnr3ua60fbdprn8m5gm9l7hg25; path=/; HttpOnly
+      - __cfduid=d9cc43f2297baaf609a9490617b2d96eb1549337292; expires=Wed, 05-Feb-20
+        03:28:12 GMT; path=/; domain=.bitstorage.finance; HttpOnly; Secure
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,DELETE,PUT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4a42491eef1a946f-NRT
+    body:
+      encoding: UTF-8
+      string: '{"transactions":{"market":"BTC","currency":"USD","data":[{"id":449,"date":"2018-07-24
+        12:04:18","timestamp":1532423058,"btc":2.14e-5,"maker_type":"sell","price":8250,"amount":0.17655,"currency":"USD","market":"BTC"},{"id":241,"date":"2018-05-20
+        14:43:12","timestamp":1526816592,"btc":2.405e-5,"maker_type":"sell","price":8250,"amount":0.1984125,"currency":"USD","market":"BTC"},{"id":127,"date":"2018-05-08
+        07:34:10","timestamp":1525754050,"btc":0.00048167,"maker_type":"buy","price":9130,"amount":4.3976471,"currency":"USD","market":"BTC"},{"id":84,"date":"2018-05-04
+        19:25:21","timestamp":1525451121,"btc":1.0e-5,"maker_type":"sell","price":9130,"amount":0.0913,"currency":"USD","market":"BTC"}]}}'
+    http_version: 
+  recorded_at: Tue, 05 Feb 2019 03:28:13 GMT
+recorded_with: VCR 4.0.0
