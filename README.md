@@ -92,6 +92,7 @@ Or install it yourself as:
 | Bitso             | Y       |            |         |         | Y           |          | bitso             |
 | Bitstamp          | Y       | Y          | Y       |         | User-Defined|          | bitstamp          |
 | Bitsten           | Y       | Y          | N       |         | Y           | Y        | bitsten           |
+| Bitstorage        | Y       | Y          | Y       |         | Y           | Y        | bitstorage        |
 | Bittrex           | Y       |            |         |         | Y           | Y        | bittrex           |
 | Bkex              | Y       | N          | N       |         | Y           | Y        | bkex              |
 | Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |
