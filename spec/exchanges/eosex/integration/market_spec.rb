@@ -8,7 +8,7 @@ RSpec.describe 'Eosex integration specs' do
   it 'fetch pairs' do
     pairs = client.pairs('eosex')
     expect(pairs).not_to be_empty
-
+ 
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
