@@ -18,27 +18,29 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          pairs = Cryptoexchange::Exchanges::SaturnNetwork::Services::Pairs.new.fetch
-
-          output.map do |pair_id, ticker|
-            market_pair = pairs.find{ |p| p.inst_id == pair_id }
-            adapt(market_pair, ticker) if market_pair
+          output.map do |pair|
+            base = pair[0].split('_').first
+            target = pair[1]["symbol"]
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+              base: base,
+              target: target,
+              market: SaturnNetwork::Market::NAME
+            )
+            adapt(pair, market_pair)
           end
         end
 
-        def adapt(market_pair, output)
+        def adapt(output, market_pair)
           ticker = Cryptoexchange::Models::Ticker.new
 
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = SaturnNetwork::Market::NAME
-          ticker.last      = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'last'))
-          ticker.ask       = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'sell'))
-          ticker.bid       = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'buy'))
-          ticker.volume    = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'vol'))
-          ticker.high      = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'high'))
-          ticker.low       = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'low'))
-          ticker.timestamp = HashHelper.dig(output, 'at')
+          ticker.last      = NumericHelper.to_d(output[1]["last"])
+          ticker.high      = NumericHelper.to_d(output[1]["highestBid"])
+          ticker.low       = NumericHelper.to_d(output[1]["lowestAsk"])
+          ticker.volume    = NumericHelper.to_d(output[1]["baseVolume"])
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end
