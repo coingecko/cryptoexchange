@@ -8,7 +8,7 @@ RSpec.describe 'Eosex integration specs' do
   it 'fetch pairs' do
     pairs = client.pairs('eosex')
     expect(pairs).not_to be_empty
- 
+
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
@@ -17,7 +17,7 @@ RSpec.describe 'Eosex integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url market, base: eos_eth_pair.base, target: eos_eth_pair.target
-    expect(trade_page_url).to eq "https://eosex.com/#/"
+    expect(trade_page_url).to eq "https://eosex.com/#/exchange/EOSETH"
   end
 
   it 'fetch ticker' do
