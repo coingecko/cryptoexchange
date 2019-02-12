@@ -225,6 +225,7 @@ Or install it yourself as:
 | HPX               | Y       | Y          | Y       |         | Y           |          | hpx               |
 | Hubi              | Y       |            |         |         | Y           |          | hubi              |
 | Huobi             | Y       |            |         |         | Y           | Y        | huobi             |
+| Huobi US          | Y       |            |         |         | Y           | Y        | huobi_us          |
 | Ice3x             | Y       | Y          | Y       |         | Y           |          | ice3x             |
 | Idax              | Y       | N          | N       |         | Y           | Y        | idax              |
 | Idcm              | Y       |            |         |         | Y           | Y        | idcm              |
