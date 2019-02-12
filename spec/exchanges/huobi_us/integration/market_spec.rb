@@ -17,7 +17,7 @@ RSpec.describe 'HuobiUs integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url market, base: pair.base, target: pair.target
-    expect(trade_page_url).to eq "https://www.huobi.com/ETH_USD/exchange/"
+    expect(trade_page_url).to eq "https://www.huobi.com/markets/?symbols=eth_usd"
   end
 
   it 'fetch ticker' do

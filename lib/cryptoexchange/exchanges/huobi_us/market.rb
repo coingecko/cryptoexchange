@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       DOT_PRO_API_URL = 'https://api.huobi.com'
 
       def self.trade_page_url(args={})
-        "https://www.huobi.com/#{args[:base]}_#{args[:target]}/exchange/"
+        "https://www.huobi.com/markets/?symbols=#{args[:base].downcase}_#{args[:target].downcase}"
       end
     end
   end
