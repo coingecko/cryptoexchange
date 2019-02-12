@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'SaturnNetwork integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:eth_saturn_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'SATURN', market: 'saturn_network') }
+  let(:eth_saturn_pair) { Cryptoexchange::Models::MarketPair.new(base: 'SATURN', target: 'ETH', market: 'saturn_network') }
 
   it 'fetch pairs' do
     pairs = client.pairs('saturn_network')
@@ -17,8 +17,8 @@ RSpec.describe 'SaturnNetwork integration specs' do
   it 'fetch ticker' do
     ticker = client.ticker(eth_saturn_pair)
 
-    expect(ticker.base).to eq 'ETH'
-    expect(ticker.target).to eq 'SATURN'
+    expect(ticker.base).to eq 'SATURN'
+    expect(ticker.target).to eq 'ETH'
     expect(ticker.market).to eq 'saturn_network'
     expect(ticker.last).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
