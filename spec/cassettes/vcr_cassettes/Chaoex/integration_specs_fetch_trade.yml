@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.chaoex.com/12lian/quote/tradeHistory?baseCurrencyId=1&limit=20&tradeCurrencyId=3
+    uri: https://www.chaoex.info/unique/quote/tradeHistory?baseCurrencyId=1&limit=20&tradeCurrencyId=3
     body:
       encoding: UTF-8
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Connection:
       - close
       Host:
-      - www.chaoex.com
+      - www.chaoex.info
       User-Agent:
       - http.rb/3.0.0
   response:
@@ -19,27 +19,31 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 01 Aug 2018 01:13:36 GMT
+      - Tue, 12 Feb 2019 08:25:47 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
       - chunked
       Connection:
       - close
-      Set-Cookie:
-      - __cfduid=d9672723faf27045e0f9a165f5d9edb9f1533086016; expires=Thu, 01-Aug-19
-        01:13:36 GMT; path=/; domain=.chaoex.com; HttpOnly
       Vary:
       - Accept-Encoding
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 4434717469138556-HKG
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1;mode=block
+      X-Cdn-Edge:
+      - 267fe93,-
+      Set-Cookie:
+      - __cdnuid=2c9c161bc27ecda2f6369fd45dbd82c7; max-age=31536000; path=/; HttpOnly
+      X-Cache:
+      - bypass
     body:
       encoding: UTF-8
-      string: '{"attachment":[{"date":"1533082498784","price":0.05545147,"amount":0.02985385,"number":0.538378,"coinCode":3,"baseCurrencyId":1,"tid":"15330824987845210381801000385081","type":"buy","buyOrSellTrade":1},{"date":"1533082499949","price":0.05545147,"amount":0.06291191,"number":1.13454,"coinCode":3,"baseCurrencyId":1,"tid":"15330824999495230381801000364670","type":"buy","buyOrSellTrade":1},{"date":"1533082500909","price":0.05545147,"amount":0.00746044,"number":0.13454,"coinCode":3,"baseCurrencyId":1,"tid":"15330825009095240381801000378457","type":"buy","buyOrSellTrade":1},{"date":"1533082502018","price":0.05545147,"amount":0.01305604,"number":0.23545,"coinCode":3,"baseCurrencyId":1,"tid":"15330825020185250381801000318241","type":"buy","buyOrSellTrade":1},{"date":"1533082503770","price":0.05545147,"amount":0.02020337,"number":0.3643434,"coinCode":3,"baseCurrencyId":1,"tid":"15330825037705270381801000394259","type":"buy","buyOrSellTrade":1},{"date":"1533082504937","price":0.05545147,"amount":0.0118411,"number":0.21354,"coinCode":3,"baseCurrencyId":1,"tid":"15330825049375280381801000397678","type":"buy","buyOrSellTrade":1},{"date":"1533082505954","price":0.05545147,"amount":0.00850924,"number":0.153454,"coinCode":3,"baseCurrencyId":1,"tid":"15330825059545290381801000342755","type":"buy","buyOrSellTrade":1},{"date":"1533082507039","price":0.05545147,"amount":0.01738148,"number":0.313454,"coinCode":3,"baseCurrencyId":1,"tid":"15330825070385310381801000329727","type":"buy","buyOrSellTrade":1},{"date":"1533082508341","price":0.05545147,"amount":0.00639607,"number":0.1153454,"coinCode":3,"baseCurrencyId":1,"tid":"15330825083415330381801000359024","type":"buy","buyOrSellTrade":1},{"date":"1533082509981","price":0.05545147,"amount":0.00912368,"number":0.16453453,"coinCode":3,"baseCurrencyId":1,"tid":"15330825099815350381801000360419","type":"buy","buyOrSellTrade":1},{"date":"1533082511119","price":0.05545147,"amount":0.01183633,"number":0.213454,"coinCode":3,"baseCurrencyId":1,"tid":"15330825111195360381801000331132","type":"buy","buyOrSellTrade":1},{"date":"1533082513259","price":0.05545147,"amount":0.00850921,"number":0.1534534,"coinCode":3,"baseCurrencyId":1,"tid":"15330825132595390381801000315602","type":"buy","buyOrSellTrade":1},{"date":"1533082515800","price":0.05545147,"amount":0.01183633,"number":0.213454,"coinCode":3,"baseCurrencyId":1,"tid":"15330825158005420381801000388314","type":"buy","buyOrSellTrade":1},{"date":"1533082517139","price":0.05545147,"amount":0.01017723,"number":0.183534,"coinCode":3,"baseCurrencyId":1,"tid":"15330825171395450381801000379399","type":"buy","buyOrSellTrade":1},{"date":"1533082518980","price":0.05545147,"amount":0.00740018,"number":0.1334534,"coinCode":3,"baseCurrencyId":1,"tid":"15330825189805460381801000365273","type":"buy","buyOrSellTrade":1},{"date":"1533082520620","price":0.05545147,"amount":0.0029641,"number":0.053454,"coinCode":3,"baseCurrencyId":1,"tid":"15330825206205470381801000380355","type":"buy","buyOrSellTrade":1},{"date":"1533082523062","price":0.05545147,"amount":0.0019045,"number":0.0343454,"coinCode":3,"baseCurrencyId":1,"tid":"15330825230625480381801000354352","type":"buy","buyOrSellTrade":1},{"date":"1533082524401","price":0.05545147,"amount":0.00130502,"number":0.0235345,"coinCode":3,"baseCurrencyId":1,"tid":"15330825244015490381801000322531","type":"buy","buyOrSellTrade":1},{"date":"1533082525740","price":0.05545147,"amount":0.00118363,"number":0.0213454,"coinCode":3,"baseCurrencyId":1,"tid":"15330825257405500381801000310429","type":"buy","buyOrSellTrade":1},{"date":"1533082528781","price":0.05545147,"amount":8.5092E-4,"number":0.01534534,"coinCode":3,"baseCurrencyId":1,"tid":"15330825287815510381801000367476","type":"buy","buyOrSellTrade":1}],"message":"","status":200}'
+      string: '{"attachment":[{"date":"1549959871049","price":0.033418,"amount":0.014469994,"number":0.433,"coinCode":3,"baseCurrencyId":1,"tid":"15499598710490005341011100384537","type":"buy","buyOrSellTrade":1},{"date":"1549959877852","price":0.033419,"amount":0.021622093,"number":0.647,"coinCode":3,"baseCurrencyId":1,"tid":"15499598778520005341011100398127","type":"buy","buyOrSellTrade":1},{"date":"1549959878609","price":0.033418,"amount":0.143162712,"number":4.284,"coinCode":3,"baseCurrencyId":1,"tid":"15499598786090005341011100354901","type":"sell","buyOrSellTrade":2},{"date":"1549959883829","price":0.033411,"amount":0.027196554,"number":0.814,"coinCode":3,"baseCurrencyId":1,"tid":"15499598838290005341011100337850","type":"buy","buyOrSellTrade":1},{"date":"1549959890157","price":0.03342,"amount":0.09761982,"number":2.921,"coinCode":3,"baseCurrencyId":1,"tid":"15499598901570005341011100316308","type":"sell","buyOrSellTrade":2},{"date":"1549959891080","price":0.033411,"amount":0.088739616,"number":2.656,"coinCode":3,"baseCurrencyId":1,"tid":"15499598910800005341011100311392","type":"sell","buyOrSellTrade":2},{"date":"1549959899601","price":0.033413,"amount":0.11059703,"number":3.31,"coinCode":3,"baseCurrencyId":1,"tid":"15499598996010005341011100328575","type":"buy","buyOrSellTrade":1},{"date":"1549959914504","price":0.033411,"amount":0.087737286,"number":2.626,"coinCode":3,"baseCurrencyId":1,"tid":"15499599145040005341011100387790","type":"sell","buyOrSellTrade":2},{"date":"1549959919921","price":0.033414,"amount":0.063386358,"number":1.897,"coinCode":3,"baseCurrencyId":1,"tid":"15499599199210005341011100324912","type":"buy","buyOrSellTrade":1},{"date":"1549959920127","price":0.033411,"amount":0.069093948,"number":2.068,"coinCode":3,"baseCurrencyId":1,"tid":"15499599201270005341011100364464","type":"sell","buyOrSellTrade":2},{"date":"1549959921580","price":0.033412,"amount":0.027798784,"number":0.832,"coinCode":3,"baseCurrencyId":1,"tid":"15499599215800005341011100391299","type":"buy","buyOrSellTrade":1},{"date":"1549959923280","price":0.033405,"amount":0.01349562,"number":0.404,"coinCode":3,"baseCurrencyId":1,"tid":"15499599232800005341011100345301","type":"sell","buyOrSellTrade":2},{"date":"1549959927054","price":0.033405,"amount":0.02304945,"number":0.69,"coinCode":3,"baseCurrencyId":1,"tid":"15499599270540005341011100353938","type":"buy","buyOrSellTrade":1},{"date":"1549959927410","price":0.033406,"amount":0.043461206,"number":1.301,"coinCode":3,"baseCurrencyId":1,"tid":"15499599274100005341011100381919","type":"buy","buyOrSellTrade":1},{"date":"1549959927871","price":0.033404,"amount":0.085714664,"number":2.566,"coinCode":3,"baseCurrencyId":1,"tid":"15499599278710005341011100357379","type":"sell","buyOrSellTrade":2},{"date":"1549959936202","price":0.033404,"amount":0.084545524,"number":2.531,"coinCode":3,"baseCurrencyId":1,"tid":"15499599362020005341011100377267","type":"sell","buyOrSellTrade":2},{"date":"1549959945126","price":0.033406,"amount":0.009119838,"number":0.273,"coinCode":3,"baseCurrencyId":1,"tid":"15499599451260005341011100352051","type":"sell","buyOrSellTrade":2},{"date":"1549959945467","price":0.033404,"amount":0.07532602,"number":2.255,"coinCode":3,"baseCurrencyId":1,"tid":"15499599454670005341011100368990","type":"buy","buyOrSellTrade":1},{"date":"1549959946041","price":0.033405,"amount":0.102853995,"number":3.079,"coinCode":3,"baseCurrencyId":1,"tid":"15499599460410005341011100391549","type":"sell","buyOrSellTrade":2},{"date":"1549959956100","price":0.033404,"amount":0.034606544,"number":1.036,"coinCode":3,"baseCurrencyId":1,"tid":"15499599561000005341011100361234","type":"buy","buyOrSellTrade":1}],"message":null,"status":200}'
     http_version: 
-  recorded_at: Wed, 01 Aug 2018 01:13:36 GMT
+  recorded_at: Tue, 12 Feb 2019 08:25:48 GMT
 recorded_with: VCR 4.0.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.chaoex.com/12lian/quote/realTime?baseCurrencyId=1&tradeCurrencyId=3
+    uri: https://www.chaoex.info/unique/quote/realTime?baseCurrencyId=1&tradeCurrencyId=3
     body:
       encoding: UTF-8
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Connection:
       - close
       Host:
-      - www.chaoex.com
+      - www.chaoex.info
       User-Agent:
       - http.rb/3.0.0
   response:
@@ -19,27 +19,31 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 01 Aug 2018 01:13:36 GMT
+      - Tue, 12 Feb 2019 08:25:44 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
       - chunked
       Connection:
       - close
-      Set-Cookie:
-      - __cfduid=df8cc3cbe268dd618adc9b2c1e1d7af111533086016; expires=Thu, 01-Aug-19
-        01:13:36 GMT; path=/; domain=.chaoex.com; HttpOnly
       Vary:
       - Accept-Encoding
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 44347172e91884fc-HKG
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1;mode=block
+      X-Cdn-Edge:
+      - 267fe93,-
+      Set-Cookie:
+      - __cdnuid=8c407ffde953a5f1ed98e17439ec1583; max-age=31536000; path=/; HttpOnly
+      X-Cache:
+      - bypass
     body:
       encoding: UTF-8
-      string: '{"attachment":{"buy":0.05562228,"high":0.075,"last":0.05545147,"low":0.05451657,"sell":0.05545147,"vol":179.54863712,"currencyId":3,"baseCurrencyId":1},"message":"","status":200}'
+      string: '{"attachment":{"buy":0.033301,"high":0.033754,"last":0.033404,"low":0.033045,"sell":0.033432,"vol":22627.608,"currencyId":3,"baseCurrencyId":1,"tradeCurrencyName":null,"baseCurrencyName":null,"changeRate":0.75,"changeAmount":2.48E-4,"rmbScale":null},"message":null,"status":200}'
     http_version: 
-  recorded_at: Wed, 01 Aug 2018 01:13:36 GMT
+  recorded_at: Tue, 12 Feb 2019 08:25:44 GMT
 recorded_with: VCR 4.0.0
