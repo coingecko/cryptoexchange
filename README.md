@@ -188,6 +188,7 @@ Or install it yourself as:
 | Dobitrade         | Y       | Y          | N       |         | Y           | Y        | dobitrade         |
 | Dragonex          | Y       | Y          | N       |         | Y           | Y        | dragonex          |
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |
+| Eosex             | Y       | N          | N       |         | Y           | Y        | eosex             | 
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |
 | Escodex           | Y       |            |         |         | Y           | Y        | escodex           |
 | EtherDelta        | Y       |            |         |         | Y           |          | ether_delta       |
