@@ -116,6 +116,7 @@ Or install it yourself as:
 | Bytex             | Y       | N          | N       |         | Y           | N        | bytex             |
 | C2CX              | Y       | Y          | N       |         | Y           |          | c2cx              |
 | CPatex            | Y       | Y          | Y       |         | Y           |          | c_patex           |
+| Cbx               | Y       | Y          | Y       |         | Y           | Y        | cbx               |
 | CCex              | Y       |            |         |         | Y           |          | ccex              |
 | Cex               | Y       | Y          | Y       |         | Y           |          | cex               |
 | Cfinex            | Y       | Y          | Y       |         | Y           | Y        | cfinex            |
