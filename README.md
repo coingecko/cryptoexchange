@@ -89,6 +89,7 @@ Or install it yourself as:
 | Bitrue            | Y       | N          | N       |         | Y           | Y        | bitrue            |
 | Bits Blockchain   | Y       | Y          |         |         | Y           |          | bits_blockchain   |
 | Bitsane           | Y       | Y          |         |         | Y           |          | bitsane           |
+| Bitshares Assets  | Y       |            |         |         | User-Defined|          | bitshares_assets  |
 | Bitso             | Y       |            |         |         | Y           |          | bitso             |
 | Bitstamp          | Y       | Y          | Y       |         | User-Defined|          | bitstamp          |
 | Bitsten           | Y       | Y          | N       |         | Y           | Y        | bitsten           |
