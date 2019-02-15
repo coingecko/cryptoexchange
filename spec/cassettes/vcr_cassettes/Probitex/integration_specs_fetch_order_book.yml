@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.probitex.com/apis/get_market_depth?name=ltc_btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.probitex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 27 Oct 2018 06:36:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '814'
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=qc7rlilopaab65u0dsgnag75u3; path=/
+      - __cfduid=dfb768c0a35fd2438e04133398168c1bf1540622211; expires=Sun, 27-Oct-19
+        06:36:51 GMT; path=/; domain=.probitex.com; HttpOnly; Secure
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 47032693ce4aa34a-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":1,"data":{"buy":[{"p":"0.00091392","n":"23.42527021"},{"p":"0.00091379","n":"30.50000000"},{"p":"0.00091378","n":"24.11400000"},{"p":"0.00091366","n":"59.55000000"},{"p":"0.00091361","n":"93.50000000"},{"p":"0.00091313","n":"316.89000000"},{"p":"0.00091239","n":"71.70000000"},{"p":"0.00091148","n":"71.80000000"},{"p":"0.00091134","n":"56.00000000"},{"p":"0.00091109","n":"35.60000000"},{"p":"0.00008480","n":"5.00000000"}],"sell":[{"p":"0.09110804","n":"34.66500000"},{"p":"0.09110816","n":"49.01000000"},{"p":"0.09110821","n":"61.20000000"},{"p":"0.09110854","n":"28.06000000"},{"p":"0.09110927","n":"211.30000000"},{"p":"0.09110928","n":"74.13000000"},{"p":"0.09110952","n":"65.40000000"},{"p":"0.09110981","n":"47.20000000"},{"p":"0.09110986","n":"82.90000000"},{"p":"0.09110987","n":"16.30000000"}]}}'
+    http_version: 
+  recorded_at: Sat, 27 Oct 2018 06:36:51 GMT
+recorded_with: VCR 4.0.0
