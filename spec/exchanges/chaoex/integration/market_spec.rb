@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Chaoex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:eth_btc_pair) { Cryptoexchange::Models::Chaoex::MarketPair.new(base: 'ETH', target: 'BTC', base_id: '3', target_id: '1', market: 'chaoex') }
+  let(:eth_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', base_id: '3', target_id: '1', market: 'chaoex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('chaoex')
