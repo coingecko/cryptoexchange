@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Vinex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'ETH', market: 'vinex') }
+  let(:eth_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'vinex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('vinex')
@@ -15,15 +15,15 @@ RSpec.describe 'Vinex integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url 'vinex', base: "BTC", target: "ETH"
+    trade_page_url = client.trade_page_url 'vinex', base: "ETH", target: "BTC"
     expect(trade_page_url).to eq "https://vinex.network/market/BTC_ETH"
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_eth_pair)
+    ticker = client.ticker(eth_btc_pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'ETH'
+    expect(ticker.base).to eq 'ETH'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'vinex'
     expect(ticker.last).to be_a Numeric
     expect(ticker.high).to be_a Numeric
