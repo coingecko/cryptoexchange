@@ -8,7 +8,6 @@ module Cryptoexchange::Exchanges
           outputs = []
           (1..3).each do |page_id|
             pair_url = PAIRS_URL + "list?page=#{page_id}&pageSize=50"
-            puts pair_url
             output = fetch_via_api(pair_url)
             break if output.empty?
             outputs = outputs + output["data"]
@@ -18,7 +17,7 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output.map do |ticker|
-            target, base = ticker['pair'].split('/')
+            base, target = ticker['pair'].split('/')
             Cryptoexchange::Models::MarketPair.new({
               base: base,
               target: target,

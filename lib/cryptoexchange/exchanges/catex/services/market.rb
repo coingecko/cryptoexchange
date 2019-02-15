@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |pair_ticker|
-            target, base = pair_ticker["pair"].split("/")
+            base, target = pair_ticker["pair"].split("/")
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
@@ -42,7 +42,7 @@ module Cryptoexchange::Exchanges
           ticker.market    = Catex::Market::NAME
 
           ticker.last      = NumericHelper.to_d(ticker_output['priceByBaseCurrency'])
-          ticker.volume    = NumericHelper.to_d(ticker_output['volume24HoursByBaseCurrency'])
+          ticker.volume    = NumericHelper.divide(NumericHelper.to_d(ticker_output['volume24HoursByBaseCurrency']), ticker.last)
           ticker.timestamp = nil
           ticker.payload   = ticker_output
           ticker
