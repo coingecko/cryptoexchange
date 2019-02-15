@@ -4,6 +4,10 @@ RSpec.describe 'BitsharesAssets integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:btc_bts_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'bts', market: 'bitshares_assets') }
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'bitshares_assets', base: btc_bts_pair.base, target: btc_bts_pair.target
+    expect(trade_page_url).to eq "https://openledger.io/market/BTC_BTS"
+  end
 
   it 'fetch pairs' do
     pairs = client.pairs('bitshares_assets')
