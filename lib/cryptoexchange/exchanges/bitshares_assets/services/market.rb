@@ -36,9 +36,9 @@ module Cryptoexchange::Exchanges
           ticker.target    = market_pair.target
           ticker.market    = BitsharesAssets::Market::NAME
 
-          ticker.last      = NumericHelper.to_d(output[1]['price'])
+          ticker.last      = NumericHelper.divide(1.0, NumericHelper.to_d(output[1]['price']))
           ticker.volume    = NumericHelper.to_d(output[1]['volume24'])
-          ticker.timestamp = Time.parse(output[1]['updated']).to_i
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end
