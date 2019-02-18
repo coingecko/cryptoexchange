@@ -2,11 +2,11 @@ require 'spec_helper'
 
 RSpec.describe 'BitsharesAssets integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_bts_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'bts', market: 'bitshares_assets') }
+  let(:usd_bts_pair) { Cryptoexchange::Models::MarketPair.new(base: 'usd', target: 'bts', market: 'bitshares_assets') }
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url 'bitshares_assets', base: btc_bts_pair.base, target: btc_bts_pair.target
-    expect(trade_page_url).to eq "https://openledger.io/market/BTC_BTS"
+    trade_page_url = client.trade_page_url 'bitshares_assets', base: usd_bts_pair.base, target: usd_bts_pair.target
+    expect(trade_page_url).to eq "https://openledger.io/market/USD_BTS"
   end
 
   it 'fetch pairs' do
@@ -20,9 +20,9 @@ RSpec.describe 'BitsharesAssets integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_bts_pair)
+    ticker = client.ticker(usd_bts_pair)
 
-    expect(ticker.base).to eq 'BTC'
+    expect(ticker.base).to eq 'USD'
     expect(ticker.target).to eq 'BTS'
     expect(ticker.market).to eq 'bitshares_assets'
     expect(ticker.last).to be_a Numeric
