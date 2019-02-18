@@ -84,6 +84,7 @@ Or install it yourself as:
 | Bitmax            | Y       | Y          | Y       |         | Y           | Y        | bitmax            |
 | Bitmex            | Y       | Y          | Y       |         | Y           |          | bitmex            |
 | BitOnBay          | Y       |            |         |         | Y           |          | bitonbay          |
+| Bitopro           | Y       | Y          | Y       |         | User-Defined| Y        | bitopro           |
 | Bitpaction        | Y       | Y          | Y       |         | Y           |          | bitpaction        |
 | Bitrabbit         | Y       | N          | N       |         | Y           | Y        | bitrabbit         |
 | Bitrue            | Y       | N          | N       |         | Y           | Y        | bitrue            |
