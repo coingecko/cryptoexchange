@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.therocktrading.com/v1/funds/NOKUEURN/trades
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.therocktrading.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3
+      Date:
+      - Tue, 19 Feb 2019 04:37:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"1d004a6bfec8e62b508f7c580930af75"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5c70153b-c7b2-48d0-bff8-74e7b9e62364
+      X-Runtime:
+      - '0.030624'
+    body:
+      encoding: UTF-8
+      string: '{"trades":[{"id":4955413,"fund_id":"NOKUEURN","amount":0.014,"price":0.15,"side":"buy","dark":false,"date":"2019-02-19T00:49:29.264Z"},{"id":4955412,"fund_id":"NOKUEURN","amount":1.0,"price":0.1,"side":"buy","dark":false,"date":"2019-02-19T00:49:29.243Z"},{"id":4949506,"fund_id":"NOKUEURN","amount":1.0,"price":0.077,"side":"sell","dark":false,"date":"2019-02-17T19:00:48.000Z"},{"id":4939511,"fund_id":"NOKUEURN","amount":1.0,"price":0.1,"side":"buy","dark":true,"date":"2019-02-14T10:56:15.225Z"},{"id":4912463,"fund_id":"NOKUEURN","amount":1.0,"price":0.09,"side":"buy","dark":true,"date":"2019-02-07T16:21:51.059Z"},{"id":4895122,"fund_id":"NOKUEURN","amount":0.7,"price":0.164,"side":"buy","dark":false,"date":"2019-02-03T07:54:34.177Z"},{"id":4895121,"fund_id":"NOKUEURN","amount":1.0,"price":0.08,"side":"buy","dark":true,"date":"2019-02-03T07:54:34.154Z"},{"id":4812380,"fund_id":"NOKUEURN","amount":2.786,"price":0.164,"side":"sell","dark":false,"date":"2019-01-14T12:08:21.761Z"},{"id":4812379,"fund_id":"NOKUEURN","amount":6.614,"price":0.164,"side":"buy","dark":false,"date":"2019-01-14T12:08:21.185Z"},{"id":4812378,"fund_id":"NOKUEURN","amount":1.0,"price":0.07,"side":"buy","dark":true,"date":"2019-01-14T12:08:21.161Z"},{"id":4805092,"fund_id":"NOKUEURN","amount":50.0,"price":0.156,"side":"buy","dark":false,"date":"2019-01-13T10:38:48.061Z"},{"id":4805091,"fund_id":"NOKUEURN","amount":49.0,"price":0.154,"side":"buy","dark":false,"date":"2019-01-13T10:38:48.037Z"},{"id":4805090,"fund_id":"NOKUEURN","amount":1.324,"price":0.148,"side":"buy","dark":false,"date":"2019-01-13T10:38:48.021Z"},{"id":4805089,"fund_id":"NOKUEURN","amount":50.0,"price":0.144,"side":"buy","dark":false,"date":"2019-01-13T10:38:48.004Z"},{"id":4805088,"fund_id":"NOKUEURN","amount":2.267,"price":0.13,"side":"buy","dark":false,"date":"2019-01-13T10:38:47.985Z"},{"id":4805086,"fund_id":"NOKUEURN","amount":50.0,"price":0.127,"side":"buy","dark":false,"date":"2019-01-13T10:37:56.864Z"},{"id":4805085,"fund_id":"NOKUEURN","amount":47.0,"price":0.126,"side":"buy","dark":false,"date":"2019-01-13T10:37:56.848Z"},{"id":4805084,"fund_id":"NOKUEURN","amount":50.0,"price":0.123,"side":"buy","dark":false,"date":"2019-01-13T10:37:56.832Z"},{"id":4805083,"fund_id":"NOKUEURN","amount":50.0,"price":0.122,"side":"buy","dark":false,"date":"2019-01-13T10:37:56.816Z"},{"id":4805082,"fund_id":"NOKUEURN","amount":98.974,"price":0.119,"side":"buy","dark":false,"date":"2019-01-13T10:37:56.799Z"},{"id":4805081,"fund_id":"NOKUEURN","amount":36.091,"price":0.11,"side":"buy","dark":false,"date":"2019-01-13T10:37:56.782Z"},{"id":4805080,"fund_id":"NOKUEURN","amount":50.0,"price":0.109,"side":"buy","dark":false,"date":"2019-01-13T10:37:56.752Z"},{"id":4805079,"fund_id":"NOKUEURN","amount":69.0,"price":0.099,"side":"buy","dark":false,"date":"2019-01-13T10:37:56.736Z"},{"id":4805078,"fund_id":"NOKUEURN","amount":50.0,"price":0.09,"side":"buy","dark":false,"date":"2019-01-13T10:37:56.717Z"},{"id":4805077,"fund_id":"NOKUEURN","amount":50.0,"price":0.089,"side":"buy","dark":false,"date":"2019-01-13T10:37:56.698Z"}],"meta":{"total_count":null,"first":{"page":1,"href":"https://api.therocktrading.com/v1/funds/NOKUEURN/trades?page=1"},"previous":null,"current":{"page":1,"href":"https://api.therocktrading.com/v1/funds/NOKUEURN/trades?page=1"},"next":{"page":2,"href":"https://api.therocktrading.com/v1/funds/NOKUEURN/trades?page=2"},"last":null}}'
+    http_version: 
+  recorded_at: Tue, 19 Feb 2019 04:37:10 GMT
+recorded_with: VCR 4.0.0

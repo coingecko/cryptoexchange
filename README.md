@@ -323,7 +323,7 @@ Or install it yourself as:
 | Syex              | Y       | N          | N       |         | Y           | Y        | syex              |
 | SZZC              | Y       |            |         |         | Y           |          | szzc              |
 | Tdax              | Y       | N          | N       |         | Y           | Y        | tdax              |
-| The Rock Trading  | Y       |            |         |         | Y           |          | therocktrading    |
+| The Rock Trading  | Y       | Y          | Y       |         | Y           | Y        | therocktrading    |
 | The Token Store   | Y       | Y          | Y       |         | Y           | Y        | thetokenstore     |
 | Thinkbit          | Y       | Y          | Y       |         | Y           |          | thinkbit          |
 | 3Xbit             | Y       | Y          | Y       |         | Y           | Y        | three_xbit        |
