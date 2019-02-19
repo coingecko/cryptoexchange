@@ -252,7 +252,7 @@ Or install it yourself as:
 | Korbit            | Y       |            |         |         | User-Defined| Y        | korbit            |
 | Kraken            | Y       |            |         |         | Y           | Y        | kraken            |
 | Kryptono          | Y       | Y          | Y       |         | User-Defined| Y        | kryptono          |
-| Kucoin            | Y       | Y          | Y       |         | Y           | Y        | kucoin            |
+| Kucoin            | Y       | Y          | N       |         | Y           | Y        | kucoin            |
 | Kuna              | Y       | Y          | Y       |         | User-Defined| Y        | kuna              |
 | KyberNetwork      | Y       | N          | N       |         | Y           | Y        | kyber_network     |
 | LakeBTC           | Y       |            |         |         | Y           | Y        | lakebtc           |
