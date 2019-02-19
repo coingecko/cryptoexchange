@@ -191,7 +191,7 @@ Or install it yourself as:
 | Dobitrade         | Y       | Y          | N       |         | Y           | Y        | dobitrade         |
 | Dragonex          | Y       | Y          | N       |         | Y           | Y        | dragonex          |
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |
-| Eosex             | Y       | N          | N       |         | Y           | Y        | eosex             | 
+| Eosex             | Y       | N          | N       |         | Y           | Y        | eosex             |
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |
 | Escodex           | Y       |            |         |         | Y           | Y        | escodex           |
 | EtherDelta        | Y       |            |         |         | Y           |          | ether_delta       |
@@ -199,6 +199,7 @@ Or install it yourself as:
 | Ethex             | Y       | N          | N       |         | Y           | N        | ethex             |
 | Ethfinex          | Y       | Y          | Y       |         | Y           | Y        | ethfinex          |
 | Everbloom         | Y       |            |         |         | Y           |          | everbloom         |
+| ExMarkets         | Y       | Y          | Y       |         | Y           | Y        | exmarkets         |
 | Exmo              | Y       | Y          | Y       |         | Y           | Y        | exmo              |
 | Exrates           | Y       | N          | N       |         | Y           | Y        | exrates           |
 | Extstock          | Y       | Y          | Y       |         | Y           | Y        | extstock          |
