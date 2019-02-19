@@ -24,8 +24,7 @@ RSpec.describe 'Kucoin integration specs' do
     expect(ticker.high).to be_a Numeric
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
   end
 
@@ -44,20 +43,6 @@ RSpec.describe 'Kucoin integration specs' do
     expect(order_book.bids.count).to_not be nil
     expect(order_book.timestamp).to be_a Numeric
     expect(order_book.payload).to_not be nil
-  end
-
-  it 'fetch trade' do
-    trades = client.trades(kcs_btc_pair)
-    trade = trades.sample
-
-    expect(trades).to_not be_empty
-    expect(trade.base).to eq 'KCS'
-    expect(trade.target).to eq 'BTC'
-    expect(trade.price).to_not be nil
-    expect(trade.amount).to_not be nil
-    expect(trade.timestamp).to be_a Numeric
-    expect(trade.payload).to_not be nil
-    expect(trade.market).to eq 'kucoin'
   end
 
   it 'give trade url' do
