@@ -9,22 +9,23 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch
-          output = fetch_using_post(ticker_url, {})
+          output = super(ticker_url)
           adapt_all(output)
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Idax::Market::API_URL}/GetAllOpenMarkets"
+          "#{Cryptoexchange::Exchanges::Idax::Market::API_URL}/ticker"
         end
 
         def adapt_all(output)
-          output['data'].map do |pair|
+          output['ticker'].map do |output|
+            base, target = output['pair'].split('_')
             market_pair = Cryptoexchange::Models::MarketPair.new(
-              base: pair['baseCode'],
-              target: pair['quoteCode'], 
-              market: Idax::Market::NAME
+                              base: base,
+                              target: target,
+                              market: Idax::Market::NAME
             )
-            adapt(market_pair, pair)
+            adapt(market_pair, output)
           end
         end
 
@@ -33,14 +34,15 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Idax::Market::NAME
-          ticker.change    = NumericHelper.to_d(output['change'])
-          ticker.last      = NumericHelper.to_d(output['lastPrice'])
+
+          ticker.last      = NumericHelper.to_d(output['last'])
           ticker.high      = NumericHelper.to_d(output['high'])
           ticker.low       = NumericHelper.to_d(output['low'])
-          ticker.volume    = NumericHelper.to_d(output['volume'])
+          ticker.volume    = NumericHelper.to_d(output['vol'])
+
           ticker.timestamp = nil
           ticker.payload   = output
-          ticker  
+          ticker
         end
       end
     end
