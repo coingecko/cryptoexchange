@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Catex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'ETH', market: 'catex') }
+  let(:btc_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'catex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('catex')
@@ -17,8 +17,8 @@ RSpec.describe 'Catex integration specs' do
   it 'fetch ticker' do
     ticker = client.ticker(btc_eth_pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'ETH'
+    expect(ticker.base).to eq 'ETH'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'catex'
     expect(ticker.last).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
