@@ -175,7 +175,6 @@ Or install it yourself as:
 | Cryptaldash       | Y       | Y          | Y       |         | Y           |          | cryptaldash       |
 | Cryptex           | Y       | Y          | Y       |         | User-Defined| Y        | cryptex           |
 | CryptoBridge      | Y       |            |         |         | Y           | Y        | crypto_bridge     |
-| CryptoHub         | Y       | N          | N       |         | Y           |          | crypto_hub        |
 | Cryptobulls       | Y       | N          | N       |         | Y           |          | cryptobulls       |
 | Cryptology        | Y       |            |         |         | Y           |          | cryptology        |
 | Cryptonit         | Y       | Y          | Y       |         | Y           | Y        | cryptonit         |
@@ -216,7 +215,7 @@ Or install it yourself as:
 | GDAX(Coinbase Pro)| Y       |            |         |         | Y           | Y        | gdax              |
 | Gemini            | Y       | Y          | Y       |         | Y           |          | gemini            |
 | GetBTC            | Y       | Y          | Y       |         | User-Defined| Y        | getbtc            |
-| Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |     
+| Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |
 | Gobaba            | Y       |            |         |         | Y           |          | gobaba            |
 | golix (API Failed)| Y       | Y          |         |         | Y           |          | golix             |
 | GOPAX             | Y       | Y          | Y       |         | Y           | Y        | gopax             |
