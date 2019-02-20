@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "https://altmarkets.io/api/v2/tickers"
+          "#{Cryptoexchange::Exchanges::Altmarkets::Market::API_URL}/tickers"
         end
 
         def adapt_all(output)

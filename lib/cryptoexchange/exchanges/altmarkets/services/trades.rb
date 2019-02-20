@@ -12,7 +12,7 @@ module Cryptoexchange::Exchanges
           base   = market_pair.base
           target = market_pair.target
           limit = 20
-          "https://altmarkets.io/api/v2/trades?market=#{base.downcase}#{target.downcase}&limit=#{limit}"
+          "#{Cryptoexchange::Exchanges::Altmarkets::Market::API_URL}/trades?market=#{base.downcase}#{target.downcase}&limit=#{limit}"
         end
 
         def adapt(output, market_pair)

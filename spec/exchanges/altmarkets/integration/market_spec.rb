@@ -3,7 +3,6 @@ require 'spec_helper'
 RSpec.describe 'Altmarkets integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:doge_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'DOGE', target: 'BTC', market: 'altmarkets') }
-  let(:bcc_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BCC', target: 'BTC', market: 'altmarkets') }
 
   it 'fetch pairs' do
     pairs = client.pairs('altmarkets')

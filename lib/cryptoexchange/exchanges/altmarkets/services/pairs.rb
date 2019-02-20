@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Altmarkets
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "https://altmarkets.io/api/v2/markets"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Altmarkets::Market::API_URL}/markets"
 
         def fetch
           output = super

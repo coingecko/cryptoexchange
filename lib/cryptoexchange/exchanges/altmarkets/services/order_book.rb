@@ -1,4 +1,3 @@
-require 'pry'
 module Cryptoexchange::Exchanges
   module Altmarkets
     module Services
@@ -19,7 +18,7 @@ module Cryptoexchange::Exchanges
           target = market_pair.target
           asks_limit = 20
           bids_limit = 20
-          "https://altmarkets.io/api/v2/order_book?market=#{base.downcase}#{target.downcase}&asks_limit=#{asks_limit}&bids_limit=#{bids_limit}"
+          "#{Cryptoexchange::Exchanges::Altmarkets::Market::API_URL}/order_book?market=#{base.downcase}#{target.downcase}&asks_limit=#{asks_limit}&bids_limit=#{bids_limit}"
         end
 
         def adapt(output, market_pair)
