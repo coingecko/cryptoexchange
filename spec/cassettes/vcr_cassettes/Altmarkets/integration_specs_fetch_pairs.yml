@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://altmarkets.cc/api/v1/public/getmarkets
+    uri: https://altmarkets.io/api/v2/markets
     body:
       encoding: UTF-8
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Connection:
       - close
       Host:
-      - altmarkets.cc
+      - altmarkets.io
       User-Agent:
       - http.rb/3.0.0
   response:
@@ -18,27 +18,68 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      X-Powered-By:
-      - Express
-      Access-Control-Allow-Origin:
-      - "*"
+      Date:
+      - Wed, 20 Feb 2019 07:49:26 GMT
       Content-Type:
       - application/json
-      Date:
-      - Tue, 18 Sep 2018 11:40:39 GMT
+      Content-Length:
+      - '2511'
       Connection:
       - close
-      Transfer-Encoding:
-      - chunked
+      Set-Cookie:
+      - __cfduid=db8a5381e6f1ce916dcc3ed5e7a190bc31550648965; expires=Thu, 20-Feb-20
+        07:49:25 GMT; path=/; domain=.altmarkets.io; HttpOnly
+      Access-Control-Allow-Origin:
+      - http://altmarkets.io
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Origin
+      Version:
+      - HTTP/1.1
+      X-Real-Ip:
+      - 162.158.165.201
+      X-Forwarded-For:
+      - 60.52.30.3, 162.158.165.201
+      Host:
+      - altmarkets.io
+      X-Nginx-Proxy:
+      - 'true'
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - MY
+      X-Forwarded-Proto:
+      - https
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 60.52.30.3
+      Cdn-Loop:
+      - cloudflare
+      Etag:
+      - W/"2bae14ef4f3aea0f24f221f75c1da898"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3be10db8-98db-40e9-aa0e-10136cc22e1e
+      X-Runtime:
+      - '0.019834'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4abf60634afd312c-SIN
     body:
       encoding: ASCII-8BIT
-      string: '{"success":true,"message":"","result":[{"MarketCurrency":"ADVP","BaseCurrency":"BTC","MarketCurrencyLong":"AdevPlus","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-ADVP","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4563189.0","active":true,"minconf":3,"withdraw":"Enabled","orders":"Enabled"}},{"MarketCurrency":"ALTM","BaseCurrency":"BTC","MarketCurrencyLong":"AltMarketsCoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-ALTM","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.000001,"page":"http://altmarkets.cc","active":true}},{"MarketCurrency":"ANTY","BaseCurrency":"BTC","MarketCurrencyLong":"AnimalityCoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-ANTY","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4712639","active":true,"withdraw":"Disabled","orders":"Enabled"}},{"MarketCurrency":"BTC","BaseCurrency":"BTC","MarketCurrencyLong":"Bitcoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-BTC","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.0003,"active":true,"page":"http://bitcoin.com","withdraw":"Enabled","orders":"Enabled"}},{"MarketCurrency":"XBI","BaseCurrency":"BTC","MarketCurrencyLong":"Bitcoin
-        Incognito","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-XBI","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4545453.0","active":true}},{"MarketCurrency":"BZX","BaseCurrency":"BTC","MarketCurrencyLong":"BitcoinZero","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-BZX","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":6,"hold":0.001,"page":"https://www.bitcoinzerox.net","active":false}},{"MarketCurrency":"CBTC","BaseCurrency":"BTC","MarketCurrencyLong":"ClassicBitcoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-CBTC","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.001,"page":"https://bitcointalk.org/index.php?topic=3095296.0","active":false}},{"MarketCurrency":"COBRA","BaseCurrency":"BTC","MarketCurrencyLong":"CobraBytes","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-COBRA","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=5026824","active":true}},{"MarketCurrency":"CYR","BaseCurrency":"BTC","MarketCurrencyLong":"Cypher","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-CYR","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":6,"hold":1,"page":"https://bitcointalk.org/index.php?topic=2186566.0","active":true,"withdraw":"Enabled","orders":"Enabled"}},{"MarketCurrency":"DOGE","BaseCurrency":"BTC","MarketCurrencyLong":"Dogecoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-DOGE","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":6,"hold":2,"page":"https://bitcointalk.org/index.php?topic=361813.0","active":true}},{"MarketCurrency":"DCU","BaseCurrency":"BTC","MarketCurrencyLong":"Dogecoin
-        Ultra","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-DCU","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4906967","active":true}},{"MarketCurrency":"DFT","BaseCurrency":"BTC","MarketCurrencyLong":"Draftcoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-DFT","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.002,"page":"https://bitcointalk.org/index.php?topic=2144790.0","active":true}},{"MarketCurrency":"EXIST","BaseCurrency":"BTC","MarketCurrencyLong":"EXIST","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-EXIST","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"page":"https://bitcointalk.org/index.php?topic=4740427.0","hold":0.01,"active":true}},{"MarketCurrency":"EGX","BaseCurrency":"BTC","MarketCurrencyLong":"EgameX","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-EGX","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4487966","active":false,"withdraw":"Enabled","orders":"Disabled"}},{"MarketCurrency":"ELENA","BaseCurrency":"BTC","MarketCurrencyLong":"Elena","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-ELENA","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"page":"https://bitcointalk.org/index.php?topic=5022498.0","active":true,"hold":0.01,"minconf":3}},{"MarketCurrency":"ENDO","BaseCurrency":"BTC","MarketCurrencyLong":"EndoV2","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-ENDO","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4407094.0","active":true,"withdraw":"Enabled","orders":"Disabled"}},{"MarketCurrency":"XFTC","BaseCurrency":"BTC","MarketCurrencyLong":"FeatherCash","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-XFTC","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.001,"page":"https://bitcointalk.org/index.php?topic=4964512.0","active":true}},{"MarketCurrency":"FLX","BaseCurrency":"BTC","MarketCurrencyLong":"Flexinodes","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-FLX","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4511590","active":true,"withdraw":"Enabled","orders":"Disabled"}},{"MarketCurrency":"GIVE","BaseCurrency":"BTC","MarketCurrencyLong":"Gives","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-GIVE","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=3339380.0","active":true}},{"MarketCurrency":"GCASH","BaseCurrency":"BTC","MarketCurrencyLong":"GoCash","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-GCASH","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.002,"page":"https://bitcointalk.org/index.php?topic=4601564.0","active":true}},{"MarketCurrency":"GPKR","BaseCurrency":"BTC","MarketCurrencyLong":"Gold
-        Poker","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-GPKR","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.001,"page":"https://bitcointalk.org/index.php?topic=4611010","active":true}},{"MarketCurrency":"GRPH","BaseCurrency":"BTC","MarketCurrencyLong":"GraphCoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-GRPH","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4359052.0","active":true,"withdraw":"Enabled","orders":"Enabled"}},{"MarketCurrency":"U0F","BaseCurrency":"BTC","MarketCurrencyLong":"HighStakes","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-U0F","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4867404.msg43849852#msg43849852","active":true}},{"MarketCurrency":"IMG","BaseCurrency":"BTC","MarketCurrencyLong":"ImageCoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-IMG","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"page":"https://bitcointalk.org/index.php?topic=4722411","hold":0.01,"minconf":3,"active":true,"withdraw":"Enabled","orders":"Disabled"}},{"MarketCurrency":"LEGN","BaseCurrency":"BTC","MarketCurrencyLong":"Legion
-        Coin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-LEGN","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4068585.msg38004044#msg38004044","active":true}},{"MarketCurrency":"LTC","BaseCurrency":"BTC","MarketCurrencyLong":"Litecoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-LTC","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.002,"page":"http://litecoin.org","active":true}},{"MarketCurrency":"LIZA","BaseCurrency":"BTC","MarketCurrencyLong":"Liza","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-LIZA","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=844754.0","active":true}},{"MarketCurrency":"MENTAL","BaseCurrency":"BTC","MarketCurrencyLong":"MentalHealthCoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-MENTAL","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=1852366","active":true}},{"MarketCurrency":"MOVIE","BaseCurrency":"BTC","MarketCurrencyLong":"MoviePass","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-MOVIE","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"active":true,"page":"https://bitcointalk.org/index.php?topic=4906308"}},{"MarketCurrency":"MYNT","BaseCurrency":"BTC","MarketCurrencyLong":"Mynt","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-MYNT","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"hold":0.01,"minconf":3,"page":"https://bitcointalk.org/index.php?topic=4973629","active":true,"withdraw":"Enabled","orders":"Enabled"}},{"MarketCurrency":"NNC","BaseCurrency":"BTC","MarketCurrencyLong":"Nanucoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-NNC","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=2395392","active":false}},{"MarketCurrency":"OASIS","BaseCurrency":"BTC","MarketCurrencyLong":"Oasis","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-OASIS","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.002,"page":"https://bitcointalk.org/index.php?topic=4482370.msg40269483#msg40269483","active":true}},{"MarketCurrency":"PND","BaseCurrency":"BTC","MarketCurrencyLong":"PandaCoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-PND","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.001,"page":"https://bitcointalk.org/index.php?topic=1960307.0","active":false}},{"MarketCurrency":"PINE","BaseCurrency":"BTC","MarketCurrencyLong":"Pinecoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-PINE","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://t.me/pinecoin","active":true}},{"MarketCurrency":"RDD","BaseCurrency":"BTC","MarketCurrencyLong":"ReddCoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-RDD","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":10,"hold":0.02,"page":"https://bitcointalk.org/index.php?topic=423597.0","active":true}},{"MarketCurrency":"RPD","BaseCurrency":"BTC","MarketCurrencyLong":"RippedCoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-RPD","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=3340167","active":true}},{"MarketCurrency":"XTRAW","BaseCurrency":"BTC","MarketCurrencyLong":"TRAW
-        Network","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-XTRAW","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=3105194.0","active":true}},{"MarketCurrency":"TIM","BaseCurrency":"BTC","MarketCurrencyLong":"TimeIsMoney","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-TIM","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=5026651","active":true}},{"MarketCurrency":"UFO","BaseCurrency":"BTC","MarketCurrencyLong":"UFO
-        Coin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-UFO","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=844754.0","active":true}},{"MarketCurrency":"VIOG","BaseCurrency":"BTC","MarketCurrencyLong":"VIOG","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-VIOG","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=3308878","active":true}},{"MarketCurrency":"VAPE","BaseCurrency":"BTC","MarketCurrencyLong":"VapeCoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-VAPE","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.1,"page":"https://bitcointalk.org/index.php?topic=4728071","active":true,"withdraw":"Enabled","orders":"Enabled"}},{"MarketCurrency":"VOLKS","BaseCurrency":"BTC","MarketCurrencyLong":"Volkswaggen","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-VOLKS","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"active":true,"page":"https://bitcointalk.org/index.php?topic=2037602"}},{"MarketCurrency":"XCL","BaseCurrency":"BTC","MarketCurrencyLong":"XcelR","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-XCL","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4765600","active":true,"withdraw":"Disabled","orders":"Enabled"}},{"MarketCurrency":"YUANC","BaseCurrency":"BTC","MarketCurrencyLong":"YuanCoin","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-YUANC","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=1942012.0","active":true}},{"MarketCurrency":"x42","BaseCurrency":"BTC","MarketCurrencyLong":"x42","BaseCurrencyLong":"Bitcoin","MinTradeSize":0,"MarketName":"BTC-x42","IsActive":true,"Created":"2014-02-13T00:00:00","info":{"minconf":3,"hold":0.001,"page":"https://bitcointalk.org/index.php?topic=4799548.0","active":true,"withdraw":"Enabled","orders":"Enabled"}}]}'
+      string: '[{"id":"alexbtc","name":"ALEX/BTC"},{"id":"altmbtc","name":"ALTM/BTC"},{"id":"bccbtc","name":"BCC/BTC"},{"id":"cfccbtc","name":"CFCC/BTC"},{"id":"chanbtc","name":"CHAN/BTC"},{"id":"civbtc","name":"CIV/BTC"},{"id":"cspnbtc","name":"CSPN/BTC"},{"id":"cnmcbtc","name":"CNMC/BTC"},{"id":"cvcbtc","name":"CVC/BTC"},{"id":"cyrbtc","name":"CYR/BTC"},{"id":"deibtc","name":"DEI/BTC"},{"id":"dogebtc","name":"DOGE/BTC"},{"id":"domobtc","name":"DOMO/BTC"},{"id":"dt3btc","name":"DT3/BTC"},{"id":"gocashbtc","name":"GOCASH/BTC"},{"id":"galibtc","name":"GALI/BTC"},{"id":"hcashbtc","name":"HCASH/BTC"},{"id":"helpbtc","name":"HELP/BTC"},{"id":"hwibtc","name":"HWI/BTC"},{"id":"huzubtc","name":"HUZU/BTC"},{"id":"hightbtc","name":"HIGHT/BTC"},{"id":"infwbtc","name":"INFW/BTC"},{"id":"ketobtc","name":"KETO/BTC"},{"id":"nycbtc","name":"NYC/BTC"},{"id":"nygbtc","name":"NYG/BTC"},{"id":"ltcbtc","name":"LTC/BTC"},{"id":"lvtbtc","name":"LVT/BTC"},{"id":"lsrbtc","name":"LSR/BTC"},{"id":"oasisbtc","name":"OASIS/BTC"},{"id":"onionbtc","name":"ONION/BTC"},{"id":"pengbtc","name":"PENG/BTC"},{"id":"pinebtc","name":"PINE/BTC"},{"id":"qbcdoge","name":"QBC/DOGE"},{"id":"qbcbtc","name":"QBC/BTC"},{"id":"ratbtc","name":"RAT/BTC"},{"id":"btcdoge","name":"BTC/DOGE"},{"id":"rogerbtc","name":"ROGER/BTC"},{"id":"runesbtc","name":"RUNES/BTC"},{"id":"qbsbtc","name":"QBS/BTC"},{"id":"safebtc","name":"SAFE/BTC"},{"id":"satcbtc","name":"SATC/BTC"},{"id":"smrtcbtc","name":"SMRTC/BTC"},{"id":"sunpbtc","name":"SUNP/BTC"},{"id":"swippbtc","name":"SWIPP/BTC"},{"id":"ttpcbtc","name":"TTPC/BTC"},{"id":"trbobtc","name":"TRBO/BTC"},{"id":"wbtcbtc","name":"WBTC/BTC"},{"id":"x42btc","name":"X42/BTC"},{"id":"xspcbtc","name":"XSPC/BTC"},{"id":"xbtgbtc","name":"XBTG/BTC"},{"id":"altmdoge","name":"ALTM/DOGE"},{"id":"drvdoge","name":"DRV/DOGE"},{"id":"dnsdoge","name":"DNS/DOGE"},{"id":"bccdoge","name":"BCC/DOGE"},{"id":"cyrdoge","name":"CYR/DOGE"},{"id":"cvcdoge","name":"CVC/DOGE"},{"id":"nycdoge","name":"NYC/DOGE"},{"id":"nygdoge","name":"NYG/DOGE"},{"id":"posdoge","name":"POS/DOGE"},{"id":"runesdoge","name":"RUNES/DOGE"},{"id":"trbodoge","name":"TRBO/DOGE"},{"id":"bccltc","name":"BCC/LTC"},{"id":"dogeltc","name":"DOGE/LTC"},{"id":"deiltc","name":"DEI/LTC"},{"id":"drvltc","name":"DRV/LTC"},{"id":"nycltc","name":"NYC/LTC"},{"id":"posltc","name":"POS/LTC"},{"id":"rogerltc","name":"ROGER/LTC"},{"id":"smrtcltc","name":"SMRTC/LTC"},{"id":"swippltc","name":"SWIPP/LTC"},{"id":"trboltc","name":"TRBO/LTC"},{"id":"x42ltc","name":"X42/LTC"}]'
     http_version: 
-  recorded_at: Tue, 18 Sep 2018 11:40:40 GMT
+  recorded_at: Wed, 20 Feb 2019 07:49:26 GMT
 recorded_with: VCR 4.0.0

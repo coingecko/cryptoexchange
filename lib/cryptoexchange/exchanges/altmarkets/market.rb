@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://altmarkets.io/swagger?url=/api/v2/swagger'
 
       def self.trade_page_url(args = {})
-        "https://altmarkets.io/trading/#{args[:target]}#{args[:base]}"
+        "https://altmarkets.io/trading/#{args[:base]}#{args[:target]}"
       end
     end
   end

@@ -2,8 +2,8 @@ require 'spec_helper'
 
 RSpec.describe 'Altmarkets integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:advp_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ADVP', target: 'BTC', market: 'altmarkets') }
-  let(:elena_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ELENA', target: 'BTC', market: 'altmarkets') }
+  let(:doge_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'DOGE', target: 'BTC', market: 'altmarkets') }
+  let(:bcc_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BCC', target: 'BTC', market: 'altmarkets') }
 
   it 'fetch pairs' do
     pairs = client.pairs('altmarkets')
@@ -16,14 +16,14 @@ RSpec.describe 'Altmarkets integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url 'altmarkets', base: advp_btc_pair.base, target: advp_btc_pair.target
-    expect(trade_page_url).to eq "https://altmarkets.cc/market/BTC-ADVP"
+    trade_page_url = client.trade_page_url 'altmarkets', base: doge_btc_pair.base, target: doge_btc_pair.target
+    expect(trade_page_url).to eq "https://altmarkets.io/trading/DOGEBTC"
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(advp_btc_pair)
+    ticker = client.ticker(doge_btc_pair)
 
-    expect(ticker.base).to eq 'ADVP'
+    expect(ticker.base).to eq 'DOGE'
     expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'altmarkets'
     expect(ticker.last).to be_a Numeric
@@ -37,30 +37,26 @@ RSpec.describe 'Altmarkets integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(elena_btc_pair)
+    order_book = client.order_book(doge_btc_pair)
 
-    expect(order_book.base).to eq 'ELENA'
+    expect(order_book.base).to eq 'DOGE'
     expect(order_book.target).to eq 'BTC'
     expect(order_book.market).to eq 'altmarkets'
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
-    expect(order_book.asks.first.price).to_not be_nil
-    expect(order_book.asks.first.amount).to_not be_nil
-    expect(order_book.asks.first.timestamp).to be_nil
     expect(order_book.timestamp).to be nil
     expect(order_book.payload).to_not be nil
   end
 
   it 'fetch trade' do
-    trades = client.trades(elena_btc_pair)
+    trades = client.trades(doge_btc_pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty
-    expect(trade.base).to eq 'ELENA'
+    expect(trade.base).to eq 'DOGE'
     expect(trade.target).to eq 'BTC'
     expect(trade.market).to eq 'altmarkets'
     expect(trade.trade_id).to_not be_nil
-    expect(['buy', 'sell']).to include trade.type
     expect(trade.price).to_not be_nil
     expect(trade.amount).to_not be_nil
     expect(trade.timestamp).to be_a Numeric

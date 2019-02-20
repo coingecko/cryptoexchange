@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://altmarkets.cc/api/v1/public/getmarkets24
+    uri: https://altmarkets.io/api/v2/tickers
     body:
       encoding: UTF-8
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Connection:
       - close
       Host:
-      - altmarkets.cc
+      - altmarkets.io
       User-Agent:
       - http.rb/3.0.0
   response:
@@ -18,21 +18,150 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      X-Powered-By:
-      - Express
-      Access-Control-Allow-Origin:
-      - "*"
+      Date:
+      - Wed, 20 Feb 2019 07:49:27 GMT
       Content-Type:
       - application/json
-      Date:
-      - Tue, 18 Sep 2018 11:40:41 GMT
+      Content-Length:
+      - '9373'
       Connection:
       - close
-      Transfer-Encoding:
-      - chunked
+      Set-Cookie:
+      - __cfduid=d4c0f085855d2989e095068697292b1451550648966; expires=Thu, 20-Feb-20
+        07:49:26 GMT; path=/; domain=.altmarkets.io; HttpOnly
+      Access-Control-Allow-Origin:
+      - http://altmarkets.io
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Origin
+      Version:
+      - HTTP/1.1
+      X-Real-Ip:
+      - 162.158.166.176
+      X-Forwarded-For:
+      - 60.52.30.3, 162.158.166.176
+      Host:
+      - altmarkets.io
+      X-Nginx-Proxy:
+      - 'true'
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - MY
+      X-Forwarded-Proto:
+      - https
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 60.52.30.3
+      Cdn-Loop:
+      - cloudflare
+      Etag:
+      - W/"b6fc7b552e1347008015b44bf26f073c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b43f9fb6-0b33-478b-aa03-5d70a3ed1b9d
+      X-Runtime:
+      - '0.192209'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4abf60684b58311a-SIN
     body:
       encoding: ASCII-8BIT
-      string: '{"success":true,"message":"","result":{"TotalMarkets":45,"v24":0.9641862829332298,"data":{"ADVP":{"MarketName":"BTC-ADVP","High":"0.00000001","Low":"0.00000001","Volume":"179260.87700000","Last":"0.00000001","Bid":"0.00000000","Ask":"0.00000003","OpenBuyOrders":0,"OpenSellOrders":15,"coin_icon_src":"https%3A//i.imgur.com/H6LNq7Y.png","coin_info":{"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4563189.0","active":true,"minconf":3,"withdraw":"Enabled","orders":"Enabled"}},"ALTM":{"MarketName":"BTC-ALTM","High":"0.00000747","Low":"0.00000747","Volume":"6686.75370000","Last":"0.00000747","Bid":"0.00000500","Ask":"0.00000747","OpenBuyOrders":1,"OpenSellOrders":1,"coin_icon_src":"https%3A//i.imgur.com/3D7JGUY.png","coin_info":{"minconf":3,"hold":0.000001,"page":"http://altmarkets.cc","active":true}},"ANTY":{"MarketName":"BTC-ANTY","High":0,"Low":0,"Volume":0,"Last":"0.00000067","Bid":"0.00000003","Ask":"0.00000066","OpenBuyOrders":3,"OpenSellOrders":5,"coin_icon_src":"https%3A//www.animalitycoin.info/PT/img/Animality-80.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4712639","active":true,"withdraw":"Disabled","orders":"Enabled"}},"BTC":{"MarketName":"BTC-BTC","High":0,"Low":0,"Volume":0,"Last":"0.00000000","Bid":"0.00000000","Ask":"0.00000000","OpenBuyOrders":0,"OpenSellOrders":0,"coin_icon_src":"https%3A//github.com/jonn4y/Bitcoin-SVP/blob/master/src/qt/res/icons/bitcoin.png%3Fraw%3Dtrue","coin_info":{"minconf":3,"hold":0.0003,"active":true,"page":"http://bitcoin.com","withdraw":"Enabled","orders":"Enabled"}},"XBI":{"MarketName":"BTC-XBI","High":0,"Low":0,"Volume":0,"Last":"0.00000000","Bid":"0.00000000","Ask":"0.00001600","OpenBuyOrders":0,"OpenSellOrders":36,"coin_icon_src":"https%3A//media.discordapp.net/attachments/477793857946386456/478642397341810699/XBI_LOGO_ROUND-BLACK_high_res.png%3Fwidth%3D454%26height%3D454","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4545453.0","active":true}},"BZX":{"MarketName":"BTC-BZX","High":0,"Low":0,"Volume":0,"Last":"0.00000000","Bid":"0.00000000","Ask":"0.00000000","OpenBuyOrders":0,"OpenSellOrders":0,"coin_icon_src":"https%3A//i.imgur.com/MsxBnuy.png","coin_info":{"minconf":6,"hold":0.001,"page":"https://www.bitcoinzerox.net","active":false}},"CBTC":{"MarketName":"BTC-CBTC","High":0,"Low":0,"Volume":0,"Last":"0.00000000","Bid":"0.00000000","Ask":"0.00000000","OpenBuyOrders":0,"OpenSellOrders":0,"coin_icon_src":"https%3A//i.imgur.com/MynBfs6.png","coin_info":{"minconf":3,"hold":0.001,"page":"https://bitcointalk.org/index.php?topic=3095296.0","active":false}},"COBRA":{"MarketName":"BTC-COBRA","High":0,"Low":0,"Volume":0,"Last":"0.00000000","Bid":"0.00000010","Ask":"0.00000000","OpenBuyOrders":1,"OpenSellOrders":0,"coin_icon_src":"https%3A//i.imgur.com/pWMdCg2.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=5026824","active":true}},"CYR":{"MarketName":"BTC-CYR","High":0,"Low":0,"Volume":0,"Last":"0.00000050","Bid":"0.00000000","Ask":"0.00000051","OpenBuyOrders":0,"OpenSellOrders":3,"coin_icon_src":"https%3A//i.imgur.com/az7NLEa.png","coin_info":{"minconf":6,"hold":1,"page":"https://bitcointalk.org/index.php?topic=2186566.0","active":true,"withdraw":"Enabled","orders":"Enabled"}},"DOGE":{"MarketName":"BTC-DOGE","High":"0.00000096","Low":"0.00000089","Volume":"4771.93398700","Last":"0.00000089","Bid":"0.00000089","Ask":"0.00000102","OpenBuyOrders":3,"OpenSellOrders":7,"coin_icon_src":"https%3A//i.imgur.com/d2XjJVV.png","coin_info":{"minconf":6,"hold":2,"page":"https://bitcointalk.org/index.php?topic=361813.0","active":true}},"DCU":{"MarketName":"BTC-DCU","High":0,"Low":0,"Volume":0,"Last":"0.00000000","Bid":"0.00000001","Ask":"0.00000002","OpenBuyOrders":1,"OpenSellOrders":16,"coin_icon_src":"https%3A//i.imgur.com/7lML4x6.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4906967","active":true}},"DFT":{"MarketName":"BTC-DFT","High":0,"Low":0,"Volume":0,"Last":"0.00000500","Bid":"0.00000001","Ask":"0.00000500","OpenBuyOrders":1,"OpenSellOrders":9,"coin_icon_src":"https%3A//i.imgur.com/oQIigM6.png","coin_info":{"minconf":3,"hold":0.002,"page":"https://bitcointalk.org/index.php?topic=2144790.0","active":true}},"EGX":{"MarketName":"BTC-EGX","High":0,"Low":0,"Volume":0,"Last":"0.00000001","Bid":"0.00000000","Ask":"0.00000000","OpenBuyOrders":0,"OpenSellOrders":0,"coin_icon_src":"https%3A//i.imgur.com/dFuTiGU.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4487966","active":false,"withdraw":"Enabled","orders":"Disabled"}},"ELENA":{"MarketName":"BTC-ELENA","High":"0.00000900","Low":"0.00000100","Volume":"591252.06136670","Last":"0.00000150","Bid":"0.00000107","Ask":"0.00000150","OpenBuyOrders":10,"OpenSellOrders":23,"coin_icon_src":"https%3A//i.imgur.com/knQCdNO.jpg","coin_info":{"page":"https://bitcointalk.org/index.php?topic=5022498.0","active":true,"hold":0.01,"minconf":3}},"ENDO":{"MarketName":"BTC-ENDO","High":0,"Low":0,"Volume":0,"Last":"0.00000001","Bid":"0.00000000","Ask":"0.00000001","OpenBuyOrders":0,"OpenSellOrders":12,"coin_icon_src":"https%3A//i.imgur.com/9N9szLr.jpg","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4407094.0","active":true,"withdraw":"Enabled","orders":"Disabled"}},"XFTC":{"MarketName":"BTC-XFTC","High":0,"Low":0,"Volume":0,"Last":"0.00000240","Bid":"0.00000010","Ask":"0.00000100","OpenBuyOrders":1,"OpenSellOrders":7,"coin_icon_src":"https%3A//i.imgur.com/jFhpmuO.png","coin_info":{"minconf":3,"hold":0.001,"page":"https://bitcointalk.org/index.php?topic=4964512.0","active":true}},"FLX":{"MarketName":"BTC-FLX","High":0,"Low":0,"Volume":0,"Last":"0.00000003","Bid":"0.00000002","Ask":"0.00000009","OpenBuyOrders":3,"OpenSellOrders":23,"coin_icon_src":"https%3A//i.imgur.com/9fgnXkz.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4511590","active":true,"withdraw":"Enabled","orders":"Disabled"}},"GIVE":{"MarketName":"BTC-GIVE","High":0,"Low":0,"Volume":0,"Last":"0.00000000","Bid":"0.00000010","Ask":"0.00000035","OpenBuyOrders":2,"OpenSellOrders":8,"coin_icon_src":"https%3A//i.imgur.com/BlI2gpF.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=3339380.0","active":true}},"GPKR":{"MarketName":"BTC-GPKR","High":0,"Low":0,"Volume":0,"Last":"0.00000000","Bid":"0.00000001","Ask":"0.00000000","OpenBuyOrders":1,"OpenSellOrders":0,"coin_icon_src":"https%3A//i.imgur.com/kbiBeJF.png","coin_info":{"minconf":3,"hold":0.001,"page":"https://bitcointalk.org/index.php?topic=4611010","active":true}},"GRPH":{"MarketName":"BTC-GRPH","High":0,"Low":0,"Volume":0,"Last":"0.00000000","Bid":"0.00000050","Ask":"0.00000000","OpenBuyOrders":2,"OpenSellOrders":0,"coin_icon_src":"https%3A//i.imgur.com/L5yH0zu.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4359052.0","active":true,"withdraw":"Enabled","orders":"Enabled"}},"U0F":{"MarketName":"BTC-U0F","High":0,"Low":0,"Volume":0,"Last":"0.00000000","Bid":"0.00000001","Ask":"0.00000010","OpenBuyOrders":2,"OpenSellOrders":39,"coin_icon_src":"https%3A//i.imgur.com/jjlRRr6.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4867404.msg43849852#msg43849852","active":true}},"IMG":{"MarketName":"BTC-IMG","High":0,"Low":0,"Volume":0,"Last":"0.00000002","Bid":"0.00000003","Ask":"0.00000033","OpenBuyOrders":5,"OpenSellOrders":6,"coin_icon_src":"https%3A//i.imgur.com/3kGXGkt.png","coin_info":{"page":"https://bitcointalk.org/index.php?topic=4722411","hold":0.01,"minconf":3,"active":true,"withdraw":"Enabled","orders":"Disabled"}},"LEGN":{"MarketName":"BTC-LEGN","High":"0.00000020","Low":"0.00000020","Volume":"49.80090000","Last":"0.00000000","Bid":"0.00000000","Ask":"0.00000022","OpenBuyOrders":0,"OpenSellOrders":15,"coin_icon_src":"https%3A//i.imgur.com/eVDWG8S.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4068585.msg38004044#msg38004044","active":true}},"LTC":{"MarketName":"BTC-LTC","High":0,"Low":0,"Volume":0,"Last":"0.00785700","Bid":"0.00000000","Ask":"0.00000000","OpenBuyOrders":0,"OpenSellOrders":0,"coin_icon_src":"https%3A//i.imgur.com/yUcmLxS.png","coin_info":{"minconf":3,"hold":0.002,"page":"http://litecoin.org","active":true}},"LIZA":{"MarketName":"BTC-LIZA","High":"0.00090000","Low":"0.00000040","Volume":"2939.58570576","Last":"0.00000400","Bid":"0.00000100","Ask":"0.00000200","OpenBuyOrders":23,"OpenSellOrders":15,"coin_icon_src":"https%3A//i.imgur.com/PWs7ZU2.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=844754.0","active":true}},"MENTAL":{"MarketName":"BTC-MENTAL","High":0,"Low":0,"Volume":0,"Last":"0.00000003","Bid":"0.00000000","Ask":"0.00000002","OpenBuyOrders":0,"OpenSellOrders":9,"coin_icon_src":"https%3A//i.imgur.com/VS83i0q.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=1852366","active":true}},"MOVIE":{"MarketName":"BTC-MOVIE","High":"0.00000150","Low":"0.00000090","Volume":"6049.15829000","Last":"0.00000090","Bid":"0.00000020","Ask":"0.00000090","OpenBuyOrders":6,"OpenSellOrders":32,"coin_icon_src":"https%3A//i.imgur.com/kNdB0H5.png","coin_info":{"minconf":3,"hold":0.01,"active":true,"page":"https://bitcointalk.org/index.php?topic=4906308"}},"MYNT":{"MarketName":"BTC-MYNT","High":"0.00000007","Low":"0.00000004","Volume":"4061.31370000","Last":"0.00000004","Bid":"0.00000003","Ask":"0.00000006","OpenBuyOrders":6,"OpenSellOrders":36,"coin_icon_src":"https%3A//i.imgur.com/erDDHAI.png","coin_info":{"hold":0.01,"minconf":3,"page":"https://bitcointalk.org/index.php?topic=4973629","active":true,"withdraw":"Enabled","orders":"Enabled"}},"NNC":{"MarketName":"BTC-NNC","High":0,"Low":0,"Volume":0,"Last":"0.00000000","Bid":"0.00000000","Ask":"0.00000000","OpenBuyOrders":0,"OpenSellOrders":0,"coin_icon_src":"https%3A//www.nanucoin.com/v1/img/nnc.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=2395392","active":false}},"OASIS":{"MarketName":"BTC-OASIS","High":"0.00000510","Low":"0.00000110","Volume":"277.77814110","Last":"0.00000510","Bid":"0.00000112","Ask":"0.00000510","OpenBuyOrders":4,"OpenSellOrders":82,"coin_icon_src":"https%3A//i.imgur.com/gQOb4Iz.png","coin_info":{"minconf":3,"hold":0.002,"page":"https://bitcointalk.org/index.php?topic=4482370.msg40269483#msg40269483","active":true}},"PND":{"MarketName":"BTC-PND","High":0,"Low":0,"Volume":0,"Last":"0.00000000","Bid":"0.00000000","Ask":"0.00000000","OpenBuyOrders":0,"OpenSellOrders":0,"coin_icon_src":"https%3A//i.imgur.com/RyjNtEu.png","coin_info":{"minconf":3,"hold":0.001,"page":"https://bitcointalk.org/index.php?topic=1960307.0","active":false}},"PINE":{"MarketName":"BTC-PINE","High":"0.00000004","Low":"0.00000001","Volume":"71582.68710000","Last":"0.00000001","Bid":"0.00000001","Ask":"0.00000005","OpenBuyOrders":4,"OpenSellOrders":31,"coin_icon_src":"https%3A//i.imgur.com/5TgUSmF.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://t.me/pinecoin","active":true}},"XTRAW":{"MarketName":"BTC-XTRAW","High":0,"Low":0,"Volume":0,"Last":"0.00000000","Bid":"0.00000001","Ask":"0.00001999","OpenBuyOrders":1,"OpenSellOrders":5,"coin_icon_src":"https%3A//i.imgur.com/qTButuw.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=3105194.0","active":true}},"TIM":{"MarketName":"BTC-TIM","High":0,"Low":0,"Volume":0,"Last":"0.00000650","Bid":"0.00000800","Ask":"0.00012000","OpenBuyOrders":5,"OpenSellOrders":27,"coin_icon_src":"https%3A//i.imgur.com/0an0esB.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=5026651","active":true}},"VIOG":{"MarketName":"BTC-VIOG","High":0,"Low":0,"Volume":0,"Last":"0.00000002","Bid":"0.00000004","Ask":"0.00000100","OpenBuyOrders":5,"OpenSellOrders":6,"coin_icon_src":"https%3A//i.imgur.com/AKlHq5P.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=3308878","active":true}},"UFO":{"MarketName":"BTC-UFO","High":"0.00000005","Low":"0.00000005","Volume":"19623.04000000","Last":"0.00000000","Bid":"0.00000000","Ask":"0.00000010","OpenBuyOrders":0,"OpenSellOrders":3,"coin_icon_src":"https%3A//i.imgur.com/c6QUyix.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=844754.0","active":true}},"RDD":{"MarketName":"BTC-RDD","High":"0.00000050","Low":"0.00000050","Volume":"0.14799600","Last":"0.00000050","Bid":"0.00000050","Ask":"0.00000100","OpenBuyOrders":1,"OpenSellOrders":3,"coin_icon_src":"https%3A//i.imgur.com/TVV9lVo.png","coin_info":{"minconf":10,"hold":0.02,"page":"https://bitcointalk.org/index.php?topic=423597.0","active":true}},"RPD":{"MarketName":"BTC-RPD","High":0,"Low":0,"Volume":0,"Last":"0.00000012","Bid":"0.00000005","Ask":"0.00000020","OpenBuyOrders":8,"OpenSellOrders":11,"coin_icon_src":"https%3A//rippedcoin.com/images1/Ripped1.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=3340167","active":true}},"GCASH":{"MarketName":"BTC-GCASH","High":"0.00000245","Low":"0.00000065","Volume":"729.52385610","Last":"0.00000240","Bid":"0.00000085","Ask":"0.00000237","OpenBuyOrders":6,"OpenSellOrders":49,"coin_icon_src":"https%3A//i.imgur.com/Qj5Oh2e.png","coin_info":{"minconf":3,"hold":0.002,"page":"https://bitcointalk.org/index.php?topic=4601564.0","active":true}},"VAPE":{"MarketName":"BTC-VAPE","High":"0.00000001","Low":"0.00000001","Volume":"5955.67400000","Last":"0.00000001","Bid":"0.00000000","Ask":"0.00000002","OpenBuyOrders":0,"OpenSellOrders":22,"coin_icon_src":"https%3A//i.imgur.com/himUKL5.png","coin_info":{"minconf":3,"hold":0.1,"page":"https://bitcointalk.org/index.php?topic=4728071","active":true,"withdraw":"Enabled","orders":"Enabled"}},"x42":{"MarketName":"BTC-x42","High":"0.00001100","Low":"0.00001100","Volume":"0.95359186","Last":"0.00001100","Bid":"0.00000705","Ask":"0.00001499","OpenBuyOrders":11,"OpenSellOrders":22,"coin_icon_src":"https%3A//i.imgur.com/22OnUIo.png","coin_info":{"minconf":3,"hold":0.001,"page":"https://bitcointalk.org/index.php?topic=4799548.0","active":true,"withdraw":"Enabled","orders":"Enabled"}},"XCL":{"MarketName":"BTC-XCL","High":0,"Low":0,"Volume":0,"Last":"0.00000003","Bid":"0.00000003","Ask":"0.00000098","OpenBuyOrders":2,"OpenSellOrders":11,"coin_icon_src":"https%3A//i.imgur.com/nXDSxU9.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=4765600","active":true,"withdraw":"Disabled","orders":"Enabled"}},"VOLKS":{"MarketName":"BTC-VOLKS","High":0,"Low":0,"Volume":0,"Last":"0.00000900","Bid":"0.00000000","Ask":"0.00000980","OpenBuyOrders":0,"OpenSellOrders":2,"coin_icon_src":"https%3A//i.imgur.com/O2NtB1g.png","coin_info":{"minconf":3,"hold":0.01,"active":true,"page":"https://bitcointalk.org/index.php?topic=2037602"}},"YUANC":{"MarketName":"BTC-YUANC","High":0,"Low":0,"Volume":0,"Last":"0.00000005","Bid":"0.00000000","Ask":"0.00000005","OpenBuyOrders":0,"OpenSellOrders":23,"coin_icon_src":"https%3A//i.imgur.com/a31t1CI.png","coin_info":{"minconf":3,"hold":0.01,"page":"https://bitcointalk.org/index.php?topic=1942012.0","active":true}},"EXIST":{"MarketName":"BTC-EXIST","High":0,"Low":0,"Volume":0,"Last":"0.00000000","Bid":"0.00000000","Ask":"0.00000002","OpenBuyOrders":0,"OpenSellOrders":5,"coin_icon_src":"https%3A//i.imgur.com/Y1rmCLN.png","coin_info":{"minconf":3,"page":"https://bitcointalk.org/index.php?topic=4740427.0","hold":0.01,"active":true}}}}}'
+      string: '{"alexbtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.0000099","low":"0.0","high":"0.0","last":"0.0000099","vol":"0.0"}},"altmbtc":{"at":1550648967,"ticker":{"buy":"0.00000025","sell":"0.00000034","low":"0.00000021","high":"0.00000021","last":"0.00000021","vol":"1000.0"}},"bccbtc":{"at":1550648967,"ticker":{"buy":"0.000083","sell":"0.00012","low":"0.000085","high":"0.00011","last":"0.00011","vol":"741.69714989"}},"cfccbtc":{"at":1550648967,"ticker":{"buy":"0.00000001","sell":"0.004","low":"0.0","high":"0.0","last":"0.00000001","vol":"0.0"}},"chanbtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.00000075","low":"0.0","high":"0.0","last":"0.00000075","vol":"0.0"}},"civbtc":{"at":1550648967,"ticker":{"buy":"0.00000001","sell":"0.00001","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"cspnbtc":{"at":1550648967,"ticker":{"buy":"0.00000123","sell":"0.00014779","low":"0.0","high":"0.0","last":"0.00014998","vol":"0.0"}},"cnmcbtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.00001","low":"0.0","high":"0.0","last":"0.00001","vol":"0.0"}},"cvcbtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.0000000069","low":"0.0","high":"0.0","last":"0.000000007","vol":"0.0"}},"cyrbtc":{"at":1550648967,"ticker":{"buy":"0.00000003","sell":"0.00000039","low":"0.0","high":"0.0","last":"0.00000003","vol":"0.0"}},"deibtc":{"at":1550648967,"ticker":{"buy":"0.00000001","sell":"0.00000009","low":"0.0","high":"0.0","last":"0.00000014","vol":"0.0"}},"dogebtc":{"at":1550648967,"ticker":{"buy":"0.00000053","sell":"0.00000058","low":"0.00000053","high":"0.00000059","last":"0.00000053","vol":"5196.17521624"}},"domobtc":{"at":1550648967,"ticker":{"buy":"0.00000031","sell":"0.0000135","low":"0.0","high":"0.0","last":"0.00000026","vol":"0.0"}},"dt3btc":{"at":1550648967,"ticker":{"buy":"0.0000001","sell":"0.000001","low":"0.00000001","high":"0.000001","last":"0.000001","vol":"7513.97495768"}},"gocashbtc":{"at":1550648967,"ticker":{"buy":"0.00000007","sell":"0.00000358","low":"0.00000007","high":"0.00000007","last":"0.00000007","vol":"0.0"}},"galibtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0000009","high":"0.0000009","last":"0.0000009","vol":"231.42230669"}},"hcashbtc":{"at":1550648967,"ticker":{"buy":"0.00000001","sell":"0.000014","low":"0.0","high":"0.0","last":"0.000016","vol":"0.0"}},"helpbtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.3","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"hwibtc":{"at":1550648967,"ticker":{"buy":"0.00000001","sell":"0.00003","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"huzubtc":{"at":1550648967,"ticker":{"buy":"0.00000106","sell":"0.000009","low":"0.0","high":"0.0","last":"0.0000009","vol":"0.0"}},"hightbtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.0015","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"infwbtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.00000001","low":"0.00000001","high":"0.00000001","last":"0.00000001","vol":"34947.5"}},"ketobtc":{"at":1550648967,"ticker":{"buy":"0.00000018","sell":"0.00000027","low":"0.00000017","high":"0.0000002","last":"0.00000018","vol":"63716.03584628"}},"nycbtc":{"at":1550648967,"ticker":{"buy":"0.0000000001","sell":"0.0000000024","low":"0.0","high":"0.0","last":"0.0000000025","vol":"0.0"}},"nygbtc":{"at":1550648967,"ticker":{"buy":"0.0000000005","sell":"0.0000000006","low":"0.0","high":"0.0","last":"0.0000000003","vol":"0.0"}},"ltcbtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.011","vol":"0.0"}},"lvtbtc":{"at":1550648967,"ticker":{"buy":"0.00000002","sell":"0.00000007","low":"0.00000002","high":"0.00000007","last":"0.00000002","vol":"499.0"}},"lsrbtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.00001491","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"oasisbtc":{"at":1550648967,"ticker":{"buy":"0.0000055","sell":"0.000139","low":"0.000005","high":"0.000144","last":"0.000144","vol":"0.1"}},"onionbtc":{"at":1550648967,"ticker":{"buy":"0.00000001","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"pengbtc":{"at":1550648967,"ticker":{"buy":"0.00000002","sell":"0.00000005","low":"0.00000002","high":"0.00000002","last":"0.00000002","vol":"1524.118"}},"pinebtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.0000017","low":"0.0","high":"0.0","last":"0.00000001","vol":"0.0"}},"qbcdoge":{"at":1550648967,"ticker":{"buy":"0.36","sell":"0.77","low":"0.77","high":"0.77","last":"0.77","vol":"0.0"}},"qbcbtc":{"at":1550648967,"ticker":{"buy":"0.00000015","sell":"0.0000003","low":"0.0000003","high":"0.0000003","last":"0.0000003","vol":"0.0"}},"ratbtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.00000001","low":"0.0","high":"0.0","last":"0.00000001","vol":"0.0"}},"btcdoge":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"rogerbtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.00000033","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"runesbtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.00000024","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"qbsbtc":{"at":1550648967,"ticker":{"buy":"0.00000027","sell":"0.0000006","low":"0.0","high":"0.0","last":"0.00000012","vol":"0.0"}},"safebtc":{"at":1550648967,"ticker":{"buy":"0.000002","sell":"0.00000999","low":"0.0","high":"0.0","last":"0.000002","vol":"0.0"}},"satcbtc":{"at":1550648967,"ticker":{"buy":"0.000003","sell":"0.00001","low":"0.00000999","high":"0.00001","last":"0.00001","vol":"0.0"}},"smrtcbtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.00000015","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"sunpbtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.00001798","low":"0.0","high":"0.0","last":"0.00001798","vol":"0.0"}},"swippbtc":{"at":1550648967,"ticker":{"buy":"0.0000003","sell":"0.00000348","low":"0.0","high":"0.0","last":"0.0000003","vol":"0.0"}},"ttpcbtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.00000091","low":"0.0","high":"0.0","last":"0.00000002","vol":"0.0"}},"trbobtc":{"at":1550648967,"ticker":{"buy":"0.00000000008","sell":"0.00000000019","low":"0.0","high":"0.0","last":"0.00000000007","vol":"0.0"}},"wbtcbtc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.00648949","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"x42btc":{"at":1550648967,"ticker":{"buy":"0.00000555","sell":"0.00001757","low":"0.00001122","high":"0.00001122","last":"0.00001122","vol":"14.23885918"}},"xspcbtc":{"at":1550648967,"ticker":{"buy":"0.00000002","sell":"0.00000045","low":"0.0","high":"0.0","last":"0.00000044","vol":"0.0"}},"xbtgbtc":{"at":1550648967,"ticker":{"buy":"0.00000005","sell":"0.00092","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"altmdoge":{"at":1550648967,"ticker":{"buy":"0.4","sell":"0.76999999","low":"0.4","high":"0.75","last":"0.75","vol":"4746.37875"}},"drvdoge":{"at":1550648967,"ticker":{"buy":"0.00004","sell":"0.00375","low":"0.0","high":"0.0","last":"0.0000385","vol":"0.0"}},"dnsdoge":{"at":1550648967,"ticker":{"buy":"1.0","sell":"1.6","low":"1.6","high":"1.6","last":"1.6","vol":"1.0"}},"bccdoge":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"cyrdoge":{"at":1550648967,"ticker":{"buy":"0.0","sell":"1.0","low":"0.0","high":"0.0","last":"1.0","vol":"0.0"}},"cvcdoge":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"nycdoge":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.006","low":"0.0","high":"0.0","last":"0.0069","vol":"0.0"}},"nygdoge":{"at":1550648967,"ticker":{"buy":"0.0005","sell":"0.004","low":"0.0","high":"0.0","last":"0.0001","vol":"0.0"}},"posdoge":{"at":1550648967,"ticker":{"buy":"0.0005","sell":"0.001","low":"0.0","high":"0.0","last":"0.001","vol":"0.0"}},"runesdoge":{"at":1550648967,"ticker":{"buy":"0.00061","sell":"0.4","low":"0.0","high":"0.0","last":"0.45","vol":"0.0"}},"trbodoge":{"at":1550648967,"ticker":{"buy":"0.000334","sell":"0.000395","low":"0.00035","high":"0.00035","last":"0.00035","vol":"306223.604511"}},"bccltc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"dogeltc":{"at":1550648967,"ticker":{"buy":"0.00001","sell":"0.0","low":"0.0","high":"0.0","last":"0.00001","vol":"0.0"}},"deiltc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.00002","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"drvltc":{"at":1550648967,"ticker":{"buy":"0.00000001","sell":"0.0000002","low":"0.0","high":"0.0","last":"0.00000001","vol":"0.0"}},"nycltc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0000004","vol":"0.0"}},"posltc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.0000004","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"rogerltc":{"at":1550648967,"ticker":{"buy":"0.00000001","sell":"0.00000199","low":"0.0","high":"0.0","last":"0.00000199","vol":"0.0"}},"smrtcltc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.003999","low":"0.0","high":"0.0","last":"0.003999","vol":"0.0"}},"swippltc":{"at":1550648967,"ticker":{"buy":"0.00015","sell":"0.00035","low":"0.0","high":"0.0","last":"0.00035","vol":"0.0"}},"trboltc":{"at":1550648967,"ticker":{"buy":"0.0","sell":"0.00000001","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"x42ltc":{"at":1550648967,"ticker":{"buy":"0.0005","sell":"0.00175","low":"0.0","high":"0.0","last":"0.0025","vol":"0.0"}}}'
     http_version: 
-  recorded_at: Tue, 18 Sep 2018 11:40:41 GMT
+  recorded_at: Wed, 20 Feb 2019 07:49:27 GMT
+- request:
+    method: get
+    uri: https://altmarkets.io/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - altmarkets.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Feb 2019 07:49:28 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2511'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d1875a0bcae52d710b288567d9a1e544b1550648967; expires=Thu, 20-Feb-20
+        07:49:27 GMT; path=/; domain=.altmarkets.io; HttpOnly
+      Access-Control-Allow-Origin:
+      - http://altmarkets.io
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Origin
+      Version:
+      - HTTP/1.1
+      X-Real-Ip:
+      - 172.69.134.126
+      X-Forwarded-For:
+      - 60.52.30.3, 172.69.134.126
+      Host:
+      - altmarkets.io
+      X-Nginx-Proxy:
+      - 'true'
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - MY
+      X-Forwarded-Proto:
+      - https
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 60.52.30.3
+      Cdn-Loop:
+      - cloudflare
+      Etag:
+      - W/"2bae14ef4f3aea0f24f221f75c1da898"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - decbc36f-70ab-42e0-b02c-9ae3fee4c8bb
+      X-Runtime:
+      - '0.017426'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4abf606eec2730d2-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"alexbtc","name":"ALEX/BTC"},{"id":"altmbtc","name":"ALTM/BTC"},{"id":"bccbtc","name":"BCC/BTC"},{"id":"cfccbtc","name":"CFCC/BTC"},{"id":"chanbtc","name":"CHAN/BTC"},{"id":"civbtc","name":"CIV/BTC"},{"id":"cspnbtc","name":"CSPN/BTC"},{"id":"cnmcbtc","name":"CNMC/BTC"},{"id":"cvcbtc","name":"CVC/BTC"},{"id":"cyrbtc","name":"CYR/BTC"},{"id":"deibtc","name":"DEI/BTC"},{"id":"dogebtc","name":"DOGE/BTC"},{"id":"domobtc","name":"DOMO/BTC"},{"id":"dt3btc","name":"DT3/BTC"},{"id":"gocashbtc","name":"GOCASH/BTC"},{"id":"galibtc","name":"GALI/BTC"},{"id":"hcashbtc","name":"HCASH/BTC"},{"id":"helpbtc","name":"HELP/BTC"},{"id":"hwibtc","name":"HWI/BTC"},{"id":"huzubtc","name":"HUZU/BTC"},{"id":"hightbtc","name":"HIGHT/BTC"},{"id":"infwbtc","name":"INFW/BTC"},{"id":"ketobtc","name":"KETO/BTC"},{"id":"nycbtc","name":"NYC/BTC"},{"id":"nygbtc","name":"NYG/BTC"},{"id":"ltcbtc","name":"LTC/BTC"},{"id":"lvtbtc","name":"LVT/BTC"},{"id":"lsrbtc","name":"LSR/BTC"},{"id":"oasisbtc","name":"OASIS/BTC"},{"id":"onionbtc","name":"ONION/BTC"},{"id":"pengbtc","name":"PENG/BTC"},{"id":"pinebtc","name":"PINE/BTC"},{"id":"qbcdoge","name":"QBC/DOGE"},{"id":"qbcbtc","name":"QBC/BTC"},{"id":"ratbtc","name":"RAT/BTC"},{"id":"btcdoge","name":"BTC/DOGE"},{"id":"rogerbtc","name":"ROGER/BTC"},{"id":"runesbtc","name":"RUNES/BTC"},{"id":"qbsbtc","name":"QBS/BTC"},{"id":"safebtc","name":"SAFE/BTC"},{"id":"satcbtc","name":"SATC/BTC"},{"id":"smrtcbtc","name":"SMRTC/BTC"},{"id":"sunpbtc","name":"SUNP/BTC"},{"id":"swippbtc","name":"SWIPP/BTC"},{"id":"ttpcbtc","name":"TTPC/BTC"},{"id":"trbobtc","name":"TRBO/BTC"},{"id":"wbtcbtc","name":"WBTC/BTC"},{"id":"x42btc","name":"X42/BTC"},{"id":"xspcbtc","name":"XSPC/BTC"},{"id":"xbtgbtc","name":"XBTG/BTC"},{"id":"altmdoge","name":"ALTM/DOGE"},{"id":"drvdoge","name":"DRV/DOGE"},{"id":"dnsdoge","name":"DNS/DOGE"},{"id":"bccdoge","name":"BCC/DOGE"},{"id":"cyrdoge","name":"CYR/DOGE"},{"id":"cvcdoge","name":"CVC/DOGE"},{"id":"nycdoge","name":"NYC/DOGE"},{"id":"nygdoge","name":"NYG/DOGE"},{"id":"posdoge","name":"POS/DOGE"},{"id":"runesdoge","name":"RUNES/DOGE"},{"id":"trbodoge","name":"TRBO/DOGE"},{"id":"bccltc","name":"BCC/LTC"},{"id":"dogeltc","name":"DOGE/LTC"},{"id":"deiltc","name":"DEI/LTC"},{"id":"drvltc","name":"DRV/LTC"},{"id":"nycltc","name":"NYC/LTC"},{"id":"posltc","name":"POS/LTC"},{"id":"rogerltc","name":"ROGER/LTC"},{"id":"smrtcltc","name":"SMRTC/LTC"},{"id":"swippltc","name":"SWIPP/LTC"},{"id":"trboltc","name":"TRBO/LTC"},{"id":"x42ltc","name":"X42/LTC"}]'
+    http_version: 
+  recorded_at: Wed, 20 Feb 2019 07:49:28 GMT
 recorded_with: VCR 4.0.0

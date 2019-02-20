@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://altmarkets.cc/api/v1/public/getorderbook?market=BTC-ELENA&type=both
+    uri: https://altmarkets.io/api/v2/order_book?asks_limit=20&bids_limit=20&market=dogebtc
     body:
       encoding: UTF-8
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Connection:
       - close
       Host:
-      - altmarkets.cc
+      - altmarkets.io
       User-Agent:
       - http.rb/3.0.0
   response:
@@ -18,21 +18,68 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      X-Powered-By:
-      - Express
-      Access-Control-Allow-Origin:
-      - "*"
+      Date:
+      - Wed, 20 Feb 2019 07:49:29 GMT
       Content-Type:
       - application/json
-      Date:
-      - Tue, 18 Sep 2018 11:40:42 GMT
+      Content-Length:
+      - '3065'
       Connection:
       - close
-      Transfer-Encoding:
-      - chunked
+      Set-Cookie:
+      - __cfduid=d84beac9151ada50dd656ab15792716d61550648968; expires=Thu, 20-Feb-20
+        07:49:28 GMT; path=/; domain=.altmarkets.io; HttpOnly
+      Access-Control-Allow-Origin:
+      - http://altmarkets.io
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Origin
+      Version:
+      - HTTP/1.1
+      X-Real-Ip:
+      - 172.68.144.160
+      X-Forwarded-For:
+      - 60.52.30.3, 172.68.144.160
+      Host:
+      - altmarkets.io
+      X-Nginx-Proxy:
+      - 'true'
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - MY
+      X-Forwarded-Proto:
+      - https
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 60.52.30.3
+      Cdn-Loop:
+      - cloudflare
+      Etag:
+      - W/"66b939fa2f3122b7ce0c0bcf04ebc21e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1a7d8ccb-f23f-487c-926d-f24a970cf0bd
+      X-Runtime:
+      - '0.024152'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4abf60742f8530a2-SIN
     body:
       encoding: ASCII-8BIT
-      string: '{"success":true,"message":"","result":{"buy":[{"Quantity":200,"Rate":"0.00000107"},{"Quantity":93.96264113,"Rate":"0.00000106"},{"Quantity":6120,"Rate":"0.00000105"},{"Quantity":56898,"Rate":"0.00000100"},{"Quantity":10000,"Rate":"0.00000050"},{"Quantity":10000,"Rate":"0.00000020"},{"Quantity":10000,"Rate":"0.00000015"},{"Quantity":15000,"Rate":"0.00000004"},{"Quantity":1000,"Rate":"0.00000003"}],"sell":[{"Quantity":64239.95,"Rate":"0.00000150"},{"Quantity":46.6159007,"Rate":"0.00000400"},{"Quantity":8151.0595,"Rate":"0.00000429"},{"Quantity":105.156046,"Rate":"0.00000499"},{"Quantity":66.225166,"Rate":"0.00000655"},{"Quantity":140,"Rate":"0.00002949"},{"Quantity":44.833954,"Rate":"0.00002950"},{"Quantity":3300,"Rate":"0.00002954"},{"Quantity":200,"Rate":"0.00003000"},{"Quantity":300,"Rate":"0.00004990"},{"Quantity":100,"Rate":"0.00005000"},{"Quantity":100,"Rate":"0.00005200"},{"Quantity":10,"Rate":"0.00005400"},{"Quantity":10,"Rate":"0.00006100"},{"Quantity":10,"Rate":"0.00006200"},{"Quantity":10,"Rate":"0.00006300"},{"Quantity":10,"Rate":"0.00006400"},{"Quantity":100,"Rate":"0.00008000"},{"Quantity":100,"Rate":"0.00008500"},{"Quantity":100,"Rate":"0.00009000"},{"Quantity":100,"Rate":"0.00009500"},{"Quantity":100,"Rate":"0.00015000"}]}}'
+      string: '{"asks":[{"id":4324,"side":"sell","ord_type":"limit","price":"0.00000058","avg_price":"0.0","state":"wait","market":"dogebtc","created_at":"2019-02-20T02:05:54+00:00","volume":"320.0","remaining_volume":"320.0","executed_volume":"0.0","trades_count":0},{"id":3787,"side":"sell","ord_type":"limit","price":"0.00000059","avg_price":"0.00000059","state":"wait","market":"dogebtc","created_at":"2019-02-17T20:05:22+00:00","volume":"1000.0","remaining_volume":"445.53296522","executed_volume":"554.46703478","trades_count":3},{"id":3727,"side":"sell","ord_type":"limit","price":"0.0000006","avg_price":"0.0","state":"wait","market":"dogebtc","created_at":"2019-02-17T16:27:24+00:00","volume":"100.0","remaining_volume":"100.0","executed_volume":"0.0","trades_count":0},{"id":3786,"side":"sell","ord_type":"limit","price":"0.0000006","avg_price":"0.0","state":"wait","market":"dogebtc","created_at":"2019-02-17T20:04:57+00:00","volume":"900.0","remaining_volume":"900.0","executed_volume":"0.0","trades_count":0},{"id":4310,"side":"sell","ord_type":"limit","price":"0.00000072","avg_price":"0.0","state":"wait","market":"dogebtc","created_at":"2019-02-20T00:27:16+00:00","volume":"1800.0","remaining_volume":"1800.0","executed_volume":"0.0","trades_count":0},{"id":1780,"side":"sell","ord_type":"limit","price":"0.00000074","avg_price":"0.0","state":"wait","market":"dogebtc","created_at":"2019-02-10T02:06:38+00:00","volume":"10.0","remaining_volume":"10.0","executed_volume":"0.0","trades_count":0},{"id":1784,"side":"sell","ord_type":"limit","price":"0.00000074","avg_price":"0.0","state":"wait","market":"dogebtc","created_at":"2019-02-10T02:33:18+00:00","volume":"10.0","remaining_volume":"10.0","executed_volume":"0.0","trades_count":0}],"bids":[{"id":4151,"side":"buy","ord_type":"limit","price":"0.00000053","avg_price":"0.00000053","state":"wait","market":"dogebtc","created_at":"2019-02-19T02:16:03+00:00","volume":"11510.60344827","remaining_volume":"7190.2914948","executed_volume":"4320.31195347","trades_count":7},{"id":4152,"side":"buy","ord_type":"limit","price":"0.00000053","avg_price":"0.0","state":"wait","market":"dogebtc","created_at":"2019-02-19T02:16:31+00:00","volume":"1085.90621081","remaining_volume":"1085.90621081","executed_volume":"0.0","trades_count":0},{"id":4154,"side":"buy","ord_type":"limit","price":"0.00000053","avg_price":"0.0","state":"wait","market":"dogebtc","created_at":"2019-02-19T02:27:23+00:00","volume":"100.22250019","remaining_volume":"100.22250019","executed_volume":"0.0","trades_count":0},{"id":4157,"side":"buy","ord_type":"limit","price":"0.00000053","avg_price":"0.0","state":"wait","market":"dogebtc","created_at":"2019-02-19T02:59:33+00:00","volume":"307.76016644","remaining_volume":"307.76016644","executed_volume":"0.0","trades_count":0},{"id":3870,"side":"buy","ord_type":"limit","price":"0.00000052","avg_price":"0.00000052","state":"wait","market":"dogebtc","created_at":"2019-02-18T04:40:55+00:00","volume":"10000.0","remaining_volume":"9185.43147804","executed_volume":"814.56852196","trades_count":1}]}'
     http_version: 
-  recorded_at: Tue, 18 Sep 2018 11:40:42 GMT
+  recorded_at: Wed, 20 Feb 2019 07:49:29 GMT
 recorded_with: VCR 4.0.0
