@@ -117,6 +117,7 @@ Or install it yourself as:
 | BW                | Y       |            |         |         | Y           | Y        | bw                |
 | Bytex             | Y       | N          | N       |         | Y           | N        | bytex             |
 | C2CX              | Y       | Y          | N       |         | Y           |          | c2cx              |
+| Cashierest        | Y       |            |         |         | Y           |          | cashierest        |
 | CPatex            | Y       | Y          | Y       |         | Y           |          | c_patex           |
 | Cbx               | Y       | Y          | Y       |         | Y           | Y        | cbx               |
 | CCex              | Y       |            |         |         | Y           |          | ccex              |
