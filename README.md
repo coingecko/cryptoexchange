@@ -120,6 +120,7 @@ Or install it yourself as:
 | CPatex            | Y       | Y          | Y       |         | Y           |          | c_patex           |
 | Cbx               | Y       | Y          | Y       |         | Y           | Y        | cbx               |
 | CCex              | Y       |            |         |         | Y           |          | ccex              |
+| Ccore             | Y       |            |         |         | Y           |          | ccore             |
 | Cex               | Y       | Y          | Y       |         | Y           |          | cex               |
 | Cfinex            | Y       | Y          | Y       |         | Y           | Y        | cfinex            |
 | Chaince           | Y       |            |         |         | Y           | Y        | chaince           |
