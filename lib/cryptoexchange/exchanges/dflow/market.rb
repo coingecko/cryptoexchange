@@ -4,7 +4,7 @@ module Cryptoexchange::Exchanges
       NAME = 'dflow'
       API_URL = 'https://api.dflowx.com/v1'
 
-      def self.trade_page_url
+      def self.trade_page_url(args={})
         "https://dflowx.com/Exchange"
       end
     end
