@@ -15,7 +15,7 @@ RSpec.describe 'QBTC integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'qbtc', base: btr_cnyt_pair.base, target: btr_cnyt_pair.target
-    expect(trade_page_url).to eq "https://www.myqbtc.com/markets?symbol=BTR_CNYT"
+    expect(trade_page_url).to eq "https://www.qbtc.ink/markets?symbol=BTR_CNYT"
   end
 
   it 'fetch ticker' do
@@ -28,7 +28,7 @@ RSpec.describe 'QBTC integration specs' do
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
-    
+
     expect(ticker.payload).to_not be nil
   end
 
