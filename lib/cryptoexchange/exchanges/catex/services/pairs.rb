@@ -2,21 +2,15 @@ module Cryptoexchange::Exchanges
   module Catex
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Catex::Market::API_URL}/token/"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Catex::Market::API_URL}/token/list?page=1&pageSize=1000"
 
         def fetch
-          outputs = []
-          (1..3).each do |page_id|
-            pair_url = PAIRS_URL + "list?page=#{page_id}&pageSize=50"
-            output = fetch_via_api(pair_url)
-            break if output.empty?
-            outputs = outputs + output["data"]
-          end
-          adapt(outputs)
+          output = super
+          adapt(output)
         end
 
         def adapt(output)
-          output.map do |ticker|
+          output["data"].map do |ticker|
             base, target = ticker['pair'].split('/')
             Cryptoexchange::Models::MarketPair.new({
               base: base,

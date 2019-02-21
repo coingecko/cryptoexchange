@@ -9,28 +9,23 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch
-          outputs = []
-          (1..3).each do |page_id|
-            ticker_output = super(ticker_url(page_id))
-            break if ticker_output.empty?
-            outputs = outputs + ticker_output["data"]
-          end
-          adapt_all(outputs)
+          output = super(ticker_url)
+          adapt_all(output)
         end
 
-        def ticker_url(page_id)
-          "#{Cryptoexchange::Exchanges::Catex::Market::API_URL}/token/list?page=#{page_id}&pageSize=50"
+        def ticker_url
+          "#{Cryptoexchange::Exchanges::Catex::Market::API_URL}/token/list?page=1&pageSize=1000"
         end
 
         def adapt_all(output)
-          output.map do |pair_ticker|
-            base, target = pair_ticker["pair"].split("/")
+          output["data"].map do |ticker|
+            base, target = ticker["pair"].split("/")
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
               market: Catex::Market::NAME
             )
-            adapt(market_pair, pair_ticker)
+            adapt(market_pair, ticker)
           end
         end
 
