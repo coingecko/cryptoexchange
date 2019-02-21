@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Altmarkets
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Altmarkets::Market::API_URL}/public/getmarkets"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Altmarkets::Market::API_URL}/markets"
 
         def fetch
           output = super
@@ -10,14 +10,14 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output['result'].map do |pair|
-            next if pair['IsActive'] == false || pair['MarketCurrency'] == pair['BaseCurrency']
+          output.map do |pair|
             Cryptoexchange::Models::MarketPair.new(
-              base:   pair['MarketCurrency'],
-              target: pair['BaseCurrency'],
+              base:   pair["name"].split('/')[0],
+              target: pair["name"].split('/')[1],
+              inst_id: pair["id"],
               market: Altmarkets::Market::NAME
             )
-          end.compact
+          end
         end
       end
     end
