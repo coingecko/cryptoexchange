@@ -14,6 +14,11 @@ RSpec.describe 'Dflow integration specs' do
     expect(pair.market).to eq 'dflow'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'dflow', base: "ETH", target: "USDT"
+    expect(trade_page_url).to eq "https://dflowx.com/Exchange"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(eth_usdt_pair)
 
