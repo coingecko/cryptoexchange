@@ -1,10 +1,11 @@
+require 'date'
 module Cryptoexchange::Exchanges
   module Codex
     module Services
       class Trades < Cryptoexchange::Services::Market
-        TRADES_LIMIT = 500
-        FROM_TIME = (Time.now - 86400).to_i
-        TO_TIME = Time.now.to_i
+        TRADES_LIMIT = "500"
+        FROM_TIME = (Date.today.to_time.to_i - 86400)
+        TO_TIME = Date.today.to_time.to_i
 
         def fetch(market_pair)
           output = super(ticker_url(market_pair))
@@ -12,7 +13,8 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(pair)
-          "#{Cryptoexchange::Exchanges::Codex::Market::API_URL}/trades_history?market=#{pair.base}#{pair.target}&limit=#{TRADES_LIMIT}&from_time=#{FROM_TIME}&to_time=#{TO_TIME}"
+          market = "#{pair.base}#{pair.target}"
+          "#{Cryptoexchange::Exchanges::Codex::Market::API_URL}/trades_history?market=#{market}&limit=#{TRADES_LIMIT}&from_time=#{FROM_TIME}&to_time=#{TO_TIME}"
         end
 
         def adapt(output, market_pair)
