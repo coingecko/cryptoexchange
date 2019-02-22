@@ -128,6 +128,7 @@ Or install it yourself as:
 | Chaoex            | Y       | Y          | Y       |         | Y           | N        | chaoex            |
 | CHBTC             | Y       |            |         |         | User-Defined|          | chbtc             |
 | Cobinhood         | Y       | Y          |         |         | Y           | Y        | cobinhood         |
+| Codex             | Y       | Y          | Y       |         | Y           |          | codex             |
 | Coin2001          | Y       | Y          | Y       |         | Y           |          | coin2001          |
 | Coinall           | Y       | Y          | Y       |         | Y           |          | coinall           |
 | Coin Asset        | Y       | Y          | Y       |         | Y           |          | coinasset         |
