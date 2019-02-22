@@ -343,7 +343,7 @@ Or install it yourself as:
 | TrocaNinja        | Y       | N          | N       |         | Y           |          | troca_ninja       |
 | TrustDex **       | Y       |            |         |         | Y           |          | trust_dex         |
 | TuxExchange       | Y       |            |         |         | Y           |          | tux_exchange      |
-| TRXMarket         | Y       |            |         |         | Y           |          | trx_market      |
+| TRXMarket         | Y       |            |         |         | Y           |          | trx_market        |
 | UEX               | Y       |            |         |         | Y           |          | uex               |
 | Uniswap           | Y       | N          | N       |         | Y           | N        | uniswap           |
 | Unocoin           |         |            |         |         |             |          | unocoin           |
