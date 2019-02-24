@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://coinpulse.io/api/v1/trades/ETH_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinpulse.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Sun, 11 Nov 2018 19:36:52 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Cache-Control:
+      - max-age=3600
+      Expires:
+      - Sun, 11 Nov 2018 20:36:52 GMT
+      Location:
+      - https://www.coinpulse.io/api/v1/trades/ETH_BTC
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 478335cf45efc1e5-IAD
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Sun, 11 Nov 2018 19:36:52 GMT
+- request:
+    method: get
+    uri: https://www.coinpulse.io/api/v1/trades/ETH_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/3.0.0
+      Host:
+      - www.coinpulse.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 11 Nov 2018 19:36:52 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSALB=EWYP45DYtd1kSKNk8P3xGVcq+0C6+9X2Mf2EYUteH4/k5SYbU5r3o4XhUH9fkRlIt+AjF5QRDTdI6ABlXOqBLUTVNwGwhBpX6yR3aSscnmBdNoPqQHvGiC45ealc;
+        Expires=Sun, 18 Nov 2018 19:36:52 GMT; Path=/
+      - __cfduid=dd2c4487cab6016d37082f8d7aa3753c61541965012; expires=Mon, 11-Nov-19
+        19:36:52 GMT; path=/; domain=.coinpulse.io; HttpOnly; Secure
+      - ci_session=k0jn4f2ki24lodig4p88mjtvj86120kt; expires=Sun, 11-Nov-2018 21:36:52
+        GMT; Max-Age=7200; path=/; HttpOnly
+      - csrf_cookie_name=69edc54295104103efaea7e7fb05c456; expires=Sun, 11-Nov-2018
+        21:36:52 GMT; Max-Age=7200; path=/
+      X-Powered-By:
+      - PHP/7.1.17
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Ci-Csrf-Token:
+      - 69edc54295104103efaea7e7fb05c456
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 478335d0bcb69f8a-IAD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":"true","result":[{"ID":"8947","Timestamp":1541964759,"Quantity":"0.54003359","Price":"0.0359","Type":"Buy"},{"ID":"8946","Timestamp":1541964719,"Quantity":"0.54003359","Price":"0.0359","Type":"Buy"}]}'
+    http_version: 
+  recorded_at: Sun, 11 Nov 2018 19:36:52 GMT
+recorded_with: VCR 4.0.0

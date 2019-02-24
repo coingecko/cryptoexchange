@@ -1,0 +1,106 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://coinpulse.io/api/v1/orderbook/ETH_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinpulse.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Sun, 11 Nov 2018 19:36:09 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Cache-Control:
+      - max-age=3600
+      Expires:
+      - Sun, 11 Nov 2018 20:36:09 GMT
+      Location:
+      - https://www.coinpulse.io/api/v1/orderbook/ETH_BTC
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 478334c3b102c1b8-IAD
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Sun, 11 Nov 2018 19:36:09 GMT
+- request:
+    method: get
+    uri: https://www.coinpulse.io/api/v1/orderbook/ETH_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/3.0.0
+      Host:
+      - www.coinpulse.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 11 Nov 2018 19:36:09 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSALB=p3kqGMZjO1ge/Hr8ZnUUeGfhsTMK55shLeVafq3kEGpBqpQqizsebvUTYL19+zanBvcl29YR/7dEg3lOGldpuE+UFx605esNCEzcnST/qfLr2B9naus+a5c0h8Nt;
+        Expires=Sun, 18 Nov 2018 19:36:09 GMT; Path=/
+      - __cfduid=de95139d9fd16075afed6cf5c2b2bffe51541964969; expires=Mon, 11-Nov-19
+        19:36:09 GMT; path=/; domain=.coinpulse.io; HttpOnly; Secure
+      - ci_session=1hjtk22j64emdk9f4s1c0o676j8228jo; expires=Sun, 11-Nov-2018 21:36:09
+        GMT; Max-Age=7200; path=/; HttpOnly
+      - csrf_cookie_name=bbcafeecca8584e3c4bc46c8b252c140; expires=Sun, 11-Nov-2018
+        21:36:09 GMT; Max-Age=7200; path=/
+      X-Powered-By:
+      - PHP/7.1.17
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Ci-Csrf-Token:
+      - bbcafeecca8584e3c4bc46c8b252c140
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 478334c54ef6c1bd-IAD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":"true","result":{"Ask":[{"Quantity":"0.00000000","Rate":"1000.00000000"},{"Quantity":"0.00000000","Rate":"0.28800500"},{"Quantity":"0.00000000","Rate":"0.10000000"},{"Quantity":"0.00000000","Rate":"0.04300000"},{"Quantity":"0.00000000","Rate":"0.04000000"},{"Quantity":"0.00000000","Rate":"0.03699000"},{"Quantity":"0.00000000","Rate":"0.03649000"},{"Quantity":"-0.35158479","Rate":"0.03590000"}],"Bid":[{"Quantity":"-1.02180082","Rate":"0.03030000"},{"Quantity":"-0.37177590","Rate":"0.03020000"},{"Quantity":"0.00000000","Rate":"0.02851000"},{"Quantity":"0.00000000","Rate":"0.01100000"},{"Quantity":"-0.33606019","Rate":"0.00100000"},{"Quantity":"0.00000000","Rate":"0.00030000"},{"Quantity":"0.00000000","Rate":"0.00020000"},{"Quantity":"0.00000000","Rate":"0.00001000"},{"Quantity":"0.00000000","Rate":"0.00000227"},{"Quantity":"0.00000000","Rate":"0.00000020"}]}}'
+    http_version: 
+  recorded_at: Sun, 11 Nov 2018 19:36:10 GMT
+recorded_with: VCR 4.0.0
