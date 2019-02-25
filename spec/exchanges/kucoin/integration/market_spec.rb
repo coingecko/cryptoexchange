@@ -47,6 +47,6 @@ RSpec.describe 'Kucoin integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'kucoin', base: kcs_btc_pair.base, target: kcs_btc_pair.target
-    expect(trade_page_url).to eq "https://www.kucoin.com/#/trade.pro/KCS-BTC"
+    expect(trade_page_url).to eq "https://www.kucoin.com/trade/KCS-BTC"
   end
 end
