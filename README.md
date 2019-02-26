@@ -250,6 +250,7 @@ Or install it yourself as:
 | Kkcoin            | Y       | Y          | Y       |         | Y           | Y        | kkcoin            |
 | Koinex            | Y       |            |         |         | Y           |          | koinex            |
 | Koinok            | Y       |            |         |         | Y           | Y        | koinok            |
+| Koinx             | Y       |            |         |         | Y           | Y        | koinx             |
 | Korbit            | Y       |            |         |         | User-Defined| Y        | korbit            |
 | Kraken            | Y       |            |         |         | Y           | Y        | kraken            |
 | Kryptono          | Y       | Y          | Y       |         | User-Defined| Y        | kryptono          |
