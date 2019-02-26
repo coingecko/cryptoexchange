@@ -208,6 +208,7 @@ Or install it yourself as:
 | FatBTC            | Y       | Y          | Y       |         | Y           |          | fatbtc            |
 | Fcoin             | Y       | Y          | Y       |         | Y           | Y        | fcoin             |
 | Fex               | Y       | N          | N       |         | Y           |          | fex               |
+| Financex          | Y       | N          | N       |         | Y           | Y        | financex           |
 | Fisco             | Y       | Y          | Y       |         | Y           | Y        | fisco             |
 | Forkdelta         | Y       | N          | N       |         | Y           | Y        | forkdelta         |
 | Freiexchange      | Y       | Y          |         |         | User-Defined| Y        | freiexchange      |
