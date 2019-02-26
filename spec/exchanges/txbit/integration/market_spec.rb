@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe 'Txbit integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'txbit' }
-  let(:btc_xlr_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'xlr', market: 'txbit') }
+  let(:btc_atl_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'atl', market: 'txbit') }
 
   it 'fetch pairs' do
     pairs = client.pairs('txbit')
@@ -16,8 +16,8 @@ RSpec.describe 'Txbit integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url market, target: btc_xlr_pair.target, base: btc_xlr_pair.base
-    expect(trade_page_url).to eq "https://txbit.io/Trade/XLR/BTC"
+    trade_page_url = client.trade_page_url market, target: btc_atl_pair.target, base: btc_atl_pair.base
+    expect(trade_page_url).to eq "https://txbit.io/Trade/ATL/BTC"
   end
 
   it 'fetch pairs and assign the correct base/target' do
@@ -26,15 +26,15 @@ RSpec.describe 'Txbit integration specs' do
 
     pair = pairs.first
     expect(pair.base).to eq 'BTC'
-    expect(pair.target).to eq 'XLR'
+    expect(pair.target).to eq 'ATL'
     expect(pair.market).to eq 'txbit'
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_xlr_pair)
+    ticker = client.ticker(btc_atl_pair)
 
     expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'XLR'
+    expect(ticker.target).to eq 'ATL'
     expect(ticker.market).to eq 'txbit'
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
