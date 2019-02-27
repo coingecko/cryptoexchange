@@ -345,6 +345,7 @@ Or install it yourself as:
 | TrustDex **       | Y       |            |         |         | Y           |          | trust_dex         |
 | TuxExchange       | Y       |            |         |         | Y           |          | tux_exchange      |
 | TRXMarket         | Y       |            |         |         | Y           |          | trx_market        |
+| Txbit             | Y       |            |         |         | Y           | Y        | txbit             |
 | UEX               | Y       |            |         |         | Y           |          | uex               |
 | Uniswap           | Y       | N          | N       |         | Y           | N        | uniswap           |
 | Unocoin           |         |            |         |         |             |          | unocoin           |
