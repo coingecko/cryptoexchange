@@ -16,14 +16,13 @@ module Cryptoexchange::Exchanges
         def ticker_url(market_pair)
           base = market_pair.base
           target = market_pair.target
-          # Txbit pair has BTC comes first, when BTC is typically a Target not a Base
           "#{Cryptoexchange::Exchanges::Txbit::Market::API_URL}/public/getmarketsummary?market=#{target}/#{base}"
         end
 
         def adapt(output, market_pair)
           handle_invalid(output)
           ticker = Cryptoexchange::Models::Ticker.new
-          market = output['result'][0]
+          market = output['result']
 
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
@@ -33,7 +32,7 @@ module Cryptoexchange::Exchanges
           ticker.low       = NumericHelper.to_d(market['Low'])
           ticker.ask       = NumericHelper.to_d(market['Ask'])
           ticker.bid       = NumericHelper.to_d(market['Bid'])
-          ticker.volume    = NumericHelper.to_d(market['Volume'])
+          ticker.volume    = NumericHelper.to_d(market['BaseVolume'])
           ticker.timestamp = NumericHelper.to_d(DateTime.parse(market['TimeStamp']).to_time.to_i)
           ticker.payload   = market
           ticker
