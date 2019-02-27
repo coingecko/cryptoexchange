@@ -200,6 +200,7 @@ Or install it yourself as:
 | Ethex             | Y       | N          | N       |         | Y           | N        | ethex             |
 | Ethfinex          | Y       | Y          | Y       |         | Y           | Y        | ethfinex          |
 | Everbloom         | Y       |            |         |         | Y           |          | everbloom         |
+| ExMarkets         | Y       | Y          | Y       |         | Y           | Y        | exmarkets         |
 | Exmo              | Y       | Y          | Y       |         | Y           | Y        | exmo              |
 | Exrates           | Y       | N          | N       |         | Y           | Y        | exrates           |
 | Extstock          | Y       | Y          | Y       |         | Y           | Y        | extstock          |
