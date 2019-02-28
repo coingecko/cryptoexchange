@@ -200,6 +200,7 @@ Or install it yourself as:
 | Ethex             | Y       | N          | N       |         | Y           | N        | ethex             |
 | Ethfinex          | Y       | Y          | Y       |         | Y           | Y        | ethfinex          |
 | Everbloom         | Y       |            |         |         | Y           |          | everbloom         |
+| ExMarkets         | Y       | Y          | Y       |         | Y           | Y        | exmarkets         |
 | Exmo              | Y       | Y          | Y       |         | Y           | Y        | exmo              |
 | Exrates           | Y       | N          | N       |         | Y           | Y        | exrates           |
 | Extstock          | Y       | Y          | Y       |         | Y           | Y        | extstock          |
@@ -208,6 +209,7 @@ Or install it yourself as:
 | FatBTC            | Y       | Y          | Y       |         | Y           |          | fatbtc            |
 | Fcoin             | Y       | Y          | Y       |         | Y           | Y        | fcoin             |
 | Fex               | Y       | N          | N       |         | Y           |          | fex               |
+| Financex          | Y       | N          | N       |         | Y           | Y        | financex           |
 | Fisco             | Y       | Y          | Y       |         | Y           | Y        | fisco             |
 | Forkdelta         | Y       | N          | N       |         | Y           | Y        | forkdelta         |
 | Freiexchange      | Y       | Y          |         |         | User-Defined| Y        | freiexchange      |
@@ -250,6 +252,7 @@ Or install it yourself as:
 | Kkcoin            | Y       | Y          | Y       |         | Y           | Y        | kkcoin            |
 | Koinex            | Y       |            |         |         | Y           |          | koinex            |
 | Koinok            | Y       |            |         |         | Y           | Y        | koinok            |
+| Koinx             | Y       |            |         |         | Y           | Y        | koinx             |
 | Korbit            | Y       |            |         |         | User-Defined| Y        | korbit            |
 | Kraken            | Y       |            |         |         | Y           | Y        | kraken            |
 | Kryptono          | Y       | Y          | Y       |         | User-Defined| Y        | kryptono          |
