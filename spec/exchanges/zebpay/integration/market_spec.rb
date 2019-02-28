@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Zebpay integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'INR', market: 'zebpay') }
+  let(:btc_eur_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'EUR', market: 'zebpay') }
 
   it 'fetch pairs' do
     pairs = client.pairs('zebpay')
@@ -15,10 +15,10 @@ RSpec.describe 'Zebpay integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_usdt_pair)
+    ticker = client.ticker(btc_eur_pair)
 
     expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'INR'
+    expect(ticker.target).to eq 'EUR'
     expect(ticker.market).to eq 'zebpay'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
