@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mxc.com/open/api/v1/data/ticker?market=BTC_USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.mxc.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Nov 2018 07:55:05 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Cdn-Edge:
+      - cb634c7,-
+      Set-Cookie:
+      - __cdnuid=79c03dc5f677581c254d4fd232ed2b77; max-age=31536000; path=/; HttpOnly
+      X-Cache:
+      - bypass
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"data":{"volume":"14803.847028","high":"4144.34","low":"3687.87","buy":"4091.83","sell":"4098.87","open":"3839.01","last":"4098"},"msg":"OK"}'
+    http_version: 
+  recorded_at: Wed, 28 Nov 2018 07:55:05 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mxc.com/open/api/v1/data/depth?depth=20&market=BTC_USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.mxc.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Nov 2018 07:55:06 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Cdn-Edge:
+      - cb634c7,-
+      Set-Cookie:
+      - __cdnuid=f4c8ef5f8491a399c2c8159475276777; max-age=31536000; path=/; HttpOnly
+      X-Cache:
+      - bypass
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"data":{"asks":[{"price":"4098.87","quantity":"0.09"},{"price":"4099.07","quantity":"0.06"},{"price":"4099.1","quantity":"0.18"},{"price":"4101.33","quantity":"0.45"},{"price":"4101.34","quantity":"0.03375"},{"price":"4101.35","quantity":"0.245486"},{"price":"4101.38","quantity":"0.03"},{"price":"4101.45","quantity":"0.06"},{"price":"4102.05","quantity":"1.38066"},{"price":"4102.22","quantity":"0.04368"},{"price":"4102.5","quantity":"0.08028"},{"price":"4102.56","quantity":"0.6"},{"price":"4102.63","quantity":"0.02541"},{"price":"4102.77","quantity":"0.05268"},{"price":"4102.96","quantity":"0.10497"},{"price":"4103.18","quantity":"0.10992"},{"price":"4103.32","quantity":"0.08991"},{"price":"4103.77","quantity":"0.1506"},{"price":"4105.27","quantity":"0.11718"},{"price":"4105.28","quantity":"1.53867"}],"bids":[{"price":"4091.83","quantity":"0.01584"},{"price":"4091.71","quantity":"0.0003"},{"price":"4090.96","quantity":"0.29202"},{"price":"4090.95","quantity":"0.40629"},{"price":"4090.69","quantity":"0.18"},{"price":"4090.26","quantity":"0.03"},{"price":"4090.17","quantity":"0.12663"},{"price":"4090.03","quantity":"0.015"},{"price":"4089.82","quantity":"0.02634"},{"price":"4089.61","quantity":"0.18"},{"price":"4089.02","quantity":"0.03"},{"price":"4088.78","quantity":"0.06"},{"price":"4088.45","quantity":"0.00816"},{"price":"4088.3","quantity":"0.18"},{"price":"4088.29","quantity":"0.02541"},{"price":"4088.23","quantity":"0.18"},{"price":"4088.16","quantity":"0.87915"},{"price":"4088.1","quantity":"0.77631"},{"price":"4088.06","quantity":"0.05268"},{"price":"4088.05","quantity":"0.1506"}]},"msg":"OK"}'
+    http_version: 
+  recorded_at: Wed, 28 Nov 2018 07:55:06 GMT
+recorded_with: VCR 4.0.0

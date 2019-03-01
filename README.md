@@ -273,6 +273,7 @@ Or install it yourself as:
 | MaxMaicoin        | Y       | Y          | Y       |         | Y           | Y        | max_maicoin       |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|          | mercado_bitcoin   |
 | Mercatox          | Y       | N          | N       | N       | Y           |          | mercatox          |
+| Mxc               | Y       | Y          | N       |         | Y           | Y        | mxc               |
 | Myspeedtrade      | Y       | Y          |         |         | Y           |          | myspeedtrade      |
 | Nanex             | Y       | N          | N       | N       | Y           |          | nanex             |
 | Nanu.Exchange     | Y       | Y          | Y       |         | Y           |          | nanu_exchange     |
