@@ -343,6 +343,7 @@ Or install it yourself as:
 | Trade Satoshi     | Y       |            |         |         | Y           | Y        | trade_satoshi     |
 | Trade.io          | Y       |            |         |         | Y           |          | tradeio           |
 | Trade.mn          | Y       | Y          | Y       |         | Y           |          | trademn           |
+| Tradesprite       | Y       | N          | N       |         | Y           | N        | tradesprite       |
 | TrocaNinja        | Y       | N          | N       |         | Y           |          | troca_ninja       |
 | TrustDex **       | Y       |            |         |         | Y           |          | trust_dex         |
 | TuxExchange       | Y       |            |         |         | Y           |          | tux_exchange      |

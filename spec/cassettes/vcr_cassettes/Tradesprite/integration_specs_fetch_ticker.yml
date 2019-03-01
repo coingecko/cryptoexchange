@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://alpha.tradesprite.com/hydrasocket/v2/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - alpha.tradesprite.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 Dec 2018 06:15:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3689'
+      Connection:
+      - close
+      Server:
+      - Cowboy
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - k8g7jmc9dpqm15ucquengtbgr2idatmj
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","error":"","data":{"BTC":{"stats":{"XRP-CGC":{"volume":1686875600000,"open_price":924300000,"moving_stats_minutes":1440,"low_price":877120000,"instrument_code":1312,"high_price":1069050000,"exchange":11,"close_price":1059260000},"XRP-BTC":{"volume":2085900000000,"open_price":9214,"moving_stats_minutes":1440,"low_price":9209,"instrument_code":3312,"high_price":9247,"exchange":11,"close_price":9247},"XLM-CGC":{"volume":22198200000,"open_price":300320000,"moving_stats_minutes":1440,"low_price":297030000,"instrument_code":1310,"high_price":326570000,"exchange":11,"close_price":326570000},"NEO-CGC":{"volume":0,"open_price":20000000000,"moving_stats_minutes":1440,"low_price":20000000000,"instrument_code":1309,"high_price":20000000000,"exchange":11,"close_price":20000000000},"IMVR-CGC":{"volume":0,"open_price":0,"moving_stats_minutes":0,"low_price":0,"instrument_code":1314,"high_price":0,"exchange":11,"close_price":0},"ETH-CGC":{"volume":5376757300,"open_price":321300000000,"moving_stats_minutes":1440,"low_price":309400000000,"instrument_code":1304,"high_price":369000000000,"exchange":11,"close_price":363800000000},"ETH-BTC":{"volume":2208800000,"open_price":2866200,"moving_stats_minutes":1440,"low_price":2856700,"instrument_code":3304,"high_price":2876200,"exchange":11,"close_price":2856700},"EOS-CGC":{"volume":160000,"open_price":6600000000,"moving_stats_minutes":1440,"low_price":6600000000,"instrument_code":1308,"high_price":6600000000,"exchange":11,"close_price":6600000000},"DASH-CGC":{"volume":12871000,"open_price":218500000000,"moving_stats_minutes":1440,"low_price":210900000000,"instrument_code":1313,"high_price":218500000000,"exchange":11,"close_price":210900000000},"CGC-USDT":{"volume":28059900000000,"open_price":3950000,"moving_stats_minutes":1440,"low_price":3900000,"instrument_code":2301,"high_price":4020000,"exchange":11,"close_price":3990000},"BTC-USDT":{"volume":139955198,"open_price":403331000000,"moving_stats_minutes":1440,"low_price":402054000000,"instrument_code":2303,"high_price":403336000000,"exchange":11,"close_price":403336000000},"BTC-CGC":{"volume":74657605,"open_price":9714000000000,"moving_stats_minutes":1440,"low_price":9537200000000,"instrument_code":1303,"high_price":12900000000000,"exchange":11,"close_price":12900000000000},"BCH-CGC":{"volume":0,"open_price":0,"moving_stats_minutes":0,"low_price":0,"instrument_code":1307,"high_price":0,"exchange":11,"close_price":0},"ADA-CGC":{"volume":47157200000,"open_price":103620000,"moving_stats_minutes":1440,"low_price":96750000,"instrument_code":1311,"high_price":103620000,"exchange":11,"close_price":101990000}},"prices":{"XRP-CGC":{"ltp":1059260000,"bid_price":1059260000,"ask_price":1062420000},"XRP-BTC":{"ltp":9247,"bid_price":9214,"ask_price":9247},"XLM-CGC":{"ltp":326570000,"bid_price":340190000,"ask_price":342450000},"NEO-CGC":{"ltp":20000000000,"bid_price":21000000000,"ask_price":21200000000},"IMVR-CGC":{"ltp":310000,"bid_price":313000,"ask_price":1400000},"ETH-CGC":{"ltp":363800000000,"bid_price":360300000000,"ask_price":361300000000},"ETH-BTC":{"ltp":2856700,"bid_price":2856700,"ask_price":6000000},"EOS-CGC":{"ltp":6600000000,"bid_price":7400000000,"ask_price":7500000000},"DASH-CGC":{"ltp":210900000000,"bid_price":235200000000,"ask_price":236200000000},"CGC-USDT":{"ltp":3990000,"bid_price":3990000,"ask_price":4010000},"BTC-USDT":{"ltp":403336000000,"bid_price":402054000000,"ask_price":0},"BTC-CGC":{"ltp":12900000000000,"bid_price":10446900000000,"ask_price":19537200000000},"BCH-CGC":{"ltp":5010200000000,"bid_price":5010200000000,"ask_price":50550000000000},"ADA-CGC":{"ltp":101990000,"bid_price":118710000,"ask_price":119170000}}}}}'
+    http_version: 
+  recorded_at: Mon, 24 Dec 2018 06:15:42 GMT
+recorded_with: VCR 4.0.0
