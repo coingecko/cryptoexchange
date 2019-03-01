@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitturk.com/v1/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitturk.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Nov 2018 13:00:15 GMT
+      Content-Type:
+      - text/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - ARRAffinity=68a8348961bef8789812a08a500c13286e4f282d8fa0b5c1596557d53e419726;Path=/;HttpOnly;Domain=api.bitturk.com
+      - __cfduid=d34d07402c5384fdafcbca00553f8353c1542718814; expires=Wed, 20-Nov-19
+        13:00:14 GMT; path=/; domain=.bitturk.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Request-Context:
+      - appId=cid-v1:1ba624f9-2c48-45b3-9105-bbe4013f2cc7
+      X-Powered-By:
+      - ASP.NET
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 47cb192ce94ba984-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"pair":"GASTRY","high":0.402378680000,"last":0.183051400000,"timestamp":1540410059,"bid":2353.320000000000,"volume":14616.089922650000,"low":0.011856790000,"ask":0.183051400000,"average":0.207117735000},{"pair":"BTCTRY","high":28725.000000000000,"last":24785.000000000000,"timestamp":1542729483,"bid":24290.000000000000,"volume":0.155038110000,"low":24185.000000000000,"ask":24785.000000000000,"average":26455.000000000000},{"pair":"ETHTRY","high":950.000000000000,"last":620.000000000000,"timestamp":1542717281,"bid":630.000000000000,"volume":1.972783660000,"low":620.000000000000,"ask":800.000000000000,"average":785.000000000000},{"pair":"DASHTRY","high":1034.720000000000,"last":770.000000000000,"timestamp":1542293991,"bid":450.000000000000,"volume":0.883800000000,"low":770.000000000000,"ask":670.000000000000,"average":902.360000000000},{"pair":"LTCTRY","high":269.000000000000,"last":190.000000000000,"timestamp":1542714396,"bid":190.000000000000,"volume":0.314918130000,"low":190.000000000000,"ask":270.000000000000,"average":229.500000000000},{"pair":"NEOTRY","high":65.710000000000,"last":50.750000000000,"timestamp":1542711174,"bid":49.840000000000,"volume":7.000000000000,"low":50.750000000000,"ask":59.010000000000,"average":58.230000000000},{"pair":"XMRTRY","high":598.000000000000,"last":598.000000000000,"timestamp":1542622914,"bid":290.010000000000,"volume":0.185000000000,"low":598.000000000000,"ask":485.000000000000,"average":598.000000000000},{"pair":"XRPTRY","high":2.680000000000,"last":2.490000000000,"timestamp":1542728924,"bid":2.410000000000,"volume":38907.802973320000,"low":2.360000000000,"ask":2.490000000000,"average":2.520000000000}]'
+    http_version: 
+  recorded_at: Tue, 20 Nov 2018 13:00:15 GMT
+recorded_with: VCR 4.0.0

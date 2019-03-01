@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitturk.com/v1/exchangeinfo
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitturk.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 20 Nov 2018 13:00:14 GMT
+      Content-Type:
+      - text/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - ARRAffinity=68a8348961bef8789812a08a500c13286e4f282d8fa0b5c1596557d53e419726;Path=/;HttpOnly;Domain=api.bitturk.com
+      - __cfduid=d168fe1d53947a98da3e1fb438439544b1542718813; expires=Wed, 20-Nov-19
+        13:00:13 GMT; path=/; domain=.bitturk.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Request-Context:
+      - appId=cid-v1:1ba624f9-2c48-45b3-9105-bbe4013f2cc7
+      X-Powered-By:
+      - ASP.NET
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 47cb19259ba3c392-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"Pair":"GASTRY","MinimumLot":0.2,"MaximumLot":3000.0},{"Pair":"BTCTRY","MinimumLot":0.0005,"MaximumLot":7.0},{"Pair":"ETHTRY","MinimumLot":0.009,"MaximumLot":120.0},{"Pair":"DASHTRY","MinimumLot":0.004,"MaximumLot":200.0},{"Pair":"LTCTRY","MinimumLot":0.06,"MaximumLot":770.0},{"Pair":"NEOTRY","MinimumLot":0.06,"MaximumLot":770.0},{"Pair":"XMRTRY","MinimumLot":0.008,"MaximumLot":200.0},{"Pair":"XRPTRY","MinimumLot":5.0,"MaximumLot":202632.0}]'
+    http_version: 
+  recorded_at: Tue, 20 Nov 2018 13:00:14 GMT
+recorded_with: VCR 4.0.0
