@@ -14,8 +14,8 @@ module Cryptoexchange::Exchanges
           market_pairs = []
           pairs.each do |pair|
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair['BaseCurrency'],
-                              target: pair['MarketCurrency'],
+                              base: pair['MarketCurrency'],
+                              target: pair['BaseCurrency'],
                               market: Txbit::Market::NAME
                             )
           end

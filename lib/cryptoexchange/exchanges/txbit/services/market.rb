@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
         def ticker_url(market_pair)
           base = market_pair.base
           target = market_pair.target
-          "#{Cryptoexchange::Exchanges::Txbit::Market::API_URL}/public/getmarketsummary?market=#{target}/#{base}"
+          "#{Cryptoexchange::Exchanges::Txbit::Market::API_URL}/public/getmarketsummary?market=#{base}/#{target}"
         end
 
         def adapt(output, market_pair)

@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe 'Txbit integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'txbit' }
-  let(:btc_atl_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'atl', market: 'txbit') }
+  let(:btc_atl_pair) { Cryptoexchange::Models::MarketPair.new(base: 'atl', target: 'btc', market: 'txbit') }
 
   it 'fetch pairs' do
     pairs = client.pairs('txbit')
@@ -25,16 +25,16 @@ RSpec.describe 'Txbit integration specs' do
     expect(pairs).not_to be_empty
 
     pair = pairs.first
-    expect(pair.base).to eq 'BTC'
-    expect(pair.target).to eq 'ATL'
+    expect(pair.base).to eq 'ATL'
+    expect(pair.target).to eq 'BTC'
     expect(pair.market).to eq 'txbit'
   end
 
   it 'fetch ticker' do
     ticker = client.ticker(btc_atl_pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'ATL'
+    expect(ticker.base).to eq 'ATL'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'txbit'
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric

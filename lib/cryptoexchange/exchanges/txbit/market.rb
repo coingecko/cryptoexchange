@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://api.txbit.io/api'
 
       def self.trade_page_url(args={})
-        "https://txbit.io/Trade/#{args[:target].upcase}/#{args[:base].upcase}"
+        "https://txbit.io/Trade/#{args[:base].upcase}/#{args[:target].upcase}"
       end
     end
   end
