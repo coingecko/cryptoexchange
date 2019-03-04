@@ -12,11 +12,13 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           market_pairs = []
           output.each do |pair|
-            market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair['base_currency'],
-                              target: pair['quote_currency'],
-                              market: Fcoin::Market::NAME
-                            )
+            if pair['tradable'] == true
+              market_pairs << Cryptoexchange::Models::MarketPair.new(
+                                base: pair['base_currency'],
+                                target: pair['quote_currency'],
+                                market: Fcoin::Market::NAME
+                              )
+            end
           end
 
           market_pairs
