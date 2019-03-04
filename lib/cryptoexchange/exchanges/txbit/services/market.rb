@@ -33,7 +33,7 @@ module Cryptoexchange::Exchanges
           ticker.ask       = NumericHelper.to_d(market['Ask'])
           ticker.bid       = NumericHelper.to_d(market['Bid'])
           ticker.volume    = NumericHelper.to_d(market['BaseVolume'])
-          ticker.timestamp = NumericHelper.to_d(DateTime.parse(market['TimeStamp']).to_time.to_i)
+          ticker.timestamp = market['TimeStamp'] ? NumericHelper.to_d(DateTime.parse(market['TimeStamp']).to_time.to_i) : nil
           ticker.payload   = market
           ticker
         end
