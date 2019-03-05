@@ -294,6 +294,7 @@ Or install it yourself as:
 | OKEx              | Y       | Y          | Y       |         | Y           | Y        | okex              |
 | OmniTrade         | Y       | Y          | Y       | Y       | Y           |          | omnitrade         |
 | Ooobtc            | Y       | Y          | Y       |         | Y           | Y        | ooobtc            |
+| Openbit           | Y       |            |         |         | Y           | Y        | openbit           |
 | Openledger        | Y       | Y          | Y       |         | Y           | Y        | openledger        |
 | OrderBook         | Y       | Y          | Y       |         | Y           | Y        | orderbook         |
 | Ore Bz            | Y       | Y          | Y       |         | Y           | Y        | ore_bz            |
