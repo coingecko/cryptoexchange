@@ -6,7 +6,7 @@ RSpec.describe 'Swiftex integration specs' do
 
   it 'has trade_page_url' do
     trade_page_url = client.trade_page_url mynt_btc_pair.market, base: mynt_btc_pair.base, target: mynt_btc_pair.target
-    expect(trade_page_url).to eq "https://swiftex.co/markets/mynt-btc"
+    expect(trade_page_url).to eq "https://swiftex.co/trading/mynt-btc"
   end
 
   it 'fetch pairs' do
