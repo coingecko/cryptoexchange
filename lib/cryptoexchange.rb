@@ -24,3 +24,6 @@ end
 require "http"
 require "lru_redux"
 require "websocket-eventmachine-client"
+require "config"
+
+Cryptoexchange.reset_config

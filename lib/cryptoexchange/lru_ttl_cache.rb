@@ -1,7 +1,11 @@
 class LruTtlCache
   class << self
-    def ticker_cache(ticker_ttl = 5, cache_size = 200)
-      @@ticker_cache ||= LruRedux::TTL::Cache.new(cache_size, ticker_ttl)
+    def ticker_cache
+      Cryptoexchange.configuration.cache_size
+      @@ticker_cache ||= LruRedux::TTL::Cache.new(
+        Cryptoexchange.configuration.cache_size,
+        Cryptoexchange.configuration.ticker_ttl
+      )
     end
   end
 end
