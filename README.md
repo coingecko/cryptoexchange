@@ -519,7 +519,8 @@ Name the file <exchange_name>.yml and place it under the config/cryptoexchange d
 
 This gem uses https://github.com/SamSaffron/lru_redux cache by default so it doesn't hit exchanges with endpoint that returns multiple tickers for each ticker you are querying.
 
-Alternatively, if you are using rails you can use rails cache (ActiveSupport::Cache::Store) by changing the config
+Alternatively, if you are using rails you can use rails cache (ActiveSupport::Cache::Store) by changing the config:
+create the following file `/config/initializers/cryptoexchange.rb` and have the config inside.
 
 ```
 Cryptoexchange.configure do |config|
