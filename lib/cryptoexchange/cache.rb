@@ -1,5 +1,3 @@
-require "pry"
-
 module Cryptoexchange
   class Cache
     attr_accessor :cache_instance
