@@ -524,7 +524,7 @@ Alternatively, if you are using rails you can use rails cache (ActiveSupport::Ca
 create the following file `/config/initializers/cryptoexchange.rb` and have the config inside.
 
 ```
-Cryptoexchange.configuration do |config|
+Cryptoexchange.configure do |config|
   config.ticker_ttl = 10
   # ticker cache duration in seconds
   # default value = 10
