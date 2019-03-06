@@ -10,8 +10,9 @@ module Cryptoexchange::Exchanges
 
         def fetch
           output = super(ticker_url)
-          pairs_output = HTTP.get(dictionary_url)
-          pairs_dictionary = JSON.parse(pairs_output.to_s)
+          pairs_dictionary = Cryptoexchange::Cache.ticker_cache.fetch(dictionary_url) do
+            HTTP.get(dictionary_url).parse(:json)
+          end
           adapt_all(output, pairs_dictionary)
         end
 
