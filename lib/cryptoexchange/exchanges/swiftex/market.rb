@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://swiftex.co/api/v2'
 
       def self.trade_page_url(args={})
-        "https://swiftex.co/markets/#{args[:base].downcase}-#{args[:target].downcase}"
+        "https://swiftex.co/trading/#{args[:base].downcase}-#{args[:target].downcase}"
       end
     end
   end
