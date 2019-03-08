@@ -1,6 +1,7 @@
 module Cryptoexchange
   module Services
     class Market
+      AUTO_INFLATE = false
       class << self
         def supports_individual_ticker_query?
           fail "Must define supports_individual_ticker_query? as true or false"
@@ -10,7 +11,7 @@ module Cryptoexchange
       def fetch(endpoint)
         Cryptoexchange::Cache.ticker_cache.fetch(endpoint) do
           begin
-            response = http_get(endpoint)
+            response = self.class::AUTO_INFLATE ? http_get_gzip_response(endpoint) : http_get(endpoint)
             if response.code == 200
               response.parse :json
             elsif response.code == 400
@@ -46,6 +47,13 @@ module Cryptoexchange
 
       def http_get(endpoint)
         HTTP.timeout(:write => 2, :connect => 10, :read => 12).follow.get(endpoint)
+      end
+
+      def http_get_gzip_response(endpoint)
+        HTTP
+          .timeout(:write => 2, :connect => 15, :read => 18)
+          .use(:auto_inflate)
+          .headers('Accept-Encoding' => 'gzip').get(endpoint)
       end
 
       def http_post(endpoint, params)

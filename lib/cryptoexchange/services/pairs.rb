@@ -3,10 +3,11 @@ require 'yaml'
 module Cryptoexchange
   module Services
     class Pairs
-      PAIRS_URL   = nil
-      HTTP_METHOD = 'GET'
-      POST_PARAMS = nil
-      MARKET      = nil
+      PAIRS_URL    = nil
+      AUTO_INFLATE = false
+      HTTP_METHOD  = 'GET'
+      POST_PARAMS  = nil
+      MARKET       = nil
 
       def fetch
         # If PAIRS_URL provided, use that to fetch market pairs
@@ -21,7 +22,7 @@ module Cryptoexchange
 
       def fetch_via_api(endpoint = self.class::PAIRS_URL, params = self.class::POST_PARAMS)
         begin
-          fetch_response = self.class::HTTP_METHOD == 'POST' ? http_post(endpoint, params) : http_get(endpoint)
+          fetch_response = api_response(endpoint, params)
           if fetch_response.code == 200
             fetch_response.parse :json
           elsif fetch_response.code == 400
@@ -74,12 +75,29 @@ module Cryptoexchange
         Object.const_get "Cryptoexchange::Exchanges::#{exchange_name}::Market"
       end
 
+      def api_response(endpoint, params)
+        if self.class::HTTP_METHOD == 'POST'
+          http_post(endpoint, params)
+        elsif self.class::AUTO_INFLATE
+          http_get_gzip_response(endpoint)
+        else
+          http_get(endpoint)
+        end
+      end
+
       def http_get(endpoint)
         HTTP.timeout(:write => 2, :connect => 15, :read => 18).follow.get(endpoint)
       end
 
       def http_post(endpoint, params)
         HTTP.timeout(:write => 2, :connect => 5, :read => 8).post(endpoint, json: params)
+      end
+
+      def http_get_gzip_response(endpoint)
+        HTTP
+          .timeout(:write => 2, :connect => 15, :read => 18)
+          .use(:auto_inflate)
+          .headers('Accept-Encoding' => 'gzip').get(endpoint)
       end
     end
   end
