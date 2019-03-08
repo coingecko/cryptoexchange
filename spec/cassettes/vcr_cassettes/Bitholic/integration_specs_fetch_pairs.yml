@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitholic.com/public/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitholic.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Mar 2019 06:45:34 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dfd37bad840abcda78526fb39103117f61552027534; expires=Sat, 07-Mar-20
+        06:45:34 GMT; path=/; domain=.bitholic.com; HttpOnly; Secure
+      - bitholic=90luk5jo6gf7156s0k1t713vms; expires=Fri, 08-Mar-2019 07:05:34 GMT;
+        Max-Age=1200; path=/; domain=api.bitholic.com
+      Expires:
+      - '0'
+      Last-Modified:
+      - Fri, 08 Mar 2019 06:45:34 GMT
+      Cache-Control:
+      - pre-check=0, post-check=0, max-age=0
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - http://api.bitholic.com
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Content-Type, Accept, Origin, Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, PATCH, OPTIONS
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1;mode=block
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4b42d8dcb977c10b-KUL
+    body:
+      encoding: UTF-8
+      string: '{"market":{"QTUM_BTC":{"last":"1878.67537","ask":"1878.67537","bid":"1878.67537","percentChange":"-0.34","volume24h":"4.7285"},"QTUM_BCH":{"last":"62.18064","ask":"62.18064","bid":"62.18064","percentChange":"-2.52","volume24h":"41.6204"},"QTUM_LTC":{"last":"27.31785","ask":"27.31785","bid":"27.31785","percentChange":"+0.85","volume24h":"324.3151"},"QTUM_ETH":{"last":"65.72017","ask":"65.72017","bid":"65.72017","percentChange":"-1.76","volume24h":"135.4964"},"QTUM_ETC":{"last":"2.09010","ask":"2.09010","bid":"2.09010","percentChange":"-0.64","volume24h":"3171.8837"},"QTUM_MED":{"last":"0.00091","ask":"0.00091","bid":"0.00091","percentChange":"-7.14","volume24h":"305188.3961"},"BTC_BCH":{"last":"0.03306997","ask":"0.03306997","bid":"0.03306997","percentChange":"-2.91","volume24h":"49.1706"},"BTC_BSV":{"last":"0.01739715","ask":"0.01739715","bid":"0.01739715","percentChange":"+1.70","volume24h":"19356.2443"},"BTC_LTC":{"last":"0.01458894","ask":"0.01458894","bid":"0.01458894","percentChange":"-0.87","volume24h":"205.1333"},"BTC_ETH":{"last":"0.03512195","ask":"0.03512195","bid":"0.03512195","percentChange":"-1.06","volume24h":"12500.6651"},"BTC_ETC":{"last":"0.00111811","ask":"0.00111811","bid":"0.00111811","percentChange":"0.00","volume24h":"265739.8629"},"BTC_BZNT":{"last":"0.00000739","ask":"0.00000739","bid":"0.00000739","percentChange":"+0.27","volume24h":"959749.9156"},"BTC_MEDX":{"last":"0.00000075","ask":"0.00000075","bid":"0.00000075","percentChange":"-2.59","volume24h":"284755.4349"},"BTC_TUSD":{"last":"0.00025773","ask":"0.00025773","bid":"0.00025773","percentChange":"-0.51","volume24h":"7619.7526"},"BTC_WAX":{"last":"0.00001192","ask":"0.00001192","bid":"0.00001192","percentChange":"+8.46","volume24h":"28904.6341"}}}'
+    http_version: 
+  recorded_at: Fri, 08 Mar 2019 06:45:34 GMT
+recorded_with: VCR 4.0.0
