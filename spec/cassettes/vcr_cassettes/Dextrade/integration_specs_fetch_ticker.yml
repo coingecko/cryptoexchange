@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dex-trade.com/v1/coingecko/pubticker2/BTCUSD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dex-trade.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 11 Mar 2019 10:10:19 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=77kd0uat6qhtgl8m8g3aum7uk0; path=/; HttpOnly
+      - __cfduid=d6d1600e0731ce2276e98815af6b6aad21552299019; expires=Tue, 10-Mar-20
+        10:10:19 GMT; path=/; domain=.dex-trade.com; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4b5cbce5e9f36343-FRA
+    body:
+      encoding: UTF-8
+      string: '{"last_price":3969.5,"low":3972.4,"high":4000,"volume":61.32766545,"timestamp":1552299019.236667}'
+    http_version: 
+  recorded_at: Mon, 11 Mar 2019 10:10:24 GMT
+recorded_with: VCR 4.0.0
