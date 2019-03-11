@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dex-trade.com/v1/coingecko/symbols2
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dex-trade.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 11 Mar 2019 09:49:20 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=m3lvrn42v4ti58mdg69tflj8pk; path=/; HttpOnly
+      - __cfduid=db3a55059d9f331414a5e73dba1c792361552297760; expires=Tue, 10-Mar-20
+        09:49:20 GMT; path=/; domain=.dex-trade.com; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4b5c9e2a7a8a6343-FRA
+    body:
+      encoding: UTF-8
+      string: '[{"base":"BTC","quote":"USD"},{"base":"ETH","quote":"USD"},{"base":"ETH","quote":"BTC"},{"base":"ZEC","quote":"USD"},{"base":"ZEC","quote":"BTC"},{"base":"DASH","quote":"USD"},{"base":"DASH","quote":"BTC"},{"base":"XRP","quote":"USD"},{"base":"XRP","quote":"BTC"},{"base":"LTC","quote":"USD"},{"base":"GPS","quote":"BTC"},{"base":"LTC","quote":"BTC"},{"base":"EDR","quote":"USD"},{"base":"EDR","quote":"BTC"},{"base":"MNC","quote":"USD"},{"base":"MNC","quote":"BTC"},{"base":"AISI","quote":"USD"},{"base":"AISI","quote":"BTC"},{"base":"AISI","quote":"ETH"},{"base":"MNC","quote":"ETH"},{"base":"TKO","quote":"USD"},{"base":"TKO","quote":"BTC"},{"base":"TKO","quote":"ETH"},{"base":"TTTV","quote":"USD"},{"base":"TTTV","quote":"BTC"},{"base":"TTTV","quote":"ETH"},{"base":"AAAG","quote":"USD"},{"base":"AAAG","quote":"BTC"},{"base":"AAAG","quote":"ETH"}]'
+    http_version: 
+  recorded_at: Mon, 11 Mar 2019 09:49:26 GMT
+recorded_with: VCR 4.0.0
