@@ -23,4 +23,4 @@ end
 
 require "http"
 require "lru_redux"
-require "websocket-eventmachine-client"
+# require "websocket-eventmachine-client"
