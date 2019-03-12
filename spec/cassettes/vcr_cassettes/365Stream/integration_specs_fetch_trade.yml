@@ -1,0 +1,98 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.365.stream/api/trade/?pairing=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.365.stream
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Sun, 20 Jan 2019 16:21:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '5548'
+      Connection:
+      - close
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"15ac-uZE4DbVRKbmSLyYKKFCuohklMUY"
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: '{"trades":[{"trade_id":170237,"rate":"12000.03000000","amount":"0.00350900","trade_date":"2019-01-19
+        11:14:49","order_id":241213,"trade_type":"sell","reference_id":241215,"seconds":104824},{"trade_id":170368,"rate":"12450.00000000","amount":"0.03140460","trade_date":"2019-01-19
+        12:41:14","order_id":238706,"trade_type":"buy","reference_id":241232,"seconds":99639},{"trade_id":170369,"rate":"12450.00000000","amount":"0.00000000","trade_date":"2019-01-19
+        12:41:41","order_id":238706,"trade_type":"buy","reference_id":241233,"seconds":99612},{"trade_id":170370,"rate":"12499.00000000","amount":"0.00030870","trade_date":"2019-01-19
+        12:41:41","order_id":234443,"trade_type":"buy","reference_id":241233,"seconds":99612},{"trade_id":170371,"rate":"12499.00000000","amount":"0.02730470","trade_date":"2019-01-19
+        12:41:41","order_id":238660,"trade_type":"buy","reference_id":241233,"seconds":99612},{"trade_id":171303,"rate":"12499.00000000","amount":"0.00053929","trade_date":"2019-01-19
+        10:52:37","order_id":238660,"trade_type":"buy","reference_id":241279,"seconds":62956},{"trade_id":171310,"rate":"12499.00000000","amount":"0.01601568","trade_date":"2019-01-19
+        10:56:23","order_id":238660,"trade_type":"buy","reference_id":241281,"seconds":62730},{"trade_id":171785,"rate":"12499.00000000","amount":"0.00018656","trade_date":"2019-01-20
+        04:05:43","order_id":238660,"trade_type":"buy","reference_id":241328,"seconds":44170},{"trade_id":172319,"rate":"12210.06000000","amount":"0.02125600","trade_date":"2019-01-20
+        09:31:34","order_id":241378,"trade_type":"sell","reference_id":241450,"seconds":24619},{"trade_id":172427,"rate":"12499.00000000","amount":"0.01034002","trade_date":"2019-01-20
+        10:36:52","order_id":238660,"trade_type":"buy","reference_id":241476,"seconds":20701}],"lowask":[{"order_id":238660,"rate":"12499.00000000","amount":"0.14361162","date_added":"2019-01-12
+        05:10:11","order_type":"sell","display_vol1":"1795.00168135 TUSD","display_vol2":"0.14361162
+        BTC"},{"order_id":214341,"rate":"12986.99000000","amount":"0.00069149","date_added":"2018-12-03
+        04:20:38","order_type":"sell","display_vol1":"8.98037372 TUSD","display_vol2":"0.00069149
+        BTC"},{"order_id":204014,"rate":"12996.98000000","amount":"0.00037447","date_added":"2018-11-26
+        12:31:29","order_type":"sell","display_vol1":"4.86697910 TUSD","display_vol2":"0.00037447
+        BTC"},{"order_id":215742,"rate":"13000.00000000","amount":"0.00338717","date_added":"2018-12-04
+        09:01:58","order_type":"sell","display_vol1":"44.03321000 TUSD","display_vol2":"0.00338717
+        BTC"},{"order_id":216660,"rate":"14999.99000000","amount":"0.00165826","date_added":"2018-12-05
+        12:15:32","order_type":"sell","display_vol1":"24.87388342 TUSD","display_vol2":"0.00165826
+        BTC"},{"order_id":209461,"rate":"15986.49000000","amount":"0.00254139","date_added":"2018-11-29
+        03:42:27","order_type":"sell","display_vol1":"40.62790582 TUSD","display_vol2":"0.00254139
+        BTC"},{"order_id":209450,"rate":"15986.49000000","amount":"0.00031994","date_added":"2018-11-29
+        03:34:20","order_type":"sell","display_vol1":"5.11471761 TUSD","display_vol2":"0.00031994
+        BTC"},{"order_id":216577,"rate":"15999.99000000","amount":"0.00136564","date_added":"2018-12-05
+        09:44:42","order_type":"sell","display_vol1":"21.85022634 TUSD","display_vol2":"0.00136564
+        BTC"},{"order_id":206350,"rate":"16000.00000000","amount":"0.00129649","date_added":"2018-11-27
+        04:22:21","order_type":"sell","display_vol1":"20.74384000 TUSD","display_vol2":"0.00129649
+        BTC"},{"order_id":194491,"rate":"16997.00000000","amount":"0.00002210","date_added":"2018-11-21
+        06:44:14","order_type":"sell","display_vol1":"0.37563370 TUSD","display_vol2":"0.00002210
+        BTC"}],"highbid":[{"order_id":241509,"rate":"12211.09000000","amount":"0.04518761","date_added":"2019-01-20
+        01:15:15","order_type":"buy","display_vol1":"551.78997259 TUSD","display_vol2":"0.04518761
+        BTC"},{"order_id":241503,"rate":"12211.05000000","amount":"0.03695914","date_added":"2019-01-20
+        12:53:24","order_type":"buy","display_vol1":"451.30990650 TUSD","display_vol2":"0.03695914
+        BTC"},{"order_id":241502,"rate":"12211.04000000","amount":"0.01231918","date_added":"2019-01-20
+        12:53:18","order_type":"buy","display_vol1":"150.42999975 TUSD","display_vol2":"0.01231918
+        BTC"},{"order_id":241501,"rate":"12211.03000000","amount":"0.02956753","date_added":"2019-01-20
+        12:52:59","order_type":"buy","display_vol1":"361.04999586 TUSD","display_vol2":"0.02956753
+        BTC"},{"order_id":240983,"rate":"11800.08000000","amount":"0.00015756","date_added":"2019-01-18
+        01:35:36","order_type":"buy","display_vol1":"1.85922060 TUSD","display_vol2":"0.00015756
+        BTC"},{"order_id":240957,"rate":"11800.08000000","amount":"0.01147300","date_added":"2019-01-18
+        11:34:28","order_type":"buy","display_vol1":"135.38231784 TUSD","display_vol2":"0.01147300
+        BTC"},{"order_id":240228,"rate":"10450.03000000","amount":"0.00050802","date_added":"2019-01-16
+        01:06:00","order_type":"buy","display_vol1":"5.30882424 TUSD","display_vol2":"0.00050802
+        BTC"},{"order_id":241247,"rate":"10000.00000000","amount":"0.04230000","date_added":"2019-01-19
+        03:49:03","order_type":"buy","display_vol1":"423.00000000 TUSD","display_vol2":"0.04230000
+        BTC"},{"order_id":240752,"rate":"10000.00000000","amount":"0.05052200","date_added":"2019-01-17
+        04:17:26","order_type":"buy","display_vol1":"505.22000000 TUSD","display_vol2":"0.05052200
+        BTC"},{"order_id":241040,"rate":"9800.00000000","amount":"0.03908163","date_added":"2019-01-18
+        08:35:50","order_type":"buy","display_vol1":"382.99997400 TUSD","display_vol2":"0.03908163
+        BTC"}],"user_orders":[]}'
+    http_version: 
+  recorded_at: Sun, 20 Jan 2019 16:21:53 GMT
+recorded_with: VCR 4.0.0

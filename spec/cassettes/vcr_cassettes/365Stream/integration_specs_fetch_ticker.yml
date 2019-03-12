@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.365.stream/market/all
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.365.stream
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Sun, 20 Jan 2019 16:15:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '5493'
+      Connection:
+      - close
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"1575-vap867t9hHErpyOoW4DO0CHrr/g"
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: '{"TUSD_BTC":{"name":"TUSD_BTC","coin":"Bitcoin","ticker":"BTC","market":"TUSD","detail":{"low":12210.06,"high":12499,"close":12499,"average":null,"volume":598.02932881,"change":0,"percent":"0.00"},"last":12499,"usd":12499},"TUSD_BCH":{"name":"TUSD_BCH","coin":"Bitcoin
+        Cash","ticker":"BCH","market":"TUSD","detail":{"low":450,"high":549,"close":450,"average":null,"volume":335.11822866,"change":-15,"percent":"-3.33"},"last":450,"usd":450},"TUSD_365":{"name":"TUSD_365","coin":"365
+        Coin","ticker":"365","market":"TUSD","detail":{"low":0.00035,"high":0.00049969,"close":0.00038,"average":null,"volume":88.37047021,"change":0.000019990000000000003,"percent":"5.26"},"last":0.00038,"usd":0.00038},"TUSD_ETH":{"name":"TUSD_ETH","coin":"Ethereum","ticker":"ETH","market":"TUSD","detail":{"low":400,"high":496.99,"close":400,"average":null,"volume":53.25663524,"change":-96.99000000000001,"percent":"-24.25"},"last":400,"usd":400},"TUSD_NAKA":{"name":"TUSD_NAKA","coin":"Nakamoto
+        Coin","ticker":"NAKA","market":"TUSD","detail":{"low":0.01000021,"high":0.01000021,"close":0.01000021,"average":0.01000021,"volume":0,"change":0,"percent":"0.00"},"last":0.01000021,"usd":0.01000021},"TUSD_VOLTZ":{"name":"TUSD_VOLTZ","coin":"Voltz","ticker":"VOLTZ","market":"TUSD","detail":{"low":0.5101,"high":0.65,"close":0.5101,"average":null,"volume":82.09462242,"change":-0.13990000000000002,"percent":"-27.43"},"last":0.5101,"usd":0.5101},"365_ECR":{"name":"365_ECR","coin":"Eastads
+        Credits","ticker":"ECR","market":"365","detail":{"low":0.615,"high":0.615,"close":0.615,"average":null,"volume":19720.8237,"change":0,"percent":"0.00"},"last":0.615,"usd":0.00023370000000000002},"BTC_BCH":{"name":"BTC_BCH","coin":"Bitcoin
+        Cash","ticker":"BCH","market":"BTC","detail":{"low":0.02222,"high":0.02222,"close":0.02222,"average":null,"volume":0.00003132,"change":0,"percent":"0.00"},"last":0.02222,"usd":0},"BTC_ETH":{"name":"BTC_ETH","coin":"Ethereum","ticker":"ETH","market":"BTC","detail":{"low":0.068,"high":0.068,"close":0.068,"average":null,"volume":0.00053874,"change":0,"percent":"0.00"},"last":0.068,"usd":0},"TUSD_OVD":{"name":"TUSD_OVD","coin":"OVD
+        Coin","ticker":"OVD","market":"TUSD","detail":{"low":0.0979998,"high":0.0979998,"close":0.0979998,"average":0.0979998,"volume":0,"change":0,"percent":"0.00"},"last":0.0979998,"usd":0.0979998},"TUSD_HBX":{"name":"TUSD_HBX","coin":"HashBX","ticker":"HBX","market":"TUSD","detail":{"low":0.060001,"high":0.1279,"close":0.1274,"average":null,"volume":689.99307091,"change":-0.0005000000000000004,"percent":"-0.39"},"last":0.1274,"usd":0.1274},"TUSD_MICE":{"name":"TUSD_MICE","coin":"MICE","ticker":"MICE","market":"TUSD","detail":{"low":0.17222222,"high":0.17222222,"close":0.17222222,"average":0.17222222,"volume":0,"change":0,"percent":"0.00"},"last":0.17222222,"usd":0.17222222},"TUSD_TIC":{"name":"TUSD_TIC","coin":"TICKET","ticker":"TIC","market":"TUSD","detail":{"low":0.00243981,"high":0.00243981,"close":0.00243981,"average":0.00243981,"volume":0,"change":0,"percent":"0.00"},"last":0.00243981,"usd":0.00243981},"TUSD_THB":{"name":"TUSD_THB","coin":"Thai
+        Baht","ticker":"THB","market":"TUSD","detail":{"low":0.0301019,"high":0.0301019,"close":0.0301019,"average":0.0301019,"volume":0,"change":0,"percent":"0.00"},"last":0.0301019,"usd":0.0301019},"TUSD_WMC":{"name":"TUSD_WMC","coin":"WORLD
+        MEDICAL COIN","ticker":"WMC","market":"TUSD","detail":{"low":0.04,"high":0.04,"close":0.04,"average":0.04,"volume":0,"change":0,"percent":"0.00"},"last":0.04,"usd":0.04},"USDC_BTC":{"name":"USDC_BTC","coin":"Bitcoin","ticker":"BTC","market":"USDC","detail":{"low":3494.33,"high":3693.66,"close":3529.05,"average":null,"volume":7226.9144937,"change":-159.98999999999978,"percent":"-4.53"},"last":3529.05,"usd":3529.05},"USDC_BCH":{"name":"USDC_BCH","coin":"Bitcoin
+        Cash","ticker":"BCH","market":"USDC","detail":{"low":119.94,"high":129.63,"close":121.56,"average":null,"volume":7034.25771569,"change":-7.560000000000002,"percent":"-6.22"},"last":121.56,"usd":121.56},"USDC_ETH":{"name":"USDC_ETH","coin":"Ethereum","ticker":"ETH","market":"USDC","detail":{"low":116.53,"high":123.83,"close":117.18,"average":null,"volume":7186.04166971,"change":-6.469999999999999,"percent":"-5.52"},"last":117.18,"usd":117.18},"BTC_sBTC":{"name":"BTC_sBTC","coin":"Siam
+        Bitcoin","ticker":"sBTC","market":"BTC","detail":{"low":1,"high":1,"close":1,"average":null,"volume":0.00018637,"change":0,"percent":"0.00"},"last":1,"usd":3529.05},"ETH_ECR":{"name":"ETH_ECR","coin":"Eastads
+        Credits","ticker":"ECR","market":"ETH","detail":{"low":7.1e-7,"high":7.1e-7,"close":7.1e-7,"average":null,"volume":0.0049345,"change":0,"percent":"0.00"},"last":7.1e-7,"usd":0.0000831978},"ETH_365":{"name":"ETH_365","coin":"365
+        Coin","ticker":"365","market":"ETH","detail":{"low":5e-7,"high":6e-7,"close":5e-7,"average":null,"volume":0.00473915,"change":-1e-7,"percent":"-20.00"},"last":5e-7,"usd":0.00005859},"ETH_HBX":{"name":"ETH_HBX","coin":"HashBX","ticker":"HBX","market":"ETH","detail":{"low":0.0002,"high":0.0002,"close":0.0002,"average":0.0002,"volume":0,"change":0,"percent":"0.00"},"last":0.0002,"usd":0.023436000000000002},"ETH_VOLTZ":{"name":"ETH_VOLTZ","coin":"Voltz","ticker":"VOLTZ","market":"ETH","detail":{"low":0,"high":0,"close":0,"average":0,"volume":0,"change":0,"percent":"NaN"},"last":0,"usd":0},"ETH_OMG":{"name":"ETH_OMG","coin":"OmiseGO
+        ","ticker":"OMG","market":"ETH","detail":{"low":0,"high":0,"close":0,"average":0,"volume":0,"change":0,"percent":"NaN"},"last":0,"usd":0}}'
+    http_version: 
+  recorded_at: Sun, 20 Jan 2019 16:15:51 GMT
+recorded_with: VCR 4.0.0
