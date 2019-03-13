@@ -143,7 +143,7 @@ Or install it yourself as:
 | Coindirect        | Y       | N          | N       |         | Y           | Y        | coindirect        |
 | Coineal           | Y       | Y          | Y       |         | Y           |          | coineal           |
 | Coinex            | Y       | Y          | Y       |         | Y           | Y        | coinex            |
-| Coinexmarket      | Y       | Y          | Y       |         | Y           |          | coinexmarket      |
+| Coinexmarket (broken)| Y       | Y          | Y       |         | Y           |          | coinexmarket      |
 | Coinfalcon        | Y       | Y          | Y       |         | Y           |          | coinfalcon        |
 | Coinfield         | Y       | Y          | Y       |         | Y           | Y        | coinfield         |
 | Coingi            | Y       | Y          | Y       |         | Y           | Y        | coingi            |
