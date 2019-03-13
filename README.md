@@ -72,6 +72,7 @@ Or install it yourself as:
 | Bitflyer          | Y       |            |         |         | Y           |          | bitflyer          |
 | Bitforex          | Y       | N          | N       |         | Y           |          | bitforex          |
 | Bithash           | Y       | Y          | Y       |         | Y           | Y        | bithash           |
+| Bitholic          | Y       | Y          | Y       |         | Y           |          | bitholic          |
 | Bithumb           | Y       |            |         |         | Y           |          | bithumb           |
 | Bitibu            | Y       | Y          | Y       |         | Y           | Y        | bitibu            |
 | Bitinfi           | Y       | Y          |         |         | Y           |          | bitinfi           |
@@ -128,6 +129,7 @@ Or install it yourself as:
 | Chaoex            | Y       | Y          | Y       |         | Y           | N        | chaoex            |
 | CHBTC             | Y       |            |         |         | User-Defined|          | chbtc             |
 | Cobinhood         | Y       | Y          |         |         | Y           | Y        | cobinhood         |
+| CODEX             | Y       | Y          | Y       |         | Y           |          | codex             |
 | Coin2001          | Y       | Y          | Y       |         | Y           |          | coin2001          |
 | Coinall           | Y       | Y          | Y       |         | Y           |          | coinall           |
 | Coin Asset        | Y       | Y          | Y       |         | Y           |          | coinasset         |
@@ -241,7 +243,7 @@ Or install it yourself as:
 | Indodax           | Y       | Y          | Y       |         | User-Defined| N        | indodax           |
 | InfinityCoin      | Y       |            |         |         | Y           | Y        | infinity_coin     |
 | InstantBitex      | Y       | Y          | Y       |         | Y           |          | instantbitex      |
-| Iqfinex           | Y       | Y          | Y       |         | Y           | Y        |
+| Iqfinex           | Y       | Y          | Y       |         | Y           | Y        | iqfinex           |
 | Ironex            | Y       |            |         |         | Y           |          | ironex            |
 | Itbit             | Y       | Y          | Y       |         | User-Defined|          | itbit             |
 | Jex               | Y       | N          | N       |         | Y           |          | jex               |
@@ -280,6 +282,7 @@ Or install it yourself as:
 | Negociecoins      | Y       | Y          | Y       |         | User-Defined|          | negociecoins      |
 | Neraex            | Y       | Y          | Y       |         | Y           | Y        | neraex            |
 | Newdex            | Y       | N          | N       |         | Y           | Y        | newdex            |
+| Nexybit           | Y       | Y          | N       |         | Y           | N        | nexybit           |
 | Ninecoin (Halted) | Y       |            |         |         | Y           |          | ninecoin          |
 | NLexch            | Y       |            |         |         | Y           | Y        | nlexch            |
 | Novadex           | Y       | N          | N       |         | Y           | Y        | novadex           |
@@ -347,6 +350,7 @@ Or install it yourself as:
 | TrustDex **       | Y       |            |         |         | Y           |          | trust_dex         |
 | TuxExchange       | Y       |            |         |         | Y           |          | tux_exchange      |
 | TRXMarket         | Y       |            |         |         | Y           |          | trx_market        |
+| Txbit             | Y       |            |         |         | Y           | Y        | txbit             |
 | UEX               | Y       |            |         |         | Y           |          | uex               |
 | Uniswap           | Y       | N          | N       |         | Y           | N        | uniswap           |
 | Unocoin           |         |            |         |         |             |          | unocoin           |
@@ -489,7 +493,6 @@ Or install it yourself as:
 
 ```
   client.trade_page_url 'binance', base: 'BTC', target: 'USDT'
-
 ```
 
 
@@ -514,6 +517,29 @@ Name the file <exchange_name>.yml and place it under the config/cryptoexchange d
       :target: KRW
     - :base: ETC
       :target: KRW
+```
+
+### configuration (cache)
+
+This gem uses https://github.com/SamSaffron/lru_redux cache by default so it doesn't hit exchanges with endpoint that returns multiple tickers for each ticker you are querying.
+
+Alternatively, if you are using rails you can use rails cache (ActiveSupport::Cache::Store) by changing the config:
+create the following file `/config/initializers/cryptoexchange.rb` and have the config inside.
+
+```
+Cryptoexchange.configure do |config|
+  config.ticker_ttl = 10
+  # ticker cache duration in seconds
+  # default value = 10
+
+  config.cache_size = 200
+  # lru_redux cache store, ONLY EFFECTIVE if you use lru_redux cache which is the default, this value will be ignored when using rails cache
+  # default value = 200
+
+  config.rails_cache = false
+  # enables rails cache
+  # default value = false
+end
 ```
 
 ## Development
