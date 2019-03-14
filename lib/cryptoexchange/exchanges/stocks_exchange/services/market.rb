@@ -18,7 +18,9 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          output.map do |pair|
+          output.map do |_key, pair|
+            next if pair.class != Hash
+
             base, target = pair['market_name'].split('_')
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
@@ -26,7 +28,7 @@ module Cryptoexchange::Exchanges
                             market: StocksExchange::Market::NAME
                           )
             adapt(pair, market_pair)
-          end
+          end.compact
         end
 
         def adapt(output, market_pair)
