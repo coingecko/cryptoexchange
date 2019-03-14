@@ -1,4 +1,3 @@
-require 'pry'
 module Cryptoexchange::Exchanges
   module Cybex
     module Services
@@ -8,7 +7,6 @@ module Cryptoexchange::Exchanges
         # POST_PARAMS         = { "jsonrpc": "2.0", "method": "list_assets", "params": ["A", 100], "id": 1 }
         # OMITTED_SYMBOLS     = ['ANGEL', 'JADE', 'JAMES']
         # MAIN_TARGET_SYMBOLS = ['USDT', 'BTC', 'ETH', 'CYB']
-
 
         def fetch
           output    = super
