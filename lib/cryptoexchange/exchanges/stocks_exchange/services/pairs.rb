@@ -10,13 +10,14 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output.map do |pair|
+          output.map do |_key, pair|
+            next if pair.class != Hash
             Cryptoexchange::Models::MarketPair.new(
               base: pair['currency'],
               target: pair['partner'],
-              market: StocksExchange::Market::NAME
+              market: Cryptoexchange::Exchanges::StocksExchange::Market::NAME
             )
-          end
+          end.compact
         end
       end
     end
