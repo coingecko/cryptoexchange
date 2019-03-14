@@ -1,17 +1,17 @@
 require 'spec_helper'
 
-RSpec.describe 'Bitmex integration specs' do
+RSpec.describe 'OkexSwap integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'USD', market: 'bitmex', market_type: "futures", contract_interval: "perpetual") }
+  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', market_type: "futures", contract_interval: "perpetual") }
 
   it 'fetch pairs' do
-    pairs = client.pairs('bitmex')
+    pairs = client.pairs('okex_swap')
     expect(pairs).not_to be_empty
 
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
-    expect(pair.market).to eq 'bitmex'
+    expect(pair.market).to eq 'okex_swap'
     expect(pair.market_type).to eq "futures"
     expect(pair.contract_interval).to eq "perpetual"
   end
@@ -19,9 +19,9 @@ RSpec.describe 'Bitmex integration specs' do
   it 'fetch ticker' do
     ticker = client.ticker(xbt_usd_pair)
 
-    expect(ticker.base).to eq 'XBT'
+    expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USD'
-    expect(ticker.market).to eq 'bitmex'
+    expect(ticker.market).to eq 'okex_swap'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
