@@ -143,7 +143,7 @@ Or install it yourself as:
 | Coindirect        | Y       | N          | N       |         | Y           | Y        | coindirect        |
 | Coineal           | Y       | Y          | Y       |         | Y           |          | coineal           |
 | Coinex            | Y       | Y          | Y       |         | Y           | Y        | coinex            |
-| Coinexmarket      | Y       | Y          | Y       |         | Y           |          | coinexmarket      |
+| Coinexmarket (broken)| Y       | Y          | Y       |         | Y           |          | coinexmarket      |
 | Coinfalcon        | Y       | Y          | Y       |         | Y           |          | coinfalcon        |
 | Coinfield         | Y       | Y          | Y       |         | Y           | Y        | coinfield         |
 | Coingi            | Y       | Y          | Y       |         | Y           | Y        | coingi            |
@@ -184,7 +184,7 @@ Or install it yourself as:
 | Cryptonit         | Y       | Y          | Y       |         | Y           | Y        | cryptonit         |
 | Cryptopia         | Y       | Y          | Y       |         | Y           |          | cryptopia         |
 | Crytrex           | Y       | Y          | Y       |         | Y           |          | crytrex           |
-| Cybex             | Y       | Y          | Y       |         | Y           |          | cybex             |
+| Cybex             | Y       |            | Y       |         | Y           |          | cybex             |
 | Dakuce            | Y       | Y          | Y       |         | Y           |          | dakuce            |
 | Daybit            | Y       |            |         |         | Y           | Y        | daybit            |
 | Dcoin             | Y       | N          | N       |         | Y           | Y        | dcoin             |
