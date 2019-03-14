@@ -1,4 +1,3 @@
-require 'pry'
 module Cryptoexchange::Exchanges
   module Zbmega
     module Services
