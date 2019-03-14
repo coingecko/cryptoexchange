@@ -184,7 +184,7 @@ Or install it yourself as:
 | Cryptonit         | Y       | Y          | Y       |         | Y           | Y        | cryptonit         |
 | Cryptopia         | Y       | Y          | Y       |         | Y           |          | cryptopia         |
 | Crytrex           | Y       | Y          | Y       |         | Y           |          | crytrex           |
-| Cybex             | Y       | Y          | Y       |         | Y           |          | cybex             |
+| Cybex             | Y       |            | Y       |         | Y           |          | cybex             |
 | Dakuce            | Y       | Y          | Y       |         | Y           |          | dakuce            |
 | Daybit            | Y       |            |         |         | Y           | Y        | daybit            |
 | Dcoin             | Y       | N          | N       |         | Y           | Y        | dcoin             |
