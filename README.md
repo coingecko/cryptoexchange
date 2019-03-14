@@ -375,6 +375,7 @@ Or install it yourself as:
 | Zaif              | Y       | Y          | Y       |         | Y           | Y        | zaif              |       |
 | ZB                | Y       | Y          | Y       |         | Y           | Y        | zb                |       |
 | ZBG               | Y       | Y          | Y       |         | Y           |          | zbg               |       |
+| Zbmega            | Y       | N          | N       |         | Y           | Y        | zbmega            |       |
 | Zebpay            | Y       |            |         |         | Y           |          | Zebpay            |       |
 | Zeniex            | Y       | Y          | Y       |         | Y           |          | zeniex            |       |
 | ZG                | Y       | Y          | Y       |         | Y           | Y        | zg                |       |
