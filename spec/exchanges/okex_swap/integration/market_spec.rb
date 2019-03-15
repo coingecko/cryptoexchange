@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'OkexSwap integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', market_type: "futures", contract_interval: "perpetual") }
+  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', contract_interval: "perpetual") }
 
   it 'fetch pairs' do
     pairs = client.pairs('okex_swap')
@@ -12,7 +12,6 @@ RSpec.describe 'OkexSwap integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'okex_swap'
-    expect(pair.market_type).to eq "futures"
     expect(pair.contract_interval).to eq "perpetual"
   end
 
@@ -30,7 +29,6 @@ RSpec.describe 'OkexSwap integration specs' do
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
-    expect(ticker.market_type).to eq "futures"
     expect(ticker.contract_interval).to eq "perpetual"
   end
 

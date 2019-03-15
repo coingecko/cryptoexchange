@@ -17,7 +17,6 @@ module Cryptoexchange::Exchanges
               base:   base,
               target: target,
               market: OkexSwap::Market::NAME,
-              market_type: 'futures',
               contract_interval: "perpetual",
             )
           end
