@@ -84,7 +84,6 @@ Or install it yourself as:
 | Bitmart           | Y       | Y          | Y       |         | Y           |          | bitmart           |       |
 | Bitmax            | Y       | Y          | Y       |         | Y           | Y        | bitmax            |       |
 | Bitmesh           | Y       | N          | N       |         | Y           | Y        | bitmesh           |       |
-| Bitmex            | Y       | Y          | Y       |         | Y           |          | bitmex            |futures|
 | Bitmex (alpha)    | Y       | Y          | Y       |         | Y           |          | bitmex            |futures|
 | BitOnBay          | Y       |            |         |         | Y           |          | bitonbay          |       |
 | Bitopro           | Y       | Y          | Y       |         | User-Defined| Y        | bitopro           |       |
