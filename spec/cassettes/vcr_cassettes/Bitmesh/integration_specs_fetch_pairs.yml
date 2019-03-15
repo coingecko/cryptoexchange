@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitmesh.com/?api=market.ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitmesh.com
+      User-Agent:
+      - http.rb/3.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 15 Mar 2019 08:16:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4174'
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Readtime:
+      - '4'
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"data":{"eth_atom":{"name":"eth_atom","change":0},"btc_etc":{"name":"btc_etc","change":0},"bsv_beam":{"name":"bsv_beam","price":"0.03148","change":0},"bsv_grin":{"name":"bsv_grin","price":"0.05","change":0},"usdt_eth":{"name":"usdt_eth","price":"100","change":0},"usdt_ltc":{"name":"usdt_ltc","price":"99","change":0},"usdt_pax":{"name":"usdt_pax","change":0},"btc_bch":{"name":"btc_bch","price":"0.01175557","change":0},"btc_xrp":{"name":"btc_xrp","price":"0.00007913","volume":"25","value":"0.00197825","max":"0.00007913","min":"0.00007913","change":0},"eth_etc":{"name":"eth_etc","change":0},"eth_ltc":{"name":"eth_ltc","price":"0.09","change":0},"usdt_dero":{"name":"usdt_dero","price":"2.5","change":0},"bsv_xrp":{"name":"bsv_xrp","change":0},"eth_bch":{"name":"eth_bch","change":0},"btc_ltc":{"name":"btc_ltc","price":"0.01160007","change":"-19.44","volume":"0.232648","value":"0.00285405","max":"0.0144","min":"0.01160007"},"btc_xlm":{"name":"btc_xlm","price":"0.019499","change":0},"bsv_rif":{"name":"bsv_rif","change":0},"usdt_btc":{"name":"usdt_btc","price":"100.13","change":0},"usdt_gusd":{"name":"usdt_gusd","change":0},"usdt_iris":{"name":"usdt_iris","change":0},"btc_tera":{"name":"btc_tera","price":"0.00000087","change":"-10.31","volume":"234691.26","value":"0.22376073","max":"0.00000097","min":"0.00000085"},"eth_rif":{"name":"eth_rif","price":"0.00126582","change":0},"eth_xrp":{"name":"eth_xrp","change":0},"usdt_beam":{"name":"usdt_beam","price":"0.62","change":0},"usdt_xlm":{"name":"usdt_xlm","change":0},"btc_beam":{"name":"btc_beam","price":"0.00016752","change":"-1.46","volume":"9914.520474","value":"1.70155768","max":"0.00017598","min":"0.00016701"},"usdt_chi":{"name":"usdt_chi","change":0},"btc_dero":{"name":"btc_dero","price":"0.00026","change":0},"btc_dcr":{"name":"btc_dcr","price":"0.11496432","change":0},"bsv_btc":{"name":"bsv_btc","price":"472.18","change":0},"eth_xlm":{"name":"eth_xlm","change":0},"usdt_bsv":{"name":"usdt_bsv","price":"7","change":0},"btc_grin":{"name":"btc_grin","price":"0.0006825","change":"1.71","volume":"4322.40970116","value":"2.92039807","max":"0.00071","min":"0.00066001"},"bsv_bch":{"name":"bsv_bch","change":0},"btc_iris":{"name":"btc_iris","price":"0.00001","change":"-60.00","volume":"4127.55","value":"0.08775101","max":"0.000025","min":"0.00001"},"usdt_tusd":{"name":"usdt_tusd","price":"1","change":0},"eth_beam":{"name":"eth_beam","price":"0.005","change":0},"eth_vsys":{"name":"eth_vsys","change":0},"usdt_tera":{"name":"usdt_tera","price":"0.009","change":0},"usdt_dcr":{"name":"usdt_dcr","change":0},"usdt_bch":{"name":"usdt_bch","price":"3450","change":0},"btc_eth":{"name":"btc_eth","price":"0.038","change":0},"usdt_grin":{"name":"usdt_grin","price":"2.01","change":0},"usdc_btc":{"name":"usdc_btc","change":0},"btc_atom":{"name":"btc_atom","price":"0.00174","change":"2.35","volume":"2347.256437","value":"3.90641593","max":"0.00175","min":"0.00155"},"bsv_eth":{"name":"bsv_eth","price":"0.000001","change":0},"usdt_etc":{"name":"usdt_etc","change":0},"usdt_xrp":{"name":"usdt_xrp","change":0},"usdc_beam":{"name":"usdc_beam","price":"1.9","change":0},"usdc_grin":{"name":"usdc_grin","price":"3.12","change":0},"usdt_rif":{"name":"usdt_rif","price":"0.7","change":0},"usdc_vsys":{"name":"usdc_vsys","change":0},"btc_rif":{"name":"btc_rif","price":"0.0001","change":0},"bsv_xlm":{"name":"bsv_xlm","change":0},"usdt_vsys":{"name":"usdt_vsys","change":0},"usdc_eth":{"name":"usdc_eth","change":0},"btc_xbg":{"name":"btc_xbg","price":"0.0001","change":"-81.82","volume":"6.232979","value":"0.00322974","max":"0.00059999","min":"0.0001"},"btc_vsys":{"name":"btc_vsys","change":0},"bsv_ltc":{"name":"bsv_ltc","change":0},"usdt_usdc":{"name":"usdt_usdc","price":"1","change":0},"usdc_bsv":{"name":"usdc_bsv","change":0},"btc_chi":{"name":"btc_chi","price":"0.00001339","change":"35.25","volume":"10800","value":"0.13314552","max":"0.00001339","min":"0.0000099"},"bsv_etc":{"name":"bsv_etc","change":0},"eth_grin":{"name":"eth_grin","price":"0.01001","change":0},"usdt_atom":{"name":"usdt_atom","price":"10","volume":"3.184032","value":"31.84032","max":"10","min":"10","change":0}}}'
+    http_version: 
+  recorded_at: Fri, 15 Mar 2019 08:16:01 GMT
+recorded_with: VCR 4.0.0
