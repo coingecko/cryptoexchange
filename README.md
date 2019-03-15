@@ -83,7 +83,7 @@ Or install it yourself as:
 | Bitlish           | Y       | Y          | Y       |         | Y           |          | bitlish           |       |
 | Bitmart           | Y       | Y          | Y       |         | Y           |          | bitmart           |       |
 | Bitmax            | Y       | Y          | Y       |         | Y           | Y        | bitmax            |       |
-| Bitmex            | Y       | Y          | Y       |         | Y           |          | bitmex            |futures|
+| Bitmex (alpha)    | Y       | Y          | Y       |         | Y           |          | bitmex            |futures|
 | BitOnBay          | Y       |            |         |         | Y           |          | bitonbay          |       |
 | Bitopro           | Y       | Y          | Y       |         | User-Defined| Y        | bitopro           |       |
 | Bitpaction        | Y       | Y          | Y       |         | Y           |          | bitpaction        |       |
@@ -298,7 +298,7 @@ Or install it yourself as:
 | Octaex            | Y       | Y          | Y       |         | Y           |          | octaex            |       |
 | OKCoin            | Y       |            |         |         | User-Defined|          | okcoin            |       |
 | OKEx              | Y       | Y          | Y       |         | Y           | Y        | okex              |       |
-| OKEx Perpetual Swaps| Y     |            |         |         | Y           | Y        | okex_swap         |futures|
+| OKEx Perpetual Swaps (alpha) | Y     |            |         |         | Y           | Y        | okex_swap         |futures|
 | OmniTrade         | Y       | Y          | Y       | Y       | Y           |          | omnitrade         |       |
 | Ooobtc            | Y       | Y          | Y       |         | Y           | Y        | ooobtc            |       |
 | Openledger        | Y       | Y          | Y       |         | Y           | Y        | openledger        |       |
