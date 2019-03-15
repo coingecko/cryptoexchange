@@ -19,14 +19,14 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          output["data"].map do |pair|
-            target, base = pair[0].split('_')
+          output["data"].map do |pair, value|
+            target, base = pair.split('_')
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
               market: Bitmesh::Market::NAME
             )
-            adapt(pair, market_pair)
+            adapt(value, market_pair)
           end
         end
 
@@ -35,10 +35,10 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Bitmesh::Market::NAME
-          ticker.last      = NumericHelper.to_d(output[1]['price'])
-          ticker.high      = NumericHelper.to_d(output[1]['max'])
-          ticker.low       = NumericHelper.to_d(output[1]['min'])
-          ticker.volume    = output[1]['volume'] ? NumericHelper.to_d(output[1]['volume']) : 0
+          ticker.last      = NumericHelper.to_d(output['price'])
+          ticker.high      = NumericHelper.to_d(output['max'])
+          ticker.low       = NumericHelper.to_d(output['min'])
+          ticker.volume    = output['volume'] ? NumericHelper.to_d(output['volume']) : 0
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
