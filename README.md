@@ -138,6 +138,7 @@ Or install it yourself as:
 | CoinExchange      | Y       |            |         |         | Y           |          | coin_exchange     |       |
 | Coinbe            | Y       |            |         |         | Y           |          | coinbe            |       |
 | Coinbene          | Y       | Y          | Y       |         | Y           | Y        | coinbene          |       |
+| Coinbit           | Y       | N          | N       |         | Y           | Y        | coinbit           |       |
 | Coincheck         | Y       |            |         |         | User-Defined|          | coincheck         |       |
 | Coindeal          | Y       | Y          |         |         | Y           |          | coindeal          |       |
 | Coindirect        | Y       | N          | N       |         | Y           | Y        | coindirect        |       |
@@ -374,6 +375,7 @@ Or install it yourself as:
 | Zaif              | Y       | Y          | Y       |         | Y           | Y        | zaif              |       |
 | ZB                | Y       | Y          | Y       |         | Y           | Y        | zb                |       |
 | ZBG               | Y       | Y          | Y       |         | Y           |          | zbg               |       |
+| Zbmega            | Y       | N          | N       |         | Y           | Y        | zbmega            |       |
 | Zebpay            | Y       |            |         |         | Y           |          | Zebpay            |       |
 | Zeniex            | Y       | Y          | Y       |         | Y           |          | zeniex            |       |
 | ZG                | Y       | Y          | Y       |         | Y           | Y        | zg                |       |
