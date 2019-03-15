@@ -13,14 +13,17 @@ module Cryptoexchange::Exchanges
           pairs = output
           market_pairs = []
           pairs["data"].each do |pair|
-            target, base = pair[0].split('_')
-            market_pairs <<
-            Cryptoexchange::Models::MarketPair.new(
-              base: base,
-              target: target,
-              market: Bitmesh::Market::NAME
-            )
+            unless pair[1]['price'].nil?
+              target, base = pair[0].split('_')
+              market_pairs <<
+              Cryptoexchange::Models::MarketPair.new(
+                base: base,
+                target: target,
+                market: Bitmesh::Market::NAME
+              )
+            end
           end
+
           market_pairs
         end
       end
