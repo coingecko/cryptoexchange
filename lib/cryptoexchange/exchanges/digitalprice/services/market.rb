@@ -23,19 +23,6 @@ module Cryptoexchange::Exchanges
           end
         end
 
-        {
-          "pairId": "10",
-          "url": "dp-btc",
-          "priceLow": "0.00000255",
-          "priceHigh": "0.00000255",
-          "priceLast": "0.00000257",
-          "priceChange": "+0.00%",
-          "volumeBase": "0.00000000",
-          "volumeQuote": "0.00000000",
-          "bidHigh": "0.00000255",
-          "askLow": "0.00000294"
-        }
-
         def adapt(output)
           base, target     = output['url'].split('-')
           ticker           = Cryptoexchange::Models::Ticker.new
