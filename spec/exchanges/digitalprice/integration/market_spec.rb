@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Digitalprice integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:moto_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'MOTO', target: 'BTC', market: 'digitalprice') }
+  let(:asf_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ASF', target: 'BTC', market: 'digitalprice') }
 
   it 'fetch pairs' do
     pairs = client.pairs('digitalprice')
@@ -15,14 +15,14 @@ RSpec.describe 'Digitalprice integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url 'digitalprice', base: moto_btc_pair.base, target: moto_btc_pair.target
-    expect(trade_page_url).to eq "https://digitalprice.io/order?url=moto-btc"
+    trade_page_url = client.trade_page_url 'digitalprice', base: asf_btc_pair.base, target: asf_btc_pair.target
+    expect(trade_page_url).to eq "https://digitalprice.io/order?url=asf-btc"
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(moto_btc_pair)
+    ticker = client.ticker(asf_btc_pair)
 
-    expect(ticker.base).to eq 'MOTO'
+    expect(ticker.base).to eq 'ASF'
     expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'digitalprice'
     expect(ticker.last).to be_a Numeric
@@ -38,9 +38,9 @@ RSpec.describe 'Digitalprice integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(moto_btc_pair)
+    order_book = client.order_book(asf_btc_pair)
 
-    expect(order_book.base).to eq 'MOTO'
+    expect(order_book.base).to eq 'ASF'
     expect(order_book.target).to eq 'BTC'
     expect(order_book.market).to eq 'digitalprice'
     expect(order_book.asks).to_not be_empty
@@ -54,11 +54,11 @@ RSpec.describe 'Digitalprice integration specs' do
   end
 
   it 'fetch trade' do
-    trades = client.trades(moto_btc_pair)
+    trades = client.trades(asf_btc_pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty
-    expect(trade.base).to eq 'MOTO'
+    expect(trade.base).to eq 'ASF'
     expect(trade.target).to eq 'BTC'
     expect(trade.market).to eq 'digitalprice'
     expect(['buy', 'sell']).to include trade.type
