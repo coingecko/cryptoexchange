@@ -9,7 +9,7 @@ module Cryptoexchange::Exchanges
           adapt(output)
         end
 
-        def adapt(output)
+        def adapt(output) 
           output['data'].map do |pair|
             Cryptoexchange::Models::MarketPair.new(
               base:   pair['quoteSymbol'],
