@@ -9,7 +9,9 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch
-          output = JSON.parse(HTTP.timeout(write: 2, connect: 15, read: 18).headers(accept: 'application/json').follow.get(ticker_url))
+          output = Cryptoexchange::Cache.ticker_cache.fetch(ticker_url) do
+            HTTP.timeout(write: 2, connect: 15, read: 18).headers(accept: 'application/json').follow.get(ticker_url).parse(:json)
+          end
           adapt_all(output)
         end
 
