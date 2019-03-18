@@ -22,7 +22,6 @@ Or install it yourself as:
 
 ## Exchanges Supported
 
-
 | Exchange          | Ticker  | Order Book | Trade   | Account | Market List | Pair URL | slug              |m.type |
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |----------|-------------------|-------|
 | 58Coin            | Y       | Y          | Y       |         | Y           | Y        | fifty_eight_coin  |       |
@@ -383,7 +382,6 @@ Or install it yourself as:
 | Zeniex            | Y       | Y          | Y       |         | Y           |          | zeniex            |       |
 | ZG                | Y       | Y          | Y       |         | Y           | Y        | zg                |       |
 | ZG.TOP            | Y       |            |         |         | Y           |          | zgtop             |       |
-
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 
