@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.codex.one/order-book?market=ETHBTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.codex.one
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Feb 2019 15:19:01 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=de09c40b79c1683e48b33eea303a3026a1551280741; expires=Thu, 27-Feb-20
+        15:19:01 GMT; path=/; domain=.codex.one; HttpOnly; Secure
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN;
+      X-Xss-Protection:
+      - 1;mode=block
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4afba0998b4e8b7c-KBP
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ask":[{"count":1,"price":"0.036391","volume":"0.0402"},{"count":1,"price":"0.036393","volume":"0.0278"},{"count":1,"price":"0.036394","volume":"0.0335"},{"count":1,"price":"0.036408","volume":"0.0367"},{"count":1,"price":"0.036414","volume":"0.0317"},{"count":1,"price":"0.036421","volume":"0.0404"},{"count":1,"price":"0.036424","volume":"0.0288"},{"count":1,"price":"0.036425","volume":"0.0381"},{"count":1,"price":"0.036429","volume":"0.039"},{"count":1,"price":"0.036806","volume":"0.1508"}],"bid":[{"count":1,"price":"0.0358","volume":"0.0384"},{"count":1,"price":"0.035767","volume":"0.0303"},{"count":1,"price":"0.035696","volume":"0.0291"},{"count":1,"price":"0.035661","volume":"0.0342"},{"count":1,"price":"0.03566","volume":"0.0375"},{"count":1,"price":"0.035659","volume":"0.0305"},{"count":1,"price":"0.035658","volume":"0.0281"},{"count":1,"price":"0.035656","volume":"0.0403"},{"count":1,"price":"0.035655","volume":"0.0349"},{"count":1,"price":"0.035654","volume":"0.0395"},{"count":1,"price":"0.035651","volume":"0.0293"},{"count":1,"price":"0.035649","volume":"0.0412"},{"count":1,"price":"0.03075","volume":"51.2321"},{"count":1,"price":"0.0001","volume":"0.0001"}]}'
+    http_version: 
+  recorded_at: Wed, 27 Feb 2019 15:19:01 GMT
+recorded_with: VCR 4.0.0

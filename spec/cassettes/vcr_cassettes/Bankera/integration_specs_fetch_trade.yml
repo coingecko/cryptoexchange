@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-exchange.bankera.com/trades//eth-btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api-exchange.bankera.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 09 Jan 2019 02:48:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d4ac5c12bce9ed85506c1a3cf1a80c5021547002099; expires=Thu, 09-Jan-20
+        02:48:19 GMT; path=/; domain=.bankera.com; HttpOnly; Secure
+      Allow:
+      - GET
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      - DENY
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49639590b99aa31a-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"trades":[{"market":"eth-btc","amount":"0.02","price":"0.03771402","side":"buy","time":"1546978335000"},{"market":"eth-btc","amount":"0.185732","price":"0.03713583","side":"sell","time":"1546977354000"},{"market":"eth-btc","amount":"0.27222311","price":"0.03798","side":"sell","time":"1546945580000"},{"market":"eth-btc","amount":"0.092","price":"0.03816409","side":"buy","time":"1546945316000"},{"market":"eth-btc","amount":"0.18879737","price":"0.03811789","side":"buy","time":"1546945240000"},{"market":"eth-btc","amount":"0.01651546","price":"0.038","side":"buy","time":"1546945226000"},{"market":"eth-btc","amount":"0.01957","price":"0.03798797","side":"sell","time":"1546912531000"},{"market":"eth-btc","amount":"7.44346932","price":"0.038117","side":"sell","time":"1546911385000"},{"market":"eth-btc","amount":"0.641","price":"0.03811789","side":"buy","time":"1546889835000"},{"market":"eth-btc","amount":"0.35653068","price":"0.038117","side":"sell","time":"1546881522000"},{"market":"eth-btc","amount":"0.0966","price":"0.03798797","side":"sell","time":"1546868685000"},{"market":"eth-btc","amount":"0.2","price":"0.03798797","side":"sell","time":"1546868665000"},{"market":"eth-btc","amount":"0.18677689","price":"0.03797183","side":"buy","time":"1546867434000"},{"market":"eth-btc","amount":"0.067","price":"0.03797183","side":"buy","time":"1546867434000"},{"market":"eth-btc","amount":"0.01597057","price":"0.03781921","side":"sell","time":"1546866674000"},{"market":"eth-btc","amount":"0.22086058","price":"0.03781921","side":"sell","time":"1546866344000"},{"market":"eth-btc","amount":"0.05","price":"0.03844464","side":"buy","time":"1546845827000"},{"market":"eth-btc","amount":"0.05","price":"0.03842539","side":"buy","time":"1546845793000"},{"market":"eth-btc","amount":"0.543286","price":"0.0392617","side":"sell","time":"1546613385000"},{"market":"eth-btc","amount":"0.52195733","price":"0.0391648","side":"sell","time":"1546613161000"},{"market":"eth-btc","amount":"0.0478425","price":"0.03912538","side":"sell","time":"1546613161000"},{"market":"eth-btc","amount":"0.05564839","price":"0.03934434","side":"sell","time":"1546612535000"},{"market":"eth-btc","amount":"0.04789294","price":"0.03943752","side":"sell","time":"1546612410000"},{"market":"eth-btc","amount":"0.035047","price":"0.03977618","side":"sell","time":"1546612244000"},{"market":"eth-btc","amount":"0.03552239","price":"0.03989165","side":"sell","time":"1546612089000"},{"market":"eth-btc","amount":"0.0232966","price":"0.03991205","side":"sell","time":"1546611888000"},{"market":"eth-btc","amount":"0.00674735","price":"0.0399","side":"sell","time":"1546611790000"},{"market":"eth-btc","amount":"0.02531365","price":"0.0399","side":"sell","time":"1546611411000"},{"market":"eth-btc","amount":"0.0213761","price":"0.03993503","side":"sell","time":"1546611276000"},{"market":"eth-btc","amount":"0.017939","price":"0.0399","side":"sell","time":"1546611144000"},{"market":"eth-btc","amount":"0.136","price":"0.03991068","side":"sell","time":"1546609414000"},{"market":"eth-btc","amount":"0.1","price":"0.03985914","side":"buy","time":"1546607859000"},{"market":"eth-btc","amount":"0.25","price":"0.03997378","side":"buy","time":"1546606854000"},{"market":"eth-btc","amount":"0.01","price":"0.03997475","side":"buy","time":"1546606329000"},{"market":"eth-btc","amount":"0.82109236","price":"0.03875521","side":"sell","time":"1546519262000"}]}'
+    http_version: 
+  recorded_at: Wed, 09 Jan 2019 02:48:19 GMT
+recorded_with: VCR 4.0.0

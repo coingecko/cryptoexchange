@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.qtrade.io/v1/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.qtrade.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 10 Oct 2018 19:36:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3c53d462c00696dea6dfa77e4717de7e1539200165; expires=Thu, 10-Oct-19
+        19:36:05 GMT; path=/; domain=.qtrade.io; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 467b88aa2a7421a4-EWR
+    body:
+      encoding: UTF-8
+      string: '{"data":{"markets":[{"id":5,"market_currency":"BAC","base_currency":"BTC","maker_fee":"0.0025","taker_fee":"0.0025","metadata":{"market_notices":[{"message":"Delisting
+        Notice: This market has been delisted due to low volume. Please cancel your
+        orders and withdraw your funds by 7/15/2018.","type":"warning"}],"delisting_date":"7/15/2018"},"can_trade":false,"can_cancel":true,"can_view":false},{"id":12,"market_currency":"BWS20","base_currency":"BWS10","maker_fee":"0","taker_fee":"0","metadata":{},"can_trade":false,"can_cancel":true,"can_view":false},{"id":3,"market_currency":"REDN","base_currency":"BTC","maker_fee":"0.0025","taker_fee":"0.0025","metadata":{},"can_trade":false,"can_cancel":true,"can_view":false},{"id":6,"market_currency":"QUAN","base_currency":"BTC","maker_fee":"0.0025","taker_fee":"0.0025","metadata":{},"can_trade":false,"can_cancel":true,"can_view":false},{"id":10,"market_currency":"ANU","base_currency":"BTC","maker_fee":"0.0025","taker_fee":"0.0025","metadata":{},"can_trade":false,"can_cancel":true,"can_view":false},{"id":2,"market_currency":"RCO","base_currency":"BTC","maker_fee":"0.0025","taker_fee":"0.0025","metadata":{"delisting_date":"7/15/2018","market_notices":[{"message":"Delisting
+        Notice: This market has been delisted due to low volume. Please cancel your
+        orders and withdraw your funds by 7/15/2018.","type":"warning"}]},"can_trade":false,"can_cancel":true,"can_view":false},{"id":8,"market_currency":"MMO","base_currency":"BTC","maker_fee":"0.0025","taker_fee":"0.0025","metadata":{},"can_trade":true,"can_cancel":true,"can_view":true},{"id":13,"market_currency":"DEFT","base_currency":"BTC","maker_fee":"0.0025","taker_fee":"0.0025","metadata":{},"can_trade":true,"can_cancel":true,"can_view":true},{"id":15,"market_currency":"VEO","base_currency":"BTC","maker_fee":"0.005","taker_fee":"0.005","metadata":{},"can_trade":true,"can_cancel":true,"can_view":true},{"id":17,"market_currency":"SCC","base_currency":"BTC","maker_fee":"0.0025","taker_fee":"0.0025","metadata":{},"can_trade":true,"can_cancel":true,"can_view":true},{"id":1,"market_currency":"LTC","base_currency":"BTC","maker_fee":"0.0025","taker_fee":"0.0025","metadata":{},"can_trade":true,"can_cancel":true,"can_view":true},{"id":19,"market_currency":"SNOW","base_currency":"BTC","maker_fee":"0.0075","taker_fee":"0.0075","metadata":{},"can_trade":true,"can_cancel":true,"can_view":true},{"id":4,"market_currency":"CPR","base_currency":"BTC","maker_fee":"0.0025","taker_fee":"0.0025","metadata":{"delisting_date":null,"market_notices":[]},"can_trade":true,"can_cancel":true,"can_view":true},{"id":14,"market_currency":"RUPX","base_currency":"BTC","maker_fee":"0.0025","taker_fee":"0.0025","metadata":{},"can_trade":true,"can_cancel":true,"can_view":true},{"id":18,"market_currency":"XBR","base_currency":"BTC","maker_fee":"0.0025","taker_fee":"0.0025","metadata":{},"can_trade":true,"can_cancel":true,"can_view":true},{"id":9,"market_currency":"BTM","base_currency":"BTC","maker_fee":"0.0025","taker_fee":"0.0025","metadata":{},"can_trade":true,"can_cancel":true,"can_view":true},{"id":11,"market_currency":"BWS20","base_currency":"BTC","maker_fee":"0.0025","taker_fee":"0.0025","metadata":{},"can_trade":true,"can_cancel":true,"can_view":true},{"id":16,"market_currency":"THC","base_currency":"BTC","maker_fee":"0.0025","taker_fee":"0.0025","metadata":{},"can_trade":true,"can_cancel":true,"can_view":true},{"id":7,"market_currency":"RVN","base_currency":"BTC","maker_fee":"0.0025","taker_fee":"0.0025","metadata":{},"can_trade":true,"can_cancel":true,"can_view":true}]}}'
+    http_version: 
+  recorded_at: Wed, 10 Oct 2018 19:36:05 GMT
+recorded_with: VCR 4.0.0

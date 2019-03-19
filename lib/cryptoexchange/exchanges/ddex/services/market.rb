@@ -20,14 +20,14 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          output['data']['tickers'].map do |output|
-            base, target = output['pair'].split('-')
+          output['data']['tickers'].map do |pair|
+            base, target = pair['marketId'].split('-')
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
                             target: target,
                             market: Ddex::Market::NAME
                           )
-            adapt(output, market_pair)
+            adapt(pair, market_pair)
           end
         end
 
@@ -43,8 +43,8 @@ module Cryptoexchange::Exchanges
           ticker.ask       = NumericHelper.to_d(output['ask'])
           ticker.low       = NumericHelper.to_d(output['low'])
           ticker.high      = NumericHelper.to_d(output['high'])
-          
-          ticker.timestamp = output['updatedAt'].to_i / 1000
+
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

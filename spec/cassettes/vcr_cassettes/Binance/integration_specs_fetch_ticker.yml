@@ -2,35 +2,63 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.binance.com/api/v1/ticker/24hr?symbol=ETHBTC
+    uri: https://api.binance.com/api/v1/ticker/24hr?symbol=ETHBTC
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       Connection:
       - close
       Host:
-      - www.binance.com
+      - api.binance.com
       User-Agent:
-      - http.rb/1.0.4
+      - http.rb/3.0.0
   response:
     status:
       code: 200
       message: OK
     headers:
-      Date:
-      - Mon, 16 Oct 2017 23:06:49 GMT
       Content-Type:
-      - text/html;charset=utf-8
+      - application/json;charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
       - close
+      Date:
+      - Tue, 29 Jan 2019 14:25:03 GMT
       Server:
       - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 4b6a36ce887a1dca580b142a77ee06df.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - a9_C6O9CAZMa0kqvcW7euXivor38sofynA1i-u9fJ1v7HNAF1hsF1g==
     body:
       encoding: UTF-8
-      string: '{"priceChange":"-0.00032200","priceChangePercent":"-0.546","weightedAvgPrice":"0.06013048","prevClosePrice":"0.05876800","lastPrice":"0.05861800","lastQty":"7.32800000","bidPrice":"0.05860000","bidQty":"8.55100000","askPrice":"0.05868000","askQty":"0.02000000","openPrice":"0.05894000","highPrice":"0.06216600","lowPrice":"0.05820900","volume":"32499.85700000","quoteVolume":"1954.23205043","openTime":1508108809488,"closeTime":1508195209488,"firstId":2109065,"lastId":2137995,"count":28928}'
+      string: '{"symbol":"ETHBTC","priceChange":"0.00056500","priceChangePercent":"1.867","weightedAvgPrice":"0.03043293","prevClosePrice":"0.03026300","lastPrice":"0.03082800","lastQty":"0.48600000","bidPrice":"0.03082600","bidQty":"0.48600000","askPrice":"0.03083100","askQty":"0.48600000","openPrice":"0.03026300","highPrice":"0.03099900","lowPrice":"0.02980500","volume":"264824.06200000","quoteVolume":"8059.37123114","openTime":1548685503543,"closeTime":1548771903543,"firstId":104498242,"lastId":104693709,"count":195468}'
     http_version: 
-  recorded_at: Mon, 16 Oct 2017 23:03:27 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Tue, 29 Jan 2019 14:25:03 GMT
+recorded_with: VCR 4.0.0

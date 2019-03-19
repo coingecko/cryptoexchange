@@ -8,7 +8,7 @@ module Cryptoexchange
       end
 
       def fetch(endpoint)
-        LruTtlCache.ticker_cache.getset(endpoint) do
+        Cryptoexchange::Cache.ticker_cache.fetch(endpoint) do
           begin
             response = http_get(endpoint)
             if response.code == 200
@@ -31,7 +31,7 @@ module Cryptoexchange
       end
 
       def fetch_using_post(endpoint, params, headers = false)
-        LruTtlCache.ticker_cache.getset([endpoint, params]) do
+        Cryptoexchange::Cache.ticker_cache.fetch([endpoint, params]) do
           response = if headers
                        http_post_with_headers(endpoint, params, headers)
                      else

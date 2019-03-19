@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://p2pb2b.io/api/v1/public/history/result?limit=100&market=ETH_BTC&since=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - p2pb2b.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 08 Jan 2019 21:45:54 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d2b577e954f2df0b887c6008e2ca500151546983954; expires=Wed, 08-Jan-20
+        21:45:54 GMT; path=/; domain=.p2pb2b.io; HttpOnly; Secure
+      Cache-Control:
+      - no-cache, private
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=31536000
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4961da90ffb46a73-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"tid":1675566,"type":"sell","date":1546983914,"amount":"10.87881276","price":"0.03725"},{"tid":1675520,"type":"buy","date":1546983736,"amount":"5.92460993","price":"0.037273"},{"tid":1675475,"type":"buy","date":1546983558,"amount":"108.0106163","price":"0.037303"},{"tid":1675440,"type":"sell","date":1546983440,"amount":"175.86524025","price":"0.03733"},{"tid":1675422,"type":"sell","date":1546983322,"amount":"162.38437998","price":"0.037286"},{"tid":1675377,"type":"sell","date":1546983142,"amount":"70.99187941","price":"0.03733"},{"tid":1675335,"type":"sell","date":1546982965,"amount":"160.09462838","price":"0.037318"},{"tid":1675289,"type":"buy","date":1546982777,"amount":"9.25482351","price":"0.037322"},{"tid":1675242,"type":"buy","date":1546982601,"amount":"190.47805158","price":"0.037296"},{"tid":1675206,"type":"sell","date":1546982474,"amount":"142.00131645","price":"0.037284"},{"tid":1675176,"type":"sell","date":1546982357,"amount":"114.8196319","price":"0.03731"},{"tid":1675137,"type":"sell","date":1546982233,"amount":"176.82534815","price":"0.037333"},{"tid":1675093,"type":"sell","date":1546982052,"amount":"183.59033709","price":"0.037315"},{"tid":1675060,"type":"buy","date":1546981883,"amount":"138.09867858","price":"0.03729"},{"tid":1675025,"type":"buy","date":1546981757,"amount":"142.51829065","price":"0.037275"},{"tid":1674962,"type":"sell","date":1546981463,"amount":"137.22732492","price":"0.037266"},{"tid":1674931,"type":"buy","date":1546981345,"amount":"113.18684307","price":"0.037255"},{"tid":1674904,"type":"sell","date":1546981239,"amount":"0.06058234","price":"0.037092"},{"tid":1674897,"type":"sell","date":1546981216,"amount":"168.2112537","price":"0.037286"},{"tid":1674864,"type":"sell","date":1546981093,"amount":"165.94536117","price":"0.037295"},{"tid":1674838,"type":"buy","date":1546980978,"amount":"15.45517694","price":"0.037287"},{"tid":1674799,"type":"sell","date":1546980850,"amount":"80.15556221","price":"0.037297"},{"tid":1674759,"type":"sell","date":1546980682,"amount":"141.14726771","price":"0.037303"},{"tid":1674706,"type":"buy","date":1546980491,"amount":"167.5018888","price":"0.037302"},{"tid":1674669,"type":"sell","date":1546980320,"amount":"60.84798618","price":"0.037296"},{"tid":1674615,"type":"buy","date":1546980131,"amount":"74.11852413","price":"0.037309"},{"tid":1674585,"type":"buy","date":1546979966,"amount":"100.81670378","price":"0.037344"},{"tid":1674554,"type":"buy","date":1546979844,"amount":"167.08978603","price":"0.037345"},{"tid":1674521,"type":"buy","date":1546979714,"amount":"38.48898488","price":"0.03735"},{"tid":1674480,"type":"buy","date":1546979538,"amount":"146.53652542","price":"0.03735"},{"tid":1674445,"type":"sell","date":1546979362,"amount":"14.78871423","price":"0.037353"},{"tid":1674407,"type":"buy","date":1546979235,"amount":"34.12158171","price":"0.03736"},{"tid":1674374,"type":"sell","date":1546979115,"amount":"71.60286931","price":"0.037332"},{"tid":1674356,"type":"sell","date":1546978999,"amount":"195.2690198","price":"0.037342"},{"tid":1674313,"type":"sell","date":1546978824,"amount":"67.75141113","price":"0.037366"},{"tid":1674250,"type":"buy","date":1546978631,"amount":"115.7164417","price":"0.037368"},{"tid":1674219,"type":"buy","date":1546978510,"amount":"3.34484238","price":"0.037368"},{"tid":1674191,"type":"buy","date":1546978392,"amount":"199.63961906","price":"0.03738"},{"tid":1674146,"type":"buy","date":1546978216,"amount":"53.90501761","price":"0.037369"},{"tid":1674104,"type":"buy","date":1546978034,"amount":"132.11719883","price":"0.037296"},{"tid":1674084,"type":"sell","date":1546977915,"amount":"110.99068626","price":"0.037282"},{"tid":1674035,"type":"buy","date":1546977733,"amount":"181.9365254","price":"0.037341"},{"tid":1674007,"type":"sell","date":1546977611,"amount":"162.61959444","price":"0.03727"},{"tid":1673978,"type":"buy","date":1546977496,"amount":"35.31758206","price":"0.03728"},{"tid":1673943,"type":"sell","date":1546977323,"amount":"166.7308102","price":"0.037284"},{"tid":1673893,"type":"sell","date":1546977133,"amount":"165.08546126","price":"0.037286"},{"tid":1673862,"type":"buy","date":1546977013,"amount":"38.99437004","price":"0.037265"},{"tid":1673833,"type":"sell","date":1546976895,"amount":"143.82872165","price":"0.037272"},{"tid":1673792,"type":"buy","date":1546976713,"amount":"31.44848499","price":"0.037272"},{"tid":1673736,"type":"buy","date":1546976530,"amount":"186.002426","price":"0.03727"},{"tid":1673698,"type":"buy","date":1546976365,"amount":"54.39871899","price":"0.037257"},{"tid":1673648,"type":"sell","date":1546976175,"amount":"204.44126592","price":"0.037292"},{"tid":1673602,"type":"sell","date":1546975994,"amount":"105.08499196","price":"0.037262"},{"tid":1673577,"type":"buy","date":1546975879,"amount":"91.81528541","price":"0.037262"},{"tid":1673551,"type":"buy","date":1546975763,"amount":"157.14580843","price":"0.037281"},{"tid":1673499,"type":"sell","date":1546975571,"amount":"36.52046019","price":"0.037283"},{"tid":1673461,"type":"buy","date":1546975397,"amount":"107.00249647","price":"0.037291"},{"tid":1673417,"type":"sell","date":1546975225,"amount":"182.6038094","price":"0.037281"},{"tid":1673386,"type":"sell","date":1546975103,"amount":"198.7222725","price":"0.037275"},{"tid":1673320,"type":"sell","date":1546974913,"amount":"125.10584206","price":"0.037256"},{"tid":1673283,"type":"sell","date":1546974739,"amount":"6.92514864","price":"0.037264"},{"tid":1673228,"type":"buy","date":1546974552,"amount":"98.21103722","price":"0.037284"},{"tid":1673185,"type":"sell","date":1546974374,"amount":"117.09868199","price":"0.037265"},{"tid":1673155,"type":"sell","date":1546974251,"amount":"99.00490657","price":"0.037274"},{"tid":1673113,"type":"buy","date":1546974076,"amount":"184.15906168","price":"0.037273"},{"tid":1673070,"type":"buy","date":1546973893,"amount":"208.87546506","price":"0.037261"},{"tid":1673044,"type":"buy","date":1546973780,"amount":"122.04638642","price":"0.037264"},{"tid":1673002,"type":"sell","date":1546973599,"amount":"166.80611001","price":"0.037263"},{"tid":1672954,"type":"sell","date":1546973411,"amount":"144.12411891","price":"0.03726"},{"tid":1672918,"type":"sell","date":1546973244,"amount":"122.87614486","price":"0.037265"},{"tid":1672871,"type":"buy","date":1546973062,"amount":"111.12617586","price":"0.037257"},{"tid":1672837,"type":"buy","date":1546972937,"amount":"96.61843122","price":"0.037265"},{"tid":1672790,"type":"sell","date":1546972754,"amount":"112.2718563","price":"0.037257"},{"tid":1672760,"type":"buy","date":1546972636,"amount":"122.62574465","price":"0.037279"},{"tid":1672734,"type":"buy","date":1546972462,"amount":"178.26854543","price":"0.037262"},{"tid":1672694,"type":"sell","date":1546972284,"amount":"135.94018789","price":"0.037288"},{"tid":1672660,"type":"buy","date":1546972156,"amount":"147.02291524","price":"0.037279"},{"tid":1672639,"type":"sell","date":1546972043,"amount":"108.57236895","price":"0.037284"},{"tid":1672598,"type":"sell","date":1546971864,"amount":"82.51130694","price":"0.037267"},{"tid":1672556,"type":"sell","date":1546971736,"amount":"30.72522945","price":"0.037271"},{"tid":1672510,"type":"sell","date":1546971552,"amount":"103.81679681","price":"0.037268"},{"tid":1672476,"type":"buy","date":1546971379,"amount":"174.17111386","price":"0.037256"},{"tid":1672434,"type":"buy","date":1546971253,"amount":"128.29166942","price":"0.037256"},{"tid":1672391,"type":"buy","date":1546971073,"amount":"145.55519707","price":"0.03729"},{"tid":1672357,"type":"sell","date":1546970899,"amount":"25.3384004","price":"0.037299"},{"tid":1672333,"type":"sell","date":1546970775,"amount":"74.70120129","price":"0.037264"},{"tid":1672300,"type":"sell","date":1546970598,"amount":"26.05370628","price":"0.037283"},{"tid":1672268,"type":"sell","date":1546970479,"amount":"153.43497678","price":"0.037287"},{"tid":1672236,"type":"buy","date":1546970352,"amount":"22.89616528","price":"0.037253"},{"tid":1672205,"type":"sell","date":1546970185,"amount":"149.87445005","price":"0.037235"},{"tid":1672166,"type":"buy","date":1546970052,"amount":"78.18300137","price":"0.037274"},{"tid":1672149,"type":"buy","date":1546969941,"amount":"184.18494324","price":"0.037269"},{"tid":1672123,"type":"sell","date":1546969825,"amount":"136.76969631","price":"0.037268"},{"tid":1672088,"type":"sell","date":1546969701,"amount":"199.75345421","price":"0.037275"},{"tid":1672059,"type":"sell","date":1546969616,"amount":"174.96589171","price":"0.03727"},{"tid":1672031,"type":"buy","date":1546969452,"amount":"90.7007589","price":"0.03723"},{"tid":1671988,"type":"buy","date":1546969273,"amount":"135.05641676","price":"0.03723"},{"tid":1671973,"type":"sell","date":1546969158,"amount":"53.22179885","price":"0.037254"},{"tid":1671936,"type":"buy","date":1546968973,"amount":"104.92941096","price":"0.037307"},{"tid":1671913,"type":"buy","date":1546968857,"amount":"95.7013334","price":"0.037319"}]'
+    http_version: 
+  recorded_at: Tue, 08 Jan 2019 21:45:54 GMT
+recorded_with: VCR 4.0.0

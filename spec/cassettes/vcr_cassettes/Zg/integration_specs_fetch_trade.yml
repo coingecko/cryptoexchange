@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.zg.com/api/v1/trades?size=20&symbol=ZG_CNZ
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.zg.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 24 Jan 2019 03:44:04 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '1622'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Cdn-Edge:
+      - 5efb898,-
+      Set-Cookie:
+      - __cdnuid=6085f8601adc2a247fe2e12b5eaa3247; max-age=31536000; path=/; HttpOnly
+      X-Cache:
+      - bypass
+    body:
+      encoding: UTF-8
+      string: '[{"amount":"6696.9697","price":"0.066","side":"sell","timestamp":"1548301443010"},{"amount":"6459.9092","price":"0.0661","side":"sell","timestamp":"1548301440075"},{"amount":"6641.4523","price":"0.0661","side":"sell","timestamp":"1548301438042"},{"amount":"5363.6364","price":"0.066","side":"sell","timestamp":"1548301437012"},{"amount":"5900.1513","price":"0.0661","side":"sell","timestamp":"1548301434075"},{"amount":"191.8963","price":"0.0661","side":"buy","timestamp":"1548301433629"},{"amount":"4916.7927","price":"0.0661","side":"sell","timestamp":"1548301432041"},{"amount":"5136.3636","price":"0.066","side":"buy","timestamp":"1548301430008"},{"amount":"7303.0303","price":"0.066","side":"buy","timestamp":"1548301429077"},{"amount":"5409.0909","price":"0.066","side":"buy","timestamp":"1548301426043"},{"amount":"5355.5219","price":"0.0661","side":"buy","timestamp":"1548301424010"},{"amount":"5733.7368","price":"0.0661","side":"sell","timestamp":"1548301422071"},{"amount":"5642.9652","price":"0.0661","side":"sell","timestamp":"1548301421039"},{"amount":"5666.6667","price":"0.066","side":"buy","timestamp":"1548301419005"},{"amount":"5627.8366","price":"0.0661","side":"sell","timestamp":"1548301416069"},{"amount":"6898.6384","price":"0.0661","side":"sell","timestamp":"1548301414036"},{"amount":"5355.5219","price":"0.0661","side":"sell","timestamp":"1548301413003"},{"amount":"6172.466","price":"0.0661","side":"buy","timestamp":"1548301411070"},{"amount":"6287.8788","price":"0.066","side":"buy","timestamp":"1548301408036"},{"amount":"5257.5758","price":"0.066","side":"buy","timestamp":"1548301407001"}]'
+    http_version: 
+  recorded_at: Thu, 24 Jan 2019 03:44:04 GMT
+recorded_with: VCR 4.0.0

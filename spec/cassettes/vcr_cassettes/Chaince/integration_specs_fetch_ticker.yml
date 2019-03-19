@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.chaince.com/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.chaince.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 15 Nov 2018 16:03:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1901'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d1563417cdd1ab4ebcd582b4bcf8d5e861542297833; expires=Fri, 15-Nov-19
+        16:03:53 GMT; path=/; domain=.chaince.com; HttpOnly
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 47a2f350cf5569fb-LHR
+    body:
+      encoding: UTF-8
+      string: '{"bnteos":{"change":"-2.44%","high":"0.2460","low":"0.2211","price":"0.2400","volume":"11966.110"},"boideos":{"change":"0.00%","high":"0.000036","low":"0.000032","price":"0.000036","volume":"27686485.6"},"btceos":{"change":"1.65%","high":"1250.0","low":"1210.0","price":"1230.0","volume":"8.614211"},"ceteos":{"change":"-2.63%","high":"0.0039","low":"0.0037","price":"0.0037","volume":"9992896.6"},"cetusdt":{"change":"-13.54%","high":"0.0203","low":"0.0166","price":"0.0166","volume":"1497952.1"},"ecasheos":{"change":"0.00%","high":"0.00000","low":"0.00000","price":"0.00000","volume":"0.0"},"eosisheos":{"change":"-18.60%","high":"0.00258","low":"0.00210","price":"0.00210","volume":"1129417.5"},"eosusdt":{"change":"-7.14%","high":"4.90","low":"4.36","price":"4.55","volume":"172803.12"},"etheos":{"change":"0.00%","high":"40.0","low":"39.1","price":"39.2","volume":"224.37001"},"horuseos":{"change":"8.90%","high":"0.00233","low":"0.00173","price":"0.00208","volume":"2807106.3"},"hvteos":{"change":"-8.88%","high":"0.00230","low":"0.00195","price":"0.00195","volume":"2936024.5"},"iqeos":{"change":"-7.53%","high":"0.00149","low":"0.00132","price":"0.00135","volume":"10957242.3"},"karmaeos":{"change":"10.48%","high":"0.000348","low":"0.000295","price":"0.000348","volume":"17212822.1"},"meetoneeos":{"change":"-2.44%","high":"0.00041","low":"0.00039","price":"0.00040","volume":"11480829.5"},"octeos":{"change":"-7.56%","high":"0.0248","low":"0.0200","price":"0.0220","volume":"190985.13"},"pubeos":{"change":"10.98%","high":"0.00091","low":"0.00082","price":"0.00091","volume":"15202225.8"},"rameos":{"change":"-2.27%","high":"0.0880","low":"0.0860","price":"0.0860","volume":"1039.957"},"trybeeos":{"change":"-8.16%","high":"0.00294","low":"0.00270","price":"0.00270","volume":"688195.6"},"zkseos":{"change":"-27.27%","high":"0.00077","low":"0.00044","price":"0.00056","volume":"1601945.3"}}'
+    http_version: 
+  recorded_at: Thu, 15 Nov 2018 16:03:53 GMT
+recorded_with: VCR 4.0.0

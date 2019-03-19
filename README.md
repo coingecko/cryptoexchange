@@ -500,7 +500,6 @@ Or install it yourself as:
 
 ```
   client.trade_page_url 'binance', base: 'BTC', target: 'USDT'
-
 ```
 
 
@@ -525,6 +524,29 @@ Name the file <exchange_name>.yml and place it under the config/cryptoexchange d
       :target: KRW
     - :base: ETC
       :target: KRW
+```
+
+### configuration (cache)
+
+This gem uses https://github.com/SamSaffron/lru_redux cache by default so it doesn't hit exchanges with endpoint that returns multiple tickers for each ticker you are querying.
+
+Alternatively, if you are using rails you can use rails cache (ActiveSupport::Cache::Store) by changing the config:
+create the following file `/config/initializers/cryptoexchange.rb` and have the config inside.
+
+```
+Cryptoexchange.configure do |config|
+  config.ticker_ttl = 10
+  # ticker cache duration in seconds
+  # default value = 10
+
+  config.cache_size = 200
+  # lru_redux cache store, ONLY EFFECTIVE if you use lru_redux cache which is the default, this value will be ignored when using rails cache
+  # default value = 200
+
+  config.rails_cache = false
+  # enables rails cache
+  # default value = false
+end
 ```
 
 ## Development

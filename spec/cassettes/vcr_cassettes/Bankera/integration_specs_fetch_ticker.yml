@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-exchange.bankera.com/tickers/eth-btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api-exchange.bankera.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 09 Jan 2019 02:48:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=ddf3320546e709e8e2678e8d478b57ca61547002098; expires=Thu, 09-Jan-20
+        02:48:18 GMT; path=/; domain=.bankera.com; HttpOnly; Secure
+      Allow:
+      - GET
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      - DENY
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4963958e4d70a308-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ticker":{"id":1,"high":"0.03816409","low":"0.03713583","bid":"0.03713583","ask":"0.03771402","last":"0.03771402","volume":"0.775267940000000000","timestamp":"1547002099000"}}'
+    http_version: 
+  recorded_at: Wed, 09 Jan 2019 02:48:19 GMT
+recorded_with: VCR 4.0.0

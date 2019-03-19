@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.ddex.io/v3/markets/ABT-WETH/orderbook
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.ddex.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 02 Jan 2019 10:25:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '170'
+      Connection:
+      - close
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"aa-60ogtw3DRlMisNyasCkltEPZS+Y"
+      X-Kong-Upstream-Latency:
+      - '7'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.14.1
+    body:
+      encoding: UTF-8
+      string: '{"status":0,"desc":"success","data":{"orderBook":{"marketId":"ABT-WETH","bids":[{"price":"0.00059162","amount":"1005"}],"asks":[{"price":"0.00060842","amount":"1012"}]}}}'
+    http_version: 
+  recorded_at: Wed, 02 Jan 2019 10:25:20 GMT
+recorded_with: VCR 4.0.0

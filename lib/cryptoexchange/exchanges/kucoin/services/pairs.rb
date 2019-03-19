@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Kucoin
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Kucoin::Market::API_URL}/market/open/symbols"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Kucoin::Market::API_URL}/symbols"
 
         def fetch
           output = super

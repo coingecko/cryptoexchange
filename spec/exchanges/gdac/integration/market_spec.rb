@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Gdac integration specs' do
   client = Cryptoexchange::Client.new
-  let(:eth_bos_pair) { Cryptoexchange::Models::MarketPair.new(base: 'eth', target: 'bos', market: 'gdac') }
+  let(:eth_bos_pair) { Cryptoexchange::Models::MarketPair.new(base: 'eth', target: 'krw', market: 'gdac') }
 
   it 'fetch pairs' do
     pairs = client.pairs('gdac')
@@ -18,7 +18,7 @@ RSpec.describe 'Gdac integration specs' do
     ticker = client.ticker(eth_bos_pair)
 
     expect(ticker.base).to eq 'ETH'
-    expect(ticker.target).to eq 'BOS'
+    expect(ticker.target).to eq 'KRW'
     expect(ticker.market).to eq 'gdac'
     expect(ticker.last).to be_a Numeric
     expect(ticker.bid).to be_a Numeric

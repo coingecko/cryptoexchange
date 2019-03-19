@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.zebapi.com/api/v1/market/ticker-new/BTC/INR
+    uri: https://www.zebapi.com/pro/v1/market
     body:
       encoding: UTF-8
       string: ''
@@ -18,27 +18,38 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-store, must-revalidate, no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '196'
+      Date:
+      - Thu, 28 Feb 2019 07:17:41 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Expires:
-      - Mon, 23 Apr 2018 05:55:32 GMT
-      Etag:
-      - W/"c4-p4ZrWX2FMoY8PwTa4xry2YLJwsw"
-      X-Powered-By:
-      - Express
-      Date:
-      - Mon, 23 Apr 2018 05:55:32 GMT
+      Content-Length:
+      - '1872'
       Connection:
       - close
+      Set-Cookie:
+      - __cfduid=d879b491610db3c0c09887d40da2cb93d1551338261; expires=Fri, 28-Feb-20
+        07:17:41 GMT; path=/; domain=.zebapi.com; HttpOnly
+      Etag:
+      - W/"750-/mFQE8PIbXcqKM2S/cLBHmrrxhE"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type
+      X-Powered-By:
+      - Express
+      Request-Context:
+      - appId=cid-v1:0d576db7-8023-44b1-a82e-b12249ded98e
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4b011ce789f3c347-SIN
     body:
       encoding: UTF-8
-      string: '{"sell":"575990","buy":"575999","pricechange":"-0.52","volume":169.7241727,"24hoursHigh":"582989","24hoursLow":"570000","market":"575999","pair":"BTC-INR","virtualCurrency":"BTC","currency":"INR"}'
+      string: '[{"buy":"0","sell":"0","market":"0.0254756","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"BCH-BTC","virtualCurrency":"BCH","currency":"BTC"},{"buy":"0","sell":"85.88000000","market":"85.88","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"BCH-EUR","virtualCurrency":"BCH","currency":"EUR"},{"buy":"3340.00000000","sell":"3330.00000000","market":"3340","volume":0.58867634,"pricechange":"-0.36","24hoursHigh":"3359","24hoursLow":"3145","pair":"BTC-EUR","virtualCurrency":"BTC","currency":"EUR"},{"buy":"0","sell":"0","market":"0.000553","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"EOS-BTC","virtualCurrency":"EOS","currency":"BTC"},{"buy":"0","sell":"0","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"EOS-EUR","virtualCurrency":"EOS","currency":"EUR"},{"buy":"0","sell":"0","market":"0.026691","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"ETH-BTC","virtualCurrency":"ETH","currency":"BTC"},{"buy":"0","sell":"93.00000000","market":"92.98","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"ETH-EUR","virtualCurrency":"ETH","currency":"EUR"},{"buy":"0","sell":"0","market":"0.009899","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"LTC-BTC","virtualCurrency":"LTC","currency":"BTC"},{"buy":"0","sell":"37.50000000","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"LTC-EUR","virtualCurrency":"LTC","currency":"EUR"},{"buy":"0","sell":"0","market":"0.00009313","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"XRP-BTC","virtualCurrency":"XRP","currency":"BTC"},{"buy":"0","sell":"0","market":"0.292874","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"XRP-EUR","virtualCurrency":"XRP","currency":"EUR"}]'
     http_version: 
-  recorded_at: Mon, 23 Apr 2018 05:55:32 GMT
+  recorded_at: Thu, 28 Feb 2019 07:17:41 GMT
 recorded_with: VCR 4.0.0

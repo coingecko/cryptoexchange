@@ -11,8 +11,7 @@ module Cryptoexchange::Exchanges
         def fetch(market_pair)
           ctx = OpenSSL::SSL::SSLContext.new
           ctx.verify_mode = OpenSSL::SSL::VERIFY_NONE
-          result = HTTP.get(ticker_url(market_pair), ssl_context: ctx)
-          output = JSON.parse(result)
+          output = HTTP.get(ticker_url(market_pair), ssl_context: ctx).parse(:json)
           adapt(market_pair, output)
         end
 

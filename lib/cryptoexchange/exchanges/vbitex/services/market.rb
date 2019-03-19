@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Vbitex::Market::API_URL}/Home/markets/tickers.html"
+          "#{Cryptoexchange::Exchanges::Vbitex::Market::API_URL}/Home/markets/tickers"
         end
 
 
@@ -29,6 +29,7 @@ module Cryptoexchange::Exchanges
           ticker.base      = base
           ticker.target    = target
           ticker.market    = Vbitex::Market::NAME
+          ticker.last      = NumericHelper.to_d(HashHelper.dig(output, 'new_price'))
           ticker.high      = NumericHelper.to_d(HashHelper.dig(output, '24H_max', 'price'))
           ticker.low       = NumericHelper.to_d(HashHelper.dig(output, '24H_min', 'price'))
           ticker.volume    = NumericHelper.to_d(output['volume_24h'])

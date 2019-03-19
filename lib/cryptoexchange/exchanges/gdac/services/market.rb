@@ -9,7 +9,13 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch
-          output = super ticker_url
+          ctx = OpenSSL::SSL::SSLContext.new
+          ctx.verify_mode = OpenSSL::SSL::VERIFY_NONE
+
+          output = Cryptoexchange::Cache.ticker_cache.fetch(ticker_url) do
+            HTTP.get(ticker_url, ssl_context: ctx).parse(:json)
+          end
+
           adapt_all(output)
         end
 
@@ -22,7 +28,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(market_data)
-          base, target = market_data['marketName'].split('-')
+          target, base = market_data['marketName'].split('-')
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = base
           ticker.target = target
@@ -32,7 +38,7 @@ module Cryptoexchange::Exchanges
           ticker.last = NumericHelper.to_d(market_data['last'])
           ticker.high = NumericHelper.to_d(market_data['high'])
           ticker.low = NumericHelper.to_d(market_data['low'])
-          ticker.volume = NumericHelper.to_d(market_data['baseVolume'])
+          ticker.volume = NumericHelper.to_d(market_data['volume'])
           ticker.timestamp = nil
           ticker.payload = market_data
           ticker

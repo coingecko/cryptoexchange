@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Dobitrade::Market::API_URL}/market/orderbook?market=#{market_pair.base.downcase}_#{market_pair.target.downcase}&limit=200"
+          "#{Cryptoexchange::Exchanges::Dobitrade::Market::API_URL}/market/orderbook?market=#{market_pair.base.downcase}_#{market_pair.target.downcase}"
         end
 
         def adapt(output, market_pair)
