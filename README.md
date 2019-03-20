@@ -66,6 +66,7 @@ Or install it yourself as:
 | Bitconnect        | Y       |            |         |         | Y           |          | bitconnect        |       |
 | Bitebtc           | Y       | Y          | Y       |         | Y           | Y        | bitebtc           |       |
 | Bitex.la          | Y       | Y          |         |         | Y           |          | bitex             |       |
+| Bitexbook         | Y       | N          | N       |         | Y           | Y        | bitexbook         |       |
 | Bitexlive         | Y       | N          | N       |         | Y           | Y        | bitexlive         |       |
 | BitFex.Trade      | Y       |            |         |         | Y           | Y        | bitfex            |       |
 | Bitfinex          | Y       |            |         |         | Y           |          | bitfinex          |       |
