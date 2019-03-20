@@ -25,7 +25,6 @@ module Cryptoexchange::Exchanges
               base: base,
               target: target,
               market: OkexSwap::Market::NAME,
-              market_type: 'futures', 
               contract_interval: "perpetual",
             )
             adapt(ticker, market_pair)
@@ -45,7 +44,6 @@ module Cryptoexchange::Exchanges
           ticker.volume    = NumericHelper.to_d(output['volume_24h'])
           ticker.timestamp = nil
           ticker.payload   = output
-          ticker.market_type = "futures"
           ticker.contract_interval = "perpetual"
           ticker
         end

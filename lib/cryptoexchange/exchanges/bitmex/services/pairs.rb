@@ -14,7 +14,6 @@ module Cryptoexchange::Exchanges
                               base: pair[:base],
                               target: pair[:target],
                               market: Bitmex::Market::NAME,
-                              market_type: pair[:market_type],
                               contract_interval: pair[:contract_interval],
                             )
           end

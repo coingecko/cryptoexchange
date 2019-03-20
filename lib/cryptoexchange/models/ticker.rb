@@ -4,7 +4,7 @@ module Cryptoexchange
       attr_accessor :base, :target, :market, :last,
                     :bid, :ask, :high, :low, :change,
                     :volume, :timestamp, :payload,
-                    :market_type, :contract_interval
+                    :contract_interval
 
       # Volume is always in base
 
