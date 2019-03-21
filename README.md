@@ -354,6 +354,7 @@ Or install it yourself as:
 | Trade.io          | Y       |            |         |         | Y           |          | tradeio           |       |
 | Trade.mn          | Y       | Y          | Y       |         | Y           |          | trademn           |       |
 | TrocaNinja        | Y       | N          | N       |         | Y           |          | troca_ninja       |       |
+| TronTrade         | Y       | N          | N       |         | Y           |          | tron_trade        |       |
 | TrustDex **       | Y       |            |         |         | Y           |          | trust_dex         |       |
 | TuxExchange       | Y       |            |         |         | Y           |          | tux_exchange      |       |
 | TRXMarket         | Y       |            |         |         | Y           |          | trx_market        |       |
