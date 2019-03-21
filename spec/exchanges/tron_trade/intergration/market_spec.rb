@@ -14,6 +14,11 @@ RSpec.describe 'TronTrade integration specs' do
     expect(pair.market).to eq 'tron_trade'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'tron_trade', base: play_trx_pair.base, target: play_trx_pair.target
+    expect(trade_page_url).to eq "https://trontrade.io"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(play_trx_pair)
 
