@@ -66,6 +66,7 @@ Or install it yourself as:
 | Bitconnect        | Y       |            |         |         | Y           |          | bitconnect        |       |
 | Bitebtc           | Y       | Y          | Y       |         | Y           | Y        | bitebtc           |       |
 | Bitex.la          | Y       | Y          |         |         | Y           |          | bitex             |       |
+| Bitexbook         | Y       | N          | N       |         | Y           | Y        | bitexbook         |       |
 | Bitexlive         | Y       | N          | N       |         | Y           | Y        | bitexlive         |       |
 | BitFex.Trade      | Y       |            |         |         | Y           | Y        | bitfex            |       |
 | Bitfinex          | Y       |            |         |         | Y           |          | bitfinex          |       |
@@ -195,6 +196,7 @@ Or install it yourself as:
 | DEx.top           | Y       | Y          | Y       |         | Y           |          | dextop            |       |
 | Dflow             | Y       |            |         |         | Y           | Y        | dflow             |       |
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |       |
+| Digitalprice      | Y       | Y          | Y       |         | Y           | Y        | digitalprice      |       |
 | Dobitrade         | Y       | Y          | N       |         | Y           | Y        | dobitrade         |       |
 | Dragonex          | Y       | Y          | N       |         | Y           | Y        | dragonex          |       |
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |       |
@@ -352,6 +354,7 @@ Or install it yourself as:
 | Trade.io          | Y       |            |         |         | Y           |          | tradeio           |       |
 | Trade.mn          | Y       | Y          | Y       |         | Y           |          | trademn           |       |
 | TrocaNinja        | Y       | N          | N       |         | Y           |          | troca_ninja       |       |
+| TronTrade         | Y       | N          | N       |         | Y           |          | tron_trade        |       |
 | TrustDex **       | Y       |            |         |         | Y           |          | trust_dex         |       |
 | TuxExchange       | Y       |            |         |         | Y           |          | tux_exchange      |       |
 | TRXMarket         | Y       |            |         |         | Y           |          | trx_market        |       |

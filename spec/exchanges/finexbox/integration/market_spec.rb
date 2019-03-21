@@ -4,7 +4,7 @@ RSpec.describe 'Finexbox integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:eth_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'eth', target: 'btc', market: 'finexbox') }
 
-  it 'fetch pairs' do
+  xit 'fetch pairs' do
     pairs = client.pairs('finexbox')
     expect(pairs).not_to be_empty
 
@@ -14,12 +14,12 @@ RSpec.describe 'Finexbox integration specs' do
     expect(pair.market).to eq 'finexbox'
   end
 
-  it 'give trade url' do
+  xit 'give trade url' do
     trade_page_url = client.trade_page_url 'finexbox', base: eth_btc_pair.base, target: eth_btc_pair.target
     expect(trade_page_url).to eq "https://www.finexbox.com/Home/Orders/market/pair/ETH-BTC.html"
   end
 
-  it 'fetch ticker' do
+  xit 'fetch ticker' do
     ticker = client.ticker(eth_btc_pair)
 
     expect(ticker.base).to eq 'ETH'
@@ -34,7 +34,7 @@ RSpec.describe 'Finexbox integration specs' do
     expect(ticker.payload).to_not be nil
   end
 
-  it 'fetch order book' do
+  xit 'fetch order book' do
     order_book = client.order_book(eth_btc_pair)
 
     expect(order_book.base).to eq 'ETH'
@@ -49,7 +49,7 @@ RSpec.describe 'Finexbox integration specs' do
     expect(order_book.payload).to_not be nil
   end
 
-  it 'fetch trade' do
+  xit 'fetch trade' do
     trades = client.trades(eth_btc_pair)
     trade = trades.sample
 
