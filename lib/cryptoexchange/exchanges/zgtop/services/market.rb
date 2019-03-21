@@ -18,16 +18,25 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
+          pairs = Cryptoexchange::Exchanges::Zgtop::Services::Pairs.new.fetch
+
           output['data'].map do |output|
-            base, target = output['symbol'].split("_")
+            inst_id = output['symbol']
+            pair = pairs.detect { |pair| pair.inst_id == inst_id }
+
+            next if pair.nil?
+
+            base = pair.base
+            target = pair.target
+
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
                             target: target,
                             market: Zgtop::Market::NAME
                           )
             adapt(output, market_pair)
-          end
-        end        
+          end.compact
+        end
 
         def adapt(output, market_pair)
           ticker = Cryptoexchange::Models::Ticker.new
@@ -38,9 +47,11 @@ module Cryptoexchange::Exchanges
 
           ticker.high      = NumericHelper.to_d(output['high'])
           ticker.low       = NumericHelper.to_d(output['low'])
-          ticker.last      = NumericHelper.to_d(output['prevClose'])
-          ticker.volume    = NumericHelper.to_d(output['volume'])
-          
+          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.volume    = NumericHelper.to_d(output['vol'])
+          ticker.bid       = NumericHelper.to_d(output['buy'])
+          ticker.ask       = NumericHelper.to_d(output['sell'])
+
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
