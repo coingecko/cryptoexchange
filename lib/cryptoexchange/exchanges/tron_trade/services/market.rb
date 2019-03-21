@@ -35,10 +35,10 @@ module Cryptoexchange::Exchanges
           ticker.base      = pair.base
           ticker.target    = pair.target
           ticker.market    = Cryptoexchange::Exchanges::TronTrade::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['stats']['lastPrice']) / 1_000_000
-          ticker.high      = NumericHelper.to_d(output['stats']['high']) / 1_000_000
-          ticker.low       = NumericHelper.to_d(output['stats']['low']) / 1_000_000
-          ticker.volume    = NumericHelper.to_d(output['stats']['volume']) / 1_000_000
+          ticker.last      = NumericHelper.to_d(output['stats']['lastPrice']) / 10**output['tokenDecimalsB'].to_i
+          ticker.high      = NumericHelper.to_d(output['stats']['high']) / 10**output['tokenDecimalsB'].to_i
+          ticker.low       = NumericHelper.to_d(output['stats']['low']) / 10**output['tokenDecimalsB'].to_i
+          ticker.volume    = NumericHelper.to_d(output['stats']['volume']) / 10**output['tokenDecimalsA'].to_i
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
