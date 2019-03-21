@@ -196,6 +196,7 @@ Or install it yourself as:
 | DEx.top           | Y       | Y          | Y       |         | Y           |          | dextop            |       |
 | Dflow             | Y       |            |         |         | Y           | Y        | dflow             |       |
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |       |
+| Digitalprice      | Y       | Y          | Y       |         | Y           | Y        | digitalprice      |       |
 | Dobitrade         | Y       | Y          | N       |         | Y           | Y        | dobitrade         |       |
 | Dragonex          | Y       | Y          | N       |         | Y           | Y        | dragonex          |       |
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |       |
