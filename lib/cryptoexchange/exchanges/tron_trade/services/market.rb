@@ -31,14 +31,16 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, pair)
+          price_decimal    = 10**output['tokenDecimalsB'].to_i
+          volume_decimal   = 10**output['tokenDecimalsA'].to_i
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = pair.base
           ticker.target    = pair.target
           ticker.market    = Cryptoexchange::Exchanges::TronTrade::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['stats']['lastPrice']) / 10**output['tokenDecimalsB'].to_i
-          ticker.high      = NumericHelper.to_d(output['stats']['high']) / 10**output['tokenDecimalsB'].to_i
-          ticker.low       = NumericHelper.to_d(output['stats']['low']) / 10**output['tokenDecimalsB'].to_i
-          ticker.volume    = NumericHelper.to_d(output['stats']['volume']) / 10**output['tokenDecimalsA'].to_i
+          ticker.last      = NumericHelper.to_d(output['stats']['lastPrice']) / price_decimal
+          ticker.high      = NumericHelper.to_d(output['stats']['high']) / price_decimal
+          ticker.low       = NumericHelper.to_d(output['stats']['low']) / price_decimal
+          ticker.volume    = NumericHelper.to_d(output['stats']['volume']) / volume_decimal
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
