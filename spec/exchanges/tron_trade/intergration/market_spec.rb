@@ -25,10 +25,10 @@ RSpec.describe 'TronTrade integration specs' do
     expect(ticker.base).to eq 'PLAY'
     expect(ticker.target).to eq 'TRX'
     expect(ticker.market).to eq 'tron_trade'
-    expect(ticker.last).to be_a Numeric
+    expect(ticker.last).to be_within(0.001).of(0.0025)
     expect(ticker.low).to be_a Numeric
     expect(ticker.high).to be_a Numeric
-    expect(ticker.volume).to be_a Numeric
+    expect(ticker.volume.to_f).to be_within(20_000_000).of(41_416_670)
     expect(ticker.timestamp).to be nil
 
     expect(ticker.payload).to_not be nil
