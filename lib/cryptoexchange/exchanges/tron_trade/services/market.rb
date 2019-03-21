@@ -36,9 +36,9 @@ module Cryptoexchange::Exchanges
           ticker.target    = pair.target
           ticker.market    = Cryptoexchange::Exchanges::TronTrade::Market::NAME
           ticker.last      = NumericHelper.to_d(output['stats']['lastPrice']) / 1_000_000
-          ticker.high      = NumericHelper.to_d(output['stats']['high'])
-          ticker.low       = NumericHelper.to_d(output['stats']['low'])
-          ticker.volume    = NumericHelper.to_d(output['stats']['volume'])
+          ticker.high      = NumericHelper.to_d(output['stats']['high']) / 1_000_000
+          ticker.low       = NumericHelper.to_d(output['stats']['low']) / 1_000_000
+          ticker.volume    = NumericHelper.to_d(output['stats']['volume']) / 1_000_000
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
