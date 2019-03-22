@@ -360,7 +360,7 @@ Or install it yourself as:
 | TRXMarket         | Y       |            |         |         | Y           |          | trx_market        |       |
 | Txbit             | Y       |            |         |         | Y           | Y        | txbit             |       |
 | UEX               | Y       |            |         |         | Y           |          | uex               |       |
-| Unidax            | Y       | N          | N       |         | Y           | N        | unidax           |       |
+| Unidax            | Y       | N          | N       |         | Y           | N        | unidax            |       |
 | Uniswap           | Y       | N          | N       |         | Y           | N        | uniswap           |       |
 | Unocoin           |         |            |         |         |             |          | unocoin           |       |
 | Upbit             | Y       | Y          | Y       |         | Y           | Y        | upbit             |       |
