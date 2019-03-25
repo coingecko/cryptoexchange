@@ -9,10 +9,12 @@ module Cryptoexchange::Exchanges
         end
 
         def separate_symbol(pair)
-          separator = /(USDT|BTC|ETH)\z/i =~ pair
+          separator = /(USDT|BTC|ETH|TRX)\z/i =~ pair
           base      = pair[0..separator - 1]
           target    = pair[separator..-1]
           [base, target]
+        rescue NoMethodError
+          nil
         end
       end
     end
