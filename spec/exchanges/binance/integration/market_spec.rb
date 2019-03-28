@@ -10,11 +10,11 @@ RSpec.describe 'Binance integration specs' do
   it 'fetch pairs' do
     pairs = client.pairs(market)
     expect(pairs).not_to be_empty
-    hashed_pairs = pairs.map { |p| {base: p.base, target: p.target, market: p.market }}
-    expect(hashed_pairs).to include({base: 'ETH', target: 'BTC', market: market})
-    expect(hashed_pairs).to include({base: 'ETH', target: 'USDT', market: market})
-    expect(hashed_pairs).to include({base: 'LSK', target: 'BNB', market: market})
-    expect(hashed_pairs).to include({base: 'QTUM', target: 'ETH', market: market})
+    hashed_pairs = pairs.map { |p| {base: p.base, target: p.target, market: p.market, contract_interval: p.contract_interval }}
+    expect(hashed_pairs).to include({base: 'ETH', target: 'BTC', market: market, contract_interval: ""})
+    expect(hashed_pairs).to include({base: 'ETH', target: 'USDT', market: market, contract_interval: ""})
+    expect(hashed_pairs).to include({base: 'LSK', target: 'BNB', market: market, contract_interval: ""})
+    expect(hashed_pairs).to include({base: 'QTUM', target: 'ETH', market: market, contract_interval: ""})
   end
 
   it 'give trade url' do
@@ -34,6 +34,7 @@ RSpec.describe 'Binance integration specs' do
     expect(ticker.volume).to be_a Numeric
     expect(ticker.last).to be_a Numeric
     expect(ticker.timestamp).to be_a Numeric
+    expect(ticker.contract_interval).to eq ""
     expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
     expect(ticker.payload).to_not be nil
   end
