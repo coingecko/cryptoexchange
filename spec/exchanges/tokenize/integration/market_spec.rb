@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Tokenize integration specs' do
   client = Cryptoexchange::Client.new
-  let(:usd_tkx_pair) { Cryptoexchange::Models::MarketPair.new(base: 'usd', target: 'tkx', market: 'tokenize') }
+  let(:btc_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'eth', market: 'tokenize') }
 
   it 'fetch pairs' do
     pairs = client.pairs('tokenize')
@@ -15,10 +15,10 @@ RSpec.describe 'Tokenize integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(usd_tkx_pair)
+    ticker = client.ticker(btc_eth_pair)
 
-    expect(ticker.base).to eq 'USD'
-    expect(ticker.target).to eq 'TKX'
+    expect(ticker.base).to eq 'BTC'
+    expect(ticker.target).to eq 'ETH'
     expect(ticker.market).to eq 'tokenize'
 
     expect(ticker.volume).to be_a Numeric
@@ -31,4 +31,9 @@ RSpec.describe 'Tokenize integration specs' do
     expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
   end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'tokenize', base: btc_eth_pair.base, target: btc_eth_pair.target
+    expect(trade_page_url).to eq "https://tokenize.exchange/market/BTC-ETH"
+  end  
 end
