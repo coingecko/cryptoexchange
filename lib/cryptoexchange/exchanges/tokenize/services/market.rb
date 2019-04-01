@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Tokenize::Market::API_URL}/market/getmarketsummaries"
+          "#{Cryptoexchange::Exchanges::Tokenize::Market::API_URL}/get-market-summaries"
         end
 
         def adapt_all(output)
