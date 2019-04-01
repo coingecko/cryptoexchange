@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Tokenize
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Tokenize::Market::API_URL}/market/getmarketsummaries"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Tokenize::Market::API_URL}/get-market-summaries"
 
         def fetch
           output = super
