@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://api2.tokenize.exchange/public/v1'
 
       def self.trade_page_url(args = {})
-        "https://tokenize.exchange/market/#{args[:base]}-#{args[:target]}"
+        "https://tokenize.exchange/market/#{args[:target]}-#{args[:base]}"
       end      
     end
   end

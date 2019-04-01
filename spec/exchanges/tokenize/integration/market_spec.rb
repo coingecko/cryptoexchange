@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Tokenize integration specs' do
   client = Cryptoexchange::Client.new
-  let(:btc_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'eth', market: 'tokenize') }
+  let(:btc_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'eth', target: 'btc', market: 'tokenize') }
 
   it 'fetch pairs' do
     pairs = client.pairs('tokenize')
@@ -17,8 +17,8 @@ RSpec.describe 'Tokenize integration specs' do
   it 'fetch ticker' do
     ticker = client.ticker(btc_eth_pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'ETH'
+    expect(ticker.base).to eq 'ETH'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'tokenize'
 
     expect(ticker.volume).to be_a Numeric
