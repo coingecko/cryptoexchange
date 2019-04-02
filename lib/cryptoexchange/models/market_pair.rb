@@ -9,7 +9,7 @@ module Cryptoexchange
         @target = params[:target]
         @market = params[:market]
         @inst_id = params[:inst_id]
-        @contract_interval = params[:contract_interval]
+        @contract_interval = params[:contract_interval] || ""
       end
 
       def target

@@ -18,13 +18,14 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          timestamp = HashHelper.dig(output, 'meta', 'server_time')
-          output['symbols'].map { |market_data| adapt(market_data, timestamp) }
+          output['symbols'].map { |market_data| adapt(market_data) }.compact
         end
 
-        def adapt(market_data, timestamp)
+        def adapt(market_data)
           base, target     = market_data['alias'].split('/')
           data = market_data['statistic'].first
+          return if data.nil?
+
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = base
           ticker.target    = target
@@ -35,7 +36,7 @@ module Cryptoexchange::Exchanges
           ticker.high      = NumericHelper.to_d(data['price_high'])
           ticker.low       = NumericHelper.to_d(data['price_low'])
           ticker.volume    = NumericHelper.to_d(data['volume_base'])
-          ticker.timestamp = Time.parse(timestamp).to_i
+          ticker.timestamp = nil
           ticker.payload   = market_data
           ticker
         end

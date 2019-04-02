@@ -10,6 +10,7 @@ module Cryptoexchange
 
       def initialize(params = {})
         params.each { |key, value| send "#{key}=", value }
+        @contract_interval = params[:contract_interval] || ""
       end
 
       def base

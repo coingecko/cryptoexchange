@@ -1,8 +1,8 @@
 module Cryptoexchange::Exchanges
-  module Abcc
+  module Tokenize
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Abcc::Market::API_URL}/tickers.json"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Tokenize::Market::API_URL}/get-market-summaries"
 
         def fetch
           output = super
@@ -10,16 +10,14 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output.map do |pair, _ticker|
-            base, target = Abcc::Market.separate_symbol(pair)
-            next if base.nil? || target.nil?
-
+          output['data'].map do |output|
+            target, base = output['market'].split('-')
             Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
-              market: Abcc::Market::NAME
+              market: Tokenize::Market::NAME
             )
-          end.compact
+          end
         end
       end
     end

@@ -194,6 +194,7 @@ Or install it yourself as:
 | Ddex              | Y       | Y          | Y       |         | Y           | Y        | ddex              |       |
 | DEEX              | Y       |            |         |         | Y           |          | deex              |       |
 | DEx.top           | Y       | Y          | Y       |         | Y           |          | dextop            |       |
+| dex-trade         | Y       |            |         |         | Y           |          | dextrade          |       |
 | Dflow             | Y       |            |         |         | Y           | Y        | dflow             |       |
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |       |
 | Digitalprice      | Y       | Y          | Y       |         | Y           | Y        | digitalprice      |       |
@@ -344,6 +345,7 @@ Or install it yourself as:
 | Tideal            | Y       | Y          | Y       |         | Y           |          | tideal            |       |
 | Tidebit           | Y       | Y          | Y       |         | Y           |          | tidebit           |       |
 | Tidex             | Y       |            |         |         | Y           |          | tidex             |       |
+| Tokenize          | Y       |            |         |         | Y           | Y        | tokenize          |       |
 | Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |       |
 | Tokenomy          | Y       | Y          | Y       |         | Y           | Y        | tokenomy          |       |
 | TokensNet         | Y       | Y          | Y       |         | Y           | N        | tokens_net        |       |
@@ -360,6 +362,7 @@ Or install it yourself as:
 | TRXMarket         | Y       |            |         |         | Y           |          | trx_market        |       |
 | Txbit             | Y       |            |         |         | Y           | Y        | txbit             |       |
 | UEX               | Y       |            |         |         | Y           |          | uex               |       |
+| Unidax            | Y       | N          | N       |         | Y           | N        | unidax            |       |
 | Uniswap           | Y       | N          | N       |         | Y           | N        | uniswap           |       |
 | Unocoin           |         |            |         |         |             |          | unocoin           |       |
 | Upbit             | Y       | Y          | Y       |         | Y           | Y        | upbit             |       |

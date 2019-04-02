@@ -18,7 +18,6 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          timestamp = output['data']['date'] / 1000
           output['data']['ticker'].map do |pair, market|
             separator = Cryptoexchange::Exchanges::Coinex::Market::SEPARATOR_REGEX =~ pair
             next if separator.nil?
@@ -30,11 +29,11 @@ module Cryptoexchange::Exchanges
                            target: target,
                            market: Coinex::Market::NAME
                          )
-            adapt(market, market_pair, timestamp)
+            adapt(market, market_pair)
           end.compact
         end
 
-        def adapt(output, market_pair, timestamp)
+        def adapt(output, market_pair)
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
@@ -44,8 +43,8 @@ module Cryptoexchange::Exchanges
           ticker.last      = NumericHelper.to_d(output['last'])
           ticker.high      = NumericHelper.to_d(output['high'])
           ticker.low       = NumericHelper.to_d(output['low'])
-          ticker.volume    = NumericHelper.to_d(output['vol'])
-          ticker.timestamp = timestamp
+          ticker.volume    = NumericHelper.to_d(output['volume'])
+          ticker.timestamp = nil
           ticker.payload = output
           ticker
         end
