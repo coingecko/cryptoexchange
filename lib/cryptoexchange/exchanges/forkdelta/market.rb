@@ -41,7 +41,7 @@ module Cryptoexchange::Exchanges
         private
 
         def http_get(endpoint)
-          HTTP.timeout(:write => 2, :connect => 15, :read => 18).follow.get(endpoint)
+          HTTP.timeout(15).follow.get(endpoint)
         end
       end
     end
