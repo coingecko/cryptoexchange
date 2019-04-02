@@ -45,15 +45,15 @@ module Cryptoexchange
       private
 
       def http_get(endpoint)
-        HTTP.timeout(:write => 2, :connect => 15, :read => 18).follow.get(endpoint)
+        HTTP.timeout(25).follow.get(endpoint)
       end
 
       def http_post(endpoint, params)
-        HTTP.timeout(:write => 2, :connect => 5, :read => 8).post(endpoint, :json => params)
+        HTTP.timeout(15).post(endpoint, :json => params)
       end
 
       def http_post_with_headers(endpoint, params, headers)
-        HTTP.timeout(:write => 2, :connect => 5, :read => 8).headers(headers).post(endpoint, :body => params)
+        HTTP.timeout(15).headers(headers).post(endpoint, :body => params)
       end
 
     end

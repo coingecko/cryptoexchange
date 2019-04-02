@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Koinx::Market::API_URL}/tickers"
 
         def fetch
-          output = JSON.parse(HTTP.timeout(write: 2, connect: 15, read: 18).headers(accept: 'application/json').follow.get(PAIRS_URL))
+          output = JSON.parse(HTTP.timeout(15).headers(accept: 'application/json').follow.get(PAIRS_URL))
           adapt(output)
         end
 

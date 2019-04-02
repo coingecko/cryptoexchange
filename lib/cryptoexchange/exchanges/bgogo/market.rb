@@ -11,8 +11,7 @@ module Cryptoexchange::Exchanges
       def self.pairs_fetch(endpoint)
         Cryptoexchange::Cache.ticker_cache.fetch(endpoint) do
           begin
-            fetch_response =
-              HTTP.timeout(:write => 2, :connect => 15, :read => 18).headers(accept: 'application/json').follow.get(endpoint)
+            fetch_response = HTTP.timeout(15).headers(accept: 'application/json').follow.get(endpoint)
             if fetch_response.code == 200
               fetch_response.parse :json
             elsif fetch_response.code == 400
@@ -35,7 +34,7 @@ module Cryptoexchange::Exchanges
       def self.ticker_fetch(endpoint)
         Cryptoexchange::Cache.ticker_cache.fetch(endpoint) do
           begin
-            response = HTTP.timeout(:write => 2, :connect => 15, :read => 18).headers(accept: 'application/json').follow.get(endpoint)
+            response = HTTP.timeout(15).headers(accept: 'application/json').follow.get(endpoint)
             if response.code == 200
               response.parse :json
             elsif response.code == 400
