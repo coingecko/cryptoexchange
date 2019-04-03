@@ -223,6 +223,7 @@ Or install it yourself as:
 | Forkdelta         | Y       | N          | N       |         | Y           | Y        | forkdelta         |       |
 | Freiexchange      | Y       | Y          |         |         | User-Defined| Y        | freiexchange      |       |
 | FinexBox          | Y       | Y          |         |         | Y           | Y        | finexbox          |       |
+| Fubt              | Y       |            |         |         | Y           | Y        | fubt              |       |
 | Gate              | Y       | Y          | Y       |         | Y           | Y        | gate              |       |
 | Gatecoin          | Y       |            |         |         | Y           |          | gatecoin          |       |
 | GDAX(Coinbase Pro)| Y       |            |         |         | Y           | Y        | gdax              |       |
