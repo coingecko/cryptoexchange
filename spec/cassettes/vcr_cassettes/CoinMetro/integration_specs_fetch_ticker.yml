@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://exchange.coinmetro.com/prices
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - exchange.coinmetro.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 06 Apr 2019 17:37:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1927'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8a4215ba95a62ab1ac34920157827c101554572253; expires=Sun, 05-Apr-20
+        17:37:33 GMT; path=/; domain=.coinmetro.com; HttpOnly; Secure
+      X-Powered-By:
+      - Express
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"787-2KbI8fgD50yT6nI+LHvi3sFuubo"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4c3587c6695d5990-VIE
+    body:
+      encoding: UTF-8
+      string: '{"latestPrices":[{"pair":"XCMEUR","timestamp":1554572248163,"price":0.017289,"qty":1e-12,"ask":0.017289,"bid":0.017289},{"pair":"BTCEUR","timestamp":1554572243914,"price":4610.541474397556,"qty":1e-12,"ask":4612.35694064,"bid":4609.33770258},{"pair":"LTCEUR","timestamp":1554572239950,"price":85.08615885329588,"qty":1e-12,"ask":85.2136695,"bid":85.0059074},{"pair":"LTCBTC","timestamp":1554572247397,"price":0.018453652210978524,"qty":1e-12,"ask":0.01848718,"bid":0.01843004},{"pair":"ETHEUR","timestamp":1554572247085,"price":149.4117122539513,"qty":1e-12,"ask":149.65469582,"bid":149.39789117},{"pair":"ETHBTC","timestamp":1554572246417,"price":0.032433812896628965,"qty":1e-12,"ask":0.03246772,"bid":0.03239079},{"pair":"BCHEUR","timestamp":1554572244838,"price":288.82275574578125,"qty":1e-12,"ask":289.269043,"bid":288.52181279},{"pair":"XRPEUR","timestamp":1554572249369,"price":0.31991796517978555,"qty":1e-12,"ask":0.32027464,"bid":0.31960588},{"pair":"XRPBTC","timestamp":1554572249314,"price":0.00006940370709577366,"qty":1e-12,"ask":0.00006948,"bid":0.00006929}],
+        "24hInfo":[{"delta":-0.03142857142857158,"l":0.0172,"h":0.01804,"v":207241.52700000786},{"delta":0.029802151571590496,"l":4432.8736708353,"h":4674.8188769255,"v":0.12824992930999998},{"delta":0.08064524513613636,"l":76.239327671147,"h":87.201676363717,"v":10.522152009309998},{"delta":0.04937171036882115,"l":0.017180719482851,"h":0.018800015697916,"v":2.7990590093099996},{"delta":0.01589446027380559,"l":143.06738892976,"h":151.39882743708,"v":43.016740009304996},{"delta":-0.013746738273886061,"l":0.03221339243032,"h":0.033163641773282,"v":9.304000000000002e-9},{"delta":0.1054680415440501,"l":253.90222697786,"h":296.26161974186,"v":0.38300200930500006},{"delta":-0.013702478451803057,"l":0.31002920261263,"h":0.32634976107268,"v":105.00000000929796},{"delta":-0.041916322442276055,"l":0.000068922553793521,"h":0.000072613861576964,"v":9.31e-9}]}'
+    http_version: 
+  recorded_at: Sat, 06 Apr 2019 17:37:31 GMT
+recorded_with: VCR 4.0.0
