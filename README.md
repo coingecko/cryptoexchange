@@ -49,9 +49,9 @@ Or install it yourself as:
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
 | BigONE            | Y       | Y          | Y       |         | Y           | Y        | bigone            |       |
 | Bilaxy            | Y       | Y          | Y       |         | Y           | Y        | bilaxy            |       |
-| Binance           | Y       | Y          |         |         | Y           | Y        | binance           |       |
-| Binance Jersey    | Y       | Y          |         |         | Y           | Y        | binance_jersey    |       |
-| Binance Uganda    | Y       | Y          |         |         | Y           | Y        | binance_uganda    |       |
+| Binance           | Y       | Y (/)      | Y (/)   |         | Y           | Y        | binance           |       |
+| Binance Jersey    | Y       | Y (/)      |         |         | Y           | Y        | binance_jersey    |       |
+| Binance Uganda    | Y       | Y (/)      |         |         | Y           | Y        | binance_uganda    |       |
 | Bishang           | Y       |            |         |         | Y           |          | bishang           |       |
 | Bisq              | Y       |            | Y       |         | Y           |          | bisq              |       |
 | Bit2C             | Y       | Y          | Y       |         | User-Defined| Y        | bit2c             |       |

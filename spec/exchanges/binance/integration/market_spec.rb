@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe 'Binance integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'binance' }
-  let(:btc_eur_pair) do
+  let(:eth_btc_pair) do
     Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: market)
   end
 
@@ -18,12 +18,12 @@ RSpec.describe 'Binance integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url market, base: btc_eur_pair.base, target: btc_eur_pair.target
+    trade_page_url = client.trade_page_url market, base: eth_btc_pair.base, target: eth_btc_pair.target
     expect(trade_page_url).to eq "https://www.binance.com/trade.html?symbol=ETH_BTC"
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_eur_pair)
+    ticker = client.ticker(eth_btc_pair)
 
     expect(ticker.base).to eq 'ETH'
     expect(ticker.target).to eq 'BTC'
@@ -40,7 +40,7 @@ RSpec.describe 'Binance integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(btc_eur_pair)
+    order_book = client.order_book(eth_btc_pair)
 
     expect(order_book.base).to eq 'ETH'
     expect(order_book.target).to eq 'BTC'
@@ -55,5 +55,20 @@ RSpec.describe 'Binance integration specs' do
     expect(order_book.bids.count).to be > 10
     expect(order_book.timestamp).to be_a Numeric
     expect(order_book.payload).to_not be nil
+  end
+
+  it 'fetch trades' do
+    trades = client.trades(eth_btc_pair)
+    trade = trades.first
+
+    expect(trade.base).to eq 'ETH'
+    expect(trade.target).to eq 'BTC'
+    expect(trade.market).to eq market
+
+    expect(trade.amount).to_not be_nil
+    expect(trade.price).to_not be_nil
+    expect(trade.timestamp).to_not be_nil
+    expect(trade.trade_id).to_not be_nil
+    expect(trade.type).to eq("buy").or eq("sell")
   end
 end
