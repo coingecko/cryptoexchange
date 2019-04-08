@@ -12,16 +12,27 @@ http_interactions:
       Host:
       - api.instantbitex.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/3.3.0
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Tue, 31 Jul 2018 03:41:34 GMT
-      Server:
-      - Apache
+      - Tue, 02 Apr 2019 09:15:19 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - XSRF-TOKEN=eyJpdiI6IkhuclhjK0lSNWhiU211ZVN4b005V0E9PSIsInZhbHVlIjoiTU5Qc3E2dnhkMWhmc2tEU2NtVW5rdlNyelJEMVwveUdlc2NsOWhUZXIwdHhkMXRVZEQ4eEh4WVJOZVBpMjRkN0FIQlcwUEFBeFwvMDNwQ1g4bU1DbUJkdz09IiwibWFjIjoiN2QxMTc4MTBlNjAyMjM4MjM5YzZmNThhZTM1MTVhMDgwZTc1ZmUwZjAwZjU0MTZiZjVmZjY1OWJiMDNhNDJiNCJ9;
+        expires=Tue, 02-Apr-2019 11:15:19 GMT; Max-Age=7200; path=/
+      - __cfduid=dc41a3c3abb462e85aff997f1cf2373301554196518; expires=Wed, 01-Apr-20
+        09:15:18 GMT; path=/; domain=.instantbitex.com; HttpOnly; Secure
+      - laravel_session=eyJpdiI6Ik5lKyt1OWF3VzNyeXMxZUVYZDVBWUE9PSIsInZhbHVlIjoiVFJ3M3BWNUpCRjY3cnJuT1RiWVgydTRnY1JWZWFvTnptamt6dHJRdGRZNlRoRlR6WmU1bXVGOXkwYmdqVjUxb3JXMFJiQ1lhbU83MUxzWlFKMkphTnc9PSIsIm1hYyI6ImI5YTUzNzc0OWY5NGQ1YTU5MGM1NzU1YWE0OTFjMzFmZTI5NWNlYjkyYjI1M2NlYTZkN2RhYWYwZDNjNTg3MjIifQ%3D%3D;
+        expires=Tue, 02-Apr-2019 11:15:19 GMT; Max-Age=7200; path=/; HttpOnly
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -32,22 +43,21 @@ http_interactions:
       - 'true'
       Cache-Control:
       - no-cache, private
-      Set-Cookie:
-      - XSRF-TOKEN=eyJpdiI6ImVcL2ZOSUVyelJ0S0V0XC9yNEtLWnJYdz09IiwidmFsdWUiOiJwdityWGZvOWc5WnZFUnQwVlZFTER6OTZTa3p5UHhXdllwUDdwdFU4SlwvZFMrVGN5VEhqOHZmM1hVQjJ5aVkxaFNwd3JLOW9lU1dpWnlqN3NKaGtwQ0E9PSIsIm1hYyI6ImYxNTllNDdmZjhhNDI2ODgxYTgyMDFlYzdjOGZhODc5MDE0YzcyNWZlMDNhYjU5MzNkY2VmYWM1ZTYxODQ3N2EifQ%3D%3D;
-        expires=Tue, 31-Jul-2018 05:41:34 GMT; Max-Age=7200; path=/
-      - laravel_session=eyJpdiI6ImNldzZCQ0ZUdUM2ZlE3SWZsS3FWOWc9PSIsInZhbHVlIjoiWFlSUFlhWUJiYmtUcVhqT2NoV045d0hOdkZiNHlNN0oxK3FvcVlWS1RXOE1TUytLNmQybU1iNkhNQUU5OFV0VFFTalwvWWV3QUdKNWdiNjJCVkJBWXRRPT0iLCJtYWMiOiJkZmFjYjE1OWVkNTVkZmE5YTBhZWJiNDA5ODhjYjY2MjJhMjdlNWNmYjE5Mzk0YjI5YzE0ZTVjMjdlNzkwMWExIn0%3D;
-        expires=Tue, 31-Jul-2018 05:41:34 GMT; Max-Age=7200; path=/; HttpOnly
+      X-Ratelimit-Limit:
+      - '20'
+      X-Ratelimit-Remaining:
+      - '19'
       Vary:
       - Accept-Encoding
-      Content-Length:
-      - '2855'
-      Connection:
-      - close
-      Content-Type:
-      - text/html; charset=UTF-8
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4c11b28f49e484cc-HKG
     body:
       encoding: UTF-8
-      string: '{"status":"1","message":"Success","asks":{"0.05500001":{"amount":0.010813},"0.05500000":{"amount":8.0121},"0.05369333":{"amount":6.29796272},"0.05351100":{"amount":5.35284782},"0.05343284":{"amount":8.30146233},"0.05001000":{"amount":5.1273},"0.05000021":{"amount":3.01928691},"0.05000000":{"amount":5.694909},"0.04974123":{"amount":21},"0.04948449":{"amount":250},"0.04548449":{"amount":5},"0.04362332":{"amount":4.24349},"0.03948449":{"amount":50},"0.03760010":{"amount":3},"0.03760001":{"amount":4.1},"0.03760000":{"amount":8.93370982},"0.03759500":{"amount":7.05551861},"0.03759000":{"amount":3.41410691},"0.03603370":{"amount":10},"0.03210000":{"amount":55},"0.02993126":{"amount":15},"0.02943370":{"amount":15},"0.02703370":{"amount":10},"0.00878238":{"amount":0.016501489999996},"0.00000200":{"amount":60},"0.00000199":{"amount":4537.1087126},"0.00000127":{"amount":8750},"0.00000111":{"amount":5625},"0.00000099":{"amount":9658},"0.00000069":{"amount":5000},"0.00000055":{"amount":1000},"0.00000027":{"amount":90000},"0.00000019":{"amount":12500},"0.00000017":{"amount":80000},"0.00000011":{"amount":1500},"0.00000009":{"amount":99999}},"bids":{"0.05948449":{"amount":3},"0.06002123":{"amount":13.69},"0.06142690":{"amount":11},"0.06152132":{"amount":10},"0.06154321":{"amount":16},"0.06251400":{"amount":0.11049189},"0.06985478":{"amount":0.5},"0.08782378":{"amount":8.2401492},"0.08800000":{"amount":6.001},"0.09000000":{"amount":12.48545035},"0.09470000":{"amount":6.01016527},"0.09500000":{"amount":28.01464138},"0.09750000":{"amount":63.93800001},"0.09830000":{"amount":30.21811085},"0.09850000":{"amount":51},"0.09990000":{"amount":43.009},"0.10000000":{"amount":47.01629843},"0.10070100":{"amount":44.055},"0.10111110":{"amount":0.5},"0.10785002":{"amount":78.14731668},"0.11000000":{"amount":53.00059874},"0.11389983":{"amount":21.111},"0.11389984":{"amount":51.07177857},"0.11900000":{"amount":32.05135536},"0.12000000":{"amount":20.16137145},"0.12500000":{"amount":5.00348643},"0.13593360":{"amount":0.05699999},"0.19000000":{"amount":5.00061834},"0.19320000":{"amount":10.5524},"0.24000000":{"amount":15.003664},"0.30000000":{"amount":10.5},"0.31000000":{"amount":20.542},"0.61564321":{"amount":11},"0.61574231":{"amount":9},"0.61583241":{"amount":12},"0.61584421":{"amount":11},"0.61584532":{"amount":9},"0.61591324":{"amount":16},"0.61592134":{"amount":13},"0.61593212":{"amount":13},"0.61594235":{"amount":10},"0.61594321":{"amount":15},"3.00000000":{"amount":5.0000102},"5.99999999":{"amount":1.00116578},"10.00000000":{"amount":0.0027},"10.80000000":{"amount":0.05036987},"12.80000000":{"amount":0.05036987},"19.99999999":{"amount":2},"20.00000000":{"amount":0.45772},"20.73000010":{"amount":0.001},"25.00000000":{"amount":0.022886},"29.99999999":{"amount":0.1},"30.00000000":{"amount":3.4e-6},"681.00000000":{"amount":0.0103239}}}'
+      string: '{"status":"1","message":"Success","asks":{"0.03322590":{"amount":0.4},"0.02828510":{"amount":0.015},"0.02828500":{"amount":0.74},"0.02828270":{"amount":2.042872},"0.02582827":{"amount":1.1928772},"0.02483937":{"amount":1.1928373},"0.02156800":{"amount":4.955},"0.02155000":{"amount":5.495165},"0.02152500":{"amount":22.259},"0.02150000":{"amount":9.066},"0.02121000":{"amount":4.955},"0.02120000":{"amount":8.456},"0.02114000":{"amount":12.5},"0.02112100":{"amount":6.5489},"0.02100000":{"amount":2.6},"0.02098277":{"amount":8.2927377},"0.02050000":{"amount":4.95},"0.02000000":{"amount":34.9},"0.01999850":{"amount":18.5},"0.01995600":{"amount":7.646},"0.01995000":{"amount":24.32},"0.01990000":{"amount":12.34},"0.01989500":{"amount":13.765},"0.01987500":{"amount":18.7},"0.01960000":{"amount":15.168},"0.01959500":{"amount":36.17},"0.01951500":{"amount":35.4894},"0.01950000":{"amount":0.1},"0.01923000":{"amount":19},"0.01900000":{"amount":26.5},"0.01895480":{"amount":6.54916},"0.01890000":{"amount":7.647},"0.01855800":{"amount":18.7},"0.01850000":{"amount":70.2},"0.01788287":{"amount":1.91872728},"0.01780000":{"amount":16.8},"0.01750000":{"amount":48.1},"0.01690000":{"amount":45.94},"0.01650000":{"amount":30.1},"0.01620000":{"amount":1},"0.01590000":{"amount":47.25},"0.01580000":{"amount":12},"0.01567000":{"amount":33.33},"0.01550000":{"amount":0.1},"0.01519000":{"amount":22},"0.01500000":{"amount":5},"0.01250000":{"amount":15.25},"0.01200000":{"amount":0.8},"0.01150000":{"amount":30.1},"0.01100000":{"amount":100},"0.01050000":{"amount":1},"0.00002522":{"amount":15},"0.00002485":{"amount":6.55},"0.00002480":{"amount":10},"0.00000219":{"amount":46},"0.00000199":{"amount":4537.1087126}},"bids":{"0.03462649":{"amount":0.1193894},"0.03472133":{"amount":0.54745},"0.03482198":{"amount":0.21745},"0.03492855":{"amount":0.56277},"0.03504219":{"amount":0.21748},"0.03512160":{"amount":0.12856},"0.03528795":{"amount":0.04},"0.03528796":{"amount":0.5296},"0.03531500":{"amount":0.113388},"0.03532190":{"amount":0.23965},"0.03548246":{"amount":0.54574},"0.03552199":{"amount":0.31285},"0.03569858":{"amount":0.2185},"0.03572186":{"amount":0.4585},"0.03578400":{"amount":0.92825954},"0.03589546":{"amount":0.421859},"0.03589700":{"amount":0.26454878},"0.03591286":{"amount":0.1285},"0.03593100":{"amount":0.1964548},"0.03601700":{"amount":0.2545487},"0.03602186":{"amount":0.56585},"0.03612800":{"amount":0.37548245},"0.03623700":{"amount":0.37548545},"0.03639400":{"amount":0.15245458},"0.03645800":{"amount":0.42154548},"0.03653700":{"amount":0.37548254},"0.03669700":{"amount":0.29654548},"0.03679400":{"amount":0.26345487},"0.03685400":{"amount":0.421545},"0.03691700":{"amount":0.375485},"0.03704200":{"amount":0.26345455},"0.03714800":{"amount":0.3754548},"0.03728400":{"amount":0.26345488},"0.03736100":{"amount":0.037361},"0.03744800":{"amount":0.16354548},"0.05500000":{"amount":12.309},"0.05526541":{"amount":21.459},"0.05568245":{"amount":27.459},"0.05652140":{"amount":37.463},"0.05725142":{"amount":15.769},"0.05852154":{"amount":17.809},"0.05985214":{"amount":15.609},"0.06251420":{"amount":20.209},"0.07521410":{"amount":12.219},"0.07521420":{"amount":42.2341},"0.08521421":{"amount":15.459},"0.09000000":{"amount":21.69445035},"0.09470000":{"amount":18.21916527},"0.09500000":{"amount":40.22364138},"0.09750000":{"amount":76.14700001},"0.09830000":{"amount":42.42711085},"0.09850000":{"amount":63.209},"0.09990000":{"amount":55.218},"0.10000000":{"amount":73.43429843},"0.10762000":{"amount":22},"0.12000000":{"amount":0.01},"0.13593360":{"amount":0.05699999},"0.15111000":{"amount":0.2},"0.17000000":{"amount":0.01},"0.19000000":{"amount":0.002},"0.20000000":{"amount":2},"0.22000000":{"amount":0.01},"0.25000000":{"amount":0.205},"0.29000000":{"amount":0.005},"0.30754670":{"amount":2.87657},"0.31023562":{"amount":3.0326522},"0.32496480":{"amount":0.1},"0.33700000":{"amount":0.168},"0.38000000":{"amount":0.5},"0.40870000":{"amount":2.987654},"0.50000000":{"amount":0.005},"0.61564321":{"amount":11},"0.61574231":{"amount":9},"0.61583241":{"amount":12},"0.61584421":{"amount":11},"0.61584532":{"amount":9},"0.61591324":{"amount":16},"0.61592134":{"amount":13},"0.61593212":{"amount":13},"0.61594235":{"amount":10},"0.61594321":{"amount":15},"0.99000000":{"amount":0.005},"5.29273620":{"amount":0.03121}}}'
     http_version: 
-  recorded_at: Tue, 31 Jul 2018 03:41:34 GMT
+  recorded_at: Tue, 02 Apr 2019 09:15:19 GMT
 recorded_with: VCR 4.0.0

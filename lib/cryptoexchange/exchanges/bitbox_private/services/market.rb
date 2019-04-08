@@ -21,7 +21,7 @@ module Cryptoexchange::Exchanges
           api_url = "#{Cryptoexchange::Exchanges::BitboxPrivate::Market::API_URL}" + endpoint + "?" + params(market_pair)
 
           output = Cryptoexchange::Cache.ticker_cache.fetch(api_url) do
-            HTTP.timeout(:write => 2, :connect => 15, :read => 18).headers(headers).get(api_url).parse :json
+            HTTP.timeout(15).headers(headers).get(api_url).parse :json
           end
 
           adapt(output, market_pair)
