@@ -21,7 +21,8 @@ module Cryptoexchange::Exchanges
         
           latest_prices = output['latestPrices']
           info = output['24hInfo']
-          latest_prices.each_with_index.map do |data, idx|
+          latest_prices.each_with_index.map do |prices, idx|
+            data = prices.merge(info[idx])
             pair = data['pair']
             base = pair[0, 3]
             target = pair[3, 3]            
@@ -32,11 +33,11 @@ module Cryptoexchange::Exchanges
                             market: CoinMetro::Market::NAME
                           )            
             
-            adapt(data, info[idx], market_pair)
+            adapt(data, market_pair)
           end
         end
 
-        def adapt(output, info, market_pair)
+        def adapt(output, market_pair)
           if output.empty?
             nil
           else
@@ -47,11 +48,11 @@ module Cryptoexchange::Exchanges
             ticker.ask = NumericHelper.to_d(output['ask'])
             ticker.bid = NumericHelper.to_d(output['bid'])
             ticker.last = NumericHelper.to_d(output['price'])
-            ticker.high = NumericHelper.to_d(info['h'])
-            ticker.low = NumericHelper.to_d(info['l'])
-            ticker.volume = NumericHelper.to_d(info['v'])
+            ticker.high = NumericHelper.to_d(output['h'])
+            ticker.low = NumericHelper.to_d(output['l'])
+            ticker.volume = NumericHelper.to_d(output['v'])
             ticker.timestamp = output['timestamp'].to_i / 1000
-            ticker.payload = output.merge(info)
+            ticker.payload = output
             ticker
           end
         end
