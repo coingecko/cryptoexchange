@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
           order_book.market = Fcoin::Market::NAME
           order_book.asks = adapt_orders(output['asks'].each_slice(2).to_a)
           order_book.bids = adapt_orders(output['bids'].each_slice(2).to_a)
-          order_book.timestamp = output['ts']
+          order_book.timestamp = nil
           order_book.payload = output
           order_book
         end
@@ -33,7 +33,7 @@ module Cryptoexchange::Exchanges
           orders.collect do |order_entry|
             Cryptoexchange::Models::Order.new(price: order_entry[0],
                                               amount: order_entry[1],
-                                              timestamp: Time.now.to_i)
+                                              timestamp: nil)
           end
         end
       end
