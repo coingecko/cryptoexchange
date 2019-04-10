@@ -49,9 +49,9 @@ Or install it yourself as:
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
 | BigONE            | Y       | Y          | Y       |         | Y           | Y        | bigone            |       |
 | Bilaxy            | Y       | Y          | Y       |         | Y           | Y        | bilaxy            |       |
-| Binance           | Y       | Y          |         |         | Y           | Y        | binance           |       |
-| Binance Jersey    | Y       | Y          |         |         | Y           | Y        | binance_jersey    |       |
-| Binance Uganda    | Y       | Y          |         |         | Y           | Y        | binance_uganda    |       |
+| Binance           | Y       | Y (/)      | Y (/)   |         | Y           | Y        | binance           |       |
+| Binance Jersey    | Y       | Y (/)      |         |         | Y           | Y        | binance_jersey    |       |
+| Binance Uganda    | Y       | Y (/)      |         |         | Y           | Y        | binance_uganda    |       |
 | Bishang           | Y       |            |         |         | Y           |          | bishang           |       |
 | Bisq              | Y       |            | Y       |         | Y           |          | bisq              |       |
 | Bit2C             | Y       | Y          | Y       |         | User-Defined| Y        | bit2c             |       |
@@ -83,7 +83,7 @@ Or install it yourself as:
 | Bitkub            | Y       | Y          | Y       |         | Y           | Y        | bitkub            |       |
 | Bitlish           | Y       | Y          | Y       |         | Y           |          | bitlish           |       |
 | Bitmart           | Y       | Y          | Y       |         | Y           |          | bitmart           |       |
-| Bitmax            | Y       | Y          | Y       |         | Y           | Y        | bitmax            |       |
+| Bitmax            | Y       | Y [x]      | Y       |         | Y           | Y        | bitmax            |       |
 | Bitmesh           | Y       | N          | N       |         | Y           | Y        | bitmesh           |       |
 | Bitmex (alpha)    | Y       | Y          | Y       |         | Y           |          | bitmex            |futures|
 | BitOnBay          | Y       |            |         |         | Y           |          | bitonbay          |       |
@@ -216,7 +216,7 @@ Or install it yourself as:
 | Exx               | Y       | Y          | Y       |         | Y           | Y        | exx               |       |
 | F1cx              | Y       | Y          | Y       |         | Y           | Y        | f1cx              |       |
 | FatBTC            | Y       | Y          | Y       |         | Y           |          | fatbtc            |       |
-| Fcoin             | Y       | Y          | Y       |         | Y           | Y        | fcoin             |       |
+| Fcoin             | Y       | Y [x]      | Y       |         | Y           | Y        | fcoin             |       |
 | Fex               | Y       | N          | N       |         | Y           |          | fex               |       |
 | Financex          | Y       | N          | N       |         | Y           | Y        | financex          |       |
 | Fisco             | Y       | Y          | Y       |         | Y           | Y        | fisco             |       |
@@ -302,7 +302,7 @@ Or install it yourself as:
 | Oceanex           | Y       | Y          | Y       |         | Y           | Y        | oceanex           |       |
 | Octaex            | Y       | Y          | Y       |         | Y           |          | octaex            |       |
 | OKCoin            | Y       |            |         |         | User-Defined|          | okcoin            |       |
-| OKEx              | Y       | Y          | Y       |         | Y           | Y        | okex              |       |
+| OKEx              | Y       | Y [x]      | Y       |         | Y           | Y        | okex              |       |
 | OKEx Perpetual Swaps (alpha) | Y     |            |         |         | Y           | Y        | okex_swap         |futures|
 | OmniTrade         | Y       | Y          | Y       | Y       | Y           |          | omnitrade         |       |
 | Ooobtc            | Y       | Y          | Y       |         | Y           | Y        | ooobtc            |       |
