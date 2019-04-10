@@ -19,22 +19,15 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |pair, ticker|
-            separator   = /(USDT|BTC|ETH)\z/i =~ pair
-            base        = pair[0..separator - 1]
-            target      = pair[separator..-1]
-            market_pair = Cryptoexchange::Models::MarketPair.new(
-              base:   base,
-              target: target,
-              market: Abcc::Market::NAME
-            )
-            adapt(ticker, market_pair)
+            adapt(pair, ticker)
           end
         end
 
-        def adapt(output, market_pair)
+        def adapt(pair, output)
+          base, target = Abcc::Market.separate_symbol(pair)
           ticker           = Cryptoexchange::Models::Ticker.new
-          ticker.base      = market_pair.base
-          ticker.target    = market_pair.target
+          ticker.base      = base
+          ticker.target    = target
           ticker.market    = Abcc::Market::NAME
           ticker.bid       = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'buy'))
           ticker.ask       = NumericHelper.to_d(HashHelper.dig(output, 'ticker', 'sell'))

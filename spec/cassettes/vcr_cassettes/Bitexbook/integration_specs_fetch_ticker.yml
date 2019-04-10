@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitexbook.com/api/v2/symbols/statistic?last_day=true
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitexbook.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0
+      Date:
+      - Thu, 25 Oct 2018 02:59:36 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type, AUTH-TOKEN, X-Auth-Token, Application
+      Access-Control-Allow-Methods:
+      - GET,OPTIONS,POST,PUT,DELETE
+      Access-Control-Allow-Origin:
+      - ''
+      Strict-Transport-Security:
+      - max-age=63072000
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"from":"2018-10-24T02:59:36.262138904Z","to":"2018-10-25T02:59:36.262139279Z","server_time":"2018-10-25T02:59:36.262139481Z"},"symbols":[{"symbol":"btcusd","alias":"BTC/USD","currency_base":"btc","currency_base_name":"Bitcoin","currency_quoted":"usd","currency_quoted_name":"US
+        Dollar","statistic":[{"period":"last_24_hours","price_open":6956.7078,"price_close":7306.1931,"price_low":6710.6366,"price_high":7494.6588,"price_bid":7000,"price_ask":7499.999,"volume_quoted":742.6878560680309,"volume_base":0.10464004000000005,"orders_buy":46,"orders_sell":34}]},{"symbol":"btcrub","alias":"BTC/RUB","currency_base":"btc","currency_base_name":"Bitcoin","currency_quoted":"rub","currency_quoted_name":"Russian
+        Ruble","statistic":[{"period":"last_24_hours","price_open":410473.1474,"price_close":412765.2465,"price_low":393042.8856,"price_high":431100,"price_bid":393002,"price_ask":429100,"volume_quoted":53178.115718336136,"volume_base":0.12938085000000002,"orders_buy":41,"orders_sell":41}]},{"symbol":"ethusd","alias":"ETH/USD","currency_base":"eth","currency_base_name":"Ethereum","currency_quoted":"usd","currency_quoted_name":"US
+        Dollar","statistic":[{"period":"last_24_hours","price_open":219.5466,"price_close":216.0517,"price_low":203.2928,"price_high":232.7802,"price_bid":203,"price_ask":227,"volume_quoted":203.0557302455554,"volume_base":0.9455378500000003,"orders_buy":33,"orders_sell":45}]},{"symbol":"ethrub","alias":"ETH/RUB","currency_base":"eth","currency_base_name":"Ethereum","currency_quoted":"rub","currency_quoted_name":"Russian
+        Ruble","statistic":[{"period":"last_24_hours","price_open":11145.211056143593,"price_close":12975.6199,"price_low":10418.5822,"price_high":13900,"price_bid":10400,"price_ask":13900,"volume_quoted":12740.609390568507,"volume_base":1.05673905,"orders_buy":34,"orders_sell":44}]},{"symbol":"ethbtc","alias":"ETH/BTC","currency_base":"eth","currency_base_name":"Ethereum","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":0.03170825,"price_close":0.03075213,"price_low":0.03075213,"price_high":0.03172582,"price_bid":0.030751,"price_ask":0.031611,"volume_quoted":0.07249916826148743,"volume_base":2.3158640999999984,"orders_buy":43,"orders_sell":47}]},{"symbol":"ltcusd","alias":"LTC/USD","currency_base":"ltc","currency_base_name":"Litecoin","currency_quoted":"usd","currency_quoted_name":"US
+        Dollar","statistic":[{"period":"last_24_hours","price_open":55.3837,"price_close":57.0315,"price_low":51.6177,"price_high":66.8369,"price_bid":51.6,"price_ask":74,"volume_quoted":87.36545899575239,"volume_base":1.53870216,"orders_buy":43,"orders_sell":36}]},{"symbol":"ltcrub","alias":"LTC/RUB","currency_base":"ltc","currency_base_name":"Litecoin","currency_quoted":"rub","currency_quoted_name":"Russian
+        Ruble","statistic":[{"period":"last_24_hours","price_open":3133.7832,"price_close":3425.0212,"price_low":3001.6062,"price_high":3649,"price_bid":3001,"price_ask":3636,"volume_quoted":10704.232653525392,"volume_base":3.2489140199999986,"orders_buy":38,"orders_sell":38}]},{"symbol":"ltcbtc","alias":"LTC/BTC","currency_base":"ltc","currency_base_name":"Litecoin","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":0.00803952,"price_close":0.0080913,"price_low":0.00795,"price_high":0.00819754,"price_bid":0.00799,"price_ask":0.00819999,"volume_quoted":0.13579871460298035,"volume_base":16.818345289999996,"orders_buy":35,"orders_sell":47}]},{"symbol":"bchbtc","alias":"BCH/BTC","currency_base":"bch","currency_base_name":"Bitcoin
+        Cash","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":0.05430046,"price_close":0.06303368,"price_low":0.04054042,"price_high":0.06957666,"price_bid":0.04000001,"price_ask":0.068876,"volume_quoted":0.04686579851888946,"volume_base":0.8758917100000003,"orders_buy":36,"orders_sell":43}]},{"symbol":"dashbtc","alias":"DASH/BTC","currency_base":"dash","currency_base_name":"Dash","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":0.01398611547940131,"price_close":0.02139023,"price_low":0.01215473,"price_high":0.02405257,"price_bid":0.01200001,"price_ask":0.024277,"volume_quoted":0.01476423273936239,"volume_base":0.8537066400000001,"orders_buy":41,"orders_sell":38}]},{"symbol":"bcnbtc","alias":"BCN/BTC","currency_base":"bcn","currency_base_name":"Bytecoin","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":2.1e-7,"price_close":2.1e-7,"price_low":2.1e-7,"price_high":2.3e-7,"price_bid":2e-7,"price_ask":2.2e-7,"volume_quoted":0.004536100353675201,"volume_base":21567.769503939988,"orders_buy":42,"orders_sell":38}]},{"symbol":"btgbtc","alias":"BTG/BTC","currency_base":"btg","currency_base_name":"Bitcoin
+        Gold","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":0.00361847033696028,"price_close":0.00109108,"price_low":0.00062527,"price_high":0.00400765,"price_bid":0.00060118,"price_ask":0.00409999,"volume_quoted":0.023328126721240364,"volume_base":9.728284349999988,"orders_buy":44,"orders_sell":36}]},{"symbol":"dogebtc","alias":"DOGE/BTC","currency_base":"doge","currency_base_name":"Dogecoin","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":6.4e-7,"price_close":6.1e-7,"price_low":5.8e-7,"price_high":6.4e-7,"price_bid":6e-7,"price_ask":6.3e-7,"volume_quoted":0.03936601508568215,"volume_base":64821.487158690004,"orders_buy":46,"orders_sell":35}]},{"symbol":"xmrbtc","alias":"XMR/BTC","currency_base":"xmr","currency_base_name":"Monero","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":0.01655594,"price_close":0.01273176,"price_low":0.00027025,"price_high":0.0168487,"price_bid":0.01627,"price_ask":0.016588,"volume_quoted":0.044862180081990985,"volume_base":2.9854050699999997,"orders_buy":31,"orders_sell":41}]},{"symbol":"zecbtc","alias":"ZEC/BTC","currency_base":"zec","currency_base_name":"ZCash","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":0.01852025,"price_close":0.01979102,"price_low":0.00649461,"price_high":0.01979102,"price_bid":0.01917,"price_ask":0.0201,"volume_quoted":0.06912183465369486,"volume_base":3.7346001100000015,"orders_buy":39,"orders_sell":40}]},{"symbol":"zenrub","alias":"ZEN/RUB","currency_base":"zen","currency_base_name":"Horizen","currency_quoted":"rub","currency_quoted_name":"Russian
+        Ruble","statistic":[{"period":"last_24_hours","price_open":645.8581,"price_close":683.0705,"price_low":110.9832,"price_high":1172.2336,"price_bid":150,"price_ask":1200,"volume_quoted":5439.421954615044,"volume_base":8.22374471999999,"orders_buy":40,"orders_sell":35}]},{"symbol":"zenbtc","alias":"ZEN/BTC","currency_base":"zen","currency_base_name":"Horizen","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":0.00204327177945016,"price_close":0.0024381,"price_low":0.00173023,"price_high":0.00278567,"price_bid":0.0018,"price_ask":0.0028,"volume_quoted":0.02494308715319508,"volume_base":10.973684529999995,"orders_buy":36,"orders_sell":42}]},{"symbol":"ocnbtc","alias":"OCN/BTC","currency_base":"ocn","currency_base_name":"Odyssey
+        Token","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":0.00000164,"price_close":0.0000016,"price_low":0.0000015,"price_high":0.00000172,"price_bid":0.00000158,"price_ask":0.00000172,"volume_quoted":0.013001507800073692,"volume_base":8094.87956449,"orders_buy":39,"orders_sell":37}]},{"symbol":"drtbtc","alias":"DRT/BTC","currency_base":"drt","currency_base_name":"DomRider
+        Token","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":9.1e-7,"price_close":0.000001,"price_low":8.6e-7,"price_high":0.0000011,"price_bid":9.3e-7,"price_ask":0.00000104,"volume_quoted":0.007829962325180686,"volume_base":8109.1404187399985,"orders_buy":37,"orders_sell":39}]},{"symbol":"bancabtc","alias":"BANCA/BTC","currency_base":"banca","currency_base_name":"BANCA
+        Token","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":4e-8,"price_close":4e-8,"price_low":4e-8,"price_high":4e-8,"price_bid":3e-8,"price_ask":5e-8,"volume_quoted":0.0006971445506788,"volume_base":17428.61376697,"orders_buy":38,"orders_sell":26}]},{"symbol":"spfbtc","alias":"SPF/BTC","currency_base":"spf","currency_base_name":"SportyCo
+        Token","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":0.00000213,"price_close":0.00000212,"price_low":0.00000165,"price_high":0.00000385,"price_bid":0.000002,"price_ask":0.0000028,"volume_quoted":0.0016267495207634827,"volume_base":722.6218442100001,"orders_buy":23,"orders_sell":39}]},{"symbol":"zncbtc","alias":"ZNC/BTC","currency_base":"znc","currency_base_name":"ZEON
+        Token","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":3e-8,"price_close":3e-8,"price_low":3e-8,"price_high":3e-8,"price_bid":2e-8,"price_ask":5e-8,"volume_quoted":0.0014262954399708,"volume_base":47543.181332360014,"orders_buy":32,"orders_sell":45}]},{"symbol":"bxbbtc","alias":"BXB/BTC","currency_base":"bxb","currency_base_name":"BixBite","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":3.875610132e-8,"price_close":3e-8,"price_low":3e-8,"price_high":4e-8,"price_bid":3e-8,"price_ask":4e-8,"volume_quoted":0.004983631513032452,"volume_base":134778.59288082,"orders_buy":4,"orders_sell":6}]},{"symbol":"bsmbtc","alias":"BSM/BTC","currency_base":"bsm","currency_base_name":"Bitsum","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":6e-8,"price_close":5e-8,"price_low":5e-8,"price_high":6e-8,"price_bid":0,"price_ask":0,"volume_quoted":0.11408204725549065,"volume_base":2080404.0125445297,"orders_buy":33,"orders_sell":21}]},{"symbol":"grifbtc","alias":"GRIF/BTC","currency_base":"grif","currency_base_name":"GRIF","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":6.2e-7,"price_close":6.3e-7,"price_low":5.7e-7,"price_high":6.7e-7,"price_bid":6.1e-7,"price_ask":6.6e-7,"volume_quoted":0.12642595293467251,"volume_base":201340.30170429993,"orders_buy":41,"orders_sell":49}]},{"symbol":"trxbtc","alias":"TRX/BTC","currency_base":"trx","currency_base_name":"TRON","currency_quoted":"btc","currency_quoted_name":"Bitcoin","statistic":[{"period":"last_24_hours","price_open":0.00000365,"price_close":0.00000363,"price_low":0.00000362,"price_high":0.0000037,"price_bid":0.00000361,"price_ask":0.00000366,"volume_quoted":0.3281992291810618,"volume_base":90123.66490509005,"orders_buy":44,"orders_sell":34}]}]}
+
+'
+    http_version: 
+  recorded_at: Thu, 25 Oct 2018 02:59:36 GMT
+recorded_with: VCR 4.0.0

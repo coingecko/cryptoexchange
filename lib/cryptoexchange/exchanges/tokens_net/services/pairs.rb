@@ -10,8 +10,8 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output.map do |pair|
-            base, target = pair['title'].split('/')
+          output.map do |pair, ticker|
+            base, target = ticker['title'].split('/')
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,

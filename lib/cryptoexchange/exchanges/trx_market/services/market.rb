@@ -36,7 +36,7 @@ module Cryptoexchange::Exchanges
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = TrxMarket::Market::NAME
-          ticker.last = NumericHelper.to_d(output['price']) / 10**output["fPrecision"]
+          ticker.last = NumericHelper.to_d(output['price']) / 10**output["sPrecision"]
           ticker.high = NumericHelper.to_d(output['highestPrice24h'])
           ticker.low = NumericHelper.to_d(output['lowestPrice24h'])
           ticker.volume = NumericHelper.to_d(output['volume']) / 10**output["fPrecision"]

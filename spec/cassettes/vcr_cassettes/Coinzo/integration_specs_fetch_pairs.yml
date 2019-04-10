@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinzo.com/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinzo.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 20 Jan 2019 16:56:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1575'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d4cf0218d94d3fc5ab1793a063bed156d1548003361; expires=Mon, 20-Jan-20
+        16:56:01 GMT; path=/; domain=.coinzo.com; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49c312703acabc08-LHR
+    body:
+      encoding: UTF-8
+      string: '{"BTC-TRY":{"low":"19017","high":"19890","last":"19017","volume":"10.36","daily_change":"-850","daily_change_percentage":"-4.27"},"CNZ-TRY":{"low":"0.045714","high":"0.048008","last":"0.045963","volume":"433927.67","daily_change":"-0.001884","daily_change_percentage":"-3.93"},"EOS-BTC":{"low":"0.00064325","high":"0.00067028","last":"0.0006551","volume":"18808.11","daily_change":"-0.00001505","daily_change_percentage":"-2.24"},"EOS-TRY":{"low":"12.393","high":"13.329","last":"12.448","volume":"26055.61","daily_change":"-0.862","daily_change_percentage":"-6.47"},"ETH-BTC":{"low":"0.03309","high":"0.033696","last":"0.033435","volume":"557.33","daily_change":"0.000067","daily_change_percentage":"0.20"},"ETH-TRY":{"low":"629.12","high":"664.49","last":"635.26","volume":"321.56","daily_change":"-27.9","daily_change_percentage":"-4.20"},"HOT-TRY":{"low":"0.0032746","high":"0.0047264","last":"0.0039333","volume":"675868294.42","daily_change":"0.0006587","daily_change_percentage":"20.11"},"NEO-BTC":{"low":"0.0020796","high":"0.0022326","last":"0.002099","volume":"8903.08","daily_change":"-0.0001327","daily_change_percentage":"-5.94"},"NEO-TRY":{"low":"39.595","high":"44.361","last":"39.883","volume":"11855.19","daily_change":"-4.389","daily_change_percentage":"-9.91"},"XRP-BTC":{"low":"0.000088364","high":"0.000089999","last":"0.000089658","volume":"112689.76","daily_change":"0.000000766","daily_change_percentage":"0.86"},"XRP-TRY":{"low":"1.6966","high":"1.7749","last":"1.7016","volume":"36255.83","daily_change":"-0.0651","daily_change_percentage":"-3.68"}}'
+    http_version: 
+  recorded_at: Sun, 20 Jan 2019 16:56:01 GMT
+recorded_with: VCR 4.0.0

@@ -9,17 +9,17 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch
-          output = super ticker_url
+          output = super(ticker_url)
           adapt_all(output)
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Kucoin::Market::API_URL}/open/tick"
+          "#{Cryptoexchange::Exchanges::Kucoin::Market::API_URL}/market/allTickers"
         end
 
         def adapt_all(output)
-          output['data'].map do |ticker|
-            base, target = ticker['symbol'].split('-')
+          output["data"]["ticker"].map do |ticker|
+            base, target = ticker["symbol"].split('-')
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
                             target: target,
@@ -30,19 +30,17 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          market = output
-          ticker = Cryptoexchange::Models::Ticker.new
-          ticker.base = market_pair.base
-          ticker.target = market_pair.target
-          ticker.market = Kucoin::Market::NAME
-          ticker.ask = NumericHelper.to_d(market['sell'])
-          ticker.bid = NumericHelper.to_d(market['buy'])
-          ticker.last = NumericHelper.to_d(market['lastDealPrice'])
-          ticker.high = NumericHelper.to_d(market['high'])
-          ticker.low = NumericHelper.to_d(market['low'])
-          ticker.volume = NumericHelper.to_d(market['vol'])
-          ticker.timestamp = market['datetime'].to_i / 1000
-          ticker.payload = market
+          ticker           = Cryptoexchange::Models::Ticker.new
+          ticker.base      = market_pair.base
+          ticker.target    = market_pair.target
+          ticker.market    = Kucoin::Market::NAME
+
+          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.high      = NumericHelper.to_d(output['high'])
+          ticker.low       = NumericHelper.to_d(output['low'])
+          ticker.volume    = NumericHelper.to_d(output['vol'])
+          ticker.timestamp = nil
+          ticker.payload   = output
           ticker
         end
       end

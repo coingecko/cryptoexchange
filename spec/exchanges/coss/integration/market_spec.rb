@@ -33,6 +33,6 @@ RSpec.describe 'Coss integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'coss', base: coss_eth_pair.base, target: coss_eth_pair.target
-    expect(trade_page_url).to eq "https://exchange.coss.io/exchange/coss-eth"
+    expect(trade_page_url).to eq "https://coss.io/c/trade?s=COSS_ETH"
   end
 end

@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.btc-exchange.com/papi/web/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.btc-exchange.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 28 Dec 2018 11:33:27 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '795'
+      Connection:
+      - close
+      X-Amzn-Requestid:
+      - 64b4f947-0a94-11e9-a161-cbd2ee44d1e1
+      X-Runtime:
+      - '0.030385'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amzn-Remapped-Content-Length:
+      - '795'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      X-Forwarded-Proto:
+      - https
+      X-Amzn-Remapped-Connection:
+      - Keep-Alive
+      X-Request-Id:
+      - 0caeee87-e9eb-466e-b016-c8d67c9f5d43
+      X-Amz-Apigw-Id:
+      - SnaBIEVeDoEF5bQ=
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Amzn-Remapped-User-Agent:
+      - http.rb/3.0.0
+      Etag:
+      - W/"bf271639df4971ab894ba0b49d01d5f9"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      X-Amzn-Remapped-Host:
+      - internal.svc.btc-exchange.com
+      Version:
+      - HTTP/1.1
+      X-Amzn-Apigateway-Api-Id:
+      - sy7qyxit07
+      X-Amzn-Trace-Id:
+      - Root=1-5c260a07-2235d2800e1c57bf8120c1c6
+      X-Amzn-Remapped-X-Forwarded-For:
+      - 86.181.89.181
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Forwarded-Port:
+      - '443'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"btceur":{"at":1545996807,"ticker":{"buy":"3180.0","sell":"3200.0","low":"3136.34","high":"3365.22","last":"3199.99","vol":"136.14195775"}},"etheur":{"at":1545996807,"ticker":{"buy":"102.45","sell":"103.63","low":"93.0","high":"109.63","last":"103.29","vol":"3485.05882492"}},"bcheur":{"at":1545996807,"ticker":{"buy":"130.86","sell":"135.6","low":"127.91","high":"136.19","last":"127.91","vol":"0.01003638"}},"xrpeur":{"at":1545996807,"ticker":{"buy":"0.30009","sell":"0.30344","low":"0.29197","high":"0.32116","last":"0.30405","vol":"14508.04745681"}},"usdceur":{"at":1545996807,"ticker":{"buy":"0.9","sell":"0.93","low":"0.92","high":"0.93","last":"0.93","vol":"0.0"}},"btcusdc":{"at":1545996807,"ticker":{"buy":"1.0","sell":"4999.0","low":"2.0","high":"100000.0","last":"2.0","vol":"0.0"}}}'
+    http_version: 
+  recorded_at: Fri, 28 Dec 2018 11:33:27 GMT
+recorded_with: VCR 4.0.0

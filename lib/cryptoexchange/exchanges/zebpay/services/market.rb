@@ -4,17 +4,29 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            true
+            false
           end
         end
 
-        def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output, market_pair)
+        def fetch
+          output = super(ticker_url)
+          adapt_all(output)
         end
 
-        def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Zebpay::Market::API_URL}/market/ticker-new/#{market_pair.base}/#{market_pair.target}"
+        def ticker_url
+          "#{Cryptoexchange::Exchanges::Zebpay::Market::API_URL}/market"
+        end
+
+        def adapt_all(output)
+          output.map do |output|
+            base, target = output['pair'].split('-')
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+                            base: base,
+                            target: target,
+                            market: Zebpay::Market::NAME
+                            )
+            adapt(output, market_pair)
+          end
         end
 
         def adapt(output, market_pair)

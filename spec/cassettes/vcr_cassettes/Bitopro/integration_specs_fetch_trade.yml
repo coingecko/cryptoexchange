@@ -1,0 +1,138 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitopro.com/v2/trades/BTC_TWD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitopro.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 15 Feb 2019 09:16:57 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '1624'
+      Connection:
+      - close
+      Vary:
+      - Origin
+    body:
+      encoding: UTF-8
+      string: |
+        [
+         {
+          "amount": "1.38033936",
+          "price": "109600",
+          "timestamp": 1550220734000
+         },
+         {
+          "amount": "0.27346064",
+          "price": "109705",
+          "timestamp": 1550220734000
+         },
+         {
+          "amount": "0.25294749",
+          "price": "109700",
+          "timestamp": 1550218793000
+         },
+         {
+          "amount": "0.167",
+          "price": "110141",
+          "timestamp": 1550218734000
+         },
+         {
+          "amount": "0.55274577",
+          "price": "109700",
+          "timestamp": 1550218658000
+         },
+         {
+          "amount": "0.55276257",
+          "price": "109700",
+          "timestamp": 1550218514000
+         },
+         {
+          "amount": "0.55290927",
+          "price": "109700",
+          "timestamp": 1550218392000
+         },
+         {
+          "amount": "0.56037241",
+          "price": "110000",
+          "timestamp": 1550217439000
+         },
+         {
+          "amount": "0.06722133",
+          "price": "109660",
+          "timestamp": 1550217386000
+         },
+         {
+          "amount": "0.023",
+          "price": "110231",
+          "timestamp": 1550217114000
+         },
+         {
+          "amount": "0.04856767",
+          "price": "110399",
+          "timestamp": 1550217082000
+         },
+         {
+          "amount": "0.023",
+          "price": "110231",
+          "timestamp": 1550217082000
+         },
+         {
+          "amount": "0.01",
+          "price": "109999",
+          "timestamp": 1550217059000
+         },
+         {
+          "amount": "0.80697",
+          "price": "109670",
+          "timestamp": 1550214668000
+         },
+         {
+          "amount": "0.00903366",
+          "price": "110697",
+          "timestamp": 1550214643000
+         },
+         {
+          "amount": "0.192",
+          "price": "109848",
+          "timestamp": 1550214637000
+         },
+         {
+          "amount": "0.58710795",
+          "price": "109680",
+          "timestamp": 1550214624000
+         },
+         {
+          "amount": "0.23083234",
+          "price": "109690",
+          "timestamp": 1550214621000
+         },
+         {
+          "amount": "0.204",
+          "price": "110082",
+          "timestamp": 1550213344000
+         },
+         {
+          "amount": "0.243",
+          "price": "110524",
+          "timestamp": 1550213043000
+         }
+        ]
+    http_version: 
+  recorded_at: Fri, 15 Feb 2019 09:16:57 GMT
+recorded_with: VCR 4.0.0

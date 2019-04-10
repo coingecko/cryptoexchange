@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.oceanex.pro/v1/order_book?market=btcusdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.oceanex.pro
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 17 Jan 2019 09:15:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0b8a3d23768dfbe423fb46df30f152621547716519; expires=Fri, 17-Jan-20
+        09:15:19 GMT; path=/; domain=.oceanex.pro; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Access-Control-Allow-Origin:
+      - https://oceanex.pro
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Version:
+      - HTTP/1.1
+      Host:
+      - api.oceanex.pro
+      X-Request-Id:
+      - ac51b7dbffec9b79168ec563208782ef
+      X-Real-Ip:
+      - 42.200.158.123
+      X-Forwarded-For:
+      - 42.200.158.123
+      X-Forwarded-Host:
+      - api.oceanex.pro
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Original-Uri:
+      - "/v1/order_book?market=btcusdt"
+      X-Scheme:
+      - https
+      X-Original-Forwarded-For:
+      - 42.200.158.123
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - HK
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 42.200.158.123
+      Cdn-Loop:
+      - cloudflare
+      Etag:
+      - W/"f6e102b7ac2f23712add487934817be7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.018735'
+      X-Robots-Tag:
+      - noindex
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49a7b7747fa53343-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":0,"message":"Operation is successful","data":{"timestamp":1547716519,"asks":[["3733.47","0.15"],["3602.07","0.12"],["3602.05","0.15"],["3602.04","0.052"],["3596.47","0.104"],["3596.07","0.078"],["3592.92","0.026"],["3592.91","0.03"],["3591.15","0.230632"],["3590.78","0.135666"],["3590.77","0.207966"],["3590.53","0.122333"],["3590.47","0.0407"],["3590.45","0.0367"],["3587.23","0.0228"],["3587.05","0.0348"],["3586.93","0.0261"],["3586.91","0.0171"],["3586.81","0.0174"],["3586.67","0.0176"],["3586.54","0.0114"],["3586.5","0.0087"],["3586.48","0.0057"]],"bids":[["3572.35","0.0174"],["3572.15","0.0261"],["3572.13","0.0348"],["3572.08","0.0114"],["3572.01","0.0171"],["3571.97","0.0228"],["3571.71","0.0087"],["3571.58","0.0057"],["3570.04","0.02"],["3569.25","0.026"],["3567.54","0.0407"],["3567.43","0.135666"],["3567.34","0.0367"],["3567.31","0.122333"],["3567.21","0.230632"],["3567.2","0.207966"],["3564.2","0.03"],["3564.07","0.06"],["3562.64","0.052"],["3562.58","0.078"],["3562.51","0.104"],["3557.04","0.09"],["3556.93","0.12"],["3483.83","0.014352"],["3.0","5.06866"]]}}'
+    http_version: 
+  recorded_at: Thu, 17 Jan 2019 09:15:19 GMT
+recorded_with: VCR 4.0.0

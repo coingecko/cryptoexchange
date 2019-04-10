@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
         def order_book_url(market_pair)
           base   = market_pair.base
           target = market_pair.target
-          "#{Cryptoexchange::Exchanges::Bitmax::Market::API_URL}/depth?symbol=#{base}-#{target}"
+          "#{Cryptoexchange::Exchanges::Bitmax::Market::API_URL}/depth?symbol=#{base}-#{target}&n=100"
         end
 
         def adapt(output, market_pair)
@@ -34,8 +34,8 @@ module Cryptoexchange::Exchanges
         def adapt_orders(orders)
           orders.collect do |order_entry|
             price, amount = order_entry
-            Cryptoexchange::Models::Order.new(price:     price,
-                                              amount:    amount,
+            Cryptoexchange::Models::Order.new(price:     price.to_f,
+                                              amount:    amount.to_f,
                                               timestamp: nil)
           end
         end

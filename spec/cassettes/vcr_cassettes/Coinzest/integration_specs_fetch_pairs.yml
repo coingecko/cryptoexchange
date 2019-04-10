@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.coinzest.co.kr/api/public/market
+    uri: https://api.coinzest.co.kr/api/public/market_summary
     body:
       encoding: UTF-8
       string: ''
@@ -12,7 +12,7 @@ http_interactions:
       Host:
       - api.coinzest.co.kr
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
@@ -21,11 +21,11 @@ http_interactions:
       Server:
       - nginx/1.12.1
       Date:
-      - Sun, 28 Oct 2018 00:11:11 GMT
+      - Thu, 04 Apr 2019 06:56:52 GMT
       Content-Type:
       - application/json;charset=UTF-8
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '2997'
       Connection:
       - close
       Access-Control-Allow-Origin:
@@ -38,608 +38,161 @@ http_interactions:
       encoding: UTF-8
       string: |-
         {
-         "message": "85 row(s) returned",
-         "trancount": 0,
-         "totalsize": 85,
-         "list":  [
-            {
-           "trdCoinName": "BTC",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "001",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "BCH",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "002",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "ETH",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "003",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "ETC",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "004",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "LTC",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "005",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "XRP",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "007",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "QTUM",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "010",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "XLM",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "012",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "OMG",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "015",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "ZIL",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "016",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "REP",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "017",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "SNT",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "018",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "IOST",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "019",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "COZ",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "021",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "ZRX",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "023",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "MITH",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "025",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "POWR",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "026",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "RKC",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "028",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "GNT",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "033",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "MWAT",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "036",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "ROM",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "044",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "KST",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "047",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "ROMTV",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "048",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "ISR",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "049",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "PAT",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "051",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "COSM",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "055",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "BAAS",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "056",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "LYM",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "057",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "MNC",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "058",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "NXY",
-           "minTrdAmt": "1000.000000000000",
-           "trdCoin": "059",
-           "mrkCoinName": "KRW",
-           "mrkCoin": "000"
-          },
-            {
-           "trdCoinName": "BCH",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "002",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "ETH",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "003",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "ETC",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "004",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "LTC",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "005",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "XRP",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "007",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "QTUM",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "010",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "XLM",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "012",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "OMG",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "015",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "ZIL",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "016",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "REP",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "017",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "SNT",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "018",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "IOST",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "019",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "COZ",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "021",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "ZRX",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "023",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "MITH",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "025",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "POWR",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "026",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "RKC",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "028",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "GNT",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "033",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "MWAT",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "036",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "ROM",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "044",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "KST",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "047",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "ROMTV",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "048",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "ISR",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "049",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "PAT",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "051",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "COSM",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "055",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "BAAS",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "056",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "LYM",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "057",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "MNC",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "058",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "NXY",
-           "minTrdAmt": "0.000500000000",
-           "trdCoin": "059",
-           "mrkCoinName": "BTC",
-           "mrkCoin": "001"
-          },
-            {
-           "trdCoinName": "BCH",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "002",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "ETC",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "004",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "LTC",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "005",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "XRP",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "007",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "QTUM",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "010",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "XLM",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "012",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "OMG",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "015",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "ZIL",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "016",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "REP",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "017",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "SNT",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "018",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "IOST",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "019",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "COZ",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "021",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "ZRX",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "023",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "MITH",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "025",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "POWR",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "026",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "RKC",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "028",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "GNT",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "033",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "MWAT",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "036",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "KST",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "047",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "ISR",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "049",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "PAT",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "051",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "COSM",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "055",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "BAAS",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "056",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "LYM",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "057",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "MNC",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "058",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
-          },
-            {
-           "trdCoinName": "NXY",
-           "minTrdAmt": "0.005000000000",
-           "trdCoin": "059",
-           "mrkCoinName": "ETH",
-           "mrkCoin": "003"
+         "success": true,
+         "message": "10 row(s) returned",
+         "result":  [
+            {
+           "OpenSellOrders": 1,
+           "Low": 0.0015,
+           "OpenBuyOrders": 4,
+           "Volume": 0,
+           "Bid": 1.5041E-4,
+           "MarketName": "BTC-ETC",
+           "Ask": 0.015,
+           "TimeStamp": null,
+           "Last": 0.0015,
+           "Created": 1554361012938,
+           "PrevDay": 0.0015,
+           "BaseVolume": 0,
+           "High": 0.0015
+          },
+            {
+           "OpenSellOrders": 1,
+           "Low": 8.091E-5,
+           "OpenBuyOrders": 4,
+           "Volume": 0,
+           "Bid": 7.86E-6,
+           "MarketName": "BTC-XRP",
+           "Ask": 0.00779983,
+           "TimeStamp": null,
+           "Last": 8.091E-5,
+           "Created": 1554361012938,
+           "PrevDay": 8.091E-5,
+           "BaseVolume": 0,
+           "High": 8.091E-5
+          },
+            {
+           "OpenSellOrders": 0,
+           "Low": 8.0E-8,
+           "OpenBuyOrders": 4,
+           "Volume": 0,
+           "Bid": 7.92E-6,
+           "MarketName": "BTC-XLM",
+           "Ask": 0,
+           "TimeStamp": null,
+           "Last": 8.0E-8,
+           "Created": 1554361012938,
+           "PrevDay": 8.0E-8,
+           "BaseVolume": 0,
+           "High": 8.0E-8
+          },
+            {
+           "OpenSellOrders": 2,
+           "Low": 0.00348383,
+           "OpenBuyOrders": 4,
+           "Volume": 0,
+           "Bid": 1.131E-5,
+           "MarketName": "BTC-REP",
+           "Ask": 0.18999977,
+           "TimeStamp": null,
+           "Last": 0.00348383,
+           "Created": 1554361012938,
+           "PrevDay": 0.00348383,
+           "BaseVolume": 0,
+           "High": 0.00348383
+          },
+            {
+           "OpenSellOrders": 1,
+           "Low": 3.52E-5,
+           "OpenBuyOrders": 3,
+           "Volume": 0,
+           "Bid": 1.98E-6,
+           "MarketName": "BTC-POLY",
+           "Ask": 0.0034848,
+           "TimeStamp": null,
+           "Last": 3.52E-5,
+           "Created": 1554361012938,
+           "PrevDay": 3.52E-5,
+           "BaseVolume": 0,
+           "High": 3.52E-5
+          },
+            {
+           "OpenSellOrders": 1,
+           "Low": 3.49E-6,
+           "OpenBuyOrders": 2,
+           "Volume": 0,
+           "Bid": 1.0E-7,
+           "MarketName": "BTC-DENT",
+           "Ask": 3.455E-4,
+           "TimeStamp": null,
+           "Last": 3.49E-6,
+           "Created": 1554361012938,
+           "PrevDay": 3.49E-6,
+           "BaseVolume": 0,
+           "High": 3.49E-6
+          },
+            {
+           "OpenSellOrders": 0,
+           "Low": 0.03,
+           "OpenBuyOrders": 5,
+           "Volume": 0,
+           "Bid": 0.00100011,
+           "MarketName": "ETH-ETC",
+           "Ask": 0,
+           "TimeStamp": null,
+           "Last": 0.03,
+           "Created": 1554361012938,
+           "PrevDay": 0.03,
+           "BaseVolume": 0,
+           "High": 0.03
+          },
+            {
+           "OpenSellOrders": 0,
+           "Low": 5.89E-5,
+           "OpenBuyOrders": 4,
+           "Volume": 0,
+           "Bid": 1.53E-6,
+           "MarketName": "ETH-IOST",
+           "Ask": 0,
+           "TimeStamp": null,
+           "Last": 5.89E-5,
+           "Created": 1554361012938,
+           "PrevDay": 5.89E-5,
+           "BaseVolume": 0,
+           "High": 5.89E-5
+          },
+            {
+           "OpenSellOrders": 1,
+           "Low": 0.06400999,
+           "OpenBuyOrders": 4,
+           "Volume": 0,
+           "Bid": 1.67E-6,
+           "MarketName": "ETH-GNT",
+           "Ask": 6.32999996,
+           "TimeStamp": null,
+           "Last": 0.06400999,
+           "Created": 1554361012938,
+           "PrevDay": 0.06400999,
+           "BaseVolume": 0,
+           "High": 0.06400999
+          },
+            {
+           "OpenSellOrders": 4,
+           "Low": 6.0E-6,
+           "OpenBuyOrders": 2,
+           "Volume": 0,
+           "Bid": 1.0E-6,
+           "MarketName": "ETH-DENT",
+           "Ask": 5.9386E-4,
+           "TimeStamp": null,
+           "Last": 6.0E-6,
+           "Created": 1554361012938,
+           "PrevDay": 6.0E-6,
+           "BaseVolume": 0,
+           "High": 6.0E-6
           }
-         ],
-         "success": true
+         ]
         }
     http_version: 
-  recorded_at: Sun, 28 Oct 2018 00:11:27 GMT
+  recorded_at: Thu, 04 Apr 2019 06:56:52 GMT
 recorded_with: VCR 4.0.0
