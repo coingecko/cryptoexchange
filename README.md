@@ -111,6 +111,7 @@ Or install it yourself as:
 | BtcTradeUa        | Y       | Y          | Y       |         | Y           | Y        | btc_trade_ua      |       |
 | BTCBox            | Y       | Y          |         |         | User-Defined| Y        | btcbox            |       |
 | BTCC              | Y       |            |         |         | User-Defined|          | btcc              |       |
+| BTCEXA            | Y       |            |         |         | Y           |          | btcexa            |       |
 | BTCChina          |         |            |         |         |             |          |                   |       |
 | BTCMarkets        | Y       | Y          |         |         | Y           | Y        | btcmarkets        |       |
 | Btcsquare         | Y       | Y          | Unstable|         | Y           | Y        | btcsquare         |       |
