@@ -272,6 +272,7 @@ Or install it yourself as:
 | Waves             | Y       | N          | Y       |         | Y           |          | waves             |
 | Wcx               | Y       | Y          | Y       |         | Y           |          | wcx               |
 | Wex               | Y       | Y          | Y       |         | Y           | Y        | wex               |
+| Whitebit          | Y       |            |         |         | Y           |          | whitebit          |
 | Yobit             | Y       |            |         |         | Y           |          | yobit             |
 | Yuanbao           | Y       |            |         |         | User-Defined|          | yuanbao           |
 | Yunbi             | Y       |            |         |         | Y           |          | yunbi             |
