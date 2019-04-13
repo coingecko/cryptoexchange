@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.btc-exchange.com/papi/web/trades?limit=50&market=btceur&order_by=desc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.btc-exchange.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 28 Dec 2018 11:59:38 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '7248'
+      Connection:
+      - close
+      X-Amzn-Requestid:
+      - 0d40389e-0a98-11e9-8f19-4b9fd206cd59
+      X-Runtime:
+      - '0.013436'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amzn-Remapped-Content-Length:
+      - '7248'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      X-Forwarded-Proto:
+      - https
+      X-Amzn-Remapped-Connection:
+      - Keep-Alive
+      X-Request-Id:
+      - b207eed8-afb3-421c-bfda-236320766a64
+      X-Amz-Apigw-Id:
+      - Snd2pGV9DoEFxag=
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Amzn-Remapped-User-Agent:
+      - http.rb/3.0.0
+      Etag:
+      - W/"475cfa81fc451fd975c10e1c8726f3fe"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      X-Amzn-Remapped-Host:
+      - internal.svc.btc-exchange.com
+      Version:
+      - HTTP/1.1
+      X-Amzn-Apigateway-Api-Id:
+      - sy7qyxit07
+      X-Amzn-Trace-Id:
+      - Root=1-5c26102a-374a600ab7ae73a13ea537e0
+      X-Amzn-Remapped-X-Forwarded-For:
+      - 86.181.89.181
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Forwarded-Port:
+      - '443'
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":33088,"price":"3231.89","volume":"1.52823177","funds":"4939.0769751453","market":"btceur","created_at":"2018-12-28T12:58:26+01:00","side":"buy"},{"id":33087,"price":"3231.0","volume":"0.22","funds":"710.82","market":"btceur","created_at":"2018-12-28T12:58:26+01:00","side":"buy"},{"id":33086,"price":"3230.0","volume":"0.5","funds":"1615.0","market":"btceur","created_at":"2018-12-28T12:58:26+01:00","side":"buy"},{"id":33085,"price":"3228.45","volume":"0.2271","funds":"733.180995","market":"btceur","created_at":"2018-12-28T12:58:26+01:00","side":"sell"},{"id":33084,"price":"3229.56","volume":"1.43610512","funds":"4637.9876513472","market":"btceur","created_at":"2018-12-28T12:48:29+01:00","side":"buy"},{"id":33083,"price":"3229.0","volume":"0.2","funds":"645.8","market":"btceur","created_at":"2018-12-28T12:48:29+01:00","side":"buy"},{"id":33082,"price":"3225.0","volume":"0.2","funds":"645.0","market":"btceur","created_at":"2018-12-28T12:48:29+01:00","side":"buy"},{"id":33081,"price":"3224.82","volume":"1.1674","funds":"3764.654868","market":"btceur","created_at":"2018-12-28T12:48:29+01:00","side":"sell"},{"id":33080,"price":"3228.92","volume":"0.62996467","funds":"2034.1055222564","market":"btceur","created_at":"2018-12-28T12:45:42+01:00","side":"buy"},{"id":33079,"price":"3228.91","volume":"0.10456748","funds":"337.6389818468","market":"btceur","created_at":"2018-12-28T12:45:41+01:00","side":"buy"},{"id":33078,"price":"3180.15","volume":"0.10456748","funds":"332.540271522","market":"btceur","created_at":"2018-12-28T12:44:12+01:00","side":"sell"},{"id":33077,"price":"3181.0","volume":"0.1162999","funds":"369.9499819","market":"btceur","created_at":"2018-12-28T12:44:12+01:00","side":"sell"},{"id":33076,"price":"3182.0","volume":"0.17913262","funds":"569.99999684","market":"btceur","created_at":"2018-12-28T12:44:12+01:00","side":"sell"},{"id":33075,"price":"3212.0","volume":"0.17029887","funds":"546.99997044","market":"btceur","created_at":"2018-12-28T12:39:01+01:00","side":"buy"},{"id":33074,"price":"3205.0","volume":"0.09466885","funds":"303.41366425","market":"btceur","created_at":"2018-12-28T12:37:28+01:00","side":"buy"},{"id":33073,"price":"3205.0","volume":"0.08424336","funds":"269.9999688","market":"btceur","created_at":"2018-12-28T12:35:12+01:00","side":"buy"},{"id":33072,"price":"3199.99","volume":"0.2","funds":"639.998","market":"btceur","created_at":"2018-12-28T12:23:43+01:00","side":"sell"},{"id":33071,"price":"3200.0","volume":"0.0238","funds":"76.16","market":"btceur","created_at":"2018-12-28T12:23:36+01:00","side":"buy"},{"id":33070,"price":"3200.0","volume":"0.72957125","funds":"2334.628","market":"btceur","created_at":"2018-12-28T12:23:26+01:00","side":"buy"},{"id":33069,"price":"3199.99","volume":"1.24602875","funds":"3987.2795397125","market":"btceur","created_at":"2018-12-28T12:23:26+01:00","side":"sell"},{"id":33067,"price":"3200.13","volume":"0.26623918","funds":"851.9999870934","market":"btceur","created_at":"2018-12-28T11:34:27+01:00","side":"buy"},{"id":33066,"price":"3170.01","volume":"1.51226793","funds":"4793.9044607793","market":"btceur","created_at":"2018-12-28T11:26:11+01:00","side":"sell"},{"id":33065,"price":"3175.0","volume":"0.78228346","funds":"2483.7499855","market":"btceur","created_at":"2018-12-28T11:26:10+01:00","side":"sell"},{"id":33064,"price":"3176.0","volume":"0.00314861","funds":"9.99998536","market":"btceur","created_at":"2018-12-28T11:26:10+01:00","side":"sell"},{"id":33063,"price":"3201.76","volume":"0.00218629","funds":"6.9999758704","market":"btceur","created_at":"2018-12-28T11:21:13+01:00","side":"buy"},{"id":33062,"price":"3175.0","volume":"0.15","funds":"476.25","market":"btceur","created_at":"2018-12-28T11:02:02+01:00","side":"sell"},{"id":33061,"price":"3206.33","volume":"0.04366362","funds":"139.9999747146","market":"btceur","created_at":"2018-12-28T10:55:22+01:00","side":"buy"},{"id":33060,"price":"3198.61","volume":"0.01249191","funds":"39.9567482451","market":"btceur","created_at":"2018-12-28T10:09:49+01:00","side":"sell"},{"id":33059,"price":"3208.43","volume":"0.15039442","funds":"482.5299689606","market":"btceur","created_at":"2018-12-28T10:08:08+01:00","side":"buy"},{"id":33058,"price":"3203.0","volume":"0.2","funds":"640.6","market":"btceur","created_at":"2018-12-28T10:06:36+01:00","side":"buy"},{"id":33057,"price":"3203.0","volume":"0.05463898","funds":"175.00865294","market":"btceur","created_at":"2018-12-28T10:06:15+01:00","side":"buy"},{"id":33056,"price":"3203.0","volume":"0.022","funds":"70.466","market":"btceur","created_at":"2018-12-28T10:06:12+01:00","side":"buy"},{"id":33055,"price":"3191.0","volume":"0.19761862","funds":"630.60101642","market":"btceur","created_at":"2018-12-28T10:03:46+01:00","side":"buy"},{"id":33054,"price":"3191.0","volume":"0.31338138","funds":"999.99998358","market":"btceur","created_at":"2018-12-28T10:02:32+01:00","side":"buy"},{"id":33053,"price":"3179.0","volume":"0.00024959","funds":"0.79344661","market":"btceur","created_at":"2018-12-28T10:01:57+01:00","side":"buy"},{"id":33052,"price":"3179.0","volume":"0.2942529","funds":"935.4299691","market":"btceur","created_at":"2018-12-28T10:01:17+01:00","side":"buy"},{"id":33051,"price":"3179.0","volume":"2.3","funds":"7311.7","market":"btceur","created_at":"2018-12-28T10:00:59+01:00","side":"buy"},{"id":33050,"price":"3179.0","volume":"0.94337842","funds":"2998.99999718","market":"btceur","created_at":"2018-12-28T10:00:23+01:00","side":"buy"},{"id":33049,"price":"3179.0","volume":"0.16671909","funds":"529.99998711","market":"btceur","created_at":"2018-12-28T09:58:54+01:00","side":"buy"},{"id":33048,"price":"3178.99","volume":"0.02031183","funds":"64.5711044517","market":"btceur","created_at":"2018-12-28T09:58:02+01:00","side":"buy"},{"id":33047,"price":"3178.99","volume":"0.53507392","funds":"1700.9946409408","market":"btceur","created_at":"2018-12-28T09:42:13+01:00","side":"buy"},{"id":33043,"price":"3178.99","volume":"0.36961425","funds":"1175.0000046075","market":"btceur","created_at":"2018-12-28T08:53:24+01:00","side":"buy"},{"id":33042,"price":"3178.99","volume":"0.075","funds":"238.42425","market":"btceur","created_at":"2018-12-28T08:46:36+01:00","side":"buy"},{"id":33039,"price":"3139.01","volume":"1.0","funds":"3139.01","market":"btceur","created_at":"2018-12-28T08:21:01+01:00","side":"sell"},{"id":33038,"price":"3155.0","volume":"0.03676572","funds":"115.9958466","market":"btceur","created_at":"2018-12-28T07:43:52+01:00","side":"sell"},{"id":33034,"price":"3155.01","volume":"0.03676572","funds":"115.9962142572","market":"btceur","created_at":"2018-12-28T03:21:02+01:00","side":"sell"},{"id":32912,"price":"3176.35","volume":"0.16494461","funds":"523.9218119735","market":"btceur","created_at":"2018-12-28T01:06:45+01:00","side":"buy"},{"id":32907,"price":"3136.34","volume":"0.73328219","funds":"2299.8222637846","market":"btceur","created_at":"2018-12-28T00:24:04+01:00","side":"sell"},{"id":32906,"price":"3150.0","volume":"1.0","funds":"3150.0","market":"btceur","created_at":"2018-12-28T00:24:04+01:00","side":"sell"},{"id":32905,"price":"3151.0","volume":"0.30339574","funds":"955.99997674","market":"btceur","created_at":"2018-12-28T00:24:04+01:00","side":"sell"}]'
+    http_version: 
+  recorded_at: Fri, 28 Dec 2018 11:59:38 GMT
+recorded_with: VCR 4.0.0

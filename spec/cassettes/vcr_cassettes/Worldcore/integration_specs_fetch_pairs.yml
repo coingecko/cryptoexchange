@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.worldcore.trade/market/pairs
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.worldcore.trade
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 05 Jan 2019 18:47:12 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - content-type,X-Requested-With
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"result":{"pairs":[{"pair":{"pair_id":1,"pair":"ltc_btc","pair_show":"LTC
+        / BTC","group":"crypto","visible":true,"enable":true,"round_deal_amount":6,"round_deal_price":6,"min_amount":0.01,"min_price":0.0001,"max_price":1},"data_market":{"open":0.0084,"close":0.009166,"high":0.009428,"low":0.008339,"volume":819.094026,"value":7.11373484,"volume_usd":29258.04,"rate":9.119,"date_now":1546714032418}},{"pair":{"pair_id":3,"pair":"dash_btc","pair_show":"DASH
+        / BTC","group":"crypto","visible":true,"enable":true,"round_deal_amount":5,"round_deal_price":5,"min_amount":0.01,"min_price":0.001,"max_price":10},"data_market":{"open":0.02084,"close":0.02092,"high":0.0211,"low":0.02052,"volume":719.23838,"value":14.97326523,"volume_usd":59689.59,"rate":0.384,"date_now":1546714032426}},{"pair":{"pair_id":4,"pair":"eth_btc","pair_show":"ETH
+        / BTC","group":"crypto","visible":true,"enable":true,"round_deal_amount":5,"round_deal_price":5,"min_amount":0.01,"min_price":0.001,"max_price":10},"data_market":{"open":0.03943,"close":0.04085,"high":0.04164,"low":0.0393,"volume":46.0259,"value":1.86837224,"volume_usd":7336.07,"rate":3.601,"date_now":1546714032434}},{"pair":{"pair_id":5,"pair":"dash_ltc","pair_show":"DASH
+        / LTC","group":"crypto","visible":true,"enable":true,"round_deal_amount":5,"round_deal_price":4,"min_amount":0.01,"min_price":0.001,"max_price":100},"data_market":{"open":2.4875,"close":2.2853,"high":2.4936,"low":2.2083,"volume":901.03249,"value":2143.84308196,"volume_usd":74776.69,"rate":-8.129,"date_now":1546714032441}},{"pair":{"pair_id":6,"pair":"eth_ltc","pair_show":"ETH
+        / LTC","group":"crypto","visible":true,"enable":true,"round_deal_amount":5,"round_deal_price":5,"min_amount":0.01,"min_price":0.001,"max_price":500},"data_market":{"open":4.7102,"close":4.46046,"high":4.87392,"low":4.3313,"volume":47.30363,"value":223.05439532,"volume_usd":7539.73,"rate":-5.303,"date_now":1546714032447}},{"pair":{"pair_id":8,"pair":"dash_eth","pair_show":"DASH
+        / ETH","group":"crypto","visible":true,"enable":true,"round_deal_amount":5,"round_deal_price":5,"min_amount":0.01,"min_price":0.1,"max_price":40},"data_market":{"open":0.52985,"close":0.51322,"high":0.53015,"low":0.50106,"volume":656.44595,"value":335.6173935,"volume_usd":54478.45,"rate":-3.139,"date_now":1546714032453}},{"pair":{"pair_id":10,"pair":"btc_usdt","pair_show":"BTC
+        / USDT","group":"usdt","visible":true,"enable":true,"round_deal_amount":5,"round_deal_price":5,"min_amount":0.001,"min_price":0.1,"max_price":100000},"data_market":{"open":3736.16,"close":3812.05,"high":3836.04,"low":3729.12,"volume":7.77439,"value":29507.09244979,"volume_usd":30298.9,"rate":2.031,"date_now":1546714032459}},{"pair":{"pair_id":11,"pair":"ltc_usdt","pair_show":"LTC
+        / USDT","group":"usdt","visible":true,"enable":true,"round_deal_amount":5,"round_deal_price":5,"min_amount":0.01,"min_price":0.0001,"max_price":1000},"data_market":{"open":31.31089,"close":34.9249,"high":35.83172,"low":31.25405,"volume":759.39002,"value":25198.60991646,"volume_usd":27125.41,"rate":11.542,"date_now":1546714032465}},{"pair":{"pair_id":12,"pair":"dash_usdt","pair_show":"DASH
+        / USDT","group":"usdt","visible":true,"enable":true,"round_deal_amount":5,"round_deal_price":5,"min_amount":0.01,"min_price":0.1,"max_price":10000},"data_market":{"open":77.90614,"close":79.70882,"high":80.35309,"low":77.68273,"volume":994.8732,"value":78555.03711223,"volume_usd":82564.53,"rate":2.314,"date_now":1546714032472}},{"pair":{"pair_id":13,"pair":"eth_usdt","pair_show":"ETH
+        / USDT","group":"usdt","visible":true,"enable":true,"round_deal_amount":5,"round_deal_price":5,"min_amount":0.01,"min_price":0.0001,"max_price":10000},"data_market":{"open":147.30906,"close":155.49622,"high":158.88073,"low":146.86095,"volume":38.0588,"value":5882.42375497,"volume_usd":6066.19,"rate":5.558,"date_now":1546714032479}},{"pair":{"pair_id":15,"pair":"wrc_btc","pair_show":"WRC
+        / BTC","group":"wrc","visible":true,"enable":true,"round_deal_amount":1,"round_deal_price":8,"min_amount":1,"min_price":1e-7,"max_price":0.001},"data_market":{"open":0.00000259,"close":0.00000259,"high":0.00000259,"low":0.00000259,"volume":0,"value":0,"volume_usd":0,"rate":0,"date_now":1546714032483}},{"pair":{"pair_id":16,"pair":"wrc_eth","pair_show":"WRC
+        / ETH","group":"wrc","visible":true,"enable":true,"round_deal_amount":3,"round_deal_price":8,"min_amount":1,"min_price":0.000001,"max_price":10},"data_market":{"open":0.000005,"close":0.000005,"high":0.000005,"low":0.000005,"volume":0,"value":0,"volume_usd":0,"rate":0,"date_now":1546714032487}},{"pair":{"pair_id":17,"pair":"wrc_usdt","pair_show":"WRC
+        / USDT","group":"wrc","visible":true,"enable":true,"round_deal_amount":3,"round_deal_price":4,"min_amount":1,"min_price":0.01,"max_price":100},"data_market":{"open":0.0301,"close":0.0301,"high":0.0301,"low":0.0301,"volume":0,"value":0,"volume_usd":0,"rate":0,"date_now":1546714032490}},{"pair":{"pair_id":18,"pair":"xrp_btc","pair_show":"XRP
+        / BTC","group":"crypto","visible":true,"enable":true,"round_deal_amount":0,"round_deal_price":8,"min_amount":1,"min_price":0.000001,"max_price":0.01},"data_market":{"open":0.00009324,"close":0.00009285,"high":0.00009399,"low":0.00009203,"volume":84046,"value":7.81816829,"volume_usd":30491.89,"rate":-0.419,"date_now":1546714032496}},{"pair":{"pair_id":19,"pair":"xrp_eth","pair_show":"XRP
+        / ETH","group":"crypto","visible":true,"enable":true,"round_deal_amount":0,"round_deal_price":5,"min_amount":1,"min_price":0.000001,"max_price":10},"data_market":{"open":0.0012,"close":0.0012,"high":0.0012,"low":0.0012,"volume":0,"value":0,"volume_usd":0,"rate":0,"date_now":1546714032501}},{"pair":{"pair_id":20,"pair":"xrp_usdt","pair_show":"XRP
+        / USDT","group":"crypto","visible":true,"enable":true,"round_deal_amount":0,"round_deal_price":4,"min_amount":1,"min_price":0.001,"max_price":100},"data_market":{"open":0.3487,"close":0.3541,"high":0.3583,"low":0.348,"volume":70016,"value":24713.1229,"volume_usd":25401.8,"rate":1.549,"date_now":1546714032509}},{"pair":{"pair_id":21,"pair":"xmr_btc","pair_show":"XMR
+        / BTC","group":"crypto","visible":true,"enable":true,"round_deal_amount":2,"round_deal_price":6,"min_amount":0.01,"min_price":0.0001,"max_price":100},"data_market":{"open":0.013274,"close":0.012977,"high":0.013302,"low":0.012915,"volume":180.65,"value":2.36139616,"volume_usd":9269.15,"rate":-2.238,"date_now":1546714032515}},{"pair":{"pair_id":22,"pair":"xmr_eth","pair_show":"XMR
+        / ETH","group":"crypto","visible":true,"enable":true,"round_deal_amount":2,"round_deal_price":6,"min_amount":0.01,"min_price":0.001,"max_price":100},"data_market":{"open":0.336838,"close":0.318851,"high":0.337337,"low":0.315054,"volume":128.29,"value":41.21876758,"volume_usd":6582.56,"rate":-5.34,"date_now":1546714032521}},{"pair":{"pair_id":23,"pair":"xmr_usdt","pair_show":"XMR
+        / USDT","group":"crypto","visible":true,"enable":true,"round_deal_amount":3,"round_deal_price":2,"min_amount":0.001,"min_price":0.1,"max_price":10000},"data_market":{"open":49.57,"close":49.75,"high":50.68,"low":49.13,"volume":191.836,"value":9531.16677,"volume_usd":9843.11,"rate":0.363,"date_now":1546714032528}},{"pair":{"pair_id":24,"pair":"tusd_btc","pair_show":"TUSD
+        / BTC","group":"crypto","visible":true,"enable":true,"round_deal_amount":4,"round_deal_price":8,"min_amount":0.0001,"min_price":0.00001,"max_price":0.002},"data_market":{"open":0.00026559,"close":0.00025989,"high":0.00026617,"low":0.00025858,"volume":214.1422,"value":0.05601389,"volume_usd":214.14,"rate":-2.147,"date_now":1546714032534}},{"pair":{"pair_id":25,"pair":"ggc_usdt","pair_show":"GGC
+        / USDT","group":"crypto","visible":true,"enable":true,"round_deal_amount":4,"round_deal_price":6,"min_amount":0.001,"min_price":1,"max_price":1000},"data_market":{"open":0,"close":0,"high":0,"low":0,"volume":0,"value":0,"volume_usd":0,"rate":0,"date_now":1546714032538}},{"pair":{"pair_id":26,"pair":"catt_btc","pair_show":"CATT
+        / BTC","group":"crypto","visible":true,"enable":true,"round_deal_amount":8,"round_deal_price":8,"min_amount":1,"min_price":1e-8,"max_price":0.000001},"data_market":{"open":0,"close":0,"high":0,"low":0,"volume":0,"value":0,"volume_usd":0,"rate":0,"date_now":1546714032542}},{"pair":{"pair_id":27,"pair":"fgp_btc","pair_show":"FGP
+        / BTC","group":"crypto","visible":true,"enable":true,"round_deal_amount":1,"round_deal_price":8,"min_amount":1,"min_price":1e-8,"max_price":0.0001},"data_market":{"open":0.00000974,"close":0.00000974,"high":0.00000974,"low":0.00000974,"volume":0,"value":0,"volume_usd":0,"rate":0,"date_now":1546714032547}},{"pair":{"pair_id":29,"pair":"iei_btc","pair_show":"IEI
+        / BTC","group":"crypto","visible":true,"enable":true,"round_deal_amount":1,"round_deal_price":8,"min_amount":1,"min_price":1e-8,"max_price":0.0001},"data_market":{"open":1e-8,"close":2e-8,"high":2e-8,"low":1e-8,"volume":888654.3,"value":0.01639688,"volume_usd":0,"rate":100,"date_now":1546714032551}},{"pair":{"pair_id":30,"pair":"nls_btc","pair_show":"NLS
+        / BTC","group":"crypto","visible":true,"enable":true,"round_deal_amount":1,"round_deal_price":8,"min_amount":1,"min_price":1e-8,"max_price":0.00001},"data_market":{"open":0,"close":0,"high":0,"low":0,"volume":0,"value":0,"volume_usd":0,"rate":0,"date_now":1546714032555}}]}}'
+    http_version: 
+  recorded_at: Sat, 05 Jan 2019 18:47:12 GMT
+recorded_with: VCR 4.0.0

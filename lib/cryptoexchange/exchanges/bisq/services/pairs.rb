@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Bisq
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bisq::Market::API_URL}/markets"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bisq::Market::API_URL}/ticker"
 
         def fetch
           output = super
@@ -11,13 +11,14 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output.map do |pair, ticker|
+            next if ticker.nil?
             base, target = pair.split('_')
             Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
               market: Bisq::Market::NAME
               )
-          end
+          end.compact
         end
       end
     end

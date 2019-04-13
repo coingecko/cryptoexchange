@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://crytrex.com/public_api/order-book?currency=USD&market=BTC
+    uri: https://crytrex.com/public_api/order-book?currency=ETH&market=BTC
     body:
       encoding: UTF-8
       string: ''
@@ -19,34 +19,30 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 17 Aug 2018 19:07:03 GMT
+      - Wed, 14 Nov 2018 01:34:53 GMT
       Server:
       - Apache
       X-Powered-By:
-      - WLOX
-      Access-Control-Allow-Origin:
-      - "*, *"
-      Expires:
-      - Thu, 19 Nov 1981 08:52:00 GMT
+      - PHP/7.0.30
       Cache-Control:
-      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-      Pragma:
-      - no-cache
-      Set-Cookie:
-      - PHPSESSID=fmqs60aic4ml2oesb1u0jbp332; path=/; secure; HttpOnly
+      - max-age=2592000
+      Expires:
+      - Fri, 14 Dec 2018 01:34:53 GMT
       Vary:
-      - Accept-Encoding,User-Agent
+      - User-Agent
+      Access-Control-Allow-Origin:
+      - "*"
       Content-Type:
       - text/html; charset=UTF-8
       Via:
       - 1.1 stark
       Connection:
       - close
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '0'
     body:
       encoding: UTF-8
-      string: '{"order-book":{"market":"BTC","currency":"USD","bid":[{"price":6000,"order_amount":0.00423193,"order_value":25.39,"converted_from":null,"timestamp":1534427150}],"ask":[{"price":8998,"order_amount":0.04378134,"order_value":393.94,"converted_from":null,"timestamp":1534278228}]}}'
+      string: ''
     http_version: 
-  recorded_at: Fri, 17 Aug 2018 19:07:03 GMT
+  recorded_at: Wed, 14 Nov 2018 01:34:53 GMT
 recorded_with: VCR 4.0.0

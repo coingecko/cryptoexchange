@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Instant Bitex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:market) { 'instantbitex' }
   let(:eth_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'instantbitex') }
 
   it 'fetch pairs' do
@@ -28,8 +29,13 @@ RSpec.describe 'Instant Bitex integration specs' do
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
-    
+
     expect(ticker.payload).to_not be nil
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: eth_btc_pair.base, target: eth_btc_pair.target
+    expect(trade_page_url).to eq "https://instantbitex.com/trade/pair/ETH_BTC"
   end
 
   it 'fetch order book' do

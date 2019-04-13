@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maplechange.com/api/v2/markets.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - maplechange.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Jul 2018 08:53:06 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2453'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d4c2b9920f912a85cbe225b3059ef558b1532076785; expires=Sat, 20-Jul-19
+        08:53:05 GMT; path=/; domain=.maplechange.com; HttpOnly; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      - max-age=31536000
+      X-Request-Id:
+      - ed3ce7f6-ea3f-47f1-9157-997afacfa763
+      Etag:
+      - '"017be0411d230225d8f4e3d3929ffd1c"'
+      X-Runtime:
+      - '0.032073'
+      X-Powered-By:
+      - Phusion Passenger 5.2.3
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 43d43206ab5baa2c-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"waebtc","name":"BTC/WAE"},{"id":"ltcbtc","name":"BTC/LTC"},{"id":"dogebtc","name":"BTC/DOGE"},{"id":"ethbtc","name":"BTC/ETH"},{"id":"spesbtc","name":"BTC/SPES"},{"id":"xunbtc","name":"BTC/XUN"},{"id":"xaxbtc","name":"BTC/XAX"},{"id":"babybtc","name":"BTC/BABY"},{"id":"xgoxbtc","name":"BTC/XGOX"},{"id":"irdbtc","name":"BTC/IRD"},{"id":"waeeth","name":"ETH/WAE"},{"id":"speseth","name":"ETH/SPES"},{"id":"xuneth","name":"ETH/XUN"},{"id":"xgoxeth","name":"ETH/XGOX"},{"id":"irdeth","name":"ETH/IRD"},{"id":"dogewae","name":"WAE/DOGE"},{"id":"speswae","name":"WAE/SPES"},{"id":"xunwae","name":"WAE/XUN"},{"id":"spesltc","name":"LTC/SPES"},{"id":"irdltc","name":"LTC/IRD"},{"id":"gzrobtc","name":"BTC/GZRO"},{"id":"gzroeth","name":"ETH/GZRO"},{"id":"gzrowae","name":"WAE/GZRO"},{"id":"gzroltc","name":"LTC/GZRO"},{"id":"mribtc","name":"BTC/MRI"},{"id":"mrixgox","name":"XGOX/MRI"},{"id":"xgodxgox","name":"XGOX/XGOD"},{"id":"msrbtc","name":"BTC/MSR"},{"id":"xaobtc","name":"BTC/XAO"},{"id":"ryobtc","name":"BTC/RYO"},{"id":"sumobtc","name":"BTC/SUMO"},{"id":"wowbtc","name":"BTC/WOW"},{"id":"egembtc","name":"BTC/EGEM"},{"id":"egemeth","name":"ETH/EGEM"},{"id":"egemwae","name":"WAE/EGEM"},{"id":"egemltc","name":"LTC/EGEM"},{"id":"mztbtc","name":"BTC/MZT"},{"id":"mztltc","name":"LTC/MZT"},{"id":"dnrbtc","name":"BTC/DNR"},{"id":"xshbtc","name":"BTC/XSH"},{"id":"dnregem","name":"EGEM/DNR"},{"id":"xshegem","name":"EGEM/XSH"},{"id":"dnrxsh","name":"XSH/DNR"},{"id":"dgbbtc","name":"BTC/DGB"},{"id":"etnxbtc","name":"BTC/ETNX"},{"id":"civbtc","name":"BTC/CIV"},{"id":"trtlbtc","name":"BTC/TRTL"},{"id":"trtleth","name":"ETH/TRTL"},{"id":"trtlwae","name":"WAE/TRTL"},{"id":"trtlltc","name":"LTC/TRTL"},{"id":"vtcbtc","name":"BTC/VTC"},{"id":"vtcegem","name":"EGEM/VTC"},{"id":"cnmcbtc","name":"BTC/CNMC"},{"id":"motabtc","name":"BTC/MOTA"},{"id":"festbtc","name":"BTC/FEST"},{"id":"grwibtc","name":"BTC/GRWI"},{"id":"ethobtc","name":"BTC/ETHO"},{"id":"joybtc","name":"BTC/JOY"},{"id":"xgodbtc","name":"BTC/XGOD"},{"id":"parsbtc","name":"BTC/PARS"},{"id":"brbbtc","name":"BTC/BRB"},{"id":"skxbtc","name":"BTC/SKX"},{"id":"pgnbtc","name":"BTC/PGN"},{"id":"xsfbtc","name":"BTC/XSF"},{"id":"reexbtc","name":"BTC/REEX"},{"id":"unabtc","name":"BTC/UNA"},{"id":"nbxbtc","name":"BTC/NBX"},{"id":"b2bbtc","name":"BTC/B2B"},{"id":"b2beth","name":"ETH/B2B"},{"id":"b2bltc","name":"LTC/B2B"},{"id":"ethoeth","name":"ETH/ETHO"},{"id":"xbibtc","name":"BTC/XBI"}]'
+    http_version: 
+  recorded_at: Fri, 20 Jul 2018 08:53:06 GMT
+recorded_with: VCR 4.0.0

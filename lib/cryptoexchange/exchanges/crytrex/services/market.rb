@@ -10,11 +10,15 @@ module Cryptoexchange::Exchanges
 
         def fetch(market_pair)
           output = super(ticker_url(market_pair))
+
+          return if output.length == 0
+          # return if empty hash
+
           adapt(output['stats'], market_pair)
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Crytrex::Market::API_URL}/stats?market=#{market_pair.base}&currency=#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::Crytrex::Market::API_URL}/stats?market=#{market_pair.target}&currency=#{market_pair.base}"
         end
 
         def adapt(output, market_pair)

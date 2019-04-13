@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hpx.com/data/v2/depth?currency=hc_CNYT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hpx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 14 Oct 2018 22:45:04 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '297'
+      Connection:
+      - close
+      Set-Cookie:
+      - SERVERID=4e89ccd909f5cd2a0fa2151043901fb1|1539557104|1539557104;Path=/
+      - acw_tc=2f58917c15395571048561254e2345c875fd26498b57cb97dad7b0cf35fda5;path=/;HttpOnly;Max-Age=1800
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=86400;
+    body:
+      encoding: UTF-8
+      string: '{"channel":null,"code":"0000","data":{"asks":[{"amount":16.011,"price":13.6},{"amount":200.000,"price":25.0},{"amount":202.000,"price":29.0}],"bids":[{"amount":2.978,"price":12.1},{"amount":2.7590,"price":11.0},{"amount":5.821,"price":10.6}],"timestamp":"1539557104"},"id":null,"message":"成功"}'
+    http_version: 
+  recorded_at: Sun, 14 Oct 2018 22:45:05 GMT
+recorded_with: VCR 4.0.0

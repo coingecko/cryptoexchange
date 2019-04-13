@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Gdax integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:market) { 'gdax' }
   let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'gdax') }
 
   it 'fetch pairs' do
@@ -12,6 +13,11 @@ RSpec.describe 'Gdax integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'gdax'
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: btc_usd_pair.base, target: btc_usd_pair.target
+    expect(trade_page_url).to eq "https://pro.coinbase.com/trade/BTC-USD"
   end
 
   it 'fetch ticker' do

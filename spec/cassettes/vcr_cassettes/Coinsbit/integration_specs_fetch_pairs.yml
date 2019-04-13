@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coinsbit.io/api/v1/public/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinsbit.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 04 Oct 2018 07:24:47 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d988c26c71856534861bea91565e684011538637887; expires=Fri, 04-Oct-19
+        07:24:47 GMT; path=/; domain=.coinsbit.io; HttpOnly; Secure
+      Cache-Control:
+      - no-cache, private
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4645e92a6daea2ae-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"message":"","result":["ETH_BTC","BTC_USD","ETH_USD","ATB_USD","ATB_BTC","ATB_ETH","BCC_BTC","BTG_BTC","LTC_BTC","DOGE_BTC","ETC_BTC","BNB_BTC","TUSD_BTC","BCC_USD","BTG_USD","LTC_USD","DOGE_USD","ETC_USD","BNB_USD","TUSD_USD","BCC_ETH","BTG_ETH","LTC_ETH","DOGE_ETH","ETC_ETH","BNB_ETH","TUSD_ETH"]}'
+    http_version: 
+  recorded_at: Thu, 04 Oct 2018 07:24:47 GMT
+recorded_with: VCR 4.0.0

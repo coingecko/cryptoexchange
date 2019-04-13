@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.fatbtc.com/m/trade/ETHBTC/10/1538637889
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.fatbtc.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 04 Oct 2018 07:24:49 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      Set-Cookie:
+      - __cfduid=d2f1ed6e781aa009b7020989a0cd58d4c1538637889; expires=Fri, 04-Oct-19
+        07:24:49 GMT; path=/; domain=.fatbtc.com; HttpOnly
+      Cache-Control:
+      - no-cache
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4645e939bc7ac0fc-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":1,"msg":"success","symbol":"ethbtc","timestamp":1538637944092,"trades":[{"id":null,"timestamp":1538637942013,"volume":5.2557,"price":0.0349,"taker":"sell","upOrDown":1},{"id":null,"timestamp":1538637912267,"volume":6.9962,"price":0.0348,"taker":"sell","upOrDown":-1},{"id":null,"timestamp":1538637855626,"volume":13.6146,"price":0.0349,"taker":"buy","upOrDown":1},{"id":null,"timestamp":1538637826926,"volume":1.5383,"price":0.0347,"taker":"sell","upOrDown":-1},{"id":null,"timestamp":1538637798381,"volume":2.0402,"price":0.0349,"taker":"sell","upOrDown":1},{"id":null,"timestamp":1538637768583,"volume":12.5642,"price":0.0346,"taker":"buy","upOrDown":-1},{"id":null,"timestamp":1538637709561,"volume":5.8354,"price":0.0350,"taker":"sell","upOrDown":1},{"id":null,"timestamp":1538637651920,"volume":1.9882,"price":0.0348,"taker":"buy","upOrDown":-1},{"id":null,"timestamp":1538637623037,"volume":14.4837,"price":0.0349,"taker":"buy","upOrDown":-1},{"id":null,"timestamp":1538637592141,"volume":12.1265,"price":0.0350,"taker":"buy","upOrDown":1}]}'
+    http_version:
+  recorded_at: Thu, 04 Oct 2018 07:24:49 GMT
+recorded_with: VCR 4.0.0

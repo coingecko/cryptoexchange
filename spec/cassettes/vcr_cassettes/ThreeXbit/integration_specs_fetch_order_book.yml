@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.exchange.3xbit.com.br/v1/orderbook/btc/doge/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.exchange.3xbit.com.br
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Allow:
+      - GET, HEAD, OPTIONS
+      Content-Language:
+      - pt-br
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 19 Jan 2019 07:48:27 GMT
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Vary:
+      - Authorization, Accept-Language, Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '1899'
+      Connection:
+      - Close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"exchange_rate":"3.750000","market":"BTCDOGE","buy_orders":[{"unit_price":"0.00000057","quantity":"6.75311900"},{"unit_price":"0.00000056","quantity":"4344.02332600"},{"unit_price":"0.00000056","quantity":"2264.69488800"},{"unit_price":"0.00000054","quantity":"25357.53888900"},{"unit_price":"0.00000053","quantity":"6839.02119500"},{"unit_price":"0.00000052","quantity":"6839.02119500"},{"unit_price":"0.00000052","quantity":"10839.02119500"},{"unit_price":"0.00000051","quantity":"8912.23921600"},{"unit_price":"0.00000050","quantity":"26474.81027900"},{"unit_price":"0.00000048","quantity":"3966.59750700"},{"unit_price":"0.00000047","quantity":"530152.26443900"},{"unit_price":"0.00000047","quantity":"40019.82942600"},{"unit_price":"0.00000047","quantity":"41824.09382000"}],"sell_orders":[{"unit_price":"0.00000058","quantity":"26026.64270200"},{"unit_price":"0.00000059","quantity":"32811.36373200"},{"unit_price":"0.00000060","quantity":"3984.81442300"},{"unit_price":"0.00000060","quantity":"3586.33298100"},{"unit_price":"0.00000061","quantity":"3227.69968300"},{"unit_price":"0.00000062","quantity":"2250.86348700"},{"unit_price":"0.00000062","quantity":"3134.14811800"},{"unit_price":"0.00000063","quantity":"3849.05346500"},{"unit_price":"0.00000066","quantity":"4146.54794500"},{"unit_price":"0.00000067","quantity":"3731.89315000"},{"unit_price":"0.00000069","quantity":"4987.76072700"},{"unit_price":"0.00000071","quantity":"6244.34307600"},{"unit_price":"0.00000072","quantity":"4995.47446000"},{"unit_price":"0.00000073","quantity":"11951.62125900"},{"unit_price":"0.00000073","quantity":"1957.53581800"},{"unit_price":"0.00000074","quantity":"8289.43651200"},{"unit_price":"0.00000078","quantity":"9650.81648300"},{"unit_price":"0.00000080","quantity":"7817.16135100"},{"unit_price":"0.00000081","quantity":"7035.44521600"},{"unit_price":"0.00000100","quantity":"100.00000000"}]}'
+    http_version: 
+  recorded_at: Sat, 19 Jan 2019 07:48:27 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.binance.co.ug/api/v1/exchangeInfo
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.binance.co.ug
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Date:
+      - Tue, 29 Jan 2019 14:25:04 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 4eba4d81962fdc39fd45a14ee348ff00.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 8FmSik9kd_42ZwM1_tgaFTOJR4ILbRKgE2NXNjfwMSMGpb2SxdWrQw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timezone":"Africa/Kampala","serverTime":1548771904513,"rateLimits":[{"rateLimitType":"ORDERS","interval":"SECOND","intervalNum":1,"limit":10},{"rateLimitType":"ORDERS","interval":"DAY","intervalNum":1,"limit":100000}],"exchangeFilters":[],"symbols":[{"symbol":"BTCUGX","status":"TRADING","baseAsset":"BTC","baseAssetPrecision":8,"quoteAsset":"UGX","quotePrecision":2,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"filters":[{"filterType":"PRICE_FILTER","minPrice":"1454680.00","maxPrice":"145467910.00","tickSize":"1.00"},{"filterType":"LOT_SIZE","minQty":"0.00000100","maxQty":"10000000.00000000","stepSize":"0.00000100"},{"filterType":"MIN_NOTIONAL","minNotional":"10000.00","applyToMarket":true,"avgPriceMins":5},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_POSITION","maxPosition":"10000000.00000000"},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"ETHUGX","status":"TRADING","baseAsset":"ETH","baseAssetPrecision":8,"quoteAsset":"UGX","quotePrecision":2,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"filters":[{"filterType":"PRICE_FILTER","minPrice":"41100.00","maxPrice":"4109940.00","tickSize":"1.00"},{"filterType":"LOT_SIZE","minQty":"0.00001000","maxQty":"10000000.00000000","stepSize":"0.00001000"},{"filterType":"MIN_NOTIONAL","minNotional":"10000.00","applyToMarket":true,"avgPriceMins":5},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_POSITION","maxPosition":"10000000.00000000"},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"BNBUGX","status":"TRADING","baseAsset":"BNB","baseAssetPrecision":8,"quoteAsset":"UGX","quotePrecision":2,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"filters":[{"filterType":"PRICE_FILTER","minPrice":"2014.00","maxPrice":"201370.00","tickSize":"1.00"},{"filterType":"LOT_SIZE","minQty":"0.00001000","maxQty":"10000000.00000000","stepSize":"0.00001000"},{"filterType":"MIN_NOTIONAL","minNotional":"10000.00","applyToMarket":true,"avgPriceMins":5},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_POSITION","maxPosition":"10000000.00000000"},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"PAXUGX","status":"TRADING","baseAsset":"PAX","baseAssetPrecision":8,"quoteAsset":"UGX","quotePrecision":2,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"filters":[{"filterType":"PRICE_FILTER","minPrice":"371.00","maxPrice":"37090.00","tickSize":"1.00"},{"filterType":"LOT_SIZE","minQty":"0.00010000","maxQty":"10000000.00000000","stepSize":"0.00010000"},{"filterType":"MIN_NOTIONAL","minNotional":"10000.00","applyToMarket":true,"avgPriceMins":5},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_POSITION","maxPosition":"10000000.00000000"},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]}]}'
+    http_version: 
+  recorded_at: Tue, 29 Jan 2019 14:25:04 GMT
+recorded_with: VCR 4.0.0

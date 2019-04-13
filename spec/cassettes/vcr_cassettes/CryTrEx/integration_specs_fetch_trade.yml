@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://crytrex.com/public_api/transactions?currency=USD&market=BTC
+    uri: https://crytrex.com/public_api/transactions?currency=ETH&market=BTC
     body:
       encoding: UTF-8
       string: ''
@@ -19,44 +19,30 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 17 Aug 2018 19:16:02 GMT
+      - Wed, 14 Nov 2018 01:34:54 GMT
       Server:
       - Apache
       X-Powered-By:
-      - WLOX
-      Access-Control-Allow-Origin:
-      - "*, *"
-      Expires:
-      - Thu, 19 Nov 1981 08:52:00 GMT
+      - PHP/7.0.30
       Cache-Control:
-      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-      Pragma:
-      - no-cache
-      Set-Cookie:
-      - PHPSESSID=t8ol5gf2ack97o3oj0jnimmn00; path=/; secure; HttpOnly
+      - max-age=2592000
+      Expires:
+      - Fri, 14 Dec 2018 01:34:54 GMT
       Vary:
-      - Accept-Encoding,User-Agent
+      - User-Agent
+      Access-Control-Allow-Origin:
+      - "*"
       Content-Type:
       - text/html; charset=UTF-8
       Via:
       - 1.1 stark
       Connection:
       - close
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '0'
     body:
       encoding: UTF-8
-      string: '{"transactions":{"market":"BTC","currency":"USD","data":[{"id":484,"date":"2018-08-16
-        23:05:11","timestamp":1534485911,"btc":0.00026807,"maker_type":"buy","price":6000,"amount":1.60842,"currency":"USD","market":"BTC"},{"id":436,"date":"2018-08-15
-        13:22:02","timestamp":1534364522,"btc":0.00138363,"maker_type":"sell","price":8999,"amount":12.45128637,"currency":"USD","market":"BTC"},{"id":435,"date":"2018-08-15
-        13:19:58","timestamp":1534364398,"btc":0.0248886,"maker_type":"sell","price":6500,"amount":161.7759,"currency":"USD","market":"BTC"},{"id":413,"date":"2018-08-14
-        14:56:28","timestamp":1534283788,"btc":0.00295,"maker_type":"sell","price":9000,"amount":26.55,"currency":"USD","market":"BTC"},{"id":404,"date":"2018-08-14
-        13:29:12","timestamp":1534278552,"btc":0.00016475,"maker_type":"sell","price":6500,"amount":1.070875,"currency":"USD","market":"BTC"},{"id":397,"date":"2018-08-14
-        07:23:28","timestamp":1534256608,"btc":0.0199,"maker_type":"buy","price":6000,"amount":119.4,"currency":"USD","market":"BTC"},{"id":367,"date":"2018-08-13
-        21:45:29","timestamp":1534221929,"btc":0.000265,"maker_type":"sell","price":9000,"amount":2.385,"currency":"USD","market":"BTC"},{"id":353,"date":"2018-08-13
-        16:26:43","timestamp":1534202803,"btc":0.00016475,"maker_type":"sell","price":7550,"amount":1.2438625,"currency":"USD","market":"BTC"},{"id":335,"date":"2018-08-13
-        00:23:53","timestamp":1534145033,"btc":0.0004,"maker_type":"sell","price":7550,"amount":3.02,"currency":"USD","market":"BTC"},{"id":334,"date":"2018-08-13
-        00:22:49","timestamp":1534144969,"btc":0.0002,"maker_type":"sell","price":7541,"amount":1.5082,"currency":"USD","market":"BTC"}]}}'
+      string: ''
     http_version: 
-  recorded_at: Fri, 17 Aug 2018 19:16:05 GMT
+  recorded_at: Wed, 14 Nov 2018 01:34:55 GMT
 recorded_with: VCR 4.0.0

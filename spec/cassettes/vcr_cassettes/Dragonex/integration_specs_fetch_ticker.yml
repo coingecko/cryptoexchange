@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://openapi.dragonex.io/api/v1/market/kline/?count=1&kline_type=6&st=0&symbol_id=101
+    uri: https://openapi.dragonex.io/api/v1/market/kline/?count=1&kline_type=1&st=0&symbol_id=101
     body:
       encoding: UTF-8
       string: ''
@@ -21,11 +21,11 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sun, 09 Sep 2018 03:17:43 GMT
+      - Wed, 24 Oct 2018 05:59:52 GMT
       Content-Type:
       - text/html; charset=utf-8
       Content-Length:
-      - '310'
+      - '304'
       Connection:
       - close
       Mycode:
@@ -35,15 +35,15 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Expires:
-      - Sun, 09 Sep 2018 03:17:42 GMT
+      - Wed, 24 Oct 2018 05:59:51 GMT
       Cache-Control:
       - no-cache
     body:
       encoding: UTF-8
       string: '{"ok": true, "code": 1, "msg": "", "data": {"columns": ["amount", "close_price",
         "max_price", "min_price", "open_price", "pre_close_price", "timestamp", "usdt_amount",
-        "volume"], "lists": [["5864591.1984", "6161.2528", "6452.4518", "6131.5024",
-        "6412.8828", "0.0000", 1536422400, "5864591.1984", "945.0829"]]}}'
+        "volume"], "lists": [["10429.3695", "6615.1043", "6615.1625", "6615.0881",
+        "6615.1625", "0.0000", 1540360740, "10429.3695", "1.5766"]]}}'
     http_version: 
-  recorded_at: Sun, 09 Sep 2018 03:17:43 GMT
+  recorded_at: Wed, 24 Oct 2018 05:59:52 GMT
 recorded_with: VCR 4.0.0

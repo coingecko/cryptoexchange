@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-exchange.bankera.com/general/info
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api-exchange.bankera.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 09 Jan 2019 02:48:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d6690d228725fe4dba7c8885cd5bb3fe31547002098; expires=Thu, 09-Jan-20
+        02:48:18 GMT; path=/; domain=.bankera.com; HttpOnly; Secure
+      Allow:
+      - GET
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      - DENY
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 496395893cd9a314-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"server_time":"1547002098000","currencies":[{"id":1,"code":"DASH","scale":8},{"id":2,"code":"XEM","scale":6},{"id":3,"code":"BTC","scale":8},{"id":4,"code":"ETH","scale":18},{"id":5,"code":"BNK","scale":8}],"markets":[{"id":1,"slug":"eth-btc","base_currency":"ETH","quote_currency":"BTC","name":"ETH-BTC","min_order_amount":"0.01","max_order_amount":"100000","order_amount_step_size":"0.00000001","min_order_price":"0.01","max_order_price":"100000","order_price_step_size":"0.00000001","min_order_total_amount":"0.0005","last_price":"0.03771402","volume_24":"0.77526794"},{"id":2,"slug":"bnk-btc","base_currency":"BNK","quote_currency":"BTC","name":"BNK-BTC","min_order_amount":"200","max_order_amount":"10000000","order_amount_step_size":"0.00000001","min_order_price":"200","max_order_price":"10000000","order_price_step_size":"0.00000001","min_order_total_amount":"0.0005","last_price":"0.00000079","volume_24":"3632313.57408205"},{"id":3,"slug":"bnk-eth","base_currency":"BNK","quote_currency":"ETH","name":"BNK-ETH","min_order_amount":"200","max_order_amount":"10000000","order_amount_step_size":"0.00000001","min_order_price":"200","max_order_price":"10000000","order_price_step_size":"0.00000001","min_order_total_amount":"0.01","last_price":"0.00002203","volume_24":"1036966.92223414"},{"id":4,"slug":"xem-btc","base_currency":"XEM","quote_currency":"BTC","name":"XEM-BTC","min_order_amount":"20","max_order_amount":"10000000","order_amount_step_size":"0.000001","min_order_price":"20","max_order_price":"10000000","order_price_step_size":"0.00000001","min_order_total_amount":"0.0005","last_price":"0.00001625","volume_24":"645"},{"id":5,"slug":"dash-btc","base_currency":"DASH","quote_currency":"BTC","name":"DASH-BTC","min_order_amount":"0.02","max_order_amount":"100000","order_amount_step_size":"0.00000001","min_order_price":"0.02","max_order_price":"100000","order_price_step_size":"0.00000001","min_order_total_amount":"0.0005","last_price":"0.02019539","volume_24":"9.182217"}]}'
+    http_version: 
+  recorded_at: Wed, 09 Jan 2019 02:48:18 GMT
+recorded_with: VCR 4.0.0

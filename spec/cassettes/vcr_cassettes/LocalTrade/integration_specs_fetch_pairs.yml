@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://localtrade.cc/main/ticker/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - localtrade.cc
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 08 Jan 2019 20:40:48 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - JSESSIONID=334D47773B448B98AB1913CCC172A6AA; Path=/main; Secure; HttpOnly
+      - __cfduid=dd199dcacf038d89de19fb2fb83d9b9001546980047; expires=Wed, 08-Jan-20
+        20:40:47 GMT; path=/; domain=.localtrade.cc; HttpOnly
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49617b309c04c2bf-FRA
+    body:
+      encoding: UTF-8
+      string: '{"LTC_BTC":{"highPrice":"0.01005600","id":"18","quoteVolume":"303.89204076","baseVolume":"31401.91410000","lowPrice":"0.00933050","lastPrice":"0.00983920"},"ZEC_BTC":{"highPrice":"0.01531300","id":"23","quoteVolume":"1325.77130515","baseVolume":"88402.54100000","lowPrice":"0.01481000","lastPrice":"0.01512700"},"MNC_BTC":{"highPrice":"0.00000000","id":"37","quoteVolume":"0.00000000","baseVolume":"0.00000000","lowPrice":"0.00000000","lastPrice":"0.00000000"},"EDR_BTC":{"highPrice":"0.00000214","id":"3","quoteVolume":"35.82581313","baseVolume":"16934979.56887800","lowPrice":"0.00000206","lastPrice":"0.00000209"},"BTC_IDR":{"highPrice":"4000.00000000","id":"31","quoteVolume":"3.71200000","baseVolume":"0.00092800","lowPrice":"4000.00000000","lastPrice":"4000.00000000"},"ECHT_BTC":{"highPrice":"0.00000000","id":"33","quoteVolume":"0.00000000","baseVolume":"0.00000000","lowPrice":"0.00000000","lastPrice":"0.00000000"},"ETH_USD":{"highPrice":"157.32000000","id":"11","quoteVolume":"37089788.37456231","baseVolume":"241017.73782700","lowPrice":"125.00000000","lastPrice":"154.21000000"},"EDR_LTC":{"highPrice":"0.00029890","id":"4","quoteVolume":"3777.80173036","baseVolume":"17234241.86000000","lowPrice":"0.00020906","lastPrice":"0.00021359"},"ECHT_USD":{"highPrice":"0.00000000","id":"32","quoteVolume":"0.00000000","baseVolume":"0.00000000","lowPrice":"0.00000000","lastPrice":"0.00000000"},"EDR_ETH":{"highPrice":"0.00005761","id":"7","quoteVolume":"3034.49866480","baseVolume":"53592059.40000000","lowPrice":"0.00005539","lastPrice":"0.00005608"},"MNC_ETH":{"highPrice":"0.00000000","id":"38","quoteVolume":"0.00000000","baseVolume":"0.00000000","lowPrice":"0.00000000","lastPrice":"0.00000000"},"ETH_BTC":{"highPrice":"5.14600000","id":"20","quoteVolume":"352.94483562","baseVolume":"9451.83760000","lowPrice":"0.03701400","lastPrice":"0.03735100"},"EDR_IDR":{"highPrice":"128.00000000","id":"30","quoteVolume":"3278440.72735880","baseVolume":"26567.20997870","lowPrice":"121.00000000","lastPrice":"121.00000000"},"MNC_IDR":{"highPrice":"0.00000000","id":"39","quoteVolume":"0.00000000","baseVolume":"0.00000000","lowPrice":"0.00000000","lastPrice":"0.00000000"},"LTC_USD":{"highPrice":"41.94600000","id":"9","quoteVolume":"12959906.61514041","baseVolume":"325091.99490000","lowPrice":"38.22300000","lastPrice":"40.61900000"},"ETH_LTC":{"highPrice":"4.02447758","id":"22","quoteVolume":"137377.39113182","baseVolume":"35482.75770000","lowPrice":"3.74447879","lastPrice":"3.80612322"},"DASH_USD":{"highPrice":"85.33100000","id":"10","quoteVolume":"4077572.91469980","baseVolume":"48626.15390000","lowPrice":"82.01700000","lastPrice":"82.67600000"},"ZEC_USD":{"highPrice":"63.81300000","id":"24","quoteVolume":"1702913.27343200","baseVolume":"27567.07220000","lowPrice":"60.71200000","lastPrice":"62.42100000"},"BTC_USD":{"highPrice":"4198.80000000","id":"8","quoteVolume":"9043601.95826814","baseVolume":"2195.83940000","lowPrice":"4063.70000000","lastPrice":"4129.90000000"},"ECHT_IDR":{"highPrice":"0.00000000","id":"35","quoteVolume":"0.00000000","baseVolume":"0.00000000","lowPrice":"0.00000000","lastPrice":"0.00000000"},"EDR_USD":{"highPrice":"0.00950000","id":"2","quoteVolume":"30370.78293309","baseVolume":"3546984.12693029","lowPrice":"0.00846645","lastPrice":"0.00849693"},"EDR_DASH":{"highPrice":"0.00010508","id":"6","quoteVolume":"766.21455845","baseVolume":"7423010.00000000","lowPrice":"0.00010166","lastPrice":"0.00010412"},"ECHT_ETH":{"highPrice":"0.00000000","id":"34","quoteVolume":"0.00000000","baseVolume":"0.00000000","lowPrice":"0.00000000","lastPrice":"0.00000000"},"MNC_USD":{"highPrice":"0.00000000","id":"36","quoteVolume":"0.00000000","baseVolume":"0.00000000","lowPrice":"0.00000000","lastPrice":"0.00000000"}}'
+    http_version: 
+  recorded_at: Tue, 08 Jan 2019 20:40:48 GMT
+recorded_with: VCR 4.0.0

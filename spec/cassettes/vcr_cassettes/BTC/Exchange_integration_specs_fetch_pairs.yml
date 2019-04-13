@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.btc-exchange.com/papi/web/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.btc-exchange.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 28 Dec 2018 10:49:41 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '419'
+      Connection:
+      - close
+      X-Amzn-Requestid:
+      - 47714494-0a8e-11e9-b8f6-05a34e1df59a
+      X-Runtime:
+      - '0.005096'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amzn-Remapped-Content-Length:
+      - '419'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      X-Forwarded-Proto:
+      - https
+      X-Amzn-Remapped-Connection:
+      - Keep-Alive
+      X-Request-Id:
+      - 45da6d94-b0c9-40dd-a1fe-6cc49f9a10d0
+      X-Amz-Apigw-Id:
+      - SnTmzHR2joEFZWg=
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Amzn-Remapped-User-Agent:
+      - http.rb/3.0.0
+      Etag:
+      - W/"5da60159b04d67df7c168672734b0396"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      X-Amzn-Remapped-Host:
+      - internal.svc.btc-exchange.com
+      Version:
+      - HTTP/1.1
+      X-Amzn-Apigateway-Api-Id:
+      - sy7qyxit07
+      X-Amzn-Trace-Id:
+      - Root=1-5c25ffc5-37b0d7b87dbf297048db6cc8
+      X-Amzn-Remapped-X-Forwarded-For:
+      - 86.181.89.181
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Forwarded-Port:
+      - '443'
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"btceur","name":"BTC/EUR","bid_precision":2,"ask_precision":8},{"id":"etheur","name":"ETH/EUR","bid_precision":2,"ask_precision":8},{"id":"bcheur","name":"BCH/EUR","bid_precision":2,"ask_precision":8},{"id":"xrpeur","name":"XRP/EUR","bid_precision":5,"ask_precision":8},{"id":"usdceur","name":"USDC/EUR","bid_precision":2,"ask_precision":8},{"id":"btcusdc","name":"BTC/USDC","bid_precision":2,"ask_precision":8}]'
+    http_version: 
+  recorded_at: Fri, 28 Dec 2018 10:49:41 GMT
+recorded_with: VCR 4.0.0

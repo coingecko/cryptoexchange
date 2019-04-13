@@ -19,21 +19,15 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |pair|
-            symbol = pair['symbol'].upcase
-            base, target = symbol.split(/(BTC$)+|(ETH$)+|(USDT$)+|(LTC$)+/)
-            market_pair  = Cryptoexchange::Models::MarketPair.new(
-              base:   base,
-              target: target,
-              market: Altilly::Market::NAME
-            )
-            adapt(market_pair, pair)
+            adapt(pair)
           end
         end
 
-        def adapt(market_pair, output)
+        def adapt(output)
+          base, target = output['symbol'].split(/(BTC$)+|(ETH$)+|(USDT$)+|(LTC$)+|(DOGE$)+/)
           ticker           = Cryptoexchange::Models::Ticker.new
-          ticker.base      = market_pair.base
-          ticker.target    = market_pair.target
+          ticker.base      = base
+          ticker.target    = target
           ticker.market    = Altilly::Market::NAME
           ticker.last      = NumericHelper.to_d(output['last'])
           ticker.high      = NumericHelper.to_d(output['high'])

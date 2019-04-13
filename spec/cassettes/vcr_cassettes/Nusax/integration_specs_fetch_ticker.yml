@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nusax.co.id/api/v2/tickers/ETHBTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - nusax.co.id
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 06 Dec 2018 08:36:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '141'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d150e938603c67a72c751dedfb22ea8821544085393; expires=Fri, 06-Dec-19
+        08:36:33 GMT; path=/; domain=.nusax.co.id; HttpOnly
+      Status:
+      - 200 OK
+      Cf-Connecting-Ip:
+      - 2001:e68:6e46:6c00:758b:3930:41b3:b38b
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - MY
+      X-Forwarded-Proto:
+      - https
+      X-Request-Id:
+      - 640d8004-f6f1-4a0d-80d0-0b38d1e6a270
+      Etag:
+      - W/"ab7325522f97c7a3457594d2b90c97a4"
+      User-Agent:
+      - http.rb/3.0.0
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=63072000; includeSubDomains
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Version:
+      - HTTP/1.1
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Host:
+      - nusax.co.id
+      X-Runtime:
+      - '0.009691'
+      X-Forwarded-For:
+      - 2001:e68:6e46:6c00:758b:3930:41b3:b38b
+      X-Powered-By:
+      - Phusion Passenger 5.3.5
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 484d6cef5cb6a900-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1544085393,"ticker":{"buy":"0.0255532","sell":"0.0281825","low":"0.026157","high":"0.0279943","last":"0.0269253","vol":"502.46193507"}}'
+    http_version: 
+  recorded_at: Thu, 06 Dec 2018 08:36:33 GMT
+recorded_with: VCR 4.0.0

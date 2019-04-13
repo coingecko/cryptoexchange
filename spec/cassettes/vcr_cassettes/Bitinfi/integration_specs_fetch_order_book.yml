@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://hq.bitinfi.com/v1/depth.ashx?lang=eng&limit=100&symbol=IOST_ETH&version=9.9.9
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - hq.bitinfi.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2407'
+      Connection:
+      - close
+      Server:
+      - Tengine
+      Date:
+      - Thu, 20 Sep 2018 12:44:12 GMT
+      Cache-Control:
+      - no-cache
+      - no-cache
+      - no-store
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Thu, 20 Sep 2018 12:44:11 GMT
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 b163f71436b4720ab1d0eafa590498ec.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - GNeBN5ySbjfiFEbKXMTey-mlUq9oL4Z1yi02zHeBJTCecT_-VH8w2A==
+    body:
+      encoding: UTF-8
+      string: '{"status":"1","message":"Success","time":"1537447454211","data":{"symbol":"IOST_ETH","name":"IOST/ETH","assetCode":"IOST","curMarket":"ETH","time":"1537447454211","lastupdateid":"1552433898","decimalplace":"8","bidsFilter":"0.00000006","asksFilter":"0.00028385","asksBgRule":"643","bidsBgRule":"495","lastPrice":"0.00005677","risefall":"2","bids":[{"price":"0.00005637","quantity":"178","amount":"0.01003386"},{"price":"0.00005473","quantity":"368","amount":"0.02014064"},{"price":"0.00005462","quantity":"559","amount":"0.03053258"},{"price":"0.00005460","quantity":"691","amount":"0.03772860"},{"price":"0.00005459","quantity":"805","amount":"0.04394495"},{"price":"0.00005457","quantity":"647","amount":"0.03530679"},{"price":"0.00005454","quantity":"531","amount":"0.02896074"},{"price":"0.00005453","quantity":"324","amount":"0.01766772"},{"price":"0.00005451","quantity":"786","amount":"0.04284486"},{"price":"0.00005450","quantity":"211","amount":"0.01149950"},{"price":"0.00005448","quantity":"719","amount":"0.03917112"},{"price":"0.00005445","quantity":"366","amount":"0.01992870"},{"price":"0.00005444","quantity":"329","amount":"0.01791076"},{"price":"0.00005442","quantity":"791","amount":"0.04304622"},{"price":"0.00005441","quantity":"524","amount":"0.02851084"},{"price":"0.00005439","quantity":"524","amount":"0.02850036"},{"price":"0.00005436","quantity":"598","amount":"0.03250728"},{"price":"0.00005435","quantity":"230","amount":"0.01250050"},{"price":"0.00005433","quantity":"228","amount":"0.01238724"}],"asks":[{"price":"0.00005705","quantity":"352","amount":"0.02008160"},{"price":"0.00005716","quantity":"710","amount":"0.04058360"},{"price":"0.00005722","quantity":"375","amount":"0.02145750"},{"price":"0.00005724","quantity":"855","amount":"0.04894020"},{"price":"0.00005727","quantity":"1076","amount":"0.06162252"},{"price":"0.00005728","quantity":"856","amount":"0.04903168"},{"price":"0.00005731","quantity":"374","amount":"0.02143394"},{"price":"0.00005734","quantity":"964","amount":"0.05527576"},{"price":"0.00005736","quantity":"346","amount":"0.01984656"},{"price":"0.00005737","quantity":"392","amount":"0.02248904"},{"price":"0.00005739","quantity":"323","amount":"0.01853697"},{"price":"0.00005740","quantity":"1079","amount":"0.06193460"},{"price":"0.00005743","quantity":"906","amount":"0.05203158"},{"price":"0.00005745","quantity":"391","amount":"0.02246295"}]}}'
+    http_version: 
+  recorded_at: Thu, 20 Sep 2018 12:44:14 GMT
+recorded_with: VCR 4.0.0

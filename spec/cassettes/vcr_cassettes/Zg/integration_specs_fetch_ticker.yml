@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.zg.com/api/v1/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.zg.com
+      User-Agent:
+      - http.rb/3.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 21 Mar 2019 07:26:39 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Cdn-Edge:
+      - f1b6cf5,-
+      Set-Cookie:
+      - __cdnuid=a1d278fd3b7584c5f964bd76fa4764c2; max-age=31536000; path=/; HttpOnly
+      X-Cache:
+      - bypass
+    body:
+      encoding: UTF-8
+      string: '{"ticker":[{"buy":"0.0803","high":"0.0895","last":"0.0806","low":"0.08","sell":"0.081","symbol":"ZG_CNZ","vol":"168843861.17"},{"buy":"940","high":"949.73","last":"944.34","low":"929.69","sell":"949.66","symbol":"ETH_CNZ","vol":"150111.2331"},{"buy":"0.0018","high":"0.0018","last":"0.0018","low":"0.0018","sell":"0.002","symbol":"OEC_CNZ","vol":"1128"},{"buy":"27400.62","high":"27620","last":"27528.91","low":"27184.37","sell":"27620","symbol":"BTC_CNZ","vol":"3664.57578979"},{"buy":"0.078","high":"0.0879","last":"0.0847","low":"0.078","sell":"0.0912","symbol":"CARX_CNZ","vol":"360112.785"},{"buy":"0.3001","high":"0.4658","last":"0.4647","low":"0.3","sell":"0.4659","symbol":"CAM_CNZ","vol":"2878894"},{"buy":"0","high":"0","last":"0.00036","low":"0","sell":"0","symbol":"RREX_CNZ","vol":"0"},{"buy":"0.0421","high":"0.0637","last":"0.0621","low":"0.0421","sell":"0.0637","symbol":"CTS_CNZ","vol":"17513200.51805337"},{"buy":"1.8428","high":"1.9259","last":"1.8637","low":"1.7495","sell":"1.8932","symbol":"ZRX_CNZ","vol":"27819640.2626"},{"buy":"10.702","high":"11.3784","last":"10.8198","low":"0.09","sell":"10.953","symbol":"OMG_CNZ","vol":"5899468.0337"},{"buy":"1.2747","high":"1.3338","last":"1.303","low":"1.2676","sell":"1.3423","symbol":"BAT_CNZ","vol":"53903687.6651"},{"buy":"0.5618","high":"0.6647","last":"0.5718","low":"0.4949","sell":"0.5809","symbol":"GNT_CNZ","vol":"46873675.9983"},{"buy":"0.1556","high":"0.1639","last":"0.1593","low":"0.1538","sell":"0.1622","symbol":"SNT_CNZ","vol":"52754678.7116"},{"buy":"25.022","high":"25.763","last":"25.14","low":"24.249","sell":"25.306","symbol":"EOS_CNZ","vol":"2677881.14723679"},{"buy":"0.4344","high":"0.4393","last":"0.4363","low":"0.42","sell":"0.4369","symbol":"ZGK_CNZ","vol":"14929781.922"},{"buy":"0.0617","high":"0.0744","last":"0.0687","low":"0.0507","sell":"0.0745","symbol":"AEP_CNZ","vol":"2765740.45218918"},{"buy":"0.15","high":"0.169","last":"0.1551","low":"0.1251","sell":"0.16","symbol":"HDW_CNZ","vol":"12258299.1069"},{"buy":"4034.58","high":"4061.48","last":"4046.43","low":"3988.35","sell":"4055.1","symbol":"BTC_USDT","vol":"6111.61983828"},{"buy":"138.78","high":"139.61","last":"139.12","low":"136.33","sell":"139.68","symbol":"ETH_USDT","vol":"149631.452"},{"buy":"3.695","high":"3.733","last":"3.706","low":"3.532","sell":"3.7146","symbol":"EOS_USDT","vol":"4801850.955"},{"buy":"0.023","high":"0.024","last":"0.0231","low":"0.0226","sell":"0.0233","symbol":"SNT_USDT","vol":"42701629.489"},{"buy":"0.3254","high":"0.5001","last":"0.3284","low":"0.2665","sell":"0.3318","symbol":"MDC_USDT","vol":"80546.971"},{"buy":"0.1427","high":"0.1521","last":"0.143","low":"0.13","sell":"0.1445","symbol":"GHP_CNZ","vol":"33789468.3001"},{"buy":"0.0324","high":"0.0333","last":"0.0326","low":"0.03","sell":"0.0328","symbol":"CAD_CNZ","vol":"66312023.6621"}],"timestamp":"1553153199762"}'
+    http_version: 
+  recorded_at: Thu, 21 Mar 2019 07:26:40 GMT
+recorded_with: VCR 4.0.0

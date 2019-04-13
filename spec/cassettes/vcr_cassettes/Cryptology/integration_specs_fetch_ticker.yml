@@ -1,0 +1,99 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.prod.cryptology.com/public/v1/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.prod.cryptology.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3560'
+      Connection:
+      - close
+      Date:
+      - Sat, 06 Oct 2018 10:15:55 GMT
+      X-Amzn-Requestid:
+      - cfdd8d7e-c950-11e8-a754-a1fd8328b8eb
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - OVq2UGbCFiAFdMg=
+      Cache-Control:
+      - max-age=0
+      X-Amzn-Remapped-Server:
+      - Python/3.6 aiohttp/3.3.2
+      X-Amzn-Trace-Id:
+      - Root=1-5bb88b5b-ee5a18004e04120049664a00;Sampled=0
+      X-Amzn-Remapped-Date:
+      - Sat, 06 Oct 2018 10:15:55 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 b7ba40e64504fb3b8f256affaf2e5f6d.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - JvY-VI1VynriHHgRV1GjUaaazhxWraoM8EUY6IWnHCiC-85-Tee8vA==
+    body:
+      encoding: UTF-8
+      string: '{"BCH_USD": {"last_price": "515.11455", "base_volume": "60.25260993",
+        "quote_volume": "31005.87103456"}, "ETH_USD": {"last_price": "224.778811",
+        "base_volume": "881.18068595", "quote_volume": "198279.17353548"}, "XRP_EUR":
+        {"last_price": "0.44581", "base_volume": "9984.5130573", "quote_volume": "4470.35222273"},
+        "ZEC_EUR": {"last_price": "109.5", "base_volume": "5.87424079", "quote_volume":
+        "645.53014979"}, "LTC_BTC": {"last_price": "0.00889571", "base_volume": "282.7582889",
+        "quote_volume": "2.50527109"}, "ETH_USDT": {"last_price": "228", "base_volume":
+        "7.79774621", "quote_volume": "1767.46718067"}, "BCH_USDT": {"last_price":
+        "518.6", "base_volume": "11.60867497", "quote_volume": "6018.41582461"}, "BTC_EUR":
+        {"last_price": "5710", "base_volume": "21.61902323", "quote_volume": "123475.35108292"},
+        "XLM_BTC": {"last_price": "0.00003732", "base_volume": "240.4287859", "quote_volume":
+        "0.00892953"}, "BWX_BTC": {"last_price": "0.00000008", "base_volume": "423573.25",
+        "quote_volume": "0.02981087"}, "XLM_USD": {"last_price": "0.2477", "base_volume":
+        "45.19", "quote_volume": "11.23615864"}, "LTC_USD": {"last_price": "59.15",
+        "base_volume": "568.1685574", "quote_volume": "33092.54349739"}, "HAV_ETH":
+        {"last_price": "0.0005", "base_volume": "902097.7203", "quote_volume": "425.91816185"},
+        "LTC_USDT": {"last_price": "59.05", "base_volume": "4.9460297", "quote_volume":
+        "290.09961083"}, "ETH_BTC": {"last_price": "0.0343947", "base_volume": "409.74625008",
+        "quote_volume": "14.03269659"}, "BCH_BTC": {"last_price": "0.07834", "base_volume":
+        "89.4585638", "quote_volume": "7.01046286"}, "XRP_BTC": {"last_price": "0.00007795",
+        "base_volume": "55074.917149", "quote_volume": "4.32408232"}, "ZEC_BTC": {"last_price":
+        "0.01916137", "base_volume": "114.83296528", "quote_volume": "2.21305324"},
+        "MVL_BTC": {"last_price": "0.00000024", "base_volume": "16800.5", "quote_volume":
+        "0.00395915"}, "LTC_EUR": {"last_price": "50.9", "base_volume": "65.9266798",
+        "quote_volume": "3334.82534754"}, "XLM_EUR": {"last_price": "0.2132", "base_volume":
+        "0", "quote_volume": "0"}, "BTC_USD": {"last_price": "6571.3203", "base_volume":
+        "67.30401377", "quote_volume": "442277.66883006"}, "HAV_USDT": {"last_price":
+        "0.172", "base_volume": "513181.9625", "quote_volume": "66418.9505926"}, "ZEC_USD":
+        {"last_price": "127.2", "base_volume": "45.8147979", "quote_volume": "5799.22007457"},
+        "XRP_USD": {"last_price": "0.5181", "base_volume": "40705.4112073", "quote_volume":
+        "20997.0823712"}, "BTC_USDT": {"last_price": "6634", "base_volume": "0.7161277",
+        "quote_volume": "4742.41839579"}, "ETH_EUR": {"last_price": "196.7", "base_volume":
+        "220.33330727", "quote_volume": "42997.60803308"}, "XCD_ETH": {"last_price":
+        "0.00002756", "base_volume": "2867557.15", "quote_volume": "78.85891531"},
+        "BCH_EUR": {"last_price": "446.7", "base_volume": "6.25039217", "quote_volume":
+        "2791.126184"}, "NUSD_ETH": {"last_price": "0.0044", "base_volume": "10629.3533",
+        "quote_volume": "47.48083883"}, "HAV_BTC": {"last_price": "0.00001411", "base_volume":
+        "829049.9994", "quote_volume": "12.31417561"}, "NUSD_BTC": {"last_price":
+        "0.0001542", "base_volume": "6345.7598", "quote_volume": "0.96001926"}, "NUSD_USDT":
+        {"last_price": "1", "base_volume": "28138.6072", "quote_volume": "27952.94906309"},
+        "CV_ETH": {"last_price": "0.00000381", "base_volume": "1714.5079", "quote_volume":
+        "0.00611646"}, "TOMO_ETH": {"last_price": "0.00189384", "base_volume": "170.301",
+        "quote_volume": "0.30670476"}, "PAL_ETH": {"last_price": "0.000021", "base_volume":
+        "1093.3726", "quote_volume": "0.02296082"}}'
+    http_version: 
+  recorded_at: Sat, 06 Oct 2018 10:15:55 GMT
+recorded_with: VCR 4.0.0

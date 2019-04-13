@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.alterdice.com/v1/coingecko/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.alterdice.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 17 Jan 2019 02:32:11 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=mfehn1i0jpcqhuenm5k0qcm1h8; path=/; HttpOnly
+      - __cfduid=d046b6fc10470fb6bd5106af16309c97b1547692328; expires=Fri, 17-Jan-20
+        02:32:08 GMT; path=/; domain=.alterdice.com; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49a568db1e5d848a-HKG
+    body:
+      encoding: UTF-8
+      string: '[{"base":"BTC","quote":"USD"},{"base":"ETH","quote":"USD"},{"base":"ETH","quote":"BTC"},{"base":"ZEC","quote":"USD"},{"base":"ZEC","quote":"BTC"},{"base":"DASH","quote":"USD"},{"base":"DASH","quote":"BTC"},{"base":"LTC","quote":"USD"},{"base":"LTC","quote":"BTC"},{"base":"MNC","quote":"USD"},{"base":"MNC","quote":"BTC"}]'
+    http_version: 
+  recorded_at: Thu, 17 Jan 2019 02:32:14 GMT
+recorded_with: VCR 4.0.0

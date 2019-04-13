@@ -24,20 +24,19 @@ module Cryptoexchange::Exchanges
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
           order_book.market    = Okex::Market::NAME
-          order_book.asks      = adapt_orders(output['asks'], timestamp)
-          order_book.bids      = adapt_orders(output['bids'], timestamp)
-          order_book.timestamp = Time.now.to_i
+          order_book.asks      = adapt_orders(output['asks'])
+          order_book.bids      = adapt_orders(output['bids'])
           order_book.payload   = output
           order_book
         end
 
-        def adapt_orders(orders, timestamp)
+        def adapt_orders(orders)
           orders.collect do |order_entry|
             price = order_entry[0]
             amount = order_entry[1]
             Cryptoexchange::Models::Order.new(price: price,
                                               amount: amount,
-                                              timestamp: timestamp)
+                                              timestamp: nil)
           end
         end
       end

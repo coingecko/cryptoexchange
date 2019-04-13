@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.zebapi.com/api/v1/market
+    uri: https://www.zebapi.com/pro/v1/market
     body:
       encoding: UTF-8
       string: ''
@@ -18,21 +18,38 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Content-Length:
-      - '7493'
+      Date:
+      - Thu, 28 Feb 2019 07:17:41 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"1d45-AUSHmdeSNlxMPvur4zoISq0tIko"
-      X-Powered-By:
-      - Express
-      Date:
-      - Fri, 06 Jul 2018 04:34:05 GMT
+      Content-Length:
+      - '1872'
       Connection:
       - close
+      Set-Cookie:
+      - __cfduid=d22d906214002d59be58068018561c5f71551338261; expires=Fri, 28-Feb-20
+        07:17:41 GMT; path=/; domain=.zebapi.com; HttpOnly
+      Etag:
+      - W/"750-/mFQE8PIbXcqKM2S/cLBHmrrxhE"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type
+      X-Powered-By:
+      - Express
+      Request-Context:
+      - appId=cid-v1:0d576db7-8023-44b1-a82e-b12249ded98e
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4b011ce4580bcbda-SIN
     body:
       encoding: UTF-8
-      string: '[{"buy":"458502","sell":"458501","market":"458501","volume":"20782889660","pricechange":"5.34","24hoursHigh":"480000","24hoursLow":"435025","pair":"BTC-INR","virtualCurrency":"BTC","currency":"INR"},{"buy":"33.5","sell":"33.45","market":"33.45","volume":"570253214088","pricechange":"3.11","24hoursHigh":"35","24hoursLow":"31.91","pair":"XRP-INR","virtualCurrency":"XRP","currency":"INR"},{"buy":"541.99","sell":"539","market":"539","volume":"18634729463","pricechange":"2.86","24hoursHigh":"565","24hoursLow":"513","pair":"EOS-INR","virtualCurrency":"EOS","currency":"INR"},{"buy":"33000","sell":"32896","market":"32896","volume":"270062753","pricechange":"5.1","24hoursHigh":"34950","24hoursLow":"31001","pair":"ETH-INR","virtualCurrency":"ETH","currency":"INR"},{"buy":"5849","sell":"5751","market":"5800","volume":"66036889183","pricechange":"2.13","24hoursHigh":"6000","24hoursLow":"5603","pair":"LTC-INR","virtualCurrency":"LTC","currency":"INR"},{"buy":"51803","sell":"51802","market":"51802","volume":"30659814648","pricechange":"1.77","24hoursHigh":"54900","24hoursLow":"50000","pair":"BCH-INR","virtualCurrency":"BCH","currency":"INR"},{"buy":"0.07618","sell":"0.06646","market":"0.06633","volume":"1088948","pricechange":"-5.24","24hoursHigh":"0.075","24hoursLow":"0.0661","pair":"ETH-BTC","virtualCurrency":"ETH","currency":"BTC"},{"buy":"0.117","sell":"0.1011","market":"0.11","volume":"227030738","pricechange":"-0.18","24hoursHigh":"0.120999","24hoursLow":"0.11","pair":"BCH-BTC","virtualCurrency":"BCH","currency":"BTC"},{"buy":"555","sell":"546","market":"546","volume":"483887535","pricechange":"1.49","24hoursHigh":"575","24hoursLow":"530","pair":"OMG-INR","virtualCurrency":"OMG","currency":"INR"},{"buy":"2.35","sell":"2.33","market":"2.35","volume":"9398709091736","pricechange":"3.07","24hoursHigh":"2.38","24hoursLow":"2.27","pair":"TRX-INR","virtualCurrency":"TRX","currency":"INR"},{"buy":"23.87","sell":"23.2","market":"23.95","volume":"38267608219","pricechange":"1.23","24hoursHigh":"25","24hoursLow":"23.01","pair":"GNT-INR","virtualCurrency":"GNT","currency":"INR"},{"buy":"0.001348","sell":"0.00111014","market":"0.00111014","volume":"65100000","pricechange":"-6.71","24hoursHigh":"0.00134799","24hoursLow":"0.00111012","pair":"EOS-BTC","virtualCurrency":"EOS","currency":"BTC"},{"buy":"0.01418","sell":"0.01152006","market":"0.01151111","volume":"146478973","pricechange":"0","24hoursHigh":"0.01418","24hoursLow":"0.011511","pair":"LTC-BTC","virtualCurrency":"LTC","currency":"BTC"},{"buy":"0.00007495","sell":"0.00007208","market":"0.00007497","volume":"2839399757","pricechange":"-0.04","24hoursHigh":"0.000075","24hoursLow":"0.00007206","pair":"XRP-BTC","virtualCurrency":"XRP","currency":"BTC"},{"buy":"0.0000052","sell":"0.00000507","market":"0.00000515","volume":"203078532160","pricechange":"-1.9","24hoursHigh":"0.00000538","24hoursLow":"0.00000505","pair":"TRX-BTC","virtualCurrency":"TRX","currency":"BTC"},{"buy":"0.00139995","sell":"0.00105","market":"0.0014","volume":"0","pricechange":"0","24hoursHigh":"0","24hoursLow":"0","pair":"OMG-BTC","virtualCurrency":"OMG","currency":"BTC"},{"buy":"67.5","sell":"67.2","market":"67.5","volume":"91934367730","pricechange":"6.55","24hoursHigh":"70","24hoursLow":"63.35","pair":"ZRX-INR","virtualCurrency":"ZRX","currency":"INR"},{"buy":"2750","sell":"2721","market":"2721","volume":"1308590847","pricechange":"14.89","24hoursHigh":"3495","24hoursLow":"2310","pair":"REP-INR","virtualCurrency":"REP","currency":"INR"},{"buy":"0.071999","sell":"0.07","market":"0.068001","volume":"115501534962","pricechange":"6.41","24hoursHigh":"0.072489","24hoursLow":"0.063903","pair":"TRX-XRP","virtualCurrency":"TRX","currency":"XRP"},{"buy":"72.19","sell":"72.13","market":"72.13","volume":"27592535817","pricechange":"8.79","24hoursHigh":"75.63","24hoursLow":"66.3","pair":"KNC-INR","virtualCurrency":"KNC","currency":"INR"},{"buy":"17.14","sell":"17","market":"17","volume":"26227564211","pricechange":"1.8","24hoursHigh":"17.31","24hoursLow":"16.25","pair":"BAT-INR","virtualCurrency":"BAT","currency":"INR"},{"buy":"183.95","sell":"180.01","market":"183.95","volume":"1848072141","pricechange":"4.81","24hoursHigh":"184","24hoursLow":"175","pair":"VEN-INR","virtualCurrency":"VEN","currency":"INR"},{"buy":"153.98","sell":"145.2","market":"153.98","volume":"1775125242","pricechange":"6.19","24hoursHigh":"157.01","24hoursLow":"139.1","pair":"AE-INR","virtualCurrency":"AE","currency":"INR"},{"buy":"1.79","sell":"1.77","market":"1.77","volume":"1909117390346","pricechange":"-2.21","24hoursHigh":"1.89","24hoursLow":"1.73","pair":"IOST-INR","virtualCurrency":"IOST","currency":"INR"},{"buy":"5.99","sell":"5.85","market":"5.99","volume":"341672415569","pricechange":"-0.17","24hoursHigh":"6.25","24hoursLow":"5.7","pair":"ZIL-INR","virtualCurrency":"ZIL","currency":"INR"},{"buy":"1.79","sell":"1.77","market":"1.77","volume":"1909117390346","pricechange":"-2.21","24hoursHigh":"1.89","24hoursLow":"1.73","pair":"IST-INR","virtualCurrency":"IST","currency":"INR"},{"buy":"2.8","sell":"2.79","market":"3.08","pair":"IST-INR","virtualCurrency":"IST","currency":"INR"},{"buy":"14.15","sell":"14","market":"14","volume":"105606925210","pricechange":"-6.67","24hoursHigh":"15.75","24hoursLow":"12.53","pair":"CMT-INR","virtualCurrency":"CMT","currency":"INR"},{"buy":"0.97","sell":"0.96","market":"0.96","volume":"10625632693567","pricechange":"-3.03","24hoursHigh":"1.02","24hoursLow":"0.93","pair":"NCASH-INR","virtualCurrency":"NCASH","currency":"INR"},{"buy":"0.00000245","sell":"0.00000183","market":"0.00000249","volume":"4600000000","pricechange":"36.81","24hoursHigh":"0.00000249","24hoursLow":"0.00000181","pair":"NCASH-BTC","virtualCurrency":"NCASH","currency":"BTC"},{"buy":"0.00005878","sell":"0.0000298","market":"0.000032","volume":"0","pricechange":"0","24hoursHigh":"0","24hoursLow":"0","pair":"GNT-BTC","virtualCurrency":"GNT","currency":"BTC"},{"buy":"0","sell":"0.000067","market":"0.0001501","volume":"239000000","pricechange":"0","24hoursHigh":"0.0001501","24hoursLow":"0.0001501","pair":"ZRX-BTC","virtualCurrency":"ZRX","currency":"BTC"},{"buy":"0","sell":"0.0000222","market":"0.00003129","volume":"68000000","pricechange":"0","24hoursHigh":"0.00003129","24hoursLow":"0.00003129","pair":"CMT-BTC","virtualCurrency":"CMT","currency":"BTC"},{"buy":"0.00704","sell":"0.00301976","market":"0.00704","volume":"490000","pricechange":"0","24hoursHigh":"0.00704","24hoursLow":"0.00704","pair":"REP-BTC","virtualCurrency":"REP","currency":"BTC"},{"buy":"0.000182","sell":"0.00007864","market":"0.000183","volume":"0","pricechange":"0","24hoursHigh":"0","24hoursLow":"0","pair":"KNC-BTC","virtualCurrency":"KNC","currency":"BTC"},{"buy":"0.0000148","sell":"0.0000085","market":"0.00001398","volume":"166000000","pricechange":"0","24hoursHigh":"0.00001398","24hoursLow":"0.00001398","pair":"ZIL-BTC","virtualCurrency":"ZIL","currency":"BTC"},{"buy":"0","sell":"0.00025082","market":"0.00027","volume":"20000000","pricechange":"0","24hoursHigh":"0.00027","24hoursLow":"0.00027","pair":"AE-BTC","virtualCurrency":"AE","currency":"BTC"},{"buy":"0.00064563","sell":"0.0003","market":"0.00034489","volume":"0","pricechange":"0","24hoursHigh":"0","24hoursLow":"0","pair":"VEN-BTC","virtualCurrency":"VEN","currency":"BTC"},{"buy":"0.00005593","sell":"0.00002397","market":"0.00005593","volume":"0","pricechange":"0","24hoursHigh":"0","24hoursLow":"0","pair":"BAT-BTC","virtualCurrency":"BAT","currency":"BTC"}]'
+      string: '[{"buy":"0","sell":"0","market":"0.0254756","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"BCH-BTC","virtualCurrency":"BCH","currency":"BTC"},{"buy":"0","sell":"85.88000000","market":"85.88","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"BCH-EUR","virtualCurrency":"BCH","currency":"EUR"},{"buy":"3340.00000000","sell":"3330.00000000","market":"3340","volume":0.58867634,"pricechange":"-0.36","24hoursHigh":"3359","24hoursLow":"3145","pair":"BTC-EUR","virtualCurrency":"BTC","currency":"EUR"},{"buy":"0","sell":"0","market":"0.000553","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"EOS-BTC","virtualCurrency":"EOS","currency":"BTC"},{"buy":"0","sell":"0","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"EOS-EUR","virtualCurrency":"EOS","currency":"EUR"},{"buy":"0","sell":"0","market":"0.026691","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"ETH-BTC","virtualCurrency":"ETH","currency":"BTC"},{"buy":"0","sell":"93.00000000","market":"92.98","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"ETH-EUR","virtualCurrency":"ETH","currency":"EUR"},{"buy":"0","sell":"0","market":"0.009899","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"LTC-BTC","virtualCurrency":"LTC","currency":"BTC"},{"buy":"0","sell":"37.50000000","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"LTC-EUR","virtualCurrency":"LTC","currency":"EUR"},{"buy":"0","sell":"0","market":"0.00009313","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"XRP-BTC","virtualCurrency":"XRP","currency":"BTC"},{"buy":"0","sell":"0","market":"0.292874","volume":0,"pricechange":"0.00","24hoursHigh":"0","24hoursLow":"0","pair":"XRP-EUR","virtualCurrency":"XRP","currency":"EUR"}]'
     http_version: 
-  recorded_at: Fri, 06 Jul 2018 04:34:05 GMT
+  recorded_at: Thu, 28 Feb 2019 07:17:41 GMT
 recorded_with: VCR 4.0.0

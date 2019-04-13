@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.eosex.com/exchange/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.eosex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - https://eosex.com
+      Content-Security-Policy:
+      - connect-src *;
+      Access-Control-Allow-Headers:
+      - Accept,Pragma,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,token,loading,
+        Authorization,Access-Token, lang
+      Access-Control-Allow-Methods:
+      - POST, GET, PUT, OPTIONS
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Mon, 11 Feb 2019 09:19:52 GMT
+      X-Ratelimit-Limit:
+      - '300'
+      X-Ratelimit-Remaining:
+      - '299'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":1,"msg":[{"MarketId":2002,"Name":"EOSETH","Symbol":"EOS\/ETH","Updated":1549876740,"LastPrice":"0.02277700","Low":"0.02218000","High":"0.02333500","Open":"0.02295900","Close":"0.02277700","BaseVolume":"341.98801792","BaseVolumeBuy":"203.71535141","BaseVolumeSell":"138.27266651"},{"MarketId":2004,"Name":"ONEETH","Symbol":"ONE\/ETH","Updated":1549876740,"LastPrice":"0.00008934","Low":"0.00008934","High":"0.00008934","Open":"0.00008934","Close":"0.00008934","BaseVolume":"0.00000000","BaseVolumeBuy":"0.00000000","BaseVolumeSell":"0.00000000"},{"MarketId":2020,"Name":"XLMXETH","Symbol":"XLMX\/ETH","Updated":1549876740,"LastPrice":"0.00000100","Low":"0.00000100","High":"0.00000100","Open":"0.00000100","Close":"0.00000100","BaseVolume":"0.00000000","BaseVolumeBuy":"0.00000000","BaseVolumeSell":"0.00000000"},{"MarketId":2021,"Name":"GMCETH","Symbol":"GMC\/ETH","Updated":1549876740,"LastPrice":"0.00020000","Low":"0.00020000","High":"0.00020000","Open":"0.00020000","Close":"0.00020000","BaseVolume":"0.00000000","BaseVolumeBuy":"0.00000000","BaseVolumeSell":"0.00000000"},{"MarketId":2023,"Name":"WBIETH","Symbol":"WBI\/ETH","Updated":1549876740,"LastPrice":"0.00018989","Low":"0.00015020","High":"0.00018989","Open":"0.00015020","Close":"0.00018989","BaseVolume":"0.06891178","BaseVolumeBuy":"0.02819681","BaseVolumeSell":"0.04071497"},{"MarketId":4001,"Name":"ETHUSDT","Symbol":"ETH\/USDT","Updated":1549876740,"LastPrice":"120.64000000","Low":"116.30000000","High":"125.75000000","Open":"117.01000000","Close":"120.64000000","BaseVolume":"701429.09011675","BaseVolumeBuy":"368598.97520530","BaseVolumeSell":"332830.11491145"},{"MarketId":4003,"Name":"EOSUSDT","Symbol":"EOS\/USDT","Updated":1549876740,"LastPrice":"2.74220000","Low":"2.67500000","High":"2.85650000","Open":"2.68360000","Close":"2.74220000","BaseVolume":"534185.75132234","BaseVolumeBuy":"290627.52661137","BaseVolumeSell":"243558.22471097"},{"MarketId":4004,"Name":"GUSDUSDT","Symbol":"GUSD\/USDT","Updated":1549876740,"LastPrice":"1.00300000","Low":"1.00300000","High":"1.00300000","Open":"1.00300000","Close":"1.00300000","BaseVolume":"0.00000000","BaseVolumeBuy":"0.00000000","BaseVolumeSell":"0.00000000"},{"MarketId":5010,"Name":"IQEOS","Symbol":"IQ\/EOS","Updated":1549876740,"LastPrice":"0.01100000","Low":"0.00025000","High":"0.01100000","Open":"0.01100000","Close":"0.01100000","BaseVolume":"0.82027763","BaseVolumeBuy":"0.81767804","BaseVolumeSell":"0.00259959"},{"MarketId":5011,"Name":"GYMEOS","Symbol":"GYM\/EOS","Updated":1549876740,"LastPrice":"0.00004999","Low":"0.00004999","High":"0.00004999","Open":"0.00004999","Close":"0.00004999","BaseVolume":"0.00000000","BaseVolumeBuy":"0.00000000","BaseVolumeSell":"0.00000000"},{"MarketId":5012,"Name":"DICEEOS","Symbol":"DICE\/EOS","Updated":1549876740,"LastPrice":"0.00030000","Low":"0.00030000","High":"0.00030000","Open":"0.00030000","Close":"0.00030000","BaseVolume":"0.00000000","BaseVolumeBuy":"0.00000000","BaseVolumeSell":"0.00000000"},{"MarketId":5013,"Name":"JKREOS","Symbol":"JKR\/EOS","Updated":1549876740,"LastPrice":"0.00005002","Low":"0.00005002","High":"0.00005002","Open":"0.00005002","Close":"0.00005002","BaseVolume":"0.00000000","BaseVolumeBuy":"0.00000000","BaseVolumeSell":"0.00000000"},{"MarketId":5014,"Name":"MAXEOS","Symbol":"MAX\/EOS","Updated":1549876740,"LastPrice":"0.00030200","Low":"0.00030200","High":"0.00030200","Open":"0.00030200","Close":"0.00030200","BaseVolume":"0.02721566","BaseVolumeBuy":"0.00000000","BaseVolumeSell":"0.02721566"},{"MarketId":5019,"Name":"TLOSEOS","Symbol":"TLOS\/EOS","Updated":1549876740,"LastPrice":"0.02920000","Low":"0.02920000","High":"0.02920000","Open":"0.02920000","Close":"0.02920000","BaseVolume":"0.17520000","BaseVolumeBuy":"0.00000000","BaseVolumeSell":"0.17520000"},{"MarketId":5020,"Name":"WINEOS","Symbol":"WIN\/EOS","Updated":1549876740,"LastPrice":"0.00010001","Low":"0.00010001","High":"0.00010001","Open":"0.00010001","Close":"0.00010001","BaseVolume":"0.00000000","BaseVolumeBuy":"0.00000000","BaseVolumeSell":"0.00000000"},{"MarketId":5029,"Name":"BETFTYEOS","Symbol":"BETFTY\/EOS","Updated":1549876740,"LastPrice":"0.00120000","Low":"0.00120000","High":"0.00120000","Open":"0.00120000","Close":"0.00120000","BaseVolume":"0.00000000","BaseVolumeBuy":"0.00000000","BaseVolumeSell":"0.00000000"},{"MarketId":5030,"Name":"BOSEOS","Symbol":"BOS\/EOS","Updated":1549876740,"LastPrice":"0.01200000","Low":"0.01200000","High":"0.01200000","Open":"0.01200000","Close":"0.01200000","BaseVolume":"0.00000000","BaseVolumeBuy":"0.00000000","BaseVolumeSell":"0.00000000"},{"MarketId":5031,"Name":"HASHEOS","Symbol":"HASH\/EOS","Updated":1549876740,"LastPrice":"0.07500000","Low":"0.07500000","High":"0.07500000","Open":"0.07500000","Close":"0.07500000","BaseVolume":"0.00000000","BaseVolumeBuy":"0.00000000","BaseVolumeSell":"0.00000000"},{"MarketId":5032,"Name":"WBIEOS","Symbol":"WBI\/EOS","Updated":1549876740,"LastPrice":"0.00830000","Low":"0.00590000","High":"0.00830000","Open":"0.00800000","Close":"0.00830000","BaseVolume":"248.95179157","BaseVolumeBuy":"38.94406263","BaseVolumeSell":"210.00772894"},{"MarketId":5033,"Name":"TOBEOS","Symbol":"TOB\/EOS","Updated":1549876740,"LastPrice":"0.00001001","Low":"0.00000501","High":"0.00001001","Open":"0.00000501","Close":"0.00001001","BaseVolume":"0.01250720","BaseVolumeBuy":"0.00380000","BaseVolumeSell":"0.00870720"},{"MarketId":5034,"Name":"QBEEOS","Symbol":"QBE\/EOS","Updated":1549876740,"LastPrice":"0.00025000","Low":"0.00013055","High":"0.00048990","Open":"0.00016000","Close":"0.00025000","BaseVolume":"153.46085559","BaseVolumeBuy":"9.92107148","BaseVolumeSell":"143.53978411"},{"MarketId":6001,"Name":"ANTETRX","Symbol":"ANTE\/TRX","Updated":1549876740,"LastPrice":"0.00000000","Low":"0.00000000","High":"0.00000000","Open":"0.00000000","Close":"0.00000000","BaseVolume":"0.00000000","BaseVolumeBuy":"0.00000000","BaseVolumeSell":"0.00000000"},{"MarketId":7001,"Name":"QBETLOS","Symbol":"QBE\/TLOS","Updated":1549876740,"LastPrice":"0.01169000","Low":"0.01169000","High":"0.01520000","Open":"0.01520000","Close":"0.01169000","BaseVolume":"22160.34283622","BaseVolumeBuy":"0.00000004","BaseVolumeSell":"22160.34283618"}]}'
+    http_version: 
+  recorded_at: Mon, 11 Feb 2019 09:19:53 GMT
+recorded_with: VCR 4.0.0

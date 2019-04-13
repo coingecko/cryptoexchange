@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://third.bitker.com/v1/api/allticker/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - third.bitker.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 09 Oct 2018 13:54:35 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - nginx/1.14.0
+    body:
+      encoding: UTF-8
+      string: '{"date":1539093275,"ticker":[{"symbol":"ETC_BTC","last":0.001646,"buy":0.001642,"sell":0.001655,"high":0.00165475,"low":0.00163765,"vol":311366.91},{"symbol":"ETH_BTC","last":0.034347,"buy":0.03434451,"sell":0.034443,"high":0.034711,"low":0.0342877,"vol":29126.1874},{"symbol":"BCH_BTC","last":0.078241,"buy":0.07821426,"sell":0.07826431,"high":0.079773,"low":0.07809,"vol":14235.544},{"symbol":"BCH_USDT","last":518.4755,"buy":518.4623,"sell":518.4828,"high":535.3021,"low":517.0731,"vol":15935.139},{"symbol":"LTC_BTC","last":0.008858,"buy":0.00883338,"sell":0.00889744,"high":0.008989,"low":0.008813,"vol":17234.01},{"symbol":"QTUM_BTC","last":0.000574,"buy":0.0005723,"sell":0.00057495,"high":0.00058949,"low":0.00057173,"vol":164810.77},{"symbol":"XRP_BTC","last":7.186e-5,"buy":7.143e-5,"sell":7.219e-5,"high":7.44e-5,"low":7.12e-5,"vol":1987665.29},{"symbol":"ETC_ETH","last":0.047876,"buy":0.04781,"sell":0.048018,"high":0.048034,"low":0.047612,"vol":74554.221},{"symbol":"CMT_ETH","last":0.00058345,"buy":0.00057596,"sell":0.00058601,"high":0.00064903,"low":0.00056322,"vol":68121.4},{"symbol":"ZRX_ETH","last":0.00314332,"buy":0.00314183,"sell":0.00315493,"high":0.00322872,"low":0.00309235,"vol":22556.7},{"symbol":"LRC_ETH","last":0.00049489,"buy":0.00049367,"sell":0.00050407,"high":0.00050405,"low":0.00048123,"vol":26188.3},{"symbol":"IOST_ETH","last":5.652e-5,"buy":5.617e-5,"sell":5.668e-5,"high":5.872e-5,"low":5.64e-5,"vol":21771.6},{"symbol":"ZIL_ETH","last":0.00016209,"buy":0.00016199,"sell":0.00016289,"high":0.00016512,"low":0.00015892,"vol":26193.5},{"symbol":"SOC_ETH","last":6.867e-5,"buy":6.832e-5,"sell":6.883e-5,"high":7.118e-5,"low":6.677e-5,"vol":70151.7},{"symbol":"AE_ETH","last":0.00477,"buy":0.004762,"sell":0.004792,"high":0.004791,"low":0.004636,"vol":27497.97},{"symbol":"BTC_USDT","last":6622.9278,"buy":6622.5022,"sell":6623.5032,"high":6694.8954,"low":6619.6859,"vol":4760.6385},{"symbol":"ETC_USDT","last":10.9255,"buy":10.9142,"sell":10.9648,"high":11.0865,"low":10.9143,"vol":236790.67},{"symbol":"LTC_USDT","last":58.6976,"buy":58.6397,"sell":58.7271,"high":60.198,"low":58.5583,"vol":32127.4086},{"symbol":"QTUM_USDT","last":3.8007,"buy":3.7898,"sell":3.8087,"high":3.939,"low":3.7828,"vol":32878.12},{"symbol":"XRP_USDT","last":0.475,"buy":0.4749,"sell":0.4765,"high":0.4973,"low":0.4711,"vol":3339958.56},{"symbol":"BKB_USDT","last":0.130338,"buy":0.130347,"sell":0.130558,"high":0.144853,"low":0.128661,"vol":363862.49},{"symbol":"ETH_USDT","last":227.4969,"buy":227.4835,"sell":227.7004,"high":231.9206,"low":226.5594,"vol":62353.7257},{"symbol":"EOS_USDT","last":5.869,"buy":5.8695,"sell":5.87,"high":6.0117,"low":5.8545,"vol":614477.6612},{"symbol":"NEO_USDT","last":18.2589,"buy":18.2584,"sell":18.2597,"high":18.8259,"low":18.2372,"vol":14345.1276},{"symbol":"EOS_ETH","last":0.025833,"buy":0.025741,"sell":0.025845,"high":0.026021,"low":0.025603,"vol":15702.8305},{"symbol":"EOS_BTC","last":0.000888,"buy":0.00088368,"sell":0.00089122,"high":0.0009,"low":0.000881,"vol":83094.3171},{"symbol":"NEO_BTC","last":0.002753,"buy":0.00273168,"sell":0.00276856,"high":0.002812,"low":0.002741,"vol":22036.7569},{"symbol":"UST_ETH","last":0.00022775,"buy":0.00010508,"sell":0.000366,"high":0.00022775,"low":0.00022569,"vol":16},{"symbol":"DACC_ETH","last":2.97e-6,"buy":1.55e-6,"sell":2.97e-6,"high":3.08e-6,"low":2.97e-6,"vol":255},{"symbol":"DX_ETH","last":1.95e-6,"buy":1.09e-6,"sell":2.4e-6,"high":1.95e-6,"low":1.89e-6,"vol":244},{"symbol":"SOP_ETH","last":2.958e-5,"buy":1.99e-5,"sell":3.947e-5,"high":3.014e-5,"low":2.958e-5,"vol":14},{"symbol":"db_USDT","last":0.0074,"buy":0.0074,"sell":0.007441,"high":0.0074,"low":0.0074,"vol":0},{"symbol":"LPK_USDT","last":0.018876,"buy":0.019,"sell":0.003493,"high":0.018876,"low":0.018876,"vol":0},{"symbol":"BBN_USDT","last":0.00841,"buy":0.00825,"sell":0.00864,"high":0.00862,"low":0.00826,"vol":4049.77},{"symbol":"WICC_USDT","last":0.233,"buy":0.2165,"sell":0.274266,"high":0.233,"low":0.2302,"vol":36.2},{"symbol":"CARX_USDT","last":0.057886,"buy":0.057886,"sell":0.057898,"high":0.057928,"low":0.05731,"vol":3661320.17},{"symbol":"LRC_BTC","last":1.717e-5,"buy":1.677e-5,"sell":1.753e-5,"high":1.764e-5,"low":1.651e-5,"vol":3140.33},{"symbol":"WICC_BTC","last":3.122e-5,"buy":3.122e-5,"sell":3.15e-5,"high":3.15e-5,"low":3.122e-5,"vol":14},{"symbol":"VITE_ETH","last":null,"buy":null,"sell":null,"high":null,"low":null,"vol":0},{"symbol":"VNT_ETH","last":null,"buy":null,"sell":null,"high":null,"low":null,"vol":0},{"symbol":"FYS_ETH","last":0.000148,"buy":7.796e-5,"sell":0.00028769,"high":0.000148,"low":0.000146,"vol":41},{"symbol":"DAV_ETH","last":null,"buy":null,"sell":null,"high":null,"low":null,"vol":0}]}'
+    http_version: 
+  recorded_at: Tue, 09 Oct 2018 13:54:35 GMT
+recorded_with: VCR 4.0.0

@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Cybex
     class Market < Cryptoexchange::Models::Market
       NAME            = 'cybex'
-      API_URL         = 'https://beijing.51nebula.com'
+      API_URL         = 'https://hongkong.cybex.io'
       USED_GATEWAY    = 'JADE'
       OMITTED_GATEWAY = 'JAMES'
 

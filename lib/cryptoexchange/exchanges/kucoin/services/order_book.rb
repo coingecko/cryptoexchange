@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Kucoin::Market::API_URL}/open/orders?symbol=#{market_pair.base}-#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::Kucoin::Market::API_URL}/market/orderbook/level2?symbol=#{market_pair.base}-#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
@@ -24,8 +24,8 @@ module Cryptoexchange::Exchanges
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
           order_book.market    = Kucoin::Market::NAME
-          order_book.asks      = adapt_orders output['data']['SELL']
-          order_book.bids      = adapt_orders output['data']['BUY']
+          order_book.asks      = adapt_orders output['data']['asks']
+          order_book.bids      = adapt_orders output['data']['bids']
           order_book.timestamp = timestamp
           order_book.payload   = output
           order_book
@@ -34,7 +34,7 @@ module Cryptoexchange::Exchanges
         def adapt_orders(orders)
           orders.collect do |order_entry|
             price  = order_entry[0]
-            amount = order_entry[-1]
+            amount = order_entry[1]
             Cryptoexchange::Models::Order.new(
               price:     price,
               amount:    amount,

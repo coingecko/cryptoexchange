@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openapi.zeniex.com/open/api/market_depth?symbol=ethbtc&type=step0
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - openapi.zeniex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 13 Oct 2018 21:52:06 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - Tengine/2.2.1
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"code":"0","msg":"suc","data":{"tick":{"asks":[["0.05576600",0.01000000],["0.05674600",0.03000000],["0.05896800",0.08000000],["0.07674600",0.06000000],["0.09689700",0.80000000]],"bids":[["0.03156900",0.17500000],["0.03110200",0.21000000],["0.03110100",0.83000000],["0.00999900",0.80000000],["0.00896700",0.08800000],["0.00746500",0.09200000],["0.00674500",0.06000000],["0.00563500",0.05200000],["0.00534600",1.00000000]],"time":1539467526194}}}'
+    http_version: 
+  recorded_at: Sat, 13 Oct 2018 21:52:06 GMT
+recorded_with: VCR 4.0.0

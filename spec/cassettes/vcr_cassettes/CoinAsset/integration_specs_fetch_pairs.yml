@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinasset.co.th/api/v1/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinasset.co.th
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 13 Oct 2018 11:54:05 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dbf486047700283a73629252e0f5bdfdb1539431645; expires=Sun, 13-Oct-19
+        11:54:05 GMT; path=/; domain=.coinasset.co.th; HttpOnly; Secure
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '657'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 46919c05bbe606be-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"BTC-THB":{"symbol":"BTC-THB","lastPrice":207699,"highestBid":206200,"lowestAsk":207777.37,"low24Hr":206094.89,"high24Hr":208360.85,"volume24Hr":29.8548033,"change24Hr":-0.0487343},"DEV-THB":{"symbol":"DEV-THB","lastPrice":0.79,"highestBid":0.77,"lowestAsk":0.79,"low24Hr":0.78,"high24Hr":0.79,"volume24Hr":7352.157159776,"change24Hr":1.28205128},"ETH-THB":{"symbol":"ETH-THB","lastPrice":6550,"highestBid":6549.66,"lowestAsk":6648.17,"low24Hr":6451,"high24Hr":7289,"volume24Hr":241.244434732,"change24Hr":1.47172734},"HPC-THB":{"symbol":"HPC-THB","lastPrice":9.62,"highestBid":9.25,"lowestAsk":9.64,"low24Hr":7.8,"high24Hr":10.5,"volume24Hr":158057.322891377,"change24Hr":-3.60721443},"JFIN-THB":{"symbol":"JFIN-THB","lastPrice":2.99,"highestBid":2.97,"lowestAsk":3.09,"low24Hr":2.98,"high24Hr":3.09,"volume24Hr":10550.379771841,"change24Hr":-3.23624595},"LTC-THB":{"symbol":"LTC-THB","lastPrice":1799.59,"highestBid":1746.01,"lowestAsk":1799.59,"low24Hr":1693.3,"high24Hr":1800.25,"volume24Hr":191.255751834,"change24Hr":2.74447337},"OMG-THB":{"symbol":"OMG-THB","lastPrice":100.51,"highestBid":100.67,"lowestAsk":102.49,"low24Hr":99.98,"high24Hr":104.03,"volume24Hr":7376.886110104,"change24Hr":-2.65375303},"XRP-THB":{"symbol":"XRP-THB","lastPrice":15.4,"highestBid":13.71,"lowestAsk":15.39,"low24Hr":13.76,"high24Hr":15.4,"volume24Hr":724.914994034,"change24Hr":10.71171819}}'
+    http_version: 
+  recorded_at: Sat, 13 Oct 2018 11:54:06 GMT
+recorded_with: VCR 4.0.0

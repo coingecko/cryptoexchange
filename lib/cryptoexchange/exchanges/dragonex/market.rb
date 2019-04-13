@@ -12,18 +12,3 @@ module Cryptoexchange::Exchanges
     end
   end
 end
-
-module Cryptoexchange
-  module Models
-    module Dragonex
-      class MarketPair < Cryptoexchange::Models::MarketPair
-        attr_accessor :id
-
-        def initialize(params = {})
-          super
-          @id = params[:id]
-        end
-      end
-    end
-  end
-end

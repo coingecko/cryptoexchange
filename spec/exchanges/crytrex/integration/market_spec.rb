@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'CryTrEx integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_usd_pair) { Cryptoexchange::Models::Bilaxy::MarketPair.new(base: 'BTC', target: 'USD', market: 'crytrex') }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'crytrex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('crytrex')
@@ -17,8 +17,8 @@ RSpec.describe 'CryTrEx integration specs' do
   it 'fetch ticker' do
     ticker = client.ticker(btc_usd_pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'USD'
+    expect(ticker.base).to eq 'ETH'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'crytrex'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
@@ -29,11 +29,11 @@ RSpec.describe 'CryTrEx integration specs' do
     expect(ticker.payload).to_not be nil
   end
 
-  it 'fetch order book' do
+  pending 'fetch order book' do
     order_book = client.order_book(btc_usd_pair)
 
-    expect(order_book.base).to eq 'BTC'
-    expect(order_book.target).to eq 'USD'
+    expect(order_book.base).to eq 'ETH'
+    expect(order_book.target).to eq 'BTC'
     expect(order_book.market).to eq 'crytrex'
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
@@ -46,13 +46,13 @@ RSpec.describe 'CryTrEx integration specs' do
     expect(order_book.payload).to_not be nil
   end
 
-  it 'fetch trade' do
+  pending 'fetch trade' do
     trades = client.trades(btc_usd_pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty
-    expect(trade.base).to eq 'BTC'
-    expect(trade.target).to eq 'USD'
+    expect(trade.base).to eq 'ETH'
+    expect(trade.target).to eq 'BTC'
     expect(trade.market).to eq 'crytrex'
     expect(trade.trade_id).to_not be_nil
     expect(['buy', 'sell']).to include trade.type

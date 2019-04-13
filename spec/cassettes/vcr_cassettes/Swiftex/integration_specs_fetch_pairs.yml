@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://swiftex.co/api/v2/tickers.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - swiftex.co
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 06 Mar 2019 08:28:08 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2168'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dd96b8312f1606847ae932a7a58380c561551860888; expires=Thu, 05-Mar-20
+        08:28:08 GMT; path=/; domain=.swiftex.co; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Version:
+      - HTTP/1.0
+      Host:
+      - swiftex.co
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - MY
+      X-Forwarded-For:
+      - 2001:e68:6e44:0:24ab:5cfb:9e0e:c7cf
+      X-Forwarded-Proto:
+      - https
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 2001:e68:6e44:0:24ab:5cfb:9e0e:c7cf
+      Cdn-Loop:
+      - cloudflare
+      Etag:
+      - W/"a47b9350af7ad269e8a92ea2c5794bba"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f951dc90-f1c3-435e-b5e3-38d939fbce5f
+      X-Runtime:
+      - '0.023864'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4b32f456db478532-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"mymn-btc":{"at":1551860888,"ticker":{"buy":"0.00000001","sell":"0.00000013","low":"0.00000007","high":"0.00000013","open":7.0e-08,"last":"0.00000007","volume":"0.0","avg_price":"0.0","price_change_percent":"+0.00%","vol":"0.0"}},"mynt-btc":{"at":1551860888,"ticker":{"buy":"0.000000025","sell":"0.000000028","low":"0.000000025","high":"0.00000003","open":2.5e-08,"last":"0.000000028","volume":"173908.321398533","avg_price":"0.000000029","price_change_percent":"+12.00%","vol":"173908.321398533"}},"oasis-btc":{"at":1551860888,"ticker":{"buy":"0.0000891","sell":"0.00009","low":"0.0000855","high":"0.0000855","open":8.55e-05,"last":"0.0000855","volume":"0.0","avg_price":"0.0","price_change_percent":"+0.00%","vol":"0.0"}},"oasis-mynt":{"at":1551860888,"ticker":{"buy":"999.0","sell":"8000.0","low":"7999.0","high":"7999.0","open":7999.0,"last":"7999.0","volume":"0.0","avg_price":"0.0","price_change_percent":"+0.00%","vol":"0.0"}},"pgn-mynt":{"at":1551860888,"ticker":{"buy":"0.9","sell":"65.0","low":"0.9","high":"0.9","open":0.9,"last":"0.9","volume":"0.0","avg_price":"0.0","price_change_percent":"+0.00%","vol":"0.0"}},"smrtc-mynt":{"at":1551860888,"ticker":{"buy":"0.98","sell":"1.0","low":"1.0","high":"1.2","open":1.0,"last":"1.0","volume":"0.0","avg_price":"0.0","price_change_percent":"+0.00%","vol":"0.0"}},"ltc-btc":{"at":1551860888,"ticker":{"buy":"0.0009","sell":"0.014","low":"0.0119","high":"0.0119","open":0.0119,"last":"0.0119","volume":"0.0","avg_price":"0.0","price_change_percent":"+0.00%","vol":"0.0"}},"pgn-btc":{"at":1551860888,"ticker":{"buy":"0.000000017","sell":"0.000000019","low":"0.000000021","high":"0.000000023","open":2.2e-08,"last":"0.000000023","volume":"285.0","avg_price":"0.000000022","price_change_percent":"+4.55%","vol":"285.0"}},"grs-mynt":{"at":1551860888,"ticker":{"buy":"300.0","sell":"0.0","low":"0.0","high":"0.0","open":"0.0","last":"0.0","volume":"0.0","avg_price":"0.0","price_change_percent":"+0.00%","vol":"0.0"}},"grs-btc":{"at":1551860888,"ticker":{"buy":"0.00000001","sell":"0.0","low":"0.0","high":"0.0","open":"0.0","last":"0.0","volume":"0.0","avg_price":"0.0","price_change_percent":"+0.00%","vol":"0.0"}}}'
+    http_version: 
+  recorded_at: Wed, 06 Mar 2019 08:28:08 GMT
+recorded_with: VCR 4.0.0

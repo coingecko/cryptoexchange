@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tokens.net/public/ticker/btcusdt/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.tokens.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 12 Jan 2019 02:19:36 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '231'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d22c44373bd7c87e5c7da3e2d61bb0a081547259576; expires=Sun, 12-Jan-20
+        02:19:36 GMT; path=/; domain=.tokens.net; HttpOnly; Secure
+      Last-Modified:
+      - Sat, 12 Jan 2019 02:19:23 GMT
+      Etag:
+      - '"5c394eab-e7"'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Content-Security-Policy:
+      - default-src 'none';
+      X-Origin-Id:
+      - API-1A
+      Access-Control-Allow-Origin:
+      - https://www.tokens.net
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 497c239fddb79b5c-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status": "ok", "timestamp": 1547259563, "last": "3656.23", "ask":
+        "3659.89", "high": "3663.57", "bid": "3656.23", "low": "3602.10", "open":
+        "0.00", "volume_usdt": "2361.50759700", "vwap": "3630.66952320", "volume":
+        "0.65043309"}
+
+'
+    http_version: 
+  recorded_at: Sat, 12 Jan 2019 02:19:36 GMT
+recorded_with: VCR 4.0.0

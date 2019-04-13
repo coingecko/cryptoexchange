@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://exmarkets.com/api/trade/v1/market/order-book?market=eth-btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - exmarkets.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 19 Feb 2019 18:30:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d99b9b89bd19e6a8024b0a5fdbab9f7d41550601026; expires=Wed, 19-Feb-20
+        18:30:26 GMT; path=/; domain=.exmarkets.com; HttpOnly
+      X-Powered-By:
+      - PHP/7.2.15
+      Cache-Control:
+      - no-cache
+      Allow:
+      - GET
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubdomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4abacdff5da9b4fe-VNO
+    body:
+      encoding: ASCII-8BIT
+      string: '{"asks":[{"amount":"5.41300000","price":"0.03697600"},{"amount":"10.00000000","price":"0.03697800"},{"amount":"0.02000000","price":"0.03697900"},{"amount":"69.75400000","price":"0.03698000"},{"amount":"2.00700000","price":"0.03698400"},{"amount":"15.32400000","price":"0.03698500"},{"amount":"27.07400000","price":"0.03698600"},{"amount":"1.79000000","price":"0.03698700"},{"amount":"27.05300000","price":"0.03698900"},{"amount":"0.65200000","price":"0.03699000"}],"bids":[{"amount":"0.55000000","price":"0.03697300"},{"amount":"13.51900000","price":"0.03697100"},{"amount":"4.43100000","price":"0.03696900"},{"amount":"10.00000000","price":"0.03696800"},{"amount":"10.00000000","price":"0.03696400"},{"amount":"0.02000000","price":"0.03695400"},{"amount":"2.00000000","price":"0.03694300"},{"amount":"0.02000000","price":"0.03694200"},{"amount":"190.83700000","price":"0.03694000"},{"amount":"0.54100000","price":"0.03693600"}]}'
+    http_version: 
+  recorded_at: Tue, 19 Feb 2019 18:30:26 GMT
+recorded_with: VCR 4.0.0

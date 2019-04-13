@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tideal.com/api/v2/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - tideal.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 Oct 2018 10:18:54 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2122'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d239401a16481287d281b434a49e41d1d1539857934; expires=Fri, 18-Oct-19
+        10:18:54 GMT; path=/; domain=.tideal.com; HttpOnly
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 05ca9e34-b99e-4ecb-9707-07d6abbf97f6
+      Etag:
+      - W/"5971b5313da3b0e66b137fe58ebe29a1"
+      X-Runtime:
+      - '0.054802'
+      X-Powered-By:
+      - Phusion Passenger 5.2.3
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 46ba437a58f47766-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ethbtc":{"at":1539857934,"ticker":{"buy":"0.031501","sell":"0.031502","low":"0.031492","high":"0.03179","last":"0.031502","vol":"208.09318476"}},"ltcbtc":{"at":1539857934,"ticker":{"buy":"0.008143","sell":"0.008158","low":"0.008113","high":"0.008228","last":"0.00815","vol":"568.91260261"}},"cbtbtc":{"at":1539857934,"ticker":{"buy":"0.00000475","sell":"0.00001543","low":"0.00000899","high":"0.00001209","last":"0.00001034","vol":"1195667.17090637"}},"xpabtc":{"at":1539857934,"ticker":{"buy":"0.00000661","sell":"0.00001242","low":"0.00000846","high":"0.00001004","last":"0.00000903","vol":"327608.97235078"}},"lbbtc":{"at":1539857934,"ticker":{"buy":"0.00001063","sell":"0.00001094","low":"0.00001062","high":"0.00001097","last":"0.00001093","vol":"39088.0"}},"trvcbtc":{"at":1539857934,"ticker":{"buy":"0.000006","sell":"0.0000061","low":"0.0","high":"0.0","last":"0.0000061","vol":"0.0"}},"tmtgbtc":{"at":1539857934,"ticker":{"buy":"0.000003","sell":"0.0","low":"0.0","high":"0.0","last":"0.00001963","vol":"0.0"}},"bybbtc":{"at":1539857934,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"ltceth":{"at":1539857934,"ticker":{"buy":"0.25796","sell":"0.25899","low":"0.257","high":"0.2597","last":"0.2584","vol":"2077.13529362"}},"cbteth":{"at":1539857934,"ticker":{"buy":"0.000151","sell":"0.00049","low":"0.00022238","high":"0.00036555","last":"0.00032148","vol":"1510324.24009279"}},"xpaeth":{"at":1539857934,"ticker":{"buy":"0.00021001","sell":"0.0003945","low":"0.00023233","high":"0.00032283","last":"0.00030034","vol":"482900.07309552"}},"trvceth":{"at":1539857934,"ticker":{"buy":"0.00015","sell":"0.0003","low":"0.0","high":"0.0","last":"0.00018","vol":"0.0"}},"tmtgeth":{"at":1539857934,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","vol":"0.0"}},"btcusx":{"at":1539857934,"ticker":{"buy":"6430.108","sell":"6443.2546","low":"6075.9541","high":"6486.0723","last":"6436.753","vol":"6.05832732"}},"ethusx":{"at":1539857934,"ticker":{"buy":"202.2277","sell":"203.5089","low":"192.9942","high":"205.6629","last":"202.8683","vol":"74.80805508"}}}'
+    http_version: 
+  recorded_at: Thu, 18 Oct 2018 10:18:54 GMT
+recorded_with: VCR 4.0.0
