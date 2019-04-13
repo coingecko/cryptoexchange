@@ -378,6 +378,7 @@ Or install it yourself as:
 | WazirX            | Y       |            |         |         | Y           |          | wazirx            |       |
 | Wcx               | Y       | Y          | Y       |         | Y           |          | wcx               |       |
 | Wex               | Y       | Y          | Y       |         | Y           | Y        | wex               |       |
+| Whitebit          | Y       | Y          | Y       |         | Y           |          | whitebit          |       |
 | Worldcore         | Y       | Y          | Y       |         | Y           | Y        | worldcore         |       |
 | Yobit             | Y       |            |         |         | Y           | Y        | yobit             |       |
 | Yuanbao           | Y       |            |         |         | User-Defined|          | yuanbao           |       |

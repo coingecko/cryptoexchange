@@ -18,10 +18,8 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          output.map do |pair|
-            symbol = pair[0].upcase
-            base, target = symbol.split(/(BTC$)+(.*)|(ETH$)+(.*)|(USD$)+(.*)/)
-            next unless base && target
+          output['result'].map do |pair|
+            base, target = pair[0].split('_')
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base.upcase,
                             target: target.upcase,
@@ -37,12 +35,12 @@ module Cryptoexchange::Exchanges
           ticker.target = market_pair.target
           ticker.market = Whitebit::Market::NAME
           ticker.last = NumericHelper.to_d(output['ticker']['last'])
-          ticker.bid = NumericHelper.to_d(output['ticker']['buy'])
-          ticker.ask = NumericHelper.to_d(output['ticker']['sell'])
+          ticker.bid = NumericHelper.to_d(output['ticker']['bid'])
+          ticker.ask = NumericHelper.to_d(output['ticker']['ask'])
           ticker.high = NumericHelper.to_d(output['ticker']['high'])
           ticker.low = NumericHelper.to_d(output['ticker']['low'])
           ticker.volume = NumericHelper.to_d(output['ticker']['vol'])
-          ticker.timestamp = output['at']
+          ticker.timestamp = nil
           ticker.payload = output
           ticker
         end
