@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://open-api.uex.com/open/api/get_ticker?symbol=ethbtc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - open-api.uex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 03 Oct 2018 16:40:59 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=ddd630784ac470127e0627caa2b1134aa1538584859; expires=Thu, 03-Oct-19
+        16:40:59 GMT; path=/; domain=.uex.com; HttpOnly; Secure
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4640da89598a31f8-SIN
+    body:
+      encoding: UTF-8
+      string: '{"code":"0","msg":"suc","data":{"symbol":"ETHBTC","high":0.03492000,"vol":19942.28861106,"last":0.0339000000000000,"low":0.03349700,"change":-0.02079722,"buy":"0.033901","sell":"0.034229","time":1538584843447,"open":0.03462000}}'
+    http_version:
+  recorded_at: Wed, 03 Oct 2018 16:40:59 GMT
+recorded_with: VCR 4.0.0

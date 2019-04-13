@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinfield.com/v1/trades/btccad
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinfield.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 16 Jan 2019 14:56:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc76cf2dfef59581f811914b41cd117971547650600; expires=Thu, 16-Jan-20
+        14:56:40 GMT; path=/; domain=.coinfield.com; HttpOnly; Secure
+      - route=af63b238b8d39e21ebf54fd53f3bcb8b; Domain=api.coinfield.com; Path=/;
+        HttpOnly
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 7d1c0c07-39d2-48c9-bd9c-7f350af80382
+      X-Runtime:
+      - '0.008049'
+      X-Proxy-Runtime:
+      - 12ms
+      X-Fuse-Cached:
+      - 'false'
+      Etag:
+      - W/"b64-X9SLPkzfG6zRKw4OwFblY1kAmcQ"
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49a16e1c9a8ca2ba-HKG
+    body:
+      encoding: UTF-8
+      string: '{"market":"btccad","trades_hash":"66c523f0bdcbf6289bbb7472fc0d20fa","trades":[{"id":"pd1e3uhh200apmin","price":"4794.88","volume":"0.17119863","total_value":"820.8768870144","timestamp":"2019-01-16T14:56:34.000000Z"},{"id":"pd1e3uhda00apmim","price":"4793.83","volume":"0.17648903","total_value":"846.0584066849","timestamp":"2019-01-16T14:54:34.000000Z"},{"id":"pd1e3uh7400apmil","price":"4789.36","volume":"0.09931914","total_value":"475.6751163504","timestamp":"2019-01-16T14:51:16.000000Z"},{"id":"pd1e3ugsv00apmik","price":"4795.26","volume":"0.21421751","total_value":"1027.2286570026","timestamp":"2019-01-16T14:45:51.000000Z"},{"id":"pd1e3ugpj00apmij","price":"4794.78","volume":"0.26627134","total_value":"1276.7124956052","timestamp":"2019-01-16T14:44:03.000000Z"},{"id":"pd1e3uge500apmii","price":"4795.27","volume":"0.28220737","total_value":"1353.2605351399","timestamp":"2019-01-16T14:37:57.000000Z"},{"id":"pd1e3ug3800apmih","price":"4800.11","volume":"0.6579927","total_value":"3158.437339197","timestamp":"2019-01-16T14:32:08.000000Z"},{"id":"pd1e3ug0a00apmig","price":"4806.53","volume":"0.09879741","total_value":"474.8727150873","timestamp":"2019-01-16T14:30:34.000000Z"},{"id":"pd1e3ufmg00apmif","price":"4805.68","volume":"0.11951833","total_value":"574.3668481144","timestamp":"2019-01-16T14:25:20.000000Z"},{"id":"pd1e3uffh00apmie","price":"4797.58","volume":"0.19037979","total_value":"913.3622729082","timestamp":"2019-01-16T14:21:37.000000Z"},{"id":"pd1e3uf8q00apmid","price":"4794.58","volume":"0.14833832","total_value":"711.2199423056","timestamp":"2019-01-16T14:18:02.000000Z"},{"id":"pd1e3uf3700apmic","price":"4798.18","volume":"0.20633425","total_value":"990.028871665","timestamp":"2019-01-16T14:15:03.000000Z"},{"id":"pd1e3uep100apmib","price":"4808.92","volume":"0.19058303","total_value":"916.4985446276","timestamp":"2019-01-16T14:09:37.000000Z"},{"id":"pd1e3ueit00apmia","price":"4787.07","volume":"0.30179228","total_value":"1444.7007698196","timestamp":"2019-01-16T14:06:21.000000Z"},{"id":"pd1e3ueal00apmi9","price":"4782.74","volume":"0.12092701","total_value":"578.3624478074","timestamp":"2019-01-16T14:01:57.000000Z"},{"id":"pd1e3ue7200apmi8","price":"4786.66","volume":"0.14131834","total_value":"676.4428453444","timestamp":"2019-01-16T14:00:02.000000Z"},{"id":"pd1e3uds800apmi7","price":"4786.72","volume":"0.43267657","total_value":"2071.1015911504","timestamp":"2019-01-16T13:54:16.000000Z"},{"id":"pd1e3udlj00apmi6","price":"4806.56","volume":"0.14636511","total_value":"703.5126831216","timestamp":"2019-01-16T13:50:43.000000Z"},{"id":"pd1e3udf100apmi5","price":"4823.63","volume":"0.23840318","total_value":"1149.9687311434","timestamp":"2019-01-16T13:47:13.000000Z"},{"id":"pd1e3ud4q00apmi4","price":"4809.92","volume":"0.25574485","total_value":"1230.112268912","timestamp":"2019-01-16T13:41:46.000000Z"}],"timestamp":"2019-01-16T14:56:41.072Z","took":"12ms"}'
+    http_version: 
+  recorded_at: Wed, 16 Jan 2019 14:56:41 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.huobi.com/v1/common/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.huobi.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 12 Feb 2019 06:43:19 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dafebc250954a0abcdce57e6c89ef3b861549953799; expires=Wed, 12-Feb-20
+        06:43:19 GMT; path=/; domain=.huobi.com; HttpOnly
+      X-Application-Context:
+      - bitex-gateway:us-prd1:8001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4a7d148ccfd92cdb-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","data":[{"base-currency":"etc","quote-currency":"btc","price-precision":6,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"usdt","quote-currency":"usd","price-precision":4,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"ont","quote-currency":"btc","price-precision":8,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"ont","quote-currency":"eth","price-precision":8,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"btc","quote-currency":"usd","price-precision":2,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"ltc","quote-currency":"btc","price-precision":6,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"zrx","quote-currency":"eth","price-precision":8,"amount-precision":2,"symbol-partition":"main"},{"base-currency":"dash","quote-currency":"btc","price-precision":6,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"zec","quote-currency":"usdt","price-precision":2,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"btc","quote-currency":"usdt","price-precision":2,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"ela","quote-currency":"eth","price-precision":8,"amount-precision":2,"symbol-partition":"main"},{"base-currency":"ela","quote-currency":"btc","price-precision":8,"amount-precision":2,"symbol-partition":"main"},{"base-currency":"etc","quote-currency":"usdt","price-precision":4,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"qtum","quote-currency":"usdt","price-precision":4,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"pai","quote-currency":"usdt","price-precision":6,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"pai","quote-currency":"eth","price-precision":6,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"bch","quote-currency":"btc","price-precision":6,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"zrx","quote-currency":"btc","price-precision":8,"amount-precision":2,"symbol-partition":"main"},{"base-currency":"dta","quote-currency":"usdt","price-precision":8,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"qtum","quote-currency":"btc","price-precision":6,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"zrx","quote-currency":"usdt","price-precision":4,"amount-precision":2,"symbol-partition":"main"},{"base-currency":"bch","quote-currency":"usdt","price-precision":2,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"dash","quote-currency":"usdt","price-precision":2,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"zec","quote-currency":"btc","price-precision":6,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"qtum","quote-currency":"eth","price-precision":6,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"ont","quote-currency":"usdt","price-precision":4,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"pai","quote-currency":"btc","price-precision":8,"amount-precision":2,"symbol-partition":"main"},{"base-currency":"eth","quote-currency":"btc","price-precision":6,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"ltc","quote-currency":"usdt","price-precision":2,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"eth","quote-currency":"usd","price-precision":2,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"dta","quote-currency":"btc","price-precision":10,"amount-precision":2,"symbol-partition":"main"},{"base-currency":"dta","quote-currency":"eth","price-precision":8,"amount-precision":2,"symbol-partition":"main"},{"base-currency":"lsk","quote-currency":"eth","price-precision":6,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"eth","quote-currency":"usdt","price-precision":2,"amount-precision":4,"symbol-partition":"main"},{"base-currency":"ela","quote-currency":"usdt","price-precision":4,"amount-precision":2,"symbol-partition":"main"},{"base-currency":"lsk","quote-currency":"btc","price-precision":6,"amount-precision":4,"symbol-partition":"main"}]}'
+    http_version: 
+  recorded_at: Tue, 12 Feb 2019 06:43:19 GMT
+recorded_with: VCR 4.0.0

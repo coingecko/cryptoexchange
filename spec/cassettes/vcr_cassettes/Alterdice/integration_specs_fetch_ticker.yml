@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.alterdice.com/v1/coingecko/pubticker/BTCUSD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.alterdice.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 17 Jan 2019 02:32:28 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=9fqlla5flgg24o2tnr8akm8n6u; path=/; HttpOnly
+      - __cfduid=d8d4509c49081e95386c195e091fb6ebb1547692347; expires=Fri, 17-Jan-20
+        02:32:27 GMT; path=/; domain=.alterdice.com; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49a569562fdd84ea-HKG
+    body:
+      encoding: UTF-8
+      string: '{"last_price":3658.3,"low":3646.6,"high":3733,"volume":33.11388043,"timestamp":1547692348.848825}'
+    http_version: 
+  recorded_at: Thu, 17 Jan 2019 02:32:30 GMT
+recorded_with: VCR 4.0.0

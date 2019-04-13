@@ -1,0 +1,362 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://vaultmex.com/v1/market/orders/LTC/BTC/BUY
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - vaultmex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Sun, 14 Oct 2018 03:12:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1575'
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - no-store, no-cache
+      Etag:
+      - W/"627-2170286566"
+      Set-Cookie:
+      - exchange=s%3APlCpvOu0IHfD5eb3ulymQ1bN.v7oySBXmXd5bzPpwqY1hYHyAYm74cVbapYqF8J%2F90KU;
+        Path=/; Expires=Sun, 14 Oct 2018 15:12:40 GMT; HttpOnly
+      - incap_ses_531_1776550=Z0CCTerMtw+TYEL3mn5eByi0wlsAAAAAPB4GyGjlGBP4H5ZBZJVYrQ==;
+        path=/; Domain=.vaultmex.com
+      - visid_incap_1776550=1LPW09zsTBiixdLrGygc1CW0wlsAAAAAQUIPAAAAAADzYOlBzYJl1Ievc0cPCNKh;
+        expires=Sun, 13 Oct 2019 10:46:24 GMT; path=/; Domain=.vaultmex.com
+      Vary:
+      - Accept-Encoding
+      X-Iinfo:
+      - 2-41418226-41418352 NNNN CT(0 0 0) RT(1539486759246 1020) q(0 0 0 0) r(1 1)
+        U2
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "count": 15,
+          "type": "BUY",
+          "orders": [
+            {
+              "price": "0.00801540",
+              "amount": "100.00000000",
+              "total": "0.80154000"
+            },
+            {
+              "price": "0.00795000",
+              "amount": "100.00000000",
+              "total": "0.79500000"
+            },
+            {
+              "price": "0.00755745",
+              "amount": "10.00000000",
+              "total": "0.07557450"
+            },
+            {
+              "price": "0.00754540",
+              "amount": "10.00000000",
+              "total": "0.07545400"
+            },
+            {
+              "price": "0.00700000",
+              "amount": "100.00000000",
+              "total": "0.70000000"
+            },
+            {
+              "price": "0.00600000",
+              "amount": "10.00000000",
+              "total": "0.06000000"
+            },
+            {
+              "price": "0.00500000",
+              "amount": "10.00000000",
+              "total": "0.05000000"
+            },
+            {
+              "price": "0.00400000",
+              "amount": "10.00000000",
+              "total": "0.04000000"
+            },
+            {
+              "price": "0.00300000",
+              "amount": "10.00000000",
+              "total": "0.03000000"
+            },
+            {
+              "price": "0.00200000",
+              "amount": "100.00000000",
+              "total": "0.20000000"
+            },
+            {
+              "price": "0.00100000",
+              "amount": "100.00000000",
+              "total": "0.10000000"
+            },
+            {
+              "price": "0.00099989",
+              "amount": "50.00000000",
+              "total": "0.04999450"
+            },
+            {
+              "price": "0.00096787",
+              "amount": "25.00000000",
+              "total": "0.02419675"
+            },
+            {
+              "price": "0.00096787",
+              "amount": "23.00000000",
+              "total": "0.02226101"
+            },
+            {
+              "price": "0.00000001",
+              "amount": "11111.00000000",
+              "total": "0.00011111"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Oct 2018 03:12:41 GMT
+- request:
+    method: get
+    uri: https://vaultmex.com/v1/market/orders/LTC/BTC/SELL
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - vaultmex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Sun, 14 Oct 2018 03:12:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3072'
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - no-store, no-cache
+      Etag:
+      - W/"c00-4289003976"
+      Set-Cookie:
+      - exchange=s%3AJJF69Fo7HgpXXBrqslimr1uG.sxQStyu1KS9g0rzC4sHrrPGxpVWyCC%2FggM0Bpers%2FnI;
+        Path=/; Expires=Sun, 14 Oct 2018 15:12:42 GMT; HttpOnly
+      - incap_ses_531_1776550=NUBpegRiLiyTYEL3mn5eByq0wlsAAAAAdktsYhzBDpybY3RIbDqPbA==;
+        path=/; Domain=.vaultmex.com
+      - visid_incap_1776550=1LPW09zsTBiixdLrGygc1CW0wlsAAAAAQUIPAAAAAADzYOlBzYJl1Ievc0cPCNKh;
+        expires=Sun, 13 Oct 2019 10:46:40 GMT; path=/; Domain=.vaultmex.com
+      Vary:
+      - Accept-Encoding
+      X-Iinfo:
+      - 5-107236308-107236498 NNNN CT(0 0 0) RT(1539486761331 674) q(0 0 0 0) r(0
+        0) U2
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "count": 30,
+          "type": "SELL",
+          "orders": [
+            {
+              "price": "0.00879999",
+              "amount": "0.15372380",
+              "total": "0.00135277"
+            },
+            {
+              "price": "0.00879999",
+              "amount": "1.00679745",
+              "total": "0.00885981"
+            },
+            {
+              "price": "0.00880000",
+              "amount": "1.44335259",
+              "total": "0.01270150"
+            },
+            {
+              "price": "0.00889990",
+              "amount": "1.00000000",
+              "total": "0.00889990"
+            },
+            {
+              "price": "0.00899900",
+              "amount": "125.00000000",
+              "total": "1.12487500"
+            },
+            {
+              "price": "0.00899900",
+              "amount": "0.02611401",
+              "total": "0.00023500"
+            },
+            {
+              "price": "0.00901514",
+              "amount": "25.00000000",
+              "total": "0.22537850"
+            },
+            {
+              "price": "0.00910151",
+              "amount": "10.00000000",
+              "total": "0.09101510"
+            },
+            {
+              "price": "0.00920110",
+              "amount": "1.15454000",
+              "total": "0.01062304"
+            },
+            {
+              "price": "0.00986236",
+              "amount": "1.20200000",
+              "total": "0.01185456"
+            },
+            {
+              "price": "0.01000000",
+              "amount": "1000.00000000",
+              "total": "10.00000000"
+            },
+            {
+              "price": "0.01011110",
+              "amount": "10.78867600",
+              "total": "0.10908538"
+            },
+            {
+              "price": "0.01012000",
+              "amount": "12.00000000",
+              "total": "0.12144000"
+            },
+            {
+              "price": "0.01012121",
+              "amount": "12.00000000",
+              "total": "0.12145452"
+            },
+            {
+              "price": "0.01054456",
+              "amount": "355.00000000",
+              "total": "3.74331880"
+            },
+            {
+              "price": "0.01055000",
+              "amount": "10.00000000",
+              "total": "0.10550000"
+            },
+            {
+              "price": "0.01055402",
+              "amount": "5.00000000",
+              "total": "0.05277010"
+            },
+            {
+              "price": "0.01059990",
+              "amount": "10.00000000",
+              "total": "0.10599900"
+            },
+            {
+              "price": "0.01060000",
+              "amount": "10.00000000",
+              "total": "0.10600000"
+            },
+            {
+              "price": "0.01062400",
+              "amount": "1.00000000",
+              "total": "0.01062400"
+            },
+            {
+              "price": "0.01065000",
+              "amount": "1.00000000",
+              "total": "0.01065000"
+            },
+            {
+              "price": "0.01080000",
+              "amount": "55.00000000",
+              "total": "0.59400000"
+            },
+            {
+              "price": "0.01087480",
+              "amount": "0.50000000",
+              "total": "0.00543740"
+            },
+            {
+              "price": "0.01087550",
+              "amount": "1.00000000",
+              "total": "0.01087550"
+            },
+            {
+              "price": "0.01087570",
+              "amount": "35.00000000",
+              "total": "0.38064950"
+            },
+            {
+              "price": "0.01090000",
+              "amount": "3.00000000",
+              "total": "0.03270000"
+            },
+            {
+              "price": "0.01092140",
+              "amount": "5.35000000",
+              "total": "0.05842949"
+            },
+            {
+              "price": "0.01093525",
+              "amount": "5.00000000",
+              "total": "0.05467625"
+            },
+            {
+              "price": "0.01094574",
+              "amount": "5.00000000",
+              "total": "0.05472870"
+            },
+            {
+              "price": "0.01100000",
+              "amount": "10.00000000",
+              "total": "0.11000000"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 14 Oct 2018 03:12:43 GMT
+recorded_with: VCR 4.0.0

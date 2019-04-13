@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openapi.zeniex.com/open/api/common/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - openapi.zeniex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 13 Oct 2018 21:46:13 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - Tengine/2.2.1
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"code":"0","msg":"suc","data":[{"symbol":"ethbtc","count_coin":"btc","amount_precision":3,"base_coin":"eth","price_precision":6},{"symbol":"etcbtc","count_coin":"btc","amount_precision":2,"base_coin":"etc","price_precision":6},{"symbol":"btmbtc","count_coin":"btc","amount_precision":0,"base_coin":"btm","price_precision":8},{"symbol":"dddbtc","count_coin":"btc","amount_precision":0,"base_coin":"ddd","price_precision":8},{"symbol":"eonbtc","count_coin":"btc","amount_precision":0,"base_coin":"eon","price_precision":8},{"symbol":"egccbtc","count_coin":"btc","amount_precision":0,"base_coin":"egcc","price_precision":8},{"symbol":"btmeth","count_coin":"eth","amount_precision":0,"base_coin":"btm","price_precision":8},{"symbol":"pxceth","count_coin":"eth","amount_precision":0,"base_coin":"pxc","price_precision":8},{"symbol":"uuueth","count_coin":"eth","amount_precision":0,"base_coin":"uuu","price_precision":8},{"symbol":"eoneth","count_coin":"eth","amount_precision":0,"base_coin":"eon","price_precision":8},{"symbol":"egcceth","count_coin":"eth","amount_precision":0,"base_coin":"egcc","price_precision":8},{"symbol":"zxgeth","count_coin":"eth","amount_precision":0,"base_coin":"zxg","price_precision":8}]}'
+    http_version: 
+  recorded_at: Sat, 13 Oct 2018 21:46:13 GMT
+recorded_with: VCR 4.0.0

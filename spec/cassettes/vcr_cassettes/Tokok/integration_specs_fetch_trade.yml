@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.tokok.com/api/v1/trades?symbol=eth_btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.tokok.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 07 Oct 2018 17:05:14 GMT
+      Content-Type:
+      - text/html;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dae48a1776bb87c6f048689e7baef4d311538931914; expires=Mon, 07-Oct-19
+        17:05:14 GMT; path=/; domain=.tokok.com; HttpOnly
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4661f3901ef069d1-LHR
+    body:
+      encoding: UTF-8
+      string: '[{"timestamp":1538931870000,"price":"0.034135","amount":"0.14","side":"sell"},{"timestamp":1538931870000,"price":"0.034097","amount":"1.61","side":"buy"},{"timestamp":1538931870000,"price":"0.034066","amount":"0.26","side":"buy"},{"timestamp":1538931869000,"price":"0.034066","amount":"0.88","side":"buy"},{"timestamp":1538931869000,"price":"0.034032","amount":"0.68","side":"buy"},{"timestamp":1538931869000,"price":"0.034029","amount":"1.3","side":"buy"},{"timestamp":1538931670000,"price":"0.034008","amount":"1.57","side":"sell"},{"timestamp":1538931328000,"price":"0.033966","amount":"0.86","side":"buy"},{"timestamp":1538930930000,"price":"0.033956","amount":"1.57","side":"sell"},{"timestamp":1538930930000,"price":"0.033976","amount":"1.11","side":"sell"},{"timestamp":1538930930000,"price":"0.033977","amount":"0.24","side":"sell"},{"timestamp":1538930593000,"price":"0.033977","amount":"1.56","side":"sell"},{"timestamp":1538930199000,"price":"0.033977","amount":"0.62","side":"sell"},{"timestamp":1538930199000,"price":"0.033977","amount":"0.49","side":"sell"},{"timestamp":1538929970000,"price":"0.033977","amount":"2.42","side":"sell"},{"timestamp":1538929732000,"price":"0.033939","amount":"1.27","side":"sell"},{"timestamp":1538929486000,"price":"0.033933","amount":"2.74","side":"sell"},{"timestamp":1538929184000,"price":"0.033932","amount":"2.64","side":"buy"},{"timestamp":1538928831000,"price":"0.033948","amount":"2.44","side":"buy"},{"timestamp":1538928581000,"price":"0.03395","amount":"2.05","side":"buy"},{"timestamp":1538928312000,"price":"0.033959","amount":"1.67","side":"buy"},{"timestamp":1538928070000,"price":"0.033949","amount":"1.39","side":"buy"},{"timestamp":1538927980000,"price":"0.033962","amount":"1.77","side":"buy"},{"timestamp":1538927943000,"price":"0.033949","amount":"2.6","side":"sell"},{"timestamp":1538927895000,"price":"0.033952","amount":"1.85","side":"buy"},{"timestamp":1538927799000,"price":"0.033949","amount":"1.16","side":"sell"},{"timestamp":1538927770000,"price":"0.03395","amount":"0.71","side":"sell"},{"timestamp":1538927692000,"price":"0.033958","amount":"0.72","side":"buy"},{"timestamp":1538927594000,"price":"0.033965","amount":"2.97","side":"buy"},{"timestamp":1538927534000,"price":"0.033959","amount":"1.07","side":"sell"},{"timestamp":1538927459000,"price":"0.033951","amount":"1.09","side":"buy"},{"timestamp":1538927418000,"price":"0.033958","amount":"0.74","side":"buy"},{"timestamp":1538927362000,"price":"0.033947","amount":"1","side":"buy"},{"timestamp":1538927265000,"price":"0.033959","amount":"2.86","side":"buy"},{"timestamp":1538927175000,"price":"0.033945","amount":"1.54","side":"sell"},{"timestamp":1538927100000,"price":"0.033935","amount":"2.67","side":"buy"},{"timestamp":1538927013000,"price":"0.033931","amount":"1.68","side":"buy"},{"timestamp":1538926922000,"price":"0.03393","amount":"0.74","side":"sell"},{"timestamp":1538926882000,"price":"0.03393","amount":"1.36","side":"sell"},{"timestamp":1538926882000,"price":"0.033931","amount":"0.77","side":"sell"},{"timestamp":1538926803000,"price":"0.033931","amount":"0.54","side":"sell"},{"timestamp":1538926802000,"price":"0.033933","amount":"0.16","side":"sell"},{"timestamp":1538926732000,"price":"0.033949","amount":"1.68","side":"buy"},{"timestamp":1538926671000,"price":"0.03395","amount":"2.42","side":"sell"},{"timestamp":1538926642000,"price":"0.033956","amount":"2.43","side":"sell"},{"timestamp":1538926594000,"price":"0.033975","amount":"2.98","side":"sell"},{"timestamp":1538926549000,"price":"0.033955","amount":"1.3","side":"buy"},{"timestamp":1538926478000,"price":"0.033951","amount":"1.34","side":"buy"},{"timestamp":1538926394000,"price":"0.033933","amount":"0.89","side":"sell"},{"timestamp":1538926345000,"price":"0.03395","amount":"1.15","side":"sell"}]'
+    http_version: 
+  recorded_at: Sun, 07 Oct 2018 17:05:15 GMT
+recorded_with: VCR 4.0.0

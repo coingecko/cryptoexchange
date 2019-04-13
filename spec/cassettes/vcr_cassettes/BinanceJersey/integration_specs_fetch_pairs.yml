@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.binance.je/api/v1/exchangeInfo
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.binance.je
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Date:
+      - Tue, 29 Jan 2019 14:24:15 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 06eb5c425813a21a53ec8be63f6bc0b9.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - IQVyo7kZ7b6h-9QjpNwPYMq6NV-RqZJeN-wUygVH5sJgdtKzJGgz7A==
+    body:
+      encoding: UTF-8
+      string: '{"timezone":"Europe/Jersey","serverTime":1548771855642,"rateLimits":[{"rateLimitType":"ORDERS","interval":"SECOND","intervalNum":1,"limit":10},{"rateLimitType":"ORDERS","interval":"DAY","intervalNum":1,"limit":100000}],"exchangeFilters":[],"symbols":[{"symbol":"BTCGBP","status":"TRADING","baseAsset":"BTC","baseAssetPrecision":8,"quoteAsset":"GBP","quotePrecision":2,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.01","maxPrice":"10000000.00","tickSize":"0.01"},{"filterType":"PERCENT_PRICE","multiplierUp":"10","multiplierDown":"0.1","avgPriceMins":5},{"filterType":"LOT_SIZE","minQty":"0.00000100","maxQty":"10000000.00000000","stepSize":"0.00000100"},{"filterType":"MIN_NOTIONAL","minNotional":"10.00","applyToMarket":true,"avgPriceMins":5},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"ETHGBP","status":"TRADING","baseAsset":"ETH","baseAssetPrecision":8,"quoteAsset":"GBP","quotePrecision":2,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.01","maxPrice":"10000000.00","tickSize":"0.01"},{"filterType":"PERCENT_PRICE","multiplierUp":"10","multiplierDown":"0.1","avgPriceMins":5},{"filterType":"LOT_SIZE","minQty":"0.00001000","maxQty":"10000000.00000000","stepSize":"0.00001000"},{"filterType":"MIN_NOTIONAL","minNotional":"10.00","applyToMarket":true,"avgPriceMins":5},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"BTCEUR","status":"TRADING","baseAsset":"BTC","baseAssetPrecision":8,"quoteAsset":"EUR","quotePrecision":2,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.01","maxPrice":"10000000.00","tickSize":"0.01"},{"filterType":"PERCENT_PRICE","multiplierUp":"10","multiplierDown":"0.1","avgPriceMins":5},{"filterType":"LOT_SIZE","minQty":"0.00000100","maxQty":"10000000.00000000","stepSize":"0.00000100"},{"filterType":"MIN_NOTIONAL","minNotional":"10.00","applyToMarket":true,"avgPriceMins":5},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"ETHEUR","status":"TRADING","baseAsset":"ETH","baseAssetPrecision":8,"quoteAsset":"EUR","quotePrecision":2,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.01","maxPrice":"10000000.00","tickSize":"0.01"},{"filterType":"PERCENT_PRICE","multiplierUp":"10","multiplierDown":"0.1","avgPriceMins":5},{"filterType":"LOT_SIZE","minQty":"0.00001000","maxQty":"10000000.00000000","stepSize":"0.00001000"},{"filterType":"MIN_NOTIONAL","minNotional":"10.00","applyToMarket":true,"avgPriceMins":5},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"123567","status":"TRADING","baseAsset":"123","baseAssetPrecision":8,"quoteAsset":"567","quotePrecision":2,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.01","maxPrice":"10000000.00","tickSize":"0.01"},{"filterType":"PERCENT_PRICE","multiplierUp":"10","multiplierDown":"0.1","avgPriceMins":5},{"filterType":"LOT_SIZE","minQty":"0.00000100","maxQty":"10000000.00000000","stepSize":"0.00000100"},{"filterType":"MIN_NOTIONAL","minNotional":"10.00","applyToMarket":true,"avgPriceMins":5},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]}]}'
+    http_version: 
+  recorded_at: Tue, 29 Jan 2019 14:24:15 GMT
+recorded_with: VCR 4.0.0

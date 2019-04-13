@@ -2,7 +2,8 @@ require 'spec_helper'
 
 RSpec.describe 'BitZ integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:ltc_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ltc', target: 'btc', market: 'bit_z') }
+  let(:market) { 'bit_z' }
+  let(:ltc_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ltc', target: 'btc', market: market) }
 
   it 'fetch pairs' do
     pairs = client.pairs('bit_z')
@@ -12,6 +13,11 @@ RSpec.describe 'BitZ integration specs' do
     expect(pair.base).to_not be_nil
     expect(pair.target).to_not be_nil
     expect(pair.market).to eq 'bit_z'
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: ltc_btc_pair.base, target: ltc_btc_pair.target
+    expect(trade_page_url).to eq "https://bit-z.com/exchange/ltc_btc"
   end
 
   it 'fetch ticker' do

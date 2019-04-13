@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://platform.coinfield.com/api/v2//markets
+    uri: https://api.coinfield.com/v1/markets
     body:
       encoding: UTF-8
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Connection:
       - close
       Host:
-      - platform.coinfield.com
+      - api.coinfield.com
       User-Agent:
       - http.rb/3.0.0
   response:
@@ -19,73 +19,53 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 29 May 2018 16:52:37 GMT
+      - Wed, 16 Jan 2019 14:56:38 GMT
       Content-Type:
-      - application/json
+      - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d4004e8f215fa4d1dc100470f4b5404641527612757; expires=Wed, 29-May-19
-        16:52:37 GMT; path=/; domain=.coinfield.com; HttpOnly; Secure
-      Vary:
-      - Accept-Encoding
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, PUT, PATCH, DELETE
-      Access-Control-Allow-Headers:
-      - Origin, X-Requested-With, Content-Type, Accept, Authorization
-      Version:
-      - HTTP/1.1
-      Host:
-      - platform.coinfield.com
-      X-Real-Ip:
-      - 73.97.148.141
-      X-Forwarded-For:
-      - 73.97.148.141
-      X-Forwarded-Host:
-      - platform.coinfield.com
-      X-Forwarded-Port:
-      - '443'
-      X-Forwarded-Proto:
-      - https
-      X-Original-Uri:
-      - "/api/v2//markets"
-      X-Scheme:
-      - https
-      X-Original-Forwarded-For:
-      - 73.97.148.141
-      Accept-Encoding:
-      - gzip
-      Cf-Ipcountry:
-      - US
-      Cf-Visitor:
-      - '{"scheme":"https"}'
-      User-Agent:
-      - http.rb/3.0.0
-      Cf-Connecting-Ip:
-      - 73.97.148.141
-      Etag:
-      - W/"0bfc98bb22ef88ab4b912bb13a35c920"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - dbec4ca6-8fbc-4f06-a9e2-ba4d5c256482
-      X-Runtime:
-      - '0.056467'
+      - __cfduid=dabe712215946db845cbed0b6ff0b75921547650597; expires=Thu, 16-Jan-20
+        14:56:37 GMT; path=/; domain=.coinfield.com; HttpOnly; Secure
+      - route=9ac21c7ed2fa285054b7d9867fe54452; Domain=api.coinfield.com; Path=/;
+        HttpOnly
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 69b9f871-72a6-41b2-9cc3-a3e61932d9b1
+      X-Runtime:
+      - '0.011274'
+      X-Proxy-Runtime:
+      - 18ms
+      X-Fuse-Cached:
+      - 'false'
+      Etag:
+      - W/"254c-N9/ohvHqudRF1FbMnfk429orbF4"
+      Vary:
+      - Accept-Encoding
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 422a78f3feab2a85-SEA
+      - 49a16e0d4d0aa2b4-HKG
     body:
-      encoding: ASCII-8BIT
-      string: '[{"id":"btccad","name":"BTC/CAD"},{"id":"xrpcad","name":"XRP/CAD"},{"id":"bchcad","name":"BCH/CAD"},{"id":"ltccad","name":"LTC/CAD"},{"id":"ethcad","name":"ETH/CAD"},{"id":"dashcad","name":"DASH/CAD"},{"id":"ethbtc","name":"ETH/BTC"},{"id":"xrpbtc","name":"XRP/BTC"},{"id":"ltcbtc","name":"LTC/BTC"},{"id":"dashbtc","name":"DASH/BTC"},{"id":"bchbtc","name":"BCH/BTC"},{"id":"btcusd","name":"BTC/USD"},{"id":"xrpusd","name":"XRP/USD"}]'
+      encoding: UTF-8
+      string: '{"markets":[{"id":"btcxrp","name":"BTC/XRP","ask_precision":8,"bid_precision":4,"minimum_volume":"0.001","maximum_volume":"50.0","minimum_funds":"20.0","maximum_funds":"500000.0"},{"id":"ethxrp","name":"ETH/XRP","ask_precision":4,"bid_precision":4,"minimum_volume":"0.1","maximum_volume":"300.0","minimum_funds":"20.0","maximum_funds":"500000.0"},{"id":"xlmxrp","name":"XLM/XRP","ask_precision":4,"bid_precision":4,"minimum_volume":"80.0","maximum_volume":"600000.0","minimum_funds":"20.0","maximum_funds":"400000.0"},{"id":"ltcxrp","name":"LTC/XRP","ask_precision":2,"bid_precision":4,"minimum_volume":"0.1","maximum_volume":"1000.0","minimum_funds":"20.0","maximum_funds":"500000.0"},{"id":"dashxrp","name":"DASH/XRP","ask_precision":3,"bid_precision":4,"minimum_volume":"0.1","maximum_volume":"500.0","minimum_funds":"20.0","maximum_funds":"500000.0"},{"id":"bchxrp","name":"BCH/XRP","ask_precision":3,"bid_precision":4,"minimum_volume":"0.05","maximum_volume":"400.0","minimum_funds":"20.0","maximum_funds":"500000.0"},{"id":"zecxrp","name":"ZEC/XRP","ask_precision":3,"bid_precision":4,"minimum_volume":"0.1","maximum_volume":"500.0","minimum_funds":"20.0","maximum_funds":"500000.0"},{"id":"dashcad","name":"DASH/CAD","ask_precision":4,"bid_precision":2,"minimum_volume":"0.1","maximum_volume":"500.0","minimum_funds":"15.0","maximum_funds":"500000.0"},{"id":"btgxrp","name":"BTG/XRP","ask_precision":2,"bid_precision":4,"minimum_volume":"0.5","maximum_volume":"2000.0","minimum_funds":"20.0","maximum_funds":"500000.0"},{"id":"zrxxrp","name":"ZRX/XRP","ask_precision":1,"bid_precision":4,"minimum_volume":"10.0","maximum_volume":"100000.0","minimum_funds":"20.0","maximum_funds":"500000.0"},{"id":"gntxrp","name":"GNT/XRP","ask_precision":1,"bid_precision":4,"minimum_volume":"10.0","maximum_volume":"100000.0","minimum_funds":"20.0","maximum_funds":"500000.0"},{"id":"repxrp","name":"REP/XRP","ask_precision":3,"bid_precision":4,"minimum_volume":"1.0","maximum_volume":"2000.0","minimum_funds":"20.0","maximum_funds":"500000.0"},{"id":"omgxrp","name":"OMG/XRP","ask_precision":2,"bid_precision":4,"minimum_volume":"3.0","maximum_volume":"5000.0","minimum_funds":"20.0","maximum_funds":"500000.0"},{"id":"saltxrp","name":"SALT/XRP","ask_precision":2,"bid_precision":4,"minimum_volume":"10.0","maximum_volume":"100000.0","minimum_funds":"20.0","maximum_funds":"500000.0"},{"id":"batxrp","name":"BAT/XRP","ask_precision":1,"bid_precision":4,"minimum_volume":"50.0","maximum_volume":"200000.0","minimum_funds":"20.0","maximum_funds":"500000.0"},{"id":"zilxrp","name":"ZIL/XRP","ask_precision":1,"bid_precision":4,"minimum_volume":"300.0","maximum_volume":"999999.0","minimum_funds":"20.0","maximum_funds":"500000.0"},{"id":"xrpcad","name":"XRP/CAD","ask_precision":4,"bid_precision":4,"minimum_volume":"20.0","maximum_volume":"200000.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"xrpusd","name":"XRP/USD","ask_precision":4,"bid_precision":4,"minimum_volume":"20.0","maximum_volume":"200000.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"btcusdc","name":"BTC/USDC","ask_precision":8,"bid_precision":2,"minimum_volume":"0.001","maximum_volume":"50.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"xrpusdc","name":"XRP/USDC","ask_precision":4,"bid_precision":4,"minimum_volume":"20.0","maximum_volume":"200000.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"xrpeur","name":"XRP/EUR","ask_precision":4,"bid_precision":4,"minimum_volume":"20.0","maximum_volume":"200000.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"xrpgbp","name":"XRP/GBP","ask_precision":4,"bid_precision":4,"minimum_volume":"20.0","maximum_volume":"200000.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"btcgbp","name":"BTC/GBP","ask_precision":8,"bid_precision":2,"minimum_volume":"0.001","maximum_volume":"50.0","minimum_funds":"15.0","maximum_funds":"500000.0"},{"id":"ethgbp","name":"ETH/GBP","ask_precision":4,"bid_precision":2,"minimum_volume":"0.1","maximum_volume":"300.0","minimum_funds":"15.0","maximum_funds":"500000.0"},{"id":"xlmgbp","name":"XLM/GBP","ask_precision":4,"bid_precision":4,"minimum_volume":"80.0","maximum_volume":"600000.0","minimum_funds":"15.0","maximum_funds":"500000.0"},{"id":"ltcgbp","name":"LTC/GBP","ask_precision":4,"bid_precision":2,"minimum_volume":"0.1","maximum_volume":"1000.0","minimum_funds":"15.0","maximum_funds":"500000.0"},{"id":"dgbgbp","name":"DGB/GBP","ask_precision":2,"bid_precision":6,"minimum_volume":"300.0","maximum_volume":"999999.0","minimum_funds":"15.0","maximum_funds":"500000.0"},{"id":"xrpaed","name":"XRP/AED","ask_precision":4,"bid_precision":4,"minimum_volume":"20.0","maximum_volume":"200000.0","minimum_funds":"50.0","maximum_funds":"999999.0"},{"id":"xrpjpy","name":"XRP/JPY","ask_precision":4,"bid_precision":2,"minimum_volume":"20.0","maximum_volume":"2000000.0","minimum_funds":"1500.0","maximum_funds":"200000000.0"},{"id":"btceur","name":"BTC/EUR","ask_precision":8,"bid_precision":2,"minimum_volume":"0.001","maximum_volume":"50.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"etheur","name":"ETH/EUR","ask_precision":4,"bid_precision":2,"minimum_volume":"0.1","maximum_volume":"300.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"ltceur","name":"LTC/EUR","ask_precision":2,"bid_precision":2,"minimum_volume":"0.1","maximum_volume":"1000.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"xlmeur","name":"XLM/EUR","ask_precision":4,"bid_precision":4,"minimum_volume":"50.0","maximum_volume":"200000.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"dgbeur","name":"DGB/EUR","ask_precision":2,"bid_precision":6,"minimum_volume":"300.0","maximum_volume":"9999999.0","minimum_funds":"15.0","maximum_funds":"500000.0"},{"id":"btccad","name":"BTC/CAD","ask_precision":8,"bid_precision":2,"minimum_volume":"0.001","maximum_volume":"50.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"ethcad","name":"ETH/CAD","ask_precision":4,"bid_precision":2,"minimum_volume":"0.1","maximum_volume":"300.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"ltccad","name":"LTC/CAD","ask_precision":2,"bid_precision":2,"minimum_volume":"0.1","maximum_volume":"1000.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"btcusd","name":"BTC/USD","ask_precision":8,"bid_precision":2,"minimum_volume":"0.001","maximum_volume":"50.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"ethusd","name":"ETH/USD","ask_precision":4,"bid_precision":2,"minimum_volume":"0.1","maximum_volume":"300.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"ltcusd","name":"LTC/USD","ask_precision":2,"bid_precision":2,"minimum_volume":"0.1","maximum_volume":"1000.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"xlmcad","name":"XLM/CAD","ask_precision":4,"bid_precision":4,"minimum_volume":"50.0","maximum_volume":"200000.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"bchcad","name":"BCH/CAD","ask_precision":4,"bid_precision":2,"minimum_volume":"0.05","maximum_volume":"400.0","minimum_funds":"15.0","maximum_funds":"500000.0"},{"id":"dgbcad","name":"DGB/CAD","ask_precision":2,"bid_precision":6,"minimum_volume":"300.0","maximum_volume":"999999.0","minimum_funds":"15.0","maximum_funds":"500000.0"},{"id":"zeccad","name":"ZEC/CAD","ask_precision":4,"bid_precision":2,"minimum_volume":"0.1","maximum_volume":"500.0","minimum_funds":"15.0","maximum_funds":"500000.0"},{"id":"zrxcad","name":"ZRX/CAD","ask_precision":4,"bid_precision":4,"minimum_volume":"10.0","maximum_volume":"100000.0","minimum_funds":"15.0","maximum_funds":"500000.0"},{"id":"xlmusd","name":"XLM/USD","ask_precision":4,"bid_precision":4,"minimum_volume":"50.0","maximum_volume":"200000.0","minimum_funds":"10.0","maximum_funds":"300000.0"},{"id":"dashusd","name":"DASH/USD","ask_precision":4,"bid_precision":2,"minimum_volume":"0.1","maximum_volume":"500.0","minimum_funds":"15.0","maximum_funds":"500000.0"},{"id":"zecusd","name":"ZEC/USD","ask_precision":4,"bid_precision":2,"minimum_volume":"0.1","maximum_volume":"500.0","minimum_funds":"15.0","maximum_funds":"500000.0"},{"id":"dgbusd","name":"DGB/USD","ask_precision":2,"bid_precision":6,"minimum_volume":"300.0","maximum_volume":"999999.0","minimum_funds":"15.0","maximum_funds":"500000.0"},{"id":"bchusd","name":"BCH/USD","ask_precision":4,"bid_precision":2,"minimum_volume":"0.05","maximum_volume":"200.0","minimum_funds":"15.0","maximum_funds":"500000.0"},{"id":"zrxusd","name":"ZRX/USD","ask_precision":4,"bid_precision":4,"minimum_volume":"10.0","maximum_volume":"100000.0","minimum_funds":"15.0","maximum_funds":"500000.0"},{"id":"batusd","name":"BAT/USD","ask_precision":4,"bid_precision":4,"minimum_volume":"50.0","maximum_volume":"200000.0","minimum_funds":"15.0","maximum_funds":"500000.0"},{"id":"btcjpy","name":"BTC/JPY","ask_precision":8,"bid_precision":2,"minimum_volume":"0.001","maximum_volume":"50.0","minimum_funds":"1500.0"},{"id":"loomxrp","name":"LOOM/XRP","ask_precision":4,"bid_precision":4,"minimum_volume":"300.0","maximum_volume":"999999.0","minimum_funds":"20.0","maximum_funds":"500000.0"},{"id":"dgbxrp","name":"DGB/XRP","ask_precision":4,"bid_precision":4,"minimum_volume":"300.0","maximum_volume":"999999.0","minimum_funds":"20.0","maximum_funds":"500000.0"},{"id":"cvcxrp","name":"CVC/XRP","ask_precision":4,"bid_precision":4,"minimum_volume":"300.0","maximum_volume":"999999.0","minimum_funds":"20.0","maximum_funds":"500000.0"}],"timestamp":"2019-01-16T14:56:38.588Z","took":"18ms"}'
     http_version: 
-  recorded_at: Tue, 29 May 2018 16:52:37 GMT
+  recorded_at: Wed, 16 Jan 2019 14:56:38 GMT
 recorded_with: VCR 4.0.0

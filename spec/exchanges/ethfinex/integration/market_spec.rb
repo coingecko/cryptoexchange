@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Ethfinex integration specs' do
   client = Cryptoexchange::Client.new
+  let(:market) { 'ethfinex' }
   let(:eth_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'eth', target: 'usd', market: 'ethfinex') }
 
   it 'fetch pairs' do
@@ -12,6 +13,11 @@ RSpec.describe 'Ethfinex integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'ethfinex'
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: eth_usd_pair.base, target: eth_usd_pair.target
+    expect(trade_page_url).to eq "https://ethfinex.com"
   end
 
   it 'fetch ticker' do

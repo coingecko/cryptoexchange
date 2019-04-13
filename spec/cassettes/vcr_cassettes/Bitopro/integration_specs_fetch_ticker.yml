@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitopro.com/v2/ticker/BTC_TWD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitopro.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 15 Feb 2019 09:16:55 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '119'
+      Connection:
+      - close
+      Vary:
+      - Origin
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "lastPrice": "109600",
+         "low": "108711",
+         "high": "112000",
+         "volume": "137.1032762",
+         "timestamp": 1550220734000
+        }
+    http_version: 
+  recorded_at: Fri, 15 Feb 2019 09:16:55 GMT
+recorded_with: VCR 4.0.0

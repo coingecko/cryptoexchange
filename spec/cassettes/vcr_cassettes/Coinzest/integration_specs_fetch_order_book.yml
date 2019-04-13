@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinzest.co.kr/api/public/bid_price/BTC-ETC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinzest.co.kr
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Thu, 04 Apr 2019 06:56:53 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '596'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+         "bid_price":  {
+          "bidList":   [
+              {
+            "price": "0.000150410000",
+            "quantity": "53.727339220000"
+           },
+              {
+            "price": "0.000150400000",
+            "quantity": "34.137932180000"
+           },
+              {
+            "price": "0.000150380000",
+            "quantity": "19.000000000000"
+           },
+              {
+            "price": "0.000000050000",
+            "quantity": "20000.000000000000"
+           }
+          ],
+          "totalAskQty": "3.290660330000",
+          "askList": [  {
+           "price": "0.015000000000",
+           "quantity": "3.290660330000"
+          }],
+          "totalBidQty": "20106.865271400000",
+          "trdCoin": "004",
+          "mrkCoin": "001"
+         },
+         "success": true,
+         "message": ""
+        }
+    http_version: 
+  recorded_at: Thu, 04 Apr 2019 06:56:53 GMT
+recorded_with: VCR 4.0.0

@@ -16,7 +16,7 @@ RSpec.describe 'Axnet integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'axnet', base: tusd_eth_pair.base, target: tusd_eth_pair.target
-    expect(trade_page_url).to eq "https://dex.ax.net/TUSD_ETH" #"http://52.52.32.26/TUSD_ETH"
+    expect(trade_page_url).to eq "https://trade.ax.net/trade/TUSD_ETH" #"http://52.52.32.26/TUSD_ETH"
   end
 
   it 'fetch ticker' do

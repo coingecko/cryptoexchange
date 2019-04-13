@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://exchange-open-api.coineal.com/open/api/common/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - exchange-open-api.coineal.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 09 Oct 2018 13:07:43 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - Tengine/2.2.1
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"code":"0","msg":"suc","data":[{"symbol":"btcusdt","count_coin":"usdt","amount_precision":5,"base_coin":"btc","price_precision":2},{"symbol":"ethusdt","count_coin":"usdt","amount_precision":4,"base_coin":"eth","price_precision":2},{"symbol":"eosusdt","count_coin":"usdt","amount_precision":2,"base_coin":"eos","price_precision":4},{"symbol":"eosbtc","count_coin":"btc","amount_precision":2,"base_coin":"eos","price_precision":7},{"symbol":"omgbtc","count_coin":"btc","amount_precision":2,"base_coin":"omg","price_precision":6},{"symbol":"ethbtc","count_coin":"btc","amount_precision":4,"base_coin":"eth","price_precision":5},{"symbol":"ltcbtc","count_coin":"btc","amount_precision":4,"base_coin":"ltc","price_precision":6},{"symbol":"bchbtc","count_coin":"btc","amount_precision":4,"base_coin":"bch","price_precision":6},{"symbol":"etcbtc","count_coin":"btc","amount_precision":4,"base_coin":"etc","price_precision":6},{"symbol":"trxbtc","count_coin":"btc","amount_precision":0,"base_coin":"trx","price_precision":8},{"symbol":"eoseth","count_coin":"eth","amount_precision":2,"base_coin":"eos","price_precision":6},{"symbol":"omgeth","count_coin":"eth","amount_precision":2,"base_coin":"omg","price_precision":6},{"symbol":"trxeth","count_coin":"eth","amount_precision":0,"base_coin":"trx","price_precision":8},{"symbol":"mteth","count_coin":"eth","amount_precision":0,"base_coin":"mt","price_precision":8},{"symbol":"nealusdt","count_coin":"usdt","amount_precision":0,"base_coin":"neal","price_precision":6},{"symbol":"zrxbtc","count_coin":"btc","amount_precision":0,"base_coin":"zrx","price_precision":8},{"symbol":"aebtc","count_coin":"btc","amount_precision":2,"base_coin":"ae","price_precision":7},{"symbol":"zilbtc","count_coin":"btc","amount_precision":0,"base_coin":"zil","price_precision":8},{"symbol":"manabtc","count_coin":"btc","amount_precision":0,"base_coin":"mana","price_precision":8},{"symbol":"reqbtc","count_coin":"btc","amount_precision":0,"base_coin":"req","price_precision":8},{"symbol":"poebtc","count_coin":"btc","amount_precision":0,"base_coin":"poe","price_precision":8},{"symbol":"icxbtc","count_coin":"btc","amount_precision":2,"base_coin":"icx","price_precision":7},{"symbol":"pptbtc","count_coin":"btc","amount_precision":2,"base_coin":"ppt","price_precision":7},{"symbol":"sntbtc","count_coin":"btc","amount_precision":0,"base_coin":"snt","price_precision":8},{"symbol":"engbtc","count_coin":"btc","amount_precision":0,"base_coin":"eng","price_precision":8},{"symbol":"kncbtc","count_coin":"btc","amount_precision":0,"base_coin":"knc","price_precision":8},{"symbol":"lunbtc","count_coin":"btc","amount_precision":2,"base_coin":"lun","price_precision":7},{"symbol":"zrxeth","count_coin":"eth","amount_precision":0,"base_coin":"zrx","price_precision":8},{"symbol":"aeeth","count_coin":"eth","amount_precision":2,"base_coin":"ae","price_precision":6},{"symbol":"zileth","count_coin":"eth","amount_precision":0,"base_coin":"zil","price_precision":8},{"symbol":"manaeth","count_coin":"eth","amount_precision":0,"base_coin":"mana","price_precision":8},{"symbol":"reqeth","count_coin":"eth","amount_precision":0,"base_coin":"req","price_precision":8},{"symbol":"poeeth","count_coin":"eth","amount_precision":0,"base_coin":"poe","price_precision":8},{"symbol":"icxeth","count_coin":"eth","amount_precision":2,"base_coin":"icx","price_precision":6},{"symbol":"ppteth","count_coin":"eth","amount_precision":2,"base_coin":"ppt","price_precision":6},{"symbol":"snteth","count_coin":"eth","amount_precision":0,"base_coin":"snt","price_precision":8},{"symbol":"engeth","count_coin":"eth","amount_precision":0,"base_coin":"eng","price_precision":8},{"symbol":"knceth","count_coin":"eth","amount_precision":0,"base_coin":"knc","price_precision":8},{"symbol":"luneth","count_coin":"eth","amount_precision":2,"base_coin":"lun","price_precision":6},{"symbol":"qkceth","count_coin":"eth","amount_precision":0,"base_coin":"qkc","price_precision":8},{"symbol":"dgdeth","count_coin":"eth","amount_precision":3,"base_coin":"dgd","price_precision":5},{"symbol":"thetaeth","count_coin":"eth","amount_precision":0,"base_coin":"theta","price_precision":8},{"symbol":"iotxeth","count_coin":"eth","amount_precision":0,"base_coin":"iotx","price_precision":8},{"symbol":"stormeth","count_coin":"eth","amount_precision":0,"base_coin":"storm","price_precision":8},{"symbol":"loometh","count_coin":"eth","amount_precision":0,"base_coin":"loom","price_precision":8},{"symbol":"aioneth","count_coin":"eth","amount_precision":2,"base_coin":"aion","price_precision":6},{"symbol":"iosteth","count_coin":"eth","amount_precision":2,"base_coin":"iost","price_precision":8},{"symbol":"gnteth","count_coin":"eth","amount_precision":0,"base_coin":"gnt","price_precision":8},{"symbol":"cmteth","count_coin":"eth","amount_precision":0,"base_coin":"cmt","price_precision":8},{"symbol":"esteth","count_coin":"eth","amount_precision":0,"base_coin":"est","price_precision":8},{"symbol":"oneeth","count_coin":"eth","amount_precision":0,"base_coin":"one","price_precision":8},{"symbol":"ftmeth","count_coin":"eth","amount_precision":0,"base_coin":"ftm","price_precision":8},{"symbol":"mallusdt","count_coin":"usdt","amount_precision":0,"base_coin":"mall","price_precision":6},{"symbol":"abaeth","count_coin":"eth","amount_precision":0,"base_coin":"aba","price_precision":8},{"symbol":"useeth","count_coin":"eth","amount_precision":0,"base_coin":"use","price_precision":8},{"symbol":"stcusdt","count_coin":"usdt","amount_precision":0,"base_coin":"stc","price_precision":6},{"symbol":"dpsteth","count_coin":"eth","amount_precision":0,"base_coin":"dpst","price_precision":8},{"symbol":"tclbusdt","count_coin":"usdt","amount_precision":2,"base_coin":"tclb","price_precision":6},{"symbol":"ucneth","count_coin":"eth","amount_precision":2,"base_coin":"ucn","price_precision":8},{"symbol":"ehceth","count_coin":"eth","amount_precision":0,"base_coin":"ehc","price_precision":8},{"symbol":"acgeth","count_coin":"eth","amount_precision":0,"base_coin":"acg","price_precision":8}]}'
+    http_version: 
+  recorded_at: Tue, 09 Oct 2018 13:07:43 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://datacenter.iqfinex.com/v1/assets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - datacenter.iqfinex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Wed, 12 Dec 2018 02:07:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4519'
+      Connection:
+      - close
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Sid, X-XSS-Protection
+      Access-Control-Expose-Headers:
+      - Authorization, Sid
+      Access-Control-Max-Age:
+      - '360000'
+      Etag:
+      - W/"11a7-JBg+qjQ4pa85CQu9dzWYkNrfEyk"
+      Access-Controll-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"data":{"count":58,"rows":[{"pair":"AEBTC","right":"BTC","left":"AE","accuracy":"7","min_volume":10},{"pair":"AEETH","right":"ETH","left":"AE","accuracy":"6","min_volume":10},{"pair":"ARNBTC","right":"BTC","left":"ARN","accuracy":"8","min_volume":10},{"pair":"ARNETH","right":"ETH","left":"ARN","accuracy":"8","min_volume":10},{"pair":"BATBTC","right":"BTC","left":"BAT","accuracy":"8","min_volume":50},{"pair":"BATETH","right":"ETH","left":"BAT","accuracy":"8","min_volume":50},{"pair":"BCHBTC","right":"BTC","left":"BCH","accuracy":"6","min_volume":0.01},{"pair":"BCHSVBTC","right":"BTC","left":"BCHSV","accuracy":"8","min_volume":0.01},{"pair":"BCHUSDT","right":"USDT","left":"BCH","accuracy":"2","min_volume":0.01},{"pair":"BLYETH","right":"ETH","left":"BLY","accuracy":"8","min_volume":100},{"pair":"BTCUSDT","right":"USDT","left":"BTC","accuracy":"2","min_volume":0.001},{"pair":"BTGBTC","right":"BTC","left":"BTG","accuracy":"8","min_volume":0.5},{"pair":"CLTETH","right":"ETH","left":"CLT","accuracy":"8","min_volume":30},{"pair":"DENTETH","right":"ETH","left":"DENT","accuracy":"8","min_volume":3000},{"pair":"DSHBTC","right":"BTC","left":"DSH","accuracy":"6","min_volume":0.02},{"pair":"DSHUSDT","right":"USDT","left":"DSH","accuracy":"4","min_volume":0.02},{"pair":"EOSBTC","right":"BTC","left":"EOS","accuracy":"7","min_volume":1},{"pair":"EOSETH","right":"ETH","left":"EOS","accuracy":"6","min_volume":1},{"pair":"EOSUSDT","right":"USDT","left":"EOS","accuracy":"4","min_volume":1},{"pair":"ETCBTC","right":"BTC","left":"ETC","accuracy":"7","min_volume":1},{"pair":"ETCUSDT","right":"USDT","left":"ETC","accuracy":"4","min_volume":1},{"pair":"ETHBTC","right":"BTC","left":"ETH","accuracy":"6","min_volume":0.01},{"pair":"ETHUSDT","right":"USDT","left":"ETH","accuracy":"2","min_volume":0.01},{"pair":"GNTBTC","right":"BTC","left":"GNT","accuracy":"8","min_volume":100},{"pair":"GNTETH","right":"ETH","left":"GNT","accuracy":"8","min_volume":100},{"pair":"GTOBTC","right":"BTC","left":"GTO","accuracy":"8","min_volume":100},{"pair":"GTOETH","right":"ETH","left":"GTO","accuracy":"8","min_volume":100},{"pair":"HACETH","right":"ETH","left":"HAC","accuracy":"8","min_volume":1000},{"pair":"IOSTBTC","right":"BTC","left":"IOST","accuracy":"8","min_volume":1000},{"pair":"IOSTETH","right":"ETH","left":"IOST","accuracy":"8","min_volume":1000},{"pair":"IQFBTC","right":"BTC","left":"IQF","accuracy":"8","min_volume":15},{"pair":"KITBTC","right":"BTC","left":"KIT","accuracy":"8","min_volume":200},{"pair":"KITETH","right":"ETH","left":"KIT","accuracy":"8","min_volume":200},{"pair":"LTCBTC","right":"BTC","left":"LTC","accuracy":"6","min_volume":0.1},{"pair":"LTCUSDT","right":"USDT","left":"LTC","accuracy":"2","min_volume":0.1},{"pair":"MDABTC","right":"BTC","left":"MDA","accuracy":"8","min_volume":10},{"pair":"MDAETH","right":"ETH","left":"MDA","accuracy":"8","min_volume":10},{"pair":"MODETH","right":"ETH","left":"MOD","accuracy":"6","min_volume":5},{"pair":"NPXSETH","right":"ETH","left":"NPXS","accuracy":"8","min_volume":5000},{"pair":"OMGBTC","right":"BTC","left":"OMG","accuracy":"7","min_volume":1},{"pair":"OMGETH","right":"ETH","left":"OMG","accuracy":"6","min_volume":1},{"pair":"PTTETH","right":"ETH","left":"PTT","accuracy":"8","min_volume":10},{"pair":"QKCBTC","right":"BTC","left":"QKC","accuracy":"8","min_volume":200},{"pair":"QKCETH","right":"ETH","left":"QKC","accuracy":"8","min_volume":200},{"pair":"REDCETH","right":"ETH","left":"REDC","accuracy":"8","min_volume":10},{"pair":"REPBTC","right":"BTC","left":"REP","accuracy":"8","min_volume":0.2},{"pair":"REPETH","right":"ETH","left":"REP","accuracy":"8","min_volume":0.2},{"pair":"SNTBTC","right":"BTC","left":"SNT","accuracy":"8","min_volume":100},{"pair":"UBEXETH","right":"ETH","left":"UBEX","accuracy":"8","min_volume":1000},{"pair":"XLMBTC","right":"BTC","left":"XLM","accuracy":"8","min_volume":10},{"pair":"XLMETH","right":"ETH","left":"XLM","accuracy":"8","min_volume":10},{"pair":"XLMUSDT","right":"USDT","left":"XLM","accuracy":"5","min_volume":10},{"pair":"ZECBTC","right":"BTC","left":"ZEC","accuracy":"6","min_volume":0.1},{"pair":"ZECETH","right":"ETH","left":"ZEC","accuracy":"5","min_volume":0.1},{"pair":"ZILBTC","right":"BTC","left":"ZIL","accuracy":"8","min_volume":300},{"pair":"ZILETH","right":"ETH","left":"ZIL","accuracy":"8","min_volume":300},{"pair":"ZRXBTC","right":"BTC","left":"ZRX","accuracy":"8","min_volume":15},{"pair":"ZRXETH","right":"ETH","left":"ZRX","accuracy":"8","min_volume":15}]}}'
+    http_version: 
+  recorded_at: Wed, 12 Dec 2018 02:07:43 GMT
+recorded_with: VCR 4.0.0

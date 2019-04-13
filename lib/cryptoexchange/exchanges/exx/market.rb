@@ -5,7 +5,8 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://api.exx.com/data/v1'
 
       def self.trade_page_url(args={})
-        "https://www.exx.com/tradePros/#{args[:base]}_#{args[:target]}"
+        pair = "#{args[:base]}_#{args[:target]}".downcase
+        "https://www.exx.com/tradeCoding/#{pair}"
       end
     end
   end

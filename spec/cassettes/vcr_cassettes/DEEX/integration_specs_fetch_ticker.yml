@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://stat-api.deex.exchange:2087/get_market_data/DEEX/BTC/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - stat-api.deex.exchange:2087
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 27 Sep 2018 16:04:08 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '210'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dfb7e2a397abd4f42d0a11d475eee92b81538064248; expires=Fri, 27-Sep-19
+        16:04:08 GMT; path=/; domain=.deex.exchange; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 460f344f6ecc34fa-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"latest": "833333.095984", "quote_volume": "0.000000", "base_volume":
+        "0.000000", "base": "DEEX", "quote": "BTC", "time": "2018-09-27T16:04:08",
+        "highest_bid": "11111.115855", "lowest_ask": "200000000.000000"}'
+    http_version: 
+  recorded_at: Thu, 27 Sep 2018 16:04:09 GMT
+recorded_with: VCR 4.0.0

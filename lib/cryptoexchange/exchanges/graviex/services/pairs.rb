@@ -12,7 +12,7 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           output.map do |market|
             Cryptoexchange::Models::MarketPair.new({
-              base: market['name'].split("/")[0],
+              base: market['name'].split("/")[0].gsub("$", ""),
               target: market['name'].split("/")[1],
               market: Graviex::Market::NAME
             })
@@ -22,4 +22,3 @@ module Cryptoexchange::Exchanges
     end
   end
 end
-

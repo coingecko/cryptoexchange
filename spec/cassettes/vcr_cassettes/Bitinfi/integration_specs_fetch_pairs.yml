@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://hq.bitinfi.com/v1/product.ashx?lang=en&packtype=1&version=9.9.9
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - hq.bitinfi.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '9116'
+      Connection:
+      - close
+      Server:
+      - Tengine
+      Date:
+      - Thu, 20 Sep 2018 12:36:06 GMT
+      Cache-Control:
+      - no-cache
+      - no-cache
+      - no-store
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Thu, 20 Sep 2018 12:36:05 GMT
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 4a1f198d8af503c504dcbeb574c3a2a2.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - zDGcNkr7VTF8AhFerRQkJsinWwpE4OgHE_M_0VQdNSIVO4nSqpte9Q==
+    body:
+      encoding: UTF-8
+      string: '{"status":"1","message":"Success","time":"1537446967421","data":[{"symbol":"NEXO_ETH","status":true,"statusText":"TRADING","name":"NEXO/ETH","assetCode":"NEXO","curMarket":"ETH","tickSize":"0.00000001","lots":"1.0000000000","minOrderAmount":"0.0100000000","decimalplace":"8","open":"0.00023118","high":"0.00025669","low":"0.00022076","close":"0.00023671","volume":"1536338","prevClose":"0.00023295","upDown":"+0.00000376","upDownRate":"+1.61%","tradedMoney":"368","index":0,"tickerid":"217619221","legalAmount":"$0.050211"},{"symbol":"SEC_ETH","status":true,"statusText":"TRADING","name":"SEC/ETH","assetCode":"SEC","curMarket":"ETH","tickSize":"0.00000001","lots":"1.0000000000","minOrderAmount":"0.0100000000","decimalplace":"8","open":"0.00011438","high":"0.00011596","low":"0.00011367","close":"0.00011369","volume":"2123914","prevClose":"0.00011437","upDown":"-0.00000068","upDownRate":"-0.59%","tradedMoney":"242","index":0,"tickerid":"217619220","legalAmount":"$0.024116"},{"symbol":"ECOM_ETH","status":true,"statusText":"TRADING","name":"ECOM/ETH","assetCode":"ECOM","curMarket":"ETH","tickSize":"0.00000001","lots":"1.0000000000","minOrderAmount":"0.0100000000","decimalplace":"8","open":"0.00000173","high":"0.00000174","low":"0.00000156","close":"0.00000171","volume":"11230946","prevClose":"0.00000171","upDown":"0.00000000","upDownRate":"0.00%","tradedMoney":"19","index":0,"tickerid":"217619219","legalAmount":"$0.000363"},{"symbol":"GNT_BTC","status":true,"statusText":"TRADING","name":"GNT/BTC","assetCode":"GNT","curMarket":"BTC","tickSize":"0.00000001","lots":"1.0000000000","minOrderAmount":"0.0010000000","decimalplace":"8","open":"0.00002125","high":"0.00002191","low":"0.00002111","close":"0.00002165","volume":"3874016","prevClose":"0.00002126","upDown":"+0.00000039","upDownRate":"+1.83%","tradedMoney":"83","index":0,"tickerid":"217619218","legalAmount":"$0.139083"},{"symbol":"GNT_ETH","status":true,"statusText":"TRADING","name":"GNT/ETH","assetCode":"GNT","curMarket":"ETH","tickSize":"0.00000001","lots":"1.0000000000","minOrderAmount":"0.0100000000","decimalplace":"8","open":"0.00065355","high":"0.00066756","low":"0.00064130","close":"0.00065301","volume":"2467258","prevClose":"0.00065455","upDown":"-0.00000154","upDownRate":"-0.24%","tradedMoney":"1624","index":0,"tickerid":"217619216","legalAmount":"$0.138516"},{"symbol":"ZIL_ETH","status":true,"statusText":"TRADING","name":"ZIL/ETH","assetCode":"ZIL","curMarket":"ETH","tickSize":"0.00000001","lots":"1.0000000000","minOrderAmount":"0.0100000000","decimalplace":"8","open":"0.00015394","high":"0.00015841","low":"0.00015346","close":"0.00015753","volume":"2497428","prevClose":"0.00015396","upDown":"+0.00000357","upDownRate":"+2.32%","tradedMoney":"391","index":0,"tickerid":"217619217","legalAmount":"$0.033415"},{"symbol":"ZIL_BTC","status":true,"statusText":"TRADING","name":"ZIL/BTC","assetCode":"ZIL","curMarket":"BTC","tickSize":"0.00000001","lots":"1.0000000000","minOrderAmount":"0.0010000000","decimalplace":"8","open":"0.00000503","high":"0.00000526","low":"0.00000500","close":"0.00000520","volume":"2401479","prevClose":"0.00000503","upDown":"+0.00000017","upDownRate":"+3.38%","tradedMoney":"12","index":0,"tickerid":"217619215","legalAmount":"$0.033406"},{"symbol":"ETH_USDT","status":true,"statusText":"TRADING","name":"ETH/USDT","assetCode":"ETH","curMarket":"USDT","tickSize":"0.01","lots":"0.0000100000","minOrderAmount":"10.0000000000","decimalplace":"2","open":"205.30","high":"214.84","low":"198.48","close":"212.12","volume":"6854","prevClose":"205.31","upDown":"+6.81","upDownRate":"+3.32%","tradedMoney":"1430809","index":0,"tickerid":"217619208","legalAmount":"$212.12"},{"symbol":"SNT_BTC","status":true,"statusText":"TRADING","name":"SNT/BTC","assetCode":"SNT","curMarket":"BTC","tickSize":"0.00000001","lots":"1.0000000000","minOrderAmount":"0.0010000000","decimalplace":"8","open":"0.00000518","high":"0.00000538","low":"0.00000512","close":"0.00000537","volume":"1342678","prevClose":"0.00000516","upDown":"+0.00000021","upDownRate":"+4.07%","tradedMoney":"7","index":0,"tickerid":"217619200","legalAmount":"$0.034498"},{"symbol":"IOST_ETH","status":true,"statusText":"TRADING","name":"IOST/ETH","assetCode":"IOST","curMarket":"ETH","tickSize":"0.00000001","lots":"1.0000000000","minOrderAmount":"0.0100000000","decimalplace":"8","open":"0.00005661","high":"0.00005769","low":"0.00005569","close":"0.00005694","volume":"3361939","prevClose":"0.00005674","upDown":"+0.00000020","upDownRate":"+0.35%","tradedMoney":"191","index":0,"tickerid":"217619201","legalAmount":"$0.012078"},{"symbol":"IOST_BTC","status":true,"statusText":"TRADING","name":"IOST/BTC","assetCode":"IOST","curMarket":"BTC","tickSize":"0.00000001","lots":"1.0000000000","minOrderAmount":"0.0010000000","decimalplace":"8","open":"0.00000185","high":"0.00000196","low":"0.00000180","close":"0.00000188","volume":"1900459","prevClose":"0.00000183","upDown":"+0.00000005","upDownRate":"+2.73%","tradedMoney":"4","index":0,"tickerid":"217619202","legalAmount":"$0.012077"},{"symbol":"OMG_BTC","status":true,"statusText":"TRADING","name":"OMG/BTC","assetCode":"OMG","curMarket":"BTC","tickSize":"0.000001","lots":"0.0100000000","minOrderAmount":"0.0010000000","decimalplace":"6","open":"0.000494","high":"0.000507","low":"0.000485","close":"0.000501","volume":"264083.83","prevClose":"0.000494","upDown":"+0.000007","upDownRate":"+1.42%","tradedMoney":"130.59","index":0,"tickerid":"217619209","legalAmount":"$3.218514"},{"symbol":"ZRX_BTC","status":true,"statusText":"TRADING","name":"ZRX/BTC","assetCode":"ZRX","curMarket":"BTC","tickSize":"0.00000001","lots":"1.0000000000","minOrderAmount":"0.0010000000","decimalplace":"8","open":"0.00008249","high":"0.00008432","low":"0.00008087","close":"0.00008401","volume":"1118351","prevClose":"0.00008250","upDown":"+0.00000151","upDownRate":"+1.83%","tradedMoney":"93","index":0,"tickerid":"217619207","legalAmount":"$0.539695"},{"symbol":"ETH_BTC","status":true,"statusText":"TRADING","name":"ETH/BTC","assetCode":"ETH","curMarket":"BTC","tickSize":"0.000001","lots":"0.0010000000","minOrderAmount":"0.0010000000","decimalplace":"6","open":"0.032645","high":"0.033302","low":"0.032248","close":"0.033058","volume":"5507.048","prevClose":"0.032638","upDown":"+0.000420","upDownRate":"+1.29%","tradedMoney":"180.394","index":0,"tickerid":"217619196","legalAmount":"$212.370542"},{"symbol":"ZRX_ETH","status":true,"statusText":"TRADING","name":"ZRX/ETH","assetCode":"ZRX","curMarket":"ETH","tickSize":"0.00000001","lots":"1.0000000000","minOrderAmount":"0.0100000000","decimalplace":"8","open":"0.00252545","high":"0.00256629","low":"0.00247990","close":"0.00253975","volume":"2557476","prevClose":"0.00252370","upDown":"+0.00001605","upDownRate":"+0.64%","tradedMoney":"6461","index":0,"tickerid":"217619214","legalAmount":"$0.538732"},{"symbol":"KNC_ETH","status":true,"statusText":"TRADING","name":"KNC/ETH","assetCode":"KNC","curMarket":"ETH","tickSize":"0.00000001","lots":"1.0000000000","minOrderAmount":"0.0100000000","decimalplace":"8","open":"0.00177573","high":"0.00180915","low":"0.00176276","close":"0.00178085","volume":"1250774","prevClose":"0.00177065","upDown":"+0.00001020","upDownRate":"+0.58%","tradedMoney":"2231","index":0,"tickerid":"217619213","legalAmount":"$0.377754"},{"symbol":"OMG_ETH","status":true,"statusText":"TRADING","name":"OMG/ETH","assetCode":"OMG","curMarket":"ETH","tickSize":"0.000001","lots":"0.0100000000","minOrderAmount":"0.0100000000","decimalplace":"6","open":"0.015081","high":"0.015300","low":"0.014852","close":"0.015190","volume":"239455.04","prevClose":"0.015089","upDown":"+0.000101","upDownRate":"+0.67%","tradedMoney":"3614.29","index":0,"tickerid":"217619205","legalAmount":"$3.222103"},{"symbol":"BTC_USDT","status":true,"statusText":"TRADING","name":"BTC/USDT","assetCode":"BTC","curMarket":"USDT","tickSize":"0.01","lots":"0.0000010000","minOrderAmount":"10.0000000000","decimalplace":"2","open":"6287.64","high":"6522.68","low":"6135.36","close":"6424.18","volume":"606","prevClose":"6290.13","upDown":"+134.05","upDownRate":"+2.13%","tradedMoney":"3864458","index":0,"tickerid":"217619204","legalAmount":"$6424.18"},{"symbol":"SNT_ETH","status":true,"statusText":"TRADING","name":"SNT/ETH","assetCode":"SNT","curMarket":"ETH","tickSize":"0.00000001","lots":"1.0000000000","minOrderAmount":"0.0100000000","decimalplace":"8","open":"0.00015854","high":"0.00016371","low":"0.00015591","close":"0.00016169","volume":"2517216","prevClose":"0.00015854","upDown":"+0.00000315","upDownRate":"+1.99%","tradedMoney":"403","index":0,"tickerid":"217619212","legalAmount":"$0.034298"},{"symbol":"KNC_BTC","status":true,"statusText":"TRADING","name":"KNC/BTC","assetCode":"KNC","curMarket":"BTC","tickSize":"0.00000001","lots":"1.0000000000","minOrderAmount":"0.0010000000","decimalplace":"8","open":"0.00005815","high":"0.00005916","low":"0.00005746","close":"0.00005873","volume":"1226714","prevClose":"0.00005810","upDown":"+0.00000063","upDownRate":"+1.08%","tradedMoney":"72","index":0,"tickerid":"217619211","legalAmount":"$0.377292"}]}'
+    http_version: 
+  recorded_at: Thu, 20 Sep 2018 12:36:07 GMT
+recorded_with: VCR 4.0.0

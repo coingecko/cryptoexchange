@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.tokok.com/api/v1/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.tokok.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 07 Oct 2018 16:58:09 GMT
+      Content-Type:
+      - text/html;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dce26fe18856b557f3c34bbbe6ca5ce1a1538931488; expires=Mon, 07-Oct-19
+        16:58:08 GMT; path=/; domain=.tokok.com; HttpOnly
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4661e929de083494-LHR
+    body:
+      encoding: UTF-8
+      string: '{"timestamp":1538931489147,"ticker":[{"last":"0.033966","buy":"0.033956","sell":"0.034029","high":"0.034255","low":"0.033916","vol":"1750.55","symbol":"ETH_BTC"},{"last":"0.00066622","buy":"0.000578","sell":"0.00074999","high":"0.00074985","low":"0.00057803","vol":"176731","symbol":"AMB_ETH"},{"last":"0.00007882","buy":"0.00007882","sell":"0.00008969","high":"0.00009599","low":"0.0000786","vol":"1908754.5874","symbol":"TOK_ETH"},{"last":"4.238","buy":"4.16","sell":"4.47","high":"4.4694","low":"4.1601","vol":"16571","symbol":"FIL_USDT"},{"last":"0.018731","buy":"0.017229","sell":"0.019388","high":"0.019388","low":"0.017232","vol":"15532.4169","symbol":"FIL_ETH"},{"last":"223.62","buy":"223.48","sell":"223.62","high":"226.25","low":"221.89","vol":"5826.2497","symbol":"ETH_USDT"},{"last":"0.00000312","buy":"0.00000301","sell":"0.0000033","high":"0.00000329","low":"0.00000302","vol":"1993837","symbol":"TOK_BTC"},{"last":"6581.38","buy":"6531.06","sell":"6609.83","high":"6609.83","low":"6531.06","vol":"4980.85698","symbol":"BTC_USDT"},{"last":"0.00050595","buy":"0.00043","sell":"0.000568","high":"0.00056776","low":"0.00043015","vol":"412930","symbol":"LRC_ETH"},{"last":"0.018749","buy":"0.018","sell":"0.020155","high":"0.02129","low":"0.018093","vol":"1131022.3197","symbol":"TOK_USDT"},{"last":"0.00424015","buy":"0.00424015","sell":"0.00424016","high":"0.00528606","low":"0.00424004","vol":"79504.5","symbol":"AE_ETH"},{"last":"0.00080712","buy":"0.00078","sell":"0.0008085","high":"0.00080847","low":"0.00078001","vol":"171023","symbol":"BTM_ETH"},{"last":"0.00029267","buy":"0.000291","sell":"0.000319","high":"0.00031897","low":"0.00029101","vol":"1064488","symbol":"NXT_ETH"},{"last":"0.00052856","buy":"0.00052856","sell":"0.00052857","high":"0.00057626","low":"0.00052848","vol":"1363167.6399","symbol":"ARDR_ETH"},{"last":"0.02200502","buy":"0.02200502","sell":"0.02200503","high":"0.02609903","low":"0.02200491","vol":"20003","symbol":"EOS_ETH"},{"last":"58.27355415","buy":"58.24","sell":"59.45751773","high":"59.45656127","low":"58.24236423","vol":"21.937","symbol":"LTC_USDT"},{"last":"0.00018517","buy":"0.00018001","sell":"0.00019864","high":"0.00019862","low":"0.00018002","vol":"1744863","symbol":"IGNIS_ETH"},{"last":"0.00815075","buy":"0.00807884","sell":"0.008518","high":"0.00851765","low":"0.0080789","vol":"16626","symbol":"MOAC_ETH"},{"last":"0.00865657","buy":"0.0084","sell":"0.00871148","high":"0.00871095","low":"0.00840033","vol":"17285","symbol":"ONT_ETH"},{"last":"0.05148348","buy":"0.046","sell":"0.05962993","high":"0.05961922","low":"0.04600169","vol":"6648.6118","symbol":"DFN_ETH"},{"last":"0.00047845","buy":"0.00047045","sell":"0.00048347","high":"0.00048345","low":"0.00047046","vol":"427961","symbol":"LOOM_ETH"},{"last":"0.00016307","buy":"0.00016297","sell":"0.00016359","high":"0.00016358","low":"0.00016298","vol":"877458","symbol":"ZIL_ETH"},{"last":"0.00270001","buy":"0.00270001","sell":"0.00270002","high":"0.00280001","low":"0.0026555","vol":"105634.02","symbol":"ZRX_ETH"},{"last":"0.00006832","buy":"0.000068","sell":"0.000085","high":"0.00008497","low":"0.00006801","vol":"1761538","symbol":"TYT_ETH"},{"last":"1.00185387","buy":"0.995","sell":"1.003687","high":"1.00367227","low":"0.99500108","vol":"9070","symbol":"PAX_USDT"},{"last":"0.99709315","buy":"0.995","sell":"1.00354","high":"1.00352552","low":"0.99500106","vol":"9150","symbol":"GUSD_USDT"},{"last":"554.595","buy":"550","sell":"565","high":"564.9882","low":"550.0155","vol":"21.671","symbol":"BCH_USDT"},{"last":"11.011005","buy":"11","sell":"11.087158","high":"11.087089","low":"11.000011","vol":"313.24","symbol":"ETC_USDT"},{"last":"5.45275766","buy":"5.45275766","sell":"5.45275767","high":"5.7472999","low":"5.4527576","vol":"20395","symbol":"EOS_USDT"},{"last":"0.00441282","buy":"0.0042","sell":"0.00469","high":"0.00468916","low":"0.00420007","vol":"175965","symbol":"STX_ETH"},{"last":"1.11547669","buy":"1.111","sell":"1.123","high":"1.12294654","low":"1.11100149","vol":"1733.9","symbol":"DOT_ETH"},{"last":"0.003371","buy":"0.00281","sell":"0.00494","high":"0.00499429","low":"0.00281","vol":"170318","symbol":"PROPS_ETH"},{"last":"0.0004078","buy":"0.00038","sell":"0.0004182","high":"0.00041799","low":"0.00038001","vol":"79716","symbol":"THETA_ETH"},{"last":"0.00185542","buy":"0.00168281","sell":"0.00192","high":"0.00191981","low":"0.00168284","vol":"14888","symbol":"CTXC_ETH"}]}'
+    http_version: 
+  recorded_at: Sun, 07 Oct 2018 16:58:09 GMT
+recorded_with: VCR 4.0.0

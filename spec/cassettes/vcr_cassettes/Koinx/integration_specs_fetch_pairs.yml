@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://koinx.id/api/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - close
+      Host:
+      - koinx.id
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 26 Feb 2019 04:35:35 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      - Accept-Encoding
+      - Origin, Referer
+      Access-Control-Allow-Origin:
+      - https://koinx.id
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization
+      Via:
+      - 1.1 google
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","ETH\/BTC":{"last_price":"0.035978","lowest_ask_price":"0.035975","highest_bid_price":"0.035967","past_24hrs_price_change":"-1.76%","past_24hrs_base_volume":"6958.3560","past_24hrs_quote_turnover":"253.04675721","past_24hrs_high_price":"0.685268","past_24hrs_low_price":"0.018397"},"UGAS\/ETH":{"last_price":"0.000595","lowest_ask_price":"0.000596","highest_bid_price":"0.000523","past_24hrs_price_change":"+4.02%","past_24hrs_base_volume":"37862.73","past_24hrs_quote_turnover":"21.26840708","past_24hrs_high_price":"0.000595","past_24hrs_low_price":"0.000524"},"BTC\/USDT":{"last_price":"3833.86","lowest_ask_price":"3834.48","highest_bid_price":"3833.54","past_24hrs_price_change":"+0.73%","past_24hrs_base_volume":"713.456068","past_24hrs_quote_turnover":"2725822.89081875","past_24hrs_high_price":"50970.12","past_24hrs_low_price":"1913.34"},"ETH\/USDT":{"last_price":"137.98","lowest_ask_price":"137.99","highest_bid_price":"137.92","past_24hrs_price_change":"-1.00%","past_24hrs_base_volume":"16888.206940","past_24hrs_quote_turnover":"2333777.11839935","past_24hrs_high_price":"1671.57","past_24hrs_low_price":"134.97"},"ETH\/IDR":{"last_price":"0","lowest_ask_price":null,"highest_bid_price":null,"past_24hrs_price_change":"0.00%","past_24hrs_base_volume":"0.000000","past_24hrs_quote_turnover":"0.000","past_24hrs_high_price":"0","past_24hrs_low_price":"0"},"BTC\/IDR":{"last_price":"0","lowest_ask_price":null,"highest_bid_price":null,"past_24hrs_price_change":"0.00%","past_24hrs_base_volume":"0.000000","past_24hrs_quote_turnover":"0.000","past_24hrs_high_price":"0","past_24hrs_low_price":"0"},"UGAS\/BTC":{"last_price":"0.00002025","lowest_ask_price":"0.00002175","highest_bid_price":"0.00001885","past_24hrs_price_change":"+1.96%","past_24hrs_base_volume":"53221.78","past_24hrs_quote_turnover":"1.07544277","past_24hrs_high_price":"0.00002174","past_24hrs_low_price":"0.00001886"},"IOTX\/ETH":{"last_price":"0.0000463040","lowest_ask_price":"0.0000540026","highest_bid_price":"0.0000409974","past_24hrs_price_change":"+8.74%","past_24hrs_base_volume":"178350.78","past_24hrs_quote_turnover":"8.86634039","past_24hrs_high_price":"0.0000540023","past_24hrs_low_price":"0.0000413182"},"IOTX\/BTC":{"last_price":"0.0000018165","lowest_ask_price":"0.0000020018","highest_bid_price":"0.0000017231","past_24hrs_price_change":"-0.65%","past_24hrs_base_volume":"76503.18","past_24hrs_quote_turnover":"0.14236875","past_24hrs_high_price":"0.0000020017","past_24hrs_low_price":"0.0000017232"},"ONT\/BTC":{"last_price":"0.00025582","lowest_ask_price":"0.00025554","highest_bid_price":"0.00025481","past_24hrs_price_change":"-1.89%","past_24hrs_base_volume":"17.95","past_24hrs_quote_turnover":"0.01158730","past_24hrs_high_price":"0.00720400","past_24hrs_low_price":"0.00025007"}}
+
+'
+    http_version: 
+  recorded_at: Tue, 26 Feb 2019 04:35:35 GMT
+recorded_with: VCR 4.0.0

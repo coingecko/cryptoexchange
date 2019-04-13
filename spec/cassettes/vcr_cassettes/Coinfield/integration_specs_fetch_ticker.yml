@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://platform.coinfield.com/api/v2//tickers
+    uri: https://api.coinfield.com/v1/tickers
     body:
       encoding: UTF-8
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Connection:
       - close
       Host:
-      - platform.coinfield.com
+      - api.coinfield.com
       User-Agent:
       - http.rb/3.0.0
   response:
@@ -19,73 +19,53 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 29 May 2018 16:52:37 GMT
+      - Wed, 16 Jan 2019 14:56:39 GMT
       Content-Type:
-      - application/json
+      - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d009ca7bfcf7b500e7093bca2ad9afd241527612757; expires=Wed, 29-May-19
-        16:52:37 GMT; path=/; domain=.coinfield.com; HttpOnly; Secure
-      Vary:
-      - Accept-Encoding
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, PUT, PATCH, DELETE
-      Access-Control-Allow-Headers:
-      - Origin, X-Requested-With, Content-Type, Accept, Authorization
-      Version:
-      - HTTP/1.1
-      Host:
-      - platform.coinfield.com
-      X-Real-Ip:
-      - 73.97.148.141
-      X-Forwarded-For:
-      - 73.97.148.141
-      X-Forwarded-Host:
-      - platform.coinfield.com
-      X-Forwarded-Port:
-      - '443'
-      X-Forwarded-Proto:
-      - https
-      X-Original-Uri:
-      - "/api/v2//tickers"
-      X-Scheme:
-      - https
-      X-Original-Forwarded-For:
-      - 73.97.148.141
-      Accept-Encoding:
-      - gzip
-      Cf-Ipcountry:
-      - US
-      Cf-Visitor:
-      - '{"scheme":"https"}'
-      User-Agent:
-      - http.rb/3.0.0
-      Cf-Connecting-Ip:
-      - 73.97.148.141
-      Etag:
-      - W/"186bd43cc5eb25a50628936548964f02"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 462a2155-29ec-480b-9c4c-aeeeca2f6ec8
-      X-Runtime:
-      - '0.036594'
+      - __cfduid=d518f106e528480c722f94f708bf3cacb1547650598; expires=Thu, 16-Jan-20
+        14:56:38 GMT; path=/; domain=.coinfield.com; HttpOnly; Secure
+      - route=9ac21c7ed2fa285054b7d9867fe54452; Domain=api.coinfield.com; Path=/;
+        HttpOnly
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
       Strict-Transport-Security:
       - max-age=15724800; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - b6b59805-9f1e-4c7a-a232-494ddb5893a6
+      X-Runtime:
+      - '0.009212'
+      X-Proxy-Runtime:
+      - 20ms
+      X-Fuse-Cached:
+      - 'false'
+      Etag:
+      - W/"22d8-Ke2KjAfyu+U5HFctjNFHLtAWmDU"
+      Vary:
+      - Accept-Encoding
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 422a78f63b662a5b-SEA
+      - 49a16e122a12a2b4-HKG
     body:
-      encoding: ASCII-8BIT
-      string: '{"btccad":{"at":1527612757,"ticker":{"buy":"9345.0","sell":"10488.0","low":"9345.0","high":"10600.0","last":"9345.0","open":9598.7,"vol":"33.7881"}},"xrpcad":{"at":1527612757,"ticker":{"buy":"0.8","sell":"0.88","low":"0.75","high":"0.88","last":"0.88","open":0.8,"vol":"115336.4307"}},"bchcad":{"at":1527612757,"ticker":{"buy":"1252.89","sell":"1449.9","low":"1159.56","high":"1449.9","last":"1314.05","open":1241.61,"vol":"556.5165"}},"ltccad":{"at":1527612757,"ticker":{"buy":"143.09","sell":"158.41","low":"144.32","high":"162.73","last":"158.52","open":159.95,"vol":"1816.5217"}},"ethcad":{"at":1527612757,"ticker":{"buy":"750.0","sell":"848.0","low":"700.0","high":"849.91","last":"700.0","open":706.72,"vol":"13.8293"}},"dashcad":{"at":1527612757,"ticker":{"buy":"429.0","sell":"488.0","low":"0.0","high":"0.0","last":"429.0","open":429.0,"vol":"0.0"}},"ethbtc":{"at":1527612757,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","open":"0.0","vol":"0.0"}},"xrpbtc":{"at":1527612757,"ticker":{"buy":"0.0","sell":"0.05","low":"0.0","high":"0.0","last":"0.0","open":"0.0","vol":"0.0"}},"ltcbtc":{"at":1527612757,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","open":"0.0","vol":"0.0"}},"dashbtc":{"at":1527612757,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","open":"0.0","vol":"0.0"}},"bchbtc":{"at":1527612757,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.0","open":"0.0","vol":"0.0"}},"btcusd":{"at":1527612757,"ticker":{"buy":"7300.0","sell":"7850.0","low":"7300.0","high":"7677.39","last":"7300.0","open":7471.27,"vol":"2.4968"}},"xrpusd":{"at":1527612757,"ticker":{"buy":"0.56","sell":"0.78","low":"0.57","high":"0.64","last":"0.58","open":0.59,"vol":"52991.0421"}}}'
+      encoding: UTF-8
+      string: '{"markets":[{"market":"btcxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":10968.0617,"ask":11062.8924,"low":9874.3458,"high":11145.1548,"last":11012.6121,"open":11049.4083,"vol":188.48361263},{"market":"ethxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":372.4623,"ask":373.981,"low":358.416,"high":392.923,"last":372.4515,"open":389.1427,"vol":1635.5797},{"market":"xlmxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":0.3242,"ask":0.3259,"low":0.3212,"high":0.3552,"last":0.3246,"open":0.3257,"vol":1589870.875},{"market":"ltcxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":95.5498,"ask":95.992,"low":88.8698,"high":98.0175,"last":95.7183,"open":97.4862,"vol":2055.53},{"market":"dashxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":214.2842,"ask":214.9939,"low":211.3958,"high":230,"last":214.7839,"open":215.7325,"vol":748.242},{"market":"bchxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":388.1856,"ask":389.8745,"low":387.3231,"high":398.9192,"last":389.1674,"open":395.4755,"vol":935.145},{"market":"zecxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":163.6281,"ask":164.777,"low":163.012,"high":165.9216,"last":164.1571,"open":165.5967,"vol":656.493},{"market":"dashcad","timestamp":"2019-01-16T14:56:39.000Z","bid":92.89,"ask":94.11,"low":88.84,"high":94.96,"last":93.38,"open":94.59,"vol":242.0295},{"market":"btgxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":36.0625,"ask":36.3753,"low":35.9849,"high":36.743,"last":36.1895,"open":36.5677,"vol":125.69},{"market":"zrxxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":0.8612,"ask":0.927,"low":0.855,"high":0.9217,"last":0.9217,"open":0.8679,"vol":108914.2},{"market":"gntxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":0.194,"ask":0.195,"low":0.1881,"high":0.2141,"last":0.1947,"open":0.1926,"vol":811263.64787482},{"market":"repxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":38.6731,"ask":38.7689,"low":29.2866,"high":40.4865,"last":38.6676,"open":31.4602,"vol":9410.38},{"market":"omgxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":3.8125,"ask":3.8383,"low":3.7539,"high":4.0017,"last":3.8319,"open":3.8544,"vol":31225.15},{"market":"saltxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":0.6676,"ask":0.6722,"low":0.6467,"high":0.6805,"last":0.6702,"open":0.6528,"vol":25682.33},{"market":"batxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":0.3784,"ask":0.3801,"low":0.3689,"high":0.4117,"last":0.3782,"open":0.3741,"vol":52972.56335816},{"market":"zilxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":0.0695,"ask":0.07,"low":0.0617,"high":0.0713,"last":0.0698,"open":0.062,"vol":9959334.70659186},{"market":"xrpcad","timestamp":"2019-01-16T14:56:39.000Z","bid":0.4341,"ask":0.4365,"low":0.4241,"high":0.463,"last":0.4352,"open":0.438,"vol":3882172.19177302},{"market":"xrpusd","timestamp":"2019-01-16T14:56:39.000Z","bid":0.3277,"ask":0.3286,"low":0.3139,"high":0.3772,"last":0.328,"open":0.3307,"vol":4570256.1428},{"market":"btcusdc","timestamp":"2019-01-16T14:56:39.000Z","bid":3610.4,"ask":3631.69,"low":3563.45,"high":3667.28,"last":3619.54,"open":3654.01,"vol":31.5666917},{"market":"xrpusdc","timestamp":"2019-01-16T14:56:39.000Z","bid":0.3279,"ask":0.3297,"low":0.3203,"high":0.3326,"last":0.3289,"open":0.3312,"vol":13416.344},{"market":"xrpeur","timestamp":"2019-01-16T14:56:39.000Z","bid":0.2876,"ask":0.2886,"low":0.2726,"high":0.292,"last":0.2882,"open":0.2888,"vol":1867947.003},{"market":"xrpgbp","timestamp":"2019-01-16T14:56:39.000Z","bid":0.255,"ask":0.2556,"low":0.2422,"high":0.259,"last":0.2554,"open":0.2572,"vol":1007451.376},{"market":"btcgbp","timestamp":"2019-01-16T14:56:39.000Z","bid":2809.44,"ask":2820.04,"low":2760.2,"high":2862.44,"last":2812.09,"open":2841.83,"vol":53.6687082},{"market":"ethgbp","timestamp":"2019-01-16T14:56:39.000Z","bid":95.13,"ask":95.68,"low":91.37,"high":100.23,"last":95.38,"open":100.23,"vol":1579.2336},{"market":"xlmgbp","timestamp":"2019-01-16T14:56:39.000Z","bid":0.075,"ask":0.0913,"low":0.0739,"high":0.0901,"last":0.0832,"open":0.0899,"vol":605579.6419},{"market":"ltcgbp","timestamp":"2019-01-16T14:56:39.000Z","bid":24.4,"ask":24.53,"low":23.71,"high":25.14,"last":24.38,"open":24.81,"vol":85.3202},{"market":"dgbgbp","timestamp":"2019-01-16T14:56:39.000Z","bid":0.007472,"ask":0.007612,"low":0.007318,"high":0.007752,"last":0.007535,"open":0.007725,"vol":843917.85},{"market":"xrpaed","timestamp":"2019-01-16T14:56:39.000Z","bid":1.2021,"ask":1.2092,"low":1.1736,"high":1.218,"last":1.2044,"open":1.2152,"vol":164557.098},{"market":"xrpjpy","timestamp":"2019-01-16T14:56:39.000Z","bid":35.65,"ask":35.76,"low":34.69,"high":37.2,"last":35.7,"open":35.72,"vol":659931.4225},{"market":"btceur","timestamp":"2019-01-16T14:56:39.000Z","bid":3163.85,"ask":3180.14,"low":3015.7,"high":3288.19,"last":3171.07,"open":3198.75,"vol":302.73538128},{"market":"etheur","timestamp":"2019-01-16T14:56:39.000Z","bid":107.46,"ask":107.85,"low":103.09,"high":114.34,"last":107.58,"open":112.53,"vol":2230.5648},{"market":"ltceur","timestamp":"2019-01-16T14:56:39.000Z","bid":27.54,"ask":27.66,"low":26.66,"high":28.25,"last":27.6,"open":28.18,"vol":1659.58},{"market":"xlmeur","timestamp":"2019-01-16T14:56:39.000Z","bid":0.0929,"ask":0.0945,"low":0.0887,"high":0.0942,"last":0.0937,"open":0.0937,"vol":763813.755},{"market":"dgbeur","timestamp":"2019-01-16T14:56:39.000Z","bid":0.008287,"ask":0.008599,"low":0.008229,"high":0.008678,"last":0.008499,"open":0.008678,"vol":930192.25},{"market":"btccad","timestamp":"2019-01-16T14:56:39.000Z","bid":4790.17,"ask":4805.82,"low":4723.97,"high":4863.4,"last":4794.88,"open":4835.65,"vol":378.71846107},{"market":"ethcad","timestamp":"2019-01-16T14:56:39.000Z","bid":162.28,"ask":162.95,"low":154.85,"high":170.65,"last":161.73,"open":170.54,"vol":1771.9383},{"market":"ltccad","timestamp":"2019-01-16T14:56:39.000Z","bid":41.62,"ask":41.79,"low":40.23,"high":42.8,"last":41.64,"open":42.71,"vol":2374.27},{"market":"btcusd","timestamp":"2019-01-16T14:56:39.000Z","bid":3609.04,"ask":3621.09,"low":3514.41,"high":3769.03,"last":3614.39,"open":3653.17,"vol":368.36931451},{"market":"ethusd","timestamp":"2019-01-16T14:56:39.000Z","bid":122.25,"ask":122.68,"low":115.32,"high":130.04,"last":123.36,"open":128.6,"vol":3134.0564},{"market":"ltcusd","timestamp":"2019-01-16T14:56:39.000Z","bid":31.39,"ask":31.48,"low":30.38,"high":33.08,"last":31.37,"open":32.19,"vol":4304.46},{"market":"xlmcad","timestamp":"2019-01-16T14:56:39.000Z","bid":0.1401,"ask":0.1425,"low":0.1341,"high":0.1525,"last":0.1414,"open":0.142,"vol":1470205.7356},{"market":"bchcad","timestamp":"2019-01-16T14:56:39.000Z","bid":168.76,"ask":169.7,"low":165.39,"high":173.82,"last":169.51,"open":173.75,"vol":21.2326},{"market":"dgbcad","timestamp":"2019-01-16T14:56:39.000Z","bid":0.01285,"ask":0.012966,"low":0.012474,"high":0.013584,"last":0.012906,"open":0.013181,"vol":2755151.21},{"market":"zeccad","timestamp":"2019-01-16T14:56:39.000Z","bid":71.07,"ask":72.43,"low":69.87,"high":72.33,"last":71.71,"open":72.12,"vol":98.4247},{"market":"zrxcad","timestamp":"2019-01-16T14:56:39.000Z","bid":0.3949,"ask":0.4087,"low":0.3716,"high":0.4002,"last":0.3939,"open":0.3791,"vol":3273.821},{"market":"xlmusd","timestamp":"2019-01-16T14:56:39.000Z","bid":0.1063,"ask":0.1069,"low":0.1032,"high":0.1079,"last":0.1066,"open":0.1076,"vol":1884947.54},{"market":"dashusd","timestamp":"2019-01-16T14:56:39.000Z","bid":70.01,"ask":70.88,"low":67.51,"high":71.63,"last":70.46,"open":71.37,"vol":404.6279},{"market":"zecusd","timestamp":"2019-01-16T14:56:39.000Z","bid":53.6,"ask":54.52,"low":52.68,"high":54.62,"last":54.09,"open":54.62,"vol":148.9311},{"market":"dgbusd","timestamp":"2019-01-16T14:56:39.000Z","bid":0.009605,"ask":0.009771,"low":0.0094,"high":0.009931,"last":0.009693,"open":0.009931,"vol":6398936.44},{"market":"bchusd","timestamp":"2019-01-16T14:56:39.000Z","bid":127.46,"ask":128.14,"low":124.51,"high":131.5,"last":127.48,"open":131.5,"vol":14.7381},{"market":"zrxusd","timestamp":"2019-01-16T14:56:39.000Z","bid":0.2977,"ask":0.3082,"low":0.2728,"high":0.3018,"last":0.2968,"open":0.2869,"vol":4020.914},{"market":"batusd","timestamp":"2019-01-16T14:56:39.000Z","bid":0.1237,"ask":0.1248,"low":0.1187,"high":0.1294,"last":0.1239,"open":0.1233,"vol":9740.665},{"market":"btcjpy","timestamp":"2019-01-16T14:56:39.000Z","bid":392708.86,"ask":393897.64,"low":386482.98,"high":396346.58,"last":393673.18,"open":395693.18,"vol":40.94266015},{"market":"cvcxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":0.1553,"ask":0.1586,"low":0.1491,"high":0.1584,"last":0.157,"open":0.1495,"vol":346020.39},{"market":"dgbxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":0.0293,"ask":0.0296,"low":0.029,"high":0.0305,"last":0.0294,"open":0.0299,"vol":5261586.2233},{"market":"loomxrp","timestamp":"2019-01-16T14:56:39.000Z","bid":0.1391,"ask":0.1398,"low":0.1301,"high":0.1484,"last":0.1395,"open":0.1314,"vol":969591.8256}],"timestamp":"2019-01-16T14:56:39.476Z","took":"20ms"}'
     http_version: 
-  recorded_at: Tue, 29 May 2018 16:52:37 GMT
+  recorded_at: Wed, 16 Jan 2019 14:56:39 GMT
 recorded_with: VCR 4.0.0

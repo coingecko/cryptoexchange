@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.exchange.3xbit.com.br/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.exchange.3xbit.com.br
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Sat, 19 Jan 2019 07:48:25 GMT
+      Location:
+      - "/ticker/"
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Content-Length:
+      - '0'
+      Connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sat, 19 Jan 2019 07:48:25 GMT
+- request:
+    method: get
+    uri: https://api.exchange.3xbit.com.br/ticker/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/3.0.0
+      Host:
+      - api.exchange.3xbit.com.br
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Allow:
+      - GET, HEAD, OPTIONS
+      Content-Language:
+      - pt-br
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 19 Jan 2019 07:48:26 GMT
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Vary:
+      - Authorization, Accept-Language, Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '9393'
+      Connection:
+      - Close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"CREDIT_BTC":{"market":"CREDIT","symbol":"BTC","last":"3690.000000000","open":"3699.400000000","close":"3690.000000000","max":"3702.700000000","min":"3648.200000000","variation":-0.25409525869059846,"volume":38.693144,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"3671.200000000","ask":"3690.000000000","market_name":"CREDIT"},"CREDIT_ETH":{"market":"CREDIT","symbol":"ETH","last":"122.000000000","open":"123.790000000","close":"122.000000000","max":"123.790000000","min":"119.500000000","variation":-1.4459972534130383,"volume":21.844905,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"119.900000000","ask":"122.000000000","market_name":"CREDIT"},"CREDIT_LTC":{"market":"CREDIT","symbol":"LTC","last":"31.100000000","open":"31.990000000","close":"31.100000000","max":"32.680000000","min":"31.100000000","variation":-2.782119412316349,"volume":50.332572,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"31.000000000","ask":"32.480000000","market_name":"CREDIT"},"CREDIT_DASH":{"market":"CREDIT","symbol":"DASH","last":"71.900000000","open":"72.500000000","close":"71.900000000","max":"72.500000000","min":"71.900000000","variation":-0.8275862068965517,"volume":35.755123,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"71.000000000","ask":"71.900000000","market_name":"CREDIT"},"CREDIT_NANO":{"market":"CREDIT","symbol":"NANO","last":"0.879155000","open":"0.889791000","close":"0.879155000","max":"0.889791000","min":"0.879155000","variation":-1.1953368824813917,"volume":643.209894,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.869988000","ask":"0.879155000","market_name":"CREDIT"},"CREDIT_DOGE":{"market":"CREDIT","symbol":"DOGE","last":"0.002110000","open":"0.002090000","close":"0.002110000","max":"0.002110000","min":"0.002090000","variation":0.9569377990430622,"volume":236011.175165,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.002090000","ask":"0.002120000","market_name":"CREDIT"},"CREDIT_SMART":{"market":"CREDIT","symbol":"SMART","last":"0.011732000","open":"0.011877000","close":"0.011732000","max":"0.011877000","min":"0.011732000","variation":-1.2208470152395385,"volume":183396.091796,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.011732000","ask":"0.011735000","market_name":"CREDIT"},"CREDIT_ZCR":{"market":"CREDIT","symbol":"ZCR","last":"0.145795000","open":"0.128533000","close":"0.145795000","max":"0.145795000","min":"0.128522000","variation":13.430014081986727,"volume":2134.905891,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.145795000","ask":"0.148500000","market_name":"CREDIT"},"CREDIT_ATMCASH":{"market":"CREDIT","symbol":"ATMCASH","last":"0.004000000","open":"0.004000000","close":"0.004000000","max":"0.004000000","min":"0.004000000","variation":0.0,"volume":26956.975052,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.000453000","ask":"0.004001000","market_name":"CREDIT"},"CREDIT_LEAX":{"market":"CREDIT","symbol":"LEAX","last":"0.058980000","open":"0.060000000","close":"0.058980000","max":"0.064500000","min":"0.058980000","variation":-1.7,"volume":28745.765992,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.058980000","ask":"0.069760000","market_name":"CREDIT"},"CREDIT_TNJ":{"market":"CREDIT","symbol":"TNJ","last":"0.004582000","open":"0.004584000","close":"0.004582000","max":"0.004585000","min":"0.004582000","variation":-0.04363001745200698,"volume":109027.208285,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.004580000","ask":"0.004582000","market_name":"CREDIT"},"BTC_ETH":{"market":"BTC","symbol":"ETH","last":"0.033511240","open":"0.033642000","close":"0.033511240","max":"0.033642000","min":"0.033511240","variation":-0.38868081564710777,"volume":23.300493,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.033259660","ask":"0.033511240","market_name":"Bitcoin"},"BTC_LTC":{"market":"BTC","symbol":"LTC","last":"0.008632550","open":"0.008652940","close":"0.008632550","max":"0.008652940","min":"0.008632550","variation":-0.23564245216076848,"volume":17.403961,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.008602490","ask":"0.008632550","market_name":"Bitcoin"},"BTC_DASH":{"market":"BTC","symbol":"DASH","last":"0.019658820","open":"0.019587010","close":"0.019658820","max":"0.019701460","min":"0.019587010","variation":0.3666205306476078,"volume":11.368823,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.019624400","ask":"0.019658820","market_name":"Bitcoin"},"BTC_NANO":{"market":"BTC","symbol":"NANO","last":"0.000241110","open":"0.000241110","close":"0.000241110","max":"0.000241110","min":"0.000240870","variation":0.0,"volume":1081.449441,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.000241110","ask":"0.000241250","market_name":"Bitcoin"},"BTC_DOGE":{"market":"BTC","symbol":"DOGE","last":"0.000000570","open":"0.000000571","close":"0.000000570","max":"0.000000585","min":"0.000000570","variation":-0.17513134851138354,"volume":617892.621103,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.000000570","ask":"0.000000585","market_name":"Bitcoin"},"BTC_SMART":{"market":"BTC","symbol":"SMART","last":"0.000003195","open":"0.000003245","close":"0.000003195","max":"0.000003245","min":"0.000003195","variation":-1.5408320493066257,"volume":187072.333619,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.000003195","ask":"0.000003227","market_name":"Bitcoin"},"BTC_ZCR":{"market":"BTC","symbol":"ZCR","last":"0.000038000","open":"0.000034090","close":"0.000038000","max":"0.000039990","min":"0.000034090","variation":11.46963919037841,"volume":2916.555402,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.000038000","ask":"0.000039990","market_name":"Bitcoin"},"BTC_ATMCASH":{"market":"BTC","symbol":"ATMCASH","last":"0.000000140","open":"0.000000140","close":"0.000000140","max":"0.000000140","min":"0.000000140","variation":0.0,"volume":500000.0,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.000000140","ask":"0.000000472","market_name":"Bitcoin"},"BTC_LEAX":{"market":"BTC","symbol":"LEAX","last":"0.000000000","open":"0.000000000","close":"0.000000000","max":"0.000000000","min":"0.000000000","variation":0.0,"volume":0.0,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.000014000","ask":"0.000019000","market_name":"Bitcoin"},"BTC_TNJ":{"market":"BTC","symbol":"TNJ","last":"0.000001170","open":"0.000001280","close":"0.000001170","max":"0.000001290","min":"0.000001170","variation":-8.59375,"volume":181139.221728,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.000001170","ask":"0.000001180","market_name":"Bitcoin"},"DASH_ETH":{"market":"DASH","symbol":"ETH","last":"1.720095510","open":"1.720095510","close":"1.720095510","max":"1.720095510","min":"1.720095510","variation":0.0,"volume":0.838815,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"1.710548170","ask":"1.720095510","market_name":"Dash"},"DASH_LTC":{"market":"DASH","symbol":"LTC","last":"0.437192980","open":"0.438122920","close":"0.437192980","max":"0.438122920","min":"0.437192980","variation":-0.21225550126434836,"volume":15.688142,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.437192980","ask":"0.438122920","market_name":"Dash"},"DASH_NANO":{"market":"DASH","symbol":"NANO","last":"0.012315970","open":"0.012315970","close":"0.012315970","max":"0.012315970","min":"0.012315970","variation":0.0,"volume":111.991083,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.012207070","ask":"0.012315970","market_name":"Dash"},"DASH_DOGE":{"market":"DASH","symbol":"DOGE","last":"0.000029000","open":"0.000029350","close":"0.000029000","max":"0.000029350","min":"0.000029000","variation":-1.192504258943782,"volume":57388.294425,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.000028556","ask":"0.000029000","market_name":"Dash"},"DASH_SMART":{"market":"DASH","symbol":"SMART","last":"0.000162440","open":"0.000162651","close":"0.000162440","max":"0.000162651","min":"0.000162440","variation":-0.12972560881888215,"volume":6508.311773,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.000162440","ask":"0.000177589","market_name":"Dash"},"DASH_ZCR":{"market":"DASH","symbol":"ZCR","last":"0.001764210","open":"0.001764210","close":"0.001764210","max":"0.001764210","min":"0.001764210","variation":0.0,"volume":644.596562,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.001730450","ask":"0.001764210","market_name":"Dash"},"DASH_ATMCASH":{"market":"DASH","symbol":"ATMCASH","last":"0.000013210","open":"0.000012105","close":"0.000013210","max":"0.000013210","min":"0.000012105","variation":9.12845931433292,"volume":27953.718183,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.000005600","ask":"0.000013210","market_name":"Dash"},"DASH_LEAX":{"market":"DASH","symbol":"LEAX","last":"0.000000000","open":"0.000000000","close":"0.000000000","max":"0.000000000","min":"0.000000000","variation":0.0,"volume":0.0,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.000181126","ask":"0.001456620","market_name":"Dash"},"DASH_TNJ":{"market":"DASH","symbol":"TNJ","last":"0.000059569","open":"0.000060595","close":"0.000059569","max":"0.000060595","min":"0.000059569","variation":-1.6932090106444426,"volume":16320.749846,"exchange_rate":"3.750000","dollar_brl":"3.750000","bid":"0.000055694","ask":"0.000059569","market_name":"Dash"}}'
+    http_version: 
+  recorded_at: Sat, 19 Jan 2019 07:48:26 GMT
+recorded_with: VCR 4.0.0

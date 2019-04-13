@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.chaoex.com/12lian/quote/tradeDeepin?baseCurrencyId=1&limit=20&tradeCurrencyId=3
+    uri: https://www.chaoex.info/unique/coin/allCurrencyRelations
     body:
       encoding: UTF-8
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Connection:
       - close
       Host:
-      - www.chaoex.com
+      - www.chaoex.info
       User-Agent:
       - http.rb/3.0.0
   response:
@@ -19,27 +19,94 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 01 Aug 2018 01:13:36 GMT
+      - Thu, 14 Feb 2019 11:12:20 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
       - chunked
       Connection:
       - close
-      Set-Cookie:
-      - __cfduid=d6d3831e676611e5cc864c2d38dac7f721533086016; expires=Thu, 01-Aug-19
-        01:13:36 GMT; path=/; domain=.chaoex.com; HttpOnly
       Vary:
       - Accept-Encoding
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 44347173afd184b4-HKG
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1;mode=block
+      X-Cdn-Edge:
+      - 7f50332,-
+      Set-Cookie:
+      - __cdnuid=9c1be797e121f879c004b97d9c4479c4; max-age=31536000; path=/; HttpOnly
+      X-Cache:
+      - bypass
     body:
       encoding: UTF-8
-      string: '{"attachment":{"asks":[["0.05545147","0.00446109"],["0.05562228","0.00597632"],["0.05584451","0.00556868"],["0.05620000","0.6186590000000000"],["0.05673510","0.34540000"],["0.05690000","0.03687565"],["0.05710000","0.04697335"],["0.05726000","0.03292332"],["0.05752117","4.65354000"],["0.05791500","0.03231095"],["0.05813000","0.01327560"],["0.05842648","0.03718599"],["0.05864849","0.10791120"],["0.05884908","0.03453454"],["0.05908306","0.02534543"],["0.05924187","0.01498627"],["0.05943187","0.00650606"],["0.05983431","0.00346546"],["0.06125612","0.00656460"],["0.06142561","0.00465460"]],"bids":[["0.05514755","0.07421891"],["0.05475516","0.00727453"],["0.05451657","0.02077720"],["0.05442451","0.01643454"],["0.05434245","0.01534540"],["0.05421342","0.01534500"],["0.05405213","0.02534540"],["0.05384052","0.03453454"],["0.05365840","0.01534540"],["0.05346584","0.01123454"],["0.05325465","0.03453454"],["0.05304254","0.01534500"],["0.05289304","0.01645340"],["0.05264893","0.25345400"],["0.05245165","0.01534540"],["0.05225464","0.03436645"],["0.05205425","0.02534540"],["0.0500000000000000","0.2310000000000000"],["0.0490000000000000","0.0131200000000000"],["0.0480000000000000","0.0231000000000000"]]},"message":"","status":200}'
+      string: '{"attachment":[{"id":1,"baseCurrencyId":"1","tradeCurrencyId":"2","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"Litecoin","tradeCurrencyNameEn":"LTC","amountLowLimit":0.03,"amountHighLimit":9999999.0,"sellAmountLowLimit":0.03,"sellAmountHighLimit":9999999.0},{"id":2,"baseCurrencyId":"1","tradeCurrencyId":"3","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"Ethereum","tradeCurrencyNameEn":"ETH","amountLowLimit":0.01,"amountHighLimit":999999.0,"sellAmountLowLimit":0.01,"sellAmountHighLimit":999999.0},{"id":5,"baseCurrencyId":"1","tradeCurrencyId":"6","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"Lisk","tradeCurrencyNameEn":"LSK","amountLowLimit":0.01,"amountHighLimit":999999.0,"sellAmountLowLimit":0.01,"sellAmountHighLimit":999999.0},{"id":6,"baseCurrencyId":"3","tradeCurrencyId":"2","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"Litecoin","tradeCurrencyNameEn":"LTC","amountLowLimit":0.03,"amountHighLimit":9999999.0,"sellAmountLowLimit":0.03,"sellAmountHighLimit":9999999.0},{"id":11,"baseCurrencyId":"1","tradeCurrencyId":"10","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"Nuls","tradeCurrencyNameEn":"NULS","amountLowLimit":2.0,"amountHighLimit":1000000.0,"sellAmountLowLimit":2.0,"sellAmountHighLimit":1000000.0},{"id":15,"baseCurrencyId":"1","tradeCurrencyId":"16","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"Zcash","tradeCurrencyNameEn":"ZEC","amountLowLimit":0.025,"amountHighLimit":999999.0,"sellAmountLowLimit":0.025,"sellAmountHighLimit":999999.0},{"id":16,"baseCurrencyId":"1","tradeCurrencyId":"17","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"Monero","tradeCurrencyNameEn":"XMR","amountLowLimit":0.03,"amountHighLimit":999999.0,"sellAmountLowLimit":0.03,"sellAmountHighLimit":999999.0},{"id":19,"baseCurrencyId":"1","tradeCurrencyId":"20","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"DASH","tradeCurrencyNameEn":"DASH","amountLowLimit":0.02,"amountHighLimit":999999.0,"sellAmountLowLimit":0.02,"sellAmountHighLimit":999999.0},{"id":20,"baseCurrencyId":"1","tradeCurrencyId":"21","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"EOS","tradeCurrencyNameEn":"EOS","amountLowLimit":1.0,"amountHighLimit":999999.0,"sellAmountLowLimit":1.0,"sellAmountHighLimit":999999.0},{"id":25,"baseCurrencyId":"3","tradeCurrencyId":"23","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"OmiseGo","tradeCurrencyNameEn":"OMG","amountLowLimit":0.1,"amountHighLimit":999999.0,"sellAmountLowLimit":0.1,"sellAmountHighLimit":999999.0},{"id":28,"baseCurrencyId":"3","tradeCurrencyId":"26","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"Augur","tradeCurrencyNameEn":"REP","amountLowLimit":0.1,"amountHighLimit":999999.0,"sellAmountLowLimit":0.1,"sellAmountHighLimit":999999.0},{"id":29,"baseCurrencyId":"3","tradeCurrencyId":"27","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"Status","tradeCurrencyNameEn":"SNT","amountLowLimit":10.0,"amountHighLimit":9999999.0,"sellAmountLowLimit":10.0,"sellAmountHighLimit":9999999.0},{"id":33,"baseCurrencyId":"3","tradeCurrencyId":"31","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"Basic
+        Attention Token","tradeCurrencyNameEn":"BAT","amountLowLimit":10.0,"amountHighLimit":9999999.0,"sellAmountLowLimit":10.0,"sellAmountHighLimit":9999999.0},{"id":48,"baseCurrencyId":"3","tradeCurrencyId":"10","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"Nuls","tradeCurrencyNameEn":"NULS","amountLowLimit":2.0,"amountHighLimit":1000000.0,"sellAmountLowLimit":2.0,"sellAmountHighLimit":1000000.0},{"id":50,"baseCurrencyId":"3","tradeCurrencyId":"21","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"EOS","tradeCurrencyNameEn":"EOS","amountLowLimit":1.0,"amountHighLimit":999999.0,"sellAmountLowLimit":1.0,"sellAmountHighLimit":999999.0},{"id":55,"baseCurrencyId":"1","tradeCurrencyId":"38","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"DECENT","tradeCurrencyNameEn":"DCT","amountLowLimit":1.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":1.0,"sellAmountHighLimit":9.9999999E7},{"id":65,"baseCurrencyId":"3","tradeCurrencyId":"42","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"Sportyco","tradeCurrencyNameEn":"SPF","amountLowLimit":1.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":1.0,"sellAmountHighLimit":9.9999999E7},{"id":81,"baseCurrencyId":"1","tradeCurrencyId":"57","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"RChain","tradeCurrencyNameEn":"RHOC","amountLowLimit":10.0,"amountHighLimit":9999.0,"sellAmountLowLimit":10.0,"sellAmountHighLimit":9999.0},{"id":87,"baseCurrencyId":"1","tradeCurrencyId":"61","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"SingularDTV","tradeCurrencyNameEn":"SNGLS","amountLowLimit":10.0,"amountHighLimit":999999.0,"sellAmountLowLimit":10.0,"sellAmountHighLimit":999999.0},{"id":89,"baseCurrencyId":"1","tradeCurrencyId":"62","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"Mass
+        Grid","tradeCurrencyNameEn":"MGD","amountLowLimit":1.0,"amountHighLimit":999999.0,"sellAmountLowLimit":1.0,"sellAmountHighLimit":999999.0},{"id":91,"baseCurrencyId":"3","tradeCurrencyId":"64","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"Venus","tradeCurrencyNameEn":"VNS","amountLowLimit":100.0,"amountHighLimit":999999.0,"sellAmountLowLimit":100.0,"sellAmountHighLimit":999999.0},{"id":92,"baseCurrencyId":"1","tradeCurrencyId":"66","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"Skycoin","tradeCurrencyNameEn":"SKY","amountLowLimit":0.1,"amountHighLimit":99999.0,"sellAmountLowLimit":0.1,"sellAmountHighLimit":99999.0},{"id":93,"baseCurrencyId":"3","tradeCurrencyId":"67","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"WaykiChain","tradeCurrencyNameEn":"WICC","amountLowLimit":2.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":2.0,"sellAmountHighLimit":9.9999999E7},{"id":102,"baseCurrencyId":"1","tradeCurrencyId":"67","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"WaykiChain","tradeCurrencyNameEn":"WICC","amountLowLimit":2.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":2.0,"sellAmountHighLimit":9.9999999E7},{"id":130,"baseCurrencyId":"63","tradeCurrencyId":"1","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"Bitcoin","tradeCurrencyNameEn":"BTC","amountLowLimit":0.0,"amountHighLimit":9999.0,"sellAmountLowLimit":0.0,"sellAmountHighLimit":9999.0},{"id":131,"baseCurrencyId":"63","tradeCurrencyId":"21","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"EOS","tradeCurrencyNameEn":"EOS","amountLowLimit":1.0,"amountHighLimit":999999.0,"sellAmountLowLimit":1.0,"sellAmountHighLimit":999999.0},{"id":132,"baseCurrencyId":"63","tradeCurrencyId":"15","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"Ethereum
+        Classic","tradeCurrencyNameEn":"ETC","amountLowLimit":0.001,"amountHighLimit":9999999.0,"sellAmountLowLimit":0.001,"sellAmountHighLimit":9999999.0},{"id":133,"baseCurrencyId":"63","tradeCurrencyId":"3","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"Ethereum","tradeCurrencyNameEn":"ETH","amountLowLimit":0.01,"amountHighLimit":999999.0,"sellAmountLowLimit":0.01,"sellAmountHighLimit":999999.0},{"id":134,"baseCurrencyId":"63","tradeCurrencyId":"2","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"Litecoin","tradeCurrencyNameEn":"LTC","amountLowLimit":0.03,"amountHighLimit":9999999.0,"sellAmountLowLimit":0.03,"sellAmountHighLimit":9999999.0},{"id":141,"baseCurrencyId":"63","tradeCurrencyId":"70","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"CHEX","tradeCurrencyNameEn":"CHEX","amountLowLimit":50.0,"amountHighLimit":999999.0,"sellAmountLowLimit":50.0,"sellAmountHighLimit":999999.0},{"id":154,"baseCurrencyId":"1","tradeCurrencyId":"76","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"TRON","tradeCurrencyNameEn":"TRX","amountLowLimit":50.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":50.0,"sellAmountHighLimit":9.9999999E7},{"id":155,"baseCurrencyId":"3","tradeCurrencyId":"76","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"TRON","tradeCurrencyNameEn":"TRX","amountLowLimit":50.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":50.0,"sellAmountHighLimit":9.9999999E7},{"id":158,"baseCurrencyId":"3","tradeCurrencyId":"77","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"Payfair","tradeCurrencyNameEn":"PFR","amountLowLimit":50.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":50.0,"sellAmountHighLimit":9.9999999E7},{"id":163,"baseCurrencyId":"1","tradeCurrencyId":"79","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"Stellar","tradeCurrencyNameEn":"XLM","amountLowLimit":8.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":8.0,"sellAmountHighLimit":9.9999999E7},{"id":164,"baseCurrencyId":"63","tradeCurrencyId":"79","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"Stellar","tradeCurrencyNameEn":"XLM","amountLowLimit":8.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":8.0,"sellAmountHighLimit":9.9999999E7},{"id":165,"baseCurrencyId":"3","tradeCurrencyId":"81","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"Our
+        Earth Coin","tradeCurrencyNameEn":"OEC","amountLowLimit":300.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":300.0,"sellAmountHighLimit":9.9999999E7},{"id":166,"baseCurrencyId":"3","tradeCurrencyId":"80","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"Webchain","tradeCurrencyNameEn":"WEB","amountLowLimit":300.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":300.0,"sellAmountHighLimit":9.9999999E7},{"id":167,"baseCurrencyId":"1","tradeCurrencyId":"82","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"Bitcoin
+        Cash SV","tradeCurrencyNameEn":"BCHSV","amountLowLimit":0.01,"amountHighLimit":9.999999999E9,"sellAmountLowLimit":0.01,"sellAmountHighLimit":9.999999999E9},{"id":168,"baseCurrencyId":"63","tradeCurrencyId":"82","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"Bitcoin
+        Cash SV","tradeCurrencyNameEn":"BCHSV","amountLowLimit":0.01,"amountHighLimit":9.999999999E9,"sellAmountLowLimit":0.01,"sellAmountHighLimit":9.999999999E9},{"id":169,"baseCurrencyId":"1","tradeCurrencyId":"83","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"Bitcoin
+        Cash ABC","tradeCurrencyNameEn":"BCHABC","amountLowLimit":0.005,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":0.005,"sellAmountHighLimit":9.9999999E7},{"id":170,"baseCurrencyId":"63","tradeCurrencyId":"83","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"Bitcoin
+        Cash ABC","tradeCurrencyNameEn":"BCHABC","amountLowLimit":0.005,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":0.005,"sellAmountHighLimit":9.9999999E7},{"id":171,"baseCurrencyId":"3","tradeCurrencyId":"45","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"Ripio
+        Credit Network","tradeCurrencyNameEn":"RCN","amountLowLimit":10.0,"amountHighLimit":999999.0,"sellAmountLowLimit":10.0,"sellAmountHighLimit":999999.0},{"id":172,"baseCurrencyId":"63","tradeCurrencyId":"35","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"Content
+        and AD Nework","tradeCurrencyNameEn":"CAN","amountLowLimit":50.0,"amountHighLimit":9999999.0,"sellAmountLowLimit":50.0,"sellAmountHighLimit":9999999.0},{"id":173,"baseCurrencyId":"63","tradeCurrencyId":"41","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"Merge","tradeCurrencyNameEn":"MGE","amountLowLimit":1.0,"amountHighLimit":9999999.0,"sellAmountLowLimit":1.0,"sellAmountHighLimit":9999999.0},{"id":174,"baseCurrencyId":"63","tradeCurrencyId":"45","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"Ripio
+        Credit Network","tradeCurrencyNameEn":"RCN","amountLowLimit":10.0,"amountHighLimit":999999.0,"sellAmountLowLimit":10.0,"sellAmountHighLimit":999999.0},{"id":175,"baseCurrencyId":"63","tradeCurrencyId":"54","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"BPP","tradeCurrencyNameEn":"BPP","amountLowLimit":2.0,"amountHighLimit":99999.0,"sellAmountLowLimit":2.0,"sellAmountHighLimit":99999.0},{"id":176,"baseCurrencyId":"63","tradeCurrencyId":"7","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"ArronCoin","tradeCurrencyNameEn":"ARC","amountLowLimit":100.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":100.0,"sellAmountHighLimit":9.9999999E7},{"id":177,"baseCurrencyId":"63","tradeCurrencyId":"73","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"BQT","tradeCurrencyNameEn":"BQT","amountLowLimit":20.0,"amountHighLimit":999999.0,"sellAmountLowLimit":20.0,"sellAmountHighLimit":999999.0},{"id":178,"baseCurrencyId":"63","tradeCurrencyId":"75","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"Point
+        of chain sales","tradeCurrencyNameEn":"POCS","amountLowLimit":50.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":50.0,"sellAmountHighLimit":9.9999999E7},{"id":180,"baseCurrencyId":"63","tradeCurrencyId":"84","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"Cifculation","tradeCurrencyNameEn":"CLC","amountLowLimit":100.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":100.0,"sellAmountHighLimit":9.9999999E7},{"id":182,"baseCurrencyId":"63","tradeCurrencyId":"17","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"Monero","tradeCurrencyNameEn":"XMR","amountLowLimit":0.03,"amountHighLimit":999999.0,"sellAmountLowLimit":0.03,"sellAmountHighLimit":999999.0},{"id":183,"baseCurrencyId":"63","tradeCurrencyId":"185","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"MeteCoin","tradeCurrencyNameEn":"METE","amountLowLimit":4.0,"amountHighLimit":99999.0,"sellAmountLowLimit":4.0,"sellAmountHighLimit":99999.0},{"id":184,"baseCurrencyId":"63","tradeCurrencyId":"186","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"GD
+        Chain Token","tradeCurrencyNameEn":"GDCT","amountLowLimit":10.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":10.0,"sellAmountHighLimit":9.9999999E7},{"id":185,"baseCurrencyId":"63","tradeCurrencyId":"20","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"DASH","tradeCurrencyNameEn":"DASH","amountLowLimit":0.02,"amountHighLimit":999999.0,"sellAmountLowLimit":0.02,"sellAmountHighLimit":999999.0},{"id":187,"baseCurrencyId":"63","tradeCurrencyId":"187","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"BOIN","tradeCurrencyNameEn":"BOIN","amountLowLimit":10.0,"amountHighLimit":999999.0,"sellAmountLowLimit":10.0,"sellAmountHighLimit":999999.0},{"id":188,"baseCurrencyId":"3","tradeCurrencyId":"20","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"DASH","tradeCurrencyNameEn":"DASH","amountLowLimit":0.02,"amountHighLimit":999999.0,"sellAmountLowLimit":0.02,"sellAmountHighLimit":999999.0},{"id":191,"baseCurrencyId":"3","tradeCurrencyId":"15","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"Ethereum
+        Classic","tradeCurrencyNameEn":"ETC","amountLowLimit":0.001,"amountHighLimit":9999999.0,"sellAmountLowLimit":0.001,"sellAmountHighLimit":9999999.0},{"id":192,"baseCurrencyId":"3","tradeCurrencyId":"16","baseCurrencyName":"Ethereum","baseCurrencyNameEn":"ETH","tradeCurrencyName":"Zcash","tradeCurrencyNameEn":"ZEC","amountLowLimit":0.025,"amountHighLimit":999999.0,"sellAmountLowLimit":0.025,"sellAmountHighLimit":999999.0},{"id":193,"baseCurrencyId":"63","tradeCurrencyId":"16","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"Zcash","tradeCurrencyNameEn":"ZEC","amountLowLimit":0.025,"amountHighLimit":999999.0,"sellAmountLowLimit":0.025,"sellAmountHighLimit":999999.0},{"id":194,"baseCurrencyId":"63","tradeCurrencyId":"188","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"World
+        United Coins","tradeCurrencyNameEn":"WUC","amountLowLimit":12.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":12.0,"sellAmountHighLimit":9.9999999E7},{"id":196,"baseCurrencyId":"63","tradeCurrencyId":"189","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"SUQA","tradeCurrencyNameEn":"SUQA","amountLowLimit":500.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":500.0,"sellAmountHighLimit":9.9999999E7},{"id":197,"baseCurrencyId":"63","tradeCurrencyId":"190","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"Pigeoncoin","tradeCurrencyNameEn":"PGN","amountLowLimit":20000.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":20000.0,"sellAmountHighLimit":9.9999999E7},{"id":199,"baseCurrencyId":"63","tradeCurrencyId":"192","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"Beetle
+        Coin","tradeCurrencyNameEn":"BEET","amountLowLimit":1100.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":1100.0,"sellAmountHighLimit":9.9999999E7},{"id":201,"baseCurrencyId":"63","tradeCurrencyId":"193","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"TurtleCoin","tradeCurrencyNameEn":"TRTL","amountLowLimit":11000.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":11000.0,"sellAmountHighLimit":9.9999999E7},{"id":202,"baseCurrencyId":"63","tradeCurrencyId":"194","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"TrustNote","tradeCurrencyNameEn":"TTT","amountLowLimit":100.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":100.0,"sellAmountHighLimit":9.9999999E7},{"id":203,"baseCurrencyId":"63","tradeCurrencyId":"195","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"Pascal
+        Coin","tradeCurrencyNameEn":"PASC","amountLowLimit":8.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":8.0,"sellAmountHighLimit":9.9999999E7},{"id":204,"baseCurrencyId":"1","tradeCurrencyId":"191","baseCurrencyName":"Bitcoin","baseCurrencyNameEn":"BTC","tradeCurrencyName":"Zcoin","tradeCurrencyNameEn":"XZC","amountLowLimit":0.3,"amountHighLimit":999999.0,"sellAmountLowLimit":0.3,"sellAmountHighLimit":999999.0},{"id":206,"baseCurrencyId":"63","tradeCurrencyId":"197","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"GRIN","tradeCurrencyNameEn":"GRIN","amountLowLimit":0.15,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":0.15,"sellAmountHighLimit":9.9999999E7},{"id":207,"baseCurrencyId":"63","tradeCurrencyId":"198","baseCurrencyName":"Tether","baseCurrencyNameEn":"USDT","tradeCurrencyName":"coinbull","tradeCurrencyNameEn":"NNB","amountLowLimit":500.0,"amountHighLimit":9.9999999E7,"sellAmountLowLimit":500.0,"sellAmountHighLimit":9.9999999E7}],"message":null,"status":200}'
     http_version: 
-  recorded_at: Wed, 01 Aug 2018 01:13:36 GMT
+  recorded_at: Thu, 14 Feb 2019 11:12:20 GMT
+- request:
+    method: get
+    uri: https://www.chaoex.info/unique/quote/tradeDeepin?baseCurrencyId=1&limit=20&tradeCurrencyId=3
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.chaoex.info
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 14 Feb 2019 11:12:20 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1;mode=block
+      X-Cdn-Edge:
+      - 7f50332,-
+      Set-Cookie:
+      - __cdnuid=7cf8b5d4b20a4b6ae659aa14509631b3; max-age=31536000; path=/; HttpOnly
+      X-Cache:
+      - bypass
+    body:
+      encoding: UTF-8
+      string: '{"attachment":{"asks":[["0.03380500","8.393"],["0.03380600","12.184"],["0.03380700","2.700"],["0.03380800","4.800"],["0.03381200","4.429"],["0.03381500","0.300"],["0.03381600","0.600"],["0.03381800","2.400"],["0.03382100","27.192"],["0.03383000","9.000"],["0.03383100","8.905"],["0.03383200","10.687"],["0.03383300","2.400"],["0.03383500","8.271"],["0.03383900","7.560"],["0.03384100","2.336"],["0.03384400","6.303"],["0.03385100","1.798"],["0.03385300","7.710"],["0.03386000","5.343"]],"bids":[["0.03359700","0.300"],["0.03359000","0.551"],["0.03358900","0.691"],["0.03358800","0.551"],["0.03358700","0.774"],["0.03357000","5.171"],["0.03356900","4.800"],["0.03356700","0.892"],["0.03356400","0.974"],["0.03356300","4.013"],["0.03355900","36.083"],["0.03355300","8.905"],["0.03355200","1.159"],["0.03354100","5.343"],["0.03354000","8.907"],["0.03353900","2.262"],["0.03353200","14.255"],["0.03353100","0.300"],["0.03352900","2.500"],["0.03352000","5.343"]]},"message":null,"status":200}'
+    http_version: 
+  recorded_at: Thu, 14 Feb 2019 11:12:20 GMT
 recorded_with: VCR 4.0.0

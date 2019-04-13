@@ -2,9 +2,9 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.hitbtc.com/api/1/public/BTCUSD/ticker
+    uri: https://api.hitbtc.com/api/2/public/ticker/BTCUSD
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       Connection:
@@ -12,23 +12,25 @@ http_interactions:
       Host:
       - api.hitbtc.com
       User-Agent:
-      - http.rb/2.1.0
+      - http.rb/3.0.0
   response:
     status:
       code: 200
       message: OK
     headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 02 Jan 2019 20:59:46 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '175'
-      Date:
-      - Tue, 03 Oct 2017 04:04:58 GMT
+      - '208'
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"ask":"4426.81","bid":"4421.24","last":"4424.93","low":"4369.63","high":"4488.01","open":"4430.15","volume":"1220.28","volume_quote":"5393541.6570","timestamp":1507003498505}'
+      string: '{"ask":"3856.30","bid":"3855.13","last":"3856.25","open":"3734.62","low":"3717.25","high":"3866.88","volume":"35006.25","volumeQuote":"133069217.6789","timestamp":"2019-01-02T20:59:46.694Z","symbol":"BTCUSD"}'
     http_version: 
-  recorded_at: Tue, 03 Oct 2017 04:04:58 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Wed, 02 Jan 2019 20:59:46 GMT
+recorded_with: VCR 4.0.0

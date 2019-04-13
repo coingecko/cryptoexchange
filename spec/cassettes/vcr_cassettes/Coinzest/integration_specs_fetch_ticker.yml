@@ -1,0 +1,198 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinzest.co.kr/api/public/market_summary
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinzest.co.kr
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.1
+      Date:
+      - Thu, 04 Apr 2019 06:56:53 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '2997'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+         "success": true,
+         "message": "10 row(s) returned",
+         "result":  [
+            {
+           "OpenSellOrders": 1,
+           "Low": 0.0015,
+           "OpenBuyOrders": 4,
+           "Volume": 0,
+           "Bid": 1.5041E-4,
+           "MarketName": "BTC-ETC",
+           "Ask": 0.015,
+           "TimeStamp": null,
+           "Last": 0.0015,
+           "Created": 1554361013275,
+           "PrevDay": 0.0015,
+           "BaseVolume": 0,
+           "High": 0.0015
+          },
+            {
+           "OpenSellOrders": 1,
+           "Low": 8.091E-5,
+           "OpenBuyOrders": 4,
+           "Volume": 0,
+           "Bid": 7.86E-6,
+           "MarketName": "BTC-XRP",
+           "Ask": 0.00779983,
+           "TimeStamp": null,
+           "Last": 8.091E-5,
+           "Created": 1554361013275,
+           "PrevDay": 8.091E-5,
+           "BaseVolume": 0,
+           "High": 8.091E-5
+          },
+            {
+           "OpenSellOrders": 0,
+           "Low": 8.0E-8,
+           "OpenBuyOrders": 4,
+           "Volume": 0,
+           "Bid": 7.92E-6,
+           "MarketName": "BTC-XLM",
+           "Ask": 0,
+           "TimeStamp": null,
+           "Last": 8.0E-8,
+           "Created": 1554361013275,
+           "PrevDay": 8.0E-8,
+           "BaseVolume": 0,
+           "High": 8.0E-8
+          },
+            {
+           "OpenSellOrders": 2,
+           "Low": 0.00348383,
+           "OpenBuyOrders": 4,
+           "Volume": 0,
+           "Bid": 1.131E-5,
+           "MarketName": "BTC-REP",
+           "Ask": 0.18999977,
+           "TimeStamp": null,
+           "Last": 0.00348383,
+           "Created": 1554361013275,
+           "PrevDay": 0.00348383,
+           "BaseVolume": 0,
+           "High": 0.00348383
+          },
+            {
+           "OpenSellOrders": 1,
+           "Low": 3.52E-5,
+           "OpenBuyOrders": 3,
+           "Volume": 0,
+           "Bid": 1.98E-6,
+           "MarketName": "BTC-POLY",
+           "Ask": 0.0034848,
+           "TimeStamp": null,
+           "Last": 3.52E-5,
+           "Created": 1554361013275,
+           "PrevDay": 3.52E-5,
+           "BaseVolume": 0,
+           "High": 3.52E-5
+          },
+            {
+           "OpenSellOrders": 1,
+           "Low": 3.49E-6,
+           "OpenBuyOrders": 2,
+           "Volume": 0,
+           "Bid": 1.0E-7,
+           "MarketName": "BTC-DENT",
+           "Ask": 3.455E-4,
+           "TimeStamp": null,
+           "Last": 3.49E-6,
+           "Created": 1554361013275,
+           "PrevDay": 3.49E-6,
+           "BaseVolume": 0,
+           "High": 3.49E-6
+          },
+            {
+           "OpenSellOrders": 0,
+           "Low": 0.03,
+           "OpenBuyOrders": 5,
+           "Volume": 0,
+           "Bid": 0.00100011,
+           "MarketName": "ETH-ETC",
+           "Ask": 0,
+           "TimeStamp": null,
+           "Last": 0.03,
+           "Created": 1554361013275,
+           "PrevDay": 0.03,
+           "BaseVolume": 0,
+           "High": 0.03
+          },
+            {
+           "OpenSellOrders": 0,
+           "Low": 5.89E-5,
+           "OpenBuyOrders": 4,
+           "Volume": 0,
+           "Bid": 1.53E-6,
+           "MarketName": "ETH-IOST",
+           "Ask": 0,
+           "TimeStamp": null,
+           "Last": 5.89E-5,
+           "Created": 1554361013275,
+           "PrevDay": 5.89E-5,
+           "BaseVolume": 0,
+           "High": 5.89E-5
+          },
+            {
+           "OpenSellOrders": 1,
+           "Low": 0.06400999,
+           "OpenBuyOrders": 4,
+           "Volume": 0,
+           "Bid": 1.67E-6,
+           "MarketName": "ETH-GNT",
+           "Ask": 6.32999996,
+           "TimeStamp": null,
+           "Last": 0.06400999,
+           "Created": 1554361013275,
+           "PrevDay": 0.06400999,
+           "BaseVolume": 0,
+           "High": 0.06400999
+          },
+            {
+           "OpenSellOrders": 4,
+           "Low": 6.0E-6,
+           "OpenBuyOrders": 2,
+           "Volume": 0,
+           "Bid": 1.0E-6,
+           "MarketName": "ETH-DENT",
+           "Ask": 5.9386E-4,
+           "TimeStamp": null,
+           "Last": 6.0E-6,
+           "Created": 1554361013275,
+           "PrevDay": 6.0E-6,
+           "BaseVolume": 0,
+           "High": 6.0E-6
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Thu, 04 Apr 2019 06:56:53 GMT
+recorded_with: VCR 4.0.0

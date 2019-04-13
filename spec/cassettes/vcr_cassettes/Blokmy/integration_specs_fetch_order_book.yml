@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://blokmy.com/api/v2/depth.json?market=btcmyr
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - blokmy.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 10 Nov 2018 07:46:59 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '79'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Set-Cookie:
+      - _mkra_stck=postgresql%3A1541836024.5149205; path=/; max-age=10; expires=Sat,
+        10 Nov 2018 07:47:09 -0000; HttpOnly; secure
+      - _session_id=%2FyHDDrAea9YVB8OyNL1jiL%2FVuBIrLs%2FM4zHkSSc9aPhQAny32LrMGSbYdeLP2jI5kQ%3D%3D--4%2BIHg3Ie%2FXx77Ki7--4WryPUtoCfG4lQBRGLsVBQ%3D%3D;
+        path=/; secure; HttpOnly
+      - _session_id=rP%2FVIlw%2F3lXAmCdXomc4hEuKPA4qxGtzvtjoYFad5BEKVArHftE4SWvOb7Akb7a%2BZw%3D%3D--jLmBEEChCeI9Hq8p--XPyDqmQQlpWQkiX8ST3wiA%3D%3D;
+        path=/; secure; HttpOnly
+      - incap_ses_530_1813126=uKyyJSzidlVuQn+dJfFaB/OM5lsAAAAAQ1hfuRMMC9+qIrNiaGxcrQ==;
+        path=/; Domain=.blokmy.com
+      - visid_incap_1813126=x2mkGiHARY22Xedl56XsrPOM5lsAAAAAQUIPAAAAAAA5K5FGJ1ilR7R78KT0C4oK;
+        expires=Sat, 09 Nov 2019 12:39:01 GMT; path=/; Domain=.blokmy.com
+      Etag:
+      - W/"fc95ada1a7a26e42ec63542f76641eda"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f91b6ad0-e9a5-401a-82ed-047291304fbe
+      X-Runtime:
+      - '0.008375'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Iinfo:
+      - 5-16273169-16273351 NNNN CT(0 0 0) RT(1541836018308 513) q(0 0 0 -1) r(2 2)
+        U2
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timestamp":1541836019,"asks":[["27200.0","0.03"]],"bids":[["25000.0","0.3"]]}'
+    http_version: 
+  recorded_at: Sat, 10 Nov 2018 07:46:59 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maker-stats.production.airswap.io/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - maker-stats.production.airswap.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2522'
+      Connection:
+      - close
+      Date:
+      - Mon, 01 Oct 2018 06:48:23 GMT
+      X-Amzn-Requestid:
+      - fc11f2d6-c545-11e8-b9a0-5b5450668edf
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amz-Apigw-Id:
+      - OEtwPGm5IAMFgdg=
+      Cache-Control:
+      - max-age=0
+      X-Amzn-Trace-Id:
+      - Root=1-5bb1c334-474a780007296900b6671780;Sampled=1
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 980817369a47eeca8d35b2a45534ef35.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - aJdMJvJgLS_VVfCy8gEHWaMBd0JVQlU8LqvggTto_HgcmDppSKLgrw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ETH_DAI":{"baseVolume":"21.922165913504134","quoteVolume":"5174.5064999999995","last":"0.004278542601395585","high24hr":"0.004278542601395585","low24hr":"0.00422545685285554"},"ETH_DTH":{"baseVolume":"2.834659186","quoteVolume":"24000","last":"0.00011809895930000001","high24hr":"0.00011817","low24hr":"0.00011809895930000001"},"ETH_REP":{"baseVolume":"2.0555414494505095","quoteVolume":"34.769","last":"0.059073904795432404","high24hr":"0.0594741181999625","low24hr":"0.059073904795432404"},"ETH_RHOC":{"baseVolume":"1.6357149","quoteVolume":"1500","last":"0.0010904766","high24hr":"0.0010904766","low24hr":"0.0010904766"},"ETH_AST":{"baseVolume":"1.17143104","quoteVolume":"3360.5","last":"0.0003557","high24hr":"0.000356079999999998","low24hr":"0.00034748"},"ETH_ZRX":{"baseVolume":"1.0738334932720002","quoteVolume":"382.6596","last":"0.00280882","high24hr":"0.00280882","low24hr":"0.00275939778"},"ETH_ENJ":{"baseVolume":"1.0065600000000001","quoteVolume":"4000","last":"0.00025164","high24hr":"0.00025164","low24hr":"0.00025164"},"ETH_BLZ":{"baseVolume":"0.8137542600000001","quoteVolume":"1500","last":"0.00054250284","high24hr":"0.00054250284","low24hr":"0.00054250284"},"ETH_SNT":{"baseVolume":"0.65034414","quoteVolume":"4000","last":"0.00016265","high24hr":"0.00016265","low24hr":"0.00016239414"},"ETH_CVC":{"baseVolume":"0.6","quoteVolume":"1105.24736449","last":"0.0005428649000007894","high24hr":"0.0005428649000007894","low24hr":"0.0005428649000007894"},"ETH_FUN":{"baseVolume":"0.22039992","quoteVolume":"3000","last":"0.00007346664","high24hr":"0.00007346664","low24hr":"0.00007346664"},"ETH_BNB":{"baseVolume":"0.198","quoteVolume":"4.5875460173728975","last":"0.043160330000000004","high24hr":"0.043160330000000004","low24hr":"0.043160330000000004"},"ETH_BAT":{"baseVolume":"0.1698766752","quoteVolume":"230","last":"0.00073859424","high24hr":"0.00073859424","low24hr":"0.00073859424"},"ETH_BLT":{"baseVolume":"0.06994674351585015","quoteVolume":"172.99007255936675","last":"0.00043497035401594413","high24hr":"0.00043497035401594413","low24hr":"0.0003996449567723343"},"ETH_SPANK":{"baseVolume":"0.031609544999999996","quoteVolume":"100","last":"0.00031609544999999995","high24hr":"0.00031609544999999995","low24hr":"0.00031609544999999995"},"ETH_SALT":{"baseVolume":"0.0106197972","quoteVolume":"5","last":"0.00212395944","high24hr":"0.00212395944","low24hr":"0.00212395944"},"ETH_ENG":{"baseVolume":"0.00280578","quoteVolume":"1","last":"0.00280578","high24hr":"0.00280578","low24hr":"0.00280578"}}'
+    http_version: 
+  recorded_at: Mon, 01 Oct 2018 06:48:23 GMT
+recorded_with: VCR 4.0.0
