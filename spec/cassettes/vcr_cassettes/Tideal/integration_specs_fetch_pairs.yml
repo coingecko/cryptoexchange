@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tideal.com/api/v2/markets.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - tideal.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 Oct 2018 10:18:53 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '502'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d99047a34cad26a414324b4c142e1470c1539857933; expires=Fri, 18-Oct-19
+        10:18:53 GMT; path=/; domain=.tideal.com; HttpOnly
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 43f2328d-3bde-42da-b90d-2202166db6cf
+      Etag:
+      - W/"570f635340b66ec01d8b6cdd15132889"
+      X-Runtime:
+      - '0.003930'
+      X-Powered-By:
+      - Phusion Passenger 5.2.3
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 46ba4374aa4c76b8-LAX
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"ethbtc","name":"ETH/BTC"},{"id":"ltcbtc","name":"LTC/BTC"},{"id":"cbtbtc","name":"CBT/BTC"},{"id":"xpabtc","name":"XPA/BTC"},{"id":"lbbtc","name":"LB/BTC"},{"id":"trvcbtc","name":"TRVC/BTC"},{"id":"tmtgbtc","name":"TMTG/BTC"},{"id":"bybbtc","name":"BYB/BTC"},{"id":"ltceth","name":"LTC/ETH"},{"id":"cbteth","name":"CBT/ETH"},{"id":"xpaeth","name":"XPA/ETH"},{"id":"trvceth","name":"TRVC/ETH"},{"id":"tmtgeth","name":"TMTG/ETH"},{"id":"btcusx","name":"BTC/USX"},{"id":"ethusx","name":"ETH/USX"}]'
+    http_version: 
+  recorded_at: Thu, 18 Oct 2018 10:18:53 GMT
+recorded_with: VCR 4.0.0

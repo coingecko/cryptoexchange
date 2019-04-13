@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://exchange-open-api.coineal.com/open/api/get_ticker?symbol=btcusdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - exchange-open-api.coineal.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 09 Oct 2018 13:15:16 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - Tengine/2.2.1
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"code":"0","msg":"suc","data":{"amount":102030338.05666530,"high":6710.15000000,"vol":15306.79832000,"last":6621.1500000000000000,"low":6611.59000000,"buy":"6617.57","sell":"6630.55","time":1539090904224}}'
+    http_version: 
+  recorded_at: Tue, 09 Oct 2018 13:15:16 GMT
+- request:
+    method: get
+    uri: https://exchange-open-api.coineal.com/open/api/get_ticker?symbol=btcusdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - exchange-open-api.coineal.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 09 Oct 2018 13:15:24 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - Tengine/2.2.1
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"code":"0","msg":"suc","data":{"amount":101953548.07929680,"high":6710.15000000,"vol":15295.26381000,"last":6629.8500000000000000,"low":6611.59000000,"buy":"6614.12","sell":"6630.55","time":1539090920555}}'
+    http_version: 
+  recorded_at: Tue, 09 Oct 2018 13:15:24 GMT
+recorded_with: VCR 4.0.0

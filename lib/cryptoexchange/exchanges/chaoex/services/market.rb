@@ -9,13 +9,14 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          output = super(ticker_url(market_pair))
+          pairs = Cryptoexchange::Exchanges::Chaoex::Services::Pairs.new.fetch
+          pair = pairs.select { |pair| pair.base == market_pair.base && pair.target == market_pair.target }.first
+          output = super(ticker_url(pair))
           adapt(output, market_pair)
         end
 
-        def ticker_url(market_pair)
-          base_id = market_pair.base_id
-          target_id = market_pair.target_id
+        def ticker_url(pair)
+          base_id, target_id = pair.inst_id.split("-")
           "#{Cryptoexchange::Exchanges::Chaoex::Market::API_URL}/quote/realTime?baseCurrencyId=#{target_id}&tradeCurrencyId=#{base_id}"
         end
 
@@ -31,7 +32,7 @@ module Cryptoexchange::Exchanges
           ticker.low    = NumericHelper.to_d(market['low'])
           ticker.ask    = NumericHelper.to_d(market['sell'])
           ticker.bid    = NumericHelper.to_d(market['buy'])
-          ticker.volume = NumericHelper.divide(NumericHelper.to_d(market['vol']), ticker.last)
+          ticker.volume = NumericHelper.to_d(market['vol'])
           ticker.timestamp = nil
           ticker.payload   = market
           ticker

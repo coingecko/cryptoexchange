@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://europe1.coindeal.com/api/v1/markets/market/info/?pair=BTC/EUR
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - europe1.coindeal.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Sat, 27 Oct 2018 23:01:41 GMT
+      Set-Cookie:
+      - XSRF-TOKEN=eyJpdiI6IndNajFyUzh2aHRWQkhZRVZwWnRCS1E9PSIsInZhbHVlIjoicjFWVmR0Sm9MU1lKYkloZHJkcFJhYjRsdm52RTdDYjlQNEJJcXdnb25UNUtDXC83YlJhNFpVY0xJUitRa2tZZkNzVHJtK2RWS3RsRjRpVFg4S3F0aTZBPT0iLCJtYWMiOiJlZDhmM2RjNGI1ZWMwZDkwMzQ2ZjQwMDc4MDI4NWZlNzk2OTIxMTA2YWEzYjQwNDAzNTJjNzQ3YTM4ODJmYzBmIn0%3D;
+        expires=Sun, 28-Oct-2018 01:01:41 GMT; Max-Age=7200; path=/; domain=.coindeal.com
+      - coindealcom_session=eyJpdiI6IlZXRmg4aGxIZ1ZhaU02MDN5TFJqYVE9PSIsInZhbHVlIjoienZZU09zMDA3amZYbkZWSVdyMEU2bFJlcXBzd1cxV1lWbmNrY0ZSYWpkK04wUEhtaFB3MWNFamRyaEJpdEVQSUJqWGwxMFdCNkQrT0d6XC8xKzdIMnZBPT0iLCJtYWMiOiJjY2ZhODY1OTA2Zjc2N2YyMzdlNGI3YjQ2ODU0YzRmMDk5ZmRhYzUwOTA3ZmMxNTNlNWYyMGEyYTIwYWQxM2IzIn0%3D;
+        expires=Sun, 28-Oct-2018 01:01:41 GMT; Max-Age=7200; path=/; domain=.coindeal.com
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"change":"0.3%","lastPrice":"5630.86000000","price24high":"5630.86000000","price24low":"5615.21000000","volumeBase":"4.02508908","volumeQuote":"22637.68","yourWalletBase":"0.00000000","yourWalletQuote":"0.00","btcPrice":"6456.70"}'
+    http_version: 
+  recorded_at: Sat, 27 Oct 2018 23:01:41 GMT
+recorded_with: VCR 4.0.0

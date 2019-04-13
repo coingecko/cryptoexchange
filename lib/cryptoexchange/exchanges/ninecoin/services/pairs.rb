@@ -5,6 +5,7 @@ module Cryptoexchange::Exchanges
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Ninecoin::Market::API_URL}/cy_mark_list"
 
         def fetch
+          return [] # API has moved or been taken down, docs are completely wrong
           output = super
           market_pairs = []
           output['data'].each do |pair|

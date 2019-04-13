@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Hitbtc
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Hitbtc::Market::API_URL}/public/symbols"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Hitbtc::Market::API_URL}/public/symbol"
 
         def fetch
           output = super
@@ -10,10 +10,10 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output['symbols'].map do |market|
+          output.map do |market|
             Cryptoexchange::Models::MarketPair.new({
-              base: market['commodity'],
-              target: market['currency'],
+              base: market['baseCurrency'],
+              target: market['quoteCurrency'],
               market: Hitbtc::Market::NAME
             })
           end

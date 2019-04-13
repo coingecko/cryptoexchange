@@ -1,0 +1,39 @@
+EM.run do
+
+  ws = WebSocket::EventMachine::Client.connect(:uri => 'wss://ws-feed.pro.coinbase.com')
+
+  ws.onopen do
+    puts "Connected"
+    ws.send({
+    "type": "subscribe",
+    "product_ids": [
+        "ETH-USD",
+        "ETH-EUR"
+    ],
+    "channels": [
+        "level2",
+        "heartbeat",
+        {
+            "name": "ticker",
+            "product_ids": [
+                "ETH-BTC",
+                "ETH-USD"
+            ]
+        }
+    ]
+})
+  end
+
+  ws.onmessage do |msg, type|
+    puts "Received message: #{msg}"
+  end
+
+  ws.onclose do |code, reason|
+    puts "Disconnected with status code: #{code}"
+  end
+
+  EventMachine.next_tick do
+    ws.send "Hello Server!"
+  end
+
+end

@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://blokmy.com/api/v2/tickers.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - blokmy.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 10 Nov 2018 07:46:58 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '853'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Set-Cookie:
+      - _mkra_stck=postgresql%3A1541836023.0986018; path=/; max-age=10; expires=Sat,
+        10 Nov 2018 07:47:08 -0000; HttpOnly; secure
+      - _session_id=KuXMpMnPt1wo13bjmeIM3JIpPMAmF2MSS3Bb7hwSoniuObXOE8lNSHG%2Fn51vDZ%2BkGQ%3D%3D--SjiUQ5by0CsI7RAj--jsqNxTvewukk1Oq4X2nTYw%3D%3D;
+        path=/; secure; HttpOnly
+      - _session_id=P62S2Dn87jAhWGxxgonjN0HocGVROrFOlbYiK8euJYn2Gq%2BJ4FHVumorTnOx%2FIK8fA%3D%3D--zmi%2BgF4JkUSqU6va--Jy9SNgVjgOxDOO6FGBlydQ%3D%3D;
+        path=/; secure; HttpOnly
+      - incap_ses_530_1813126=BPXLLvJZdG2HPn+dJfFaB/GM5lsAAAAAj+zSL99rzxFslV/DeuibJA==;
+        path=/; Domain=.blokmy.com
+      - visid_incap_1813126=iFBFAWfRSc+Phk3eXhb5MfGM5lsAAAAAQUIPAAAAAACshFDRsfHTMtDaGQOpJkXS;
+        expires=Sat, 09 Nov 2019 12:39:01 GMT; path=/; Domain=.blokmy.com
+      Etag:
+      - W/"9cbaa3d856818586b0e06c74f02db45e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 56eba39c-9aab-4d2d-9f12-4b734e7b799a
+      X-Runtime:
+      - '0.024910'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Iinfo:
+      - 5-16272353-16272867 NNNN CT(0 0 0) RT(1541836016102 1287) q(0 0 0 -1) r(3
+        3) U2
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"btcmyr":{"at":1541836018,"ticker":{"buy":"25000.0","sell":"27200.0","low":"26288.95","high":"26300.0","last":"26288.95","vol":"2.04837"}},"ethmyr":{"at":1541836018,"ticker":{"buy":"20.0","sell":"3000.0","low":"0.0","high":"0.0","last":"950.95","vol":"0.0"}},"ltcmyr":{"at":1541836018,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"203.85","vol":"0.0"}},"xrpmyr":{"at":1541836018,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"2.5","vol":"0.0"}},"ethbtc":{"at":1541836018,"ticker":{"buy":"0.0","sell":"0.0","low":"0.034049","high":"0.034049","last":"0.034151","vol":"0.0"}},"ltcbtc":{"at":1541836018,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.008461","vol":"0.0"}},"xrpbtc":{"at":1541836018,"ticker":{"buy":"0.0","sell":"0.0","low":"0.0","high":"0.0","last":"0.000073","vol":"0.0"}}}'
+    http_version: 
+  recorded_at: Sat, 10 Nov 2018 07:46:58 GMT
+recorded_with: VCR 4.0.0

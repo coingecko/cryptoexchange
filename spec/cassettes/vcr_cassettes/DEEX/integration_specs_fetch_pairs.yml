@@ -1,0 +1,145 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://stat-api.deex.exchange:2087/api/v1/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - stat-api.deex.exchange:2087
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 27 Sep 2018 15:54:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '7786'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d6a0c1d39a59274fa257f1121b7674e5e1538063662; expires=Fri, 27-Sep-19
+        15:54:22 GMT; path=/; domain=.deex.exchange; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 460f26041e38bba8-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result": [{"BaseCurrency": "CVN", "MarketCurrencyFullName": "DEEX",
+        "Active": true, "MarketCurrency": "DEEX"}, {"BaseCurrency": "RUBLE", "MarketCurrencyFullName":
+        "DEEX", "Active": true, "MarketCurrency": "DEEX"}, {"BaseCurrency": "DEEX.LTC",
+        "MarketCurrencyFullName": "DEEX", "Active": true, "MarketCurrency": "DEEX"},
+        {"BaseCurrency": "BTS", "MarketCurrencyFullName": "DEEX", "Active": true,
+        "MarketCurrency": "DEEX"}, {"BaseCurrency": "DONGFENG", "MarketCurrencyFullName":
+        "DEEX", "Active": true, "MarketCurrency": "DEEX"}, {"BaseCurrency": "USD",
+        "MarketCurrencyFullName": "DEEX", "Active": true, "MarketCurrency": "DEEX"},
+        {"BaseCurrency": "CVCOIN", "MarketCurrencyFullName": "DEEX", "Active": true,
+        "MarketCurrency": "DEEX"}, {"BaseCurrency": "DEEX.NEM", "MarketCurrencyFullName":
+        "DEEX", "Active": true, "MarketCurrency": "DEEX"}, {"BaseCurrency": "DEEX.ETH",
+        "MarketCurrencyFullName": "DEEX", "Active": true, "MarketCurrency": "DEEX"},
+        {"BaseCurrency": "DECENTRALIZED", "MarketCurrencyFullName": "DEEX", "Active":
+        true, "MarketCurrency": "DEEX"}, {"BaseCurrency": "GOLD", "MarketCurrencyFullName":
+        "DEEX", "Active": true, "MarketCurrency": "DEEX"}, {"BaseCurrency": "DEEX.KRM",
+        "MarketCurrencyFullName": "DEEX", "Active": true, "MarketCurrency": "DEEX"},
+        {"BaseCurrency": "DEEX.SPARTA", "MarketCurrencyFullName": "DEEX", "Active":
+        true, "MarketCurrency": "DEEX"}, {"BaseCurrency": "DEEX.DASH", "MarketCurrencyFullName":
+        "DEEX", "Active": true, "MarketCurrency": "DEEX"}, {"BaseCurrency": "TWITTERCOM",
+        "MarketCurrencyFullName": "DEEX", "Active": true, "MarketCurrency": "DEEX"},
+        {"BaseCurrency": "OPEN.DOGE", "MarketCurrencyFullName": "DEEX", "Active":
+        true, "MarketCurrency": "DEEX"}, {"BaseCurrency": "ILICOIN", "MarketCurrencyFullName":
+        "DEEX", "Active": true, "MarketCurrency": "DEEX"}, {"BaseCurrency": "FIRELOTTO",
+        "MarketCurrencyFullName": "DEEX", "Active": true, "MarketCurrency": "DEEX"},
+        {"BaseCurrency": "ASTRO", "MarketCurrencyFullName": "DEEX", "Active": true,
+        "MarketCurrency": "DEEX"}, {"BaseCurrency": "DEEX.PRIZM", "MarketCurrencyFullName":
+        "DEEX", "Active": true, "MarketCurrency": "DEEX"}, {"BaseCurrency": "CNY",
+        "MarketCurrencyFullName": "DEEX", "Active": true, "MarketCurrency": "DEEX"},
+        {"BaseCurrency": "DEEX.DOGE", "MarketCurrencyFullName": "DEEX", "Active":
+        true, "MarketCurrency": "DEEX"}, {"BaseCurrency": "OPEN.ETH", "MarketCurrencyFullName":
+        "DEEX", "Active": true, "MarketCurrency": "DEEX"}, {"BaseCurrency": "ARTEX",
+        "MarketCurrencyFullName": "DEEX", "Active": true, "MarketCurrency": "DEEX"},
+        {"BaseCurrency": "DEEX.BTC", "MarketCurrencyFullName": "DEEX", "Active": true,
+        "MarketCurrency": "DEEX"}, {"BaseCurrency": "DEEX.BCH", "MarketCurrencyFullName":
+        "DEEX", "Active": true, "MarketCurrency": "DEEX"}, {"BaseCurrency": "LAMBO",
+        "MarketCurrencyFullName": "DEEX", "Active": true, "MarketCurrency": "DEEX"},
+        {"BaseCurrency": "OPEN.BTC", "MarketCurrencyFullName": "DEEX", "Active": true,
+        "MarketCurrency": "DEEX"}, {"BaseCurrency": "BTC", "MarketCurrencyFullName":
+        "DEEX", "Active": true, "MarketCurrency": "DEEX"}, {"BaseCurrency": "DEEX",
+        "MarketCurrencyFullName": "DEEX.ETH", "Active": true, "MarketCurrency": "DEEX.ETH"},
+        {"BaseCurrency": "DEEX.EOS", "MarketCurrencyFullName": "DEEX.ETH", "Active":
+        true, "MarketCurrency": "DEEX.ETH"}, {"BaseCurrency": "DEEX.BTC", "MarketCurrencyFullName":
+        "DEEX.ETH", "Active": true, "MarketCurrency": "DEEX.ETH"}, {"BaseCurrency":
+        "BTS", "MarketCurrencyFullName": "DEEX.ETH", "Active": true, "MarketCurrency":
+        "DEEX.ETH"}, {"BaseCurrency": "USD", "MarketCurrencyFullName": "DEEX.ETH",
+        "Active": true, "MarketCurrency": "DEEX.ETH"}, {"BaseCurrency": "DEEX.PRIZM",
+        "MarketCurrencyFullName": "DEEX.ETH", "Active": true, "MarketCurrency": "DEEX.ETH"},
+        {"BaseCurrency": "CNY", "MarketCurrencyFullName": "DEEX.ETH", "Active": true,
+        "MarketCurrency": "DEEX.ETH"}, {"BaseCurrency": "DEEX", "MarketCurrencyFullName":
+        "DEEX.KRM", "Active": true, "MarketCurrency": "DEEX.KRM"}, {"BaseCurrency":
+        "USD", "MarketCurrencyFullName": "DEEX.KRM", "Active": true, "MarketCurrency":
+        "DEEX.KRM"}, {"BaseCurrency": "BTS", "MarketCurrencyFullName": "DEEX.KRM",
+        "Active": true, "MarketCurrency": "DEEX.KRM"}, {"BaseCurrency": "DEEX", "MarketCurrencyFullName":
+        "DEEX.PRIZM", "Active": true, "MarketCurrency": "DEEX.PRIZM"}, {"BaseCurrency":
+        "DEEX.ETH", "MarketCurrencyFullName": "DEEX.PRIZM", "Active": true, "MarketCurrency":
+        "DEEX.PRIZM"}, {"BaseCurrency": "DEEX.BTC", "MarketCurrencyFullName": "DEEX.PRIZM",
+        "Active": true, "MarketCurrency": "DEEX.PRIZM"}, {"BaseCurrency": "BTS", "MarketCurrencyFullName":
+        "DEEX.PRIZM", "Active": true, "MarketCurrency": "DEEX.PRIZM"}, {"BaseCurrency":
+        "USD", "MarketCurrencyFullName": "DEEX.PRIZM", "Active": true, "MarketCurrency":
+        "DEEX.PRIZM"}, {"BaseCurrency": "CNY", "MarketCurrencyFullName": "DEEX.PRIZM",
+        "Active": true, "MarketCurrency": "DEEX.PRIZM"}, {"BaseCurrency": "OPEN.BTC",
+        "MarketCurrencyFullName": "DEEX.PRIZM", "Active": true, "MarketCurrency":
+        "DEEX.PRIZM"}, {"BaseCurrency": "BTC", "MarketCurrencyFullName": "DEEX.PRIZM",
+        "Active": true, "MarketCurrency": "DEEX.PRIZM"}, {"BaseCurrency": "BTS", "MarketCurrencyFullName":
+        "CRYPVISER", "Active": true, "MarketCurrency": "CRYPVISER"}, {"BaseCurrency":
+        "DEEX", "MarketCurrencyFullName": "DEEX.BTC", "Active": true, "MarketCurrency":
+        "DEEX.BTC"}, {"BaseCurrency": "DEEX.EOS", "MarketCurrencyFullName": "DEEX.BTC",
+        "Active": true, "MarketCurrency": "DEEX.BTC"}, {"BaseCurrency": "DEEX.ETH",
+        "MarketCurrencyFullName": "DEEX.BTC", "Active": true, "MarketCurrency": "DEEX.BTC"},
+        {"BaseCurrency": "BTS", "MarketCurrencyFullName": "DEEX.BTC", "Active": true,
+        "MarketCurrency": "DEEX.BTC"}, {"BaseCurrency": "DEEX.SPARTA", "MarketCurrencyFullName":
+        "DEEX.BTC", "Active": true, "MarketCurrency": "DEEX.BTC"}, {"BaseCurrency":
+        "USD", "MarketCurrencyFullName": "DEEX.BTC", "Active": true, "MarketCurrency":
+        "DEEX.BTC"}, {"BaseCurrency": "DEEX.PRIZM", "MarketCurrencyFullName": "DEEX.BTC",
+        "Active": true, "MarketCurrency": "DEEX.BTC"}, {"BaseCurrency": "BTCCX", "MarketCurrencyFullName":
+        "DEEX.BTC", "Active": true, "MarketCurrency": "DEEX.BTC"}, {"BaseCurrency":
+        "DEEX", "MarketCurrencyFullName": "DEEX.DASH", "Active": true, "MarketCurrency":
+        "DEEX.DASH"}, {"BaseCurrency": "BTS", "MarketCurrencyFullName": "DEEX.DASH",
+        "Active": true, "MarketCurrency": "DEEX.DASH"}, {"BaseCurrency": "DEEX", "MarketCurrencyFullName":
+        "DEEX.LTC", "Active": true, "MarketCurrency": "DEEX.LTC"}, {"BaseCurrency":
+        "BTC", "MarketCurrencyFullName": "DEEX.LTC", "Active": true, "MarketCurrency":
+        "DEEX.LTC"}, {"BaseCurrency": "DEEX", "MarketCurrencyFullName": "DEEX.DOGE",
+        "Active": true, "MarketCurrency": "DEEX.DOGE"}, {"BaseCurrency": "USD", "MarketCurrencyFullName":
+        "DEEX.DOGE", "Active": true, "MarketCurrency": "DEEX.DOGE"}, {"BaseCurrency":
+        "DEEX", "MarketCurrencyFullName": "DEEX.SPARTA", "Active": true, "MarketCurrency":
+        "DEEX.SPARTA"}, {"BaseCurrency": "DEEX.BTC", "MarketCurrencyFullName": "DEEX.SPARTA",
+        "Active": true, "MarketCurrency": "DEEX.SPARTA"}, {"BaseCurrency": "BTS",
+        "MarketCurrencyFullName": "DEEX.SPARTA", "Active": true, "MarketCurrency":
+        "DEEX.SPARTA"}, {"BaseCurrency": "DEEX", "MarketCurrencyFullName": "ARTEX",
+        "Active": true, "MarketCurrency": "ARTEX"}, {"BaseCurrency": "BTS", "MarketCurrencyFullName":
+        "ARTEX", "Active": true, "MarketCurrency": "ARTEX"}, {"BaseCurrency": "DEEX",
+        "MarketCurrencyFullName": "DEEX.BCH", "Active": true, "MarketCurrency": "DEEX.BCH"},
+        {"BaseCurrency": "DEEX.ETH", "MarketCurrencyFullName": "DEEX.EOS", "Active":
+        true, "MarketCurrency": "DEEX.EOS"}, {"BaseCurrency": "DEEX.BTC", "MarketCurrencyFullName":
+        "DEEX.EOS", "Active": true, "MarketCurrency": "DEEX.EOS"}, {"BaseCurrency":
+        "DEEX", "MarketCurrencyFullName": "DEEX.NEM", "Active": true, "MarketCurrency":
+        "DEEX.NEM"}], "success": true}'
+    http_version: 
+  recorded_at: Thu, 27 Sep 2018 15:54:48 GMT
+recorded_with: VCR 4.0.0

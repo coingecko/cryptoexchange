@@ -4,8 +4,7 @@ module Cryptoexchange::Exchanges
       class Pairs < Cryptoexchange::Services::Pairs
         PAIRS_URLS = [
           "#{Cryptoexchange::Exchanges::Aex::Market::API_URL}/ticker.php?c=all&mk_type=btc",
-          "#{Cryptoexchange::Exchanges::Aex::Market::API_URL}/ticker.php?c=all&mk_type=bitcny",
-          "#{Cryptoexchange::Exchanges::Aex::Market::API_URL}/ticker.php?c=all&mk_type=bitusd"
+          "#{Cryptoexchange::Exchanges::Aex::Market::API_URL}/ticker.php?c=all&mk_type=bitcny"
         ]
 
         def fetch

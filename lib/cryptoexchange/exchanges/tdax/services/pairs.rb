@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Tdax
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Tdax::Market::API_URL}/public/getmarkets"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Tdax::Market::API_URL}/marketcap/"
 
         def fetch
           output = super
@@ -10,10 +10,11 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output.map do |pair|
+          output.map do |pair, _ticker|
+            base, target = pair.split('_')
             Cryptoexchange::Models::MarketPair.new(
-              base: pair['MarketCurrency'],
-              target: pair['BaseCurrency'],
+              base:   base,
+              target: target,
               market: Tdax::Market::NAME
             )
           end

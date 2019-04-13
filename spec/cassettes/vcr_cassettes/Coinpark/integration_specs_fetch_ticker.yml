@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinpark.cc/v1/mdata?cmd=ticker&pair=BIX_USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinpark.cc
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Tengine
+      Date:
+      - Sun, 07 Oct 2018 03:19:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '287'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - undefined
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-access-token, X-Requested-With
+      Access-Control-Max-Age:
+      - '172800'
+      X-Ca-Request-Id:
+      - B1696DF8-5ACF-4EF7-8F8B-50AB2D53A1B8
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"11f-zUWh6qvigXr7uvnSrxkyrzn0SUs"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '{"result":{"pair":"BIX_USDT","last":"0.3503","last_usd":"0.35","last_cny":"2.40","high":"0.4000","low":"0.3503","buy":"0.3503","buy_amount":"41.7317","sell":"0.4793","sell_amount":"15","vol":"30","percent":"-12.43%","timestamp":1538824128276,"base_last_cny":"2.40610000"},"cmd":"ticker"}'
+    http_version: 
+  recorded_at: Sun, 07 Oct 2018 03:19:54 GMT
+recorded_with: VCR 4.0.0

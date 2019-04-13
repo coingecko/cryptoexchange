@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dflowx.com/v1/market/ticker?symbol=ethusdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dflowx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.2
+      Date:
+      - Wed, 20 Feb 2019 03:37:21 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - SCOUTER=x10hpn49ibud8i; Max-Age=2147483647; Expires=Mon, 10-Mar-2087 06:51:28
+        GMT; Path=/
+    body:
+      encoding: UTF-8
+      string: '{"code":"0","msg":"success","data":{"ethusdt":{"quoteAssetName":"eth","high":147.73640000,"vol":4.48500000,"last":145.0000000000000000,"low":135.34790000,"buy":"139.00000","sell":"145.00000","baseAssetName":"usdt","time":1550617353569}}}'
+    http_version: 
+  recorded_at: Wed, 20 Feb 2019 03:37:21 GMT
+recorded_with: VCR 4.0.0

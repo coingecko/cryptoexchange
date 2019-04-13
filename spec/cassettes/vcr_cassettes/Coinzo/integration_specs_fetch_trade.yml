@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinzo.com/trades?pair=BTC-TRY
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinzo.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 20 Jan 2019 17:11:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d74cd75d8af8bd82a0635aceba4bc33481548004268; expires=Mon, 20-Jan-20
+        17:11:08 GMT; path=/; domain=.coinzo.com; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49c328985cb66b8b-LHR
+    body:
+      encoding: UTF-8
+      string: '[{"price":19024,"amount":0.00204515,"side":"SELL","created_at":1548003869},{"price":19024,"amount":0.00014423,"side":"SELL","created_at":1548003869},{"price":19024,"amount":0.01069172,"side":"SELL","created_at":1548003864},{"price":19034,"amount":0.01711389,"side":"SELL","created_at":1548003864},{"price":19034,"amount":0.00217765,"side":"SELL","created_at":1548003862},{"price":19034,"amount":0.02406461,"side":"SELL","created_at":1548003862},{"price":19034,"amount":0.00350296,"side":"SELL","created_at":1548003862},{"price":19034,"amount":0.01057031,"side":"SELL","created_at":1548003860},{"price":19034,"amount":0.00693764,"side":"SELL","created_at":1548003860},{"price":19034,"amount":0.00988418,"side":"SELL","created_at":1548003860},{"price":19072,"amount":0.00876381,"side":"SELL","created_at":1548003630},{"price":19066,"amount":0.00389004,"side":"BUY","created_at":1548003625},{"price":19066,"amount":0.01099626,"side":"BUY","created_at":1548003624},{"price":19066,"amount":0.00459245,"side":"BUY","created_at":1548003620},{"price":19066,"amount":0.01018037,"side":"BUY","created_at":1548003620},{"price":19066,"amount":0.00225991,"side":"BUY","created_at":1548003616},{"price":19043,"amount":0.00200275,"side":"BUY","created_at":1548003616},{"price":19036,"amount":0.01232406,"side":"BUY","created_at":1548003616},{"price":19036,"amount":0.0082312,"side":"BUY","created_at":1548003616},{"price":19036,"amount":0.02085347,"side":"BUY","created_at":1548003614},{"price":19036,"amount":0.0006737,"side":"BUY","created_at":1548003614},{"price":19036,"amount":0.00369656,"side":"BUY","created_at":1548003613},{"price":19036,"amount":0.01292261,"side":"BUY","created_at":1548003613},{"price":19036,"amount":0.01351753,"side":"BUY","created_at":1548003609},{"price":19017,"amount":0.018029,"side":"BUY","created_at":1548003478},{"price":19017,"amount":0.00530158,"side":"SELL","created_at":1548002706},{"price":19017,"amount":0.00675013,"side":"SELL","created_at":1548002706},{"price":19017,"amount":0.02158154,"side":"SELL","created_at":1548002702},{"price":19020,"amount":0.00820128,"side":"SELL","created_at":1548002702},{"price":19020,"amount":0.01356573,"side":"SELL","created_at":1548002698}]'
+    http_version: 
+  recorded_at: Sun, 20 Jan 2019 17:11:08 GMT
+recorded_with: VCR 4.0.0

@@ -5,6 +5,7 @@ RSpec.describe '9Coin integration specs' do
   let(:eth_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'eth', target: 'btc', market: 'ninecoin') }
 
   it 'fetch pairs' do
+    pending "9coin is broken"
     pairs = client.pairs('ninecoin')
     expect(pairs).not_to be_empty
 

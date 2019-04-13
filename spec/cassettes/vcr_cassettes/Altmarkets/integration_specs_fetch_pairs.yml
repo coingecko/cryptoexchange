@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://altmarkets.io/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - altmarkets.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Feb 2019 08:45:38 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2511'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d947ca92f4e25c4649ba6a6f0985ce5b01550652337; expires=Thu, 20-Feb-20
+        08:45:37 GMT; path=/; domain=.altmarkets.io; HttpOnly
+      Access-Control-Allow-Origin:
+      - http://altmarkets.io
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Origin
+      Version:
+      - HTTP/1.1
+      X-Real-Ip:
+      - 172.68.144.160
+      X-Forwarded-For:
+      - 60.52.30.3, 172.68.144.160
+      Host:
+      - altmarkets.io
+      X-Nginx-Proxy:
+      - 'true'
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - MY
+      X-Forwarded-Proto:
+      - https
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 60.52.30.3
+      Cdn-Loop:
+      - cloudflare
+      Etag:
+      - W/"2bae14ef4f3aea0f24f221f75c1da898"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9d0b02cc-5796-48e0-b984-31d2e0f6c687
+      X-Runtime:
+      - '0.015321'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4abfb2b69a59aa3e-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"alexbtc","name":"ALEX/BTC"},{"id":"altmbtc","name":"ALTM/BTC"},{"id":"bccbtc","name":"BCC/BTC"},{"id":"cfccbtc","name":"CFCC/BTC"},{"id":"chanbtc","name":"CHAN/BTC"},{"id":"civbtc","name":"CIV/BTC"},{"id":"cspnbtc","name":"CSPN/BTC"},{"id":"cnmcbtc","name":"CNMC/BTC"},{"id":"cvcbtc","name":"CVC/BTC"},{"id":"cyrbtc","name":"CYR/BTC"},{"id":"deibtc","name":"DEI/BTC"},{"id":"dogebtc","name":"DOGE/BTC"},{"id":"domobtc","name":"DOMO/BTC"},{"id":"dt3btc","name":"DT3/BTC"},{"id":"gocashbtc","name":"GOCASH/BTC"},{"id":"galibtc","name":"GALI/BTC"},{"id":"hcashbtc","name":"HCASH/BTC"},{"id":"helpbtc","name":"HELP/BTC"},{"id":"hwibtc","name":"HWI/BTC"},{"id":"huzubtc","name":"HUZU/BTC"},{"id":"hightbtc","name":"HIGHT/BTC"},{"id":"infwbtc","name":"INFW/BTC"},{"id":"ketobtc","name":"KETO/BTC"},{"id":"nycbtc","name":"NYC/BTC"},{"id":"nygbtc","name":"NYG/BTC"},{"id":"ltcbtc","name":"LTC/BTC"},{"id":"lvtbtc","name":"LVT/BTC"},{"id":"lsrbtc","name":"LSR/BTC"},{"id":"oasisbtc","name":"OASIS/BTC"},{"id":"onionbtc","name":"ONION/BTC"},{"id":"pengbtc","name":"PENG/BTC"},{"id":"pinebtc","name":"PINE/BTC"},{"id":"qbcdoge","name":"QBC/DOGE"},{"id":"qbcbtc","name":"QBC/BTC"},{"id":"ratbtc","name":"RAT/BTC"},{"id":"btcdoge","name":"BTC/DOGE"},{"id":"rogerbtc","name":"ROGER/BTC"},{"id":"runesbtc","name":"RUNES/BTC"},{"id":"qbsbtc","name":"QBS/BTC"},{"id":"safebtc","name":"SAFE/BTC"},{"id":"satcbtc","name":"SATC/BTC"},{"id":"smrtcbtc","name":"SMRTC/BTC"},{"id":"sunpbtc","name":"SUNP/BTC"},{"id":"swippbtc","name":"SWIPP/BTC"},{"id":"ttpcbtc","name":"TTPC/BTC"},{"id":"trbobtc","name":"TRBO/BTC"},{"id":"wbtcbtc","name":"WBTC/BTC"},{"id":"x42btc","name":"X42/BTC"},{"id":"xspcbtc","name":"XSPC/BTC"},{"id":"xbtgbtc","name":"XBTG/BTC"},{"id":"altmdoge","name":"ALTM/DOGE"},{"id":"drvdoge","name":"DRV/DOGE"},{"id":"dnsdoge","name":"DNS/DOGE"},{"id":"bccdoge","name":"BCC/DOGE"},{"id":"cyrdoge","name":"CYR/DOGE"},{"id":"cvcdoge","name":"CVC/DOGE"},{"id":"nycdoge","name":"NYC/DOGE"},{"id":"nygdoge","name":"NYG/DOGE"},{"id":"posdoge","name":"POS/DOGE"},{"id":"runesdoge","name":"RUNES/DOGE"},{"id":"trbodoge","name":"TRBO/DOGE"},{"id":"bccltc","name":"BCC/LTC"},{"id":"dogeltc","name":"DOGE/LTC"},{"id":"deiltc","name":"DEI/LTC"},{"id":"drvltc","name":"DRV/LTC"},{"id":"nycltc","name":"NYC/LTC"},{"id":"posltc","name":"POS/LTC"},{"id":"rogerltc","name":"ROGER/LTC"},{"id":"smrtcltc","name":"SMRTC/LTC"},{"id":"swippltc","name":"SWIPP/LTC"},{"id":"trboltc","name":"TRBO/LTC"},{"id":"x42ltc","name":"X42/LTC"}]'
+    http_version: 
+  recorded_at: Wed, 20 Feb 2019 08:45:38 GMT
+recorded_with: VCR 4.0.0

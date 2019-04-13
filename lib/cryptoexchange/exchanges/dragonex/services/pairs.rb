@@ -12,10 +12,10 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           output['data'].map do |pair|
             base, target = pair['symbol'].split('_')
-            Cryptoexchange::Models::Dragonex::MarketPair.new(
+            Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
-              id: pair['symbol_id'],
+              inst_id: pair['symbol_id'],
               market: Dragonex::Market::NAME
             )
           end

@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitex.la/api-v1/rest/btc_usd/market/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitex.la
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 07 Oct 2018 17:20:08 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3727b6b6a986b76888284367bc4e9d241538932808; expires=Mon, 07-Oct-19
+        17:20:08 GMT; path=/; domain=.bitex.la; HttpOnly
+      - _bitex_la_session=SzhGcC9xb0JGU2RSODFtOHBRdFBYdGV4Nzc0cExHeXk1VGVlUlVIQTM1ODB0eXhjL0FSK2JvYk5ST21HYnNBS2I1M044c21wWUV4UHZKOVVKS0k1Z3VXWnVmT0JFUFhSeE5YZmRIM3lUR215ZGdDbUY0ZHB3L1lhTEk5ZjZTYTF4QUVlNWVsTmRoQzR4S0RtMGNZSmhHK0MxMmFSM290RXZONTFwYnBnRjZicWQ4Y2Z5eUt3bzNaTTdoY29wak14LS1LTnF6ZnJDd0gzKytoelIxNGtaaTRRPT0%3D--21c4953fd2c648fc172b9936f820d9f877fc7d24;
+        path=/; secure; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - no-cache, no-store
+      Csrf-Token:
+      - ZCnCduAYKQLFb+CUM6JAKLwvjolzrhrdGEpa7LN0ybf91N8Wxereyd+m8HEdNlfomj6hKpPnvuiSAuA8VLH88w==
+      X-Request-Id:
+      - 12858902-cf61-4c6c-b8ea-2596daaa1a7f
+      X-Runtime:
+      - '0.011100'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 46620964dc81bc50-LHR
+    body:
+      encoding: UTF-8
+      string: '{"last":6541.31,"open":6558.89,"high":6579.79935678,"low":6537.024,"vwap":6551.20832398262,"volume":1.4460257,"bid":6537.0,"ask":6572.04397265,"price_before_last":6541.31}'
+    http_version: 
+  recorded_at: Sun, 07 Oct 2018 17:20:08 GMT
+recorded_with: VCR 4.0.0

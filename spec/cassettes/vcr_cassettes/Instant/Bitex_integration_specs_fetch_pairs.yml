@@ -12,16 +12,27 @@ http_interactions:
       Host:
       - api.instantbitex.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/3.3.0
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Tue, 31 Jul 2018 03:28:14 GMT
-      Server:
-      - Apache
+      - Tue, 02 Apr 2019 09:15:16 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - XSRF-TOKEN=eyJpdiI6InZwSUo0MlZBeUhmWFJxQ3RXRmd4QlE9PSIsInZhbHVlIjoiZHF2RVh6R2dad0RFTk9cL3VMaGFjV1VrTEFVdUdOSFBsU2J4TlZxOUZTQUhzdWQ5RHQ4NUFHVXdmMEVuMmZDMUtUOEJMTzlOeDRQWEdyMVwvNDlqdTFnUT09IiwibWFjIjoiNmQ5NmI2NDE1MWZhNDU0MDk2NWM0NzdhYzhlMzQzM2NkZmM5OGY1ZmIxNDRlOTdkMGNjNTcyNWFkMjAxODk0ZCJ9;
+        expires=Tue, 02-Apr-2019 11:15:16 GMT; Max-Age=7200; path=/
+      - __cfduid=d58520f23562e5e138406fe2cd69147821554196515; expires=Wed, 01-Apr-20
+        09:15:15 GMT; path=/; domain=.instantbitex.com; HttpOnly; Secure
+      - laravel_session=eyJpdiI6IkF4c2NNeWx1dUtyQ0IrV3lQU01KV0E9PSIsInZhbHVlIjoidmpNa2s4cWt1QXpvWWNCcnFIUk1uN3JuOU9oYzBXRHF4TUhsT01PTUNFMEpcL2F2WlNPaDE2K0hDMll2VFR0SjV6a3lEVEZZSjd0bXFpUlFEejRuVDR3PT0iLCJtYWMiOiIwMzgzMWI4YmZiZDU2YTk4MzJmMzM3ZGUyZDhkODc2NDRkYWYyYTRlMjNkNzA1ZmFiMTliYzE1YTFmZTg1MGM5In0%3D;
+        expires=Tue, 02-Apr-2019 11:15:16 GMT; Max-Age=7200; path=/; HttpOnly
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -32,22 +43,21 @@ http_interactions:
       - 'true'
       Cache-Control:
       - no-cache, private
-      Set-Cookie:
-      - XSRF-TOKEN=eyJpdiI6ImtyU3k4VTk1UFNUOFM0SmR1eDhhR0E9PSIsInZhbHVlIjoiVzlJTlcxSFlqUm1RdEp5OFNWYWZVT1BmejBlMDc0XC9nXC9BOEZpM1BVTk5aSUVmMVlqcU1GanY1U0JPd2g3c2NtRWFheUtwSytHWUN1M1dEWFNxRDB4QT09IiwibWFjIjoiYjM4ODQ0YmI2NzU1OTE2NDA2YzI3MDc5ZDljZTExZGU0OTMyZmI2MjNlYWJjNTRkNTRkMTljNjg0NTE5MGZmMyJ9;
-        expires=Tue, 31-Jul-2018 05:28:14 GMT; Max-Age=7200; path=/
-      - laravel_session=eyJpdiI6IjdmRnhPQjlZMU9RdFBreHlySFNXRHc9PSIsInZhbHVlIjoiNUM4ZGFjQXVGUjMzRU5aM21sOFFzWFp5ZWxWTHA0ME84bWprWlR4aXdCMXpzZjZuXC9qS1BkbzE4OGlzc284ZW1GeXowRnpKaE5JVVpjekltNmFmZ1d3PT0iLCJtYWMiOiI3OWFkZDUzOGQ5Y2FlZWFhMmIzN2FjOWRiMTJjYTA3YmMzNWYxNjNhZmNkYjA4OTMyMDhlNTAwM2UwY2YzNmY4In0%3D;
-        expires=Tue, 31-Jul-2018 05:28:14 GMT; Max-Age=7200; path=/; HttpOnly
+      X-Ratelimit-Limit:
+      - '20'
+      X-Ratelimit-Remaining:
+      - '19'
       Vary:
       - Accept-Encoding
-      Content-Length:
-      - '194'
-      Connection:
-      - close
-      Content-Type:
-      - text/html; charset=UTF-8
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4c11b27deca832bf-HKG
     body:
       encoding: UTF-8
-      string: '{"status":"1","message":"Success","combinations":["ETH_BTC","XRP_BTC","BCH_BTC","LTC_BTC","EOS_BTC","BTC_USDT","DOGE_BTC","ZEC_BTC","BTG_BTC","XMR_BTC","ETC_BTC","DASH_BTC","VEN_BTC","IBX_BTC"]}'
+      string: '{"status":"1","message":"Success","combinations":["ETH_BTC","XRP_BTC","LTC_BTC","EOS_BTC","BTC_USDT","DOGE_BTC","ZEC_BTC","BTG_BTC","XMR_BTC","ETC_BTC","DASH_BTC","VET_BTC","ATCC_BTC","IOP_BTC","IOP_USDT","IOP_ETH","YOC_BTC","YOC_USDT","YOC_ETH","PYX_BTC","PYX_USDT","PYX_ETH","ETOR_BTC","BCZERO_BTC","BCZERO_USDT","ECOREAL_BTC","ECOREAL_USDT","ECOREAL_ETH","DDX_BTC","DDX_USDT","DDX_ETH","MITH_BTC","MITH_USDT","MITH_ETH","WIX_BTC","WIX_USDT","WIX_ETH","FRAS_BTC","FRAS_USDT","FRAS_ETH","ETY_BTC","ETY_USDT","ETY_ETH","META_BTC","META_USDT","META_ETH","TBCC_BTC","COBRA_BTC","MOLK_BTC","MOLK_ETH","EVN_BTC","ZBA_BTC","ZBA_USDT","ZBA_ETH","HDR_BTC","ATCP_BTC","ARISTO_BTC","LMX_BTC","BCIM_BTC","BTSL_BTC","FREE_BTC","DIR_BTC","DIR_USDT","DIR_ETH","AAA_BTC","DTCH_BTC","LBC_USDT","LBC_ETH","LBC_BTC","PZM_BTC","B2G_BTC","GRFT_BTC","SFX_BTC","DMHCO_BTC","XSPC_BTC","AMA_BTC","CROWD_BTC","CRV_BTC","BTB_BTC","INX_BTC","GFN_ETH","LMY_BTC","KRC_BTC","AGCMN_BTC","HN_BTC","X42_BTC","X42_USDT","X42_ETH","BYT_BTC","XET_BTC","GAD_BTC","XET_USDT","XET_ETH","BYT_USDT","BYT_ETH","BTC_USDC","ETH_USDC","XRP_USDC","BTH_BTC","BTH_USDT","BTH_ETH","KIT_BTC","ELET_BTC","ELET_USDC","ELET_USDT","ELET_ETH","CRGO_BTC","CRGO_USDC","CRGO_USDT","CRGO_ETH","RTD_BTC","WWTC_BTC","BNANA_BTC","RTD_USDC","RTD_USDT","RTD_ETH","ECHT_BTC","ECHT_USDT","GLX_BTC","GLX_USDT","SWOCO_BTC","HBX_BTC","HBX_USDC","HBX_USDT","HBX_ETH","FST_BTC","SWC_BTC","SWC_USDC","SWC_USDT","SWC_ETH","BTZ_BTC","EGWCAP_BTC","EGWCAP_USDC","EGWCAP_USDT","EGWCAP_ETH","CLO_BTC","CLO_USDC","CLO_USDT","CLO_ETH","RDAN_BTC","RDAN_USDC","RDAN_USDT","RDAN_ETH","LPK_BTC","LPK_USDC","LPK_USDT","LPK_ETH","ETX_BTC","XLM_BTC","CDASH_BTC","CDASH_USDC","CDASH_USDT","CDASH_ETH","BCASH_BTC","RRGC_BTC","RRGC_USDC","RRGC_USDT","RRGC_ETH","BCASH_ETH","OTO_BTC","BCASH_USDC","BCASH_USDT","VOLTZ_BTC","VOLTZ_USDC","VOLTZ_USDT","VOLTZ_ETH","ZER_BTC","FAIR_BTC","TTX_BTC","TTX_ETH","UBIT_BTC","UBIT_USDC","UBIT_USDT","UBIT_ETH","ENTRC_BTC","BLCR_BTC"]}'
     http_version: 
-  recorded_at: Tue, 31 Jul 2018 03:28:14 GMT
+  recorded_at: Tue, 02 Apr 2019 09:15:16 GMT
 recorded_with: VCR 4.0.0

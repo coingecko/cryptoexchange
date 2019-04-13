@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unidax.com/open/api/get_ticker?symbol=zrxusdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.unidax.com
+      User-Agent:
+      - http.rb/3.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Tengine/2.2.3
+      Date:
+      - Fri, 22 Mar 2019 09:17:33 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"code":"0","msg":"suc","data":{"high":0.27410000,"vol":201660.55000000,"last":0.2606000000000000,"low":0.25100000,"buy":"0.2595","sell":"0.2620","time":1553246205265}}'
+    http_version: 
+  recorded_at: Fri, 22 Mar 2019 09:17:33 GMT
+recorded_with: VCR 4.0.0

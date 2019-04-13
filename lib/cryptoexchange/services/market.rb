@@ -8,7 +8,7 @@ module Cryptoexchange
       end
 
       def fetch(endpoint)
-        LruTtlCache.ticker_cache.getset(endpoint) do
+        Cryptoexchange::Cache.ticker_cache.fetch(endpoint) do
           begin
             response = http_get(endpoint)
             if response.code == 200
@@ -31,7 +31,7 @@ module Cryptoexchange
       end
 
       def fetch_using_post(endpoint, params, headers = false)
-        LruTtlCache.ticker_cache.getset([endpoint, params]) do
+        Cryptoexchange::Cache.ticker_cache.fetch([endpoint, params]) do
           response = if headers
                        http_post_with_headers(endpoint, params, headers)
                      else
@@ -45,15 +45,15 @@ module Cryptoexchange
       private
 
       def http_get(endpoint)
-        HTTP.timeout(:write => 2, :connect => 15, :read => 18).follow.get(endpoint)
+        HTTP.timeout(25).follow.get(endpoint)
       end
 
       def http_post(endpoint, params)
-        HTTP.timeout(:write => 2, :connect => 5, :read => 8).post(endpoint, :json => params)
+        HTTP.timeout(15).post(endpoint, :json => params)
       end
 
       def http_post_with_headers(endpoint, params, headers)
-        HTTP.timeout(:write => 2, :connect => 5, :read => 8).headers(headers).post(endpoint, :body => params)
+        HTTP.timeout(15).headers(headers).post(endpoint, :body => params)
       end
 
     end

@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://indodax.com/api/btc_idr/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - indodax.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 16 Sep 2018 03:43:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0adaf2b752e3132d2b11a56f90b483b51537069398; expires=Mon, 16-Sep-19
+        03:43:18 GMT; path=/; domain=.indodax.com; HttpOnly; Secure
+      X-Powered-By:
+      - INDODAX
+      V:
+      - '2'
+      Access-Control-Allow-Origin:
+      - https://indodax.com
+      X-Served-By:
+      - PA4
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 45b053fcacb2340f-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ticker":{"high":"97140000","low":"96000000","vol_btc":"79.78584836","vol_idr":"7709503807","last":"96500000","buy":"96501000","sell":"96574000","server_time":1537069397}}'
+    http_version: 
+  recorded_at: Sun, 16 Sep 2018 03:43:18 GMT
+recorded_with: VCR 4.0.0

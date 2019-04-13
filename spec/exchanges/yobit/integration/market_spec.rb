@@ -14,6 +14,11 @@ RSpec.describe 'Yobit integration specs' do
     expect(pair.market).to eq 'yobit'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'yobit', base: px_btc_pair.base, target: px_btc_pair.target
+    expect(trade_page_url).to eq "https://yobit.net/en/trade/PX/BTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(px_btc_pair)
 

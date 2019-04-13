@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitmax.io/api/v1/trades?symbol=ETH-BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitmax.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 02 Oct 2018 11:39:00 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '656'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc2058a344d833d3bbdfbea6244b1c67c1538480339; expires=Wed, 02-Oct-19
+        11:38:59 GMT; path=/; domain=.bitmax.io; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Frame-Operations:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4636e2cb1ce53283-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"m":"marketTrades","s":"ETH/BTC","trades":[{"p":"0.034777","q":"0.1672000","t":1538480230844,"bm":true},{"p":"0.034777","q":"0.0664000","t":1538480230845,"bm":true},{"p":"0.034759","q":"0.0640000","t":1538480245123,"bm":true},{"p":"0.034763","q":"1.2048000","t":1538480257271,"bm":false},{"p":"0.03474","q":"0.1208000","t":1538480259358,"bm":true},{"p":"0.034774","q":"0.0552000","t":1538480267135,"bm":false},{"p":"0.03477","q":"0.5304000","t":1538480318132,"bm":true},{"p":"0.034763","q":"0.1464000","t":1538480319166,"bm":true},{"p":"0.034764","q":"1.5520000","t":1538480319258,"bm":true},{"p":"0.034793","q":"0.0360000","t":1538480332293,"bm":false}]}'
+    http_version: 
+  recorded_at: Tue, 02 Oct 2018 11:39:00 GMT
+recorded_with: VCR 4.0.0

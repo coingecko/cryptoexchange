@@ -20,7 +20,7 @@ module Cryptoexchange::Exchanges
               target: target,
               market: Coinex::Market::NAME
             })
-          end
+          end.compact
         end
       end
     end

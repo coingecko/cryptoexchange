@@ -10,7 +10,7 @@ module Cryptoexchange::Exchanges
         def ticker_url(market_pair)
           base   = market_pair.base_raw
           target = market_pair.target_raw
-          "#{Cryptoexchange::Exchanges::BtcAlpha::Market::API_URL}/orderbook/#{base}_#{target}?status=2"
+          "#{Cryptoexchange::Exchanges::BtcAlpha::Market::API_URL}/orderbook/#{base}_#{target}?status=2/"
         end
 
         def adapt(output, market_pair)

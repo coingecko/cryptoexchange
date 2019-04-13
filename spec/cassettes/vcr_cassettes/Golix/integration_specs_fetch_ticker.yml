@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://golix.com/api/v1/tickers/btcusd
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - golix.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '115'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      - max-age=63072000; includeSubDomains
+      X-Request-Id:
+      - 90e5e70e-47f4-4499-9873-20f3d8ee55a5
+      Etag:
+      - W/"0a769779be92050a597bee6758625e22"
+      X-Runtime:
+      - '0.011719'
+      Date:
+      - Mon, 10 Sep 2018 19:40:12 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.3.4
+      Server:
+      - nginx/1.14.0 + Phusion Passenger 5.3.4
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1536608412,"ticker":{"buy":"13500.0","sell":"30000.0","low":"0.0","high":"0.0","last":"30000.0","vol":"0.0"}}'
+    http_version: 
+  recorded_at: Mon, 10 Sep 2018 19:40:19 GMT
+recorded_with: VCR 4.0.0

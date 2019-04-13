@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coinsbit.io/api/v1/public/ticker?market=ETH_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coinsbit.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 04 Oct 2018 07:24:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db0ea5eb1553bdd3e9738b4a1a137a1361538637887; expires=Fri, 04-Oct-19
+        07:24:47 GMT; path=/; domain=.coinsbit.io; HttpOnly; Secure
+      Cache-Control:
+      - no-cache, private
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4645e92eba3fa2f0-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"message":"","result":{"bid":"0.03224","ask":"0.03570994","open":"0.0338","high":"0.0341059","low":"0.0337","last":"0.03399765","volume":"203.56258769","deal":"6.9053787371679071","change":"1"}}'
+    http_version: 
+  recorded_at: Thu, 04 Oct 2018 07:24:48 GMT
+recorded_with: VCR 4.0.0

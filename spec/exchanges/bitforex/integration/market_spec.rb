@@ -2,7 +2,8 @@ require 'spec_helper'
 
 RSpec.describe 'Bitforex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: 'bitforex') }
+  let(:market) { 'bitforex' }
+  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: market) }
 
   it 'fetch pairs' do
     pairs = client.pairs('bitforex')
@@ -12,6 +13,11 @@ RSpec.describe 'Bitforex integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'bitforex'
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: btc_usdt_pair.base, target: btc_usdt_pair.target
+    expect(trade_page_url).to eq 'https://www.bitforex.com/en/trade/spotTrading?commodityCode=BTC&currencyCode=USDT'
   end
 
   it 'fetch ticker' do

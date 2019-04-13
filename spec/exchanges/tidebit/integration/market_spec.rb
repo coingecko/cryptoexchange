@@ -14,6 +14,11 @@ RSpec.describe 'Tidebit integration specs' do
     expect(pair.market).to eq 'tidebit'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'tidebit', base: btc_hkd_pair.base, target: btc_hkd_pair.target
+    expect(trade_page_url).to eq "https://www.tidebit.com/markets/btchkd"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_hkd_pair)
 

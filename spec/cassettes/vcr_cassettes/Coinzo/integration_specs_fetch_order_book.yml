@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinzo.com/order-book?pair=BTC-TRY
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinzo.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 20 Jan 2019 17:06:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d290893f33d888bda26721f191593fb571548003998; expires=Mon, 20-Jan-20
+        17:06:38 GMT; path=/; domain=.coinzo.com; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49c321ff1f756b91-LHR
+    body:
+      encoding: UTF-8
+      string: '{"asks":[{"price":19021,"amount":0.00696378,"count":1},{"price":19040,"amount":0.05212014,"count":2},{"price":19043,"amount":0.01911676,"count":1},{"price":19074,"amount":0.02521276,"count":1},{"price":19078,"amount":0.02291569,"count":1},{"price":19089,"amount":0.02092842,"count":1},{"price":19091,"amount":0.01561707,"count":1},{"price":19093,"amount":0.0259058,"count":1},{"price":19108,"amount":0.01098344,"count":1},{"price":19109,"amount":0.02924038,"count":1},{"price":19110,"amount":0.01718673,"count":1},{"price":19112,"amount":0.00420248,"count":1},{"price":19117,"amount":0.00260466,"count":1},{"price":19119,"amount":0.01457553,"count":1},{"price":19135,"amount":0.00663243,"count":1},{"price":19136,"amount":0.00958517,"count":1},{"price":19138,"amount":0.02448851,"count":2},{"price":19139,"amount":0.01277808,"count":1},{"price":19144,"amount":0.00572091,"count":1},{"price":19149,"amount":0.02455624,"count":2},{"price":19158,"amount":0.00139711,"count":1},{"price":19163,"amount":0.01486025,"count":1},{"price":19168,"amount":0.01666406,"count":1},{"price":19174,"amount":0.00340274,"count":1},{"price":19194,"amount":0.02720269,"count":2},{"price":19204,"amount":0.00578463,"count":1},{"price":19208,"amount":0.01975404,"count":1},{"price":19210,"amount":0.02037294,"count":1},{"price":19213,"amount":0.03099923,"count":1},{"price":19214,"amount":0.01500335,"count":1}],"bids":[{"price":19010,"amount":0.02032749,"count":1},{"price":19009,"amount":0.00717252,"count":1},{"price":19008,"amount":0.06284933,"count":3},{"price":19005,"amount":0.0138602,"count":1},{"price":19002,"amount":0.01251955,"count":1},{"price":19001,"amount":0.0278879,"count":2},{"price":18999,"amount":0.01518746,"count":1},{"price":18998,"amount":0.01777829,"count":1},{"price":18997,"amount":0.02803299,"count":1},{"price":18995,"amount":0.02871811,"count":2},{"price":18994,"amount":0.02817292,"count":2},{"price":18993,"amount":0.04266836,"count":2},{"price":18991,"amount":0.01931573,"count":2},{"price":18990,"amount":0.02631251,"count":2},{"price":18987,"amount":0.04673222,"count":2},{"price":18980,"amount":0.02851126,"count":2},{"price":18977,"amount":0.00194352,"count":1},{"price":18976,"amount":0.0297968,"count":1},{"price":18972,"amount":0.02543544,"count":1},{"price":18966,"amount":0.0284345,"count":1},{"price":18964,"amount":0.01939222,"count":1},{"price":18961,"amount":0.0275543,"count":1},{"price":18960,"amount":0.01478752,"count":1},{"price":18953,"amount":0.01641443,"count":1},{"price":18952,"amount":0.02076428,"count":1},{"price":18941,"amount":0.02863026,"count":1},{"price":18939,"amount":0.01130726,"count":1},{"price":18938,"amount":0.00273288,"count":1},{"price":18928,"amount":0.02878737,"count":1},{"price":18923,"amount":0.00542193,"count":1}],"total":{"bid":175694.73390692,"ask":23.66328478}}'
+    http_version: 
+  recorded_at: Sun, 20 Jan 2019 17:06:38 GMT
+recorded_with: VCR 4.0.0

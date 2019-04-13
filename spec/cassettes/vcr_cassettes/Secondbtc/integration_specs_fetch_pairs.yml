@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://secondbtc.com/api/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - secondbtc.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 11 Nov 2018 04:21:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3331'
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=e671q35jd1vlmhl06oaspavgr0; path=/
+      - __cfduid=d00ae92aa798ea0cab40a97b942f233c11541910068; expires=Mon, 11-Nov-19
+        04:21:08 GMT; path=/; domain=.secondbtc.com; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Accept-Ranges:
+      - bytes
+      X-Turbo-Charged-By:
+      - LiteSpeed
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 477df86ae8e6a548-NRT
+    body:
+      encoding: UTF-8
+      string: '{"BTC_ETH":{"id":200,"last":"0.03305047","lowestAsk":"0.03425000","highestBid":"0.03303536","percentChange":0.48185,"baseVolume":"100.68435947","quoteVolume":"3038.66037300","isFrozen":"0","high24hr":"0.03333332","low24hr":"0.03289042"},"BTC_XRP":{"id":205,"last":"0.00007904","lowestAsk":"0.00012900","highestBid":"0.00007885","percentChange":0.03797,"baseVolume":"8.23240683","quoteVolume":"103798.87000000","isFrozen":"0","high24hr":"0.00008019","low24hr":"0.00007826"},"BTC_LTC":{"id":206,"last":"0.00811544","lowestAsk":"0.01180000","highestBid":"0.00810154","percentChange":-0.138556,"baseVolume":"70.13449640","quoteVolume":"8605.93742700","isFrozen":"0","high24hr":"0.00819788","low24hr":"0.00808000"},"BTC_WTC":{"id":210,"last":"0.00047080","lowestAsk":"0.00064836","highestBid":"0.00047109","percentChange":1.260378,"baseVolume":"1.13969251","quoteVolume":"2420.08190000","isFrozen":"0","high24hr":"0.00047920","low24hr":"0.00046098"},"BTC_GNT":{"id":211,"last":"0.00002608","lowestAsk":"0.00003262","highestBid":"0.00002575","percentChange":1.755755,"baseVolume":"0.27665971","quoteVolume":"10763.27900000","isFrozen":"0","high24hr":"0.00002637","low24hr":"0.00002546"},"ETH_LTC":{"id":206,"last":"0.24549601","lowestAsk":"0.45000000","highestBid":"0.24509729","percentChange":-0.722369,"baseVolume":"12.81302700","quoteVolume":"52.02342333","isFrozen":"0","high24hr":"0.24807193","low24hr":"0.24517371"},"ETH_WTC":{"id":210,"last":"0.01421865","lowestAsk":"0.01921933","highestBid":"0.01424860","percentChange":1.236023,"baseVolume":"25.86419477","quoteVolume":"1819.79910000","isFrozen":"0","high24hr":"0.01458801","low24hr":"0.01399356"},"ETH_GNT":{"id":211,"last":"0.00078206","lowestAsk":"0.00090825","highestBid":"0.00077974","percentChange":0.900552,"baseVolume":"1.73341141","quoteVolume":"2208.40300000","isFrozen":"0","high24hr":"0.00079611","low24hr":"0.00077054"},"ETH_BBC":{"id":215,"last":"0.00247496","lowestAsk":"0.00020000","highestBid":"0.00000000","percentChange":-100,"baseVolume":"0.00000000","quoteVolume":"0.00000000","isFrozen":"0","high24hr":"0.00000000","low24hr":"0.00000000"},"USDT_BTC":{"id":199,"last":"6429.01000000","lowestAsk":"6550.00000000","highestBid":"6465.46980000","percentChange":-0.134311,"baseVolume":"117326.37770371","quoteVolume":"18.20014092","isFrozen":"0","high24hr":"6468.75640000","low24hr":"6423.50000000"},"USDT_ETH":{"id":200,"last":"212.36010000","lowestAsk":"219.34900000","highestBid":"212.33850000","percentChange":0.30366,"baseVolume":"12773.11059056","quoteVolume":"59.77707870","isFrozen":"0","high24hr":"215.42900000","low24hr":"211.81230000"},"USDT_XRP":{"id":205,"last":"0.50760000","lowestAsk":"0.56624864","highestBid":"0.50740000","percentChange":-0.235849,"baseVolume":"3655.50674825","quoteVolume":"7153.67995000","isFrozen":"0","high24hr":"0.51730000","low24hr":"0.50360000"},"USDT_LTC":{"id":206,"last":"52.19340000","lowestAsk":"56.77960000","highestBid":"52.09490000","percentChange":-0.320276,"baseVolume":"15627.74706782","quoteVolume":"297.37652848","isFrozen":"0","high24hr":"52.95700000","low24hr":"51.92650000"},"USDT_BBC":{"id":215,"last":"0.59990000","lowestAsk":"0.02000000","highestBid":"0.00000000","percentChange":-100,"baseVolume":"0.00000000","quoteVolume":"0.00000000","isFrozen":"0","high24hr":"0.00000000","low24hr":"0.00000000"}}'
+    http_version: 
+  recorded_at: Sun, 11 Nov 2018 04:21:10 GMT
+recorded_with: VCR 4.0.0

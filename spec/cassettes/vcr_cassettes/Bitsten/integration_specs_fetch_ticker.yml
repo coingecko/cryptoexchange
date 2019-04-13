@@ -1,0 +1,336 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitsten.com/api/v1/public/getticker/all
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitsten.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 07 Oct 2018 02:42:22 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d10785e034e9a9ceaa3e02ed194d740401538880142; expires=Mon, 07-Oct-19
+        02:42:22 GMT; path=/; domain=.bitsten.com; HttpOnly; Secure
+      - ci_session=9n40qbapvirohukrnq5fs15c4uvjahvb; expires=Sun, 07-Oct-2018 04:42:22
+        GMT; Max-Age=7200; path=/; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Accept-Ranges:
+      - bytes
+      X-Turbo-Charged-By:
+      - LiteSpeed
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 465d039a4eb9a362-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+            "success": true,
+            "message": "",
+            "result": {
+                "stn_btc": {
+                    "last": "0.00000302",
+                    "bid": "0.00000302",
+                    "ask": "0.00000339",
+                    "high": "0.00000356",
+                    "low": "0.00000300",
+                    "open": "0.00000342",
+                    "basevolume": "0.43820903",
+                    "btcvolume": "0.43820903",
+                    "change": "-11.70"
+                },
+                "ltc_btc": {
+                    "last": "0.00893247",
+                    "bid": "0.00894651",
+                    "ask": "0.00894753",
+                    "high": "0.00901722",
+                    "low": "0.00887444",
+                    "open": "0.00901722",
+                    "basevolume": "0.04825487",
+                    "btcvolume": "0.04825487",
+                    "change": "-0.94"
+                },
+                "doge_stn": {
+                    "last": "0.26212001",
+                    "bid": "0.27184001",
+                    "ask": "0.27392000",
+                    "high": "0.26212001",
+                    "low": "0.25545001",
+                    "open": "0.25545001",
+                    "basevolume": "2766.99389648",
+                    "btcvolume": "0.00835632",
+                    "change": "2.61"
+                },
+                "qtum_btc": {
+                    "last": "0.00057843",
+                    "bid": "0.00056786",
+                    "ask": "0.00057859",
+                    "high": "0.00057843",
+                    "low": "0.00057843",
+                    "open": "0.00057843",
+                    "basevolume": "0.00063714",
+                    "btcvolume": "0.00063714",
+                    "change": "0.00"
+                },
+                "pso_stn": {
+                    "last": "0.00100000",
+                    "bid": "0.00100000",
+                    "ask": "0.01000000",
+                    "high": "0.00100000",
+                    "low": "0.00100000",
+                    "open": "0.00100000",
+                    "basevolume": "0.40000001",
+                    "btcvolume": "0.00000121",
+                    "change": "0.00"
+                },
+                "dash_btc": {
+                    "last": "0.02749065",
+                    "bid": "0.02737102",
+                    "ask": "0.02747099",
+                    "high": "0.02825013",
+                    "low": "0.02749065",
+                    "open": "0.02751056",
+                    "basevolume": "0.00301609",
+                    "btcvolume": "0.00301609",
+                    "change": "-0.07"
+                },
+                "bch_btc": {
+                    "last": "0.07747970",
+                    "bid": "0.07765333",
+                    "ask": "0.07769791",
+                    "high": "0.07854779",
+                    "low": "0.07713479",
+                    "open": "0.07831005",
+                    "basevolume": "0.01846910",
+                    "btcvolume": "0.01846910",
+                    "change": "-1.06"
+                },
+                "dgb_stn": {
+                    "last": "1.26565003",
+                    "bid": "1.26670003",
+                    "ask": "1.29859996",
+                    "high": "1.26565003",
+                    "low": "1.09422004",
+                    "open": "1.18513000",
+                    "basevolume": "75568.90625000",
+                    "btcvolume": "0.22821810",
+                    "change": "6.79"
+                },
+                "zcl_btc": {
+                    "last": "0.00052796",
+                    "bid": "0.00051322",
+                    "ask": "0.00052748",
+                    "high": "0.00054439",
+                    "low": "0.00052796",
+                    "open": "0.00054226",
+                    "basevolume": "0.00336852",
+                    "btcvolume": "0.00336852",
+                    "change": "-2.64"
+                },
+                "zec_btc": {
+                    "last": "0.01917615",
+                    "bid": "0.01906730",
+                    "ask": "0.01909310",
+                    "high": "0.01952866",
+                    "low": "0.01917615",
+                    "open": "0.01952866",
+                    "basevolume": "0.00788063",
+                    "btcvolume": "0.00788063",
+                    "change": "-1.81"
+                },
+                "lgs_stn": {
+                    "last": "399.21823120",
+                    "bid": "444.19097900",
+                    "ask": "528.83264160",
+                    "high": "414.58145142",
+                    "low": "399.21823120",
+                    "open": "414.58145142",
+                    "basevolume": "14730.71679688",
+                    "btcvolume": "0.04448676",
+                    "change": "-3.71"
+                },
+                "lgs_btc": {
+                    "last": "0.00138010",
+                    "bid": "0.00137540",
+                    "ask": "0.00142404",
+                    "high": "0.00171424",
+                    "low": "0.00137540",
+                    "open": "0.00171424",
+                    "basevolume": "0.20577088",
+                    "btcvolume": "0.20577088",
+                    "change": "-19.49"
+                },
+                "doge_btc": {
+                    "last": "0.00000085",
+                    "bid": "0.00000084",
+                    "ask": "0.00000085",
+                    "high": "0.00000088",
+                    "low": "0.00000085",
+                    "open": "0.00000088",
+                    "basevolume": "0.00136460",
+                    "btcvolume": "0.00136460",
+                    "change": "-3.41"
+                },
+                "dgb_btc": {
+                    "last": "0.00000379",
+                    "bid": "0.00000379",
+                    "ask": "0.00000380",
+                    "high": "0.00000395",
+                    "low": "0.00000379",
+                    "open": "0.00000394",
+                    "basevolume": "0.10136148",
+                    "btcvolume": "0.10136148",
+                    "change": "-3.81"
+                },
+                "qtum_stn": {
+                    "last": "190.36819458",
+                    "bid": "189.80903625",
+                    "ask": "190.29069519",
+                    "high": "191.08325195",
+                    "low": "160.26231384",
+                    "open": "169.43673706",
+                    "basevolume": "15264.02539062",
+                    "btcvolume": "0.04609736",
+                    "change": "12.35"
+                },
+                "anon_btc": {
+                    "last": "0.00007389",
+                    "bid": "0.00007389",
+                    "ask": "0.00007574",
+                    "high": "0.00008450",
+                    "low": "0.00007389",
+                    "open": "0.00008293",
+                    "basevolume": "0.01954709",
+                    "btcvolume": "0.01954709",
+                    "change": "-10.90"
+                },
+                "btx_btc": {
+                    "last": "0.00011980",
+                    "bid": "0.00011991",
+                    "ask": "0.00011993",
+                    "high": "0.00012110",
+                    "low": "0.00011837",
+                    "open": "0.00011851",
+                    "basevolume": "0.01135920",
+                    "btcvolume": "0.01135920",
+                    "change": "1.09"
+                },
+                "bsd_btc": {
+                    "last": "0.00002328",
+                    "bid": "0.00002328",
+                    "ask": "0.00002372",
+                    "high": "0.00002369",
+                    "low": "0.00002315",
+                    "open": "0.00002315",
+                    "basevolume": "0.01277564",
+                    "btcvolume": "0.01277564",
+                    "change": "0.56"
+                },
+                "btx_stn": {
+                    "last": "39.99750137",
+                    "bid": "40.09598923",
+                    "ask": "40.32540894",
+                    "high": "40.09090042",
+                    "low": "34.28918839",
+                    "open": "36.87163925",
+                    "basevolume": "4895.04003906",
+                    "btcvolume": "0.01478302",
+                    "change": "8.48"
+                },
+                "bsd_stn": {
+                    "last": "7.72022009",
+                    "bid": "7.64246988",
+                    "ask": "7.64447021",
+                    "high": "7.72022009",
+                    "low": "6.66712999",
+                    "open": "6.98250008",
+                    "basevolume": "4209.50390625",
+                    "btcvolume": "0.01271270",
+                    "change": "10.57"
+                },
+                "dash_stn": {
+                    "last": "9146.85449219",
+                    "bid": "9092.21386719",
+                    "ask": "9129.38867188",
+                    "high": "9174.56054688",
+                    "low": "7740.46435547",
+                    "open": "8059.38232422",
+                    "basevolume": "4156.66162109",
+                    "btcvolume": "0.01255312",
+                    "change": "13.49"
+                },
+                "zcl_stn": {
+                    "last": "176.12771606",
+                    "bid": "177.43907166",
+                    "ask": "185.22459412",
+                    "high": "176.38973999",
+                    "low": "157.66287231",
+                    "open": "160.71803284",
+                    "basevolume": "1237.77160645",
+                    "btcvolume": "0.00373807",
+                    "change": "9.59"
+                },
+                "hpc_btc": {
+                    "last": "0.00004413",
+                    "bid": "0.00004159",
+                    "ask": "0.00004413",
+                    "high": "0.00004415",
+                    "low": "0.00003910",
+                    "open": "0.00004020",
+                    "basevolume": "0.00856314",
+                    "btcvolume": "0.00856314",
+                    "change": "9.78"
+                },
+                "hpc_stn": {
+                    "last": "13.26661015",
+                    "bid": "13.89507961",
+                    "ask": "14.79981041",
+                    "high": "13.26661015",
+                    "low": "12.06820965",
+                    "open": "12.06820965",
+                    "basevolume": "1395.36254883",
+                    "btcvolume": "0.00421399",
+                    "change": "9.93"
+                },
+                "btg_btc": {
+                    "last": "0.00422742",
+                    "bid": "0.00420993",
+                    "ask": "0.00421193",
+                    "high": "0.00447169",
+                    "low": "0.00415215",
+                    "open": "0.00415215",
+                    "basevolume": "0.02432270",
+                    "btcvolume": "0.02432270",
+                    "change": "1.81"
+                }
+            }
+        }
+    http_version: 
+  recorded_at: Sun, 07 Oct 2018 02:42:22 GMT
+recorded_with: VCR 4.0.0

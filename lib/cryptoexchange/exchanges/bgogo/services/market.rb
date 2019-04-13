@@ -40,7 +40,7 @@ module Cryptoexchange::Exchanges
           ticker.last      = NumericHelper.to_d(output['last_price'])
           ticker.high      = NumericHelper.to_d(output['past_24hrs_high_price'])
           ticker.low       = NumericHelper.to_d(output['past_24hrs_low_price'])
-          ticker.change    = NumericHelper.to_d(output['past_24hrs_price_change'].gsub(/[+-]|(%)/, ''))
+          ticker.change    = NumericHelper.to_d(output['past_24hrs_price_change'].to_f)
           ticker.volume    = NumericHelper.to_d(output['past_24hrs_base_volume'])
           ticker.timestamp = nil
           ticker.payload   = output

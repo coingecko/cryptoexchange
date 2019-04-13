@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://ax.net/api'
 
       def self.trade_page_url(args={})
-        "https://dex.ax.net/#{args[:base]}_#{args[:target]}"
+        "https://trade.ax.net/trade/#{args[:base]}_#{args[:target]}"
       end
     end
   end

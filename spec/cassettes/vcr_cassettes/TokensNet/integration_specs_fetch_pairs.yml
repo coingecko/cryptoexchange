@@ -1,0 +1,124 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tokens.net/public/trading-pairs/get/all/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.tokens.net
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 12 Jan 2019 02:19:36 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '4318'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dac52afacb6432bcd69dbc3fb591032d01547259575; expires=Sun, 12-Jan-20
+        02:19:35 GMT; path=/; domain=.tokens.net; HttpOnly; Secure
+      Last-Modified:
+      - Sat, 12 Jan 2019 02:19:19 GMT
+      Etag:
+      - '"5c394ea7-10de"'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Content-Security-Policy:
+      - default-src 'none';
+      X-Origin-Id:
+      - API-1B
+      Access-Control-Allow-Origin:
+      - https://www.tokens.net
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 497c239c0f645819-DFW
+    body:
+      encoding: ASCII-8BIT
+      string: '{"bchbtc": {"amountDecimals": 8, "priceDecimals": 8, "baseCurrency":
+        "bch", "minAmount": "0.005", "counterCurrency": "btc", "title": "BCH/BTC"},
+        "eursusdt": {"amountDecimals": 2, "priceDecimals": 5, "baseCurrency": "eurs",
+        "minAmount": "1.5", "counterCurrency": "usdt", "title": "EURS/USDT"}, "dtrvdtr":
+        {"amountDecimals": 0, "priceDecimals": 5, "baseCurrency": "dtrv", "minAmount":
+        "30", "counterCurrency": "dtr", "title": "DTRV/DTR"}, "xrpusdt": {"amountDecimals":
+        6, "priceDecimals": 5, "baseCurrency": "xrp", "minAmount": "1", "counterCurrency":
+        "usdt", "title": "XRP/USDT"}, "mrpbtc": {"amountDecimals": 8, "priceDecimals":
+        8, "baseCurrency": "mrp", "minAmount": "50", "counterCurrency": "btc", "title":
+        "MRP/BTC"}, "bsvbtc": {"amountDecimals": 8, "priceDecimals": 8, "baseCurrency":
+        "bsv", "minAmount": "0.025", "counterCurrency": "btc", "title": "BSV/BTC"},
+        "lanabtc": {"amountDecimals": 8, "priceDecimals": 8, "baseCurrency": "lana",
+        "minAmount": "5000", "counterCurrency": "btc", "title": "LANA/BTC"}, "xrpbtc":
+        {"amountDecimals": 6, "priceDecimals": 8, "baseCurrency": "xrp", "minAmount":
+        "1", "counterCurrency": "btc", "title": "XRP/BTC"}, "dtreth": {"amountDecimals":
+        8, "priceDecimals": 8, "baseCurrency": "dtr", "minAmount": "30", "counterCurrency":
+        "eth", "title": "DTR/ETH"}, "ltcbtc": {"amountDecimals": 8, "priceDecimals":
+        8, "baseCurrency": "ltc", "minAmount": "0.05", "counterCurrency": "btc", "title":
+        "LTC/BTC"}, "dtrbtc": {"amountDecimals": 8, "priceDecimals": 8, "baseCurrency":
+        "dtr", "minAmount": "30", "counterCurrency": "btc", "title": "DTR/BTC"}, "bsvusdt":
+        {"amountDecimals": 8, "priceDecimals": 2, "baseCurrency": "bsv", "minAmount":
+        "0.025", "counterCurrency": "usdt", "title": "BSV/USDT"}, "xmrusdt": {"amountDecimals":
+        8, "priceDecimals": 2, "baseCurrency": "xmr", "minAmount": "0.03", "counterCurrency":
+        "usdt", "title": "XMR/USDT"}, "dppeth": {"amountDecimals": 8, "priceDecimals":
+        8, "baseCurrency": "dpp", "minAmount": "50", "counterCurrency": "eth", "title":
+        "DPP/ETH"}, "btcusdt": {"amountDecimals": 8, "priceDecimals": 2, "baseCurrency":
+        "btc", "minAmount": "0.0005", "counterCurrency": "usdt", "title": "BTC/USDT"},
+        "xaureth": {"amountDecimals": 8, "priceDecimals": 8, "baseCurrency": "xaur",
+        "minAmount": "15", "counterCurrency": "eth", "title": "XAUR/ETH"}, "mrpeth":
+        {"amountDecimals": 8, "priceDecimals": 8, "baseCurrency": "mrp", "minAmount":
+        "50", "counterCurrency": "eth", "title": "MRP/ETH"}, "bchusdt": {"amountDecimals":
+        8, "priceDecimals": 2, "baseCurrency": "bch", "minAmount": "0.005", "counterCurrency":
+        "usdt", "title": "BCH/USDT"}, "dtrusdt": {"amountDecimals": 8, "priceDecimals":
+        4, "baseCurrency": "dtr", "minAmount": "30", "counterCurrency": "usdt", "title":
+        "DTR/USDT"}, "ethbtc": {"amountDecimals": 8, "priceDecimals": 8, "baseCurrency":
+        "eth", "minAmount": "0.005", "counterCurrency": "btc", "title": "ETH/BTC"},
+        "ethusdt": {"amountDecimals": 8, "priceDecimals": 2, "baseCurrency": "eth",
+        "minAmount": "0.005", "counterCurrency": "usdt", "title": "ETH/USDT"}, "xmrbtc":
+        {"amountDecimals": 8, "priceDecimals": 8, "baseCurrency": "xmr", "minAmount":
+        "0.03", "counterCurrency": "btc", "title": "XMR/BTC"}, "ltcusdt": {"amountDecimals":
+        8, "priceDecimals": 2, "baseCurrency": "ltc", "minAmount": "0.05", "counterCurrency":
+        "usdt", "title": "LTC/USDT"}, "xlmusdt": {"amountDecimals": 7, "priceDecimals":
+        5, "baseCurrency": "xlm", "minAmount": "2", "counterCurrency": "usdt", "title":
+        "XLM/USDT"}, "btceurs": {"amountDecimals": 8, "priceDecimals": 2, "baseCurrency":
+        "btc", "minAmount": "0.0005", "counterCurrency": "eurs", "title": "BTC/EURS"},
+        "bitusdt": {"amountDecimals": 8, "priceDecimals": 4, "baseCurrency": "bit",
+        "minAmount": "30", "counterCurrency": "usdt", "title": "BIT/USDT"}, "etheurs":
+        {"amountDecimals": 8, "priceDecimals": 2, "baseCurrency": "eth", "minAmount":
+        "0.005", "counterCurrency": "eurs", "title": "ETH/EURS"}, "vtyeth": {"amountDecimals":
+        8, "priceDecimals": 8, "baseCurrency": "vty", "minAmount": "50", "counterCurrency":
+        "eth", "title": "VTY/ETH"}, "xlmbtc": {"amountDecimals": 7, "priceDecimals":
+        8, "baseCurrency": "xlm", "minAmount": "2", "counterCurrency": "btc", "title":
+        "XLM/BTC"}, "elieth": {"amountDecimals": 8, "priceDecimals": 8, "baseCurrency":
+        "eli", "minAmount": "50", "counterCurrency": "eth", "title": "ELI/ETH"}}
+
+'
+    http_version: 
+  recorded_at: Sat, 12 Jan 2019 02:19:36 GMT
+recorded_with: VCR 4.0.0

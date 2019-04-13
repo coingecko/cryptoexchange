@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.incorex.com/v1/pair_settings
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.incorex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 11 Oct 2018 13:49:01 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '3252'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding, User-Agent
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: UTF-8
+      string: '{"LTC_BTC":{"min_quantity":"0.05000000","max_quantity":"1000.00000000","min_price":"0.00010000","max_price":"1.00000000","min_amount":"0.00100000","max_amount":"10.00000000"},"ETC_BTC":{"min_quantity":"0.20000000","max_quantity":"1000.00000000","min_price":"0.00010000","max_price":"0.50000000","min_amount":"0.00100000","max_amount":"10.00000000"},"ETH_USD":{"min_quantity":"0.01000000","max_quantity":"1000.00000000","min_price":"0.00","max_price":"10000.00","min_amount":"1.00","max_amount":"50000.00"},"BCH_BTC":{"min_quantity":"0.00300000","max_quantity":"10000.00000000","min_price":"0.00000001","max_price":"5.00000000","min_amount":"0.00010000","max_amount":"10.00000000"},"ETH_BTC":{"min_quantity":"0.01000000","max_quantity":"1000.00000000","min_price":"0.00010000","max_price":"0.50000000","min_amount":"0.01000000","max_amount":"10.00000000"},"DASH_BTC":{"min_quantity":"0.01000000","max_quantity":"500.00000000","min_price":"0.00100000","max_price":"10.00000000","min_amount":"0.00100000","max_amount":"10.00000000"},"LTC_USD":{"min_quantity":"0.05000000","max_quantity":"1000.00000000","min_price":"0.01","max_price":"10000.00","min_amount":"0.00","max_amount":"100000.00"},"ETH_RUB":{"min_quantity":"0.01000000","max_quantity":"1000.00000000","min_price":"0.00","max_price":"100000.00","min_amount":"1.00","max_amount":"1000000.00"},"DASH_USD":{"min_quantity":"0.01000000","max_quantity":"1000.00000000","min_price":"0.00","max_price":"5000.00","min_amount":"0.10","max_amount":"100000.00"},"BCH_RUB":{"min_quantity":"0.00300000","max_quantity":"10000.00000000","min_price":"0.00","max_price":"2000000.00","min_amount":"0.00","max_amount":"600000.00"},"ETC_RUB":{"min_quantity":"0.20000000","max_quantity":"1000.00000000","min_price":"0.01","max_price":"10000.00","min_amount":"0.01","max_amount":"500000.00"},"BTC_USD":{"min_quantity":"0.00200000","max_quantity":"100.00000000","min_price":"1.00","max_price":"30000.00","min_amount":"0.01","max_amount":"200000.00"},"LTC_RUB":{"min_quantity":"0.05000000","max_quantity":"1000.00000000","min_price":"0.01","max_price":"100000.00","min_amount":"0.01","max_amount":"1000000.00"},"DASH_RUB":{"min_quantity":"0.01000000","max_quantity":"1000.00000000","min_price":"0.00","max_price":"200000.00","min_amount":"0.10","max_amount":"1000000.00"},"BTC_EUR":{"min_quantity":"0.00200000","max_quantity":"100.00000000","min_price":"1.00","max_price":"30000.00","min_amount":"1.00","max_amount":"200000.00"},"ETC_USD":{"min_quantity":"0.20000000","max_quantity":"1000.00000000","min_price":"0.01","max_price":"10000.00","min_amount":"0.01","max_amount":"100000.00"},"ETH_EUR":{"min_quantity":"0.01000000","max_quantity":"1000.00000000","min_price":"0.00","max_price":"10000.00","min_amount":"1.00","max_amount":"50000.00"},"BCH_USD":{"min_quantity":"0.00300000","max_quantity":"10000.00000000","min_price":"0.00","max_price":"30000.00","min_amount":"0.00","max_amount":"20000.00"},"XMR_USD":{"min_quantity":"0.03000000","max_quantity":"500.00000000","min_price":"0.00","max_price":"1000.00","min_amount":"0.10","max_amount":"100000.00"},"BTC_RUB":{"min_quantity":"0.00200000","max_quantity":"100.00000000","min_price":"1.00","max_price":"2000000.00","min_amount":"10.00","max_amount":"12000000.00"}}
+
+'
+    http_version: 
+  recorded_at: Thu, 11 Oct 2018 13:49:00 GMT
+recorded_with: VCR 4.0.0

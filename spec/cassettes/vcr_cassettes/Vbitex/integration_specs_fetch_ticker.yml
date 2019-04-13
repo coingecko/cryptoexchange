@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.vbitex.com/Home/markets/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.vbitex.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 26 Nov 2018 03:01:27 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '178'
+      Connection:
+      - close
+      Location:
+      - https://www.vbitex.com/Home/markets/tickers
+      Strict-Transport-Security:
+      - max-age=15768000
+    body:
+      encoding: ASCII-8BIT
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Mon, 26 Nov 2018 03:01:27 GMT
+- request:
+    method: get
+    uri: https://www.vbitex.com/Home/markets/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/3.0.0
+      Host:
+      - www.vbitex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 26 Nov 2018 03:01:27 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Set-Cookie:
+      - PHPSESSID=5gdgriiil9099p486r6oo7k8b0; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=15768000
+    body:
+      encoding: UTF-8
+      string: '[{"volume_24h":274.26875,"volume_anchor_24h":"7473550.5908600000000000","new_price":"38624.20000000","24H_min":{"price":23111},"24H_max":{"price":38757.5},"symbol":"BTC_VB","submit_time":1543201129},{"volume_24h":5429411.7012,"volume_anchor_24h":"107330.9042880400000000","new_price":"0.01922200","24H_min":{"price":0.0153},"24H_max":{"price":0.0241},"symbol":"Doge_VB","submit_time":1543201129},{"volume_24h":25276.72,"volume_anchor_24h":"571807.0816000000000000","new_price":"25.47000000","24H_min":{"price":16.67},"24H_max":{"price":27.15},"symbol":"QTUM_VB","submit_time":1543201129},{"volume_24h":1039.584,"volume_anchor_24h":"265746.7078300000000000","new_price":"268.36000000","24H_min":{"price":231},"24H_max":{"price":283.44},"symbol":"LTC_VB","submit_time":1543201129},{"volume_24h":1556982.1825,"volume_anchor_24h":"115611.7830656026000000","new_price":"0.07570000","24H_min":{"price":0.07321},"24H_max":{"price":0.0779},"symbol":"XDAG_VB","submit_time":1543201129},{"volume_24h":774709.181,"volume_anchor_24h":"88189.3062256327000000","new_price":"0.13000000","24H_min":{"price":0.1},"24H_max":{"price":0.14},"symbol":"RVN_VB","submit_time":1543201129},{"volume_24h":1327194.1,"volume_anchor_24h":"53795.7393700000000000","new_price":"0.04190000","24H_min":{"price":0.038},"24H_max":{"price":0.0425},"symbol":"SC_VB","submit_time":1543201129},{"volume_24h":"0.0000","volume_anchor_24h":"0.0000","new_price":"0.61000000","24H_min":{"price":0},"24H_max":{"price":0},"symbol":"UT_VB","submit_time":1543201129},{"volume_24h":978099,"volume_anchor_24h":"1721.7623600000000000","new_price":"0.00167000","24H_min":{"price":0.00154},"24H_max":{"price":0.00193},"symbol":"WFC_VB","submit_time":1543201129},{"volume_24h":291036.867855,"volume_anchor_24h":"13772.0673383695700000","new_price":"0.04898000","24H_min":{"price":0.0452},"24H_max":{"price":0.049},"symbol":"SUQA_VB","submit_time":1543201129},{"volume_24h":4508.6514,"volume_anchor_24h":"1037.6893640000000000","new_price":"0.20000000","24H_min":{"price":0.2},"24H_max":{"price":0.26},"symbol":"RC_VB","submit_time":1543201129}]'
+    http_version: 
+  recorded_at: Mon, 26 Nov 2018 03:01:27 GMT
+recorded_with: VCR 4.0.0
