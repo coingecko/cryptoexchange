@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Digifinex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:eos_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'EOS', target: 'USDT', market: 'digifinex') }
+  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: 'digifinex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('digifinex')
@@ -15,9 +15,9 @@ RSpec.describe 'Digifinex integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(eos_usdt_pair)
+    ticker = client.ticker(btc_usdt_pair)
 
-    expect(ticker.base).to eq 'EOS'
+    expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USDT'
     expect(ticker.market).to eq 'digifinex'
 

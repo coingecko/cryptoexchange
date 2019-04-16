@@ -50,6 +50,7 @@ Or install it yourself as:
 | BigONE            | Y       | Y          | Y       |         | Y           | Y        | bigone            |       |
 | Bilaxy            | Y       | Y          | Y       |         | Y           | Y        | bilaxy            |       |
 | Binance           | Y       | Y (/)      | Y (/)   |         | Y           | Y        | binance           |       |
+| Binance DEX (Testnet)       | Y       |            |         |         | Y           |          | binance_dex       |       |
 | Binance Jersey    | Y       | Y (/)      |         |         | Y           | Y        | binance_jersey    |       |
 | Binance Uganda    | Y       | Y (/)      |         |         | Y           | Y        | binance_uganda    |       |
 | Bishang           | Y       |            |         |         | Y           |          | bishang           |       |
@@ -110,6 +111,7 @@ Or install it yourself as:
 | BtcTradeUa        | Y       | Y          | Y       |         | Y           | Y        | btc_trade_ua      |       |
 | BTCBox            | Y       | Y          |         |         | User-Defined| Y        | btcbox            |       |
 | BTCC              | Y       |            |         |         | User-Defined|          | btcc              |       |
+| BTCEXA            | Y       |            |         |         | Y           |          | btcexa            |       |
 | BTCChina          |         |            |         |         |             |          |                   |       |
 | BTCMarkets        | Y       | Y          |         |         | Y           | Y        | btcmarkets        |       |
 | Btcsquare         | Y       | Y          | Unstable|         | Y           | Y        | btcsquare         |       |

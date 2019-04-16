@@ -1,31 +1,30 @@
 require 'spec_helper'
 
-RSpec.describe 'Bitforex integration specs' do
+RSpec.describe 'BinanceDex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:market) { 'bitforex' }
-  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: market) }
+  let(:glc_0c7_bnb_pair) { Cryptoexchange::Models::MarketPair.new(base: 'GLC-0C7', target: 'BNB', market: 'binance_dex') }
 
   it 'fetch pairs' do
-    pairs = client.pairs('bitforex')
+    pairs = client.pairs('binance_dex')
     expect(pairs).not_to be_empty
 
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
-    expect(pair.market).to eq 'bitforex'
+    expect(pair.market).to eq 'binance_dex'
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url market, base: btc_usdt_pair.base, target: btc_usdt_pair.target
-    expect(trade_page_url).to eq 'https://www.bitforex.com/en/trade/spotTrading?commodityCode=BTC&currencyCode=USDT'
+    trade_page_url = client.trade_page_url 'binance_dex', base: glc_0c7_bnb_pair.base, target: glc_0c7_bnb_pair.target
+    expect(trade_page_url).to eq "https://testnet.binance.org/trade/GLC-0C7_BNB"
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_usdt_pair)
+    ticker = client.ticker(glc_0c7_bnb_pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'USDT'
-    expect(ticker.market).to eq 'bitforex'
+    expect(ticker.base).to eq 'GLC-0C7'
+    expect(ticker.target).to eq 'BNB'
+    expect(ticker.market).to eq 'binance_dex'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric

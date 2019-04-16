@@ -9,40 +9,23 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch
-          # due to the api limitation (self-pagination), cache is introduced here
-
-          Cryptoexchange::Cache.ticker_cache.fetch(['Cryptoexchange', Digifinex::Market::NAME, 'tickers']) do
-            tickers_array = []
-
-            page = 1
-            max_page = 1
-
-            while page <= max_page do
-              output = super ticker_url(page)
-              tickers = adapt_all(output)
-              tickers_array << tickers
-
-              max_page = output["data"]["total_page"]
-              page += 1
-            end
-
-            tickers_array.flatten.compact
-          end
+          output = super ticker_url
+          adapt_all(output)
         end
 
-        def ticker_url(page)
-          "#{Cryptoexchange::Exchanges::Digifinex::Market::API_URL}/tickers?market=digifinex&size=100&page=#{page}"
+        def ticker_url
+          "#{Cryptoexchange::Exchanges::Digifinex::Market::API_URL}/ticker?apiKey=15cad9a55217c4"
         end
 
         def adapt_all(output)
-          output["data"]["list"].map do |pair|
-            base, target = pair['symbol_pair'].split('_')
+          output['ticker'].map do |pair, ticker|
+            target, base = pair.split('_')
             market_pair = Cryptoexchange::Models::MarketPair.new(
-                base: base,
-                target: target,
-                market: CryptoBridge::Market::NAME
+              base:   base,
+              target: target,
+              market: Digifinex::Market::NAME
             )
-            adapt(pair, market_pair)
+            adapt(ticker, market_pair)
           end
         end
 
@@ -55,10 +38,10 @@ module Cryptoexchange::Exchanges
           ticker.last      = NumericHelper.to_d(output['last'])
           ticker.high      = NumericHelper.to_d(output['high'])
           ticker.low       = NumericHelper.to_d(output['low'])
-          ticker.bid       = NumericHelper.to_d(output['bid'])
-          ticker.ask       = NumericHelper.to_d(output['ask'])
+          ticker.bid       = NumericHelper.to_d(output['buy'])
+          ticker.ask       = NumericHelper.to_d(output['sell'])
           ticker.volume    = NumericHelper.to_d(output['vol'])
-          ticker.change    = NumericHelper.to_d(output['change_daily'])
+          ticker.change    = NumericHelper.to_d(output['change'])
 
           ticker.payload   = output
           ticker
