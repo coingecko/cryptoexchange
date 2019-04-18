@@ -14,6 +14,11 @@ RSpec.describe 'Trade.io integration specs' do
     expect(pair.market).to eq 'tradeio'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url "tradeio", base: ltc_btc_pair.base, target: ltc_btc_pair.target
+    expect(trade_page_url).to eq "https://exchange.trade.io/trade/guest?pair=LTC_BTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(ltc_btc_pair)
 
