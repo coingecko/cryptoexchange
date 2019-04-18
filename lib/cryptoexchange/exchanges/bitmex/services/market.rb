@@ -28,7 +28,7 @@ module Cryptoexchange::Exchanges
           ticker.last = NumericHelper.to_d(output['lastPrice'])
           ticker.high = NumericHelper.to_d(output['highPrice'])
           ticker.low = NumericHelper.to_d(output['lowPrice'])
-          ticker.volume = NumericHelper.divide(NumericHelper.to_d(output['volume24h']), ticker.last)
+          ticker.volume = NumericHelper.to_d(output['homeNotional24h'])
           ticker.contract_interval = market_pair.contract_interval
           ticker.timestamp = nil
           ticker.payload = output
