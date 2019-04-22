@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module NebliDex
+  module Neblidex
     module Services
       class Market < Cryptoexchange::Services::Market
         class << self
@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::NebliDex::Market::API_URL}"
+          "#{Cryptoexchange::Exchanges::Neblidex::Market::API_URL}"
         end
 
         def adapt_all(output)
@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
                             target: target,
-                            market: NebliDex::Market::NAME
+                            market: Neblidex::Market::NAME
             )
             adapt(market_pair, pair)
           end
@@ -34,7 +34,7 @@ module Cryptoexchange::Exchanges
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
-          ticker.market = NebliDex::Market::NAME
+          ticker.market = Neblidex::Market::NAME
           ticker.last = NumericHelper.to_d(output['lastPrice'])
           ticker.volume = NumericHelper.to_d(output['baseVolume24Hour'])
           ticker.timestamp = Time.now.to_i
