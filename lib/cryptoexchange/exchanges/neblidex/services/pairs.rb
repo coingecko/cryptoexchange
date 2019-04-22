@@ -1,8 +1,8 @@
 module Cryptoexchange::Exchanges
-  module NebliDex
+  module Neblidex
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::NebliDex::Market::API_URL}"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Neblidex::Market::API_URL}"
 
         def fetch
           output = super
@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new({
               base: base,
               target: target,
-              market: NebliDex::Market::NAME
+              market: Neblidex::Market::NAME
             })
           end
         end
