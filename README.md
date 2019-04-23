@@ -133,6 +133,7 @@ Or install it yourself as:
 | ChainEX           | Y       | Y          | Y       |         | Y           |          | chainex           |       |
 | Chaoex            | Y       | Y          | Y       |         | Y           | N        | chaoex            |       |
 | CHBTC             | Y       |            |         |         | User-Defined|          | chbtc             |       |
+| Citex             | Y       | N          | N       |         | Y           | Y        | citex             |       |
 | Cobinhood         | Y       | Y          |         |         | Y           | Y        | cobinhood         |       |
 | CODEX             | Y       | Y          | Y       |         | Y           |          | codex             |       |
 | Coin2001          | Y       | Y          | Y       |         | Y           |          | coin2001          |       |
