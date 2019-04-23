@@ -157,6 +157,7 @@ Or install it yourself as:
 | CoinJar           | Y       | Y          | Y       |         | Y           | Y        | coinjar           |       |
 | Coinlim           | Y       | N          | N       |         | Y           | N        | coinlim           |       |
 | Coinmate          | Y       | Y          |         |         | User-Defined|          | coinmate          |       |
+| Coinmetro         | Y       |            |         |         |             |          | coin_metro        |       |
 | Coinmex           | Y       | Y          | Y       |         | Y           |          | coinmex           |       |
 | Coinnest          | Y       | Y          | Y       |         | User-Defined| Y        | coinnest          |       |
 | Coinnox           | Y       | Y          | Y       |         | Y           |          | coinnox           |       |

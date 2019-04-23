@@ -51,7 +51,7 @@ module Cryptoexchange::Exchanges
             ticker.high = NumericHelper.to_d(output['h'])
             ticker.low = NumericHelper.to_d(output['l'])
             ticker.volume = NumericHelper.to_d(output['v'])
-            ticker.timestamp = output['timestamp'].to_i / 1000
+            ticker.timestamp = nil
             ticker.payload = output
             ticker
           end
