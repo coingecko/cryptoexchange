@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://api.fcoin.com/v2'
 
       def self.trade_page_url(args={})
-        "https://exchange.fcoin.com/ex/main/#{args[:base]}-#{args[:target]}"
+        "https://exchange.fcoin.com/ex/spot/main/#{args[:base].downcase}/#{args[:target].downcase}"
       end
     end
   end

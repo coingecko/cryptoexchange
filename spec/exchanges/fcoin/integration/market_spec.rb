@@ -16,7 +16,7 @@ RSpec.describe 'Fcoin integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'fcoin', base: eth_usdt_pair.base, target: eth_usdt_pair.target
-    expect(trade_page_url).to eq "https://exchange.fcoin.com/ex/main/ETH-USDT"
+    expect(trade_page_url).to eq "https://exchange.fcoin.com/ex/spot/main/eth/usdt"
   end
 
   it 'fetch ticker' do
