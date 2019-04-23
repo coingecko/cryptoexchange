@@ -374,6 +374,7 @@ Or install it yourself as:
 | Vebitcoin         | Y       | N          | N       |         | Y           | N        | vebitcoin         |       |
 | Vertpig           | Y       | Y          | N       |         | Y           | Y        | vertpig           |       |
 | Viabtc            | Y       |            |         |         | User-Defined|          | viabtc            |       |
+| Vindax            | Y       |            |         |         | Y           | Y        | vindax            |       |
 | Waves             | Y       | N          | Y       |         | Y           |          | waves             |       |
 | WazirX            | Y       |            |         |         | Y           |          | wazirx            |       |
 | Wcx               | Y       | Y          | Y       |         | Y           |          | wcx               |       |
