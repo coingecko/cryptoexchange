@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.coinbig.com/api/publics/v1/kline?symbol=BTC_USDT&type=1day
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.coinbig.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 23 Apr 2019 03:38:08 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d6b83374816cf1514f882188375942e621555990688; expires=Wed, 22-Apr-20
+        03:38:08 GMT; path=/; domain=.coinbig.com; HttpOnly; Secure
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Application-Context:
+      - application:pro:80
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4cbccd8b09ed9511-NRT
+    body:
+      encoding: UTF-8
+      string: '{"code":0,"msg":"success","data":[{"date":1554134400000,"high":4834.5385,"vol":82001.46109999994,"close_price":4729.3525,"last":5390.78,"low":4135.0208,"open_price":4145.1946},{"date":1554220800000,"high":5034.5199,"vol":89631.37780000031,"close_price":4957.375,"last":5390.78,"low":4446.5928,"open_price":4729.3525},{"date":1554307200000,"high":5277.1936,"vol":79153.17140000002,"close_price":4981.7865,"last":5390.78,"low":4863.5588,"open_price":4957.375},{"date":1554393600000,"high":5028.3854,"vol":55464.735900000014,"close_price":4965.4618,"last":5390.78,"low":4787.3951,"open_price":4981.7865},{"date":1554480000000,"high":5019.3318,"vol":79921.0422000001,"close_price":4934.726,"last":5390.78,"low":4934.7257,"open_price":4965.4618},{"date":1554566400000,"high":5173.2222,"vol":53992.88989999987,"close_price":5125.3042,"last":5390.78,"low":4902.1334,"open_price":4934.726},{"date":1554652800000,"high":5304.5645,"vol":101312.35510000038,"close_price":5190.6314,"last":5390.78,"low":5049.1104,"open_price":5125.3042},{"date":1554739200000,"high":5256.4541,"vol":80427.57599999986,"close_price":5177.8624,"last":5390.78,"low":5083.6092,"open_price":5190.6314},{"date":1554825600000,"high":5252.2731,"vol":61449.68019999957,"close_price":5248.5916,"last":5390.78,"low":5135.9173,"open_price":5177.8624},{"date":1554912000000,"high":5392.9378,"vol":72279.92609999984,"close_price":4996.9554,"last":5390.78,"low":4930.985,"open_price":5248.5916},{"date":1554998400000,"high":5065.4619,"vol":71269.30759999978,"close_price":5039.229,"last":5390.78,"low":4876.3036,"open_price":4996.9554},{"date":1555084800000,"high":5089.3742,"vol":71829.48389999972,"close_price":5054.5704,"last":5390.78,"low":5002.6819,"open_price":5039.229},{"date":1555171200000,"high":5074.0895,"vol":73369.2785999999,"close_price":5062.5471,"last":5390.78,"low":5002.8001,"open_price":5054.5704},{"date":1555257600000,"high":5165.8405,"vol":70683.46559999978,"close_price":5127.8152,"last":5390.78,"low":5056.3351,"open_price":5062.5471},{"date":1555344000000,"high":5131.1863,"vol":70859.96369999977,"close_price":5073.19,"last":5390.78,"low":4957.0603,"open_price":5127.8152},{"date":1555430400000,"high":5223.03,"vol":52143.962699999815,"close_price":5185.61,"last":5390.78,"low":5059.91,"open_price":5073.19},{"date":1555516800000,"high":5268.19,"vol":65221.594599999604,"close_price":5220.2,"last":5390.78,"low":5166.27,"open_price":5185.61},{"date":1555603200000,"high":5285.61,"vol":69558.23189999977,"close_price":5264.49,"last":5390.78,"low":5181.5,"open_price":5220.2},{"date":1555689600000,"high":5333.52,"vol":70161.13879999983,"close_price":5288.9,"last":5390.78,"low":5234.11,"open_price":5264.49},{"date":1555776000000,"high":5323.36,"vol":72416.01959999981,"close_price":5238.09,"last":5390.78,"low":5179.03,"open_price":5288.9},{"date":1555862400000,"high":5346.44,"vol":68344.86529999979,"close_price":5279.59,"last":5390.78,"low":5190.58,"open_price":5238.09},{"date":1555948800000,"high":5406.17,"vol":31937.610399999936,"close_price":5390.78,"last":5390.78,"low":5252.67,"open_price":5279.59}]}'
+    http_version: 
+  recorded_at: Tue, 23 Apr 2019 03:38:08 GMT
+recorded_with: VCR 4.0.0

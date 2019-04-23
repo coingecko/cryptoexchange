@@ -142,6 +142,7 @@ Or install it yourself as:
 | CoinExchange      | Y       |            |         |         | Y           |          | coin_exchange     |       |
 | Coinbe            | Y       |            |         |         | Y           |          | coinbe            |       |
 | Coinbene          | Y       | Y          | Y       |         | Y           | Y        | coinbene          |       |
+| Coinbig           | Y       |            |         |         | Y           | Y        | coinbig           |       |
 | Coinbit           | Y       | N          | N       |         | Y           | Y        | coinbit           |       |
 | Coincheck         | Y       |            |         |         | User-Defined|          | coincheck         |       |
 | Coindeal          | Y       | Y          |         |         | Y           |          | coindeal          |       |

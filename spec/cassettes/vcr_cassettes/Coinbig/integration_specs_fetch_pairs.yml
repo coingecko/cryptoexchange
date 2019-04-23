@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.coinbig.com/api/publics/v1/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.coinbig.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 23 Apr 2019 03:38:08 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d2382e13b8947fd54ccd5df433628814c1555990688; expires=Wed, 22-Apr-20
+        03:38:08 GMT; path=/; domain=.coinbig.com; HttpOnly; Secure
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Application-Context:
+      - application:pro:80
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4cbccd88beb5a5c6-NRT
+    body:
+      encoding: UTF-8
+      string: '{"code":0,"msg":"success","data":["RUB_ETH","TOPC_USDT","DASH_USDT","EOS_USDT","DDN_USDT","DAEC_USDT","ELF_USDT","ETP_USDT","DASH_BTC","VOLLAR_USDT","LOOM_BTC","FGC_USDT","IPWT_USDT","BVT_USDT","AIW_USDT","ZRX_USDT","RUB_USDT","TRX_USDT","BCHABC_USDT","LTC_BTC","AIDOC_USDT","ULAM_USDT","SOP_ETH","BTC_USDT","XRP_BTC","LTC_USDT","VTAG_ETH","CGCG_ETH","XEM_USDT","MANA_BTC","ZIL_BTC","IOST_USDT","XRP_USDT","CWV_USDT","GVE_BTC","FNKOS_USDT","EOS_BTC","SET_USDT","DACC_USDT","NEIL_ETH","OMG_USDT","HOT_BTC","ETH_USDT","CWV_BTC","VOLLAR_BTC","DCMC_USDT","CB_USDT","DLB_ETH","STM_USDT","BTT_USDT","APO_USDT","SOP_BTC","BNB_USDT","SWTC_USDT","VNST_USDT","RIF_USDT","CHX_USDT","ETH_BTC","TKC_USDT","SOP_USDT","OCT_USDT","RBTC_USDT","BCHSV_USDT","MOAC_USDT","DACC_BTC","HT_USDT","AE_USDT"]}'
+    http_version: 
+  recorded_at: Tue, 23 Apr 2019 03:38:08 GMT
+recorded_with: VCR 4.0.0
