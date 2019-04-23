@@ -53,6 +53,7 @@ Or install it yourself as:
 | Binance DEX (Testnet)       | Y       |            |         |         | Y           |          | binance_dex       |       |
 | Binance Jersey    | Y       | Y (/)      |         |         | Y           | Y        | binance_jersey    |       |
 | Binance Uganda    | Y       | Y (/)      |         |         | Y           | Y        | binance_uganda    |       |
+| Bione             | Y       |            |         |         | Y           |          | bione             |       |
 | Bishang           | Y       |            |         |         | Y           |          | bishang           |       |
 | Bisq              | Y       |            | Y       |         | Y           |          | bisq              |       |
 | Bit2C             | Y       | Y          | Y       |         | User-Defined| Y        | bit2c             |       |
