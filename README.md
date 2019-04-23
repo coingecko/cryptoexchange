@@ -44,8 +44,8 @@ Or install it yourself as:
 | Bankera           | Y       | Y          | Y       |         | Y           | Y        | bankera           |       |
 | Bcex              | Y       | Y          | Y       |         | Y           | Y        | bcex              |       |
 | Bcoin             | Y       |            |         |         | Y           | Y        | bcoin             |       |
-| Bgogo             | Y       | Y          | Y       |         | Y           | Y        | bgogo             |       |
-| Bibox             | Y       | Y          | Y       |         | Y           | Y        | bibox             |       |
+| Bgogo             | Y       | Y [x]      | Y       |         | Y           | Y        | bgogo             |       |
+| Bibox             | Y       | Y [x]      | Y       |         | Y           | Y        | bibox             |       |
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
 | BigONE            | Y       | Y          | Y       |         | Y           | Y        | bigone            |       |
 | Bilaxy            | Y       | Y          | Y       |         | Y           | Y        | bilaxy            |       |
@@ -157,6 +157,7 @@ Or install it yourself as:
 | CoinJar           | Y       | Y          | Y       |         | Y           | Y        | coinjar           |       |
 | Coinlim           | Y       | N          | N       |         | Y           | N        | coinlim           |       |
 | Coinmate          | Y       | Y          |         |         | User-Defined|          | coinmate          |       |
+| Coinmetro         | Y       |            |         |         |             |          | coin_metro        |       |
 | Coinmex           | Y       | Y          | Y       |         | Y           |          | coinmex           |       |
 | Coinnest          | Y       | Y          | Y       |         | User-Defined| Y        | coinnest          |       |
 | Coinnox           | Y       | Y          | Y       |         | Y           |          | coinnox           |       |
@@ -215,7 +216,7 @@ Or install it yourself as:
 | Exmo              | Y       | Y          | Y       |         | Y           | Y        | exmo              |       |
 | Exrates           | Y       | N          | N       |         | Y           | Y        | exrates           |       |
 | Extstock          | Y       | Y          | Y       |         | Y           | Y        | extstock          |       |
-| Exx               | Y       | Y          | Y       |         | Y           | Y        | exx               |       |
+| Exx               | Y       | Y [x]      | Y       |         | Y           | Y        | exx               |       |
 | F1cx              | Y       | Y          | Y       |         | Y           | Y        | f1cx              |       |
 | FatBTC            | Y       | Y          | Y       |         | Y           |          | fatbtc            |       |
 | Fcoin             | Y       | Y [x]      | Y       |         | Y           | Y        | fcoin             |       |
@@ -226,7 +227,7 @@ Or install it yourself as:
 | Freiexchange      | Y       | Y          |         |         | User-Defined| Y        | freiexchange      |       |
 | FinexBox          | Y       | Y          |         |         | Y           | Y        | finexbox          |       |
 | Fubt              | Y       |            |         |         | Y           | Y        | fubt              |       |
-| Gate              | Y       | Y          | Y       |         | Y           | Y        | gate              |       |
+| Gate              | Y       | Y [x]      | Y       |         | Y           | Y        | gate              |       |
 | Gatecoin          | Y       |            |         |         | Y           |          | gatecoin          |       |
 | GDAX(Coinbase Pro)| Y       |            |         |         | Y           | Y        | gdax              |       |
 | Gemini            | Y       | Y          | Y       |         | Y           |          | gemini            |       |
@@ -239,7 +240,7 @@ Or install it yourself as:
 | Hadax             | Y       | N          | N       |         | Y           | Y        | hadax             |       |
 | Hb.top            | Y       | N          | N       |         | Y           | N        | hb_top            |       |
 | Hikenex           | Y       | N          | N       |         | Y           | N        | hikenex           |       |
-| HitBTC            | Y       | Y          | Y       |         | Y           | Y        | hitbtc            |       |
+| HitBTC            | Y       | Y [x]      | Y       |         | Y           | Y        | hitbtc            |       |
 | Hotbit            | Y       | N          | N       |         | Y           | Y        | hotbit            |       |
 | HPX               | Y       | Y          | Y       |         | Y           |          | hpx               |       |
 | Hubi              | Y       |            |         |         | Y           |          | hubi              |       |
@@ -383,8 +384,8 @@ Or install it yourself as:
 | Yuanbao           | Y       |            |         |         | User-Defined|          | yuanbao           |       |
 | Yunbi             | Y       |            |         |         | Y           |          | yunbi             |       |
 | Zaif              | Y       | Y          | Y       |         | Y           | Y        | zaif              |       |
-| ZB                | Y       | Y          | Y       |         | Y           | Y        | zb                |       |
-| ZBG               | Y       | Y          | Y       |         | Y           |          | zbg               |       |
+| ZB                | Y       | Y [x]      | Y       |         | Y           | Y        | zb                |       |
+| ZBG               | Y       | Y [x]      | Y       |         | Y           |          | zbg               |       |
 | Zbmega            | Y       | N          | N       |         | Y           | Y        | zbmega            |       |
 | Zebpay            | Y       |            |         |         | Y           |          | Zebpay            |       |
 | Zeniex            | Y       | Y          | Y       |         | Y           |          | zeniex            |       |
