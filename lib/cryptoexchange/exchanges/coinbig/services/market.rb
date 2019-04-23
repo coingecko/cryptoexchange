@@ -14,12 +14,17 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Coinbig::Market::API_URL}/kline?symbol=#{market_pair.base.upcase}_#{market_pair.target.upcase}&type=1day"
+          "#{Cryptoexchange::Exchanges::Coinbig::Market::API_URL}/kline?symbol=#{market_pair.base.upcase}_#{market_pair.target.upcase}&type=1hour"
         end
 
         def adapt(output, market_pair)
-          output           = output['data'].last
+          last_24_vol = 0
 
+          output['data'].last(24).each do |output|
+            last_24_vol += output["vol"]
+          end
+
+          output           = output['data'].last
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
@@ -27,7 +32,7 @@ module Cryptoexchange::Exchanges
           ticker.last      = NumericHelper.to_d(output['last'])
           ticker.high      = NumericHelper.to_d(output['high'])
           ticker.low       = NumericHelper.to_d(output['low'])
-          ticker.volume    = NumericHelper.to_d(output['vol'])
+          ticker.volume    = NumericHelper.to_d(last_24_vol)
           ticker.timestamp = nil
           ticker.payload = output
           ticker
