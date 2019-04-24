@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::TrxMarket::Market::API_URL}/dex/exchange/marketPair/list"
+          "#{Cryptoexchange::Exchanges::TrxMarket::Market::API_URL}/api/exchange/marketPair/list"
         end
 
         def adapt_all(output)
