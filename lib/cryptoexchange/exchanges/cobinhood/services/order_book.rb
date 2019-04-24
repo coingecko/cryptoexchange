@@ -15,7 +15,7 @@ module Cryptoexchange::Exchanges
 
         def ticker_url(market_pair)
           trading_pair_id = "#{market_pair.base}-#{market_pair.target}"
-          "#{Cryptoexchange::Exchanges::Cobinhood::Market::API_URL}/market/orderbooks/#{trading_pair_id}"
+          "#{Cryptoexchange::Exchanges::Cobinhood::Market::API_URL}/market/orderbooks/#{trading_pair_id}?limit=0"
         end
 
         def adapt(output, market_pair)
@@ -31,7 +31,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_orders(orders)
-          orders.collect do |price, amount, count|
+          orders.collect do |price, count, amount|
             Cryptoexchange::Models::Order.new \
               price: price,
               amount: amount,

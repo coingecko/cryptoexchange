@@ -49,10 +49,10 @@ Or install it yourself as:
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
 | BigONE            | Y       | Y          | Y       |         | Y           | Y        | bigone            |       |
 | Bilaxy            | Y       | Y          | Y       |         | Y           | Y        | bilaxy            |       |
-| Binance           | Y       | Y (/)      | Y (/)   |         | Y           | Y        | binance           |       |
+| Binance           | Y       | Y [x]      | Y [x]   |         | Y           | Y        | binance           |       |
 | Binance DEX (Testnet)       | Y       |            |         |         | Y           |          | binance_dex       |       |
-| Binance Jersey    | Y       | Y (/)      |         |         | Y           | Y        | binance_jersey    |       |
-| Binance Uganda    | Y       | Y (/)      |         |         | Y           | Y        | binance_uganda    |       |
+| Binance Jersey    | Y       | Y [x]      |         |         | Y           | Y        | binance_jersey    |       |
+| Binance Uganda    | Y       | Y [x]      |         |         | Y           | Y        | binance_uganda    |       |
 | Bione             | Y       |            |         |         | Y           |          | bione             |       |
 | Bishang           | Y       |            |         |         | Y           |          | bishang           |       |
 | Bisq              | Y       |            | Y       |         | Y           |          | bisq              |       |
@@ -66,7 +66,7 @@ Or install it yourself as:
 | Bitbox (Public)   | Y       |            |         |         | Y           | Y        | bitbox            |       |
 | Bitc3             | Y       | N          | N       |         | Y           | Y        | bitc3             |       |
 | Bitconnect        | Y       |            |         |         | Y           |          | bitconnect        |       |
-| Bitebtc           | Y       | Y          | Y       |         | Y           | Y        | bitebtc           |       |
+| Bitebtc           | Y       | Y [x]      | Y       |         | Y           | Y        | bitebtc           |       |
 | Bitex.la          | Y       | Y          |         |         | Y           |          | bitex             |       |
 | Bitexbook         | Y       | N          | N       |         | Y           | Y        | bitexbook         |       |
 | Bitexlive         | Y       | N          | N       |         | Y           | Y        | bitexlive         |       |
@@ -97,7 +97,7 @@ Or install it yourself as:
 | Bitsane           | Y       | Y          |         |         | Y           |          | bitsane           |       |
 | Bitshares Assets  | Y       |            |         |         | User-Defined|          | bitshares_assets  |       |
 | Bitso             | Y       |            |         |         | Y           |          | bitso             |       |
-| Bitstamp          | Y       | Y          | Y       |         | User-Defined|          | bitstamp          |       |
+| Bitstamp          | Y       | Y [x]      | Y       |         | User-Defined|          | bitstamp          |       |
 | Bitsten           | Y       | Y          | N       |         | Y           | Y        | bitsten           |       |
 | Bittrex           | Y       |            |         |         | Y           | Y        | bittrex           |       |
 | Bkex              | Y       | N          | N       |         | Y           | Y        | bkex              |       |
@@ -134,16 +134,16 @@ Or install it yourself as:
 | Chaoex            | Y       | Y          | Y       |         | Y           | N        | chaoex            |       |
 | CHBTC             | Y       |            |         |         | User-Defined|          | chbtc             |       |
 | Citex             | Y       | N          | N       |         | Y           | Y        | citex             |       |
-| Cobinhood         | Y       | Y          |         |         | Y           | Y        | cobinhood         |       |
+| Cobinhood         | Y       | Y [x]      |         |         | Y           | Y        | cobinhood         |       |
 | CODEX             | Y       | Y          | Y       |         | Y           |          | codex             |       |
 | Coin2001          | Y       | Y          | Y       |         | Y           |          | coin2001          |       |
 | Coinall           | Y       | Y          | Y       |         | Y           |          | coinall           |       |
 | Coin Asset        | Y       | Y          | Y       |         | Y           |          | coinasset         |       |
 | Coinchangex       | Y       | N          | N       |         | Y           | Y        | coinchangex       |       |
-| CoinEgg           | Y       | Y          | Y       |         | User-Defined| Y        | coin_egg          |       |
+| CoinEgg           | Y       | Y [x]      | Y       |         | User-Defined| Y        | coin_egg          |       |
 | CoinExchange      | Y       |            |         |         | Y           |          | coin_exchange     |       |
 | Coinbe            | Y       |            |         |         | Y           |          | coinbe            |       |
-| Coinbene          | Y       | Y          | Y       |         | Y           | Y        | coinbene          |       |
+| Coinbene          | Y       | Y [x]      | Y       |         | Y           | Y        | coinbene          |       |
 | Coinbig           | Y       |            |         |         | Y           | Y        | coinbig           |       |
 | Coinbit           | Y       | N          | N       |         | Y           | Y        | coinbit           |       |
 | Coincheck         | Y       |            |         |         | User-Defined|          | coincheck         |       |
@@ -164,7 +164,7 @@ Or install it yourself as:
 | Coinmex           | Y       | Y          | Y       |         | Y           |          | coinmex           |       |
 | Coinnest          | Y       | Y          | Y       |         | User-Defined| Y        | coinnest          |       |
 | Coinnox           | Y       | Y          | Y       |         | Y           |          | coinnox           |       |
-| Coinone           | Y       | Y          | Y       |         | Y           | Y        | coinone           |       |
+| Coinone           | Y       | Y [x]      | Y       |         | Y           | Y        | coinone           |       |
 | Coinpark          | Y       | Y          | Y       |         | Y           | Y        | coinpark          |       |
 | Coinplace         | Y       |            |         |         | Y           |          | coinplace         |       |
 | Coinrail          | Y       | Y          | Y       |         | Y           | Y        | coinrail          |       |
@@ -272,8 +272,8 @@ Or install it yourself as:
 | Koinx             | Y       |            |         |         | Y           | Y        | koinx             |       |
 | Korbit            | Y       |            |         |         | User-Defined| Y        | korbit            |       |
 | Kraken            | Y       |            |         |         | Y           | Y        | kraken            |       |
-| Kryptono          | Y       | Y          | Y       |         | User-Defined| Y        | kryptono          |       |
-| Kucoin            | Y       | Y          | N       |         | Y           | Y        | kucoin            |       |
+| Kryptono          | Y       | Y [x]      | Y       |         | User-Defined| Y        | kryptono          |       |
+| Kucoin            | Y       | Y [x]      | N       |         | Y           | Y        | kucoin            |       |
 | Kuna              | Y       | Y          | Y       |         | User-Defined| Y        | kuna              |       |
 | KyberNetwork      | Y       | N          | N       |         | Y           | Y        | kyber_network     |       |
 | LakeBTC           | Y       |            |         |         | Y           | Y        | lakebtc           |       |
