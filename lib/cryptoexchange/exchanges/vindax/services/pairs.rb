@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Vindax
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Vindax::Market::API_URL}"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Vindax::Market::API_URL}/returnTicker"
 
         def fetch
           output = super

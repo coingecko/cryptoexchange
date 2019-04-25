@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Vindax::Market::API_URL}"
+          "#{Cryptoexchange::Exchanges::Vindax::Market::API_URL}/returnTicker"
         end
 
         def adapt_all(output)
@@ -36,8 +36,8 @@ module Cryptoexchange::Exchanges
           ticker.target    = market_pair.target
           ticker.market    = Vindax::Market::NAME
           ticker.last      = NumericHelper.to_d(output['last'])
-          ticker.bid       = NumericHelper.to_d(output['highestBid'])
-          ticker.ask       = NumericHelper.to_d(output['lowestAsk'])
+          ticker.bid       = NumericHelper.to_d(output['lowestAsk'])
+          ticker.ask       = NumericHelper.to_d(output['highestBid']) # ask is higher
           ticker.high      = NumericHelper.to_d(output['high24hr'])
           ticker.low       = NumericHelper.to_d(output['low24hr'])
           ticker.volume    = NumericHelper.to_d(output['baseVolume'])
