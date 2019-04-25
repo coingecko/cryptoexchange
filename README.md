@@ -308,6 +308,7 @@ Or install it yourself as:
 | OAX               | Y       |            |         |         | Y           |          | oax               |       |
 | Oceanex           | Y       | Y          | Y       |         | Y           | Y        | oceanex           |       |
 | Octaex            | Y       | Y          | Y       |         | Y           |          | octaex            |       |
+| OEX               | Y       |            |         |         | Y           |          | oex               |       |
 | OKCoin            | Y       |            |         |         | User-Defined|          | okcoin            |       |
 | OKEx              | Y       | Y [x]      | Y       |         | Y           | Y        | okex              |       |
 | OKEx Perpetual Swaps (alpha) | Y     |            |         |         | Y           | Y        | okex_swap         |futures|

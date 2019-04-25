@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openapi.oex.com/open/api/get_allticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - openapi.oex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 15 Apr 2019 07:07:34 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d240d9b8848b1c49dc2b200e76a16004f1555312054; expires=Tue, 14-Apr-20
+        07:07:34 GMT; path=/; domain=.oex.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4c7c15535f456ecf-NRT
+    body:
+      encoding: UTF-8
+      string: '{"code":"0","msg":"suc","data":{"date":1555312054564,"ticker":[{"symbol":"btcusdt","high":"5166.53","vol":"62649.0418","last":5135.4400000000000000,"low":"5013.8","buy":5133.7,"sell":5136.32,"change":"0.01466044","rose":"0.01466044"},{"symbol":"ethusdt","high":"168.67","vol":"715032.0086","last":167.3000000000000000,"low":"160.54","buy":167.25,"sell":167.42,"change":"0.02524819","rose":"0.02524819"},{"symbol":"eosusdt","high":"5.6044","vol":"1333657.6953","last":5.5402000000000000,"low":"5.2399","buy":5.539,"sell":13,"change":"0.0446309","rose":"0.0446309"},{"symbol":"oexusdt","high":"0.02","vol":"4.3915","last":0.0200000000000000,"low":"0.0151","buy":0.0156,"sell":0.02,"change":"0.28205128","rose":"0.28205128"},{"symbol":"bchusdt","high":"309.71","vol":"701019.7833","last":298.7700000000000000,"low":"273.6","buy":298.55,"sell":298.93,"change":"0.071321","rose":"0.071321"},{"symbol":"ltcusdt","high":"84.32","vol":"110642.6909","last":82.6800000000000000,"low":"76.16","buy":82.63,"sell":82.69,"change":"0.05755948","rose":"0.05755948"},{"symbol":"etcusdt","high":"6.52","vol":"71701.6613","last":6.4400000000000000,"low":"6.17","buy":6.42,"sell":6.44,"change":"0.03370787","rose":"0.03370787"},{"symbol":"neousdt","high":"11.3986","vol":"353272.817","last":11.2571000000000000,"low":"10.7706","buy":11.2246,"sell":11.2711,"change":"0.02192345","rose":"0.02192345"},{"symbol":"trxusdt","high":"0.027284","vol":"4218635.66321983","last":0.0266850000000000,"low":"0.025917","buy":0.026636,"sell":0.026858,"change":"0.01707512","rose":"0.01707512"},{"symbol":"godusdt","high":"11.7","vol":"1.05","last":11.7000000000000000,"low":"11.7","sell":11.61,"change":"0","rose":"0"},{"symbol":"ftcusdt","change":0},{"symbol":"ctcusdt","high":"0.019","vol":"51","last":0.0190000000000000,"low":"0.019","buy":0.0031,"sell":0.019,"change":"0","rose":"0"},{"symbol":"btousdt","high":"0.1","vol":"435","last":0.0086000000000000,"low":"0.0086","buy":0.0087,"sell":0.1,"change":"-0.02272727","rose":"-0.02272727"},{"symbol":"1sgusdt","high":"0.742343","vol":"122167.86","last":0.7318780000000000,"low":"0.728271","buy":0.731878,"sell":0.738902,"change":"-0.0020984","rose":"-0.0020984"},{"symbol":"gcnusdt","high":"0.0209","vol":"50","last":0.0209000000000000,"low":"0.0209","buy":0.0203,"sell":0.0209,"change":"0","rose":"0"},{"symbol":"rxtbcusdt","high":"0.0039","vol":"2845.25","last":0.0038000000000000,"low":"0.0035","buy":0.0037,"sell":0.0039,"change":"-0.02564103","rose":"-0.02564103"},{"symbol":"ethbtc","high":"0.0358","vol":"0.0189","last":0.0358000000000000,"low":"0.0358","sell":0.358,"change":"0","rose":"0"},{"symbol":"bchbtc","high":"0.041","vol":"0.0276","last":0.0410000000000000,"low":"0.041","buy":0.041,"sell":0.41,"change":"0","rose":"0"},{"symbol":"ltcbtc","high":"0","vol":"0","last":0.0081000000000000,"low":"0","sell":0.046352,"change":"0","rose":"0"},{"symbol":"etcbtc","high":"0.001188","vol":"5176.4447","last":0.0011820000000000,"low":"0.001178","sell":0.01182,"change":"0","rose":"0"},{"symbol":"csebtc","high":"0.00000675","vol":"14249.89","last":0.0000052000000000,"low":"0.0000052","buy":0.00000526,"sell":0.00000673,"change":"-0.22962963","rose":"-0.22962963"},{"symbol":"aplbtc","last":3.700000000E-7,"buy":3.7E-7,"sell":0.0000011,"change":0},{"symbol":"1sgbtc","high":"0.00014803","vol":"764490.63","last":0.0001436000000000,"low":"0.00013974","buy":0.00014386,"sell":0.00014545,"change":"-0.01169993","rose":"-0.01169993"},{"symbol":"xetbtc","high":"0.00019125","vol":"50.57575164","last":0.0001912500000000,"low":"0.00019125","buy":0.00012,"change":"0","rose":"0"},{"symbol":"hfrbtc","high":"0.000014","vol":"1","last":0.0000140000000000,"low":"0.000014","buy":0.0000026,"sell":0.00001255,"change":"0","rose":"0"},{"symbol":"edrbtc","high":"0.000007","vol":"50","last":0.0000070000000000,"low":"0.000007","sell":0.000009,"change":"0","rose":"0"},{"symbol":"evybtc","high":"0.0000001","vol":"28316345","last":1.000000000E-7,"low":"0.00000009","buy":6E-8,"sell":1E-7,"change":"0.11111111","rose":"0.11111111"},{"symbol":"sbtc","high":"0.00000329","vol":"11.56","last":0.0000032900000000,"low":"0.00000329","sell":0.0000031,"change":"0","rose":"0"},{"symbol":"inbbtc","high":"0.0000688","vol":"1","last":0.0000688000000000,"low":"0.0000688","change":"0","rose":"0"},{"symbol":"bnbbtc","high":"0.00376","vol":"1","last":0.0037600000000000,"low":"0.00376","change":"0","rose":"0"},{"symbol":"htbtc","high":"0.00064951","vol":"10061.08","last":0.0006008400000000,"low":"0.00059882","change":"-0.00862937","rose":"-0.00862937"},{"symbol":"bixbtc","high":"0.00008004","vol":"10716.21","last":0.0000777800000000,"low":"0.00006919","buy":0.00006919,"change":"0.06402189","rose":"0.06402189"},{"symbol":"zbbtc","high":"0.0000976","vol":"6","last":0.0000976000000000,"low":"0.0000976","change":"0","rose":"0"},{"symbol":"ftbtc","high":"0.000017","vol":"3","last":0.0000170000000000,"low":"0.000017","change":"0","rose":"0"},{"symbol":"kcsbtc","high":"0.00027","vol":"4","last":0.0002700000000000,"low":"0.00027","change":"0","rose":"0"},{"symbol":"ltceth","high":"0.4397","vol":"4641.51380027","last":0.4377000000000000,"low":"0.4351","sell":4.377,"change":"-0.00318834","rose":"-0.00318834"},{"symbol":"trxeth","high":"0.00016155","vol":"1945685.88","last":0.0001594500000000,"low":"0.00015896","buy":0.00015878,"sell":0.00016006,"change":"-0.00734607","rose":"-0.00734607"},{"symbol":"1sgeth","high":"0.00458511","vol":"81565.36","last":0.0043798900000000,"low":"0.00434686","buy":0.00439671,"sell":0.00440475,"change":"-0.03080052","rose":"-0.03080052"},{"symbol":"mvceth","high":"0.0000404","vol":"32990.16","last":0.0000404000000000,"low":"0.0000403","buy":0.00002,"sell":0.0000404,"change":"0.00248139","rose":"0.00248139"},{"symbol":"btnteth","high":"0.00038","vol":"5074.7","last":0.0003539000000000,"low":"0.0003539","sell":0.00035,"change":"-0.02748008","rose":"-0.02748008"},{"symbol":"xeteth","high":"0.00624799","vol":"371.51","last":0.0062479900000000,"low":"0.006","sell":0.00624799,"change":"0.04133167","rose":"0.04133167"},{"symbol":"hfreth","high":"0.00025","vol":"207.43","last":0.0002000000000000,"low":"0.0002","buy":0.0002,"sell":0.00025,"change":"-0.2","rose":"-0.2"},{"symbol":"qubeth","high":"0.00002305","vol":"1717861.1288062","last":0.0000230500000000,"low":"0.0000159","buy":0.00001602,"sell":0.00002304,"change":"0.21315789","rose":"0.21315789"},{"symbol":"pgtseth","change":0},{"symbol":"evyeth","high":"0.00000315","vol":"92928302","last":0.0000031300000000,"low":"0.00000167","buy":0.00000135,"sell":0.00000315,"change":"-0.00634921","rose":"-0.00634921"},{"symbol":"seth","high":"0.00000273","vol":"11792440.63","last":0.0000027300000000,"low":"0.00000272","buy":3E-7,"sell":0.00000275,"change":"0","rose":"0"},{"symbol":"btcbto","last":333333.0000000000000000,"buy":33333,"sell":3333333,"change":0},{"symbol":"iiceth","high":"0.00000158","vol":"1358183.16","last":0.0000015200000000,"low":"0.00000141","sell":0.00000152,"change":"0.02702703","rose":"0.02702703"}]}}'
+    http_version: 
+  recorded_at: Mon, 15 Apr 2019 07:07:34 GMT
+recorded_with: VCR 4.0.0
