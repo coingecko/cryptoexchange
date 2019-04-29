@@ -15,6 +15,11 @@ RSpec.describe 'Novaexchange integration specs' do
     expect(pair.market).to eq 'novaexchange'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'novaexchange', base: doge_btc_pair.base, target: doge_btc_pair.target
+    expect(trade_page_url).to eq "https://novaexchange.com/market/BTC_DOGE/"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(ppc_btc_pair)
 
@@ -27,7 +32,7 @@ RSpec.describe 'Novaexchange integration specs' do
     expect(ticker.high).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
-    
+
     expect(ticker.payload).to_not be nil
   end
 
