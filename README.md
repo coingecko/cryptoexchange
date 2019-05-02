@@ -58,6 +58,7 @@ Or install it yourself as:
 | Bisq              | Y       |            | Y       |         | Y           |          | bisq              |       |
 | Bit2C             | Y       | Y          | Y       |         | User-Defined| Y        | bit2c             |       |
 | Bit-Z             | Y       |            |         |         | Y           |          | bit_z             |       |
+| Bitalong          | Y       | Y          | Y       |         | Y           | Y        | bitalong          |       |
 | Bitbank           | Y       | Y          | Y       |         | User-Defined| Y        | bitbank           |       |
 | Bitbay            | Y       |            |         |         | User-Defined|          | bitbay            |       |
 | Bitbegin          | Y       | N          | N       |         | Y           | Y        | bitbegin          |       |
