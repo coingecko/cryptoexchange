@@ -16,7 +16,7 @@ RSpec.describe 'KyberNetwork integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'kyber_network', base: knc_eth_pair.base, target: knc_eth_pair.target
-    expect(trade_page_url).to eq "https://kyber.network/swap/ETH_KNC"
+    expect(trade_page_url).to eq "https://kyber.network/swap/eth-knc"
   end
 
   it 'fetch ticker' do
