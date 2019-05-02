@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitstorage.finance/api/order-book?currency=USD&market=BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitstorage.finance
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Feb 2019 03:19:16 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '167'
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=7hmvb63selno6rq8gil18cb4u7; path=/; HttpOnly
+      - PHPSESSID=b0e9dog10o79t211f4h6bqk0f3; path=/; HttpOnly
+      - PHPSESSID=fiegqjibc6f3a8saavrn0vbeu3; path=/; HttpOnly
+      - __cfduid=db162cbddcb67139fe2c9a898f0cbf77f1549336755; expires=Wed, 05-Feb-20
+        03:19:15 GMT; path=/; domain=.bitstorage.finance; HttpOnly; Secure
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Origin:
+      - "*"
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,DELETE,PUT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4a423c04a90894b7-NRT
+    body:
+      encoding: UTF-8
+      string: '{"order-book":{"market":"BTC","currency":"USD","bid":[{"price":3600,"order_amount":0.00027,"order_value":0.97,"converted_from":null,"timestamp":1548447843}],"ask":[]}}'
+    http_version: 
+  recorded_at: Tue, 05 Feb 2019 03:19:16 GMT
+recorded_with: VCR 4.0.0

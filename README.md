@@ -58,6 +58,7 @@ Or install it yourself as:
 | Bisq              | Y       |            | Y       |         | Y           |          | bisq              |       |
 | Bit2C             | Y       | Y          | Y       |         | User-Defined| Y        | bit2c             |       |
 | Bit-Z             | Y       |            |         |         | Y           |          | bit_z             |       |
+| Bitalong          | Y       | Y          | Y       |         | Y           | Y        | bitalong          |       |
 | Bitbank           | Y       | Y          | Y       |         | User-Defined| Y        | bitbank           |       |
 | Bitbay            | Y       |            |         |         | User-Defined|          | bitbay            |       |
 | Bitbegin          | Y       | N          | N       |         | Y           | Y        | bitbegin          |       |
@@ -99,6 +100,7 @@ Or install it yourself as:
 | Bitso             | Y       |            |         |         | Y           |          | bitso             |       |
 | Bitstamp          | Y       | Y [x]      | Y       |         | User-Defined|          | bitstamp          |       |
 | Bitsten           | Y       | Y          | N       |         | Y           | Y        | bitsten           |       |
+| Bitstorage        | Y       | Y          | Y       |         | Y           | Y        | bitstorage        |       |
 | Bittrex           | Y       | Y [x]      |         |         | Y           | Y        | bittrex           |       |
 | Bkex              | Y       | N          | N       |         | Y           | Y        | bkex              |       |
 | Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |       |

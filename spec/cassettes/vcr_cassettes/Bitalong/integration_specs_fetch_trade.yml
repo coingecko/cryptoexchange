@@ -1,0 +1,130 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bitalong.com/api/index/tradeHistory/btc_usdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bitalong.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 28 Jan 2019 15:55:09 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8563fa5e9ef8aec6f4a222524ba6be611548690909; expires=Tue, 28-Jan-20
+        15:55:09 GMT; path=/; domain=.bitalong.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/7.1.21
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With,X_Requested_With,TOKEN,ID
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4a04a4455d89c3b0-SIN
+    body:
+      encoding: UTF-8
+      string: '{"result":"true","data":[{"tradeID":"38624473","date":"2019-01-28 23:55:08","type":"buy","rate":"3421.88","amount":0.0996,"total":340.819248},{"tradeID":"38624444","date":"2019-01-28
+        23:54:58","type":"buy","rate":"3419.68","amount":0.0009,"total":3.077712},{"tradeID":"38624427","date":"2019-01-28
+        23:54:50","type":"buy","rate":"3413.31","amount":0.0812,"total":277.160772},{"tradeID":"38624390","date":"2019-01-28
+        23:54:35","type":"buy","rate":"3422.80","amount":0.0056,"total":19.16768},{"tradeID":"38624345","date":"2019-01-28
+        23:54:21","type":"buy","rate":"3425.00","amount":0.4235,"total":1450.4875},{"tradeID":"38624336","date":"2019-01-28
+        23:54:18","type":"sell","rate":"3416.34","amount":0.001,"total":3.41634},{"tradeID":"38624301","date":"2019-01-28
+        23:54:03","type":"buy","rate":"3415.32","amount":0.0284,"total":96.995088},{"tradeID":"38624232","date":"2019-01-28
+        23:53:38","type":"buy","rate":"3412.97","amount":0.1056,"total":360.409632},{"tradeID":"38624188","date":"2019-01-28
+        23:53:20","type":"buy","rate":"3420.10","amount":0.008,"total":27.3608},{"tradeID":"38624161","date":"2019-01-28
+        23:53:07","type":"buy","rate":"3414.71","amount":0.03,"total":102.4413},{"tradeID":"38624100","date":"2019-01-28
+        23:52:46","type":"sell","rate":"3410.83","amount":0.1829,"total":623.840807},{"tradeID":"38624021","date":"2019-01-28
+        23:52:15","type":"sell","rate":"3414.72","amount":0.1401,"total":478.402272},{"tradeID":"38623961","date":"2019-01-28
+        23:51:46","type":"buy","rate":"3404.87","amount":0.0001,"total":0.340487},{"tradeID":"38623902","date":"2019-01-28
+        23:51:26","type":"buy","rate":"3415.16","amount":0.1579,"total":539.253764},{"tradeID":"38623852","date":"2019-01-28
+        23:51:04","type":"sell","rate":"3401.88","amount":0.02,"total":68.0376},{"tradeID":"38623833","date":"2019-01-28
+        23:50:57","type":"sell","rate":"3411.51","amount":0.0005,"total":1.705755},{"tradeID":"38623826","date":"2019-01-28
+        23:50:56","type":"sell","rate":"3407.46","amount":0.0024,"total":8.177904},{"tradeID":"38623811","date":"2019-01-28
+        23:50:52","type":"buy","rate":"3414.30","amount":0.21,"total":717.003},{"tradeID":"38623769","date":"2019-01-28
+        23:50:34","type":"buy","rate":"3407.68","amount":0.0057,"total":19.423776},{"tradeID":"38623732","date":"2019-01-28
+        23:50:17","type":"buy","rate":"3402.90","amount":0.0004,"total":1.36116},{"tradeID":"38623701","date":"2019-01-28
+        23:50:02","type":"sell","rate":"3404.10","amount":0.0061,"total":20.76501},{"tradeID":"38623657","date":"2019-01-28
+        23:49:42","type":"buy","rate":"3411.19","amount":0.199,"total":678.82681},{"tradeID":"38623623","date":"2019-01-28
+        23:49:26","type":"buy","rate":"3402.35","amount":0.7729,"total":2629.676315},{"tradeID":"38623572","date":"2019-01-28
+        23:49:05","type":"sell","rate":"3401.67","amount":0.026,"total":88.44342},{"tradeID":"38623511","date":"2019-01-28
+        23:48:39","type":"sell","rate":"3401.13","amount":0.0058,"total":19.726554},{"tradeID":"38623472","date":"2019-01-28
+        23:48:23","type":"buy","rate":"3401.54","amount":0.0901,"total":306.478754},{"tradeID":"38623437","date":"2019-01-28
+        23:48:09","type":"buy","rate":"3410.10","amount":3.9411,"total":13439.54511},{"tradeID":"38623345","date":"2019-01-28
+        23:47:36","type":"buy","rate":"3402.61","amount":0.0009,"total":3.062349},{"tradeID":"38623307","date":"2019-01-28
+        23:47:19","type":"buy","rate":"3403.02","amount":0.0096,"total":32.668992},{"tradeID":"38623268","date":"2019-01-28
+        23:47:01","type":"buy","rate":"3401.43","amount":0.221,"total":751.71603},{"tradeID":"38623223","date":"2019-01-28
+        23:46:47","type":"sell","rate":"3401.85","amount":0.0009,"total":3.061665},{"tradeID":"38623167","date":"2019-01-28
+        23:46:24","type":"sell","rate":"3399.69","amount":0.0418,"total":142.107042},{"tradeID":"38623109","date":"2019-01-28
+        23:45:58","type":"sell","rate":"3401.34","amount":0.234,"total":795.91356},{"tradeID":"38623073","date":"2019-01-28
+        23:45:38","type":"sell","rate":"3403.16","amount":0.0009,"total":3.062844},{"tradeID":"38622990","date":"2019-01-28
+        23:45:02","type":"sell","rate":"3402.64","amount":0.0004,"total":1.361056},{"tradeID":"38622943","date":"2019-01-28
+        23:44:38","type":"sell","rate":"3398.31","amount":0.0152,"total":51.654312},{"tradeID":"38622800","date":"2019-01-28
+        23:43:33","type":"buy","rate":"3404.28","amount":0.0005,"total":1.70214},{"tradeID":"38622765","date":"2019-01-28
+        23:43:19","type":"buy","rate":"3399.02","amount":0.2034,"total":691.360668},{"tradeID":"38622716","date":"2019-01-28
+        23:43:01","type":"buy","rate":"3401.38","amount":0.0009,"total":3.061242},{"tradeID":"38622646","date":"2019-01-28
+        23:42:32","type":"buy","rate":"3397.17","amount":0.0009,"total":3.057453},{"tradeID":"38622585","date":"2019-01-28
+        23:42:03","type":"buy","rate":"3390.44","amount":0.0005,"total":1.69522},{"tradeID":"38622521","date":"2019-01-28
+        23:41:32","type":"sell","rate":"3396.70","amount":0.0087,"total":29.55129},{"tradeID":"38622432","date":"2019-01-28
+        23:40:56","type":"buy","rate":"3389.55","amount":0.43,"total":1457.5065},{"tradeID":"38622388","date":"2019-01-28
+        23:40:36","type":"sell","rate":"3391.57","amount":0.0776,"total":263.185832},{"tradeID":"38622352","date":"2019-01-28
+        23:40:22","type":"buy","rate":"3389.59","amount":0.2,"total":677.918},{"tradeID":"38622341","date":"2019-01-28
+        23:40:14","type":"sell","rate":"3394.06","amount":0.46,"total":1561.2676},{"tradeID":"38622330","date":"2019-01-28
+        23:40:06","type":"buy","rate":"3390.72","amount":0.445,"total":1508.8704},{"tradeID":"38622318","date":"2019-01-28
+        23:40:03","type":"buy","rate":"3394.21","amount":0.184,"total":624.53464},{"tradeID":"38622282","date":"2019-01-28
+        23:39:52","type":"sell","rate":"3400.64","amount":0.3839,"total":1305.505696},{"tradeID":"38622244","date":"2019-01-28
+        23:39:39","type":"buy","rate":"3396.69","amount":0.0009,"total":3.057021},{"tradeID":"38622199","date":"2019-01-28
+        23:39:19","type":"sell","rate":"3393.59","amount":0.032,"total":108.59488},{"tradeID":"38622166","date":"2019-01-28
+        23:39:07","type":"sell","rate":"3397.71","amount":0.2584,"total":877.968264},{"tradeID":"38622121","date":"2019-01-28
+        23:38:48","type":"sell","rate":"3403.48","amount":0.0068,"total":23.143664},{"tradeID":"38622078","date":"2019-01-28
+        23:38:34","type":"buy","rate":"3394.22","amount":0.0154,"total":52.270988},{"tradeID":"38622041","date":"2019-01-28
+        23:38:18","type":"buy","rate":"3391.66","amount":0.1114,"total":377.830924},{"tradeID":"38622015","date":"2019-01-28
+        23:38:07","type":"buy","rate":"3396.80","amount":0.1489,"total":505.78352},{"tradeID":"38621991","date":"2019-01-28
+        23:37:56","type":"sell","rate":"3399.61","amount":0.0009,"total":3.059649},{"tradeID":"38621949","date":"2019-01-28
+        23:37:30","type":"buy","rate":"3396.99","amount":0.0055,"total":18.683445},{"tradeID":"38621911","date":"2019-01-28
+        23:37:18","type":"buy","rate":"3399.44","amount":0.115,"total":390.9356},{"tradeID":"38621876","date":"2019-01-28
+        23:37:04","type":"sell","rate":"3400.66","amount":0.0022,"total":7.481452},{"tradeID":"38621832","date":"2019-01-28
+        23:36:51","type":"buy","rate":"3402.71","amount":0.0293,"total":99.699403},{"tradeID":"38621787","date":"2019-01-28
+        23:36:33","type":"buy","rate":"3398.44","amount":0.1158,"total":393.539352},{"tradeID":"38621740","date":"2019-01-28
+        23:36:10","type":"buy","rate":"3403.41","amount":0.001,"total":3.40341},{"tradeID":"38621646","date":"2019-01-28
+        23:35:42","type":"buy","rate":"3400.86","amount":0.0049,"total":16.664214},{"tradeID":"38621597","date":"2019-01-28
+        23:35:17","type":"sell","rate":"3396.87","amount":0.0213,"total":72.353331},{"tradeID":"38621590","date":"2019-01-28
+        23:35:10","type":"buy","rate":"3406.59","amount":0.0009,"total":3.065931},{"tradeID":"38621534","date":"2019-01-28
+        23:34:48","type":"buy","rate":"3401.18","amount":0.0433,"total":147.271094},{"tradeID":"38621480","date":"2019-01-28
+        23:34:24","type":"sell","rate":"3400.66","amount":0.0843,"total":286.675638},{"tradeID":"38621451","date":"2019-01-28
+        23:34:08","type":"buy","rate":"3400.52","amount":0.0542,"total":184.308184},{"tradeID":"38621383","date":"2019-01-28
+        23:33:46","type":"buy","rate":"3402.56","amount":2.0958,"total":7131.085248},{"tradeID":"38621376","date":"2019-01-28
+        23:33:41","type":"buy","rate":"3398.24","amount":0.011,"total":37.38064},{"tradeID":"38621315","date":"2019-01-28
+        23:33:09","type":"buy","rate":"3411.86","amount":2.2278,"total":7600.941708},{"tradeID":"38621307","date":"2019-01-28
+        23:33:04","type":"buy","rate":"3408.44","amount":0.02,"total":68.1688},{"tradeID":"38621270","date":"2019-01-28
+        23:32:46","type":"sell","rate":"3415.55","amount":0.0143,"total":48.842365},{"tradeID":"38621218","date":"2019-01-28
+        23:32:27","type":"buy","rate":"3417.73","amount":0.0009,"total":3.075957},{"tradeID":"38621210","date":"2019-01-28
+        23:32:22","type":"sell","rate":"3406.67","amount":0.85,"total":2895.6695},{"tradeID":"38621179","date":"2019-01-28
+        23:32:07","type":"buy","rate":"3418.28","amount":0.4614,"total":1577.194392},{"tradeID":"38621175","date":"2019-01-28
+        23:32:04","type":"sell","rate":"3405.58","amount":0.046,"total":156.65668},{"tradeID":"38621172","date":"2019-01-28
+        23:32:03","type":"buy","rate":"3407.85","amount":0.4,"total":1363.14},{"tradeID":"38621116","date":"2019-01-28
+        23:31:42","type":"sell","rate":"3410.34","amount":0.1213,"total":413.674242}],"elapsed":"0.0296ms"}'
+    http_version: 
+  recorded_at: Mon, 28 Jan 2019 15:55:09 GMT
+recorded_with: VCR 4.0.0
