@@ -33,7 +33,7 @@ module Cryptoexchange::Exchanges
           ticker.high      = NumericHelper.to_d(HashHelper.dig(output, '24H_max', 'price'))
           ticker.low       = NumericHelper.to_d(HashHelper.dig(output, '24H_min', 'price'))
           ticker.volume    = NumericHelper.to_d(output['volume_24h'])
-          ticker.timestamp = NumericHelper.to_d(output['submit_time'])
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

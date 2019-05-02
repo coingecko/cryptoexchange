@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'BinanceDex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:glc_0c7_bnb_pair) { Cryptoexchange::Models::MarketPair.new(base: 'GLC-0C7', target: 'BNB', market: 'binance_dex') }
+  let(:glc_0c7_bnb_pair) { Cryptoexchange::Models::MarketPair.new(base: 'MITH-C76', target: 'BNB', market: 'binance_dex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('binance_dex')
@@ -16,13 +16,13 @@ RSpec.describe 'BinanceDex integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'binance_dex', base: glc_0c7_bnb_pair.base, target: glc_0c7_bnb_pair.target
-    expect(trade_page_url).to eq "https://testnet.binance.org/trade/GLC-0C7_BNB"
+    expect(trade_page_url).to eq "https://www.binance.org/en/trade/MITH-C76_BNB"
   end
 
   it 'fetch ticker' do
     ticker = client.ticker(glc_0c7_bnb_pair)
 
-    expect(ticker.base).to eq 'GLC-0C7'
+    expect(ticker.base).to eq 'MITH-C76'
     expect(ticker.target).to eq 'BNB'
     expect(ticker.market).to eq 'binance_dex'
     expect(ticker.last).to be_a Numeric

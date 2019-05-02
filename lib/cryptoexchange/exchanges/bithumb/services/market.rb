@@ -46,7 +46,7 @@ module Cryptoexchange::Exchanges
             ticker.low = NumericHelper.to_d(market['min_price'])
             #use 1day volume instead of 7days
             ticker.volume = NumericHelper.to_d(market['volume_1day'])
-            ticker.timestamp = date.to_i / 1000
+            ticker.timestamp = nil
             ticker.payload = market
             ticker
           end

@@ -32,7 +32,7 @@ module Cryptoexchange::Exchanges
             ticker.last   = NumericHelper.to_d(ticker_json['lastPrice'])
             ticker.volume = NumericHelper.to_d(ticker_json['quoteVolume'])
 
-            ticker.timestamp = ticker_json['lastTimestamp']
+            ticker.timestamp = nil
             ticker.payload = ticker_json
 
             tickers << ticker

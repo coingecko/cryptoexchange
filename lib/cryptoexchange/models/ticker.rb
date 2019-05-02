@@ -20,6 +20,12 @@ module Cryptoexchange
       def target
         @target.upcase
       end
+
+      # Hard override to prevent timestamp wrong assignment
+      # renders all timestamp assign to useless
+      def timestamp
+        nil
+      end
     end
   end
 end
