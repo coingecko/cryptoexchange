@@ -50,7 +50,7 @@ Or install it yourself as:
 | BigONE            | Y       | Y          | Y       |         | Y           | Y        | bigone            |       |
 | Bilaxy            | Y       | Y          | Y       |         | Y           | Y        | bilaxy            |       |
 | Binance           | Y       | Y [x]      | Y [x]   |         | Y           | Y        | binance           |       |
-| Binance DEX (Testnet)       | Y       |            |         |         | Y           |          | binance_dex       |       |
+| Binance DEX       | Y       |            |         |         | Y           |          | binance_dex       |       |
 | Binance Jersey    | Y       | Y [x]      |         |         | Y           | Y        | binance_jersey    |       |
 | Binance Uganda    | Y       | Y [x]      |         |         | Y           | Y        | binance_uganda    |       |
 | Bione             | Y       |            |         |         | Y           |          | bione             |       |
