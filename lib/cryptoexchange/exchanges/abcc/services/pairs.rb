@@ -12,12 +12,14 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           output.map do |pair, _ticker|
             base, target = Abcc::Market.separate_symbol(pair)
+            next if base.nil? || target.nil?
+
             Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
               market: Abcc::Market::NAME
             )
-          end
+          end.compact
         end
       end
     end

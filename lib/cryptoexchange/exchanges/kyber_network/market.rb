@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://tracker.kyber.network/api'
 
       def self.trade_page_url(args={})
-        "https://kyber.network/swap/#{args[:target]}_#{args[:base]}"
+        "https://kyber.network/swap/#{args[:target].downcase}-#{args[:base].downcase}"
       end
     end
   end

@@ -16,7 +16,7 @@ RSpec.describe 'Fcoin integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'fcoin', base: eth_usdt_pair.base, target: eth_usdt_pair.target
-    expect(trade_page_url).to eq "https://exchange.fcoin.com/ex/main/ETH-USDT"
+    expect(trade_page_url).to eq "https://exchange.fcoin.com/ex/spot/main/eth/usdt"
   end
 
   it 'fetch ticker' do
@@ -45,8 +45,8 @@ RSpec.describe 'Fcoin integration specs' do
     expect(order_book.bids).to_not be_empty
     expect(order_book.asks.first.price).to_not be_nil
     expect(order_book.bids.first.amount).to_not be_nil
-    expect(order_book.bids.first.timestamp).to_not be_nil
-    expect(order_book.timestamp).to be_a Numeric
+    expect(order_book.bids.first.timestamp).to be_nil
+    expect(order_book.timestamp).to be_nil
     expect(order_book.payload).to_not be nil
   end
 

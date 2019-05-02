@@ -20,13 +20,21 @@ module Cryptoexchange::Exchanges
         def adapt_all(output)
           output.map do |ticker|
             base, target = ticker['symbol'].split("/")
+
+            if base.nil? || base.empty? || target.nil? || target.empty?
+              base = ticker['amountAssetName']
+              target = ticker['priceAssetName']
+            end
+
+            next if base.nil? || base.empty? || target.nil? || target.empty?
+
             market_pair  = Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
               market: Waves::Market::NAME
             )
             adapt(ticker, market_pair)
-          end
+          end.compact
         end
 
         def adapt(output, market_pair)
@@ -38,7 +46,7 @@ module Cryptoexchange::Exchanges
           ticker.high      = NumericHelper.to_d(output['24h_high'])
           ticker.low       = NumericHelper.to_d(output['24h_low'])
           ticker.volume    = NumericHelper.to_d(output['24h_volume'])
-          ticker.timestamp = output['timestamp'] / 1000
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

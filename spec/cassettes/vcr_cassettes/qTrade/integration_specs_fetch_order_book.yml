@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.qtrade.io/v1/orderbook/LTC_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.qtrade.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 10 Oct 2018 19:44:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '144'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=ddcc4ee0ebdc08efaad061d1b3bf69cc11539200641; expires=Thu, 10-Oct-19
+        19:44:01 GMT; path=/; domain=.qtrade.io; HttpOnly; Secure
+      Vary:
+      - Origin
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 467b94495a25471c-EWR
+    body:
+      encoding: UTF-8
+      string: '{"data":{"buy":{"0.004":"5","0.006":"4.87216635"},"sell":{"0.01":"1.24069067","0.011":"0.2104076","0.0115":"1.08274836","0.0125":"0.86089043"}}}'
+    http_version: 
+  recorded_at: Wed, 10 Oct 2018 19:44:01 GMT
+recorded_with: VCR 4.0.0

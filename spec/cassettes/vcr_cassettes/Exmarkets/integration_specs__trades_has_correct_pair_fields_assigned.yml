@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://exmarkets.com/api/trade/v1/transactions?limit=50&market=eth-btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - exmarkets.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 19 Feb 2019 18:30:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d84ee39121d20878ffde15b669133ca3e1550601026; expires=Wed, 19-Feb-20
+        18:30:26 GMT; path=/; domain=.exmarkets.com; HttpOnly
+      X-Powered-By:
+      - PHP/7.2.15
+      Cache-Control:
+      - no-cache
+      Allow:
+      - GET
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubdomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4abace0068e6b4e6-VNO
+    body:
+      encoding: ASCII-8BIT
+      string: '{"transactions":[{"id":6882902,"amount":"0.02000000","price":"0.03697500","side":"SELL","timestamp":1550601015},{"id":6882900,"amount":"-0.02000000","price":"0.03697200","side":"BUY","timestamp":1550600995},{"id":6882896,"amount":"0.93900000","price":"0.03697800","side":"SELL","timestamp":1550600972},{"id":6882866,"amount":"-0.02000000","price":"0.03694200","side":"BUY","timestamp":1550600855},{"id":6882852,"amount":"-0.48000000","price":"0.03697600","side":"BUY","timestamp":1550600802},{"id":6882850,"amount":"-0.02000000","price":"0.03697700","side":"BUY","timestamp":1550600802},{"id":6882846,"amount":"0.02200000","price":"0.03697000","side":"SELL","timestamp":1550600768},{"id":6882844,"amount":"-1.00000000","price":"0.03697100","side":"BUY","timestamp":1550600752},{"id":6882840,"amount":"-0.61200000","price":"0.03697300","side":"BUY","timestamp":1550600746},{"id":6882834,"amount":"0.17900000","price":"0.03695200","side":"SELL","timestamp":1550600723},{"id":6882832,"amount":"2.00000000","price":"0.03695000","side":"SELL","timestamp":1550600717},{"id":6882802,"amount":"-1.00000000","price":"0.03695100","side":"BUY","timestamp":1550600527},{"id":6882786,"amount":"-0.02000000","price":"0.03695200","side":"BUY","timestamp":1550600485},{"id":6882772,"amount":"-0.02000000","price":"0.03695300","side":"BUY","timestamp":1550600418},{"id":6882750,"amount":"-0.02000000","price":"0.03694700","side":"BUY","timestamp":1550600302},{"id":6882714,"amount":"-0.02000000","price":"0.03695400","side":"BUY","timestamp":1550600145},{"id":6882710,"amount":"0.02000000","price":"0.03695400","side":"SELL","timestamp":1550600128},{"id":6882682,"amount":"-2.00000000","price":"0.03693800","side":"BUY","timestamp":1550600058},{"id":6882680,"amount":"1.35400000","price":"0.03695600","side":"SELL","timestamp":1550600048},{"id":6882654,"amount":"-1.50000000","price":"0.03692700","side":"BUY","timestamp":1550599869},{"id":6882616,"amount":"-1.00000000","price":"0.03692300","side":"BUY","timestamp":1550599637},{"id":6882602,"amount":"-0.18000000","price":"0.03699200","side":"BUY","timestamp":1550599520},{"id":6882600,"amount":"-0.02000000","price":"0.03699500","side":"BUY","timestamp":1550599520},{"id":6882582,"amount":"-0.02000000","price":"0.03699400","side":"BUY","timestamp":1550599340},{"id":6882580,"amount":"2.00000000","price":"0.03700000","side":"SELL","timestamp":1550599333},{"id":6882578,"amount":"0.28400000","price":"0.03696000","side":"SELL","timestamp":1550599314},{"id":6882570,"amount":"-0.02000000","price":"0.03700700","side":"BUY","timestamp":1550599287},{"id":6882566,"amount":"-0.96000000","price":"0.03701100","side":"BUY","timestamp":1550599262},{"id":6882556,"amount":"1.78000000","price":"0.03700000","side":"SELL","timestamp":1550599207},{"id":6882554,"amount":"0.22000000","price":"0.03699000","side":"SELL","timestamp":1550599207},{"id":6882536,"amount":"0.02000000","price":"0.03699000","side":"SELL","timestamp":1550599159},{"id":6882526,"amount":"0.02000000","price":"0.03699400","side":"SELL","timestamp":1550599106},{"id":6882510,"amount":"-0.02000000","price":"0.03696200","side":"BUY","timestamp":1550598989},{"id":6882476,"amount":"-0.48700000","price":"0.03694000","side":"BUY","timestamp":1550598873},{"id":6882424,"amount":"0.38600000","price":"0.03694000","side":"SELL","timestamp":1550598503},{"id":6882402,"amount":"-1.00000000","price":"0.03695400","side":"BUY","timestamp":1550598413},{"id":6882386,"amount":"-0.48000000","price":"0.03696500","side":"BUY","timestamp":1550598377},{"id":6882384,"amount":"-0.02000000","price":"0.03696600","side":"BUY","timestamp":1550598377},{"id":6882374,"amount":"-0.02000000","price":"0.03695400","side":"BUY","timestamp":1550598316},{"id":6882372,"amount":"0.02000000","price":"0.03695400","side":"SELL","timestamp":1550598306},{"id":6882354,"amount":"0.02000000","price":"0.03695900","side":"SELL","timestamp":1550598235},{"id":6882352,"amount":"0.02000000","price":"0.03693000","side":"SELL","timestamp":1550598215},{"id":6882332,"amount":"0.02000000","price":"0.03689900","side":"SELL","timestamp":1550598121},{"id":6882330,"amount":"0.02000000","price":"0.03689900","side":"SELL","timestamp":1550598110},{"id":6882312,"amount":"0.02000000","price":"0.03695100","side":"SELL","timestamp":1550598059},{"id":6882308,"amount":"-0.02000000","price":"0.03694700","side":"BUY","timestamp":1550598027},{"id":6882300,"amount":"-0.02000000","price":"0.03695400","side":"BUY","timestamp":1550597978},{"id":6882286,"amount":"-0.02000000","price":"0.03695400","side":"BUY","timestamp":1550597863},{"id":6882284,"amount":"0.21300000","price":"0.03695400","side":"SELL","timestamp":1550597850},{"id":6882264,"amount":"-0.56300000","price":"0.03695600","side":"BUY","timestamp":1550597761}]}'
+    http_version: 
+  recorded_at: Tue, 19 Feb 2019 18:30:26 GMT
+recorded_with: VCR 4.0.0

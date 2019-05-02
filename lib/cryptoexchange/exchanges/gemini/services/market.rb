@@ -40,7 +40,7 @@ module Cryptoexchange::Exchanges
           ticker.last      = NumericHelper.to_d(output['last'])
           # this is Base currency's volume
           ticker.volume    = NumericHelper.to_d(output['volume'][market_pair.base])
-          ticker.timestamp = output['volume']['timestamp'].to_i / 1000
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

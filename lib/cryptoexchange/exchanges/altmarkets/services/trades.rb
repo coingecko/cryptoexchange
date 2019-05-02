@@ -11,20 +11,20 @@ module Cryptoexchange::Exchanges
         def ticker_url(market_pair)
           base   = market_pair.base
           target = market_pair.target
-          "#{Cryptoexchange::Exchanges::Altmarkets::Market::API_URL}/public/getmarkethistory?market=#{target}-#{base}"
+          limit = 20
+          "#{Cryptoexchange::Exchanges::Altmarkets::Market::API_URL}/trades?market=#{base.downcase}#{target.downcase}&limit=#{limit}"
         end
 
         def adapt(output, market_pair)
-          output['result'].collect do |trade|
+          output.collect do |trade|
             tr           = Cryptoexchange::Models::Trade.new
-            tr.trade_id  = trade['Id']
+            tr.trade_id  = trade['id']
             tr.base      = market_pair.base
             tr.target    = market_pair.target
             tr.market    = Altmarkets::Market::NAME
-            tr.type      = trade['OrderType'].downcase
-            tr.price     = trade['Price']
-            tr.amount    = trade['Quantity']
-            tr.timestamp = Time.parse(trade['TimeStamp']).to_i
+            tr.price     = trade['price']
+            tr.amount    = trade['volume']
+            tr.timestamp = Time.parse(trade['created_at']).to_i
             tr.payload   = trade
             tr
           end

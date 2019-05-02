@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://exmarkets.com/api/trade/v1/market/ticker/eth-btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - exmarkets.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 19 Feb 2019 18:30:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d84ee39121d20878ffde15b669133ca3e1550601026; expires=Wed, 19-Feb-20
+        18:30:26 GMT; path=/; domain=.exmarkets.com; HttpOnly
+      X-Powered-By:
+      - PHP/7.2.15
+      Cache-Control:
+      - no-cache
+      Allow:
+      - GET
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubdomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4abacdfe4defb4e6-VNO
+    body:
+      encoding: ASCII-8BIT
+      string: '{"last":"0.03697500","high":"0.03792600","low":"0.03660600","volume":"637.80500000","bid":"0.03697300","ask":"0.03697600"}'
+    http_version: 
+  recorded_at: Tue, 19 Feb 2019 18:30:26 GMT
+recorded_with: VCR 4.0.0

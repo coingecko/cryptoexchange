@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module TrxMarket
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::TrxMarket::Market::API_URL}/dex/exchange/marketPair/list"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::TrxMarket::Market::API_URL}/api/exchange/marketPair/list"
 
         def fetch
           output = super

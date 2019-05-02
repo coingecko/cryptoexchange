@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unidax.com/open/api/common/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.unidax.com
+      User-Agent:
+      - http.rb/3.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Tengine/2.2.3
+      Date:
+      - Fri, 22 Mar 2019 09:17:33 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS
+    body:
+      encoding: UTF-8
+      string: '{"code":"0","msg":"suc","data":[{"symbol":"zrxusdt","count_coin":"USDT","amount_precision":2,"base_coin":"ZRX","price_precision":4},{"symbol":"omgusdt","count_coin":"USDT","amount_precision":4,"base_coin":"OMG","price_precision":4},{"symbol":"mcoeth","count_coin":"ETH","amount_precision":4,"base_coin":"MCO","price_precision":6},{"symbol":"sntusdt","count_coin":"USDT","amount_precision":4,"base_coin":"SNT","price_precision":6},{"symbol":"wtceth","count_coin":"ETH","amount_precision":4,"base_coin":"WTC","price_precision":6},{"symbol":"gntusdt","count_coin":"USDT","amount_precision":4,"base_coin":"GNT","price_precision":4},{"symbol":"aeeth","count_coin":"ETH","amount_precision":4,"base_coin":"AE","price_precision":6},{"symbol":"linketh","count_coin":"ETH","amount_precision":2,"base_coin":"LINK","price_precision":8},{"symbol":"zilbtc","count_coin":"BTC","amount_precision":2,"base_coin":"ZIL","price_precision":10},{"symbol":"abteth","count_coin":"ETH","amount_precision":2,"base_coin":"ABT","price_precision":8},{"symbol":"elfeth","count_coin":"ETH","amount_precision":0,"base_coin":"ELF","price_precision":8},{"symbol":"polyeth","count_coin":"ETH","amount_precision":4,"base_coin":"POLY","price_precision":6},{"symbol":"thetausdt","count_coin":"USDT","amount_precision":4,"base_coin":"THETA","price_precision":4},{"symbol":"dgdeth","count_coin":"ETH","amount_precision":4,"base_coin":"DGD","price_precision":6},{"symbol":"paybtc","count_coin":"BTC","amount_precision":2,"base_coin":"PAY","price_precision":8},{"symbol":"btcusdt","count_coin":"USDT","amount_precision":4,"base_coin":"BTC","price_precision":2},{"symbol":"ethusdt","count_coin":"USDT","amount_precision":3,"base_coin":"ETH","price_precision":2},{"symbol":"ltcusdt","count_coin":"USDT","amount_precision":3,"base_coin":"LTC","price_precision":2},{"symbol":"etcusdt","count_coin":"USDT","amount_precision":2,"base_coin":"ETC","price_precision":2},{"symbol":"ethbtc","count_coin":"BTC","amount_precision":3,"base_coin":"ETH","price_precision":8},{"symbol":"ltcbtc","count_coin":"BTC","amount_precision":2,"base_coin":"LTC","price_precision":6}]}'
+    http_version: 
+  recorded_at: Fri, 22 Mar 2019 09:17:33 GMT
+recorded_with: VCR 4.0.0

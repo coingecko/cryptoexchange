@@ -39,7 +39,7 @@ module Cryptoexchange::Exchanges
           ticker.bid       = NumericHelper.divide(NumericHelper.to_d(output['highestBid'].to_f), 1e18)
           ticker.ask       = NumericHelper.divide(NumericHelper.to_d(output['lowestAsk'].to_f), 1e18)
           ticker.volume    = NumericHelper.divide(NumericHelper.to_d(output['tokenVolume'].to_f), 10**output['decimals'].to_i)
-          ticker.timestamp = output['updatedAt']
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

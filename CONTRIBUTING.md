@@ -21,7 +21,7 @@ There are many ways to contribute! Our documentation surely has room for improve
     * Send a pull request indicating that you have a CLA on file.
 
 # Implementing a new exchange
-We have a [step by step guide](https://github.com/coingecko/cryptoexchange/wiki/Implementing-a-New-Exchange).
+We have a [step by step guide](https://github.com/coingecko/cryptoexchange/wiki/Implementing-a-New-Exchange-(HTTP-API)).
 That guide may be useful in helping you understand how we structure our classes to adapt to new exchanges.
 
 # How to suggest a feature or enhancement

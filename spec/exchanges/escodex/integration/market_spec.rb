@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Escodex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:market) { 'escodex' }
   let(:lpc_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'LPC', target: 'BTC', market: 'escodex') }
 
   it 'fetch pairs' do
@@ -14,6 +15,11 @@ RSpec.describe 'Escodex integration specs' do
     expect(pair.market).to eq 'escodex'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: lpc_btc_pair.base, target: lpc_btc_pair.target
+    expect(trade_page_url).to eq "https://wallet.escodex.com/market/ESCODEX.LPC_ESCODEX.BTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(lpc_btc_pair)
 
@@ -24,8 +30,8 @@ RSpec.describe 'Escodex integration specs' do
     expect(ticker.bid).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
+    
     expect(ticker.payload).to_not be nil
   end
 end

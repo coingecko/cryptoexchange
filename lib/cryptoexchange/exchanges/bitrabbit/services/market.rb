@@ -31,8 +31,8 @@ module Cryptoexchange::Exchanges
           ticker.target    = target
           ticker.market    = Bitrabbit::Market::NAME
           ticker.last      = NumericHelper.to_d(output['last'])
-          ticker.bid       = NumericHelper.to_d(output['highestBid'])
-          ticker.ask       = NumericHelper.to_d(output['lowestAsk'])
+          ticker.bid       = NumericHelper.to_d(output['lowestAsk'])
+          ticker.ask       = NumericHelper.to_d(output['highestBid']) # ask is higher
           ticker.high      = NumericHelper.to_d(output['high24hr'])
           ticker.low       = NumericHelper.to_d(output['low24hr'])
           ticker.volume    = NumericHelper.to_d(output['quoteVolume'])
