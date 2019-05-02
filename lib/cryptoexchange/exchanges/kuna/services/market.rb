@@ -1,3 +1,4 @@
+require 'pry'
 module Cryptoexchange::Exchanges
   module Kuna
     module Services
@@ -9,6 +10,7 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
+          binding.pry
           output = super(ticker_url(market_pair))
           adapt(output, market_pair)
         end
