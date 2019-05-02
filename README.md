@@ -71,12 +71,12 @@ Or install it yourself as:
 | Bitexbook         | Y       | N          | N       |         | Y           | Y        | bitexbook         |       |
 | Bitexlive         | Y       | N          | N       |         | Y           | Y        | bitexlive         |       |
 | BitFex.Trade      | Y       |            |         |         | Y           | Y        | bitfex            |       |
-| Bitfinex          | Y       |            |         |         | Y           |          | bitfinex          |       |
+| Bitfinex          | Y       | Y [x]      |         |         | Y           |          | bitfinex          |       |
 | Bitflyer          | Y       |            |         |         | Y           |          | bitflyer          |       |
 | Bitforex          | Y       | N          | N       |         | Y           |          | bitforex          |       |
 | Bithash           | Y       | Y          | Y       |         | Y           | Y        | bithash           |       |
 | Bitholic          | Y       | Y          | Y       |         | Y           |          | bitholic          |       |
-| Bithumb           | Y       |            |         |         | Y           |          | bithumb           |       |
+| Bithumb           | Y       | Y [x]      |         |         | Y           |          | bithumb           |       |
 | Bitibu            | Y       | Y          | Y       |         | Y           | Y        | bitibu            |       |
 | Bitinfi           | Y       | Y          |         |         | Y           |          | bitinfi           |       |
 | Bitinka           | Y       | Y          |         |         | Y           |          | bitinka           |       |
@@ -99,7 +99,7 @@ Or install it yourself as:
 | Bitso             | Y       |            |         |         | Y           |          | bitso             |       |
 | Bitstamp          | Y       | Y [x]      | Y       |         | User-Defined|          | bitstamp          |       |
 | Bitsten           | Y       | Y          | N       |         | Y           | Y        | bitsten           |       |
-| Bittrex           | Y       |            |         |         | Y           | Y        | bittrex           |       |
+| Bittrex           | Y       | Y [x]      |         |         | Y           | Y        | bittrex           |       |
 | Bkex              | Y       | N          | N       |         | Y           | Y        | bkex              |       |
 | Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |       |
 | Blockonix         | Y       | Y          | Y       |         | Y           |          | blockonix         |       |
@@ -247,8 +247,8 @@ Or install it yourself as:
 | Hotbit            | Y       | N          | N       |         | Y           | Y        | hotbit            |       |
 | HPX               | Y       | Y          | Y       |         | Y           |          | hpx               |       |
 | Hubi              | Y       |            |         |         | Y           |          | hubi              |       |
-| Huobi             | Y       |            |         |         | Y           | Y        | huobi             |       |
-| Huobi US          | Y       |            |         |         | Y           | Y        | huobi_us          |       |
+| Huobi             | Y       | Y [x]      |         |         | Y           | Y        | huobi             |       |
+| Huobi US          | Y       | Y [x]      |         |         | Y           | Y        | huobi_us          |       |
 | Ice3x             | Y       | Y          | Y       |         | Y           |          | ice3x             |       |
 | Idax              | Y       | N          | N       |         | Y           | Y        | idax              |       |
 | Idcm              | Y       |            |         |         | Y           | Y        | idcm              |       |
