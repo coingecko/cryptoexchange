@@ -314,6 +314,7 @@ Or install it yourself as:
 | OKCoin            | Y       |            |         |         | User-Defined|          | okcoin            |       |
 | OKEx              | Y       | Y [x]      | Y       |         | Y           | Y        | okex              |       |
 | OKEx Perpetual Swaps (alpha) | Y     |            |         |         | Y           | Y        | okex_swap         |futures|
+| Omgfin            | Y       |            |         |         | Y           | Y        | omgfin            |       |
 | OmniTrade         | Y       | Y          | Y       | Y       | Y           |          | omnitrade         |       |
 | Ooobtc            | Y       | Y          | Y       |         | Y           | Y        | ooobtc            |       |
 | Openledger        | Y       | Y          | Y       |         | Y           | Y        | openledger        |       |
