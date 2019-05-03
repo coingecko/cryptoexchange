@@ -35,8 +35,7 @@ module Cryptoexchange::Exchanges
 
         def adapt_orders(orders)
           # cuz the output is the string, so need to get back to array first
-          data = JSON.load(orders)
-          data.collect do |order_entry|
+          orders.collect do |order_entry|
             Cryptoexchange::Models::Order.new(price:  order_entry[0],
                                               amount: order_entry[1]
             )

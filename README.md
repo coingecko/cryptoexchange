@@ -47,8 +47,8 @@ Or install it yourself as:
 | Bgogo             | Y       | Y [x]      | Y       |         | Y           | Y        | bgogo             |       |
 | Bibox             | Y       | Y [x]      | Y       |         | Y           | Y        | bibox             |       |
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
-| BigONE            | Y       | Y          | Y       |         | Y           | Y        | bigone            |       |
-| Bilaxy            | Y       | Y          | Y       |         | Y           | Y        | bilaxy            |       |
+| BigONE            | Y       | Y [x]      | Y       |         | Y           | Y        | bigone            |       |
+| Bilaxy            | Y       | Y [x]      | Y       |         | Y           | Y        | bilaxy            |       |
 | Binance           | Y       | Y [x]      | Y [x]   |         | Y           | Y        | binance           |       |
 | Binance DEX       | Y       |            |         |         | Y           |          | binance_dex       |       |
 | Binance Jersey    | Y       | Y [x]      |         |         | Y           | Y        | binance_jersey    |       |
@@ -139,7 +139,7 @@ Or install it yourself as:
 | Cobinhood         | Y       | Y [x]      |         |         | Y           | Y        | cobinhood         |       |
 | CODEX             | Y       | Y          | Y       |         | Y           |          | codex             |       |
 | Coin2001          | Y       | Y          | Y       |         | Y           |          | coin2001          |       |
-| Coinall           | Y       | Y          | Y       |         | Y           |          | coinall           |       |
+| Coinall           | Y       | Y [x]      | Y       |         | Y           |          | coinall           |       |
 | Coin Asset        | Y       | Y          | Y       |         | Y           |          | coinasset         |       |
 | Coinchangex       | Y       | N          | N       |         | Y           | Y        | coinchangex       |       |
 | CoinEgg           | Y       | Y [x]      | Y       |         | User-Defined| Y        | coin_egg          |       |
@@ -148,10 +148,10 @@ Or install it yourself as:
 | Coinbene          | Y       | Y [x]      | Y       |         | Y           | Y        | coinbene          |       |
 | Coinbig           | Y       |            |         |         | Y           | Y        | coinbig           |       |
 | Coinbit           | Y       | N          | N       |         | Y           | Y        | coinbit           |       |
-| Coincheck         | Y       |            |         |         | User-Defined|          | coincheck         |       |
+| Coincheck         | Y       | Y [x]      |         |         | User-Defined|          | coincheck         |       |
 | Coindeal          | Y       | Y          |         |         | Y           |          | coindeal          |       |
 | Coindirect        | Y       | N          | N       |         | Y           | Y        | coindirect        |       |
-| Coineal           | Y       | Y          | Y       |         | Y           |          | coineal           |       |
+| Coineal           | Y       | Y [broken] | Y       |         | Y           |          | coineal           |       |
 | Coinex            | Y       | Y          | Y       |         | Y           | Y        | coinex            |       |
 | Coinexmarket (broken)| Y       | Y          | Y       |         | Y           |          | coinexmarket      |       |
 | Coinfalcon        | Y       | Y          | Y       |         | Y           |          | coinfalcon        |       |
@@ -175,8 +175,8 @@ Or install it yourself as:
 | Coinsbank         | Y       |            |         |         | Y           |          | coinsbank         |       |
 | Coinsbit          | Y       |            |         |         | Y           |          | coinsbit          |       |
 | Coinstock         | Y       | Y          | Y       |         | Y           |          | coinstock         |       |
-| Coinsuper         | Y       |            |         |         | Y           | Y        | coinsuper         |       |
-| Cointiger         | Y       | Y          | Y       |         | Y           |          | cointiger         |       |
+| Coinsuper         | Y       | N [Not Found] |         |         | Y           | Y        | coinsuper         |       |
+| Cointiger         | Y       | Y [x]      | Y       |         | Y           |          | cointiger         |       |
 | Coinut (Auth)     | Y       | Y          | Y       | Y       | Y           |          | coinut            |       |
 | Coinzest          | Y       | Y          |         |         | Y           |          | coinzest          |       |
 | Coinzo            | Y       | Y          | Y       |         | Y           | Y        | coinzo            |       |
@@ -206,7 +206,7 @@ Or install it yourself as:
 | Dflow             | Y       |            |         |         | Y           | Y        | dflow             |       |
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |       |
 | Digitalprice      | Y       | Y          | Y       |         | Y           | Y        | digitalprice      |       |
-| Dobitrade         | Y       | Y          | N       |         | Y           | Y        | dobitrade         |       |
+| Dobitrade         | Y       | Y [x]      | N       |         | Y           | Y        | dobitrade         |       |
 | Dragonex          | Y       | Y          | N       |         | Y           | Y        | dragonex          |       |
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |       |
 | Eosex             | Y       | N          | N       |         | Y           | Y        | eosex             |       |
@@ -235,7 +235,7 @@ Or install it yourself as:
 | Gate              | Y       | Y [x]      | Y       |         | Y           | Y        | gate              |       |
 | Gatecoin          | Y       |            |         |         | Y           |          | gatecoin          |       |
 | GDAX(Coinbase Pro)| Y       | Y [x]      |         |         | Y           | Y        | gdax              |       |
-| Gemini            | Y       | Y          | Y       |         | Y           |          | gemini            |       |
+| Gemini            | Y       | Y [x]      | Y       |         | Y           |          | gemini            |       |
 | GetBTC            | Y       | Y          | Y       |         | User-Defined| Y        | getbtc            |       |
 | Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |       |
 | Gobaba            | Y       |            |         |         | Y           |          | gobaba            |       |
@@ -272,8 +272,8 @@ Or install it yourself as:
 | Koinex            | Y       |            |         |         | Y           |          | koinex            |       |
 | Koinok            | Y       |            |         |         | Y           | Y        | koinok            |       |
 | Koinx             | Y       |            |         |         | Y           | Y        | koinx             |       |
-| Korbit            | Y       |            |         |         | User-Defined| Y        | korbit            |       |
-| Kraken            | Y       |            |         |         | Y           | Y        | kraken            |       |
+| Korbit            | Y       | Y [x]      |         |         | User-Defined| Y        | korbit            |       |
+| Kraken            | Y       | Y [x]      |         |         | Y           | Y        | kraken            |       |
 | Kryptono          | Y       | Y [x]      | Y       |         | User-Defined| Y        | kryptono          |       |
 | Kucoin            | Y       | Y [x]      | N       |         | Y           | Y        | kucoin            |       |
 | Kuna              | Y       | Y          | Y       |         | User-Defined| Y        | kuna              |       |
