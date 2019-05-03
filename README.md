@@ -74,7 +74,7 @@ Or install it yourself as:
 | BitFex.Trade      | Y       |            |         |         | Y           | Y        | bitfex            |       |
 | Bitfinex          | Y       | Y [x]      |         |         | Y           |          | bitfinex          |       |
 | Bitflyer          | Y       |            |         |         | Y           |          | bitflyer          |       |
-| Bitforex          | Y       | N          | N       |         | Y           |          | bitforex          |       |
+| Bitforex          | Y       | Y [x]      | N       |         | Y           |          | bitforex          |       |
 | Bithash           | Y       | Y          | Y       |         | Y           | Y        | bithash           |       |
 | Bitholic          | Y       | Y          | Y       |         | Y           |          | bitholic          |       |
 | Bithumb           | Y       | Y [x]      |         |         | Y           |          | bithumb           |       |
@@ -246,7 +246,7 @@ Or install it yourself as:
 | Hb.top            | Y       | N          | N       |         | Y           | N        | hb_top            |       |
 | Hikenex           | Y       | N          | N       |         | Y           | N        | hikenex           |       |
 | HitBTC            | Y       | Y [x]      | Y       |         | Y           | Y        | hitbtc            |       |
-| Hotbit            | Y       | N          | N       |         | Y           | Y        | hotbit            |       |
+| Hotbit            | Y       | Y [x]      | N       |         | Y           | Y        | hotbit            |       |
 | HPX               | Y       | Y          | Y       |         | Y           |          | hpx               |       |
 | Hubi              | Y       |            |         |         | Y           |          | hubi              |       |
 | Huobi             | Y       | Y [x]      |         |         | Y           | Y        | huobi             |       |
