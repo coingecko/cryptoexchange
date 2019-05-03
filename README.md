@@ -234,7 +234,7 @@ Or install it yourself as:
 | Fubt              | Y       |            |         |         | Y           | Y        | fubt              |       |
 | Gate              | Y       | Y [x]      | Y       |         | Y           | Y        | gate              |       |
 | Gatecoin          | Y       |            |         |         | Y           |          | gatecoin          |       |
-| GDAX(Coinbase Pro)| Y       |            |         |         | Y           | Y        | gdax              |       |
+| GDAX(Coinbase Pro)| Y       | Y [x]      |         |         | Y           | Y        | gdax              |       |
 | Gemini            | Y       | Y          | Y       |         | Y           |          | gemini            |       |
 | GetBTC            | Y       | Y          | Y       |         | User-Defined| Y        | getbtc            |       |
 | Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |       |
@@ -324,7 +324,7 @@ Or install it yourself as:
 | Paribu            | Y       |            |         |         | Y           |          | paribu            |       |
 | Paro Exchange     | Y       |            |         |         | Y           |          | paroexchange      |       |
 | Paymium           | Y       | Y          | Y       |         | User-Defined|          | paymium           |       |
-| Poloniex          | Y       |            |         |         | Y           | Y        | poloniex          |       |
+| Poloniex          | Y       | Y [x]      |         |         | Y           | Y        | poloniex          |       |
 | Purcow            | Y       |            |         |         | Y           | Y        | purcow            |       |
 | QBTC              | Y       | Y          | Y       |         | Y           |          | qbtc              |       |
 | Qryptos           | Y       |            |         |         | Y           |          | qryptos           |       |
@@ -376,7 +376,7 @@ Or install it yourself as:
 | Unidax            | Y       | N          | N       |         | Y           | N        | unidax            |       |
 | Uniswap           | Y       | N          | N       |         | Y           | N        | uniswap           |       |
 | Unocoin           |         |            |         |         |             |          | unocoin           |       |
-| Upbit             | Y       | Y          | Y       |         | Y           | Y        | upbit             |       |
+| Upbit             | Y       | Y [x]      | Y       |         | Y           | Y        | upbit             |       |
 | Vaultmex          | Y       | Y          | Y       |         | Y           | Y        | vaultmex          |       |
 | Vbitex            | Y       | N          | N       |         | Y           | Y        | vbitex            |       |
 | Vebitcoin         | Y       | N          | N       |         | Y           | N        | vebitcoin         |       |
