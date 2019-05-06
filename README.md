@@ -178,6 +178,7 @@ Or install it yourself as:
 | Coinsuper         | Y       | N [Not Found] |         |         | Y           | Y        | coinsuper         |       |
 | Cointiger         | Y       | Y [x]      | Y       |         | Y           |          | cointiger         |       |
 | Coinut (Auth)     | Y       | Y          | Y       | Y       | Y           |          | coinut            |       |
+| Coinxpro          | Y       | Y          |         |         | Y           | Y        | coinxpro          |       |
 | Coinzest          | Y       | Y          |         |         | Y           |          | coinzest          |       |
 | Coinzo            | Y       | Y          | Y       |         | Y           | Y        | coinzo            |       |
 | COSS              | Y       |            |         |         | Y           | Y        | coss              |       |
