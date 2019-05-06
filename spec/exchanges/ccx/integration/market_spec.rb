@@ -13,9 +13,15 @@ RSpec.describe 'Ccx integration specs' do
     expect(pair.market).to eq 'ccx'
   end
 
+  it 'give trade url' do
+    btc_usdt_pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usdt', market: 'ccx')
+    trade_page_url = client.trade_page_url 'ccx', base: btc_usdt_pair.base, target: btc_usdt_pair.target
+    expect(trade_page_url).to eq "https://ccxcanada.com/markets/btcusdt"
+  end
+
   it 'fetch ticker' do
-    eth_aud_pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usdt', market: 'ccx')
-    ticker = client.ticker(eth_aud_pair)
+    btc_usdt_pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usdt', market: 'ccx')
+    ticker = client.ticker(btc_usdt_pair)
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USDT'
