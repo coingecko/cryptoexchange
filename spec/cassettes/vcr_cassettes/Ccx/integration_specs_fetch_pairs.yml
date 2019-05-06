@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://manager.ccxcanada.com/api/v2/markets.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - manager.ccxcanada.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '6093'
+      Connection:
+      - close
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Id:
+      - 2acd65f1-e9e0-4c7d-9bc1-8a78f3c99828
+      Etag:
+      - '"5aa08dd2145b636a4be8a526b4881c20"'
+      X-Runtime:
+      - '0.023176'
+      Date:
+      - Mon, 06 May 2019 05:59:33 GMT
+      X-Powered-By:
+      - Phusion Passenger 5.1.12
+      Server:
+      - nginx + Phusion Passenger 5.1.12
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"btccad","name":"BTC/CAD","base_unit":"btc","quote_unit":"cad","ask_fixed":4,"bid_fixed":2,"fee":{"id":59,"trade_pair":"BTC/CAD","bid":"0.002","ask":"0.002","status":"Publish","created_at":"2018-11-20T18:44:43.000+11:00","updated_at":"2018-11-20T19:17:38.000+11:00"}},{"id":"ethcad","name":"ETH/CAD","base_unit":"eth","quote_unit":"cad","ask_fixed":4,"bid_fixed":2,"fee":{"id":88,"trade_pair":"ETH/CAD","bid":"0.002","ask":"0.002","status":"Publish","created_at":"2018-11-20T18:44:59.000+11:00","updated_at":"2018-11-20T19:17:40.000+11:00"}},{"id":"ethusdt","name":"ETH/USDT","base_unit":"eth","quote_unit":"usdt","ask_fixed":4,"bid_fixed":2,"fee":{"id":117,"trade_pair":"ETH/USDT","bid":"0.0015","ask":"0.002","status":"Publish","created_at":"2018-11-20T19:14:13.000+11:00","updated_at":"2019-04-12T18:49:24.000+10:00"}},{"id":"btcusdt","name":"BTC/USDT","base_unit":"btc","quote_unit":"usdt","ask_fixed":4,"bid_fixed":2,"fee":{"id":146,"trade_pair":"BTC/USDT","bid":"0.0015","ask":"0.002","status":"Publish","created_at":"2018-11-20T19:16:10.000+11:00","updated_at":"2019-04-12T18:49:34.000+10:00"}},{"id":"acubtc","name":"ACU/BTC","base_unit":"acu","quote_unit":"btc","ask_fixed":0,"bid_fixed":8,"fee":{"id":175,"trade_pair":"ACU/BTC","bid":"0.0015","ask":"0.002","status":"Publish","created_at":"2018-11-20T19:16:24.000+11:00","updated_at":"2019-04-12T18:49:47.000+10:00"}},{"id":"rdccad","name":"RDC/CAD","base_unit":"rdc","quote_unit":"cad","ask_fixed":0,"bid_fixed":4,"fee":{"id":204,"trade_pair":"RDC/CAD","bid":"0.002","ask":"0.002","status":"Publish","created_at":"2018-12-18T16:39:48.000+11:00","updated_at":"2018-12-18T16:40:09.000+11:00"}},{"id":"xrpcad","name":"XRP/CAD","base_unit":"xrp","quote_unit":"cad","ask_fixed":4,"bid_fixed":4,"fee":{"id":233,"trade_pair":"XRP/CAD","bid":"0.002","ask":"0.002","status":"Publish","created_at":"2018-12-27T16:04:03.000+11:00","updated_at":"2018-12-27T16:04:13.000+11:00"}},{"id":"btcxrp","name":"BTC/XRP","base_unit":"btc","quote_unit":"xrp","ask_fixed":4,"bid_fixed":4,"fee":{"id":262,"trade_pair":"BTC/XRP","bid":"0.0015","ask":"0.002","status":"Publish","created_at":"2019-01-07T19:23:59.000+11:00","updated_at":"2019-04-12T18:50:32.000+10:00"}},{"id":"ethxrp","name":"ETH/XRP","base_unit":"eth","quote_unit":"xrp","ask_fixed":4,"bid_fixed":4,"fee":{"id":291,"trade_pair":"ETH/XRP","bid":"0.0015","ask":"0.002","status":"Publish","created_at":"2019-01-07T19:24:40.000+11:00","updated_at":"2019-04-12T18:50:46.000+10:00"}},{"id":"eoscad","name":"EOS/CAD","base_unit":"eos","quote_unit":"cad","ask_fixed":2,"bid_fixed":4,"fee":{"id":320,"trade_pair":"EOS/CAD","bid":"0.002","ask":"0.002","status":"Publish","created_at":"2019-01-14T13:25:39.000+11:00","updated_at":"2019-01-14T16:54:53.000+11:00"}},{"id":"usdtcad","name":"USDT/CAD","base_unit":"usdt","quote_unit":"cad","ask_fixed":2,"bid_fixed":2,"fee":{"id":349,"trade_pair":"USDT/CAD","bid":"0.002","ask":"0.002","status":"Publish","created_at":"2019-01-17T12:17:50.000+11:00","updated_at":"2019-01-18T14:51:04.000+11:00"}},{"id":"trxcad","name":"TRX/CAD","base_unit":"trx","quote_unit":"cad","ask_fixed":0,"bid_fixed":6,"fee":{"id":436,"trade_pair":"TRX/CAD","bid":"0.002","ask":"0.002","status":"Publish","created_at":"2019-02-12T16:35:39.000+11:00","updated_at":"2019-02-12T16:36:16.000+11:00"}},{"id":"trxxrp","name":"TRX/XRP","base_unit":"trx","quote_unit":"xrp","ask_fixed":0,"bid_fixed":6,"fee":{"id":465,"trade_pair":"TRX/XRP","bid":"0.0015","ask":"0.002","status":"Publish","created_at":"2019-02-12T16:35:39.000+11:00","updated_at":"2019-04-12T18:51:30.000+10:00"}},{"id":"xlmcad","name":"XLM/CAD","base_unit":"xlm","quote_unit":"cad","ask_fixed":2,"bid_fixed":4,"fee":{"id":494,"trade_pair":"XLM/CAD","bid":"0.002","ask":"0.002","status":"Publish","created_at":"2019-02-21T13:31:42.000+11:00","updated_at":"2019-02-21T13:32:02.000+11:00"}},{"id":"adaxrp","name":"ADA/XRP","base_unit":"ada","quote_unit":"xrp","ask_fixed":0,"bid_fixed":6,"fee":{"id":523,"trade_pair":"ADA/XRP","bid":"0.002","ask":"0.002","status":"Publish","created_at":"2019-03-05T17:18:02.000+11:00","updated_at":"2019-04-13T20:36:30.000+10:00"}},{"id":"btbbtc","name":"BTB/BTC","base_unit":"btb","quote_unit":"btc","ask_fixed":0,"bid_fixed":8,"fee":{"id":552,"trade_pair":"BTB/BTC","bid":"0.0015","ask":"0.002","status":"Publish","created_at":"2019-03-06T17:32:09.000+11:00","updated_at":"2019-04-12T18:52:26.000+10:00"}},{"id":"hetbtc","name":"HET/BTC","base_unit":"het","quote_unit":"btc","ask_fixed":4,"bid_fixed":8,"fee":{"id":581,"trade_pair":"HET/BTC","bid":"0.0015","ask":"0.002","status":"Publish","created_at":"2019-03-06T17:32:09.000+11:00","updated_at":"2019-04-12T18:52:45.000+10:00"}},{"id":"xlbbtc","name":"XLB/BTC","base_unit":"xlb","quote_unit":"btc","ask_fixed":0,"bid_fixed":8,"fee":{"id":610,"trade_pair":"XLB/BTC","bid":"0.0015","ask":"0.002","status":"Publish","created_at":"2019-03-11T13:52:50.000+11:00","updated_at":"2019-04-12T18:53:16.000+10:00"}},{"id":"innbceth","name":"INNBC/ETH","base_unit":"innbc","quote_unit":"eth","ask_fixed":0,"bid_fixed":8,"fee":{"id":639,"trade_pair":"INNBC/ETH","bid":"0.0015","ask":"0.002","status":"Publish","created_at":"2019-03-15T17:04:34.000+11:00","updated_at":"2019-04-12T18:53:02.000+10:00"}},{"id":"btrsbtc","name":"BTRS/BTC","base_unit":"btrs","quote_unit":"btc","ask_fixed":0,"bid_fixed":8,"fee":{"id":668,"trade_pair":"BTRS/BTC","bid":"0.0015","ask":"0.002","status":"Publish","created_at":"2019-03-19T19:52:33.000+11:00","updated_at":"2019-04-12T18:53:28.000+10:00"}},{"id":"adacad","name":"ADA/CAD","base_unit":"ada","quote_unit":"cad","ask_fixed":0,"bid_fixed":4,"fee":{"id":697,"trade_pair":"ADA/CAD","bid":"0.002","ask":"0.002","status":"Publish","created_at":"2019-04-09T18:10:26.000+10:00","updated_at":"2019-04-09T18:10:33.000+10:00"}},{"id":"hubbseth","name":"HUBBS/ETH","base_unit":"hubbs","quote_unit":"eth","ask_fixed":0,"bid_fixed":8,"fee":{"id":726,"trade_pair":"HUBBS/ETH","bid":"0.0015","ask":"0.002","status":"Publish","created_at":"2019-04-15T11:47:56.000+10:00","updated_at":"2019-04-16T12:01:56.000+10:00"}}]'
+    http_version: 
+  recorded_at: Mon, 06 May 2019 05:59:33 GMT
+recorded_with: VCR 4.0.0
