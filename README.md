@@ -160,7 +160,7 @@ Or install it yourself as:
 | Coingi            | Y       | Y          | Y       |         | Y           | Y        | coingi            |       |
 | Coinhouse         | Y       |            |         |         | Y           | Y        | coinhouse         |       |
 | Coinhub           | Y       | Y          | Y       |         | Y           | Y        | coinhub           |       |
-| CoinJar           | Y       | Y          | Y       |         | Y           | Y        | coinjar           |       |
+| CoinJar           | Y       | Y [x]      | Y       |         | Y           | Y        | coinjar           |       |
 | Coinlim           | Y       | N          | N       |         | Y           | N        | coinlim           |       |
 | Coinmate          | Y       | Y          |         |         | User-Defined|          | coinmate          |       |
 | Coinmetro         | Y       |            |         |         |             |          | coin_metro        |       |
@@ -186,7 +186,7 @@ Or install it yourself as:
 | Cpdax             | Y       | Y          | Y       |         | Y           |          | cpdax             |       |
 | CredoEx           | Y       |            |         |         | Y           |          | credoex           |       |
 | Crex24            | Y       | Y          | Y       |         | Y           | Y        | crex24            |       |
-| CRXZone           | Y       | Y          | Y       |         | Y           | Y        | crxzone           |       |
+| CRXZone           | Y       | Y [x]      | Y       |         | Y           | Y        | crxzone           |       |
 | Cryptagio         | Y       | Y          | Y       |         | Y           | Y        | cryptagio         |       |
 | Cryptaldash       | Y       | Y          | Y       |         | Y           |          | cryptaldash       |       |
 | Cryptex           | Y       | Y          | Y       |         | User-Defined| Y        | cryptex           |       |
@@ -226,14 +226,14 @@ Or install it yourself as:
 | Extstock          | Y       | Y          | Y       |         | Y           | Y        | extstock          |       |
 | Exx               | Y       | Y [x]      | Y       |         | Y           | Y        | exx               |       |
 | F1cx              | Y       | Y          | Y       |         | Y           | Y        | f1cx              |       |
-| FatBTC            | Y       | Y          | Y       |         | Y           |          | fatbtc            |       |
+| FatBTC            | Y       | Y [x]      | Y       |         | Y           |          | fatbtc            |       |
 | Fcoin             | Y       | Y [x]      | Y       |         | Y           | Y        | fcoin             |       |
 | Fex               | Y       | N          | N       |         | Y           |          | fex               |       |
 | Financex          | Y       | N          | N       |         | Y           | Y        | financex          |       |
 | Fisco             | Y       | Y          | Y       |         | Y           | Y        | fisco             |       |
 | Forkdelta         | Y       | N          | N       |         | Y           | Y        | forkdelta         |       |
 | Freiexchange      | Y       | Y          |         |         | User-Defined| Y        | freiexchange      |       |
-| FinexBox          | Y       | Y          |         |         | Y           | Y        | finexbox          |       |
+| FinexBox          | Y       | Y [x]      |         |         | Y           | Y        | finexbox          |       |
 | Fubt              | Y       |            |         |         | Y           | Y        | fubt              |       |
 | Gate              | Y       | Y [x]      | Y       |         | Y           | Y        | gate              |       |
 | Gate (Futures)    | Y       | Y [x]      | Y       |         | Y           | Y        | gate              |futures|
@@ -260,13 +260,13 @@ Or install it yourself as:
 | Idcm              | Y       |            |         |         | Y           | Y        | idcm              |       |
 | Idex              | Y       | Unstable   | Y       |         | Y           | Y        | idex              |       |
 | Incorex           | Y       | Y          | Y       |         | Y           | Y        | incorex           |       |
-| Indodax           | Y       | Y          | Y       |         | User-Defined| N        | indodax           |       |
+| Indodax           | Y       | Y [x]      | Y       |         | User-Defined| N        | indodax           |       |
 | IndependentReserve| Y       | N          | N       |         | Y           | Y        |independent_reserve|       |
 | InfinityCoin      | Y       |            |         |         | Y           | Y        | infinity_coin     |       |
 | InstantBitex      | Y       | Y          | Y       |         | Y           |          | instantbitex      |       |
 | Iqfinex           | Y       | Y          | Y       |         | Y           | Y        | iqfinex           |       |
 | Ironex            | Y       |            |         |         | Y           |          | ironex            |       |
-| Itbit             | Y       | Y          | Y       |         | User-Defined|          | itbit             |       |
+| Itbit             | Y       | Y [x]      | Y       |         | User-Defined|          | itbit             |       |
 | Jex               | Y       | N          | N       |         | Y           |          | jex               |       |
 | Joyso             | Y       | Y          |         |         | Y           |          | joyso             |       |
 | Jubi              | Y       |            |         |         | Y           |          | jubi              |       |
@@ -280,11 +280,11 @@ Or install it yourself as:
 | Kraken            | Y       | Y [x]      |         |         | Y           | Y        | kraken            |       |
 | Kryptono          | Y       | Y [x]      | Y       |         | User-Defined| Y        | kryptono          |       |
 | Kucoin            | Y       | Y [x]      | N       |         | Y           | Y        | kucoin            |       |
-| Kuna              | Y       | Y          | Y       |         | User-Defined| Y        | kuna              |       |
+| Kuna              | Y       | Y [x]      | Y       |         | User-Defined| Y        | kuna              |       |
 | KyberNetwork      | Y       | N          | N       |         | Y           | Y        | kyber_network     |       |
 | LakeBTC           | Y       |            |         |         | Y           | Y        | lakebtc           |       |
 | Latoken           | Y       |            |         |         | Y           | Y        | latoken           |       |
-| Lbank             | Y       | Y          | Y       |         | Y           | Y        | lbank             |       |
+| Lbank             | Y       | Y [x]      | Y       |         | Y           | Y        | lbank             |       |
 | Letsdocoinz       | Y       |            |         |         | Y           |          | letsdocoinz       |       |
 | Liqui             | Y       |            |         |         | Y           |          | liqui             |       |
 | LiteBit.eu        | Y       |            |         |         | Y           |          | litebiteu         |       |
@@ -293,14 +293,14 @@ Or install it yourself as:
 | Luno              | Y       |            |         |         | Y           | Y        | luno              |       |
 | Lykke             | Y       | Y          | N       |         | Y           |          | lykke             |       |
 | Maplechange       | Y       | Y          |         |         | Y           | Y        | maplechange       |       |
-| MaxMaicoin        | Y       | Y          | Y       |         | Y           | Y        | max_maicoin       |       |
+| MaxMaicoin        | Y       | Y [x]      | Y       |         | Y           | Y        | max_maicoin       |       |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|          | mercado_bitcoin   |       |
 | Mercatox          | Y       | N          | N       | N       | Y           |          | mercatox          |       |
 | Myspeedtrade      | Y       | Y          |         |         | Y           |          | myspeedtrade      |       |
 | Nanex             | Y       | N          | N       | N       | Y           |          | nanex             |       |
 | Nanu.Exchange     | Y       | Y          | Y       |         | Y           |          | nanu_exchange     |       |
 | Nebula            | Y       | N          | Y       |         | Y           |          | nebula            |       |
-| Negociecoins      | Y       | Y          | Y       |         | User-Defined|          | negociecoins      |       |
+| Negociecoins      | Y       | Y [x]      | Y       |         | User-Defined|          | negociecoins      |       |
 | Neraex            | Y       | Y          | Y       |         | Y           | Y        | neraex            |       |
 | Newdex            | Y       | N          | N       |         | Y           | Y        | newdex            |       |
 | Nexybit           | Y       | Y          | N       |         | Y           | N        | nexybit           |       |
@@ -359,15 +359,15 @@ Or install it yourself as:
 | Thinkbit          | Y       | Y          | Y       |         | Y           |          | thinkbit          |       |
 | 3Xbit             | Y       | Y          | Y       |         | Y           | Y        | three_xbit        |       |
 | Tideal            | Y       | Y          | Y       |         | Y           |          | tideal            |       |
-| Tidebit           | Y       | Y          | Y       |         | Y           |          | tidebit           |       |
+| Tidebit           | Y       | Y [x]      | Y       |         | Y           |          | tidebit           |       |
 | Tidex             | Y       |            |         |         | Y           |          | tidex             |       |
 | Tokenize          | Y       |            |         |         | Y           | Y        | tokenize          |       |
 | Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |       |
-| Tokenomy          | Y       | Y          | Y       |         | Y           | Y        | tokenomy          |       |
+| Tokenomy          | Y       | Y [x]      | Y       |         | Y           | Y        | tokenomy          |       |
 | TokensNet         | Y       | Y          | Y       |         | Y           | N        | tokens_net        |       |
 | Tokok             | Y       | Y          | Y       |         | Y           |          | tokok             |       |
 | Topbtc            | Y       | N          | N       |         | Y           | Y        | topbtc            |       |
-| TradeOgre         | Y       | Y          | Y       |         | Y           | Y        | trade_ogre        |       |
+| TradeOgre         | Y       | Y [x]      | Y       |         | Y           | Y        | trade_ogre        |       |
 | Trade Satoshi     | Y       |            |         |         | Y           | Y        | trade_satoshi     |       |
 | Trade.io          | Y       |            |         |         | Y           |          | tradeio           |       |
 | Trade.mn          | Y       | Y          | Y       |         | Y           |          | trademn           |       |
@@ -396,13 +396,13 @@ Or install it yourself as:
 | Yobit             | Y       |            |         |         | Y           | Y        | yobit             |       |
 | Yuanbao           | Y       |            |         |         | User-Defined|          | yuanbao           |       |
 | Yunbi             | Y       |            |         |         | Y           |          | yunbi             |       |
-| Zaif              | Y       | Y          | Y       |         | Y           | Y        | zaif              |       |
+| Zaif              | Y       | Y [x]      | Y       |         | Y           | Y        | zaif              |       |
 | ZB                | Y       | Y [x]      | Y       |         | Y           | Y        | zb                |       |
 | ZBG               | Y       | Y [x]      | Y       |         | Y           |          | zbg               |       |
 | Zbmega            | Y       | N          | N       |         | Y           | Y        | zbmega            |       |
 | Zebpay            | Y       |            |         |         | Y           |          | Zebpay            |       |
 | Zeniex            | Y       | Y          | Y       |         | Y           |          | zeniex            |       |
-| ZG                | Y       | Y          | Y       |         | Y           | Y        | zg                |       |
+| ZG                | Y       | Y [x]      | Y       |         | Y           | Y        | zg                |       |
 | ZG.TOP            | Y       |            |         |         | Y           |          | zgtop             |       |
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
