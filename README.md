@@ -236,6 +236,7 @@ Or install it yourself as:
 | FinexBox          | Y       | Y          |         |         | Y           | Y        | finexbox          |       |
 | Fubt              | Y       |            |         |         | Y           | Y        | fubt              |       |
 | Gate              | Y       | Y [x]      | Y       |         | Y           | Y        | gate              |       |
+| Gate (Futures)    | Y       | Y [x]      | Y       |         | Y           | Y        | gate              |futures|
 | Gatecoin          | Y       |            |         |         | Y           |          | gatecoin          |       |
 | GDAX(Coinbase Pro)| Y       | Y [x]      |         |         | Y           | Y        | gdax              |       |
 | Gemini            | Y       | Y [x]      | Y       |         | Y           |          | gemini            |       |
