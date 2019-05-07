@@ -222,7 +222,7 @@ Or install it yourself as:
 | Everbloom         | Y       |            |         |         | Y           |          | everbloom         |       |
 | ExMarkets         | Y       | Y          | Y       |         | Y           | Y        | exmarkets         |       |
 | Exmo              | Y       | Y          | Y       |         | Y           | Y        | exmo              |       |
-| Exrates           | Y       | N          | N       |         | Y           | Y        | exrates           |       |
+| Exrates           | Y       | Y [x]      | N       |         | Y           | Y        | exrates           |       |
 | Extstock          | Y       | Y          | Y       |         | Y           | Y        | extstock          |       |
 | Exx               | Y       | Y [x]      | Y       |         | Y           | Y        | exx               |       |
 | F1cx              | Y       | Y          | Y       |         | Y           | Y        | f1cx              |       |
