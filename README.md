@@ -203,6 +203,7 @@ Or install it yourself as:
 | Dcoin             | Y       | N          | N       |         | Y           | Y        | dcoin             |       |
 | Ddex              | Y       | Y          | Y       |         | Y           | Y        | ddex              |       |
 | DEEX              | Y       |            |         |         | Y           |          | deex              |       |
+| Deribit           | Y       | Y          | Y       | Y       | Y           | Y        | deribit           |futures|
 | DEx.top           | Y       | Y          | Y       |         | Y           |          | dextop            |       |
 | dex-trade         | Y       |            |         |         | Y           |          | dextrade          |       |
 | Dflow             | Y       |            |         |         | Y           | Y        | dflow             |       |
