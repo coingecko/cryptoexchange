@@ -3,7 +3,14 @@ module Cryptoexchange::Exchanges
     class Market < Cryptoexchange::Models::Market
       NAME = 'uniswap'
       API_URL = "https://api-test-238309.appspot.com/v0/exchanges?key"
-      API_KEY = HashHelper.dig(Cryptoexchange::Credentials.get(@exchange), 'api_key')
+
+      # Read the API key here
+      authentication = Cryptoexchange::Exchanges::Uniswap::Authentication.new(
+        :market,
+        Cryptoexchange::Exchanges::Uniswap::Market::NAME
+      )
+      
+      API_KEY = authentication.headers
     end
   end
 end
