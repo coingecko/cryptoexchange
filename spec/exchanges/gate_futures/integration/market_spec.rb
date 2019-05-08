@@ -15,6 +15,11 @@ RSpec.describe 'GateFutures integration specs' do
     expect(pair.contract_interval).to eq "perpetual"
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url "gate_futures", base: xbt_usd_pair.base, target: xbt_usd_pair.target
+    expect(trade_page_url).to eq "https://www.gate.io/futures_trade/ETH_USD"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(xbt_usd_pair)
 

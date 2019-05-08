@@ -48,6 +48,7 @@ Or install it yourself as:
 | Bibox             | Y       | Y [x]      | Y       |         | Y           | Y        | bibox             |       |
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
 | BigONE            | Y       | Y [x]      | Y       |         | Y           | Y        | bigone            |       |
+| Biki              | Y       |            |         |         | Y           | Y        | biki              |       |
 | Bilaxy            | Y       | Y [x]      | Y       |         | Y           | Y        | bilaxy            |       |
 | Binance           | Y       | Y [x]      | Y [x]   |         | Y           | Y        | binance           |       |
 | Binance DEX       | Y       |            |         |         | Y           |          | binance_dex       |       |
@@ -85,7 +86,7 @@ Or install it yourself as:
 | Bitkonan          | Y       |            |         |         | User-Defined|          | bitkonan          |       |
 | Bitkub            | Y       | Y          | Y       |         | Y           | Y        | bitkub            |       |
 | Bitlish           | Y       | Y          | Y       |         | Y           |          | bitlish           |       |
-| Bitmart           | Y       | Y          | Y       |         | Y           |          | bitmart           |       |
+| Bitmart           | Y       | Y [x]      | Y       |         | Y           |          | bitmart           |       |
 | Bitmax            | Y       | Y [x]      | Y       |         | Y           | Y        | bitmax            |       |
 | Bitmesh           | Y       | N          | N       |         | Y           | Y        | bitmesh           |       |
 | Bitmex (alpha)    | Y       | Y          | Y       |         | Y           |          | bitmex            |futures|
@@ -164,7 +165,7 @@ Or install it yourself as:
 | Coinlim           | Y       | N          | N       |         | Y           | N        | coinlim           |       |
 | Coinmate          | Y       | Y          |         |         | User-Defined|          | coinmate          |       |
 | Coinmetro         | Y       |            |         |         |             |          | coin_metro        |       |
-| Coinmex           | Y       | Y          | Y       |         | Y           |          | coinmex           |       |
+| Coinmex           | Y       | Y [x]      | Y       |         | Y           |          | coinmex           |       |
 | Coinnest          | Y       | Y          | Y       |         | User-Defined| Y        | coinnest          |       |
 | Coinnox           | Y       | Y          | Y       |         | Y           |          | coinnox           |       |
 | Coinone           | Y       | Y [x]      | Y       |         | Y           | Y        | coinone           |       |
@@ -272,7 +273,7 @@ Or install it yourself as:
 | Jubi              | Y       |            |         |         | Y           |          | jubi              |       |
 | Kairex            | Y       | Y          |         |         | Y           |          | kairex            |       |
 | KKex              | Y       | Y          | Y       |         | Y           | Y        | k_kex             |       |
-| Kkcoin            | Y       | Y          | Y       |         | Y           | Y        | kkcoin            |       |
+| Kkcoin            | Y       | Y [x]      | Y       |         | Y           | Y        | kkcoin            |       |
 | Koinex            | Y       |            |         |         | Y           |          | koinex            |       |
 | Koinok            | Y       |            |         |         | Y           | Y        | koinok            |       |
 | Koinx             | Y       |            |         |         | Y           | Y        | koinx             |       |
@@ -320,12 +321,12 @@ Or install it yourself as:
 | OKEx Perpetual Swaps (alpha) | Y     |            |         |         | Y           | Y        | okex_swap         |futures|
 | Omgfin            | Y       |            |         |         | Y           | Y        | omgfin            |       |
 | OmniTrade         | Y       | Y          | Y       | Y       | Y           |          | omnitrade         |       |
-| Ooobtc            | Y       | Y          | Y       |         | Y           | Y        | ooobtc            |       |
+| Ooobtc            | Y       | Y [x]      | Y       |         | Y           | Y        | ooobtc            |       |
 | Openledger        | Y       | Y          | Y       |         | Y           | Y        | openledger        |       |
 | OrderBook         | Y       | Y          | Y       |         | Y           | Y        | orderbook         |       |
 | Ore Bz            | Y       | Y          | Y       |         | Y           | Y        | ore_bz            |       |
 | OTCBTC            | Y       | Y          | Y       |         | Y           |          | otcbtc            |       |
-| P2pb2b            | Y       | Y          | Y       |         | Y           |          | p2pb2b            |       |
+| P2pb2b            | Y       | Y [x]      | Y       |         | Y           |          | p2pb2b            |       |
 | Paribu            | Y       |            |         |         | Y           |          | paribu            |       |
 | Paro Exchange     | Y       |            |         |         | Y           |          | paroexchange      |       |
 | Paymium           | Y       | Y          | Y       |         | User-Defined|          | paymium           |       |
@@ -334,7 +335,7 @@ Or install it yourself as:
 | QBTC              | Y       | Y          | Y       |         | Y           |          | qbtc              |       |
 | Qryptos           | Y       |            |         |         | Y           |          | qryptos           |       |
 | QuadrigaCX        | Y       |            |         |         | User-Defined|          | quadrigacx        |       |
-| Quoine            | Y       |            |         |         | Y           | Y        | quoine            |       |
+| Liquid (Quoine)   | Y       | Y [x]      |         |         | Y           | Y        | quoine            |       |
 | RadarRelay        | Y       |            |         |         | Y           | Y        | radar_relay       |       |
 | Raisex            | Y       |            |         |         | Y           |          | raisex            |       |
 | Rfinex            | Y       | Y          | Y       |         | Y           |          | rfinex            |       |
@@ -347,6 +348,7 @@ Or install it yourself as:
 | Singularx         | Y       | N          | N       |         | Y           |          | singularx         |       |
 | Sistemkoin        | Y       |            |         |         | Y           |          | sistemkoin        |       |
 | 6X                | Y       |            |         |         | Y           | Y        | six_x             |       |
+| Satang (Tdax)     | Y       |            |         |         | Y           | Y        | tdax              |       |
 | SouthXchange      | Y       | Y          | Y       |         | Y           | Y        | south_xchange     |       |
 | Stocks Exchange   | Y       |            |         |         | Y           | Y        | stocks_exchange   |       |
 | Swiftex           | Y       | Y          |         |         | Y           | Y        | swiftex           |       |
