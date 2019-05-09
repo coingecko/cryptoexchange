@@ -2,10 +2,12 @@ module Cryptoexchange::Exchanges
   module Uniswap
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Uniswap::Market::API_URL}=#{Cryptoexchange::Exchanges::Uniswap::Market::API_KEY}"
+        def pairs_url
+          "#{Cryptoexchange::Exchanges::Uniswap::Market::API_URL}?key=#{Cryptoexchange::Exchanges::Uniswap::Market.api_key}"
+        end
 
         def fetch
-          output = super
+          output = fetch_via_api(pairs_url)
           adapt(output)
         end
 

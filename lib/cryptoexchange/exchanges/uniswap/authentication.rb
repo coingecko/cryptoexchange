@@ -1,8 +1,16 @@
 module Cryptoexchange::Exchanges
   module Uniswap
     class Authentication < Cryptoexchange::Services::Authentication
+      def api_key
+        HashHelper.dig(Cryptoexchange::Credentials.get(@exchange), 'api_key')
+      end
+
       def headers
-        api_key = HashHelper.dig(Cryptoexchange::Credentials.get(@exchange), 'api_key')
+        # Do nothing, no headers override needed for API key only
+      end
+
+      def required_credentials
+        %i(api_key)
       end
     end
   end

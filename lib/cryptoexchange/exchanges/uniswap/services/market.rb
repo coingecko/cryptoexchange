@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Uniswap::Market::API_URL}=#{Cryptoexchange::Exchanges::Uniswap::Market::API_KEY}"
+          "#{Cryptoexchange::Exchanges::Uniswap::Market::API_URL}?key=#{Cryptoexchange::Exchanges::Uniswap::Market.api_key}"
         end
 
         def adapt_all(output)
