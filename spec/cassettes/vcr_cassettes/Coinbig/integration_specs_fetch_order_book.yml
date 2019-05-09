@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.coinbig.com/api/publics/v1/depth?size=100&symbol=btc_usdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.coinbig.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 May 2019 08:24:14 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=ddc0d4c6f90f76d8eb830e7cc8a7683881557390254; expires=Fri, 08-May-20
+        08:24:14 GMT; path=/; domain=.coinbig.com; HttpOnly; Secure
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Application-Context:
+      - application:pro:80
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d4246a40f74cbf0-SIN
+    body:
+      encoding: UTF-8
+      string: '{"code":0,"msg":"success","data":{"tradeMappingId":27,"asks":[[6089.41,0.0158],[6089.42,0.021],[6089.43,0.0408],[6089.44,0.056],[6089.45,0.0669],[6091.22,0.0743],[6091.23,0.0893],[6091.24,0.0947],[6091.55,0.1277],[6091.56,0.156],[6091.57,0.189],[6091.58,0.2264],[6091.59,0.2513],[6091.6,0.2752],[6091.61,0.3003],[6091.62,0.3382],[6114.16,0.3618],[6114.17,0.4236],[6114.18,0.5058],[6114.19,0.5529],[6114.2,0.6031],[6114.21,0.6246],[6114.22,0.6806],[6114.23,0.7141],[6114.24,0.7978],[6114.25,0.8271],[6200.0,0.8281],[6488.25,0.8331],[6599.88,0.8355],[6614.56,0.8405],[6622.72,0.8455],[6629.19,0.8485],[6631.67,0.8535],[6724.25,0.8585],[6767.99,0.8635],[6791.85,0.8685],[7503.92,0.8735],[8003.89,0.8785],[9970.0,0.881]],"bids":[[6077.75,0.0158],[6077.74,0.021],[6077.73,0.0408],[6077.72,0.0561],[6077.71,0.0671],[6076.54,0.0802],[6076.53,0.0932],[6076.52,0.1049],[6076.51,0.1082],[6076.5,0.1236],[6076.42,0.1327],[6076.41,0.1445],[6076.4,0.1546],[6076.39,0.159],[6076.38,0.1632],[6074.93,0.1825],[6074.91,0.2065],[6074.9,0.2374],[6074.89,0.2567],[6074.88,0.2927],[6074.87,0.3248],[6074.86,0.3421],[6074.85,0.3628],[6068.9,0.3965],[6068.89,0.4577],[6068.87,0.5241],[6068.86,0.5536],[6068.85,0.6279],[6068.84,0.6548],[6068.83,0.6949],[6068.82,0.7729],[6068.81,0.8198],[6068.8,0.9005],[3633.14,0.9055],[3621.27,0.9105],[3592.31,0.9155],[3483.86,0.9205],[3401.21,0.921],[3138.81,0.926],[2367.52,0.9273],[40.43,0.9866]],"isFrozen":0,"seq":1557390254395}}'
+    http_version: 
+  recorded_at: Thu, 09 May 2019 08:24:13 GMT
+recorded_with: VCR 4.0.0

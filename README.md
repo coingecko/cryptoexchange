@@ -84,7 +84,7 @@ Or install it yourself as:
 | Bitinka           | Y       | Y          |         |         | Y           |          | bitinka           |       |
 | Bitker            | Y       |            |         |         | Y           | Y        | bitker            |       |
 | Bitkonan          | Y       |            |         |         | User-Defined|          | bitkonan          |       |
-| Bitkub            | Y       | Y          | Y       |         | Y           | Y        | bitkub            |       |
+| Bitkub            | Y       | Y [x]      | Y       |         | Y           | Y        | bitkub            |       |
 | Bitlish           | Y       | Y          | Y       |         | Y           |          | bitlish           |       |
 | Bitmart           | Y       | Y [x]      | Y       |         | Y           |          | bitmart           |       |
 | Bitmax            | Y       | Y [x]      | Y       |         | Y           | Y        | bitmax            |       |
@@ -148,7 +148,7 @@ Or install it yourself as:
 | CoinExchange      | Y       |            |         |         | Y           |          | coin_exchange     |       |
 | Coinbe            | Y       |            |         |         | Y           |          | coinbe            |       |
 | Coinbene          | Y       | Y [x]      | Y       |         | Y           | Y        | coinbene          |       |
-| Coinbig           | Y       |            |         |         | Y           | Y        | coinbig           |       |
+| Coinbig           | Y       | Y [x]      |         |         | Y           | Y        | coinbig           |       |
 | Coinbit           | Y       | N          | N       |         | Y           | Y        | coinbit           |       |
 | Coincheck         | Y       | Y [x]      |         |         | User-Defined|          | coincheck         |       |
 | Coindeal          | Y       | Y          |         |         | Y           |          | coindeal          |       |
