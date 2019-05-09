@@ -26,11 +26,11 @@ RSpec.describe 'Chaoex integration specs' do
     expect(ticker.high).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
-    
+
     expect(ticker.payload).to_not be nil
   end
 
-  it 'fetch order book' do
+  xit 'fetch order book' do
     order_book = client.order_book(eth_btc_pair)
 
     expect(order_book.base).to eq 'ETH'
