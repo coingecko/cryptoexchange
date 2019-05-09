@@ -60,7 +60,7 @@ Or install it yourself as:
 | Bit2C             | Y       | Y          | Y       |         | User-Defined| Y        | bit2c             |       |
 | Bit-Z             | Y       |            |         |         | Y           |          | bit_z             |       |
 | Bitalong          | Y       | Y          | Y       |         | Y           | Y        | bitalong          |       |
-| Bitbank           | Y       | Y          | Y       |         | User-Defined| Y        | bitbank           |       |
+| Bitbank           | Y       | Y [x]      | Y       |         | User-Defined| Y        | bitbank           |       |
 | Bitbay            | Y       |            |         |         | User-Defined|          | bitbay            |       |
 | Bitbegin          | Y       | N          | N       |         | Y           | Y        | bitbegin          |       |
 | BitBNS            | Y       |            |         |         | Y           |          | bitbns            |       |
@@ -89,7 +89,7 @@ Or install it yourself as:
 | Bitmart           | Y       | Y [x]      | Y       |         | Y           |          | bitmart           |       |
 | Bitmax            | Y       | Y [x]      | Y       |         | Y           | Y        | bitmax            |       |
 | Bitmesh           | Y       | N          | N       |         | Y           | Y        | bitmesh           |       |
-| Bitmex (alpha)    | Y       | Y          | Y       |         | Y           |          | bitmex            |futures|
+| Bitmex            | Y       | Y          | Y       |         | Y           |          | bitmex            |futures|
 | BitOnBay          | Y       |            |         |         | Y           |          | bitonbay          |       |
 | Bitopro           | Y       | Y          | Y       |         | User-Defined| Y        | bitopro           |       |
 | Bitpaction        | Y       | Y          | Y       |         | Y           |          | bitpaction        |       |
@@ -110,7 +110,7 @@ Or install it yourself as:
 | Braziliex         | Y       | Y          | Y       |         | Y           |          | braziliex         |       |
 | BTC38             |         |            |         |         |             |          |                   |       |
 | BTC-e             |         |            |         |         |             |          |                   |       |
-| BtcAlpha          | Y       | Y          | Y       |         | Y           | Y        | btc_alpha         |       |
+| BtcAlpha          | Y       | Y [x]      | Y       |         | Y           | Y        | btc_alpha         |       |
 | BTC Exchange      | Y       | Y          | Y       |         | Y           | Y        | btc_exchange      |       |
 | BtcTradeUa        | Y       | Y          | Y       |         | Y           | Y        | btc_trade_ua      |       |
 | BTCBox            | Y       | Y          |         |         | User-Defined| Y        | btcbox            |       |
@@ -130,12 +130,12 @@ Or install it yourself as:
 | Cbx               | Y       | Y          | Y       |         | Y           | Y        | cbx               |       |
 | CCex              | Y       |            |         |         | Y           |          | ccex              |       |
 | Ccx               | Y       |            |         |         | Y           | Y        | ccx               |       |
-| Cex               | Y       | Y          | Y       |         | Y           |          | cex               |       |
+| Cex               | Y       | Y [x]      | Y       |         | Y           |          | cex               |       |
 | Cfinex            | Y       | Y          | Y       |         | Y           | Y        | cfinex            |       |
 | Chaince           | Y       |            |         |         | Y           | Y        | chaince           |       |
-| Chainrift         | Y       | Y          | Y       |         | Y           |          | chainrift         |       |
+| Chainrift         | Y       | Y [x]      | Y       |         | Y           |          | chainrift         |       |
 | ChainEX           | Y       | Y          | Y       |         | Y           |          | chainex           |       |
-| Chaoex            | Y       | Y          | Y       |         | Y           | N        | chaoex            |       |
+| Chaoex            | Y       | Y [x]      | Y       |         | Y           | N        | chaoex            |       |
 | CHBTC             | Y       |            |         |         | User-Defined|          | chbtc             |       |
 | Citex             | Y       | N          | N       |         | Y           | Y        | citex             |       |
 | Cobinhood         | Y       | Y [x]      |         |         | Y           | Y        | cobinhood         |       |
@@ -154,10 +154,10 @@ Or install it yourself as:
 | Coindeal          | Y       | Y          |         |         | Y           |          | coindeal          |       |
 | Coindirect        | Y       | N          | N       |         | Y           | Y        | coindirect        |       |
 | Coineal           | Y       | Y [broken] | Y       |         | Y           |          | coineal           |       |
-| Coinex            | Y       | Y          | Y       |         | Y           | Y        | coinex            |       |
+| Coinex            | Y       | Y [x]      | Y       |         | Y           | Y        | coinex            |       |
 | Coinexmarket (broken)| Y       | Y          | Y       |         | Y           |          | coinexmarket      |       |
-| Coinfalcon        | Y       | Y          | Y       |         | Y           |          | coinfalcon        |       |
-| Coinfield         | Y       | Y          | Y       |         | Y           | Y        | coinfield         |       |
+| Coinfalcon        | Y       | Y [x]      | Y       |         | Y           |          | coinfalcon        |       |
+| Coinfield         | Y       | Y [x]      | Y       |         | Y           | Y        | coinfield         |       |
 | Coingi            | Y       | Y          | Y       |         | Y           | Y        | coingi            |       |
 | Coinhouse         | Y       |            |         |         | Y           | Y        | coinhouse         |       |
 | Coinhub           | Y       | Y          | Y       |         | Y           | Y        | coinhub           |       |
@@ -166,7 +166,7 @@ Or install it yourself as:
 | Coinmate          | Y       | Y          |         |         | User-Defined|          | coinmate          |       |
 | Coinmetro         | Y       |            |         |         |             |          | coin_metro        |       |
 | Coinmex           | Y       | Y [x]      | Y       |         | Y           |          | coinmex           |       |
-| Coinnest          | Y       | Y          | Y       |         | User-Defined| Y        | coinnest          |       |
+| Coinnest          | Y       | Y [x]      | Y       |         | User-Defined| Y        | coinnest          |       |
 | Coinnox           | Y       | Y          | Y       |         | Y           |          | coinnox           |       |
 | Coinone           | Y       | Y [x]      | Y       |         | Y           | Y        | coinone           |       |
 | Coinpark          | Y       | Y          | Y       |         | Y           | Y        | coinpark          |       |
@@ -181,7 +181,7 @@ Or install it yourself as:
 | Cointiger         | Y       | Y [x]      | Y       |         | Y           |          | cointiger         |       |
 | Coinut (Auth)     | Y       | Y          | Y       | Y       | Y           |          | coinut            |       |
 | Coinxpro          | Y       | Y          |         |         | Y           | Y        | coinxpro          |       |
-| Coinzest          | Y       | Y          |         |         | Y           |          | coinzest          |       |
+| Coinzest          | Y       | Y [x]      |         |         | Y           |          | coinzest          |       |
 | Coinzo            | Y       | Y          | Y       |         | Y           | Y        | coinzo            |       |
 | COSS              | Y       |            |         |         | Y           | Y        | coss              |       |
 | Cpdax             | Y       | Y          | Y       |         | Y           |          | cpdax             |       |
@@ -211,7 +211,7 @@ Or install it yourself as:
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |       |
 | Digitalprice      | Y       | Y          | Y       |         | Y           | Y        | digitalprice      |       |
 | Dobitrade         | Y       | Y [x]      | N       |         | Y           | Y        | dobitrade         |       |
-| Dragonex          | Y       | Y          | N       |         | Y           | Y        | dragonex          |       |
+| Dragonex          | Y       | Y [x]      | N       |         | Y           | Y        | dragonex          |       |
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |       |
 | Eosex             | Y       | N          | N       |         | Y           | Y        | eosex             |       |
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |       |
@@ -219,7 +219,7 @@ Or install it yourself as:
 | EtherDelta        | Y       |            |         |         | Y           |          | ether_delta       |       |
 | Etherflyer        | Y       | Y          | N       |         | Y           | Y        | etherflyer        |       |
 | Ethex             | Y       | N          | N       |         | Y           | N        | ethex             |       |
-| Ethfinex          | Y       | Y          | Y       |         | Y           | Y        | ethfinex          |       |
+| Ethfinex          | Y       | Y [x]      | Y       |         | Y           | Y        | ethfinex          |       |
 | Everbloom         | Y       |            |         |         | Y           |          | everbloom         |       |
 | ExMarkets         | Y       | Y          | Y       |         | Y           | Y        | exmarkets         |       |
 | Exmo              | Y       | Y          | Y       |         | Y           | Y        | exmo              |       |
@@ -245,14 +245,14 @@ Or install it yourself as:
 | Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |       |
 | Gobaba            | Y       |            |         |         | Y           |          | gobaba            |       |
 | golix (API Failed)| Y       | Y          |         |         | Y           |          | golix             |       |
-| GOPAX             | Y       | Y          | Y       |         | Y           | Y        | gopax             |       |
+| GOPAX             | Y       | Y [x]      | Y       |         | Y           | Y        | gopax             |       |
 | Graviex           | Y       | N          | N       |         | Y           |          | graviex           |       |
 | Hadax             | Y       | N          | N       |         | Y           | Y        | hadax             |       |
 | Hb.top            | Y       | N          | N       |         | Y           | N        | hb_top            |       |
 | Hikenex           | Y       | N          | N       |         | Y           | N        | hikenex           |       |
 | HitBTC            | Y       | Y [x]      | Y       |         | Y           | Y        | hitbtc            |       |
 | Hotbit            | Y       | Y [x]      | N       |         | Y           | Y        | hotbit            |       |
-| HPX               | Y       | Y          | Y       |         | Y           |          | hpx               |       |
+| HPX               | Y       | Y [x]      | Y       |         | Y           |          | hpx               |       |
 | Hubi              | Y       |            |         |         | Y           |          | hubi              |       |
 | Huobi             | Y       | Y [x]      |         |         | Y           | Y        | huobi             |       |
 | Huobi US          | Y       | Y [x]      |         |         | Y           | Y        | huobi_us          |       |
@@ -269,10 +269,10 @@ Or install it yourself as:
 | Ironex            | Y       |            |         |         | Y           |          | ironex            |       |
 | Itbit             | Y       | Y [x]      | Y       |         | User-Defined|          | itbit             |       |
 | Jex               | Y       | N          | N       |         | Y           |          | jex               |       |
-| Joyso             | Y       | Y          |         |         | Y           |          | joyso             |       |
+| Joyso             | Y       | Y [x]      |         |         | Y           |          | joyso             |       |
 | Jubi              | Y       |            |         |         | Y           |          | jubi              |       |
-| Kairex            | Y       | Y          |         |         | Y           |          | kairex            |       |
-| KKex              | Y       | Y          | Y       |         | Y           | Y        | k_kex             |       |
+| Kairex            | Y       | Y [x]      |         |         | Y           |          | kairex            |       |
+| KKex              | Y       | Y [x]      | Y       |         | Y           | Y        | k_kex             |       |
 | Kkcoin            | Y       | Y [x]      | Y       |         | Y           | Y        | kkcoin            |       |
 | Koinex            | Y       |            |         |         | Y           |          | koinex            |       |
 | Koinok            | Y       |            |         |         | Y           | Y        | koinok            |       |
@@ -318,7 +318,7 @@ Or install it yourself as:
 | OEX               | Y       |            |         |         | Y           |          | oex               |       |
 | OKCoin            | Y       |            |         |         | User-Defined|          | okcoin            |       |
 | OKEx              | Y       | Y [x]      | Y       |         | Y           | Y        | okex              |       |
-| OKEx Perpetual Swaps (alpha) | Y     |            |         |         | Y           | Y        | okex_swap         |futures|
+| OKEx Perpetual Swaps | Y     |            |         |         | Y           | Y        | okex_swap         |futures|
 | Omgfin            | Y       |            |         |         | Y           | Y        | omgfin            |       |
 | OmniTrade         | Y       | Y          | Y       | Y       | Y           |          | omnitrade         |       |
 | Ooobtc            | Y       | Y [x]      | Y       |         | Y           | Y        | ooobtc            |       |
@@ -339,7 +339,7 @@ Or install it yourself as:
 | RadarRelay        | Y       |            |         |         | Y           | Y        | radar_relay       |       |
 | Raisex            | Y       |            |         |         | Y           |          | raisex            |       |
 | Rfinex            | Y       | Y          | Y       |         | Y           |          | rfinex            |       |
-| RightBTC          | Y       | Y          | Y       |         | Y           |          | rightbtc          |       |
+| RightBTC          | Y       | Y [x]      | Y       |         | Y           |          | rightbtc          |       |
 | SafeTrade         | Y       | N          | N       |         | Y           |          | safe_trade        |       |
 | SaturnNetwork     | Y       |            |         |         | Y           | Y        | saturn_network    |       |
 | Secondbtc         | Y       | N          | N       |         | Y           | Y        | secondbtc         |       |
@@ -349,14 +349,14 @@ Or install it yourself as:
 | Sistemkoin        | Y       |            |         |         | Y           |          | sistemkoin        |       |
 | 6X                | Y       |            |         |         | Y           | Y        | six_x             |       |
 | Satang (Tdax)     | Y       |            |         |         | Y           | Y        | tdax              |       |
-| SouthXchange      | Y       | Y          | Y       |         | Y           | Y        | south_xchange     |       |
+| SouthXchange      | Y       | Y [x]      | Y       |         | Y           | Y        | south_xchange     |       |
 | Stocks Exchange   | Y       |            |         |         | Y           | Y        | stocks_exchange   |       |
 | Swiftex           | Y       | Y          |         |         | Y           | Y        | swiftex           |       |
 | Switcheo          | Y       | N          | N       |         | Y           | Y        | switcheo          |       |
 | Syex              | Y       | N          | N       |         | Y           | Y        | syex              |       |
 | SZZC              | Y       |            |         |         | Y           |          | szzc              |       |
 | Tdax              | Y       | N          | N       |         | Y           | Y        | tdax              |       |
-| The Rock Trading  | Y       | Y          | Y       |         | Y           | Y        | therocktrading    |       |
+| The Rock Trading  | Y       | Y [x]      | Y       |         | Y           | Y        | therocktrading    |       |
 | The Token Store   | Y       | Y          | Y       |         | Y           | Y        | thetokenstore     |       |
 | Thinkbit          | Y       | Y          | Y       |         | Y           |          | thinkbit          |       |
 | 3Xbit             | Y       | Y          | Y       |         | Y           | Y        | three_xbit        |       |
@@ -367,12 +367,12 @@ Or install it yourself as:
 | Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |       |
 | Tokenomy          | Y       | Y [x]      | Y       |         | Y           | Y        | tokenomy          |       |
 | TokensNet         | Y       | Y          | Y       |         | Y           | N        | tokens_net        |       |
-| Tokok             | Y       | Y          | Y       |         | Y           |          | tokok             |       |
+| Tokok             | Y       | Y [x]      | Y       |         | Y           |          | tokok             |       |
 | Topbtc            | Y       | N          | N       |         | Y           | Y        | topbtc            |       |
 | TradeOgre         | Y       | Y [x]      | Y       |         | Y           | Y        | trade_ogre        |       |
 | Trade Satoshi     | Y       |            |         |         | Y           | Y        | trade_satoshi     |       |
 | Trade.io          | Y       |            |         |         | Y           |          | tradeio           |       |
-| Trade.mn          | Y       | Y          | Y       |         | Y           |          | trademn           |       |
+| Trade.mn          | Y       | Y [x]      | Y       |         | Y           |          | trademn           |       |
 | TrocaNinja        | Y       | N          | N       |         | Y           |          | troca_ninja       |       |
 | TronTrade         | Y       | N          | N       |         | Y           |          | tron_trade        |       |
 | TrustDex **       | Y       |            |         |         | Y           |          | trust_dex         |       |

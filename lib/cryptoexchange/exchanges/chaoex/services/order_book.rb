@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Chaoex
     module Services
       class OrderBook < Cryptoexchange::Services::Market
-        ORDER_BOOK_LIMIT = "20"
+        ORDER_BOOK_LIMIT = "50"
 
         class << self
           def supports_individual_ticker_query?

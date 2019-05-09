@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Coinfalcon::Market::API_URL}markets/#{market_pair.base}-#{market_pair.target}/orders"
+          "#{Cryptoexchange::Exchanges::Coinfalcon::Market::API_URL}markets/#{market_pair.base}-#{market_pair.target}/orders?level=3"
         end
 
         def adapt(output, market_pair)
