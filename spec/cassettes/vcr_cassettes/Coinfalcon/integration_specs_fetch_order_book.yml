@@ -12,72 +12,54 @@ http_interactions:
       Host:
       - coinfalcon.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Sun, 11 Mar 2018 07:26:48 GMT
+      - Thu, 09 May 2019 08:37:50 GMT
       Content-Type:
-      - application/json;charset=utf-8
+      - application/json
       Content-Length:
-      - '102'
+      - '107'
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d382c719902e8602f8f15c705bb4246b51520753207; expires=Mon, 11-Mar-19
-        07:26:47 GMT; path=/; domain=.coinfalcon.com; HttpOnly; Secure
-      Accept-Encoding:
-      - gzip
+      - __cfduid=df18ace02e99dd462aa964221d72a15771557391070; expires=Fri, 08-May-20
+        08:37:50 GMT; path=/; domain=.coinfalcon.com; HttpOnly; Secure
       Cache-Control:
       - max-age=0, private, must-revalidate
-      Cf-Connecting-Ip:
-      - 115.133.65.24
-      Cf-Ipcountry:
-      - MY
-      Cf-Visitor:
-      - '{"scheme":"https"}'
+      Content-Security-Policy:
+      - frame-ancestors 'self'
       Etag:
-      - W/"c4a192ca58ec6b7764a8d7620037769e"
-      User-Agent:
-      - http.rb/3.0.0
-      Vary:
-      - Origin
-      Version:
-      - HTTP/1.1
-      X-Forwarded-For:
-      - 115.133.65.24, 162.158.166.160, 115.133.65.24
-      X-Forwarded-Port:
-      - '80'
-      X-Forwarded-Proto:
-      - http
-      X-Nginx-Proxy:
-      - 'true'
-      X-Ratelimit-Limit:
-      - '3'
-      X-Ratelimit-Remaining:
-      - '2'
-      X-Ratelimit-Reset:
-      - '1'
-      X-Real-Ip:
-      - 115.133.65.24
-      X-Request-Id:
-      - c9821bc6-54d8-4427-94b9-9e13b6292c12
-      X-Runtime:
-      - '0.041651'
+      - W/"d3214b44b211b25a7656b9f9cd9331dc"
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
       Strict-Transport-Security:
       - max-age=15552000
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - c8f578c8-b0a0-48dd-b47e-28af58428d0f
+      X-Runtime:
+      - '0.033808'
+      X-Xss-Protection:
+      - 1; mode=block
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 3f9c4b7d3f887074-SIN
+      - 4d425a8c1b51aa4e-SIN
     body:
-      encoding: UTF-8
-      string: '{"data":{"bids":[{"price":"0.078","size":"0.0033548"}],"asks":[{"price":"0.08182","size":"0.19316"}]}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"bids":[{"price":"0.02784","size":"0.17945403"}],"asks":[{"price":"0.02795","size":"0.0194194"}]}}'
     http_version: 
-  recorded_at: Sun, 11 Mar 2018 07:26:48 GMT
+  recorded_at: Thu, 09 May 2019 08:37:49 GMT
 recorded_with: VCR 4.0.0
