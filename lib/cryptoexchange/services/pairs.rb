@@ -24,7 +24,7 @@ module Cryptoexchange
           begin
             fetch_response = self.class::HTTP_METHOD == 'POST' ? http_post(endpoint, params) : http_get(endpoint)
             if fetch_response.code == 200
-              fetch_response.parse :json
+              JSON.parse fetch_response, allow_nan: true
             elsif fetch_response.code == 400
               raise Cryptoexchange::HttpBadRequestError, { response: fetch_response }
             else
