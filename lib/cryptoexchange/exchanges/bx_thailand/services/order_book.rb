@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
         end
 
         def order_book_url(market_pair)
-          "#{Cryptoexchange::Exchanges::BxThailand::Market::API_URL}orderbook/{market_pair.inst_id}"
+          "#{Cryptoexchange::Exchanges::BxThailand::Market::API_URL}orderbook/?pairing={market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)
