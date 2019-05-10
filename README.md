@@ -48,7 +48,7 @@ Or install it yourself as:
 | Bibox             | Y       | Y [x]      | Y       |         | Y           | Y        | bibox             |       |
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
 | BigONE            | Y       | Y [x]      | Y       |         | Y           | Y        | bigone            |       |
-| Biki              | Y       |            |         |         | Y           | Y        | biki              |       |
+| Biki              | Y       | Y [x]      |         |         | Y           | Y        | biki              |       |
 | Bilaxy            | Y       | Y [x]      | Y       |         | Y           | Y        | bilaxy            |       |
 | Binance           | Y       | Y [x]      | Y [x]   |         | Y           | Y        | binance           |       |
 | Binance DEX       | Y       |            |         |         | Y           |          | binance_dex       |       |
