@@ -122,7 +122,7 @@ Or install it yourself as:
 | BTCTurk           | Y       | Y          |         |         | Y           |          | btcturk           |       |
 | BTER              | Y       |            |         |         | Y           |          | bter              |       |
 | Buyucoin          | Y       | N          | N       |         | Y           |          | buyucoin          |       |
-| BX Thailand       | Y       |            |         |         | Y           |          | bx_thailand       |       |
+| BX Thailand       | Y       | Y [x]      |         |         | Y           |          | bx_thailand       |       |
 | BW                | Y       |            |         |         | Y           | Y        | bw                |       |
 | Bytex             | Y       | N          | N       |         | Y           | N        | bytex             |       |
 | C2CX              | Y       | Y          | N       |         | Y           |          | c2cx              |       |

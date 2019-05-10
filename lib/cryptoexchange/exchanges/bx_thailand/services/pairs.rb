@@ -15,7 +15,8 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new(
               base: pair['secondary_currency'],
               target: pair['primary_currency'],
-              market: BxThailand::Market::NAME
+              market: BxThailand::Market::NAME,
+              inst_id: pair['pairing_id'],
             )
           end
         end
