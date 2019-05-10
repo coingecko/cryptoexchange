@@ -80,8 +80,8 @@ Or install it yourself as:
 | Bitholic          | Y       | Y          | Y       |         | Y           |          | bitholic          |       |
 | Bithumb           | Y       | Y [x]      |         |         | Y           |          | bithumb           |       |
 | Bitibu            | Y       | Y [x]      | Y       |         | Y           | Y        | bitibu            |       |
-| Bitinfi           | Y       | Y          |         |         | Y           |          | bitinfi           |       |
-| Bitinka           | Y       | Y          |         |         | Y           |          | bitinka           |       |
+| Bitinfi           | Y       | Y [x]      |         |         | Y           |          | bitinfi           |       |
+| Bitinka           | Y       | Y [x]      |         |         | Y           |          | bitinka           |       |
 | Bitker            | Y       |            |         |         | Y           | Y        | bitker            |       |
 | Bitkonan          | Y       |            |         |         | User-Defined|          | bitkonan          |       |
 | Bitkub            | Y       | Y          | Y       |         | Y           | Y        | bitkub            |       |
@@ -91,7 +91,7 @@ Or install it yourself as:
 | Bitmesh           | Y       | N          | N       |         | Y           | Y        | bitmesh           |       |
 | Bitmex            | Y       | Y          | Y       |         | Y           |          | bitmex            |futures|
 | BitOnBay          | Y       |            |         |         | Y           |          | bitonbay          |       |
-| Bitopro           | Y       | Y          | Y       |         | User-Defined| Y        | bitopro           |       |
+| Bitopro           | Y       | Y [x]      | Y       |         | User-Defined| Y        | bitopro           |       |
 | Bitpaction        | Y       | Y          | Y       |         | Y           |          | bitpaction        |       |
 | Bitrabbit         | Y       | N          | N       |         | Y           | Y        | bitrabbit         |       |
 | Bitrue            | Y       | N          | N       |         | Y           | Y        | bitrue            |       |
