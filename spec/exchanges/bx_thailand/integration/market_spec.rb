@@ -31,7 +31,7 @@ RSpec.describe 'BxThailand integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(eth_btc_pair)
+    order_book = client.order_book(btc_thb_pair)
 
     expect(order_book.base).to eq 'BTC'
     expect(order_book.target).to eq 'THB'
