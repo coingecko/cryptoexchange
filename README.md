@@ -276,7 +276,7 @@ Or install it yourself as:
 | Kkcoin            | Y       | Y [x]      | Y       |         | Y           | Y        | kkcoin            |       |
 | Koinex            | Y       |            |         |         | Y           |          | koinex            |       |
 | Koinok            | Y       |            |         |         | Y           | Y        | koinok            |       |
-| Koinx             | Y       |            |         |         | Y           | Y        | koinx             |       |
+| Koinx             | Y       | Y [x]      |         |         | Y           | Y        | koinx             |       |
 | Korbit            | Y       | Y [x]      |         |         | User-Defined| Y        | korbit            |       |
 | Kraken            | Y       | Y [x]      |         |         | Y           | Y        | kraken            |       |
 | Kryptono          | Y       | Y [x]      | Y       |         | User-Defined| Y        | kryptono          |       |
