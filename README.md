@@ -48,7 +48,7 @@ Or install it yourself as:
 | Bibox             | Y       | Y [x]      | Y       |         | Y           | Y        | bibox             |       |
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
 | BigONE            | Y       | Y [x]      | Y       |         | Y           | Y        | bigone            |       |
-| Biki              | Y       |            |         |         | Y           | Y        | biki              |       |
+| Biki              | Y       | Y [x]      |         |         | Y           | Y        | biki              |       |
 | Bilaxy            | Y       | Y [x]      | Y       |         | Y           | Y        | bilaxy            |       |
 | Binance           | Y       | Y [x]      | Y [x]   |         | Y           | Y        | binance           |       |
 | Binance DEX       | Y       |            |         |         | Y           |          | binance_dex       |       |
@@ -84,7 +84,7 @@ Or install it yourself as:
 | Bitinka           | Y       | Y [x]      |         |         | Y           |          | bitinka           |       |
 | Bitker            | Y       |            |         |         | Y           | Y        | bitker            |       |
 | Bitkonan          | Y       |            |         |         | User-Defined|          | bitkonan          |       |
-| Bitkub            | Y       | Y          | Y       |         | Y           | Y        | bitkub            |       |
+| Bitkub            | Y       | Y [x]      | Y       |         | Y           | Y        | bitkub            |       |
 | Bitlish           | Y       | Y          | Y       |         | Y           |          | bitlish           |       |
 | Bitmart           | Y       | Y [x]      | Y       |         | Y           |          | bitmart           |       |
 | Bitmax            | Y       | Y [x]      | Y       |         | Y           | Y        | bitmax            |       |
@@ -122,7 +122,7 @@ Or install it yourself as:
 | BTCTurk           | Y       | Y          |         |         | Y           |          | btcturk           |       |
 | BTER              | Y       |            |         |         | Y           |          | bter              |       |
 | Buyucoin          | Y       | N          | N       |         | Y           |          | buyucoin          |       |
-| BX Thailand       | Y       |            |         |         | Y           |          | bx_thailand       |       |
+| BX Thailand       | Y       | Y [x]      |         |         | Y           |          | bx_thailand       |       |
 | BW                | Y       |            |         |         | Y           | Y        | bw                |       |
 | Bytex             | Y       | N          | N       |         | Y           | N        | bytex             |       |
 | C2CX              | Y       | Y          | N       |         | Y           |          | c2cx              |       |
@@ -148,7 +148,7 @@ Or install it yourself as:
 | CoinExchange      | Y       |            |         |         | Y           |          | coin_exchange     |       |
 | Coinbe            | Y       |            |         |         | Y           |          | coinbe            |       |
 | Coinbene          | Y       | Y [x]      | Y       |         | Y           | Y        | coinbene          |       |
-| Coinbig           | Y       |            |         |         | Y           | Y        | coinbig           |       |
+| Coinbig           | Y       | Y [x]      |         |         | Y           | Y        | coinbig           |       |
 | Coinbit           | Y       | N          | N       |         | Y           | Y        | coinbit           |       |
 | Coincheck         | Y       | Y [x]      |         |         | User-Defined|          | coincheck         |       |
 | Coindeal          | Y       | Y          |         |         | Y           |          | coindeal          |       |
@@ -276,7 +276,7 @@ Or install it yourself as:
 | Kkcoin            | Y       | Y [x]      | Y       |         | Y           | Y        | kkcoin            |       |
 | Koinex            | Y       |            |         |         | Y           |          | koinex            |       |
 | Koinok            | Y       |            |         |         | Y           | Y        | koinok            |       |
-| Koinx             | Y       |            |         |         | Y           | Y        | koinx             |       |
+| Koinx             | Y       | Y [x]      |         |         | Y           | Y        | koinx             |       |
 | Korbit            | Y       | Y [x]      |         |         | User-Defined| Y        | korbit            |       |
 | Kraken            | Y       | Y [x]      |         |         | Y           | Y        | kraken            |       |
 | Kryptono          | Y       | Y [x]      | Y       |         | User-Defined| Y        | kryptono          |       |
@@ -315,7 +315,7 @@ Or install it yourself as:
 | OAX               | Y       |            |         |         | Y           |          | oax               |       |
 | Oceanex           | Y       | Y          | Y       |         | Y           | Y        | oceanex           |       |
 | Octaex            | Y       | Y          | Y       |         | Y           |          | octaex            |       |
-| OEX               | Y       |            |         |         | Y           |          | oex               |       |
+| OEX               | Y       | Y [x]      |         |         | Y           |          | oex               |       |
 | OKCoin            | Y       |            |         |         | User-Defined|          | okcoin            |       |
 | OKEx              | Y       | Y [x]      | Y       |         | Y           | Y        | okex              |       |
 | OKEx Perpetual Swaps | Y     |            |         |         | Y           | Y        | okex_swap         |futures|

@@ -47,7 +47,7 @@ RSpec.describe 'Bitkub integration specs' do
     expect(order_book.bids.first.timestamp).to_not be nil
     expect(order_book.asks.count).to_not be nil
     expect(order_book.bids.count).to_not be nil
-    expect(order_book.timestamp).to be_a Numeric
+    expect(order_book.timestamp).to be nil
     expect(order_book.payload).to_not be nil
   end
 
