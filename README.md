@@ -76,10 +76,10 @@ Or install it yourself as:
 | Bitfinex          | Y       | Y [x]      |         |         | Y           |          | bitfinex          |       |
 | Bitflyer          | Y       |            |         |         | Y           |          | bitflyer          |       |
 | Bitforex          | Y       | Y [x]      | N       |         | Y           |          | bitforex          |       |
-| Bithash           | Y       | Y          | Y       |         | Y           | Y        | bithash           |       |
+| Bithash           | Y       | Y [x]      | Y       |         | Y           | Y        | bithash           |       |
 | Bitholic          | Y       | Y          | Y       |         | Y           |          | bitholic          |       |
 | Bithumb           | Y       | Y [x]      |         |         | Y           |          | bithumb           |       |
-| Bitibu            | Y       | Y          | Y       |         | Y           | Y        | bitibu            |       |
+| Bitibu            | Y       | Y [x]      | Y       |         | Y           | Y        | bitibu            |       |
 | Bitinfi           | Y       | Y          |         |         | Y           |          | bitinfi           |       |
 | Bitinka           | Y       | Y          |         |         | Y           |          | bitinka           |       |
 | Bitker            | Y       |            |         |         | Y           | Y        | bitker            |       |
@@ -171,7 +171,7 @@ Or install it yourself as:
 | Coinone           | Y       | Y [x]      | Y       |         | Y           | Y        | coinone           |       |
 | Coinpark          | Y       | Y          | Y       |         | Y           | Y        | coinpark          |       |
 | Coinplace         | Y       |            |         |         | Y           |          | coinplace         |       |
-| Coinrail          | Y       | Y          | Y       |         | Y           | Y        | coinrail          |       |
+| Coinrail [broken] | Y       | Y          | Y       |         | Y           | Y        | coinrail          |       |
 | Coinroom          | Y       |            |         |         | Y           |          | coinroom          |       |
 | CoinsMarkets      | Y       |            |         |         | Y           |          | coin_markets      |       |
 | Coinsbank         | Y       |            |         |         | Y           |          | coinsbank         |       |
@@ -217,7 +217,7 @@ Or install it yourself as:
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |       |
 | Escodex           | Y       |            |         |         | Y           | Y        | escodex           |       |
 | EtherDelta        | Y       |            |         |         | Y           |          | ether_delta       |       |
-| Etherflyer        | Y       | Y          | N       |         | Y           | Y        | etherflyer        |       |
+| Etherflyer        | Y       | N          | N       |         | Y           | Y        | etherflyer        |       |
 | Ethex             | Y       | N          | N       |         | Y           | N        | ethex             |       |
 | Ethfinex          | Y       | Y [x]      | Y       |         | Y           | Y        | ethfinex          |       |
 | Everbloom         | Y       |            |         |         | Y           |          | everbloom         |       |

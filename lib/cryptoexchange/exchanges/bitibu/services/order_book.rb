@@ -27,7 +27,7 @@ module Cryptoexchange::Exchanges
           order_book.market    = Bitibu::Market::NAME
           order_book.asks      = adapt_orders(output['asks'])
           order_book.bids      = adapt_orders(output['bids'])
-          order_book.timestamp = Time.parse(trade['created_at']).to_i
+          order_book.timestamp = nil
           order_book.payload   = output
           order_book
         end
