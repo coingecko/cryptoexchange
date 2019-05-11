@@ -9,14 +9,14 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          pairs = Cryptoexchange::Exchanges::BxThailand::Services::Market.new.fetch
+          pairs = Cryptoexchange::Exchanges::BxThailand::Services::Pairs.new.fetch
           pair = pairs.select { |p| p.base == market_pair.base && p.target == market_pair.target }.first
           output = super(order_book_url(pair))
           adapt(output, market_pair)
         end
 
         def order_book_url(market_pair)
-          "#{Cryptoexchange::Exchanges::BxThailand::Market::API_URL}orderbook/?pairing={market_pair.inst_id}"
+          "#{Cryptoexchange::Exchanges::BxThailand::Market::API_URL}orderbook/?pairing=#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)
