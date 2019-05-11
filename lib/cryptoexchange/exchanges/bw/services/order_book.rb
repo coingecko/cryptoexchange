@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "https://www.bw.com/api/data/v1/entrusts?marketId=305"
+          "https://www.bw.com/api/data/v1/entrusts?marketName=#{market_pair.base}_#{market_pair.target}&dataSize=50"
         end
 
         def adapt(output, market_pair)
@@ -23,8 +23,8 @@ module Cryptoexchange::Exchanges
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
           order_book.market    = Bw::Market::NAME
-          order_book.asks      = adapt_orders(output['asks'])
-          order_book.bids      = adapt_orders(output['bids'])
+          order_book.asks      = adapt_orders(output['datas']['asks'])
+          order_book.bids      = adapt_orders(output['datas']['bids'])
           order_book.timestamp = nil
           order_book.payload   = output
           order_book
@@ -32,8 +32,8 @@ module Cryptoexchange::Exchanges
 
         def adapt_orders(orders)
           orders.collect do |order_entry|
-            Cryptoexchange::Models::Order.new(price: order_entry[0],
-                                              amount: order_entry[1])
+            Cryptoexchange::Models::Order.new(price: order_entry[0].to_f,
+                                              amount: order_entry[1].to_f)
           end
         end
       end
