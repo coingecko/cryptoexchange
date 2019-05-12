@@ -35,7 +35,7 @@ module Cryptoexchange::Exchanges
           ticker.target    = market_pair.target
           ticker.market    = Uniswap::Market::NAME
           ticker.last      = NumericHelper.divide(1, NumericHelper.to_d(output['price']))
-          ticker.volume    = NumericHelper.to_d(output['tokenLiquidity'])
+          ticker.volume    = NumericHelper.to_d(output['tokenVolume'])
           ticker.timestamp = nil
           ticker.payload   = output
           ticker

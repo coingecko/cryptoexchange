@@ -94,7 +94,7 @@ Or install it yourself as:
 | Bitopro           | Y       | Y [x]      | Y       |         | User-Defined| Y        | bitopro           |       |
 | Bitpaction        | Y       | Y          | Y       |         | Y           |          | bitpaction        |       |
 | Bitrabbit         | Y       | N          | N       |         | Y           | Y        | bitrabbit         |       |
-| Bitrue            | Y       | N          | N       |         | Y           | Y        | bitrue            |       |
+| Bitrue            | Y       | Y [x]      |         |         | Y           | Y        | bitrue            |       |
 | Bits Blockchain   | Y       | Y          |         |         | Y           |          | bits_blockchain   |       |
 | Bitsane           | Y       | Y          |         |         | Y           |          | bitsane           |       |
 | Bitshares Assets  | Y       |            |         |         | User-Defined|          | bitshares_assets  |       |
@@ -115,7 +115,7 @@ Or install it yourself as:
 | BtcTradeUa        | Y       | Y          | Y       |         | Y           | Y        | btc_trade_ua      |       |
 | BTCBox            | Y       | Y          |         |         | User-Defined| Y        | btcbox            |       |
 | BTCC              | Y       |            |         |         | User-Defined|          | btcc              |       |
-| BTCEXA            | Y       |            |         |         | Y           |          | btcexa            |       |
+| BTCEXA            | Y       | Y [x]      |         |         | Y           |          | btcexa            |       |
 | BTCChina          |         |            |         |         |             |          |                   |       |
 | BTCMarkets        | Y       | Y          |         |         | Y           | Y        | btcmarkets        |       |
 | Btcsquare         | Y       | Y          | Unstable|         | Y           | Y        | btcsquare         |       |
