@@ -54,7 +54,7 @@ Or install it yourself as:
 | Binance DEX       | Y       |            |         |         | Y           |          | binance_dex       |       |
 | Binance Jersey    | Y       | Y [x]      |         |         | Y           | Y        | binance_jersey    |       |
 | Binance Uganda    | Y       | Y [x]      |         |         | Y           | Y        | binance_uganda    |       |
-| Bione             | Y       |            |         |         | Y           |          | bione             |       |
+| Bione             | Y       | Y [x]      |         |         | Y           |          | bione             |       |
 | Bishang           | Y       |            |         |         | Y           |          | bishang           |       |
 | Bisq              | Y       |            | Y       |         | Y           |          | bisq              |       |
 | Bit2C             | Y       | Y          | Y       |         | User-Defined| Y        | bit2c             |       |
@@ -248,7 +248,7 @@ Or install it yourself as:
 | GOPAX             | Y       | Y [x]      | Y       |         | Y           | Y        | gopax             |       |
 | Graviex           | Y       | N          | N       |         | Y           |          | graviex           |       |
 | Hadax             | Y       | N          | N       |         | Y           | Y        | hadax             |       |
-| Hb.top            | Y       | N          | N       |         | Y           | N        | hb_top            |       |
+| Hb.top            | Y       | Y [x]      | N       |         | Y           | N        | hb_top            |       |
 | Hikenex           | Y       | N          | N       |         | Y           | N        | hikenex           |       |
 | HitBTC            | Y       | Y [x]      | Y       |         | Y           | Y        | hitbtc            |       |
 | Hotbit            | Y       | Y [x]      | N       |         | Y           | Y        | hotbit            |       |
@@ -257,7 +257,7 @@ Or install it yourself as:
 | Huobi             | Y       | Y [x]      |         |         | Y           | Y        | huobi             |       |
 | Huobi US          | Y       | Y [x]      |         |         | Y           | Y        | huobi_us          |       |
 | Ice3x             | Y       | Y          | Y       |         | Y           |          | ice3x             |       |
-| Idax              | Y       | N          | N       |         | Y           | Y        | idax              |       |
+| Idax              | Y       | Y [x]      | N       |         | Y           | Y        | idax              |       |
 | Idcm              | Y       |            |         |         | Y           | Y        | idcm              |       |
 | Idex              | Y       | Unstable   | Y       |         | Y           | Y        | idex              |       |
 | Incorex           | Y       | Y          | Y       |         | Y           | Y        | incorex           |       |
