@@ -237,7 +237,7 @@ Or install it yourself as:
 | FinexBox          | Y       | Y [x]      |         |         | Y           | Y        | finexbox          |       |
 | Fubt              | Y       |            |         |         | Y           | Y        | fubt              |       |
 | Gate              | Y       | Y [x]      | Y       |         | Y           | Y        | gate              |       |
-| Gate (Futures)    | Y       | Y [x]      | Y       |         | Y           | Y        | gate              |futures|
+| Gate (Futures)    | Y       | Y [x]      | Y       |         | Y           | Y        | gate_futures      |futures|
 | Gatecoin          | Y       |            |         |         | Y           |          | gatecoin          |       |
 | GDAX(Coinbase Pro)| Y       | Y [x]      |         |         | Y           | Y        | gdax              |       |
 | Gemini            | Y       | Y [x]      | Y       |         | Y           |          | gemini            |       |
@@ -318,7 +318,7 @@ Or install it yourself as:
 | OEX               | Y       | Y [x]      |         |         | Y           |          | oex               |       |
 | OKCoin            | Y       |            |         |         | User-Defined|          | okcoin            |       |
 | OKEx              | Y       | Y [x]      | Y       |         | Y           | Y        | okex              |       |
-| OKEx Perpetual Swaps | Y     |            |         |         | Y           | Y        | okex_swap         |futures|
+| OKEx Perpetual Swaps | Y     | Y [x]      |         |         | Y           | Y        | okex_swap         |futures|
 | Omgfin            | Y       |            |         |         | Y           | Y        | omgfin            |       |
 | OmniTrade         | Y       | Y          | Y       | Y       | Y           |          | omnitrade         |       |
 | Ooobtc            | Y       | Y [x]      | Y       |         | Y           | Y        | ooobtc            |       |
