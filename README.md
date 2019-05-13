@@ -27,22 +27,22 @@ Or install it yourself as:
 | 58Coin            | Y       | Y          | Y       |         | Y           | Y        | fifty_eight_coin  |       |
 | Abcc              | Y       | N          | N       |         | Y           | Y        | abcc              |       |
 | Abucoins          | Y       | Y          | Y       |         | Y           |          | abucoins          |       |
-| ACX               | Y       | Y          | Y       |         | Y           | Y        | acx               |       |
+| ACX               | Y       | Y [x]      | Y       |         | Y           | Y        | acx               |       |
 | AEX               | Y       | Y          | Y       |         | Y           |          | aex               |       |
 | Airswap           | Y       |            |         |         |             |          | airswap           |       |
 | Allbit            | Y       | N          | N       |         | Y           | Y        | allbit            |       |
-| Allcoin           | Y       | Y          | Y       |         | Y           |          | allcoin           |       |
+| Allcoin           | Y       | Y [x]      | Y       |         | Y           |          | allcoin           |       |
 | Alluma            | Y       | N          | N       |         | Y           | N        | alluma            |       |
 | Alterdice         | Y       |            |         |         | Y           | Y        | alterdice         |       |
-| Altilly           | Y       | Y          | Y       |         | Y           | Y        | altilly           |       |
-| Altmarkets        | Y       | Y          | Y       |         | Y           | Y        | altmarkets        |       |
+| Altilly           | Y       | Y [x]      | Y       |         | Y           | Y        | altilly           |       |
+| Altmarkets        | Y       | Y [x]      | Y       |         | Y           | Y        | altmarkets        |       |
 | ANX               | Y       |            |         |         | User-Defined|          | anx               |       |
 | Aphelion          | Y       |            |         |         | Y           | Y        | aphelion          |       |
-| AXNET             | Y       | Y          | Y       |         | Y           | Y        | axnet             |       |
+| AXNET (broken)    | Y       | Y          | Y       |         | Y           | Y        | axnet             |       |
 | B2BX              | Y       | Y          |         |         | Y           |          | b2bx              |       |
 | Bancor            | Y       | N          | N       |         | Y           |          | bancor            |       |
-| Bankera           | Y       | Y          | Y       |         | Y           | Y        | bankera           |       |
-| Bcex              | Y       | Y          | Y       |         | Y           | Y        | bcex              |       |
+| Bankera           | Y       | Y [x]      | Y       |         | Y           | Y        | bankera           |       |
+| Bcex (broken)     | Y       | Y          | Y       |         | Y           | Y        | bcex              |       |
 | Bcoin             | Y       |            |         |         | Y           | Y        | bcoin             |       |
 | Bgogo             | Y       | Y [x]      | Y       |         | Y           | Y        | bgogo             |       |
 | Bibox             | Y       | Y [x]      | Y       |         | Y           | Y        | bibox             |       |
@@ -57,7 +57,7 @@ Or install it yourself as:
 | Bione             | Y       |            |         |         | Y           |          | bione             |       |
 | Bishang           | Y       |            |         |         | Y           |          | bishang           |       |
 | Bisq              | Y       |            | Y       |         | Y           |          | bisq              |       |
-| Bit2C             | Y       | Y          | Y       |         | User-Defined| Y        | bit2c             |       |
+| Bit2C             | Y       | Y [x]      | Y       |         | User-Defined| Y        | bit2c             |       |
 | Bit-Z             | Y       |            |         |         | Y           |          | bit_z             |       |
 | Bitalong          | Y       | Y          | Y       |         | Y           | Y        | bitalong          |       |
 | Bitbank           | Y       | Y [x]      | Y       |         | User-Defined| Y        | bitbank           |       |
@@ -186,7 +186,7 @@ Or install it yourself as:
 | COSS              | Y       |            |         |         | Y           | Y        | coss              |       |
 | Cpdax             | Y       | Y          | Y       |         | Y           |          | cpdax             |       |
 | CredoEx           | Y       |            |         |         | Y           |          | credoex           |       |
-| Crex24            | Y       | Y          | Y       |         | Y           | Y        | crex24            |       |
+| Crex24            | Y       | Y [x]      | Y       |         | Y           | Y        | crex24            |       |
 | CRXZone           | Y       | Y [x]      | Y       |         | Y           | Y        | crxzone           |       |
 | Cryptagio         | Y       | Y          | Y       |         | Y           | Y        | cryptagio         |       |
 | Cryptaldash       | Y       | Y          | Y       |         | Y           |          | cryptaldash       |       |
