@@ -92,7 +92,7 @@ Or install it yourself as:
 | Bitmex            | Y       | Y          | Y       |         | Y           |          | bitmex            |futures|
 | BitOnBay          | Y       |            |         |         | Y           |          | bitonbay          |       |
 | Bitopro           | Y       | Y [x]      | Y       |         | User-Defined| Y        | bitopro           |       |
-| Bitpaction        | Y       | Y [x]      | Y       |         | Y           |          | bitpaction        |       |
+| Bitpaction[halted]| Y       | Y          | Y       |         | Y           |          | bitpaction        |       |
 | Bitrabbit         | Y       | N          | N       |         | Y           | Y        | bitrabbit         |       |
 | Bitrue            | Y       | Y [x]      |         |         | Y           | Y        | bitrue            |       |
 | Bits Blockchain   | Y       | Y          |         |         | Y           |          | bits_blockchain   |       |
