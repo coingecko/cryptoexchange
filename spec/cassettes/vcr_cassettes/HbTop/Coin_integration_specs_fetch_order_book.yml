@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hb.top/api/v1/getDepth?num=100&symbol=gsc_btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hb.top
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 13 May 2019 08:18:01 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Accel-Buffering:
+      - 'no'
+    body:
+      encoding: UTF-8
+      string: '{"code":0,"msg":"","detailMsg":"","data":{"buy":[{"volume":"4258.10","price":"0.00000091","marketAmount":"0.00387487"},{"volume":"6624.21","price":"0.00000090","marketAmount":"0.00596178"},{"volume":"8870.43","price":"0.00000089","marketAmount":"0.00789469"},{"volume":"10315.15","price":"0.00000088","marketAmount":"0.00907733"},{"volume":"9945.02","price":"0.00000087","marketAmount":"0.00865216"},{"volume":"8878.10","price":"0.00000086","marketAmount":"0.00763516"},{"volume":"10402.75","price":"0.00000085","marketAmount":"0.00884233"},{"volume":"9873.60","price":"0.00000084","marketAmount":"0.00829382"},{"volume":"11305.63","price":"0.00000083","marketAmount":"0.00938367"},{"volume":"9612.44","price":"0.00000082","marketAmount":"0.00788220"},{"volume":"11521.90","price":"0.00000081","marketAmount":"0.00933274"},{"volume":"10282.00","price":"0.00000080","marketAmount":"0.00822560"},{"volume":"11925.99","price":"0.00000079","marketAmount":"0.00942153"},{"volume":"12087.66","price":"0.00000078","marketAmount":"0.00942837"},{"volume":"9227.01","price":"0.00000077","marketAmount":"0.00710479"},{"volume":"11040.99","price":"0.00000076","marketAmount":"0.00839115"},{"volume":"10102.13","price":"0.00000075","marketAmount":"0.00757659"},{"volume":"11285.35","price":"0.00000074","marketAmount":"0.00835115"},{"volume":"9765.44","price":"0.00000073","marketAmount":"0.00712877"},{"volume":"9560.41","price":"0.00000072","marketAmount":"0.00688349"},{"volume":"10889.44","price":"0.00000071","marketAmount":"0.00773150"},{"volume":"10905.92","price":"0.00000070","marketAmount":"0.00763414"},{"volume":"10048.86","price":"0.00000069","marketAmount":"0.00693371"},{"volume":"8935.79","price":"0.00000068","marketAmount":"0.00607633"},{"volume":"8832.94","price":"0.00000067","marketAmount":"0.00591806"},{"volume":"9936.53","price":"0.00000066","marketAmount":"0.00655810"},{"volume":"10483.77","price":"0.00000065","marketAmount":"0.00681445"},{"volume":"9243.74","price":"0.00000064","marketAmount":"0.00591599"},{"volume":"10272.19","price":"0.00000063","marketAmount":"0.00647147"},{"volume":"11039.26","price":"0.00000062","marketAmount":"0.00684434"},{"volume":"8171.42","price":"0.00000061","marketAmount":"0.00498457"},{"volume":"4274.34","price":"0.00000060","marketAmount":"0.00256460"},{"volume":"1679.02","price":"0.00000059","marketAmount":"0.00099062"},{"volume":"1638.04","price":"0.00000058","marketAmount":"0.00095006"},{"volume":"435.95","price":"0.00000057","marketAmount":"0.00024849"}],"sell":[{"volume":"1462.70","price":"0.00000095","marketAmount":"0.00138956"},{"volume":"4278.38","price":"0.00000096","marketAmount":"0.00410724"},{"volume":"5831.90","price":"0.00000097","marketAmount":"0.00565694"},{"volume":"8510.79","price":"0.00000098","marketAmount":"0.00834057"},{"volume":"11025.29","price":"0.00000099","marketAmount":"0.01091503"},{"volume":"12234.39","price":"0.00000100","marketAmount":"0.01223439"},{"volume":"11685.98","price":"0.00000101","marketAmount":"0.01180283"},{"volume":"11761.31","price":"0.00000102","marketAmount":"0.01199654"},{"volume":"11357.05","price":"0.00000103","marketAmount":"0.01169776"},{"volume":"9455.50","price":"0.00000104","marketAmount":"0.00983372"},{"volume":"11708.80","price":"0.00000105","marketAmount":"0.01229424"},{"volume":"13448.15","price":"0.00000106","marketAmount":"0.01425504"},{"volume":"11857.30","price":"0.00000107","marketAmount":"0.01268731"},{"volume":"11318.32","price":"0.00000108","marketAmount":"0.01222378"},{"volume":"10742.51","price":"0.00000109","marketAmount":"0.01170933"},{"volume":"11249.31","price":"0.00000110","marketAmount":"0.01237424"},{"volume":"12010.95","price":"0.00000111","marketAmount":"0.01333215"},{"volume":"12719.05","price":"0.00000112","marketAmount":"0.01424533"},{"volume":"9698.34","price":"0.00000113","marketAmount":"0.01095912"},{"volume":"11542.22","price":"0.00000114","marketAmount":"0.01315813"},{"volume":"12066.86","price":"0.00000115","marketAmount":"0.01387688"},{"volume":"9978.92","price":"0.00000116","marketAmount":"0.01157555"},{"volume":"10684.62","price":"0.00000117","marketAmount":"0.01250100"},{"volume":"10877.48","price":"0.00000118","marketAmount":"0.01283542"},{"volume":"11151.37","price":"0.00000119","marketAmount":"0.01327013"},{"volume":"10281.64","price":"0.00000120","marketAmount":"0.01233796"},{"volume":"11200.92","price":"0.00000121","marketAmount":"0.01355311"},{"volume":"12451.99","price":"0.00000122","marketAmount":"0.01519142"},{"volume":"11284.20","price":"0.00000123","marketAmount":"0.01387956"},{"volume":"11500.92","price":"0.00000124","marketAmount":"0.01426114"},{"volume":"10123.28","price":"0.00000125","marketAmount":"0.01265410"},{"volume":"6234.57","price":"0.00000126","marketAmount":"0.00785555"},{"volume":"5628.18","price":"0.00000127","marketAmount":"0.00714779"},{"volume":"3156.96","price":"0.00000128","marketAmount":"0.00404091"},{"volume":"443.27","price":"0.00000129","marketAmount":"0.00057182"}]}}'
+    http_version: 
+  recorded_at: Mon, 13 May 2019 08:18:01 GMT
+recorded_with: VCR 4.0.0
