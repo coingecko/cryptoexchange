@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe 'Worldcore integration specs' do
+RSpec.describe 'xt integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: 'xt') }
 
