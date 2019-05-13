@@ -38,11 +38,11 @@ Or install it yourself as:
 | Altmarkets        | Y       | Y [x]      | Y       |         | Y           | Y        | altmarkets        |       |
 | ANX               | Y       |            |         |         | User-Defined|          | anx               |       |
 | Aphelion          | Y       |            |         |         | Y           | Y        | aphelion          |       |
-| AXNET (broken)    | Y       | Y          | Y       |         | Y           | Y        | axnet             |       |
-| B2BX              | Y       | Y          |         |         | Y           |          | b2bx              |       |
+| AXNET (halted)    | Y       | Y          | Y       |         | Y           | Y        | axnet             |       |
+| B2BX              | Y       | N          |         |         | Y           |          | b2bx              |       |
 | Bancor            | Y       | N          | N       |         | Y           |          | bancor            |       |
 | Bankera           | Y       | Y [x]      | Y       |         | Y           | Y        | bankera           |       |
-| Bcex (broken)     | Y       | Y          | Y       |         | Y           | Y        | bcex              |       |
+| Bcex (halted)     | Y       | Y          | Y       |         | Y           | Y        | bcex              |       |
 | Bcoin             | Y       |            |         |         | Y           | Y        | bcoin             |       |
 | Bgogo             | Y       | Y [x]      | Y       |         | Y           | Y        | bgogo             |       |
 | Bibox             | Y       | Y [x]      | Y       |         | Y           | Y        | bibox             |       |
@@ -59,7 +59,7 @@ Or install it yourself as:
 | Bisq              | Y       |            | Y       |         | Y           |          | bisq              |       |
 | Bit2C             | Y       | Y [x]      | Y       |         | User-Defined| Y        | bit2c             |       |
 | Bit-Z             | Y       |            |         |         | Y           |          | bit_z             |       |
-| Bitalong          | Y       | Y          | Y       |         | Y           | Y        | bitalong          |       |
+| Bitalong          | Y       | Y [x]      | Y       |         | Y           | Y        | bitalong          |       |
 | Bitbank           | Y       | Y [x]      | Y       |         | User-Defined| Y        | bitbank           |       |
 | Bitbay            | Y       |            |         |         | User-Defined|          | bitbay            |       |
 | Bitbegin          | Y       | N          | N       |         | Y           | Y        | bitbegin          |       |
@@ -69,7 +69,7 @@ Or install it yourself as:
 | Bitc3             | Y       | N          | N       |         | Y           | Y        | bitc3             |       |
 | Bitconnect        | Y       |            |         |         | Y           |          | bitconnect        |       |
 | Bitebtc           | Y       | Y [x]      | Y       |         | Y           | Y        | bitebtc           |       |
-| Bitex.la          | Y       | Y          |         |         | Y           |          | bitex             |       |
+| Bitex.la          | Y       | Y [x]      |         |         | Y           |          | bitex             |       |
 | Bitexbook         | Y       | N          | N       |         | Y           | Y        | bitexbook         |       |
 | Bitexlive         | Y       | N          | N       |         | Y           | Y        | bitexlive         |       |
 | BitFex.Trade      | Y       |            |         |         | Y           | Y        | bitfex            |       |
@@ -77,7 +77,7 @@ Or install it yourself as:
 | Bitflyer          | Y       |            |         |         | Y           |          | bitflyer          |       |
 | Bitforex          | Y       | Y [x]      | N       |         | Y           |          | bitforex          |       |
 | Bithash           | Y       | Y [x]      | Y       |         | Y           | Y        | bithash           |       |
-| Bitholic          | Y       | Y          | Y       |         | Y           |          | bitholic          |       |
+| Bitholic          | Y       | Y [x]      | Y       |         | Y           |          | bitholic          |       |
 | Bithumb           | Y       | Y [x]      |         |         | Y           |          | bithumb           |       |
 | Bitibu            | Y       | Y [x]      | Y       |         | Y           | Y        | bitibu            |       |
 | Bitinfi           | Y       | Y [x]      |         |         | Y           |          | bitinfi           |       |
@@ -85,14 +85,14 @@ Or install it yourself as:
 | Bitker            | Y       |            |         |         | Y           | Y        | bitker            |       |
 | Bitkonan          | Y       |            |         |         | User-Defined|          | bitkonan          |       |
 | Bitkub            | Y       | Y [x]      | Y       |         | Y           | Y        | bitkub            |       |
-| Bitlish           | Y       | Y          | Y       |         | Y           |          | bitlish           |       |
+| Bitlish           | Y       | Y [x]      | Y       |         | Y           |          | bitlish           |       |
 | Bitmart           | Y       | Y [x]      | Y       |         | Y           |          | bitmart           |       |
 | Bitmax            | Y       | Y [x]      | Y       |         | Y           | Y        | bitmax            |       |
 | Bitmesh           | Y       | N          | N       |         | Y           | Y        | bitmesh           |       |
 | Bitmex            | Y       | Y          | Y       |         | Y           |          | bitmex            |futures|
 | BitOnBay          | Y       |            |         |         | Y           |          | bitonbay          |       |
 | Bitopro           | Y       | Y [x]      | Y       |         | User-Defined| Y        | bitopro           |       |
-| Bitpaction        | Y       | Y          | Y       |         | Y           |          | bitpaction        |       |
+| Bitpaction        | Y       | Y [x]      | Y       |         | Y           |          | bitpaction        |       |
 | Bitrabbit         | Y       | N          | N       |         | Y           | Y        | bitrabbit         |       |
 | Bitrue            | Y       | Y [x]      |         |         | Y           | Y        | bitrue            |       |
 | Bits Blockchain   | Y       | Y          |         |         | Y           |          | bits_blockchain   |       |
