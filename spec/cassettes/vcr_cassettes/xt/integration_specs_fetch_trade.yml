@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kline.xt.com/api/data/v1/trades?marketName=BTC_USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - kline.xt.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0
+      Date:
+      - Mon, 13 May 2019 03:41:50 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1289'
+      Connection:
+      - close
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Clienttype,Sign,Timestamp,Userid
+      Access-Control-Allow-Methods:
+      - GET,POST
+      Access-Control-Allow-Credentials:
+      - 'true'
+    body:
+      encoding: UTF-8
+      string: '{"datas":[["T","614","1557718905","BTC_USDT","ask","7021.88","0.0001"],["T","614","1557718891","BTC_USDT","bid","7021.89","0.0028"],["T","614","1557718890","BTC_USDT","bid","7023.07","0.0081"],["T","614","1557718889","BTC_USDT","bid","7023.07","0.0324"],["T","614","1557718887","BTC_USDT","bid","7023.07","0.0110"],["T","614","1557718873","BTC_USDT","bid","7021.91","0.0005"],["T","614","1557718860","BTC_USDT","bid","7021.92","0.0058"],["T","614","1557718842","BTC_USDT","ask","7021.88","0.6534"],["T","614","1557718826","BTC_USDT","bid","7017.04","0.3778"],["T","614","1557718819","BTC_USDT","ask","7023.91","0.2509"],["T","614","1557718819","BTC_USDT","ask","7023.91","0.0010"],["T","614","1557718813","BTC_USDT","ask","7023.91","0.0537"],["T","614","1557718813","BTC_USDT","ask","7023.91","0.0013"],["T","614","1557718808","BTC_USDT","ask","7023.91","0.0029"],["T","614","1557718808","BTC_USDT","ask","7023.91","0.0550"],["T","614","1557718799","BTC_USDT","ask","7023.91","0.0029"],["T","614","1557718795","BTC_USDT","ask","7023.91","0.0029"],["T","614","1557718791","BTC_USDT","ask","7023.91","0.0015"],["T","614","1557718788","BTC_USDT","ask","7023.91","0.4320"],["T","614","1557718786","BTC_USDT","ask","7023.91","0.0015"]],"resMsg":{"code":"1","method":null,"message":"success
+        !"}}'
+    http_version: 
+  recorded_at: Mon, 13 May 2019 03:41:50 GMT
+recorded_with: VCR 4.0.0
