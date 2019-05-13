@@ -96,18 +96,18 @@ Or install it yourself as:
 | Bitrabbit         | Y       | N          | N       |         | Y           | Y        | bitrabbit         |       |
 | Bitrue            | Y       | Y [x]      |         |         | Y           | Y        | bitrue            |       |
 | Bits Blockchain   | Y       | Y          |         |         | Y           |          | bits_blockchain   |       |
-| Bitsane           | Y       | Y          |         |         | Y           |          | bitsane           |       |
+| Bitsane           | Y       | Y [x]      |         |         | Y           |          | bitsane           |       |
 | Bitshares Assets  | Y       |            |         |         | User-Defined|          | bitshares_assets  |       |
 | Bitso             | Y       |            |         |         | Y           |          | bitso             |       |
 | Bitstamp          | Y       | Y [x]      | Y       |         | User-Defined|          | bitstamp          |       |
-| Bitsten           | Y       | Y          | N       |         | Y           | Y        | bitsten           |       |
-| Bitstorage        | Y       | Y          | Y       |         | Y           | Y        | bitstorage        |       |
+| Bitsten           | Y       | Y [x]      | N       |         | Y           | Y        | bitsten           |       |
+| Bitstorage        | Y       | Y [x]      | Y       |         | Y           | Y        | bitstorage        |       |
 | Bittrex           | Y       | Y [x]      |         |         | Y           | Y        | bittrex           |       |
 | Bkex              | Y       | N          | N       |         | Y           | Y        | bkex              |       |
 | Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |       |
 | Blockonix         | Y       | Y          | Y       |         | Y           |          | blockonix         |       |
 | Blokmy            | Y       | Y          | Y       |         | Y           | Y        | blokmy            |       |
-| Braziliex         | Y       | Y          | Y       |         | Y           |          | braziliex         |       |
+| Braziliex (halted)| Y       | Y          | Y       |         | Y           |          | braziliex         |       |
 | BTC38             |         |            |         |         |             |          |                   |       |
 | BTC-e             |         |            |         |         |             |          |                   |       |
 | BtcAlpha          | Y       | Y [x]      | Y       |         | Y           | Y        | btc_alpha         |       |
@@ -125,16 +125,16 @@ Or install it yourself as:
 | BX Thailand       | Y       | Y [x]      |         |         | Y           |          | bx_thailand       |       |
 | BW                | Y       |            |         |         | Y           | Y        | bw                |       |
 | Bytex             | Y       | N          | N       |         | Y           | N        | bytex             |       |
-| C2CX              | Y       | Y          | N       |         | Y           |          | c2cx              |       |
-| CPatex            | Y       | Y          | Y       |         | Y           |          | c_patex           |       |
-| Cbx               | Y       | Y          | Y       |         | Y           | Y        | cbx               |       |
+| C2CX              | Y       | Y [x]      | N       |         | Y           |          | c2cx              |       |
+| CPatex            | Y       | Y [x]      | Y       |         | Y           |          | c_patex           |       |
+| Cbx               | Y       | Y [x]      | Y       |         | Y           | Y        | cbx               |       |
 | CCex              | Y       |            |         |         | Y           |          | ccex              |       |
 | Ccx               | Y       |            |         |         | Y           | Y        | ccx               |       |
 | Cex               | Y       | Y [x]      | Y       |         | Y           |          | cex               |       |
 | Cfinex            | Y       | Y          | Y       |         | Y           | Y        | cfinex            |       |
 | Chaince           | Y       |            |         |         | Y           | Y        | chaince           |       |
 | Chainrift         | Y       | Y [x]      | Y       |         | Y           |          | chainrift         |       |
-| ChainEX           | Y       | Y          | Y       |         | Y           |          | chainex           |       |
+| ChainEX           | Y       | Y [x]      | Y       |         | Y           |          | chainex           |       |
 | Chaoex            | Y       | Y [x]      | Y       |         | Y           | N        | chaoex            |       |
 | CHBTC             | Y       |            |         |         | User-Defined|          | chbtc             |       |
 | Citex             | Y       | N          | N       |         | Y           | Y        | citex             |       |
@@ -151,14 +151,14 @@ Or install it yourself as:
 | Coinbig           | Y       | Y [x]      |         |         | Y           | Y        | coinbig           |       |
 | Coinbit           | Y       | N          | N       |         | Y           | Y        | coinbit           |       |
 | Coincheck         | Y       | Y [x]      |         |         | User-Defined|          | coincheck         |       |
-| Coindeal          | Y       | Y          |         |         | Y           |          | coindeal          |       |
+| Coindeal          | Y       | Y [x]      |         |         | Y           |          | coindeal          |       |
 | Coindirect        | Y       | N          | N       |         | Y           | Y        | coindirect        |       |
 | Coineal           | Y       | Y [broken] | Y       |         | Y           |          | coineal           |       |
 | Coinex            | Y       | Y [x]      | Y       |         | Y           | Y        | coinex            |       |
 | Coinexmarket (broken)| Y       | Y          | Y       |         | Y           |          | coinexmarket      |       |
 | Coinfalcon        | Y       | Y [x]      | Y       |         | Y           |          | coinfalcon        |       |
 | Coinfield         | Y       | Y [x]      | Y       |         | Y           | Y        | coinfield         |       |
-| Coingi            | Y       | Y          | Y       |         | Y           | Y        | coingi            |       |
+| Coingi            | Y       | Y [x]      | Y       |         | Y           | Y        | coingi            |       |
 | Coinhouse         | Y       |            |         |         | Y           | Y        | coinhouse         |       |
 | Coinhub           | Y       | Y          | Y       |         | Y           | Y        | coinhub           |       |
 | CoinJar           | Y       | Y [x]      | Y       |         | Y           | Y        | coinjar           |       |
@@ -205,7 +205,7 @@ Or install it yourself as:
 | Ddex              | Y       | Y          | Y       |         | Y           | Y        | ddex              |       |
 | DEEX              | Y       |            |         |         | Y           |          | deex              |       |
 | Deribit           | Y       | Y          | Y       | Y       | Y           | Y        | deribit           |futures|
-| DEx.top           | Y       | Y          | Y       |         | Y           |          | dextop            |       |
+| DEx.top           | Y       | Y [x]      | Y       |         | Y           |          | dextop            |       |
 | dex-trade         | Y       |            |         |         | Y           |          | dextrade          |       |
 | Dflow             | Y       |            |         |         | Y           | Y        | dflow             |       |
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |       |
@@ -222,7 +222,7 @@ Or install it yourself as:
 | Ethfinex          | Y       | Y [x]      | Y       |         | Y           | Y        | ethfinex          |       |
 | Everbloom         | Y       |            |         |         | Y           |          | everbloom         |       |
 | ExMarkets         | Y       | Y          | Y       |         | Y           | Y        | exmarkets         |       |
-| Exmo              | Y       | Y          | Y       |         | Y           | Y        | exmo              |       |
+| Exmo              | Y       | Y [x]      | Y       |         | Y           | Y        | exmo              |       |
 | Exrates           | Y       | Y [x]      | N       |         | Y           | Y        | exrates           |       |
 | Extstock          | Y       | Y          | Y       |         | Y           | Y        | extstock          |       |
 | Exx               | Y       | Y [x]      | Y       |         | Y           | Y        | exx               |       |
