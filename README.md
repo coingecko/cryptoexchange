@@ -370,7 +370,7 @@ Or install it yourself as:
 | Tokok             | Y       | Y [x]      | Y       |         | Y           |          | tokok             |       |
 | Topbtc            | Y       | N          | N       |         | Y           | Y        | topbtc            |       |
 | TradeOgre         | Y       | Y [x]      | Y       |         | Y           | Y        | trade_ogre        |       |
-| Trade Satoshi     | Y       |            |         |         | Y           | Y        | trade_satoshi     |       |
+| Trade Satoshi     | Y       | Y [x]      |         |         | Y           | Y        | trade_satoshi     |       |
 | Trade.io          | Y       |            |         |         | Y           |          | tradeio           |       |
 | Trade.mn          | Y       | Y [x]      | Y       |         | Y           |          | trademn           |       |
 | TrocaNinja        | Y       | N          | N       |         | Y           |          | troca_ninja       |       |
