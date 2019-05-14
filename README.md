@@ -74,7 +74,7 @@ Or install it yourself as:
 | Bitexlive         | Y       | N          | N       |         | Y           | Y        | bitexlive         |       |
 | BitFex.Trade      | Y       |            |         |         | Y           | Y        | bitfex            |       |
 | Bitfinex          | Y       | Y [x]      |         |         | Y           |          | bitfinex          |       |
-| Bitflyer          | Y       |            |         |         | Y           |          | bitflyer          |       |
+| Bitflyer          | Y       | Y [x]      |         |         | Y           |          | bitflyer          |       |
 | Bitforex          | Y       | Y [x]      | N       |         | Y           |          | bitforex          |       |
 | Bithash           | Y       | Y [x]      | Y       |         | Y           | Y        | bithash           |       |
 | Bitholic          | Y       | Y [x]      | Y       |         | Y           |          | bitholic          |       |
