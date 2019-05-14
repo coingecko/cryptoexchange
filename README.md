@@ -318,7 +318,7 @@ Or install it yourself as:
 | OEX               | Y       | Y [x]      |         |         | Y           |          | oex               |       |
 | OKCoin            | Y       |            |         |         | User-Defined|          | okcoin            |       |
 | OKEx              | Y       | Y [x]      | Y       |         | Y           | Y        | okex              |       |
-| OKEx Perpetual Swaps | Y     | Y [x]      |         |         | Y           | Y        | okex_swap         |futures|
+| OKEx Perpetual Swaps | Y (no volume) | Y (can't map) |         |         | Y           | Y        | okex_swap         |futures|
 | Omgfin            | Y       |            |         |         | Y           | Y        | omgfin            |       |
 | OmniTrade         | Y       | Y          | Y       | Y       | Y           |          | omnitrade         |       |
 | Ooobtc            | Y       | Y [x]      | Y       |         | Y           | Y        | ooobtc            |       |
