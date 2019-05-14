@@ -319,7 +319,7 @@ Or install it yourself as:
 | OKCoin            | Y       |            |         |         | User-Defined|          | okcoin            |       |
 | OKEx              | Y       | Y [x]      | Y       |         | Y           | Y        | okex              |       |
 | OKEx Perpetual Swaps | Y (no volume) | Y (can't map) |         |         | Y           | Y        | okex_swap         |futures|
-| Omgfin            | Y       |            |         |         | Y           | Y        | omgfin            |       |
+| Omgfin            | Y       | Y [x]      |         |         | Y           | Y        | omgfin            |       |
 | OmniTrade         | Y       | Y          | Y       | Y       | Y           |          | omnitrade         |       |
 | Ooobtc            | Y       | Y [x]      | Y       |         | Y           | Y        | ooobtc            |       |
 | Openledger        | Y       | Y          | Y       |         | Y           | Y        | openledger        |       |
@@ -347,7 +347,7 @@ Or install it yourself as:
 | Simex             | Y       | N          | N       |         | Y           | Y        | simex             |       |
 | Singularx         | Y       | N          | N       |         | Y           |          | singularx         |       |
 | Sistemkoin        | Y       |            |         |         | Y           |          | sistemkoin        |       |
-| 6X                | Y       |            |         |         | Y           | Y        | six_x             |       |
+| 6X                | Y       | Y [x]      |         |         | Y           | Y        | six_x             |       |
 | Satang (Tdax)     | Y       |            |         |         | Y           | Y        | tdax              |       |
 | SouthXchange      | Y       | Y [x]      | Y       |         | Y           | Y        | south_xchange     |       |
 | Stocks Exchange   | Y       |            |         |         | Y           | Y        | stocks_exchange   |       |

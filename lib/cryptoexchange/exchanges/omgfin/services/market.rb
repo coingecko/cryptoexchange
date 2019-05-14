@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Omgfin::Market::API_URL}"
+          "#{Cryptoexchange::Exchanges::Omgfin::Market::API_URL}/ticker/24hr"
         end
 
         def adapt_all(output)
