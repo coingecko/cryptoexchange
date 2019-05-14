@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Omgfin
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Omgfin::Market::API_URL}"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Omgfin::Market::API_URL}/ticker/24hr"
 
         def fetch
           output = super
