@@ -68,7 +68,7 @@ RSpec.describe 'Binance integration specs' do
     expect(trade.amount).to_not be_nil
     expect(trade.price).to_not be_nil
     expect(2000..Date.today.year).to include(Time.at(trade.timestamp).year)
-    expect(trade.trade_id).to be_nil
+    expect(trade.trade_id).to_not be_nil
     expect(trade.type).to eq("buy").or eq("sell")
   end
 end
