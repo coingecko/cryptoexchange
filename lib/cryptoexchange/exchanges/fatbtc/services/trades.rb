@@ -9,7 +9,7 @@ module Cryptoexchange::Exchanges
 
         def ticker_url(market_pair)
           timestamp = Time.now.to_i
-          "#{Cryptoexchange::Exchanges::Fatbtc::Market::API_URL}/trade/#{market_pair.base}#{market_pair.target}/10/#{timestamp}"
+          "#{Cryptoexchange::Exchanges::Fatbtc::Market::API_URL}/trade/#{market_pair.base}#{market_pair.target}/50/#{timestamp}"
         end
 
         def adapt(output, market_pair)

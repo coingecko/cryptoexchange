@@ -48,19 +48,18 @@ RSpec.describe 'FatBTC integration specs' do
     expect(order_book.payload).to_not be nil
   end
 
-  xit 'fetch trade' do
-    # request is using Time.now, requires Timecop for VCR to work
+  it 'fetch trades' do
     trades = client.trades(eth_btc_pair)
-    trade = trades.sample
+    trade = trades.first
 
-    expect(trades).to_not be_empty
     expect(trade.base).to eq 'ETH'
     expect(trade.target).to eq 'BTC'
     expect(trade.market).to eq 'fatbtc'
-    expect(['buy', 'sell']).to include trade.type
-    expect(trade.price).to_not be_nil
+
     expect(trade.amount).to_not be_nil
-    expect(trade.timestamp).to be_a Numeric
-    expect(trade.payload).to_not be nil
+    expect(trade.price).to_not be_nil
+    expect(2000..Date.today.year).to include(Time.at(trade.timestamp).year)
+    expect(trade.trade_id).to be_nil
+    expect(trade.type).to eq("buy").or eq("sell")
   end
 end

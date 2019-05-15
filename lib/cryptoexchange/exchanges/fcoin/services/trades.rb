@@ -9,7 +9,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Fcoin::Market::API_URL}/market/trades/#{market_pair.base.downcase}#{market_pair.target.downcase}"
+          "#{Cryptoexchange::Exchanges::Fcoin::Market::API_URL}/market/trades/#{market_pair.base.downcase}#{market_pair.target.downcase}?limit=500"
         end
 
         def adapt(output, market_pair)
@@ -21,7 +21,7 @@ module Cryptoexchange::Exchanges
             tr.type      = trade['side']
             tr.price     = trade['price']
             tr.amount    = trade['amount']
-            tr.timestamp = trade['ts']
+            tr.timestamp = trade['ts'] / 1000
             tr.payload   = trade
             tr.market    = Fcoin::Market::NAME
             tr

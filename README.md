@@ -44,13 +44,13 @@ Or install it yourself as:
 | Bankera           | Y       | Y [x]      | Y       |         | Y           | Y        | bankera           |       |
 | Bcex (halted)     | Y       | Y          | Y       |         | Y           | Y        | bcex              |       |
 | Bcoin             | Y       |            |         |         | Y           | Y        | bcoin             |       |
-| Bgogo             | Y       | Y [x]      | Y       |         | Y           | Y        | bgogo             |       |
+| Bgogo             | Y       | Y [x]      | Y [limit: 20]      |         | Y           | Y        | bgogo             |       |
 | Bibox             | Y       | Y [x]      | Y       |         | Y           | Y        | bibox             |       |
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
 | BigONE            | Y       | Y [x]      | Y       |         | Y           | Y        | bigone            |       |
 | Biki              | Y       | Y [x]      |         |         | Y           | Y        | biki              |       |
 | Bilaxy            | Y       | Y [x]      | Y       |         | Y           | Y        | bilaxy            |       |
-| Binance           | Y       | Y [x]      | Y [x]   |         | Y           | Y        | binance           |       |
+| Binance           | Y       | Y [x]      | Y [limit: 500]   |         | Y           | Y        | binance           |       |
 | Binance DEX       | Y       |            |         |         | Y           |          | binance_dex       |       |
 | Binance Jersey    | Y       | Y [x]      |         |         | Y           | Y        | binance_jersey    |       |
 | Binance Uganda    | Y       | Y [x]      |         |         | Y           | Y        | binance_uganda    |       |
@@ -227,8 +227,8 @@ Or install it yourself as:
 | Extstock          | Y       | Y          | Y       |         | Y           | Y        | extstock          |       |
 | Exx               | Y       | Y [x]      | Y       |         | Y           | Y        | exx               |       |
 | F1cx              | Y       | Y          | Y       |         | Y           | Y        | f1cx              |       |
-| FatBTC            | Y       | Y [x]      | Y       |         | Y           |          | fatbtc            |       |
-| Fcoin             | Y       | Y [x]      | Y       |         | Y           | Y        | fcoin             |       |
+| FatBTC            | Y       | Y [x]      | Y [limit: 50]      |         | Y           |          | fatbtc            |       |
+| Fcoin             | Y       | Y [x]      | Y [limit: 500]      |         | Y           | Y        | fcoin             |       |
 | Fex               | Y       | N          | N       |         | Y           |          | fex               |       |
 | Financex          | Y       | N          | N       |         | Y           | Y        | financex          |       |
 | Fisco             | Y       | Y          | Y       |         | Y           | Y        | fisco             |       |
@@ -321,7 +321,7 @@ Or install it yourself as:
 | OKEx Perpetual Swaps | Y (no volume) | Y (can't map) |         |         | Y           | Y        | okex_swap         |futures|
 | Omgfin            | Y       | Y [x]      |         |         | Y           | Y        | omgfin            |       |
 | OmniTrade         | Y       | Y          | Y       | Y       | Y           |          | omnitrade         |       |
-| Ooobtc            | Y       | Y [x]      | Y       |         | Y           | Y        | ooobtc            |       |
+| Ooobtc            | Y       | Y [x]      | Y [limit: 20]      |         | Y           | Y        | ooobtc            |       |
 | Openledger        | Y       | Y          | Y       |         | Y           | Y        | openledger        |       |
 | OrderBook         | Y       | Y          | Y       |         | Y           | Y        | orderbook         |       |
 | Ore Bz            | Y       | Y          | Y       |         | Y           | Y        | ore_bz            |       |
