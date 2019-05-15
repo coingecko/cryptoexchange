@@ -53,4 +53,19 @@ RSpec.describe 'Huobi integration specs' do
     expect(order_book.timestamp).to be_nil
     expect(order_book.payload).to_not be nil
   end
+
+  it 'fetch trades' do
+    trades = client.trades(pair)
+    trade = trades.first
+
+    expect(trade.base).to eq 'ETH'
+    expect(trade.target).to eq 'BTC'
+    expect(trade.market).to eq 'huobi'
+
+    expect(trade.amount).to_not be_nil
+    expect(trade.price).to_not be_nil
+    expect(2000..Date.today.year).to include(Time.at(trade.timestamp).year)
+    expect(trade.trade_id).to_not be_nil
+    expect(trade.type).to eq("buy").or eq("sell")
+  end
 end

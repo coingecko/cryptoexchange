@@ -254,8 +254,8 @@ Or install it yourself as:
 | Hotbit            | Y       | Y [x]      | Y [limit: 1000]      |         | Y           | Y        | hotbit            |       |
 | HPX               | Y       | Y [x]      | Y       |         | Y           |          | hpx               |       |
 | Hubi              | Y       |            |         |         | Y           |          | hubi              |       |
-| Huobi             | Y       | Y [x]      |         |         | Y           | Y        | huobi             |       |
-| Huobi US          | Y       | Y [x]      |         |         | Y           | Y        | huobi_us          |       |
+| Huobi             | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi             |       |
+| Huobi US          | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi_us          |       |
 | Ice3x             | Y       | Y          | Y       |         | Y           |          | ice3x             |       |
 | Idax              | Y       | Y [x]      | N       |         | Y           | Y        | idax              |       |
 | Idcm              | Y       |            |         |         | Y           | Y        | idcm              |       |
@@ -317,7 +317,7 @@ Or install it yourself as:
 | Octaex            | Y       | Y          | Y       |         | Y           |          | octaex            |       |
 | OEX               | Y       | Y [x]      |         |         | Y           |          | oex               |       |
 | OKCoin            | Y       |            |         |         | User-Defined|          | okcoin            |       |
-| OKEx              | Y       | Y [x]      | Y       |         | Y           | Y        | okex              |       |
+| OKEx              | Y       | Y [x]      | Y [limit: 60]      |         | Y           | Y        | okex              |       |
 | OKEx Perpetual Swaps | Y (no volume) | Y (can't map) |         |         | Y           | Y        | okex_swap         |futures|
 | Omgfin            | Y       | Y [x]      |         |         | Y           | Y        | omgfin            |       |
 | OmniTrade         | Y       | Y          | Y       | Y       | Y           |          | omnitrade         |       |
