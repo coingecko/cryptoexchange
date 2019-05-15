@@ -102,7 +102,7 @@ Or install it yourself as:
 | Bitstamp          | Y       | Y [x]      | Y       |         | User-Defined|          | bitstamp          |       |
 | Bitsten           | Y       | Y [x]      | N       |         | Y           | Y        | bitsten           |       |
 | Bitstorage        | Y       | Y [x]      | Y       |         | Y           | Y        | bitstorage        |       |
-| Bittrex           | Y       | Y [x]      |         |         | Y           | Y        | bittrex           |       |
+| Bittrex           | Y       | Y [x]      | Y [limit: 100]      |         | Y           | Y        | bittrex           |       |
 | Bkex              | Y       | N          | N       |         | Y           | Y        | bkex              |       |
 | Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |       |
 | Blockonix         | Y       | Y          | Y       |         | Y           |          | blockonix         |       |
@@ -251,7 +251,7 @@ Or install it yourself as:
 | Hb.top            | Y       | Y [x]      | N       |         | Y           | N        | hb_top            |       |
 | Hikenex           | Y       | N          | N       |         | Y           | N        | hikenex           |       |
 | HitBTC            | Y       | Y [x]      | Y       |         | Y           | Y        | hitbtc            |       |
-| Hotbit            | Y       | Y [x]      | N       |         | Y           | Y        | hotbit            |       |
+| Hotbit            | Y       | Y [x]      | Y [limit: 1000]      |         | Y           | Y        | hotbit            |       |
 | HPX               | Y       | Y [x]      | Y       |         | Y           |          | hpx               |       |
 | Hubi              | Y       |            |         |         | Y           |          | hubi              |       |
 | Huobi             | Y       | Y [x]      |         |         | Y           | Y        | huobi             |       |
@@ -278,7 +278,7 @@ Or install it yourself as:
 | Koinok            | Y       |            |         |         | Y           | Y        | koinok            |       |
 | Koinx             | Y       | Y [x]      |         |         | Y           | Y        | koinx             |       |
 | Korbit            | Y       | Y [x]      |         |         | User-Defined| Y        | korbit            |       |
-| Kraken            | Y       | Y [x]      |         |         | Y           | Y        | kraken            |       |
+| Kraken            | Y       | Y [x]      | Y [limit: 1000]      |         | Y           | Y        | kraken            |       |
 | Kryptono          | Y       | Y [x]      | Y       |         | User-Defined| Y        | kryptono          |       |
 | Kucoin            | Y       | Y [x]      | N       |         | Y           | Y        | kucoin            |       |
 | Kuna              | Y       | Y [x]      | Y       |         | User-Defined| Y        | kuna              |       |
@@ -330,7 +330,7 @@ Or install it yourself as:
 | Paribu            | Y       |            |         |         | Y           |          | paribu            |       |
 | Paro Exchange     | Y       |            |         |         | Y           |          | paroexchange      |       |
 | Paymium           | Y       | Y          | Y       |         | User-Defined|          | paymium           |       |
-| Poloniex          | Y       | Y [x]      |         |         | Y           | Y        | poloniex          |       |
+| Poloniex          | Y       | Y [x]      | Y [limit: 200]       |         | Y           | Y        | poloniex          |       |
 | Purcow            | Y       |            |         |         | Y           | Y        | purcow            |       |
 | QBTC              | Y       | Y          | Y       |         | Y           |          | qbtc              |       |
 | Qryptos           | Y       |            |         |         | Y           |          | qryptos           |       |
