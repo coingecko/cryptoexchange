@@ -334,6 +334,7 @@ Or install it yourself as:
 | Purcow            | Y       |            |         |         | Y           | Y        | purcow            |       |
 | QBTC              | Y       | Y          | Y       |         | Y           |          | qbtc              |       |
 | Qryptos           | Y       |            |         |         | Y           |          | qryptos           |       |
+| Qtrade            | Y       | Y [x]      |         |         | Y           |          | qtrade            |       |
 | QuadrigaCX        | Y       |            |         |         | User-Defined|          | quadrigacx        |       |
 | Liquid (Quoine)   | Y       | Y [x]      |         |         | Y           | Y        | quoine            |       |
 | RadarRelay        | Y       |            |         |         | Y           | Y        | radar_relay       |       |
@@ -378,7 +379,7 @@ Or install it yourself as:
 | TrustDex **       | Y       |            |         |         | Y           |          | trust_dex         |       |
 | TuxExchange       | Y       |            |         |         | Y           |          | tux_exchange      |       |
 | TRXMarket         | Y       |            |         |         | Y           |          | trx_market        |       |
-| Txbit             | Y       |            |         |         | Y           | Y        | txbit             |       |
+| Txbit             | Y       | Y [x]      |         |         | Y           | Y        | txbit             |       |
 | UEX               | Y       |            |         |         | Y           |          | uex               |       |
 | Unidax            | Y       | N          | N       |         | Y           | N        | unidax            |       |
 | Uniswap           | Y       | N          | N       |         | Y           | N        | uniswap           |       |

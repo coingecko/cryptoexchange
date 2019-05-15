@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Qtrade
+  module Txbit
     module Services
       class OrderBook < Cryptoexchange::Services::Market
         class << self
@@ -14,9 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          base   = market_pair.base
-          target = market_pair.target
-          "#{Cryptoexchange::Exchanges::Qtrade::Market::API_URL}/orderbook/#{base}_#{target}"
+          "#{Cryptoexchange::Exchanges::Txbit::Market::API_URL}/public/getorderbook?market=#{market_pair.base}/#{market_pair.target}&type=both"
         end
 
         def adapt(output, market_pair)
@@ -24,20 +22,19 @@ module Cryptoexchange::Exchanges
 
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
-          order_book.market    = Qtrade::Market::NAME
-          order_book.asks      = adapt_orders output['data']['sell']
-          order_book.bids      = adapt_orders output['data']['buy']
+          order_book.market    = Txbit::Market::NAME
+          order_book.asks      = adapt_orders(output['result']['sell'])
+          order_book.bids      = adapt_orders(output['result']['buy'])
           order_book.timestamp = nil
           order_book.payload   = output
           order_book
         end
 
         def adapt_orders(orders)
-          orders.collect do |order|
-            price, amount = order
+          orders.collect do |order_entry|
             Cryptoexchange::Models::Order.new(
-              price:     price,
-              amount:    amount
+              price: NumericHelper.to_d(order_entry["Rate"]),
+              amount: NumericHelper.to_d(order_entry["Quantity"])
             )
           end
         end
