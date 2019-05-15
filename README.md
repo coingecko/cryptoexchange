@@ -141,7 +141,7 @@ Or install it yourself as:
 | Cobinhood         | Y       | Y [x]      |         |         | Y           | Y        | cobinhood         |       |
 | CODEX             | Y       | Y          | Y       |         | Y           |          | codex             |       |
 | Coin2001          | Y       | Y          | Y       |         | Y           |          | coin2001          |       |
-| Coinall           | Y       | Y [x]      | Y       |         | Y           |          | coinall           |       |
+| Coinall           | Y       | Y [x]      | Y [limit: 60]      |         | Y           |          | coinall           |       |
 | Coin Asset        | Y       | Y          | Y       |         | Y           |          | coinasset         |       |
 | Coinchangex       | Y       | N          | N       |         | Y           | Y        | coinchangex       |       |
 | CoinEgg           | Y       | Y [x]      | Y       |         | User-Defined| Y        | coin_egg          |       |

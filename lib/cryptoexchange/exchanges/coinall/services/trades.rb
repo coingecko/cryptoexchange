@@ -8,7 +8,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Coinall::Market::API_URL}/spot/v3/products/#{market_pair.base}-#{market_pair.target}/trades"
+          "#{Cryptoexchange::Exchanges::Coinall::Market::API_URL}/spot/v3/products/#{market_pair.base}-#{market_pair.target}/trades?limit=100"
         end
 
         def adapt(output, market_pair)
