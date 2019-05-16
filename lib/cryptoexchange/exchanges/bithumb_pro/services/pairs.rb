@@ -1,8 +1,8 @@
 module Cryptoexchange::Exchanges
-  module BithumbPro
+  module BithumbGlobal
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::BithumbPro::Market::API_URL}/spot/ticker?symbol=ALL"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::BithumbGlobal::Market::API_URL}/spot/ticker?symbol=ALL"
 
         def fetch
           output = super
@@ -15,7 +15,7 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new(
                 base: base,
                 target: target,
-                market: BithumbPro::Market::NAME
+                market: BithumbGlobal::Market::NAME
               )
           end.compact
         end
