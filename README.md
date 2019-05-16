@@ -290,6 +290,7 @@ Or install it yourself as:
 | Liqui             | Y       |            |         |         | Y           |          | liqui             |       |
 | LiteBit.eu        | Y       |            |         |         | Y           |          | litebiteu         |       |
 | Livecoin          | Y       |            |         |         | Y           |          | livecoin          |       |
+| LocalBitcoins     | Y       | N          | Y [limit: 500]|   | Y           |          | localbitcoins     |  P2P  |
 | LocalTrade        | Y       |            |         |         | Y           | Y        | localtrade        |       |
 | Luno              | Y       |            |         |         | Y           | Y        | luno              |       |
 | Lykke             | Y       | Y          | N       |         | Y           |          | lykke             |       |
