@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-RSpec.describe 'BithumbPro integration specs' do
+RSpec.describe 'BithumbGlobal integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:market) { 'bithumb_pro' }
+  let(:market) { 'bithumb_global' }
   let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usdt', market: market) }
 
   it 'fetch pairs' do

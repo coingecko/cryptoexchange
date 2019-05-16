@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module BithumbPro
+  module BithumbGlobal
     module Services
       class Trades < Cryptoexchange::Services::Market
         def fetch(market_pair)
@@ -8,7 +8,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::BithumbPro::Market::API_URL}/spot/trades?symbol=#{market_pair.base}-#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::BithumbGlobal::Market::API_URL}/spot/trades?symbol=#{market_pair.base}-#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
@@ -21,7 +21,7 @@ module Cryptoexchange::Exchanges
             tr.amount    = trade['v']
             tr.timestamp = trade['t'].to_i if !trade['t'].nil?
             tr.payload   = trade
-            tr.market    = BithumbPro::Market::NAME
+            tr.market    = BithumbGlobal::Market::NAME
             tr
           end
         end

@@ -1,7 +1,7 @@
 module Cryptoexchange::Exchanges
-  module BithumbPro
+  module BithumbGlobal
     class Market < Cryptoexchange::Models::Market
-      NAME = 'bithumb_pro'
+      NAME = 'bithumb_global'
       API_URL = 'https://global-openapi.bithumb.pro/openapi/v1'
 
       def self.trade_page_url(args={})

@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://global-openapi.bithumb.pro/openapi/v1/spot/ticker?symbol=ALL
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - global-openapi.bithumb.pro
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 16 May 2019 09:15:58 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc972a47e4af0de8689af7534ab3b1bae1557998158; expires=Fri, 15-May-20
+        09:15:58 GMT; path=/; domain=.bithumb.pro; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      X-Application-Context:
+      - cex_transaction:prod:8050
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d7c400a6f16c36d-SIN
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"p":"0.0236","ver":"1949091","c":"8084.0","s":"BTC-USDT","v":"136.6876248","h":"8356.3","l":"5515.3"},{"p":"-0.0634","ver":"2577843","c":"0.37746","s":"LTC-ETH","v":"14538.0738","h":"0.43298","l":"0.37738"},{"p":"0.0689","ver":"1985370","c":"0.01242","s":"LTC-BTC","v":"794.1558","h":"0.01297","l":"0.01148"},{"p":"0.1534","ver":"2273568","c":"264.08","s":"ETH-USDT","v":"12013.741361","h":"273.98","l":"227.54"},{"p":"0.1269","ver":"2143220","c":"0.032574","s":"ETH-BTC","v":"1158.578206","h":"0.033275","l":"0.028750"},{"p":"0.0745","ver":"2510887","c":"99.438","s":"LTC-USDT","v":"10368.19667","h":"107.261","l":"91.008"},{"p":"-0.0751","ver":"2132150","c":"1.5901","s":"BCH-ETH","v":"642.678272","h":"1.7810","l":"1.5387"},{"p":"0.0984","ver":"2618181","c":"418.83","s":"BCH-USDT","v":"1530.941492","h":"443.05","l":"369.68"},{"p":"0.0791","ver":"2195623","c":"0.051981","s":"BCH-BTC","v":"639.282738","h":"0.054385","l":"0.046513"},{"p":"-0.0515","ver":"137460","c":"0.59943","s":"DASH-ETH","v":"2095.450417","h":"0.64218","l":"0.58796"},{"p":"0.0709","ver":"133379","c":"0.019714","s":"DASH-BTC","v":"306.593462","h":"0.020314","l":"0.017790"},{"p":"0.0891","ver":"131525","c":"158.08","s":"DASH-USDT","v":"3081.545194","h":"164.44","l":"141.73"},{"p":"0.0570","ver":"2737577","c":"0.050801","s":"RNT-USDT","v":"34763437.96","h":"0.060483","l":"0.046000"},{"p":"0.4110","ver":"10609","c":"0.089632","s":"MIX-USDT","v":"30372353.95","h":"0.100316","l":"0.061479"},{"p":"0.0819","ver":"3984","c":"0.028817","s":"BXA-USDT","v":"36592981.17","h":"0.130398","l":"0.026571"},{"p":"0.1807","ver":"2","c":"0.00000856","s":"IRIS-BTC","v":"1332.00","h":"0.00000870","l":"0.00000725"},{"p":"0.1718","ver":"38","c":"0.00026131","s":"IRIS-ETH","v":"497379.34","h":"0.00026875","l":"0.00022301"},{"p":"0.1883","ver":"6749","c":"0.019978","s":"BZNT-USDT","v":"215061.20","h":"0.020585","l":"0.016500"},{"p":"0.1954","ver":"84","c":"0.069328","s":"IRIS-USDT","v":"650801.53","h":"0.070000","l":"0.058000"}],"code":"0","msg":"success","timestamp":1557998158498}'
+    http_version: 
+  recorded_at: Thu, 16 May 2019 09:15:58 GMT
+recorded_with: VCR 4.0.0

@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module BithumbPro
+  module BithumbGlobal
     module Services
       class OrderBook < Cryptoexchange::Services::Market
         class << self
@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::BithumbPro::Market::API_URL}/spot/orderBook?symbol=#{market_pair.base}-#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::BithumbGlobal::Market::API_URL}/spot/orderBook?symbol=#{market_pair.base}-#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
@@ -22,7 +22,7 @@ module Cryptoexchange::Exchanges
 
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
-          order_book.market    = BithumbPro::Market::NAME
+          order_book.market    = BithumbGlobal::Market::NAME
           order_book.asks      = adapt_orders(output['data']['s'])
           order_book.bids      = adapt_orders(output['data']['b'])
           order_book.timestamp = nil
