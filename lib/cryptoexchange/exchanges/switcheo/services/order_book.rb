@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Cpdax
+  module Switcheo
     module Services
       class OrderBook < Cryptoexchange::Services::Market
         class << self
@@ -14,9 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          base = market_pair.base
-          target = market_pair.target
-          "#{Cryptoexchange::Exchanges::Cpdax::Market::API_URL}/orderbook/#{base}-#{target}"
+          "#{Cryptoexchange::Exchanges::Switcheo::Market::API_URL}/v2/offers/book?pair=#{market_pair.base}_#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
@@ -24,7 +22,7 @@ module Cryptoexchange::Exchanges
 
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
-          order_book.market    = Cpdax::Market::NAME
+          order_book.market    = Switcheo::Market::NAME
           order_book.asks      = adapt_orders(output['asks'])
           order_book.bids      = adapt_orders(output['bids'])
           order_book.timestamp = nil
@@ -35,8 +33,8 @@ module Cryptoexchange::Exchanges
         def adapt_orders(orders)
           orders.collect do |order_entry|
             Cryptoexchange::Models::Order.new(
-              price: order_entry['price'],
-              amount: order_entry['size']
+              price: NumericHelper.to_d(order_entry["price"]),
+              amount: NumericHelper.to_d(order_entry["quantity"])
             )
           end
         end
