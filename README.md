@@ -184,7 +184,7 @@ Or install it yourself as:
 | Coinzest          | Y       | Y [x]      |         |         | Y           |          | coinzest          |       |
 | Coinzo            | Y       | Y          | Y       |         | Y           | Y        | coinzo            |       |
 | COSS              | Y       |            |         |         | Y           | Y        | coss              |       |
-| Cpdax             | Y       | Y          | Y       |         | Y           |          | cpdax             |       |
+| Cpdax             | Y       | Y [x]      | Y       |         | Y           |          | cpdax             |       |
 | CredoEx           | Y       |            |         |         | Y           |          | credoex           |       |
 | Crex24            | Y       | Y [x]      | Y       |         | Y           | Y        | crex24            |       |
 | CRXZone           | Y       | Y [x]      | Y       |         | Y           | Y        | crxzone           |       |
@@ -353,7 +353,7 @@ Or install it yourself as:
 | SouthXchange      | Y       | Y [x]      | Y       |         | Y           | Y        | south_xchange     |       |
 | Stocks Exchange   | Y       |            |         |         | Y           | Y        | stocks_exchange   |       |
 | Swiftex           | Y       | Y          |         |         | Y           | Y        | swiftex           |       |
-| Switcheo          | Y       | N          | N       |         | Y           | Y        | switcheo          |       |
+| Switcheo          | Y       | Y [x]      | N       |         | Y           | Y        | switcheo          |       |
 | Syex              | Y       | N          | N       |         | Y           | Y        | syex              |       |
 | SZZC              | Y       |            |         |         | Y           |          | szzc              |       |
 | Tdax              | Y       | N          | N       |         | Y           | Y        | tdax              |       |

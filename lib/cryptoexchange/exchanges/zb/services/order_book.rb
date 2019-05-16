@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def orderbook_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Zb::Market::API_URL}/depth?market=#{market_pair.base.downcase}_#{market_pair.target.downcase}"
+          "#{Cryptoexchange::Exchanges::Zb::Market::API_URL}/depth?market=#{market_pair.base.downcase}_#{market_pair.target.downcase}&size=50"
         end
 
         def adapt(output, market_pair)
