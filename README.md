@@ -79,6 +79,7 @@ Or install it yourself as:
 | Bithash           | Y       | Y [x]      | Y       |         | Y           | Y        | bithash           |       |
 | Bitholic          | Y       | Y [x]      | Y       |         | Y           |          | bitholic          |       |
 | Bithumb           | Y       | Y [x]      |         |         | Y           |          | bithumb           |       |
+| Bithumb Pro       | Y       | Y [x]      | Y       |         | Y           | Y        | bithumb_pro       |       |
 | Bitibu            | Y       | Y [x]      | Y       |         | Y           | Y        | bitibu            |       |
 | Bitinfi           | Y       | Y [x]      |         |         | Y           |          | bitinfi           |       |
 | Bitinka           | Y       | Y [x]      |         |         | Y           |          | bitinka           |       |
