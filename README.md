@@ -55,6 +55,7 @@ Or install it yourself as:
 | Binance Jersey    | Y       | Y [x]      |         |         | Y           | Y        | binance_jersey    |       |
 | Binance Uganda    | Y       | Y [x]      |         |         | Y           | Y        | binance_uganda    |       |
 | Bione             | Y       | Y [x]      |         |         | Y           |          | bione             |       |
+| Birake            | Y       |            |         |         | Y           | Y        | birake            |       |
 | Bishang           | Y       |            |         |         | Y           |          | bishang           |       |
 | Bisq              | Y       |            | Y       |         | Y           |          | bisq              |       |
 | Bit2C             | Y       | Y [x]      | Y       |         | User-Defined| Y        | bit2c             |       |
