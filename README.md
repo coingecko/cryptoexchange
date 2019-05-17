@@ -391,6 +391,7 @@ Or install it yourself as:
 | Vertpig           | Y       | Y          | N       |         | Y           | Y        | vertpig           |       |
 | Viabtc            | Y       |            |         |         | User-Defined|          | viabtc            |       |
 | Vindax            | Y       |            |         |         | Y           | Y        | vindax            |       |
+| Vinex             | Y       | Y [x]      |         |         | Y           | Y        | vinex             |       |
 | Waves             | Y       | N          | Y       |         | Y           |          | waves             |       |
 | WazirX            | Y       |            |         |         | Y           |          | wazirx            |       |
 | Wcx               | Y       | Y          | Y       |         | Y           |          | wcx               |       |
