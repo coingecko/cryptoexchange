@@ -338,7 +338,7 @@ Or install it yourself as:
 | Qtrade            | Y       | Y [x]      |         |         | Y           |          | qtrade            |       |
 | QuadrigaCX        | Y       |            |         |         | User-Defined|          | quadrigacx        |       |
 | Liquid (Quoine)   | Y       | Y [x]      |         |         | Y           | Y        | quoine            |       |
-| RadarRelay        | Y       |            |         |         | Y           | Y        | radar_relay       |       |
+| RadarRelay        | Y       | Y [x]      |[No Price]|         | Y           | Y        | radar_relay       |       |
 | Raisex            | Y       |            |         |         | Y           |          | raisex            |       |
 | Rfinex            | Y       | Y          | Y       |         | Y           |          | rfinex            |       |
 | RightBTC          | Y       | Y [x]      | Y       |         | Y           |          | rightbtc          |       |
