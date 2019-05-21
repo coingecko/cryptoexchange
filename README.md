@@ -398,7 +398,7 @@ Or install it yourself as:
 | Wcx               | Y       | Y          | Y       |         | Y           |          | wcx               |       |
 | Wex               | Y       | Y          | Y       |         | Y           | Y        | wex               |       |
 | Worldcore         | Y       | Y          | Y       |         | Y           | Y        | worldcore         |       |
-| Xt                | Y       | Y          | Y       |         | Y           | Y        | xt                |       |
+| Xt                | Y       | Y [x]      | Y       |         | Y           | Y        | xt                |       |
 | Yobit             | Y       |            |         |         | Y           | Y        | yobit             |       |
 | Yuanbao           | Y       |            |         |         | User-Defined|          | yuanbao           |       |
 | Yunbi             | Y       |            |         |         | Y           |          | yunbi             |       |
