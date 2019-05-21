@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.floatsv.com/api/spot/v3/instruments/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.floatsv.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 21 May 2019 06:32:01 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d1d2d43e8f7aa4a2b66b0eed0546928421558420321; expires=Wed, 20-May-20
+        06:32:01 GMT; path=/; domain=.floatsv.com; HttpOnly
+      - locale=en_US; Max-Age=604800; Expires=Tue, 28-May-2019 06:32:01 GMT; Path=/
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '12'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4da482c22de0d1db-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"best_ask":"0.007988","best_bid":"0.007965","instrument_id":"BSV-BTC","product_id":"BSV-BTC","last":"0.007975","ask":"0.007988","bid":"0.007965","open_24h":"0.007897","high_24h":"0.008109","low_24h":"0.007752","base_volume_24h":"189.8693","timestamp":"2019-05-21T06:31:58.178Z","quote_volume_24h":"1.5088458734"},{"best_ask":"62.85","best_bid":"62.82","instrument_id":"BSV-USDT","product_id":"BSV-USDT","last":"62.85","ask":"62.85","bid":"62.82","open_24h":"62.55","high_24h":"63.6","low_24h":"60.3","base_volume_24h":"2.1782","timestamp":"2019-05-21T06:31:27.474Z","quote_volume_24h":"135.557573"},{"best_ask":"5159.1484","best_bid":"100000000","instrument_id":"BTC-USDC","product_id":"BTC-USDC","last":"5166.3387","ask":"5159.1484","bid":"100000000","open_24h":"5166.3387","high_24h":"5166.3387","low_24h":"5166.3387","base_volume_24h":"0","timestamp":"2019-05-21T04:36:19.838Z","quote_volume_24h":"0"},{"best_ask":"406","best_bid":"405.72","instrument_id":"BCH-USDT","product_id":"BCH-USDT","last":"405.71","ask":"406","bid":"405.72","open_24h":"404.74","high_24h":"420","low_24h":"378.68","base_volume_24h":"0.29995","timestamp":"2019-05-21T06:31:56.039Z","quote_volume_24h":"121.47975"},{"best_ask":"0.9949","best_bid":"0.9946","instrument_id":"USDC-USDT","product_id":"USDC-USDT","last":"0.9946","ask":"0.9949","bid":"0.9946","open_24h":"0.9959","high_24h":"0.9995","low_24h":"0.9915","base_volume_24h":"0","timestamp":"2019-05-21T06:25:16.063Z","quote_volume_24h":"0"},{"best_ask":"0.9945","best_bid":"0.9941","instrument_id":"TUSD-USDT","product_id":"TUSD-USDT","last":"0.9946","ask":"0.9945","bid":"0.9941","open_24h":"0.9962","high_24h":"1.01","low_24h":"0.9911","base_volume_24h":"0","timestamp":"2019-05-21T06:28:38.701Z","quote_volume_24h":"0"},{"best_ask":"0.9944","best_bid":"0.994","instrument_id":"PAX-USDT","product_id":"PAX-USDT","last":"0.9943","ask":"0.9944","bid":"0.994","open_24h":"0.9962","high_24h":"1.0002","low_24h":"0.992","base_volume_24h":"0","timestamp":"2019-05-21T06:31:53.288Z","quote_volume_24h":"0"},{"best_ask":"0.9951","best_bid":"0.9947","instrument_id":"GUSD-USDT","product_id":"GUSD-USDT","last":"0.9947","ask":"0.9951","bid":"0.9947","open_24h":"0.9937","high_24h":"1.0035","low_24h":"0.987","base_volume_24h":"0","timestamp":"2019-05-21T06:28:11.252Z","quote_volume_24h":"0"},{"best_ask":"7884","best_bid":"7881.9","instrument_id":"BTC-USDT","product_id":"BTC-USDT","last":"7880.9","ask":"7884","bid":"7881.9","open_24h":"7929.2","high_24h":"8080.7","low_24h":"7560","base_volume_24h":"0.20268991","timestamp":"2019-05-21T06:31:59.000Z","quote_volume_24h":"1566.7969869345"},{"best_ask":"6","best_bid":"2.9077","instrument_id":"BCH-BSV","product_id":"BCH-BSV","last":"2.9077","ask":"6","bid":"2.9077","open_24h":"2.9077","high_24h":"2.9077","low_24h":"2.9077","base_volume_24h":"0.069","timestamp":"2019-05-21T04:36:22.827Z","quote_volume_24h":"0.2006313"},{"best_ask":"297.15","best_bid":"295.58","instrument_id":"BCH-USDC","product_id":"BCH-USDC","last":"295.58","ask":"297.15","bid":"295.58","open_24h":"295.58","high_24h":"295.58","low_24h":"295.58","base_volume_24h":"0.1802","timestamp":"2019-05-21T04:36:22.840Z","quote_volume_24h":"53.263516"},{"best_ask":"62.74","best_bid":"55","instrument_id":"BSV-USDC","product_id":"BSV-USDC","last":"62.74","ask":"62.74","bid":"55","open_24h":"62.74","high_24h":"62.74","low_24h":"62.74","base_volume_24h":"3.6042","timestamp":"2019-05-21T04:36:22.839Z","quote_volume_24h":"223.958164"},{"best_ask":"0","best_bid":"0","instrument_id":"BTC-TUSD","product_id":"BTC-TUSD","last":"5822.5","ask":"0","bid":"0","open_24h":"5822.5","high_24h":"5822.5","low_24h":"5822.5","base_volume_24h":"0","timestamp":"2019-05-21T04:36:22.861Z","quote_volume_24h":"0"},{"best_ask":"59.95","best_bid":"0","instrument_id":"BSV-TUSD","product_id":"BSV-TUSD","last":"52.38","ask":"59.95","bid":"0","open_24h":"52.38","high_24h":"52.38","low_24h":"52.38","base_volume_24h":"0","timestamp":"2019-05-21T04:36:22.861Z","quote_volume_24h":"0"}]'
+    http_version: 
+  recorded_at: Tue, 21 May 2019 06:32:01 GMT
+recorded_with: VCR 4.0.0
