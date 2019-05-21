@@ -233,6 +233,7 @@ Or install it yourself as:
 | Fex               | Y       | N          | N       |         | Y           |          | fex               |       |
 | Financex          | Y       | N          | N       |         | Y           | Y        | financex          |       |
 | Fisco             | Y       | Y          | Y       |         | Y           | Y        | fisco             |       |
+| Floatsv           | Y       | Y [x]      |         |         | Y           | Y        | floatsv           |       |
 | Forkdelta         | Y       | N          | N       |         | Y           | Y        | forkdelta         |       |
 | Freiexchange      | Y       | Y          |         |         | User-Defined| Y        | freiexchange      |       |
 | FinexBox          | Y       | Y [x]      |         |         | Y           | Y        | finexbox          |       |
