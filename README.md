@@ -389,6 +389,7 @@ Or install it yourself as:
 | Vaultmex          | Y       | Y          | Y       |         | Y           | Y        | vaultmex          |       |
 | Vbitex            | Y       | N          | N       |         | Y           | Y        | vbitex            |       |
 | Vebitcoin         | Y       | N          | N       |         | Y           | N        | vebitcoin         |       |
+| Velic             | Y       |            |         |         | Y           | N        | velic             |       |
 | Vertpig           | Y       | Y          | N       |         | Y           | Y        | vertpig           |       |
 | Viabtc            | Y       |            |         |         | User-Defined|          | viabtc            |       |
 | Vindax            | Y       |            |         |         | Y           | Y        | vindax            |       |
