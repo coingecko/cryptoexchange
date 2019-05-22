@@ -60,6 +60,7 @@ Or install it yourself as:
 | Bit2C             | Y       | Y [x]      | Y       |         | User-Defined| Y        | bit2c             |       |
 | Bit-Z             | Y       |            |         |         | Y           |          | bit_z             |       |
 | Bitalong          | Y       | Y [x]      | Y       |         | Y           | Y        | bitalong          |       |
+| Bitasset          | Y       | Y [x]      | Y       |         | Y           | Y        | bitasset          |       |
 | Bitbank           | Y       | Y [x]      | Y       |         | User-Defined| Y        | bitbank           |       |
 | Bitbay            | Y       |            |         |         | User-Defined|          | bitbay            |       |
 | Bitbegin          | Y       | N          | N       |         | Y           | Y        | bitbegin          |       |
@@ -339,13 +340,14 @@ Or install it yourself as:
 | Qtrade            | Y       | Y [x]      |         |         | Y           |          | qtrade            |       |
 | QuadrigaCX        | Y       |            |         |         | User-Defined|          | quadrigacx        |       |
 | Liquid (Quoine)   | Y       | Y [x]      |         |         | Y           | Y        | quoine            |       |
-| RadarRelay        | Y       | Y [x]      |[No Price]|         | Y           | Y        | radar_relay       |       |
+| RadarRelay        | Y       | Y [x]      |[No Price]|         | Y           | Y        | radar_relay      |       |
 | Raisex            | Y       |            |         |         | Y           |          | raisex            |       |
 | Rfinex            | Y       | Y          | Y       |         | Y           |          | rfinex            |       |
 | RightBTC          | Y       | Y [x]      | Y       |         | Y           |          | rightbtc          |       |
 | SafeTrade         | Y       | N          | N       |         | Y           |          | safe_trade        |       |
 | SaturnNetwork     | Y       |            |         |         | Y           | Y        | saturn_network    |       |
 | Secondbtc         | Y       | N          | N       |         | Y           | Y        | secondbtc         |       |
+| Shortex           | Y       | Y [x]      | N       |         | Y           | Y        | shortex           |       |
 | Sigen             | Y       |            |         |         | Y           | Y        | sigen             |       |
 | Simex             | Y       | N          | N       |         | Y           | Y        | simex             |       |
 | Singularx         | Y       | N          | N       |         | Y           |          | singularx         |       |

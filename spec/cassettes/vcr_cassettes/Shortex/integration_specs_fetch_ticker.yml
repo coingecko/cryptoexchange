@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shortex.net/api/v2/tickers/ethbtc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.shortex.net
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Encoding:
+      - gzip
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Length:
+      - '256'
+      Content-Type:
+      - application/json
+      Etag:
+      - W/"75fca6b1c353f901db2ca752d951b51b"
+      Host:
+      - api.shortex.net
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Version:
+      - HTTP/1.1
+      X-Forwarded-For:
+      - 1.32.17.220
+      X-Forwarded-Host:
+      - api.shortex.net
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Forwarded-Server:
+      - 4e04ae4ad714
+      X-Real-Ip:
+      - 1.32.17.220
+      X-Request-Id:
+      - 5d675cd0-5937-4133-9480-bbc6f22af630
+      X-Runtime:
+      - '0.191406'
+      Date:
+      - Wed, 22 May 2019 16:16:51 GMT
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1558541811,"ticker":{"buy":"0.03305466","sell":"0.03311","low":"0.03264523","high":"0.0336044","open":0.03274077,"last":"0.03305466","volume":"4254.45047372","avg_price":"0.03322147514810861298","price_change_percent":"+0.96%","vol":"4254.45047372"}}'
+    http_version: 
+  recorded_at: Wed, 22 May 2019 16:16:51 GMT
+recorded_with: VCR 4.0.0

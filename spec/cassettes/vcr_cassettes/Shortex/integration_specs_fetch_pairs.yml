@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shortex.net/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.shortex.net
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Encoding:
+      - gzip
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Length:
+      - '648'
+      Content-Type:
+      - application/json
+      Etag:
+      - W/"d1e08777e4b9126d99aaa7ea386efefa"
+      Host:
+      - api.shortex.net
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Version:
+      - HTTP/1.1
+      X-Forwarded-For:
+      - 1.32.17.220
+      X-Forwarded-Host:
+      - api.shortex.net
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Forwarded-Server:
+      - 4e04ae4ad714
+      X-Real-Ip:
+      - 1.32.17.220
+      X-Request-Id:
+      - 1a6a6016-f51a-4017-a320-6d0131f112d9
+      X-Runtime:
+      - '0.013940'
+      Date:
+      - Wed, 22 May 2019 16:16:49 GMT
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"ethbtc","name":"ETH/BTC"},{"id":"ethusdc","name":"ETH/USDC"},{"id":"btcusdc","name":"BTC/USDC"},{"id":"egteth","name":"EGT/ETH"},{"id":"youeth","name":"YOU/ETH"},{"id":"trueeth","name":"TRUE/ETH"},{"id":"swftceth","name":"SWFTC/ETH"},{"id":"omgeth","name":"OMG/ETH"},{"id":"mkreth","name":"MKR/ETH"},{"id":"linkusdc","name":"LINK/USDC"},{"id":"linketh","name":"LINK/ETH"},{"id":"gtoeth","name":"GTO/ETH"},{"id":"mkrbtc","name":"MKR/BTC"},{"id":"omgbtc","name":"OMG/BTC"},{"id":"linkbtc","name":"LINK/BTC"},{"id":"truebtc","name":"TRUE/BTC"},{"id":"youbtc","name":"YOU/BTC"},{"id":"gtobtc","name":"GTO/BTC"},{"id":"vraeth","name":"VRA/ETH"}]'
+    http_version: 
+  recorded_at: Wed, 22 May 2019 16:16:49 GMT
+recorded_with: VCR 4.0.0
