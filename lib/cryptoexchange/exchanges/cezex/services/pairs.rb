@@ -22,4 +22,3 @@ module Cryptoexchange::Exchanges
     end
   end
 end
-
