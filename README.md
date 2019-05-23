@@ -133,6 +133,7 @@ Or install it yourself as:
 | CCex              | Y       |            |         |         | Y           |          | ccex              |       |
 | Ccx               | Y       |            |         |         | Y           | Y        | ccx               |       |
 | Cex               | Y       | Y [x]      | Y       |         | Y           |          | cex               |       |
+| Cezex             | Y       | N          | N       |         | Y           | Y        | coinchangex       |       |
 | Cfinex            | Y       | Y          | Y       |         | Y           | Y        | cfinex            |       |
 | Chaince           | Y       |            |         |         | Y           | Y        | chaince           |       |
 | Chainrift         | Y       | Y [x]      | Y       |         | Y           |          | chainrift         |       |
