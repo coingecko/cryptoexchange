@@ -347,7 +347,7 @@ Or install it yourself as:
 | SafeTrade         | Y       | N          | N       |         | Y           |          | safe_trade        |       |
 | SaturnNetwork     | Y       |            |         |         | Y           | Y        | saturn_network    |       |
 | Secondbtc         | Y       | N          | N       |         | Y           | Y        | secondbtc         |       |
-| Shortex           | Y       | Y [x]      | N       |         | Y           | Y        | shortex           |       |
+| Shortex           | Y       | Y [x]      |         |         | Y           | Y        | shortex           |       |
 | Sigen             | Y       |            |         |         | Y           | Y        | sigen             |       |
 | Simex             | Y       | N          | N       |         | Y           | Y        | simex             |       |
 | Singularx         | Y       | N          | N       |         | Y           |          | singularx         |       |
