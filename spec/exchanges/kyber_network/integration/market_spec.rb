@@ -26,12 +26,13 @@ RSpec.describe 'KyberNetwork integration specs' do
     expect(ticker.target).to eq 'ETH'
     expect(ticker.market).to eq 'kyber_network'
     expect(ticker.last).to be_a Numeric
-    expect(ticker.bid).to be_nil
-    expect(ticker.ask).to be_nil
-    expect(ticker.high).to be_nil
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.ask).to be_a Numeric
+    expect(ticker.high).to be_a Numeric
+    expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
-    
+
     expect(ticker.payload).to_not be nil
   end
 end
