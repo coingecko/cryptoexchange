@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.deribit.com/api/v1/public/getorderbook?instrument=BTC-PERPETUAL
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.deribit.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.5
+      Date:
+      - Fri, 03 May 2019 08:55:40 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3538'
+      Connection:
+      - close
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"usOut":1556873740764838,"usIn":1556873740764632,"usDiff":206,"testnet":false,"success":true,"result":{"state":"open","settlementPrice":5586.78,"instrument":"BTC-PERPETUAL","bids":[{"quantity":11859,"amount":118590.0,"price":5674.0,"cm":11859,"cm_amount":118590.0},{"quantity":223,"amount":2230.0,"price":5673.25,"cm":12082,"cm_amount":120820.0},{"quantity":1650,"amount":16500.0,"price":5673.0,"cm":13732,"cm_amount":137320.0},{"quantity":49,"amount":490.0,"price":5672.25,"cm":13781,"cm_amount":137810.0},{"quantity":2608,"amount":26080.0,"price":5671.75,"cm":16389,"cm_amount":163890.0},{"quantity":2400,"amount":24000.0,"price":5671.5,"cm":18789,"cm_amount":187890.0},{"quantity":2400,"amount":24000.0,"price":5671.25,"cm":21189,"cm_amount":211890.0},{"quantity":2400,"amount":24000.0,"price":5671.0,"cm":23589,"cm_amount":235890.0},{"quantity":2402,"amount":24020.0,"price":5670.75,"cm":25991,"cm_amount":259910.0},{"quantity":202,"amount":2020.0,"price":5670.5,"cm":26193,"cm_amount":261930.0},{"quantity":2,"amount":20.0,"price":5670.25,"cm":26195,"cm_amount":261950.0},{"quantity":44,"amount":440.0,"price":5670.0,"cm":26239,"cm_amount":262390.0},{"quantity":5214,"amount":52140.0,"price":5669.75,"cm":31453,"cm_amount":314530.0},{"quantity":2,"amount":20.0,"price":5669.5,"cm":31455,"cm_amount":314550.0},{"quantity":44,"amount":440.0,"price":5669.25,"cm":31499,"cm_amount":314990.0},{"quantity":2,"amount":20.0,"price":5669.0,"cm":31501,"cm_amount":315010.0},{"quantity":2,"amount":20.0,"price":5668.75,"cm":31503,"cm_amount":315030.0},{"quantity":2572,"amount":25720.0,"price":5668.5,"cm":34075,"cm_amount":340750.0},{"quantity":2,"amount":20.0,"price":5668.25,"cm":34077,"cm_amount":340770.0},{"quantity":8503,"amount":85030.0,"price":5668.0,"cm":42580,"cm_amount":425800.0}],"asks":[{"quantity":4036,"amount":40360.0,"price":5674.75,"cm":4036,"cm_amount":40360.0},{"quantity":1,"amount":10.0,"price":5675.0,"cm":4037,"cm_amount":40370.0},{"quantity":1,"amount":10.0,"price":5675.25,"cm":4038,"cm_amount":40380.0},{"quantity":1,"amount":10.0,"price":5676.0,"cm":4039,"cm_amount":40390.0},{"quantity":1,"amount":10.0,"price":5676.75,"cm":4040,"cm_amount":40400.0},{"quantity":2635,"amount":26350.0,"price":5677.0,"cm":6675,"cm_amount":66750.0},{"quantity":4342,"amount":43420.0,"price":5677.25,"cm":11017,"cm_amount":110170.0},{"quantity":2117,"amount":21170.0,"price":5677.5,"cm":13134,"cm_amount":131340.0},{"quantity":7,"amount":70.0,"price":5677.75,"cm":13141,"cm_amount":131410.0},{"quantity":2,"amount":20.0,"price":5678.0,"cm":13143,"cm_amount":131430.0},{"quantity":106,"amount":1060.0,"price":5679.0,"cm":13249,"cm_amount":132490.0},{"quantity":3210,"amount":32100.0,"price":5679.25,"cm":16459,"cm_amount":164590.0},{"quantity":8,"amount":80.0,"price":5679.5,"cm":16467,"cm_amount":164670.0},{"quantity":928,"amount":9280.0,"price":5680.0,"cm":17395,"cm_amount":173950.0},{"quantity":4000,"amount":40000.0,"price":5680.25,"cm":21395,"cm_amount":213950.0},{"quantity":2001,"amount":20010.0,"price":5681.0,"cm":23396,"cm_amount":233960.0},{"quantity":10661,"amount":106610.0,"price":5681.25,"cm":34057,"cm_amount":340570.0},{"quantity":200,"amount":2000.0,"price":5681.5,"cm":34257,"cm_amount":342570.0},{"quantity":1500,"amount":15000.0,"price":5681.75,"cm":35757,"cm_amount":357570.0},{"quantity":5003,"amount":50030.0,"price":5682.0,"cm":40760,"cm_amount":407600.0}],"tstamp":1556873740752,"last":5674.25,"low":5334.0,"high":5754.25,"mark":5672.59,"contractMultiplier":10.0,"min":5586.15,"max":5756.29},"message":""}'
+    http_version: 
+  recorded_at: Fri, 03 May 2019 08:55:40 GMT
+recorded_with: VCR 4.0.0

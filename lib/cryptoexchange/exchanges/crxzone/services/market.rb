@@ -33,7 +33,7 @@
           ticker.high = NumericHelper.to_d(output['High'])
           ticker.low = NumericHelper.to_d(output['Low'])
           ticker.volume = NumericHelper.to_d(output['Volume'])
-          ticker.timestamp = output['TimeStamp']
+          ticker.timestamp = nil
           ticker.payload = output
           ticker
         end

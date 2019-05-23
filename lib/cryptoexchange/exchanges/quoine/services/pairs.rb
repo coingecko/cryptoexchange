@@ -15,7 +15,8 @@ module Cryptoexchange::Exchanges
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: pair['base_currency'],
                               target: pair['quoted_currency'],
-                              market: Quoine::Market::NAME
+                              market: Quoine::Market::NAME,
+                              inst_id: pair['id'],
                             )
           end
           market_pairs

@@ -33,7 +33,7 @@ RSpec.describe 'Coinex integration specs' do
     expect(ticker.payload).to_not be nil
   end
 
-  it 'fetch order book' do
+  xit 'fetch order book' do
     order_book = client.order_book(btc_bch_pair)
 
     expect(order_book.base).to eq 'ZRX'

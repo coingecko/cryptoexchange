@@ -20,16 +20,6 @@ RSpec.describe 'Bittrex integration specs' do
     expect(trade_page_url).to eq "https://bittrex.com/Market/Index?MarketName=BTC-LTC"
   end
 
-  it 'fetch pairs and assign the correct base/target' do
-    pairs = client.pairs('bittrex')
-    expect(pairs).not_to be_empty
-
-    pair = pairs.first
-    expect(pair.base).to eq 'LTC'
-    expect(pair.target).to eq 'BTC'
-    expect(pair.market).to eq 'bittrex'
-  end
-
   it 'fetch ticker' do
     ticker = client.ticker(ltc_btc_pair)
 
@@ -42,12 +32,26 @@ RSpec.describe 'Bittrex integration specs' do
     expect(ticker.high).to be_a Numeric
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
+    
     expect(ticker.payload).to_not be nil
   end
 
-  it 'fail to parse ticker' do
-    expect { client.ticker(Cryptoexchange::Models::MarketPair.new(base: 'ingt', target: 'btc', market: 'bittrex')) }.to raise_error(Cryptoexchange::ResultParseError)
+  it 'fetch order book' do
+    order_book = client.order_book(ltc_btc_pair)
+
+    expect(order_book.base).to eq 'LTC'
+    expect(order_book.target).to eq 'BTC'
+    expect(order_book.market).to eq 'bittrex'
+
+    expect(order_book.asks).to_not be_empty
+    expect(order_book.bids).to_not be_empty
+    expect(order_book.asks.first.price).to_not be_nil
+    expect(order_book.bids.first.amount).to_not be_nil
+    expect(order_book.bids.first.timestamp).to be_nil
+    expect(order_book.asks.count).to be > 10
+    expect(order_book.bids.count).to be > 10
+    expect(order_book.timestamp).to be_nil
+    expect(order_book.payload).to_not be nil
   end
 end

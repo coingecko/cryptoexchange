@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.velic.io/api/v1/public/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.velic.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '6886'
+      Date:
+      - Tue, 21 May 2019 08:29:54 GMT
+      Connection:
+      - close
+      Server-Timing:
+      - cdn-cache; desc=MISS
+      - edge; dur=95
+      - origin; dur=285
+    body:
+      encoding: UTF-8
+      string: '[{"baseCoin":"XRP","mtchCoin":"BCH","lastPrice":"1038","recPrice":"1046","priceChng":"8","chngRate":"0.77","baseCurrcyVol":"3959.9","matchCurrcyVol":"3.8","highPrice":"1046","lowPrice":"1038","bgnPrice":"1038"},{"baseCoin":"BTC","mtchCoin":"VELT","lastPrice":"0.00000035","recPrice":"0.00000045","priceChng":"0.0000001","chngRate":"28.57","baseCurrcyVol":"0.2562155","matchCurrcyVol":"580484","highPrice":"0.00000045","lowPrice":"0.00000043","bgnPrice":"0.00000043"},{"baseCoin":"XRP","mtchCoin":"LTC","lastPrice":"229.8","recPrice":"229.6","priceChng":"-0.2","chngRate":"-0.09","baseCurrcyVol":"11254","matchCurrcyVol":"49","highPrice":"229.9","lowPrice":"229.3","bgnPrice":"229.6"},{"baseCoin":"ICX","mtchCoin":"VELT","lastPrice":"0.008002","recPrice":"0.00767","priceChng":"-0.000332","chngRate":"-4.15","baseCurrcyVol":"1063.4309639","matchCurrcyVol":"118110","highPrice":"0.009366","lowPrice":"0.00767","bgnPrice":"0.00767"},{"baseCoin":"USDT","mtchCoin":"ETH","lastPrice":"250.39","recPrice":"251.28","priceChng":"0.89","chngRate":"0.36","baseCurrcyVol":"13336.690022","matchCurrcyVol":"53.24581","highPrice":"254.73","lowPrice":"246.85","bgnPrice":"250.4"},{"baseCoin":"USDT","mtchCoin":"ICX","lastPrice":"0.3691","recPrice":"0.3853","priceChng":"0.0162","chngRate":"4.39","baseCurrcyVol":"157335.926259","matchCurrcyVol":"418735.6926","highPrice":"0.3869","lowPrice":"0.3673","bgnPrice":"0.3691"},{"baseCoin":"XRP","mtchCoin":"XLM","lastPrice":"0.3401","recPrice":"0.3396","priceChng":"-0.0005","chngRate":"-0.15","baseCurrcyVol":"19758.284","matchCurrcyVol":"58168","highPrice":"0.3417","lowPrice":"0.3378","bgnPrice":"0.3405"},{"baseCoin":"USDT","mtchCoin":"BCH","lastPrice":"411.34","recPrice":"408.71","priceChng":"-2.63","chngRate":"-0.64","baseCurrcyVol":"6824.2442897","matchCurrcyVol":"16.684902","highPrice":"416.65","lowPrice":"401.41","bgnPrice":"411.45"},{"baseCoin":"ETH","mtchCoin":"EOS","lastPrice":"0.02482","recPrice":"0.02474","priceChng":"-0.00008","chngRate":"-0.32","baseCurrcyVol":"217.620192","matchCurrcyVol":"8799.073","highPrice":"0.02488","lowPrice":"0.02463","bgnPrice":"0.02478"},{"baseCoin":"USDT","mtchCoin":"BTC","lastPrice":"7934.32","recPrice":"7918.4","priceChng":"-15.92","chngRate":"-0.20","baseCurrcyVol":"24532.2071825","matchCurrcyVol":"3.111731","highPrice":"7994.64","lowPrice":"7796.71","bgnPrice":"7935.99"},{"baseCoin":"USDT","mtchCoin":"LTC","lastPrice":"91.08","recPrice":"90.76","priceChng":"-0.32","chngRate":"-0.35","baseCurrcyVol":"39891.2875033","matchCurrcyVol":"440.515428","highPrice":"92.07","lowPrice":"88.91","bgnPrice":"91.03"},{"baseCoin":"USDT","mtchCoin":"EOS","lastPrice":"6.212","recPrice":"6.236","priceChng":"0.024","chngRate":"0.39","baseCurrcyVol":"21418.1839136","matchCurrcyVol":"3462.69355","highPrice":"6.287","lowPrice":"6.081","bgnPrice":"6.212"},{"baseCoin":"BTC","mtchCoin":"TRX","lastPrice":"0.0000035","recPrice":"0.00000346","priceChng":"-0.00000004","chngRate":"-1.14","baseCurrcyVol":"0.0623014","matchCurrcyVol":"17827","highPrice":"0.0000035","lowPrice":"0.00000346","bgnPrice":"0.00000349"},{"baseCoin":"USDT","mtchCoin":"XLM","lastPrice":"0.135","recPrice":"0.1338","priceChng":"-0.0012","chngRate":"-0.89","baseCurrcyVol":"5959.8261012","matchCurrcyVol":"44623.3552","highPrice":"0.1358","lowPrice":"0.132","bgnPrice":"0.1349"},{"baseCoin":"USDT","mtchCoin":"TRX","lastPrice":"0.02782","recPrice":"0.02875","priceChng":"0.00093","chngRate":"3.34","baseCurrcyVol":"9731.4323754","matchCurrcyVol":"348629.447","highPrice":"0.02894","lowPrice":"0.02753","bgnPrice":"0.0278"},{"baseCoin":"BTC","mtchCoin":"ETH","lastPrice":"0.03155","recPrice":"0.03176","priceChng":"0.00021","chngRate":"0.67","baseCurrcyVol":"2.746463","matchCurrcyVol":"86.527","highPrice":"0.03195","lowPrice":"0.03156","bgnPrice":"0.03156"},{"baseCoin":"USDT","mtchCoin":"TUSD","lastPrice":"0.9922","recPrice":"0.9922","priceChng":"0","chngRate":"0.00","baseCurrcyVol":"0","matchCurrcyVol":"0","highPrice":"0","lowPrice":"0","bgnPrice":"0"},{"baseCoin":"BTC","mtchCoin":"QTUM","lastPrice":"0.000391","recPrice":"0.000389","priceChng":"-0.000002","chngRate":"-0.51","baseCurrcyVol":"0.0724595","matchCurrcyVol":"185.5","highPrice":"0.000391","lowPrice":"0.000389","bgnPrice":"0.000391"},{"baseCoin":"USDT","mtchCoin":"USDC","lastPrice":"0.9929","recPrice":"0.994","priceChng":"0.0011","chngRate":"0.11","baseCurrcyVol":"2004.961139","matchCurrcyVol":"2018.2122","highPrice":"0.9954","lowPrice":"0.9916","bgnPrice":"0.9923"},{"baseCoin":"VELT","mtchCoin":"AST","lastPrice":"16.8","recPrice":"16.8","priceChng":"0","chngRate":"0.00","baseCurrcyVol":"0","matchCurrcyVol":"0","highPrice":"0","lowPrice":"0","bgnPrice":"0"},{"baseCoin":"BTC","mtchCoin":"ICX","lastPrice":"0.0000464","recPrice":"0.00004889","priceChng":"0.00000249","chngRate":"5.37","baseCurrcyVol":"4.0129205","matchCurrcyVol":"84443","highPrice":"0.0000489","lowPrice":"0.0000464","bgnPrice":"0.0000464"},{"baseCoin":"BTC","mtchCoin":"BCH","lastPrice":"0.05183","recPrice":"0.05183","priceChng":"0","chngRate":"0.00","baseCurrcyVol":"7.8960082","matchCurrcyVol":"152.231","highPrice":"0.05241","lowPrice":"0.05107","bgnPrice":"0.05186"},{"baseCoin":"BTC","mtchCoin":"LTC","lastPrice":"0.01147","recPrice":"0.01148","priceChng":"0.00001","chngRate":"0.09","baseCurrcyVol":"0.1337842","matchCurrcyVol":"11.66","highPrice":"0.01148","lowPrice":"0.01146","bgnPrice":"0.01147"},{"baseCoin":"BTC","mtchCoin":"XLM","lastPrice":"0.00001698","recPrice":"0.00001692","priceChng":"-0.00000006","chngRate":"-0.35","baseCurrcyVol":"0.7414671","matchCurrcyVol":"43754","highPrice":"0.00001707","lowPrice":"0.00001686","bgnPrice":"0.00001701"},{"baseCoin":"ETH","mtchCoin":"XRP","lastPrice":"0.001585","recPrice":"0.001573","priceChng":"-0.000012","chngRate":"-0.76","baseCurrcyVol":"158.4080829","matchCurrcyVol":"101101.43","highPrice":"0.001584","lowPrice":"0.001555","bgnPrice":"0.001581"},{"baseCoin":"USDT","mtchCoin":"XRP","lastPrice":"0.3963","recPrice":"0.3932","priceChng":"-0.0031","chngRate":"-0.78","baseCurrcyVol":"7736.8686119","matchCurrcyVol":"19690.4154","highPrice":"0.3986","lowPrice":"0.3891","bgnPrice":"0.3961"},{"baseCoin":"USDT","mtchCoin":"QTUM","lastPrice":"3.098","recPrice":"3.099","priceChng":"0.001","chngRate":"0.03","baseCurrcyVol":"17207.7898915","matchCurrcyVol":"5559.15575","highPrice":"3.133","lowPrice":"3.041","bgnPrice":"3.098"},{"baseCoin":"BTC","mtchCoin":"EOS","lastPrice":"0.0007862","recPrice":"0.0007861","priceChng":"-0.0000001","chngRate":"-0.01","baseCurrcyVol":"1.7933179","matchCurrcyVol":"2280.7","highPrice":"0.0007896","lowPrice":"0.0007831","bgnPrice":"0.0007862"},{"baseCoin":"BTC","mtchCoin":"XRP","lastPrice":"0.00005003","recPrice":"0.00004987","priceChng":"-0.00000016","chngRate":"-0.32","baseCurrcyVol":"1.5396061","matchCurrcyVol":"30872","highPrice":"0.00005016","lowPrice":"0.00004963","bgnPrice":"0.00005003"}]'
+    http_version: 
+  recorded_at: Tue, 21 May 2019 08:29:54 GMT
+recorded_with: VCR 4.0.0

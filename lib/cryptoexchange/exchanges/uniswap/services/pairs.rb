@@ -2,24 +2,23 @@ module Cryptoexchange::Exchanges
   module Uniswap
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Uniswap::Market::API_URL}/directory"
+        def pairs_url
+          "#{Cryptoexchange::Exchanges::Uniswap::Market::API_URL}?key=#{Cryptoexchange::Exchanges::Uniswap::Market.api_key}"
+        end
 
         def fetch
-          output = super
+          output = fetch_via_api(pairs_url)
           adapt(output)
         end
 
         def adapt(output)
           market_pairs = []
           output.each do |pair|
-            base = pair["symbol"]
+            base = pair["tokenSymbol"]
             target = "ETH"
-            inst_id = pair["exchangeAddress"]
-            next unless base && target
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: base,
                               target: target,
-                              inst_id: inst_id,
                               market: Uniswap::Market::NAME
                             )
           end

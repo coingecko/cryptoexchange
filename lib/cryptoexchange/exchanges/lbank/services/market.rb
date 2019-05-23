@@ -32,7 +32,7 @@ module Cryptoexchange::Exchanges
           ticker.low       = NumericHelper.to_d(ticker_json['low'])
           ticker.volume    = NumericHelper.to_d(ticker_json['vol'])
                   
-          ticker.timestamp = output['timestamp']/1000 #convert millisecond to second
+          ticker.timestamp = nil #convert millisecond to second
           ticker.payload   = output
           ticker
         end

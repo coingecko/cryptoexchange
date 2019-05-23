@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.independentreserve.com/Public/GetMarketSummary?primaryCurrencyCode=eth&secondaryCurrencyCode=aud
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.independentreserve.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 16 Apr 2019 09:25:48 GMT
+      Strict-Transport-Security:
+      - max-age=31536000
+      Content-Length:
+      - '340'
+      Connection:
+      - Close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"DayHighestPrice":234.01,"DayLowestPrice":220.0,"DayAvgPrice":227.0,"DayVolumeXbt":450.46620690,"DayVolumeXbtInSecondaryCurrrency":410.70859281,"CurrentLowestOfferPrice":229.74,"CurrentHighestBidPrice":227.32,"LastPrice":228.81,"PrimaryCurrencyCode":"Eth","SecondaryCurrencyCode":"Aud","CreatedTimestampUtc":"2019-04-16T09:25:49.5308274Z"}'
+    http_version: 
+  recorded_at: Tue, 16 Apr 2019 09:25:49 GMT
+recorded_with: VCR 4.0.0

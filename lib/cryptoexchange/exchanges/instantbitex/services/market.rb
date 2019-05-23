@@ -36,8 +36,8 @@ module Cryptoexchange::Exchanges
           ticker.market    = Instantbitex::Market::NAME
           ticker.last      = NumericHelper.to_d(output['last'].to_f)
           ticker.change    = NumericHelper.to_d(output['change24hr'].to_f)
-          ticker.bid       = NumericHelper.to_d(output['highestBid'].to_f)
-          ticker.ask       = NumericHelper.to_d(output['lowestAsk'].to_f)
+          ticker.bid       = NumericHelper.to_d(output['lowestAsk'].to_f)
+          ticker.ask       = NumericHelper.to_d(output['highestBid'].to_f) # ask is higher
           ticker.high      = NumericHelper.to_d(output['high24hr'].to_f)
           ticker.low       = NumericHelper.to_d(output['low24hr'].to_f)
           ticker.volume    = NumericHelper.divide(NumericHelper.to_d(output['volume24hr'].to_f), ticker.last)

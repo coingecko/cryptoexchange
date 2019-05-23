@@ -40,7 +40,7 @@ module Cryptoexchange::Exchanges
           ticker.high      = NumericHelper.to_d(output[7]) #high
           ticker.low       = NumericHelper.to_d(output[8]) #low
           ticker.volume    = NumericHelper.to_d(output[6]) #  the total value of all deals within the last 24 hours
-          ticker.timestamp = output[9]
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

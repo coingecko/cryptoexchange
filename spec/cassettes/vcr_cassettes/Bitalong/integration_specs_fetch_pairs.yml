@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bitalong.com/api/index/pairs
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bitalong.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 27 Jan 2019 15:51:54 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3ac985e518c0b8bbd924f07d191b66601548604313; expires=Mon, 27-Jan-20
+        15:51:53 GMT; path=/; domain=.bitalong.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/7.1.21
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With,X_Requested_With,TOKEN,ID
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49fc62219e62c36f-SIN
+    body:
+      encoding: UTF-8
+      string: '["debb_usdt","btc_usdt","bch_usdt","ltc_usdt","eulo_usdt","eth_usdt","etc_usdt","zec_usdt","xmr_usdt","dash_usdt","doge_usdt","qtum_usdt","eos_usdt","ae_usdt","zil_usdt","btm_usdt","bchsv_usdt","ae_btc","zil_btc","pivx_btc","rvn_btc","xhv_btc","bchsv_btc","dero_btc","sumo_btc","ltc_btc","loki_btc","bch_btc","eth_btc","tube_btc","zec_btc","suqa_btc","xmr_btc","dash_btc","doge_btc","qtum_btc","eos_btc","etn_btc","ltc_eth","xmr_eth","dash_eth","zec_eth","ae_eth","eos_eth","zil_eth","pivx_eth","trtl_ltc"]'
+    http_version: 
+  recorded_at: Sun, 27 Jan 2019 15:51:54 GMT
+recorded_with: VCR 4.0.0

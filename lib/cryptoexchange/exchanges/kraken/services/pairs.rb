@@ -5,20 +5,23 @@ module Cryptoexchange::Exchanges
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Kraken::Market::API_URL}/AssetPairs"
 
         def fetch
+          puts "Try to"
           output = super
+          puts "kaka"
           adapt(output)
         end
 
         def adapt(output)
           market_pairs = []
           output['result'].each do |key, pair|
+            puts pair
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: symbol_from_assets(pair['base']),
                               target: symbol_from_assets(pair['quote']),
                               market: Kraken::Market::NAME
                             )
           end
-
+          puts "here"
           market_pairs
         end
 

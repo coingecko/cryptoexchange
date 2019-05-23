@@ -12,18 +12,18 @@ http_interactions:
       Host:
       - api.bitopro.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Fri, 15 Feb 2019 09:16:57 GMT
+      - Fri, 03 May 2019 09:22:15 GMT
       Content-Type:
       - application/json; charset=UTF-8
-      Content-Length:
-      - '1624'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - close
       Vary:
@@ -31,108 +31,610 @@ http_interactions:
     body:
       encoding: UTF-8
       string: |
-        [
-         {
-          "amount": "1.38033936",
-          "price": "109600",
-          "timestamp": 1550220734000
-         },
-         {
-          "amount": "0.27346064",
-          "price": "109705",
-          "timestamp": 1550220734000
-         },
-         {
-          "amount": "0.25294749",
-          "price": "109700",
-          "timestamp": 1550218793000
-         },
-         {
-          "amount": "0.167",
-          "price": "110141",
-          "timestamp": 1550218734000
-         },
-         {
-          "amount": "0.55274577",
-          "price": "109700",
-          "timestamp": 1550218658000
-         },
-         {
-          "amount": "0.55276257",
-          "price": "109700",
-          "timestamp": 1550218514000
-         },
-         {
-          "amount": "0.55290927",
-          "price": "109700",
-          "timestamp": 1550218392000
-         },
-         {
-          "amount": "0.56037241",
-          "price": "110000",
-          "timestamp": 1550217439000
-         },
-         {
-          "amount": "0.06722133",
-          "price": "109660",
-          "timestamp": 1550217386000
-         },
-         {
-          "amount": "0.023",
-          "price": "110231",
-          "timestamp": 1550217114000
-         },
-         {
-          "amount": "0.04856767",
-          "price": "110399",
-          "timestamp": 1550217082000
-         },
-         {
-          "amount": "0.023",
-          "price": "110231",
-          "timestamp": 1550217082000
-         },
-         {
-          "amount": "0.01",
-          "price": "109999",
-          "timestamp": 1550217059000
-         },
-         {
-          "amount": "0.80697",
-          "price": "109670",
-          "timestamp": 1550214668000
-         },
-         {
-          "amount": "0.00903366",
-          "price": "110697",
-          "timestamp": 1550214643000
-         },
-         {
-          "amount": "0.192",
-          "price": "109848",
-          "timestamp": 1550214637000
-         },
-         {
-          "amount": "0.58710795",
-          "price": "109680",
-          "timestamp": 1550214624000
-         },
-         {
-          "amount": "0.23083234",
-          "price": "109690",
-          "timestamp": 1550214621000
-         },
-         {
-          "amount": "0.204",
-          "price": "110082",
-          "timestamp": 1550213344000
-         },
-         {
-          "amount": "0.243",
-          "price": "110524",
-          "timestamp": 1550213043000
-         }
-        ]
+        {
+         "data": [
+          {
+           "timestamp": 1556875073,
+           "price": "174730.00000000",
+           "amount": "0.31774192",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556874958,
+           "price": "174730.00000000",
+           "amount": "0.06255109",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556874958,
+           "price": "174600.00000000",
+           "amount": "0.29090699",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556874736,
+           "price": "174730.00000000",
+           "amount": "0.11501214",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556874736,
+           "price": "174699.00000000",
+           "amount": "0.10000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556874698,
+           "price": "174600.00000000",
+           "amount": "0.08433164",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556874677,
+           "price": "174600.00000000",
+           "amount": "0.00740783",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556874651,
+           "price": "174600.00000000",
+           "amount": "0.01000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556874558,
+           "price": "174500.00000000",
+           "amount": "0.01000000",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556874493,
+           "price": "174500.00000000",
+           "amount": "0.12195618",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556874481,
+           "price": "174500.00000000",
+           "amount": "0.10000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556874362,
+           "price": "174000.00000000",
+           "amount": "0.02384075",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556874248,
+           "price": "174000.00000000",
+           "amount": "0.27029810",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556874248,
+           "price": "174000.00000000",
+           "amount": "0.01320190",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556874070,
+           "price": "174000.00000000",
+           "amount": "0.03690368",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556874070,
+           "price": "174000.00000000",
+           "amount": "0.00739822",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556874070,
+           "price": "173990.00000000",
+           "amount": "0.01730000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873972,
+           "price": "174000.00000000",
+           "amount": "0.54176666",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873972,
+           "price": "174000.00000000",
+           "amount": "0.07000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873972,
+           "price": "173999.00000000",
+           "amount": "0.50950000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873972,
+           "price": "173990.00000000",
+           "amount": "0.00930000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873972,
+           "price": "173990.00000000",
+           "amount": "0.00580000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873972,
+           "price": "173990.00000000",
+           "amount": "0.00580000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873972,
+           "price": "173990.00000000",
+           "amount": "0.00580000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873972,
+           "price": "173990.00000000",
+           "amount": "0.00580000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873972,
+           "price": "173990.00000000",
+           "amount": "0.00580000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873972,
+           "price": "173990.00000000",
+           "amount": "0.00580000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873972,
+           "price": "173990.00000000",
+           "amount": "0.00580000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873921,
+           "price": "173300.00000000",
+           "amount": "0.00965265",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873885,
+           "price": "173000.00000000",
+           "amount": "0.20000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873885,
+           "price": "172990.00000000",
+           "amount": "0.47952890",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873885,
+           "price": "172987.00000000",
+           "amount": "0.05008316",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873814,
+           "price": "172977.00000000",
+           "amount": "0.23429829",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873777,
+           "price": "172977.00000000",
+           "amount": "0.17343346",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873649,
+           "price": "172000.00000000",
+           "amount": "0.08502374",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556873649,
+           "price": "172001.00000000",
+           "amount": "0.01000000",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556873649,
+           "price": "172001.00000000",
+           "amount": "0.01000000",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556873649,
+           "price": "172001.00000000",
+           "amount": "0.01000000",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556873649,
+           "price": "172001.00000000",
+           "amount": "0.01000000",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556873649,
+           "price": "172001.00000000",
+           "amount": "0.01000000",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556873550,
+           "price": "172977.00000000",
+           "amount": "0.01779427",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873470,
+           "price": "172977.00000000",
+           "amount": "0.07447398",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873456,
+           "price": "172890.00000000",
+           "amount": "0.01740000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873442,
+           "price": "172887.00000000",
+           "amount": "0.10171536",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873442,
+           "price": "172887.00000000",
+           "amount": "0.39953491",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873367,
+           "price": "172000.00000000",
+           "amount": "0.03846617",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873339,
+           "price": "172000.00000000",
+           "amount": "0.21000000",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556873339,
+           "price": "172000.00000000",
+           "amount": "0.04153383",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556873262,
+           "price": "172000.00000000",
+           "amount": "0.04500000",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556873225,
+           "price": "172887.00000000",
+           "amount": "0.15000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556873225,
+           "price": "172880.00000000",
+           "amount": "0.05000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556872831,
+           "price": "172887.00000000",
+           "amount": "0.04048887",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556872142,
+           "price": "172987.00000000",
+           "amount": "0.02040615",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556872030,
+           "price": "171001.00000000",
+           "amount": "0.29950000",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556871504,
+           "price": "171000.00000000",
+           "amount": "0.61203097",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556871504,
+           "price": "171000.00000000",
+           "amount": "0.01210004",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556871504,
+           "price": "171500.00000000",
+           "amount": "0.06948044",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556871504,
+           "price": "171501.00000000",
+           "amount": "0.58308877",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556871317,
+           "price": "171500.00000000",
+           "amount": "0.01730569",
+           "isBuyer": false
+          },
+          {
+           "timestamp": 1556870431,
+           "price": "173000.00000000",
+           "amount": "0.25260737",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556870431,
+           "price": "173000.00000000",
+           "amount": "0.01400000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556870431,
+           "price": "173000.00000000",
+           "amount": "0.05000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556870431,
+           "price": "173000.00000000",
+           "amount": "0.14297263",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556870406,
+           "price": "173000.00000000",
+           "amount": "0.17791907",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556870325,
+           "price": "173000.00000000",
+           "amount": "0.24374721",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556870325,
+           "price": "173000.00000000",
+           "amount": "0.10000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556870325,
+           "price": "173000.00000000",
+           "amount": "0.03000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556870325,
+           "price": "172999.00000000",
+           "amount": "0.07224067",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556870325,
+           "price": "172989.00000000",
+           "amount": "0.10000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556870325,
+           "price": "172710.00000000",
+           "amount": "0.17839687",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556870325,
+           "price": "172700.00000000",
+           "amount": "0.02000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556870325,
+           "price": "172500.00000000",
+           "amount": "0.70619303",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556870325,
+           "price": "172469.00000000",
+           "amount": "0.26679604",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556870325,
+           "price": "172400.00000000",
+           "amount": "0.02000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556870041,
+           "price": "172300.00000000",
+           "amount": "0.00920007",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556870041,
+           "price": "172300.00000000",
+           "amount": "0.20092445",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869965,
+           "price": "172300.00000000",
+           "amount": "0.04504352",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869825,
+           "price": "172300.00000000",
+           "amount": "0.22360000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869803,
+           "price": "172300.00000000",
+           "amount": "0.00602730",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869674,
+           "price": "172300.00000000",
+           "amount": "0.52440473",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869674,
+           "price": "172100.00000000",
+           "amount": "0.05000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869674,
+           "price": "172000.00000000",
+           "amount": "0.20000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869674,
+           "price": "172000.00000000",
+           "amount": "0.06100000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869674,
+           "price": "172000.00000000",
+           "amount": "0.05000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869674,
+           "price": "172000.00000000",
+           "amount": "0.10221077",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869674,
+           "price": "172000.00000000",
+           "amount": "0.14593036",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869674,
+           "price": "171999.00000000",
+           "amount": "0.49970000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869674,
+           "price": "171999.00000000",
+           "amount": "0.11000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869503,
+           "price": "171989.00000000",
+           "amount": "0.04517438",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869503,
+           "price": "171900.00000000",
+           "amount": "0.10000666",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869503,
+           "price": "171800.00000000",
+           "amount": "0.03486896",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869320,
+           "price": "171800.00000000",
+           "amount": "0.06513104",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869320,
+           "price": "171800.00000000",
+           "amount": "0.05000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869320,
+           "price": "171641.00000000",
+           "amount": "0.01988000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869320,
+           "price": "171500.00000000",
+           "amount": "0.06498896",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869197,
+           "price": "171500.00000000",
+           "amount": "0.02675415",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869197,
+           "price": "171500.00000000",
+           "amount": "0.05000000",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869197,
+           "price": "171500.00000000",
+           "amount": "0.02082790",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869197,
+           "price": "171200.00000000",
+           "amount": "0.00241795",
+           "isBuyer": true
+          },
+          {
+           "timestamp": 1556869161,
+           "price": "171200.00000000",
+           "amount": "0.04758205",
+           "isBuyer": true
+          }
+         ]
+        }
     http_version: 
-  recorded_at: Fri, 15 Feb 2019 09:16:57 GMT
+  recorded_at: Fri, 03 May 2019 09:22:15 GMT
 recorded_with: VCR 4.0.0

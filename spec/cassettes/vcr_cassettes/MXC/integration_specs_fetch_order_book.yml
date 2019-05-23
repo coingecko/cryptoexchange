@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mxc.com/open/api/v1/data/depth?depth=50&market=ONT_USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.mxc.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 23 May 2019 02:03:59 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      X-Cdn-Edge:
+      - cb634c7,-
+      Set-Cookie:
+      - __cdnuid=c0da6bdb4a0b0150c3a60840409591a0; max-age=31536000; path=/; HttpOnly
+      X-Cache:
+      - bypass
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"data":{"asks":[{"price":"1.31","quantity":"2.23"},{"price":"1.3101","quantity":"357.04"},{"price":"1.3104","quantity":"553.73"},{"price":"1.3105","quantity":"345.97"},{"price":"1.3111","quantity":"0.74"},{"price":"1.3114","quantity":"816.65"},{"price":"1.3115","quantity":"238.95"},{"price":"1.3116","quantity":"477.92"},{"price":"1.3117","quantity":"191.92"},{"price":"1.3119","quantity":"816.16"},{"price":"1.3121","quantity":"804.85"},{"price":"1.3122","quantity":"547.16"},{"price":"1.3124","quantity":"716.33"},{"price":"1.3126","quantity":"815.59"},{"price":"1.3127","quantity":"291.2"},{"price":"1.3128","quantity":"0.15"},{"price":"1.3129","quantity":"280"},{"price":"1.3134","quantity":"108.32"},{"price":"1.3135","quantity":"186.2"},{"price":"1.3136","quantity":"0.74"},{"price":"1.3137","quantity":"189"},{"price":"1.333","quantity":"73.28"},{"price":"1.3631","quantity":"1.07"},{"price":"1.3906","quantity":"21"},{"price":"1.4152","quantity":"314.06"},{"price":"1.45","quantity":"16"},{"price":"1.6","quantity":"167.37"},{"price":"1.65","quantity":"19"},{"price":"1.8","quantity":"59.91"},{"price":"2","quantity":"50.84"},{"price":"2.3565","quantity":"703.12"},{"price":"22","quantity":"0.820000000000000000"},{"price":"155","quantity":"2.2"}],"bids":[{"price":"1.3","quantity":"11.9"},{"price":"1.2638","quantity":"13.95"},{"price":"1.2634","quantity":"1.32"},{"price":"1.2632","quantity":"4.9"},{"price":"1.2631","quantity":"1.85"},{"price":"1.2626","quantity":"0.7"},{"price":"1.2622","quantity":"1.48"},{"price":"1.2619","quantity":"1.85"},{"price":"1.2616","quantity":"41.6"},{"price":"1.2608","quantity":"5.42"},{"price":"1.2607","quantity":"24.71"},{"price":"1.2606","quantity":"91.05"},{"price":"1.2597","quantity":"5.46"},{"price":"1.2596","quantity":"5458.4"},{"price":"1.2587","quantity":"10.5"},{"price":"1.2584","quantity":"140.01"},{"price":"1.1","quantity":"18.19"},{"price":"0.7566","quantity":"3951.790000000000000000"},{"price":"0.7565","quantity":"16.770000000000000000"},{"price":"0.7564","quantity":"22.790000000000000000"}]},"msg":"OK"}'
+    http_version: 
+  recorded_at: Thu, 23 May 2019 02:03:59 GMT
+recorded_with: VCR 4.0.0

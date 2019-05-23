@@ -16,7 +16,7 @@ RSpec.describe 'Dobitrade integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'dobitrade', base: ltc_btc_pair.base, target: ltc_btc_pair.target
-    expect(trade_page_url).to eq "https://www.dobiex.io/zh/trade/ltc_btc"
+    expect(trade_page_url).to eq "https://www.dobitrade.com/en/trade/ltc_btc"
   end
 
   it 'fetch ticker' do

@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.deribit.com/api/v1/public/getlasttrades?instrument=BTC-PERPETUAL
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.deribit.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.5
+      Date:
+      - Fri, 03 May 2019 08:55:41 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2104'
+      Connection:
+      - close
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"usOut":1556873741921776,"usIn":1556873741921715,"usDiff":61,"testnet":false,"success":true,"result":[{"tradeId":18634738,"instrument":"BTC-PERPETUAL","timeStamp":1556873740410,"tradeSeq":5047613,"quantity":34,"amount":340.0,"price":5674.25,"direction":"buy","tickDirection":1,"indexPrice":5667.12},{"tradeId":18634737,"instrument":"BTC-PERPETUAL","timeStamp":1556873740410,"tradeSeq":5047612,"quantity":28,"amount":280.0,"price":5674.25,"direction":"buy","tickDirection":0,"indexPrice":5667.12},{"tradeId":18634736,"instrument":"BTC-PERPETUAL","timeStamp":1556873740382,"tradeSeq":5047611,"quantity":385,"amount":3850.0,"price":5674.0,"direction":"sell","tickDirection":3,"indexPrice":5667.12},{"tradeId":18634735,"instrument":"BTC-PERPETUAL","timeStamp":1556873740382,"tradeSeq":5047610,"quantity":15,"amount":150.0,"price":5674.0,"direction":"sell","tickDirection":3,"indexPrice":5667.12},{"tradeId":18634734,"instrument":"BTC-PERPETUAL","timeStamp":1556873740356,"tradeSeq":5047609,"quantity":69,"amount":690.0,"price":5674.0,"direction":"sell","tickDirection":3,"indexPrice":5667.12},{"tradeId":18634733,"instrument":"BTC-PERPETUAL","timeStamp":1556873740356,"tradeSeq":5047608,"quantity":231,"amount":2310.0,"price":5674.0,"direction":"sell","tickDirection":2,"indexPrice":5667.12},{"tradeId":18634729,"instrument":"BTC-PERPETUAL","timeStamp":1556873739956,"tradeSeq":5047607,"quantity":3099,"amount":30990.0,"price":5674.25,"direction":"buy","tickDirection":1,"indexPrice":5667.12},{"tradeId":18634728,"instrument":"BTC-PERPETUAL","timeStamp":1556873739956,"tradeSeq":5047606,"quantity":1279,"amount":12790.0,"price":5674.25,"direction":"buy","tickDirection":1,"indexPrice":5667.12},{"tradeId":18634723,"instrument":"BTC-PERPETUAL","timeStamp":1556873739036,"tradeSeq":5047605,"quantity":796,"amount":7960.0,"price":5674.25,"direction":"buy","tickDirection":0,"indexPrice":5664.94},{"tradeId":18634722,"instrument":"BTC-PERPETUAL","timeStamp":1556873739036,"tradeSeq":5047604,"quantity":4954,"amount":49540.0,"price":5674.0,"direction":"buy","tickDirection":1,"indexPrice":5664.94}],"message":""}'
+    http_version: 
+  recorded_at: Fri, 03 May 2019 08:55:42 GMT
+recorded_with: VCR 4.0.0

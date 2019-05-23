@@ -4,6 +4,12 @@ RSpec.describe 'Uniswap integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:dai_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'dai', target: 'eth', market: 'uniswap') }
 
+  let(:filename) { Cryptoexchange::Credentials.send(:filename) }
+
+  before do
+    allow(Cryptoexchange::Credentials).to receive(:get).with('uniswap').and_return({ 'api_key' => 'test_key' })
+  end
+
   it 'fetch pairs' do
     pairs = client.pairs('uniswap')
     expect(pairs).not_to be_empty
@@ -23,9 +29,7 @@ RSpec.describe 'Uniswap integration specs' do
 
     expect(ticker.volume).to be_a Numeric
     expect(ticker.last).to be_a Numeric
-    expect(ticker.high).to be_a Numeric
-    expect(ticker.low).to be_a Numeric
-    
+
     expect(ticker.payload).to_not be nil
   end
 end

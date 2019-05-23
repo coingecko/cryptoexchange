@@ -12,12 +12,12 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
-          output.collect do |trade|
+          output["data"].collect do |trade|
+
             tr = Cryptoexchange::Models::Trade.new
             tr.base      = market_pair.base
             tr.target    = market_pair.target
             tr.market    = Bitopro::Market::NAME
-
             tr.price     = trade['price']
             tr.amount    = trade['amount']
             tr.timestamp = trade['timestamp'].to_i / 1000

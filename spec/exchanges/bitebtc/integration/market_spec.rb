@@ -30,8 +30,8 @@ RSpec.describe 'Bitebtc integration specs' do
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.change).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
+    
     expect(ticker.payload).to_not be nil
   end
 

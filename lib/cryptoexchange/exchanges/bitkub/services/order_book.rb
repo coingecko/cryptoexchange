@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Bitkub
     module Services
       class OrderBook < Cryptoexchange::Services::Market
-        ORDER_LIMIT = 20
+        ORDER_LIMIT = 50
         class << self
           def supports_individual_ticker_query?
             true
@@ -35,7 +35,7 @@ module Cryptoexchange::Exchanges
           order_book.market    = Bitkub::Market::NAME
           order_book.asks      = adapt_orders(asks['result'])
           order_book.bids      = adapt_orders(bids['result'])
-          order_book.timestamp = Time.now.to_i
+          order_book.timestamp = nil
           order_book.payload   = [asks, bids]
           order_book
         end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.txbit.io/api/public/getmarketsummary?market=ATL/BTC
+    uri: https://api.txbit.io/api/public/getmarketsummary?market=ETH/BTC
     body:
       encoding: UTF-8
       string: ''
@@ -12,14 +12,14 @@ http_interactions:
       Host:
       - api.txbit.io
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Tue, 05 Mar 2019 08:58:31 GMT
+      - Wed, 15 May 2019 02:29:03 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,8 +27,8 @@ http_interactions:
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=ddbef02f31eae42f0c62c6ed8174a702a1551776311; expires=Wed, 04-Mar-20
-        08:58:31 GMT; path=/; domain=.txbit.io; HttpOnly; Secure
+      - __cfduid=d23adab2db75471bed22cec16c1b77d891557887343; expires=Thu, 14-May-20
+        02:29:03 GMT; path=/; domain=.txbit.io; HttpOnly; Secure
       Strict-Transport-Security:
       - max-age=15552000; includeSubDomains; preload
       X-Content-Type-Options:
@@ -38,11 +38,11 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 4b2ae378ef3772a7-AMS
+      - 4d71ae96fd256f76-SIN
     body:
       encoding: UTF-8
-      string: '{"success":true,"message":"","result":{"MarketName":"ATL/BTC","High":0.00001271,"Low":0.00001271,"Volume":0.00000000,"Last":0.00001271,"BaseVolume":0.00000000,"TimeStamp":"2019-02-17T04:48:00.857Z","Bid":0.00000000,"Ask":0.00001271,"OpenBuyOrders":0,"OpenSellOrders":1,"PrevDay":0.00001271,"Created":"2019-01-28T19:03:02.993Z","DisplayMarketName":"Atlant
+      string: '{"success":true,"message":"","result":{"MarketName":"ETH/BTC","High":0.02800000,"Low":0.02799858,"Volume":8.54310000,"Last":0.02800000,"BaseVolume":0.23920664,"TimeStamp":"2019-05-15T00:38:50.827Z","Bid":0.02700002,"Ask":0.02800000,"OpenBuyOrders":7,"OpenSellOrders":25,"PrevDay":0.02500000,"Created":"2019-01-27T20:43:12.49Z","DisplayMarketName":"Ethereum
         - Bitcoin"}}'
     http_version: 
-  recorded_at: Tue, 05 Mar 2019 08:58:31 GMT
+  recorded_at: Wed, 15 May 2019 02:29:03 GMT
 recorded_with: VCR 4.0.0

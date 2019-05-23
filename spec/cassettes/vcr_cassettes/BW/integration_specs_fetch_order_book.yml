@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bw.com/api/data/v1/entrusts?dataSize=50&marketName=ETH_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bw.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 11 May 2019 05:11:20 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0879c8d8bd5c7e5993d2da8effd7a1eb1557551480; expires=Sun, 10-May-20
+        05:11:20 GMT; path=/; domain=.bw.com; HttpOnly; Secure
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Clienttype,Sign,Timestamp,Userid
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d51a6d2ec12c368-SIN
+    body:
+      encoding: UTF-8
+      string: '{"datas":{"asks":[["0.04","0.0081"],["0.03322","10"],["0.02944","0.1943"],["0.02701","0.1512"],["0.02693","0.4164"],["0.02689","0.4451"],["0.0268","0.3946"],["0.02673","1.5962"],["0.02668","0.0026"],["0.02663","1.1911"],["0.02658","2.1099"],["0.02657","2.6057"],["0.02655","0.2097"],["0.02653","44"],["0.02651","0.7409"],["0.02649","0.244"],["0.02647","12.9138"],["0.02646","0.5513"],["0.02645","5.7086"],["0.02643","8.0813"],["0.02641","3.9741"],["0.02639","1.7962"],["0.02638","5.3332"],["0.02636","2.297"],["0.02635","12.5378"],["0.02634","7.7199"],["0.02632","0.9423"]],"bids":[["0.02611","3.9413"],["0.0261","6.3549"],["0.02609","19.5816"],["0.02608","21.7358"],["0.02607","6.9736"],["0.02605","17.2844"],["0.02603","7.5238"],["0.02601","15.2747"],["0.02599","2.1007"],["0.02597","2.1015"],["0.02594","2.1912"],["0.02591","0.2439"],["0.02587","2.3858"],["0.02584","0.5077"],["0.0258","44"],["0.02576","2.1676"],["0.02573","3.8711"],["0.02568","0.7868"],["0.02563","0.2815"],["0.02559","0.6781"],["0.01011","1"],["0.00021","0.0058"],["0.00016","0.0024"],["0.00012","1"],["0.00011","1"],["0.0001","1.05"],["0.00006","0.001"],["0.00002","0.1"]],"timestamp":"1557551479"},"resMsg":{"message":"success
+        !","method":null,"code":"1"}}'
+    http_version: 
+  recorded_at: Sat, 11 May 2019 05:11:17 GMT
+recorded_with: VCR 4.0.0

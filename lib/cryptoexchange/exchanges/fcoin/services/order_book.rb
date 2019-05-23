@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Fcoin::Market::API_URL}/market/depth/full/#{market_pair.base.downcase}#{market_pair.target.downcase}"
+          "#{Cryptoexchange::Exchanges::Fcoin::Market::API_URL}/market/depth/L150/#{market_pair.base.downcase}#{market_pair.target.downcase}"
         end
 
         def adapt(output, market_pair)
