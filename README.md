@@ -216,6 +216,7 @@ Or install it yourself as:
 | Dragonex          | Y       | Y [x]      | N       |         | Y           | Y        | dragonex          |       |
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |       |
 | Eosex             | Y       | N          | N       |         | Y           | Y        | eosex             |       |
+| Ecxx              | Y       | N          | N       |         | Y           | Y        | ecxx              |       |
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |       |
 | Escodex           | Y       |            |         |         | Y           | Y        | escodex           |       |
 | EtherDelta        | Y       |            |         |         | Y           |          | ether_delta       |       |
