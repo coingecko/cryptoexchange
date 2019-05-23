@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          market = "#{market_pair.base}#{market_pair.target}".downcase!
+          market = "#{market_pair.base}#{market_pair.target}".downcase
           "#{Cryptoexchange::Exchanges::Cezex::Market::API_URL}/tickers/#{market}.json"
         end
 
