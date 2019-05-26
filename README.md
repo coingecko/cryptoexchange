@@ -346,6 +346,7 @@ Or install it yourself as:
 | Liquid (Quoine)   | Y       | Y [x]      |         |         | Y           | Y        | quoine            |       |
 | RadarRelay        | Y       | Y [x]      |[No Price]|         | Y           | Y        | radar_relay      |       |
 | Raisex            | Y       |            |         |         | Y           |          | raisex            |       |
+| Remitano          | Y       | Y [x]      | Y [limit: 20]|         | Y           | N        | remitano          |  P2P  |
 | Rfinex            | Y       | Y          | Y       |         | Y           |          | rfinex            |       |
 | RightBTC          | Y       | Y [x]      | Y       |         | Y           |          | rightbtc          |       |
 | SafeTrade         | Y       | N          | N       |         | Y           |          | safe_trade        |       |
