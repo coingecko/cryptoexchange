@@ -63,11 +63,11 @@ RSpec.describe 'Binance integration specs' do
 
     expect(trade.base).to eq 'ETH'
     expect(trade.target).to eq 'BTC'
-    expect(trade.market).to eq market
+    expect(trade.market).to eq 'binance'
 
     expect(trade.amount).to_not be_nil
     expect(trade.price).to_not be_nil
-    expect(trade.timestamp).to_not be_nil
+    expect(2000..Date.today.year).to include(Time.at(trade.timestamp).year)
     expect(trade.trade_id).to_not be_nil
     expect(trade.type).to eq("buy").or eq("sell")
   end

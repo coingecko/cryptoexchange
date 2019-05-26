@@ -22,7 +22,7 @@ module Cryptoexchange::Exchanges
             tr.type      = trade['side']
             tr.price     = trade['price']
             tr.amount    = trade['amount']
-            tr.timestamp = trade['time'].to_i
+            tr.timestamp = trade['timestamp'].to_i
             tr.payload   = trade
             tr.market    = Bgogo::Market::NAME
             tr

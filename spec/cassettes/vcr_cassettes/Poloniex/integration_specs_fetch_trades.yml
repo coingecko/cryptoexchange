@@ -1,0 +1,246 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://poloniex.com/public?command=returnTradeHistory&currencyPair=BTC_LTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - poloniex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 15 May 2019 08:38:55 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db496df5d1a00ed4538f14b61108453521557909535; expires=Thu, 14-May-20
+        08:38:55 GMT; path=/; domain=.poloniex.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d73cc63dce0c109-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"globalTradeID":416660377,"tradeID":17859965,"date":"2019-05-15 08:38:08","type":"buy","rate":"0.01169494","amount":"0.00000487","total":"0.00000005","orderNumber":251306609882},{"globalTradeID":416660325,"tradeID":17859964,"date":"2019-05-15
+        08:37:49","type":"buy","rate":"0.01169000","amount":"24.28232175","total":"0.28386034","orderNumber":251306559932},{"globalTradeID":416660248,"tradeID":17859963,"date":"2019-05-15
+        08:37:18","type":"sell","rate":"0.01170998","amount":"0.00045410","total":"0.00000531","orderNumber":251306475017},{"globalTradeID":416660231,"tradeID":17859962,"date":"2019-05-15
+        08:37:14","type":"buy","rate":"0.01171000","amount":"0.01282051","total":"0.00015012","orderNumber":251306461031},{"globalTradeID":416660230,"tradeID":17859961,"date":"2019-05-15
+        08:37:14","type":"sell","rate":"0.01170998","amount":"11.02700000","total":"0.12912594","orderNumber":251306460032},{"globalTradeID":416660225,"tradeID":17859960,"date":"2019-05-15
+        08:37:13","type":"buy","rate":"0.01170498","amount":"5.96000000","total":"0.06976168","orderNumber":251306454038},{"globalTradeID":416660224,"tradeID":17859959,"date":"2019-05-15
+        08:37:13","type":"buy","rate":"0.01170001","amount":"0.08986500","total":"0.00105142","orderNumber":251306454038},{"globalTradeID":416660223,"tradeID":17859958,"date":"2019-05-15
+        08:37:13","type":"buy","rate":"0.01170000","amount":"0.00212937","total":"0.00002491","orderNumber":251306454038},{"globalTradeID":416660145,"tradeID":17859957,"date":"2019-05-15
+        08:36:27","type":"buy","rate":"0.01170000","amount":"0.00000354","total":"0.00000004","orderNumber":251306264228},{"globalTradeID":416659909,"tradeID":17859956,"date":"2019-05-15
+        08:34:39","type":"buy","rate":"0.01170000","amount":"0.00000170","total":"0.00000001","orderNumber":251305723769},{"globalTradeID":416659870,"tradeID":17859955,"date":"2019-05-15
+        08:34:31","type":"sell","rate":"0.01166263","amount":"0.00067137","total":"0.00000782","orderNumber":251305670822},{"globalTradeID":416659863,"tradeID":17859954,"date":"2019-05-15
+        08:34:30","type":"sell","rate":"0.01166261","amount":"0.00038842","total":"0.00000452","orderNumber":251305660832},{"globalTradeID":416659843,"tradeID":17859953,"date":"2019-05-15
+        08:34:13","type":"buy","rate":"0.01170000","amount":"0.01000000","total":"0.00011700","orderNumber":251305563929},{"globalTradeID":416659833,"tradeID":17859952,"date":"2019-05-15
+        08:34:07","type":"sell","rate":"0.01170000","amount":"0.09980000","total":"0.00116766","orderNumber":251305521971},{"globalTradeID":416659832,"tradeID":17859951,"date":"2019-05-15
+        08:34:07","type":"sell","rate":"0.01170000","amount":"49.88806539","total":"0.58369036","orderNumber":251305521971},{"globalTradeID":416659803,"tradeID":17859950,"date":"2019-05-15
+        08:33:49","type":"sell","rate":"0.01173000","amount":"7.63954159","total":"0.08961182","orderNumber":251305448045},{"globalTradeID":416659802,"tradeID":17859949,"date":"2019-05-15
+        08:33:49","type":"sell","rate":"0.01173000","amount":"0.39000000","total":"0.00457470","orderNumber":251305447046},{"globalTradeID":416659800,"tradeID":17859948,"date":"2019-05-15
+        08:33:48","type":"sell","rate":"0.01173000","amount":"28.72525649","total":"0.33694725","orderNumber":251305444049},{"globalTradeID":416659792,"tradeID":17859947,"date":"2019-05-15
+        08:33:46","type":"buy","rate":"0.01171909","amount":"0.00960869","total":"0.00011260","orderNumber":251305432061},{"globalTradeID":416659791,"tradeID":17859946,"date":"2019-05-15
+        08:33:46","type":"buy","rate":"0.01171824","amount":"0.29867966","total":"0.00349999","orderNumber":251305432061},{"globalTradeID":416659790,"tradeID":17859945,"date":"2019-05-15
+        08:33:46","type":"buy","rate":"0.01171535","amount":"0.05972217","total":"0.00069966","orderNumber":251305432061},{"globalTradeID":416659789,"tradeID":17859944,"date":"2019-05-15
+        08:33:46","type":"buy","rate":"0.01171252","amount":"0.40423109","total":"0.00473456","orderNumber":251305432061},{"globalTradeID":416659780,"tradeID":17859943,"date":"2019-05-15
+        08:33:40","type":"sell","rate":"0.01170001","amount":"0.10119200","total":"0.00118394","orderNumber":251305419074},{"globalTradeID":416659711,"tradeID":17859942,"date":"2019-05-15
+        08:32:54","type":"buy","rate":"0.01171252","amount":"0.00000451","total":"0.00000005","orderNumber":251305275218},{"globalTradeID":416659619,"tradeID":17859941,"date":"2019-05-15
+        08:31:56","type":"buy","rate":"0.01171252","amount":"0.01280680","total":"0.00014999","orderNumber":251305146347},{"globalTradeID":416659616,"tradeID":17859940,"date":"2019-05-15
+        08:31:55","type":"buy","rate":"0.01171252","amount":"0.01280680","total":"0.00014999","orderNumber":251305141352},{"globalTradeID":416659613,"tradeID":17859939,"date":"2019-05-15
+        08:31:49","type":"buy","rate":"0.01171252","amount":"0.01280680","total":"0.00014999","orderNumber":251305131362},{"globalTradeID":416659457,"tradeID":17859938,"date":"2019-05-15
+        08:30:41","type":"sell","rate":"0.01170000","amount":"0.01193461","total":"0.00013963","orderNumber":251304922571},{"globalTradeID":416659295,"tradeID":17859937,"date":"2019-05-15
+        08:29:32","type":"buy","rate":"0.01170880","amount":"0.01281087","total":"0.00014999","orderNumber":251304712781},{"globalTradeID":416659289,"tradeID":17859936,"date":"2019-05-15
+        08:29:31","type":"buy","rate":"0.01170880","amount":"0.01281087","total":"0.00014999","orderNumber":251304706787},{"globalTradeID":416659279,"tradeID":17859935,"date":"2019-05-15
+        08:29:30","type":"buy","rate":"0.01169999","amount":"0.01282052","total":"0.00014999","orderNumber":251304699794},{"globalTradeID":416659275,"tradeID":17859934,"date":"2019-05-15
+        08:29:29","type":"buy","rate":"0.01169990","amount":"0.01282062","total":"0.00014999","orderNumber":251304684809},{"globalTradeID":416659272,"tradeID":17859933,"date":"2019-05-15
+        08:29:28","type":"buy","rate":"0.01169990","amount":"0.01282062","total":"0.00014999","orderNumber":251304676817},{"globalTradeID":416659270,"tradeID":17859932,"date":"2019-05-15
+        08:29:26","type":"buy","rate":"0.01169990","amount":"0.01282062","total":"0.00014999","orderNumber":251304669824},{"globalTradeID":416659267,"tradeID":17859931,"date":"2019-05-15
+        08:29:25","type":"buy","rate":"0.01169990","amount":"0.01282057","total":"0.00014999","orderNumber":251304655838},{"globalTradeID":416659266,"tradeID":17859930,"date":"2019-05-15
+        08:29:25","type":"sell","rate":"0.01164015","amount":"0.00024226","total":"0.00000281","orderNumber":251304651842},{"globalTradeID":416659261,"tradeID":17859929,"date":"2019-05-15
+        08:29:24","type":"buy","rate":"0.01169994","amount":"0.01282057","total":"0.00014999","orderNumber":251304643850},{"globalTradeID":416659251,"tradeID":17859928,"date":"2019-05-15
+        08:29:23","type":"buy","rate":"0.01169994","amount":"0.01282603","total":"0.00015006","orderNumber":251304638855},{"globalTradeID":416659244,"tradeID":17859927,"date":"2019-05-15
+        08:29:21","type":"buy","rate":"0.01169492","amount":"0.01282608","total":"0.00014999","orderNumber":251304626867},{"globalTradeID":416659226,"tradeID":17859926,"date":"2019-05-15
+        08:29:19","type":"buy","rate":"0.01169000","amount":"0.01283147","total":"0.00014999","orderNumber":251304617876},{"globalTradeID":416659223,"tradeID":17859925,"date":"2019-05-15
+        08:29:14","type":"buy","rate":"0.01169492","amount":"0.01282608","total":"0.00014999","orderNumber":251304611882},{"globalTradeID":416659202,"tradeID":17859924,"date":"2019-05-15
+        08:29:10","type":"buy","rate":"0.01168999","amount":"0.00872568","total":"0.00010200","orderNumber":251304594899},{"globalTradeID":416659201,"tradeID":17859923,"date":"2019-05-15
+        08:29:09","type":"buy","rate":"0.01168999","amount":"0.01283149","total":"0.00014999","orderNumber":251304588905},{"globalTradeID":416659200,"tradeID":17859922,"date":"2019-05-15
+        08:29:07","type":"buy","rate":"0.01169000","amount":"0.01283147","total":"0.00014999","orderNumber":251304582911},{"globalTradeID":416659198,"tradeID":17859921,"date":"2019-05-15
+        08:29:06","type":"buy","rate":"0.01169495","amount":"0.01282603","total":"0.00014999","orderNumber":251304576917},{"globalTradeID":416659196,"tradeID":17859920,"date":"2019-05-15
+        08:29:05","type":"buy","rate":"0.01169496","amount":"0.01282602","total":"0.00014999","orderNumber":251304566927},{"globalTradeID":416659195,"tradeID":17859919,"date":"2019-05-15
+        08:29:04","type":"buy","rate":"0.01169498","amount":"0.01282601","total":"0.00014999","orderNumber":251304559934},{"globalTradeID":416659193,"tradeID":17859918,"date":"2019-05-15
+        08:29:03","type":"buy","rate":"0.01169498","amount":"0.01282601","total":"0.00014999","orderNumber":251304554939},{"globalTradeID":416659191,"tradeID":17859917,"date":"2019-05-15
+        08:29:02","type":"buy","rate":"0.01169499","amount":"0.01282600","total":"0.00014999","orderNumber":251304548945},{"globalTradeID":416659190,"tradeID":17859916,"date":"2019-05-15
+        08:29:01","type":"buy","rate":"0.01169499","amount":"0.01282599","total":"0.00014999","orderNumber":251304545948},{"globalTradeID":416659184,"tradeID":17859915,"date":"2019-05-15
+        08:29:00","type":"buy","rate":"0.01169995","amount":"0.01282056","total":"0.00014999","orderNumber":251304538955},{"globalTradeID":416659180,"tradeID":17859914,"date":"2019-05-15
+        08:28:59","type":"buy","rate":"0.01169995","amount":"0.01282056","total":"0.00014999","orderNumber":251304532961},{"globalTradeID":416659174,"tradeID":17859913,"date":"2019-05-15
+        08:28:57","type":"buy","rate":"0.01169995","amount":"0.01282056","total":"0.00014999","orderNumber":251304525968},{"globalTradeID":416659173,"tradeID":17859912,"date":"2019-05-15
+        08:28:56","type":"buy","rate":"0.01169995","amount":"0.01282056","total":"0.00014999","orderNumber":251304516977},{"globalTradeID":416659168,"tradeID":17859911,"date":"2019-05-15
+        08:28:55","type":"buy","rate":"0.01169996","amount":"0.01282052","total":"0.00014999","orderNumber":251304503990},{"globalTradeID":416659150,"tradeID":17859910,"date":"2019-05-15
+        08:28:50","type":"buy","rate":"0.01169999","amount":"0.01282052","total":"0.00014999","orderNumber":251304494000},{"globalTradeID":416659142,"tradeID":17859909,"date":"2019-05-15
+        08:28:48","type":"buy","rate":"0.01169999","amount":"0.01282052","total":"0.00014999","orderNumber":251304487007},{"globalTradeID":416659134,"tradeID":17859908,"date":"2019-05-15
+        08:28:47","type":"buy","rate":"0.01169999","amount":"0.01282052","total":"0.00014999","orderNumber":251304481013},{"globalTradeID":416659132,"tradeID":17859907,"date":"2019-05-15
+        08:28:46","type":"buy","rate":"0.01169999","amount":"0.01282052","total":"0.00014999","orderNumber":251304470024},{"globalTradeID":416659130,"tradeID":17859906,"date":"2019-05-15
+        08:28:45","type":"buy","rate":"0.01169999","amount":"0.01282074","total":"0.00015000","orderNumber":251304461033},{"globalTradeID":416659129,"tradeID":17859905,"date":"2019-05-15
+        08:28:44","type":"buy","rate":"0.01169978","amount":"0.01282075","total":"0.00014999","orderNumber":251304450044},{"globalTradeID":416659127,"tradeID":17859904,"date":"2019-05-15
+        08:28:43","type":"buy","rate":"0.01169979","amount":"0.01282073","total":"0.00014999","orderNumber":251304441053},{"globalTradeID":416659124,"tradeID":17859903,"date":"2019-05-15
+        08:28:41","type":"buy","rate":"0.01169981","amount":"0.01282072","total":"0.00014999","orderNumber":251304424070},{"globalTradeID":416659118,"tradeID":17859902,"date":"2019-05-15
+        08:28:40","type":"buy","rate":"0.01169981","amount":"0.01282071","total":"0.00014999","orderNumber":251304419075},{"globalTradeID":416659114,"tradeID":17859901,"date":"2019-05-15
+        08:28:39","type":"buy","rate":"0.01169982","amount":"0.01282071","total":"0.00014999","orderNumber":251304415079},{"globalTradeID":416659110,"tradeID":17859900,"date":"2019-05-15
+        08:28:38","type":"buy","rate":"0.01169983","amount":"0.01282069","total":"0.00014999","orderNumber":251304401093},{"globalTradeID":416659107,"tradeID":17859899,"date":"2019-05-15
+        08:28:37","type":"buy","rate":"0.01169985","amount":"0.01282067","total":"0.00014999","orderNumber":251304391103},{"globalTradeID":416659106,"tradeID":17859898,"date":"2019-05-15
+        08:28:35","type":"buy","rate":"0.01169986","amount":"0.01282066","total":"0.00014999","orderNumber":251304382112},{"globalTradeID":416659104,"tradeID":17859897,"date":"2019-05-15
+        08:28:34","type":"buy","rate":"0.01169989","amount":"0.01282063","total":"0.00014999","orderNumber":251304374120},{"globalTradeID":416659101,"tradeID":17859896,"date":"2019-05-15
+        08:28:33","type":"buy","rate":"0.01169989","amount":"0.01282063","total":"0.00014999","orderNumber":251304366128},{"globalTradeID":416659098,"tradeID":17859895,"date":"2019-05-15
+        08:28:32","type":"buy","rate":"0.01169989","amount":"0.01282063","total":"0.00014999","orderNumber":251304355139},{"globalTradeID":416659094,"tradeID":17859894,"date":"2019-05-15
+        08:28:31","type":"buy","rate":"0.01169989","amount":"0.01282062","total":"0.00014999","orderNumber":251304345149},{"globalTradeID":416659092,"tradeID":17859893,"date":"2019-05-15
+        08:28:30","type":"buy","rate":"0.01169990","amount":"0.01282062","total":"0.00014999","orderNumber":251304335159},{"globalTradeID":416659089,"tradeID":17859892,"date":"2019-05-15
+        08:28:28","type":"buy","rate":"0.01169991","amount":"0.01282061","total":"0.00014999","orderNumber":251304322172},{"globalTradeID":416659088,"tradeID":17859891,"date":"2019-05-15
+        08:28:24","type":"buy","rate":"0.01169990","amount":"0.01282062","total":"0.00014999","orderNumber":251304312182},{"globalTradeID":416659086,"tradeID":17859890,"date":"2019-05-15
+        08:28:23","type":"buy","rate":"0.01169990","amount":"0.01282062","total":"0.00014999","orderNumber":251304301193},{"globalTradeID":416659084,"tradeID":17859889,"date":"2019-05-15
+        08:28:22","type":"buy","rate":"0.01169990","amount":"0.01282062","total":"0.00014999","orderNumber":251304293201},{"globalTradeID":416659082,"tradeID":17859888,"date":"2019-05-15
+        08:28:21","type":"buy","rate":"0.01169991","amount":"0.01282061","total":"0.00014999","orderNumber":251304282212},{"globalTradeID":416659074,"tradeID":17859887,"date":"2019-05-15
+        08:28:20","type":"buy","rate":"0.01169991","amount":"0.01282061","total":"0.00014999","orderNumber":251304272222},{"globalTradeID":416659054,"tradeID":17859886,"date":"2019-05-15
+        08:28:03","type":"sell","rate":"0.01164020","amount":"0.26618291","total":"0.00309842","orderNumber":251304144350},{"globalTradeID":416659040,"tradeID":17859885,"date":"2019-05-15
+        08:27:51","type":"buy","rate":"0.01169490","amount":"0.00000171","total":"0.00000001","orderNumber":251304073421},{"globalTradeID":416659039,"tradeID":17859884,"date":"2019-05-15
+        08:27:51","type":"sell","rate":"0.01164004","amount":"11.62882243","total":"0.13535995","orderNumber":251304068426},{"globalTradeID":416659034,"tradeID":17859883,"date":"2019-05-15
+        08:27:50","type":"sell","rate":"0.01164005","amount":"0.00008676","total":"0.00000100","orderNumber":251304060434},{"globalTradeID":416658924,"tradeID":17859882,"date":"2019-05-15
+        08:26:06","type":"buy","rate":"0.01171434","amount":"0.00002785","total":"0.00000032","orderNumber":251303570924},{"globalTradeID":416658920,"tradeID":17859881,"date":"2019-05-15
+        08:26:05","type":"sell","rate":"0.01161479","amount":"0.00076626","total":"0.00000889","orderNumber":251303561933},{"globalTradeID":416658762,"tradeID":17859880,"date":"2019-05-15
+        08:24:15","type":"buy","rate":"0.01169999","amount":"0.00000170","total":"0.00000001","orderNumber":251303093402},{"globalTradeID":416658607,"tradeID":17859879,"date":"2019-05-15
+        08:22:56","type":"sell","rate":"0.01161294","amount":"0.14421237","total":"0.00167472","orderNumber":251302790705},{"globalTradeID":416658510,"tradeID":17859878,"date":"2019-05-15
+        08:22:28","type":"sell","rate":"0.01161272","amount":"0.00021183","total":"0.00000245","orderNumber":251302694801},{"globalTradeID":416658436,"tradeID":17859877,"date":"2019-05-15
+        08:21:41","type":"sell","rate":"0.01161235","amount":"0.01203756","total":"0.00013978","orderNumber":251302533962},{"globalTradeID":416658309,"tradeID":17859876,"date":"2019-05-15
+        08:20:55","type":"buy","rate":"0.01170500","amount":"0.27426750","total":"0.00321030","orderNumber":251302328168},{"globalTradeID":416658240,"tradeID":17859875,"date":"2019-05-15
+        08:20:32","type":"buy","rate":"0.01170499","amount":"0.27463730","total":"0.00321462","orderNumber":251302215281},{"globalTradeID":416658114,"tradeID":17859874,"date":"2019-05-15
+        08:19:32","type":"sell","rate":"0.01161078","amount":"0.05745301","total":"0.00066707","orderNumber":251301886610},{"globalTradeID":416658072,"tradeID":17859873,"date":"2019-05-15
+        08:19:04","type":"buy","rate":"0.01167000","amount":"0.00000922","total":"0.00000010","orderNumber":251301758738},{"globalTradeID":416658060,"tradeID":17859872,"date":"2019-05-15
+        08:18:53","type":"buy","rate":"0.01167499","amount":"0.00000789","total":"0.00000009","orderNumber":251301716780},{"globalTradeID":416658051,"tradeID":17859871,"date":"2019-05-15
+        08:18:50","type":"sell","rate":"0.01161056","amount":"0.00136513","total":"0.00001584","orderNumber":251301699797},{"globalTradeID":416657943,"tradeID":17859870,"date":"2019-05-15
+        08:18:02","type":"buy","rate":"0.01171498","amount":"0.04268036","total":"0.00049999","orderNumber":251301394103},{"globalTradeID":416657934,"tradeID":17859869,"date":"2019-05-15
+        08:18:00","type":"sell","rate":"0.01161014","amount":"0.47705478","total":"0.00553867","orderNumber":251301383114},{"globalTradeID":416657895,"tradeID":17859868,"date":"2019-05-15
+        08:17:39","type":"buy","rate":"0.01161009","amount":"0.72735814","total":"0.00844469","orderNumber":251301317180},{"globalTradeID":416657893,"tradeID":17859867,"date":"2019-05-15
+        08:17:39","type":"buy","rate":"0.01161009","amount":"4.91338016","total":"0.05704478","orderNumber":251301315182},{"globalTradeID":416657892,"tradeID":17859866,"date":"2019-05-15
+        08:17:39","type":"buy","rate":"0.01161009","amount":"1.63444747","total":"0.01897608","orderNumber":251301312185},{"globalTradeID":416657891,"tradeID":17859865,"date":"2019-05-15
+        08:17:38","type":"sell","rate":"0.01161009","amount":"10.66500000","total":"0.12382160","orderNumber":251301310187},{"globalTradeID":416657890,"tradeID":17859864,"date":"2019-05-15
+        08:17:38","type":"sell","rate":"0.01161012","amount":"53.16100000","total":"0.61720558","orderNumber":251301310187},{"globalTradeID":416657840,"tradeID":17859863,"date":"2019-05-15
+        08:17:12","type":"buy","rate":"0.01165000","amount":"0.00005019","total":"0.00000058","orderNumber":251301247250},{"globalTradeID":416657807,"tradeID":17859862,"date":"2019-05-15
+        08:17:01","type":"buy","rate":"0.01165496","amount":"0.01287004","total":"0.00014999","orderNumber":251301236261},{"globalTradeID":416657518,"tradeID":17859861,"date":"2019-05-15
+        08:15:24","type":"buy","rate":"0.01165500","amount":"0.00000740","total":"0.00000008","orderNumber":251301008489},{"globalTradeID":416657466,"tradeID":17859860,"date":"2019-05-15
+        08:15:01","type":"buy","rate":"0.01165500","amount":"3.00751880","total":"0.03505263","orderNumber":251300941556},{"globalTradeID":416657314,"tradeID":17859859,"date":"2019-05-15
+        08:13:37","type":"buy","rate":"0.01167490","amount":"0.00000171","total":"0.00000001","orderNumber":251300625872},{"globalTradeID":416657286,"tradeID":17859858,"date":"2019-05-15
+        08:13:32","type":"buy","rate":"0.01167491","amount":"0.01284806","total":"0.00014999","orderNumber":251300602895},{"globalTradeID":416657277,"tradeID":17859857,"date":"2019-05-15
+        08:13:30","type":"buy","rate":"0.01167491","amount":"0.01284806","total":"0.00014999","orderNumber":251300599898},{"globalTradeID":416657266,"tradeID":17859856,"date":"2019-05-15
+        08:13:27","type":"sell","rate":"0.01166999","amount":"0.87255088","total":"0.01018266","orderNumber":251300589908},{"globalTradeID":416657078,"tradeID":17859855,"date":"2019-05-15
+        08:11:53","type":"sell","rate":"0.01160410","amount":"0.00222766","total":"0.00002584","orderNumber":251300255243},{"globalTradeID":416656792,"tradeID":17859854,"date":"2019-05-15
+        08:10:10","type":"sell","rate":"0.01160322","amount":"0.00271131","total":"0.00003145","orderNumber":251299932566},{"globalTradeID":416656791,"tradeID":17859853,"date":"2019-05-15
+        08:10:10","type":"buy","rate":"0.01168982","amount":"0.00000582","total":"0.00000006","orderNumber":251299929569},{"globalTradeID":416656622,"tradeID":17859852,"date":"2019-05-15
+        08:09:03","type":"buy","rate":"0.01168500","amount":"4.31077694","total":"0.05037142","orderNumber":251299691807},{"globalTradeID":416656535,"tradeID":17859851,"date":"2019-05-15
+        08:08:22","type":"sell","rate":"0.01160176","amount":"0.00036115","total":"0.00000418","orderNumber":251299523975},{"globalTradeID":416656342,"tradeID":17859850,"date":"2019-05-15
+        08:06:46","type":"buy","rate":"0.01168500","amount":"0.00003903","total":"0.00000045","orderNumber":251299185314},{"globalTradeID":416656289,"tradeID":17859849,"date":"2019-05-15
+        08:06:38","type":"sell","rate":"0.01160054","amount":"0.00008275","total":"0.00000095","orderNumber":251299135364},{"globalTradeID":416656234,"tradeID":17859848,"date":"2019-05-15
+        08:06:14","type":"buy","rate":"0.01160487","amount":"0.00029770","total":"0.00000345","orderNumber":251299034465},{"globalTradeID":416656233,"tradeID":17859847,"date":"2019-05-15
+        08:06:13","type":"buy","rate":"0.01160487","amount":"0.39000000","total":"0.00452589","orderNumber":251299032467},{"globalTradeID":416656229,"tradeID":17859846,"date":"2019-05-15
+        08:06:13","type":"sell","rate":"0.01167499","amount":"0.00071297","total":"0.00000832","orderNumber":251299031468},{"globalTradeID":416656205,"tradeID":17859845,"date":"2019-05-15
+        08:06:01","type":"sell","rate":"0.01167499","amount":"2.58900000","total":"0.03022654","orderNumber":251299018481},{"globalTradeID":416656204,"tradeID":17859844,"date":"2019-05-15
+        08:06:00","type":"sell","rate":"0.01167499","amount":"9.01903200","total":"0.10529710","orderNumber":251299016483},{"globalTradeID":416656088,"tradeID":17859843,"date":"2019-05-15
+        08:05:01","type":"buy","rate":"0.01170000","amount":"0.00001624","total":"0.00000019","orderNumber":251298933566},{"globalTradeID":416655893,"tradeID":17859842,"date":"2019-05-15
+        08:04:03","type":"sell","rate":"0.01167499","amount":"2.70000000","total":"0.03152247","orderNumber":251298848651},{"globalTradeID":416655794,"tradeID":17859841,"date":"2019-05-15
+        08:02:48","type":"sell","rate":"0.01167499","amount":"0.00026809","total":"0.00000312","orderNumber":251298722777},{"globalTradeID":416655780,"tradeID":17859840,"date":"2019-05-15
+        08:02:43","type":"sell","rate":"0.01167499","amount":"0.00090621","total":"0.00001057","orderNumber":251298709790},{"globalTradeID":416655694,"tradeID":17859839,"date":"2019-05-15
+        08:01:42","type":"sell","rate":"0.01167499","amount":"0.02500000","total":"0.00029187","orderNumber":251298561938},{"globalTradeID":416655689,"tradeID":17859838,"date":"2019-05-15
+        08:01:39","type":"sell","rate":"0.01167499","amount":"0.63686962","total":"0.00743544","orderNumber":251298550949},{"globalTradeID":416655660,"tradeID":17859837,"date":"2019-05-15
+        08:01:12","type":"buy","rate":"0.01169991","amount":"3.41007330","total":"0.03989755","orderNumber":251298488012},{"globalTradeID":416655659,"tradeID":17859836,"date":"2019-05-15
+        08:01:12","type":"buy","rate":"0.01169990","amount":"0.85488585","total":"0.01000207","orderNumber":251298488012},{"globalTradeID":416655624,"tradeID":17859835,"date":"2019-05-15
+        08:01:03","type":"sell","rate":"0.01167499","amount":"0.00086595","total":"0.00001010","orderNumber":251298458042},{"globalTradeID":416655553,"tradeID":17859834,"date":"2019-05-15
+        08:00:28","type":"buy","rate":"0.01171535","amount":"0.04027783","total":"0.00047186","orderNumber":251298347153},{"globalTradeID":416655529,"tradeID":17859833,"date":"2019-05-15
+        08:00:18","type":"buy","rate":"0.01171499","amount":"1.35498060","total":"0.01587358","orderNumber":251298321179},{"globalTradeID":416655528,"tradeID":17859832,"date":"2019-05-15
+        08:00:18","type":"buy","rate":"0.01171390","amount":"0.01501940","total":"0.00017593","orderNumber":251298321179},{"globalTradeID":416655351,"tradeID":17859831,"date":"2019-05-15
+        07:59:13","type":"sell","rate":"0.01170498","amount":"0.39684313","total":"0.00464504","orderNumber":251298148352},{"globalTradeID":416655311,"tradeID":17859830,"date":"2019-05-15
+        07:58:48","type":"sell","rate":"0.01170498","amount":"0.19137608","total":"0.00224005","orderNumber":251298091409},{"globalTradeID":416655293,"tradeID":17859829,"date":"2019-05-15
+        07:58:35","type":"sell","rate":"0.01170498","amount":"0.12563444","total":"0.00147054","orderNumber":251298069431},{"globalTradeID":416655198,"tradeID":17859828,"date":"2019-05-15
+        07:58:01","type":"sell","rate":"0.01170498","amount":"0.08096223","total":"0.00094766","orderNumber":251297998502},{"globalTradeID":416655188,"tradeID":17859827,"date":"2019-05-15
+        07:57:56","type":"sell","rate":"0.01170600","amount":"0.00778319","total":"0.00009111","orderNumber":251297979521},{"globalTradeID":416655108,"tradeID":17859826,"date":"2019-05-15
+        07:57:30","type":"sell","rate":"0.01170600","amount":"0.00076798","total":"0.00000898","orderNumber":251297899601},{"globalTradeID":416654920,"tradeID":17859825,"date":"2019-05-15
+        07:55:59","type":"sell","rate":"0.01170498","amount":"0.80001188","total":"0.00936412","orderNumber":251297701799},{"globalTradeID":416654838,"tradeID":17859824,"date":"2019-05-15
+        07:55:34","type":"sell","rate":"0.01170498","amount":"15.81500000","total":"0.18511425","orderNumber":251297652848},{"globalTradeID":416654831,"tradeID":17859823,"date":"2019-05-15
+        07:55:32","type":"sell","rate":"0.01170498","amount":"0.63314099","total":"0.00741090","orderNumber":251297645855},{"globalTradeID":416654830,"tradeID":17859822,"date":"2019-05-15
+        07:55:32","type":"sell","rate":"0.01170934","amount":"1.02003279","total":"0.01194391","orderNumber":251297645855},{"globalTradeID":416654806,"tradeID":17859821,"date":"2019-05-15
+        07:55:25","type":"buy","rate":"0.01170934","amount":"0.00947784","total":"0.00011097","orderNumber":251297631869},{"globalTradeID":416654768,"tradeID":17859820,"date":"2019-05-15
+        07:55:05","type":"sell","rate":"0.01170498","amount":"5.18000000","total":"0.06063179","orderNumber":251297595905},{"globalTradeID":416654754,"tradeID":17859819,"date":"2019-05-15
+        07:55:00","type":"sell","rate":"0.01170498","amount":"1.03000000","total":"0.01205612","orderNumber":251297574926},{"globalTradeID":416654745,"tradeID":17859818,"date":"2019-05-15
+        07:54:58","type":"sell","rate":"0.01170498","amount":"0.07600000","total":"0.00088957","orderNumber":251297559941},{"globalTradeID":416654744,"tradeID":17859817,"date":"2019-05-15
+        07:54:57","type":"sell","rate":"0.01170498","amount":"42.21900000","total":"0.49417255","orderNumber":251297557943},{"globalTradeID":416654743,"tradeID":17859816,"date":"2019-05-15
+        07:54:57","type":"sell","rate":"0.01170498","amount":"10.31400000","total":"0.12072516","orderNumber":251297555945},{"globalTradeID":416654661,"tradeID":17859815,"date":"2019-05-15
+        07:54:42","type":"buy","rate":"0.01170080","amount":"0.01260387","total":"0.00014747","orderNumber":251297519981},{"globalTradeID":416654660,"tradeID":17859814,"date":"2019-05-15
+        07:54:42","type":"buy","rate":"0.01169535","amount":"0.10000000","total":"0.00116953","orderNumber":251297519981},{"globalTradeID":416654659,"tradeID":17859813,"date":"2019-05-15
+        07:54:42","type":"buy","rate":"0.01168499","amount":"1.65246682","total":"0.01930905","orderNumber":251297519981},{"globalTradeID":416654469,"tradeID":17859812,"date":"2019-05-15
+        07:53:31","type":"sell","rate":"0.01167499","amount":"1.09000000","total":"0.01272573","orderNumber":251297348153},{"globalTradeID":416654466,"tradeID":17859811,"date":"2019-05-15
+        07:53:31","type":"sell","rate":"0.01167499","amount":"4.82200000","total":"0.05629680","orderNumber":251297346155},{"globalTradeID":416654386,"tradeID":17859810,"date":"2019-05-15
+        07:52:57","type":"sell","rate":"0.01167499","amount":"2.79053341","total":"0.03257944","orderNumber":251297249252},{"globalTradeID":416654383,"tradeID":17859809,"date":"2019-05-15
+        07:52:54","type":"sell","rate":"0.01167499","amount":"2.73026476","total":"0.03187581","orderNumber":251297243258},{"globalTradeID":416654306,"tradeID":17859808,"date":"2019-05-15
+        07:52:21","type":"sell","rate":"0.01167499","amount":"0.00009507","total":"0.00000110","orderNumber":251297165336},{"globalTradeID":416654302,"tradeID":17859807,"date":"2019-05-15
+        07:52:19","type":"buy","rate":"0.01169499","amount":"0.05278911","total":"0.00061736","orderNumber":251297158343},{"globalTradeID":416654301,"tradeID":17859806,"date":"2019-05-15
+        07:52:19","type":"buy","rate":"0.01168421","amount":"0.02077700","total":"0.00024276","orderNumber":251297158343},{"globalTradeID":416654300,"tradeID":17859805,"date":"2019-05-15
+        07:52:19","type":"buy","rate":"0.01167843","amount":"0.01236300","total":"0.00014438","orderNumber":251297158343},{"globalTradeID":416654292,"tradeID":17859804,"date":"2019-05-15
+        07:52:17","type":"sell","rate":"0.01167499","amount":"0.01681029","total":"0.00019625","orderNumber":251297153348},{"globalTradeID":416654287,"tradeID":17859803,"date":"2019-05-15
+        07:52:16","type":"sell","rate":"0.01167499","amount":"0.00034603","total":"0.00000403","orderNumber":251297152349},{"globalTradeID":416654254,"tradeID":17859802,"date":"2019-05-15
+        07:51:57","type":"sell","rate":"0.01167499","amount":"4.20700000","total":"0.04911668","orderNumber":251297105396},{"globalTradeID":416654250,"tradeID":17859801,"date":"2019-05-15
+        07:51:56","type":"buy","rate":"0.01167499","amount":"0.04193169","total":"0.00048955","orderNumber":251297104397},{"globalTradeID":416654174,"tradeID":17859800,"date":"2019-05-15
+        07:50:51","type":"sell","rate":"0.01159907","amount":"2.69807200","total":"0.03129512","orderNumber":251296931570},{"globalTradeID":416654173,"tradeID":17859799,"date":"2019-05-15
+        07:50:51","type":"sell","rate":"0.01159908","amount":"0.01000000","total":"0.00011599","orderNumber":251296931570},{"globalTradeID":416654148,"tradeID":17859798,"date":"2019-05-15
+        07:50:37","type":"sell","rate":"0.01159901","amount":"0.00123113","total":"0.00001427","orderNumber":251296891610},{"globalTradeID":416654130,"tradeID":17859797,"date":"2019-05-15
+        07:50:30","type":"sell","rate":"0.01159099","amount":"0.00076870","total":"0.00000890","orderNumber":251296860641},{"globalTradeID":416654037,"tradeID":17859796,"date":"2019-05-15
+        07:48:50","type":"sell","rate":"0.01159015","amount":"2.70723458","total":"0.03137725","orderNumber":251296436066},{"globalTradeID":416654036,"tradeID":17859795,"date":"2019-05-15
+        07:48:50","type":"sell","rate":"0.01166110","amount":"0.00084777","total":"0.00000988","orderNumber":251296436066},{"globalTradeID":416653963,"tradeID":17859794,"date":"2019-05-15
+        07:47:37","type":"sell","rate":"0.01166110","amount":"0.06300000","total":"0.00073464","orderNumber":251296237265},{"globalTradeID":416653961,"tradeID":17859793,"date":"2019-05-15
+        07:47:37","type":"buy","rate":"0.01166110","amount":"0.01261157","total":"0.00014706","orderNumber":251296236266},{"globalTradeID":416653774,"tradeID":17859792,"date":"2019-05-15
+        07:46:08","type":"sell","rate":"0.01158880","amount":"0.14320673","total":"0.00165959","orderNumber":251295920582},{"globalTradeID":416653709,"tradeID":17859791,"date":"2019-05-15
+        07:45:27","type":"sell","rate":"0.01158846","amount":"0.00025197","total":"0.00000291","orderNumber":251295761741},{"globalTradeID":416653701,"tradeID":17859790,"date":"2019-05-15
+        07:45:24","type":"sell","rate":"0.01158843","amount":"0.00265523","total":"0.00003076","orderNumber":251295743759},{"globalTradeID":416653694,"tradeID":17859789,"date":"2019-05-15
+        07:45:23","type":"sell","rate":"0.01158841","amount":"0.00033999","total":"0.00000393","orderNumber":251295735767},{"globalTradeID":416653519,"tradeID":17859788,"date":"2019-05-15
+        07:43:58","type":"sell","rate":"0.01158785","amount":"0.01175445","total":"0.00013620","orderNumber":251295310193},{"globalTradeID":416653499,"tradeID":17859787,"date":"2019-05-15
+        07:43:45","type":"sell","rate":"0.01158779","amount":"0.00049017","total":"0.00000567","orderNumber":251295272231},{"globalTradeID":416653497,"tradeID":17859786,"date":"2019-05-15
+        07:43:43","type":"sell","rate":"0.01158777","amount":"0.00892924","total":"0.00010346","orderNumber":251295257246},{"globalTradeID":416653394,"tradeID":17859785,"date":"2019-05-15
+        07:42:28","type":"buy","rate":"0.01165573","amount":"0.59576100","total":"0.00694402","orderNumber":251294926577},{"globalTradeID":416653393,"tradeID":17859784,"date":"2019-05-15
+        07:42:28","type":"buy","rate":"0.01165535","amount":"0.10000000","total":"0.00116553","orderNumber":251294926577},{"globalTradeID":416653392,"tradeID":17859783,"date":"2019-05-15
+        07:42:28","type":"buy","rate":"0.01164060","amount":"0.01272846","total":"0.00014816","orderNumber":251294926577},{"globalTradeID":416653391,"tradeID":17859782,"date":"2019-05-15
+        07:42:28","type":"buy","rate":"0.01163580","amount":"0.03281384","total":"0.00038181","orderNumber":251294926577},{"globalTradeID":416653390,"tradeID":17859781,"date":"2019-05-15
+        07:42:28","type":"buy","rate":"0.01163535","amount":"0.05702751","total":"0.00066353","orderNumber":251294926577},{"globalTradeID":416653373,"tradeID":17859780,"date":"2019-05-15
+        07:42:09","type":"sell","rate":"0.01158723","amount":"66.24616563","total":"0.76760955","orderNumber":251294866637},{"globalTradeID":416653334,"tradeID":17859779,"date":"2019-05-15
+        07:41:58","type":"sell","rate":"0.01158717","amount":"0.00023129","total":"0.00000267","orderNumber":251294840663},{"globalTradeID":416653331,"tradeID":17859778,"date":"2019-05-15
+        07:41:56","type":"sell","rate":"0.01158716","amount":"0.00001553","total":"0.00000017","orderNumber":251294837666},{"globalTradeID":416653210,"tradeID":17859777,"date":"2019-05-15
+        07:40:34","type":"buy","rate":"0.01162574","amount":"0.57791132","total":"0.00671864","orderNumber":251294597906},{"globalTradeID":416653079,"tradeID":17859776,"date":"2019-05-15
+        07:39:21","type":"buy","rate":"0.01163535","amount":"0.04297249","total":"0.00049999","orderNumber":251294381123},{"globalTradeID":416653066,"tradeID":17859775,"date":"2019-05-15
+        07:39:18","type":"buy","rate":"0.01162572","amount":"0.01177800","total":"0.00013692","orderNumber":251294359145},{"globalTradeID":416653005,"tradeID":17859774,"date":"2019-05-15
+        07:38:48","type":"sell","rate":"0.01158586","amount":"0.18720644","total":"0.00216894","orderNumber":251294232272},{"globalTradeID":416652976,"tradeID":17859773,"date":"2019-05-15
+        07:38:30","type":"buy","rate":"0.01162506","amount":"0.24922696","total":"0.00289727","orderNumber":251294179325},{"globalTradeID":416652972,"tradeID":17859772,"date":"2019-05-15
+        07:38:26","type":"sell","rate":"0.01158003","amount":"0.00057426","total":"0.00000664","orderNumber":251294156348},{"globalTradeID":416652963,"tradeID":17859771,"date":"2019-05-15
+        07:38:24","type":"sell","rate":"0.01160000","amount":"0.00224310","total":"0.00002601","orderNumber":251294146358},{"globalTradeID":416652962,"tradeID":17859770,"date":"2019-05-15
+        07:38:24","type":"buy","rate":"0.01161535","amount":"1.00000000","total":"0.01161535","orderNumber":251294144360},{"globalTradeID":416652718,"tradeID":17859769,"date":"2019-05-15
+        07:36:44","type":"sell","rate":"0.01157378","amount":"0.00011577","total":"0.00000133","orderNumber":251293827677},{"globalTradeID":416652349,"tradeID":17859768,"date":"2019-05-15
+        07:33:39","type":"sell","rate":"0.01157377","amount":"2.74678744","total":"0.03179068","orderNumber":251293426079},{"globalTradeID":416652316,"tradeID":17859767,"date":"2019-05-15
+        07:33:31","type":"sell","rate":"0.01157377","amount":"2.20000000","total":"0.02546229","orderNumber":251293407098},{"globalTradeID":416652194,"tradeID":17859766,"date":"2019-05-15
+        07:33:12","type":"sell","rate":"0.01157377","amount":"0.00038362","total":"0.00000443","orderNumber":251293356149}]'
+    http_version: 
+  recorded_at: Wed, 15 May 2019 08:38:55 GMT
+recorded_with: VCR 4.0.0
