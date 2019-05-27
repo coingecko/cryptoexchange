@@ -100,7 +100,7 @@ Or install it yourself as:
 | Bits Blockchain   | Y       | Y          |         |         | Y           |          | bits_blockchain   |       |
 | Bitsane           | Y       | Y [x]      |         |         | Y           |          | bitsane           |       |
 | Bitshares Assets  | Y       |            |         |         | User-Defined|          | bitshares_assets  |       |
-| Bitso             | Y       |            |         |         | Y           |          | bitso             |       |
+| Bitso             | Y       | Y [x]      |         |         | Y           |          | bitso             |       |
 | Bitstamp          | Y       | Y [x]      | Y       |         | User-Defined|          | bitstamp          |       |
 | Bitsten           | Y       | Y [x]      | N       |         | Y           | Y        | bitsten           |       |
 | Bitstorage        | Y       | Y [x]      | Y       |         | Y           | Y        | bitstorage        |       |
