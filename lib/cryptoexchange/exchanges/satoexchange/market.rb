@@ -19,8 +19,12 @@ module Cryptoexchange::Exchanges
           market_pair.base == base && market_pair.target == target
         end
 
-        market_pair.inst_id = mp_raw["id"]
-        market_pair
+        Cryptoexchange::Models::MarketPair.new(
+          base: base,
+          target: target,
+          inst_id: mp_raw["id"],
+          market: Satoexchange::Market::NAME
+        )
       end
     end
   end
