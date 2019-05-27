@@ -20,10 +20,10 @@ module Cryptoexchange::Exchanges
         end
 
         Cryptoexchange::Models::MarketPair.new(
-          base: base,
-          target: target,
+          base: market_pair.base,
+          target: market_pair.target,
           inst_id: mp_raw["id"],
-          market: Satoexchange::Market::NAME
+          market: Cryptoexchange::Exchanges::Satoexchange::Market::NAME
         )
       end
     end
