@@ -338,6 +338,7 @@ Or install it yourself as:
 | Paro Exchange     | Y       |            |         |         | Y           |          | paroexchange      |       |
 | Paymium           | Y       | Y          | Y       |         | User-Defined|          | paymium           |       |
 | Poloniex          | Y       | Y [x]      | Y [limit: 200]       |         | Y           | Y        | poloniex          |       |
+| Prixbit           | Y       |            |         |         | Y           | Y        | prixbit           |       |
 | Purcow            | Y       |            |         |         | Y           | Y        | purcow            |       |
 | QBTC              | Y       | Y          | Y       |         | Y           |          | qbtc              |       |
 | Qryptos           | Y       |            |         |         | Y           |          | qryptos           |       |
