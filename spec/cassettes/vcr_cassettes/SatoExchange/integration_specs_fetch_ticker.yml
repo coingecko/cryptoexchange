@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.satoexchange.com/api/v1/get_market_history/?market_id=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.satoexchange.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Oct 2018 16:41:33 GMT
+      Server:
+      - Apache
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - PHPSESSID=k5rptgqaikh7p3sjmnqptmtae3; path=/
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: '{"market":{"id":"1","slug":"BCH\/BTC","created_date":"1527778551","last_price":"0.07500000","high":"0","low":"0","ask":"0.30000000","bid":"0.04500000","growth":"0","volume":"0.00000000"},"history":[{"created_date":"2018-10-01
+        13:16:39","type":"buy","price":"0.07500000","amount":"0.00134728","total":"0.00010105"},{"created_date":"2018-09-22
+        03:31:01","type":"buy","price":"0.09950000","amount":"0.02658151","total":"0.00264486"},{"created_date":"2018-09-22
+        02:36:47","type":"buy","price":"0.09950000","amount":"0.01068080","total":"0.00106274"},{"created_date":"2018-09-21
+        15:52:06","type":"buy","price":"0.09950000","amount":"0.00051597","total":"0.00005134"},{"created_date":"2018-09-21
+        07:38:02","type":"buy","price":"0.09950000","amount":"0.00388889","total":"0.00038694"},{"created_date":"2018-09-19
+        08:10:04","type":"buy","price":"0.09950000","amount":"0.01264824","total":"0.00125850"},{"created_date":"2018-09-19
+        06:41:48","type":"buy","price":"0.08000000","amount":"0.00008750","total":"0.00000700"},{"created_date":"2018-09-17
+        14:47:30","type":"buy","price":"0.08000000","amount":"0.00491250","total":"0.00039300"},{"created_date":"2018-09-15
+        01:02:31","type":"buy","price":"0.02000000","amount":"0.00500000","total":"0.00010000"},{"created_date":"2018-09-15
+        00:50:46","type":"sell","price":"0.02000000","amount":"0.00500000","total":"0.00010000"},{"created_date":"2018-09-04
+        06:11:45","type":"sell","price":"0.05000000","amount":"0.00833224","total":"0.00041661"},{"created_date":"2018-08-30
+        12:51:58","type":"sell","price":"0.04090000","amount":"0.00340557","total":"0.00013929"},{"created_date":"2018-08-20
+        18:59:50","type":"buy","price":"0.04000000","amount":"0.00165125","total":"0.00006605"},{"created_date":"2018-08-20
+        01:43:06","type":"buy","price":"0.04000000","amount":"0.00495100","total":"0.00019804"},{"created_date":"2018-08-19
+        10:13:59","type":"sell","price":"0.04000000","amount":"0.00339775","total":"0.00013591"},{"created_date":"2018-08-07
+        10:27:38","type":"buy","price":"0.09950000","amount":"0.02537568","total":"0.00252488"},{"created_date":"2018-08-06
+        23:55:27","type":"buy","price":"0.05000000","amount":"0.00360500","total":"0.00018025"},{"created_date":"2018-07-27
+        01:24:02","type":"buy","price":"0.05000000","amount":"0.00350000","total":"0.00017500"},{"created_date":"2018-07-26
+        16:11:02","type":"sell","price":"0.01000000","amount":"0.01165500","total":"0.00011655"},{"created_date":"2018-07-26
+        13:38:56","type":"buy","price":"0.11000000","amount":"0.00350000","total":"0.00038500"},{"created_date":"2018-07-26
+        08:57:19","type":"buy","price":"0.11000000","amount":"0.00650000","total":"0.00071500"},{"created_date":"2018-07-21
+        14:35:10","type":"buy","price":"0.40000000","amount":"0.00030931","total":"0.00012372"},{"created_date":"2018-07-21
+        14:15:07","type":"buy","price":"0.10000000","amount":"0.00165900","total":"0.00016590"},{"created_date":"2018-07-20
+        13:42:04","type":"buy","price":"0.10000000","amount":"0.00922054","total":"0.00092205"},{"created_date":"2018-07-20
+        13:41:08","type":"buy","price":"0.09900000","amount":"0.00000002","total":"0.00000000"},{"created_date":"2018-07-20
+        13:40:28","type":"buy","price":"0.09900000","amount":"0.00136970","total":"0.00013560"},{"created_date":"2018-07-20
+        04:18:41","type":"buy","price":"0.09900000","amount":"0.00194446","total":"0.00019250"},{"created_date":"2018-07-20
+        04:18:41","type":"buy","price":"0.09900000","amount":"0.00055650","total":"0.00005509"},{"created_date":"2018-07-19
+        02:23:08","type":"sell","price":"0.10000000","amount":"0.00100000","total":"0.00010000"},{"created_date":"2018-07-19
+        00:33:05","type":"buy","price":"0.10000000","amount":"0.00000000","total":"0.00000000"},{"created_date":"2018-07-19
+        00:29:23","type":"sell","price":"0.10000000","amount":"0.00000000","total":"0.00000000"},{"created_date":"2018-07-19
+        00:29:23","type":"sell","price":"0.10000000","amount":"0.00100000","total":"0.00010000"},{"created_date":"2018-07-18
+        21:25:25","type":"buy","price":"0.10000000","amount":"0.00100500","total":"0.00010050"},{"created_date":"2018-07-18
+        21:25:25","type":"buy","price":"0.10000000","amount":"0.00060000","total":"0.00006000"},{"created_date":"2018-07-16
+        06:37:14","type":"sell","price":"0.10000000","amount":"0.00100000","total":"0.00010000"}],"status":{"type":"success","msg":"Query
+        successful"}}'
+    http_version: 
+  recorded_at: Thu, 11 Oct 2018 16:41:33 GMT
+recorded_with: VCR 4.0.0
