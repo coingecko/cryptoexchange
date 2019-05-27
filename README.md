@@ -269,7 +269,7 @@ Or install it yourself as:
 | Indodax           | Y       | Y [x]      | Y       |         | User-Defined| N        | indodax           |       |
 | IndependentReserve| Y       | N          | N       |         | Y           | Y        |independent_reserve|       |
 | InfinityCoin      | Y       |            |         |         | Y           | Y        | infinity_coin     |       |
-| InstantBitex      | Y       | Y          | Y       |         | Y           |          | instantbitex      |       |
+| InstantBitex      | Y       | Y [x]      | Y       |         | Y           |          | instantbitex      |       |
 | Iqfinex           | Y       | Y          | Y       |         | Y           | Y        | iqfinex           |       |
 | Ironex            | Y       |            |         |         | Y           |          | ironex            |       |
 | Itbit             | Y       | Y [x]      | Y       |         | User-Defined|          | itbit             |       |
