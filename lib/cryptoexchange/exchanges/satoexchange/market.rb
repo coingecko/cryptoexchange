@@ -1,4 +1,3 @@
-require 'byebug'
 module Cryptoexchange::Exchanges
   module Satoexchange
     class Market < Cryptoexchange::Models::Market
