@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitso.com/v3/order_book/?book=BTC_MXN
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitso.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 27 May 2019 07:30:40 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '6214'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dd1fd2205b4b1978845ddaa505559fc741558942239; expires=Tue, 26-May-20
+        07:30:39 GMT; path=/; domain=.bitso.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - sameorigin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Permitted-Cross-Domain-Policies:
+      - master-only
+      Content-Security-Policy:
+      - frame-ancestors 'self';
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd648e7eaa5d1df-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"payload":{"updated_at":"2019-05-27T07:30:40+00:00","bids":[{"book":"btc_mxn","price":"165127.96","amount":"0.10185399"},{"book":"btc_mxn","price":"165125.37","amount":"4.05000000"},{"book":"btc_mxn","price":"165122.19","amount":"0.10185399"},{"book":"btc_mxn","price":"165121.79","amount":"40.50000000"},{"book":"btc_mxn","price":"164998.39","amount":"0.00946925"},{"book":"btc_mxn","price":"164734.00","amount":"0.00355324"},{"book":"btc_mxn","price":"164550.00","amount":"0.15192951"},{"book":"btc_mxn","price":"164516.00","amount":"0.00810335"},{"book":"btc_mxn","price":"164511.00","amount":"0.00790221"},{"book":"btc_mxn","price":"164510.00","amount":"0.12759103"},{"book":"btc_mxn","price":"164507.00","amount":"0.01519693"},{"book":"btc_mxn","price":"164505.00","amount":"0.00607885"},{"book":"btc_mxn","price":"164501.10","amount":"0.81198965"},{"book":"btc_mxn","price":"164500.00","amount":"1.06034373"},{"book":"btc_mxn","price":"164200.00","amount":"0.00100000"},{"book":"btc_mxn","price":"164001.10","amount":"5.03722476"},{"book":"btc_mxn","price":"164000.01","amount":"0.00460518"},{"book":"btc_mxn","price":"164000.00","amount":"0.30537965"},{"book":"btc_mxn","price":"163900.00","amount":"0.05665480"},{"book":"btc_mxn","price":"163800.00","amount":"0.03052504"},{"book":"btc_mxn","price":"163557.23","amount":"0.00012229"},{"book":"btc_mxn","price":"163500.00","amount":"0.00913762"},{"book":"btc_mxn","price":"163350.00","amount":"0.00059382"},{"book":"btc_mxn","price":"163299.00","amount":"0.15000000"},{"book":"btc_mxn","price":"163295.00","amount":"0.01530972"},{"book":"btc_mxn","price":"163200.00","amount":"0.00100000"},{"book":"btc_mxn","price":"163051.00","amount":"0.29622634"},{"book":"btc_mxn","price":"163000.00","amount":"0.03312437"},{"book":"btc_mxn","price":"162999.00","amount":"0.00294554"},{"book":"btc_mxn","price":"162975.00","amount":"0.02147569"},{"book":"btc_mxn","price":"162896.99","amount":"0.00701032"},{"book":"btc_mxn","price":"162891.67","amount":"20.25000000"},{"book":"btc_mxn","price":"162800.00","amount":"0.00122851"},{"book":"btc_mxn","price":"162701.00","amount":"0.01843874"},{"book":"btc_mxn","price":"162601.00","amount":"0.01845008"},{"book":"btc_mxn","price":"162555.00","amount":"0.00922765"},{"book":"btc_mxn","price":"162501.00","amount":"0.12997459"},{"book":"btc_mxn","price":"162500.00","amount":"0.61384616"},{"book":"btc_mxn","price":"162401.00","amount":"0.01847280"},{"book":"btc_mxn","price":"162390.02","amount":"0.03765010"},{"book":"btc_mxn","price":"162390.01","amount":"0.04027958"},{"book":"btc_mxn","price":"162301.00","amount":"0.01848418"},{"book":"btc_mxn","price":"162300.00","amount":"0.00123229"},{"book":"btc_mxn","price":"162272.22","amount":"0.00309006"},{"book":"btc_mxn","price":"162201.00","amount":"0.01849558"},{"book":"btc_mxn","price":"162200.01","amount":"0.00090000"},{"book":"btc_mxn","price":"162200.00","amount":"0.00061658"},{"book":"btc_mxn","price":"162193.92","amount":"0.00195387"},{"book":"btc_mxn","price":"162139.00","amount":"0.02467020"},{"book":"btc_mxn","price":"162101.00","amount":"0.01850699"}],"asks":[{"book":"btc_mxn","price":"166446.99","amount":"0.00133990"},{"book":"btc_mxn","price":"166447.07","amount":"0.00236399"},{"book":"btc_mxn","price":"166450.00","amount":"0.39969077"},{"book":"btc_mxn","price":"166496.40","amount":"0.00449399"},{"book":"btc_mxn","price":"166499.00","amount":"0.00060061"},{"book":"btc_mxn","price":"166500.00","amount":"0.75442353"},{"book":"btc_mxn","price":"166799.96","amount":"4.05000000"},{"book":"btc_mxn","price":"166799.97","amount":"0.01316007"},{"book":"btc_mxn","price":"166800.00","amount":"0.01140229"},{"book":"btc_mxn","price":"167000.00","amount":"0.02921336"},{"book":"btc_mxn","price":"167000.01","amount":"0.02994012"},{"book":"btc_mxn","price":"167099.99","amount":"40.50000000"},{"book":"btc_mxn","price":"167100.00","amount":"0.00598445"},{"book":"btc_mxn","price":"167199.02","amount":"0.00314211"},{"book":"btc_mxn","price":"167200.00","amount":"0.06578949"},{"book":"btc_mxn","price":"167300.00","amount":"0.00597729"},{"book":"btc_mxn","price":"167400.00","amount":"0.00597372"},{"book":"btc_mxn","price":"167485.00","amount":"0.10000000"},{"book":"btc_mxn","price":"167495.00","amount":"0.00298517"},{"book":"btc_mxn","price":"167500.00","amount":"0.00615957"},{"book":"btc_mxn","price":"167550.00","amount":"0.00050000"},{"book":"btc_mxn","price":"167650.00","amount":"0.00596481"},{"book":"btc_mxn","price":"167700.00","amount":"0.00059631"},{"book":"btc_mxn","price":"167750.00","amount":"0.00596126"},{"book":"btc_mxn","price":"167775.00","amount":"0.00050000"},{"book":"btc_mxn","price":"167800.00","amount":"0.00745622"},{"book":"btc_mxn","price":"167995.00","amount":"0.00050000"},{"book":"btc_mxn","price":"168000.00","amount":"0.01772911"},{"book":"btc_mxn","price":"168000.01","amount":"0.02976191"},{"book":"btc_mxn","price":"168000.99","amount":"0.06482885"},{"book":"btc_mxn","price":"168055.00","amount":"0.00050000"},{"book":"btc_mxn","price":"168101.00","amount":"0.10000000"},{"book":"btc_mxn","price":"168109.22","amount":"0.00060121"},{"book":"btc_mxn","price":"168125.00","amount":"0.00100000"},{"book":"btc_mxn","price":"168150.00","amount":"0.01254944"},{"book":"btc_mxn","price":"168200.01","amount":"0.00521950"},{"book":"btc_mxn","price":"168250.00","amount":"0.00050000"},{"book":"btc_mxn","price":"168300.00","amount":"0.00100000"},{"book":"btc_mxn","price":"168349.00","amount":"0.00033493"},{"book":"btc_mxn","price":"168400.00","amount":"0.09914638"},{"book":"btc_mxn","price":"168475.00","amount":"0.00050000"},{"book":"btc_mxn","price":"168484.27","amount":"20.25000000"},{"book":"btc_mxn","price":"168500.00","amount":"0.16295827"},{"book":"btc_mxn","price":"168500.02","amount":"0.00329154"},{"book":"btc_mxn","price":"168539.90","amount":"0.04810703"},{"book":"btc_mxn","price":"168550.00","amount":"0.00100000"},{"book":"btc_mxn","price":"168695.00","amount":"0.00050000"},{"book":"btc_mxn","price":"168765.00","amount":"0.00100000"},{"book":"btc_mxn","price":"168780.00","amount":"0.00240631"},{"book":"btc_mxn","price":"168798.90","amount":"0.11000000"}],"sequence":"188826402"}}'
+    http_version: 
+  recorded_at: Mon, 27 May 2019 07:30:40 GMT
+recorded_with: VCR 4.0.0
