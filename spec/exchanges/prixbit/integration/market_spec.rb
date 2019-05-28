@@ -6,6 +6,10 @@ RSpec.describe 'Prixbit integration specs' do
   let(:snt_krw_pair) { Cryptoexchange::Models::MarketPair.new(base: 'snt', target: 'krw', market: 'prixbit') }
 
   it 'fetch pairs' do
+    double = instance_double("Cryptoexchange::Exchanges::Prixbit::Services::Pairs")
+    # Stub date to VCR query date to prixbit, if VCR changes, update this date
+    Cryptoexchange::Exchanges::Prixbit::Services::Pairs.any_instance.stub(:date_now){ Date.new(2019,5,28) }
+
     pairs = client.pairs('prixbit')
     expect(pairs).not_to be_empty
 
