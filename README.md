@@ -323,7 +323,7 @@ Or install it yourself as:
 | Oceanex           | Y       | Y          | Y       |         | Y           | Y        | oceanex           |       |
 | Octaex            | Y       | Y          | Y       |         | Y           |          | octaex            |       |
 | OEX               | Y       | Y [x]      |         |         | Y           |          | oex               |       |
-| OKCoin            | Y       |            |         |         | User-Defined|          | okcoin            |       |
+| OKCoin            | Y       | Y [x]      |         |         | Y           |          | okcoin            |       |
 | OKEx              | Y       | Y [x]      | Y [limit: 60]      |         | Y           | Y        | okex              |       |
 | OKEx Perpetual Swaps | Y (no volume) | Y (can't map) |         |         | Y           | Y        | okex_swap         |futures|
 | Omgfin            | Y       | Y [x]      |         |         | Y           | Y        | omgfin            |       |
