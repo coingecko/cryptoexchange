@@ -2,6 +2,7 @@ module Cryptoexchange::Exchanges
   module Okcoin
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Okcoin::Market::API_URL}/instruments/ticker"
 
         def fetch
           output = super
@@ -9,15 +10,14 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          market_pairs = []
-          output.each do |pair|
-            market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair[:base],
-                              target: pair[:target],
-                              market: Okcoin::Market::NAME
-                            )
+          output.map do |pair|
+            base, target = pair['instrument_id'].split("-")
+            Cryptoexchange::Models::MarketPair.new(
+              base:   base,
+              target: target,
+              market: Okcoin::Market::NAME
+            )
           end
-          market_pairs
         end
       end
     end
