@@ -2,11 +2,8 @@ module Cryptoexchange::Exchanges
   module Prixbit
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        date = Date.today.to_s
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Prixbit::Market::API_URL}/ticker/24hr/#{date}"
-
         def fetch
-          output = super
+          output = fetch_via_api(pairs_url)
           adapt(output)
         end
 
@@ -22,6 +19,14 @@ module Cryptoexchange::Exchanges
             )
           end
           market_pairs
+        end
+
+        def pairs_url
+          "#{Cryptoexchange::Exchanges::Prixbit::Market::API_URL}/ticker/24hr/#{date_now}"
+        end
+
+        def date_now
+          Date.today.to_s
         end
       end
     end
