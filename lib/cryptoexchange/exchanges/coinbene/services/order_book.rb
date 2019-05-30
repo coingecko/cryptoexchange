@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
           order_book.market    = Coinbene::Market::NAME
           order_book.asks      = adapt_orders HashHelper.dig(output, 'orderbook', 'asks')
           order_book.bids      = adapt_orders HashHelper.dig(output, 'orderbook', 'bids')
-          order_book.timestamp = output['timestamp'] / 1000
+          order_book.timestamp = nil
           order_book.payload   = output
           order_book
         end
