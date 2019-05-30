@@ -19,8 +19,8 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |pair|
-            base = pair['baseAsset']
-            target = pair['tradeAsset']
+            base = pair['tradeAsset']
+            target = pair['baseAsset']
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
                             target: target,
@@ -36,7 +36,7 @@ module Cryptoexchange::Exchanges
           ticker.target = market_pair.target
           ticker.market = Neblidex::Market::NAME
           ticker.last = NumericHelper.to_d(output['lastPrice'])
-          ticker.volume = NumericHelper.to_d(output['baseVolume24Hour'])
+          ticker.volume = NumericHelper.to_d(output['tradeVolume24Hour'])
           ticker.timestamp = nil
           ticker.payload = output
           ticker

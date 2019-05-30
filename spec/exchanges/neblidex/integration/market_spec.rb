@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'NebliDex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_nebl_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'NEBL', market: 'neblidex') }
+  let(:btc_nebl_pair) { Cryptoexchange::Models::MarketPair.new(base: 'NEBL', target: 'BTC', market: 'neblidex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('neblidex')
@@ -17,8 +17,8 @@ RSpec.describe 'NebliDex integration specs' do
   it 'fetch ticker' do
     ticker = client.ticker(btc_nebl_pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'NEBL'
+    expect(ticker.base).to eq 'NEBL'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'neblidex'
 
     expect(ticker.last).to be_a Numeric
