@@ -11,8 +11,8 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output.map do |output|
-            target = output['baseCoin']
-            base   = output['mtchCoin']
+            target = output['base_coin']
+            base   = output['match_coin']
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,

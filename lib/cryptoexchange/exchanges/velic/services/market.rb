@@ -19,8 +19,8 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |ticker|
-            target      = ticker['baseCoin']
-            base        = ticker['mtchCoin']
+            target      = ticker['base_coin']
+            base        = ticker['match_coin']
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
@@ -35,12 +35,12 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Velic::Market::NAME
-          
-          ticker.last      = NumericHelper.to_d(output['recPrice'])
-          ticker.high      = NumericHelper.to_d(output['highPrice'])
-          ticker.low       = NumericHelper.to_d(output['lowPrice'])
-          ticker.volume    = NumericHelper.to_d(output['matchCurrcyVol'])
-          ticker.change    = NumericHelper.to_d(output['chngRate'])
+
+          ticker.last      = NumericHelper.to_d(output['recent_price'])
+          ticker.high      = NumericHelper.to_d(output['high_price'])
+          ticker.low       = NumericHelper.to_d(output['low_price'])
+          ticker.volume    = NumericHelper.to_d(output['volume_by_matchcoin_currency'])
+          ticker.change    = NumericHelper.to_d(output['price_changed_rate'])
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
