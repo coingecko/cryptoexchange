@@ -25,6 +25,10 @@ RSpec.describe 'Prixbit integration specs' do
   end
 
   it 'fetch ticker' do
+    double = instance_double("Cryptoexchange::Exchanges::Prixbit::Services::Pairs")
+    # Stub date to VCR query date to prixbit, if VCR changes, update this date
+    Cryptoexchange::Exchanges::Prixbit::Services::Market.any_instance.stub(:date_now){ Date.new(2019,5,28) }
+
     ticker = client.ticker(snt_krw_pair)
 
     expect(ticker.base).to eq 'SNT'

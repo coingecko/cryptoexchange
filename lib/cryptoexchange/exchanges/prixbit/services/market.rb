@@ -14,8 +14,11 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          date = Date.today.to_s
-          "#{Cryptoexchange::Exchanges::Prixbit::Market::API_URL}/ticker/24hr/#{date}"
+          "#{Cryptoexchange::Exchanges::Prixbit::Market::API_URL}/ticker/24hr/#{date_now}"
+        end
+
+        def date_now
+          Date.today.to_s
         end
 
         def adapt_all(output)
