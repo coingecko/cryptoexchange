@@ -24,8 +24,7 @@ RSpec.describe 'NebliDex integration specs' do
     expect(ticker.last).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
 
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
   end
 end

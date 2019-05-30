@@ -37,7 +37,7 @@ module Cryptoexchange::Exchanges
           ticker.market = Neblidex::Market::NAME
           ticker.last = NumericHelper.to_d(output['lastPrice'])
           ticker.volume = NumericHelper.to_d(output['baseVolume24Hour'])
-          ticker.timestamp = Time.now.to_i
+          ticker.timestamp = nil
           ticker.payload = output
           ticker
         end
