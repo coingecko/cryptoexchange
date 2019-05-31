@@ -419,7 +419,7 @@ Or install it yourself as:
 | ZB                | Y       | Y [x]      | Y       |         | Y           | Y        | zb                |       |
 | ZBG               | Y       | Y [x]      | Y       |         | Y           |          | zbg               |       |
 | Zbmega            | Y       | N          | N       |         | Y           | Y        | zbmega            |       |
-| Zebpay            | Y       |            |         |         | Y           |          | Zebpay            |       |
+| Zebpay            | Y       | Y [x]      |         |         | Y           | Y        | Zebpay            |       |
 | Zeniex            | Y       | Y          | Y       |         | Y           |          | zeniex            |       |
 | ZG                | Y       | Y [x]      | Y       |         | Y           | Y        | zg                |       |
 | ZG.TOP            | Y       |            |         |         | Y           |          | zgtop             |       |
