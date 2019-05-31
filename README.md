@@ -202,6 +202,7 @@ Or install it yourself as:
 | Cryptopia         | Y       | Y          | Y       |         | Y           |          | cryptopia         |       |
 | Crytrex           | Y       | Y          | Y       |         | Y           |          | crytrex           |       |
 | Cybex             | Y       |            | Y       |         | Y           |          | cybex             |       |
+| Dach.Exchange     | Y       |            |         |         | Y           | Y        | dach_exchange     |       |
 | Dakuce            | Y       | Y          | Y       |         | Y           |          | dakuce            |       |
 | Daybit            | Y       |            |         |         | Y           | Y        | daybit            |       |
 | Dcoin             | Y       | N          | N       |         | Y           | Y        | dcoin             |       |
