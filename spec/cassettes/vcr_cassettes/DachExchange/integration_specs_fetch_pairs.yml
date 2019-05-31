@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dach.exchange/api/public?command=returnTicker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - dach.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 31 May 2019 02:28:55 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2507'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc47ee242b30577d0a1950458a310e1c81559269735; expires=Sat, 30-May-20
+        02:28:55 GMT; path=/; domain=.dach.exchange; HttpOnly; Secure
+      - lang=en; expires=Sun, 30-Jun-2019 02:28:55 GMT; Max-Age=2592000; path=/
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '59'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4df584643b16d0dc-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"DACHX_BTC":{"last":"0.00000046","percentChange":"-11.53846100","baseVolume":0.09716085,"coinVolume":189849,"high24hr":"0.00000053","low24hr":"0.00000046"},"ATHR_BTC":{"last":"0.00000010","percentChange":0,"baseVolume":0,"coinVolume":0,"high24hr":0,"low24hr":0},"DOGE_BTC":{"last":"0.00000046","percentChange":"6.97674400","baseVolume":0.19364774999999998,"coinVolume":435895,"high24hr":"0.00000046","low24hr":"0.00000043"},"BTT_BTC":{"last":"0.00000012","percentChange":"-7.69230700","baseVolume":0.13387332,"coinVolume":1010174,"high24hr":"0.00000014","low24hr":"0.00000012"},"XVG_BTC":{"last":"0.00000127","percentChange":"3.25203200","baseVolume":0.68054124,"coinVolume":544627.15,"high24hr":"0.00000127","low24hr":"0.00000123"},"DGB_BTC":{"last":"0.00000184","percentChange":"-2.64550200","baseVolume":0.88427007,"coinVolume":474043,"high24hr":"0.00000189","low24hr":"0.00000184"},"DASH_BTC":{"last":"0.01917066","percentChange":"-3.15221800","baseVolume":0.60990541,"coinVolume":31.24489513,"high24hr":"0.01979881","low24hr":"0.01917066"},"SMART_BTC":{"last":"0.00000112","percentChange":"3.70370300","baseVolume":0.42917641999999995,"coinVolume":391045,"high24hr":"0.00000112","low24hr":"0.00000108"},"LTC_BTC":{"last":"0.01302448","percentChange":"-1.60133600","baseVolume":0.6232650000000001,"coinVolume":47.305187100000005,"high24hr":"0.01329604","low24hr":"0.01302448"},"ZEC_BTC":{"last":"0.00951236","percentChange":"-1.67910200","baseVolume":0.50606947,"coinVolume":52.71079433999999,"high24hr":"0.00968453","low24hr":"0.00951236"},"TELOS_BTC":{"last":"0.00000034","percentChange":"-10.52631500","baseVolume":0.09934757000000001,"coinVolume":277765,"high24hr":"0.00000038","low24hr":"0.00000034"},"KYD_BTC":{"last":"0.00000273","percentChange":"3.01886700","baseVolume":0.12272725999999999,"coinVolume":45782,"high24hr":"0.00000273","low24hr":"0.00000265"},"DLN_BTC":{"last":"0.00000044","percentChange":"144.44444400","baseVolume":0.022392000000000002,"coinVolume":59400,"high24hr":"0.00000044","low24hr":"0.00000018"},"LCC_BTC":{"last":"0.00000110","percentChange":"2.80373800","baseVolume":0.07046199,"coinVolume":65143,"high24hr":"0.00000110","low24hr":"0.00000107"},"ULG_BTC":{"last":"0.00000452","percentChange":"-4.84210500","baseVolume":0.37436949999999997,"coinVolume":79957.57522123,"high24hr":"0.00000475","low24hr":"0.00000452"},"SEND_BTC":{"last":"0.00000115","percentChange":"6.48148100","baseVolume":0.08200592,"coinVolume":73826,"high24hr":"0.00000115","low24hr":"0.00000108"}}'
+    http_version: 
+  recorded_at: Fri, 31 May 2019 02:28:55 GMT
+recorded_with: VCR 4.0.0
