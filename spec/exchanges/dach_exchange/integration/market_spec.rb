@@ -5,6 +5,11 @@ RSpec.describe 'DachExchange integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:btt_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTT', target: 'BTC', market: market) }
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: btt_btc_pair.base, target: btt_btc_pair.target
+    expect(trade_page_url).to eq "https://dach.exchange/exchange/#{btt_btc_pair.base}-#{btt_btc_pair.target}"
+  end
+
   it 'fetch pairs' do
     pairs = client.pairs(market)
     expect(pairs).not_to be_empty
@@ -14,7 +19,6 @@ RSpec.describe 'DachExchange integration specs' do
     expect(pair.target).to_not be_nil
     expect(pair.market).to eq market
   end
-
 
   it 'fetch ticker' do
     ticker = client.ticker(btt_btc_pair)
