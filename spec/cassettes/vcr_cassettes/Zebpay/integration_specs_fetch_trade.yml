@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.zebapi.com/pro/v1/market/btc-eur/trades
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.zebapi.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 03 Jun 2019 03:16:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3219'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d4742bf00c7b889e1e5ac2b529df92d511559531796; expires=Tue, 02-Jun-20
+        03:16:36 GMT; path=/; domain=.zebapi.com; HttpOnly
+      Etag:
+      - W/"c93-PUPy8Bg/t2MU4flbSPiieHnZu9k"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type
+      X-Powered-By:
+      - Express
+      Request-Context:
+      - appId=cid-v1:0d576db7-8023-44b1-a82e-b12249ded98e
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e0e82630df5a330-HKG
+    body:
+      encoding: UTF-8
+      string: '[{"trans_id":3858448,"fill_qty":639684,"fill_price":7816.35,"fill_flags":1,"inbound_order_filled":true,"currencyPair":"BTC-EUR","lastModifiedDate":1559511338160},{"trans_id":3854654,"fill_qty":15690537,"fill_price":7820,"fill_flags":1,"inbound_order_filled":true,"currencyPair":"BTC-EUR","lastModifiedDate":1559506591188},{"trans_id":3854622,"fill_qty":15690537,"fill_price":7820,"fill_flags":2,"inbound_order_filled":false,"currencyPair":"BTC-EUR","lastModifiedDate":1559506559258},{"trans_id":3854595,"fill_qty":15690537,"fill_price":7820,"fill_flags":1,"inbound_order_filled":true,"currencyPair":"BTC-EUR","lastModifiedDate":1559506507914},{"trans_id":3854565,"fill_qty":15694494,"fill_price":7820,"fill_flags":2,"inbound_order_filled":false,"currencyPair":"BTC-EUR","lastModifiedDate":1559506474708},{"trans_id":3854514,"fill_qty":15694494,"fill_price":7800,"fill_flags":2,"inbound_order_filled":false,"currencyPair":"BTC-EUR","lastModifiedDate":1559506395204},{"trans_id":3854486,"fill_qty":15694494,"fill_price":7800,"fill_flags":2,"inbound_order_filled":false,"currencyPair":"BTC-EUR","lastModifiedDate":1559506363353},{"trans_id":3854431,"fill_qty":15694494,"fill_price":7800,"fill_flags":2,"inbound_order_filled":false,"currencyPair":"BTC-EUR","lastModifiedDate":1559506314882},{"trans_id":3854419,"fill_qty":15694494,"fill_price":7800,"fill_flags":2,"inbound_order_filled":false,"currencyPair":"BTC-EUR","lastModifiedDate":1559506244250},{"trans_id":3854400,"fill_qty":15694494,"fill_price":7800,"fill_flags":2,"inbound_order_filled":false,"currencyPair":"BTC-EUR","lastModifiedDate":1559506200805},{"trans_id":3854348,"fill_qty":15694494,"fill_price":7800,"fill_flags":2,"inbound_order_filled":false,"currencyPair":"BTC-EUR","lastModifiedDate":1559506126610},{"trans_id":3854325,"fill_qty":15694494,"fill_price":7800,"fill_flags":2,"inbound_order_filled":false,"currencyPair":"BTC-EUR","lastModifiedDate":1559506091658},{"trans_id":3854303,"fill_qty":15694494,"fill_price":7800,"fill_flags":2,"inbound_order_filled":false,"currencyPair":"BTC-EUR","lastModifiedDate":1559506054423},{"trans_id":3854280,"fill_qty":15694494,"fill_price":7800,"fill_flags":2,"inbound_order_filled":false,"currencyPair":"BTC-EUR","lastModifiedDate":1559506019080},{"trans_id":3854265,"fill_qty":15694494,"fill_price":7800,"fill_flags":2,"inbound_order_filled":false,"currencyPair":"BTC-EUR","lastModifiedDate":1559505991177},{"trans_id":3854228,"fill_qty":15694494,"fill_price":7800,"fill_flags":2,"inbound_order_filled":false,"currencyPair":"BTC-EUR","lastModifiedDate":1559505952786},{"trans_id":3854203,"fill_qty":15694494,"fill_price":7800,"fill_flags":2,"inbound_order_filled":false,"currencyPair":"BTC-EUR","lastModifiedDate":1559505916871},{"trans_id":3854181,"fill_qty":15694494,"fill_price":7800,"fill_flags":2,"inbound_order_filled":false,"currencyPair":"BTC-EUR","lastModifiedDate":1559505880613},{"trans_id":3854149,"fill_qty":15694494,"fill_price":7800,"fill_flags":2,"inbound_order_filled":false,"currencyPair":"BTC-EUR","lastModifiedDate":1559505845567},{"trans_id":3854122,"fill_qty":15694494,"fill_price":7800,"fill_flags":2,"inbound_order_filled":false,"currencyPair":"BTC-EUR","lastModifiedDate":1559505805031}]'
+    http_version: 
+  recorded_at: Mon, 03 Jun 2019 03:16:37 GMT
+recorded_with: VCR 4.0.0
