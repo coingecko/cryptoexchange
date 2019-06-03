@@ -16,7 +16,7 @@ RSpec.describe 'Latoken integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'latoken', base: la_eth_pair.base, target: la_eth_pair.target
-    expect(trade_page_url).to eq "https://wallet.latoken.com/market/Crypto/ETH/LA-ETH"
+    expect(trade_page_url).to eq "https://latoken.com/exchange/ETH-LA"
   end
 
   it 'fetch ticker' do
