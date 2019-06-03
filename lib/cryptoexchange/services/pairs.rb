@@ -44,9 +44,9 @@ module Cryptoexchange
 
       def fetch_via_api_using_post(endpoint = self.class::PAIRS_URL, headers = false, body = false)
         fetch_response = if headers && body
-                           HTTP.timeout(10).headers(headers).post(endpoint, body: body)
+                           WrappedHTTP.client.timeout(10).headers(headers).post(endpoint, body: body)
                          else
-                           HTTP.timeout(10).post(endpoint)
+                           WrappedHTTP.client.timeout(10).post(endpoint)
                          end
         JSON.parse(fetch_response.to_s)
       end
@@ -77,11 +77,11 @@ module Cryptoexchange
       end
 
       def http_get(endpoint)
-        HTTP.timeout(25).follow.get(endpoint)
+        WrappedHTTP.client.timeout(25).follow.get(endpoint)
       end
 
       def http_post(endpoint, params)
-        HTTP.timeout(15).post(endpoint, json: params)
+        WrappedHTTP.client.timeout(15).post(endpoint, json: params)
       end
     end
   end

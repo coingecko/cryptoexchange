@@ -568,7 +568,8 @@ Name the file <exchange_name>.yml and place it under the config/cryptoexchange d
       :target: KRW
 ```
 
-### configuration (cache)
+### configuration
+### Cache
 
 This gem uses https://github.com/SamSaffron/lru_redux cache by default so it doesn't hit exchanges with endpoint that returns multiple tickers for each ticker you are querying.
 
@@ -588,6 +589,27 @@ Cryptoexchange.configure do |config|
   config.rails_cache = false
   # enables rails cache
   # default value = false
+end
+```
+
+### Proxy
+
+To use proxy for HTTP requests, pass in array of hashes as proxy_list as below:
+
+```
+proxy_list = [
+  {
+    proxy_address: "1.1.1.1",
+    proxy_port: 8080,
+  },
+  {
+    proxy_address: "2.2.2.2",
+    proxy_port: 8080
+  }
+]
+
+Cryptoexchange.configure do |config|
+  config.proxy_list = proxy_list
 end
 ```
 
