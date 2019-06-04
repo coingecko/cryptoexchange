@@ -45,17 +45,16 @@ module Cryptoexchange
       private
 
       def http_get(endpoint)
-        HTTP.timeout(25).follow.get(endpoint)
+        WrappedHTTP.client.timeout(25).follow.get(endpoint)
       end
 
       def http_post(endpoint, params)
-        HTTP.timeout(15).post(endpoint, :json => params)
+        WrappedHTTP.client.timeout(15).post(endpoint, :json => params)
       end
 
       def http_post_with_headers(endpoint, params, headers)
-        HTTP.timeout(15).headers(headers).post(endpoint, :body => params)
+        WrappedHTTP.client.timeout(15).headers(headers).post(endpoint, :body => params)
       end
-
     end
   end
 end
