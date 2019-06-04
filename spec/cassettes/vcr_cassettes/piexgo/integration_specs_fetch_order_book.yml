@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.piexgo.com/api/v1/orderBook?symbol=BTC_USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.piexgo.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2019 05:14:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dfc092e1de705d8a57cbae82a5a37d7441559625266; expires=Wed, 03-Jun-20
+        05:14:26 GMT; path=/; domain=.piexgo.com; HttpOnly; Secure
+      - __cflb=2562181095; Secure; path=/; expires=Wed, 05-Jun-19 04:14:26 GMT; HttpOnly
+      X-Powered-By:
+      - PIEXGO TEAM
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e176c589f9e6f82-SIN
+    body:
+      encoding: UTF-8
+      string: '{"msg":"OK","bids":[{"index":0,"price":"7966.57","volume":"0.0040"},{"index":1,"price":"7965.70","volume":"0.0012"},{"index":2,"price":"7962.90","volume":"0.2500"},{"index":3,"price":"7954.60","volume":"0.0025"},{"index":4,"price":"7951.88","volume":"0.0045"},{"index":5,"price":"7947.77","volume":"0.2500"},{"index":6,"price":"7945.06","volume":"0.0030"},{"index":7,"price":"7936.19","volume":"0.0011"},{"index":8,"price":"7924.56","volume":"0.0018"},{"index":9,"price":"7916.17","volume":"0.0025"},{"index":10,"price":"7913.90","volume":"0.2000"},{"index":11,"price":"7913.88","volume":"0.2000"},{"index":12,"price":"7913.78","volume":"0.0024"},{"index":13,"price":"7912.49","volume":"0.1800"},{"index":14,"price":"7911.67","volume":"0.2000"},{"index":15,"price":"7911.66","volume":"0.2000"},{"index":16,"price":"7911.21","volume":"0.2000"},{"index":17,"price":"7911.20","volume":"0.2000"},{"index":18,"price":"7908.25","volume":"0.0020"},{"index":19,"price":"7899.72","volume":"0.0024"},{"index":20,"price":"7890.92","volume":"0.0055"},{"index":21,"price":"7889.02","volume":"0.0025"},{"index":22,"price":"7883.01","volume":"0.0060"},{"index":23,"price":"7880.69","volume":"0.0022"},{"index":24,"price":"7875.09","volume":"0.0049"},{"index":25,"price":"7871.25","volume":"0.0028"},{"index":26,"price":"7850.00","volume":"0.1347"},{"index":27,"price":"7844.79","volume":"0.0013"},{"index":28,"price":"7838.72","volume":"0.0025"},{"index":29,"price":"7838.54","volume":"0.0017"},{"index":30,"price":"7836.15","volume":"0.0081"},{"index":31,"price":"7823.07","volume":"0.0032"},{"index":32,"price":"7813.98","volume":"0.0024"},{"index":33,"price":"7806.50","volume":"0.0021"},{"index":34,"price":"7774.37","volume":"0.0073"},{"index":35,"price":"7709.73","volume":"0.0124"},{"index":36,"price":"7590.16","volume":"0.0063"},{"index":37,"price":"7470.87","volume":"0.0124"},{"index":38,"price":"7426.93","volume":"0.0130"},{"index":39,"price":"7263.70","volume":"0.0095"},{"index":40,"price":"7150.00","volume":"0.2421"},{"index":41,"price":"7015.91","volume":"0.0072"},{"index":42,"price":"7000.00","volume":"0.7761"},{"index":43,"price":"6816.08","volume":"0.0224"},{"index":44,"price":"6608.35","volume":"0.0135"},{"index":45,"price":"6515.00","volume":"0.2452"},{"index":46,"price":"6439.15","volume":"0.0136"},{"index":47,"price":"6212.62","volume":"0.0155"},{"index":48,"price":"6007.42","volume":"0.0003"},{"index":49,"price":"6007.41","volume":"0.1860"},{"index":50,"price":"6007.40","volume":"0.0337"},{"index":51,"price":"6006.51","volume":"0.8000"},{"index":52,"price":"5898.06","volume":"0.0156"},{"index":53,"price":"5537.28","volume":"0.0094"},{"index":54,"price":"5410.28","volume":"0.0118"},{"index":55,"price":"5196.53","volume":"0.0169"},{"index":56,"price":"0.39","volume":"15.8420"},{"index":57,"price":"0.38","volume":"15.8800"}],"symbol":"btc_usdt","asks":[{"index":0,"price":"7992.38","volume":"0.0023"},{"index":1,"price":"7993.80","volume":"0.0040"},{"index":2,"price":"7995.61","volume":"0.0067"},{"index":3,"price":"7996.98","volume":"0.2500"},{"index":4,"price":"7999.52","volume":"0.0045"},{"index":5,"price":"8000.40","volume":"0.0012"},{"index":6,"price":"8007.51","volume":"0.0058"},{"index":7,"price":"8008.64","volume":"0.0027"},{"index":8,"price":"8012.17","volume":"0.2500"},{"index":9,"price":"8017.24","volume":"0.0015"},{"index":10,"price":"8025.41","volume":"0.0023"},{"index":11,"price":"8034.01","volume":"0.0018"},{"index":12,"price":"8042.33","volume":"0.0012"},{"index":13,"price":"8042.34","volume":"0.0225"},{"index":14,"price":"8042.35","volume":"0.0666"},{"index":15,"price":"8042.67","volume":"0.0014"},{"index":16,"price":"8042.70","volume":"0.0020"},{"index":17,"price":"8042.71","volume":"0.0586"},{"index":18,"price":"8042.99","volume":"0.0442"},{"index":19,"price":"8043.11","volume":"0.0339"},{"index":20,"price":"8043.13","volume":"0.0828"},{"index":21,"price":"8043.37","volume":"0.0058"},{"index":22,"price":"8043.57","volume":"0.1572"},{"index":23,"price":"8051.22","volume":"0.0015"},{"index":24,"price":"8059.47","volume":"0.0012"},{"index":25,"price":"8068.48","volume":"0.0025"},{"index":26,"price":"8075.83","volume":"0.0063"},{"index":27,"price":"8076.59","volume":"0.0012"},{"index":28,"price":"8085.39","volume":"0.0017"},{"index":29,"price":"8096.25","volume":"0.0015"},{"index":30,"price":"8110.54","volume":"0.0013"},{"index":31,"price":"8116.00","volume":"0.0097"},{"index":32,"price":"8124.19","volume":"0.0019"},{"index":33,"price":"8150.86","volume":"0.0031"},{"index":34,"price":"8157.46","volume":"0.0021"},{"index":35,"price":"8172.04","volume":"0.0019"},{"index":36,"price":"8180.21","volume":"0.0021"},{"index":37,"price":"8276.72","volume":"0.0133"},{"index":38,"price":"8277.81","volume":"0.0114"},{"index":39,"price":"8401.15","volume":"0.0064"},{"index":40,"price":"8882.93","volume":"0.0153"},{"index":41,"price":"9005.39","volume":"0.0112"},{"index":42,"price":"9097.27","volume":"0.0089"},{"index":43,"price":"9234.13","volume":"0.0066"},{"index":44,"price":"9310.30","volume":"0.0211"},{"index":45,"price":"9469.45","volume":"0.0236"},{"index":46,"price":"9539.19","volume":"0.0145"},{"index":47,"price":"9854.53","volume":"0.0196"},{"index":48,"price":"10285.52","volume":"0.0260"},{"index":49,"price":"11512.02","volume":"0.0127"},{"index":50,"price":"11853.12","volume":"0.0296"}],"err_code":0,"ts":1559625266}
+
+'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2019 05:14:26 GMT
+recorded_with: VCR 4.0.0
