@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dydx.exchange/v1/stats/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dydx.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2019 08:29:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '302'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=de3b474b1d1b4e6aad7bac092790a08f71559636939; expires=Wed, 03-Jun-20
+        08:28:59 GMT; path=/; domain=.dydx.exchange; HttpOnly; Secure
+      X-Powered-By:
+      - Express
+      X-Request-Id:
+      - a9fe5099-1b2b-4819-bc5b-2a2e0972901e
+      Access-Control-Allow-Origin:
+      - "*"
+      Surrogate-Control:
+      - no-store
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, proxy-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Etag:
+      - W/"12e-T0N01qXzmUbFhFLSb0wWuQ95IPE"
+      X-Response-Time:
+      - '51.307'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e18895aea8b9491-NRT
+    body:
+      encoding: UTF-8
+      string: '{"markets":{"ETH-DAI":{"symbol":"ETH-DAI","baseVolume":"8125.083304370214894459","quoteVolume":"1999465.603803806040717144","usdVolume":"2017579.11750756098238543344","high":"267.1589096496000000","low":"236.4694964440871859","open":"262.4957096398000002","last":"246.5146140499419904","count":"211"}}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2019 08:29:00 GMT
+recorded_with: VCR 4.0.0
