@@ -340,6 +340,7 @@ Or install it yourself as:
 | Paribu            | Y       |            |         |         | Y           |          | paribu            |       |
 | Paro Exchange     | Y       |            |         |         | Y           |          | paroexchange      |       |
 | Paymium           | Y       | Y          | Y       |         | User-Defined|          | paymium           |       |
+| Piexgo            | Y       | Y [x]      | Y       |         | Y           |          | piexgo            |       |
 | Poloniex          | Y       | Y [x]      | Y [limit: 200]       |         | Y           | Y        | poloniex          |       |
 | Prixbit           | Y       |            |         |         | Y           | Y        | prixbit           |       |
 | Purcow            | Y       |            |         |         | Y           | Y        | purcow            |       |

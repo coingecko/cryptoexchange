@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.piexgo.com/api/v1/ticker?symbol=BTC_USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.piexgo.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2019 05:14:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d517bd8d0378e92e5c72937afb637580d1559625265; expires=Wed, 03-Jun-20
+        05:14:25 GMT; path=/; domain=.piexgo.com; HttpOnly; Secure
+      - __cflb=2562181095; Secure; path=/; expires=Wed, 05-Jun-19 04:14:25 GMT; HttpOnly
+      X-Powered-By:
+      - PIEXGO TEAM
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e176c570e70704e-SIN
+    body:
+      encoding: UTF-8
+      string: '{"err_code":0,"msg":"OK","ticker":{"symbol":"BTC_USDT","last_price":7978.11,"open_price":8462.95,"high":8578.13,"low":7815.1,"change":-5.728971576105271,"volume":497,"circulation":10000000,"total":10000000,"amount_1d":4117545.57,"volume_1d":496.45}}
+
+'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2019 05:14:25 GMT
+recorded_with: VCR 4.0.0
