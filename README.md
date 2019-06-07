@@ -124,6 +124,7 @@ Or install it yourself as:
 | Btcsquare         | Y       | Y          | Unstable|         | Y           | Y        | btcsquare         |       |
 | BTCTurk           | Y       | Y          |         |         | Y           |          | btcturk           |       |
 | BTER              | Y       |            |         |         | Y           |          | bter              |       |
+| BTCNEXT           | Y       |            |         |         | Y           | N        | btcnext           |       |
 | Buyucoin          | Y       | N          | N       |         | Y           |          | buyucoin          |       |
 | BX Thailand       | Y       | Y [x]      |         |         | Y           |          | bx_thailand       |       |
 | BW                | Y       |            |         |         | Y           | Y        | bw                |       |
