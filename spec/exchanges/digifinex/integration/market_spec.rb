@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Digifinex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:market) { 'digifinex' }
   let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: 'digifinex') }
 
   it 'fetch pairs' do
@@ -31,5 +32,41 @@ RSpec.describe 'Digifinex integration specs' do
 
     expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: btc_usdt_pair.base, target: btc_usdt_pair.target
+    expect(trade_page_url).to eq "https://www.digifinex.com/en-ww/trade/USDT/BTC"
+  end
+
+  it 'fetch order book' do
+    order_book = client.order_book(btc_usdt_pair)
+
+    expect(order_book.base).to eq 'BTC'
+    expect(order_book.target).to eq 'USDT'
+    expect(order_book.market).to eq 'digifinex'
+    expect(order_book.asks).to_not be_empty
+    expect(order_book.bids).to_not be_empty
+    expect(order_book.asks.first.price).to_not be_nil
+    expect(order_book.bids.first.amount).to_not be_nil
+    expect(order_book.bids.first.timestamp).to be_nil
+    expect(order_book.asks.count).to be > 1
+    expect(order_book.bids.count).to be > 1
+    expect(order_book.payload).to_not be nil
+  end
+
+  it 'fetch trade' do
+    trades = client.trades(btc_usdt_pair)
+    trade = trades.sample
+
+    expect(trades).to_not be_empty
+    expect(trade.base).to eq 'BTC'
+    expect(trade.target).to eq 'USDT'
+    expect(trade.market).to eq 'digifinex'
+    expect(['buy', 'sell']).to include trade.type
+    expect(trade.price).to_not be_nil
+    expect(trade.amount).to_not be_nil
+    expect(trade.timestamp).to be_a Numeric
+    expect(trade.payload).to_not be nil
   end
 end
