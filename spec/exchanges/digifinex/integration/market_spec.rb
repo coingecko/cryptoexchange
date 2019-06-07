@@ -19,7 +19,7 @@ RSpec.describe 'Digifinex integration specs' do
     ticker = client.ticker(btc_usdt_pair)
 
     expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).t\o eq 'USDT'
+    expect(ticker.target).to eq 'USDT'
     expect(ticker.market).to eq 'digifinex'
 
     expect(ticker.last).to be_a Numeric
