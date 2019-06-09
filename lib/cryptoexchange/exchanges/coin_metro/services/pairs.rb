@@ -13,8 +13,8 @@ module Cryptoexchange::Exchanges
           pairs = []
           output['latestPrices'].each do |latestPrices|
             pair = latestPrices['pair']
-            base = pair[0, 3]
-            target = pair[3, 3]
+            base = pair[0..-4]
+            target = pair[-3, 3]
 
             pairs << Cryptoexchange::Models::MarketPair.new(
                 base: base,

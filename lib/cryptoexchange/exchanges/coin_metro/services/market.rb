@@ -24,8 +24,8 @@ module Cryptoexchange::Exchanges
           latest_prices.each_with_index.map do |prices, idx|
             data = prices.merge(info[idx])
             pair = data['pair']
-            base = pair[0, 3]
-            target = pair[3, 3]            
+            base = pair[0..-4]
+            target = pair[-3, 3]
             
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
