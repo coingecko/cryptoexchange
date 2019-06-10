@@ -10,19 +10,21 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          pairs = []
-          output['latestPrices'].each do |latestPrices|
-            pair = latestPrices['pair']
-            base = pair[0, 3]
-            target = pair[3, 3]
+          output["latestPrices"].map do |ticker|
+            pair = ticker["pair"]
+            separator = /(BTC|ETH|EUR)\z/i =~ pair
 
-            pairs << Cryptoexchange::Models::MarketPair.new(
-                base: base,
-                target: target,
-                market: CoinMetro::Market::NAME
-              )
-          end
-          pairs
+            base      = pair[0..separator - 1]
+            target    = pair[separator..-1]
+
+            next if base.nil? || target.nil?
+
+            Cryptoexchange::Models::MarketPair.new(
+              base: base,
+              target: target,
+              market: CoinMetro::Market::NAME
+            )
+          end.compact
         end
       end
     end
