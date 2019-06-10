@@ -17,32 +17,34 @@ module Cryptoexchange::Exchanges
           "#{Cryptoexchange::Exchanges::CoinMetro::Market::API_URL}/prices"
         end
 
-        def adapt_all(output)          
-        
-          latest_prices = output['latestPrices']
-          info = output['24hInfo']
-          latest_prices.each_with_index.map do |prices, idx|
-            data = prices.merge(info[idx])
-            pair = data['pair']
-            base = pair[0, 3]
-            target = pair[3, 3]            
-            
+        def adapt_all(output)
+          market_info = output['24hInfo']
+          output["latestPrices"].each_with_index.map do |ticker, idx|
+            pair = ticker["pair"]
+            separator = /(BTC|ETH|EUR)\z/i =~ pair
+
+            base      = pair[0..separator - 1]
+            target    = pair[separator..-1]
+
+            next if base.nil? || target.nil?
+
             market_pair = Cryptoexchange::Models::MarketPair.new(
-                            base: base,
-                            target: target,
-                            market: CoinMetro::Market::NAME
-                          )            
-            
-            adapt(data, market_pair)
-          end
+              base: base,
+              target: target,
+              market: CoinMetro::Market::NAME
+            )
+
+            ticker = ticker.merge(market_info[idx])
+            adapt(ticker, market_pair)
+          end.compact
         end
 
         def adapt(output, market_pair)
           if output.empty?
             nil
           else
-            ticker = Cryptoexchange::Models::Ticker.new            
-            ticker.base = market_pair.base            
+            ticker = Cryptoexchange::Models::Ticker.new
+            ticker.base = market_pair.base
             ticker.target = market_pair.target
             ticker.market = CoinMetro::Market::NAME
             ticker.ask = NumericHelper.to_d(output['ask'])
