@@ -307,6 +307,7 @@ Or install it yourself as:
 | MaxMaicoin        | Y       | Y [x]      | Y       |         | Y           | Y        | max_maicoin       |       |
 | MercadoBitcoin    | Y       |            |         |         | User-Defined|          | mercado_bitcoin   |       |
 | Mercatox          | Y       | N          | N       | N       | Y           |          | mercatox          |       |
+| Mercuriex         | Y       | N          | N       | N       | Y           | Y        | mercuriex         |       |
 | MXC               | Y       | Y [x]      |         |         | Y           | Y        | mxc               |       |
 | Myspeedtrade      | Y       | Y          |         |         | Y           |          | myspeedtrade      |       |
 | Nanex             | Y       | N          | N       | N       | Y           |          | nanex             |       |
