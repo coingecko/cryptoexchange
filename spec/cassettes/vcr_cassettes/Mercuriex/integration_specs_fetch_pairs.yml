@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.mercuriex.com/api/v0/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.mercuriex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 12 Jun 2019 07:54:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '924'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=df1683e216fe073a82b9881e6a2fcb5e81560326099; expires=Thu, 11-Jun-20
+        07:54:59 GMT; path=/; domain=.mercuriex.com; HttpOnly; Secure
+      Api-Version:
+      - '2'
+      X-Rate-Limit-Limit:
+      - '600'
+      X-Rate-Limit-Remaining:
+      - '599'
+      X-Rate-Limit-Reset:
+      - '1560326159'
+      Vary:
+      - origin
+      Cache-Control:
+      - no-cache
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e5a428aadbda5fa-NRT
+    body:
+      encoding: UTF-8
+      string: '{"tickers":{"iota-btc":{"min":0.0000523,"max":0.0000523,"price":0.0000523,"change":0,"volume":0},"eth-btc":{"min":0.032,"max":0.032,"price":0.032,"change":0,"volume":0},"zano-tusd":{"min":0.81,"max":0.82,"price":0.82,"change":1,"volume":190},"zano-btc":{"min":0.00008,"max":0.0000932,"price":0.00008,"change":0,"volume":2115.0051},"iota-tusd":{"min":0.3,"max":0.3,"price":0.3,"change":0,"volume":0},"ltc-btc":{"min":0.0125,"max":0.0125,"price":0.0125,"change":0,"volume":0},"ltc-tusd":{"min":79.81,"max":79.81,"price":79.81,"change":0,"volume":0},"btc-tusd":{"min":8000,"max":8000,"price":8000,"change":0,"volume":0},"eth-tusd":{"min":167.86,"max":167.86,"price":167.86,"change":0,"volume":0},"minds-btc":{"min":0.0003,"max":0.0003,"price":0.0003,"change":0,"volume":0},"minds-tusd":{"min":0.01,"max":0.01,"price":0.01,"change":0,"volume":0},"gxc-btc":{"min":0.000145,"max":0.000145,"price":0.000145,"change":0,"volume":0}}}'
+    http_version: 
+  recorded_at: Wed, 12 Jun 2019 07:54:59 GMT
+recorded_with: VCR 4.0.0
