@@ -221,7 +221,7 @@ Or install it yourself as:
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |       |
 | Dydx              | Y       | N          | N       |         | Y           | N        | dydx              |futures|
 | Eosex             | Y       | N          | N       |         | Y           | Y        | eosex             |       |
-| Ecxx              | Y       | N          | N       |         | Y           | Y        | ecxx              |       |
+| Ecxx              | Y       | Y[X]       | N       |         | Y           | Y        | ecxx              |       |
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |       |
 | Escodex           | Y       |            |         |         | Y           | Y        | escodex           |       |
 | EtherDelta        | Y       |            |         |         | Y           |          | ether_delta       |       |
