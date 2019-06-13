@@ -44,8 +44,8 @@ Or install it yourself as:
 | Bankera           | Y       | Y [x]      | Y       |         | Y           | Y        | bankera           |       |
 | Bcex (halted)     | Y       | Y          | Y       |         | Y           | Y        | bcex              |       |
 | Bcoin             | Y       |            |         |         | Y           | Y        | bcoin             |       |
-| Bgogo             | Y       | Y [x]      | Y [limit: 20]      |         | Y           | Y        | bgogo             |       |
-| Bibox             | Y       | Y [x]      | Y       |         | Y           | Y        | bibox             |       |
+| Bgogo             | Y       | Y [x]      | Y [limit: 20]     |         | Y           | Y        | bgogo             |       |
+| Bibox             | Y       | Y [x]      | Y [limit: 200]    |         | Y           | Y        | bibox             |       |
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
 | BigONE            | Y       | Y [x]      | Y       |         | Y           | Y        | bigone            |       |
 | Biki              | Y       | Y [x]      |         |         | Y           | Y        | biki              |       |
@@ -152,7 +152,7 @@ Or install it yourself as:
 | CoinEgg           | Y       | Y [x]      | Y       |         | User-Defined| Y        | coin_egg          |       |
 | CoinExchange      | Y       |            |         |         | Y           |          | coin_exchange     |       |
 | Coinbe            | Y       |            |         |         | Y           |          | coinbe            |       |
-| Coinbene          | Y       | Y [x]      | Y       |         | Y           | Y        | coinbene          |       |
+| Coinbene          | Y       | Y [x]      | Y [limit: 3000]      |         | Y           | Y        | coinbene          |       |
 | Coinbig           | Y       | Y [x]      |         |         | Y           | Y        | coinbig           |       |
 | Coinbit           | Y       | N          | N       |         | Y           | Y        | coinbit           |       |
 | Coincheck         | Y       | Y [x]      |         |         | User-Defined|          | coincheck         |       |
