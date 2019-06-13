@@ -7,7 +7,7 @@ Cryptoexchange is a rubygem for ruby developers to interact with over 200+ crypt
 ## Installation
 
 Add this line to your application's Gemfile:
-
+ 
 ```ruby
 gem 'cryptoexchange'
 ```
