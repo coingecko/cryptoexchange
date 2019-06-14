@@ -9,7 +9,12 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch
-          output = super(ticker_url)
+          ctx = OpenSSL::SSL::SSLContext.new
+          ctx.verify_mode = OpenSSL::SSL::VERIFY_NONE
+
+          output = Cryptoexchange::Cache.ticker_cache.fetch(ticker_url) do
+            HTTP.get(ticker_url, ssl_context: ctx).parse(:json)
+          end
           adapt_all(output)
         end
 

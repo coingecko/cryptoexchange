@@ -5,7 +5,13 @@ module Cryptoexchange::Exchanges
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitasset::Market::API_URL}/tickers"
 
         def fetch
-          output = super
+          ctx = OpenSSL::SSL::SSLContext.new
+          ctx.verify_mode = OpenSSL::SSL::VERIFY_NONE
+
+          output = Cryptoexchange::Cache.ticker_cache.fetch(PAIRS_URL) do
+            HTTP.get(PAIRS_URL, ssl_context: ctx).parse(:json)
+          end
+
           market_pairs = []
           output["ticker"].each do |pair|
             base, target = pair["symbol"].split('_')
