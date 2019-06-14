@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitsdaq.com/api/normal/dg/marketSummary24h/detail
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitsdaq.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Jun 2019 07:56:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '10612'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=df3c0f5e23720bb58ba40f08471df0ce01560499009; expires=Sat, 13-Jun-20
+        07:56:49 GMT; path=/; domain=.bitsdaq.com; HttpOnly; Secure
+      - _csrf=7bAQbzV90Fo8PuXvQ5gU_QSN; Path=/
+      - csrfToken=XPN37jL9-3KMRm-vhLjfptkvpDljPY-MF73k; Path=/; HttpOnly; SameSite=Strict
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Authorization, X-Requested-With, Content-Type, Accept, X-Authorization,
+        X-Access-Token, x-cp-language, x-cp-timezone,x-cp-device,x-app-ko,x-app-token
+      Timestamp:
+      - '1560499009773'
+      Access-Control-Expose-Headers:
+      - timestamp, UserCountryCode
+      Etag:
+      - W/"2974-OgWQAegVZNtcMVEdiB5QnhuTgAA"
+      Usercountrycode:
+      - SG
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e6abffa7e54d9d0-SIN
+    body:
+      encoding: UTF-8
+      string: '[{"last_price":0.00001022,"volume_24h":991761.86820911,"amount_24h":10.21649727,"price_updated_at":1560499005,"symbol":"LOOM","anchor":"BTC"},{"last_price":0.00011372,"volume_24h":2321.53417772,"amount_24h":0.26264577,"price_updated_at":1560499005,"symbol":"SRN","anchor":"ETH"},{"last_price":0.00035,"volume_24h":260707.03256464,"amount_24h":93.99112421,"price_updated_at":1560499005,"symbol":"CVC","anchor":"ETH"},{"last_price":0.00003971,"volume_24h":434469.23988681,"amount_24h":17.34584897,"price_updated_at":1560499005,"symbol":"BAT","anchor":"BTC"},{"last_price":0.00038729,"volume_24h":1122643.47522856,"amount_24h":458.17362048,"price_updated_at":1560499005,"symbol":"WAX","anchor":"ETH"},{"last_price":0.01067866,"volume_24h":1746.3759751,"amount_24h":19.04382227,"price_updated_at":1560499005,"symbol":"ZEC","anchor":"BTC"},{"last_price":0.01569121,"volume_24h":24658.18381713,"amount_24h":394.52993671,"price_updated_at":1560499005,"symbol":"LTC","anchor":"BTC"},{"last_price":0.00102363,"volume_24h":64273.78894258,"amount_24h":66.42790409,"price_updated_at":1560499005,"symbol":"PAY","anchor":"ETH"},{"last_price":0.31503373,"volume_24h":7172.54446727,"amount_24h":2354.91242929,"price_updated_at":1560499005,"symbol":"ZRX","anchor":"USDT"},{"last_price":3.1e-7,"volume_24h":12578684.25140741,"amount_24h":3.97767093,"price_updated_at":1560499005,"symbol":"OCN","anchor":"BTC"},{"last_price":0.00158432,"volume_24h":27819.03696657,"amount_24h":45.01107668,"price_updated_at":1560499005,"symbol":"NEO","anchor":"BTC"},{"last_price":0.00224376,"volume_24h":10755.11053033,"amount_24h":24.72560463,"price_updated_at":1560499005,"symbol":"REP","anchor":"BTC"},{"last_price":0.00000337,"volume_24h":936282.49288861,"amount_24h":3.23826866,"price_updated_at":1560499005,"symbol":"SRN","anchor":"BTC"},{"last_price":2.9e-7,"volume_24h":31871680.60869587,"amount_24h":9.2350205,"price_updated_at":1560499005,"symbol":"RFR","anchor":"BTC"},{"last_price":0.804,"volume_24h":146.8955474,"amount_24h":120.33280313,"price_updated_at":1560499005,"symbol":"BSV","anchor":"ETH"},{"last_price":1.60003067,"volume_24h":292.49978962,"amount_24h":467.75316448,"price_updated_at":1560499005,"symbol":"BCH","anchor":"ETH"},{"last_price":1.7e-7,"volume_24h":66924304.31469714,"amount_24h":11.47011865,"price_updated_at":1560499005,"symbol":"DTA","anchor":"BTC"},{"last_price":87.45974172,"volume_24h":254.00377412,"amount_24h":22643.68197507,"price_updated_at":1560499005,"symbol":"ZEC","anchor":"USDT"},{"last_price":0.00001506,"volume_24h":2794637.56989828,"amount_24h":42.5653233,"price_updated_at":1560499005,"symbol":"XLM","anchor":"BTC"},{"last_price":0.00067935,"volume_24h":11631.26287454,"amount_24h":7.72934613,"price_updated_at":1560499005,"symbol":"ADX","anchor":"ETH"},{"last_price":0.00039517,"volume_24h":231757.59387132,"amount_24h":92.05800323,"price_updated_at":1560499005,"symbol":"GNT","anchor":"ETH"},{"last_price":0.00156226,"volume_24h":439314.74999616,"amount_24h":679.34020913,"price_updated_at":1560499005,"symbol":"XRP","anchor":"ETH"},{"last_price":8196.90000004,"volume_24h":260.02367389,"amount_24h":2125016.40718636,"price_updated_at":1560499005,"symbol":"BTC","anchor":"USDT"},{"last_price":128.69710218,"volume_24h":3848.23508115,"amount_24h":506077.57779981,"price_updated_at":1560499005,"symbol":"LTC","anchor":"USDT"},{"last_price":0.05121299,"volume_24h":464.36703821,"amount_24h":23.90646258,"price_updated_at":1560499005,"symbol":"NEO","anchor":"ETH"},{"last_price":0.07280372,"volume_24h":1440.2687765,"amount_24h":106.35482664,"price_updated_at":1560499005,"symbol":"REP","anchor":"ETH"},{"last_price":0.00001006,"volume_24h":792996.85586461,"amount_24h":7.91347436,"price_updated_at":1560499005,"symbol":"OCN","anchor":"ETH"},{"last_price":254.045,"volume_24h":1460.9097846,"amount_24h":375137.05722182,"price_updated_at":1560499005,"symbol":"ETH","anchor":"USDT"},{"last_price":7e-8,"volume_24h":114603863.31187053,"amount_24h":7.62993636,"price_updated_at":1560499005,"symbol":"PMA","anchor":"BTC"},{"last_price":0.0012813,"volume_24h":59763.15530085,"amount_24h":75.91012099,"price_updated_at":1560499005,"symbol":"BAT","anchor":"ETH"},{"last_price":0.00012177,"volume_24h":128028.73354107,"amount_24h":15.59772359,"price_updated_at":1560499005,"symbol":"TUSD","anchor":"BTC"},{"last_price":0.000884,"volume_24h":6168.54634908,"amount_24h":5.32678981,"price_updated_at":1560499005,"symbol":"DMT","anchor":"ETH"},{"last_price":0.00852,"volume_24h":2448.45490032,"amount_24h":20.1933501,"price_updated_at":1560499005,"symbol":"OMG","anchor":"ETH"},{"last_price":0.00393,"volume_24h":11576.8129314,"amount_24h":45.06428317,"price_updated_at":1560499005,"symbol":"TUSD","anchor":"ETH"},{"last_price":0.00004676,"volume_24h":1052362.98923326,"amount_24h":49.13990197,"price_updated_at":1560499005,"symbol":"SOLVE","anchor":"BTC"},{"last_price":2.2e-7,"volume_24h":41001485.98520744,"amount_24h":8.62512897,"price_updated_at":1560499005,"symbol":"CMCT","anchor":"BTC"},{"last_price":0.04964771,"volume_24h":2248.60666503,"amount_24h":112.94600481,"price_updated_at":1560499005,"symbol":"BCH","anchor":"BTC"},{"last_price":2.16555263,"volume_24h":10987.68238698,"amount_24h":23037.49406633,"price_updated_at":1560499005,"symbol":"OMG","anchor":"USDT"},{"last_price":1.9e-7,"volume_24h":23484222.32087366,"amount_24h":4.3271593,"price_updated_at":1560499005,"symbol":"HYDRO","anchor":"BTC"},{"last_price":0.00001217,"volume_24h":1195967.8310608,"amount_24h":14.65952933,"price_updated_at":1560499005,"symbol":"POLY","anchor":"BTC"},{"last_price":0.00002713,"volume_24h":238567.88500855,"amount_24h":6.51900796,"price_updated_at":1560499005,"symbol":"DMT","anchor":"BTC"},{"last_price":0.00000205,"volume_24h":3089934.95356865,"amount_24h":6.44117257,"price_updated_at":1560499005,"symbol":"IHT","anchor":"BTC"},{"last_price":0.50889111,"volume_24h":925.83976849,"amount_24h":471.47180583,"price_updated_at":1560499005,"symbol":"LTC","anchor":"ETH"},{"last_price":0.0000147,"volume_24h":175505.28457418,"amount_24h":2.60167231,"price_updated_at":1560499005,"symbol":"POWR","anchor":"BTC"},{"last_price":0.00002097,"volume_24h":371597.48544116,"amount_24h":7.77387588,"price_updated_at":1560499005,"symbol":"ADX","anchor":"BTC"},{"last_price":0.00011345,"volume_24h":121935.03344295,"amount_24h":13.83613366,"price_updated_at":1560499005,"symbol":"SNT","anchor":"ETH"},{"last_price":0.00039451,"volume_24h":103133.49636036,"amount_24h":40.24954956,"price_updated_at":1560499005,"symbol":"POLY","anchor":"ETH"},{"last_price":0.00000484,"volume_24h":55785928.85401196,"amount_24h":274.50671607,"price_updated_at":1560499005,"symbol":"SPND","anchor":"BTC"},{"last_price":0.02481308,"volume_24h":8743.29892567,"amount_24h":224.60704303,"price_updated_at":1560499005,"symbol":"BSV","anchor":"BTC"},{"last_price":0.00000266,"volume_24h":1416884.53084131,"amount_24h":3.76895844,"price_updated_at":1560499005,"symbol":"EDR","anchor":"BTC"},{"last_price":0.00003144,"volume_24h":696063.02709239,"amount_24h":23.07735239,"price_updated_at":1560499005,"symbol":"PAY","anchor":"BTC"},{"last_price":0.00003975,"volume_24h":143128.68627476,"amount_24h":5.74143232,"price_updated_at":1560499005,"symbol":"ZRX","anchor":"BTC"},{"last_price":0.00022889,"volume_24h":143079.24282656,"amount_24h":32.47709954,"price_updated_at":1560499005,"symbol":"MANA","anchor":"ETH"},{"last_price":0.39560844,"volume_24h":541722.51674776,"amount_24h":216455.11495402,"price_updated_at":1560499005,"symbol":"XRP","anchor":"USDT"},{"last_price":0.00001212,"volume_24h":10441438.85478367,"amount_24h":133.70784532,"price_updated_at":1560499005,"symbol":"WAX","anchor":"BTC"},{"last_price":0.99604071,"volume_24h":2473.42603368,"amount_24h":2465.10351117,"price_updated_at":1560499005,"symbol":"TUSD","anchor":"USDT"},{"last_price":0.00001095,"volume_24h":2163115.69264389,"amount_24h":24.46106078,"price_updated_at":1560499005,"symbol":"CVC","anchor":"BTC"},{"last_price":0.00001222,"volume_24h":2007515.73420387,"amount_24h":24.98479996,"price_updated_at":1560499005,"symbol":"GNT","anchor":"BTC"},{"last_price":0.03094792,"volume_24h":7154.98871797,"amount_24h":224.69528048,"price_updated_at":1560499005,"symbol":"ETH","anchor":"BTC"},{"last_price":12.9729829,"volume_24h":32247.60786856,"amount_24h":426862.29147067,"price_updated_at":1560499005,"symbol":"NEO","anchor":"USDT"},{"last_price":0.00048784,"volume_24h":181649.56528775,"amount_24h":88.11654906,"price_updated_at":1560499005,"symbol":"XLM","anchor":"ETH"},{"last_price":0.000264,"volume_24h":64951.64035747,"amount_24h":16.6828245,"price_updated_at":1560499005,"symbol":"OMG","anchor":"BTC"},{"last_price":0.00126854,"volume_24h":24753.65420118,"amount_24h":31.66042994,"price_updated_at":1560499005,"symbol":"ZRX","anchor":"ETH"},{"last_price":0.00054125,"volume_24h":4539662.06767368,"amount_24h":2403.98963082,"price_updated_at":1560499005,"symbol":"PMA","anchor":"USDT"},{"last_price":0.00000709,"volume_24h":1049933.97824976,"amount_24h":7.39520967,"price_updated_at":1560499005,"symbol":"MANA","anchor":"BTC"},{"last_price":0.000217,"volume_24h":42276.91700492,"amount_24h":8.62979288,"price_updated_at":1560499005,"symbol":"VIB","anchor":"ETH"},{"last_price":0.00000666,"volume_24h":1729477.770985,"amount_24h":11.34573061,"price_updated_at":1560499005,"symbol":"VIB","anchor":"BTC"},{"last_price":4e-7,"volume_24h":21357964.19141903,"amount_24h":8.69013987,"price_updated_at":1560499005,"symbol":"MFT","anchor":"BTC"},{"last_price":203.954,"volume_24h":502.94098481,"amount_24h":104483.62622982,"price_updated_at":1560499005,"symbol":"BSV","anchor":"USDT"},{"last_price":0.34726435,"volume_24h":237.35239868,"amount_24h":81.94696048,"price_updated_at":1560499005,"symbol":"ZEC","anchor":"ETH"},{"last_price":0.000469,"volume_24h":9664.16838558,"amount_24h":4.57804433,"price_updated_at":1560499005,"symbol":"POWR","anchor":"ETH"},{"last_price":0.00000357,"volume_24h":798168.13720375,"amount_24h":2.84933699,"price_updated_at":1560499005,"symbol":"SNT","anchor":"BTC"},{"last_price":0.00004817,"volume_24h":3904974.40360687,"amount_24h":190.83721204,"price_updated_at":1560499005,"symbol":"XRP","anchor":"BTC"},{"last_price":0.32493235,"volume_24h":53450.02781369,"amount_24h":17499.30620595,"price_updated_at":1560499005,"symbol":"BAT","anchor":"USDT"},{"last_price":405.27788001,"volume_24h":436.91922557,"amount_24h":179014.0709604,"price_updated_at":1560499005,"symbol":"BCH","anchor":"USDT"},{"last_price":0.01068516,"volume_24h":155441346.7991657,"amount_24h":1741065.43761698,"price_updated_at":1560499010,"symbol":"BQQQ","anchor":"USDT"}]'
+    http_version: 
+  recorded_at: Fri, 14 Jun 2019 07:56:42 GMT
+recorded_with: VCR 4.0.0

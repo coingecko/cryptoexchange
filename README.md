@@ -100,6 +100,7 @@ Or install it yourself as:
 | Bitrue            | Y       | Y [x]      |         |         | Y           | Y        | bitrue            |       |
 | Bits Blockchain   | Y       | Y          |         |         | Y           |          | bits_blockchain   |       |
 | Bitsane           | Y       | Y [x]      |         |         | Y           |          | bitsane           |       |
+| Bitsdaq           | Y       | Y [x]      | Y [limit: 50]|    | Y           | Y        | bisdaq            |       |
 | Bitshares Assets  | Y       |            |         |         | User-Defined|          | bitshares_assets  |       |
 | Bitso             | Y       | Y [x]      |         |         | Y           |          | bitso             |       |
 | Bitstamp          | Y       | Y [x]      | Y       |         | User-Defined|          | bitstamp          |       |

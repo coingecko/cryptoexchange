@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitsdaq.com/api/order/matchedOrder?marketSymbol=ZEC-BTC&size=50
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitsdaq.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Jun 2019 07:56:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4983'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d76510ed48e9297a4d59720eaccc429f41560499011; expires=Sat, 13-Jun-20
+        07:56:51 GMT; path=/; domain=.bitsdaq.com; HttpOnly; Secure
+      - _csrf=LHPR3cHq_LITLYkvURxL5B-8; Path=/
+      - csrfToken=0zF569WF-WaLKkz1sECr_GyQcG6-wVZjmqXg; Path=/; HttpOnly; SameSite=Strict
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Authorization, X-Requested-With, Content-Type, Accept, X-Authorization,
+        X-Access-Token, x-cp-language, x-cp-timezone,x-cp-device,x-app-ko,x-app-token
+      Timestamp:
+      - '1560499011647'
+      Access-Control-Expose-Headers:
+      - timestamp, UserCountryCode
+      Etag:
+      - W/"1377-2wZARDNXw42+iiCS+p6TtHh9Alg"
+      Usercountrycode:
+      - SG
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e6ac0061b033208-SIN
+    body:
+      encoding: UTF-8
+      string: '{"result":[{"createdAt":1560498602740,"price":0.01083747,"matchedQuantity":0.07402121,"makerOrderType":"SELL"},{"createdAt":1560498144940,"price":0.01082138,"matchedQuantity":0.0730778,"makerOrderType":"SELL"},{"createdAt":1560497766210,"price":0.01086038,"matchedQuantity":0.09450077,"makerOrderType":"BUY"},{"createdAt":1560497482930,"price":0.01085029,"matchedQuantity":0.98773623,"makerOrderType":"BUY"},{"createdAt":1560497479950,"price":0.01085028,"matchedQuantity":3.82941842,"makerOrderType":"BUY"},{"createdAt":1560497424620,"price":0.01085569,"matchedQuantity":5.71843177,"makerOrderType":"BUY"},{"createdAt":1560497421590,"price":0.01085568,"matchedQuantity":0.11978956,"makerOrderType":"BUY"},{"createdAt":1560497418340,"price":0.01084963,"matchedQuantity":3.19780867,"makerOrderType":"BUY"},{"createdAt":1560497387430,"price":0.01081239,"matchedQuantity":0.11978956,"makerOrderType":"SELL"},{"createdAt":1560497231010,"price":0.01081368,"matchedQuantity":1.10780496,"makerOrderType":"BUY"},{"createdAt":1560497230080,"price":0.01081368,"matchedQuantity":0.92949499,"makerOrderType":"BUY"},{"createdAt":1560497229290,"price":0.01081368,"matchedQuantity":1.40352815,"makerOrderType":"BUY"},{"createdAt":1560497229210,"price":0.01081368,"matchedQuantity":0.92949499,"makerOrderType":"BUY"},{"createdAt":1560497228930,"price":0.01081368,"matchedQuantity":0.09254975,"makerOrderType":"BUY"},{"createdAt":1560497228520,"price":0.01081368,"matchedQuantity":0.09254975,"makerOrderType":"BUY"},{"createdAt":1560497228020,"price":0.01081368,"matchedQuantity":0.92949499,"makerOrderType":"BUY"},{"createdAt":1560497228010,"price":0.01081368,"matchedQuantity":1.40352815,"makerOrderType":"BUY"},{"createdAt":1560497227330,"price":0.01081368,"matchedQuantity":0.09254975,"makerOrderType":"BUY"},{"createdAt":1560497226930,"price":0.01081368,"matchedQuantity":0.09254975,"makerOrderType":"BUY"},{"createdAt":1560497226260,"price":0.01081368,"matchedQuantity":0.92949499,"makerOrderType":"BUY"},{"createdAt":1560497226180,"price":0.01081368,"matchedQuantity":1.40352815,"makerOrderType":"BUY"},{"createdAt":1560497211180,"price":0.01081368,"matchedQuantity":0.09254975,"makerOrderType":"BUY"},{"createdAt":1560497184220,"price":0.01081368,"matchedQuantity":0.1557,"makerOrderType":"BUY"},{"createdAt":1560497157400,"price":0.01081368,"matchedQuantity":0.46484094,"makerOrderType":"BUY"},{"createdAt":1560497155440,"price":0.01081368,"matchedQuantity":0.46484094,"makerOrderType":"BUY"},{"createdAt":1560496761330,"price":0.01081368,"matchedQuantity":0.07222497,"makerOrderType":"SELL"},{"createdAt":1560496751300,"price":0.0108137,"matchedQuantity":0.07222497,"makerOrderType":"SELL"},{"createdAt":1560496730310,"price":0.01085838,"matchedQuantity":0.04684617,"makerOrderType":"BUY"},{"createdAt":1560496205060,"price":0.010877,"matchedQuantity":2.40333213,"makerOrderType":"BUY"},{"createdAt":1560496203850,"price":0.01084003,"matchedQuantity":2.88797564,"makerOrderType":"SELL"},{"createdAt":1560496203850,"price":0.01084004,"matchedQuantity":2.44763583,"makerOrderType":"SELL"},{"createdAt":1560496203850,"price":0.01086601,"matchedQuantity":0.1241911,"makerOrderType":"SELL"},{"createdAt":1560496020340,"price":0.01086568,"matchedQuantity":0.10015068,"makerOrderType":"BUY"},{"createdAt":1560495772070,"price":0.01086568,"matchedQuantity":0.46016109,"makerOrderType":"BUY"},{"createdAt":1560494812590,"price":0.01083503,"matchedQuantity":1.95591982,"makerOrderType":"BUY"},{"createdAt":1560494516030,"price":0.01083503,"matchedQuantity":0.50542315,"makerOrderType":"BUY"},{"createdAt":1560494460770,"price":0.01078639,"matchedQuantity":12.2453742,"makerOrderType":"SELL"},{"createdAt":1560494460770,"price":0.0107916,"matchedQuantity":22,"makerOrderType":"SELL"},{"createdAt":1560494460770,"price":0.01079196,"matchedQuantity":9.0760541,"makerOrderType":"SELL"},{"createdAt":1560494460770,"price":0.01079847,"matchedQuantity":27.71199669,"makerOrderType":"SELL"},{"createdAt":1560494460770,"price":0.01079848,"matchedQuantity":18.26,"makerOrderType":"SELL"},{"createdAt":1560494460770,"price":0.01079951,"matchedQuantity":0.78939763,"makerOrderType":"SELL"},{"createdAt":1560494460770,"price":0.01079953,"matchedQuantity":3.24949292,"makerOrderType":"SELL"},{"createdAt":1560494460770,"price":0.01079954,"matchedQuantity":5.26768446,"makerOrderType":"SELL"},{"createdAt":1560494330390,"price":0.01083518,"matchedQuantity":1.44621087,"makerOrderType":"BUY"},{"createdAt":1560494326030,"price":0.01079589,"matchedQuantity":0.13603303,"makerOrderType":"SELL"},{"createdAt":1560493953900,"price":0.01084969,"matchedQuantity":0.10693131,"makerOrderType":"BUY"},{"createdAt":1560493898450,"price":0.01085323,"matchedQuantity":0.09280437,"makerOrderType":"BUY"},{"createdAt":1560493822450,"price":0.01082429,"matchedQuantity":0.08989994,"makerOrderType":"BUY"},{"createdAt":1560493811200,"price":0.01082429,"matchedQuantity":0.09215385,"makerOrderType":"SELL"}],"status":200,"error":null}'
+    http_version: 
+  recorded_at: Fri, 14 Jun 2019 07:56:44 GMT
+recorded_with: VCR 4.0.0
