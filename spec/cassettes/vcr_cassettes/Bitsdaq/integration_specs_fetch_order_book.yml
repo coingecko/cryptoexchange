@@ -1,0 +1,147 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitsdaq.com/api/order?marketSymbol=ZEC-BTC&offset=0&orderType=BUY
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitsdaq.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Jun 2019 07:56:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3601'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d4238913a291dd91e52f1e6eace3192241560499010; expires=Sat, 13-Jun-20
+        07:56:50 GMT; path=/; domain=.bitsdaq.com; HttpOnly; Secure
+      - _csrf=3VXU9Gg4-TIg-1w4oT55QCRn; Path=/
+      - csrfToken=b7ma5Bzo-VGQBgMZQS9ibEYDql4nE-HgJnWo; Path=/; HttpOnly; SameSite=Strict
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Authorization, X-Requested-With, Content-Type, Accept, X-Authorization,
+        X-Access-Token, x-cp-language, x-cp-timezone,x-cp-device,x-app-ko,x-app-token
+      Timestamp:
+      - '1560499010935'
+      Access-Control-Expose-Headers:
+      - timestamp, UserCountryCode
+      Etag:
+      - W/"e11-ncHTete5f3lPAKQV6eHonUNWOYM"
+      Usercountrycode:
+      - SG
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e6abffdd810c359-SIN
+    body:
+      encoding: UTF-8
+      string: '{"result":[{"price":0.01082306,"currentQuantity":5.38316177,"amount":0.0582622828264162},{"price":0.01082305,"currentQuantity":49.407,"amount":0.53473443135},{"price":0.01082139,"currentQuantity":27.65691402,"amount":0.2992862528068878},{"price":0.01082138,"currentQuantity":22,"amount":0.23807036},{"price":0.01081395,"currentQuantity":45,"amount":0.48662775},{"price":0.01081233,"currentQuantity":0.12063965,"amount":0.0013043957068845},{"price":0.01081138,"currentQuantity":44,"amount":0.47570072},{"price":0.01080001,"currentQuantity":18.26,"amount":0.1972081826},{"price":0.01079501,"currentQuantity":59.99999986,"amount":0.6477005984886987},{"price":0.010795,"currentQuantity":36.2621,"amount":0.3914493695},{"price":0.01076819,"currentQuantity":23.05493576,"amount":0.2482599287014744},{"price":0.01076818,"currentQuantity":69.86,"amount":0.7522650548},{"price":0.01076809,"currentQuantity":4.61084471,"amount":0.0496499908133039},{"price":0.01075718,"currentQuantity":181.02,"amount":1.9472647236},{"price":0.01073196,"currentQuantity":54.22,"amount":0.5818868712},{"price":0.01073195,"currentQuantity":485.23588879,"amount":5.2075272966998405},{"price":0.01073161,"currentQuantity":10.77,"amount":0.1155794397},{"price":0.01071019,"currentQuantity":12.77,"amount":0.1367691263},{"price":0.0107,"currentQuantity":0.22882241,"amount":0.002448399787},{"price":0.01068882,"currentQuantity":45.33989353,"amount":0.4846299607613346},{"price":0.01068881,"currentQuantity":11.77,"amount":0.1258072937},{"price":0.01066748,"currentQuantity":11.77,"amount":0.1255562396},{"price":0.0106324,"currentQuantity":137.93,"amount":1.466526932},{"price":0.01063239,"currentQuantity":0.25877176,"amount":0.0027513622733064},{"price":0.01062527,"currentQuantity":0.09411525,"amount":0.0009999999423675},{"price":0.01062215,"currentQuantity":0.11297147,"amount":0.0011999999000605},{"price":0.01061221,"currentQuantity":5.57014427,"amount":0.0591115407235367},{"price":0.01060565,"currentQuantity":0.18857872,"amount":0.001999999901768},{"price":0.01060516,"currentQuantity":2.5,"amount":0.0265129},{"price":0.01060373,"currentQuantity":27.77,"amount":0.2944655821},{"price":0.0106007,"currentQuantity":0.51090364,"amount":0.005415936216548},{"price":0.0106,"currentQuantity":0.1,"amount":0.00106},{"price":0.01059781,"currentQuantity":0.0504,"amount":0.000534129624},{"price":0.01058748,"currentQuantity":17.77,"amount":0.1881395196},{"price":0.01058572,"currentQuantity":0.09456135,"amount":0.001000999973922},{"price":0.01058256,"currentQuantity":9.77,"amount":0.1033916112},{"price":0.01054388,"currentQuantity":0.12547563,"amount":0.0013229999856444},{"price":0.01054076,"currentQuantity":0.05137868,"amount":0.0005415703349968},{"price":0.01053,"currentQuantity":137.10298558,"amount":1.4436944381574},{"price":0.01051667,"currentQuantity":0.09508713,"amount":0.0009999999674571},{"price":0.01051043,"currentQuantity":17.73,"amount":0.1863499239},{"price":0.0105,"currentQuantity":2.186246,"amount":0.022955583},{"price":0.01048,"currentQuantity":5,"amount":0.0524},{"price":0.01047724,"currentQuantity":0.09544498,"amount":0.0009999999622552},{"price":0.01047584,"currentQuantity":3.67720532,"amount":0.0385218145794688},{"price":0.01046899,"currentQuantity":0.73160492,"amount":0.0076591645914308},{"price":0.01042517,"currentQuantity":0.21232555,"amount":0.0022135299540935},{"price":0.0104,"currentQuantity":44.66663717,"amount":0.464533026568},{"price":0.0103798,"currentQuantity":17.97,"amount":0.186525006},{"price":0.01037645,"currentQuantity":0.05,"amount":0.0005188225}],"status":200,"error":null}'
+    http_version: 
+  recorded_at: Fri, 14 Jun 2019 07:56:43 GMT
+- request:
+    method: get
+    uri: https://bitsdaq.com/api/order?marketSymbol=ZEC-BTC&offset=0&orderType=SELL
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitsdaq.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Jun 2019 07:56:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3690'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d1ccc4f22ffccd09b68784d90c598e5aa1560499011; expires=Sat, 13-Jun-20
+        07:56:51 GMT; path=/; domain=.bitsdaq.com; HttpOnly; Secure
+      - _csrf=y7q-3bUOySvHLQH0UPh1vCBn; Path=/
+      - csrfToken=zwuPIWA0-MAK0LIhX67wjkUe_15bqzDb9ClU; Path=/; HttpOnly; SameSite=Strict
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Authorization, X-Requested-With, Content-Type, Accept, X-Authorization,
+        X-Access-Token, x-cp-language, x-cp-timezone,x-cp-device,x-app-ko,x-app-token
+      Timestamp:
+      - '1560499011323'
+      Access-Control-Expose-Headers:
+      - timestamp, UserCountryCode
+      Etag:
+      - W/"e6a-6P5EB9Fmg+kSwHqu+XgOINAGWqw"
+      Usercountrycode:
+      - SG
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e6ac003d914c36d-SIN
+    body:
+      encoding: UTF-8
+      string: '{"result":[{"price":0.01086427,"currentQuantity":0.14709901,"amount":0.0015981233613727},{"price":0.01086428,"currentQuantity":18.21808127,"amount":0.1979263359800356},{"price":0.0108643,"currentQuantity":27.6564134,"amount":0.30046757210162},{"price":0.01086432,"currentQuantity":19.72800273,"amount":0.2143313346195936},{"price":0.01087071,"currentQuantity":8.5,"amount":0.092401035},{"price":0.01087351,"currentQuantity":14.61229391,"amount":0.1588869239533241},{"price":0.01087768,"currentQuantity":45,"amount":0.4894956},{"price":0.01091,"currentQuantity":46.6094,"amount":0.508508554},{"price":0.01091235,"currentQuantity":114.7,"amount":1.251646545},{"price":0.01091236,"currentQuantity":18.25,"amount":0.19915057},{"price":0.01091238,"currentQuantity":59.99999997,"amount":0.6547427996726286},{"price":0.01091239,"currentQuantity":0.11978956,"amount":0.0013071903966484},{"price":0.01092281,"currentQuantity":0.22039874,"amount":0.0024073735612594},{"price":0.01092896,"currentQuantity":181.01,"amount":1.9782510496},{"price":0.01093138,"currentQuantity":4.61084471,"amount":0.0504028956459998},{"price":0.0109355,"currentQuantity":0.21430827,"amount":0.002343568086585},{"price":0.01094222,"currentQuantity":4.73693636,"amount":0.0518325997771192},{"price":0.01094492,"currentQuantity":0.27158523,"amount":0.0029724786155316},{"price":0.01096489,"currentQuantity":8.69920962,"amount":0.0953858765702418},{"price":0.01096495,"currentQuantity":0.11933282,"amount":0.001308478404659},{"price":0.01096855,"currentQuantity":0.23252786,"amount":0.002550493458803},{"price":0.01097007,"currentQuantity":12.77,"amount":0.1400877939},{"price":0.01098059,"currentQuantity":54.21,"amount":0.5952577839},{"price":0.01098348,"currentQuantity":0.36531955,"amount":0.004012479971034},{"price":0.01099386,"currentQuantity":0.27584556,"amount":0.0030326074682616},{"price":0.01099697,"currentQuantity":0.05,"amount":0.0005498485},{"price":0.011,"currentQuantity":1.75988522,"amount":0.01935873742},{"price":0.01101399,"currentQuantity":9.77,"amount":0.1076066823},{"price":0.01102932,"currentQuantity":0.46016109,"amount":0.0050752639131588},{"price":0.01105499,"currentQuantity":216.24,"amount":2.3905310376},{"price":0.011055,"currentQuantity":0.70828999,"amount":0.00783014583945},{"price":0.01105846,"currentQuantity":16.73,"amount":0.1850080358},{"price":0.01106268,"currentQuantity":0.27481222,"amount":0.0030401596499496},{"price":0.01108021,"currentQuantity":8.77,"amount":0.0971734417},{"price":0.01108156,"currentQuantity":2.5,"amount":0.0277039},{"price":0.01110293,"currentQuantity":0.73662047,"amount":0.0081786455149771},{"price":0.01111239,"currentQuantity":0.11978956,"amount":0.0013311483086484},{"price":0.01112612,"currentQuantity":1.03958975,"amount":0.01156660030927},{"price":0.01113923,"currentQuantity":0.0506,"amount":0.000563645038},{"price":0.01114998,"currentQuantity":1.0487,"amount":0.011692984026},{"price":0.01115,"currentQuantity":166.34706859,"amount":1.8547698147785},{"price":0.0111723,"currentQuantity":0.09165468,"amount":0.001023993581364},{"price":0.01117233,"currentQuantity":0.14144401,"amount":0.0015802591562433},{"price":0.01117332,"currentQuantity":0.08474189,"amount":0.0009468482543748},{"price":0.0111834,"currentQuantity":0.69781139,"amount":0.007803903898926},{"price":0.01119297,"currentQuantity":0.54293839,"amount":0.0060770931111183},{"price":0.0112,"currentQuantity":0.2380409,"amount":0.00266605808},{"price":0.0112026,"currentQuantity":0.48956501,"amount":0.005484400981026},{"price":0.01121239,"currentQuantity":0.11978956,"amount":0.0013431272646484},{"price":0.0113,"currentQuantity":3.325,"amount":0.0375725}],"status":200,"error":null}'
+    http_version: 
+  recorded_at: Fri, 14 Jun 2019 07:56:43 GMT
+recorded_with: VCR 4.0.0
