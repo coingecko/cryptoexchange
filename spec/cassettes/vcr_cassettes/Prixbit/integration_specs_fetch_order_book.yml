@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openapi.prixbit.com/openapi/v1/depth/SNT/KRW
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - openapi.prixbit.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 17 Jun 2019 05:06:46 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Ncp-Trace-Id:
+      - 3cc9h6cqjcohl30p1g70p34cpm
+    body:
+      encoding: UTF-8
+      string: '{"error_code":"0","error_msg":"success","result":{"ask":[{"sid":"S","price":63.7000000000,"quantity":75.7053291500},{"sid":"S","price":56.0200000000,"quantity":500.0000000000},{"sid":"S","price":56.0100000000,"quantity":500.0000000000},{"sid":"S","price":56.0000000000,"quantity":500.0000000000},{"sid":"S","price":50.0000000000,"quantity":150.0000000000},{"sid":"S","price":49.0000000000,"quantity":124.0000000000},{"sid":"S","price":48.0000000000,"quantity":150.0000000000},{"sid":"S","price":45.0000000000,"quantity":241.4500000000},{"sid":"S","price":42.0000000000,"quantity":120.0000000000},{"sid":"S","price":41.0000000000,"quantity":142.0000000000},{"sid":"S","price":40.0000000000,"quantity":98.1054500000},{"sid":"S","price":38.0000000000,"quantity":126.5922407500},{"sid":"S","price":37.9500000000,"quantity":5.3754057300}],"bid":[{"sid":"B","price":20.0500000000,"quantity":50.0000000000},{"sid":"B","price":20.0200000000,"quantity":130.2000000000},{"sid":"B","price":20.0000000000,"quantity":160.0000000000},{"sid":"B","price":19.9900000000,"quantity":255.0000000000},{"sid":"B","price":19.9400000000,"quantity":100.0000000000},{"sid":"B","price":19.9300000000,"quantity":60.0000000000},{"sid":"B","price":19.9100000000,"quantity":200.0000000000},{"sid":"B","price":19.8900000000,"quantity":70.0000000000},{"sid":"B","price":19.8600000000,"quantity":600.0000000000},{"sid":"B","price":19.8400000000,"quantity":100.0000000000}]}}'
+    http_version: 
+  recorded_at: Mon, 17 Jun 2019 05:06:46 GMT
+recorded_with: VCR 4.0.0
