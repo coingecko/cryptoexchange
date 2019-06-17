@@ -289,6 +289,7 @@ Or install it yourself as:
 | Koinx             | Y       | Y [x]      |         |         | Y           | Y        | koinx             |       |
 | Korbit            | Y       | Y [x]      |         |         | User-Defined| Y        | korbit            |       |
 | Kraken            | Y       | Y [x]      | Y [limit: 1000]      |         | Y           | Y        | kraken            |       |
+| Kraken Futures    | Y       |            |         |         | Y           | Y        | kraken_futures    |       |
 | Kryptono          | Y       | Y [x]      | Y       |         | User-Defined| Y        | kryptono          |       |
 | Kucoin            | Y       | Y [x]      | N       |         | Y           | Y        | kucoin            |       |
 | Kuna              | Y       | Y [x]      | Y       |         | User-Defined| Y        | kuna              |       |
