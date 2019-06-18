@@ -51,7 +51,7 @@ Or install it yourself as:
 | Biki              | Y       | Y [x]      |         |         | Y           | Y        | biki              |       |
 | Bilaxy            | Y       | Y [x]      | Y       |         | Y           | Y        | bilaxy            |       |
 | Binance           | Y       | Y [x]      | Y [limit: 500]   |         | Y           | Y        | binance           |       |
-| Binance DEX       | Y       |            |         |         | Y           |          | binance_dex       |       |
+| Binance DEX       | Y       | Y [x]      | Y [limit: 50]    |         | Y        |          | binance_dex       |       |
 | Binance Jersey    | Y       | Y [x]      |         |         | Y           | Y        | binance_jersey    |       |
 | Binance Uganda    | Y       | Y [x]      |         |         | Y           | Y        | binance_uganda    |       |
 | Bione             | Y       | Y [x]      |         |         | Y           |          | bione             |       |
