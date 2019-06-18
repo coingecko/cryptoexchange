@@ -24,7 +24,8 @@ module Cryptoexchange::Exchanges
               market_pair  = Cryptoexchange::Models::MarketPair.new(
                 base: base,
                 target: target,
-                market: KrakenFutures::Market::NAME
+                market: KrakenFutures::Market::NAME,
+                contract_interval: output["tag"],
               )
               adapt(market_pair, output)              
             end
@@ -35,6 +36,7 @@ module Cryptoexchange::Exchanges
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
+          ticker.contract_interval = market_pair.contract_interval
           ticker.market    = KrakenFutures::Market::NAME
           ticker.last      = NumericHelper.to_d(output['last'])
           ticker.bid       = NumericHelper.to_d(output['bid'])

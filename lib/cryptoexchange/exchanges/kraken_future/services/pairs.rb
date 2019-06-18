@@ -16,7 +16,8 @@ module Cryptoexchange::Exchanges
               Cryptoexchange::Models::MarketPair.new(
                 base: base,
                 target: target,
-                market: KrakenFutures::Market::NAME
+                market: KrakenFutures::Market::NAME,
+                contract_interval: output["tag"],
               )              
             end
           end.compact
