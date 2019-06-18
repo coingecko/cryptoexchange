@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe 'kraken_futures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'kraken_futures' }
-  let(:eth_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USD', market: 'kraken_futures') }
+  let(:eth_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USD', market: 'kraken_futures', contract_interval: "quarter") }
 
   it 'fetch pairs' do
     pairs = client.pairs('kraken_futures')
@@ -13,6 +13,7 @@ RSpec.describe 'kraken_futures integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'kraken_futures'
+    expect(pair.contract_interval).to eq "quarter"
   end
 
   it 'give trade url' do
@@ -33,5 +34,6 @@ RSpec.describe 'kraken_futures integration specs' do
     expect(ticker.timestamp).to be nil
     
     expect(ticker.payload).to_not be nil
+    expect(ticker.contract_interval).to eq "quarter"
   end
 end
