@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Exchanges Supported
 
-| Exchange          | Ticker  | Order Book | Trade   | Account | Market List | Pair URL | slug              |m.type |
+| Exchange          | Ticker  | Order Book | Trade   | Account | Market List | Trade Page URL | slug              |m.type |
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |----------|-------------------|-------|
 | 58Coin            | Y       | Y          | Y       |         | Y           | Y        | fifty_eight_coin  |       |
 | Abcc              | Y       | N          | N       |         | Y           | Y        | abcc              |       |
@@ -418,6 +418,7 @@ Or install it yourself as:
 | WazirX            | Y       |            |         |         | Y           |          | wazirx            |       |
 | Wcx               | Y       | Y          | Y       |         | Y           |          | wcx               |       |
 | Wex               | Y       | Y          | Y       |         | Y           | Y        | wex               |       |
+| WhaleEx           | Y       | N          |         |         | Y           | Y        | whale_ex          |       |
 | Whitebit          | Y       | Y          | Y       |         | Y           |          | whitebit          |       |
 | Worldcore         | Y       | Y          | Y       |         | Y           | Y        | worldcore         |       |
 | Xt                | Y       | Y [x]      | Y       |         | Y           | Y        | xt                |       |
