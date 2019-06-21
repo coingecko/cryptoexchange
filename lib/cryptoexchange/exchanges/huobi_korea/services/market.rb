@@ -1,7 +1,7 @@
 require 'bigdecimal'
 
 module Cryptoexchange::Exchanges
-  module HuobiKr
+  module HuobiKorea
     module Services
       class Market < Cryptoexchange::Services::Market
         class << self
@@ -17,7 +17,7 @@ module Cryptoexchange::Exchanges
 
         def ticker_url(market_pair)
           name = "#{market_pair.base}#{market_pair.target}".downcase
-          base = Cryptoexchange::Exchanges::HuobiKr::Market::API_URL
+          base = Cryptoexchange::Exchanges::HuobiKorea::Market::API_URL
 
           "#{base}/market/detail/merged?symbol=#{name}"
         end
@@ -28,7 +28,7 @@ module Cryptoexchange::Exchanges
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
-          ticker.market    = HuobiKr::Market::NAME
+          ticker.market    = HuobiKorea::Market::NAME
           ticker.last      = NumericHelper.to_d(market['close'])
           ticker.bid       = NumericHelper.to_d(market['bid'][0]) if market['bid']
           ticker.ask       = NumericHelper.to_d(market['ask'][0]) if market['ask']

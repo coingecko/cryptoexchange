@@ -1,7 +1,7 @@
 module Cryptoexchange::Exchanges
-  module HuobiKr
+  module HuobiKorea
     class Market < Cryptoexchange::Models::Market
-      NAME = 'huobi_kr'
+      NAME = 'huobi_korea'
       API_URL = 'https://api-cloud.huobi.co.kr'
 
       def self.trade_page_url(args={})
