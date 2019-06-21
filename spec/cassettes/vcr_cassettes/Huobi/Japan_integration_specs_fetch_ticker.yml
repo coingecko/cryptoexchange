@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-cloud.huobi.co.jp/market/detail/merged?symbol=btcjpy
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api-cloud.huobi.co.jp
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 21 Jun 2019 03:24:19 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dfde538c159f2c89a0bd1c2c1b48c523f1561087458; expires=Sat, 20-Jun-20
+        03:24:18 GMT; path=/; domain=.huobi.co.jp; HttpOnly
+      X-Request-Id:
+      - 56042f45b49653d673481435282c5053
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ea2de68de1b2cd9-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","ch":"market.btcjpy.detail.merged","ts":1561087458977,"tick":{"amount":18.219521073589636,"open":1004210.0,"close":1039073.0,"high":1050000.0,"id":100024128950,"count":1602,"low":976500.0,"version":100024128950,"ask":[1040177.0,0.0071],"vol":1.8522585218214292E7,"bid":[1037512.0,0.25]}}'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2019 03:24:17 GMT
+recorded_with: VCR 4.0.0
