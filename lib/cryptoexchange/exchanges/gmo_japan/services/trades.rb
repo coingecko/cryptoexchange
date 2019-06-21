@@ -8,7 +8,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "https://api.coin.z.com/public/v1/trades?symbol=#{market_pair.base}_#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::GmoJapan::Market::API_URL}/trades?symbol=#{market_pair.base}"
         end
 
         def adapt(output, market_pair)
