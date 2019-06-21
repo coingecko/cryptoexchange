@@ -1,18 +1,18 @@
 require 'spec_helper'
 
-RSpec.describe 'Huobi KR integration specs' do
+RSpec.describe 'Huobi Korea integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:market) { 'huobi_kr' }
-  let(:pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'KRW', market: 'huobi_kr') }
+  let(:market) { 'huobi_korea' }
+  let(:pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'KRW', market: 'huobi_korea') }
 
   it 'fetch pairs' do
-    pairs = client.pairs('huobi_kr')
+    pairs = client.pairs('huobi_korea')
     expect(pairs).not_to be_empty
 
     pair = pairs.first
     expect(pair.base).not_to be_nil
     expect(pair.target).not_to be_nil
-    expect(pair.market).to eq 'huobi_kr'
+    expect(pair.market).to eq 'huobi_korea'
   end
 
   it 'give trade url' do
@@ -25,7 +25,7 @@ RSpec.describe 'Huobi KR integration specs' do
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'KRW'
-    expect(ticker.market).to eq 'huobi_kr'
+    expect(ticker.market).to eq 'huobi_korea'
     expect(ticker.last).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
@@ -41,7 +41,7 @@ RSpec.describe 'Huobi KR integration specs' do
 
     expect(order_book.base).to eq 'BTC'
     expect(order_book.target).to eq 'KRW'
-    expect(order_book.market).to eq 'huobi_kr'
+    expect(order_book.market).to eq 'huobi_korea'
 
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
@@ -60,7 +60,7 @@ RSpec.describe 'Huobi KR integration specs' do
 
     expect(trade.base).to eq 'BTC'
     expect(trade.target).to eq 'KRW'
-    expect(trade.market).to eq 'huobi_kr'
+    expect(trade.market).to eq 'huobi_korea'
 
     expect(trade.amount).to_not be_nil
     expect(trade.price).to_not be_nil

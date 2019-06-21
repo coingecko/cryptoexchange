@@ -1,5 +1,5 @@
   module Cryptoexchange::Exchanges
-  module HuobiKr
+  module HuobiKorea
     module Services
       class OrderBook < Cryptoexchange::Services::Market
         class << self
@@ -14,7 +14,7 @@
         end
 
         def order_book_url(market_pair)
-          "#{Cryptoexchange::Exchanges::HuobiKr::Market::API_URL}/market/depth?symbol=#{market_pair.base.downcase}#{market_pair.target.downcase}&type=step0"
+          "#{Cryptoexchange::Exchanges::HuobiKorea::Market::API_URL}/market/depth?symbol=#{market_pair.base.downcase}#{market_pair.target.downcase}&type=step0"
         end
 
         def adapt(output, market_pair)
@@ -22,7 +22,7 @@
 
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
-          order_book.market    = HuobiKr::Market::NAME
+          order_book.market    = HuobiKorea::Market::NAME
           order_book.asks      = adapt_orders(output['tick']['asks'])
           order_book.bids      = adapt_orders(output['tick']['bids'])
           order_book.payload   = output

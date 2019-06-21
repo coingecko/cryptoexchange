@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module HuobiKr
+  module HuobiJapan
     module Services
       class Trades < Cryptoexchange::Services::Market
         def fetch(market_pair)
@@ -10,7 +10,7 @@ module Cryptoexchange::Exchanges
         def trades_url(market_pair)
           base = market_pair.base.downcase
           target = market_pair.target.downcase
-          "#{Cryptoexchange::Exchanges::HuobiKr::Market::API_URL}/market/history/trade?symbol=#{base}#{target}&size=2000"
+          "#{Cryptoexchange::Exchanges::HuobiJapan::Market::API_URL}/market/history/trade?symbol=#{base}#{target}&size=2000"
         end
 
         def adapt(output, market_pair)
@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
             tr.amount    = trade["data"][0]["amount"].to_f
             tr.timestamp = trade["data"][0]["ts"] / 1000
             tr.payload   = trade
-            tr.market    = HuobiKr::Market::NAME
+            tr.market    = HuobiJapan::Market::NAME
             tr
           end
         end

@@ -1,8 +1,8 @@
 module Cryptoexchange::Exchanges
-  module HuobiKr
+  module HuobiJapan
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::HuobiKr::Market::API_URL}/v1/common/symbols"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::HuobiJapan::Market::API_URL}/v1/common/symbols"
 
         def fetch
           output = super
@@ -15,7 +15,7 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new({
               base: pair['base-currency'],
               target: pair['quote-currency'],
-              market: HuobiKr::Market::NAME
+              market: HuobiJapan::Market::NAME
             })
           end.compact
         end
