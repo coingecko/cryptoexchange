@@ -252,6 +252,7 @@ Or install it yourself as:
 | GDAX(Coinbase Pro)| Y       | Y [x]      |         |         | Y           | Y        | gdax              |       |
 | Gemini            | Y       | Y [x]      | Y       |         | Y           |          | gemini            |       |
 | GetBTC            | Y       | Y          | Y       |         | User-Defined| Y        | getbtc            |       |
+| GmoJapan          | Y       | Y [x]      | Y       |         | Y           | Y        | gmo_japan         |       |
 | Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |       |
 | Gobaba            | Y       |            |         |         | Y           |          | gobaba            |       |
 | golix (API Failed)| Y       | Y          |         |         | Y           |          | golix             |       |
