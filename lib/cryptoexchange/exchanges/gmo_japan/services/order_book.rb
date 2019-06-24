@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::GmoJapan::Market::API_URL}/orderbooks?symbol=#{market_pair.base}"
+          "https://api.coin.z.com/public/v1/orderbooks?symbol=#{market_pair.base}_#{market_pair.target}"
         end
 
         def adapt(output, market_pair)

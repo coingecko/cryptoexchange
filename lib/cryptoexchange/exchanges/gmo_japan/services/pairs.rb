@@ -11,11 +11,11 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output["data"].map do |pair|
-            next if pair['symbol'].include?('_')
+            next if pair['symbol'].include?('_') == false
             base, target = pair['symbol'].split("_")
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
-              target: "JPY",
+              target: target,
               market: GmoJapan::Market::NAME
             )
           end.compact
