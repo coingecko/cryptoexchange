@@ -3,7 +3,13 @@ module Cryptoexchange::Exchanges
     module Services
       class Trades < Cryptoexchange::Services::Market
         def fetch(market_pair)
-          output = super(ticker_url(market_pair))
+          ctx = OpenSSL::SSL::SSLContext.new
+          ctx.verify_mode = OpenSSL::SSL::VERIFY_NONE
+          url = ticker_url(market_pair)
+
+          output = Cryptoexchange::Cache.ticker_cache.fetch(url) do
+            HTTP.get(url, ssl_context: ctx).parse(:json)
+          end
           adapt(output, market_pair)
         end
 
