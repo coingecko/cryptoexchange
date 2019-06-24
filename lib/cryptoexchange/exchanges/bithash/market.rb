@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://www.bithash.net/api'
 
       def self.trade_page_url(args={})
-        "https://www.bithash.net/en/trade/#{args[:base]}/#{args[:target]}"
+        "https://www.bithash.net/en/exchange/#{args[:base].downcase}/#{args[:target].downcase}"
       end
     end
   end
