@@ -1,0 +1,909 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.boaexchange.com/api/v1/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.boaexchange.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 Jun 2019 07:44:19 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '63508'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d876a07f33c157faaec0774a16c1a0a851561362259; expires=Tue, 23-Jun-20
+        07:44:19 GMT; path=/; domain=.boaexchange.com; HttpOnly
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ebd136a4cc7d952-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: "{\n  \"data\": [\n    {\n      \"coin_market\": {\n        \"code\":
+        \"btc\", \n        \"deposit_confirms\": 3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\",
+        \n        \"maintenance\": false, \n        \"name\": \"Bitcoin\", \n        \"twitter\":
+        \"bitcoincoreorg\", \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\":
+        {\n        \"code\": \"ebst\", \n        \"deposit_confirms\": 15, \n        \"id\":
+        \"5acbc083369dcd1994eedda7\", \n        \"maintenance\": false, \n        \"name\":
+        \"eBoost\", \n        \"twitter\": \"eBoostCoin\", \n        \"tx_fee\": 0.01\n
+        \     }, \n      \"fee_perc\": 0.0015, \n      \"high_price\": 0.00000253,
+        \n      \"id\": \"5acbc1e4369dcd1994eeddac\", \n      \"label\": \"ebst_btc\",
+        \n      \"low_price\": 8.8E-7, \n      \"maker_perc\": 0.25, \n      \"paused\":
+        false, \n      \"price\": 0.00000253, \n      \"price_change\": 1.27927927,
+        \n      \"volume_market\": 0.0581694, \n      \"volume_traded\": 59616.42030842\n
+        \   }, \n    {\n      \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"flash\", \n        \"deposit_confirms\": 20, \n        \"id\": \"5acbc15d369dcd1994eedda8\",
+        \n        \"maintenance\": false, \n        \"name\": \"Flash\", \n        \"twitter\":
+        \"flashcoins\", \n        \"tx_fee\": 0.00001\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5acbc1ef369dcd1994eeddad\",
+        \n      \"label\": \"flash_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"eth\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\",
+        \n        \"maintenance\": false, \n        \"name\": \"Ether\", \n        \"twitter\":
+        \"ethereum\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\": 0.0015,
+        \n      \"high_price\": 0.0035, \n      \"id\": \"5acbc1fa369dcd1994eeddae\",
+        \n      \"label\": \"eth_btc\", \n      \"low_price\": 0.0035, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 0.0035, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"poly\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5ad64ecd6215f157f1efa60f\",
+        \n        \"maintenance\": false, \n        \"name\": \"Polymath\", \n        \"twitter\":
+        \"polymathnetwork\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5ad6a4946215f12a4300ad1e\",
+        \n      \"label\": \"poly_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"ebtc\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5acbc189369dcd1994eedda9\",
+        \n        \"maintenance\": false, \n        \"name\": \"eBitcoin\", \n        \"twitter\":
+        \"ebtctoken\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0.000013, \n      \"id\": \"5ad6a4cf6215f12a4300ad1f\",
+        \n      \"label\": \"ebtc_btc\", \n      \"low_price\": 0.000013, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 0.000013, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"flash\", \n        \"deposit_confirms\": 20, \n        \"id\": \"5acbc15d369dcd1994eedda8\",
+        \n        \"maintenance\": false, \n        \"name\": \"Flash\", \n        \"twitter\":
+        \"flashcoins\", \n        \"tx_fee\": 0.00001\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5ad6a4f16215f12a4300ad20\",
+        \n      \"label\": \"flash_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"poly\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5ad64ecd6215f157f1efa60f\",
+        \n        \"maintenance\": false, \n        \"name\": \"Polymath\", \n        \"twitter\":
+        \"polymathnetwork\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5ad6a50c6215f12a4300ad21\",
+        \n      \"label\": \"poly_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"ebtc\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5acbc189369dcd1994eedda9\",
+        \n        \"maintenance\": false, \n        \"name\": \"eBitcoin\", \n        \"twitter\":
+        \"ebtctoken\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0.00022, \n      \"id\": \"5ad6a51d6215f12a4300ad22\",
+        \n      \"label\": \"ebtc_eth\", \n      \"low_price\": 0.00022, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 0.00022, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"ebst\", \n        \"deposit_confirms\": 15, \n        \"id\": \"5acbc083369dcd1994eedda7\",
+        \n        \"maintenance\": false, \n        \"name\": \"eBoost\", \n        \"twitter\":
+        \"eBoostCoin\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 6.3, \n      \"id\": \"5ad6a52a6215f12a4300ad23\",
+        \n      \"label\": \"ebst_eth\", \n      \"low_price\": 6.3, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 6.3, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"rvn\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5af9ed556215f139179747a9\",
+        \n        \"maintenance\": false, \n        \"name\": \"Ravencoin\", \n        \"twitter\":
+        \"ravencoin\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 1E-8, \n      \"id\": \"5afa67fe6215f139179747aa\",
+        \n      \"label\": \"rvn_btc\", \n      \"low_price\": 1E-8, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"rvn\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5af9ed556215f139179747a9\",
+        \n        \"maintenance\": false, \n        \"name\": \"Ravencoin\", \n        \"twitter\":
+        \"ravencoin\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 1E-8, \n      \"id\": \"5afa680a6215f139179747ab\",
+        \n      \"label\": \"rvn_eth\", \n      \"low_price\": 1E-8, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"unb\", \n        \"deposit_confirms\": 4, \n        \"id\": \"5aea5a7b6215f13919249957\",
+        \n        \"maintenance\": false, \n        \"name\": \"Unbreakablecoin\",
+        \n        \"twitter\": \"unbreakablcoin\", \n        \"tx_fee\": 0.01\n      },
+        \n      \"fee_perc\": 0.0015, \n      \"high_price\": 0.00000749, \n      \"id\":
+        \"5afa681a6215f13918f418b9\", \n      \"label\": \"unb_btc\", \n      \"low_price\":
+        0.00000749, \n      \"maker_perc\": 0.25, \n      \"paused\": false, \n      \"price\":
+        0.00000749, \n      \"price_change\": 0, \n      \"volume_market\": 0, \n
+        \     \"volume_traded\": 0\n    }, \n    {\n      \"coin_market\": {\n        \"code\":
+        \"eth\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\",
+        \n        \"maintenance\": false, \n        \"name\": \"Ether\", \n        \"twitter\":
+        \"ethereum\", \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\":
+        {\n        \"code\": \"unb\", \n        \"deposit_confirms\": 4, \n        \"id\":
+        \"5aea5a7b6215f13919249957\", \n        \"maintenance\": false, \n        \"name\":
+        \"Unbreakablecoin\", \n        \"twitter\": \"unbreakablcoin\", \n        \"tx_fee\":
+        0.01\n      }, \n      \"fee_perc\": 0.0015, \n      \"high_price\": 0, \n
+        \     \"id\": \"5afa68296215f139179747ac\", \n      \"label\": \"unb_eth\",
+        \n      \"low_price\": 0, \n      \"maker_perc\": 0.25, \n      \"paused\":
+        false, \n      \"price\": 1E-8, \n      \"price_change\": 0, \n      \"volume_market\":
+        0, \n      \"volume_traded\": 0\n    }, \n    {\n      \"coin_market\": {\n
+        \       \"code\": \"btc\", \n        \"deposit_confirms\": 3, \n        \"id\":
+        \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\": false, \n        \"name\":
+        \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\", \n        \"tx_fee\":
+        0.0005\n      }, \n      \"coin_traded\": {\n        \"code\": \"max\", \n
+        \       \"deposit_confirms\": 6, \n        \"id\": \"5b0767726215f11068d28310\",
+        \n        \"maintenance\": false, \n        \"name\": \"Maxcoin\", \n        \"twitter\":
+        \"getmaxcoin\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0.000002, \n      \"id\": \"5b0840fa6215f112384a988e\",
+        \n      \"label\": \"max_btc\", \n      \"low_price\": 0.000002, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 0.000002, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"max\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5b0767726215f11068d28310\",
+        \n        \"maintenance\": false, \n        \"name\": \"Maxcoin\", \n        \"twitter\":
+        \"getmaxcoin\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5b0841086215f112399c3f95\",
+        \n      \"label\": \"max_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"dash\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5b08a9386215f112399c3fa3\",
+        \n        \"maintenance\": false, \n        \"name\": \"Dash\", \n        \"twitter\":
+        \"dashpay\", \n        \"tx_fee\": 0.002\n      }, \n      \"fee_perc\": 0.0015,
+        \n      \"high_price\": 0, \n      \"id\": \"5b08aac06215f112399c3fa4\", \n
+        \     \"label\": \"dash_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"dash\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5b08a9386215f112399c3fa3\",
+        \n        \"maintenance\": false, \n        \"name\": \"Dash\", \n        \"twitter\":
+        \"dashpay\", \n        \"tx_fee\": 0.002\n      }, \n      \"fee_perc\": 0.0015,
+        \n      \"high_price\": 0, \n      \"id\": \"5b08aaea6215f112399c3fa6\", \n
+        \     \"label\": \"dash_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"ppi\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b0c65ce6215f112399c3fa7\",
+        \n        \"maintenance\": false, \n        \"name\": \"PiedPiperCoin\", \n
+        \       \"twitter\": \"piedpipercoin\", \n        \"tx_fee\": 1\n      },
+        \n      \"fee_perc\": 0.0015, \n      \"high_price\": 0.00004, \n      \"id\":
+        \"5b0c7c106215f1170966da6c\", \n      \"label\": \"ppi_btc\", \n      \"low_price\":
+        0.00004, \n      \"maker_perc\": 0.25, \n      \"paused\": false, \n      \"price\":
+        0.00004, \n      \"price_change\": 0, \n      \"volume_market\": 0, \n      \"volume_traded\":
+        0\n    }, \n    {\n      \"coin_market\": {\n        \"code\": \"eth\", \n
+        \       \"deposit_confirms\": 30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\",
+        \n        \"maintenance\": false, \n        \"name\": \"Ether\", \n        \"twitter\":
+        \"ethereum\", \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\":
+        {\n        \"code\": \"ppi\", \n        \"deposit_confirms\": 30, \n        \"id\":
+        \"5b0c65ce6215f112399c3fa7\", \n        \"maintenance\": false, \n        \"name\":
+        \"PiedPiperCoin\", \n        \"twitter\": \"piedpipercoin\", \n        \"tx_fee\":
+        1\n      }, \n      \"fee_perc\": 0.0015, \n      \"high_price\": 0, \n      \"id\":
+        \"5b0c7c2d6215f1170966da6e\", \n      \"label\": \"ppi_eth\", \n      \"low_price\":
+        0, \n      \"maker_perc\": 0.25, \n      \"paused\": false, \n      \"price\":
+        1E-8, \n      \"price_change\": 0, \n      \"volume_market\": 0, \n      \"volume_traded\":
+        0\n    }, \n    {\n      \"coin_market\": {\n        \"code\": \"btc\", \n
+        \       \"deposit_confirms\": 3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\",
+        \n        \"maintenance\": false, \n        \"name\": \"Bitcoin\", \n        \"twitter\":
+        \"bitcoincoreorg\", \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\":
+        {\n        \"code\": \"eprx\", \n        \"deposit_confirms\": 30, \n        \"id\":
+        \"5b0d980a6215f1170966da6f\", \n        \"maintenance\": false, \n        \"name\":
+        \"eProxy\", \n        \"twitter\": \"proxy_card\", \n        \"tx_fee\": 1\n
+        \     }, \n      \"fee_perc\": 0.0015, \n      \"high_price\": 0.0000023,
+        \n      \"id\": \"5b0d987e6215f1170b1cc89d\", \n      \"label\": \"eprx_btc\",
+        \n      \"low_price\": 0.0000023, \n      \"maker_perc\": 0.25, \n      \"paused\":
+        false, \n      \"price\": 0.0000023, \n      \"price_change\": 0, \n      \"volume_market\":
+        0, \n      \"volume_traded\": 0\n    }, \n    {\n      \"coin_market\": {\n
+        \       \"code\": \"eth\", \n        \"deposit_confirms\": 30, \n        \"id\":
+        \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\": false, \n        \"name\":
+        \"Ether\", \n        \"twitter\": \"ethereum\", \n        \"tx_fee\": 0.01\n
+        \     }, \n      \"coin_traded\": {\n        \"code\": \"eprx\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5b0d980a6215f1170966da6f\", \n        \"maintenance\":
+        false, \n        \"name\": \"eProxy\", \n        \"twitter\": \"proxy_card\",
+        \n        \"tx_fee\": 1\n      }, \n      \"fee_perc\": 0.0015, \n      \"high_price\":
+        0.000022, \n      \"id\": \"5b0d98986215f1170b1cc89e\", \n      \"label\":
+        \"eprx_eth\", \n      \"low_price\": 0.000022, \n      \"maker_perc\": 0.25,
+        \n      \"paused\": false, \n      \"price\": 0.000022, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"tusd\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b1378ef6215f104f4383644\",
+        \n        \"maintenance\": false, \n        \"name\": \"TrueUSD\", \n        \"twitter\":
+        \"trusttoken\", \n        \"tx_fee\": 3.75\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5b1379c76215f104f4383646\",
+        \n      \"label\": \"tusd_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"tusd\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b1378ef6215f104f4383644\",
+        \n        \"maintenance\": false, \n        \"name\": \"TrueUSD\", \n        \"twitter\":
+        \"trusttoken\", \n        \"tx_fee\": 3.75\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5b1379d36215f104ef926620\",
+        \n      \"label\": \"tusd_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"ngc\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b15b7916215f1084b99fabf\",
+        \n        \"maintenance\": false, \n        \"name\": \"NAGA\", \n        \"twitter\":
+        \"naga_coin\", \n        \"tx_fee\": 2\n      }, \n      \"fee_perc\": 0.0015,
+        \n      \"high_price\": 0.0008, \n      \"id\": \"5b15b8366215f1084b99fac2\",
+        \n      \"label\": \"ngc_btc\", \n      \"low_price\": 0.0008, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 0.0008, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"ngc\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b15b7916215f1084b99fabf\",
+        \n        \"maintenance\": false, \n        \"name\": \"NAGA\", \n        \"twitter\":
+        \"naga_coin\", \n        \"tx_fee\": 2\n      }, \n      \"fee_perc\": 0.0015,
+        \n      \"high_price\": 0, \n      \"id\": \"5b15b8406215f1084b99fac3\", \n
+        \     \"label\": \"ngc_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"ipl\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b1820dc6215f16ee278ef97\",
+        \n        \"maintenance\": false, \n        \"name\": \"InsurePal\", \n        \"twitter\":
+        null, \n        \"tx_fee\": 25\n      }, \n      \"fee_perc\": 0.0015, \n
+        \     \"high_price\": 0, \n      \"id\": \"5b1822546215f16ee278ef9a\", \n
+        \     \"label\": \"ipl_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"ipl\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b1820dc6215f16ee278ef97\",
+        \n        \"maintenance\": false, \n        \"name\": \"InsurePal\", \n        \"twitter\":
+        null, \n        \"tx_fee\": 25\n      }, \n      \"fee_perc\": 0.0015, \n
+        \     \"high_price\": 0, \n      \"id\": \"5b1822616215f16ee278ef9b\", \n
+        \     \"label\": \"ipl_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"occ\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b1843886215f16ee278ef9c\",
+        \n        \"maintenance\": false, \n        \"name\": \"OriginalCryptoCoin\",
+        \n        \"twitter\": \"TUSCNetwork\", \n        \"tx_fee\": 1E+1\n      },
+        \n      \"fee_perc\": 0.0015, \n      \"high_price\": 1E-8, \n      \"id\":
+        \"5b1843de6215f16ee278ef9f\", \n      \"label\": \"occ_btc\", \n      \"low_price\":
+        1E-8, \n      \"maker_perc\": 0.25, \n      \"paused\": false, \n      \"price\":
+        1E-8, \n      \"price_change\": 0, \n      \"volume_market\": 0, \n      \"volume_traded\":
+        0\n    }, \n    {\n      \"coin_market\": {\n        \"code\": \"eth\", \n
+        \       \"deposit_confirms\": 30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\",
+        \n        \"maintenance\": false, \n        \"name\": \"Ether\", \n        \"twitter\":
+        \"ethereum\", \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\":
+        {\n        \"code\": \"occ\", \n        \"deposit_confirms\": 30, \n        \"id\":
+        \"5b1843886215f16ee278ef9c\", \n        \"maintenance\": false, \n        \"name\":
+        \"OriginalCryptoCoin\", \n        \"twitter\": \"TUSCNetwork\", \n        \"tx_fee\":
+        1E+1\n      }, \n      \"fee_perc\": 0.0015, \n      \"high_price\": 0, \n
+        \     \"id\": \"5b1843e76215f16ee278efa0\", \n      \"label\": \"occ_eth\",
+        \n      \"low_price\": 0, \n      \"maker_perc\": 0.25, \n      \"paused\":
+        false, \n      \"price\": 1E-8, \n      \"price_change\": 0, \n      \"volume_market\":
+        0, \n      \"volume_traded\": 0\n    }, \n    {\n      \"coin_market\": {\n
+        \       \"code\": \"btc\", \n        \"deposit_confirms\": 3, \n        \"id\":
+        \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\": false, \n        \"name\":
+        \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\", \n        \"tx_fee\":
+        0.0005\n      }, \n      \"coin_traded\": {\n        \"code\": \"hyc\", \n
+        \       \"deposit_confirms\": 30, \n        \"id\": \"5b1ff21c6215f16b3727ad1a\",
+        \n        \"maintenance\": false, \n        \"name\": \"HydroCoin\", \n        \"twitter\":
+        \"hydrogenapi\", \n        \"tx_fee\": 1E+1\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5b1ff2806215f16b3727ad1d\",
+        \n      \"label\": \"hyc_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"hyc\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b1ff21c6215f16b3727ad1a\",
+        \n        \"maintenance\": false, \n        \"name\": \"HydroCoin\", \n        \"twitter\":
+        \"hydrogenapi\", \n        \"tx_fee\": 1E+1\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5b1ff28a6215f16b3727ad1e\",
+        \n      \"label\": \"hyc_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"exp\", \n        \"deposit_confirms\": 30000, \n        \"id\": \"5b3e60c76215f1370e594af0\",
+        \n        \"maintenance\": true, \n        \"name\": \"Expanse\", \n        \"twitter\":
+        \"ExpanseOfficial\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0.000033, \n      \"id\": \"5b3e693a6215f1370e594af4\",
+        \n      \"label\": \"exp_btc\", \n      \"low_price\": 0.000033, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 0.000033, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"exp\", \n        \"deposit_confirms\": 30000, \n        \"id\": \"5b3e60c76215f1370e594af0\",
+        \n        \"maintenance\": true, \n        \"name\": \"Expanse\", \n        \"twitter\":
+        \"ExpanseOfficial\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5b3e69466215f1370e594af5\",
+        \n      \"label\": \"exp_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"lab\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b3e62526215f1370ac52123\",
+        \n        \"maintenance\": false, \n        \"name\": \"Tokenlab\", \n        \"twitter\":
+        \"tokenlabio\", \n        \"tx_fee\": 1\n      }, \n      \"fee_perc\": 0.0015,
+        \n      \"high_price\": 0, \n      \"id\": \"5b3e69596215f1370e594af7\", \n
+        \     \"label\": \"lab_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"lab\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b3e62526215f1370ac52123\",
+        \n        \"maintenance\": false, \n        \"name\": \"Tokenlab\", \n        \"twitter\":
+        \"tokenlabio\", \n        \"tx_fee\": 1\n      }, \n      \"fee_perc\": 0.0015,
+        \n      \"high_price\": 0.00001, \n      \"id\": \"5b3e69616215f1370e594af8\",
+        \n      \"label\": \"lab_eth\", \n      \"low_price\": 0.00001, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 0.00001, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"dnx\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b86d9e36215f10a4625007a\",
+        \n        \"maintenance\": false, \n        \"name\": \"Den-X\", \n        \"twitter\":
+        \"officialdenx\", \n        \"tx_fee\": 1E+1\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5b86e5606215f10a4625007c\",
+        \n      \"label\": \"dnx_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"dnx\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b86d9e36215f10a4625007a\",
+        \n        \"maintenance\": false, \n        \"name\": \"Den-X\", \n        \"twitter\":
+        \"officialdenx\", \n        \"tx_fee\": 1E+1\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5b86e5a46215f10a4625007e\",
+        \n      \"label\": \"dnx_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"phc\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b8985cc6215f10a4625007f\",
+        \n        \"maintenance\": false, \n        \"name\": \"Pharmaceutical Commerce\",
+        \n        \"twitter\": \"PHCOfficial2K18\", \n        \"tx_fee\": 5E+1\n      },
+        \n      \"fee_perc\": 0.0015, \n      \"high_price\": 0, \n      \"id\": \"5b8987206215f10a485e4c36\",
+        \n      \"label\": \"phc_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"phc\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b8985cc6215f10a4625007f\",
+        \n        \"maintenance\": false, \n        \"name\": \"Pharmaceutical Commerce\",
+        \n        \"twitter\": \"PHCOfficial2K18\", \n        \"tx_fee\": 5E+1\n      },
+        \n      \"fee_perc\": 0.0015, \n      \"high_price\": 0, \n      \"id\": \"5b8987486215f10a46250081\",
+        \n      \"label\": \"phc_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"stor\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b9166736215f10a4513cb47\",
+        \n        \"maintenance\": false, \n        \"name\": \"Self Storage Coin\",
+        \n        \"twitter\": \"storcoin\", \n        \"tx_fee\": 1E+1\n      },
+        \n      \"fee_perc\": 0.0015, \n      \"high_price\": 0.0003, \n      \"id\":
+        \"5b9168056215f10a4513cb4a\", \n      \"label\": \"stor_btc\", \n      \"low_price\":
+        0.0003, \n      \"maker_perc\": 0.25, \n      \"paused\": false, \n      \"price\":
+        0.0003, \n      \"price_change\": 0, \n      \"volume_market\": 0, \n      \"volume_traded\":
+        0\n    }, \n    {\n      \"coin_market\": {\n        \"code\": \"eth\", \n
+        \       \"deposit_confirms\": 30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\",
+        \n        \"maintenance\": false, \n        \"name\": \"Ether\", \n        \"twitter\":
+        \"ethereum\", \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\":
+        {\n        \"code\": \"stor\", \n        \"deposit_confirms\": 30, \n        \"id\":
+        \"5b9166736215f10a4513cb47\", \n        \"maintenance\": false, \n        \"name\":
+        \"Self Storage Coin\", \n        \"twitter\": \"storcoin\", \n        \"tx_fee\":
+        1E+1\n      }, \n      \"fee_perc\": 0.0015, \n      \"high_price\": 0.00699,
+        \n      \"id\": \"5b9168286215f10a46250085\", \n      \"label\": \"stor_eth\",
+        \n      \"low_price\": 0.00699, \n      \"maker_perc\": 0.25, \n      \"paused\":
+        false, \n      \"price\": 0.00699, \n      \"price_change\": 0, \n      \"volume_market\":
+        0.16776, \n      \"volume_traded\": 24\n    }, \n    {\n      \"coin_market\":
+        {\n        \"code\": \"btc\", \n        \"deposit_confirms\": 3, \n        \"id\":
+        \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\": false, \n        \"name\":
+        \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\", \n        \"tx_fee\":
+        0.0005\n      }, \n      \"coin_traded\": {\n        \"code\": \"dan\", \n
+        \       \"deposit_confirms\": 30, \n        \"id\": \"5b9166886215f10a46250082\",
+        \n        \"maintenance\": false, \n        \"name\": \"Daneel\", \n        \"twitter\":
+        \"daneelproject\", \n        \"tx_fee\": 1E+1\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5b91683d6215f10a46250086\",
+        \n      \"label\": \"dan_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"dan\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b9166886215f10a46250082\",
+        \n        \"maintenance\": false, \n        \"name\": \"Daneel\", \n        \"twitter\":
+        \"daneelproject\", \n        \"tx_fee\": 1E+1\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5b9168566215f10a46250088\",
+        \n      \"label\": \"dan_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"blue\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b9166976215f10a4513cb48\",
+        \n        \"maintenance\": false, \n        \"name\": \"Blue Protocol\", \n
+        \       \"twitter\": \"blue_protocol\", \n        \"tx_fee\": 1E+1\n      },
+        \n      \"fee_perc\": 0.0015, \n      \"high_price\": 0, \n      \"id\": \"5b9168636215f10a485e4c37\",
+        \n      \"label\": \"blue_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"blue\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b9166976215f10a4513cb48\",
+        \n        \"maintenance\": false, \n        \"name\": \"Blue Protocol\", \n
+        \       \"twitter\": \"blue_protocol\", \n        \"tx_fee\": 1E+1\n      },
+        \n      \"fee_perc\": 0.0015, \n      \"high_price\": 0, \n      \"id\": \"5b91687e6215f10a4513cb4c\",
+        \n      \"label\": \"blue_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"dnxp\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b9ac8fa6215f1067ee487ea\",
+        \n        \"maintenance\": false, \n        \"name\": \"Den-X Plus\", \n        \"twitter\":
+        \"officialdenx\", \n        \"tx_fee\": 1E+3\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5b9ac9e46215f1067ee487ec\",
+        \n      \"label\": \"dnxp_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"dnxp\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b9ac8fa6215f1067ee487ea\",
+        \n        \"maintenance\": false, \n        \"name\": \"Den-X Plus\", \n        \"twitter\":
+        \"officialdenx\", \n        \"tx_fee\": 1E+3\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5b9aca086215f1067ee487ee\",
+        \n      \"label\": \"dnxp_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"neos\", \n        \"deposit_confirms\": 20, \n        \"id\": \"5ba42cd36215f1067ee487ef\",
+        \n        \"maintenance\": false, \n        \"name\": \"Neos\", \n        \"twitter\":
+        \"neoscoin\", \n        \"tx_fee\": 0.02\n      }, \n      \"fee_perc\": 0.0015,
+        \n      \"high_price\": 0.0000065, \n      \"id\": \"5ba42ed66215f106820abc6b\",
+        \n      \"label\": \"neos_btc\", \n      \"low_price\": 0.0000065, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 0.0000065, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"neos\", \n        \"deposit_confirms\": 20, \n        \"id\": \"5ba42cd36215f1067ee487ef\",
+        \n        \"maintenance\": false, \n        \"name\": \"Neos\", \n        \"twitter\":
+        \"neoscoin\", \n        \"tx_fee\": 0.02\n      }, \n      \"fee_perc\": 0.0015,
+        \n      \"high_price\": 0, \n      \"id\": \"5ba42ee36215f1067f0119bb\", \n
+        \     \"label\": \"neos_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"dcn\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5bad05856215f1067ee487f2\",
+        \n        \"maintenance\": false, \n        \"name\": \"Dentacoin\", \n        \"twitter\":
+        \"dentacoin\", \n        \"tx_fee\": 5E+2\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5bad066b6215f1067ee487f3\",
+        \n      \"label\": \"dcn_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"dcn\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5bad05856215f1067ee487f2\",
+        \n        \"maintenance\": false, \n        \"name\": \"Dentacoin\", \n        \"twitter\":
+        \"dentacoin\", \n        \"tx_fee\": 5E+2\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5bad06826215f1067ee487f5\",
+        \n      \"label\": \"dcn_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"kbc\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5bf1fa296215f116b7e0030e\",
+        \n        \"maintenance\": false, \n        \"name\": \"KaratGold\", \n        \"twitter\":
+        \"karatbarsgmbh\", \n        \"tx_fee\": 2E+2\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5bf1fc6d6215f116b6dc9877\",
+        \n      \"label\": \"kbc_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"kbc\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5bf1fa296215f116b7e0030e\",
+        \n        \"maintenance\": false, \n        \"name\": \"KaratGold\", \n        \"twitter\":
+        \"karatbarsgmbh\", \n        \"tx_fee\": 2E+2\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5bf1fc836215f116b7e00310\",
+        \n      \"label\": \"kbc_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"ala\", \n        \"deposit_confirms\": 5, \n        \"id\": \"5c3f86c26215f116b7e00317\",
+        \n        \"maintenance\": false, \n        \"name\": \"Alaris\", \n        \"twitter\":
+        \"alaristoken\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0.00000175, \n      \"id\": \"5c425f1a6215f116b7e00319\",
+        \n      \"label\": \"ala_btc\", \n      \"low_price\": 0.00000175, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 0.00000175, \n      \"price_change\":
+        0.00574712, \n      \"volume_market\": 0.00108328, \n      \"volume_traded\":
+        619.01761904\n    }, \n    {\n      \"coin_market\": {\n        \"code\":
+        \"eth\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\",
+        \n        \"maintenance\": false, \n        \"name\": \"Ether\", \n        \"twitter\":
+        \"ethereum\", \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\":
+        {\n        \"code\": \"ala\", \n        \"deposit_confirms\": 5, \n        \"id\":
+        \"5c3f86c26215f116b7e00317\", \n        \"maintenance\": false, \n        \"name\":
+        \"Alaris\", \n        \"twitter\": \"alaristoken\", \n        \"tx_fee\":
+        0.01\n      }, \n      \"fee_perc\": 0.0015, \n      \"high_price\": 0, \n
+        \     \"id\": \"5c425f256215f116b7e0031a\", \n      \"label\": \"ala_eth\",
+        \n      \"low_price\": 0, \n      \"maker_perc\": 0.25, \n      \"paused\":
+        false, \n      \"price\": 1E-8, \n      \"price_change\": 0, \n      \"volume_market\":
+        0, \n      \"volume_traded\": 0\n    }, \n    {\n      \"coin_market\": {\n
+        \       \"code\": \"btc\", \n        \"deposit_confirms\": 3, \n        \"id\":
+        \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\": false, \n        \"name\":
+        \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\", \n        \"tx_fee\":
+        0.0005\n      }, \n      \"coin_traded\": {\n        \"code\": \"xco\", \n
+        \       \"deposit_confirms\": 25, \n        \"id\": \"5c70b8896215f14cfe0b16eb\",
+        \n        \"maintenance\": false, \n        \"name\": \"X-Coin\", \n        \"twitter\":
+        \"@XcoinNews\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 1.7E-7, \n      \"id\": \"5c71a8dc6215f14cfe0b16ec\",
+        \n      \"label\": \"xco_btc\", \n      \"low_price\": 1.7E-7, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1.7E-7, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"xco\", \n        \"deposit_confirms\": 25, \n        \"id\": \"5c70b8896215f14cfe0b16eb\",
+        \n        \"maintenance\": false, \n        \"name\": \"X-Coin\", \n        \"twitter\":
+        \"@XcoinNews\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5c71a8ef6215f14cfdcc8ddc\",
+        \n      \"label\": \"xco_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"wings\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5c71ad9e6215f14cfe0b16ef\",
+        \n        \"maintenance\": false, \n        \"name\": \"Wings\", \n        \"twitter\":
+        \"@wingsplatform\", \n        \"tx_fee\": 8\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5c71c3996215f14cfe0b16f1\",
+        \n      \"label\": \"wings_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"wings\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5c71ad9e6215f14cfe0b16ef\",
+        \n        \"maintenance\": false, \n        \"name\": \"Wings\", \n        \"twitter\":
+        \"@wingsplatform\", \n        \"tx_fee\": 8\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5c71c3ad6215f14cff70964f\",
+        \n      \"label\": \"wings_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"salt\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5c71acfc6215f14cff70964e\",
+        \n        \"maintenance\": false, \n        \"name\": \"Salt\", \n        \"twitter\":
+        \"@SALTLending\", \n        \"tx_fee\": 4\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5c71c3c96215f14cfdcc8dde\",
+        \n      \"label\": \"salt_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"salt\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5c71acfc6215f14cff70964e\",
+        \n        \"maintenance\": false, \n        \"name\": \"Salt\", \n        \"twitter\":
+        \"@SALTLending\", \n        \"tx_fee\": 4\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5c71c3dc6215f14cfe0b16f2\",
+        \n      \"label\": \"salt_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"sub\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5c71aa636215f14cfe0b16ee\",
+        \n        \"maintenance\": false, \n        \"name\": \"Substratum\", \n        \"twitter\":
+        \"@SubstratumNet\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5c71cca16215f14cfe0b16f4\",
+        \n      \"label\": \"sub_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"sub\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5c71aa636215f14cfe0b16ee\",
+        \n        \"maintenance\": false, \n        \"name\": \"Substratum\", \n        \"twitter\":
+        \"@SubstratumNet\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5c71ccaf6215f14cfe0b16f5\",
+        \n      \"label\": \"sub_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"bch\", \n        \"deposit_confirms\": 30, \n        \"id\": \"5b030c4a6215f139179747ad\",
+        \n        \"maintenance\": false, \n        \"name\": \"BitcoinCash\", \n
+        \       \"twitter\": \"bitcoin\", \n        \"tx_fee\": 0.01\n      }, \n
+        \     \"fee_perc\": 0.0015, \n      \"high_price\": 0, \n      \"id\": \"5cb7b577fd497b04a56dbbad\",
+        \n      \"label\": \"bch_btc\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"bad\", \n        \"deposit_confirms\": 15, \n        \"id\": \"5cbfc075369dcd7c64eb96f9\",
+        \n        \"maintenance\": false, \n        \"name\": \"Badcoin\", \n        \"twitter\":
+        \"@badcrypto\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 1E-8, \n      \"id\": \"5cbfc1fb369dcd7c64eb96fd\",
+        \n      \"label\": \"bad_btc\", \n      \"low_price\": 1E-8, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"bad\", \n        \"deposit_confirms\": 15, \n        \"id\": \"5cbfc075369dcd7c64eb96f9\",
+        \n        \"maintenance\": false, \n        \"name\": \"Badcoin\", \n        \"twitter\":
+        \"@badcrypto\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 8E-8, \n      \"id\": \"5cbfc210369dcd7c64eb96fe\",
+        \n      \"label\": \"bad_eth\", \n      \"low_price\": 8E-8, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 8E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"taut\", \n        \"deposit_confirms\": 25, \n        \"id\": \"5cbfc0cc369dcd7c64eb96fa\",
+        \n        \"maintenance\": false, \n        \"name\": \"Taucoin\", \n        \"twitter\":
+        \"@tau_io\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\": 0.0015,
+        \n      \"high_price\": 5E-8, \n      \"id\": \"5cbfc22f369dcd7c64eb96ff\",
+        \n      \"label\": \"taut_btc\", \n      \"low_price\": 5E-8, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 5E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"taut\", \n        \"deposit_confirms\": 25, \n        \"id\": \"5cbfc0cc369dcd7c64eb96fa\",
+        \n        \"maintenance\": false, \n        \"name\": \"Taucoin\", \n        \"twitter\":
+        \"@tau_io\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\": 0.0015,
+        \n      \"high_price\": 0, \n      \"id\": \"5cbfc246369dcd7c64eb9700\", \n
+        \     \"label\": \"taut_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"free\", \n        \"deposit_confirms\": 20, \n        \"id\": \"5cdddf6d369dcd2a57e8da6b\",
+        \n        \"maintenance\": false, \n        \"name\": \"Free Coin\", \n        \"twitter\":
+        \"@THE_FREE_COIN\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 1E-8, \n      \"id\": \"5ce30188369dcd0f81586b09\",
+        \n      \"label\": \"free_btc\", \n      \"low_price\": 1E-8, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"free\", \n        \"deposit_confirms\": 20, \n        \"id\": \"5cdddf6d369dcd2a57e8da6b\",
+        \n        \"maintenance\": false, \n        \"name\": \"Free Coin\", \n        \"twitter\":
+        \"@THE_FREE_COIN\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 1E-8, \n      \"id\": \"5ce3019e369dcd0f81586b0a\",
+        \n      \"label\": \"free_eth\", \n      \"low_price\": 1E-8, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"lmy\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5ceef868369dcd26651d9d27\",
+        \n        \"maintenance\": false, \n        \"name\": \"LunchMoney\", \n        \"twitter\":
+        \"\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\": 0.0015, \n
+        \     \"high_price\": 1E-8, \n      \"id\": \"5cf17461369dcd079f6e625b\",
+        \n      \"label\": \"lmy_btc\", \n      \"low_price\": 1E-8, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"lmy\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5ceef868369dcd26651d9d27\",
+        \n        \"maintenance\": false, \n        \"name\": \"LunchMoney\", \n        \"twitter\":
+        \"\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\": 0.0015, \n
+        \     \"high_price\": 0, \n      \"id\": \"5cf1746d369dcd079f6e625c\", \n
+        \     \"label\": \"lmy_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"btb\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5cf18c97369dcd079efdf088\",
+        \n        \"maintenance\": false, \n        \"name\": \"BitBall\", \n        \"twitter\":
+        \"@BitBall_Erc20\", \n        \"tx_fee\": 1\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 4E-8, \n      \"id\": \"5cf424c3369dcd079efdf08b\",
+        \n      \"label\": \"btb_btc\", \n      \"low_price\": 4E-8, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 4E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"btb\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5cf18c97369dcd079efdf088\",
+        \n        \"maintenance\": false, \n        \"name\": \"BitBall\", \n        \"twitter\":
+        \"@BitBall_Erc20\", \n        \"tx_fee\": 1\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5cf46497369dcd079f6e625e\",
+        \n      \"label\": \"btb_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"lana\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5cf85689369dcd6880249140\",
+        \n        \"maintenance\": false, \n        \"name\": \"Lanacoin\", \n        \"twitter\":
+        \"@LanaCoin\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 1E-8, \n      \"id\": \"5cfebfe8369dcd1a137ec1ed\",
+        \n      \"label\": \"lana_btc\", \n      \"low_price\": 1E-8, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"eth\", \n        \"deposit_confirms\":
+        30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\", \n        \"maintenance\":
+        false, \n        \"name\": \"Ether\", \n        \"twitter\": \"ethereum\",
+        \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"lana\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5cf85689369dcd6880249140\",
+        \n        \"maintenance\": false, \n        \"name\": \"Lanacoin\", \n        \"twitter\":
+        \"@LanaCoin\", \n        \"tx_fee\": 0.01\n      }, \n      \"fee_perc\":
+        0.0015, \n      \"high_price\": 0, \n      \"id\": \"5cfebff3369dcd1a137ec1ee\",
+        \n      \"label\": \"lana_eth\", \n      \"low_price\": 0, \n      \"maker_perc\":
+        0.25, \n      \"paused\": false, \n      \"price\": 1E-8, \n      \"price_change\":
+        0, \n      \"volume_market\": 0, \n      \"volume_traded\": 0\n    }, \n    {\n
+        \     \"coin_market\": {\n        \"code\": \"btc\", \n        \"deposit_confirms\":
+        3, \n        \"id\": \"5acbc19d369dcd1994eeddaa\", \n        \"maintenance\":
+        false, \n        \"name\": \"Bitcoin\", \n        \"twitter\": \"bitcoincoreorg\",
+        \n        \"tx_fee\": 0.0005\n      }, \n      \"coin_traded\": {\n        \"code\":
+        \"xpat\", \n        \"deposit_confirms\": 6, \n        \"id\": \"5cf80521369dcd688024913f\",
+        \n        \"maintenance\": false, \n        \"name\": \"Pangea Arbitration
+        Token\", \n        \"twitter\": \"@MyBitNation\", \n        \"tx_fee\": 0.01\n
+        \     }, \n      \"fee_perc\": 0.0015, \n      \"high_price\": 1E-8, \n      \"id\":
+        \"5d000a90369dcd1a1440deea\", \n      \"label\": \"xpat_btc\", \n      \"low_price\":
+        1E-8, \n      \"maker_perc\": 0.25, \n      \"paused\": false, \n      \"price\":
+        1E-8, \n      \"price_change\": 0, \n      \"volume_market\": 0, \n      \"volume_traded\":
+        0\n    }, \n    {\n      \"coin_market\": {\n        \"code\": \"eth\", \n
+        \       \"deposit_confirms\": 30, \n        \"id\": \"5acbc1ad369dcd1994eeddab\",
+        \n        \"maintenance\": false, \n        \"name\": \"Ether\", \n        \"twitter\":
+        \"ethereum\", \n        \"tx_fee\": 0.01\n      }, \n      \"coin_traded\":
+        {\n        \"code\": \"xpat\", \n        \"deposit_confirms\": 6, \n        \"id\":
+        \"5cf80521369dcd688024913f\", \n        \"maintenance\": false, \n        \"name\":
+        \"Pangea Arbitration Token\", \n        \"twitter\": \"@MyBitNation\", \n
+        \       \"tx_fee\": 0.01\n      }, \n      \"fee_perc\": 0.0015, \n      \"high_price\":
+        1E-7, \n      \"id\": \"5d000a9e369dcd1a137ec1f0\", \n      \"label\": \"xpat_eth\",
+        \n      \"low_price\": 1E-7, \n      \"maker_perc\": 0.25, \n      \"paused\":
+        false, \n      \"price\": 1E-7, \n      \"price_change\": 0, \n      \"volume_market\":
+        0, \n      \"volume_traded\": 0\n    }\n  ]\n}\n"
+    http_version: 
+  recorded_at: Mon, 24 Jun 2019 07:44:19 GMT
+recorded_with: VCR 4.0.0
