@@ -16,7 +16,7 @@ RSpec.describe 'Bithash integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'bithash', base: eth_btc_pair.base, target: eth_btc_pair.target
-    expect(trade_page_url).to eq "https://www.bithash.net/en/trade/ETH/BTC"
+    expect(trade_page_url).to eq "https://www.bithash.net/en/exchange/#{eth_btc_pair.base.downcase}/#{eth_btc_pair.target.downcase}"
   end
 
   it 'fetch ticker' do
@@ -32,7 +32,7 @@ RSpec.describe 'Bithash integration specs' do
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
-    
+
     expect(ticker.payload).to_not be nil
   end
 
