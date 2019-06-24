@@ -14,6 +14,11 @@ RSpec.describe 'Boa integration specs' do
     expect(pair.market).to eq 'boa'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'boa', base: ebst_btc_pair.base, target: ebst_btc_pair.target
+    expect(trade_page_url).to eq "https://www.boaexchange.com/market/EBST_BTC"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(ebst_btc_pair)
 
