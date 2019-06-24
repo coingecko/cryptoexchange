@@ -111,6 +111,7 @@ Or install it yourself as:
 | Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |       |
 | Blockonix         | Y       | Y          | Y       |         | Y           |          | blockonix         |       |
 | Blokmy            | Y       | Y          | Y       |         | Y           | Y        | blokmy            |       |
+| Boa               | Y [x]   | Y          | Y       |         | Y           | Y        | boa               |       |
 | Braziliex (halted)| Y       | Y          | Y       |         | Y           |          | braziliex         |       |
 | BTC38             |         |            |         |         |             |          |                   |       |
 | BTC-e             |         |            |         |         |             |          |                   |       |
