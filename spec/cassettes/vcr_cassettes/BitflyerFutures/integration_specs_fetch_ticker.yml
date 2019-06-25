@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitflyer.com/v1/ticker?product_code=FX_BTC_JPY
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitflyer.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '309'
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/10.0
+      X-Ratelimit-Period:
+      - '300'
+      X-Ratelimit-Remaining:
+      - '498'
+      X-Ratelimit-Reset:
+      - '1561439689'
+      Request-Context:
+      - appId=cid-v1:edafd9df-f22e-4349-b71f-1c468550add5
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - sameorigin
+      Content-Security-Policy:
+      - 'default-src http: https: ws: wss: data: ''unsafe-inline'' ''unsafe-eval'''
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Tue, 25 Jun 2019 05:09:49 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"product_code":"FX_BTC_JPY","timestamp":"2019-06-25T05:09:49.447","tick_id":35676918,"best_bid":1263093.0,"best_ask":1263785.0,"best_bid_size":0.05,"best_ask_size":0.01,"total_bid_depth":5025.40921894,"total_ask_depth":5654.64959394,"ltp":1263090.0,"volume":42303.25610783,"volume_by_product":35530.50350327}'
+    http_version: 
+  recorded_at: Tue, 25 Jun 2019 05:09:49 GMT
+recorded_with: VCR 4.0.0

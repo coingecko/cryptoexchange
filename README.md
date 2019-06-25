@@ -77,6 +77,7 @@ Or install it yourself as:
 | BitFex.Trade      | Y       |            |         |         | Y           | Y        | bitfex            |       |
 | Bitfinex          | Y       | Y [x]      |         |         | Y           |          | bitfinex          |       |
 | Bitflyer          | Y       | Y [x]      |         |         | Y           |          | bitflyer          |       |
+| Bitflyer (Futures)| Y       | Y [x]      |         |         | Y           | Y        | bitflyer_futures  |       |
 | Bitforex          | Y       | Y [x]      | N       |         | Y           |          | bitforex          |       |
 | Bithash           | Y       | Y [x]      | Y       |         | Y           | Y        | bithash           |       |
 | Bitholic          | Y       | Y [x]      | Y       |         | Y           |          | bitholic          |       |
