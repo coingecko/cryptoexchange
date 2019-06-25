@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Coinbene::Market::API_URL}/market/orderbook?symbol=#{market_pair.base}#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::Coinbene::Market::API_URL}/market/orderbook?symbol=#{market_pair.base}#{market_pair.target}&depth=500"
         end
 
         def adapt(output, market_pair)
@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
           order_book.market    = Coinbene::Market::NAME
           order_book.asks      = adapt_orders HashHelper.dig(output, 'orderbook', 'asks')
           order_book.bids      = adapt_orders HashHelper.dig(output, 'orderbook', 'bids')
-          order_book.timestamp = output['timestamp'] / 1000
+          order_book.timestamp = nil
           order_book.payload   = output
           order_book
         end

@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-cloud.huobi.co.kr/market/detail/merged?symbol=btckrw
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api-cloud.huobi.co.kr
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 21 Jun 2019 03:34:05 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d577fa4c0da136cd41edf62ae1d7352b81561088045; expires=Sat, 20-Jun-20
+        03:34:05 GMT; path=/; domain=.huobi.co.kr; HttpOnly
+      - __cfruid=5c746d7edfba8a02aa034c2efa7cccc8a6243644-1561088045; path=/; domain=.huobi.co.kr;
+        HttpOnly
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ea2ecba5843c113-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","ch":"market.btckrw.detail.merged","ts":1561088045500,"tick":{"amount":1550.5955999999994,"open":1.109807235E7,"close":1.147350001E7,"high":1.160567682E7,"id":100198347758,"count":11732,"low":1.092512316E7,"version":100198347758,"ask":[1.153388798E7,0.0289],"vol":1.7441272590395897E10,"bid":[1.142268953E7,0.0398]}}'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2019 03:34:03 GMT
+recorded_with: VCR 4.0.0

@@ -44,7 +44,7 @@ module Cryptoexchange::Exchanges
           ticker.low       = NumericHelper.to_d(market[3])
           ticker.last      = NumericHelper.to_d(market[1])
           ticker.volume    = NumericHelper.to_d(market[-1])
-          ticker.timestamp = NumericHelper.to_d(market[6])
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

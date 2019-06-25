@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.piexgo.com/api/v1/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.piexgo.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2019 05:14:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d2e458c2858018920d4b37b03d6e1293e1559625265; expires=Wed, 03-Jun-20
+        05:14:25 GMT; path=/; domain=.piexgo.com; HttpOnly; Secure
+      - __cflb=2562181095; Secure; path=/; expires=Wed, 05-Jun-19 04:14:25 GMT; HttpOnly
+      X-Powered-By:
+      - PIEXGO TEAM
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e176c559a6970c6-SIN
+    body:
+      encoding: UTF-8
+      string: '{"msg":"OK","err_code":0,"data":[{"symbol":"BTC_USDT","maker_fee":0.0005,"taker_fee":0.0015,"amount_precision":4,"price_precision":2},{"symbol":"ETH_USDT","maker_fee":0.0005,"taker_fee":0.0015,"amount_precision":4,"price_precision":2},{"symbol":"ETH_BTC","maker_fee":0.0005,"taker_fee":0.0015,"amount_precision":4,"price_precision":6},{"symbol":"TT_USDT","maker_fee":0.0005,"taker_fee":0.0015,"amount_precision":2,"price_precision":5},{"symbol":"EOS_USDT","maker_fee":0.0005,"taker_fee":0.0015,"amount_precision":4,"price_precision":4},{"symbol":"BCH_USDT","maker_fee":0.0005,"taker_fee":0.0015,"amount_precision":4,"price_precision":2},{"symbol":"PXG_USDT","maker_fee":0.0005,"taker_fee":0.0015,"amount_precision":2,"price_precision":5},{"symbol":"LBA_USDT","maker_fee":0.0005,"taker_fee":0.0015,"amount_precision":4,"price_precision":6},{"symbol":"TRX_USDT","maker_fee":0.0005,"taker_fee":0.0015,"amount_precision":2,"price_precision":6},{"symbol":"IOTX_USDT","maker_fee":0.0005,"taker_fee":0.0015,"amount_precision":2,"price_precision":6},{"symbol":"MXC_USDT","maker_fee":0.0005,"taker_fee":0.0015,"amount_precision":2,"price_precision":6},{"symbol":"IOTX_BTC","maker_fee":0.0005,"taker_fee":0.0015,"amount_precision":2,"price_precision":8},{"symbol":"IOTX_ETH","maker_fee":0.0005,"taker_fee":0.0015,"amount_precision":2,"price_precision":8},{"symbol":"IOTA_BTC","maker_fee":0.0005,"taker_fee":0.0015,"amount_precision":4,"price_precision":8},{"symbol":"IOTA_USDT","maker_fee":0.0005,"taker_fee":0.0015,"amount_precision":4,"price_precision":4}]}
+
+'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2019 05:14:25 GMT
+recorded_with: VCR 4.0.0

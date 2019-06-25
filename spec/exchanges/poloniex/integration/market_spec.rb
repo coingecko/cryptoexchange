@@ -44,4 +44,37 @@ RSpec.describe 'Poloniex integration specs' do
 
     expect(ticker.payload).to_not be nil
   end
+
+  it 'fetch order book' do
+    order_book = client.order_book(ltc_btc_pair)
+
+    expect(order_book.base).to eq 'LTC'
+    expect(order_book.target).to eq 'BTC'
+    expect(order_book.market).to eq 'poloniex'
+
+    expect(order_book.asks).to_not be_empty
+    expect(order_book.bids).to_not be_empty
+    expect(order_book.asks.first.price).to_not be_nil
+    expect(order_book.bids.first.amount).to_not be_nil
+    expect(order_book.bids.first.timestamp).to be_nil
+    expect(order_book.asks.count).to be > 10
+    expect(order_book.bids.count).to be > 10
+    expect(order_book.timestamp).to be_nil
+    expect(order_book.payload).to_not be nil
+  end
+
+  it 'fetch trades' do
+    trades = client.trades(ltc_btc_pair)
+    trade = trades.first
+
+    expect(trade.base).to eq 'LTC'
+    expect(trade.target).to eq 'BTC'
+    expect(trade.market).to eq 'poloniex'
+
+    expect(trade.amount).to_not be_nil
+    expect(trade.price).to_not be_nil
+    expect(2000..Date.today.year).to include(Time.at(trade.timestamp).year)
+    expect(trade.trade_id).to_not be_nil
+    expect(trade.type).to eq("buy").or eq("sell")
+  end
 end

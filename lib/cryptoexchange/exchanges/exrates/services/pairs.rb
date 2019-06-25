@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Exrates
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Exrates::Market::API_URL}"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Exrates::Market::API_URL}/ticker"
 
         def fetch
           output = super
@@ -10,18 +10,14 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          pairs = output.keys
-          market_pairs = []
-          pairs.each do |pair|
-            base, target = pair.split('_')
-            market_pairs << 
+          output.map do |pair|
+            base, target = pair["name"].split('_')
             Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target, 
               market: Exrates::Market::NAME
             )
-          end
-          market_pairs
+          end.compact
         end
       end
     end

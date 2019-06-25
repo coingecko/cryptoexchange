@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openapi.coinlim.com/server/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - openapi.coinlim.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 18 Jan 2019 07:29:09 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      X-Application-Context:
+      - service-business-api:55600
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","data":[{"last":"119.67","ask":"124.21","bid":"119.34","low":"119.67","high":"124.85","volume":"3795.2683","tradeCurrency":"ETH","currency":"USDT","symbol":"ETHUSDT","percent":"0.00%","open":"122.62"},{"last":"0.000012","ask":"0.000199","bid":"0.000001","low":"0","high":"0","volume":"0","tradeCurrency":"ETPP","currency":"ETH","symbol":"ETPPETH","percent":"0.00%","open":"0"},{"last":"0.019500","ask":"0","bid":"0.019500","low":"0","high":"0","volume":"0","tradeCurrency":"ETH","currency":"BTC","symbol":"ETHBTC","percent":"0.00%","open":"0"},{"last":"0.0000142","ask":"0.0000142","bid":"0.0000139","low":"0.0000139","high":"0.0000142","volume":"23174638.17","tradeCurrency":"ETC8","currency":"USDT","symbol":"ETC8USDT","percent":"0.00%","open":"0.0000139"},{"last":"0.01537","ask":"0.01552","bid":"0.01498","low":"0.01300","high":"0.01551","volume":"982065.99","tradeCurrency":"PRC","currency":"USDT","symbol":"PRCUSDT","percent":"0.00%","open":"0.01499"},{"last":"0.00000042","ask":"0.00000042","bid":"0.00000038","low":"0.00000034","high":"0.00000044","volume":"37112173.9384","tradeCurrency":"AXE","currency":"ETH","symbol":"AXEETH","percent":"0.00%","open":"0.00000036"},{"last":"0.165","ask":"0","bid":"0","low":"0","high":"0","volume":"0","tradeCurrency":"WGR","currency":"USDT","symbol":"WGRUSDT","percent":"0.00%","open":"0"},{"last":"3606.230","ask":"3645.440","bid":"3603.620","low":"3506.430","high":"3619.210","volume":"210.4706","tradeCurrency":"BTC","currency":"USDT","symbol":"BTCUSDT","percent":"0.00%","open":"3579.730"},{"last":"0.002512","ask":"0.002525","bid":"0.002505","low":"0.002505","high":"0.002566","volume":"443169.1062","tradeCurrency":"TEAC","currency":"ETH","symbol":"TEACETH","percent":"0.00%","open":"0.002557"},{"last":"0.00001850","ask":"0.00002600","bid":"0.00001800","low":"0","high":"0","volume":"0","tradeCurrency":"WGR","currency":"BTC","symbol":"WGRBTC","percent":"0.00%","open":"0"},{"last":"0.00002005","ask":"0.00002009","bid":"0.00001983","low":"0.00001935","high":"0.00002029","volume":"91299900.83","tradeCurrency":"IONC","currency":"ETH","symbol":"IONCETH","percent":"0.00%","open":"0.00001982"},{"last":"0.00022","ask":"0.00022","bid":"0.00014","low":"0.00022","high":"0.00022","volume":"847039.5170","tradeCurrency":"ISC","currency":"ETH","symbol":"ISCETH","percent":"0.00%","open":"0.00022"},{"last":"0.002682","ask":"0.002686","bid":"0.002645","low":"0.002370","high":"0.002685","volume":"122152357.25","tradeCurrency":"OBSR","currency":"USDT","symbol":"OBSRUSDT","percent":"0.00%","open":"0.002478"},{"last":"0.0000001100","ask":"0.0000001100","bid":"0.0000001063","low":"0.0000001050","high":"0.0000001180","volume":"4696080.00","tradeCurrency":"ENTS","currency":"ETH","symbol":"ENTSETH","percent":"0.00%","open":"0.0000001170"},{"last":"0.000003","ask":"0.000003","bid":"0.000002","low":"0.000003","high":"0.000006","volume":"4723.0000","tradeCurrency":"MYT","currency":"ETH","symbol":"MYTETH","percent":"0.00%","open":"0.000005"},{"last":"0.0000000197","ask":"0.0000000199","bid":"0.0000000197","low":"0.0000000193","high":"0.0000000197","volume":"1278674.22","tradeCurrency":"HAVY","currency":"ETH","symbol":"HAVYETH","percent":"0.00%","open":"0.0000000193"},{"last":"0.00011725","ask":"0.00011725","bid":"0.00011655","low":"0.00011725","high":"0.00012250","volume":"364012.3923","tradeCurrency":"DLB","currency":"ETH","symbol":"DLBETH","percent":"0.00%","open":"0.00012175"},{"last":"0.000550","ask":"0.000550","bid":"0.000470","low":"0.000500","high":"0.000600","volume":"423.6500","tradeCurrency":"RXE","currency":"ETH","symbol":"RXEETH","percent":"0.00%","open":"0.000500"},{"last":"0.0000000167","ask":"0.0000000167","bid":"0.0000000160","low":"0.0000000164","high":"0.0000000167","volume":"400000","tradeCurrency":"HAND","currency":"ETH","symbol":"HANDETH","percent":"0.00%","open":"0.0000000164"},{"last":"0.0000000495","ask":"0.0000000505","bid":"0.0000000495","low":"0.0000000485","high":"0.0000000515","volume":"77526839.01","tradeCurrency":"QUIN","currency":"ETH","symbol":"QUINETH","percent":"0.00%","open":"0.0000000485"},{"last":"0.0002","ask":"0.0001","bid":"0","low":"0","high":"0","volume":"0","tradeCurrency":"AVGL","currency":"USDT","symbol":"AVGLUSDT","percent":"0.00%","open":"0"},{"last":"0.0000000190","ask":"0.0000000205","bid":"0.0000000180","low":"0.0000000190","high":"0.0000000200","volume":"55800000.00","tradeCurrency":"LXMT","currency":"ETH","symbol":"LXMTETH","percent":"0.00%","open":"0.0000000200"},{"last":"0.000520","ask":"0.000520","bid":"0.000130","low":"0.000520","high":"0.000570","volume":"110702.2570","tradeCurrency":"UAC","currency":"ETH","symbol":"UACETH","percent":"0.00%","open":"0.000560"},{"last":"0.00000011","ask":"0.00000011","bid":"0.00000008","low":"0.00000011","high":"0.00000012","volume":"9344749.72","tradeCurrency":"SPEC","currency":"ETH","symbol":"SPECETH","percent":"0.00%","open":"0.00000011"},{"last":"0.000300","ask":"0.000320","bid":"0.000300","low":"0.000300","high":"0.000355","volume":"8582.96","tradeCurrency":"BTSG","currency":"ETH","symbol":"BTSGETH","percent":"0.00%","open":"0.000355"},{"last":"0.000450","ask":"0.000435","bid":"0.000050","low":"0","high":"0","volume":"0","tradeCurrency":"CMC","currency":"ETH","symbol":"CMCETH","percent":"0.00%","open":"0"},{"last":"0.000013","ask":"0.000013","bid":"0.000006","low":"0.000006","high":"0.000013","volume":"3705.08","tradeCurrency":"FNL","currency":"ETH","symbol":"FNLETH","percent":"0.00%","open":"0.000006"},{"last":"0.000100","ask":"0.000100","bid":"0.000050","low":"0.000100","high":"0.000120","volume":"71641.42","tradeCurrency":"FRECN","currency":"ETH","symbol":"FRECNETH","percent":"0.00%","open":"0.000120"},{"last":"0.000008","ask":"0.000008","bid":"0.000007","low":"0.000008","high":"0.000009","volume":"21300.00","tradeCurrency":"PRT","currency":"ETH","symbol":"PRTETH","percent":"0.00%","open":"0.000009"},{"last":"0.028880","ask":"0.028880","bid":"0.023050","low":"0.028500","high":"0.028880","volume":"994.658297","tradeCurrency":"PCBC","currency":"ETH","symbol":"PCBCETH","percent":"0.00%","open":"0.028500"},{"last":"2.0000","ask":"1.5000","bid":"0.0001","low":"0","high":"0","volume":"0","tradeCurrency":"XBX","currency":"USDT","symbol":"XBXUSDT","percent":"0.00%","open":"0"},{"last":"0.000001","ask":"0.000000","bid":"0","low":"0","high":"0","volume":"0","tradeCurrency":"AVGL","currency":"ETH","symbol":"AVGLETH","percent":"0.00%","open":"0"}]}'
+    http_version: 
+  recorded_at: Fri, 18 Jan 2019 07:29:09 GMT
+recorded_with: VCR 4.0.0

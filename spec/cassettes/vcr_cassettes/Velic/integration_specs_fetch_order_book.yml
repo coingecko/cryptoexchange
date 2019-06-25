@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.velic.io/api/v1/public/orderbook?base_coin=BTC&match_coin=BCH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.velic.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '6062'
+      Date:
+      - Thu, 30 May 2019 04:50:33 GMT
+      Connection:
+      - close
+      Server-Timing:
+      - cdn-cache; desc=MISS
+      - edge; dur=90
+      - origin; dur=64
+    body:
+      encoding: UTF-8
+      string: '{"sell_list":[{"type":"SELL","price":"0.05441","amount":"0.123"},{"type":"SELL","price":"0.05949","amount":"0.111"},{"type":"SELL","price":"0.05682","amount":"0.066"},{"type":"SELL","price":"0.05406","amount":"0.147"},{"type":"SELL","price":"0.05945","amount":"0.046"},{"type":"SELL","price":"0.05448","amount":"0.172"},{"type":"SELL","price":"0.05497","amount":"0.087"},{"type":"SELL","price":"0.05474","amount":"0.066"},{"type":"SELL","price":"0.0547","amount":"0.051"},{"type":"SELL","price":"0.06089","amount":"0.037"},{"type":"SELL","price":"0.05451","amount":"0.172"},{"type":"SELL","price":"0.06066","amount":"0.064"},{"type":"SELL","price":"0.06198","amount":"0.045"},{"type":"SELL","price":"0.05398","amount":"0.151"},{"type":"SELL","price":"0.05413","amount":"0.187"},{"type":"SELL","price":"0.05484","amount":"0.221"},{"type":"SELL","price":"0.05438","amount":"0.189"},{"type":"SELL","price":"0.05929","amount":"0.048"},{"type":"SELL","price":"0.05434","amount":"0.234"},{"type":"SELL","price":"0.0549","amount":"0.179"},{"type":"SELL","price":"0.05403","amount":"0.165"},{"type":"SELL","price":"0.05385","amount":"0.068"},{"type":"SELL","price":"0.05642","amount":"0.001"},{"type":"SELL","price":"0.05388","amount":"0.196"},{"type":"SELL","price":"0.05691","amount":"0.061"},{"type":"SELL","price":"0.05452","amount":"0.147"},{"type":"SELL","price":"0.0585","amount":"0.055"},{"type":"SELL","price":"0.05919","amount":"0.053"},{"type":"SELL","price":"0.05395","amount":"0.154"},{"type":"SELL","price":"0.05431","amount":"0.02"},{"type":"SELL","price":"0.05695","amount":"0.068"},{"type":"SELL","price":"0.05837","amount":"0.061"},{"type":"SELL","price":"0.05911","amount":"0.074"},{"type":"SELL","price":"0.05487","amount":"0.132"},{"type":"SELL","price":"0.06023","amount":"0.038"},{"type":"SELL","price":"0.05433","amount":"0.402"},{"type":"SELL","price":"0.05437","amount":"0.073"},{"type":"SELL","price":"0.05819","amount":"0.066"},{"type":"SELL","price":"0.05886","amount":"0.066"},{"type":"SELL","price":"0.05456","amount":"0.188"},{"type":"SELL","price":"0.05386","amount":"0.171"},{"type":"SELL","price":"0.05495","amount":"0.095"},{"type":"SELL","price":"0.06035","amount":"0.051"},{"type":"SELL","price":"0.0605","amount":"0.035"},{"type":"SELL","price":"0.054","amount":"0.195"},{"type":"SELL","price":"0.06173","amount":"0.064"},{"type":"SELL","price":"0.05786","amount":"0.048"},{"type":"SELL","price":"0.06022","amount":"0.035"},{"type":"SELL","price":"0.05436","amount":"0.136"},{"type":"SELL","price":"0.0544","amount":"0.279"},{"type":"SELL","price":"0.05405","amount":"0.003"},{"type":"SELL","price":"0.05492","amount":"0.11"},{"type":"SELL","price":"0.05383","amount":"0.08"},{"type":"SELL","price":"0.05499","amount":"0.143"},{"type":"SELL","price":"0.06169","amount":"0.035"},{"type":"SELL","price":"0.05496","amount":"0.087"},{"type":"SELL","price":"0.06063","amount":"0.043"},{"type":"SELL","price":"0.05856","amount":"0.059"},{"type":"SELL","price":"0.06039","amount":"0.045"},{"type":"SELL","price":"0.0545","amount":"0.104"},{"type":"SELL","price":"0.05397","amount":"0.313"},{"type":"SELL","price":"0.05672","amount":"0.069"},{"type":"SELL","price":"0.05693","amount":"0.04"},{"type":"SELL","price":"0.05768","amount":"0.103"},{"type":"SELL","price":"0.05489","amount":"0.31"}],"buy_list":[{"type":"BUY","price":"0.05073","amount":"0.093"},{"type":"BUY","price":"0.04815","amount":"0.075"},{"type":"BUY","price":"0.04928","amount":"0.151"},{"type":"BUY","price":"0.05233","amount":"0.222"},{"type":"BUY","price":"0.0475","amount":"0.155"},{"type":"BUY","price":"0.05227","amount":"0.097"},{"type":"BUY","price":"0.04962","amount":"0.074"},{"type":"BUY","price":"0.04937","amount":"0.182"},{"type":"BUY","price":"0.04805","amount":"0.203"},{"type":"BUY","price":"0.0434","amount":"0.055"},{"type":"BUY","price":"0.052","amount":"0.167"},{"type":"BUY","price":"0.0523","amount":"0.244"},{"type":"BUY","price":"0.05087","amount":"0.108"},{"type":"BUY","price":"0.05246","amount":"0.174"},{"type":"BUY","price":"0.04918","amount":"0.096"},{"type":"BUY","price":"0.04333","amount":"0.181"},{"type":"BUY","price":"0.04671","amount":"0.222"},{"type":"BUY","price":"0.05041","amount":"0.054"},{"type":"BUY","price":"0.0435","amount":"0.118"},{"type":"BUY","price":"0.04734","amount":"0.107"},{"type":"BUY","price":"0.05238","amount":"0.064"},{"type":"BUY","price":"0.05221","amount":"0.1"},{"type":"BUY","price":"0.04342","amount":"0.129"},{"type":"BUY","price":"0.0436","amount":"0.19"},{"type":"BUY","price":"0.05231","amount":"0.061"},{"type":"BUY","price":"0.04802","amount":"0.141"},{"type":"BUY","price":"0.04936","amount":"0.09"},{"type":"BUY","price":"0.05199","amount":"0.083"},{"type":"BUY","price":"0.0467","amount":"0.203"},{"type":"BUY","price":"0.04988","amount":"0.138"},{"type":"BUY","price":"0.05239","amount":"0.02"},{"type":"BUY","price":"0.04817","amount":"0.763"},{"type":"BUY","price":"0.0471","amount":"0.276"},{"type":"BUY","price":"0.04672","amount":"0.023"},{"type":"BUY","price":"0.04823","amount":"0.187"},{"type":"BUY","price":"0.05235","amount":"0.463"},{"type":"BUY","price":"0.04756","amount":"0.032"},{"type":"BUY","price":"0.04737","amount":"0.012"},{"type":"BUY","price":"0.05229","amount":"0.109"},{"type":"BUY","price":"0.04987","amount":"0.035"},{"type":"BUY","price":"0.05232","amount":"0.524"},{"type":"BUY","price":"0.04941","amount":"0.073"},{"type":"BUY","price":"0.04916","amount":"0.43"},{"type":"BUY","price":"0.04727","amount":"0.138"},{"type":"BUY","price":"0.04354","amount":"0.122"},{"type":"BUY","price":"0.04818","amount":"0.095"},{"type":"BUY","price":"0.04457","amount":"0.055"},{"type":"BUY","price":"0.04913","amount":"0.158"},{"type":"BUY","price":"0.04808","amount":"0.09"},{"type":"BUY","price":"0.04426","amount":"0.02"},{"type":"BUY","price":"0.0538","amount":"0.156"},{"type":"BUY","price":"0.05042","amount":"0.049"},{"type":"BUY","price":"0.05113","amount":"0.226"},{"type":"BUY","price":"0.04898","amount":"0.053"},{"type":"BUY","price":"0.04617","amount":"0.125"}]}'
+    http_version: 
+  recorded_at: Thu, 30 May 2019 04:50:33 GMT
+recorded_with: VCR 4.0.0

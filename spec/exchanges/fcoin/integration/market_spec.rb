@@ -16,7 +16,7 @@ RSpec.describe 'Fcoin integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'fcoin', base: eth_usdt_pair.base, target: eth_usdt_pair.target
-    expect(trade_page_url).to eq "https://exchange.fcoin.com/ex/main/ETH-USDT"
+    expect(trade_page_url).to eq "https://exchange.fcoin.com/ex/spot/main/eth/usdt"
   end
 
   it 'fetch ticker' do
@@ -45,24 +45,23 @@ RSpec.describe 'Fcoin integration specs' do
     expect(order_book.bids).to_not be_empty
     expect(order_book.asks.first.price).to_not be_nil
     expect(order_book.bids.first.amount).to_not be_nil
-    expect(order_book.bids.first.timestamp).to_not be_nil
-    expect(order_book.timestamp).to be_a Numeric
+    expect(order_book.bids.first.timestamp).to be_nil
+    expect(order_book.timestamp).to be_nil
     expect(order_book.payload).to_not be nil
   end
 
-  it 'fetch trade' do
+  it 'fetch trades' do
     trades = client.trades(eth_usdt_pair)
-    trade = trades.sample
+    trade = trades.first
 
-    expect(trades).to_not be_empty
-    expect(trade.trade_id).to_not be_nil
     expect(trade.base).to eq 'ETH'
     expect(trade.target).to eq 'USDT'
-    expect(['buy', 'sell']).to include trade.type
-    expect(trade.price).to_not be_nil
-    expect(trade.amount).to_not be_nil
-    expect(trade.timestamp).to be_a Numeric
-    expect(trade.payload).to_not be nil
     expect(trade.market).to eq 'fcoin'
+
+    expect(trade.amount).to_not be_nil
+    expect(trade.price).to_not be_nil
+    expect(2000..Date.today.year).to include(Time.at(trade.timestamp).year)
+    expect(trade.trade_id).to_not be_nil
+    expect(trade.type).to eq("buy").or eq("sell")
   end
 end

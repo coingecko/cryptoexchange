@@ -1,0 +1,99 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.oceanex.pro/v1/tickers/btcusdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.oceanex.pro
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 17 Jan 2019 08:58:29 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '182'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7893c36843c43b14f523eab1dff7562b1547715509; expires=Fri, 17-Jan-20
+        08:58:29 GMT; path=/; domain=.oceanex.pro; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - https://oceanex.pro
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Version:
+      - HTTP/1.1
+      Host:
+      - api.oceanex.pro
+      X-Request-Id:
+      - fdb9e601616b1990b137a37ba17026d7
+      X-Real-Ip:
+      - 42.200.158.123
+      X-Forwarded-For:
+      - 42.200.158.123
+      X-Forwarded-Host:
+      - api.oceanex.pro
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Original-Uri:
+      - "/v1/tickers/btcusdt"
+      X-Scheme:
+      - https
+      X-Original-Forwarded-For:
+      - 42.200.158.123
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - HK
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 42.200.158.123
+      Cdn-Loop:
+      - cloudflare
+      Vary:
+      - Origin
+      Etag:
+      - W/"c6eb6bd609355721486cd31ebb42e4fc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.020565'
+      X-Robots-Tag:
+      - noindex
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49a79ecd39a73337-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":0,"message":"Operation is successful","data":{"at":1547715509,"ticker":{"buy":"3573.92","sell":"3589.23","low":"3552.88","high":"3629.66","last":"3576.05","vol":"8.519909"}}}'
+    http_version: 
+  recorded_at: Thu, 17 Jan 2019 08:58:29 GMT
+recorded_with: VCR 4.0.0

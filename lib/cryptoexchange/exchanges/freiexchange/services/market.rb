@@ -20,6 +20,8 @@ module Cryptoexchange::Exchanges
         def adapt_all(output)
           output.map do |pair, ticker|
             ticker = ticker.first
+            next if ticker.nil?
+
             if pair && ticker
               base, target = pair.split("_")
               market_pair = Cryptoexchange::Models::MarketPair.new(
@@ -29,7 +31,7 @@ module Cryptoexchange::Exchanges
                             )
               adapt(market_pair, ticker)
             end
-          end
+          end.compact
         end
 
         def adapt(market_pair, output)

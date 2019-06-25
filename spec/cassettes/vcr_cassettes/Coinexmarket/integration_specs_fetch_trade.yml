@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.coinexmarket.io/tradeHistory/BTC_LTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinexmarket.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 30 Jun 2018 16:28:00 GMT
+      Server:
+      - Apache/2.4.18 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, Content-Length, Accept-Encoding
+      Set-Cookie:
+      - ci_session=2qfsg9cekvr0q3qg7b2sdgpcvtqg43sm; expires=Sat, 30-Jun-2018 18:28:00
+        GMT; Max-Age=7200; path=/; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '516'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "   \r\n{\"status\":1,\"message\":\"Success\",\"data\":[{\"id\":\"5347\",\"vendor\":\"LTC\",\"market\":\"BTC\",\"coins\":\"0.5430000000\",\"coincost\":\"69.8690000000\"},{\"id\":\"5348\",\"vendor\":\"LTC\",\"market\":\"BTC\",\"coins\":\"1.7600000000\",\"coincost\":\"69.8690000000\"},{\"id\":\"5349\",\"vendor\":\"LTC\",\"market\":\"BTC\",\"coins\":\"0.8790000000\",\"coincost\":\"69.8690000000\"},{\"id\":\"5350\",\"vendor\":\"LTC\",\"market\":\"BTC\",\"coins\":\"1.3200000000\",\"coincost\":\"69.8690000000\"},{\"id\":\"5351\",\"vendor\":\"LTC\",\"market\":\"BTC\",\"coins\":\"1.0600000000\",\"coincost\":\"69.8660000000\"}]}"
+    http_version: 
+  recorded_at: Sat, 30 Jun 2018 16:28:00 GMT
+recorded_with: VCR 4.0.0

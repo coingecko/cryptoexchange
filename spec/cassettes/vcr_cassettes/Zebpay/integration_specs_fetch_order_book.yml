@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.zebapi.com/pro/v1/market/BTC-EUR/book
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.zebapi.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 31 May 2019 05:07:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1065'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=ddd113d7f67bf2e9e25590031e33566191559279232; expires=Sat, 30-May-20
+        05:07:12 GMT; path=/; domain=.zebapi.com; HttpOnly
+      Etag:
+      - W/"429-AWPfh4HCIR2Awp5BUTiEK+n1IDM"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type
+      X-Powered-By:
+      - Express
+      Request-Context:
+      - appId=cid-v1:0d576db7-8023-44b1-a82e-b12249ded98e
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4df66c437ff5709c-SIN
+    body:
+      encoding: UTF-8
+      string: '{"asks":[{"price":"7362.44000000","amount":6700000},{"price":"7362.54000000","amount":6700000},{"price":"7362.74000000","amount":6700000},{"price":"7362.94000000","amount":6700000},{"price":"7363.64000000","amount":200000},{"price":"7368.26000000","amount":6700000},{"price":"7372.98000000","amount":6700000},{"price":"7373.08000000","amount":6700000},{"price":"7373.18000000","amount":6700000},{"price":"7373.28000000","amount":6700000},{"price":"7375.19000000","amount":6700000}],"bids":[{"price":"7291.95000000","amount":6700000},{"price":"7291.06000000","amount":6700000},{"price":"7290.66000000","amount":2800000},{"price":"7289.76000000","amount":6700000},{"price":"7289.37000000","amount":6700000},{"price":"7287.87000000","amount":6700000},{"price":"7287.67000000","amount":6700000},{"price":"7285.09000000","amount":6700000},{"price":"7284.79000000","amount":6700000},{"price":"7284.39000000","amount":6700000},{"price":"7283.99000000","amount":6700000},{"price":"4510.00000000","amount":285144},{"price":"4500.00000000","amount":407556}],"pair":"BTC-EUR"}'
+    http_version: 
+  recorded_at: Fri, 31 May 2019 05:07:12 GMT
+recorded_with: VCR 4.0.0

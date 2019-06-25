@@ -30,7 +30,7 @@ module Cryptoexchange::Exchanges
           ticker.high      = NumericHelper.to_d(data['high'])
           ticker.low       = NumericHelper.to_d(data['low'])
           ticker.volume    = NumericHelper.to_d(data['vol_cur'])
-          ticker.timestamp = data['updated'].to_i
+          ticker.timestamp = nil
           ticker.payload   = data
           ticker
         end

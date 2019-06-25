@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.coinexmarket.io/orderBook/BTC_LTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinexmarket.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 30 Jun 2018 16:00:34 GMT
+      Server:
+      - Apache/2.4.18 (Ubuntu)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, Content-Length, Accept-Encoding
+      Set-Cookie:
+      - ci_session=abr5vvrk0tcaqueqijqnggsm90qvra7l; expires=Sat, 30-Jun-2018 18:00:34
+        GMT; Max-Age=7200; path=/; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '1374'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "   \r\n{\"status\":1,\"message\":\"Success\",\"buyorder\":[{\"orders_id\":\"7389\",\"orders_currency\":\"LTC\",\"orders_master\":\"BTC\",\"orders_coins\":\"1.7400000000\",\"orders_coincost\":\"78.8700000000\"},{\"orders_id\":\"7391\",\"orders_currency\":\"LTC\",\"orders_master\":\"BTC\",\"orders_coins\":\"0.8950000000\",\"orders_coincost\":\"78.7600000000\"},{\"orders_id\":\"7388\",\"orders_currency\":\"LTC\",\"orders_master\":\"BTC\",\"orders_coins\":\"2.7600000000\",\"orders_coincost\":\"78.5900000000\"},{\"orders_id\":\"7387\",\"orders_currency\":\"LTC\",\"orders_master\":\"BTC\",\"orders_coins\":\"0.7680000000\",\"orders_coincost\":\"78.5600000000\"},{\"orders_id\":\"7497\",\"orders_currency\":\"LTC\",\"orders_master\":\"BTC\",\"orders_coins\":\"1.7830000000\",\"orders_coincost\":\"78.5200000000\"}],\"sellorder\":[{\"orders_id\":\"7497\",\"orders_currency\":\"LTC\",\"orders_master\":\"BTC\",\"orders_coins\":\"1.7830000000\",\"orders_coincost\":\"78.5200000000\"},{\"orders_id\":\"7387\",\"orders_currency\":\"LTC\",\"orders_master\":\"BTC\",\"orders_coins\":\"0.7680000000\",\"orders_coincost\":\"78.5600000000\"},{\"orders_id\":\"7388\",\"orders_currency\":\"LTC\",\"orders_master\":\"BTC\",\"orders_coins\":\"2.7600000000\",\"orders_coincost\":\"78.5900000000\"},{\"orders_id\":\"7391\",\"orders_currency\":\"LTC\",\"orders_master\":\"BTC\",\"orders_coins\":\"0.8950000000\",\"orders_coincost\":\"78.7600000000\"},{\"orders_id\":\"7389\",\"orders_currency\":\"LTC\",\"orders_master\":\"BTC\",\"orders_coins\":\"1.7400000000\",\"orders_coincost\":\"78.8700000000\"}]}"
+    http_version: 
+  recorded_at: Sat, 30 Jun 2018 16:00:35 GMT
+recorded_with: VCR 4.0.0

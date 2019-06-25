@@ -10,7 +10,8 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output.collect do |pair, _ticker|
+          hash = output.first # output looks like [hash]
+          hash.collect do |pair, _ticker|
             target, base = pair.split("_")
 
             Cryptoexchange::Models::MarketPair.new(

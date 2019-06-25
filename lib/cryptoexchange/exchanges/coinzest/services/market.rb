@@ -10,8 +10,11 @@ module Cryptoexchange::Exchanges
         def fetch
           ctx = OpenSSL::SSL::SSLContext.new
           ctx.verify_mode = OpenSSL::SSL::VERIFY_NONE
-          result = HTTP.get(ticker_url, ssl_context: ctx)
-          output = JSON.parse(result)
+
+          output = Cryptoexchange::Cache.ticker_cache.fetch(ticker_url) do
+            HTTP.get(ticker_url, ssl_context: ctx).parse(:json)
+          end
+
           adapt_all(output)
         end
 
@@ -42,7 +45,7 @@ module Cryptoexchange::Exchanges
           ticker.high = NumericHelper.to_d(output['High'])
           ticker.low = NumericHelper.to_d(output['Low'])
           ticker.volume = NumericHelper.to_d(output['BaseVolume']/output['Last'])
-          ticker.timestamp = output['TimeStamp']/1000
+          ticker.timestamp = nil
           ticker.payload = output
           ticker
         end

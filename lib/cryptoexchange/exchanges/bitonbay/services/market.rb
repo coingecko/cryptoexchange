@@ -18,25 +18,28 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          output.map do |pair|
-            market_pair  = Cryptoexchange::Models::MarketPair.new(
-              base: pair['zone_type'],
-              target: pair['currency_type'],
+          output['lastprice'].map do |base, target|
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+              base: base,
+              target: target.keys.first,
               market: Bitonbay::Market::NAME
             )
-            adapt(market_pair, pair)
-          end
+            adapt(market_pair, output)
+          end.compact
         end
 
         def adapt(market_pair, output)
+          last_data = output["lastprice"][market_pair.base.downcase]['btc']
+          volume_data = output["accumamount"][market_pair.base.downcase]['btc']
+
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Bitonbay::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['24h_price'].to_f)
-          ticker.volume    = NumericHelper.to_d(output['24h_amount'].to_f)
-          ticker.timestamp = DateTime.parse(output['last_date']).to_time.to_i
-          ticker.payload   = output
+          ticker.last      = last_data.nil? ? nil : NumericHelper.to_d(last_data)
+          ticker.volume    = volume_data.nil? ? nil : NumericHelper.to_d(volume_data)
+          ticker.timestamp = nil
+          ticker.payload   = nil
           ticker
         end
       end

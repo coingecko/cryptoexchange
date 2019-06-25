@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.ecxx.com/exapi/api/v1/allTicker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.ecxx.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 13 Jun 2019 06:37:18 GMT
+      Content-Type:
+      - text/html;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dba201b24ef9eef80cdea811639235f471560407837; expires=Fri, 12-Jun-20
+        06:37:17 GMT; path=/; domain=.ecxx.com; HttpOnly; Secure
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e620e1aec5bd1f3-HKG
+    body:
+      encoding: UTF-8
+      string: '{"date":"2019-06-13 14:37:18","ticker":[{"symbol":"ETH_BTC","vol":"868.2324","high":"0.031913","last":"0.031903","low":"0.031900","sell":0.031966,"buy":0.031902,"yesterdayPrice":"0.031186","change":2.29900,"lastExchangPrice":"0.031900"},{"symbol":"EOS_BTC","vol":"8708.95","high":"0.00080580","last":"0.00080572","low":"0.00080556","sell":0.00080597,"buy":0.00080436,"yesterdayPrice":"0.00078556","change":2.56600,"lastExchangPrice":"0.00080556"},{"symbol":"BTC_USDT","vol":"87.1775","high":"8084.56","last":"8081.32","low":"8081.32","sell":8093.61,"buy":8077.44,"yesterdayPrice":"8144.44","change":-0.77500,"lastExchangPrice":"8082.13"},{"symbol":"LTC_BTC","vol":"1741.2960","high":"0.016667","last":"0.016659","low":"0.016659","sell":0.016679,"buy":0.016646,"yesterdayPrice":"0.017457","change":-4.57100,"lastExchangPrice":"0.016664"},{"symbol":"XRP_BTC","vol":"43902.00","high":"0.00004982","last":"0.00004981","low":"0.00004980","sell":0.00004988,"buy":0.00004978,"yesterdayPrice":"0.00004915","change":1.34300,"lastExchangPrice":"0.00004980"},{"symbol":"BCH_BTC","vol":"866.6733","high":"0.049013","last":"0.049003","low":"0.048993","sell":0.049041,"buy":0.048943,"yesterdayPrice":"0.048695","change":0.63300,"lastExchangPrice":"0.049013"},{"symbol":"NEO_BTC","vol":"4347.6326","high":"0.001599","last":"0.001594","low":"0.001594","sell":0.001598,"buy":0.001594,"yesterdayPrice":"0.001581","change":0.82200,"lastExchangPrice":"0.001594"},{"symbol":"LTC_USDT","vol":"1747.0364","high":"134.68","last":"134.67","low":"134.64","sell":134.84,"buy":134.57,"yesterdayPrice":"141.86","change":-5.06800,"lastExchangPrice":"134.64"},{"symbol":"ETH_USDT","vol":"863.8014","high":"258.18","last":"258.18","low":"257.91","sell":258.43,"buy":257.92,"yesterdayPrice":"253.43","change":1.87400,"lastExchangPrice":"258.13"},{"symbol":"EOS_USDT","vol":"8710.0259","high":"6.5148","last":"6.5121","low":"6.5121","sell":6.5171,"buy":6.5040,"yesterdayPrice":"6.3987","change":1.77200,"lastExchangPrice":"6.5128"},{"symbol":"XRP_USDT","vol":"42993.21","high":"0.4026","last":"0.4026","low":"0.4026","sell":0.4033,"buy":0.4024,"yesterdayPrice":"0.3998","change":0.70000,"lastExchangPrice":"0.4026"},{"symbol":"BCH_USDT","vol":"875.0030","high":"396.16","last":"396.16","low":"396.04","sell":396.75,"buy":395.96,"yesterdayPrice":"395.79","change":0.09300,"lastExchangPrice":"396.04"},{"symbol":"NEO_USDT","vol":"4357.8985","high":"12.924","last":"12.896","low":"12.896","sell":12.923,"buy":12.880,"yesterdayPrice":"12.853","change":0.33500,"lastExchangPrice":"12.897"}]}'
+    http_version: 
+  recorded_at: Thu, 13 Jun 2019 06:37:18 GMT
+recorded_with: VCR 4.0.0

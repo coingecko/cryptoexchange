@@ -18,7 +18,6 @@ module Cryptoexchange::Exchanges
                               market: Kraken::Market::NAME
                             )
           end
-
           market_pairs
         end
 
@@ -28,7 +27,7 @@ module Cryptoexchange::Exchanges
         ASSETS_URL = "#{Cryptoexchange::Exchanges::Kraken::Market::API_URL}/Assets"
 
         def assets
-          fetch_response = HTTP.timeout(:write => 2, :connect => 5, :read => 8).get(self.class::ASSETS_URL)
+          fetch_response = HTTP.timeout(15).get(self.class::ASSETS_URL)
           JSON.parse(fetch_response.to_s)['result']
         end
 

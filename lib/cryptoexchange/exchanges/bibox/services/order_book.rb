@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
         def ticker_url(market_pair)
           base = market_pair.base
           target = market_pair.target
-          "#{Cryptoexchange::Exchanges::Bibox::Market::API_URL}/mdata?cmd=depth&pair=#{base}_#{target}&size=15"
+          "#{Cryptoexchange::Exchanges::Bibox::Market::API_URL}/mdata?cmd=depth&pair=#{base}_#{target}&size=200"
         end
 
         def adapt(output, market_pair)

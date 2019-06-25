@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.nexybit.com/api/spot/v1/depths?symbol=BTC/USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.nexybit.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Dec 2018 15:41:16 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+    body:
+      encoding: UTF-8
+      string: '{"symbol":"BTC/USDT","changeTime":0,"asks":[["48999.99999999","0.163"],["48999.99999992","0.283"],["48999.99999991","0.129"],["48999.99999989","0.097"],["48999.99999988","0.283"],["48999.99999986","0.027"],["48999.99999984","0.001"],["4997.99999999","0.003"],["4988.00000000","0.290"],["4100.00000000","0.800"]],"bids":[["4017.71000000","0.001"],["4016.50000000","0.001"],["4015.54000000","0.001"],["4014.57000000","0.003"],["4013.59000000","0.001"],["4012.37000000","0.002"],["4011.27000000","0.001"],["4010.06000000","0.004"],["4008.85000000","0.003"],["4008.04000000","0.039"],["4007.27000000","0.002"],["4006.51000000","0.031"],["4005.30000000","0.001"],["4004.42000000","0.001"],["4003.30000000","0.001"],["4002.51000000","0.001"],["4001.60000000","0.001"],["4000.39000000","0.001"],["3999.18000000","0.003"],["3997.62000000","0.002"],["3996.42000000","0.003"],["3995.21000000","0.002"],["3978.21000001","0.004"],["3050.00000000","0.069"],["510.00000000","2.000"]]}'
+    http_version: 
+  recorded_at: Tue, 04 Dec 2018 15:41:16 GMT
+recorded_with: VCR 4.0.0

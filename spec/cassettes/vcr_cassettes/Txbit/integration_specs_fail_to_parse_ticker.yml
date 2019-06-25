@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.txbit.io/api/public/getmarketsummary?market=BTC/XXXXX
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.txbit.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 15 May 2019 02:29:04 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dae7c88b575858775e013b4df585386f01557887344; expires=Thu, 14-May-20
+        02:29:04 GMT; path=/; domain=.txbit.io; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d71ae9c2e7fa90a-SIN
+    body:
+      encoding: UTF-8
+      string: '{"success":false,"message":"INVALID_MARKET","result":null}'
+    http_version: 
+  recorded_at: Wed, 15 May 2019 02:29:04 GMT
+recorded_with: VCR 4.0.0

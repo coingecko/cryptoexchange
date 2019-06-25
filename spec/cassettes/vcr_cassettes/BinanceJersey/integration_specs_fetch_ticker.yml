@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.binance.je/api/v1/ticker/24hr?symbol=BTCGBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.binance.je
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Date:
+      - Tue, 29 Jan 2019 14:24:16 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 244171a0dfc7745b70f91589232f6436.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - N74NJvl7nbI90gh4j6yZ5WmU5Um_q-NUyiagVdO4sew09wiSH9VE8g==
+    body:
+      encoding: UTF-8
+      string: '{"symbol":"BTCGBP","priceChange":"3.13","priceChangePercent":"0.120","weightedAvgPrice":"2630.64","prevClosePrice":"2730.96","lastPrice":"2619.26","lastQty":"0.00828400","bidPrice":"2551.29","bidQty":"0.04544700","askPrice":"2612.79","askQty":"0.06256500","openPrice":"2616.13","highPrice":"2648.21","lowPrice":"2616.13","volume":"0.22798600","quoteVolume":"599.75","openTime":1548685454014,"closeTime":1548771854014,"firstId":80,"lastId":84,"count":5}'
+    http_version: 
+  recorded_at: Tue, 29 Jan 2019 14:24:16 GMT
+recorded_with: VCR 4.0.0

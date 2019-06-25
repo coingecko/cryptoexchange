@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.oceanex.pro/v1/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.oceanex.pro
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 17 Jan 2019 08:58:29 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d92d4ce8eb42320783101316433a246b21547715509; expires=Fri, 17-Jan-20
+        08:58:29 GMT; path=/; domain=.oceanex.pro; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Access-Control-Allow-Origin:
+      - https://oceanex.pro
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Version:
+      - HTTP/1.1
+      Host:
+      - api.oceanex.pro
+      X-Request-Id:
+      - 6219b1fc25316ec7a172ad320a01faeb
+      X-Real-Ip:
+      - 42.200.158.123
+      X-Forwarded-For:
+      - 42.200.158.123
+      X-Forwarded-Host:
+      - api.oceanex.pro
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Original-Uri:
+      - "/v1/markets"
+      X-Scheme:
+      - https
+      X-Original-Forwarded-For:
+      - 42.200.158.123
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - HK
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 42.200.158.123
+      Cdn-Loop:
+      - cloudflare
+      Etag:
+      - W/"628c62e7e67d876330e9dd33c589127c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.034932'
+      X-Robots-Tag:
+      - noindex
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49a79ecc4dbd848a-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":0,"message":"Operation is successful","data":[{"id":"btcusdt","name":"BTC/USDT"},{"id":"ethusdt","name":"ETH/USDT"},{"id":"vetusdt","name":"VET/USDT"},{"id":"ethbtc","name":"ETH/BTC"},{"id":"vetbtc","name":"VET/BTC"},{"id":"veteth","name":"VET/ETH"},{"id":"vthovet","name":"VTHO/VET"},{"id":"shavet","name":"SHA/VET"}]}'
+    http_version: 
+  recorded_at: Thu, 17 Jan 2019 08:58:29 GMT
+recorded_with: VCR 4.0.0

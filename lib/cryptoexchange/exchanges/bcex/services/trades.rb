@@ -8,9 +8,9 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          base   = market_pair.base.downcase
-          target = market_pair.target.downcase
-          "#{Cryptoexchange::Exchanges::Bcex::Market::API_URL}/Api_Order/marketOrder?symbol=#{base}2#{target}"
+          base   = market_pair.base
+          target = market_pair.target
+          "#{Cryptoexchange::Exchanges::Bcex::Market::API_URL}/rt/getTrades?token=#{base}&market=#{target}"
         end
 
         def adapt(output, market_pair)
@@ -19,11 +19,11 @@ module Cryptoexchange::Exchanges
             tr           = Cryptoexchange::Models::Trade.new
             tr.base      = market_pair.base
             tr.target    = market_pair.target
-            tr.trade_id  = trade['tid']
-            tr.type      = trade['type']
+            tr.trade_id  = nil
+            tr.type      = trade['dominance'] == 1 ? "buy" : "sell"
             tr.price     = trade['price']
             tr.amount    = trade['amount']
-            tr.timestamp = trade['date'].to_i
+            tr.timestamp = trade['sorting']
             tr.payload   = trade
             tr.market    = Bcex::Market::NAME
             tr

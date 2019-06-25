@@ -1,7 +1,6 @@
 require "cryptoexchange/version"
 require "cryptoexchange/credentials"
 require "cryptoexchange/client"
-require "cryptoexchange/lru_ttl_cache"
 require "cryptoexchange/helpers/string_helper"
 require "cryptoexchange/helpers/numeric_helper"
 require "cryptoexchange/helpers/hash_helper"
@@ -24,3 +23,8 @@ end
 require "http"
 require "lru_redux"
 require "websocket-eventmachine-client"
+require "cryptoexchange/config"
+require "cryptoexchange/lru_ttl_cache"
+require "cryptoexchange/cache"
+
+Cryptoexchange.reset_config

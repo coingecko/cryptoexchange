@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.zg.top/API/api/v1/ticker?symbol=35
+    uri: https://www.zgtop.io/API/api/v1/tickers
     body:
       encoding: UTF-8
       string: ''
@@ -10,16 +10,18 @@ http_interactions:
       Connection:
       - close
       Host:
-      - www.zg.top
+      - www.zgtop.io
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/3.3.0
   response:
     status:
       code: 200
       message: OK
     headers:
+      Server:
+      - openresty
       Date:
-      - Thu, 18 Oct 2018 16:13:04 GMT
+      - Thu, 21 Mar 2019 07:26:42 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -28,21 +30,14 @@ http_interactions:
       - close
       Vary:
       - Accept-Encoding
-      - Accept-Encoding
-      X-Via-Jsl:
-      - 9afbeda,-
-      Set-Cookie:
-      - __jsluid=a2b1a0d179584c5557a3e2b60ccb939d; max-age=31536000; path=/; HttpOnly
-      X-Cache:
-      - bypass
     body:
       encoding: UTF-8
-      string: '{"code":"200","data":{"high":"6780.15","vol":"1129.298","last":"6703.18","low":"6679.8","buy":"6679.8","sell":"6707.48"}}'
+      string: '{"code":"200","data":[{"symbol":35,"high":"4053.39","vol":"23843.67","last":"4045.1","low":"3986.84","buy":"4022.38","sell":"4051.74"},{"symbol":36,"high":"139.62","vol":"426174.274","last":"139.23","low":"136.27","buy":"136.27","sell":"139.62"},{"symbol":37,"high":"0.02424","vol":"30026300.88","last":"0.023095","low":"0.022621","buy":"0.017998","sell":"0.024267"},{"symbol":39,"high":"0.1309","vol":"7206221.32","last":"0.1285","low":"0.1265","buy":"0.1257","sell":"0.1434"},{"symbol":42,"high":"3.7294","vol":"6119526.864","last":"3.7042","low":"3.533","buy":"3.5459","sell":"3.7489"},{"symbol":43,"high":"1.2946","vol":"380.477","last":"1.2891","low":"1.2706","buy":"0.962","sell":"1.421"},{"symbol":44,"high":"0.005921","vol":"18574.78","last":"0.003189","low":"0.001335","buy":"0.00155","sell":"0.006"},{"symbol":47,"high":"0.000127","vol":"63932.42","last":"0.000044","low":"0.00004","buy":"0.000022","sell":"0.00014"},{"symbol":48,"high":"0.001684","vol":"31317.1","last":"0.001192","low":"0.000664","buy":"0.000644","sell":"0.001697"},{"symbol":49,"high":"1.6473","vol":"491465.49","last":"1.5907","low":"1.4487","buy":"1.0944","sell":"1.6498"},{"symbol":50,"high":"0.1807","vol":"2150008.6","last":"0.1781","low":"0.1666","buy":"0.1543","sell":"0.1811"},{"symbol":51,"high":"0.008637","vol":"13849055.41","last":"0.008287","low":"0.007673","buy":"0.007325","sell":"0.008888"},{"symbol":52,"high":"0.008976","vol":"744928.35","last":"0.008884","low":"0.00863","buy":"0.006381","sell":"0.011092"},{"symbol":53,"high":"0.000818","vol":"856087.8","last":"0.000809","low":"0.000725","buy":"0.0006","sell":"0.000818"},{"symbol":54,"high":"0.01151","vol":"33995.17","last":"0.00937","low":"0.00777","buy":"0.0046","sell":"0.01151"},{"symbol":55,"high":"0.0407","vol":"1406.45","last":"0.0349","low":"0.0111","buy":"0.01","sell":"0.0419"},{"symbol":56,"high":"0.009695","vol":"5630.1","last":"0.008948","low":"0.002389","buy":"0.001501","sell":"0.009999"},{"symbol":58,"high":"0.004179","vol":"9106.06","last":"0.002669","low":"0.000686","buy":"0.000402","sell":"0.004194"},{"symbol":61,"high":"0.003276","vol":"13940.85","last":"0.000921","low":"0.000311","buy":"0.0003","sell":"0.003331"},{"symbol":62,"high":"0.000066","vol":"2246328.34","last":"0.00006","low":"0.000055","buy":"0.000059","sell":"0.000067"},{"symbol":63,"high":"0.1851","vol":"321822.51","last":"0.1776","low":"0.1657","buy":"0.1759","sell":"0.1855"},{"symbol":64,"high":"0.0063","vol":"4554.68","last":"0.005","low":"0.005","buy":"0.0045","sell":"0.0073"},{"symbol":65,"high":"0","vol":"0","last":"0.0012","low":"0","buy":"0.0012","sell":"0.0013"},{"symbol":66,"high":"0.001409","vol":"155867.3","last":"0.001169","low":"0.000557","buy":"0.00054","sell":"0.001439"},{"symbol":68,"high":"0.000501","vol":"43465.1","last":"0.000239","low":"0.000124","buy":"0.0001","sell":"0.000549"},{"symbol":69,"high":"0.001133","vol":"347384.58","last":"0.001031","low":"0.000898","buy":"0.0008","sell":"0.001134"},{"symbol":72,"high":"0.2724","vol":"1582912.2","last":"0.2714","low":"0.2682","buy":"0.2146","sell":"0.283"},{"symbol":73,"high":"0.2662","vol":"1648559.89","last":"0.2633","low":"0.2532","buy":"0.2252","sell":"0.2896"},{"symbol":74,"high":"0.001195","vol":"197567.55","last":"0.001183","low":"0.00112","buy":"0.000899","sell":"0.001251"},{"symbol":75,"high":"0.019319","vol":"12920542.24","last":"0.019043","low":"0.018396","buy":"0.015444","sell":"0.020514"},{"symbol":76,"high":"0.4946","vol":"754902.03","last":"0.4863","low":"0.4565","buy":"0.336","sell":"0.5287"},{"symbol":77,"high":"0.1964","vol":"3045268.05","last":"0.1964","low":"0.1877","buy":"0.18","sell":"0.2136"},{"symbol":78,"high":"0.000367","vol":"13406.93","last":"0.000333","low":"0.000104","buy":"0.00009","sell":"0.000388"},{"symbol":79,"high":"0.2729","vol":"1634556.76","last":"0.2725","low":"0.2608","buy":"0.2172","sell":"0.3636"},{"symbol":80,"high":"0.036186","vol":"3271065.73","last":"0.034838","low":"0.034096","buy":"0.02971","sell":"0.038082"},{"symbol":82,"high":"0.064476","vol":"1715092.76","last":"0.064464","low":"0.062925","buy":"0.050525","sell":"0.067564"},{"symbol":83,"high":"14.9755","vol":"537.66","last":"14.7933","low":"14.5535","buy":"14.2685","sell":"15.3228"},{"symbol":84,"high":"0.007878","vol":"4062.4","last":"0.00636","low":"0.003899","buy":"0.0028","sell":"0.008011"},{"symbol":86,"high":"0.00134","vol":"857632","last":"0.001259","low":"0.001253","buy":"0.001257","sell":"0.00126"},{"symbol":87,"high":"0.001996","vol":"34782756","last":"0.001651","low":"0.001501","buy":"0.00165","sell":"0.001997"},{"symbol":88,"high":"0.00794","vol":"438523.74","last":"0.007453","low":"0.006625","buy":"0.007","sell":"0.007523"},{"symbol":89,"high":"0.002047","vol":"94631418.02","last":"0.002029","low":"0.002017","buy":"0.001791","sell":"0.002134"},{"symbol":90,"high":"0.051","vol":"28439706.17","last":"0.05085","low":"0.04935","buy":"0.04096","sell":"0.052647"},{"symbol":91,"high":"60.64","vol":"352113.16","last":"60.08","low":"57.17","buy":"59.37","sell":"60.67"},{"symbol":92,"high":"4.7188","vol":"448665.64","last":"4.7188","low":"4.4852","buy":"4.3038","sell":"4.7214"},{"symbol":93,"high":"0.016615","vol":"2349.79","last":"0.005493","low":"0.002405","buy":"0.0016","sell":"0.019"},{"symbol":96,"high":"1.0057","vol":"73620.39","last":"1.0027","low":"1.0019","buy":"0.9925","sell":"1.0332"},{"symbol":97,"high":"1.0054","vol":"116903.01","last":"1.0025","low":"1.0018","buy":"0.9909","sell":"1.0181"},{"symbol":101,"high":"0","vol":"0","last":"0","low":"0","buy":"0","sell":"0"},{"symbol":103,"high":"0.07061","vol":"407911.22","last":"0.07061","low":"0.06806","buy":"0.07058","sell":"0.07061"},{"symbol":105,"high":"0.00050118","vol":"1225.15","last":"0.00050118","low":"0.00019655","buy":"0.00000501","sell":"0.00053761"},{"symbol":106,"high":"0.000702","vol":"2917.75","last":"0.00042","low":"0.000343","buy":"0.0003","sell":"0.0009"},{"symbol":107,"high":"0.000077","vol":"15942.98","last":"0.000064","low":"0.000021","buy":"0.000011","sell":"0.000088"},{"symbol":108,"high":"0.009941","vol":"190.98","last":"0.00298","low":"0.001315","buy":"0.001","sell":"0.01"},{"symbol":109,"high":"0.00097","vol":"1065.67","last":"0.00097","low":"0.000746","buy":"0.0007","sell":"0.001"},{"symbol":110,"high":"0.00000555","vol":"51701.14","last":"0.00000554","low":"0.00000066","buy":"0.00000065","sell":"0.00000554"},{"symbol":111,"high":"0.000418","vol":"6157.36","last":"0.000226","low":"0.000226","buy":"0.000211","sell":"0.0005"},{"symbol":112,"high":"0.000139","vol":"812896.85","last":"0.000127","low":"0.000081","buy":"0.000076","sell":"0.000139"},{"symbol":113,"high":"0.00001889","vol":"4403.79","last":"0.00001889","low":"0.00001044","buy":"0.00000657","sell":"0.000025"},{"symbol":115,"high":"0","vol":"0","last":"0","low":"0","buy":"0.000021","sell":"0.8"},{"symbol":117,"high":"0.000417","vol":"701.01","last":"0.000417","low":"0.00017","buy":"0.00006","sell":"0.0008"},{"symbol":118,"high":"0.5101548","vol":"107915.9988","last":"0.45081738","low":"0.4435","buy":"0.4435","sell":"0.4569"},{"symbol":119,"high":"0.00003","vol":"4395.46","last":"0.000029","low":"0.000023","buy":"0.000019","sell":"0.00004"},{"symbol":120,"high":"0.000205","vol":"518.87","last":"0.000205","low":"0.000191","buy":"0.00018","sell":"0.00022"},{"symbol":121,"high":"0.000415","vol":"129.59","last":"0.000285","low":"0.000285","buy":"0.000241","sell":"0.000587"},{"symbol":122,"high":"0.000597","vol":"725.85","last":"0.000474","low":"0.000474","buy":"0.0004","sell":"0.0007"},{"symbol":123,"high":"0.000108","vol":"2234.35","last":"0.000101","low":"0.000101","buy":"0.00009","sell":"0.00012"},{"symbol":125,"high":"0.000036","vol":"3436194.0906","last":"0.0000328","low":"0.0000302","buy":"0.0000326","sell":"0.0000328"}]}'
     http_version: 
-  recorded_at: Thu, 18 Oct 2018 16:13:04 GMT
+  recorded_at: Thu, 21 Mar 2019 07:26:42 GMT
 - request:
     method: get
-    uri: https://www.zg.top/API/api/v1/ticker?symbol=35
+    uri: https://www.zgtop.io/API/api/v1/coins
     body:
       encoding: UTF-8
       string: ''
@@ -50,16 +45,18 @@ http_interactions:
       Connection:
       - close
       Host:
-      - www.zg.top
+      - www.zgtop.io
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/3.3.0
   response:
     status:
       code: 200
       message: OK
     headers:
+      Server:
+      - openresty
       Date:
-      - Thu, 18 Oct 2018 16:17:37 GMT
+      - Thu, 21 Mar 2019 07:26:42 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -68,16 +65,9 @@ http_interactions:
       - close
       Vary:
       - Accept-Encoding
-      - Accept-Encoding
-      X-Via-Jsl:
-      - 9afbeda,-
-      Set-Cookie:
-      - __jsluid=c43a2acc26822d55802acc858977255b; max-age=31536000; path=/; HttpOnly
-      X-Cache:
-      - bypass
     body:
       encoding: UTF-8
-      string: '{"code":"200","data":{"high":"6780.15","vol":"1129.298","last":"6702.28","low":"6679.8","buy":"6679.8","sell":"6707.48"}}'
+      string: '{"code":"200","data":[{"symbol":35,"name":"BTC","priceDecimals":2,"amountDecimals":3,"group":"USDT"},{"symbol":36,"name":"ETH","priceDecimals":2,"amountDecimals":3,"group":"USDT"},{"symbol":37,"name":"SNT","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":39,"name":"THETA","priceDecimals":4,"amountDecimals":2,"group":"USDT"},{"symbol":42,"name":"EOS","priceDecimals":4,"amountDecimals":3,"group":"USDT"},{"symbol":43,"name":"WTC","priceDecimals":4,"amountDecimals":3,"group":"USDT"},{"symbol":44,"name":"EAI","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":47,"name":"FTL","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":48,"name":"OCN","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":49,"name":"OMG","priceDecimals":4,"amountDecimals":2,"group":"USDT"},{"symbol":50,"name":"ELF","priceDecimals":4,"amountDecimals":2,"group":"USDT"},{"symbol":51,"name":"IOST","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":52,"name":"CDT","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":53,"name":"GAT","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":54,"name":"CVT","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":55,"name":"GOT","priceDecimals":4,"amountDecimals":2,"group":"USDT"},{"symbol":56,"name":"ZXC","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":58,"name":"ATMI","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":61,"name":"ESS","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":62,"name":"GRAM","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":63,"name":"WICC","priceDecimals":4,"amountDecimals":2,"group":"USDT"},{"symbol":64,"name":"BQT","priceDecimals":4,"amountDecimals":2,"group":"USDT"},{"symbol":65,"name":"HUR","priceDecimals":4,"amountDecimals":2,"group":"USDT"},{"symbol":66,"name":"FREC","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":68,"name":"DACC","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":69,"name":"STM","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":72,"name":"ZRX","priceDecimals":4,"amountDecimals":2,"group":"USDT"},{"symbol":73,"name":"KNC","priceDecimals":4,"amountDecimals":2,"group":"USDT"},{"symbol":74,"name":"SWFTC","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":75,"name":"ZIL","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":76,"name":"AE","priceDecimals":4,"amountDecimals":2,"group":"USDT"},{"symbol":77,"name":"BAT","priceDecimals":4,"amountDecimals":2,"group":"USDT"},{"symbol":78,"name":"CCMC","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":79,"name":"PAY","priceDecimals":4,"amountDecimals":2,"group":"USDT"},{"symbol":80,"name":"CMT","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":82,"name":"LRC","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":83,"name":"REP","priceDecimals":4,"amountDecimals":2,"group":"USDT"},{"symbol":84,"name":"TYT","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":86,"name":"OTWP","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":87,"name":"QOS","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":88,"name":"WOO","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":89,"name":"DOGE","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":90,"name":"BTS","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":91,"name":"LTC","priceDecimals":2,"amountDecimals":2,"group":"USDT"},{"symbol":92,"name":"ETC","priceDecimals":4,"amountDecimals":2,"group":"USDT"},{"symbol":93,"name":"ISC","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":96,"name":"TUSD","priceDecimals":4,"amountDecimals":2,"group":"USDT"},{"symbol":97,"name":"PAX","priceDecimals":4,"amountDecimals":2,"group":"USDT"},{"symbol":101,"name":"TUSD","priceDecimals":8,"amountDecimals":2,"group":"BTC"},{"symbol":103,"name":"BDC","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":105,"name":"CLB","priceDecimals":8,"amountDecimals":2,"group":"ETH"},{"symbol":106,"name":"XCN","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":107,"name":"PATH","priceDecimals":6,"amountDecimals":2,"group":"ETH"},{"symbol":108,"name":"SPND","priceDecimals":6,"amountDecimals":2,"group":"ETH"},{"symbol":109,"name":"AERGO","priceDecimals":6,"amountDecimals":2,"group":"ETH"},{"symbol":110,"name":"TASK","priceDecimals":8,"amountDecimals":2,"group":"ETH"},{"symbol":111,"name":"FOAM","priceDecimals":6,"amountDecimals":2,"group":"ETH"},{"symbol":112,"name":"TASK","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":113,"name":"COVA","priceDecimals":8,"amountDecimals":2,"group":"ETH"},{"symbol":115,"name":"KAT","priceDecimals":6,"amountDecimals":2,"group":"ETH"},{"symbol":117,"name":"LAMB","priceDecimals":6,"amountDecimals":2,"group":"ETH"},{"symbol":118,"name":"TCH","priceDecimals":6,"amountDecimals":2,"group":"USDT"},{"symbol":119,"name":"GBT","priceDecimals":6,"amountDecimals":2,"group":"ETH"},{"symbol":120,"name":"KBC","priceDecimals":6,"amountDecimals":2,"group":"ETH"},{"symbol":121,"name":"NOIA","priceDecimals":6,"amountDecimals":2,"group":"ETH"},{"symbol":122,"name":"EGC","priceDecimals":6,"amountDecimals":2,"group":"ETH"},{"symbol":123,"name":"Ankr","priceDecimals":6,"amountDecimals":2,"group":"ETH"},{"symbol":125,"name":"CAS","priceDecimals":8,"amountDecimals":2,"group":"ETH"}]}'
     http_version: 
-  recorded_at: Thu, 18 Oct 2018 16:17:37 GMT
+  recorded_at: Thu, 21 Mar 2019 07:26:42 GMT
 recorded_with: VCR 4.0.0

@@ -9,8 +9,10 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch
-          raw_output = HTTP.get(ticker_url)
-          output = JSON.parse(raw_output)
+          output = Cryptoexchange::Cache.ticker_cache.fetch(ticker_url) do
+            HTTP.get(ticker_url).parse(:json)
+          end
+
           adapt_all(output)
         end
 

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.coinall.com/api/spot/v3/products/BTC-USDT/trades
+    uri: https://www.coinall.com/api/spot/v3/products/BTC-USDT/trades?limit=100
     body:
       encoding: UTF-8
       string: ''
@@ -12,14 +12,14 @@ http_interactions:
       Host:
       - www.coinall.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Wed, 12 Sep 2018 17:21:26 GMT
+      - Wed, 15 May 2019 11:30:37 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -27,9 +27,9 @@ http_interactions:
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d20c08715e60a31a9b4b3897b7b50c5091536772885; expires=Thu, 12-Sep-19
-        17:21:25 GMT; path=/; domain=.coinall.com; HttpOnly
-      - locale=en_US; Max-Age=604800; Expires=Wed, 19-Sep-2018 17:21:26 GMT; Path=/
+      - __cfduid=d615415f706afd5a111e84daed3a318f21557919837; expires=Thu, 14-May-20
+        11:30:37 GMT; path=/; domain=.coinall.com; HttpOnly
+      - locale=en_US; Max-Age=604800; Expires=Wed, 22-May-2019 11:30:37 GMT; Path=/
       Vary:
       - Accept-Encoding
       X-Content-Type-Options:
@@ -45,9 +45,13 @@ http_interactions:
       X-Frame-Options:
       - DENY
       Ok-Before:
-      - '540938318'
+      - '1482141249'
       Ok-After:
-      - '540937765'
+      - '1482140723'
+      Ok-From:
+      - '1482140723'
+      Ok-To:
+      - '1482141249'
       Ok-Limit:
       - '100'
       X-Kong-Upstream-Latency:
@@ -61,10 +65,10 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 45940ce8ce3735e4-LHR
+      - 4d74c7e74e89ce27-LHR
     body:
       encoding: ASCII-8BIT
-      string: '[{"time":"2018-09-12T17:21:23.803Z","trade_id":540938318,"price":"6271.9073","size":"0.0016","side":"buy"},{"time":"2018-09-12T17:21:17.803Z","trade_id":540938231,"price":"6271.9006","size":"0.0086851","side":"buy"},{"time":"2018-09-12T17:21:17.755Z","trade_id":540938229,"price":"6271.9006","size":"0.0016","side":"buy"},{"time":"2018-09-12T17:21:15.018Z","trade_id":540938188,"price":"6271.9313","size":"0.0016","side":"buy"},{"time":"2018-09-12T17:21:11.757Z","trade_id":540938120,"price":"6271.9567","size":"0.0016","side":"buy"},{"time":"2018-09-12T17:21:05.747Z","trade_id":540938021,"price":"6271.9544","size":"0.0016","side":"buy"},{"time":"2018-09-12T17:21:02.820Z","trade_id":540937983,"price":"6271.9481","size":"0.00784446","side":"buy"},{"time":"2018-09-12T17:21:02.769Z","trade_id":540937979,"price":"6271.9481","size":"0.0016","side":"buy"},{"time":"2018-09-12T17:20:53.735Z","trade_id":540937839,"price":"6271.5525","size":"0.00698071","side":"buy"},{"time":"2018-09-12T17:20:53.682Z","trade_id":540937833,"price":"6271.945","size":"0.0016","side":"buy"},{"time":"2018-09-12T17:20:50.717Z","trade_id":540937765,"price":"6271.5854","size":"0.0016","side":"buy"}]'
+      string: '[{"time":"2019-05-15T11:30:34.733Z","timestamp":"2019-05-15T11:30:34.733Z","trade_id":"1482141249","price":"7965.4","size":"3.333","side":"sell"},{"time":"2019-05-15T11:30:34.733Z","timestamp":"2019-05-15T11:30:34.733Z","trade_id":"1482141247","price":"7965.4","size":"3.9996","side":"sell"},{"time":"2019-05-15T11:30:28.476Z","timestamp":"2019-05-15T11:30:28.476Z","trade_id":"1482140725","price":"7969.2","size":"4.4408","side":"buy"},{"time":"2019-05-15T11:30:28.476Z","timestamp":"2019-05-15T11:30:28.476Z","trade_id":"1482140723","price":"7969.2","size":"2.7328","side":"buy"}]'
     http_version: 
-  recorded_at: Wed, 12 Sep 2018 17:21:26 GMT
+  recorded_at: Wed, 15 May 2019 11:30:37 GMT
 recorded_with: VCR 4.0.0

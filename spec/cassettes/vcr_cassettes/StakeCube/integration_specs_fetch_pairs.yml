@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://stakecube.net/api/v1/exchange/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - stakecube.net
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 19 Jun 2019 08:35:18 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dba8ebca912a22507be6d3affb9d4696c1560933317; expires=Thu, 18-Jun-20
+        08:35:17 GMT; path=/; domain=.stakecube.net; HttpOnly; Secure
+      X-Powered-By:
+      - PHP/7.2.19
+      - PleskLin
+      Vary:
+      - Accept-Encoding
+      Ms-Author-Via:
+      - DAV
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e942b30fe37a51c-NRT
+    body:
+      encoding: UTF-8
+      string: '[{"pair":"BTC-SCC","base":"BTC","target":"SCC","ask":"0.00001254","bid":"0.00001006","last_price":"0.00001254","low":"0.00000903","high":"0.00001373","volume":"0.03324640","percentChange":-0.0797,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-ESBC","base":"BTC","target":"ESBC","ask":"0.00000648","bid":"0.00000453","last_price":"0.00000575","low":"0.00000453","high":"0.00000683","volume":"0.00553151","percentChange":-11.2654,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-MMO","base":"BTC","target":"MMO","ask":"0.00000022","bid":"0.00000021","last_price":"0.00000021","low":"0.00000020","high":"0.00000024","volume":"0.13247902","percentChange":-4.5455,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-DASH","base":"BTC","target":"DASH","ask":"0.01890000","bid":"0.01610000","last_price":"0.01610000","low":"0.01610000","high":"0.01610000","volume":"0.00016193","percentChange":-15.2632,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-PIVX","base":"BTC","target":"PIVX","ask":"0.00009979","bid":"0.00007120","last_price":"0.00009979","low":"0.00007118","high":"0.00009979","volume":"0.00004076","percentChange":0,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-BITG","base":"BTC","target":"BITG","ask":"0.00005990","bid":"0.00004575","last_price":"0.00004575","low":"0.00004500","high":"0.00005990","volume":"0.00047670","percentChange":1.6441,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-NAV","base":"BTC","target":"NAV","ask":"0.00002876","bid":"0.00002870","last_price":"0.00002876","low":"0.00001500","high":"0.00002876","volume":"0.00008667","percentChange":0,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-RDD","base":"BTC","target":"RDD","ask":"0.00000024","bid":"0.00000022","last_price":"0.00000024","low":"0.00000020","high":"0.00000024","volume":"0.00082406","percentChange":0,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-DEV","base":"BTC","target":"DEV","ask":"0.00000497","bid":"0.00000355","last_price":"0.00000355","low":"0.00000350","high":"0.00000498","volume":"0.00167198","percentChange":-28.5714,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-KYD","base":"BTC","target":"KYD","ask":"0.00000218","bid":"0.00000101","last_price":"0.00000218","low":"0.00000217","high":"0.00000218","volume":"0.00000218","percentChange":-0.4587,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-LPC","base":"BTC","target":"LPC","ask":"0.00000155","bid":"0.00000106","last_price":"0.00000106","low":"0.00000106","high":"0.00000155","volume":"0.00000993","percentChange":-31.6129,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-LGS","base":"BTC","target":"LGS","ask":"0.00000135","bid":"0.00000100","last_price":"0.00000100","low":"0.00000100","high":"0.00000110","volume":"0.00003514","percentChange":0,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-GPKR","base":"BTC","target":"GPKR","ask":"0.00000220","bid":"0.00000160","last_price":"0.00000220","low":"0.00000150","high":"0.00000220","volume":"0.00026242","percentChange":15.7895,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-SHARD","base":"BTC","target":"SHARD","ask":"0.00000300","bid":"0.00000202","last_price":"0.00000301","low":"0.00000299","high":"0.00000301","volume":"0.00257491","percentChange":0,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-AEM","base":"BTC","target":"AEM","ask":"0.00000250","bid":"0.00000141","last_price":"99.99999999","low":"0.00000250","high":"0.00000250","volume":"0.00000000","percentChange":77.305,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-APR","base":"BTC","target":"APR","ask":"0.00000149","bid":"0.00000082","last_price":"0.00000082","low":"0.00000082","high":"0.00000149","volume":"0.00033053","percentChange":0,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-SEND","base":"BTC","target":"SEND","ask":"0.00000120","bid":"0.00000090","last_price":"0.00000149","low":"0.00000070","high":"0.00000149","volume":"0.00147262","percentChange":112.8571,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-LTC","base":"BTC","target":"LTC","ask":"0.01570000","bid":"0.01157011","last_price":"0.01589999","low":"0.01156002","high":"0.01589999","volume":"0.00056728","percentChange":0.6328,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-ABET","base":"BTC","target":"ABET","ask":"0.00000999","bid":"0.00000720","last_price":"0.00000999","low":"0.00000710","high":"0.00000999","volume":"0.00004031","percentChange":11,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-DOGE","base":"BTC","target":"DOGE","ask":"0.00000036","bid":"0.00000031","last_price":"0.00000033","low":"0.00000033","high":"0.00000037","volume":"0.01681818","percentChange":0,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-TRBO","base":"BTC","target":"TRBO","ask":"0.00000001","bid":null,"last_price":"0.00000001","low":"0.00000001","high":"0.00000001","volume":"0.00228309","percentChange":0,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-BITB","base":"BTC","target":"BITB","ask":"0.00000018","bid":"0.00000010","last_price":"0.00000015","low":"0.00000015","high":"0.00000019","volume":"0.00009041","percentChange":0,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-VITAE","base":"BTC","target":"VITAE","ask":"0.00018896","bid":"0.00005602","last_price":"0.00019896","low":"0.00006000","high":"0.00019897","volume":"0.00396716","percentChange":231.6,"timestamp":"2019-06-19
+        08:35:18"},{"pair":"BTC-SYNX","base":"BTC","target":"SYNX","ask":"0.00000228","bid":"0.00000142","last_price":"0.00000228","low":"0.00000227","high":"0.00000228","volume":"0.00001140","percentChange":0.4405,"timestamp":"2019-06-19
+        08:35:18"}]'
+    http_version: 
+  recorded_at: Wed, 19 Jun 2019 08:35:18 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.oceanex.pro/v1/trades?market=btcusdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.oceanex.pro
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 17 Jan 2019 08:58:29 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3c76672f900af8ce414cbe81c809bac41547715509; expires=Fri, 17-Jan-20
+        08:58:29 GMT; path=/; domain=.oceanex.pro; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Access-Control-Allow-Origin:
+      - https://oceanex.pro
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Version:
+      - HTTP/1.1
+      Host:
+      - api.oceanex.pro
+      X-Request-Id:
+      - 0440e71e5f93f2ad23152bd2182b6aec
+      X-Real-Ip:
+      - 42.200.158.123
+      X-Forwarded-For:
+      - 42.200.158.123
+      X-Forwarded-Host:
+      - api.oceanex.pro
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Original-Uri:
+      - "/v1/trades?market=btcusdt"
+      X-Scheme:
+      - https
+      X-Original-Forwarded-For:
+      - 42.200.158.123
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - HK
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/3.0.0
+      Cf-Connecting-Ip:
+      - 42.200.158.123
+      Cdn-Loop:
+      - cloudflare
+      Etag:
+      - W/"bd6662c67aae0476724e9f7f2ddabdec"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.074421'
+      X-Robots-Tag:
+      - noindex
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49a79ece1b2e855c-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":0,"message":"Operation is successful","data":[{"id":924000,"price":"3576.05","volume":"0.001165","funds":"4.16609825","market":"btcusdt","created_at":"2019-01-17T08:58:17Z","side":null},{"id":923989,"price":"3583.34","volume":"0.005571","funds":"19.96278714","market":"btcusdt","created_at":"2019-01-17T08:57:42Z","side":null},{"id":923977,"price":"3579.98","volume":"0.001137","funds":"4.07043726","market":"btcusdt","created_at":"2019-01-17T08:57:02Z","side":null},{"id":923969,"price":"3579.81","volume":"0.00288","funds":"10.3098528","market":"btcusdt","created_at":"2019-01-17T08:56:19Z","side":null},{"id":923957,"price":"3577.31","volume":"0.001515","funds":"5.41962465","market":"btcusdt","created_at":"2019-01-17T08:55:39Z","side":null},{"id":923945,"price":"3582.83","volume":"0.0035","funds":"12.539905","market":"btcusdt","created_at":"2019-01-17T08:54:42Z","side":null},{"id":923940,"price":"3577.11","volume":"0.001085","funds":"3.88116435","market":"btcusdt","created_at":"2019-01-17T08:54:14Z","side":null},{"id":923938,"price":"3574.86","volume":"0.001022","funds":"3.65350692","market":"btcusdt","created_at":"2019-01-17T08:54:08Z","side":null},{"id":923910,"price":"3580.16","volume":"0.001867","funds":"6.68415872","market":"btcusdt","created_at":"2019-01-17T08:52:32Z","side":null},{"id":923903,"price":"3585.23","volume":"0.004114","funds":"14.74963622","market":"btcusdt","created_at":"2019-01-17T08:52:12Z","side":null},{"id":923895,"price":"3576.44","volume":"0.001067","funds":"3.81606148","market":"btcusdt","created_at":"2019-01-17T08:51:48Z","side":null},{"id":923893,"price":"3579.44","volume":"0.001336","funds":"4.78213184","market":"btcusdt","created_at":"2019-01-17T08:51:40Z","side":null},{"id":923882,"price":"3580.9","volume":"0.008657","funds":"30.9998513","market":"btcusdt","created_at":"2019-01-17T08:50:47Z","side":null},{"id":923869,"price":"3573.64","volume":"0.001059","funds":"3.78448476","market":"btcusdt","created_at":"2019-01-17T08:50:03Z","side":null},{"id":923857,"price":"3576.59","volume":"0.002899","funds":"10.36853441","market":"btcusdt","created_at":"2019-01-17T08:49:17Z","side":null},{"id":923845,"price":"3577.29","volume":"0.00141","funds":"5.0439789","market":"btcusdt","created_at":"2019-01-17T08:48:27Z","side":null},{"id":923830,"price":"3575.58","volume":"0.000801","funds":"2.86403958","market":"btcusdt","created_at":"2019-01-17T08:47:35Z","side":null},{"id":923829,"price":"3577.61","volume":"0.00576","funds":"20.6070336","market":"btcusdt","created_at":"2019-01-17T08:47:33Z","side":null},{"id":923820,"price":"3577.63","volume":"0.001154","funds":"4.12858502","market":"btcusdt","created_at":"2019-01-17T08:47:11Z","side":null},{"id":923809,"price":"3576.76","volume":"0.001012","funds":"3.61968112","market":"btcusdt","created_at":"2019-01-17T08:46:13Z","side":null},{"id":923803,"price":"3581.43","volume":"0.0048","funds":"17.190864","market":"btcusdt","created_at":"2019-01-17T08:46:04Z","side":null},{"id":923788,"price":"3578.23","volume":"0.001365","funds":"4.88428395","market":"btcusdt","created_at":"2019-01-17T08:45:08Z","side":null},{"id":923784,"price":"3577.51","volume":"0.0079","funds":"28.262329","market":"btcusdt","created_at":"2019-01-17T08:44:52Z","side":null},{"id":923759,"price":"3578.38","volume":"0.001392","funds":"4.98110496","market":"btcusdt","created_at":"2019-01-17T08:43:32Z","side":null},{"id":923752,"price":"3582.14","volume":"0.00516","funds":"18.4838424","market":"btcusdt","created_at":"2019-01-17T08:43:04Z","side":null},{"id":923745,"price":"3575.5","volume":"0.000698","funds":"2.495699","market":"btcusdt","created_at":"2019-01-17T08:42:37Z","side":null},{"id":923742,"price":"3575.44","volume":"0.00344","funds":"12.2995136","market":"btcusdt","created_at":"2019-01-17T08:42:28Z","side":null},{"id":923728,"price":"3577.4","volume":"0.001353","funds":"4.8402222","market":"btcusdt","created_at":"2019-01-17T08:41:36Z","side":null},{"id":923717,"price":"3576.88","volume":"0.000917","funds":"3.27999896","market":"btcusdt","created_at":"2019-01-17T08:40:37Z","side":null},{"id":923713,"price":"3578.88","volume":"0.008275","funds":"29.615232","market":"btcusdt","created_at":"2019-01-17T08:40:10Z","side":null},{"id":923702,"price":"3580.29","volume":"0.007355","funds":"26.33303295","market":"btcusdt","created_at":"2019-01-17T08:39:39Z","side":null},{"id":923696,"price":"3572.66","volume":"0.001225","funds":"4.3765085","market":"btcusdt","created_at":"2019-01-17T08:39:01Z","side":null},{"id":923695,"price":"3576.14","volume":"0.001273","funds":"4.55242622","market":"btcusdt","created_at":"2019-01-17T08:38:55Z","side":null},{"id":923676,"price":"3575.37","volume":"0.004413","funds":"15.77810781","market":"btcusdt","created_at":"2019-01-17T08:37:24Z","side":null},{"id":923674,"price":"3578.03","volume":"0.000894","funds":"3.19875882","market":"btcusdt","created_at":"2019-01-17T08:37:18Z","side":null},{"id":923650,"price":"3581.92","volume":"0.005092","funds":"18.23913664","market":"btcusdt","created_at":"2019-01-17T08:35:51Z","side":null},{"id":923648,"price":"3572.0","volume":"0.000741","funds":"2.646852","market":"btcusdt","created_at":"2019-01-17T08:35:42Z","side":null},{"id":923643,"price":"3574.32","volume":"0.007355","funds":"26.2891236","market":"btcusdt","created_at":"2019-01-17T08:35:25Z","side":null},{"id":923621,"price":"3577.01","volume":"0.001419","funds":"5.07577719","market":"btcusdt","created_at":"2019-01-17T08:34:05Z","side":null},{"id":923612,"price":"3581.19","volume":"0.00753","funds":"26.9663607","market":"btcusdt","created_at":"2019-01-17T08:33:18Z","side":null},{"id":923599,"price":"3576.92","volume":"0.00108","funds":"3.8630736","market":"btcusdt","created_at":"2019-01-17T08:32:29Z","side":null},{"id":923583,"price":"3571.93","volume":"0.000954","funds":"3.40762122","market":"btcusdt","created_at":"2019-01-17T08:31:49Z","side":null},{"id":923578,"price":"3577.55","volume":"0.00709","funds":"25.3648295","market":"btcusdt","created_at":"2019-01-17T08:31:37Z","side":null},{"id":923570,"price":"3577.98","volume":"0.000902","funds":"3.22733796","market":"btcusdt","created_at":"2019-01-17T08:30:43Z","side":null},{"id":923563,"price":"3580.3","volume":"0.007435","funds":"26.6195305","market":"btcusdt","created_at":"2019-01-17T08:30:24Z","side":null},{"id":923559,"price":"3575.96","volume":"0.001594","funds":"5.70008024","market":"btcusdt","created_at":"2019-01-17T08:30:11Z","side":null},{"id":923547,"price":"3577.3","volume":"0.011142","funds":"39.8582766","market":"btcusdt","created_at":"2019-01-17T08:29:21Z","side":null},{"id":923538,"price":"3575.23","volume":"0.00093","funds":"3.3249639","market":"btcusdt","created_at":"2019-01-17T08:28:35Z","side":null},{"id":923524,"price":"3579.21","volume":"0.009412","funds":"33.68752452","market":"btcusdt","created_at":"2019-01-17T08:27:57Z","side":null},{"id":923523,"price":"3579.69","volume":"0.001494","funds":"5.34805686","market":"btcusdt","created_at":"2019-01-17T08:27:57Z","side":null}]}'
+    http_version: 
+  recorded_at: Thu, 17 Jan 2019 08:58:29 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.therocktrading.com/v1/funds/NOKUEURN/orderbook
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.therocktrading.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3
+      Date:
+      - Tue, 19 Feb 2019 04:37:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"b15c4f5c208c4e6e7e8ee39cd44e19fe"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ff831eb5-9463-4bd0-8307-e2caf44ffe0a
+      X-Runtime:
+      - '0.007709'
+    body:
+      encoding: UTF-8
+      string: '{"date":"2019-02-19T04:35:37Z","fund_id":"NOKUEURN","asks":[{"price":0.15,"amount":399.986,"amount_depth":399.986,"depth":59.9979},{"price":0.164,"amount":8.0,"amount_depth":407.986,"depth":61.3099},{"price":0.17,"amount":4082.48,"amount_depth":4490.466,"depth":755.3315},{"price":0.238,"amount":30.0,"amount_depth":4520.466,"depth":762.4715},{"price":0.24,"amount":64.57,"amount_depth":4585.036,"depth":777.9683},{"price":0.25,"amount":19.43,"amount_depth":4604.466,"depth":782.8258},{"price":0.26,"amount":50.34,"amount_depth":4654.806,"depth":795.9142},{"price":0.27,"amount":33.306,"amount_depth":4688.112,"depth":804.90682},{"price":0.299,"amount":73.0,"amount_depth":4761.112,"depth":826.73382},{"price":0.305,"amount":71.57,"amount_depth":4832.682,"depth":848.56267},{"price":0.306,"amount":3.658,"amount_depth":4836.34,"depth":849.682018},{"price":0.316,"amount":13.43,"amount_depth":4849.77,"depth":853.925898},{"price":0.32,"amount":2.543,"amount_depth":4852.313,"depth":854.739658},{"price":0.325,"amount":3.0,"amount_depth":4855.313,"depth":855.714658},{"price":0.332,"amount":2.65,"amount_depth":4857.963,"depth":856.594458},{"price":0.334,"amount":2.54,"amount_depth":4860.503,"depth":857.442818},{"price":0.35,"amount":7.0,"amount_depth":4867.503,"depth":859.892818},{"price":0.685,"amount":500.0,"amount_depth":5367.503,"depth":1202.392818},{"price":0.7,"amount":2.0,"amount_depth":5369.503,"depth":1203.792818},{"price":0.79,"amount":249.0,"amount_depth":5618.503,"depth":1400.502818},{"price":0.825,"amount":875.0,"amount_depth":6493.503,"depth":2122.377818},{"price":0.97,"amount":500.0,"amount_depth":6993.503,"depth":2607.377818},{"price":0.999,"amount":400.0,"amount_depth":7393.503,"depth":3006.977818},{"price":1.0,"amount":40.0,"amount_depth":7433.503,"depth":3046.977818},{"price":1.45,"amount":10.0,"amount_depth":7443.503,"depth":3061.477818},{"price":1.55,"amount":250.0,"amount_depth":7693.503,"depth":3448.977818},{"price":1.599,"amount":1000.0,"amount_depth":8693.503,"depth":5047.977818},{"price":3.1,"amount":375.569,"amount_depth":9069.072,"depth":6212.241718},{"price":3.25,"amount":1000.0,"amount_depth":10069.072,"depth":9462.241718},{"price":3.3,"amount":2000.0,"amount_depth":12069.072,"depth":16062.241718},{"price":4.0,"amount":1300.0,"amount_depth":13369.072,"depth":21262.241718},{"price":4.5,"amount":2000.0,"amount_depth":15369.072,"depth":30262.241718},{"price":5.0,"amount":100.0,"amount_depth":15469.072,"depth":30762.241718},{"price":5.5,"amount":3835.0,"amount_depth":19304.072,"depth":51854.741718},{"price":6.0,"amount":2000.0,"amount_depth":21304.072,"depth":63854.741718},{"price":7.5,"amount":300.0,"amount_depth":21604.072,"depth":66104.741718},{"price":8.0,"amount":2000.0,"amount_depth":23604.072,"depth":82104.741718},{"price":9.0,"amount":23.0,"amount_depth":23627.072,"depth":82311.741718},{"price":10.0,"amount":700.0,"amount_depth":24327.072,"depth":89311.741718},{"price":15.0,"amount":150.0,"amount_depth":24477.072,"depth":91561.741718},{"price":50.0,"amount":1000.0,"amount_depth":25477.072,"depth":141561.741718},{"price":200.0,"amount":36.0,"amount_depth":25513.072,"depth":148761.741718},{"price":1000.0,"amount":5.0,"amount_depth":25518.072,"depth":153761.741718},{"price":1450.0,"amount":10.0,"amount_depth":25528.072,"depth":168261.741718}],"bids":[{"price":0.07,"amount":500.0,"amount_depth":500.0,"depth":35.0},{"price":0.05,"amount":3.0,"amount_depth":503.0,"depth":35.15},{"price":0.02,"amount":3876.0,"amount_depth":4379.0,"depth":112.67},{"price":0.019,"amount":1000.0,"amount_depth":5379.0,"depth":131.67},{"price":0.015,"amount":114.0,"amount_depth":5493.0,"depth":133.38},{"price":0.01,"amount":1000.0,"amount_depth":6493.0,"depth":143.38},{"price":0.001,"amount":150000.0,"amount_depth":156493.0,"depth":293.38}]}'
+    http_version: 
+  recorded_at: Tue, 19 Feb 2019 04:37:09 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-cloud.huobi.co.jp/v1/common/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api-cloud.huobi.co.jp
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 21 Jun 2019 03:24:18 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d000968b500f06652d8f28da9c37e79b81561087458; expires=Sat, 20-Jun-20
+        03:24:18 GMT; path=/; domain=.huobi.co.jp; HttpOnly
+      X-Application-Context:
+      - dawn-broker-pro:default,prd:8080
+      X-Request-Id:
+      - 9a116bc14e21c0a6433ce1beb30b75e6
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ea2de65f91d2cc7-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","data":[{"base-currency":"eth","quote-currency":"jpy","price-precision":0,"amount-precision":4,"symbol-partition":"default","symbol":"ethjpy","state":"online","value-precision":0,"min-order-amt":0.001,"max-order-amt":10000,"min-order-value":100},{"base-currency":"mona","quote-currency":"btc","price-precision":8,"amount-precision":2,"symbol-partition":"default","symbol":"monabtc","state":"offline","value-precision":8,"min-order-amt":0.01,"max-order-amt":1000000,"min-order-value":0.0001},{"base-currency":"xrp","quote-currency":"jpy","price-precision":3,"amount-precision":2,"symbol-partition":"default","symbol":"xrpjpy","state":"online","value-precision":0,"min-order-amt":0.1,"max-order-amt":2500000,"min-order-value":100},{"base-currency":"ltc","quote-currency":"btc","price-precision":6,"amount-precision":4,"symbol-partition":"default","symbol":"ltcbtc","state":"online","value-precision":4,"min-order-amt":0.001,"max-order-amt":100000,"min-order-value":0.0001,"leverage-ratio":3},{"base-currency":"eth","quote-currency":"btc","price-precision":6,"amount-precision":4,"symbol-partition":"default","symbol":"ethbtc","state":"online","value-precision":4,"min-order-amt":0.001,"max-order-amt":10000,"min-order-value":0.0001,"leverage-ratio":3},{"base-currency":"ltc","quote-currency":"jpy","price-precision":0,"amount-precision":4,"symbol-partition":"default","symbol":"ltcjpy","state":"online","value-precision":0,"min-order-amt":0.001,"max-order-amt":25000,"min-order-value":100},{"base-currency":"btc","quote-currency":"jpy","price-precision":0,"amount-precision":4,"symbol-partition":"default","symbol":"btcjpy","state":"online","value-precision":0,"min-order-amt":0.0001,"max-order-amt":100,"min-order-value":100},{"base-currency":"xrp","quote-currency":"btc","price-precision":8,"amount-precision":0,"symbol-partition":"default","symbol":"xrpbtc","state":"online","value-precision":8,"min-order-amt":1,"max-order-amt":5000000,"min-order-value":0.0001,"leverage-ratio":3},{"base-currency":"mona","quote-currency":"jpy","price-precision":3,"amount-precision":4,"symbol-partition":"default","symbol":"monajpy","state":"online","value-precision":0,"min-order-amt":0.1,"max-order-amt":1000000,"min-order-value":100},{"base-currency":"bch","quote-currency":"btc","price-precision":6,"amount-precision":4,"symbol-partition":"default","symbol":"bchbtc","state":"online","value-precision":4,"min-order-amt":0.001,"max-order-amt":10000,"min-order-value":0.0001,"leverage-ratio":3},{"base-currency":"bch","quote-currency":"jpy","price-precision":0,"amount-precision":4,"symbol-partition":"default","symbol":"bchjpy","state":"online","value-precision":0,"min-order-amt":0.0001,"max-order-amt":5000,"min-order-value":100}]}'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2019 03:24:16 GMT
+recorded_with: VCR 4.0.0

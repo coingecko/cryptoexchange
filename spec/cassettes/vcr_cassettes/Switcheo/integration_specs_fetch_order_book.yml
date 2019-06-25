@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.switcheo.network/v2/offers/book?pair=MCT_NEO
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.switcheo.network
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 16 May 2019 06:35:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Etag:
+      - W/"cfce6533217b68b5407a2325b2eb3511"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4a9c4cba-09db-4bcb-90e3-05a5fc640c06
+      X-Runtime:
+      - '0.013650'
+      X-Rack-Cors:
+      - miss; no-origin
+    body:
+      encoding: UTF-8
+      string: '{"asks":[{"price":"0.000094","quantity":"16510.64"},{"price":"0.000103","quantity":"2479.55"},{"price":"0.000104","quantity":"7441.4"},{"price":"0.000105","quantity":"3150.99"},{"price":"0.000109","quantity":"1429.39"},{"price":"0.000112","quantity":"5000.0"},{"price":"0.000113","quantity":"4000.0"},{"price":"0.000114","quantity":"1070.61"},{"price":"0.000115","quantity":"9786.28"},{"price":"0.000117","quantity":"10980.41"},{"price":"0.00012","quantity":"24680.0"},{"price":"0.000122","quantity":"4692.7"},{"price":"0.000123","quantity":"1000.0"},{"price":"0.000124","quantity":"6000.0"},{"price":"0.000128","quantity":"3999.0"},{"price":"0.000129","quantity":"11204.42"},{"price":"0.00013","quantity":"11638.29"},{"price":"0.000132","quantity":"8474.57"},{"price":"0.000133","quantity":"8403.36"},{"price":"0.000134","quantity":"8664.4"},{"price":"0.000135","quantity":"53292.72"},{"price":"0.000136","quantity":"12199.88"},{"price":"0.000138","quantity":"1000.0"},{"price":"0.000142","quantity":"2599.32"},{"price":"0.000143","quantity":"8000.0"},{"price":"0.000146","quantity":"7000.0"},{"price":"0.00015","quantity":"24220.71"},{"price":"0.000151","quantity":"22001.48"},{"price":"0.000157","quantity":"1000.0"},{"price":"0.000159","quantity":"1000.0"},{"price":"0.00016","quantity":"1000.0"},{"price":"0.000163","quantity":"142555.07"},{"price":"0.000165","quantity":"1000.0"},{"price":"0.000167","quantity":"1000.0"},{"price":"0.000168","quantity":"30917.51"},{"price":"0.000169","quantity":"7166.9"},{"price":"0.00017","quantity":"21000.0"},{"price":"0.000181","quantity":"22001.49"},{"price":"0.000183","quantity":"1000.0"},{"price":"0.000184","quantity":"7000.0"},{"price":"0.000189","quantity":"8999.99"},{"price":"0.000194","quantity":"3000.0"},{"price":"0.000197","quantity":"1114.61"},{"price":"0.000198","quantity":"3000.0"},{"price":"0.000199","quantity":"7606.0"},{"price":"0.0002","quantity":"29633.73"},{"price":"0.00021","quantity":"500.0"},{"price":"0.00022","quantity":"500.0"},{"price":"0.000223","quantity":"9000.0"}],"bids":[{"price":"0.000092","quantity":"46306.13"},{"price":"0.000091","quantity":"3009.0"},{"price":"0.00008","quantity":"3750.0"},{"price":"0.000077","quantity":"16234.12"},{"price":"0.000072","quantity":"13889.09"},{"price":"0.000071","quantity":"4930.0"},{"price":"0.00007","quantity":"58928.56"},{"price":"0.00006","quantity":"2083.33"},{"price":"0.000058","quantity":"5603.24"},{"price":"0.000057","quantity":"175438.59"},{"price":"0.000055","quantity":"32363.65"},{"price":"0.000051","quantity":"6372.32"},{"price":"0.00005","quantity":"162500.0"},{"price":"0.000047","quantity":"62835.51"},{"price":"0.000043","quantity":"10500.0"},{"price":"0.000005","quantity":"804045.66"},{"price":"0.000004","quantity":"500003.99"},{"price":"0.000001","quantity":"500000.0"}]}'
+    http_version: 
+  recorded_at: Thu, 16 May 2019 06:35:19 GMT
+recorded_with: VCR 4.0.0

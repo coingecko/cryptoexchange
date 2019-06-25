@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.qtrade.io/v1/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.qtrade.io
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 10 Oct 2018 19:40:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dafd6c84b5502db37201f0b680568b3561539200435; expires=Thu, 10-Oct-19
+        19:40:35 GMT; path=/; domain=.qtrade.io; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 467b8f3eff004722-EWR
+    body:
+      encoding: UTF-8
+      string: '{"data":{"markets":[{"ask":null,"bid":null,"day_avg_price":null,"day_change":null,"day_high":null,"day_low":null,"day_open":null,"day_volume_base":"0","day_volume_market":"0","id":5,"id_hr":"BAC_BTC","last":"0.000001"},{"ask":null,"bid":null,"day_avg_price":null,"day_change":null,"day_high":null,"day_low":null,"day_open":null,"day_volume_base":"0","day_volume_market":"0","id":12,"id_hr":"BWS20_BWS10","last":"1"},{"ask":"0.000049","bid":"0.000034","day_avg_price":"0.0000495296290166","day_change":"0","day_high":"0.000051","day_low":"0.000049","day_open":"0.000049","day_volume_base":"0.00189595","day_volume_market":"38.27910763","id":17,"id_hr":"SCC_BTC","last":"0.000049"},{"ask":"0.0000002","bid":"0.0000001","day_avg_price":null,"day_change":null,"day_high":null,"day_low":null,"day_open":null,"day_volume_base":"0","day_volume_market":"0","id":11,"id_hr":"BWS20_BTC","last":"0.00000042"},{"ask":"0.0000029","bid":"0.00000226","day_avg_price":null,"day_change":null,"day_high":null,"day_low":null,"day_open":null,"day_volume_base":"0","day_volume_market":"0","id":7,"id_hr":"RVN_BTC","last":"0.00000225"},{"ask":null,"bid":null,"day_avg_price":null,"day_change":null,"day_high":null,"day_low":null,"day_open":null,"day_volume_base":"0","day_volume_market":"0","id":10,"id_hr":"ANU_BTC","last":"0.000005"},{"ask":"0.01","bid":"0.006","day_avg_price":"0.0059999785418395","day_change":"-0.4","day_high":"0.006","day_low":"0.006","day_open":"0.01","day_volume_base":"0.00052008","day_volume_market":"0.08668031","id":1,"id_hr":"LTC_BTC","last":"0.006"},{"ask":"0.000077","bid":"0.0000321","day_avg_price":"0.0000717240194765","day_change":"2.219645732689211","day_high":"0.00009997","day_low":"0.000061","day_open":"0.00003105","day_volume_base":"0.24813902","day_volume_market":"3459.636281","id":19,"id_hr":"SNOW_BTC","last":"0.00009997"},{"ask":"0.0000011","bid":"0.00000021","day_avg_price":null,"day_change":null,"day_high":null,"day_low":null,"day_open":null,"day_volume_base":"0","day_volume_market":"0","id":8,"id_hr":"MMO_BTC","last":"0.00000036"},{"ask":null,"bid":null,"day_avg_price":null,"day_change":null,"day_high":null,"day_low":null,"day_open":null,"day_volume_base":"0","day_volume_market":"0","id":2,"id_hr":"RCO_BTC","last":"0"},{"ask":"0.0143","bid":"0.01360112","day_avg_price":"0.0140035247902384","day_change":"0.0074903703703704","day_high":"0.0143","day_low":"0.0135001","day_open":"0.0135","day_volume_base":"0.92654955","day_volume_market":"66.16545219","id":15,"id_hr":"VEO_BTC","last":"0.01360112"},{"ask":"0.00001","bid":"0.00000421","day_avg_price":"0.0000042099979701","day_change":"0","day_high":"0.00000421","day_low":"0.00000421","day_open":"0.00000421","day_volume_base":"0.00325846","day_volume_market":"773.9813708","id":9,"id_hr":"BTM_BTC","last":"0.00000421"},{"ask":"0.00000723","bid":"0.000004","day_avg_price":null,"day_change":null,"day_high":null,"day_low":null,"day_open":null,"day_volume_base":"0","day_volume_market":"0","id":16,"id_hr":"THC_BTC","last":"0.00000475"},{"ask":null,"bid":null,"day_avg_price":null,"day_change":null,"day_high":null,"day_low":null,"day_open":null,"day_volume_base":"0","day_volume_market":"0","id":18,"id_hr":"XBR_BTC","last":"0"},{"ask":null,"bid":null,"day_avg_price":null,"day_change":null,"day_high":null,"day_low":null,"day_open":null,"day_volume_base":"0","day_volume_market":"0","id":3,"id_hr":"REDN_BTC","last":"0.00000132"},{"ask":null,"bid":null,"day_avg_price":null,"day_change":null,"day_high":null,"day_low":null,"day_open":null,"day_volume_base":"0","day_volume_market":"0","id":6,"id_hr":"QUAN_BTC","last":"0.00001"},{"ask":"0.00000001","bid":null,"day_avg_price":null,"day_change":null,"day_high":null,"day_low":null,"day_open":null,"day_volume_base":"0","day_volume_market":"0","id":4,"id_hr":"CPR_BTC","last":"0.00000001"},{"ask":"0.00001","bid":null,"day_avg_price":null,"day_change":null,"day_high":null,"day_low":null,"day_open":null,"day_volume_base":"0","day_volume_market":"0","id":14,"id_hr":"RUPX_BTC","last":"0.000005"},{"ask":"0.0000145","bid":"0.00000501","day_avg_price":"0.000004509805359","day_change":"0","day_high":"0.00000451","day_low":"0.00000451","day_open":"0.00000451","day_volume_base":"0.00012032","day_volume_market":"26.67964367","id":13,"id_hr":"DEFT_BTC","last":"0.00000451"}]}}'
+    http_version: 
+  recorded_at: Wed, 10 Oct 2018 19:40:35 GMT
+recorded_with: VCR 4.0.0

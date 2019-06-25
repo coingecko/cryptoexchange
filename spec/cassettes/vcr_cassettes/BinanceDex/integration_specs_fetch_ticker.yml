@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dex.binance.org/api/v1/ticker/24hr
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - dex.binance.org
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Date:
+      - Thu, 02 May 2019 02:11:07 GMT
+      X-Ratelimit-Limit-Second:
+      - '5'
+      X-Ratelimit-Remaining-Second:
+      - '4'
+      X-Ratelimit-Limit-Minute:
+      - '300'
+      X-Ratelimit-Remaining-Minute:
+      - '299'
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Kong-Upstream-Latency:
+      - '1'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.14.1, 1.1 8f2472155c3b6e146855be1d54e7188c.cloudfront.net (CloudFront)
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - origin-when-cross-origin
+      Vary:
+      - accept-encoding
+      X-Cache:
+      - Hit from cloudfront
+      X-Amz-Cf-Id:
+      - yYZ2gAlcx90BHdYpD7AwqsvI4ghxJ0NhmqF1XHOS_8DI_ZimjAlIyg==
+    body:
+      encoding: UTF-8
+      string: '[{"symbol":"NOW-E68_BNB","priceChange":"-0.00150000","priceChangePercent":"-0.5281","prevClosePrice":"0.00164000","lastPrice":"0.00134000","lastQuantity":"74.60000000","openPrice":"0.00284000","highPrice":"0.00284000","lowPrice":"0.00130000","openTime":1556676665288,"closeTime":1556763065288,"firstId":"2826641-0","lastId":"3021458-0","bidPrice":"0.00133000","bidQuantity":"20000.00000000","askPrice":"0.00134000","askQuantity":"175.95000000","weightedAvgPrice":"0.00156924","volume":"643832.90300000","quoteVolume":"1010.3284316300000000","count":128},{"symbol":"MITH-C76_BNB","priceChange":"-0.00006947","priceChangePercent":"-0.0348","prevClosePrice":"0.00203077","lastPrice":"0.00192200","lastQuantity":"10.00000000","openPrice":"0.00199147","highPrice":"0.00203077","lowPrice":"0.00188880","openTime":1556676665288,"closeTime":1556763065288,"firstId":"2826714-0","lastId":"3029856-0","bidPrice":"0.00192200","bidQuantity":"94.00000000","askPrice":"0.00198053","askQuantity":"3401.00000000","weightedAvgPrice":"0.00198293","volume":"825.00000000","quoteVolume":"1.6359202900000000","count":13}]'
+    http_version: 
+  recorded_at: Thu, 02 May 2019 02:11:01 GMT
+recorded_with: VCR 4.0.0
