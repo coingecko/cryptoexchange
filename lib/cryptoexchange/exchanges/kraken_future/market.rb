@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://www.cryptofacilities.com/derivatives/api/v3'
 
       def self.trade_page_url(args={})
-        "https://futures.kraken.com/dashboard?symbol=PI_#{args[:base].upcase}#{args[:target].upcase}"
+        "https://futures.kraken.com/dashboard"
       end
     end
   end
