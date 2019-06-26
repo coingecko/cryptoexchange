@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'BitflyerFutures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_jpy_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'jpy', market: 'bitflyer_futures') }
+  let(:btc_jpy_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'jpy', contract_interval: "perpetual", market: 'bitflyer_futures') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bitflyer_futures')
@@ -16,7 +16,7 @@ RSpec.describe 'BitflyerFutures integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url btc_jpy_pair.market, base: btc_jpy_pair.base, target: btc_jpy_pair.target
-    expect(trade_page_url).to eq "https://lightning.bitflyer.com/trade/btcfx"
+    expect(trade_page_url).to eq "https://lightning.bitflyer.com/trade"
   end
 
   it 'fetch ticker' do

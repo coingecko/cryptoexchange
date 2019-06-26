@@ -14,7 +14,14 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::BitflyerFutures::Market::API_URL}/ticker?product_code=FX_#{market_pair.base}_#{market_pair.target}"
+          interval_code = Cryptoexchange::Exchanges::BitflyerFutures::Market::INTERVAL_CODE_LIST[market_pair.contract_interval]
+
+          if market_pair.contract_interval == "perpetual"
+            product_code = "#{interval_code}_#{market_pair.base}_#{market_pair.target}"
+          else
+            product_code = "#{market_pair.base}#{market_pair.target}_#{interval_code}"
+          end
+          "#{Cryptoexchange::Exchanges::BitflyerFutures::Market::API_URL}/ticker?product_code=#{product_code}"
         end
 
         def adapt(output, market_pair)
