@@ -268,6 +268,7 @@ Or install it yourself as:
 | HPX               | Y       | Y [x]      | Y       |         | Y           |          | hpx               |       |
 | Hubi              | Y       |            |         |         | Y           |          | hubi              |       |
 | Huobi             | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi             |       |
+| Huobi DM          | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi_dm          |       |
 | Huobi Japan       | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi_japan       |       |
 | Huobi Korea       | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi_korea       |       |
 | Huobi US          | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi_us          |       |

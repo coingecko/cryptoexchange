@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hbdm.com/api/v1/contract_contract_info
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hbdm.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 26 Jun 2019 06:42:59 GMT
+      Content-Type:
+      - text/plain;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d956d7af5edcce898362fb247ce2531891561531379; expires=Thu, 25-Jun-20
+        06:42:59 GMT; path=/; domain=.hbdm.com; HttpOnly
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Reqid:
+      - 2cd86266bdeb4b48aaf6173216aba65d
+      Ratelimit-Remaining:
+      - '59'
+      Ratelimit-Reset:
+      - '1561531382544'
+      Ratelimit-Interval:
+      - '3000'
+      Ratelimit-Limit:
+      - '60'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ecd34505e1f2d15-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","data":[{"symbol":"BTC","contract_code":"BTC190628","contract_type":"this_week","contract_size":100.000000000000000000,"price_tick":0.010000000000000000,"delivery_date":"20190628","create_date":"20190315","contract_status":1},{"symbol":"BTC","contract_code":"BTC190705","contract_type":"next_week","contract_size":100.000000000000000000,"price_tick":0.010000000000000000,"delivery_date":"20190705","create_date":"20190621","contract_status":1},{"symbol":"BTC","contract_code":"BTC190927","contract_type":"quarter","contract_size":100.000000000000000000,"price_tick":0.010000000000000000,"delivery_date":"20190927","create_date":"20190614","contract_status":1},{"symbol":"ETH","contract_code":"ETH190628","contract_type":"this_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20190628","create_date":"20190315","contract_status":1},{"symbol":"ETH","contract_code":"ETH190705","contract_type":"next_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20190705","create_date":"20190621","contract_status":1},{"symbol":"ETH","contract_code":"ETH190927","contract_type":"quarter","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20190927","create_date":"20190614","contract_status":1},{"symbol":"XRP","contract_code":"XRP190628","contract_type":"this_week","contract_size":10.000000000000000000,"price_tick":0.000100000000000000,"delivery_date":"20190628","create_date":"20190329","contract_status":1},{"symbol":"XRP","contract_code":"XRP190705","contract_type":"next_week","contract_size":10.000000000000000000,"price_tick":0.000100000000000000,"delivery_date":"20190705","create_date":"20190621","contract_status":1},{"symbol":"XRP","contract_code":"XRP190927","contract_type":"quarter","contract_size":10.000000000000000000,"price_tick":0.000100000000000000,"delivery_date":"20190927","create_date":"20190614","contract_status":1},{"symbol":"EOS","contract_code":"EOS190628","contract_type":"this_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20190628","create_date":"20190315","contract_status":1},{"symbol":"EOS","contract_code":"EOS190705","contract_type":"next_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20190705","create_date":"20190621","contract_status":1},{"symbol":"EOS","contract_code":"EOS190927","contract_type":"quarter","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20190927","create_date":"20190614","contract_status":1},{"symbol":"LTC","contract_code":"LTC190628","contract_type":"this_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20190628","create_date":"20190315","contract_status":1},{"symbol":"LTC","contract_code":"LTC190705","contract_type":"next_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20190705","create_date":"20190621","contract_status":1},{"symbol":"LTC","contract_code":"LTC190927","contract_type":"quarter","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20190927","create_date":"20190614","contract_status":1},{"symbol":"BCH","contract_code":"BCH190628","contract_type":"this_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20190628","create_date":"20190412","contract_status":1},{"symbol":"BCH","contract_code":"BCH190705","contract_type":"next_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20190705","create_date":"20190621","contract_status":1},{"symbol":"BCH","contract_code":"BCH190927","contract_type":"quarter","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20190927","create_date":"20190614","contract_status":1},{"symbol":"TRX","contract_code":"TRX190628","contract_type":"this_week","contract_size":10.000000000000000000,"price_tick":0.000010000000000000,"delivery_date":"20190628","create_date":"20190426","contract_status":1},{"symbol":"TRX","contract_code":"TRX190705","contract_type":"next_week","contract_size":10.000000000000000000,"price_tick":0.000010000000000000,"delivery_date":"20190705","create_date":"20190621","contract_status":1},{"symbol":"TRX","contract_code":"TRX190927","contract_type":"quarter","contract_size":10.000000000000000000,"price_tick":0.000010000000000000,"delivery_date":"20190927","create_date":"20190614","contract_status":1}],"ts":1561531379544}'
+    http_version: 
+  recorded_at: Wed, 26 Jun 2019 06:42:59 GMT
+recorded_with: VCR 4.0.0
