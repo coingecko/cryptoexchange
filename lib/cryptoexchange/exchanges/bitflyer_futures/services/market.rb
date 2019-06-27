@@ -15,7 +15,6 @@ module Cryptoexchange::Exchanges
 
         def ticker_url(market_pair)
           interval_code = Cryptoexchange::Exchanges::BitflyerFutures::Market::INTERVAL_CODE_LIST[market_pair.contract_interval]
-
           if market_pair.contract_interval == "perpetual"
             product_code = "#{interval_code}_#{market_pair.base}_#{market_pair.target}"
           else
@@ -28,6 +27,7 @@ module Cryptoexchange::Exchanges
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
+          ticker.contract_interval    = market_pair.contract_interval
           ticker.market    = BitflyerFutures::Market::NAME
           ticker.ask       = NumericHelper.to_d(output['best_ask'])
           ticker.bid       = NumericHelper.to_d(output['best_bid'])
