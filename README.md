@@ -383,6 +383,7 @@ Or install it yourself as:
 | Swiftex           | Y       | Y          |         |         | Y           | Y        | swiftex           |       |
 | Switcheo          | Y       | Y [x]      | N       |         | Y           | Y        | switcheo          |       |
 | Syex              | Y       | N          | N       |         | Y           | Y        | syex              |       |
+| Synthetix         | Y       | N          | N       |         | Y           | Y        | synthetix         |       |
 | SZZC              | Y       |            |         |         | Y           |          | szzc              |       |
 | Tdax              | Y       | N          | N       |         | Y           | Y        | tdax              |       |
 | The Rock Trading  | Y       | Y [x]      | Y       |         | Y           | Y        | therocktrading    |       |
