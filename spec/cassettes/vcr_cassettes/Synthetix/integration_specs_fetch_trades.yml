@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.synthetix.io/api/exchange/transactions/SBTC-SETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.synthetix.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 28 Jun 2019 12:34:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1986'
+      Connection:
+      - close
+      Server:
+      - nginx/1.12.1
+      X-Powered-By:
+      - Express
+      Set-Cookie:
+      - language=en-US; Path=/
+      X-Frame-Options:
+      - sameorigin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization
+      Etag:
+      - W/"7c2-HQxKNF1PaeVO7lD9YlzrLv3qt7w"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '[{"type":"sell","amount":0.000703,"rate":37.70273676260783,"ts":"2019-06-28T08:30:42.000Z"},{"type":"sell","amount":0.9003739934052251,"rate":37.91459345566933,"ts":"2019-06-28T06:49:53.000Z"},{"type":"buy","amount":0.8035562361273265,"rate":36.87682533178044,"ts":"2019-06-27T22:04:41.000Z"},{"type":"sell","amount":0.6847823355290763,"rate":37.43034303665134,"ts":"2019-06-27T19:19:46.000Z"},{"type":"sell","amount":0.6771189392949509,"rate":37.713138904034174,"ts":"2019-06-27T18:58:47.000Z"},{"type":"buy","amount":0.3470486763925195,"rate":38.23540963615068,"ts":"2019-06-27T08:41:09.000Z"},{"type":"buy","amount":0.016236558938398156,"rate":38.49202299398411,"ts":"2019-06-26T23:19:55.000Z"},{"type":"sell","amount":4.752714752777398,"rate":39.214918371298,"ts":"2019-06-26T20:01:02.000Z"},{"type":"buy","amount":4.750008734034421,"rate":39.17286666717475,"ts":"2019-06-26T19:25:57.000Z"},{"type":"buy","amount":0.022424027201231926,"rate":38.47703145635674,"ts":"2019-06-26T18:21:47.000Z"},{"type":"buy","amount":4.890794059170978,"rate":37.67406850308304,"ts":"2019-06-26T16:47:30.000Z"},{"type":"sell","amount":4.896701830066294,"rate":37.62861550775381,"ts":"2019-06-26T16:41:07.000Z"},{"type":"buy","amount":4.896701830066294,"rate":37.38389741697792,"ts":"2019-06-26T16:22:46.000Z"},{"type":"sell","amount":4.826043165150885,"rate":36.71814465168902,"ts":"2019-06-26T14:01:55.000Z"},{"type":"buy","amount":4.861885570990473,"rate":37.16106916219465,"ts":"2019-06-26T13:22:49.000Z"},{"type":"sell","amount":0.035456,"rate":37.82185662365031,"ts":"2019-06-26T09:09:37.000Z"},{"type":"buy","amount":0.03545619843237864,"rate":38.247162977337375,"ts":"2019-06-26T08:17:59.000Z"},{"type":"buy","amount":4.233227923450086,"rate":36.78668914934857,"ts":"2019-06-26T04:46:53.000Z"},{"type":"sell","amount":4.115699522301414,"rate":37.529570817291955,"ts":"2019-06-26T03:28:30.000Z"},{"type":"buy","amount":3.252411499358649,"rate":35.17646310305918,"ts":"2019-06-23T20:07:55.000Z"}]'
+    http_version: 
+  recorded_at: Fri, 28 Jun 2019 12:34:35 GMT
+recorded_with: VCR 4.0.0
