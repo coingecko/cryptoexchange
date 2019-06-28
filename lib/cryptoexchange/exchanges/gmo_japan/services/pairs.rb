@@ -11,11 +11,12 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output["data"].map do |pair|
-            next if pair['symbol'].include?('_') == false
+            # Exclude _ as BTC_JPY with _JPY refers to leverage trading
+            next if pair['symbol'].include?('_')
             base, target = pair['symbol'].split("_")
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
-              target: target,
+              target: "JPY",
               market: GmoJapan::Market::NAME
             )
           end.compact
