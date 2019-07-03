@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://swiftex.co/api/v2/tickers.json
+    uri: https://trade.swiftex.co/api/v2/peatio/public/markets/
     body:
       encoding: UTF-8
       string: ''
@@ -10,70 +10,66 @@ http_interactions:
       Connection:
       - close
       Host:
-      - swiftex.co
+      - trade.swiftex.co
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
-      Date:
-      - Wed, 06 Mar 2019 08:28:08 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '2168'
-      Connection:
-      - close
-      Set-Cookie:
-      - __cfduid=dd96b8312f1606847ae932a7a58380c561551860888; expires=Thu, 05-Mar-20
-        08:28:08 GMT; path=/; domain=.swiftex.co; HttpOnly; Secure
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, PUT, PATCH, DELETE
-      Access-Control-Allow-Headers:
-      - Origin, X-Requested-With, Content-Type, Accept, Authorization
-      Access-Control-Allow-Credentials:
-      - 'false'
-      Version:
-      - HTTP/1.0
-      Host:
-      - swiftex.co
       Accept-Encoding:
       - gzip
-      Cf-Ipcountry:
-      - MY
-      X-Forwarded-For:
-      - 2001:e68:6e44:0:24ab:5cfb:9e0e:c7cf
-      X-Forwarded-Proto:
-      - https
-      Cf-Visitor:
-      - '{"scheme":"https"}'
-      User-Agent:
-      - http.rb/3.0.0
-      Cf-Connecting-Ip:
-      - 2001:e68:6e44:0:24ab:5cfb:9e0e:c7cf
-      Cdn-Loop:
-      - cloudflare
-      Etag:
-      - W/"a47b9350af7ad269e8a92ea2c5794bba"
       Cache-Control:
       - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - f951dc90-f1c3-435e-b5e3-38d939fbce5f
-      X-Runtime:
-      - '0.023864'
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Content-Length:
+      - '8599'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 03 Jul 2019 06:33:25 GMT
+      Etag:
+      - W/"c5b9724296cedb9795766b5fc1c5af1f"
+      Host:
+      - trade.swiftex.co
       Server:
-      - cloudflare
-      Cf-Ray:
-      - 4b32f456db478532-HKG
+      - envoy
+      Set-Cookie:
+      - _session_id=DfKHuMZzTX4RjNQU6dVQ5yg8oCSKsqep6HYZa%2FM%2FZ20BC%2Fo9SD%2F99HFQR45kG4Brb7sNyhwaLfD4jObtFw%3D%3D--rosKm4vNYScyFg2C--L6Fhm7cYUxkBzFbv6I%2F0mQ%3D%3D;
+        path=/; HttpOnly
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Vary:
+      - Origin
+      Version:
+      - HTTP/1.1
+      X-Envoy-Expected-Rq-Timeout-Ms:
+      - '15000'
+      X-Envoy-Original-Path:
+      - "/api/v2/peatio/public/markets/"
+      X-Envoy-Upstream-Service-Time:
+      - '20'
+      X-Forwarded-For:
+      - 118.100.1.62
+      X-Forwarded-Host:
+      - trade.swiftex.co
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Forwarded-Server:
+      - swiftex
+      X-Real-Ip:
+      - 118.100.1.62
+      X-Request-Id:
+      - 3504dc6b-2609-4c38-a059-1746fce22bdb
+      X-Runtime:
+      - '0.017302'
+      Connection:
+      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"mymn-btc":{"at":1551860888,"ticker":{"buy":"0.00000001","sell":"0.00000013","low":"0.00000007","high":"0.00000013","open":7.0e-08,"last":"0.00000007","volume":"0.0","avg_price":"0.0","price_change_percent":"+0.00%","vol":"0.0"}},"mynt-btc":{"at":1551860888,"ticker":{"buy":"0.000000025","sell":"0.000000028","low":"0.000000025","high":"0.00000003","open":2.5e-08,"last":"0.000000028","volume":"173908.321398533","avg_price":"0.000000029","price_change_percent":"+12.00%","vol":"173908.321398533"}},"oasis-btc":{"at":1551860888,"ticker":{"buy":"0.0000891","sell":"0.00009","low":"0.0000855","high":"0.0000855","open":8.55e-05,"last":"0.0000855","volume":"0.0","avg_price":"0.0","price_change_percent":"+0.00%","vol":"0.0"}},"oasis-mynt":{"at":1551860888,"ticker":{"buy":"999.0","sell":"8000.0","low":"7999.0","high":"7999.0","open":7999.0,"last":"7999.0","volume":"0.0","avg_price":"0.0","price_change_percent":"+0.00%","vol":"0.0"}},"pgn-mynt":{"at":1551860888,"ticker":{"buy":"0.9","sell":"65.0","low":"0.9","high":"0.9","open":0.9,"last":"0.9","volume":"0.0","avg_price":"0.0","price_change_percent":"+0.00%","vol":"0.0"}},"smrtc-mynt":{"at":1551860888,"ticker":{"buy":"0.98","sell":"1.0","low":"1.0","high":"1.2","open":1.0,"last":"1.0","volume":"0.0","avg_price":"0.0","price_change_percent":"+0.00%","vol":"0.0"}},"ltc-btc":{"at":1551860888,"ticker":{"buy":"0.0009","sell":"0.014","low":"0.0119","high":"0.0119","open":0.0119,"last":"0.0119","volume":"0.0","avg_price":"0.0","price_change_percent":"+0.00%","vol":"0.0"}},"pgn-btc":{"at":1551860888,"ticker":{"buy":"0.000000017","sell":"0.000000019","low":"0.000000021","high":"0.000000023","open":2.2e-08,"last":"0.000000023","volume":"285.0","avg_price":"0.000000022","price_change_percent":"+4.55%","vol":"285.0"}},"grs-mynt":{"at":1551860888,"ticker":{"buy":"300.0","sell":"0.0","low":"0.0","high":"0.0","open":"0.0","last":"0.0","volume":"0.0","avg_price":"0.0","price_change_percent":"+0.00%","vol":"0.0"}},"grs-btc":{"at":1551860888,"ticker":{"buy":"0.00000001","sell":"0.0","low":"0.0","high":"0.0","open":"0.0","last":"0.0","volume":"0.0","avg_price":"0.0","price_change_percent":"+0.00%","vol":"0.0"}}}'
+      string: '[{"id":"ausbtc","name":"AUS/BTC","ask_unit":"aus","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"ausmynt","name":"AUS/MYNT","ask_unit":"aus","bid_unit":"mynt","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":4,"bid_precision":4},{"id":"brigbtc","name":"BRIG/BTC","ask_unit":"brig","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"cubbtc","name":"CUB/BTC","ask_unit":"cub","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"dlrbtc","name":"DLR/BTC","ask_unit":"dlr","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"dogebtc","name":"DOGE/BTC","ask_unit":"doge","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"dvtbtc","name":"DVT/BTC","ask_unit":"dvt","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"dvtmynt","name":"DVT/MYNT","ask_unit":"dvt","bid_unit":"mynt","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":4,"bid_precision":4},{"id":"genixbtc","name":"GENIX/BTC","ask_unit":"genix","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"genixdoge","name":"GENIX/DOGE","ask_unit":"genix","bid_unit":"doge","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"genixmynt","name":"GENIX/MYNT","ask_unit":"genix","bid_unit":"mynt","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":4,"bid_precision":4},{"id":"ltcbtc","name":"LTC/BTC","ask_unit":"ltc","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":4,"bid_precision":4},{"id":"ltncgbtc","name":"LTNCG/BTC","ask_unit":"ltncg","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"ltncgmynt","name":"LTNCG/MYNT","ask_unit":"ltncg","bid_unit":"mynt","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":4,"bid_precision":4},{"id":"mazabtc","name":"MAZA/BTC","ask_unit":"maza","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"mazamynt","name":"MAZA/MYNT","ask_unit":"maza","bid_unit":"mynt","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":4,"bid_precision":4},{"id":"myntbtc","name":"MYNT/BTC","ask_unit":"mynt","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"myntdoge","name":"MYNT/DOGE","ask_unit":"mynt","bid_unit":"doge","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"myntltc","name":"MYNT/LTC","ask_unit":"mynt","bid_unit":"ltc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"nghbtc","name":"NGH/BTC","ask_unit":"ngh","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"oasisbtc","name":"OASIS/BTC","ask_unit":"oasis","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"oasisdoge","name":"OASIS/DOGE","ask_unit":"oasis","bid_unit":"doge","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"oasisltc","name":"OASIS/LTC","ask_unit":"oasis","bid_unit":"ltc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"oasismynt","name":"OASIS/MYNT","ask_unit":"oasis","bid_unit":"mynt","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":4,"bid_precision":4},{"id":"odinbtc","name":"ODIN/BTC","ask_unit":"odin","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"odinmynt","name":"ODIN/MYNT","ask_unit":"odin","bid_unit":"mynt","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":4,"bid_precision":4},{"id":"pgnbtc","name":"PGN/BTC","ask_unit":"pgn","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"pgnmynt","name":"PGN/MYNT","ask_unit":"pgn","bid_unit":"mynt","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":4,"bid_precision":4},{"id":"pownbtc","name":"POWN/BTC","ask_unit":"pown","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"pownmynt","name":"POWN/MYNT","ask_unit":"pown","bid_unit":"mynt","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":4,"bid_precision":4},{"id":"qcnbtc","name":"QCN/BTC","ask_unit":"qcn","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"ritobtc","name":"RITO/BTC","ask_unit":"rito","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"ritomynt","name":"RITO/MYNT","ask_unit":"rito","bid_unit":"mynt","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":4,"bid_precision":4},{"id":"vetbtc","name":"VET/BTC","ask_unit":"vet","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"winobtc","name":"WINO/BTC","ask_unit":"wino","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9},{"id":"xanobtc","name":"XANO/BTC","ask_unit":"xano","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.001","ask_precision":9,"bid_precision":9}]'
     http_version: 
-  recorded_at: Wed, 06 Mar 2019 08:28:08 GMT
+  recorded_at: Wed, 03 Jul 2019 06:33:26 GMT
 recorded_with: VCR 4.0.0

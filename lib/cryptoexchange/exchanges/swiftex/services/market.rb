@@ -4,42 +4,31 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            false
+            true
           end
         end
 
-        def fetch
-          output = super(ticker_url)
-          adapt_all(output)
+        def fetch(market_pair)
+          output = super(self.ticker_url(market_pair))
+          adapt(output, market_pair)
         end
 
-        def ticker_url
-          "#{Cryptoexchange::Exchanges::Swiftex::Market::API_URL}/tickers"
+        def ticker_url(market_pair)
+          "#{Cryptoexchange::Exchanges::Swiftex::Market::API_URL}/markets/#{market_pair.base.downcase}#{market_pair.target.downcase}/tickers"
         end
 
-        def adapt_all(output)
-          output.map do |pair|
-            base, target = pair[0].split('-')
-            market_pair  = Cryptoexchange::Models::MarketPair.new(
-              base:   base.upcase,
-              target: target.upcase,
-              market: Swiftex::Market::NAME
-            )
-            adapt(market_pair, pair[1])
-          end
-        end
-
-        def adapt(market_pair, output)
+        def adapt(output, market_pair)
+          data_ticker = output['ticker']
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Swiftex::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['ticker']['last'])
-          ticker.high      = NumericHelper.to_d(output['ticker']['high'])
-          ticker.low       = NumericHelper.to_d(output['ticker']['low'])
-          ticker.bid       = NumericHelper.to_d(output['ticker']['buy'])
-          ticker.ask       = NumericHelper.to_d(output['ticker']['sell'])
-          ticker.volume    = NumericHelper.to_d(output['ticker']['vol'])
+          ticker.last      = NumericHelper.to_d(data_ticker['last'])
+          ticker.bid       = NumericHelper.to_d(data_ticker['buy'])
+          ticker.ask       = NumericHelper.to_d(data_ticker['sell'])
+          ticker.high      = NumericHelper.to_d(data_ticker['high'])
+          ticker.low       = NumericHelper.to_d(data_ticker['low'])
+          ticker.volume    = NumericHelper.divide(NumericHelper.to_d(data_ticker['vol']), ticker.last)
           ticker.timestamp = nil
           ticker.payload   = output
           ticker

@@ -2,16 +2,16 @@ module Cryptoexchange::Exchanges
   module Swiftex
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Swiftex::Market::API_URL}/tickers.json"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Swiftex::Market::API_URL}/markets/"
 
         def fetch
           output = super
           market_pairs = []
           output.each do |pair|
-            base, target = pair[0].split('-')
+            base, target = pair["name"].split('/')
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: base.upcase,
-                              target: target.upcase,
+                              base: base,
+                              target: target,
                               market: Swiftex::Market::NAME
                             )
           end
