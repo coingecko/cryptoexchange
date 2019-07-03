@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://swiftex.co/api/v2/depth.json?market=mynt-btc
+    uri: https://trade.swiftex.co/api/v2/peatio/public/markets/myntbtc/depth
     body:
       encoding: UTF-8
       string: ''
@@ -10,70 +10,66 @@ http_interactions:
       Connection:
       - close
       Host:
-      - swiftex.co
+      - trade.swiftex.co
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
-      Date:
-      - Wed, 06 Mar 2019 08:28:09 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '1265'
-      Connection:
-      - close
-      Set-Cookie:
-      - __cfduid=df4982c4907c38430139838c645a712bd1551860889; expires=Thu, 05-Mar-20
-        08:28:09 GMT; path=/; domain=.swiftex.co; HttpOnly; Secure
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, PUT, PATCH, DELETE
-      Access-Control-Allow-Headers:
-      - Origin, X-Requested-With, Content-Type, Accept, Authorization
-      Access-Control-Allow-Credentials:
-      - 'false'
-      Version:
-      - HTTP/1.0
-      Host:
-      - swiftex.co
       Accept-Encoding:
       - gzip
-      Cf-Ipcountry:
-      - MY
-      X-Forwarded-For:
-      - 2001:e68:6e44:0:24ab:5cfb:9e0e:c7cf
-      X-Forwarded-Proto:
-      - https
-      Cf-Visitor:
-      - '{"scheme":"https"}'
-      User-Agent:
-      - http.rb/3.0.0
-      Cf-Connecting-Ip:
-      - 2001:e68:6e44:0:24ab:5cfb:9e0e:c7cf
-      Cdn-Loop:
-      - cloudflare
-      Etag:
-      - W/"c6c8df4059e837ae511e6644a8a86b21"
       Cache-Control:
       - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 7b1b04c2-5bfc-426c-b45e-18bd78a25804
-      X-Runtime:
-      - '0.003077'
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Content-Length:
+      - '380'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 03 Jul 2019 06:33:30 GMT
+      Etag:
+      - W/"5d35efc2833c6fe2f3a54dc211446767"
+      Host:
+      - trade.swiftex.co
       Server:
-      - cloudflare
-      Cf-Ray:
-      - 4b32f45f2be2a320-HKG
+      - envoy
+      Set-Cookie:
+      - _session_id=X4tEZxOLtIGySiW5lqRJzoRdf1opGpTvJL9f4pcd65KgIraDc15EheSiW043nbqK0JZ1WEV0Gb9rEJtwww%3D%3D--q3dm1TnhSZ4lt3rK--Z%2BquWOo25ay%2F2C7g%2FHkO4Q%3D%3D;
+        path=/; HttpOnly
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Vary:
+      - Origin
+      Version:
+      - HTTP/1.1
+      X-Envoy-Expected-Rq-Timeout-Ms:
+      - '15000'
+      X-Envoy-Original-Path:
+      - "/api/v2/peatio/public/markets/myntbtc/depth"
+      X-Envoy-Upstream-Service-Time:
+      - '7'
+      X-Forwarded-For:
+      - 118.100.1.62
+      X-Forwarded-Host:
+      - trade.swiftex.co
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Forwarded-Server:
+      - swiftex
+      X-Real-Ip:
+      - 118.100.1.62
+      X-Request-Id:
+      - cc7ceb60-7fd0-4769-9525-24515e0fdb90
+      X-Runtime:
+      - '0.004726'
+      Connection:
+      - close
     body:
       encoding: ASCII-8BIT
-      string: '{"timestamp":1551860889,"asks":[["2100000.0","10.0"],["210000.0","100.0"],["21000.0","1000.0"],["2100.0","10000.0"],["210.0","100000.0"],["21.0","100000.0"],["2.1","100000.0"],["0.99999999","100000.0"],["0.09999999","10000.0"],["0.00999999","10000.0"],["0.00099999","10000.0"],["0.0004","187312.5"],["0.0001","1000.0"],["0.00009999","10000.0"],["0.00001005","360.0"],["0.00000999","10000.0"],["0.00000302","8400.0"],["0.0000025","25000.0"],["0.000001","1000000.0"],["0.00000099","10000.0"],["0.00000096","26400.0"],["0.0000009","27908.4524"],["0.00000085","50000.0"],["0.0000005","1000000.0"],["0.00000025","1000000.0"],["0.00000024","100000.0"],["0.00000023","17090.5308"],["0.00000022","23890.0729"],["0.00000021","16911.2785"],["0.0000002","27908.4524"],["0.00000019","55000.0"],["0.00000009","10000.0"],["0.00000008","18389.4321"],["0.00000006","2168318.0"],["0.00000005","2224424.0"],["0.00000004","4090276.38314414"],["0.00000003","4528940.454096572"],["0.000000029","1902.104096153"],["0.000000028","2163.80576154"]],"bids":[["0.000000025","52514.048222944"],["0.000000024","10000.0"],["0.000000023","15000.0"],["0.000000022","20000.0"],["0.000000021","35000.0"],["0.00000002","85542.484675487"],["0.000000011","921799.09090909"],["0.00000001","1100000.0"]]}'
+      string: '{"timestamp":1562135611,"asks":[["0.000005","1.0"],["0.0000003","1000000.0"],["0.0000002","1000000.0"],["0.0000001","1000000.0"],["0.00000009","100000.0"],["0.00000008","100000.0"],["0.00000007","100000.0"],["0.00000006","100000.0"],["0.00000005","100000.0"],["0.00000004","100000.0"],["0.00000003","100000.0"],["0.00000002","94303.9999548"]],"bids":[["0.000000001","2857580.0"]]}'
     http_version: 
-  recorded_at: Wed, 06 Mar 2019 08:28:09 GMT
+  recorded_at: Wed, 03 Jul 2019 06:33:31 GMT
 recorded_with: VCR 4.0.0

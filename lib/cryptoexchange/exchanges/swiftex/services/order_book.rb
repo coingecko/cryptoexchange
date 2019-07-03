@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Swiftex::Market::API_URL}/depth.json?market=#{market_pair.base.downcase}-#{market_pair.target.downcase}"
+          "#{Cryptoexchange::Exchanges::Swiftex::Market::API_URL}/markets/#{market_pair.base.downcase}#{market_pair.target.downcase}/depth"
         end
 
         def adapt(output, market_pair)
@@ -32,8 +32,8 @@ module Cryptoexchange::Exchanges
 
         def adapt_orders(orders)
           orders.collect do |order_entry|
-            Cryptoexchange::Models::Order.new(price: order_entry[0],
-                                              amount: order_entry[1])
+            Cryptoexchange::Models::Order.new(price: order_entry[0].to_f,
+                                              amount: order_entry[1].to_f)
           end
         end
       end
