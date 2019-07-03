@@ -325,6 +325,7 @@ Or install it yourself as:
 | Negociecoins      | Y       | Y [x]      | Y       |         | User-Defined|          | negociecoins      |       |
 | Neraex            | Y       | Y          | Y       |         | Y           | Y        | neraex            |       |
 | Newdex            | Y       | N          | N       |         | Y           | Y        | newdex            |       |
+| New Capital       | Y       | Y [x]      | Y       |         | Y           | Y        | new_capital       |       |
 | Nexybit           | Y       | Y          | N       |         | Y           | N        | nexybit           |       |
 | Ninecoin (Halted) | Y       |            |         |         | Y           |          | ninecoin          |       |
 | NLexch            | Y       |            |         |         | Y           | Y        | nlexch            |       |
