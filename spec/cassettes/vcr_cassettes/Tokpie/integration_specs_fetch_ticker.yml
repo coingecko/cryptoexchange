@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tokpie.com/api_ticker/?market=CRAD@ETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - tokpie.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.6 (Ubuntu)
+      Date:
+      - Thu, 04 Jul 2019 04:38:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '361'
+      Connection:
+      - close
+      Vary:
+      - Cookie
+      Access-Control-Allow-Origin:
+      - "*"
+      Set-Cookie:
+      - sessionid=dmcc4t74of1ib9gus644efzpriotml2o; expires=Thu, 18-Jul-2019 04:38:50
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: '{"is_ok": true, "result": {"updated": "04.07.2019 04:38 UTC", "at_first24":
+        "0.00061", "quoteVolume": "1.4592288", "high24hr": "0.00077", "isFrozen":
+        0, "highestBid": "0.000478", "percentChange": "24.59%", "low24hr": "0.000478",
+        "pair": "CRAD@ETH", "last": "0.00076", "avg": "0.000726852361028093", "lowestAsk":
+        "0.00076", "id": 36278, "baseVolume": "2007.60"}}'
+    http_version: 
+  recorded_at: Thu, 04 Jul 2019 04:38:50 GMT
+recorded_with: VCR 4.0.0

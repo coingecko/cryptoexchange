@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tokpie.com/api_order_book/?market=CRAD@ETH&size=10
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - tokpie.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.4.6 (Ubuntu)
+      Date:
+      - Thu, 04 Jul 2019 04:38:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '452'
+      Connection:
+      - close
+      Vary:
+      - Cookie
+      Access-Control-Allow-Origin:
+      - "*"
+      Set-Cookie:
+      - sessionid=pxggucoxgnqq4kkt9hp02edhskmdcrzg; expires=Thu, 18-Jul-2019 04:38:51
+        GMT; httponly; Max-Age=1209600; Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: '{"is_ok": true, "result": {"aob_bid": [[0.000478, 97.4], [0.000471,
+        117.0], [0.000469, 188.0], [0.000467, 92.0], [0.000464, 179.0], [0.000461,
+        78.0], [0.00046, 135.0], [0.000452, 27.0], [0.00045, 171.0], [0.000445, 8.0]],
+        "aob_datetime": "04.07.2019 04:38 UTC", "aob_ask": [[0.00096, 403.0], [0.00094,
+        263.0], [0.00093, 20.0], [0.000923, 143.0], [0.00092, 91.0], [0.000896, 328.0],
+        [0.00088, 98.0], [0.0008, 127.0], [0.00077, 204.0], [0.00076, 64.0]]}}'
+    http_version: 
+  recorded_at: Thu, 04 Jul 2019 04:38:51 GMT
+recorded_with: VCR 4.0.0
