@@ -227,6 +227,7 @@ Or install it yourself as:
 | Ecxx              | Y       | Y[X]       | N       |         | Y           | Y        | ecxx              |       |
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |       |
 | Escodex           | Y       |            |         |         | Y           | Y        | escodex           |       |
+| Eterbase          | Y       |            | Y       |         | Y           | Y        | eterbase          |       |
 | EtherDelta        | Y       |            |         |         | Y           |          | ether_delta       |       |
 | Etherflyer        | Y       | N          | N       |         | Y           | Y        | etherflyer        |       |
 | Ethex             | Y       | N          | N       |         | Y           | N        | ethex             |       |
