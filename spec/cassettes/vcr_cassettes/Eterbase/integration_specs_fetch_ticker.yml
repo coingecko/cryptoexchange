@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.eterbase.exchange/api/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.eterbase.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '8482'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - origin, content-type, accept, authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS, HEAD
+      X-Ratelimit-Remaining-Second:
+      - '19'
+      X-Ratelimit-Limit-Second:
+      - '20'
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Dns-Prefetch-Control:
+      - 'on'
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      Content-Security-Policy:
+      - upgrade-insecure-requests
+      Referrer-Policy:
+      - same-origin
+      Feature-Policy:
+      - accelerometer 'self';ambient-light-sensor 'self';autoplay 'self';camera 'self';encrypted-media
+        'self';fullscreen 'self';geolocation 'self';gyroscope 'self';magnetometer
+        'self';microphone 'self';midi 'self';payment 'self';picture-in-picture 'self';speaker
+        'self';sync-xhr 'self';unsized-media 'self';usb 'self';vertical-scroll 'self';vibrate
+        'self';vr 'self'
+    body:
+      encoding: UTF-8
+      string: '[{"time":1562300934073,"marketId":33,"price":275.0,"change":-5.17,"volume":953.841261,"low":275.0,"high":290.0},{"time":1562300934076,"marketId":66,"price":100.0,"change":0.0,"volume":2121.0,"low":100.0,"high":100.0},{"time":1562300934078,"marketId":4,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934083,"marketId":37,"price":3.0E-5,"change":0.0,"volume":0.03,"low":3.0E-5,"high":3.0E-5},{"time":1562300934085,"marketId":70,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934089,"marketId":8,"price":11500.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934094,"marketId":41,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934098,"marketId":74,"price":0.1,"change":0.0,"volume":10.0,"low":0.1,"high":0.1},{"time":1562300934101,"marketId":12,"price":2.2,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934106,"marketId":45,"price":0.48,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934110,"marketId":78,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934115,"marketId":16,"price":11222.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934120,"marketId":49,"price":1.05,"change":0.0,"volume":10.99,"low":1.05,"high":1.05},{"time":1562300934122,"marketId":82,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934126,"marketId":20,"price":0.0055,"change":-21.43,"volume":2470.9548859999995,"low":0.0055,"high":0.0085},{"time":1562300934129,"marketId":53,"price":0.001,"change":0.0,"volume":10.0,"low":0.001,"high":0.001},{"time":1562300934131,"marketId":24,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934135,"marketId":57,"price":1500.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934139,"marketId":28,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934143,"marketId":61,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934147,"marketId":32,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934151,"marketId":65,"price":0.00121,"change":0.0,"volume":0.0121,"low":0.00121,"high":0.00121},{"time":1562300934154,"marketId":3,"price":0.0255,"change":-3.77,"volume":0.05300034,"low":0.0255,"high":0.0265},{"time":1562300934156,"marketId":36,"price":0.0091,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934161,"marketId":69,"price":0.011,"change":-8.33,"volume":0.22322284,"low":0.011,"high":0.012},{"time":1562300934164,"marketId":7,"price":10250.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934171,"marketId":40,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934175,"marketId":73,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934180,"marketId":11,"price":0.14,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934184,"marketId":44,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934188,"marketId":77,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934192,"marketId":15,"price":0.003008,"change":-89.97,"volume":52.748,"low":0.003008,"high":0.03},{"time":1562300934194,"marketId":48,"price":0.9,"change":0.0,"volume":9.99,"low":0.9,"high":0.9},{"time":1562300934196,"marketId":81,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934201,"marketId":19,"price":7.3E-7,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934205,"marketId":52,"price":0.01,"change":0.0,"volume":10.0,"low":0.01,"high":0.01},{"time":1562300934208,"marketId":23,"price":12.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934212,"marketId":56,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934216,"marketId":27,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934220,"marketId":60,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934224,"marketId":31,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934228,"marketId":64,"price":0.3,"change":-25.0,"volume":25.0,"low":0.3,"high":0.4},{"time":1562300934230,"marketId":2,"price":8.0E-7,"change":0.0,"volume":0.00529696,"low":8.0E-7,"high":8.0E-7},{"time":1562300934232,"marketId":35,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934237,"marketId":68,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934241,"marketId":6,"price":0.0075,"change":0.0,"volume":59.25,"low":0.0075,"high":0.0075},{"time":1562300934244,"marketId":39,"price":1.02,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934248,"marketId":72,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934252,"marketId":10,"price":295.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934256,"marketId":43,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934260,"marketId":76,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934264,"marketId":14,"price":0.02,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934268,"marketId":47,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934272,"marketId":80,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934276,"marketId":18,"price":0.83,"change":-6.65,"volume":17489.11048,"low":0.83,"high":0.88911048},{"time":1562300934279,"marketId":51,"price":28.0,"change":-88.8,"volume":602.3199999999999,"low":22.0,"high":261.0},{"time":1562300934281,"marketId":84,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934285,"marketId":22,"price":100.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934290,"marketId":55,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934293,"marketId":26,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934298,"marketId":59,"price":0.85,"change":0.0,"volume":9.99,"low":0.85,"high":0.85},{"time":1562300934300,"marketId":30,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934304,"marketId":63,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934308,"marketId":1,"price":2.9E-5,"change":-12.12,"volume":12.610303370000002,"low":2.2E-5,"high":3.62E-5},{"time":1562300934311,"marketId":34,"price":50.0,"change":0.0,"volume":15000.0,"low":50.0,"high":50.0},{"time":1562300934314,"marketId":67,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934318,"marketId":5,"price":0.0065,"change":-23.53,"volume":1039.62726965,"low":0.0065,"high":0.0085},{"time":1562300934321,"marketId":38,"price":0.0075,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934325,"marketId":71,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934330,"marketId":9,"price":290.0,"change":-3.33,"volume":6648.6810829999995,"low":290.0,"high":300.0},{"time":1562300934332,"marketId":42,"price":1.02,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934336,"marketId":75,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934340,"marketId":13,"price":1.9E-6,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934344,"marketId":46,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934348,"marketId":79,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934353,"marketId":17,"price":295.0,"change":-1.67,"volume":3005.1330364999994,"low":295.0,"high":300.0},{"time":1562300934356,"marketId":50,"price":7001.0,"change":-23.07,"volume":128.49,"low":7001.0,"high":9100.0},{"time":1562300934358,"marketId":83,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934362,"marketId":21,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934367,"marketId":54,"price":0.12,"change":301.34,"volume":22085.68149599,"low":0.0299,"high":0.12},{"time":1562300934369,"marketId":25,"price":1150.0,"change":21.05,"volume":129750.0,"low":950.0,"high":1150.0},{"time":1562300934372,"marketId":58,"price":3.5,"change":-7.16,"volume":101.633277,"low":3.5,"high":3.77},{"time":1562300934374,"marketId":29,"price":0.0,"change":0.0,"volume":0.0,"low":0.0,"high":0.0},{"time":1562300934378,"marketId":62,"price":100.0,"change":0.0,"volume":52141.0,"low":100.0,"high":100.0}]'
+    http_version: 
+  recorded_at: Fri, 05 Jul 2019 04:28:54 GMT
+recorded_with: VCR 4.0.0
