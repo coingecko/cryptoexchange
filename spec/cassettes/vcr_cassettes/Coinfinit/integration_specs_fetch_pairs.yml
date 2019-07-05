@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinfinit.com/public/coinmarketcap
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinfinit.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Fri, 05 Jul 2019 04:11:42 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"market":{"KRW_BSS":{"symbol":"BSS","name":"Bless","open":false,"price":"13000.00000000","changepercent24h":"0.00","walletstatus":"close","high":"19500.00000000","low":"9800.00000000","close":"13000.00000000","volume24h":"29065.29798152","change24h":0},"KRW_AIC":{"symbol":"AIC","name":"AICrypto","open":false,"price":"6.10000000","changepercent24h":"-4.69","walletstatus":"close","high":"11.00000000","low":"5.60000000","close":"6.40000000","volume24h":"13081360.51339281","change24h":-0.3000000000000007},"KRW_FEMI":{"symbol":"FEMI","name":"Femi
+        Coin","open":false,"price":"23.00000000","changepercent24h":"-4.17","walletstatus":"close","high":"35.00000000","low":"21.00000000","close":"24.00000000","volume24h":"5300547.18356620","change24h":-1},"KRW_SDCU":{"symbol":"SDCU","name":"Shieldcure","open":false,"price":"33500.00000000","changepercent24h":"-16.25","walletstatus":"close","high":"40000.00000000","low":"11500.00000000","close":"40000.00000000","volume24h":"58275.04784337","change24h":-6500},"KRW_DN":{"symbol":"DN","name":"DNcom","open":false,"price":"1610.00000000","changepercent24h":"-17.44","walletstatus":"close","high":"4000.00000000","low":"1400.00000000","close":"1950.00000000","volume24h":"82684.62398628","change24h":-340},"KRW_NPER":{"symbol":"NPER","name":"NPER","open":false,"price":"180.00000000","changepercent24h":"-5.26","walletstatus":"close","high":"300.00000000","low":"150.00000000","close":"190.00000000","volume24h":"1380384.36394160","change24h":-10},"KRW_WAB":{"symbol":"WAB","name":"WAB
+        Network","open":false,"price":"9.10000000","changepercent24h":"-24.17","walletstatus":"close","high":"17.00000000","low":"9.10000000","close":"12.00000000","volume24h":"2300857.70328856","change24h":-2.9000000000000004},"KRW_CPL":{"symbol":"CPL","name":"Copylock
+        Coin","open":false,"price":"330.00000000","changepercent24h":"3.13","walletstatus":"close","high":"720.00000000","low":"270.00000000","close":"320.00000000","volume24h":"2043033.38319611","change24h":10},"KRW_CROBA":{"symbol":"CROBA","name":"Croba","open":false,"price":"1000.00000000","changepercent24h":"-22.48","walletstatus":"close","high":"1750.00000000","low":"820.00000000","close":"1290.00000000","volume24h":"40226.01052906","change24h":-290},"KRW_CTO":{"symbol":"CTO","name":"Cherry
+        Cube","open":false,"price":"31.00000000","changepercent24h":"-6.06","walletstatus":"close","high":"45.00000000","low":"27.00000000","close":"33.00000000","volume24h":"1795268.86384430","change24h":-2},"KRW_IDC":{"symbol":"IDC","name":"Ideas
+        Cash","open":"20.60000000","price":"98.00000000","changepercent24h":"-10.91","walletstatus":"close","high":"150.00000000","low":"93.00000000","close":"110.00000000","volume24h":"218512.86140774","change24h":-12},"KRW_IX":{"symbol":"IX","name":"XBlock","open":"1.81000000","price":"2.20000000","changepercent24h":"0.00","walletstatus":"close","high":"2.70000000","low":"2.00000000","close":"2.20000000","volume24h":"30067236.27924545","change24h":0},"KRW_BWX":{"symbol":"BWX","name":"Blue
+        Whale","open":"2540.00000000","price":"2740.00000000","changepercent24h":"-13.84","walletstatus":"close","high":"3680.00000000","low":"2600.00000000","close":"3180.00000000","volume24h":"50452.25407180","change24h":-440},"KRW_QNC":{"symbol":"QNC","name":"Queen
+        Coin","open":"1.60000000","price":"2.40000000","changepercent24h":"0.00","walletstatus":"close","high":"2.50000000","low":"1.90000000","close":"2.40000000","volume24h":"17142130.64790082","change24h":0},"KRW_PXL":{"symbol":"PXL","name":"PictionNetwork","open":"15.00000000","price":"20.00000000","changepercent24h":"0.00","walletstatus":"open","high":"35.00000000","low":"20.00000000","close":"20.00000000","volume24h":"2758567.59283597","change24h":0},"KRW_GSE":{"symbol":"GSE","name":"GSENetwork","open":"3.18000000","price":"6.00000000","changepercent24h":"-15.49","walletstatus":"close","high":"7.40000000","low":"5.60000000","close":"7.10000000","volume24h":"6657180.82064014","change24h":-1.0999999999999996},"KRW_LFC":{"symbol":"LFC","name":"Linfinity","open":"34.20000000","price":"58.00000000","changepercent24h":"-6.45","walletstatus":"close","high":"74.00000000","low":"57.00000000","close":"62.00000000","volume24h":"583157.16962416","change24h":-4},"KRW_BTC":{"symbol":"BTC","name":"Bitcoin","open":"6600000.00000000","price":"12714000.00000000","changepercent24h":"0.00","walletstatus":"open","high":"14944000.00000000","low":"12702000.00000000","close":"12714000.00000000","volume24h":"0.15814126","change24h":0},"KRW_ETH":{"symbol":"ETH","name":"Ethereum","open":"208000.00000000","price":"323000.00000000","changepercent24h":"3.19","walletstatus":"open","high":"358000.00000000","low":"313000.00000000","close":"313000.00000000","volume24h":"1.25506189","change24h":10000}}}'
+    http_version: 
+  recorded_at: Fri, 05 Jul 2019 04:11:42 GMT
+recorded_with: VCR 4.0.0

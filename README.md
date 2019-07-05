@@ -166,6 +166,7 @@ Or install it yourself as:
 | Coinexmarket (broken)| Y       | Y          | Y       |         | Y           |          | coinexmarket      |       |
 | Coinfalcon        | Y       | Y [x]      | Y       |         | Y           |          | coinfalcon        |       |
 | Coinfield         | Y       | Y [x]      | Y       |         | Y           | Y        | coinfield         |       |
+| Coinfinit         | Y       |            |         |         | Y           | Y        | coinfinit         |       |
 | Coingi            | Y       | Y [x]      | Y       |         | Y           | Y        | coingi            |       |
 | Coinhouse         | Y       |            |         |         | Y           | Y        | coinhouse         |       |
 | Coinhub           | Y       | Y          | Y       |         | Y           | Y        | coinhub           |       |
