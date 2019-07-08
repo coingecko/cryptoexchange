@@ -19,7 +19,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(page_id)
-          "#{Cryptoexchange::Exchanges::BambooRelay::Market::API_URL}/markets?include=base,stats,ticker&page=#{page_id}&perPage=100"
+          "#{Cryptoexchange::Exchanges::BambooRelay::Market::API_URL}/markets?include=base,stats,ticker&page=#{page_id}&perPage=1000"
         end
 
         def adapt_all(output)
