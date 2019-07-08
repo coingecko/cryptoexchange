@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coin.z.com/public/v1/trades?symbol=BTC_JPY
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coin.z.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '8744'
+      Connection:
+      - close
+      Date:
+      - Mon, 08 Jul 2019 08:23:14 GMT
+      X-Amzn-Requestid:
+      - a19728da-a159-11e9-bec4-037802f9dfc6
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=3600; includeSubdomains
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - cfyJ6Gq-tjMFSAw=
+      X-Amzn-Remapped-Server:
+      - nginx
+      X-Content-Type-Options:
+      - nosniff
+      X-Amzn-Remapped-Date:
+      - Mon, 08 Jul 2019 08:23:14 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 5222092a3a10e1d8270e47e821db1ef4.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SIN5-C1
+      X-Amz-Cf-Id:
+      - xRIFASdL1yKkwx2fFjiAYu6WYS8yuqWmEy6hmeqfwEOtRAKWKmlhCA==
+    body:
+      encoding: UTF-8
+      string: '{"status":0,"data":{"list":[{"price":"1241302","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:22:55.729Z"},{"price":"1241302","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:22:55.729Z"},{"price":"1241302","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:22:50.104Z"},{"price":"1241302","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:22:50.104Z"},{"price":"1241302","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:22:16.231Z"},{"price":"1241302","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:22:16.231Z"},{"price":"1242720","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:21:59.144Z"},{"price":"1242720","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:21:59.144Z"},{"price":"1242720","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:21:48.737Z"},{"price":"1242720","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:21:48.737Z"},{"price":"1242720","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:21:32.909Z"},{"price":"1242720","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:21:32.909Z"},{"price":"1242641","side":"BUY","size":"0.08","timestamp":"2019-07-08T08:21:02.831Z"},{"price":"1241396","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:20:30.512Z"},{"price":"1241396","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:20:30.512Z"},{"price":"1241513","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:20:25.170Z"},{"price":"1241429","side":"BUY","size":"0.2","timestamp":"2019-07-08T08:20:11.663Z"},{"price":"1241372","side":"BUY","size":"1.8","timestamp":"2019-07-08T08:20:11.071Z"},{"price":"1241429","side":"BUY","size":"0.03","timestamp":"2019-07-08T08:19:59.350Z"},{"price":"1241371","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:19:59.350Z"},{"price":"1241371","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:19:59.350Z"},{"price":"1241154","side":"SELL","size":"0.03","timestamp":"2019-07-08T08:19:59.350Z"},{"price":"1241154","side":"BUY","size":"0.03","timestamp":"2019-07-08T08:19:59.350Z"},{"price":"1241050","side":"SELL","size":"0.02","timestamp":"2019-07-08T08:19:59.350Z"},{"price":"1241050","side":"BUY","size":"0.02","timestamp":"2019-07-08T08:19:59.350Z"},{"price":"1241000","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:19:59.350Z"},{"price":"1241000","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:19:59.350Z"},{"price":"1241000","side":"SELL","size":"0.04","timestamp":"2019-07-08T08:19:54.515Z"},{"price":"1241000","side":"BUY","size":"0.04","timestamp":"2019-07-08T08:19:54.515Z"},{"price":"1241050","side":"BUY","size":"0.03","timestamp":"2019-07-08T08:19:06.594Z"},{"price":"1241154","side":"BUY","size":"0.05","timestamp":"2019-07-08T08:18:52.588Z"},{"price":"1241248","side":"BUY","size":"0.05","timestamp":"2019-07-08T08:18:22.413Z"},{"price":"1241181","side":"BUY","size":"0.04","timestamp":"2019-07-08T08:18:22.413Z"},{"price":"1241121","side":"BUY","size":"0.65","timestamp":"2019-07-08T08:18:16.795Z"},{"price":"1241054","side":"BUY","size":"0.04","timestamp":"2019-07-08T08:18:16.795Z"},{"price":"1240987","side":"BUY","size":"0.22","timestamp":"2019-07-08T08:18:16.795Z"},{"price":"1241299","side":"BUY","size":"0.16","timestamp":"2019-07-08T08:18:07.011Z"},{"price":"1241287","side":"SELL","size":"0.11","timestamp":"2019-07-08T08:18:07.011Z"},{"price":"1241287","side":"BUY","size":"0.11","timestamp":"2019-07-08T08:18:07.011Z"},{"price":"1241221","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:18:07.011Z"},{"price":"1241221","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:18:07.011Z"},{"price":"1241002","side":"SELL","size":"0.1","timestamp":"2019-07-08T08:18:07.011Z"},{"price":"1241002","side":"BUY","size":"0.1","timestamp":"2019-07-08T08:18:07.011Z"},{"price":"1240828","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:18:07.011Z"},{"price":"1240828","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:18:07.011Z"},{"price":"1240732","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:18:07.011Z"},{"price":"1240732","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:18:07.011Z"},{"price":"1240411","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:18:02.398Z"},{"price":"1240411","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:18:02.398Z"},{"price":"1240585","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:17:59.692Z"},{"price":"1240585","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:17:59.692Z"},{"price":"1240585","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:17:55.481Z"},{"price":"1240585","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:17:55.481Z"},{"price":"1240406","side":"BUY","size":"0.03","timestamp":"2019-07-08T08:17:30.968Z"},{"price":"1240406","side":"SELL","size":"0.03","timestamp":"2019-07-08T08:17:30.968Z"},{"price":"1240500","side":"BUY","size":"0.03","timestamp":"2019-07-08T08:17:30.968Z"},{"price":"1240500","side":"SELL","size":"0.03","timestamp":"2019-07-08T08:17:30.968Z"},{"price":"1240700","side":"BUY","size":"0.1","timestamp":"2019-07-08T08:17:30.968Z"},{"price":"1240700","side":"SELL","size":"0.1","timestamp":"2019-07-08T08:17:30.968Z"},{"price":"1240750","side":"BUY","size":"0.02","timestamp":"2019-07-08T08:17:30.968Z"},{"price":"1240750","side":"SELL","size":"0.02","timestamp":"2019-07-08T08:17:30.968Z"},{"price":"1241000","side":"BUY","size":"0.02","timestamp":"2019-07-08T08:17:30.968Z"},{"price":"1241000","side":"SELL","size":"0.02","timestamp":"2019-07-08T08:17:30.968Z"},{"price":"1241000","side":"BUY","size":"0.04","timestamp":"2019-07-08T08:17:26.488Z"},{"price":"1241000","side":"SELL","size":"0.04","timestamp":"2019-07-08T08:17:26.488Z"},{"price":"1241000","side":"BUY","size":"0.26","timestamp":"2019-07-08T08:17:26.488Z"},{"price":"1241000","side":"SELL","size":"0.26","timestamp":"2019-07-08T08:17:26.488Z"},{"price":"1241000","side":"BUY","size":"0.09","timestamp":"2019-07-08T08:17:19.066Z"},{"price":"1241000","side":"SELL","size":"0.09","timestamp":"2019-07-08T08:17:19.066Z"},{"price":"1241002","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:17:19.066Z"},{"price":"1241002","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:17:19.066Z"},{"price":"1241002","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:17:14.606Z"},{"price":"1241002","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:17:14.606Z"},{"price":"1241002","side":"BUY","size":"0.1","timestamp":"2019-07-08T08:17:07.790Z"},{"price":"1241002","side":"SELL","size":"0.1","timestamp":"2019-07-08T08:17:07.790Z"},{"price":"1241002","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:16:34.429Z"},{"price":"1241002","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:16:34.429Z"},{"price":"1241812","side":"BUY","size":"0.09","timestamp":"2019-07-08T08:16:17.714Z"},{"price":"1241002","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:16:15.555Z"},{"price":"1241002","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:16:15.555Z"},{"price":"1242500","side":"BUY","size":"0.09","timestamp":"2019-07-08T08:15:20.356Z"},{"price":"1242500","side":"SELL","size":"0.09","timestamp":"2019-07-08T08:15:20.356Z"},{"price":"1242720","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:14:12.518Z"},{"price":"1242720","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:14:12.518Z"},{"price":"1242500","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:13:47.527Z"},{"price":"1242500","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:13:47.527Z"},{"price":"1242500","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:13:47.527Z"},{"price":"1242500","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:13:47.527Z"},{"price":"1242718","side":"BUY","size":"0.06","timestamp":"2019-07-08T08:13:47.527Z"},{"price":"1242718","side":"SELL","size":"0.06","timestamp":"2019-07-08T08:13:47.527Z"},{"price":"1242718","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:13:43.007Z"},{"price":"1242718","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:13:43.007Z"},{"price":"1242720","side":"SELL","size":"0.27","timestamp":"2019-07-08T08:13:41.029Z"},{"price":"1242720","side":"BUY","size":"0.27","timestamp":"2019-07-08T08:13:41.029Z"},{"price":"1242720","side":"SELL","size":"0.22","timestamp":"2019-07-08T08:13:41.029Z"},{"price":"1242720","side":"BUY","size":"0.22","timestamp":"2019-07-08T08:13:41.029Z"},{"price":"1242718","side":"SELL","size":"0.01","timestamp":"2019-07-08T08:13:41.029Z"},{"price":"1242718","side":"BUY","size":"0.01","timestamp":"2019-07-08T08:13:41.029Z"},{"price":"1242718","side":"SELL","size":"0.1","timestamp":"2019-07-08T08:13:38.928Z"},{"price":"1242718","side":"BUY","size":"0.1","timestamp":"2019-07-08T08:13:38.928Z"}],"pagination":{"count":100,"currentPage":1}},"responsetime":"2019-07-08T08:23:14Z"}'
+    http_version: 
+  recorded_at: Mon, 08 Jul 2019 08:23:13 GMT
+recorded_with: VCR 4.0.0
