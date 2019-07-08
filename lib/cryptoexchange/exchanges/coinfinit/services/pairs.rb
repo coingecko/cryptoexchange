@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Coinfinit
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Coinfinit::Market::API_URL}/coinmarketcap"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Coinfinit::Market::API_URL}/ticker"
 
         def fetch
           output = super

@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Coinfinit::Market::API_URL}/coinmarketcap"
+          "#{Cryptoexchange::Exchanges::Coinfinit::Market::API_URL}/ticker"
         end
 
         def adapt_all(output)
@@ -34,11 +34,11 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Coinfinit::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['price'])
-          ticker.high      = NumericHelper.to_d(output['high'])
-          ticker.low       = NumericHelper.to_d(output['low'])
+          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.ask       = NumericHelper.to_d(output['ask'])
+          ticker.bid       = NumericHelper.to_d(output['bid'])
           ticker.volume    = NumericHelper.to_d(output['volume24h'])
-          ticker.change    = NumericHelper.to_d(output['changepercent24h'])
+          ticker.change    = NumericHelper.to_d(output['percentChange'])
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
