@@ -44,6 +44,7 @@ Or install it yourself as:
 | Bankera           | Y       | Y [x]      | Y       |         | Y           | Y        | bankera           |       |
 | Bcex (halted)     | Y       | Y          | Y       |         | Y           | Y        | bcex              |       |
 | Bcoin             | Y       |            |         |         | Y           | Y        | bcoin             |       |
+| Beaxy             | Y       | Y [x]      | Y       |         | Y           | Y        | beaxy             |       |
 | Bgogo             | Y       | Y [x]      | Y [limit: 20]     |         | Y           | Y        | bgogo             |       |
 | Bibox             | Y       | Y [x]      | Y [limit: 200]    |         | Y           | Y        | bibox             |       |
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
