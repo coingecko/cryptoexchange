@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.beaxy.com/api/v1/Symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.beaxy.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Kestrel
+      Request-Context:
+      - appId=cid-v1:9811af52-97ae-4705-bcd9-72108944ae09
+      Strict-Transport-Security:
+      - max-age=2592000
+      X-Rate-Limit-Limit:
+      - 1s
+      X-Rate-Limit-Remaining:
+      - '116'
+      X-Rate-Limit-Reset:
+      - '2019-07-09T03:55:58.2127380Z'
+      X-Powered-By:
+      - ASP.NET
+      Set-Cookie:
+      - ARRAffinity=9dd1c11cb8da96f01b5d593dd639e6631bd9aae15f6c21ba2cfeafc7ce7c4659;Path=/;HttpOnly;Domain=api.beaxy.com
+      Date:
+      - Tue, 09 Jul 2019 03:55:56 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '[{"sb":1,"n":"ETH-BTC","faid":1,"taid":2,"ad":"2019-06-15T21:59:38.694","tf":false,"mf":false,"ps":0.000001,"as":0.001,"mt":0.001,"v":0.280706935,"c":-3.80641040093188,"lp":0.0256,"l24l":0.025351,"l24h":0.026722},{"sb":2,"n":"BXY-BTC","faid":1,"taid":3,"ad":"2019-06-15T21:59:38.904","tf":false,"mf":false,"ps":0.00000001,"as":1.0,"mt":0.001,"v":8.19256545999998,"c":-14.5181476846058,"lp":0.00000683,"l24l":0.00000589,"l24h":0.00000799},{"sb":3,"n":"LTC-BTC","faid":1,"taid":4,"ad":"2019-06-15T21:59:38.976","tf":false,"mf":false,"ps":0.000001,"as":0.01,"mt":0.001,"v":0.05312504,"c":-2.51399391142099,"lp":0.009927,"l24l":0.009835,"l24h":0.010253},{"sb":4,"n":"ETC-BTC","faid":1,"taid":5,"ad":"2019-06-15T21:59:39.052","tf":false,"mf":false,"ps":0.000001,"as":0.01,"mt":0.001,"v":0.0,"c":0.0,"lp":0.0,"l24l":0.0,"l24h":0.0},{"sb":5,"n":"XMR-BTC","faid":1,"taid":6,"ad":"2019-06-15T21:59:39.123","tf":false,"mf":false,"ps":0.000001,"as":0.01,"mt":0.001,"v":0.0,"c":0.0,"lp":0.0,"l24l":0.0,"l24h":0.0},{"sb":6,"n":"ZEC-BTC","faid":1,"taid":7,"ad":"2019-06-15T21:59:39.195","tf":false,"mf":false,"ps":0.000001,"as":0.01,"mt":0.001,"v":0.0,"c":0.0,"lp":0.0,"l24l":0.0,"l24h":0.0},{"sb":7,"n":"NEO-BTC","faid":1,"taid":8,"ad":"2019-06-15T21:59:39.267","tf":false,"mf":false,"ps":0.000001,"as":0.01,"mt":0.001,"v":0.0,"c":0.0,"lp":0.0,"l24l":0.0,"l24h":0.0},{"sb":8,"n":"XRP-BTC","faid":1,"taid":9,"ad":"2019-06-15T21:59:39.339","tf":false,"mf":false,"ps":0.00000001,"as":1.0,"mt":0.001,"v":0.0,"c":0.0,"lp":0.0,"l24l":0.0,"l24h":0.0},{"sb":9,"n":"EOS-BTC","faid":1,"taid":10,"ad":"2019-06-15T21:59:39.414","tf":false,"mf":false,"ps":0.00000001,"as":1.0,"mt":0.001,"v":0.036618,"c":0.0,"lp":0.00048824,"l24l":0.00048824,"l24h":0.00048824},{"sb":10,"n":"WAVES-BTC","faid":1,"taid":11,"ad":"2019-06-15T21:59:39.486","tf":false,"mf":false,"ps":0.000001,"as":0.01,"mt":0.001,"v":0.0,"c":0.0,"lp":0.0,"l24l":0.0,"l24h":0.0},{"sb":11,"n":"DASH-BTC","faid":1,"taid":12,"ad":"2019-06-15T21:59:39.559","tf":false,"mf":false,"ps":0.000001,"as":0.001,"mt":0.001,"v":0.0,"c":0.0,"lp":0.0,"l24l":0.0,"l24h":0.0},{"sb":14,"n":"NPXS-BTC","faid":1,"taid":14,"ad":"2019-06-15T21:59:39.777","tf":false,"mf":false,"ps":0.00000001,"as":0.1,"mt":0.001,"v":0.0,"c":0.0,"lp":0.0,"l24l":0.0,"l24h":0.0},{"sb":15,"n":"ICX-BTC","faid":1,"taid":15,"ad":"2019-06-15T21:59:39.849","tf":false,"mf":false,"ps":0.0000001,"as":0.1,"mt":0.001,"v":0.0,"c":0.0,"lp":0.0,"l24l":0.0,"l24h":0.0},{"sb":16,"n":"OMG-BTC","faid":1,"taid":16,"ad":"2019-06-15T21:59:39.921","tf":false,"mf":false,"ps":0.000001,"as":0.01,"mt":0.001,"v":0.0,"c":0.0,"lp":0.0,"l24l":0.0,"l24h":0.0},{"sb":17,"n":"POLY-BTC","faid":1,"taid":17,"ad":"2019-06-15T21:59:39.995","tf":false,"mf":false,"ps":0.00000001,"as":1.0,"mt":0.001,"v":0.0,"c":0.0,"lp":0.0,"l24l":0.0,"l24h":0.0},{"sb":19,"n":"BCH-BTC","faid":1,"taid":19,"ad":"2019-06-15T21:59:40.067","tf":false,"mf":false,"ps":0.000001,"as":0.001,"mt":0.001,"v":0.0,"c":0.0,"lp":0.0,"l24l":0.0,"l24h":0.0},{"sb":20,"n":"DRGN-BTC","faid":1,"taid":20,"ad":"2019-06-15T21:59:40.139","tf":false,"mf":false,"ps":0.00000001,"as":1.0,"mt":0.001,"v":0.0,"c":0.0,"lp":0.0,"l24l":0.0,"l24h":0.0},{"sb":21,"n":"ZRX-BTC","faid":1,"taid":21,"ad":"2019-06-15T21:59:40.211","tf":false,"mf":false,"ps":0.00000001,"as":1.0,"mt":0.001,"v":0.0,"c":0.0,"lp":0.0,"l24l":0.0,"l24h":0.0},{"sb":22,"n":"BAT-BTC","faid":1,"taid":22,"ad":"2019-06-15T21:59:40.284","tf":false,"mf":false,"ps":0.00000001,"as":1.0,"mt":0.001,"v":0.0,"c":0.0,"lp":0.0,"l24l":0.0,"l24h":0.0},{"sb":23,"n":"AION-BTC","faid":1,"taid":23,"ad":"2019-06-15T21:59:40.357","tf":false,"mf":false,"ps":0.0000001,"as":0.01,"mt":0.001,"v":0.0,"c":0.0,"lp":0.0,"l24l":0.0,"l24h":0.0},{"sb":24,"n":"MTL-BTC","faid":1,"taid":24,"ad":"2019-06-20T17:58:10.105","tf":false,"mf":false,"ps":0.00000001,"as":1.0,"mt":0.001,"v":0.0,"c":0.0,"lp":0.0,"l24l":0.0,"l24h":0.0},{"sb":25,"n":"BOXX-BTC","faid":1,"taid":25,"ad":"2019-06-15T21:59:40.501","tf":false,"mf":false,"ps":0.00000001,"as":1.0,"mt":0.001,"v":0.24936754,"c":-31.9587628865979,"lp":0.0000033,"l24l":0.000001,"l24h":0.00000574},{"sb":12,"n":"BTC-USDC","faid":13,"taid":1,"ad":"2019-06-15T21:59:39.631","tf":false,"mf":false,"ps":0.01,"as":0.000001,"mt":10.0,"v":53675.34750524,"c":9.51118516961273,"lp":12710.35,"l24l":11606.44,"l24h":12710.35},{"sb":13,"n":"ETH-USDC","faid":13,"taid":2,"ad":"2019-06-15T21:59:39.703","tf":false,"mf":false,"ps":0.01,"as":0.00001,"mt":10.0,"v":7631.617105,"c":0.931225143078862,"lp":312.15,"l24l":307.04,"l24h":312.15},{"sb":26,"n":"BXY-USDC","faid":13,"taid":3,"ad":"2019-07-04T15:10:05.785","tf":false,"mf":false,"ps":0.0001,"as":1.0,"mt":10.0,"v":29383.5874000001,"c":2.97619047619046,"lp":0.0865,"l24l":0.0701,"l24h":0.0927}]'
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 03:55:57 GMT
+recorded_with: VCR 4.0.0
