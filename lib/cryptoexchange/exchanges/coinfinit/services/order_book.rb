@@ -35,8 +35,8 @@ module Cryptoexchange::Exchanges
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
           order_book.market    = Coinfinit::Market::NAME
-          order_book.asks      = adapt_orders(output['buy'])
-          order_book.bids      = adapt_orders(output['sell'])
+          order_book.asks      = adapt_orders(output['sell'])
+          order_book.bids      = adapt_orders(output['buy'])
           order_book.timestamp = nil
           order_book.payload   = output
           order_book
