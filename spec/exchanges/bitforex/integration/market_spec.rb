@@ -17,7 +17,7 @@ RSpec.describe 'Bitforex integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url market, base: btc_usdt_pair.base, target: btc_usdt_pair.target
-    expect(trade_page_url).to eq 'https://www.bitforex.com/en/trade/spotTrading?commodityCode=BTC&currencyCode=USDT'
+    expect(trade_page_url).to eq 'https://www.bitforex.com/en/spot/btc_usdt'
   end
 
   it 'fetch ticker' do
