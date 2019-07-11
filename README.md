@@ -235,6 +235,7 @@ Or install it yourself as:
 | Ethex             | Y       | N          | N       |         | Y           | N        | ethex             |       |
 | Ethfinex          | Y       | Y [x]      | Y       |         | Y           | Y        | ethfinex          |       |
 | Everbloom         | Y       |            |         |         | Y           |          | everbloom         |       |
+| EXNCE             | Y       | N          | N       |         | Y           | Y        | exnce             |       |
 | ExMarkets         | Y       | Y          | Y       |         | Y           | Y        | exmarkets         |       |
 | Exmo              | Y       | Y [x]      | Y       |         | Y           | Y        | exmo              |       |
 | Exrates           | Y       | Y [x]      | N       |         | Y           | Y        | exrates           |       |
