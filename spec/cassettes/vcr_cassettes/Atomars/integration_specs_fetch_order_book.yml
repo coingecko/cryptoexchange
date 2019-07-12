@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.atomars.com/v1/coingecko/depth?limit_asks=5&limit_bids=5&symbol=BTCUSDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.atomars.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 12 Jul 2019 10:10:01 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=cuidfap7mf3dnt188j046ksvka; path=/; HttpOnly
+      - __cfduid=d4d3cd6efcd97e5a3032ea5b6fd50b8cc1562926199; expires=Sat, 11-Jul-20
+        10:09:59 GMT; path=/; domain=.atomars.com; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4f5239885e5ecc9b-WAW
+    body:
+      encoding: UTF-8
+      string: '{"asks":[{"price":"12036","amount":"0.02888","timestamp":"1562925076.398"},{"price":"12072","amount":"0.03964","timestamp":"1562924209.434"},{"price":"12088","amount":"0.02877","timestamp":"1562926088.53"},{"price":"12092","amount":"0.03866","timestamp":"1562926012.317"},{"price":"12093","amount":"0.03967","timestamp":"1562925280.556"}],"bids":[{"price":"11442","amount":"0.01533","timestamp":"1562926159.404"},{"price":"11428","amount":"0.01708","timestamp":"1562926119.377"},{"price":"11415","amount":"0.01773","timestamp":"1562926094.317"},{"price":"11388","amount":"0.01789","timestamp":"1562926048.347"},{"price":"11369","amount":"0.0182","timestamp":"1562925898.36"}]}'
+    http_version: 
+  recorded_at: Fri, 12 Jul 2019 10:10:01 GMT
+recorded_with: VCR 4.0.0
