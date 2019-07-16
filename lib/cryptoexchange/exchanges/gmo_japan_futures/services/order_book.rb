@@ -34,8 +34,8 @@ module Cryptoexchange::Exchanges
           orders.collect do |order_entry|
             price = order_entry['price']
             amount = order_entry['size']
-            Cryptoexchange::Models::Order.new(price: price,
-                                              amount: amount)
+            Cryptoexchange::Models::Order.new(price: price.to_i,
+                                              amount: amount.to_i)
           end
         end
       end

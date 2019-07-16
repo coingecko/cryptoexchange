@@ -23,7 +23,7 @@ module Cryptoexchange::Exchanges
             tr.type      = trade['direction'].downcase
             tr.price     = trade['price']
             tr.amount    = trade['amount']
-            tr.timestamp = trade['timeStamp'].to_i
+            tr.timestamp = trade['timeStamp'].to_i / 1000
             tr.payload   = trade
             tr
           end
