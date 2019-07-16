@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ftx.com/api/futures
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ftx.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 16 Jul 2019 11:39:38 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dbf331ae18c1bd92b9d1302b4445d97e31563277178; expires=Wed, 15-Jul-20
+        11:39:38 GMT; path=/; domain=.ftx.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=0
+      Cf-Cache-Status:
+      - MISS
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4f73b25e4f8add4a-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":[{"ask":0.7903,"bid":0.7901,"change1h":-0.011507191994996873,"change24h":-0.02780169762578423,"description":"Algorand
+        September 2019 Futures","enabled":true,"expired":false,"expiry":"2019-09-27T03:00:00+00:00","index":0.7888904,"indexAdjustment":0.0,"last":0.8074,"lowerBound":0.7494,"mark":0.7903,"name":"ALGO-0927","perpetual":false,"postOnly":false,"priceIncrement":0.0001,"sizeIncrement":1.0,"underlying":"ALGO","upperBound":0.8289,"volumeUsd24h":53413.514},{"ask":0.7899,"bid":0.7897,"change1h":-0.011017904094152998,"change24h":-0.028174212598425195,"description":"Algorand
+        Perpetual Futures","enabled":true,"expired":false,"expiry":null,"index":0.7888904,"indexAdjustment":0.0,"last":0.795,"lowerBound":0.7494,"mark":0.7899,"name":"ALGO-PERP","perpetual":true,"postOnly":false,"priceIncrement":0.0001,"sizeIncrement":1.0,"underlying":"ALGO","upperBound":0.8286,"volumeUsd24h":49191.35},{"ask":739.0,"bid":738.8,"change1h":0.005168661588683352,"change24h":0.0066748399400626615,"description":"Altcoin
+        Index September 2019 Futures","enabled":true,"expired":false,"expiry":"2019-09-27T03:00:00+00:00","index":731.96417378,"indexAdjustment":0.0,"last":1047.6,"lowerBound":695.1,"mark":739.0,"name":"ALT-0927","perpetual":false,"postOnly":false,"priceIncrement":0.1,"sizeIncrement":0.001,"underlying":"ALT","upperBound":776.5,"volumeUsd24h":0.0},{"ask":731.8,"bid":731.6,"change1h":0.005912278289564142,"change24h":0.004669046965119473,"description":"Altcoin
+        Index Perpetual Futures","enabled":true,"expired":false,"expiry":null,"index":731.96417378,"indexAdjustment":0.0,"last":727.3,"lowerBound":695.4,"mark":731.6,"name":"ALT-PERP","perpetual":true,"postOnly":false,"priceIncrement":0.1,"sizeIncrement":0.001,"underlying":"ALT","upperBound":768.5,"volumeUsd24h":119115.4377},{"ask":310.3,"bid":310.25,"change1h":0.0030714516650501133,"change24h":0.05044862028102252,"description":"Bitcoin
+        Cash September 2019 Futures","enabled":true,"expired":false,"expiry":"2019-09-27T03:00:00+00:00","index":307.226,"indexAdjustment":0.0,"last":310.2,"lowerBound":291.75,"mark":310.25,"name":"BCH-0927","perpetual":false,"postOnly":false,"priceIncrement":0.05,"sizeIncrement":0.01,"underlying":"BCH","upperBound":325.9,"volumeUsd24h":1206956.3015},{"ask":307.55,"bid":307.25,"change1h":0.0003252561392096276,"change24h":0.04555498895121537,"description":"Bitcoin
+        Cash Perpetual Futures","enabled":true,"expired":false,"expiry":null,"index":307.226,"indexAdjustment":0.0,"last":307.8,"lowerBound":291.85,"mark":307.55,"name":"BCH-PERP","perpetual":true,"postOnly":false,"priceIncrement":0.05,"sizeIncrement":0.01,"underlying":"BCH","upperBound":322.95,"volumeUsd24h":28297.6745},{"ask":28.3425,"bid":28.3325,"change1h":0.01169016598250937,"change24h":0.016588952654232426,"description":"BNB
+        September 2019 Futures","enabled":true,"expired":false,"expiry":"2019-09-27T03:00:00+00:00","index":28.38515,"indexAdjustment":0.0,"last":31.0275,"lowerBound":26.94,"mark":28.3425,"name":"BNB-0927","perpetual":false,"postOnly":false,"priceIncrement":0.0025,"sizeIncrement":1.0,"underlying":"BNB","upperBound":29.8,"volumeUsd24h":0.0},{"ask":28.375,"bid":28.365,"change1h":0.012583668005354752,"change24h":0.016211374832064487,"description":"BNB
+        Perpetual Futures","enabled":true,"expired":false,"expiry":null,"index":28.38515,"indexAdjustment":0.0,"last":27.815,"lowerBound":26.96,"mark":28.365,"name":"BNB-PERP","perpetual":true,"postOnly":false,"priceIncrement":0.0025,"sizeIncrement":1.0,"underlying":"BNB","upperBound":29.8025,"volumeUsd24h":131317.3125},{"ask":130.3,"bid":130.28,"change1h":0.002926002926002926,"change24h":0.03975413107687395,"description":"Bitcoin
+        SV September 2019 Futures","enabled":true,"expired":false,"expiry":"2019-09-27T03:00:00+00:00","index":128.71117786,"indexAdjustment":0.0,"last":129.97,"lowerBound":122.2,"mark":130.25,"name":"BSV-0927","perpetual":false,"postOnly":false,"priceIncrement":0.01,"sizeIncrement":0.01,"underlying":"BSV","upperBound":136.8,"volumeUsd24h":1185802.3205},{"ask":128.83,"bid":128.74,"change1h":0.0032720473667809287,"change24h":0.03487624558019929,"description":"Bitcoin
+        SV Perpetual Futures","enabled":true,"expired":false,"expiry":null,"index":128.71117786,"indexAdjustment":0.0,"last":129.39,"lowerBound":122.28,"mark":128.78,"name":"BSV-PERP","perpetual":true,"postOnly":false,"priceIncrement":0.01,"sizeIncrement":0.01,"underlying":"BSV","upperBound":135.27,"volumeUsd24h":102812.0976},{"ask":10891.5,"bid":10889.5,"change1h":0.007983708606206466,"change24h":0.04485703319900211,"description":"Bitcoin
+        September 2019 Futures","enabled":true,"expired":false,"expiry":"2019-09-27T03:00:00+00:00","index":10764.24077841,"indexAdjustment":0.0,"last":10822.25,"lowerBound":10220.0,"mark":10889.5,"name":"BTC-0927","perpetual":false,"postOnly":false,"priceIncrement":0.25,"sizeIncrement":0.001,"underlying":"BTC","upperBound":11438.0,"volumeUsd24h":1590923.89175},{"ask":10775.5,"bid":10773.5,"change1h":0.008399036099478277,"change24h":0.03900298910423296,"description":"Bitcoin
+        Perpetual Futures","enabled":true,"expired":false,"expiry":null,"index":10764.24077841,"indexAdjustment":0.0,"last":10795.75,"lowerBound":10225.5,"mark":10775.5,"name":"BTC-PERP","perpetual":true,"postOnly":false,"priceIncrement":0.25,"sizeIncrement":0.001,"underlying":"BTC","upperBound":11318.75,"volumeUsd24h":56295005.329},{"ask":4.3135,"bid":4.31225,"change1h":-0.002197547999074717,"change24h":-0.011062073708947098,"description":"EOS
+        September 2019 Futures","enabled":true,"expired":false,"expiry":"2019-09-27T03:00:00+00:00","index":4.255375,"indexAdjustment":0.0,"last":4.556,"lowerBound":4.03975,"mark":4.3135,"name":"EOS-0927","perpetual":false,"postOnly":false,"priceIncrement":0.00025,"sizeIncrement":1.0,"underlying":"EOS","upperBound":4.53725,"volumeUsd24h":0.0},{"ask":4.25525,"bid":4.254,"change1h":-0.0007045147654552926,"change24h":-0.01092451624150154,"description":"EOS
+        Perpetual Futures","enabled":true,"expired":false,"expiry":null,"index":4.255375,"indexAdjustment":0.0,"last":4.31275,"lowerBound":4.04275,"mark":4.25525,"name":"EOS-PERP","perpetual":true,"postOnly":false,"priceIncrement":0.00025,"sizeIncrement":1.0,"underlying":"EOS","upperBound":4.47525,"volumeUsd24h":33267.50825},{"ask":228.1,"bid":228.07,"change1h":0.00759784433253821,"change24h":-0.0033643553108751692,"description":"Ethereum
+        September 2019 Futures","enabled":true,"expired":false,"expiry":"2019-09-27T03:00:00+00:00","index":226.0670625,"indexAdjustment":0.0,"last":231.1,"lowerBound":214.67,"mark":228.1,"name":"ETH-0927","perpetual":false,"postOnly":false,"priceIncrement":0.01,"sizeIncrement":0.01,"underlying":"ETH","upperBound":239.7,"volumeUsd24h":468642.4583},{"ask":226.52,"bid":226.49,"change1h":0.0062677809388335705,"change24h":-0.007236207350232436,"description":"Ethereum
+        Perpetual Futures","enabled":true,"expired":false,"expiry":null,"index":226.0670625,"indexAdjustment":0.0,"last":225.98,"lowerBound":214.75,"mark":226.37,"name":"ETH-PERP","perpetual":true,"postOnly":false,"priceIncrement":0.01,"sizeIncrement":0.01,"underlying":"ETH","upperBound":237.85,"volumeUsd24h":796526.7917},{"ask":1.4095,"bid":1.4092,"change1h":0.0002128867442520579,"change24h":0.015929075969439238,"description":"LEO
+        September 2019 Futures","enabled":true,"expired":false,"expiry":"2019-09-27T03:00:00+00:00","index":1.39300214,"indexAdjustment":0.0,"last":1.4437,"lowerBound":1.3226,"mark":1.4095,"name":"LEO-0927","perpetual":false,"postOnly":false,"priceIncrement":0.0001,"sizeIncrement":1.0,"underlying":"LEO","upperBound":1.4784,"volumeUsd24h":90.9531},{"ask":1.4057,"bid":1.4054,"change1h":0.0014961527500712453,"change24h":0.017664518931441397,"description":"LEO
+        Perpetual Futures","enabled":true,"expired":false,"expiry":null,"index":1.39300214,"indexAdjustment":0.0,"last":1.4506,"lowerBound":1.3228,"mark":1.4057,"name":"LEO-PERP","perpetual":true,"postOnly":false,"priceIncrement":0.0001,"sizeIncrement":1.0,"underlying":"LEO","upperBound":1.4744,"volumeUsd24h":63685.1375},{"ask":90.98,"bid":90.96,"change1h":0.010552038209485727,"change24h":0.012238540275923453,"description":"Litecoin
+        September 2019 Futures","enabled":true,"expired":false,"expiry":"2019-09-27T03:00:00+00:00","index":90.26666667,"indexAdjustment":0.0,"last":95.66,"lowerBound":85.72,"mark":90.98,"name":"LTC-0927","perpetual":false,"postOnly":false,"priceIncrement":0.01,"sizeIncrement":0.01,"underlying":"LTC","upperBound":95.56,"volumeUsd24h":0.0},{"ask":90.38,"bid":90.3,"change1h":0.010858614127392812,"change24h":0.01517706576728499,"description":"Litecoin
+        Perpetual Futures","enabled":true,"expired":false,"expiry":null,"index":90.26666667,"indexAdjustment":0.0,"last":88.36,"lowerBound":85.76,"mark":90.3,"name":"LTC-PERP","perpetual":true,"postOnly":false,"priceIncrement":0.01,"sizeIncrement":0.01,"underlying":"LTC","upperBound":94.81,"volumeUsd24h":695446.5747},{"ask":0.0250125,"bid":0.025005,"change1h":0.003510531594784353,"change24h":-0.0030888800318852132,"description":"TRX
+        September 2019 Futures","enabled":true,"expired":false,"expiry":"2019-09-27T03:00:00+00:00","index":0.02478,"indexAdjustment":0.0,"last":0.027655,"lowerBound":0.02353,"mark":0.0250125,"name":"TRX-0927","perpetual":false,"postOnly":false,"priceIncrement":2.5e-06,"sizeIncrement":1.0,"underlying":"TRX","upperBound":0.0262975,"volumeUsd24h":0.0},{"ask":0.024785,"bid":0.024775,"change1h":0.004356194914395705,"change24h":-0.004318569850356533,"description":"TRX
+        Perpetual Futures","enabled":true,"expired":false,"expiry":null,"index":0.02478,"indexAdjustment":0.0,"last":0.0252325,"lowerBound":0.0235425,"mark":0.024785,"name":"TRX-PERP","perpetual":true,"postOnly":false,"priceIncrement":2.5e-06,"sizeIncrement":1.0,"underlying":"TRX","upperBound":0.02605,"volumeUsd24h":27.2511},{"ask":1.0008,"bid":1.0006,"change1h":0.0,"change24h":0.0004999500049995,"description":"Tether
+        September 2019 Futures","enabled":true,"expired":false,"expiry":"2019-09-27T03:00:00+00:00","index":1.00170814,"indexAdjustment":0.0,"last":1.0003,"lowerBound":0.9507,"mark":1.0006,"name":"USDT-0927","perpetual":false,"postOnly":false,"priceIncrement":0.0001,"sizeIncrement":1.0,"underlying":"USDT","upperBound":1.0517,"volumeUsd24h":10003.0},{"ask":1.0012,"bid":1.001,"change1h":0.00019984012789768185,"change24h":0.001200240048009602,"description":"Tether
+        Perpetual Futures","enabled":true,"expired":false,"expiry":null,"index":1.00170814,"indexAdjustment":0.0,"last":1.001,"lowerBound":0.951,"mark":1.001,"name":"USDT-PERP","perpetual":true,"postOnly":false,"priceIncrement":0.0001,"sizeIncrement":1.0,"underlying":"USDT","upperBound":1.0517,"volumeUsd24h":387923.8726},{"ask":0.3172,"bid":0.3169,"change1h":0.00047311149660936763,"change24h":-0.0029076620825147347,"description":"XRP
+        September 2019 Futures","enabled":true,"expired":false,"expiry":"2019-09-27T03:00:00+00:00","index":0.31331333,"indexAdjustment":0.0,"last":0.333375,"lowerBound":0.297475,"mark":0.3172,"name":"XRP-0927","perpetual":false,"postOnly":false,"priceIncrement":2.5e-05,"sizeIncrement":1.0,"underlying":"XRP","upperBound":0.3334,"volumeUsd24h":0.0},{"ask":0.3135,"bid":0.313425,"change1h":0.00039888312724371757,"change24h":-0.003971405877680699,"description":"XRP
+        Perpetual Futures","enabled":true,"expired":false,"expiry":null,"index":0.31331333,"indexAdjustment":0.0,"last":0.3138,"lowerBound":0.29765,"mark":0.3135,"name":"XRP-PERP","perpetual":true,"postOnly":false,"priceIncrement":2.5e-05,"sizeIncrement":1.0,"underlying":"XRP","upperBound":0.329475,"volumeUsd24h":11.6106}],"success":true}
+
+'
+    http_version: 
+  recorded_at: Tue, 16 Jul 2019 11:39:33 GMT
+recorded_with: VCR 4.0.0
