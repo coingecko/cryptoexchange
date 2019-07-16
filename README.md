@@ -95,7 +95,7 @@ Or install it yourself as:
 | Bitmart           | Y       | Y [x]      | Y       |         | Y           |          | bitmart           |       |
 | Bitmax            | Y       | Y [x]      | Y       |         | Y           | Y        | bitmax            |       |
 | Bitmesh           | Y       | N          | N       |         | Y           | Y        | bitmesh           |       |
-| Bitmex            | Y       | Y          | Y       |         | Y           |          | bitmex            |futures|
+| Bitmex            | Y       | Y [x]      | Y       |         | Y           |          | bitmex            |futures|
 | BitOnBay          | Y       |            |         |         | Y           |          | bitonbay          |       |
 | Bitopro           | Y       | Y [x]      | Y       |         | User-Defined| Y        | bitopro           |       |
 | Bitpaction[halted]| Y       | Y          | Y       |         | Y           |          | bitpaction        |       |
@@ -216,7 +216,7 @@ Or install it yourself as:
 | Dcoin             | Y       | N          | N       |         | Y           | Y        | dcoin             |       |
 | Ddex              | Y       | Y          | Y       |         | Y           | Y        | ddex              |       |
 | DEEX              | Y       |            |         |         | Y           |          | deex              |       |
-| Deribit           | Y       | Y          | Y       | Y       | Y           | Y        | deribit           |futures|
+| Deribit           | Y       | Y [x]      | Y       | Y       | Y           | Y        | deribit           |futures|
 | DEx.top           | Y       | Y [x]      | Y       |         | Y           |          | dextop            |       |
 | dex-trade         | Y       |            |         |         | Y           |          | dextrade          |       |
 | Dflow             | Y       |            |         |         | Y           | Y        | dflow             |       |
@@ -260,6 +260,7 @@ Or install it yourself as:
 | Gemini            | Y       | Y [x]      | Y       |         | Y           |          | gemini            |       |
 | GetBTC            | Y       | Y          | Y       |         | User-Defined| Y        | getbtc            |       |
 | GmoJapan          | Y       | Y [x]      | Y       |         | Y           | Y        | gmo_japan         |       |
+| GmoJapanFutures   | Y       | Y [x]      | Y       |         | Y           | Y        | gmo_japan_futures |       |
 | Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |       |
 | Gobaba            | Y       |            |         |         | Y           |          | gobaba            |       |
 | golix (API Failed)| Y       | Y          |         |         | Y           |          | golix             |       |
@@ -300,7 +301,7 @@ Or install it yourself as:
 | Koinx             | Y       | Y [x]      |         |         | Y           | Y        | koinx             |       |
 | Korbit            | Y       | Y [x]      |         |         | User-Defined| Y        | korbit            |       |
 | Kraken            | Y       | Y [x]      | Y [limit: 1000]      |         | Y           | Y        | kraken            |       |
-| Kraken Futures    | Y       |            |         |         | Y           | Y        | kraken_futures    |       |
+| Kraken Futures    | Y       | Y [x]      | Y       |         | Y           | Y        | kraken_futures    |       |
 | Kryptono          | Y       | Y [x]      | Y       |         | User-Defined| Y        | kryptono          |       |
 | Kucoin            | Y       | Y [x]      | N       |         | Y           | Y        | kucoin            |       |
 | Kuna              | Y       | Y [x]      | Y       |         | User-Defined| Y        | kuna              |       |

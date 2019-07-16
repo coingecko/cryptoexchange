@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module GmoJapanFutures
+  module KrakenFutures
     module Services
       class OrderBook < Cryptoexchange::Services::Market
         class << self
@@ -9,33 +9,31 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          output = super(ticker_url(market_pair))
+          output = super(order_book_url(market_pair))
           adapt(output, market_pair)
         end
 
-        def ticker_url(market_pair)
-          "https://api.coin.z.com/public/v1/orderbooks?symbol=#{market_pair.base}_#{market_pair.target}"
+        def order_book_url(market_pair)
+          "#{Cryptoexchange::Exchanges::KrakenFutures::Market::API_URL}/orderbook?symbol=#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)
           order_book = Cryptoexchange::Models::OrderBook.new
-          output = output["data"]
+          output = output['orderBook']
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
-          order_book.market    = GmoJapanFutures::Market::NAME
-          order_book.asks      = adapt_orders output['asks']
-          order_book.bids      = adapt_orders output['bids']
-          order_book.timestamp = nil
+          order_book.market    = KrakenFutures::Market::NAME
+          order_book.asks      = adapt_orders(output["asks"])
+          order_book.bids      = adapt_orders(output["bids"])
           order_book.payload   = output
           order_book
         end
 
         def adapt_orders(orders)
           orders.collect do |order_entry|
-            price = order_entry['price']
-            amount = order_entry['size']
-            Cryptoexchange::Models::Order.new(price: price.to_i,
-                                              amount: amount.to_i)
+            Cryptoexchange::Models::Order.new(price: NumericHelper.to_d(order_entry[0]),
+                                              amount: NumericHelper.to_d(order_entry[1]),
+                                              timestamp: nil)
           end
         end
       end

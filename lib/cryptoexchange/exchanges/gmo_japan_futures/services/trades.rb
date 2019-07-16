@@ -18,8 +18,8 @@ module Cryptoexchange::Exchanges
             tr.base      = market_pair.base
             tr.target    = market_pair.target
             tr.type      = trade['side'].downcase
-            tr.price     = trade['price']
-            tr.amount    = trade['size']
+            tr.price     = trade['price'].to_i
+            tr.amount    = trade['size'].to_i
             tr.timestamp = Time.parse(trade['timestamp']).to_i
             tr.payload   = trade
             tr.market    = GmoJapanFutures::Market::NAME

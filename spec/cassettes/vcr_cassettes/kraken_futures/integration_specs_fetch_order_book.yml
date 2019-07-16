@@ -1,0 +1,84 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.cryptofacilities.com/derivatives/api/v3/orderbook?symbol=PI_ETHUSD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.cryptofacilities.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 16 Jul 2019 04:46:50 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d5bfa5fb78b5f44a55c8e0e7f8ae8cdd41563252409; expires=Wed, 15-Jul-20
+        04:46:49 GMT; path=/; domain=.cryptofacilities.com; HttpOnly; Secure
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With,X-XSRF-TOKEN
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS, PATCH
+      Access-Control-Expose-Headers:
+      - Authorization,Content-Disposition
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4f7155a88e752d03-KUL
+    body:
+      encoding: UTF-8
+      string: '{"result":"success","orderBook":{"bids":[[229.1, 8276], [229.05, 30000],
+        [229, 12757], [228.95, 1000], [228.9, 13334], [228.85, 56000], [228.8, 52948],
+        [228.75, 6714], [228.7, 15206], [228.65, 7601], [228.5, 36105], [228.45, 188804],
+        [228.4, 116640], [228.3, 2000], [228.1, 22778], [227.9, 21550], [227.5, 93809],
+        [227.45, 360444], [227.05, 293136], [226.95, 43500], [226.8, 111359], [226.5,
+        65], [225.65, 166191], [225.1, 5], [224.9, 105], [224.85, 88383], [224.7,
+        1050], [224.5, 220459], [223.4, 1350], [222.55, 88404], [222.25, 100], [222.2,
+        272750], [221, 300], [220.5, 800], [220, 200], [218, 1000], [217, 500], [215,
+        2100], [211, 50000], [210, 100], [208, 610], [207.3, 3000], [205.3, 3000],
+        [205, 7200], [204.85, 100], [203.3, 2160], [203.15, 5000], [203, 1200], [202.5,
+        152259], [200, 50], [196.3, 7980], [190.3, 5000], [185, 300], [180.3, 5000],
+        [163, 163], [126.6, 400], [90.2, 4], [80.1, 10000], [77.1, 10000], [75.1,
+        10000], [72.1, 10000], [70.1, 10000], [67.1, 10000], [65.1, 10000], [62.1,
+        10000], [60.1, 10000], [57.1, 10000], [55.1, 10000], [52.1, 10000], [50.1,
+        10000], [45.1, 10000], [40.1, 10000], [33.1, 10000], [30.1, 10000], [0.35,
+        6000], [0.05, 25000]],"asks":[[229.15, 7400], [229.3, 30000], [229.35, 29234],
+        [229.4, 28158], [229.45, 137225], [229.55, 27750], [229.6, 21172], [229.65,
+        69896], [229.7, 1035], [229.85, 29832], [229.9, 11679], [229.95, 116640],
+        [230.3, 28980], [230.6, 35164], [230.65, 420630], [230.85, 28980], [230.95,
+        146613], [231, 118290], [231.25, 146523], [231.3, 113713], [232.4, 1752],
+        [232.45, 171211], [232.75, 88383], [233.6, 229411], [234.35, 3], [235.05,
+        88404], [235.9, 289566], [237.7, 500], [238.3, 150], [239.75, 50000], [240,
+        50], [245, 50], [246.5, 3200], [250, 150], [255, 50000], [256, 500], [257,
+        2000], [259.85, 500], [260, 500], [261, 7000], [262, 2000], [262.9, 8000],
+        [263, 11000], [266, 500], [267, 2000], [270, 650], [275, 3000], [279, 500],
+        [282, 2000], [285, 101000], [289, 101000], [290, 2000], [292, 100000], [294,
+        400000], [297, 2000], [320, 50250], [329, 500], [331.5, 50], [350, 11000],
+        [361.55, 10], [374, 10009], [9999999.95, 4500000]]},"serverTime":"2019-07-16T04:46:49.055Z"}'
+    http_version: 
+  recorded_at: Tue, 16 Jul 2019 04:46:49 GMT
+recorded_with: VCR 4.0.0
