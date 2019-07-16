@@ -20,6 +20,7 @@ module Cryptoexchange::Exchanges
               Cryptoexchange::Models::MarketPair.new(
                 base: base,
                 target: target,
+                inst_id: output["symbol"],
                 market: KrakenFutures::Market::NAME,
                 contract_interval: output["tag"],
               )
