@@ -40,7 +40,7 @@ Or install it yourself as:
 | Aphelion          | Y       |            |         |         | Y           | Y        | aphelion          |       |
 | AXNET (halted)    | Y       | Y          | Y       |         | Y           | Y        | axnet             |       |
 | B2BX              | Y       | N          |         |         | Y           |          | b2bx              |       |
-| Bamboo Relay      | Y       | Y [x]      |[No Price]|        | Y           | Y        | bamboo_relay      |       |
+| Bamboo Relay      | Y       | Y [x]      |         |         | Y           | Y        | bamboo_relay      |       |
 | Bancor            | Y       | N          | N       |         | Y           |          | bancor            |       |
 | Bankera           | Y       | Y [x]      | Y       |         | Y           | Y        | bankera           |       |
 | Bcex (halted)     | Y       | Y          | Y       |         | Y           | Y        | bcex              |       |
