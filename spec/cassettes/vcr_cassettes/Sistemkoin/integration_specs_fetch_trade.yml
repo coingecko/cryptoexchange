@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sistemkoin.com/tradehistory?limit=50&symbol=BTCTRY
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.sistemkoin.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 17 Jul 2019 07:03:07 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '5517'
+      Connection:
+      - close
+      Cache-Control:
+      - private, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With,X-CSRF-Token,X-XSRF-TOKEN,access-token
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"price":"55569.00000000","volume":"1.86553292","funds":"103665.79883148","side":"bid","timestamp":1563346974},{"price":"55537.00000000","volume":"9.28480932","funds":"515650.45520484","side":"bid","timestamp":1563346969},{"price":"55537.00000000","volume":"0.00257160","funds":"142.81894920","side":"bid","timestamp":1563346908},{"price":"55157.00000000","volume":"1.75000000","funds":"96524.75000000","side":"ask","timestamp":1563346858},{"price":"55157.00000000","volume":"4.15635456","funds":"229252.04846592","side":"ask","timestamp":1563346851},{"price":"55537.00000000","volume":"8.45654565","funds":"469651.17576405","side":"bid","timestamp":1563346846},{"price":"55569.00000000","volume":"2.06354354","funds":"114669.05097426","side":"bid","timestamp":1563346795},{"price":"55189.00000000","volume":"0.08295548","funds":"4578.22998572","side":"ask","timestamp":1563346789},{"price":"55569.00000000","volume":"3.53546354","funds":"196462.17345426","side":"bid","timestamp":1563346736},{"price":"55205.00000000","volume":"0.02716821","funds":"1499.82103305","side":"ask","timestamp":1563346716},{"price":"55215.00000000","volume":"0.06075941","funds":"3354.83082315","side":"ask","timestamp":1563346715},{"price":"55323.00000000","volume":"0.10455452","funds":"5784.26970996","side":"ask","timestamp":1563346634},{"price":"55374.00000000","volume":"5.71354534","funds":"316381.85965716","side":"ask","timestamp":1563346631},{"price":"55397.00000000","volume":"0.13364315","funds":"7403.42958055","side":"ask","timestamp":1563346631},{"price":"55397.00000000","volume":"0.04425059","funds":"2451.34993423","side":"ask","timestamp":1563346594},{"price":"55406.00000000","volume":"0.08877288","funds":"4918.55018928","side":"ask","timestamp":1563346584},{"price":"55699.00000000","volume":"0.04400886","funds":"2451.24949314","side":"bid","timestamp":1563346577},{"price":"55699.00000000","volume":"0.04401605","funds":"2451.64996895","side":"bid","timestamp":1563346571},{"price":"55406.00000000","volume":"0.02247861","funds":"1245.44986566","side":"ask","timestamp":1563346558},{"price":"55406.00000000","volume":"0.02247861","funds":"1245.44986566","side":"ask","timestamp":1563346489},{"price":"55406.00000000","volume":"0.04412879","funds":"2444.99973874","side":"ask","timestamp":1563346483},{"price":"55374.00000000","volume":"1.50000000","funds":"83061.00000000","side":"ask","timestamp":1563346454},{"price":"55768.00000000","volume":"0.13691077","funds":"7635.23982136","side":"bid","timestamp":1563346422},{"price":"55699.00000000","volume":"0.06495216","funds":"3617.77035984","side":"bid","timestamp":1563346416},{"price":"55677.00000000","volume":"0.13544767","funds":"7541.31992259","side":"bid","timestamp":1563346416},{"price":"55663.00000000","volume":"2.13051295","funds":"118590.74233585","side":"bid","timestamp":1563346415},{"price":"55215.00000000","volume":"0.04440097","funds":"2451.59955855","side":"ask","timestamp":1563346366},{"price":"55663.00000000","volume":"2.00000000","funds":"111326.00000000","side":"bid","timestamp":1563346362},{"price":"55663.00000000","volume":"3.46545654","funds":"192897.70738602","side":"bid","timestamp":1563346355},{"price":"55215.00000000","volume":"0.02255637","funds":"1245.44996955","side":"ask","timestamp":1563346265},{"price":"55663.00000000","volume":"0.10779153","funds":"5999.99993439","side":"bid","timestamp":1563346220},{"price":"55215.00000000","volume":"0.00636511","funds":"351.44954865","side":"ask","timestamp":1563346197},{"price":"55215.00000000","volume":"0.04439826","funds":"2451.44992590","side":"ask","timestamp":1563346191},{"price":"55663.00000000","volume":"10.00000000","funds":"556630.00000000","side":"bid","timestamp":1563346147},{"price":"55699.00000000","volume":"0.01409361","funds":"784.99998339","side":"bid","timestamp":1563346095},{"price":"55699.00000000","volume":"0.06196807","funds":"3451.55953093","side":"bid","timestamp":1563346089},{"price":"55205.00000000","volume":"0.06252060","funds":"3451.44972300","side":"ask","timestamp":1563346086},{"price":"55205.00000000","volume":"0.04440539","funds":"2451.39955495","side":"ask","timestamp":1563345983},{"price":"55308.00000000","volume":"0.18451816","funds":"10205.33039328","side":"bid","timestamp":1563345979},{"price":"55308.00000000","volume":"3.31548184","funds":"183372.66960672","side":"ask","timestamp":1563345975},{"price":"55721.00000000","volume":"0.06194881","funds":"3451.84964201","side":"bid","timestamp":1563345876},{"price":"55708.00000000","volume":"7.45654565","funds":"415389.24507020","side":"bid","timestamp":1563345872},{"price":"55308.00000000","volume":"1.68450000","funds":"93166.32600000","side":"ask","timestamp":1563345801},{"price":"55308.00000000","volume":"2.45656456","funds":"135867.67268448","side":"ask","timestamp":1563345796},{"price":"55607.00000000","volume":"0.95354640","funds":"53023.85466480","side":"bid","timestamp":1563345781},{"price":"55607.00000000","volume":"4.00000000","funds":"222428.00000000","side":"bid","timestamp":1563345734},{"price":"55607.00000000","volume":"3.50000000","funds":"194624.50000000","side":"bid","timestamp":1563345728},{"price":"55607.00000000","volume":"10.00000000","funds":"556070.00000000","side":"bid","timestamp":1563345722},{"price":"55205.00000000","volume":"0.04440829","funds":"2451.55964945","side":"ask","timestamp":1563345699},{"price":"55231.00000000","volume":"0.07045555","funds":"3891.33048205","side":"ask","timestamp":1563345686}],"status":"success"}'
+    http_version: 
+  recorded_at: Wed, 17 Jul 2019 07:03:04 GMT
+recorded_with: VCR 4.0.0
