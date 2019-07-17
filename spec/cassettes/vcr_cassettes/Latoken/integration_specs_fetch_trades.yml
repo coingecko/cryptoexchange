@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.latoken.com/api/v1/MarketData/trades/LAETH/100
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.latoken.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 17 Jul 2019 08:14:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d9c86497965d6ca4e2aa8c828241a56031563351264; expires=Thu, 16-Jul-20
+        08:14:24 GMT; path=/; domain=.latoken.com; HttpOnly; Secure
+      X-Rate-Limit-Limit:
+      - 1s
+      X-Rate-Limit-Remaining:
+      - '2'
+      X-Rate-Limit-Reset:
+      - '2019-07-17T08:14:25.5630280Z'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4f7ac31abd382ce5-KUL
+    body:
+      encoding: UTF-8
+      string: '{"pairId":29,"symbol":"LAETH","tradeCount":100,"trades":[{"side":"buy","price":0.0004407,"amount":50.0,"timestamp":1563328167},{"side":"buy","price":0.000441,"amount":14.7,"timestamp":1563304475},{"side":"buy","price":0.00044,"amount":98.7,"timestamp":1563304475},{"side":"buy","price":0.00044,"amount":120.0,"timestamp":1563302778},{"side":"buy","price":0.00042129,"amount":10.0,"timestamp":1563302474},{"side":"buy","price":0.00042129,"amount":450.0,"timestamp":1563299224},{"side":"buy","price":0.00044,"amount":2500.0,"timestamp":1563297147},{"side":"buy","price":0.00044,"amount":2091.9,"timestamp":1563287037},{"side":"buy","price":0.00043995,"amount":100.0,"timestamp":1563287037},{"side":"buy","price":0.00043995,"amount":100.0,"timestamp":1563287037},{"side":"buy","price":0.00043995,"amount":100.0,"timestamp":1563287037},{"side":"buy","price":0.00043995,"amount":88.1,"timestamp":1563287037},{"side":"buy","price":0.00043994,"amount":20.0,"timestamp":1563287037},{"side":"buy","price":0.00044,"amount":189.4,"timestamp":1563272571},{"side":"buy","price":0.00044,"amount":24.0,"timestamp":1563272571},{"side":"buy","price":0.000435,"amount":38.0,"timestamp":1563272571},{"side":"buy","price":0.000435,"amount":25.8,"timestamp":1563272571},{"side":"buy","price":0.00043496,"amount":15.0,"timestamp":1563272571},{"side":"buy","price":0.00042459,"amount":29.2,"timestamp":1563272571},{"side":"buy","price":0.00042459,"amount":941.1,"timestamp":1563263186},{"side":"buy","price":0.00042459,"amount":905.8,"timestamp":1563263093},{"side":"buy","price":0.00042458,"amount":270.6,"timestamp":1563263093},{"side":"buy","price":0.00042459,"amount":123.9,"timestamp":1563255295},{"side":"buy","price":0.00042335,"amount":64.0,"timestamp":1563255295},{"side":"buy","price":0.00042333,"amount":25.0,"timestamp":1563255295},{"side":"buy","price":0.00042332,"amount":13.8,"timestamp":1563255295},{"side":"buy","price":0.00041899,"amount":9.0,"timestamp":1563255295},{"side":"buy","price":0.000401,"amount":300.0,"timestamp":1563253289},{"side":"buy","price":0.00039989,"amount":2813.0,"timestamp":1563253289},{"side":"buy","price":0.00040102,"amount":270.6,"timestamp":1563253213},{"side":"buy","price":0.00041899,"amount":156.0,"timestamp":1563216633},{"side":"buy","price":0.00041899,"amount":24.0,"timestamp":1563208207},{"side":"buy","price":0.00041899,"amount":563.0,"timestamp":1563158313},{"side":"buy","price":0.00041888,"amount":5000.0,"timestamp":1563158313},{"side":"buy","price":0.00041888,"amount":258.0,"timestamp":1563158313},{"side":"buy","price":0.00041887,"amount":239.6,"timestamp":1563158313},{"side":"buy","price":0.00039989,"amount":13564.4,"timestamp":1563150715},{"side":"buy","price":0.0003999,"amount":13.8,"timestamp":1563150666},{"side":"buy","price":0.00041887,"amount":20.0,"timestamp":1563148081},{"side":"buy","price":0.00041887,"amount":10.0,"timestamp":1563121334},{"side":"buy","price":0.00039989,"amount":4150.0,"timestamp":1563112471},{"side":"buy","price":0.00039989,"amount":1204.0,"timestamp":1563104011},{"side":"buy","price":0.00039989,"amount":262.6,"timestamp":1563084111},{"side":"buy","price":0.00041899,"amount":339.9,"timestamp":1563084007},{"side":"buy","price":0.00040999,"amount":18.0,"timestamp":1563084007},{"side":"buy","price":0.00039989,"amount":13977.0,"timestamp":1563076318},{"side":"buy","price":0.0003999,"amount":23.0,"timestamp":1563076302},{"side":"buy","price":0.00039989,"amount":37.0,"timestamp":1563039114},{"side":"buy","price":0.00039989,"amount":814.0,"timestamp":1563033602},{"side":"buy","price":0.00039989,"amount":186.0,"timestamp":1563033577},{"side":"buy","price":0.00039989,"amount":710.0,"timestamp":1563006184},{"side":"buy","price":0.00041899,"amount":75.3,"timestamp":1562962441},{"side":"buy","price":0.00039989,"amount":46.7,"timestamp":1562918230},{"side":"buy","price":0.00039989,"amount":10.0,"timestamp":1562915809},{"side":"buy","price":0.00039989,"amount":89.6,"timestamp":1562912744},{"side":"buy","price":0.00039989,"amount":114.4,"timestamp":1562909716},{"side":"buy","price":0.00040,"amount":27.0,"timestamp":1562909694},{"side":"buy","price":0.00039989,"amount":2693.0,"timestamp":1562897303},{"side":"buy","price":0.00039989,"amount":21.1,"timestamp":1562884774},{"side":"buy","price":0.00042395,"amount":26.0,"timestamp":1562877269},{"side":"buy","price":0.00039989,"amount":26.0,"timestamp":1562876822},{"side":"buy","price":0.00040989,"amount":52.0,"timestamp":1562854528},{"side":"buy","price":0.00040985,"amount":834.0,"timestamp":1562854528},{"side":"buy","price":0.0004027,"amount":20.7,"timestamp":1562854501},{"side":"buy","price":0.00039989,"amount":3571.4,"timestamp":1562853911},{"side":"buy","price":0.00039998,"amount":165.0,"timestamp":1562853016},{"side":"buy","price":0.00039989,"amount":1952.0,"timestamp":1562850691},{"side":"buy","price":0.00039899,"amount":20.0,"timestamp":1562849414},{"side":"buy","price":0.00039975,"amount":10.0,"timestamp":1562846561},{"side":"buy","price":0.00039975,"amount":76.0,"timestamp":1562846561},{"side":"buy","price":0.000399,"amount":29.3,"timestamp":1562846553},{"side":"buy","price":0.00039899,"amount":10.0,"timestamp":1562845647},{"side":"buy","price":0.0003607,"amount":321.0,"timestamp":1562845370},{"side":"buy","price":0.0003607,"amount":13.2,"timestamp":1562825332},{"side":"buy","price":0.00036002,"amount":2040.0,"timestamp":1562802659},{"side":"buy","price":0.00039998,"amount":124.8,"timestamp":1562786820},{"side":"buy","price":0.00039998,"amount":124.8,"timestamp":1562784983},{"side":"buy","price":0.00039998,"amount":124.8,"timestamp":1562784877},{"side":"buy","price":0.00039998,"amount":124.8,"timestamp":1562784872},{"side":"buy","price":0.00039998,"amount":1248.8,"timestamp":1562784862},{"side":"buy","price":0.00036,"amount":2692.8,"timestamp":1562781718},{"side":"buy","price":0.00036,"amount":30.0,"timestamp":1562781718},{"side":"buy","price":0.00036003,"amount":24.0,"timestamp":1562781713},{"side":"buy","price":0.00036004,"amount":23.0,"timestamp":1562781710},{"side":"buy","price":0.00036123,"amount":1861.3,"timestamp":1562781704},{"side":"buy","price":0.00036123,"amount":100.0,"timestamp":1562781704},{"side":"buy","price":0.0003613,"amount":53.0,"timestamp":1562781701},{"side":"buy","price":0.00036132,"amount":470.0,"timestamp":1562781697},{"side":"buy","price":0.00036133,"amount":3730.0,"timestamp":1562781692},{"side":"buy","price":0.00036133,"amount":2173.0,"timestamp":1562781692},{"side":"buy","price":0.00036134,"amount":2800.0,"timestamp":1562781689},{"side":"buy","price":0.0003705,"amount":24.0,"timestamp":1562781684},{"side":"buy","price":0.0003705,"amount":27.3,"timestamp":1562781684},{"side":"buy","price":0.0003705,"amount":10.0,"timestamp":1562780190},{"side":"buy","price":0.0004098,"amount":26.0,"timestamp":1562762175},{"side":"buy","price":0.00040989,"amount":2.4,"timestamp":1562743486},{"side":"buy","price":0.00040988,"amount":50.0,"timestamp":1562743486},{"side":"buy","price":0.00037051,"amount":76.8,"timestamp":1562743486},{"side":"buy","price":0.00037051,"amount":134.8,"timestamp":1562743246},{"side":"buy","price":0.00037051,"amount":356.4,"timestamp":1562742980}]}'
+    http_version: 
+  recorded_at: Wed, 17 Jul 2019 08:14:21 GMT
+recorded_with: VCR 4.0.0
