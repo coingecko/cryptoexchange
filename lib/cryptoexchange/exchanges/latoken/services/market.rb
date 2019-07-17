@@ -4,29 +4,17 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            false
+            true
           end
         end
 
-        def fetch
-          output = super(ticker_url)
-          adapt_all(output)
+        def fetch(market_pair)
+          output = super(ticker_url(market_pair))
+          adapt(output, market_pair)
         end
 
-        def ticker_url
-          "#{Cryptoexchange::Exchanges::Latoken::Market::API_URL}/v1/coinmarketcap/ticker"
-        end
-
-        def adapt_all(output)
-          output.map do |ticker|
-            base, target = ticker["ticker"].split("/")
-            market_pair  = Cryptoexchange::Models::MarketPair.new(
-              base:   base,
-              target: target,
-              market: Latoken::Market::NAME
-            )
-            adapt(ticker, market_pair)
-          end.compact
+        def ticker_url(market_pair)
+          "#{Cryptoexchange::Exchanges::Latoken::Market::API_URL}/MarketData/ticker/#{market_pair.base}#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
@@ -34,8 +22,10 @@ module Cryptoexchange::Exchanges
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Latoken::Market::NAME
-          ticker.last = NumericHelper.to_d(output['lastPrice'])
-          ticker.volume = NumericHelper.to_d(output['volume24h']) / ticker.last
+          ticker.last = NumericHelper.to_d(output['close'])
+          ticker.high = NumericHelper.to_d(output['high'])
+          ticker.low = NumericHelper.to_d(output['low'])
+          ticker.volume = NumericHelper.to_d(output['volume']) / ticker.last
           ticker.timestamp = nil
           ticker.payload = output
           ticker

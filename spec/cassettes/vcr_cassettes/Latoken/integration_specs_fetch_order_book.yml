@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.latoken.com/api/v1/MarketData/orderBook/LAETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.latoken.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 17 Jul 2019 08:13:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d9ff9e704670c36412b0bd8d5987a71571563351226; expires=Thu, 16-Jul-20
+        08:13:46 GMT; path=/; domain=.latoken.com; HttpOnly; Secure
+      X-Rate-Limit-Limit:
+      - 1s
+      X-Rate-Limit-Remaining:
+      - '2'
+      X-Rate-Limit-Reset:
+      - '2019-07-17T08:13:48.0812463Z'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4f7ac2308ebc2ccd-KUL
+    body:
+      encoding: UTF-8
+      string: '{"pairId":29,"symbol":"LAETH","spread":4.2545,"asks":[{"price":0.00044,"amount":150.0},{"price":0.0004407,"amount":145.0},{"price":0.000441,"amount":760.3},{"price":0.00044185,"amount":2143.0},{"price":0.00044255,"amount":500.0},{"price":0.00044689,"amount":20.0},{"price":0.00045079,"amount":770.0},{"price":0.0004508,"amount":5200.0},{"price":0.00045118,"amount":195.0},{"price":0.00045399,"amount":21.0}],"bids":[{"price":0.00042128,"amount":86.0},{"price":0.00040102,"amount":13990.0},{"price":0.00040101,"amount":59.6},{"price":0.000401,"amount":363.0},{"price":0.00039994,"amount":26.0},{"price":0.00039993,"amount":3338.0},{"price":0.00039991,"amount":1300.0},{"price":0.00039989,"amount":149014.8},{"price":0.00036501,"amount":51.0},{"price":0.00036072,"amount":210.0}]}'
+    http_version: 
+  recorded_at: Wed, 17 Jul 2019 08:13:44 GMT
+recorded_with: VCR 4.0.0
