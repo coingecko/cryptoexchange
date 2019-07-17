@@ -12,11 +12,11 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           market_pairs = []
-          output['data'].each do |based, pair|
+          output.each do |target, pair|
             pair.each do |pair|
               market_pairs << Cryptoexchange::Models::MarketPair.new(
-                                base: pair['short_code'],
-                                target: pair['currency'],
+                                base: pair[0],
+                                target: target,
                                 market: Sistemkoin::Market::NAME)
             end
           end
