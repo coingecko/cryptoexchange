@@ -251,6 +251,7 @@ Or install it yourself as:
 | Floatsv           | Y       | Y [x]      |         |         | Y           | Y        | floatsv           |       |
 | Forkdelta         | Y       | N          | N       |         | Y           | Y        | forkdelta         |       |
 | Freiexchange      | Y       | Y          |         |         | User-Defined| Y        | freiexchange      |       |
+| FTX               | Y       | Y [x]      |         |         | Y           | Y        | ftx               |futures|
 | FinexBox          | Y       | Y [x]      |         |         | Y           | Y        | finexbox          |       |
 | Fubt              | Y       |            |         |         | Y           | Y        | fubt              |       |
 | Gate              | Y       | Y [x]      | Y       |         | Y           | Y        | gate              |       |

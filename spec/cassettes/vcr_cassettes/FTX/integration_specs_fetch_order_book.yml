@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ftx.com/api/markets/BTC-PERP/orderbook?depth=100
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ftx.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 16 Jul 2019 11:40:25 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7b78365e85a77d5694391ac77e554fe41563277225; expires=Wed, 15-Jul-20
+        11:40:25 GMT; path=/; domain=.ftx.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=0
+      Cf-Cache-Status:
+      - MISS
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4f73b3847b7dc0ff-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":{"asks":[[10763.75,17.875],[10770.75,23.67],[10773.0,16.646],[10790.0,43.646],[10790.75,21.068],[10807.5,36.86],[10811.5,56.871],[10812.25,58.839],[10822.5,55.251],[10840.75,68.581],[10845.0,43.666],[10855.25,70.97],[10855.5,53.067],[10863.5,57.24],[10864.0,64.715],[10874.75,47.713],[10900.0,0.005],[10909.25,3.979],[10920.0,4.112],[10940.25,47.102],[10940.75,3.967],[10950.0,0.005],[10955.0,76.345],[10966.5,3.784],[10993.75,79.884],[11000.0,0.005],[11000.25,82.729],[11054.0,83.38],[11069.5,60.717],[11114.25,61.073],[11115.0,0.004],[11117.75,84.865],[11168.25,0.008],[11170.0,0.004],[11176.0,0.073],[11450.0,0.004],[11500.0,0.5],[11999.5,0.7],[13000.0,1.0]],"bids":[[10756.25,101.168],[10748.5,18.441],[10748.0,24.962],[10739.0,20.88],[10732.25,27.535],[10731.75,24.634],[10718.5,34.897],[10716.25,17.606],[10713.75,30.968],[10713.5,32.586],[10701.5,44.053],[10686.5,37.838],[10664.25,32.531],[10658.0,23.636],[10654.5,25.527],[10640.5,27.588],[10620.75,49.603],[10614.0,35.474],[10604.25,36.478],[10592.5,43.634],[10589.25,3.677],[10578.75,4.174],[10577.5,52.209],[10576.25,80.711],[10556.75,3.821],[10534.0,4.304],[10418.5,86.287],[10413.5,92.38],[10406.0,63.947],[10050.0,0.7],[9687.0,0.741]]},"success":true}
+
+'
+    http_version: 
+  recorded_at: Tue, 16 Jul 2019 11:40:20 GMT
+recorded_with: VCR 4.0.0

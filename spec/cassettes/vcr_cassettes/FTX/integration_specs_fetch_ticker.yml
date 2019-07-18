@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ftx.com/api/futures/BTC-PERP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ftx.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 16 Jul 2019 11:39:39 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d84eae7a27f674b7ac95224bcf23e963f1563277178; expires=Wed, 15-Jul-20
+        11:39:38 GMT; path=/; domain=.ftx.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=0
+      Cf-Cache-Status:
+      - MISS
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4f73b25f9c52c0ff-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":{"ask":10775.5,"bid":10773.5,"change1h":0.006797318446193735,"change24h":0.03900298910423296,"description":"Bitcoin
+        Perpetual Futures","enabled":true,"expired":false,"expiry":null,"index":10764.0101334,"indexAdjustment":0.0,"last":10795.75,"lowerBound":10225.25,"mark":10775.5,"name":"BTC-PERP","perpetual":true,"postOnly":false,"priceIncrement":0.25,"sizeIncrement":0.001,"underlying":"BTC","upperBound":11318.5,"volumeUsd24h":56295005.329},"success":true}
+
+'
+    http_version: 
+  recorded_at: Tue, 16 Jul 2019 11:39:33 GMT
+recorded_with: VCR 4.0.0
