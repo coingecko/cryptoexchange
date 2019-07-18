@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api2.tokenize.exchange/public/v1/market/get-buy-orders?market=BTC-ETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api2.tokenize.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 Jul 2019 08:14:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSALB=7PiC2ydhZoaUdd7VOAfbcGU7RO3LlsOTRD7/q0bcByxIlnhDeuwMWziFK0WMqWdZDZthKixPAz6lfpSt48eawddpxOcFJbG68xNUPFT+a0T4WutaUnmfCqvxoX4t;
+        Expires=Thu, 25 Jul 2019 08:14:39 GMT; Path=/
+      - __cfduid=deb0caad783bac7a43f58d4ceaf15da731563437679; expires=Fri, 17-Jul-20
+        08:14:39 GMT; path=/; domain=.tokenize.exchange; HttpOnly; Secure
+      Etag:
+      - W/"1ded-/6XpKL6VpjF1h4kjbdQq969uRUA"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4f8300d69d40dd5a-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","message":"","data":{"market":"BTC-ETH","orders":[{"quantity":8.85733251,"rate":0.02197444,"total":0.19463492,"sum":0.19463492},{"quantity":15.99999999,"rate":0.02197443,"total":0.35159087,"sum":0.5462258},{"quantity":13.35993796,"rate":0.0219744,"total":0.29357662,"sum":0.83980242},{"quantity":52,"rate":0.02195177,"total":1.14149204,"sum":1.98129446},{"quantity":13.58484308,"rate":0.02195176,"total":0.29821121,"sum":2.27950567},{"quantity":5,"rate":0.02194973,"total":0.10974865,"sum":2.38925432},{"quantity":1.72822928,"rate":0.02194876,"total":0.03793248,"sum":2.42718681},{"quantity":30.52125975,"rate":0.02194875,"total":0.66990349,"sum":3.09709031},{"quantity":0.06801416,"rate":0.02194395,"total":0.00149249,"sum":3.09858281},{"quantity":5,"rate":0.02194181,"total":0.10970905,"sum":3.20829186},{"quantity":33.14390953,"rate":0.02193978,"total":0.72717008,"sum":3.93546194},{"quantity":22.63373207,"rate":0.02193835,"total":0.49654673,"sum":4.43200868},{"quantity":250,"rate":0.02193674,"total":5.484185,"sum":9.91619368},{"quantity":250,"rate":0.02193399,"total":5.4834975,"sum":15.39969118},{"quantity":18.10698566,"rate":0.02193294,"total":0.39713943,"sum":15.79683061},{"quantity":22.63373207,"rate":0.02193114,"total":0.49638354,"sum":16.29321416},{"quantity":9.05571733,"rate":0.02191741,"total":0.19847786,"sum":16.49169203},{"quantity":22,"rate":0.0219174,"total":0.4821828,"sum":16.97387483},{"quantity":27,"rate":0.0219124,"total":0.5916348,"sum":17.56550963},{"quantity":0.22713685,"rate":0.02190309,"total":0.00497499,"sum":17.57048463},{"quantity":11.47426612,"rate":0.02190269,"total":0.25131729,"sum":17.82180192},{"quantity":74.1709,"rate":0.02189512,"total":1.62398075,"sum":19.44578268},{"quantity":30,"rate":0.02189511,"total":0.6568533,"sum":20.10263598},{"quantity":34,"rate":0.0218951,"total":0.7444334,"sum":20.84706938},{"quantity":129.75001515,"rate":0.02189489,"total":2.8408623,"sum":23.68793168},{"quantity":5.02429457,"rate":0.02189,"total":0.1099818,"sum":23.79791349},{"quantity":7.04513137,"rate":0.02188849,"total":0.15420728,"sum":23.95212078},{"quantity":55,"rate":0.02188403,"total":1.20362164,"sum":25.15574243},{"quantity":0.03637727,"rate":0.02188179,"total":0.00079599,"sum":25.15653843},{"quantity":0.2,"rate":0.02187998,"total":0.00437599,"sum":25.16091443},{"quantity":33.71,"rate":0.02187811,"total":0.73751108,"sum":25.89842551},{"quantity":35.91697256,"rate":0.02187425,"total":0.78565683,"sum":26.68408235},{"quantity":0.33086909,"rate":0.02185903,"total":0.00723247,"sum":26.69131483},{"quantity":7.8462775,"rate":0.02184336,"total":0.17138906,"sum":26.86270389},{"quantity":0.54034957,"rate":0.02183734,"total":0.01179979,"sum":26.87450369},{"quantity":3.77,"rate":0.02183394,"total":0.08231395,"sum":26.95681764},{"quantity":0.90563304,"rate":0.02179888,"total":0.01974178,"sum":26.97655943},{"quantity":0.0463,"rate":0.02179588,"total":0.00100914,"sum":26.97756858},{"quantity":8.73969323,"rate":0.02179541,"total":0.19048519,"sum":27.16805378},{"quantity":0.63059083,"rate":0.02179426,"total":0.01374326,"sum":27.18179704},{"quantity":0.58347285,"rate":0.0217905,"total":0.01271416,"sum":27.1945112},{"quantity":0.1005,"rate":0.02179049,"total":0.00218994,"sum":27.19670115},{"quantity":3.77,"rate":0.02179036,"total":0.08214965,"sum":27.2788508},{"quantity":120.4155,"rate":0.02176167,"total":2.62044237,"sum":29.89929318},{"quantity":0.027,"rate":0.02176165,"total":0.00058756,"sum":29.89988074},{"quantity":190.48413548,"rate":0.02175976,"total":4.14488907,"sum":34.04476981},{"quantity":3.77,"rate":0.02174686,"total":0.08198566,"sum":34.12675548},{"quantity":330.05,"rate":0.02174002,"total":7.1752936,"sum":41.30204908},{"quantity":0.30865951,"rate":0.02172922,"total":0.00670693,"sum":41.30875601},{"quantity":0.3,"rate":0.02172917,"total":0.00651875,"sum":41.31527476},{"quantity":0.03855359,"rate":0.0217225,"total":0.00083748,"sum":41.31611224},{"quantity":0.055,"rate":0.021712,"total":0.00119415,"sum":41.3173064},{"quantity":1.79424656,"rate":0.02170598,"total":0.03894587,"sum":41.35625228},{"quantity":3.77,"rate":0.02170345,"total":0.081822,"sum":41.43807429},{"quantity":333.99,"rate":0.0216927,"total":7.24514487,"sum":48.68321916},{"quantity":13.41987812,"rate":0.021691,"total":0.29109057,"sum":48.97430973},{"quantity":1.5,"rate":0.02164125,"total":0.03246187,"sum":49.00677161},{"quantity":3.77,"rate":0.0216169,"total":0.08149571,"sum":49.08826732},{"quantity":2.71840988,"rate":0.02160145,"total":0.05872159,"sum":49.14698892},{"quantity":0.14550007,"rate":0.0215915,"total":0.00314156,"sum":49.15013048},{"quantity":0.4,"rate":0.02157426,"total":0.0086297,"sum":49.15876019},{"quantity":3.77,"rate":0.02157375,"total":0.08133303,"sum":49.24009322},{"quantity":0.29698569,"rate":0.021492,"total":0.00638281,"sum":49.24647604},{"quantity":0.70030129,"rate":0.02147568,"total":0.01503944,"sum":49.26151549},{"quantity":36.99582754,"rate":0.02146215,"total":0.79401,"sum":50.05552549},{"quantity":11.77,"rate":0.02144482,"total":0.25240553,"sum":50.30793102},{"quantity":0.07473001,"rate":0.0214313,"total":0.00160156,"sum":50.30953258},{"quantity":0.0253,"rate":0.02143109,"total":0.0005422,"sum":50.31007479},{"quantity":0.02328938,"rate":0.02139349,"total":0.00049824,"sum":50.31057303},{"quantity":2.19186036,"rate":0.0213925,"total":0.04688937,"sum":50.3574624},{"quantity":168.17,"rate":0.02138484,"total":3.59628854,"sum":53.95375094},{"quantity":0.0086619,"rate":0.02138416,"total":0.00018522,"sum":53.95393617},{"quantity":0.02501724,"rate":0.02135836,"total":0.00053432,"sum":53.9544705},{"quantity":0.66760616,"rate":0.021293,"total":0.01421533,"sum":53.96868584},{"quantity":0.028,"rate":0.02129032,"total":0.00059612,"sum":53.96928196},{"quantity":132.86,"rate":0.02128621,"total":2.82808586,"sum":56.79736782},{"quantity":0.31198941,"rate":0.02122815,"total":0.00662295,"sum":56.80399078},{"quantity":0.64653351,"rate":0.0211935,"total":0.0137023,"sum":56.81769309},{"quantity":1,"rate":0.02117743,"total":0.02117743,"sum":56.83887052},{"quantity":2.09971912,"rate":0.02116803,"total":0.04444691,"sum":56.88331744},{"quantity":0.0325,"rate":0.02116782,"total":0.00068795,"sum":56.88400539},{"quantity":1,"rate":0.0211161,"total":0.0211161,"sum":56.90512149},{"quantity":0.74131371,"rate":0.021094,"total":0.01563727,"sum":56.92075876},{"quantity":0.02360238,"rate":0.02108876,"total":0.00049774,"sum":56.92125651},{"quantity":0.5,"rate":0.02107781,"total":0.0105389,"sum":56.93179541},{"quantity":0.5,"rate":0.02104399,"total":0.01052199,"sum":56.94231741},{"quantity":15.82340365,"rate":0.02102992,"total":0.33276491,"sum":57.27508232},{"quantity":170.3329,"rate":0.02100616,"total":3.57804015,"sum":60.85312247},{"quantity":6.37392707,"rate":0.02100597,"total":0.13389052,"sum":60.98701299},{"quantity":0.03298836,"rate":0.021002,"total":0.00069282,"sum":60.98770581},{"quantity":0.12687957,"rate":0.02099723,"total":0.00266411,"sum":60.99036993},{"quantity":92.00091654,"rate":0.0209945,"total":1.93151324,"sum":62.92188318},{"quantity":1,"rate":0.0209746,"total":0.0209746,"sum":62.94285778},{"quantity":0.53314704,"rate":0.02096141,"total":0.01117551,"sum":62.95403329},{"quantity":0.4080424,"rate":0.02094895,"total":0.00854805,"sum":62.96258135},{"quantity":67.67443313,"rate":0.02094475,"total":1.41742408,"sum":64.38000543},{"quantity":0.026,"rate":0.0209149,"total":0.00054378,"sum":64.38054922},{"quantity":0.02383365,"rate":0.02090495,"total":0.00049824,"sum":64.38104746},{"quantity":0.94988013,"rate":0.02090451,"total":0.01985677,"sum":64.40090424},{"quantity":0.07301032,"rate":0.0209026,"total":0.0015261,"sum":64.40243035}]}}'
+    http_version: 
+  recorded_at: Thu, 18 Jul 2019 08:14:39 GMT
+- request:
+    method: get
+    uri: https://api2.tokenize.exchange/public/v1/market/get-sell-orders?market=BTC-ETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api2.tokenize.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 Jul 2019 08:14:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSALB=qZdMmVtDttqIwjvvt704boU5t0FQ1mIhk3fJJAGpUv6mmzGAM2x1aErk35Ll/+tu4uvhPZvherUDF6HR/ohONlcC7bAJ18SqMEbI8Z6u+jH0OCB/k+Ie6dSZikJA;
+        Expires=Thu, 25 Jul 2019 08:14:39 GMT; Path=/
+      - __cfduid=da9885d42edad8c7786d7b6789c4471701563437679; expires=Fri, 17-Jul-20
+        08:14:39 GMT; path=/; domain=.tokenize.exchange; HttpOnly; Secure
+      Etag:
+      - W/"1e42-0MWzZuolSw9VknxIvLbGbBwxkhg"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4f8300d7de2b2cd9-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","message":"","data":{"market":"BTC-ETH","orders":[{"quantity":0.20500733,"rate":0.02219657,"total":0.00455045,"sum":0.00455045},{"quantity":2.0527,"rate":0.02220114,"total":0.04557228,"sum":0.05012273},{"quantity":0.17649777,"rate":0.02222442,"total":0.00392256,"sum":0.0540453},{"quantity":0.26525479,"rate":0.02222443,"total":0.00589513,"sum":0.05994043},{"quantity":4.99999999,"rate":0.02222482,"total":0.11112409,"sum":0.17106453},{"quantity":1.01447066,"rate":0.02222484,"total":0.02254644,"sum":0.19361098},{"quantity":10.89262072,"rate":0.02222486,"total":0.24208697,"sum":0.43569795},{"quantity":1.97591444,"rate":0.02222487,"total":0.04391444,"sum":0.47961239},{"quantity":5,"rate":0.02222684,"total":0.1111342,"sum":0.59074659},{"quantity":22.64106447,"rate":0.02223361,"total":0.50339259,"sum":1.09413919},{"quantity":5,"rate":0.0222366,"total":0.11118299,"sum":1.20532219},{"quantity":13.35993796,"rate":0.02223965,"total":0.29712034,"sum":1.50244253},{"quantity":18.11733632,"rate":0.0222398,"total":0.40292593,"sum":1.90536847},{"quantity":33.7,"rate":0.02224225,"total":0.74956382,"sum":2.65493229},{"quantity":30,"rate":0.02224531,"total":0.6673593,"sum":3.32229159},{"quantity":17,"rate":0.02224532,"total":0.37817044,"sum":3.70046203},{"quantity":250,"rate":0.02224674,"total":5.561685,"sum":9.26214703},{"quantity":241.32291536,"rate":0.02224821,"total":5.36900289,"sum":14.63114993},{"quantity":14,"rate":0.02225807,"total":0.31161298,"sum":14.94276291},{"quantity":11,"rate":0.02226002,"total":0.24486022,"sum":15.18762313},{"quantity":26.85609046,"rate":0.02226447,"total":0.59793662,"sum":15.78555975},{"quantity":141.39142081,"rate":0.02226863,"total":3.14859323,"sum":18.93415299},{"quantity":4.43383323,"rate":0.02227156,"total":0.09874838,"sum":19.03290137},{"quantity":27,"rate":0.02227534,"total":0.60143418,"sum":19.63433555},{"quantity":89.2879,"rate":0.02231534,"total":1.99248984,"sum":21.6268254},{"quantity":0.02828956,"rate":0.02231536,"total":0.00063129,"sum":21.62745669},{"quantity":330.04,"rate":0.02231685,"total":7.36545317,"sum":28.99290986},{"quantity":1.96776543,"rate":0.02234336,"total":0.04396649,"sum":29.03687636},{"quantity":0.90497738,"rate":0.02236073,"total":0.02023595,"sum":29.05711231},{"quantity":3.77,"rate":0.02236397,"total":0.08431216,"sum":29.14142448},{"quantity":0.0536,"rate":0.02237693,"total":0.0011994,"sum":29.14262388},{"quantity":3.77,"rate":0.0224087,"total":0.08448079,"sum":29.22710468},{"quantity":0.67759878,"rate":0.0224154,"total":0.01518864,"sum":29.24229333},{"quantity":24.58826191,"rate":0.02243259,"total":0.55157839,"sum":29.79387173},{"quantity":2.23,"rate":0.02243858,"total":0.05003803,"sum":29.84390976},{"quantity":3.77,"rate":0.02245351,"total":0.08464973,"sum":29.92855949},{"quantity":0.17128742,"rate":0.02248187,"total":0.00385086,"sum":29.93241035},{"quantity":0.5,"rate":0.02248258,"total":0.01124129,"sum":29.94365164},{"quantity":0.0262681,"rate":0.02249311,"total":0.00059085,"sum":29.94424249},{"quantity":0.08173375,"rate":0.0224966,"total":0.00183873,"sum":29.94608123},{"quantity":3.77,"rate":0.02249842,"total":0.08481904,"sum":30.03090027},{"quantity":23.54815864,"rate":0.02250978,"total":0.53006387,"sum":30.56096414},{"quantity":0.74538933,"rate":0.022512,"total":0.0167802,"sum":30.57774434},{"quantity":0.03237085,"rate":0.02252522,"total":0.00072916,"sum":30.5784735},{"quantity":0.34083056,"rate":0.02253531,"total":0.00768072,"sum":30.58615423},{"quantity":0.0535,"rate":0.02253763,"total":0.00120576,"sum":30.58735999},{"quantity":6.77,"rate":0.02254342,"total":0.15261895,"sum":30.73997894},{"quantity":0.5,"rate":0.02254999,"total":0.01127499,"sum":30.75125394},{"quantity":2.04920317,"rate":0.02255029,"total":0.04621012,"sum":30.79746406},{"quantity":0.0850031,"rate":0.02255979,"total":0.00191765,"sum":30.79938172},{"quantity":0.9973712,"rate":0.0225666,"total":0.02250727,"sum":30.82188899},{"quantity":0.05079425,"rate":0.02258163,"total":0.00114701,"sum":30.82303601},{"quantity":9.77,"rate":0.02258851,"total":0.22068974,"sum":31.04372575},{"quantity":6.85969057,"rate":0.0226125,"total":0.15511475,"sum":31.19884051},{"quantity":0.08840323,"rate":0.02262299,"total":0.00199994,"sum":31.20084045},{"quantity":0.02266643,"rate":0.02262438,"total":0.00051281,"sum":31.20135327},{"quantity":4.98361552,"rate":0.02262844,"total":0.11277144,"sum":31.31412471},{"quantity":11.77,"rate":0.02263368,"total":0.26639841,"sum":31.58052312},{"quantity":0.05115715,"rate":0.02263793,"total":0.00115809,"sum":31.58168122},{"quantity":0.05,"rate":0.0226527,"total":0.00113263,"sum":31.58281385},{"quantity":0.0249,"rate":0.02267568,"total":0.00056462,"sum":31.58337848},{"quantity":0.053,"rate":0.02268272,"total":0.00120218,"sum":31.58458066},{"quantity":0.09193936,"rate":0.02268618,"total":0.00208575,"sum":31.58666641},{"quantity":0.18059174,"rate":0.02271007,"total":0.00410125,"sum":31.59076766},{"quantity":1.03954119,"rate":0.022713,"total":0.02361109,"sum":31.61437876},{"quantity":6.77,"rate":0.02272431,"total":0.15384357,"sum":31.76822234},{"quantity":0.09561693,"rate":0.02274938,"total":0.00217522,"sum":31.77039757},{"quantity":2.15166333,"rate":0.02276504,"total":0.0489827,"sum":31.81938027},{"quantity":0.5,"rate":0.02276788,"total":0.01138394,"sum":31.83076421},{"quantity":11.77,"rate":0.02276976,"total":0.26800007,"sum":32.09876428},{"quantity":0.13814471,"rate":0.02278826,"total":0.00314807,"sum":32.10191236},{"quantity":0.0598488,"rate":0.02280792,"total":0.00136502,"sum":32.10327739},{"quantity":0.09944161,"rate":0.02281257,"total":0.00226851,"sum":32.10554591},{"quantity":1.12379826,"rate":0.0228135,"total":0.02563777,"sum":32.13118368},{"quantity":158.0384,"rate":0.02287171,"total":3.61460845,"sum":35.74579213},{"quantity":0.22838323,"rate":0.02287172,"total":0.00522351,"sum":35.75101565},{"quantity":0.10341927,"rate":0.02287575,"total":0.00236579,"sum":35.75338144},{"quantity":0.0549134,"rate":0.02287689,"total":0.00125624,"sum":35.75463769},{"quantity":3.40671541,"rate":0.02288388,"total":0.07795886,"sum":35.83259656},{"quantity":3.22164871,"rate":0.02288395,"total":0.07372404,"sum":35.90632061},{"quantity":3.40671541,"rate":0.02288398,"total":0.0779592,"sum":35.98427981},{"quantity":3.22164871,"rate":0.02288399,"total":0.07372417,"sum":36.05800399},{"quantity":3.22164871,"rate":0.02288401,"total":0.07372424,"sum":36.13172823},{"quantity":3.22164871,"rate":0.02288404,"total":0.07372433,"sum":36.20545257},{"quantity":3.22164871,"rate":0.02288406,"total":0.0737244,"sum":36.27917697},{"quantity":3.40671541,"rate":0.02288408,"total":0.07795954,"sum":36.35713652},{"quantity":3.22164871,"rate":0.0228841,"total":0.07372453,"sum":36.43086105},{"quantity":3.22164871,"rate":0.02288412,"total":0.07372459,"sum":36.50458565},{"quantity":3.22164871,"rate":0.02288414,"total":0.07372466,"sum":36.57831031},{"quantity":3.22164871,"rate":0.02288416,"total":0.07372472,"sum":36.65203503},{"quantity":3.40671541,"rate":0.02288418,"total":0.07795988,"sum":36.72999492},{"quantity":3.22164871,"rate":0.0228842,"total":0.07372485,"sum":36.80371977},{"quantity":3.22164871,"rate":0.02288422,"total":0.07372491,"sum":36.87744469},{"quantity":3.22164871,"rate":0.02288424,"total":0.07372498,"sum":36.95116967},{"quantity":3.22164871,"rate":0.02288426,"total":0.07372504,"sum":37.02489472},{"quantity":3.40671541,"rate":0.02288428,"total":0.07796022,"sum":37.10285495},{"quantity":3.22164871,"rate":0.0228843,"total":0.07372517,"sum":37.17658012},{"quantity":3.22164871,"rate":0.02288432,"total":0.07372524,"sum":37.25030536},{"quantity":3.22164871,"rate":0.02288434,"total":0.0737253,"sum":37.32403067},{"quantity":3.22164871,"rate":0.02288436,"total":0.07372536,"sum":37.39775604}]}}'
+    http_version: 
+  recorded_at: Thu, 18 Jul 2019 08:14:39 GMT
+recorded_with: VCR 4.0.0
