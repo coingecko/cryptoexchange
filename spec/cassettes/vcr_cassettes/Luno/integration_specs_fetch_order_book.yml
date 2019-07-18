@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.mybitx.com/api/1/orderbook_top?pair=XBTZAR
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.mybitx.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - public, max-age=1
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 18 Jul 2019 03:17:33 GMT
+      Server:
+      - nginx
+      Set-Cookie:
+      - device=ZHQxGuGoefPSiTAgM8VZwGBZ+A==:zP6+mdYtje9fuhk+lRvCVgyps7U=; Path=/;
+        Max-Age=31536000; HttpOnly; Secure
+      X-Luno-Trace-Id:
+      - 40911b58cc00a99c
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timestamp":1563419853428,"asks":[{"price":"146873.00","volume":"0.652674"},{"price":"147200.00","volume":"0.022499"},{"price":"147283.00","volume":"0.272634"},{"price":"147305.00","volume":"0.087831"},{"price":"147322.00","volume":"0.042651"},{"price":"147402.00","volume":"0.001971"},{"price":"147449.00","volume":"0.106625"},{"price":"147654.00","volume":"0.084082"},{"price":"148000.00","volume":"0.000521"},{"price":"148001.00","volume":"0.23173"},{"price":"148246.00","volume":"0.012"},{"price":"148431.00","volume":"0.550713"},{"price":"148432.00","volume":"0.65"},{"price":"148639.00","volume":"0.108384"},{"price":"148662.00","volume":"0.098592"},{"price":"148768.00","volume":"0.005583"},{"price":"148769.00","volume":"0.008396"},{"price":"148999.00","volume":"0.099802"},{"price":"149000.00","volume":"0.000507"},{"price":"149028.00","volume":"0.45"},{"price":"149036.00","volume":"0.005749"},{"price":"149067.00","volume":"0.52"},{"price":"149189.00","volume":"0.024423"},{"price":"149399.00","volume":"0.10"},{"price":"149499.00","volume":"0.0005"},{"price":"149501.00","volume":"0.02"},{"price":"149502.00","volume":"0.71874"},{"price":"149600.00","volume":"0.73367"},{"price":"149889.00","volume":"0.20"},{"price":"149988.00","volume":"0.166325"},{"price":"149989.00","volume":"2.264373"},{"price":"149990.00","volume":"1.363052"},{"price":"149994.00","volume":"0.000687"},{"price":"149995.00","volume":"0.005"},{"price":"149999.00","volume":"0.10"},{"price":"150000.00","volume":"1.879304"},{"price":"150125.00","volume":"0.005"},{"price":"150270.00","volume":"0.009709"},{"price":"150850.00","volume":"0.088183"},{"price":"150969.00","volume":"0.003922"},{"price":"151000.00","volume":"0.000506"},{"price":"151001.00","volume":"1.00"},{"price":"151020.00","volume":"0.02"},{"price":"151042.00","volume":"0.005502"},{"price":"151414.00","volume":"0.0005"},{"price":"151524.00","volume":"0.0005"},{"price":"151602.00","volume":"0.002"},{"price":"151851.00","volume":"0.004312"},{"price":"151995.00","volume":"0.0055"},{"price":"152000.00","volume":"1.01007"},{"price":"152017.00","volume":"1.00"},{"price":"152442.00","volume":"0.00886"},{"price":"152500.00","volume":"0.012049"},{"price":"152501.00","volume":"0.01666"},{"price":"152700.00","volume":"0.0005"},{"price":"152999.00","volume":"1.059"},{"price":"153000.00","volume":"1.0114"},{"price":"153500.00","volume":"0.0005"},{"price":"153517.00","volume":"6.149"},{"price":"153825.00","volume":"0.10"},{"price":"153995.00","volume":"0.005"},{"price":"153999.00","volume":"0.001"},{"price":"154000.00","volume":"0.282664"},{"price":"154101.00","volume":"0.015326"},{"price":"154252.00","volume":"0.46577"},{"price":"154253.00","volume":"0.02"},{"price":"154654.00","volume":"0.050572"},{"price":"155000.00","volume":"1.941612"},{"price":"155001.00","volume":"0.005"},{"price":"155011.00","volume":"0.819077"},{"price":"155150.00","volume":"0.057938"},{"price":"155494.00","volume":"0.000664"},{"price":"155556.00","volume":"0.0127"},{"price":"155585.00","volume":"0.050584"},{"price":"155898.00","volume":"0.0005"},{"price":"155899.00","volume":"0.641399"},{"price":"155995.00","volume":"0.005"},{"price":"155999.00","volume":"0.089199"},{"price":"156000.00","volume":"0.016046"},{"price":"156004.00","volume":"0.14"},{"price":"156442.00","volume":"0.10"},{"price":"157000.00","volume":"0.034197"},{"price":"157017.00","volume":"1.00"},{"price":"157347.00","volume":"0.09"},{"price":"157500.00","volume":"0.041378"},{"price":"157900.00","volume":"0.0095"},{"price":"157995.00","volume":"0.255"},{"price":"158000.00","volume":"0.86084"},{"price":"158555.00","volume":"0.657424"},{"price":"158962.00","volume":"0.260233"},{"price":"159000.00","volume":"0.512282"},{"price":"159100.00","volume":"0.0005"},{"price":"159363.00","volume":"0.049338"},{"price":"159377.00","volume":"0.02799"},{"price":"159400.00","volume":"0.00051"},{"price":"159800.00","volume":"1.80"},{"price":"159900.00","volume":"0.175405"},{"price":"159995.00","volume":"0.105"},{"price":"159998.00","volume":"0.885432"},{"price":"159999.00","volume":"0.233306"}],"bids":[{"price":"146872.00","volume":"0.283841"},{"price":"146752.00","volume":"0.50"},{"price":"146363.00","volume":"0.040705"},{"price":"146269.00","volume":"0.169606"},{"price":"146266.00","volume":"0.13652"},{"price":"146252.00","volume":"0.50"},{"price":"146246.00","volume":"0.452611"},{"price":"146178.00","volume":"0.214598"},{"price":"146122.00","volume":"0.068521"},{"price":"146000.00","volume":"0.00627"},{"price":"145924.00","volume":"0.067842"},{"price":"145871.00","volume":"0.04924"},{"price":"145859.00","volume":"0.061161"},{"price":"145836.00","volume":"0.089135"},{"price":"145810.00","volume":"0.067842"},{"price":"145787.00","volume":"0.118046"},{"price":"145502.00","volume":"1.00"},{"price":"145200.00","volume":"0.624185"},{"price":"145005.00","volume":"0.32"},{"price":"145000.00","volume":"3.947984"},{"price":"144789.00","volume":"2.00"},{"price":"144502.00","volume":"1.013242"},{"price":"144250.00","volume":"0.012"},{"price":"144249.00","volume":"0.0005"},{"price":"144200.00","volume":"0.02"},{"price":"144000.00","volume":"0.691305"},{"price":"143763.00","volume":"0.0137"},{"price":"143500.00","volume":"0.05"},{"price":"143289.00","volume":"0.20"},{"price":"143064.00","volume":"0.10"},{"price":"143000.00","volume":"0.405111"},{"price":"142800.00","volume":"1.14945"},{"price":"142655.00","volume":"0.25"},{"price":"142550.00","volume":"0.068456"},{"price":"142500.00","volume":"0.05"},{"price":"142137.00","volume":"0.0008"},{"price":"142100.00","volume":"1.40746"},{"price":"142009.00","volume":"0.0005"},{"price":"142005.00","volume":"0.0023"},{"price":"142000.00","volume":"2.652991"},{"price":"141652.00","volume":"0.000649"},{"price":"141350.00","volume":"0.59016"},{"price":"141342.00","volume":"0.00189"},{"price":"141141.00","volume":"0.005"},{"price":"141137.00","volume":"0.0137"},{"price":"141000.00","volume":"1.592264"},{"price":"140995.00","volume":"0.00738"},{"price":"140904.00","volume":"0.007098"},{"price":"140820.00","volume":"0.80"},{"price":"140780.00","volume":"2.0481"},{"price":"140751.00","volume":"0.01"},{"price":"140569.00","volume":"0.02"},{"price":"140504.00","volume":"0.007828"},{"price":"140500.00","volume":"0.100356"},{"price":"140400.00","volume":"0.385"},{"price":"140155.00","volume":"0.0015"},{"price":"140029.00","volume":"2.4229"},{"price":"140027.00","volume":"0.964642"},{"price":"140005.00","volume":"0.307011"},{"price":"140004.00","volume":"3.005"},{"price":"140000.00","volume":"4.37968"},{"price":"139883.00","volume":"0.001342"},{"price":"139870.00","volume":"0.65"},{"price":"139700.00","volume":"0.100613"},{"price":"139500.00","volume":"0.057347"},{"price":"139361.00","volume":"1.00"},{"price":"139137.00","volume":"0.0137"},{"price":"139011.00","volume":"0.10"},{"price":"139000.00","volume":"0.62818"},{"price":"138500.00","volume":"0.59808"},{"price":"138433.00","volume":"0.10"},{"price":"138250.00","volume":"4.958013"},{"price":"138100.00","volume":"0.0385"},{"price":"138065.00","volume":"0.01"},{"price":"138064.00","volume":"1.00"},{"price":"138050.00","volume":"0.215"},{"price":"138009.00","volume":"0.025636"},{"price":"138005.00","volume":"0.065"},{"price":"138003.00","volume":"1.89"},{"price":"138002.00","volume":"0.03"},{"price":"138001.00","volume":"0.885552"},{"price":"138000.00","volume":"1.385058"},{"price":"137808.00","volume":"0.030191"},{"price":"137678.00","volume":"0.25"},{"price":"137654.00","volume":"0.02"},{"price":"137622.00","volume":"0.01"},{"price":"137602.00","volume":"0.0005"},{"price":"137551.00","volume":"0.478608"},{"price":"137502.00","volume":"0.03"},{"price":"137500.00","volume":"0.201"},{"price":"137402.00","volume":"0.05"},{"price":"137267.00","volume":"0.004953"},{"price":"137224.00","volume":"0.01469"},{"price":"137137.00","volume":"0.0237"},{"price":"137075.00","volume":"0.145"},{"price":"137023.00","volume":"0.10"},{"price":"137011.00","volume":"0.01"},{"price":"137009.00","volume":"1.00"},{"price":"137002.00","volume":"0.032"},{"price":"137000.00","volume":"1.181261"}]}
+
+'
+    http_version: 
+  recorded_at: Thu, 18 Jul 2019 03:17:33 GMT
+recorded_with: VCR 4.0.0
