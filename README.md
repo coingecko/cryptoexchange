@@ -61,7 +61,7 @@ Or install it yourself as:
 | Bishang           | Y       |            |         |         | Y           |          | bishang           |       |
 | Bisq              | Y       |            | Y       |         | Y           |          | bisq              |       |
 | Bit2C             | Y       | Y [x]      | Y       |         | User-Defined| Y        | bit2c             |       |
-| Bit-Z             | Y       |            |         |         | Y           |          | bit_z             |       |
+| Bit-Z             | Y       | Y [x]      |         |         | Y           |          | bit_z             |       |
 | Bitalong          | Y       | Y [x]      | Y       |         | Y           | Y        | bitalong          |       |
 | Bitasset          | Y       | Y [x]      | Y       |         | Y           | Y        | bitasset          |       |
 | Bitbank           | Y       | Y [x]      | Y       |         | User-Defined| Y        | bitbank           |       |
@@ -372,7 +372,7 @@ Or install it yourself as:
 | Remitano          | Y       | Y [x]      | Y [limit: 20]|         | Y           | N        | remitano          |  P2P  |
 | Rfinex            | Y       | Y          | Y       |         | Y           |          | rfinex            |       |
 | RightBTC          | Y       | Y [x]      | Y       |         | Y           |          | rightbtc          |       |
-| SafeTrade         | Y       | N          | N       |         | Y           |          | safe_trade        |       |
+| SafeTrade         | Y       | Y [x]      | N       |         | Y           |          | safe_trade        |       |
 | SatoExchange      | Y       | Y [x]      | Y       |         | Y           |          | satoexchange      |       |
 | SatoWalletEx      | Y       | N          |         |         |             |          | sato_wallet_ex    |       |
 | SaturnNetwork     | Y       |            |         |         | Y           | Y        | saturn_network    |       |
@@ -400,7 +400,7 @@ Or install it yourself as:
 | Tideal            | Y       | Y          | Y       |         | Y           |          | tideal            |       |
 | Tidebit           | Y       | Y [x]      | Y       |         | Y           |          | tidebit           |       |
 | Tidex             | Y       |            |         |         | Y           |          | tidex             |       |
-| Tokenize          | Y       |            |         |         | Y           | Y        | tokenize          |       |
+| Tokenize          | Y       | Y [x]      |         |         | Y           | Y        | tokenize          |       |
 | Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |       |
 | Tokenomy          | Y       | Y [x]      | Y       |         | Y           | Y        | tokenomy          |       |
 | TokensNet         | Y       | Y          | Y       |         | Y           | N        | tokens_net        |       |
