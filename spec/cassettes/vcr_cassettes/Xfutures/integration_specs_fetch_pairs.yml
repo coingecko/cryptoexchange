@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.xfutures.io/api/spot/v3/instruments/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.xfutures.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Jul 2019 04:52:51 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0fd581f88fdf04a5f4c2ddd60c43ebbc1563511971; expires=Sat, 18-Jul-20
+        04:52:51 GMT; path=/; domain=.xfutures.io; HttpOnly; Secure
+      - locale=en_US; Max-Age=604800; Expires=Fri, 26-Jul-2019 04:52:51 GMT; Path=/
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Cf-Ray:
+      - 4f8a169daf25d9d0-SIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.12.3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Kong-Proxy-Latency:
+      - '0'
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"best_ask":"10456.5","best_bid":"10451.8","instrument_id":"BTC-USDT","product_id":"BTC-USDT","last":"10454.1","ask":"10456.5","bid":"10451.8","open_24h":"9835","high_24h":"10779.9","low_24h":"9275","base_volume_24h":"0.002195255","timestamp":"2019-07-19T04:52:46.158Z","quote_volume_24h":"21.422719594"},{"best_ask":"221.42","best_bid":"221.21","instrument_id":"ETH-USDT","product_id":"ETH-USDT","last":"221.21","ask":"221.42","bid":"221.21","open_24h":"217.47","high_24h":"229.43","low_24h":"206","base_volume_24h":"0.1447205","timestamp":"2019-07-19T04:52:46.155Z","quote_volume_24h":"31.47163078"},{"best_ask":"0.02117","best_bid":"0.02116","instrument_id":"ETH-BTC","product_id":"ETH-BTC","last":"0.02116","ask":"0.02117","bid":"0.02116","open_24h":"0.02211","high_24h":"0.02239","low_24h":"0.02094","base_volume_24h":"1.76058","timestamp":"2019-07-19T04:52:15.863Z","quote_volume_24h":"0.0389197924"},{"best_ask":"0.00000355","best_bid":"0.00000001","instrument_id":"XOCEAN-BTC","product_id":"XOCEAN-BTC","last":"0.00000355","ask":"0.00000355","bid":"0.00000001","open_24h":"0.00000355","high_24h":"0.00000355","low_24h":"0.00000355","base_volume_24h":"100","timestamp":"2019-07-17T09:09:24.535Z","quote_volume_24h":"0.000355"},{"best_ask":"0.008","best_bid":"100000000","instrument_id":"XATOM-BTC","product_id":"XATOM-BTC","last":"0.00790625","ask":"0.008","bid":"100000000","open_24h":"0.00790625","high_24h":"0.00790625","low_24h":"0.00790625","base_volume_24h":"5.375","timestamp":"2019-07-17T09:09:24.544Z","quote_volume_24h":"0.0423085937"},{"best_ask":"0","best_bid":"0.00000001","instrument_id":"XPERL-BTC","product_id":"XPERL-BTC","last":"0","ask":"0","bid":"0.00000001","open_24h":"0","high_24h":"0","low_24h":"0","base_volume_24h":"0","timestamp":"2019-07-17T09:09:06.800Z","quote_volume_24h":"0"},{"best_ask":"0","best_bid":"0","instrument_id":"XOASIS-BTC","product_id":"XOASIS-BTC","last":"0","ask":"0","bid":"0","open_24h":"0","high_24h":"0","low_24h":"0","base_volume_24h":"0","timestamp":"2019-07-17T09:09:06.800Z","quote_volume_24h":"0"},{"best_ask":"0.0078125","best_bid":"0","instrument_id":"XDOT-BTC","product_id":"XDOT-BTC","last":"0.00609375","ask":"0.0078125","bid":"0","open_24h":"0.00609375","high_24h":"0.00609375","low_24h":"0.00609375","base_volume_24h":"1.2","timestamp":"2019-07-17T09:09:24.536Z","quote_volume_24h":"0.0073125"},{"best_ask":"0","best_bid":"0.00000001","instrument_id":"XDFINITY-BTC","product_id":"XDFINITY-BTC","last":"0","ask":"0","bid":"0.00000001","open_24h":"0","high_24h":"0","low_24h":"0","base_volume_24h":"0","timestamp":"2019-07-17T09:09:06.822Z","quote_volume_24h":"0"},{"best_ask":"0","best_bid":"0.00000001","instrument_id":"XAR-BTC","product_id":"XAR-BTC","last":"0","ask":"0","bid":"0.00000001","open_24h":"0","high_24h":"0","low_24h":"0","base_volume_24h":"0","timestamp":"2019-07-17T09:09:06.777Z","quote_volume_24h":"0"},{"best_ask":"30","best_bid":"0","instrument_id":"XHBAR-BTC","product_id":"XHBAR-BTC","last":"0","ask":"30","bid":"0","open_24h":"0","high_24h":"0","low_24h":"0","base_volume_24h":"0","timestamp":"2019-07-17T09:09:06.823Z","quote_volume_24h":"0"},{"best_ask":"0.00000319","best_bid":"0.000002","instrument_id":"FTM-BTC","product_id":"FTM-BTC","last":"0.00000238","ask":"0.00000319","bid":"0.000002","open_24h":"0.00000238","high_24h":"0.00000238","low_24h":"0.00000238","base_volume_24h":"0","timestamp":"2019-07-19T04:17:21.170Z","quote_volume_24h":"0"},{"best_ask":"0.000055","best_bid":"0.000032","instrument_id":"XAKRO-ETH","product_id":"XAKRO-ETH","last":"0.000052","ask":"0.000055","bid":"0.000032","open_24h":"0.000079","high_24h":"0.000079","low_24h":"0.000045","base_volume_24h":"309313.4324","timestamp":"2019-07-18T20:26:36.502Z","quote_volume_24h":"14.986021738"}]'
+    http_version: 
+  recorded_at: Fri, 19 Jul 2019 04:52:51 GMT
+recorded_with: VCR 4.0.0
