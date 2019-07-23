@@ -11,15 +11,19 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          market_pairs = []
-          output.each do |pair|
-            market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair[0..pair.length - 4],
-                              target: pair[-3..-1],
-                              market: Bitfinex::Market::NAME
-                            )
+          output.map do |pair|
+            if pair.include? ":"
+              base, target = pair.split(":")
+            else
+              base = pair[0..pair.length - 4]
+              target = pair[-3..-1]
+            end
+            Cryptoexchange::Models::MarketPair.new(
+              base: base,
+              target: target,
+              market: Bitfinex::Market::NAME
+            )
           end
-          market_pairs
         end
       end
     end
