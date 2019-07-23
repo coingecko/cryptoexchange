@@ -13,7 +13,7 @@ module Cryptoexchange::Exchanges
           (1..1).each do |page_id|
             ticker_output = super(ticker_url(page_id))
             break if ticker_output.empty?
-            outputs = outputs + ticker_output
+            outputs = outputs + ticker_output.records
           end
           adapt_all(outputs)
         end
