@@ -11,7 +11,7 @@ module Cryptoexchange::Exchanges
             puts pair_url
             output = fetch_via_api(pair_url)
             break if output.empty?
-            outputs = outputs + output.records
+            outputs = outputs + output['records']
           end
           adapt(outputs)
         end
