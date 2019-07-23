@@ -10,7 +10,7 @@ module Cryptoexchange::Exchanges
 
         def fetch
           outputs = []
-          (1..25).each do |page_id|
+          (1..1).each do |page_id|
             ticker_output = super(ticker_url(page_id))
             break if ticker_output.empty?
             outputs = outputs + ticker_output
