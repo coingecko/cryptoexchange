@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://api3.stex.com/public'
 
       def self.trade_page_url(args={})
-        "https://app.stocks.exchange/en/basic-trade/pair/#{args[:target]}/#{args[:base]}"
+        "https://app.stex.com/en/basic-trade/pair/#{args[:target]}/#{args[:base]}/240"
       end
     end
   end

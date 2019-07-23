@@ -30,6 +30,6 @@ RSpec.describe 'StocksExchange integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'stocks_exchange', base: eth_btc_pair.base, target: eth_btc_pair.target
-    expect(trade_page_url).to eq "https://app.stocks.exchange/en/basic-trade/pair/BTC/ETH"
+    expect(trade_page_url).to eq "https://app.stex.com/en/basic-trade/pair/BTC/ETH/240"
   end
 end
