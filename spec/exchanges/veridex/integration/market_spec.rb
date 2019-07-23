@@ -16,7 +16,7 @@ RSpec.describe 'Veridex integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'veridex', base: vsf_weth_pair.base, target: vsf_weth_pair.target
-    expect(trade_page_url).to eq "https://dex.verisafe.io/#/erc20/?base=vsf&quote=weth"
+    expect(trade_page_url).to eq "https://dex.verisafe.io/#/erc20/?base=VSF&quote=WETH"
   end
 
   it 'fetch ticker' do
