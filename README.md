@@ -212,6 +212,7 @@ Or install it yourself as:
 | Cybex             | Y       |            | Y       |         | Y           |          | cybex             |       |
 | Dach.Exchange     | Y       |            |         |         | Y           | Y        | dach_exchange     |       |
 | Dakuce            | Y       | Y          | Y       |         | Y           |          | dakuce            |       |
+| Darb Finance      | Y       | Y [x]      | Y       |         | Y           |          | darb_finance      |       |
 | Daybit            | Y       |            |         |         | Y           | Y        | daybit            |       |
 | Dcoin             | Y       | N          | N       |         | Y           | Y        | dcoin             |       |
 | Ddex              | Y       | Y          | Y       |         | Y           | Y        | ddex              |       |
