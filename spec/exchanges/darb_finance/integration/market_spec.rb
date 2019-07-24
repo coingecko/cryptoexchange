@@ -14,6 +14,11 @@ RSpec.describe 'DarbFinance integration specs' do
     expect(pair.market).to eq 'darb_finance'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url "darb_finance", base: btc_usd_pair.base, target: btc_usd_pair.target
+    expect(trade_page_url).to eq "https://base.darbfinance.com/trade/BTC-USD"
+  end  
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_usd_pair)
 
