@@ -169,6 +169,7 @@ Or install it yourself as:
 | Coinfalcon        | Y       | Y [x]      | Y       |         | Y           |          | coinfalcon        |       |
 | Coinfield         | Y       | Y [x]      | Y       |         | Y           | Y        | coinfield         |       |
 | Coinfinit         | Y       | Y [x]      |         |         | Y           | Y        | coinfinit         |       |
+| Coinflex          | Y       | Y.         |         |         | Y           | Y        | coinflex          |       |
 | Coingi            | Y       | Y [x]      | Y       |         | Y           | Y        | coingi            |       |
 | Coinhouse         | Y       |            |         |         | Y           | Y        | coinhouse         |       |
 | Coinhub           | Y       | Y          | Y       |         | Y           | Y        | coinhub           |       |
