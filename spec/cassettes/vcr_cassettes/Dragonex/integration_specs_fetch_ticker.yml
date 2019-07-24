@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://openapi.dragonex.io/api/v1/market/kline/?count=1&kline_type=1&st=0&symbol_id=101
+    uri: https://openapi.dragonex.io/api/v1/market/real?symbol_id=101
     body:
       encoding: UTF-8
       string: ''
@@ -12,38 +12,111 @@ http_interactions:
       Host:
       - openapi.dragonex.io
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Wed, 24 Jul 2019 06:22:19 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db94b975530b597420c78e2bc9eb3d2b31563949339; expires=Thu, 23-Jul-20
+        06:22:19 GMT; path=/; domain=.dragonex.io; HttpOnly; Secure
+      Location:
+      - https://openapi.dragonex.io/api/v1/market/real/?symbol_id=101
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Orange-Upstream-Latency:
+      - '23'
+      X-Orange-Proxy-Latency:
+      - '0'
+      Expires:
+      - Wed, 24 Jul 2019 06:22:18 GMT
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4fb3cc8ceef6955d-NRT
+    body:
+      encoding: UTF-8
+      string: |-
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+        <title>Redirecting...</title>
+        <h1>Redirecting...</h1>
+        <p>You should be redirected automatically to target URL: <a href="https://openapi.dragonex.io/api/v1/market/real/?symbol_id=101">https://openapi.dragonex.io/api/v1/market/real/?symbol_id=101</a>.  If not click the link.
+    http_version: 
+  recorded_at: Wed, 24 Jul 2019 06:22:19 GMT
+- request:
+    method: get
+    uri: https://openapi.dragonex.io/api/v1/market/real/?symbol_id=101
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Host:
+      - openapi.dragonex.io
   response:
     status:
       code: 200
       message: OK
     headers:
-      Server:
-      - openresty
       Date:
-      - Wed, 24 Oct 2018 05:59:52 GMT
+      - Wed, 24 Jul 2019 06:22:20 GMT
       Content-Type:
       - text/html; charset=utf-8
-      Content-Length:
-      - '304'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - close
+      Set-Cookie:
+      - __cfduid=dfc8803e625dc5e7b2ab9283381af554e1563949340; expires=Thu, 23-Jul-20
+        06:22:20 GMT; path=/; domain=.dragonex.io; HttpOnly; Secure
       Mycode:
       - '1'
       Et:
       - '0'
       Access-Control-Allow-Origin:
       - "*"
+      X-Orange-Upstream-Latency:
+      - '6'
+      X-Orange-Proxy-Latency:
+      - '0'
       Expires:
-      - Wed, 24 Oct 2018 05:59:51 GMT
+      - Wed, 24 Jul 2019 06:22:19 GMT
       Cache-Control:
       - no-cache
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4fb3cc8fccbdd645-NRT
     body:
       encoding: UTF-8
-      string: '{"ok": true, "code": 1, "msg": "", "data": {"columns": ["amount", "close_price",
-        "max_price", "min_price", "open_price", "pre_close_price", "timestamp", "usdt_amount",
-        "volume"], "lists": [["10429.3695", "6615.1043", "6615.1625", "6615.0881",
-        "6615.1625", "0.0000", 1540360740, "10429.3695", "1.5766"]]}}'
+      string: '{"ok": true, "code": 1, "data": [{"close_price": "9739.86", "current_volume":
+        "0.0000", "max_price": "10204.03", "min_price": "9602.90", "open_price": "10129.53",
+        "price_base": "0.00", "price_change": "-389.66", "price_change_rate": "-3.85",
+        "timestamp": 1563949335, "total_amount": "110349364.0226", "total_volume":
+        "11106.8714", "usdt_amount": "110349364.0226", "symbol_id": 101}], "msg":
+        "ok"}'
     http_version: 
-  recorded_at: Wed, 24 Oct 2018 05:59:52 GMT
+  recorded_at: Wed, 24 Jul 2019 06:22:20 GMT
 recorded_with: VCR 4.0.0
