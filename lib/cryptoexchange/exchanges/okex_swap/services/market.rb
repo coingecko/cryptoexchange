@@ -17,7 +17,6 @@ module Cryptoexchange::Exchanges
           "#{Cryptoexchange::Exchanges::OkexSwap::Market::API_URL}/instruments/ticker"
         end
 
-
         def adapt_all(output)
           output.map do |ticker|
             base, target, expire_at = ticker['instrument_id'].split('-')
@@ -31,7 +30,17 @@ module Cryptoexchange::Exchanges
           end
         end
 
+        def get_volume_in_target(volume, market_pair)
+          if market_pair.base == "BTC"
+            volume_in_target = volume * 100
+          else
+            volume_in_target = volume * 10
+          end
+          volume_in_target
+        end
+
         def adapt(output, market_pair)
+          volume_in_target = get_volume_in_target(NumericHelper.to_d(output['volume_24h']), market_pair)
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
@@ -41,7 +50,7 @@ module Cryptoexchange::Exchanges
           ticker.last      = NumericHelper.to_d(output['last'])
           ticker.high      = NumericHelper.to_d(output['high_24h'])
           ticker.low       = NumericHelper.to_d(output['low_24h'])
-          ticker.volume    = nil
+          ticker.volume    = NumericHelper.divide(volume_in_target, ticker.last)
           ticker.timestamp = nil
           ticker.payload   = output
           ticker.contract_interval = "perpetual"
