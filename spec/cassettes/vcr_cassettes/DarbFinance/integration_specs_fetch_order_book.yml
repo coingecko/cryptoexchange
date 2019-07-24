@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.darbfinance.com/api/v1/depth?symbol=BTC_USD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.darbfinance.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 24 Jul 2019 08:54:33 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '877'
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSALB=3geQRwcYTXGGbaylrswCkydFRKAJbTzMsj02dTgb6K+CD9shQlou183qJOxhRTZssGl75V5+3qVJxs7irnLwwPA8nKJNIqjKNaMyc+68DGmudbnAXxvpqO1But8W;
+        Expires=Wed, 31 Jul 2019 08:54:33 GMT; Path=/
+      - XSRF-TOKEN=undefined; Path=/
+      X-Ratelimit-Limit:
+      - '6000'
+      X-Ratelimit-Remaining:
+      - '5999'
+      X-Ratelimit-Reset:
+      - '1563958475'
+    body:
+      encoding: UTF-8
+      string: '{"bids":[[9732.88,0.002],[9730.48,0.831],[9535.47,0.04693259],[9479.3,1.203],[9457.54,1.2521],[9443.65,1.206],[9372.35,1.217],[9255.73,1.21],[9220,0.00108501],[9089.18,1.253977],[8918.79,0.63050507],[8878.46,1.257],[8837.62,0.7446682],[8757.37,0.96182363],[8674.98,0.5074457],[8598.12,2.00256098],[8522.26,0.2769969],[8500.5,1.188403],[8375.07,1.361597],[8161.41,0.4225058],[8124.45,1.2160132],[8028.99,0.2],[8026.18,0.065681],[7962.85,0.28209],[7936.61,1.247649],[7534.3,1.258],[7495.56,1.25441],[7113.94,1.262629],[7041.92,1.28991],[6728.07,1.2689]],"asks":[[9746.62,0.9639],[9864.38,1.2251551],[9942.88,0.60512291],[10236.58,0.949],[10470.47,1.20235],[10999.77,1.2],[11004.4,1.2001809],[11007.36,1.21],[11036.29,1.197],[11512.95,1.20933],[11699.87,1.209],[11766.75,1.2],[12319.52,1.24],[12676.28,1.173035],[12773.57,1.24167],[13480.26,1.2],[13745.8,1.2],[15257.38,1.17299]]}'
+    http_version: 
+  recorded_at: Wed, 24 Jul 2019 08:54:33 GMT
+recorded_with: VCR 4.0.0
