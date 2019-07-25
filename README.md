@@ -170,6 +170,7 @@ Or install it yourself as:
 | Coinfield         | Y       | Y [x]      | Y       |         | Y           | Y        | coinfield         |       |
 | Coinfinit         | Y       | Y [x]      |         |         | Y           | Y        | coinfinit         |       |
 | Coinflex          | Y       | Y [x]      |         |         | Y           | Y        | coinflex          |       |
+| Coinflex (Futures)| Y       | Y [x]      |         |         | Y           | Y        | coinflex_futures  |       |
 | Coingi            | Y       | Y [x]      | Y       |         | Y           | Y        | coingi            |       |
 | Coinhouse         | Y       |            |         |         | Y           | Y        | coinhouse         |       |
 | Coinhub           | Y       | Y          | Y       |         | Y           | Y        | coinhub           |       |
