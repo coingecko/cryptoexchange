@@ -2,125 +2,158 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.aex.com/ticker.php?c=all&mk_type=btc
+    uri: https://api.aex.zone/ticker.php?c=all&mk_type=btc
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       Connection:
       - close
       Host:
-      - api.aex.com
+      - api.aex.zone
       User-Agent:
-      - http.rb/1.0.4
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Thu, 18 Jan 2018 09:10:14 GMT
+      - Thu, 25 Jul 2019 07:59:29 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
       - close
-      Vary:
-      - Accept-Encoding
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/5.4.16
       Pragma:
       - no-cache
       Cache-Control:
       - no-cache,must-revalidate
-      Set-Cookie:
-      - __jsluid=89ac0887a134ffaab82fe6baccf02ab0; max-age=31536000; path=/; HttpOnly
-      X-Cache:
-      - bypass
     body:
       encoding: UTF-8
-      string: '{"ltc":{"ticker":{"high":0.017,"low":0.0148,"last":0.0161,"vol":1266.540898,"buy":0.0161,"sell":0.0165}},"xpm":{"ticker":{"high":6.52e-5,"low":5.54e-5,"last":5.83e-5,"vol":8756.832224,"buy":5.8e-5,"sell":6.27e-5}},"xrp":{"ticker":{"high":0.000131,"low":9.1e-5,"last":0.000115,"vol":340086.546217,"buy":0.000112,"sell":0.000119}},"xlm":{"ticker":{"high":4.4e-5,"low":3.11e-5,"last":4.27e-5,"vol":432204.89859,"buy":4.04e-5,"sell":4.27e-5}},"bts":{"ticker":{"high":3.13e-5,"low":2.28e-5,"last":2.84e-5,"vol":4363325.48308,"buy":2.78e-5,"sell":2.9e-5}},"zcc":{"ticker":{"high":1.12e-6,"low":9.4e-7,"last":9.7e-7,"vol":904834.081744,"buy":9.5e-7,"sell":9.7e-7}},"mec":{"ticker":{"high":8.4e-6,"low":7.0e-6,"last":8.0e-6,"vol":79750.547177,"buy":8.0e-6,"sell":8.2e-6}},"tag":{"ticker":{"high":1.3e-5,"low":1.08e-5,"last":1.19e-5,"vol":38806.248837,"buy":1.19e-5,"sell":1.21e-5}},"doge":{"ticker":{"high":7.0e-7,"low":5.1e-7,"last":6.2e-7,"vol":75170768.673409,"buy":6.1e-7,"sell":6.2e-7}},"ric":{"ticker":{"high":2.399e-5,"low":1.752e-5,"last":2.002e-5,"vol":5547.410283,"buy":2.002e-5,"sell":2.244e-5}},"dash":{"ticker":{"high":0.078,"low":0.067,"last":0.07,"vol":14.824631,"buy":0.068,"sell":0.072}},"nxt":{"ticker":{"high":2.9e-5,"low":2.3e-5,"last":2.8e-5,"vol":439574.266026,"buy":2.7e-5,"sell":2.8e-5}},"blk":{"ticker":{"high":5.16e-5,"low":4.25e-5,"last":5.16e-5,"vol":28829.213156,"buy":5.1e-5,"sell":5.18e-5}},"vash":{"ticker":{"high":5.8e-7,"low":4.7e-7,"last":5.5e-7,"vol":2066595.954453,"buy":5.4e-7,"sell":5.5e-7}},"eac":{"ticker":{"high":1.4e-7,"low":1.1e-7,"last":1.4e-7,"vol":100462704.13211,"buy":1.3e-7,"sell":1.4e-7}},"xem":{"ticker":{"high":0.0001,"low":7.0e-5,"last":9.0e-5,"vol":145666.195135,"buy":9.0e-5,"sell":9.3e-5}},"hlb":{"ticker":{"high":8.3e-7,"low":6.5e-7,"last":8.3e-7,"vol":258441.365534,"buy":7.7e-7,"sell":8.2e-7}},"ncs":{"ticker":{"high":9.0e-7,"low":5.0e-7,"last":6.8e-7,"vol":1193169.0514532,"buy":6.5e-7,"sell":7.1e-7}},"xzc":{"ticker":{"high":0.0064,"low":0.0053,"last":0.0057,"vol":167.300697,"buy":0.0057,"sell":0.0059}},"mgc":{"ticker":{"high":1.78e-6,"low":1.41e-6,"last":1.41e-6,"vol":833124.9339847,"buy":1.4e-6,"sell":1.41e-6}},"xcn":{"ticker":{"high":8.5e-7,"low":7.0e-7,"last":8.0e-7,"vol":3141984.427042,"buy":7.8e-7,"sell":8.0e-7}},"ardr":{"ticker":{"high":0.000119,"low":7.4e-5,"last":9.8e-5,"vol":249861.934038,"buy":9.7e-5,"sell":9.8e-5}},"qrk":{"ticker":{"high":1.9e-6,"low":1.65e-6,"last":1.89e-6,"vol":124020.160563,"buy":1.77e-6,"sell":1.88e-6}},"wdc":{"ticker":{"high":8.69e-6,"low":5.0e-6,"last":6.01e-6,"vol":102258.57574,"buy":6.0e-6,"sell":6.5e-6}},"sys":{"ticker":{"high":5.86e-5,"low":4.71e-5,"last":5.86e-5,"vol":3995.280061,"buy":5.6e-5,"sell":5.8e-5}},"eth":{"ticker":{"high":0.0927,"low":0.0821,"last":0.0891,"vol":621.934825,"buy":0.089,"sell":0.0907}},"etc":{"ticker":{"high":0.00267,"low":0.00235,"last":0.0026,"vol":8667.097055,"buy":0.0026,"sell":0.00263}},"tmc":{"ticker":{"high":9.5e-5,"low":8.8e-5,"last":9.3e-5,"vol":252916.421144,"buy":9.2e-5,"sell":9.3e-5}},"bcc":{"ticker":{"high":0.164,"low":0.147,"last":0.161,"vol":106.078028,"buy":0.157,"sell":0.161}},"inf":{"ticker":{"high":1.43e-6,"low":1.15e-6,"last":1.2e-6,"vol":1642668.783254,"buy":1.21e-6,"sell":1.26e-6}},"bcd":{"ticker":{"high":0.00359,"low":0.00237,"last":0.00321,"vol":2362.848507,"buy":0.00306,"sell":0.0032}},"bcx":{"ticker":{"high":5.7e-6,"low":4.37e-6,"last":5.44e-6,"vol":253692.791529,"buy":5.01e-6,"sell":5.45e-6}},"sbtc":{"ticker":{"high":0.0084,"low":0.0075,"last":0.0077,"vol":30.182182,"buy":0.0077,"sell":0.0084}},"qash":{"ticker":{"high":0.00013,"low":9.1e-5,"last":0.000118,"vol":5812.775248,"buy":0.000117,"sell":0.000118}},"lbtc":{"ticker":{"high":0.01,"low":0.0075,"last":0.0092,"vol":50.178083,"buy":0.0087,"sell":0.0092}},"lend":{"ticker":{"high":1.9e-5,"low":1.24e-5,"last":1.445e-5,"vol":61456.676583,"buy":1.445e-5,"sell":1.65e-5}},"ae":{"ticker":{"high":0.000145,"low":0.000121,"last":0.000136,"vol":48909.334014,"buy":0.000131,"sell":0.000137}},"cvc":{"ticker":{"high":6.9e-5,"low":5.7e-5,"last":6.3e-5,"vol":7795.230522,"buy":6.2e-5,"sell":6.8e-5}},"bnt":{"ticker":{"high":0.000524,"low":0.000444,"last":0.000524,"vol":176.5828218,"buy":0.000503,"sell":0.000529}},"knc":{"ticker":{"high":0.000292,"low":0.00026,"last":0.000283,"vol":1088.454102,"buy":0.000274,"sell":0.000285}},"dat":{"ticker":{"high":6.23e-6,"low":5.05e-6,"last":6.2e-6,"vol":435469.773301,"buy":6.2e-6,"sell":6.23e-6}},"bite":{"ticker":{"high":0.00087,"low":0.00054,"last":0.0007,"vol":64.261339,"buy":0.00066,"sell":0.00074}},"god":{"ticker":{"high":0.0063,"low":0.0057,"last":0.0057,"vol":9.215922,"buy":0.0054,"sell":0.006}},"ubtc":{"ticker":{"high":0.016,"low":0.0151,"last":0.0155,"vol":5.801662,"buy":0.0152,"sell":0.016}},"ignis":{"ticker":{"high":4.6e-5,"low":3.5e-5,"last":4.1e-5,"vol":96320.862214,"buy":4.1e-5,"sell":4.2e-5}},"wic":{"ticker":{"high":4.6e-5,"low":3.7e-5,"last":4.2e-5,"vol":202307.311551,"buy":4.2e-5,"sell":4.3e-5}},"gnx":{"ticker":{"high":4.64e-5,"low":3.65e-5,"last":3.93e-5,"vol":1275481.56059,"buy":3.93e-5,"sell":3.95e-5}},"can":{"ticker":{"high":0.000133,"low":0.000103,"last":0.000117,"vol":2412.379855,"buy":0.00011,"sell":0.000115}},"bash":{"ticker":{"high":1.23e-6,"low":7.8e-7,"last":7.9e-7,"vol":1354160.743375,"buy":7.9e-7,"sell":8.5e-7}}}'
+      string: '{"zcc":{"ticker":{"high":4.5e-7,"low":2.0e-7,"last":4.5e-7,"vol":1043649.527458,"buy":2.1e-7,"sell":3.8e-7,"range":0.9565}},"tag":{"ticker":{"high":1.52e-6,"low":1.31e-6,"last":1.4e-6,"vol":21077.608036,"buy":1.32e-6,"sell":1.6e-6,"range":-0.0789}},"doge":{"ticker":{"high":2.9e-7,"low":2.9e-7,"last":2.9e-7,"vol":4758.620687,"buy":2.8e-7,"sell":3.0e-7,"range":0}},"vash":{"ticker":{"high":1.6e-7,"low":8.0e-8,"last":1.6e-7,"vol":4598.888888,"buy":9.0e-8,"sell":1.6e-7,"range":0.7777}},"ncs":{"ticker":{"high":2.4e-7,"low":2.1e-7,"last":2.1e-7,"vol":134000,"buy":2.7e-7,"sell":2.3e-7,"range":-0.16}},"eth":{"ticker":{"high":0.0222,"low":0.0213,"last":0.0222,"vol":8.366069,"buy":0.0209,"sell":0.0232,"range":0.0422}},"bash":{"ticker":{"high":6.0e-8,"low":6.0e-8,"last":6.0e-8,"vol":501557.866667,"buy":5.0e-8,"sell":7.0e-8,"range":0}},"gat":{"ticker":{"high":2.2e-7,"low":2.0e-7,"last":2.1e-7,"vol":7115439.0480089,"buy":2.0e-7,"sell":2.1e-7,"range":0}},"eos":{"ticker":{"high":0.00045,"low":0.000436,"last":0.00045,"vol":4714.676499,"buy":0.000432,"sell":0.000548,"range":0.2362}},"fo":{"ticker":{"high":6.9e-7,"low":6.6e-7,"last":6.9e-7,"vol":22385.180075,"buy":6.6e-7,"sell":7.0e-7,"range":0.0147}}}'
     http_version: 
-  recorded_at: Thu, 18 Jan 2018 09:10:15 GMT
+  recorded_at: Thu, 25 Jul 2019 07:59:27 GMT
 - request:
     method: get
-    uri: https://api.aex.com/ticker.php?c=all&mk_type=bitcny
+    uri: https://api.aex.zone/ticker.php?c=all&mk_type=usdt
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       Connection:
       - close
       Host:
-      - api.aex.com
+      - api.aex.zone
       User-Agent:
-      - http.rb/1.0.4
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Thu, 18 Jan 2018 09:10:15 GMT
+      - Thu, 25 Jul 2019 07:59:29 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
       - close
-      Vary:
-      - Accept-Encoding
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/5.4.16
       Pragma:
       - no-cache
       Cache-Control:
       - no-cache,must-revalidate
-      Set-Cookie:
-      - __jsluid=279960f78ea137287d3ad97889a8dce4; max-age=31536000; path=/; HttpOnly
-      X-Cache:
-      - bypass
     body:
       encoding: UTF-8
-      string: '{"btc":{"ticker":{"high":74997,"low":60234,"last":67851,"vol":423.486678,"buy":67851,"sell":68187}},"bcc":{"ticker":{"high":11453,"low":8969,"last":10599,"vol":23.297302,"buy":10599,"sell":10736}},"ltc":{"ticker":{"high":1243,"low":851,"last":1084,"vol":889.138592,"buy":1069,"sell":1098}},"eth":{"ticker":{"high":6860,"low":4800,"last":6100,"vol":658.820124,"buy":5957,"sell":6100}},"etc":{"ticker":{"high":197,"low":131,"last":174,"vol":6500.326153,"buy":174,"sell":175}},"bts":{"ticker":{"high":2.22,"low":1.35,"last":1.95,"vol":12092322.610505,"buy":1.95,"sell":1.96}},"inf":{"ticker":{"high":0.108,"low":0.069,"last":0.081,"vol":21488392.239187,"buy":0.081,"sell":0.083}},"xzc":{"ticker":{"high":433,"low":363,"last":390,"vol":616.710808,"buy":383,"sell":395}},"omg":{"ticker":{"high":116,"low":80,"last":110,"vol":1044.462419,"buy":107,"sell":111}},"snt":{"ticker":{"high":1.96,"low":1.21,"last":1.779,"vol":159044.883049,"buy":1.74,"sell":1.78}},"xrp":{"ticker":{"high":9.16,"low":5.61,"last":8.16,"vol":292880.430543,"buy":8,"sell":8.16}},"doge":{"ticker":{"high":0.05,"low":0.032,"last":0.042,"vol":280712290.70878,"buy":0.041,"sell":0.042}},"nxt":{"ticker":{"high":2.2,"low":1.3,"last":1.9,"vol":930932.720883,"buy":1.8,"sell":1.9}},"xlm":{"ticker":{"high":3.22,"low":1.88,"last":2.8,"vol":189457.899745,"buy":2.8,"sell":2.86}},"dash":{"ticker":{"high":5254,"low":4085,"last":4671,"vol":4.2176,"buy":4611,"sell":4764}},"xem":{"ticker":{"high":7.3,"low":4.1,"last":6.1,"vol":66604.667136,"buy":6,"sell":6.2}},"ardr":{"ticker":{"high":8.7,"low":4.4,"last":6.4,"vol":130659.193127,"buy":6.4,"sell":6.6}},"dat":{"ticker":{"high":0.438,"low":0.332,"last":0.419,"vol":838443.399622,"buy":0.414,"sell":0.426}},"bcx":{"ticker":{"high":0.42,"low":0.258,"last":0.366,"vol":923232.518138,"buy":0.366,"sell":0.373}},"ignis":{"ticker":{"high":3.4,"low":2.2,"last":2.7,"vol":128528.668663,"buy":2.6,"sell":2.8}},"wic":{"ticker":{"high":3.2,"low":2.3,"last":2.7,"vol":1276484.52793,"buy":2.7,"sell":2.8}}}'
+      string: '{"btc":{"ticker":{"high":10594,"low":9524,"last":10081,"vol":946.668969,"buy":10035,"sell":10084,"range":0.0384}},"gat":{"ticker":{"high":0.00218,"low":0.00208,"last":0.00209,"vol":818748059.91739,"buy":0.00207,"sell":0.00203,"range":-0.0141}},"ltc":{"ticker":{"high":101.5,"low":85.2,"last":97.3,"vol":82503.416473,"buy":93.7,"sell":98.7,"range":0.061}},"eth":{"ticker":{"high":230,"low":205,"last":222,"vol":18481.383179,"buy":220,"sell":225,"range":0.0776}},"etc":{"ticker":{"high":6.52,"low":5.28,"last":6.16,"vol":1324905.23341,"buy":6.12,"sell":6.23,"range":0.0476}},"bts":{"ticker":{"high":0.0581,"low":0.0421,"last":0.0452,"vol":191567961.69791,"buy":0.045,"sell":0.0458,"range":0.0438}},"dash":{"ticker":{"high":124,"low":91.8,"last":111.4,"vol":23403.771075,"buy":109.1,"sell":112.8,"range":0.0333}},"eos":{"ticker":{"high":4.72,"low":4.07,"last":4.57,"vol":1223059.47662,"buy":4.54,"sell":4.7,"range":0.1092}},"xrp":{"ticker":{"high":0.316,"low":0.28,"last":0.303,"vol":27132520.131795,"buy":0.279,"sell":0.312,"range":0.0133}},"gnx":{"ticker":{"high":0.03,"low":0.0239,"last":0.027,"vol":97179992.260131,"buy":0.0251,"sell":0.0292,"range":-0.0721}},"ignis":{"ticker":{"high":0.0559,"low":0.0262,"last":0.0453,"vol":62475882.386631,"buy":0.0416,"sell":0.0458,"range":0.1705}},"cvc":{"ticker":{"high":0.058,"low":0.042,"last":0.055,"vol":56839894.942722,"buy":0.041,"sell":0.059,"range":0.1}},"xlm":{"ticker":{"high":0.0971,"low":0.0821,"last":0.0851,"vol":31885828.998843,"buy":0.0857,"sell":0.0868,"range":-0.0035}},"knc":{"ticker":{"high":0.225,"low":0.172,"last":0.213,"vol":13895437.314134,"buy":0.171,"sell":0.226,"range":0.2171}},"eosdac":{"ticker":{"high":0.0073,"low":0.0054,"last":0.0058,"vol":436674838.01525,"buy":0.0054,"sell":0.0068,"range":-0.0169}},"bnt":{"ticker":{"high":0.59,"low":0.45,"last":0.47,"vol":3844322.54761,"buy":0.46,"sell":0.52,"range":-0.1454}},"nxt":{"ticker":{"high":0.0276,"low":0.0162,"last":0.025,"vol":121347179.45175,"buy":0.0203,"sell":0.0277,"range":0.1467}},"doge":{"ticker":{"high":0.00332,"low":0.0027,"last":0.00309,"vol":2730206065.0449,"buy":0.00278,"sell":0.00327,"range":0.0198}},"cnet":{"ticker":{"high":0.0111,"low":0.008,"last":0.0103,"vol":278732422.51209,"buy":0.0083,"sell":0.011,"range":0.0842}},"ae":{"ticker":{"high":0.32,"low":0.28,"last":0.3,"vol":3217828.93418,"buy":0.29,"sell":0.31,"range":0.0344}},"grin":{"ticker":{"high":3.1,"low":2.7,"last":2.87,"vol":956276.500224,"buy":2.69,"sell":3.05,"range":0.0177}},"upb":{"ticker":{"high":0.001799,"low":0.001019,"last":0.001724,"vol":1600043516.7317,"buy":0.001719,"sell":0.001736,"range":-0.0148}},"pvt":{"ticker":{"high":0.00199,"low":0.00152,"last":0.00171,"vol":1562400503.4425,"buy":0.0016,"sell":0.002,"range":0.049}}}'
     http_version: 
-  recorded_at: Thu, 18 Jan 2018 09:10:15 GMT
+  recorded_at: Thu, 25 Jul 2019 07:59:27 GMT
 - request:
     method: get
-    uri: https://api.aex.com/ticker.php?c=all&mk_type=bitusd
+    uri: https://api.aex.zone/ticker.php?c=all&mk_type=eth
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       Connection:
       - close
       Host:
-      - api.aex.com
+      - api.aex.zone
       User-Agent:
-      - http.rb/1.0.4
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Thu, 18 Jan 2018 09:10:15 GMT
+      - Thu, 25 Jul 2019 07:59:29 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
       - chunked
       Connection:
       - close
-      Vary:
-      - Accept-Encoding
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/5.4.16
       Pragma:
       - no-cache
       Cache-Control:
       - no-cache,must-revalidate
-      Set-Cookie:
-      - __jsluid=f3315f6a85bccd3c146832ffbf2966fe; max-age=31536000; path=/; HttpOnly
-      X-Cache:
-      - bypass
     body:
       encoding: UTF-8
-      string: '{"btc":{"ticker":{"high":11500,"low":9303,"last":10900,"vol":9.390237,"buy":10000,"sell":10980}},"bcc":{"ticker":{"high":1501,"low":1501,"last":1501,"vol":0.2,"buy":1500,"sell":2787}},"ltc":{"ticker":{"high":190,"low":180,"last":180,"vol":6.389325,"buy":98,"sell":238}},"eth":{"ticker":{"high":1180,"low":786,"last":1180,"vol":6.909948,"buy":800,"sell":1180}},"etc":{"ticker":{"high":23.7,"low":21,"last":21,"vol":19.576885,"buy":21.5,"sell":30}},"bts":{"ticker":{"high":0.46,"low":0.233,"last":0.46,"vol":49179.728272,"buy":0.27,"sell":0.4}},"inf":{"ticker":{"high":0.012,"low":0.0119,"last":0.012,"vol":10601.21823,"buy":0.012,"sell":0.025}},"xzc":{"ticker":""},"omg":{"ticker":{"high":21.1,"low":21.1,"last":21.1,"vol":4.2e-5,"buy":15,"sell":29.9}},"snt":{"ticker":""}}'
+      string: '{"xrp":{"ticker":{"high":0.00142,"low":0.00142,"last":0.00142,"vol":408.94343133,"buy":0.0013,"sell":0.00142,"range":0}},"eos":{"ticker":{"high":0.0211,"low":0.0199,"last":0.0209,"vol":48.30924019,"buy":0.0206,"sell":0.0209,"range":0.045}},"gat":{"ticker":{"high":1.01e-5,"low":9.6e-6,"last":9.8e-6,"vol":3084.988957,"buy":8.1e-6,"sell":9.8e-6,"range":-0.02}},"mts":{"ticker":{"high":7.1e-7,"low":7.0e-7,"last":7.0e-7,"vol":12000400,"buy":4.7e-7,"sell":7.0e-7,"range":-0.014}},"sac":{"ticker":{"high":8.1e-5,"low":8.1e-5,"last":8.1e-5,"vol":30012,"buy":8.0e-5,"sell":8.1e-5,"range":0.0253}},"tac":{"ticker":{"high":5.41e-5,"low":5.41e-5,"last":5.41e-5,"vol":100,"buy":4.5e-5,"sell":5.4e-5,"range":0.0607}}}'
     http_version: 
-  recorded_at: Thu, 18 Jan 2018 09:10:15 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Thu, 25 Jul 2019 07:59:27 GMT
+- request:
+    method: get
+    uri: https://api.aex.zone/ticker.php?c=all&mk_type=cnc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.aex.zone
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 25 Jul 2019 07:59:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - nginx
+      X-Powered-By:
+      - PHP/5.4.16
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache,must-revalidate
+    body:
+      encoding: UTF-8
+      string: '{"gat":{"ticker":{"high":0.01506,"low":0.01452,"last":0.01467,"vol":183252849.70811,"buy":0.01466,"sell":0.01356,"range":-0.0246}},"btc":{"ticker":{"high":70988,"low":66584,"last":69720,"vol":11216.263191,"buy":69719,"sell":69721,"range":0.029}},"eth":{"ticker":{"high":1570,"low":1435,"last":1531,"vol":17428.836899,"buy":1530,"sell":1536,"range":0.0631}},"usdt":{"ticker":{"high":6.994,"low":6.935,"last":6.946,"vol":906289.515994,"buy":6.943,"sell":6.947,"range":-0.0057}},"bts":{"ticker":{"high":0.317,"low":0.301,"last":0.314,"vol":28341409.32283,"buy":0.313,"sell":0.315,"range":0.0363}},"inf":{"ticker":{"high":0.0044,"low":0.004,"last":0.0042,"vol":331159453.25245,"buy":0.0041,"sell":0.0043,"range":0.0243}},"eac":{"ticker":{"high":0.00166,"low":0.00154,"last":0.00159,"vol":2537629604.8024,"buy":0.00155,"sell":0.0016,"range":0.0127}},"doge":{"ticker":{"high":0.02049,"low":0.01927,"last":0.02028,"vol":1409425269.3952,"buy":0.02029,"sell":0.02033,"range":0.0421}},"xlm":{"ticker":{"high":0.627,"low":0.575,"last":0.602,"vol":19568961.55761,"buy":0.601,"sell":0.619,"range":0.0397}},"ignis":{"ticker":{"high":0.31,"low":0.288,"last":0.308,"vol":27251989.184699,"buy":0.29,"sell":0.309,"range":0.0694}},"xrp":{"ticker":{"high":2.17,"low":2.06,"last":2.13,"vol":2482505.853985,"buy":2.12,"sell":2.13,"range":0.024}},"xyt":{"ticker":{"high":0.011,"low":0.01,"last":0.011,"vol":3551.165617,"buy":0.01,"sell":0.011,"range":0.1}},"ae":{"ticker":{"high":2.15,"low":2.01,"last":2.1,"vol":1233746.579174,"buy":2.16,"sell":2.11,"range":0.0447}},"eos":{"ticker":{"high":32.91,"low":28.58,"last":31.59,"vol":1317468.803114,"buy":31.58,"sell":31.75,"range":0.0984}},"bcx":{"ticker":{"high":0.0006,"low":0.0005,"last":0.0006,"vol":6602144.821019,"buy":0.0005,"sell":0.0006,"range":0.2}},"etc":{"ticker":{"high":43.6,"low":40.7,"last":42.8,"vol":259266.293862,"buy":42.6,"sell":42.9,"range":0.0439}},"idt":{"ticker":{"high":0.1737,"low":0.1173,"last":0.1456,"vol":344675294.25585,"buy":0.1454,"sell":0.1457,"range":0.1905}},"ltc":{"ticker":{"high":678,"low":618,"last":653,"vol":20333.657438,"buy":652,"sell":654,"range":0.0464}},"nxt":{"ticker":{"high":0.17,"low":0.15,"last":0.156,"vol":47961436.088594,"buy":0.153,"sell":0.165,"range":0.04}},"ardr":{"ticker":{"high":0.483,"low":0.446,"last":0.474,"vol":19944654.365881,"buy":0.472,"sell":0.475,"range":0.0627}},"wicc":{"ticker":{"high":1.154,"low":1.094,"last":1.122,"vol":3062053.631653,"buy":1.125,"sell":1.129,"range":-0.0105}},"xem":{"ticker":{"high":0.47,"low":0.436,"last":0.462,"vol":25706306.2538,"buy":0.461,"sell":0.464,"range":0.0547}},"xzc":{"ticker":{"high":69.1,"low":65.2,"last":65.9,"vol":143275.553196,"buy":65.6,"sell":65.9,"range":-0.0105}},"snt":{"ticker":{"high":0.1516,"low":0.1404,"last":0.1492,"vol":85600478.85053,"buy":0.1491,"sell":0.1494,"range":0.0559}},"omg":{"ticker":{"high":12.08,"low":10.55,"last":11.72,"vol":1083473.414241,"buy":11.7,"sell":11.73,"range":0.1046}},"dash":{"ticker":{"high":784,"low":744,"last":781,"vol":14349.268032,"buy":780,"sell":782,"range":0.0371}},"bcv":{"ticker":{"high":0.117,"low":0.0814,"last":0.0873,"vol":281568989.06467,"buy":0.0872,"sell":0.0876,"range":-0.1507}},"atn":{"ticker":{"high":0.126,"low":0.124,"last":0.126,"vol":8466245.51826,"buy":0.125,"sell":0.126,"range":0.0161}},"bite":{"ticker":{"high":0.58,"low":0.57,"last":0.57,"vol":2275641.444071,"buy":0.56,"sell":0.58,"range":0.0178}},"lxt":{"ticker":{"high":0.1354,"low":0.118,"last":0.1266,"vol":188066168.39814,"buy":0.1262,"sell":0.1267,"range":0.0647}},"yoyo":{"ticker":{"high":0.128,"low":0.119,"last":0.123,"vol":48171783.391498,"buy":0.122,"sell":0.126,"range":-0.008}},"stb":{"ticker":{"high":0.025,"low":0.024,"last":0.025,"vol":139192587.26212,"buy":0.024,"sell":0.026,"range":0}},"btm":{"ticker":{"high":0.886,"low":0.782,"last":0.816,"vol":11985630.834829,"buy":0.813,"sell":0.819,"range":0.0136}},"seer":{"ticker":{"high":0.00398,"low":0.00361,"last":0.0039,"vol":1396032580.4339,"buy":0.00445,"sell":0.00398,"range":0.0714}},"fgc":{"ticker":{"high":0.03,"low":0.028,"last":0.03,"vol":106241545.44651,"buy":0.029,"sell":0.031,"range":0.0344}},"lend":{"ticker":{"high":0.0359,"low":0.0321,"last":0.0325,"vol":262826289.16748,"buy":0.0322,"sell":0.035,"range":-0.0384}},"qash":{"ticker":{"high":0.804,"low":0.764,"last":0.774,"vol":16716986.115397,"buy":0.774,"sell":0.776,"range":0}},"mgc":{"ticker":{"high":0.058,"low":0.051,"last":0.057,"vol":7485600.002966,"buy":0.057,"sell":0.057,"range":0.0178}},"can":{"ticker":{"high":0.164,"low":0.144,"last":0.163,"vol":46239458.372068,"buy":0.158,"sell":0.165,"range":0.1013}},"vash":{"ticker":{"high":0.008,"low":0.0076,"last":0.0078,"vol":552542720.22862,"buy":0.0076,"sell":0.008,"range":-0.0126}},"ela":{"ticker":{"high":20.3,"low":18.1,"last":19.5,"vol":467719.456237,"buy":19.4,"sell":19.6,"range":0.0714}},"tyt":{"ticker":{"high":0.0042,"low":0.0035,"last":0.0042,"vol":49967596.033225,"buy":0.0041,"sell":0.0042,"range":0.2352}},"cdr":{"ticker":{"high":0.059,"low":0.054,"last":0.058,"vol":16193591.892531,"buy":0.055,"sell":0.06,"range":-0.0169}},"bchabc":{"ticker":{"high":2209,"low":2001,"last":2121,"vol":14093.284403,"buy":2117,"sell":2125,"range":0.0531}},"bchsv":{"ticker":{"high":1191,"low":1122,"last":1151,"vol":17101.194167,"buy":1150,"sell":1152,"range":0.0114}},"bhd":{"ticker":{"high":138.3,"low":125.1,"last":128,"vol":797.396342,"buy":130,"sell":133,"range":-0.0411}},"ftn":{"ticker":{"high":0.232,"low":0.208,"last":0.231,"vol":39807406.799744,"buy":0.212,"sell":0.233,"range":0.0312}},"key":{"ticker":{"high":0.0128,"low":0.0108,"last":0.0122,"vol":369218435.39838,"buy":0.0117,"sell":0.0128,"range":0.0892}},"grin":{"ticker":{"high":21.4,"low":19.3,"last":20.8,"vol":535905.801004,"buy":20.6,"sell":20.8,"range":0.0558}},"lfc":{"ticker":{"high":0.006,"low":0.005,"last":0.006,"vol":403.333333,"buy":0.005,"sell":0.006,"range":0}},"fo":{"ticker":{"high":0.0487,"low":0.046,"last":0.0479,"vol":183384994.69815,"buy":0.0466,"sell":0.0488,"range":-0.0082}},"pld":{"ticker":{"high":0.2999,"low":0.2329,"last":0.2643,"vol":44192044.263142,"buy":0.2588,"sell":0.2666,"range":0.103}},"nld":{"ticker":{"high":0.065,"low":0.06,"last":0.062,"vol":115094908.72599,"buy":0.06,"sell":0.066,"range":-0.0461}},"cif":{"ticker":{"high":0.084,"low":0.053,"last":0.061,"vol":126943855.97598,"buy":0.058,"sell":0.085,"range":-0.2077}},"gt":{"ticker":{"high":6.78,"low":5.47,"last":6.02,"vol":1526075.085669,"buy":5.61,"sell":6.2,"range":0.075}},"ett":{"ticker":{"high":0.00211,"low":0.00185,"last":0.002,"vol":4151917256.053,"buy":0.00184,"sell":0.00212,"range":0.0416}},"atom":{"ticker":{"high":28.3,"low":25.6,"last":27.3,"vol":308340.120277,"buy":27.3,"sell":27.6,"range":0.0581}},"xff":{"ticker":{"high":0.599,"low":0.482,"last":0.56,"vol":17023253.838735,"buy":0.51,"sell":0.599,"range":0.1089}},"enu":{"ticker":{"high":0.022,"low":0.021,"last":0.021,"vol":5763822.026361,"buy":0.02,"sell":0.021,"range":0}},"beet":{"ticker":{"high":0.075,"low":0.0601,"last":0.0743,"vol":147401281.95578,"buy":0.067,"sell":0.0749,"range":0.0629}},"upb":{"ticker":{"high":0.01206,"low":0.01,"last":0.01197,"vol":564032551.25116,"buy":0.01194,"sell":0.01206,"range":0.0668}},"algo":{"ticker":{"high":4.55,"low":3.96,"last":4.12,"vol":1996083.868796,"buy":4.11,"sell":4.12,"range":-0.0305}},"pizza":{"ticker":{"high":0.142,"low":0.119,"last":0.13,"vol":82044994.196163,"buy":0.119,"sell":0.137,"range":0.0156}},"dapp":{"ticker":{"high":0.587,"low":0.53,"last":0.556,"vol":17358205.49651,"buy":0.535,"sell":0.563,"range":-0.0279}},"btsucn":{"ticker":{"high":0.0068,"low":0.0052,"last":0.0063,"vol":1594427407.8025,"buy":0.0061,"sell":0.0065,"range":0.1454}},"vsys":{"ticker":{"high":1.773,"low":1.65,"last":1.722,"vol":24432208.278375,"buy":1.715,"sell":1.72,"range":-0.0265}},"bkbt":{"ticker":{"high":0.00723,"low":0.00593,"last":0.0067,"vol":1949433384.8353,"buy":0.00666,"sell":0.00671,"range":0.1204}},"safe":{"ticker":{"high":9.83,"low":9.7,"last":9.71,"vol":1889.662326,"buy":7.22,"sell":10,"range":-0.0112}},"jbc":{"ticker":{"high":0.82,"low":0.41,"last":0.7,"vol":3762011.461433,"buy":0.67,"sell":0.7,"range":-0.1025}},"qrk":{"ticker":{"high":0.066,"low":0.063,"last":0.064,"vol":79276454.062892,"buy":0.062,"sell":0.067,"range":-0.0303}},"tac":{"ticker":{"high":0.073,"low":0.06,"last":0.068,"vol":12718634.305348,"buy":0.06,"sell":0.073,"range":-0.0285}},"opc":{"ticker":{"high":0.006,"low":0.004,"last":0.0046,"vol":7940357.219384,"buy":0.0046,"sell":0.005,"range":0.0222}}}'
+    http_version: 
+  recorded_at: Thu, 25 Jul 2019 07:59:27 GMT
+recorded_with: VCR 4.0.0

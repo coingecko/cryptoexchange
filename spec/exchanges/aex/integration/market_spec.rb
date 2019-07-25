@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'AEX integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:ltc_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'LTC', target: 'BTC', market: 'aex')}
+  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: 'aex')}
 
   it 'fetch pairs' do
     pairs = client.pairs('aex')
@@ -14,11 +14,17 @@ RSpec.describe 'AEX integration specs' do
     expect(pair.market).to eq 'aex'
   end
 
-  it 'fetch ticker' do
-    ticker = client.ticker(ltc_btc_pair)
+  it 'give trade url' do
+    btc_usdt_pair = Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usdt', market: 'aex')
+    trade_page_url = client.trade_page_url 'aex', base: btc_usdt_pair.base, target: btc_usdt_pair.target
+    expect(trade_page_url).to eq "https://www.aex.com/page/trade.html?mk_type=USDT&trade_coin_name=BTC"
+  end
 
-    expect(ticker.base).to eq 'LTC'
-    expect(ticker.target).to eq 'BTC'
+  it 'fetch ticker' do
+    ticker = client.ticker(btc_usdt_pair)
+
+    expect(ticker.base).to eq 'BTC'
+    expect(ticker.target).to eq 'USDT'
     expect(ticker.market).to eq 'aex'
     expect(ticker.last).to be_a Numeric
     expect(ticker.high).to be_a Numeric
@@ -31,10 +37,10 @@ RSpec.describe 'AEX integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(ltc_btc_pair)
+    order_book = client.order_book(btc_usdt_pair)
 
-    expect(order_book.base).to eq 'LTC'
-    expect(order_book.target).to eq 'BTC'
+    expect(order_book.base).to eq 'BTC'
+    expect(order_book.target).to eq 'USDT'
     expect(order_book.market).to eq 'aex'
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
@@ -46,13 +52,13 @@ RSpec.describe 'AEX integration specs' do
   end
 
   it 'fetch trade' do
-    trades = client.trades(ltc_btc_pair)
+    trades = client.trades(btc_usdt_pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty
     expect(trade.trade_id).to_not be_nil
-    expect(trade.base).to eq 'LTC'
-    expect(trade.target).to eq 'BTC'
+    expect(trade.base).to eq 'BTC'
+    expect(trade.target).to eq 'USDT'
     expect(trade.price).to_not be_nil
     expect(trade.amount).to_not be_nil
     expect(trade.timestamp).to be_a Numeric
