@@ -28,7 +28,7 @@ Or install it yourself as:
 | Abcc              | Y       | N          | N       |         | Y           | Y        | abcc              |       |
 | Abucoins          | Y       | Y          | Y       |         | Y           |          | abucoins          |       |
 | ACX               | Y       | Y [x]      | Y       |         | Y           | Y        | acx               |       |
-| AEX               | Y       | Y          | Y       |         | Y           |          | aex               |       |
+| AEX               | Y       | Y [x]      | Y       |         | Y           |          | aex               |       |
 | Airswap           | Y       |            |         |         |             |          | airswap           |       |
 | Allbit            | Y       | N          | N       |         | Y           | Y        | allbit            |       |
 | Allcoin           | Y       | Y [x]      | Y       |         | Y           |          | allcoin           |       |
