@@ -263,6 +263,7 @@ Or install it yourself as:
 | GetBTC            | Y       | Y          | Y       |         | User-Defined| Y        | getbtc            |       |
 | GmoJapan          | Y       | Y [x]      | Y       |         | Y           | Y        | gmo_japan         |       |
 | GmoJapanFutures   | Y       | Y [x]      | Y       |         | Y           | Y        | gmo_japan_futures |       |
+| GoExchange        | Y       | Y [x]      | Y       |         | Y           | Y        | go_exchange       |       |
 | Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |       |
 | Gobaba            | Y       |            |         |         | Y           |          | gobaba            |       |
 | golix (API Failed)| Y       | Y          |         |         | Y           |          | golix             |       |

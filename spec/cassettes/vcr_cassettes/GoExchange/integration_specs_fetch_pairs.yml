@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.go.exchange/exchange/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.go.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 25 Jul 2019 06:41:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d71c293cb33ba4e6aa66314d269ffe8de1564036916; expires=Fri, 24-Jul-20
+        06:41:56 GMT; path=/; domain=.go.exchange; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e26ced81e481aa8c9a554823570a7828
+      X-Frame-Options:
+      - DENY
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4fbc26a58c38dd52-KUL
+    body:
+      encoding: UTF-8
+      string: '{"result":[{"last_price":"","symbol":"BCHBTC","timestamp":"2019-07-25
+        06:41:56.136357","volume_24h":"0"},{"last_price":"305.72","symbol":"BCHUSDC","timestamp":"2019-07-25
+        06:41:56.136357","volume_24h":"10.0917783"},{"last_price":"10063.94","symbol":"BTCUSDC","timestamp":"2019-07-25
+        06:41:56.136357","volume_24h":"4529.78849515"},{"last_price":"0.021996","symbol":"ETHBTC","timestamp":"2019-07-25
+        06:41:56.136357","volume_24h":"0.9605467108"},{"last_price":"219.72","symbol":"ETHDAI","timestamp":"2019-07-25
+        06:41:56.136357","volume_24h":"1671.8042600"},{"last_price":"220.94","symbol":"ETHUSDC","timestamp":"2019-07-25
+        06:41:56.136357","volume_24h":"634.2663195"},{"last_price":"0.009322","symbol":"LTCBTC","timestamp":"2019-07-25
+        06:41:56.136357","volume_24h":"0.0001202538"},{"last_price":"94.02","symbol":"LTCUSDC","timestamp":"2019-07-25
+        06:41:56.136357","volume_24h":"20.4180373"},{"last_price":"0.000169","symbol":"OMGBTC","timestamp":"2019-07-25
+        06:41:56.136357","volume_24h":"14.77274279"},{"last_price":"1.6917","symbol":"OMGDAI","timestamp":"2019-07-25
+        06:41:56.136357","volume_24h":"15248.066145"},{"last_price":"0.007676","symbol":"OMGETH","timestamp":"2019-07-25
+        06:41:56.136357","volume_24h":"1.11150852"},{"last_price":"1.6988","symbol":"OMGUSDC","timestamp":"2019-07-25
+        06:41:56.136357","volume_24h":"13791.706576"},{"last_price":"0.9935","symbol":"USDCDAI","timestamp":"2019-07-25
+        06:41:56.136357","volume_24h":"1314.988633"}]}'
+    http_version: 
+  recorded_at: Thu, 25 Jul 2019 06:41:56 GMT
+recorded_with: VCR 4.0.0
