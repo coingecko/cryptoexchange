@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://webapi.coinflex.com/depth/63488:65283
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - webapi.coinflex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 24 Jul 2019 06:47:42 GMT
+      Content-Type:
+      - application/json; charset=US-ASCII
+      Content-Length:
+      - '279'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db56a197612ce96d4e056772dbafc74be1563950861; expires=Thu, 23-Jul-20
+        06:47:41 GMT; path=/; domain=.coinflex.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4fb3f1b5fc1add5a-KUL
+    body:
+      encoding: US-ASCII
+      string: '{"bids":[[96860000,30000],[96820000,25800],[96570000,1150],[96510000,3327],[96440000,4681],[96380000,5531],[96310000,7284],[96250000,8923]],"asks":[[97020000,30000],[97050000,25700],[97280000,1550],[97340000,2993],[97410000,4897],[97480000,5738],[97540000,7313],[97600000,8222]]}'
+    http_version: 
+  recorded_at: Wed, 24 Jul 2019 06:47:42 GMT
+recorded_with: VCR 4.0.0

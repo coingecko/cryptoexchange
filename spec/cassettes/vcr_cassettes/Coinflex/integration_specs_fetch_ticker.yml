@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://webapi.coinflex.com/assets/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - webapi.coinflex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 24 Jul 2019 06:40:20 GMT
+      Content-Type:
+      - application/json; charset=US-ASCII
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d2eb2e6fd6f7cd57acbe60377eda816991563950420; expires=Thu, 23-Jul-20
+        06:40:20 GMT; path=/; domain=.coinflex.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4fb3e6edae8fc0ff-KUL
+    body:
+      encoding: US-ASCII
+      string: '[{"id":63488,"name":"XBT","scale":10000},{"id":63496,"name":"BCH","scale":10000},{"id":63520,"name":"ETH","scale":10000},{"id":63552,"name":"XRP","scale":10000},{"id":65282,"name":"USDC","scale":10000},{"id":65283,"name":"USDT","scale":10000},{"id":65284,"name":"TUSD","scale":10000},{"id":65285,"name":"FLEX","scale":10000},{"id":51200,"spot":63488,"name":"XBTJAN","scale":10000},{"id":51201,"spot":63488,"name":"XBTFEB","scale":10000},{"id":51202,"spot":63488,"name":"XBTMAR","scale":10000},{"id":51203,"spot":63488,"name":"XBTAPR","scale":10000},{"id":51204,"spot":63488,"name":"XBTMAY","scale":10000},{"id":51205,"spot":63488,"name":"XBTJUN","scale":10000},{"id":51206,"spot":63488,"name":"XBTJUL","scale":10000},{"id":51207,"spot":63488,"name":"XBTAUG","scale":10000},{"id":51208,"spot":63488,"name":"XBTSEP","scale":10000},{"id":51209,"spot":63488,"name":"XBTOCT","scale":10000},{"id":51210,"spot":63488,"name":"XBTNOV","scale":10000},{"id":51211,"spot":63488,"name":"XBTDEC","scale":10000},{"id":51220,"spot":63496,"name":"BCHJAN","scale":10000},{"id":51221,"spot":63496,"name":"BCHFEB","scale":10000},{"id":51222,"spot":63496,"name":"BCHMAR","scale":10000},{"id":51223,"spot":63496,"name":"BCHAPR","scale":10000},{"id":51224,"spot":63496,"name":"BCHMAY","scale":10000},{"id":51225,"spot":63496,"name":"BCHJUN","scale":10000},{"id":51226,"spot":63496,"name":"BCHJUL","scale":10000},{"id":51227,"spot":63496,"name":"BCHAUG","scale":10000},{"id":51228,"spot":63496,"name":"BCHSEP","scale":10000},{"id":51229,"spot":63496,"name":"BCHOCT","scale":10000},{"id":51230,"spot":63496,"name":"BCHNOV","scale":10000},{"id":51231,"spot":63496,"name":"BCHDEC","scale":10000},{"id":51240,"spot":63520,"name":"ETHJAN","scale":10000},{"id":51241,"spot":63520,"name":"ETHFEB","scale":10000},{"id":51242,"spot":63520,"name":"ETHMAR","scale":10000},{"id":51243,"spot":63520,"name":"ETHAPR","scale":10000},{"id":51244,"spot":63520,"name":"ETHMAY","scale":10000},{"id":51245,"spot":63520,"name":"ETHJUN","scale":10000},{"id":51246,"spot":63520,"name":"ETHJUL","scale":10000},{"id":51247,"spot":63520,"name":"ETHAUG","scale":10000},{"id":51248,"spot":63520,"name":"ETHSEP","scale":10000},{"id":51249,"spot":63520,"name":"ETHOCT","scale":10000},{"id":51250,"spot":63520,"name":"ETHNOV","scale":10000},{"id":51251,"spot":63520,"name":"ETHDEC","scale":10000},{"id":51860,"spot":65282,"name":"USDCJAN","scale":10000},{"id":51861,"spot":65282,"name":"USDCFEB","scale":10000},{"id":51862,"spot":65282,"name":"USDCMAR","scale":10000},{"id":51863,"spot":65282,"name":"USDCAPR","scale":10000},{"id":51864,"spot":65282,"name":"USDCMAY","scale":10000},{"id":51865,"spot":65282,"name":"USDCJUN","scale":10000},{"id":51866,"spot":65282,"name":"USDCJUL","scale":10000},{"id":51867,"spot":65282,"name":"USDCAUG","scale":10000},{"id":51868,"spot":65282,"name":"USDCSEP","scale":10000},{"id":51869,"spot":65282,"name":"USDCOCT","scale":10000},{"id":51870,"spot":65282,"name":"USDCNOV","scale":10000},{"id":51871,"spot":65282,"name":"USDCDEC","scale":10000},{"id":51880,"spot":65283,"name":"USDTJAN","scale":10000},{"id":51881,"spot":65283,"name":"USDTFEB","scale":10000},{"id":51882,"spot":65283,"name":"USDTMAR","scale":10000},{"id":51883,"spot":65283,"name":"USDTAPR","scale":10000},{"id":51884,"spot":65283,"name":"USDTMAY","scale":10000},{"id":51885,"spot":65283,"name":"USDTJUN","scale":10000},{"id":51886,"spot":65283,"name":"USDTJUL","scale":10000},{"id":51887,"spot":65283,"name":"USDTAUG","scale":10000},{"id":51888,"spot":65283,"name":"USDTSEP","scale":10000},{"id":51889,"spot":65283,"name":"USDTOCT","scale":10000},{"id":51890,"spot":65283,"name":"USDTNOV","scale":10000},{"id":51891,"spot":65283,"name":"USDTDEC","scale":10000},{"id":51900,"spot":65284,"name":"TUSDJAN","scale":10000},{"id":51901,"spot":65284,"name":"TUSDFEB","scale":10000},{"id":51902,"spot":65284,"name":"TUSDMAR","scale":10000},{"id":51903,"spot":65284,"name":"TUSDAPR","scale":10000},{"id":51904,"spot":65284,"name":"TUSDMAY","scale":10000},{"id":51905,"spot":65284,"name":"TUSDJUN","scale":10000},{"id":51906,"spot":65284,"name":"TUSDJUL","scale":10000},{"id":51907,"spot":65284,"name":"TUSDAUG","scale":10000},{"id":51908,"spot":65284,"name":"TUSDSEP","scale":10000},{"id":51909,"spot":65284,"name":"TUSDOCT","scale":10000},{"id":51910,"spot":65284,"name":"TUSDNOV","scale":10000},{"id":51911,"spot":65284,"name":"TUSDDEC","scale":10000},{"id":65286,"name":"DOT","scale":10000},{"id":65287,"spot":65286,"name":"DOTF","scale":10000},{"id":65288,"spot":65283,"name":"USDTDOT","scale":10000}]'
+    http_version: 
+  recorded_at: Wed, 24 Jul 2019 06:40:20 GMT
+recorded_with: VCR 4.0.0
