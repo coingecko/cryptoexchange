@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.go.exchange/exchange/trades/BTCUSDC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.go.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 25 Jul 2019 06:41:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dec08eb46d62e8ab2653104f2dd9e2e241564036916; expires=Fri, 24-Jul-20
+        06:41:56 GMT; path=/; domain=.go.exchange; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 814796111bab5ee7b039b2ea9f457e2d
+      X-Frame-Options:
+      - DENY
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4fbc26a99b4bdd62-KUL
+    body:
+      encoding: UTF-8
+      string: '{"metadata":{"after":"g2wAAAABYgAruepq","before":null,"limit":20},"result":[{"amount":"0.000001","id":"trade_01DGKXQMD95Z1ZR8JY615C4V3F","price":"10061.98","side":"sell","symbol":"BTCUSDC","timestamp":"2019-07-25T06:40:13.236581"},{"amount":"0.000001","id":"trade_01DGKXPB8H4GD06PCM82HYWW3F","price":"10063.94","side":"sell","symbol":"BTCUSDC","timestamp":"2019-07-25T06:39:31.096176"},{"amount":"0.000482","id":"trade_01DGKXNMWD0EBMX7DKW1QGXEYM","price":"10077.72","side":"buy","symbol":"BTCUSDC","timestamp":"2019-07-25T06:39:08.189369"},{"amount":"0.000001","id":"trade_01DGKXN6AKM5V46DMBT3K01NWM","price":"10066.09","side":"sell","symbol":"BTCUSDC","timestamp":"2019-07-25T06:38:53.277382"},{"amount":"0.000001","id":"trade_01DGKXKMSZWV9G2V8C6XG7KKX1","price":"10064.38","side":"sell","symbol":"BTCUSDC","timestamp":"2019-07-25T06:38:02.587145"},{"amount":"0.000001","id":"trade_01DGKXJTWER45QXASQ0B85J3ZK","price":"10063.36","side":"buy","symbol":"BTCUSDC","timestamp":"2019-07-25T06:37:36.024034"},{"amount":"0.000001","id":"trade_01DGKXHDEFT4A67XYJ62BZ0AHB","price":"10067.35","side":"buy","symbol":"BTCUSDC","timestamp":"2019-07-25T06:36:49.493870"},{"amount":"0.000001","id":"trade_01DGKXFW8AY9X82565Y34TFXGA","price":"10060.37","side":"sell","symbol":"BTCUSDC","timestamp":"2019-07-25T06:35:59.124769"},{"amount":"0.000001","id":"trade_01DGKXEYXAM8GYSW9726Z1TVPB","price":"10069.43","side":"sell","symbol":"BTCUSDC","timestamp":"2019-07-25T06:35:29.079462"},{"amount":"0.000001","id":"trade_01DGKXB0NMZEFAX5P4AX2A45AM","price":"10072.3","side":"sell","symbol":"BTCUSDC","timestamp":"2019-07-25T06:33:19.822441"},{"amount":"0.000001","id":"trade_01DGKX9SE9CGNHZM71VD0XCHN0","price":"10070","side":"sell","symbol":"BTCUSDC","timestamp":"2019-07-25T06:32:39.634138"},{"amount":"0.000001","id":"trade_01DGKX8HHF52MR1Y2NWGZY0H36","price":"10070.94","side":"buy","symbol":"BTCUSDC","timestamp":"2019-07-25T06:31:58.784332"},{"amount":"0.000001","id":"trade_01DGKX7PQ660F5CPHRDCE6Z9NE","price":"10071.63","side":"buy","symbol":"BTCUSDC","timestamp":"2019-07-25T06:31:31.312117"},{"amount":"0.000001","id":"trade_01DGKX66NEMXPAZCZQW7K9W4AP","price":"10070.14","side":"buy","symbol":"BTCUSDC","timestamp":"2019-07-25T06:30:42.106539"},{"amount":"0.000001","id":"trade_01DGKX4W6HJFY23KWAB47W52AC","price":"10068.99","side":"sell","symbol":"BTCUSDC","timestamp":"2019-07-25T06:29:58.622180"},{"amount":"0.000001","id":"trade_01DGKX3XJFTV8C4G9EY9Y08RBZ","price":"10069.66","side":"sell","symbol":"BTCUSDC","timestamp":"2019-07-25T06:29:27.253787"},{"amount":"0.000001","id":"trade_01DGKX2MKHCXQZF8RWAS8K71VV","price":"10073.4","side":"sell","symbol":"BTCUSDC","timestamp":"2019-07-25T06:28:45.303338"},{"amount":"0.000001","id":"trade_01DGKX1EP3A7X2MWDFAQG9PR1A","price":"10076.19","side":"buy","symbol":"BTCUSDC","timestamp":"2019-07-25T06:28:06.492942"},{"amount":"0.000001","id":"trade_01DGKX02R5K0DCWCK20TN1D62M","price":"10072.71","side":"buy","symbol":"BTCUSDC","timestamp":"2019-07-25T06:27:21.487447"},{"amount":"0.000001","id":"trade_01DGKWZ79CZB5A8DR57X8GVS3H","price":"10068.76","side":"sell","symbol":"BTCUSDC","timestamp":"2019-07-25T06:26:53.364254"}]}'
+    http_version: 
+  recorded_at: Thu, 25 Jul 2019 06:41:56 GMT
+recorded_with: VCR 4.0.0
