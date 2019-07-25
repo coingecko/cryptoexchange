@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://webapi.coinflex.com/tickers/51206:51886
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - webapi.coinflex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 25 Jul 2019 07:59:01 GMT
+      Content-Type:
+      - application/json; charset=US-ASCII
+      Content-Length:
+      - '128'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d63a6235def19e15f8bfbdf16b3e216cd1564041540; expires=Fri, 24-Jul-20
+        07:59:00 GMT; path=/; domain=.coinflex.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4fbc978b0957dd5a-KUL
+    body:
+      encoding: US-ASCII
+      string: '{"base":51206,"counter":51886,"last":100740000,"bid":100540000,"ask":100660000,"low":95840000,"high":101860000,"volume":8230101}'
+    http_version: 
+  recorded_at: Thu, 25 Jul 2019 07:59:01 GMT
+recorded_with: VCR 4.0.0
