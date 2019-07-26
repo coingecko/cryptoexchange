@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitci.com/api/orderbook/ZRX_CHFT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitci.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 26 Jul 2019 08:43:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1053'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d1f47225e28eb52027d7401b6735b86171564130601; expires=Sat, 25-Jul-20
+        08:43:21 GMT; path=/; domain=.bitci.com; HttpOnly; Secure
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4fc515e24ce6dd4a-KUL
+    body:
+      encoding: UTF-8
+      string: '{"TimeStamp":1564130607889,"Asks":[{"Quantity":69.00000000,"Price":0.23348000},{"Quantity":21.00000000,"Price":0.23488000},{"Quantity":82.00000000,"Price":0.23501000},{"Quantity":88.00000000,"Price":0.23535000},{"Quantity":23.00000000,"Price":0.23566000},{"Quantity":14.00000000,"Price":0.23574000},{"Quantity":43.00000000,"Price":0.23611000},{"Quantity":45.00000000,"Price":0.23832000},{"Quantity":14.00000000,"Price":0.23848000},{"Quantity":17.00000000,"Price":0.23935000},{"Quantity":1.00000000,"Price":0.40000000}],"Bids":[{"Quantity":1.00000000,"Price":0.00010000},{"Quantity":1.00000000,"Price":0.00315000},{"Quantity":53.00000000,"Price":0.21940000},{"Quantity":2.00000000,"Price":0.21946000},{"Quantity":60.00000000,"Price":0.21984000},{"Quantity":63.00000000,"Price":0.22017000},{"Quantity":14.00000000,"Price":0.22139000},{"Quantity":72.00000000,"Price":0.22151000},{"Quantity":32.00000000,"Price":0.22156000},{"Quantity":56.00000000,"Price":0.22190000},{"Quantity":28.00000000,"Price":0.22270000},{"Quantity":86.00000000,"Price":0.22507000}]}'
+    http_version: 
+  recorded_at: Fri, 26 Jul 2019 08:43:21 GMT
+recorded_with: VCR 4.0.0
