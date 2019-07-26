@@ -1,29 +1,53 @@
-  module Cryptoexchange::Exchanges
+module Cryptoexchange::Exchanges
   module Ethfinex
     module Services
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            true
+            false
           end
         end
 
-        def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output, market_pair)
+        def fetch
+          output = super(ticker_url)
+          adapt_all(output)
         end
 
-        def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Ethfinex::Market::API_URL}/v2/ticker/t#{market_pair.base.upcase}#{market_pair.target.upcase}"
+        def ticker_url
+          "#{Cryptoexchange::Exchanges::Ethfinex::Market::API_URL}/v2/tickers?symbols=ALL"
         end
 
-        def adapt(output, market_pair)
+        def adapt_all(output)
+          output.map do |ticker|
+            pair = ticker[0]
+
+            next if pair[0] != 't'
+
+            if pair.include? ":"
+              base, target = pair.split(":")
+            else
+              base = pair[1..pair.length - 4]
+              target = pair[-3..-1]
+            end
+
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+              base: base,
+              target: target,
+              market: Ethfinex::Market::NAME
+            )
+
+            adapt(market_pair, ticker)
+          end
+        end
+
+        def adapt(market_pair, output)
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Ethfinex::Market::NAME
 
           # [
+          #   SYMBOL,
           #   BID,
           #   BID_SIZE,
           #   ASK,
@@ -36,12 +60,12 @@
           #   LOW
           # ]
 
-          ticker.ask = NumericHelper.to_d(output[2])
-          ticker.bid = NumericHelper.to_d(output[0])
-          ticker.last = NumericHelper.to_d(output[-4])
-          ticker.high = NumericHelper.to_d(output[-2])
-          ticker.low = NumericHelper.to_d(output[-1])
-          ticker.volume = NumericHelper.to_d(output[-3])
+          ticker.ask = NumericHelper.to_d(output[3])
+          ticker.bid = NumericHelper.to_d(output[1])
+          ticker.last = NumericHelper.to_d(output[7])
+          ticker.high = NumericHelper.to_d(output[9])
+          ticker.low = NumericHelper.to_d(output[10])
+          ticker.volume = NumericHelper.to_d(output[8])
           ticker.timestamp = nil
           ticker.payload = output
           ticker
