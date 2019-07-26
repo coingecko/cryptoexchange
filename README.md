@@ -71,6 +71,7 @@ Or install it yourself as:
 | Bitbox (Auth)     | Y       |            |         |         | User-Defined| Y        | bitbox            |       |
 | Bitbox (Public)   | Y       |            |         |         | Y           | Y        | bitbox            |       |
 | Bitc3             | Y       | N          | N       |         | Y           | Y        | bitc3             |       |
+| Bitci             | Y       | Y [x]      | Y       |         | Y           | Y        | bitci             |       |
 | Bitconnect        | Y       |            |         |         | Y           |          | bitconnect        |       |
 | Bitebtc           | Y       | Y [x]      | Y       |         | Y           | Y        | bitebtc           |       |
 | Bitex.la          | Y       | Y [x]      |         |         | Y           |          | bitex             |       |
