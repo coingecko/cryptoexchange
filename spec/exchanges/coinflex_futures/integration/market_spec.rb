@@ -27,6 +27,7 @@ RSpec.describe 'Coinflex Futures integration specs' do
     expect(ticker.base).to eq xbt_usdt_pair.base
     expect(ticker.target).to eq xbt_usdt_pair.target
     expect(ticker.market).to eq xbt_usdt_pair.market
+    expect(ticker.contract_interval).to_not be nil
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
     expect(ticker.last).to be_a Numeric
