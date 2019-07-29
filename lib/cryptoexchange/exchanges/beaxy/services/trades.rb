@@ -9,8 +9,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          inst_id   = market_pair.inst_id
-          "#{Cryptoexchange::Exchanges::Beaxy::Market::API_URL}/Symbols/#{inst_id}/Trades"
+          "#{Cryptoexchange::Exchanges::Beaxy::Market::API_URL}/Symbols/#{market_pair.inst_id}/Trades"
         end
 
         def adapt(output, market_pair)
