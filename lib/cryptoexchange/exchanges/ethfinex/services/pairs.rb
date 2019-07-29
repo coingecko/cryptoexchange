@@ -27,7 +27,7 @@ module Cryptoexchange::Exchanges
               target: target,
               market: Ethfinex::Market::NAME
             )
-          end
+          end.compact
         end
       end
     end

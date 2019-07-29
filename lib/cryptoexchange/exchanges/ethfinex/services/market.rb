@@ -37,7 +37,7 @@ module Cryptoexchange::Exchanges
             )
 
             adapt(market_pair, ticker)
-          end
+          end.compact
         end
 
         def adapt(market_pair, output)
