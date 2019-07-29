@@ -14,25 +14,35 @@ module Cryptoexchange::Exchanges
         end
 
         def order_book_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitfinex::Market::API_URL}/book/#{market_pair.base}#{market_pair.target}?limit_bids=100&limit_asks=100"
+          "#{Cryptoexchange::Exchanges::Bitfinex::Market::API_URL}/book/t#{market_pair.base.upcase}#{market_pair.target.upcase}/P0"
         end
 
         def adapt(output, market_pair)
+          bids = []
+          asks = []
+          output.each do |output|
+            if output[2] > 0
+              bids << output
+            else
+              output[2] = -(output[2])
+              asks << output
+            end
+          end  
           order_book = Cryptoexchange::Models::OrderBook.new
 
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
           order_book.market    = Bitfinex::Market::NAME
-          order_book.asks      = adapt_orders(output['asks'])
-          order_book.bids      = adapt_orders(output['bids'])
+          order_book.asks      = adapt_orders(asks)
+          order_book.bids      = adapt_orders(bids)
           order_book.payload   = output
           order_book
         end
 
         def adapt_orders(orders)
           orders.collect do |order_entry|
-            Cryptoexchange::Models::Order.new(price: NumericHelper.to_d(order_entry["price"]),
-                                              amount: NumericHelper.to_d(order_entry["amount"]),
+            Cryptoexchange::Models::Order.new(price: NumericHelper.to_d(order_entry[0]),
+                                              amount: NumericHelper.to_d(order_entry[2]),
                                               timestamp: nil)
           end
         end
