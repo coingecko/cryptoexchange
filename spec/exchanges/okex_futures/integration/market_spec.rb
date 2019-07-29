@@ -1,18 +1,18 @@
 require 'spec_helper'
 
-RSpec.describe 'OkexSwap integration specs' do
+RSpec.describe 'OkexFutures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', contract_interval: "perpetual") }
-  let(:xbt_usd_pair_weekly) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', contract_interval: "weekly") }
+  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_futures', contract_interval: "perpetual") }
+  let(:xbt_usd_pair_weekly) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_futures', contract_interval: "weekly") }
 
   it 'fetch pairs' do
-    pairs = client.pairs('okex_swap')
+    pairs = client.pairs('okex_futures')
     expect(pairs).not_to be_empty
 
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
-    expect(pair.market).to eq 'okex_swap'
+    expect(pair.market).to eq 'okex_futures'
     expect(pair.contract_interval).to eq "perpetual"
   end
 
@@ -21,7 +21,7 @@ RSpec.describe 'OkexSwap integration specs' do
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USD'
-    expect(ticker.market).to eq 'okex_swap'
+    expect(ticker.market).to eq 'okex_futures'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
@@ -38,7 +38,7 @@ RSpec.describe 'OkexSwap integration specs' do
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USD'
-    expect(ticker.market).to eq 'okex_swap'
+    expect(ticker.market).to eq 'okex_futures'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
@@ -55,7 +55,7 @@ RSpec.describe 'OkexSwap integration specs' do
 
     expect(order_book.base).to eq 'BTC'
     expect(order_book.target).to eq 'USD'
-    expect(order_book.market).to eq 'okex_swap'
+    expect(order_book.market).to eq 'okex_futures'
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
     expect(order_book.asks.first.price).to_not be_nil

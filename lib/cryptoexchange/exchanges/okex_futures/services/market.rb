@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module OkexSwap
+  module OkexFutures
     module Services
       class Market < Cryptoexchange::Services::Market
         class << self
@@ -20,7 +20,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::OkexSwap::Market::API_URL}/instruments/ticker"
+          "#{Cryptoexchange::Exchanges::OkexFutures::Market::API_URL}/instruments/ticker"
         end
 
         def adapt_all(output)
@@ -29,7 +29,7 @@ module Cryptoexchange::Exchanges
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
-              market: OkexSwap::Market::NAME,
+              market: OkexFutures::Market::NAME,
               contract_interval: "perpetual",
             )
             adapt(ticker, market_pair)
@@ -50,7 +50,7 @@ module Cryptoexchange::Exchanges
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
-          ticker.market    = OkexSwap::Market::NAME
+          ticker.market    = OkexFutures::Market::NAME
           ticker.ask       = NumericHelper.to_d(output['best_ask'])
           ticker.bid       = NumericHelper.to_d(output['best_bid'])
           ticker.last      = NumericHelper.to_d(output['last'])
@@ -81,7 +81,7 @@ module Cryptoexchange::Exchanges
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
-              market: OkexSwap::Market::NAME,
+              market: OkexFutures::Market::NAME,
               contract_interval: interval,
             )
             adapt_futures(ticker, market_pair)
@@ -93,7 +93,7 @@ module Cryptoexchange::Exchanges
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
-          ticker.market    = OkexSwap::Market::NAME
+          ticker.market    = OkexFutures::Market::NAME
           ticker.ask       = NumericHelper.to_d(output['best_ask'])
           ticker.bid       = NumericHelper.to_d(output['best_bid'])
           ticker.last      = NumericHelper.to_d(output['last'])

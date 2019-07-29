@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module OkexSwap
+  module OkexFutures
     module Services
       class OrderBook < Cryptoexchange::Services::Market
         class << self
@@ -15,14 +15,14 @@ module Cryptoexchange::Exchanges
 
         def orderbook_url(market_pair)
           symbol = "#{market_pair.base}-#{market_pair.target}-SWAP"
-          "#{Cryptoexchange::Exchanges::OkexSwap::Market::API_URL}/instruments/#{symbol}/depth?size=200"
+          "#{Cryptoexchange::Exchanges::OkexFutures::Market::API_URL}/instruments/#{symbol}/depth?size=200"
         end
 
         def adapt(output, market_pair)
           order_book = Cryptoexchange::Models::OrderBook.new
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
-          order_book.market    = OkexSwap::Market::NAME
+          order_book.market    = OkexFutures::Market::NAME
           order_book.asks      = adapt_orders(output["asks"])
           order_book.bids      = adapt_orders(output["bids"])
           order_book.timestamp = nil

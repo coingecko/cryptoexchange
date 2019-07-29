@@ -351,7 +351,7 @@ Or install it yourself as:
 | OEX               | Y       | Y [x]      |         |         | Y           |          | oex               |       |
 | OKCoin            | Y       | Y [x]      |         |         | Y           |          | okcoin            |       |
 | OKEx              | Y       | Y [x]      | Y [limit: 60]      |         | Y           | Y        | okex              |       |
-| OKEx Perpetual Swaps | Y (no volume) | Y (can't map) |         |         | Y           | Y        | okex_swap         |futures|
+| OKEx (Futures)    | Y       | Y (can't map) |      |         | Y           | Y        | okex_futures      |futures|
 | Omgfin            | Y       | Y [x]      |         |         | Y           | Y        | omgfin            |       |
 | OmniTrade         | Y       | Y          | Y       | Y       | Y           |          | omnitrade         |       |
 | Ooobtc            | Y       | Y [x]      | Y [limit: 20]      |         | Y           | Y        | ooobtc            |       |
