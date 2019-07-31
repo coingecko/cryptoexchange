@@ -9,8 +9,8 @@ RSpec.describe 'Latoken integration specs' do
     expect(pairs).not_to be_empty
 
     pair = pairs.first
-    expect(pair.base).to_not be nil
-    expect(pair.target).to_not be nil
+    expect(pair.base).to eq 'LA'
+    expect(pair.target).to eq 'ETH'
     expect(pair.market).to eq 'latoken'
   end
 
