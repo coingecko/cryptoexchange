@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.cmegroup.com/CmeWS/mvc/Quotes/Future/8478/G?_=1564549645686&pageSize=500
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.cmegroup.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - http://star-website.com
+      Content-Security-Policy:
+      - frame-ancestors 'self' investor.cmegroup.com  http://investor.cmegroup.com
+        *.quikstrike.net commodex.co.il openexchange.community.cmegroup.com staging.tickertocker.com
+        http://www.straitsfinancial.com  www.straitsfinancial.com http://straitsfinancial.com
+        https://datamine.cmegroup.com http://dataminelocal.cmegroup.com https://dataminedev.cmegroup.com
+        https://login.cmegroup.com https://www.home.saxo https://go.cmegroup.com https://app.topsteptrader.com
+        https://help.topsteptrader.com https://staging.topsteptrader.com https://blueeditsitecore.sys.dom
+        https://bluesitecore.sys.dom https://sitecoredev.orange.saxobank.com https://sitecoredev-nocache.orange.saxobank.com
+        https://sitecoredevedit.orange.tst2.dom http://star-website.com  https://www.investing.com
+        https://www.benzinga.com https://m.benzinga.com https://amp.benzinga.com https://bz.zingbot.bz
+        https://www.zingbot.bz  https://datamineuat.cmegroup.com www.kgieworld.sg;
+      Content-Type:
+      - application/json;charset=UTF-8
+      Server:
+      - Apache
+      Serverid:
+      - prod-west-web01
+      X-Frame-Options:
+      - ALLOW-FROM https://commodex.co.il/, ALLOW-FROM https://openexchange.community.cmegroup.com,
+        ALLOW-FROM https://www.kgieworld.sg, ALLOW-FROM http://investor.cmegroup.com,
+        ALLOW-FROM https://staging.tickertocker.com, ALLOW-FROM http://www.straitsfinancial.com,
+        ALLOW-FROM http://straitsfinancial.com, ALLOW-FROM https://datamine.cmegroup.com,
+        ALLOW-FROM http://dataminelocal.cmegroup.com, ALLOW-FROM https://dataminedev.cmegroup.com,
+        ALLOW-FROM https://datamineuat.cmegroup.com, ALLOW-FROM https://login.cmegroup.com,
+        ALLOW-FROM https://www.home.saxo, ALLOW-FROM https://blueeditsitecore.sys.dom,
+        ALLOW-FROM https://bluesitecore.sys.dom, ALLOW-FROM https://sitecoredev.orange.saxobank.com,
+        ALLOW-FROM https://sitecoredev-nocache.orange.saxobank.com, ALLOW-FROM https://sitecoredevedit.orange.tst2.dom,
+        ALLOW-FROM https://go.cmegroup.com, ALLOW-FROM https://app.topsteptrader.com,
+        ALLOW-FROM https://help.topsteptrader.com, ALLOW-FROM https://staging.topsteptrader.com,
+        ALLOW-FROM http://star-website.com, ALLOW-FROM https://www.investing.com,
+        ALLOW-FROM https://www.benzinga.com, ALLOW-FROM https://m.benzinga.com, ALLOW-FROM
+        https://amp.benzinga.com, ALLOW-FROM https://bz.zingbot.bz, ALLOW-FROM https://www.zingbot.bz
+      Content-Length:
+      - '3837'
+      Date:
+      - Wed, 31 Jul 2019 05:38:52 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"quoteDelayed":true,"quoteDelay":"10 minutes","tradeDate":"31 Jul
+        2019","quotes":[{"last":"9830","change":"+95","priorSettle":"9735","open":"9725","close":"-","high":"9855","low":"9685","highLimit":"12655","lowLimit":"6815","volume":"157","mdKey":"BTCQ9-XCME-G","quoteCode":"BTCQ9","escapedQuoteCode":"BTCQ9","code":"BTCQ9","updated":"00:28:38
+        CT<br /> 31 Jul 2019","percentageChange":"+0.98%","expirationMonth":"AUG 2019","expirationCode":"Q9","expirationDate":"20190801","productName":"Bitcoin
+        Futures","productCode":"BTC","uri":"/trading/equity-index/us-index/bitcoin.html","productId":8478,"exchangeCode":"XCME","optionUri":"-","hasOption":false,"lastTradeDate":{"timestamp":1567141200000,"dateOnlyLongFormat":"30
+        Aug 2019","default24":"08/30/2019, 00:00:00 CDT","default12":"08/30/2019,
+        12:00:00 AM CDT","verbose":"August 30, 2019 12:00:00 AM CDT"},"priceChart":{"enabled":true,"code":"BTC","monthYear":"Q9","venue":0,"title":"AUG_2019_Bitcoin_","year":2019},"netChangeStatus":"statusOK","highLowLimits":"12655
+        / 6815"},{"last":"9885","change":"+100","priorSettle":"9785","open":"9840","close":"-","high":"9900","low":"9840","highLimit":"12720","lowLimit":"6850","volume":"9","mdKey":"BTCU9-XCME-G","quoteCode":"BTCU9","escapedQuoteCode":"BTCU9","code":"BTCU9","updated":"00:28:38
+        CT<br /> 31 Jul 2019","percentageChange":"+1.02%","expirationMonth":"SEP 2019","expirationCode":"U9","expirationDate":"20190901","productName":"Bitcoin
+        Futures","productCode":"BTC","uri":"/trading/equity-index/us-index/bitcoin.html","productId":8478,"exchangeCode":"XCME","optionUri":"-","hasOption":false,"lastTradeDate":{"timestamp":1569560400000,"dateOnlyLongFormat":"27
+        Sep 2019","default24":"09/27/2019, 00:00:00 CDT","default12":"09/27/2019,
+        12:00:00 AM CDT","verbose":"September 27, 2019 12:00:00 AM CDT"},"priceChart":{"enabled":true,"code":"BTC","monthYear":"U9","venue":0,"title":"SEP_2019_Bitcoin_","year":2019},"netChangeStatus":"statusOK","highLowLimits":"12720
+        / 6850"},{"last":"-","change":"-","priorSettle":"9915","open":"-","close":"-","high":"-","low":"-","highLimit":"12885","lowLimit":"6945","volume":"0","mdKey":"BTCV9-XCME-G","quoteCode":"BTCV9","escapedQuoteCode":"BTCV9","code":"BTCV9","updated":"19:57:27
+        CT<br /> 30 Jul 2019","percentageChange":"-","expirationMonth":"OCT 2019","expirationCode":"V9","expirationDate":"20191001","productName":"Bitcoin
+        Futures","productCode":"BTC","uri":"/trading/equity-index/us-index/bitcoin.html","productId":8478,"exchangeCode":"XCME","optionUri":"-","hasOption":false,"lastTradeDate":{"timestamp":1571979600000,"dateOnlyLongFormat":"25
+        Oct 2019","default24":"10/25/2019, 00:00:00 CDT","default12":"10/25/2019,
+        12:00:00 AM CDT","verbose":"October 25, 2019 12:00:00 AM CDT"},"priceChart":{"enabled":true,"code":"BTC","monthYear":"V9","venue":0,"title":"OCT_2019_Bitcoin_","year":2019},"netChangeStatus":"statusNull","highLowLimits":"12885
+        / 6945"},{"last":"-","change":"-","priorSettle":"9910","open":"-","close":"-","high":"-","low":"-","highLimit":"12880","lowLimit":"6940","volume":"0","mdKey":"BTCZ9-XCME-G","quoteCode":"BTCZ9","escapedQuoteCode":"BTCZ9","code":"BTCZ9","updated":"19:57:27
+        CT<br /> 30 Jul 2019","percentageChange":"-","expirationMonth":"DEC 2019","expirationCode":"Z9","expirationDate":"20191201","productName":"Bitcoin
+        Futures","productCode":"BTC","uri":"/trading/equity-index/us-index/bitcoin.html","productId":8478,"exchangeCode":"XCME","optionUri":"-","hasOption":false,"lastTradeDate":{"timestamp":1577426400000,"dateOnlyLongFormat":"27
+        Dec 2019","default24":"12/27/2019, 00:00:00 CST","default12":"12/27/2019,
+        12:00:00 AM CST","verbose":"December 27, 2019 12:00:00 AM CST"},"priceChart":{"enabled":true,"code":"BTC","monthYear":"Z9","venue":0,"title":"DEC_2019_Bitcoin_","year":2019},"netChangeStatus":"statusNull","highLowLimits":"12880
+        / 6940"}],"empty":false}'
+    http_version: 
+  recorded_at: Wed, 31 Jul 2019 05:38:45 GMT
+recorded_with: VCR 4.0.0

@@ -149,6 +149,7 @@ Or install it yourself as:
 | Chaoex            | Y       | Y [x]      | Y       |         | Y           | N        | chaoex            |       |
 | CHBTC             | Y       |            |         |         | User-Defined|          | chbtc             |       |
 | Citex             | Y       | N          | N       |         | Y           | Y        | citex             |       |
+| CME Futures       | Y       | N          | N       | N       | Y           | N        | cme_futures       |futures|
 | Cobinhood         | Y       | Y [x]      |         |         | Y           | Y        | cobinhood         |       |
 | CODEX             | Y       | Y          | Y       |         | Y           |          | codex             |       |
 | Coin2001          | Y       | Y          | Y       |         | Y           |          | coin2001          |       |
