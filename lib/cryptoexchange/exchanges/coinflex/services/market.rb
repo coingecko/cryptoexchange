@@ -43,12 +43,12 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Coinflex::Market::NAME
-          ticker.bid       = output['bid'].to_f / 10000
-          ticker.ask       = output['ask'].to_f / 10000
-          ticker.last      = output['last'].to_f / 10000
-          ticker.high      = output['high'].to_f / 10000
-          ticker.low       = output['low'].to_f / 10000
-          ticker.volume    = output['volume'].to_f / 10000
+          ticker.bid       = output['bid'].to_f / 10000.0
+          ticker.ask       = output['ask'].to_f / 10000.0
+          ticker.last      = output['last'].to_f / 10000.0
+          ticker.high      = output['high'].to_f / 10000.0
+          ticker.low       = output['low'].to_f / 10000.0
+          ticker.volume    = output['volume'].to_f / 10000.0
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
