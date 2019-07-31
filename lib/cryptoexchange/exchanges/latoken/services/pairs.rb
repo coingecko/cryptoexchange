@@ -13,7 +13,7 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           market_pairs = []
           output.each do |pair|
-            base, target = pair['quotedCurrency'], pair['baseCurrency']
+            base, target = pair['baseCurrency'], pair['quotedCurrency']
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: base,
                               target: target,
