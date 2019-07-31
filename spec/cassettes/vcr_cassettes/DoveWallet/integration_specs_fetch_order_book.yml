@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.dovewallet.com/v1/public/getorderbook?market=BTC-USDT&type=both
+    uri: https://api.dovewallet.com/v1/public/getorderbook?market=USDT-BTC&type=both
     body:
       encoding: UTF-8
       string: ''
@@ -19,25 +19,25 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 31 Jul 2019 07:39:00 GMT
+      - Wed, 31 Jul 2019 08:34:28 GMT
       Content-Type:
       - text/plain; charset=utf-8
       Content-Length:
-      - '682'
+      - '710'
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d6e72b2d79b42bf1f9fe6e0733a10d4701564558739; expires=Thu, 30-Jul-20
-        07:38:59 GMT; path=/; domain=.dovewallet.com; HttpOnly; Secure
+      - __cfduid=d75af5bfdf875ba6e038e119427be33c11564562067; expires=Thu, 30-Jul-20
+        08:34:27 GMT; path=/; domain=.dovewallet.com; HttpOnly; Secure
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 4fedea7c29cbddc3-SIN
+      - 4fee3bb75b46cbf0-SIN
     body:
       encoding: UTF-8
-      string: '{"success":true,"message":"","result":{"buy":[{"Quantity":62.713899614,"Rate":0.000102399},{"Quantity":30.228843159,"Rate":0.000101866},{"Quantity":80.293462806,"Rate":0.000101391},{"Quantity":75.928810219,"Rate":0.000100926},{"Quantity":39.758018877,"Rate":0.000100512},{"Quantity":65.048666052,"Rate":0.00009991},{"Quantity":82.06571676,"Rate":0.000099274}],"sell":[{"Quantity":56.433369023,"Rate":0.00010249},{"Quantity":84.57043121,"Rate":0.000102965},{"Quantity":53.819451161,"Rate":0.000103469},{"Quantity":80.803017249,"Rate":0.000104039},{"Quantity":42.741760346,"Rate":0.000104456},{"Quantity":56.36373952,"Rate":0.000105075},{"Quantity":80.996193328,"Rate":0.000105521}]}}'
+      string: '{"success":true,"message":"","result":{"buy":[{"Quantity":0.002904104,"Rate":9750.3900156},{"Quantity":0.008404624,"Rate":9698.662554433},{"Quantity":0.007956342,"Rate":9657.82331978},{"Quantity":0.007078522,"Rate":9609.563437533},{"Quantity":0.004703555,"Rate":9557.670986733},{"Quantity":0.00838198,"Rate":9513.480602013},{"Quantity":0.007680209,"Rate":9459.306065307}],"sell":[{"Quantity":0.005392821,"Rate":9766.29261766},{"Quantity":0.004178721,"Rate":9806.613580199},{"Quantity":0.008895323,"Rate":9858.044164038},{"Quantity":0.003986614,"Rate":9907.75876589},{"Quantity":0.005799474,"Rate":9967.108541813},{"Quantity":0.004930172,"Rate":10016.025641026},{"Quantity":0.00719183,"Rate":10074.754679724}]}}'
     http_version: 
-  recorded_at: Wed, 31 Jul 2019 07:39:00 GMT
+  recorded_at: Wed, 31 Jul 2019 08:34:28 GMT
 recorded_with: VCR 4.0.0
