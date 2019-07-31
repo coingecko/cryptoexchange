@@ -228,6 +228,7 @@ Or install it yourself as:
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |       |
 | Digitalprice      | Y       | Y          | Y       |         | Y           | Y        | digitalprice      |       |
 | Dobitrade         | Y       | Y [x]      | N       |         | Y           | Y        | dobitrade         |       |
+| Dove Wallet       | Y       | Y [x]      | Y       |         | Y           | Y        | dove_wallet       |       |
 | Dragonex          | Y       | Y [x]      | N       |         | Y           | Y        | dragonex          |       |
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |       |
 | Dydx              | Y       | N          | N       |         | Y           | N        | dydx              |futures|
