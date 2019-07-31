@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dovewallet.com/v1/public/getmarkethistory?market=BTC-USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dovewallet.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 31 Jul 2019 07:39:02 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Content-Length:
+      - '2074'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d02e58ed3b1c447418a1a95aacc9d016f1564558741; expires=Thu, 30-Jul-20
+        07:39:01 GMT; path=/; domain=.dovewallet.com; HttpOnly; Secure
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4fedea83d8ccdde8-SIN
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"message":"","result":[{"Id":null,"TimeStamp":"2019-07-31T7:17:08.01","Quantity":8.127212683,"Price":0.000102619,"Total":0.000834006,"FillType":null,"OrderType":"BUY"},{"Id":null,"TimeStamp":"2019-07-31T7:12:51.84","Quantity":4.909604686,"Price":0.000102502,"Total":0.000503244,"FillType":null,"OrderType":"BUY"},{"Id":null,"TimeStamp":"2019-07-31T7:07:58.45","Quantity":7.215846255,"Price":0.000102223,"Total":0.000737625,"FillType":null,"OrderType":"SELL"},{"Id":null,"TimeStamp":"2019-07-31T7:05:02.29","Quantity":9.249168442,"Price":0.000102215,"Total":0.000945404,"FillType":null,"OrderType":"SELL"},{"Id":null,"TimeStamp":"2019-07-31T7:01:52.08","Quantity":6.6445764,"Price":0.000102215,"Total":0.000679175,"FillType":null,"OrderType":"SELL"},{"Id":null,"TimeStamp":"2019-07-31T6:59:05.91","Quantity":3.972609986,"Price":0.000102451,"Total":0.000406998,"FillType":null,"OrderType":"BUY"},{"Id":null,"TimeStamp":"2019-07-31T6:58:47.98","Quantity":7.181400128,"Price":0.000102451,"Total":0.000735742,"FillType":null,"OrderType":"BUY"},{"Id":null,"TimeStamp":"2019-07-31T6:54:22.63","Quantity":7.433258991,"Price":0.000102215,"Total":0.000759791,"FillType":null,"OrderType":"SELL"},{"Id":null,"TimeStamp":"2019-07-31T6:52:21.49","Quantity":7.378363593,"Price":0.000102568,"Total":0.000756784,"FillType":null,"OrderType":"BUY"},{"Id":null,"TimeStamp":"2019-07-31T6:48:58.29","Quantity":8.503132643,"Price":0.000102568,"Total":0.000872149,"FillType":null,"OrderType":"BUY"},{"Id":null,"TimeStamp":"2019-07-31T6:45:22.06","Quantity":7.857081131,"Price":0.000102303,"Total":0.000803803,"FillType":null,"OrderType":"BUY"},{"Id":null,"TimeStamp":"2019-07-31T6:42:13.87","Quantity":5.894581496,"Price":0.000102215,"Total":0.000602515,"FillType":null,"OrderType":"SELL"},{"Id":null,"TimeStamp":"2019-07-31T6:39:05.67","Quantity":1.904959678,"Price":0.000102365,"Total":0.000195001,"FillType":null,"OrderType":"SELL"},{"Id":null,"TimeStamp":"2019-07-31T6:34:27.38","Quantity":8.519570995,"Price":0.000102542,"Total":0.000873614,"FillType":null,"OrderType":"BUY"}]}'
+    http_version: 
+  recorded_at: Wed, 31 Jul 2019 07:39:02 GMT
+recorded_with: VCR 4.0.0

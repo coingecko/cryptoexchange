@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dovewallet.com/v1/public/getmarketsummary?market=BTC-USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dovewallet.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 31 Jul 2019 08:08:39 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Content-Length:
+      - '336'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d658d3a8dce70fd2ad15a6f9ad01e0dac1564560518; expires=Thu, 30-Jul-20
+        08:08:38 GMT; path=/; domain=.dovewallet.com; HttpOnly; Secure
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4fee15e588f4dcee-SIN
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"message":"","result":[{"MarketName":"BTC-USDT","High":0.000105641,"Low":0.000102215,"Volume":0.195114967,"Last":0.000102619,"BaseVolume":8.127212683,"TimeStamp":"2019-07-31T7:17:08.01","Bid":0.000102429,"Ask":0.000102686,"OpenBuyOrders":7,"OpenSellOrders":7,"PrevDay":"0.000105126","Created":"2019-02-04T18:43:00.00"}]}'
+    http_version: 
+  recorded_at: Wed, 31 Jul 2019 08:08:39 GMT
+recorded_with: VCR 4.0.0
