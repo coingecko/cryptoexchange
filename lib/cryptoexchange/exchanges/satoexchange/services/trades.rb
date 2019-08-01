@@ -3,7 +3,6 @@ module Cryptoexchange::Exchanges
     module Services
       class Trades < Cryptoexchange::Services::Market
         def fetch(market_pair)
-          market_pair = Cryptoexchange::Exchanges::Satoexchange::Market.assign_inst_id(market_pair) if market_pair.inst_id.nil?
           output = super(ticker_url(market_pair))
           adapt(output, market_pair)
         end
