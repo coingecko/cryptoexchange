@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
           ticker.target    = market_pair.target
           ticker.market    = BitforexFutures::Market::NAME
           ticker.last      = NumericHelper.to_d(output['last'])
-          ticker.volume    = NumericHelper.to_d(output['currencyvol'])
+          ticker.volume    = NumericHelper.divide(NumericHelper.to_d(output['productvol']), ticker.last)
           ticker.high      = NumericHelper.to_d(output['high'])
           ticker.low       = NumericHelper.to_d(output['low'])
           ticker.timestamp = nil
