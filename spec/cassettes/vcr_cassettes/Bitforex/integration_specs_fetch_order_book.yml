@@ -18,16 +18,19 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
       Date:
-      - Fri, 03 May 2019 03:45:21 GMT
+      - Thu, 01 Aug 2019 08:54:58 GMT
       Content-Type:
       - text/html;charset=UTF-8
       Transfer-Encoding:
       - chunked
       Connection:
       - close
+      Set-Cookie:
+      - HttpOnly=true
+      - __cfduid=d271bad2ea27b05ec3db8fc70f66d695c1564649698; expires=Fri, 31-Jul-20
+        08:54:58 GMT; path=/; domain=.bitforex.com; HttpOnly
+      - secure=true
       Vary:
       - Accept-Encoding
       X-Application-Context:
@@ -45,27 +48,31 @@ http_interactions:
         utf-16be, utf-16le, utf-32, utf-32be, utf-32le, utf-8, windows-1250, windows-1251,
         windows-1252, windows-1253, windows-1254, windows-1255, windows-1256, windows-1257,
         windows-1258, windows-31j, x-big5-hkscs-2001, x-big5-solaris, x-compound_text,
-        x-euc-jp-linux, x-euc-tw, x-eucjp-open, x-ibm1006, x-ibm1025, x-ibm1046, x-ibm1097,
-        x-ibm1098, x-ibm1112, x-ibm1122, x-ibm1123, x-ibm1124, x-ibm1166, x-ibm1364,
-        x-ibm1381, x-ibm1383, x-ibm300, x-ibm33722, x-ibm737, x-ibm833, x-ibm834,
-        x-ibm856, x-ibm874, x-ibm875, x-ibm921, x-ibm922, x-ibm930, x-ibm933, x-ibm935,
-        x-ibm937, x-ibm939, x-ibm942, x-ibm942c, x-ibm943, x-ibm943c, x-ibm948, x-ibm949,
-        x-ibm949c, x-ibm950, x-ibm964, x-ibm970, x-iscii91, x-iso-2022-cn-cns, x-iso-2022-cn-gb,
-        x-iso-8859-11, x-jis0208, x-jisautodetect, x-johab, x-macarabic, x-maccentraleurope,
-        x-maccroatian, x-maccyrillic, x-macdingbat, x-macgreek, x-machebrew, x-maciceland,
-        x-macroman, x-macromania, x-macsymbol, x-macthai, x-macturkish, x-macukraine,
-        x-ms932_0213, x-ms950-hkscs, x-ms950-hkscs-xp, x-mswin-936, x-pck, x-sjis_0213,
-        x-utf-16le-bom, x-utf-32be-bom, x-utf-32le-bom, x-windows-50220, x-windows-50221,
-        x-windows-874, x-windows-949, x-windows-950, x-windows-iso2022jp
+        x-euc-jp-linux, x-euc-tw, x-eucjp-open, x-
+      - ibm1006, x-ibm1025, x-ibm1046, x-ibm1097, x-ibm1098, x-ibm1112, x-ibm1122,
+        x-ibm1123, x-ibm1124, x-ibm1166, x-ibm1364, x-ibm1381, x-ibm1383, x-ibm300,
+        x-ibm33722, x-ibm737, x-ibm833, x-ibm834, x-ibm856, x-ibm874, x-ibm875, x-ibm921,
+        x-ibm922, x-ibm930, x-ibm933, x-ibm935, x-ibm937, x-ibm939, x-ibm942, x-ibm942c,
+        x-ibm943, x-ibm943c, x-ibm948, x-ibm949, x-ibm949c, x-ibm950, x-ibm964, x-ibm970,
+        x-iscii91, x-iso-2022-cn-cns, x-iso-2022-cn-gb, x-iso-8859-11, x-jis0208,
+        x-jisautodetect, x-johab, x-macarabic, x-maccentraleurope, x-maccroatian,
+        x-maccyrillic, x-macdingbat, x-macgreek, x-machebrew, x-maciceland, x-macroman,
+        x-macromania, x-macsymbol, x-macthai, x-macturkish, x-macukraine, x-ms932_0213,
+        x-ms950-hkscs, x-ms950-hkscs-xp, x-mswin-936, x-pck, x-sjis_0213, x-utf-16le-bom,
+        x-utf-32be-bom, x-utf-32le-bom, x-windows-50220, x-windows-50221, x-windows-874,
+        x-windows-949, x-windows-950, x-windows-iso2022jp
       Strict-Transport-Security:
       - max-age=15768000
       - max-age=63072000; includeSubdomains; preload
-      Set-Cookie:
-      - HttpOnly=true
-      - secure=true
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ff69728b8732d1b-KUL
     body:
       encoding: UTF-8
-      string: '{"data":{"asks":[{"amount":0.002,"price":100000},{"amount":0.0149,"price":50000},{"amount":9.8818,"price":20000},{"amount":0.0545,"price":19000},{"amount":0.016,"price":10000},{"amount":0.0068,"price":9696},{"amount":0.002,"price":8500},{"amount":0.0104,"price":7890},{"amount":0.01,"price":7584.25},{"amount":0.0138,"price":7579.89},{"amount":0.0047,"price":6000},{"amount":0.0042,"price":5823.95},{"amount":0.01,"price":5800},{"amount":0.0421,"price":5795},{"amount":0.0904,"price":5619},{"amount":0.142,"price":5600.07},{"amount":0.0264,"price":5600},{"amount":0.3425,"price":5599.97},{"amount":0.2671,"price":5599.36},{"amount":0.3872,"price":5599.26},{"amount":0.0047,"price":5599},{"amount":0.5821,"price":5598.65},{"amount":0.455,"price":5598.55},{"amount":0.1289,"price":5597.94},{"amount":0.2744,"price":5597.84},{"amount":0.0276,"price":5597.23},{"amount":0.0276,"price":5597.13},{"amount":0.388,"price":5596.52},{"amount":0.1416,"price":5596.42},{"amount":0.0444,"price":5595.81},{"amount":0.116,"price":5595.71},{"amount":0.5827,"price":5595.1},{"amount":1.5143,"price":5595},{"amount":0.1135,"price":5594.39},{"amount":0.0235,"price":5594.29},{"amount":0.026,"price":5593.68},{"amount":0.1749,"price":5593.58},{"amount":0.0732,"price":5592.97},{"amount":0.5567,"price":5592.87},{"amount":0.0285,"price":5592.26},{"amount":0.0148,"price":5592.16},{"amount":0.4417,"price":5591.55},{"amount":0.3033,"price":5591.45},{"amount":0.4139,"price":5590.84},{"amount":0.1637,"price":5590.74},{"amount":0.002,"price":5590.13},{"amount":0.4246,"price":5590.03},{"amount":0.8064,"price":5589.42},{"amount":0.7084,"price":5589.32},{"amount":0.0404,"price":5588.71},{"amount":1.1607,"price":5588.61},{"amount":0.2508,"price":5588},{"amount":0.2463,"price":5587.9},{"amount":0.0137,"price":5587.29},{"amount":6.9971,"price":5587.19},{"amount":1.6612,"price":5586.58},{"amount":0.0464,"price":5586.48},{"amount":0.0057,"price":5586.17},{"amount":0.0073,"price":5586.16}],"bids":[{"amount":1.5909,"price":5583.32},{"amount":0.002,"price":5582.82},{"amount":0.1136,"price":5582.61},{"amount":0.5584,"price":5582.11},{"amount":0.4332,"price":5581.9},{"amount":0.4154,"price":5581.4},{"amount":0.2768,"price":5581.19},{"amount":0.0147,"price":5580.69},{"amount":2.0884,"price":5580.48},{"amount":1.2392,"price":5579.98},{"amount":0.5994,"price":5579.27},{"amount":0.309,"price":5578.56},{"amount":0.3582,"price":5577.85},{"amount":0.1131,"price":5577.14},{"amount":0.8408,"price":5576.43},{"amount":0.0292,"price":5575.72},{"amount":0.2132,"price":5575.01},{"amount":0.1332,"price":5574.3},{"amount":0.2297,"price":5573.59},{"amount":0.3577,"price":5572.88},{"amount":0.4753,"price":5572.17},{"amount":0.0135,"price":5571.46},{"amount":1.1642,"price":5570.75},{"amount":0.012,"price":5570.04},{"amount":0.3214,"price":5569.33},{"amount":0.0674,"price":5400},{"amount":0.0138,"price":5390},{"amount":0.0135,"price":5350},{"amount":2,"price":5305},{"amount":0.0079,"price":5301},{"amount":0.2264,"price":5300},{"amount":6.3546,"price":5288},{"amount":6.4653,"price":5268.46},{"amount":20,"price":5255},{"amount":10,"price":5235},{"amount":10.6857,"price":5205.78},{"amount":0.0102,"price":5150},{"amount":0.01,"price":5119.43},{"amount":0.1,"price":5115},{"amount":0.0037,"price":5000.47},{"amount":0.3164,"price":5000},{"amount":0.002,"price":4950},{"amount":0.0067,"price":4800.01},{"amount":0.002,"price":4760},{"amount":0.0044,"price":4587},{"amount":0.0205,"price":4300},{"amount":0.0134,"price":4200},{"amount":0.02,"price":4069.92},{"amount":0.0269,"price":3900},{"amount":0.0551,"price":3800},{"amount":0.003,"price":3793.26},{"amount":0.0817,"price":3704.25},{"amount":0.002,"price":3678.35},{"amount":0.0048,"price":3590.64},{"amount":0.002,"price":3576.34},{"amount":0.321,"price":3200.57},{"amount":0.0091,"price":3104.99},{"amount":0.0278,"price":3000},{"amount":0.0021,"price":2912.59},{"amount":0.004,"price":2874.59},{"amount":0.002,"price":2636.59},{"amount":0.004,"price":2525.59},{"amount":0.002,"price":2364.59},{"amount":0.0417,"price":2295.98},{"amount":0.002,"price":2235.59},{"amount":0.0021,"price":2183.59},{"amount":0.0448,"price":577.79},{"amount":0.0053,"price":62.27},{"amount":0.0099,"price":4.1},{"amount":1.01,"price":1},{"amount":1.0338,"price":0.13},{"amount":174.8951,"price":0.02}]},"success":true,"time":1556855121662}'
+      string: '{"data":{"asks":[{"amount":0.002,"price":100000},{"amount":0.0149,"price":50000},{"amount":0.0545,"price":19000},{"amount":0.0132,"price":17990},{"amount":0.1563,"price":15000},{"amount":0.0039,"price":14926.2},{"amount":0.0637,"price":14800},{"amount":0.0161,"price":14500},{"amount":0.0026,"price":14049},{"amount":1.0033,"price":14000},{"amount":0.0039,"price":13926.2},{"amount":0.0636,"price":13785},{"amount":0.0107,"price":13500},{"amount":0.158,"price":13489},{"amount":0.0081,"price":13450},{"amount":0.0051,"price":13290.14},{"amount":0.0654,"price":13100},{"amount":0.1261,"price":13050},{"amount":0.1126,"price":13000},{"amount":0.012,"price":12940},{"amount":0.004,"price":12923.36},{"amount":0.0037,"price":12900},{"amount":0.005,"price":12700},{"amount":0.0882,"price":12530.02},{"amount":0.1255,"price":12482.5},{"amount":0.026,"price":12200},{"amount":0.5358,"price":12000},{"amount":0.0021,"price":11995.56},{"amount":0.2,"price":11985.79},{"amount":0.033,"price":11700},{"amount":0.0143,"price":11500},{"amount":0.0096,"price":11350.35},{"amount":0.0288,"price":11000},{"amount":0.01,"price":10980.18},{"amount":0.01,"price":10877},{"amount":0.0125,"price":10800.95},{"amount":0.01,"price":10777},{"amount":0.4495,"price":10510},{"amount":0.01,"price":10477},{"amount":0.01,"price":10377},{"amount":0.15,"price":10310},{"amount":0.0153,"price":10250},{"amount":0.01,"price":10233},{"amount":0.0093,"price":10160.4},{"amount":0.0067,"price":10085.08},{"amount":0.541,"price":10015.94},{"amount":0.9865,"price":10013.66},{"amount":0.198,"price":10011.38},{"amount":0.4221,"price":10009.1},{"amount":0.2675,"price":10006.82},{"amount":2.9094,"price":10004.54},{"amount":0.5894,"price":10002.26},{"amount":0.3393,"price":9999.98},{"amount":0.441,"price":9997.7},{"amount":1.3085,"price":9995.42},{"amount":2.3798,"price":9993.14},{"amount":0.8839,"price":9990.86},{"amount":1.12,"price":9988.58},{"amount":0.9562,"price":9986.3},{"amount":0.7889,"price":9984.02},{"amount":1.4448,"price":9981.74},{"amount":0.2932,"price":9979.46},{"amount":0.2897,"price":9977.18},{"amount":0.0034,"price":9975.92},{"amount":4.9631,"price":9974.9},{"amount":0.3076,"price":9972.09}],"bids":[{"amount":0.5285,"price":9966.71},{"amount":1.1314,"price":9964.43},{"amount":0.9393,"price":9962.15},{"amount":1.2051,"price":9959.87},{"amount":0.3809,"price":9957.59},{"amount":0.1521,"price":9955.31},{"amount":1.1803,"price":9953.03},{"amount":0.1987,"price":9950.75},{"amount":0.6891,"price":9948.47},{"amount":0.8282,"price":9946.19},{"amount":1.3605,"price":9943.91},{"amount":0.842,"price":9941.63},{"amount":0.1852,"price":9939.35},{"amount":0.1427,"price":9937.07},{"amount":0.0189,"price":9934.79},{"amount":0.2234,"price":9932.51},{"amount":0.9142,"price":9930.23},{"amount":0.3584,"price":9927.95},{"amount":0.0468,"price":9925.67},{"amount":0.0072,"price":9923.39},{"amount":0.1728,"price":9921.11},{"amount":0.014,"price":9918.83},{"amount":2.7625,"price":9916.55},{"amount":0.0743,"price":9911.99},{"amount":0.0242,"price":9909.71},{"amount":0.0068,"price":9751},{"amount":0.0807,"price":9300},{"amount":0.3,"price":9100},{"amount":5.786,"price":9041.52},{"amount":3.8967,"price":8986.56},{"amount":0.0167,"price":8971.11},{"amount":0.0031,"price":8800},{"amount":5.3323,"price":8785.24},{"amount":0.0071,"price":8630},{"amount":0.0069,"price":8592.3},{"amount":0.0327,"price":8552},{"amount":0.0067,"price":8500},{"amount":0.0021,"price":8434.9},{"amount":0.1624,"price":8344},{"amount":0.0055,"price":7600},{"amount":0.0407,"price":7150},{"amount":0.0758,"price":7100},{"amount":0.0212,"price":6852},{"amount":0.0108,"price":6800},{"amount":0.0219,"price":6634},{"amount":0.4818,"price":6400},{"amount":0.01,"price":6000},{"amount":0.01,"price":5750},{"amount":0.01,"price":5500},{"amount":0.21,"price":5395},{"amount":0.0135,"price":5350},{"amount":0.02,"price":5250},{"amount":0.03,"price":5000},{"amount":0.02,"price":4069.92},{"amount":0.035,"price":3800},{"amount":0.003,"price":3793.26},{"amount":0.0817,"price":3704.25},{"amount":0.002,"price":3678.35},{"amount":0.002,"price":3576.34},{"amount":0.0091,"price":3104.99},{"amount":0.0278,"price":3000},{"amount":0.0021,"price":2912.59},{"amount":0.004,"price":2874.59},{"amount":0.002,"price":2636.59},{"amount":0.004,"price":2525.59},{"amount":0.002,"price":2364.59},{"amount":0.0417,"price":2295.98},{"amount":0.002,"price":2235.59},{"amount":0.0021,"price":2183.59},{"amount":1,"price":1500},{"amount":0.0106,"price":1000},{"amount":0.0448,"price":577.79},{"amount":9.8275,"price":400},{"amount":0.0053,"price":62.27},{"amount":0.0099,"price":4.1},{"amount":1.0926,"price":2},{"amount":0.999,"price":1.63},{"amount":2.2189,"price":1},{"amount":0.02,"price":0.98},{"amount":0.02,"price":0.57},{"amount":1.0338,"price":0.13},{"amount":1.1018,"price":0.1},{"amount":10,"price":0.01}]},"success":true,"time":1564649698691}'
     http_version: 
-  recorded_at: Fri, 03 May 2019 03:45:14 GMT
+  recorded_at: Thu, 01 Aug 2019 08:54:57 GMT
 recorded_with: VCR 4.0.0
