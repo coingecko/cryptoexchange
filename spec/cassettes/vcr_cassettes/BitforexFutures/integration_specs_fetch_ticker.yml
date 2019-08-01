@@ -1,0 +1,110 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitforex.com/contract/mkapi/getH24Ticker?businessType=swap-usd-btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitforex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Thu, 01 Aug 2019 08:54:52 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - HttpOnly=true
+      - __cfduid=d49b73d8d082985509d24652458688aeb1564649692; expires=Fri, 31-Jul-20
+        08:54:52 GMT; path=/; domain=.bitforex.com; HttpOnly
+      - secure=true
+      Location:
+      - https://www.bitforex.com/contract/mkapi/getH24Ticker?businessType=swap-usd-btc
+      Strict-Transport-Security:
+      - max-age=15768000
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ff69703fbd02cbb-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        <html>
+        <head><title>301 Moved Permanently</title></head>
+        <body bgcolor="white">
+        <center><h1>301 Moved Permanently</h1></center>
+        <hr><center>nginx</center>
+        </body>
+        </html>
+    http_version: 
+  recorded_at: Thu, 01 Aug 2019 08:54:51 GMT
+- request:
+    method: get
+    uri: https://www.bitforex.com/contract/mkapi/getH24Ticker?businessType=swap-usd-btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Host:
+      - www.bitforex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Aug 2019 08:54:52 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - HttpOnly=true
+      - __cfduid=d8619a2a4b588076c8aa949963f0b5af21564649692; expires=Fri, 31-Jul-20
+        08:54:52 GMT; path=/; domain=.bitforex.com; HttpOnly
+      - secure=true
+      X-B3-Sampled:
+      - '1'
+      X-B3-Spanid:
+      - 55f7bd7ebfbd1195
+      X-B3-Traceid:
+      - 55f7bd7ebfbd1195
+      X-Application-Context:
+      - bitforex-marketquery-new-swap:9301
+      Strict-Transport-Security:
+      - max-age=15768000
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ff69704c92edd4a-KUL
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"code":"0","msg":null,"data":{"startdate":1564563292955,"enddate":1564649692955,"type":"24H","high":10160.5,"low":0,"last":9985,"open":9763.5,"productvol":19269516,"currencyvol":1939.45877602,"allVol":203227621,"allCurrencyVol":21070.05598663,"rate":0.0226}}'
+    http_version: 
+  recorded_at: Thu, 01 Aug 2019 08:54:52 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,110 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitforex.com/contract/mkapi/depth?businessType=swap-usd-btc&dType=0&size=50
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitforex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Thu, 01 Aug 2019 08:54:53 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - HttpOnly=true
+      - __cfduid=d410428f25d46d5589eac6b17b6686abb1564649693; expires=Fri, 31-Jul-20
+        08:54:53 GMT; path=/; domain=.bitforex.com; HttpOnly
+      - secure=true
+      Location:
+      - https://www.bitforex.com/contract/mkapi/depth?businessType=swap-usd-btc&size=50&dType=0
+      Strict-Transport-Security:
+      - max-age=15768000
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ff69705d8f7dd4e-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        <html>
+        <head><title>301 Moved Permanently</title></head>
+        <body bgcolor="white">
+        <center><h1>301 Moved Permanently</h1></center>
+        <hr><center>nginx</center>
+        </body>
+        </html>
+    http_version: 
+  recorded_at: Thu, 01 Aug 2019 08:54:52 GMT
+- request:
+    method: get
+    uri: https://www.bitforex.com/contract/mkapi/depth?businessType=swap-usd-btc&dType=0&size=50
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Host:
+      - www.bitforex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Aug 2019 08:54:53 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - HttpOnly=true
+      - __cfduid=db07e8998e6f35b5f8bf8fd08d7e4feb61564649693; expires=Fri, 31-Jul-20
+        08:54:53 GMT; path=/; domain=.bitforex.com; HttpOnly
+      - secure=true
+      X-B3-Sampled:
+      - '1'
+      X-B3-Spanid:
+      - e7406f2f17427d4a
+      X-B3-Traceid:
+      - e7406f2f17427d4a
+      X-Application-Context:
+      - bitforex-marketquery-new-swap:9301
+      Strict-Transport-Security:
+      - max-age=15768000
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ff69706aaee2d21-KUL
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"code":"0","msg":null,"data":{"asks":[{"price":9985.5,"amount":5848},{"price":9986.0,"amount":3960},{"price":9986.5,"amount":1224},{"price":9987.0,"amount":767},{"price":9987.5,"amount":28},{"price":9988.0,"amount":2175},{"price":9988.5,"amount":16},{"price":9989.0,"amount":663},{"price":9989.5,"amount":1008},{"price":9990.0,"amount":6840},{"price":9991.0,"amount":9580},{"price":9993.0,"amount":2520},{"price":9994.0,"amount":3762},{"price":9994.5,"amount":2300},{"price":9995.0,"amount":6504},{"price":9995.5,"amount":4000},{"price":9996.0,"amount":260},{"price":9996.5,"amount":54},{"price":9997.0,"amount":28},{"price":9998.0,"amount":8729},{"price":10030.0,"amount":2000},{"price":10100.0,"amount":2000},{"price":10120.0,"amount":500},{"price":10300.0,"amount":500},{"price":10700.0,"amount":75},{"price":10990.0,"amount":75}],"bids":[{"price":9985.0,"amount":1000},{"price":9984.5,"amount":814},{"price":9984.0,"amount":324},{"price":9983.5,"amount":13},{"price":9983.0,"amount":112},{"price":9982.5,"amount":60},{"price":9982.0,"amount":1632},{"price":9981.5,"amount":17},{"price":9981.0,"amount":4482},{"price":9980.5,"amount":6593},{"price":9980.0,"amount":40},{"price":9979.5,"amount":5502},{"price":9979.0,"amount":4818},{"price":9978.5,"amount":207},{"price":9978.0,"amount":336},{"price":9977.5,"amount":11100},{"price":9977.0,"amount":2184},{"price":9976.5,"amount":1998},{"price":9976.0,"amount":1008},{"price":9975.5,"amount":522},{"price":8712.5,"amount":200}]}}'
+    http_version: 
+  recorded_at: Thu, 01 Aug 2019 08:54:52 GMT
+recorded_with: VCR 4.0.0
