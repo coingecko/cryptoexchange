@@ -82,6 +82,7 @@ Or install it yourself as:
 | Bitflyer          | Y       | Y [x]      |         |         | Y           |          | bitflyer          |       |
 | Bitflyer (Futures)| Y       | Y [x]      |         |         | Y           | Y        | bitflyer_futures  |       |
 | Bitforex          | Y       | Y [x]      | N       |         | Y           |          | bitforex          |       |
+| BitforexFutures   | Y       | Y [x]      | N       |         | Y           | Y        | bitforex_futures  |       |
 | Bithash           | Y       | Y [x]      | Y       |         | Y           | Y        | bithash           |       |
 | Bitholic          | Y       | Y [x]      | Y       |         | Y           |          | bitholic          |       |
 | Bithumb           | Y       | Y [x]      |         |         | Y           |          | bithumb           |       |
