@@ -25,8 +25,8 @@ module Cryptoexchange::Exchanges
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
           order_book.market    = Probit::Market::NAME
-          order_book.asks      = arrange_orders(output['data'], "bids")
-          order_book.bids      = arrange_orders(output['data'], "asks")
+          order_book.asks      = arrange_orders(output['data'], "asks")
+          order_book.bids      = arrange_orders(output['data'], "bids")
           order_book.timestamp = nil
           order_book.payload   = output
           order_book
