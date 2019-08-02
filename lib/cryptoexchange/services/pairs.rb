@@ -77,7 +77,7 @@ module Cryptoexchange
       end
 
       def http_get(endpoint)
-        WrappedHTTP.client.timeout(25).follow.get(endpoint)
+        WrappedHTTP.client.timeout(25).follow.use(:auto_inflate).get(endpoint)
       end
 
       def http_post(endpoint, params)
