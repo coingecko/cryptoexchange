@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.probit.com/api/exchange/v1/order_book?market_id=BTC-USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.probit.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 02 Aug 2019 09:08:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '6424'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d17adee15981e325b60d0a001e929be731564736895; expires=Sat, 01-Aug-20
+        09:08:15 GMT; path=/; domain=.probit.com; HttpOnly; Secure
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"1918-QWWLn2nXFfRuId6Wc7X86bOEQAI"
+      Strict-Transport-Security:
+      - max-age=15552000
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ffee7ff8ab02d21-KUL
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"side":"sell","price":"19580","quantity":"0.00181549"},{"side":"sell","price":"14580","quantity":"0.0001"},{"side":"sell","price":"2970000","quantity":"0.002"},{"side":"buy","price":"7017","quantity":"0.001"},{"side":"buy","price":"7217","quantity":"0.001"},{"side":"buy","price":"5147","quantity":"0.00388575"},{"side":"sell","price":"19977","quantity":"0.01"},{"side":"buy","price":"1210","quantity":"0.005"},{"side":"sell","price":"15458","quantity":"0.0001"},{"side":"buy","price":"4117","quantity":"0.00034689"},{"side":"sell","price":"3158000","quantity":"0.0001"},{"side":"buy","price":"950","quantity":"0.01"},{"side":"sell","price":"32800","quantity":"0.0001"},{"side":"buy","price":"0.1","quantity":"17"},{"side":"buy","price":"4200.1","quantity":"0.005"},{"side":"buy","price":"7207","quantity":"0.002"},{"side":"buy","price":"7107","quantity":"0.001"},{"side":"buy","price":"2.3","quantity":"1"},{"side":"buy","price":"11","quantity":"1"},{"side":"buy","price":"0.3804","quantity":"0.98449027"},{"side":"buy","price":"3007","quantity":"0.003"},{"side":"buy","price":"7227","quantity":"0.001"},{"side":"buy","price":"7247","quantity":"0.001"},{"side":"buy","price":"1","quantity":"1"},{"side":"buy","price":"1400","quantity":"0.01"},{"side":"buy","price":"7237","quantity":"0.001"},{"side":"sell","price":"14800","quantity":"0.0001"},{"side":"sell","price":"33880","quantity":"0.002"},{"side":"buy","price":"2100","quantity":"0.01"},{"side":"buy","price":"8457","quantity":"0.01"},{"side":"buy","price":"8497","quantity":"0.001"},{"side":"buy","price":"6497","quantity":"0.001"},{"side":"sell","price":"10551.4","quantity":"0.0017"},{"side":"sell","price":"10552.1","quantity":"0.001758"},{"side":"sell","price":"10554.9","quantity":"0.001725"},{"side":"sell","price":"10551.2","quantity":"0.001169"},{"side":"buy","price":"10453.4","quantity":"0.001175"},{"side":"buy","price":"10453.6","quantity":"0.001785"},{"side":"buy","price":"10452.7","quantity":"0.001841"},{"side":"buy","price":"10454.4","quantity":"0.001619"},{"side":"buy","price":"10454.6","quantity":"0.001386"},{"side":"buy","price":"10453.3","quantity":"0.001689"},{"side":"buy","price":"10453","quantity":"0.001472"},{"side":"buy","price":"10453.1","quantity":"0.001276"},{"side":"buy","price":"10452.8","quantity":"0.001594"},{"side":"buy","price":"10453.2","quantity":"0.001295"},{"side":"buy","price":"10452.9","quantity":"0.001726"},{"side":"buy","price":"10460","quantity":"0.001363"},{"side":"buy","price":"10471.7","quantity":"0.001898"},{"side":"buy","price":"10472.3","quantity":"0.001387"},{"side":"sell","price":"10547.8","quantity":"0.001237"},{"side":"sell","price":"10548.1","quantity":"0.001865"},{"side":"sell","price":"10548.3","quantity":"0.00131"},{"side":"sell","price":"10548.4","quantity":"0.001419"},{"side":"sell","price":"10548","quantity":"0.001512"},{"side":"sell","price":"10547.9","quantity":"0.00175"},{"side":"sell","price":"10547.7","quantity":"0.001753"},{"side":"sell","price":"10548.2","quantity":"0.001184"},{"side":"sell","price":"10548.7","quantity":"0.831107"},{"side":"sell","price":"10548.6","quantity":"0.00156"},{"side":"sell","price":"10548.9","quantity":"0.001275"},{"side":"sell","price":"10548.5","quantity":"0.001395"},{"side":"sell","price":"10549","quantity":"0.001128"},{"side":"sell","price":"10549.2","quantity":"0.001636"},{"side":"sell","price":"10549.4","quantity":"0.932128"},{"side":"sell","price":"10549.3","quantity":"0.001468"},{"side":"sell","price":"10549.7","quantity":"0.001081"},{"side":"sell","price":"10549.5","quantity":"0.001588"},{"side":"sell","price":"10549.1","quantity":"0.001888"},{"side":"sell","price":"10549.6","quantity":"0.001631"},{"side":"sell","price":"10549.8","quantity":"0.001178"},{"side":"buy","price":"10473.4","quantity":"0.001895"},{"side":"buy","price":"10475","quantity":"0.001794"},{"side":"buy","price":"10475.1","quantity":"0.001176"},{"side":"buy","price":"10473.9","quantity":"0.001748"},{"side":"buy","price":"10472.4","quantity":"0.001644"},{"side":"buy","price":"10472.1","quantity":"0.001908"},{"side":"buy","price":"10472.5","quantity":"0.001287"},{"side":"buy","price":"10472.2","quantity":"0.001751"},{"side":"buy","price":"10472","quantity":"0.001661"},{"side":"buy","price":"10473.7","quantity":"0.001703"},{"side":"buy","price":"10471.9","quantity":"0.001217"},{"side":"buy","price":"10471.8","quantity":"0.001797"},{"side":"buy","price":"10471.5","quantity":"0.001745"},{"side":"buy","price":"10489.2","quantity":"0.2859"},{"side":"buy","price":"10484.8","quantity":"0.90298"},{"side":"buy","price":"10482.5","quantity":"0.00157"},{"side":"buy","price":"10489.1","quantity":"0.031941"},{"side":"buy","price":"10478.9","quantity":"0.001144"},{"side":"buy","price":"10488","quantity":"0.00168"},{"side":"buy","price":"10489.4","quantity":"0.001585"},{"side":"buy","price":"10498.4","quantity":"0.22105"},{"side":"buy","price":"10498.5","quantity":"0.001882"},{"side":"buy","price":"10505.9","quantity":"0.457662"},{"side":"sell","price":"10541.8","quantity":"0.213"},{"side":"sell","price":"10543.4","quantity":"0.8903"},{"side":"buy","price":"10506.6","quantity":"0.82"},{"side":"buy","price":"10507.1","quantity":"0.001718"},{"side":"sell","price":"10542.5","quantity":"0.748"},{"side":"buy","price":"10511","quantity":"0.04583"},{"side":"buy","price":"10507","quantity":"0.001855"},{"side":"buy","price":"10508.5","quantity":"0.88707"},{"side":"buy","price":"10510.8","quantity":"0.043745"},{"side":"buy","price":"10511.3","quantity":"0.031331"},{"side":"sell","price":"10547.2","quantity":"0.505808"},{"side":"sell","price":"10547.3","quantity":"0.00121"},{"side":"sell","price":"10547.6","quantity":"0.001329"},{"side":"sell","price":"10550","quantity":"0.001865"},{"side":"buy","price":"10510.5","quantity":"1"},{"side":"buy","price":"10513.5","quantity":"0.3"},{"side":"sell","price":"10549.9","quantity":"0.001059"},{"side":"sell","price":"10550.2","quantity":"0.001786"},{"side":"sell","price":"10550.1","quantity":"0.001807"},{"side":"sell","price":"10550.5","quantity":"0.001122"},{"side":"buy","price":"10512.9","quantity":"0.001387"},{"side":"sell","price":"10550.4","quantity":"0.001436"},{"side":"sell","price":"10546.9","quantity":"0.011208"},{"side":"sell","price":"10550.9","quantity":"0.001602"},{"side":"sell","price":"10546.7","quantity":"0.015381"},{"side":"sell","price":"10546.6","quantity":"0.039436"}]}'
+    http_version: 
+  recorded_at: Fri, 02 Aug 2019 09:08:16 GMT
+recorded_with: VCR 4.0.0

@@ -350,7 +350,7 @@ Or install it yourself as:
 | Nova Exchange     | Y       |            |         |         | Y           |          | novaexchange      |       |
 | OasisDEX          | Y       |            |         |         | Y           |          | oasisdex          |       |
 | OAX               | Y       |            |         |         | Y           |          | oax               |       |
-| Oceanex           | Y       | Y          | Y       |         | Y           | Y        | oceanex           |       |
+| Oceanex           | Y       | Y [x]      | Y       |         | Y           | Y        | oceanex           |       |
 | Octaex            | Y       | Y          | Y       |         | Y           |          | octaex            |       |
 | OEX               | Y       | Y [x]      |         |         | Y           |          | oex               |       |
 | OKCoin            | Y       | Y [x]      |         |         | Y           |          | okcoin            |       |
@@ -370,8 +370,9 @@ Or install it yourself as:
 | Piexgo            | Y       | Y [x]      | Y       |         | Y           |          | piexgo            |       |
 | Poloniex          | Y       | Y [x]      | Y [limit: 200]       |         | Y           | Y        | poloniex          |       |
 | Prixbit           | Y       |            |         |         | Y           | Y        | prixbit           |       |
+| Probit            | Y       | Y [x]      |         |         | Y           | Y        | probit            |       |
 | Purcow            | Y       |            |         |         | Y           | Y        | purcow            |       |
-| QBTC              | Y       | Y          | Y       |         | Y           |          | qbtc              |       |
+| QBTC              | Y       | Y [x]      | Y       |         | Y           |          | qbtc              |       |
 | Qryptos           | Y       |            |         |         | Y           |          | qryptos           |       |
 | Qtrade            | Y       | Y [x]      |         |         | Y           |          | qtrade            |       |
 | QuadrigaCX        | Y       |            |         |         | User-Defined|          | quadrigacx        |       |
@@ -408,7 +409,7 @@ Or install it yourself as:
 | 3Xbit             | Y       | Y          | Y       |         | Y           | Y        | three_xbit        |       |
 | Tideal            | Y       | Y          | Y       |         | Y           |          | tideal            |       |
 | Tidebit           | Y       | Y [x]      | Y       |         | Y           |          | tidebit           |       |
-| Tidex             | Y       |            |         |         | Y           |          | tidex             |       |
+| Tidex             | Y       | Y [x]      |         |         | Y           |          | tidex             |       |
 | Tokenize          | Y       | Y [x]      |         |         | Y           | Y        | tokenize          |       |
 | Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |       |
 | Tokenomy          | Y       | Y [x]      | Y       |         | Y           | Y        | tokenomy          |       |
@@ -437,7 +438,7 @@ Or install it yourself as:
 | Velic             | Y       | Y [x]      |         |         | Y           | N        | velic             |       |
 | Vertpig           | Y       | Y          | N       |         | Y           | Y        | vertpig           |       |
 | Viabtc            | Y       |            |         |         | User-Defined|          | viabtc            |       |
-| Vindax            | Y       |            |         |         | Y           | Y        | vindax            |       |
+| Vindax            | Y       | Y [x]      |         |         | Y           | Y        | vindax            |       |
 | Vinex             | Y       | Y [x]      |         |         | Y           | Y        | vinex             |       |
 | Waves             | Y       | N          | Y       |         | Y           |          | waves             |       |
 | WazirX            | Y       |            |         |         | Y           |          | wazirx            |       |
