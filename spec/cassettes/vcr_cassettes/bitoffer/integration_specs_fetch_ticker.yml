@@ -1,0 +1,101 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitoffer.com/v1/api/cash/instrument
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitoffer.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 05 Aug 2019 07:26:02 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Expires:
+      - '0'
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Set-Cookie:
+      - JSESSIONID=UBnEPRbI0BiM6amlZCsjQhM6-kncgM2BE8-FsMVy; path=/
+      X-Xss-Protection:
+      - 1; mode=block
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Application-Context:
+      - api-gateway:prod:8080
+    body:
+      encoding: UTF-8
+      string: '{"code":0,"msg":"success","data":[{"instrumentId":15,"symbol":"AKRO-USDT","productId":18,"coinId":3,"priceTick":"0.0001","lotSize":"0.01","fresh":1},{"instrumentId":3,"symbol":"BTC-USDT","productId":2,"coinId":3,"priceTick":"0.001","lotSize":"0.000001","fresh":0},{"instrumentId":16,"symbol":"CARM-USDT","productId":15,"coinId":3,"priceTick":"0.000001","lotSize":"0.01","fresh":1},{"instrumentId":27,"symbol":"DASH-BTC","productId":22,"coinId":2,"priceTick":"0.000001","lotSize":"0.01","fresh":1},{"instrumentId":26,"symbol":"DASH-ETH","productId":22,"coinId":1,"priceTick":"0.000001","lotSize":"0.01","fresh":1},{"instrumentId":28,"symbol":"DASH-USDT","productId":22,"coinId":3,"priceTick":"0.001","lotSize":"0.001","fresh":1},{"instrumentId":1,"symbol":"ETH-BTC","productId":1,"coinId":2,"priceTick":"0.000001","lotSize":"0.001","fresh":0},{"instrumentId":2,"symbol":"ETH-USDT","productId":1,"coinId":3,"priceTick":"0.001","lotSize":"0.00001","fresh":0},{"instrumentId":12,"symbol":"FET-BTC","productId":7,"coinId":2,"priceTick":"0.00000001","lotSize":"0.01","fresh":1},{"instrumentId":13,"symbol":"FET-USDT","productId":7,"coinId":3,"priceTick":"0.0001","lotSize":"0.01","fresh":1},{"instrumentId":10,"symbol":"IOST-BTC","productId":6,"coinId":2,"priceTick":"0.00000001","lotSize":"0.1","fresh":1},{"instrumentId":9,"symbol":"IOST-ETH","productId":6,"coinId":1,"priceTick":"0.00000001","lotSize":"0.01","fresh":1},{"instrumentId":11,"symbol":"IOST-USDT","productId":6,"coinId":3,"priceTick":"0.000001","lotSize":"0.1","fresh":1},{"instrumentId":18,"symbol":"IOTX-BTC","productId":17,"coinId":2,"priceTick":"0.00000001","lotSize":"0.1","fresh":1},{"instrumentId":17,"symbol":"IOTX-ETH","productId":17,"coinId":1,"priceTick":"0.00000001","lotSize":"0.1","fresh":1},{"instrumentId":24,"symbol":"NEO-BTC","productId":21,"coinId":2,"priceTick":"0.000001","lotSize":"0.01","fresh":1},{"instrumentId":23,"symbol":"NEO-ETH","productId":21,"coinId":1,"priceTick":"0.000001","lotSize":"0.01","fresh":1},{"instrumentId":25,"symbol":"NEO-USDT","productId":21,"coinId":3,"priceTick":"0.001","lotSize":"0.001","fresh":1},{"instrumentId":5,"symbol":"OMG-BTC","productId":4,"coinId":2,"priceTick":"0.000001","lotSize":"0.01","fresh":1},{"instrumentId":4,"symbol":"OMG-ETH","productId":4,"coinId":1,"priceTick":"0.000001","lotSize":"0.01","fresh":1},{"instrumentId":6,"symbol":"OMG-USDT","productId":4,"coinId":3,"priceTick":"0.0001","lotSize":"0.01","fresh":1},{"instrumentId":20,"symbol":"SOLVE-BTC","productId":20,"coinId":2,"priceTick":"0.00000001","lotSize":"0.001","fresh":1},{"instrumentId":19,"symbol":"SOLVE-ETH","productId":20,"coinId":1,"priceTick":"0.00000001","lotSize":"0.001","fresh":1},{"instrumentId":8,"symbol":"WTC-BTC","productId":5,"coinId":2,"priceTick":"0.0000001","lotSize":"0.01","fresh":1},{"instrumentId":7,"symbol":"WTC-ETH","productId":5,"coinId":1,"priceTick":"0.000001","lotSize":"0.01","fresh":1},{"instrumentId":22,"symbol":"XEM-BTC","productId":19,"coinId":2,"priceTick":"0.00000001","lotSize":"0.001","fresh":1},{"instrumentId":21,"symbol":"XEM-ETH","productId":19,"coinId":1,"priceTick":"0.00000001","lotSize":"0.001","fresh":1}]}'
+    http_version: 
+  recorded_at: Mon, 05 Aug 2019 07:26:02 GMT
+- request:
+    method: get
+    uri: https://api.bitoffer.com/v1/api/quot/market
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitoffer.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 05 Aug 2019 07:26:02 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Expires:
+      - '0'
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Set-Cookie:
+      - JSESSIONID=-QkcAwVAkS9nXibM04xJHBfIemAirsqPpWM7QrlH; path=/
+      X-Xss-Protection:
+      - 1; mode=block
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Application-Context:
+      - api-gateway:prod:8080
+    body:
+      encoding: UTF-8
+      string: '{"code":0,"msg":"success","data":[{"instrumentId":1,"timestamp":1564989952304888,"last":"0.019541","vol":"15","open":"0.020294","high":"0.020364","low":"0.019534","turnover":"6747.521409281","volume":"339088.591","change":"-0.000753","changeRatio":"-3.7097250960685782"},{"instrumentId":2,"timestamp":1564989952367481,"last":"229.36","vol":"2.61754","open":"221.89","high":"230.38","low":"221.79","turnover":"120853806.0256082","volume":"530937.27455","change":"7.47","changeRatio":"3.3680508589206006"},{"instrumentId":3,"timestamp":1564989952427361,"last":"11738.78","vol":"0.558325","open":"10931.78","high":"11744.43","low":"10927.34","turnover":"964376569.65976947","volume":"84392.290998","change":"807","changeRatio":"7.3851323649994143"},{"instrumentId":4,"timestamp":1564989952487147,"last":"0.006714","vol":"5.61","open":"0.00685","high":"0.00688","low":"0.0067","turnover":"2818.36636413","volume":"416865.02","change":"-0.000136","changeRatio":"-1.9883040935672515"},{"instrumentId":5,"timestamp":1564989952545217,"last":"0.000131","vol":"1.18","open":"0.00014","high":"0.00014","low":"0.000131","turnover":"35.82340989","volume":"267106.69","change":"-0.000009","changeRatio":"-6.4285714285714286"},{"instrumentId":6,"timestamp":1564989952612202,"last":"1.5387","vol":"21.8","open":"1.5236","high":"1.5491","low":"1.5218","turnover":"649683.062464","volume":"422536.44","change":"0.0151","changeRatio":"0.9910737726437385"},{"instrumentId":7,"timestamp":1564989952671790,"last":"0.007643","vol":"1.75","open":"0.008091","high":"0.008091","low":"0.007643","turnover":"541.8816862","volume":"69924.96","change":"-0.000448","changeRatio":"-5.5370164380175504"},{"instrumentId":8,"timestamp":1564989952726788,"last":"0.00015","vol":"10.91","open":"0.0001637","high":"0.0001637","low":"0.0001495","turnover":"67.503106177","volume":"437577.28","change":"-0.0000137","changeRatio":"-8.3689676237018937"},{"instrumentId":9,"timestamp":1564989952788781,"last":"0.00004362","vol":"1865","open":"0.0000445","high":"0.00004466","low":"0.00004335","turnover":"567.09662645","volume":"12923812","change":"-0.00000088","changeRatio":"-1.9775280898876404"},{"instrumentId":10,"timestamp":1564989946305694,"last":"0.00000085","vol":"18628","open":"0.00000091","high":"0.00000091","low":"0.00000085","turnover":"47.80271438","volume":"54705730","change":"-0.00000006","changeRatio":"-6.5934065934065934"},{"instrumentId":11,"timestamp":1564989957855425,"last":"0.009973","vol":"20305","open":"0.009872","high":"0.010098","low":"0.009872","turnover":"783186.551354","volume":"78510535","change":"0.000101","changeRatio":"1.023095623987034"},{"instrumentId":12,"timestamp":1564989957940718,"last":"0.00000644","vol":"985.36","open":"0.00000713","high":"0.00000716","low":"0.00000642","turnover":"65.995425234","volume":"9823698.83","change":"-0.00000069","changeRatio":"-9.6774193548387097"},{"instrumentId":13,"timestamp":1564989958011195,"last":"0.0754","vol":"446.9","open":"0.078","high":"0.0785","low":"0.0751","turnover":"630347.616145","volume":"8192442.45","change":"-0.0026","changeRatio":"-3.3333333333333333"},{"instrumentId":15,"timestamp":1564989958058130,"last":"0.0273","vol":"1687.17","open":"0.0274","high":"0.0277","low":"0.0271","turnover":"184389.152517","volume":"6734100.96","change":"-0.0001","changeRatio":"-0.3663003663003663"},{"instrumentId":16,"timestamp":1564989958083063,"last":"0.004343","vol":"31912.9","open":"0.004539","high":"0.004561","low":"0.004286","turnover":"186171.20530299","volume":"42383397.45","change":"-0.000196","changeRatio":"-4.3190832966064346"},{"instrumentId":17,"timestamp":1564989958139656,"last":"0.00002515","vol":"41504","open":"0.00002676","high":"0.00002685","low":"0.00002502","turnover":"143.92556646","volume":"5625133","change":"-0.00000161","changeRatio":"-6.0164424514200299"},{"instrumentId":18,"timestamp":1564989958199647,"last":"0.0000005","vol":"484","open":"0.00000054","high":"0.00000054","low":"0.00000049","turnover":"35.31903891","volume":"68719828","change":"-0.00000004","changeRatio":"-7.4074074074074074"},{"instrumentId":19,"timestamp":1564989951683837,"last":"0.00080958","vol":"129.784","open":"0.00082515","high":"0.00082515","low":"0.0008009","turnover":"212.76818608216","volume":"262566.415","change":"-0.00001557","changeRatio":"-1.8869296491546991"},{"instrumentId":20,"timestamp":1564989951741859,"last":"0.00001586","vol":"34.412","open":"0.00001682","high":"0.00001686","low":"0.0000155","turnover":"26.55591282017","volume":"1663884.02","change":"-0.00000096","changeRatio":"-5.7074910820451843"},{"instrumentId":21,"timestamp":1564989951801493,"last":"0.00028387","vol":"15434","open":"0.0002869","high":"0.00028769","low":"0.00028091","turnover":"1117.33177166","volume":"3932005","change":"-0.00000303","changeRatio":"-1.0561171139769955"},{"instrumentId":22,"timestamp":1564989951859255,"last":"0.00000555","vol":"196","open":"0.00000582","high":"0.00000584","low":"0.00000554","turnover":"23.48652231","volume":"4146097","change":"-0.00000027","changeRatio":"-4.6312178387650086"},{"instrumentId":23,"timestamp":1564989951949952,"last":"0.053207","vol":"18.49","open":"0.053527","high":"0.05385","low":"0.05305","turnover":"1826.02725899","volume":"34194.34","change":"-0.00032","changeRatio":"-0.5978291329609356"},{"instrumentId":24,"timestamp":1564989952004465,"last":"0.00104","vol":"4.12","open":"0.001086","high":"0.001091","low":"0.00104","turnover":"77.50690485","volume":"72811.16","change":"-0.000046","changeRatio":"-4.23963133640553"},{"instrumentId":25,"timestamp":1564989952065512,"last":"12.203","vol":"22.227","open":"11.88","high":"12.31","low":"11.878","turnover":"1158504.162867","volume":"95441.087","change":"0.323","changeRatio":"2.7188552188552189"},{"instrumentId":26,"timestamp":1564989952127777,"last":"0.47431","vol":"0.172","open":"0.47133","high":"0.47704","low":"0.471","turnover":"767.04471894","volume":"1615.884","change":"0.00298","changeRatio":"0.6322534105616023"},{"instrumentId":27,"timestamp":1564989952186694,"last":"0.009258","vol":"3.334","open":"0.009378","high":"0.00945","low":"0.009258","turnover":"24.179672051","volume":"2576.573","change":"-0.00012","changeRatio":"-1.2795905310300704"},{"instrumentId":28,"timestamp":1564989952245612,"last":"108.86","vol":"0.12862","open":"108.23","high":"108.9","low":"107.96","turnover":"444092.0920942","volume":"4097.97939","change":"0.63","changeRatio":"0.5820936893652407"}]}'
+    http_version: 
+  recorded_at: Mon, 05 Aug 2019 07:26:02 GMT
+recorded_with: VCR 4.0.0
