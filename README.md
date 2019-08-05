@@ -38,6 +38,7 @@ Or install it yourself as:
 | Altmarkets        | Y       | Y [x]      | Y       |         | Y           | Y        | altmarkets        |       |
 | ANX               | Y       |            |         |         | User-Defined|          | anx               |       |
 | Aphelion          | Y       |            |         |         | Y           | Y        | aphelion          |       |
+| Atomars           | Y       | Y          | Y       |         | Y           | Y        | atomars           |       |
 | AXNET (halted)    | Y       | Y          | Y       |         | Y           | Y        | axnet             |       |
 | B2BX              | Y       | N          |         |         | Y           |          | b2bx              |       |
 | Bamboo Relay      | Y       | Y [x]      |         |         | Y           | Y        | bamboo_relay      |       |
