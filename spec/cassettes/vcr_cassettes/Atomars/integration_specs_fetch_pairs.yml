@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.atomars.com/v1/coingecko/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.atomars.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 12 Jul 2019 10:09:58 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=efg5t52ltue0n19sg04boc7opc; path=/; HttpOnly
+      - __cfduid=d5bc59ee4242ae7be2bf2dbc55b86acc11562926198; expires=Sat, 11-Jul-20
+        10:09:58 GMT; path=/; domain=.atomars.com; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4f5239821e37b845-WAW
+    body:
+      encoding: UTF-8
+      string: '[{"base":"MKR","quote":"BTC"},{"base":"MKR","quote":"ETH"},{"base":"BTC","quote":"TUSD"},{"base":"BTC","quote":"USDT"},{"base":"ETH","quote":"USDT"},{"base":"LTC","quote":"USDT"},{"base":"ZEC","quote":"USDT"},{"base":"DASH","quote":"USDT"},{"base":"XRP","quote":"USDT"},{"base":"DOGE","quote":"USDT"},{"base":"NEO","quote":"USDT"},{"base":"MKR","quote":"USDT"},{"base":"OMG","quote":"USDT"},{"base":"QTUM","quote":"USDT"},{"base":"BAT","quote":"USDT"},{"base":"ZRX","quote":"USDT"},{"base":"ZIL","quote":"USDT"},{"base":"NPXS","quote":"USDT"},{"base":"LINK","quote":"USDT"},{"base":"MANA","quote":"USDT"},{"base":"DENT","quote":"USDT"},{"base":"DGD","quote":"USDT"},{"base":"ENG","quote":"USDT"},{"base":"LEND","quote":"USDT"},{"base":"ETHOS","quote":"USDT"},{"base":"GNT","quote":"USDT"},{"base":"HOT","quote":"USDT"},{"base":"LOOM","quote":"USDT"},{"base":"LRC","quote":"USDT"},{"base":"POLY","quote":"USDT"},{"base":"PPT","quote":"USDT"},{"base":"POWR","quote":"USDT"},{"base":"AGI","quote":"USDT"},{"base":"SNT","quote":"USDT"},{"base":"WTC","quote":"USDT"},{"base":"DOGE","quote":"TUSD"},{"base":"LTC","quote":"TUSD"},{"base":"DASH","quote":"TUSD"},{"base":"XRP","quote":"TUSD"},{"base":"ZEC","quote":"TUSD"},{"base":"ETH","quote":"TUSD"},{"base":"TUSD","quote":"USDT"},{"base":"NEO","quote":"BTC"},{"base":"ZEC","quote":"BTC"},{"base":"DASH","quote":"BTC"},{"base":"ETH","quote":"BTC"},{"base":"LTC","quote":"BTC"},{"base":"XRP","quote":"BTC"},{"base":"LINK","quote":"BTC"},{"base":"LTC","quote":"ETH"},{"base":"POLY","quote":"ETH"},{"base":"NEXO","quote":"BTC"},{"base":"NEXO","quote":"ETH"},{"base":"NEXO","quote":"USDT"},{"base":"ESAX","quote":"BTC"},{"base":"ESAX","quote":"ETH"},{"base":"ESAX","quote":"USDT"},{"base":"POWR","quote":"BTC"},{"base":"POWR","quote":"ETH"},{"base":"EVC","quote":"BTC"},{"base":"EVC","quote":"ETH"},{"base":"EVC","quote":"USDT"},{"base":"DRTC","quote":"BTC"},{"base":"DRTC","quote":"ETH"},{"base":"DRTC","quote":"USDT"},{"base":"JOB","quote":"BTC"},{"base":"JOB","quote":"ETH"},{"base":"JOB","quote":"USDT"},{"base":"WTC","quote":"BTC"},{"base":"WTC","quote":"ETH"},{"base":"SNT","quote":"BTC"},{"base":"SNT","quote":"ETH"},{"base":"AGI","quote":"BTC"},{"base":"AGI","quote":"ETH"},{"base":"PPT","quote":"BTC"},{"base":"PPT","quote":"ETH"},{"base":"POLY","quote":"BTC"},{"base":"LRC","quote":"BTC"},{"base":"LRC","quote":"ETH"},{"base":"LOOM","quote":"BTC"},{"base":"LOOM","quote":"ETH"},{"base":"HOT","quote":"BTC"},{"base":"HOT","quote":"ETH"},{"base":"GNT","quote":"BTC"},{"base":"GNT","quote":"ETH"},{"base":"ETHOS","quote":"BTC"},{"base":"ETHOS","quote":"ETH"},{"base":"LEND","quote":"BTC"},{"base":"LEND","quote":"ETH"},{"base":"ENG","quote":"BTC"},{"base":"ENG","quote":"ETH"},{"base":"DGD","quote":"BTC"},{"base":"DGD","quote":"ETH"},{"base":"DENT","quote":"BTC"},{"base":"DENT","quote":"ETH"},{"base":"MANA","quote":"BTC"},{"base":"MANA","quote":"ETH"},{"base":"MCO","quote":"BTC"},{"base":"MCO","quote":"ETH"},{"base":"LINK","quote":"ETH"},{"base":"NPXS","quote":"BTC"},{"base":"NPXS","quote":"ETH"},{"base":"ZIL","quote":"BTC"},{"base":"ZIL","quote":"ETH"},{"base":"ZRX","quote":"BTC"},{"base":"ZRX","quote":"ETH"},{"base":"BAT","quote":"BTC"},{"base":"BAT","quote":"ETH"},{"base":"DOGE","quote":"BTC"},{"base":"DOGE","quote":"ETH"},{"base":"QTUM","quote":"BTC"},{"base":"QTUM","quote":"ETH"},{"base":"OMG","quote":"BTC"},{"base":"OMG","quote":"ETH"},{"base":"XRP","quote":"ETH"},{"base":"DASH","quote":"ETH"},{"base":"ZEC","quote":"ETH"},{"base":"RDD","quote":"BTC"},{"base":"RDD","quote":"ETH"},{"base":"RDD","quote":"USDT"},{"base":"NEO","quote":"ETH"},{"base":"DGB","quote":"BTC"},{"base":"DGB","quote":"ETH"},{"base":"DGB","quote":"USDT"},{"base":"NANO","quote":"BTC"},{"base":"NANO","quote":"ETH"},{"base":"NANO","quote":"USDT"},{"base":"ADA","quote":"BTC"},{"base":"ADA","quote":"ETH"},{"base":"ADA","quote":"USDT"},{"base":"XEM","quote":"BTC"},{"base":"XEM","quote":"ETH"},{"base":"XEM","quote":"USDT"},{"base":"EVX","quote":"BTC"},{"base":"EVX","quote":"ETH"},{"base":"EVX","quote":"USDT"},{"base":"BCHABC","quote":"BTC"},{"base":"BCHABC","quote":"USDT"},{"base":"BCHABC","quote":"ETH"},{"base":"ADA","quote":"TUSD"},{"base":"BCHABC","quote":"TUSD"},{"base":"BNB","quote":"BTC"},{"base":"BNB","quote":"ETH"},{"base":"BNB","quote":"USDT"},{"base":"BNB","quote":"TUSD"},{"base":"PAX","quote":"USDT"},{"base":"PAX","quote":"TUSD"},{"base":"BTC","quote":"PAX"},{"base":"ETH","quote":"PAX"},{"base":"ADA","quote":"USDC"},{"base":"LTC","quote":"USDC"},{"base":"DASH","quote":"USDC"},{"base":"XRP","quote":"USDC"},{"base":"USDC","quote":"USDT"},{"base":"USDC","quote":"TUSD"},{"base":"ZEC","quote":"USDC"},{"base":"BTC","quote":"USDC"},{"base":"ETH","quote":"USDC"}]'
+    http_version: 
+  recorded_at: Fri, 12 Jul 2019 10:09:58 GMT
+recorded_with: VCR 4.0.0

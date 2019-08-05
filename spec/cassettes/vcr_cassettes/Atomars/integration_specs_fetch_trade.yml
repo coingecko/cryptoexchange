@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.atomars.com/v1/coingecko/deals?symbol=btcusdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.atomars.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 12 Jul 2019 10:10:02 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=pskmaqkvail3g1j8pltkc41ssn; path=/; HttpOnly
+      - __cfduid=dc393c338ec0da1d07f5e1f418fa8984a1562926201; expires=Sat, 11-Jul-20
+        10:10:01 GMT; path=/; domain=.atomars.com; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4f523998b8cfcc7b-WAW
+    body:
+      encoding: UTF-8
+      string: '[{"direction":"BUY","price":11442.20197,"amount":0.01533,"trade_date":1562926159000},{"direction":"BUY","price":11427.68087,"amount":0.01708,"trade_date":1562926119000},{"direction":"BUY","price":11415.35212,"amount":0.01773,"trade_date":1562926094000},{"direction":"BUY","price":11387.9076,"amount":0.01789,"trade_date":1562926048000},{"direction":"BUY","price":11369.22956,"amount":0.0182,"trade_date":1562925898000},{"direction":"BUY","price":11364.30372,"amount":0.01743,"trade_date":1562925928000},{"direction":"BUY","price":11361.38584,"amount":0.01794,"trade_date":1562925934000},{"direction":"BUY","price":11304.31349,"amount":0.03239,"trade_date":1562925763000},{"direction":"BUY","price":11276.60053,"amount":0.03006,"trade_date":1562925906000},{"direction":"BUY","price":11276.5592,"amount":0.03072,"trade_date":1562925773000},{"direction":"BUY","price":11226.97524,"amount":0.03045,"trade_date":1562925840000},{"direction":"BUY","price":11189.51015,"amount":0.03845,"trade_date":1562924878000},{"direction":"BUY","price":11187.80261,"amount":0.03961,"trade_date":1562925917000},{"direction":"BUY","price":11173.54262,"amount":0.03888,"trade_date":1562922465000},{"direction":"BUY","price":11156.46251,"amount":0.03893,"trade_date":1562926200000},{"direction":"SELL","price":12279.15201,"amount":0.03968,"trade_date":1562926157000},{"direction":"SELL","price":12198.71589,"amount":0.03801,"trade_date":1562926128000},{"direction":"SELL","price":12166.30445,"amount":0.03968,"trade_date":1562925667000},{"direction":"SELL","price":12162.21007,"amount":0.03896,"trade_date":1562924274000},{"direction":"SELL","price":12149.18745,"amount":0.03983,"trade_date":1562925208000},{"direction":"SELL","price":12147.57242,"amount":0.03908,"trade_date":1562926117000},{"direction":"SELL","price":12144.47773,"amount":0.03907,"trade_date":1562924533000},{"direction":"SELL","price":12138.27389,"amount":0.03936,"trade_date":1562925884000},{"direction":"SELL","price":12133.14146,"amount":0.03907,"trade_date":1562924156000},{"direction":"SELL","price":12125.07817,"amount":0.03954,"trade_date":1562925252000},{"direction":"SELL","price":12092.54453,"amount":0.03967,"trade_date":1562925280000},{"direction":"SELL","price":12091.94336,"amount":0.03866,"trade_date":1562926012000},{"direction":"SELL","price":12087.85787,"amount":0.02877,"trade_date":1562926088000},{"direction":"SELL","price":12071.83436,"amount":0.03964,"trade_date":1562924209000},{"direction":"SELL","price":12035.73915,"amount":0.02888,"trade_date":1562925076000}]'
+    http_version: 
+  recorded_at: Fri, 12 Jul 2019 10:10:02 GMT
+recorded_with: VCR 4.0.0
