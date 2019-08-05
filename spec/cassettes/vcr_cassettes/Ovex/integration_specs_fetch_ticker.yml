@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.ovex.io/api/v2/tickers/btctusd
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.ovex.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.13.12
+      Date:
+      - Mon, 05 Aug 2019 03:06:23 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '303'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Version:
+      - HTTP/1.1
+      Host:
+      - www.ovex.io
+      X-Real-Ip:
+      - 203.106.141.124
+      X-Forwarded-For:
+      - 203.106.141.124
+      X-Forwarded-Host:
+      - www.ovex.io
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Original-Uri:
+      - "/api/v2/tickers/btctusd"
+      X-Scheme:
+      - https
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Etag:
+      - W/"cb3627922541b963f007ddec2dd42966"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 05ce14a0-94b6-47d9-877c-95447eef9f15
+      X-Runtime:
+      - '0.062474'
+      X-Cloud-Trace-Context:
+      - 9a0dae25c53a4a4f839ab5f2b848d9d7;o=0
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1564974383,"bid_unit":"tusd","ask_unit":"btc","ticker":{"buy":"10627.3","sell":"10627.71","low":"10632.7","high":"10646.5","open":10632.7,"last":"10632.7","volume":"0.0","avg_price":"0.0","price_change_percent":"+0.00%","zar_price":"155237.42","btc_price":"1.0","usd_price":"10632.7","vol":"0.0"}}'
+    http_version: 
+  recorded_at: Mon, 05 Aug 2019 03:06:24 GMT
+recorded_with: VCR 4.0.0
