@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitoffer.com/v1/api/cash/instrument
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitoffer.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 05 Aug 2019 07:26:02 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Expires:
+      - '0'
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Set-Cookie:
+      - JSESSIONID=6kJEemZ1tTexsUU-Ohv7JRglZGWh5F6uqB1bY0fr; path=/
+      X-Xss-Protection:
+      - 1; mode=block
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Application-Context:
+      - api-gateway:prod:8080
+    body:
+      encoding: UTF-8
+      string: '{"code":0,"msg":"success","data":[{"instrumentId":15,"symbol":"AKRO-USDT","productId":18,"coinId":3,"priceTick":"0.0001","lotSize":"0.01","fresh":1},{"instrumentId":3,"symbol":"BTC-USDT","productId":2,"coinId":3,"priceTick":"0.001","lotSize":"0.000001","fresh":0},{"instrumentId":16,"symbol":"CARM-USDT","productId":15,"coinId":3,"priceTick":"0.000001","lotSize":"0.01","fresh":1},{"instrumentId":27,"symbol":"DASH-BTC","productId":22,"coinId":2,"priceTick":"0.000001","lotSize":"0.01","fresh":1},{"instrumentId":26,"symbol":"DASH-ETH","productId":22,"coinId":1,"priceTick":"0.000001","lotSize":"0.01","fresh":1},{"instrumentId":28,"symbol":"DASH-USDT","productId":22,"coinId":3,"priceTick":"0.001","lotSize":"0.001","fresh":1},{"instrumentId":1,"symbol":"ETH-BTC","productId":1,"coinId":2,"priceTick":"0.000001","lotSize":"0.001","fresh":0},{"instrumentId":2,"symbol":"ETH-USDT","productId":1,"coinId":3,"priceTick":"0.001","lotSize":"0.00001","fresh":0},{"instrumentId":12,"symbol":"FET-BTC","productId":7,"coinId":2,"priceTick":"0.00000001","lotSize":"0.01","fresh":1},{"instrumentId":13,"symbol":"FET-USDT","productId":7,"coinId":3,"priceTick":"0.0001","lotSize":"0.01","fresh":1},{"instrumentId":10,"symbol":"IOST-BTC","productId":6,"coinId":2,"priceTick":"0.00000001","lotSize":"0.1","fresh":1},{"instrumentId":9,"symbol":"IOST-ETH","productId":6,"coinId":1,"priceTick":"0.00000001","lotSize":"0.01","fresh":1},{"instrumentId":11,"symbol":"IOST-USDT","productId":6,"coinId":3,"priceTick":"0.000001","lotSize":"0.1","fresh":1},{"instrumentId":18,"symbol":"IOTX-BTC","productId":17,"coinId":2,"priceTick":"0.00000001","lotSize":"0.1","fresh":1},{"instrumentId":17,"symbol":"IOTX-ETH","productId":17,"coinId":1,"priceTick":"0.00000001","lotSize":"0.1","fresh":1},{"instrumentId":24,"symbol":"NEO-BTC","productId":21,"coinId":2,"priceTick":"0.000001","lotSize":"0.01","fresh":1},{"instrumentId":23,"symbol":"NEO-ETH","productId":21,"coinId":1,"priceTick":"0.000001","lotSize":"0.01","fresh":1},{"instrumentId":25,"symbol":"NEO-USDT","productId":21,"coinId":3,"priceTick":"0.001","lotSize":"0.001","fresh":1},{"instrumentId":5,"symbol":"OMG-BTC","productId":4,"coinId":2,"priceTick":"0.000001","lotSize":"0.01","fresh":1},{"instrumentId":4,"symbol":"OMG-ETH","productId":4,"coinId":1,"priceTick":"0.000001","lotSize":"0.01","fresh":1},{"instrumentId":6,"symbol":"OMG-USDT","productId":4,"coinId":3,"priceTick":"0.0001","lotSize":"0.01","fresh":1},{"instrumentId":20,"symbol":"SOLVE-BTC","productId":20,"coinId":2,"priceTick":"0.00000001","lotSize":"0.001","fresh":1},{"instrumentId":19,"symbol":"SOLVE-ETH","productId":20,"coinId":1,"priceTick":"0.00000001","lotSize":"0.001","fresh":1},{"instrumentId":8,"symbol":"WTC-BTC","productId":5,"coinId":2,"priceTick":"0.0000001","lotSize":"0.01","fresh":1},{"instrumentId":7,"symbol":"WTC-ETH","productId":5,"coinId":1,"priceTick":"0.000001","lotSize":"0.01","fresh":1},{"instrumentId":22,"symbol":"XEM-BTC","productId":19,"coinId":2,"priceTick":"0.00000001","lotSize":"0.001","fresh":1},{"instrumentId":21,"symbol":"XEM-ETH","productId":19,"coinId":1,"priceTick":"0.00000001","lotSize":"0.001","fresh":1}]}'
+    http_version: 
+  recorded_at: Mon, 05 Aug 2019 07:26:02 GMT
+recorded_with: VCR 4.0.0

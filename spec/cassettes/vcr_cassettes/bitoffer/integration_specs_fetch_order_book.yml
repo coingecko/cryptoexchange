@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitoffer.com/v1/api/quot/snapshot?instrumentId=3
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitoffer.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 05 Aug 2019 07:26:03 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Expires:
+      - '0'
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Set-Cookie:
+      - JSESSIONID=6ox0m6lB2jMifdhumPJbIewfuGRVA9k_G6kZIy19; path=/
+      X-Xss-Protection:
+      - 1; mode=block
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Application-Context:
+      - api-gateway:prod:8080
+    body:
+      encoding: UTF-8
+      string: '{"code":0,"msg":"success","data":{"bids":[["11738.78","0.774457"],["11738.55","0.684235"],["11738.36","0.003701"],["11738.12","0.006199"],["11737.99","0.011749"],["11736.68","0.062173"],["11736.62","3.605473"],["11736.05","0.017041"],["11736","0.04546"],["11735.85","0.005"],["11735.57","0.001662"],["11735.01","0.001737"],["11733.55","0.0015"],["11733.54","0.5"],["11733.1","0.102176"],["11733","0.193775"]],"asks":[["11741.83","0.290575"],["11742.35","1.458752"],["11742.95","0.10506"],["11743","0.713916"],["11744.99","0.178189"],["11745.01","0.460387"],["11747.77","0.5"],["11747.96","0.127085"],["11748","7.012345"],["11748.36","0.8"],["11748.37","6"],["11748.41","0.26383"],["11748.48","0.077004"],["11748.58","0.004848"],["11748.66","0.138994"],["11748.84","0.000974"],["11749","0.321696"],["11749.07","0.000863"],["11749.11","0.001232"],["11749.33","0.929782"]]}}'
+    http_version: 
+  recorded_at: Mon, 05 Aug 2019 07:26:03 GMT
+recorded_with: VCR 4.0.0

@@ -98,6 +98,7 @@ Or install it yourself as:
 | Bitmax            | Y       | Y [x]      | Y       |         | Y           | Y        | bitmax            |       |
 | Bitmesh           | Y       | N          | N       |         | Y           | Y        | bitmesh           |       |
 | Bitmex            | Y       | Y [x]      | Y       |         | Y           |          | bitmex            |futures|
+| Bitoffer          | Y       | Y [x]      | Y       |         | Y           | Y        | bitoffer          |       |
 | BitOnBay          | Y       |            |         |         | Y           |          | bitonbay          |       |
 | Bitopro           | Y       | Y [x]      | Y       |         | User-Defined| Y        | bitopro           |       |
 | Bitpaction[halted]| Y       | Y          | Y       |         | Y           |          | bitpaction        |       |
