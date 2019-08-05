@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.ovex.io/api/v2/depth?market=btctusd
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.ovex.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.13.12
+      Date:
+      - Mon, 05 Aug 2019 03:06:25 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1219'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Version:
+      - HTTP/1.1
+      Host:
+      - www.ovex.io
+      X-Real-Ip:
+      - 203.106.141.124
+      X-Forwarded-For:
+      - 203.106.141.124
+      X-Forwarded-Host:
+      - www.ovex.io
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Original-Uri:
+      - "/api/v2/depth?market=btctusd"
+      X-Scheme:
+      - https
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Etag:
+      - W/"1fa3b56c1dec462ffd80ab3720504c62"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4ce4b79f-c6ce-4f8f-a2af-863eab305122
+      X-Runtime:
+      - '0.006629'
+      X-Cloud-Trace-Context:
+      - c73a62f145dd48cec0256b696d97ec52;o=0
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timestamp":1564974385,"asks":[["11243.927973","0.050092"],["11151.213864","0.036368"],["11052.385777","0.051265"],["10974.402668","0.045262"],["10871.27748","0.048906"],["10812.180179","0.047302"],["10755.854","0.049195"],["10671.78","0.013735"],["10666.0","0.011176"],["10662.0","0.022833"],["10658.0","0.013091"],["10655.35","0.022419"],["10648.2","0.009863"],["10645.99","0.009156"],["10645.17","0.018335"],["10644.9","0.001115"],["10637.0","0.011873"],["10635.0","0.020759"],["10628.85","0.002669"],["10627.98","0.011945"],["10627.71","0.016598"]],"bids":[["10627.3","0.010231"],["10626.9","0.021627"],["10626.8","0.018564"],["10626.79","0.017371"],["10626.58","0.023975"],["10626.33","0.022745"],["10626.32","0.014179"],["10626.1","0.019512"],["10626.0","0.006514"],["10625.96","0.012528"],["10625.01","0.008146"],["10624.0","0.023948"],["10623.0","0.009808"],["10618.82","0.00815"],["10615.05","0.012471"],["10613.4","0.021986"],["10609.0","0.018257"],["10606.0","0.013724"],["10605.698255","0.017288"],["10600.9","0.016785"],["10599.0","0.009409"],["10598.5","0.006652"],["10587.688009","0.011329"],["10539.213906","0.016781"],["10511.747505","0.017831"],["10484.276239","0.020589"],["10470.1061","0.013046"]]}'
+    http_version: 
+  recorded_at: Mon, 05 Aug 2019 03:06:25 GMT
+recorded_with: VCR 4.0.0

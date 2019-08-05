@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.ovex.io/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.ovex.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.13.12
+      Date:
+      - Mon, 05 Aug 2019 03:06:22 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1867'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Version:
+      - HTTP/1.1
+      Host:
+      - www.ovex.io
+      X-Real-Ip:
+      - 203.106.141.124
+      X-Forwarded-For:
+      - 203.106.141.124
+      X-Forwarded-Host:
+      - www.ovex.io
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Original-Uri:
+      - "/api/v2/markets"
+      X-Scheme:
+      - https
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Etag:
+      - W/"955edea379abb9d6315315a9a4a7aa34"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 980f062b-08bf-47ff-9171-6fd2ae0dda04
+      X-Runtime:
+      - '0.007395'
+      X-Cloud-Trace-Context:
+      - d8b328233e70483a8216a0c7562dee25;o=0
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"adabtc","name":"ADA/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"ada"},{"id":"batbtc","name":"BAT/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"bat"},{"id":"bchbtc","name":"BCH/BTC","ask_precision":6,"bid_precision":6,"bid_unit":"btc","ask_unit":"bch"},{"id":"btctusd","name":"BTC/TUSD","ask_precision":6,"bid_precision":6,"bid_unit":"tusd","ask_unit":"btc"},{"id":"btczar","name":"BTC/ZAR","ask_precision":6,"bid_precision":6,"bid_unit":"zar","ask_unit":"btc"},{"id":"bttbtc","name":"BTT/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"btt"},{"id":"cvcbtc","name":"CVC/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"cvc"},{"id":"eosbtc","name":"EOS/BTC","ask_precision":6,"bid_precision":6,"bid_unit":"btc","ask_unit":"eos"},{"id":"ethbtc","name":"ETH/BTC","ask_precision":6,"bid_precision":6,"bid_unit":"btc","ask_unit":"eth"},{"id":"linkbtc","name":"LINK/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"link"},{"id":"ltcbtc","name":"LTC/BTC","ask_precision":6,"bid_precision":6,"bid_unit":"btc","ask_unit":"ltc"},{"id":"omgbtc","name":"OMG/BTC","ask_precision":6,"bid_precision":6,"bid_unit":"btc","ask_unit":"omg"},{"id":"qtumbtc","name":"QTUM/BTC","ask_precision":6,"bid_precision":6,"bid_unit":"btc","ask_unit":"qtum"},{"id":"repbtc","name":"REP/BTC","ask_precision":6,"bid_precision":6,"bid_unit":"btc","ask_unit":"rep"},{"id":"trxbtc","name":"TRX/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"trx"},{"id":"tusdzar","name":"TUSD/ZAR","ask_precision":2,"bid_precision":2,"bid_unit":"zar","ask_unit":"tusd"},{"id":"xmrbtc","name":"XMR/BTC","ask_precision":6,"bid_precision":6,"bid_unit":"btc","ask_unit":"xmr"},{"id":"xrpbtc","name":"XRP/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"xrp"}]'
+    http_version: 
+  recorded_at: Mon, 05 Aug 2019 03:06:22 GMT
+recorded_with: VCR 4.0.0
