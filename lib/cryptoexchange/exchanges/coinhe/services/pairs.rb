@@ -1,4 +1,3 @@
-require 'byebug'
 module Cryptoexchange::Exchanges
   module Coinhe
     module Services
@@ -15,7 +14,6 @@ module Cryptoexchange::Exchanges
             begin
               target = ticker["base"]["symbol"]
               base = ticker["pair"]["symbol"]
-
               Cryptoexchange::Models::MarketPair.new(
                 base:   base,
                 target: target,
