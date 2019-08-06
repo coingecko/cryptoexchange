@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://open.citex.co.kr/api/v1/common/snapshot/VEIL-BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - open.citex.co.kr
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Aug 2019 04:59:03 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - acw_tc=0bc1a04215650675434681885e16db88698cfd9a8c72b777253f949686a19e;path=/;HttpOnly;Max-Age=1800
+      X-Application-Context:
+      - api-service:8008
+      X-Ratelimit-Limit:
+      - '0'
+      X-Ratelimit-Remaining:
+      - '0'
+      X-Ratelimit-Reset:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"code":0,"msg":"success","data":{"symbol":"VEIL-BTC","bids":[{"total":"12156.091","quantity":"12156.091","price":"0.00001595"},{"total":"87166.412","quantity":"75010.321","price":"0.00001594"},{"total":"87297.223","quantity":"130.811","price":"0.00001567"},{"total":"89297.223","quantity":"2000","price":"0.00001498"},{"total":"97865.554","quantity":"8568.331","price":"0.00001497"},{"total":"121460.389","quantity":"23594.835","price":"0.00001496"},{"total":"129208.633","quantity":"7748.244","price":"0.00001495"},{"total":"129563.984","quantity":"355.351","price":"0.00001491"},{"total":"130706.743","quantity":"1142.759","price":"0.00001488"},{"total":"132294.286","quantity":"1587.543","price":"0.00001485"},{"total":"132563.777","quantity":"269.491","price":"0.00001482"},{"total":"132653.777","quantity":"90","price":"0.00001474"},{"total":"134453.777","quantity":"1800","price":"0.00001453"},{"total":"135254.900","quantity":"801.123","price":"0.00001247"},{"total":"136189.563","quantity":"934.663","price":"0.00001031"},{"total":"159102.563","quantity":"22913","price":"0.0000103"},{"total":"160202.887","quantity":"1100.324","price":"0.000009"},{"total":"202614.183","quantity":"42411.296","price":"0.000001"}],"asks":[{"total":"257.219","quantity":"257.219","price":"0.00001608"},{"total":"675.772","quantity":"418.553","price":"0.00001615"},{"total":"1024.038","quantity":"348.266","price":"0.00001659"},{"total":"1114.091","quantity":"90.053","price":"0.00001724"},{"total":"2785.768","quantity":"1671.677","price":"0.00001765"},{"total":"6961.362","quantity":"4175.594","price":"0.00001767"},{"total":"7700.557","quantity":"739.195","price":"0.00001838"},{"total":"8096.879","quantity":"396.322","price":"0.00001848"},{"total":"8281.972","quantity":"185.093","price":"0.00001867"},{"total":"8393.718","quantity":"111.746","price":"0.00001949"},{"total":"16757.568","quantity":"8363.85","price":"0.00001955"},{"total":"18936.490","quantity":"2178.922","price":"0.00001956"},{"total":"19854.494","quantity":"918.004","price":"0.00001957"},{"total":"23854.494","quantity":"4000","price":"0.0000198"},{"total":"25143.822","quantity":"1289.328","price":"0.00002039"},{"total":"30044.063","quantity":"4900.241","price":"0.00002049"},{"total":"30544.063","quantity":"500","price":"0.0000207"},{"total":"30645.792","quantity":"101.729","price":"0.0000209"},{"total":"31255.246","quantity":"609.454","price":"0.00002099"},{"total":"31455.246","quantity":"200","price":"0.000021"},{"total":"32455.246","quantity":"1000","price":"0.00002127"},{"total":"32519.638","quantity":"64.392","price":"0.00002142"},{"total":"32789.989","quantity":"270.351","price":"0.00002167"},{"total":"32889.989","quantity":"100","price":"0.00002429"},{"total":"32932.662","quantity":"42.673","price":"0.00002485"}]}}'
+    http_version: 
+  recorded_at: Tue, 06 Aug 2019 04:59:03 GMT
+recorded_with: VCR 4.0.0

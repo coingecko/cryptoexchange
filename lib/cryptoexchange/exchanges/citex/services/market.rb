@@ -14,12 +14,13 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Citex::Market::API_URL}"
+          "#{Cryptoexchange::Exchanges::Citex::Market::API_URL}/allticker"
         end
 
         def adapt_all(output)
+          output = output["data"]["ticker"]
           output.map do |pair|
-            base, target = pair["baseAssetName"], pair["quoteAssetName"]
+            base, target = pair["symbol"].split("_")
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
@@ -34,10 +35,12 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Citex::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['lastPrice'])
+          ticker.last      = NumericHelper.to_d(output['last'])
           ticker.high      = NumericHelper.to_d(output['high'])
           ticker.low       = NumericHelper.to_d(output['low'])
-          ticker.volume    = NumericHelper.to_d(output["volume"])
+          ticker.volume    = NumericHelper.to_d(output["vol"])
+          ticker.bid    = NumericHelper.to_d(output["buy"])
+          ticker.ask    = NumericHelper.to_d(output["sell"])
           ticker.timestamp = nil
           ticker.payload   = output
           ticker

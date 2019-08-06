@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Citex
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Citex::Market::API_URL}"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Citex::Market::API_URL}/allticker"
 
         def fetch
           output = super
@@ -10,10 +10,10 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          pairs = output
+          pairs = output["data"]["ticker"]
           market_pairs = []
           pairs.each do |pair|
-            base, target = pair["baseAssetName"], pair["quoteAssetName"]
+            base, target = pair["symbol"].split("_")
             market_pairs <<
             Cryptoexchange::Models::MarketPair.new(
               base: base,
