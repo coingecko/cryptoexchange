@@ -26,5 +26,13 @@ class NumericHelper
         result.to_f
       end
     end
+
+    def flip_volume(volume, last)
+      if volume.nil? || last.nil? || last == 0
+        nil
+      else
+        volume / last
+      end
+    end
   end
 end

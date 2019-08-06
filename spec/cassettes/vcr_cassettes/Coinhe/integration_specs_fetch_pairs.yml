@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinhe.io/v1/currency-pair-summary?page_size=150
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinhe.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Tue, 06 Aug 2019 08:04:11 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7cbd422bf4543dace9d32e2a4a81edaa1565078651; expires=Wed, 05-Aug-20
+        08:04:11 GMT; path=/; domain=.coinhe.io; HttpOnly
+      Location:
+      - "/v1/currency-pair-summary/?page_size=150"
+      Vary:
+      - Origin, Accept-Language, Cookie
+      Content-Language:
+      - en
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 501f7fa2fb29dd66-KUL
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 06 Aug 2019 08:04:11 GMT
+- request:
+    method: get
+    uri: https://api.coinhe.io/v1/currency-pair-summary/?page_size=150
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Host:
+      - api.coinhe.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Aug 2019 08:04:25 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '15239'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=df7765c7a664ca1cadd8e4050277dd9d11565078651; expires=Wed, 05-Aug-20
+        08:04:11 GMT; path=/; domain=.coinhe.io; HttpOnly
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - SAMEORIGIN
+      Vary:
+      - Origin, Accept-Language, Cookie
+      Content-Language:
+      - en
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 501f7fa3bcbfc118-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":41,"next":null,"previous":null,"results":[{"id":37,"base":{"id":15,"name":"VN
+        Crypto Currency","symbol":"VCC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/VCC.png"},"pair":{"id":10,"name":"Litecoin","symbol":"LTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/LTC.png"},"name":"VCC-LTC","volume_24h":91513.2960145265,"high_24h":2481.025,"low_24h":2203.019,"avg_24h":2292.157976571351,"last_price":2279.879},{"id":28,"base":{"id":15,"name":"VN
+        Crypto Currency","symbol":"VCC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/VCC.png"},"pair":{"id":4,"name":"OmiseGO","symbol":"OMG","icon":"https://coinhe.s3.amazonaws.com/currency_icons/OMG.png"},"name":"VCC-OMG","volume_24h":null,"high_24h":null,"low_24h":null,"avg_24h":0.0,"last_price":0},{"id":47,"base":{"id":11,"name":"Tether","symbol":"USDT","icon":"https://coinhe.s3.amazonaws.com/currency_icons/USDT_39VEgQW.png"},"pair":{"id":14,"name":"GAS","symbol":"GAS","icon":"https://coinhe.s3.amazonaws.com/currency_icons/NEO_Tx0M0Mq.png"},"name":"USDT-GAS","volume_24h":null,"high_24h":null,"low_24h":null,"avg_24h":0.0,"last_price":0},{"id":62,"base":{"id":2,"name":"Bitcoin","symbol":"BTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BTC.png"},"pair":{"id":18,"name":"Nexty","symbol":"NTY","icon":"https://coinhe.s3.amazonaws.com/currency_icons/nexty_128x128.png"},"name":"BTC-NTY","volume_24h":null,"high_24h":null,"low_24h":null,"avg_24h":0.0,"last_price":0},{"id":66,"base":{"id":2,"name":"Bitcoin","symbol":"BTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BTC.png"},"pair":{"id":19,"name":"Nexty
+        Foundation","symbol":"NTF","icon":"https://coinhe.s3.amazonaws.com/currency_icons/NTF_logo4x.png"},"name":"BTC-NTF","volume_24h":null,"high_24h":null,"low_24h":null,"avg_24h":0.0,"last_price":0},{"id":35,"base":{"id":15,"name":"VN
+        Crypto Currency","symbol":"VCC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/VCC.png"},"pair":{"id":12,"name":"Tron","symbol":"TRX","icon":"https://coinhe.s3.amazonaws.com/currency_icons/trx.png"},"name":"VCC-TRX","volume_24h":403547.88946497,"high_24h":0.547,"low_24h":0.517,"avg_24h":0.5322067909366285,"last_price":0.533},{"id":32,"base":{"id":15,"name":"VN
+        Crypto Currency","symbol":"VCC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/VCC.png"},"pair":{"id":11,"name":"Tether","symbol":"USDT","icon":"https://coinhe.s3.amazonaws.com/currency_icons/USDT_39VEgQW.png"},"name":"VCC-USDT","volume_24h":3181753.51490723,"high_24h":23.494,"low_24h":23.372,"avg_24h":23.420880095266682,"last_price":23.421},{"id":12,"base":{"id":2,"name":"Bitcoin","symbol":"BTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BTC.png"},"pair":{"id":13,"name":"NEO","symbol":"NEO","icon":"https://coinhe.s3.amazonaws.com/currency_icons/NEO_FTiFZ3E.png"},"name":"BTC-NEO","volume_24h":null,"high_24h":null,"low_24h":null,"avg_24h":0.0,"last_price":0},{"id":38,"base":{"id":15,"name":"VN
+        Crypto Currency","symbol":"VCC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/VCC.png"},"pair":{"id":13,"name":"NEO","symbol":"NEO","icon":"https://coinhe.s3.amazonaws.com/currency_icons/NEO_FTiFZ3E.png"},"name":"VCC-NEO","volume_24h":197591.737968516,"high_24h":293.545,"low_24h":274.504,"avg_24h":283.51343430752854,"last_price":283.008},{"id":63,"base":{"id":15,"name":"VN
+        Crypto Currency","symbol":"VCC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/VCC.png"},"pair":{"id":18,"name":"Nexty","symbol":"NTY","icon":"https://coinhe.s3.amazonaws.com/currency_icons/nexty_128x128.png"},"name":"VCC-NTY","volume_24h":null,"high_24h":null,"low_24h":null,"avg_24h":0.0004,"last_price":0},{"id":9,"base":{"id":2,"name":"Bitcoin","symbol":"BTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BTC.png"},"pair":{"id":9,"name":"Stellar","symbol":"XLM","icon":"https://coinhe.s3.amazonaws.com/currency_icons/XLM4x.png"},"name":"BTC-XLM","volume_24h":18.5896288294,"high_24h":7.21e-06,"low_24h":6.61e-06,"avg_24h":6.992557115478494e-06,"last_price":6.69e-06},{"id":67,"base":{"id":11,"name":"Tether","symbol":"USDT","icon":"https://coinhe.s3.amazonaws.com/currency_icons/USDT_39VEgQW.png"},"pair":{"id":6,"name":"CoinHe
+        Token","symbol":"CHT","icon":"https://coinhe.s3.amazonaws.com/currency_icons/CHT_N4z2U6g.png"},"name":"USDT-CHT","volume_24h":1014770.122603891,"high_24h":0.6469,"low_24h":0.6049,"avg_24h":0.6286686217987183,"last_price":0.6103},{"id":39,"base":{"id":15,"name":"VN
+        Crypto Currency","symbol":"VCC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/VCC.png"},"pair":{"id":14,"name":"GAS","symbol":"GAS","icon":"https://coinhe.s3.amazonaws.com/currency_icons/NEO_Tx0M0Mq.png"},"name":"VCC-GAS","volume_24h":null,"high_24h":null,"low_24h":null,"avg_24h":0.0,"last_price":0},{"id":68,"base":{"id":2,"name":"Bitcoin","symbol":"BTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BTC.png"},"pair":{"id":6,"name":"CoinHe
+        Token","symbol":"CHT","icon":"https://coinhe.s3.amazonaws.com/currency_icons/CHT_N4z2U6g.png"},"name":"BTC-CHT","volume_24h":88.829517874809,"high_24h":5.529e-05,"low_24h":4.985e-05,"avg_24h":5.3369979380977905e-05,"last_price":5.01e-05},{"id":13,"base":{"id":2,"name":"Bitcoin","symbol":"BTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BTC.png"},"pair":{"id":14,"name":"GAS","symbol":"GAS","icon":"https://coinhe.s3.amazonaws.com/currency_icons/NEO_Tx0M0Mq.png"},"name":"BTC-GAS","volume_24h":null,"high_24h":null,"low_24h":null,"avg_24h":0.0,"last_price":0},{"id":36,"base":{"id":15,"name":"VN
+        Crypto Currency","symbol":"VCC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/VCC.png"},"pair":{"id":7,"name":"Ripple","symbol":"XRP","icon":"https://coinhe.s3.amazonaws.com/currency_icons/XRP-Inter.png"},"name":"VCC-XRP","volume_24h":1048927.03397778,"high_24h":7.759,"low_24h":7.44,"avg_24h":7.575495139021079,"last_price":7.55},{"id":43,"base":{"id":11,"name":"Tether","symbol":"USDT","icon":"https://coinhe.s3.amazonaws.com/currency_icons/USDT_39VEgQW.png"},"pair":{"id":5,"name":"ZRX","symbol":"0x","icon":"https://coinhe.s3.amazonaws.com/currency_icons/0x-virtual.png"},"name":"USDT-0x","volume_24h":null,"high_24h":null,"low_24h":null,"avg_24h":0.0,"last_price":0},{"id":11,"base":{"id":2,"name":"Bitcoin","symbol":"BTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BTC.png"},"pair":{"id":7,"name":"Ripple","symbol":"XRP","icon":"https://coinhe.s3.amazonaws.com/currency_icons/XRP-Inter.png"},"name":"BTC-XRP","volume_24h":282.72405173402,"high_24h":2.832e-05,"low_24h":2.623e-05,"avg_24h":2.7419363693891483e-05,"last_price":2.642e-05},{"id":50,"base":{"id":11,"name":"Tether","symbol":"USDT","icon":"https://coinhe.s3.amazonaws.com/currency_icons/USDT_39VEgQW.png"},"pair":{"id":7,"name":"Ripple","symbol":"XRP","icon":"https://coinhe.s3.amazonaws.com/currency_icons/XRP-Inter.png"},"name":"USDT-XRP","volume_24h":1875588.850465083,"high_24h":0.33098,"low_24h":0.31725,"avg_24h":0.32330110788185623,"last_price":0.32195},{"id":31,"base":{"id":15,"name":"VN
+        Crypto Currency","symbol":"VCC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/VCC.png"},"pair":{"id":9,"name":"Stellar","symbol":"XLM","icon":"https://coinhe.s3.amazonaws.com/currency_icons/XLM4x.png"},"name":"VCC-XLM","volume_24h":266711.7794,"high_24h":1.969,"low_24h":1.88,"avg_24h":1.922547950586312,"last_price":1.9},{"id":8,"base":{"id":2,"name":"Bitcoin","symbol":"BTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BTC.png"},"pair":{"id":3,"name":"Ethereum","symbol":"ETH","icon":"https://coinhe.s3.amazonaws.com/currency_icons/ETH_qblIBdW.png"},"name":"BTC-ETH","volume_24h":823.689922006484,"high_24h":0.020159,"low_24h":0.01908,"avg_24h":0.019658964689879176,"last_price":0.019121},{"id":44,"base":{"id":11,"name":"Tether","symbol":"USDT","icon":"https://coinhe.s3.amazonaws.com/currency_icons/USDT_39VEgQW.png"},"pair":{"id":2,"name":"Bitcoin","symbol":"BTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BTC.png"},"name":"USDT-BTC","volume_24h":14322894.121672943,"high_24h":12287.41,"low_24h":11581.59,"avg_24h":11784.086005583593,"last_price":12183.12},{"id":4,"base":{"id":2,"name":"Bitcoin","symbol":"BTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BTC.png"},"pair":{"id":4,"name":"OmiseGO","symbol":"OMG","icon":"https://coinhe.s3.amazonaws.com/currency_icons/OMG.png"},"name":"BTC-OMG","volume_24h":null,"high_24h":null,"low_24h":null,"avg_24h":0.0,"last_price":0},{"id":52,"base":{"id":11,"name":"Tether","symbol":"USDT","icon":"https://coinhe.s3.amazonaws.com/currency_icons/USDT_39VEgQW.png"},"pair":{"id":9,"name":"Stellar","symbol":"XLM","icon":"https://coinhe.s3.amazonaws.com/currency_icons/XLM4x.png"},"name":"USDT-XLM","volume_24h":273923.688797925,"high_24h":0.08427,"low_24h":0.08049,"avg_24h":0.08228504036884952,"last_price":0.08135},{"id":3,"base":{"id":2,"name":"Bitcoin","symbol":"BTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BTC.png"},"pair":{"id":10,"name":"Litecoin","symbol":"LTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/LTC.png"},"name":"BTC-LTC","volume_24h":111.932404819069,"high_24h":0.009046,"low_24h":0.007989,"avg_24h":0.008335874668506077,"last_price":0.008012},{"id":61,"base":{"id":11,"name":"Tether","symbol":"USDT","icon":"https://coinhe.s3.amazonaws.com/currency_icons/USDT_39VEgQW.png"},"pair":{"id":18,"name":"Nexty","symbol":"NTY","icon":"https://coinhe.s3.amazonaws.com/currency_icons/nexty_128x128.png"},"name":"USDT-NTY","volume_24h":1.53105871,"high_24h":1.676e-05,"low_24h":1.676e-05,"avg_24h":2.095e-05,"last_price":1.676e-05},{"id":51,"base":{"id":11,"name":"Tether","symbol":"USDT","icon":"https://coinhe.s3.amazonaws.com/currency_icons/USDT_39VEgQW.png"},"pair":{"id":13,"name":"NEO","symbol":"NEO","icon":"https://coinhe.s3.amazonaws.com/currency_icons/NEO_FTiFZ3E.png"},"name":"USDT-NEO","volume_24h":1268040.14208085,"high_24h":12.562,"low_24h":11.755,"avg_24h":12.133014097703985,"last_price":12.113},{"id":65,"base":{"id":15,"name":"VN
+        Crypto Currency","symbol":"VCC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/VCC.png"},"pair":{"id":19,"name":"Nexty
+        Foundation","symbol":"NTF","icon":"https://coinhe.s3.amazonaws.com/currency_icons/NTF_logo4x.png"},"name":"VCC-NTF","volume_24h":null,"high_24h":null,"low_24h":null,"avg_24h":0.0,"last_price":0},{"id":6,"base":{"id":2,"name":"Bitcoin","symbol":"BTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BTC.png"},"pair":{"id":12,"name":"Tron","symbol":"TRX","icon":"https://coinhe.s3.amazonaws.com/currency_icons/trx.png"},"name":"BTC-TRX","volume_24h":16.679633912131,"high_24h":2e-06,"low_24h":1.85e-06,"avg_24h":1.9332328576222533e-06,"last_price":1.87e-06},{"id":33,"base":{"id":15,"name":"VN
+        Crypto Currency","symbol":"VCC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/VCC.png"},"pair":{"id":3,"name":"Ethereum","symbol":"ETH","icon":"https://coinhe.s3.amazonaws.com/currency_icons/ETH_qblIBdW.png"},"name":"VCC-ETH","volume_24h":16906315.291557197,"high_24h":5441.075,"low_24h":5259.26,"avg_24h":5340.9382862878665,"last_price":5375.086},{"id":29,"base":{"id":15,"name":"VN
+        Crypto Currency","symbol":"VCC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/VCC.png"},"pair":{"id":5,"name":"ZRX","symbol":"0x","icon":"https://coinhe.s3.amazonaws.com/currency_icons/0x-virtual.png"},"name":"VCC-0x","volume_24h":null,"high_24h":null,"low_24h":null,"avg_24h":0.0,"last_price":0},{"id":45,"base":{"id":11,"name":"Tether","symbol":"USDT","icon":"https://coinhe.s3.amazonaws.com/currency_icons/USDT_39VEgQW.png"},"pair":{"id":3,"name":"Ethereum","symbol":"ETH","icon":"https://coinhe.s3.amazonaws.com/currency_icons/ETH_qblIBdW.png"},"name":"USDT-ETH","volume_24h":11396548.698351745,"high_24h":235.86,"low_24h":227.81,"avg_24h":231.608726642757,"last_price":232.93},{"id":46,"base":{"id":11,"name":"Tether","symbol":"USDT","icon":"https://coinhe.s3.amazonaws.com/currency_icons/USDT_39VEgQW.png"},"pair":{"id":10,"name":"Litecoin","symbol":"LTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/LTC.png"},"name":"USDT-LTC","volume_24h":5343135.64766783,"high_24h":106.44,"low_24h":94.22,"avg_24h":98.35031418958604,"last_price":97.63},{"id":42,"base":{"id":11,"name":"Tether","symbol":"USDT","icon":"https://coinhe.s3.amazonaws.com/currency_icons/USDT_39VEgQW.png"},"pair":{"id":4,"name":"OmiseGO","symbol":"OMG","icon":"https://coinhe.s3.amazonaws.com/currency_icons/OMG.png"},"name":"USDT-OMG","volume_24h":194415.4297833,"high_24h":1.5841,"low_24h":1.5141,"avg_24h":1.5509104503046722,"last_price":1.5441},{"id":1,"base":{"id":2,"name":"Bitcoin","symbol":"BTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BTC.png"},"pair":{"id":8,"name":"Bitcoin
+        Cash","symbol":"BCH","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BCH_OPxxKYB.png"},"name":"BTC-BCH","volume_24h":116.077315715352,"high_24h":0.030308,"low_24h":0.028669,"avg_24h":0.029574271819618067,"last_price":0.028774},{"id":64,"base":{"id":11,"name":"Tether","symbol":"USDT","icon":"https://coinhe.s3.amazonaws.com/currency_icons/USDT_39VEgQW.png"},"pair":{"id":19,"name":"Nexty
+        Foundation","symbol":"NTF","icon":"https://coinhe.s3.amazonaws.com/currency_icons/NTF_logo4x.png"},"name":"USDT-NTF","volume_24h":398.15131701,"high_24h":0.596,"low_24h":0.4632,"avg_24h":0.5796816312704135,"last_price":0.4632},{"id":5,"base":{"id":2,"name":"Bitcoin","symbol":"BTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BTC.png"},"pair":{"id":5,"name":"ZRX","symbol":"0x","icon":"https://coinhe.s3.amazonaws.com/currency_icons/0x-virtual.png"},"name":"BTC-0x","volume_24h":2.29886936116,"high_24h":1.853e-05,"low_24h":1.711e-05,"avg_24h":1.8137774895767635e-05,"last_price":1.725e-05},{"id":34,"base":{"id":15,"name":"VN
+        Crypto Currency","symbol":"VCC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/VCC.png"},"pair":{"id":8,"name":"Bitcoin
+        Cash","symbol":"BCH","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BCH_OPxxKYB.png"},"name":"VCC-BCH","volume_24h":1080455.1460067476,"high_24h":8329.66,"low_24h":7981.427,"avg_24h":8171.148166491146,"last_price":8226.88},{"id":49,"base":{"id":11,"name":"Tether","symbol":"USDT","icon":"https://coinhe.s3.amazonaws.com/currency_icons/USDT_39VEgQW.png"},"pair":{"id":12,"name":"Tron","symbol":"TRX","icon":"https://coinhe.s3.amazonaws.com/currency_icons/trx.png"},"name":"USDT-TRX","volume_24h":1233981.16185967,"high_24h":0.02339,"low_24h":0.02214,"avg_24h":0.022799889597930018,"last_price":0.02282},{"id":48,"base":{"id":11,"name":"Tether","symbol":"USDT","icon":"https://coinhe.s3.amazonaws.com/currency_icons/USDT_39VEgQW.png"},"pair":{"id":8,"name":"Bitcoin
+        Cash","symbol":"BCH","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BCH_OPxxKYB.png"},"name":"USDT-BCH","volume_24h":2323093.16849923,"high_24h":355.16,"low_24h":340.13,"avg_24h":348.1951794928935,"last_price":350.59},{"id":57,"base":{"id":15,"name":"VN
+        Crypto Currency","symbol":"VCC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/VCC.png"},"pair":{"id":2,"name":"Bitcoin","symbol":"BTC","icon":"https://coinhe.s3.amazonaws.com/currency_icons/BTC.png"},"name":"VCC-BTC","volume_24h":19886396.440680355,"high_24h":286742.644,"low_24h":270137.773,"avg_24h":274852.7945205948,"last_price":284344.992}],"extra_data":{}}'
+    http_version: 
+  recorded_at: Tue, 06 Aug 2019 08:04:25 GMT
+recorded_with: VCR 4.0.0
