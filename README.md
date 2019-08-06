@@ -150,7 +150,7 @@ Or install it yourself as:
 | Chainrift         | Y       | Y [x]      | Y       |         | Y           |          | chainrift         |       |
 | ChainEX           | Y       | Y [x]      | Y       |         | Y           |          | chainex           |       |
 | Chaoex            | Y       | Y [x]      | Y       |         | Y           | N        | chaoex            |       |
-| CHBTC             | Y       |            |         |         | User-Defined|          | chbtc             |       |
+| CHBTC             | Y       | Y [x]      |         |         | User-Defined|          | chbtc             |       |
 | Citex             | Y       | N          | N       |         | Y           | Y        | citex             |       |
 | CME Futures       | Y       | N          | N       | N       | Y           | N        | cme_futures       |futures|
 | Cobinhood         | Y       | Y [x]      |         |         | Y           | Y        | cobinhood         |       |
