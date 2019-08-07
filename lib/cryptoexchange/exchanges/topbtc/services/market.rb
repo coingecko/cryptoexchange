@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Topbtc::Market::API_URL}"
+          "#{Cryptoexchange::Exchanges::Topbtc::Market::API_URL}/tickerall.php"
         end
 
         def adapt_all(output)

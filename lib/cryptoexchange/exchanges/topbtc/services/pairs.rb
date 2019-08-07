@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Topbtc
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Topbtc::Market::API_URL}"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Topbtc::Market::API_URL}/tickerall.php"
 
         def fetch
           output = super
