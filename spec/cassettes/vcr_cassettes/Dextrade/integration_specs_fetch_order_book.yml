@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.dex-trade.com/v1/coingecko/pubticker2/BTCUSD
+    uri: https://api.dex-trade.com/v1/coingecko/depth?limit_asks=5&limit_bids=5&symbol=BTCUSD
     body:
       encoding: UTF-8
       string: ''
@@ -27,8 +27,8 @@ http_interactions:
       Connection:
       - close
       Set-Cookie:
-      - PHPSESSID=05dg66ti26d0sc0vmbpu3iek06; path=/; HttpOnly
-      - __cfduid=d112600a88373c7052f8d7c97297b28fc1563522440; expires=Sat, 18-Jul-20
+      - PHPSESSID=bvtr6r4gc2joc3ek7badfe153p; path=/; HttpOnly
+      - __cfduid=de5a6b09725d6333e36135dd01ffd7b801563522440; expires=Sat, 18-Jul-20
         07:47:20 GMT; path=/; domain=.dex-trade.com; HttpOnly
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
@@ -41,10 +41,10 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 4f8b16321b57cc93-WAW
+      - 4f8b1634de51cc73-WAW
     body:
       encoding: UTF-8
-      string: '{"last_price":10489.20058,"low":9292.5986,"high":10781.84033,"volume":56.669522,"timestamp":1563522440.228101}'
+      string: '{"asks":[{"price":"10574","amount":"0.01824","timestamp":"1563521967.773"},{"price":"10593","amount":"0.01828","timestamp":"1563521683.667"},{"price":"10613","amount":"0.01762","timestamp":"1563520917.331"},{"price":"10630","amount":"0.0179","timestamp":"1563520767.959"},{"price":"10713","amount":"0.03171","timestamp":"1563522172.35"}],"bids":[{"price":"10363","amount":"0.01644","timestamp":"1563522423.829"},{"price":"10334","amount":"0.01595","timestamp":"1563521057.622"},{"price":"10326","amount":"0.01878","timestamp":"1563521915.277"},{"price":"10307","amount":"0.01575","timestamp":"1563521128.668"},{"price":"10265","amount":"0.02942","timestamp":"1563521237.592"}]}'
     http_version: 
   recorded_at: Fri, 19 Jul 2019 07:47:24 GMT
 recorded_with: VCR 4.0.0
