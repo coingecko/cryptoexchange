@@ -226,7 +226,7 @@ Or install it yourself as:
 | DEEX              | Y       |            |         |         | Y           |          | deex              |       |
 | Deribit           | Y       | Y [x]      | Y       | Y       | Y           | Y        | deribit           |futures|
 | DEx.top           | Y       | Y [x]      | Y       |         | Y           |          | dextop            |       |
-| dex-trade         | Y       |            |         |         | Y           |          | dextrade          |       |
+| dex-trade         | Y       | Y          | Y       |         | Y           |          | dextrade          |       |
 | Dflow             | Y       |            |         |         | Y           | Y        | dflow             |       |
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |       |
 | Digitalprice      | Y       | Y          | Y       |         | Y           | Y        | digitalprice      |       |
