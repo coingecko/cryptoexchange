@@ -318,7 +318,7 @@ Or install it yourself as:
 | Kucoin            | Y       | Y [x]      | N       |         | Y           | Y        | kucoin            |       |
 | Kuna              | Y       | Y [x]      | Y       |         | User-Defined| Y        | kuna              |       |
 | KyberNetwork      | Y       | N          | N       |         | Y           | Y        | kyber_network     |       |
-| LakeBTC           | Y       |            |         |         | Y           | Y        | lakebtc           |       |
+| LakeBTC           | Y       | Y [X]      |         |         | Y           | Y        | lakebtc           |       |
 | Latoken           | Y       |            |         |         | Y           | Y        | latoken           |       |
 | Lbank             | Y       | Y [x]      | Y       |         | Y           | Y        | lbank             |       |
 | Letsdocoinz       | Y       |            |         |         | Y           |          | letsdocoinz       |       |
