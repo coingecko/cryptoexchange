@@ -18,6 +18,26 @@ task :console do
   Pry.start
 end
 
+task :add_exchange do
+  exchange_name = ARGV.last
+  FileUtils.mkdir "lib/cryptoexchange/exchanges/#{exchange_name}/"
+  FileUtils.mkdir "lib/cryptoexchange/exchanges/#{exchange_name}/services/"
+  FileUtils.mkdir "spec/exchanges/#{exchange_name}/"
+  FileUtils.mkdir "spec/exchanges/#{exchange_name}/integration/"
+
+  File.new("lib/cryptoexchange/exchanges/#{exchange_name}/market.rb", "a")
+  File.new("lib/cryptoexchange/exchanges/#{exchange_name}/services/pairs.rb", "a")
+  File.new("lib/cryptoexchange/exchanges/#{exchange_name}/services/market.rb", "a")
+  File.new("lib/cryptoexchange/exchanges/#{exchange_name}/services/order_book.rb", "a")
+  File.new("lib/cryptoexchange/exchanges/#{exchange_name}/services/trades.rb", "a")
+
+  File.new("spec/exchanges/#{exchange_name}/market_spec.rb", "a")
+  File.new("spec/exchanges/#{exchange_name}/integration/market_spec.rb", "a")
+
+  task puts "#{exchange_name} create successfully"
+  task exchange_name.to_sym do ; end
+end
+
 task :reset_cassette do
   require 'pry'
   puts ARGV
