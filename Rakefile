@@ -41,5 +41,4 @@ task :reset_cassette do
     File.delete(path) if File.exist?(path)
     puts "#{path} deleted for #{exchange_name}"
   end
-  next
 end
