@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://open-api.bitsonic.co.kr/api/external/ticker/24hr?symbol=btckrw
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - open-api.bitsonic.co.kr
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 08 Aug 2019 07:28:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - WMONID=D9c2O3t2Du5; expires=Fri, 07-Aug-2020 07:28:55 GMT; Max-Age=31536000;
+        path=/
+      - __cfduid=d8e627564ea855e5524418bd662293f351565249334; expires=Fri, 07-Aug-20
+        07:28:54 GMT; path=/; domain=.bitsonic.co.kr; HttpOnly; Secure
+      - csrftoken=5c11570b2e44c40de2071234c980f71e; expires=Thu, 08-Aug-2019 09:28:55
+        GMT; Max-Age=7200; path=/
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 502fc6b6d885dd4e-KUL
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "result": {
+                "e": "24hrTicker",
+                "E": 1565249335275,
+                "p": "273000.000000000000",
+                "P": "1.968",
+                "x": "13870000",
+                "s": "BTCKRW",
+                "i": "1d",
+                "o": "13870000",
+                "c": "14143000",
+                "h": "14360000",
+                "l": "13685000",
+                "v": "518.758687063301",
+                "q": "7306970854.291608810424",
+                "t": "1565162880000",
+                "T": "1565249280000"
+            },
+            "return_code": 1,
+            "timestamp": 1565249335,
+            "http_code": 200
+        }
+    http_version: 
+  recorded_at: Thu, 08 Aug 2019 07:28:55 GMT
+recorded_with: VCR 4.0.0

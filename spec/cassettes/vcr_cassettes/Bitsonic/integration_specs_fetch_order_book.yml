@@ -1,0 +1,161 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://open-api.bitsonic.co.kr/api/external/depth?symbol=BTCKRW
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - open-api.bitsonic.co.kr
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 08 Aug 2019 07:28:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - WMONID=D822O0rddwv; expires=Fri, 07-Aug-2020 07:28:55 GMT; Max-Age=31536000;
+        path=/
+      - __cfduid=d9e5b94e447bdd79bd0245979a7ef28461565249335; expires=Fri, 07-Aug-20
+        07:28:55 GMT; path=/; domain=.bitsonic.co.kr; HttpOnly; Secure
+      - csrftoken=13fe518ae75bfe5a42419561ed3a105e; expires=Thu, 08-Aug-2019 09:28:55
+        GMT; Max-Age=7200; path=/
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 502fc6ba7fcec0ff-KUL
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "result": {
+                "e": "DEPTH",
+                "bids": [
+                    [
+                        "14127000",
+                        "0.1436",
+                        []
+                    ],
+                    [
+                        "14125000",
+                        "1.5687",
+                        []
+                    ],
+                    [
+                        "14123000",
+                        "1.8634",
+                        []
+                    ],
+                    [
+                        "14121000",
+                        "1.3553",
+                        []
+                    ],
+                    [
+                        "14119000",
+                        "1.6117",
+                        []
+                    ],
+                    [
+                        "14117000",
+                        "2.0867",
+                        []
+                    ],
+                    [
+                        "14111000",
+                        "0.354",
+                        []
+                    ],
+                    [
+                        "14060000",
+                        "0.0061",
+                        []
+                    ],
+                    [
+                        "14050000",
+                        "0.3729",
+                        []
+                    ],
+                    [
+                        "14040000",
+                        "0.01",
+                        []
+                    ]
+                ],
+                "asks": [
+                    [
+                        "14143000",
+                        "2.0679",
+                        []
+                    ],
+                    [
+                        "14145000",
+                        "2.5837",
+                        []
+                    ],
+                    [
+                        "14190000",
+                        "0.3742",
+                        []
+                    ],
+                    [
+                        "14200000",
+                        "0.01",
+                        []
+                    ],
+                    [
+                        "14201000",
+                        "0.1409",
+                        []
+                    ],
+                    [
+                        "14288000",
+                        "0.0004",
+                        []
+                    ],
+                    [
+                        "14290000",
+                        "0.5949",
+                        []
+                    ],
+                    [
+                        "14299000",
+                        "0.0004",
+                        []
+                    ],
+                    [
+                        "14300000",
+                        "0.01",
+                        []
+                    ],
+                    [
+                        "14310000",
+                        "0.0917",
+                        []
+                    ]
+                ]
+            },
+            "return_code": 1,
+            "timestamp": 1565249335,
+            "http_code": 200
+        }
+    http_version: 
+  recorded_at: Thu, 08 Aug 2019 07:28:55 GMT
+recorded_with: VCR 4.0.0
