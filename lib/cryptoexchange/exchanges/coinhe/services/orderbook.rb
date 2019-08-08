@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Coinhe::Market::API_URL}/depth?pair=#{market_pair.base}_#{market_pair.target}&size=50"
+          "#{Cryptoexchange::Exchanges::Coinhe::Market::API_URL}/order-book/?market=#{market_pair.base}_#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
@@ -23,8 +23,8 @@ module Cryptoexchange::Exchanges
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
           order_book.market    = Coinhe::Market::NAME
-          order_book.asks      = adapt_orders(output['asks'])
-          order_book.bids      = adapt_orders(output['bids'])
+          order_book.asks      = adapt_orders(output['result']['asks'])
+          order_book.bids      = adapt_orders(output['result']['bids'])
           order_book.timestamp = nil
           order_book.payload   = output
           order_book
