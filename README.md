@@ -464,6 +464,7 @@ Or install it yourself as:
 | Zeniex            | Y       | Y          | Y       |         | Y           |          | zeniex            |       |
 | ZG                | Y       | Y [x]      | Y       |         | Y           | Y        | zg                |       |
 | ZG.TOP            | Y       |            |         |         | Y           |          | zgtop             |       |
+| Zoomex            | Y       | Y [x]      | Y       |         | Y           | Y        | zoomex            |       |
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 
