@@ -161,7 +161,7 @@ Or install it yourself as:
 | Coin Asset        | Y       | Y          | Y       |         | Y           |          | coinasset         |       |
 | Coinchangex       | Y       | N          | N       |         | Y           | Y        | coinchangex       |       |
 | CoinEgg           | Y       | Y [x]      | Y       |         | User-Defined| Y        | coin_egg          |       |
-| CoinExchange      | Y       |            |         |         | Y           | Y        | coin_exchange     |       |
+| CoinExchange      | Y       | Y [x]      |         |         | Y           | Y        | coin_exchange     |       |
 | Coinbe            | Y       |            |         |         | Y           |          | coinbe            |       |
 | Coinbene          | Y       | Y [x]      | Y [limit: 3000]      |         | Y           | Y        | coinbene          |       |
 | Coinbig           | Y       | Y [x]      |         |         | Y           | Y        | coinbig           |       |
