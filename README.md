@@ -332,7 +332,7 @@ Or install it yourself as:
 | Lykke             | Y       | Y          | N       |         | Y           |          | lykke             |       |
 | Maplechange       | Y       | Y          |         |         | Y           | Y        | maplechange       |       |
 | MaxMaicoin        | Y       | Y [x]      | Y       |         | Y           | Y        | max_maicoin       |       |
-| MercadoBitcoin    | Y       |            |         |         | User-Defined|          | mercado_bitcoin   |       |
+| MercadoBitcoin    | Y       | Y [x]      |         |         | User-Defined|          | mercado_bitcoin   |       |
 | Mercatox          | Y       | N          | N       | N       | Y           |          | mercatox          |       |
 | Mercuriex         | Y       | N          | N       | N       | Y           | Y        | mercuriex         |       |
 | MXC               | Y       | Y [x]      |         |         | Y           | Y        | mxc               |       |
@@ -445,7 +445,7 @@ Or install it yourself as:
 | Vindax            | Y       | Y [x]      |         |         | Y           | Y        | vindax            |       |
 | Vinex             | Y       | Y [x]      |         |         | Y           | Y        | vinex             |       |
 | Waves             | Y       | N          | Y       |         | Y           |          | waves             |       |
-| WazirX            | Y       |            |         |         | Y           |          | wazirx            |       |
+| WazirX            | Y       | Y [x]      |         |         | Y           |          | wazirx            |       |
 | Wcx               | Y       | Y          | Y       |         | Y           |          | wcx               |       |
 | Wex               | Y       | Y          | Y       |         | Y           | Y        | wex               |       |
 | WhaleEx           | Y       | N          |         |         | Y           | Y        | whale_ex          |       |
