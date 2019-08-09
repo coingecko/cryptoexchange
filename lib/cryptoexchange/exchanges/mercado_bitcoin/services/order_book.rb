@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Wazirx
+  module MercadoBitcoin
     module Services
       class OrderBook < Cryptoexchange::Services::Market
         class << self
@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Wazirx::Market::API_URL}/depth?market=#{market_pair.base.downcase}#{market_pair.target.downcase}"
+          "#{Cryptoexchange::Exchanges::MercadoBitcoin::Market::API_URL}/#{market_pair.base}/orderbook/"
         end
 
         def adapt(output, market_pair)
@@ -22,18 +22,20 @@ module Cryptoexchange::Exchanges
 
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
-          order_book.market    = Wazirx::Market::NAME
-          order_book.asks      = adapt_orders(output['asks'])
-          order_book.bids      = adapt_orders(output['bids'])
-          order_book.timestamp = output['timestamp']
+          order_book.market    = MercadoBitcoin::Market::NAME
+
+          order_book.asks      = adapt_orders output['asks']
+          order_book.bids      = adapt_orders output['bids']
+          order_book.timestamp = nil
           order_book.payload   = output
           order_book
         end
 
         def adapt_orders(orders)
           orders.collect do |order_entry|
-            Cryptoexchange::Models::Order.new(price: order_entry[0],
-                                              amount: order_entry[1])
+            Cryptoexchange::Models::Order.new(price: order_entry[0].to_f,
+                                              amount: order_entry[1].to_f,
+                                              timestamp: nil)
           end
         end
       end
