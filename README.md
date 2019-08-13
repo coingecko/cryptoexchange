@@ -77,7 +77,7 @@ Or install it yourself as:
 | Bitebtc           | Y       | Y [x]      | Y       |         | Y           | Y        | bitebtc           |       |
 | Bitex.la          | Y       | Y [x]      |         |         | Y           |          | bitex             |       |
 | Bitexbook         | Y       | N          | N       |         | Y           | Y        | bitexbook         |       |
-| Bitexlive         | Y       | N          | N       |         | Y           | Y        | bitexlive         |       |
+| Bitexlive         | Y       | Y [x]      | N       |         | Y           | Y        | bitexlive         |       |
 | BitFex.Trade      | Y       |            |         |         | Y           | Y        | bitfex            |       |
 | Bitfinex          | Y       | Y [x]      |         |         | Y           |          | bitfinex          |       |
 | Bitflyer          | Y       | Y [x]      |         |         | Y           |          | bitflyer          |       |
