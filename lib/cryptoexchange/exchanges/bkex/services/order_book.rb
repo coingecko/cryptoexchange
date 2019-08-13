@@ -14,11 +14,12 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bkex::Market::API_URL}/depth?symbol=#{market_pair.base}_#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::Bkex::Market::API_URL_2}/q/depth?pair=#{market_pair.base}_#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
           order_book = Cryptoexchange::Models::OrderBook.new
+          output     = output["data"]
 
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
@@ -32,8 +33,8 @@ module Cryptoexchange::Exchanges
         def adapt_orders(orders)
           orders.collect do |order_entry|
             Cryptoexchange::Models::Order.new(
-              price:     order_entry[0].to_f,
-              amount:    order_entry[1].to_f,
+              price:     order_entry["price"].to_f,
+              amount:    order_entry["amt"].to_f,
               timestamp: nil
             )
           end
