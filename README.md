@@ -115,7 +115,7 @@ Or install it yourself as:
 | Bitsten           | Y       | Y [x]      | N       |         | Y           | Y        | bitsten           |       |
 | Bitstorage        | Y       | Y [x]      | Y       |         | Y           | Y        | bitstorage        |       |
 | Bittrex           | Y       | Y [x]      | Y [limit: 100]      |         | Y           | Y        | bittrex           |       |
-| Bkex              | Y       | N          | N       |         | Y           | Y        | bkex              |       |
+| Bkex              | Y       | Y [x]      | N       |         | Y           | Y        | bkex              |       |
 | Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |       |
 | Blockonix         | Y       | Y          | Y       |         | Y           |          | blockonix         |       |
 | Blokmy            | Y       | Y          | Y       |         | Y           | Y        | blokmy            |       |
