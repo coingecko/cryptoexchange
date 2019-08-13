@@ -91,7 +91,7 @@ Or install it yourself as:
 | Bitibu            | Y       | Y [x]      | Y       |         | Y           | Y        | bitibu            |       |
 | Bitinfi           | Y       | Y [x]      |         |         | Y           |          | bitinfi           |       |
 | Bitinka           | Y       | Y [x]      |         |         | Y           |          | bitinka           |       |
-| Bitker            | Y       |            |         |         | Y           | Y        | bitker            |       |
+| Bitker            | Y       | Y [x]      |         |         | Y           | Y        | bitker            |       |
 | Bitkonan          | Y       |            |         |         | User-Defined|          | bitkonan          |       |
 | Bitkub            | Y       | Y [x]      | Y       |         | Y           | Y        | bitkub            |       |
 | Bitlish           | Y       | Y [x]      | Y       |         | Y           |          | bitlish           |       |
