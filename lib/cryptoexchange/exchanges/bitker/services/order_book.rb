@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Bkex
+  module Bitker
     module Services
       class OrderBook < Cryptoexchange::Services::Market
         class << self
@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bkex::Market::API_URL}/depth?symbol=#{market_pair.base}_#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::Bitker::Market::API_URL}/depth?symbol=#{market_pair.base}_#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
@@ -22,7 +22,7 @@ module Cryptoexchange::Exchanges
 
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
-          order_book.market    = Bkex::Market::NAME
+          order_book.market    = Bitker::Market::NAME
           order_book.asks      = adapt_orders output['asks']
           order_book.bids      = adapt_orders output['bids']
           order_book.payload   = output
