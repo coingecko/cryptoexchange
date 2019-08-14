@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://www.catex.io/api'
 
       def self.trade_page_url(args={})
-        "https://www.catex.io/trading/#{args[:target]}/#{args[:base]}"
+        "https://www.catex.io/trading/#{args[:base]}/#{args[:target]}"
       end
     end
   end
