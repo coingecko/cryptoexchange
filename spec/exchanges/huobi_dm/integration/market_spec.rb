@@ -31,6 +31,7 @@ RSpec.describe 'Huobi Dm integration specs' do
     expect(ticker.ask).to be_a Numeric
     expect(ticker.high).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
+    expect(ticker.volume.to_i).to eq (ticker.payload["amount"].to_f / 2.0).to_i
     expect(ticker.timestamp).to be nil
 
     expect(ticker.payload).to_not be nil
