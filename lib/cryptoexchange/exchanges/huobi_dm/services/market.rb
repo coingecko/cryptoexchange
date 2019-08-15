@@ -32,7 +32,7 @@ module Cryptoexchange::Exchanges
           ticker.ask       = NumericHelper.to_d(market['ask'][0]) if market['ask']
           ticker.high      = NumericHelper.to_d(market['high'])
           ticker.low       = NumericHelper.to_d(market['low'])
-          ticker.volume    = NumericHelper.to_d(market['amount'])
+          ticker.volume    = NumericHelper.divide(NumericHelper.to_d(market['amount']), 2.0) # Divide by 2 as it is double counted
           ticker.timestamp = nil
           ticker.payload   = market
           ticker
