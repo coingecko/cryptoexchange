@@ -10,18 +10,19 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          market_pairs = []
-          output["symbols"].each do |pair|
+          output["symbols"].map do |pair|
+            next if pair["status"] != "TRADING"
+
             base = pair["baseAsset"]
             target = pair["quoteAsset"]
             next unless base && target
-            market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: base,
-                              target: target,
-                              market: Binance::Market::NAME
-                            )
-          end
-          market_pairs
+
+            Cryptoexchange::Models::MarketPair.new(
+              base: base,
+              target: target,
+              market: Binance::Market::NAME
+            )
+          end.compact
         end
       end
     end
