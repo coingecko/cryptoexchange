@@ -5,7 +5,14 @@ module Cryptoexchange::Exchanges
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Citex::Market::API_URL}/allticker"
 
         def fetch
-          output = super
+          authentication = Cryptoexchange::Exchanges::Citex::Authentication.new(
+            :pairs,
+            Cryptoexchange::Exchanges::Citex::Market::NAME
+          )
+          headers = authentication.headers
+          output = Cryptoexchange::Cache.ticker_cache.fetch(PAIRS_URL) do
+            HTTP.timeout(15).headers(headers).get(PAIRS_URL).parse :json
+          end
           adapt(output)
         end
 

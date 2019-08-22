@@ -6,6 +6,8 @@ RSpec.describe 'Citex integration specs' do
   let(:veil_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'VEIL', target: 'BTC', market: 'citex') }
 
   it 'fetch pairs' do
+    pending "Skip this test due to restriction"
+
     pairs = client.pairs('citex')
     expect(pairs).not_to be_empty
 
@@ -16,6 +18,8 @@ RSpec.describe 'Citex integration specs' do
   end
 
   it 'fetch ticker' do
+    pending "Skip this test due to restriction"
+
     ticker = client.ticker(veil_btc_pair)
 
     expect(ticker.base).to eq 'VEIL'
@@ -31,6 +35,8 @@ RSpec.describe 'Citex integration specs' do
   end
 
   it 'fetch order book' do
+    pending "Skip this test due to restriction"
+    
     order_book = client.order_book(veil_btc_pair)
 
     expect(order_book.base).to eq 'VEIL'
