@@ -26,8 +26,9 @@ module Cryptoexchange::Exchanges
 
           output.map do |ticker|
             pair = pairs_map[ticker["symbol"]]
+            next if pair.nil?
             adapt(ticker, pair)
-          end
+          end.compact
         end
 
         def adapt(output, market_pair)
