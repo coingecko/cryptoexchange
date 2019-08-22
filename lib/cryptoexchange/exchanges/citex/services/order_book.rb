@@ -9,7 +9,14 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          output = super(ticker_url(market_pair))
+          authentication = Cryptoexchange::Exchanges::Citex::Authentication.new(
+            :pairs,
+            Cryptoexchange::Exchanges::Citex::Market::NAME
+          )
+          headers = authentication.headers
+          output = Cryptoexchange::Cache.ticker_cache.fetch(ticker_url(market_pair)) do
+            HTTP.timeout(15).headers(headers).get(ticker_url(market_pair)).parse :json
+          end
           adapt(output, market_pair)
         end
 
