@@ -15,6 +15,7 @@ module Cryptoexchange::Exchanges
             base = pair["baseAsset"]
             target = pair["quoteAsset"]
             next unless base && target
+            next if pair["status"] != "TRADING"
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: base,
                               target: target,
