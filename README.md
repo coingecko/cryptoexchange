@@ -206,6 +206,7 @@ Or install it yourself as:
 | Coinzo            | Y       | Y          | Y       |         | Y           | Y        | coinzo            |       |
 | COSS              | Y       |            |         |         | Y           | Y        | coss              |       |
 | Cpdax             | Y       | Y [x]      | Y       |         | Y           |          | cpdax             |       |
+| Cpufinex          | Y       | Y [x]      | Y       |         | Y           | Y        | cpufinex          |       |
 | CredoEx           | Y       |            |         |         | Y           |          | credoex           |       |
 | Crex24            | Y       | Y [x]      | Y       |         | Y           | Y        | crex24            |       |
 | CRXZone           | Y       | Y [x]      | Y       |         | Y           | Y        | crxzone           |       |

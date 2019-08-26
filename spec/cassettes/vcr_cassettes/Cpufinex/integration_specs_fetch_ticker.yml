@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cpufinex.com/api/v2/trade/public/markets/btcusdt/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - cpufinex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Encoding:
+      - gzip
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Length:
+      - '279'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 26 Aug 2019 08:14:28 GMT
+      Etag:
+      - W/"3019c9a9f2542be275ca13ee2195822a"
+      Host:
+      - cpufinex.com
+      Server:
+      - envoy
+      Set-Cookie:
+      - _session_id=U4v0PIx3T0BCHApaXdaLo7B3FlKqwpixSqQgW01VIqHya5ontOCboIoM9SG14TKLxFplSLFNANNgVWpkOg%3D%3D--eEzBGDXXfwnlWYI%2F--D3zRL8b29jOXG4JYH0iMhA%3D%3D;
+        path=/; HttpOnly
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Vary:
+      - Origin
+      Version:
+      - HTTP/1.1
+      X-Envoy-Expected-Rq-Timeout-Ms:
+      - '15000'
+      X-Envoy-Original-Path:
+      - "/api/v2/trade/public/markets/btcusdt/tickers"
+      X-Envoy-Upstream-Service-Time:
+      - '632'
+      X-Forwarded-For:
+      - 93.115.28.37
+      X-Forwarded-Host:
+      - cpufinex.com
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Forwarded-Server:
+      - 4d8af055817a
+      X-Real-Ip:
+      - 93.115.28.37
+      X-Request-Id:
+      - '05979c08-d65e-4e45-aae6-c3816f6096fa'
+      X-Runtime:
+      - '0.330478'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"name":"BTC/USDT","base_unit":"btc","quote_unit":"usdt","low":"9972.0","high":"10638.0","last":"10310.0","open":"10310.0","amount":"0.0","volume":"5050228.80232027","sell":"10312.0","buy":"10310.0","avg_price":"10230.245720844388960001582772712","price_change_percent":"+0.00%"}'
+    http_version: 
+  recorded_at: Mon, 26 Aug 2019 08:14:28 GMT
+recorded_with: VCR 4.0.0
