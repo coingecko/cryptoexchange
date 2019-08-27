@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bybit.com/v2/public/orderBook/L2?symbol=BTCUSD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bybit.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 27 Aug 2019 03:39:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - waf/2.15.3-8.el6
+      X-Via:
+      - 1.1 PSxjpSin5uc165:0 (Cdn Cache Server V2.0), 1.1 VM-SIN-01O3Y125:5 (Cdn Cache
+        Server V2.0)
+    body:
+      encoding: UTF-8
+      string: '{"ret_code":0,"ret_msg":"OK","ext_code":"","ext_info":"","result":[{"symbol":"BTCUSD","price":"10150","size":841840,"side":"Buy"},{"symbol":"BTCUSD","price":"10149.5","size":483092,"side":"Buy"},{"symbol":"BTCUSD","price":"10149","size":181538,"side":"Buy"},{"symbol":"BTCUSD","price":"10148.5","size":521160,"side":"Buy"},{"symbol":"BTCUSD","price":"10148","size":41440,"side":"Buy"},{"symbol":"BTCUSD","price":"10147.5","size":538809,"side":"Buy"},{"symbol":"BTCUSD","price":"10147","size":500549,"side":"Buy"},{"symbol":"BTCUSD","price":"10146.5","size":177438,"side":"Buy"},{"symbol":"BTCUSD","price":"10146","size":204811,"side":"Buy"},{"symbol":"BTCUSD","price":"10145.5","size":5626,"side":"Buy"},{"symbol":"BTCUSD","price":"10145","size":8940,"side":"Buy"},{"symbol":"BTCUSD","price":"10144.5","size":6505,"side":"Buy"},{"symbol":"BTCUSD","price":"10144","size":6286,"side":"Buy"},{"symbol":"BTCUSD","price":"10143.5","size":63460,"side":"Buy"},{"symbol":"BTCUSD","price":"10143","size":67473,"side":"Buy"},{"symbol":"BTCUSD","price":"10142.5","size":60032,"side":"Buy"},{"symbol":"BTCUSD","price":"10142","size":57286,"side":"Buy"},{"symbol":"BTCUSD","price":"10141.5","size":60559,"side":"Buy"},{"symbol":"BTCUSD","price":"10141","size":67363,"side":"Buy"},{"symbol":"BTCUSD","price":"10140.5","size":75476,"side":"Buy"},{"symbol":"BTCUSD","price":"10140","size":45936,"side":"Buy"},{"symbol":"BTCUSD","price":"10139.5","size":63412,"side":"Buy"},{"symbol":"BTCUSD","price":"10139","size":59254,"side":"Buy"},{"symbol":"BTCUSD","price":"10138.5","size":73569,"side":"Buy"},{"symbol":"BTCUSD","price":"10138","size":67717,"side":"Buy"},{"symbol":"BTCUSD","price":"10150.5","size":308811,"side":"Sell"},{"symbol":"BTCUSD","price":"10151","size":515457,"side":"Sell"},{"symbol":"BTCUSD","price":"10151.5","size":213652,"side":"Sell"},{"symbol":"BTCUSD","price":"10152","size":329331,"side":"Sell"},{"symbol":"BTCUSD","price":"10152.5","size":186495,"side":"Sell"},{"symbol":"BTCUSD","price":"10153","size":844115,"side":"Sell"},{"symbol":"BTCUSD","price":"10153.5","size":421727,"side":"Sell"},{"symbol":"BTCUSD","price":"10154","size":198391,"side":"Sell"},{"symbol":"BTCUSD","price":"10154.5","size":47051,"side":"Sell"},{"symbol":"BTCUSD","price":"10155","size":49453,"side":"Sell"},{"symbol":"BTCUSD","price":"10155.5","size":44026,"side":"Sell"},{"symbol":"BTCUSD","price":"10156","size":52330,"side":"Sell"},{"symbol":"BTCUSD","price":"10156.5","size":295906,"side":"Sell"},{"symbol":"BTCUSD","price":"10157","size":85133,"side":"Sell"},{"symbol":"BTCUSD","price":"10157.5","size":50513,"side":"Sell"},{"symbol":"BTCUSD","price":"10158","size":55814,"side":"Sell"},{"symbol":"BTCUSD","price":"10158.5","size":67968,"side":"Sell"},{"symbol":"BTCUSD","price":"10159","size":116749,"side":"Sell"},{"symbol":"BTCUSD","price":"10159.5","size":51868,"side":"Sell"},{"symbol":"BTCUSD","price":"10160","size":79691,"side":"Sell"},{"symbol":"BTCUSD","price":"10160.5","size":49958,"side":"Sell"},{"symbol":"BTCUSD","price":"10161","size":58429,"side":"Sell"},{"symbol":"BTCUSD","price":"10161.5","size":70170,"side":"Sell"},{"symbol":"BTCUSD","price":"10162","size":59827,"side":"Sell"},{"symbol":"BTCUSD","price":"10162.5","size":72172,"side":"Sell"}],"time_now":"1566877163.577216"}'
+    http_version: 
+  recorded_at: Tue, 27 Aug 2019 03:39:23 GMT
+recorded_with: VCR 4.0.0
