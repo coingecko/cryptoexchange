@@ -137,7 +137,7 @@ Or install it yourself as:
 | BTCNEXT           | Y       |            |         |         | Y           | N        | btcnext           |       |
 | Buyucoin          | Y       | N          | N       |         | Y           |          | buyucoin          |       |
 | BX Thailand       | Y       | Y [x]      |         |         | Y           |          | bx_thailand       |       |
-| Bybit(future)     | Y       |            |         |         | Y           |          | bybit             |       |
+| Bybit(future)     | Y       | Y [x]      |         |         | Y           |          | bybit             |       |
 | BW                | Y       |            |         |         | Y           | Y        | bw                |       |
 | Bytex             | Y       | N          | N       |         | Y           | N        | bytex             |       |
 | Catex             | Y       | Y [x]      | N       |         | Y           |          | catex            |       |
