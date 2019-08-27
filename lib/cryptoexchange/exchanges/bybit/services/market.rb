@@ -4,31 +4,50 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            true
+            false
           end
         end
 
-        def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output["result"].last, market_pair)
+        def fetch
+          output = super(ticker_url)
+          adapt_all(output)
         end
 
-        def ticker_url(market_pair)
-          #set interval to 1 days. Will use 87000 seconds ago (86400 seconds / days) to ensure we manage to capture the right interval data
-          timestamp = Time.now - 87000
-          "#{Cryptoexchange::Exchanges::Bybit::Market::API_URL}/kline/list?interval=D&from=#{timestamp.to_i}&symbol=#{market_pair.base}#{market_pair.target}"
+        def ticker_url
+          "#{Cryptoexchange::Exchanges::Bybit::Market::API_URL}/tickers"
         end
 
-        def adapt(output, market_pair)
-          ticker           = Cryptoexchange::Models::Ticker.new
-          ticker.base      = market_pair.base
-          ticker.target    = market_pair.target
-          ticker.market    = Bybit::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['close'])
-          ticker.high       = NumericHelper.to_d(output['high'])
-          ticker.low       = NumericHelper.to_d(output['low'])
-          ticker.volume    = NumericHelper.divide(NumericHelper.to_d(output['volume']), ticker.last)
-          ticker.payload   = output
+        def adapt_all(output)
+          output["result"].map do |pair|
+            separator = /(BTC|ETH|EOS|XRP|USD)\z/ =~ pair['symbol']
+            next if separator.nil?
+
+            base   = pair['symbol'][0..separator - 1]
+            target = pair['symbol'][separator..-1]
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+              base: base,
+              target: target,
+              market: Btcnext::Market::NAME
+            )
+
+            adapt(market_pair, pair)
+          end.compact
+        end
+
+        def adapt(market_pair, output)
+          ticker = Cryptoexchange::Models::Ticker.new
+          ticker.base = market_pair.base
+          ticker.target = market_pair.target
+          ticker.market = Bybit::Market::NAME
+          ticker.last = NumericHelper.to_d(output['last_price'])
+          ticker.bid = NumericHelper.to_d(output['bid_price'])
+          ticker.ask = NumericHelper.to_d(output['ask_price'])
+          ticker.high = NumericHelper.to_d(output['high_price_24h'])
+          ticker.low = NumericHelper.to_d(output['low_price_24h'])
+          ticker.volume = NumericHelper.to_d(output['total_volume'])
+          ticker.change = NumericHelper.to_d(output['price_24h_pcnt'])
+          ticker.timestamp = nil
+          ticker.payload = output
           ticker
         end
       end

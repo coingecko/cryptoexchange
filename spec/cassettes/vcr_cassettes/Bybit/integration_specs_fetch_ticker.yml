@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.bybit.com/v2/public/kline/list?from=1566535151&interval=D&symbol=BTCUSD
+    uri: https://api.bybit.com/v2/public/tickers
     body:
       encoding: UTF-8
       string: ''
@@ -19,21 +19,21 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 24 Aug 2019 04:49:11 GMT
+      - Tue, 27 Aug 2019 06:25:33 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Content-Length:
-      - '273'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - close
       Server:
       - waf/2.15.3-8.el6
       X-Via:
-      - 1.1 PSxjpSin5mt164:0 (Cdn Cache Server V2.0), 1.1 PS-TPE-01NAo219:4 (Cdn Cache
+      - 1.1 PSxjpSin5uc165:3 (Cdn Cache Server V2.0), 1.1 VM-SIN-01O3Y125:5 (Cdn Cache
         Server V2.0)
     body:
       encoding: UTF-8
-      string: '{"ret_code":0,"ret_msg":"OK","ext_code":"","ext_info":"","result":[{"symbol":"BTCUSD","interval":"D","open_time":1566604800,"open":"10410.5","high":"10431.5","low":"10312","close":"10361","volume":"64771793","turnover":"6241.3836096599925"}],"time_now":"1566622151.517980"}'
+      string: '{"ret_code":0,"ret_msg":"OK","ext_code":"","ext_info":"","result":[{"symbol":"BTCUSD","bid_price":"10208","ask_price":"10209","last_price":"10209.50","last_tick_direction":"PlusTick","prev_price_24h":"10340.00","price_24h_pcnt":"-0.01","high_price_24h":"10426.00","low_price_24h":"10088.00","prev_price_1h":"10178.00","price_1h_pcnt":"0.00","mark_price":"10203.49","index_price":"10202.77","open_interest":96331826,"open_value":"9414.41","total_turnover":"6399453.60","turnover_24h":"45199.72","total_volume":61579012260,"volume_24h":465214719,"funding_rate":"0.00","predicted_funding_rate":"0.00","next_funding_time":"2019-08-27T08:00:00Z","countdown_hour":2},{"symbol":"ETHUSD","bid_price":"186","ask_price":"186.05","last_price":"186.05","last_tick_direction":"ZeroPlusTick","prev_price_24h":"190.30","price_24h_pcnt":"-0.02","high_price_24h":"191.05","low_price_24h":"184.75","prev_price_1h":"186.60","price_1h_pcnt":"-0.00","mark_price":"185.85","index_price":"185.83","open_interest":27076222,"open_value":"143396.15","total_turnover":"51988471.05","turnover_24h":"278021.77","total_volume":11208605778,"volume_24h":52340659,"funding_rate":"0.00","predicted_funding_rate":"0.00","next_funding_time":"2019-08-27T08:00:00Z","countdown_hour":2},{"symbol":"EOSUSD","bid_price":"3.539","ask_price":"3.54","last_price":"3.539","last_tick_direction":"MinusTick","prev_price_24h":"3.630","price_24h_pcnt":"-0.025","high_price_24h":"3.637","low_price_24h":"3.510","prev_price_1h":"3.548","price_1h_pcnt":"-0.003","mark_price":"3.536","index_price":"3.536","open_interest":8851697,"open_value":"2428462.061","total_turnover":"625316012.910","turnover_24h":"6584197.709","total_volume":3070028640,"volume_24h":23571419,"funding_rate":"0.000","predicted_funding_rate":"0.000","next_funding_time":"2019-08-27T08:00:00Z","countdown_hour":2},{"symbol":"XRPUSD","bid_price":"0.2687","ask_price":"0.2688","last_price":"0.2687","last_tick_direction":"ZeroMinusTick","prev_price_24h":"0.2726","price_24h_pcnt":"-0.0143","high_price_24h":"0.2729","low_price_24h":"0.2664","prev_price_1h":"0.2687","price_1h_pcnt":"0.0004","mark_price":"0.2684","index_price":"0.2683","open_interest":6099396,"open_value":"23872184.7226","total_turnover":"10353443766.8354","turnover_24h":"102330302.8721","total_volume":3514414883,"volume_24h":27589065,"funding_rate":"0.0012","predicted_funding_rate":"0.0009","next_funding_time":"2019-08-27T08:00:00Z","countdown_hour":2}],"time_now":"1566887133.569519"}'
     http_version: 
-  recorded_at: Sat, 24 Aug 2019 04:49:11 GMT
+  recorded_at: Tue, 27 Aug 2019 06:25:33 GMT
 recorded_with: VCR 4.0.0

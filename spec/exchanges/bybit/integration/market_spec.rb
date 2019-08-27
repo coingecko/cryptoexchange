@@ -19,8 +19,7 @@ RSpec.describe 'Bybit integration specs' do
     expect(trade_page_url).to eq "https://www.bybit.com/app/exchange/BTCUSD"
   end
 
-  #skip for now
-  xit 'fetch ticker' do
+  it 'fetch ticker' do
     ticker = client.ticker(btc_usd_pair)
 
     expect(ticker.base).to eq 'BTC'
@@ -30,6 +29,9 @@ RSpec.describe 'Bybit integration specs' do
     expect(ticker.high).to be_a Numeric
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.high).to be_a Numeric
+    expect(ticker.change).to be_a Numeric
     expect(ticker.timestamp).to be nil
 
     expect(ticker.payload).to_not be nil
