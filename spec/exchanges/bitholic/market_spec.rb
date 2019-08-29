@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 RSpec.describe Cryptoexchange::Exchanges::Bitholic::Market do
-  let(:args) { {base: "btc", target: "qtum"} }
+  let(:args) { {base: "BTC", target: "QTUM"} }
 
   it { expect(described_class::NAME).to eq 'bitholic' }
   it { expect(described_class::API_URL).to eq 'https://api.bitholic.com/public' }
