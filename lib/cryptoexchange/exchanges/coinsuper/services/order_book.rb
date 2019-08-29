@@ -28,7 +28,7 @@ module Cryptoexchange::Exchanges
         def get_step(market_pair)
           body = {"lang":"en-GB","language":"en-GB","community":"Coinsuper","data":{"source":"WEB","symbol":"#{market_pair.base.upcase}/#{market_pair.target.upcase}"}}.to_json
           res = HTTP.post("https://www.coinsuper.com/v1/order/symbol/symbolDetail", body: body)
-          step = JSON.parse(res.body)["data"]["steps"][0]["code"]
+          step = JSON.parse(res.body)["data"]["steps"].last["code"]
         end
 
         def adapt(output, market_pair)
