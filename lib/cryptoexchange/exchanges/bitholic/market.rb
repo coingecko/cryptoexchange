@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://api.bitholic.com/public'
 
       def self.trade_page_url(args={})
-        "https://www.bithumbsg.com/exchange/#{args[:base]}-#{args[:target]}"
+        "https://www.bithumbsg.com/exchange/#{args[:base].downcase}-#{args[:target].downcase}"
       end
     end
   end
