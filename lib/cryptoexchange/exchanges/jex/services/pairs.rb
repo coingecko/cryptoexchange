@@ -1,5 +1,3 @@
-require "byebug"
-
 module Cryptoexchange::Exchanges
   module Jex
     module Services
