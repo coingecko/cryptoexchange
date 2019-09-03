@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.exchange.waskurzes.com/public/v1/instruments
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.exchange.waskurzes.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 22 Aug 2019 03:59:46 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1991'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d800738f984737df024db86da09178cd41566446382; expires=Fri, 21-Aug-20
+        03:59:42 GMT; path=/; domain=.waskurzes.com; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Frame-Options:
+      - sameorigin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - no-referrer
+      Expect-Ct:
+      - max-age=86400, enforce
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Bp-Request-Id:
+      - 182d7819-4548-4d56-b3f4-35234b604e43
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 50a1ef7fcd29dd66-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"state":"ACTIVE","base":{"code":"PAN","precision":8},"quote":{"code":"BTC","precision":8},"amount_precision":0,"market_precision":8,"min_size":"0.001"},{"state":"ACTIVE","base":{"code":"BTC","precision":8},"quote":{"code":"EUR","precision":2},"amount_precision":5,"market_precision":2,"min_size":"10.0"},{"state":"ACTIVE","base":{"code":"MIOTA","precision":8},"quote":{"code":"BTC","precision":8},"amount_precision":0,"market_precision":8,"min_size":"0.001"},{"state":"ACTIVE","base":{"code":"MIOTA","precision":8},"quote":{"code":"EUR","precision":2},"amount_precision":0,"market_precision":5,"min_size":"10.0"},{"state":"ACTIVE","base":{"code":"ETH","precision":8},"quote":{"code":"BTC","precision":8},"amount_precision":4,"market_precision":8,"min_size":"0.001"},{"state":"ACTIVE","base":{"code":"PAN","precision":8},"quote":{"code":"EUR","precision":2},"amount_precision":0,"market_precision":5,"min_size":"10.0"},{"state":"ACTIVE","base":{"code":"XRP","precision":8},"quote":{"code":"EUR","precision":2},"amount_precision":0,"market_precision":5,"min_size":"10.0"},{"state":"ACTIVE","base":{"code":"BTC","precision":8},"quote":{"code":"USDT","precision":6},"amount_precision":5,"market_precision":2,"min_size":"10.0"},{"state":"ACTIVE","base":{"code":"BEST","precision":8},"quote":{"code":"BTC","precision":8},"amount_precision":4,"market_precision":8,"min_size":"0.001"},{"state":"ACTIVE","base":{"code":"BEST","precision":8},"quote":{"code":"USDT","precision":6},"amount_precision":0,"market_precision":5,"min_size":"10.0"},{"state":"ACTIVE","base":{"code":"XRP","precision":8},"quote":{"code":"BTC","precision":8},"amount_precision":0,"market_precision":8,"min_size":"0.001"},{"state":"ACTIVE","base":{"code":"BEST","precision":8},"quote":{"code":"EUR","precision":2},"amount_precision":0,"market_precision":5,"min_size":"10.0"},{"state":"ACTIVE","base":{"code":"ETH","precision":8},"quote":{"code":"EUR","precision":2},"amount_precision":4,"market_precision":2,"min_size":"10.0"}]'
+    http_version: 
+  recorded_at: Thu, 22 Aug 2019 03:59:46 GMT
+recorded_with: VCR 4.0.0

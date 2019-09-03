@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.exchange.waskurzes.com/public/v1/order-book/BTC_EUR
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.exchange.waskurzes.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 22 Aug 2019 03:59:47 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '9308'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dbc3d6595728c32498ab360825be070181566446386; expires=Fri, 21-Aug-20
+        03:59:46 GMT; path=/; domain=.waskurzes.com; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Frame-Options:
+      - sameorigin
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - no-referrer
+      Expect-Ct:
+      - max-age=86400, enforce
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      Bp-Request-Id:
+      - da017c6a-fa70-4922-bae4-d409f57854f0
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 50a1ef9b4b86dd66-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_code":"BTC_EUR","time":"2019-08-22T02:31:21.341Z","bids":[{"price":"8833.7","amount":"0.0195","order_id":"581c181b-21e9-4987-b435-2692cc98482e"},{"price":"8830.62","amount":"0.0195","order_id":"317d3a78-dd08-4cf6-ac05-d40272814109"},{"price":"8829.43","amount":"0.0195","order_id":"5f66aaaa-54e4-43da-96d5-4db327bf993f"},{"price":"8829.33","amount":"0.0195","order_id":"823273e8-a98a-4cab-848e-631b0a0a160d"},{"price":"8829.23","amount":"0.0195","order_id":"46919b0f-d22c-4cb8-8732-a96bf25f9317"},{"price":"8829.23","amount":"0.0195","order_id":"28296f48-7b43-4e33-9918-4fc22907997c"},{"price":"8829.13","amount":"0.0195","order_id":"837ba6a5-921e-456d-a47c-6750304a52ff"},{"price":"8823.75","amount":"0.0195","order_id":"910a37e9-bc34-42ca-93fc-753708109346"},{"price":"8823.66","amount":"0.0195","order_id":"da769ea4-cc4d-4b0d-bf3c-d7b61a9442ad"},{"price":"8823.56","amount":"0.0195","order_id":"c1d6a3d8-c1a5-4dad-acf7-b1d2d652f21c"},{"price":"8822.56","amount":"0.0195","order_id":"b9504167-b82d-4923-92d6-94784febd849"},{"price":"8820.57","amount":"0.0195","order_id":"8ca51af8-0c2e-4349-9d5d-2ef694cce22a"},{"price":"8820.07","amount":"0.0195","order_id":"5432c7d8-7622-4c9c-9ff3-c6bef768523f"},{"price":"8816.29","amount":"0.0195","order_id":"a8f95088-f1d6-4820-bb40-a3a84895aad2"},{"price":"8816.29","amount":"0.0195","order_id":"ec933def-1303-4808-956c-d8fc564b1f69"},{"price":"8815.4","amount":"0.0195","order_id":"fb310bde-c419-4db0-9b7d-46e83f70be3e"},{"price":"8815.3","amount":"0.0195","order_id":"b493ceea-4b51-48cf-8293-b80c49273a8f"},{"price":"8815.1","amount":"0.0025","order_id":"02c68baa-636f-4b3f-9a0a-47ce45642b47"},{"price":"8811.32","amount":"0.0195","order_id":"b1b3f47c-07ec-4983-990d-03242e587947"},{"price":"8811.02","amount":"0.0195","order_id":"61e36d3a-3259-4eae-b730-77a0ef0c36fa"},{"price":"8810.82","amount":"0.0075","order_id":"f85d3d65-823b-4ec1-b7ea-bffda803b14e"},{"price":"8807.74","amount":"0.0195","order_id":"b6de3c4b-0bd3-4e77-bcca-f63278a16fd5"},{"price":"8807.74","amount":"0.0195","order_id":"96b52916-5479-438c-9347-5e5cb9f3cd0d"},{"price":"8807.64","amount":"0.0195","order_id":"4aed732c-2571-474c-9bf6-e4c0c2572607"},{"price":"8807.64","amount":"0.0195","order_id":"8e659ccf-f6c1-4d05-9812-ad7bbbb89c52"},{"price":"8807.34","amount":"0.0195","order_id":"44597fab-10af-4a85-97f1-17e70b62f085"},{"price":"8807.34","amount":"0.0195","order_id":"88333fce-40b5-4908-bac2-8fe3119b3cd7"},{"price":"8805.75","amount":"0.0195","order_id":"7b20d2fb-1661-4179-844a-436faf21bedc"},{"price":"8805.35","amount":"0.0195","order_id":"226089c6-268e-4a8d-b472-f4ec49c806c1"},{"price":"8804.95","amount":"0.0195","order_id":"95ae9e8c-3823-4a6f-ab34-43ad5d2be04b"},{"price":"8799.68","amount":"0.0195","order_id":"31895c71-9de3-4682-931a-74a832a49116"},{"price":"8799.58","amount":"0.0195","order_id":"2cfdb0be-5718-449e-a628-04cc0ee03c78"},{"price":"8798.58","amount":"0.0195","order_id":"07ed4260-f7bf-4adc-8c5c-e3df1d2821d7"},{"price":"8795.8","amount":"0.0195","order_id":"8237f1d9-6902-4750-b3b8-c2b801d793b0"},{"price":"8794.9","amount":"0.0195","order_id":"5ba497f4-748e-4fe4-9010-f0577798aa9e"},{"price":"8790.62","amount":"0.0195","order_id":"eab49f73-4901-4fc2-a410-8c70975ca6d0"},{"price":"8785.85","amount":"0.0195","order_id":"fc45b8e9-e2f3-4947-afb3-4e8866e505de"},{"price":"8781.67","amount":"0.0195","order_id":"46435f6b-8c17-45c9-87f1-db4e3ee190dc"},{"price":"8781.67","amount":"0.0195","order_id":"2ac64909-71ea-4d73-985f-c21e855d96dd"},{"price":"8780.27","amount":"0.0045","order_id":"e80774fc-7f45-4acd-9a92-2053e6e31522"},{"price":"8780.27","amount":"0.0195","order_id":"95186adc-3ec4-40b8-924d-a79a5b115af8"},{"price":"8778.98","amount":"0.0195","order_id":"6cdb2c6d-f625-4eb1-abb5-53311852fdc8"},{"price":"8777.29","amount":"0.0195","order_id":"ab654083-7987-43f3-a181-7136253df109"},{"price":"8774.0","amount":"0.0195","order_id":"938ebfe7-bdfc-484d-9fb2-bb34588b2ab3"},{"price":"8773.91","amount":"0.0195","order_id":"fb553407-5e1d-4f53-a33b-195ae4a6e836"},{"price":"8772.71","amount":"0.0115","order_id":"ca9b115f-33cc-459e-9ba3-a68ee3a7dda1"},{"price":"8770.42","amount":"0.0025","order_id":"7acedcbd-e083-4617-96df-d83ab70f61db"},{"price":"8769.93","amount":"0.0195","order_id":"01f86ed6-8dd4-42ea-ac4f-50df01356d86"},{"price":"8769.83","amount":"0.0195","order_id":"ec5554b4-5647-4112-a734-c1c09c4c22de"}],"asks":[{"price":"8918.84","amount":"0.0195","order_id":"ebae44d0-c971-4454-a047-8ff49d2cae7d"},{"price":"8918.84","amount":"0.0195","order_id":"3eaf96ba-b2b5-46e6-b37c-bd178648f553"},{"price":"8918.94","amount":"0.0195","order_id":"6edf35d0-eb1f-44fe-9bfe-5a5f34a6c729"},{"price":"8918.94","amount":"0.0195","order_id":"ab4dd59e-33b6-4df4-9cf9-b77e07673b59"},{"price":"8919.04","amount":"0.0195","order_id":"91f50e95-0a95-493b-8847-7e9e8ed7de6d"},{"price":"8921.35","amount":"0.0195","order_id":"dd5eb77a-774f-4ff6-bec6-eb257c1d593c"},{"price":"8921.95","amount":"0.0195","order_id":"16a99db4-e3f2-4c5e-a7a4-81c6650a2c31"},{"price":"8925.16","amount":"0.0195","order_id":"d602891d-4580-48b6-93e0-f1643cc808ad"},{"price":"8925.16","amount":"0.0195","order_id":"ae1c3333-acea-4eac-8b24-94a48cc30573"},{"price":"8926.07","amount":"0.0195","order_id":"8dafee5e-c578-4d28-bf03-bfa3f5ca8537"},{"price":"8926.07","amount":"0.0195","order_id":"136f393c-b439-46ea-bbaa-eb89cf5b5279"},{"price":"8929.18","amount":"0.0195","order_id":"858d2f55-feb2-46a7-8962-6d1d5913bcb5"},{"price":"8932.09","amount":"0.0195","order_id":"91aae086-10a1-4f1d-895b-2b1b3624ac59"},{"price":"8935.2","amount":"0.0195","order_id":"8e9d419b-e677-4b93-ae63-874aa3433079"},{"price":"8948.96","amount":"0.0195","order_id":"5f92b4ee-d837-4c4e-bbd9-c4f1e9ad3c77"},{"price":"8949.46","amount":"0.0195","order_id":"71944069-a487-4527-81ca-2188ede58933"},{"price":"8949.56","amount":"0.0195","order_id":"e5bf7cd7-4c93-4454-a732-3b91653706a9"},{"price":"8949.66","amount":"0.0195","order_id":"50562046-8261-4fb7-83ad-890419c71025"},{"price":"8951.87","amount":"0.0195","order_id":"3fe7c365-59fc-442f-83be-0460847a7311"},{"price":"8954.58","amount":"0.0185","order_id":"deb27a76-141f-4d15-badd-472dd4a0684f"},{"price":"8955.48","amount":"0.0195","order_id":"31630a36-79bb-484f-bbf9-d63c5948aae9"},{"price":"8956.39","amount":"0.0195","order_id":"8d471da5-03c1-4c6f-9a6e-505a33442ecd"},{"price":"8958.6","amount":"0.0195","order_id":"4f5e7c35-579b-451f-b9a6-adda8c4fb7e8"},{"price":"8961.91","amount":"0.0095","order_id":"daf6ce64-71a9-4cbb-86ae-f0e0dc284643"},{"price":"8962.61","amount":"0.0195","order_id":"ef8acaf8-c3fd-440e-b41c-c38d9bf4cde9"},{"price":"8969.54","amount":"0.0195","order_id":"349a6162-fc7d-4d5b-a470-fd452aaa32be"},{"price":"8969.64","amount":"0.0195","order_id":"2ad3a03b-e17a-4439-b5c9-fb8f1ac0d529"},{"price":"8970.74","amount":"0.0195","order_id":"5d26673d-d63f-4f9c-9493-bde3c0ac604e"},{"price":"8970.74","amount":"0.0195","order_id":"c68a8773-836c-49b7-97e7-0cccfd474840"},{"price":"8971.85","amount":"0.0195","order_id":"64852925-4e98-4929-87f0-2a8a239f6272"},{"price":"8981.89","amount":"0.0095","order_id":"a49ade7c-7593-42c4-a161-7382e12a23cb"},{"price":"8984.7","amount":"0.0195","order_id":"fa686d66-ccf4-44ad-8ac0-5eeaac0f3918"},{"price":"8985.8","amount":"0.0045","order_id":"16e9e8c3-1dc5-4aa7-9f7d-2f2b6f7a6b26"},{"price":"8992.53","amount":"0.0025","order_id":"72421197-36d4-4bb6-b8d5-7d069a14dca3"},{"price":"8993.13","amount":"0.0195","order_id":"2be20db8-074a-4928-9b25-11c806b832ad"},{"price":"8993.23","amount":"0.0195","order_id":"caa95ea7-dcd3-4850-ba47-bc44ca19c8b0"},{"price":"8993.84","amount":"0.0025","order_id":"5eb5af78-a741-48da-9b87-4ce5b4a9eab1"},{"price":"8996.85","amount":"0.0095","order_id":"87727564-15fd-4272-a992-adf05bee72d8"},{"price":"9010.9","amount":"0.0045","order_id":"c848d4ac-a6fd-4762-8168-4d8241c0a59c"},{"price":"9012.21","amount":"0.0095","order_id":"115f3c5a-bbdf-4d0d-bfe6-fad9cfb65c55"},{"price":"9013.92","amount":"0.0025","order_id":"22f57eeb-9ef9-42f2-9cb7-3349598dea7e"},{"price":"9019.54","amount":"0.0195","order_id":"5f1f6b4f-6ab2-4011-ae1e-ae62c615fd8c"},{"price":"9019.74","amount":"0.0195","order_id":"afc65783-4319-4010-aa50-0b9edd1e7aef"},{"price":"9024.96","amount":"0.0095","order_id":"ad4e1fe8-560b-403c-910f-9ed3fb944582"},{"price":"9029.58","amount":"0.0195","order_id":"26f47d79-4c7b-439c-9c23-b5aecdc83309"},{"price":"9029.68","amount":"0.0195","order_id":"6803faab-dafb-4db0-9c5d-8c076bda9dc1"},{"price":"9031.99","amount":"0.0025","order_id":"5a6b1647-1d8f-4731-a25f-3d85fd252287"},{"price":"9032.79","amount":"0.0115","order_id":"2cddb60c-b952-48a1-864b-59d3756969b6"},{"price":"9034.0","amount":"0.0025","order_id":"19ff0c68-d723-40f9-b0af-75740d3092fa"},{"price":"9036.0","amount":"0.0195","order_id":"5d145124-6941-46dc-b0ef-a306c1de722e"},{"price":"9040.62","amount":"0.0045","order_id":"2d4ac6a5-5824-4bae-b4b9-ae00f366aa67"},{"price":"9043.43","amount":"0.0095","order_id":"3c091cef-d01d-4c69-ad02-53ef3a2d47a8"},{"price":"9050.96","amount":"0.0045","order_id":"a92ce672-52f1-43c0-91e4-1d40d4bfba8b"},{"price":"9054.08","amount":"0.0025","order_id":"06be341a-af42-40b5-806d-e91f8eb345c2"},{"price":"9056.39","amount":"0.0195","order_id":"5c2c9748-242c-47b5-a244-c25a683f5ae3"},{"price":"20000.0","amount":"0.81484","order_id":"ada3b5c3-1745-496f-aaa4-8c36fc93abbe"}]}'
+    http_version: 
+  recorded_at: Thu, 22 Aug 2019 03:59:47 GMT
+recorded_with: VCR 4.0.0
