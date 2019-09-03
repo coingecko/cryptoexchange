@@ -66,7 +66,7 @@ Or install it yourself as:
 | Bitalong          | Y       | Y [x]      | Y       |         | Y           | Y        | bitalong          |       |
 | Bitasset          | Y       | Y [x]      | Y       |         | Y           | Y        | bitasset          |       |
 | Bitbank           | Y       | Y [x]      | Y       |         | User-Defined| Y        | bitbank           |       |
-| Bitbay            | Y       |            |         |         | User-Defined|          | bitbay            |       |
+| Bitbay            | Y       | Y [x]      |         |         | User-Defined|          | bitbay            |       |
 | Bitbegin          | Y       | N          | N       |         | Y           | Y        | bitbegin          |       |
 | BitBNS            | Y       |            |         |         | Y           |          | bitbns            |       |
 | Bitbox (Auth)     | Y       |            |         |         | User-Defined| Y        | bitbox            |       |
@@ -196,7 +196,7 @@ Or install it yourself as:
 | Coinroom          | Y       |            |         |         | Y           |          | coinroom          |       |
 | CoinsMarkets      | Y       |            |         |         | Y           |          | coin_markets      |       |
 | Coinsbank         | Y       |            |         |         | Y           |          | coinsbank         |       |
-| Coinsbit          | Y       |            |         |         | Y           |          | coinsbit          |       |
+| Coinsbit          | Y       | Y [x]      |         |         | Y           |          | coinsbit          |       |
 | Coinstock         | Y       | Y          | Y       |         | Y           |          | coinstock         |       |
 | Coinsuper         | Y       | N [Not Found] |         |         | Y           | Y        | coinsuper         |       |
 | Cointiger         | Y       | Y [x]      | Y       |         | Y           |          | cointiger         |       |
@@ -327,7 +327,7 @@ Or install it yourself as:
 | Letsdocoinz       | Y       |            |         |         | Y           |          | letsdocoinz       |       |
 | Liqui             | Y       |            |         |         | Y           |          | liqui             |       |
 | LiteBit.eu        | Y       |            |         |         | Y           |          | litebiteu         |       |
-| Livecoin          | Y       |            |         |         | Y           |          | livecoin          |       |
+| Livecoin          | Y       | Y [x]      |         |         | Y           |          | livecoin          |       |
 | LocalBitcoins     | Y       | N          | Y [limit: 500]|   | Y           |          | localbitcoins     |  P2P  |
 | LocalTrade        | Y       |            |         |         | Y           | Y        | localtrade        |       |
 | Luno              | Y       |            |         |         | Y           | Y        | luno              |       |
