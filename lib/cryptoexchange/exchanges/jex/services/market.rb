@@ -38,8 +38,13 @@ module Cryptoexchange::Exchanges
         def derivative(pair)
           etf = /(ETF)/ =~ pair
           option = /(PUT|CALL)/ =~ pair
+          unknown = /(周)/ =~ pair
           if etf && !pair.include?("/")
+            true
+          elsif unknown && !pair.include?("/")
             true  
+          elsif option && pair.count("/") > 1
+            true
           elsif option
             true
           else

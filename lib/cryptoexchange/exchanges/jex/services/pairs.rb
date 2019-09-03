@@ -14,7 +14,6 @@ module Cryptoexchange::Exchanges
           output.map do |pair, ticker|
             if !derivative(pair)
               base, target = pair.split('/')
-              puts base, target
               market_pairs << Cryptoexchange::Models::MarketPair.new(
                 base: base.upcase,
                 target: target.upcase,
