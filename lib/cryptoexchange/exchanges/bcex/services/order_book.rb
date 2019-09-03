@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
         def ticker_url(market_pair)
           base   = market_pair.base
           target = market_pair.target
-          "#{Cryptoexchange::Exchanges::Bcex::Market::API_URL}/rt/getDepth?token=#{base}&market=#{target}"
+          "#{Cryptoexchange::Exchanges::Bcex::Market::API_URL}/api_market/market/depth?market=#{target}&token=#{base}"
         end
 
         def adapt(output, market_pair)
@@ -36,8 +36,8 @@ module Cryptoexchange::Exchanges
         def adapt_orders(orders)
           orders.collect do |order_entry|
             price, amount = order_entry[0], order_entry[1]
-            Cryptoexchange::Models::Order.new(price:  price,
-                                              amount: amount)
+            Cryptoexchange::Models::Order.new(price:  price.to_f,
+                                              amount: amount.to_f)
           end
         end
       end
