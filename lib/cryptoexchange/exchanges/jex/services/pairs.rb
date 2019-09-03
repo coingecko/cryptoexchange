@@ -1,3 +1,5 @@
+require "byebug"
+
 module Cryptoexchange::Exchanges
   module Jex
     module Services
@@ -14,6 +16,7 @@ module Cryptoexchange::Exchanges
           output.map do |pair, ticker|
             if !derivative(pair)
               base, target = pair.split('/')
+              puts base, target
               market_pairs << Cryptoexchange::Models::MarketPair.new(
                 base: base.upcase,
                 target: target.upcase,
@@ -27,7 +30,10 @@ module Cryptoexchange::Exchanges
         def derivative(pair)
           etf = /(ETF)/ =~ pair
           option = /(PUT|CALL)/ =~ pair
+          unknown = /(周)/ =~ pair
           if etf && !pair.include?("/")
+            true
+          elsif unknown && !pair.include?("/")
             true  
           elsif option && pair.count("/") > 1
             true
