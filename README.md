@@ -455,7 +455,7 @@ Or install it yourself as:
 | Worldcore         | Y       | Y          | Y       |         | Y           | Y        | worldcore         |       |
 | Xfutures          | Y       | Y [x]      | Y       |         | Y           | Y        | xfutures          |       |
 | Xt                | Y       | Y [x]      | Y       |         | Y           | Y        | xt                |       |
-| Yobit             | Y       |            |         |         | Y           | Y        | yobit             |       |
+| Yobit             | Y       | Y [x]      |         |         | Y           | Y        | yobit             |       |
 | Yuanbao           | Y       |            |         |         | User-Defined|          | yuanbao           |       |
 | Yunbi             | Y       |            |         |         | Y           |          | yunbi             |       |
 | Zaif              | Y       | Y [x]      | Y       |         | Y           | Y        | zaif              |       |
