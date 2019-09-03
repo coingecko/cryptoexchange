@@ -299,7 +299,7 @@ Or install it yourself as:
 | Idex              | Y       | Unstable   | Y       |         | Y           | Y        | idex              |       |
 | Incorex           | Y       | Y          | Y       |         | Y           | Y        | incorex           |       |
 | Indodax           | Y       | Y [x]      | Y       |         | User-Defined| N        | indodax           |       |
-| IndependentReserve| Y       | N          | N       |         | Y           | Y        |independent_reserve|       |
+| IndependentReserve| Y       | Y [x]      | N       |         | Y           | Y        |independent_reserve|       |
 | InfinityCoin      | Y       |            |         |         | Y           | Y        | infinity_coin     |       |
 | InstantBitex      | Y       | Y [x]      | Y       |         | Y           |          | instantbitex      |       |
 | Iqfinex           | Y       | Y          | Y       |         | Y           | Y        | iqfinex           |       |
