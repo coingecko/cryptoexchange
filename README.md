@@ -360,6 +360,7 @@ Or install it yourself as:
 | OEX               | Y       | Y [x]      |         |         | Y           |          | oex               |       |
 | OKCoin            | Y       | Y [x]      |         |         | Y           |          | okcoin            |       |
 | OKEx              | Y       | Y [x]      | Y [limit: 60]      |         | Y           | Y        | okex              |       |
+| OKEx Korea        | Y       | Y [x]      |         |         | Y           | Y        | okex_korea        |       |
 | OKEx Perpetual Swaps | Y (no volume) | Y (can't map) |         |         | Y           | Y        | okex_swap         |futures|
 | Omgfin            | Y       | Y [x]      |         |         | Y           | Y        | omgfin            |       |
 | OmniTrade         | Y       | Y          | Y       | Y       | Y           |          | omnitrade         |       |
