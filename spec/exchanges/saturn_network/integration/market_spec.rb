@@ -27,4 +27,38 @@ RSpec.describe 'SaturnNetwork integration specs' do
     expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
   end
+
+  it 'fetch order book' do
+    order_book = client.order_book(eth_saturn_pair)
+
+    expect(order_book.base).to eq 'SATURN'
+    expect(order_book.target).to eq 'ETH'
+    expect(order_book.market).to eq 'saturn_network'
+    expect(order_book.asks).to_not be_empty
+    expect(order_book.bids).to_not be_empty
+    expect(order_book.asks.first.price).to_not be_nil
+    expect(order_book.bids.first.amount).to_not be_nil
+    expect(order_book.bids.first.timestamp).to be_a Numeric
+    expect(order_book.asks.count).to be > 2
+    expect(order_book.bids.count).to be > 2
+    expect(order_book.timestamp).to be nil
+    expect(order_book.payload).to_not be nil
+  end
+
+  it 'fetch trade' do
+    trades = client.trades(eth_saturn_pair)
+    trade = trades.sample
+
+    expect(trades).to_not be_empty
+    expect(trade.trade_id).to_not be_nil
+    expect(trade.base).to eq 'SATURN'
+    expect(trade.target).to eq 'ETH'
+    expect(trade.market).to eq 'saturn_network'
+    expect(trade.trade_id).to_not be_nil
+    expect(['buy', 'sell']).to include trade.type
+    expect(trade.price).to_not be_nil
+    expect(trade.amount).to_not be_nil
+    expect(trade.timestamp).to be_a Numeric
+    expect(trade.payload).to_not be nil
+  end
 end
