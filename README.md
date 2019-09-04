@@ -140,6 +140,7 @@ Or install it yourself as:
 | Bybit(future)     | Y       | Y [x]      |         |         | Y           |          | bybit             |       |
 | BW                | Y       |            |         |         | Y           | Y        | bw                |       |
 | Bytex             | Y       | N          | N       |         | Y           | N        | bytex             |       |
+| Cashierest        | Y       | Y [x]      | N       |         | Y           | Y        | cashierest        |       |
 | Catex             | Y       | Y [x]      | N       |         | Y           |          | catex            |       |
 | C2CX              | Y       | Y [x]      | N       |         | Y           |          | c2cx              |       |
 | CPatex            | Y       | Y [x]      | Y       |         | Y           |          | c_patex           |       |
