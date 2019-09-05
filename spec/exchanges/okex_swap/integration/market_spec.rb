@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe 'OkexSwap integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', contract_interval: "perpetual") }
-  let(:xbt_usd_pair_weekly) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', contract_interval: "weekly") }
+  let(:xbt_usd_pair_weekly) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', inst_id: "BTC-USD-190906", contract_interval: "weekly") }
 
   it 'fetch pairs' do
     pairs = client.pairs('okex_swap')
@@ -65,6 +65,19 @@ RSpec.describe 'OkexSwap integration specs' do
     expect(order_book.bids.count).to be > 10
     expect(order_book.timestamp).to be nil
     expect(order_book.payload).to_not be nil
+  end
+
+  it 'fetch contract stat' do
+    #note: contract_stat only available for futures pair
+    contract_stat = client.contract_stat(xbt_usd_pair_weekly)
+
+    expect(contract_stat.base).to eq 'BTC'
+    expect(contract_stat.target).to eq 'USD'
+    expect(contract_stat.market).to eq 'okex_swap'
+    expect(contract_stat.index).to be_a Numeric
+    expect(contract_stat.open_interest).to be_a Numeric
+    expect(contract_stat.timestamp).to be nil
+    expect(contract_stat.payload).to_not be nil
   end
 
   # it 'fetch trade' do
