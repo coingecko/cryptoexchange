@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.btse.com/futures/api/v1/market_summary
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.btse.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 05 Sep 2019 08:16:37 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '653'
+      Connection:
+      - close
+      Set-Cookie:
+      - incap_ses_1234_1816178=zntBUEeDqxzRLVrLxwwgEWTEcF0AAAAAd6WWQ+6pJcLE12HAZN1dZA==;
+        path=/; Domain=.btse.com
+      - nlbi_1816178=iVHMQ2KfDSAHnmgLCV6+vwAAAADQDdZiSnBnMEZGouetrC/O; path=/; Domain=.btse.com
+      - visid_incap_1816178=SaXF33BnQQOsIbN6ITAvGmTEcF0AAAAAQUIPAAAAAADAoguzxOh+JVZbimuzNxfJ;
+        expires=Fri, 04 Sep 2020 07:37:55 GMT; path=/; Domain=.btse.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Iinfo:
+      - 7-16453826-16453831 NNNN CT(51 52 0) RT(1567671396428 32) q(0 0 1 -1) r(2
+        2) U5
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"volume":124871.0,"symbol":"ETHPFC","high24Hr":175.75,"last":174.8,"highestBid":175.75,"percentageChange":1.1095305832147873,"lowestAsk":173.8,"low24Hr":173.8},{"volume":421940.0,"symbol":"LTCPFC","high24Hr":67.6,"last":67.1,"highestBid":67.6,"percentageChange":1.7011834319526502,"lowestAsk":66.45,"low24Hr":66.45},{"volume":108161.0,"symbol":"USDTPFC","high24Hr":1.0019,"last":1.0011,"highestBid":1.0019,"percentageChange":0.12975346841002883,"lowestAsk":1.0006,"low24Hr":1.0006},{"volume":604929.0,"symbol":"BTCPFC","high24Hr":10656.5,"last":10559.5,"highestBid":10656.5,"percentageChange":1.4122835827898466,"lowestAsk":10506.0,"low24Hr":10506.0}]'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 08:16:37 GMT
+recorded_with: VCR 4.0.0
