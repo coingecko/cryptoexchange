@@ -4,6 +4,8 @@ RSpec.describe 'Cashierest integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:btc_krw_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'KRW', market: 'cashierest') }
 
+  ENV["ENV"] = "test"
+
   it 'fetch pairs' do
     pairs = client.pairs('cashierest')
     expect(pairs).not_to be_empty

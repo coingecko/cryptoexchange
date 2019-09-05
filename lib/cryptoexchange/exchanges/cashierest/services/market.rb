@@ -9,8 +9,13 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch
-          #remove BOM from json 
-          output = JSON.parse(HTTP.get(ticker_url).to_s.gsub!("\xEF\xBB\xBF".force_encoding("UTF-8"), ''))
+          #because vcr doesn't use BOM
+          if ENV["ENV"] = "test"
+            output = super(ticker_url)
+          else
+            #remove BOM from json 
+            output = JSON.parse(HTTP.get(ticker_url).to_s.gsub!("\xEF\xBB\xBF".force_encoding("UTF-8"), ''))
+          end
           adapt_all(output)
         end
 
