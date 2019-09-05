@@ -43,13 +43,11 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
-              inst_id: inst_id,
               market: OkexSwap::Market::NAME,
               contract_interval: interval
             )
           end
         end
-
       end
     end
   end

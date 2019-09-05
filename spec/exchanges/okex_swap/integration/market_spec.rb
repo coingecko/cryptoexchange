@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe 'OkexSwap integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', contract_interval: "perpetual") }
-  let(:xbt_usd_pair_weekly) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', inst_id: "BTC-USD-190906", contract_interval: "weekly") }
+  let(:xbt_usd_pair_weekly) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', contract_interval: "weekly") }
 
   it 'fetch pairs' do
     pairs = client.pairs('okex_swap')
