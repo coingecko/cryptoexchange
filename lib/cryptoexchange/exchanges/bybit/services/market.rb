@@ -27,7 +27,7 @@ module Cryptoexchange::Exchanges
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
-              market: Btcnext::Market::NAME
+              market: Bybit::Market::NAME
             )
 
             adapt(market_pair, pair)
