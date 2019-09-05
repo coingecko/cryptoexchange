@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.btse.com/spot/v2/orderbook/BTC-USD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.btse.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 05 Sep 2019 06:28:17 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - XSRF-TOKEN=2c31a8ab-1ed8-41ab-b4b2-e5422ebe7fe5; Path=/
+      - incap_ses_1234_1816178=UXA6KEDLTW5kvEDLxwwgEQCrcF0AAAAA9Gon9AxgH3IPbhQrrbs1EA==;
+        path=/; Domain=.btse.com
+      - nlbi_1816178=EZfzOy8qp18h3RlxCV6+vwAAAACCO9Mmj290Ho8sQPOj799j; path=/; Domain=.btse.com
+      - visid_incap_1816178=iV8Shd/JRc+0Ecd6Rt2BZwCrcF0AAAAAQUIPAAAAAAATEyifZrHOP7WFsGzOXGw+;
+        expires=Thu, 03 Sep 2020 07:37:54 GMT; path=/; Domain=.btse.com
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Iinfo:
+      - 11-98820607-98820614 NNNN CT(50 52 0) RT(1567664896627 35) q(0 0 1 -1) r(2
+        2) U5
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: UTF-8
+      string: '{"buyQuote":[{"price":"10583.0","size":"0.138"},{"price":"10580.5","size":"2.749"},{"price":"10579.0","size":"0.478"},{"price":"10577.5","size":"0.530"},{"price":"10576.5","size":"0.081"},{"price":"10573.5","size":"2.003"},{"price":"10572.0","size":"0.790"},{"price":"10571.0","size":"0.871"},{"price":"10570.5","size":"2.157"},{"price":"10570.0","size":"1.125"},{"price":"10569.5","size":"3.620"},{"price":"10569.0","size":"1.350"},{"price":"10568.5","size":"4.032"},{"price":"10566.5","size":"1.674"},{"price":"10564.5","size":"0.176"},{"price":"10557.0","size":"1.874"},{"price":"10533.5","size":"1.569"},{"price":"10532.5","size":"0.208"},{"price":"10515.0","size":"1.055"},{"price":"10509.0","size":"0.516"},{"price":"10485.5","size":"0.475"},{"price":"10485.0","size":"0.816"},{"price":"10472.5","size":"0.619"},{"price":"10460.0","size":"0.228"},{"price":"10458.5","size":"0.385"},{"price":"10452.5","size":"0.728"},{"price":"10450.5","size":"0.748"},{"price":"10433.0","size":"0.433"},{"price":"10431.5","size":"0.516"},{"price":"10428.5","size":"0.446"},{"price":"10410.5","size":"1.078"},{"price":"10394.5","size":"0.761"},{"price":"10389.0","size":"1.285"},{"price":"10377.5","size":"0.781"},{"price":"10372.5","size":"1.102"},{"price":"10371.5","size":"1.347"},{"price":"10361.0","size":"1.514"},{"price":"10357.5","size":"0.329"},{"price":"10355.5","size":"1.379"},{"price":"10353.0","size":"0.094"},{"price":"10344.5","size":"1.108"},{"price":"10344.0","size":"0.194"},{"price":"10343.0","size":"1.766"},{"price":"10339.0","size":"0.644"},{"price":"10329.0","size":"0.212"},{"price":"10328.5","size":"0.431"},{"price":"10324.5","size":"1.660"},{"price":"10303.5","size":"0.378"},{"price":"10301.0","size":"1.474"},{"price":"10289.5","size":"0.105"},{"price":"10281.0","size":"0.075"},{"price":"10277.5","size":"0.591"},{"price":"10276.0","size":"0.055"},{"price":"10257.5","size":"0.840"},{"price":"10255.5","size":"0.872"},{"price":"10234.5","size":"0.281"},{"price":"10231.5","size":"0.617"},{"price":"10196.5","size":"1.246"},{"price":"10182.0","size":"0.877"},{"price":"10175.0","size":"1.136"},{"price":"10143.5","size":"0.661"},{"price":"10099.0","size":"0.620"},{"price":"10056.5","size":"0.886"},{"price":"10030.5","size":"1.066"},{"price":"10017.0","size":"1.352"},{"price":"9978.5","size":"1.708"},{"price":"9966.0","size":"2.045"},{"price":"9958.5","size":"1.461"},{"price":"9947.5","size":"1.806"},{"price":"9917.0","size":"1.493"},{"price":"9914.5","size":"1.450"},{"price":"9861.0","size":"1.263"},{"price":"9841.5","size":"1.515"},{"price":"9839.0","size":"1.602"},{"price":"9791.0","size":"1.949"},{"price":"9769.5","size":"1.750"},{"price":"9759.0","size":"1.729"},{"price":"9755.5","size":"1.831"},{"price":"9741.0","size":"1.731"}],"sellQuote":[{"price":"13857.0","size":"0.638"},{"price":"13601.5","size":"2.287"},{"price":"11958.5","size":"0.183"},{"price":"11651.0","size":"0.187"},{"price":"11456.5","size":"1.964"},{"price":"11438.0","size":"1.980"},{"price":"11386.5","size":"1.937"},{"price":"11357.0","size":"1.761"},{"price":"11355.0","size":"1.824"},{"price":"11328.5","size":"1.718"},{"price":"11317.5","size":"0.191"},{"price":"11301.5","size":"1.622"},{"price":"11277.0","size":"1.668"},{"price":"11239.5","size":"1.633"},{"price":"11225.0","size":"1.842"},{"price":"11207.5","size":"1.264"},{"price":"11197.5","size":"1.340"},{"price":"11195.0","size":"1.941"},{"price":"11188.0","size":"1.182"},{"price":"11167.0","size":"1.727"},{"price":"11158.0","size":"1.743"},{"price":"11154.5","size":"1.248"},{"price":"11146.5","size":"1.270"},{"price":"11138.0","size":"1.651"},{"price":"11077.5","size":"0.616"},{"price":"11074.5","size":"1.041"},{"price":"11061.5","size":"1.449"},{"price":"11036.0","size":"0.827"},{"price":"11008.5","size":"0.195"},{"price":"10989.5","size":"0.865"},{"price":"10953.0","size":"0.968"},{"price":"10947.5","size":"1.019"},{"price":"10925.5","size":"0.990"},{"price":"10911.0","size":"0.646"},{"price":"10872.0","size":"0.232"},{"price":"10848.0","size":"0.035"},{"price":"10839.5","size":"0.584"},{"price":"10825.5","size":"1.156"},{"price":"10825.0","size":"1.413"},{"price":"10824.0","size":"1.225"},{"price":"10820.0","size":"1.542"},{"price":"10817.5","size":"0.293"},{"price":"10813.0","size":"0.564"},{"price":"10797.5","size":"1.087"},{"price":"10787.5","size":"0.926"},{"price":"10787.0","size":"1.450"},{"price":"10780.0","size":"1.087"},{"price":"10746.0","size":"1.075"},{"price":"10736.5","size":"1.189"},{"price":"10726.0","size":"0.760"},{"price":"10712.0","size":"0.879"},{"price":"10705.0","size":"0.393"},{"price":"10698.0","size":"0.761"},{"price":"10696.0","size":"0.627"},{"price":"10695.5","size":"0.544"},{"price":"10689.5","size":"0.310"},{"price":"10686.5","size":"0.324"},{"price":"10686.0","size":"0.177"},{"price":"10680.0","size":"0.340"},{"price":"10650.5","size":"0.102"},{"price":"10644.0","size":"0.215"},{"price":"10643.0","size":"1.956"},{"price":"10639.0","size":"0.205"},{"price":"10622.0","size":"0.120"},{"price":"10613.5","size":"1.732"},{"price":"10611.5","size":"1.320"},{"price":"10611.0","size":"0.150"},{"price":"10605.0","size":"1.546"},{"price":"10604.0","size":"1.014"},{"price":"10601.0","size":"2.005"},{"price":"10597.0","size":"1.378"},{"price":"10596.5","size":"2.072"},{"price":"10596.0","size":"1.760"},{"price":"10595.5","size":"2.311"},{"price":"10595.0","size":"1.501"},{"price":"10594.5","size":"0.775"},{"price":"10594.0","size":"1.383"},{"price":"10591.5","size":"0.305"},{"price":"10590.0","size":"0.697"},{"price":"10588.5","size":"0.168"},{"price":"10585.5","size":"0.647"},{"price":"10583.5","size":"0.097"}],"timestamp":1567664897159,"symbol":"BTC-USD"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 06:28:17 GMT
+recorded_with: VCR 4.0.0
