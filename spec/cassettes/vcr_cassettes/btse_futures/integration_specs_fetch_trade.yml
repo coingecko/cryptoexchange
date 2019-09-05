@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.btse.com/futures/api/v1/trades/BTCPFC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.btse.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 05 Sep 2019 08:16:37 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '5407'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - incap_ses_1234_1816178=G2eHXBXswy5VLlrLxwwgEWXEcF0AAAAA5+bbALwcf4qanlrlffPOfg==;
+        path=/; Domain=.btse.com
+      - nlbi_1816178=4WyaBI5lEDtrY9nqCV6+vwAAAADKfg/tXAc89p7v2RL8LKYf; path=/; Domain=.btse.com
+      - visid_incap_1816178=xzJSyT+pQciYmwbpUSxpwmXEcF0AAAAAQUIPAAAAAAD3r4R2+CIvx2WRTYuAe924;
+        expires=Fri, 04 Sep 2020 07:37:55 GMT; path=/; Domain=.btse.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Iinfo:
+      - 11-99809940-99809946 NNNN CT(52 53 0) RT(1567671396908 31) q(0 0 1 -1) r(1
+        1) U5
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"symbol":"BTCPFC-USD","side":"BUY","size":75.0,"price":10559.5,"tradeId":89399002,"timestamp":1567671392100},{"symbol":"BTCPFC-USD","side":"SELL","size":7.0,"price":10556.0,"tradeId":89398995,"timestamp":1567671383468},{"symbol":"BTCPFC-USD","side":"BUY","size":15.0,"price":10556.5,"tradeId":89398990,"timestamp":1567671380904},{"symbol":"BTCPFC-USD","side":"SELL","size":592.0,"price":10556.0,"tradeId":89398986,"timestamp":1567671380051},{"symbol":"BTCPFC-USD","side":"SELL","size":1255.0,"price":10555.0,"tradeId":89398981,"timestamp":1567671378254},{"symbol":"BTCPFC-USD","side":"BUY","size":1.0,"price":10555.0,"tradeId":89398978,"timestamp":1567671375492},{"symbol":"BTCPFC-USD","side":"SELL","size":20.0,"price":10555.0,"tradeId":89398976,"timestamp":1567671375018},{"symbol":"BTCPFC-USD","side":"BUY","size":21.0,"price":10555.5,"tradeId":89398974,"timestamp":1567671373829},{"symbol":"BTCPFC-USD","side":"SELL","size":97.0,"price":10555.0,"tradeId":89398972,"timestamp":1567671372907},{"symbol":"BTCPFC-USD","side":"SELL","size":5.0,"price":10549.0,"tradeId":89398968,"timestamp":1567671370976},{"symbol":"BTCPFC-USD","side":"BUY","size":4.0,"price":10550.0,"tradeId":89398964,"timestamp":1567671370069},{"symbol":"BTCPFC-USD","side":"BUY","size":155.0,"price":10551.0,"tradeId":89398960,"timestamp":1567671368758},{"symbol":"BTCPFC-USD","side":"BUY","size":5.0,"price":10551.0,"tradeId":89398956,"timestamp":1567671367739},{"symbol":"BTCPFC-USD","side":"SELL","size":22.0,"price":10550.5,"tradeId":89398954,"timestamp":1567671366365},{"symbol":"BTCPFC-USD","side":"SELL","size":1.0,"price":10550.5,"tradeId":89398950,"timestamp":1567671365878},{"symbol":"BTCPFC-USD","side":"SELL","size":2.0,"price":10550.5,"tradeId":89398948,"timestamp":1567671365379},{"symbol":"BTCPFC-USD","side":"SELL","size":11.0,"price":10550.5,"tradeId":89398946,"timestamp":1567671365009},{"symbol":"BTCPFC-USD","side":"BUY","size":3.0,"price":10551.5,"tradeId":89398944,"timestamp":1567671364223},{"symbol":"BTCPFC-USD","side":"BUY","size":1.0,"price":10550.0,"tradeId":89398940,"timestamp":1567671362312},{"symbol":"BTCPFC-USD","side":"BUY","size":19.0,"price":10550.0,"tradeId":89398938,"timestamp":1567671360622},{"symbol":"BTCPFC-USD","side":"SELL","size":101.0,"price":10549.0,"tradeId":89398936,"timestamp":1567671359722},{"symbol":"BTCPFC-USD","side":"SELL","size":3.0,"price":10549.0,"tradeId":89398934,"timestamp":1567671359622},{"symbol":"BTCPFC-USD","side":"SELL","size":15.0,"price":10545.5,"tradeId":89398932,"timestamp":1567671358327},{"symbol":"BTCPFC-USD","side":"SELL","size":15.0,"price":10545.5,"tradeId":89398930,"timestamp":1567671356346},{"symbol":"BTCPFC-USD","side":"BUY","size":5.0,"price":10546.0,"tradeId":89398928,"timestamp":1567671355447},{"symbol":"BTCPFC-USD","side":"BUY","size":12.0,"price":10545.5,"tradeId":89398926,"timestamp":1567671354641},{"symbol":"BTCPFC-USD","side":"BUY","size":12.0,"price":10545.5,"tradeId":89398922,"timestamp":1567671352743},{"symbol":"BTCPFC-USD","side":"SELL","size":5.0,"price":10544.5,"tradeId":89398920,"timestamp":1567671352011},{"symbol":"BTCPFC-USD","side":"BUY","size":10.0,"price":10545.5,"tradeId":89398918,"timestamp":1567671350676},{"symbol":"BTCPFC-USD","side":"BUY","size":21.0,"price":10545.5,"tradeId":89398916,"timestamp":1567671350090},{"symbol":"BTCPFC-USD","side":"SELL","size":21.0,"price":10544.5,"tradeId":89398912,"timestamp":1567671349565},{"symbol":"BTCPFC-USD","side":"BUY","size":9.0,"price":10545.5,"tradeId":89398910,"timestamp":1567671347832},{"symbol":"BTCPFC-USD","side":"BUY","size":1.0,"price":10545.5,"tradeId":89398906,"timestamp":1567671345883},{"symbol":"BTCPFC-USD","side":"SELL","size":1.0,"price":10540.0,"tradeId":89398894,"timestamp":1567671329435},{"symbol":"BTCPFC-USD","side":"SELL","size":14.0,"price":10540.0,"tradeId":89398892,"timestamp":1567671329044},{"symbol":"BTCPFC-USD","side":"SELL","size":98.0,"price":10539.0,"tradeId":89398889,"timestamp":1567671328045},{"symbol":"BTCPFC-USD","side":"BUY","size":20.0,"price":10541.0,"tradeId":89398888,"timestamp":1567671327599},{"symbol":"BTCPFC-USD","side":"SELL","size":2.0,"price":10539.0,"tradeId":89398886,"timestamp":1567671326001},{"symbol":"BTCPFC-USD","side":"BUY","size":8.0,"price":10540.5,"tradeId":89398884,"timestamp":1567671325579},{"symbol":"BTCPFC-USD","side":"BUY","size":5.0,"price":10539.5,"tradeId":89398882,"timestamp":1567671324378},{"symbol":"BTCPFC-USD","side":"SELL","size":101.0,"price":10537.5,"tradeId":89398876,"timestamp":1567671318151},{"symbol":"BTCPFC-USD","side":"SELL","size":512.0,"price":10532.0,"tradeId":89398872,"timestamp":1567671315730},{"symbol":"BTCPFC-USD","side":"BUY","size":10.0,"price":10530.0,"tradeId":89398870,"timestamp":1567671315276},{"symbol":"BTCPFC-USD","side":"SELL","size":35.0,"price":10531.5,"tradeId":89398860,"timestamp":1567671309847},{"symbol":"BTCPFC-USD","side":"SELL","size":242.0,"price":10530.5,"tradeId":89398862,"timestamp":1567671309847},{"symbol":"BTCPFC-USD","side":"SELL","size":5.0,"price":10529.5,"tradeId":89398858,"timestamp":1567671308251},{"symbol":"BTCPFC-USD","side":"SELL","size":67.0,"price":10529.5,"tradeId":89398856,"timestamp":1567671307543},{"symbol":"BTCPFC-USD","side":"BUY","size":20.0,"price":10530.5,"tradeId":89398854,"timestamp":1567671306533},{"symbol":"BTCPFC-USD","side":"SELL","size":20.0,"price":10529.5,"tradeId":89398850,"timestamp":1567671305550}]'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 08:16:37 GMT
+recorded_with: VCR 4.0.0

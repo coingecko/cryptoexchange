@@ -135,6 +135,7 @@ Or install it yourself as:
 | BTCTurk           | Y       | Y [x]      |         |         | Y           |          | btcturk           |       |
 | BTER              | Y       |            |         |         | Y           |          | bter              |       |
 | BTSE              | Y       | Y [x]      | Y       |         | Y           | Y        | btse              |       |
+| BTSE (Futures)    | Y       | Y [x]      | Y       |         | Y           | Y        | btse_futures      |       |
 | BTCNEXT           | Y       |            |         |         | Y           | N        | btcnext           |       |
 | Buyucoin          | Y       | N          | N       |         | Y           |          | buyucoin          |       |
 | BX Thailand       | Y       | Y [x]      |         |         | Y           |          | bx_thailand       |       |
