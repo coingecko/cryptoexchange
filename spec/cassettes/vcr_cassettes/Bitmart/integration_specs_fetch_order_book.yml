@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://openapi.bitmart.com/market/depth?precision=6&symbol=45
+    uri: https://openapi.bitmart.com/market/depth?precision=1&symbol=53
     body:
       encoding: UTF-8
       string: ''
@@ -12,37 +12,38 @@ http_interactions:
       Host:
       - openapi.bitmart.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS, DELETE
-      Access-Control-Max-Age:
-      - '3600'
-      Access-Control-Allow-Headers:
-      - x-requested-with
-      Access-Control-Allow-Credentials:
-      - 'true'
+      Date:
+      - Fri, 06 Sep 2019 10:38:30 GMT
       Content-Type:
       - text/plain;charset=UTF-8
       Content-Length:
-      - '1422'
-      Date:
-      - Thu, 30 Aug 2018 05:04:44 GMT
+      - '3973'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d707f291e3ea099192a86dc941255d6c81567766310; expires=Sat, 05-Sep-20
+        10:38:30 GMT; path=/; domain=.bitmart.com; HttpOnly; Secure
       Via:
       - 1.1 google
       Alt-Svc:
       - clear
-      Connection:
-      - close
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511fd0512e9dc10e-KUL
     body:
       encoding: UTF-8
-      string: '{"buys":[{"amount":"28","total":"28.00","price":"0.000028","count":"1"},{"amount":"79","total":"107.00","price":"0.000027","count":"4"},{"amount":"156","total":"263.00","price":"0.000026","count":"7"},{"amount":"18","total":"281.00","price":"0.000024","count":"2"},{"amount":"12","total":"293.00","price":"0.000023","count":"1"},{"amount":"14","total":"307.00","price":"0.000020","count":"1"},{"amount":"49","total":"356.00","price":"0.000018","count":"2"},{"amount":"7","total":"363.00","price":"0.000017","count":"1"},{"amount":"10","total":"373.00","price":"0.000011","count":"1"},{"amount":"41","total":"414.00","price":"0.000010","count":"1"}],"sells":[{"amount":"30","total":"30.00","price":"0.000028","count":"2"},{"amount":"49","total":"79.00","price":"0.000029","count":"2"},{"amount":"31","total":"110.00","price":"0.000030","count":"2"},{"amount":"24","total":"134.00","price":"0.000031","count":"2"},{"amount":"21","total":"155.00","price":"0.000032","count":"2"},{"amount":"6","total":"161.00","price":"0.000034","count":"1"},{"amount":"13","total":"174.00","price":"0.000035","count":"1"},{"amount":"22","total":"196.00","price":"0.000036","count":"1"},{"amount":"16","total":"212.00","price":"0.000038","count":"1"},{"amount":"10","total":"222.00","price":"0.000041","count":"1"},{"amount":"6","total":"228.00","price":"0.000046","count":"1"},{"amount":"9","total":"237.00","price":"0.000048","count":"2"}]}'
+      string: '{"buys":[{"amount":"0.00467","total":"0.00","price":"10720.7","count":"2"},{"amount":"0.00125","total":"0.01","price":"10720.4","count":"1"},{"amount":"0.10755","total":"0.11","price":"10719.3","count":"1"},{"amount":"0.09162","total":"0.21","price":"10717.9","count":"1"},{"amount":"0.10362","total":"0.31","price":"10716.5","count":"1"},{"amount":"0.11356","total":"0.42","price":"10715.3","count":"1"},{"amount":"0.07661","total":"0.50","price":"10713.5","count":"1"},{"amount":"0.04277","total":"0.54","price":"10686.4","count":"1"},{"amount":"0.09521","total":"0.64","price":"10685.3","count":"1"},{"amount":"0.20165","total":"0.84","price":"10685.2","count":"1"},{"amount":"0.08473","total":"0.92","price":"10684.4","count":"1"},{"amount":"0.03157","total":"0.95","price":"10683.0","count":"1"},{"amount":"0.07277","total":"1.03","price":"10682.9","count":"1"},{"amount":"0.06737","total":"1.09","price":"10682.5","count":"1"},{"amount":"0.11264","total":"1.21","price":"10681.5","count":"2"},{"amount":"0.1788","total":"1.39","price":"10680.3","count":"1"},{"amount":"0.14655","total":"1.53","price":"10680.0","count":"1"},{"amount":"0.07435","total":"1.61","price":"10679.9","count":"1"},{"amount":"0.03415","total":"1.64","price":"10679.6","count":"1"},{"amount":"0.05694","total":"1.70","price":"10679.1","count":"1"},{"amount":"0.04919","total":"1.75","price":"10678.7","count":"1"},{"amount":"0.08984","total":"1.84","price":"10678.1","count":"1"},{"amount":"0.01989","total":"1.86","price":"10677.6","count":"1"},{"amount":"0.19555","total":"2.05","price":"10677.5","count":"1"},{"amount":"0.20721","total":"2.26","price":"10677.3","count":"1"},{"amount":"0.12795","total":"2.39","price":"10677.1","count":"2"},{"amount":"0.13633","total":"2.52","price":"10677.0","count":"1"},{"amount":"0.28943","total":"2.81","price":"10676.9","count":"1"},{"amount":"0.01889","total":"2.83","price":"10676.8","count":"1"},{"amount":"0.01236","total":"2.85","price":"10676.4","count":"1"}],"sells":[{"amount":"0.00258","total":"0.00","price":"10734.5","count":"1"},{"amount":"0.1259","total":"0.13","price":"10735.1","count":"1"},{"amount":"0.09994","total":"0.23","price":"10738.4","count":"1"},{"amount":"0.08414","total":"0.31","price":"10739.7","count":"1"},{"amount":"0.07152","total":"0.38","price":"10740.9","count":"1"},{"amount":"0.11897","total":"0.50","price":"10742.4","count":"1"},{"amount":"0.04203","total":"0.55","price":"10785.5","count":"1"},{"amount":"0.02288","total":"0.57","price":"10785.6","count":"1"},{"amount":"0.06362","total":"0.63","price":"10786.7","count":"1"},{"amount":"0.0147","total":"0.65","price":"10787.0","count":"1"},{"amount":"0.08429","total":"0.73","price":"10787.5","count":"1"},{"amount":"0.42576","total":"1.16","price":"10787.6","count":"2"},{"amount":"0.14771","total":"1.30","price":"10787.7","count":"1"},{"amount":"0.09538","total":"1.40","price":"10787.8","count":"1"},{"amount":"0.05022","total":"1.45","price":"10788.0","count":"1"},{"amount":"0.0141","total":"1.46","price":"10788.4","count":"1"},{"amount":"0.06885","total":"1.53","price":"10789.0","count":"1"},{"amount":"0.1103","total":"1.64","price":"10789.4","count":"1"},{"amount":"0.05604","total":"1.70","price":"10789.9","count":"1"},{"amount":"0.05239","total":"1.75","price":"10790.4","count":"1"},{"amount":"0.11985","total":"1.87","price":"10790.5","count":"1"},{"amount":"0.20986","total":"2.08","price":"10790.6","count":"1"},{"amount":"0.14216","total":"2.22","price":"10791.1","count":"2"},{"amount":"0.24102","total":"2.46","price":"10791.4","count":"1"},{"amount":"0.32032","total":"2.78","price":"10791.6","count":"2"},{"amount":"0.1849","total":"2.97","price":"10791.8","count":"1"},{"amount":"0.09565","total":"3.07","price":"10792.2","count":"1"},{"amount":"0.11506","total":"3.18","price":"10792.3","count":"1"},{"amount":"0.18917","total":"3.37","price":"10792.5","count":"3"},{"amount":"0.0221","total":"3.39","price":"10792.6","count":"1"}]}'
     http_version: 
-  recorded_at: Thu, 30 Aug 2018 05:04:44 GMT
+  recorded_at: Fri, 06 Sep 2019 10:38:30 GMT
 recorded_with: VCR 4.0.0

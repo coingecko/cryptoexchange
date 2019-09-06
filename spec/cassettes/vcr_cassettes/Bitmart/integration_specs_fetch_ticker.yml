@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://openapi.bitmart.com/ticker/ABT_BTC
+    uri: https://openapi.bitmart.com/ticker/BTC_USDT
     body:
       encoding: UTF-8
       string: ''
@@ -12,37 +12,38 @@ http_interactions:
       Host:
       - openapi.bitmart.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS, DELETE
-      Access-Control-Max-Age:
-      - '3600'
-      Access-Control-Allow-Headers:
-      - x-requested-with
-      Access-Control-Allow-Credentials:
-      - 'true'
+      Date:
+      - Fri, 06 Sep 2019 10:38:30 GMT
       Content-Type:
       - application/json;charset=UTF-8
-      Transfer-Encoding:
-      - chunked
-      Date:
-      - Thu, 30 Aug 2018 05:04:44 GMT
+      Content-Length:
+      - '427'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dfd25a2bc30d60552689d6babf14ee9381567766310; expires=Sat, 05-Sep-20
+        10:38:30 GMT; path=/; domain=.bitmart.com; HttpOnly; Secure
       Via:
       - 1.1 google
       Alt-Svc:
       - clear
-      Connection:
-      - close
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511fd04feb1add52-KUL
     body:
       encoding: UTF-8
-      string: '{"priceChange":"-3.81%","symbolId":45,"website":"https://www.bitmart.com/trade?symbol=ABT_BTC","depthEndPrecision":8,"ask_1":"0.00002830","anchorId":2,"anchorName":"BTC","pair":"ABT_BTC","volume":"551.00000000","coinId":24,"depthStartPrecision":6,"high_24h":"0.00002890","low_24h":"0.00002730","new_24h":"0.00002780","closeTime":1535605484704,"bid_1":"0.00002780","coinName":"ABT","baseVolume":"0.01582560","openTime":1535519084704}'
+      string: '{"priceChange":"1.23%","symbolId":53,"website":"https://www.bitmart.com/trade?symbol=BTC_USDT","depthEndPrecision":2,"ask_1":"10734.50","anchorId":17,"anchorName":"USDT","pair":"BTC_USDT","volume":"9924.65098","coinId":2,"depthStartPrecision":1,"high_24h":"10787.04","low_24h":"10472.29","new_24h":"10729.90","closeTime":1567766310526,"bid_1":"10720.72","coinName":"BTC","baseVolume":"105761855.54122","openTime":1567679910526}'
     http_version: 
-  recorded_at: Thu, 30 Aug 2018 05:04:44 GMT
+  recorded_at: Fri, 06 Sep 2019 10:38:30 GMT
 recorded_with: VCR 4.0.0
