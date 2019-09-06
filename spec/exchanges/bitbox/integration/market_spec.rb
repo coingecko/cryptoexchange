@@ -26,7 +26,22 @@ RSpec.describe 'Bitbox integration specs' do
     expect(ticker.change).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
-    
+
     expect(ticker.payload).to_not be nil
+  end
+
+  it 'fetch order book' do
+    order_book = client.order_book(xlm_btc_pair)
+
+    expect(order_book.base).to eq 'XLM'
+    expect(order_book.target).to eq 'BTC'
+    expect(order_book.market).to eq 'bitbox'
+    expect(order_book.asks).to_not be_empty
+    expect(order_book.bids).to_not be_empty
+    expect(order_book.asks.first.price).to_not be_nil
+    expect(order_book.bids.first.amount).to_not be_nil
+    expect(order_book.bids.first.timestamp).to be nil
+    expect(order_book.timestamp).to be nil
+    expect(order_book.payload).to_not be nil
   end
 end
