@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://openapi.bitmart.com/market/deal?symbol=45
+    uri: https://openapi.bitmart.com/market/deal?symbol=53
     body:
       encoding: UTF-8
       string: ''
@@ -12,37 +12,38 @@ http_interactions:
       Host:
       - openapi.bitmart.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS, DELETE
-      Access-Control-Max-Age:
-      - '3600'
-      Access-Control-Allow-Headers:
-      - x-requested-with
-      Access-Control-Allow-Credentials:
-      - 'true'
+      Date:
+      - Fri, 06 Sep 2019 10:38:30 GMT
       Content-Type:
       - application/json;charset=UTF-8
-      Transfer-Encoding:
-      - chunked
-      Date:
-      - Thu, 30 Aug 2018 05:04:44 GMT
+      Content-Length:
+      - '5400'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dfec84a0bd3fbaa99f4ccbb4196372d401567766310; expires=Sat, 05-Sep-20
+        10:38:30 GMT; path=/; domain=.bitmart.com; HttpOnly; Secure
       Via:
       - 1.1 google
       Alt-Svc:
       - clear
-      Connection:
-      - close
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511fd0523b69dd4e-KUL
     body:
       encoding: UTF-8
-      string: '[{"amount":"0.00030580","createTime":1535586820000,"price":"0.00002780","count":"11","entrustType":0},{"amount":"0.00039760","createTime":1535580691000,"price":"0.00002840","count":"14","entrustType":1},{"amount":"0.00046410","createTime":1535571911000,"price":"0.00002730","count":"17","entrustType":0},{"amount":"0.00049500","createTime":1535562945000,"price":"0.00002750","count":"18","entrustType":1},{"amount":"0.00035880","createTime":1535561376000,"price":"0.00002760","count":"13","entrustType":0},{"amount":"0.00025020","createTime":1535547620000,"price":"0.00002780","count":"9","entrustType":1},{"amount":"0.00028900","createTime":1535546416000,"price":"0.00002890","count":"10","entrustType":0},{"amount":"0.00043350","createTime":1535543684000,"price":"0.00002890","count":"15","entrustType":0},{"amount":"0.00057800","createTime":1535542887000,"price":"0.00002890","count":"20","entrustType":0},{"amount":"0.00028900","createTime":1535541311000,"price":"0.00002890","count":"10","entrustType":0},{"amount":"0.00109820","createTime":1535539401000,"price":"0.00002890","count":"38","entrustType":0},{"amount":"0.00060690","createTime":1535538994000,"price":"0.00002890","count":"21","entrustType":0},{"amount":"0.00034680","createTime":1535538206000,"price":"0.00002890","count":"12","entrustType":0},{"amount":"0.00046240","createTime":1535537015000,"price":"0.00002890","count":"16","entrustType":0},{"amount":"0.00054910","createTime":1535536662000,"price":"0.00002890","count":"19","entrustType":0},{"amount":"0.00034680","createTime":1535535477000,"price":"0.00002890","count":"12","entrustType":0},{"amount":"0.00026010","createTime":1535535046000,"price":"0.00002890","count":"9","entrustType":0},{"amount":"0.00086700","createTime":1535534286000,"price":"0.00002890","count":"30","entrustType":0},{"amount":"0.00028900","createTime":1535531943000,"price":"0.00002890","count":"10","entrustType":0},{"amount":"0.00118490","createTime":1535531212000,"price":"0.00002890","count":"41","entrustType":0}]'
+      string: '[{"amount":"70740.18820710","price":"10735.11","count":"6.58961","entrustType":1,"createTime":1567765686261},{"amount":"76767.45155700","price":"10735.10","count":"7.15107","entrustType":1,"createTime":1567765703782},{"amount":"63085.19821680","price":"10733.01","count":"5.87768","entrustType":1,"createTime":1567765719483},{"amount":"65582.12566320","price":"10733.01","count":"6.11032","entrustType":0,"createTime":1567765721993},{"amount":"43723.02018600","price":"10733.79","count":"4.07340","entrustType":0,"createTime":1567765732772},{"amount":"54765.12721980","price":"10733.02","count":"5.10249","entrustType":1,"createTime":1567765735135},{"amount":"47315.57247990","price":"10735.07","count":"4.40757","entrustType":0,"createTime":1567765748209},{"amount":"59503.56825000","price":"10735.00","count":"5.54295","entrustType":1,"createTime":1567765771083},{"amount":"84616.82900400","price":"10738.04","count":"7.88010","entrustType":0,"createTime":1567765802961},{"amount":"86131.42954600","price":"10738.04","count":"8.02115","entrustType":0,"createTime":1567765805603},{"amount":"73148.78826540","price":"10739.77","count":"6.81102","entrustType":0,"createTime":1567765818788},{"amount":"678.01620000","price":"10740.00","count":"0.06313","entrustType":0,"createTime":1567765821249},{"amount":"105747.44879900","price":"10743.10","count":"9.84329","entrustType":0,"createTime":1567765821249},{"amount":"90194.51843580","price":"10749.19","count":"8.39082","entrustType":0,"createTime":1567765837889},{"amount":"102196.58801180","price":"10745.06","count":"9.51103","entrustType":1,"createTime":1567765854136},{"amount":"101347.83282800","price":"10748.98","count":"9.42860","entrustType":0,"createTime":1567765871120},{"amount":"93766.24769400","price":"10745.37","count":"8.72620","entrustType":1,"createTime":1567765886362},{"amount":"98158.26719010","price":"10745.33","count":"9.13497","entrustType":1,"createTime":1567765889061},{"amount":"97338.42942000","price":"10749.00","count":"9.05558","entrustType":0,"createTime":1567765902511},{"amount":"107212.64295000","price":"10745.00","count":"9.97791","entrustType":1,"createTime":1567765904900},{"amount":"83352.50503280","price":"10740.97","count":"7.76024","entrustType":1,"createTime":1567765918389},{"amount":"46430.00318400","price":"10736.80","count":"4.32438","entrustType":1,"createTime":1567765939004},{"amount":"49218.80114800","price":"10737.32","count":"4.58390","entrustType":0,"createTime":1567765994106},{"amount":"60871.33615640","price":"10738.28","count":"5.66863","entrustType":0,"createTime":1567765996522},{"amount":"66668.78931840","price":"10738.62","count":"6.20832","entrustType":0,"createTime":1567766010397},{"amount":"84591.04674200","price":"10740.22","count":"7.87610","entrustType":0,"createTime":1567766013025},{"amount":"68835.40211730","price":"10740.21","count":"6.40913","entrustType":1,"createTime":1567766026128},{"amount":"77449.35012410","price":"10743.41","count":"7.20901","entrustType":0,"createTime":1567766046334},{"amount":"75955.35264000","price":"10744.00","count":"7.06956","entrustType":0,"createTime":1567766049392},{"amount":"96059.42806030","price":"10746.91","count":"8.93833","entrustType":0,"createTime":1567766067194},{"amount":"91387.04205290","price":"10747.99","count":"8.50271","entrustType":0,"createTime":1567766081193},{"amount":"74032.05588660","price":"10743.39","count":"6.89094","entrustType":1,"createTime":1567766101079},{"amount":"81135.33857400","price":"10743.40","count":"7.55211","entrustType":0,"createTime":1567766103192},{"amount":"74419.45095300","price":"10744.35","count":"6.92638","entrustType":0,"createTime":1567766117223},{"amount":"72965.40488000","price":"10744.00","count":"6.79127","entrustType":1,"createTime":1567766119160},{"amount":"85212.31828200","price":"10743.45","count":"7.93156","entrustType":1,"createTime":1567766134748},{"amount":"14.49478800","price":"10736.88","count":"0.00135","entrustType":1,"createTime":1567766172935},{"amount":"33858.18821350","price":"10735.51","count":"3.15385","entrustType":1,"createTime":1567766172935},{"amount":"40752.74328720","price":"10735.82","count":"3.79596","entrustType":0,"createTime":1567766175694},{"amount":"23192.28420640","price":"10735.28","count":"2.16038","entrustType":1,"createTime":1567766192798},{"amount":"44917.92554400","price":"10738.08","count":"4.18305","entrustType":0,"createTime":1567766207491},{"amount":"51848.10554720","price":"10736.02","count":"4.82936","entrustType":1,"createTime":1567766226882},{"amount":"41994.66036240","price":"10735.49","count":"3.91176","entrustType":1,"createTime":1567766229053},{"amount":"31248.42986880","price":"10730.88","count":"2.91201","entrustType":1,"createTime":1567766240706},{"amount":"42549.41845000","price":"10729.90","count":"3.96550","entrustType":1,"createTime":1567766261688},{"amount":"23518.24344000","price":"10728.00","count":"2.19223","entrustType":1,"createTime":1567766265175},{"amount":"15363.60731500","price":"10729.90","count":"1.43185","entrustType":0,"createTime":1567766275493},{"amount":"14234.92913400","price":"10729.90","count":"1.32666","entrustType":0,"createTime":1567766279503},{"amount":"16582.73855300","price":"10729.90","count":"1.54547","entrustType":0,"createTime":1567766292901},{"amount":"16684.02880900","price":"10729.90","count":"1.55491","entrustType":0,"createTime":1567766295392}]'
     http_version: 
-  recorded_at: Thu, 30 Aug 2018 05:04:44 GMT
+  recorded_at: Fri, 06 Sep 2019 10:38:30 GMT
 recorded_with: VCR 4.0.0
