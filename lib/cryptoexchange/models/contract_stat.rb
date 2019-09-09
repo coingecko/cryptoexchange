@@ -8,8 +8,8 @@ module Cryptoexchange
         @base = args[:base]
         @target = args[:target]
         @market = args[:market]
-        @open_interest = args[:open_interest] || []
-        @index = args[:index] || []
+        @open_interest = args[:open_interest]
+        @index = args[:index]
         @timestamp = args[:timestamp]
         @payload = args[:payload]
       end
