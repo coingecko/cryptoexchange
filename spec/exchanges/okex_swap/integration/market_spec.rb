@@ -67,6 +67,19 @@ RSpec.describe 'OkexSwap integration specs' do
     expect(order_book.payload).to_not be nil
   end
 
+  it 'fetch contract stat' do
+    #note: contract_stat only available for futures pair
+    contract_stat = client.contract_stat(xbt_usd_pair_weekly)
+
+    expect(contract_stat.base).to eq 'BTC'
+    expect(contract_stat.target).to eq 'USD'
+    expect(contract_stat.market).to eq 'okex_swap'
+    expect(contract_stat.index).to be_a Numeric
+    expect(contract_stat.open_interest).to be_a Numeric
+    expect(contract_stat.timestamp).to be nil
+    expect(contract_stat.payload).to_not be nil
+  end
+
   # it 'fetch trade' do
   #   trades = client.trades(xbt_usd_pair)
   #   trade = trades.sample

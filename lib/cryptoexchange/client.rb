@@ -80,6 +80,24 @@ module Cryptoexchange
       end
     end
 
+    # contract_stats
+    def contract_stat(market_pair)
+      exchange = market_pair.market
+      market_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::ContractStat"
+      market_class = Object.const_get(market_classname)
+      contract_stat = market_class.new
+
+      if market_class.supports_individual_ticker_query?
+        contract_stat.fetch(market_pair)
+      else
+        contract_stats = contract_stat.fetch
+        contract_stats.find do |o|
+          o.base.casecmp(market_pair.base) == 0 &&
+            o.target.casecmp(market_pair.target) == 0
+        end
+      end
+    end
+
     def trades(market_pair)
       exchange = market_pair.market
       market_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Trades"

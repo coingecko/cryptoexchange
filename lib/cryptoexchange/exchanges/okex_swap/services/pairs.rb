@@ -30,6 +30,7 @@ module Cryptoexchange::Exchanges
         def adapt_futures(output)
           output.map do |pair|
             base, target, expired_at = pair['instrument_id'].split "-"
+            inst_id = pair['instrument_id']
 
             interval = if pair["alias"] == "this_week"
               "weekly"
@@ -47,7 +48,6 @@ module Cryptoexchange::Exchanges
             )
           end
         end
-
       end
     end
   end

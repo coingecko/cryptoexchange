@@ -1,7 +1,7 @@
 module Cryptoexchange::Exchanges
   module Bybit
     module Services
-      class Market < Cryptoexchange::Services::Market
+      class ContractStat < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
             false
@@ -34,21 +34,16 @@ module Cryptoexchange::Exchanges
           end.compact
         end
 
-        def adapt(market_pair, output)
-          ticker = Cryptoexchange::Models::Ticker.new
-          ticker.base = market_pair.base
-          ticker.target = market_pair.target
-          ticker.market = Bybit::Market::NAME
-          ticker.last = NumericHelper.to_d(output['last_price'])
-          ticker.bid = NumericHelper.to_d(output['bid_price'])
-          ticker.ask = NumericHelper.to_d(output['ask_price'])
-          ticker.high = NumericHelper.to_d(output['high_price_24h'])
-          ticker.low = NumericHelper.to_d(output['low_price_24h'])
-          ticker.volume = NumericHelper.to_d(output['turnover_24h'])
-          ticker.change = NumericHelper.to_d(output['price_24h_pcnt'])
-          ticker.timestamp = nil
-          ticker.payload = output
-          ticker
+        def adapt(market_pair, pair)
+          contract_stat = Cryptoexchange::Models::ContractStat.new
+
+          contract_stat.base      = market_pair.base
+          contract_stat.target    = market_pair.target
+          contract_stat.market    = Bybit::Market::NAME
+          contract_stat.open_interest = pair['open_interest'].to_f
+          contract_stat.index     = pair['index_price'].to_f
+          contract_stat.payload   = pair
+          contract_stat
         end
       end
     end

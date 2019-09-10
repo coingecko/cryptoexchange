@@ -1,0 +1,3360 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:45 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=deb705367675c8c9e21aa337adf50fa8c1567675545; expires=Fri, 04-Sep-20
+        09:25:45 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:45 GMT; Path=/
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51172860ce25c109-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"instrument_id":"BTC-USD-190906","underlying_index":"BTC","quote_currency":"USD","tick_size":"0.01","contract_val":"100","listing":"2019-08-23","delivery":"2019-09-06","trade_increment":"1","alias":"this_week"},{"instrument_id":"BTC-USD-190913","underlying_index":"BTC","quote_currency":"USD","tick_size":"0.01","contract_val":"100","listing":"2019-08-30","delivery":"2019-09-13","trade_increment":"1","alias":"next_week"},{"instrument_id":"BTC-USD-190927","underlying_index":"BTC","quote_currency":"USD","tick_size":"0.01","contract_val":"100","listing":"2019-06-14","delivery":"2019-09-27","trade_increment":"1","alias":"quarter"},{"instrument_id":"LTC-USD-190906","underlying_index":"LTC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-08-23","delivery":"2019-09-06","trade_increment":"1","alias":"this_week"},{"instrument_id":"LTC-USD-190913","underlying_index":"LTC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-08-30","delivery":"2019-09-13","trade_increment":"1","alias":"next_week"},{"instrument_id":"LTC-USD-190927","underlying_index":"LTC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-06-14","delivery":"2019-09-27","trade_increment":"1","alias":"quarter"},{"instrument_id":"ETH-USD-190906","underlying_index":"ETH","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-08-23","delivery":"2019-09-06","trade_increment":"1","alias":"this_week"},{"instrument_id":"ETH-USD-190913","underlying_index":"ETH","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-08-30","delivery":"2019-09-13","trade_increment":"1","alias":"next_week"},{"instrument_id":"ETH-USD-190927","underlying_index":"ETH","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-06-14","delivery":"2019-09-27","trade_increment":"1","alias":"quarter"},{"instrument_id":"ETC-USD-190906","underlying_index":"ETC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-08-23","delivery":"2019-09-06","trade_increment":"1","alias":"this_week"},{"instrument_id":"ETC-USD-190913","underlying_index":"ETC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-08-30","delivery":"2019-09-13","trade_increment":"1","alias":"next_week"},{"instrument_id":"ETC-USD-190927","underlying_index":"ETC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-06-14","delivery":"2019-09-27","trade_increment":"1","alias":"quarter"},{"instrument_id":"XRP-USD-190906","underlying_index":"XRP","quote_currency":"USD","tick_size":"0.0001","contract_val":"10","listing":"2019-08-23","delivery":"2019-09-06","trade_increment":"1","alias":"this_week"},{"instrument_id":"XRP-USD-190913","underlying_index":"XRP","quote_currency":"USD","tick_size":"0.0001","contract_val":"10","listing":"2019-08-30","delivery":"2019-09-13","trade_increment":"1","alias":"next_week"},{"instrument_id":"XRP-USD-190927","underlying_index":"XRP","quote_currency":"USD","tick_size":"0.0001","contract_val":"10","listing":"2019-06-14","delivery":"2019-09-27","trade_increment":"1","alias":"quarter"},{"instrument_id":"BCH-USD-190906","underlying_index":"BCH","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-08-23","delivery":"2019-09-06","trade_increment":"1","alias":"this_week"},{"instrument_id":"BCH-USD-190913","underlying_index":"BCH","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-08-30","delivery":"2019-09-13","trade_increment":"1","alias":"next_week"},{"instrument_id":"BCH-USD-190927","underlying_index":"BCH","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-06-14","delivery":"2019-09-27","trade_increment":"1","alias":"quarter"},{"instrument_id":"BSV-USD-190906","underlying_index":"BSV","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-08-23","delivery":"2019-09-06","trade_increment":"1","alias":"this_week"},{"instrument_id":"BSV-USD-190913","underlying_index":"BSV","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-08-30","delivery":"2019-09-13","trade_increment":"1","alias":"next_week"},{"instrument_id":"BSV-USD-190927","underlying_index":"BSV","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-06-14","delivery":"2019-09-27","trade_increment":"1","alias":"quarter"},{"instrument_id":"EOS-USD-190906","underlying_index":"EOS","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-08-23","delivery":"2019-09-06","trade_increment":"1","alias":"this_week"},{"instrument_id":"EOS-USD-190913","underlying_index":"EOS","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-08-30","delivery":"2019-09-13","trade_increment":"1","alias":"next_week"},{"instrument_id":"EOS-USD-190927","underlying_index":"EOS","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-06-14","delivery":"2019-09-27","trade_increment":"1","alias":"quarter"},{"instrument_id":"TRX-USD-190906","underlying_index":"TRX","quote_currency":"USD","tick_size":"0.00001","contract_val":"10","listing":"2019-08-23","delivery":"2019-09-06","trade_increment":"1","alias":"this_week"},{"instrument_id":"TRX-USD-190913","underlying_index":"TRX","quote_currency":"USD","tick_size":"0.00001","contract_val":"10","listing":"2019-08-30","delivery":"2019-09-13","trade_increment":"1","alias":"next_week"},{"instrument_id":"TRX-USD-190927","underlying_index":"TRX","quote_currency":"USD","tick_size":"0.00001","contract_val":"10","listing":"2019-06-14","delivery":"2019-09-27","trade_increment":"1","alias":"quarter"}]'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:45 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BTC-USD-190906/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:45 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '91'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=de607592d7e9f6431dd6500461a9350741567675545; expires=Fri, 04-Sep-20
+        09:25:45 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:45 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '5'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728616a552d1b-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BTC-USD-190906","amount":"471247","timestamp":"2019-09-05T09:25:45.858Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:45 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BTC-USD-190906/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:46 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '93'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d57f8614f5d63e823594a702e8d9cbf621567675545; expires=Fri, 04-Sep-20
+        09:25:45 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:45 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '5'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728622eb3dd5e-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BTC-USD-190906","index":"10587.598","timestamp":"2019-09-05T09:25:45.978Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:46 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BTC-USD-190913/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:46 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '91'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d4f86141d7b2cc71b372b3452850b2e9d1567675546; expires=Fri, 04-Sep-20
+        09:25:46 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:46 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '3'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51172862ce0ddd4e-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BTC-USD-190913","amount":"217531","timestamp":"2019-09-05T09:25:46.069Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:46 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BTC-USD-190913/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:46 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '93'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d311ab206c2b7025e876dd4d15bb13e001567675546; expires=Fri, 04-Sep-20
+        09:25:46 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:46 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117286349eac0f5-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BTC-USD-190913","index":"10587.598","timestamp":"2019-09-05T09:25:46.158Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:46 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BTC-USD-190927/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:46 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '92'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=de364dd1fe7d79f483389080135a1ef071567675546; expires=Fri, 04-Sep-20
+        09:25:46 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:46 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728641a02dd52-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BTC-USD-190927","amount":"6124762","timestamp":"2019-09-05T09:25:46.288Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:46 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BTC-USD-190927/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:46 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '93'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d9a2f9e48480c42ce66d30e658073ac771567675546; expires=Fri, 04-Sep-20
+        09:25:46 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:46 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '4'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51172864b949dd66-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BTC-USD-190927","index":"10587.598","timestamp":"2019-09-05T09:25:46.388Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:46 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/LTC-USD-190906/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:46 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '91'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dfcb3a5f9ec0c41cd6ab146f6c25dd5191567675546; expires=Fri, 04-Sep-20
+        09:25:46 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:46 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '7'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728654931dd5e-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"LTC-USD-190906","amount":"367824","timestamp":"2019-09-05T09:25:46.480Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:46 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/LTC-USD-190906/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:46 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '95'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d311ab206c2b7025e876dd4d15bb13e001567675546; expires=Fri, 04-Sep-20
+        09:25:46 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:46 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '5'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51172865fdfac0f5-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"LTC-USD-190906","index":"67.07537152","timestamp":"2019-09-05T09:25:46.582Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:46 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/LTC-USD-190913/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:46 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '91'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8ff3bad3102e86887cd65896c93222081567675546; expires=Fri, 04-Sep-20
+        09:25:46 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:46 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '5'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728668dd9c113-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"LTC-USD-190913","amount":"265724","timestamp":"2019-09-05T09:25:46.679Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:46 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/LTC-USD-190913/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:46 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '95'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d952a038283c73af72dcb5a07c56e9a1a1567675546; expires=Fri, 04-Sep-20
+        09:25:46 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:46 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '3'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728671b2a2d09-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"LTC-USD-190913","index":"67.07537152","timestamp":"2019-09-05T09:25:46.768Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:46 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/LTC-USD-190927/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:46 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '92'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d5e6bb20160955d6657bff6facc6f0ecd1567675546; expires=Fri, 04-Sep-20
+        09:25:46 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:46 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '8'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51172867e93f2d15-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"LTC-USD-190927","amount":"2697329","timestamp":"2019-09-05T09:25:46.901Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:46 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/LTC-USD-190927/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:47 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '95'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d311ab206c2b7025e876dd4d15bb13e001567675546; expires=Fri, 04-Sep-20
+        09:25:46 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:46 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728688990c0f5-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"LTC-USD-190927","index":"67.07537152","timestamp":"2019-09-05T09:25:46.998Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:47 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/ETH-USD-190906/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:47 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '92'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d055e0868833ae33eee455692e9c1e3291567675547; expires=Fri, 04-Sep-20
+        09:25:47 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:47 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '4'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728691d80dd5e-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"ETH-USD-190906","amount":"1040802","timestamp":"2019-09-05T09:25:47.091Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:47 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/ETH-USD-190906/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:47 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '97'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d1412b0cd7352db7e26cfeacacb047e031567675547; expires=Fri, 04-Sep-20
+        09:25:47 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:47 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '5'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51172869fa5ec109-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"ETH-USD-190906","index":"174.393624336","timestamp":"2019-09-05T09:25:47.227Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:47 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/ETH-USD-190913/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:47 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '91'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8b217f0ec77ea5a3553aeddcbdfe11b41567675547; expires=Fri, 04-Sep-20
+        09:25:47 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:47 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '28'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117286aaeeadd5a-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"ETH-USD-190913","amount":"440199","timestamp":"2019-09-05T09:25:47.357Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:47 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/ETH-USD-190913/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:47 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '97'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dbeb227916586419e05afb794435982a31567675547; expires=Fri, 04-Sep-20
+        09:25:47 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:47 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '4'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117286b6fe6c0fa-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"ETH-USD-190913","index":"174.393624336","timestamp":"2019-09-05T09:25:47.457Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:47 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/ETH-USD-190927/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:47 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '92'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc3ebe8c5b3702e57540cbb6b354347e81567675547; expires=Fri, 04-Sep-20
+        09:25:47 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:47 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '30'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117286c0c302cbb-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"ETH-USD-190927","amount":"8716936","timestamp":"2019-09-05T09:25:47.578Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:47 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/ETH-USD-190927/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:47 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '97'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc9331597305551cad30dd9924bb56f441567675547; expires=Fri, 04-Sep-20
+        09:25:47 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:47 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '5'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117286ccfdedd4e-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"ETH-USD-190927","index":"174.393624336","timestamp":"2019-09-05T09:25:47.670Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:47 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/ETC-USD-190906/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:47 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '91'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d529347b7cfe5ab4c25f4f667b7f9b1fd1567675547; expires=Fri, 04-Sep-20
+        09:25:47 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:47 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '5'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117286d5c862d0f-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"ETC-USD-190906","amount":"175618","timestamp":"2019-09-05T09:25:47.774Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:47 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/ETC-USD-190906/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:47 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '95'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d055e0868833ae33eee455692e9c1e3291567675547; expires=Fri, 04-Sep-20
+        09:25:47 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:47 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '8'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117286dffb1dd5e-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"ETC-USD-190906","index":"7.123754688","timestamp":"2019-09-05T09:25:47.861Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:47 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/ETC-USD-190913/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:47 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '91'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db8995554fff22bf033538a06854010781567675547; expires=Fri, 04-Sep-20
+        09:25:47 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:47 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '5'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117286e8b7dc104-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"ETC-USD-190913","amount":"179310","timestamp":"2019-09-05T09:25:47.954Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:47 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/ETC-USD-190913/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:48 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '95'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dfe6d7ec8182060b3d4ce65b8992d26a71567675548; expires=Fri, 04-Sep-20
+        09:25:48 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:48 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117286f1f29dd4e-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"ETC-USD-190913","index":"7.123754688","timestamp":"2019-09-05T09:25:48.048Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:48 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/ETC-USD-190927/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:48 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '92'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d91294c120fd64cc89ccddf8176cf5b671567675548; expires=Fri, 04-Sep-20
+        09:25:48 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:48 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '15'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117286fa8c52d09-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"ETC-USD-190927","amount":"1597349","timestamp":"2019-09-05T09:25:48.152Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:48 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/ETC-USD-190927/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:48 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '95'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3b4cea822d403a80215d0dd7c7174f8e1567675548; expires=Fri, 04-Sep-20
+        09:25:48 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:48 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '7'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728704f2bdd62-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"ETC-USD-190927","index":"7.123754688","timestamp":"2019-09-05T09:25:48.240Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:48 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/XRP-USD-190906/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:48 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '91'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dd5c2930b9a2aba014e7f1c0f479368261567675548; expires=Fri, 04-Sep-20
+        09:25:48 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:48 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '3'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51172870fc33dd52-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"XRP-USD-190906","amount":"128748","timestamp":"2019-09-05T09:25:48.351Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:48 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/XRP-USD-190906/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:48 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '98'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d9bc9cc8f9f8c6e7c2f2dda46d9d321ca1567675548; expires=Fri, 04-Sep-20
+        09:25:48 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:48 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '7'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728718d7add4a-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"XRP-USD-190906","index":"0.257581209775","timestamp":"2019-09-05T09:25:48.440Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:48 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/XRP-USD-190913/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:48 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '90'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d9bc9cc8f9f8c6e7c2f2dda46d9d321ca1567675548; expires=Fri, 04-Sep-20
+        09:25:48 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:48 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '8'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728722f4edd4a-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"XRP-USD-190913","amount":"63445","timestamp":"2019-09-05T09:25:48.531Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:48 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/XRP-USD-190913/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:48 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '98'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d2fac481fda02c91b2b8124c98c0a55fa1567675548; expires=Fri, 04-Sep-20
+        09:25:48 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:48 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '36'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51172872a901bcea-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"XRP-USD-190913","index":"0.257581209775","timestamp":"2019-09-05T09:25:48.646Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:48 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/XRP-USD-190927/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:48 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '92'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db4a2e1f9465ab5ab2616a86ba14d86951567675548; expires=Fri, 04-Sep-20
+        09:25:48 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:48 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728736da32cdf-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"XRP-USD-190927","amount":"1339057","timestamp":"2019-09-05T09:25:48.738Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:48 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/XRP-USD-190927/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:48 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '98'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3b4cea822d403a80215d0dd7c7174f8e1567675548; expires=Fri, 04-Sep-20
+        09:25:48 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:48 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51172873fc18dd62-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"XRP-USD-190927","index":"0.257581209775","timestamp":"2019-09-05T09:25:48.824Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:48 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BCH-USD-190906/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:48 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '91'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7211659a5e51e02e8ada153e07f4d7e61567675548; expires=Fri, 04-Sep-20
+        09:25:48 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:48 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51172874a9b42cbb-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BCH-USD-190906","amount":"174824","timestamp":"2019-09-05T09:25:48.944Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:48 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BCH-USD-190906/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:49 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '102'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d2fd0360008013462c04504262749013c1567675549; expires=Fri, 04-Sep-20
+        09:25:49 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:49 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51172875493a2cd3-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BCH-USD-190906","index":"294.25731992666664","timestamp":"2019-09-05T09:25:49.035Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:49 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BCH-USD-190913/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:49 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '91'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dd875dedfee620a831437d19a8d078e251567675549; expires=Fri, 04-Sep-20
+        09:25:49 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:49 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51172875eaccc113-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BCH-USD-190913","amount":"110614","timestamp":"2019-09-05T09:25:49.133Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:49 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BCH-USD-190913/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:49 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '102'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=da2620b3618a550e6ec51a5e51bd102ab1567675549; expires=Fri, 04-Sep-20
+        09:25:49 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:49 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '8'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51172877c83cc0fa-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BCH-USD-190913","index":"294.25731992666664","timestamp":"2019-09-05T09:25:49.439Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:49 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BCH-USD-190927/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:49 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '92'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dcf1fd255fb9e78680655962329f0e2a41567675549; expires=Fri, 04-Sep-20
+        09:25:49 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:49 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '4'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117287938e2dd5e-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BCH-USD-190927","amount":"2283924","timestamp":"2019-09-05T09:25:49.663Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:49 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BCH-USD-190927/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:49 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '102'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d6b958c8510d33288d383614ce7ec97a01567675549; expires=Fri, 04-Sep-20
+        09:25:49 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:49 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '4'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51172879c945dd52-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BCH-USD-190927","index":"294.25731992666664","timestamp":"2019-09-05T09:25:49.753Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:49 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BSV-USD-190906/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:49 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '90'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d6b958c8510d33288d383614ce7ec97a01567675549; expires=Fri, 04-Sep-20
+        09:25:49 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:49 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117287a5adfdd52-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BSV-USD-190906","amount":"45951","timestamp":"2019-09-05T09:25:49.839Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:49 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BSV-USD-190906/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:49 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '102'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db433d48764ef551686f046fd694805d21567675549; expires=Fri, 04-Sep-20
+        09:25:49 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:49 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117287add96dd62-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BSV-USD-190906","index":"132.21534991783332","timestamp":"2019-09-05T09:25:49.929Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:49 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BSV-USD-190913/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '90'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=da9c67ff86270db4a200d1a054d6f26071567675550; expires=Fri, 04-Sep-20
+        09:25:50 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:50 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117287b8d132d1b-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BSV-USD-190913","amount":"26870","timestamp":"2019-09-05T09:25:50.034Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:50 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BSV-USD-190913/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '102'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8c96ad9dacba7019124d48b4c127ef531567675550; expires=Fri, 04-Sep-20
+        09:25:50 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:50 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '4'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117287c3b25dd56-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BSV-USD-190913","index":"132.21534991783332","timestamp":"2019-09-05T09:25:50.147Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:50 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BSV-USD-190927/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '91'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc0e22bb09ef78f2797fcd18ddedbaacf1567675550; expires=Fri, 04-Sep-20
+        09:25:50 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:50 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '11'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117287cc9e0dd4a-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BSV-USD-190927","amount":"897451","timestamp":"2019-09-05T09:25:50.242Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:50 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/BSV-USD-190927/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '102'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d195f34685a04a6cfe89c96a9b2eec14f1567675550; expires=Fri, 04-Sep-20
+        09:25:50 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:50 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117287d6eb4dd5e-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BSV-USD-190927","index":"132.21534991783332","timestamp":"2019-09-05T09:25:50.335Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:50 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/EOS-USD-190906/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '91'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d9cceec4511db786c94db46d903063af41567675550; expires=Fri, 04-Sep-20
+        09:25:50 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:50 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '7'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117287e0d86c113-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"EOS-USD-190906","amount":"283988","timestamp":"2019-09-05T09:25:50.440Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:50 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/EOS-USD-190906/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '98'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc4e6bfc5afc043d747ad27fc15fc566c1567675550; expires=Fri, 04-Sep-20
+        09:25:50 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:50 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117287e9fc1dd66-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"EOS-USD-190906","index":"3.306943574225","timestamp":"2019-09-05T09:25:50.527Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:50 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/EOS-USD-190913/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '91'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=df91b2589ed77873c44270b434de6b5d61567675550; expires=Fri, 04-Sep-20
+        09:25:50 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:50 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '15'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5117287f2bafdd62-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"EOS-USD-190913","amount":"269444","timestamp":"2019-09-05T09:25:50.616Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:50 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/EOS-USD-190913/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '98'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dd42e758c91c3082deb0bf919a381a0ae1567675550; expires=Fri, 04-Sep-20
+        09:25:50 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:50 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '3'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51172880095f2cd9-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"EOS-USD-190913","index":"3.306943574225","timestamp":"2019-09-05T09:25:50.753Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:50 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/EOS-USD-190927/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '92'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d75de63c1f38efb7b68416241f1f2c6361567675550; expires=Fri, 04-Sep-20
+        09:25:50 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:50 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '5'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728809b3ec0fa-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"EOS-USD-190927","amount":"5210625","timestamp":"2019-09-05T09:25:50.842Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:50 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/EOS-USD-190927/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '98'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d75de63c1f38efb7b68416241f1f2c6361567675550; expires=Fri, 04-Sep-20
+        09:25:50 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:50 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '5'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728812c12c0fa-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"EOS-USD-190927","index":"3.306943574225","timestamp":"2019-09-05T09:25:50.936Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:50 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/TRX-USD-190906/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '90'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d522025347dfb85f9b6f22ce7dda77eb71567675551; expires=Fri, 04-Sep-20
+        09:25:51 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:51 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '8'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51172881ea53dd4a-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"TRX-USD-190906","amount":"62680","timestamp":"2019-09-05T09:25:51.056Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:51 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/TRX-USD-190906/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '97'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8b903fde2b4c8210f6a0461ce7a2ee5a1567675551; expires=Fri, 04-Sep-20
+        09:25:51 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:51 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '7'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728827cc9dd66-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"TRX-USD-190906","index":"0.01541965747","timestamp":"2019-09-05T09:25:51.146Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:51 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/TRX-USD-190913/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '89'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d522025347dfb85f9b6f22ce7dda77eb71567675551; expires=Fri, 04-Sep-20
+        09:25:51 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:51 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '9'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728831e43dd4a-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"TRX-USD-190913","amount":"6716","timestamp":"2019-09-05T09:25:51.247Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:51 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/TRX-USD-190913/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '97'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d4d5fa79f0ee2e0bfbd6a5e4f8994f4d61567675551; expires=Fri, 04-Sep-20
+        09:25:51 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:51 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51172883db64dd52-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"TRX-USD-190913","index":"0.01541965747","timestamp":"2019-09-05T09:25:51.377Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:51 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/TRX-USD-190927/open_interest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '91'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8012fdc0ef80d135fafd6cc2e078c7461567675551; expires=Fri, 04-Sep-20
+        09:25:51 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:51 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728847e61dd5e-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"TRX-USD-190927","amount":"322144","timestamp":"2019-09-05T09:25:51.473Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:51 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments/TRX-USD-190927/index
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 09:25:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '97'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d4ac13a66c31b723bb29c93467e5ff0091567675551; expires=Fri, 04-Sep-20
+        09:25:51 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Thu, 12-Sep-2019 09:25:51 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '45'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 511728851eaadd62-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"TRX-USD-190927","index":"0.01541965747","timestamp":"2019-09-05T09:25:51.602Z"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 09:25:51 GMT
+recorded_with: VCR 4.0.0

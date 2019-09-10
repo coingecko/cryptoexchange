@@ -52,5 +52,18 @@ RSpec.describe 'Bybit integration specs' do
     expect(order_book.bids.count).to be > 0
     expect(order_book.timestamp).to be_nil
     expect(order_book.payload).to_not be nil
-  end  
+  end
+
+  it 'fetch contract stat' do
+    contract_stat = client.contract_stat(btc_usd_pair)
+
+    expect(contract_stat.base).to eq 'BTC'
+    expect(contract_stat.target).to eq 'USD'
+    expect(contract_stat.market).to eq 'bybit'
+    expect(contract_stat.index).to be_a Numeric
+    expect(contract_stat.open_interest).to be_a Numeric
+    expect(contract_stat.timestamp).to be nil
+
+    expect(contract_stat.payload).to_not be nil
+  end
 end
