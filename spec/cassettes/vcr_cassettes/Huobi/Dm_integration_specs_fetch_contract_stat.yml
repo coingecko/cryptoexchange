@@ -1,0 +1,115 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hbdm.com/api/v1/contract_open_interest?contract_type=this_week&symbol=BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hbdm.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Sep 2019 08:28:32 GMT
+      Content-Type:
+      - text/plain;charset=UTF-8
+      Content-Length:
+      - '184'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d00e9b790a909d795e00dad81f7ed21701568104112; expires=Wed, 09-Sep-20
+        08:28:32 GMT; path=/; domain=.hbdm.com; HttpOnly
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Reqid:
+      - e5360ed6853d4c1db48f14c98fac7d72
+      Ratelimit-Remaining:
+      - '59'
+      Ratelimit-Reset:
+      - '1568104115685'
+      Ratelimit-Interval:
+      - '3000'
+      Ratelimit-Limit:
+      - '60'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5140076e79f82cf7-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","data":[{"volume":342987.000000000000000000,"amount":3328.183994418530633553,"symbol":"BTC","contract_type":"this_week","contract_code":"BTC190913"}],"ts":1568104112685}'
+    http_version: 
+  recorded_at: Tue, 10 Sep 2019 08:28:32 GMT
+- request:
+    method: get
+    uri: https://api.hbdm.com/api/v1/contract_index?symbol=BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hbdm.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Sep 2019 08:28:33 GMT
+      Content-Type:
+      - text/plain;charset=UTF-8
+      Content-Length:
+      - '124'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dabdff30ab7e86d474bef26e1441bd79c1568104112; expires=Wed, 09-Sep-20
+        08:28:32 GMT; path=/; domain=.hbdm.com; HttpOnly
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Reqid:
+      - 92042f42e21849d69cd4414a8aad3dde
+      Ratelimit-Remaining:
+      - '58'
+      Ratelimit-Reset:
+      - '1568104115687'
+      Ratelimit-Interval:
+      - '3000'
+      Ratelimit-Limit:
+      - '60'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51400771da61dd52-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","data":[{"symbol":"BTC","index_price":10279.170000000000000000,"index_ts":1568104110017}],"ts":1568104113235}'
+    http_version: 
+  recorded_at: Tue, 10 Sep 2019 08:28:33 GMT
+recorded_with: VCR 4.0.0

@@ -69,4 +69,17 @@ RSpec.describe 'Huobi Dm integration specs' do
     expect(trade.trade_id).to_not be_nil
     expect(trade.type).to eq("buy").or eq("sell")
   end
+
+  it 'fetch contract stat' do
+    contract_stat = client.contract_stat(pair)
+
+    expect(contract_stat.base).to eq 'BTC'
+    expect(contract_stat.target).to eq 'USD'
+    expect(contract_stat.market).to eq 'huobi_dm'
+    expect(contract_stat.index).to be_a Numeric
+    expect(contract_stat.open_interest).to be_a Numeric
+    expect(contract_stat.timestamp).to be nil
+
+    expect(contract_stat.payload).to_not be nil
+  end
 end
