@@ -14,7 +14,8 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new(
               base: pair['currency_code'],
               target: pair['market_code'],
-              market: Cryptoexchange::Exchanges::StocksExchange::Market::NAME
+              market: Cryptoexchange::Exchanges::StocksExchange::Market::NAME,
+              inst_id: pair['id']
             )
           end.compact
         end
