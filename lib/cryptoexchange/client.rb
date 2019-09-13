@@ -136,6 +136,44 @@ module Cryptoexchange
       )
     end
 
+    def pair_url(market_pair)
+      exchange = market_pair.market
+      pairs_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Pairs"
+      pairs_class = Object.const_get(pairs_classname)
+      pair_url = pairs_class::PAIRS_URL
+    end
+
+    def market_url(market_pair)
+      exchange = market_pair.market
+      market_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Market"
+      market_class = Object.const_get(market_classname)
+
+      if market_class.supports_individual_ticker_query?
+        market_url = market_class.new.ticker_url(market_pair)
+      else
+        market_url = market_class.new.ticker_url
+      end
+    end 
+
+    def order_book_url(market_pair)
+      exchange = market_pair.market
+      order_book_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::OrderBook"
+      order_book_class = Object.const_get(order_book_classname)
+
+      if order_book_class.supports_individual_ticker_query?
+        order_book_url = order_book_class.new.ticker_url(market_pair)
+      else
+        order_book_url = order_book_class.new.ticker_url
+      end
+    end 
+
+    def trades_url(market_pair)
+      exchange = market_pair.market
+      trades_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Trades"
+      trades_class = Object.const_get(trades_classname)
+      trades_url = trades_class.new.ticker_url(market_pair)
+    end            
+
     private
 
     # NOTE: # https://ruby-doc.org/core-2.5.0/Thread.html#method-c-abort_on_exception
