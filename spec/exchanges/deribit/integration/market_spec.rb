@@ -70,4 +70,17 @@ RSpec.describe 'Deribit integration specs' do
     expect(trade.timestamp).to be_a Numeric
     expect(trade.payload).to_not be nil
   end
+
+  it 'fetch contract stat' do
+    contract_stat = client.contract_stat(btc_usd_pair)
+
+    expect(contract_stat.base).to eq 'BTC'
+    expect(contract_stat.target).to eq 'USD'
+    expect(contract_stat.market).to eq 'deribit'
+    expect(contract_stat.index).to be_a Numeric
+    expect(contract_stat.open_interest).to be_a Numeric
+    expect(contract_stat.timestamp).to be nil
+
+    expect(contract_stat.payload).to_not be nil
+  end
 end

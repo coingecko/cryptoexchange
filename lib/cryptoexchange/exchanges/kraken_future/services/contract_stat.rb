@@ -1,7 +1,8 @@
 module Cryptoexchange::Exchanges
-  module Bitmex
+  module KrakenFutures
     module Services
       class ContractStat < Cryptoexchange::Services::Market
+
         class << self
           def supports_individual_ticker_query?
             true
@@ -9,24 +10,23 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          output = super(ticker_url(market_pair))
+          output = super(open_interest_url)
           adapt(output, market_pair)
         end
 
-        def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitmex::Market::API_URL}/instrument?symbol=#{market_pair.base}:#{market_pair.contract_interval}&count=100&reverse=true"
+        def open_interest_url
+          "#{Cryptoexchange::Exchanges::KrakenFutures::Market::API_URL}/tickers"
         end
 
         def adapt(output, market_pair)
-          output = output.first
+          data = output['tickers'].find {|i| i['symbol'] == market_pair.inst_id.downcase }
           contract_stat = Cryptoexchange::Models::ContractStat.new
-
           contract_stat.base      = market_pair.base
           contract_stat.target    = market_pair.target
-          contract_stat.market    = Bitmex::Market::NAME
-          contract_stat.open_interest = output['openInterest'].to_f
-          contract_stat.index     = output['indicativeSettlePrice'].to_f
-          contract_stat.payload   = output
+          contract_stat.market    = KrakenFutures::Market::NAME
+          contract_stat.open_interest = data['openInterest'].to_f
+          contract_stat.index     = data['markPrice'].to_f
+          contract_stat.payload   = data
           contract_stat
         end
       end

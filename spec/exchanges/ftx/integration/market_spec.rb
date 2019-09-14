@@ -44,4 +44,17 @@ RSpec.describe 'FTX integration specs' do
     expect(order_book.bids.count).to be > 10
     expect(order_book.payload).to_not be nil
   end
+
+  it 'fetch contract stat' do
+    contract_stat = client.contract_stat(btc_usd_pair)
+
+    expect(contract_stat.base).to eq 'BTC'
+    expect(contract_stat.target).to eq 'USD'
+    expect(contract_stat.market).to eq 'ftx'
+    expect(contract_stat.index).to be_a Numeric
+    expect(contract_stat.open_interest).to be_a Numeric
+    expect(contract_stat.timestamp).to be nil
+
+    expect(contract_stat.payload).to_not be nil
+  end
 end
