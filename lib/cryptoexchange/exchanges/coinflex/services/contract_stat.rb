@@ -32,7 +32,7 @@ module Cryptoexchange::Exchanges
           arr = []
           asks.map { |ask| arr << ask[1] }
           bids.map { |bid| arr << bid[1] }
-          arr.sum
+          arr.inject(0, &:+)
         end
       end
     end
