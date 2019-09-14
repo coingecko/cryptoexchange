@@ -70,4 +70,17 @@ RSpec.describe 'kraken_futures integration specs' do
     expect(trade.trade_id).to be_a Numeric
     expect(trade.type).to eq("buy").or eq("sell")
   end
+
+  it 'fetch contract stat' do
+    contract_stat = client.contract_stat(eth_usd_pair)
+
+    expect(contract_stat.base).to eq 'ETH'
+    expect(contract_stat.target).to eq 'USD'
+    expect(contract_stat.market).to eq 'kraken_futures'
+    expect(contract_stat.index).to be_a Numeric
+    expect(contract_stat.open_interest).to be_a Numeric
+    expect(contract_stat.timestamp).to be nil
+
+    expect(contract_stat.payload).to_not be nil
+  end
 end
