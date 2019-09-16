@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fapi.binance.com/fapi/v1/ticker/24hr
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - fapi.binance.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '361'
+      Connection:
+      - close
+      Date:
+      - Mon, 16 Sep 2019 04:00:03 GMT
+      Server:
+      - Tengine
+      Vary:
+      - Accept-Encoding
+      X-Response-Time:
+      - 0ms
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - "*,clienttype,Content-Type,lang,x-ui-request-trace"
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 ed2d5dc5a2dc84c3b7fa7997534d0166.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50
+      X-Amz-Cf-Id:
+      - 7rPr83WdvzXlgMDKNDxs5NKt2ZcAC1soz_XSzrcZeIeQXTj_QqaGwQ==
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"symbol":"BTCUSDT","priceChange":"-1.45","priceChangePercent":"-0.014","weightedAvgPrice":"10301.31","lastPrice":"10300.94","lastQty":"1.487","openPrice":"10302.39","highPrice":"10353.81","lowPrice":"10252.28","volume":"20490.798","quoteVolume":"211081979.01","openTime":1568520005399,"closeTime":1568606402146,"firstId":123204,"lastId":148828,"count":25625}]'
+    http_version: 
+  recorded_at: Mon, 16 Sep 2019 03:59:55 GMT
+recorded_with: VCR 4.0.0
