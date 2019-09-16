@@ -1,4 +1,3 @@
-require 'byebug'
 module Cryptoexchange::Exchanges
   module BinanceFutures
     module Services
