@@ -55,6 +55,7 @@ Or install it yourself as:
 | Bilaxy            | Y       | Y [x]      | Y       |         | Y           | Y        | bilaxy            |       |
 | Binance           | Y       | Y [x]      | Y [limit: 500]   |         | Y           | Y        | binance           |       |
 | Binance DEX       | Y       | Y [x]      | Y [limit: 50]    |         | Y        |          | binance_dex       |       |
+| Binance Futures   | Y       | Y [x]      |         |         | Y           | Y        | binance_futures   |futures|
 | Binance Jersey    | Y       | Y [x]      |         |         | Y           | Y        | binance_jersey    |       |
 | Binance Uganda    | Y       | Y [x]      |         |         | Y           | Y        | binance_uganda    |       |
 | Bione             | Y       | Y [x]      |         |         | Y           |          | bione             |       |

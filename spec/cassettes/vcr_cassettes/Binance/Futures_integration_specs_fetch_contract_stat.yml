@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fapi.binance.com/fapi/v1/premiumIndex?symbol=BTCUSDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - fapi.binance.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '133'
+      Connection:
+      - close
+      Date:
+      - Mon, 16 Sep 2019 04:01:52 GMT
+      Server:
+      - Tengine
+      Vary:
+      - Accept-Encoding
+      X-Response-Time:
+      - 0ms
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - "*,clienttype,Content-Type,lang,x-ui-request-trace"
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 d5e2e080e4c2c6c8327f6d0eacda4e12.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50
+      X-Amz-Cf-Id:
+      - 4MmCjiRnePQVsEK_aSHl32DA-ES1yYUapdQsyUkh2fe1o9zhBEWv7Q==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"symbol":"BTCUSDT","markPrice":"10314.35989910","lastFundingRate":"0.00010000","nextFundingTime":1568620800000,"time":1568606511000}'
+    http_version: 
+  recorded_at: Mon, 16 Sep 2019 04:01:44 GMT
+recorded_with: VCR 4.0.0
