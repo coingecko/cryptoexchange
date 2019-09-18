@@ -20,7 +20,8 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
-              market: BinanceFutures::Market::NAME
+              market: BinanceFutures::Market::NAME,
+              inst_id: pair["symbol"]
             )
           end.compact
         end

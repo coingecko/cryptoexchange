@@ -14,9 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def order_book_url(market_pair)
-          base = market_pair.base
-          target = market_pair.target
-          "#{Cryptoexchange::Exchanges::BinanceFutures::Market::API_URL}/depth?symbol=#{base}#{target}&limit=500"
+          "#{Cryptoexchange::Exchanges::BinanceFutures::Market::API_URL}/depth?symbol=#{market_pair.inst_id}&limit=500"
         end
 
         def adapt(output, market_pair)

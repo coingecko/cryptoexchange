@@ -30,6 +30,9 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = Ftx::Market::NAME
           contract_stat.open_interest = open_interest['result']['openInterest'].to_f
           contract_stat.index     = index['result']['index'].to_f
+          contract_stat.funding_rate = open_interest['result']['nextFundingRate'].to_f if open_interest['result']['nextFundingRate']
+          contract_stat.funding_rate_timestamp = DateTime.parse(open_interest['result']['nextFundingTime']).to_time.to_i if open_interest['result']['nextFundingTime']
+          # contract_stat.next_funding_rate_predicted 
           contract_stat.payload   = { "open_interest" => open_interest, "index" => index }
           contract_stat
         end

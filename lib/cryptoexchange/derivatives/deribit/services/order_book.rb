@@ -15,8 +15,7 @@ module Cryptoexchange::Exchanges
         end
 
         def orderbook_url(market_pair)
-          symbol = "#{market_pair.base}-#{market_pair.contract_interval.upcase}"
-          "#{Cryptoexchange::Exchanges::Deribit::Market::API_URL}/getorderbook?instrument=#{symbol}"
+          "#{Cryptoexchange::Exchanges::Deribit::Market::API_URL}/getorderbook?instrument=#{market_pair.inst_id}"
         end
 
         def split(output)

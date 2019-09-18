@@ -8,6 +8,10 @@ module Cryptoexchange
       end
 
       def fetch(endpoint)
+        fetch_using_get(endpoint)
+      end
+
+      def fetch_using_get(endpoint)
         Cryptoexchange::Cache.ticker_cache.fetch(endpoint) do
           begin
             response = http_get(endpoint)

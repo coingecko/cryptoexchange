@@ -16,8 +16,8 @@ module Cryptoexchange::Exchanges
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: base,
                               target: target,
-                              contract_interval: "perpetual",
-                              market: GateFutures::Market::NAME
+                              market: GateFutures::Market::NAME,
+                              inst_id: pair["name"]
                             )
           end
           market_pairs

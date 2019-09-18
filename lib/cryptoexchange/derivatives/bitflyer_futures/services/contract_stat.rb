@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module BinanceFutures
+  module BitflyerFutures
     module Services
       class ContractStat < Cryptoexchange::Services::Market
         class << self
@@ -19,18 +19,18 @@ module Cryptoexchange::Exchanges
         # end
 
         def index_url(market_pair)
-          "#{Cryptoexchange::Exchanges::BinanceFutures::Market::API_URL}/premiumIndex?symbol=#{market_pair.inst_id}"
+          "#{Cryptoexchange::Exchanges::BitflyerFutures::Market::API_URL}/ticker?product_code=#{market_pair.inst_id}"
         end
 
         def adapt(open_interest, index, market_pair)
           contract_stat = Cryptoexchange::Models::ContractStat.new
           contract_stat.base      = market_pair.base
           contract_stat.target    = market_pair.target
-          contract_stat.market    = BinanceFutures::Market::NAME
+          contract_stat.market    = BitflyerFutures::Market::NAME
           # contract_stat.open_interest (pending)
-          contract_stat.index     = index['markPrice'].to_f
-          contract_stat.funding_rate = index['lastFundingRate'].to_f * 100
-          contract_stat.funding_rate_timestamp = index['nextFundingTime']
+          contract_stat.index     = index['ltp'].to_f
+          # contract_stat.funding_rate (pending)
+          # contract_stat.funding_rate_timestamp (pending)
           contract_stat.payload   = { "index" => index }
 
           contract_stat

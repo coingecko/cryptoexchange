@@ -26,6 +26,9 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = KrakenFutures::Market::NAME
           contract_stat.open_interest = data['openInterest'].to_f
           contract_stat.index     = data['markPrice'].to_f
+          contract_stat.funding_rate = data['fundingRate'].to_f if data['fundingRate']
+          # contract_stat.funding_rate_timestamp (pending)
+          contract_stat.next_funding_rate_predicted = data['fundingRatePrediction'] if data['fundingRatePrediction']
           contract_stat.payload   = data
           contract_stat
         end

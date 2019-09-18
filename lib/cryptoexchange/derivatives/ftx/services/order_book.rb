@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def order_book_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Ftx::Market::API_URL}/markets/#{market_pair.base}-PERP/orderbook?depth=100"
+          "#{Cryptoexchange::Exchanges::Ftx::Market::API_URL}/markets/#{market_pair.inst_id}/orderbook?depth=100"
         end
 
         def adapt(output, market_pair)

@@ -15,14 +15,14 @@ module Cryptoexchange::Exchanges
               base, target = output["pair"].split(":")
 
               next if target != "USD"
+              next if output["suspended"] == true
               # skipping non USD pair because volume reported is mixed (some in base, some in target)
 
               Cryptoexchange::Models::MarketPair.new(
                 base: base,
                 target: target,
                 inst_id: output["symbol"],
-                market: KrakenFutures::Market::NAME,
-                contract_interval: output["tag"],
+                market: KrakenFutures::Market::NAME
               )
             end
           end.compact

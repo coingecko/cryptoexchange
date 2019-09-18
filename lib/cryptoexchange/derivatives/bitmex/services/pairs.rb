@@ -17,9 +17,7 @@ module Cryptoexchange::Exchanges
                               base: pair["rootSymbol"],
                               target: pair["quoteCurrency"],
                               market: Bitmex::Market::NAME,
-                              inst_id: pair["symbol"],
-                              start_date: pair["listing"],
-                              expire_date: pair["expiry"]
+                              inst_id: pair["symbol"]
                             )
           end
 

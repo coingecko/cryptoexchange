@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Ftx::Market::API_URL}/futures/#{market_pair.base}-PERP"
+          "#{Cryptoexchange::Exchanges::Ftx::Market::API_URL}/futures/#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)
@@ -26,7 +26,10 @@ module Cryptoexchange::Exchanges
           ticker.bid = NumericHelper.to_d(output["bid"])
           ticker.last = NumericHelper.to_d(output["last"])
           ticker.volume = NumericHelper.divide(NumericHelper.to_d(output["volumeUsd24h"]), ticker.last)
-          ticker.contract_interval = market_pair.contract_interval
+          
+          ticker.start_timestamp = nil
+          ticker.expire_timestamp = DateTime.parse(output["expiry"]).to_time.to_i if output["expiry"]
+
           ticker.timestamp = nil
           ticker.payload = output
           ticker
