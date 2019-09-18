@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Bitmart integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: 'bitmart', inst_id: '53') }
+  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: 'bitmart') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bitmart')
@@ -12,7 +12,6 @@ RSpec.describe 'Bitmart integration specs' do
     expect(pair.base).not_to be_nil
     expect(pair.target).not_to be_nil
     expect(pair.market).to eq 'bitmart'
-    expect(pair.inst_id).not_to be nil
   end
 
   it 'fetch ticker' do

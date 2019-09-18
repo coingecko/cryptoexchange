@@ -9,7 +9,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitmart::Market::API_URL}/market/deal?symbol=#{market_pair.inst_id}"
+          "#{Cryptoexchange::Exchanges::Bitmart::Market::API_URL}/symbols/#{market_pair.base}_#{market_pair.target}/trades"
         end
 
         def adapt(output, market_pair)
@@ -21,10 +21,10 @@ module Cryptoexchange::Exchanges
 
             tr.price     = trade['price']
             tr.amount    = trade['amount']
-            tr.type      = trade['entrustType'] == 0 ? "buy" : "sell"
-            tr.timestamp = trade['createTime'] / 1000
+            tr.type      = trade['type']
+            tr.timestamp = trade['order_time'] / 1000
             tr.payload   = trade
-            
+
             tr
           end
         end
