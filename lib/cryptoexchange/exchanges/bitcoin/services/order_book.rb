@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Bitmart
+  module Bitcoin
     module Services
       class OrderBook < Cryptoexchange::Services::Market
         class << self
@@ -9,32 +9,31 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          output = super(ticker_url(market_pair))
+          output = super(order_book_url(market_pair))
           adapt(output, market_pair)
         end
 
-        def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitmart::Market::API_URL}/symbols/PAX_USDT/orders"
+        def order_book_url(market_pair)
+          "#{Cryptoexchange::Exchanges::Bitcoin::Market::API_URL}/orderbook/#{market_pair.base}#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
           order_book = Cryptoexchange::Models::OrderBook.new
+
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
-          order_book.market    = Bitmart::Market::NAME
-          order_book.asks      = adapt_orders(output['sells'])
-          order_book.bids      = adapt_orders(output['buys'])
-          order_book.timestamp = nil
+          order_book.market    = Bitcoin::Market::NAME
+          order_book.asks      = adapt_orders(output['ask'])
+          order_book.bids      = adapt_orders(output['bid'])
           order_book.payload   = output
           order_book
         end
 
         def adapt_orders(orders)
           orders.collect do |order_entry|
-            price   = order_entry['price']
-            amount  = order_entry['amount']
-            Cryptoexchange::Models::Order.new(price: price,
-                                              amount: amount)
+            Cryptoexchange::Models::Order.new(price: NumericHelper.to_d(order_entry['price']),
+                                              amount: NumericHelper.to_d(order_entry['size']),
+                                              timestamp: nil)
           end
         end
       end

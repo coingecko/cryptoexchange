@@ -1,8 +1,8 @@
 module Cryptoexchange::Exchanges
-  module Bitmart
+  module Bitcoin
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitmart::Market::API_URL}/symbols_details"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitcoin::Market::API_URL}/symbol"
 
         def fetch
           output = super
@@ -11,15 +11,13 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           market_pairs = []
-          output.each do |value|
-            base, target = value['base_currency'], value['quote_currency']
+          output.each do |pair|
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                    base: base,
-                    target: target,
-                    market: Bitmart::Market::NAME
-                  )
+                              base: pair["baseCurrency"],
+                              target: pair["quoteCurrency"],
+                              market: Bitcoin::Market::NAME,
+                            )
           end
-
           market_pairs
         end
       end
