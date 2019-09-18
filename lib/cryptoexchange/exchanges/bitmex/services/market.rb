@@ -14,8 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          symbol = "#{market_pair.base}:#{market_pair.contract_interval}"
-          "#{Cryptoexchange::Exchanges::Bitmex::Market::API_URL}/instrument?symbol=#{symbol}&count=100&reverse=true"
+          "#{Cryptoexchange::Exchanges::Bitmex::Market::API_URL}/instrument?symbol=#{market_pair.inst_id}&count=100&reverse=true"
         end
 
         def adapt(output, market_pair)
@@ -30,6 +29,8 @@ module Cryptoexchange::Exchanges
           ticker.low = NumericHelper.to_d(output['lowPrice'])
           ticker.volume = NumericHelper.to_d(output['homeNotional24h'])
           ticker.contract_interval = market_pair.contract_interval
+          ticker.start_date = market_pair.start_date
+          ticker.end_date = market_pair.end_date
           ticker.timestamp = nil
           ticker.payload = output
           ticker

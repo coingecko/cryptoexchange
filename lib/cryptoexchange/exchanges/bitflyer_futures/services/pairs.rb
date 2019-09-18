@@ -18,7 +18,7 @@ module Cryptoexchange::Exchanges
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: base,
                               target: target,
-                              contract_interval: data[:contract_interval],
+                              inst_id: data[:product_code],
                               market: BitflyerFutures::Market::NAME
                             )
           end.compact
@@ -30,14 +30,11 @@ module Cryptoexchange::Exchanges
           if value['alias'].nil? && value['product_code'].include?("FX")
             product_code = value['product_code']
             base, target = product_code.split('_').delete_if { |x| x == "FX" }
-            contract_interval = "perpetual"
           elsif value['alias'] != nil
             contract_interval_list = { "MAT1WK" => "weekly", "MAT3M" => "quarterly", "MAT2WK" => "biweekly" }
             base, target = "BTC", "JPY"
-            contract_interval_code = value['alias'].split('_')[1]
-            contract_interval = contract_interval_list[contract_interval_code]
           end
-          { "base": base, "target": target, "contract_interval": contract_interval }
+          { "base": base, "target": target, "product_code": value['product_code'] }
         end
       end
     end

@@ -14,9 +14,7 @@
         end
 
         def order_book_url(market_pair)
-          interval_keys = { "weekly"=> "CW", "biweekly"=> "NW", "quarterly"=> "CQ" }
-          interval = interval_keys[market_pair.contract_interval]
-          "#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/market/depth?symbol=#{market_pair.base}_#{interval}&type=step0"
+          "#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/market/depth?symbol=#{market_pair.inst_id}&type=step0"
         end
 
         def adapt(output, market_pair)

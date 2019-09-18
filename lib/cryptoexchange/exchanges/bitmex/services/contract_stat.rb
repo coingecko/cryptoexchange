@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitmex::Market::API_URL}/instrument?symbol=#{market_pair.base}:#{market_pair.contract_interval}&count=100&reverse=true"
+          "#{Cryptoexchange::Exchanges::Bitmex::Market::API_URL}/instrument?symbol=#{market_pair.inst_id}&count=100&reverse=true"
         end
 
         def adapt(output, market_pair)
@@ -26,6 +26,9 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = Bitmex::Market::NAME
           contract_stat.open_interest = output['openInterest'].to_f
           contract_stat.index     = output['indicativeSettlePrice'].to_f
+          contract_stat.funding_rate = output['fundingRate'].to_f
+          contract_stat.funding_rate_timestamp = DateTime.parse(output['fundingTimestamp']).to_time.to_i
+          contract_stat.next_funding_rate_predicted = output['indicativeFundingRate'].to_f
           contract_stat.payload   = output
           contract_stat
         end

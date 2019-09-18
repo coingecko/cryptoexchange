@@ -12,13 +12,14 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           output['data'].map do |pair|
             target = "USD"
-            interval_list = { "this_week"=> "weekly", "next_week"=> "biweekly", "quarter"=> "quarterly" }
-            contract_interval = interval_list[pair["contract_type"]]
+
+            interval_keys = { "this_week"=> "CW", "next_week"=> "NW", "quarter"=> "CQ" }
+            interval = interval_keys[pair['contract_type']]
 
             Cryptoexchange::Models::MarketPair.new({
               base: pair['symbol'],
               target: target,
-              contract_interval: contract_interval,
+              inst_id: pair['symbol'] + "_" + interval,
               market: HuobiDm::Market::NAME
             })
           end

@@ -16,35 +16,26 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output.map do |pair|
-            base, target, expired_at = pair['instrument_id'].split "-"
-
             Cryptoexchange::Models::MarketPair.new(
-              base:   base,
-              target: target,
+              base:   pair['underlying_index'],
+              target: pair['quote_currency'],
               market: OkexSwap::Market::NAME,
-              contract_interval: "perpetual",
+              inst_id: pair["instrument_id"],
+              start_date: pair["listing"],
+              expire_date: nil
             )
           end
         end
 
         def adapt_futures(output)
           output.map do |pair|
-            base, target, expired_at = pair['instrument_id'].split "-"
-            inst_id = pair['instrument_id']
-
-            interval = if pair["alias"] == "this_week"
-              "weekly"
-            elsif pair["alias"] == "next_week"
-              "biweekly"
-            elsif pair["alias"] == "quarter"
-              "quarterly"
-            end
-
             Cryptoexchange::Models::MarketPair.new(
-              base:   base,
-              target: target,
+              base:   pair['underlying_index'],
+              target: pair['quote_currency'],
               market: OkexSwap::Market::NAME,
-              contract_interval: interval
+              inst_id: pair["instrument_id"],
+              start_date: pair["listing"],
+              expire_date: pair["delivery"] 
             )
           end
         end

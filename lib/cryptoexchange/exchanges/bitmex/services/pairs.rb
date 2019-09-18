@@ -2,6 +2,8 @@ module Cryptoexchange::Exchanges
   module Bitmex
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitmex::Market::API_URL}/instrument?reverse=true&count=500"
+
         def fetch
           output = super
           adapt(output)
@@ -9,12 +11,15 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           market_pairs = []
+          output = output.select { |o| o["state"] == "Open" }
           output.each do |pair|
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair[:base],
-                              target: pair[:target],
+                              base: pair["rootSymbol"],
+                              target: pair["quoteCurrency"],
                               market: Bitmex::Market::NAME,
-                              contract_interval: pair[:contract_interval],
+                              inst_id: pair["symbol"],
+                              start_date: pair["listing"],
+                              expire_date: pair["expiry"]
                             )
           end
 

@@ -1,3 +1,4 @@
+require 'byebug'
 module Cryptoexchange::Exchanges
   module OkexSwap
     module Services
@@ -11,12 +12,12 @@ module Cryptoexchange::Exchanges
         def fetch
           output_swaps = super(ticker_url)
           swaps = adapt_all(output_swaps)
+          swaps
+          # output_futures_pairs = super("https://www.okex.com/api/futures/v3/instruments") # For mapping the interval via instrument_id, since ticker does not return instrument_id
+          # output_futures = super("https://www.okex.com/api/futures/v3/instruments/ticker")
+          # futures = adapt_all_futures(output_futures, output_futures_pairs)
 
-          output_futures_pairs = super("https://www.okex.com/api/futures/v3/instruments") # For mapping the interval via instrument_id, since ticker does not return instrument_id
-          output_futures = super("https://www.okex.com/api/futures/v3/instruments/ticker")
-          futures = adapt_all_futures(output_futures, output_futures_pairs)
-
-          swaps + futures
+          # swaps + futures
         end
 
         def ticker_url
@@ -30,7 +31,7 @@ module Cryptoexchange::Exchanges
               base: base,
               target: target,
               market: OkexSwap::Market::NAME,
-              contract_interval: "perpetual",
+              inst_id: ticker['instrument_id']
             )
             adapt(ticker, market_pair)
           end
@@ -60,6 +61,7 @@ module Cryptoexchange::Exchanges
           ticker.timestamp = nil
           ticker.payload   = output
           ticker.contract_interval = "perpetual"
+          ticker.inst_id   = market_pair.inst_id
           ticker
         end
 
@@ -82,7 +84,7 @@ module Cryptoexchange::Exchanges
               base: base,
               target: target,
               market: OkexSwap::Market::NAME,
-              contract_interval: interval,
+              inst_id: ticker['instrument_id']
             )
             adapt_futures(ticker, market_pair)
           end
@@ -103,6 +105,7 @@ module Cryptoexchange::Exchanges
           ticker.timestamp = nil
           ticker.payload   = output
           ticker.contract_interval = market_pair.contract_interval
+          ticker.inst_id   = market_pair.inst_id
           ticker
         end
       end
