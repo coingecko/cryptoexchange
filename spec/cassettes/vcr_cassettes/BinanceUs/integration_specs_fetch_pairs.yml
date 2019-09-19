@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.binance.us/api/v1/exchangeInfo
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.binance.us
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Date:
+      - Thu, 19 Sep 2019 04:14:01 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Mbx-Uuid:
+      - 3e82d21d-60eb-4829-b531-717910ebc3bd
+      X-Mbx-Used-Weight:
+      - '1'
+      X-Mbx-Used-Weight-1m:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 da3439453c8e52175a4abeebe06d5f8d.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50
+      X-Amz-Cf-Id:
+      - 18udDyRYFneI7fpK6xP_tja4gaoS462gv78nH6DKXEsdeS2-nYMk_w==
+    body:
+      encoding: UTF-8
+      string: '{"timezone":"UTC","serverTime":1568866441481,"rateLimits":[{"rateLimitType":"REQUEST_WEIGHT","interval":"MINUTE","intervalNum":1,"limit":1200},{"rateLimitType":"ORDERS","interval":"SECOND","intervalNum":1,"limit":10},{"rateLimitType":"ORDERS","interval":"DAY","intervalNum":1,"limit":100000}],"exchangeFilters":[],"symbols":[{"symbol":"123456","status":"TRADING","baseAsset":"123","baseAssetPrecision":8,"quoteAsset":"456","quotePrecision":8,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"isSpotTradingAllowed":true,"isMarginTradingAllowed":false,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.00000001","maxPrice":"100000.00000000","tickSize":"0.01000000"},{"filterType":"PERCENT_PRICE","multiplierUp":"5","multiplierDown":"0.2","avgPriceMins":5},{"filterType":"LOT_SIZE","minQty":"0.00000001","maxQty":"100000.00000000","stepSize":"0.00000001"},{"filterType":"MIN_NOTIONAL","minNotional":"0.00100000","applyToMarket":true,"avgPriceMins":5},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"BTCUSD","status":"TRADING","baseAsset":"BTC","baseAssetPrecision":8,"quoteAsset":"USD","quotePrecision":2,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"isSpotTradingAllowed":true,"isMarginTradingAllowed":false,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.01","maxPrice":"100000.00","tickSize":"0.01"},{"filterType":"LOT_SIZE","minQty":"0.00000001","maxQty":"100000.00000000","stepSize":"0.00000001"},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"ETHUSD","status":"TRADING","baseAsset":"ETH","baseAssetPrecision":8,"quoteAsset":"USD","quotePrecision":2,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"isSpotTradingAllowed":true,"isMarginTradingAllowed":false,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.01","maxPrice":"100000.00","tickSize":"0.01"},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"XRPUSD","status":"TRADING","baseAsset":"XRP","baseAssetPrecision":8,"quoteAsset":"USD","quotePrecision":2,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"isSpotTradingAllowed":true,"isMarginTradingAllowed":false,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.01","maxPrice":"100000.00","tickSize":"0.01"},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"BCHUSD","status":"TRADING","baseAsset":"BCH","baseAssetPrecision":8,"quoteAsset":"USD","quotePrecision":2,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"isSpotTradingAllowed":true,"isMarginTradingAllowed":false,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.01","maxPrice":"100000.00","tickSize":"0.01"},{"filterType":"LOT_SIZE","minQty":"0.00000001","maxQty":"100000.00000000","stepSize":"0.00000001"},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"LTCUSD","status":"TRADING","baseAsset":"LTC","baseAssetPrecision":8,"quoteAsset":"USD","quotePrecision":2,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"isSpotTradingAllowed":true,"isMarginTradingAllowed":false,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.01","maxPrice":"100000.00","tickSize":"0.01"},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"USDTUSD","status":"TRADING","baseAsset":"USDT","baseAssetPrecision":8,"quoteAsset":"USD","quotePrecision":2,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"isSpotTradingAllowed":true,"isMarginTradingAllowed":false,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.01","maxPrice":"100000.00","tickSize":"0.01"},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"BTCUSDT","status":"TRADING","baseAsset":"BTC","baseAssetPrecision":8,"quoteAsset":"USDT","quotePrecision":8,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"isSpotTradingAllowed":true,"isMarginTradingAllowed":false,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.00000001","maxPrice":"100000.00000000","tickSize":"0.01000000"},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"ETHUSDT","status":"TRADING","baseAsset":"ETH","baseAssetPrecision":8,"quoteAsset":"USDT","quotePrecision":8,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"isSpotTradingAllowed":true,"isMarginTradingAllowed":false,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.00000001","maxPrice":"100000.00000000","tickSize":"0.01000000"},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"XRPUSDT","status":"TRADING","baseAsset":"XRP","baseAssetPrecision":8,"quoteAsset":"USDT","quotePrecision":8,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"isSpotTradingAllowed":true,"isMarginTradingAllowed":false,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.00000001","maxPrice":"100000.00000000","tickSize":"0.00001000"},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"BCHUSDT","status":"TRADING","baseAsset":"BCH","baseAssetPrecision":8,"quoteAsset":"USDT","quotePrecision":8,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"isSpotTradingAllowed":true,"isMarginTradingAllowed":false,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.00000001","maxPrice":"100000.00000000","tickSize":"0.01000000"},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"LTCUSDT","status":"TRADING","baseAsset":"LTC","baseAssetPrecision":8,"quoteAsset":"USDT","quotePrecision":8,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"isSpotTradingAllowed":true,"isMarginTradingAllowed":false,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.00000001","maxPrice":"100000.00000000","tickSize":"0.01000000"},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"BNBUSD","status":"TRADING","baseAsset":"BNB","baseAssetPrecision":8,"quoteAsset":"USD","quotePrecision":2,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"isSpotTradingAllowed":true,"isMarginTradingAllowed":false,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.01","maxPrice":"100000.00","tickSize":"0.01"},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]},{"symbol":"BNBUSDT","status":"TRADING","baseAsset":"BNB","baseAssetPrecision":8,"quoteAsset":"USDT","quotePrecision":8,"orderTypes":["LIMIT","LIMIT_MAKER","MARKET","STOP_LOSS_LIMIT","TAKE_PROFIT_LIMIT"],"icebergAllowed":true,"ocoAllowed":true,"isSpotTradingAllowed":true,"isMarginTradingAllowed":false,"filters":[{"filterType":"PRICE_FILTER","minPrice":"0.00000001","maxPrice":"100000.00000000","tickSize":"0.00010000"},{"filterType":"ICEBERG_PARTS","limit":10},{"filterType":"MAX_NUM_ALGO_ORDERS","maxNumAlgoOrders":5}]}]}'
+    http_version: 
+  recorded_at: Thu, 19 Sep 2019 04:14:01 GMT
+recorded_with: VCR 4.0.0
