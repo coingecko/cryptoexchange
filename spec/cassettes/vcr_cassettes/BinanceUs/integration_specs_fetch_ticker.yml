@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.binance.us/api/v1/ticker/24hr
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.binance.us
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Date:
+      - Thu, 19 Sep 2019 04:14:01 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Mbx-Uuid:
+      - 3e82d21d-60eb-4829-b531-717910ebc3bd
+      X-Mbx-Used-Weight:
+      - '41'
+      X-Mbx-Used-Weight-1m:
+      - '41'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 04e88fffb4f4812c6b1375d0261db985.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50
+      X-Amz-Cf-Id:
+      - QybiTR32OSwaqlqmhxTBwP-VzRQ7IxwG-4lt6AdTJHRfwXS_VOwn_Q==
+    body:
+      encoding: UTF-8
+      string: '[{"symbol":"123456","priceChange":"0.00000000","priceChangePercent":"0.000","weightedAvgPrice":"71.00000000","prevClosePrice":"70.00000000","lastPrice":"71.00000000","lastQty":"1.00000000","bidPrice":"70.00000000","bidQty":"9.00000000","askPrice":"71.00000000","askQty":"17.99980000","openPrice":"71.00000000","highPrice":"71.00000000","lowPrice":"71.00000000","volume":"1.00000000","quoteVolume":"71.00000000","openTime":1568627891609,"closeTime":1568714291609,"firstId":17,"lastId":17,"count":1},{"symbol":"BTCUSD","priceChange":"0.00","priceChangePercent":"0.000","weightedAvgPrice":"10170.00","prevClosePrice":"0.00","lastPrice":"10170.00","lastQty":"0.00200000","bidPrice":"0.00","bidQty":"0.00000000","askPrice":"0.00","askQty":"0.00000000","openPrice":"10170.00","highPrice":"10170.00","lowPrice":"10170.00","volume":"0.00200000","quoteVolume":"20.34","openTime":1568629037876,"closeTime":1568715437876,"firstId":0,"lastId":0,"count":1},{"symbol":"ETHUSD","priceChange":"0.00","priceChangePercent":"0.000","weightedAvgPrice":"213.46","prevClosePrice":"0.00","lastPrice":"213.46","lastQty":"1.00000000","bidPrice":"0.00","bidQty":"0.00000000","askPrice":"0.00","askQty":"0.00000000","openPrice":"213.46","highPrice":"213.46","lowPrice":"213.46","volume":"1.00000000","quoteVolume":"213.46","openTime":1568732291401,"closeTime":1568818691401,"firstId":0,"lastId":0,"count":1},{"symbol":"XRPUSD","priceChange":"0.00","priceChangePercent":"0.000","weightedAvgPrice":"0.32","prevClosePrice":"0.00","lastPrice":"0.32","lastQty":"10.00000000","bidPrice":"0.00","bidQty":"0.00000000","askPrice":"0.00","askQty":"0.00000000","openPrice":"0.32","highPrice":"0.32","lowPrice":"0.32","volume":"10.00000000","quoteVolume":"3.20","openTime":1568732377583,"closeTime":1568818777583,"firstId":0,"lastId":0,"count":1},{"symbol":"BCHUSD","priceChange":"0.00","priceChangePercent":"0.000","weightedAvgPrice":"329.30","prevClosePrice":"0.00","lastPrice":"329.32","lastQty":"0.10000000","bidPrice":"0.00","bidQty":"0.00000000","askPrice":"0.00","askQty":"0.00000000","openPrice":"329.32","highPrice":"329.32","lowPrice":"329.32","volume":"0.10000000","quoteVolume":"32.93","openTime":1568732496599,"closeTime":1568818896599,"firstId":0,"lastId":0,"count":1},{"symbol":"LTCUSD","priceChange":"0.00","priceChangePercent":"0.000","weightedAvgPrice":"77.40","prevClosePrice":"0.00","lastPrice":"77.46","lastQty":"0.10000000","bidPrice":"0.00","bidQty":"0.00000000","askPrice":"0.00","askQty":"0.00000000","openPrice":"77.46","highPrice":"77.46","lowPrice":"77.46","volume":"0.10000000","quoteVolume":"7.74","openTime":1568732559552,"closeTime":1568818959552,"firstId":0,"lastId":0,"count":1},{"symbol":"USDTUSD","priceChange":"0.00","priceChangePercent":"0.000","weightedAvgPrice":"1.00","prevClosePrice":"0.00","lastPrice":"1.00","lastQty":"0.01000000","bidPrice":"0.00","bidQty":"0.00000000","askPrice":"0.00","askQty":"0.00000000","openPrice":"1.00","highPrice":"1.00","lowPrice":"1.00","volume":"0.01000000","quoteVolume":"0.01","openTime":1568629158912,"closeTime":1568715558912,"firstId":0,"lastId":0,"count":1},{"symbol":"BTCUSDT","priceChange":"0.00000000","priceChangePercent":"0","weightedAvgPrice":"0","prevClosePrice":"0.00000000","lastPrice":"0.00000000","lastQty":"0.00000000","bidPrice":"0.00000000","bidQty":"0.00000000","askPrice":"0.00000000","askQty":"0.00000000","openPrice":"0.00000000","highPrice":"0.00000000","lowPrice":"0.00000000","volume":"0.00000000","quoteVolume":"0.00000000","openTime":1568611799029,"closeTime":1568698199029,"firstId":-1,"lastId":-1,"count":0},{"symbol":"ETHUSDT","priceChange":"0.00000000","priceChangePercent":"0","weightedAvgPrice":"0","prevClosePrice":"0.00000000","lastPrice":"0.00000000","lastQty":"0.00000000","bidPrice":"0.00000000","bidQty":"0.00000000","askPrice":"0.00000000","askQty":"0.00000000","openPrice":"0.00000000","highPrice":"0.00000000","lowPrice":"0.00000000","volume":"0.00000000","quoteVolume":"0.00000000","openTime":1568611799094,"closeTime":1568698199094,"firstId":-1,"lastId":-1,"count":0},{"symbol":"XRPUSDT","priceChange":"0.00000000","priceChangePercent":"0","weightedAvgPrice":"0","prevClosePrice":"0.00000000","lastPrice":"0.00000000","lastQty":"0.00000000","bidPrice":"0.00000000","bidQty":"0.00000000","askPrice":"0.00000000","askQty":"0.00000000","openPrice":"0.00000000","highPrice":"0.00000000","lowPrice":"0.00000000","volume":"0.00000000","quoteVolume":"0.00000000","openTime":1568611799104,"closeTime":1568698199104,"firstId":-1,"lastId":-1,"count":0},{"symbol":"BCHUSDT","priceChange":"0.00000000","priceChangePercent":"0","weightedAvgPrice":"0","prevClosePrice":"0.00000000","lastPrice":"0.00000000","lastQty":"0.00000000","bidPrice":"0.00000000","bidQty":"0.00000000","askPrice":"0.00000000","askQty":"0.00000000","openPrice":"0.00000000","highPrice":"0.00000000","lowPrice":"0.00000000","volume":"0.00000000","quoteVolume":"0.00000000","openTime":1568611799109,"closeTime":1568698199109,"firstId":-1,"lastId":-1,"count":0},{"symbol":"LTCUSDT","priceChange":"0.00000000","priceChangePercent":"0","weightedAvgPrice":"0","prevClosePrice":"0.00000000","lastPrice":"0.00000000","lastQty":"0.00000000","bidPrice":"0.00000000","bidQty":"0.00000000","askPrice":"0.00000000","askQty":"0.00000000","openPrice":"0.00000000","highPrice":"0.00000000","lowPrice":"0.00000000","volume":"0.00000000","quoteVolume":"0.00000000","openTime":1568611799115,"closeTime":1568698199115,"firstId":-1,"lastId":-1,"count":0},{"symbol":"BNBUSD","priceChange":"0.00","priceChangePercent":"0.000","weightedAvgPrice":"22.65","prevClosePrice":"0.00","lastPrice":"22.65","lastQty":"1.00000000","bidPrice":"0.00","bidQty":"0.00000000","askPrice":"0.00","askQty":"0.00000000","openPrice":"22.65","highPrice":"22.65","lowPrice":"22.65","volume":"1.00000000","quoteVolume":"22.65","openTime":1568732604352,"closeTime":1568819004352,"firstId":0,"lastId":0,"count":1},{"symbol":"BNBUSDT","priceChange":"0.00000000","priceChangePercent":"0","weightedAvgPrice":"0","prevClosePrice":"0.00000000","lastPrice":"0.00000000","lastQty":"0.00000000","bidPrice":"0.00000000","bidQty":"0.00000000","askPrice":"0.00000000","askQty":"0.00000000","openPrice":"0.00000000","highPrice":"0.00000000","lowPrice":"0.00000000","volume":"0.00000000","quoteVolume":"0.00000000","openTime":1568692050584,"closeTime":1568778450584,"firstId":-1,"lastId":-1,"count":0}]'
+    http_version: 
+  recorded_at: Thu, 19 Sep 2019 04:14:01 GMT
+recorded_with: VCR 4.0.0
