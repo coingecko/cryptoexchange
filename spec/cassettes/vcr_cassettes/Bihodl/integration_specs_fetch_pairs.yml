@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://service.bihodl.com/market/symbol-thumb
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - service.bihodl.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.16.0
+      Date:
+      - Thu, 19 Sep 2019 04:40:49 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      X-Application-Context:
+      - bitrade-market:6004
+    body:
+      encoding: UTF-8
+      string: '[{"symbol":"GT/USDT","open":0.7115,"high":0.7169,"low":0.7115,"close":0.7169,"chg":0.0076,"change":0.0054,"volume":11289.4684,"turnover":8997.25960715,"lastDayClose":0.7115,"usdRate":0.7169,"baseUsdRate":1},{"symbol":"CKB/USDT","open":0.009885,"high":0.00999500,"low":0.009878,"close":0.009883,"chg":-0.0003,"change":-0.000002,"volume":1647886.0899,"turnover":24565.979069736300,"lastDayClose":0.009885,"usdRate":0.009883,"baseUsdRate":1},{"symbol":"CPU/USDT","open":0.005797,"high":0.005797,"low":0.00510000,"close":0.00510000,"chg":-0.1203,"change":-0.00069700,"volume":53673.8040,"turnover":454.686366474800,"lastDayClose":0.005797,"usdRate":0.00510000,"baseUsdRate":1},{"symbol":"DOT/USDT","open":125.4230,"high":125.5970,"low":124.9000,"close":124.9984,"chg":-0.0034,"change":-0.4246,"volume":2550.6699,"turnover":424647.24685236,"lastDayClose":125.4230,"usdRate":124.9984,"baseUsdRate":1},{"symbol":"KSM/USDT","open":5.9360,"high":5.9372,"low":5.9200,"close":5.9244,"chg":-0.0020,"change":-0.0116,"volume":4303.2474,"turnover":35860.49659421,"lastDayClose":5.9360,"usdRate":5.9244,"baseUsdRate":1},{"symbol":"ONE/USDT","open":0.007990,"high":0.008380,"low":0.007510,"close":0.007520,"chg":-0.0589,"change":-0.000470,"volume":748191.6036,"turnover":9135.9370971137,"lastDayClose":0.007990,"usdRate":0.007520,"baseUsdRate":1},{"symbol":"PCX/USDT","open":2.3049,"high":2.42000000,"low":2.0972,"close":2.1670,"chg":-0.0599,"change":-0.1379,"volume":6277.2712,"turnover":21388.07094799,"lastDayClose":2.3049,"usdRate":2.1670,"baseUsdRate":1},{"symbol":"RRB/USDT","open":1.3710,"high":1.41000000,"low":1.3710,"close":1.41000000,"chg":0.0285,"change":0.03900000,"volume":203.7500,"turnover":30268.4621663000000000,"lastDayClose":1.3710,"usdRate":1.41000000,"baseUsdRate":1},{"symbol":"STX/USDT","open":0.2476,"high":0.2482,"low":0.2459,"close":0.2470,"chg":-0.0025,"change":-0.0006,"volume":71314.9684,"turnover":89855.14662168,"lastDayClose":0.2476,"usdRate":0.2470,"baseUsdRate":1},{"symbol":"ALGO/USDT","open":0.3500,"high":0.3520,"low":0.3070,"close":0.3120,"chg":-0.1086,"change":-0.0380,"volume":423670.3488,"turnover":185350.80874925,"lastDayClose":0.3500,"usdRate":0.3120,"baseUsdRate":1},{"symbol":"EPIC/USDT","open":0.36000000,"high":0.370000,"low":0.33000100,"close":0.330003,"chg":-0.0834,"change":-0.02999700,"volume":19326.5512,"turnover":11391.2295699586000000,"lastDayClose":0.36000000,"usdRate":0.330003,"baseUsdRate":1},{"symbol":"GRAM/USDT","open":0.9197,"high":0.95000000,"low":0.88000000,"close":0.88000000,"chg":-0.0432,"change":-0.03970000,"volume":972809.8112,"turnover":1131517.16548549,"lastDayClose":0.9197,"usdRate":0.88000000,"baseUsdRate":1},{"symbol":"GT-P/USDT","open":0.22000000,"high":0.230,"low":0.16000000,"close":0.16000000,"chg":-0.2728,"change":-0.06000000,"volume":2807.7900,"turnover":6426.50840,"lastDayClose":0.22000000,"usdRate":0.16000000,"baseUsdRate":1},{"symbol":"NYZO/USDT","open":0.1735,"high":0.1874,"low":0.1734,"close":0.1829,"chg":0.0542,"change":0.0094,"volume":174626.0370,"turnover":46249.2872428100000000,"lastDayClose":0.1735,"usdRate":0.1829,"baseUsdRate":1},{"symbol":"OK-P/USDT","open":0.260,"high":0.265,"low":0.260,"close":0.265,"chg":0.0193,"change":0.005,"volume":2109.0600,"turnover":7754.97290,"lastDayClose":0.260,"usdRate":0.265,"baseUsdRate":1},{"symbol":"RHOC/USDT","open":0.05250000,"high":0.05250000,"low":0.05000000,"close":0.0511,"chg":-0.0267,"change":-0.00140000,"volume":408722.2193,"turnover":36174.590165750000,"lastDayClose":0.05250000,"usdRate":0.0511,"baseUsdRate":1},{"symbol":"SPOK/USDT","open":0.017600,"high":0.01870000,"low":0.01715000,"close":0.018000,"chg":0.0228,"change":0.000400,"volume":5957408.9905,"turnover":127103.1840804052000000,"lastDayClose":0.017600,"usdRate":0.018000,"baseUsdRate":1},{"symbol":"BTC/USDT","open":10172.28,"high":10243.37,"low":9667.43,"close":9809.40,"chg":-0.0357,"change":-362.88,"volume":1282.3583,"turnover":19898455.6547238526,"lastDayClose":10172.28,"usdRate":9809.40,"baseUsdRate":1},{"symbol":"ETH/USDT","open":217.43000000,"high":217.43000000,"low":202.65,"close":204.12,"chg":-0.0613,"change":-13.31000000,"volume":10298.8560,"turnover":2526663.3423535,"lastDayClose":217.43000000,"usdRate":204.12,"baseUsdRate":1},{"symbol":"HB-P/USDT","open":0.495,"high":0.496,"low":0.495,"close":0.496,"chg":0.0021,"change":0.001,"volume":9011.1100,"turnover":15439.81475,"lastDayClose":0.495,"usdRate":0.496,"baseUsdRate":1}]'
+    http_version: 
+  recorded_at: Thu, 19 Sep 2019 04:40:50 GMT
+recorded_with: VCR 4.0.0

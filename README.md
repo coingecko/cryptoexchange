@@ -51,6 +51,7 @@ Or install it yourself as:
 | Bibox             | Y       | Y [x]      | Y [limit: 200]    |         | Y           | Y        | bibox             |       |
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
 | BigONE            | Y       | Y [x]      | Y       |         | Y           | Y        | bigone            |       |
+| BiHODL            | Y       | Y [x]      | Y       |         | Y           | Y        | bihodl            |       |
 | Biki              | Y       | Y [x]      |         |         | Y           | Y        | biki              |       |
 | Bilaxy            | Y       | Y [x]      | Y       |         | Y           | Y        | bilaxy            |       |
 | Binance           | Y       | Y [x]      | Y [limit: 500]   |         | Y           | Y        | binance           |       |
