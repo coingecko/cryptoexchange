@@ -58,7 +58,8 @@ Or install it yourself as:
 | Binance Futures   | Y       | Y [x]      |         |         | Y           | Y        | binance_futures   |futures|
 | Binance Jersey    | Y       | Y [x]      |         |         | Y           | Y        | binance_jersey    |       |
 | Binance Uganda    | Y       | Y [x]      |         |         | Y           | Y        | binance_uganda    |       |
-| Bione             | Y       | Y [x]      |         |         | Y           |          | bione             |       |
+| Binance Us        | Y       | Y [x]      |         |         | Y           | Y        | binance_us        |       |
+| Bione             | Y       | Y [x]      | Y       |         | Y           |          | bione             |       |
 | Birake            | Y       |            |         |         | Y           | Y        | birake            |       |
 | Bishang           | Y       |            |         |         | Y           |          | bishang           |       |
 | Bisq              | Y       |            | Y       |         | Y           |          | bisq              |       |
