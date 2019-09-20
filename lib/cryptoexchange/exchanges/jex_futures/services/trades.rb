@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Jex
+  module JexFutures
     module Services
       class Trades < Cryptoexchange::Services::Market
         def fetch(market_pair)
@@ -8,7 +8,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Jex::Market::API_URL}/spot/trades?symbol=#{market_pair.base}#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::JexFutures::Market::API_URL}/contract/trades?symbol=#{market_pair.base}#{market_pair.target}"
         end
 
 
@@ -23,7 +23,7 @@ module Cryptoexchange::Exchanges
             tr.amount    = trade['qty']
             tr.timestamp = trade['time'] / 1000
             tr.payload   = trade
-            tr.market    = Jex::Market::NAME
+            tr.market    = JexFutures::Market::NAME
             tr
           end
         end
