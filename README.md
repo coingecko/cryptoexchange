@@ -231,7 +231,7 @@ Or install it yourself as:
 | Dakuce            | Y       | Y          | Y       |         | Y           |          | dakuce            |       |
 | Darb Finance      | Y       | Y [x]      | Y       |         | Y           |          | darb_finance      |       |
 | Daybit            | Y       |            |         |         | Y           | Y        | daybit            |       |
-| Dcoin             | Y       | N          | N       |         | Y           | Y        | dcoin             |       |
+| Dcoin             | Y       | Y [x]      | Y       |         | Y           | Y        | dcoin             |       |
 | Ddex              | Y       | Y          | Y       |         | Y           | Y        | ddex              |       |
 | DEEX              | Y       |            |         |         | Y           |          | deex              |       |
 | Deribit           | Y       | Y [x]      | Y       | Y       | Y           | Y        | deribit           |futures|
