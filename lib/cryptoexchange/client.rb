@@ -153,7 +153,7 @@ module Cryptoexchange
       else
         market_url = market_class.new.ticker_url
       end
-    end 
+    end
 
     def order_book_url(market_pair)
       exchange = market_pair.market
@@ -165,14 +165,14 @@ module Cryptoexchange
       else
         order_book_url = order_book_class.new.ticker_url
       end
-    end 
+    end
 
     def trades_url(market_pair)
       exchange = market_pair.market
       trades_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Trades"
       trades_class = Object.const_get(trades_classname)
       trades_url = trades_class.new.ticker_url(market_pair)
-    end            
+    end
 
     private
 
