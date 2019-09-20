@@ -60,4 +60,9 @@ RSpec.describe 'Kumex integration specs' do
     expect(trade.payload).to_not be nil
     expect(trade.market).to eq 'kumex'
   end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'kumex', base: xbt_usd_pair.base, target: xbt_usd_pair.target
+    expect(trade_page_url).to eq "https://www.kumex.com/trade/index/XBTUSDM"
+  end
 end
