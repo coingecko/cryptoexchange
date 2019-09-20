@@ -327,6 +327,7 @@ Or install it yourself as:
 | Kraken Futures    | Y       | Y [x]      | Y       |         | Y           | Y        | kraken_futures    |       |
 | Kryptono          | Y       | Y [x]      | Y       |         | User-Defined| Y        | kryptono          |       |
 | Kucoin            | Y       | Y [x]      | N       |         | Y           | Y        | kucoin            |       |
+| Kumex             | Y       | Y [x]      | N       |         | Y           | Y        | kumex             |       |
 | Kuna              | Y       | Y [x]      | Y       |         | User-Defined| Y        | kuna              |       |
 | KyberNetwork      | Y       | N          | N       |         | Y           | Y        | kyber_network     |       |
 | LakeBTC           | Y       | Y [X]      |         |         | Y           | Y        | lakebtc           |       |
