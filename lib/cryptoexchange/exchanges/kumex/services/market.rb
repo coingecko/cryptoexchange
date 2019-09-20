@@ -30,7 +30,7 @@ module Cryptoexchange::Exchanges
           ticker.market    = Kumex::Market::NAME
 
           ticker.last      = NumericHelper.to_d(output['price'])
-          ticker.volume    = volume['data']['volume'].to_f
+          ticker.volume    = NumericHelper.divide(NumericHelper.to_d(volume['data']['volume'].to_f), ticker.last)
           ticker.bid       = NumericHelper.to_d(output['bestBidPrice'])
           ticker.ask       = NumericHelper.to_d(output['bestAskPrice'])
           ticker.timestamp = nil
