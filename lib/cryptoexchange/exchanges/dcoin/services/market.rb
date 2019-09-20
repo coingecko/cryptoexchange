@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Dcoin::Market::API_URL}/allticker"
+          "#{Cryptoexchange::Exchanges::Dcoin::Market::API_URL}/api/v1/allticker"
         end
 
         def adapt_all(output)
