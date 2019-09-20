@@ -312,7 +312,8 @@ Or install it yourself as:
 | Iqfinex           | Y       | Y          | Y       |         | Y           | Y        | iqfinex           |       |
 | Ironex            | Y       |            |         |         | Y           |          | ironex            |       |
 | Itbit             | Y       | Y [x]      | Y       |         | User-Defined|          | itbit             |       |
-| Jex               | Y       | N          | N       |         | Y           |          | jex               |       |
+| Jex               | Y       | Y [x]      | N       |         | Y           | Y        | jex               |       |
+| JexFutures        | Y       | Y [x]      | N       |         | Y           | Y        | jex_future        |       |
 | Joyso             | Y       | Y [x]      |         |         | Y           |          | joyso             |       |
 | Jubi              | Y       |            |         |         | Y           |          | jubi              |       |
 | Kairex            | Y       | Y [x]      |         |         | Y           |          | kairex            |       |
