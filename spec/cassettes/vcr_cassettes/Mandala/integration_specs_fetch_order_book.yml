@@ -1,0 +1,111 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://zapi.mandalaex.com/market/get-open-orders/PAX_BTC/BUY/10/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - zapi.mandalaex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Sep 2019 21:36:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '920'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=de6b549195a2d116b99f905d25dbf50691569101809; expires=Sun, 20-Sep-20
+        21:36:49 GMT; path=/; domain=.mandalaex.com; HttpOnly; Secure
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Frame-Options:
+      - DENY
+      Referrer-Policy:
+      - no-referrer
+      Content-Security-Policy:
+      - script-src 'self' https://cdnjs.cloudflare.com; object-src 'none'
+      Strict-Transport-Security:
+      - max-age=15552000
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 519f2d437c0ca3eb-PIT
+    body:
+      encoding: UTF-8
+      string: '{"status":"Success","errorMessage":null,"data":{"Pair":"PAX_BTC","Type":"BUY","Orders":[{"MarketType":"PAX","CurrencyType":"BTC","Rate":9954.71100000,"Volume":0.00200000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9954.50100000,"Volume":0.00070000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9952.81100000,"Volume":0.05500000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9951.79100000,"Volume":0.44550000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9950.97200000,"Volume":0.17400000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9950.09200000,"Volume":0.00100000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9948.73200000,"Volume":0.02460000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9947.10300000,"Volume":0.05600000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9947.09300000,"Volume":0.18020000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9947.08300000,"Volume":0.11390000}]}}'
+    http_version: 
+  recorded_at: Sat, 21 Sep 2019 21:36:50 GMT
+- request:
+    method: get
+    uri: https://zapi.mandalaex.com/market/get-open-orders/PAX_BTC/SELL/10/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - zapi.mandalaex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Sep 2019 21:36:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '921'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d67d6afdabd87244f9bdcad228e9f8d261569101811; expires=Sun, 20-Sep-20
+        21:36:51 GMT; path=/; domain=.mandalaex.com; HttpOnly; Secure
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Frame-Options:
+      - DENY
+      Referrer-Policy:
+      - no-referrer
+      Content-Security-Policy:
+      - script-src 'self' https://cdnjs.cloudflare.com; object-src 'none'
+      Strict-Transport-Security:
+      - max-age=15552000
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 519f2d4ebdb9a409-PIT
+    body:
+      encoding: UTF-8
+      string: '{"status":"Success","errorMessage":null,"data":{"Pair":"PAX_BTC","Type":"SELL","Orders":[{"MarketType":"PAX","CurrencyType":"BTC","Rate":9963.75000000,"Volume":0.05430000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9964.72100000,"Volume":0.07340000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9964.81100000,"Volume":0.06530000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9965.42100000,"Volume":0.07440000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9965.43100000,"Volume":0.03950000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9965.64100000,"Volume":0.09050000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9965.82100000,"Volume":0.08640000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9965.83100000,"Volume":0.41620000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9967.11100000,"Volume":0.09210000},{"MarketType":"PAX","CurrencyType":"BTC","Rate":9967.50100000,"Volume":0.00330000}]}}'
+    http_version: 
+  recorded_at: Sat, 21 Sep 2019 21:36:51 GMT
+recorded_with: VCR 4.0.0
