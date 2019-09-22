@@ -19,8 +19,7 @@ module Cryptoexchange::Exchanges
           base = market_pair.base
           target = market_pair.target
 
-          url = "#{Cryptoexchange::Exchanges::Mandala::Market::API_URL}/market/get-open-orders/#{target}_#{base}/#{side}/10/"
-
+          "#{Cryptoexchange::Exchanges::Mandala::Market::API_URL}/market/get-open-orders/#{target}_#{base}/#{side}/10/"
         end
 
         def adapt(buyOutput, sellOutput, market_pair)
