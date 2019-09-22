@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new(
                 base:   base,
                 target: target,
-                market: Maplechange::Market::NAME
+                market: Mandala::Market::NAME
             )
           end
         end
