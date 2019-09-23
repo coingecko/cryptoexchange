@@ -350,6 +350,7 @@ Or install it yourself as:
 | Myspeedtrade      | Y       | Y          |         |         | Y           |          | myspeedtrade      |       |
 | Nanex             | Y       | N          | N       | N       | Y           |          | nanex             |       |
 | Nanu.Exchange     | Y       | Y          | Y       |         | Y           |          | nanu_exchange     |       |
+| Nash              | Y       |            |         |         | Y           |          | nash              |       |
 | NebliDex          | Y       | N          | N       | N       | Y           | N        | neblidex          |       |
 | Nebula            | Y       | N          | Y       |         | Y           |          | nebula            |       |
 | Negociecoins      | Y       | Y [x]      | Y       |         | User-Defined|          | negociecoins      |       |
