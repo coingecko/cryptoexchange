@@ -10,10 +10,6 @@ module Cryptoexchange::Exchanges
 
         def fetch
           output = super ticker_url
-          # need to add key for client match the correct ticker
-          output = output.each do |o|
-                     o.merge!(base: o["symbol"].chomp("PFC"), target: "USD", contract_interval: "Perpetual")
-                   end
           adapt_all(output)
         end
 
@@ -23,11 +19,16 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |ticker|
+            base = ticker["base"]
+            target = ticker["target"]
+            inst_id = ticker["symbol"]
+            contract_interval = Cryptoexchange::Exchanges::BtseFutures::Market.calculate_contract_interval(ticker["contract_start"], ticker["contract_end"])
+
             market_pair = Cryptoexchange::Models::MarketPair.new({
-                            base: ticker[:base],
-                            target: ticker[:target],
-                            inst_id: ticker["symbol"],
-                            contract_interval: ticker[:contract_interval],
+                            base: base,
+                            target: target,
+                            inst_id: inst_id,
+                            contract_interval: contract_interval,
                             market: BtseFutures::Market::NAME
                           })
             adapt(ticker, market_pair)

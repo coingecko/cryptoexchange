@@ -11,10 +11,10 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output.map do |ticker|
-            base = ticker["symbol"].chomp("PFC") 
-            target = "USD"
+            base = ticker["base"]
+            target = ticker["target"]
             inst_id = ticker["symbol"]
-            contract_interval = "Perpetual"
+            contract_interval = Cryptoexchange::Exchanges::BtseFutures::Market.calculate_contract_interval(ticker["contract_start"], ticker["contract_end"])
 
             Cryptoexchange::Models::MarketPair.new({
               base: base,
