@@ -7,7 +7,7 @@ module Cryptoexchange::Exchanges
             true
           end
         end
-        
+
         def fetch(market_pair)
           raw_output = HTTP['user-agent' => 'curl/7.54.0'].get "#{ticker_url(market_pair)}"
           output = JSON.parse(raw_output)
@@ -15,7 +15,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Btcbox::Market::API_URL}/ticker/#{market_pair.base}"
+          "#{Cryptoexchange::Exchanges::Btcbox::Market::API_URL}/ticker?coin=#{market_pair.base.downcase}"
         end
 
         def adapt(output, market_pair)
