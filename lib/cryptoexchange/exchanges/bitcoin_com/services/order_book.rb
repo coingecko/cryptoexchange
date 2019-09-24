@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Bitcoin
+  module BitcoinCom
     module Services
       class OrderBook < Cryptoexchange::Services::Market
         class << self
@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def order_book_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitcoin::Market::API_URL}/orderbook/#{market_pair.base}#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::BitcoinCom::Market::API_URL}/orderbook/#{market_pair.base}#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
@@ -22,7 +22,7 @@ module Cryptoexchange::Exchanges
 
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
-          order_book.market    = Bitcoin::Market::NAME
+          order_book.market    = BitcoinCom::Market::NAME
           order_book.asks      = adapt_orders(output['ask'])
           order_book.bids      = adapt_orders(output['bid'])
           order_book.payload   = output

@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Bitcoin
+  module BitcoinCom
     module Services
       class Market < Cryptoexchange::Services::Market
         class << self
@@ -14,14 +14,14 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitcoin::Market::API_URL}/ticker/#{market_pair.base}#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::BitcoinCom::Market::API_URL}/ticker/#{market_pair.base}#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
-          ticker.market = Bitcoin::Market::NAME
+          ticker.market = BitcoinCom::Market::NAME
           ticker.ask = NumericHelper.to_d(output["ask"])
           ticker.bid = NumericHelper.to_d(output["bid"])
           ticker.last = NumericHelper.to_d(output["last"])

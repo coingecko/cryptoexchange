@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Bitcoin
+  module BitcoinCom
     module Services
       class Trades < Cryptoexchange::Services::Market
         def fetch(market_pair)
@@ -8,7 +8,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitcoin::Market::API_URL}/trades/#{market_pair.base}#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::BitcoinCom::Market::API_URL}/trades/#{market_pair.base}#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
@@ -22,7 +22,7 @@ module Cryptoexchange::Exchanges
             tr.type      = trade['side']
             tr.timestamp = Time.parse(trade['timestamp']).to_i
             tr.payload   = trade
-            tr.market    = Bitcoin::Market::NAME
+            tr.market    = BitcoinCom::Market::NAME
             tr
           end
         end
