@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Iqfinex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_usdc) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDC', market: 'iqfinex') }
+  let(:btc_usdc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDC', market: 'iqfinex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('iqfinex')
@@ -15,12 +15,12 @@ RSpec.describe 'Iqfinex integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url 'iqfinex', base: btc_usdc.base, target: btc_usdc.target
+    trade_page_url = client.trade_page_url 'iqfinex', base: btc_usdc_pair.base, target: btc_usdc_pair.target
     expect(trade_page_url).to eq "https://www.iqfinex.com/classic/BTCUSDC"
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_usdc)
+    ticker = client.ticker(btc_usdc_pair)
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USDC'
@@ -37,7 +37,7 @@ RSpec.describe 'Iqfinex integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(btc_usdc)
+    order_book = client.order_book(btc_usdc_pair)
 
     expect(order_book.base).to eq 'BTC'
     expect(order_book.target).to eq 'USDC'
@@ -54,7 +54,7 @@ RSpec.describe 'Iqfinex integration specs' do
   end
 
   it 'fetch trade' do
-    trades = client.trades(btc_usdc)
+    trades = client.trades(btc_usdc_pair)
     trade  = trades.sample
 
     expect(trades).to_not be_empty
