@@ -76,7 +76,7 @@ Or install it yourself as:
 | Bitbox (Public)   | Y       |            |         |         | Y           | Y        | bitbox            |       |
 | Bitc3             | Y       | N          | N       |         | Y           | Y        | bitc3             |       |
 | Bitci             | Y       | Y [x]      | Y       |         | Y           | Y        | bitci             |       |
-| Bitcoin           | Y       | Y [x]      | Y       |         | Y           | Y        | bitcoin           |       |
+| BitcoinCom        | Y       | Y [x]      | Y       |         | Y           | Y        | bitcoin_com       |       |
 | Bitconnect        | Y       |            |         |         | Y           |          | bitconnect        |       |
 | Bitebtc           | Y       | Y [x]      | Y       |         | Y           | Y        | bitebtc           |       |
 | Bitex.la          | Y       | Y [x]      |         |         | Y           |          | bitex             |       |

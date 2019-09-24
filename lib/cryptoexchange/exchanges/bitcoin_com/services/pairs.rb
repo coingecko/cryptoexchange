@@ -1,8 +1,8 @@
 module Cryptoexchange::Exchanges
-  module Bitcoin
+  module BitcoinCom
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitcoin::Market::API_URL}/symbol"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::BitcoinCom::Market::API_URL}/symbol"
 
         def fetch
           output = super
@@ -15,7 +15,7 @@ module Cryptoexchange::Exchanges
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: pair["baseCurrency"],
                               target: pair["quoteCurrency"],
-                              market: Bitcoin::Market::NAME,
+                              market: BitcoinCom::Market::NAME,
                             )
           end
           market_pairs

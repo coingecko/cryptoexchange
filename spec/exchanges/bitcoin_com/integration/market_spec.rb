@@ -1,21 +1,21 @@
 require 'spec_helper'
 
-RSpec.describe 'Bitcoin integration specs' do
+RSpec.describe 'BitcoinCom integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:eth_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'eth', target: 'btc', market: 'bitcoin') }
+  let(:eth_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'eth', target: 'btc', market: 'bitcoin_com') }
 
   it 'fetch pairs' do
-    pairs = client.pairs('bitcoin')
+    pairs = client.pairs('bitcoin_com')
     expect(pairs).not_to be_empty
 
     pair = pairs.sample
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
-    expect(pair.market).to eq 'bitcoin'
+    expect(pair.market).to eq 'bitcoin_com'
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url 'bitcoin', base: eth_btc_pair.base, target: eth_btc_pair.target
+    trade_page_url = client.trade_page_url 'bitcoin_com', base: eth_btc_pair.base, target: eth_btc_pair.target
     expect(trade_page_url).to eq "https://exchange.bitcoin.com/exchange/ETH-to-BTC"
   end
 
@@ -24,7 +24,7 @@ RSpec.describe 'Bitcoin integration specs' do
 
     expect(ticker.base).to eq 'ETH'
     expect(ticker.target).to eq 'BTC'
-    expect(ticker.market).to eq 'bitcoin'
+    expect(ticker.market).to eq 'bitcoin_com'
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
     expect(ticker.last).to be_a Numeric
@@ -41,7 +41,7 @@ RSpec.describe 'Bitcoin integration specs' do
 
     expect(order_book.base).to eq 'ETH'
     expect(order_book.target).to eq 'BTC'
-    expect(order_book.market).to eq 'bitcoin'
+    expect(order_book.market).to eq 'bitcoin_com'
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
     expect(order_book.asks.first.price).to_not be_nil
@@ -63,6 +63,6 @@ RSpec.describe 'Bitcoin integration specs' do
     expect(trade.amount).to_not be_nil
     expect(trade.timestamp).to be_a Numeric
     expect(trade.payload).to_not be nil
-    expect(trade.market).to eq 'bitcoin'
+    expect(trade.market).to eq 'bitcoin_com'
   end
 end
