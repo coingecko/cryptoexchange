@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://datacenter.iqfinex.com/v1/trades/BTCUSDT?sort=DESC
+    uri: https://datacenter.iqfinex.com/v1/trades/BTCUSDC?sort=DESC
     body:
       encoding: UTF-8
       string: ''
@@ -12,7 +12,7 @@ http_interactions:
       Host:
       - datacenter.iqfinex.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
@@ -21,11 +21,11 @@ http_interactions:
       Server:
       - nginx/1.14.0 (Ubuntu)
       Date:
-      - Wed, 12 Dec 2018 02:08:08 GMT
+      - Tue, 24 Sep 2019 04:29:55 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '1084'
+      - '1088'
       Connection:
       - close
       X-Xss-Protection:
@@ -51,12 +51,12 @@ http_interactions:
       Access-Control-Max-Age:
       - '360000'
       Etag:
-      - W/"43c-DJL+BhvvcFibs67Z1NaN+s9r0CY"
+      - W/"440-UvBNKCBQBDoVqO+dSwg2CFHWHNc"
       Access-Controll-Allow-Origin:
       - "*"
     body:
       encoding: UTF-8
-      string: '{"status":200,"data":{"count":155317,"rows":[{"id":877425,"type":"sell","volume":0.030381,"price":3371.39,"close_time":1544580451,"asset":"BTCUSDT"},{"id":877419,"type":"buy","volume":0.138392,"price":3367.47,"close_time":1544580402,"asset":"BTCUSDT"},{"id":877415,"type":"sell","volume":0.039498,"price":3364.77,"close_time":1544580390,"asset":"BTCUSDT"},{"id":877409,"type":"sell","volume":0.032972,"price":3365.26,"close_time":1544580362,"asset":"BTCUSDT"},{"id":877405,"type":"buy","volume":0.027527,"price":3367.76,"close_time":1544580328,"asset":"BTCUSDT"},{"id":877399,"type":"sell","volume":0.022671,"price":3363.83,"close_time":1544580323,"asset":"BTCUSDT"},{"id":877396,"type":"buy","volume":0.036257,"price":3367.59,"close_time":1544580305,"asset":"BTCUSDT"},{"id":877395,"type":"sell","volume":0.094661,"price":3367.54,"close_time":1544580279,"asset":"BTCUSDT"},{"id":877391,"type":"sell","volume":0.076494,"price":3368.81,"close_time":1544580253,"asset":"BTCUSDT"},{"id":877387,"type":"sell","volume":0.031455,"price":3367.77,"close_time":1544580233,"asset":"BTCUSDT"}]}}'
+      string: '{"status":200,"data":{"count":401534,"rows":[{"id":9744255,"type":"sell","volume":0.001,"price":9619.15,"close_time":1569299204,"asset":"BTCUSDC"},{"id":9744247,"type":"sell","volume":0.014841,"price":9620.62,"close_time":1569299049,"asset":"BTCUSDC"},{"id":9744202,"type":"sell","volume":0.002298,"price":9588.82,"close_time":1569298298,"asset":"BTCUSDC"},{"id":9744195,"type":"buy","volume":0.00525,"price":9793.34,"close_time":1569298227,"asset":"BTCUSDC"},{"id":9744181,"type":"buy","volume":0.007448,"price":9889.66,"close_time":1569298144,"asset":"BTCUSDC"},{"id":9744150,"type":"sell","volume":0.020235,"price":9600.32,"close_time":1569298018,"asset":"BTCUSDC"},{"id":9744127,"type":"buy","volume":0.002415,"price":9801.8,"close_time":1569297733,"asset":"BTCUSDC"},{"id":9744096,"type":"buy","volume":0.005026,"price":9792.93,"close_time":1569297081,"asset":"BTCUSDC"},{"id":9744082,"type":"sell","volume":0.013466,"price":9607.67,"close_time":1569296835,"asset":"BTCUSDC"},{"id":9744060,"type":"sell","volume":0.060762,"price":9620.05,"close_time":1569296534,"asset":"BTCUSDC"}]}}'
     http_version: 
-  recorded_at: Wed, 12 Dec 2018 02:08:08 GMT
+  recorded_at: Tue, 24 Sep 2019 04:29:55 GMT
 recorded_with: VCR 4.0.0
