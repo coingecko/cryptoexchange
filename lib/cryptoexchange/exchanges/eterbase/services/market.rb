@@ -23,13 +23,15 @@ module Cryptoexchange::Exchanges
 
           output.map do |ticker|
             pair = pairs.find {|i| i.inst_id == ticker['marketId'] }
+            next if pair.nil?
+
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: pair.base,
               target: pair.target,
               market: Eterbase::Market::NAME
             )
             adapt(ticker, market_pair)
-          end
+          end.compact
         end
 
         def adapt(output, market_pair)
@@ -40,7 +42,7 @@ module Cryptoexchange::Exchanges
           ticker.last      = NumericHelper.to_d(output['price'])
           ticker.high      = NumericHelper.to_d(output['high'])
           ticker.low      = NumericHelper.to_d(output['low'])
-          ticker.volume   = NumericHelper.to_d(output['volume'])
+          ticker.volume   = NumericHelper.to_d(output['volumeBase'])
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
