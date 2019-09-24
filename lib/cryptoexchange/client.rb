@@ -34,9 +34,8 @@ module Cryptoexchange
       else
         tickers = market.fetch
         tickers.find do |t|
-          t.base.casecmp(market_pair.base) == 0 &&
-          t.target.casecmp(market_pair.target) == 0 &&
-          t.contract_interval.casecmp(market_pair.contract_interval) == 0
+          (t.base.casecmp(market_pair.base) == 0 && t.target.casecmp(market_pair.target) == 0) ||
+          (t.inst_id.casecmp(market_pair.inst_id) == 0 if t.inst_id)
         end
       end
     end
