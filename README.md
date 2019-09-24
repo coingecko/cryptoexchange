@@ -478,6 +478,23 @@ Or install it yourself as:
 | ZG                | Y       | Y [x]      | Y       |         | Y           | Y        | zg                |       |
 | ZG.TOP            | Y       |            |         |         | Y           |          | zgtop             |       |
 
+### Derivatives (Perpetual & Futures)
+| Exchange          | Ticker  | Expiration | Open Interest | Funding | Index | Order Book | Market List | Trade Page URL | slug  |
+| ----------------- | ------- | ---------- | ------------- | ------- | ----- | ---------- | ----------- | ---------------|-------|
+| Binance Futures   | Y       | N          | Y             | Y       | Y     | Y          | Y           |  Y             | binance_futures|
+| Bitflyer Futures  | Y       | Y          | N             | N       | Y     | Y          | Y           |  Y             | bitflyer_futures|
+| Bitforex Futures  |         |            |               |         |       |            |             |                |       |
+| Bitmex            | Y       | Y          | Y             | Y       | Y     | Y          | Y           |  Y             | bitmex |
+| Bybit             |         |            |               |         |       |            |             |                |       |
+| Coinflex Futures  |         |            |               |         |       |            |             |                |       |
+| Deribit           |         |            |               |         |       |            |             |                |       |
+| FTX               | Y       | Y          | Y             | Y       | Y     | Y          | Y           |  Y             | ftx |
+| Gate              |         |            |               |         |       |            |             |                |       |
+| GMO               |         |            |               |         |       |            |             |                |       |
+| Huobi DM          |         |            |               |         |       |            |             |                |       |
+| Kraken Futures    |         |            |               |         |       |            |             |                |       |
+| Okex              |         |            |               |         |       |            |             |                |       |
+
 ** Mapping and data may be incorrect (Cannot determine correctness)
 
 *** User-Defined requires pair id
