@@ -22,6 +22,7 @@ Or install it yourself as:
 
 ## Exchanges Supported
 
+### Spot
 | Exchange          | Ticker  | Order Book | Trade   | Account | Market List | Trade Page URL | slug              |m.type |
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |----------|-------------------|-------|
 | 58Coin            | Y       | Y          | Y       |         | Y           | Y        | fifty_eight_coin  |       |
@@ -471,6 +472,24 @@ Or install it yourself as:
 | Zeniex            | Y       | Y          | Y       |         | Y           |          | zeniex            |       |
 | ZG                | Y       | Y [x]      | Y       |         | Y           | Y        | zg                |       |
 | ZG.TOP            | Y       |            |         |         | Y           |          | zgtop             |       |
+
+### Derivatives
+| Exchange          | Ticker  | Expiration | Open Interest | Funding | Index | Order Book | Market List | Trade Page URL | slug  |
+| ----------------- | ------- | ---------- | ------------- | ------- | ----- | ---------- | ----------- | ---------------|-------|
+| Binance Futures   | Y       | N          | Y             | Y       | Y     | Y          | Y           |  Y             | binance_futures|
+| Bitflyer Futures  | Y       | Y          | N             | N       | Y     | Y          | Y           |  Y             | bitflyer_futures|
+| Bitforex Futures  |         |            |               |         |       |            |             |                |       |
+| Bitmex            | Y       | Y          | Y             | Y       | Y     | Y          | Y           |  Y             | bitmex |
+| Bybit             |         |            |               |         |       |            |             |                |       |
+| Coinflex Futures  |         |            |               |         |       |            |             |                |       |
+| Deribit           |         |            |               |         |       |            |             |                |       |
+| FTX               | Y       | Y          | Y             | Y       | Y     | Y          | Y           |  Y             | ftx |
+| Gate              |         |            |               |         |       |            |             |                |       |
+| GMO               |         |            |               |         |       |            |             |                |       |
+| Huobi DM          |         |            |               |         |       |            |             |                |       |
+| Kraken Futures    |         |            |               |         |       |            |             |                |       |
+| Okex              |         |            |               |         |       |            |             |                |       |
+
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 

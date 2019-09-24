@@ -24,8 +24,8 @@ module Cryptoexchange::Exchanges
             pair = pairs_map[ticker["symbol"]]
             next if pair.nil?
 
-            funding = fetch_using_get(funding_url(ticker["symbol"]))
-            index = fetch_using_get(index_url(ticker["symbol"]))
+            funding = fetch_using_get(funding_url(pair))
+            index = fetch_using_get(index_url(pair))
 
             adapt(ticker, funding, index, pair)
           end.compact
@@ -70,12 +70,12 @@ module Cryptoexchange::Exchanges
         def open_interest_url
         end
 
-        def funding_url(inst_id)
-          "#{Cryptoexchange::Exchanges::BinanceFutures::Market::API_URL}/premiumIndex?symbol=#{inst_id}"
+        def funding_url(market_pair)
+          "#{Cryptoexchange::Exchanges::BinanceFutures::Market::API_URL}/premiumIndex?symbol=#{market_pair.inst_id}"
         end
 
-        def index_url(inst_id)
-          "#{Cryptoexchange::Exchanges::BinanceFutures::Market::API_URL}/premiumIndex?symbol=#{inst_id}"
+        def index_url(market_pair)
+          "#{Cryptoexchange::Exchanges::BinanceFutures::Market::API_URL}/premiumIndex?symbol=#{market_pair.inst_id}"
         end
       end
     end

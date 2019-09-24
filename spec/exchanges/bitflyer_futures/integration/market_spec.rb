@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'BitflyerFutures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_jpy_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'jpy', contract_interval: "perpetual", market: 'bitflyer_futures') }
+  let(:btc_jpy_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'jpy', market: 'bitflyer_futures', inst_id: 'BTCJPY27DEC2019') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bitflyer_futures')
@@ -31,6 +31,15 @@ RSpec.describe 'BitflyerFutures integration specs' do
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
 
+    expect(ticker.start_timestamp).to be nil # no_start
+    expect(ticker.expire_timestamp).to be_a Numeric
+    expect(ticker.open_interest).to be nil #not_available
+    expect(ticker.index).to be_a Numeric
+    expect(ticker.funding_rate).to be nil #not_available
+    expect(ticker.funding_rate_timestamp).to be nil #not_available
+    expect(ticker.next_funding_rate_predicted).to be nil #not_available
+
+
     expect(ticker.payload).to_not be nil
   end
 
@@ -52,18 +61,18 @@ RSpec.describe 'BitflyerFutures integration specs' do
     expect(order_book.payload).to_not be nil
   end
 
-  it 'fetch trades' do
-    trades = client.trades(btc_jpy_pair)
-    trade = trades.first
+  # it 'fetch trades' do
+  #   trades = client.trades(btc_jpy_pair)
+  #   trade = trades.first
 
-    expect(trade.base).to eq 'BTC'
-    expect(trade.target).to eq 'JPY'
-    expect(trade.market).to eq 'bitflyer_futures'
+  #   expect(trade.base).to eq 'BTC'
+  #   expect(trade.target).to eq 'JPY'
+  #   expect(trade.market).to eq 'bitflyer_futures'
 
-    expect(trade.amount).to_not be_nil
-    expect(trade.price).to_not be_nil
-    expect(trade.timestamp).to be_a Numeric
-    expect(trade.trade_id).to_not be_nil
-    expect(trade.type).to eq("buy").or eq("sell")
-  end
+  #   expect(trade.amount).to_not be_nil
+  #   expect(trade.price).to_not be_nil
+  #   expect(trade.timestamp).to be_a Numeric
+  #   expect(trade.trade_id).to_not be_nil
+  #   expect(trade.type).to eq("buy").or eq("sell")
+  # end
 end

@@ -2,6 +2,8 @@ module Cryptoexchange::Exchanges
   module CoinflexFutures
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::CoinflexFutures::Market::API_URL}/tickers/"
+
         def fetch
           output = super
           adapt(output)

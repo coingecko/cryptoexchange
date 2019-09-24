@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.deribit.com/api/v2/public/get_instruments?currency=BTC&expired=false&kind=future
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.deribit.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 23 Sep 2019 04:41:10 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1420'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Authorization,User-Agent,Range,X-Requested-With,Content-Type
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"jsonrpc":"2.0","result":[{"tick_size":0.5,"taker_commission":0.0005,"settlement_period":"month","quote_currency":"USD","min_trade_amount":10.0,"maker_commission":-0.0002,"kind":"future","is_active":true,"instrument_name":"BTC-27SEP19","expiration_timestamp":1569571200000,"creation_timestamp":1553608828000,"contract_size":10.0,"base_currency":"BTC"},{"tick_size":0.5,"taker_commission":0.0005,"settlement_period":"month","quote_currency":"USD","min_trade_amount":10.0,"maker_commission":-0.0002,"kind":"future","is_active":true,"instrument_name":"BTC-27MAR20","expiration_timestamp":1585296000000,"creation_timestamp":1568966442000,"contract_size":10.0,"base_currency":"BTC"},{"tick_size":0.5,"taker_commission":0.0005,"settlement_period":"month","quote_currency":"USD","min_trade_amount":10.0,"maker_commission":-0.0002,"kind":"future","is_active":true,"instrument_name":"BTC-27DEC19","expiration_timestamp":1577433600000,"creation_timestamp":1561366865000,"contract_size":10.0,"base_currency":"BTC"},{"tick_size":0.5,"taker_commission":0.00075,"settlement_period":"perpetual","quote_currency":"USD","min_trade_amount":10.0,"maker_commission":-0.00025,"kind":"future","is_active":true,"instrument_name":"BTC-PERPETUAL","expiration_timestamp":32503708800000,"creation_timestamp":1534242287000,"contract_size":10.0,"base_currency":"BTC"}],"usIn":1569213670415468,"usOut":1569213670416904,"usDiff":1436,"testnet":false}'
+    http_version: 
+  recorded_at: Mon, 23 Sep 2019 04:41:10 GMT
+- request:
+    method: get
+    uri: https://www.deribit.com/api/v2/public/get_instruments?currency=ETH&expired=false&kind=future
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.deribit.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 23 Sep 2019 04:41:11 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1406'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Authorization,User-Agent,Range,X-Requested-With,Content-Type
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"jsonrpc":"2.0","result":[{"tick_size":0.05,"taker_commission":0.00075,"settlement_period":"month","quote_currency":"USD","min_trade_amount":1,"maker_commission":-0.00025,"kind":"future","is_active":true,"instrument_name":"ETH-27DEC19","expiration_timestamp":1577433600000,"creation_timestamp":1561367889000,"contract_size":1,"base_currency":"ETH"},{"tick_size":0.05,"taker_commission":0.00075,"settlement_period":"month","quote_currency":"USD","min_trade_amount":1,"maker_commission":-0.00025,"kind":"future","is_active":true,"instrument_name":"ETH-27SEP19","expiration_timestamp":1569571200000,"creation_timestamp":1553608913000,"contract_size":1,"base_currency":"ETH"},{"tick_size":0.05,"taker_commission":0.00075,"settlement_period":"month","quote_currency":"USD","min_trade_amount":1,"maker_commission":-0.00025,"kind":"future","is_active":true,"instrument_name":"ETH-27MAR20","expiration_timestamp":1585296000000,"creation_timestamp":1568966496000,"contract_size":1,"base_currency":"ETH"},{"tick_size":0.05,"taker_commission":0.00075,"settlement_period":"perpetual","quote_currency":"USD","min_trade_amount":1,"maker_commission":-0.00025,"kind":"future","is_active":true,"instrument_name":"ETH-PERPETUAL","expiration_timestamp":32503708800000,"creation_timestamp":1552568454000,"contract_size":1,"base_currency":"ETH"}],"usIn":1569213671711078,"usOut":1569213671712195,"usDiff":1117,"testnet":false}'
+    http_version: 
+  recorded_at: Mon, 23 Sep 2019 04:41:11 GMT
+recorded_with: VCR 4.0.0

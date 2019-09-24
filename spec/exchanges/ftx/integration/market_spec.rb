@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'FTX integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'ftx', contract_interval: "perpetual", inst_id: "BTC-PERP") }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'ftx', inst_id: "BTC-1227") }
 
   it 'fetch pairs' do
     pairs = client.pairs('ftx')
@@ -12,7 +12,6 @@ RSpec.describe 'FTX integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'ftx'
-    expect(pair.contract_interval).to eq "perpetual"
   end
 
   it 'fetch ticker' do
@@ -25,9 +24,17 @@ RSpec.describe 'FTX integration specs' do
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
+
+    expect(ticker.start_timestamp).to be nil # no_start
+    expect(ticker.expire_timestamp).to be_a Numeric
+    expect(ticker.open_interest).to be_a Numeric
+    expect(ticker.index).to be_a Numeric
+    expect(ticker.funding_rate).to be nil # futures, not perpetual
+    expect(ticker.funding_rate_timestamp).to be nil # futures, not perpetual
+    expect(ticker.next_funding_rate_predicted).to be nil # not_available
+
     expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
-    expect(ticker.contract_interval).to eq "perpetual"
   end
 
   it 'fetch order book' do
@@ -43,18 +50,5 @@ RSpec.describe 'FTX integration specs' do
     expect(order_book.asks.count).to be > 10
     expect(order_book.bids.count).to be > 10
     expect(order_book.payload).to_not be nil
-  end
-
-  it 'fetch contract stat' do
-    contract_stat = client.contract_stat(btc_usd_pair)
-
-    expect(contract_stat.base).to eq 'BTC'
-    expect(contract_stat.target).to eq 'USD'
-    expect(contract_stat.market).to eq 'ftx'
-    expect(contract_stat.index).to be_a Numeric
-    expect(contract_stat.open_interest).to be_a Numeric
-    expect(contract_stat.timestamp).to be nil
-
-    expect(contract_stat.payload).to_not be nil
   end
 end

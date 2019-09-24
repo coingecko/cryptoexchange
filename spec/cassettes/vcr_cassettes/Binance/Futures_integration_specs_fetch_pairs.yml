@@ -25,11 +25,13 @@ http_interactions:
       Connection:
       - close
       Date:
-      - Mon, 16 Sep 2019 04:00:03 GMT
+      - Mon, 23 Sep 2019 04:29:22 GMT
       Server:
       - Tengine
       Vary:
       - Accept-Encoding
+      X-Mbx-Used-Weight-1m:
+      - '43'
       X-Response-Time:
       - 0ms
       Access-Control-Allow-Origin:
@@ -43,14 +45,14 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 04e88fffb4f4812c6b1375d0261db985.cloudfront.net (CloudFront)
+      - 1.1 4195185cf1ab1ca193c9b506136702a9.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - KUL50
+      - KUL50-C1
       X-Amz-Cf-Id:
-      - ph9srFmGmzzVJf6juWzzhkMBeKPew9zT6oljs_pV4wZNY0enHXAWug==
+      - 4Tihomjuql8bDRDQUYyY0FiJkL3IB160O_NexiwczCX9rFzu0H3s1g==
     body:
       encoding: ASCII-8BIT
-      string: '{"timezone":"UTC","serverTime":1568606403401,"rateLimits":[{"rateLimitType":"REQUEST_WEIGHT","interval":"MINUTE","intervalNum":1,"limit":1200},{"rateLimitType":"ORDERS","interval":"MINUTE","intervalNum":1,"limit":600}],"exchangeFilters":[],"symbols":[{"symbol":"BTCUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"BTC","quoteAsset":"USDT","pricePrecision":2,"quantityPrecision":3,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.01","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.01"},{"stepSize":"0.001","filterType":"LOT_SIZE","maxQty":"1000","minQty":"0.001"},{"stepSize":"0.001","filterType":"MARKET_LOT_SIZE","maxQty":"1000","minQty":"0.001"},{"limit":0,"filterType":"MAX_NUM_ORDERS"},{"multiplierDown":"0.8500","multiplierUp":"1.1500","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP"],"timeInForce":["GTC","IOC","FOK","GTX"]}]}'
+      string: '{"timezone":"UTC","serverTime":1569212962102,"rateLimits":[{"rateLimitType":"REQUEST_WEIGHT","interval":"MINUTE","intervalNum":1,"limit":1200},{"rateLimitType":"ORDERS","interval":"MINUTE","intervalNum":1,"limit":600}],"exchangeFilters":[],"symbols":[{"symbol":"BTCUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"BTC","quoteAsset":"USDT","pricePrecision":2,"quantityPrecision":3,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.01","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.01"},{"stepSize":"0.001","filterType":"LOT_SIZE","maxQty":"1000","minQty":"0.001"},{"stepSize":"0.001","filterType":"MARKET_LOT_SIZE","maxQty":"1000","minQty":"0.001"},{"limit":0,"filterType":"MAX_NUM_ORDERS"},{"multiplierDown":"0.8500","multiplierUp":"1.1500","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP"],"timeInForce":["GTC","IOC","FOK","GTX"]}]}'
     http_version: 
-  recorded_at: Mon, 16 Sep 2019 03:59:55 GMT
+  recorded_at: Mon, 23 Sep 2019 04:29:21 GMT
 recorded_with: VCR 4.0.0

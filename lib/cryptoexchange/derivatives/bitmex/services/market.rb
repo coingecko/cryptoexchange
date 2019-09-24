@@ -9,12 +9,12 @@ module Cryptoexchange::Exchanges
         end
       
         def fetch(market_pair)
-          ticker_market_url = super(ticker_market_url(market_pair))[0]
+          ticker_market = super(ticker_market_url(market_pair))[0]
           expiration = super(expiration_url(market_pair))[0]
           open_interest = super(open_interest_url(market_pair))[0]
           funding = super(funding_url(market_pair))[0]
           index = super(index_url(market_pair))[0]
-          adapt(ticker_market_url, expiration, open_interest, funding, index, market_pair)
+          adapt(ticker_market, expiration, open_interest, funding, index, market_pair)
         end
 
         def adapt(ticker_market, expiration, open_interest, funding, index, market_pair)
@@ -55,19 +55,19 @@ module Cryptoexchange::Exchanges
         end
 
         def expiration_url(market_pair)
-          ticker_url(market_pair)
+          ticker_market_url(market_pair)
         end
 
         def open_interest_url(market_pair)
-          ticker_url(market_pair)
+          ticker_market_url(market_pair)
         end
 
         def funding_url(market_pair)
-          ticker_url(market_pair)
+          ticker_market_url(market_pair)
         end
 
         def index_url(market_pair)
-          ticker_url(market_pair)
+          ticker_market_url(market_pair)
         end
       end
     end

@@ -1,4 +1,4 @@
-module Cryptoexchange::Derivatives
+module Cryptoexchange::Exchanges
   module Bitmex
     module Services
       class OrderBook < Cryptoexchange::Services::Market

@@ -21,15 +21,17 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '361'
+      - '357'
       Connection:
       - close
       Date:
-      - Mon, 16 Sep 2019 04:00:03 GMT
+      - Mon, 23 Sep 2019 04:29:22 GMT
       Server:
       - Tengine
       Vary:
       - Accept-Encoding
+      X-Mbx-Used-Weight-1m:
+      - '83'
       X-Response-Time:
       - 0ms
       Access-Control-Allow-Origin:
@@ -43,14 +45,69 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 ed2d5dc5a2dc84c3b7fa7997534d0166.cloudfront.net (CloudFront)
+      - 1.1 592cf76ef794695a59030047d5918a8f.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - KUL50
+      - KUL50-C1
       X-Amz-Cf-Id:
-      - 7rPr83WdvzXlgMDKNDxs5NKt2ZcAC1soz_XSzrcZeIeQXTj_QqaGwQ==
+      - O7FDIV3peJ-xvCFYLUE2DqhThWNIzr61gGhg_-9iJt96VF1q-fBBdw==
     body:
       encoding: ASCII-8BIT
-      string: '[{"symbol":"BTCUSDT","priceChange":"-1.45","priceChangePercent":"-0.014","weightedAvgPrice":"10301.31","lastPrice":"10300.94","lastQty":"1.487","openPrice":"10302.39","highPrice":"10353.81","lowPrice":"10252.28","volume":"20490.798","quoteVolume":"211081979.01","openTime":1568520005399,"closeTime":1568606402146,"firstId":123204,"lastId":148828,"count":25625}]'
+      string: '[{"symbol":"BTCUSDT","priceChange":"112.75","priceChangePercent":"1.142","weightedAvgPrice":"9994.08","lastPrice":"9983.00","lastQty":"1.851","openPrice":"9870.25","highPrice":"10089.52","lowPrice":"9858.25","volume":"23881.941","quoteVolume":"238678146.31","openTime":1569126562306,"closeTime":1569212961035,"firstId":351330,"lastId":383538,"count":32209}]'
     http_version: 
-  recorded_at: Mon, 16 Sep 2019 03:59:55 GMT
+  recorded_at: Mon, 23 Sep 2019 04:29:21 GMT
+- request:
+    method: get
+    uri: https://fapi.binance.com/fapi/v1/premiumIndex?symbol=BTCUSDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - fapi.binance.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '132'
+      Connection:
+      - close
+      Date:
+      - Mon, 23 Sep 2019 04:29:22 GMT
+      Server:
+      - Tengine
+      Vary:
+      - Accept-Encoding
+      X-Mbx-Used-Weight-1m:
+      - '84'
+      X-Response-Time:
+      - 0ms
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - "*,clienttype,Content-Type,lang,x-ui-request-trace"
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 9fe5b0bf2176871ab93eaec7aa2c211a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50-C1
+      X-Amz-Cf-Id:
+      - iimZic9Yvp35oQPQsJwfCHrcEAP3c0BGHU3sr8XhSFIZ2MWBNMQrEA==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"symbol":"BTCUSDT","markPrice":"9981.91300654","lastFundingRate":"0.00010000","nextFundingTime":1569225600000,"time":1569212962000}'
+    http_version: 
+  recorded_at: Mon, 23 Sep 2019 04:29:22 GMT
 recorded_with: VCR 4.0.0

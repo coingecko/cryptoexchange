@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://ftx.com/api/futures/BTC-PERP
+    uri: https://ftx.com/api/futures/BTC-1227
     body:
       encoding: UTF-8
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 16 Jul 2019 11:39:39 GMT
+      - Mon, 23 Sep 2019 04:34:30 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -27,8 +27,8 @@ http_interactions:
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d84eae7a27f674b7ac95224bcf23e963f1563277178; expires=Wed, 15-Jul-20
-        11:39:38 GMT; path=/; domain=.ftx.com; HttpOnly; Secure
+      - __cfduid=db41835d73d79a2c1a6227bf14b75dd7c1569213270; expires=Tue, 22-Sep-20
+        04:34:30 GMT; path=/; domain=.ftx.com; HttpOnly; Secure
       Vary:
       - Accept-Encoding
       Cache-Control:
@@ -44,13 +44,65 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 4f73b25f9c52c0ff-KUL
+      - 51a9ce7cef182cf1-KUL
     body:
       encoding: ASCII-8BIT
-      string: '{"result":{"ask":10775.5,"bid":10773.5,"change1h":0.006797318446193735,"change24h":0.03900298910423296,"description":"Bitcoin
-        Perpetual Futures","enabled":true,"expired":false,"expiry":null,"index":10764.0101334,"indexAdjustment":0.0,"last":10795.75,"lowerBound":10225.25,"mark":10775.5,"name":"BTC-PERP","perpetual":true,"postOnly":false,"priceIncrement":0.25,"sizeIncrement":0.001,"underlying":"BTC","upperBound":11318.5,"volumeUsd24h":56295005.329},"success":true}
+      string: '{"result":{"ask":10338.75,"bid":10338.25,"change1h":0.001914037893104618,"change24h":0.014872260534517878,"description":"Bitcoin
+        December 2019 Futures","enabled":true,"expired":false,"expiry":"2019-12-27T03:00:00+00:00","index":9968.20296255,"indexAdjustment":0.0,"last":10337.75,"lowerBound":9451.5,"mark":10338.25,"name":"BTC-1227","perpetual":false,"postOnly":false,"priceIncrement":0.25,"sizeIncrement":0.0001,"type":"future","underlying":"BTC","upperBound":10853.0,"volumeUsd24h":2217.6322},"success":true}
 
-'
+        '
     http_version: 
-  recorded_at: Tue, 16 Jul 2019 11:39:33 GMT
+  recorded_at: Mon, 23 Sep 2019 04:34:30 GMT
+- request:
+    method: get
+    uri: https://ftx.com/api/futures/BTC-1227/stats
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ftx.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 23 Sep 2019 04:34:30 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=da31ccbb9d8272441ad57782473650eac1569213270; expires=Tue, 22-Sep-20
+        04:34:30 GMT; path=/; domain=.ftx.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=10
+      Cf-Cache-Status:
+      - EXPIRED
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51a9ce7e1cd2dd62-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":{"openInterest":492.2752,"predictedExpirationPrice":10338.25,"volume":79.967},"success":true}
+
+        '
+    http_version: 
+  recorded_at: Mon, 23 Sep 2019 04:34:30 GMT
 recorded_with: VCR 4.0.0
