@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(pair, output)
-          base, target     = pair.split(/(BTC$)+|(ETH$)+|(USDT$)+/)
+          base, target     = pair.split(/(BTC$)+|(ETH$)+|(USDC$)+/)
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = base
           ticker.target    = target

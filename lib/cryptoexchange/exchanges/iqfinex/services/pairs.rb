@@ -14,6 +14,7 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new(
               base: pair['left'],
               target: pair['right'],
+              inst_id: pair['pair'],
               market: Iqfinex::Market::NAME
             )
           end
