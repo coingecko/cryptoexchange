@@ -2,60 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://bitforex.com/contract/mkapi/depth?businessType=swap-usd-btc&dType=0&size=50
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      Connection:
-      - close
-      Host:
-      - bitforex.com
-      User-Agent:
-      - http.rb/5.0.0.pre
-  response:
-    status:
-      code: 301
-      message: Moved Permanently
-    headers:
-      Date:
-      - Thu, 01 Aug 2019 08:54:53 GMT
-      Content-Type:
-      - text/html
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - close
-      Set-Cookie:
-      - HttpOnly=true
-      - __cfduid=d410428f25d46d5589eac6b17b6686abb1564649693; expires=Fri, 31-Jul-20
-        08:54:53 GMT; path=/; domain=.bitforex.com; HttpOnly
-      - secure=true
-      Location:
-      - https://www.bitforex.com/contract/mkapi/depth?businessType=swap-usd-btc&size=50&dType=0
-      Strict-Transport-Security:
-      - max-age=15768000
-      - max-age=63072000; includeSubdomains; preload
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 4ff69705d8f7dd4e-KUL
-    body:
-      encoding: ASCII-8BIT
-      string: |
-        <html>
-        <head><title>301 Moved Permanently</title></head>
-        <body bgcolor="white">
-        <center><h1>301 Moved Permanently</h1></center>
-        <hr><center>nginx</center>
-        </body>
-        </html>
-    http_version: 
-  recorded_at: Thu, 01 Aug 2019 08:54:52 GMT
-- request:
-    method: get
     uri: https://www.bitforex.com/contract/mkapi/depth?businessType=swap-usd-btc&dType=0&size=50
     body:
       encoding: UTF-8
@@ -63,17 +9,17 @@ http_interactions:
     headers:
       Connection:
       - close
-      User-Agent:
-      - http.rb/5.0.0.pre
       Host:
       - www.bitforex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Thu, 01 Aug 2019 08:54:53 GMT
+      - Wed, 25 Sep 2019 10:02:27 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -82,15 +28,15 @@ http_interactions:
       - close
       Set-Cookie:
       - HttpOnly=true
-      - __cfduid=db07e8998e6f35b5f8bf8fd08d7e4feb61564649693; expires=Fri, 31-Jul-20
-        08:54:53 GMT; path=/; domain=.bitforex.com; HttpOnly
+      - __cfduid=db33f89f03f49215107c776662b6a4c061569405747; expires=Thu, 24-Sep-20
+        10:02:27 GMT; path=/; domain=.bitforex.com; HttpOnly
       - secure=true
       X-B3-Sampled:
       - '1'
       X-B3-Spanid:
-      - e7406f2f17427d4a
+      - b90dc44222c98a13
       X-B3-Traceid:
-      - e7406f2f17427d4a
+      - b90dc44222c98a13
       X-Application-Context:
       - bitforex-marketquery-new-swap:9301
       Strict-Transport-Security:
@@ -101,10 +47,10 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 4ff69706aaee2d21-KUL
+      - 51bc29a468c3dd62-KUL
     body:
       encoding: UTF-8
-      string: '{"success":true,"code":"0","msg":null,"data":{"asks":[{"price":9985.5,"amount":5848},{"price":9986.0,"amount":3960},{"price":9986.5,"amount":1224},{"price":9987.0,"amount":767},{"price":9987.5,"amount":28},{"price":9988.0,"amount":2175},{"price":9988.5,"amount":16},{"price":9989.0,"amount":663},{"price":9989.5,"amount":1008},{"price":9990.0,"amount":6840},{"price":9991.0,"amount":9580},{"price":9993.0,"amount":2520},{"price":9994.0,"amount":3762},{"price":9994.5,"amount":2300},{"price":9995.0,"amount":6504},{"price":9995.5,"amount":4000},{"price":9996.0,"amount":260},{"price":9996.5,"amount":54},{"price":9997.0,"amount":28},{"price":9998.0,"amount":8729},{"price":10030.0,"amount":2000},{"price":10100.0,"amount":2000},{"price":10120.0,"amount":500},{"price":10300.0,"amount":500},{"price":10700.0,"amount":75},{"price":10990.0,"amount":75}],"bids":[{"price":9985.0,"amount":1000},{"price":9984.5,"amount":814},{"price":9984.0,"amount":324},{"price":9983.5,"amount":13},{"price":9983.0,"amount":112},{"price":9982.5,"amount":60},{"price":9982.0,"amount":1632},{"price":9981.5,"amount":17},{"price":9981.0,"amount":4482},{"price":9980.5,"amount":6593},{"price":9980.0,"amount":40},{"price":9979.5,"amount":5502},{"price":9979.0,"amount":4818},{"price":9978.5,"amount":207},{"price":9978.0,"amount":336},{"price":9977.5,"amount":11100},{"price":9977.0,"amount":2184},{"price":9976.5,"amount":1998},{"price":9976.0,"amount":1008},{"price":9975.5,"amount":522},{"price":8712.5,"amount":200}]}}'
+      string: '{"success":true,"code":"0","msg":null,"data":{"asks":[{"price":8409.5,"amount":4200},{"price":8410.0,"amount":14000},{"price":8410.5,"amount":68},{"price":8411.0,"amount":22320},{"price":8411.5,"amount":3496},{"price":8412.0,"amount":560},{"price":8412.5,"amount":5316},{"price":8413.0,"amount":24128},{"price":8413.5,"amount":21808},{"price":8414.0,"amount":12800},{"price":8414.5,"amount":3488},{"price":8415.0,"amount":55696},{"price":8415.5,"amount":44080},{"price":8416.0,"amount":12640},{"price":8416.5,"amount":12468},{"price":8417.0,"amount":14080},{"price":8417.5,"amount":24104},{"price":8418.0,"amount":9696},{"price":8418.5,"amount":35000},{"price":8419.0,"amount":7904},{"price":8419.5,"amount":108},{"price":8420.0,"amount":26432},{"price":8420.5,"amount":116},{"price":8450.0,"amount":272},{"price":8460.0,"amount":100000},{"price":8500.0,"amount":878},{"price":8514.0,"amount":11},{"price":8520.0,"amount":650},{"price":8550.0,"amount":10},{"price":8561.5,"amount":90},{"price":8597.0,"amount":200},{"price":8600.0,"amount":8},{"price":8700.0,"amount":1},{"price":8750.0,"amount":5010},{"price":8760.0,"amount":500},{"price":8800.0,"amount":100},{"price":8900.0,"amount":10020},{"price":8955.0,"amount":10},{"price":9000.0,"amount":177},{"price":9100.0,"amount":7000},{"price":9500.0,"amount":1},{"price":9570.0,"amount":4},{"price":9643.5,"amount":974},{"price":9644.0,"amount":44},{"price":9678.0,"amount":25},{"price":9695.0,"amount":26},{"price":9700.0,"amount":500},{"price":9700.5,"amount":26},{"price":9706.0,"amount":27},{"price":9706.5,"amount":26}],"bids":[{"price":8409.0,"amount":8788},{"price":8408.5,"amount":40000},{"price":8408.0,"amount":40000},{"price":8407.5,"amount":400},{"price":8407.0,"amount":360},{"price":8406.5,"amount":40004},{"price":8406.0,"amount":50040},{"price":8405.5,"amount":80000},{"price":8405.0,"amount":3960},{"price":8404.5,"amount":40040},{"price":8404.0,"amount":3880},{"price":8403.5,"amount":720},{"price":8403.0,"amount":9120},{"price":8402.5,"amount":80000},{"price":8402.0,"amount":27840},{"price":8401.5,"amount":1600},{"price":8401.0,"amount":43840},{"price":8392.0,"amount":40},{"price":8383.0,"amount":641},{"price":8350.0,"amount":840},{"price":8348.5,"amount":801},{"price":8320.0,"amount":10},{"price":8289.0,"amount":800},{"price":8200.0,"amount":2150},{"price":8100.0,"amount":300},{"price":8000.0,"amount":300},{"price":7900.0,"amount":2},{"price":7890.0,"amount":9},{"price":7800.0,"amount":510},{"price":7600.0,"amount":1500},{"price":7590.0,"amount":100},{"price":7300.0,"amount":10},{"price":6800.0,"amount":42},{"price":6000.0,"amount":10},{"price":5000.0,"amount":1},{"price":4166.5,"amount":1},{"price":1640.0,"amount":1},{"price":1500.0,"amount":9},{"price":1320.0,"amount":10},{"price":1111.0,"amount":3},{"price":1075.0,"amount":1},{"price":1070.0,"amount":1},{"price":1033.0,"amount":7},{"price":1000.0,"amount":17},{"price":900.0,"amount":1},{"price":845.0,"amount":12},{"price":420.0,"amount":1},{"price":400.0,"amount":1},{"price":200.0,"amount":4},{"price":111.0,"amount":1}]}}'
     http_version: 
-  recorded_at: Thu, 01 Aug 2019 08:54:52 GMT
+  recorded_at: Wed, 25 Sep 2019 10:02:26 GMT
 recorded_with: VCR 4.0.0

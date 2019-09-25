@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bitforex.com/contract/swap/contract/listAll
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bitforex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 25 Sep 2019 10:02:27 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - HttpOnly=true
+      - JSESSIONID=0B1C31F3398E2B4E53271F820E44BB14-n1; Path=/; HttpOnly
+      - __cfduid=d1891ce92e0855e6497c9ce36bdafaec51569405747; expires=Thu, 24-Sep-20
+        10:02:27 GMT; path=/; domain=.bitforex.com; HttpOnly
+      - secure=true
+      Vary:
+      - Access-Control-Request-Headers
+      - Access-Control-Request-Method
+      - Origin
+      Access-Control-Allow-Origin:
+      - www.bitforex.com
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Strict-Transport-Security:
+      - max-age=15768000
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51bc29a27e5ddd4e-KUL
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":10002,"symbol":"swap-usd-btc","baseSymbol":"BTC","quoteSymbol":"USD","initMargins":0.0100000000000000,"maintenanceMargins":0.0050000000000000,"fundPreminumSymbol":"BTC","unitQuantity":1.0000000000000000,"beginTime":1560648043415,"leverageLevel":100,"minOrderPrice":1.00000000E-8,"maxOrderPrice":1000000.0000000000000000,"minOrderVolume":1,"maxOrderVolume":2000000,"maxUserVolume":5500000,"pricePrecision":2,"basePrecision":8,"openBuyLimitRate":0.0100000000000000,"openSellLimitRate":0.0100000000000000,"openBuyLimitRateMax":0.0200000000000000,"openSellLimitRateMax":1000.0000000000000000,"openBuyLimitRateMin":1.0000000000000000,"openSellLimitRateMin":0.0200000000000000,"feeRateMaker":0.0004000000000000,"feeRateTaker":0.0006000000000000,"fundPeriod":8.00,"isAutoReduce":true,"contractType":1,"dealNum":3.0000000000000000,"deepJoinNum":"2","minChangePrice":0.5000000000000000,"alias":"BTC/USD","limitQuota":200000.0000000000000000,"increaseLimitQuota":null,"status":"0","ctime":1560561643416,"mtime":1567411470718,"depthConfig":"1,2,5,10,20","priceOrderPrecision":1,"baseShowPrecision":8,"depthOffset":10,"floatY":0.0050000000000000,"riskRate":1.0000000000000000,"outStatus":"0","inStatus":"0","currentPricePrecision":2},{"id":10003,"symbol":"swap-usd-eth","baseSymbol":"ETH","quoteSymbol":"USD","initMargins":0.0100000000000000,"maintenanceMargins":0.0050000000000000,"fundPreminumSymbol":"ETH","unitQuantity":1.0000000000000000,"beginTime":1563767501108,"leverageLevel":100,"minOrderPrice":1.00000000E-8,"maxOrderPrice":1000000.0000000000000000,"minOrderVolume":1,"maxOrderVolume":350000,"maxUserVolume":1440000,"pricePrecision":3,"basePrecision":8,"openBuyLimitRate":0.0100000000000000,"openSellLimitRate":0.0100000000000000,"openBuyLimitRateMax":0.0200000000000000,"openSellLimitRateMax":1000.0000000000000000,"openBuyLimitRateMin":1.0000000000000000,"openSellLimitRateMin":0.0200000000000000,"feeRateMaker":0.0004000000000000,"feeRateTaker":0.0006000000000000,"fundPeriod":8.00,"isAutoReduce":true,"contractType":1,"dealNum":3.0000000000000000,"deepJoinNum":"2","minChangePrice":0.0500000000000000,"alias":"ETH/USD","limitQuota":200000.0000000000000000,"increaseLimitQuota":null,"status":"0","ctime":1565188000626,"mtime":1567411471589,"depthConfig":"1,2,5,10,20","priceOrderPrecision":2,"baseShowPrecision":8,"depthOffset":10,"floatY":0.0050000000000000,"riskRate":1.0000000000000000,"outStatus":"0","inStatus":"0","currentPricePrecision":4},{"id":10004,"symbol":"swap-usd-ltc","baseSymbol":"LTC","quoteSymbol":"USD","initMargins":0.0100000000000000,"maintenanceMargins":0.0050000000000000,"fundPreminumSymbol":"LTC","unitQuantity":1.0000000000000000,"beginTime":1563767501108,"leverageLevel":100,"minOrderPrice":1.00000000E-8,"maxOrderPrice":1000000.0000000000000000,"minOrderVolume":1,"maxOrderVolume":400000,"maxUserVolume":1440000,"pricePrecision":3,"basePrecision":8,"openBuyLimitRate":0.0100000000000000,"openSellLimitRate":0.0100000000000000,"openBuyLimitRateMax":0.0200000000000000,"openSellLimitRateMax":1000.0000000000000000,"openBuyLimitRateMin":1.0000000000000000,"openSellLimitRateMin":0.0200000000000000,"feeRateMaker":0.0004000000000000,"feeRateTaker":0.0006000000000000,"fundPeriod":8.00,"isAutoReduce":true,"contractType":1,"dealNum":3.0000000000000000,"deepJoinNum":"2","minChangePrice":0.0500000000000000,"alias":"LTC/USD","limitQuota":200000.0000000000000000,"increaseLimitQuota":null,"status":"0","ctime":1565188000626,"mtime":1567411481671,"depthConfig":"1,2,5,10,20","priceOrderPrecision":2,"baseShowPrecision":8,"depthOffset":10,"floatY":0.0050000000000000,"riskRate":1.0000000000000000,"outStatus":"0","inStatus":"0","currentPricePrecision":4},{"id":10211,"symbol":"swap-usd-xrp","baseSymbol":"XRP","quoteSymbol":"USD","initMargins":0.0100000000000000,"maintenanceMargins":0.0050000000000000,"fundPreminumSymbol":"XRP","unitQuantity":1.0000000000000000,"beginTime":1563767501108,"leverageLevel":25,"minOrderPrice":1.00000000E-8,"maxOrderPrice":1000000.0000000000000000,"minOrderVolume":1,"maxOrderVolume":100000,"maxUserVolume":357500,"pricePrecision":4,"basePrecision":8,"openBuyLimitRate":0.0100000000000000,"openSellLimitRate":0.0100000000000000,"openBuyLimitRateMax":0.0200000000000000,"openSellLimitRateMax":1000.0000000000000000,"openBuyLimitRateMin":1.0000000000000000,"openSellLimitRateMin":0.0200000000000000,"feeRateMaker":0.0004000000000000,"feeRateTaker":0.0006000000000000,"fundPeriod":8.00,"isAutoReduce":true,"contractType":1,"dealNum":3.0000000000000000,"deepJoinNum":"2","minChangePrice":0.0010000000000000,"alias":"XRP/USD","limitQuota":200000.0000000000000000,"increaseLimitQuota":null,"status":"0","ctime":1560561643416,"mtime":1567411483806,"depthConfig":"1,2,5,10,20","priceOrderPrecision":3,"baseShowPrecision":8,"depthOffset":10,"floatY":0.0050000000000000,"riskRate":1.0000000000000000,"outStatus":"0","inStatus":"0","currentPricePrecision":5},{"id":10258,"symbol":"swap-usd-grin","baseSymbol":"GRIN","quoteSymbol":"USD","initMargins":0.1000000000000000,"maintenanceMargins":0.0050000000000000,"fundPreminumSymbol":"USD","unitQuantity":1.0000000000000000,"beginTime":1563767501108,"leverageLevel":10,"minOrderPrice":1.00000000E-8,"maxOrderPrice":1000000.0000000000000000,"minOrderVolume":1,"maxOrderVolume":40000,"maxUserVolume":200000,"pricePrecision":4,"basePrecision":8,"openBuyLimitRate":0.0100000000000000,"openSellLimitRate":0.0100000000000000,"openBuyLimitRateMax":0.0200000000000000,"openSellLimitRateMax":1000.0000000000000000,"openBuyLimitRateMin":1.0000000000000000,"openSellLimitRateMin":0.0200000000000000,"feeRateMaker":0E-16,"feeRateTaker":0.0006000000000000,"fundPeriod":8.00,"isAutoReduce":true,"contractType":1,"dealNum":3.0000000000000000,"deepJoinNum":"2","minChangePrice":0.0010000000000000,"alias":"GRIN/USD","limitQuota":200000.0000000000000000,"increaseLimitQuota":null,"status":"0","ctime":1560561643416,"mtime":1567411475676,"depthConfig":"1,2,5,10,20","priceOrderPrecision":3,"baseShowPrecision":8,"depthOffset":10,"floatY":0.0050000000000000,"riskRate":1.0000000000000000,"outStatus":"0","inStatus":"0","currentPricePrecision":4}],"code":"200","message":"成功"}'
+    http_version: 
+  recorded_at: Wed, 25 Sep 2019 10:02:26 GMT
+recorded_with: VCR 4.0.0
