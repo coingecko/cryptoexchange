@@ -2,8 +2,8 @@ require 'spec_helper'
 
 RSpec.describe 'OkexSwap integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', contract_interval: "perpetual") }
-  let(:xbt_usd_pair_weekly) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', contract_interval: "weekly") }
+  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', contract_interval: "perpetual", inst_id: "BTC-USD-SWAP") }
+  let(:xbt_usd_pair_weekly) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', contract_interval: "weekly", inst_id: "BTC-USD-190927") }
 
   it 'fetch pairs' do
     pairs = client.pairs('okex_swap')
@@ -14,6 +14,7 @@ RSpec.describe 'OkexSwap integration specs' do
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'okex_swap'
     expect(pair.contract_interval).to eq "perpetual"
+    expect(pair.inst_id).to eq "BTC-USD-SWAP"
   end
 
   it 'fetch ticker' do
@@ -22,6 +23,7 @@ RSpec.describe 'OkexSwap integration specs' do
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USD'
     expect(ticker.market).to eq 'okex_swap'
+    expect(ticker.inst_id).to eq 'BTC-USD-SWAP'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
@@ -39,6 +41,7 @@ RSpec.describe 'OkexSwap integration specs' do
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USD'
     expect(ticker.market).to eq 'okex_swap'
+    expect(ticker.inst_id).to eq 'BTC-USD-190927'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
@@ -68,7 +71,6 @@ RSpec.describe 'OkexSwap integration specs' do
   end
 
   it 'fetch contract stat' do
-    #note: contract_stat only available for futures pair
     contract_stat = client.contract_stat(xbt_usd_pair_weekly)
 
     expect(contract_stat.base).to eq 'BTC'

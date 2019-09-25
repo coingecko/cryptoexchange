@@ -2,13 +2,11 @@ module Cryptoexchange::Exchanges
   module OkexSwap
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::OkexSwap::Market::API_URL}/instruments"
-
         def fetch
-          output_swaps = super
-          swaps = adapt(output_swaps)
-
+          output_swaps = fetch_via_api("https://www.okex.com/api/swap/v3/instruments")
           output_futures = fetch_via_api("https://www.okex.com/api/futures/v3/instruments")
+
+          swaps = adapt(output_swaps)
           futures = adapt_futures(output_futures)
 
           swaps + futures
@@ -23,6 +21,7 @@ module Cryptoexchange::Exchanges
               target: target,
               market: OkexSwap::Market::NAME,
               contract_interval: "perpetual",
+              inst_id: pair['instrument_id']
             )
           end
         end
@@ -44,7 +43,8 @@ module Cryptoexchange::Exchanges
               base:   base,
               target: target,
               market: OkexSwap::Market::NAME,
-              contract_interval: interval
+              contract_interval: interval,
+              inst_id: inst_id
             )
           end
         end
