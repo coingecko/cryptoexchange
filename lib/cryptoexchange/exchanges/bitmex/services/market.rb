@@ -22,6 +22,7 @@ module Cryptoexchange::Exchanges
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Bitmex::Market::NAME
+          ticker.inst_id = market_pair.inst_id
           ticker.ask = NumericHelper.to_d(output['askPrice'])
           ticker.bid = NumericHelper.to_d(output['bidPrice'])
           ticker.last = NumericHelper.to_d(output['lastPrice'])
