@@ -485,7 +485,7 @@ Or install it yourself as:
 | Bitflyer Futures  | Y       | Y          | N             | N       | Y     | Y          | Y           |  Y             | bitflyer_futures|
 | Bitforex Futures  |         |            |               |         |       |            |             |                |       |
 | Bitmex            | Y       | Y          | Y             | Y       | Y     | Y          | Y           |  Y             | bitmex |
-| Bybit             |         |            |               |         |       |            |             |                |       |
+| Bybit             | Y       |            | Y             |         | Y     | Y          | Y           |                | bybit |
 | Coinflex Futures  |         |            |               |         |       |            |             |                |       |
 | Deribit           |         |            |               |         |       |            |             |                |       |
 | FTX               | Y       | Y          | Y             | Y       | Y     | Y          | Y           |  Y             | ftx |

@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://api.btse.com/futures/api/v1'
 
       def self.trade_page_url(args={})
-        "https://www.btse.com/en/futures/#{args[:base]}PFC"
+        "https://www.btse.com/en/futures/#{args[:inst_id]}"
       end
     end
   end
