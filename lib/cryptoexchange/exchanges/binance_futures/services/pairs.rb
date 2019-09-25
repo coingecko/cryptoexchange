@@ -20,7 +20,9 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
-              market: BinanceFutures::Market::NAME
+              market: BinanceFutures::Market::NAME,
+              contract_interval: "perpetual",
+              inst_id: pair["symbol"]
             )
           end.compact
         end

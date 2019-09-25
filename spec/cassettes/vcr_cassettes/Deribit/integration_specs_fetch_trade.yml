@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.deribit.com/api/v1/public/getlasttrades?instrument=BTC-PERPETUAL
+    uri: https://www.deribit.com/api/v2/public/getlasttrades?instrument=BTC-PERPETUAL
     body:
       encoding: UTF-8
       string: ''
@@ -21,20 +21,26 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 14 Sep 2019 07:36:05 GMT
+      - Wed, 25 Sep 2019 07:37:18 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '2117'
+      - '2086'
       Connection:
       - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Authorization,User-Agent,Range,X-Requested-With,Content-Type
       Strict-Transport-Security:
       - max-age=15768000
       X-Frame-Options:
       - SAMEORIGIN
     body:
       encoding: ASCII-8BIT
-      string: '{"usOut":1568446565077381,"usIn":1568446565077338,"usDiff":43,"testnet":false,"success":true,"result":[{"tradeId":40933952,"instrument":"BTC-PERPETUAL","timeStamp":1568446563987,"tradeSeq":22186135,"quantity":30,"amount":300.0,"price":10342.5,"direction":"sell","tickDirection":3,"indexPrice":10326.53},{"tradeId":40933951,"instrument":"BTC-PERPETUAL","timeStamp":1568446558167,"tradeSeq":22186134,"quantity":350,"amount":3500.0,"price":10342.5,"direction":"sell","tickDirection":3,"indexPrice":10326.49},{"tradeId":40933950,"instrument":"BTC-PERPETUAL","timeStamp":1568446548920,"tradeSeq":22186133,"quantity":1324,"amount":13240.0,"price":10342.5,"direction":"sell","tickDirection":3,"indexPrice":10326.56},{"tradeId":40933949,"instrument":"BTC-PERPETUAL","timeStamp":1568446548920,"tradeSeq":22186132,"quantity":105,"amount":1050.0,"price":10342.5,"direction":"sell","tickDirection":3,"indexPrice":10326.56},{"tradeId":40933948,"instrument":"BTC-PERPETUAL","timeStamp":1568446548920,"tradeSeq":22186131,"quantity":1,"amount":10.0,"price":10342.5,"direction":"sell","tickDirection":3,"indexPrice":10326.56},{"tradeId":40933947,"instrument":"BTC-PERPETUAL","timeStamp":1568446548920,"tradeSeq":22186130,"quantity":1,"amount":10.0,"price":10342.5,"direction":"sell","tickDirection":3,"indexPrice":10326.56},{"tradeId":40933946,"instrument":"BTC-PERPETUAL","timeStamp":1568446548920,"tradeSeq":22186129,"quantity":1,"amount":10.0,"price":10342.5,"direction":"sell","tickDirection":3,"indexPrice":10326.56},{"tradeId":40933945,"instrument":"BTC-PERPETUAL","timeStamp":1568446548920,"tradeSeq":22186128,"quantity":16,"amount":160.0,"price":10342.5,"direction":"sell","tickDirection":3,"indexPrice":10326.56},{"tradeId":40933944,"instrument":"BTC-PERPETUAL","timeStamp":1568446548920,"tradeSeq":22186127,"quantity":2,"amount":20.0,"price":10342.5,"direction":"sell","tickDirection":3,"indexPrice":10326.56},{"tradeId":40933943,"instrument":"BTC-PERPETUAL","timeStamp":1568446548920,"tradeSeq":22186126,"quantity":50,"amount":500.0,"price":10342.5,"direction":"sell","tickDirection":2,"indexPrice":10326.56}],"message":""}'
+      string: '{"jsonrpc":"2.0","result":[{"tradeId":42455381,"instrument":"BTC-PERPETUAL","timeStamp":1569397023378,"tradeSeq":23340647,"quantity":202,"amount":2020.0,"price":8365.5,"direction":"buy","tickDirection":0,"indexPrice":8364.16},{"tradeId":42455380,"instrument":"BTC-PERPETUAL","timeStamp":1569397023354,"tradeSeq":23340646,"quantity":70,"amount":700.0,"price":8365.0,"direction":"buy","tickDirection":1,"indexPrice":8364.16},{"tradeId":42455379,"instrument":"BTC-PERPETUAL","timeStamp":1569397023354,"tradeSeq":23340645,"quantity":80,"amount":800.0,"price":8365.0,"direction":"buy","tickDirection":0,"indexPrice":8364.16},{"tradeId":42455378,"instrument":"BTC-PERPETUAL","timeStamp":1569397023325,"tradeSeq":23340644,"quantity":93,"amount":930.0,"price":8364.5,"direction":"buy","tickDirection":1,"indexPrice":8364.16},{"tradeId":42455377,"instrument":"BTC-PERPETUAL","timeStamp":1569397023136,"tradeSeq":23340643,"quantity":200,"amount":2000.0,"price":8364.5,"direction":"buy","tickDirection":1,"indexPrice":8364.8},{"tradeId":42455376,"instrument":"BTC-PERPETUAL","timeStamp":1569397023065,"tradeSeq":23340642,"quantity":500,"amount":5000.0,"price":8364.5,"direction":"buy","tickDirection":1,"indexPrice":8364.8},{"tradeId":42455375,"instrument":"BTC-PERPETUAL","timeStamp":1569397023065,"tradeSeq":23340641,"quantity":100,"amount":1000.0,"price":8364.5,"direction":"buy","tickDirection":1,"indexPrice":8364.8},{"tradeId":42455374,"instrument":"BTC-PERPETUAL","timeStamp":1569397023052,"tradeSeq":23340640,"quantity":150,"amount":1500.0,"price":8364.5,"direction":"buy","tickDirection":1,"indexPrice":8364.8},{"tradeId":42455373,"instrument":"BTC-PERPETUAL","timeStamp":1569397023051,"tradeSeq":23340639,"quantity":1250,"amount":12500.0,"price":8364.5,"direction":"buy","tickDirection":1,"indexPrice":8364.8},{"tradeId":42455372,"instrument":"BTC-PERPETUAL","timeStamp":1569397023051,"tradeSeq":23340638,"quantity":250,"amount":2500.0,"price":8364.5,"direction":"buy","tickDirection":1,"indexPrice":8364.8}],"usIn":1569397038365545,"usOut":1569397038365683,"usDiff":138,"testnet":false}'
     http_version: 
-  recorded_at: Sat, 14 Sep 2019 07:36:04 GMT
+  recorded_at: Wed, 25 Sep 2019 07:37:17 GMT
 recorded_with: VCR 4.0.0
