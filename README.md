@@ -490,7 +490,7 @@ Or install it yourself as:
 | Deribit           |         |            |               |         |       |            |             |                |       |
 | FTX               | Y       | Y          | Y             | Y       | Y     | Y          | Y           |  Y             | ftx |
 | Gate              |         |            |               |         |       |            |             |                |       |
-| GMO               |         |            |               |         |       |            |             |                |       |
+| GMO Japan Futures | Y       | N          | N             | N       | N     | Y          | Y           |  Y             | gmo_japan_futures|
 | Huobi DM          | Y       |            | Y             |         | Y     | Y          | Y           |  Y             |huobi_dm|
 | Kraken Futures    |         |            |               |         |       |            |             |                |       |
 | Okex              |         |            |               |         |       |            |             |                |       |
