@@ -24,6 +24,7 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.contract_interval    = market_pair.contract_interval
+          ticker.inst_id   = market_pair.inst_id
           ticker.market    = HuobiDm::Market::NAME
           ticker.last      = NumericHelper.to_d(market['close'])
           ticker.bid       = NumericHelper.to_d(market['bid'][0]) if market['bid']
