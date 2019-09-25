@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.okex.com/api/swap/v3/instruments/BTC-USD-SWAP/ticker
+    uri: https://www.okex.com/api/futures/v3/instruments/BTC-USD-190927/ticker
     body:
       encoding: UTF-8
       string: ''
@@ -23,13 +23,13 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '188'
+      - '194'
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d5dbe0c169268e4450e6e0234f33419661569408757; expires=Thu, 24-Sep-20
+      - __cfduid=dba33d2850bd4005d72d5a7bd1b6233cd1569408757; expires=Thu, 24-Sep-20
         10:52:37 GMT; path=/; domain=.okex.com; HttpOnly
-      - locale=en_US; Max-Age=604800; Expires=Wed, 02-Oct-2019 10:52:37 GMT; Path=/
+      - locale=en_US; Expires=Wed, 02-Oct-2019 10:52:37 GMT; Path=/
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
@@ -43,7 +43,7 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Kong-Upstream-Latency:
-      - '6'
+      - '5'
       X-Kong-Proxy-Latency:
       - '0'
       Via:
@@ -57,10 +57,10 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 51bc731caabddd4a-KUL
+      - 51bc731d3872dd62-KUL
     body:
       encoding: ASCII-8BIT
-      string: '{"instrument_id":"BTC-USD-SWAP","last":"8381.9","high_24h":"9755","low_24h":"7885.1","volume_24h":"13677300","best_ask":"8381.9","best_bid":"8381.8","timestamp":"2019-09-25T10:52:34.804Z"}'
+      string: '{"instrument_id":"BTC-USD-190927","last":"8394","best_bid":"8391.27","best_ask":"8393.08","high_24h":"9781.87","low_24h":"7590.64","volume_24h":"14850123","timestamp":"2019-09-25T10:52:37.359Z"}'
     http_version: 
   recorded_at: Wed, 25 Sep 2019 10:52:36 GMT
 recorded_with: VCR 4.0.0
