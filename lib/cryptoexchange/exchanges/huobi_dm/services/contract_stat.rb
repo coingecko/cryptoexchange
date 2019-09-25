@@ -16,8 +16,10 @@ module Cryptoexchange::Exchanges
         end
 
         def open_interest_url(market_pair)
-          interval_list = { "weekly"=> "this_week", "biweekly"=> "next_week", "quarterly"=> "quarter" }
-          "#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/api/v1/contract_open_interest?symbol=#{market_pair.base}&contract_type=#{interval_list[market_pair.contract_interval]}"
+          interval_list = { "CW"=> "this_week", "NW"=> "next_week", "CQ"=> "quarter" }
+          interval_key = market_pair.inst_id.split("_")[1]
+          interval_value = interval_list[interval_key]
+          "#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/api/v1/contract_open_interest?symbol=#{market_pair.base}&contract_type=#{interval_value}"
         end
 
         def index_url(market_pair)

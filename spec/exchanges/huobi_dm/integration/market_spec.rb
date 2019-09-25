@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe 'Huobi Dm integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'huobi_dm' }
-  let(:pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', contract_interval: 'weekly', market: 'huobi_dm') }
+  let(:pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', inst_id: "BTC_CW", contract_interval: 'weekly', market: 'huobi_dm') }
 
   it 'fetch pairs' do
     pairs = client.pairs('huobi_dm')
