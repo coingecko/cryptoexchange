@@ -15,6 +15,11 @@ RSpec.describe 'FTX integration specs' do
     expect(pair.contract_interval).to eq "perpetual"
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: btc_usd_pair.base, target: btc_usd_pair.target, inst_id: btc_usd_pair.inst_id
+    expect(trade_page_url).to eq "https://ftx.com/trade/BTC-PERP"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_usd_pair)
 
