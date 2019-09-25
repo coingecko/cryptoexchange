@@ -14,9 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          interval_keys = { "weekly"=> "CW", "biweekly"=> "NW", "quarterly"=> "CQ" }
-          interval = interval_keys[market_pair.contract_interval]
-          "#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/market/detail/merged?symbol=#{market_pair.base}_#{interval}"
+          "#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/market/detail/merged?symbol=#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)
@@ -27,7 +25,7 @@ module Cryptoexchange::Exchanges
           ticker.target    = market_pair.target
           ticker.contract_interval    = market_pair.contract_interval
           ticker.market    = HuobiDm::Market::NAME
-          ticker.last      = NumericHelper.to_d(market['close']) 
+          ticker.last      = NumericHelper.to_d(market['close'])
           ticker.bid       = NumericHelper.to_d(market['bid'][0]) if market['bid']
           ticker.ask       = NumericHelper.to_d(market['ask'][0]) if market['ask']
           ticker.high      = NumericHelper.to_d(market['high'])
