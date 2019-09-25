@@ -28,7 +28,7 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Kumex::Market::NAME
-          ticker.inst_id    = output['symbol']
+          ticker.inst_id    = market_pair.inst_id
 
           ticker.last      = NumericHelper.to_d(output['price'])
           ticker.volume    = NumericHelper.divide(NumericHelper.to_d(volume['data']['volume'].to_f), ticker.last)
