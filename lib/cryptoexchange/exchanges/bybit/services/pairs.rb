@@ -12,9 +12,11 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           output['result'].map do |pair|
             base, target = pair["base_currency"], pair["quote_currency"]
+            inst_id = pair['name']
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
+              inst_id: inst_id,
               market: Bybit::Market::NAME
             )
           end
