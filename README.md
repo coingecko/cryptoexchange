@@ -486,7 +486,7 @@ Or install it yourself as:
 | Bitforex Futures  |         |            |               |         |       |            |             |                |       |
 | Bitmex            | Y       | Y          | Y             | Y       | Y     | Y          | Y           |  Y             | bitmex |
 | Bybit             | Y       |            | Y             |         | Y     | Y          | Y           |                | bybit |
-| Coinflex Futures  |         |            |               |         |       |            |             |                |       |
+| Coinflex Futures  | Y       | N          | Y             | N       | Y     | Y          | Y           |  Y             | coinflex_futures      |
 | Deribit           |         |            |               |         |       |            |             |                |       |
 | FTX               | Y       | Y          | Y             | Y       | Y     | Y          | Y           |  Y             | ftx |
 | Gate              |         |            |               |         |       |            |             |                |       |

@@ -23,6 +23,7 @@ module Cryptoexchange::Exchanges
           ticker.target    = market_pair.target
           ticker.contract_interval = market_pair.contract_interval
           ticker.market    = CoinflexFutures::Market::NAME
+          ticker.inst_id    = market_pair.inst_id
           ticker.bid       = output['bid'].to_f / 10000.0
           ticker.ask       = output['ask'].to_f / 10000.0
           ticker.last      = output['last'].to_f / 10000.0
