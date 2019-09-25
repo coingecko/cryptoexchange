@@ -485,7 +485,7 @@ Or install it yourself as:
 | Bitflyer Futures  | Y       | Y          | N             | N       | Y     | Y          | Y           |  Y             | bitflyer_futures|
 | Bitforex Futures  |         |            |               |         |       |            |             |                |       |
 | Bitmex            | Y       | Y          | Y             | Y       | Y     | Y          | Y           |  Y             | bitmex |
-| Bybit             | Y       |            | Y             |         | Y     | Y          | Y           |                | bybit |
+| Bybit             | Y       | N          | Y             |         | Y     | Y          | Y           |  Y             | bybit |
 | Coinflex Futures  |         |            |               |         |       |            |             |                |       |
 | Deribit           |         |            |               |         |       |            |             |                |       |
 | FTX               | Y       | Y          | Y             | Y       | Y     | Y          | Y           |  Y             | ftx |
@@ -493,6 +493,7 @@ Or install it yourself as:
 | GMO               |         |            |               |         |       |            |             |                |       |
 | Huobi DM          | Y       |            | Y             |         | Y     | Y          | Y           |  Y             |huobi_dm|
 | Kraken Futures    |         |            |               |         |       |            |             |                |       |
+| Kumex             | Y       | N          | N             | N       | N     | Y          | Y           |  Y             |kumex  |
 | Okex              |         |            |               |         |       |            |             |                |       |
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
