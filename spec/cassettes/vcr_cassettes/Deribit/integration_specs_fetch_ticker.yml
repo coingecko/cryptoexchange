@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.deribit.com/api/v1/public/getsummary?instrument=BTC-PERPETUAL
+    uri: https://www.deribit.com/api/v2/public/getsummary?instrument=BTC-PERPETUAL
     body:
       encoding: UTF-8
       string: ''
@@ -21,21 +21,27 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 14 Sep 2019 07:36:02 GMT
+      - Wed, 25 Sep 2019 07:37:16 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '525'
+      - '489'
       Connection:
       - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Authorization,User-Agent,Range,X-Requested-With,Content-Type
       Strict-Transport-Security:
       - max-age=15768000
       X-Frame-Options:
       - SAMEORIGIN
     body:
       encoding: ASCII-8BIT
-      string: '{"usOut":1568446562733875,"usIn":1568446562733703,"usDiff":172,"testnet":false,"success":true,"result":{"currentFunding":0.001083308155344354,"funding8h":0.0003788834976249809,"instrumentName":"BTC-PERPETUAL","openInterest":10365804.1,"openInterestAmount":103658041,"high":10410.0,"low":10163.0,"volume":18041316.0,"volumeUsd":180413160,"volumeBtc":17526.67673739,"last":10342.5,"bidPrice":10342.5,"askPrice":10343.0,"midPrice":10342.75,"estDelPrice":"","markPrice":10342.83,"created":"2019-09-14
-        07:36:02 GMT"},"message":""}'
+      string: '{"jsonrpc":"2.0","result":{"currentFunding":0.0,"funding8h":-0.0000030499766933920302,"instrumentName":"BTC-PERPETUAL","openInterest":9479897.1,"openInterestAmount":94798971,"high":9760.5,"low":7846.5,"volume":86361577.0,"volumeUsd":863615770,"volumeBtc":97741.5131158,"last":8365.5,"bidPrice":8365.5,"askPrice":8366.0,"midPrice":8365.75,"estDelPrice":"","markPrice":8366.1,"created":"2019-09-25
+        07:37:16 GMT"},"usIn":1569397036170314,"usOut":1569397036170507,"usDiff":193,"testnet":false}'
     http_version: 
-  recorded_at: Sat, 14 Sep 2019 07:36:01 GMT
+  recorded_at: Wed, 25 Sep 2019 07:37:15 GMT
 recorded_with: VCR 4.0.0

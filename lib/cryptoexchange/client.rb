@@ -10,7 +10,7 @@ module Cryptoexchange
     def trade_page_url(exchange, args={})
       pairs_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Market"
       pairs_class = Object.const_get(pairs_classname)
-      pairs_class.trade_page_url(base: args[:base], target: args[:target])
+      pairs_class.trade_page_url(base: args[:base], target: args[:target], inst_id: args[:inst_id])
     end
 
     def pairs(exchange)
@@ -34,8 +34,8 @@ module Cryptoexchange
       else
         tickers = market.fetch
         tickers.find do |t|
-          (t.base.casecmp(market_pair.base) == 0 && t.target.casecmp(market_pair.target) == 0) ||
-          (t.inst_id.casecmp(market_pair.inst_id) == 0 if t.inst_id)
+          (t.inst_id.casecmp(market_pair.inst_id) == 0 if t.inst_id) ||
+          (t.base.casecmp(market_pair.base) == 0 && t.target.casecmp(market_pair.target) == 0)
         end
       end
     end

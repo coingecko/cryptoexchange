@@ -14,8 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          symbol = "#{market_pair.base}-#{market_pair.contract_interval.upcase}"
-          "#{Cryptoexchange::Exchanges::Deribit::Market::API_URL}/getsummary?instrument=#{symbol}"
+          "#{Cryptoexchange::Exchanges::Deribit::Market::API_URL}/getsummary?instrument=#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)
@@ -23,6 +22,7 @@ module Cryptoexchange::Exchanges
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Deribit::Market::NAME
+          ticker.inst_id = market_pair.inst_id
           ticker.last = NumericHelper.to_d(output['last'])
           ticker.ask = NumericHelper.to_d(output['askPrice'])
           ticker.bid = NumericHelper.to_d(output['bidPrice'])

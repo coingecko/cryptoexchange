@@ -3,18 +3,28 @@ module Cryptoexchange::Exchanges
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
         def fetch
-          output = super
-          adapt(output)
+          btc_pairs = fetch_via_api(btc_pairs_url)
+          eth_pairs = fetch_via_api(eth_pairs_url)
+          adapt(btc_pairs["result"] + eth_pairs["result"])
+        end
+
+        def btc_pairs_url
+          "#{Cryptoexchange::Exchanges::Deribit::Market::API_URL}/get_instruments?currency=BTC&kind=future&expired=false"
+        end
+
+        def eth_pairs_url
+          "#{Cryptoexchange::Exchanges::Deribit::Market::API_URL}/get_instruments?currency=ETH&kind=future&expired=false"
         end
 
         def adapt(output)
           market_pairs = []
           output.each do |pair|
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair[:base],
-                              target: pair[:target],
+                              base: pair['base_currency'],
+                              target: pair['quote_currency'],
                               market: Deribit::Market::NAME,
-                              contract_interval: pair[:contract_interval],
+                              inst_id: pair['instrument_name'],
+                              contract_interval: pair['settlement_period']
                             )
           end
           market_pairs
