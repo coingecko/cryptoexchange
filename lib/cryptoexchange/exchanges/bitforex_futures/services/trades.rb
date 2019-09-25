@@ -9,7 +9,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::BitforexFutures::Market::API_URL}/trades?businessType=swap-#{market_pair.target.downcase}-#{market_pair.base.downcase}&size=50"
+          "https://www.bitforex.com/contract/mkapi/trades?businessType=#{market_pair.inst_id}&size=50"
         end
 
         def adapt(output, market_pair)

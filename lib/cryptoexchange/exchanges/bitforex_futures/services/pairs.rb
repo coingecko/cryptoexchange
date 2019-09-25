@@ -2,16 +2,21 @@ module Cryptoexchange::Exchanges
   module BitforexFutures
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
+        PAIRS_URL = "https://www.bitforex.com/contract/swap/contract/listAll"
+
         def fetch
-          adapt(super)
+          output = super
+          adapt(output["data"])
         end
 
         def adapt(output)
-          output.map do |pair|
+          output.map do |value|
             Cryptoexchange::Models::MarketPair.new(
-              base:   pair[:base],
-              target: pair[:target],
-              market: BitforexFutures::Market::NAME
+              base:   value["baseSymbol"],
+              target: value["quoteSymbol"],
+              market: BitforexFutures::Market::NAME,
+              contract_interval: 'perpetual',
+              inst_id: value["symbol"]
             )
           end
         end
