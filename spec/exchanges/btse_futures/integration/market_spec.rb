@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'btse_futures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'btse_futures', contract_interval: "Perpetual", inst_id: "BTCPFC") }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'btse_futures', inst_id: "BTCPFC", contract_interval: "Perpetual", inst_id: "BTCPFC") }
 
   it 'fetch pairs' do
     pairs = client.pairs('btse_futures')
@@ -26,6 +26,7 @@ RSpec.describe 'btse_futures integration specs' do
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USD'
+    expect(ticker.inst_id).to eq 'BTCPFC'
     expect(ticker.market).to eq 'btse_futures'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
@@ -33,9 +34,9 @@ RSpec.describe 'btse_futures integration specs' do
     expect(ticker.high).to be_a Numeric
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.change).to be_a Numeric    
+    expect(ticker.change).to be_a Numeric
     expect(ticker.timestamp).to be nil
-    
+
     expect(ticker.payload).to_not be nil
   end
 
