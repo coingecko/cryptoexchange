@@ -25,9 +25,11 @@ module Cryptoexchange::Exchanges
             # we don't want pair i.e., BINANACEETH, HUOBIETH etc
             next if ticker["symbol"].include? "ETF"
             pair = pairs.find { |i| "#{i.base}#{i.target}" == ticker["symbol"] }
+            inst_id = ticker["symbol"]
             market_pair  = Cryptoexchange::Models::MarketPair.new(
               base:   pair.base,
               target: pair.target,
+              inst_id: inst_id,
               market: JexFutures::Market::NAME
             )
             adapt(market_pair, ticker)
@@ -39,6 +41,7 @@ module Cryptoexchange::Exchanges
           ticker.base       = market_pair.base
           ticker.target     = market_pair.target
           ticker.market     = JexFutures::Market::NAME
+          ticker.inst_id    = market_pair.inst_id
           ticker.last       = NumericHelper.to_d(output['lastPrice'])
           ticker.bid        = NumericHelper.to_d(output['bidPrice'])
           ticker.ask        = NumericHelper.to_d(output['askPrice'])
