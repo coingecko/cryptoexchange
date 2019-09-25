@@ -19,7 +19,7 @@ module Cryptoexchange::Exchanges
         # end
 
         def index_url(market_pair)
-          "#{Cryptoexchange::Exchanges::BinanceFutures::Market::API_URL}/premiumIndex?symbol=#{market_pair.base.upcase}#{market_pair.target.upcase}"
+          "#{Cryptoexchange::Exchanges::BinanceFutures::Market::API_URL}/premiumIndex?symbol=#{market_pair.inst_id}"
         end
 
         def adapt(open_interest, index, market_pair)
