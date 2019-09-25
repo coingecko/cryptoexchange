@@ -491,7 +491,7 @@ Or install it yourself as:
 | FTX               | Y       | Y          | Y             | Y       | Y     | Y          | Y           |  Y             | ftx |
 | Gate              |         |            |               |         |       |            |             |                |       |
 | GMO               |         |            |               |         |       |            |             |                |       |
-| Huobi DM          |         |            |               |         |       |            |             |                |       |
+| Huobi DM          | Y       |            | Y             |         | Y     | Y          | Y           |  Y             |huobi_dm|
 | Kraken Futures    |         |            |               |         |       |            |             |                |       |
 | Okex              |         |            |               |         |       |            |             |                |       |
 
