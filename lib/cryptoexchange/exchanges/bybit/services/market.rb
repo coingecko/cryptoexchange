@@ -24,9 +24,11 @@ module Cryptoexchange::Exchanges
 
             base   = pair['symbol'][0..separator - 1]
             target = pair['symbol'][separator..-1]
+            inst_id = pair['symbol']
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
+              inst_id: inst_id,
               market: Bybit::Market::NAME
             )
 
@@ -39,6 +41,7 @@ module Cryptoexchange::Exchanges
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Bybit::Market::NAME
+          ticker.inst_id = market_pair.inst_id
           ticker.last = NumericHelper.to_d(output['last_price'])
           ticker.bid = NumericHelper.to_d(output['bid_price'])
           ticker.ask = NumericHelper.to_d(output['ask_price'])
