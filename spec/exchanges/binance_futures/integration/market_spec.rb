@@ -14,8 +14,8 @@ RSpec.describe 'Binance Futures integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url market, base: btc_usdt_pair.base, target: btc_usdt_pair.target
-    expect(trade_page_url).to eq "https://www.binance.com/en/futures/#{btc_usdt_pair.base}#{btc_usdt_pair.target}"
+    trade_page_url = client.trade_page_url market, base: btc_usdt_pair.base, target: btc_usdt_pair.target, inst_id: btc_usdt_pair.inst_id
+    expect(trade_page_url).to eq "https://www.binance.com/en/futures/BTCUSDT"
   end
 
   it 'fetch ticker' do

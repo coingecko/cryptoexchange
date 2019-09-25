@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://ftx.com/api'
 
       def self.trade_page_url(args={})
-        "https://ftx.com/futures"
+        "https://ftx.com/trade/#{args[:inst_id]}"
       end
     end
   end
