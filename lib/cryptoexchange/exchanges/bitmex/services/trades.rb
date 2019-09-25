@@ -11,8 +11,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          symbol = (market_pair.target = "USD") ? market_pair.base : market_pair.target
-          "#{Cryptoexchange::Exchanges::Bitmex::Market::API_URL}/trade?symbol=#{symbol}&reverse=true"
+          "#{Cryptoexchange::Exchanges::Bitmex::Market::API_URL}/trade?symbol=#{market_pair.inst_id}&reverse=true"
         end
 
         def adapt(output, market_pair)
