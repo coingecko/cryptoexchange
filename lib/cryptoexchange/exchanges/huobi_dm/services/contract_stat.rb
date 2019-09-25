@@ -23,7 +23,8 @@ module Cryptoexchange::Exchanges
         end
 
         def index_url(market_pair)
-          "#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/api/v1/contract_index?symbol=#{market_pair.base}"
+          symbol = market_pair.inst_id.split("_")[0]
+          "#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/api/v1/contract_index?symbol=#{symbol}"
         end
 
         def adapt(open_interest, index)
