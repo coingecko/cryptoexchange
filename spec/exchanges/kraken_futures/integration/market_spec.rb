@@ -18,8 +18,8 @@ RSpec.describe 'kraken_futures integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url market, base: eth_usd_pair.base, target: eth_usd_pair.target
-    expect(trade_page_url).to eq "https://futures.kraken.com/dashboard"
+    trade_page_url = client.trade_page_url market, inst_id: eth_usd_pair.inst_id
+    expect(trade_page_url).to eq "https://futures.kraken.com/dashboard?symbol=PI_ETHUSD"
   end
 
   it 'fetch ticker' do
@@ -28,6 +28,8 @@ RSpec.describe 'kraken_futures integration specs' do
     expect(ticker.base).to eq 'ETH'
     expect(ticker.target).to eq 'USD'
     expect(ticker.market).to eq 'kraken_futures'
+    expect(ticker.inst_id).to eq 'pi_ethusd'
+    expect(ticker.contract_interval).to eq "perpetual"
     expect(ticker.last).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
