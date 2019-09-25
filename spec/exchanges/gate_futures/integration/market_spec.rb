@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'GateFutures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USD', market: 'gate_futures', contract_interval: "perpetual") }
+  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USD', inst_id: "ETH_USD", market: 'gate_futures', contract_interval: "perpetual") }
 
   it 'fetch pairs' do
     pairs = client.pairs('gate_futures')
@@ -11,12 +11,13 @@ RSpec.describe 'GateFutures integration specs' do
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
+    expect(pair.inst_id).to_not be nil
     expect(pair.market).to eq 'gate_futures'
     expect(pair.contract_interval).to eq "perpetual"
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url "gate_futures", base: xbt_usd_pair.base, target: xbt_usd_pair.target
+    trade_page_url = client.trade_page_url "gate_futures", inst_id: xbt_usd_pair.inst_id
     expect(trade_page_url).to eq "https://www.gate.io/futures_trade/ETH_USD"
   end
 
@@ -26,6 +27,7 @@ RSpec.describe 'GateFutures integration specs' do
     expect(ticker.base).to eq 'ETH'
     expect(ticker.target).to eq 'USD'
     expect(ticker.market).to eq 'gate_futures'
+    expect(ticker.inst_id).to eq 'ETH_USD'
     expect(ticker.last).to be_a Numeric
     expect(ticker.low).to be_a Numeric
     expect(ticker.high).to be_a Numeric

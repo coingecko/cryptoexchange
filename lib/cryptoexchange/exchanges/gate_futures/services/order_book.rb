@@ -14,8 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def orderbook_url(market_pair)
-          symbol = "#{market_pair.base}_#{market_pair.target}"
-          "#{Cryptoexchange::Exchanges::GateFutures::Market::API_URL}/order_book?contract=#{symbol}&interval=0.1&limit=50"
+          "#{Cryptoexchange::Exchanges::GateFutures::Market::API_URL}/order_book?contract=#{market_pair.inst_id}&interval=0.1&limit=50"
         end
 
         def adapt(output, market_pair)
