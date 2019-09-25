@@ -21,9 +21,11 @@ module Cryptoexchange::Exchanges
           output["data"].map do |ticker|
             next if ticker['symbol'].include?('_') == false
             base, target = ticker['symbol'].split("_")
+            inst_id = ticker['symbol']
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
+              inst_id: inst_id,
               market: GmoJapanFutures::Market::NAME
             )
             adapt(ticker, market_pair)
@@ -35,6 +37,7 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = GmoJapanFutures::Market::NAME
+          ticker.inst_id   = market_pair.inst_id
           ticker.ask       = NumericHelper.to_d(output['ask'])
           ticker.bid       = NumericHelper.to_d(output['bid'])
           # this is their typo
