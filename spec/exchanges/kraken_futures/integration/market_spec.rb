@@ -28,6 +28,8 @@ RSpec.describe 'kraken_futures integration specs' do
     expect(ticker.base).to eq 'ETH'
     expect(ticker.target).to eq 'USD'
     expect(ticker.market).to eq 'kraken_futures'
+    expect(ticker.inst_id).to eq 'pi_ethusd'
+    expect(ticker.contract_interval).to eq "perpetual"
     expect(ticker.last).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
