@@ -19,6 +19,7 @@ module Cryptoexchange::Exchanges
               base: base.upcase,
               target: target.upcase,
               inst_id: inst_id,
+              contract_interval: "perpetual",
               market: JexFutures::Market::NAME
             )
           end
