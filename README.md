@@ -494,6 +494,7 @@ Or install it yourself as:
 | Huobi DM          | Y       |            | Y             |               | Y     | Y          | Y           |                |huobi_dm|
 | Kraken Futures    |         |            |               |               |       |            |             |                |       |
 | OKEx Swaps        | Y       |            | Y             |               | Y     | Y          | Y           |                |okex_swap |
+| JexFutures        | Y       | N          | N             | N       | N     | Y          | Y           |                |jex_futures|
 
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
