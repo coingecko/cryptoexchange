@@ -8,7 +8,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::JexFutures::Market::API_URL}/contract/trades?symbol=#{market_pair.base}#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::JexFutures::Market::API_URL}/contract/trades?symbol=#{market_pair.inst_id}"
         end
 
 
