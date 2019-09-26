@@ -16,6 +16,7 @@ module Cryptoexchange::Exchanges
             pairs << Cryptoexchange::Models::MarketPair.new(
                 base: base,
                 target: target,
+                inst_id: data['symbol'],
                 market: Kumex::Market::NAME
               )
           end
