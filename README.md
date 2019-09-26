@@ -479,22 +479,22 @@ Or install it yourself as:
 | ZG.TOP            | Y       |            |         |         | Y           |          | zgtop             |       |
 
 ### Derivatives (Perpetual & Futures)
-| Exchange          | Ticker  | Expiration | Open Interest | Funding | Index | Order Book | Market List | Trade Page URL | slug  |
-| ----------------- | ------- | ---------- | ------------- | ------- | ----- | ---------- | ----------- | ---------------|-------|
-| Binance Futures   | Y       | N          | Y             | Y       | Y     | Y          | Y           |  Y             | binance_futures|
-| Bitflyer Futures  | Y       | Y          | N             | N       | Y     | Y          | Y           |  Y             | bitflyer_futures|
-| Bitforex Futures  |         |            |               |         |       |            |             |                |       |
-| Bitmex            | Y       | Y          | Y             | Y       | Y     | Y          | Y           |  Y             | bitmex |
-| Bybit             | Y       | N          | Y             |         | Y     | Y          | Y           |  Y             | bybit |
-| Coinflex Futures  |         |            |               |         |       |            |             |                |       |
-| Deribit           |         |            |               |         |       |            |             |                |       |
-| FTX               | Y       | Y          | Y             | Y       | Y     | Y          | Y           |  Y             | ftx |
-| Gate              |         |            |               |         |       |            |             |                |       |
-| GMO               |         |            |               |         |       |            |             |                |       |
-| Huobi DM          | Y       |            | Y             |         | Y     | Y          | Y           |  Y             |huobi_dm|
-| Kraken Futures    |         |            |               |         |       |            |             |                |       |
+| Exchange          | Ticker  | Expiration | Open Interest | Funding       | Index | Order Book | Market List | Trade Page URL | slug  |
+| ----------------- | ------- | ---------- | ------------- | ------------- | ----- | ---------- | ----------- | ---------------|-------|
+| Binance Futures   | Y       | N          | Y             | N (available) | Y     | Y          | Y           |  Y             | binance_futures|
+| Bitflyer Futures  | Y       | N (avail)  | N             | N             | Y     | Y          | Y           |                | bitflyer_futures|
+| Bitforex Futures  | Y       |            | Y             |               | Y     | Y          | Y           |  Y             | bitforex_futures|
+| Bitmex            | Y       | N (avail)  | Y             | N (available) | Y     | Y          | Y           |                | bitmex |
+| Bybit             | Y       | N          | Y             |               | Y     | Y          | Y           |  Y             | bybit |
+| Coinflex Futures  |         |            |               |               |       |            |             |                |       |
+| Deribit           | Y       | N (avail)  | Y             | N (available) | Y     | Y          | Y           |  Y             | deribit |
+| FTX               | Y       | N (avail)  | Y             | N (available) | Y     | Y          | Y           |  Y             | ftx |
+| Gate              |         |            |               |               |       |            |             |                |       |
+| GMO               |         |            |               |               |       |            |             |                |       |
+| Huobi DM          | Y       |            | Y             |               | Y     | Y          | Y           |                |huobi_dm|
+| Kraken Futures    | Y       | N          | Y             | Y             | N     | Y          | Y           | Y              |kraken_futures|
+| OKEx Swaps        | Y       |            | Y             |               | Y     | Y          | Y           |                |okex_swap |
 | Kumex             | Y       | N          | N             | N       | N     | Y          | Y           |  Y             |kumex  |
-| Okex              |         |            |               |         |       |            |             |                |       |
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 

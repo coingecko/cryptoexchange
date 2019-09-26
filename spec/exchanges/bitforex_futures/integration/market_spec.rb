@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'BitforexFutures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'bitforex_futures') }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'bitforex_futures', inst_id: 'swap-usd-btc', contract_interval: 'perpetual') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bitforex_futures')
@@ -15,8 +15,8 @@ RSpec.describe 'BitforexFutures integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url 'bitforex_futures', base: btc_usd_pair.base, target: btc_usd_pair.target
-    expect(trade_page_url).to eq 'https://www.bitforex.com/en/perpetual/btc_usd'
+    trade_page_url = client.trade_page_url 'bitforex_futures', inst_id: btc_usd_pair.inst_id
+    expect(trade_page_url).to eq 'https://www.bitforex.com/en/perpetual/swap-usd-btc'
   end
 
   it 'fetch ticker' do
@@ -66,5 +66,18 @@ RSpec.describe 'BitforexFutures integration specs' do
     expect(trade.timestamp).to be_a Numeric
     expect(2000..Date.today.year).to include(Time.at(trade.timestamp).year)
     expect(trade.payload).to_not be nil
+  end
+
+  it 'fetch contract stat' do
+    contract_stat = client.contract_stat(btc_usd_pair)
+
+    expect(contract_stat.base).to eq 'BTC'
+    expect(contract_stat.target).to eq 'USD'
+    expect(contract_stat.market).to eq 'bitforex_futures'
+    expect(contract_stat.index).to be_a Numeric
+    expect(contract_stat.open_interest).to be_a Numeric
+    expect(contract_stat.timestamp).to be nil
+
+    expect(contract_stat.payload).to_not be nil
   end
 end
