@@ -492,7 +492,7 @@ Or install it yourself as:
 | Gate              |         |            |               |               |       |            |             |                |       |
 | GMO               |         |            |               |               |       |            |             |                |       |
 | Huobi DM          | Y       |            | Y             |               | Y     | Y          | Y           |                |huobi_dm|
-| Kraken Futures    |         |            |               |               |       |            |             |                |       |
+| Kraken Futures    | Y       | N          | Y             | Y             | N     | Y          | Y           | Y              |kraken_futures|
 | OKEx Swaps        | Y       |            | Y             |               | Y     | Y          | Y           |                |okex_swap |
 
 
