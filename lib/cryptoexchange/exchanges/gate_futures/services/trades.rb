@@ -8,8 +8,7 @@ module Cryptoexchange::Exchanges
         end
 
         def trades_url(market_pair)
-          symbol = "#{market_pair.base}_#{market_pair.target}"
-          "#{Cryptoexchange::Exchanges::GateFutures::Market::API_URL}/trades?contract=#{symbol}"
+          "#{Cryptoexchange::Exchanges::GateFutures::Market::API_URL}/trades?contract=#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)

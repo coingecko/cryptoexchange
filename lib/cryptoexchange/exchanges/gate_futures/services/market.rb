@@ -23,6 +23,7 @@ module Cryptoexchange::Exchanges
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
                             target: target,
+                            inst_id: ticker["contract"],
                             market: GateFutures::Market::NAME
                           )
             adapt(ticker, market_pair)
@@ -33,6 +34,7 @@ module Cryptoexchange::Exchanges
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
+          ticker.inst_id = market_pair.inst_id
           ticker.market = GateFutures::Market::NAME
           ticker.last = NumericHelper.to_d(output['last'])
           ticker.high = NumericHelper.to_d(output['high_24h'])

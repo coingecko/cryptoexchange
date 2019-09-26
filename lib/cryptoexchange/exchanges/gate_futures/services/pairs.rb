@@ -17,6 +17,7 @@ module Cryptoexchange::Exchanges
                               base: base,
                               target: target,
                               contract_interval: "perpetual",
+                              inst_id: pair["name"],
                               market: GateFutures::Market::NAME
                             )
           end
