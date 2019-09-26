@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.btse.com/futures/api/v1/orderbook/BTCPFC
+    uri: https://api.btse.com/futures/api/v1/orderbook/BTCU19
     body:
       encoding: UTF-8
       string: ''
@@ -21,29 +21,29 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 05 Sep 2019 08:16:37 GMT
+      - Thu, 26 Sep 2019 08:34:03 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '792'
+      - '723'
       Connection:
       - close
       Set-Cookie:
-      - incap_ses_1234_1816178=UMKIZiOkeWURLlrLxwwgEWTEcF0AAAAA871zBx0K1+wJIaSD8YYeJA==;
+      - incap_ses_956_1816178=DpOcEdtp2k3mwHdcfWVEDft3jF0AAAAAnPt9xZO2Jn+qMt0bqDc5+A==;
         path=/; Domain=.btse.com
-      - nlbi_1816178=QcXZKsoUl20lA6/bCV6+vwAAAADfiv+xo/DlUQm4Gv2Rp115; path=/; Domain=.btse.com
-      - visid_incap_1816178=wxUQ0HoHRjiCgPFzNqb5WGTEcF0AAAAAQUIPAAAAAAAW/sTiRHlqfS0A6Iwwbn3Z;
-        expires=Fri, 04 Sep 2020 07:37:55 GMT; path=/; Domain=.btse.com
+      - nlbi_1816178=S49KIXg1OAXWgxwBCV6+vwAAAAD+ybUVxSKx6CkB8CQaOUr0; path=/; Domain=.btse.com
+      - visid_incap_1816178=CVlWEASgShyfskSbGiYj9vt3jF0AAAAAQUIPAAAAAADmLTmwKYoSsVQdRWCwtMoi;
+        expires=Thu, 24 Sep 2020 10:58:50 GMT; path=/; Domain=.btse.com
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       X-Iinfo:
-      - 11-99809894-99809902 NNNN CT(51 51 0) RT(1567671396683 30) q(0 0 1 -1) r(1
-        1) U5
+      - 2-4338754-4338756 NNNN CT(54 52 0) RT(1569486843139 38) q(0 0 1 -1) r(2 2)
+        U5
       X-Cdn:
       - Incapsula
     body:
       encoding: ASCII-8BIT
-      string: '{"buyQuote":[{"price":"10,556.0","size":"33"},{"price":"10,554.5","size":"1,801"},{"price":"10,554.0","size":"3,720"},{"price":"10,551.0","size":"1,512"},{"price":"10,550.5","size":"568"},{"price":"10,549.5","size":"4,274"},{"price":"10,548.5","size":"26,132"},{"price":"10,548.0","size":"13,775"},{"price":"10,547.5","size":"13,633"},{"price":"10,546.5","size":"15,959"}],"sellQuote":[{"price":"10,565.5","size":"20,630"},{"price":"10,565.0","size":"10,741"},{"price":"10,564.5","size":"34,895"},{"price":"10,564.0","size":"5,664"},{"price":"10,563.5","size":"10,836"},{"price":"10,563.0","size":"4,382"},{"price":"10,561.5","size":"1,446"},{"price":"10,559.0","size":"15"},{"price":"10,558.0","size":"3,739"},{"price":"10,557.5","size":"2,470"}],"timestamp":1567671397271,"symbol":"BTCPFC"}'
+      string: '{"buyQuote":[{"price":"8410.0","size":"587"},{"price":"8409.5","size":"1357"},{"price":"8409.0","size":"2921"},{"price":"8408.5","size":"780"},{"price":"8408.0","size":"6546"},{"price":"8407.5","size":"2958"},{"price":"8389.0","size":"263"},{"price":"8384.0","size":"921"},{"price":"8382.0","size":"361"},{"price":"8381.5","size":"1207"}],"sellQuote":[{"price":"8455.0","size":"3157"},{"price":"8444.0","size":"706"},{"price":"8442.0","size":"973"},{"price":"8440.0","size":"1370"},{"price":"8435.5","size":"569"},{"price":"8414.0","size":"2349"},{"price":"8413.5","size":"4595"},{"price":"8412.5","size":"8202"},{"price":"8412.0","size":"1584"},{"price":"8411.5","size":"420"}],"timestamp":1569486841171,"symbol":"BTCU19"}'
     http_version: 
-  recorded_at: Thu, 05 Sep 2019 08:16:37 GMT
+  recorded_at: Thu, 26 Sep 2019 08:34:03 GMT
 recorded_with: VCR 4.0.0
