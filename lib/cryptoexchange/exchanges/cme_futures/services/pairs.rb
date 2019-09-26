@@ -15,6 +15,7 @@ module Cryptoexchange::Exchanges
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: pair["productCode"],
                               target: "USD",
+                              inst_id: pair["quoteCode"],
                               market: CmeFutures::Market::NAME,
                               contract_interval: pair["expirationMonth"]
                             )
