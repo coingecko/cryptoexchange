@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'btse_futures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'btse_futures', contract_interval: "Perpetual", inst_id: "BTCU19") }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'btse_futures', contract_interval: "quarterly", inst_id: "BTCU19") }
 
   it 'fetch pairs' do
     pairs = client.pairs('btse_futures')
