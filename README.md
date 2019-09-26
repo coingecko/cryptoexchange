@@ -489,7 +489,7 @@ Or install it yourself as:
 | Coinflex Futures  | Y       | N          | Y             | N             | Y     | Y          | Y           |  Y             | coinflex_futures      |
 | Deribit           | Y       | N (avail)  | Y             | N (available) | Y     | Y          | Y           |  Y             | deribit |
 | FTX               | Y       | N (avail)  | Y             | N (available) | Y     | Y          | Y           |  Y             | ftx |
-| Gate              |         |            |               |               |       |            |             |                |       |
+| Gate (Futures)    | Y       | N          | Y             | Y       | Y     | Y          | Y           | Y              | gate_futures |
 | GMO               |         |            |               |               |       |            |             |                |       |
 | Huobi DM          | Y       |            | Y             |               | Y     | Y          | Y           |                |huobi_dm|
 | Kraken Futures    | Y       | N          | Y             | Y             | N     | Y          | Y           | Y              |kraken_futures|
