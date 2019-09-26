@@ -17,7 +17,7 @@ RSpec.describe 'btse_futures integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url 'btse_futures', base: btc_usd_pair.inst_id, inst_id: "BTCU19"
+    trade_page_url = client.trade_page_url 'btse_futures', inst_id: btc_usd_pair.inst_id
     expect(trade_page_url).to eq "https://www.btse.com/en/futures/BTCU19"
   end
 
