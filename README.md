@@ -486,7 +486,7 @@ Or install it yourself as:
 | Bitforex Futures  | Y       |            | Y             |               | Y     | Y          | Y           |  Y             | bitforex_futures|
 | Bitmex            | Y       | N (avail)  | Y             | N (available) | Y     | Y          | Y           |                | bitmex |
 | Bybit             | Y       | N          | Y             |               | Y     | Y          | Y           |  Y             | bybit |
-| Coinflex Futures  |         |            |               |               |       |            |             |                |       |
+| Coinflex Futures  | Y       | N          | Y             | N             | Y     | Y          | Y           |  Y             | coinflex_futures      |
 | Deribit           | Y       | N (avail)  | Y             | N (available) | Y     | Y          | Y           |  Y             | deribit |
 | FTX               | Y       | N (avail)  | Y             | N (available) | Y     | Y          | Y           |  Y             | ftx |
 | Gate              |         |            |               |               |       |            |             |                |       |
@@ -494,7 +494,7 @@ Or install it yourself as:
 | Huobi DM          | Y       |            | Y             |               | Y     | Y          | Y           |                |huobi_dm|
 | Kraken Futures    | Y       | N          | Y             | Y             | N     | Y          | Y           | Y              |kraken_futures|
 | OKEx Swaps        | Y       |            | Y             |               | Y     | Y          | Y           |                |okex_swap |
-| Kumex             | Y       | N          | N             | N       | N     | Y          | Y           |  Y             |kumex  |
+| Kumex             | Y       | N          | N             | N             | N     | Y          | Y           |  Y             |kumex  |
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 
