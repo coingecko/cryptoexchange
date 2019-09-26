@@ -483,6 +483,7 @@ Or install it yourself as:
 | Kraken Futures    | Y       | N          | Y             | Y             | N     | Y          | Y           |  Y             |kraken_futures|
 | Kumex             | Y       | N          | N             | N             | N     | Y          | Y           |  Y             |kumex  |
 | OKEx Swaps        | Y       |            | Y             |               | Y     | Y          | Y           |                |okex_swap |
+| BTSE (Futures)    | Y       | N          | N             | N             | N     | Y          | Y           |  Y             | btse_futures |
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 
