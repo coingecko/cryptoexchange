@@ -30,6 +30,7 @@ module Cryptoexchange::Exchanges
               base:   pair.base,
               target: pair.target,
               inst_id: inst_id,
+              contract_interval: "perpetual",
               market: JexFutures::Market::NAME
             )
             adapt(market_pair, ticker)
@@ -42,6 +43,7 @@ module Cryptoexchange::Exchanges
           ticker.target     = market_pair.target
           ticker.market     = JexFutures::Market::NAME
           ticker.inst_id    = market_pair.inst_id
+          ticker.contract_interval = market_pair.contract_interval
           ticker.last       = NumericHelper.to_d(output['lastPrice'])
           ticker.bid        = NumericHelper.to_d(output['bidPrice'])
           ticker.ask        = NumericHelper.to_d(output['askPrice'])
