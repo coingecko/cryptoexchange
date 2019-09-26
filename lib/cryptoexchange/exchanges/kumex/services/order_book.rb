@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Kumex::Market::API_URL}/level2/snapshot?symbol=#{market_pair.base}#{market_pair.target}M"
+          "#{Cryptoexchange::Exchanges::Kumex::Market::API_URL}/level2/snapshot?symbol=#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)
