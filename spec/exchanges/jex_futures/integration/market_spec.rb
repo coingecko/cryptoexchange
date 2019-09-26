@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'JexFutures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: 'jex_futures', inst_id: "BTCUSDT") }
+  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: 'jex_futures', inst_id: "BTCUSDT", contract_interval: "perpetual") }
 
   it 'fetch pairs' do
     pairs = client.pairs('jex_futures')
@@ -12,6 +12,7 @@ RSpec.describe 'JexFutures integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.inst_id).to_not be nil
+    expect(pair.contract_interval).to_not be nil
     expect(pair.market).to eq 'jex_futures'
   end
 
@@ -21,6 +22,7 @@ RSpec.describe 'JexFutures integration specs' do
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USDT'
     expect(ticker.inst_id).to eq 'BTCUSDT'
+    expect(ticker.contract_interval).to eq 'perpetual'
     expect(ticker.market).to eq 'jex_futures'
     expect(ticker.last).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
