@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Coinflex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:xbt_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'USDT', inst_id: '63488:65283', market: 'coinflex') }
+  let(:xbt_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'USDT', inst_id: '63488:65283', contract_interval: 'perpetual', market: 'coinflex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('coinflex')
@@ -11,6 +11,7 @@ RSpec.describe 'Coinflex integration specs' do
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
+    expect(pair.contract_interval).to eq 'perpetual'
     expect(pair.inst_id).to_not be nil
     expect(pair.market).to eq 'coinflex'
   end
@@ -25,6 +26,7 @@ RSpec.describe 'Coinflex integration specs' do
 
     expect(ticker.base).to eq xbt_usdt_pair.base
     expect(ticker.target).to eq xbt_usdt_pair.target
+    expect(ticker.contract_interval).to eq xbt_usdt_pair.contract_interval
     expect(ticker.market).to eq xbt_usdt_pair.market
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric

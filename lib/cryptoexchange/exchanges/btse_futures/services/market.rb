@@ -28,7 +28,7 @@ module Cryptoexchange::Exchanges
                             base: base,
                             target: target,
                             inst_id: inst_id,
-                            contract_interval: contract_interval,
+                            contract_interval: contract_interval.downcase,
                             market: BtseFutures::Market::NAME
                           })
             adapt(ticker, market_pair)

@@ -21,6 +21,7 @@ module Cryptoexchange::Exchanges
               Cryptoexchange::Models::MarketPair.new(
                 base: base,
                 target: target,
+                contract_interval: 'perpetual',
                 inst_id: "#{pair["base"]}:#{pair["counter"]}",
                 market: Coinflex::Market::NAME
               )
