@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def order_book_url(market_pair)
-          "#{Cryptoexchange::Exchanges::BitforexFutures::Market::API_URL}/depth?businessType=swap-#{market_pair.target.downcase}-#{market_pair.base.downcase}&size=50&dType=0"
+          "https://www.bitforex.com/contract/mkapi/depth?businessType=#{market_pair.inst_id}&size=50&dType=0"
         end
 
         def adapt(output, market_pair)
