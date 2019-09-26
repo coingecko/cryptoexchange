@@ -30,7 +30,6 @@ module Cryptoexchange::Exchanges
               market_pair = Cryptoexchange::Models::MarketPair.new(
                               base: base,
                               target: target,
-                              contract_interval: 'perpetual',
                               inst_id: "#{pair["base"]}:#{pair["counter"]}",
                               market: Coinflex::Market::NAME
                             )
@@ -43,7 +42,6 @@ module Cryptoexchange::Exchanges
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
-          ticker.contract_interval    = market_pair.contract_interval
           ticker.market    = Coinflex::Market::NAME
           ticker.bid       = output['bid'].to_f / 10000.0
           ticker.ask       = output['ask'].to_f / 10000.0
