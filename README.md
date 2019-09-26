@@ -496,6 +496,7 @@ Or install it yourself as:
 | OKEx Swaps        | Y       |            | Y             |               | Y     | Y          | Y           |                |okex_swap |
 | Kumex             | Y       | N          | N             | N             | N     | Y          | Y           |  Y             |kumex  |
 | CME Futures       | Y       | Y          | N             | N             | N     | N          | Y           |  Y             |cme_futures|
+| JexFutures        | Y       | N          | N             | N       | N     | Y          | Y           |                |jex_futures|
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 
