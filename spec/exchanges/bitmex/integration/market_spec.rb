@@ -32,6 +32,11 @@ RSpec.describe 'Bitmex integration specs' do
     expect(ticker.contract_interval).to eq "perpetual"
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url "bitmex", base: xbt_usd_pair.base, target: xbt_usd_pair.target, inst_id: xbt_usd_pair.inst_id
+    expect(trade_page_url).to eq "https://www.bitmex.com/app/trade/XBTUSD"
+  end
+
   it 'fetch order book' do
     order_book = client.order_book(xbt_usd_pair)
 
