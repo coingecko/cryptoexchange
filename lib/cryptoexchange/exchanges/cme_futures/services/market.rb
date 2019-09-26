@@ -22,6 +22,7 @@ module Cryptoexchange::Exchanges
             pair = Cryptoexchange::Models::MarketPair.new(
                       base: ticker["productCode"],
                       target: "USD",
+                      inst_id: ticker["quoteCode"],
                       market: CmeFutures::Market::NAME,
                       contract_interval: ticker["expirationMonth"]
                     )
@@ -34,6 +35,7 @@ module Cryptoexchange::Exchanges
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = CmeFutures::Market::NAME
+          ticker.inst_id = market_pair.inst_id
           ticker.last = NumericHelper.to_d(output["last"])
           ticker.volume = NumericHelper.to_d(output["volume"]) * 5.0
           ticker.contract_interval = market_pair.contract_interval
