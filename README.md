@@ -313,7 +313,7 @@ Or install it yourself as:
 | Ironex            | Y       |            |         |         | Y           |          | ironex            |       |
 | Itbit             | Y       | Y [x]      | Y       |         | User-Defined|          | itbit             |       |
 | Jex               | Y       | Y [x]      | N       |         | Y           | Y        | jex               |       |
-| JexFutures        | Y       | Y [x]      | N       |         | Y           | Y        | jex_future        |       |
+| JexFutures        | Y       | Y [x]      | N       |         | Y           | Y        | jex_future        | futures |
 | Joyso             | Y       | Y [x]      |         |         | Y           |          | joyso             |       |
 | Jubi              | Y       |            |         |         | Y           |          | jubi              |       |
 | Kairex            | Y       | Y [x]      |         |         | Y           |          | kairex            |       |
