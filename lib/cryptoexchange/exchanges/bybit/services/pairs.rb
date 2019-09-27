@@ -16,6 +16,7 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
+              contract_interval: 'perpetual',
               inst_id: inst_id,
               market: Bybit::Market::NAME
             )

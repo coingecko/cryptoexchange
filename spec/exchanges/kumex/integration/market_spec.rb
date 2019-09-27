@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Kumex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'USD', inst_id: "XBTUSDM", market: 'kumex') }
+  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'USD', inst_id: "XBTUSDM", contract_interval: 'perpetual', market: 'kumex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('kumex')
@@ -11,6 +11,7 @@ RSpec.describe 'Kumex integration specs' do
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
+    expect(pair.contract_interval).to eq 'perpetual'
     expect(pair.market).to eq 'kumex'
     expect(pair.inst_id).to eq 'XBTUSDM'
   end
@@ -21,6 +22,7 @@ RSpec.describe 'Kumex integration specs' do
     expect(ticker.base).to eq 'XBT'
     expect(ticker.target).to eq 'USD'
     expect(ticker.market).to eq 'kumex'
+    expect(ticker.contract_interval).to eq 'perpetual'
     expect(ticker.inst_id).to eq 'XBTUSDM'
     expect(ticker.last).to be_a Numeric
     expect(ticker.bid).to be_a Numeric

@@ -28,6 +28,7 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Kumex::Market::NAME
+          ticker.contract_interval    = market_pair.contract_interval
           ticker.inst_id    = market_pair.inst_id
 
           ticker.last      = NumericHelper.to_d(output['price'])

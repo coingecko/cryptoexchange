@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'GmoJapanFutures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_jpy_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'JPY', inst_id: 'BTC_JPY', market: 'gmo_japan_futures') }
+  let(:btc_jpy_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'JPY', inst_id: 'BTC_JPY', contract_interval: "perpetual", market: 'gmo_japan_futures') }
 
   it 'fetch pairs' do
     pairs = client.pairs('gmo_japan_futures')
@@ -11,6 +11,7 @@ RSpec.describe 'GmoJapanFutures integration specs' do
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
+    expect(pair.contract_interval).to eq 'perpetual'
     expect(pair.inst_id).to eq 'BTC_JPY'
     expect(pair.market).to eq 'gmo_japan_futures'
   end
@@ -25,6 +26,7 @@ RSpec.describe 'GmoJapanFutures integration specs' do
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'JPY'
+    expect(ticker.contract_interval).to eq 'perpetual'
     expect(ticker.market).to eq 'gmo_japan_futures'
     expect(ticker.inst_id).to eq 'BTC_JPY'
     expect(ticker.last).to be_a Numeric

@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Bybit integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', inst_id: 'BTCUSD', market: 'bybit') }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', inst_id: 'BTCUSD', contract_interval: 'perpetual', market: 'bybit') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bybit')
@@ -11,6 +11,7 @@ RSpec.describe 'Bybit integration specs' do
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
+    expect(pair.contract_interval).to eq 'perpetual'
     expect(pair.inst_id).to eq 'BTCUSD'
     expect(pair.market).to eq 'bybit'
   end
@@ -27,6 +28,7 @@ RSpec.describe 'Bybit integration specs' do
     expect(ticker.target).to eq 'USD'
     expect(ticker.market).to eq 'bybit'
     expect(ticker.inst_id).to eq 'BTCUSD'
+    expect(ticker.contract_interval).to eq 'perpetual'
     expect(ticker.last).to be_a Numeric
     expect(ticker.high).to be_a Numeric
     expect(ticker.low).to be_a Numeric

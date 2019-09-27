@@ -25,6 +25,7 @@ module Cryptoexchange::Exchanges
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
+              contract_interval: "perpetual",
               inst_id: inst_id,
               market: GmoJapanFutures::Market::NAME
             )
@@ -37,6 +38,7 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = GmoJapanFutures::Market::NAME
+          ticker.contract_interval = market_pair.contract_interval
           ticker.inst_id   = market_pair.inst_id
           ticker.ask       = NumericHelper.to_d(output['ask'])
           ticker.bid       = NumericHelper.to_d(output['bid'])

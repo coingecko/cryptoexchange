@@ -18,6 +18,7 @@ module Cryptoexchange::Exchanges
             market_pairs << Cryptoexchange::Models::MarketPair.new(
               base: base.upcase,
               target: target.upcase,
+              contract_interval: 'perpetual',
               inst_id: inst_id,
               contract_interval: "perpetual",
               market: JexFutures::Market::NAME
