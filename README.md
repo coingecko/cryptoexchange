@@ -56,7 +56,6 @@ Or install it yourself as:
 | Bilaxy            | Y       | Y [x]      | Y       |         | Y           | Y        | bilaxy            |       |
 | Binance           | Y       | Y [x]      | Y [limit: 500]   |         | Y           | Y        | binance           |       |
 | Binance DEX       | Y       | Y [x]      | Y [limit: 50]    |         | Y        |          | binance_dex       |       |
-| Binance Futures   | Y       | Y [x]      |         |         | Y           | Y        | binance_futures   |futures|
 | Binance Jersey    | Y       | Y [x]      |         |         | Y           | Y        | binance_jersey    |       |
 | Binance Uganda    | Y       | Y [x]      |         |         | Y           | Y        | binance_uganda    |       |
 | Binance Us        | Y       | Y [x]      |         |         | Y           | Y        | binance_us        |       |
@@ -85,9 +84,7 @@ Or install it yourself as:
 | BitFex.Trade      | Y       |            |         |         | Y           | Y        | bitfex            |       |
 | Bitfinex          | Y       | Y [x]      |         |         | Y           |          | bitfinex          |       |
 | Bitflyer          | Y       | Y [x]      |         |         | Y           |          | bitflyer          |       |
-| Bitflyer (Futures)| Y       | Y [x]      |         |         | Y           | Y        | bitflyer_futures  |       |
 | Bitforex          | Y       | Y [x]      | N       |         | Y           |          | bitforex          |       |
-| BitforexFutures   | Y       | Y [x]      | N       |         | Y           | Y        | bitforex_futures  |       |
 | Bithash           | Y       | Y [x]      | Y       |         | Y           | Y        | bithash           |       |
 | Bitholic          | Y       | Y [x]      | Y       |         | Y           |          | bitholic          |       |
 | Bithumb           | Y       | Y [x]      |         |         | Y           |          | bithumb           |       |
@@ -102,7 +99,6 @@ Or install it yourself as:
 | Bitmart           | Y       | Y [x]      | Y       |         | Y           |          | bitmart           |       |
 | Bitmax            | Y       | Y [x]      | Y       |         | Y           | Y        | bitmax            |       |
 | Bitmesh           | Y       | N          | N       |         | Y           | Y        | bitmesh           |       |
-| Bitmex            | Y       | Y [x]      | Y       |         | Y           |          | bitmex            |futures|
 | Bitoffer          | Y       | Y [x]      | Y       |         | Y           | Y        | bitoffer          |       |
 | BitOnBay          | Y       |            |         |         | Y           |          | bitonbay          |       |
 | Bitopro           | Y       | Y [x]      | Y       |         | User-Defined| Y        | bitopro           |       |
@@ -139,7 +135,6 @@ Or install it yourself as:
 | BTCTurk           | Y       | Y [x]      |         |         | Y           |          | btcturk           |       |
 | BTER              | Y       |            |         |         | Y           |          | bter              |       |
 | BTSE              | Y       | Y [x]      | Y       |         | Y           | Y        | btse              |       |
-| BTSE (Futures)    | Y       | Y [x]      | Y       |         | Y           | Y        | btse_futures      |       |
 | BTCNEXT           | Y       |            |         |         | Y           | N        | btcnext           |       |
 | Buyucoin          | Y       | N          | N       |         | Y           |          | buyucoin          |       |
 | BX Thailand       | Y       | Y [x]      |         |         | Y           |          | bx_thailand       |       |
@@ -162,7 +157,6 @@ Or install it yourself as:
 | Chaoex            | Y       | Y [x]      | Y       |         | Y           | N        | chaoex            |       |
 | CHBTC             | Y       | Y [x]      |         |         | User-Defined|          | chbtc             |       |
 | Citex             | Y       | N          | N       |         | Y           | Y        | citex             |       |
-| CME Futures       | Y       | N          | N       | N       | Y           | N        | cme_futures       |futures|
 | Cobinhood         | Y       | Y [x]      |         |         | Y           | Y        | cobinhood         |       |
 | CODEX             | Y       | Y          | Y       |         | Y           |          | codex             |       |
 | Coin2001          | Y       | Y          | Y       |         | Y           |          | coin2001          |       |
@@ -185,7 +179,6 @@ Or install it yourself as:
 | Coinfield         | Y       | Y [x]      | Y       |         | Y           | Y        | coinfield         |       |
 | Coinfinit         | Y       | Y [x]      |         |         | Y           | Y        | coinfinit         |       |
 | Coinflex          | Y       | Y [x]      |         |         | Y           | Y        | coinflex          |       |
-| Coinflex (Futures)| Y       | Y [x]      |         |         | Y           | Y        | coinflex_futures  |       |
 | Coingi            | Y       | Y [x]      | Y       |         | Y           | Y        | coingi            |       |
 | Coinhouse         | Y       |            |         |         | Y           | Y        | coinhouse         |       |
 | Coinhub           | Y       | Y          | Y       |         | Y           | Y        | coinhub           |       |
@@ -234,7 +227,6 @@ Or install it yourself as:
 | Dcoin             | Y       | Y [x]      | Y       |         | Y           | Y        | dcoin             |       |
 | Ddex              | Y       | Y          | Y       |         | Y           | Y        | ddex              |       |
 | DEEX              | Y       |            |         |         | Y           |          | deex              |       |
-| Deribit           | Y       | Y [x]      | Y       | Y       | Y           | Y        | deribit           |futures|
 | DEx.top           | Y       | Y [x]      | Y       |         | Y           |          | dextop            |       |
 | dex-trade         | Y       | Y          | Y       |         | Y           |          | dextrade          |       |
 | Dflow             | Y       |            |         |         | Y           | Y        | dflow             |       |
@@ -244,7 +236,7 @@ Or install it yourself as:
 | Dove Wallet       | Y       | Y [x]      | Y       |         | Y           | Y        | dove_wallet       |       |
 | Dragonex          | Y       | Y [x]      | N       |         | Y           | Y        | dragonex          |       |
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |       |
-| Dydx              | Y       | N          | N       |         | Y           | N        | dydx              |futures|
+| Dydx              | Y       | N          | N       |         | Y           | N        | dydx              |       |
 | Eosex             | Y       | N          | N       |         | Y           | Y        | eosex             |       |
 | Ecxx              | Y       | Y[X]       | N       |         | Y           | Y        | ecxx              |       |
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |       |
@@ -270,18 +262,15 @@ Or install it yourself as:
 | Floatsv           | Y       | Y [x]      |         |         | Y           | Y        | floatsv           |       |
 | Forkdelta         | Y       | N          | N       |         | Y           | Y        | forkdelta         |       |
 | Freiexchange      | Y       | Y          |         |         | User-Defined| Y        | freiexchange      |       |
-| FTX               | Y       | Y [x]      |         |         | Y           | Y        | ftx               |futures|
 | FTX (Spot)        | Y       | Y [x]      |         |         | Y           | Y        | ftx_spot          |       |
 | FinexBox          | Y       | Y [x]      |         |         | Y           | Y        | finexbox          |       |
 | Fubt              | Y       |            |         |         | Y           | Y        | fubt              |       |
 | Gate              | Y       | Y [x]      | Y       |         | Y           | Y        | gate              |       |
-| Gate (Futures)    | Y       | Y [x]      | Y       |         | Y           | Y        | gate_futures      |futures|
 | Gatecoin          | Y       |            |         |         | Y           |          | gatecoin          |       |
 | GDAX(Coinbase Pro)| Y       | Y [x]      |         |         | Y           | Y        | gdax              |       |
 | Gemini            | Y       | Y [x]      | Y       |         | Y           |          | gemini            |       |
 | GetBTC            | Y       | Y          | Y       |         | User-Defined| Y        | getbtc            |       |
 | GmoJapan          | Y       | Y [x]      | Y       |         | Y           | Y        | gmo_japan         |       |
-| GmoJapanFutures   | Y       | Y [x]      | Y       |         | Y           | Y        | gmo_japan_futures |       |
 | GoExchange        | Y       | Y [x]      | Y       |         | Y           | Y        | go_exchange       |       |
 | Gibraltar         | Y       | N          | N       |         | Y           | Y        | gbx               |       |
 | Gobaba            | Y       |            |         |         | Y           |          | gobaba            |       |
@@ -313,7 +302,6 @@ Or install it yourself as:
 | Ironex            | Y       |            |         |         | Y           |          | ironex            |       |
 | Itbit             | Y       | Y [x]      | Y       |         | User-Defined|          | itbit             |       |
 | Jex               | Y       | Y [x]      | N       |         | Y           | Y        | jex               |       |
-| JexFutures        | Y       | Y [x]      | N       |         | Y           | Y        | jex_future        |       |
 | Joyso             | Y       | Y [x]      |         |         | Y           |          | joyso             |       |
 | Jubi              | Y       |            |         |         | Y           |          | jubi              |       |
 | Kairex            | Y       | Y [x]      |         |         | Y           |          | kairex            |       |
@@ -324,7 +312,6 @@ Or install it yourself as:
 | Koinx             | Y       | Y [x]      |         |         | Y           | Y        | koinx             |       |
 | Korbit            | Y       | Y [x]      |         |         | User-Defined| Y        | korbit            |       |
 | Kraken            | Y       | Y [x]      | Y [limit: 1000]      |         | Y           | Y        | kraken            |       |
-| Kraken Futures    | Y       | Y [x]      | Y       |         | Y           | Y        | kraken_futures    |       |
 | Kryptono          | Y       | Y [x]      | Y       |         | User-Defined| Y        | kryptono          |       |
 | Kucoin            | Y       | Y [x]      | N       |         | Y           | Y        | kucoin            |       |
 | Kumex             | Y       | Y [x]      | N       |         | Y           | Y        | kumex             |       |
@@ -371,7 +358,6 @@ Or install it yourself as:
 | OKCoin            | Y       | Y [x]      |         |         | Y           |          | okcoin            |       |
 | OKEx              | Y       | Y [x]      | Y [limit: 60]      |         | Y           | Y        | okex              |       |
 | OKEx Korea        | Y       | Y [x]      |         |         | Y           | Y        | okex_korea        |       |
-| OKEx Perpetual Swaps | Y (no volume) | Y (can't map) |         |         | Y           | Y        | okex_swap         |futures|
 | Omgfin            | Y       | Y [x]      |         |         | Y           | Y        | omgfin            |       |
 | OmniTrade         | Y       | Y          | Y       | Y       | Y           |          | omnitrade         |       |
 | Ooobtc            | Y       | Y [x]      | Y [limit: 20]      |         | Y           | Y        | ooobtc            |       |
@@ -477,6 +463,27 @@ Or install it yourself as:
 | Zeniex            | Y       | Y          | Y       |         | Y           |          | zeniex            |       |
 | ZG                | Y       | Y [x]      | Y       |         | Y           | Y        | zg                |       |
 | ZG.TOP            | Y       |            |         |         | Y           |          | zgtop             |       |
+
+### Derivatives (Perpetual & Futures)
+| Exchange          | Ticker  | Expiration | Open Interest | Funding       | Index | Order Book | Market List | Trade Page URL | slug  |
+| ----------------- | ------- | ---------- | ------------- | ------------- | ----- | ---------- | ----------- | ---------------|-------|
+| Binance Futures   | Y       | N          | Y             | N (available) | Y     | Y          | Y           |  Y             | binance_futures|
+| Bitflyer Futures  | Y       | N (avail)  | N             | N             | Y     | Y          | Y           |                | bitflyer_futures|
+| Bitforex Futures  | Y       |            | Y             |               | Y     | Y          | Y           |  Y             | bitforex_futures|
+| Bitmex            | Y       | N (avail)  | Y             | N (available) | Y     | Y          | Y           |                | bitmex |
+| Bybit             | Y       | N          | Y             |               | Y     | Y          | Y           |  Y             | bybit |
+| CME Futures       | Y       | N (avail)  | N             | N             | N     | N          | Y           |  Y             | cme_futures|
+| Coinflex Futures  | Y       | N          | Y             | N             | Y     | Y          | Y           |  Y             | coinflex_futures      |
+| Deribit           | Y       | N (avail)  | Y             | N (available) | Y     | Y          | Y           |  Y             | deribit |
+| FTX               | Y       | N (avail)  | Y             | N (available) | Y     | Y          | Y           |  Y             | ftx |
+| Gate (Futures)    | Y       | N          | Y             | N (available) | Y     | Y          | Y           |  Y             | gate_futures |
+| GMO (Futures)     | Y       | N          | N             | N             | N     | Y          | Y           |  Y             | gmo_japan_futures|
+| Huobi DM          | Y       |            | Y             |               | Y     | Y          | Y           |                |huobi_dm|
+| JexFutures        | Y       | N          | N             | N             | N     | Y          | Y           |                |jex_futures|
+| Kraken Futures    | Y       | N          | Y             | Y             | N     | Y          | Y           |  Y             |kraken_futures|
+| Kumex             | Y       | N          | N             | N             | N     | Y          | Y           |  Y             |kumex  |
+| OKEx Swaps        | Y       |            | Y             |               | Y     | Y          | Y           |                |okex_swap |
+| BTSE (Futures)    | Y       | N          | N             | N             | N     | Y          | Y           |  Y             | btse_futures |
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 

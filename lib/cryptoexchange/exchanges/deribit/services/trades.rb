@@ -9,8 +9,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          symbol = "#{market_pair.base}-#{market_pair.contract_interval.upcase}"
-          "#{Cryptoexchange::Exchanges::Deribit::Market::API_URL}/getlasttrades?instrument=#{symbol}"
+          "#{Cryptoexchange::Exchanges::Deribit::Market::API_URL}/getlasttrades?instrument=#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)

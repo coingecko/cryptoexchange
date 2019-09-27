@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'GmoJapanFutures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_jpy_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'JPY', market: 'gmo_japan_futures') }
+  let(:btc_jpy_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'JPY', inst_id: 'BTC_JPY', contract_interval: "perpetual", market: 'gmo_japan_futures') }
 
   it 'fetch pairs' do
     pairs = client.pairs('gmo_japan_futures')
@@ -11,11 +11,13 @@ RSpec.describe 'GmoJapanFutures integration specs' do
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
+    expect(pair.contract_interval).to eq 'perpetual'
+    expect(pair.inst_id).to eq 'BTC_JPY'
     expect(pair.market).to eq 'gmo_japan_futures'
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url 'gmo_japan_futures', base: btc_jpy_pair.base, target: btc_jpy_pair.target
+    trade_page_url = client.trade_page_url 'gmo_japan_futures', base: btc_jpy_pair.base, target: btc_jpy_pair.target, inst_id: btc_jpy_pair.inst_id
     expect(trade_page_url).to eq "https://coin.z.com/jp/corp/information/btc-market/"
   end
 
@@ -24,7 +26,9 @@ RSpec.describe 'GmoJapanFutures integration specs' do
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'JPY'
+    expect(ticker.contract_interval).to eq 'perpetual'
     expect(ticker.market).to eq 'gmo_japan_futures'
+    expect(ticker.inst_id).to eq 'BTC_JPY'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric

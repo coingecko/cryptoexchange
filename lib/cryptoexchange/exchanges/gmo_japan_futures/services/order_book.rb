@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "https://api.coin.z.com/public/v1/orderbooks?symbol=#{market_pair.base}_#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::GmoJapanFutures::Market::API_URL}/orderbooks?symbol=#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)
@@ -34,8 +34,8 @@ module Cryptoexchange::Exchanges
           orders.collect do |order_entry|
             price = order_entry['price']
             amount = order_entry['size']
-            Cryptoexchange::Models::Order.new(price: price.to_i,
-                                              amount: amount.to_i)
+            Cryptoexchange::Models::Order.new(price: price.to_f,
+                                              amount: amount.to_f)
           end
         end
       end

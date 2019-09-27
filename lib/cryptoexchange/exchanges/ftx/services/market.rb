@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Ftx::Market::API_URL}/futures/#{market_pair.base}-PERP"
+          "#{Cryptoexchange::Exchanges::Ftx::Market::API_URL}/futures/#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)
@@ -22,6 +22,7 @@ module Cryptoexchange::Exchanges
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Ftx::Market::NAME
+          ticker.inst_id = market_pair.inst_id
           ticker.ask = NumericHelper.to_d(output["ask"])
           ticker.bid = NumericHelper.to_d(output["bid"])
           ticker.last = NumericHelper.to_d(output["last"])

@@ -27,13 +27,14 @@ RSpec.describe 'Coinflex Futures integration specs' do
     expect(ticker.base).to eq xbt_usdt_pair.base
     expect(ticker.target).to eq xbt_usdt_pair.target
     expect(ticker.market).to eq xbt_usdt_pair.market
+    expect(ticker.inst_id).to eq '51206:51886'
     expect(ticker.contract_interval).to_not be nil
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
     expect(ticker.last).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.high).to be_a Numeric 
-    expect(ticker.low).to be_a Numeric    
+    expect(ticker.high).to be_a Numeric
+    expect(ticker.low).to be_a Numeric
     expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
   end
@@ -51,5 +52,18 @@ RSpec.describe 'Coinflex Futures integration specs' do
     expect(order_book.bids.first.timestamp).to be_nil
     expect(order_book.timestamp).to be_nil
     expect(order_book.payload).to_not be nil
+  end
+
+  it 'fetch contract stat' do
+    contract_stat = client.contract_stat(xbt_usdt_pair)
+
+    expect(contract_stat.base).to eq 'XBT'
+    expect(contract_stat.target).to eq 'USDT'
+    expect(contract_stat.market).to eq 'coinflex_futures'
+    expect(contract_stat.index).to be nil
+    expect(contract_stat.open_interest).to be_a Numeric
+    expect(contract_stat.timestamp).to be nil
+
+    expect(contract_stat.payload).to_not be nil
   end
 end

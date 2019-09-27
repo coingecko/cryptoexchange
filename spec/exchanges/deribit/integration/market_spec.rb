@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe 'Deribit integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'deribit' }
-  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'deribit', contract_interval: "perpetual") }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'deribit', contract_interval: "perpetual", inst_id: "BTC-PERPETUAL") }
 
   it 'fetch pairs' do
     pairs = client.pairs('deribit')
@@ -13,7 +13,8 @@ RSpec.describe 'Deribit integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'deribit'
-    expect(pair.contract_interval).to eq "perpetual"
+    expect(pair.contract_interval).to eq "month"
+    expect(pair.inst_id).to eq "BTC-27SEP19"
   end
 
   it 'fetch ticker' do
@@ -31,10 +32,11 @@ RSpec.describe 'Deribit integration specs' do
     expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
     expect(ticker.contract_interval).to eq "perpetual"
+    expect(ticker.inst_id).to eq "BTC-PERPETUAL"
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url market, base: btc_usd_pair.base, target: btc_usd_pair.target
+    trade_page_url = client.trade_page_url market, base: btc_usd_pair.base, target: btc_usd_pair.target, inst_id: btc_usd_pair.inst_id
     expect(trade_page_url).to eq "https://www.deribit.com/main#/futures?tab=BTC-PERPETUAL"
   end
 

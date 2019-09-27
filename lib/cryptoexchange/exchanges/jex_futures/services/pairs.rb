@@ -14,9 +14,12 @@ module Cryptoexchange::Exchanges
           output = output['contractSymbols']
           output.map do |pair|
             base, target = pair['baseAsset'], pair['quoteAsset']
+            inst_id = pair['symbol']
             market_pairs << Cryptoexchange::Models::MarketPair.new(
               base: base.upcase,
               target: target.upcase,
+              contract_interval: 'perpetual',
+              inst_id: inst_id,
               market: JexFutures::Market::NAME
             )
           end

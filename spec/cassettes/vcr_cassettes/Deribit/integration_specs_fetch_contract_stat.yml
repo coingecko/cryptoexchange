@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.deribit.com/api/v2/public/get_book_summary_by_currency?currency=BTC&kind=future
+    uri: https://www.deribit.com/api/v2/public/get_book_summary_by_instrument?instrument_name=BTC-PERPETUAL&kind=future
     body:
       encoding: UTF-8
       string: ''
@@ -21,11 +21,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 14 Sep 2019 07:36:06 GMT
+      - Wed, 25 Sep 2019 07:37:19 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1191'
+      - '493'
       Connection:
       - close
       Access-Control-Allow-Origin:
@@ -40,9 +40,9 @@ http_interactions:
       - SAMEORIGIN
     body:
       encoding: ASCII-8BIT
-      string: '{"jsonrpc":"2.0","result":[{"volume_usd":15276020.0,"volume":1475.57,"quote_currency":"USD","open_interest":33626670,"mid_price":10396.0,"mark_price":10396.88,"low":10202.0,"last":10397.5,"instrument_name":"BTC-27SEP19","high":10458.0,"estimated_delivery_price":10326.53,"creation_timestamp":1568446566211,"bid_price":10395.0,"base_currency":"BTC","ask_price":10397.0},{"volume_usd":21941060.0,"volume":2073.77,"quote_currency":"USD","open_interest":71038160,"mid_price":10650.5,"mark_price":10647.35,"low":10446.0,"last":10648.0,"instrument_name":"BTC-27DEC19","high":10717.5,"estimated_delivery_price":10326.53,"creation_timestamp":1568446566211,"bid_price":10650.0,"base_currency":"BTC","ask_price":10651.0},{"volume_usd":180413460.0,"volume":17526.71,"quote_currency":"USD","open_interest":103658041,"mid_price":10342.75,"mark_price":10342.85,"low":10163.0,"last":10342.5,"instrument_name":"BTC-PERPETUAL","high":10410.0,"funding_8h":0.00037901,"estimated_delivery_price":10326.53,"current_funding":0.0010804,"creation_timestamp":1568446566212,"bid_price":10342.5,"base_currency":"BTC","ask_price":10343.0}],"usIn":1568446566210262,"usOut":1568446566212167,"usDiff":1905,"testnet":false}'
+      string: '{"jsonrpc":"2.0","result":[{"volume_usd":863615769.99,"volume":97741.51,"quote_currency":"USD","open_interest":94798971,"mid_price":8365.75,"mark_price":8364.59,"low":7846.5,"last":8365.5,"instrument_name":"BTC-PERPETUAL","high":9760.5,"funding_8h":-0.00000305,"estimated_delivery_price":8363.15,"current_funding":0.0,"creation_timestamp":1569397039476,"bid_price":8365.5,"base_currency":"BTC","ask_price":8366.0}],"usIn":1569397039475938,"usOut":1569397039476119,"usDiff":181,"testnet":false}'
     http_version: 
-  recorded_at: Sat, 14 Sep 2019 07:36:05 GMT
+  recorded_at: Wed, 25 Sep 2019 07:37:18 GMT
 - request:
     method: get
     uri: https://www.deribit.com/api/v2/public/get_index?currency=BTC
@@ -64,11 +64,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 14 Sep 2019 07:36:07 GMT
+      - Wed, 25 Sep 2019 07:37:20 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '135'
+      - '134'
       Connection:
       - close
       Access-Control-Allow-Origin:
@@ -83,7 +83,7 @@ http_interactions:
       - SAMEORIGIN
     body:
       encoding: ASCII-8BIT
-      string: '{"jsonrpc":"2.0","result":{"edp":10326.61,"BTC":10326.61},"usIn":1568446567437139,"usOut":1568446567437157,"usDiff":18,"testnet":false}'
+      string: '{"jsonrpc":"2.0","result":{"edp":8362.13,"BTC":8362.13},"usIn":1569397040588651,"usOut":1569397040588867,"usDiff":216,"testnet":false}'
     http_version: 
-  recorded_at: Sat, 14 Sep 2019 07:36:06 GMT
+  recorded_at: Wed, 25 Sep 2019 07:37:19 GMT
 recorded_with: VCR 4.0.0

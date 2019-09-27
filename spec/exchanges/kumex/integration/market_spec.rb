@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Kumex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'USD', market: 'kumex') }
+  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'USD', inst_id: "XBTUSDM", contract_interval: 'perpetual', market: 'kumex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('kumex')
@@ -11,7 +11,9 @@ RSpec.describe 'Kumex integration specs' do
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
+    expect(pair.contract_interval).to eq 'perpetual'
     expect(pair.market).to eq 'kumex'
+    expect(pair.inst_id).to eq 'XBTUSDM'
   end
 
   it 'fetch ticker' do
@@ -20,6 +22,8 @@ RSpec.describe 'Kumex integration specs' do
     expect(ticker.base).to eq 'XBT'
     expect(ticker.target).to eq 'USD'
     expect(ticker.market).to eq 'kumex'
+    expect(ticker.contract_interval).to eq 'perpetual'
+    expect(ticker.inst_id).to eq 'XBTUSDM'
     expect(ticker.last).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
@@ -62,7 +66,7 @@ RSpec.describe 'Kumex integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url 'kumex', base: xbt_usd_pair.base, target: xbt_usd_pair.target
+    trade_page_url = client.trade_page_url 'kumex', base: xbt_usd_pair.base, target: xbt_usd_pair.target, inst_id: xbt_usd_pair.inst_id
     expect(trade_page_url).to eq "https://www.kumex.com/trade/index/XBTUSDM"
   end
 end

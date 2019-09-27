@@ -3,16 +3,19 @@ require 'spec_helper'
 RSpec.describe 'Binance Futures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'binance_futures' }
-  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: market) }
+  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: market, inst_id: 'BTCUSDT', contract_interval: "perpetual") }
 
   it 'fetch pairs' do
     pairs = client.pairs(market)
+    pair = pairs[0]
+    expect(pair.contract_interval).to eq "perpetual"
+    expect(pair.inst_id).to eq "BTCUSDT"
     expect(pairs).not_to be_empty
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url market, base: btc_usdt_pair.base, target: btc_usdt_pair.target
-    expect(trade_page_url).to eq "https://www.binance.com/en/futures/#{btc_usdt_pair.base}#{btc_usdt_pair.target}"
+    trade_page_url = client.trade_page_url market, base: btc_usdt_pair.base, target: btc_usdt_pair.target, inst_id: btc_usdt_pair.inst_id
+    expect(trade_page_url).to eq "https://www.binance.com/en/futures/BTCUSDT"
   end
 
   it 'fetch ticker' do
@@ -25,7 +28,7 @@ RSpec.describe 'Binance Futures integration specs' do
     expect(ticker.volume).to be_a Numeric
     expect(ticker.last).to be_a Numeric
     expect(ticker.timestamp).to be nil
-    expect(ticker.contract_interval).to eq ""
+    expect(ticker.contract_interval).to eq "perpetual"
 
     expect(ticker.payload).to_not be nil
   end

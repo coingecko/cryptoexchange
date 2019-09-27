@@ -7,15 +7,14 @@ module Cryptoexchange::Exchanges
             true
           end
         end
-      
+
         def fetch(market_pair)
           output = super(ticker_url(market_pair))
           adapt(output[0], market_pair)
         end
 
         def ticker_url(market_pair)
-          symbol = "#{market_pair.base}:#{market_pair.contract_interval}"
-          "#{Cryptoexchange::Exchanges::Bitmex::Market::API_URL}/instrument?symbol=#{symbol}&count=100&reverse=true"
+          "#{Cryptoexchange::Exchanges::Bitmex::Market::API_URL}/instrument?symbol=#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)
@@ -23,6 +22,7 @@ module Cryptoexchange::Exchanges
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Bitmex::Market::NAME
+          ticker.inst_id = market_pair.inst_id
           ticker.ask = NumericHelper.to_d(output['askPrice'])
           ticker.bid = NumericHelper.to_d(output['bidPrice'])
           ticker.last = NumericHelper.to_d(output['lastPrice'])

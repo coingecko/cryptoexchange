@@ -8,7 +8,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "https://api.coin.z.com/public/v1/trades?symbol=#{market_pair.base}_#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::GmoJapanFutures::Market::API_URL}/trades?symbol=#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)
@@ -18,8 +18,8 @@ module Cryptoexchange::Exchanges
             tr.base      = market_pair.base
             tr.target    = market_pair.target
             tr.type      = trade['side'].downcase
-            tr.price     = trade['price'].to_i
-            tr.amount    = trade['size'].to_i
+            tr.price     = trade['price'].to_f
+            tr.amount    = trade['size'].to_f
             tr.timestamp = Time.parse(trade['timestamp']).to_i
             tr.payload   = trade
             tr.market    = GmoJapanFutures::Market::NAME

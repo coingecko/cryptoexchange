@@ -5,10 +5,8 @@ RSpec.describe 'Switcheo integration specs' do
   let(:mct_neo_pair) { Cryptoexchange::Models::MarketPair.new(base: 'MCT', target: 'NEO', market: 'switcheo') }
 
   it "invoke trade_page_url" do
-    args = { base: "MCT", target: "NEO" }
-
-    expect(Cryptoexchange::Exchanges::Switcheo::Market).to receive(:trade_page_url).with(args)
-    client.trade_page_url('switcheo', args)
+    trade_page_url = client.trade_page_url('switcheo', { base: "MCT", target: "NEO" })
+    expect(trade_page_url).to eq "https://switcheo.exchange/markets/MCT_NEO"
   end
 
   it 'fetch pairs' do

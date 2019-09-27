@@ -28,7 +28,7 @@ module Cryptoexchange::Exchanges
                             base: base,
                             target: target,
                             inst_id: inst_id,
-                            contract_interval: contract_interval,
+                            contract_interval: contract_interval.downcase,
                             market: BtseFutures::Market::NAME
                           })
             adapt(ticker, market_pair)
@@ -40,10 +40,11 @@ module Cryptoexchange::Exchanges
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.contract_interval = market_pair.contract_interval
+          ticker.inst_id = market_pair.inst_id
           ticker.market = BtseFutures::Market::NAME
           ticker.last = NumericHelper.to_d(output['last'])
           ticker.ask = NumericHelper.to_d(output['lowestAsk'])
-          ticker.bid = NumericHelper.to_d(output['highestBid'])          
+          ticker.bid = NumericHelper.to_d(output['highestBid'])
           ticker.high = NumericHelper.to_d(output['high24Hr'])
           ticker.low = NumericHelper.to_d(output['low24Hr'])
           ticker.volume = NumericHelper.to_d(output['volume']) / ticker.last

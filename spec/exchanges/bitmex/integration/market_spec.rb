@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Bitmex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'USD', market: 'bitmex', contract_interval: "perpetual") }
+  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'USD', market: 'bitmex', inst_id: "XBTUSD" , contract_interval: "perpetual") }
 
   it 'fetch pairs' do
     pairs = client.pairs('bitmex')
@@ -12,7 +12,7 @@ RSpec.describe 'Bitmex integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'bitmex'
-    expect(pair.contract_interval).to eq "perpetual"
+    expect(pair.contract_interval).to eq "monthly"
   end
 
   it 'fetch ticker' do
@@ -30,6 +30,11 @@ RSpec.describe 'Bitmex integration specs' do
     expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
     expect(ticker.contract_interval).to eq "perpetual"
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url "bitmex", base: xbt_usd_pair.base, target: xbt_usd_pair.target, inst_id: xbt_usd_pair.inst_id
+    expect(trade_page_url).to eq "https://www.bitmex.com/app/trade/XBTUSD"
   end
 
   it 'fetch order book' do

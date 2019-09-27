@@ -33,7 +33,7 @@ module Cryptoexchange::Exchanges
                               inst_id: "#{pair["base"]}:#{pair["counter"]}",
                               market: Coinflex::Market::NAME
                             )
-              adapt(pair, market_pair)              
+              adapt(pair, market_pair)
             end
           end.compact
         end

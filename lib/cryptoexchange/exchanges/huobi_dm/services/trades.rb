@@ -8,9 +8,7 @@ module Cryptoexchange::Exchanges
         end
 
         def trades_url(market_pair)
-          interval_keys = { "weekly"=> "CW", "biweekly"=> "NW", "quarterly"=> "CQ" }
-          interval = interval_keys[market_pair.contract_interval]
-          "#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/market/history/trade?symbol=#{market_pair.base}_#{interval}&size=2000"
+          "#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/market/history/trade?symbol=#{market_pair.inst_id}&size=2000"
         end
 
         def adapt(output, market_pair)

@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Deribit
+  module GateFutures
     module Services
       class ContractStat < Cryptoexchange::Services::Market
         class << self
@@ -9,28 +9,29 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          open_interest = super(open_interest_url(market_pair))
+          open_interest_data = super(open_interest_url)
+          open_interest = open_interest_data.select { |s| s['contract'] == market_pair.inst_id }.first
           index = super(index_url(market_pair))
 
           adapt(open_interest, index, market_pair)
         end
 
-        def open_interest_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Deribit::Market::API_URL}/get_book_summary_by_instrument?instrument_name=#{market_pair.inst_id}&kind=future"
+        def open_interest_url
+          "#{Cryptoexchange::Exchanges::GateFutures::Market::API_URL}/tickers"
         end
 
         def index_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Deribit::Market::API_URL}/get_index?currency=#{market_pair.base}"
+          "#{Cryptoexchange::Exchanges::GateFutures::Market::API_URL}/contracts/#{market_pair.inst_id}"
         end
+
 
         def adapt(open_interest, index, market_pair)
           contract_stat = Cryptoexchange::Models::ContractStat.new
-
           contract_stat.base      = market_pair.base
           contract_stat.target    = market_pair.target
-          contract_stat.market    = Deribit::Market::NAME
-          contract_stat.open_interest = open_interest['result'][0]['open_interest'].to_f
-          contract_stat.index     = index['result'][market_pair.base].to_f
+          contract_stat.market    = GateFutures::Market::NAME
+          contract_stat.open_interest = open_interest['total_size'].to_f
+          contract_stat.index     = index['index_price'].to_f
           contract_stat.payload   = { "open_interest" => open_interest, "index" => index }
           contract_stat
         end

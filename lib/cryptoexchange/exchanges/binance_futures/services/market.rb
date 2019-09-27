@@ -21,7 +21,7 @@ module Cryptoexchange::Exchanges
           pairs_map = {}
           pairs = Cryptoexchange::Exchanges::BinanceFutures::Services::Pairs.new.fetch
           pairs.each do |m|
-            pairs_map["#{m.base}#{m.target}"] = m
+            pairs_map["#{m.inst_id}"] = m
           end
 
           output.map do |ticker|
@@ -36,6 +36,8 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = BinanceFutures::Market::NAME
+          ticker.inst_id   = market_pair.inst_id
+          ticker.contract_interval = market_pair.contract_interval
           ticker.last      = NumericHelper.to_d(output['lastPrice'])
           ticker.high      = NumericHelper.to_d(output['highPrice'])
           ticker.low       = NumericHelper.to_d(output['lowPrice'])

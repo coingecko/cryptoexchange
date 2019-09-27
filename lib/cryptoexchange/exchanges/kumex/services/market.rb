@@ -15,7 +15,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Kumex::Market::API_URL}/ticker?symbol=#{market_pair.base}#{market_pair.target}M"
+          "#{Cryptoexchange::Exchanges::Kumex::Market::API_URL}/ticker?symbol=#{market_pair.inst_id}"
         end
 
         def volume_url
@@ -28,6 +28,8 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Kumex::Market::NAME
+          ticker.contract_interval    = market_pair.contract_interval
+          ticker.inst_id    = market_pair.inst_id
 
           ticker.last      = NumericHelper.to_d(output['price'])
           ticker.volume    = NumericHelper.divide(NumericHelper.to_d(volume['data']['volume'].to_f), ticker.last)
