@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Coinflex
+  module CoinflexFutures
     module Services
       class ContractStat < Cryptoexchange::Services::Market
         class << self
@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def open_interest_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Coinflex::Market::API_URL}/depth/#{market_pair.inst_id}"
+          "#{Cryptoexchange::Exchanges::CoinflexFutures::Market::API_URL}/depth/#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)
@@ -22,7 +22,7 @@ module Cryptoexchange::Exchanges
 
           contract_stat.base      = market_pair.base
           contract_stat.target    = market_pair.target
-          contract_stat.market    = Coinflex::Market::NAME
+          contract_stat.market    = CoinflexFutures::Market::NAME
           contract_stat.open_interest = adapt_orders(output['asks'], output['bids'])
           contract_stat.payload   = { "open_interest" => output }
           contract_stat
