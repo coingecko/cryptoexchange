@@ -22,15 +22,17 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output["data"]["listTickers"].map do |output|
-            base, target = output["market"]["name"].split('_')
-            market_pair = Cryptoexchange::Models::MarketPair.new(
-                            base: base.upcase,
-                            target: target.upcase,
-                            market: Nash::Market::NAME
-                          )
+            if output["market"]["primary"] == true
+              base, target = output["market"]["name"].split('_')
+              market_pair = Cryptoexchange::Models::MarketPair.new(
+                              base: base.upcase,
+                              target: target.upcase,
+                              market: Nash::Market::NAME
+                            )
 
-            adapt(market_pair, output)
-          end
+              adapt(market_pair, output)
+            end
+          end.compact
         end
 
         def adapt(market_pair, output)
