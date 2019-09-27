@@ -31,6 +31,7 @@ module Cryptoexchange::Exchanges
               target: pair.target,
               contract_interval: 'perpetual',
               inst_id: inst_id,
+              contract_interval: "perpetual",
               market: JexFutures::Market::NAME
             )
             adapt(market_pair, ticker)

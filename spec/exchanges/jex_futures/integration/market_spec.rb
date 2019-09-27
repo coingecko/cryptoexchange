@@ -13,6 +13,7 @@ RSpec.describe 'JexFutures integration specs' do
     expect(pair.target).to_not be nil
     expect(pair.contract_interval).to eq 'perpetual'
     expect(pair.inst_id).to_not be nil
+    expect(pair.contract_interval).to_not be nil
     expect(pair.market).to eq 'jex_futures'
   end
 
