@@ -10,13 +10,15 @@ module Cryptoexchange::Exchanges
           output = JSON.parse(HTTP.post(PAIRS_URL, headers: headers, body: body))
           
           output["data"]["listTickers"].map do |output|
-            base, target = output["market"]["name"].split('_')
-            Cryptoexchange::Models::MarketPair.new(
-              base: base.upcase,
-              target: target.upcase,
-              market: Nash::Market::NAME
-            )
-          end
+            if output["market"]["primary"] == true
+              base, target = output["market"]["name"].split('_')
+              Cryptoexchange::Models::MarketPair.new(
+                base: base.upcase,
+                target: target.upcase,
+                market: Nash::Market::NAME
+              )
+            end
+          end.compact
         end
       end
     end
