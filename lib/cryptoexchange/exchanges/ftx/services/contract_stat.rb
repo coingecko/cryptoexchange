@@ -31,7 +31,27 @@ module Cryptoexchange::Exchanges
           contract_stat.open_interest = open_interest['result']['openInterest'].to_f
           contract_stat.index     = index['result']['index'].to_f
           contract_stat.payload   = { "open_interest" => open_interest, "index" => index }
+
+          expire_timestamp = index['result']['expiry'] ? DateTime.parse(index['result']['expiry']).to_time.to_i : nil
+          start_timestamp = nil
+
+          contract_stat.expire_timestamp = expire_timestamp
+          contract_stat.start_timestamp = start_timestamp
+          contract_stat.contract_type = contract_type(start_timestamp, expire_timestamp)
+
+          contract_stat.funding_rate_percentage = open_interest['result']['nextFundingRate'] ? open_interest['result']['nextFundingRate'] * 100 : nil
+          contract_stat.next_funding_rate_timestamp = open_interest['result']['nextFundingTime'] ? DateTime.parse(open_interest['result']['nextFundingTime']).to_time.to_i : nil
+          contract_stat.funding_rate_percentage_predicted = nil
+
           contract_stat
+        end
+
+        def contract_type(start, expire)
+          if expire.nil?
+            "perpetual"
+          else
+            "futures"
+          end
         end
       end
     end

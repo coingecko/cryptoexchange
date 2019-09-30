@@ -470,12 +470,12 @@ Or install it yourself as:
 | Binance Futures   | Y       | N          | Y             | N (available) | Y     | Y          | Y           |  Y             | binance_futures|
 | Bitflyer Futures  | Y       | N (avail)  | N             | N             | Y     | Y          | Y           |                | bitflyer_futures|
 | Bitforex Futures  | Y       |            | Y             |               | Y     | Y          | Y           |  Y             | bitforex_futures|
-| Bitmex            | Y       | N (avail)  | Y             | N (available) | Y     | Y          | Y           |                | bitmex |
+| Bitmex            | Y       | Y          | Y             | Y             | Y     | Y          | Y           |  Y             | bitmex |
 | Bybit             | Y       | N          | Y             |               | Y     | Y          | Y           |  Y             | bybit |
 | CME Futures       | Y       | N (avail)  | N             | N             | N     | N          | Y           |  Y             | cme_futures|
 | Coinflex Futures  | Y       | N          | N             | N             | N     | Y          | Y           |  Y             | coinflex_futures      |
 | Deribit           | Y       | N (avail)  | Y             | N (available) | Y     | Y          | Y           |  Y             | deribit |
-| FTX               | Y       | N (avail)  | Y             | N (available) | Y     | Y          | Y           |  Y             | ftx |
+| FTX               | Y       | Y          | Y             | Y             | Y     | Y          | Y           |  Y             | ftx |
 | Gate (Futures)    | Y       | N          | Y             | N (available) | Y     | Y          | Y           |  Y             | gate_futures |
 | GMO (Futures)     | Y       | N          | N             | N             | N     | Y          | Y           |  Y             | gmo_japan_futures|
 | Huobi DM          | Y       |            | Y             |               | Y     | Y          | Y           |                |huobi_dm|
