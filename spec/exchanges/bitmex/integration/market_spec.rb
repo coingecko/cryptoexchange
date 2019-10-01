@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'pry'
+
 RSpec.describe 'Bitmex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'USD', market: 'bitmex', inst_id: "XBTUSD", contract_interval: "perpetual") }
