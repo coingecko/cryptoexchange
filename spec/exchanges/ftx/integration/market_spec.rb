@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'FTX integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'ftx', inst_id: "BTC-PERP") }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'ftx', inst_id: "BTC-PERP", contract_interval: "perpetual") }
   let(:btc_usd_futures_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'ftx', inst_id: "BTC-1227") }
 
   it 'fetch pairs' do
@@ -13,6 +13,7 @@ RSpec.describe 'FTX integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'ftx'
+    expect(pair.contract_interval).to eq "perpetual"
   end
 
   it 'give trade url' do
@@ -32,6 +33,7 @@ RSpec.describe 'FTX integration specs' do
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
+    expect(ticker.contract_interval).to eq "perpetual"
   end
 
   it 'fetch order book' do

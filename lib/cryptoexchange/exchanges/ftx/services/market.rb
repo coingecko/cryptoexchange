@@ -7,7 +7,7 @@ module Cryptoexchange::Exchanges
             true
           end
         end
-      
+
         def fetch(market_pair)
           output = super(ticker_url(market_pair))
           adapt(output["result"], market_pair)
@@ -27,6 +27,7 @@ module Cryptoexchange::Exchanges
           ticker.bid = NumericHelper.to_d(output["bid"])
           ticker.last = NumericHelper.to_d(output["last"])
           ticker.volume = NumericHelper.divide(NumericHelper.to_d(output["volumeUsd24h"]), ticker.last)
+          ticker.contract_interval = market_pair.contract_interval
           ticker.timestamp = nil
           ticker.payload = output
           ticker
