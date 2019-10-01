@@ -23,20 +23,18 @@ RSpec.describe 'Bitpanda integration specs' do
   end
 
   it 'fetch ticker' do
-    # ticker = client.ticker(btc_eur_pair)
+    ticker = client.ticker(btc_eur_pair)
 
-    # expect(ticker.base).to eq 'BTC'
-    # expect(ticker.target).to eq 'EUR'
-    # expect(ticker.market).to eq market
-    # expect(ticker.bid).to be_a Numeric
-    # expect(ticker.ask).to be_a Numeric
-    # expect(ticker.high).to be_a Numeric
-    # expect(ticker.low).to be_a Numeric
-    # expect(ticker.volume).to be_a Numeric
-    # expect(ticker.last).to be_a Numeric
-    # expect(ticker.change).to be_a Numeric
-    # expect(ticker.timestamp).to be nil
-    # expect(ticker.payload).to_not be nil
+    expect(ticker.base).to eq 'BTC'
+    expect(ticker.target).to eq 'EUR'
+    expect(ticker.market).to eq market
+    expect(ticker.high).to be_a Numeric
+    expect(ticker.low).to be_a Numeric
+    expect(ticker.volume).to be_a Numeric
+    expect(ticker.last).to be_a Numeric
+    expect(ticker.change).to be_a Numeric
+    expect(ticker.timestamp).to be nil
+    expect(ticker.payload).to_not be nil
   end
 
   it 'fetch order book' do

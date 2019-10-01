@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Bitpanda
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitpanda::Market::API_URL}/instruments"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitpanda::Market::API_URL}/market-ticker"
 
         def fetch
           output = super
@@ -12,9 +12,11 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           output.map do |pair|
             next unless pair['state'] == 'ACTIVE'
+            base, target = pair["instrument_code"].split("_")
+
             Cryptoexchange::Models::MarketPair.new(
-              base:   pair["base"]["code"],
-              target: pair["quote"]["code"],
+              base:   base,
+              target: target,
               market: Bitpanda::Market::NAME
             )
           end.compact

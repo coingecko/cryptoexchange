@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.exchange.waskurzes.com/public/v1/instruments
+    uri: https://api.exchange.bitpanda.com/public/v1/market-ticker
     body:
       encoding: UTF-8
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Connection:
       - close
       Host:
-      - api.exchange.waskurzes.com
+      - api.exchange.bitpanda.com
       User-Agent:
       - http.rb/5.0.0.pre
   response:
@@ -19,16 +19,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 22 Aug 2019 03:59:46 GMT
+      - Tue, 01 Oct 2019 05:20:35 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1991'
+      - '2908'
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d800738f984737df024db86da09178cd41566446382; expires=Fri, 21-Aug-20
-        03:59:42 GMT; path=/; domain=.waskurzes.com; HttpOnly; Secure
+      - __cfduid=d2323f7b47d99e14f9c7a97e3cf7b92781569907234; expires=Wed, 30-Sep-20
+        05:20:34 GMT; path=/; domain=.bitpanda.com; HttpOnly; Secure
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains
       X-Frame-Options:
@@ -39,21 +39,21 @@ http_interactions:
       - nosniff
       Referrer-Policy:
       - no-referrer
-      Expect-Ct:
-      - max-age=86400, enforce
       Cache-Control:
       - no-store
       Pragma:
       - no-cache
       Bp-Request-Id:
-      - 182d7819-4548-4d56-b3f4-35234b604e43
+      - 2530378f-6dcc-4ad7-a219-ad5528b70ee9
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 50a1ef7fcd29dd66-KUL
+      - 51ebfcf93d9bc113-KUL
     body:
       encoding: ASCII-8BIT
-      string: '[{"state":"ACTIVE","base":{"code":"PAN","precision":8},"quote":{"code":"BTC","precision":8},"amount_precision":0,"market_precision":8,"min_size":"0.001"},{"state":"ACTIVE","base":{"code":"BTC","precision":8},"quote":{"code":"EUR","precision":2},"amount_precision":5,"market_precision":2,"min_size":"10.0"},{"state":"ACTIVE","base":{"code":"MIOTA","precision":8},"quote":{"code":"BTC","precision":8},"amount_precision":0,"market_precision":8,"min_size":"0.001"},{"state":"ACTIVE","base":{"code":"MIOTA","precision":8},"quote":{"code":"EUR","precision":2},"amount_precision":0,"market_precision":5,"min_size":"10.0"},{"state":"ACTIVE","base":{"code":"ETH","precision":8},"quote":{"code":"BTC","precision":8},"amount_precision":4,"market_precision":8,"min_size":"0.001"},{"state":"ACTIVE","base":{"code":"PAN","precision":8},"quote":{"code":"EUR","precision":2},"amount_precision":0,"market_precision":5,"min_size":"10.0"},{"state":"ACTIVE","base":{"code":"XRP","precision":8},"quote":{"code":"EUR","precision":2},"amount_precision":0,"market_precision":5,"min_size":"10.0"},{"state":"ACTIVE","base":{"code":"BTC","precision":8},"quote":{"code":"USDT","precision":6},"amount_precision":5,"market_precision":2,"min_size":"10.0"},{"state":"ACTIVE","base":{"code":"BEST","precision":8},"quote":{"code":"BTC","precision":8},"amount_precision":4,"market_precision":8,"min_size":"0.001"},{"state":"ACTIVE","base":{"code":"BEST","precision":8},"quote":{"code":"USDT","precision":6},"amount_precision":0,"market_precision":5,"min_size":"10.0"},{"state":"ACTIVE","base":{"code":"XRP","precision":8},"quote":{"code":"BTC","precision":8},"amount_precision":0,"market_precision":8,"min_size":"0.001"},{"state":"ACTIVE","base":{"code":"BEST","precision":8},"quote":{"code":"EUR","precision":2},"amount_precision":0,"market_precision":5,"min_size":"10.0"},{"state":"ACTIVE","base":{"code":"ETH","precision":8},"quote":{"code":"EUR","precision":2},"amount_precision":4,"market_precision":2,"min_size":"10.0"}]'
+      string: '[{"instrument_code":"PAN_BTC","sequence":3725,"state":"ACTIVE","is_frozen":0,"quote_volume":"0.02196926","last_price":"0.00000273","price_change":"-0.00000004","price_change_percentage":"-1.44","high":"0.00000277","low":"0.00000273"},{"instrument_code":"BTC_EUR","sequence":47292,"state":"ACTIVE","is_frozen":0,"quote_volume":"884297.4397266","last_price":"7852.19","price_change":"682.19","price_change_percentage":"9.51","high":"8318.88","low":"7100.01"},{"instrument_code":"MIOTA_BTC","sequence":380,"state":"ACTIVE","is_frozen":0,"quote_volume":"0.02348109","last_price":"0.00003219","price_change":"0.00000114","price_change_percentage":"3.67","high":"0.00003219","low":"0.00003105"},{"instrument_code":"MIOTA_EUR","sequence":3103,"state":"ACTIVE","is_frozen":0,"quote_volume":"51612.42863","last_price":"0.25296","price_change":"0.01795","price_change_percentage":"7.64","high":"0.25296","low":"0.23214"},{"instrument_code":"ETH_BTC","sequence":580,"state":"ACTIVE","is_frozen":0,"quote_volume":"0.0373394574","last_price":"0.021269","price_change":"0.000539","price_change_percentage":"2.6","high":"0.021269","low":"0.02073"},{"instrument_code":"PAN_EUR","sequence":5945,"state":"ACTIVE","is_frozen":0,"quote_volume":"9874.91188","last_price":"0.02085","price_change":"-0.0003","price_change_percentage":"-1.42","high":"0.02146","low":"0.02065"},{"instrument_code":"XRP_EUR","sequence":5162,"state":"ACTIVE","is_frozen":0,"quote_volume":"497167.67624","last_price":"0.239","price_change":"0.019","price_change_percentage":"8.64","high":"0.23989","low":"0.21726"},{"instrument_code":"BTC_USDT","sequence":1066,"state":"ACTIVE","is_frozen":0,"quote_volume":"113.935878","last_price":"8057.7","price_change":"0.0","price_change_percentage":"0.0","high":"8057.7","low":"8057.7"},{"instrument_code":"BEST_BTC","sequence":5292,"state":"ACTIVE","is_frozen":0,"quote_volume":"0.553594113352","last_price":"0.00000748","price_change":"-0.00000039","price_change_percentage":"-4.96","high":"0.00000799","low":"0.00000748"},{"instrument_code":"BEST_USDT","sequence":306,"state":"ACTIVE","is_frozen":0,"quote_volume":"244.29657","last_price":"0.02701","price_change":"-0.0248","price_change_percentage":"-47.87","high":"0.05181","low":"0.02701"},{"instrument_code":"XRP_BTC","sequence":487,"state":"ACTIVE","is_frozen":0,"quote_volume":"0.18306525","last_price":"0.00003148","price_change":"0.00000148","price_change_percentage":"4.93","high":"0.00003148","low":"0.00003"},{"instrument_code":"BEST_EUR","sequence":12142,"state":"ACTIVE","is_frozen":0,"quote_volume":"40431.42626","last_price":"0.05813","price_change":"0.00104","price_change_percentage":"1.82","high":"0.05813","low":"0.05687"},{"instrument_code":"ETH_EUR","sequence":7033,"state":"ACTIVE","is_frozen":0,"quote_volume":"287032.935189","last_price":"169.69","price_change":"15.62","price_change_percentage":"10.14","high":"169.92","low":"154.07"}]'
     http_version: 
-  recorded_at: Thu, 22 Aug 2019 03:59:46 GMT
+  recorded_at: Tue, 01 Oct 2019 05:20:35 GMT
 recorded_with: VCR 4.0.0

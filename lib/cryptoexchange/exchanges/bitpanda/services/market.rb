@@ -4,31 +4,45 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            true
+            false
           end
         end
 
-        def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output, market_pair)
+        def fetch
+          output = super(ticker_url)
+          adapt_all(output)
         end
 
-        def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitpanda::Market::API_URL}/candlesticks/#{market_pair.base.upcase}_#{market_pair.target.upcase}?unit=DAYS&period=1&from=2019-08-21T14:32:00.090Z&to=2019-08-22T14:32:00.090Z"
+        def ticker_url
+          "#{Cryptoexchange::Exchanges::Bitpanda::Market::API_URL}/market-ticker"
         end
+
+        def adapt_all(output)
+          output.map do |pair|
+            next unless pair['state'] == 'ACTIVE'
+            base, target = pair["instrument_code"].split("_")
+
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+                            base:   base,
+                            target: target,
+                            market: Bitpanda::Market::NAME
+                          )
+            adapt(pair, market_pair)
+          end.compact
+        end        
 
         def adapt(output, market_pair)
           ticker = Cryptoexchange::Models::Ticker.new
           base = market_pair.base
           target = market_pair.target
-
           ticker.base      = base
           ticker.target    = target
           ticker.market    = Bitpanda::Market::NAME
-          ticker.ask       = NumericHelper.to_d(output['ask'])
-          ticker.bid       = NumericHelper.to_d(output['bid'])
-          ticker.last      = NumericHelper.to_d(output['price'])
-          ticker.volume    = NumericHelper.to_d(output['volume'])
+          ticker.last      = NumericHelper.to_d(output['last_price'])
+          ticker.change    = NumericHelper.to_d(output['price_change_percentage'])
+          ticker.volume    = NumericHelper.divide(NumericHelper.to_d(output['quote_volume']), ticker.last)
+          ticker.high      = NumericHelper.to_d(output['high'])
+          ticker.low       = NumericHelper.to_d(output['low'])
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
