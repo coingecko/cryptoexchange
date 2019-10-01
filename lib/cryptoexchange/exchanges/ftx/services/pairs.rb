@@ -16,7 +16,6 @@ module Cryptoexchange::Exchanges
                               base: pair["underlying"],
                               target: "USD",
                               market: Ftx::Market::NAME,
-                              contract_interval: pair["type"],
                               inst_id: pair["name"],
                             )
           end
