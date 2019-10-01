@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bhex.com/openapi/quote/v1/trades?symbol=BTCUSDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bhex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Date:
+      - Tue, 01 Oct 2019 07:53:00 GMT
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 fedf532d69f6dd10ea788e532bd23298.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50-C1
+      X-Amz-Cf-Id:
+      - 1nRBsLd-LVHXi-Aj5DCUXSDcxWQ4v7l7_UBfoDxzIWlJjf7HoXtyTA==
+    body:
+      encoding: UTF-8
+      string: '[{"price":"8406.88","time":1569916251987,"qty":"0.027883","isBuyerMaker":true},{"price":"8406.79","time":1569916254245,"qty":"0.003247","isBuyerMaker":false},{"price":"8406.79","time":1569916255902,"qty":"0.002023","isBuyerMaker":false},{"price":"8406.71","time":1569916256583,"qty":"0.000082","isBuyerMaker":true},{"price":"8406.88","time":1569916258732,"qty":"0.024109","isBuyerMaker":true},{"price":"8408.23","time":1569916264976,"qty":"0.220834","isBuyerMaker":true},{"price":"8408.34","time":1569916268849,"qty":"0.823013","isBuyerMaker":true},{"price":"8408.23","time":1569916273889,"qty":"0.264159","isBuyerMaker":true},{"price":"8409.99","time":1569916284865,"qty":"0.671","isBuyerMaker":true},{"price":"8409.99","time":1569916284869,"qty":"0.4623","isBuyerMaker":true},{"price":"8412.71","time":1569916290458,"qty":"0.003128","isBuyerMaker":true},{"price":"8413.54","time":1569916301070,"qty":"0.179029","isBuyerMaker":false},{"price":"8414.9","time":1569916302355,"qty":"0.078634","isBuyerMaker":true},{"price":"8413.57","time":1569916303248,"qty":"0.002626","isBuyerMaker":false},{"price":"8413.57","time":1569916304528,"qty":"0.12","isBuyerMaker":false},{"price":"8413.57","time":1569916304535,"qty":"0.1","isBuyerMaker":false},{"price":"8413.57","time":1569916304537,"qty":"0.340741","isBuyerMaker":false},{"price":"8412.9","time":1569916304537,"qty":"0.004799","isBuyerMaker":false},{"price":"8412.7","time":1569916304537,"qty":"0.072509","isBuyerMaker":false},{"price":"8412.7","time":1569916304570,"qty":"0.117981","isBuyerMaker":false},{"price":"8412.64","time":1569916304571,"qty":"0.2","isBuyerMaker":false},{"price":"8412.62","time":1569916304571,"qty":"0.044","isBuyerMaker":false},{"price":"8412.54","time":1569916304571,"qty":"0.950958","isBuyerMaker":false},{"price":"8412.5","time":1569916304571,"qty":"0.003167","isBuyerMaker":false},{"price":"8412.48","time":1569916304571,"qty":"0.042788","isBuyerMaker":false},{"price":"8412.29","time":1569916308530,"qty":"0.003816","isBuyerMaker":false},{"price":"8411.9","time":1569916314596,"qty":"0.004267","isBuyerMaker":true},{"price":"8411.7","time":1569916314812,"qty":"0.001497","isBuyerMaker":false},{"price":"8411.7","time":1569916316546,"qty":"0.00285","isBuyerMaker":false},{"price":"8411.2","time":1569916316547,"qty":"0.001073","isBuyerMaker":false},{"price":"8409.02","time":1569916320565,"qty":"0.016114","isBuyerMaker":false},{"price":"8408.66","time":1569916320565,"qty":"0.044862","isBuyerMaker":false},{"price":"8408.65","time":1569916320565,"qty":"0.043287","isBuyerMaker":false},{"price":"8408.6","time":1569916320566,"qty":"1.495","isBuyerMaker":false},{"price":"8408.24","time":1569916324344,"qty":"0.001173","isBuyerMaker":false},{"price":"8408.24","time":1569916324607,"qty":"0.001523","isBuyerMaker":false},{"price":"8408.15","time":1569916324608,"qty":"0.017275","isBuyerMaker":false},{"price":"8407.19","time":1569916324608,"qty":"0.410429","isBuyerMaker":false},{"price":"8407.09","time":1569916324608,"qty":"0.0282","isBuyerMaker":false},{"price":"8406.9","time":1569916324608,"qty":"0.08","isBuyerMaker":false},{"price":"8406.67","time":1569916324608,"qty":"0.016508","isBuyerMaker":false},{"price":"8406.66","time":1569916324609,"qty":"0.05","isBuyerMaker":false},{"price":"8405.1","time":1569916328677,"qty":"0.003558","isBuyerMaker":false},{"price":"8405.94","time":1569916331699,"qty":"1.251429","isBuyerMaker":true},{"price":"8405.69","time":1569916334250,"qty":"0.001694","isBuyerMaker":false},{"price":"8405.25","time":1569916337581,"qty":"0.004017","isBuyerMaker":false},{"price":"8410.71","time":1569916346566,"qty":"0.002783","isBuyerMaker":true},{"price":"8409.41","time":1569916348359,"qty":"0.98732","isBuyerMaker":false},{"price":"8411.1","time":1569916352029,"qty":"0.074417","isBuyerMaker":true},{"price":"8411.8","time":1569916358822,"qty":"0.002615","isBuyerMaker":true},{"price":"8411.8","time":1569916360021,"qty":"0.00025","isBuyerMaker":true},{"price":"8411.8","time":1569916360022,"qty":"0.003894","isBuyerMaker":true},{"price":"8411.8","time":1569916364386,"qty":"0.001519","isBuyerMaker":true},{"price":"8411.94","time":1569916366586,"qty":"1.453929","isBuyerMaker":true},{"price":"8411.5","time":1569916367796,"qty":"0.003237","isBuyerMaker":false},{"price":"8411.11","time":1569916370958,"qty":"0.003289","isBuyerMaker":true},{"price":"8411.1","time":1569916374854,"qty":"0.004611","isBuyerMaker":true},{"price":"8410.51","time":1569916376401,"qty":"0.002608","isBuyerMaker":false},{"price":"8410.51","time":1569916379608,"qty":"0.001879","isBuyerMaker":false},{"price":"8410.9","time":1569916380220,"qty":"0.001223","isBuyerMaker":true}]'
+    http_version: 
+  recorded_at: Tue, 01 Oct 2019 07:53:00 GMT
+recorded_with: VCR 4.0.0

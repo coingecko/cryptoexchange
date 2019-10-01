@@ -48,6 +48,7 @@ Or install it yourself as:
 | Bcoin             | Y       |            |         |         | Y           | Y        | bcoin             |       |
 | Beaxy             | Y       | Y [x]      | Y       |         | Y           | Y        | beaxy             |       |
 | Bgogo             | Y       | Y [x]      | Y [limit: 20]     |         | Y           | Y        | bgogo             |       |
+| Bhex              | Y       | Y          | Y       |         | Y           | Y        | bhex              |       |
 | Bibox             | Y       | Y [x]      | Y [limit: 200]    |         | Y           | Y        | bibox             |       |
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
 | BigONE            | Y       | Y [x]      | Y       |         | Y           | Y        | bigone            |       |
