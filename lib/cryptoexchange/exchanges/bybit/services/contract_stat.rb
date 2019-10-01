@@ -54,14 +54,6 @@ module Cryptoexchange::Exchanges
 
           contract_stat
         end
-
-        def contract_type(start, expire)
-          if expire.nil?
-            "perpetual"
-          else
-            "futures"
-          end
-        end
       end
     end
   end
