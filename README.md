@@ -112,6 +112,7 @@ Or install it yourself as:
 | Bitsdaq           | Y       | Y [x]      | Y [limit: 50]|    | Y           | Y        | bisdaq            |       |
 | Bitshares Assets  | Y       |            |         |         | User-Defined|          | bitshares_assets  |       |
 | Bitso             | Y       | Y [x]      |         |         | Y           |          | bitso             |       |
+| Bitsoda           | Y       | Y          |         |         | Y           | Y        | bitsoda           |       |
 | Bitsonic          | Y       | Y [x]      | Y       |         | User-Defined| Y        | bitsonic          |       |
 | Bitstamp          | Y       | Y [x]      | Y       |         | User-Defined|          | bitstamp          |       |
 | Bitsten           | Y       | Y [x]      | N       |         | Y           | Y        | bitsten           |       |
