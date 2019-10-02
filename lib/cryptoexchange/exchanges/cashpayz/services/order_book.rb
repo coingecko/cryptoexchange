@@ -19,12 +19,11 @@ module Cryptoexchange::Exchanges
 
         def adapt(output, market_pair)
           order_book = Cryptoexchange::Models::OrderBook.new
-          output               = output["data"][0]
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
           order_book.market    = Cashpayz::Market::NAME
-          order_book.asks      = adapt_orders(output['ASK'])
-          order_book.bids      = adapt_orders(output['Bid'])
+          order_book.asks      = adapt_orders(output["Data"].first[1]['ASK'])
+          order_book.bids      = adapt_orders(output["Data"].first[1]['Bid'])
           order_book.timestamp = nil
           order_book.payload   = output
           order_book

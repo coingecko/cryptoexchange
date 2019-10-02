@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cashpayz.exchange/public/get-trades-history/BTC/CPC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - cashpayz.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate,post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=UTF-8
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Last-Modified:
+      - Wed, 02 Oct 2019 07:30:29 GMT
+      Server:
+      - Microsoft-IIS/8.5
+      X-Powered-By:
+      - ASP.NET
+      - PHP/5.6.31
+      Set-Cookie:
+      - ci_session=f8qemlncgdtpdpsusoe1mce65fprui3i; path=/; secure; HttpOnly
+      - csrf_cookie_name=85c736c555804f2d9ad466ca7d693cdb; expires=Wed, 02-Oct-2019
+        09:30:29 GMT; Max-Age=7200; path=/; secure; httponly
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Wed, 02 Oct 2019 07:30:29 GMT
+      Connection:
+      - close
+      Content-Length:
+      - '7972'
+    body:
+      encoding: UTF-8
+      string: '{"Status":1,"Message":"Success","Data":[{"tradeId":"53503","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-02T12:34:18.000Z","Price":"0.00000110","Amount":"314.00000000","Total":"0.00034540"},{"tradeId":"53502","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-02T12:33:37.000Z","Price":"0.00000120","Amount":"198.00000000","Total":"0.00023760"},{"tradeId":"53404","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"3368.61425467","Total":"0.00461500"},{"tradeId":"53412","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"526.65655083","Total":"0.00072152"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.04011935"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.01400701"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.00861997"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.00476191"},{"tradeId":"53388","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"20206.09432839","Total":"0.02768235"},{"tradeId":"53396","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"7054.62710184","Total":"0.00966484"},{"tradeId":"53405","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"5810.85958930","Total":"0.00796088"},{"tradeId":"53413","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"397.30231022","Total":"0.00054430"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.02768235"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.00966484"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.00461500"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.00072152"},{"tradeId":"53389","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"28490.59300303","Total":"0.03903211"},{"tradeId":"53397","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"17683.59860195","Total":"0.02422653"},{"tradeId":"53398","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"12997.44497243","Total":"0.01780650"},{"tradeId":"53406","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"6973.03150716","Total":"0.00955305"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.03903211"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.02422653"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.00796088"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.00054430"},{"tradeId":"53390","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"74898.60338354","Total":"0.10261109"},{"tradeId":"53399","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"11177.80267630","Total":"0.01531359"},{"tradeId":"53407","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"7786.55184967","Total":"0.01066758"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.10261109"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.01780650"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.00955305"},{"tradeId":"53391","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"14922.10636641","Total":"0.02044329"},{"tradeId":"53400","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"8239.63740138","Total":"0.01128830"},{"tradeId":"53408","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"2725.29314737","Total":"0.00373365"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.02044329"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.01531359"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.01066758"},{"tradeId":"53392","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"45597.69359680","Total":"0.06246884"},{"tradeId":"53401","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"6646.64083712","Total":"0.00910590"},{"tradeId":"53409","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"3551.96540209","Total":"0.00486619"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.06246884"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.01128830"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.00373365"},{"tradeId":"53385","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"20941.21473028","Total":"0.02868946"},{"tradeId":"53393","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"13738.78333155","Total":"0.01882213"},{"tradeId":"53402","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"5377.73667731","Total":"0.00736750"},{"tradeId":"53410","Type":"Sell","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"7491.55833284","Total":"0.01026343"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.02868946"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.01882213"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.00910590"},{"tradeId":"47112","Type":"Buy","Label":"BTC_CPC","TradeTime":"2019-10-01T16:32:53.000Z","Price":"0.00000137","Amount":"418824.29460580","Total":"0.00486619"}]}'
+    http_version: 
+  recorded_at: Wed, 02 Oct 2019 07:39:02 GMT
+recorded_with: VCR 4.0.0

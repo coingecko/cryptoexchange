@@ -29,7 +29,7 @@ module Cryptoexchange::Exchanges
           end
         end
 
-        def adapt(market_pair, outpu)
+        def adapt(market_pair, output)
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
@@ -39,7 +39,7 @@ module Cryptoexchange::Exchanges
           ticker.low       = NumericHelper.to_d(output['low24hr'])
           ticker.high      = NumericHelper.to_d(output['high24hr'])
           ticker.bid       = NumericHelper.to_d(output['highestBid'])
-          ticker.asks      = NumericHelper.to_d(output['lowestAskBid'])
+          ticker.ask       = NumericHelper.to_d(output['lowestAskBid'])
           ticker.change    = NumericHelper.to_d(output['percentChange'])
           ticker.volume    = NumericHelper.to_d(output['baseVolume'])
           ticker.timestamp = nil
