@@ -79,6 +79,7 @@ RSpec.describe 'Huobi Dm integration specs' do
       expect(contract_stat.market).to eq 'huobi_dm'
       expect(2019..Date.today.year).to include(Time.at(contract_stat.expire_timestamp).year)
       expect(2019..Date.today.year).to include(Time.at(contract_stat.start_timestamp).year)
+      expect(contract_stat.contract_type).to eq 'futures'
       expect(contract_stat.index).to be_a Numeric
       expect(contract_stat.open_interest).to be_a Numeric
       expect(contract_stat.timestamp).to be nil

@@ -44,6 +44,7 @@ module Cryptoexchange::Exchanges
           contract_stat.payload   = { "open_interest" => open_interest, "index" => index }
           contract_stat.expire_timestamp = unix_timestamp(contract_info['data'][0]['delivery_date'])
           contract_stat.start_timestamp = unix_timestamp(contract_info['data'][0]['create_date'])
+          contract_stat.contract_type = contract_type(contract_stat.expire_timestamp)
           contract_stat
         end
 
@@ -51,6 +52,14 @@ module Cryptoexchange::Exchanges
           year, month, day = date[0..3], date[4..5], date[6..7]
           new_date = "#{year}-#{month}-#{day}"
           DateTime.parse(new_date).to_time.to_i
+        end
+
+        def contract_type(expire)
+          if expire.nil?
+            "perpetual"
+          else
+            "futures"
+          end
         end
       end
     end
