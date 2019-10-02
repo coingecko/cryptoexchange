@@ -8,7 +8,7 @@ module Cryptoexchange
         @base   = params[:base]
         @target = params[:target]
         @market = params[:market]
-        @inst_id = params[:inst_id] || ""
+        @inst_id = params[:inst_id]
         @contract_interval = params[:contract_interval] || ""
       end
 
