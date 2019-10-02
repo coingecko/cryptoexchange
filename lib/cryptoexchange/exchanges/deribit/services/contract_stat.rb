@@ -55,7 +55,6 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = Deribit::Market::NAME
           contract_stat.open_interest = open_interest['result'][0]['open_interest'].to_f
           contract_stat.index     = index['result'][market_pair.base].to_f
-          contract_stat.payload   = { "open_interest" => open_interest, "index" => index }
 
           contract_stat.expire_timestamp = contract_info['expire_timestamp']
           contract_stat.start_timestamp = contract_info['start_timestamp']
@@ -64,6 +63,7 @@ module Cryptoexchange::Exchanges
           contract_stat.funding_rate_percentage = contract_info['funding_rate_percentage']
           contract_stat.next_funding_rate_timestamp = contract_info['next_funding_timestamp']
           contract_stat.funding_rate_percentage_predicted = contract_info['funding_rate_percentage_predicted']
+          contract_stat.payload   = { "open_interest" => open_interest, "index" => index, "contract_info" => contract_info }
           contract_stat
         end
 
