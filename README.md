@@ -145,7 +145,8 @@ Or install it yourself as:
 | BW                | Y       |            |         |         | Y           | Y        | bw                |       |
 | Bytex             | Y       | N          | N       |         | Y           | N        | bytex             |       |
 | Cashierest        | Y       | Y [x]      | N       |         | Y           | Y        | cashierest        |       |
-| Catex             | Y       | Y [x]      | N       |         | Y           |          | catex            |       |
+| Cashpayz          | Y       | Y          | Y       |         | Y           | Y        | cashpayz          |       |
+| Catex             | Y       | Y [x]      | N       |         | Y           |          | catex             |       |
 | C2CX              | Y       | Y [x]      | N       |         | Y           |          | c2cx              |       |
 | CPatex            | Y       | Y [x]      | Y       |         | Y           |          | c_patex           |       |
 | Cbx               | Y       | Y [x]      | Y       |         | Y           | Y        | cbx               |       |
