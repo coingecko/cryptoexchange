@@ -480,7 +480,7 @@ Or install it yourself as:
 | GMO (Futures)     | Y       | N          | N             | N             | N     | Y          | Y           |  Y             | gmo_japan_futures|
 | Huobi DM          | Y       |            | Y             |               | Y     | Y          | Y           |                |huobi_dm|
 | JexFutures        | Y       | N          | N             | N             | N     | Y          | Y           |                |jex_futures|
-| Kraken Futures    | Y       | N          | Y             | Y             | N     | Y          | Y           |  Y             |kraken_futures|
+| Kraken Futures    | Y       | Y          | Y             | Y             | N     | Y          | Y           |  Y             |kraken_futures|
 | Kumex             | Y       | N          | N             | N             | N     | Y          | Y           |  Y             |kumex  |
 | OKEx Swaps        | Y       |            | Y             |               | Y     | Y          | Y           |                |okex_swap |
 | BTSE (Futures)    | Y       | N          | N             | N             | N     | Y          | Y           |  Y             | btse_futures |
