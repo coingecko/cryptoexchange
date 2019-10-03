@@ -466,25 +466,39 @@ Or install it yourself as:
 | ZG.TOP            | Y       |            |         |         | Y           |          | zgtop             |       |
 
 ### Derivatives (Perpetual & Futures)
-| Exchange          | Ticker  | Expiration | Open Interest | Funding       | Index | Order Book | Market List | Trade Page URL | slug  |
-| ----------------- | ------- | ---------- | ------------- | ------------- | ----- | ---------- | ----------- | ---------------|-------|
-| Binance Futures   | Y       | N          | Y             | Y             | Y     | Y          | Y           |  Y             | binance_futures|
-| Bitflyer Futures  | Y       | N (avail)  | N             | N             | Y     | Y          | Y           |                | bitflyer_futures|
-| Bitforex Futures  | Y       |            | Y             |               | Y     | Y          | Y           |  Y             | bitforex_futures|
-| Bitmex            | Y       | Y          | Y             | Y             | Y     | Y          | Y           |  Y             | bitmex |
-| Bybit             | Y       | N          | Y             |               | Y     | Y          | Y           |  Y             | bybit |
-| CME Futures       | Y       | Y          | N             | N             | N     | N          | Y           |  Y             | cme_futures|
-| Coinflex Futures  | Y       | N          | N             | N             | N     | Y          | Y           |  Y             | coinflex_futures      |
-| Deribit           | Y       | Y          | Y             | Y             | Y     | Y          | Y           |  Y             | deribit |
-| FTX               | Y       | Y          | Y             | Y             | Y     | Y          | Y           |  Y             | ftx |
-| Gate (Futures)    | Y       | N          | Y             | Y             | Y     | Y          | Y           |  Y             | gate_futures |
-| GMO (Futures)     | Y       | N          | N             | N             | N     | Y          | Y           |  Y             | gmo_japan_futures|
-| Huobi DM          | Y       |            | Y             |               | Y     | Y          | Y           |                |huobi_dm|
-| JexFutures        | Y       | N          | N             | N             | N     | Y          | Y           |                |jex_futures|
-| Kraken Futures    | Y       | Y          | Y             | Y             | N     | Y          | Y           |  Y             |kraken_futures|
-| Kumex             | Y       | N          | N             | N             | N     | Y          | Y           |  Y             |kumex  |
-| OKEx Swaps        | Y       | Y          | Y             |               | Y     | Y          | Y           |                |okex_swap |
-| BTSE (Futures)    | Y       | N          | N             | N             | N     | Y          | Y           |  Y             | btse_futures |
+| Exchange          | T | OB | List | URL | OpenInt | CT  | Idx | ST | ET | F% | NFT | F%P |                  |
+|-----------------  |---|----|------|-----|---------|-----|-----|----|----|----|-----|-----|------------------|
+| Binance Futures   | Y | Y  | Y    |  Y  |  N      | Y   |  Y  | N  | N  | Y  | Y   | N   |  binance_futures |
+| Bitflyer Futures  | Y | Y  | Y    |     |  N      |     |  Y  | N  | N  |    |     |     |  bitflyer_futures  |
+| Bitforex Futures  | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |    |    | Y  | Y   | N   |  bitforex_futures  |
+| Bitmex            | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | Y  | Y  | Y  | Y   | Y   |  bitmex  |
+| Bybit             | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | N  | N  | Y  | Y   | Y   |  bybit |
+| CME Futures       | Y | N  | Y    |  Y  |  N      | Y   |  N  | N  | Y  | N  | N   | N   |  cme_futures |
+| Coinflex Futures  | Y | Y  | Y    |  Y  |  N      |     |  N  | N  | N  |    |     |     |  coinflex_futures  |
+| Deribit           | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | Y  | Y  | Y  | Y   | Y   |  deribit |
+| FTX               | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | N  | Y  | Y  | Y   | N   |  ftx |
+| Gate (Futures)    | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | N  | N  | Y  | Y   | Y   |  gate_futures  |
+| GMO (Futures)     | Y | Y  | Y    |  Y  |  N      |     |  N  | N  | N  |    |     |     |  gmo_futures |
+| Huobi DM          | Y | Y  | Y    |     |  Y      | Y   |  Y  | Y  | Y  | N  | N   | N   |  huobi_dm  |
+| JexFutures        | Y | Y  | Y    |     |  N      | Y   |  Y  | N  | N  | Y  | Y   | Y   |  jex_futures |
+| Kraken Futures    | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | Y  | Y  | Y  | Y   | Y   |  kraken_futures  |
+| Kumex             | Y | Y  | Y    |  Y  |         |     |     |    |    |    |     |     |  kumex |
+| OKEx Swaps        | Y | Y  | Y    |     |  Y      | Y   |  Y  | Y  | Y  | Y  | Y   | Y   |  okex_swaps  |
+| BTSE (Futures)    | Y | Y  | Y    |  Y  |         |     |     |    |    |    |     |     |  btse_futures  |
+
+* Legend
+| T       | Ticker
+| OB      | OrderBook
+| List    | Market List
+| URL     | Trade Page URL
+| OpenInt | Open Interest
+| CT      | Contract Type
+| Idx     | Price Index
+| ST      | Start Timestamp
+| ET      | Expire Timestamp
+| F       | Funding Rate %
+| NFT     | Next Funding Rate Timestamp
+| F%      | Funding Rate % Predicted
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 
