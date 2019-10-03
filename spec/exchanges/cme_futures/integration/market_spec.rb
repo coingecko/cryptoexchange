@@ -31,4 +31,18 @@ RSpec.describe 'CME Futures integration specs' do
     expect(ticker.payload).to_not be nil
     expect(ticker.contract_interval).to eq "AUG 2019"
   end
+
+  context 'fetch contract stat' do
+    it 'fetch expire_timestamp only' do
+      contract_stat = client.contract_stat(btc_usd_pair)
+
+      expect(contract_stat.base).to eq 'BTC'
+      expect(contract_stat.target).to eq 'USD'
+      expect(contract_stat.market).to eq 'cme_futures'
+      expect(2019..Date.today.year).to include(Time.at(contract_stat.expire_timestamp).year)
+      expect(contract_stat.timestamp).to be nil
+
+      expect(contract_stat.payload).to_not be nil
+    end
+  end
 end

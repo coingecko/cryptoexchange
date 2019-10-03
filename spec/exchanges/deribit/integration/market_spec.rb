@@ -4,6 +4,7 @@ RSpec.describe 'Deribit integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'deribit' }
   let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'deribit', contract_interval: "perpetual", inst_id: "BTC-PERPETUAL") }
+  let(:btc_usd_futures_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'deribit', contract_interval: "month", inst_id: "BTC-27MAR20") }
 
   it 'fetch pairs' do
     pairs = client.pairs('deribit')
@@ -72,17 +73,40 @@ RSpec.describe 'Deribit integration specs' do
     expect(trade.timestamp).to be_a Numeric
     expect(trade.payload).to_not be nil
   end
+  context 'fetch contract stat' do
+    it 'fetch contract stat' do
+      contract_stat = client.contract_stat(btc_usd_pair)
 
-  it 'fetch contract stat' do
-    contract_stat = client.contract_stat(btc_usd_pair)
+      expect(contract_stat.base).to eq 'BTC'
+      expect(contract_stat.target).to eq 'USD'
+      expect(contract_stat.market).to eq 'deribit'
+      expect(contract_stat.index).to be_a Numeric
+      expect(contract_stat.open_interest).to be_a Numeric
+      expect(contract_stat.timestamp).to be nil
 
-    expect(contract_stat.base).to eq 'BTC'
-    expect(contract_stat.target).to eq 'USD'
-    expect(contract_stat.market).to eq 'deribit'
-    expect(contract_stat.index).to be_a Numeric
-    expect(contract_stat.open_interest).to be_a Numeric
-    expect(contract_stat.timestamp).to be nil
+      expect(contract_stat.payload).to_not be nil
+    end
 
-    expect(contract_stat.payload).to_not be nil
+    it 'fetch perpetual contract details' do
+      contract_stat = client.contract_stat(btc_usd_pair)
+
+      expect(contract_stat.expire_timestamp).to be nil
+      expect(contract_stat.start_timestamp).to be nil
+      expect(contract_stat.next_funding_rate_timestamp).to be nil
+      expect(contract_stat.contract_type).to eq 'perpetual'
+      expect(contract_stat.funding_rate_percentage).to be_a Numeric
+      expect(contract_stat.funding_rate_percentage_predicted).to be nil
+    end
+
+    it 'fetch futures contract details' do
+      contract_stat = client.contract_stat(btc_usd_futures_pair)
+
+      expect(Date.today.year..2020).to include(Time.at(contract_stat.expire_timestamp).year)
+      expect(Date.today.year..2020).to include(Time.at(contract_stat.start_timestamp).year)
+      expect(contract_stat.contract_type).to eq 'futures'
+      expect(contract_stat.funding_rate_percentage).to be nil
+      expect(contract_stat.next_funding_rate_timestamp).to be nil
+      expect(contract_stat.funding_rate_percentage_predicted).to be nil
+    end
   end
 end

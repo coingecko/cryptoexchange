@@ -11,28 +11,33 @@ module Cryptoexchange::Exchanges
         def fetch(market_pair)
           open_interest_data = super(open_interest_url)
           open_interest = open_interest_data.select { |s| s['contract'] == market_pair.inst_id }.first
-          index = super(index_url(market_pair))
+          contract_info = super(contract_info_url(market_pair))
 
-          adapt(open_interest, index, market_pair)
+          adapt(open_interest, contract_info, market_pair)
         end
 
         def open_interest_url
           "#{Cryptoexchange::Exchanges::GateFutures::Market::API_URL}/tickers"
         end
 
-        def index_url(market_pair)
+        def contract_info_url(market_pair)
           "#{Cryptoexchange::Exchanges::GateFutures::Market::API_URL}/contracts/#{market_pair.inst_id}"
         end
 
 
-        def adapt(open_interest, index, market_pair)
+        def adapt(open_interest, contract_info, market_pair)
           contract_stat = Cryptoexchange::Models::ContractStat.new
           contract_stat.base      = market_pair.base
           contract_stat.target    = market_pair.target
           contract_stat.market    = GateFutures::Market::NAME
           contract_stat.open_interest = open_interest['total_size'].to_f
-          contract_stat.index     = index['index_price'].to_f
-          contract_stat.payload   = { "open_interest" => open_interest, "index" => index }
+          contract_stat.index     = contract_info['index_price'].to_f
+          contract_stat.funding_rate_percentage     = contract_info['funding_rate'].to_f * 100
+          contract_stat.next_funding_rate_timestamp     = contract_info['funding_next_apply']
+          contract_stat.funding_rate_percentage_predicted     = contract_info['funding_rate_indicative'].to_f * 100
+          contract_stat.contract_type = "perpetual"
+
+          contract_stat.payload   = { "open_interest" => open_interest, "contract_info" => contract_info }
           contract_stat
         end
       end

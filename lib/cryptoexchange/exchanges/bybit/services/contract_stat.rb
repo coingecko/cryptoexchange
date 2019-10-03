@@ -42,7 +42,16 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = Bybit::Market::NAME
           contract_stat.open_interest = pair['open_interest'].to_f
           contract_stat.index     = pair['index_price'].to_f
+
           contract_stat.payload   = pair
+          contract_stat.expire_timestamp = nil
+          contract_stat.start_timestamp = nil
+          contract_stat.contract_type = "perpetual"
+
+          contract_stat.funding_rate_percentage = pair['funding_rate'] ? pair['funding_rate'].to_f * 100 : nil
+          contract_stat.next_funding_rate_timestamp = pair['next_funding_time'] ? DateTime.parse(pair['next_funding_time']).to_time.to_i : nil
+          contract_stat.funding_rate_percentage_predicted = pair['predicted_funding_rate'] ? pair['predicted_funding_rate'].to_f * 100 : nil
+
           contract_stat
         end
       end

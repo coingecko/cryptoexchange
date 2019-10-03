@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fx-api.gateio.ws/api/v4/futures/contracts/ETH_USD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - fx-api.gateio.ws
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Oct 2019 03:09:41 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - openresty
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,DELETE,PUT
+      Access-Control-Allow-Headers:
+      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Max-Age:
+      - '1728000'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '{"funding_rate_indicative":"0.0001","mark_price_round":"0.01","funding_offset":0,"risk_limit_base":"50","interest_rate":"0.0003","index_price":"180.13","order_price_round":"0.05","order_size_min":1,"ref_rebate_rate":"0.2","name":"ETH_USD","ref_discount_rate":"0","order_price_deviate":"0.5","maintenance_rate":"0.01","mark_type":"index","funding_interval":28800,"type":"direct","risk_limit_step":"50","leverage_min":"1","funding_rate":"0.0001","last_price":"180.2","mark_price":"180.14","order_size_max":1000000,"funding_next_apply":1570089600,"config_change_time":1554387865,"position_size":1368355,"trade_size":1618009217,"quanto_multiplier":"0.000001","funding_impact_value":"7","leverage_max":"50","risk_limit_max":"500","maker_fee_rate":"-0.00025","taker_fee_rate":"0.00075","orders_limit":50,"trade_id":1243655,"orderbook_id":263117612}
+
+        '
+    http_version: 
+  recorded_at: Thu, 03 Oct 2019 03:09:41 GMT
+recorded_with: VCR 4.0.0
