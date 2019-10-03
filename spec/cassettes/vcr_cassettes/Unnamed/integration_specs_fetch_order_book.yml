@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unnamed.exchange/v1/Public/OrderBook?market=LTC_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.unnamed.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Oct 2019 06:06:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1064'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=da3a9e8805d3e3646741c2f9f2704fbd01570082795; expires=Fri, 02-Oct-20
+        06:06:35 GMT; path=/; domain=.unnamed.exchange; HttpOnly; Secure
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51fcbb20a8f3aedf-KIX
+    body:
+      encoding: UTF-8
+      string: '{"market":"LTC_BTC","buy":[{"price":0.00611000,"amount":0.16317822},{"price":0.00611000,"amount":0.00878216},{"price":0.00610006,"amount":0.01659921},{"price":0.00610005,"amount":0.11210538},{"price":0.00610000,"amount":0.10000000},{"price":0.00600000,"amount":0.28204885},{"price":0.00550000,"amount":0.27059004},{"price":0.00520060,"amount":0.25685931},{"price":0.00520060,"amount":0.28896696},{"price":0.00520001,"amount":0.15000000},{"price":0.00420000,"amount":0.01833546},{"price":0.00090003,"amount":0.00668790},{"price":0.00081888,"amount":2.00000000},{"price":0.00000026,"amount":54.72045402}],"sell":[{"price":0.00820000,"amount":0.01437760},{"price":0.00830000,"amount":0.15760150},{"price":0.00830000,"amount":0.01127010},{"price":0.00830000,"amount":10.00000000},{"price":0.00849999,"amount":0.15000000},{"price":0.00870000,"amount":0.02035776},{"price":0.00877000,"amount":0.04990000},{"price":0.00880000,"amount":0.00116670},{"price":0.05717110,"amount":0.05717110},{"price":0.05717110,"amount":0.00009981},{"price":0.05717110,"amount":0.00099800}]}'
+    http_version: 
+  recorded_at: Thu, 03 Oct 2019 06:06:36 GMT
+recorded_with: VCR 4.0.0
