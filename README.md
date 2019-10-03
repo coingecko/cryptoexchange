@@ -437,6 +437,7 @@ Or install it yourself as:
 | UEX               | Y       |            |         |         | Y           |          | uex               |       |
 | Unidax            | Y       | N          | N       |         | Y           | N        | unidax            |       |
 | Uniswap           | Y       | N          | N       |         | Y           | N        | uniswap           |       |
+| Unnamed           | Y       | Y          | Y       |         | Y           | Y        | unnamed           |       |
 | Unocoin           |         |            |         |         |             |          | unocoin           |       |
 | Upbit             | Y       | Y [x]      | Y       |         | Y           | Y        | upbit             |       |
 | Vaultmex          | Y       | Y          | Y       |         | Y           | Y        | vaultmex          |       |
