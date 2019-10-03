@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.cryptofacilities.com/derivatives/api/v3/instruments
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.cryptofacilities.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 02 Oct 2019 16:38:51 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0246381c05b7cbce8be097c6f4dcf9091570034331; expires=Thu, 01-Oct-20
+        16:38:51 GMT; path=/; domain=.cryptofacilities.com; HttpOnly; Secure
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With,X-XSRF-TOKEN
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS, PATCH
+      Access-Control-Expose-Headers:
+      - Authorization,Content-Disposition
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51f81be98903dd5a-KUL
+    body:
+      encoding: UTF-8
+      string: '{"result":"success","instruments":[{"symbol":"pi_xbtusd","type":"futures_inverse","underlying":"rr_xbtusd","tickSize":0.5,"contractSize":1,"tradeable":true,"marginLevels":[{"contracts":0,"initialMargin":0.02,"maintenanceMargin":0.01},{"contracts":500000,"initialMargin":0.04,"maintenanceMargin":0.02},{"contracts":1000000,"initialMargin":0.06,"maintenanceMargin":0.03},{"contracts":3000000,"initialMargin":0.1,"maintenanceMargin":0.05}],"fundingRateCoefficient":8,"maxRelativeFundingRate":0.0005,"retailMarginLevels":[{"contracts":0,"initialMargin":0.5,"maintenanceMargin":0.25}]},{"symbol":"pi_ethusd","type":"futures_inverse","underlying":"rr_ethusd","tickSize":0.05,"contractSize":1,"tradeable":true,"marginLevels":[{"contracts":0,"initialMargin":0.02,"maintenanceMargin":0.01},{"contracts":250000,"initialMargin":0.04,"maintenanceMargin":0.02},{"contracts":500000,"initialMargin":0.06,"maintenanceMargin":0.03},{"contracts":2000000,"initialMargin":0.1,"maintenanceMargin":0.05}],"fundingRateCoefficient":8,"maxRelativeFundingRate":0.0005,"retailMarginLevels":[{"contracts":0,"initialMargin":0.5,"maintenanceMargin":0.25}]},{"symbol":"pi_ltcusd","type":"futures_inverse","underlying":"rr_ltcusd","tickSize":0.01,"contractSize":1,"tradeable":true,"marginLevels":[{"contracts":0,"initialMargin":0.02,"maintenanceMargin":0.01},{"contracts":250000,"initialMargin":0.04,"maintenanceMargin":0.02},{"contracts":500000,"initialMargin":0.06,"maintenanceMargin":0.03},{"contracts":2000000,"initialMargin":0.1,"maintenanceMargin":0.05}],"fundingRateCoefficient":8,"maxRelativeFundingRate":0.0005,"retailMarginLevels":[{"contracts":0,"initialMargin":0.5,"maintenanceMargin":0.25}]},{"symbol":"pi_bchusd","type":"futures_inverse","underlying":"rr_bchusd","tickSize":0.1,"contractSize":1,"tradeable":true,"marginLevels":[{"contracts":0,"initialMargin":0.02,"maintenanceMargin":0.01},{"contracts":100000,"initialMargin":0.04,"maintenanceMargin":0.02},{"contracts":500000,"initialMargin":0.06,"maintenanceMargin":0.03}],"fundingRateCoefficient":8,"maxRelativeFundingRate":0.0005,"retailMarginLevels":[{"contracts":0,"initialMargin":0.5,"maintenanceMargin":0.25}]},{"symbol":"pi_xrpusd","type":"futures_inverse","underlying":"rr_xrpusd","tickSize":0.0001,"contractSize":1,"tradeable":true,"marginLevels":[{"contracts":0,"initialMargin":0.02,"maintenanceMargin":0.01},{"contracts":250000,"initialMargin":0.04,"maintenanceMargin":0.02},{"contracts":500000,"initialMargin":0.06,"maintenanceMargin":0.03},{"contracts":2000000,"initialMargin":0.1,"maintenanceMargin":0.05}],"fundingRateCoefficient":8,"maxRelativeFundingRate":0.0005,"retailMarginLevels":[{"contracts":0,"initialMargin":0.5,"maintenanceMargin":0.25}]},{"symbol":"pv_xrpxbt","type":"futures_vanilla","underlying":"rr_xrpxbt","tickSize":0.00000001,"contractSize":1,"tradeable":true,"marginLevels":[{"contracts":0,"initialMargin":0.02,"maintenanceMargin":0.01},{"contracts":100000,"initialMargin":0.04,"maintenanceMargin":0.02},{"contracts":500000,"initialMargin":0.06,"maintenanceMargin":0.03}],"fundingRateCoefficient":8,"maxRelativeFundingRate":0.0005,"retailMarginLevels":[{"contracts":0,"initialMargin":0.5,"maintenanceMargin":0.25}]},{"symbol":"fi_xbtusd_191227","type":"futures_inverse","underlying":"rr_xbtusd","lastTradingTime":"2019-12-27T16:00:00.000Z","tickSize":0.5,"contractSize":1,"tradeable":true,"marginLevels":[{"contracts":0,"initialMargin":0.02,"maintenanceMargin":0.01},{"contracts":500000,"initialMargin":0.04,"maintenanceMargin":0.02},{"contracts":1000000,"initialMargin":0.06,"maintenanceMargin":0.03},{"contracts":3000000,"initialMargin":0.1,"maintenanceMargin":0.05}],"retailMarginLevels":[{"contracts":0,"initialMargin":0.5,"maintenanceMargin":0.25}]},{"symbol":"fi_bchusd_191227","type":"futures_inverse","underlying":"rr_bchusd","lastTradingTime":"2019-12-27T16:00:00.000Z","tickSize":0.1,"contractSize":1,"tradeable":true,"marginLevels":[{"contracts":0,"initialMargin":0.02,"maintenanceMargin":0.01},{"contracts":100000,"initialMargin":0.04,"maintenanceMargin":0.02},{"contracts":500000,"initialMargin":0.06,"maintenanceMargin":0.03}],"retailMarginLevels":[{"contracts":0,"initialMargin":0.5,"maintenanceMargin":0.25}]},{"symbol":"fi_xrpusd_191227","type":"futures_inverse","underlying":"rr_xrpusd","lastTradingTime":"2019-12-27T16:00:00.000Z","tickSize":0.0001,"contractSize":1,"tradeable":true,"marginLevels":[{"contracts":0,"initialMargin":0.02,"maintenanceMargin":0.01},{"contracts":250000,"initialMargin":0.04,"maintenanceMargin":0.02},{"contracts":500000,"initialMargin":0.06,"maintenanceMargin":0.03},{"contracts":2000000,"initialMargin":0.1,"maintenanceMargin":0.05}],"retailMarginLevels":[{"contracts":0,"initialMargin":0.5,"maintenanceMargin":0.25}]},{"symbol":"fi_ltcusd_191227","type":"futures_inverse","underlying":"rr_ltcusd","lastTradingTime":"2019-12-27T16:00:00.000Z","tickSize":0.01,"contractSize":1,"tradeable":true,"marginLevels":[{"contracts":0,"initialMargin":0.02,"maintenanceMargin":0.01},{"contracts":250000,"initialMargin":0.04,"maintenanceMargin":0.02},{"contracts":500000,"initialMargin":0.06,"maintenanceMargin":0.03},{"contracts":2000000,"initialMargin":0.1,"maintenanceMargin":0.05}],"retailMarginLevels":[{"contracts":0,"initialMargin":0.5,"maintenanceMargin":0.25}]},{"symbol":"fi_ethusd_191227","type":"futures_inverse","underlying":"rr_ethusd","lastTradingTime":"2019-12-27T16:00:00.000Z","tickSize":0.05,"contractSize":1,"tradeable":true,"marginLevels":[{"contracts":0,"initialMargin":0.02,"maintenanceMargin":0.01},{"contracts":250000,"initialMargin":0.04,"maintenanceMargin":0.02},{"contracts":500000,"initialMargin":0.06,"maintenanceMargin":0.03},{"contracts":2000000,"initialMargin":0.1,"maintenanceMargin":0.05}],"retailMarginLevels":[{"contracts":0,"initialMargin":0.5,"maintenanceMargin":0.25}]},{"symbol":"fi_ltcusd_191025","type":"futures_inverse","underlying":"rr_ltcusd","lastTradingTime":"2019-10-25T15:00:00.000Z","tickSize":0.01,"contractSize":1,"tradeable":true,"marginLevels":[{"contracts":0,"initialMargin":0.02,"maintenanceMargin":0.01},{"contracts":250000,"initialMargin":0.04,"maintenanceMargin":0.02},{"contracts":500000,"initialMargin":0.06,"maintenanceMargin":0.03},{"contracts":2000000,"initialMargin":0.1,"maintenanceMargin":0.05}],"retailMarginLevels":[{"contracts":0,"initialMargin":0.5,"maintenanceMargin":0.25}]},{"symbol":"fi_xbtusd_191025","type":"futures_inverse","underlying":"rr_xbtusd","lastTradingTime":"2019-10-25T15:00:00.000Z","tickSize":0.5,"contractSize":1,"tradeable":true,"marginLevels":[{"contracts":0,"initialMargin":0.02,"maintenanceMargin":0.01},{"contracts":500000,"initialMargin":0.04,"maintenanceMargin":0.02},{"contracts":1000000,"initialMargin":0.06,"maintenanceMargin":0.03},{"contracts":3000000,"initialMargin":0.1,"maintenanceMargin":0.05}],"retailMarginLevels":[{"contracts":0,"initialMargin":0.5,"maintenanceMargin":0.25}]},{"symbol":"fi_ethusd_191025","type":"futures_inverse","underlying":"rr_ethusd","lastTradingTime":"2019-10-25T15:00:00.000Z","tickSize":0.05,"contractSize":1,"tradeable":true,"marginLevels":[{"contracts":0,"initialMargin":0.02,"maintenanceMargin":0.01},{"contracts":250000,"initialMargin":0.04,"maintenanceMargin":0.02},{"contracts":500000,"initialMargin":0.06,"maintenanceMargin":0.03},{"contracts":2000000,"initialMargin":0.1,"maintenanceMargin":0.05}],"retailMarginLevels":[{"contracts":0,"initialMargin":0.5,"maintenanceMargin":0.25}]},{"symbol":"fi_xrpusd_191025","type":"futures_inverse","underlying":"rr_xrpusd","lastTradingTime":"2019-10-25T15:00:00.000Z","tickSize":0.0001,"contractSize":1,"tradeable":true,"marginLevels":[{"contracts":0,"initialMargin":0.02,"maintenanceMargin":0.01},{"contracts":250000,"initialMargin":0.04,"maintenanceMargin":0.02},{"contracts":500000,"initialMargin":0.06,"maintenanceMargin":0.03},{"contracts":2000000,"initialMargin":0.1,"maintenanceMargin":0.05}],"retailMarginLevels":[{"contracts":0,"initialMargin":0.5,"maintenanceMargin":0.25}]},{"symbol":"fi_bchusd_191025","type":"futures_inverse","underlying":"rr_bchusd","lastTradingTime":"2019-10-25T15:00:00.000Z","tickSize":0.1,"contractSize":1,"tradeable":true,"marginLevels":[{"contracts":0,"initialMargin":0.02,"maintenanceMargin":0.01},{"contracts":100000,"initialMargin":0.04,"maintenanceMargin":0.02},{"contracts":500000,"initialMargin":0.06,"maintenanceMargin":0.03}],"retailMarginLevels":[{"contracts":0,"initialMargin":0.5,"maintenanceMargin":0.25}]},{"symbol":"fv_xrpxbt_191227","type":"futures_vanilla","underlying":"rr_xrpxbt","lastTradingTime":"2019-12-27T16:00:00.000Z","tickSize":0.00000001,"contractSize":1,"tradeable":true,"marginLevels":[{"contracts":0,"initialMargin":0.02,"maintenanceMargin":0.01},{"contracts":100000,"initialMargin":0.04,"maintenanceMargin":0.02},{"contracts":500000,"initialMargin":0.06,"maintenanceMargin":0.03}],"retailMarginLevels":[{"contracts":0,"initialMargin":0.5,"maintenanceMargin":0.25}]},{"symbol":"in_xbtusd","type":"spot
+        index","tradeable":false},{"symbol":"in_xrpusd","type":"spot index","tradeable":false},{"symbol":"in_ethusd","type":"spot
+        index","tradeable":false},{"symbol":"in_ltcusd","type":"spot index","tradeable":false},{"symbol":"in_bchusd","type":"spot
+        index","tradeable":false},{"symbol":"in_xrpxbt","type":"spot index","tradeable":false},{"symbol":"rr_xbtusd","type":"spot
+        index","tradeable":false},{"symbol":"rr_xrpusd","type":"spot index","tradeable":false},{"symbol":"rr_ethusd","type":"spot
+        index","tradeable":false},{"symbol":"rr_ltcusd","type":"spot index","tradeable":false},{"symbol":"rr_bchusd","type":"spot
+        index","tradeable":false},{"symbol":"rr_xrpxbt","type":"spot index","tradeable":false}],"serverTime":"2019-10-02T16:38:51.237Z"}'
+    http_version: 
+  recorded_at: Wed, 02 Oct 2019 16:38:51 GMT
+recorded_with: VCR 4.0.0

@@ -4,6 +4,7 @@ RSpec.describe 'kraken_futures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'kraken_futures' }
   let(:eth_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USD', inst_id: "PI_ETHUSD", market: 'kraken_futures', contract_interval: "perpetual") }
+  let(:eth_usd_futures_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USD', inst_id: "FI_ETHUSD_191025", market: 'kraken_futures', contract_interval: "month") }
 
   it 'fetch pairs' do
     pairs = client.pairs('kraken_futures')
@@ -12,9 +13,9 @@ RSpec.describe 'kraken_futures integration specs' do
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
-    expect(pair.inst_id).to eq 'pi_ethusd'
+    expect(pair.inst_id).to eq 'fi_xbtusd_191025'
     expect(pair.market).to eq 'kraken_futures'
-    expect(pair.contract_interval).to eq "perpetual"
+    expect(pair.contract_interval).to eq "month"
   end
 
   it 'give trade url' do
@@ -72,17 +73,40 @@ RSpec.describe 'kraken_futures integration specs' do
     expect(trade.trade_id).to be_a Numeric
     expect(trade.type).to eq("buy").or eq("sell")
   end
+  context 'fetch contract stat' do
+    it 'fetch contract stat' do
+      contract_stat = client.contract_stat(eth_usd_pair)
 
-  it 'fetch contract stat' do
-    contract_stat = client.contract_stat(eth_usd_pair)
+      expect(contract_stat.base).to eq 'ETH'
+      expect(contract_stat.target).to eq 'USD'
+      expect(contract_stat.market).to eq 'kraken_futures'
+      expect(contract_stat.index).to be_a Numeric
+      expect(contract_stat.open_interest).to be_a Numeric
+      expect(contract_stat.timestamp).to be nil
 
-    expect(contract_stat.base).to eq 'ETH'
-    expect(contract_stat.target).to eq 'USD'
-    expect(contract_stat.market).to eq 'kraken_futures'
-    expect(contract_stat.index).to be_a Numeric
-    expect(contract_stat.open_interest).to be_a Numeric
-    expect(contract_stat.timestamp).to be nil
+      expect(contract_stat.payload).to_not be nil
+    end
 
-    expect(contract_stat.payload).to_not be nil
+    it 'fetch perpetual contract details' do
+      contract_stat = client.contract_stat(eth_usd_pair)
+
+      expect(contract_stat.expire_timestamp).to be nil
+      expect(contract_stat.start_timestamp).to be nil
+      expect(contract_stat.next_funding_rate_timestamp).to be nil
+      expect(contract_stat.contract_type).to eq 'perpetual'
+      expect(contract_stat.funding_rate_percentage).to be_a Numeric
+      expect(contract_stat.funding_rate_percentage_predicted).to be_a Numeric
+    end
+
+    it 'fetch futures contract details' do
+      contract_stat = client.contract_stat(eth_usd_futures_pair)
+
+      expect(2019..Date.today.year).to include(Time.at(contract_stat.expire_timestamp).year)
+      expect(contract_stat.start_timestamp).to be nil
+      expect(contract_stat.contract_type).to eq 'futures'
+      expect(contract_stat.funding_rate_percentage).to be nil
+      expect(contract_stat.next_funding_rate_timestamp).to be nil
+      expect(contract_stat.funding_rate_percentage_predicted).to be nil
+    end
   end
 end

@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module BinanceFutures
+  module JexFutures
     module Services
       class ContractStat < Cryptoexchange::Services::Market
         class << self
@@ -9,28 +9,25 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          contract_info = super(contract_info_url(market_pair))
+          contract_infos = super(contract_info_url)
+          contract_info = contract_infos.select { |ci| ci['symbol'] == market_pair.inst_id }.first
 
-          adapt(nil, contract_info, market_pair)
+          adapt(contract_info, market_pair)
         end
 
-        # def open_interest_url(market_pair)
-        #   TODO: pending
-        # end
-
-        def contract_info_url(market_pair)
-          "#{Cryptoexchange::Exchanges::BinanceFutures::Market::API_URL}/premiumIndex?symbol=#{market_pair.inst_id}"
+        def contract_info_url
+          "#{Cryptoexchange::Exchanges::JexFutures::Market::API_URL}/contractInfo"
         end
 
-        def adapt(open_interest, contract_info, market_pair)
+        def adapt(contract_info, market_pair)
           contract_stat = Cryptoexchange::Models::ContractStat.new
           contract_stat.base      = market_pair.base
           contract_stat.target    = market_pair.target
-          contract_stat.market    = BinanceFutures::Market::NAME
+          contract_stat.market    = JexFutures::Market::NAME
           contract_stat.index     = contract_info['markPrice'].to_f
-          contract_stat.funding_rate_percentage     = contract_info['lastFundingRate'].to_f * 100
+          contract_stat.funding_rate_percentage     = contract_info['fundingRate'].to_f * 100
           contract_stat.next_funding_rate_timestamp     = contract_info['nextFundingTime']/1000
-          contract_stat.funding_rate_percentage_predicted = nil
+          contract_stat.funding_rate_percentage_predicted = contract_info['predictedFundingRate']/1000
           contract_stat.contract_type = "perpetual"
           contract_stat.payload   =  contract_info
           contract_stat

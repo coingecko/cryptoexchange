@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe 'OkexSwap integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', contract_interval: "perpetual", inst_id: "BTC-USD-SWAP") }
-  let(:xbt_usd_pair_weekly) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', contract_interval: "weekly", inst_id: "BTC-USD-190927") }
+  let(:xbt_usd_pair_weekly) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'okex_swap', contract_interval: "weekly", inst_id: "BTC-USD-191004") }
 
   it 'fetch pairs' do
     pairs = client.pairs('okex_swap')
@@ -41,7 +41,7 @@ RSpec.describe 'OkexSwap integration specs' do
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USD'
     expect(ticker.market).to eq 'okex_swap'
-    expect(ticker.inst_id).to eq 'BTC-USD-190927'
+    expect(ticker.inst_id).to eq 'BTC-USD-191004'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
@@ -70,16 +70,39 @@ RSpec.describe 'OkexSwap integration specs' do
     expect(order_book.payload).to_not be nil
   end
 
-  it 'fetch contract stat' do
-    contract_stat = client.contract_stat(xbt_usd_pair_weekly)
+  context 'fetch contract stat' do
+    it 'fetch contract stat' do
+      contract_stat = client.contract_stat(xbt_usd_pair_weekly)
 
-    expect(contract_stat.base).to eq 'BTC'
-    expect(contract_stat.target).to eq 'USD'
-    expect(contract_stat.market).to eq 'okex_swap'
-    expect(contract_stat.index).to be_a Numeric
-    expect(contract_stat.open_interest).to be_a Numeric
-    expect(contract_stat.timestamp).to be nil
-    expect(contract_stat.payload).to_not be nil
+      expect(contract_stat.base).to eq 'BTC'
+      expect(contract_stat.target).to eq 'USD'
+      expect(contract_stat.market).to eq 'okex_swap'
+      expect(contract_stat.index).to be_a Numeric
+      expect(contract_stat.open_interest).to be_a Numeric
+      expect(contract_stat.timestamp).to be nil
+      expect(contract_stat.payload).to_not be nil
+    end
+
+    it 'fetch perpetual contract details' do
+      contract_stat = client.contract_stat(xbt_usd_pair)
+      expect(contract_stat.expire_timestamp).to be nil
+      expect(contract_stat.start_timestamp).to be nil
+      expect(contract_stat.contract_type).to eq 'perpetual'
+      expect(contract_stat.funding_rate_percentage).to be_a Numeric
+      expect(2018..Date.today.year).to include(Time.at(contract_stat.next_funding_rate_timestamp).year)
+      expect(contract_stat.funding_rate_percentage_predicted).to be_a Numeric
+    end
+
+    it 'fetch futures contract details' do
+      contract_stat = client.contract_stat(xbt_usd_pair_weekly)
+
+      expect(2019..Date.today.year).to include(Time.at(contract_stat.expire_timestamp).year)
+      expect(2019..Date.today.year).to include(Time.at(contract_stat.start_timestamp).year)
+      expect(contract_stat.contract_type).to eq 'futures'
+      expect(contract_stat.funding_rate_percentage).to be nil
+      expect(contract_stat.next_funding_rate_timestamp).to be nil
+      expect(contract_stat.funding_rate_percentage_predicted).to be nil
+    end
   end
 
   # it 'fetch trade' do

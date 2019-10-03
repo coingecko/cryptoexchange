@@ -7,7 +7,7 @@ module Cryptoexchange::Exchanges
             true
           end
         end
-      
+
         def fetch(market_pair)
           output = super(ticker_url(market_pair))
           adapt(output["result"], market_pair)

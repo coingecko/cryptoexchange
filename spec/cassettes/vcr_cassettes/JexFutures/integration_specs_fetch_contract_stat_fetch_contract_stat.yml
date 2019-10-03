@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.jex.com/api/v1/contractInfo
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.jex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Oct 2019 08:41:47 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d23e1c9d4530bd3692cdd55e4cb125ef61570092107; expires=Fri, 02-Oct-20
+        08:41:47 GMT; path=/; domain=.jex.com; HttpOnly
+      - aliyungf_tc=AQAAANZu6hKRlQMAe5BErKbKqjlwXm9W; Path=/; HttpOnly
+      Vary:
+      - Accept-Encoding
+      X-Mbx-Used-Weight:
+      - '1'
+      X-Mbx-Used-Weight-1m:
+      - '1200'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51fd9e760d08d9a8-SIN
+    body:
+      encoding: UTF-8
+      string: '[{"premiumIndex":0.00000000,"fundingRate":0.00010000,"fundingInterval":28800000,"nextFundingTime":1570118400000,"predictedFundingRate":0.00010000,"fairBasis":0.00000000,"fairBasisRate":0.00000000,"openPositions":0.00000000000000000000,"turnover24":81339102.55438000,"totalVolume":0.00000000,"markMethod":2,"markPrice":8270.41430000,"lastPrice":8269.70000000,"autoDeleveraging":"DISABLE","symbol":"BTCUSDT"},{"premiumIndex":0.00000000,"fundingRate":0.00010000,"fundingInterval":28800000,"nextFundingTime":1570118400000,"predictedFundingRate":0.00010000,"fairBasis":0.00000000,"fairBasisRate":0.00000000,"openPositions":0.00000000000000000000,"turnover24":67369740.39470000,"totalVolume":0.00000000,"markMethod":2,"markPrice":2.97030000,"lastPrice":2.97300000,"autoDeleveraging":"DISABLE","symbol":"EOSUSDT"},{"premiumIndex":0.00000000,"fundingRate":0.00010000,"fundingInterval":28800000,"nextFundingTime":1570118400000,"predictedFundingRate":0.00010000,"fairBasis":0.00000000,"fairBasisRate":0.00000000,"openPositions":0.00000000000000000000,"turnover24":58779907.12450000,"totalVolume":0.00000000,"markMethod":2,"markPrice":177.57400000,"lastPrice":177.50000000,"autoDeleveraging":"DISABLE","symbol":"ETHUSDT"}]'
+    http_version: 
+  recorded_at: Thu, 03 Oct 2019 08:41:45 GMT
+recorded_with: VCR 4.0.0
