@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'GateFutures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USD', inst_id: "ETH_USD", market: 'gate_futures', contract_interval: "perpetual") }
+  let(:eth_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USD', inst_id: "ETH_USD", market: 'gate_futures', contract_interval: "perpetual") }
 
   it 'fetch pairs' do
     pairs = client.pairs('gate_futures')
@@ -17,12 +17,12 @@ RSpec.describe 'GateFutures integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url "gate_futures", inst_id: xbt_usd_pair.inst_id
+    trade_page_url = client.trade_page_url "gate_futures", inst_id: eth_usd_pair.inst_id
     expect(trade_page_url).to eq "https://www.gate.io/futures_trade/ETH_USD"
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(xbt_usd_pair)
+    ticker = client.ticker(eth_usd_pair)
 
     expect(ticker.base).to eq 'ETH'
     expect(ticker.target).to eq 'USD'
@@ -38,7 +38,7 @@ RSpec.describe 'GateFutures integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(xbt_usd_pair)
+    order_book = client.order_book(eth_usd_pair)
 
     expect(order_book.base).to eq 'ETH'
     expect(order_book.target).to eq 'USD'
@@ -55,7 +55,7 @@ RSpec.describe 'GateFutures integration specs' do
   end
 
   it 'fetch trade' do
-    trades = client.trades(xbt_usd_pair)
+    trades = client.trades(eth_usd_pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty
@@ -68,5 +68,28 @@ RSpec.describe 'GateFutures integration specs' do
     expect(trade.amount).to_not be_nil
     expect(trade.timestamp).to be_a Numeric
     expect(trade.payload).to_not be nil
+  end
+
+  context 'fetch contract stat' do
+    it 'fetch contract stat and contract details' do
+      contract_stat = client.contract_stat(eth_usd_pair)
+
+      expect(contract_stat.base).to eq 'ETH'
+      expect(contract_stat.target).to eq 'USD'
+      expect(contract_stat.market).to eq 'gate_futures'
+      expect(contract_stat.index).to be_a Numeric
+      expect(contract_stat.open_interest).to be_a Numeric
+      expect(contract_stat.timestamp).to be nil
+
+      expect(contract_stat.expire_timestamp).to be nil
+      expect(contract_stat.start_timestamp).to be nil
+      expect(contract_stat.contract_type).to eq 'perpetual'
+      expect(contract_stat.funding_rate_percentage).to be_a Numeric
+      expect(2018..Date.today.year).to include(Time.at(contract_stat.next_funding_rate_timestamp).year)
+      expect(contract_stat.funding_rate_percentage_predicted).to be_a Numeric
+
+
+      expect(contract_stat.payload).to_not be nil
+    end
   end
 end
