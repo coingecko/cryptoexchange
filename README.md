@@ -230,6 +230,7 @@ Or install it yourself as:
 | Daybit            | Y       |            |         |         | Y           | Y        | daybit            |       |
 | Dcoin             | Y       | Y [x]      | Y       |         | Y           | Y        | dcoin             |       |
 | Ddex              | Y       | Y          | Y       |         | Y           | Y        | ddex              |       |
+| Decoin            | Y       | Y          | Y       |         | Y           | Y        | Decoin            |       |
 | DEEX              | Y       |            |         |         | Y           |          | deex              |       |
 | DEx.top           | Y       | Y [x]      | Y       |         | Y           |          | dextop            |       |
 | dex-trade         | Y       | Y          | Y       |         | Y           |          | dextrade          |       |

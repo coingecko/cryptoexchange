@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://apiv1.decoin.io/market/get-orderbook/BTC-USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - apiv1.decoin.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Oct 2019 06:38:11 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d01502f0cc2c52accfa6461dc544423681570084689; expires=Fri, 02-Oct-20
+        06:38:09 GMT; path=/; domain=.decoin.io; HttpOnly
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51fce96009ebdd4a-KUL
+    body:
+      encoding: UTF-8
+      string: '{"SellOrders":[{"Quantity":0.03389000,"Rate":8296.77000000},{"Quantity":0.04235900,"Rate":8300.46000000},{"Quantity":0.02817100,"Rate":8304.00000000},{"Quantity":0.01889600,"Rate":8305.00000000},{"Quantity":0.04039700,"Rate":8305.24000000},{"Quantity":0.02792900,"Rate":8305.70000000},{"Quantity":0.01492200,"Rate":8305.72000000},{"Quantity":0.01857900,"Rate":8305.79000000},{"Quantity":0.07341200,"Rate":8305.83000000},{"Quantity":0.02058500,"Rate":8305.85000000},{"Quantity":0.00896000,"Rate":8305.96000000},{"Quantity":0.02277700,"Rate":8306.00000000},{"Quantity":0.00801600,"Rate":8306.18000000},{"Quantity":0.03133900,"Rate":8306.19000000},{"Quantity":0.01092400,"Rate":8306.29000000},{"Quantity":0.01130700,"Rate":8306.32000000},{"Quantity":0.06192300,"Rate":8306.33000000},{"Quantity":0.00941800,"Rate":8306.58000000},{"Quantity":0.04147300,"Rate":8307.01000000},{"Quantity":0.03269300,"Rate":8307.22000000},{"Quantity":0.01500000,"Rate":8307.36000000},{"Quantity":0.05004300,"Rate":8307.65000000},{"Quantity":0.02071000,"Rate":8307.71000000},{"Quantity":0.04766000,"Rate":8308.15000000},{"Quantity":0.01090500,"Rate":8308.25000000},{"Quantity":0.01943000,"Rate":8308.63000000},{"Quantity":0.02596500,"Rate":8308.98000000},{"Quantity":0.01426700,"Rate":8309.57000000},{"Quantity":0.13582700,"Rate":8314.84000000},{"Quantity":0.01371700,"Rate":8337.96000000}],"BuyOrders":[{"Quantity":0.03209400,"Rate":8286.00000000},{"Quantity":0.01174300,"Rate":8285.00000000},{"Quantity":0.00635700,"Rate":8281.00000000},{"Quantity":0.01895500,"Rate":8279.00000000},{"Quantity":0.01819500,"Rate":8278.89000000},{"Quantity":0.05655900,"Rate":8278.70000000},{"Quantity":0.05299200,"Rate":8278.58000000},{"Quantity":0.02148600,"Rate":8278.35000000},{"Quantity":0.01938400,"Rate":8278.19000000},{"Quantity":0.03749600,"Rate":8278.14000000},{"Quantity":0.01542400,"Rate":8278.09000000},{"Quantity":0.02916000,"Rate":8278.04000000},{"Quantity":0.05760900,"Rate":8277.97000000},{"Quantity":0.00706800,"Rate":8277.94000000},{"Quantity":0.02388100,"Rate":8277.68000000},{"Quantity":0.01458100,"Rate":8277.62000000},{"Quantity":0.01998400,"Rate":8277.52000000},{"Quantity":0.01742000,"Rate":8277.44000000},{"Quantity":0.03808500,"Rate":8276.78000000},{"Quantity":0.03309700,"Rate":8276.36000000},{"Quantity":0.01410200,"Rate":8275.98000000},{"Quantity":0.03511500,"Rate":8275.92000000},{"Quantity":0.18301800,"Rate":8275.85000000},{"Quantity":0.00759900,"Rate":8275.77000000},{"Quantity":0.02704600,"Rate":8274.50000000},{"Quantity":0.04758400,"Rate":8274.21000000},{"Quantity":0.01861300,"Rate":8273.50000000},{"Quantity":0.02256800,"Rate":8273.05000000},{"Quantity":0.01026200,"Rate":8272.63000000},{"Quantity":0.04649900,"Rate":8269.65000000}]}'
+    http_version: 
+  recorded_at: Thu, 03 Oct 2019 06:38:11 GMT
+recorded_with: VCR 4.0.0

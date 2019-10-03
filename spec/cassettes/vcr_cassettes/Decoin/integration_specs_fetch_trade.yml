@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://apiv1.decoin.io/market/get-market-history/BTC-USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - apiv1.decoin.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Oct 2019 06:38:12 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=ded1b30edfbbdfc730b8261c1fe7233d11570084691; expires=Fri, 02-Oct-20
+        06:38:11 GMT; path=/; domain=.decoin.io; HttpOnly
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51fce96a1ec02cdf-KUL
+    body:
+      encoding: UTF-8
+      string: '[{"Amount":0.01363100,"Rate":8279.00000000,"Date":"2019-10-03 06:38:02"},{"Amount":0.00399700,"Rate":8279.01000000,"Date":"2019-10-03
+        06:38:02"},{"Amount":0.01245900,"Rate":8282.00000000,"Date":"2019-10-03 06:38:02"},{"Amount":0.00647500,"Rate":8282.99000000,"Date":"2019-10-03
+        06:38:02"},{"Amount":0.03339600,"Rate":8283.00000000,"Date":"2019-10-03 06:38:02"},{"Amount":0.00210300,"Rate":8282.00000000,"Date":"2019-10-03
+        06:37:21"},{"Amount":0.00775500,"Rate":8283.00000000,"Date":"2019-10-03 06:37:21"},{"Amount":0.01052900,"Rate":8294.68000000,"Date":"2019-10-03
+        06:36:38"},{"Amount":0.00620700,"Rate":8279.18000000,"Date":"2019-10-03 06:35:57"},{"Amount":0.01346900,"Rate":8297.35000000,"Date":"2019-10-03
+        06:35:12"},{"Amount":0.00177800,"Rate":8282.77000000,"Date":"2019-10-03 06:34:12"},{"Amount":0.03568400,"Rate":8284.00000000,"Date":"2019-10-03
+        06:34:12"},{"Amount":0.01565500,"Rate":8286.23000000,"Date":"2019-10-03 06:33:24"},{"Amount":0.03652100,"Rate":8288.34000000,"Date":"2019-10-03
+        06:33:24"},{"Amount":0.01405800,"Rate":8287.23000000,"Date":"2019-10-03 06:32:35"},{"Amount":0.01461900,"Rate":8289.00000000,"Date":"2019-10-03
+        06:32:35"},{"Amount":0.00260000,"Rate":8305.62000000,"Date":"2019-10-03 06:31:52"},{"Amount":0.01207300,"Rate":8305.56000000,"Date":"2019-10-03
+        06:31:52"},{"Amount":0.01457300,"Rate":8305.40000000,"Date":"2019-10-03 06:31:52"},{"Amount":0.01000100,"Rate":8305.33000000,"Date":"2019-10-03
+        06:31:52"},{"Amount":0.01924200,"Rate":8305.29000000,"Date":"2019-10-03 06:31:52"},{"Amount":0.00630900,"Rate":8305.24000000,"Date":"2019-10-03
+        06:31:52"},{"Amount":0.01795800,"Rate":8287.00000000,"Date":"2019-10-03 06:31:08"},{"Amount":0.01651300,"Rate":8287.61000000,"Date":"2019-10-03
+        06:31:08"},{"Amount":0.04214500,"Rate":8304.73000000,"Date":"2019-10-03 06:30:19"},{"Amount":0.01507900,"Rate":8300.38000000,"Date":"2019-10-03
+        06:29:33"},{"Amount":0.01121200,"Rate":8298.51000000,"Date":"2019-10-03 06:29:33"},{"Amount":0.00193300,"Rate":8302.24000000,"Date":"2019-10-03
+        06:28:49"},{"Amount":0.01128200,"Rate":8300.18000000,"Date":"2019-10-03 06:28:49"},{"Amount":0.02805200,"Rate":8298.07000000,"Date":"2019-10-03
+        06:28:49"}]'
+    http_version: 
+  recorded_at: Thu, 03 Oct 2019 06:38:12 GMT
+recorded_with: VCR 4.0.0
