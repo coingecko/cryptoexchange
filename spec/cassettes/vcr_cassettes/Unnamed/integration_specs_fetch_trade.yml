@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unnamed.exchange/v1/Public/TradeHistory?market=LTC_BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.unnamed.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Oct 2019 06:06:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '6771'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dd2e782a0d426d3f89e338ea15687403d1570082797; expires=Fri, 02-Oct-20
+        06:06:37 GMT; path=/; domain=.unnamed.exchange; HttpOnly; Secure
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51fcbb29bcac208e-KIX
+    body:
+      encoding: UTF-8
+      string: '[{"tradeId":153566,"market":"LTC_BTC","type":"Buy","price":0.00675000,"amount":0.00048194,"total":0.00000325,"timestamp":1569921961766},{"tradeId":153545,"market":"LTC_BTC","type":"Buy","price":0.00675000,"amount":0.03900000,"total":0.00026325,"timestamp":1569915585245},{"tradeId":152782,"market":"LTC_BTC","type":"Buy","price":0.00675000,"amount":4.87771943,"total":0.03292460,"timestamp":1569839229664},{"tradeId":152781,"market":"LTC_BTC","type":"Buy","price":0.00674000,"amount":0.34399500,"total":0.00231852,"timestamp":1569839223492},{"tradeId":152087,"market":"LTC_BTC","type":"Buy","price":0.00675000,"amount":0.00982090,"total":0.00006629,"timestamp":1569738806234},{"tradeId":151965,"market":"LTC_BTC","type":"Buy","price":0.00675000,"amount":0.11372401,"total":0.00076763,"timestamp":1569722335670},{"tradeId":151893,"market":"LTC_BTC","type":"Sell","price":0.00675000,"amount":0.01437760,"total":0.00009704,"timestamp":1569709776834},{"tradeId":151892,"market":"LTC_BTC","type":"Sell","price":0.00675000,"amount":0.04291907,"total":0.00028970,"timestamp":1569709776834},{"tradeId":151309,"market":"LTC_BTC","type":"Sell","price":0.00675000,"amount":0.00100798,"total":0.00000680,"timestamp":1569626831897},{"tradeId":151211,"market":"LTC_BTC","type":"Sell","price":0.00750000,"amount":0.02619537,"total":0.00019646,"timestamp":1569611397836},{"tradeId":151201,"market":"LTC_BTC","type":"Buy","price":0.00750000,"amount":0.01370094,"total":0.00010275,"timestamp":1569610818525},{"tradeId":151003,"market":"LTC_BTC","type":"Buy","price":0.00685000,"amount":0.01109975,"total":0.00007603,"timestamp":1569597705066},{"tradeId":151002,"market":"LTC_BTC","type":"Buy","price":0.00685000,"amount":0.01733933,"total":0.00011877,"timestamp":1569597705066},{"tradeId":150921,"market":"LTC_BTC","type":"Buy","price":0.00685000,"amount":0.29272474,"total":0.00200516,"timestamp":1569590096791},{"tradeId":150788,"market":"LTC_BTC","type":"Buy","price":0.00685000,"amount":0.01955738,"total":0.00013396,"timestamp":1569579806623},{"tradeId":150292,"market":"LTC_BTC","type":"Sell","price":0.00675000,"amount":0.01958417,"total":0.00013219,"timestamp":1569522225166},{"tradeId":150133,"market":"LTC_BTC","type":"Buy","price":0.00685000,"amount":0.01715583,"total":0.00011751,"timestamp":1569513525158},{"tradeId":150123,"market":"LTC_BTC","type":"Sell","price":0.00675000,"amount":0.06458449,"total":0.00043594,"timestamp":1569513339572},{"tradeId":148366,"market":"LTC_BTC","type":"Sell","price":0.00530000,"amount":0.01197600,"total":0.00006347,"timestamp":1569367125659},{"tradeId":148311,"market":"LTC_BTC","type":"Sell","price":0.00530000,"amount":0.01097800,"total":0.00005818,"timestamp":1569363135188},{"tradeId":148171,"market":"LTC_BTC","type":"Buy","price":0.00830000,"amount":0.02883277,"total":0.00023931,"timestamp":1569354680490},{"tradeId":148077,"market":"LTC_BTC","type":"Sell","price":0.00520060,"amount":0.05719482,"total":0.00029744,"timestamp":1569349825325},{"tradeId":148076,"market":"LTC_BTC","type":"Sell","price":0.00600000,"amount":0.04537886,"total":0.00027227,"timestamp":1569349825325},{"tradeId":148073,"market":"LTC_BTC","type":"Buy","price":0.00840000,"amount":0.10257369,"total":0.00086161,"timestamp":1569349513392},{"tradeId":148035,"market":"LTC_BTC","type":"Sell","price":0.00520060,"amount":0.10040668,"total":0.00052217,"timestamp":1569347766192},{"tradeId":148034,"market":"LTC_BTC","type":"Sell","price":0.00600050,"amount":0.02875798,"total":0.00017256,"timestamp":1569347766192},{"tradeId":147841,"market":"LTC_BTC","type":"Buy","price":0.00849999,"amount":0.01062695,"total":0.00009032,"timestamp":1569338218750},{"tradeId":147837,"market":"LTC_BTC","type":"Buy","price":0.00849999,"amount":0.02497569,"total":0.00021229,"timestamp":1569338079709},{"tradeId":147278,"market":"LTC_BTC","type":"Sell","price":0.00720361,"amount":0.44935097,"total":0.00323694,"timestamp":1569261158723},{"tradeId":144066,"market":"LTC_BTC","type":"Sell","price":0.00750000,"amount":0.00670000,"total":0.00005025,"timestamp":1568979258361},{"tradeId":143391,"market":"LTC_BTC","type":"Sell","price":0.00500000,"amount":0.00002994,"total":0.00000014,"timestamp":1568902938084},{"tradeId":142471,"market":"LTC_BTC","type":"Buy","price":0.00735000,"amount":0.02315347,"total":0.00017017,"timestamp":1568757867196},{"tradeId":142470,"market":"LTC_BTC","type":"Buy","price":0.00735000,"amount":0.14562850,"total":0.00107036,"timestamp":1568757867196},{"tradeId":142469,"market":"LTC_BTC","type":"Buy","price":0.00735000,"amount":0.01371428,"total":0.00010079,"timestamp":1568757867196},{"tradeId":142468,"market":"LTC_BTC","type":"Buy","price":0.00724438,"amount":0.15000000,"total":0.00108665,"timestamp":1568757867196},{"tradeId":142467,"market":"LTC_BTC","type":"Buy","price":0.00710000,"amount":0.03897027,"total":0.00027668,"timestamp":1568757853134},{"tradeId":142466,"market":"LTC_BTC","type":"Buy","price":0.00690000,"amount":0.00926978,"total":0.00006396,"timestamp":1568757853134},{"tradeId":142458,"market":"LTC_BTC","type":"Buy","price":0.00690000,"amount":0.07002368,"total":0.00048316,"timestamp":1568755841536},{"tradeId":142457,"market":"LTC_BTC","type":"Buy","price":0.00690000,"amount":0.13922158,"total":0.00096062,"timestamp":1568755841536},{"tradeId":142456,"market":"LTC_BTC","type":"Buy","price":0.00690000,"amount":1.44434180,"total":0.00996595,"timestamp":1568755841536},{"tradeId":142429,"market":"LTC_BTC","type":"Buy","price":0.00690000,"amount":0.02760992,"total":0.00019050,"timestamp":1568752236052},{"tradeId":142405,"market":"LTC_BTC","type":"Buy","price":0.00690000,"amount":0.32127674,"total":0.00221680,"timestamp":1568751238539},{"tradeId":142318,"market":"LTC_BTC","type":"Buy","price":0.00690000,"amount":0.03453263,"total":0.00023827,"timestamp":1568742156777},{"tradeId":142316,"market":"LTC_BTC","type":"Buy","price":0.00680000,"amount":0.03000000,"total":0.00020400,"timestamp":1568742109307},{"tradeId":142040,"market":"LTC_BTC","type":"Sell","price":0.00670000,"amount":0.05000000,"total":0.00033500,"timestamp":1568720300437},{"tradeId":141815,"market":"LTC_BTC","type":"Buy","price":0.00690000,"amount":6.78262314,"total":0.04680009,"timestamp":1568689679754},{"tradeId":141750,"market":"LTC_BTC","type":"Sell","price":0.00670000,"amount":0.01000995,"total":0.00006706,"timestamp":1568680848193},{"tradeId":141546,"market":"LTC_BTC","type":"Sell","price":0.00670000,"amount":5.55369288,"total":0.03720974,"timestamp":1568654633861},{"tradeId":141541,"market":"LTC_BTC","type":"Sell","price":0.00670000,"amount":0.00978506,"total":0.00006555,"timestamp":1568654229679},{"tradeId":141540,"market":"LTC_BTC","type":"Sell","price":0.00670000,"amount":0.20653125,"total":0.00138375,"timestamp":1568654134252}]'
+    http_version: 
+  recorded_at: Thu, 03 Oct 2019 06:06:38 GMT
+recorded_with: VCR 4.0.0

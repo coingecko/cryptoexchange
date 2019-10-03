@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Bitopro
+  module Bitsoda
     module Services
       class OrderBook < Cryptoexchange::Services::Market
         class << self
@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitopro::Market::API_URL}/order-book/#{market_pair.base}_#{market_pair.target}?limit=20"
+          "#{Cryptoexchange::Exchanges::Bitsoda::Market::API_URL}/market/snapshot/#{market_pair.base}_#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
@@ -22,19 +22,20 @@ module Cryptoexchange::Exchanges
 
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
-          order_book.market    = Bitopro::Market::NAME
-
-          order_book.asks      = adapt_orders(output['asks'])
-          order_book.bids      = adapt_orders(output['bids'])
-          order_book.timestamp = Time.now.to_i
-          order_book.payload   = output
+          order_book.market    = Bitsoda::Market::NAME
+          order_book.asks      = adapt_orders(output['data']['sellOrders'])
+          order_book.bids      = adapt_orders(output['data']['buyOrders'])
+          order_book.timestamp = nil
+          order_book.payload   = output['data']
           order_book
         end
 
         def adapt_orders(orders)
           orders.collect do |order_entry|
-            Cryptoexchange::Models::Order.new(price: order_entry['price'],
-                                              amount: order_entry['amount'])
+            Cryptoexchange::Models::Order.new(
+              price: NumericHelper.to_d(order_entry["price"]),
+              amount: NumericHelper.to_d(order_entry["amount"])
+            )
           end
         end
       end

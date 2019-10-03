@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.delta.exchange/products/ticker/24hr?symbol=BTCUSD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.delta.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Oct 2019 08:42:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '112'
+      Connection:
+      - close
+      Server:
+      - nginx
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - x-pagination-page-size,x-pagination-page-num,x-pagination-total
+    body:
+      encoding: UTF-8
+      string: '{"low":8196,"high":8417.5,"open":8272.5,"close":8293.5,"volume":636391,"symbol":"BTCUSD","timestamp":1570092172}'
+    http_version: 
+  recorded_at: Thu, 03 Oct 2019 08:42:52 GMT
+recorded_with: VCR 4.0.0

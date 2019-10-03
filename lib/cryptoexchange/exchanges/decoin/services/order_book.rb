@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Bitopro
+  module Decoin
     module Services
       class OrderBook < Cryptoexchange::Services::Market
         class << self
@@ -14,27 +14,26 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitopro::Market::API_URL}/order-book/#{market_pair.base}_#{market_pair.target}?limit=20"
+          "#{Cryptoexchange::Exchanges::Decoin::Market::API_URL}/market/get-orderbook/#{market_pair.base.upcase}-#{market_pair.target.upcase}"
         end
 
         def adapt(output, market_pair)
           order_book = Cryptoexchange::Models::OrderBook.new
-
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
-          order_book.market    = Bitopro::Market::NAME
-
-          order_book.asks      = adapt_orders(output['asks'])
-          order_book.bids      = adapt_orders(output['bids'])
-          order_book.timestamp = Time.now.to_i
+          order_book.market    = Decoin::Market::NAME
+          order_book.asks      = adapt_orders(output['SellOrders'])
+          order_book.bids      = adapt_orders(output['BuyOrders'])
+          order_book.timestamp = nil
           order_book.payload   = output
           order_book
         end
 
         def adapt_orders(orders)
           orders.collect do |order_entry|
-            Cryptoexchange::Models::Order.new(price: order_entry['price'],
-                                              amount: order_entry['amount'])
+            Cryptoexchange::Models::Order.new(price: order_entry['Rate'],
+                                              amount: order_entry['Quantity'],
+                                              timestamp: nil)
           end
         end
       end

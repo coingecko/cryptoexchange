@@ -49,6 +49,7 @@ Or install it yourself as:
 | Bcoin             | Y       |            |         |         | Y           | Y        | bcoin             |       |
 | Beaxy             | Y       | Y [x]      | Y       |         | Y           | Y        | beaxy             |       |
 | Bgogo             | Y       | Y [x]      | Y [limit: 20]     |         | Y           | Y        | bgogo             |       |
+| Bhex              | Y       | Y          | Y       |         | Y           | Y        | bhex              |       |
 | Bibox             | Y       | Y [x]      | Y [limit: 200]    |         | Y           | Y        | bibox             |       |
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
 | BigONE            | Y       | Y [x]      | Y       |         | Y           | Y        | bigone            |       |
@@ -104,6 +105,7 @@ Or install it yourself as:
 | BitOnBay          | Y       |            |         |         | Y           |          | bitonbay          |       |
 | Bitopro           | Y       | Y [x]      | Y       |         | User-Defined| Y        | bitopro           |       |
 | Bitpaction[halted]| Y       | Y          | Y       |         | Y           |          | bitpaction        |       |
+| Bitpanda          | Y       | Y          |         |         | Y           | Y        | bitpanda          |       |
 | Bitrabbit         | Y       | N          | N       |         | Y           | Y        | bitrabbit         |       |
 | Bitrue            | Y       | Y [x]      |         |         | Y           | Y        | bitrue            |       |
 | Bits Blockchain   | Y       | Y          |         |         | Y           |          | bits_blockchain   |       |
@@ -111,6 +113,7 @@ Or install it yourself as:
 | Bitsdaq           | Y       | Y [x]      | Y [limit: 50]|    | Y           | Y        | bisdaq            |       |
 | Bitshares Assets  | Y       |            |         |         | User-Defined|          | bitshares_assets  |       |
 | Bitso             | Y       | Y [x]      |         |         | Y           |          | bitso             |       |
+| Bitsoda           | Y       | Y          |         |         | Y           | Y        | bitsoda           |       |
 | Bitsonic          | Y       | Y [x]      | Y       |         | User-Defined| Y        | bitsonic          |       |
 | Bitstamp          | Y       | Y [x]      | Y       |         | User-Defined|          | bitstamp          |       |
 | Bitsten           | Y       | Y [x]      | N       |         | Y           | Y        | bitsten           |       |
@@ -143,7 +146,8 @@ Or install it yourself as:
 | BW                | Y       |            |         |         | Y           | Y        | bw                |       |
 | Bytex             | Y       | N          | N       |         | Y           | N        | bytex             |       |
 | Cashierest        | Y       | Y [x]      | N       |         | Y           | Y        | cashierest        |       |
-| Catex             | Y       | Y [x]      | N       |         | Y           |          | catex            |       |
+| Cashpayz          | Y       | Y          | Y       |         | Y           | Y        | cashpayz          |       |
+| Catex             | Y       | Y [x]      | N       |         | Y           |          | catex             |       |
 | C2CX              | Y       | Y [x]      | N       |         | Y           |          | c2cx              |       |
 | CPatex            | Y       | Y [x]      | Y       |         | Y           |          | c_patex           |       |
 | Cbx               | Y       | Y [x]      | Y       |         | Y           | Y        | cbx               |       |
@@ -227,6 +231,7 @@ Or install it yourself as:
 | Daybit            | Y       |            |         |         | Y           | Y        | daybit            |       |
 | Dcoin             | Y       | Y [x]      | Y       |         | Y           | Y        | dcoin             |       |
 | Ddex              | Y       | Y          | Y       |         | Y           | Y        | ddex              |       |
+| Decoin            | Y       | Y          | Y       |         | Y           | Y        | Decoin            |       |
 | DEEX              | Y       |            |         |         | Y           |          | deex              |       |
 | DEx.top           | Y       | Y [x]      | Y       |         | Y           |          | dextop            |       |
 | dex-trade         | Y       | Y          | Y       |         | Y           |          | dextrade          |       |
@@ -434,6 +439,7 @@ Or install it yourself as:
 | UEX               | Y       |            |         |         | Y           |          | uex               |       |
 | Unidax            | Y       | N          | N       |         | Y           | N        | unidax            |       |
 | Uniswap           | Y       | N          | N       |         | Y           | N        | uniswap           |       |
+| Unnamed           | Y       | Y          | Y       |         | Y           | Y        | unnamed           |       |
 | Unocoin           |         |            |         |         |             |          | unocoin           |       |
 | Upbit             | Y       | Y [x]      | Y       |         | Y           | Y        | upbit             |       |
 | Vaultmex          | Y       | Y          | Y       |         | Y           | Y        | vaultmex          |       |

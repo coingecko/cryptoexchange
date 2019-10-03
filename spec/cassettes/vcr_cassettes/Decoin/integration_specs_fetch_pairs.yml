@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://apiv1.decoin.io/market/get-ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - apiv1.decoin.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Oct 2019 06:38:09 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d58ebf4fe67f2a20bc9e3a23408057d7c1570084689; expires=Fri, 02-Oct-20
+        06:38:09 GMT; path=/; domain=.decoin.io; HttpOnly
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51fce95b6d38c104-KUL
+    body:
+      encoding: UTF-8
+      string: '[{"Name":"BTC/USDT","AskPrice":8296.77,"BidPrice":8286.0,"HighPrice":8395.75,"LowPrice":8171.74,"LastPrice":8279.0,"PrevDayPrice":8200.48000000,"Volume":442950.71823639,"TrendUp":false},{"Name":"ETH/BTC","AskPrice":0.021494,"BidPrice":0.021445,"HighPrice":0.021704,"LowPrice":0.021285,"LastPrice":0.021445,"PrevDayPrice":0.02129300,"Volume":23.652288599759,"TrendUp":false},{"Name":"DTEP/BTC","AskPrice":0.0000032,"BidPrice":0.00000298,"HighPrice":0.00000300,"LowPrice":0.00000300,"LastPrice":0.00000300,"PrevDayPrice":0.00000323,"Volume":0.0015000000,"TrendUp":false},{"Name":"ETH/USDT","AskPrice":178.42,"BidPrice":177.97,"HighPrice":180.21,"LowPrice":174.10,"LastPrice":177.63,"PrevDayPrice":174.75000000,"Volume":195311.52162717,"TrendUp":false},{"Name":"LTC/USDT","AskPrice":55.71,"BidPrice":55.62,"HighPrice":56.54,"LowPrice":55.23,"LastPrice":55.74,"PrevDayPrice":56.36000000,"Volume":11477.10906501,"TrendUp":true},{"Name":"LTC/BTC","AskPrice":0.006719,"BidPrice":0.006711,"HighPrice":0.006862,"LowPrice":0.006691,"LastPrice":0.006713,"PrevDayPrice":0.00683900,"Volume":18.624017352109,"TrendUp":false},{"Name":"DASH/BTC","AskPrice":0.008441,"BidPrice":0.008435,"HighPrice":0.008518,"LowPrice":0.008385,"LastPrice":0.008446,"PrevDayPrice":0.00846000,"Volume":1.814111138756,"TrendUp":false},{"Name":"ADA/BTC","AskPrice":0.00000472,"BidPrice":0.00000470,"HighPrice":0.00000480,"LowPrice":0.00000462,"LastPrice":0.00000470,"PrevDayPrice":0.00000462,"Volume":18.19589802,"TrendUp":false},{"Name":"XLM/BTC","AskPrice":0.00000714,"BidPrice":0.00000713,"HighPrice":0.00000725,"LowPrice":0.00000701,"LastPrice":0.00000713,"PrevDayPrice":0.00000702,"Volume":21.77595532,"TrendUp":true},{"Name":"FTR/BTC","AskPrice":0.00000290,"BidPrice":0.00000083,"HighPrice":0.00000083,"LowPrice":0.00000083,"LastPrice":0.00000083,"PrevDayPrice":0.00000250,"Volume":0.00004150,"TrendUp":false},{"Name":"TRX/BTC","AskPrice":0.00000174,"BidPrice":0.00000172,"HighPrice":0.00000181,"LowPrice":0.00000167,"LastPrice":0.00000174,"PrevDayPrice":0.00000168,"Volume":10.68678384,"TrendUp":true},{"Name":"BTT/USDT","AskPrice":0.0004310,"BidPrice":0.0004295,"HighPrice":0.0004406,"LowPrice":0.0004162,"LastPrice":0.0004302,"PrevDayPrice":0.00042170,"Volume":297216.3665678,"TrendUp":false},{"Name":"XRP/BTC","AskPrice":0.00002998,"BidPrice":0.00002991,"HighPrice":0.00003055,"LowPrice":0.00002968,"LastPrice":0.00002999,"PrevDayPrice":0.00003000,"Volume":14.00089877,"TrendUp":false}]'
+    http_version: 
+  recorded_at: Thu, 03 Oct 2019 06:38:09 GMT
+recorded_with: VCR 4.0.0

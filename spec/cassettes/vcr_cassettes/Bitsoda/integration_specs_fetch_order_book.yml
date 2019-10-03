@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitsoda.com/v1/market/snapshot/BTC_USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitsoda.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 02 Oct 2019 06:48:44 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - PUT, GET, POST, OPTIONS,DELETE
+      Access-Control-Allow-Headers:
+      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Accept-Language,Authorization
+      X-Permitted-Cross-Domain-Policies:
+      - master-only
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Referrer-Policy:
+      - unsafe-url
+      Expect-Ct:
+      - max-age=864000; enforce; report-uri='https://app.uriports.com/report/expect-ct'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":{"symbol":"BTC_USDT","sequenceId":1.02288553E8,"timestamp":1.56999892058E12,"price":8196.34,"buyOrders":[{"price":8130.06,"amount":0.092353},{"price":8064.5,"amount":2.28E-4},{"price":7998.93,"amount":1.48E-4},{"price":7933.37,"amount":0.047631},{"price":7867.8,"amount":0.022844},{"price":7802.24,"amount":0.001713},{"price":7736.67,"amount":1.43E-4},{"price":7671.11,"amount":0.071904},{"price":7605.54,"amount":0.132561},{"price":7539.98,"amount":2.28E-4},{"price":7474.41,"amount":0.011422},{"price":7408.85,"amount":0.005711},{"price":7343.28,"amount":0.022844},{"price":7277.72,"amount":0.071526},{"price":7212.15,"amount":0.071961},{"price":7146.59,"amount":0.006973},{"price":7081.02,"amount":0.009137},{"price":7015.46,"amount":0.125424},{"price":6949.89,"amount":0.006828},{"price":6884.33,"amount":0.497732}],"sellOrders":[{"price":8261.72,"amount":0.020919},{"price":8328.89,"amount":0.029037},{"price":8397.16,"amount":0.020906},{"price":8466.56,"amount":1.85E-4},{"price":8537.11,"amount":0.010558},{"price":8608.86,"amount":0.239965},{"price":8681.81,"amount":0.021174},{"price":8756.02,"amount":0.023229},{"price":8831.5,"amount":0.023229},{"price":8908.29,"amount":0.001161},{"price":8986.44,"amount":0.028301},{"price":9065.96,"amount":0.190774},{"price":9146.91,"amount":0.073174},{"price":9229.31,"amount":0.023229},{"price":9313.22,"amount":0.068621},{"price":9398.66,"amount":0.00964},{"price":9485.68,"amount":0.232299},{"price":9574.33,"amount":0.11284},{"price":9664.66,"amount":0.067506},{"price":9756.7,"amount":0.002555}]}}'
+    http_version: 
+  recorded_at: Wed, 02 Oct 2019 06:48:44 GMT
+recorded_with: VCR 4.0.0
