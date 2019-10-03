@@ -32,7 +32,7 @@ module Cryptoexchange::Exchanges
           contract_stat.next_funding_rate_timestamp     = contract_info['nextFundingTime']/1000
           contract_stat.funding_rate_percentage_predicted = nil
           contract_stat.contract_type = "perpetual"
-          contract_stat.payload   = { "contract_info" => contract_info }
+          contract_stat.payload   =  contract_info
           contract_stat
         end
       end

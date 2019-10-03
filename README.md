@@ -473,7 +473,7 @@ Or install it yourself as:
 | Bitforex Futures  | Y       |            | Y             |               | Y     | Y          | Y           |  Y             | bitforex_futures|
 | Bitmex            | Y       | Y          | Y             | Y             | Y     | Y          | Y           |  Y             | bitmex |
 | Bybit             | Y       | N          | Y             |               | Y     | Y          | Y           |  Y             | bybit |
-| CME Futures       | Y       | N (avail)  | N             | N             | N     | N          | Y           |  Y             | cme_futures|
+| CME Futures       | Y       | Y          | N             | N             | N     | N          | Y           |  Y             | cme_futures|
 | Coinflex Futures  | Y       | N          | N             | N             | N     | Y          | Y           |  Y             | coinflex_futures      |
 | Deribit           | Y       | Y          | Y             | Y             | Y     | Y          | Y           |  Y             | deribit |
 | FTX               | Y       | Y          | Y             | Y             | Y     | Y          | Y           |  Y             | ftx |
