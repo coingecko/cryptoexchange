@@ -1,3 +1,4 @@
+
 [![Build Status](https://travis-ci.org/coingecko/cryptoexchange.svg)](https://travis-ci.org/coingecko/cryptoexchange)
 
 # Cryptoexchange
@@ -467,22 +468,22 @@ Or install it yourself as:
 ### Derivatives (Perpetual & Futures)
 | Exchange          | Ticker  | Expiration | Open Interest | Funding       | Index | Order Book | Market List | Trade Page URL | slug  |
 | ----------------- | ------- | ---------- | ------------- | ------------- | ----- | ---------- | ----------- | ---------------|-------|
-| Binance Futures   | Y       | N          | Y             | N (available) | Y     | Y          | Y           |  Y             | binance_futures|
+| Binance Futures   | Y       | N          | Y             | Y             | Y     | Y          | Y           |  Y             | binance_futures|
 | Bitflyer Futures  | Y       | N (avail)  | N             | N             | Y     | Y          | Y           |                | bitflyer_futures|
 | Bitforex Futures  | Y       |            | Y             |               | Y     | Y          | Y           |  Y             | bitforex_futures|
 | Bitmex            | Y       | Y          | Y             | Y             | Y     | Y          | Y           |  Y             | bitmex |
 | Bybit             | Y       | N          | Y             |               | Y     | Y          | Y           |  Y             | bybit |
 | CME Futures       | Y       | N (avail)  | N             | N             | N     | N          | Y           |  Y             | cme_futures|
 | Coinflex Futures  | Y       | N          | N             | N             | N     | Y          | Y           |  Y             | coinflex_futures      |
-| Deribit           | Y       | N (avail)  | Y             | N (available) | Y     | Y          | Y           |  Y             | deribit |
+| Deribit           | Y       | Y          | Y             | Y             | Y     | Y          | Y           |  Y             | deribit |
 | FTX               | Y       | Y          | Y             | Y             | Y     | Y          | Y           |  Y             | ftx |
-| Gate (Futures)    | Y       | N          | Y             | N (available) | Y     | Y          | Y           |  Y             | gate_futures |
+| Gate (Futures)    | Y       | N          | Y             | Y             | Y     | Y          | Y           |  Y             | gate_futures |
 | GMO (Futures)     | Y       | N          | N             | N             | N     | Y          | Y           |  Y             | gmo_japan_futures|
 | Huobi DM          | Y       |            | Y             |               | Y     | Y          | Y           |                |huobi_dm|
 | JexFutures        | Y       | N          | N             | N             | N     | Y          | Y           |                |jex_futures|
 | Kraken Futures    | Y       | Y          | Y             | Y             | N     | Y          | Y           |  Y             |kraken_futures|
 | Kumex             | Y       | N          | N             | N             | N     | Y          | Y           |  Y             |kumex  |
-| OKEx Swaps        | Y       |            | Y             |               | Y     | Y          | Y           |                |okex_swap |
+| OKEx Swaps        | Y       | Y          | Y             |               | Y     | Y          | Y           |                |okex_swap |
 | BTSE (Futures)    | Y       | N          | N             | N             | N     | Y          | Y           |  Y             | btse_futures |
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
