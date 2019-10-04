@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.primexbt.com/v1/markets?category=crypto
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.primexbt.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 04 Oct 2019 05:06:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2170'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d2927f398dd72bd9bb5b4f243a3fcb0b01570165617; expires=Sat, 03-Oct-20
+        05:06:57 GMT; path=/; domain=.primexbt.com; HttpOnly; Secure
+      X-Request-Id:
+      - 84cbd671-5c1c-4259-bcb9-6881f85ebfd3
+      Cache-Control:
+      - public, s-maxage=60
+      X-Response-Time:
+      - 0ms
+      Access-Control-Allow-Headers:
+      - Accept-Charset, Authorization, Origin, Accept, User-Agent, Accept-Encoding,
+        Accept-Language, Content-Length, Accept-Datetime, Content-Type, x-client-time,
+        X-Client-Version, x-guard
+      Access-Control-Expose-Headers:
+      - x-request-id
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Max-Age:
+      - '86400'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Xss-Protection:
+      - '1'
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - origin
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5204a1241db2dda7-SIN
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"name":"BTC/USD","base":"BTC","quote":"USD","last":8081.6,"change":-2.03,"price_scale":1,"description":"Bitcoin","qty_scale":2,"open":8249.3,"turnover":25348.26,"turnover_usd":2.04451460682E8,"price":8081.6,"change24h":-2.03,"priceScale":1},{"name":"LTC/USD","base":"LTC","quote":"USD","last":55.79,"change":-1.6,"price_scale":2,"description":"Litecoin","qty_scale":2,"open":56.7,"turnover":15054.375,"turnover_usd":838528.6875,"price":55.79,"change24h":-1.6,"priceScale":2},{"name":"ETH/USD","base":"ETH","quote":"USD","last":172.6,"change":-1.57,"price_scale":2,"description":"Ethereum","qty_scale":2,"open":175.36,"turnover":63066.955,"turnover_usd":1.084436291225E7,"price":172.6,"change24h":-1.57,"priceScale":2},{"name":"XRP/USD","base":"XRP","quote":"USD","last":0.24699,"change":-0.3,"price_scale":5,"description":"Ripple","qty_scale":2,"open":0.24775,"turnover":4253408.495,"turnover_usd":1046763.8306195,"price":0.24699,"change24h":-0.3,"priceScale":5},{"name":"LTC/BTC","base":"LTC","quote":"BTC","last":0.006858,"change":0.45,"price_scale":6,"description":"Litecoin","qty_scale":2,"open":0.006827,"turnover":5610.78,"turnover_usd":312520.446,"price":0.006858,"change24h":0.45,"priceScale":6},{"name":"ETH/BTC","base":"ETH","quote":"BTC","last":0.021315,"change":0.47,"price_scale":6,"description":"Ethereum","qty_scale":2,"open":0.021215,"turnover":2062.27,"turnover_usd":354607.3265,"price":0.021315,"change24h":0.47,"priceScale":6},{"name":"XRP/BTC","base":"XRP","quote":"BTC","last":3.002E-5,"change":1.72,"price_scale":8,"description":"Ripple","qty_scale":2,"open":2.951E-5,"turnover":679533.4,"turnover_usd":167233.16974,"price":3.002E-5,"change24h":1.72,"priceScale":8},{"name":"EOS/BTC","base":"EOS","quote":"BTC","last":3.584E-4,"change":0.87,"price_scale":8,"description":"EOS","qty_scale":2,"open":3.553E-4,"turnover":24383.8,"turnover_usd":70542.3334,"price":3.584E-4,"change24h":0.87,"priceScale":8},{"name":"EOS/USD","base":"EOS","quote":"USD","last":2.904,"change":-1.15,"price_scale":3,"description":"EOS","qty_scale":2,"open":2.938,"turnover":141700.685,"turnover_usd":409940.081705,"price":2.904,"change24h":-1.15,"priceScale":3}]}'
+    http_version: 
+  recorded_at: Fri, 04 Oct 2019 05:06:58 GMT
+recorded_with: VCR 4.0.0
