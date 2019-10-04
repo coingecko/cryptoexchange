@@ -27,7 +27,15 @@ module Cryptoexchange::Exchanges
           ticker.last = NumericHelper.to_d(output['close'])
           ticker.high = NumericHelper.to_d(output['high'])
           ticker.low = NumericHelper.to_d(output['low'])
-          ticker.volume = NumericHelper.divide(NumericHelper.to_d(output['volume']), ticker.last)
+
+          #special handling of volume for this exchange
+          volume = if market_pair.target == "USD"
+                    NumericHelper.divide(NumericHelper.to_d(output['volume']), ticker.last)
+                  else
+                    NumericHelper.to_d(output['volume'])
+                  end
+
+          ticker.volume = volume
           ticker.timestamp = nil
           ticker.payload = output
           ticker
