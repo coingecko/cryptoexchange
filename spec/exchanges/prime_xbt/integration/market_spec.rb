@@ -25,6 +25,7 @@ RSpec.describe 'Prime XBT integration specs' do
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USD'
     expect(ticker.market).to eq 'prime_xbt'
+    expect(ticker.inst_id).to eq 'BTC/USD'
     expect(ticker.last).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil

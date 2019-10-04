@@ -34,6 +34,7 @@ module Cryptoexchange::Exchanges
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
+          ticker.inst_id    = market_pair.inst_id
           ticker.market    = PrimeXbt::Market::NAME
           ticker.last      = NumericHelper.to_d(output['last'])
           ticker.volume    = NumericHelper.to_d(output['turnover'])
