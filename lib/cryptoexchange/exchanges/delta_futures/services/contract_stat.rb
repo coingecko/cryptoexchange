@@ -31,7 +31,7 @@ module Cryptoexchange::Exchanges
           contract_stat.base      = market_pair.base
           contract_stat.target    = market_pair.target
           contract_stat.market    = DeltaFutures::Market::NAME
-          # contract_stat.funding_rate_percentage = output['funding_rate'].to_f
+          contract_stat.funding_rate_percentage = output['funding_rate'].to_f
           contract_stat.index     = output['mark_price'].to_f
           contract_stat.payload   = output
           contract_stat
