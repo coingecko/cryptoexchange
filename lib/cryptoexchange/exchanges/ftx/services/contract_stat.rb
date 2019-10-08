@@ -39,9 +39,9 @@ module Cryptoexchange::Exchanges
           contract_stat.start_timestamp = start_timestamp
           contract_stat.contract_type = contract_type(start_timestamp, expire_timestamp)
 
-          contract_stat.funding_rate_percentage = open_interest['result']['nextFundingRate'] ? open_interest['result']['nextFundingRate'] * 100 : nil
+          contract_stat.funding_rate_percentage = nil
           contract_stat.next_funding_rate_timestamp = open_interest['result']['nextFundingTime'] ? DateTime.parse(open_interest['result']['nextFundingTime']).to_time.to_i : nil
-          contract_stat.funding_rate_percentage_predicted = nil
+          contract_stat.funding_rate_percentage_predicted = open_interest['result']['nextFundingRate'] ? open_interest['result']['nextFundingRate'] * 100 : nil
 
           contract_stat
         end

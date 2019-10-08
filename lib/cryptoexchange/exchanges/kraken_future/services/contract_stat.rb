@@ -32,8 +32,8 @@ module Cryptoexchange::Exchanges
           arr = {}
           if market_pair.contract_interval == "perpetual"
             contract = contract_info['tickers'].find { |i| i['symbol'] == market_pair.inst_id.downcase }
-            arr["funding_rate_percentage"] = contract["fundingRate"].to_f * 100
-            arr["funding_rate_percentage_predicted"] = contract["fundingRatePrediction"].to_f * 100
+            arr["funding_rate_percentage"] = contract["fundingRate"].to_f * 1000000
+            arr["funding_rate_percentage_predicted"] = contract["fundingRatePrediction"].to_f * 1000000
             arr["next_funding_timestamp"] = nil
           else
             contract = contract_info['instruments'].find { |i| i["symbol"] == market_pair.inst_id.downcase }

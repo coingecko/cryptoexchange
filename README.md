@@ -483,7 +483,7 @@ Or install it yourself as:
 | Coinflex Futures  | Y | Y  | Y    |  Y  |  N      |     |  N  | N  | N  |    |     |     |  coinflex_futures  |
 | Deribit           | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | Y  | Y  | Y  | Y   | Y   |  deribit |
 | Delta Futures     | Y | Y  | Y    |  Y  |  N      | Y   |  Y  | N  | N  | Y  | N   | N   |  delta_futures |
-| FTX               | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | N  | Y  | Y  | Y   | N   |  ftx |
+| FTX               | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | N  | Y  | N  | Y   | Y   |  ftx |
 | Gate (Futures)    | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | N  | N  | Y  | Y   | Y   |  gate_futures  |
 | GMO (Futures)     | Y | Y  | Y    |  Y  |  N      |     |  N  | N  | N  |    |     |     |  gmo_futures |
 | Huobi DM          | Y | Y  | Y    |     |  Y      | Y   |  Y  | Y  | Y  | N  | N   | N   |  huobi_dm  |
