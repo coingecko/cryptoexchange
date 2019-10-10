@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://apiv2.bitz.com/Market/getContractTickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - apiv2.bitz.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 10 Oct 2019 09:08:02 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d68fec0003ed24c292943613a8b2a56931570698482; expires=Fri, 09-Oct-20
+        09:08:02 GMT; path=/; domain=.bitz.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5237728ca9d9c0f5-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"msg":"","data":[{"contractId":"1","pair":"BTC_USD","min":"8541.1","max":"8685.6","latest":"8562.4","change24h":"0.0461","amount":"10812165.00","volumn":"1267.12","baseAmount":"1267.12
+        BTC","quoteVolumn":"10812165 USDT","openInterest":"1824412.00","indexPrice":"8557.7","fairPrice":"8558.4","nextFundingRate":"0.00010000"},{"contractId":"101","pair":"BTC_USDT","min":"8500.0","max":"8680.0","latest":"8539.5","change24h":"0.0414","amount":"12584966.00","volumn":"107029157.41","baseAmount":"12584.966
+        BTC","quoteVolumn":"107029157.41 USDT","openInterest":"1997700.00","indexPrice":"8541.9","fairPrice":"8542.6","nextFundingRate":"0.00010000"},{"contractId":"102","pair":"ETH_USDT","min":"189.5","max":"195.0","latest":"189.8","change24h":"0.0423","amount":"3182358.00","volumn":"6042947.69","baseAmount":"31823.58
+        ETH","quoteVolumn":"6042947.69 USDT","openInterest":"498509.00","indexPrice":"189.8","fairPrice":"189.6","nextFundingRate":"-0.00055976"},{"contractId":"105","pair":"LTC_USDT","min":"58.20","max":"60.40","latest":"58.34","change24h":"0.0101","amount":"2429804.00","volumn":"1429261.29","baseAmount":"24298.04
+        LTC","quoteVolumn":"1429261.29 USDT","openInterest":"466095.00","indexPrice":"58.35","fairPrice":"58.36","nextFundingRate":"0.00010000"},{"contractId":"107","pair":"EOS_USDT","min":"3.134","max":"3.319","latest":"3.143","change24h":"-0.0166","amount":"5490506.00","volumn":"1763829.09","baseAmount":"549050.6
+        EOS","quoteVolumn":"1763829.09 USDT","openInterest":"1112344.00","indexPrice":"3.139","fairPrice":"3.139","nextFundingRate":"0.00010000"},{"contractId":"210","pair":"DOGE_USDT","min":"0.002329","max":"0.002364","latest":"0.002333","change24h":"0.0071","amount":"248481.00","volumn":"581754.01","baseAmount":"248481000
+        DOGE","quoteVolumn":"581754.01 BZ","openInterest":"56243.00","indexPrice":"0.002328","fairPrice":"0.002328","nextFundingRate":"0.00010000"}],"time":1570698482,"microtime":"0.77448200
+        1570698482","source":"api"}'
+    http_version: 
+  recorded_at: Thu, 10 Oct 2019 09:08:02 GMT
+recorded_with: VCR 4.0.0
