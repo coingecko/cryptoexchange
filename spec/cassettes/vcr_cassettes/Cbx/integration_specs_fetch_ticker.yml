@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.cbx.one/api/v2/tickers
+    uri: https://www.cbx.one/api/v3/asset_pairs/XIN-BTC/ticker
     body:
       encoding: UTF-8
       string: ''
@@ -12,31 +12,35 @@ http_interactions:
       Host:
       - www.cbx.one
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Wed, 13 Feb 2019 07:10:46 GMT
+      - Thu, 10 Oct 2019 03:51:22 GMT
       Content-Type:
-      - application/json; charset=utf-8
+      - application/json; charset=UTF-8
       Content-Length:
-      - '11985'
+      - '297'
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d59921e6c5e9f21085bbbd828186c24d61550041846; expires=Thu, 13-Feb-20
-        07:10:46 GMT; path=/; domain=.www.cbx.one; HttpOnly; Secure
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 2m1dlm5o5e1clk65ok359ecr
+      - __cfduid=d19b1543224ccf4457b622c9fec8f40641570679482; expires=Fri, 09-Oct-20
+        03:51:22 GMT; path=/; domain=.www.cbx.one; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
       Via:
       - 1.1 google
       Alt-Svc:
       - clear
+      Accept-Ranges:
+      - bytes
+      Cf-Cache-Status:
+      - DYNAMIC
       Strict-Transport-Security:
       - max-age=2592000; includeSubDomains
       X-Content-Type-Options:
@@ -46,10 +50,12 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 4a857a21bf93c10b-KUL
+      - 5235a2aadf60c10e-KUL
     body:
       encoding: UTF-8
-      string: '{"data":[{"volume":"56.8034","open":"0.03197801","market_uuid":"0aa6d0ac-6ff1-45fb-8911-7e6c4070b582","market_id":"XIN-BTC","low":"0.02941873","high":"0.03298749","daily_change_perc":"3.120237938508368719629520411","daily_change":"0.00099779","close":"0.0329758","bid":{"price":"0.03168501","amount":"0.6501"},"ask":{"price":"0.0329758","amount":"8.8016"}},{"volume":"5.235","open":"0.00227889","market_uuid":"0b249078-8ad1-4f6d-a6ba-e9fb1966744c","market_id":"NEO-BTC","low":"0.00227889","high":"0.00233501","daily_change_perc":"2.462602407312331880871827951","daily_change":"0.00005612","close":"0.00233501","bid":{"price":"0.00220612","amount":"2"},"ask":{"price":"0.00231109","amount":"2"}},{"volume":"514128","open":"0.5322","market_uuid":"10ad1827-6380-47d2-b82b-eb6667e29dc1","market_id":"SLOT-USDT","low":"0.5023","high":"0.5424","daily_change_perc":"-2.555430289364900413378429162","daily_change":"-0.0136","close":"0.5186","bid":{"price":"0.5097","amount":"843"},"ask":{"price":"0.5163","amount":"32"}},{"volume":"10329.315","open":"0.00051476","market_uuid":"15bf3c65-2a87-4c1f-8ca0-46c0f9752346","market_id":"QTUM-BTC","low":"1.2E-7","high":"0.00054604","daily_change_perc":"4.514725308881808998368171575","daily_change":"0.00002324","close":"0.000538","bid":{"price":"0.00051269","amount":"20"},"ask":{"price":"0.00056303","amount":"20"}},{"volume":"0","open":"0","market_uuid":"1703da60-1ccb-49bc-93e6-db1fb340ffaf","market_id":"LTC-ETH","low":"0","high":"0","daily_change_perc":"0","daily_change":"0.25313","close":"0.25313","bid":{"price":"0.34979","amount":"1.111"},"ask":{"price":"0.35582","amount":"1.135"}},{"volume":"0","open":"0","market_uuid":"24c2c03f-a169-45f5-ada6-1517f3d39dbf","market_id":"XRP-ETH","low":"0","high":"0","daily_change_perc":"0","daily_change":"0.0025","close":"0.0025","bid":{"price":"0.002459","amount":"10"},"ask":{"price":"0.002499","amount":"12"}},{"volume":"4352.651","open":"8.1573","market_uuid":"287d7dae-7649-488b-ac8a-9954231f9dcf","market_id":"NEO-USDT","low":"8.0515","high":"8.5377","daily_change_perc":"-0.8348350557169651722996579751","daily_change":"-0.0681","close":"8.0892","bid":{"price":"8.3","amount":"1.435"},"ask":{"price":"8.449","amount":"9.036"}},{"volume":"59.7232","open":"0.017915","market_uuid":"2cad049f-d9bd-4047-86c8-4e499c62d225","market_id":"BCHSV-BTC","low":"0.017869","high":"0.01846501","daily_change_perc":"0.5861010326542003907340217695","daily_change":"0.000105","close":"0.01802","bid":{"price":"0.018009","amount":"20"},"ask":{"price":"0.018061","amount":"1.857"}},{"volume":"527.7374","open":"120.774","market_uuid":"2dab8bcf-cfdd-496b-8181-d670568d1daa","market_id":"ETH-USDT","low":"119.816","high":"126.21","daily_change_perc":"2.659512809048305098779538642","daily_change":"3.212","close":"123.986","bid":{"price":"123.972","amount":"4.613"},"ask":{"price":"124.08","amount":"0.2"}},{"volume":"0","open":"0","market_uuid":"325fc1dd-c3ff-47c2-9ea0-0546566d267a","market_id":"ZEC-EOS","low":"0","high":"0","daily_change_perc":"0","daily_change":"23.1482","close":"23.1482","bid":{"price":"22.692","amount":"0.1341"},"ask":{"price":"23.3803","amount":"0.1425"}},{"volume":"8037472","open":"1.9E-7","market_uuid":"32f5c4a4-243e-400c-8678-2aa17ef4b198","market_id":"MAG-BTC","low":"1.8E-7","high":"2E-7","daily_change_perc":"-5.263157894736842105263157895","daily_change":"-1E-8","close":"1.8E-7","bid":{"price":"1.7E-7","amount":"201916"},"ask":{"price":"1.9E-7","amount":"889806"}},{"volume":"87.9799","open":"0.033306","market_uuid":"38dd30bf-76c2-4777-ae2a-a3222433eef3","market_id":"ETH-BTC","low":"0.033196","high":"0.03434","daily_change_perc":"3.104545727496547168678316219","daily_change":"0.001034","close":"0.03434","bid":{"price":"0.034102","amount":"1.156"},"ask":{"price":"0.034147","amount":"0.292"}},{"volume":"8381.492","open":"0.022915","market_uuid":"3a7bb27c-7a4e-4aa0-95ab-87b3abae15c4","market_id":"EOS-ETH","low":"0.022893","high":"0.024454","daily_change_perc":"3.875190922976216452105607681","daily_change":"0.000888","close":"0.023803","bid":{"price":"0.023824","amount":"59.92"},"ask":{"price":"0.023871","amount":"59.47"}},{"volume":"0","open":"0","market_uuid":"46fe4bd9-32b0-4e94-ba8b-1d2afa14be63","market_id":"LTC-EOS","low":"0","high":"0","daily_change_perc":"0","daily_change":"12.2002","close":"12.2002","bid":{"price":"12.0659","amount":"0.679"},"ask":{"price":"12.3296","amount":"0.798"}},{"volume":"0","open":"0","market_uuid":"49559770-b375-45f6-9fc5-96ba9804b693","market_id":"ETC-BTC","low":"0","high":"0","daily_change_perc":"0","daily_change":"0.00113432","close":"0.00113432","bid":{"price":"0.00108121","amount":"20"},"ask":{"price":"0.00118065","amount":"20"}},{"volume":"135.307497","open":"3627.08","market_uuid":"550b34db-696e-4434-a126-196f827d9172","market_id":"BTC-USDT","low":"3593.37","high":"3667.87","daily_change_perc":"0.2302127331076237634681341465","daily_change":"8.35","close":"3635.43","bid":{"price":"3635.34","amount":"0.2828"},"ask":{"price":"3639.72","amount":"0.01"}},{"volume":"0","open":"0","market_uuid":"56c0c606-b540-49a5-9ee3-b24a67e6a759","market_id":"ZEC-ETH","low":"0","high":"0","daily_change_perc":"0","daily_change":"0.60969","close":"0.60969","bid":{"price":"0.43337","amount":"0.078"},"ask":{"price":"0.44","amount":"0.005"}},{"volume":"0","open":"0","market_uuid":"677b209a-daa7-463e-8d82-788541711a80","market_id":"NEO-EOS","low":"0","high":"0","daily_change_perc":"0","daily_change":"2.8542","close":"2.8542","bid":{"price":"2.824","amount":"13.849"},"ask":{"price":"2.8542","amount":"2"}},{"volume":"0","open":"0","market_uuid":"6af98d29-5c2a-4dbd-ba91-71484503a323","market_id":"XLM-USDT","low":"0","high":"0","daily_change_perc":"0","daily_change":"0.0818","close":"0.0818","bid":{"price":"0.07666","amount":"146.3"},"ask":{"price":"0.07842","amount":"143.4"}},{"volume":"0","open":"0","market_uuid":"6b57f91a-53f3-401a-ab23-dc4c0fe7f3fc","market_id":"ETC-ETH","low":"0","high":"0","daily_change_perc":"0","daily_change":"0.044107","close":"0.044107","bid":{"price":"0.03286","amount":"5.63"},"ask":{"price":"0.033328","amount":"8.38"}},{"volume":"56.422","open":"120.81","market_uuid":"705eb212-0ebb-48ae-a113-a0f58fe3172a","market_id":"BCHABC-USDT","low":"120.79","high":"126.329","daily_change_perc":"3.137157520072841652181110835","daily_change":"3.79","close":"124.6","bid":{"price":"124.22","amount":"0.694"},"ask":{"price":"124.52","amount":"0.176"}},{"volume":"48.131","open":"64.78","market_uuid":"70f022e2-8102-4b6f-b6fd-9f75a337646d","market_id":"BCHSV-USDT","low":"64.14","high":"66.58","daily_change_perc":"1.435628280333436245754862612","daily_change":"0.93","close":"65.71","bid":{"price":"65.52","amount":"0.763"},"ask":{"price":"65.73","amount":"1.617"}},{"volume":"0","open":"0","market_uuid":"74cb0fed-b465-4ace-9e9d-601ed9496c77","market_id":"QTUM-EOS","low":"0","high":"0","daily_change_perc":"0","daily_change":"0.8852","close":"0.8852","bid":{"price":"0.8723","amount":"6.055"},"ask":{"price":"0.907","amount":"5.985"}},{"volume":"1","open":"0.01434839","market_uuid":"76ea7553-a8c7-42bc-86e6-6d1583b5595e","market_id":"ZEC-BTC","low":"0.01434839","high":"0.01434839","daily_change_perc":"0","daily_change":"0E-8","close":"0.01434839","bid":{"price":"0.01414075","amount":"10"},"ask":{"price":"0.01499118","amount":"1.1453"}},{"volume":"3251.61329","open":"43.8758","market_uuid":"807cd971-89bb-49fd-9d89-00d22ede6d01","market_id":"LTC-USDT","low":"42.0206","high":"45.1037","daily_change_perc":"-0.1638716559014308571011810611","daily_change":"-0.0719","close":"43.8039","bid":{"price":"43.6","amount":"2.11544"},"ask":{"price":"44.15","amount":"0.40898"}},{"volume":"11.8185","open":"0.033482","market_uuid":"8e155f30-9454-4a48-9194-50e1240f8876","market_id":"BCHABC-BTC","low":"0.033482","high":"0.034733","daily_change_perc":"3.165880174422077534197479243","daily_change":"0.001060","close":"0.034542","bid":{"price":"0.0340828","amount":"2"},"ask":{"price":"0.03592207","amount":"2"}},{"volume":"0","open":"0","market_uuid":"90ced55e-543a-42aa-b64b-ddbdd6abcd37","market_id":"XLM-BTC","low":"0","high":"0","daily_change_perc":"0","daily_change":"0.00002415","close":"0.00002415","bid":null,"ask":{"price":"0.00002147","amount":"55"}},{"volume":"27801.678","open":"1.907","market_uuid":"a3edb60b-97dc-49b8-8b1e-a93341f49987","market_id":"QTUM-USDT","low":"1.8445","high":"1.9895","daily_change_perc":"1.552176192973256423702149974","daily_change":"0.0296","close":"1.9366","bid":{"price":"1.932","amount":"5.705"},"ask":{"price":"1.972","amount":"8.145"}},{"volume":"942.875","open":"112.5875","market_uuid":"aa459dd2-b5c6-4ac8-8217-956b90339a41","market_id":"XIN-USDT","low":"108.0001","high":"120","daily_change_perc":"2.813100921505495725546796936","daily_change":"3.1672","close":"115.7547","bid":{"price":"114.3571","amount":"0.529"},"ask":{"price":"120","amount":"5.745"}},{"volume":"0","open":"0","market_uuid":"b07046a5-6afe-4232-9276-aed7306c024c","market_id":"ETC-EOS","low":"0","high":"0","daily_change_perc":"0","daily_change":"1.8025","close":"1.8025","bid":{"price":"1.7765","amount":"10.91"},"ask":{"price":"1.8263","amount":"6.79"}},{"volume":"23592.935","open":"0.0007628","market_uuid":"c4eaff30-3918-48c8-9fa1-92b62743090c","market_id":"EOS-BTC","low":"0.0007628","high":"0.0008201","daily_change_perc":"6.729155742003146303093864709","daily_change":"0.00005133","close":"0.00081413","bid":{"price":"0.0008128","amount":"16.19"},"ask":{"price":"0.0008136","amount":"257.68"}},{"volume":"0.428","open":"0.01260943","market_uuid":"c53e47b6-a339-4b0f-812a-d61a23482c51","market_id":"LTC-BTC","low":"0.01260943","high":"0.01263517","daily_change_perc":"0.2041329386023000246640807713","daily_change":"0.00002574","close":"0.01263517","bid":{"price":"0.01150038","amount":"2"},"ask":{"price":"0.01266663","amount":"2"}},{"volume":"0","open":"0","market_uuid":"c56c566e-06a3-435a-b431-6382f9e483a9","market_id":"QTUM-ETH","low":"0","high":"0","daily_change_perc":"0","daily_change":"0.019291","close":"0.019291","bid":{"price":"0.015618","amount":"18.2"},"ask":{"price":"0.015904","amount":"93.97"}},{"volume":"18037.6808","open":"0.3006","market_uuid":"c7d850aa-7ddf-4d30-ac38-36065f1c15ec","market_id":"XRP-USDT","low":"0.2989","high":"0.3127","daily_change_perc":"2.328675981370592149035262808","daily_change":"0.0070","close":"0.3076","bid":{"price":"0.3074","amount":"3000"},"ask":{"price":"0.3088","amount":"1031.2579"}},{"volume":"8146.23642735","open":"0.00008304","market_uuid":"df775815-e44b-4956-bf31-4ced8b67c62a","market_id":"XRP-BTC","low":"0.00008304","high":"0.00008595","daily_change_perc":"1.710019267822736030828516378","daily_change":"0.00000142","close":"0.00008446","bid":{"price":"0.00008453","amount":"499"},"ask":{"price":"0.00008466","amount":"91"}},{"volume":"0","open":"0","market_uuid":"ef9da943-b2b2-4fd1-acaf-a9c784435922","market_id":"NEO-ETH","low":"0","high":"0","daily_change_perc":"0","daily_change":"0.078834","close":"0.078834","bid":{"price":"0.066714","amount":"15.42"},"ask":{"price":"0.067974","amount":"3.24"}},{"volume":"8338.8493","open":"4.097","market_uuid":"f2799929-30a7-44ac-8ea9-e846bec33f3e","market_id":"ETC-USDT","low":"3.9605","high":"4.2425","daily_change_perc":"0.9567976568220649255552843544","daily_change":"0.0392","close":"4.1362","bid":{"price":"4.07","amount":"7.37"},"ask":{"price":"4.151","amount":"18.4"}},{"volume":"0","open":"0","market_uuid":"fe0c9ac4-30a6-4706-9629-f27b9a16b3b1","market_id":"XRP-EOS","low":"0","high":"0","daily_change_perc":"0","daily_change":"0.1395","close":"0.1395","bid":{"price":"0.138","amount":"157.4062"},"ask":{"price":"0.1409","amount":"170.2233"}},{"volume":"69135.464","open":"2.7769","market_uuid":"feefa85f-99d4-4eda-97c7-8de4c0c45931","market_id":"EOS-USDT","low":"2.7446","high":"3.0026","daily_change_perc":"6.410025568079513126147862725","daily_change":"0.1780","close":"2.9549","bid":{"price":"2.9562","amount":"145"},"ask":{"price":"2.9601","amount":"57.08"}}]}'
+      string: '{"code":0,"data":{"asset_pair_name":"XIN-BTC","bid":{"price":"0.023116","order_count":1,"quantity":"0.03634"},"ask":{"price":"0.023274","order_count":1,"quantity":"0.83749"},"open":"0.022964","high":"0.023239","low":"0.022257","close":"0.023202","volume":"18871.36682","daily_change":"0.000238"}}
+
+'
     http_version: 
-  recorded_at: Wed, 13 Feb 2019 07:10:46 GMT
+  recorded_at: Thu, 10 Oct 2019 03:51:22 GMT
 recorded_with: VCR 4.0.0
