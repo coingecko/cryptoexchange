@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://apiv2.bitz.com/Market/getContractOrderBook?contractId=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - apiv2.bitz.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 10 Oct 2019 09:08:03 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d71f3e050581c0be9f017890ca993154b1570698483; expires=Fri, 09-Oct-20
+        09:08:03 GMT; path=/; domain=.bitz.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Accept-Ranges:
+      - bytes
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5237728f3b08dd4e-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"msg":"","data":{"bids":[{"price":"8561.6","amount":"9800"},{"price":"8560.9","amount":"9900"},{"price":"8560.8","amount":"9400"},{"price":"8560.1","amount":"10300"},{"price":"8559.6","amount":"9300"},{"price":"8558.8","amount":"9100"},{"price":"8558.2","amount":"9900"},{"price":"8557.4","amount":"10800"},{"price":"8556.9","amount":"9400"},{"price":"8556.6","amount":"10300"}],"asks":[{"price":"8567.6","amount":"9600"},{"price":"8568.3","amount":"9500"},{"price":"8568.7","amount":"9700"},{"price":"8569.6","amount":"10700"},{"price":"8569.7","amount":"10000"},{"price":"8570.4","amount":"9200"},{"price":"8570.6","amount":"9600"},{"price":"8571.4","amount":"9600"},{"price":"8572.3","amount":"9000"},{"price":"8573.4","amount":"9700"}]},"time":1570698483,"microtime":"0.21067300
+        1570698483","source":"api"}'
+    http_version: 
+  recorded_at: Thu, 10 Oct 2019 09:08:03 GMT
+recorded_with: VCR 4.0.0

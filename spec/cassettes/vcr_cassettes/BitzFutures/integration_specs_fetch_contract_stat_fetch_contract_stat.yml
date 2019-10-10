@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://apiv2.bitz.com/Market/getContractTickers?contractId=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - apiv2.bitz.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 10 Oct 2019 09:08:03 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8e6bff8e390c4cfca1a112c1af4248671570698483; expires=Fri, 09-Oct-20
+        09:08:03 GMT; path=/; domain=.bitz.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Accept-Ranges:
+      - bytes
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 523772920907dd52-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"msg":"","data":[{"contractId":"1","pair":"BTC_USD","min":"8541.1","max":"8685.6","latest":"8562.4","change24h":"0.0461","amount":"10812165.00","volumn":"1267.12","baseAmount":"1267.12
+        BTC","quoteVolumn":"10812165 USDT","openInterest":"1824412.00","indexPrice":"8557.7","fairPrice":"8558.4","nextFundingRate":"0.00010000"}],"time":1570698483,"microtime":"0.59875500
+        1570698483","source":"api"}'
+    http_version: 
+  recorded_at: Thu, 10 Oct 2019 09:08:03 GMT
+recorded_with: VCR 4.0.0
