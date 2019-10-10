@@ -8,20 +8,20 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bigone::Market::API_URL}/markets/#{market_pair.base}-#{market_pair.target}/trades"
+          "#{Cryptoexchange::Exchanges::Bigone::Market::API_URL}/asset_pairs/#{market_pair.base.upcase}-#{market_pair.target.upcase}/trades"
         end
 
         def adapt(output, market_pair)
-          output['data']['edges'].collect do |trade|
+          output['data'].collect do |trade|
             tr = Cryptoexchange::Models::Trade.new
-            tr.trade_id  = HashHelper.dig(trade, 'node', 'id')
+            tr.trade_id  = trade['id']
             tr.base      = market_pair.base
             tr.target    = market_pair.target
             tr.market    = Bigone::Market::NAME
-            tr.type      = HashHelper.dig(trade, 'node', 'taker_side') == "ASK" ? "sell" : "buy"
-            tr.price     = HashHelper.dig(trade, 'node', 'price')
-            tr.amount    = HashHelper.dig(trade, 'node', 'amount')
-            tr.timestamp = Time.parse(HashHelper.dig(trade, 'node', 'inserted_at')).to_i
+            tr.type      = trade['taker_side'] == "ASK" ? "sell" : "buy"
+            tr.price     = trade['price']
+            tr.amount    = trade['amount']
+            tr.timestamp = Time.parse(trade['inserted_at']).to_i
             tr.payload   = trade
             tr
           end
