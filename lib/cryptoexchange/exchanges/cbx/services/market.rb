@@ -4,29 +4,17 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            false
+            true
           end
         end
 
-        def fetch
-          output = super(ticker_url)
-          adapt_all(output)
+        def fetch(market_pair)
+          output = super(ticker_url(market_pair))
+          adapt(market_pair, output["data"])
         end
 
-        def ticker_url
-          "#{Cryptoexchange::Exchanges::Cbx::Market::API_URL}/tickers"
-        end
-
-        def adapt_all(output)
-          output['data'].map do |output|
-            base, target = output['market_id'].split('-')
-            market_pair  = Cryptoexchange::Models::MarketPair.new(
-              base:   base,
-              target: target,
-              market: Cbx::Market::NAME
-            )
-            adapt(market_pair, output)
-          end
+        def ticker_url(market_pair)
+          "#{Cryptoexchange::Exchanges::Cbx::Market::API_URL}/asset_pairs/#{market_pair.base.upcase}-#{market_pair.target.upcase}/ticker"
         end
 
         def adapt(market_pair, output)
@@ -39,7 +27,7 @@ module Cryptoexchange::Exchanges
           ticker.high      = NumericHelper.to_d(output['high'])
           ticker.low       = NumericHelper.to_d(output['low'])
           ticker.volume    = NumericHelper.to_d(output['volume'])
-          ticker.change    = NumericHelper.to_d(output['daily_change_perc'])
+          ticker.change    = NumericHelper.to_d(output['daily_change'])
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
