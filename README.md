@@ -442,6 +442,7 @@ Or install it yourself as:
 | Unnamed           | Y       | Y          | Y       |         | Y           | Y        | unnamed           |       |
 | Unocoin           |         |            |         |         |             |          | unocoin           |       |
 | Upbit             | Y       | Y [x]      | Y       |         | Y           | Y        | upbit             |       |
+| Upbit Indonesia   | Y       |            |         |         | Y           | Y        | upbit_indonesia   |       |
 | Vaultmex          | Y       | Y          | Y       |         | Y           | Y        | vaultmex          |       |
 | Vbitex            | Y       | N          | N       |         | Y           | Y        | vbitex            |       |
 | Vebitcoin         | Y       | N          | N       |         | Y           | N        | vebitcoin         |       |
