@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.oasisdex.com/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.oasisdex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1094'
+      Connection:
+      - close
+      Date:
+      - Mon, 14 Oct 2019 02:54:34 GMT
+      X-Amzn-Requestid:
+      - f6a1b508-97cb-4e5a-9ef2-d155362fc10c
+      X-Amz-Apigw-Id:
+      - BiB4rFOIIAMFlpg=
+      X-Amzn-Trace-Id:
+      - Root=1-5da3e36a-e6678a35c7d7c32fd8ff2759
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 992d0bf46adc44efb6ae5182ac41ed87.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50-C1
+      X-Amz-Cf-Id:
+      - a30yAFnWS5tpP3IWOtq3eUDrI8hn8sY7mDS2as1VGMg4yVn2Zzxd3g==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"ETH/DAI":{"pair":"ETH/DAI","price":"180.83297388","last":"181.32000000","vol":"2507.83619994","low":"176.81556800","high":"246.39000000","bid":"180.81293303","ask":"182.34664498"},"MKR/DAI":{"pair":"MKR/DAI","price":"522.50095891","last":"519.44315270","vol":"0.96008660","low":"519.44305107","high":"532.08297678","bid":"496.84814357","ask":"519.44315269"},"MKR/ETH":{"pair":"MKR/ETH","price":"2.75062769","last":"2.74780879","vol":"0.72800000","low":"2.74780879","high":"2.75065901","bid":"2.74780879","ask":"2.86868403"},"ZRX/DAI":{"pair":"ZRX/DAI","price":"0.28840709","last":"0.28908481","vol":"1317.26699943","low":"0.28015745","high":"0.28908481","bid":"0.29177265","ask":"0.30318561"},"BAT/DAI":{"pair":"BAT/DAI","price":"0.19790777","last":"0.19790777","vol":"241.58091252","low":"0.19790777","high":"0.19790777","bid":"0.19717678","ask":"0.20522481"},"REP/DAI":{"pair":"REP/DAI","price":"8.41098955","last":"8.39557410","vol":"347.29936143","low":"8.39289864","high":"8.52185316","bid":"8.09999999","ask":"8.28627498"}},"time":"2019-10-14T02:54:34.971Z","message":"success"}'
+    http_version: 
+  recorded_at: Mon, 14 Oct 2019 02:54:35 GMT
+recorded_with: VCR 4.0.0

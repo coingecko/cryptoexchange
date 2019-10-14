@@ -356,6 +356,7 @@ Or install it yourself as:
 | Novadax           | Y       | N          | Y       |         | User-Defined| N        | novadax           |       |
 | Nusax             | Y       |            |         |         | Y           | Y        | nusax             |       |
 | Nova Exchange     | Y       |            |         |         | Y           |          | novaexchange      |       |
+| Oasis Trade       | Y       | Y          | Y       |         | Y           | Y        | oasis_trade       |       |
 | OasisDEX          | Y       |            |         |         | Y           |          | oasisdex          |       |
 | OAX               | Y       |            |         |         | Y           |          | oax               |       |
 | Oceanex           | Y       | Y [x]      | Y       |         | Y           | Y        | oceanex           |       |
