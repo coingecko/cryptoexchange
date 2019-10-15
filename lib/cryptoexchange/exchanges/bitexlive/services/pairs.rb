@@ -5,9 +5,8 @@ module Cryptoexchange::Exchanges
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitexlive::Market::API_URL}/tickers"
 
         def fetch
-          #remove html tag in JSON response 
-          output = HTTP.get(PAIRS_URL).to_s.split("</div>")[1]
-          adapt(JSON.parse(output))
+          output = super
+          adapt(output)
         end
 
         def adapt(output)
