@@ -9,7 +9,7 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          output = JSON.parse(HTTP.get(ticker_url(market_pair)).to_s.split("</div>")[1])
+          output = super(ticker_url(market_pair))
           adapt(output, market_pair)
         end
 

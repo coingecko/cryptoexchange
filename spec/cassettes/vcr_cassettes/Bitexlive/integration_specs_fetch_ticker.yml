@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 08 Oct 2019 07:31:26 GMT
+      - Tue, 15 Oct 2019 06:37:23 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,10 +27,10 @@ http_interactions:
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d26145f69ff967efd4d3f77fa86a42a961570519885; expires=Wed, 07-Oct-20
-        07:31:25 GMT; path=/; domain=.bitexlive.com; HttpOnly; Secure
-      - ci_session=2d9f9a9a497ff7bbce58bdf3902eea8bec2fc6f5; expires=Tue, 08-Oct-2019
-        09:31:26 GMT; Max-Age=7200; path=/; HttpOnly
+      - __cfduid=d79e0ab10adb48e3a550e125724ce4b571571121442; expires=Wed, 14-Oct-20
+        06:37:22 GMT; path=/; domain=.bitexlive.com; HttpOnly; Secure
+      - ci_session=e497b247a74c0990ac98597f882abc8ba8a5ea2b; expires=Tue, 15-Oct-2019
+        08:37:23 GMT; Max-Age=7200; path=/; secure; HttpOnly
       X-Powered-By:
       - PHP/7.1.32
       Expires:
@@ -43,27 +43,36 @@ http_interactions:
       - Accept-Encoding
       X-Turbo-Charged-By:
       - LiteSpeed
+      Content-Security-Policy:
+      - 'object-src ''none''; default-src ''self'' data: ''unsafe-eval'' ''unsafe-inline''
+        wss://bitexlive.com:8443 https://bitexlive.com:8443 https://cdnjs.cloudflare.com
+        https://www.google.com https://www.googletagmanager.com https://www.gstatic.com
+        https://www.google-analytics.com https://kit-free.fontawesome.com https://chart.googleapis.com'
+      Feature-Policy:
+      - vibrate 'self';  sync-xhr 'self';
+      X-Xss-Protection:
+      - 1;mode=block
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=15552000; preload
+      X-Content-Type-Options:
+      - nosniff
+      Public-Key-Pins:
+      - pin-sha256="pin1"; pin-sha256="pin2"; max-age=2592000
       Cf-Cache-Status:
       - DYNAMIC
       Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      - max-age=604800, report-uri="https://report-uri.clo
+      - udflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 52266a453ddfc336-SIN
+      - 525fc8b93be1aee5-KIX
     body:
       encoding: UTF-8
-      string: "\n<div style=\"border:1px solid #990000;padding-left:20px;margin:0
-        0 10px 0;\">\n\n<h4>A PHP Error was encountered</h4>\n\n<p>Severity: Notice</p>\n<p>Message:
-        \ Undefined index: HTTP_ACCEPT_LANGUAGE</p>\n<p>Filename: helpers/my_helper.php</p>\n<p>Line
-        Number: 18</p>\n\n\n\t<p>Backtrace:</p>\n\t\n\t\t\n\t\n\t\t\n\t\n\t\t\n\t\t\t<p
-        style=\"margin-left:10px\">\n\t\t\tFile: /home/bitexlive.com/public_html/application/helpers/my_helper.php<br
-        />\n\t\t\tLine: 18<br />\n\t\t\tFunction: _error_handler\t\t\t</p>\n\n\t\t\n\t\n\t\t\n\t\t\t<p
-        style=\"margin-left:10px\">\n\t\t\tFile: /home/bitexlive.com/public_html/application/controllers/Api.php<br
-        />\n\t\t\tLine: 8<br />\n\t\t\tFunction: dilBul\t\t\t</p>\n\n\t\t\n\t\n\t\t\n\t\n\t\t\n\t\t\t<p
-        style=\"margin-left:10px\">\n\t\t\tFile: /home/bitexlive.com/public_html/index.php<br
-        />\n\t\t\tLine: 196<br />\n\t\t\tFunction: require_once\t\t\t</p>\n\n\t\t\n\t\n\n</div>[{\"tradingPairs\":\"ETH_BTC\",\"LastPrice\":0.022009999999999998,\"percentChange\":0.95999999999999996,\"low24h\":0.021610000000000001,\"high24h\":0.02222,\"baseVolume24h\":1.1096999999999999,\"quoteVolume24h\":50.631300000000003,\"lowestAsk\":0.02205,\"highestBid\":0.021999999999999999,\"lastUpdateTimestamp\":\"2019-10-08
-        07:25:32\",\"tradesEnabled\":true}]"
+      string: '[{"tradingPairs":"ETH_BTC","LastPrice":0.022200000000000001,"percentChange":0.68000000000000005,"low24h":0.02197,"high24h":0.022440000000000002,"baseVolume24h":0.74790000000000001,"quoteVolume24h":33.681399999999996,"lowestAsk":0.022249999999999999,"highestBid":0.022200000000000001,"lastUpdateTimestamp":"2019-10-15
+        06:28:42","tradesEnabled":true}]'
     http_version: 
-  recorded_at: Tue, 08 Oct 2019 07:31:26 GMT
+  recorded_at: Tue, 15 Oct 2019 06:37:23 GMT
 recorded_with: VCR 4.0.0

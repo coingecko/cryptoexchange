@@ -9,9 +9,8 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          #remove html tag in JSON response 
-          output = HTTP.get(ticker_url(market_pair)).to_s.split("</div>")[1]
-          adapt(market_pair, JSON.parse(output))
+          output = super(ticker_url(market_pair))
+          adapt(market_pair, output)
         end
 
         def ticker_url(market_pair)
