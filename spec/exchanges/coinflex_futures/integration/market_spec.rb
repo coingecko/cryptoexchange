@@ -53,4 +53,14 @@ RSpec.describe 'Coinflex Futures integration specs' do
     expect(order_book.timestamp).to be_nil
     expect(order_book.payload).to_not be nil
   end
+
+  context 'fetch contract stat' do
+    it 'fetch futures contract details' do
+      contract_stat = client.contract_stat(xbt_usdt_pair)
+      expect(contract_stat.base).to eq 'XBT'
+      expect(contract_stat.target).to eq 'USDT'
+      expect(contract_stat.market).to eq 'coinflex_futures'
+      expect(contract_stat.contract_type).to eq 'futures'
+    end
+  end
 end
