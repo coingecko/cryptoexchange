@@ -69,4 +69,16 @@ RSpec.describe 'Kumex integration specs' do
     trade_page_url = client.trade_page_url 'kumex', base: xbt_usd_pair.base, target: xbt_usd_pair.target, inst_id: xbt_usd_pair.inst_id
     expect(trade_page_url).to eq "https://www.kumex.com/trade/index/XBTUSDM"
   end
+
+  context 'fetch contract stat' do
+    it 'fetch contract stat' do
+      contract_stat = client.contract_stat(xbt_usd_pair)
+
+      expect(contract_stat.base).to eq 'XBT'
+      expect(contract_stat.target).to eq 'USD'
+      expect(contract_stat.market).to eq 'kumex'
+      expect(contract_stat.contract_type).to eq 'perpetual'
+      expect(contract_stat.timestamp).to be nil
+    end
+  end
 end

@@ -477,7 +477,7 @@ Or install it yourself as:
 | Exchange          | T | OB | List | URL | OpenInt | CT  | Idx | ST | ET | F% | NFT | F%P |                  |
 |-----------------  |---|----|------|-----|---------|-----|-----|----|----|----|-----|-----|------------------|
 | Binance Futures   | Y | Y  | Y    |  Y  |  N      | Y   |  Y  | N  | N  | Y  | Y   | N   |  binance_futures |
-| Bitflyer Futures  | Y | Y  | Y    |     |  N      |     |  Y  | N  | N  |    |     |     |  bitflyer_futures  |
+| Bitflyer Futures  | Y | Y  | Y    |     |  N      | Y   |  N  | N  | N  |    |     |     |  bitflyer_futures  |
 | Bitforex Futures  | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |    |    | Y  | Y   | N   |  bitforex_futures  |
 | Bitmex            | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | Y  | Y  | Y  | Y   | Y   |  bitmex  |
 | Bitz Futures      | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | N  | N  | N  | N   | Y   |  bitz_futures  |
@@ -492,23 +492,23 @@ Or install it yourself as:
 | Huobi DM          | Y | Y  | Y    |     |  Y      | Y   |  Y  | Y  | Y  | N  | N   | N   |  huobi_dm  |
 | JexFutures        | Y | Y  | Y    |     |  N      | Y   |  Y  | N  | N  | Y  | Y   | Y   |  jex_futures |
 | Kraken Futures    | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | Y  | Y  | Y  | Y   | Y   |  kraken_futures  |
-| Kumex             | Y | Y  | Y    |  Y  |         |     |     |    |    |    |     |     |  kumex |
+| Kumex             | Y | Y  | Y    |  Y  |         | Y   |     |    |    |    |     |     |  kumex |
 | OKEx Swaps        | Y | Y  | Y    |     |  Y      | Y   |  Y  | Y  | Y  | Y  | Y   | Y   |  okex_swaps  |
 | BTSE (Futures)    | Y | Y  | Y    |  Y  |         |     |     |    |    |    |     |     |  btse_futures  |
 
 * Legend
-T       - Ticker
-OB      - OrderBook
-List    - Market List
-URL     - Trade Page URL
-OpenInt - Open Interest
-CT      - Contract Type
-Idx     - Price Index
-ST      - Start Timestamp
-ET      - Expire Timestamp
-F       - Funding Rate %
-NFT     - Next Funding Rate Timestamp
-F%      - Funding Rate % Predicted
+T       : Ticker
+OB      : OrderBook
+List    : Market List
+URL     : Trade Page URL
+OpenInt : Open Interest
+CT      : Contract Type
+Idx     : Price Index
+ST      : Start Timestamp
+ET      : Expire Timestamp
+F       : Funding Rate %
+NFT     : Next Funding Rate Timestamp
+F%      : Funding Rate % Predicted
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 

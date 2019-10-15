@@ -16,12 +16,19 @@ module Cryptoexchange::Exchanges
             pairs << Cryptoexchange::Models::MarketPair.new(
                 base: base,
                 target: target,
-                contract_interval: 'perpetual',
+                contract_interval: contract_type(data['type']),
                 inst_id: data['symbol'],
                 market: Kumex::Market::NAME
               )
           end
           pairs
+        end
+
+        def contract_type(type)
+          if type == "FFWCSX"
+            "perpetual"
+          end
+          # TODO: Futures not support yet by API or exchange, implement later
         end
       end
     end
