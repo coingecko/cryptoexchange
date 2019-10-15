@@ -33,7 +33,7 @@ module Cryptoexchange::Exchanges
 
           contract_stat.expire_timestamp = expire_timestamp
           contract_stat.start_timestamp = start_timestamp
-          contract_stat.contract_type = contract_type(start_timestamp, expire_timestamp)
+          contract_stat.contract_type = contract_type(output['typ'])
 
           contract_stat.funding_rate_percentage = output['fundingRate'] ? output['fundingRate'] * 100 : nil
           contract_stat.next_funding_rate_timestamp = output['fundingTimestamp'] ? DateTime.parse(output['fundingTimestamp']).to_time.to_i : nil
@@ -42,11 +42,13 @@ module Cryptoexchange::Exchanges
           contract_stat
         end
 
-        def contract_type(start, expire)
-          if expire.nil?
+        def contract_type(instrument_type)
+          if instrument_type == "FFWCSX"
             "perpetual"
-          else
+          elsif instrument_type == "FFCCSX"
             "futures"
+          elsif instrument_type == "OCECCS" || instrument_type == "OPECCS"
+            "updown"
           end
         end
       end

@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bitmex.com/api/v1/instrument?count=100&reverse=true&symbol=XBT7D_U105
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bitmex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 15 Oct 2019 11:05:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2350'
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSALB=v/zGfNiPj9L7LYk0TrT76HWJhoV65W4FW8NjNz/acVhd8wb0YMvfGcx0+60uPf8WoOr0pwCDkPyvRosnWkOlPWDYtxXFWcg3sbgUDd8jJIRdvOwrfIV0hDjqUzTG;
+        Expires=Tue, 22 Oct 2019 11:05:16 GMT; Path=/
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '29'
+      X-Ratelimit-Reset:
+      - '1571137517'
+      X-Powered-By:
+      - Profit
+      Etag:
+      - W/"92e-LRcO81a3AsDkoOoC+4KZi4f1zVs"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '[{"symbol":"XBT7D_U105","rootSymbol":"XBT","state":"Open","typ":"OCECCS","listing":"2019-10-11T12:00:00.000Z","front":"2019-10-11T12:00:00.000Z","expiry":"2019-10-18T12:00:00.000Z","settle":"2019-10-18T12:00:00.000Z","relistInterval":"2000-01-08T00:00:00.000Z","inverseLeg":"","sellLeg":"","buyLeg":"","optionStrikePcnt":1.05,"optionStrikeRound":250,"optionStrikePrice":8750,"optionMultiplier":-0.1,"positionCurrency":"","underlying":"XBT","quoteCurrency":"XBT","underlyingSymbol":"XBT=","reference":"BMEX","referenceSymbol":".BXBT30M","calcInterval":null,"publishInterval":null,"publishTime":null,"maxOrderQty":10000000,"maxPrice":0.1,"lotSize":1,"tickSize":0.00001,"multiplier":100000000,"settlCurrency":"XBt","underlyingToPositionMultiplier":10,"underlyingToSettleMultiplier":null,"quoteToSettleMultiplier":100000000,"isQuanto":false,"isInverse":false,"initMargin":1,"maintMargin":0,"riskLimit":null,"riskStep":null,"limit":null,"capped":true,"taxed":true,"deleverage":true,"makerFee":0,"takerFee":0,"settlementFee":0,"insuranceFee":0,"fundingBaseSymbol":"","fundingQuoteSymbol":"","fundingPremiumSymbol":"","fundingTimestamp":null,"fundingInterval":null,"fundingRate":null,"indicativeFundingRate":null,"rebalanceTimestamp":null,"rebalanceInterval":null,"openingTimestamp":"2019-10-15T11:00:00.000Z","closingTimestamp":"2019-10-15T12:00:00.000Z","sessionInterval":"2000-01-01T01:00:00.000Z","prevClosePrice":0.00181,"limitDownPrice":0,"limitUpPrice":0.1,"bankruptLimitDownPrice":null,"bankruptLimitUpPrice":null,"prevTotalVolume":243461,"totalVolume":243461,"volume":0,"volume24h":12,"prevTotalTurnover":2395610777000,"totalTurnover":2395610777000,"turnover":0,"turnover24h":120000000,"homeNotional24h":1.2,"foreignNotional24h":0.01795,"prevPrice24h":0.00181,"vwap":0.00149584,"highPrice":0.00183,"lowPrice":0.00122,"lastPrice":0.00148,"lastPriceProtected":0,"lastTickDirection":"PlusTick","lastChangePcnt":-0.1823,"bidPrice":0.00102,"midPrice":0.001275,"askPrice":0.00153,"impactBidPrice":null,"impactMidPrice":null,"impactAskPrice":null,"hasLiquidity":false,"openInterest":19,"openValue":190000000,"fairMethod":"","fairBasisRate":0,"fairBasis":0,"fairPrice":0,"markMethod":"LastPrice","markPrice":0.00148,"indicativeTaxRate":0,"indicativeSettlePrice":0,"optionUnderlyingPrice":8305.71,"settledPrice":null,"timestamp":"2019-10-15T11:05:15.000Z"}]'
+    http_version: 
+  recorded_at: Tue, 15 Oct 2019 11:05:10 GMT
+recorded_with: VCR 4.0.0
