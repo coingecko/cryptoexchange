@@ -496,19 +496,32 @@ Or install it yourself as:
 | OKEx Swaps        | Y | Y  | Y    |     |  Y      | Y   |  Y  | Y  | Y  | Y  | Y   | Y   |  okex_swaps  |
 | BTSE (Futures)    | Y | Y  | Y    |  Y  |         |     |     |    |    |    |     |     |  btse_futures  |
 
-* Legend
+*Legend*
+
 T       : Ticker
+
 OB      : OrderBook
+
 List    : Market List
+
 URL     : Trade Page URL
+
 OpenInt : Open Interest
+
 CT      : Contract Type
+
 Idx     : Price Index
+
 ST      : Start Timestamp
+
 ET      : Expire Timestamp
+
 F       : Funding Rate %
+
 NFT     : Next Funding Rate Timestamp
+
 F%      : Funding Rate % Predicted
+
 
 ** Mapping and data may be incorrect (Cannot determine correctness)
 
