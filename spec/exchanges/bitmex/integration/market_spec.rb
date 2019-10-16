@@ -4,6 +4,8 @@ RSpec.describe 'Bitmex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:xbt_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'USD', market: 'bitmex', inst_id: "XBTUSD", contract_interval: "perpetual") }
   let(:xbt_usd_futures_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'USD', market: 'bitmex', inst_id: "XBTZ19") }
+  let(:xbt_usd_up_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'USD', market: 'bitmex', inst_id: "XBT7D_U105") }
+  let(:xbt_usd_down_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'USD', market: 'bitmex', inst_id: "XBT7D_D95") }
 
   it 'fetch pairs' do
     pairs = client.pairs('bitmex')
@@ -101,6 +103,28 @@ RSpec.describe 'Bitmex integration specs' do
       expect(2019..Date.today.year).to include(Time.at(contract_stat.expire_timestamp).year)
       expect(2019..Date.today.year).to include(Time.at(contract_stat.start_timestamp).year)
       expect(contract_stat.contract_type).to eq 'futures'
+      expect(contract_stat.funding_rate_percentage).to be nil
+      expect(contract_stat.next_funding_rate_timestamp).to be nil
+      expect(contract_stat.funding_rate_percentage_predicted).to be nil
+    end
+
+    it 'fetch up contract details' do
+      contract_stat = client.contract_stat(xbt_usd_up_pair)
+
+      expect(2019..Date.today.year).to include(Time.at(contract_stat.expire_timestamp).year)
+      expect(2019..Date.today.year).to include(Time.at(contract_stat.start_timestamp).year)
+      expect(contract_stat.contract_type).to eq 'updown'
+      expect(contract_stat.funding_rate_percentage).to be nil
+      expect(contract_stat.next_funding_rate_timestamp).to be nil
+      expect(contract_stat.funding_rate_percentage_predicted).to be nil
+    end
+
+    it 'fetch down contract details' do
+      contract_stat = client.contract_stat(xbt_usd_down_pair)
+
+      expect(2019..Date.today.year).to include(Time.at(contract_stat.expire_timestamp).year)
+      expect(2019..Date.today.year).to include(Time.at(contract_stat.start_timestamp).year)
+      expect(contract_stat.contract_type).to eq 'updown'
       expect(contract_stat.funding_rate_percentage).to be nil
       expect(contract_stat.next_funding_rate_timestamp).to be nil
       expect(contract_stat.funding_rate_percentage_predicted).to be nil

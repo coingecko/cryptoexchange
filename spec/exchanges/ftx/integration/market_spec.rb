@@ -4,6 +4,7 @@ RSpec.describe 'FTX integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'ftx', inst_id: "BTC-PERP", contract_interval: "perpetual") }
   let(:btc_usd_futures_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'ftx', inst_id: "BTC-1227") }
+  let(:btc_usd_move_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'ftx', inst_id: "BTC-MOVE-1015") }
 
   it 'fetch pairs' do
     pairs = client.pairs('ftx')
@@ -82,6 +83,17 @@ RSpec.describe 'FTX integration specs' do
       expect(2019..Date.today.year).to include(Time.at(contract_stat.expire_timestamp).year)
       expect(contract_stat.start_timestamp).to be nil
       expect(contract_stat.contract_type).to eq 'futures'
+      expect(contract_stat.funding_rate_percentage).to be nil
+      expect(contract_stat.next_funding_rate_timestamp).to be nil
+      expect(contract_stat.funding_rate_percentage_predicted).to be nil
+    end
+
+    it 'fetch move contract details' do
+      contract_stat = client.contract_stat(btc_usd_move_pair)
+
+      expect(2019..Date.today.year).to include(Time.at(contract_stat.expire_timestamp).year)
+      expect(contract_stat.start_timestamp).to be nil
+      expect(contract_stat.contract_type).to eq 'move'
       expect(contract_stat.funding_rate_percentage).to be nil
       expect(contract_stat.next_funding_rate_timestamp).to be nil
       expect(contract_stat.funding_rate_percentage_predicted).to be nil

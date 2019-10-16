@@ -2,7 +2,8 @@ require 'spec_helper'
 
 RSpec.describe 'BitflyerFutures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_jpy_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'jpy', contract_interval: "perpetual", market: 'bitflyer_futures') }
+  let(:btc_jpy_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'jpy', contract_interval: "perpetual", market: 'bitflyer_futures', inst_id: 'FX_BTC_JPY') }
+  let(:btc_jpy_futures_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'jpy', contract_interval: "futures", market: 'bitflyer_futures', inst_id: 'BTCJPY27DEC2019') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bitflyer_futures')
@@ -12,6 +13,7 @@ RSpec.describe 'BitflyerFutures integration specs' do
     expect(pair.base).to eq 'BTC'
     expect(pair.target).to eq 'JPY'
     expect(pair.market).to eq 'bitflyer_futures'
+    expect(pair.inst_id).to eq 'FX_BTC_JPY'
   end
 
   it 'give trade url' do
@@ -65,5 +67,27 @@ RSpec.describe 'BitflyerFutures integration specs' do
     expect(trade.timestamp).to be_a Numeric
     expect(trade.trade_id).to_not be_nil
     expect(trade.type).to eq("buy").or eq("sell")
+  end
+
+  context 'fetch contract stat' do
+    it 'fetch contract stat' do
+      contract_stat = client.contract_stat(btc_jpy_pair)
+
+      expect(contract_stat.base).to eq 'BTC'
+      expect(contract_stat.target).to eq 'JPY'
+      expect(contract_stat.market).to eq 'bitflyer_futures'
+      expect(contract_stat.contract_type).to eq 'perpetual'
+      expect(contract_stat.timestamp).to be nil
+    end
+
+    it 'fetch futures contract details' do
+      contract_stat = client.contract_stat(btc_jpy_futures_pair)
+
+      expect(contract_stat.base).to eq 'BTC'
+      expect(contract_stat.target).to eq 'JPY'
+      expect(contract_stat.contract_type).to eq 'futures'
+      expect(contract_stat.market).to eq 'bitflyer_futures'
+      expect(contract_stat.timestamp).to be nil  
+    end
   end
 end

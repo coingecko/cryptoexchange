@@ -19,7 +19,8 @@ module Cryptoexchange::Exchanges
                               base: base,
                               target: target,
                               contract_interval: data[:contract_interval],
-                              market: BitflyerFutures::Market::NAME
+                              inst_id: value['product_code'],
+                              market: BitflyerFutures::Market::NAME,
                             )
           end.compact
 

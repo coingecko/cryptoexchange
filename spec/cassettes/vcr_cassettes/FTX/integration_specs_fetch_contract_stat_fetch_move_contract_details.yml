@@ -1,0 +1,108 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ftx.com/api/futures/BTC-MOVE-1015/stats
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ftx.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 15 Oct 2019 11:07:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d5ad696db78aee77c88da33bf9c2281691571137638; expires=Wed, 14-Oct-20
+        11:07:18 GMT; path=/; domain=.ftx.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=10
+      Cf-Cache-Status:
+      - EXPIRED
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 52615422587cdd9b-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":{"openInterest":126.1456,"predictedExpirationPrice":65.14844685648562,"strikePrice":8369.120928246486,"volume":206.3484},"success":true}
+
+        '
+    http_version: 
+  recorded_at: Tue, 15 Oct 2019 11:07:12 GMT
+- request:
+    method: get
+    uri: https://ftx.com/api/futures/BTC-MOVE-1015
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ftx.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 15 Oct 2019 11:07:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db2f24775e9bf7f580d479319e660e0e41571137639; expires=Wed, 14-Oct-20
+        11:07:19 GMT; path=/; domain=.ftx.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=0
+      Cf-Cache-Status:
+      - MISS
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 52615424df87ddf5-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":{"ask":90.5,"bid":89.25,"change1h":-0.09390862944162437,"change24h":-0.2205240174672489,"changeBod":-0.15201900237529692,"description":"Bitcoin
+        MOVE 2019-10-15 Contracts","enabled":true,"expired":false,"expiry":"2019-10-16T00:00:00+00:00","expiryDescription":"Today","index":8303.97248139,"indexAdjustment":0.0,"last":85.25,"lowerBound":-328.25,"mark":89.25,"name":"BTC-MOVE-1015","perpetual":false,"postOnly":false,"priceIncrement":0.25,"sizeIncrement":0.0001,"type":"move","underlying":"BTC","underlyingDescription":"Bitcoin","upperBound":918.75,"volumeUsd24h":22769.512925},"success":true}
+
+        '
+    http_version: 
+  recorded_at: Tue, 15 Oct 2019 11:07:12 GMT
+recorded_with: VCR 4.0.0

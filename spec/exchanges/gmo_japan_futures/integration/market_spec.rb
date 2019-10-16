@@ -74,4 +74,14 @@ RSpec.describe 'GmoJapanFutures integration specs' do
     expect(trade.timestamp).to be_a Numeric
     expect(trade.payload).to_not be nil
   end
+
+  context 'fetch contract stat' do
+    it 'fetch perpetual contract details' do
+      contract_stat = client.contract_stat(btc_jpy_pair)
+      expect(contract_stat.base).to eq 'BTC'
+      expect(contract_stat.target).to eq 'JPY'
+      expect(contract_stat.market).to eq 'gmo_japan_futures'
+      expect(contract_stat.contract_type).to eq 'perpetual'
+    end
+  end
 end
