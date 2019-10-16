@@ -22,11 +22,11 @@ module Cryptoexchange::Exchanges
         end
 
         def pairs_url
-          "#{Cryptoexchange::Exchanges::Bitoffer::Market::API_URL}/cash/instrument"
+          "#{Cryptoexchange::Exchanges::Bitoffer::Market::API_URL}/cash/instrument/"
         end
 
         def tickers_url
-          "#{Cryptoexchange::Exchanges::Bitoffer::Market::API_URL}/quot/market"
+          "#{Cryptoexchange::Exchanges::Bitoffer::Market::API_URL}/quot/market/"
         end
 
         def adapt_all(output)
