@@ -72,4 +72,27 @@ RSpec.describe 'btse_futures integration specs' do
     expect(trade.payload).to_not be nil
     expect(trade.market).to eq 'btse_futures'
   end
+
+  context 'fetch contract stat' do
+    it 'fetch contract stat' do
+      contract_stat = client.contract_stat(btc_usd_pair)
+
+      expect(contract_stat.base).to eq 'BTC'
+      expect(contract_stat.target).to eq 'USD'
+      expect(contract_stat.market).to eq 'btse_futures'
+      expect(contract_stat.index).to be nil
+      expect(contract_stat.open_interest).to be nil
+      expect(contract_stat.timestamp).to be nil
+
+      expect(contract_stat.payload).to_not be nil
+    end
+
+    it 'fetch perpetual contract details' do
+      contract_stat = client.contract_stat(btc_usd_pair)
+
+      expect(contract_stat.expire_timestamp).to be_a Numeric
+      expect(contract_stat.start_timestamp).to be_a Numeric
+      expect(contract_stat.contract_type).to eq 'futures'
+    end
+  end
 end

@@ -494,7 +494,7 @@ Or install it yourself as:
 | Kraken Futures    | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | Y  | Y  | Y  | Y   | Y   |  kraken_futures  |
 | Kumex             | Y | Y  | Y    |  Y  |         |     |     |    |    |    |     |     |  kumex |
 | OKEx Swaps        | Y | Y  | Y    |     |  Y      | Y   |  Y  | Y  | Y  | Y  | Y   | Y   |  okex_swaps  |
-| BTSE (Futures)    | Y | Y  | Y    |  Y  |         |     |     |    |    |    |     |     |  btse_futures  |
+| BTSE (Futures)    | Y | Y  | Y    |  Y  |         |     |     | Y  | Y  |    |     |     |  btse_futures  |
 
 * Legend
 T       - Ticker
