@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Fubt integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: 'fubt') }
+  let(:eth_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'fubt') }
 
   it 'fetch pairs' do
     pairs = client.pairs('fubt')
@@ -15,10 +15,10 @@ RSpec.describe 'Fubt integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_usdt_pair)
+    ticker = client.ticker(eth_btc_pair)
 
-    expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'USDT'
+    expect(ticker.base).to eq 'ETH'
+    expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'fubt'
     expect(ticker.last).to be_a Numeric
     expect(ticker.low).to be_a Numeric
@@ -29,5 +29,10 @@ RSpec.describe 'Fubt integration specs' do
     expect(ticker.timestamp).to be nil
 
     expect(ticker.payload).to_not be nil
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'fubt', base: eth_btc_pair.base, target: eth_btc_pair.target, inst_id: eth_btc_pair.inst_id
+    expect(trade_page_url).to eq "https://www.fubt.com/#/TradeCenter/ethbtc"
   end
 end

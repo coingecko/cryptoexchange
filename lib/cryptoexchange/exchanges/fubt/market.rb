@@ -7,7 +7,7 @@ module Cryptoexchange::Exchanges
       SEPARATOR_REGEX = /(BTC|ETH|USDT|FBT|)\z/
 
       def self.trade_page_url(args={})
-        "https://www.fubt.com/#/TradeCenter"
+        "https://www.fubt.com/#/TradeCenter/#{args[:base].downcase}#{args[:target].downcase}"
       end
     end
   end
