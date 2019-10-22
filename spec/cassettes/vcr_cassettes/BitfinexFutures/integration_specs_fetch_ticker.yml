@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-pub.bitfinex.com/v2/tickers?symbols=tBTCF0:USTF0
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api-pub.bitfinex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Oct 2019 06:00:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '105'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d77afe4aa6429f0b69b404185be7dfd351571724046; expires=Wed, 21-Oct-20
+        06:00:46 GMT; path=/; domain=.bitfinex.com; HttpOnly
+      X-Frame-Options:
+      - sameorigin
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains;
+      Accept-Ranges:
+      - bytes
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 529940b8cb89c0fa-KUL
+    body:
+      encoding: UTF-8
+      string: '[["tBTCF0:USTF0",8207,47.481635370000006,8209,36.83422222,-17.1,-0.0021,8213.4,6.54298478,8308.3,8157.1]]'
+    http_version: 
+  recorded_at: Tue, 22 Oct 2019 06:00:44 GMT
+recorded_with: VCR 4.0.0

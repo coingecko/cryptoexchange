@@ -478,7 +478,8 @@ Or install it yourself as:
 | Exchange          | T | OB | List | URL | OpenInt | CT  | Idx | ST | ET | F% | NFT | F%P |                  |
 |-----------------  |---|----|------|-----|---------|-----|-----|----|----|----|-----|-----|------------------|
 | Binance Futures   | Y | Y  | Y    |  Y  |  N      | Y   |  Y  | N  | N  | Y  | Y   | N   |  binance_futures |
-| Bitflyer Futures  | Y | Y  | Y    |     |  N      | Y   |  N  | N  | N  |    |     |     |  bitflyer_futures  |
+| Bitflyer Futures  | Y | Y  | Y    |  Y  |  N      | Y   |  N  | N  | N  |    |     |     |  bitflyer_futures  |
+| Bitfinex Futures  | Y | Y  | Y    |     |  N      | Y   |  Y  | N  | N  | Y  | Y   |     |  bitfinex_futures  |
 | Bitforex Futures  | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |    |    | Y  | Y   | N   |  bitforex_futures  |
 | Bitmex            | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | Y  | Y  | Y  | Y   | Y   |  bitmex  |
 | Bitz Futures      | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | N  | N  | N  | N   | Y   |  bitz_futures  |
