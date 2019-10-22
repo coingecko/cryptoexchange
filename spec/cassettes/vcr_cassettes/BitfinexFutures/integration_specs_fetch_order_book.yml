@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-pub.bitfinex.com/v2/book/tBTCF0:USTF0/P0
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api-pub.bitfinex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Oct 2019 06:01:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3db12881d34bb5683a6e9a2cb119226f1571724105; expires=Wed, 21-Oct-20
+        06:01:45 GMT; path=/; domain=.bitfinex.com; HttpOnly
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - sameorigin
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains;
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5299422d6c33c109-KUL
+    body:
+      encoding: UTF-8
+      string: "[[8207,1,0.0004],[8202.7,1,0.13559516],[8201.4,1,2.03394994],[8199.6,1,2.71191924],[8198.3,1,4.06789988],[8197.1,1,5.42386651],[8195.3,1,6.77975781],[8193.4,1,7.45781645],[8190.3,1,8.13579977],[8187.3,1,8.81368515],[8184.2,1,9.4914713],[8178,1,10.16974971],[8175,1,10.84761249],[8171.9,1,11.52558827],[8168.8,1,12.20333081],[8165.7,1,12.88168297],[8162.6,1,13.55966628],[8159.6,1,14.23749139],[8156.5,1,14.91506765],[8153.4,1,15.59314492],[8150.3,1,16.27159953],[8147.3,1,16.94942455],[8128.4,2,3.50772404],[8128.3,1,7.6608766],[7786.3,1,0.01236],[8209,1,-0.0004],[8210.9,1,-0.49870359],[8211,1,-0.12190927],[8211.6,1,-0.13559134],[8212.8,1,-2.03394994],[8213.4,1,-0.009648],[8214.7,1,-2.71192455],[8215.9,1,-4.06778929],[8217.2,1,-5.4238181],[8219,1,-6.77959],[8220.5,1,-0.0299],[8220.8,1,-7.45781645],[8223.9,1,-8.13557859],[8227,1,-8.813467],[8230.1,1,-9.49171734],[8236.2,1,-10.16944234],[8239.3,1,-10.84732193],[8242.4,1,-11.52567196],[8245.5,1,-12.20359072],[8248.5,1,-12.88168297],[8251.6,1,-13.55925646],[8254.7,1,-14.23711016],[8257.8,1,-14.91557548],[8260.9,1,-15.59344295],[8263.9,1,-16.27110775]]"
+    http_version: 
+  recorded_at: Tue, 22 Oct 2019 06:01:44 GMT
+recorded_with: VCR 4.0.0
