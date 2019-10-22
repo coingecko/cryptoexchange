@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://datacenter.raidofinance.eu/v1/orderbook/BCHBTC/0
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - datacenter.raidofinance.eu
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Tue, 22 Oct 2019 05:33:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1424'
+      Connection:
+      - close
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Sid, X-XSS-Protection
+      Access-Control-Expose-Headers:
+      - Authorization, Sid
+      Access-Control-Max-Age:
+      - '360000'
+      Etag:
+      - W/"590-1hmwFtJ3ixUj8otPcfpCSLMiL0g"
+      Access-Controll-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"data":{"buy":{"0.02783":[0.03594,1],"0.028":[0.153,3],"0.02811":[0.46866,2],"0.02813":[0.04921,2],"0.02751":[0.01189,1],"0.02814":[0.09151,2],"0.02762":[0.010615,1],"0.02815":[0.06476,2],"0.02816":[0.083335,3],"0.02805":[0.031205,2],"0.02817":[0.17324,5],"0.02785":[0.059035,1],"0.02726":[0.017385,1],"0.02818":[0.130885,3],"0.02767":[0.014915,1],"0.02757":[0.010085,1],"0.02821":[0.04422,1],"0.02819":[0.411585,6],"0.0281":[0.087005,1],"0.02733":[0.07303,1],"0.02798":[0.01296,1],"0.02809":[0.7117,1],"0.02812":[0.05581,1],"0.02644":[0.1,3],"0.02788":[0.01951,1],"0.02642":[0.05,2],"0.02791":[0.020675,1],"0.02639":[0.12,3],"0.02638":[0.12,5],"0.02637":[0.2197,5],"0.02636":[0.11,3],"0.02635":[0.07,2],"0.02802":[0.012335,1],"0.0276":[0.02712,1],"0.02808":[0.01133,1],"0.0279":[0.02021,1]},"sell":{"0.0287":[0.0517714,2],"0.02871":[0.13,3],"0.02872":[0.05,1],"0.02873":[0.02,1],"0.02874":[0.1,2],"0.02875":[0.18,3],"0.02876":[0.03,1],"0.02877":[0.04,1],"0.02878":[0.09,2],"0.02879":[0.02,1],"0.0288":[0.17,4],"0.02881":[0.03,1],"0.02882":[0.04,1],"0.02883":[0.05,1],"0.02885":[0.04,1],"0.02886":[0.09,2],"0.02888":[0.04,2],"0.02889":[0.02,1],"0.02861":[0.01296,1],"0.0285":[0.12097,2],"0.02857":[0.01885,1],"0.02863":[0.01385,1],"0.0284":[0.02799,2],"0.02836":[0.531175,2],"0.02838":[0.11708,3],"0.02905":[0.01083,1],"0.02844":[0.71177,1],"0.02835":[0.111055,4],"0.02845":[0.01939,1],"0.02834":[0.03421,1]}}}'
+    http_version: 
+  recorded_at: Tue, 22 Oct 2019 05:33:57 GMT
+recorded_with: VCR 4.0.0
