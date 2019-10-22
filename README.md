@@ -332,6 +332,7 @@ Or install it yourself as:
 | Livecoin          | Y       | Y [x]      |         |         | Y           |          | livecoin          |       |
 | LocalBitcoins     | Y       | N          | Y [limit: 500]|   | Y           |          | localbitcoins     |  P2P  |
 | LocalTrade        | Y       |            |         |         | Y           | Y        | localtrade        |       |
+| Lukki             | Y       | Y [x]      |         |         | Y           | Y        | lukki             |       |
 | Luno              | Y       |            |         |         | Y           | Y        | luno              |       |
 | Lykke             | Y       | Y          | N       |         | Y           |          | lykke             |       |
 | Maplechange       | Y       | Y          |         |         | Y           | Y        | maplechange       |       |
