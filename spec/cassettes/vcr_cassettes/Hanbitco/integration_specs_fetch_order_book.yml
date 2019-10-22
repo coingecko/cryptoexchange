@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://user-api.hanbitco.com/v1/markets/eos_btc/orderbook
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - user-api.hanbitco.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '553'
+      Connection:
+      - close
+      Date:
+      - Tue, 22 Oct 2019 07:29:46 GMT
+      X-Amzn-Requestid:
+      - 63be6692-8dd9-4d29-91ec-dd720abaa462
+      X-Api-Service:
+      - api.service/2019-0320-0002
+      X-Amz-Apigw-Id:
+      - B9BsoHgUoE0FU7g=
+      Cache-Control:
+      - private, no-cache, no-store
+      X-Amzn-Trace-Id:
+      - Root=1-5daeafea-cf938eaab7610f00316ab968;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 04e88fffb4f4812c6b1375d0261db985.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50
+      X-Amz-Cf-Id:
+      - tL-HXBm-jzfwoyJv_hmrW81B499MxlMIPOV9UxhtbYFKoyrgn_r-nA==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":{"asks":[["0.00042","4.0578"],["0.000807","0.1577"],["0.001","254.2283"],["0.0017","0.1963"],["0.003245","21.1633"],["0.1","1"],["0.11","1"],["0.5","1"],["1000","1"],["11300","0.2"]],"bids":[["0.00036","33.2877"],["0.000358","12.6729"],["0.000356","33.2047"],["0.000355","11.289"],["0.000354","23.8211"],["0.000352","29.3106"],["0.00035","4.8737"],["0.000348","6.8671"],["0.000347","3.5763"],["0.000345","41.2170"],["0.000343","7.3035"],["0.000341","36.3784"],["0.00032","7.8936"],["0.000295","2.803"],["0.00025","11.4485"]]}}'
+    http_version: 
+  recorded_at: Tue, 22 Oct 2019 07:29:44 GMT
+recorded_with: VCR 4.0.0

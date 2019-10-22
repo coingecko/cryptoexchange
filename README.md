@@ -283,7 +283,8 @@ Or install it yourself as:
 | golix (API Failed)| Y       | Y          |         |         | Y           |          | golix             |       |
 | GOPAX             | Y       | Y [x]      | Y       |         | Y           | Y        | gopax             |       |
 | Graviex           | Y       | Y [x]      | N       |         | Y           |          | graviex           |       |
-| Hadax             | Y       | N          | N       |         | Y           | Y        | hadax             |       |
+| Hadax             | Y       | Y [x]      | N       |         | Y           | Y        | hadax             |       |
+| Hanbitco          | Y       | N          | N       |         | Y           | Y        | hanbitco          |       |
 | Hb.top            | Y       | Y [x]      | N       |         | Y           | N        | hb_top            |       |
 | Hikenex           | Y       | N          | N       |         | Y           | N        | hikenex           |       |
 | HitBTC            | Y       | Y [x]      | Y       |         | Y           | Y        | hitbtc            |       |
