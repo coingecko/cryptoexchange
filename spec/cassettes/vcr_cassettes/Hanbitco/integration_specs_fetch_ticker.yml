@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://user-api.hanbitco.com/v1/markets/eos_btc/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - user-api.hanbitco.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '224'
+      Connection:
+      - close
+      Date:
+      - Tue, 22 Oct 2019 07:29:03 GMT
+      X-Amzn-Requestid:
+      - 2c7e6078-badd-47fc-9e50-abd48c8038e5
+      X-Api-Service:
+      - api.service/2019-0320-0002
+      X-Amz-Apigw-Id:
+      - B9Bl6H5WoE0FoCA=
+      Cache-Control:
+      - private, no-cache, no-store
+      X-Amzn-Trace-Id:
+      - Root=1-5daeafbf-049bbab6ef827616cfbf7c1e;Sampled=0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 ed2d5dc5a2dc84c3b7fa7997534d0166.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50
+      X-Amz-Cf-Id:
+      - SBNy5odvr_ef88Z5jdjMZB1GGkmXK2ZyS-clAIsf1TOWLKrE4tjpQQ==
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":{"currencyPair":"EOS_BTC","timestamp":"1571724704","lastPrice":"0.000359","lastDayPrice":"0.000353","lowPrice":"0.000351","highPrice":"0.000361","volume":"321055.7906","executedAmount":"114.1786"}}'
+    http_version: 
+  recorded_at: Tue, 22 Oct 2019 07:29:01 GMT
+recorded_with: VCR 4.0.0
