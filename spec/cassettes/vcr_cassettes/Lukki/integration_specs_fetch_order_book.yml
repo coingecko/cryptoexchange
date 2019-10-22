@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tva.lukki.io/trading/books?page=1&ticker=npxs_btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - tva.lukki.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.6
+      Date:
+      - Tue, 22 Oct 2019 06:45:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '47'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET,HEAD,PUT,POST,DELETE
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "total": "0",
+          "data": [],
+          "page": "1"
+        }
+    http_version: 
+  recorded_at: Tue, 22 Oct 2019 06:45:53 GMT
+recorded_with: VCR 4.0.0
