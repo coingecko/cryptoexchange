@@ -31,6 +31,11 @@ RSpec.describe 'BitfinexFutures integration specs' do
     expect(ticker.payload).to_not be nil
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'bitfinex_futures', base: btc_usd_pair.base, target: btc_usd_pair.target, inst_id: btc_usd_pair.inst_id
+    expect(trade_page_url).to eq "https://www.bitfinex.com/t/BTCF0:USTF0"
+  end
+
   it 'fetch order book' do
     order_book = client.order_book(btc_usd_pair)
 
