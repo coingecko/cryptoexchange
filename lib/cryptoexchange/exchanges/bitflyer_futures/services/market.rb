@@ -22,6 +22,7 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.contract_interval    = market_pair.contract_interval
+          ticker.inst_id = market_pair.inst_id
           ticker.market    = BitflyerFutures::Market::NAME
           ticker.ask       = NumericHelper.to_d(output['best_ask'])
           ticker.bid       = NumericHelper.to_d(output['best_bid'])
