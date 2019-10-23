@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.blocklytics.org/uniswap/v1/exchanges?key=test_key
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.blocklytics.org
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 23 Oct 2019 10:31:02 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 google
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+         "code": 3,
+         "message": "API key not valid. Please pass a valid API key.",
+         "details": [
+          {
+           "@type": "type.googleapis.com/google.rpc.DebugInfo",
+           "stackEntries": [],
+           "detail": "service_control"
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Wed, 23 Oct 2019 10:31:02 GMT
+recorded_with: VCR 4.0.0
