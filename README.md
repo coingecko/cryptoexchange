@@ -51,6 +51,7 @@ Or install it yourself as:
 | Bgogo             | Y       | Y [x]      | Y [limit: 20]     |         | Y           | Y        | bgogo             |       |
 | Bhex              | Y       | Y          | Y       |         | Y           | Y        | bhex              |       |
 | Bibox             | Y       | Y [x]      | Y [limit: 200]    |         | Y           | Y        | bibox             |       |
+| Bibox (Futures)   | Y       | Y [x]      | Y [limit: 200]    |         | Y           | Y        | bibox_futures             |       |
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
 | BigONE            | Y       | Y [x]      | Y       |         | Y           | Y        | bigone            |       |
 | BiHODL            | Y       | Y [x]      | Y       |         | Y           | Y        | bihodl            |       |
