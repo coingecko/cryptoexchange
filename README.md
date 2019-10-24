@@ -184,6 +184,7 @@ Or install it yourself as:
 | Coinfield         | Y       | Y [x]      | Y       |         | Y           | Y        | coinfield         |       |
 | Coinfinit         | Y       | Y [x]      |         |         | Y           | Y        | coinfinit         |       |
 | Coinflex          | Y       | Y [x]      |         |         | Y           | Y        | coinflex          |       |
+| Coinfloor         | Y       | Y [x]      | Y       |         | Y           | Y        | coinfloor         |       |
 | Coingi            | Y       | Y [x]      | Y       |         | Y           | Y        | coingi            |       |
 | Coinhouse         | Y       |            |         |         | Y           | Y        | coinhouse         |       |
 | Coinhub           | Y       | Y          | Y       |         | Y           | Y        | coinhub           |       |
