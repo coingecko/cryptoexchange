@@ -17,6 +17,10 @@ module Cryptoexchange::Exchanges
           "#{Cryptoexchange::Exchanges::UpbitIndonesia::Market::API_URL}/candles/minutes/5?code=CRIX.UPBIT.#{market_pair.target.upcase}-#{market_pair.base.upcase}&count=288"
         end
 
+        def volume_url(market_pair)
+          "#{Cryptoexchange::Exchanges::UpbitIndonesia::Market::API_URL}/candles/minutes/240?code=CRIX.UPBIT.#{market_pair.target.upcase}-#{market_pair.base.upcase}&count=20"
+        end        
+
         def adapt(output, market_pair)
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
@@ -25,15 +29,17 @@ module Cryptoexchange::Exchanges
           ticker.last = NumericHelper.to_d(output[0]['tradePrice'])
           ticker.high = NumericHelper.to_d(output[0]['highPrice'])
           ticker.low = NumericHelper.to_d(output[0]['lowPrice'])
-          ticker.volume = adapt_volume(output)
+          ticker.volume = adapt_volume(volume_url(market_pair))
           ticker.timestamp = nil
           ticker.payload = output[0]
           ticker
         end
 
-        def adapt_volume(output)
+        def adapt_volume(volume_url)
+          output = JSON.parse(HTTP.get(volume_url))
+
           sum = 0
-          output.each do |output|
+          output.first(6).each do |output|
             sum += output["candleAccTradeVolume"]
           end
           sum
