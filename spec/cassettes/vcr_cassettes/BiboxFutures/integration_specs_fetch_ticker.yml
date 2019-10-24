@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bibox.com/v1/mdata?cmd=market&pair=4BTC_USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bibox.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Tengine
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '437'
+      Access-Control-Allow-Origin:
+      - undefined
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-access-token, X-Requested-With
+      Access-Control-Max-Age:
+      - '172800'
+      X-Ca-Request-Id:
+      - C24FE40F-2837-4BA7-B077-B6CF3272CF3E
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"1b5-lLHiDwZAAsXK1N6kD9Hgy4w8AIA"
+      Date:
+      - Thu, 24 Oct 2019 09:19:12 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"result":{"is_hide":0,"high_cny":"56642.9324","amount":"15355","coin_symbol":"4BTC","last":"7453.9700","currency_symbol":"USDT","change":"-543.9800","low_cny":"51492.0771","base_last_cny":"52705.42396245","area_id":16,"percent":"-6.80%","last_cny":"52705.4240","high":"8010.8400","low":"7282.3700","last_usd":"7453.9700","pair_type":4,"vol24H":"1535476","id":304,"high_usd":"8010.8400","low_usd":"7282.3700"},"cmd":"market","ver":"1.1"}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2019 09:19:12 GMT
+recorded_with: VCR 4.0.0
