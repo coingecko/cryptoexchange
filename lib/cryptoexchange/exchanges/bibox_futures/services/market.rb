@@ -24,6 +24,8 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = BiboxFutures::Market::NAME
+          ticker.contract_interval = market_pair.inst_id
+          ticker.inst_id   = market_pair.inst_id
           ticker.last      = NumericHelper.to_d(market['last'])
           ticker.high      = NumericHelper.to_d(market['high'])
           ticker.low       = NumericHelper.to_d(market['low'])

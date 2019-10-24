@@ -62,4 +62,15 @@ RSpec.describe 'BiboxFutures integration specs' do
     expect(trade.market).to eq 'bibox_futures'
   end
 
+  context 'fetch contract stat' do
+    it 'fetch contract stat' do
+      contract_stat = client.contract_stat(btc_usdt_pair)
+
+      expect(contract_stat.base).to eq 'BTC'
+      expect(contract_stat.target).to eq 'USDT'
+      expect(contract_stat.market).to eq 'bibox_futures'
+      expect(contract_stat.contract_type).to eq 'perpetual'
+    end
+  end
+
 end

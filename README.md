@@ -51,7 +51,6 @@ Or install it yourself as:
 | Bgogo             | Y       | Y [x]      | Y [limit: 20]     |         | Y           | Y        | bgogo             |       |
 | Bhex              | Y       | Y          | Y       |         | Y           | Y        | bhex              |       |
 | Bibox             | Y       | Y [x]      | Y [limit: 200]    |         | Y           | Y        | bibox             |       |
-| Bibox (Futures)   | Y       | Y [x]      | Y [limit: 200]    |         | Y           | Y        | bibox_futures             |       |
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
 | BigONE            | Y       | Y [x]      | Y       |         | Y           | Y        | bigone            |       |
 | BiHODL            | Y       | Y [x]      | Y       |         | Y           | Y        | bihodl            |       |
@@ -481,6 +480,7 @@ Or install it yourself as:
 ### Derivatives (Perpetual & Futures)
 | Exchange          | T | OB | List | URL | OpenInt | CT  | Idx | ST | ET | F% | NFT | F%P |                  |
 |-----------------  |---|----|------|-----|---------|-----|-----|----|----|----|-----|-----|------------------|
+| Bibox (Futures)   | Y | Y  | Y    |  Y  |  N      | Y   |  N  | N  | N  | N  | N   | N   |  bibox_futures   |
 | Binance Futures   | Y | Y  | Y    |  Y  |  N      | Y   |  Y  | N  | N  | Y  | Y   | N   |  binance_futures |
 | Bitflyer Futures  | Y | Y  | Y    |  Y  |  N      | Y   |  N  | N  | N  |    |     |     |  bitflyer_futures  |
 | Bitfinex Futures  | Y | Y  | Y    |     |  N      | Y   |  Y  | N  | N  | Y  | Y   |     |  bitfinex_futures  |
