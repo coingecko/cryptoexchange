@@ -11,12 +11,14 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output['result'].map do |pair|
+            next if pair["pair_type"] == 4
+
             Cryptoexchange::Models::MarketPair.new(
               base: pair['coin_symbol'],
               target: pair['currency_symbol'],
               market: Bibox::Market::NAME
             )
-          end
+          end.compact
         end
       end
     end
