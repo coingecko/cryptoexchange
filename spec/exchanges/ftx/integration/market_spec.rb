@@ -72,8 +72,8 @@ RSpec.describe 'FTX integration specs' do
       expect(contract_stat.expire_timestamp).to be nil
       expect(contract_stat.start_timestamp).to be nil
       expect(contract_stat.contract_type).to eq 'perpetual'
-      expect(contract_stat.funding_rate_percentage).to be nil
-      expect(contract_stat.funding_rate_percentage_predicted).to be_a Numeric
+      expect(contract_stat.funding_rate_percentage).to be_a Numeric
+      expect(contract_stat.funding_rate_percentage_predicted).to be nil
       expect(2018..Date.today.year).to include(Time.at(contract_stat.next_funding_rate_timestamp).year)
     end
 
