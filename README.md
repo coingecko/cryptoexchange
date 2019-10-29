@@ -501,6 +501,7 @@ Or install it yourself as:
 | Kumex             | Y | Y  | Y    |  Y  |         | Y   |     |    |    |    |     |     |  kumex |
 | OKEx Swaps        | Y | Y  | Y    |     |  Y      | Y   |  Y  | Y  | Y  | Y  | Y   | Y   |  okex_swaps  |
 | BTSE (Futures)    | Y | Y  | Y    |  Y  |         | Y   |     | Y  | Y  |    |     |     |  btse_futures  |
+| Prime XBT         | Y | Y  | Y    |  Y  |  N      | Y   |  N  | N  | N  | N  | N   | N   |  prime_xbt  |
 
 *Legend*
 
