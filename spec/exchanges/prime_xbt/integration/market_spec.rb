@@ -48,4 +48,15 @@ RSpec.describe 'Prime XBT integration specs' do
     expect(order_book.bids.count).to be > 5
     expect(order_book.payload).to_not be nil
   end
+
+  context 'fetch contract stat' do
+    it 'fetch contract stat' do
+      contract_stat = client.contract_stat(btc_usd_pair)
+
+      expect(contract_stat.base).to eq 'BTC'
+      expect(contract_stat.target).to eq 'USD'
+      expect(contract_stat.market).to eq 'prime_xbt'
+      expect(contract_stat.contract_type).to eq 'perpetual'
+    end
+  end
 end
