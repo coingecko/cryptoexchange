@@ -6,15 +6,15 @@ module Cryptoexchange::Exchanges
 
         def fetch
           output = super
-          adapt(output['data'])
+          adapt(output)
         end
 
         def adapt(output)
           market_pairs = []
           output.each do |value|
               market_pairs << Cryptoexchange::Models::MarketPair.new(
-                                base: value['baseAsset'],
-                                target: value['quoteAsset'],
+                                base: value['quoteAsset'],
+                                target: value['baseAsset'],
                                 market: Dobitrade::Market::NAME
                               )
           end

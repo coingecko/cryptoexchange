@@ -4,17 +4,29 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            true
+            false
           end
         end
 
-        def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output['data'], market_pair)
+        def fetch
+          output = super(ticker_url)
+          adapt_all(output)
         end
 
-        def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Dobitrade::Market::API_URL}/market/quote?market=#{market_pair.base.downcase}_#{market_pair.target.downcase}"
+        def ticker_url
+          "#{Cryptoexchange::Exchanges::Dobitrade::Market::API_URL}/quotes"
+        end
+
+        def adapt_all(output)
+          output.map do |pair|
+            base, target = pair['quoteAsset'], pair['baseAsset']
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+              base: base,
+              target: target,
+              market: Dobitrade::Market::NAME
+            )
+            adapt(pair, market_pair)
+          end
         end
 
         def adapt(output, market_pair)
@@ -22,11 +34,9 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Dobitrade::Market::NAME
-          ticker.ask       = NumericHelper.to_d(output['sell'])
-          ticker.bid       = NumericHelper.to_d(output['buy'])
           ticker.high      = NumericHelper.to_d(output['high'])
           ticker.low       = NumericHelper.to_d(output['low'])
-          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.last      = NumericHelper.to_d(output['lastPrice'])
           ticker.volume    = NumericHelper.to_d(output['volume'])
           ticker.timestamp = nil
           ticker.payload   = output

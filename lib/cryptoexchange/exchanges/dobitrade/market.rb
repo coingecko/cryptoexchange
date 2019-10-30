@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://api.dobiexchange.com'
 
       def self.trade_page_url(args={})
-        "https://www.dobitrade.com/en/trade/#{args[:base].downcase}_#{args[:target].downcase}"
+        "https://www.dobiexchange.com/trade?coin=#{args[:base].downcase}_#{args[:target].downcase}"
       end
     end
   end
