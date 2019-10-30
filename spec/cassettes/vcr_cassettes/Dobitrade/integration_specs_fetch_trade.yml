@@ -12,30 +12,40 @@ http_interactions:
       Host:
       - api.dobiexchange.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Thu, 24 Jan 2019 07:44:45 GMT
+      - Wed, 30 Oct 2019 03:25:12 GMT
       Content-Type:
-      - application/json; charset=utf-8
+      - application/json;charset=UTF-8
       Transfer-Encoding:
       - chunked
       Connection:
       - close
-      Vary:
-      - Accept-Encoding
-      Set-Cookie:
-      - yd_cookie=b6e51c73-bc8d-4b457252442db95b12a8411e163d41827d12; Expires=1548323085;
-        Path=/; HttpOnly
       Server:
-      - WAF/2.4-12.1
+      - waf/4.17.1-2.el6
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Via:
+      - 1.1 PSxjpSin5uc165:4 (Cdn Cache Server V2.0), 1.1 VMtwtbTPE1ih126:1 (Cdn Cache
+        Server V2.0)
     body:
       encoding: UTF-8
-      string: '{"status":1,"msg":"","data":[{"t":"1548316312000","p":"0.00885897","n":"27.6521401","s":"buy"},{"t":"1548316311000","p":"0.00885897","n":"29.0663855","s":"buy"},{"t":"1548316254000","p":"0.00885695","n":"34.6316687","s":"sell"},{"t":"1548316250000","p":"0.00885699","n":"30.4278525","s":"buy"},{"t":"1548316250000","p":"0.00885699","n":"27.7195176","s":"buy"},{"t":"1548316250000","p":"0.00885699","n":"3.0827081","s":"sell"},{"t":"1548316249000","p":"0.00885699","n":"27.7195176","s":"sell"},{"t":"1548316245000","p":"0.00885599","n":"33.6658368","s":"buy"},{"t":"1548316245000","p":"0.00885599","n":"33.917742","s":"buy"},{"t":"1548316245000","p":"0.00885599","n":"22.7176997","s":"sell"},{"t":"1548316241000","p":"0.00885599","n":"21.8838548","s":"buy"},{"t":"1548316241000","p":"0.00885599","n":"3.3075007","s":"buy"},{"t":"1548316240000","p":"0.00885599","n":"21.8838548","s":"sell"},{"t":"1548316240000","p":"0.00885599","n":"23.2769639","s":"sell"},{"t":"1548316236000","p":"0.00885595","n":"26.4703431","s":"buy"},{"t":"1548316235000","p":"0.00885595","n":"22.7829036","s":"sell"},{"t":"1548316235000","p":"0.00885595","n":"4.3413508","s":"sell"},{"t":"1548316235000","p":"0.00885595","n":"22.7829036","s":"buy"},{"t":"1548316231000","p":"0.00885597","n":"29.5503457","s":"buy"},{"t":"1548316230000","p":"0.00885597","n":"24.0195115","s":"sell"}]}'
+      string: '{"status":1,"msg":"Success","data":[{"p":"0.00645000","s":"sell","t":"1572405682000","n":"0.30865200"}]}'
     http_version: 
-  recorded_at: Thu, 24 Jan 2019 07:44:45 GMT
+  recorded_at: Wed, 30 Oct 2019 03:25:12 GMT
 recorded_with: VCR 4.0.0
