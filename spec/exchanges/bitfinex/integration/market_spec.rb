@@ -26,8 +26,13 @@ RSpec.describe 'Bitfinex integration specs' do
     expect(ticker.high).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
-    
+
     expect(ticker.payload).to_not be nil
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'bitfinex', base: btc_usd_pair.base, target: btc_usd_pair.target
+    expect(trade_page_url).to eq 'https://www.bitfinex.com/t/BTCUSD?refcode=6dwJVwfb'
   end
 
   it 'fetch order book' do
