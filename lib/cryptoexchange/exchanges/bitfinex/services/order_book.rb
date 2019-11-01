@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def order_book_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitfinex::Market::API_URL}/book/t#{market_pair.base.upcase}#{market_pair.target.upcase}/P0"
+          "#{Cryptoexchange::Exchanges::Bitfinex::Market::API_URL}/book/t#{market_pair.base.upcase}#{market_pair.target.upcase}/P2?len=100"
         end
 
         def adapt(output, market_pair)
