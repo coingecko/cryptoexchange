@@ -14,32 +14,35 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Bitonbay::Market::API_URL}/api-public-ticker"
+          "#{Cryptoexchange::Exchanges::Bitonbay::Market::API_URL}/ticker"
         end
 
         def adapt_all(output)
-          output['lastprice'].map do |base, target|
+          output['data'].map do |output|
+            base = output["coin_type"]
+            target = output["market_type"]
+            
             market_pair = Cryptoexchange::Models::MarketPair.new(
-              base: base,
-              target: target.keys.first,
-              market: Bitonbay::Market::NAME
-            )
+                            base: base,
+                            target: target,
+                            market: Bitonbay::Market::NAME
+                          )
+
             adapt(market_pair, output)
-          end.compact
+          end
         end
 
         def adapt(market_pair, output)
-          last_data = output["lastprice"][market_pair.base.downcase]['btc']
-          volume_data = output["accumamount"][market_pair.base.downcase]['btc']
-
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Bitonbay::Market::NAME
-          ticker.last      = last_data.nil? ? nil : NumericHelper.to_d(last_data)
-          ticker.volume    = volume_data.nil? ? nil : NumericHelper.to_d(volume_data)
+          ticker.last      = output["latest_price"]
+          ticker.volume    = output["trade_vol_24h"]
+          ticker.high      = output["max_price"]
+          ticker.low       = output["min_price"]
           ticker.timestamp = nil
-          ticker.payload   = nil
+          ticker.payload   = output
           ticker
         end
       end

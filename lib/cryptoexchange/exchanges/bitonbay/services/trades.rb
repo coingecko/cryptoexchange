@@ -8,20 +8,20 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitonbay::Market::API_URL}/api-public-filledbook0x0#{market_pair.base.downcase}#{market_pair.target.downcase}"
+          "#{Cryptoexchange::Exchanges::Bitonbay::Market::API_URL}/history?market=#{market_pair.target}&symbol=#{market_pair.base}"
         end
 
         def adapt(output, market_pair)
-          output.collect do |trade|
+          output["data"].collect do |trade|
             tr = Cryptoexchange::Models::Trade.new
-            tr.trade_id  = trade['idx']
+            tr.trade_id  = trade['seq']
             tr.base      = market_pair.base
             tr.target    = market_pair.target
             tr.market    = Bitonbay::Market::NAME
-            tr.type      = trade['order_type'] == 'b' ? 'buy' : 'sell'
-            tr.price     = trade['trade_price']
-            tr.amount    = trade['trade_amount']
-            tr.timestamp = DateTime.parse(trade['trade_date']).to_time.to_i
+            tr.type      = trade['order_type'] == 'ask' ? 'sell' : 'buy'
+            tr.price     = trade['price']
+            tr.amount    = trade['unit_traded']
+            tr.timestamp = Time.parse(trade['transaction_date']).to_i
             tr.payload   = trade
             tr
           end
