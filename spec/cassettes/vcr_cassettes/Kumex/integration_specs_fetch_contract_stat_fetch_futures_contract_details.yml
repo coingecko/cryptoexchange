@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kitchen.kumex.com/web-front/contracts/XBTMZ19
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - kitchen.kumex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 04 Nov 2019 12:34:25 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - http://www.kumex.com
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin,X-Requested-With,content-type,Accept,Authorization
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS,PATCH
+      Access-Control-Max-Age:
+      - '86400'
+      X-Trace-Id:
+      - cfcf315aab3ee92a
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      Set-Cookie:
+      - SESSION=MmIzYjU5YzMtOTY5MC00OWNjLWI4YTUtNzYzYTUwNTFiY2Fh; Max-Age=604800;
+        Expires=Mon, 11-Nov-2019 12:34:25 GMT; Path=/; HttpOnly
+      Server:
+      - "-"
+      Web-Tag:
+      - "/"
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"code":"200","msg":"success","retry":false,"data":{"symbol":"XBTMZ19","rootSymbol":"XBT","type":"FFICSX","firstOpenDate":1572336000000,"expireDate":1577448000000,"settleDate":1577448000000,"baseCurrency":"XBT","quoteCurrency":"USD","settleCurrency":"XBT","maxOrderQty":1000000,"maxPrice":1000000.0000000000,"lotSize":1,"tickSize":1.0,"multiplier":-1.0,"initialMargin":0.01,"maintainMargin":0.005,"maxRiskLimit":50,"minRiskLimit":50,"riskStep":10,"makerFeeRate":-2.5E-4,"takerFeeRate":6.0E-4,"takerFixFee":0.0000000000,"makerFixFee":0.0000000000,"settlementFee":null,"isDeleverage":true,"isQuanto":false,"isInverse":true,"markMethod":"FairPrice","fairMethod":null,"fundingBaseSymbol":null,"fundingQuoteSymbol":null,"fundingRateSymbol":null,"indexSymbol":".BXBT","status":"Open","fundingFeeRate":null,"predictedFundingFeeRate":null,"openInterest":"45754","turnoverOf24h":12.73675817,"volumeOf24h":118904.00000000,"markPrice":9427.18,"indexPrice":9265.77,"lastTradePrice":9436.0000000000,"nextFundingRateTime":null}}'
+    http_version: 
+  recorded_at: Mon, 04 Nov 2019 12:34:24 GMT
+recorded_with: VCR 4.0.0

@@ -9,12 +9,12 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          output = super(contracts_url)
-          adapt(output['data'], market_pair)
+          output = super(contract_stat_url(market_pair.inst_id))
+          adapt(output['data'], market_pair,)
         end
 
-        def contracts_url
-          "#{Cryptoexchange::Exchanges::Kumex::Market::API_URL}/contracts/active"
+        def contract_stat_url(inst_id)
+          "https://kitchen.kumex.com/web-front/contracts/#{inst_id}"
         end
 
         def adapt(output, market_pair)
@@ -23,26 +23,26 @@ module Cryptoexchange::Exchanges
           contract_stat.base      = market_pair.base
           contract_stat.target    = market_pair.target
           contract_stat.market    = Kumex::Market::NAME
-          # contract_stat.open_interest
-          # contract_stat.index    
-          # contract_stat.payload  
-          # contract_stat.expire_timestamp
-          # contract_stat.start_timestamp
-          contract_stat.contract_type = contract_type(output, market_pair.inst_id)
-          # contract_stat.funding_rate_percentage
-          # contract_stat.next_funding_rate_timestamp
-          # contract_stat.funding_rate_percentage_predicted
+          contract_stat.open_interest = output["openInterest"] ? NumericHelper.to_d(output["openInterest"]) : nil
+          contract_stat.index = output["indexPrice"]
+          contract_stat.payload = output
+          contract_stat.expire_timestamp = output["expireDate"] ? output["expireDate"] / 1000 : nil
+          contract_stat.start_timestamp = output["firstOpenDate"] ? output["firstOpenDate"] / 1000 : nil
+          contract_stat.contract_type = contract_type(output["type"], market_pair.inst_id)
+
+          contract_stat.funding_rate_percentage = output["fundingFeeRate"] ? output["fundingFeeRate"] * 100 : nil
+          contract_stat.next_funding_rate_timestamp = output["nextFundingRateTime"] ? Time.now.to_i + (output["nextFundingRateTime"] / 1000) : nil
+          contract_stat.funding_rate_percentage_predicted = output["predictedFundingFeeRate"] ? output["predictedFundingFeeRate"] * 100 : nil
 
           contract_stat
         end
 
-        def contract_type(output, inst_id)
-          contract = output.select { |o| o['symbol'] == inst_id }.first
-
-          if contract['type'] == "FFWCSX"
+        def contract_type(type, inst_id)
+          if type == "FFWCSX"
             "perpetual"
+          elsif type == "FFICSX"
+            "futures"
           end
-          # TODO: Futures not support yet by API or exchange, implement later
         end
       end
     end
