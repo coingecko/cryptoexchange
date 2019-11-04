@@ -27,8 +27,9 @@ module Cryptoexchange::Exchanges
         def contract_type(type)
           if type == "FFWCSX"
             "perpetual"
+          elsif type == "FFICSX"
+            "futures"
           end
-          # TODO: Futures not support yet by API or exchange, implement later
         end
       end
     end

@@ -498,7 +498,7 @@ Or install it yourself as:
 | Huobi DM          | Y | Y  | Y    |     |  Y      | Y   |  Y  | Y  | Y  | N  | N   | N   |  huobi_dm  |
 | JexFutures        | Y | Y  | Y    |     |  N      | Y   |  Y  | N  | N  | Y  | Y   | Y   |  jex_futures |
 | Kraken Futures    | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | Y  | Y  | Y  | Y   | Y   |  kraken_futures  |
-| Kumex             | Y | Y  | Y    |  Y  |         | Y   |     |    |    |    |     |     |  kumex |
+| Kumex             | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  | Y  | Y  | Y  | Y   | Y   |  kumex |
 | OKEx Swaps        | Y | Y  | Y    |     |  Y      | Y   |  Y  | Y  | Y  | Y  | Y   | Y   |  okex_swaps  |
 | BTSE (Futures)    | Y | Y  | Y    |  Y  |         | Y   |     | Y  | Y  |    |     |     |  btse_futures  |
 | Prime XBT         | Y | Y  | Y    |  Y  |  N      | Y   |  N  | N  | N  | N  | N   | N   |  prime_xbt  |
