@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.bitonbay.com/api-public-filledbook0x0ethbtc
+    uri: https://api.bitonbay.com/v1/history?market=BTC&symbol=ETH
     body:
       encoding: UTF-8
       string: ''
@@ -10,58 +10,72 @@ http_interactions:
       Connection:
       - close
       Host:
-      - www.bitonbay.com
+      - api.bitonbay.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-store, no-cache, must-revalidate
-      Pragma:
-      - no-cache
+      Date:
+      - Mon, 04 Nov 2019 07:26:26 GMT
       Content-Type:
       - text/html; charset=UTF-8
-      Expires:
-      - Thu, 19 Nov 1981 08:52:00 GMT
-      Server:
-      - Microsoft-IIS/8.0
-      X-Powered-By:
-      - ASP.NET
-      - PHP/7.0.21
-      Set-Cookie:
-      - PHPSESSID=vjhotu3tpdtq343d1eil149n45; path=/
-      Date:
-      - Tue, 02 Oct 2018 21:44:20 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
       - close
-      Content-Length:
-      - '3557'
+      Set-Cookie:
+      - FNsessions=m%2BBUU%2FjTBH0Q3g43%2F5saz0HhTGGaLxX2dxs9c%2B1mHwgncxtA%2BnfCttPV2NDFAq397ADrRtk7kGWttfy62A7hyCKEocIw%2B3vPKma%2BoTNhCDs667gA5XQNuCz%2FEY0h%2BoesrCfOS2pljInGh6Qw1geMHKP%2FFHdtwPujWtiKf6o9fO9cpD6xE336xt2Sni9ndU33%2BQSUk3QkumYwbYBA%2F80BqN6CUO72Ef572QKPnsHaMS9KWI3tSgcFOk8SqM6KHpJ3RMmdItLdAayijzZK7e5gh%2BKCHjee3%2F0JE8SnhhTIU%2BJ8Uh%2FJzbE92PoIuI1xMqL%2FnU5nQWvPwL6h70Vw5JIMhQ%3D%3Dc95670f162098d5d6f17be84bbb55cd3b649caeb;
+        expires=Mon, 04-Nov-2019 07:56:26 GMT; Max-Age=1800; path=/
+      - __cfduid=d759fae5080aad0f23f3677d5f4ba7e3b1572852386; expires=Tue, 03-Nov-20
+        07:26:26 GMT; path=/; domain=.bitonbay.com; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5304dc1859d1dd4a-KUL
     body:
       encoding: UTF-8
-      string: '[{"idx":"1","zone_type":"eth","currency_type":"btc","order_type":"s","market_idx":"23455215","trade_price":"0.03447319","trade_amount":"107.75","trade_date":"2018-10-03
-        04:43:55"},{"idx":"2","zone_type":"eth","currency_type":"btc","order_type":"b","market_idx":"23455052","trade_price":"0.03463709","trade_amount":"90.738","trade_date":"2018-10-03
-        04:41:04"},{"idx":"3","zone_type":"eth","currency_type":"btc","order_type":"b","market_idx":"23454878","trade_price":"0.03463709","trade_amount":"27.1","trade_date":"2018-10-03
-        04:38:34"},{"idx":"4","zone_type":"eth","currency_type":"btc","order_type":"b","market_idx":"23454730","trade_price":"0.03466784","trade_amount":"66.1","trade_date":"2018-10-03
-        04:37:02"},{"idx":"5","zone_type":"eth","currency_type":"btc","order_type":"b","market_idx":"23454636","trade_price":"0.03466784","trade_amount":"40.948","trade_date":"2018-10-03
-        04:34:47"},{"idx":"6","zone_type":"eth","currency_type":"btc","order_type":"b","market_idx":"23454559","trade_price":"0.03466784","trade_amount":"117.08","trade_date":"2018-10-03
-        04:33:24"},{"idx":"7","zone_type":"eth","currency_type":"btc","order_type":"b","market_idx":"23454303","trade_price":"0.03464789","trade_amount":"99.425","trade_date":"2018-10-03
-        04:30:07"},{"idx":"8","zone_type":"eth","currency_type":"btc","order_type":"b","market_idx":"23454126","trade_price":"0.03454437","trade_amount":"80.461","trade_date":"2018-10-03
-        04:26:49"},{"idx":"9","zone_type":"eth","currency_type":"btc","order_type":"s","market_idx":"23453958","trade_price":"0.03454437","trade_amount":"9.896","trade_date":"2018-10-03
-        04:24:44"},{"idx":"10","zone_type":"eth","currency_type":"btc","order_type":"s","market_idx":"23453796","trade_price":"0.03454437","trade_amount":"93.439","trade_date":"2018-10-03
-        04:22:30"},{"idx":"11","zone_type":"eth","currency_type":"btc","order_type":"s","market_idx":"23453614","trade_price":"0.03441278","trade_amount":"35.7","trade_date":"2018-10-03
-        04:19:26"},{"idx":"12","zone_type":"eth","currency_type":"btc","order_type":"b","market_idx":"23453526","trade_price":"0.03441278","trade_amount":"12.67","trade_date":"2018-10-03
-        04:17:42"},{"idx":"13","zone_type":"eth","currency_type":"btc","order_type":"s","market_idx":"23453358","trade_price":"0.03439414","trade_amount":"30","trade_date":"2018-10-03
-        04:15:10"},{"idx":"14","zone_type":"eth","currency_type":"btc","order_type":"b","market_idx":"23453279","trade_price":"0.03463739","trade_amount":"54","trade_date":"2018-10-03
-        04:13:51"},{"idx":"15","zone_type":"eth","currency_type":"btc","order_type":"b","market_idx":"23453120","trade_price":"0.03454347","trade_amount":"37.09","trade_date":"2018-10-03
-        04:11:23"},{"idx":"16","zone_type":"eth","currency_type":"btc","order_type":"s","market_idx":"23452871","trade_price":"0.0345","trade_amount":"55","trade_date":"2018-10-03
-        04:07:51"},{"idx":"17","zone_type":"eth","currency_type":"btc","order_type":"s","market_idx":"23452784","trade_price":"0.03458343","trade_amount":"64","trade_date":"2018-10-03
-        04:06:00"},{"idx":"18","zone_type":"eth","currency_type":"btc","order_type":"b","market_idx":"23452626","trade_price":"0.03456618","trade_amount":"90","trade_date":"2018-10-03
-        04:03:50"},{"idx":"19","zone_type":"eth","currency_type":"btc","order_type":"s","market_idx":"23452467","trade_price":"0.03469668","trade_amount":"43.65","trade_date":"2018-10-03
-        04:01:51"},{"idx":"20","zone_type":"eth","currency_type":"btc","order_type":"b","market_idx":"23452321","trade_price":"0.03469668","trade_amount":"90.65","trade_date":"2018-10-03
-        03:59:25"}]'
+      string: '{"status":"0000","data":[{"seq":"542702","price":0.01978978,"unit_traded":0.36976662,"type":"ask","transaction_date":"2019-11-04
+        14:26:15"},{"seq":"542701","price":0.01978978,"unit_traded":0.60921839,"type":"ask","transaction_date":"2019-11-04
+        14:26:05"},{"seq":"542700","price":0.01978978,"unit_traded":0.66368685,"type":"ask","transaction_date":"2019-11-04
+        14:25:56"},{"seq":"542697","price":0.01978978,"unit_traded":0.18161522,"type":"ask","transaction_date":"2019-11-04
+        14:25:44"},{"seq":"542696","price":0.01978978,"unit_traded":0.14161747,"type":"ask","transaction_date":"2019-11-04
+        14:25:44"},{"seq":"542695","price":0.01978978,"unit_traded":0.18161522,"type":"ask","transaction_date":"2019-11-04
+        14:25:44"},{"seq":"542690","price":0.01978978,"unit_traded":0.20580526,"type":"bid","transaction_date":"2019-11-04
+        14:25:21"},{"seq":"542689","price":0.01978978,"unit_traded":0.7547781,"type":"ask","transaction_date":"2019-11-04
+        14:25:12"},{"seq":"542686","price":0.01978978,"unit_traded":0.65946698,"type":"ask","transaction_date":"2019-11-04
+        14:24:57"},{"seq":"542684","price":0.01978978,"unit_traded":0.40598165,"type":"ask","transaction_date":"2019-11-04
+        14:24:45"},{"seq":"542683","price":0.01978978,"unit_traded":0.7721511,"type":"bid","transaction_date":"2019-11-04
+        14:24:44"},{"seq":"542682","price":0.01978978,"unit_traded":0.00785672,"type":"bid","transaction_date":"2019-11-04
+        14:24:44"},{"seq":"542681","price":0.01978978,"unit_traded":0.7721511,"type":"ask","transaction_date":"2019-11-04
+        14:24:43"},{"seq":"542680","price":0.01978978,"unit_traded":0.26385035,"type":"ask","transaction_date":"2019-11-04
+        14:24:35"},{"seq":"542675","price":0.01978978,"unit_traded":0.56157257,"type":"ask","transaction_date":"2019-11-04
+        14:24:02"},{"seq":"542672","price":0.01978978,"unit_traded":0.13205692,"type":"ask","transaction_date":"2019-11-04
+        14:23:51"},{"seq":"542670","price":0.01978978,"unit_traded":0.49571197,"type":"ask","transaction_date":"2019-11-04
+        14:23:45"},{"seq":"542669","price":0.01978978,"unit_traded":0.13566516,"type":"bid","transaction_date":"2019-11-04
+        14:23:44"},{"seq":"542668","price":0.01978978,"unit_traded":0.49571197,"type":"bid","transaction_date":"2019-11-04
+        14:23:44"},{"seq":"542667","price":0.01978978,"unit_traded":0.37377817,"type":"bid","transaction_date":"2019-11-04
+        14:23:44"},{"seq":"542666","price":0.01978978,"unit_traded":0.40683956,"type":"bid","transaction_date":"2019-11-04
+        14:23:28"},{"seq":"542664","price":0.01978978,"unit_traded":0.20749608,"type":"ask","transaction_date":"2019-11-04
+        14:23:12"},{"seq":"542663","price":0.01978978,"unit_traded":0.23244588,"type":"bid","transaction_date":"2019-11-04
+        14:23:08"},{"seq":"542662","price":0.01978978,"unit_traded":0.42587787,"type":"bid","transaction_date":"2019-11-04
+        14:23:04"},{"seq":"542658","price":0.01978978,"unit_traded":0.65610912,"type":"bid","transaction_date":"2019-11-04
+        14:22:44"},{"seq":"542657","price":0.01978978,"unit_traded":0.05236805,"type":"bid","transaction_date":"2019-11-04
+        14:22:44"},{"seq":"542656","price":0.01978978,"unit_traded":0.65610912,"type":"ask","transaction_date":"2019-11-04
+        14:22:44"},{"seq":"542655","price":0.01978978,"unit_traded":0.17991042,"type":"bid","transaction_date":"2019-11-04
+        14:22:33"},{"seq":"542653","price":0.01978978,"unit_traded":0.38819209,"type":"ask","transaction_date":"2019-11-04
+        14:22:12"},{"seq":"542651","price":0.01978978,"unit_traded":0.55932935,"type":"ask","transaction_date":"2019-11-04
+        14:21:49"}]}'
     http_version: 
-  recorded_at: Tue, 02 Oct 2018 21:44:21 GMT
+  recorded_at: Mon, 04 Nov 2019 07:26:27 GMT
 recorded_with: VCR 4.0.0

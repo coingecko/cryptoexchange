@@ -10,22 +10,11 @@ module Cryptoexchange::Exchanges
 
         def fetch(market_pair)
           output = super(ticker_url(market_pair))
-          output = sort(output)
           adapt(output, market_pair)
         end
 
         def ticker_url(market_pair)
-          "https://www.bitonbay.com/api-public-orderbook0x0#{market_pair.base.downcase}#{market_pair.target.downcase}"
-        end
-
-        def sort(output)
-          orders = Hash.new
-          orders['asks'] = Array.new
-          orders['bids'] = Array.new
-            output.map do | order |
-             order['order_type'] == 'b' ? orders['bids'].push(order) : orders['asks'].push(order)
-            end
-          orders
+          "#{Cryptoexchange::Exchanges::Bitonbay::Market::API_URL}/orderbook?market=#{market_pair.target}&symbol=#{market_pair.base}"
         end
 
         def adapt(output, market_pair)
@@ -34,8 +23,8 @@ module Cryptoexchange::Exchanges
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
           order_book.market    = Bitonbay::Market::NAME
-          order_book.asks      = adapt_orders(output['asks'])
-          order_book.bids      = adapt_orders(output['bids'])
+          order_book.asks      = adapt_orders(output['data']['ask'])
+          order_book.bids      = adapt_orders(output['data']['bid'])
           order_book.timestamp = Time.now.to_i
           order_book.payload   = output
           order_book
@@ -43,8 +32,8 @@ module Cryptoexchange::Exchanges
 
         def adapt_orders(orders)
           orders.collect do |order_entry|
-            Cryptoexchange::Models::Order.new(price: order_entry['order_price'],
-                                              amount: order_entry['order_amount'])
+            Cryptoexchange::Models::Order.new(price: order_entry['price'],
+                                              amount: order_entry['qty'])
           end
         end
       end
