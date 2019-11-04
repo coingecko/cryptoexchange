@@ -340,7 +340,7 @@ Or install it yourself as:
 | Maplechange       | Y       | Y          |         |         | Y           | Y        | maplechange       |       |
 | MaxMaicoin        | Y       | Y [x]      | Y       |         | Y           | Y        | max_maicoin       |       |
 | MercadoBitcoin    | Y       | Y [x]      |         |         | User-Defined|          | mercado_bitcoin   |       |
-| Mercatox          | Y       | N          | N       | N       | Y           |          | mercatox          |       |
+| Mercatox          | Y       | Y [x]      | N       | N       | Y           |          | mercatox          |       |
 | Mercuriex         | Y       | N          | N       | N       | Y           | Y        | mercuriex         |       |
 | MXC               | Y       | Y [x]      |         |         | Y           | Y        | mxc               |       |
 | Myspeedtrade      | Y       | Y          |         |         | Y           |          | myspeedtrade      |       |

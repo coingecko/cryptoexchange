@@ -14,11 +14,11 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Mercatox::Market::API_URL}/json24"
+          "#{Cryptoexchange::Exchanges::Mercatox::Market::API_URL}/ticker"
         end
 
         def adapt_all(output)
-          output['pairs'].map do |pair, ticker|
+          output.map do |pair, ticker|
             base, target = pair.split('_')
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
@@ -35,12 +35,12 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Mercatox::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.last      = NumericHelper.to_d(output['last_price'])
           ticker.bid       = NumericHelper.to_d(output['highestBid'])
           ticker.ask       = NumericHelper.to_d(output['lowestAsk'])
           ticker.high      = NumericHelper.to_d(output['high24hr'])
           ticker.low       = NumericHelper.to_d(output['low24hr'])
-          ticker.volume    = NumericHelper.to_d(output['baseVolume'])
+          ticker.volume    = NumericHelper.to_d(output['base_volume'])
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
