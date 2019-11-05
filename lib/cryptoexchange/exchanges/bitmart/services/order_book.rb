@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitmart::Market::API_URL}/symbols/PAX_USDT/orders"
+          "#{Cryptoexchange::Exchanges::Bitmart::Market::API_URL}/symbols/#{market_pair.base}_#{market_pair.target}/orders"
         end
 
         def adapt(output, market_pair)
