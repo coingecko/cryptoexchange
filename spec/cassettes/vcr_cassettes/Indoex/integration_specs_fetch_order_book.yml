@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.indoex.io/depth/BTC_USD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.indoex.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Nov 2019 06:52:00 GMT
+      Server:
+      - Apache/2.4.29 (Ubuntu)
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - websocket,GET, POST, OPTIONS, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2355'
+      Etag:
+      - W/"933-l3EgOumDoWxSNGlhO6kynEOZtOE"
+      Via:
+      - 1.1 api.indoex.io (Apache/2.4.29)
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":1,"message":"Success","lastUpdateTimestamp":"2019-11-05T06:52:00.184Z","asks":[{"price":8686.21427321,"quantity":0.0006845},{"price":8761.69739649,"quantity":0.00054562},{"price":9025.54913532,"quantity":0.00055013},{"price":8882.21090296,"quantity":0.00067753},{"price":9080.13915025,"quantity":0.00053791},{"price":8989.15579204,"quantity":0.00054064},{"price":8481.30870574,"quantity":0.00069521},{"price":8870.87742635,"quantity":0.00053413},{"price":8802.03046352,"quantity":0.0006845},{"price":8688.91070991,"quantity":0.00054229},{"price":8499.12658117,"quantity":0.00068309},{"price":8819.84833895,"quantity":0.00068732},{"price":9016.4507995,"quantity":0.0005507},{"price":8650.57852234,"quantity":0.00067961},{"price":8798.09073978,"quantity":0.00055299},{"price":8970.95912039,"quantity":0.00054451},{"price":8716.20571738,"quantity":0.00054731},{"price":9025.54913532,"quantity":0.00053628},{"price":8834.48408306,"quantity":0.00053954},{"price":8643.4190308,"quantity":0.00055646},{"price":8825.38574724,"quantity":0.00055938},{"price":8807.1890756,"quantity":0.00055127},{"price":8695.12321093,"quantity":0.00068309},{"price":8686.21427321,"quantity":0.00069886},{"price":8725.3040532,"quantity":0.00055821},{"price":8739.66789951,"quantity":0.00067139}],"bids":[{"price":10339.05666528,"quantity":0.00068591},{"price":10558.8581512,"quantity":0.00053791},{"price":10142.12225261,"quantity":0.00069886},{"price":10558.8581512,"quantity":0.00054229},{"price":10458.29759738,"quantity":0.00055242},{"price":10458.29759738,"quantity":0.0005336},{"price":10558.8581512,"quantity":0.00055704},{"price":10240.58945894,"quantity":0.00068732},{"price":10458.29759738,"quantity":0.00053682},{"price":10357.73704356,"quantity":0.00054395},{"price":10458.29759738,"quantity":0.00054174},{"price":10339.05666528,"quantity":0.00067822},{"price":10558.8581512,"quantity":0.0005336},{"price":10458.29759738,"quantity":0.00053467},{"price":10257.17648974,"quantity":0.000549},{"price":10339.05666528,"quantity":0.00069377},{"price":10558.8581512,"quantity":0.00053413},{"price":10458.29759738,"quantity":0.0005553},{"price":10558.8581512,"quantity":0.000549},{"price":10458.29759738,"quantity":0.00054064},{"price":10043.65504627,"quantity":0.0006852},{"price":10142.12225261,"quantity":0.00067071},{"price":10043.65504627,"quantity":0.00069089}]}'
+    http_version: 
+  recorded_at: Tue, 05 Nov 2019 06:52:00 GMT
+recorded_with: VCR 4.0.0
