@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.elitex.io/api/v1/public/BTC_USDT/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.elitex.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Nov 2019 07:42:45 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '158'
+      Connection:
+      - close
+      Server:
+      - elite
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"data":{"c":9290.14,"change":"0.0010926724","code":"BTC_USDT","h":9487.91,"l":9246.0,"o":9280.0,"t":1572853365281,"v":15.7801590},"msg":"success"}'
+    http_version: 
+  recorded_at: Tue, 05 Nov 2019 07:42:45 GMT
+recorded_with: VCR 4.0.0
