@@ -246,6 +246,7 @@ Or install it yourself as:
 | Dydx              | Y       | N          | N       |         | Y           | N        | dydx              |       |
 | Eosex             | Y       | N          | N       |         | Y           | Y        | eosex             |       |
 | Ecxx              | Y       | Y[X]       | N       |         | Y           | Y        | ecxx              |       |
+| Elitex            | Y       | Y[X]       | Y       |         | Y           | Y        | elitex            |       |
 | Ercdex            | Y       | Y          |         |         | Y           |          | erxdex            |       |
 | Escodex           | Y       |            |         |         | Y           | Y        | escodex           |       |
 | Eterbase          | Y       |            | Y       |         | Y           | Y        | eterbase          |       |
