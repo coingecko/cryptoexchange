@@ -303,6 +303,7 @@ Or install it yourself as:
 | Idex              | Y       | Unstable   | Y       |         | Y           | Y        | idex              |       |
 | Incorex           | Y       | Y          | Y       |         | Y           | Y        | incorex           |       |
 | Indodax           | Y       | Y [x]      | Y       |         | User-Defined| N        | indodax           |       |
+| Indoex            | Y       | Y [x]      |         |         | Y           | Y        | indoex            |       |
 | IndependentReserve| Y       | Y [x]      | N       |         | Y           | Y        |independent_reserve|       |
 | InfinityCoin      | Y       |            |         |         | Y           | Y        | infinity_coin     |       |
 | InstantBitex      | Y       | Y [x]      | Y       |         | Y           |          | instantbitex      |       |
