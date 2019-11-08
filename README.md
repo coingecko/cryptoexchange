@@ -79,6 +79,7 @@ Or install it yourself as:
 | Bitci             | Y       | Y [x]      | Y       |         | Y           | Y        | bitci             |       |
 | BitcoinCom        | Y       | Y [x]      | Y       |         | Y           | Y        | bitcoin_com       |       |
 | Bitconnect        | Y       |            |         |         | Y           |          | bitconnect        |       |
+| Bitcratic         | Y       |            |         |         | Y           |          | bitcratic         |       |
 | Bitebtc           | Y       | Y [x]      | Y       |         | Y           | Y        | bitebtc           |       |
 | Bitex.la          | Y       | Y [x]      |         |         | Y           |          | bitex             |       |
 | Bitexbook         | Y       | N          | N       |         | Y           | Y        | bitexbook         |       |
