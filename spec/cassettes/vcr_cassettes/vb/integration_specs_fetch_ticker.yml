@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.vbt.cc/api/v1/ticker?symbol=35
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.vbt.cc
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Nov 2019 06:44:33 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=df20f240d0c0b9cf2ff81d1ddc53702781573195473; expires=Sat, 07-Nov-20
+        06:44:33 GMT; path=/; domain=.vbt.cc; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - default-src 'self'; object-src 'none'; img-src * data:; font-src * data:;
+        media-src * data:; connect-src 'self' wss://www.vb.pub wss://www.vbt.cc wss://vbt.cc
+        wss://www.vb.co wss://vb.co  wss://widget-mediator.zopim.com  https://discovery.amp.cloudflare.com  https://ekr.zdassets.com/
+        https://vbt.zendesk.com/ https://static.zdassets.com ;style-src 'self' 'unsafe-inline'
+        cdnjs.cloudflare.com amp.cloudflare.com; script-src 'self' 'unsafe-inline'
+        'unsafe-eval' hm.baidu.com ajax.cloudflare.com cdn.polyfill.io amp.cloudflare.com
+        discovery.amp.cloudflare.com static.zdassets.com ekr.zdassets.com widget-mediator.zopim.com
+        g.alicdn.com aeis.alicdn.com cf.aliyun.com ynuf.aliapp.org *.tdum.alibaba.com;
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5325943b4837c118-KUL
+    body:
+      encoding: UTF-8
+      string: '{"code":"200","data":{"high":"9299.83","vol":"2451.761913","last":"9186.56","low":"9114.12","buy":"9184.04","sell":"9191.73"}}'
+    http_version: 
+  recorded_at: Fri, 08 Nov 2019 06:44:33 GMT
+recorded_with: VCR 4.0.0

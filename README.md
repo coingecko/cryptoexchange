@@ -452,6 +452,7 @@ Or install it yourself as:
 | Upbit             | Y       | Y [x]      | Y       |         | Y           | Y        | upbit             |       |
 | Upbit Indonesia   | Y       |            |         |         | Y           | Y        | upbit_indonesia   |       |
 | Vaultmex          | Y       | Y          | Y       |         | Y           | Y        | vaultmex          |       |
+| Vb                | Y       | Y          | Y       |         | Y           | Y        | vb                |       |
 | Vbitex            | Y       | N          | N       |         | Y           | Y        | vbitex            |       |
 | Vebitcoin         | Y       | N          | N       |         | Y           | N        | vebitcoin         |       |
 | Velic             | Y       | Y [x]      |         |         | Y           | N        | velic             |       |
