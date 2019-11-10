@@ -26,6 +26,8 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = Bitmex::Market::NAME
           contract_stat.open_interest = output['openInterest'].to_f
           contract_stat.index     = output['indicativeSettlePrice'].to_f
+          contract_stat.index_identifier     = output['referenceSymbol']
+          contract_stat.index_name           = "Bitmex #{output['referenceSymbol']}"
           contract_stat.payload   = output
 
           expire_timestamp = output['expiry'] ? DateTime.parse(output['expiry']).to_time.to_i : nil

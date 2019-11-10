@@ -19,27 +19,24 @@ module Cryptoexchange::Exchanges
         end
 
         def get_contract_info(market_pair)
-          url = if market_pair.contract_interval == "perpetual"
-                  "#{Cryptoexchange::Exchanges::KrakenFutures::Market::API_URL}/tickers"
-                else
-                  "#{Cryptoexchange::Exchanges::KrakenFutures::Market::API_URL}/instruments"
-                end
-          contract_info = HTTP.get(url).parse(:json)
-          process_contract_info(contract_info, market_pair)
+          perpetual_ticker = if market_pair.contract_interval == "perpetual"
+            HTTP.get("#{Cryptoexchange::Exchanges::KrakenFutures::Market::API_URL}/tickers").parse(:json)
+          end
+          contract_info = HTTP.get("#{Cryptoexchange::Exchanges::KrakenFutures::Market::API_URL}/instruments").parse(:json)
+          process_contract_info(contract_info, perpetual_ticker, market_pair)
         end
 
-        def process_contract_info(contract_info, market_pair)
+        def process_contract_info(contract_info, perpetual_ticker, market_pair)
           arr = {}
           if market_pair.contract_interval == "perpetual"
-            contract = contract_info['tickers'].find { |i| i['symbol'] == market_pair.inst_id.downcase }
-            arr["funding_rate_percentage"] = contract["fundingRate"].to_f * 1000000
-            arr["funding_rate_percentage_predicted"] = contract["fundingRatePrediction"].to_f * 1000000
+            perpetual = perpetual_ticker['tickers'].find { |i| i['symbol'] == market_pair.inst_id.downcase }
+            arr["funding_rate_percentage"] = perpetual["fundingRate"].to_f * 1000000
+            arr["funding_rate_percentage_predicted"] = perpetual["fundingRatePrediction"].to_f * 1000000
             arr["next_funding_timestamp"] = nil
-          else
-            contract = contract_info['instruments'].find { |i| i["symbol"] == market_pair.inst_id.downcase }
-            arr["expire_timestamp"] = DateTime.parse(contract["lastTradingTime"]).to_time.to_i
-            arr["start_timestamp"] = nil
           end
+          contract = contract_info['instruments'].find { |i| i["symbol"] == market_pair.inst_id.downcase }
+          arr["expire_timestamp"] = DateTime.parse(contract["lastTradingTime"]).to_time.to_i if contract.has_key? "lastTradingTime"
+          arr["underlying"] = contract["underlying"] if contract.has_key? "underlying"
           arr
         end
 
@@ -55,6 +52,8 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = KrakenFutures::Market::NAME
           contract_stat.open_interest = data['openInterest'].to_f
           contract_stat.index     = data['markPrice'].to_f
+          contract_stat.index_identifier = "KrakenFutures~#{contract_info['underlying']}"
+          contract_stat.index_name = "Kraken Futures #{contract_info['underlying']}"
 
           contract_stat.expire_timestamp = contract_info['expire_timestamp']
           contract_stat.start_timestamp = contract_info['start_timestamp']

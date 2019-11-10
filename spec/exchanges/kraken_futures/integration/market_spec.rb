@@ -4,7 +4,7 @@ RSpec.describe 'kraken_futures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'kraken_futures' }
   let(:eth_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USD', inst_id: "PI_ETHUSD", market: 'kraken_futures', contract_interval: "perpetual") }
-  let(:eth_usd_futures_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USD', inst_id: "FI_ETHUSD_191025", market: 'kraken_futures', contract_interval: "month") }
+  let(:eth_usd_futures_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USD', inst_id: "FI_ETHUSD_191129", market: 'kraken_futures', contract_interval: "month") }
 
   it 'fetch pairs' do
     pairs = client.pairs('kraken_futures')
@@ -13,7 +13,7 @@ RSpec.describe 'kraken_futures integration specs' do
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
-    expect(pair.inst_id).to eq 'fi_xbtusd_191025'
+    expect(pair.inst_id).to eq 'fi_ltcusd_191129'
     expect(pair.market).to eq 'kraken_futures'
     expect(pair.contract_interval).to eq "month"
   end
@@ -81,6 +81,8 @@ RSpec.describe 'kraken_futures integration specs' do
       expect(contract_stat.target).to eq 'USD'
       expect(contract_stat.market).to eq 'kraken_futures'
       expect(contract_stat.index).to be_a Numeric
+      expect(contract_stat.index_identifier).to eq "KrakenFutures~rr_ethusd"
+      expect(contract_stat.index_name).to eq "Kraken Futures rr_ethusd"
       expect(contract_stat.open_interest).to be_a Numeric
       expect(contract_stat.timestamp).to be nil
 

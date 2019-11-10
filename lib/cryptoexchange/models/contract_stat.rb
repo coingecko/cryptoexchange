@@ -2,7 +2,8 @@ module Cryptoexchange
   module Models
     class ContractStat
       attr_accessor :base, :target, :market, :open_interest,
-                    :index, :timestamp, :payload,
+                    :index, :index_identifier, :index_name,
+                    :timestamp, :payload,
                     :expire_timestamp, :start_timestamp,
                     :contract_type,
                     :funding_rate_percentage, :next_funding_rate_timestamp, :funding_rate_percentage_predicted
@@ -13,6 +14,8 @@ module Cryptoexchange
         @market = args[:market]
         @open_interest = args[:open_interest]
         @index = args[:index]
+        @index_identifier = args[:index_identifier]
+        @index_name = args[:index_name]
         @timestamp = args[:timestamp]
         @payload = args[:payload]
         @expire_timestamp = args[:expire_timestamp]

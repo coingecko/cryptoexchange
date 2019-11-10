@@ -19,7 +19,11 @@ module Cryptoexchange::Exchanges
 
         def get_volume_in_target(volume, market_pair)
           if market_pair.base == "BTC"
-            volume_in_target = volume * 100
+            if market_pair.target == "USDT"
+              volume_in_target = volume
+            else
+              volume_in_target = volume * 100
+            end
           else
             volume_in_target = volume * 10
           end

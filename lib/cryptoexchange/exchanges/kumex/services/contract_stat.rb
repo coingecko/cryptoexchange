@@ -25,6 +25,8 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = Kumex::Market::NAME
           contract_stat.open_interest = output["openInterest"] ? NumericHelper.to_d(output["openInterest"]) : nil
           contract_stat.index = output["indexPrice"]
+          contract_stat.index_identifier = "Kumex~#{output["indexSymbol"]}"
+          contract_stat.index_name = "Kumex #{output["indexSymbol"]}"
           contract_stat.payload = output
           contract_stat.expire_timestamp = output["expireDate"] ? output["expireDate"] / 1000 : nil
           contract_stat.start_timestamp = output["firstOpenDate"] ? output["firstOpenDate"] / 1000 : nil
