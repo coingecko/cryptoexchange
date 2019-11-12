@@ -78,6 +78,8 @@ RSpec.describe 'GateFutures integration specs' do
       expect(contract_stat.target).to eq 'USD'
       expect(contract_stat.market).to eq 'gate_futures'
       expect(contract_stat.index).to be_a Numeric
+      expect(contract_stat.index_identifier).to eq "GateFutures~ETH_USD"
+      expect(contract_stat.index_name).to eq "Gate.io ETH/USD"
       expect(contract_stat.open_interest).to be_a Numeric
       expect(contract_stat.timestamp).to be nil
 

@@ -30,6 +30,8 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = Ftx::Market::NAME
           contract_stat.open_interest = open_interest['result']['openInterest'].to_f
           contract_stat.index     = index['result']['index'].to_f
+          contract_stat.index_identifier     = index['result']['underlying']
+          contract_stat.index_name     = index['result']['underlyingDescription']
           contract_stat.payload   = { "open_interest" => open_interest, "index" => index }
 
           expire_timestamp = index['result']['expiry'] ? DateTime.parse(index['result']['expiry']).to_time.to_i : nil

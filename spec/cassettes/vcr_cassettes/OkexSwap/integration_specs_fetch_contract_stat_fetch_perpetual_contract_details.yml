@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 02 Oct 2019 07:57:51 GMT
+      - Mon, 11 Nov 2019 07:02:54 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -27,9 +27,9 @@ http_interactions:
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d47c0fc3eae5675a305de4535593dfc5a1570003071; expires=Thu, 01-Oct-20
-        07:57:51 GMT; path=/; domain=.okex.com; HttpOnly
-      - locale=en_US; Max-Age=604800; Expires=Wed, 09-Oct-2019 07:57:51 GMT; Path=/
+      - __cfduid=d25c8ed86623882d3870a5a4557e325991573455774; expires=Tue, 10-Nov-20
+        07:02:54 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Max-Age=604800; Expires=Mon, 18-Nov-2019 07:02:54 GMT; Path=/
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
@@ -43,7 +43,7 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Kong-Upstream-Latency:
-      - '7'
+      - '9'
       X-Kong-Proxy-Latency:
       - '0'
       Via:
@@ -52,17 +52,19 @@ http_interactions:
       - max-age=63072000; includeSubdomains; preload
       Accept-Ranges:
       - bytes
+      Cf-Cache-Status:
+      - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 51f520bc286b2cdf-KUL
+      - 533e673bcd50d695-SYD
     body:
       encoding: ASCII-8BIT
-      string: '{"instrument_id":"BTC-USD-SWAP","amount":"1051355","timestamp":"2019-10-02T07:57:51.418Z"}'
+      string: '{"instrument_id":"BTC-USD-SWAP","amount":"1692221","timestamp":"2019-11-11T07:02:54.118Z"}'
     http_version: 
-  recorded_at: Wed, 02 Oct 2019 07:57:51 GMT
+  recorded_at: Mon, 11 Nov 2019 07:02:54 GMT
 - request:
     method: get
     uri: https://www.okex.com/api/swap/v3/instruments/BTC-USD-SWAP/index
@@ -82,7 +84,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 02 Oct 2019 07:57:51 GMT
+      - Mon, 11 Nov 2019 07:02:54 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -90,9 +92,74 @@ http_interactions:
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=dba2d3a29df89b8bf70b149b8de6460431570003071; expires=Thu, 01-Oct-20
-        07:57:51 GMT; path=/; domain=.okex.com; HttpOnly
-      - locale=en_US; Max-Age=604800; Expires=Wed, 09-Oct-2019 07:57:51 GMT; Path=/
+      - __cfduid=dfda95a033ef430385970936128b808601573455774; expires=Tue, 10-Nov-20
+        07:02:54 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Max-Age=604800; Expires=Mon, 18-Nov-2019 07:02:54 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '5'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Accept-Ranges:
+      - bytes
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 533e673f8f5ada4a-SYD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BTC-USD-SWAP","index":"8758.69000000","timestamp":"2019-11-11T07:02:54.309Z"}'
+    http_version: 
+  recorded_at: Mon, 11 Nov 2019 07:02:54 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/swap/v3/instruments/BTC-USD-SWAP/funding_time
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 11 Nov 2019 07:02:55 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '177'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=da9c657cb6436729a6db212480997e9441573455775; expires=Tue, 10-Nov-20
+        07:02:55 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Max-Age=604800; Expires=Mon, 18-Nov-2019 07:02:55 GMT; Path=/
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
@@ -115,20 +182,22 @@ http_interactions:
       - max-age=63072000; includeSubdomains; preload
       Accept-Ranges:
       - bytes
+      Cf-Cache-Status:
+      - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 51f520bce8b7dd4e-KUL
+      - 533e67433dc9d732-SYD
     body:
       encoding: ASCII-8BIT
-      string: '{"instrument_id":"BTC-USD-SWAP","index":"8221.31200000","timestamp":"2019-10-02T07:57:48.532Z"}'
+      string: '{"instrument_id":"BTC-USD-SWAP","funding_time":"2019-11-11T08:00:00.000Z","funding_rate":"0.00002681","estimated_rate":"0.00056798","settlement_time":"2019-11-11T08:00:00.000Z"}'
     http_version: 
-  recorded_at: Wed, 02 Oct 2019 07:57:51 GMT
+  recorded_at: Mon, 11 Nov 2019 07:02:55 GMT
 - request:
     method: get
-    uri: https://www.okex.com/api/swap/v3/instruments/BTC-USD-SWAP/funding_time
+    uri: https://www.okex.com/api/swap/v3/instruments
     body:
       encoding: UTF-8
       string: ''
@@ -145,17 +214,19 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 02 Oct 2019 07:57:51 GMT
+      - Mon, 11 Nov 2019 07:02:55 GMT
       Content-Type:
       - application/json
-      Content-Length:
-      - '178'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d1e6adb408b3856ed593e935b57a71bdf1570003071; expires=Thu, 01-Oct-20
-        07:57:51 GMT; path=/; domain=.okex.com; HttpOnly
-      - locale=en_US; Max-Age=604800; Expires=Wed, 09-Oct-2019 07:57:51 GMT; Path=/
+      - __cfduid=d10f8d2eaab0506355a46ca7c3d7f61ca1573455775; expires=Tue, 10-Nov-20
+        07:02:55 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Max-Age=604800; Expires=Mon, 18-Nov-2019 07:02:55 GMT; Path=/
+      Vary:
+      - Accept-Encoding
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
@@ -169,24 +240,24 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Kong-Upstream-Latency:
-      - '8'
+      - '6'
       X-Kong-Proxy-Latency:
       - '0'
       Via:
       - kong/0.12.3
       Strict-Transport-Security:
       - max-age=63072000; includeSubdomains; preload
-      Accept-Ranges:
-      - bytes
+      Cf-Cache-Status:
+      - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 51f520bd7f88c0ff-KUL
+      - 533e6746fe37d695-SYD
     body:
       encoding: ASCII-8BIT
-      string: '{"instrument_id":"BTC-USD-SWAP","funding_time":"2019-10-02T08:00:00.000Z","funding_rate":"-0.00034326","estimated_rate":"0.00004851","settlement_time":"2019-10-02T08:00:00.000Z"}'
+      string: '[{"instrument_id":"BTC-USD-SWAP","underlying_index":"BTC","quote_currency":"USD","coin":"BTC","contract_val":"100","listing":"2018-08-28T02:43:23.000Z","delivery":"2019-11-11T08:00:00.000Z","size_increment":"1","tick_size":"0.1"},{"instrument_id":"LTC-USD-SWAP","underlying_index":"LTC","quote_currency":"USD","coin":"LTC","contract_val":"10","listing":"2018-12-21T07:53:47.000Z","delivery":"2019-11-11T08:00:00.000Z","size_increment":"1","tick_size":"0.01"},{"instrument_id":"ETH-USD-SWAP","underlying_index":"ETH","quote_currency":"USD","coin":"ETH","contract_val":"10","listing":"2018-12-21T07:53:47.000Z","delivery":"2019-11-11T08:00:00.000Z","size_increment":"1","tick_size":"0.01"},{"instrument_id":"TRX-USD-SWAP","underlying_index":"TRX","quote_currency":"USD","coin":"TRX","contract_val":"10","listing":"2019-01-16T04:09:23.000Z","delivery":"2019-11-11T08:00:00.000Z","size_increment":"1","tick_size":"0.000010"},{"instrument_id":"BCH-USD-SWAP","underlying_index":"BCH","quote_currency":"USD","coin":"BCH","contract_val":"10","listing":"2018-12-21T07:53:47.000Z","delivery":"2019-11-11T08:00:00.000Z","size_increment":"1","tick_size":"0.01"},{"instrument_id":"BSV-USD-SWAP","underlying_index":"BSV","quote_currency":"USD","coin":"BSV","contract_val":"10","listing":"2018-12-21T07:53:47.000Z","delivery":"2019-11-11T08:00:00.000Z","size_increment":"1","tick_size":"0.01"},{"instrument_id":"EOS-USD-SWAP","underlying_index":"EOS","quote_currency":"USD","coin":"EOS","contract_val":"10","listing":"2018-12-10T11:55:31.000Z","delivery":"2019-11-11T08:00:00.000Z","size_increment":"1","tick_size":"0.001"},{"instrument_id":"XRP-USD-SWAP","underlying_index":"XRP","quote_currency":"USD","coin":"XRP","contract_val":"10","listing":"2018-12-21T07:53:47.000Z","delivery":"2019-11-11T08:00:00.000Z","size_increment":"1","tick_size":"0.00010"},{"instrument_id":"ETC-USD-SWAP","underlying_index":"ETC","quote_currency":"USD","coin":"ETC","contract_val":"10","listing":"2018-12-21T07:53:47.000Z","delivery":"2019-11-11T08:00:00.000Z","size_increment":"1","tick_size":"0.001"}]'
     http_version: 
-  recorded_at: Wed, 02 Oct 2019 07:57:51 GMT
+  recorded_at: Mon, 11 Nov 2019 07:02:56 GMT
 recorded_with: VCR 4.0.0

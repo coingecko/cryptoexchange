@@ -28,6 +28,8 @@ module Cryptoexchange::Exchanges
           contract_stat.target    = market_pair.target
           contract_stat.market    = BinanceFutures::Market::NAME
           contract_stat.index     = contract_info['markPrice'].to_f
+          contract_stat.index_identifier = "BinanceFutures~#{market_pair.inst_id}"
+          contract_stat.index_name = "Binance #{market_pair.inst_id}"
           contract_stat.funding_rate_percentage     = contract_info['lastFundingRate'].to_f * 100
           contract_stat.next_funding_rate_timestamp     = contract_info['nextFundingTime']/1000
           contract_stat.funding_rate_percentage_predicted = nil

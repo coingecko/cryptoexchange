@@ -20,7 +20,8 @@ module Cryptoexchange::Exchanges
           open_interest = super(open_interest_url(api_prefix, market_pair.inst_id))
           index = super(index_url(api_prefix, market_pair.inst_id))
           contract_info = get_contract_info(market_pair)
-          adapt(open_interest, index, contract_info, market_pair)
+          underlying_index = get_underlying_index(market_pair)
+          adapt(open_interest, index, contract_info, underlying_index, market_pair)
         end
 
         def get_contract_info(market_pair)
@@ -30,6 +31,16 @@ module Cryptoexchange::Exchanges
                           HTTP.get(FUTURES_URL).parse(:json)
                         end
           process_contract_info(contract_info, market_pair)
+        end
+
+        def get_underlying_index(market_pair)
+          instrument_info = if market_pair.contract_interval == "perpetual"
+                          HTTP.get(SWAP_URL).parse(:json)
+                        elsif "futures"
+                          HTTP.get(FUTURES_URL).parse(:json)
+                        end
+          instrument_info = instrument_info.find { |i| i["instrument_id"] == market_pair.inst_id }
+          instrument_info["underlying_index"]
         end
 
         def process_contract_info(contract_info, market_pair)
@@ -54,7 +65,7 @@ module Cryptoexchange::Exchanges
           "#{api_prefix}#{inst_id}/index"
         end
 
-        def adapt(open_interest, index, contract_info, market_pair)
+        def adapt(open_interest, index, contract_info, underlying_index, market_pair)
           contract_stat = Cryptoexchange::Models::ContractStat.new
 
           contract_stat.base      = market_pair.base
@@ -62,6 +73,8 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = OkexSwap::Market::NAME
           contract_stat.open_interest = open_interest['amount'].to_f
           contract_stat.index     = index['index'].to_f
+          contract_stat.index_identifier = "OkexSwap~#{underlying_index}"
+          contract_stat.index_name = "Okex #{underlying_index}"
           contract_stat.payload   = { "open_interest" => open_interest, "index" => index }
 
           contract_stat.expire_timestamp = contract_info['expire_timestamp']

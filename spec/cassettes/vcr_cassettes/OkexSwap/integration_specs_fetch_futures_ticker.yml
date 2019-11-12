@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.okex.com/api/futures/v3/instruments/BTC-USD-191004/ticker
+    uri: https://www.okex.com/api/futures/v3/instruments/BTC-USD-191115/ticker
     body:
       encoding: UTF-8
       string: ''
@@ -19,17 +19,17 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 02 Oct 2019 07:57:50 GMT
+      - Mon, 11 Nov 2019 07:03:03 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '196'
+      - '195'
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=de099753aaf22303e021993c3e6dfecc91570003070; expires=Thu, 01-Oct-20
-        07:57:50 GMT; path=/; domain=.okex.com; HttpOnly
-      - locale=en_US; Expires=Wed, 09-Oct-2019 07:57:50 GMT; Path=/
+      - __cfduid=ddbdb616e5f6f10414904ab97a0fed5ca1573455783; expires=Tue, 10-Nov-20
+        07:03:03 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Mon, 18-Nov-2019 07:03:03 GMT; Path=/
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
@@ -52,15 +52,17 @@ http_interactions:
       - max-age=63072000; includeSubdomains; preload
       Accept-Ranges:
       - bytes
+      Cf-Cache-Status:
+      - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 51f520b90e2e2cf7-KUL
+      - 533e67763b26659d-SYD
     body:
       encoding: ASCII-8BIT
-      string: '{"instrument_id":"BTC-USD-191004","last":"8210.71","best_bid":"8209.48","best_ask":"8210.19","high_24h":"8547.52","low_24h":"8158.18","volume_24h":"3509927","timestamp":"2019-10-02T07:57:50.920Z"}'
+      string: '{"instrument_id":"BTC-USD-191115","last":"8779.39","best_bid":"8777.53","best_ask":"8777.78","high_24h":"9153.93","low_24h":"8722.1","volume_24h":"3019333","timestamp":"2019-11-11T07:03:03.465Z"}'
     http_version: 
-  recorded_at: Wed, 02 Oct 2019 07:57:50 GMT
+  recorded_at: Mon, 11 Nov 2019 07:03:03 GMT
 recorded_with: VCR 4.0.0

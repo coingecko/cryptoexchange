@@ -65,6 +65,8 @@ RSpec.describe 'Bybit integration specs' do
       expect(contract_stat.target).to eq 'USD'
       expect(contract_stat.market).to eq 'bybit'
       expect(contract_stat.index).to be_a Numeric
+      expect(contract_stat.index_identifier).to eq 'Bybit~BTC'
+      expect(contract_stat.index_name).to eq 'Bybit BTC'
       expect(contract_stat.open_interest).to be_a Numeric
       expect(contract_stat.timestamp).to be nil
 

@@ -60,6 +60,8 @@ RSpec.describe 'FTX integration specs' do
       expect(contract_stat.target).to eq 'USD'
       expect(contract_stat.market).to eq 'ftx'
       expect(contract_stat.index).to be_a Numeric
+      expect(contract_stat.index_identifier).to eq 'BTC'
+      expect(contract_stat.index_name).to eq 'Bitcoin'
       expect(contract_stat.open_interest).to be_a Numeric
       expect(contract_stat.timestamp).to be nil
 
