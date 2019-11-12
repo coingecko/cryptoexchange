@@ -31,6 +31,7 @@ module Cryptoexchange::Exchanges
 
           contract_stat.expire_timestamp = expire_timestamp
           contract_stat.start_timestamp = start_timestamp
+          contract_stat.open_interest = output['openInterest']
           contract_stat.contract_type = contract_type(start_timestamp, expire_timestamp)
           contract_stat
         end
