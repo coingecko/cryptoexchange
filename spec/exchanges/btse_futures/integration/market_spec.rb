@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'btse_futures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'btse_futures', contract_interval: "quarterly", inst_id: "BTCV19") }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'btse_futures', contract_interval: "quarterly", inst_id: "BTCZ19") }
 
   it 'fetch pairs' do
     pairs = client.pairs('btse_futures')
@@ -18,7 +18,7 @@ RSpec.describe 'btse_futures integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'btse_futures', inst_id: btc_usd_pair.inst_id
-    expect(trade_page_url).to eq "https://www.btse.com/en/futures/BTCV19"
+    expect(trade_page_url).to eq "https://www.btse.com/en/futures/BTCZ19"
   end
 
   it 'fetch ticker' do
@@ -26,7 +26,7 @@ RSpec.describe 'btse_futures integration specs' do
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USD'
-    expect(ticker.inst_id).to eq 'BTCV19'
+    expect(ticker.inst_id).to eq 'BTCZ19'
     expect(ticker.market).to eq 'btse_futures'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
@@ -81,7 +81,7 @@ RSpec.describe 'btse_futures integration specs' do
       expect(contract_stat.target).to eq 'USD'
       expect(contract_stat.market).to eq 'btse_futures'
       expect(contract_stat.index).to be nil
-      expect(contract_stat.open_interest).to be nil
+      expect(contract_stat.open_interest).to be_a Numeric
       expect(contract_stat.timestamp).to be nil
 
       expect(contract_stat.payload).to_not be nil
