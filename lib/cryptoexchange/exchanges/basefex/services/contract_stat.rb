@@ -38,10 +38,11 @@ module Cryptoexchange::Exchanges
           contract_stat.target = market_pair.target
           contract_stat.market = Basefex::Market::NAME
           contract_stat.contract_type = "perpetual"
-          contract_stat.open_interest = output['openValue']
-          contract_stat.funding_rate_percentage = output["fundingRate"]
+          contract_stat.open_interest = output['openInterest']
+          contract_stat.index = output['indexPrice']
+          contract_stat.funding_rate_percentage = output["fundingRate"] * 100
           contract_stat.next_funding_rate_timestamp = output["nextFundingTime"] / 1000
-          contract_stat.funding_rate_percentage_predicted = output["nextFundingRate"]
+          contract_stat.funding_rate_percentage_predicted = output["nextFundingRate"] * 100
           contract_stat.payload = output
           contract_stat
         end

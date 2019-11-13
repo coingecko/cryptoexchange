@@ -61,6 +61,7 @@ RSpec.describe 'basefex integration specs' do
     expect(contract_stat.target).to eq 'USD'
     expect(contract_stat.market).to eq 'basefex'
     expect(contract_stat.open_interest).to be_a Numeric
+    expect(contract_stat.index).to be_a Numeric
     expect(contract_stat.funding_rate_percentage).to be_a Numeric
     expect(contract_stat.next_funding_rate_timestamp).to_not be_nil
     expect(contract_stat.funding_rate_percentage_predicted).to be_a Numeric
