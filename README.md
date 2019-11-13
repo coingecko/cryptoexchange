@@ -507,6 +507,7 @@ Or install it yourself as:
 | OKEx Swaps        | Y | Y  | Y    |     |  Y      | Y   |  Y  |   Y   |   Y  | Y  | Y  | Y  | Y   | Y   |  okex_swaps  |
 | BTSE (Futures)    | Y | Y  | Y    |  Y  |  Y      | Y   |     |       |      | Y  | Y  |    |     |     |  btse_futures  |
 | Prime XBT         | Y | Y  | Y    |  Y  |  N      | Y   |  N  |       |      | N  | N  | N  | N   | N   |  prime_xbt  |
+| BaseFEX           | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  basefex  |
 
 *Legend*
 
