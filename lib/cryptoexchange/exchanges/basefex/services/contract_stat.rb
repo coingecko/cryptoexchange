@@ -40,6 +40,8 @@ module Cryptoexchange::Exchanges
           contract_stat.contract_type = "perpetual"
           contract_stat.open_interest = output['openInterest']
           contract_stat.index = output['indexPrice']
+          contract_stat.index_identifier = "Basefex~#{output['symbol']}"
+          contract_stat.index_name = "BaseFEX #{output['symbol']}"
           contract_stat.funding_rate_percentage = output["fundingRate"] * 100
           contract_stat.next_funding_rate_timestamp = output["nextFundingTime"] / 1000
           contract_stat.funding_rate_percentage_predicted = output["nextFundingRate"] * 100

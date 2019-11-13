@@ -24,6 +24,8 @@ module Cryptoexchange::Exchanges
           contract_stat.target    = market_pair.target
           contract_stat.market    = CoinflexFutures::Market::NAME
           contract_stat.contract_type = "futures" # Assume all futures, handled by pairs list
+          contract_stat.index_identifier = "CoinflexFutures~#{market_pair.base}/#{market_pair.target}"
+          contract_stat.index_name = "Coinflex #{market_pair.base}/#{market_pair.target}"
 
           contract_stat
         end

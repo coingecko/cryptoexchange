@@ -41,6 +41,8 @@ RSpec.describe 'CME Futures integration specs' do
       expect(contract_stat.market).to eq 'cme_futures'
       expect(2019..Date.today.year).to include(Time.at(contract_stat.expire_timestamp).year)
       expect(contract_stat.timestamp).to be nil
+      expect(contract_stat.index_identifier).to eq 'CmeFutures~BTC'
+      expect(contract_stat.index_name).to eq 'CME Bitcoin Reference Rate'
 
       expect(contract_stat.payload).to_not be nil
     end
