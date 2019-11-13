@@ -26,7 +26,7 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = BitzFutures::Market::NAME
           contract_stat.open_interest = output['openInterest'].to_f
           contract_stat.index     = output['indexPrice'].to_f
-          contract_stat.index_identifier = "BitzFutures~#{market_pair.inst_id}"
+          contract_stat.index_identifier = "BitzFutures-#{market_pair.inst_id}"
           contract_stat.index_name = "Bit-z #{market_pair.base}/#{market_pair.target}"
 
           contract_stat.payload   = output

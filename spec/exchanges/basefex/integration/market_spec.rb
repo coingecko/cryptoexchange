@@ -62,7 +62,7 @@ RSpec.describe 'basefex integration specs' do
     expect(contract_stat.market).to eq 'basefex'
     expect(contract_stat.open_interest).to be_a Numeric
     expect(contract_stat.index).to be_a Numeric
-    expect(contract_stat.index_identifier).to eq "Basefex~BTCUSD"
+    expect(contract_stat.index_identifier).to eq "Basefex-BTCUSD"
     expect(contract_stat.index_name).to eq "BaseFEX BTCUSD"
     expect(contract_stat.funding_rate_percentage).to be_a Numeric
     expect(contract_stat.next_funding_rate_timestamp).to_not be_nil

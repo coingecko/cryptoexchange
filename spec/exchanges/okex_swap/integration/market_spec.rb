@@ -79,7 +79,7 @@ RSpec.describe 'OkexSwap integration specs' do
       expect(contract_stat.market).to eq 'okex_swap'
       expect(contract_stat.index).to be_a Numeric
       expect(contract_stat.index_name).to eq "Okex BTC"
-      expect(contract_stat.index_identifier).to eq "OkexSwap~BTC"
+      expect(contract_stat.index_identifier).to eq "OkexSwap-BTC"
       expect(contract_stat.open_interest).to be_a Numeric
       expect(contract_stat.timestamp).to be nil
       expect(contract_stat.payload).to_not be nil

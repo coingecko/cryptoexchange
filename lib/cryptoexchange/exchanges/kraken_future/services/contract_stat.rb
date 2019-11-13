@@ -52,7 +52,7 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = KrakenFutures::Market::NAME
           contract_stat.open_interest = data['openInterest'].to_f
           contract_stat.index     = data['markPrice'].to_f
-          contract_stat.index_identifier = "KrakenFutures~#{contract_info['underlying']}"
+          contract_stat.index_identifier = "KrakenFutures-#{contract_info['underlying']}"
           contract_stat.index_name = "Kraken Futures #{contract_info['underlying']}"
 
           contract_stat.expire_timestamp = contract_info['expire_timestamp']

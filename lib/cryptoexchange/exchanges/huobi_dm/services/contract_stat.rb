@@ -41,7 +41,7 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = HuobiDm::Market::NAME
           contract_stat.open_interest = open_interest['data'][0]['volume'].to_f
           contract_stat.index     = index['data'][0]['index_price'].to_f
-          contract_stat.index_identifier = "HuobiDm~#{index['data'][0]['symbol']}"
+          contract_stat.index_identifier = "HuobiDm-#{index['data'][0]['symbol']}"
           contract_stat.index_name = "Huobi DM #{index['data'][0]['symbol']}"
           contract_stat.payload   = { "open_interest" => open_interest, "index" => index }
           contract_stat.expire_timestamp = unix_timestamp(contract_info['data'][0]['delivery_date'])

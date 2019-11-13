@@ -70,7 +70,7 @@ RSpec.describe 'BiboxFutures integration specs' do
       expect(contract_stat.target).to eq 'USDT'
       expect(contract_stat.market).to eq 'bibox_futures'
       expect(contract_stat.contract_type).to eq 'perpetual'
-      expect(contract_stat.index_identifier).to eq 'Bibox~BTC/USDT'
+      expect(contract_stat.index_identifier).to eq 'Bibox-BTC/USDT'
       expect(contract_stat.index_name).to eq 'Bibox BTC/USDT'
     end
   end
