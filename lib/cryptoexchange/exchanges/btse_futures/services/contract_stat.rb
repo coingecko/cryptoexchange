@@ -25,6 +25,8 @@ module Cryptoexchange::Exchanges
           contract_stat.target    = market_pair.target
           contract_stat.market    = BtseFutures::Market::NAME
           contract_stat.payload   = output
+          contract_stat.index_identifier = "BtseFutures~#{market_pair.base}"
+          contract_stat.index_name = "BTSE #{market_pair.base}"
 
           expire_timestamp = output['contract_end']
           start_timestamp = output['contract_start']
