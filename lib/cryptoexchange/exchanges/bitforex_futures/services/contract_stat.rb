@@ -30,7 +30,7 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = BitforexFutures::Market::NAME
           contract_stat.open_interest = open_interest['notBalanceNum'].to_f
           contract_stat.index     = fund_rate_and_index['indexPrice'].to_f
-          contract_stat.index_identifier = "BitforexFutures~#{market_pair.inst_id}"
+          contract_stat.index_identifier = "BitforexFutures-#{market_pair.inst_id}"
           contract_stat.index_name = "Bitforex #{market_pair.base}"
           contract_stat.payload   = { open_interest: open_interest, fund_rate_and_index: fund_rate_and_index }
           contract_stat.funding_rate_percentage     = fund_rate_and_index['fundRate'].to_f * 100

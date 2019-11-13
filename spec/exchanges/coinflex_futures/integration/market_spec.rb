@@ -61,7 +61,7 @@ RSpec.describe 'Coinflex Futures integration specs' do
       expect(contract_stat.target).to eq 'USDT'
       expect(contract_stat.market).to eq 'coinflex_futures'
       expect(contract_stat.contract_type).to eq 'futures'
-      expect(contract_stat.index_identifier).to eq 'CoinflexFutures~XBT/USDT'
+      expect(contract_stat.index_identifier).to eq 'CoinflexFutures-XBT/USDT'
       expect(contract_stat.index_name).to eq 'Coinflex XBT/USDT'
     end
   end

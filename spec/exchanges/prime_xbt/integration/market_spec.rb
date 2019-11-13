@@ -57,7 +57,7 @@ RSpec.describe 'Prime XBT integration specs' do
       expect(contract_stat.target).to eq 'USD'
       expect(contract_stat.market).to eq 'prime_xbt'
       expect(contract_stat.contract_type).to eq 'perpetual'
-      expect(contract_stat.index_identifier).to eq 'PrimeXbt~BTC/USD'
+      expect(contract_stat.index_identifier).to eq 'PrimeXbt-BTC/USD'
       expect(contract_stat.index_name).to eq 'PrimeXBT BTC/USD'
     end
   end

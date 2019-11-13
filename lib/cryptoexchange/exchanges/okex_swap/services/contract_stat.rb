@@ -73,7 +73,7 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = OkexSwap::Market::NAME
           contract_stat.open_interest = open_interest['amount'].to_f
           contract_stat.index     = index['index'].to_f
-          contract_stat.index_identifier = "OkexSwap~#{underlying_index}"
+          contract_stat.index_identifier = "OkexSwap-#{underlying_index}"
           contract_stat.index_name = "Okex #{underlying_index}"
           contract_stat.payload   = { "open_interest" => open_interest, "index" => index }
 

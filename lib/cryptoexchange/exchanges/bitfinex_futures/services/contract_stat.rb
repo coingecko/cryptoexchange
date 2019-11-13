@@ -26,7 +26,7 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = BitfinexFutures::Market::NAME
           contract_stat.open_interest = nil
           contract_stat.index     = output[15].to_f
-          contract_stat.index_identifier = "BitfinexFutures~#{market_pair.inst_id}"
+          contract_stat.index_identifier = "BitfinexFutures-#{market_pair.inst_id}"
           contract_stat.index_name = "BFX Composite (#{market_pair.base})"
           contract_stat.payload   = output
 

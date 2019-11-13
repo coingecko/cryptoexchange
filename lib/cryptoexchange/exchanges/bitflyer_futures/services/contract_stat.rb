@@ -33,7 +33,7 @@ module Cryptoexchange::Exchanges
           contract_stat.base      = market_pair.base
           contract_stat.target    = market_pair.target
           contract_stat.market    = BitflyerFutures::Market::NAME
-          contract_stat.index_identifier = "BitflyerFutures~#{market_pair.base}/#{market_pair.target}"
+          contract_stat.index_identifier = "BitflyerFutures-#{market_pair.base}/#{market_pair.target}"
           contract_stat.index_name = "Bitflyer #{market_pair.base}/#{market_pair.target}"
           # contract_stat.open_interest
           # contract_stat.index

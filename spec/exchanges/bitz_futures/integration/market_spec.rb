@@ -62,7 +62,7 @@ RSpec.describe 'BitzFutures integration specs' do
       expect(contract_stat.target).to eq 'USD'
       expect(contract_stat.market).to eq 'bitz_futures'
       expect(contract_stat.index).to be_a Numeric
-      expect(contract_stat.index_identifier).to eq "BitzFutures~1"
+      expect(contract_stat.index_identifier).to eq "BitzFutures-1"
       expect(contract_stat.index_name).to eq "Bit-z BTC/USD"
       expect(contract_stat.open_interest).to be_a Numeric
       expect(contract_stat.timestamp).to be nil

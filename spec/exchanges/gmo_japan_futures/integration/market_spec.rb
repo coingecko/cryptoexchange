@@ -82,7 +82,7 @@ RSpec.describe 'GmoJapanFutures integration specs' do
       expect(contract_stat.target).to eq 'JPY'
       expect(contract_stat.market).to eq 'gmo_japan_futures'
       expect(contract_stat.contract_type).to eq 'perpetual'
-      expect(contract_stat.index_identifier).to eq 'GmoJapanFutures~BTC/JPY'
+      expect(contract_stat.index_identifier).to eq 'GmoJapanFutures-BTC/JPY'
       expect(contract_stat.index_name).to eq 'GMO Japan BTC/JPY'
     end
   end

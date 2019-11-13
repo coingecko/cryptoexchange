@@ -30,7 +30,7 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = CmeFutures::Market::NAME
           contract_stat.open_interest = nil
           contract_stat.index     = nil
-          contract_stat.index_identifier = "CmeFutures~#{market_pair.base}"
+          contract_stat.index_identifier = "CmeFutures-#{market_pair.base}"
           contract_stat.index_name = "CME Bitcoin Reference Rate"
 
           contract_stat.expire_timestamp = contract['lastTradeDate']['timestamp']/1000

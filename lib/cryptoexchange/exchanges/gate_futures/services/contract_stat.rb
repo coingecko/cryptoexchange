@@ -32,7 +32,7 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = GateFutures::Market::NAME
           contract_stat.open_interest = open_interest['total_size'].to_f
           contract_stat.index     = contract_info['index_price'].to_f
-          contract_stat.index_identifier = "GateFutures~#{market_pair.inst_id}"
+          contract_stat.index_identifier = "GateFutures-#{market_pair.inst_id}"
           contract_stat.index_name = "Gate.io #{market_pair.base}/#{market_pair.target}"
           contract_stat.funding_rate_percentage     = contract_info['funding_rate'].to_f * 100
           contract_stat.next_funding_rate_timestamp     = contract_info['funding_next_apply']

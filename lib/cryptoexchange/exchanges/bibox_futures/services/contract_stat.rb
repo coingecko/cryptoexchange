@@ -18,7 +18,7 @@ module Cryptoexchange::Exchanges
           contract_stat.base      = market_pair.base
           contract_stat.target    = market_pair.target
           contract_stat.market    = BiboxFutures::Market::NAME
-          contract_stat.index_identifier = "Bibox~#{market_pair.base}/#{market_pair.target}"
+          contract_stat.index_identifier = "Bibox-#{market_pair.base}/#{market_pair.target}"
           contract_stat.index_name = "Bibox #{market_pair.base}/#{market_pair.target}"
 
           contract_stat.contract_type = "perpetual"

@@ -30,7 +30,7 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = DeltaFutures::Market::NAME
           contract_stat.funding_rate_percentage = output['funding_rate'].to_f
           contract_stat.index     = output['mark_price'].to_f
-          contract_stat.index_identifier = "DeltaFutures~#{market_pair.base}"
+          contract_stat.index_identifier = "DeltaFutures-#{market_pair.base}"
           contract_stat.index_name = "Delta Exchange #{market_pair.base}"
           contract_stat.contract_type = contract_type(product['contract_type'])
           contract_stat.payload   = output
