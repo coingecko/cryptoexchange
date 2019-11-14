@@ -14,14 +14,14 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Vebitcoin::Market::API_URL}/Ticker/All"
+          "#{Cryptoexchange::Exchanges::Vebitcoin::Market::API_URL}/app/api/ticker"
         end
 
         def adapt_all(output)
           output.map do |ticker|
             market_pair = Cryptoexchange::Models::MarketPair.new(
-              base:   ticker['Code'],
-              target: Vebitcoin::Services::Pairs::TARGET,
+              base:   ticker['SourceCoinCode'],
+              target: ticker['TargetCoinCode'],
               market: Vebitcoin::Market::NAME
             )
             adapt(ticker, market_pair)
@@ -35,10 +35,10 @@ module Cryptoexchange::Exchanges
           ticker.market    = Vebitcoin::Market::NAME
           ticker.bid       = NumericHelper.to_d(output['Bid'])
           ticker.ask       = NumericHelper.to_d(output['Ask'])
-          ticker.last      = NumericHelper.to_d(output['Last'])
+          ticker.last      = NumericHelper.to_d(output['Price'])
           ticker.high      = NumericHelper.to_d(output['High'])
           ticker.low       = NumericHelper.to_d(output['Low'])
-          ticker.volume    = NumericHelper.to_d(output['Volume'])
+          ticker.volume    = NumericHelper.to_d(output['Volume']) / ticker.last
           ticker.timestamp = nil
           ticker.payload   = output
           ticker

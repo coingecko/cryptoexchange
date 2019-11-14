@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.vebitcoin.com/Ticker/All
+    uri: https://us-central1-vebitcoin-market.cloudfunctions.net/app/api/ticker
     body:
       encoding: UTF-8
       string: ''
@@ -10,51 +10,39 @@ http_interactions:
       Connection:
       - close
       Host:
-      - www.vebitcoin.com
+      - us-central1-vebitcoin-market.cloudfunctions.net
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
-      Date:
-      - Thu, 02 Aug 2018 01:29:14 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
+      Etag:
+      - W/"1773-TgAw5uWiw8JBTXdiTKCui18D6kM"
+      Function-Execution-Id:
+      - z5chqzyynv96
+      X-Powered-By:
+      - Express
+      X-Cloud-Trace-Context:
+      - 79c0e0664c85e3929c6f0942633250eb
+      Date:
+      - Thu, 14 Nov 2019 08:44:48 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '6003'
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="46,43",h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000
       Connection:
       - close
-      Set-Cookie:
-      - ARRAffinity=4bb1b0bab661d5bcad69aba2666af916fb75f56b306edaab26eef8d696250275;Path=/;HttpOnly;Domain=www.vebitcoin.com
-      - __cfduid=d29319171c6ebd4771996689da6c1c1f11533173353; expires=Fri, 02-Aug-19
-        01:29:13 GMT; path=/; domain=.vebitcoin.com; HttpOnly; Secure
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Expires:
-      - "-1"
-      Vary:
-      - Accept-Encoding
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Strict-Transport-Security:
-      - max-age=0; includeSubDomains; preload
-      X-Content-Type-Options:
-      - nosniff
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 443cc5b3baad32a7-HKG
     body:
       encoding: UTF-8
-      string: '[{"Last":38251.93,"High":38022.52,"Low":36755.36,"Vwap":37431.89,"Volume":182.01018864,"Bid":37800.00,"Ask":41200.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":37900.00,"Code":"BTC"},{"Last":390.13,"High":388.30,"Low":378.61,"Vwap":382.06,"Volume":1896.89157456,"Bid":383.26,"Ask":650.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":382.00,"Code":"LTC"},{"Last":2107.70,"High":2112.30,"Low":2049.63,"Vwap":2078.34,"Volume":1122.26219640,"Bid":2072.00,"Ask":4500.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":2072.00,"Code":"ETH"},{"Last":2.23,"High":2.26,"Low":2.09,"Vwap":2.19,"Volume":2751219.08358276,"Bid":2.21,"Ask":999.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":2.21,"Code":"XRP"},{"Last":0.72,"High":0.72,"Low":0.67,"Vwap":0.70,"Volume":386507.69597044,"Bid":0.70,"Ask":6.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":0.71,"Code":"ADA"},{"Last":0.82,"High":0.80,"Low":0.77,"Vwap":0.79,"Volume":97396.06597306,"Bid":0.79,"Ask":0.80,"Time":"2018-08-02T01:28:56.3702346Z","Open":0.79,"Code":"XEM"},{"Last":0.17,"High":0.40,"Low":0.15,"Vwap":0.17,"Volume":2174757.14793328,"Bid":0.16,"Ask":10.16,"Time":"2018-08-02T01:28:56.3702346Z","Open":0.16,"Code":"TRX"},{"Last":35.12,"High":34.85,"Low":32.84,"Vwap":33.81,"Volume":9417.71751874,"Bid":34.66,"Ask":189.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":34.66,"Code":"QTUM"},{"Last":3834.25,"High":3790.36,"Low":3700.24,"Vwap":3748.51,"Volume":737.41373092,"Bid":3746.85,"Ask":4000.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":3762.31,"Code":"BCH"},{"Last":150.37,"High":148.96,"Low":142.88,"Vwap":146.40,"Volume":772.15243152,"Bid":148.96,"Ask":190.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":148.96,"Code":"NEO"},{"Last":1.40,"High":1.40,"Low":1.30,"Vwap":1.35,"Volume":2357572.48799288,"Bid":1.36,"Ask":30.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":1.36,"Code":"XLM"},{"Last":4.67,"High":4.65,"Low":4.51,"Vwap":4.61,"Volume":23377.89374300,"Bid":4.56,"Ask":9.50,"Time":"2018-08-02T01:28:56.3702346Z","Open":4.56,"Code":"MIOTA"},{"Last":36.52,"High":36.70,"Low":34.95,"Vwap":36.01,"Volume":15563.41134188,"Bid":36.06,"Ask":65.99,"Time":"2018-08-02T01:28:56.3702346Z","Open":36.36,"Code":"EOS"},{"Last":77.67,"High":80.36,"Low":75.69,"Vwap":78.28,"Volume":4693.87703026,"Bid":77.25,"Ask":80.36,"Time":"2018-08-02T01:28:56.3702346Z","Open":77.25,"Code":"ETC"},{"Last":141.55,"High":136.97,"Low":123.40,"Vwap":126.80,"Volume":2741.32475804,"Bid":127.85,"Ask":350.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":128.31,"Code":"BTG"},{"Last":27.39,"High":29.08,"Low":22.96,"Vwap":26.30,"Volume":20758.99276720,"Bid":27.42,"Ask":37.47,"Time":"2018-08-02T01:28:56.3702346Z","Open":27.42,"Code":"PPT"},{"Last":29.82,"High":30.22,"Low":28.92,"Vwap":29.56,"Volume":28320.09944740,"Bid":29.77,"Ask":30.15,"Time":"2018-08-02T01:28:56.3702346Z","Open":29.77,"Code":"OMG"},{"Last":6.46,"High":6.40,"Low":6.28,"Vwap":6.34,"Volume":16325.96346486,"Bid":6.40,"Ask":9.86,"Time":"2018-08-02T01:28:56.3702346Z","Open":6.40,"Code":"STEEM"},{"Last":0.05,"High":0.05,"Low":0.04,"Vwap":0.05,"Volume":674587.43441426,"Bid":0.05,"Ask":0.12,"Time":"2018-08-02T01:28:56.3702346Z","Open":0.05,"Code":"SC"},{"Last":0.02,"High":0.03,"Low":0.02,"Vwap":0.03,"Volume":2090805.16666664,"Bid":0.02,"Ask":0.53,"Time":"2018-08-02T01:28:56.3702346Z","Open":0.03,"Code":"BCN"},{"Last":0.84,"High":0.82,"Low":0.79,"Vwap":0.81,"Volume":55820.31644280,"Bid":0.82,"Ask":1.35,"Time":"2018-08-02T01:28:56.3702346Z","Open":0.82,"Code":"BTS"},{"Last":0.11,"High":0.12,"Low":0.11,"Vwap":0.11,"Volume":546187.11684658,"Bid":0.11,"Ask":11.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":0.12,"Code":"XVG"},{"Last":5.32,"High":5.30,"Low":5.07,"Vwap":5.19,"Volume":127404.53377614,"Bid":5.30,"Ask":52.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":5.30,"Code":"ZRX"},{"Last":0.31,"High":0.30,"Low":0.29,"Vwap":0.29,"Volume":103238.14022986,"Bid":0.29,"Ask":1.50,"Time":"2018-08-02T01:28:56.3702346Z","Open":0.30,"Code":"SNT"},{"Last":23.12,"High":23.52,"Low":22.23,"Vwap":23.03,"Volume":9935.34293010,"Bid":23.08,"Ask":28.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":23.08,"Code":"WTC"},{"Last":24.12,"High":23.95,"Low":23.44,"Vwap":23.63,"Volume":5461.14798826,"Bid":23.95,"Ask":24.09,"Time":"2018-08-02T01:28:56.3702346Z","Open":23.95,"Code":"HSR"},{"Last":1.45,"High":1.45,"Low":1.29,"Vwap":1.35,"Volume":230756.12432448,"Bid":1.45,"Ask":6.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":1.45,"Code":"BAT"},{"Last":0.19,"High":0.20,"Low":0.18,"Vwap":0.19,"Volume":474607.56969184,"Bid":0.18,"Ask":0.36,"Time":"2018-08-02T01:28:56.3702346Z","Open":0.18,"Code":"DGB"},{"Last":2.71,"High":2.89,"Low":2.65,"Vwap":2.76,"Volume":65269.48177326,"Bid":2.68,"Ask":5.78,"Time":"2018-08-02T01:28:56.3702346Z","Open":2.72,"Code":"ELF"},{"Last":0.30,"High":0.30,"Low":0.29,"Vwap":0.29,"Volume":380125.80689646,"Bid":0.29,"Ask":3.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":0.29,"Code":"IGNIS"},{"Last":1.30,"High":1.33,"Low":1.25,"Vwap":1.28,"Volume":283809.33093142,"Bid":1.28,"Ask":105000.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":1.28,"Code":"GNT"},{"Last":74.42,"High":78.96,"Low":67.08,"Vwap":72.06,"Volume":8128.44403858,"Bid":70.00,"Ask":555.55,"Time":"2018-08-02T01:28:56.3702346Z","Open":74.84,"Code":"ZCL"},{"Last":0.11,"High":0.11,"Low":0.10,"Vwap":0.10,"Volume":245747.09090908,"Bid":0.10,"Ask":0.25,"Time":"2018-08-02T01:28:56.3702346Z","Open":0.11,"Code":"IOST"},{"Last":0.11,"High":0.11,"Low":0.11,"Vwap":0.11,"Volume":1493506.19090910,"Bid":0.11,"Ask":0.32,"Time":"2018-08-02T01:28:56.3702346Z","Open":0.11,"Code":"FUN"},{"Last":0.02,"High":0.04,"Low":0.04,"Vwap":0.04,"Volume":1043450.50000000,"Bid":0.02,"Ask":0.27,"Time":"2018-08-02T01:28:56.3702346Z","Open":0.04,"Code":"DENT"},{"Last":0.71,"High":0.74,"Low":0.69,"Vwap":0.71,"Volume":104778.30403626,"Bid":0.70,"Ask":0.74,"Time":"2018-08-02T01:28:56.3702346Z","Open":0.70,"Code":"SYS"},{"Last":0.02,"High":0.03,"Low":0.03,"Vwap":0.03,"Volume":1477766.66666666,"Bid":0.02,"Ask":500.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":0.03,"Code":"RDD"},{"Last":4.31,"High":4.32,"Low":3.79,"Vwap":4.02,"Volume":166431.36089562,"Bid":4.31,"Ask":39.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":4.29,"Code":"PAY"},{"Last":8.82,"High":8.94,"Low":8.72,"Vwap":8.79,"Volume":5614.64026118,"Bid":8.72,"Ask":30.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":8.72,"Code":"BTX"},{"Last":0.82,"High":0.84,"Low":0.80,"Vwap":0.81,"Volume":182201.20654850,"Bid":0.81,"Ask":100.00,"Time":"2018-08-02T01:28:56.3702346Z","Open":0.82,"Code":"CVC"}]'
+      string: '[{"Ask":50749.99,"Bid":50200.01,"High":51200,"Low":50200,"Price":50200,"Open":0,"Volume":3636341.1307651,"Time":"2019-11-14T08:34:50.8133333+00:00","SourceCoinCode":"BTC","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":1.55,"Bid":1.54,"High":1.61,"Low":1.55,"Price":1.55,"Open":0,"Volume":2914079.65061416,"Time":"2019-11-14T08:43:28.21+00:00","SourceCoinCode":"XRP","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":0.43,"Bid":0.421,"High":0.449,"Low":0.424,"Price":0.424,"Open":0,"Volume":3434125.75124182,"Time":"2019-11-14T08:43:29.8133333+00:00","SourceCoinCode":"XLM","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":1084,"Bid":1077.01,"High":1093,"Low":1076,"Price":1078,"Open":0,"Volume":1047498.53734326,"Time":"2019-11-14T08:41:45.1966667+00:00","SourceCoinCode":"ETH","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":1659.98,"Bid":1625,"High":1670,"Low":1618,"Price":1630,"Open":0,"Volume":381467.1036776,"Time":"2019-11-14T08:27:26.25+00:00","SourceCoinCode":"BCH","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":359.98,"Bid":345.01,"High":356,"Low":345,"Price":346,"Open":0,"Volume":1027524.67304024,"Time":"2019-11-14T08:40:59.9733333+00:00","SourceCoinCode":"LTC","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":5.78,"Bid":5.53,"High":5.75,"Low":5.57,"Price":5.57,"Open":0,"Volume":369766.15782191,"Time":"2019-11-14T08:44:04.5966667+00:00","SourceCoinCode":"OMG","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":5.86,"Bid":5.82,"High":5.84,"Low":5.77,"Price":5.82,"Open":0,"Volume":350726.97137684,"Time":"2019-11-14T08:03:53.81+00:00","SourceCoinCode":"TUSD","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":409.97,"Bid":400,"High":408,"Low":400,"Price":401,"Open":0,"Volume":340371.37340642,"Time":"2019-11-14T08:27:49.79+00:00","SourceCoinCode":"DASH","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":1.82,"Bid":1.71,"High":1.82,"Low":1.72,"Price":1.72,"Open":0,"Volume":354134.93161727,"Time":"2019-11-14T08:20:44.2133333+00:00","SourceCoinCode":"ZRX","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":0.0248,"Bid":0.0213,"High":0.025,"Low":0.0213,"Price":0.0215,"Open":0,"Volume":318462.09762196,"Time":"2019-11-14T08:09:58.8033333+00:00","SourceCoinCode":"FUN","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":3.35,"Bid":3.31,"High":3.54,"Low":3.02,"Price":3.36,"Open":0,"Volume":473658.20162874,"Time":"2019-11-14T08:41:57.7433333+00:00","SourceCoinCode":"PPT","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":0.419,"Bid":0.411,"High":0.419,"Low":0.401,"Price":0.414,"Open":0,"Volume":285699.17946993,"Time":"2019-11-14T08:35:41.92+00:00","SourceCoinCode":"PAY","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":0.48,"Bid":0.455,"High":0.483,"Low":0.44,"Price":0.456,"Open":0,"Volume":324196.63697363,"Time":"2019-11-14T08:14:37.2+00:00","SourceCoinCode":"SALT","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":1.529,"Bid":1.47,"High":1.52,"Low":1.4,"Price":1.472,"Open":0,"Volume":399724.58565731,"Time":"2019-11-14T08:36:56.5566667+00:00","SourceCoinCode":"BAT","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":219.97,"Bid":212.01,"High":217,"Low":212,"Price":213,"Open":0,"Volume":291605.0153301,"Time":"2019-11-14T08:26:21.5566667+00:00","SourceCoinCode":"ZEC","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":0.0058,"Bid":0.0057,"High":0.006,"Low":0.0056,"Price":0.0057,"Open":0,"Volume":341862.56282626,"Time":"2019-11-14T08:41:43.34+00:00","SourceCoinCode":"HOT","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":744.98,"Bid":727.02,"High":762,"Low":730,"Price":731,"Open":0,"Volume":325805.81974453,"Time":"2019-11-14T08:35:43.7066667+00:00","SourceCoinCode":"BSV","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":0.53,"Bid":0.5,"High":0.53,"Low":0.49,"Price":0.49,"Open":0,"Volume":7374.00751814,"Time":"2019-11-14T07:16:04.2833333+00:00","SourceCoinCode":"KZE","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":0.00138,"Bid":0.00135,"High":0.00141,"Low":0.00135,"Price":0.00137,"Open":0,"Volume":305787.85060048,"Time":"2019-11-14T08:36:16.6366667+00:00","SourceCoinCode":"DENT","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":0.00108,"Bid":0.00103,"High":0.0011,"Low":0.00103,"Price":0.00104,"Open":0,"Volume":269978.44511637,"Time":"2019-11-14T08:29:23.4966667+00:00","SourceCoinCode":"NPXS","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":0.475,"Bid":0.45,"High":0.469,"Low":0.45,"Price":0.45,"Open":0,"Volume":306658.27175132,"Time":"2019-11-14T08:23:57.28+00:00","SourceCoinCode":"ELF","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":0.236,"Bid":0.23,"High":0.244,"Low":0.23,"Price":0.232,"Open":0,"Volume":297484.64260516,"Time":"2019-11-14T08:18:43.92+00:00","SourceCoinCode":"CVC","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":0.28,"Bid":0.258,"High":0.28,"Low":0.258,"Price":0.258,"Open":0,"Volume":307828.77881519,"Time":"2019-11-14T08:19:26.09+00:00","SourceCoinCode":"GNT","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":54.98,"Bid":48.03,"High":50,"Low":47.8,"Price":48.05,"Open":0,"Volume":299834.62337183,"Time":"2019-11-14T08:38:39.7233333+00:00","SourceCoinCode":"BTG","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":5.89,"Bid":5.82,"High":5.83,"Low":5.78,"Price":5.81,"Open":0,"Volume":353214.34112013,"Time":"2019-11-14T08:27:14.22+00:00","SourceCoinCode":"USDT","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":1.63,"Bid":1.61,"High":1.74,"Low":1.58,"Price":1.63,"Open":0,"Volume":3589402.83988018,"Time":"2019-11-14T08:41:44.4166667+00:00","SourceCoinCode":"ALGO","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":18.49,"Bid":17.81,"High":18.1,"Low":16.6,"Price":17.8,"Open":0,"Volume":374404.1878,"Time":"2019-11-14T08:42:01.88+00:00","SourceCoinCode":"LINK","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"},{"Ask":20.4,"Bid":19.95,"High":22,"Low":19.95,"Price":19.95,"Open":0,"Volume":196999.32916831,"Time":"2019-11-14T08:28:59.52+00:00","SourceCoinCode":"EOS","TargetCoinCode":"TRY","VolumeCoinCode":"TRY"}]'
     http_version: 
-  recorded_at: Thu, 02 Aug 2018 01:29:14 GMT
+  recorded_at: Thu, 14 Nov 2019 08:44:42 GMT
 recorded_with: VCR 4.0.0
