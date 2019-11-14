@@ -42,7 +42,7 @@ module Cryptoexchange::Exchanges
           ticker.last = NumericHelper.to_d(output['latestPrice'])
           ticker.high = NumericHelper.to_d(output['last24hMaxPrice'])
           ticker.low = NumericHelper.to_d(output['last24hMinPrice'])
-          if market_pair.base == "BTC"
+          if market_pair.base == "BTC" && market_pair.target == "USD"
             ticker.volume = NumericHelper.to_d(output['turnover24h'])
           else
             ticker.volume = NumericHelper.to_d(output['turnover24h']) / ticker.last
