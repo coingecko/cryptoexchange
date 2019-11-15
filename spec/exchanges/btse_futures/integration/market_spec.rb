@@ -80,11 +80,11 @@ RSpec.describe 'btse_futures integration specs' do
       expect(contract_stat.base).to eq 'BTC'
       expect(contract_stat.target).to eq 'USD'
       expect(contract_stat.market).to eq 'btse_futures'
-      expect(contract_stat.index).to be nil
+      expect(contract_stat.index).to be_a Numeric
       expect(contract_stat.open_interest).to be_a Numeric
       expect(contract_stat.timestamp).to be nil
-      expect(contract_stat.index_identifier).to eq 'BtseFutures-BTC'
-      expect(contract_stat.index_name).to eq 'BTSE BTC'
+      expect(contract_stat.index_identifier).to eq 'BTCZ19'
+      expect(contract_stat.index_name).to eq 'BTCZ19'
 
       expect(contract_stat.payload).to_not be nil
     end

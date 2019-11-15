@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.btse.com/api/init/initIndex?quote=USD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.btse.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json;charset=UTF-8
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - no-cache
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Date:
+      - Fri, 15 Nov 2019 09:46:20 GMT
+      Content-Length:
+      - '9737'
+      Connection:
+      - close
+      Set-Cookie:
+      - XSRF-TOKEN=7249b837-deb5-4bba-83ea-956a8eac82f0; Path=/
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains ; preload
+    body:
+      encoding: UTF-8
+      string: '{"code":1,"msg":"Success","time":1573811180792,"data":[{"id":"B5","name":"BTSE
+        5","type":0,"price":951.466359387,"gains":-0.01,"open":951.640966331,"high":969.950391705,"low":940.247443884,"volume":0.0},{"id":"B5","name":"B5","type":1,"price":951.466359387,"gains":-0.01,"open":951.640966331,"high":969.950391705,"low":940.247443884,"volume":0.0},{"id":"BTC","name":"BTC
+        INDEX","type":0,"price":8591.358130898,"gains":0.0,"open":8590.94243942,"high":8771.066424504,"low":8495.56593157,"volume":0.0},{"id":"BTC","name":"BTC","type":1,"price":8591.358130898,"gains":0.0,"open":8590.94243942,"high":8771.066424504,"low":8495.56593157,"volume":0.0},{"id":"BTC","name":"BTC
+        INDEX","type":1,"price":8591.358130898,"gains":0.0,"open":8590.94243942,"high":8771.066424504,"low":8495.56593157,"volume":0.0},{"id":"LBTC","name":"LBTC","type":1,"price":8591.358130898,"gains":0.0,"open":8590.94243942,"high":8771.066424504,"low":8495.56593157,"volume":0.0},{"id":"BTCH20","name":"BTCH20","type":1,"price":8591.358130898,"gains":0.0,"open":8590.94243942,"high":8771.066424504,"low":8495.56593157,"volume":0.0},{"id":"BTCH20","name":"BTCH20","type":3,"price":8590.548081599,"gains":0.0,"open":8590.548081599,"high":8590.548081599,"low":8590.548081599,"volume":0.0},{"id":"BTCPFC","name":"BTCPFC","type":1,"price":8591.358130898,"gains":0.0,"open":8590.94243942,"high":8771.066424504,"low":8495.56593157,"volume":0.0},{"id":"BTCPFC","name":"BTCPFC","type":3,"price":8586.857097384,"gains":0.0,"open":8586.857097384,"high":8586.857097384,"low":8586.857097384,"volume":0.0},{"id":"BTCX19","name":"BTCX19","type":1,"price":8591.358130898,"gains":0.0,"open":8590.94243942,"high":8771.066424504,"low":8495.56593157,"volume":0.0},{"id":"BTCX19","name":"BTCX19","type":3,"price":8586.882666243,"gains":0.0,"open":8586.882666243,"high":8586.882666243,"low":8586.882666243,"volume":0.0},{"id":"BTCZ19","name":"BTCZ19","type":1,"price":8591.358130898,"gains":0.0,"open":8590.94243942,"high":8771.066424504,"low":8495.56593157,"volume":0.0},{"id":"BTCZ19","name":"BTCZ19","type":3,"price":8587.47617952,"gains":0.0,"open":8587.47617952,"high":8587.47617952,"low":8587.47617952,"volume":0.0},{"id":"BTCV19","name":"BTCV19","type":1,"price":8591.358130898,"gains":0.0,"open":8590.94243942,"high":8771.066424504,"low":8495.56593157,"volume":0.0},{"id":"BTCV19","name":"BTCV19","type":3,"price":7755.982479575,"gains":0.0,"open":7755.982479575,"high":7755.982479575,"low":7755.982479575,"volume":0.0},{"id":"BTCU19","name":"BTCU19","type":1,"price":8591.358130898,"gains":0.0,"open":8590.94243942,"high":8771.066424504,"low":8495.56593157,"volume":0.0},{"id":"BTCU19","name":"BTCU19","type":3,"price":8141.107479572,"gains":0.0,"open":8141.107479572,"high":8141.107479572,"low":8141.107479572,"volume":0.0},{"id":"ETH","name":"ETH
+        INDEX","type":0,"price":183.829699034,"gains":-0.52,"open":184.802839736,"high":186.395674726,"low":181.018590432,"volume":0.0},{"id":"ETH","name":"ETH","type":1,"price":183.829699034,"gains":-0.52,"open":184.802839736,"high":186.395674726,"low":181.018590432,"volume":0.0},{"id":"ETH","name":"ETH
+        INDEX","type":1,"price":183.829699034,"gains":-0.52,"open":184.802839736,"high":186.395674726,"low":181.018590432,"volume":0.0},{"id":"ETHV19","name":"ETHV19","type":1,"price":183.829699034,"gains":-0.52,"open":184.802839736,"high":186.395674726,"low":181.018590432,"volume":0.0},{"id":"ETHV19","name":"ETHV19","type":3,"price":168.318720929,"gains":0.0,"open":168.318720929,"high":168.318720929,"low":168.318720929,"volume":0.0},{"id":"ETHX19","name":"ETHX19","type":1,"price":183.829699034,"gains":-0.52,"open":184.802839736,"high":186.395674726,"low":181.018590432,"volume":0.0},{"id":"ETHX19","name":"ETHX19","type":3,"price":183.891124794,"gains":0.0,"open":183.891124794,"high":183.891124794,"low":183.891124794,"volume":0.0},{"id":"ETHU19","name":"ETHU19","type":1,"price":183.829699034,"gains":-0.52,"open":184.802839736,"high":186.395674726,"low":181.018590432,"volume":0.0},{"id":"ETHU19","name":"ETHU19","type":3,"price":161.343720929,"gains":0.0,"open":161.343720929,"high":161.343720929,"low":161.343720929,"volume":0.0},{"id":"ETHPFC","name":"ETHPFC","type":1,"price":183.829699034,"gains":-0.52,"open":184.802839736,"high":186.395674726,"low":181.018590432,"volume":0.0},{"id":"ETHPFC","name":"ETHPFC","type":3,"price":183.839879354,"gains":0.0,"open":183.839879354,"high":183.839879354,"low":183.839879354,"volume":0.0},{"id":"ETHZ19","name":"ETHZ19","type":1,"price":183.829699034,"gains":-0.52,"open":184.802839736,"high":186.395674726,"low":181.018590432,"volume":0.0},{"id":"ETHZ19","name":"ETHZ19","type":3,"price":183.863302286,"gains":0.0,"open":183.863302286,"high":183.863302286,"low":183.863302286,"volume":0.0},{"id":"USDT","name":"USDT","type":1,"price":0.997829895,"gains":0.06,"open":0.997203635,"high":0.999791789,"low":0.99673066,"volume":0.0},{"id":"USDTPFC","name":"USDTPFC","type":1,"price":0.997829895,"gains":0.06,"open":0.997203635,"high":0.999791789,"low":0.99673066,"volume":0.0},{"id":"USDTPFC","name":"USDTPFC","type":3,"price":0.997771176,"gains":0.0,"open":0.997771176,"high":0.997771176,"low":0.997771176,"volume":0.0},{"id":"LTC","name":"LTC
+        INDEX","type":0,"price":59.82547006,"gains":1.93,"open":58.692295995,"high":60.7483872,"low":58.451103471,"volume":0.0},{"id":"LTC","name":"LTC","type":1,"price":59.82547006,"gains":1.93,"open":58.692295995,"high":60.7483872,"low":58.451103471,"volume":0.0},{"id":"LTC","name":"LTC
+        INDEX","type":1,"price":59.82547006,"gains":1.93,"open":58.692295995,"high":60.7483872,"low":58.451103471,"volume":0.0},{"id":"LTCV19","name":"LTCV19","type":1,"price":59.82547006,"gains":1.93,"open":58.692295995,"high":60.7483872,"low":58.451103471,"volume":0.0},{"id":"LTCV19","name":"LTCV19","type":3,"price":52.344838272,"gains":0.0,"open":52.344838272,"high":52.344838272,"low":52.344838272,"volume":0.0},{"id":"LTCU19","name":"LTCU19","type":1,"price":59.82547006,"gains":1.93,"open":58.692295995,"high":60.7483872,"low":58.451103471,"volume":0.0},{"id":"LTCU19","name":"LTCU19","type":3,"price":55.907338273,"gains":0.0,"open":55.907338273,"high":55.907338273,"low":55.907338273,"volume":0.0},{"id":"LTCZ19","name":"LTCZ19","type":1,"price":59.82547006,"gains":1.93,"open":58.692295995,"high":60.7483872,"low":58.451103471,"volume":0.0},{"id":"LTCZ19","name":"LTCZ19","type":3,"price":59.859510873,"gains":0.0,"open":59.859510873,"high":59.859510873,"low":59.859510873,"volume":0.0},{"id":"LTCX19","name":"LTCX19","type":1,"price":59.82547006,"gains":1.93,"open":58.692295995,"high":60.7483872,"low":58.451103471,"volume":0.0},{"id":"LTCX19","name":"LTCX19","type":3,"price":59.903050023,"gains":0.0,"open":59.903050023,"high":59.903050023,"low":59.903050023,"volume":0.0},{"id":"LTCPFC","name":"LTCPFC","type":1,"price":59.82547006,"gains":1.93,"open":58.692295995,"high":60.7483872,"low":58.451103471,"volume":0.0},{"id":"LTCPFC","name":"LTCPFC","type":3,"price":59.837487007,"gains":0.0,"open":59.837487007,"high":59.837487007,"low":59.837487007,"volume":0.0},{"id":"USDC","name":"USDC","type":1,"price":1.0,"gains":0.0,"open":0.0,"high":0.0,"low":0.0,"volume":0.0},{"id":"TUSD","name":"TUSD","type":1,"price":1.0,"gains":0.0,"open":0.0,"high":0.0,"low":0.0,"volume":0.0},{"id":"BNS","name":"BNS","type":1,"price":1.0,"gains":0.0,"open":0.0,"high":0.0,"low":0.0,"volume":0.0},{"id":"FEE","name":"FEE","type":1,"price":1.0,"gains":0.0,"open":0.0,"high":0.0,"low":0.0,"volume":0.0},{"id":"BBCX","name":"BBCX
+        INDEX","type":0,"price":105.131,"gains":10413.1,"open":0.0,"high":107.813,"low":0.0,"volume":0.0},{"id":"BBCX","name":"BBCX","type":1,"price":105.131,"gains":10413.1,"open":0.0,"high":107.813,"low":0.0,"volume":0.0},{"id":"BBCX","name":"BBCX
+        INDEX","type":1,"price":105.131,"gains":10413.1,"open":0.0,"high":107.813,"low":0.0,"volume":0.0},{"id":"BBCXZ19","name":"BBCXZ19","type":1,"price":105.131,"gains":10413.1,"open":0.0,"high":107.813,"low":0.0,"volume":0.0},{"id":"BBCXZ19","name":"BBCXZ19","type":3,"price":105.154565858,"gains":0.0,"open":105.154565858,"high":105.154565858,"low":105.154565858,"volume":0.0},{"id":"BBCXX19","name":"BBCXX19","type":1,"price":105.131,"gains":10413.1,"open":0.0,"high":107.813,"low":0.0,"volume":0.0},{"id":"BBCXX19","name":"BBCXX19","type":3,"price":105.130896163,"gains":0.0,"open":105.130896163,"high":105.130896163,"low":105.130896163,"volume":0.0},{"id":"XMR","name":"XMR
+        INDEX","type":0,"price":65.11980387,"gains":6411.98,"open":0.0,"high":65.695630055,"low":0.0,"volume":0.0},{"id":"XMR","name":"XMR","type":1,"price":65.11980387,"gains":6411.98,"open":0.0,"high":65.695630055,"low":0.0,"volume":0.0},{"id":"XMR","name":"XMR
+        INDEX","type":1,"price":65.11980387,"gains":6411.98,"open":0.0,"high":65.695630055,"low":0.0,"volume":0.0},{"id":"XMRX19","name":"XMRX19","type":1,"price":65.11980387,"gains":6411.98,"open":0.0,"high":65.695630055,"low":0.0,"volume":0.0},{"id":"XMRX19","name":"XMRX19","type":3,"price":65.072759378,"gains":0.0,"open":65.072759378,"high":65.072759378,"low":65.072759378,"volume":0.0},{"id":"XMRZ19","name":"XMRZ19","type":1,"price":65.11980387,"gains":6411.98,"open":0.0,"high":65.695630055,"low":0.0,"volume":0.0},{"id":"XMRZ19","name":"XMRZ19","type":3,"price":65.29573652,"gains":0.0,"open":65.29573652,"high":65.29573652,"low":65.29573652,"volume":0.0},{"id":"USDT","name":"USDT","type":1,"price":0.997829895,"gains":0.06,"open":0.997203635,"high":0.999791789,"low":0.99673066,"volume":0.0},{"id":"BTC","name":"BTC","type":2,"price":8593.5,"gains":0.10017589,"open":8584.9,"high":8767.9,"low":8509.5,"volume":1.35848669129E7},{"id":"USDT","name":"USDT","type":2,"price":0.9977,"gains":-0.050090162,"open":0.9982,"high":1.0,"low":0.9969,"volume":310142.071735}],"success":true}'
+    http_version: 
+  recorded_at: Fri, 15 Nov 2019 09:46:20 GMT
+recorded_with: VCR 4.0.0
