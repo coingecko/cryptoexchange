@@ -10,23 +10,31 @@ module Cryptoexchange::Exchanges
 
         def fetch(market_pair)
           output = super(ticker_url)
-          adapt(output, market_pair)
+          index = super(index_url)
+          adapt(output, index, market_pair)
         end
 
         def ticker_url
           "#{Cryptoexchange::Exchanges::BtseFutures::Market::API_URL}/market_summary"
         end
 
-        def adapt(output, market_pair)
+        def index_url
+          "https://www.btse.com/api/init/initIndex?quote=USD"
+        end
+
+        def adapt(output, index, market_pair)
           output = output.find { |i| i["symbol"] == market_pair.inst_id }
+          index = index["data"].find { |i| i["id"] == market_pair.inst_id }
+
           contract_stat = Cryptoexchange::Models::ContractStat.new
 
           contract_stat.base      = market_pair.base
           contract_stat.target    = market_pair.target
           contract_stat.market    = BtseFutures::Market::NAME
           contract_stat.payload   = output
-          contract_stat.index_identifier = "BtseFutures-#{market_pair.base}"
-          contract_stat.index_name = "BTSE #{market_pair.base}"
+          contract_stat.index_identifier = index["id"]
+          contract_stat.index_name = index["name"]
+          contract_stat.index = index["price"]
 
           expire_timestamp = output['contract_end']
           start_timestamp = output['contract_start']
