@@ -17,7 +17,7 @@ RSpec.describe 'Exrates integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url market, base: lsk_usd_pair.base, target: lsk_usd_pair.target
-    expect(trade_page_url).to eq "https://exrates.me/#{lsk_usd_pair.base}-#{lsk_usd_pair.target}"
+    expect(trade_page_url).to eq "https://exrates.me/markets/#{lsk_usd_pair.base}-#{lsk_usd_pair.target}"
   end
 
   it 'fetch ticker' do
