@@ -6,7 +6,9 @@ module Cryptoexchange
                     :timestamp, :payload,
                     :expire_timestamp, :start_timestamp,
                     :contract_type,
-                    :funding_rate_percentage, :next_funding_rate_timestamp, :funding_rate_percentage_predicted
+                    :funding_rate_percentage, :next_funding_rate_timestamp, :funding_rate_percentage_predicted,
+                    ## Options
+                    :strike, :option_type
 
       def initialize(args = {})
         @base = args[:base]
@@ -24,6 +26,10 @@ module Cryptoexchange
         @funding_rate_percentage = args[:funding_rate_percentage]
         @next_funding_rate_timestamp = args[:next_funding_rate_timestamp]
         @funding_rate_percentage_predicted = args[:funding_rate_percentage_predicted]
+
+        ## Options
+        @strike = args[:strike]
+        @option_type = args[:option_type]
       end
 
       def base
