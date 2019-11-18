@@ -285,7 +285,7 @@ Or install it yourself as:
 | Gobaba            | Y       |            |         |         | Y           |          | gobaba            |       |
 | golix (API Failed)| Y       | Y          |         |         | Y           |          | golix             |       |
 | GOPAX             | Y       | Y [x]      | Y       |         | Y           | Y        | gopax             |       |
-| Graviex           | Y       | Y [x]      | N       |         | Y           |          | graviex           |       |
+| Graviex           | Y       | Y [x]      | N       |         | Y           | Y        | graviex           |       |
 | Hadax             | Y       | Y [x]      | N       |         | Y           | Y        | hadax             |       |
 | Hanbitco          | Y       | N          | N       |         | Y           | Y        | hanbitco          |       |
 | Hb.top            | Y       | Y [x]      | N       |         | Y           | N        | hb_top            |       |
