@@ -1,10 +1,13 @@
+require 'byebug'
 require 'spec_helper'
 
 RSpec.describe 'Deribit integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'deribit' }
-  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'deribit', contract_interval: "perpetual", inst_id: "BTC-PERPETUAL") }
-  let(:btc_usd_futures_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'deribit', contract_interval: "month", inst_id: "BTC-27MAR20") }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'deribit', contract_interval: "future", inst_id: "BTC-PERPETUAL") }
+  let(:btc_usd_futures_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'deribit', contract_interval: "future", inst_id: "BTC-27MAR20") }
+  let(:btc_usd_call_options_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'deribit', contract_interval: "option", inst_id: "BTC-27MAR20-24000-C") }
+  let(:btc_usd_puts_options_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'deribit', contract_interval: "option", inst_id: "BTC-27MAR20-24000-P") }
 
   it 'fetch pairs' do
     pairs = client.pairs('deribit')
@@ -14,8 +17,8 @@ RSpec.describe 'Deribit integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'deribit'
-    expect(pair.contract_interval).to eq "month"
-    expect(pair.inst_id).to eq "BTC-27SEP19"
+    expect(pair.contract_interval).to eq "future"
+    expect(pair.inst_id).to eq "BTC-27MAR20"
   end
 
   it 'fetch ticker' do
@@ -32,7 +35,7 @@ RSpec.describe 'Deribit integration specs' do
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
-    expect(ticker.contract_interval).to eq "perpetual"
+    expect(ticker.contract_interval).to eq "future"
     expect(ticker.inst_id).to eq "BTC-PERPETUAL"
   end
 
@@ -109,6 +112,34 @@ RSpec.describe 'Deribit integration specs' do
       expect(contract_stat.funding_rate_percentage).to be nil
       expect(contract_stat.next_funding_rate_timestamp).to be nil
       expect(contract_stat.funding_rate_percentage_predicted).to be nil
+    end
+
+    it 'fetch call options contract details' do
+      contract_stat = client.contract_stat(btc_usd_call_options_pair)
+
+      expect(Date.today.year..2020).to include(Time.at(contract_stat.expire_timestamp).year)
+      expect(Date.today.year..2020).to include(Time.at(contract_stat.start_timestamp).year)
+      expect(contract_stat.contract_type).to eq 'options'
+      expect(contract_stat.funding_rate_percentage).to be nil
+      expect(contract_stat.next_funding_rate_timestamp).to be nil
+      expect(contract_stat.funding_rate_percentage_predicted).to be nil
+
+      expect(contract_stat.option_type).to eq "call"
+      expect(contract_stat.strike).to eq 24000
+    end
+
+    it 'fetch put options contract details' do
+      contract_stat = client.contract_stat(btc_usd_puts_options_pair)
+
+      expect(Date.today.year..2020).to include(Time.at(contract_stat.expire_timestamp).year)
+      expect(Date.today.year..2020).to include(Time.at(contract_stat.start_timestamp).year)
+      expect(contract_stat.contract_type).to eq 'options'
+      expect(contract_stat.funding_rate_percentage).to be nil
+      expect(contract_stat.next_funding_rate_timestamp).to be nil
+      expect(contract_stat.funding_rate_percentage_predicted).to be nil
+
+      expect(contract_stat.option_type).to eq "put"
+      expect(contract_stat.strike).to eq 24000
     end
   end
 end

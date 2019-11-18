@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 02 Oct 2019 14:24:03 GMT
+      - Mon, 18 Nov 2019 04:28:55 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -33,16 +33,59 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Access-Control-Allow-Headers:
-      - Authorization,User-Agent,Range,X-Requested-With,Content-Type
+      - Authorization,User-Agent,Range,X-Requested-With,Content-Type,Partner
       Strict-Transport-Security:
       - max-age=15768000
       X-Frame-Options:
       - SAMEORIGIN
     body:
       encoding: ASCII-8BIT
-      string: '{"jsonrpc":"2.0","result":[{"volume_usd":10489660.0,"volume":1241.11,"quote_currency":"USD","open_interest":16780480,"mid_price":8347.25,"mark_price":8346.94,"low":8273.0,"last":8347.0,"instrument_name":"BTC-27MAR20","high":8657.5,"estimated_delivery_price":8234.57,"creation_timestamp":1570026243598,"bid_price":8347.0,"base_currency":"BTC","ask_price":8347.5}],"usIn":1570026243598742,"usOut":1570026243598831,"usDiff":89,"testnet":false}'
+      string: '{"jsonrpc":"2.0","result":[{"volume_usd":19495120.0,"volume":2227.74,"quote_currency":"USD","open_interest":42962230,"mid_price":8729.75,"mark_price":8729.07,"low":8597.0,"last":8729.5,"instrument_name":"BTC-27MAR20","high":8895.0,"estimated_delivery_price":8470.9,"creation_timestamp":1574051335983,"bid_price":8729.5,"base_currency":"BTC","ask_price":8730.0}],"usIn":1574051335983266,"usOut":1574051335983478,"usDiff":212,"testnet":false}'
     http_version: 
-  recorded_at: Wed, 02 Oct 2019 14:24:03 GMT
+  recorded_at: Mon, 18 Nov 2019 04:28:56 GMT
+- request:
+    method: get
+    uri: https://www.deribit.com/api/v2/public/get_book_summary_by_instrument?instrument_name=BTC-27MAR20&kind=future
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.deribit.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 18 Nov 2019 04:28:57 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '439'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Authorization,User-Agent,Range,X-Requested-With,Content-Type,Partner
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"jsonrpc":"2.0","result":[{"volume_usd":19495120.0,"volume":2227.74,"quote_currency":"USD","open_interest":42962230,"mid_price":8729.75,"mark_price":8729.2,"low":8597.0,"last":8729.5,"instrument_name":"BTC-27MAR20","high":8895.0,"estimated_delivery_price":8471.0,"creation_timestamp":1574051337028,"bid_price":8729.5,"base_currency":"BTC","ask_price":8730.0}],"usIn":1574051337028458,"usOut":1574051337028638,"usDiff":180,"testnet":false}'
+    http_version: 
+  recorded_at: Mon, 18 Nov 2019 04:28:57 GMT
 - request:
     method: get
     uri: https://www.deribit.com/api/v2/public/get_instruments?currency=BTC&expired=false&kind=future
@@ -64,11 +107,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 02 Oct 2019 14:24:04 GMT
+      - Mon, 18 Nov 2019 04:28:58 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1094'
+      - '1151'
       Connection:
       - close
       Access-Control-Allow-Origin:
@@ -76,14 +119,14 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Access-Control-Allow-Headers:
-      - Authorization,User-Agent,Range,X-Requested-With,Content-Type
+      - Authorization,User-Agent,Range,X-Requested-With,Content-Type,Partner
       Strict-Transport-Security:
       - max-age=15768000
       X-Frame-Options:
       - SAMEORIGIN
     body:
       encoding: ASCII-8BIT
-      string: '{"jsonrpc":"2.0","result":[{"tick_size":0.5,"taker_commission":0.0005,"settlement_period":"month","quote_currency":"USD","min_trade_amount":10.0,"maker_commission":-0.0002,"kind":"future","is_active":true,"instrument_name":"BTC-27MAR20","expiration_timestamp":1585296000000,"creation_timestamp":1568966442000,"contract_size":10.0,"base_currency":"BTC"},{"tick_size":0.5,"taker_commission":0.0005,"settlement_period":"month","quote_currency":"USD","min_trade_amount":10.0,"maker_commission":-0.0002,"kind":"future","is_active":true,"instrument_name":"BTC-27DEC19","expiration_timestamp":1577433600000,"creation_timestamp":1561366865000,"contract_size":10.0,"base_currency":"BTC"},{"tick_size":0.5,"taker_commission":0.00075,"settlement_period":"perpetual","quote_currency":"USD","min_trade_amount":10.0,"maker_commission":-0.00025,"kind":"future","is_active":true,"instrument_name":"BTC-PERPETUAL","expiration_timestamp":32503708800000,"creation_timestamp":1534242287000,"contract_size":10.0,"base_currency":"BTC"}],"usIn":1570026244757982,"usOut":1570026244759334,"usDiff":1352,"testnet":false}'
+      string: '{"jsonrpc":"2.0","result":[{"tick_size":0.5,"taker_commission":0.0005,"settlement_period":"month","quote_currency":"USD","min_trade_amount":10.0,"max_leverage":100,"maker_commission":-0.0002,"kind":"future","is_active":true,"instrument_name":"BTC-27MAR20","expiration_timestamp":1585296000000,"creation_timestamp":1568966442000,"contract_size":10.0,"base_currency":"BTC"},{"tick_size":0.5,"taker_commission":0.0005,"settlement_period":"month","quote_currency":"USD","min_trade_amount":10.0,"max_leverage":100,"maker_commission":-0.0002,"kind":"future","is_active":true,"instrument_name":"BTC-27DEC19","expiration_timestamp":1577433600000,"creation_timestamp":1561366865000,"contract_size":10.0,"base_currency":"BTC"},{"tick_size":0.5,"taker_commission":0.00075,"settlement_period":"perpetual","quote_currency":"USD","min_trade_amount":10.0,"max_leverage":100,"maker_commission":-0.00025,"kind":"future","is_active":true,"instrument_name":"BTC-PERPETUAL","expiration_timestamp":32503708800000,"creation_timestamp":1534242287000,"contract_size":10.0,"base_currency":"BTC"}],"usIn":1574051338060055,"usOut":1574051338062216,"usDiff":2161,"testnet":false}'
     http_version: 
-  recorded_at: Wed, 02 Oct 2019 14:24:04 GMT
+  recorded_at: Mon, 18 Nov 2019 04:28:58 GMT
 recorded_with: VCR 4.0.0

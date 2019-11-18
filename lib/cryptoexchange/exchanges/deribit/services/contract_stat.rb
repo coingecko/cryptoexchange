@@ -16,30 +16,50 @@ module Cryptoexchange::Exchanges
         end
 
         def get_contract_info(market_pair)
-          url = if market_pair.contract_interval == "perpetual"
-                  "#{Cryptoexchange::Exchanges::Deribit::Market::API_URL}/get_book_summary_by_instrument?instrument_name=#{market_pair.inst_id}&kind=#{market_pair.contract_interval}"
-                else
-                  "#{Cryptoexchange::Exchanges::Deribit::Market::API_URL}/get_instruments?currency=#{market_pair.base}&kind=#{market_pair.contract_interval}&expired=false"
-                end
-          contract_info = HTTP.get(url).parse(:json)
-          process_contract_info(contract_info, market_pair)
+          book_summary_url = "#{Cryptoexchange::Exchanges::Deribit::Market::API_URL}/get_book_summary_by_instrument?instrument_name=#{market_pair.inst_id}&kind=#{market_pair.contract_interval}"
+          instrument_url = "#{Cryptoexchange::Exchanges::Deribit::Market::API_URL}/get_instruments?currency=#{market_pair.base}&kind=#{market_pair.contract_interval}&expired=false"
+          book_summary = HTTP.get(book_summary_url).parse(:json)
+          instrument = HTTP.get(instrument_url).parse(:json)
+          process_contract_info(book_summary, instrument, market_pair)
         end
 
-        def process_contract_info(contract_info, market_pair)
+        def process_contract_info(book_summary, instrument, market_pair)
+          contract = instrument['result'].find { |i| i["instrument_name"] == market_pair.inst_id }
           arr = {}
-          if market_pair.contract_interval == "perpetual"
-            arr["funding_rate_percentage"] = contract_info["result"][0]["funding_8h"].to_f * 100
-            arr["funding_rate_percentage_predicted"] = nil
-            arr["next_funding_timestamp"] = nil
-          elsif market_pair.contract_interval == "option"
-            contract = contract_info['result'].find { |i| i["instrument_name"] == market_pair.inst_id }
-            arr["strike"] = contract["strike"]
-            arr["option_type"] = contract["option_type"]
-          elsif market_pair.contract_interval == "future"
-            contract = contract_info['result'].find { |i| i["instrument_name"] == market_pair.inst_id }
-            arr["expire_timestamp"] = contract["expiration_timestamp"].to_i / 1000
-            arr["start_timestamp"] = contract["creation_timestamp"].to_i / 1000
+          arr["strike"] = contract["strike"]
+          arr["option_type"] = contract["option_type"]
+          arr["kind"] = contract["kind"]
+          arr["settlement_period"] = contract["settlement_period"]
+          
+          if arr["settlement_period"] == "perpetual"
+            arr["funding_rate_percentage"] = book_summary["result"][0]["funding_8h"].to_f * 100
+            arr["expire_timestamp"] = nil
+            arr["start_timestamp"] = nil
+          else
+            arr["funding_rate_percentage"] = nil
+            arr["expire_timestamp"] = contract["expiration_timestamp"].to_i / 1000 if contract["expiration_timestamp"]
+            arr["start_timestamp"] = contract["creation_timestamp"].to_i / 1000 if contract["creation_timestamp"]
           end
+          
+
+          # if market_pair.contract_interval == "perpetual"
+          #   arr["funding_rate_percentage"] = contract_info["result"][0]["funding_8h"].to_f * 100
+          #   arr["funding_rate_percentage_predicted"] = nil
+          #   arr["next_funding_timestamp"] = nil
+          #   arr["kind"] = "future"
+          #   arr["settlement_period"] = "pereptual"
+          # elsif market_pair.contract_interval == "option"
+          #   contract = instrument['result'].find { |i| i["instrument_name"] == market_pair.inst_id }
+          #   arr["strike"] = contract["strike"]
+          #   arr["option_type"] = contract["option_type"]
+          #   arr["kind"] = contract["kind"]
+          #   arr["settlement_period"] = contract["settlement_period"]
+          # elsif market_pair.contract_interval == "future"
+          #   contract = instrument['result'].find { |i| i["instrument_name"] == market_pair.inst_id }
+          
+          #   arr["kind"] = contract["kind"]
+          #   arr["settlement_period"] = contract["settlement_period"]
+          # end
           arr
         end
 
