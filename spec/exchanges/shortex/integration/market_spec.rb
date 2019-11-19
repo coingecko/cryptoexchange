@@ -1,30 +1,31 @@
-require 'spec_helper'
+require "spec_helper"
 
-RSpec.describe 'Shortex integration specs' do
+RSpec.describe "Shortex integration specs" do
   let(:client) { Cryptoexchange::Client.new }
-  let(:eth_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'shortex') }
+  let(:market) { "shortex" }
+  let(:btc_usdc_pair) { Cryptoexchange::Models::MarketPair.new(base: "BTC", target: "USDC", market: market) }
 
-  it 'fetch pairs' do
-    pairs = client.pairs('shortex')
+  it "fetch pairs" do
+    pairs = client.pairs market
     expect(pairs).not_to be_empty
 
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
-    expect(pair.market).to eq 'shortex'
+    expect(pair.market).to eq market
   end
 
-  it 'give trade url' do
-    trade_page_url = client.trade_page_url 'shortex', base: eth_btc_pair.base, target: eth_btc_pair.target
-    expect(trade_page_url).to eq "https://api.shortex.net/trading/ethbtc"
+  it "give trade url" do
+    trade_page_url = client.trade_page_url market, base: btc_usdc_pair.base, target: btc_usdc_pair.target
+    expect(trade_page_url).to eq "https://api.shortex.net/trading/btcusdc"
   end
 
-  it 'fetch ticker' do
-    ticker = client.ticker(eth_btc_pair)
+  it "fetch ticker" do
+    ticker = client.ticker(btc_usdc_pair)
 
-    expect(ticker.base).to eq 'ETH'
-    expect(ticker.target).to eq 'BTC'
-    expect(ticker.market).to eq 'shortex'
+    expect(ticker.base).to eq btc_usdc_pair.base
+    expect(ticker.target).to eq btc_usdc_pair.target
+    expect(ticker.market).to eq market
     expect(ticker.last).to be_a Numeric
     expect(ticker.last).to be_a Numeric # Test if number is reasonable
     expect(ticker.bid).to be_a Numeric
@@ -34,12 +35,12 @@ RSpec.describe 'Shortex integration specs' do
     expect(ticker.payload).to_not be nil
   end
 
-  it 'fetch order book' do
-    order_book = client.order_book(eth_btc_pair)
+  it "fetch order book" do
+    order_book = client.order_book(btc_usdc_pair)
 
-    expect(order_book.base).to eq 'ETH'
-    expect(order_book.target).to eq 'BTC'
-    expect(order_book.market).to eq 'shortex'
+    expect(order_book.base).to eq btc_usdc_pair.base
+    expect(order_book.target).to eq btc_usdc_pair.target
+    expect(order_book.market).to eq market
 
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
