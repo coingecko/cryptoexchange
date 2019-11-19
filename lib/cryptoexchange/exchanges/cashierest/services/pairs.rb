@@ -5,13 +5,21 @@ module Cryptoexchange::Exchanges
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Cashierest::Market::API_URL}/TickerAll"
 
         def fetch
-          #because vcr doesn't use BOM
           if ENV["ENV"] = "test"
             output = super
           else
-            #remove BOM from json 
-            output = JSON.parse(HTTP.get(PAIRS_URL).to_s.gsub!("\xEF\xBB\xBF".force_encoding("UTF-8"), ''))
+            encoding_options = {
+              :invalid           => :replace,  # Replace invalid byte sequences
+              :undef             => :replace,  # Replace anything not defined in ASCII
+              :replace           => '',        # Use a blank for those replacements
+              :universal_newline => true       # Always break lines with \n
+            }
+            output = HTTP.get(PAIRS_URL)
+            output = JSON.parse(JSON.parse(output.to_json.encode(Encoding.find('ASCII'), encoding_options)))
           end
+
+
+
           output["Cashierest"].map do |output, ticker|
             if ticker["isFrozen"] == "0"
               target, base = output.split('_')

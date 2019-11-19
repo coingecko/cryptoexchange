@@ -13,9 +13,16 @@ module Cryptoexchange::Exchanges
           if ENV["ENV"] = "test"
             output = super(ticker_url)
           else
-            #remove BOM from json 
-            output = JSON.parse(HTTP.get(ticker_url).to_s.gsub!("\xEF\xBB\xBF".force_encoding("UTF-8"), ''))
-          end
+            encoding_options = {
+              :invalid           => :replace,  # Replace invalid byte sequences
+              :undef             => :replace,  # Replace anything not defined in ASCII
+              :replace           => '',        # Use a blank for those replacements
+              :universal_newline => true       # Always break lines with \n
+            }
+            output = HTTP.get(ticker_url)
+            output = JSON.parse(JSON.parse(output.to_json.encode(Encoding.find('ASCII'), encoding_options)))
+          end  
+
           adapt_all(output)
         end
 
