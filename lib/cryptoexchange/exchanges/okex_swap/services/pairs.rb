@@ -31,19 +31,11 @@ module Cryptoexchange::Exchanges
             base, target, expired_at = pair['instrument_id'].split "-"
             inst_id = pair['instrument_id']
 
-            interval = if pair["alias"] == "this_week"
-              "weekly"
-            elsif pair["alias"] == "next_week"
-              "biweekly"
-            elsif pair["alias"] == "quarter"
-              "quarterly"
-            end
-
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
               market: OkexSwap::Market::NAME,
-              contract_interval: interval,
+              contract_interval: "futures",
               inst_id: inst_id
             )
           end
