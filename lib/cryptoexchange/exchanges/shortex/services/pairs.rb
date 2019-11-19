@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Shortex
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Shortex::Market::API_URL}/markets"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Shortex::Market::API_URL}/public/markets"
 
         def fetch
           output = super

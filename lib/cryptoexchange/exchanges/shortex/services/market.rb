@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Shortex::Market::API_URL}/tickers/#{market_pair.base.downcase}#{market_pair.target.downcase}"
+          "#{Cryptoexchange::Exchanges::Shortex::Market::API_URL}/public/markets/#{market_pair.base.downcase}#{market_pair.target.downcase}/tickers"
         end
 
         def adapt(market_pair, output)

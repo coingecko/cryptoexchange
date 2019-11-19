@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.shortex.net/api/v2/markets
+    uri: https://exchange.shortex.net/api/v2/backend/public/markets
     body:
       encoding: UTF-8
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Connection:
       - close
       Host:
-      - api.shortex.net
+      - exchange.shortex.net
       User-Agent:
       - http.rb/5.0.0.pre
   response:
@@ -18,53 +18,43 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Accept-Encoding:
-      - gzip
-      Access-Control-Allow-Credentials:
-      - 'false'
-      Access-Control-Allow-Headers:
-      - Origin, X-Requested-With, Content-Type, Accept, Authorization
-      Access-Control-Allow-Methods:
-      - GET, POST, PUT, PATCH, DELETE
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Content-Length:
-      - '648'
+      Date:
+      - Tue, 19 Nov 2019 06:25:50 GMT
       Content-Type:
       - application/json
-      Etag:
-      - W/"d1e08777e4b9126d99aaa7ea386efefa"
-      Host:
-      - api.shortex.net
-      User-Agent:
-      - http.rb/5.0.0.pre
-      Version:
-      - HTTP/1.1
-      X-Forwarded-For:
-      - 1.32.17.220
-      X-Forwarded-Host:
-      - api.shortex.net
-      X-Forwarded-Port:
-      - '443'
-      X-Forwarded-Proto:
-      - https
-      X-Forwarded-Server:
-      - 4e04ae4ad714
-      X-Real-Ip:
-      - 1.32.17.220
-      X-Request-Id:
-      - 1a6a6016-f51a-4017-a320-6d0131f112d9
-      X-Runtime:
-      - '0.013940'
-      Date:
-      - Wed, 22 May 2019 16:16:49 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
       - close
+      Set-Cookie:
+      - __cfduid=dd08cb5c25a0780c0de9b2351cece2d7c1574144749; expires=Wed, 18-Nov-20
+        06:25:49 GMT; path=/; domain=.shortex.net; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Etag:
+      - W/"b7ed4e3be53454bfd22f942e4f5b64ff"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 18d0756ea2ca25a406fe2f3663975f35
+      X-Runtime:
+      - '0.103597'
+      X-Envoy-Upstream-Service-Time:
+      - '109'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 53801beb0f47dd66-KUL
     body:
       encoding: ASCII-8BIT
-      string: '[{"id":"ethbtc","name":"ETH/BTC"},{"id":"ethusdc","name":"ETH/USDC"},{"id":"btcusdc","name":"BTC/USDC"},{"id":"egteth","name":"EGT/ETH"},{"id":"youeth","name":"YOU/ETH"},{"id":"trueeth","name":"TRUE/ETH"},{"id":"swftceth","name":"SWFTC/ETH"},{"id":"omgeth","name":"OMG/ETH"},{"id":"mkreth","name":"MKR/ETH"},{"id":"linkusdc","name":"LINK/USDC"},{"id":"linketh","name":"LINK/ETH"},{"id":"gtoeth","name":"GTO/ETH"},{"id":"mkrbtc","name":"MKR/BTC"},{"id":"omgbtc","name":"OMG/BTC"},{"id":"linkbtc","name":"LINK/BTC"},{"id":"truebtc","name":"TRUE/BTC"},{"id":"youbtc","name":"YOU/BTC"},{"id":"gtobtc","name":"GTO/BTC"},{"id":"vraeth","name":"VRA/ETH"}]'
+      string: '[{"id":"ethusdc","name":"ETH/USDC","base_unit":"eth","quote_unit":"usdc","min_price":"0.00000001","max_price":"0.0","min_amount":"0.01","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"ethbtc","name":"ETH/BTC","base_unit":"eth","quote_unit":"btc","min_price":"0.00000001","max_price":"0.0","min_amount":"0.01","amount_precision":3,"price_precision":5,"state":"enabled"},{"id":"btcusdc","name":"BTC/USDC","base_unit":"btc","quote_unit":"usdc","min_price":"0.0000001","max_price":"0.0","min_amount":"0.01","amount_precision":4,"price_precision":4,"state":"enabled"},{"id":"mdcieoeth","name":"MDCIEO/ETH","base_unit":"mdcieo","quote_unit":"eth","min_price":"0.00000001","max_price":"0.000057","min_amount":"3000.0","amount_precision":3,"price_precision":3,"state":"ieo"},{"id":"apodieoeth","name":"APODIEO/ETH","base_unit":"apodieo","quote_unit":"eth","min_price":"0.00000001","max_price":"0.0054","min_amount":"100.0","amount_precision":4,"price_precision":4,"state":"ieo"},{"id":"ecoscuieoeth","name":"ECOSCUIEO/ETH","base_unit":"ecoscuieo","quote_unit":"eth","min_price":"0.00001","max_price":"0.00027","min_amount":"2000.0","amount_precision":5,"price_precision":5,"state":"ieo"},{"id":"4xbeth","name":"4XB/ETH","base_unit":"4xb","quote_unit":"eth","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"hoteth","name":"HOT/ETH","base_unit":"hot","quote_unit":"eth","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"lhtbtc","name":"LHT/BTC","base_unit":"lht","quote_unit":"btc","min_price":"0.000001","max_price":"0.0","min_amount":"0.01","amount_precision":2,"price_precision":8,"state":"enabled"},{"id":"lhteth","name":"LHT/ETH","base_unit":"lht","quote_unit":"eth","min_price":"0.000001","max_price":"0.0","min_amount":"0.01","amount_precision":2,"price_precision":6,"state":"enabled"},{"id":"usdxbtc","name":"USDX/BTC","base_unit":"usdx","quote_unit":"btc","min_price":"0.000001","max_price":"0.0","min_amount":"0.01","amount_precision":2,"price_precision":6,"state":"enabled"},{"id":"usdxeth","name":"USDX/ETH","base_unit":"usdx","quote_unit":"eth","min_price":"0.0001","max_price":"0.0","min_amount":"0.01","amount_precision":2,"price_precision":6,"state":"enabled"},{"id":"youeth","name":"YOU/ETH","base_unit":"you","quote_unit":"eth","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"egteth","name":"EGT/ETH","base_unit":"egt","quote_unit":"eth","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"bxtceth","name":"BXTC/ETH","base_unit":"bxtc","quote_unit":"eth","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"gtobtc","name":"GTO/BTC","base_unit":"gto","quote_unit":"btc","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"gtoeth","name":"GTO/ETH","base_unit":"gto","quote_unit":"eth","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"kuveth","name":"KUV/ETH","base_unit":"kuv","quote_unit":"eth","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"bxteth","name":"BXT/ETH","base_unit":"bxt","quote_unit":"eth","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"linketh","name":"LINK/ETH","base_unit":"link","quote_unit":"eth","min_price":"0.001","max_price":"0.001","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"amlteth","name":"AMLT/ETH","base_unit":"amlt","quote_unit":"eth","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"mkreth","name":"MKR/ETH","base_unit":"mkr","quote_unit":"eth","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"omgeth","name":"OMG/ETH","base_unit":"omg","quote_unit":"eth","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"rvleth","name":"RVL/ETH","base_unit":"rvl","quote_unit":"eth","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"swaceeth","name":"SWACE/ETH","base_unit":"swace","quote_unit":"eth","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"swftceth","name":"SWFTC/ETH","base_unit":"swftc","quote_unit":"eth","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"linkbtc","name":"LINK/BTC","base_unit":"link","quote_unit":"btc","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"mkrbtc","name":"MKR/BTC","base_unit":"mkr","quote_unit":"btc","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"omgbtc","name":"OMG/BTC","base_unit":"omg","quote_unit":"btc","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"bkyeth","name":"BKY/ETH","base_unit":"bky","quote_unit":"eth","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"youbtc","name":"YOU/BTC","base_unit":"you","quote_unit":"btc","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"azueth","name":"AZU/ETH","base_unit":"azu","quote_unit":"eth","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"},{"id":"stbusdc","name":"STB/USDC","base_unit":"stb","quote_unit":"usdc","min_price":"0.001","max_price":"0.0","min_amount":"0.001","amount_precision":3,"price_precision":3,"state":"enabled"}]'
     http_version: 
-  recorded_at: Wed, 22 May 2019 16:16:49 GMT
+  recorded_at: Tue, 19 Nov 2019 06:25:42 GMT
 recorded_with: VCR 4.0.0
