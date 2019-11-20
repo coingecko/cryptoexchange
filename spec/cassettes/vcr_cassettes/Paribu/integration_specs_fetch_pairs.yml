@@ -12,42 +12,54 @@ http_interactions:
       Host:
       - www.paribu.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Sat, 31 Mar 2018 12:20:49 GMT
+      - Wed, 20 Nov 2019 07:45:16 GMT
       Content-Type:
       - application/json
-      Content-Length:
-      - '135'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - close
       Set-Cookie:
-      - XSRF-TOKEN=eyJpdiI6Ilk3algwd1RQck5BSkFsc0NnblFoeHc9PSIsInZhbHVlIjoiWmhHVEZqazNxYTV2THpMNER4bHd3Z1RhbkprdFRpYlM1MGNVSTdGTlwveDRGWFN6aTVSaGdRWnlJOFwvNUcycWJHYzJUZ1FlYXpyK01NSk5GTFlvOWdUQT09IiwibWFjIjoiOTA3ODI3NzNkOGYwNGI1ZjQ1MzVjOWNjZjEyZTdkNWNkYjVmMDg4YjA2NzFhODBkMmVhYzI1YTM3NTJlMjYzMSJ9;
-        expires=Sun, 01-Apr-2018 00:20:47 GMT; Max-Age=43200; path=/
-      - __cfduid=d79b585592d87957c33d2a2bbead3ee6a1522498848; expires=Sun, 31-Mar-19
-        12:20:48 GMT; path=/; domain=.paribu.com; HttpOnly
-      - laravel_session=eyJpdiI6IllEZ0lweTRDV3l6Z0Fueit4SUNkK0E9PSIsInZhbHVlIjoiM1wvSGRcL3lcLzR5eTJ1aXZYWXJCSkVzdnN3MnpMb1hEazZTb2FRVGdFM1wvTEh0T3E4bmhOY1FUWlhuS2EzT3ZPa0tScXNXbHRoVDlYbzRvakxMMEtydDd3PT0iLCJtYWMiOiIzOWNmYjI4YTU4N2JlZmJjMDE2ODQ5MjM4MGE1M2M2Nzk5OWUwZGZlYzExMTg5YjdmZjI5YTg2M2VkZmU5MGJkIn0%3D;
-        expires=Sun, 01-Apr-2018 00:20:47 GMT; Max-Age=43200; path=/; HttpOnly
+      - __cfduid=d3ebefe0ed2f12ed3626774ac7ba427e91574235915; expires=Fri, 20-Dec-19
+        07:45:15 GMT; path=/; domain=.paribu.com; HttpOnly; Secure
+      - paribu_session=eyJpdiI6IlJ5TWZtZXUwcW56RW9nMlJqeTdxVkE9PSIsInZhbHVlIjoiajUzTjc0MmFROW5BS1wvY1dhaGZHNXZvSkpRclA0WTV0TEVydTR6c3VqNFZJQmpseEZvWE9UZW9MMW43cVZNQmEiLCJtYWMiOiJmNTc3NmJlNzE0MWY0NjQ4N2Y3MzUxYWQ1NWU2NDQ4ZWQwZGM0MDc0MDYwNDRkZjljZjFjNjAwOTNmNTg4ZTcwIn0%3D;
+        expires=Wed, 20-Nov-2019 19:45:16 GMT; Max-Age=43200; path=/; httponly
+      Vary:
+      - Accept-Encoding
       Cache-Control:
-      - no-cache
-      Accept-Ranges:
-      - bytes
-      X-Turbo-Charged-By:
-      - LiteSpeed
+      - private, must-revalidate
+      Expires:
+      - '2'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Content-Security-Policy:
+      - 'default-src * data: ''unsafe-eval'' ''unsafe-inline'''
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 4042c5ac9da92cff-KUL
+      - 5388cda97c7bc104-KUL
     body:
       encoding: ASCII-8BIT
-      string: '{"BTC_TL":{"last":28300,"lowestAsk":28300.02,"highestBid":28300,"percentChange":-0.09,"volume":760.5,"high24hr":28800,"low24hr":27400}}'
+      string: '{"BTC_TL":{"lowestAsk":46799.99,"highestBid":46750.99,"low24hr":46303,"high24hr":47149,"avg24hr":46678.54,"volume":609.95,"last":46672.77,"change":-258.23,"percentChange":-0.55,"chartData":[50751,50718,50698,50449,49928,50010,50001,49609,50130,49201,49000,49021,49298.99,49101,49100,49250,49350,49597.78,49250.03,49105.6,48412,47100,47329.39,47134,46652,46533,46562.01,46780]},"ETH_TL":{"lowestAsk":1026.99,"highestBid":1014.15,"low24hr":1000,"high24hr":1029.43,"avg24hr":1012.48,"volume":1325.36,"last":1027.79,"change":5.79,"percentChange":0.57,"chartData":[1084.8,1086,1088.96,1077.32,1071.01,1075.79,1066.39,1065.11,1067.08,1044.99,1050,1046.01,1057.98,1066.82,1057,1062.99,1070.99,1070.5,1066.5,1067,1045.56,1027,1030.5,1025,1015.65,1009.9,1011.98,1016.76]},"XRP_TL":{"lowestAsk":1.46,"highestBid":1.45,"low24hr":1.41,"high24hr":1.47,"avg24hr":1.44,"volume":1585643.5,"last":1.46,"change":0.02,"percentChange":1.39,"chartData":[1.58,1.58,1.58,1.57,1.55,1.56,1.55,1.54,1.55,1.51,1.51,1.51,1.52,1.53,1.53,1.53,1.53,1.54,1.53,1.52,1.48,1.44,1.46,1.45,1.42,1.44,1.45,1.45]},"TRX_TL":{"lowestAsk":0.098,"highestBid":0.097,"low24hr":0.095,"high24hr":0.099,"avg24hr":0.097,"volume":4393146,"last":0.097,"change":-0.001,"percentChange":-1.02,"chartData":[0.116,0.116,0.116,0.114,0.111,0.112,0.113,0.111,0.112,0.108,0.108,0.107,0.108,0.108,0.109,0.108,0.109,0.109,0.109,0.108,0.104,0.098,0.099,0.099,0.097,0.096,0.097,0.097]},"HOT_TL":{"lowestAsk":0.0051,"highestBid":0.005,"low24hr":0.0049,"high24hr":0.0052,"avg24hr":0.005,"volume":342589446,"last":0.005,"change":0,"percentChange":0,"chartData":[0.0058,0.0059,0.0058,0.0058,0.0057,0.0058,0.0057,0.0057,0.0058,0.0058,0.0058,0.0058,0.0057,0.0058,0.0057,0.0057,0.0058,0.0057,0.0056,0.0057,0.0055,0.005,0.0051,0.0051,0.0051,0.0051,0.0051,0.0051]},"WAVES_TL":{"lowestAsk":4.2,"highestBid":4.1,"low24hr":4.05,"high24hr":4.23,"avg24hr":4.13,"volume":24858.42,"last":4.2,"change":0.03,"percentChange":0.72,"chartData":[4.48,4.48,4.55,4.53,4.46,4.48,4.47,4.46,4.58,4.5,4.46,4.43,4.45,4.48,4.44,4.44,4.49,4.49,4.5,4.49,4.45,4.37,4.22,4.22,4.15,4.12,4.12,4.2]},"LINK_TL":{"lowestAsk":16.03,"highestBid":15.9,"low24hr":14.7,"high24hr":16.14,"avg24hr":15.47,"volume":90482.6,"last":16,"change":0.29,"percentChange":1.85,"chartData":[17.39,17.56,17.23,17.6,18.19,18.02,17.65,17.48,17.12,17.15,17.35,17.44,17.25,17.06,17.33,17.02,17.08,16.95,16.95,17.12,16.38,15.75,16.18,15.83,15.25,15.46,15.6,15.8]},"RVN_TL":{"lowestAsk":0.145,"highestBid":0.144,"low24hr":0.143,"high24hr":0.147,"avg24hr":0.145,"volume":1417591,"last":0.144,"change":-0.001,"percentChange":-0.69,"chartData":[0.165,0.163,0.164,0.164,0.159,0.159,0.159,0.157,0.159,0.154,0.154,0.155,0.154,0.154,0.155,0.155,0.155,0.155,0.155,0.154,0.152,0.147,0.147,0.146,0.145,0.145,0.144,0.143]},"BAT_TL":{"lowestAsk":1.45,"highestBid":1.44,"low24hr":1.4,"high24hr":1.49,"avg24hr":1.43,"volume":264050.6,"last":1.45,"change":-0.04,"percentChange":-2.68,"chartData":[1.42,1.42,1.5,1.48,1.52,1.5,1.51,1.46,1.48,1.43,1.46,1.48,1.5,1.51,1.53,1.54,1.6,1.59,1.6,1.56,1.52,1.49,1.51,1.46,1.43,1.43,1.45,1.43]},"BTT_TL":{"lowestAsk":0.0024,"highestBid":0.0023,"low24hr":0.0022,"high24hr":0.0024,"avg24hr":0.0023,"volume":247161254,"last":0.0023,"change":0,"percentChange":0,"chartData":[0.0026,0.0026,0.0026,0.0026,0.0025,0.0025,0.0025,0.0024,0.0024,0.0025,0.0025,0.0024,0.0024,0.0025,0.0025,0.0025,0.0025,0.0025,0.0025,0.0025,0.0024,0.0023,0.0024,0.0024,0.0023,0.0022,0.0022,0.0023]},"LTC_TL":{"lowestAsk":321.98,"highestBid":320.01,"low24hr":310.01,"high24hr":334.99,"avg24hr":319.44,"volume":965.92,"last":320.01,"change":-3.49,"percentChange":-1.08,"chartData":[356.15,353,350.1,353,340.13,344.95,345.3,342.1,346.75,335.45,333.01,334,339,339.7,339,339.99,346.9,346.7,342.81,341,334.1,323,320,326,320,317.88,317,319]},"BCH_TL":{"lowestAsk":1449,"highestBid":1402.51,"low24hr":1370,"high24hr":1449,"avg24hr":1394.37,"volume":386.64,"last":1449,"change":48,"percentChange":3.43,"chartData":[1660,1655.51,1650.14,1646.97,1590,1608.03,1623.79,1595,1595,1559.99,1579.97,1531.04,1543.88,1555,1565,1540,1555,1561.9,1570,1539.99,1513.6,1439.81,1430,1440,1396,1380.02,1371.12,1413]},"XLM_TL":{"lowestAsk":0.38,"highestBid":0.378,"low24hr":0.367,"high24hr":0.381,"avg24hr":0.374,"volume":1676894,"last":0.378,"change":-0.002,"percentChange":-0.53,"chartData":[0.445,0.443,0.44,0.431,0.425,0.426,0.428,0.421,0.426,0.421,0.422,0.419,0.415,0.416,0.414,0.42,0.421,0.419,0.416,0.413,0.4,0.382,0.385,0.377,0.371,0.373,0.378,0.378]},"DOGE_TL":{"lowestAsk":0.0148,"highestBid":0.0145,"low24hr":0.0143,"high24hr":0.0149,"avg24hr":0.0146,"volume":5593890,"last":0.0145,"change":-0.0002,"percentChange":-1.36,"chartData":[0.0154,0.0155,0.0154,0.0155,0.0154,0.0152,0.0152,0.0152,0.0153,0.0153,0.0153,0.0154,0.0153,0.0153,0.0154,0.0151,0.0153,0.0153,0.0154,0.0151,0.0151,0.0145,0.0148,0.0147,0.0147,0.0145,0.0147,0.0146]},"ADA_TL":{"lowestAsk":0.242,"highestBid":0.241,"low24hr":0.238,"high24hr":0.251,"avg24hr":0.242,"volume":1287825,"last":0.242,"change":-0.001,"percentChange":-0.41,"chartData":[0.253,0.25,0.25,0.25,0.245,0.247,0.247,0.245,0.254,0.251,0.254,0.249,0.25,0.254,0.257,0.257,0.254,0.264,0.266,0.264,0.259,0.249,0.25,0.249,0.241,0.241,0.241,0.242]},"NEO_TL":{"lowestAsk":68.99,"highestBid":68,"low24hr":63.8,"high24hr":69.5,"avg24hr":66.76,"volume":25971.71,"last":69,"change":4.5,"percentChange":6.98,"chartData":[74.73,75.5,76.35,74.72,72.76,73.46,74.5,72.8,71.4,69.66,70.44,69.76,72.37,71.6,71.32,70.99,70.49,70.2,70.01,69,68,64.8,65.26,64.55,65.4,66.91,68.23,68.8]},"USDT_TL":{"lowestAsk":5.76,"highestBid":5.75,"low24hr":5.74,"high24hr":5.82,"avg24hr":5.78,"volume":149621.89,"last":5.77,"change":-0.05,"percentChange":-0.86,"chartData":[5.79,5.8,5.79,5.79,5.82,5.82,5.8,5.82,5.81,5.81,5.81,5.8,5.81,5.83,5.81,5.83,5.8,5.8,5.81,5.81,5.8,5.8,5.78,5.81,5.79,5.76,5.75,5.75]},"EOS_TL":{"lowestAsk":18.2,"highestBid":17.81,"low24hr":17.52,"high24hr":18.95,"avg24hr":18.04,"volume":10498.28,"last":17.81,"change":-0.38,"percentChange":-2.09,"chartData":[20.2,20.05,20.13,20.1,19.72,19.7,19.54,19.94,19.88,19.21,19.34,19.52,19.53,19.62,19.56,19.48,19.81,19.88,19.71,19.8,19.46,18.5,18.26,18.27,18,17.62,18.24,18.24]}}'
     http_version: 
-  recorded_at: Sat, 31 Mar 2018 12:20:49 GMT
+  recorded_at: Wed, 20 Nov 2019 07:45:16 GMT
 recorded_with: VCR 4.0.0
