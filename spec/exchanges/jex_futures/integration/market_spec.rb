@@ -77,8 +77,8 @@ RSpec.describe 'JexFutures integration specs' do
       expect(contract_stat.target).to eq 'USDT'
       expect(contract_stat.market).to eq 'jex_futures'
       expect(contract_stat.index).to be_a Numeric
-      expect(contract_stat.index_identifier).to eq "JexFutures-BTC"
-      expect(contract_stat.index_name).to eq "Jex Futures BTC"
+      expect(contract_stat.index_identifier).to be nil
+      expect(contract_stat.index_name).to be nil
       expect(contract_stat.timestamp).to be nil
       expect(contract_stat.payload).to_not be nil
     end

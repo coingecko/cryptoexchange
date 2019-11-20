@@ -23,8 +23,8 @@ module Cryptoexchange::Exchanges
           contract_stat.base      = market_pair.base
           contract_stat.target    = market_pair.target
           contract_stat.market    = GmoJapanFutures::Market::NAME
-          contract_stat.index_identifier = "GmoJapanFutures-#{market_pair.base}/#{market_pair.target}"
-          contract_stat.index_name = "GMO Japan #{market_pair.base}/#{market_pair.target}"
+          contract_stat.index_identifier = nil
+          contract_stat.index_name = nil
 
           contract_stat.contract_type = "perpetual" # Assume its all perpetual
           contract_stat

@@ -18,8 +18,8 @@ module Cryptoexchange::Exchanges
           contract_stat.base      = market_pair.base
           contract_stat.target    = market_pair.target
           contract_stat.market    = Bakkt::Market::NAME
-          contract_stat.index_identifier = "Bakkt-#{market_pair.base}"
-          contract_stat.index_name = "Bakkt BTC Index"
+          contract_stat.index_identifier = nil
+          contract_stat.index_name = nil
           # contract_stat.open_interest = output['openInterest'].to_f
           # contract_stat.index     = output['indicativeSettlePrice'].to_f
           # contract_stat.payload   = output

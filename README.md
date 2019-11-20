@@ -484,30 +484,30 @@ Or install it yourself as:
 ### Derivatives (Perpetual & Futures)
 | Exchange          | T | OB | List | URL | OpenInt | CT  | Idx | Idxid | Idxn | ST | ET | F% | NFT | F%P |                  |
 |-----------------  |---|----|------|-----|---------|-----|-----|-------|------|----|----|----|-----|-----|------------------|
-| Bakkt Futures     | Y | N  | Y    |  Y  |  N      | Y   |  N  |   Y   |   Y  | N  | N  | N  | N   | N   |  bakkt |
-| Bibox (Futures)   | Y | Y  | Y    |  Y  |  N      | Y   |  N  |   Y   |   Y  | N  | N  | N  | N   | N   |  bibox_futures   |
-| Binance Futures   | Y | Y  | Y    |  Y  |  N      | Y   |  Y  |   Y   |   Y  | N  | N  | Y  | Y   | N   |  binance_futures |
-| Bitflyer Futures  | Y | Y  | Y    |  Y  |  N      | Y   |  N  |   Y   |   Y  | N  | N  |    |     |     |  bitflyer_futures  |
-| Bitfinex Futures  | Y | Y  | Y    |     |  N      | Y   |  Y  |   Y   |   Y  | N  | N  | Y  | Y   |     |  bitfinex_futures  |
-| Bitforex Futures  | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  |    |    | Y  | Y   | N   |  bitforex_futures  |
+| Bakkt Futures     | Y | N  | Y    |  Y  |  N      | Y   |  N  |       |      | N  | N  | N  | N   | N   |  bakkt |
+| Bibox (Futures)   | Y | Y  | Y    |  Y  |  N      | Y   |  N  |       |      | N  | N  | N  | N   | N   |  bibox_futures   |
+| Binance Futures   | Y | Y  | Y    |  Y  |  N      | Y   |  Y  |       |      | N  | N  | Y  | Y   | N   |  binance_futures |
+| Bitflyer Futures  | Y | Y  | Y    |  Y  |  N      | Y   |  N  |       |      | N  | N  |    |     |     |  bitflyer_futures  |
+| Bitfinex Futures  | Y | Y  | Y    |     |  N      | Y   |  Y  |       |      | N  | N  | Y  | Y   |     |  bitfinex_futures  |
+| Bitforex Futures  | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      |    |    | Y  | Y   | N   |  bitforex_futures  |
 | Bitmex            | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | Y  | Y  | Y  | Y   | Y   |  bitmex  |
-| Bitz Futures      | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | N  | N  | N  | N   | Y   |  bitz_futures  |
-| Bybit             | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | N  | N  | Y  | Y   | Y   |  bybit |
-| CME Futures       | Y | N  | Y    |  Y  |  N      | Y   |  N  |   Y   |   Y  | N  | Y  | N  | N   | N   |  cme_futures |
-| Coinflex Futures  | Y | Y  | Y    |  Y  |  N      | Y*  |  N  |   Y   |   Y  | N  | N  |    |     |     |  coinflex_futures  |
-| Deribit           | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | Y  | Y  | Y  | Y   | Y   |  deribit |
-| Delta Futures     | Y | Y  | Y    |  Y  |  N      | Y   |  Y  |   Y   |   Y  | N  | N  | Y  | N   | N   |  delta_futures |
+| Bitz Futures      | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | N  | N   | Y   |  bitz_futures  |
+| Bybit             | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  bybit |
+| CME Futures       | Y | N  | Y    |  Y  |  N      | Y   |  N  |       |      | N  | Y  | N  | N   | N   |  cme_futures |
+| Coinflex Futures  | Y | Y  | Y    |  Y  |  N      | Y*  |  N  |       |      | N  | N  |    |     |     |  coinflex_futures  |
+| Deribit           | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | Y  | Y  | Y  | Y   | Y   |  deribit |
+| Delta Futures     | Y | Y  | Y    |  Y  |  N      | Y   |  Y  |       |      | N  | N  | Y  | N   | N   |  delta_futures |
 | FTX               | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | N  | Y  | N  | Y   | Y   |  ftx |
-| Gate (Futures)    | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | N  | N  | Y  | Y   | Y   |  gate_futures  |
-| GMO (Futures)     | Y | Y  | Y    |  Y  |  N      | Y*  |  N  |   Y   |   Y  | N  | N  |    |     |     |  gmo_futures |
+| Gate (Futures)    | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  gate_futures  |
+| GMO (Futures)     | Y | Y  | Y    |  Y  |  N      | Y*  |  N  |       |      | N  | N  |    |     |     |  gmo_futures |
 | Huobi DM          | Y | Y  | Y    |     |  Y      | Y   |  Y  |   Y   |   Y  | Y  | Y  | N  | N   | N   |  huobi_dm  |
-| JexFutures        | Y | Y  | Y    |     |  N      | Y   |  Y  |   Y   |   Y  | N  | N  | Y  | Y   | Y   |  jex_futures |
+| JexFutures        | Y | Y  | Y    |     |  N      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  jex_futures |
 | Kraken Futures    | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | Y  | Y  | Y  | Y   | Y   |  kraken_futures  |
 | Kumex             | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | Y  | Y  | Y  | Y   | Y   |  kumex |
 | OKEx Swaps        | Y | Y  | Y    |     |  Y      | Y   |  Y  |   Y   |   Y  | Y  | Y  | Y  | Y   | Y   |  okex_swaps  |
 | BTSE (Futures)    | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | Y  | Y  |    |     |     |  btse_futures  |
-| Prime XBT         | Y | Y  | Y    |  Y  |  N      | Y   |  N  |   Y   |   Y  | N  | N  | N  | N   | N   |  prime_xbt  |
-| BaseFEX           | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | N  | N  | Y  | Y   | Y   |  basefex  |
+| Prime XBT         | Y | Y  | Y    |  Y  |  N      | Y   |  N  |       |      | N  | N  | N  | N   | N   |  prime_xbt  |
+| BaseFEX           | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  basefex  |
 
 *Legend*
 
