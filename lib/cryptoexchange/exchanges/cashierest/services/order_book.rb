@@ -13,14 +13,8 @@ module Cryptoexchange::Exchanges
           if ENV["ENV"] = "test"
             output = super(ticker_url(market_pair))
           else
-            encoding_options = {
-              :invalid           => :replace,  # Replace invalid byte sequences
-              :undef             => :replace,  # Replace anything not defined in ASCII
-              :replace           => '',        # Use a blank for those replacements
-              :universal_newline => true       # Always break lines with \n
-            }
             output = HTTP.get(ticker_url(market_pair))
-            output = JSON.parse(JSON.parse(output.to_json.encode(Encoding.find('ASCII'), encoding_options)))
+            output = JSON.parse(output.to_s.gsub("\xEF\xBB\xBF".force_encoding("UTF-8"), ''))
           end
           adapt(output["ReturnData"], market_pair)
         end
