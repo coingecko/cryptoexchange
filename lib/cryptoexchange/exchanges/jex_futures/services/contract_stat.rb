@@ -25,8 +25,8 @@ module Cryptoexchange::Exchanges
           contract_stat.target    = market_pair.target
           contract_stat.market    = JexFutures::Market::NAME
           contract_stat.index     = contract_info['markPrice'].to_f
-          contract_stat.index_identifier = "JexFutures-#{market_pair.base}"
-          contract_stat.index_name = "Jex Futures #{market_pair.base}"
+          contract_stat.index_identifier = nil
+          contract_stat.index_name = nil
           contract_stat.funding_rate_percentage     = contract_info['fundingRate'].to_f * 100
           contract_stat.next_funding_rate_timestamp     = contract_info['nextFundingTime']/1000
           contract_stat.funding_rate_percentage_predicted = contract_info['predictedFundingRate']/1000

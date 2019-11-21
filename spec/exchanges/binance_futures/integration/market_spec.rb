@@ -59,8 +59,8 @@ RSpec.describe 'Binance Futures integration specs' do
       expect(contract_stat.target).to eq 'USDT'
       expect(contract_stat.market).to eq 'binance_futures'
       expect(contract_stat.index).to be_a Numeric
-      expect(contract_stat.index_identifier).to eq "BinanceFutures-BTCUSDT"
-      expect(contract_stat.index_name).to eq "Binance BTCUSDT"
+      expect(contract_stat.index_identifier).to be nil
+      expect(contract_stat.index_name).to be nil
       expect(contract_stat.timestamp).to be nil
 
       expect(contract_stat.expire_timestamp).to be nil

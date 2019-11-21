@@ -55,8 +55,8 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = Deribit::Market::NAME
           contract_stat.open_interest = open_interest['result'][0]['open_interest'].to_f
           contract_stat.index     = index['result'][market_pair.base].to_f
-          contract_stat.index_identifier = "Deribit-#{market_pair.base}"
-          contract_stat.index_name = "Deribit #{market_pair.base}"
+          contract_stat.index_identifier = nil
+          contract_stat.index_name = nil
 
           contract_stat.expire_timestamp = contract_info['expire_timestamp']
           contract_stat.start_timestamp = contract_info['start_timestamp']

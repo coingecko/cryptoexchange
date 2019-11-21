@@ -42,8 +42,8 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = Bybit::Market::NAME
           contract_stat.open_interest = pair['open_interest'].to_f
           contract_stat.index     = pair['index_price'].to_f
-          contract_stat.index_identifier = "Bybit-#{market_pair.base}"
-          contract_stat.index_name = "Bybit #{market_pair.base}"
+          contract_stat.index_identifier = nil
+          contract_stat.index_name = nil
 
           contract_stat.payload   = pair
           contract_stat.expire_timestamp = nil
