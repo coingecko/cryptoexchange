@@ -80,8 +80,8 @@ RSpec.describe 'Kumex integration specs' do
       expect(contract_stat.market).to eq 'kumex'
       expect(contract_stat.contract_type).to eq 'perpetual'
       expect(contract_stat.index).to be_a Numeric
-      expect(contract_stat.index_identifier).to eq "Kumex-.BXBT"
-      expect(contract_stat.index_name).to eq "Kumex .BXBT"
+      expect(contract_stat.index_identifier).to eq "BXBT"
+      expect(contract_stat.index_name).to eq ".BXBT"
       expect(contract_stat.open_interest).to be_a Numeric
       expect(contract_stat.timestamp).to be nil
 
