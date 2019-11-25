@@ -12,7 +12,7 @@ Add this line to your application's Gemfile:
 ```ruby
 gem 'cryptoexchange'
 ```
- 
+
 And then execute:
 
     $ bundle
@@ -396,7 +396,8 @@ Or install it yourself as:
 | RadarRelay        | Y       | Y [x]      |[No Price]|         | Y           | Y        | radar_relay      |       |
 | Raidofinance      | Y       | Y [x]      | Y       |         | Y           | Y        | raidofinance      |       |
 | Raisex            | Y       |            |         |         | Y           |          | raisex            |       |
-| Remitano          | Y       | Y [x]      | Y [limit: 20]|         | Y           | N        | remitano          |  P2P  |
+| Remitano          | Y       | Y [x]      | Y [limit: 20]|         | Y      | N        | remitano          |  P2P  |
+| Resfinex          | Y       |            |         |         | Y           | N        | resfinex          |       |
 | Rfinex            | Y       | Y          | Y       |         | Y           |          | rfinex            |       |
 | RightBTC          | Y       | Y [x]      | Y       |         | Y           |          | rightbtc          |       |
 | SafeTrade         | Y       | Y [x]      | N       |         | Y           |          | safe_trade        |       |
