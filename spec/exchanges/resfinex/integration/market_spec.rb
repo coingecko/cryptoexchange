@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe 'Eosex integration specs' do
+RSpec.describe 'resfinex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'resfinex' }
   let(:eth_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USDT', market: 'resfinex') }
