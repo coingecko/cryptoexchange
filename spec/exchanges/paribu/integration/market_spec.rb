@@ -39,8 +39,8 @@ RSpec.describe 'Paribu integration specs' do
     expect(order_book.market).to eq 'paribu'
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
-    expect(order_book.asks.first.price).to_not be_nil
-    expect(order_book.bids.first.amount).to_not be_nil
+    expect(order_book.asks.first.price).to be_a Numeric
+    expect(order_book.bids.first.amount).to be_a Numeric
     expect(order_book.bids.first.timestamp).to be_nil
     expect(order_book.asks.count).to be > 10
     expect(order_book.bids.count).to be > 10
