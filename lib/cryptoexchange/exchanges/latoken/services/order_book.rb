@@ -31,7 +31,7 @@ module Cryptoexchange::Exchanges
         def adapt_orders(orders)
           orders.collect do |order_entry|
             Cryptoexchange::Models::Order.new(price: NumericHelper.to_d(order_entry["price"]),
-                                              amount: NumericHelper.to_d(order_entry["amount"]),
+                                              amount: NumericHelper.to_d(order_entry["quantity"]),
                                               timestamp: nil)
           end
         end

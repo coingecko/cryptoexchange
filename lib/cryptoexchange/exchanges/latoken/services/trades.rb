@@ -19,7 +19,7 @@ module Cryptoexchange::Exchanges
             tr.type      = trade["side"]
             tr.price     = trade["price"]
             tr.amount    = trade["amount"]
-            tr.timestamp = trade["timestamp"]
+            tr.timestamp = trade["timestamp"] / 1000
             tr.payload   = trade
             tr.market    = Latoken::Market::NAME
             tr
