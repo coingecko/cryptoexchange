@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Paribu integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_tl_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'TL', market: 'paribu') }
+  let(:btc_try_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'TRY', market: 'paribu', inst_id: "btc_tl") }
 
   it 'fetch pairs' do
     pairs = client.pairs('paribu')
@@ -15,10 +15,10 @@ RSpec.describe 'Paribu integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_tl_pair)
+    ticker = client.ticker(btc_try_pair)
 
     expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'TL'
+    expect(ticker.target).to eq 'TRY'
     expect(ticker.market).to eq 'paribu'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
@@ -32,10 +32,10 @@ RSpec.describe 'Paribu integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(btc_tl_pair)
+    order_book = client.order_book(btc_try_pair)
   
     expect(order_book.base).to eq 'BTC'
-    expect(order_book.target).to eq 'TL'
+    expect(order_book.target).to eq 'TRY'
     expect(order_book.market).to eq 'paribu'
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
@@ -49,12 +49,12 @@ RSpec.describe 'Paribu integration specs' do
   end
   
   it 'fetch trade' do
-    trades = client.trades(btc_tl_pair)
+    trades = client.trades(btc_try_pair)
     trade = trades.sample
   
     expect(trades).to_not be_empty
     expect(trade.base).to eq 'BTC'
-    expect(trade.target).to eq 'TL'
+    expect(trade.target).to eq 'TRY'
     expect(trade.market).to eq 'paribu'
     expect(['buy', 'sell']).to include trade.type
     expect(trade.price).to_not be_nil

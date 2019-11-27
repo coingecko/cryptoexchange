@@ -20,9 +20,18 @@ module Cryptoexchange::Exchanges
         def adapt_all(output)
           output.map do |pair, ticker|
             base, target = pair.split("_")
+            inst_id = "#{base}_#{target}".downcase
+            # set target to TRY because CryptoExchangeRate::SUPPORTED_STANDARD_CURRENCIES not support TL
+            target = if target == "TL"
+                       "TRY"
+                     else
+                       target
+                     end
+
             market_pair = Cryptoexchange::Models::MarketPair.new(
-              base:   base,
+              base: base,
               target: target,
+              inst_id: inst_id,
               market: Paribu::Market::NAME
             )
             adapt(market_pair, ticker)
@@ -33,6 +42,7 @@ module Cryptoexchange::Exchanges
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
+          ticker.inst_id = market_pair.inst_id
           ticker.market = Paribu::Market::NAME
           ticker.ask = NumericHelper.to_d(output['lowestAsk'])
           ticker.bid = NumericHelper.to_d(output['highestBid'])
