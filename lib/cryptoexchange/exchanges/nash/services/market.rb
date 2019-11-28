@@ -41,12 +41,12 @@ module Cryptoexchange::Exchanges
           ticker.target    = market_pair.target
           ticker.market    = Nash::Market::NAME
           if output['lastPrice'] != nil
-            ticker.last      = NumericHelper.to_d(output['lastPrice']['amount'])
-            ticker.high      = NumericHelper.to_d(output['highPrice_24h']['amount'])
-            ticker.low       = NumericHelper.to_d(output['lowPrice_24h']['amount'])
-            ticker.bid       = NumericHelper.to_d(output['bestBidPrice']['amount'])
-            ticker.ask       = NumericHelper.to_d(output['bestAskPrice']['amount'])
-            ticker.volume    = NumericHelper.to_d(output['volume_24h']['amount']) / ticker.last
+            ticker.last      = NumericHelper.to_d(output.dig('lastPrice', 'amount'))
+            ticker.high      = NumericHelper.to_d(output.dig('highPrice_24h', 'amount'))
+            ticker.low       = NumericHelper.to_d(output.dig('lowPrice_24h', 'amount'))
+            ticker.bid       = NumericHelper.to_d(output.dig('bestBidPrice', 'amount'))
+            ticker.ask       = NumericHelper.to_d(output.dig('bestAskPrice', 'amount'))
+            ticker.volume    = NumericHelper.to_d(output.dig('volume_24h', 'amount')) / ticker.last
           else
             ticker.last      = nil
             ticker.high      = nil
