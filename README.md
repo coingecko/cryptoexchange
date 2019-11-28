@@ -397,7 +397,7 @@ Or install it yourself as:
 | Raidofinance      | Y       | Y [x]      | Y       |         | Y           | Y        | raidofinance      |       |
 | Raisex            | Y       |            |         |         | Y           |          | raisex            |       |
 | Remitano          | Y       | Y [x]      | Y [limit: 20]|         | Y      | N        | remitano          |  P2P  |
-| Resfinex          | Y       |            |         |         | Y           | N        | resfinex          |       |
+| Resfinex          | Y       | Y [x]      |         |         | Y           | N        | resfinex          |       |
 | Rfinex            | Y       | Y          | Y       |         | Y           |          | rfinex            |       |
 | RightBTC          | Y       | Y [x]      | Y       |         | Y           |          | rightbtc          |       |
 | SafeTrade         | Y       | Y [x]      | N       |         | Y           |          | safe_trade        |       |
