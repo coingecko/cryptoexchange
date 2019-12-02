@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fmex.com/api/contracts/web/v3/public/statistics
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - fmex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=ISO-8859-1
+      Content-Length:
+      - '40'
+      Connection:
+      - close
+      Date:
+      - Sat, 30 Nov 2019 07:47:30 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 d45e7d7d8103c27c11136d671059c638.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HKG54-C1
+      X-Amz-Cf-Id:
+      - 7c-u2apuIMPprTzIJqsay5pLfcBlzYO7Xkdsc4ZPxnFIEzQx_ZWSOQ==
+    body:
+      encoding: ISO-8859-1
+      string: '{"status":0,"data":{"BTCUSD_P":9088265}}'
+    http_version: 
+  recorded_at: Sat, 30 Nov 2019 07:47:28 GMT
+- request:
+    method: get
+    uri: https://api.fmex.com/v2/market/indexes
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.fmex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 30 Nov 2019 07:47:31 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '416'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":0,"data":{".btcins1d":[1575072000000,105.25077344740967],".btcins1h":[1575097200000,105.25191378075733],".btcusd_spot":[1575100050000,7758.57],".btcusdfair":[1575100050000,7758.35],".btcusdfr":[1575100020000,5.9E-5],".btcusdfr8h":[1575115200000,-5.5E-5],".btcusdlr1d":[1546272000000,3.0E-4],".btcusdpi":[1575100020000,-6.83E-4],".btcusdpi8h":[1575086400000,-5.55E-4],".btcusdpimax":[1546272000000,5.0E-4]}}'
+    http_version: 
+  recorded_at: Sat, 30 Nov 2019 07:47:29 GMT
+recorded_with: VCR 4.0.0
