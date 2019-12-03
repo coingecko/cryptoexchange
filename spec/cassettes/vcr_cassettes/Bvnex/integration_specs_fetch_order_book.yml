@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bvnex.com/api/depth?limit=100&symbol=ltc_usdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bvnex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Dec 2019 09:23:10 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dba91e03c595f37de72abc49ec1bdb04c1575364989; expires=Thu, 02-Jan-20
+        09:23:09 GMT; path=/; domain=.bvnex.com; HttpOnly; Secure
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 53f47aeeaaf0db34-KIX
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "code" : 0,
+          "msg" : "ok",
+          "data" : {
+            "asks" : [ [ "45.51", "24.343369" ], [ "45.56", "23.895289" ], [ "45.62", "31.685295" ], [ "45.67", "19.261708" ], [ "45.72", "35.986899" ], [ "45.78", "6.898181" ], [ "45.84", "19.595118" ], [ "45.89", "4.160245" ], [ "45.95", "12.464181" ], [ "46.0", "12.805764" ], [ "46.07", "39.956422" ], [ "46.12", "27.601878" ], [ "46.18", "33.555151" ], [ "46.23", "20.608595" ], [ "46.29", "8.720414" ], [ "46.34", "4.365555" ], [ "46.4", "15.15967" ], [ "46.45", "7.836604" ], [ "46.51", "48.823225" ], [ "46.56", "34.043468" ] ],
+            "bids" : [ [ "45.45", "41.13129" ], [ "45.4", "48.373672" ], [ "45.34", "19.396371" ], [ "45.29", "36.830361" ], [ "45.23", "24.183315" ], [ "45.18", "30.58253" ], [ "45.12", "17.135374" ], [ "45.07", "18.39956" ], [ "45.01", "29.252836" ], [ "44.96", "48.911618" ], [ "44.9", "25.377769" ], [ "44.85", "36.495501" ], [ "44.79", "2.742761" ], [ "44.73", "32.290107" ], [ "44.68", "4.827682" ], [ "44.62", "2.281353" ], [ "44.57", "34.662856" ], [ "44.51", "8.536313" ], [ "44.46", "25.297397" ], [ "44.4", "48.937565" ], [ "42.82", "3.2135" ] ]
+          }
+        }
+    http_version: 
+  recorded_at: Tue, 03 Dec 2019 09:23:10 GMT
+recorded_with: VCR 4.0.0
