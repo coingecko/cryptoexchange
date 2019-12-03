@@ -142,6 +142,7 @@ Or install it yourself as:
 | BTSE              | Y       | Y [x]      | Y       |         | Y           | Y        | btse              |       |
 | BTCNEXT           | Y       |            |         |         | Y           | N        | btcnext           |       |
 | Buyucoin          | Y       | N          | N       |         | Y           |          | buyucoin          |       |
+| Bvnex             | Y       | Y [x]      | Y [x]   |         | Y           |          | bvnex             |       |
 | BX Thailand       | Y       | Y [x]      |         |         | Y           |          | bx_thailand       |       |
 | Bybit(future)     | Y       | Y [x]      |         |         | Y           |          | bybit             |       |
 | BW                | Y       |            |         |         | Y           | Y        | bw                |       |
