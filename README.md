@@ -360,7 +360,7 @@ Or install it yourself as:
 | Ninecoin (Halted) | Y       |            |         |         | Y           |          | ninecoin          |       |
 | NLexch            | Y       |            |         |         | Y           | Y        | nlexch            |       |
 | Novadex           | Y       | N          | N       |         | Y           | Y        | novadex           |       |
-| Novadax           | Y       | N          | Y       |         | User-Defined| N        | novadax           |       |
+| Novadax           | Y       | Y [x]      | Y       |         | Y           | Y        | novadax           |       |
 | Nusax             | Y       |            |         |         | Y           | Y        | nusax             |       |
 | Nova Exchange     | Y       |            |         |         | Y           |          | novaexchange      |       |
 | Oasis Trade       | Y       | Y          | Y       |         | Y           | Y        | oasis_trade       |       |
