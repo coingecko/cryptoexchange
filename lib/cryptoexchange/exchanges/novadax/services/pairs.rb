@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Novadax
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-       PAIRS_URL = "#{Cryptoexchange::Exchanges::Novadax::Market::API_URL}/data/market"
+       PAIRS_URL = "#{Cryptoexchange::Exchanges::Novadax::Market::API_URL}/market/tickers"
 
         def fetch
           output = super
@@ -11,9 +11,10 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output['data'].map do |pair|
+            base, target = pair["symbol"].split("_")
             Cryptoexchange::Models::MarketPair.new(
-              base: pair,
-              target: 'BRL',
+              base: base,
+              target: target,
               market: Novadax::Market::NAME
             )
           end
