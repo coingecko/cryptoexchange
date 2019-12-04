@@ -17,6 +17,11 @@ RSpec.describe 'Citex integration specs' do
     expect(pair.market).to eq 'citex'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'citex', base: veil_btc_pair.base, target: veil_btc_pair.target
+    expect(trade_page_url).to eq "https://trade.citex.co.kr/trade/VEIL_BTC"
+  end  
+
   it 'fetch ticker' do
     pending "Skip this test due to restriction"
 
