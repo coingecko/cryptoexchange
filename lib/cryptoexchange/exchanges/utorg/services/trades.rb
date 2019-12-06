@@ -21,7 +21,7 @@ module Cryptoexchange::Exchanges
             tr.type      = trade['side'].downcase
             tr.price     = trade['price']
             tr.amount    = trade['amount']
-            tr.timestamp = trade['matchedAt']
+            tr.timestamp = trade['matchedAt'] / 1000
             tr.payload   = trade
             tr.market    = Utorg::Market::NAME
             tr

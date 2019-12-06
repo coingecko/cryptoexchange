@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe 'Utorg integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'utorg' }
-  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: market) }
+  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', inst_id: '9', market: market) }
 
   it 'fetch pairs' do
     pairs = client.pairs(market)
