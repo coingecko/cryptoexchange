@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bigone::Market::API_URL}/asset_pairs/#{market_pair.base.upcase}-#{market_pair.target.upcase}/depth"
+          "#{Cryptoexchange::Exchanges::Bigone::Market::API_URL}/asset_pairs/#{market_pair.base.upcase}-#{market_pair.target.upcase}/depth?limit=200"
         end
 
         def adapt(output, market_pair)

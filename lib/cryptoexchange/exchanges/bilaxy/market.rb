@@ -6,7 +6,7 @@ module Cryptoexchange::Exchanges
       PAIRS_API_URL = 'https://www.bilaxy.com/api/v2/market/coins'
 
       def self.trade_page_url(args={})
-        "https://bilaxy.com/exchange"
+        "https://bilaxy.com/trade/#{args[:base]}_#{args[:target]}"
       end
     end
   end
