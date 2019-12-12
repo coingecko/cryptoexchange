@@ -456,6 +456,7 @@ Or install it yourself as:
 | Vaultmex          | Y       | Y          | Y       |         | Y           | Y        | vaultmex          |       |
 | Vb                | Y       | Y          | Y       |         | Y           | Y        | vb                |       |
 | Vbitex            | Y       | N          | N       |         | Y           | Y        | vbitex            |       |
+| Vcc               | Y       | Y [x]      | Y       |         | Y           | Y        | vcc               |       |
 | Vebitcoin         | Y       | Y          | N       |         | Y           | N        | vebitcoin         |       |
 | Velic             | Y       | Y [x]      |         |         | Y           | N        | velic             |       |
 | Vertpig           | Y       | Y          | N       |         | Y           | Y        | vertpig           |       |
