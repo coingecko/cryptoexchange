@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Crex24
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Crex24::Market::API_URL}/ReturnTicker"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Crex24::Market::API_URL}/tickers"
 
         def fetch
           output = super
@@ -10,8 +10,8 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output['Tickers'].collect do |pair|
-            target, base = pair['PairName'].split("_")
+          output.map do |pair|
+            base, target = pair['instrument'].split("-")
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
