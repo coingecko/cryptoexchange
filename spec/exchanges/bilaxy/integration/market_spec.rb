@@ -18,7 +18,7 @@ RSpec.describe 'Bilaxy integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url market, base: eos_eth_pair.base, target: eos_eth_pair.target
-    expect(trade_page_url).to eq "https://bilaxy.com/exchange"
+    expect(trade_page_url).to eq "https://bilaxy.com/trade/EOS_ETH"
   end
 
   it 'fetch ticker' do

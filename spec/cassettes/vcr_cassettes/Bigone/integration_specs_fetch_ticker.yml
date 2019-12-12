@@ -18,44 +18,25 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Thu, 10 Oct 2019 06:55:02 GMT
+      Access-Control-Allow-Origin:
+      - "*"
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '293'
+      - '296'
+      Date:
+      - Thu, 12 Dec 2019 07:57:27 GMT
       Connection:
       - close
-      Set-Cookie:
-      - __cfduid=d541c2b933362ed84c92b8758ed8ad7821570690502; expires=Fri, 09-Oct-20
-        06:55:02 GMT; path=/; domain=.big.one; HttpOnly; Secure
-      Access-Control-Allow-Origin:
-      - "*"
-      Vary:
-      - Origin
-      Via:
-      - 1.1 google
-      Alt-Svc:
-      - clear
-      Accept-Ranges:
-      - bytes
-      Cf-Cache-Status:
-      - DYNAMIC
-      Strict-Transport-Security:
-      - max-age=2592000; includeSubDomains
-      X-Content-Type-Options:
-      - nosniff
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 5236afb5db8a2cbb-KUL
+      Server-Timing:
+      - cdn-cache; desc=MISS
+      - edge; dur=1
+      - origin; dur=100
     body:
       encoding: UTF-8
-      string: '{"code":0,"data":{"asset_pair_name":"ETH-BTC","bid":{"price":"0.022469","order_count":2,"quantity":"0.21509"},"ask":{"price":"0.022499","order_count":1,"quantity":"2.3"},"open":"0.022168","high":"0.023002","low":"0.022105","close":"0.022481","volume":"81798.58234","daily_change":"0.000313"}}
+      string: '{"code":0,"data":{"asset_pair_name":"ETH-BTC","bid":{"price":"0.01985","order_count":1,"quantity":"5.02261"},"ask":{"price":"0.01986","order_count":2,"quantity":"0.41085"},"open":"0.020154","high":"0.02018","low":"0.019645","close":"0.019855","volume":"107082.61997","daily_change":"-0.000299"}}
 
-'
+        '
     http_version: 
-  recorded_at: Thu, 10 Oct 2019 06:55:02 GMT
+  recorded_at: Thu, 12 Dec 2019 07:57:24 GMT
 recorded_with: VCR 4.0.0
