@@ -28,9 +28,8 @@ RSpec.describe 'Crex24 integration specs' do
     expect(ticker.last).to be_a Numeric
     expect(ticker.high).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.change).to be_a Numeric
     expect(ticker.timestamp).to be nil
-    
+
     expect(ticker.payload).to_not be nil
   end
 
@@ -47,7 +46,7 @@ RSpec.describe 'Crex24 integration specs' do
     expect(order_book.bids.first.timestamp).to be_nil
     expect(order_book.asks.count).to be > 0
     expect(order_book.bids.count).to be > 0
-    expect(order_book.timestamp).to be_a Numeric
+    expect(order_book.timestamp).to be nil
     expect(order_book.payload).to_not be nil
   end
 
@@ -59,7 +58,7 @@ RSpec.describe 'Crex24 integration specs' do
     expect(trade.base).to eq 'DOGE'
     expect(trade.target).to eq 'BTC'
     expect(trade.market).to eq 'crex24'
-    expect(trade.trade_id).to_not be_nil
+    expect(trade.trade_id).to be nil
     expect(['buy', 'sell']).to include trade.type
     expect(trade.price).to_not be_nil
     expect(trade.amount).to_not be_nil

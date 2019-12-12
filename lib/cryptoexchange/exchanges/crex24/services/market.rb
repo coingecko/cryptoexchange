@@ -14,12 +14,12 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Crex24::Market::API_URL}/ReturnTicker"
+          "#{Cryptoexchange::Exchanges::Crex24::Market::API_URL}/tickers"
         end
 
         def adapt_all(output)
-          output['Tickers'].map do |ticker|
-            target, base = ticker['PairName'].split("_")
+          output.map do |ticker|
+            base, target = ticker['instrument'].split("-")
             market_pair  = Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
@@ -35,11 +35,12 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Crex24::Market::NAME
-          ticker.last      = NumericHelper.to_d(market['Last'])
-          ticker.high      = NumericHelper.to_d(market['HighPrice'])
-          ticker.low       = NumericHelper.to_d(market['LowPrice'])
-          ticker.change    = NumericHelper.to_d(market['PercentChange'])
-          ticker.volume    = NumericHelper.to_d(market['QuoteVolume'])
+          ticker.last      = NumericHelper.to_d(market['last'])
+          ticker.high      = NumericHelper.to_d(market['high'])
+          ticker.low       = NumericHelper.to_d(market['low'])
+          ticker.volume    = NumericHelper.to_d(market['baseVolume'])
+          ticker.bid       = NumericHelper.to_d(output['bid'])
+          ticker.ask        = NumericHelper.to_d(output['ask'])
           ticker.timestamp = nil
           ticker.payload   = market
           ticker
