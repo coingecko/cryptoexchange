@@ -2,6 +2,7 @@ module Cryptoexchange::Exchanges
   module Bitsonic
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitsonic::Market::API_URL}/external/ticker/all"
 
         def fetch
           output = super
@@ -10,14 +11,13 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           market_pairs = []
-          output.each do |pair|
+          output["result"].each do |pair|
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair[:base],
-                              target: pair[:target],
+                              base: pair["symbol"],
+                              target: pair["market"],
                               market: Bitsonic::Market::NAME
                             )
           end
-
           market_pairs
         end
       end
