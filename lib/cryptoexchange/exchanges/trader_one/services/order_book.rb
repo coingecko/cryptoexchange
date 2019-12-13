@@ -38,8 +38,8 @@ module Cryptoexchange::Exchanges
           	flag = order_entry[3]
             
           	Cryptoexchange::Models::Order.new(price: unitPrice,
-                          amount: totalAmount,
-                          timestamp: nil)
+						  amount: totalAmount,
+						  timestamp: nil)
         end
       end
     end
