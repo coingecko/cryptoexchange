@@ -25,10 +25,9 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = TraderOne::Market::NAME
-          ticker.last	   = NumericHelper.to_d(market['last'])
+          ticker.last	   = NumericHelper.to_d(market['lastPrice'])
           ticker.ask       = NumericHelper.to_d(market['ask'])
           ticker.bid       = NumericHelper.to_d(market['bid'])
-          ticker.last      = NumericHelper.to_d(market['price'])
           ticker.volume    = NumericHelper.to_d(market['baseVolume'])
           ticker.timestamp = nil
           ticker.payload   = output
