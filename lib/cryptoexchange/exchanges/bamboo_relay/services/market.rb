@@ -9,17 +9,14 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch
-          outputs = []
-          (1..25).each do |page_id|
-            ticker_output = super(ticker_url(page_id))
-            break if ticker_output.empty?
-            outputs = outputs + ticker_output
+          output = Cryptoexchange::Cache.ticker_cache.fetch(ticker_url()) do
+            HTTP.use(:auto_inflate).headers("Accept-Encoding" => "gzip").get(ticker_url()).parse(:json)
           end
-          adapt_all(outputs)
+          adapt_all(output)
         end
 
-        def ticker_url(page_id)
-          "#{Cryptoexchange::Exchanges::BambooRelay::Market::API_URL}/markets?include=base,stats,ticker&page=#{page_id}&perPage=1000"
+        def ticker_url()
+          "#{Cryptoexchange::Exchanges::BambooRelay::Market::API_URL}/markets?include=base,stats,ticker,realVolume&perPage=1000"
         end
 
         def adapt_all(output)
