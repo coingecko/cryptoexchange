@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://safe.trade/api/v2/markets
+    uri: https://safe.trade/api/v2/peatio/public/markets
     body:
       encoding: UTF-8
       string: ''
@@ -12,75 +12,78 @@ http_interactions:
       Host:
       - safe.trade
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Sun, 16 Sep 2018 02:37:28 GMT
+      - Mon, 16 Dec 2019 07:53:07 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1156'
+      - '15060'
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=dff4ff3f3dd0fb861e5d058839ec8d8e31537065447; expires=Mon, 16-Sep-19
-        02:37:27 GMT; path=/; domain=.safe.trade; HttpOnly; Secure
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, PUT, PATCH, DELETE
-      Access-Control-Allow-Headers:
-      - Origin, X-Requested-With, Content-Type, Accept, Authorization
-      Access-Control-Allow-Credentials:
-      - 'false'
-      Version:
-      - HTTP/1.0
-      Host:
-      - safe.trade
-      X-Real-Ip:
-      - 172.17.0.2
-      X-Forwarded-For:
-      - 202.190.140.104, 162.158.165.169, 172.17.0.2
-      X-Forwarded-Proto:
-      - http
-      X-Forwarded-Ssl:
-      - 'on'
-      X-Forwarded-Port:
-      - '443'
+      - __cfduid=dd747887a75cd822720f7f2499636b0e61576482786; expires=Wed, 15-Jan-20
+        07:53:06 GMT; path=/; domain=.safe.trade; HttpOnly
       Accept-Encoding:
       - gzip
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Cdn-Loop:
+      - cloudflare
+      Cf-Connecting-Ip:
+      - 2001:e68:6595:1700:6127:376f:a6ce:7e94
       Cf-Ipcountry:
       - MY
       Cf-Visitor:
       - '{"scheme":"https"}'
-      User-Agent:
-      - http.rb/3.0.0
-      Cf-Connecting-Ip:
-      - 202.190.140.104
       Etag:
-      - W/"fe7f802a1cbe4d11d93599cc580380f0"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      - W/"aad3ed56be9e8ca06edfc02faf4f62aa"
+      Host:
+      - safe.trade
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Vary:
+      - Origin
+      Version:
+      - HTTP/1.1
+      X-Envoy-Expected-Rq-Timeout-Ms:
+      - '15000'
+      X-Envoy-Original-Path:
+      - "/api/v2/peatio/public/markets"
+      X-Envoy-Upstream-Service-Time:
+      - '43'
+      X-Forwarded-For:
+      - 2001:e68:6595:1700:6127:376f:a6ce:7e94, 162.158.26.59
+      X-Forwarded-Host:
+      - safe.trade
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Forwarded-Server:
+      - 0262603d2736
+      X-Real-Ip:
+      - 162.158.26.59
       X-Request-Id:
-      - 3aced717-cb30-48e1-87af-9a7fced112cb
+      - 77579dbf-4c14-4b87-931d-183edfa3feec
       X-Runtime:
-      - '0.003365'
-      Strict-Transport-Security:
-      - max-age=31536000
-      - max-age=31536000
+      - '0.041415'
+      Cf-Cache-Status:
+      - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 45aff384ae9aa918-SIN
+      - 545f14e82db6dd56-KUL
     body:
       encoding: ASCII-8BIT
-      string: '[{"id":"anonbtc","name":"ANON/BTC"},{"id":"anonsafe","name":"ANON/SAFE"},{"id":"safebtc","name":"SAFE/BTC"},{"id":"safeltc","name":"SAFE/LTC"},{"id":"safedoge","name":"SAFE/DOGE"},{"id":"btczbtc","name":"BTCZ/BTC"},{"id":"btczltc","name":"BTCZ/LTC"},{"id":"btczsafe","name":"BTCZ/SAFE"},{"id":"aquasafe","name":"AQUA/SAFE"},{"id":"aquabtc","name":"AQUA/BTC"},{"id":"kotobtc","name":"KOTO/BTC"},{"id":"kotosafe","name":"KOTO/SAFE"},{"id":"xshsafe","name":"XSH/SAFE"},{"id":"xshbtc","name":"XSH/BTC"},{"id":"cmmbtc","name":"CMM/BTC"},{"id":"cmmsafe","name":"CMM/SAFE"},{"id":"rvnsafe","name":"RVN/SAFE"},{"id":"rvnbtc","name":"RVN/BTC"},{"id":"secibtc","name":"SECI/BTC"},{"id":"secisafe","name":"SECI/SAFE"},{"id":"pgnsafe","name":"PGN/SAFE"},{"id":"pgnbtc","name":"PGN/BTC"},{"id":"zenbtc","name":"ZEN/BTC"},{"id":"zensafe","name":"ZEN/SAFE"},{"id":"vtlltc","name":"VTL/LTC"},{"id":"vtlsafe","name":"VTL/SAFE"},{"id":"xsgbtc","name":"XSG/BTC"},{"id":"xsgsafe","name":"XSG/SAFE"},{"id":"genxsafe","name":"GENX/SAFE"},{"id":"genxbtc","name":"GENX/BTC"},{"id":"zclbtc","name":"ZCL/BTC"},{"id":"zclsafe","name":"ZCL/SAFE"},{"id":"safesusd","name":"SAFE/SUSD"}]'
+      string: '[{"id":"yecbtc","name":"YEC/BTC","ask_unit":"yec","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"yeczec","name":"YEC/ZEC","ask_unit":"yec","bid_unit":"zec","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":4,"bid_precision":4},{"id":"safebtc","name":"SAFE/BTC","ask_unit":"safe","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"safeltc","name":"SAFE/LTC","ask_unit":"safe","bid_unit":"ltc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.0001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"ltcbtc","name":"LTC/BTC","ask_unit":"ltc","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"anonbtc","name":"ANON/BTC","ask_unit":"anon","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"safedoge","name":"SAFE/DOGE","ask_unit":"safe","bid_unit":"doge","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"anonsafe","name":"ANON/SAFE","ask_unit":"anon","bid_unit":"safe","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"bcsmart","name":"BC/SMART","ask_unit":"bc","bid_unit":"smart","ask_fee":"0.000015","bid_fee":"0.000015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"bcsafe","name":"BC/SAFE","ask_unit":"bc","bid_unit":"safe","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"bihbtc","name":"BIH/BTC","ask_unit":"bih","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"bcbtc","name":"BC/BTC","ask_unit":"bc","bid_unit":"btc","ask_fee":"0.000015","bid_fee":"0.000015","min_ask_price":"0.000000001","max_bid_price":"9.0","min_ask_amount":"0.000000001","min_bid_amount":"0.000000001","ask_precision":9,"bid_precision":9},{"id":"bitcbtc","name":"BITC/BTC","ask_unit":"bitc","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"bitcsafe","name":"BITC/SAFE","ask_unit":"bitc","bid_unit":"safe","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"cpubtc","name":"CPU/BTC","ask_unit":"cpu","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"hushsafe","name":"HUSH/SAFE","ask_unit":"hush","bid_unit":"safe","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"hushbtc","name":"HUSH/BTC","ask_unit":"hush","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"horasafe","name":"HORA/SAFE","ask_unit":"hora","bid_unit":"safe","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"horabtc","name":"HORA/BTC","ask_unit":"hora","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"btczsafe","name":"BTCZ/SAFE","ask_unit":"btcz","bid_unit":"safe","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"btczltc","name":"BTCZ/LTC","ask_unit":"btcz","bid_unit":"ltc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"btczbtc","name":"BTCZ/BTC","ask_unit":"btcz","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.000000001","max_bid_price":"9.0","min_ask_amount":"0.000000001","min_bid_amount":"0.000000001","ask_precision":9,"bid_precision":9},{"id":"athsafe","name":"ATH/SAFE","ask_unit":"ath","bid_unit":"safe","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"athbtc","name":"ATH/BTC","ask_unit":"ath","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"egembtc","name":"EGEM/BTC","ask_unit":"egem","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"aquasafe","name":"AQUA/SAFE","ask_unit":"aqua","bid_unit":"safe","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.0001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"aquabtc","name":"AQUA/BTC","ask_unit":"aqua","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"dgbsafe","name":"DGB/SAFE","ask_unit":"dgb","bid_unit":"safe","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"dgbbtc","name":"DGB/BTC","ask_unit":"dgb","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"ethosafe","name":"ETHO/SAFE","ask_unit":"etho","bid_unit":"safe","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.0000001","max_bid_price":"0.0","min_ask_amount":"0.0000001","min_bid_amount":"0.0000001","ask_precision":8,"bid_precision":8},{"id":"ethobtc","name":"ETHO/BTC","ask_unit":"etho","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"kotobtc","name":"KOTO/BTC","ask_unit":"koto","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"kotosafe","name":"KOTO/SAFE","ask_unit":"koto","bid_unit":"safe","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"dogebtc","name":"DOGE/BTC","ask_unit":"doge","bid_unit":"btc","ask_fee":"0.0","bid_fee":"0.0","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"ritobtc","name":"RITO/BTC","ask_unit":"rito","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"ritosafe","name":"RITO/SAFE","ask_unit":"rito","bid_unit":"safe","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.0001","max_bid_price":"0.0","min_ask_amount":"0.0","min_bid_amount":"0.0","ask_precision":8,"bid_precision":8},{"id":"rpgbtc","name":"RPG/BTC","ask_unit":"rpg","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"rvnsafe","name":"RVN/SAFE","ask_unit":"rvn","bid_unit":"safe","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"rvnbtc","name":"RVN/BTC","ask_unit":"rvn","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"smartbtc","name":"SMART/BTC","ask_unit":"smart","bid_unit":"btc","ask_fee":"0.000015","bid_fee":"0.000015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"smartsafe","name":"SMART/SAFE","ask_unit":"smart","bid_unit":"safe","ask_fee":"0.000015","bid_fee":"0.000015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"pgnsafe","name":"PGN/SAFE","ask_unit":"pgn","bid_unit":"safe","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"pgnbtc","name":"PGN/BTC","ask_unit":"pgn","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"zensafe","name":"ZEN/SAFE","ask_unit":"zen","bid_unit":"safe","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"zenbtc","name":"ZEN/BTC","ask_unit":"zen","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"zttlsafe","name":"ZTTL/SAFE","ask_unit":"zttl","bid_unit":"safe","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.0001","max_bid_price":"0.0","min_ask_amount":"0.001","min_bid_amount":"0.0001","ask_precision":8,"bid_precision":8},{"id":"zttlbtc","name":"ZTTL/BTC","ask_unit":"zttl","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.0001","min_bid_amount":"0.0001","ask_precision":8,"bid_precision":8},{"id":"urxsafe","name":"URX/SAFE","ask_unit":"urx","bid_unit":"safe","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.0001","max_bid_price":"0.0","min_ask_amount":"0.0001","min_bid_amount":"0.0001","ask_precision":8,"bid_precision":8},{"id":"urxbtc","name":"URX/BTC","ask_unit":"urx","bid_unit":"btc","ask_fee":"0.0015","bid_fee":"0.0015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"xsgsafe","name":"XSG/SAFE","ask_unit":"xsg","bid_unit":"safe","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"xsgbtc","name":"XSG/BTC","ask_unit":"xsg","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"bcyec","name":"BC/YEC","ask_unit":"bc","bid_unit":"yec","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"genxbtc","name":"GENX/BTC","ask_unit":"genx","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"genxsafe","name":"GENX/SAFE","ask_unit":"genx","bid_unit":"safe","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"zclbtc","name":"ZCL/BTC","ask_unit":"zcl","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"zclsafe","name":"ZCL/SAFE","ask_unit":"zcl","bid_unit":"safe","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"zecbtc","name":"ZEC/BTC","ask_unit":"zec","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"zelbtc","name":"ZEL/BTC","ask_unit":"zel","bid_unit":"btc","ask_fee":"0.00015","bid_fee":"0.00015","min_ask_price":"0.00000001","max_bid_price":"9.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8},{"id":"zelsafe","name":"ZEL/SAFE","ask_unit":"zel","bid_unit":"safe","ask_fee":"0.0","bid_fee":"0.0","min_ask_price":"0.00000001","max_bid_price":"0.0","min_ask_amount":"0.00000001","min_bid_amount":"0.00000001","ask_precision":8,"bid_precision":8}]'
     http_version: 
-  recorded_at: Sun, 16 Sep 2018 02:37:28 GMT
+  recorded_at: Mon, 16 Dec 2019 07:53:06 GMT
 recorded_with: VCR 4.0.0

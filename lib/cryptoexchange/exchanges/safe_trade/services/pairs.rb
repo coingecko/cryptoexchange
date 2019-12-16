@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module SafeTrade
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::SafeTrade::Market::API_URL}/v2/markets"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::SafeTrade::Market::API_URL}/markets"
 
         def fetch
           output = super
