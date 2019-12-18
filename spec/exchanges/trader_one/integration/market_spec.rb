@@ -3,15 +3,14 @@ require 'spec_helper'
 RSpec.describe 'TraderOne integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:btc_usdc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDC', market: 'trader_one') }
-  let(:bch_usdc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BCH', target: 'USDC', market: 'trader_one') }
 
   it 'fetch ticker' do
-    ticker = client.ticker(bch_usdc_pair)
+    ticker = client.ticker(btc_usdc_pair)
 
-    expect(ticker.base).to eq 'BCH'
+    expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USDC'
     expect(ticker.market).to eq 'trader_one'
-    #expect(ticker.last).to be_a Numeric
+    expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
@@ -49,7 +48,6 @@ RSpec.describe 'TraderOne integration specs' do
   it 'fetch trade' do
     trades = client.trades(btc_usdc_pair)
     trade = trades.sample
-
     expect(trades).to_not be_empty
     expect(trade.base).to eq 'BTC'
     expect(trade.target).to eq 'USDC'
