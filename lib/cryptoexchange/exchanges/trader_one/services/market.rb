@@ -14,8 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::TraderOne::Market::API_URL}/markets/tickers?baseCurrency=#{market_pair.base}&quoteCurrency=#{market_pair.target}"
-        end
+          "#{Cryptoexchange::Exchanges::TraderOne::Market::API_URL}/markets/tickers
 
         def adapt(output, market_pair)
           name = "#{market_pair.base}-#{market_pair.target}".upcase
