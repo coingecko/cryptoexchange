@@ -63,6 +63,7 @@ RSpec.describe 'Binance Futures integration specs' do
       expect(contract_stat.index_name).to be nil
       expect(contract_stat.timestamp).to be nil
 
+      expect(contract_stat.open_interest).to eq 14367.348
       expect(contract_stat.expire_timestamp).to be nil
       expect(contract_stat.start_timestamp).to be nil
       expect(contract_stat.contract_type).to eq 'perpetual'
