@@ -8,23 +8,20 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          pairs = Cryptoexchange::Exchanges::Bilaxy::Services::Pairs.new.fetch
-          pair = pairs.select { |p| p.base == market_pair.base && p.target == market_pair.target }.first
-          id = pair.id
-          "#{Cryptoexchange::Exchanges::Bilaxy::Market::API_URL}/orders?symbol=#{id}"
+          "#{Cryptoexchange::Exchanges::Bilaxy::Market::API_URL}/trades?pair=#{market_pair.base}_#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
-          output['data'].collect do |trade|
+          output.collect do |trade|
             tr = Cryptoexchange::Models::Trade.new
-            tr.trade_id  = nil
+            tr.trade_id  = trade['id']
             tr.base      = market_pair.base
             tr.target    = market_pair.target
             tr.market    = Bilaxy::Market::NAME
-            tr.type      = trade["type"]
+            tr.type      = trade["direction"]
             tr.price     = trade["price"]
             tr.amount    = trade["amount"]
-            tr.timestamp = trade["date"]
+            tr.timestamp = trade["ts"] / 1000
             tr.payload   = trade
             tr
           end

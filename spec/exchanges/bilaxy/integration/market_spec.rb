@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe 'Bilaxy integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'bilaxy' }
-  let(:eos_eth_pair) { Cryptoexchange::Models::Bilaxy::MarketPair.new(base: 'EOS', target: 'ETH', id: 16, market: 'bilaxy') }
+  let(:eos_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'EOS', target: 'ETH', market: 'bilaxy') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bilaxy')
@@ -12,7 +12,6 @@ RSpec.describe 'Bilaxy integration specs' do
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
-    expect(pair.id).to_not be nil
     expect(pair.market).to eq 'bilaxy'
   end
 
@@ -28,10 +27,6 @@ RSpec.describe 'Bilaxy integration specs' do
     expect(ticker.target).to eq 'ETH'
     expect(ticker.market).to eq 'bilaxy'
     expect(ticker.last).to be_a Numeric
-    expect(ticker.ask).to be_a Numeric
-    expect(ticker.bid).to be_a Numeric
-    expect(ticker.low).to be_a Numeric
-    expect(ticker.high).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
@@ -62,7 +57,7 @@ RSpec.describe 'Bilaxy integration specs' do
     expect(trade.base).to eq 'EOS'
     expect(trade.target).to eq 'ETH'
     expect(trade.market).to eq 'bilaxy'
-    expect(trade.trade_id).to be_nil
+    expect(trade.trade_id).to be_a Numeric
     expect(['buy', 'sell']).to include trade.type
     expect(trade.price).to_not be_nil
     expect(trade.amount).to_not be_nil
