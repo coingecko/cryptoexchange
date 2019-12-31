@@ -22,7 +22,7 @@ module Cryptoexchange::Exchanges
           symbols = Cryptoexchange::Exchanges::Waves::Market.fetch_symbol
           output["data"].map do |ticker|
             base     = symbols[ticker['amountAsset']]
-            target   = symbols[ticker['priceAsset']]
+            target   = symbols[ticker['priceAsset']] || "WAVES"
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,

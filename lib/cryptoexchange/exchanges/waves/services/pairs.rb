@@ -15,7 +15,7 @@ module Cryptoexchange::Exchanges
           output["data"].map do |ticker|
             base   = symbols[ticker['amountAsset']]
             next if base.nil?
-            target   = symbols[ticker['priceAsset']]
+            target   = symbols[ticker['priceAsset']] || "WAVES"
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
