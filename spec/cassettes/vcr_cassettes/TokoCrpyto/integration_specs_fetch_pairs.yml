@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tokocrypto.com/v1/rates/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.tokocrypto.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2066'
+      Connection:
+      - close
+      Date:
+      - Fri, 03 Jan 2020 04:56:40 GMT
+      X-Amzn-Requestid:
+      - 7f01ace5-84d2-404f-9cfd-f9174a9a570e
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amz-Apigw-Id:
+      - FtRtFEA5SQ0FnnA=
+      X-Amzn-Trace-Id:
+      - Root=1-5e0ec986-b8e7770f8746a83251073b2f;Sampled=1
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 126c94eb884ca61e9ee5f2d8c188237e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50-C1
+      X-Amz-Cf-Id:
+      - l-wzQ_FvrLpV_SSaGAWGw3CyVTXkGcKdcAIxAXI7YHInM4yh3IkaGw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"message_code":"get_tickers_success","data":{"BTC_IDR":{"base_id":1,"quote_id":0,"open_price":100561500,"high_price":100792250,"low_price":100101000,"last_price":100561500,"base_volume":37.97244738000002,"quote_volume":3818566267,"isFrozen":0,"date":"2020-01-03"},"ETH_IDR":{"base_id":1027,"quote_id":0,"open_price":1809500,"high_price":2402000,"low_price":1797500,"last_price":1804500,"base_volume":257.8984450000002,"quote_volume":465377744,"isFrozen":0,"date":"2020-01-03"},"XRP_IDR":{"base_id":52,"quote_id":0,"open_price":2599,"high_price":3990,"low_price":2541,"last_price":2662,"base_volume":16668,"quote_volume":44370216,"isFrozen":0,"date":"2020-01-03"},"DGX_IDR":{"base_id":2739,"quote_id":0,"open_price":658830,"high_price":686074,"low_price":653433,"last_price":672912,"base_volume":106.26710000000004,"quote_volume":71508407,"isFrozen":0,"date":"2020-01-03"},"TTC_IDR":{"base_id":3175,"quote_id":0,"open_price":194,"high_price":349,"low_price":187,"last_price":203,"base_volume":49465,"quote_volume":10041395,"isFrozen":0,"date":"2020-01-03"},"PAX_IDR":{"base_id":3330,"quote_id":0,"open_price":13905,"high_price":14585,"low_price":13436,"last_price":13987,"base_volume":2023.1806999999992,"quote_volume":28298228,"isFrozen":0,"date":"2020-01-03"},"USDC_IDR":{"base_id":3408,"quote_id":0,"open_price":13904,"high_price":14192,"low_price":13324,"last_price":13876,"base_volume":4615.610100000003,"quote_volume":64046206,"isFrozen":0,"date":"2020-01-03"},"USDT_IDR":{"base_id":825,"quote_id":0,"open_price":13862,"high_price":13994,"low_price":13610,"last_price":13917,"base_volume":180267.49,"quote_volume":2508782658,"isFrozen":0,"date":"2020-01-03"},"TUSD_IDR":{"base_id":2563,"quote_id":0,"open_price":13904,"high_price":14583,"low_price":13462,"last_price":13934,"base_volume":1952.1197000000036,"quote_volume":27200836,"isFrozen":0,"date":"2020-01-03"},"SWIPE_IDR":{"base_id":0,"quote_id":0,"open_price":6,"high_price":6,"low_price":6,"last_price":6,"base_volume":19072926,"quote_volume":114437556,"isFrozen":0,"date":"2020-01-03"}}}'
+    http_version: 
+  recorded_at: Fri, 03 Jan 2020 04:56:40 GMT
+recorded_with: VCR 4.0.0
