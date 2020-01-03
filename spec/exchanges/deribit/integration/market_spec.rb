@@ -15,7 +15,7 @@ RSpec.describe 'Deribit integration specs' do
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'deribit'
     expect(pair.contract_interval).to eq "month"
-    expect(pair.inst_id).to eq "BTC-27SEP19"
+    expect(pair.inst_id).to eq "BTC-27MAR20"
   end
 
   it 'fetch ticker' do
@@ -102,9 +102,8 @@ RSpec.describe 'Deribit integration specs' do
 
     it 'fetch futures contract details' do
       contract_stat = client.contract_stat(btc_usd_futures_pair)
-
-      expect(Date.today.year..2020).to include(Time.at(contract_stat.expire_timestamp).year)
-      expect(Date.today.year..2020).to include(Time.at(contract_stat.start_timestamp).year)
+      expect(2019..2020).to include(Time.at(contract_stat.expire_timestamp).year)
+      expect(2019..2020).to include(Time.at(contract_stat.start_timestamp).year)
       expect(contract_stat.contract_type).to eq 'futures'
       expect(contract_stat.funding_rate_percentage).to be nil
       expect(contract_stat.next_funding_rate_timestamp).to be nil

@@ -21,11 +21,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 02 Oct 2019 14:17:23 GMT
+      - Fri, 03 Jan 2020 05:06:13 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '493'
+      - '489'
       Connection:
       - close
       Access-Control-Allow-Origin:
@@ -33,16 +33,16 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Access-Control-Allow-Headers:
-      - Authorization,User-Agent,Range,X-Requested-With,Content-Type
+      - Authorization,User-Agent,Range,X-Requested-With,Content-Type,Partner
       Strict-Transport-Security:
       - max-age=15768000
       X-Frame-Options:
       - SAMEORIGIN
     body:
       encoding: ASCII-8BIT
-      string: '{"jsonrpc":"2.0","result":[{"volume_usd":170496529.99,"volume":20463.87,"quote_currency":"USD","open_interest":84530351,"mid_price":8228.75,"mark_price":8228.11,"low":8170.5,"last":8229.0,"instrument_name":"BTC-PERPETUAL","high":8525.5,"funding_8h":-0.00001989,"estimated_delivery_price":8230.71,"current_funding":0.0,"creation_timestamp":1570025843540,"bid_price":8228.5,"base_currency":"BTC","ask_price":8229.0}],"usIn":1570025843540590,"usOut":1570025843540871,"usDiff":281,"testnet":false}'
+      string: '{"jsonrpc":"2.0","result":[{"volume_usd":209783120.0,"volume":29719.0,"quote_currency":"USD","open_interest":78745760,"mid_price":7211.75,"mark_price":7211.66,"low":6856.5,"last":7212.0,"instrument_name":"BTC-PERPETUAL","high":7300.0,"funding_8h":0.00000508,"estimated_delivery_price":7211.55,"current_funding":0.0,"creation_timestamp":1578027973535,"bid_price":7211.5,"base_currency":"BTC","ask_price":7212.0}],"usIn":1578027973535913,"usOut":1578027973535974,"usDiff":61,"testnet":false}'
     http_version: 
-  recorded_at: Wed, 02 Oct 2019 14:17:23 GMT
+  recorded_at: Fri, 03 Jan 2020 05:06:13 GMT
 - request:
     method: get
     uri: https://www.deribit.com/api/v2/public/get_index?currency=BTC
@@ -64,7 +64,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 02 Oct 2019 14:17:24 GMT
+      - Fri, 03 Jan 2020 05:06:14 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -76,16 +76,16 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Access-Control-Allow-Headers:
-      - Authorization,User-Agent,Range,X-Requested-With,Content-Type
+      - Authorization,User-Agent,Range,X-Requested-With,Content-Type,Partner
       Strict-Transport-Security:
       - max-age=15768000
       X-Frame-Options:
       - SAMEORIGIN
     body:
       encoding: ASCII-8BIT
-      string: '{"jsonrpc":"2.0","result":{"edp":8231.28,"BTC":8231.28},"usIn":1570025844841322,"usOut":1570025844841345,"usDiff":23,"testnet":false}'
+      string: '{"jsonrpc":"2.0","result":{"edp":7211.54,"BTC":7211.54},"usIn":1578027974711165,"usOut":1578027974711190,"usDiff":25,"testnet":false}'
     http_version: 
-  recorded_at: Wed, 02 Oct 2019 14:17:24 GMT
+  recorded_at: Fri, 03 Jan 2020 05:06:14 GMT
 - request:
     method: get
     uri: https://www.deribit.com/api/v2/public/get_book_summary_by_instrument?instrument_name=BTC-PERPETUAL&kind=future
@@ -107,11 +107,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 02 Oct 2019 14:17:26 GMT
+      - Fri, 03 Jan 2020 05:06:15 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '493'
+      - '489'
       Connection:
       - close
       Access-Control-Allow-Origin:
@@ -119,14 +119,14 @@ http_interactions:
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Access-Control-Allow-Headers:
-      - Authorization,User-Agent,Range,X-Requested-With,Content-Type
+      - Authorization,User-Agent,Range,X-Requested-With,Content-Type,Partner
       Strict-Transport-Security:
       - max-age=15768000
       X-Frame-Options:
       - SAMEORIGIN
     body:
       encoding: ASCII-8BIT
-      string: '{"jsonrpc":"2.0","result":[{"volume_usd":170496839.99,"volume":20463.91,"quote_currency":"USD","open_interest":84530351,"mid_price":8228.75,"mark_price":8229.06,"low":8170.5,"last":8229.0,"instrument_name":"BTC-PERPETUAL","high":8525.5,"funding_8h":-0.00001989,"estimated_delivery_price":8231.65,"current_funding":0.0,"creation_timestamp":1570025846208,"bid_price":8228.5,"base_currency":"BTC","ask_price":8229.0}],"usIn":1570025846208527,"usOut":1570025846208867,"usDiff":340,"testnet":false}'
+      string: '{"jsonrpc":"2.0","result":[{"volume_usd":209860670.0,"volume":29729.76,"quote_currency":"USD","open_interest":78730980,"mid_price":7208.25,"mark_price":7210.6,"low":6856.5,"last":7208.5,"instrument_name":"BTC-PERPETUAL","high":7300.0,"funding_8h":0.00000508,"estimated_delivery_price":7210.65,"current_funding":0.0,"creation_timestamp":1578027975848,"bid_price":7208.0,"base_currency":"BTC","ask_price":7208.5}],"usIn":1578027975848537,"usOut":1578027975848620,"usDiff":83,"testnet":false}'
     http_version: 
-  recorded_at: Wed, 02 Oct 2019 14:17:26 GMT
+  recorded_at: Fri, 03 Jan 2020 05:06:15 GMT
 recorded_with: VCR 4.0.0
