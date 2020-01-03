@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Vitex::Market::API_URL}/depth?symbol=#{market_pair.base.upcase}_#{market_pair.target.upcase}"
+          "#{Cryptoexchange::Exchanges::Vitex::Market::API_URL}/depth?symbol=#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)

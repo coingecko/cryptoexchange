@@ -12,8 +12,9 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           output["data"].map do |ticker|
             Cryptoexchange::Models::MarketPair.new(
-              base:   ticker["tradeTokenSymbol"],
-              target: ticker["quoteTokenSymbol"],
+              base: ticker["tradeTokenSymbol"].split('-')[0],
+              target: ticker["quoteTokenSymbol"].split('-')[0],
+              inst_id: "#{ticker["tradeTokenSymbol"]}_#{ticker["quoteTokenSymbol"]}",
               market: Vitex::Market::NAME
             )
           end
