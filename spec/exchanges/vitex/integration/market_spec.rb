@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Vitex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC-000', target: 'USDT-000', market: 'Vitex') }
+  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: 'Vitex', inst_id: "BTC-000_USDT-000") }
 
   it 'fetch pairs' do
     pairs = client.pairs('vitex')
@@ -15,15 +15,15 @@ RSpec.describe 'Vitex integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url 'vitex', base: "BTC-000", target: "USDT-000"
-    expect(trade_page_url).to eq "https://x.vite.net/trade?symbol=BTC-000_USDT-000"
+    trade_page_url = client.trade_page_url 'vitex', base: "BTC", target: "USDT"
+    expect(trade_page_url).to eq "https://x.vite.net/trade"
   end
 
   it 'fetch ticker' do
     ticker = client.ticker(btc_usdt_pair)
 
-    expect(ticker.base).to eq 'BTC-000'
-    expect(ticker.target).to eq 'USDT-000'
+    expect(ticker.base).to eq 'BTC'
+    expect(ticker.target).to eq 'USDT'
     expect(ticker.market).to eq 'vitex'
     expect(ticker.last).to be_a Numeric
     expect(ticker.high).to be_a Numeric
@@ -37,8 +37,8 @@ RSpec.describe 'Vitex integration specs' do
   it 'fetch order book' do
     order_book = client.order_book(btc_usdt_pair)
 
-    expect(order_book.base).to eq 'BTC-000'
-    expect(order_book.target).to eq 'USDT-000'
+    expect(order_book.base).to eq 'BTC'
+    expect(order_book.target).to eq 'USDT'
     expect(order_book.market).to eq 'vitex'
 
     expect(order_book.asks).to_not be_empty
@@ -58,8 +58,8 @@ RSpec.describe 'Vitex integration specs' do
   
     expect(trades).to_not be_empty
     expect(trade.trade_id).to_not be_nil
-    expect(trade.base).to eq 'BTC-000'
-    expect(trade.target).to eq 'USDT-000'
+    expect(trade.base).to eq 'BTC'
+    expect(trade.target).to eq 'USDT'
     expect(trade.trade_id).to_not be nil
     expect(['buy', 'sell']).to include trade.type
     expect(trade.price).to_not be nil
