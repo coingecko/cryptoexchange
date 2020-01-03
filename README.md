@@ -432,7 +432,8 @@ Or install it yourself as:
 | Tokenize          | Y       | Y [x]      |         |         | Y           | Y        | tokenize          |       |
 | Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |       |
 | Tokenomy          | Y       | Y [x]      | Y       |         | Y           | Y        | tokenomy          |       |
-| TokensNet         | Y       | Y          | Y       |         | Y           | N        | tokens_net        |       |
+| TokensNet         | Y       | Y [x]       | N       |         | Y           | N        | tokens_net       |       |
+| TokoCrypto        | Y       | Y          | Y       |         | Y           | N        | toko_crypto       |       |
 | Tokok             | Y       | Y [x]      | Y       |         | Y           |          | tokok             |       |
 | Tokpie            | Y       | Y [x]      |         |         | Y           |          | tokpie            |       |
 | Topbtc            | Y       | Y [x]      | N       |         | Y           | Y        | topbtc            |       |
