@@ -464,6 +464,7 @@ Or install it yourself as:
 | Viabtc            | Y       |            |         |         | User-Defined|          | viabtc            |       |
 | Vindax            | Y       | Y [x]      |         |         | Y           | Y        | vindax            |       |
 | Vinex             | Y       | Y [x]      |         |         | Y           | Y        | vinex             |       |
+| Vitex             | Y       | Y [x]      | Y       |         | Y           | Y        | vitex             |       |
 | Waves             | Y       | N          | Y       |         | Y           |          | waves             |       |
 | WazirX            | Y       | Y [x]      |         |         | Y           |          | wazirx            |       |
 | Wcx               | Y       | Y          | Y       |         | Y           |          | wcx               |       |
