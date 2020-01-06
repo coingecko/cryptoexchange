@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://stakecube.net/api/v1/exchange/tickers
+    uri: https://stakecube.net/app/api/v1/exchange/tickers
     body:
       encoding: UTF-8
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 19 Jun 2019 08:35:18 GMT
+      - Mon, 06 Jan 2020 07:48:13 GMT
       Content-Type:
       - text/html; charset=UTF-8
       Transfer-Encoding:
@@ -27,48 +27,152 @@ http_interactions:
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=dba8ebca912a22507be6d3affb9d4696c1560933317; expires=Thu, 18-Jun-20
-        08:35:17 GMT; path=/; domain=.stakecube.net; HttpOnly; Secure
+      - __cfduid=d9f50614f759c721486f65664b846abd71578296880; expires=Wed, 05-Feb-20
+        07:48:00 GMT; path=/; domain=.stakecube.net; HttpOnly; SameSite=Lax; Secure
       X-Powered-By:
-      - PHP/7.2.19
+      - PHP/7.2.24
       - PleskLin
       Vary:
       - Accept-Encoding
       Ms-Author-Via:
       - DAV
+      Cf-Cache-Status:
+      - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 4e942b30fe37a51c-NRT
+      - 550c16511ad5dcca-SIN
     body:
       encoding: UTF-8
-      string: '[{"pair":"BTC-SCC","base":"BTC","target":"SCC","ask":"0.00001254","bid":"0.00001006","last_price":"0.00001254","low":"0.00000903","high":"0.00001373","volume":"0.03324640","percentChange":-0.0797,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-ESBC","base":"BTC","target":"ESBC","ask":"0.00000648","bid":"0.00000453","last_price":"0.00000575","low":"0.00000453","high":"0.00000683","volume":"0.00553151","percentChange":-11.2654,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-MMO","base":"BTC","target":"MMO","ask":"0.00000022","bid":"0.00000021","last_price":"0.00000021","low":"0.00000020","high":"0.00000024","volume":"0.13247902","percentChange":-4.5455,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-DASH","base":"BTC","target":"DASH","ask":"0.01890000","bid":"0.01610000","last_price":"0.01610000","low":"0.01610000","high":"0.01610000","volume":"0.00016193","percentChange":-15.2632,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-PIVX","base":"BTC","target":"PIVX","ask":"0.00009979","bid":"0.00007120","last_price":"0.00009979","low":"0.00007118","high":"0.00009979","volume":"0.00004076","percentChange":0,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-BITG","base":"BTC","target":"BITG","ask":"0.00005990","bid":"0.00004575","last_price":"0.00004575","low":"0.00004500","high":"0.00005990","volume":"0.00047670","percentChange":1.6441,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-NAV","base":"BTC","target":"NAV","ask":"0.00002876","bid":"0.00002870","last_price":"0.00002876","low":"0.00001500","high":"0.00002876","volume":"0.00008667","percentChange":0,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-RDD","base":"BTC","target":"RDD","ask":"0.00000024","bid":"0.00000022","last_price":"0.00000024","low":"0.00000020","high":"0.00000024","volume":"0.00082406","percentChange":0,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-DEV","base":"BTC","target":"DEV","ask":"0.00000497","bid":"0.00000355","last_price":"0.00000355","low":"0.00000350","high":"0.00000498","volume":"0.00167198","percentChange":-28.5714,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-KYD","base":"BTC","target":"KYD","ask":"0.00000218","bid":"0.00000101","last_price":"0.00000218","low":"0.00000217","high":"0.00000218","volume":"0.00000218","percentChange":-0.4587,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-LPC","base":"BTC","target":"LPC","ask":"0.00000155","bid":"0.00000106","last_price":"0.00000106","low":"0.00000106","high":"0.00000155","volume":"0.00000993","percentChange":-31.6129,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-LGS","base":"BTC","target":"LGS","ask":"0.00000135","bid":"0.00000100","last_price":"0.00000100","low":"0.00000100","high":"0.00000110","volume":"0.00003514","percentChange":0,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-GPKR","base":"BTC","target":"GPKR","ask":"0.00000220","bid":"0.00000160","last_price":"0.00000220","low":"0.00000150","high":"0.00000220","volume":"0.00026242","percentChange":15.7895,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-SHARD","base":"BTC","target":"SHARD","ask":"0.00000300","bid":"0.00000202","last_price":"0.00000301","low":"0.00000299","high":"0.00000301","volume":"0.00257491","percentChange":0,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-AEM","base":"BTC","target":"AEM","ask":"0.00000250","bid":"0.00000141","last_price":"99.99999999","low":"0.00000250","high":"0.00000250","volume":"0.00000000","percentChange":77.305,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-APR","base":"BTC","target":"APR","ask":"0.00000149","bid":"0.00000082","last_price":"0.00000082","low":"0.00000082","high":"0.00000149","volume":"0.00033053","percentChange":0,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-SEND","base":"BTC","target":"SEND","ask":"0.00000120","bid":"0.00000090","last_price":"0.00000149","low":"0.00000070","high":"0.00000149","volume":"0.00147262","percentChange":112.8571,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-LTC","base":"BTC","target":"LTC","ask":"0.01570000","bid":"0.01157011","last_price":"0.01589999","low":"0.01156002","high":"0.01589999","volume":"0.00056728","percentChange":0.6328,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-ABET","base":"BTC","target":"ABET","ask":"0.00000999","bid":"0.00000720","last_price":"0.00000999","low":"0.00000710","high":"0.00000999","volume":"0.00004031","percentChange":11,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-DOGE","base":"BTC","target":"DOGE","ask":"0.00000036","bid":"0.00000031","last_price":"0.00000033","low":"0.00000033","high":"0.00000037","volume":"0.01681818","percentChange":0,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-TRBO","base":"BTC","target":"TRBO","ask":"0.00000001","bid":null,"last_price":"0.00000001","low":"0.00000001","high":"0.00000001","volume":"0.00228309","percentChange":0,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-BITB","base":"BTC","target":"BITB","ask":"0.00000018","bid":"0.00000010","last_price":"0.00000015","low":"0.00000015","high":"0.00000019","volume":"0.00009041","percentChange":0,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-VITAE","base":"BTC","target":"VITAE","ask":"0.00018896","bid":"0.00005602","last_price":"0.00019896","low":"0.00006000","high":"0.00019897","volume":"0.00396716","percentChange":231.6,"timestamp":"2019-06-19
-        08:35:18"},{"pair":"BTC-SYNX","base":"BTC","target":"SYNX","ask":"0.00000228","bid":"0.00000142","last_price":"0.00000228","low":"0.00000227","high":"0.00000228","volume":"0.00001140","percentChange":0.4405,"timestamp":"2019-06-19
-        08:35:18"}]'
+      string: '[{"pair":"BTC-SCC","base":"BTC","target":"SCC","ask":"0.00002180","bid":"0.00002124","last_price":"0.00002124","low":"0.00002039","high":"0.00002199","volume":"0.04245161","percentChange":-2.74,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-TRBO","base":"SCC","target":"TRBO","ask":"0.00012448","bid":"0.00011251","last_price":"0.00011250","low":"0.00011108","high":"0.00012924","volume":"261.58320254","percentChange":1.29,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-DOGE","base":"BTC","target":"DOGE","ask":"0.00000028","bid":"0.00000027","last_price":"0.00000027","low":"0.00000027","high":"0.00000028","volume":"0.00575616","percentChange":3.7,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-ESBC","base":"BTC","target":"ESBC","ask":"0.00000343","bid":"0.00000321","last_price":"0.00000343","low":"0.00000315","high":"0.00000386","volume":"0.00713244","percentChange":-11.14,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-SPE","base":"SCC","target":"SPE","ask":"0.01000003","bid":"0.00400031","last_price":"0.01000002","low":"0.00400031","high":"0.01000002","volume":"0.23883096","percentChange":149.98,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-FLS","base":"SCC","target":"FLS","ask":"0.78999999","bid":"0.61000000","last_price":"0.60000000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-RPD","base":"BTC","target":"RPD","ask":"0.00000001","bid":null,"last_price":"0.00000001","low":"0.00000001","high":"0.00000001","volume":"0.00038995","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-ABET","base":"BTC","target":"ABET","ask":"0.00000262","bid":"0.00000186","last_price":"0.00000186","low":"0.00000182","high":"0.00000325","volume":"0.00524196","percentChange":-18.46,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-MMO","base":"BTC","target":"MMO","ask":"0.00000037","bid":"0.00000030","last_price":"0.00000035","low":"0.00000029","high":"0.00000035","volume":"0.07278658","percentChange":20.69,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-MMO","base":"SCC","target":"MMO","ask":"0.02999998","bid":"0.01300101","last_price":"0.01300101","low":"0.01300101","high":"0.01300101","volume":"0.00339533","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-BLOCK","base":"BTC","target":"BLOCK","ask":"0.00009998","bid":"0.00008004","last_price":"0.00008004","low":"0.00008002","high":"0.00008004","volume":"0.00000009","percentChange":0.02,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-COLX","base":"BTC","target":"COLX","ask":"0.00000003","bid":"0.00000002","last_price":"0.00000002","low":"0.00000002","high":"0.00000002","volume":"0.00000050","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-BITG","base":"BTC","target":"BITG","ask":"0.00001440","bid":"0.00001350","last_price":"0.00001840","low":"0.00001120","high":"0.00001840","volume":"0.00732749","percentChange":-16.36,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-APR","base":"BTC","target":"APR","ask":"0.00000066","bid":"0.00000050","last_price":"0.00000050","low":"0.00000050","high":"0.00000068","volume":"0.00043661","percentChange":19.64,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-RPD","base":"SCC","target":"RPD","ask":"0.00047000","bid":"0.00041000","last_price":"0.00041000","low":"0.00041000","high":"0.00047000","volume":"4.61080254","percentChange":12.2,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-PENG","base":"SCC","target":"PENG","ask":"0.00019800","bid":"0.00015520","last_price":"0.00015502","low":"0.00015502","high":"0.00019800","volume":"3.31795950","percentChange":27.72,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-LTC","base":"BTC","target":"LTC","ask":"0.00590500","bid":"0.00575000","last_price":"0.00575000","low":"0.00565566","high":"0.00590000","volume":"0.02637932","percentChange":4.29,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-LTC","base":"SCC","target":"LTC","ask":"309.99999998","bid":"242.00000004","last_price":"242.00000003","low":"242.00000003","high":"242.00000003","volume":"0.01089000","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-DOGE","base":"SCC","target":"DOGE","ask":"0.01289999","bid":"0.01201075","last_price":"0.01201075","low":"0.01201068","high":"0.01279999","volume":"3.76399287","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-PIVX","base":"BTC","target":"PIVX","ask":"0.00003500","bid":"0.00003103","last_price":"0.00003488","low":"0.00003400","high":"0.00003488","volume":"0.00101633","percentChange":-2.52,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-DASH","base":"BTC","target":"DASH","ask":"0.00700770","bid":"0.00600006","last_price":"0.00600002","low":"0.00600001","high":"0.00600002","volume":"0.00000186","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-PIVX","base":"SCC","target":"PIVX","ask":"162.00000000","bid":"1.54350000","last_price":"1.54350000","low":"1.53000000","high":"2.00000000","volume":"28.69813846","percentChange":-22.83,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-KYD","base":"BTC","target":"KYD","ask":"0.00000064","bid":"0.00000049","last_price":"0.00000049","low":"0.00000044","high":"0.00000065","volume":"0.00304268","percentChange":-24.62,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-NAV","base":"BTC","target":"NAV","ask":"0.00001594","bid":"0.00001112","last_price":"0.00001594","low":"0.00001594","high":"0.00001594","volume":"0.00000103","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-GPKR","base":"BTC","target":"GPKR","ask":"0.00000050","bid":"0.00000044","last_price":"0.00000044","low":"0.00000043","high":"0.00000052","volume":"0.00101089","percentChange":20.93,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-AEM","base":"BTC","target":"AEM","ask":"0.00000085","bid":"0.00000068","last_price":"0.00000069","low":"0.00000068","high":"0.00000087","volume":"0.00073337","percentChange":-19.54,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-AEM","base":"SCC","target":"AEM","ask":"0.08820490","bid":"0.03100000","last_price":"0.03100000","low":"0.03100000","high":"0.03100000","volume":"0.02897611","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-FLS","base":"BTC","target":"FLS","ask":"0.00001450","bid":"0.00001262","last_price":"0.00001451","low":"0.00001262","high":"0.00001452","volume":"0.00813192","percentChange":-9.73,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-SEND","base":"BTC","target":"SEND","ask":"0.00000028","bid":"0.00000027","last_price":"0.00000027","low":"0.00000027","high":"0.00000030","volume":"0.00038431","percentChange":-10,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-SPE","base":"BTC","target":"SPE","ask":"0.00000020","bid":"0.00000017","last_price":"0.00000017","low":"0.00000017","high":"0.00000021","volume":"0.00029263","percentChange":17.65,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-ESBC","base":"SCC","target":"ESBC","ask":"0.18999997","bid":"0.14100000","last_price":"0.14000000","low":"0.14000000","high":"0.14000001","volume":"172.19873091","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-RDD","base":"BTC","target":"RDD","ask":"0.00000010","bid":"0.00000009","last_price":"0.00000009","low":"0.00000008","high":"0.00000011","volume":"0.00383776","percentChange":-18.18,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-TRBO","base":"BTC","target":"TRBO","ask":"0.00000001","bid":null,"last_price":"0.00000001","low":"0.00000001","high":"0.00000001","volume":"0.00906130","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-DEV","base":"BTC","target":"DEV","ask":"0.00000166","bid":"0.00000140","last_price":"0.00000140","low":"0.00000140","high":"0.00000141","volume":"0.00450067","percentChange":0.71,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-SHARD","base":"BTC","target":"SHARD","ask":"0.00000350","bid":"0.00000211","last_price":"0.00000211","low":"0.00000211","high":"0.00000211","volume":"0.00000015","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-VITAE","base":"BTC","target":"VITAE","ask":"0.00010979","bid":"0.00009000","last_price":"0.00008801","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-SYNX","base":"BTC","target":"SYNX","ask":"0.00000023","bid":"0.00000021","last_price":"0.00000023","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-XP","base":"BTC","target":"XP","ask":"0.00000003","bid":"0.00000002","last_price":"0.00000003","low":"0.00000002","high":"0.00000003","volume":"0.00958537","percentChange":50,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-XP","base":"SCC","target":"XP","ask":"0.00160005","bid":"0.00100500","last_price":"0.00100500","low":"0.00100005","high":"0.00100500","volume":"0.05159040","percentChange":0.49,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-BITB","base":"BTC","target":"BITB","ask":"0.00000003","bid":"0.00000002","last_price":"0.00000003","low":"0.00000002","high":"0.00000003","volume":"0.00036350","percentChange":-33.33,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-ONION","base":"BTC","target":"ONION","ask":"0.00001650","bid":"0.00001368","last_price":"0.00001650","low":"0.00001366","high":"0.00001650","volume":"0.00001789","percentChange":20.79,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-VSX","base":"BTC","target":"VSX","ask":"0.00000013","bid":"0.00000007","last_price":"0.00000007","low":"0.00000007","high":"0.00000014","volume":"0.00050287","percentChange":14.29,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-SYS","base":"BTC","target":"SYS","ask":"0.00000284","bid":"0.00000226","last_price":"0.00000285","low":"0.00000224","high":"0.00000285","volume":"0.00056282","percentChange":-1.75,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-NEBL","base":"BTC","target":"NEBL","ask":"0.00832990","bid":"0.00004036","last_price":"0.00900000","low":"0.00899879","high":"0.00900000","volume":"0.00137469","percentChange":-0.01,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-RSTR","base":"BTC","target":"RSTR","ask":"0.00000001","bid":null,"last_price":"0.00000001","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-STRAT","base":"BTC","target":"STRAT","ask":"0.00004985","bid":"0.00004005","last_price":"0.00004984","low":"0.00004984","high":"0.00004984","volume":"0.00010757","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-DC","base":"BTC","target":"DC","ask":"0.00000008","bid":"0.00000006","last_price":"0.00000008","low":"0.00000008","high":"0.00000016","volume":"0.00000013","percentChange":100,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-SPD","base":"BTC","target":"SPD","ask":"0.00000145","bid":"0.00000050","last_price":"0.00000145","low":"0.00000145","high":"0.00000145","volume":"0.00000145","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-IC","base":"BTC","target":"IC","ask":"0.00003499","bid":"0.00001473","last_price":"0.00003499","low":"0.00001472","high":"0.00003499","volume":"0.00003536","percentChange":0.07,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-PAC","base":"BTC","target":"PAC","ask":"0.00000003","bid":"0.00000002","last_price":"0.00000003","low":"0.00000002","high":"0.00000003","volume":"0.00144092","percentChange":-33.33,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-BLOCK","base":"SCC","target":"BLOCK","ask":"3.99999999","bid":"2.61000001","last_price":"2.61000000","low":"2.60000102","high":"2.61000000","volume":"0.00286400","percentChange":0.38,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-COLX","base":"SCC","target":"COLX","ask":"0.00200000","bid":"0.00035701","last_price":"0.00035701","low":"0.00035701","high":"0.00035705","volume":"0.00702550","percentChange":0.01,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-DASH","base":"SCC","target":"DASH","ask":"388.88888808","bid":"320.00000000","last_price":"388.00000000","low":"327.00000000","high":"388.00000000","volume":"0.26006616","percentChange":18.65,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"LTC-BLOCK","base":"LTC","target":"BLOCK","ask":"0.15100000","bid":"0.00500099","last_price":"0.00500099","low":"0.00500099","high":"0.00500099","volume":"0.00000400","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"LTC-DOGE","base":"LTC","target":"DOGE","ask":"0.00004999","bid":"0.00004525","last_price":"0.00004525","low":"0.00004525","high":"0.00004800","volume":"0.00488035","percentChange":6.08,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"LTC-TRBO","base":"LTC","target":"TRBO","ask":"0.00000060","bid":"0.00000059","last_price":"0.00000059","low":"0.00000032","high":"0.00000059","volume":"0.00124616","percentChange":84.38,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DASH-DOGE","base":"DASH","target":"DOGE","ask":"0.00004350","bid":"0.00003755","last_price":"0.00003755","low":"0.00003755","high":"0.00003755","volume":"0.00000376","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DASH-BLOCK","base":"DASH","target":"BLOCK","ask":"0.15000000","bid":"0.00200001","last_price":"0.00200001","low":"0.00200001","high":"0.00200001","volume":"0.00000060","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"LTC-AEM","base":"LTC","target":"AEM","ask":"0.00040000","bid":"0.00004285","last_price":"0.00050000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"LTC-MMO","base":"LTC","target":"MMO","ask":"0.00009999","bid":"0.00002100","last_price":"0.00002100","low":"0.00002100","high":"0.00002100","volume":"0.00000008","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-KYD","base":"SCC","target":"KYD","ask":"0.06999998","bid":"0.00300000","last_price":"0.00300000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-SEND","base":"SCC","target":"SEND","ask":"0.14999997","bid":"0.01010001","last_price":"0.01010001","low":"0.01010001","high":"0.01010001","volume":"0.00024685","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-STRAT","base":"SCC","target":"STRAT","ask":"4.20005114","bid":"1.00002001","last_price":"1.00002000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-BITG","base":"SCC","target":"BITG","ask":"0.90000000","bid":"0.60000000","last_price":"0.40000000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"LTC-PIVX","base":"LTC","target":"PIVX","ask":"0.01800000","bid":"0.00400001","last_price":"0.01800000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DASH-PIVX","base":"DASH","target":"PIVX","ask":"0.04171300","bid":"0.00000100","last_price":"0.04171300","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DASH-NAV","base":"DASH","target":"NAV","ask":"0.11000000","bid":"0.00000020","last_price":"0.11000000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-PENG","base":"BTC","target":"PENG","ask":"0.00000001","bid":null,"last_price":"0.00000001","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-PRIV","base":"BTC","target":"PRIV","ask":"0.00000032","bid":"0.00000030","last_price":"0.00000032","low":"0.00000032","high":"0.00000032","volume":"0.00101241","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-MONK","base":"BTC","target":"MONK","ask":"0.00000404","bid":"0.00000286","last_price":"0.00000410","low":"0.00000285","high":"0.00000419","volume":"0.00220467","percentChange":10.81,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-MONK","base":"SCC","target":"MONK","ask":"0.37543208","bid":"0.02000000","last_price":"0.39000000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"LTC-MONK","base":"LTC","target":"MONK","ask":"0.69900000","bid":"0.00000101","last_price":"0.69900000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DASH-MONK","base":"DASH","target":"MONK","ask":"0.00450000","bid":"0.00004000","last_price":"0.00480000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-XCZ","base":"BTC","target":"XCZ","ask":"0.00000117","bid":"0.00000028","last_price":"0.00000117","low":"0.00000025","high":"0.00000117","volume":"0.00000386","percentChange":-78.63,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-VITAE","base":"SCC","target":"VITAE","ask":"9.99999999","bid":"4.70000000","last_price":"4.80000000","low":"4.80000000","high":"4.80000000","volume":"0.00118997","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-DEV","base":"SCC","target":"DEV","ask":"0.07499999","bid":"0.05000000","last_price":"0.05000000","low":"0.05000000","high":"0.05000000","volume":"2.19057910","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-APR","base":"SCC","target":"APR","ask":"0.04899995","bid":"0.02100107","last_price":"0.02100107","low":"0.02100107","high":"0.02100107","volume":"0.00736603","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-DGB","base":"BTC","target":"DGB","ask":"0.00000071","bid":"0.00000070","last_price":"0.00000070","low":"0.00000069","high":"0.00000069","volume":"0.00003030","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-DGB","base":"SCC","target":"DGB","ask":"0.07890000","bid":"0.03100018","last_price":"0.03100018","low":"0.03100017","high":"0.03100018","volume":"0.00217001","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"LTC-DGB","base":"LTC","target":"DGB","ask":"0.50000000","bid":"0.00010000","last_price":"0.00010000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DASH-DGB","base":"DASH","target":"DGB","ask":"0.00010000","bid":null,"last_price":"0.00010000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-RSTR","base":"SCC","target":"RSTR","ask":"0.00013990","bid":"0.00000001","last_price":"0.00000339","low":"0.00000100","high":"0.00000388","volume":"7.42297145","percentChange":239,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"LTC-DASH","base":"LTC","target":"DASH","ask":"1.99999998","bid":"1.00001000","last_price":"1.00001000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DOGE-DGB","base":"DOGE","target":"DGB","ask":"2.59990000","bid":"2.30000001","last_price":"2.30000001","low":"2.30000001","high":"2.30000001","volume":"24.09480010","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-BITB","base":"SCC","target":"BITB","ask":"0.00101000","bid":"0.00100011","last_price":"0.00100011","low":"0.00100006","high":"0.01085000","volume":"0.08304740","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-GPKR","base":"SCC","target":"GPKR","ask":"0.95555550","bid":"0.01013709","last_price":"0.10000000","low":"0.10000000","high":"0.10000000","volume":"0.09009730","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DOGE-TRBO","base":"DOGE","target":"TRBO","ask":"0.01300000","bid":"0.00700000","last_price":"0.00700000","low":"0.00700000","high":"0.01889998","volume":"535.59980613","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DOGE-MMO","base":"DOGE","target":"MMO","ask":"1.25000000","bid":"1.10000000","last_price":"1.10000000","low":"1.10000000","high":"1.24999999","volume":"1.60829761","percentChange":13.64,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DOGE-SPE","base":"DOGE","target":"SPE","ask":"0.66667002","bid":"0.66667000","last_price":"0.66667002","low":"0.66667000","high":"0.66667002","volume":"36.51143180","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DOGE-ESBC","base":"DOGE","target":"ESBC","ask":"12.99999999","bid":"11.50000000","last_price":"11.50000000","low":"11.50000000","high":"11.50000000","volume":"12.85030333","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DOGE-RPD","base":"DOGE","target":"RPD","ask":"0.04249999","bid":"0.03330000","last_price":"0.04249999","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DASH-AEM","base":"DASH","target":"AEM","ask":"0.00050000","bid":"0.00000001","last_price":null,"low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DOGE-AEM","base":"DOGE","target":"AEM","ask":"2.99999999","bid":"2.00000000","last_price":"2.00000000","low":"2.00000000","high":"2.00000000","volume":"0.13255312","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"LTC-APR","base":"LTC","target":"APR","ask":"0.01000000","bid":"0.00000122","last_price":"0.00000122","low":"0.00000122","high":"0.00000122","volume":"0.00000040","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DASH-APR","base":"DASH","target":"APR","ask":"0.00004000","bid":null,"last_price":"0.00004000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DOGE-APR","base":"DOGE","target":"APR","ask":"30.00000000","bid":"1.20000000","last_price":"1.20000000","low":"1.20000000","high":"1.80000000","volume":"5.42881244","percentChange":50,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"LTC-ESBC","base":"LTC","target":"ESBC","ask":"0.09990000","bid":"0.00004200","last_price":"0.00004200","low":"0.00004200","high":"0.00004200","volume":"0.00027268","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DASH-ESBC","base":"DASH","target":"ESBC","ask":"0.00022000","bid":"0.00000101","last_price":"0.00022000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-PRIV","base":"SCC","target":"PRIV","ask":"0.02000000","bid":"0.00005000","last_price":"0.00001000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DOGE-PRIV","base":"DOGE","target":"PRIV","ask":"1.50000000","bid":"0.80010000","last_price":"0.80010000","low":"0.80010000","high":"0.80010000","volume":"0.00010443","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"BTC-DAPS","base":"BTC","target":"DAPS","ask":"0.00000001","bid":null,"last_price":"0.00000001","low":"0.00000001","high":"0.00000001","volume":"0.00001153","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-DAPS","base":"SCC","target":"DAPS","ask":"0.00042000","bid":"0.00033500","last_price":"0.00045000","low":"0.00033500","high":"0.00045000","volume":"11.05355772","percentChange":19.4,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"LTC-DAPS","base":"LTC","target":"DAPS","ask":"0.00000170","bid":"0.00000020","last_price":"0.00000006","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DASH-DAPS","base":"DASH","target":"DAPS","ask":"0.00000130","bid":"0.00000100","last_price":"0.00100000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-ABET","base":"SCC","target":"ABET","ask":"15.00000000","bid":"0.02060000","last_price":"0.01060000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"LTC-ABET","base":"LTC","target":"ABET","ask":"1.00000000","bid":"0.00000005","last_price":null,"low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DASH-ABET","base":"DASH","target":"ABET","ask":"1.00000000","bid":"0.00003000","last_price":"0.00003000","low":"0.00003000","high":"0.00003000","volume":"0.00001176","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DOGE-ABET","base":"DOGE","target":"ABET","ask":"7.00000000","bid":"3.00010000","last_price":"3.00000000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-NAV","base":"SCC","target":"NAV","ask":"0.50000000","bid":"0.01001000","last_price":"0.01001000","low":"0.01001000","high":"0.01001000","volume":"0.00064577","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-PAC","base":"SCC","target":"PAC","ask":"0.00150000","bid":"0.00005000","last_price":"0.00100002","low":"0.00100002","high":"0.00100002","volume":"0.01155042","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-RDD","base":"SCC","target":"RDD","ask":"0.03000000","bid":"0.00360112","last_price":"0.04999976","low":"0.03333200","high":"0.04999976","volume":"15.45322031","percentChange":-33.34,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-SYNX","base":"SCC","target":"SYNX","ask":"0.50969900","bid":"0.00001008","last_price":"0.00000421","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"SCC-VSX","base":"SCC","target":"VSX","ask":"0.08999992","bid":"0.00031010","last_price":"0.00031008","low":"0.00031008","high":"0.00031008","volume":"0.00012405","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"LTC-VSX","base":"LTC","target":"VSX","ask":"0.01007500","bid":"0.00000112","last_price":"0.00000112","low":"0.00000112","high":"0.00000112","volume":"0.00000101","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DASH-VSX","base":"DASH","target":"VSX","ask":null,"bid":"0.00000001","last_price":null,"low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DOGE-VSX","base":"DOGE","target":"VSX","ask":"24.00000000","bid":"0.00011000","last_price":"0.00011000","low":"0.00011000","high":"0.00011000","volume":"0.00006483","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"LTC-VITAE","base":"LTC","target":"VITAE","ask":"0.10000000","bid":"0.00200000","last_price":null,"low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DASH-VITAE","base":"DASH","target":"VITAE","ask":null,"bid":"0.00000005","last_price":null,"low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DOGE-VITAE","base":"DOGE","target":"VITAE","ask":null,"bid":"0.00011001","last_price":null,"low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"LTC-PENG","base":"LTC","target":"PENG","ask":"0.00000155","bid":"0.00000020","last_price":"0.00000055","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DASH-PENG","base":"DASH","target":"PENG","ask":"0.00099880","bid":"0.00000010","last_price":"0.00000006","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DOGE-PENG","base":"DOGE","target":"PENG","ask":"0.19950000","bid":"0.00600006","last_price":"0.00600004","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"LTC-BITG","base":"LTC","target":"BITG","ask":null,"bid":"0.00000005","last_price":"0.00380000","low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DASH-BITG","base":"DASH","target":"BITG","ask":"0.10000000","bid":null,"last_price":null,"low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DOGE-BITG","base":"DOGE","target":"BITG","ask":null,"bid":null,"last_price":null,"low":null,"high":null,"volume":null,"percentChange":0,"timestamp":"2020-01-06
+        07:48:01"},{"pair":"DOGE-BLOCK","base":"DOGE","target":"BLOCK","ask":"5980.00000000","bid":"50.00000000","last_price":"50.00000000","low":"50.00000000","high":"50.00000000","volume":"0.01000000","percentChange":0,"timestamp":"2020-01-06
+        07:48:01"}]'
     http_version: 
-  recorded_at: Wed, 19 Jun 2019 08:35:18 GMT
+  recorded_at: Mon, 06 Jan 2020 07:48:13 GMT
 recorded_with: VCR 4.0.0
