@@ -3,7 +3,7 @@ class NumericHelper
     def to_d(number)
       if !number.nil? || number != ""
         num = number.to_s
-        num.empty? ? nil : BigDecimal.new(num)
+        num.empty? ? nil : BigDecimal(num)
       else
         nil
       end
@@ -19,7 +19,7 @@ class NumericHelper
     end
 
     def to_numeric(number)
-      result = BigDecimal.new(number.to_s)
+      result = BigDecimal(number.to_s)
       if result.frac.zero?
         result.to_i
       else
