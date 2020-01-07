@@ -9,16 +9,10 @@ module Cryptoexchange::Exchanges
       end
 
       def self.calculate_contract_interval(start_date, end_date)
-        return "perpetual" if start_date == "" && end_date == "" 
-        contract_period = (end_date - start_date) / 60 / 60 / 24 / 30
-
-        case contract_period
-        when 1
-          "monthly"
-        when 3
-          "quarterly"
-        when 4
-          "quarterly"
+        if start_date == "" && end_date == "" 
+          "perpetual"
+        else
+          "futures"
         end
       end
     end
