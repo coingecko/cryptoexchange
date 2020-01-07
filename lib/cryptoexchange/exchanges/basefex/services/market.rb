@@ -19,6 +19,7 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |pair|
+            next unless pair
             base, target = Basefex::Market.separate_symbol(pair["symbol"])
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
