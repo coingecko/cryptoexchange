@@ -25,11 +25,12 @@ module Cryptoexchange::Exchanges
         end
 
         def get_contract_info(market_pair)
-          contract_info = if market_pair.contract_interval == "perpetual"
-                          HTTP.get("#{SWAP_URL}/#{market_pair.inst_id}/funding_time").parse(:json)
-                        elsif "futures"
-                          HTTP.get(FUTURES_URL).parse(:json)
-                        end
+          contract_info = \
+            if market_pair.contract_interval == "perpetual"
+              HTTP.get("#{SWAP_URL}/#{market_pair.inst_id}/funding_time").parse(:json)
+            else
+              HTTP.get(FUTURES_URL).parse(:json)
+            end
           process_contract_info(contract_info, market_pair)
         end
 
