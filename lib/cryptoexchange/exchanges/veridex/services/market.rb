@@ -10,7 +10,7 @@ module Cryptoexchange::Exchanges
 
         def fetch
           outputs = []
-          (1..1).each do |page_id|
+          (0..0).each do |page_id|
             ticker_output = super(ticker_url(page_id))
             break if ticker_output.empty?
             outputs = outputs + ticker_output['records']
@@ -19,7 +19,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(page_id)
-          "#{Cryptoexchange::Exchanges::Veridex::Market::API_URL}/markets?include=stats&page=#{page_id}&perPage=25"
+          "#{Cryptoexchange::Exchanges::Veridex::Market::API_URL}/markets?include=stats&page=#{page_id}&perPage=100"
         end
 
         def adapt_all(output)

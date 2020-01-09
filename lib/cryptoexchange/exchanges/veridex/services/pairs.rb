@@ -6,8 +6,8 @@ module Cryptoexchange::Exchanges
 
         def fetch
           outputs = []
-          (1..1).each do |page_id|
-            pair_url = PAIRS_URL + "?page=#{page_id}&perPage=25"
+          (0..0).each do |page_id|
+            pair_url = PAIRS_URL + "?page=#{page_id}&perPage=100"
             puts pair_url
             output = fetch_via_api(pair_url)
             break if output.empty?
