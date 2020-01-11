@@ -21,7 +21,6 @@ module Cryptoexchange::Exchanges
 
         def adapt(output, market_pair)
           order_book = Cryptoexchange::Models::OrderBook.new
-
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
           order_book.market    = BambooRelay::Market::NAME
