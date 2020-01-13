@@ -12,7 +12,7 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           output.map do |pair, ticker|
             next unless ticker['isFrozen'] == '0'
-            target, base = pair.split('_')
+            base, target = pair.split('/')
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
