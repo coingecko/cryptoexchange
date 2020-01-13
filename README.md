@@ -107,7 +107,7 @@ Or install it yourself as:
 | Bitopro           | Y       | Y [x]      | Y       |         | User-Defined| Y        | bitopro           |       |
 | Bitpaction[halted]| Y       | Y          | Y       |         | Y           |          | bitpaction        |       |
 | Bitpanda          | Y       | Y          |         |         | Y           | Y        | bitpanda          |       |
-| Bitrabbit         | Y       | N          | N       |         | Y           | Y        | bitrabbit         |       |
+| Bitrabbit         | Y       | Y [x]      | N       |         | Y           | Y        | bitrabbit         |       |
 | Bitrue            | Y       | Y [x]      |         |         | Y           | Y        | bitrue            |       |
 | Bits Blockchain   | Y       | Y          |         |         | Y           |          | bits_blockchain   |       |
 | Bitsane           | Y       | Y [x]      |         |         | Y           |          | bitsane           |       |

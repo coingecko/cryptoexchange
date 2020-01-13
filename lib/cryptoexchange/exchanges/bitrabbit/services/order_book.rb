@@ -17,7 +17,7 @@ module Cryptoexchange::Exchanges
           base = market_pair.base.upcase
           target = market_pair.target.upcase
           # yet to have new version of API for tickers and pairs. Will hardcode this here for now.
-          "https://bitrabbit.io/api/v2/depth?market=#{market_pair.base}_#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::Bitrabbit::Market::API_URL}/depth?market=#{market_pair.base}_#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
