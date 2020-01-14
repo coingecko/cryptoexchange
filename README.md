@@ -1,4 +1,4 @@
-
+\
 [![Build Status](https://travis-ci.org/coingecko/cryptoexchange.svg)](https://travis-ci.org/coingecko/cryptoexchange)
 
 # Cryptoexchange
@@ -82,7 +82,7 @@ Or install it yourself as:
 | Bitcratic         | Y       |            |         |         | Y           |          | bitcratic         |       |
 | Bitebtc           | Y       | Y [x]      | Y       |         | Y           | Y        | bitebtc           |       |
 | Bitex.la          | Y       | Y [x]      |         |         | Y           |          | bitex             |       |
-| Bitexbook         | Y       | N          | N       |         | Y           | Y        | bitexbook         |       |
+| Bitexbook         | Y       | Y [x]      | N       |         | Y           | Y        | bitexbook         |       |
 | Bitexlive         | Y       | Y [x]      | N       |         | Y           | Y        | bitexlive         |       |
 | BitFex.Trade      | Y       |            |         |         | Y           | Y        | bitfex            |       |
 | Bitfinex          | Y       | Y [x]      |         |         | Y           |          | bitfinex          |       |
