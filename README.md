@@ -256,6 +256,7 @@ Or install it yourself as:
 | Etherflyer        | Y       | N          | N       |         | Y           | Y        | etherflyer        |       |
 | Ethex             | Y       | N          | N       |         | Y           | N        | ethex             |       |
 | Ethfinex          | Y       | Y [x]      | Y       |         | Y           | Y        | ethfinex          |       |
+| EtoroX            | Y       | Y [x]      | Y       |         | Y           | Y        | etorox            |       |
 | Everbloom         | Y       |            |         |         | Y           |          | everbloom         |       |
 | EXNCE             | Y       | N          | N       |         | Y           | Y        | exnce             |       |
 | ExMarkets         | Y       | Y          | Y       |         | Y           | Y        | exmarkets         |       |

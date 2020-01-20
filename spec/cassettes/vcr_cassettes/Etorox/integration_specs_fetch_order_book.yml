@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://services.etorox.com/api/v1/marketdata/orderbook/btc_usdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - services.etorox.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jan 2020 07:55:25 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '660'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d455b58465c83035a6277e705123ac4bc1579506924; expires=Wed, 19-Feb-20
+        07:55:24 GMT; path=/; domain=.etorox.com; HttpOnly; SameSite=Lax
+      X-Guploader-Uploadid:
+      - AEnB2UqlfAuudXfbce4U1EAwXfiAc3Jnmgrxm3LslqbVyYKNuZ9Lm4PBNEzPzqLErU0-1ujAksHeIWl18bJEGxv6FHWbPRe71fEkFb_THOJZHhWrBJjrE3Y
+      Expires:
+      - Mon, 20 Jan 2020 07:55:24 GMT
+      Cache-Control:
+      - private, max-age=0
+      Last-Modified:
+      - Wed, 08 Jan 2020 15:25:32 GMT
+      Etag:
+      - '"9d34a362baa40c47a5fd7c2c9cfa3013"'
+      X-Goog-Generation:
+      - '1578497132910071'
+      X-Goog-Metageneration:
+      - '1'
+      X-Goog-Stored-Content-Encoding:
+      - identity
+      X-Goog-Stored-Content-Length:
+      - '660'
+      X-Goog-Hash:
+      - crc32c=9p00Ug==
+      - md5=nTSjYrqkDEel/XwsnPowEw==
+      X-Goog-Storage-Class:
+      - STANDARD
+      Accept-Ranges:
+      - bytes
+      Vary:
+      - Origin
+      Alt-Svc:
+      - clear
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 557f7c63ba8fdd4a-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timestamp":1578497112,"asks":[["8294.0","0.0101"],["8298.0","0.0419"],["8298.3","0.0209"],["8306.3","0.3011"],["8322.9","0.3006"],["8324.3","0.2211"],["8324.6","0.3005"],["8325.6","0.9933"],["8325.7","0.6752"],["8326.3","0.3005"],["8326.7","0.229"],["8326.8","0.9912"],["8326.9","0.9971"],["8327.0","1.0044"],["8327.9","0.3005"]],"bids":[["8273.1","0.6711"],["8273.2","0.0209"],["8273.7","1.0071"],["8273.8","0.0209"],["8274.1","0.3017"],["8274.3","0.0208"],["8274.6","0.3018"],["8274.7","0.2785"],["8274.8","0.671"],["8275.2","0.6709"],["8275.6","0.0417"],["8276.6","0.2785"],["8276.7","0.1257"],["8277.0","0.0182"],["8281.1","0.0743"],["8281.3","0.0992"]]}'
+    http_version: 
+  recorded_at: Mon, 20 Jan 2020 07:55:25 GMT
+recorded_with: VCR 4.0.0
