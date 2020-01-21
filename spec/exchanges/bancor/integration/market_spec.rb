@@ -7,7 +7,7 @@ RSpec.describe 'Bancor integration specs' do
   let(:filename) { Cryptoexchange::Credentials.send(:filename) }
 
   before do
-    allow(Cryptoexchange::Credentials).to receive(:get).with('bancor').and_return({ 'api_key' => 'test_key' })
+    allow(Cryptoexchange::Credentials).to receive(:get).with('bancor').and_return({ 'api_key' => 'api_key' })
   end
 
   it 'fetch pairs' do

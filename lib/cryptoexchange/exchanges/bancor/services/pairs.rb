@@ -2,10 +2,12 @@ module Cryptoexchange::Exchanges
   module Bancor
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bancor::Market::API_URL}/exchanges?platform=bancor&key=#{Cryptoexchange::Exchanges::Bancor::Market.api_key}"
+        def pairs_url
+          "#{Cryptoexchange::Exchanges::Bancor::Market::API_URL}/exchanges?platform=bancor&key=#{Cryptoexchange::Exchanges::Bancor::Market.api_key}"
+        end
 
         def fetch
-          output = super
+          output = fetch_via_api(pairs_url)
           adapt(output)
         end
 
