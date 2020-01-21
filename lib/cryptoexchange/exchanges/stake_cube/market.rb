@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://stakecube.net/app/api/v1'
 
       def self.trade_page_url(args={})
-        "https://stakecube.net/exchange/#{args[:target]}-#{args[:base]}"
+        "https://stakecube.net/app/exchange/#{args[:base]}_#{args[:target]}"
       end
     end
   end

@@ -303,7 +303,7 @@ Or install it yourself as:
 | Huobi US          | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi_us          |       |
 | Ice3x             | Y       | Y          | Y       |         | Y           |          | ice3x             |       |
 | Idax              | Y       | Y [x]      | N       |         | Y           | Y        | idax              |       |
-| Idcm              | Y       |            |         |         | Y           | Y        | idcm              |       |
+| Idcm              | Y       | Y [x]      |         |         | Y           | Y        | idcm              |       |
 | Idex              | Y       | Unstable   | Y       |         | Y           | Y        | idex              |       |
 | Incorex           | Y       | Y          | Y       |         | Y           | Y        | incorex           |       |
 | Indodax           | Y       | Y [x]      | Y       |         | User-Defined| N        | indodax           |       |
