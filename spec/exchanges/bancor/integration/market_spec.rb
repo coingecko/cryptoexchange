@@ -1,8 +1,15 @@
 require 'spec_helper'
+require 'byebug'
 
 RSpec.describe 'Bancor integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:eth_bnt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BNT', market: 'bancor') }
+
+  let(:filename) { Cryptoexchange::Credentials.send(:filename) }
+
+  before do
+    allow(Cryptoexchange::Credentials).to receive(:get).with('bancor').and_return({ 'api_key' => 'test_key' })
+  end
 
   it 'fetch pairs' do
     pairs = client.pairs('bancor')
