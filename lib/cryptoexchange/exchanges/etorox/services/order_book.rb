@@ -13,7 +13,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Etorox::Market::API_URL}/orderbook/#{market_pair.base.downcase}_#{market_pair.target.downcase}"
+          "#{Cryptoexchange::Exchanges::Etorox::Market::API_URL}/#{market_pair.inst_id}/depth"
         end
 
         def adapt(output, market_pair)
@@ -23,7 +23,7 @@ module Cryptoexchange::Exchanges
           order_book.market    = Etorox::Market::NAME
           order_book.asks      = adapt_orders(output["asks"])
           order_book.bids      = adapt_orders(output["bids"])
-          order_book.timestamp = output["timestamp"]
+          order_book.timestamp = Time.new(output["timestamp"]).to_i
           order_book.payload   = output
           order_book
         end

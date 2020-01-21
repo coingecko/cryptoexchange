@@ -14,20 +14,23 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Etorox::Market::API_URL}/snapshot"
+          "#{Cryptoexchange::Exchanges::Etorox::Market::API_URL}/tickers"
         end
 
         def adapt_all(output)
-          output.map do |pair, ticker|
-            base, target = pair.split("_")
+          output["instruments"].map do |ticker|
+            base, target = Etorox::Market.separate_symbol(ticker["id"])
+            next if base.nil? || target.nil?
+            
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
                             target: target,
+                            inst_id: ticker["id"],
                             market: Etorox::Market::NAME
                           )
 
             adapt(market_pair, ticker)
-          end
+          end.compact
         end
 
         def adapt(market_pair, output)
@@ -37,7 +40,7 @@ module Cryptoexchange::Exchanges
           ticker.market = Etorox::Market::NAME
           ticker.ask = NumericHelper.to_d(output["lowestAsk"])
           ticker.bid = NumericHelper.to_d(output["highestBid"])
-          ticker.last = NumericHelper.to_d(output["last"])
+          ticker.last = NumericHelper.to_d(output["lastPrice"])
           ticker.high = NumericHelper.to_d(output["high24hr"])
           ticker.low = NumericHelper.to_d(output["low24hr"])
           ticker.volume = NumericHelper.to_d(output["baseVolume"])
