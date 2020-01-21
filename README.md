@@ -413,7 +413,7 @@ Or install it yourself as:
 | Singularx         | Y       | N          | N       |         | Y           |          | singularx         |       |
 | Sistemkoin        | Y       |            |         |         | Y           |          | sistemkoin        |       |
 | 6X                | Y       | Y [x]      |         |         | Y           | Y        | six_x             |       |
-| Satang (Tdax)     | Y       |            |         |         | Y           | Y        | tdax              |       |
+| Satang (Tdax)     | Y       | Y [x]      |         |         | Y           | Y        | tdax              |       |
 | StakeCube         | Y       | Y [x]      | Y [limit: 20]|         | Y           | Y        | stake_cube   |       |
 | SouthXchange      | Y       | Y [x]      | Y       |         | Y           | Y        | south_xchange     |       |
 | Stocks Exchange   | Y       |            |         |         | Y           | Y        | stocks_exchange   |       |
