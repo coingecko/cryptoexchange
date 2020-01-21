@@ -17,7 +17,7 @@ RSpec.describe 'StakeCube integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url market, base: doge_btc_pair.base, target: doge_btc_pair.target
-    expect(trade_page_url).to eq "https://stakecube.net/exchange/#{doge_btc_pair.target}-#{doge_btc_pair.base}"
+    expect(trade_page_url).to eq "https://stakecube.net/app/exchange/DOGE_BTC"
   end
 
   it 'fetch ticker' do

@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.idcs.io:8323/api/v1/RealTimeQuote/GetDepth?symbol=EOS/VUSD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.idcs.io:8323
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - xws
+      Date:
+      - Tue, 21 Jan 2020 06:11:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '{"result":1,"code":"200","data":{"asks":[{"symbol":"EOS-USDT","price":3.6430000000000000,"amount":1653.691},{"symbol":"EOS-USDT","price":3.6440000000000000,"amount":1356.149},{"symbol":"EOS-USDT","price":3.6450000000000000,"amount":3384.349},{"symbol":"EOS-USDT","price":3.6460000000000000,"amount":4941.955},{"symbol":"EOS-USDT","price":3.6470000000000000,"amount":5323.906},{"symbol":"EOS-USDT","price":3.6480000000000000,"amount":5704.683},{"symbol":"EOS-USDT","price":3.6490000000000000,"amount":5150.056},{"symbol":"EOS-USDT","price":3.6500000000000000,"amount":1746.797},{"symbol":"EOS-USDT","price":3.6510000000000000,"amount":7101.154},{"symbol":"EOS-USDT","price":3.6520000000000000,"amount":2121.228},{"symbol":"EOS-USDT","price":3.6530000000000000,"amount":10020.317},{"symbol":"EOS-USDT","price":3.6540000000000000,"amount":4399.462},{"symbol":"EOS-USDT","price":3.6550000000000000,"amount":10382.387},{"symbol":"EOS-USDT","price":3.6560000000000000,"amount":3212.981},{"symbol":"EOS-USDT","price":3.6570000000000000,"amount":6563.805},{"symbol":"EOS-USDT","price":3.6580000000000000,"amount":616.117},{"symbol":"EOS-USDT","price":3.6590000000000000,"amount":1896.789},{"symbol":"EOS-USDT","price":3.6610000000000000,"amount":4274.361},{"symbol":"EOS-USDT","price":3.6620000000000000,"amount":227.494},{"symbol":"EOS-USDT","price":3.6630000000000000,"amount":230.239},{"symbol":"EOS-USDT","price":3.6640000000000000,"amount":7662.795},{"symbol":"EOS-USDT","price":3.6650000000000000,"amount":11111.0},{"symbol":"EOS-USDT","price":3.6660000000000000,"amount":6513.083},{"symbol":"EOS-USDT","price":3.6670000000000000,"amount":11111.0},{"symbol":"EOS-USDT","price":3.6690000000000000,"amount":76.547},{"symbol":"EOS-USDT","price":3.6710000000000000,"amount":2543.483},{"symbol":"EOS-USDT","price":4.1000000000000000,"amount":25.1360000000000000},{"symbol":"EOS-USDT","price":4.7500000000000000,"amount":12.1490000000000000},{"symbol":"EOS-USDT","price":6.4200000000000000,"amount":74.8890000000000000},{"symbol":"EOS-USDT","price":7.5900000000000000,"amount":4.6410000000000000},{"symbol":"EOS-USDT","price":8.6000000000000000,"amount":976.7340000000000000},{"symbol":"EOS-USDT","price":9.0000000000000000,"amount":474.1290000000000000},{"symbol":"EOS-USDT","price":9.9000000000000000,"amount":15.6240000000000000}],"bids":[{"symbol":"EOS-USDT","price":3.6250000000000000,"amount":847.222},{"symbol":"EOS-USDT","price":3.6240000000000000,"amount":1429.581},{"symbol":"EOS-USDT","price":3.6230000000000000,"amount":4982.482},{"symbol":"EOS-USDT","price":3.6220000000000000,"amount":6456.046},{"symbol":"EOS-USDT","price":3.6210000000000000,"amount":1936.286},{"symbol":"EOS-USDT","price":3.6200000000000000,"amount":4064.863},{"symbol":"EOS-USDT","price":3.6190000000000000,"amount":1963.868},{"symbol":"EOS-USDT","price":3.6180000000000000,"amount":5027.794},{"symbol":"EOS-USDT","price":3.6170000000000000,"amount":1758.324},{"symbol":"EOS-USDT","price":3.6160000000000000,"amount":4245.197},{"symbol":"EOS-USDT","price":3.6150000000000000,"amount":273.255},{"symbol":"EOS-USDT","price":3.6140000000000000,"amount":969.418},{"symbol":"EOS-USDT","price":3.6130000000000000,"amount":4519.551},{"symbol":"EOS-USDT","price":3.6120000000000000,"amount":1474.314},{"symbol":"EOS-USDT","price":3.6110000000000000,"amount":469.633},{"symbol":"EOS-USDT","price":3.6100000000000000,"amount":1187.098},{"symbol":"EOS-USDT","price":3.6090000000000000,"amount":11111.0},{"symbol":"EOS-USDT","price":3.6080000000000000,"amount":1340.258},{"symbol":"EOS-USDT","price":3.6070000000000000,"amount":663.869},{"symbol":"EOS-USDT","price":3.6060000000000000,"amount":739.538},{"symbol":"EOS-USDT","price":3.6050000000000000,"amount":466.792},{"symbol":"EOS-USDT","price":3.6040000000000000,"amount":230.936},{"symbol":"EOS-USDT","price":3.6030000000000000,"amount":1152.323},{"symbol":"EOS-USDT","price":3.6020000000000000,"amount":978.646},{"symbol":"EOS-USDT","price":3.6010000000000000,"amount":1937.971},{"symbol":"EOS-USDT","price":3.3300000000000000,"amount":820.0},{"symbol":"EOS-USDT","price":0.0100000000000000,"amount":1303.3980000000000000},{"symbol":"EOS-USDT","price":0.0040000000000000,"amount":2500.0000000000000000},{"symbol":"EOS-USDT","price":0.0030000000000000,"amount":2269.3330000000000000},{"symbol":"EOS-USDT","price":0.0020000000000000,"amount":174.0000000000000000},{"symbol":"EOS-USDT","price":0.0010000000000000,"amount":3308.5790000000000000}]}}'
+    http_version: 
+  recorded_at: Tue, 21 Jan 2020 06:11:30 GMT
+recorded_with: VCR 4.0.0
