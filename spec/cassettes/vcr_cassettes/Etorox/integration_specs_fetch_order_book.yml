@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://services.etorox.com/api/v1/marketdata/orderbook/btc_usdt
+    uri: https://services.etorox.com/api/v1/marketdata/instruments/btcusdex/depth
     body:
       encoding: UTF-8
       string: ''
@@ -19,37 +19,37 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 20 Jan 2020 07:55:25 GMT
+      - Tue, 21 Jan 2020 03:36:55 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '660'
+      - '966'
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d455b58465c83035a6277e705123ac4bc1579506924; expires=Wed, 19-Feb-20
-        07:55:24 GMT; path=/; domain=.etorox.com; HttpOnly; SameSite=Lax
+      - __cfduid=d8b2b13ff8d65a56d8aa3c8adf45389151579577814; expires=Thu, 20-Feb-20
+        03:36:54 GMT; path=/; domain=.etorox.com; HttpOnly; SameSite=Lax
       X-Guploader-Uploadid:
-      - AEnB2UqlfAuudXfbce4U1EAwXfiAc3Jnmgrxm3LslqbVyYKNuZ9Lm4PBNEzPzqLErU0-1ujAksHeIWl18bJEGxv6FHWbPRe71fEkFb_THOJZHhWrBJjrE3Y
+      - AEnB2Uo1WGFvD4iygsioJVLffJNpyadhn0PCOcHLV4B-EXYujgflT1b0fD7ljQ7jmnmFvE4VG7JNbdcWE-rRUhd6CUTOuZnK1YlUxEqxarvHNGZGq8UVg-c
       Expires:
-      - Mon, 20 Jan 2020 07:55:24 GMT
+      - Tue, 21 Jan 2020 03:36:55 GMT
       Cache-Control:
       - private, max-age=0
       Last-Modified:
-      - Wed, 08 Jan 2020 15:25:32 GMT
+      - Tue, 21 Jan 2020 03:36:14 GMT
       Etag:
-      - '"9d34a362baa40c47a5fd7c2c9cfa3013"'
+      - '"7c4cfe9daf6d633c5feb8b29e304ccbe"'
       X-Goog-Generation:
-      - '1578497132910071'
+      - '1579577774847887'
       X-Goog-Metageneration:
       - '1'
       X-Goog-Stored-Content-Encoding:
       - identity
       X-Goog-Stored-Content-Length:
-      - '660'
+      - '966'
       X-Goog-Hash:
-      - crc32c=9p00Ug==
-      - md5=nTSjYrqkDEel/XwsnPowEw==
+      - crc32c=bM9OSA==
+      - md5=fEz+na9tYzxf64sp4wTMvg==
       X-Goog-Storage-Class:
       - STANDARD
       Accept-Ranges:
@@ -65,10 +65,10 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 557f7c63ba8fdd4a-KUL
+      - 55863f1d5b8bc118-KUL
     body:
       encoding: ASCII-8BIT
-      string: '{"timestamp":1578497112,"asks":[["8294.0","0.0101"],["8298.0","0.0419"],["8298.3","0.0209"],["8306.3","0.3011"],["8322.9","0.3006"],["8324.3","0.2211"],["8324.6","0.3005"],["8325.6","0.9933"],["8325.7","0.6752"],["8326.3","0.3005"],["8326.7","0.229"],["8326.8","0.9912"],["8326.9","0.9971"],["8327.0","1.0044"],["8327.9","0.3005"]],"bids":[["8273.1","0.6711"],["8273.2","0.0209"],["8273.7","1.0071"],["8273.8","0.0209"],["8274.1","0.3017"],["8274.3","0.0208"],["8274.6","0.3018"],["8274.7","0.2785"],["8274.8","0.671"],["8275.2","0.6709"],["8275.6","0.0417"],["8276.6","0.2785"],["8276.7","0.1257"],["8277.0","0.0182"],["8281.1","0.0743"],["8281.3","0.0992"]]}'
+      string: '{"timestamp":"2020-01-21T03:36:11.000Z","asks":[["8657.16560","3.56250"],["8657.36560","1.17190"],["8659.96590","0.10950"],["8660.11000","0.05000"],["8660.23000","0.99350"],["8660.59000","0.25000"],["8662.27000","0.05200"],["8662.29000","0.25000"],["8667.70000","0.45000"],["8667.83000","0.30000"],["8667.86670","0.58000"],["8667.96670","1.35940"],["8668.06670","1.00150"],["8668.40000","0.50620"],["8668.66680","0.45000"],["8668.69000","1.86570"],["9500.00000","0.00100"],["11700.00000","0.04670"],["12000.00000","0.12950"],["12500.00000","0.02170"],["21000.00000","0.84640"]],"bids":[["8645.84000","1.19920"],["8645.64000","2.34210"],["8641.70000","4.84860"],["8641.53580","20.16420"],["8640.76000","19.99390"],["8640.74910","13.62230"],["8640.63580","13.27110"],["8640.54000","20.02480"],["8640.23590","19.83050"],["8640.13590","10.25910"],["8640.03590","19.89710"],["8639.93590","20.18120"],["8639.39000","7.70050"],["1.26330","0.79158"],["1.00000","21.00000"]]}'
     http_version: 
-  recorded_at: Mon, 20 Jan 2020 07:55:25 GMT
+  recorded_at: Tue, 21 Jan 2020 03:36:55 GMT
 recorded_with: VCR 4.0.0

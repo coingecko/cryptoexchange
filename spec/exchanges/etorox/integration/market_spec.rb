@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe 'Etorox integration specs' do
   client = Cryptoexchange::Client.new
   let(:market) { 'etorox' }
-  let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usdt', market: 'etorox') }
+  let(:btc_usdex_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usdex', market: 'etorox', inst_id: "btcusdex") }
 
   it 'fetch pairs' do
     pairs = client.pairs('etorox')
@@ -16,15 +16,15 @@ RSpec.describe 'Etorox integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url market, base: btc_usdt_pair.base, target: btc_usdt_pair.target
-    expect(trade_page_url).to eq "https://www.etorox.com/exchange/btc-usdt"
+    trade_page_url = client.trade_page_url market, base: btc_usdex_pair.base, target: btc_usdex_pair.target
+    expect(trade_page_url).to eq "https://www.etorox.com/exchange/btc-usdex"
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(btc_usdt_pair)
+    ticker = client.ticker(btc_usdex_pair)
 
     expect(ticker.base).to eq 'BTC'
-    expect(ticker.target).to eq 'USDT'
+    expect(ticker.target).to eq 'USDEX'
     expect(ticker.market).to eq 'etorox'
     expect(ticker.last).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
@@ -37,10 +37,10 @@ RSpec.describe 'Etorox integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(btc_usdt_pair)
+    order_book = client.order_book(btc_usdex_pair)
 
     expect(order_book.base).to eq 'BTC'
-    expect(order_book.target).to eq 'USDT'
+    expect(order_book.target).to eq 'USDEX'
     expect(order_book.market).to eq 'etorox'
 
     expect(order_book.asks).to_not be_empty
@@ -55,12 +55,12 @@ RSpec.describe 'Etorox integration specs' do
   end
 
   it 'fetch trade' do
-    trades = client.trades(btc_usdt_pair)
+    trades = client.trades(btc_usdex_pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty
     expect(trade.base).to eq 'BTC'
-    expect(trade.target).to eq 'USDT'
+    expect(trade.target).to eq 'USDEX'
     expect(trade.market).to eq 'etorox'
     expect(trade.trade_id).to_not be_nil
     expect(trade.price).to_not be_nil
