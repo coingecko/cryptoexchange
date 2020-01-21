@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://market-watch.financex.io/api/v1/market-watch/ticker'
 
       def self.trade_page_url(args={})
-        "https://financex.io/en/buy-sell-bitcoin-cash-abc/#{args[:base]}_#{args[:target]}"
+        "https://financex.io/en/#{args[:base]}_#{args[:target]}"
       end
     end
   end
