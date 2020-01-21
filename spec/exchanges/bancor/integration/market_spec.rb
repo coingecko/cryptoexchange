@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'byebug'
 
 RSpec.describe 'Bancor integration specs' do
   let(:client) { Cryptoexchange::Client.new }
