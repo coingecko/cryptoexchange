@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Extstock
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Extstock::Market::API_URL}/markets"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Extstock::Market::API_URL}/ticker"
 
         def fetch
           output = super
@@ -12,8 +12,8 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           market_pairs = []
 
-          output.each do |pair|
-            base, target = pair["name"].split("/")
+          output["data"].each do |pair|
+            base, target = pair[0].split("_")
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
