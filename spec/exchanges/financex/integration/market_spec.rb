@@ -16,7 +16,7 @@ RSpec.describe 'Financex integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'financex', base: etc_btc_pair.base, target: etc_btc_pair.target
-    expect(trade_page_url).to eq "https://financex.io/en/buy-sell-bitcoin-cash-abc/ETC_BTC"
+    expect(trade_page_url).to eq "https://financex.io/en/ETC_BTC"
   end
 
   it 'fetch ticker' do
