@@ -37,6 +37,7 @@ Or install it yourself as:
 | Altilly           | Y       | Y [x]      | Y       |         | Y           | Y        | altilly           |       |
 | Altmarkets        | Y       | Y [x]      | Y       |         | Y           | Y        | altmarkets        |       |
 | ANX               | Y       |            |         |         | User-Defined|          | anx               |       |
+| Artisturba        | Y       | Y [x]      | Y       |         | Y           | Y        | artisturba        |       |
 | Aphelion          | Y       |            |         |         | Y           | Y        | aphelion          |       |
 | Atomars           | Y       | Y          | Y       |         | Y           | Y        | atomars           |       |
 | AXNET (halted)    | Y       | Y          | Y       |         | Y           | Y        | axnet             |       |
