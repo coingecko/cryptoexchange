@@ -432,6 +432,7 @@ Or install it yourself as:
 | Tidex             | Y       | Y [x]      |         |         | Y           |          | tidex             |       |
 | Tokenize          | Y       | Y [x]      |         |         | Y           | Y        | tokenize          |       |
 | Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |       |
+| Tokenmom          | Y       | Y          | Y       |         | Y           | Y        | tokenmom          |       |
 | Tokenomy          | Y       | Y [x]      | Y       |         | Y           | Y        | tokenomy          |       |
 | TokensNet         | Y       | Y [x]      | N       |         | Y           | Y        | tokens_net       |       |
 | TokoCrypto        | Y       | Y          | Y       |         | Y           | N        | toko_crypto       |       |
