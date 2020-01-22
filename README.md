@@ -490,6 +490,7 @@ Or install it yourself as:
 | Exchange          | T | OB | List | URL | OpenInt | CT  | Idx | Idxid | Idxn | ST | ET | F% | NFT | F%P |                  |
 |-----------------  |---|----|------|-----|---------|-----|-----|-------|------|----|----|----|-----|-----|------------------|
 | Bakkt Futures     | Y | N  | Y    |  Y  |  N      | Y   |  N  |       |      | N  | N  | N  | N   | N   |  bakkt |
+| Bhex Futures      | Y | Y  | Y    |  Y  |  N      | Y   |  Y  |       |      | N  | N  | Y  | N   | N   |  bhex_futures |
 | Bibox (Futures)   | Y | Y  | Y    |  Y  |  N      | Y   |  N  |       |      | N  | N  | N  | N   | N   |  bibox_futures   |
 | Binance Futures   | Y | Y  | Y    |  Y  |  N      | Y   |  Y  |       |      | N  | N  | Y  | Y   | N   |  binance_futures |
 | Bitflyer Futures  | Y | Y  | Y    |  Y  |  N      | Y   |  N  |       |      | N  | N  |    |     |     |  bitflyer_futures  |
