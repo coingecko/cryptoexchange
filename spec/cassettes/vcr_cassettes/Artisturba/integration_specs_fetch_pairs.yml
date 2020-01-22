@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.artisturba.com/api/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.artisturba.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 22 Jan 2020 09:16:37 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '7125'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d617f2f684ccef53849345ce8b2cea6901579684596; expires=Fri, 21-Feb-20
+        09:16:36 GMT; path=/; domain=.artisturba.com; HttpOnly; SameSite=Lax
+      - ci_session=fo0476p5h69nej65tco56h4pe0pmjeh8; path=/; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 55906e1a4a99c318-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"1","message":"Success","combinations":{"ETN_ETH":{"pair":"ETN_ETH","last":"0.00002260","lowestAsk":"0.000023","highestBid":"0.0000226","percentChange":"0.44","base24hrVolume":"56412.34001806","quote24hrVolume":"1.28422353","low24hr":"0.0000226","high24hr":"0.0000228"},"ETN_BTC":{"pair":"ETN_BTC","last":"0.00000043","lowestAsk":"0.00000045","highestBid":"0.00000043","percentChange":"2.38","base24hrVolume":"106052.15584436","quote24hrVolume":"0.04668271","low24hr":"0.00000043","high24hr":"0.00000044"},"ETN_ZAR":{"pair":"ETN_ZAR","last":"0.0572","lowestAsk":"0.0587","highestBid":"0.0572","percentChange":"0.52","base24hrVolume":"195294.40496762","quote24hrVolume":"11288.0997","low24hr":"0.0572","high24hr":"0.058"},"TRX_XRP":{"pair":"TRX_XRP","last":"0.07290000","lowestAsk":"0.073","highestBid":"0.0725","percentChange":"2.17","base24hrVolume":"3610.16394466","quote24hrVolume":"259.15096944","low24hr":"0.0712","high24hr":"0.073"},"ETH_XRP":{"pair":"ETH_XRP","last":"714.00000000","lowestAsk":"720","highestBid":"710","percentChange":"1.13","base24hrVolume":"1.26524911","quote24hrVolume":"893.52366454","low24hr":"700","high24hr":"720"},"BTC_XRP":{"pair":"BTC_XRP","last":"36800.00000000","lowestAsk":"37000","highestBid":"36750","percentChange":"0.82","base24hrVolume":"0.03026000","quote24hrVolume":"1105.11650000","low24hr":"36250","high24hr":"37000"},"ARTIS_XRP":{"pair":"ARTIS_XRP","last":"0.02450000","lowestAsk":"0.0246","highestBid":"0.0244","percentChange":"0.41","base24hrVolume":"6910.40295244","quote24hrVolume":"168.41467233","low24hr":"0.0242","high24hr":"0.0246"},"XLM_ETH":{"pair":"XLM_ETH","last":"0.00037500","lowestAsk":"0.000385","highestBid":"0.000375","percentChange":"1.33","base24hrVolume":"1003.57164593","quote24hrVolume":"0.38134437","low24hr":"0.000375","high24hr":"0.000375"},"BTT_ETH":{"pair":"BTT_ETH","last":"0.00000210","lowestAsk":"0.0000022","highestBid":"0.0000021","percentChange":"4.76","base24hrVolume":"79949.02257522","quote24hrVolume":"0.17185145","low24hr":"0.0000021","high24hr":"0.0000021"},"TRX_ETH":{"pair":"TRX_ETH","last":"0.00010250","lowestAsk":"0.000105","highestBid":"0.0000995","percentChange":"2.50","base24hrVolume":"5903.54292592","quote24hrVolume":"0.59060167","low24hr":"0.0000995","high24hr":"0.000105"},"DGB_ETH":{"pair":"DGB_ETH","last":"0.00003930","lowestAsk":"0.0000395","highestBid":"0.000039","percentChange":"1.78","base24hrVolume":"5901.53000000","quote24hrVolume":"0.23432133","low24hr":"0.000039","high24hr":"0.0000401"},"EOS_ETH":{"pair":"EOS_ETH","last":"0.02180000","lowestAsk":"0.022","highestBid":"0.0216","percentChange":"0.93","base24hrVolume":"5.69270000","quote24hrVolume":"0.12406486","low24hr":"0.0216","high24hr":"0.0218"},"BNB_ETH":{"pair":"BNB_ETH","last":"0.10400000","lowestAsk":"0.106","highestBid":"0.104","percentChange":"0.78","base24hrVolume":"6.67221619","quote24hrVolume":"0.69770678","low24hr":"0.104","high24hr":"0.104"},"ARTIS_ETH":{"pair":"ARTIS_ETH","last":"0.00003424","lowestAsk":"0.0000345","highestBid":"0.00003424","percentChange":"0.76","base24hrVolume":"96023.11564215","quote24hrVolume":"3.36601390","low24hr":"0.000034","high24hr":"0.000036"},"XLM_BTC":{"pair":"XLM_BTC","last":"0.00000737","lowestAsk":"0.0000074","highestBid":"0.0000073","percentChange":"0.27","base24hrVolume":"1252.06000000","quote24hrVolume":"0.00921488","low24hr":null,"high24hr":null},"BTT_BTC":{"pair":"BTT_BTC","last":"0.00000005","lowestAsk":"0.00000006","highestBid":"0.00000005","percentChange":"25.00","base24hrVolume":"176546.55215054","quote24hrVolume":"0.00669876","low24hr":"0.00000003","high24hr":"0.00000005"},"TRX_BTC":{"pair":"TRX_BTC","last":"0.00000200","lowestAsk":"0.00000205","highestBid":"0.00000195","percentChange":"2.56","base24hrVolume":"8053.00000000","quote24hrVolume":"0.01573055","low24hr":"0.00000195","high24hr":"0.00000205"},"DGB_BTC":{"pair":"DGB_BTC","last":"0.00000077","lowestAsk":"0.00000078","highestBid":"0.00000076","percentChange":"1.30","base24hrVolume":"3603.61000000","quote24hrVolume":"0.00282032","low24hr":"0.00000077","high24hr":"0.00000079"},"EOS_BTC":{"pair":"EOS_BTC","last":"0.00042000","lowestAsk":"0.0004215","highestBid":"0.0004175","percentChange":"0.36","base24hrVolume":"12.35076916","quote24hrVolume":"0.00519666","low24hr":"0.000415","high24hr":"0.00043"},"BNB_BTC":{"pair":"BNB_BTC","last":"0.00200000","lowestAsk":"0.00203","highestBid":"0.002","percentChange":"0.91","base24hrVolume":"13.13918651","quote24hrVolume":"0.02640845","low24hr":"0.002","high24hr":"0.002"},"ETH_BTC":{"pair":"ETH_BTC","last":"0.01937000","lowestAsk":"0.0195","highestBid":"0.0193","percentChange":"0.62","base24hrVolume":"91.77695000","quote24hrVolume":"1.76545807","low24hr":"0.0191","high24hr":"0.0195"},"ARTIS_BTC":{"pair":"ARTIS_BTC","last":"0.00000067","lowestAsk":"0.00000068","highestBid":"0.00000066","percentChange":"0.00","base24hrVolume":"19951.88577963","quote24hrVolume":"0.01336798","low24hr":"0.00000067","high24hr":"0.00000068"},"BNB_ZAR":{"pair":"BNB_ZAR","last":"263.1766","lowestAsk":"271.1921","highestBid":"263.1766","percentChange":"0.83","base24hrVolume":"43.57884133","quote24hrVolume":"11676.1882","low24hr":"263.1766","high24hr":"263.1766"},"XRP_ZAR":{"pair":"XRP_ZAR","last":"3.5700","lowestAsk":"3.644","highestBid":"3.5581","percentChange":"0.85","base24hrVolume":"3913.23189685","quote24hrVolume":"14062.9502","low24hr":"3.57","high24hr":"3.6"},"XLM_ZAR":{"pair":"XLM_ZAR","last":"0.9545","lowestAsk":"0.9836","highestBid":"0.9545","percentChange":"1.53","base24hrVolume":"1202.50012869","quote24hrVolume":"1165.1690","low24hr":"0.9545","high24hr":"0.9545"},"BTT_ZAR":{"pair":"BTT_ZAR","last":"0.0057","lowestAsk":"0.0058","highestBid":"0.0056","percentChange":"3.64","base24hrVolume":"789458.54996996","quote24hrVolume":"4552.0349","low24hr":"0.0055","high24hr":"0.006"},"TRX_ZAR":{"pair":"TRX_ZAR","last":"0.2655","lowestAsk":"0.2694","highestBid":"0.2615","percentChange":"2.31","base24hrVolume":"16900.35769178","quote24hrVolume":"4418.9855","low24hr":"0.2548","high24hr":"0.2687"},"DGB_ZAR":{"pair":"DGB_ZAR","last":"0.1122","lowestAsk":"0.1159","highestBid":"0.1108","percentChange":"0.27","base24hrVolume":"8613.18789961","quote24hrVolume":"964.3200","low24hr":"0.1108","high24hr":"0.1125"},"EOS_ZAR":{"pair":"EOS_ZAR","last":"55.5500","lowestAsk":"56.4847","highestBid":"54.9082","percentChange":"1.17","base24hrVolume":"14.06920127","quote24hrVolume":"781.7596","low24hr":"54.9082","high24hr":"56.0642"},"ETH_ZAR":{"pair":"ETH_ZAR","last":"2568.0000","lowestAsk":"2612","highestBid":"2529","percentChange":"0.31","base24hrVolume":"19.41110000","quote24hrVolume":"49618.9698","low24hr":"2518","high24hr":"2591"},"BTC_ZAR":{"pair":"BTC_ZAR","last":"132250.0000","lowestAsk":"134619","highestBid":"131750","percentChange":"0.38","base24hrVolume":"0.71882972","quote24hrVolume":"95074.9814","low24hr":"131750","high24hr":"134619"},"ARTIS_ZAR":{"pair":"ARTIS_ZAR","last":"0.0885","lowestAsk":"0.0895","highestBid":"0.0885","percentChange":"0.91","base24hrVolume":"86801.96579247","quote24hrVolume":"7682.0512","low24hr":"0.0875","high24hr":"0.0895"}}}'
+    http_version: 
+  recorded_at: Wed, 22 Jan 2020 09:16:37 GMT
+recorded_with: VCR 4.0.0
