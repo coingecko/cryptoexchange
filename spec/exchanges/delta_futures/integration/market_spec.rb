@@ -4,7 +4,7 @@ RSpec.describe 'Delta Futures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'delta_futures' }
   let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: market, inst_id: 'BTCUSD', contract_interval: "perpetual") }
-  let(:btc_usd_pair_futures) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: market, inst_id: 'BTCUSD_27Dec', contract_interval: "") }
+  let(:btc_usd_pair_futures) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: market, inst_id: 'BTCUSD_27Mar', contract_interval: "") }
 
   it 'fetch pairs' do
     pairs = client.pairs(market)
@@ -53,15 +53,18 @@ RSpec.describe 'Delta Futures integration specs' do
   end
 
   context 'fetch contract stat' do
+    before :each do
+      allow(Time).to receive(:now).and_return(Time.utc(2020, 1, 10))
+    end
+
     it 'fetch contract stat' do
       contract_stat = client.contract_stat(btc_usd_pair)
-
       expect(contract_stat.base).to eq 'BTC'
       expect(contract_stat.target).to eq 'USD'
       expect(contract_stat.market).to eq 'delta_futures'
       expect(contract_stat.index).to be_a Numeric
-      expect(contract_stat.index_identifier).to be nil
-      expect(contract_stat.index_name).to be nil
+      expect(contract_stat.index_identifier).to eq "DEXBTUSD"
+      expect(contract_stat.index_name).to eq ".DEXBTUSD"
       expect(contract_stat.funding_rate_percentage).to be_a Numeric
       expect(contract_stat.timestamp).to be nil
 
