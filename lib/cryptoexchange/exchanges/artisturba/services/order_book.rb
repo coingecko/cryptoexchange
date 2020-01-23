@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Artisturba::Market::API_URL}/order_book/#{market_pair.target}_#{market_pair.base}"
+          "#{Cryptoexchange::Exchanges::Artisturba::Market::API_URL}/order_book/#{market_pair.base}_#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
@@ -33,8 +33,8 @@ module Cryptoexchange::Exchanges
         def adapt_orders(orders)
           orders.collect do |order_entry|
             Cryptoexchange::Models::Order.new(
-              price: NumericHelper.to_d(order_entry[0]),
-              amount: NumericHelper.to_d(order_entry[1])
+              price: NumericHelper.to_d(order_entry[1]),
+              amount: NumericHelper.to_d(order_entry[0])
             )
           end
         end

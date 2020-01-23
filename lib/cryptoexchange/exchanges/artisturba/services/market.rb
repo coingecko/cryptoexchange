@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(pair, output)
-          target, base   = pair.split('_')
+          base, target   = pair.split('_')
           ticker         = Cryptoexchange::Models::Ticker.new
           ticker.base    = base
           ticker.target  = target

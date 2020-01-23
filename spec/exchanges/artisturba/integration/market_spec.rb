@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Artisturba integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:eth_xlm_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'XLM', market: 'artisturba') }
+  let(:etn_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETN', target: 'ETH', market: 'artisturba') }
 
   it 'fetch pairs' do
     pairs = client.pairs('artisturba')
@@ -15,15 +15,15 @@ RSpec.describe 'Artisturba integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url 'artisturba', base: eth_xlm_pair.base, target: eth_xlm_pair.target
-    expect(trade_page_url).to eq "https://www.artisturba.com/trade/ETH_XLM"
+    trade_page_url = client.trade_page_url 'artisturba', base: etn_eth_pair.base, target: etn_eth_pair.target
+    expect(trade_page_url).to eq "https://www.artisturba.com/trade/ETN_ETH"
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(eth_xlm_pair)
+    ticker = client.ticker(etn_eth_pair)
 
-    expect(ticker.base).to eq 'ETH'
-    expect(ticker.target).to eq 'XLM'
+    expect(ticker.base).to eq 'ETN'
+    expect(ticker.target).to eq 'ETH'
     expect(ticker.market).to eq 'artisturba'
     expect(ticker.last).to be_a Numeric
     expect(ticker.high).to be_a Numeric
@@ -34,10 +34,10 @@ RSpec.describe 'Artisturba integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(eth_xlm_pair)
+    order_book = client.order_book(etn_eth_pair)
 
-    expect(order_book.base).to eq 'ETH'
-    expect(order_book.target).to eq 'XLM'
+    expect(order_book.base).to eq 'ETN'
+    expect(order_book.target).to eq 'ETH'
     expect(order_book.market).to eq 'artisturba'
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
@@ -51,13 +51,13 @@ RSpec.describe 'Artisturba integration specs' do
   end
 
   it 'fetch trade' do
-    trades = client.trades(eth_xlm_pair)
+    trades = client.trades(etn_eth_pair)
     trade  = trades.sample
 
     expect(trades).to_not be_empty
     expect(trade.trade_id).to be nil
-    expect(trade.base).to eq 'ETH'
-    expect(trade.target).to eq 'XLM'
+    expect(trade.base).to eq 'ETN'
+    expect(trade.target).to eq 'ETH'
     expect(['buy', 'sell']).to include trade.type
     expect(trade.price).to_not be_nil
     expect(trade.amount).to_not be_nil
