@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.delta.exchange/chart/history?from=1578613900&resolution=1&symbol=.DEXBTUSD&to=1578614400
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.delta.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 23 Jan 2020 09:28:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '764'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d21436660464e7770a7665b24a62eea111579771695; expires=Sat, 22-Feb-20
+        09:28:15 GMT; path=/; domain=.delta.exchange; HttpOnly; SameSite=Lax; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - x-pagination-page-size,x-pagination-page-num,x-pagination-total
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5598bc8768f7dd66-KUL
+    body:
+      encoding: UTF-8
+      string: '{"s":"ok","t":[1578613920,1578613980,1578614040,1578614100,1578614160,1578614220,1578614280,1578614340,1578614400],"o":[7824,7823.436666666666,7824.556666666666,7824.953333333334,7818.746666666666,7818.506666666667,7825.216666666666,7816.69,7812.853333333333],"h":[7825.873333333334,7826.06,7826.05,7825.946666666667,7819.213333333333,7825.216666666666,7825.216666666666,7817.696666666667,7814.860000000001],"l":[7821.259999999999,7823.433333333334,7824.556666666666,7818.746666666666,7817.38,7818.503333333333,7816.123333333333,7812.853333333333,7810.7],"c":[7823.436666666666,7824.556666666666,7824.953333333334,7818.746666666666,7818.506666666667,7825.216666666666,7816.123333333333,7812.853333333333,7813.09],"v":[null,null,null,null,null,null,null,null,null]}'
+    http_version: 
+  recorded_at: Fri, 10 Jan 2020 00:00:00 GMT
+recorded_with: VCR 4.0.0

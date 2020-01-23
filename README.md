@@ -503,7 +503,7 @@ Or install it yourself as:
 | CME Futures       | Y | N  | Y    |  Y  |  N      | Y   |  N  |       |      | N  | Y  | N  | N   | N   |  cme_futures |
 | Coinflex Futures  | Y | Y  | Y    |  Y  |  N      | Y*  |  N  |       |      | N  | N  |    |     |     |  coinflex_futures  |
 | Deribit           | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | Y  | Y  | Y  | Y   | Y   |  deribit |
-| Delta Futures     | Y | Y  | Y    |  Y  |  N      | Y   |  Y  |       |      | N  | N  | Y  | N   | N   |  delta_futures |
+| Delta Futures     | Y | Y  | Y    |  Y  |  N      | Y   |  Y  |   Y   |   Y  | N  | N  | Y  | N   | N   |  delta_futures |
 | FTX               | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | N  | Y  | Y  | Y   | N   |  ftx |
 | Fmex              | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  fmex |
 | Gate (Futures)    | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  gate_futures  |
