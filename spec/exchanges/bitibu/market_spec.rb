@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe Cryptoexchange::Exchanges::Bitibu::Market do
-  it { expect(described_class::NAME).to eq 'bitibu' }
-  it { expect(described_class::API_URL).to eq 'https://bitibu.com/api/v2' }
+RSpec.describe Cryptoexchange::Exchanges::Bitubu::Market do
+  it { expect(described_class::NAME).to eq 'bitubu' }
+  it { expect(described_class::API_URL).to eq 'https://bitubu.com/api/v2' }
 end
