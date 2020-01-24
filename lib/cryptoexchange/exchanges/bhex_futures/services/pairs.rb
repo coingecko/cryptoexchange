@@ -11,14 +11,9 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output.map do |ticker|
-            next if ticker["symbol"].include? "PERP"
-
-            if !ticker["symbol"].include? "-SWAP"    
-              base, target = ticker["symbol"].split("-SWAP-") 
-            else
-              base, target = ticker["symbol"].split("-") 
-              target = "USDT"
-            end
+            base, target = ticker["symbol"].split("-") 
+            next if ticker["symbol"].include?("USDT") || ticker["symbol"].include?("PERP")
+            target = "USDT"
 
             Cryptoexchange::Models::MarketPair.new(
               base: base,

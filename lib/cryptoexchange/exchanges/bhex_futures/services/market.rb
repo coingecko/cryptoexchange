@@ -19,14 +19,9 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |ticker|
-            next if ticker["symbol"].include? "PERP"
-
-            if !ticker["symbol"].include? "-SWAP"    
-              base, target = ticker["symbol"].split("-SWAP-") 
-            else
-              base, target = ticker["symbol"].split("-") 
-              target = "USDT"
-            end
+            base, target = ticker["symbol"].split("-") 
+            next if ticker["symbol"].include?("USDT") || ticker["symbol"].include?("PERP")
+            target = "USDT"
             
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
@@ -51,7 +46,7 @@ module Cryptoexchange::Exchanges
           ticker.last      = NumericHelper.to_d(output['lastPrice'])
           ticker.high      = NumericHelper.to_d(output['highPrice'])
           ticker.low       = NumericHelper.to_d(output['lowPrice'])
-          ticker.volume    = NumericHelper.to_d(output['volume'])
+          ticker.volume    = NumericHelper.flip_volume(NumericHelper.to_d(output['volume']), ticker.last)
           ticker.timestamp = nil
           ticker.payload   = output
           ticker

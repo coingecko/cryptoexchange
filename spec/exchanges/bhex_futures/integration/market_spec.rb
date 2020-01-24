@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'BhexFutures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:btc_swap_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: 'bhex_futures', contract_interval: "perpetual", inst_id: "BTC-SWAP-USDT") }
+  let(:btc_swap_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: 'bhex_futures', contract_interval: "perpetual", inst_id: "BTC-SWAP") }
 
   it 'fetch pairs' do
     pairs = client.pairs('bhex_futures')
@@ -17,12 +17,12 @@ RSpec.describe 'BhexFutures integration specs' do
   end
 
   it 'fetch futures ticker' do
-    ticker = client.ticker(btc_swap_usdt_pair)
+    ticker = client.ticker(btc_swap_pair)
 
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USDT'
     expect(ticker.market).to eq 'bhex_futures'
-    expect(ticker.inst_id).to eq 'BTC-SWAP-USDT'
+    expect(ticker.inst_id).to eq 'BTC-SWAP'
     expect(ticker.last).to be_a Numeric
     expect(ticker.low).to be_a Numeric
     expect(ticker.high).to be_a Numeric
@@ -33,7 +33,7 @@ RSpec.describe 'BhexFutures integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(btc_swap_usdt_pair)
+    order_book = client.order_book(btc_swap_pair)
 
     expect(order_book.base).to eq 'BTC'
     expect(order_book.target).to eq 'USDT'
@@ -50,7 +50,7 @@ RSpec.describe 'BhexFutures integration specs' do
   end
 
   it 'fetch trade' do
-    trades = client.trades(btc_swap_usdt_pair)
+    trades = client.trades(btc_swap_pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty
@@ -66,7 +66,7 @@ RSpec.describe 'BhexFutures integration specs' do
   end  
 
   it 'fetch contract stat' do
-    contract_stat = client.contract_stat(btc_swap_usdt_pair)
+    contract_stat = client.contract_stat(btc_swap_pair)
 
     expect(contract_stat.base).to eq 'BTC'
     expect(contract_stat.target).to eq 'USDT'
