@@ -5,7 +5,7 @@
 Cryptoexchange is a rubygem for ruby developers to interact with over 200+ cryptocurrency exchange market data APIs in a single library.
 
 ## Installation
-
+ 
 Add this line to your application's Gemfile:
 
 ```ruby
