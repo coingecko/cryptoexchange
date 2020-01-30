@@ -25,7 +25,6 @@ module Cryptoexchange::Exchanges
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
                             target: target,
-                            inst_id: ticker["id"],
                             market: Etorox::Market::NAME
                           )
 
