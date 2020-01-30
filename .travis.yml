@@ -1,8 +1,9 @@
-sudo: false
 language: ruby
+os: linux
+dist: xenial
 rvm:
   - 2.4.6
   - 2.5.7
 before_install:
   - gem uninstall -v '>= 2' -i $(rvm gemdir)@global -ax bundler || true
-  - gem install bundler -v 1.17.0
+  - gem install bundler -v 2.1.4
