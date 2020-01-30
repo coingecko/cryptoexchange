@@ -50,6 +50,7 @@ Or install it yourself as:
 | Beaxy             | Y       | Y [x]      | Y       |         | Y           | Y        | beaxy             |       |
 | Bgogo             | Y       | Y [x]      | Y [limit: 20]     |         | Y           | Y        | bgogo             |       |
 | Bhex              | Y       | Y          | Y       |         | Y           | Y        | bhex              |       |
+| Bibo              | Y       | Y [x]      | Y       |         | Y           | Y        | bibo              |       |
 | Bibox             | Y       | Y [x]      | Y [limit: 200]    |         | Y           | Y        | bibox             |       |
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
 | BigONE            | Y       | Y [x]      | Y       |         | Y           | Y        | bigone            |       |

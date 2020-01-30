@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bibo.gold/api/v1/allticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bibo.gold
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jan 2020 02:04:39 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d5fe42a4e509f29d64621e396890d93ce1580349878; expires=Sat, 29-Feb-20
+        02:04:38 GMT; path=/; domain=.bibo.gold; HttpOnly; SameSite=Lax; Secure
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, HEAD, PUT
+      Access-Control-Max-Age:
+      - '3600'
+      Access-Control-Allow-Headers:
+      - Accept, Origin, X-Requested-With, Content-Type, Last-Modified, Access-Control-Request-Headers,
+        Access-Control-Allow-Origin, If-Modified-Since, token, language
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 55cfe0577c73dd52-KUL
+    body:
+      encoding: UTF-8
+      string: '{"date":"1580349879","ticker":[{"symbol":"btc_usdt","buy":"8568.93","high":"9024.11","last":"8960.73","low":"8952.48","sell":"9291.39","change":"-0.0019","vol":"1.955859"},{"symbol":"eth_usdt","buy":"160.64","high":"169.97","last":"167.51","low":"168.42","sell":"175","change":"-0.0101","vol":"202.504"},{"symbol":"eth_btc","buy":"0.017743","high":"0.019023","last":"0.018716","low":"0.018635","sell":"0.020063","change":"-0.0161","vol":"195.48"},{"symbol":"ktc_btc","buy":"","high":"0","last":"0","low":"0","sell":"","change":"","vol":"0"},{"symbol":"eos_btc","buy":"0.00039772","high":"0.00042855","last":"0.00042021","low":"0.00041501","sell":"0.00044403","change":"0.0065","vol":"1956.45"},{"symbol":"ktc_usdt","buy":"1.222","high":"1.3112","last":"1.2215","low":"1.22","sell":"1.3112","change":"-0.0684","vol":"572.847179682733374008"},{"symbol":"vet_btc","buy":"0.0000006171","high":"0.0000006548","last":"0.0000006403","low":"0.0000006428","sell":"0.0000006659","change":"-0.0131","vol":"213805"},{"symbol":"vtho_btc","buy":"0.000000011","high":"0","last":"0","low":"0","sell":"","change":"","vol":"0"},{"symbol":"vet_eth","buy":"0.00003263","high":"0.00003456","last":"0.00003413","low":"0.00003376","sell":"0.00003781","change":"0.0053","vol":"211359"},{"symbol":"ltc_usdt","buy":"55.11","high":"58.98","last":"58.69","low":"58","sell":"61.19","change":"0","vol":"20.7305"},{"symbol":"ltc_eth","buy":"0.3173","high":"0.35149","last":"0.33853","low":"0.33907","sell":"0.36753","change":"-0.0343","vol":"20.829"},{"symbol":"dash_eth","buy":"0.65517","high":"0.66588","last":"0.66588","low":"0.62922","sell":"0.75952","change":"0.0582","vol":"0.004"},{"symbol":"dash_usdt","buy":"113.22","high":"0","last":"0","low":"0","sell":"131.75","change":"","vol":"0"},{"symbol":"eos_usdt","buy":"3.6659","high":"3.8017","last":"3.7229","low":"3.6839","sell":"3.8405","change":"-0.0063","vol":"200.085"},{"symbol":"eos_eth","buy":"0.02113056","high":"0.02256734","last":"0.02210716","low":"0.02218608","sell":"0.02337959","change":"-0.0059","vol":"210.74"},{"symbol":"vtho_eth","buy":"0.00000001","high":"0","last":"0","low":"0","sell":"0.000002","change":"","vol":"0"},{"symbol":"vtho_usdt","buy":"0.00014","high":"0","last":"0","low":"0","sell":"0.00048","change":"","vol":"0"},{"symbol":"trx_eth","buy":"0.00009704","high":"0.00010751","last":"0.0001056","low":"0.0001043","sell":"0.00011331","change":"0.0124","vol":"580308"},{"symbol":"trx_usdt","buy":"0.016881","high":"0.019955","last":"0.018317","low":"0.017266","sell":"0.019553","change":"0.0525","vol":"660594.03483171576139395"},{"symbol":"hot_usdt","buy":"0.00061","high":"0.00064","last":"0.00064","low":"0.00063","sell":"0.0007","change":"0.0158","vol":"215215"},{"symbol":"hot_eth","buy":"0.00000349","high":"0.00000379","last":"0.00000374","low":"0.00000365","sell":"0.00000404","change":"0","vol":"198540"},{"symbol":"snt_usdt","buy":"0.0005","high":"0","last":"0","low":"0","sell":"","change":"","vol":"0"},{"symbol":"snt_eth","buy":"0.0000586","high":"0.00006379","last":"0.00006217","low":"0.00006236","sell":"0.00006664","change":"-0.0152","vol":"201820"},{"symbol":"bat_usdt","buy":"0.202","high":"0.2204","last":"0.2139","low":"0.216","sell":"0.2294","change":"-0.0263","vol":"19545"},{"symbol":"bat_eth","buy":"0.00119818","high":"0.00128754","last":"0.00130117","low":"0.00126173","sell":"0.00134791","change":"0.015","vol":"20985"},{"symbol":"omg_usdt","buy":"0.7689","high":"0.8682","last":"0.8122","low":"0.8037","sell":"0.8959","change":"-0.02","vol":"2235.85"},{"symbol":"omg_eth","buy":"0.0044","high":"0.004798","last":"0.004707","low":"0.004606","sell":"0.005092","change":"-0.0107","vol":"2235.35"},{"symbol":"beam_usdt","buy":"0.6","high":"0.6179","last":"0.6011","low":"0.6119","sell":"0.628","change":"-0.0202","vol":"217.04"},{"symbol":"beam_eth","buy":"0.00288","high":"0","last":"0","low":"0","sell":"0.099996","change":"","vol":"0"},{"symbol":"rttb_usdt","buy":"0.014718","high":"0","last":"0","low":"0","sell":"0.032888","change":"","vol":"0"},{"symbol":"zxt_usdt","buy":"0.002808","high":"0.003088","last":"0.0029","low":"0.0029","sell":"0.003948","change":"-0.0608","vol":"60"},{"symbol":"ktc_eth","buy":"0.0070001","high":"0.008","last":"0.0070001","low":"0.0070001","sell":"0.008","change":"-0.1249","vol":"0.05"}]}'
+    http_version: 
+  recorded_at: Thu, 30 Jan 2020 02:04:39 GMT
+recorded_with: VCR 4.0.0
