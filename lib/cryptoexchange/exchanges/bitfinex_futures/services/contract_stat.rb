@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
           contract_stat.base      = market_pair.base
           contract_stat.target    = market_pair.target
           contract_stat.market    = BitfinexFutures::Market::NAME
-          contract_stat.open_interest = nil
+          contract_stat.open_interest = output[18].to_f
           contract_stat.index     = output[15].to_f
           contract_stat.index_identifier = nil
           contract_stat.index_name = nil

@@ -64,7 +64,7 @@ RSpec.describe 'BitfinexFutures integration specs' do
       expect(contract_stat.index).to be_a Numeric
       expect(contract_stat.index_identifier).to be nil
       expect(contract_stat.index_name).to be nil
-      expect(contract_stat.open_interest).to be nil
+      expect(contract_stat.open_interest).to be_a Numeric
       expect(contract_stat.timestamp).to be nil
 
       expect(contract_stat.payload).to_not be nil
