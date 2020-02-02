@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitubu.com/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitubu.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 24 Jan 2020 09:58:14 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3054'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7217711dbe9b4b94aef738b7cac763291579859893; expires=Sun, 23-Feb-20
+        09:58:13 GMT; path=/; domain=.bitubu.com; HttpOnly; SameSite=Lax; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Version:
+      - HTTP/1.0
+      Host:
+      - bitubu.com
+      X-Forwarded-For:
+      - 124.82.12.43, 172.69.135.221
+      X-Forwarded-Proto:
+      - http
+      X-Real-Ip:
+      - 172.69.135.221
+      X-Forwarded-Ssl:
+      - 'on'
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - MY
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Cf-Connecting-Ip:
+      - 124.82.12.43
+      Cdn-Loop:
+      - cloudflare
+      Etag:
+      - W/"76c51a8b963c06625fabaf01b1956239"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8de33aae-0d7f-4e46-814e-2dcacce19214
+      X-Runtime:
+      - '0.019075'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 55a125cddfaddd06-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"ltcbtc","name":"LTC/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"ltc"},{"id":"dashbtc","name":"DASH/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"dash"},{"id":"ethbtc","name":"ETH/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"eth"},{"id":"btgbtc","name":"BTG/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"btg"},{"id":"ububtc","name":"UBU/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"ubu"},{"id":"dgbbtc","name":"DGB/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"dgb"},{"id":"dogebtc","name":"DOGE/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"doge"},{"id":"shmnbtc","name":"SHMN/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"shmn"},{"id":"viabtc","name":"VIA/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"via"},{"id":"wavesbtc","name":"WAVES/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"waves"},{"id":"wecbtc","name":"WEC/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"wec"},{"id":"sccbtc","name":"SCC/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"scc"},{"id":"neobtc","name":"NEO/BTC","ask_precision":8,"bid_precision":8,"bid_unit":"btc","ask_unit":"neo"},{"id":"ltceth","name":"LTC/ETH","ask_precision":8,"bid_precision":8,"bid_unit":"eth","ask_unit":"ltc"},{"id":"dasheth","name":"DASH/ETH","ask_precision":8,"bid_precision":8,"bid_unit":"eth","ask_unit":"dash"},{"id":"ubueth","name":"UBU/ETH","ask_precision":8,"bid_precision":8,"bid_unit":"eth","ask_unit":"ubu"},{"id":"weceth","name":"WEC/ETH","ask_precision":8,"bid_precision":8,"bid_unit":"eth","ask_unit":"wec"},{"id":"btgeth","name":"BTG/ETH","ask_precision":6,"bid_precision":6,"bid_unit":"eth","ask_unit":"btg"},{"id":"waveseth","name":"WAVES/ETH","ask_precision":6,"bid_precision":6,"bid_unit":"eth","ask_unit":"waves"},{"id":"neoeth","name":"NEO/ETH","ask_precision":8,"bid_precision":8,"bid_unit":"eth","ask_unit":"neo"},{"id":"btcusdt","name":"BTC/USDT","ask_precision":8,"bid_precision":2,"bid_unit":"usdt","ask_unit":"btc"},{"id":"ethusdt","name":"ETH/USDT","ask_precision":8,"bid_precision":2,"bid_unit":"usdt","ask_unit":"eth"},{"id":"ltcusdt","name":"LTC/USDT","ask_precision":8,"bid_precision":2,"bid_unit":"usdt","ask_unit":"ltc"},{"id":"dashusdt","name":"DASH/USDT","ask_precision":8,"bid_precision":2,"bid_unit":"usdt","ask_unit":"dash"},{"id":"btgusdt","name":"BTG/USDT","ask_precision":8,"bid_precision":2,"bid_unit":"usdt","ask_unit":"btg"},{"id":"dogeusdt","name":"DOGE/USDT","ask_precision":8,"bid_precision":8,"bid_unit":"usdt","ask_unit":"doge"},{"id":"wavesusdt","name":"WAVES/USDT","ask_precision":8,"bid_precision":4,"bid_unit":"usdt","ask_unit":"waves"},{"id":"shmnusdt","name":"SHMN/USDT","ask_precision":8,"bid_precision":8,"bid_unit":"usdt","ask_unit":"shmn"},{"id":"neousdt","name":"NEO/USDT","ask_precision":8,"bid_precision":3,"bid_unit":"usdt","ask_unit":"neo"}]'
+    http_version: 
+  recorded_at: Fri, 24 Jan 2020 09:58:14 GMT
+recorded_with: VCR 4.0.0
