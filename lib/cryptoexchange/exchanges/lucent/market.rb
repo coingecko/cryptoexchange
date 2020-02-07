@@ -1,8 +1,8 @@
 module Cryptoexchange::Exchanges
-  module Cezex
+  module Lucent
     class Market < Cryptoexchange::Models::Market
-      NAME = 'cezex'
-      API_URL = 'https://beta.cezex.io/api/v2'
+      NAME = 'lucent'
+      API_URL = 'https://lucent.exchange/api/v2'
     end
   end
 end
