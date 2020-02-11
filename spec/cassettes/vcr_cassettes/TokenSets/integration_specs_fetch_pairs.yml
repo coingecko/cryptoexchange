@@ -1,0 +1,179 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tokensets.com/v1/rebalancing_sets/explore
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.tokensets.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Feb 2020 10:55:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7a6e97f92bb274ec1a6cb56836f1edfe1580813757; expires=Thu, 05-Mar-20
+        10:55:57 GMT; path=/; domain=.tokensets.com; HttpOnly; SameSite=Lax
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"ab7df45502db86f796f91e6a7175277d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0b0cd862-7a44-42a5-b162-1f41b5993f30
+      X-Runtime:
+      - '1.181236'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 55fc1d820807c318-SIN
+    body:
+      encoding: UTF-8
+      string: '{"detailed_rebalancing_sets":[{"id":"ethbtc26emaco","strategy":"moving_averages","symbol":"ETHBTCEMACO","name":"ETH/BTC
+        EMA Ratio Trading Set","image":"https://set-core.s3.amazonaws.com/img/rebalancing_set_icons/ethbtc-ema-ratio-set.svg","eth_index":{"set_price":"0.55023","market_cap":"341.25309","daily_percent_change":"0%","week_percent_change":"-0.65%","month_percent_change":"-6.52%","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-0.76%"},"usd_index":{"set_price":"101.99","market_cap":"63254.67","daily_percent_change":"-1.26%","week_percent_change":"8.35%","month_percent_change":"29.08%","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"4.54%"}},{"id":"ethbtcrsi7030","strategy":"moving_averages","symbol":"ETHBTCRSI","name":"ETH/BTC
+        RSI Ratio Trading Set","image":"https://set-core.s3.amazonaws.com/img/rebalancing_set_icons/ethbtc-rsi-ratio-set.svg","eth_index":{"set_price":"0.6872","market_cap":"885.52576","daily_percent_change":"0%","week_percent_change":"0%","month_percent_change":"-5.73%","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"4.21%"},"usd_index":{"set_price":"127.38","market_cap":"164141.05","daily_percent_change":"-1.26%","week_percent_change":"9.06%","month_percent_change":"30.18%","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"32.56%"}},{"id":"ethrsiapy","strategy":"moving_averages","symbol":"ETHRSIAPY","name":"ETH
+        RSI 60/40 Yield Set","image":"https://set-core.s3.amazonaws.com/img/rebalancing_set_icons/eth-rsi-40-60-ctoken-set.svg","eth_index":{"set_price":"0.70317","market_cap":"452.32811","daily_percent_change":"0%","week_percent_change":"-0.01%","month_percent_change":"-5.58%","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"2.23%"},"usd_index":{"set_price":"130.34","market_cap":"83843.54","daily_percent_change":"-1.26%","week_percent_change":"9.05%","month_percent_change":"30.39%","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"30.64%"}},{"id":"ethrsi6040","strategy":"moving_averages","symbol":"ETHRSI6040","name":"ETH
+        RSI 60/40 Crossover Set","image":"https://set-core.s3.amazonaws.com/img/rebalancing_set_icons/eth-rsi-40-60-set.svg","eth_index":{"set_price":"0.70269","market_cap":"970.02215","daily_percent_change":"0%","week_percent_change":"0%","month_percent_change":"-5.68%","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"29.47%"},"usd_index":{"set_price":"130.25","market_cap":"179803.31","daily_percent_change":"-1.26%","week_percent_change":"9.06%","month_percent_change":"30.25%","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"29.95%"}},{"id":"eth12emaco","strategy":"moving_averages","symbol":"ETH12EMACO","name":"ETH
+        12 Day EMA Crossover Set","image":"https://set-core.s3.amazonaws.com/img/rebalancing_set_icons/eth-12-day-exponential-moving-average-set.svg","eth_index":{"set_price":"0.97642","market_cap":"1033.9692","daily_percent_change":"0%","week_percent_change":"-2.77%","month_percent_change":"-14.64%","three_month_percent_change":"0.29%","year_percent_change":"-","cumulative_change":"-2.36%"},"usd_index":{"set_price":"180.99","market_cap":"191656.53","daily_percent_change":"-1.26%","week_percent_change":"6.04%","month_percent_change":"17.87%","three_month_percent_change":"2.18%","year_percent_change":"-","cumulative_change":"0.08%"}},{"id":"eth26emaco","strategy":"moving_averages","symbol":"ETH26EMACO","name":"ETH
+        26 Day EMA Crossover Set","image":"https://set-core.s3.amazonaws.com/img/rebalancing_set_icons/eth-26-day-exponential-moving-average-set.svg","eth_index":{"set_price":"1.19287","market_cap":"1743.2206","daily_percent_change":"0%","week_percent_change":"0%","month_percent_change":"-1.75%","three_month_percent_change":"31.21%","year_percent_change":"-","cumulative_change":"19.29%"},"usd_index":{"set_price":"221.11","market_cap":"323123.37","daily_percent_change":"-1.26%","week_percent_change":"9.06%","month_percent_change":"35.68%","three_month_percent_change":"33.68%","year_percent_change":"-","cumulative_change":"6.35%"}},{"id":"ieth20smaco","strategy":"inverse_benchmark","symbol":"iETH20SMACO","name":"Inverse
+        ETH 20 Day MA Crossover Set","image":"https://set-core.s3.amazonaws.com/img/rebalancing_set_icons/inverse-eth-20-day-moving-average-set.svg","eth_index":{"set_price":"0.75701","market_cap":"6.34566","daily_percent_change":"1.27%","week_percent_change":"-8.31%","month_percent_change":"-27.58%","three_month_percent_change":"-29.24%","year_percent_change":"-","cumulative_change":"-24.3%"},"usd_index":{"set_price":"140.32","market_cap":"1176.23","daily_percent_change":"0%","week_percent_change":"0%","month_percent_change":"0%","three_month_percent_change":"-27.91%","year_percent_change":"-","cumulative_change":"-12.88%"}},{"id":"eth20smaco","strategy":"moving_averages","symbol":"ETH20SMACO","name":"ETH
+        20 Day MA Crossover Set","image":"https://set-core.s3.amazonaws.com/img/rebalancing_set_icons/eth-20-day-moving-average-set.svg","eth_index":{"set_price":"1.52714","market_cap":"4488.69084","daily_percent_change":"0%","week_percent_change":"0%","month_percent_change":"0%","three_month_percent_change":"35.53%","year_percent_change":"-","cumulative_change":"52.71%"},"usd_index":{"set_price":"283.07","market_cap":"832023.73","daily_percent_change":"-1.26%","week_percent_change":"9.06%","month_percent_change":"38.09%","three_month_percent_change":"38.08%","year_percent_change":"-","cumulative_change":"-8.06%"}},{"id":"ethminvol","strategy":"buy_the_dip","symbol":"ETHMINVOL","name":"ETH
+        Range Bound Min Volatility Set","image":"https://s3.amazonaws.com/set-core/img/rebalancing_set_icons/eth_buy_the_dip.svg","eth_index":{"set_price":"0.44098","market_cap":"208.92478","daily_percent_change":"0.68%","week_percent_change":"-4.01%","month_percent_change":"-14.13%","three_month_percent_change":"-0.13%","year_percent_change":"-","cumulative_change":"35.64%"},"usd_index":{"set_price":"81.74","market_cap":"38726.3","daily_percent_change":"-0.58%","week_percent_change":"4.69%","month_percent_change":"18.58%","three_month_percent_change":"1.76%","year_percent_change":"-","cumulative_change":"-20.57%"}},{"id":"btcminvol","strategy":"buy_the_dip","symbol":"BTCMINVOL","name":"BTC
+        Range Bound Min Volatility Set","image":"https://s3.amazonaws.com/set-core/img/rebalancing_set_icons/btc_buy_the_dip.svg","eth_index":{"set_price":"0.52816","market_cap":"284.81055","daily_percent_change":"0.61%","week_percent_change":"-7.01%","month_percent_change":"-18.88%","three_month_percent_change":"-1.71%","year_percent_change":"-","cumulative_change":"49.76%"},"usd_index":{"set_price":"97.9","market_cap":"52792.48","daily_percent_change":"-0.66%","week_percent_change":"1.42%","month_percent_change":"12.03%","three_month_percent_change":"0.14%","year_percent_change":"-","cumulative_change":"-8.14%"}},{"id":"eth50smaco","strategy":"moving_averages","symbol":"ETH50SMACO","name":"ETH
+        50 Day MA Crossover Set","image":"https://set-core.s3.amazonaws.com/img/rebalancing_set_icons/eth-50-day-moving-average-set.svg","eth_index":{"set_price":"0.86076","market_cap":"396.65568","daily_percent_change":"0%","week_percent_change":"0%","month_percent_change":"-6.37%","three_month_percent_change":"18.61%","year_percent_change":"-","cumulative_change":"-15.4%"},"usd_index":{"set_price":"159.55","market_cap":"73524.1","daily_percent_change":"-1.26%","week_percent_change":"9.06%","month_percent_change":"29.29%","three_month_percent_change":"20.84%","year_percent_change":"-","cumulative_change":"-7.18%"}},{"id":"ieth50smaco","strategy":"inverse_benchmark","symbol":"iETH50SMACO","name":"Inverse
+        ETH 50 Day MA Crossover Set","image":"https://set-core.s3.amazonaws.com/img/rebalancing_set_icons/inverse-eth-50-day-moving-average-set.svg","eth_index":{"set_price":"0.80238","market_cap":"0.47533","daily_percent_change":"1.27%","week_percent_change":"-8.31%","month_percent_change":"-23.07%","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-19.02%"},"usd_index":{"set_price":"148.73","market_cap":"88.11","daily_percent_change":"0%","week_percent_change":"0%","month_percent_change":"6.24%","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-20.57%"}},{"id":"ethlovol","strategy":"buy_the_dip","symbol":"ETHLOVOL","name":"ETH
+        Range Bound Low Volatility Set","image":"https://s3.amazonaws.com/set-core/img/rebalancing_set_icons/eth_buy_the_dip.svg","eth_index":{"set_price":"0.59117","market_cap":"115.93271","daily_percent_change":"0.64%","week_percent_change":"-4.18%","month_percent_change":"-13.91%","three_month_percent_change":"0.8%","year_percent_change":"-","cumulative_change":"3.65%"},"usd_index":{"set_price":"109.58","market_cap":"21489.29","daily_percent_change":"-0.63%","week_percent_change":"4.5%","month_percent_change":"18.89%","three_month_percent_change":"2.7%","year_percent_change":"-","cumulative_change":"16.75%"}},{"id":"btclovol","strategy":"buy_the_dip","symbol":"BTCLOVOL","name":"BTC
+        Range Bound Low Volatility Set","image":"https://s3.amazonaws.com/set-core/img/rebalancing_set_icons/btc_buy_the_dip.svg","eth_index":{"set_price":"0.75556","market_cap":"85.82461","daily_percent_change":"0.58%","week_percent_change":"-6.97%","month_percent_change":"-18.94%","three_month_percent_change":"-1.79%","year_percent_change":"-","cumulative_change":"28.17%"},"usd_index":{"set_price":"140.05","market_cap":"15908.45","daily_percent_change":"-0.68%","week_percent_change":"1.46%","month_percent_change":"11.93%","three_month_percent_change":"0.06%","year_percent_change":"-","cumulative_change":"44.37%"}},{"id":"ethhivol","strategy":"buy_the_dip","symbol":"ETHHIVOL","name":"ETH
+        Range Bound High Volatility Set","image":"https://s3.amazonaws.com/set-core/img/rebalancing_set_icons/eth_buy_the_dip.svg","eth_index":{"set_price":"0.60504","market_cap":"61.47052","daily_percent_change":"0.65%","week_percent_change":"-4.28%","month_percent_change":"-15.47%","three_month_percent_change":"-1.25%","year_percent_change":"-","cumulative_change":"9.92%"},"usd_index":{"set_price":"112.15","market_cap":"11394.17","daily_percent_change":"-0.62%","week_percent_change":"4.39%","month_percent_change":"16.73%","three_month_percent_change":"0.61%","year_percent_change":"-","cumulative_change":"15.57%"}},{"id":"btchivol","strategy":"buy_the_dip","symbol":"BTCHIVOL","name":"BTC
+        Range Bound High Volatility Set","image":"https://s3.amazonaws.com/set-core/img/rebalancing_set_icons/btc_buy_the_dip.svg","eth_index":{"set_price":"0.7725","market_cap":"110.47131","daily_percent_change":"0.59%","week_percent_change":"-6.98%","month_percent_change":"-18.58%","three_month_percent_change":"-0.14%","year_percent_change":"-","cumulative_change":"38.86%"},"usd_index":{"set_price":"143.19","market_cap":"20476.96","daily_percent_change":"-0.67%","week_percent_change":"1.45%","month_percent_change":"12.43%","three_month_percent_change":"1.74%","year_percent_change":"-","cumulative_change":"45.99%"}},{"id":"btceth5050","strategy":"buy_and_hold","symbol":"BTCETH5050","name":"BTC
+        ETH Equal Weight Set","image":"https://set-core.s3.amazonaws.com/img/rebalancing_set_icons/btceth_buy_and_hold.svg","eth_index":{"set_price":"1.46375","market_cap":"236.92717","daily_percent_change":"-0.06%","week_percent_change":"-2.75%","month_percent_change":"-4.82%","three_month_percent_change":"-1.07%","year_percent_change":"-","cumulative_change":"26.06%"},"usd_index":{"set_price":"271.32","market_cap":"43916.82","daily_percent_change":"-1.31%","week_percent_change":"6.06%","month_percent_change":"31.43%","three_month_percent_change":"0.8%","year_percent_change":"-","cumulative_change":"-8.4%"}},{"id":"btceth7525","strategy":"buy_and_hold","symbol":"BTCETH7525","name":"BTC
+        ETH 75%/25% Weight Set","image":"https://s3.amazonaws.com/set-core/img/rebalancing_set_icons/btc_buy_and_hold.svg","eth_index":{"set_price":"0.85153","market_cap":"743.86865","daily_percent_change":"-0.08%","week_percent_change":"-4.05%","month_percent_change":"-7.1%","three_month_percent_change":"-1.66%","year_percent_change":"-","cumulative_change":"50.89%"},"usd_index":{"set_price":"157.84","market_cap":"137883.49","daily_percent_change":"-1.34%","week_percent_change":"4.64%","month_percent_change":"28.28%","three_month_percent_change":"0.19%","year_percent_change":"-","cumulative_change":"58.65%"}},{"id":"ethbtc7525","strategy":"buy_and_hold","symbol":"ETHBTC7525","name":"ETH
+        BTC 75%/25% Weight Set","image":"https://s3.amazonaws.com/set-core/img/rebalancing_set_icons/eth_buy_and_hold.svg","eth_index":{"set_price":"0.65521","market_cap":"303.68823","daily_percent_change":"-0.03%","week_percent_change":"-1.34%","month_percent_change":"-2.4%","three_month_percent_change":"-0.07%","year_percent_change":"-","cumulative_change":"17.33%"},"usd_index":{"set_price":"121.45","market_cap":"56291.65","daily_percent_change":"-1.28%","week_percent_change":"7.6%","month_percent_change":"34.78%","three_month_percent_change":"1.81%","year_percent_change":"-","cumulative_change":"23.36%"}},{"id":"ethmacoapy","strategy":"moving_averages","symbol":"ETHMACOAPY","name":"ETH
+        20 Day MA Crossover Yield Set","image":"https://set-core.s3.amazonaws.com/img/rebalancing_set_icons/eth-20-day-moving-average-ctoken-set.svg","eth_index":{"set_price":"1.47367","market_cap":"2592.98286","daily_percent_change":"0%","week_percent_change":"0%","month_percent_change":"0%","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-10.77%"},"usd_index":{"set_price":"273.16","market_cap":"480635.3","daily_percent_change":"-1.26%","week_percent_change":"9.06%","month_percent_change":"38.09%","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"32.22%"}},{"id":"ethemaapy","strategy":"moving_averages","symbol":"ETHEMAAPY","name":"ETH
+        26 EMA Crossover Yield Set","image":"https://set-core.s3.amazonaws.com/img/rebalancing_set_icons/eth-26-day-exponential-moving-average-set-ctoken.svg","eth_index":{"set_price":"1.19519","market_cap":"1238.04806","daily_percent_change":"0%","week_percent_change":"0%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"0%"},"usd_index":{"set_price":"221.54","market_cap":"229484.59","daily_percent_change":"-1.26%","week_percent_change":"9.06%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"31.77%"}}]}'
+    http_version: 
+  recorded_at: Tue, 04 Feb 2020 10:55:59 GMT
+- request:
+    method: get
+    uri: https://api.tokensets.com/v1/rebalancing_sets/explore?type=trading_pool
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.tokensets.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Feb 2020 10:56:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db31eac3212ed23af94325025fc133e311580813760; expires=Thu, 05-Mar-20
+        10:56:00 GMT; path=/; domain=.tokensets.com; HttpOnly; SameSite=Lax
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"792ba9a3f41dc7e82acb4fe9c7cb261a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 13d27c12-fb76-43c0-be9d-20116e74189c
+      X-Runtime:
+      - '0.306997'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Vary:
+      - Origin
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 55fc1d91cfe6e268-SIN
+    body:
+      encoding: UTF-8
+      string: '{"detailed_rebalancing_sets":[{"id":"btcmoonx","strategy":"user_defined","symbol":"BTCMOONX","name":"BTC
+        Moonshot X Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/btc_moonshot_x.png","eth_index":{"set_price":"0.54645","market_cap":"51.6101","daily_percent_change":"0.13%","week_percent_change":"-5.23%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-11.1%"},"usd_index":{"set_price":"101.29","market_cap":"9566.45","daily_percent_change":"-1.13%","week_percent_change":"3.36%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"0.42%"},"follower_count":36,"holder_count":30,"operator":{"first_name":"Aaron","last_name":"Kruger","image_url":"https://api.typeform.com/responses/files/1ab0451722e7e6b581dad6e644a7f1e22a6128fe03dc603da7452878b3c6e91e/AaronKruger.jpg","username":"Aaron_Kruger"},"entry_fee_percentage":"0.75%"},{"id":"evol","strategy":"user_defined","symbol":"EVOL","name":"ETH
+        Volatility Adjusted Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/eth_volatility_adjusted.png","eth_index":{"set_price":"0.61389","market_cap":"38.03636","daily_percent_change":"0%","week_percent_change":"0%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"0%"},"usd_index":{"set_price":"113.79","market_cap":"7050.42","daily_percent_change":"-1.26%","week_percent_change":"9.06%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"12.95%"},"follower_count":15,"holder_count":12,"operator":{"first_name":"Mujo","last_name":"Seriel","image_url":"https://set-core.s3.amazonaws.com/img/social_traders/mujo_seriel.png","username":"Mujo_Seriel"},"entry_fee_percentage":"0%"},{"id":"btcusdcrsi","strategy":"user_defined","symbol":"BTCUSDCRSI","name":"WBTC
+        USDC RSI Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/wbtc_usdc_rsi.png","eth_index":{"set_price":"0.52002","market_cap":"14.62139","daily_percent_change":"0.85%","week_percent_change":"-7.8%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-14.01%"},"usd_index":{"set_price":"96.39","market_cap":"2710.22","daily_percent_change":"-0.41%","week_percent_change":"0.55%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-2.87%"},"follower_count":14,"holder_count":12,"operator":{"first_name":"Jeremy","last_name":"Guzman","image_url":"https://set-core.s3.amazonaws.com/img/social_traders/jeremy_guzman.jpeg","username":"JeremyGuzman"},"entry_fee_percentage":"1%"},{"id":"flexethbtc","strategy":"user_defined","symbol":"FLEXETHBTC","name":"FlexETH/BTC
+        Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/flex_eth_btc.png","eth_index":{"set_price":"0.60585","market_cap":"44.69682","daily_percent_change":"0%","week_percent_change":"0%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-1.28%"},"usd_index":{"set_price":"112.3","market_cap":"8285.0","daily_percent_change":"-1.26%","week_percent_change":"9.06%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"11.51%"},"follower_count":23,"holder_count":18,"operator":{"first_name":"Fidelitas","last_name":"Lex","image_url":"https://set-core.s3.amazonaws.com/img/social_traders/fidelitas.png","username":"FidelitasLex"},"entry_fee_percentage":"3%"},{"id":"flexbtc","strategy":"user_defined","symbol":"FLEXBTC","name":"FlexBTC
+        Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/flex_btc.png","eth_index":{"set_price":"0.5437","market_cap":"16.53484","daily_percent_change":"0.09%","week_percent_change":"-9.06%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-10.73%"},"usd_index":{"set_price":"100.78","market_cap":"3064.9","daily_percent_change":"-1.17%","week_percent_change":"-0.82%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"0.84%"},"follower_count":23,"holder_count":14,"operator":{"first_name":"Fidelitas","last_name":"Lex","image_url":"https://set-core.s3.amazonaws.com/img/social_traders/fidelitas.png","username":"FidelitasLex"},"entry_fee_percentage":"3%"},{"id":"ric","strategy":"user_defined","symbol":"RIC","name":"Target
+        2022 Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/target_2022.png","eth_index":{"set_price":"0.59063","market_cap":"12.32235","daily_percent_change":"-0.06%","week_percent_change":"-2.71%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-2.75%"},"usd_index":{"set_price":"109.48","market_cap":"2284.07","daily_percent_change":"-1.32%","week_percent_change":"6.11%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"6.2%"},"follower_count":4,"holder_count":5,"operator":{"first_name":"Richard","last_name":"Burton","image_url":"https://set-core.s3.amazonaws.com/img/social_traders/richard_burton.jpg","username":"ricburton"},"entry_fee_percentage":"1%"},{"id":"tls","strategy":"user_defined","symbol":"SGW","name":"Stacking
+        Gwei Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/trustless_state.png","eth_index":{"set_price":"0.58087","market_cap":"36.58444","daily_percent_change":"0%","week_percent_change":"0%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-1.85%"},"usd_index":{"set_price":"107.67","market_cap":"6781.29","daily_percent_change":"-1.26%","week_percent_change":"9.07%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"7.18%"},"follower_count":19,"holder_count":14,"operator":{"first_name":"David","last_name":"Hoffman","image_url":"https://api.typeform.com/responses/files/e3c3f272f25ae004fc3f8c5da4100336e11835ad5306305e8732ee171f8e5cee/29872207_10155570978082099_6403314767884768433_o__2_.jpg","username":"TrustlessState"},"entry_fee_percentage":"2%"},{"id":"bbe","strategy":"user_defined","symbol":"BBE","name":"BullBearEthereum
+        Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/bullbearethereum.png","eth_index":{"set_price":"0.55708","market_cap":"68.0798","daily_percent_change":"-0.01%","week_percent_change":"-","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"0%"},"usd_index":{"set_price":"103.26","market_cap":"12619.27","daily_percent_change":"-1.26%","week_percent_change":"-","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"3.12%"},"follower_count":16,"holder_count":12,"operator":{"first_name":"Sanz","last_name":"Prophet","image_url":"https://api.typeform.com/responses/files/6ab4f88877e58ea96d9c774eec7dea1858ed04f8f50bd932a74ed8d20c7ccb7d/IMG_5128_200x200.jpg","username":"sanzprophet"},"entry_fee_percentage":"0%"},{"id":"btcmoon","strategy":"user_defined","symbol":"BTCMOON","name":"BTC
+        Moonshot Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/btc_moonshot.png","eth_index":{"set_price":"0.54068","market_cap":"80.54694","daily_percent_change":"0.19%","week_percent_change":"-5.16%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-12.04%"},"usd_index":{"set_price":"100.22","market_cap":"14930.18","daily_percent_change":"-1.07%","week_percent_change":"3.44%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-0.64%"},"follower_count":30,"holder_count":31,"operator":{"first_name":"Aaron","last_name":"Kruger","image_url":"https://api.typeform.com/responses/files/1ab0451722e7e6b581dad6e644a7f1e22a6128fe03dc603da7452878b3c6e91e/AaronKruger.jpg","username":"Aaron_Kruger"},"entry_fee_percentage":"0.75%"},{"id":"long","strategy":"user_defined","symbol":"LONG","name":"High
+        Conviction / Fundamentals Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/high_conviction_fundamentals.png","eth_index":{"set_price":"0.55929","market_cap":"10.64256","daily_percent_change":"-0.1%","week_percent_change":"-4.65%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-3.93%"},"usd_index":{"set_price":"103.67","market_cap":"1972.71","daily_percent_change":"-1.35%","week_percent_change":"3.99%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"4.91%"},"follower_count":9,"holder_count":9,"operator":{"first_name":"Michael","last_name":"Dunworth","image_url":"https://set-core.s3.amazonaws.com/img/social_traders/michael_dunworth.png","username":"michaeldunwort1"},"entry_fee_percentage":"5%"},{"id":"ichiema","strategy":"user_defined","symbol":"ICHIEMA","name":"12H
+        Ichimoku HA EMA Breakout Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/12h_ichimoku_ha_ema_breakout.png","eth_index":{"set_price":"0.54683","market_cap":"33.99325","daily_percent_change":"0.93%","week_percent_change":"-6.22%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-10.27%"},"usd_index":{"set_price":"101.36","market_cap":"6300.99","daily_percent_change":"-0.33%","week_percent_change":"2.28%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"1.36%"},"follower_count":18,"holder_count":12,"operator":{"first_name":"Eric","last_name":"Juta","image_url":"https://api.typeform.com/responses/files/877aac04c38bbc8f56d8e1b9b4ef5c1edead1c2f91e13cb2c2b4f3caa6d8a6d2/twitter_headshot.jpg","username":"ericjuta"},"entry_fee_percentage":"3%"},{"id":"flexeth","strategy":"user_defined","symbol":"FLEXETH","name":"FlexETH
+        Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/flex_eth.png","eth_index":{"set_price":"0.59894","market_cap":"41.30708","daily_percent_change":"0.06%","week_percent_change":"-0.4%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-1.68%"},"usd_index":{"set_price":"111.02","market_cap":"7656.68","daily_percent_change":"-1.2%","week_percent_change":"8.63%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"11.05%"},"follower_count":28,"holder_count":15,"operator":{"first_name":"Fidelitas","last_name":"Lex","image_url":"https://set-core.s3.amazonaws.com/img/social_traders/fidelitas.png","username":"FidelitasLex"},"entry_fee_percentage":"3%"},{"id":"ethmoonx","strategy":"user_defined","symbol":"ETHMOONX","name":"ETH
+        Moonshot X Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/eth_moonshot_x.png","eth_index":{"set_price":"0.54882","market_cap":"1547.10507","daily_percent_change":"0%","week_percent_change":"-8.57%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-11.69%"},"usd_index":{"set_price":"101.73","market_cap":"286771.4","daily_percent_change":"-1.26%","week_percent_change":"-0.28%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-0.25%"},"follower_count":246,"holder_count":313,"operator":{"first_name":"Aaron","last_name":"Kruger","image_url":"https://api.typeform.com/responses/files/1ab0451722e7e6b581dad6e644a7f1e22a6128fe03dc603da7452878b3c6e91e/AaronKruger.jpg","username":"Aaron_Kruger"},"entry_fee_percentage":"1.5%"},{"id":"inteth","strategy":"user_defined","symbol":"INTETH","name":"The
+        Intelligent ETH Trading Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/the_intelligent_eth_set.png","eth_index":{"set_price":"0.60909","market_cap":"227.35193","daily_percent_change":"0.01%","week_percent_change":"0%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"0%"},"usd_index":{"set_price":"112.9","market_cap":"42141.95","daily_percent_change":"-1.25%","week_percent_change":"9.06%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"12.96%"},"follower_count":56,"holder_count":54,"operator":{"first_name":"Andrew","last_name":"Wilkinson","image_url":"https://set-core.s3.amazonaws.com/img/social_traders/andrew_wilkinson.png","username":"TradespotSignals"},"entry_fee_percentage":"2.5%"},{"id":"intbtc","strategy":"user_defined","symbol":"INTBTC","name":"The
+        Intelligent BTC Trading Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/the_intelligent_btc_set.png","eth_index":{"set_price":"0.56733","market_cap":"51.40166","daily_percent_change":"-0.11%","week_percent_change":"-5.45%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-6.84%"},"usd_index":{"set_price":"105.16","market_cap":"9527.81","daily_percent_change":"-1.37%","week_percent_change":"3.12%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"5.23%"},"follower_count":26,"holder_count":20,"operator":{"first_name":"Andrew","last_name":"Wilkinson","image_url":"https://set-core.s3.amazonaws.com/img/social_traders/andrew_wilkinson.png","username":"TradespotSignals"},"entry_fee_percentage":"2.5%"},{"id":"ethusdadl4","strategy":"user_defined","symbol":"ETHUSDADL4","name":"ETHUSD
+        ADL 4H Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/ethusd_adl_4h.png","eth_index":{"set_price":"0.58038","market_cap":"164.08929","daily_percent_change":"0.58%","week_percent_change":"-4.04%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-5.68%"},"usd_index":{"set_price":"107.58","market_cap":"30415.59","daily_percent_change":"-0.68%","week_percent_change":"4.65%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"6.54%"},"follower_count":54,"holder_count":57,"operator":{"first_name":"Muhd","last_name":"Amrullah","image_url":"https://set-core.s3.amazonaws.com/img/social_traders/adl.png","username":"ADL"},"entry_fee_percentage":"2.5%"},{"id":"greed","strategy":"user_defined","symbol":"GREED","name":"Fear
+        \u0026 Greed Sentiment Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/cryptocat_greed_fear_index_set.png","eth_index":{"set_price":"0.60693","market_cap":"84.89547","daily_percent_change":"0%","week_percent_change":"0%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-0.95%"},"usd_index":{"set_price":"112.5","market_cap":"15736.22","daily_percent_change":"-1.26%","week_percent_change":"9.06%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"11.88%"},"follower_count":38,"holder_count":32,"operator":{"first_name":"Crypto","last_name":"Cat","image_url":"https://set-core.s3.amazonaws.com/img/social_traders/cryptocat.png","username":"CryptoCat"},"entry_fee_percentage":"0.1%"},{"id":"eth10k","strategy":"user_defined","symbol":"ETH10K","name":"ETH
+        Maximalist Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/eth_maxi.png","eth_index":{"set_price":"0.62133","market_cap":"16.21414","daily_percent_change":"0%","week_percent_change":"0%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"0%"},"usd_index":{"set_price":"115.17","market_cap":"3005.45","daily_percent_change":"-1.26%","week_percent_change":"9.06%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"12.96%"},"follower_count":4,"holder_count":2,"operator":{"first_name":"Anthony","last_name":"Sassano","image_url":"https://i.imgur.com/zKyuEIh.png","username":"Sassal"},"entry_fee_percentage":"3%"},{"id":"bbb","strategy":"user_defined","symbol":"BBB","name":"BullBearBitcoin
+        Set","image":"https://set-core.s3.amazonaws.com/img/social_trader_set_icons/bullbearbitcoin.png","eth_index":{"set_price":"0.53604","market_cap":"275.21546","daily_percent_change":"-0.11%","week_percent_change":"-7.01%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"-11.1%"},"usd_index":{"set_price":"99.36","market_cap":"51013.94","daily_percent_change":"-1.37%","week_percent_change":"1.42%","month_percent_change":"-","three_month_percent_change":"-","year_percent_change":"-","cumulative_change":"0.41%"},"follower_count":65,"holder_count":62,"operator":{"first_name":"Sanz","last_name":"Prophet","image_url":"https://api.typeform.com/responses/files/6ab4f88877e58ea96d9c774eec7dea1858ed04f8f50bd932a74ed8d20c7ccb7d/IMG_5128_200x200.jpg","username":"sanzprophet"},"entry_fee_percentage":"0%"}]}'
+    http_version: 
+  recorded_at: Tue, 04 Feb 2020 10:56:00 GMT
+recorded_with: VCR 4.0.0
