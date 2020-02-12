@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.namebase.io/api/v0/ticker/day?symbol=HNSBTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.namebase.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Ray:
+      - 563ae1b5ac98dddf-SIN
+      Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://cdn.segment.com/ https://js.intercomcdn.com/
+        https://widget.intercom.io/ https://platform.twitter.com/ https://www.fullstory.com/
+        https://www.google-analytics.com/ https://cdn.plaid.com/; img-src ''self''
+        data: https://app.namebase.io/ https://www.google-analytics.com/ https://static.intercomassets.com/
+        https://stats.g.doubleclick.net/; font-src ''self'' data: https://js.intercomcdn.com/;
+        frame-ancestors ''self''; style-src ''self'' ''unsafe-inline''; frame-src
+        ''self'' https://platform.twitter.com/; connect-src ''self'' https://app.namebase.io/
+        wss://app.namebase.io/ https://api.segment.io/ https://rs.fullstory.com/ https://*.intercom.io/
+        wss://*.intercom.io/ https://www.google-analytics.com/ https://stats.g.doubleclick.net/
+        https://ipinfo.io/; report-uri https://namebase.report-uri.com/r/d/csp/enforce;
+        report-to https://namebase.report-uri.com/r/d/csp/enforce;'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 12 Feb 2020 01:45:11 GMT
+      Etag:
+      - W/"16d-w0ZdLGKZMAEdf3ChLReds+rIVEg"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - AWSALB=eEKqyJ8TpMOMelEISakCA03Ot19YKU2zj+k5ujFTN6gJqq0dH28WDL5lcJhwIeWnhov1L+FOQWlUxKkpdxZMnqPuY1HIllF6EMvsWWTct+LwVvepQlgig6uDW4TN;
+        Expires=Wed, 19 Feb 2020 01:45:11 GMT; Path=/
+      - AWSALBCORS=eEKqyJ8TpMOMelEISakCA03Ot19YKU2zj+k5ujFTN6gJqq0dH28WDL5lcJhwIeWnhov1L+FOQWlUxKkpdxZMnqPuY1HIllF6EMvsWWTct+LwVvepQlgig6uDW4TN;
+        Expires=Wed, 19 Feb 2020 01:45:11 GMT; Path=/; SameSite=None; Secure
+      - __cfduid=d3bb18107a062cdafda3e1ad0313ef0481581471911; expires=Fri, 13-Mar-20
+        01:45:11 GMT; path=/; domain=.namebase.io; HttpOnly; SameSite=Lax
+      Strict-Transport-Security:
+      - max-age=7776000
+      X-Frame-Options:
+      - DENY
+      X-Ratelimit-Limit:
+      - '80'
+      X-Ratelimit-Remaining:
+      - '79'
+      X-Ratelimit-Reset:
+      - '1581471912'
+      Content-Length:
+      - '365'
+      Age:
+      - '0'
+      Connection:
+      - close
+      Vary:
+      - Origin
+      X-Nf-Request-Id:
+      - fb31d3d0-6e18-4b82-af28-f1b20125b1ed-10460103
+    body:
+      encoding: UTF-8
+      string: '{"volumeWeightedAveragePrice":"0.00005195","priceChange":"0.00001243","priceChangePercent":"26.1299","openPrice":"0.00004757","highPrice":"0.00006969","lowPrice":"0.00004044","closePrice":"0.00006000","volume":"148988.534109","quoteVolume":"7.74035009","openTime":1581385510001,"closeTime":1581471910000,"firstTradeId":7994,"lastTradeId":9738,"numberOfTrades":1745}'
+    http_version: 
+  recorded_at: Wed, 12 Feb 2020 01:45:10 GMT
+recorded_with: VCR 4.0.0

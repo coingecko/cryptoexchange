@@ -351,6 +351,7 @@ Or install it yourself as:
 | Mercuriex         | Y       | N          | N       | N       | Y           | Y        | mercuriex         |       |
 | MXC               | Y       | Y [x]      |         |         | Y           | Y        | mxc               |       |
 | Myspeedtrade      | Y       | Y          |         |         | Y           |          | myspeedtrade      |       |
+| Namebase          | Y       | Y          | Y       | Y       | Y           |          | namebase          |       |
 | Nanex             | Y       | N          | N       | N       | Y           |          | nanex             |       |
 | Nanu.Exchange     | Y       | Y          | Y       |         | Y           |          | nanu_exchange     |       |
 | Nash              | Y       |            |         |         | Y           |          | nash              |       |
@@ -435,7 +436,8 @@ Or install it yourself as:
 | Tokenize          | Y       | Y [x]      |         |         | Y           | Y        | tokenize          |       |
 | Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |       |
 | Tokenomy          | Y       | Y [x]      | Y       |         | Y           | Y        | tokenomy          |       |
-| TokensNet         | Y       | Y [x]      | N       |         | Y           | Y        | tokens_net       |       |
+| TokensNet         | Y       | Y [x]      | N       |         | Y           | Y        | tokens_net        |       |
+| Token Sets        | Y       | Y          | Y       |         | Y           | Y        | token_sets        |       |
 | TokoCrypto        | Y       | Y          | Y       |         | Y           | N        | toko_crypto       |       |
 | Tokok             | Y       | Y [x]      | Y       |         | Y           |          | tokok             |       |
 | Tokpie            | Y       | Y [x]      |         |         | Y           |          | tokpie            |       |
