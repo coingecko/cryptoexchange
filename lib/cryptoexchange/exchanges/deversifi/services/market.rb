@@ -4,70 +4,48 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            false
+            true
           end
         end
 
-        def fetch
-          output = super(ticker_url)
-          adapt_all(output)
+        def fetch(market_pair)
+          output = super(ticker_url(market_pair))
+          adapt(output[0], market_pair)
         end
 
-        def ticker_url
-          "#{Cryptoexchange::Exchanges::Deversifi::Market::API_URL}/tickers?symbols=ALL"
+        def ticker_url(market_pair)
+          base = market_pair.base.upcase
+          target = market_pair.target.upcase
+          "#{Cryptoexchange::Exchanges::Deversifi::Market::API_URL}/bfx/v2/tickers?symbols=t#{base}#{target}"
         end
 
-        def adapt_all(output)
-          output.map do |ticker|
-            pair = ticker[0]
-
-            next if pair[0] != 't'
-
-            if pair.include? ":"
-              base, target = pair.split(":")
-            else
-              base = pair[1..pair.length - 4]
-              target = pair[-3..-1]
-            end
-
-            market_pair = Cryptoexchange::Models::MarketPair.new(
-              base: base,
-              target: target,
-              market: Deversifi::Market::NAME
-            )
-
-            adapt(market_pair, ticker)
-          end.compact
-        end
-
-        def adapt(market_pair, output)
-          ticker = Cryptoexchange::Models::Ticker.new
-          ticker.base = market_pair.base
-          ticker.target = market_pair.target
-          ticker.market = Deversifi::Market::NAME
-
+        def adapt(output, market_pair)
           # [
-          #   SYMBOL,
-          #   BID,
-          #   BID_SIZE,
-          #   ASK,
-          #   ASK_SIZE,
-          #   DAILY_CHANGE,
-          #   DAILY_CHANGE_PERC,
-          #   LAST_PRICE,
-          #   VOLUME,
-          #   HIGH,
-          #   LOW
+          #   0 SYMBOL,
+          #   1 BID,
+          #   2 ID_SIZE,
+          #   3 ASK,
+          #   4 ASK_SIZE,
+          #   5 DAILY_CHANGE,
+          #   6 DAILY_CHANGE_PERC,
+          #   7 LAST_PRICE,
+          #   8 VOLUME,
+          #   9 HIGH,
+          #   10 LOW
           # ]
 
-          ticker.ask = NumericHelper.to_d(output[3])
-          ticker.bid = NumericHelper.to_d(output[1])
-          ticker.last = NumericHelper.to_d(output[7])
-          ticker.high = NumericHelper.to_d(output[9])
-          ticker.low = NumericHelper.to_d(output[10])
-          ticker.volume = NumericHelper.to_d(output[8])
+          ticker           = Cryptoexchange::Models::Ticker.new
+          ticker.base      = market_pair.base
+          ticker.target    = market_pair.target
+          ticker.market    = Deversifi::Market::NAME
+          ticker.last      = NumericHelper.to_d(output[7])
+          ticker.bid       = NumericHelper.to_d(output[1])
+          ticker.ask       = NumericHelper.to_d(output[3])
+          ticker.high      = NumericHelper.to_d(output[9])
+          ticker.low       = NumericHelper.to_d(output[10])
+          ticker.volume    = NumericHelper.to_d(output[8])
           ticker.timestamp = nil
-          ticker.payload = output
+          ticker.payload   = output
           ticker
         end
       end

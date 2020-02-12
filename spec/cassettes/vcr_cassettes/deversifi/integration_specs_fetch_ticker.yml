@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.deversifi.com/bfx/v2/tickers?symbols=tETHUSD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.deversifi.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 12 Feb 2020 03:34:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d54b3fec47d07d7d6c7d034116e68b7f11581478456; expires=Fri, 13-Mar-20
+        03:34:16 GMT; path=/; domain=.deversifi.com; HttpOnly; SameSite=Lax; Secure
+      X-Frame-Options:
+      - sameorigin
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains;
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Cache-Control:
+      - max-age=43200
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '626'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 563b817e9a12c0f5-KUL
+    body:
+      encoding: UTF-8
+      string: '[["tETHUSD",244.45,1017.48329102,244.58,653.9413403,24.71,0.1125,244.42,89863.50224368,246.88,218.24]]'
+    http_version: 
+  recorded_at: Wed, 12 Feb 2020 03:34:16 GMT
+recorded_with: VCR 4.0.0
