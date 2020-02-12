@@ -35,6 +35,7 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Vitex::Market::NAME
+          ticker.inst_id   = market_pair.inst_id
           ticker.last      = NumericHelper.to_d(output['closePrice'])
           ticker.volume    = NumericHelper.to_d(output['quantity'])
           ticker.change    = NumericHelper.to_d(output['priceChange'])
