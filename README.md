@@ -239,6 +239,7 @@ Or install it yourself as:
 | Decoin            | Y       | Y          | Y       |         | Y           | Y        | Decoin            |       |
 | DEEX              | Y       |            |         |         | Y           |          | deex              |       |
 | DEx.top           | Y       | Y [x]      | Y       |         | Y           |          | dextop            |       |
+| Deversifi         | Y       |            | Y       |         | Y           | Y        | deversifi         |       |
 | dex-trade         | Y       | Y          | Y       |         | Y           |          | dextrade          |       |
 | Dflow             | Y       |            |         |         | Y           | Y        | dflow             |       |
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |       |
