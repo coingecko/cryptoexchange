@@ -19,6 +19,7 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |output|
+            next if output["DailyTradedTotalVolume"] == 0
             base, target = Xcoex::Market.separate_symbol(output["Symbol"])
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
@@ -35,7 +36,13 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Xcoex::Market::NAME
-          ticker.last      = NumericHelper.to_d(output["LastBuyVolume"])
+
+          if output["LastBuyTimestamp"].to_i > output["LastSellTimestamp"].to_i
+            ticker.last    = NumericHelper.to_d(output["LastBuyPrice"])
+          else
+            ticker.last    = NumericHelper.to_d(output["LastSellPrice"])
+          end
+
           ticker.volume    = NumericHelper.to_d(output["DailyTradedTotalVolume"])
           ticker.ask       = NumericHelper.to_d(output["BestAsk"])
           ticker.bid       = NumericHelper.to_d(output["BestBid"])          

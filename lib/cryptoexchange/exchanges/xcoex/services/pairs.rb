@@ -7,6 +7,7 @@ module Cryptoexchange::Exchanges
         def fetch
           output = super
           output.map do |output|
+            next if output["DailyTradedTotalVolume"] == 0
             base, target = Xcoex::Market.separate_symbol(output["Symbol"])
             Cryptoexchange::Models::MarketPair.new(
               base: base,
