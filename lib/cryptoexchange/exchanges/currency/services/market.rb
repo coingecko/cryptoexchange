@@ -28,6 +28,7 @@ module Cryptoexchange::Exchanges
             ticker           = Cryptoexchange::Models::Ticker.new
             ticker.base      = base
             ticker.target    = target
+            ticker.market    = Currency::Market::NAME
             ticker.ask       = NumericHelper.to_d(output['lowest_ask_price'])
             ticker.bid       = NumericHelper.to_d(output['highest_bid_price'])
             ticker.last      = NumericHelper.to_d(output['last_price'])
