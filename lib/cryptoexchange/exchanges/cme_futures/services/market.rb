@@ -36,8 +36,8 @@ module Cryptoexchange::Exchanges
           ticker.target = market_pair.target
           ticker.market = CmeFutures::Market::NAME
           ticker.inst_id = market_pair.inst_id
-          ticker.last = NumericHelper.to_d(output["last"])
-          ticker.volume = NumericHelper.to_d(output["volume"]) * 5.0
+          ticker.last = NumericHelper.to_d(output["last"].gsub(",",""))
+          ticker.volume = NumericHelper.to_d(output["volume"].gsub(",","")) * 5.0
           ticker.contract_interval = market_pair.contract_interval
           ticker.timestamp = nil
           ticker.payload = output
