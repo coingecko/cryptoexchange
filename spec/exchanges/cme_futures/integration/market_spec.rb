@@ -27,6 +27,7 @@ RSpec.describe 'CME Futures integration specs' do
     expect(ticker.ask).to be nil
     expect(ticker.bid).to be nil
     expect(ticker.volume).to be_a Numeric
+    expect(ticker.volume).to eq 15_825 * 5
     expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
     expect(ticker.contract_interval).to eq "AUG 2019"
