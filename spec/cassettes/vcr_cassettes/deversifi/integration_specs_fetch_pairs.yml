@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.deversifi.com/v1/trading/r/get/conf
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.deversifi.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 12 Feb 2020 03:34:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3646'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d5a4526725ef1604e7d74a100fb68eeaf1581478456; expires=Fri, 13-Mar-20
+        03:34:16 GMT; path=/; domain=.deversifi.com; HttpOnly; SameSite=Lax; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"e3e-FA5p8GplBY0pKgiR3x/D51BsF80"
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Cache-Control:
+      - max-age=43200
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '2014'
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 563b817e39c9c10e-KUL
+    body:
+      encoding: UTF-8
+      string: '{"0x":{"protocol":"0x","minOrderTime":300,"tokenRegistry":{"ETH":{"decimals":18,"wrapperAddress":"0x50cb61afa3f023d17276dcfb35abf85c710d1cff","minOrderSize":0.02},"USD":{"decimals":6,"wrapperAddress":"0x33d019eb137b853f0cdf555a5d5bd2749135ac31","tokenAddress":"0xdac17f958d2ee523a2206206994597c13d831ec7","minOrderSize":10,"settleSpread":-0.0015},"WBT":{"decimals":8,"wrapperAddress":"0xff33b21bc54aee753891a15e72b7a152a5a782dc","tokenAddress":"0x2260fac5e5542a773aa44fbcfedf7c193bc2c599","minOrderSize":0.0087},"MKR":{"decimals":18,"wrapperAddress":"0x91cf769a44e9d09b8e249886d0de4dbe0aa998f9","tokenAddress":"0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2","minOrderSize":0.08},"DAI":{"decimals":18,"wrapperAddress":"0x2cd04bb68786834f199ce12074da7b8832129fe1","tokenAddress":"0x6b175474e89094c44da98b954eedeac495271d0f","minOrderSize":30},"UDC":{"decimals":6,"wrapperAddress":"0x0890fbf0f9b3d55a7e3f251b6afcbe691a29873b","tokenAddress":"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48","minOrderSize":50},"BAT":{"decimals":18,"wrapperAddress":"0x1c0f17436740bfb92c1070ee86322de890837c6a","tokenAddress":"0x0d8775f648430679a709e98d2b0cb6250d2887ef","minOrderSize":160},"NEC":{"decimals":18,"wrapperAddress":"0xfe65d1ba9a745b131dad1a066861bb5d9ce4767b","tokenAddress":"0xcc80c051057b774cd75067dc48f8987c4eb97a5e","minOrderSize":50},"OMG":{"decimals":18,"wrapperAddress":"0xb5dfdfb2a1c97b329361d261239c51e5f88d035d","tokenAddress":"0xd26114cd6EE289AccF82350c8d8487fedB8A0C07","minOrderSize":20},"ZRX":{"decimals":18,"wrapperAddress":"0x862916f9709e499a94fbca7a8f451eb443d34cad","tokenAddress":"0xe41d2489571d322189246dafa5ebde1f4699f498","minOrderSize":150},"SNT":{"decimals":18,"wrapperAddress":"0x7becbc91db4eb3c5e9a6cda1db391ee648e53779","tokenAddress":"0x744d70fdbe2ba4cf95131626614a1763df805b9e","minOrderSize":2000},"SAN":{"decimals":18,"wrapperAddress":"0x3bc26582062fd8aaa084ee874f6764718c398203","tokenAddress":"0x7c5a0ce9267ed19b22f8cae653f198e3e8daf098","minOrderSize":200},"EDO":{"decimals":18,"wrapperAddress":"0xf6d7e24ff16195a9f5c5df431ef4b3f78c23bf6d","tokenAddress":"0xced4e93198734ddaff8492d525bd258d49eb388e","minOrderSize":60},"FUN":{"decimals":8,"wrapperAddress":"0xbf06ea47c2cc300da596767024f87777d7e41d72","tokenAddress":"0x419d0d8bdd9af5e606ae2232ed285aff190e711b","minOrderSize":12000},"REP":{"decimals":18,"wrapperAddress":"0x5ee39beffcda53c5fa2890c2161247582e2210bb","tokenAddress":"0x1985365e9f78359a9b6ad760e32412f4a445e862","minOrderSize":3},"SPK":{"decimals":18,"wrapperAddress":"0xab0cd9fabcd3487cf22eb0b6a8c3ec1c0e00e643","tokenAddress":"0x42d6622dece394b54999fbd73d108123806f6a18","minOrderSize":4000},"ENJ":{"decimals":18,"wrapperAddress":"0x3f46e145dfcd84230c8e0684efb8bce3f0965fba","tokenAddress":"0xf629cbd94d3791c9250152bd8dfbdf380e2a3b9c","minOrderSize":400},"TKN":{"decimals":8,"wrapperAddress":"0xbf86f56cd4592fed0d7893e12461e19fcbbf0cd5","tokenAddress":"0xaaaf91d9b90df800df4f55c205fd6989c977e73a","minOrderSize":110},"TSD":{"decimals":18,"wrapperAddress":"0x243318cb80785ab92f2c39543cb58958320e64b2","tokenAddress":"0x0000000000085d4780b73119b644ae5ecd22b376","minOrderSize":50},"PNK":{"decimals":18,"wrapperAddress":"0x3ad9539c143b335794bac9211aa5491daeda85bf","tokenAddress":"0x93ed3fbe21207ec2e8f2d3c3de6e058cb73bc04d","minOrderSize":2000}},"feeApiUrl":"https://api.deversifi.com/v1/pub/feeRate/","ethfinexAddress":"0xaf8ae6955d07776ab690e565ba6fbc79b8de3a5d","deversifiAddress":"0xaf8ae6955d07776ab690e565ba6fbc79b8de3a5d","exchangeAddress":"0x080bf510fcbf18b91105470639e9561022937712","exchangeSymbols":["tETHUSD","tPNKETH","tPNKUSD","tMKRETH","tDAIETH","tDAIUSD","tUDCUSD","tMKRDAI","tNECUSD","tNECETH"]}}'
+    http_version: 
+  recorded_at: Wed, 12 Feb 2020 03:34:16 GMT
+recorded_with: VCR 4.0.0

@@ -14,7 +14,7 @@ RSpec.describe 'Bitmex integration specs' do
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
-    expect(pair.contract_interval).to eq "quarterly"
+    expect(pair.contract_interval).to eq "futures"
     expect(pair.market).to eq 'bitmex'
   end
 

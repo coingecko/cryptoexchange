@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def order_book_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Latoken::Market::API_URL}/MarketData/orderBook/#{market_pair.base}#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::Latoken::Market::API_URL}/marketOverview/orderbook/#{market_pair.base}_#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
@@ -30,8 +30,8 @@ module Cryptoexchange::Exchanges
 
         def adapt_orders(orders)
           orders.collect do |order_entry|
-            Cryptoexchange::Models::Order.new(price: NumericHelper.to_d(order_entry["price"]),
-                                              amount: NumericHelper.to_d(order_entry["quantity"]),
+            Cryptoexchange::Models::Order.new(price: NumericHelper.to_d(order_entry[0]),
+                                              amount: NumericHelper.to_d(order_entry[1]),
                                               timestamp: nil)
           end
         end

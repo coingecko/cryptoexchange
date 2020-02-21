@@ -50,6 +50,7 @@ Or install it yourself as:
 | Beaxy             | Y       | Y [x]      | Y       |         | Y           | Y        | beaxy             |       |
 | Bgogo             | Y       | Y [x]      | Y [limit: 20]     |         | Y           | Y        | bgogo             |       |
 | Bhex              | Y       | Y          | Y       |         | Y           | Y        | bhex              |       |
+| Bibo              | Y       | Y [x]      | Y       |         | Y           | Y        | bibo              |       |
 | Bibox             | Y       | Y [x]      | Y [limit: 200]    |         | Y           | Y        | bibox             |       |
 | Bigmarkets        | Y       |            |         |         | Y           | Y        | bigmarkets        |       |
 | BigONE            | Y       | Y [x]      | Y       |         | Y           | Y        | bigone            |       |
@@ -120,6 +121,7 @@ Or install it yourself as:
 | Bitsten           | Y       | Y [x]      | N       |         | Y           | Y        | bitsten           |       |
 | Bitstorage        | Y       | Y [x]      | Y       |         | Y           | Y        | bitstorage        |       |
 | Bittrex           | Y       | Y [x]      | Y [limit: 100]      |         | Y           | Y        | bittrex           |       |
+| Bitubu            | Y       | Y [x]      | Y       |         | Y           | Y        | bitubu            |       |
 | Bkex              | Y       | Y [x]      | N       |         | Y           | Y        | bkex              |       |
 | Bleutrade         | Y       |            |         |         | Y           |          | bleutrade         |       |
 | Blockonix         | Y       | Y          | Y       |         | Y           |          | blockonix         |       |
@@ -227,7 +229,7 @@ Or install it yourself as:
 | Cryptonit         | Y       | Y          | Y       |         | Y           | Y        | cryptonit         |       |
 | Cryptopia         | Y       | Y          | Y       |         | Y           |          | cryptopia         |       |
 | Crytrex           | Y       | Y          | Y       |         | Y           |          | crytrex           |       |
-| Currency          | Y       |            |         |         | Y           |          | currency          |       |
+| Currency          | Y       |            |         |         | Y           | Y        | currency          |       |
 | Cybex             | Y       |            | Y       |         | Y           |          | cybex             |       |
 | Dach.Exchange     | Y       |            |         |         | Y           | Y        | dach_exchange     |       |
 | Dakuce            | Y       | Y          | Y       |         | Y           |          | dakuce            |       |
@@ -238,6 +240,7 @@ Or install it yourself as:
 | Decoin            | Y       | Y          | Y       |         | Y           | Y        | Decoin            |       |
 | DEEX              | Y       |            |         |         | Y           |          | deex              |       |
 | DEx.top           | Y       | Y [x]      | Y       |         | Y           |          | dextop            |       |
+| Deversifi         | Y       |            | Y       |         | Y           | Y        | deversifi         |       |
 | dex-trade         | Y       | Y          | Y       |         | Y           |          | dextrade          |       |
 | Dflow             | Y       |            |         |         | Y           | Y        | dflow             |       |
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |       |
@@ -299,6 +302,7 @@ Or install it yourself as:
 | Hubi              | Y       |            |         |         | Y           |          | hubi              |       |
 | Huobi             | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi             |       |
 | Huobi DM          | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi_dm          |       |
+| Huobi ID          | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi_id          |       |
 | Huobi Japan       | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi_japan       |       |
 | Huobi Korea       | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi_korea       |       |
 | Huobi US          | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi_us          |       |
@@ -350,6 +354,7 @@ Or install it yourself as:
 | Mercuriex         | Y       | N          | N       | N       | Y           | Y        | mercuriex         |       |
 | MXC               | Y       | Y [x]      |         |         | Y           | Y        | mxc               |       |
 | Myspeedtrade      | Y       | Y          |         |         | Y           |          | myspeedtrade      |       |
+| Namebase          | Y       | Y          | Y       | Y       | Y           |          | namebase          |       |
 | Nanex             | Y       | N          | N       | N       | Y           |          | nanex             |       |
 | Nanu.Exchange     | Y       | Y          | Y       |         | Y           |          | nanu_exchange     |       |
 | Nash              | Y       |            |         |         | Y           |          | nash              |       |
@@ -434,7 +439,8 @@ Or install it yourself as:
 | Tokenize          | Y       | Y [x]      |         |         | Y           | Y        | tokenize          |       |
 | Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |       |
 | Tokenomy          | Y       | Y [x]      | Y       |         | Y           | Y        | tokenomy          |       |
-| TokensNet         | Y       | Y [x]      | N       |         | Y           | Y        | tokens_net       |       |
+| TokensNet         | Y       | Y [x]      | N       |         | Y           | Y        | tokens_net        |       |
+| Token Sets        | Y       | Y          | Y       |         | Y           | Y        | token_sets        |       |
 | TokoCrypto        | Y       | Y          | Y       |         | Y           | N        | toko_crypto       |       |
 | Tokok             | Y       | Y [x]      | Y       |         | Y           |          | tokok             |       |
 | Tokpie            | Y       | Y [x]      |         |         | Y           |          | tokpie            |       |
@@ -474,6 +480,7 @@ Or install it yourself as:
 | WhaleEx           | Y       | N          |         |         | Y           | Y        | whale_ex          |       |
 | Whitebit          | Y       | Y          | Y       |         | Y           |          | whitebit          |       |
 | Worldcore         | Y       | Y          | Y       |         | Y           | Y        | worldcore         |       |
+| Xcoex             | Y       |            |         |         | Y           | Y        | xcoex             |       |
 | Xfutures          | Y       | Y [x]      | Y       |         | Y           | Y        | xfutures          |       |
 | Xt                | Y       | Y [x]      | Y       |         | Y           | Y        | xt                |       |
 | Yobit             | Y       | Y [x]      |         |         | Y           | Y        | yobit             |       |
@@ -496,7 +503,7 @@ Or install it yourself as:
 | Bibox (Futures)   | Y | Y  | Y    |  Y  |  N      | Y   |  N  |       |      | N  | N  | N  | N   | N   |  bibox_futures   |
 | Binance Futures   | Y | Y  | Y    |  Y  |  N      | Y   |  Y  |       |      | N  | N  | Y  | Y   | N   |  binance_futures |
 | Bitflyer Futures  | Y | Y  | Y    |  Y  |  N      | Y   |  N  |       |      | N  | N  |    |     |     |  bitflyer_futures  |
-| Bitfinex Futures  | Y | Y  | Y    |     |  N      | Y   |  Y  |       |      | N  | N  | Y  | Y   |     |  bitfinex_futures  |
+| Bitfinex Futures  | Y | Y  | Y    |     |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   |     |  bitfinex_futures  |
 | Bitforex Futures  | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      |    |    | Y  | Y   | N   |  bitforex_futures  |
 | Bitmex            | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | Y  | Y  | Y  | Y   | Y   |  bitmex  |
 | Bitz Futures      | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | N  | N   | Y   |  bitz_futures  |
@@ -504,7 +511,7 @@ Or install it yourself as:
 | CME Futures       | Y | N  | Y    |  Y  |  N      | Y   |  N  |       |      | N  | Y  | N  | N   | N   |  cme_futures |
 | Coinflex Futures  | Y | Y  | Y    |  Y  |  N      | Y*  |  N  |       |      | N  | N  |    |     |     |  coinflex_futures  |
 | Deribit           | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | Y  | Y  | Y  | Y   | Y   |  deribit |
-| Delta Futures     | Y | Y  | Y    |  Y  |  N      | Y   |  Y  |       |      | N  | N  | Y  | N   | N   |  delta_futures |
+| Delta Futures     | Y | Y  | Y    |  Y  |  N      | Y   |  Y  |   Y   |   Y  | N  | N  | Y  | N   | N   |  delta_futures |
 | FTX               | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | N  | Y  | Y  | Y   | N   |  ftx |
 | Fmex              | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  fmex |
 | Gate (Futures)    | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  gate_futures  |

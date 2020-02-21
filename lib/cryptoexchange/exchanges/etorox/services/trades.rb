@@ -8,7 +8,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Etorox::Market::API_URL}/#{market_pair.inst_id}/trades"
+          "#{Cryptoexchange::Exchanges::Etorox::Market::API_URL}/#{market_pair.base.downcase}#{market_pair.target.downcase}/trades"
         end
 
         def adapt(output, market_pair)

@@ -11,13 +11,13 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output['data'].map do |ticker|
-            base, target = ticker[0].split('_')
+            base, target = TokoCrypto::Market.separate_symbol(ticker["Name"])
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
               market: TokoCrypto::Market::NAME
             )
-          end
+          end.compact
         end
       end
     end

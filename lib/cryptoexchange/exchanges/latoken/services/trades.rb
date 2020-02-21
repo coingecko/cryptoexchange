@@ -8,17 +8,17 @@ module Cryptoexchange::Exchanges
         end
 
         def trades_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Latoken::Market::API_URL}/MarketData/trades/#{market_pair.base}#{market_pair.target}/100"
+          "#{Cryptoexchange::Exchanges::Latoken::Market::API_URL}/trade/history/#{market_pair.base}/#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
-          output["trades"].collect do |trade|
+          output.collect do |trade|
             tr = Cryptoexchange::Models::Trade.new
             tr.base      = market_pair.base
             tr.target    = market_pair.target
-            tr.type      = trade["side"]
+            tr.type      = trade["direction"] == "TRADE_DIRECTION_BUY" ? 'buy' : 'sell'
             tr.price     = trade["price"]
-            tr.amount    = trade["amount"]
+            tr.amount    = trade["quantity"]
             tr.timestamp = trade["timestamp"]/1000
             tr.payload   = trade
             tr.market    = Latoken::Market::NAME

@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Tokenomy
+  module Bitubu
     module Services
       class Trades < Cryptoexchange::Services::Market
         def fetch(market_pair)
@@ -8,23 +8,24 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          base   = market_pair.base.downcase
+          base = market_pair.base.downcase
           target = market_pair.target.downcase
-          "#{Cryptoexchange::Exchanges::Tokenomy::Market::API_URL}/#{base}_#{target}/trades"
+          "#{Cryptoexchange::Exchanges::Bitubu::Market::API_URL}/trades?market=#{base}#{target}"
         end
 
         def adapt(output, market_pair)
-          output.collect do |trade|
+          output.map do |trade|
             tr = Cryptoexchange::Models::Trade.new
             tr.base      = market_pair.base
             tr.target    = market_pair.target
-            tr.trade_id  = trade['tid']
+            tr.market    = Bitubu::Market::NAME
             tr.type      = trade['type']
+            tr.trade_id  = trade['id']
             tr.price     = trade['price']
-            tr.amount    = trade['amount']
-            tr.timestamp = trade['date'].to_i
+            tr.amount    = trade["volume"].to_f
+            tr.timestamp = Time.parse(trade['created_at']).to_i
             tr.payload   = trade
-            tr.market    = Tokenomy::Market::NAME
+
             tr
           end
         end

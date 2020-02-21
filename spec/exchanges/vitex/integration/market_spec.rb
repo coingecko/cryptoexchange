@@ -15,8 +15,8 @@ RSpec.describe 'Vitex integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url 'vitex', base: "BTC", target: "USDT"
-    expect(trade_page_url).to eq "https://x.vite.net/trade"
+    trade_page_url = client.trade_page_url 'vitex', base: "BTC", target: "USDT", inst_id: "BTC-000_USDT-000"
+    expect(trade_page_url).to eq "https://x.vite.net/trade?symbol=BTC-000_USDT-000"
   end
 
   it 'fetch ticker' do

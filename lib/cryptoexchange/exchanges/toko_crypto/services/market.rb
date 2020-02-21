@@ -19,14 +19,15 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output['data'].map do |ticker|
-            base, target = ticker[0].split('_')
+            base, target = TokoCrypto::Market.separate_symbol(ticker["Name"])
             market_pair = Cryptoexchange::Models::MarketPair.new(
-              base: base,
-              target: target,
-              market: TokoCrypto::Market::NAME
-            )
-            adapt(market_pair, ticker[1])
-          end
+                            base:   base,
+                            target: target,
+                            market: TokoCrypto::Market::NAME
+                          )
+
+            adapt(market_pair, ticker)
+          end.compact
         end
 
         def adapt(market_pair, output)
@@ -34,11 +35,10 @@ module Cryptoexchange::Exchanges
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = TokoCrypto::Market::NAME
-          ticker.last = NumericHelper.to_d(output['last_price'])
-          ticker.volume = NumericHelper.to_d(output['base_volume'])
-          ticker.high = NumericHelper.to_d(output['high_price'])
-          ticker.low = NumericHelper.to_d(output['low_price'])
-
+          ticker.last = NumericHelper.to_d(output['Close'])
+          ticker.volume = NumericHelper.flip_volume(NumericHelper.to_d(output['Volume']),ticker.last)
+          ticker.high = NumericHelper.to_d(output['High'])
+          ticker.low = NumericHelper.to_d(output['Low'])
           ticker.timestamp = nil
           ticker.payload = output
           ticker

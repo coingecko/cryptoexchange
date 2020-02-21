@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.namebase.io/api/v0/info
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.namebase.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Ray:
+      - 563ae1b3af57dddf-SIN
+      Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://cdn.segment.com/ https://js.intercomcdn.com/
+        https://widget.intercom.io/ https://platform.twitter.com/ https://www.fullstory.com/
+        https://www.google-analytics.com/ https://cdn.plaid.com/; img-src ''self''
+        data: https://app.namebase.io/ https://www.google-analytics.com/ https://static.intercomassets.com/
+        https://stats.g.doubleclick.net/; font-src ''self'' data: https://js.intercomcdn.com/;
+        frame-ancestors ''self''; style-src ''self'' ''unsafe-inline''; frame-src
+        ''self'' https://platform.twitter.com/; connect-src ''self'' https://app.namebase.io/
+        wss://app.namebase.io/ https://api.segment.io/ https://rs.fullstory.com/ https://*.intercom.io/
+        wss://*.intercom.io/ https://www.google-analytics.com/ https://stats.g.doubleclick.net/
+        https://ipinfo.io/; report-uri https://namebase.report-uri.com/r/d/csp/enforce;
+        report-to https://namebase.report-uri.com/r/d/csp/enforce;'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 12 Feb 2020 01:45:11 GMT
+      Etag:
+      - W/"c5-4vavc0IdmcXnYiqkUOOJCNXmqZg"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - Netlify
+      Set-Cookie:
+      - AWSALB=jKXeYKxD2q+PGHScVuT34w27Qa552bllRjWhxXvGEc4ESNqx6fI+Og2Q8LSAZYqqYhFmAbNZQvhpIdwBQpsice068h4QJxXi2i6JmPmoH2UCT7pUvSW9Ili+AZKY;
+        Expires=Wed, 19 Feb 2020 01:45:11 GMT; Path=/
+      - AWSALBCORS=jKXeYKxD2q+PGHScVuT34w27Qa552bllRjWhxXvGEc4ESNqx6fI+Og2Q8LSAZYqqYhFmAbNZQvhpIdwBQpsice068h4QJxXi2i6JmPmoH2UCT7pUvSW9Ili+AZKY;
+        Expires=Wed, 19 Feb 2020 01:45:11 GMT; Path=/; SameSite=None; Secure
+      - __cfduid=d55ff750bbe6fd205aba8b925a0b01c601581471910; expires=Fri, 13-Mar-20
+        01:45:10 GMT; path=/; domain=.namebase.io; HttpOnly; SameSite=Lax
+      Strict-Transport-Security:
+      - max-age=7776000
+      X-Frame-Options:
+      - DENY
+      X-Ratelimit-Limit:
+      - '80'
+      X-Ratelimit-Remaining:
+      - '79'
+      X-Ratelimit-Reset:
+      - '1581471912'
+      Content-Length:
+      - '197'
+      Age:
+      - '1'
+      Connection:
+      - close
+      Vary:
+      - Origin
+      X-Nf-Request-Id:
+      - fb31d3d0-6e18-4b82-af28-f1b20125b1ed-10460059
+    body:
+      encoding: UTF-8
+      string: '{"timezone":"UTC","serverTime":1581471911078,"symbols":[{"symbol":"HNSBTC","status":"TRADING","baseAsset":"HNS","basePrecision":6,"quoteAsset":"BTC","quotePrecision":8,"orderTypes":["LMT","MKT"]}]}'
+    http_version: 
+  recorded_at: Wed, 12 Feb 2020 01:45:09 GMT
+recorded_with: VCR 4.0.0
