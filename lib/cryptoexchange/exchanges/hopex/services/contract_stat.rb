@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Bybit
+  module Hopex
     module Services
       class ContractStat < Cryptoexchange::Services::Market
         class << self
@@ -10,28 +10,11 @@ module Cryptoexchange::Exchanges
 
         def fetch(market_pair)
           output = super(ticker_url(market_pair))
-          adapt(market_pair, output)
+          adapt(market_pair, output["data"])
         end
 
         def ticker_url(market_pair)
           "#{Cryptoexchange::Exchanges::Hopex::Market::API_URL}/ticker?contractCode=#{market_pair.inst_id}"
-        end
-
-        def adapt(market_pair, output)
-          output["data"].map do |pair|
-            separator = /(BTC|ETH|EOS|XRP|USD)\z/ =~ pair['symbol']
-            next if separator.nil?
-
-            base   = pair['symbol'][0..separator - 1]
-            target = pair['symbol'][separator..-1]
-            market_pair = Cryptoexchange::Models::MarketPair.new(
-              base: base,
-              target: target,
-              market: Bybit::Market::NAME
-            )
-
-            adapt(market_pair, pair)
-          end.compact
         end
 
         def adapt(market_pair, pair)
@@ -39,9 +22,9 @@ module Cryptoexchange::Exchanges
 
           contract_stat.base      = market_pair.base
           contract_stat.target    = market_pair.target
-          contract_stat.market    = Bybit::Market::NAME
-          contract_stat.open_interest = pair['open_interest'].to_f
-          contract_stat.index     = pair['index_price'].to_f
+          contract_stat.market    = Hopex::Market::NAME
+          contract_stat.open_interest = nil
+          contract_stat.index     = pair['marketPrice'].to_f
           contract_stat.index_identifier = nil
           contract_stat.index_name = nil
 
@@ -50,9 +33,9 @@ module Cryptoexchange::Exchanges
           contract_stat.start_timestamp = nil
           contract_stat.contract_type = "perpetual"
 
-          contract_stat.funding_rate_percentage = pair['funding_rate'] ? pair['funding_rate'].to_f * 100 : nil
-          contract_stat.next_funding_rate_timestamp = pair['next_funding_time'] ? DateTime.parse(pair['next_funding_time']).to_time.to_i : nil
-          contract_stat.funding_rate_percentage_predicted = pair['predicted_funding_rate'] ? pair['predicted_funding_rate'].to_f * 100 : nil
+          contract_stat.funding_rate_percentage = nil
+          contract_stat.next_funding_rate_timestamp = nil
+          contract_stat.funding_rate_percentage_predicted = nil
 
           contract_stat
         end
