@@ -19,13 +19,15 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |pair|
-            base = pair["tokenSymbol"]
-            market_pair = Cryptoexchange::Models::MarketPair.new(
-              base: base,
-              target: "ETH",
-              market: Uniswap::Market::NAME
-            )
-            adapt(pair, market_pair)
+            if pair["ethLiquidity"] > 0
+              base = pair["tokenSymbol"]
+              market_pair = Cryptoexchange::Models::MarketPair.new(
+                base: base,
+                target: "ETH",
+                market: Uniswap::Market::NAME
+              )
+              adapt(pair, market_pair)
+            end
           end
         end
 
