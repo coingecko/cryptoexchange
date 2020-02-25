@@ -4,7 +4,7 @@ http_interactions:
     method: get
     uri: https://api.bitflyer.jp/v1/markets
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       Connection:
@@ -12,33 +12,30 @@ http_interactions:
       Host:
       - api.bitflyer.jp
       User-Agent:
-      - http.rb/2.1.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
-      Date:
-      - Tue, 03 Oct 2017 04:04:10 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '230'
-      Connection:
-      - close
-      Set-Cookie:
-      - __cfduid=d9c922c7a420527c056a04c3ef3acc5591507003450; expires=Wed, 03-Oct-18
-        04:04:10 GMT; path=/; domain=.bitflyer.jp; HttpOnly
       Cache-Control:
       - no-cache
       Pragma:
       - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
       Expires:
       - "-1"
-      X-Aspnet-Version:
-      - 4.0.30319
+      Server:
+      - Microsoft-IIS/10.0
+      X-Ratelimit-Period:
+      - '300'
+      X-Ratelimit-Remaining:
+      - '499'
+      X-Ratelimit-Reset:
+      - '1582562529'
       Request-Context:
-      - appId=cid-v1:e4fbc941-a2df-48ac-bbac-f2180e904002
+      - appId=cid-v1:edafd9df-f22e-4349-b71f-1c468550add5
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
@@ -49,13 +46,150 @@ http_interactions:
       - 'default-src http: https: ws: wss: data: ''unsafe-inline'' ''unsafe-eval'''
       Strict-Transport-Security:
       - max-age=31536000
-      Server:
-      - cloudflare-nginx
-      Cf-Ray:
-      - 3a7d040baced6f8a-SIN
+      Date:
+      - Mon, 24 Feb 2020 16:37:09 GMT
+      Content-Length:
+      - '315'
+      Connection:
+      - close
+      Set-Cookie:
+      - _abck=7C3D63AF4F1D893D09D2C21237F8841E~-1~YAAQwlVqyy5gwVpwAQAAeD4PeAMc9Ol+76BXLgW1Jaq0NNl7t4n/lDmVq7NKOT5inJ7fZ6MsZbKGXwgrRmiLIsrsBk8Jw1wD8TqF6N7ZP7eqoNss4VSJUKU1IO5h70x9FdyS0d7LH1c6UmIvPyoZCZFu281KRNZ1qKJHNfjAnXjjSNVsw9MK3N4RXJDuQLnjZqWOAXNKWzV4o+giqyewkWyMuP/5DXyOgoCy7RgLqSZcey60ng2RynhVChxnhCcuzsU/uFiHVlL2vHc16QKsdUmDRh3dcw5s76KQeh1XHDuOaHypzrXw5IQvMQ==~-1~-1~-1;
+        Domain=.bitflyer.jp; Path=/; Expires=Tue, 23 Feb 2021 16:37:09 GMT; Max-Age=31536000;
+        Secure
+      - bm_sz=D99E7EEB1302486D204FAB7D5184189B~YAAQwlVqyy1gwVpwAQAAeD4PeAaN1tslAXQ+iFPkFIxMCn3p17Ej68iS/+mX3wPNoNqq39O1fnSWRUEx/I4wziBnLajlcn2O92tOExVP7D/nYDzav24MiUomXdKnvwYKmBLC1n3UZsHPJzSV0UWlFtZLFXbsWK5FewWGgpBbbOPmH+87ehWyyrFxGzOrl0bCSg==;
+        Domain=.bitflyer.jp; Path=/; Expires=Mon, 24 Feb 2020 20:37:09 GMT; Max-Age=14400;
+        HttpOnly
     body:
       encoding: UTF-8
-      string: '[{"product_code":"BTC_JPY"},{"product_code":"FX_BTC_JPY"},{"product_code":"ETH_BTC"},{"product_code":"BCH_BTC"},{"product_code":"BTCJPY06OCT2017","alias":"BTCJPY_MAT1WK"},{"product_code":"BTCJPY13OCT2017","alias":"BTCJPY_MAT2WK"}]'
+      string: '[{"product_code":"BTC_JPY"},{"product_code":"FX_BTC_JPY"},{"product_code":"ETH_BTC"},{"product_code":"BCH_BTC"},{"product_code":"ETH_JPY"},{"product_code":"BTCJPY27MAR2020","alias":"BTCJPY_MAT3M"},{"product_code":"BTCJPY28FEB2020","alias":"BTCJPY_MAT1WK"},{"product_code":"BTCJPY06MAR2020","alias":"BTCJPY_MAT2WK"}]'
     http_version: 
-  recorded_at: Tue, 03 Oct 2017 04:04:10 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Mon, 24 Feb 2020 16:37:09 GMT
+- request:
+    method: get
+    uri: https://api.bitflyer.jp/v1/markets/usa
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitflyer.jp
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/10.0
+      X-Ratelimit-Period:
+      - '300'
+      X-Ratelimit-Remaining:
+      - '498'
+      X-Ratelimit-Reset:
+      - '1582562530'
+      Request-Context:
+      - appId=cid-v1:edafd9df-f22e-4349-b71f-1c468550add5
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - sameorigin
+      Content-Security-Policy:
+      - 'default-src http: https: ws: wss: data: ''unsafe-inline'' ''unsafe-eval'''
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Mon, 24 Feb 2020 16:37:10 GMT
+      Content-Length:
+      - '28'
+      Connection:
+      - close
+      Set-Cookie:
+      - _abck=EF25C3B1202B558EB6F8E4879883945D~-1~YAAQwlVqyzFgwVpwAQAAC0APeANJBR52tjGddrNK/g27kFsk+AC2JhYVgEHfhAX9nZvwCjzHvSgL8z9oOT360DC7MxEJM4RbF572L8RdcB0WWlorClrPrdWyo1iGL1QDs6JpUe3TbXAtgt+C26UJSgEkJNrjf/wUH1enwpK4Ixye3bKiUpoJzLJ9YmHneztu629rNpr4+LUGrK0HT4hxN78cwT99YUbIab/KLU1qeFKauLRe6SwlPgsxKOL2lVkatja0bxM1CO7Ng15HhksPK1uMjfq7Lem/mCseEowD9qYTh72DpsWNvkD6Vw==~-1~-1~-1;
+        Domain=.bitflyer.jp; Path=/; Expires=Tue, 23 Feb 2021 16:37:10 GMT; Max-Age=31536000;
+        Secure
+      - bm_sz=FD1E369C0719DFEB41EC8DBEBEBC023E~YAAQwlVqyzBgwVpwAQAAC0APeAa7kHPRphc7Y3pHUlL+aBPS1um13hQKtbfGvBFe19t1vu8fwu0RerSCkcSC97GEYNmO3UojA2TX+wDqZjUaNOEEXrhwXP8w3e4ZPJ7lt1tmkgAFmFZuCq1okqg0x7S3PNWAWRnpItDRbvz8Ap5Zfkv+L4Fp1RatwQki9Mli9g==;
+        Domain=.bitflyer.jp; Path=/; Expires=Mon, 24 Feb 2020 20:37:10 GMT; Max-Age=14400;
+        HttpOnly
+    body:
+      encoding: UTF-8
+      string: '[{"product_code":"BTC_USD"}]'
+    http_version: 
+  recorded_at: Mon, 24 Feb 2020 16:37:09 GMT
+- request:
+    method: get
+    uri: https://api.bitflyer.jp/v1/markets/eu
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitflyer.jp
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/10.0
+      X-Ratelimit-Period:
+      - '300'
+      X-Ratelimit-Remaining:
+      - '497'
+      X-Ratelimit-Reset:
+      - '1582562530'
+      Request-Context:
+      - appId=cid-v1:edafd9df-f22e-4349-b71f-1c468550add5
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - sameorigin
+      Content-Security-Policy:
+      - 'default-src http: https: ws: wss: data: ''unsafe-inline'' ''unsafe-eval'''
+      Strict-Transport-Security:
+      - max-age=31536000
+      Date:
+      - Mon, 24 Feb 2020 16:37:10 GMT
+      Content-Length:
+      - '28'
+      Connection:
+      - close
+      Set-Cookie:
+      - _abck=2EE396B3A8F12EF366E5CA49699F5093~-1~YAAQwlVqyzVgwVpwAQAAgkIPeAMpLNob4I0gvVgrj6BwbRqgslQGbr9bn8bbqCWoKcrJrjQ/JNwiEpbvg/rOG92WcplcSkYNcQjLvcMYJvgO+xpGQHgSQxvPTzJAUtCftkvuK+rPyZknlI1Ka84Noo+HjHNbM37+bYdj+MdbfXJ6BIw2VUKgKi59skZChi1DpXKKZASHxugrBZ5R7QcQgISJaYCx2LfgrY1HEfOuNy7N6jN2xSMFPh+ZwH2oUSBun+jFB0Ld/FR8BQ99se6ASpCc7HzPBHijYekYdnd33ewtJ3iIpdYBcldbIQ==~-1~-1~-1;
+        Domain=.bitflyer.jp; Path=/; Expires=Tue, 23 Feb 2021 16:37:10 GMT; Max-Age=31536000;
+        Secure
+      - bm_sz=9ACBFCC91DA5CCC34C3044B45EEC2A47~YAAQwlVqyzRgwVpwAQAAgkIPeAYiVuYKCIPqluOkAGzk3AMGykCeft9Q7ywrVx2hZ48s9u0Azph9tL+DDyOCZU+kMahW/U41dWCByvQQo/zGTdrbcVfhzkXgtD1kH1JDgLJut9gtNzgQYT76Zu02unRFUwh/VE4bki54D+LflbR8lhv3M2e78r9/ReMPD6+tCg==;
+        Domain=.bitflyer.jp; Path=/; Expires=Mon, 24 Feb 2020 20:37:10 GMT; Max-Age=14400;
+        HttpOnly
+    body:
+      encoding: UTF-8
+      string: '[{"product_code":"BTC_EUR"}]'
+    http_version: 
+  recorded_at: Mon, 24 Feb 2020 16:37:10 GMT
+recorded_with: VCR 4.0.0

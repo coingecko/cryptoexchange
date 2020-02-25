@@ -5,8 +5,23 @@ module Cryptoexchange::Exchanges
         PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitflyer::Market::API_URL}/markets"
 
         def fetch
-          output = super
+          jp_pairs = fetch_via_api(jp_markets)
+          us_pairs = fetch_via_api(us_markets)
+          eu_pairs = fetch_via_api(eu_markets)
+          output = jp_pairs + us_pairs + eu_pairs
           adapt(output)
+        end
+
+        def jp_markets
+          "#{Cryptoexchange::Exchanges::Bitflyer::Market::API_URL}/markets"
+        end
+
+        def us_markets
+          "#{Cryptoexchange::Exchanges::Bitflyer::Market::API_URL}/markets/usa"
+        end
+
+        def eu_markets
+          "#{Cryptoexchange::Exchanges::Bitflyer::Market::API_URL}/markets/eu"
         end
 
         def adapt(output)
