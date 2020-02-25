@@ -47,7 +47,7 @@ Or install it yourself as:
 | Bankera           | Y       | Y [x]      | Y       |         | Y           | Y        | bankera           |       |
 | Bcex              | Y       | Y [x]      | Y       |         | Y           | Y        | bcex              |       |
 | Bcoin             | Y       |            |         |         | Y           | Y        | bcoin             |       |
-| Beaxy             | Y       | Y [x]      | Y       |         | Y           | Y        | beaxy             |       |
+| Beaxy             | Y       |            |         |         | Y           | Y        | beaxy             |       |
 | Bgogo             | Y       | Y [x]      | Y [limit: 20]     |         | Y           | Y        | bgogo             |       |
 | Bhex              | Y       | Y          | Y       |         | Y           | Y        | bhex              |       |
 | Bibo              | Y       | Y [x]      | Y       |         | Y           | Y        | bibo              |       |
