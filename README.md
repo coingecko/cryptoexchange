@@ -480,7 +480,7 @@ Or install it yourself as:
 | WhaleEx           | Y       | N          |         |         | Y           | Y        | whale_ex          |       |
 | Whitebit          | Y       | Y          | Y       |         | Y           |          | whitebit          |       |
 | Worldcore         | Y       | Y          | Y       |         | Y           | Y        | worldcore         |       |
-| Xcoex             | Y       |            |         |         | Y           | Y        | xcoex             |       |
+| Xcoex             | Y       | Y [x]      |         |         | Y           | Y        | xcoex             |       |
 | Xfutures          | Y       | Y [x]      | Y       |         | Y           | Y        | xfutures          |       |
 | Xt                | Y       | Y [x]      | Y       |         | Y           | Y        | xt                |       |
 | Yobit             | Y       | Y [x]      |         |         | Y           | Y        | yobit             |       |
