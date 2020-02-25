@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://public-api.xcoex.com/api/v1/orderbook/BTC_USD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - public-api.xcoex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 25 Feb 2020 04:02:45 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '333'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db75d54d0ef06ded5e0316fcb77cfb3571582603364; expires=Thu, 26-Mar-20
+        04:02:44 GMT; path=/; domain=.xcoex.com; HttpOnly; SameSite=Lax; Secure
+      Cf-Ray:
+      - 56a6c916ae4eaa00-SIN
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Alt-Svc:
+      - h3-25=":443"; ma=86400, h3-24=":443"; ma=86400, h3-23=":443"; ma=86400
+      Server:
+      - cloudflare
+    body:
+      encoding: UTF-8
+      string: '{"timestamp":"1582603312713","bids":[["9570.5","2.11"],["9568.5","2"],["9566","2"],["9564.5","2"],["9564","5.25"],["9562","2"],["9561.5","3"],["9559","2"],["9558.5","5"],["9557","4"]],"asks":[["9573","2.88"],["9575","3"],["9575.5","2"],["9579","2"],["9581","2"],["9581.5","4"],["9584","4"],["9586","5"],["9586.5","4"],["9587","2"]]}
+
+'
+    http_version: 
+  recorded_at: Tue, 25 Feb 2020 04:02:45 GMT
+recorded_with: VCR 4.0.0
