@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://services.beaxy.com/api/v2/symbols/ETHBTC/rate
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - services.beaxy.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 25 Feb 2020 03:39:39 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d2977b313c2641f9aaf015d678cbc9b4f1582601978; expires=Thu, 26-Mar-20
+        03:39:38 GMT; path=/; domain=.beaxy.com; HttpOnly; SameSite=Lax; Secure
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 56a6a7404f00c113-KUL
+    body:
+      encoding: UTF-8
+      string: '{"ask":0.027355,"bid":0.027354,"low24":0.0151565,"high24":0.0316605,"volume24":216.031,"change24":-0.4910966005201986,"price":0.027545,"volume":0.055,"timestamp":1582602000000}'
+    http_version: 
+  recorded_at: Tue, 25 Feb 2020 03:39:39 GMT
+recorded_with: VCR 4.0.0

@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Beaxy
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Beaxy::Market::API_URL}/Symbols"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Beaxy::Market::API_URL}/symbols"
 
         def fetch
           output = super
@@ -11,12 +11,9 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output.map do |pair|
-            base, target = pair["n"].split("-")
-            inst_id = pair['sb']
             Cryptoexchange::Models::MarketPair.new(
-              base:   base,
-              target: target,
-              inst_id: inst_id,
+              base:   pair["baseCurrency"],
+              target: pair["termCurrency"],
               market: Beaxy::Market::NAME
             )
           end
