@@ -16,7 +16,7 @@ RSpec.describe 'Bithumb integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url btc_krw_pair.market, base: btc_krw_pair.base, target: btc_krw_pair.target
-    expect(trade_page_url).to eq "https://www.bithumb.com/trade/order/BTC"
+    expect(trade_page_url).to eq "https://www.bithumb.com/trade/order/BTC_KRW"
   end
 
   it 'fetch ticker' do

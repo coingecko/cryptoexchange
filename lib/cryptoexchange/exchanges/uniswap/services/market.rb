@@ -20,6 +20,10 @@ module Cryptoexchange::Exchanges
         def adapt_all(output)
           output.map do |pair|
             base = pair["tokenSymbol"]
+            
+            # Temporary workaround for duplicate symbols
+            base = "#{pair['tokenSymbol']}-#{pair['token']}" if base == "ULT"
+
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: "ETH",

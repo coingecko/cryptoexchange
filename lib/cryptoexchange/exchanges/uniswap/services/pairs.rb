@@ -16,6 +16,10 @@ module Cryptoexchange::Exchanges
           output.each do |pair|
             base = pair["tokenSymbol"]
             target = "ETH"
+
+            # Temporary workaround for duplicate symbols
+            base = "#{pair['tokenSymbol']}-#{pair['token']}" if base == "ULT"
+
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: base,
                               target: target,

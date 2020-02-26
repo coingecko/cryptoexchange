@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://marketcap.backend.currency.com/api/v1/orderbook?symbol=ETH/BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - marketcap.backend.currency.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 Feb 2020 04:30:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timestamp":1582518625615,"asks":[[0.02739,50.0000],[0.0274,100.0000],[0.027410000000000004,200.0000],[0.027420000000000003,400.0000],[0.027430000000000003,800.0000],[0.028,1.0000],[0.037000000000000005,0.3000],[0.037500000000000006,0.2900],[0.03783,1.0000],[0.038000000000000006,0.2700],[0.04,1.6300]],"bids":[[0.027250000000000003,50.0000],[0.027240000000000004,100.0000],[0.02723,200.0000],[0.02722,400.0000],[0.02721,800.0000],[0.026000000000000002,1.0000],[0.025,1.0000],[0.024,1.0000],[0.023000000000000003,1.0000],[0.022000000000000002,5.0000],[0.021,10.0000],[0.02,22.5000],[0.019000000000000003,4.0000],[0.01838,0.1100]]}'
+    http_version: 
+  recorded_at: Mon, 24 Feb 2020 04:30:27 GMT
+recorded_with: VCR 4.0.0
