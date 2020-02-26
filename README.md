@@ -47,7 +47,7 @@ Or install it yourself as:
 | Bankera           | Y       | Y [x]      | Y       |         | Y           | Y        | bankera           |       |
 | Bcex              | Y       | Y [x]      | Y       |         | Y           | Y        | bcex              |       |
 | Bcoin             | Y       |            |         |         | Y           | Y        | bcoin             |       |
-| Beaxy             | Y       | Y [x]      | Y       |         | Y           | Y        | beaxy             |       |
+| Beaxy             | Y       |            |         |         | Y           | Y        | beaxy             |       |
 | Bgogo             | Y       | Y [x]      | Y [limit: 20]     |         | Y           | Y        | bgogo             |       |
 | Bhex              | Y       | Y          | Y       |         | Y           | Y        | bhex              |       |
 | Bibo              | Y       | Y [x]      | Y       |         | Y           | Y        | bibo              |       |
@@ -480,7 +480,7 @@ Or install it yourself as:
 | WhaleEx           | Y       | N          |         |         | Y           | Y        | whale_ex          |       |
 | Whitebit          | Y       | Y          | Y       |         | Y           |          | whitebit          |       |
 | Worldcore         | Y       | Y          | Y       |         | Y           | Y        | worldcore         |       |
-| Xcoex             | Y       |            |         |         | Y           | Y        | xcoex             |       |
+| Xcoex             | Y       | Y [x]      |         |         | Y           | Y        | xcoex             |       |
 | Xfutures          | Y       | Y [x]      | Y       |         | Y           | Y        | xfutures          |       |
 | Xt                | Y       | Y [x]      | Y       |         | Y           | Y        | xt                |       |
 | Yobit             | Y       | Y [x]      |         |         | Y           | Y        | yobit             |       |
@@ -516,6 +516,7 @@ Or install it yourself as:
 | Fmex              | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  fmex |
 | Gate (Futures)    | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  gate_futures  |
 | GMO (Futures)     | Y | Y  | Y    |  Y  |  N      | Y*  |  N  |       |      | N  | N  |    |     |     |  gmo_futures |
+| Hopex             | Y | N  | Y    |  Y  |  N      | Y   |  Y  |   N   |   N  | N  | N  | N  | N   | N   |  hopex  |
 | Huobi DM          | Y | Y  | Y    |     |  Y      | Y   |  Y  |   Y   |   Y  | Y  | Y  | N  | N   | N   |  huobi_dm  |
 | JexFutures        | Y | Y  | Y    |     |  N      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  jex_futures |
 | Kraken Futures    | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | Y  | Y  | Y  | Y   | Y   |  kraken_futures  |
