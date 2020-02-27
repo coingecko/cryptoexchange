@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://api.abcc.com/api/v2'
       class << self
         def trade_page_url(args = {})
-          "https://abcc.com/markets/#{args[:base]}#{args[:target]}"
+          "https://abcc.com/markets/#{args[:base].downcase}#{args[:target].downcase}"
         end
 
         def separate_symbol(pair)

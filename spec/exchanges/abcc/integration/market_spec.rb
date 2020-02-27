@@ -16,7 +16,7 @@ RSpec.describe 'Abcc integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'abcc', base: ltc_btc_pair.base, target: ltc_btc_pair.target
-    expect(trade_page_url).to eq "https://abcc.com/markets/LTCBTC"
+    expect(trade_page_url).to eq "https://abcc.com/markets/ltcbtc"
   end
 
   it 'fetch ticker' do
