@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://crytrex.com/public_api/stats?currency=ETH&market=BTC
+    uri: https://cryt.crytrex.com/public_api/stats?currency=ETH&market=BTC
     body:
       encoding: UTF-8
       string: ''
@@ -10,39 +10,43 @@ http_interactions:
       Connection:
       - close
       Host:
-      - crytrex.com
+      - cryt.crytrex.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Wed, 14 Nov 2018 01:34:51 GMT
+      - Thu, 27 Feb 2020 06:21:41 GMT
       Server:
       - Apache
-      X-Powered-By:
-      - PHP/7.0.30
-      Cache-Control:
-      - max-age=2592000
-      Expires:
-      - Fri, 14 Dec 2018 01:34:51 GMT
+      X-Frame-Options:
+      - DENY
+      - SAMEORIGIN
+      Upgrade:
+      - h2,h2c
+      Connection:
+      - Upgrade, close
       Vary:
       - Accept-Encoding,User-Agent
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Content-Security-Policy:
+      - allow 'self';
       Access-Control-Allow-Origin:
       - "*"
-      Content-Type:
-      - text/html; charset=UTF-8
-      Via:
-      - 1.1 stark
-      Connection:
-      - close
       Transfer-Encoding:
       - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
     body:
       encoding: UTF-8
-      string: '{"stats":{"market":"BTC","bid":0.03310000,"ask":0.03310000,"last_price":0.03310000,"last_transaction_type":"BUY","last_transaction_currency":"ETH","daily_change":0.00024000,"daily_change_percent":0.72507552870091,"max":0.03310000,"min":0.03286000,"open":0.03310000,"market_cap":0,"global_units":0,"global_volume":0,"24h_volume":0.14577500,"24h_volume_buy":0.14577500,"24h_volume_sell":0.14577500,"1h_volume":0.14577500,"1h_volume_buy":0.14577500,"1h_volume_sell":0.14577500,"currency":"ETH"}}'
+      string: ' {"stats":{"market":"BTC","bid":0.02763,"ask":0.02763,"last_price":0.02763,"last_transaction_type":"BUY","last_transaction_currency":"ETH","daily_change":0,"daily_change_percent":0,"max":0.02763,"min":0.02763,"open":0.02763,"market_cap":0,"global_units":0,"global_volume":0,"24h_volume":0,"24h_volume_buy":0,"24h_volume_sell":0,"1h_volume":0,"1h_volume_buy":0,"1h_volume_sell":0,"currency":"ETH","id":"7605","Full
+        Name":"Ether","type":"PoW"}}'
     http_version: 
-  recorded_at: Wed, 14 Nov 2018 01:34:51 GMT
+  recorded_at: Thu, 27 Feb 2020 06:21:41 GMT
 recorded_with: VCR 4.0.0
