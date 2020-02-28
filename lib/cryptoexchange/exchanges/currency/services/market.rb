@@ -9,7 +9,7 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch
-          output = super(ticker_url)
+          output = super ticker_url
           adapt_all(output)
         end
 

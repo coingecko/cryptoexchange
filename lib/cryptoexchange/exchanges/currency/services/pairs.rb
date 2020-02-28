@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
                 target: pair['quote_currency'],
                 market: Currency::Market::NAME
               })
-          end.compact
+          end
         end
       end
     end
