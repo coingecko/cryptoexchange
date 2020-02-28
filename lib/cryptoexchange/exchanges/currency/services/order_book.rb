@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def order_book_url(market_pair)
-        "#{Cryptoexchange::Exchanges::Currency::Market::API_URL}/api/v1/orderbook?symbol=#{market_pair.base}/#{market_pair.target}"
+        "#{Cryptoexchange::Exchanges::Currency::Market::API_URL}/api/v1/token_crypto/orderbook?symbol=#{market_pair.base}/#{market_pair.target}"
         end
 
         def adapt(output, market_pair)

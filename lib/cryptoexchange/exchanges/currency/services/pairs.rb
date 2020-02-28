@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Currency
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Currency::Market::API_URL}/api/v1/ticker"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Currency::Market::API_URL}/api/v1/token_crypto/ticker"
 
         def fetch
           output = super
@@ -10,14 +10,13 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output.map do |pair, _ticker|
-            base, target = pair.split('/')
-            Cryptoexchange::Models::MarketPair.new(
-              base:   base,
-              target: target,
-              market: Currency::Market::NAME
-            )
-          end
+          output.map do |key, pair|
+              Cryptoexchange::Models::MarketPair.new({
+                base: pair['base_currency'],
+                target: pair['quote_currency'],
+                market: Currency::Market::NAME
+              })
+          end.compact
         end
       end
     end
