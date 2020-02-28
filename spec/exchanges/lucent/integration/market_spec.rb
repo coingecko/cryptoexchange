@@ -1,17 +1,17 @@
 require 'spec_helper'
 
-RSpec.describe 'Cezex integration specs' do
+RSpec.describe 'Lucent integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:gio_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'GIO', target: 'BTC', market: 'cezex') }
+  let(:gio_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'GIO', target: 'BTC', market: 'lucent') }
 
   it 'fetch pairs' do
-    pairs = client.pairs('cezex')
+    pairs = client.pairs('lucent')
     expect(pairs).not_to be_empty
 
     pair = pairs.first
     expect(pair.base).not_to be_nil
     expect(pair.target).not_to be_nil
-    expect(pair.market).to eq 'cezex'
+    expect(pair.market).to eq 'lucent'
   end
 
   it 'fetch ticker' do
@@ -19,7 +19,7 @@ RSpec.describe 'Cezex integration specs' do
 
     expect(ticker.base).to eq 'GIO'
     expect(ticker.target).to eq 'BTC'
-    expect(ticker.market).to eq 'cezex'
+    expect(ticker.market).to eq 'lucent'
     expect(ticker.last).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
