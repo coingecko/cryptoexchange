@@ -4,31 +4,17 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            false
+            true
           end
         end
 
-        def fetch
-          output = super(ticker_url)
-          adapt_all(output)
+        def fetch(market_pair)
+          output = super(ticker_url(market_pair))
+          adapt(market_pair, output)
         end
 
-        def ticker_url
-          "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}/market/prices"
-        end
-
-        def adapt_all(output)
-          output["responseData"].map do |output|
-            base = output["b"] == "LINK" ? "LN" : output["b"]
-            target = output["a"] == "LINK" ? "LN" : output["a"]
-
-            market_pair = Cryptoexchange::Models::MarketPair.new(
-                            base: base,
-                            target: target,
-                            market: Bitbox::Market::NAME
-                          )
-            adapt(market_pair, output)
-          end
+        def ticker_url(market_pair)
+          "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}/market/public/currentTickValue?coinPair=#{market_pair.base.upcase}.#{market_pair.target.upcase}"
         end
 
         def adapt(market_pair, output)
@@ -36,11 +22,12 @@ module Cryptoexchange::Exchanges
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Bitbox::Market::NAME
-          ticker.last = NumericHelper.to_d(output['g'])
-          ticker.low = NumericHelper.to_d(output['f'])
-          ticker.high = NumericHelper.to_d(output['e'])
-          ticker.change = NumericHelper.to_d(output['i'])
-          ticker.volume = NumericHelper.to_d(output['h'])/NumericHelper.to_d(output['g'])
+          ticker.last = NumericHelper.to_d(output['responseData']['last'])
+          ticker.low = NumericHelper.to_d(output['responseData']['low'])
+          ticker.high = NumericHelper.to_d(output['responseData']['high'])
+          ticker.bid = NumericHelper.to_d(output['responseData']['bid'])
+          ticker.ask = NumericHelper.to_d(output['responseData']['ask'])
+          ticker.volume = NumericHelper.to_d(output['responseData']['volume'] / ticker.last)
           ticker.timestamp = nil
           ticker.payload = output
           ticker

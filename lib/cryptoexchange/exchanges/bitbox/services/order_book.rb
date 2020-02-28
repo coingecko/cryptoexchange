@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}/outpost/orderbook?currencyPair=#{market_pair.target}.#{market_pair.base}&orderCount=100"
+          "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}/market/public/orderBooks?coinPair=#{market_pair.base.upcase}.#{market_pair.target.upcase}"
         end
 
         def adapt(output, market_pair)
@@ -33,8 +33,8 @@ module Cryptoexchange::Exchanges
 
         def adapt_orders(orders)
           orders.collect do |order_entry|
-            Cryptoexchange::Models::Order.new(price: order_entry["a"],
-                                              amount: order_entry["b"])
+            Cryptoexchange::Models::Order.new(price: order_entry["price"],
+                                              amount: order_entry["amount"])
           end
         end
       end

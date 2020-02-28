@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Bitbox
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}/market/prices"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitbox::Market::API_URL}/market/public/coins/pairPolicy"
 
         def fetch
           output = super
@@ -11,8 +11,7 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output["responseData"].map do |output|
-            base = output["b"] == "LINK" ? "LN" : output["b"]
-            target = output["a"] == "LINK" ? "LN" : output["a"]
+            target, base = output["coinPairType"].split(".")
 
             Cryptoexchange::Models::MarketPair.new(
               base: base,
