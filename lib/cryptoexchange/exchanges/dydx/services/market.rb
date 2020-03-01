@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Dydx::Market::API_URL}"
+          "#{Cryptoexchange::Exchanges::Dydx::Market::API_URL}/stats/markets"
         end
 
 
