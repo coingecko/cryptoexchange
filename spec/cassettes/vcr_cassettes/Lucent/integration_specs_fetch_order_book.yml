@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lucent.exchange/api/v2/depth?limit=300&market=ethusd
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - lucent.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 01 Mar 2020 06:25:44 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '629'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d73f6e7063b899a30eaf21b8a5bb816f31583043944; expires=Tue, 31-Mar-20
+        06:25:44 GMT; path=/; domain=.lucent.exchange; HttpOnly; SameSite=Lax
+      Status:
+      - 200 OK
+      Cf-Connecting-Ip:
+      - 60.53.185.196
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - MY
+      X-Forwarded-Proto:
+      - https
+      X-Request-Id:
+      - ac9daafe-f01c-4314-8be6-07bae7d751a7
+      Etag:
+      - W/"da23ca9bc72a7659e1a0043c26de6043"
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Cdn-Loop:
+      - cloudflare
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Version:
+      - HTTP/1.1
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Host:
+      - lucent.exchange
+      X-Runtime:
+      - '0.015131'
+      X-Forwarded-For:
+      - 60.53.185.196
+      X-Powered-By:
+      - Phusion Passenger 5.3.6
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 56d0cd6ced4ba96a-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timestamp":1583043944,"asks":[["266.8","27.25325"],["263.24","25.56566"],["259.68","18.47006"],["256.12","14.92929"],["252.57","15.17639"],["249.01","14.36533"],["245.45","15.52685"],["241.9","11.5706"],["238.34","17.03712"],["234.78","28.27636"],["231.22","18.52974"],["222.72","14.0"],["222.67","8.98"],["222.32","14.0"]],"bids":[["222.25","8.98"],["222.13","14.0"],["222.03","14.0"],["213.16","32.95055"],["209.61","32.20138"],["206.05","35.13059"],["202.5","21.16445"],["198.95","29.78258"],["195.4","36.19926"],["191.84","19.52588"],["188.29","14.70493"],["184.74","24.11577"],["181.18","40.64615"],["177.63","26.10434"]]}'
+    http_version: 
+  recorded_at: Sun, 01 Mar 2020 06:25:44 GMT
+recorded_with: VCR 4.0.0

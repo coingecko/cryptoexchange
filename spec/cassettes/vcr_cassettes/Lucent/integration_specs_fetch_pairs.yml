@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lucent.exchange/api/v2/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - lucent.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 01 Mar 2020 06:21:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2202'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dfe3b6a20dccf8e518881e31a91fbd0a21583043711; expires=Tue, 31-Mar-20
+        06:21:51 GMT; path=/; domain=.lucent.exchange; HttpOnly; SameSite=Lax
+      Status:
+      - 200 OK
+      Cf-Connecting-Ip:
+      - 60.53.185.196
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - MY
+      X-Forwarded-Proto:
+      - https
+      X-Request-Id:
+      - a7d6a85a-fd5a-44ab-949c-edba7abcb058
+      Etag:
+      - W/"d642367cea7e24ae4d8c5dd03172fdd2"
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Cdn-Loop:
+      - cloudflare
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Version:
+      - HTTP/1.1
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Host:
+      - lucent.exchange
+      X-Runtime:
+      - '0.023818'
+      X-Forwarded-For:
+      - 60.53.185.196
+      X-Powered-By:
+      - Phusion Passenger 5.3.6
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 56d0c7b9ed49dd8f-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"augusd","name":"AUG/USD","maker_fee":0.0,"taker_fee":0.0,"tick_size":"0.01","min_order_size":1.0,"min_order_size_increment":"0.00001","commission_rate":"0.0"},{"id":"btcusd","name":"BTC/USD","maker_fee":0.05,"taker_fee":0.1,"tick_size":"0.01","min_order_size":1.0,"min_order_size_increment":"0.000001","commission_rate":"0.0"},{"id":"dgdbtc","name":"DGD/BTC","maker_fee":0.05,"taker_fee":0.1,"tick_size":"0.000001","min_order_size":0.0001,"min_order_size_increment":"0.001","commission_rate":"0.0"},{"id":"dgdeth","name":"DGD/ETH","maker_fee":0.05,"taker_fee":0.1,"tick_size":"0.00001","min_order_size":0.001,"min_order_size_increment":"0.001","commission_rate":"0.0"},{"id":"dgdusd","name":"DGD/USD","maker_fee":0.05,"taker_fee":0.1,"tick_size":"0.01","min_order_size":0.1,"min_order_size_increment":"0.00001","commission_rate":"0.0"},{"id":"dgxbtc","name":"DGX/BTC","maker_fee":0.05,"taker_fee":0.1,"tick_size":"0.000001","min_order_size":0.0001,"min_order_size_increment":"0.001","commission_rate":"0.0"},{"id":"dgxusd","name":"DGX/USD","maker_fee":0.05,"taker_fee":0.1,"tick_size":"0.01","min_order_size":0.1,"min_order_size_increment":"0.00001","commission_rate":"0.0"},{"id":"ethusd","name":"ETH/USD","maker_fee":0.05,"taker_fee":0.1,"tick_size":"0.01","min_order_size":1.0,"min_order_size_increment":"0.00001","commission_rate":"0.0"},{"id":"fmfbtc","name":"FMF/BTC","maker_fee":0.05,"taker_fee":0.1,"tick_size":"0.0000000001","min_order_size":0.001,"min_order_size_increment":"0.01","commission_rate":"0.0"},{"id":"ltcusd","name":"LTC/USD","maker_fee":0.05,"taker_fee":0.1,"tick_size":"0.01","min_order_size":1.0,"min_order_size_increment":"0.00001","commission_rate":"0.0"},{"id":"usdcusd","name":"USDC/USD","maker_fee":0.1,"taker_fee":0.1,"tick_size":"0.00001","min_order_size":0.0,"min_order_size_increment":"0.00001","commission_rate":"0.0"},{"id":"usdtusd","name":"USDT/USD","maker_fee":0.1,"taker_fee":0.1,"tick_size":"0.00001","min_order_size":0.0,"min_order_size_increment":"0.00001","commission_rate":"0.0"},{"id":"xrpusd","name":"XRP/USD","maker_fee":0.05,"taker_fee":0.1,"tick_size":"0.00001","min_order_size":1.0,"min_order_size_increment":"0.0001","commission_rate":"0.0"}]'
+    http_version: 
+  recorded_at: Sun, 01 Mar 2020 06:21:51 GMT
+recorded_with: VCR 4.0.0

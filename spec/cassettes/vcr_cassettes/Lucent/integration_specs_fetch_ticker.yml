@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lucent.exchange/api/v2/tickers/ethusd
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - lucent.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 01 Mar 2020 06:21:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '125'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d5c751c31c7f1d213c2d39b910b23f3aa1583043711; expires=Tue, 31-Mar-20
+        06:21:51 GMT; path=/; domain=.lucent.exchange; HttpOnly; SameSite=Lax
+      Status:
+      - 200 OK
+      Cf-Connecting-Ip:
+      - 60.53.185.196
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - MY
+      X-Forwarded-Proto:
+      - https
+      X-Request-Id:
+      - 493de5fc-f8c0-4013-94ac-0ffa8884034c
+      Etag:
+      - W/"9ef131952e07d3f9c311a0572c561f83"
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000
+      Cdn-Loop:
+      - cloudflare
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Version:
+      - HTTP/1.1
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Host:
+      - lucent.exchange
+      X-Runtime:
+      - '0.015226'
+      X-Forwarded-For:
+      - 60.53.185.196
+      X-Powered-By:
+      - Phusion Passenger 5.3.6
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 56d0c7baaed4ddc7-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1583043711,"ticker":{"buy":"222.42","sell":"222.65","low":"216.47","high":"230.41","last":"222.46","vol":"1358.51025"}}'
+    http_version: 
+  recorded_at: Sun, 01 Mar 2020 06:21:51 GMT
+recorded_with: VCR 4.0.0
