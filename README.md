@@ -158,7 +158,6 @@ Or install it yourself as:
 | CCex              | Y       |            |         |         | Y           |          | ccex              |       |
 | Ccx               | Y       |            |         |         | Y           | Y        | ccx               |       |
 | Cex               | Y       | Y [x]      | Y       |         | Y           |          | cex               |       |
-| Cezex             | Y       | N          | N       |         | Y           | Y        | cezex             |       |
 | Cfinex            | Y       | Y          | Y       |         | Y           | Y        | cfinex            |       |
 | Chaince           | Y       |            |         |         | Y           | Y        | chaince           |       |
 | Chainrift         | Y       | Y [x]      | Y       |         | Y           |          | chainrift         |       |
@@ -344,6 +343,7 @@ Or install it yourself as:
 | Livecoin          | Y       | Y [x]      |         |         | Y           |          | livecoin          |       |
 | LocalBitcoins     | Y       | N          | Y [limit: 500]|   | Y           |          | localbitcoins     |  P2P  |
 | LocalTrade        | Y       |            |         |         | Y           | Y        | localtrade        |       |
+| Lucent            | Y       | Y [x]      |         |         | Y           | Y        | lucent            |       |
 | Lukki             | Y       | Y [x]      |         |         | Y           | Y        | lukki             |       |
 | Luno              | Y       |            |         |         | Y           | Y        | luno              |       |
 | Lykke             | Y       | Y          | N       |         | Y           |          | lykke             |       |
