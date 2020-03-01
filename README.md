@@ -438,6 +438,7 @@ Or install it yourself as:
 | Tidex             | Y       | Y [x]      |         |         | Y           |          | tidex             |       |
 | Tokenize          | Y       | Y [x]      |         |         | Y           | Y        | tokenize          |       |
 | Tokenjar          | Y       |            |         |         | Y           |          | tokenjar          |       |
+| Tokenlon          | Y       |            |         |         | Y           |          | tokenlon          |       |
 | Tokenomy          | Y       | Y [x]      | Y       |         | Y           | Y        | tokenomy          |       |
 | TokensNet         | Y       | Y [x]      | N       |         | Y           | Y        | tokens_net        |       |
 | Token Sets        | Y       | Y          | Y       |         | Y           | Y        | token_sets        |       |
