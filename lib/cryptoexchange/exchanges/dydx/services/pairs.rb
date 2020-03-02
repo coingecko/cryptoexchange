@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Dydx
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Dydx::Market::API_URL}"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Dydx::Market::API_URL}/stats/markets"
 
         def fetch
           output = super
