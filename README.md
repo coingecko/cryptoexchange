@@ -248,7 +248,7 @@ Or install it yourself as:
 | Dove Wallet       | Y       | Y [x]      | Y       |         | Y           | Y        | dove_wallet       |       |
 | Dragonex          | Y       | Y [x]      | N       |         | Y           | Y        | dragonex          |       |
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |       |
-| Dydx              | Y       | N          | N       |         | Y           | N        | dydx              |       |
+| Dydx              | Y       | Y [x]      | N       |         | Y           | N        | dydx              |       |
 | Eosex             | Y       | N          | N       |         | Y           | Y        | eosex             |       |
 | Ecxx              | Y       | Y[X]       | N       |         | Y           | Y        | ecxx              |       |
 | Elitex            | Y       | Y[X]       | Y       |         | Y           | Y        | elitex            |       |
