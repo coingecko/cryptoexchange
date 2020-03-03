@@ -38,12 +38,13 @@ module Cryptoexchange::Exchanges
 
         def adapt_orders(orders, target)
           orders.collect do |order_entry|
-            price = order_entry["price"]
+            price = order_entry["price"].to_f
+            amount = order_entry["amount"].to_f / 1_000_000_000_000_000_000
             if target == "USDC"
-              price = price.to_f * 1_000_000_000_000
+              price = price * 1_000_000_000_000
             end
             Cryptoexchange::Models::Order.new(price: price,
-                                              amount: order_entry["amount"],
+                                              amount: amount,
                                               timestamp: nil)
           end
         end
