@@ -213,6 +213,7 @@ Or install it yourself as:
 | Coinxpro          | Y       | Y          |         |         | Y           | Y        | coinxpro          |       |
 | Coinzest          | Y       | Y [x]      |         |         | Y           |          | coinzest          |       |
 | Coinzo            | Y       | Y          | Y       |         | Y           | Y        | coinzo            |       |
+| Compound Finance  | Y       | N          | N       | N       | Y           | N        | compound_finance  |       |
 | COSS              | Y       |            |         |         | Y           | Y        | coss              |       |
 | Cpdax             | Y       | Y [x]      | Y       |         | Y           |          | cpdax             |       |
 | CredoEx           | Y       |            |         |         | Y           |          | credoex           |       |
