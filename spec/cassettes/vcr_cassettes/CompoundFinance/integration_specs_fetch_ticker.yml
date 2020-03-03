@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.compound.finance/api/v2/ctoken?block_timestamp=1580688000&meta=false
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.compound.finance
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Mar 2020 04:37:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '6591'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db447b0b2586fd1db5d7993cc4229f8421583210225; expires=Thu, 02-Apr-20
+        04:37:05 GMT; path=/; domain=.compound.finance; HttpOnly; SameSite=Lax; Secure
+      Cf-Ray:
+      - 56e0a906fb6bdded-SIN
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=30
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - MISS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Expose-Headers:
+      - ''
+      Alt-Svc:
+      - clear
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      X-Request-Id:
+      - FfixT-24shynBRMBDyqh
+      Server:
+      - cloudflare
+    body:
+      encoding: UTF-8
+      string: '{"cToken":[{"borrow_rate":{"value":"0.021770202619532554850103697"},"cash":{"value":"1407696.611871832938820598"},"collateral_factor":{"value":"0.40000000000000000"},"exchange_rate":{"value":"0.020035845964244418"},"interest_rate_model_address":"0xbae04cbf96391086dc643e842b517734e214d698","name":"Compound
+        Augur","number_of_borrowers":118,"number_of_suppliers":1289,"reserves":{"value":"12.60837579965052172220000000"},"supply_rate":{"value":"0.000099330301857060346806888"},"symbol":"cREP","token_address":"0x158079ee67fce2f58472a96584a73c7ab9ac95c1","total_borrows":{"value":"7250.430238087814344692"},"total_supply":{"value":"70620149.31933424"},"underlying_address":"0x1985365e9f78359a9b6ad760e32412f4a445e862","underlying_name":"Augur","underlying_price":{"value":"0.07233695000000000"},"underlying_symbol":"REP"},{"borrow_rate":{"value":"0.084829332671901822475272083"},"cash":{"value":"10647806.708797"},"collateral_factor":{"value":"0.75000000000000000"},"exchange_rate":{"value":"0.020923539546159679"},"interest_rate_model_address":"0x0c3f8df27e1a00b47653fde878d68d35f00714c0","name":"Compound
+        USD Coin","number_of_borrowers":382,"number_of_suppliers":4288,"reserves":{"value":"98053.99160055000000000000000"},"supply_rate":{"value":"0.048845452897117722978681051"},"symbol":"cUSDC","token_address":"0x39aa39c021dfbae8fac545936693ac917d5e7563","total_borrows":{"value":"16959900.281899"},"total_supply":{"value":"1314770521.42185348"},"underlying_address":"0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48","underlying_name":"USD
+        Coin","underlying_price":{"value":"0.0044916567475913500000000000"},"underlying_symbol":"USDC"},{"borrow_rate":{"value":"0.020982117518247513204275408"},"cash":{"value":"391965.490160221605398238"},"collateral_factor":{"value":"0.75000000000000000"},"exchange_rate":{"value":"0.020011346433427754"},"interest_rate_model_address":"0x0c3f8df27e1a00b47653fde878d68d35f00714c0","name":"Compound
+        Ether","number_of_borrowers":298,"number_of_suppliers":3756,"reserves":{"value":"7.195236898915679871100000000"},"supply_rate":{"value":"0.000143099019498539380709596"},"symbol":"cETH","token_address":"0x4ddc2d193948926d02f9b1fe9e1daa0718270ed5","total_borrows":{"value":"3024.099677861390803461"},"total_supply":{"value":"19737921.97917226"},"underlying_address":null,"underlying_name":"Ether","underlying_price":{"value":"1"},"underlying_symbol":"ETH"},{"borrow_rate":{"value":"0.079924492763706737124224395"},"cash":{"value":"14692069.640194599760974473"},"collateral_factor":{"value":"0.75000000000000000"},"exchange_rate":{"value":"0.020199374821298543"},"interest_rate_model_address":"0xec163986cc9a6593d6addcbff5509430d348030f","name":"Compound
+        Dai","number_of_borrowers":366,"number_of_suppliers":5121,"reserves":{"value":"157050.7926096167200473492500"},"supply_rate":{"value":"0.075805686920397304778640684"},"symbol":"cDAI","token_address":"0x5d3a536e4d6dbd6114cc1ead35777bab948e3643","total_borrows":{"value":"15807663.996795916765868913"},"total_supply":{"value":"1502159503.09447652"},"underlying_address":"0x6b175474e89094c44da98b954eedeac495271d0f","underlying_name":"DAI","underlying_price":{"value":"0.004498695203018327"},"underlying_symbol":"DAI"},{"borrow_rate":{"value":"0.042812800323557390487689248"},"cash":{"value":"3885312.221749177154745288"},"collateral_factor":{"value":"0.60000000000000000"},"exchange_rate":{"value":"0.020216041318459173"},"interest_rate_model_address":"0xbae04cbf96391086dc643e842b517734e214d698","name":"Compound
+        Basic Attention Token","number_of_borrowers":132,"number_of_suppliers":2080,"reserves":{"value":"921.0240323482822202453000000"},"supply_rate":{"value":"0.002761844188368662076910342"},"symbol":"cBAT","token_address":"0x6c8c6b02e7b2be14d4fa6022dfd6d75921d90e4e","total_borrows":{"value":"306326.124753963940062275"},"total_supply":{"value":"207296634.21514025"},"underlying_address":"0x0d8775f648430679a709e98d2b0cb6250d2887ef","underlying_name":"Basic
+        Attention Token","underlying_price":{"value":"0.001175247499999999"},"underlying_symbol":"BAT"},{"borrow_rate":{"value":"0.044113873640445152405191530"},"cash":{"value":"4754389.682192814518165440"},"collateral_factor":{"value":"0.60000000000000000"},"exchange_rate":{"value":"0.020052699586985672"},"interest_rate_model_address":"0xbae04cbf96391086dc643e842b517734e214d698","name":"Compound
+        0x","number_of_borrowers":96,"number_of_suppliers":1621,"reserves":{"value":"1815.488436885969470464600000"},"supply_rate":{"value":"0.003006523774053459769320975"},"symbol":"cZRX","token_address":"0xb3319f5d18bc0d84dd1b4825dcde5d5f7266d407","total_borrows":{"value":"397951.565659640178693637"},"total_supply":{"value":"256849494.85595906"},"underlying_address":"0xe41d2489571d322189246dafa5ebde1f4699f498","underlying_name":"0x","underlying_price":{"value":"0.001256628333333333"},"underlying_symbol":"ZRX"},{"borrow_rate":{"value":"0.060103196503798735991475751"},"cash":{"value":"135.59408113"},"collateral_factor":{"value":"0"},"exchange_rate":{"value":"0.020085728228366759"},"interest_rate_model_address":"0xbae04cbf96391086dc643e842b517734e214d698","name":"Compound
+        Wrapped BTC","number_of_borrowers":75,"number_of_suppliers":1335,"reserves":{"value":"0.0663044260000000000000000"},"supply_rate":{"value":"0.006744687660046914945686786"},"symbol":"cWBTC","token_address":"0xc11b1268c1a384e55c48c2391d8d480264a3a7f4","total_borrows":{"value":"19.88643802"},"total_supply":{"value":"7737.54443727"},"underlying_address":"0x2260fac5e5542a773aa44fbcfedf7c193bc2c599","underlying_name":"Wrapped
+        BTC","underlying_price":{"value":"44.2086670583622400000000000"},"underlying_symbol":"WBTC"},{"borrow_rate":{"value":"0.101377678642064194735153448"},"cash":{"value":"1858433.568950470700006743"},"collateral_factor":{"value":"0.75000000000000000"},"exchange_rate":{"value":"0.021220230747829326"},"interest_rate_model_address":"0xa1046abfc2598f48c44fb320d281d3f3c0733c9a","name":"Compound
+        Sai","number_of_borrowers":417,"number_of_suppliers":6836,"reserves":{"value":"26990.23975312675508202665000"},"supply_rate":{"value":"0.036579205341169974479790505"},"symbol":"cSAI","token_address":"0xf5dce57282a584d2746faf1593d3121fcac444dc","total_borrows":{"value":"1178826.620306712488271665"},"total_supply":{"value":"141858492.74103605"},"underlying_address":"0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359","underlying_name":"Sai
+        (Legacy Dai)","underlying_price":{"value":"0.004498695203018327"},"underlying_symbol":"SAI"}],"error":null,"meta":null,"request":{"addresses":[],"block_number":9457487,"block_timestamp":"1580688000","meta":"false","network":"mainnet"}}'
+    http_version: 
+  recorded_at: Tue, 04 Feb 2020 00:00:00 GMT
+recorded_with: VCR 4.0.0
