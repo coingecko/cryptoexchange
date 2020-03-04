@@ -2,19 +2,18 @@ module Cryptoexchange::Exchanges
   module Altilly
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Altilly::Market::API_URL}/public/symbol"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Altilly::Market::API_URL}/public/ticker"
 
         def fetch
           output = super
-          market_pairs = []
-          output.each do |pair|
-            market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair['baseCurrency'],
-                              target: pair['quoteCurrency'],
-                              market: Altilly::Market::NAME
-                            )
-          end
-          market_pairs
+          output.map do |ticker|
+            base, target = Cryptoexchange::Exchanges::Altilly::Market.separate_symbol(ticker["symbol"])
+            Cryptoexchange::Models::MarketPair.new(
+              base: base,
+              target: target,
+              market: Altilly::Market::NAME
+            )
+          end.compact
         end
       end
     end
