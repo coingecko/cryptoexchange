@@ -413,7 +413,7 @@ Or install it yourself as:
 | SatoExchange      | Y       | Y [x]      | Y       |         | Y           |          | satoexchange      |       |
 | SatoWalletEx      | Y       | N          |         |         |             |          | sato_wallet_ex    |       |
 | SaturnNetwork     | Y       |            |         |         | Y           | Y        | saturn_network    |       |
-| Secondbtc         | Y       | N          | N       |         | Y           | Y        | secondbtc         |       |
+| Secondbtc         | Y       |  Y [x]     | N       |         | Y           | Y        | secondbtc         |       |
 | Shortex           | Y       | Y [x]      |         |         | Y           | Y        | shortex           |       |
 | Sigen             | Y       |            |         |         | Y           | Y        | sigen             |       |
 | Simex             | Y       | N          | N       |         | Y           | Y        | simex             |       |
