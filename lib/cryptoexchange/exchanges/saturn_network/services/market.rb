@@ -20,7 +20,10 @@ module Cryptoexchange::Exchanges
         def adapt_all(output)
           output.map do |pair|
             base = pair[1]["symbol"]
-            target = pair[0].split('_').first
+            target, contract_address = pair[0].split('_')
+            if base == "NCOV"
+              base = "#{base}-#{contract_address}"
+            end
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
