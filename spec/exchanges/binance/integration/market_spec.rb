@@ -12,7 +12,7 @@ RSpec.describe 'Binance integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url market, base: btc_usdc_pair.base, target: btc_usdc_pair.target
-    expect(trade_page_url).to eq "https://www.binance.com/trade.html?symbol=#{btc_usdc_pair.base}_#{btc_usdc_pair.target}"
+    expect(trade_page_url).to eq "https://www.binance.com/en/trade/#{btc_usdc_pair.base}_#{btc_usdc_pair.target}"
   end
 
   it 'fetch ticker' do

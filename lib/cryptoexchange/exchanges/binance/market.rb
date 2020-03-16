@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://api.binance.com/api/v1'
 
       def self.trade_page_url(args={})
-        "https://www.binance.com/trade.html?symbol=#{args[:base]}_#{args[:target]}"
+        "https://www.binance.com/en/trade/#{args[:base]}_#{args[:target]}"
       end
     end
   end
