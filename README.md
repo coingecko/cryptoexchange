@@ -519,7 +519,7 @@ Or install it yourself as:
 | Fmex              | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  fmex |
 | Gate (Futures)    | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  gate_futures  |
 | GMO (Futures)     | Y | Y  | Y    |  Y  |  N      | Y*  |  N  |       |      | N  | N  |    |     |     |  gmo_futures |
-| Hopex             | Y | N  | Y    |  Y  |  N      | Y   |  Y  |   N   |   N  | N  | N  | N  | N   | N   |  hopex  |
+| Hopex             | Y | N  | Y    |  Y  |  Y      | Y   |  Y  |   N   |   N  | N  | N  | N  | N   | N   |  hopex  |
 | Huobi DM          | Y | Y  | Y    |     |  Y      | Y   |  Y  |   Y   |   Y  | Y  | Y  | N  | N   | N   |  huobi_dm  |
 | JexFutures        | Y | Y  | Y    |     |  N      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  jex_futures |
 | Kraken Futures    | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | Y  | Y  | Y  | Y   | Y   |  kraken_futures  |
