@@ -164,6 +164,7 @@ Or install it yourself as:
 | ChainEX           | Y       | Y [x]      | Y       |         | Y           |          | chainex           |       |
 | Chaoex            | Y       | Y [x]      | Y       |         | Y           | N        | chaoex            |       |
 | CHBTC             | Y       | Y [x]      |         |         | User-Defined|          | chbtc             |       |
+| Chiliz            | Y       | Y [x]      |         |         | Y           | Y        | chiliz            |       |
 | Citex             | Y       | N          | N       |         | Y           | Y        | citex             |       |
 | Cobinhood         | Y       | Y [x]      |         |         | Y           | Y        | cobinhood         |       |
 | CODEX             | Y       | Y          | Y       |         | Y           |          | codex             |       |
