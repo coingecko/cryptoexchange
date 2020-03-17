@@ -2,6 +2,8 @@ module Cryptoexchange::Exchanges
   module Coinflex
     module Services
       class OrderBook < Cryptoexchange::Services::Market
+        ## TODO: Broken
+        
         class << self
           def supports_individual_ticker_query?
             true

@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Coinflex Futures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:xbt_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XBT', target: 'USDT', inst_id: '51206:51886', contract_interval: "JUL", market: 'coinflex_futures') }
+  let(:ethmar_usdtmar_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USDT', inst_id: 'ETHMAR/USDTMAR', market: 'coinflex_futures') }
 
   it 'fetch pairs' do
     pairs = client.pairs('coinflex_futures')
@@ -17,17 +17,17 @@ RSpec.describe 'Coinflex Futures integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url 'coinflex_futures', base: xbt_usdt_pair.base, target: xbt_usdt_pair.target
-    expect(trade_page_url).to eq "https://coinflex-preview.trade.tt/live/preview"
+    trade_page_url = client.trade_page_url 'coinflex_futures', base: ethmar_usdtmar_pair.base, target: ethmar_usdtmar_pair.target, inst_id: ethmar_usdtmar_pair.inst_id
+    expect(trade_page_url).to eq "https://trading.coinflex.com/ui/trade/ethmar_usdtmar"
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(xbt_usdt_pair)
+    ticker = client.ticker(ethmar_usdtmar_pair)
 
-    expect(ticker.base).to eq xbt_usdt_pair.base
-    expect(ticker.target).to eq xbt_usdt_pair.target
-    expect(ticker.market).to eq xbt_usdt_pair.market
-    expect(ticker.inst_id).to eq '51206:51886'
+    expect(ticker.base).to eq ethmar_usdtmar_pair.base
+    expect(ticker.target).to eq ethmar_usdtmar_pair.target
+    expect(ticker.market).to eq ethmar_usdtmar_pair.market
+    expect(ticker.inst_id).to eq 'ETHMAR/USDTMAR'
     expect(ticker.contract_interval).to_not be nil
     expect(ticker.ask).to be_a Numeric
     expect(ticker.bid).to be_a Numeric
@@ -40,11 +40,13 @@ RSpec.describe 'Coinflex Futures integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(xbt_usdt_pair)
+    pending("Cannot query orderbook using human friendly ID")
+    
+    order_book = client.order_book(ethmar_usdtmar_pair)
 
-    expect(order_book.base).to eq xbt_usdt_pair.base
-    expect(order_book.target).to eq xbt_usdt_pair.target
-    expect(order_book.market).to eq xbt_usdt_pair.market
+    expect(order_book.base).to eq ethmar_usdtmar_pair.base
+    expect(order_book.target).to eq ethmar_usdtmar_pair.target
+    expect(order_book.market).to eq ethmar_usdtmar_pair.market
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
     expect(order_book.asks.first.price).to_not be_nil
@@ -56,8 +58,8 @@ RSpec.describe 'Coinflex Futures integration specs' do
 
   context 'fetch contract stat' do
     it 'fetch futures contract details' do
-      contract_stat = client.contract_stat(xbt_usdt_pair)
-      expect(contract_stat.base).to eq 'XBT'
+      contract_stat = client.contract_stat(ethmar_usdtmar_pair)
+      expect(contract_stat.base).to eq 'ETH'
       expect(contract_stat.target).to eq 'USDT'
       expect(contract_stat.market).to eq 'coinflex_futures'
       expect(contract_stat.contract_type).to eq 'futures'
