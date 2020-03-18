@@ -27,6 +27,7 @@ module Cryptoexchange::Exchanges
                               base: base,
                               target: target,
                               inst_id: inst_id,
+                              contract_interval: "futures",
                               market: Coinflex::Market::NAME
                             )
               adapt(ticker, market_pair)
