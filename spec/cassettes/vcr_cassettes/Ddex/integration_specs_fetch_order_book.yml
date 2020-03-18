@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.ddex.io/v3/markets/ABT-WETH/orderbook
+    uri: https://api.ddex.io/v4/markets/ETH-USDT/orderbook
     body:
       encoding: UTF-8
       string: ''
@@ -40,7 +40,7 @@ http_interactions:
       - kong/0.14.1
     body:
       encoding: UTF-8
-      string: '{"status":0,"desc":"success","data":{"orderBook":{"marketId":"ABT-WETH","bids":[{"price":"0.00059162","amount":"1005"}],"asks":[{"price":"0.00060842","amount":"1012"}]}}}'
+      string: '{"status":0,"desc":"success","template":"","params":null,"data":{"orderbook":{"sequence":119948278,"marketId":"ETH-USDT","bids":[{"price":"112.07","amount":"27.4135"}],"asks":[{"price":"112.73","amount":"22.5384"}]}}}'
     http_version: 
   recorded_at: Wed, 02 Jan 2019 10:25:20 GMT
 recorded_with: VCR 4.0.0
