@@ -12,8 +12,8 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           output['data']['markets'].map do |pair|
             Cryptoexchange::Models::MarketPair.new(
-              base:   pair['baseToken'],
-              target: pair['quoteToken'],
+              base:   pair['baseAsset'],
+              target: pair['quoteAsset'],
               market: Ddex::Market::NAME
             )
           end
