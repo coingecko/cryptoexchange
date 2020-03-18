@@ -4,17 +4,34 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            true
+            false
           end
         end
 
-        def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output, market_pair)
+        def fetch
+          output = super(ticker_url)
+          adapt_all(output)
         end
 
-        def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::CoinflexFutures::Market::API_URL}/tickers/#{market_pair.inst_id}"
+        def ticker_url
+          "#{Cryptoexchange::Exchanges::CoinflexFutures::Market::API_URL}/tickers/"
+        end
+
+        def adapt_all(output)
+          output.map do |ticker|
+            if ticker["name"] != ticker["spot_name"]
+              base, target = ticker["spot_name"].split("/")
+              inst_id = ticker["name"]
+
+              market_pair = Cryptoexchange::Models::MarketPair.new(
+                              base: base,
+                              target: target,
+                              inst_id: inst_id,
+                              market: Coinflex::Market::NAME
+                            )
+              adapt(ticker, market_pair)
+            end
+          end.compact
         end
 
         def adapt(output, market_pair)

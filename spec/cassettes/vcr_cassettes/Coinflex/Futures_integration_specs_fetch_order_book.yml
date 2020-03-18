@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://webapi.coinflex.com/depth/51206:51886
+    uri: https://webapi.coinflex.com/depth/ETHMAR/USDTMAR
     body:
       encoding: UTF-8
       string: ''
@@ -15,33 +15,33 @@ http_interactions:
       - http.rb/5.0.0.pre
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       Date:
-      - Fri, 26 Jul 2019 07:25:43 GMT
-      Content-Type:
-      - application/json; charset=US-ASCII
+      - Tue, 17 Mar 2020 10:21:49 GMT
       Content-Length:
-      - '341'
+      - '0'
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d20a79accd9efe4568b0612ecd7b1f6521564125943; expires=Sat, 25-Jul-20
-        07:25:43 GMT; path=/; domain=.coinflex.com; HttpOnly; Secure
+      - __cfduid=d5931abf8c284b2833818136ce751670b1584440508; expires=Thu, 16-Apr-20
+        10:21:48 GMT; path=/; domain=.coinflex.com; HttpOnly; SameSite=Lax; Secure
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Credentials:
       - 'true'
+      Cf-Cache-Status:
+      - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 4fc4a4294975dd5a-KUL
+      - 5755fd3c58aa7574-KUL
     body:
-      encoding: US-ASCII
-      string: '{"bids":[[95360000,2],[94880000,2],[94460000,100000],[93380000,6262],[93310000,12420],[93240000,19957],[93170000,26688],[93100000,32236],[93030000,38479],[92960000,45424],[90580000,2000000],[89580000,3000000]],"asks":[[101270000,2018],[101280000,6198],[101290000,71556],[104210000,2000000],[105710000,3000000],[118850000,10],[129060000,37]]}'
+      encoding: ASCII-8BIT
+      string: ''
     http_version: 
-  recorded_at: Fri, 26 Jul 2019 07:25:44 GMT
+  recorded_at: Tue, 17 Mar 2020 10:21:46 GMT
 recorded_with: VCR 4.0.0

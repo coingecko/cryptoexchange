@@ -10,19 +10,15 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          coins_list = JSON.parse(HTTP.get("#{Cryptoexchange::Exchanges::CoinflexFutures::Market::API_URL}/assets/"))
-          output.map do |pair|
-            base = coins_list.select {|s| s["id"].to_s.casecmp(pair["base"].to_s) == 0 }.first
-            target = coins_list.select {|s| s["id"].to_s.casecmp(pair["counter"].to_s) == 0 }.first
-            if base.key?("spot") && target.key?("spot")
-              base = base["name"]
-              target = target["name"]
+          output.map do |ticker|
+            if ticker["name"] != ticker["spot_name"]
+              base, target = ticker["spot_name"].split("/")
+              inst_id = ticker["name"]
 
               Cryptoexchange::Models::MarketPair.new(
-                base: base[0..-4],
-                target: target[0..-4],
-                inst_id: "#{pair["base"]}:#{pair["counter"]}",
-                contract_interval: base[-3..-1],
+                base: base,
+                target: target,
+                inst_id: inst_id,
                 market: CoinflexFutures::Market::NAME
               )
             end

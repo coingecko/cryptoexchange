@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://webapi.coinflex.com'
 
       def self.trade_page_url(args={})
-        "https://coinflex-preview.trade.tt/live/preview"
+        "https://trading.coinflex.com/ui/trade/#{args[:inst_id].split('/').join('_').downcase}"
       end
     end
   end
