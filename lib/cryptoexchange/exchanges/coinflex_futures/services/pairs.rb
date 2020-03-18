@@ -19,6 +19,7 @@ module Cryptoexchange::Exchanges
                 base: base,
                 target: target,
                 inst_id: inst_id,
+                contract_interval: "futures",
                 market: CoinflexFutures::Market::NAME
               )
             end
