@@ -1,0 +1,171 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.phemex.com/v1/md/ticker/24hr/all
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.phemex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3008'
+      Connection:
+      - close
+      Date:
+      - Wed, 18 Mar 2020 03:47:51 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding,Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 e56264a77485cec43af6dd7fd04be87e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - HKG60-C1
+      X-Amz-Cf-Id:
+      - cfbyNcN3eDZ5onrUuyHm9GH9YnIRxUmUntcRKny3NakXiH16bjm3EA==
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "error": null,
+          "id": 0,
+          "result": [
+            {
+              "askEp": 54020000,
+              "bidEp": 54015000,
+              "fundingRateEr": 10000,
+              "highEp": 55565000,
+              "indexEp": 54093815,
+              "lastEp": 54015000,
+              "lowEp": 50625000,
+              "markEp": 54096657,
+              "openEp": 52760000,
+              "openInterest": 3411511,
+              "predFundingRateEr": -85270,
+              "symbol": "BTCUSD",
+              "timestamp": 1584503268901918384,
+              "turnoverEv": 2432396576198,
+              "volume": 129948327
+            },
+            {
+              "askEp": 1175500,
+              "bidEp": 1174000,
+              "fundingRateEr": -44175,
+              "highEp": 1203500,
+              "indexEp": 1176532,
+              "lastEp": 1174000,
+              "lowEp": 1126500,
+              "markEp": 1176258,
+              "openEp": 1169000,
+              "openInterest": 395625,
+              "predFundingRateEr": -74875,
+              "symbol": "ETHUSD",
+              "timestamp": 1584503268902773446,
+              "turnoverEv": 20344145895,
+              "volume": 3470427
+            },
+            {
+              "askEp": 1488,
+              "bidEp": 1486,
+              "fundingRateEr": 10000,
+              "highEp": 1528,
+              "indexEp": 1489,
+              "lastEp": 1487,
+              "lowEp": 1431,
+              "markEp": 1489,
+              "openEp": 1466,
+              "openInterest": 559123,
+              "predFundingRateEr": 10000,
+              "symbol": "XRPUSD",
+              "timestamp": 1584503268903370564,
+              "turnoverEv": 20903406575,
+              "volume": 2825402
+            },
+            {
+              "askEp": 19250,
+              "bidEp": 19200,
+              "fundingRateEr": 10000,
+              "highEp": 20770,
+              "indexEp": 19257,
+              "lastEp": 19250,
+              "lowEp": 18080,
+              "markEp": 19258,
+              "openEp": 19140,
+              "openInterest": 1011785,
+              "predFundingRateEr": 10000,
+              "symbol": "LINKUSD",
+              "timestamp": 1584503268903680231,
+              "turnoverEv": 44533029086,
+              "volume": 11415174
+            },
+            {
+              "askEp": 14110,
+              "bidEp": 14060,
+              "fundingRateEr": 10000,
+              "highEp": 14840,
+              "indexEp": 14092,
+              "lastEp": 14110,
+              "lowEp": 13060,
+              "markEp": 14092,
+              "openEp": 14130,
+              "openInterest": 642467,
+              "predFundingRateEr": 10000,
+              "symbol": "XTZUSD",
+              "timestamp": 1584503268904560209,
+              "turnoverEv": 5924333895,
+              "volume": 843252
+            },
+            {
+              "askEp": 347800,
+              "bidEp": 347200,
+              "fundingRateEr": 10000,
+              "highEp": 360400,
+              "indexEp": 347594,
+              "lastEp": 347400,
+              "lowEp": 330800,
+              "markEp": 347612,
+              "openEp": 349700,
+              "openInterest": 1229463,
+              "predFundingRateEr": 10000,
+              "symbol": "LTCUSD",
+              "timestamp": 1584503268905775978,
+              "turnoverEv": 16454199046,
+              "volume": 2371632
+            },
+            {
+              "askEp": 15362500,
+              "bidEp": 15358000,
+              "fundingRateEr": 10000,
+              "highEp": 15481500,
+              "indexEp": 15358230,
+              "lastEp": 15358000,
+              "lowEp": 14751000,
+              "markEp": 15359036,
+              "openEp": 15009500,
+              "openInterest": 107911,
+              "predFundingRateEr": 10000,
+              "symbol": "GOLDUSD",
+              "timestamp": 1584503268906026613,
+              "turnoverEv": 22158966160,
+              "volume": 1462561
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Wed, 18 Mar 2020 03:47:51 GMT
+recorded_with: VCR 4.0.0
