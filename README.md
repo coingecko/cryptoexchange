@@ -179,6 +179,7 @@ Or install it yourself as:
 | Coinbig           | Y       | Y [x]      |         |         | Y           | Y        | coinbig           |       |
 | Coinbit           | Y       | N          | N       |         | Y           | Y        | coinbit           |       |
 | Coincheck         | Y       | Y [x]      |         |         | User-Defined|          | coincheck         |       |
+| CoinDCX           | Y       | Y [x]      | Y       |         | Y           | Y        | coindcx           |       |
 | Coindeal          | Y       | Y [x]      |         |         | Y           |          | coindeal          |       |
 | Coindirect        | Y       | N          | N       |         | Y           | Y        | coindirect        |       |
 | Coineal           | Y       | Y [broken] | Y       |         | Y           |          | coineal           |       |
