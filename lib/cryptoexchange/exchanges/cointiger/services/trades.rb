@@ -8,7 +8,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Cointiger::Market::API_URL}/history/trade?symbol=#{market_pair.base.downcase}#{market_pair.target.downcase}&size=200"
+          "#{Cryptoexchange::Exchanges::Cointiger::Market::API_URL}/history/trade/v2?symbol=#{market_pair.base.downcase}#{market_pair.target.downcase}&size=100"
         end
 
         def adapt(output, market_pair)

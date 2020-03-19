@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Cointiger::Market::API_URL}/depth?symbol=#{market_pair.base.downcase}#{market_pair.target.downcase}&type=step0"
+          "#{Cryptoexchange::Exchanges::Cointiger::Market::API_URL}/depth/v2?symbol=#{market_pair.base.downcase}#{market_pair.target.downcase}&type=step0"
         end
 
         def adapt(output, market_pair)
