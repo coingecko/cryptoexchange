@@ -307,6 +307,7 @@ Or install it yourself as:
 | Huobi ID          | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi_id          |       |
 | Huobi Japan       | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi_japan       |       |
 | Huobi Korea       | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi_korea       |       |
+| Huobi Thailand    | Y       | Y [x]      | Y       |         | Y           | Y        | huobi_thailand       |       |
 | Huobi US          | Y       | Y [x]      | Y [limit: 2000]      |         | Y           | Y        | huobi_us          |       |
 | Ice3x             | Y       | Y          | Y       |         | Y           |          | ice3x             |       |
 | Idax              | Y       | Y [x]      | N       |         | Y           | Y        | idax              |       |
