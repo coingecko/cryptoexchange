@@ -33,7 +33,6 @@ module Cryptoexchange::Exchanges
           contract_stat.base      = market_pair.base
           contract_stat.target    = market_pair.target
           contract_stat.market    = Hopex::Market::NAME
-          contract_stat.open_interest = open_interest_data["posVauleUSD"].delete(',').to_f
           contract_stat.index     = index_data['marketPrice'].to_f
           contract_stat.index_identifier = nil
           contract_stat.index_name = nil
