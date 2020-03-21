@@ -19,7 +19,6 @@ task :console do
 end
 
 task :add_exchange do
-  require "erb"
   require "cryptoexchange/exchange_template"
 
   identifier = ARGV.last
