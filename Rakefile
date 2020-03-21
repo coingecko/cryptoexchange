@@ -19,29 +19,34 @@ task :console do
 end
 
 task :add_exchange do
-  exchange_name = ARGV.last
+  require "erb"
+  require "cryptoexchange/exchange_template"
+
+  identifier = ARGV.last
    
   if ARGV.count == 2
-    FileUtils.mkdir "lib/cryptoexchange/exchanges/#{exchange_name}/"
-    FileUtils.mkdir "lib/cryptoexchange/exchanges/#{exchange_name}/services/"
-    FileUtils.mkdir "spec/exchanges/#{exchange_name}/"
-    FileUtils.mkdir "spec/exchanges/#{exchange_name}/integration/"
+    template = Cryptoexchange::ExchangeTemplate.new(identifier)
 
-    File.new("lib/cryptoexchange/exchanges/#{exchange_name}/market.rb", "a")
-    File.new("lib/cryptoexchange/exchanges/#{exchange_name}/services/pairs.rb", "a")
-    File.new("lib/cryptoexchange/exchanges/#{exchange_name}/services/market.rb", "a")
-    File.new("lib/cryptoexchange/exchanges/#{exchange_name}/services/order_book.rb", "a")
-    File.new("lib/cryptoexchange/exchanges/#{exchange_name}/services/trades.rb", "a")
+    FileUtils.mkdir "lib/cryptoexchange/exchanges/#{identifier}/"
+    FileUtils.mkdir "lib/cryptoexchange/exchanges/#{identifier}/services/"
+    FileUtils.mkdir "spec/exchanges/#{identifier}/"
+    FileUtils.mkdir "spec/exchanges/#{identifier}/integration/"
 
-    File.new("spec/exchanges/#{exchange_name}/market_spec.rb", "a")
-    File.new("spec/exchanges/#{exchange_name}/integration/market_spec.rb", "a")
+    File.open("lib/cryptoexchange/exchanges/#{identifier}/market.rb", "w+") { |file| file.write(template.market) }
+    File.open("lib/cryptoexchange/exchanges/#{identifier}/services/pairs.rb", "w+") { |file| file.write(template.pairs) }
+    File.open("lib/cryptoexchange/exchanges/#{identifier}/services/market.rb", "w+") { |file| file.write(template.tickers) }
+    File.open("lib/cryptoexchange/exchanges/#{identifier}/services/order_book.rb", "w+") { |file| file.write(template.order_book) }
+    File.open("lib/cryptoexchange/exchanges/#{identifier}/services/trades.rb", "w+") { |file| file.write(template.trades) }
 
-    task puts "#{exchange_name} create successfully"
+    File.open("spec/exchanges/#{identifier}/market_spec.rb", "w+") { |file| file.write(template.market_spec) }
+    File.open("spec/exchanges/#{identifier}/integration/market_spec.rb", "w+") { |file| file.write(template.integration_spec) }
+
+    task puts "#{identifier} create successfully"
   else
     task puts "Please insert correct exchange name"
   end
 
-  task exchange_name.to_sym do ; end
+  task identifier.to_sym do ; end
 end
 
 task :reset_cassette do
