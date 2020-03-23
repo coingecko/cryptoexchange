@@ -3,7 +3,7 @@ module Cryptoexchange::Exchanges
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
         def pairs_url
-          "#{Cryptoexchange::Exchanges::Bancor::Market::API_URL}/exchanges?platform=bancor&key=#{Cryptoexchange::Exchanges::Bancor::Market.api_key}"
+          "#{Cryptoexchange::Exchanges::Bancor::Market::API_URL}/currencies/convertiblePairs"
         end
 
         def fetch
@@ -12,11 +12,12 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output['results'].map do |ticker|
-            next if ticker["tokenSymbol"] == nil || ticker["baseSymbol"] == nil
+          pairs_ex_liquidity_pool = output['data'].select { |pair,_| !/BNT/.match?(pair) }
+
+          pairs_ex_liquidity_pool.map do |base, target|
             Cryptoexchange::Models::MarketPair.new(
-              base: ticker["tokenSymbol"],
-              target: ticker["baseSymbol"],
+              base: base,
+              target: target,
               market: Bancor::Market::NAME
             )
           end.compact
