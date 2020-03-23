@@ -23,7 +23,7 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Bancor::Market::NAME
-          ticker.last      = NumericHelper.divide(1, NumericHelper.to_d(output['price']))
+          ticker.last      = NumericHelper.to_d(output['price'])
           ticker.volume    = NumericHelper.flip_volume(NumericHelper.to_d(output['volume24hD']), NumericHelper.to_d(output['price']))
           ticker.timestamp = nil
           ticker.payload   = output

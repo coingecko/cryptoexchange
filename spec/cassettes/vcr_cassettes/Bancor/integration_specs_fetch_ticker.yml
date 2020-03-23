@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bancor.network/0.1/currencies/ETH/ticker?displayCurrencyCode=BNT&fromCurrencyCode=BNT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bancor.network
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - rhino-core-shield
+      Date:
+      - Mon, 23 Mar 2020 14:08:06 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Access-Control-Expose-Headers:
+      - rbz-geo-countrycode
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type, authorization, X-Context-ID, pHash
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE
+      Rbz-Geo-Countrycode:
+      - MY
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Pragma:
+      - no-cache
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"name":"Ethereum","symbol":"ETH","code":"ETH","decimals":18,"totalSupply":"7244187237357846184871","totalSupplyD":"7244.187237357846184871","volume24h":"547333844012299100000000","volume24hD":547333.8440122991,"displayCurrency":"BNT","price":787.8802887839253,"price24h":"772.197998768062400805"}}'
+    http_version: 
+  recorded_at: Mon, 23 Mar 2020 14:08:03 GMT
+recorded_with: VCR 4.0.0
