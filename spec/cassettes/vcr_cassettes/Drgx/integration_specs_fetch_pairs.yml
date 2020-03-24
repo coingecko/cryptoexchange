@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://feeds-api.drgx.io/drgx/tickers.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - feeds-api.drgx.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 24 Mar 2020 17:56:20 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2245'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d42a399920bfd0fe031d4d36692ebea2d1585072579; expires=Thu, 23-Apr-20
+        17:56:19 GMT; path=/; domain=.drgx.io; HttpOnly; SameSite=Lax; Secure
+      X-Amz-Id-2:
+      - JApfL9MC76Xd39sbT4zVHK5D5OVIwErTDR8/0Ux2TDls/ftzIqqxjdDxkcxBzO5sKe10+lebkFg=
+      X-Amz-Request-Id:
+      - FA53D0C0432FB529
+      Cache-Control:
+      - max-age=60, public
+      Last-Modified:
+      - Tue, 24 Mar 2020 16:33:57 GMT
+      Etag:
+      - '"4ed313c194f4bf8a6a86dadccee0e21e"'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 579244a818244dad-BOM
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ETH_BTC":{"last":0.02130982,"lowestAsk":0,"highestBid":0,"percentChange":-9.38342035,"baseVolume":3.38404738,"high24hr":0.02130982,"low24hr":0.02067957,"quoteVolume24hr":0.07302086,"id":"ETH-BTC","quoteVolume":0},"DRG_ETH":{"last":0.000279,"lowestAsk":0.000295,"highestBid":0.000138,"percentChange":0,"baseVolume":46303.61083442,"high24hr":0.000329,"low24hr":0.000273,"quoteVolume24hr":16.70031796,"id":"DRG-ETH","quoteVolume":0},"DRG_BTC":{"last":0.00000699,"lowestAsk":0.00000949,"highestBid":0.00000425,"percentChange":6.97223835,"baseVolume":45181.86737346,"high24hr":0.00000711,"low24hr":0.00000668,"quoteVolume24hr":0.46762152,"id":"DRG-BTC","quoteVolume":0},"DRG_LTC":{"last":0,"lowestAsk":0.0017,"highestBid":0.0005,"percentChange":0,"baseVolume":0,"high24hr":0,"low24hr":0,"quoteVolume24hr":0,"id":"DRG-LTC","quoteVolume":0},"DRG_EUR":{"last":0.05,"lowestAsk":0.14,"highestBid":0,"percentChange":-33.33333333,"baseVolume":21911.66666667,"high24hr":0.06,"low24hr":0.04,"quoteVolume24hr":929.16,"id":"DRG-EUR","quoteVolume":0},"BTC_USDC":{"last":6905,"lowestAsk":0,"highestBid":0,"percentChange":-13.12930965,"baseVolume":0.09431368,"high24hr":6905,"low24hr":6247,"quoteVolume24hr":826.14684437,"id":"BTC-USDC","quoteVolume":0},"ETH_USDC":{"last":155,"lowestAsk":0,"highestBid":0,"percentChange":-18.9278311,"baseVolume":3.48617576,"high24hr":162,"low24hr":134,"quoteVolume24hr":523.63314139,"id":"ETH-USDC","quoteVolume":0},"DRG_XRP":{"last":0.3,"lowestAsk":0.6789,"highestBid":0.1556677,"percentChange":-31.25611916,"baseVolume":7108.43892494,"high24hr":0.301,"low24hr":0.23,"quoteVolume24hr":1843.00000271,"id":"DRG-XRP","quoteVolume":0},"XRP_BTC":{"last":0.00002603,"lowestAsk":0,"highestBid":0,"percentChange":-4.25264186,"baseVolume":1772.14533032,"high24hr":0.00002639,"low24hr":0.0000242,"quoteVolume24hr":0.04316708,"id":"XRP-BTC","quoteVolume":0},"DRG_USDC":{"last":0.054,"lowestAsk":0.299,"highestBid":0,"percentChange":-37.85341617,"baseVolume":13605.69575016,"high24hr":0.062,"low24hr":0.043,"quoteVolume24hr":860.00002019,"id":"DRG-USDC","quoteVolume":0},"DRG_USDT20":{"last":0,"lowestAsk":0.2,"highestBid":0,"percentChange":0,"baseVolume":0,"high24hr":0,"low24hr":0,"quoteVolume24hr":0,"id":"DRG-USDT20","quoteVolume":0}}'
+    http_version: 
+  recorded_at: Tue, 24 Mar 2020 17:56:03 GMT
+recorded_with: VCR 4.0.0

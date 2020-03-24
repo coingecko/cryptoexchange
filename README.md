@@ -250,6 +250,7 @@ Or install it yourself as:
 | Dobitrade         | Y       | Y [x]      | N       |         | Y           | Y        | dobitrade         |       |
 | Dove Wallet       | Y       | Y [x]      | Y       |         | Y           | Y        | dove_wallet       |       |
 | Dragonex          | Y       | Y [x]      | N       |         | Y           | Y        | dragonex          |       |
+| Drgx              | Y       | Y          | Y       |         | Y           | Y        | drgx              |       |
 | Dsx               | Y       | Y          | Y       |         | Y           |          | dsx               |       |
 | Dydx              | Y       | Y [x]      | N       |         | Y           | N        | dydx              |       |
 | Eosex             | Y       | N          | N       |         | Y           | Y        | eosex             |       |
