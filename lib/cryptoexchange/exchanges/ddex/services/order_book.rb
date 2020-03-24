@@ -10,7 +10,7 @@ module Cryptoexchange::Exchanges
 
         def fetch(market_pair)
           output = super(ticker_url(market_pair))
-          adapt(output['data']['orderBook'], market_pair)
+          adapt(output['data']['orderbook'], market_pair)
         end
 
         def ticker_url(market_pair)

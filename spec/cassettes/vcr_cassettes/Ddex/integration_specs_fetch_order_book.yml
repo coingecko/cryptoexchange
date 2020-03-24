@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.ddex.io/v3/markets/ABT-WETH/orderbook
+    uri: https://api.ddex.io/v4/markets/WBTC-USDT/orderbook
     body:
       encoding: UTF-8
       string: ''
@@ -12,35 +12,39 @@ http_interactions:
       Host:
       - api.ddex.io
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
-      Date:
-      - Wed, 02 Jan 2019 10:25:20 GMT
       Content-Type:
-      - application/json; charset=utf-8
+      - text/plain; charset=UTF-8
       Content-Length:
-      - '170'
-      Connection:
-      - close
-      X-Powered-By:
-      - Express
+      - '217'
+      X-Ratelimit-Limit-Minute:
+      - '30'
+      X-Ratelimit-Remaining-Minute:
+      - '29'
       Access-Control-Allow-Origin:
       - "*"
-      Etag:
-      - W/"aa-60ogtw3DRlMisNyasCkltEPZS+Y"
+      Vary:
+      - Origin
+      Date:
+      - Tue, 24 Mar 2020 14:10:34 GMT
       X-Kong-Upstream-Latency:
-      - '7'
+      - '1'
       X-Kong-Proxy-Latency:
-      - '0'
+      - '1'
       Via:
-      - kong/0.14.1
+      - kong/0.14.1, 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
     body:
       encoding: UTF-8
-      string: '{"status":0,"desc":"success","data":{"orderBook":{"marketId":"ABT-WETH","bids":[{"price":"0.00059162","amount":"1005"}],"asks":[{"price":"0.00060842","amount":"1012"}]}}}'
+      string: '{"status":0,"desc":"success","template":"","params":null,"data":{"orderbook":{"sequence":82903658,"marketId":"WBTC-USDT","bids":[{"price":"6684.22","amount":"0.4308"}],"asks":[{"price":"6694.77","amount":"0.2117"}]}}}'
     http_version: 
-  recorded_at: Wed, 02 Jan 2019 10:25:20 GMT
+  recorded_at: Tue, 24 Mar 2020 14:10:30 GMT
 recorded_with: VCR 4.0.0

@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Ddex
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Ddex::Market::API_URL}/markets"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Ddex::Market::API_URL}/markets/tickers"
 
         def fetch
           output = super
@@ -10,10 +10,12 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output['data']['markets'].map do |pair|
+          output['data']['tickers'].map do |pair|
+            base, target = pair['marketId'].split('-')
+
             Cryptoexchange::Models::MarketPair.new(
-              base:   pair['baseToken'],
-              target: pair['quoteToken'],
+              base:   base,
+              target: target,
               market: Ddex::Market::NAME
             )
           end
