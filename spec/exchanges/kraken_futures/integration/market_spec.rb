@@ -4,7 +4,7 @@ RSpec.describe 'kraken_futures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'kraken_futures' }
   let(:eth_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USD', inst_id: "PI_ETHUSD", market: 'kraken_futures', contract_interval: "perpetual") }
-  let(:eth_usd_futures_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USD', inst_id: "FI_ETHUSD_191129", market: 'kraken_futures', contract_interval: "month") }
+  let(:eth_usd_futures_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USD', inst_id: "FI_ETHUSD_191129", market: 'kraken_futures', contract_interval: "futures") }
 
   it 'fetch pairs' do
     pairs = client.pairs('kraken_futures')
@@ -15,7 +15,7 @@ RSpec.describe 'kraken_futures integration specs' do
     expect(pair.target).to_not be nil
     expect(pair.inst_id).to eq 'fi_ltcusd_191129'
     expect(pair.market).to eq 'kraken_futures'
-    expect(pair.contract_interval).to eq "month"
+    expect(pair.contract_interval).to eq "futures"
   end
 
   it 'give trade url' do
