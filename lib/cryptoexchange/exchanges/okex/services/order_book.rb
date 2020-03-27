@@ -14,12 +14,11 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Okex::Market::API_URL}/depth.do?symbol=#{market_pair.base.downcase}_#{market_pair.target.downcase}"
+          "#{Cryptoexchange::Exchanges::Okex::Market::API_URL}/instruments/#{market_pair.base.upcase}-#{market_pair.target.upcase}/book"
         end
 
         def adapt(output, market_pair)
           order_book = Cryptoexchange::Models::OrderBook.new
-          timestamp = Time.now.to_i
 
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
@@ -32,10 +31,8 @@ module Cryptoexchange::Exchanges
 
         def adapt_orders(orders)
           orders.collect do |order_entry|
-            price = order_entry[0]
-            amount = order_entry[1]
-            Cryptoexchange::Models::Order.new(price: price,
-                                              amount: amount,
+            Cryptoexchange::Models::Order.new(price: order_entry[0],
+                                              amount: order_entry[1],
                                               timestamp: nil)
           end
         end

@@ -8,19 +8,19 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Okex::Market::API_URL}/trades.do?symbol=#{market_pair.base.downcase}_#{market_pair.target.downcase}"
+          "#{Cryptoexchange::Exchanges::Okex::Market::API_URL}/instruments/#{market_pair.base.upcase}-#{market_pair.target.upcase}/trades"
         end
 
         def adapt(output, market_pair)
           output.collect do |trade|
             tr = Cryptoexchange::Models::Trade.new
-            tr.trade_id  = trade['tid']
+            tr.trade_id  = trade['trade_id']
             tr.base      = market_pair.base
             tr.target    = market_pair.target
-            tr.type      = trade['type']
+            tr.type      = trade['side']
             tr.price     = trade['price']
-            tr.amount    = trade['amount']
-            tr.timestamp = trade['date'].to_i
+            tr.amount    = trade['size']
+            tr.timestamp = Time.new(trade['timestamp']).to_i
             tr.payload   = trade
             tr.market    = Okex::Market::NAME
             tr
