@@ -16,13 +16,18 @@ module Cryptoexchange::Exchanges
 
               next if target != "USD"
               # skipping non USD pair because volume reported is mixed (some in base, some in target)
+              contract_interval = if output["tag"] == "perpetual"
+                "perpetual"
+              else
+                "futures"
+              end
 
               Cryptoexchange::Models::MarketPair.new(
                 base: base,
                 target: target,
                 inst_id: output["symbol"],
                 market: KrakenFutures::Market::NAME,
-                contract_interval: output["tag"],
+                contract_interval: contract_interval,
               )
             end
           end.compact
