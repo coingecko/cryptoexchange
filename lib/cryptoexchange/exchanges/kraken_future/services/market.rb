@@ -21,11 +21,18 @@ module Cryptoexchange::Exchanges
           output['tickers'].map do |output|
             if output.key?("pair")
               base, target = output["pair"].split(":")
+
+              contract_interval = if output["tag"] == "perpetual"
+                "perpetual"
+              else
+                "futures"
+              end
+              
               market_pair  = Cryptoexchange::Models::MarketPair.new(
                 base: base,
                 target: target,
                 market: KrakenFutures::Market::NAME,
-                contract_interval: output["tag"],
+                contract_interval: contract_interval,
                 inst_id: output["symbol"],
               )
               adapt(market_pair, output)              
