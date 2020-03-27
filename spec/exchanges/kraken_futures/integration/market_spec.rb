@@ -38,7 +38,23 @@ RSpec.describe 'kraken_futures integration specs' do
     expect(ticker.timestamp).to be nil
 
     expect(ticker.payload).to_not be nil
-    expect(ticker.contract_interval).to eq "perpetual"
+  end
+
+  it 'fetch futures ticker' do
+    ticker = client.ticker(eth_usd_futures_pair)
+
+    expect(ticker.base).to eq 'ETH'
+    expect(ticker.target).to eq 'USD'
+    expect(ticker.market).to eq 'kraken_futures'
+    expect(ticker.inst_id).to eq 'fi_ethusd_191129'
+    expect(ticker.contract_interval).to eq "futures"
+    expect(ticker.last).to be_a Numeric
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.ask).to be_a Numeric
+    expect(ticker.volume).to be_a Numeric
+    expect(ticker.timestamp).to be nil
+
+    expect(ticker.payload).to_not be nil
   end
 
   it 'fetch order book' do
