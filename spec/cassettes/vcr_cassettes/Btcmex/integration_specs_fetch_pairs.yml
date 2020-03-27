@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.btcmex.com/api/v1/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.btcmex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Mar 2020 08:44:06 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - master-only
+      Referrer-Policy:
+      - same-origin
+    body:
+      encoding: UTF-8
+      string: '{"XBTUSD":{"baseId":1,"quoteId":825,"lastPrice":6705.5,"quoteVolume":9729842,"baseVolume":1464.60410703,"isFrozen":0,"indexPrice":6711.12,"openInterest":2335983,"fundingRate":0.000100}}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2020 08:44:06 GMT
+recorded_with: VCR 4.0.0
