@@ -1,0 +1,12 @@
+module Cryptoexchange::Exchanges
+  module %{class_name}
+    class Market < Cryptoexchange::Models::Market
+      NAME = '%{identifier}'
+      API_URL = ''
+
+      def self.trade_page_url(args={})
+        "https://exchange.com/#{args[:base]}-#{args[:target]}"
+      end
+    end
+  end
+end
