@@ -1,0 +1,305 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dex.blue/rest/v1/market/SNXDAI/orderbook
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dex.blue
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 31 Mar 2020 04:05:46 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d5fb4647d1685a2e044147e860d699e0c1585627545; expires=Thu, 30-Apr-20
+        04:05:45 GMT; path=/; domain=.dex.blue; HttpOnly; SameSite=Lax; Secure
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      Feature-Policy:
+      - sync-xhr *
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      X-Frame-Options:
+      - sameorigin
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57c7319f6be7d9e0-SIN
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "status": 0,
+          "message": "success",
+          "data": [
+            {
+              "direction": "BUY",
+              "rate": "0.60114",
+              "amount": "197910000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.6005",
+              "amount": "291930000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.59617",
+              "amount": "2372600000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.59419",
+              "amount": "2442900000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.59222",
+              "amount": "2450400000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.59082",
+              "amount": "1749400000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.5895",
+              "amount": "1663300000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.58804",
+              "amount": "1840900000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.58645",
+              "amount": "2018000000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.58528",
+              "amount": "1491700000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.58357",
+              "amount": "2185900000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.58181",
+              "amount": "2262200000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.58019",
+              "amount": "2099200000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.5773",
+              "amount": "2084900000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.57544",
+              "amount": "2451900000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.57354",
+              "amount": "2522200000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.57202",
+              "amount": "2024400000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.57064",
+              "amount": "1842100000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.56953",
+              "amount": "1504300000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.56765",
+              "amount": "2534100000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.60454",
+              "amount": "177620000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.60965",
+              "amount": "2083800000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.61088",
+              "amount": "1448600000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.61233",
+              "amount": "1717200000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.61417",
+              "amount": "2175900000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.61563",
+              "amount": "1715400000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.61736",
+              "amount": "2031600000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.61947",
+              "amount": "1446800000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.62098",
+              "amount": "1738300000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.62221",
+              "amount": "1406700000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.62431",
+              "amount": "2395700000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.62557",
+              "amount": "1425600000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.62716",
+              "amount": "1785500000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.62842",
+              "amount": "1422100000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.62971",
+              "amount": "1441700000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.6317",
+              "amount": "2209600000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.6337",
+              "amount": "2212900000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.63512",
+              "amount": "1567700000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.63663",
+              "amount": "1643900000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.63846",
+              "amount": "1998500000000000000000",
+              "orderCount": 1
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Tue, 31 Mar 2020 04:05:46 GMT
+recorded_with: VCR 4.0.0

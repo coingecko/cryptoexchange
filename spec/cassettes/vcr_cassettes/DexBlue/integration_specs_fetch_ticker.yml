@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dex.blue/rest/v1/market/SNXDAI/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dex.blue
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 31 Mar 2020 04:05:44 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '219'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d4765d2ab281b91a429acff8a15021bcf1585627543; expires=Thu, 30-Apr-20
+        04:05:43 GMT; path=/; domain=.dex.blue; HttpOnly; SameSite=Lax; Secure
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      Feature-Policy:
+      - sync-xhr *
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      X-Frame-Options:
+      - sameorigin
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57c731914cc4d9f0-SIN
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "status": 0,
+          "message": "success",
+          "data": {
+            "rate": "0.5961",
+            "change24h": "12.4",
+            "volumeTraded24h": "1367.7",
+            "volumeQuote24h": "791.32",
+            "high24h": "0.5961",
+            "low24h": "0.56228"
+          }
+        }
+    http_version: 
+  recorded_at: Tue, 31 Mar 2020 04:05:44 GMT
+recorded_with: VCR 4.0.0
