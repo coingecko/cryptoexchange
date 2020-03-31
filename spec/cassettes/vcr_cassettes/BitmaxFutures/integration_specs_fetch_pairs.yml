@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitmax.io/api/pro/v1/ticker?symbol=BTC-PERP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitmax.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 31 Mar 2020 06:58:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '181'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d5030f08c078affdf134edc84ba51f65e1585637930; expires=Thu, 30-Apr-20
+        06:58:50 GMT; path=/; domain=.bitmax.io; HttpOnly; SameSite=Lax; Secure
+      Instance:
+      - 0-_-4
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57c82f2acec4d9d0-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":0,"data":{"symbol":"BTC-PERP","open":"6194.75","close":"6452.75","high":"6596.75","low":"6208.25","volume":"326.1955","ask":["6459.25","0.2585"],"bid":["6457.25","1.2528"]}}'
+    http_version: 
+  recorded_at: Tue, 31 Mar 2020 06:58:50 GMT
+recorded_with: VCR 4.0.0

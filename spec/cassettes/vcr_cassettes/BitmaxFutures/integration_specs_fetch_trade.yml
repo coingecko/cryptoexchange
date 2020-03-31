@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitmax.io/api/pro/v1/trades?symbol=BTC-PERP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitmax.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 31 Mar 2020 06:58:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '911'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3150b866c73e9021e3f6723c9c1e3dfb1585637931; expires=Thu, 30-Apr-20
+        06:58:51 GMT; path=/; domain=.bitmax.io; HttpOnly; SameSite=Lax; Secure
+      Instance:
+      - 7-_-5
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57c82f31084bddab-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":0,"data":{"m":"trades","symbol":"BTC-PERP","data":[{"p":"6448","q":"0.7346","ts":1585637665279,"bm":false,"seqnum":180143985142055710},{"p":"6450.75","q":"0.0050","ts":1585637715101,"bm":false,"seqnum":180143985142056490},{"p":"6450","q":"0.3454","ts":1585637717099,"bm":false,"seqnum":180143985142056524},{"p":"6450","q":"0.0050","ts":1585637718797,"bm":false,"seqnum":180143985142056551},{"p":"6449.75","q":"0.0030","ts":1585637728946,"bm":false,"seqnum":180143985142056684},{"p":"6450","q":"0.0020","ts":1585637739346,"bm":false,"seqnum":180143985142056847},{"p":"6449","q":"0.3454","ts":1585637745860,"bm":false,"seqnum":180143985142056988},{"p":"6449","q":"0.0010","ts":1585637746786,"bm":false,"seqnum":180143985142057003},{"p":"6449","q":"0.1138","ts":1585637757520,"bm":false,"seqnum":180143985142057136},{"p":"6452.75","q":"0.34490","ts":1585637787383,"bm":false,"seqnum":180143985142057600}]}}'
+    http_version: 
+  recorded_at: Tue, 31 Mar 2020 06:58:51 GMT
+recorded_with: VCR 4.0.0
