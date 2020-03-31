@@ -244,6 +244,7 @@ Or install it yourself as:
 | DEx.top           | Y       | Y [x]      | Y       |         | Y           |          | dextop            |       |
 | Deversifi         | Y       |            | Y       |         | Y           | Y        | deversifi         |       |
 | dex-trade         | Y       | Y          | Y       |         | Y           |          | dextrade          |       |
+| dex.blue          | Y       | Y [x]      | Y       |         | Y           | Y        | dex_blue          |       |
 | Dflow             | Y       |            |         |         | Y           | Y        | dflow             |       |
 | Digifinex         | Y       |            |         |         | Y           |          | digifinex         |       |
 | Digitalprice      | Y       | Y          | Y       |         | Y           | Y        | digitalprice      |       |

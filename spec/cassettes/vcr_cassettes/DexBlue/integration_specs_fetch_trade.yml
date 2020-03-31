@@ -1,0 +1,229 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dex.blue/rest/v1/market/SNXDAI/trades
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dex.blue
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 31 Mar 2020 04:05:48 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=da99dd736f9862583a6a014ac1f16a58f1585627547; expires=Thu, 30-Apr-20
+        04:05:47 GMT; path=/; domain=.dex.blue; HttpOnly; SameSite=Lax; Secure
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      Feature-Policy:
+      - sync-xhr *
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      X-Frame-Options:
+      - sameorigin
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57c731adcaf4cbf8-SIN
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "status": 0,
+          "message": "success",
+          "data": {
+            "trades": [
+              {
+                "id": 7694,
+                "market": "SNXDAI",
+                "direction": "BUY",
+                "rate": "0.5961",
+                "amount": "659620000000000000000",
+                "timestamp": 1585590656050
+              },
+              {
+                "id": 7689,
+                "market": "SNXDAI",
+                "direction": "SELL",
+                "rate": "0.56228",
+                "amount": "214890000000000000000",
+                "timestamp": 1585564253626
+              },
+              {
+                "id": 7688,
+                "market": "SNXDAI",
+                "direction": "SELL",
+                "rate": "0.56228",
+                "amount": "493150000000000000000",
+                "timestamp": 1585564253619
+              },
+              {
+                "id": 7641,
+                "market": "SNXDAI",
+                "direction": "SELL",
+                "rate": "0.53053",
+                "amount": "433510000000000000000",
+                "timestamp": 1585355358021
+              },
+              {
+                "id": 7632,
+                "market": "SNXDAI",
+                "direction": "SELL",
+                "rate": "0.57548",
+                "amount": "148940000000000000000",
+                "timestamp": 1585292407512
+              },
+              {
+                "id": 7631,
+                "market": "SNXDAI",
+                "direction": "SELL",
+                "rate": "0.57625",
+                "amount": "230550000000000000000",
+                "timestamp": 1585292407512
+              },
+              {
+                "id": 7613,
+                "market": "SNXDAI",
+                "direction": "BUY",
+                "rate": "0.55229",
+                "amount": "136430000000000000000",
+                "timestamp": 1585222656614
+              },
+              {
+                "id": 7612,
+                "market": "SNXDAI",
+                "direction": "BUY",
+                "rate": "0.55161",
+                "amount": "636350000000000000000",
+                "timestamp": 1585222656614
+              },
+              {
+                "id": 7606,
+                "market": "SNXDAI",
+                "direction": "SELL",
+                "rate": "0.55921",
+                "amount": "1",
+                "timestamp": 1585200833728
+              },
+              {
+                "id": 7605,
+                "market": "SNXDAI",
+                "direction": "SELL",
+                "rate": "0.56081",
+                "amount": "1",
+                "timestamp": 1585200833728
+              },
+              {
+                "id": 7604,
+                "market": "SNXDAI",
+                "direction": "SELL",
+                "rate": "0.562",
+                "amount": "1",
+                "timestamp": 1585200833728
+              },
+              {
+                "id": 7603,
+                "market": "SNXDAI",
+                "direction": "SELL",
+                "rate": "0.56567",
+                "amount": "2",
+                "timestamp": 1585200731904
+              },
+              {
+                "id": 7602,
+                "market": "SNXDAI",
+                "direction": "SELL",
+                "rate": "0.56756",
+                "amount": "1",
+                "timestamp": 1585200731904
+              },
+              {
+                "id": 7601,
+                "market": "SNXDAI",
+                "direction": "SELL",
+                "rate": "0.56893",
+                "amount": "1",
+                "timestamp": 1585200731904
+              },
+              {
+                "id": 7600,
+                "market": "SNXDAI",
+                "direction": "SELL",
+                "rate": "0.57263",
+                "amount": "1",
+                "timestamp": 1585200606791
+              },
+              {
+                "id": 7599,
+                "market": "SNXDAI",
+                "direction": "SELL",
+                "rate": "0.57391",
+                "amount": "1",
+                "timestamp": 1585200606791
+              },
+              {
+                "id": 7598,
+                "market": "SNXDAI",
+                "direction": "SELL",
+                "rate": "0.57884",
+                "amount": "108090000000000000000",
+                "timestamp": 1585200606791
+              },
+              {
+                "id": 7597,
+                "market": "SNXDAI",
+                "direction": "SELL",
+                "rate": "0.5795",
+                "amount": "451830000000000000000",
+                "timestamp": 1585200606791
+              },
+              {
+                "id": 7596,
+                "market": "SNXDAI",
+                "direction": "SELL",
+                "rate": "0.54462",
+                "amount": "487270000000000000000",
+                "timestamp": 1585185080922
+              },
+              {
+                "id": 7595,
+                "market": "SNXDAI",
+                "direction": "SELL",
+                "rate": "0.54462",
+                "amount": "107850000000000000000",
+                "timestamp": 1585185080873
+              }
+            ],
+            "market": "SNXDAI",
+            "limit": 20
+          }
+        }
+    http_version: 
+  recorded_at: Tue, 31 Mar 2020 04:05:48 GMT
+recorded_with: VCR 4.0.0
