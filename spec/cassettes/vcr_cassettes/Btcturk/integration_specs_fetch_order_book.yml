@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.btcturk.com/api/orderbook?pairSymbol=BTCTRY
+    uri: https://api.btcturk.com/api/v2/orderbook?pairSymbol=BTC_TRY
     body:
       encoding: UTF-8
       string: ''
@@ -10,95 +10,56 @@ http_interactions:
       Connection:
       - close
       Host:
-      - www.btcturk.com
+      - api.btcturk.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '1604'
+      Date:
+      - Tue, 31 Mar 2020 05:57:30 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Expires:
-      - "-1"
-      Etag:
-      - '"f68b861f-c293-442e-8dea-eb45bda1ae3f"'
-      Vary:
-      - Accept-Encoding
-      Ratelimit-Limit:
-      - '1'
-      Ratelimit-Remaining:
-      - '0'
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      X-Xss-Protection:
-      - 1;mode=block
-      Content-Security-Policy:
-      - script-src 'self' * www.googletagmanager.com use.fontawesome.com www.googleadservices.com
-        fontawesome.com connect.facebook.net stats.g.doubleclick.net ping.typekit.net
-        p.typekit.net use.typekit.net www.google.com www.youtube.com i.ytimg.com  www.google-analytics.com
-        ajax.googleapis.com www.gstatic.com apis.google.com az732725.vo.msecnd.net
-        bam.nr-data.net 'unsafe-inline' 'unsafe-eval';style-src 'self' fontawesome.com
-        ping.typekit.net www.youtube.com i.ytimg.com p.typekit.net use.typekit.net
-        cdnbtctrader.blob.core.windows.net fonts.googleapis.com az732725.vo.msecnd.net
-        'unsafe-inline';img-src 'self' fontawesome.com www.googleadservices.com www.youtube.com
-        i.ytimg.com www.facebook.com www.google.com.tr stats.g.doubleclick.net googleads.g.doubleclick.net
-        ping.typekit.net p.typekit.net use.typekit.net cdnbtctrader.blob.core.windows.net
-        www.google-analytics.com www.google.com ssl.gstatic.com fontawesome.com az732725.vo.msecnd.net
-        data:;object-src 'self' fontawesome.com ping.typekit.net p.typekit.net www.youtube.com
-        i.ytimg.com use.typekit.net cdnbtctrader.blob.core.windows.net pusher.com;
-      X-Content-Security-Policy:
-      - script-src 'self' * www.googletagmanager.com use.fontawesome.com www.googleadservices.com
-        fontawesome.com connect.facebook.net stats.g.doubleclick.net ping.typekit.net
-        p.typekit.net use.typekit.net www.google.com www.youtube.com i.ytimg.com  www.google-analytics.com
-        ajax.googleapis.com www.gstatic.com apis.google.com az732725.vo.msecnd.net
-        bam.nr-data.net 'unsafe-inline' 'unsafe-eval';style-src 'self' fontawesome.com
-        ping.typekit.net www.youtube.com i.ytimg.com p.typekit.net use.typekit.net
-        cdnbtctrader.blob.core.windows.net fonts.googleapis.com az732725.vo.msecnd.net
-        'unsafe-inline';img-src 'self' fontawesome.com www.googleadservices.com www.youtube.com
-        i.ytimg.com www.facebook.com www.google.com.tr stats.g.doubleclick.net googleads.g.doubleclick.net
-        ping.typekit.net p.typekit.net use.typekit.net cdnbtctrader.blob.core.windows.net
-        www.google-analytics.com www.google.com ssl.gstatic.com fontawesome.com az732725.vo.msecnd.net
-        data:;object-src 'self' fontawesome.com ping.typekit.net p.typekit.net www.youtube.com
-        i.ytimg.com use.typekit.net cdnbtctrader.blob.core.windows.net pusher.com;
-      X-Webkit-Csp:
-      - script-src 'self' * www.googletagmanager.com use.fontawesome.com www.googleadservices.com
-        fontawesome.com connect.facebook.net stats.g.doubleclick.net ping.typekit.net
-        p.typekit.net use.typekit.net www.google.com www.youtube.com i.ytimg.com  www.google-analytics.com
-        ajax.googleapis.com www.gstatic.com apis.google.com az732725.vo.msecnd.net
-        bam.nr-data.net 'unsafe-inline' 'unsafe-eval';style-src 'self' fontawesome.com
-        ping.typekit.net www.youtube.com i.ytimg.com p.typekit.net use.typekit.net
-        cdnbtctrader.blob.core.windows.net fonts.googleapis.com az732725.vo.msecnd.net
-        'unsafe-inline';img-src 'self' fontawesome.com www.googleadservices.com www.youtube.com
-        i.ytimg.com www.facebook.com www.google.com.tr stats.g.doubleclick.net googleads.g.doubleclick.net
-        ping.typekit.net p.typekit.net use.typekit.net cdnbtctrader.blob.core.windows.net
-        www.google-analytics.com www.google.com ssl.gstatic.com fontawesome.com az732725.vo.msecnd.net
-        data:;object-src 'self' fontawesome.com ping.typekit.net p.typekit.net www.youtube.com
-        i.ytimg.com use.typekit.net cdnbtctrader.blob.core.windows.net pusher.com;
-      Access-Control-Allow-Origin:
-      - "*"
-      Request-Context:
-      - appId=cid-v1:d672206b-5ee8-42f2-91b5-713de13155fd
-      Set-Cookie:
-      - ARRAffinity=e547d340f1ffb429f9208fb7c489a76a3fcdf46ad657c6c3eb35de1244f6454c;Path=/;HttpOnly;Domain=www.btcturk.com
-      Date:
-      - Wed, 08 Aug 2018 16:25:36 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
       - close
+      Set-Cookie:
+      - __cfduid=de60bca0e4998dadfac74297a5a66733d1585634249; expires=Thu, 30-Apr-20
+        05:57:29 GMT; path=/; domain=.btcturk.com; HttpOnly; SameSite=Lax
+      Vary:
+      - Accept-Encoding
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      Cache-Control:
+      - public, max-age=1800, s-maxage=1, must-revalidate
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - X-Content-Type-Options, X-Frame-Options, X-XSS-Protection, Date, Transfer-Encoding,
+        Vary
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Api-Supported-Versions:
+      - '2.0'
+      Cf-Cache-Status:
+      - EXPIRED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57c7d54b98677574-KUL
     body:
       encoding: UTF-8
-      string: '{"timestamp":1533745537.0,"bids":[["34580.00","0.30000000"],["34540.00","0.00255299"],["34525.00","0.43364691"],["34524.00","0.11000000"],["34505.00","0.00100000"],["34501.00","0.12764048"],["34500.00","4.73871339"],["34499.00","0.00100000"],["34462.00","0.00086890"],["34401.00","0.00100000"],["34400.00","0.00114553"],["34350.00","0.00755000"],["34311.00","0.20369676"],["34300.00","1.34000000"],["34250.00","0.50000000"],["34249.00","0.04000000"],["34230.00","0.00200000"],["34211.00","0.04000000"],["34200.00","1.38019525"],["34122.00","0.00250000"],["34121.00","0.02922012"],["34110.00","0.01400000"],["34101.00","0.13056256"],["34100.00","0.27850029"],["34051.00","0.00310000"],["34050.00","0.20000000"],["34034.00","0.02000000"],["34008.00","0.02931692"],["34000.00","2.53259177"],["33990.00","0.00200000"]],"asks":[["34694.00","0.02894800"],["34695.00","0.50682468"],["34697.00","0.06140487"],["34700.00","0.06916061"],["34725.00","0.25000000"],["34730.00","0.00003000"],["34734.00","0.19721480"],["34735.00","0.00003000"],["34740.00","0.00003000"],["34745.00","0.00003000"],["34750.00","0.25000000"],["34755.00","0.00003000"],["34760.00","0.00003000"],["34765.00","0.00003000"],["34770.00","0.00003000"],["34775.00","0.00003000"],["34780.00","0.00003000"],["34785.00","0.00003000"],["34790.00","0.00003000"],["34794.00","0.25000000"],["34795.00","0.00003000"],["34799.00","0.21307723"],["34800.00","0.00003000"],["34805.00","0.00003000"],["34810.00","0.00003000"],["34815.00","0.00003000"],["34820.00","0.00003000"],["34825.00","0.00003000"],["34830.00","0.00253000"],["34835.00","0.00003000"]]}'
+      string: '{"data":{"timestamp":1585634250158.0,"bids":[["42101.00","0.44472214"],["42100.00","0.81808131"],["42092.00","0.05085976"],["42090.00","0.44203043"],["42051.00","0.07861194"],["42050.00","1.00356077"],["42046.00","0.02374638"],["42015.00","2.91748480"],["42013.00","0.00502288"],["42002.00","4.38637983"],["42001.00","0.11885461"],["42000.00","0.89108650"],["41993.00","0.00960336"],["41952.00","0.24210330"],["41951.00","0.11899627"],["41902.00","2.03189884"],["41901.00","0.11913827"],["41900.00","0.21441119"],["41871.00","0.08770723"],["41851.00","0.11928060"],["41829.00","0.01548768"],["41820.00","0.69661377"],["41818.00","0.23870182"],["41802.00","0.29266805"],["41801.00","1.12982230"],["41800.00","1.00443602"],["41783.00","0.11091948"],["41751.00","0.14347479"],["41750.00","0.02390905"],["41732.00","20.43091244"],["41722.00","0.17447417"],["41720.00","0.49904221"],["41705.00","0.01677833"],["41702.00","0.07180974"],["41701.00","0.11970966"],["41700.00","0.63401467"],["41699.00","0.01977303"],["41675.00","0.00986825"],["41658.00","0.44422895"],["41651.00","0.01313331"],["41650.00","1.06048810"],["41640.00","9.64829469"],["41621.00","0.00508443"],["41605.00","0.96938838"],["41602.00","0.15924895"],["41575.00","0.26136957"],["41569.00","0.01981086"],["41565.00","0.38926685"],["41550.00","1.03498421"],["41516.00","0.04320675"],["41505.00","0.00420878"],["41502.00","0.00962077"],["41501.00","0.12305264"],["41500.00","3.18125481"],["41499.00","0.02436637"],["41475.00","0.00498199"],["41440.00","0.09521954"],["41406.00","0.00240786"],["41401.00","0.24858035"],["41400.00","1.64269660"],["41370.00","0.15000000"],["41350.00","0.01000000"],["41340.00","0.67302658"],["41334.00","0.02400000"],["41323.00","0.00217405"],["41305.00","0.00420878"],["41301.00","0.00304529"],["41300.00","0.33863793"],["41273.00","0.00283539"],["41251.00","0.04285515"],["41250.00","0.47945213"],["41201.00","0.30305268"],["41200.00","0.25055562"],["41190.00","0.09555511"],["41188.00","0.00545294"],["41161.00","0.00194009"],["41156.00","0.03075425"],["41151.00","0.10425351"],["41150.00","1.03027358"],["41123.00","0.06453292"],["41120.00","0.07962321"],["41116.00","0.00206361"],["41111.00","0.00048561"],["41105.00","0.00420878"],["41102.00","0.00219107"],["41101.00","0.00599878"],["41100.00","0.23717145"],["41078.00","3.85622211"],["41021.00","0.02333626"],["41010.00","0.08524038"],["41002.00","0.03116190"],["41001.00","1.50379336"],["41000.00","9.25816206"],["40988.00","0.00219181"],["40982.00","0.00219107"],["40950.00","0.02548531"],["40911.00","0.00365990"],["40905.00","0.01991281"],["40900.00","0.12559301"],["40885.00","0.20264368"]],"asks":[["42149.00","0.00273827"],["42150.00","0.22919691"],["42173.00","0.05295017"],["42174.00","0.10000000"],["42175.00","0.10000000"],["42177.00","0.10000000"],["42178.00","0.10000000"],["42180.00","0.68236910"],["42199.00","0.35741514"],["42200.00","0.39192495"],["42240.00","1.60485000"],["42241.00","16.70960599"],["42242.00","2.03189882"],["42245.00","0.11723269"],["42250.00","0.21488636"],["42298.00","0.27746254"],["42300.00","0.01175326"],["42311.00","0.04894000"],["42337.00","3.62108391"],["42338.00","0.02366203"],["42339.00","0.34001541"],["42350.00","0.02386333"],["42392.00","20.43091243"],["42393.00","0.34938764"],["42398.00","0.01181427"],["42400.00","1.16931355"],["42444.00","0.80414288"],["42450.00","0.07501545"],["42499.00","0.44428343"],["42500.00","2.58996478"],["42501.00","0.02495508"],["42543.00","0.05421305"],["42550.00","2.89652990"],["42585.00","0.50000000"],["42600.00","0.76666525"],["42649.00","0.01174475"],["42650.00","0.07746442"],["42659.00","9.64829469"],["42700.00","1.01818017"],["42707.00","0.09267587"],["42710.00","0.65801652"],["42729.00","0.13048026"],["42731.00","0.02376617"],["42749.00","0.16088749"],["42750.00","0.36320466"],["42758.00","0.02055499"],["42780.00","0.00756764"],["42789.00","0.04809145"],["42790.00","3.85622210"],["42800.00","6.10327999"],["42807.00","0.21784829"],["42817.00","0.14948806"],["42820.00","0.06201421"],["42829.00","0.13071417"],["42840.00","0.17643041"],["42850.00","3.87257846"],["42851.00","0.50494121"],["42854.00","1.17903124"],["42888.00","0.21490902"],["42890.00","0.02604340"],["42895.00","0.20939691"],["42899.00","0.11912074"],["42900.00","2.50847933"],["42921.00","0.06796651"],["42937.00","0.00100000"],["42950.00","0.76965018"],["42960.00","0.04813886"],["42961.00","0.00250000"],["42966.00","0.00200000"],["42973.00","0.02343454"],["42983.00","0.02563378"],["42986.00","0.04308639"],["42992.00","0.02343454"],["42999.00","1.71287634"],["43000.00","17.16563492"],["43001.00","0.01530626"],["43002.00","0.14609121"],["43015.00","0.00200000"],["43035.00","0.00227500"],["43040.00","0.00151806"],["43050.00","0.02125142"],["43090.00","0.00298602"],["43100.00","0.75879324"],["43102.00","0.10190376"],["43110.00","1.80440895"],["43125.00","0.00200000"],["43140.00","0.00151806"],["43149.00","0.03595401"],["43150.00","0.99388992"],["43177.00","0.17794023"],["43200.00","1.23884103"],["43201.00","1.26227909"],["43216.00","0.00152544"],["43221.00","0.09394025"],["43224.00","0.05203581"],["43225.00","0.13140482"],["43240.00","0.13960595"],["43248.00","0.06468946"],["43249.00","0.06350000"],["43250.00","9.41731218"]]},"success":true,"message":null,"code":0}'
     http_version: 
-  recorded_at: Wed, 08 Aug 2018 16:25:45 GMT
+  recorded_at: Tue, 31 Mar 2020 05:57:28 GMT
 recorded_with: VCR 4.0.0

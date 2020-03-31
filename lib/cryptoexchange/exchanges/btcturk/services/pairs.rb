@@ -7,9 +7,9 @@ module Cryptoexchange::Exchanges
         def fetch
           output = super
           market_pairs = []
-          output.each do |pair|
-            symbol = pair['pair']
-            base, target = symbol.split(/(TRY$)+(.*)|(USDT$)+(.*)/)
+          output['data'].each do |pair|
+            symbol = pair['pairNormalized']
+            base, target = symbol.split('_')
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: base,
                               target: target,
