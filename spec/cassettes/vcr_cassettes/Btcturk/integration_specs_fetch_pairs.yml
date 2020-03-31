@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.btcturk.com/api/ticker
+    uri: https://api.btcturk.com/api/v2/ticker
     body:
       encoding: UTF-8
       string: ''
@@ -10,95 +10,56 @@ http_interactions:
       Connection:
       - close
       Host:
-      - www.btcturk.com
+      - api.btcturk.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Content-Length:
-      - '1415'
+      Date:
+      - Tue, 31 Mar 2020 05:57:29 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Expires:
-      - "-1"
-      Etag:
-      - '"da23449d-f272-44f2-b886-d83885405d7c"'
-      Vary:
-      - Accept-Encoding
-      Ratelimit-Limit:
-      - '10'
-      Ratelimit-Remaining:
-      - '9'
-      Request-Context:
-      - appId=cid-v1:d672206b-5ee8-42f2-91b5-713de13155fd
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      X-Xss-Protection:
-      - 1;mode=block
-      Content-Security-Policy:
-      - script-src 'self' * www.googletagmanager.com use.fontawesome.com www.googleadservices.com
-        fontawesome.com connect.facebook.net stats.g.doubleclick.net ping.typekit.net
-        p.typekit.net use.typekit.net www.google.com www.youtube.com i.ytimg.com  www.google-analytics.com
-        ajax.googleapis.com www.gstatic.com apis.google.com az732725.vo.msecnd.net
-        bam.nr-data.net 'unsafe-inline' 'unsafe-eval';style-src 'self' fontawesome.com
-        ping.typekit.net www.youtube.com i.ytimg.com p.typekit.net use.typekit.net
-        cdnbtctrader.blob.core.windows.net fonts.googleapis.com az732725.vo.msecnd.net
-        'unsafe-inline';img-src 'self' fontawesome.com www.googleadservices.com www.youtube.com
-        i.ytimg.com www.facebook.com www.google.com.tr stats.g.doubleclick.net googleads.g.doubleclick.net
-        ping.typekit.net p.typekit.net use.typekit.net cdnbtctrader.blob.core.windows.net
-        www.google-analytics.com www.google.com ssl.gstatic.com fontawesome.com az732725.vo.msecnd.net
-        data:;object-src 'self' fontawesome.com ping.typekit.net p.typekit.net www.youtube.com
-        i.ytimg.com use.typekit.net cdnbtctrader.blob.core.windows.net pusher.com;
-      X-Content-Security-Policy:
-      - script-src 'self' * www.googletagmanager.com use.fontawesome.com www.googleadservices.com
-        fontawesome.com connect.facebook.net stats.g.doubleclick.net ping.typekit.net
-        p.typekit.net use.typekit.net www.google.com www.youtube.com i.ytimg.com  www.google-analytics.com
-        ajax.googleapis.com www.gstatic.com apis.google.com az732725.vo.msecnd.net
-        bam.nr-data.net 'unsafe-inline' 'unsafe-eval';style-src 'self' fontawesome.com
-        ping.typekit.net www.youtube.com i.ytimg.com p.typekit.net use.typekit.net
-        cdnbtctrader.blob.core.windows.net fonts.googleapis.com az732725.vo.msecnd.net
-        'unsafe-inline';img-src 'self' fontawesome.com www.googleadservices.com www.youtube.com
-        i.ytimg.com www.facebook.com www.google.com.tr stats.g.doubleclick.net googleads.g.doubleclick.net
-        ping.typekit.net p.typekit.net use.typekit.net cdnbtctrader.blob.core.windows.net
-        www.google-analytics.com www.google.com ssl.gstatic.com fontawesome.com az732725.vo.msecnd.net
-        data:;object-src 'self' fontawesome.com ping.typekit.net p.typekit.net www.youtube.com
-        i.ytimg.com use.typekit.net cdnbtctrader.blob.core.windows.net pusher.com;
-      X-Webkit-Csp:
-      - script-src 'self' * www.googletagmanager.com use.fontawesome.com www.googleadservices.com
-        fontawesome.com connect.facebook.net stats.g.doubleclick.net ping.typekit.net
-        p.typekit.net use.typekit.net www.google.com www.youtube.com i.ytimg.com  www.google-analytics.com
-        ajax.googleapis.com www.gstatic.com apis.google.com az732725.vo.msecnd.net
-        bam.nr-data.net 'unsafe-inline' 'unsafe-eval';style-src 'self' fontawesome.com
-        ping.typekit.net www.youtube.com i.ytimg.com p.typekit.net use.typekit.net
-        cdnbtctrader.blob.core.windows.net fonts.googleapis.com az732725.vo.msecnd.net
-        'unsafe-inline';img-src 'self' fontawesome.com www.googleadservices.com www.youtube.com
-        i.ytimg.com www.facebook.com www.google.com.tr stats.g.doubleclick.net googleads.g.doubleclick.net
-        ping.typekit.net p.typekit.net use.typekit.net cdnbtctrader.blob.core.windows.net
-        www.google-analytics.com www.google.com ssl.gstatic.com fontawesome.com az732725.vo.msecnd.net
-        data:;object-src 'self' fontawesome.com ping.typekit.net p.typekit.net www.youtube.com
-        i.ytimg.com use.typekit.net cdnbtctrader.blob.core.windows.net pusher.com;
-      Access-Control-Allow-Origin:
-      - "*"
-      Set-Cookie:
-      - ARRAffinity=82cbea8b60264a0f38b57eed29999b11d1eba567fc07318f282c123a9eaf5300;Path=/;HttpOnly;Domain=www.btcturk.com
-      Date:
-      - Wed, 08 Aug 2018 15:55:12 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
       - close
+      Set-Cookie:
+      - __cfduid=dc3a9143fd3bcabad05048510de4ba4a11585634248; expires=Thu, 30-Apr-20
+        05:57:28 GMT; path=/; domain=.btcturk.com; HttpOnly; SameSite=Lax
+      Vary:
+      - Accept-Encoding
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      Cache-Control:
+      - public, max-age=1800, s-maxage=1, must-revalidate
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - X-Content-Type-Options, X-Frame-Options, X-XSS-Protection, Date, Transfer-Encoding,
+        Vary
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      Api-Supported-Versions:
+      - '2.0'
+      Cf-Cache-Status:
+      - EXPIRED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57c7d5466be92cc1-KUL
     body:
       encoding: UTF-8
-      string: '[{"pair":"BTCTRY","high":37398.0,"last":34600.0,"timestamp":1533743712.0,"bid":34600.0,"volume":404.88,"low":33801.0,"ask":34721.0,"open":37200.0,"average":35412.93,"daily":0.0,"dailyPercent":0.0,"denominatorsymbol":"TRY","numeratorsymbol":"BTC"},{"pair":"BTCUSDT","high":7100.0,"last":6286.0,"timestamp":1533743712.0,"bid":6351.0,"volume":9.94,"low":6286.0,"ask":6544.0,"open":7100.0,"average":6675.68,"daily":0.0,"dailyPercent":0.0,"denominatorsymbol":"USDT","numeratorsymbol":"BTC"},{"pair":"ETHTRY","high":2154.0,"last":1970.0,"timestamp":1533743712.0,"bid":1960.0,"volume":3734.56,"low":1912.0,"ask":1970.0,"open":2145.0,"average":2010.23,"daily":0.0,"dailyPercent":0.0,"denominatorsymbol":"TRY","numeratorsymbol":"ETH"},{"pair":"LTCTRY","high":392.0,"last":344.5,"timestamp":1533743712.0,"bid":337.4,"volume":2877.64,"low":337.0,"ask":344.5,"open":391.98,"average":358.55,"daily":0.0,"dailyPercent":0.0,"denominatorsymbol":"TRY","numeratorsymbol":"LTC"},{"pair":"XRPTRY","high":2.16,"last":1.84,"timestamp":1533743712.0,"bid":1.83,"volume":7608138.33,"low":1.8,"ask":1.84,"open":2.16,"average":1.94,"daily":0.0,"dailyPercent":0.0,"denominatorsymbol":"TRY","numeratorsymbol":"XRP"},{"pair":"USDTTRY","high":5.43,"last":5.33,"timestamp":1533743712.0,"bid":5.33,"volume":611471.82,"low":5.17,"ask":5.37,"open":5.27,"average":5.3,"daily":0.0,"dailyPercent":0.0,"denominatorsymbol":"TRY","numeratorsymbol":"USDT"}]'
+      string: '{"data":[{"pair":"BTCTRY","pairNormalized":"BTC_TRY","timestamp":1585634249342.0,"last":42101.0,"high":42859.0,"low":40477.0,"bid":42101.0,"ask":42150.0,"open":40693.0,"volume":1466.12438446,"average":41803.93,"daily":1457.0,"dailyPercent":3.46,"denominatorSymbol":"TRY","numeratorSymbol":"BTC","order":0},{"pair":"DASHTRY","pairNormalized":"DASH_TRY","timestamp":1585634249342.0,"last":426.5,"high":442.9,"low":412.3,"bid":426.5,"ask":430.6,"open":416.0,"volume":17932.30371422,"average":429.13,"daily":14.6,"dailyPercent":2.52,"denominatorSymbol":"TRY","numeratorSymbol":"DASH","order":0},{"pair":"EOSTRY","pairNormalized":"EOS_TRY","timestamp":1585634249342.0,"last":14.57,"high":14.84,"low":14.12,"bid":14.42,"ask":14.57,"open":14.2,"volume":36614.29348804,"average":14.54,"daily":0.37,"dailyPercent":2.61,"denominatorSymbol":"TRY","numeratorSymbol":"EOS","order":0},{"pair":"ETHTRY","pairNormalized":"ETH_TRY","timestamp":1585634249342.0,"last":858.0,"high":880.0,"low":845.0,"bid":858.0,"ask":864.0,"open":845.0,"volume":14427.12370137,"average":867.6,"daily":19.0,"dailyPercent":1.54,"denominatorSymbol":"TRY","numeratorSymbol":"ETH","order":0},{"pair":"LINKTRY","pairNormalized":"LINK_TRY","timestamp":1585634249342.0,"last":14.03,"high":14.39,"low":13.68,"bid":14.0,"ask":14.03,"open":13.79,"volume":275052.67160014,"average":14.08,"daily":0.24,"dailyPercent":1.74,"denominatorSymbol":"TRY","numeratorSymbol":"LINK","order":0},{"pair":"LTCTRY","pairNormalized":"LTC_TRY","timestamp":1585634249342.0,"last":255.1,"high":260.0,"low":247.5,"bid":253.9,"ask":254.6,"open":248.9,"volume":14711.16099899,"average":254.83,"daily":5.7,"dailyPercent":2.49,"denominatorSymbol":"TRY","numeratorSymbol":"LTC","order":0},{"pair":"NEOTRY","pairNormalized":"NEO_TRY","timestamp":1585634249342.0,"last":43.0,"high":43.92,"low":42.0,"bid":43.01,"ask":43.57,"open":42.01,"volume":18120.29964679,"average":43.0,"daily":1.56,"dailyPercent":2.36,"denominatorSymbol":"TRY","numeratorSymbol":"NEO","order":0},{"pair":"USDTTRY","pairNormalized":"USDT_TRY","timestamp":1585634249342.0,"last":6.575,"high":6.599,"low":6.52,"bid":6.567,"ask":6.575,"open":6.52,"volume":1352501.27313182,"average":6.57,"daily":0.055,"dailyPercent":0.84,"denominatorSymbol":"TRY","numeratorSymbol":"USDT","order":0},{"pair":"XLMTRY","pairNormalized":"XLM_TRY","timestamp":1585634249342.0,"last":0.2635,"high":0.2675,"low":0.2565,"bid":0.263,"ask":0.2652,"open":0.2571,"volume":7903716.24697972,"average":0.26,"daily":0.0081,"dailyPercent":2.49,"denominatorSymbol":"TRY","numeratorSymbol":"XLM","order":0},{"pair":"XRPTRY","pairNormalized":"XRP_TRY","timestamp":1585634249342.0,"last":1.127,"high":1.145,"low":1.103,"bid":1.127,"ask":1.13,"open":1.106,"volume":10035013.31222542,"average":1.13,"daily":0.024,"dailyPercent":1.90,"denominatorSymbol":"TRY","numeratorSymbol":"XRP","order":0},{"pair":"ATOMTRY","pairNormalized":"ATOM_TRY","timestamp":1585634249342.0,"last":12.84,"high":13.25,"low":12.64,"bid":12.78,"ask":12.95,"open":12.77,"volume":87181.38472329,"average":12.99,"daily":0.18,"dailyPercent":0.55,"denominatorSymbol":"TRY","numeratorSymbol":"ATOM","order":0},{"pair":"XTZTRY","pairNormalized":"XTZ_TRY","timestamp":1585634249342.0,"last":10.4,"high":10.79,"low":10.1,"bid":10.4,"ask":10.43,"open":10.22,"volume":219217.85168710,"average":10.49,"daily":0.21,"dailyPercent":1.76,"denominatorSymbol":"TRY","numeratorSymbol":"XTZ","order":0},{"pair":"BTCUSDT","pairNormalized":"BTC_USDT","timestamp":1585634249342.0,"last":6433.0,"high":6590.0,"low":6180.0,"bid":6410.0,"ask":6432.0,"open":6203.0,"volume":302.24942705,"average":6383.7,"daily":229.0,"dailyPercent":3.71,"denominatorSymbol":"USDT","numeratorSymbol":"BTC","order":0},{"pair":"DASHUSDT","pairNormalized":"DASH_USDT","timestamp":1585634249342.0,"last":65.9,"high":67.0,"low":63.0,"bid":63.9,"ask":66.4,"open":63.0,"volume":608.66267374,"average":65.83,"daily":3.4,"dailyPercent":4.60,"denominatorSymbol":"USDT","numeratorSymbol":"DASH","order":0},{"pair":"EOSUSDT","pairNormalized":"EOS_USDT","timestamp":1585634249342.0,"last":2.269,"high":2.269,"low":2.191,"bid":2.166,"ask":2.246,"open":2.191,"volume":470.23000000,"average":2.23,"daily":0.055,"dailyPercent":3.56,"denominatorSymbol":"USDT","numeratorSymbol":"EOS","order":0},{"pair":"ETHUSDT","pairNormalized":"ETH_USDT","timestamp":1585634249342.0,"last":131.3,"high":134.8,"low":129.2,"bid":131.3,"ask":131.9,"open":129.3,"volume":1624.19163842,"average":132.5,"daily":2.6,"dailyPercent":1.55,"denominatorSymbol":"USDT","numeratorSymbol":"ETH","order":0},{"pair":"LINKUSDT","pairNormalized":"LINK_USDT","timestamp":1585634249342.0,"last":2.093,"high":2.186,"low":2.053,"bid":2.093,"ask":2.17,"open":2.066,"volume":363.39000000,"average":2.12,"daily":0.104,"dailyPercent":1.31,"denominatorSymbol":"USDT","numeratorSymbol":"LINK","order":0},{"pair":"LTCUSDT","pairNormalized":"LTC_USDT","timestamp":1585634249342.0,"last":39.45,"high":39.45,"low":38.0,"bid":38.35,"ask":39.24,"open":38.0,"volume":124.02763487,"average":38.89,"daily":1.24,"dailyPercent":3.82,"denominatorSymbol":"USDT","numeratorSymbol":"LTC","order":0},{"pair":"NEOUSDT","pairNormalized":"NEO_USDT","timestamp":1585634249342.0,"last":6.5,"high":6.74,"low":6.5,"bid":6.54,"ask":6.69,"open":6.5,"volume":361.58360000,"average":6.59,"daily":0.19,"dailyPercent":0.00,"denominatorSymbol":"USDT","numeratorSymbol":"NEO","order":0},{"pair":"XLMUSDT","pairNormalized":"XLM_USDT","timestamp":1585634249342.0,"last":0.03985,"high":0.0411,"low":0.0396,"bid":0.03971,"ask":0.04089,"open":0.0396,"volume":65755.67440000,"average":0.04,"daily":0.00129,"dailyPercent":0.63,"denominatorSymbol":"USDT","numeratorSymbol":"XLM","order":0},{"pair":"XRPUSDT","pairNormalized":"XRP_USDT","timestamp":1585634249342.0,"last":0.1711,"high":0.1748,"low":0.169,"bid":0.1712,"ask":0.1726,"open":0.169,"volume":206560.28920000,"average":0.17,"daily":0.0036,"dailyPercent":1.24,"denominatorSymbol":"USDT","numeratorSymbol":"XRP","order":0},{"pair":"ATOMUSDT","pairNormalized":"ATOM_USDT","timestamp":1585634249342.0,"last":2.0,"high":2.0,"low":2.0,"bid":1.938,"ask":2.008,"open":2.0,"volume":3659.75000000,"average":2.0,"daily":0.008,"dailyPercent":0.00,"denominatorSymbol":"USDT","numeratorSymbol":"ATOM","order":0},{"pair":"DASHBTC","pairNormalized":"DASH_BTC","timestamp":1585634249342.0,"last":0.01047,"high":0.01047,"low":0.01008,"bid":0.01,"ask":0.01044,"open":0.0101,"volume":59.90814197,"average":0.01,"daily":0.00034,"dailyPercent":3.66,"denominatorSymbol":"BTC","numeratorSymbol":"DASH","order":0},{"pair":"EOSBTC","pairNormalized":"EOS_BTC","timestamp":1585634249342.0,"last":0.000341,"high":0.0003578,"low":0.000341,"bid":0.000341,"ask":0.000351,"open":0.0003578,"volume":42.32690000,"average":0.0,"daily":-0.0000068,"dailyPercent":-4.70,"denominatorSymbol":"BTC","numeratorSymbol":"EOS","order":0},{"pair":"ETHBTC","pairNormalized":"ETH_BTC","timestamp":1585634249342.0,"last":0.0205,"high":0.0215,"low":0.0205,"bid":0.02032,"ask":0.021,"open":0.021,"volume":66.57861256,"average":0.02,"daily":0.0,"dailyPercent":-2.38,"denominatorSymbol":"BTC","numeratorSymbol":"ETH","order":0},{"pair":"LINKBTC","pairNormalized":"LINK_BTC","timestamp":1585634249342.0,"last":0.0003341,"high":0.000344,"low":0.0003341,"bid":0.0003321,"ask":0.0003341,"open":0.000344,"volume":731.69430000,"average":0.0,"daily":-0.0000099,"dailyPercent":-2.88,"denominatorSymbol":"BTC","numeratorSymbol":"LINK","order":0},{"pair":"LTCBTC","pairNormalized":"LTC_BTC","timestamp":1585634249342.0,"last":0.006061,"high":0.006151,"low":0.006061,"bid":0.005955,"ask":0.006061,"open":0.006151,"volume":67.84963205,"average":0.01,"daily":-0.00009,"dailyPercent":-1.46,"denominatorSymbol":"BTC","numeratorSymbol":"LTC","order":0},{"pair":"NEOBTC","pairNormalized":"NEO_BTC","timestamp":1585634249342.0,"last":0.00101,"high":0.00105,"low":0.001005,"bid":0.001,"ask":0.001047,"open":0.001005,"volume":36.64344064,"average":0.0,"daily":0.000042,"dailyPercent":0.50,"denominatorSymbol":"BTC","numeratorSymbol":"NEO","order":0},{"pair":"XLMBTC","pairNormalized":"XLM_BTC","timestamp":1585634249342.0,"last":0.00000618,"high":0.00000647,"low":0.00000618,"bid":0.00000618,"ask":0.00000646,"open":0.00000632,"volume":166418.51840000,"average":0.0,"daily":0.00000014,"dailyPercent":-2.22,"denominatorSymbol":"BTC","numeratorSymbol":"XLM","order":0},{"pair":"XRPBTC","pairNormalized":"XRP_BTC","timestamp":1585634249342.0,"last":0.00002709,"high":0.00002758,"low":0.000027,"bid":0.00002656,"ask":0.00002717,"open":0.00002734,"volume":20726.05410000,"average":0.0,"daily":-0.00000017,"dailyPercent":-0.91,"denominatorSymbol":"BTC","numeratorSymbol":"XRP","order":0},{"pair":"ATOMBTC","pairNormalized":"ATOM_BTC","timestamp":1585634249342.0,"last":0.0003051,"high":0.000318,"low":0.0003051,"bid":0.0003044,"ask":0.000314,"open":0.000318,"volume":108.26180000,"average":0.0,"daily":-0.000004,"dailyPercent":-4.06,"denominatorSymbol":"BTC","numeratorSymbol":"ATOM","order":0}],"success":true,"message":"","code":0}'
     http_version: 
-  recorded_at: Wed, 08 Aug 2018 15:55:20 GMT
+  recorded_at: Tue, 31 Mar 2020 05:57:28 GMT
 recorded_with: VCR 4.0.0

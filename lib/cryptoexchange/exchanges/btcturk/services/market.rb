@@ -18,9 +18,9 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          output.map do |pair|
-            symbol = pair['pair']
-            base, target = symbol.split(/(TRY$)+(.*)|(USDT$)+(.*)/)
+          output['data'].map do |pair|
+            symbol = pair['pairNormalized']
+            base, target = symbol.split('_')
             market_pair  = Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
