@@ -7,6 +7,12 @@ module Cryptoexchange::Exchanges
       def self.trade_page_url(args={})
         "https://dex.blue/trading/##{args[:base]}/#{args[:target]}"
       end
+
+      def self.get_decimal(base)
+        output = JSON.parse(HTTP.get("https://api.dex.blue/rest/v1/listed"))
+        decimal = output["data"]["tokens"]["#{base}"]["decimals"].to_i
+        10 ** decimal
+      end 
     end
   end
 end

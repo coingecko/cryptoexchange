@@ -13,6 +13,7 @@ module Cryptoexchange::Exchanges
 
         def adapt(output, market_pair)
           output['data']['trades'].collect do |trade|
+            decimal = Cryptoexchange::Exchanges::DexBlue::Market.get_decimal(market_pair.base)
             tr = Cryptoexchange::Models::Trade.new
             tr.trade_id  = trade['id']
             tr.base      = market_pair.base
@@ -20,7 +21,7 @@ module Cryptoexchange::Exchanges
             tr.market    = DexBlue::Market::NAME
             tr.type      = trade['direction'].downcase
             tr.price     = NumericHelper.to_d trade['rate']
-            tr.amount    = NumericHelper.to_d(trade['amount']) / 1000000000000000000
+            tr.amount    = NumericHelper.to_d(trade['amount']) / decimal
             tr.timestamp = trade['timestamp'].to_i / 1000
             tr.payload   = trade
             tr
