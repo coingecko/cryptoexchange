@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-RSpec.describe 'LiquidPerpetual integration specs' do
+RSpec.describe 'LiquidDerivatives integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:market) { 'liquid_perpetual' }
-  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: market, inst_id: "604", contract_interval: "perpetual") }
+  let(:market) { 'liquid_derivatives' }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: market, inst_id: "P-BTCUSD", contract_interval: "perpetual") }
 
   it 'fetch pairs' do
     pairs = client.pairs(market)
@@ -19,7 +19,7 @@ RSpec.describe 'LiquidPerpetual integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url market, inst_id: btc_usd_pair.inst_id
-    expect(trade_page_url).to eq "https://app.liquid.com/perpetual"
+    expect(trade_page_url).to eq "https://app.liquid.com/perpetual/P-BTCUSD"
   end
 
   it 'fetch ticker' do

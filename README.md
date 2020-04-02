@@ -534,7 +534,7 @@ Or install it yourself as:
 | Prime XBT         | Y | Y  | Y    |  Y  |  N      | Y   |  N  |       |      | N  | N  | N  | N   | N   |  prime_xbt  |
 | BaseFEX           | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  basefex  |
 | Phemex            | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | N   | N   |  phemex  |
-| Liquid (Perpetual) | Y | Y  | Y    |  Y  |  N      | Y   |  Y  |       |      | N  | N  | Y  | N   | N   |  liquid_perpetual  |
+| Liquid (Derivatives) | Y | Y  | Y    |  Y  |  N      | Y   |  Y  |       |      | N  | N  | Y  | N   | N   |  liquid_derivatives  |
 
 *Legend*
 
