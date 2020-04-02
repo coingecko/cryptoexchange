@@ -18,39 +18,29 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output, market_pair)
+          decimal = Cryptoexchange::Exchanges::DexBlue::Market.get_decimal(market_pair.base)
           order_book = Cryptoexchange::Models::OrderBook.new
 
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
           order_book.market    = DexBlue::Market::NAME
-          order_book.asks      = adapt_asks_orders output['data']
-          order_book.bids      = adapt_bids_orders output['data']
+          order_book.asks      = adapt_orders(output['data'], "SELL", decimal)
+          order_book.bids      = adapt_orders(output['data'], "BUY", decimal)
           order_book.timestamp = nil
           order_book.payload   = output
           order_book
         end
 
-        def adapt_asks_orders(orders)
+        def adapt_orders(orders, type, decimal)
           orders.collect do |order_entry|
-            if order_entry["direction"] == "SELL"
+            if order_entry["direction"] == type
               Cryptoexchange::Models::Order.new(
                 price:  order_entry['rate'].to_f,
-                amount: order_entry['amount'].to_f / 10000000000000000000
+                amount: order_entry['amount'].to_f / decimal
               )
             end
           end.compact
         end
-
-        def adapt_bids_orders(orders)
-          orders.collect do |order_entry|
-            if order_entry["direction"] == "BUY"
-              Cryptoexchange::Models::Order.new(
-                price:  order_entry['rate'].to_f,
-                amount: order_entry['amount'].to_f / 10000000000000000000
-              )
-            end
-          end.compact
-        end        
       end
     end
   end
