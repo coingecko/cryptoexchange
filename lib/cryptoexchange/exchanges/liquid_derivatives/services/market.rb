@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module LiquidPerpetual
+  module LiquidDerivatives
     module Services
       class Market < Cryptoexchange::Services::Market
         class << self
@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::LiquidPerpetual::Market::API_URL}/products?perpetual=1"
+          "#{Cryptoexchange::Exchanges::LiquidDerivatives::Market::API_URL}/products?perpetual=1"
         end
 
         def adapt_all(output)
@@ -25,9 +25,9 @@ module Cryptoexchange::Exchanges
             market_pair = Cryptoexchange::Models::MarketPair.new(
                             base: base,
                             target: target,
-                            inst_id: output["id"],
+                            inst_id: output["currency_pair_code"],
                             contract_interval: output["product_type"].downcase,
-                            market: LiquidPerpetual::Market::NAME
+                            market: LiquidDerivatives::Market::NAME
                           )
 
             adapt(output, market_pair)
@@ -40,7 +40,7 @@ module Cryptoexchange::Exchanges
           ticker.target    = market_pair.target
           ticker.inst_id   = market_pair.inst_id
           ticker.contract_interval = market_pair.contract_interval
-          ticker.market    = LiquidPerpetual::Market::NAME
+          ticker.market    = LiquidDerivatives::Market::NAME
 
           ticker.bid       = NumericHelper.to_d(output['low_market_bid'])
           ticker.ask       = NumericHelper.to_d(output['high_market_ask'])

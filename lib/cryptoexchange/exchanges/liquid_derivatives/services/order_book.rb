@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module LiquidPerpetual
+  module LiquidDerivatives
     module Services
       class OrderBook < Cryptoexchange::Services::Market
         class << self
@@ -14,7 +14,8 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::LiquidPerpetual::Market::API_URL}/products/#{market_pair.inst_id}/price_levels"
+          id = Cryptoexchange::Exchanges::LiquidDerivatives::Market.get_id(market_pair.target)
+          "#{Cryptoexchange::Exchanges::LiquidDerivatives::Market::API_URL}/products/#{id}/price_levels"
         end
 
         def adapt(output, market_pair)
@@ -22,7 +23,7 @@ module Cryptoexchange::Exchanges
 
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
-          order_book.market    = LiquidPerpetual::Market::NAME
+          order_book.market    = LiquidDerivatives::Market::NAME
           order_book.asks      = adapt_orders output['sell_price_levels']
           order_book.bids      = adapt_orders output['buy_price_levels']
           order_book.timestamp = Time.now.to_i

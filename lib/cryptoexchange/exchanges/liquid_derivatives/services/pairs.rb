@@ -1,8 +1,8 @@
 module Cryptoexchange::Exchanges
-  module LiquidPerpetual
+  module LiquidDerivatives
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::LiquidPerpetual::Market::API_URL}/products?perpetual=1"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::LiquidDerivatives::Market::API_URL}/products?perpetual=1"
 
         def fetch
           output = super
@@ -17,9 +17,9 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
-              inst_id: output["id"],
+              inst_id: output["currency_pair_code"],
               contract_interval: output["product_type"].downcase,
-              market: LiquidPerpetual::Market::NAME
+              market: LiquidDerivatives::Market::NAME
             )
           end
         end
