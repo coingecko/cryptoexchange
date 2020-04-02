@@ -14,6 +14,11 @@ RSpec.describe 'Novadax integration specs' do
     expect(pair.market).to eq 'novadax'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'novadax', base: brc_brl_pair.base, target: brc_brl_pair.target
+    expect(trade_page_url).to eq "https://www.novadax.com/product/orderbook?pair=BTC_BRL"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(brc_brl_pair)
 
@@ -27,7 +32,7 @@ RSpec.describe 'Novadax integration specs' do
     expect(ticker.bid).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
-    
+
     expect(ticker.payload).to_not be nil
   end
 
@@ -44,7 +49,7 @@ RSpec.describe 'Novadax integration specs' do
     expect(order_book.bids.first.timestamp).to be_nil
     expect(order_book.timestamp).to be_nil
     expect(order_book.payload).to_not be nil
-  end  
+  end
 
   it 'fetch trade' do
     trades = client.trades(brc_brl_pair)
