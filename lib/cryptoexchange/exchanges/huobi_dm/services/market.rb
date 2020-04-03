@@ -9,12 +9,12 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          output = super(ticker_url(market_pair))
+          output = if market_pair.contract_interval == "perpetual"
+            super("#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/swap-ex/market/detail/merged?contract_code=#{market_pair.inst_id}")
+          else
+            super("#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/market/detail/merged?symbol=#{market_pair.inst_id}")
+          end
           adapt(output, market_pair)
-        end
-
-        def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/market/detail/merged?symbol=#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)

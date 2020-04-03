@@ -2,14 +2,31 @@ module Cryptoexchange::Exchanges
   module HuobiDm
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/api/v1/contract_contract_info"
-
         def fetch
-          output = super
-          adapt(output)
+          output_swaps = fetch_via_api("#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/swap-api/v1/swap_contract_info")
+          output_futures = fetch_via_api("#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/api/v1/contract_contract_info")
+
+          swaps = adapt_swaps(output_swaps)
+          futures = adapt_futures(output_futures)
+
+          swaps + futures
         end
 
-        def adapt(output)
+        def adapt_swaps(output)
+          output["data"].map do |pair|
+            base, target = pair['contract_code'].split "-"
+
+            Cryptoexchange::Models::MarketPair.new(
+              base:   base,
+              target: target,
+              contract_interval: "perpetual",
+              inst_id: pair['contract_code'],
+              market: HuobiDm::Market::NAME,
+            )
+          end.compact
+        end
+
+        def adapt_futures(output)
           output['data'].map do |pair|
             target = "USD"
             interval_list = { "this_week"=> "weekly", "next_week"=> "biweekly", "quarter"=> "quarterly" }
