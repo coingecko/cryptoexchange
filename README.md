@@ -300,6 +300,7 @@ Or install it yourself as:
 | Hb.top            | Y       | Y [x]      | N       |         | Y           | N        | hb_top            |       |
 | Hikenex           | Y       | N          | N       |         | Y           | N        | hikenex           |       |
 | HitBTC            | Y       | Y [x]      | Y       |         | Y           | Y        | hitbtc            |       |
+| Hoo               | Y       | Y [x]      | N       |         | Y           | Y        | hoo               |       |
 | Hotbit            | Y       | Y [x]      | Y [limit: 1000]      |         | Y           | Y        | hotbit            |       |
 | HPX               | Y       | Y [x]      | Y       |         | Y           |          | hpx               |       |
 | Hubi              | Y       |            |         |         | Y           |          | hubi              |       |

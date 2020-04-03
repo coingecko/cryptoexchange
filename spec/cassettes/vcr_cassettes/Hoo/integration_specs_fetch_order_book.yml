@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hoo.com/open/v1/depth/market?symbol=BCH-USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hoo.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - nginx
+      Content-Length:
+      - '4953'
+      X-N:
+      - S
+      Date:
+      - Fri, 03 Apr 2020 06:23:54 GMT
+      Connection:
+      - close
+      Server-Timing:
+      - cdn-cache; desc=MISS
+      - edge; dur=366
+      - origin; dur=6
+    body:
+      encoding: UTF-8
+      string: '{"code":0,"data":{"bids":[{"price":"235.52","quantity":"0.16976"},{"price":"235.49","quantity":"2.64712"},{"price":"235.47","quantity":"6.65622"},{"price":"235.46","quantity":"0.49832"},{"price":"235.45","quantity":"2.50048"},{"price":"235.44","quantity":"1.6"},{"price":"235.43","quantity":"0.50966"},{"price":"235.42","quantity":"24.7358"},{"price":"235.41","quantity":"20.012"},{"price":"235.4","quantity":"40.9892"},{"price":"235.39","quantity":"3.11255"},{"price":"235.38","quantity":"2.79374"},{"price":"235.37","quantity":"3.3962"},{"price":"235.36","quantity":"3.65096"},{"price":"235.35","quantity":"1.204"},{"price":"235.34","quantity":"24"},{"price":"235.33","quantity":"4.8636"},{"price":"235.31","quantity":"1.89812"},{"price":"235.3","quantity":"6.81804"},{"price":"235.29","quantity":"2.36906"},{"price":"235.28","quantity":"1.52268"},{"price":"235.27","quantity":"1.7872"},{"price":"235.26","quantity":"0.61604"},{"price":"235.25","quantity":"0.30688"},{"price":"235.24","quantity":"1.6"},{"price":"235.23","quantity":"7.23292"},{"price":"235.22","quantity":"3.98443"},{"price":"235.21","quantity":"0.87612"},{"price":"235.2","quantity":"2.33716"},{"price":"235.19","quantity":"4.27745"},{"price":"235.18","quantity":"3.65604"},{"price":"235.17","quantity":"1.80676"},{"price":"235.16","quantity":"1.6"},{"price":"235.15","quantity":"0.3634"},{"price":"235.14","quantity":"2.816"},{"price":"235.13","quantity":"27.31255"},{"price":"235.12","quantity":"0.13871"},{"price":"235.1","quantity":"0.36364"},{"price":"235.09","quantity":"1.59999"},{"price":"235.08","quantity":"2.87268"},{"price":"235.06","quantity":"2.92092"},{"price":"235.05","quantity":"0.34392"},{"price":"235.04","quantity":"0.36452"},{"price":"235.03","quantity":"6.36436"},{"price":"235.02","quantity":"0.36448"},{"price":"235.01","quantity":"0.61648"},{"price":"235","quantity":"8.49726"},{"price":"234.98","quantity":"5.44168"},{"price":"234.97","quantity":"20.28567"},{"price":"234.96","quantity":"1.6"},{"price":"234.95","quantity":"3.17548"},{"price":"234.92","quantity":"24.8"},{"price":"234.91","quantity":"3.487"},{"price":"234.9","quantity":"2.76801"},{"price":"234.89","quantity":"1.4"},{"price":"234.88","quantity":"0.893"},{"price":"234.86","quantity":"0.88312"},{"price":"234.83","quantity":"35.88"},{"price":"234.82","quantity":"6.4"},{"price":"234.81","quantity":"1.76625"},{"price":"234.79","quantity":"1.1373"},{"price":"223.28","quantity":"1.7192"},{"price":"198","quantity":"2.4108"},{"price":"125","quantity":"1.58"}],"asks":[{"price":"235.57","quantity":"2.42986"},{"price":"235.58","quantity":"0.60204"},{"price":"235.59","quantity":"2.92092"},{"price":"235.61","quantity":"0.54064"},{"price":"235.64","quantity":"7.68336"},{"price":"235.65","quantity":"0.03396"},{"price":"235.66","quantity":"13.07999"},{"price":"235.67","quantity":"2.40543"},{"price":"235.68","quantity":"26.11175"},{"price":"235.69","quantity":"4.26712"},{"price":"235.7","quantity":"0.78665"},{"price":"235.71","quantity":"1.83398"},{"price":"235.72","quantity":"5.40873"},{"price":"235.73","quantity":"0.67976"},{"price":"235.75","quantity":"21.19348"},{"price":"235.76","quantity":"2.83074"},{"price":"235.77","quantity":"3.39313"},{"price":"235.78","quantity":"1.6"},{"price":"235.79","quantity":"4.604"},{"price":"235.8","quantity":"1.59999"},{"price":"235.81","quantity":"0.88564"},{"price":"235.82","quantity":"0.05488"},{"price":"235.83","quantity":"6.43974"},{"price":"235.84","quantity":"0.00488"},{"price":"235.85","quantity":"0.54532"},{"price":"235.86","quantity":"1.616"},{"price":"235.87","quantity":"7.99999"},{"price":"235.88","quantity":"1.52263"},{"price":"235.89","quantity":"3.12449"},{"price":"235.9","quantity":"3.70271"},{"price":"235.91","quantity":"1.1373"},{"price":"235.92","quantity":"1.7812"},{"price":"235.93","quantity":"1.4"},{"price":"235.94","quantity":"1.88624"},{"price":"235.95","quantity":"36.24"},{"price":"235.96","quantity":"3.1944"},{"price":"235.98","quantity":"0.684"},{"price":"235.99","quantity":"1.4"},{"price":"236","quantity":"1.91404"},{"price":"236.02","quantity":"0.01312"},{"price":"236.04","quantity":"2.78271"},{"price":"236.05","quantity":"2.7373"},{"price":"236.06","quantity":"3.16089"},{"price":"236.07","quantity":"0.59677"},{"price":"236.08","quantity":"1.468"},{"price":"236.09","quantity":"5.208"},{"price":"236.1","quantity":"3.19999"},{"price":"236.11","quantity":"1.4"},{"price":"236.12","quantity":"0.27062"},{"price":"236.13","quantity":"1.6"},{"price":"236.15","quantity":"5.10289"},{"price":"236.16","quantity":"4.89559"},{"price":"236.17","quantity":"1.8"},{"price":"236.19","quantity":"26.4973"},{"price":"236.2","quantity":"0.6"},{"price":"236.21","quantity":"1.61673"},{"price":"236.22","quantity":"13.6"},{"price":"236.25","quantity":"0.4"},{"price":"236.26","quantity":"8"},{"price":"438.33","quantity":"0.68"},{"price":"495","quantity":"8.73621"},{"price":"520","quantity":"14.73849"}]},"msg":"ok"}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2020 06:23:54 GMT
+recorded_with: VCR 4.0.0
