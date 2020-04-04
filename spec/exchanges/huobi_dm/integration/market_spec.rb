@@ -4,6 +4,7 @@ RSpec.describe 'Huobi Dm integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'huobi_dm' }
   let(:pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', inst_id: "BTC_CW", contract_interval: 'weekly', market: 'huobi_dm') }
+  let(:perp_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USD', inst_id: "ETH-USD", contract_interval: 'perpetual', market: 'huobi_dm') }
 
   it 'fetch pairs' do
     pairs = client.pairs('huobi_dm')
@@ -17,7 +18,24 @@ RSpec.describe 'Huobi Dm integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url market, base: pair.base, target: pair.target
-    expect(trade_page_url).to eq "https://www.hbdm.com/en-us/"
+    expect(trade_page_url).to eq "https://dm.huobi.com/en-us"
+  end
+
+  it 'fetch perpetual ticker' do
+    ticker = client.ticker(perp_pair)
+
+    expect(ticker.base).to eq 'ETH'
+    expect(ticker.target).to eq 'USD'
+    expect(ticker.market).to eq 'huobi_dm'
+    expect(ticker.last).to be_a Numeric
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.ask).to be_a Numeric
+    expect(ticker.high).to be_a Numeric
+    expect(ticker.volume).to be_a Numeric
+    expect(ticker.volume.to_i).to eq (ticker.payload["amount"].to_f / 2.0).to_i
+    expect(ticker.timestamp).to be nil
+
+    expect(ticker.payload).to_not be nil
   end
 
   it 'fetch ticker' do
@@ -71,6 +89,28 @@ RSpec.describe 'Huobi Dm integration specs' do
   end
 
   context 'fetch contract stat' do
+    it 'fetch perpetual contract stat' do
+      contract_stat = client.contract_stat(perp_pair)
+
+      expect(contract_stat.base).to eq 'ETH'
+      expect(contract_stat.target).to eq 'USD'
+      expect(contract_stat.market).to eq 'huobi_dm'
+      expect(contract_stat.contract_type).to eq 'perpetual'
+      expect(contract_stat.expire_timestamp).to be nil
+      expect(contract_stat.start_timestamp).to be nil
+      expect(contract_stat.funding_rate_percentage).to be_a Numeric
+      expect(2018..Date.today.year).to include(Time.at(contract_stat.next_funding_rate_timestamp).year)
+      expect(contract_stat.funding_rate_percentage_predicted).to be_a Numeric
+
+      expect(contract_stat.index).to be_a Numeric
+      expect(contract_stat.index_identifier).to eq "HuobiDm-ETH-USD"
+      expect(contract_stat.index_name).to eq "Huobi DM ETH-USD"
+      expect(contract_stat.open_interest).to be_a Numeric
+      expect(contract_stat.timestamp).to be nil
+
+      expect(contract_stat.payload).to_not be nil
+    end
+
     it 'fetch contract stat' do
       contract_stat = client.contract_stat(pair)
 
@@ -80,6 +120,9 @@ RSpec.describe 'Huobi Dm integration specs' do
       expect(2019..Date.today.year).to include(Time.at(contract_stat.expire_timestamp).year)
       expect(2019..Date.today.year).to include(Time.at(contract_stat.start_timestamp).year)
       expect(contract_stat.contract_type).to eq 'futures'
+      expect(contract_stat.funding_rate_percentage).to be nil
+      expect(contract_stat.next_funding_rate_timestamp).to be nil
+      expect(contract_stat.funding_rate_percentage_predicted).to be nil
       expect(contract_stat.index).to be_a Numeric
       expect(contract_stat.index_identifier).to eq "HuobiDm-BTC"
       expect(contract_stat.index_name).to eq "Huobi DM BTC"

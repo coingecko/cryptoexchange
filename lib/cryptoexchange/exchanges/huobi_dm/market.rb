@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://api.hbdm.com'
 
       def self.trade_page_url(args={})
-        "https://www.hbdm.com/en-us/"
+        "https://dm.huobi.com/en-us"
       end
     end
   end

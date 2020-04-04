@@ -3,8 +3,16 @@ module Cryptoexchange::Exchanges
     module Services
       class Trades < Cryptoexchange::Services::Market
         def fetch(market_pair)
-          output = super(trades_url(market_pair))
+          output = if market_pair.contract_interval == "perpetual"
+            super(swap_trades_url(market_pair))
+          else
+            super(trades_url(market_pair))
+          end
           adapt(output, market_pair)
+        end
+
+        def swap_trades_url(market_pair)
+          "#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/swap-ex/market/history/trade?contract_code=#{market_pair.inst_id}&size=2000"
         end
 
         def trades_url(market_pair)

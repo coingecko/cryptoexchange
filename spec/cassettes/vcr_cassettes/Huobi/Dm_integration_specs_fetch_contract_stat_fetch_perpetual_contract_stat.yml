@@ -1,0 +1,235 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hbdm.com/swap-api/v1/swap_open_interest?contract_code=ETH-USD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hbdm.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Apr 2020 11:23:51 GMT
+      Content-Type:
+      - text/plain;charset=UTF-8
+      Content-Length:
+      - '151'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d9064838fa8b80dd923247dcbf54557cc1585913031; expires=Sun, 03-May-20
+        11:23:51 GMT; path=/; domain=.hbdm.com; HttpOnly; SameSite=Lax
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Reqid:
+      - 930b284a86c64483ae2b1559aab1bce4
+      Ratelimit-Remaining:
+      - '59'
+      Ratelimit-Reset:
+      - '1585913034320'
+      Ratelimit-Interval:
+      - '3000'
+      Ratelimit-Limit:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57e26b7bed3b7558-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","data":[{"volume":1671.000000000000000000,"amount":115.312952867296942930,"symbol":"ETH","contract_code":"ETH-USD"}],"ts":1585913031320}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2020 11:23:46 GMT
+- request:
+    method: get
+    uri: https://api.hbdm.com/swap-api/v1/swap_index?contract_code=ETH-USD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hbdm.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Apr 2020 11:23:51 GMT
+      Content-Type:
+      - text/plain;charset=UTF-8
+      Content-Length:
+      - '133'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=def3eeeb749d66542b304ce035968d6d01585913031; expires=Sun, 03-May-20
+        11:23:51 GMT; path=/; domain=.hbdm.com; HttpOnly; SameSite=Lax
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Reqid:
+      - a6c5be00f7ad401bb16bcde95e0d2520
+      Ratelimit-Remaining:
+      - '58'
+      Ratelimit-Reset:
+      - '1585913034321'
+      Ratelimit-Interval:
+      - '3000'
+      Ratelimit-Limit:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57e26b7e8e50c113-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","data":[{"index_price":145.034885814000000000,"index_ts":1585913028022,"contract_code":"ETH-USD"}],"ts":1585913031512}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2020 11:23:47 GMT
+- request:
+    method: get
+    uri: https://api.hbdm.com/swap-api/v1/swap_contract_info?contract_code=ETH-USD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hbdm.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Apr 2020 11:23:51 GMT
+      Content-Type:
+      - text/plain;charset=UTF-8
+      Content-Length:
+      - '202'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0ff701e815d0afaaa9cd2f4b9e793dbc1585913031; expires=Sun, 03-May-20
+        11:23:51 GMT; path=/; domain=.hbdm.com; HttpOnly; SameSite=Lax
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Reqid:
+      - feefe72328874bcbbbec281e5e8be106
+      Ratelimit-Remaining:
+      - '57'
+      Ratelimit-Reset:
+      - '1585913034321'
+      Ratelimit-Interval:
+      - '3000'
+      Ratelimit-Limit:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57e26b7f9a022cdf-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","data":[{"symbol":"ETH","contract_code":"ETH-USD","contract_size":10,"price_tick":0.01,"create_date":"20200403","contract_status":1,"settlement_date":"1585915200000"}],"ts":1585913031904}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2020 11:23:47 GMT
+- request:
+    method: get
+    uri: https://api.hbdm.com/swap-api/v1/swap_funding_rate?contract_code=ETH-USD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hbdm.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Apr 2020 11:23:52 GMT
+      Content-Type:
+      - text/plain;charset=UTF-8
+      Content-Length:
+      - '247'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc7d9919c35de02c6a478a405e4e0c6b61585913032; expires=Sun, 03-May-20
+        11:23:52 GMT; path=/; domain=.hbdm.com; HttpOnly; SameSite=Lax
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Reqid:
+      - 4b882325ab0949a09f9d2c7cf698b61c
+      Ratelimit-Remaining:
+      - '56'
+      Ratelimit-Reset:
+      - '1585913034321'
+      Ratelimit-Interval:
+      - '3000'
+      Ratelimit-Limit:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57e26b821da62cbb-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","data":{"estimated_rate":"0.000027852136374740","funding_rate":"0.000100000000000000","contract_code":"ETH-USD","symbol":"ETH","fee_asset":"ETH","funding_time":"1585915200000","next_funding_time":"1585944000000"},"ts":1585913032319}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2020 11:23:47 GMT
+recorded_with: VCR 4.0.0

@@ -9,8 +9,16 @@
         end
 
         def fetch(market_pair)
-          output = super(order_book_url(market_pair))
+          output = if market_pair.contract_interval == "perpetual"
+            super(swap_order_book_url(market_pair))
+          else
+            super(order_book_url(market_pair))
+          end
           adapt(output, market_pair)
+        end
+
+        def swap_order_book_url(market_pair)
+          "#{Cryptoexchange::Exchanges::HuobiDm::Market::API_URL}/swap-ex/market/depth?contract_code=#{market_pair.inst_id}&type=step0"
         end
 
         def order_book_url(market_pair)
