@@ -68,9 +68,9 @@ module Cryptoexchange::Exchanges
             contract_stat.target    = target
             contract_stat.index_identifier = "HuobiDm-#{index['data'][0]['contract_code']}"
             contract_stat.index_name = "Huobi DM #{index['data'][0]['contract_code']}"
-            contract_stat.funding_rate_percentage = funding_rate['data']['funding_rate'].to_f
+            contract_stat.funding_rate_percentage = funding_rate['data']['funding_rate'].to_f * 100
             contract_stat.next_funding_rate_timestamp = (funding_rate['data']['funding_time'].to_i / 1000)
-            contract_stat.funding_rate_percentage_predicted = funding_rate['data']['estimated_rate'].to_f
+            contract_stat.funding_rate_percentage_predicted = funding_rate['data']['estimated_rate'].to_f * 100
           else
             contract_stat.base      = open_interest['data'][0]['symbol']
             contract_stat.target    = "USD"
