@@ -23,6 +23,16 @@ module Cryptoexchange
       return {error: [e]}
     end
 
+    def options_instruments(exchange)
+      pairs_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Options::Instruments"
+      pairs_class = Object.const_get(pairs_classname)
+      pairs_object = pairs_class.new
+      pairs_object.fetch
+    rescue HttpResponseError, HttpConnectionError, HttpTimeoutError, HttpBadRequestError, JsonParseError, JSON::ParserError, TypeFormatError, CredentialsMissingError, OpenSSL::SSL::SSLError, HTTP::Redirector::EndlessRedirectError => e
+      # temporary or permanent failure, omit
+      return {error: [e]}
+    end
+
     def ticker(market_pair)
       exchange = market_pair.market
       market_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Market"
@@ -41,6 +51,14 @@ module Cryptoexchange
           end
         end
       end
+    end
+
+    def options_ticker(market_pair)
+      exchange = market_pair.market
+      market_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Options::Ticker"
+      market_class = Object.const_get(market_classname)
+      market = market_class.new
+      market.fetch(market_pair)
     end
 
     def available_exchanges

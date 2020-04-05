@@ -13,6 +13,8 @@ require "cryptoexchange/services/market_stream"
 require "cryptoexchange/services/trade_stream"
 require "cryptoexchange/services/order_book_stream"
 require "cryptoexchange/services/authentication"
+require "cryptoexchange/services/options/instruments"
+require "cryptoexchange/services/options/ticker"
 
 path_files = Dir[File.join(File.dirname(__dir__), 'lib', 'cryptoexchange', '**', '*.rb')]
 
