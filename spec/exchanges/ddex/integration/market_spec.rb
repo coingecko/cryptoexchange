@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Ddex integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:wbtc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'WBTC', target: 'USDT', market: 'ddex') }
+  let(:eth_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USDT', market: 'ddex') }
 
   it 'fetch pairs' do
     pairs = client.pairs('ddex')
@@ -15,15 +15,15 @@ RSpec.describe 'Ddex integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url 'ddex', base: wbtc_usdt_pair.base, target: wbtc_usdt_pair.target
-    expect(trade_page_url).to eq "https://ddex.io/trade/#{wbtc_usdt_pair.base}-#{wbtc_usdt_pair.target}"
+    trade_page_url = client.trade_page_url 'ddex', base: eth_usdt_pair.base, target: eth_usdt_pair.target
+    expect(trade_page_url).to eq "https://ddex.io/trade/#{eth_usdt_pair.base}-#{eth_usdt_pair.target}"
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(wbtc_usdt_pair)
+    ticker = client.ticker(eth_usdt_pair)
 
-    expect(ticker.base).to eq wbtc_usdt_pair.base
-    expect(ticker.target).to eq wbtc_usdt_pair.target
+    expect(ticker.base).to eq eth_usdt_pair.base
+    expect(ticker.target).to eq eth_usdt_pair.target
     expect(ticker.market).to eq 'ddex'
 
     expect(ticker.last).to be_a Numeric
@@ -38,10 +38,10 @@ RSpec.describe 'Ddex integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(wbtc_usdt_pair)
+    order_book = client.order_book(eth_usdt_pair)
 
-    expect(order_book.base).to eq wbtc_usdt_pair.base
-    expect(order_book.target).to eq wbtc_usdt_pair.target
+    expect(order_book.base).to eq eth_usdt_pair.base
+    expect(order_book.target).to eq eth_usdt_pair.target
     expect(order_book.market).to eq 'ddex'
     expect(order_book.asks).to_not be_empty
     expect(order_book.bids).to_not be_empty
@@ -54,12 +54,12 @@ RSpec.describe 'Ddex integration specs' do
   end
 
   it 'fetch trade' do
-    trades = client.trades(wbtc_usdt_pair)
+    trades = client.trades(eth_usdt_pair)
     trade = trades.sample
 
     expect(trades).to_not be_empty
-    expect(trade.base).to eq wbtc_usdt_pair.base
-    expect(trade.target).to eq wbtc_usdt_pair.target
+    expect(trade.base).to eq eth_usdt_pair.base
+    expect(trade.target).to eq eth_usdt_pair.target
     expect(trade.market).to eq 'ddex'
     expect(trade.trade_id).to_not be_nil
     expect(trade.price).to_not be_nil
