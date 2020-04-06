@@ -18,16 +18,21 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Mon, 04 Nov 2019 12:34:20 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
       - chunked
       Connection:
       - close
+      Date:
+      - Mon, 06 Apr 2020 06:30:11 GMT
+      Set-Cookie:
+      - AWSALB=pgFhZoW0YxMuk2lLfQ+bd5xnLesTL06XUNVO+xcvO+hQsImj9HXTYAK1J9hVDtcr7Ro+UufcrUfQcyWpN1+EpToXW/RIgop/fb4b0diyJrcCzrT6BbqRxwofdAnR;
+        Expires=Mon, 13 Apr 2020 06:30:11 GMT; Path=/
+      - AWSALBCORS=pgFhZoW0YxMuk2lLfQ+bd5xnLesTL06XUNVO+xcvO+hQsImj9HXTYAK1J9hVDtcr7Ro+UufcrUfQcyWpN1+EpToXW/RIgop/fb4b0diyJrcCzrT6BbqRxwofdAnR;
+        Expires=Mon, 13 Apr 2020 06:30:11 GMT; Path=/; SameSite=None; Secure
       X-Trace-Id:
-      - eab89eb8dff9f498
+      - c783b1ec9ae43e0
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
@@ -42,14 +47,22 @@ http_interactions:
       - "-"
       Strict-Transport-Security:
       - max-age=9800; includeSubDomains; preload
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 2feec21fa6ad8ca419b922ab129d0a2a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SIN2-C1
+      X-Amz-Cf-Id:
+      - YH4U7dYXTkgyEHUnA7HcWqJWxFZjD8OkpwAbv0ERBM0tAvyXhlSW5A==
     body:
       encoding: UTF-8
-      string: '{"code":"200000","data":{"sequence":743851,"symbol":"XBTUSDM","side":"sell","size":100,"price":"9271.0","bestBidSize":100,"bestBidPrice":"9269.0","bestAskPrice":"9270.0","tradeId":"5dc01ab33c7feb2efc618064","bestAskSize":2722,"ts":1572870835320307330}}'
+      string: '{"code":"200000","data":{"sequence":2101269,"symbol":"XBTUSDM","side":"buy","size":13371,"price":"7025.0","bestBidSize":8537,"bestBidPrice":"7024.0","bestAskPrice":"7025.0","tradeId":"5e8acc3e3c7feb48608b1f4b","bestAskSize":72641,"ts":1586154558491154925}}'
     http_version: 
-  recorded_at: Mon, 04 Nov 2019 12:34:18 GMT
+  recorded_at: Mon, 06 Apr 2020 06:30:11 GMT
 - request:
     method: get
-    uri: https://kitchen.kumex.com/kumex-trade/market/all
+    uri: https://kitchen.kumex.com/kumex-trade/market/XBTUSDM
     body:
       encoding: UTF-8
       string: ''
@@ -65,26 +78,23 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Mon, 04 Nov 2019 12:34:21 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
       - chunked
       Connection:
       - close
-      Access-Control-Allow-Origin:
-      - http://www.kumex.com
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - Origin,X-Requested-With,content-type,Accept,Authorization
-      Access-Control-Allow-Methods:
-      - GET,POST,PUT,DELETE,OPTIONS,PATCH
-      Access-Control-Max-Age:
-      - '86400'
+      Date:
+      - Mon, 06 Apr 2020 06:30:12 GMT
+      Set-Cookie:
+      - AWSALB=MyammzTt9MjoWlSS6vI2tIbwxA+7wU74L1WZ5OLjKdg1ldkBO6ZTbOL4DG0vL8ElG+eDJje0xdqmU1HR9oMNYQWRdicv4hIjv0aLLEHTrfn2khY4LREQ/nrLYpmu;
+        Expires=Mon, 13 Apr 2020 06:30:12 GMT; Path=/
+      - AWSALBCORS=MyammzTt9MjoWlSS6vI2tIbwxA+7wU74L1WZ5OLjKdg1ldkBO6ZTbOL4DG0vL8ElG+eDJje0xdqmU1HR9oMNYQWRdicv4hIjv0aLLEHTrfn2khY4LREQ/nrLYpmu;
+        Expires=Mon, 13 Apr 2020 06:30:12 GMT; Path=/; SameSite=None; Secure
+      - SESSION=Yjg4ZGY5MGQtMzMyNC00ZDYwLTg4NTYtZmE5NGIzMmY3NTA3; Max-Age=604800;
+        Expires=Mon, 13-Apr-2020 06:30:12 GMT; Path=/; HttpOnly
       X-Trace-Id:
-      - bae8273f5d2bd435
+      - 2c3717b46b44bda2
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
@@ -95,18 +105,23 @@ http_interactions:
       - '0'
       X-Frame-Options:
       - DENY
-      Set-Cookie:
-      - SESSION=NTNlNjY0ZjMtMzM4Zi00MjUyLTlkMDUtMjdhYzgxOWM0NGIz; Max-Age=604800;
-        Expires=Mon, 11-Nov-2019 12:34:21 GMT; Path=/; HttpOnly
       Server:
       - "-"
       Web-Tag:
       - kumex-kitchen
       X-Cache-Status:
-      - EXPIRED
+      - MISS
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 0676a5fe6935c768360b164abce6620f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SIN2-C1
+      X-Amz-Cf-Id:
+      - esULV_usmOgxziOhU27L28KUxiRGRXRLIAYuJ6noP-mFra-JLV_0UA==
     body:
       encoding: UTF-8
-      string: '{"success":true,"code":"200","msg":"success","retry":false,"data":{"symbol":null,"volume":"10831447","turnover":"1180.38166922","lastPrice":null,"priceChgPct":"0","ts":1572870861264914377}}'
+      string: '{"success":true,"code":"200","msg":"success","retry":false,"data":{"symbol":"XBTUSDM","volume":"39376737","turnover":"5769.68518408","lastPrice":"7025","priceChgPct":"0.0355","ts":1586154612163182659}}'
     http_version: 
-  recorded_at: Mon, 04 Nov 2019 12:34:19 GMT
+  recorded_at: Mon, 06 Apr 2020 06:30:12 GMT
 recorded_with: VCR 4.0.0
