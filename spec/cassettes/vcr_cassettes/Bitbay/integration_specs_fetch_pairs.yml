@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitbay.net/rest/trading/stats
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitbay.net
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 06 Apr 2020 08:06:56 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc364670008f2fe8168ddba36020ac12c1586160416; expires=Wed, 06-May-20
+        08:06:56 GMT; path=/; domain=.bitbay.net; HttpOnly; SameSite=Lax
+      X-Varnish:
+      - '618848086'
+      - '853887922'
+      Via:
+      - 1.1 varnish (Varnish/5.2)
+      - 1.1 varnish (Varnish/5.2)
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '0'
+      X-Cache:
+      - miss
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,operation-id,captcha,googleauthenticatorchangecode,googleauthenticatorchangetoken,googleauthenticatorchangeconfirmationtoken,twofactorauthtoken,jwt,fid,authid,unlocktoken,dev-maintenance,user-id,email,language,limit,offset
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57fa032a8c19dcd6-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"Ok","items":{"LML-BTC":{"m":"LML-BTC","h":"0.00000036","l":"0.00000036","v":"7514.66114683","r24h":"0.00000036"},"LTC-USD":{"m":"LTC-USD","h":"41.7","l":"41.7","v":"0.36657616","r24h":"40.47"},"LML-PLN":{"m":"LML-PLN","h":"0.02","l":"0.01","v":"9974","r24h":"0.02"},"BSV-EUR":{"m":"BSV-EUR","h":"159.33","l":"159.33","v":"0.15428837","r24h":"149"},"ZRX-EUR":{"m":"ZRX-EUR","h":null,"l":null,"v":"0","r24h":"0.13"},"BTC-USDC":{"m":"BTC-USDC","h":"6950","l":"6500","v":"0.26949324","r24h":"6897"},"BSV-BTC":{"m":"BSV-BTC","h":"0.02600999","l":"0.02533333","v":"1.68686741","r24h":"0.0258"},"ZRX-BTC":{"m":"ZRX-BTC","h":"0.00002573","l":"0.00002252","v":"2830.10956915","r24h":"0.00002255"},"NEU-EUR":{"m":"NEU-EUR","h":null,"l":null,"v":"0","r24h":"0.1"},"AMLT-PLN":{"m":"AMLT-PLN","h":"0.03","l":"0.02","v":"12933.33056714","r24h":"0.02"},"ETH-USDC":{"m":"ETH-USDC","h":"150","l":"149.96999999","v":"1.05649958","r24h":"140"},"BOB-BTC":{"m":"BOB-BTC","h":"0.00000028","l":"0.00000028","v":"1851.70244542","r24h":"0.00000025"},"ETH-GBP":{"m":"ETH-GBP","h":null,"l":null,"v":"0","r24h":"114.23"},"ALG-BTC":{"m":"ALG-BTC","h":"0.00001294","l":"0.00001294","v":"42.09737249","r24h":"0.00001294"},"GGC-BTC":{"m":"GGC-BTC","h":"0.0003647","l":"0.00031512","v":"264.28488975","r24h":"0.00034931"},"XRP-BTC":{"m":"XRP-BTC","h":"0.0000267","l":"0.00002625","v":"6646.51225654","r24h":"0.00002664"},"DASH-PLN":{"m":"DASH-PLN","h":"295","l":"278.21","v":"267.69288953","r24h":"280.96"},"XIN-USD":{"m":"XIN-USD","h":null,"l":null,"v":"0","r24h":"0.01"},"BOB-PLN":{"m":"BOB-PLN","h":"0.01","l":"0.01","v":"11563.10470053","r24h":"0.01"},"XRP-EUR":{"m":"XRP-EUR","h":"0.17","l":"0.17","v":"635.98072","r24h":"0.16"},"BTC-USD":{"m":"BTC-USD","h":"7089","l":"6660","v":"1.42427095","r24h":"6900"},"TRX-USD":{"m":"TRX-USD","h":null,"l":null,"v":"0","r24h":"0.01"},"BTC-EUR":{"m":"BTC-EUR","h":"6599.98","l":"6218.71","v":"21.30292743","r24h":"6281.15"},"REP-PLN":{"m":"REP-PLN","h":"42.02","l":"40.78","v":"93.76788460","r24h":"41.34"},"TRX-PLN":{"m":"TRX-PLN","h":"0.06","l":"0.04","v":"1137422.44194596","r24h":"0.05"},"KZC-USD":{"m":"KZC-USD","h":null,"l":null,"v":"0","r24h":"0.04"},"LSK-BTC":{"m":"LSK-BTC","h":"0.00014688","l":"0.000141","v":"114.52761600","r24h":"0.000142"},"NPXS-BTC":{"m":"NPXS-BTC","h":"0.00000002","l":"0.00000002","v":"1001.00100101","r24h":"0.00000001"},"BTG-BTC":{"m":"BTG-BTC","h":"0.0011111","l":"0.00104977","v":"17.73779965","r24h":"0.00114"},"XRP-GBP":{"m":"XRP-GBP","h":"0.15","l":"0.15","v":"40","r24h":"0.14"},"ETH-BTC":{"m":"ETH-BTC","h":"0.02161396","l":"0.02074915","v":"80.87252355","r24h":"0.02106529"},"OMG-BTC":{"m":"OMG-BTC","h":null,"l":null,"v":"0","r24h":"0.0000772"},"FTO-USD":{"m":"FTO-USD","h":null,"l":null,"v":"0","r24h":"1.12"},"BTG-PLN":{"m":"BTG-PLN","h":"31.6","l":"29.51","v":"2320.43471751","r24h":"30.73"},"LTC-GBP":{"m":"LTC-GBP","h":null,"l":null,"v":"0","r24h":"34.44"},"SRN-BTC":{"m":"SRN-BTC","h":null,"l":null,"v":"0","r24h":"0.0000013"},"BSV-PLN":{"m":"BSV-PLN","h":"768.75","l":"710","v":"176.24796222","r24h":"738"},"ZEC-BTC":{"m":"ZEC-BTC","h":"0.00535866","l":"0.00467561","v":"5.35701853","r24h":"0.00467445"},"PAY-EUR":{"m":"PAY-EUR","h":null,"l":null,"v":"0","r24h":"0.04"},"KZC-PLN":{"m":"KZC-PLN","h":"0.2","l":"0.19","v":"14293.08311372","r24h":"0.19"},"REP-USD":{"m":"REP-USD","h":null,"l":null,"v":"0","r24h":"6.65"},"GNT-BTC":{"m":"GNT-BTC","h":"0.00000528","l":"0.00000508","v":"450.79676691","r24h":"0.0000051"},"BCC-BTC":{"m":"BCC-BTC","h":"0.03492801","l":"0.03380626","v":"10.47462350","r24h":"0.03495449"},"ETH-EUR":{"m":"ETH-EUR","h":"141.3","l":"133","v":"45.19267502","r24h":"134.52"},"BCC-GBP":{"m":"BCC-GBP","h":"187.12","l":"187.12","v":"0.08697339","r24h":"195.35"},"TRX-EUR":{"m":"TRX-EUR","h":null,"l":null,"v":"0","r24h":"0.01"},"KZC-EUR":{"m":"KZC-EUR","h":"0.04","l":"0.04","v":"700","r24h":"0.05"},"ETH-PLN":{"m":"ETH-PLN","h":"637.59","l":"593","v":"1744.04327764","r24h":"598.43"},"FTO-PLN":{"m":"FTO-PLN","h":"4.63","l":"4.41","v":"2351.90574730","r24h":"4.41"},"BTG-USD":{"m":"BTG-USD","h":null,"l":null,"v":"0","r24h":"8.31"},"FTO-EUR":{"m":"FTO-EUR","h":null,"l":null,"v":"0","r24h":"1"},"BCP-PLN":{"m":"BCP-PLN","h":"0.02","l":"0.01","v":"39939.21165","r24h":"0.02"},"BCC-USDC":{"m":"BCC-USDC","h":null,"l":null,"v":"0","r24h":"171.00000002"},"BCC-EUR":{"m":"BCC-EUR","h":"223.95","l":"210.79","v":"9.94114666","r24h":"221"},"XIN-BTC":{"m":"XIN-BTC","h":"0.00000019","l":"0.00000017","v":"1104151.87417428","r24h":"0.00000017"},"DASH-BTC":{"m":"DASH-BTC","h":"0.010116","l":"0.00987859","v":"2.18978912","r24h":"0.010117"},"BAT-PLN":{"m":"BAT-PLN","h":"0.65","l":"0.6","v":"30880.33487133","r24h":"0.62"},"REP-BTC":{"m":"REP-BTC","h":null,"l":null,"v":"0","r24h":"0.00184712"},"EXY-EUR":{"m":"EXY-EUR","h":null,"l":null,"v":"0","r24h":"0.02"},"ZEC-USD":{"m":"ZEC-USD","h":null,"l":null,"v":"0","r24h":"32"},"GAME-PLN":{"m":"GAME-PLN","h":"0.16","l":"0.15","v":"110913.26319700","r24h":"0.15"},"DASH-EUR":{"m":"DASH-EUR","h":null,"l":null,"v":"0","r24h":"57"},"BOB-USD":{"m":"BOB-USD","h":null,"l":null,"v":"0","r24h":"0.01"},"BTC-GBP":{"m":"BTC-GBP","h":"5750.61","l":"5540","v":"0.19222390","r24h":"5595.96"},"GAME-BTC":{"m":"GAME-BTC","h":"0.00000551","l":"0.0000054","v":"2106.68281958","r24h":"0.0000055"},"BAT-USD":{"m":"BAT-USD","h":null,"l":null,"v":"0","r24h":"0.15"},"LINK-BTC":{"m":"LINK-BTC","h":"0.000333","l":"0.000333","v":"101.45694997","r24h":"0.0003327"},"PAY-USD":{"m":"PAY-USD","h":null,"l":null,"v":"0","r24h":"0.03"},"OMG-USD":{"m":"OMG-USD","h":null,"l":null,"v":"0","r24h":"0.49"},"XIN-EUR":{"m":"XIN-EUR","h":null,"l":null,"v":"0","r24h":"0.01"},"LSK-PLN":{"m":"LSK-PLN","h":"4.22","l":"4.04","v":"83761.46087089","r24h":"4.09"},"XLM-BTC":{"m":"XLM-BTC","h":"0.00000657","l":"0.00000597","v":"7690.65386045","r24h":"0.00000605"},"BAT-EUR":{"m":"BAT-EUR","h":null,"l":null,"v":"0","r24h":"0.12"},"ETH-USD":{"m":"ETH-USD","h":"150","l":"146.3","v":"3.63996467","r24h":"141.98"},"NEU-PLN":{"m":"NEU-PLN","h":"0.44","l":"0.43","v":"682.84338037","r24h":"0.44"},"XLM-USD":{"m":"XLM-USD","h":"0.04","l":"0.04","v":"344.62","r24h":"0.03"},"ZRX-PLN":{"m":"ZRX-PLN","h":"0.67","l":"0.64","v":"3636.53430629","r24h":"0.65"},"LTC-BTC":{"m":"LTC-BTC","h":"0.00600199","l":"0.00592602","v":"8.15675663","r24h":"0.00600193"},"GNT-EUR":{"m":"GNT-EUR","h":null,"l":null,"v":"0","r24h":"0.03"},"BTG-EUR":{"m":"BTG-EUR","h":null,"l":null,"v":"0","r24h":"6.95"},"XIN-PLN":{"m":"XIN-PLN","h":"0.01","l":"0.01","v":"23513.84483531","r24h":"0.01"},"ZRX-USD":{"m":"ZRX-USD","h":null,"l":null,"v":"0","r24h":"0.14"},"NEU-USD":{"m":"NEU-USD","h":null,"l":null,"v":"0","r24h":"0.04"},"USDC-USD":{"m":"USDC-USD","h":"1.01","l":"1.01","v":"14.99","r24h":"1.01"},"LSK-USD":{"m":"LSK-USD","h":null,"l":null,"v":"0","r24h":"0.97"},"LTC-PLN":{"m":"LTC-PLN","h":"176.48","l":"169","v":"922.95825214","r24h":"169.79"},"DASH-USD":{"m":"DASH-USD","h":null,"l":null,"v":"0","r24h":"71"},"FTO-BTC":{"m":"FTO-BTC","h":null,"l":null,"v":"0","r24h":"0.00015075"},"EXY-BTC":{"m":"EXY-BTC","h":"0.00000276","l":"0.00000276","v":"10.31487889","r24h":"0.00000276"},"ZEC-EUR":{"m":"ZEC-EUR","h":null,"l":null,"v":"0","r24h":"28.04"},"AMLT-BTC":{"m":"AMLT-BTC","h":null,"l":null,"v":"0","r24h":"0.00000074"},"GNT-USD":{"m":"GNT-USD","h":null,"l":null,"v":"0","r24h":"0.03"},"MKR-BTC":{"m":"MKR-BTC","h":"0.05","l":"0.04641801","v":"2.3964","r24h":"0.06099999"},"XRP-USD":{"m":"XRP-USD","h":null,"l":null,"v":"0","r24h":"0.16"},"NEU-BTC":{"m":"NEU-BTC","h":null,"l":null,"v":"0","r24h":"0.00001421"},"ZEC-PLN":{"m":"ZEC-PLN","h":"150.94","l":"135.36","v":"127.34743180","r24h":"139.7"},"GAME-USD":{"m":"GAME-USD","h":null,"l":null,"v":"0","r24h":"0.04"},"XRP-PLN":{"m":"XRP-PLN","h":"0.78","l":"0.74","v":"195237.68418120","r24h":"0.75"},"GAME-EUR":{"m":"GAME-EUR","h":null,"l":null,"v":"0","r24h":"0.03"},"EXY-PLN":{"m":"EXY-PLN","h":"0.09","l":"0.08","v":"1849.18140566","r24h":"0.08"},"BAT-BTC":{"m":"BAT-BTC","h":"0.00002191","l":"0.0000214","v":"293.59182980","r24h":"0.00002144"},"REP-EUR":{"m":"REP-EUR","h":null,"l":null,"v":"0","r24h":"8.65"},"OMG-PLN":{"m":"OMG-PLN","h":"2.35","l":"2.26","v":"6475.76961871","r24h":"2.31"},"XLM-PLN":{"m":"XLM-PLN","h":"0.19","l":"0.17","v":"493353.64070427","r24h":"0.18"},"BCC-PLN":{"m":"BCC-PLN","h":"1020","l":"960.03","v":"347.05437379","r24h":"990"},"BCC-USD":{"m":"BCC-USD","h":"233.62","l":"186","v":"3.00090808","r24h":"237"},"XBX-BTC":{"m":"XBX-BTC","h":"0.00000019","l":"0.00000018","v":"10010.01001002","r24h":"0.00000019"},"BOB-EUR":{"m":"BOB-EUR","h":null,"l":null,"v":"0","r24h":"0.01"},"KZC-BTC":{"m":"KZC-BTC","h":"0.0000068","l":"0.00000601","v":"1639.90632405","r24h":"0.0000068"},"PAY-BTC":{"m":"PAY-BTC","h":"0.0000047","l":"0.00000377","v":"14312.71953717","r24h":"0.00000368"},"LSK-EUR":{"m":"LSK-EUR","h":"0.92","l":"0.92","v":"1000","r24h":"0.88"},"OMG-EUR":{"m":"OMG-EUR","h":null,"l":null,"v":"0","r24h":"0.44"},"LTC-EUR":{"m":"LTC-EUR","h":"38.77","l":"37.04","v":"11.68957084","r24h":"37.68"},"BTC-PLN":{"m":"BTC-PLN","h":"29750","l":"28200","v":"2176.73797502","r24h":"28419.19"},"ALG-PLN":{"m":"ALG-PLN","h":"0.38","l":"0.38","v":"578.18421051","r24h":"0.37"},"TRX-BTC":{"m":"TRX-BTC","h":"0.00000189","l":"0.00000166","v":"416356.58939576","r24h":"0.00000177"},"PAY-PLN":{"m":"PAY-PLN","h":"0.14","l":"0.12","v":"209503.52476982","r24h":"0.13"},"XLM-EUR":{"m":"XLM-EUR","h":"0.04","l":"0.04","v":"8010.08392449","r24h":"0.04"},"BSV-USD":{"m":"BSV-USD","h":null,"l":null,"v":"0","r24h":"167"},"GNT-PLN":{"m":"GNT-PLN","h":"0.16","l":"0.14","v":"22196.42355842","r24h":"0.14"}}}'
+    http_version: 
+  recorded_at: Mon, 06 Apr 2020 08:06:56 GMT
+recorded_with: VCR 4.0.0
