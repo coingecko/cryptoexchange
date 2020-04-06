@@ -14,7 +14,7 @@ RSpec.describe 'Kumex integration specs' do
     expect(pair.target).to_not be nil
     expect(pair.contract_interval).to eq 'perpetual'
     expect(pair.market).to eq 'kumex'
-    expect(pair.inst_id).to eq 'XBTUSDM'
+    expect(pair.inst_id).to_not be nil
   end
 
   it 'fetch ticker' do

@@ -10,7 +10,7 @@ module Cryptoexchange::Exchanges
 
         def fetch(market_pair)
           output = super(ticker_url(market_pair))
-          volume = JSON.parse(HTTP.get(volume_url))
+          volume = JSON.parse(HTTP.get(volume_url(market_pair)))
           adapt(output, market_pair, volume)
         end
 
@@ -18,8 +18,8 @@ module Cryptoexchange::Exchanges
           "#{Cryptoexchange::Exchanges::Kumex::Market::API_URL}/ticker?symbol=#{market_pair.inst_id}"
         end
 
-        def volume_url
-          "https://kitchen.kumex.com/kumex-trade/market/all"
+        def volume_url(market_pair)
+          "https://kitchen.kumex.com/kumex-trade/market/#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair, volume)
