@@ -14,17 +14,12 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Btcnext::Market::API_URL}/b2trade/ticker"
+          "#{Cryptoexchange::Exchanges::Btcnext::Market::API_URL}/ticker"
         end
 
         def adapt_all(output)
-          output.map do |pair|
-            separator = /(BTC|USDT|ETH)\z/ =~ pair['Instrument']
-
-            next if separator.nil?
-
-            base   = pair['Instrument'][0..separator - 1]
-            target = pair['Instrument'][separator..-1]
+          output.map do |pair, ticker|
+            base, target = pair.split("_")
 
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: base,
@@ -32,7 +27,7 @@ module Cryptoexchange::Exchanges
               market: Btcnext::Market::NAME
             )
 
-            adapt(pair, market_pair)
+            adapt(ticker, market_pair)
           end.compact
         end
 
@@ -41,13 +36,8 @@ module Cryptoexchange::Exchanges
           ticker.base = market_pair.base
           ticker.target = market_pair.target
           ticker.market = Btcnext::Market::NAME
-          ticker.ask = NumericHelper.to_d(output['BestOffer'])
-          ticker.bid = NumericHelper.to_d(output['BestBid'])
-          ticker.last = NumericHelper.to_d(output['LastTradedPx'])
-          ticker.high = NumericHelper.to_d(output['SessionHigh'])
-          ticker.low = NumericHelper.to_d(output['SessionLow'])
-          ticker.volume = NumericHelper.to_d(output['Rolling24HrVolume'])
-          ticker.change = NumericHelper.to_d(output['Rolling24HrPxChange'])
+          ticker.last = NumericHelper.to_d(output['last_price'])
+          ticker.volume = NumericHelper.to_d(output['base_volume'])
           ticker.timestamp = nil
           ticker.payload = output
           ticker
