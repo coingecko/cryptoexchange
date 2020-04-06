@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Btcnext
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Btcnext::Market::API_URL}/b2trade/ticker"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Btcnext::Market::API_URL}/ticker"
 
         def fetch
           output = super
@@ -10,13 +10,8 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          pairs = output.map do |pair|
-            separator = /(BTC|USDT|ETH)\z/ =~ pair['Instrument']
-
-            next if separator.nil?
-
-            base   = pair['Instrument'][0..separator - 1]
-            target = pair['Instrument'][separator..-1]
+          pairs = output.map do |pair, _ticker|
+            base, target = pair.split("_")
 
             Cryptoexchange::Models::MarketPair.new(
               base: base,

@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Btcnext
     class Market < Cryptoexchange::Models::Market
       NAME = 'btcnext'
-      API_URL = 'https://api.btcnext.io/api/v1'
+      API_URL = 'https://cmc-gate.btcnext.io/marketdata/cmc/v1'
 
       def self.trade_page_url(args={})
         "https://www.btcnext.io/"
