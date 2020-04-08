@@ -6,7 +6,7 @@ module Cryptoexchange::Exchanges
       WS_URL = 'wss://api.bitfinex.com/ws/'
 
       def self.trade_page_url(args = {})
-        "https://www.bitfinex.com/t/#{args[:base]}#{args[:target]}?refcode=6dwJVwfb"
+        "https://www.bitfinex.com/t/#{args[:base]}#{args[:target]}"
       end
     end
   end
