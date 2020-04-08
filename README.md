@@ -25,6 +25,7 @@ Or install it yourself as:
 | Exchange          | Ticker  | Order Book | Trade   | Account | Market List | Trade Page URL | slug              |m.type |
 | ----------------- | ------- | ---------- | ------- | ------- | ----------- |----------|-------------------|-------|
 | 58Coin            | Y       | Y          | Y       |         | Y           | Y        | fifty_eight_coin  |       |
+| AAX               | Y       | Y [x]      | Y       |         | Y           | Y        | aax               |       |
 | Abcc              | Y       | N          | N       |         | Y           | Y        | abcc              |       |
 | Abucoins          | Y       | Y          | Y       |         | Y           |          | abucoins          |       |
 | ACX               | Y       | Y [x]      | Y       |         | Y           | Y        | acx               |       |
