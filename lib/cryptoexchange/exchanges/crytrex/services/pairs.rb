@@ -6,15 +6,17 @@ module Cryptoexchange::Exchanges
 
         def fetch
           output = super
-          market_pairs = []
-          output['result'].each do |pair|
-            market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair['Currency'],
-                              target: pair['Market'],
-                              market: Crytrex::Market::NAME
-                            )
+          adapt(output)
+        end
+
+        def adapt(output)
+          output["result"].map do |output|
+            Cryptoexchange::Models::MarketPair.new(
+              base: output["Currency"],
+              target: output["Market"],
+              market: Crytrex::Market::NAME
+            )
           end
-          market_pairs
         end
       end
     end
