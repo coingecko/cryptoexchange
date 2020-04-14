@@ -231,7 +231,7 @@ Or install it yourself as:
 | Cryptology        | Y       |            |         |         | Y           |          | cryptology        |       |
 | Cryptonit         | Y       | Y          | Y       |         | Y           | Y        | cryptonit         |       |
 | Cryptopia         | Y       | Y          | Y       |         | Y           |          | cryptopia         |       |
-| Crytrex           | Y       | Y          | Y       |         | Y           |          | crytrex           |       |
+| Crytrex           | Y       | Y [x]      |         |         | Y           | Y        | crytrex           |       |
 | Currency          | Y       |            |         |         | Y           | Y        | currency          |       |
 | Cybex             | Y       |            | Y       |         | Y           |          | cybex             |       |
 | Dach.Exchange     | Y       |            |         |         | Y           | Y        | dach_exchange     |       |
