@@ -19,18 +19,16 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |output|
-            if output["symbol"].include? "CHZ"
-              base, target = Chiliz::Market.separate_symbol(output["symbol"])
-              next if target == ""
+            base, target = Chiliz::Market.separate_symbol(output["symbol"])
+            next if target.nil? || base.nil?
 
-              market_pair = Cryptoexchange::Models::MarketPair.new(
-                              base: base,
-                              target: target,
-                              market: Chiliz::Market::NAME,
-                            )
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+                            base: base,
+                            target: target,
+                            market: Chiliz::Market::NAME,
+                          )
 
-              adapt(market_pair, output)
-            end
+            adapt(market_pair, output)
           end.compact
         end
 

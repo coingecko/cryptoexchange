@@ -9,7 +9,7 @@ module Cryptoexchange::Exchanges
       end
 
       def self.separate_symbol(pair)
-        separator = /(|CHZ)\z/i =~ pair
+        separator = /(CHZ|BTC|USDT)\z/i =~ pair
         base      = pair[0..separator - 1]
         target    = pair[separator..-1]
         [base, target]
