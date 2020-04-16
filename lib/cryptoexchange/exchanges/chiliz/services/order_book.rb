@@ -33,8 +33,8 @@ module Cryptoexchange::Exchanges
           orders.collect do |order_entry|
             price, amount = order_entry
             Cryptoexchange::Models::Order.new(
-              price:     price,
-              amount:    amount,
+              price:     price.to_f,
+              amount:    amount.to_f,
               timestamp: nil
             )
           end
