@@ -514,6 +514,7 @@ Or install it yourself as:
 | Bitfinex Futures  | Y | Y  | Y    |     |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   |     |  bitfinex_futures  |
 | Bitforex Futures  | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      |    |    | Y  | Y   | N   |  bitforex_futures  |
 | Bitmax.IO Futures | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      |    |    |    | Y   | N   |  bitmax_futures  |
+| Bitmart Futures   | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | Y  | Y  | Y  | Y   | Y   |  bitmart futures  |
 | Bitmex            | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | Y  | Y  | Y  | Y   | Y   |  bitmex  |
 | Bitz Futures      | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | N  | N   | Y   |  bitz_futures  |
 | Btcmex            | Y | X  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  btcmex |
