@@ -10,16 +10,15 @@ module Cryptoexchange::Exchanges
 
         def fetch(market_pair)
           output = super(ticker_url(market_pair))
-          output = output['data']['tickers']
+          output = output['data']['tickers'][0]
           adapt(output, market_pair)
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::BitmartFutures::Market::API_URL}/ifcontract/tickers"
+          "#{Cryptoexchange::Exchanges::BitmartFutures::Market::API_URL}/ifcontract/tickers?contractID=#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)
-          output = output.find { |t| t['contract_id'] == market_pair.inst_id }
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target

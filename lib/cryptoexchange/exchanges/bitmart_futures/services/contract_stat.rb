@@ -14,11 +14,11 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::BitmartFutures::Market::API_URL}/ifcontract/tickers"
+          "#{Cryptoexchange::Exchanges::BitmartFutures::Market::API_URL}/ifcontract/tickers?contractID=#{market_pair.inst_id}"
         end
 
         def adapt(output, market_pair)
-          output = output['data']['tickers'].find { |ticker| ticker['contract_id'] == market_pair.inst_id }
+          output = output['data']['tickers'][0]
           contract_stat = Cryptoexchange::Models::ContractStat.new
 
           contract_stat.base      = market_pair.base
