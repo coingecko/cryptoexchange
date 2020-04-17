@@ -31,7 +31,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "byebug"
 
   spec.add_dependency "http", '5.0.0.pre'
-  spec.add_dependency "graphql-client"
+  spec.add_dependency "graphql", '1.10.6'
+  spec.add_dependency "graphql-client", '0.16.0'
   spec.add_dependency "lru_redux"
   spec.add_dependency "websocket-eventmachine-client"
 end
