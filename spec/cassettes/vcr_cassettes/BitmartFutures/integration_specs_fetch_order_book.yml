@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-cloud.bitmart.com/contract/v1/ifcontract/depth?contractID=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api-cloud.bitmart.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 17 Apr 2020 09:12:43 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d2f5cfcc8e2b27987a88ce01da13427cc1587114763; expires=Sun, 17-May-20
+        09:12:43 GMT; path=/; domain=.bitmart.com; HttpOnly; SameSite=Lax; Secure
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 585506a7adebe25b-SIN
+      Cf-Request-Id:
+      - '0229027cc40000e25bd723e200000001'
+    body:
+      encoding: UTF-8
+      string: '{"message":"OK","data":{"sells":[{"price":"7084","vol":"58738"},{"price":"7085","vol":"73112"},{"price":"7086","vol":"59723"},{"price":"7087","vol":"65401"},{"price":"7088","vol":"94723"},{"price":"7089","vol":"101500"},{"price":"7090","vol":"101000"},{"price":"7091","vol":"101000"},{"price":"7092","vol":"36633"},{"price":"7093","vol":"101000"},{"price":"7094","vol":"101000"},{"price":"7095","vol":"86498"},{"price":"7096","vol":"87895"},{"price":"7097","vol":"101000"},{"price":"7098","vol":"101000"},{"price":"7099","vol":"101000"},{"price":"7100","vol":"101000"},{"price":"7101","vol":"101000"},{"price":"7102","vol":"101000"},{"price":"7103","vol":"101000"},{"price":"7104","vol":"101000"},{"price":"7105","vol":"101000"},{"price":"7106","vol":"101000"},{"price":"7107","vol":"101000"},{"price":"7108","vol":"101000"},{"price":"7109","vol":"37558"},{"price":"7110","vol":"101000"},{"price":"7111","vol":"101000"},{"price":"7112","vol":"101000"},{"price":"7113","vol":"101000"},{"price":"7114","vol":"7310"},{"price":"7115","vol":"6325"},{"price":"7116","vol":"5903"},{"price":"7117","vol":"4215"},{"price":"7118","vol":"101000"},{"price":"7119","vol":"101000"},{"price":"7120","vol":"101000"},{"price":"7121","vol":"5898"},{"price":"7122","vol":"7301"},{"price":"7123","vol":"64720"},{"price":"7124","vol":"281"},{"price":"7125","vol":"101000"},{"price":"7126","vol":"82515"},{"price":"7127","vol":"1403"},{"price":"7128","vol":"2806"},{"price":"7129","vol":"25670"},{"price":"7130","vol":"82944"},{"price":"7131","vol":"7993"},{"price":"7132","vol":"1122"},{"price":"7133","vol":"1402"},{"price":"7134","vol":"2663"}],"buys":[{"price":"7078","vol":"92025"},{"price":"7077","vol":"92483"},{"price":"7076","vol":"101000"},{"price":"7075","vol":"101000"},{"price":"7074","vol":"11450"},{"price":"7073","vol":"101000"},{"price":"7070","vol":"11966"},{"price":"7069","vol":"17060"},{"price":"7068","vol":"101000"},{"price":"7066","vol":"7784"},{"price":"7065","vol":"6256"},{"price":"7064","vol":"12882"},{"price":"7063","vol":"4247"},{"price":"7062","vol":"98414"},{"price":"7061","vol":"101000"},{"price":"7060","vol":"63031"},{"price":"7059","vol":"43066"},{"price":"7058","vol":"101000"},{"price":"7057","vol":"101000"},{"price":"7056","vol":"12188"},{"price":"7055","vol":"283"},{"price":"7054","vol":"4536"},{"price":"7053","vol":"101000"},{"price":"7052","vol":"142"},{"price":"7050","vol":"101000"},{"price":"7049","vol":"54050"},{"price":"7047","vol":"101000"},{"price":"7046","vol":"2129"},{"price":"7045","vol":"1419"},{"price":"7044","vol":"101000"},{"price":"7043","vol":"101000"},{"price":"7042","vol":"142"},{"price":"7040","vol":"101000"},{"price":"7038","vol":"11651"},{"price":"7037","vol":"30126"},{"price":"7036","vol":"101000"},{"price":"7035","vol":"43923"},{"price":"7034","vol":"40944"},{"price":"7033","vol":"2986"},{"price":"7032","vol":"101000"},{"price":"7031","vol":"36979"},{"price":"7030","vol":"101300"},{"price":"7029","vol":"1"},{"price":"7028","vol":"2134"},{"price":"7027","vol":"101000"},{"price":"7025","vol":"101000"},{"price":"7024","vol":"101000"},{"price":"7022","vol":"101000"},{"price":"7021","vol":"101000"},{"price":"7020","vol":"1000"},{"price":"7010","vol":"300"}]}}'
+    http_version: 
+  recorded_at: Fri, 17 Apr 2020 09:12:43 GMT
+recorded_with: VCR 4.0.0
