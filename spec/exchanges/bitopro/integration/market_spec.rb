@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Bitopro integration specs' do
   let(:client) { Cryptoexchange::Client.new }
+  let(:market) { 'bitopro' }
   let(:btc_twd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'TWD', market: 'bitopro') }
 
   it 'fetch pairs' do
@@ -12,6 +13,11 @@ RSpec.describe 'Bitopro integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'bitopro'
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url market, base: btc_twd_pair.base, target: btc_twd_pair.target
+    expect(trade_page_url).to eq "https://www.bitopro.com/trading/btc_twd"
   end
 
   it 'fetch ticker' do

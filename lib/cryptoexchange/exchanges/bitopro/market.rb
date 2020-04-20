@@ -7,11 +7,7 @@ module Cryptoexchange::Exchanges
       def self.trade_page_url(args={})
         base = args[:base].downcase
         target = args[:target].downcase
-        if target == "twd"
-          "https://www.bitopro.com/trading/#{base}"
-        else
-          "https://www.bitopro.com/trading/#{base}#{target}"
-        end
+        "https://www.bitopro.com/trading/#{base}_#{target}"
       end
     end
   end
