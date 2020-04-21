@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'SaturnNetwork integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:eth_saturn_pair) { Cryptoexchange::Models::MarketPair.new(base: 'SATURN', target: 'ETH', market: 'saturn_network') }
+  let(:eth_saturn_pair) { Cryptoexchange::Models::MarketPair.new(base: 'SATURN', target: 'ETH', inst_id: "0x0d9e614937a308438337a2999acf64fc86bf098a", market: 'saturn_network') }
 
   it 'fetch pairs' do
     pairs = client.pairs('saturn_network')
@@ -12,6 +12,11 @@ RSpec.describe 'SaturnNetwork integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq 'saturn_network'
+  end
+
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'saturn_network', base: eth_saturn_pair.base, target: eth_saturn_pair.target, inst_id: eth_saturn_pair.inst_id
+    expect(trade_page_url).to eq "https://www.saturn.network/exchange/ETH/order-book/0x0d9e614937a308438337a2999acf64fc86bf098a"
   end
 
   it 'fetch ticker' do

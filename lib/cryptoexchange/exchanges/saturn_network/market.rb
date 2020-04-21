@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://ticker.saturn.network'
 
       def self.trade_page_url(args={})
-        "https://www.saturn.network/exchange/#{args[:target]}/order-book/#{args[:base].split('-').last.downcase}"
+        "https://www.saturn.network/exchange/#{args[:target]}/order-book/#{args[:inst_id]}"
       end
     end
   end

@@ -19,6 +19,7 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
+              inst_id: contract_address,
               market: SaturnNetwork::Market::NAME,
             )
           end

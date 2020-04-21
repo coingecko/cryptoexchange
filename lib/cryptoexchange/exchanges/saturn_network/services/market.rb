@@ -38,6 +38,7 @@ module Cryptoexchange::Exchanges
 
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
+          ticker.inst_id   = market_pair.inst_id
           ticker.market    = SaturnNetwork::Market::NAME
           ticker.last      = NumericHelper.to_d(output[1]["last"])
           ticker.high      = NumericHelper.to_d(output[1]["highestBid"])
