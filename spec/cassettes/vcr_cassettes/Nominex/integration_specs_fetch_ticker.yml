@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nominex.io/api/rest/v1/ticker/BTC/USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - nominex.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 21 Apr 2020 07:46:14 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=de4e0aa17d625199a8eaa859d1fff57141587455174; expires=Thu, 21-May-20
+        07:46:14 GMT; path=/; domain=.nominex.io; HttpOnly; SameSite=Lax; Secure
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      - sameorigin
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 58757d785a12bb7c-SEA
+      Cf-Request-Id:
+      - 023d4cbf330000bb7cb4992200000001
+    body:
+      encoding: UTF-8
+      string: '{"bid":6850.92,"bidSize":0.008461,"ask":6886.24,"askSize":0.001453,"dailyChange":-303.83,"dailyChangeP":-4.24,"price":6869.42,"quoteVolume":948547.67680197,"high":7185.73,"low":6761.43}'
+    http_version: 
+  recorded_at: Tue, 21 Apr 2020 07:46:14 GMT
+recorded_with: VCR 4.0.0

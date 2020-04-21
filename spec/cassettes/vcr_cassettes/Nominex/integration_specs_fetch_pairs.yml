@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nominex.io/api/rest/v1/pairs
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - nominex.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 21 Apr 2020 07:46:13 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7448be27e7b566e00fa61de08c7d4ef71587455173; expires=Thu, 21-May-20
+        07:46:13 GMT; path=/; domain=.nominex.io; HttpOnly; SameSite=Lax; Secure
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      - sameorigin
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 58757d705bbbe466-SEA
+      Cf-Request-Id:
+      - 023d4cba390000e466ed313200000001
+    body:
+      encoding: UTF-8
+      string: '[{"id":589832,"name":"ETH/USDT","baseStep":0.00001000,"quoteStep":0.01000000,"minBaseAmount":0.00001000,"minQuoteAmount":10.00000000,"maxBaseAmount":9000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":196609,"name":"BCH/BTC","baseStep":0.00100000,"quoteStep":0.00000100,"minBaseAmount":0.00100000,"minQuoteAmount":0.00100000,"maxBaseAmount":10000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":655368,"name":"OMG/USDT","baseStep":0.01000000,"quoteStep":0.00010000,"minBaseAmount":0.01000000,"minQuoteAmount":10.00000000,"maxBaseAmount":900000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":131073,"name":"LTC/BTC","baseStep":0.01000000,"quoteStep":0.00000100,"minBaseAmount":0.01000000,"minQuoteAmount":0.00100000,"maxBaseAmount":100000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":655369,"name":"OMG/ETH","baseStep":0.01000000,"quoteStep":0.00000100,"minBaseAmount":0.01000000,"minQuoteAmount":0.01000000,"maxBaseAmount":90000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":327681,"name":"ZEC/BTC","baseStep":0.00100000,"quoteStep":0.00000100,"minBaseAmount":0.00100000,"minQuoteAmount":0.00100000,"maxBaseAmount":10000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":262145,"name":"DASH/BTC","baseStep":0.00100000,"quoteStep":0.00000100,"minBaseAmount":0.00100000,"minQuoteAmount":0.00100000,"maxBaseAmount":10000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":458753,"name":"XMR/BTC","baseStep":0.00100000,"quoteStep":0.00000100,"minBaseAmount":0.00100000,"minQuoteAmount":0.00100000,"maxBaseAmount":10000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":393217,"name":"XRP/BTC","baseStep":1.00000000,"quoteStep":0.00000001,"minBaseAmount":1.00000000,"minQuoteAmount":0.00100000,"maxBaseAmount":90000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":983048,"name":"BAT/USDT","baseStep":0.01000000,"quoteStep":0.00010000,"minBaseAmount":0.01000000,"minQuoteAmount":10.00000000,"maxBaseAmount":900000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":589825,"name":"ETH/BTC","baseStep":0.00100000,"quoteStep":0.00000100,"minBaseAmount":0.00100000,"minQuoteAmount":0.00100000,"maxBaseAmount":100000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":65544,"name":"BTC/USDT","baseStep":0.00000100,"quoteStep":0.01000000,"minBaseAmount":0.00000100,"minQuoteAmount":10.00000000,"maxBaseAmount":9000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":131080,"name":"LTC/USDT","baseStep":0.00001000,"quoteStep":0.01000000,"minBaseAmount":0.00001000,"minQuoteAmount":10.00000000,"maxBaseAmount":900000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":131081,"name":"LTC/ETH","baseStep":0.00100000,"quoteStep":0.00001000,"minBaseAmount":0.00100000,"minQuoteAmount":0.01000000,"maxBaseAmount":10000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":196616,"name":"BCH/USDT","baseStep":0.00001000,"quoteStep":0.01000000,"minBaseAmount":0.00001000,"minQuoteAmount":10.00000000,"maxBaseAmount":900000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":655361,"name":"OMG/BTC","baseStep":0.01000000,"quoteStep":0.00000010,"minBaseAmount":0.01000000,"minQuoteAmount":0.00100000,"maxBaseAmount":10000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":262152,"name":"DASH/USDT","baseStep":0.00001000,"quoteStep":0.01000000,"minBaseAmount":0.00001000,"minQuoteAmount":10.00000000,"maxBaseAmount":900000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":327689,"name":"ZEC/ETH","baseStep":0.00100000,"quoteStep":0.00001000,"minBaseAmount":0.00100000,"minQuoteAmount":0.01000000,"maxBaseAmount":10000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":262153,"name":"DASH/ETH","baseStep":0.00100000,"quoteStep":0.00001000,"minBaseAmount":0.00100000,"minQuoteAmount":0.01000000,"maxBaseAmount":10000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":327688,"name":"ZEC/USDT","baseStep":0.00001000,"quoteStep":0.01000000,"minBaseAmount":0.00001000,"minQuoteAmount":10.00000000,"maxBaseAmount":900000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":393224,"name":"XRP/USDT","baseStep":0.10000000,"quoteStep":0.00001000,"minBaseAmount":0.10000000,"minQuoteAmount":10.00000000,"maxBaseAmount":9000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":458761,"name":"XMR/ETH","baseStep":0.00100000,"quoteStep":0.00001000,"minBaseAmount":0.00100000,"minQuoteAmount":0.01000000,"maxBaseAmount":10000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":983041,"name":"BAT/BTC","baseStep":1.00000000,"quoteStep":0.00000001,"minBaseAmount":1.00000000,"minQuoteAmount":0.00100000,"maxBaseAmount":90000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":393225,"name":"XRP/ETH","baseStep":1.00000000,"quoteStep":0.00000001,"minBaseAmount":1.00000000,"minQuoteAmount":0.01000000,"maxBaseAmount":90000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":458760,"name":"XMR/USDT","baseStep":0.00001000,"quoteStep":0.01000000,"minBaseAmount":0.00001000,"minQuoteAmount":10.00000000,"maxBaseAmount":900000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":1114113,"name":"ZRX/BTC","baseStep":1.00000000,"quoteStep":0.00000001,"minBaseAmount":1.00000000,"minQuoteAmount":0.00100000,"maxBaseAmount":90000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":1048577,"name":"LINK/BTC","baseStep":1.00000000,"quoteStep":0.00000001,"minBaseAmount":1.00000000,"minQuoteAmount":0.00100000,"maxBaseAmount":90000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":1179649,"name":"DOGE/BTC","baseStep":1.00000000,"quoteStep":0.00000001,"minBaseAmount":1.00000000,"minQuoteAmount":0.00100000,"maxBaseAmount":90000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":1048584,"name":"LINK/USDT","baseStep":0.01000000,"quoteStep":0.00010000,"minBaseAmount":0.01000000,"minQuoteAmount":10.00000000,"maxBaseAmount":900000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":1114120,"name":"ZRX/USDT","baseStep":0.01000000,"quoteStep":0.00010000,"minBaseAmount":0.01000000,"minQuoteAmount":10.00000000,"maxBaseAmount":900000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true},{"id":1179656,"name":"DOGE/USDT","baseStep":1.00000000,"quoteStep":0.00000010,"minBaseAmount":1.00000000,"minQuoteAmount":10.00000000,"maxBaseAmount":90000000.00000000,"maxQuoteAmount":1000000000.00000000,"active":true}]'
+    http_version: 
+  recorded_at: Tue, 21 Apr 2020 07:46:13 GMT
+recorded_with: VCR 4.0.0
