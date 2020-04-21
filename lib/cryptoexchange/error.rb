@@ -25,4 +25,7 @@ module Cryptoexchange
 
   class CredentialsMissingError < Error
   end
+
+  class OrderbookNoMethodError < Error
+  end
 end
