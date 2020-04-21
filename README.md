@@ -373,6 +373,7 @@ Or install it yourself as:
 | Nexybit           | Y       | Y          | N       |         | Y           | N        | nexybit           |       |
 | Ninecoin (Halted) | Y       |            |         |         | Y           |          | ninecoin          |       |
 | NLexch            | Y       |            |         |         | Y           | Y        | nlexch            |       |
+| Nominex           | Y       | Y [x]      |         |         | Y           | Y        | nominex           |       |
 | Novadex           | Y       | N          | N       |         | Y           | Y        | novadex           |       |
 | Novadax           | Y       | Y [x]      | Y       |         | Y           | Y        | novadax           |       |
 | Nusax             | Y       |            |         |         | Y           | Y        | nusax             |       |

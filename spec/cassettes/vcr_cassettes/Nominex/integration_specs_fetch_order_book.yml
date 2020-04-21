@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nominex.io/api/rest/v1/orderbook/BTC/USDT/A0/100
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - nominex.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 21 Apr 2020 07:46:15 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=deefa0f9e1c8fcd120a8865e88f35ec2d1587455175; expires=Thu, 21-May-20
+        07:46:15 GMT; path=/; domain=.nominex.io; HttpOnly; SameSite=Lax; Secure
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      - sameorigin
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 58757d805e3879f7-SEA
+      Cf-Request-Id:
+      - 023d4cc433000079f79c9e8200000001
+    body:
+      encoding: UTF-8
+      string: '[{"side":"SELL","price":6886.45,"amount":0.108502,"count":1},{"side":"SELL","price":6886.49,"amount":0.089760,"count":1},{"side":"SELL","price":6886.52,"amount":0.099821,"count":1},{"side":"SELL","price":6886.98,"amount":0.001453,"count":1},{"side":"SELL","price":6887.08,"amount":0.111049,"count":1},{"side":"SELL","price":6887.11,"amount":0.096930,"count":1},{"side":"SELL","price":6887.23,"amount":0.168091,"count":1},{"side":"SELL","price":6887.28,"amount":0.031284,"count":1},{"side":"SELL","price":6887.30,"amount":0.120814,"count":1},{"side":"SELL","price":6887.53,"amount":0.186539,"count":1},{"side":"SELL","price":6887.54,"amount":0.001452,"count":1},{"side":"SELL","price":6887.55,"amount":0.161817,"count":1},{"side":"SELL","price":6887.93,"amount":0.053935,"count":1},{"side":"SELL","price":6888.00,"amount":0.022237,"count":1},{"side":"SELL","price":6888.01,"amount":0.025234,"count":1},{"side":"SELL","price":6888.28,"amount":0.048789,"count":1},{"side":"SELL","price":6888.29,"amount":0.043894,"count":1},{"side":"SELL","price":6888.39,"amount":0.007163,"count":1},{"side":"SELL","price":6888.40,"amount":0.002439,"count":1},{"side":"SELL","price":6888.90,"amount":0.020290,"count":1},{"side":"SELL","price":6888.91,"amount":0.016907,"count":1},{"side":"SELL","price":6889.01,"amount":0.092899,"count":1},{"side":"SELL","price":6889.04,"amount":0.013924,"count":1},{"side":"SELL","price":6889.05,"amount":0.104332,"count":1},{"side":"SELL","price":6889.07,"amount":0.005433,"count":1},{"side":"BUY","price":6851.88,"amount":0.001460,"count":1},{"side":"BUY","price":6850.78,"amount":0.060303,"count":1},{"side":"BUY","price":6850.77,"amount":0.050770,"count":1},{"side":"BUY","price":6850.68,"amount":0.007783,"count":1},{"side":"BUY","price":6850.66,"amount":0.119369,"count":1},{"side":"BUY","price":6850.65,"amount":0.001460,"count":1},{"side":"BUY","price":6850.56,"amount":0.926354,"count":1},{"side":"BUY","price":6850.22,"amount":0.004094,"count":1},{"side":"BUY","price":6849.92,"amount":0.007292,"count":1},{"side":"BUY","price":6849.91,"amount":0.001460,"count":1},{"side":"BUY","price":6849.58,"amount":0.001460,"count":1},{"side":"BUY","price":6849.37,"amount":0.001460,"count":1},{"side":"BUY","price":6849.24,"amount":0.054341,"count":1},{"side":"BUY","price":6849.23,"amount":0.036596,"count":1},{"side":"BUY","price":6849.16,"amount":0.014630,"count":1},{"side":"BUY","price":6848.84,"amount":0.008498,"count":1},{"side":"BUY","price":6848.83,"amount":0.007137,"count":1},{"side":"BUY","price":6848.51,"amount":0.024295,"count":1},{"side":"BUY","price":6848.47,"amount":0.016337,"count":1},{"side":"BUY","price":6848.46,"amount":0.014639,"count":1},{"side":"BUY","price":6848.45,"amount":0.001461,"count":1},{"side":"BUY","price":6848.41,"amount":0.011652,"count":1},{"side":"BUY","price":6848.22,"amount":0.005328,"count":1},{"side":"BUY","price":6848.21,"amount":0.005856,"count":1},{"side":"BUY","price":6848.19,"amount":0.002052,"count":1}]'
+    http_version: 
+  recorded_at: Tue, 21 Apr 2020 07:46:16 GMT
+recorded_with: VCR 4.0.0
