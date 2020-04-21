@@ -80,6 +80,8 @@ module Cryptoexchange
             o.target.casecmp(market_pair.target) == 0
         end
       end
+    rescue NoMethodError => e
+      raise Cryptoexchange::OrderbookNoMethodError, { error: e }
     end
 
     # contract_stats
