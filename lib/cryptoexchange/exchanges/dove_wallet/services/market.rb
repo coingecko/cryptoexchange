@@ -10,7 +10,8 @@ module Cryptoexchange::Exchanges
 
         def fetch(market_pair)
           output = super(ticker_url(market_pair))
-          adapt(output['result'][0],market_pair)
+          handle_invalid(output)
+          adapt(output['result'].first, market_pair)
         end
 
         def ticker_url(market_pair)
@@ -27,10 +28,16 @@ module Cryptoexchange::Exchanges
           ticker.low       = NumericHelper.to_d(output['Low'])
           ticker.bid       = NumericHelper.to_d(output['Bid'])
           ticker.ask       = NumericHelper.to_d(output['Ask'])
-          ticker.volume    = NumericHelper.to_d(output['Volume']) / ticker.last
+          ticker.volume    = NumericHelper.to_d(output['BaseVolume'])
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
+        end
+
+        def handle_invalid(output)
+          if output['message'] == 'INVALID_MARKET'
+            raise Cryptoexchange::ResultParseError, { response: output }
+          end
         end
       end
     end
