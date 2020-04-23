@@ -27,6 +27,7 @@ module Cryptoexchange::Exchanges
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
+              inst_id: contract_address,
               market: SaturnNetwork::Market::NAME
             )
             adapt(pair, market_pair)
