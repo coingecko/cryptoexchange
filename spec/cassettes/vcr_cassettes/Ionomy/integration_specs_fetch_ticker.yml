@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ionomy.com/api/v1/public/markets-summaries
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ionomy.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Apr 2020 12:54:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d72f480111e69f8e6d277fad514fc79fa1588164879; expires=Fri, 29-May-20
+        12:54:39 GMT; path=/; domain=.ionomy.com; HttpOnly; SameSite=Lax; Secure
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Etag:
+      - W/"1a2a-SABaKMi9JKbrR7q+l+e1KoK6baE"
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 58b92c426c8be58f-MAN
+      Cf-Request-Id:
+      - '026799fd7c0000e58fdd01c200000001'
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"status":200,"message":null,"data":[{"market":"btc-dash","high":"0.01086384","low":"0.01043363","volume":"0.47387918","price":"0.01043363","change":"-2.00","baseVolume":"0.00494428","bidsOpenOrders":"20","bidsLastPrice":"0.00671970","highestBid":"0.01043363","asksOpenOrders":"34","asksLastPrice":"0.01086384","lowestAsk":"0.01086384"},{"market":"btc-eth","high":"0.02589710","low":"0.02475000","volume":"0.65486788","price":"0.02475000","change":"-1.00","baseVolume":"0.01620798","bidsOpenOrders":"8","bidsLastPrice":"0.02500000","highestBid":"0.02500000","asksOpenOrders":"9","asksLastPrice":"10.00000000","lowestAsk":"0.02589710"},{"market":"btc-pivx","high":"0.00003840","low":"0.00003840","volume":"20.84791667","price":"0.00003840","change":"0.00","baseVolume":"0.00080056","bidsOpenOrders":"38","bidsLastPrice":"0.00003774","highestBid":"0.00003774","asksOpenOrders":"22","asksLastPrice":"0.00004146","lowestAsk":"0.00003840"},{"market":"pivx-pivxsx","high":"1.00100000","low":"1.00100000","volume":"0.18248679","price":"1.00100000","change":"0.00","baseVolume":"0.18266928","bidsOpenOrders":"1","bidsLastPrice":"1.00000000","highestBid":"1.00000000","asksOpenOrders":"13","asksLastPrice":"1.02600000","lowestAsk":"1.00100000"},{"market":"btc-ltc","high":"0.00580000","low":"0.00550000","volume":"2.34396552","price":"0.00580000","change":"5.45","baseVolume":"0.01359500","bidsOpenOrders":"14","bidsLastPrice":"0.00570000","highestBid":"0.00570000","asksOpenOrders":"66","asksLastPrice":"0.00575000","lowestAsk":"0.00580000"},{"market":"btc-ion","high":"0.00000342","low":"0.00000320","volume":"14181.43125000","price":"0.00000320","change":"-4.19","baseVolume":"0.04538058","bidsOpenOrders":"9","bidsLastPrice":"0.00000335","highestBid":"0.00000316","asksOpenOrders":"214","asksLastPrice":"0.00000323","lowestAsk":"0.00000323"},{"market":"btc-atoms","high":"0.00010000","low":"0.00010000","volume":"66.00000000","price":"0.00010000","change":"0.00","baseVolume":"0.00660000","bidsOpenOrders":"9","bidsLastPrice":"0.00010000","highestBid":"0.00005008","asksOpenOrders":"59","asksLastPrice":"0.00017499","lowestAsk":"0.00019199"},{"market":"ion-ionsx","high":"1.07300000","low":"1.04200000","volume":"3147.37208929","price":"1.04200000","change":"-1.14","baseVolume":"3279.56171704","bidsOpenOrders":"14","bidsLastPrice":"1.04200000","highestBid":"1.04200000","asksOpenOrders":"14","asksLastPrice":"1.07100000","lowestAsk":"1.07100000"},{"market":"dash-dashsx","high":"1.00000000","low":"1.00000000","volume":"0.23044988","price":"1.00000000","change":"0.00","baseVolume":"0.23044988","bidsOpenOrders":"6","bidsLastPrice":"1.00000001","highestBid":"1.00000000","asksOpenOrders":"4","asksLastPrice":"1.00100000","lowestAsk":"1.00100000"},{"market":"btc-mnp","high":"0.00000046","low":"0.00000040","volume":"2049.97826087","price":"0.00000046","change":"0.00","baseVolume":"0.00094299","bidsOpenOrders":"13","bidsLastPrice":"0.00000040","highestBid":"0.00000036","asksOpenOrders":"39","asksLastPrice":"0.00000549","lowestAsk":"0.00000046"},{"market":"btc-wgr","high":"0.00000307","low":"0.00000294","volume":"22390.82885906","price":"0.00000298","change":"-1.32","baseVolume":"0.06672467","bidsOpenOrders":"18","bidsLastPrice":"0.00000131","highestBid":"0.00000294","asksOpenOrders":"163","asksLastPrice":"0.00000300","lowestAsk":"0.00000300"},{"market":"btc-ionsx","high":"0.00000398","low":"0.00000398","volume":"50.81155779","price":"0.00000398","change":"0.00","baseVolume":"0.00020223","bidsOpenOrders":"11","bidsLastPrice":"0.00000331","highestBid":"0.00000350","asksOpenOrders":"28","asksLastPrice":"0.00000398","lowestAsk":"0.00000398"},{"market":"ion-xdm","high":"248.88800000","low":"248.88800000","volume":"0.04144843","price":"248.88800000","change":"0.00","baseVolume":"10.31601685","bidsOpenOrders":"10","bidsLastPrice":"90.10000000","highestBid":"108.00000000","asksOpenOrders":"15","asksLastPrice":"238.50000000","lowestAsk":"238.50000000"},{"market":"ion-atoms","high":"67.92800000","low":"67.92800000","volume":"0.76872565","price":"67.92800000","change":"0.00","baseVolume":"52.21799595","bidsOpenOrders":"13","bidsLastPrice":"21.01000000","highestBid":"21.01000000","asksOpenOrders":"11","asksLastPrice":"67.92800000","lowestAsk":"67.92800000"},{"market":"btc-xdm","high":"0.00050003","low":"0.00050003","volume":"12.75803452","price":"0.00050003","change":"0.00","baseVolume":"0.00637940","bidsOpenOrders":"5","bidsLastPrice":"0.00050003","highestBid":"0.00050001","asksOpenOrders":"19","asksLastPrice":"0.00087999","lowestAsk":"0.00087999"},{"market":"wgr-wgrsx","high":"1.01300000","low":"1.01300000","volume":"2.09561094","price":"1.01300000","change":"0.00","baseVolume":"2.12285388","bidsOpenOrders":"3","bidsLastPrice":"1.00600000","highestBid":"1.00500000","asksOpenOrders":"28","asksLastPrice":"1.01000000","lowestAsk":"1.01300000"},{"market":"btc-hive","high":"0.00007121","low":"0.00003955","volume":"7580.94599100","price":"0.00005999","change":"-4.81","baseVolume":"0.45478095","bidsOpenOrders":"57","bidsLastPrice":"0.00005006","highestBid":"0.00006000","asksOpenOrders":"46","asksLastPrice":"0.00006996","lowestAsk":"0.00006490"},{"market":"btc-bytz","high":"0.00000002","low":"0.00000002","volume":"5000.00000000","price":"0.00000002","change":"0.00","baseVolume":"0.00010000","bidsOpenOrders":"0","bidsLastPrice":"0.00000001","highestBid":"-Infinity","asksOpenOrders":"42","asksLastPrice":"0.00000001","lowestAsk":"0.00000001"},{"market":"ion-hive","high":"11.06000000","low":"11.06000000","volume":"4.38000000","price":"11.06000000","change":"0.00","baseVolume":"48.44280000","bidsOpenOrders":"15","bidsLastPrice":"11.10000000","highestBid":"11.10000000","asksOpenOrders":"5","asksLastPrice":"245.00000000","lowestAsk":"245.00000000"},{"market":"btc-steem","high":"0.00002675","low":"0.00002280","volume":"28886.46176976","price":"0.00002328","change":"-8.02","baseVolume":"0.67247683","bidsOpenOrders":"22","bidsLastPrice":"0.00002328","highestBid":"0.00002328","asksOpenOrders":"36","asksLastPrice":"0.00002350","lowestAsk":"0.00002549"},{"market":"btc-hbd","high":"0.00019500","low":"0.00009303","volume":"310.40288079","price":"0.00009303","change":"-7.01","baseVolume":"0.02887678","bidsOpenOrders":"12","bidsLastPrice":"0.00009306","highestBid":"0.00009306","asksOpenOrders":"24","asksLastPrice":"0.09600000","lowestAsk":"0.00012500"},{"market":"btc-sbd","high":"0.00013850","low":"0.00013850","volume":"6.57797834","price":"0.00013850","change":"0.00","baseVolume":"0.00091105","bidsOpenOrders":"14","bidsLastPrice":"0.00010402","highestBid":"0.00010402","asksOpenOrders":"19","asksLastPrice":"0.00013849","lowestAsk":"0.00013999"}]}'
+    http_version: 
+  recorded_at: Wed, 29 Apr 2020 12:54:41 GMT
+recorded_with: VCR 4.0.0
