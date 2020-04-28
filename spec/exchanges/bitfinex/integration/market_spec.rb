@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Bitfinex integration specs' do
   client = Cryptoexchange::Client.new
-  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'bitfinex') }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: 'bitfinex', inst_id: "tBTCUSD") }
 
   it 'fetch pairs' do
     pairs = client.pairs('bitfinex')
