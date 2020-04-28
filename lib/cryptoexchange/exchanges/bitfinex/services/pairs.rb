@@ -25,7 +25,8 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
-              market: Bitfinex::Market::NAME
+              market: Bitfinex::Market::NAME,
+              inst_id: pair,
             )
           end.compact
         end
