@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coapi.biki51.com/swap/tickers?instrumentID=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - coapi.biki51.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '512'
+      Connection:
+      - close
+      Date:
+      - Tue, 28 Apr 2020 08:46:10 GMT
+      Server:
+      - Tengine/2.2.1
+      Content-Encoding:
+      - gzip
+      Expires:
+      - Tue, 28 Apr 2020 08:46:09 GMT
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 bc447bebac6752b9d1351a9e5ee7d13b.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SYD1-C1
+      X-Amz-Cf-Id:
+      - lduCGouO_Yzcgcx7rf1sZlQvvRRT6AxKMUW3obUS6t6we0r6t4LPHQ==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"errno":"OK","message":"Success","data":{"tickers":[{"last_px":"7696.3","open":"7679.8","close":"7696.3","low":"7649.8","high":"7795","avg_px":"7711.9877598309180053","last_qty":"4880","qty24":"154363234","timestamp":1588063565,"change_rate":"0.0021484934503503","change_value":"16.5","qty_day":"111263414","amount24":"118979789.3468200000004522675","instrument_id":1,"position_size":"1354487","base_coin_qty":"15436.3234","quote_coin_qty":"119044737.11759157964869371402","pps":"84053","index_px":"7697.79","fair_px":"7696.118134868421","depth_px":{"bid_px":"7696.9","ask_px":"7698.6","mid_px":"7697.245"},"fair_basis":"0.000093749198","fair_value":"0.629219307251","madb":"-1.671865131578","rate":{"quote_rate":"0.0006","base_rate":"0.0003","interest_rate":"0.000099999999"},"premium_index":"0.000029509904","funding_rate":"0.000100309445","next_funding_at":"2020-04-28T16:00:00Z"}]}}'
+    http_version: 
+  recorded_at: Tue, 28 Apr 2020 08:46:10 GMT
+recorded_with: VCR 4.0.0
