@@ -29,6 +29,18 @@ RSpec.describe 'Waves integration specs' do
     expect(ticker.payload).to_not be nil
   end
 
+  it 'fetch order book' do
+    order_book = client.order_book(ett_btc_pair)
+
+    expect(order_book.base).to eq 'ETT'
+    expect(order_book.target).to eq 'BTC'
+    expect(order_book.market).to eq 'waves'
+    expect(order_book.asks).to_not be_empty
+    expect(order_book.bids).to_not be_empty
+    expect(order_book.timestamp).to be nil
+    expect(order_book.payload).to_not be nil
+  end  
+
   # it 'fetch trade' do
   #   trades = client.trades(ett_btc_pair)
   #   trade  = trades.sample
