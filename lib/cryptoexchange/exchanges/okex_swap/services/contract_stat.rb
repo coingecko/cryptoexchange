@@ -37,7 +37,7 @@ module Cryptoexchange::Exchanges
         def get_underlying_index(market_pair)
           instrument_info = if market_pair.contract_interval == "perpetual"
                           HTTP.get(SWAP_URL).parse(:json)
-                        elsif "futures"
+                        elsif market_pair.contract_interval == "futures"
                           HTTP.get(FUTURES_URL).parse(:json)
                         end
           instrument_info = instrument_info.find { |i| i["instrument_id"] == market_pair.inst_id }
