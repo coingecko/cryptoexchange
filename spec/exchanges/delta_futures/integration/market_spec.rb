@@ -4,7 +4,7 @@ RSpec.describe 'Delta Futures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'delta_futures' }
   let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: market, inst_id: 'BTCUSD', contract_interval: "perpetual") }
-  let(:btc_usd_pair_futures) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: market, inst_id: 'BTCUSD_27Mar', contract_interval: "") }
+  let(:btc_usd_pair_futures) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: market, inst_id: 'BTCUSD_26Jun', contract_interval: "") }
 
   it 'fetch pairs' do
     pairs = client.pairs(market)

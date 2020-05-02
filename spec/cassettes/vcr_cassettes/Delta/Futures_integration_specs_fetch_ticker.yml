@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.delta.exchange/products/ticker/24hr?symbol=BTCUSD
+    uri: https://api.delta.exchange/v2/tickers
     body:
       encoding: UTF-8
       string: ''
@@ -19,20 +19,20 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 23 Jan 2020 09:28:12 GMT
+      - Sat, 02 May 2020 05:54:21 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '113'
+      - '5352'
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d81c47570cc9befbab61e4858861f79e91579771692; expires=Sat, 22-Feb-20
-        09:28:12 GMT; path=/; domain=.delta.exchange; HttpOnly; SameSite=Lax; Secure
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Expose-Headers:
-      - x-pagination-page-size,x-pagination-page-num,x-pagination-total
+      - __cfduid=d45c4e99797f227b1e8df933ced8bd18c1588398860; expires=Mon, 01-Jun-20
+        05:54:20 GMT; path=/; domain=.delta.exchange; HttpOnly; SameSite=Lax; Secure
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, private, must-revalidate
       Cf-Cache-Status:
       - DYNAMIC
       Expect-Ct:
@@ -40,10 +40,12 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 5598bc73ca39dd62-KUL
+      - 58cf7cafee987391-JHB
+      Cf-Request-Id:
+      - '02758c41f1000073911297c200000001'
     body:
       encoding: UTF-8
-      string: '{"low":8440,"high":8683,"open":8641,"close":8440,"volume":1557314,"symbol":"BTCUSD","timestamp":1579771692776000}'
+      string: '{"result":[{"close":5.67e-6,"high":5.88e-6,"low":5.64e-6,"open":5.73e-6,"symbol":"ADABTC","timestamp":1588398861622723,"turnover":13.124373570000007,"volume":2278361},{"close":3.215e-4,"high":3.335e-4,"low":3.185e-4,"open":3.254e-4,"symbol":"ATOMBTC","timestamp":1588398861622723,"turnover":11.666141200000009,"volume":35933},{"close":2.155e-5,"high":2.193e-5,"low":2.096e-5,"open":2.171e-5,"symbol":"BATBTC","timestamp":1588398861622723,"turnover":5.575390810000004,"volume":260620},{"close":253.85,"high":260.4,"low":251,"open":256.65,"symbol":"BCHUSDT","timestamp":1588398861622723,"turnover":193172.27100000018,"volume":756.6599999999983},{"close":0.0019777,"high":0.002022,"low":0.0019504,"open":0.0020151,"symbol":"BNBBTC","timestamp":1588398861622723,"turnover":12.038073199999994,"volume":6073},{"close":209.85,"high":216.3,"low":206.7,"open":210.5,"symbol":"BSVUSDQ","timestamp":1588398861622723,"turnover":3.4418197499999996,"volume":0.01632},{"close":210.1,"high":215.85,"low":208.5,"open":211.2,"symbol":"BSVUSD_USDT","timestamp":1588398861622723,"turnover":127041.36799999996,"volume":602.8399999999999},{"close":8817.5,"high":9072,"low":8671,"open":8809,"symbol":"BTCUSD","timestamp":1588398861622723,"turnover":289.2737788592515,"volume":2548538},{"close":8818.9,"high":9046.6,"low":8675,"open":8812.9,"symbol":"BTCUSDT","timestamp":1588398861622723,"turnover":735977.4122999995,"volume":83.36900000000028},{"close":8860.5,"high":9113.5,"low":8730,"open":8862,"symbol":"BTCUSD_26Jun","timestamp":1588398861622723,"turnover":76.16373891331642,"volume":675886},{"close":1.61e-5,"high":1.646e-5,"low":1.509e-5,"open":1.612e-5,"symbol":"ENJBTC","timestamp":1588398861622723,"turnover":7.981786729999998,"volume":500031},{"close":3.25e-4,"high":3.308e-4,"low":3.216e-4,"open":3.284e-4,"symbol":"EOSBTC","timestamp":1588398861622723,"turnover":8.765694699999996,"volume":26843},{"close":6.63,"high":6.7,"low":6.5,"open":6.635,"symbol":"ETCUSDT","timestamp":1588398861622723,"turnover":74076.00349999996,"volume":11188.599999999997},{"close":212.85,"high":217.05,"low":208.45,"open":213.9,"symbol":"ETHUSDT","timestamp":1588398861622723,"turnover":241579.44599999988,"volume":1137.2899999999959},{"close":5.07e-6,"high":5.41e-6,"low":4.98e-6,"open":5.03e-6,"symbol":"LENDBTC","timestamp":1588398861622723,"turnover":15.291181289999994,"volume":2960861},{"close":4.2613e-4,"high":4.4484e-4,"low":4.2438e-4,"open":4.3974e-4,"symbol":"LINKBTC","timestamp":1588398861622723,"turnover":13.839496799999992,"volume":31993},{"close":3.76,"high":3.91,"low":3.735,"open":3.88,"symbol":"LINKUSDT","timestamp":1588398861622723,"turnover":212262.71999999974,"volume":55837},{"close":47.1,"high":48.3,"low":46.5,"open":47.75,"symbol":"LTCUSDT","timestamp":1588398861622723,"turnover":86168.41499999998,"volume":1820.200000000004},{"close":1.81e-6,"high":1.86e-6,"low":1.77e-6,"open":1.82e-6,"symbol":"MATICBTC","timestamp":1588398861622723,"turnover":6.90807363,"volume":3802955},{"close":192,"high":400,"low":155,"open":285.5,"symbol":"MV-BTC-D-020520","timestamp":1588398861622723,"turnover":825197.2581966664,"volume":93.66899999999998},{"close":647,"high":799.5,"low":639.5,"open":747.5,"symbol":"MV-BTC-W-080520","timestamp":1588398861622723,"turnover":56239.18279333337,"volume":6.3909999999999725},{"close":4.35,"high":9.05,"low":3.9,"open":7.2,"symbol":"MV-ETH-D-020520","timestamp":1588398861622723,"turnover":529204.5384000002,"volume":2500.5899999999997},{"close":18.25,"high":20.75,"low":16.1,"open":19.95,"symbol":"MV-ETH-W-080520","timestamp":1588398861622723,"turnover":1827.7557333333334,"volume":8.639999999999993},{"close":7.62e-6,"high":7.96e-6,"low":7.51e-6,"open":7.81e-6,"symbol":"RENBTC","timestamp":1588398861622723,"turnover":16.143386150000005,"volume":2092915},{"close":2.22e-6,"high":2.3e-6,"low":2.15e-6,"open":2.28e-6,"symbol":"RVNBTC","timestamp":1588398861622723,"turnover":6.287844100000001,"volume":2814430},{"close":4.266e-5,"high":4.289e-5,"low":3.987e-5,"open":4.117e-5,"symbol":"TOMOBTC","timestamp":1588398861622723,"turnover":39.56549592999998,"volume":955475},{"close":0.0159,"high":0.01635,"low":0.01565,"open":0.01605,"symbol":"TRXUSDT","timestamp":1588398861622723,"turnover":64969.483049999944,"volume":4077055},{"close":1.227e-4,"high":1.241e-4,"low":1.202e-4,"open":1.232e-4,"symbol":"WAVESBTC","timestamp":1588398861622723,"turnover":1.8829611999999978,"volume":15389},{"close":1.62e-5,"high":1.68e-5,"low":1.58e-5,"open":1.645e-5,"symbol":"WRXBTC","timestamp":1588398861622723,"turnover":6.052565090000003,"volume":371871},{"close":1684,"high":1700,"low":1675,"open":1688.4,"symbol":"XAUTUSDT","timestamp":1588398861622723,"turnover":216560.67850000007,"volume":128.23999999999998},{"close":8.16e-6,"high":8.34e-6,"low":7.94e-6,"open":8.21e-6,"symbol":"XLMBTC","timestamp":1588398861622723,"turnover":6.189742660000003,"volume":758080},{"close":63.9,"high":64.95,"low":63.05,"open":64.3,"symbol":"XMRUSDT","timestamp":1588398861622723,"turnover":50261.53499999996,"volume":785.0999999999999},{"close":0.2175,"high":0.2245,"low":0.2135,"open":0.2185,"symbol":"XRPUSDT","timestamp":1588398861622723,"turnover":93902.62100000004,"volume":430226},{"close":3.163e-4,"high":3.332e-4,"low":3.155e-4,"open":3.272e-4,"symbol":"XTZBTC","timestamp":1588398861622723,"turnover":9.46205932,"volume":29392}],"success":true}'
     http_version: 
-  recorded_at: Thu, 23 Jan 2020 09:28:12 GMT
+  recorded_at: Sat, 02 May 2020 05:54:21 GMT
 recorded_with: VCR 4.0.0
