@@ -14,10 +14,11 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::DeltaFutures::Market::API_URL}/products/ticker/24hr?symbol=#{market_pair.inst_id}"
+          "#{Cryptoexchange::Exchanges::DeltaFutures::Market::API_URL}/v2/tickers"
         end
 
         def adapt(output, market_pair)
+          output = output['result'].find { |t| t["symbol"] == market_pair.inst_id }
           ticker = Cryptoexchange::Models::Ticker.new
           ticker.base = market_pair.base
           ticker.target = market_pair.target
