@@ -33,12 +33,17 @@ module Cryptoexchange
         market.fetch(market_pair)
       else
         tickers = market.fetch
-        tickers.find do |t|
+        ticker = tickers.find do |t|
           if t.inst_id.nil? || t.inst_id == ""
             (t.base.casecmp(market_pair.base) == 0 && t.target.casecmp(market_pair.target) == 0)
           else
             (t.inst_id.casecmp(market_pair.inst_id) == 0 )
           end
+        end
+        if ticker.nil?
+          raise Cryptoexchange::ResultParseError, { response: nil }
+        else
+          ticker
         end
       end
     end
