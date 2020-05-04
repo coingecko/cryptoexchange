@@ -3,6 +3,7 @@ require 'spec_helper'
 RSpec.describe 'Coinsbit integration specs' do
   client = Cryptoexchange::Client.new
   let(:eth_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'coinsbit') }
+  let(:invalid_pair) { Cryptoexchange::Models::MarketPair.new(base: 'XYZ', target: 'BTC', market: 'coinsbit') }
 
   it 'fetch pairs' do
     pairs = client.pairs('coinsbit')
@@ -28,6 +29,10 @@ RSpec.describe 'Coinsbit integration specs' do
     expect(ticker.volume).to be_a Numeric
     expect(ticker.change).to be_a Numeric
     expect(ticker.payload).to_not be nil
+  end
+
+  it 'fail to parse ticker' do
+    expect { client.ticker(invalid_pair) }.to raise_error(Cryptoexchange::ResultParseError)
   end
 
   it 'fetch order book' do
