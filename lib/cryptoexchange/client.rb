@@ -30,7 +30,11 @@ module Cryptoexchange
       market = market_class.new
 
       if market_class.supports_individual_ticker_query?
-        market.fetch(market_pair)
+        begin
+          market.fetch(market_pair)
+        rescue NoMethodError => e
+          raise Cryptoexchange::ResultParseError, { response: e }
+        end
       else
         tickers = market.fetch
         ticker = tickers.find do |t|
