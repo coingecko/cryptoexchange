@@ -23,8 +23,8 @@ module Cryptoexchange::Exchanges
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
           order_book.market    = Altilly::Market::NAME
-          order_book.asks      = output['ask'].empty? ? ['Nil'] : adapt_orders(output['ask'])
-          order_book.bids      = output['bid'].empty? ? ['Nil'] : adapt_orders(output['bid'])
+          order_book.asks      = output['ask'].empty? ? [] : adapt_orders(output['ask'])
+          order_book.bids      = output['bid'].empty? ? [] : adapt_orders(output['bid'])
           order_book.timestamp = DateTime.parse(output['timestamp']).to_time.to_i
           order_book.payload   = output
           order_book
