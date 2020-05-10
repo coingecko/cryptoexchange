@@ -19,7 +19,7 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output["result"].map do |pair|
-            separator = /(BTC|ETH|EOS|XRP|USD)\z/ =~ pair['symbol']
+            separator = /(BTC|ETH|EOS|XRP|USD|USDT)\z/ =~ pair['symbol']
             next if separator.nil?
 
             base   = pair['symbol'][0..separator - 1]
