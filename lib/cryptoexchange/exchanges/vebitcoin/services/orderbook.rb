@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Vebitcoin::Market::API_URL}/app/api/orderbook?symbol=#{market_pair.base}#{market_pair.target}&limit=100"
+          "#{Cryptoexchange::Exchanges::Vebitcoin::Market::API_URL}/orderbook?symbol=#{market_pair.base}#{market_pair.target}&limit=5"
         end
 
         def adapt(output, market_pair)
@@ -33,8 +33,8 @@ module Cryptoexchange::Exchanges
         def adapt_orders(orders)
           orders.collect do |order_entry|
             Cryptoexchange::Models::Order.new(
-              price: NumericHelper.to_d(order_entry[0]),
-              amount: NumericHelper.to_d(order_entry[1])
+              price: NumericHelper.to_d(order_entry.first[0]),
+              amount: NumericHelper.to_d(order_entry.first[1])
             )
           end
         end

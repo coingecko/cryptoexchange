@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Vebitcoin
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Vebitcoin::Market::API_URL}/app/api/ticker"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Vebitcoin::Market::API_URL}/ticker"
 
         def fetch
           output = super

@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Vebitcoin::Market::API_URL}/app/api/ticker"
+          "#{Cryptoexchange::Exchanges::Vebitcoin::Market::API_URL}/ticker"
         end
 
         def adapt_all(output)
@@ -38,7 +38,7 @@ module Cryptoexchange::Exchanges
           ticker.last      = NumericHelper.to_d(output['Price'])
           ticker.high      = NumericHelper.to_d(output['High'])
           ticker.low       = NumericHelper.to_d(output['Low'])
-          ticker.volume    = NumericHelper.to_d(output['Volume']) / ticker.last
+          ticker.volume    = NumericHelper.divide(NumericHelper.to_d(output['Volume']), ticker.last)
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
