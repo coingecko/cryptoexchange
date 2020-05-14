@@ -26,11 +26,6 @@ RSpec.describe 'BitStorage integration specs' do
       expect(ticker.target).to eq 'USD'
       expect(ticker.market).to eq 'bitstorage'
       expect(ticker.last).to be_a Numeric
-      expect(ticker.low).to be_a Numeric
-      expect(ticker.high).to be_a Numeric
-      expect(ticker.bid).to be_a Numeric
-      expect(ticker.ask).to be_a Numeric
-      expect(ticker.change).to be_a Numeric
       expect(ticker.volume).to be_a Numeric
       expect(ticker.timestamp).to be nil
       expect(ticker.payload).to_not be nil
@@ -62,8 +57,7 @@ RSpec.describe 'BitStorage integration specs' do
     expect(['buy', 'sell']).to include trade.type
     expect(trade.price).to_not be_nil
     expect(trade.amount).to_not be_nil
-    expect(trade.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(trade.timestamp).year)
+    expect(trade.timestamp).to be_nil
     expect(trade.payload).to_not be nil
   end
 end

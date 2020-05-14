@@ -6,16 +6,14 @@ module Cryptoexchange::Exchanges
 
         def fetch
           output = super
-          market_pairs = []
-          output.each do |pair|
-            base, target = pair['pairs'].split('_')
-            market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: base,
-                              target: target,
-                              market: Bitstorage::Market::NAME
-                            )
+          output.map do |pair, ticker|
+            base, target = pair.split('_')
+            Cryptoexchange::Models::MarketPair.new(
+              base: base,
+              target: target,
+              market: Bitstorage::Market::NAME
+            )
           end
-          market_pairs
         end
       end
     end
