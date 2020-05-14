@@ -282,6 +282,7 @@ Or install it yourself as:
 | Forkdelta         | Y       | N          | N       |         | Y           | Y        | forkdelta         |       |
 | Freiexchange      | Y       | Y          |         |         | User-Defined| Y        | freiexchange      |       |
 | FTX (Spot)        | Y       | Y [x]      |         |         | Y           | Y        | ftx_spot          |       |
+| FTX.us            | Y       | Y [x]      |         |         | Y           | Y        | ftx_us            |       |
 | FinexBox          | Y       | Y [x]      |         |         | Y           | Y        | finexbox          |       |
 | Fubt              | Y       |            |         |         | Y           | Y        | fubt              |       |
 | Gate              | Y       | Y [x]      | Y       |         | Y           | Y        | gate              |       |
