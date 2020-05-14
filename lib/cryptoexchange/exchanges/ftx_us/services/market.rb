@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
           ticker.market = FtxUs::Market::NAME
           ticker.ask = NumericHelper.to_d(output["ask"])
           ticker.bid = NumericHelper.to_d(output["bid"])
-          ticker.last = NumericHelper.to_d(output["last"])
+          ticker.last = NumericHelper.to_d(output["price"])
           ticker.volume = NumericHelper.divide(NumericHelper.to_d(output["quoteVolume24h"]), ticker.last)
           ticker.timestamp = nil
           ticker.payload = output
