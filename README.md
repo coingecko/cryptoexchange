@@ -364,7 +364,7 @@ Or install it yourself as:
 | Namebase          | Y       | Y          | Y       | Y       | Y           |          | namebase          |       |
 | Nanex             | Y       | N          | N       | N       | Y           |          | nanex             |       |
 | Nanu.Exchange     | Y       | Y          | Y       |         | Y           |          | nanu_exchange     |       |
-| Nash              | Y       |            |         |         | Y           |          | nash              |       |
+| Nash              | Y       | Y [x]      |         |         | Y           |          | nash              |       |
 | NebliDex          | Y       | N          | N       | N       | Y           | N        | neblidex          |       |
 | Nebula            | Y       | N          | Y       |         | Y           |          | nebula            |       |
 | Negociecoins      | Y       | Y [x]      | Y       |         | User-Defined|          | negociecoins      |       |
