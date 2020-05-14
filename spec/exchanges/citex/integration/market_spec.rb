@@ -19,7 +19,7 @@ RSpec.describe 'Citex integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'citex', base: veil_btc_pair.base, target: veil_btc_pair.target
-    expect(trade_page_url).to eq "https://trade.citex.co.kr/trade/VEIL_BTC"
+    expect(trade_page_url).to eq "https://trade.citex.me/trade/VEIL_BTC"
   end  
 
   it 'fetch ticker' do
