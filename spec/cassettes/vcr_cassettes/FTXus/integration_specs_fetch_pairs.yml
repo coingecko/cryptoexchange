@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ftx.us/api/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ftx.us
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 14 May 2020 06:42:01 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dfe96d7dcbde423363877aceeb386ae1a1589438520; expires=Sat, 13-Jun-20
+        06:42:00 GMT; path=/; domain=.ftx.us; HttpOnly; SameSite=Lax; Secure
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=1
+      Etag:
+      - W/"0189d5db34e27b59a40c296d7661c6f1"
+      Cf-Cache-Status:
+      - EXPIRED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5932a3022dbc738d-JHB
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-25=":443"; ma=86400, h3-24=":443"; ma=86400, h3-23=":443";
+        ma=86400
+      Cf-Request-Id:
+      - 02b38435550000738d9f2c6200000001
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":[{"ask":238.6,"baseCurrency":"BCH","bid":238.275,"change1h":0.008352275730824126,"change24h":0.021473706758059333,"changeBod":-0.007079277497267191,"enabled":true,"last":null,"minProvideSize":0.001,"name":"BCH/USD","price":238.4375,"priceIncrement":0.025,"quoteCurrency":"USD","quoteVolume24h":0.0,"restricted":false,"sizeIncrement":0.001,"type":"spot","underlying":null,"volumeUsd24h":0.0},{"ask":9454.0,"baseCurrency":"BTC","bid":9445.5,"change1h":0.011187239053634515,"change24h":0.06170966110268083,"changeBod":0.010808496976831292,"enabled":true,"last":9285.0,"minProvideSize":0.0001,"name":"BTC/USD","price":9445.5,"priceIncrement":0.5,"quoteCurrency":"USD","quoteVolume24h":9285.0,"restricted":false,"sizeIncrement":0.0001,"type":"spot","underlying":null,"volumeUsd24h":9285.0},{"ask":199.23,"baseCurrency":"ETH","bid":199.09,"change1h":0.0052474897825319135,"change24h":0.045826771653543305,"changeBod":-0.0050439472632840595,"enabled":true,"last":202.81,"minProvideSize":0.001,"name":"ETH/USD","price":199.23,"priceIncrement":0.01,"quoteCurrency":"USD","quoteVolume24h":0.0,"restricted":false,"sizeIncrement":0.001,"type":"spot","underlying":null,"volumeUsd24h":0.0},{"ask":43.025,"baseCurrency":"LTC","bid":43.015,"change1h":0.005491937368544053,"change24h":0.017259723371556922,"changeBod":-0.007954807470601798,"enabled":true,"last":46.85,"minProvideSize":0.01,"name":"LTC/USD","price":43.025,"priceIncrement":0.005,"quoteCurrency":"USD","quoteVolume24h":0.0,"restricted":false,"sizeIncrement":0.01,"type":"spot","underlying":null,"volumeUsd24h":0.0},{"ask":1718.2,"baseCurrency":"PAXG","bid":1716.9,"change1h":0.0014576834494621149,"change24h":0.006888263571344823,"changeBod":-0.0014534461207523037,"enabled":true,"last":null,"minProvideSize":0.0001,"name":"PAXG/USD","price":1717.55,"priceIncrement":0.1,"quoteCurrency":"USD","quoteVolume24h":0.0,"restricted":false,"sizeIncrement":0.0001,"type":"spot","underlying":null,"volumeUsd24h":0.0},{"ask":1.0011,"baseCurrency":"USDT","bid":1.0005,"change1h":0.0,"change24h":9.99000999000999e-05,"changeBod":-0.00019974033756117049,"enabled":true,"last":1.0013,"minProvideSize":0.01,"name":"USDT/USD","price":1.0011,"priceIncrement":0.0001,"quoteCurrency":"USD","quoteVolume24h":0.0,"restricted":false,"sizeIncrement":0.01,"type":"spot","underlying":null,"volumeUsd24h":0.0}],"success":true}
+
+        '
+    http_version: 
+  recorded_at: Thu, 14 May 2020 06:42:01 GMT
+recorded_with: VCR 4.0.0

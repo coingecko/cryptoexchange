@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ftx.us/api/markets/BTC/USD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ftx.us
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 14 May 2020 06:42:01 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db9fd92c6c11f0b31c12baf69828617711589438521; expires=Sat, 13-Jun-20
+        06:42:01 GMT; path=/; domain=.ftx.us; HttpOnly; SameSite=Lax; Secure
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=0
+      Etag:
+      - W/"f725c7986f8c2a1cf4be1d8eec98838a"
+      Cf-Cache-Status:
+      - MISS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5932a304f9107391-JHB
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-25=":443"; ma=86400, h3-24=":443"; ma=86400, h3-23=":443";
+        ma=86400
+      Cf-Request-Id:
+      - 02b384371e00007391f8a6c200000001
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":{"ask":9452.5,"baseCurrency":"BTC","bid":9445.5,"change1h":0.011187239053634515,"change24h":0.06170966110268083,"changeBod":0.010808496976831292,"enabled":true,"last":9285.0,"minProvideSize":0.0001,"name":"BTC/USD","price":9445.5,"priceIncrement":0.5,"quoteCurrency":"USD","quoteVolume24h":9285.0,"restricted":false,"sizeIncrement":0.0001,"type":"spot","underlying":null,"volumeUsd24h":9285.0},"success":true}
+
+        '
+    http_version: 
+  recorded_at: Thu, 14 May 2020 06:42:01 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ftx.us/api/markets/BTC/USD/orderbook?depth=100
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ftx.us
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 14 May 2020 06:42:02 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d1d4120146f7193ba358c17ba0ee5e5051589438521; expires=Sat, 13-Jun-20
+        06:42:01 GMT; path=/; domain=.ftx.us; HttpOnly; SameSite=Lax; Secure
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=0
+      Etag:
+      - W/"21769313db10dab559b3c2a2fe0605df"
+      Cf-Cache-Status:
+      - MISS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5932a3077f3973a1-JHB
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-25=":443"; ma=86400, h3-24=":443"; ma=86400, h3-23=":443";
+        ma=86400
+      Cf-Request-Id:
+      - 02b38438ac000073a14a214200000001
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":{"asks":[[9452.5,9.9161],[9455.0,8.8406],[9457.0,16.8682],[9462.5,22.1547],[9464.0,36.381],[9467.0,16.9004],[9469.0,27.8635],[9470.0,44.5577],[9471.0,27.5968],[9472.0,40.8225],[9476.0,25.7606],[9477.5,32.7977],[9479.0,33.1414],[9481.5,42.2218],[9483.0,38.7054],[9485.0,41.206],[9488.0,36.7627],[9489.5,35.5765],[9615.0,0.9991],[9688.5,5.7553],[9925.0,11.2819],[10392.0,15.1263],[10398.0,10.8906],[10862.0,19.108],[10869.5,13.1881]],"bids":[[9444.0,11.648],[9443.5,11.896],[9440.5,28.123],[9437.5,16.7397],[9435.5,20.5883],[9435.0,17.8513],[9432.5,27.9488],[9428.5,29.6821],[9425.0,29.4411],[9422.0,31.3949],[9417.5,39.7523],[9416.5,32.0887],[9413.5,63.0311],[9413.0,37.7813],[9411.5,33.8495],[9404.5,35.2382],[9400.5,33.2576],[9221.0,5.3189],[9213.0,6.8405],[8983.0,9.8896],[8790.5,13.8458],[8776.5,10.0242],[8576.5,15.3928]]},"success":true}
+
+        '
+    http_version: 
+  recorded_at: Thu, 14 May 2020 06:42:02 GMT
+recorded_with: VCR 4.0.0
