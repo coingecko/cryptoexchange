@@ -18,14 +18,15 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          output.map do |pair|
-            base, target = pair['pairs'].split('_')
-            market_pair  = Cryptoexchange::Models::MarketPair.new(
-              base:   base,
+          output.map do |pair, ticker|
+            base, target = pair.split('_')
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+              base: base,
               target: target,
               market: Bitstorage::Market::NAME
             )
-            adapt(market_pair, pair)
+
+            adapt(market_pair, ticker)
           end
         end
 
@@ -35,12 +36,7 @@ module Cryptoexchange::Exchanges
           ticker.target    = market_pair.target
           ticker.market    = Bitstorage::Market::NAME
           ticker.last      = NumericHelper.to_d(output['last_price'])
-          ticker.high      = NumericHelper.to_d(output['high'])
-          ticker.low       = NumericHelper.to_d(output['low'])
-          ticker.bid       = NumericHelper.to_d(output['bid'])
-          ticker.ask       = NumericHelper.to_d(output['ask'])
-          ticker.volume    = NumericHelper.divide(output['24H_volume'], ticker.last) if ticker.last > 0
-          ticker.change    = NumericHelper.to_d(output['change'])
+          ticker.volume    = NumericHelper.to_d(output['base_volume'])
           ticker.timestamp = nil
           ticker.payload   = output
           ticker

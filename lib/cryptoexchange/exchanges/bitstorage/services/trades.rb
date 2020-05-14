@@ -8,19 +8,19 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitstorage::Market::API_URL}/transactions?market=#{market_pair.base}&currency=#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::Bitstorage::Market::API_URL}/trades/#{market_pair.base}_#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
-          output['transactions']['data'].collect do |trade|
+          output.collect do |trade|
             tr = Cryptoexchange::Models::Trade.new
-            tr.trade_id  = trade['id']
+            tr.trade_id  = trade['tradeID']
             tr.base      = market_pair.base
             tr.target    = market_pair.target
             tr.market    = Bitstorage::Market::NAME
-            tr.type      = trade['maker_type']
+            tr.type      = trade['type'].downcase
             tr.price     = trade['price']
-            tr.amount    = trade['amount']
+            tr.amount    = trade['base_volume']
             tr.timestamp = trade['timestamp']
             tr.payload   = trade
             tr
