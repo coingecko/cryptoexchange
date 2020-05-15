@@ -15,7 +15,7 @@ module Cryptoexchange::Exchanges
           # if error, clear the cache and bail out
           if output['code'] == 1
             Cryptoexchange::Cache.ticker_cache.delete(ticker_url)
-            raise Cryptoexchange::ResultParseError, { response: output }
+            return
           end
           adapt_all(output)
         end
