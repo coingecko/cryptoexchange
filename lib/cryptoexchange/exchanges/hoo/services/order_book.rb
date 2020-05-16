@@ -10,6 +10,13 @@ module Cryptoexchange::Exchanges
 
         def fetch(market_pair)
           output = super(ticker_url(market_pair))
+          # Workaround for Hoo
+          # Handling error response 200 getting cached
+          # if error, clear the cache and bail out
+          if output['code'] == 1
+            Cryptoexchange::Cache.ticker_cache.delete(ticker_url(market_pair))
+            return
+          end
           adapt(output, market_pair)
         end
 
