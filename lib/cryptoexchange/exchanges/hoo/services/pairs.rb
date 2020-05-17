@@ -6,6 +6,13 @@ module Cryptoexchange::Exchanges
 
         def fetch
           output = super
+          # Workaround for Hoo
+          # Handling error response 200 getting cached
+          # if error, clear the cache and bail out
+          if output['code'] == 1
+            Cryptoexchange::Cache.ticker_cache.delete(PAIRS_URL)
+            return []
+          end
           adapt(output)
         end
 
