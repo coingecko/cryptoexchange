@@ -3,7 +3,7 @@ module Cryptoexchange::Exchanges
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
         def pairs_url
-          "#{Cryptoexchange::Exchanges::Uniswap::Market::API_URL}/exchanges?key=#{Cryptoexchange::Exchanges::Uniswap::Market.api_key}"
+          "#{Cryptoexchange::Exchanges::Uniswap::Market::API_URL}&key=#{Cryptoexchange::Exchanges::Uniswap::Market.api_key}"
         end
 
         def fetch
@@ -13,7 +13,7 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           market_pairs = []
-          output.each do |pair|
+          output["results"].each do |pair|
             base = pair["tokenSymbol"]
             target = "ETH"
 
