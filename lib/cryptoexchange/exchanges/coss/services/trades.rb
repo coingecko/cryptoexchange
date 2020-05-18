@@ -20,7 +20,7 @@ module Cryptoexchange::Exchanges
             tr.base      = market_pair.base
             tr.target    = market_pair.target
             tr.price     = trade['price']
-            tr.amount    = trade['quote_volume']
+            tr.amount    = trade['base_volume']
             tr.type      = trade['type'].downcase
             tr.timestamp = trade['trade_timestamp']
             tr.payload   = trade
