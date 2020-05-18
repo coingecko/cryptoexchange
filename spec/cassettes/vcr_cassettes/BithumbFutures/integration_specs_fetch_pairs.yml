@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bithumbfutures.com/api/pro/v1/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bithumbfutures.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 May 2020 08:27:08 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '195'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc7f9066183dc573478dc667da6a6ddda1589790428; expires=Wed, 17-Jun-20
+        08:27:08 GMT; path=/; domain=.bithumbfutures.com; HttpOnly; SameSite=Lax;
+        Secure
+      Instance:
+      - 2-_-2
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 59543281dd5f739d-JHB
+      Cf-Request-Id:
+      - 02c87de5230000739d9739b200000001
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":0,"data":[{"symbol":"BTC-PERP","open":"9554","close":"9787.5","high":"9959.75","low":"9465","volume":"1076.682","ask":["9781","0.4009"],"bid":["9780.25","15.8824"],"type":"derivatives"}]}'
+    http_version: 
+  recorded_at: Mon, 18 May 2020 08:27:08 GMT
+recorded_with: VCR 4.0.0

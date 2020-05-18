@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bithumbfutures.com/api/pro/futures/market-data?symbol=BTC-PERP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bithumbfutures.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 May 2020 08:27:11 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '238'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7c37be44aa9707dab02b4a0ef5b155b71589790431; expires=Wed, 17-Jun-20
+        08:27:11 GMT; path=/; domain=.bithumbfutures.com; HttpOnly; SameSite=Lax;
+        Secure
+      Instance:
+      - 0-_-2
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Accept-Ranges:
+      - bytes
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 595432955ec7738d-JHB
+      Cf-Request-Id:
+      - 02c87df1520000738d6d2b4200000001
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":0,"data":{"symbol":"BTC-PERP","openInterest":"226.1802","sourceTime":1589790426157,"fundingRate":"0.000377819","fundingPaymentFlag":false,"nextFundingPaymentTime":1589760000000,"indexPrice":"9773.65","markPrice":"9776.462653371"}}'
+    http_version: 
+  recorded_at: Mon, 18 May 2020 08:27:11 GMT
+recorded_with: VCR 4.0.0

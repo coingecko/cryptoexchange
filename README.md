@@ -515,6 +515,7 @@ Or install it yourself as:
 | Bitflyer Futures  | Y | Y  | Y    |  Y  |  N      | Y   |  N  |       |      | N  | N  |    |     |     |  bitflyer_futures  |
 | Bitfinex Futures  | Y | Y  | Y    |     |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   |     |  bitfinex_futures  |
 | Bitforex Futures  | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      |    |    | Y  | Y   | N   |  bitforex_futures  |
+| Bithumb Futures   | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      |    |    | Y  | Y   | N   |  bithumb_futures  |
 | Bitmax.IO Futures | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      |    |    |    | Y   | N   |  bitmax_futures  |
 | Bitmart Futures   | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | Y  | Y  | Y  | Y   | Y   |  bitmart futures  |
 | Bitmex            | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | Y  | Y  | Y  | Y   | Y   |  bitmex  |
