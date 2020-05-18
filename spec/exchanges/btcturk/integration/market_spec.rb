@@ -14,6 +14,11 @@ RSpec.describe 'Btcturk integration specs' do
     expect(pair.market).to eq 'btcturk'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'btcturk', base: btc_try_pair.base, target: btc_try_pair.target
+    expect(trade_page_url).to eq "https://pro.btcturk.com/pro/al-sat/BTC_TRY"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_try_pair)
 

@@ -140,7 +140,7 @@ Or install it yourself as:
 | BTCChina          |         |            |         |         |             |          |                   |       |
 | BTCMarkets        | Y       | Y [x]      |         |         | Y           | Y        | btcmarkets        |       |
 | Btcsquare         | Y       | Y          | Unstable|         | Y           | Y        | btcsquare         |       |
-| BTCTurk           | Y       | Y [x]      |         |         | Y           |          | btcturk           |       |
+| BTCTurk           | Y       | Y [x]      |         |         | Y           | Y        | btcturk           |       |
 | BTER              | Y       |            |         |         | Y           |          | bter              |       |
 | BTSE              | Y       | Y [x]      | Y       |         | Y           | Y        | btse              |       |
 | BTCNEXT           | Y       |            |         |         | Y           | N        | btcnext           |       |
