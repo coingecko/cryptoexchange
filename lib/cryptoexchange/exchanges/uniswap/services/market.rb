@@ -14,11 +14,11 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Uniswap::Market::API_URL}/exchanges?key=#{Cryptoexchange::Exchanges::Uniswap::Market.api_key}"
+          "#{Cryptoexchange::Exchanges::Uniswap::Market::API_URL}&key=#{Cryptoexchange::Exchanges::Uniswap::Market.api_key}"
         end
 
         def adapt_all(output)
-          output.map do |pair|
+          output["results"].map do |pair|
             base = pair["tokenSymbol"]
             
             # Temporary workaround for duplicate symbols
@@ -38,7 +38,7 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Uniswap::Market::NAME
-          ticker.last      = NumericHelper.divide(1, NumericHelper.to_d(output['price']))
+          ticker.last      = NumericHelper.divide(1, NumericHelper.to_d(output['basePrice']))
           ticker.volume    = NumericHelper.to_d(output['tokenVolume'])
           ticker.timestamp = nil
           ticker.payload   = output
