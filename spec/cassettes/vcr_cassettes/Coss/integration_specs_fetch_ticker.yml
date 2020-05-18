@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://market.coss.io/api/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - market.coss.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 May 2020 08:03:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1370'
+      Connection:
+      - close
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"55a-3uB6gY7naggIhRQsezFJJdffLaw"
+    body:
+      encoding: UTF-8
+      string: '{"COS_USD":{"base_id":"4036","quote_id":"2781","last_price":"0.01456","base_volume":"1","quote_volume":"0.01463","isFrozen":"0"},"LTC_USD":{"base_id":"2","quote_id":"2781","last_price":"45.125636","base_volume":"0","quote_volume":"0","isFrozen":"0"},"BTC_USD":{"base_id":"1","quote_id":"2781","last_price":"9779","base_volume":"0","quote_volume":"0","isFrozen":"0"},"XRP_USD":{"base_id":"52","quote_id":"2781","last_price":"0.2051","base_volume":"0","quote_volume":"0","isFrozen":"0"},"ETH_USD":{"base_id":"1027","quote_id":"2781","last_price":"214.55","base_volume":"0.3000000","quote_volume":"64.5150000","isFrozen":"0"},"NEO_USD":{"base_id":"1376","quote_id":"2781","last_price":"10.236987","base_volume":"0","quote_volume":"0","isFrozen":"0"},"ZEC_USD":{"base_id":"1437","quote_id":"2781","last_price":"48.110366","base_volume":"0","quote_volume":"0","isFrozen":"0"},"TRX_USD":{"base_id":"1958","quote_id":"2781","last_price":"0.01519538","base_volume":"0","quote_volume":"0","isFrozen":"0"},"EOS_USD":{"base_id":"1765","quote_id":"2781","last_price":"2.677478","base_volume":"0","quote_volume":"0","isFrozen":"0"},"BCH_USD":{"base_id":"1831","quote_id":"2781","last_price":"249.400000","base_volume":"0.5","quote_volume":"125","isFrozen":"0"},"XLM_USD":{"base_id":"512","quote_id":"2781","last_price":"0.070414","base_volume":"0","quote_volume":"0","isFrozen":"0"}}'
+    http_version: 
+  recorded_at: Mon, 18 May 2020 08:03:14 GMT
+recorded_with: VCR 4.0.0
