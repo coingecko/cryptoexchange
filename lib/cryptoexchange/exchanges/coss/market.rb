@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://market.coss.io/api'
 
       def self.trade_page_url(args={})
-        "https://market.coss.io/api/trades/#{args[:base].upcase}_#{args[:target].upcase}"
+        nil
       end
     end
   end

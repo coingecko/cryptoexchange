@@ -31,7 +31,7 @@ RSpec.describe 'Coss integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'coss', base: btc_usd_pair.base, target: btc_usd_pair.target
-    expect(trade_page_url).to eq "https://market.coss.io/api/trades/BTC_USD"
+    expect(trade_page_url).to eq nil
   end
 
   it 'fetch order book' do
