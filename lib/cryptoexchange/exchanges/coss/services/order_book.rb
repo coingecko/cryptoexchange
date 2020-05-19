@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "https://engine.coss.io/api/v1/dp?symbol=#{market_pair.base.upcase}_#{market_pair.target.upcase}"
+          "https://market.coss.io/api/orderbook/#{market_pair.base.upcase}_#{market_pair.target.upcase}"
         end
 
         def adapt(output, market_pair)
