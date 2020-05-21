@@ -3,6 +3,7 @@ require 'spec_helper'
 RSpec.describe 'Dydx integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:eth_dai_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'DAI', market: 'dydx') }
+  let(:pbtc_usdc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'PBTC', target: 'USDC', market: 'dydx') }
 
   it 'fetch pairs' do
     pairs = client.pairs('dydx')
@@ -41,5 +42,23 @@ RSpec.describe 'Dydx integration specs' do
     expect(order_book.asks.count).to be > 10
     expect(order_book.bids.count).to be > 10
     expect(order_book.payload).to_not be nil
+  end
+
+  it 'fetch contract stat perpetual' do
+    contract_stat = client.contract_stat(pbtc_usdc_pair)
+
+    expect(contract_stat.base).to eq 'PBTC'
+    expect(contract_stat.target).to eq 'USDC'
+    expect(contract_stat.market).to eq 'dydx'
+    expect(contract_stat.index).to be nil
+    expect(contract_stat.index_identifier).to be nil
+    expect(contract_stat.index_name).to be nil
+    expect(contract_stat.timestamp).to be nil
+    expect(contract_stat.expire_timestamp).to be nil
+    expect(contract_stat.start_timestamp).to be nil
+
+    expect(contract_stat.contract_type).to eq 'perpetual'
+    expect(contract_stat.open_interest).to eq 5180925000
+    expect(contract_stat.funding_rate_percentage).not_to be nil
   end
 end
