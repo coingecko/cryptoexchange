@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.zbg.com/exchange/api/v1/common/future/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.zbg.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 May 2020 18:14:58 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7918e0bd2d7ef0bc8ece0e554471f1771590257698; expires=Mon, 22-Jun-20
+        18:14:58 GMT; path=/; domain=.zbg.com; HttpOnly; SameSite=Lax; Secure
+      X-Frame-Options:
+      - DENY
+      Access-Control-Allow-Origin:
+      - 'null'
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Methods:
+      - PUT,POST,GET,DELETE,OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Clienttype,Sign,Timestamp,Userid
+      - 'null'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 02e457ddcf00007560a3135200000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5980c27618877560-KUL
+    body:
+      encoding: UTF-8
+      string: '{"datas":{"ticker":[{"symbol":"EOS_USDT","high":"2.587","vol":"522138","last":"2.573","low":"2.542","buy":"2.57","sell":"2.576"},{"symbol":"ETC_USDT","high":"6.631","vol":"707633","last":"6.586","low":"6.403","buy":"6.579","sell":"6.594"},{"symbol":"ETH_USDT","high":"208.55","vol":"114518","last":"206.9","low":"205.8","buy":"206.85","sell":"206.9"},{"symbol":"LTC_USDT","high":"44.25","vol":"527617","last":"44.05","low":"43.68","buy":"44.03","sell":"44.12"},{"symbol":"BTC_ZUSD","high":"9208.5","vol":"199032","last":"9167.5","low":"9140","buy":"9166.5","sell":"9167.5"},{"symbol":"BTC_USDT","high":"9208","vol":"126325","last":"9167","low":"9135","buy":"9166.5","sell":"9167.5"},{"symbol":"BSV_USDT","high":"194.05","vol":"190593","last":"192.25","low":"191.2","buy":"192.1","sell":"192.5"},{"symbol":"BCH_USDT","high":"235.6","vol":"80456","last":"234.7","low":"232.7","buy":"234.35","sell":"234.8"},{"symbol":"XRP_USDT","high":"0.2001","vol":"710763","last":"0.1997","low":"0.1984","buy":"0.1996","sell":"0.2001"}],"timestamp":"1590257698614"},"resMsg":{"message":"success
+        !","method":null,"code":"1"}}'
+    http_version: 
+  recorded_at: Sat, 23 May 2020 18:14:56 GMT
+recorded_with: VCR 4.0.0

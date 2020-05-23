@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.zbg.com/exchange/api/v1/common/future/depth?symbol=ETH_USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.zbg.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 23 May 2020 18:14:59 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d2e30578442506871f1c436b32c3616ce1590257698; expires=Mon, 22-Jun-20
+        18:14:58 GMT; path=/; domain=.zbg.com; HttpOnly; SameSite=Lax; Secure
+      X-Frame-Options:
+      - DENY
+      Access-Control-Allow-Origin:
+      - 'null'
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Methods:
+      - PUT,POST,GET,DELETE,OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Clienttype,Sign,Timestamp,Userid
+      - 'null'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 02e457dfa400002cf7190c9200000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5980c2790b1f2cf7-KUL
+    body:
+      encoding: UTF-8
+      string: '{"datas":{"bids":[["206.85","3521"],["206.8","2068"],["206.75","3296"],["206.7","2671"],["206.65","1984"],["206.6","2885"],["206.55","2902"],["206.5","3721"],["206.45","2106"],["206.4","2047"],["206.35","2940"],["206.3","1195"],["206.25","1811"],["206.2","2137"],["206.15","814"],["206.1","1598"],["206.05","1459"],["206","3923"],["205.95","851"],["205.9","3964"]],"asks":[["206.9","1274"],["206.95","3530"],["207","1974"],["207.05","3038"],["207.1","3496"],["207.15","2156"],["207.2","3991"],["207.25","2101"],["207.3","1611"],["207.35","3188"],["207.4","2613"],["207.45","3559"],["207.5","2266"],["207.55","3119"],["207.6","1912"],["207.65","3169"],["207.7","2364"],["207.75","2596"],["207.8","1941"],["207.85","3375"]],"timestamp":1590257699048},"resMsg":{"message":"success
+        !","method":null,"code":"1"}}'
+    http_version: 
+  recorded_at: Sat, 23 May 2020 18:14:57 GMT
+recorded_with: VCR 4.0.0
