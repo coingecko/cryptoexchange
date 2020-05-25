@@ -12,6 +12,8 @@ module Cryptoexchange::Exchanges
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: base,
                               target: target,
+                              inst_id: pair['symbol'],
+                              contract_interval: "perpetual",
                               market: ZbgFutures::Market::NAME
                             )
           end

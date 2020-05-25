@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'ZBG Futures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:eth_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USDT', market: 'zbg_futures') }
+  let(:eth_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'USDT', inst_id: "ETH_USDT", contract_interval: "perpetual", market: 'zbg_futures') }
 
   it 'fetch pairs' do
     pairs = client.pairs('zbg_futures')
@@ -11,6 +11,8 @@ RSpec.describe 'ZBG Futures integration specs' do
     pair = pairs.first
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
+    expect(pair.inst_id).to_not be nil
+    expect(pair.contract_interval).to_not be nil
     expect(pair.market).to eq 'zbg_futures'
   end
 
@@ -25,6 +27,8 @@ RSpec.describe 'ZBG Futures integration specs' do
 
     expect(ticker.base).to eq 'ETH'
     expect(ticker.target).to eq 'USDT'
+    expect(ticker.inst_id).to eq 'ETH_USDT'
+    expect(ticker.contract_interval).to eq 'perpetual'
     expect(ticker.market).to eq 'zbg_futures'
     expect(ticker.last).to be_a Numeric
     expect(ticker.low).to be_a Numeric
@@ -51,5 +55,19 @@ RSpec.describe 'ZBG Futures integration specs' do
     expect(order_book.bids.count).to be > 10
     expect(order_book.timestamp).to be nil
     expect(order_book.payload).to_not be nil
+  end
+
+  context 'fetch contract stat' do
+    it 'fetch contract details' do
+      contract_stat = client.contract_stat(eth_usdt_pair)
+
+      expect(contract_stat.base).to eq 'ETH'
+      expect(contract_stat.target).to eq 'USDT'
+      expect(contract_stat.market).to eq 'zbg_futures'
+      expect(contract_stat.index_identifier).to be nil
+      expect(contract_stat.index_name).to be nil
+      expect(contract_stat.contract_type).to eq 'perpetual'
+      expect(contract_stat.timestamp).to be nil
+    end
   end
 end

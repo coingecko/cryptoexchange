@@ -542,7 +542,7 @@ Or install it yourself as:
 | BaseFEX           | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  basefex  |
 | Phemex            | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | N   | N   |  phemex  |
 | Liquid (Derivatives) | Y | Y  | Y    |  Y  |  N      | Y   |  Y  |       |      | N  | N  | Y  | N   | N   |  liquid_derivatives  |
-| Zbg Futures       | Y | Y  | Y    |  Y  |  N      | N   |  N  |       |      | N  | N  | N  | N   | N   |  zbg_futures  |
+| Zbg Futures       | Y | Y  | Y    |  Y  |  N      | Y   |  N  |       |      | N  | N  | N  | N   | N   |  zbg_futures  |
 
 *Legend*
 
