@@ -527,6 +527,8 @@ Or install it yourself as:
 | Coinflex Futures  | N | N  | Y    |  Y  |  N      | Y*  |  N  |       |      | N  | N  |    |     |     |  coinflex_futures  |
 | Deribit           | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | Y  | Y  | Y  | Y   | Y   |  deribit |
 | Delta Futures     | Y | Y  | Y    |  Y  |  N      | Y   |  Y  |   Y   |   Y  | N  | N  | Y  | N   | N   |  delta_futures |
+| Dydx (Perpetual)  | Y | Y  | Y    |  Y  |  Y      | Y   |  N  |   N   |   N  | N  |
+N  | Y  | N   | N   | dydx_perpetual |
 | FTX               | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |   Y   |   Y  | N  | Y  | Y  | Y   | N   |  ftx |
 | Fmex              | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  fmex |
 | Gate (Futures)    | Y | Y  | Y    |  Y  |  Y      | Y   |  Y  |       |      | N  | N  | Y  | Y   | Y   |  gate_futures  |
