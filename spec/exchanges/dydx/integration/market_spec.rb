@@ -44,7 +44,7 @@ RSpec.describe 'Dydx integration specs' do
     expect(order_book.payload).to_not be nil
   end
 
-  it 'fetch contract stat perpetual' do
+  it 'fetch contract stat' do
     contract_stat = client.contract_stat(pbtc_usdc_pair)
 
     expect(contract_stat.base).to eq 'PBTC'
@@ -58,7 +58,7 @@ RSpec.describe 'Dydx integration specs' do
     expect(contract_stat.start_timestamp).to be nil
 
     expect(contract_stat.contract_type).to eq 'perpetual'
-    expect(contract_stat.open_interest).to eq 5180925000
+    expect(contract_stat.open_interest).to eq 5548795268.0
     expect(contract_stat.funding_rate_percentage).not_to be nil
   end
 end

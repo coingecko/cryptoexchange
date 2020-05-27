@@ -19,11 +19,9 @@ module Cryptoexchange::Exchanges
             )
 
             contract_type = get_contract_type(value['type'])
-            contract_info_url = contract_info_url(market_pair, contract_type)
-            next if !contract_info_url
-            contract_info = super(contract_info_url)
+            contract_info = contract_info(market_pair, contract_type)
 
-            adapt(market_pair, contract_type, contract_info['market'])
+            adapt(market_pair, contract_type, contract_info)
           end.compact
         end
 
@@ -31,13 +29,18 @@ module Cryptoexchange::Exchanges
           Cryptoexchange::Exchanges::Dydx::Services::Pairs::PAIRS_URL
         end
 
-        def contract_info_url(market_pair, contract_type)
+        def contract_info(market_pair, contract_type)
+          market = Cryptoexchange::Services::Market.new
+
           if contract_type == "perpetual"
+            perpetual_contract = market.fetch(
               "#{Cryptoexchange::Exchanges::Dydx::Market::API_URL}/perpetual-markets/#{market_pair.base}-#{market_pair.target}"
-          else
-            #TODO
-            nil
+            )
+
+            return perpetual_contract['market']
           end
+
+          {}
         end
 
         def adapt(market_pair, contract_type, contract_info)
@@ -48,15 +51,12 @@ module Cryptoexchange::Exchanges
           contract_stat.index_identifier = nil
           contract_stat.index_name = nil
           contract_stat.funding_rate_percentage = contract_info['fundingRate'] ? contract_info['fundingRate'] * 100 : nil
-          contract_stat.open_interest = contract_info['openInterest'].to_f
+          contract_stat.open_interest = contract_info['openInterest'] ? contract_info['openInterest'].to_f : nil
           # contract_stat.index
+          # contract_stat.payload
           # contract_stat.next_funding_rate_timestamp
           # contract_stat.funding_rate_percentage_predicted
           contract_stat.contract_type = contract_type
-          contract_stat.payload = {
-            'open_interest': contract_stat.open_interest,
-            'funding_rate_percentage': contract_stat.funding_rate_percentage
-          }
 
           contract_stat
         end
