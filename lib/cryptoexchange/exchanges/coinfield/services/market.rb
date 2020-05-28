@@ -44,7 +44,7 @@ module Cryptoexchange::Exchanges
         private
 
         def split_symbol(pair)
-          separator = /(XRP|USDC|USD|CAD|EUR|GBP|JPY|AED)\z/i =~ pair
+          separator = /(XRP|USDC|USD|USDT|CAD|EUR|GBP|JPY|AED)\z/i =~ pair
           return nil if separator.nil?
 
           {
