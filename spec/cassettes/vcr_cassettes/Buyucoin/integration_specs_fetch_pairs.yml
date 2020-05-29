@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.buyucoin.com/api/v1.2/currency/markets
+    uri: https://api.buyucoin.com/ticker/v1.0/liveData
     body:
       encoding: UTF-8
       string: ''
@@ -10,128 +10,44 @@ http_interactions:
       Connection:
       - close
       Host:
-      - www.buyucoin.com
+      - api.buyucoin.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Sat, 07 Apr 2018 09:05:49 GMT
+      - Fri, 29 May 2020 11:19:21 GMT
       Content-Type:
-      - application/json
+      - application/json; charset=utf-8
       Content-Length:
-      - '6575'
+      - '10563'
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=db178cdaecdda7490087b2520118679b41523091948; expires=Sun, 07-Apr-19
-        09:05:48 GMT; path=/; domain=.buyucoin.com; HttpOnly
-      - session=eyJmbGFzaCI6W119.DaobbQ.QRLmrHJ9fz0Jx3ybcGQxRRo95D4; HttpOnly; Path=/
+      - __cfduid=d59d5164181a9da84cfbc0e7af407a4ac1590751161; expires=Sun, 28-Jun-20
+        11:19:21 GMT; path=/; domain=.buyucoin.com; HttpOnly; SameSite=Lax
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"2943-xq4yS5uMbM32eyFF45tnXyJZLnQ"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 0301c183710001009fa5b34200000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 407b55a8fb02a2d2-HKG
+      - 59afd1e589640000-SIN
     body:
-      encoding: ASCII-8BIT
-      string: "{\n  \"data\": {\n    \"ark_inr\": {\n      \"ask\": 110.0, \n      \"bid\":
-        28.0, \n      \"change\": \"-0.89\", \n      \"high_24\": \"215.0000\", \n
-        \     \"last_trade\": \"114.0000\", \n      \"low_24\": \"114.0000\", \n      \"vol\":
-        4972.14084417\n    }, \n    \"bat_inr\": {\n      \"ask\": 10.0, \n      \"bid\":
-        6.0, \n      \"change\": \"-1.50\", \n      \"high_24\": \"15.0000\", \n      \"last_trade\":
-        \"6.0000\", \n      \"low_24\": \"1.0000\", \n      \"vol\": 12551.01306287\n
-        \   }, \n    \"bcc_inr\": {\n      \"ask\": 46870.0, \n      \"bid\": 16100.0,
-        \n      \"change\": \"-2.60\", \n      \"high_24\": \"47000.0000\", \n      \"last_trade\":
-        \"11500.0000\", \n      \"low_24\": \"5711.0000\", \n      \"vol\": -0.541181\n
-        \   }, \n    \"btc_inr\": {\n      \"ask\": 425000.0, \n      \"bid\": 350500.0,
-        \n      \"change\": \"0.06\", \n      \"high_24\": \"0.0000\", \n      \"last_trade\":
-        \"425000.0000\", \n      \"low_24\": \"0.0000\", \n      \"vol\": 26.11519018\n
-        \   }, \n    \"bts_inr\": {\n      \"ask\": 9.0, \n      \"bid\": 8.99, \n
-        \     \"change\": \"0.28\", \n      \"high_24\": \"8.9900\", \n      \"last_trade\":
-        \"8.9900\", \n      \"low_24\": \"3.5000\", \n      \"vol\": 41283.4816526\n
-        \   }, \n    \"cloak_inr\": {\n      \"ask\": 350.0, \n      \"bid\": 6.0,
-        \n      \"change\": \"-1.20\", \n      \"high_24\": \"350.0000\", \n      \"last_trade\":
-        \"159.0000\", \n      \"low_24\": \"159.0000\", \n      \"vol\": 2027.31333146\n
-        \   }, \n    \"cvc_inr\": {\n      \"ask\": 14.0, \n      \"bid\": 2.15, \n
-        \     \"change\": \"-6.25\", \n      \"high_24\": \"15.0000\", \n      \"last_trade\":
-        \"2.0700\", \n      \"low_24\": \"2.0700\", \n      \"vol\": 11379.77420571\n
-        \   }, \n    \"dash_inr\": {\n      \"ask\": 20700.0, \n      \"bid\": 1211.0,
-        \n      \"change\": \"-0.30\", \n      \"high_24\": \"26901.0000\", \n      \"last_trade\":
-        \"20700.0000\", \n      \"low_24\": \"20700.0000\", \n      \"vol\": 60.49869973\n
-        \   }, \n    \"dcn_inr\": {\n      \"ask\": 0.034, \n      \"bid\": 0.025,
-        \n      \"change\": \"0.17\", \n      \"high_24\": \"0.0350\", \n      \"last_trade\":
-        \"0.0340\", \n      \"low_24\": \"0.0210\", \n      \"vol\": 8904591.713617\n
-        \   }, \n    \"dgb_inr\": {\n      \"ask\": 1.054, \n      \"bid\": 0.671,
-        \n      \"change\": \"-0.28\", \n      \"high_24\": \"1.4500\", \n      \"last_trade\":
-        \"1.0580\", \n      \"low_24\": \"0.5200\", \n      \"vol\": 299769.7526756\n
-        \   }, \n    \"doge_inr\": {\n      \"ask\": 0.189, \n      \"bid\": 0.121,
-        \n      \"change\": \"0.65\", \n      \"high_24\": \"0.2000\", \n      \"last_trade\":
-        \"0.1930\", \n      \"low_24\": \"0.1000\", \n      \"vol\": 577593.03438147\n
-        \   }, \n    \"etc_inr\": {\n      \"ask\": 1001.0, \n      \"bid\": 850.0,
-        \n      \"change\": \"-0.74\", \n      \"high_24\": \"1740.0000\", \n      \"last_trade\":
-        \"1001.0000\", \n      \"low_24\": \"850.0000\", \n      \"vol\": 1974.51680096\n
-        \   }, \n    \"eth_inr\": {\n      \"ask\": 23500.0, \n      \"bid\": 10400.0,
-        \n      \"change\": \"-0.04\", \n      \"high_24\": \"25000.0000\", \n      \"last_trade\":
-        \"24000.0000\", \n      \"low_24\": \"5000.0000\", \n      \"vol\": 66.25140619\n
-        \   }, \n    \"fct_inr\": {\n      \"ask\": 2350.0, \n      \"bid\": 31.0,
-        \n      \"change\": \"0.00\", \n      \"high_24\": \"900.0000\", \n      \"last_trade\":
-        \"900.0000\", \n      \"low_24\": \"900.0000\", \n      \"vol\": 4492.81620708\n
-        \   }, \n    \"gnt_inr\": {\n      \"ask\": 9.5, \n      \"bid\": 4.7, \n
-        \     \"change\": \"-2.71\", \n      \"high_24\": \"16.6962\", \n      \"last_trade\":
-        \"4.5000\", \n      \"low_24\": \"4.5000\", \n      \"vol\": 98681.72768322\n
-        \   }, \n    \"lsk_inr\": {\n      \"ask\": 580.0, \n      \"bid\": 161.0,
-        \n      \"change\": \"-3.07\", \n      \"high_24\": \"651.0000\", \n      \"last_trade\":
-        \"160.0000\", \n      \"low_24\": \"120.0000\", \n      \"vol\": 419.4379381\n
-        \   }, \n    \"ltc_inr\": {\n      \"ask\": 7849.0, \n      \"bid\": 5000.0,
-        \n      \"change\": \"0.15\", \n      \"high_24\": \"7900.0000\", \n      \"last_trade\":
-        \"6550.0000\", \n      \"low_24\": \"3000.0000\", \n      \"vol\": 122.72635179\n
-        \   }, \n    \"neo_inr\": {\n      \"ask\": 3449.0, \n      \"bid\": 1200.0,
-        \n      \"change\": \"-2.51\", \n      \"high_24\": \"3900.0000\", \n      \"last_trade\":
-        \"1112.0000\", \n      \"low_24\": \"1001.0000\", \n      \"vol\": 1086.45720006\n
-        \   }, \n    \"nxt_inr\": {\n      \"ask\": 8.14, \n      \"bid\": 5.5, \n
-        \     \"change\": \"0.62\", \n      \"high_24\": \"8.1400\", \n      \"last_trade\":
-        \"8.1400\", \n      \"low_24\": \"5.0100\", \n      \"vol\": 130140.82218605\n
-        \   }, \n    \"omg_inr\": {\n      \"ask\": 615.0, \n      \"bid\": 21.0,
-        \n      \"change\": \"-0.67\", \n      \"high_24\": \"950.0000\", \n      \"last_trade\":
-        \"570.0000\", \n      \"low_24\": \"570.0000\", \n      \"vol\": 2913.87762095\n
-        \   }, \n    \"pay_inr\": {\n      \"ask\": 85.0, \n      \"bid\": 26.0, \n
-        \     \"change\": \"-2.86\", \n      \"high_24\": \"85.0000\", \n      \"last_trade\":
-        \"22.0000\", \n      \"low_24\": \"22.0000\", \n      \"vol\": 3495.79907615\n
-        \   }, \n    \"pivx_inr\": {\n      \"ask\": 320.0, \n      \"bid\": 120.0,
-        \n      \"change\": \"-0.10\", \n      \"high_24\": \"301.0000\", \n      \"last_trade\":
-        \"274.0000\", \n      \"low_24\": \"274.0000\", \n      \"vol\": 10803.53818667\n
-        \   }, \n    \"qtum_inr\": {\n      \"ask\": 1500.0, \n      \"bid\": 351.0,
-        \n      \"change\": \"0.00\", \n      \"high_24\": \"766.0000\", \n      \"last_trade\":
-        \"766.0000\", \n      \"low_24\": \"105.0000\", \n      \"vol\": 882.34891848\n
-        \   }, \n    \"rep_inr\": {\n      \"ask\": 1838.0, \n      \"bid\": 1821.0,
-        \n      \"change\": \"0.00\", \n      \"high_24\": \"1838.0000\", \n      \"last_trade\":
-        \"1838.0000\", \n      \"low_24\": \"1837.0000\", \n      \"vol\": 9803.11287778\n
-        \   }, \n    \"sc_inr\": {\n      \"ask\": 1.0, \n      \"bid\": 0.472, \n
-        \     \"change\": \"0.90\", \n      \"high_24\": \"0.0000\", \n      \"last_trade\":
-        \"0.9500\", \n      \"low_24\": \"0.0000\", \n      \"vol\": 553158.48787213\n
-        \   }, \n    \"steem_inr\": {\n      \"ask\": 98.0, \n      \"bid\": 65.0,
-        \n      \"change\": \"-0.02\", \n      \"high_24\": \"0.0000\", \n      \"last_trade\":
-        \"99.0000\", \n      \"low_24\": \"0.0000\", \n      \"vol\": 5132.35629705\n
-        \   }, \n    \"strat_inr\": {\n      \"ask\": 300.0, \n      \"bid\": 100.0,
-        \n      \"change\": \"-0.90\", \n      \"high_24\": \"619.5000\", \n      \"last_trade\":
-        \"300.0000\", \n      \"low_24\": \"300.0000\", \n      \"vol\": 4311.28336799\n
-        \   }, \n    \"xem_inr\": {\n      \"ask\": 13.9, \n      \"bid\": 5.53, \n
-        \     \"change\": \"0.01\", \n      \"high_24\": \"16.0000\", \n      \"last_trade\":
-        \"5.5300\", \n      \"low_24\": \"4.7100\", \n      \"vol\": 90798.58782008\n
-        \   }, \n    \"xmr_inr\": {\n      \"ask\": 9000.0, \n      \"bid\": 1802.0,
-        \n      \"change\": \"-0.41\", \n      \"high_24\": \"14100.0000\", \n      \"last_trade\":
-        \"10000.0000\", \n      \"low_24\": \"10000.0000\", \n      \"vol\": 23.7249433\n
-        \   }, \n    \"xrp_inr\": {\n      \"ask\": 30.5, \n      \"bid\": 30.0, \n
-        \     \"change\": \"0.58\", \n      \"high_24\": \"0.0000\", \n      \"last_trade\":
-        \"29.9400\", \n      \"low_24\": \"0.0000\", \n      \"vol\": -686453.03309185\n
-        \   }, \n    \"zec_inr\": {\n      \"ask\": 17000.0, \n      \"bid\": 1601.0,
-        \n      \"change\": \"-0.25\", \n      \"high_24\": \"21950.0000\", \n      \"last_trade\":
-        \"17500.0000\", \n      \"low_24\": \"1112.0000\", \n      \"vol\": -51.4488202\n
-        \   }\n  }, \n  \"success\": \"True\"\n}\n"
+      encoding: UTF-8
+      string: '{"status":"success","sub_status":null,"data":[{"bid":"8453","ask":"10152.1","sprd":"16.736","tVolAsk":"0.45099281","tVolBid":"0.88670581","h24":"9666","l24":"9260.6","v24":"10.914300","tp24":"103754.8448425","LTRate":"9433.3","LTVol":"0.1","LBRate":"9433.3","LBVol":"0.1","LSRate":"9433.3","LSVol":"0.1","c24":"163","c24p":"1.75","marketName":"USDT-BTC"},{"bid":"731605.6","ask":"753308.5","sprd":"2.881","tVolAsk":"1.34074093","tVolBid":"6.20496232","h24":"743423","l24":"718888","v24":"7.088474","tp24":"5219768.7993760","LTRate":"730483.8","LTVol":"0.007093","LBRate":"730483.8","LBVol":"0.007093","LSRate":"730483.8","LSVol":"0.007093","c24":"11595.8","c24p":"1.61","marketName":"INR-BTC"},{"bid":"183.3","ask":"229.5","sprd":"20.13","tVolAsk":"41.349059","tVolBid":"70.998418","h24":"225.6","l24":"208","v24":"910.103558","tp24":"198438.4992022","LTRate":"219.6","LTVol":"4.733983","LBRate":"219.6","LBVol":"4.733983","LSRate":"219.6","LSVol":"4.733983","c24":"11.5","c24p":"5.52","marketName":"USDT-ETH"},{"bid":"17500","ask":"17390","sprd":"-0.632","tVolAsk":"28.61393","tVolBid":"72.722754","h24":"17487.3","l24":"16323.1","v24":"427.757074","tp24":"7249339.3646418","LTRate":"16948.8","LTVol":"2.333962","LBRate":"16948.8","LBVol":"2.333962","LSRate":"16850","LSVol":"2.333962","c24":"617.8","c24p":"3.78","marketName":"INR-ETH"},{"bid":"0.19","ask":"0.226","sprd":"15.929","tVolAsk":"30846.103657","tVolBid":"45973.065767","h24":"0.23","l24":"0.195","v24":"27349.94","tp24":"5415.65926","LTRate":"0.196","LTVol":"2500","LBRate":"0.196","LBVol":"2500","LSRate":"0.196","LSVol":"2500","c24":"0","c24p":"0","marketName":"USDT-XRP"},{"bid":"14.25","ask":"16.5","sprd":"13.636","tVolAsk":"44284.328055","tVolBid":"46593.534272","h24":"0","l24":"0","v24":"0","tp24":"0","LTRate":"14.25","LTVol":"13.170732","LBRate":"14.25","LBVol":"13.170732","LSRate":"14.25","LSVol":"13.170732","c24":"0","c24p":"0","marketName":"INR-XRP"},{"bid":"77.3","ask":"78.5","sprd":"1.528","tVolAsk":"7780.7","tVolBid":"9512.3056","h24":"79.8","l24":"78.5","v24":"900.7129","tp24":"71108.51265","LTRate":"78.5","LTVol":"422.7","LBRate":"78.5","LBVol":"422.7","LSRate":"78.5","LSVol":"422.7","c24":"0","c24p":"0","marketName":"INR-USDT"},{"bid":"233","ask":"269.1","sprd":"13.415","tVolAsk":"7.086051","tVolBid":"57.395561","h24":"243.3","l24":"231.5","v24":"399.418843","tp24":"95110.5908496","LTRate":"237.3","LTVol":"0.51222","LBRate":"237.3","LBVol":"0.51222","LSRate":"237.3","LSVol":"0.51222","c24":"5.8","c24p":"2.5","marketName":"USDT-BCH"},{"bid":"18208","ask":"19641.6","sprd":"7.298","tVolAsk":"12.31895","tVolBid":"52.134888","h24":"19190.1","l24":"18255.6","v24":"295.268031","tp24":"5556902.5279989","LTRate":"18675.3","LTVol":"1.163922","LBRate":"18675.3","LBVol":"1.163922","LSRate":"18675.3","LSVol":"1.163922","c24":"411.8","c24p":"2.25","marketName":"INR-BCH"},{"bid":"3532.3","ask":"4003.8","sprd":"11.776","tVolAsk":"40.436198","tVolBid":"208.004973","h24":"3579.8","l24":"3548.1","v24":"346.031928","tp24":"1229554.9914262","LTRate":"3548.1","LTVol":"20","LBRate":"3548.1","LBVol":"20","LSRate":"3548.1","LSVol":"20","c24":"0","c24p":"0","marketName":"INR-LTC"},{"bid":"38.6","ask":"50.5","sprd":"23.564","tVolAsk":"29.850844","tVolBid":"152.658712","h24":"45.3","l24":"43.8","v24":"974.017600","tp24":"43588.9513640","LTRate":"44.6","LTVol":"5.885585","LBRate":"44.6","LBVol":"5.885585","LSRate":"44.6","LSVol":"5.885585","c24":"0.8","c24p":"1.82","marketName":"USDT-LTC"},{"bid":"52.6","ask":"69.8","sprd":"24.641","tVolAsk":"86.624867","tVolBid":"146.715132","h24":"68","l24":"64.3","v24":"505.337766","tp24":"33677.4245668","LTRate":"66.5","LTVol":"0.874975","LBRate":"66.5","LBVol":"0.874975","LSRate":"66.5","LSVol":"0.874975","c24":"2.2","c24p":"3.42","marketName":"USDT-XMR"},{"bid":"4815.3","ask":"5508.3","sprd":"12.581","tVolAsk":"20.732827","tVolBid":"70.46788","h24":"5361.8","l24":"5060.8","v24":"440.009545","tp24":"2304157.9732044","LTRate":"5258.8","LTVol":"0.338036","LBRate":"5258.8","LBVol":"0.338036","LSRate":"5258.8","LSVol":"0.338036","c24":"198","c24p":"3.91","marketName":"INR-XMR"},{"bid":"69.6","ask":"86","sprd":"19.069","tVolAsk":"19.374309","tVolBid":"78.695517","h24":"75.6","l24":"73.1","v24":"225.948837","tp24":"16907.3518869","LTRate":"73.8","LTVol":"10","LBRate":"73.8","LBVol":"10","LSRate":"73.8","LSVol":"10","c24":"0.7","c24p":"0.95","marketName":"USDT-DASH"},{"bid":"5.5","ask":"7.6","sprd":"27.631","tVolAsk":"349.8607","tVolBid":"639.5557","h24":"7.1","l24":"6.6","v24":"173.167","tp24":"1182.5356","LTRate":"7.1","LTVol":"50","LBRate":"7.1","LBVol":"50","LSRate":"7.1","LSVol":"50","c24":"0.3","c24p":"4.41","marketName":"USDT-ETC"},{"bid":"0","ask":"9000","sprd":"0","tVolAsk":"54","tVolBid":"0","h24":"0","l24":"0","v24":"0","tp24":"0","LTRate":"0","LTVol":"0","LBRate":"0","LBVol":"0","LSRate":"0","LSVol":"0","c24":"0","c24p":"0","marketName":"USDT-BUC"},{"bid":"3","ask":"5.99","sprd":"49.916","tVolAsk":"1176.4454","tVolBid":"883.4","h24":"3.01","l24":"3","v24":"330.6","tp24":"992.13","LTRate":"3","LTVol":"181.6","LBRate":"3","LBVol":"181.6","LSRate":"3","LSVol":"181.6","c24":"-0.01","c24p":"-0.33","marketName":"INR-BUC"},{"bid":"8.8","ask":"12.1","sprd":"27.272","tVolAsk":"99.896639","tVolBid":"638.672594","h24":"10.3","l24":"10.1","v24":"113.8384","tp24":"1159.11410","LTRate":"10.1","LTVol":"17.1071","LBRate":"10.1","LBVol":"17.1071","LSRate":"10.1","LSVol":"17.1071","c24":"0","c24p":"0","marketName":"USDT-NEO"},{"bid":"776.1","ask":"920","sprd":"15.641","tVolAsk":"85.45951","tVolBid":"424.217921","h24":"823.6","l24":"807.8","v24":"53.7790","tp24":"43785.24232","LTRate":"807.8","LTVol":"2","LBRate":"807.8","LBVol":"2","LSRate":"807.8","LSVol":"2","c24":"0","c24p":"0","marketName":"INR-NEO"},{"bid":"1.6","ask":"1.8","sprd":"11.111","tVolAsk":"71.312744","tVolBid":"1504.505469","h24":"0","l24":"0","v24":"0","tp24":"0","LTRate":"1.6","LTVol":"300","LBRate":"1.6","LBVol":"300","LSRate":"1.6","LSVol":"300","c24":"0","c24p":"0","marketName":"USDT-QTUM"},{"bid":"40.6","ask":"51.5","sprd":"21.165","tVolAsk":"97.279313","tVolBid":"96.647759","h24":"48.1","l24":"46.1","v24":"323.904581","tp24":"15327.1426171","LTRate":"46.5","LTVol":"0.215053","LBRate":"46.5","LBVol":"0.215053","LSRate":"46.5","LSVol":"0.215053","c24":"0.4","c24p":"0.86","marketName":"USDT-ZEC"},{"bid":"0.03","ask":"0.09","sprd":"66.666","tVolAsk":"9201.3242","tVolBid":"3030","h24":"0.08","l24":"0.03","v24":"146","tp24":"5.13","LTRate":"0.03","LTVol":"70","LBRate":"0.03","LBVol":"70","LSRate":"0.03","LSVol":"70","c24":"-0.05","c24p":"-62.5","marketName":"USDT-GNT"},{"bid":"0","ask":"0","sprd":"0","tVolAsk":"0","tVolBid":"0","h24":"0","l24":"0","v24":"0","tp24":"0","LTRate":"0","LTVol":"0","LBRate":"0","LBVol":"0","LSRate":"0","LSVol":"0","c24":"0","c24p":"0","marketName":"USDT-STRAT"},{"bid":"0.0023","ask":"0.0028","sprd":"17.857","tVolAsk":"398370.2648","tVolBid":"127771.5713","h24":"0.0025","l24":"0.0025","v24":"4000","tp24":"10.0000","LTRate":"0.0025","LTVol":"4000","LBRate":"0.0025","LBVol":"4000","LSRate":"0.0025","LSVol":"4000","c24":"0","c24p":"0","marketName":"USDT-DOGE"},{"bid":"1.5","ask":"2.3","sprd":"34.782","tVolAsk":"954.3478","tVolBid":"302.735","h24":"0","l24":"0","v24":"0","tp24":"0","LTRate":"1.6","LTVol":"50","LBRate":"1.6","LBVol":"50","LSRate":"1.6","LSVol":"50","c24":"0","c24p":"0","marketName":"USDT-OMG"},{"bid":"1.1","ask":"1.3","sprd":"15.384","tVolAsk":"720.5819","tVolBid":"197.9924","h24":"0","l24":"0","v24":"0","tp24":"0","LTRate":"1.3","LTVol":"50","LBRate":"1.3","LBVol":"50","LSRate":"1.3","LSVol":"50","c24":"0","c24p":"0","marketName":"USDT-LSK"},{"bid":"0.015","ask":"1.4","sprd":"98.928","tVolAsk":"300","tVolBid":"45816.1715","h24":"0.015","l24":"0.015","v24":"1857.5996","tp24":"27.8639940","LTRate":"0.015","LTVol":"1857.5996","LBRate":"0.015","LBVol":"1857.5996","LSRate":"0.015","LSVol":"1857.5996","c24":"0","c24p":"0","marketName":"USDT-DGB"},{"bid":"0.0015","ask":"0.0021","sprd":"28.571","tVolAsk":"611684.9305","tVolBid":"685544.881","h24":"0.0021","l24":"0.0021","v24":"13736.9995","tp24":"28.84769895","LTRate":"0.0021","LTVol":"9822.9995","LBRate":"0.0021","LBVol":"9822.9995","LSRate":"0.0021","LSVol":"9822.9995","c24":"0","c24p":"0","marketName":"USDT-SC"},{"bid":"0.04","ask":"1","sprd":"96","tVolAsk":"2066.348132","tVolBid":"7088","h24":"0.04","l24":"0.04","v24":"50","tp24":"2.00","LTRate":"0.04","LTVol":"50","LBRate":"0.04","LBVol":"50","LSRate":"0.04","LSVol":"50","c24":"0","c24p":"0","marketName":"USDT-XEM"},{"bid":"0.025","ask":"0.0286","sprd":"12.587","tVolAsk":"38174.2123","tVolBid":"40558.9028","h24":"0.0256","l24":"0.0243","v24":"30257.5613","tp24":"757.11548747","LTRate":"0.0251","LTVol":"1562.94","LBRate":"0.0251","LBVol":"1562.94","LSRate":"0.0251","LSVol":"1562.94","c24":"0.0005","c24p":"2.03","marketName":"USDT-CVC"},{"bid":"1.5","ask":"0","sprd":"0","tVolAsk":"0","tVolBid":"257","h24":"0","l24":"0","v24":"0","tp24":"0","LTRate":"0","LTVol":"0","LBRate":"0","LBVol":"0","LSRate":"0","LSVol":"0","c24":"0","c24p":"0","marketName":"USDT-FCT"},{"bid":"12","ask":"0","sprd":"0","tVolAsk":"0","tVolBid":"82","h24":"0","l24":"0","v24":"0","tp24":"0","LTRate":"0","LTVol":"0","LBRate":"0","LBVol":"0","LSRate":"0","LSVol":"0","c24":"0","c24p":"0","marketName":"USDT-REP"},{"bid":"0.05","ask":"0","sprd":"0","tVolAsk":"0","tVolBid":"5300","h24":"0","l24":"0","v24":"0","tp24":"0","LTRate":"0","LTVol":"0","LBRate":"0","LBVol":"0","LSRate":"0","LSVol":"0","c24":"0","c24p":"0","marketName":"USDT-PAY"},{"bid":"0.3","ask":"1000","sprd":"99.97","tVolAsk":"39.013","tVolBid":"630","h24":"0","l24":"0","v24":"0","tp24":"0","LTRate":"0","LTVol":"0","LBRate":"0","LBVol":"0","LSRate":"0","LSVol":"0","c24":"0","c24p":"0","marketName":"USDT-PIVX"},{"bid":"0.18","ask":"0.23","sprd":"21.739","tVolAsk":"22681.2216","tVolBid":"10035.4581","h24":"0.21","l24":"0.21","v24":"611.744","tp24":"128.46624","LTRate":"0.21","LTVol":"611.744","LBRate":"0.21","LBVol":"611.744","LSRate":"0.21","LSVol":"611.744","c24":"0","c24p":"0","marketName":"USDT-BAT"},{"bid":"0.15","ask":"0.25","sprd":"40","tVolAsk":"10500","tVolBid":"12300","h24":"0","l24":"0","v24":"0","tp24":"0","LTRate":"0.2","LTVol":"100","LBRate":"0.2","LBVol":"100","LSRate":"0.2","LSVol":"100","c24":"0","c24p":"0","marketName":"USDT-STEEM"},{"bid":"2301","ask":"6304","sprd":"63.499","tVolAsk":"0.146058","tVolBid":"3","h24":"0","l24":"0","v24":"0","tp24":"0","LTRate":"0","LTVol":"0","LBRate":"0","LBVol":"0","LSRate":"0","LSVol":"0","c24":"0","c24p":"0","marketName":"INR-DASH"}]}'
     http_version: 
-  recorded_at: Sat, 07 Apr 2018 09:05:49 GMT
+  recorded_at: Fri, 29 May 2020 11:19:21 GMT
 recorded_with: VCR 4.0.0
