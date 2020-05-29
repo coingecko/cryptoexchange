@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://stakecube.net/app/api/v1/exchange/trades?base=BTC&target=DOGE
+    uri: https://api.stakecube.net/v1/exchange/trades?base=BTC&target=DOGE
     body:
       encoding: UTF-8
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Connection:
       - close
       Host:
-      - stakecube.net
+      - api.stakecube.net
       User-Agent:
       - http.rb/5.0.0.pre
   response:
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 06 Jan 2020 07:48:14 GMT
+      - Fri, 29 May 2020 03:15:26 GMT
       Content-Type:
       - text/html; charset=UTF-8
       Transfer-Encoding:
@@ -27,126 +27,123 @@ http_interactions:
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=df970c32007fe2341f9f8237c3f4e4eaa1578296894; expires=Wed, 05-Feb-20
-        07:48:14 GMT; path=/; domain=.stakecube.net; HttpOnly; SameSite=Lax; Secure
-      X-Powered-By:
-      - PHP/7.2.24
-      - PleskLin
+      - __cfduid=df8cc7016e662079c78b2e24da0240e8e1590722124; expires=Sun, 28-Jun-20
+        03:15:24 GMT; path=/; domain=.stakecube.net; HttpOnly; SameSite=Lax; Secure
       Vary:
       - Accept-Encoding
-      Ms-Author-Via:
-      - DAV
       Cf-Cache-Status:
       - DYNAMIC
+      Cf-Request-Id:
+      - 03000673be0000c1183710d200000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 550c16a54c45c3b3-SIN
+      - 59ad0cff9812c118-KUL
     body:
       encoding: UTF-8
-      string: '[{"price":"0.00000027","amount":"29.40000000","type":"sell","timestamp":"2020-01-06
-        07:37:01"},{"price":"0.00000028","amount":"203.85714286","type":"buy","timestamp":"2020-01-06
-        07:01:31"},{"price":"0.00000028","amount":"97.17857143","type":"buy","timestamp":"2020-01-06
-        05:49:43"},{"price":"0.00000027","amount":"158.98104645","type":"sell","timestamp":"2020-01-06
-        05:31:11"},{"price":"0.00000027","amount":"110.50284355","type":"sell","timestamp":"2020-01-06
-        05:31:11"},{"price":"0.00000028","amount":"24.96428571","type":"buy","timestamp":"2020-01-06
-        05:07:40"},{"price":"0.00000028","amount":"68.32142857","type":"buy","timestamp":"2020-01-06
-        05:06:19"},{"price":"0.00000028","amount":"27.22127824","type":"buy","timestamp":"2020-01-06
-        02:14:41"},{"price":"0.00000028","amount":"36.00000000","type":"buy","timestamp":"2020-01-06
-        02:14:41"},{"price":"0.00000028","amount":"95.00000000","type":"buy","timestamp":"2020-01-06
-        02:14:41"},{"price":"0.00000028","amount":"792.06443605","type":"buy","timestamp":"2020-01-06
-        02:14:41"},{"price":"0.00000028","amount":"1.21428571","type":"buy","timestamp":"2020-01-06
-        02:01:38"},{"price":"0.00000027","amount":"7.00000000","type":"sell","timestamp":"2020-01-06
-        01:27:36"},{"price":"0.00000027","amount":"196.61231267","type":"sell","timestamp":"2020-01-06
-        00:45:27"},{"price":"0.00000027","amount":"0.20000000","type":"sell","timestamp":"2020-01-06
-        00:18:09"},{"price":"0.00000028","amount":"2021.72127824","type":"buy","timestamp":"2020-01-05
-        21:23:03"},{"price":"0.00000028","amount":"5.00000000","type":"buy","timestamp":"2020-01-05
-        21:23:03"},{"price":"0.00000028","amount":"1168.49300747","type":"buy","timestamp":"2020-01-05
-        21:23:03"},{"price":"0.00000028","amount":"37.21428571","type":"buy","timestamp":"2020-01-05
-        21:04:18"},{"price":"0.00000027","amount":"100.00000000","type":"sell","timestamp":"2020-01-05
-        20:56:04"},{"price":"0.00000028","amount":"3900.00000000","type":"buy","timestamp":"2020-01-05
-        19:52:16"},{"price":"0.00000027","amount":"149.99651194","type":"sell","timestamp":"2020-01-05
-        19:31:42"},{"price":"0.00000028","amount":"0.57142857","type":"buy","timestamp":"2020-01-05
-        17:01:02"},{"price":"0.00000028","amount":"802.39285714","type":"buy","timestamp":"2020-01-05
-        16:51:22"},{"price":"0.00000027","amount":"877.68833184","type":"sell","timestamp":"2020-01-05
-        16:02:08"},{"price":"0.00000027","amount":"3890.14092023","type":"sell","timestamp":"2020-01-05
-        16:02:08"},{"price":"0.00000028","amount":"394.07142857","type":"buy","timestamp":"2020-01-05
-        16:01:08"},{"price":"0.00000028","amount":"249.89285714","type":"buy","timestamp":"2020-01-05
-        14:58:15"},{"price":"0.00000028","amount":"120.00000000","type":"buy","timestamp":"2020-01-05
-        14:49:18"},{"price":"0.00000028","amount":"14.21428571","type":"buy","timestamp":"2020-01-05
-        14:38:13"},{"price":"0.00000028","amount":"1.14285714","type":"buy","timestamp":"2020-01-05
-        13:35:17"},{"price":"0.00000028","amount":"10.57142857","type":"buy","timestamp":"2020-01-05
-        12:54:45"},{"price":"0.00000028","amount":"11.53571429","type":"buy","timestamp":"2020-01-05
-        12:33:22"},{"price":"0.00000028","amount":"105.35714286","type":"buy","timestamp":"2020-01-05
-        11:28:57"},{"price":"0.00000028","amount":"222.00000000","type":"buy","timestamp":"2020-01-05
-        11:11:40"},{"price":"0.00000028","amount":"44.17857143","type":"buy","timestamp":"2020-01-05
-        10:48:20"},{"price":"0.00000028","amount":"0.10714286","type":"buy","timestamp":"2020-01-05
-        10:21:12"},{"price":"0.00000027","amount":"10.55416161","type":"sell","timestamp":"2020-01-05
-        10:15:09"},{"price":"0.00000028","amount":"0.60714286","type":"buy","timestamp":"2020-01-05
-        10:00:29"},{"price":"0.00000027","amount":"106.00000000","type":"sell","timestamp":"2020-01-05
-        09:52:46"},{"price":"0.00000028","amount":"0.14285714","type":"buy","timestamp":"2020-01-05
-        09:34:20"},{"price":"0.00000028","amount":"0.14285714","type":"buy","timestamp":"2020-01-05
-        09:04:47"},{"price":"0.00000027","amount":"209.20614000","type":"sell","timestamp":"2020-01-05
-        08:40:10"},{"price":"0.00000028","amount":"0.32142857","type":"buy","timestamp":"2020-01-05
-        08:32:01"},{"price":"0.00000028","amount":"2917.04270683","type":"buy","timestamp":"2020-01-05
-        07:55:41"},{"price":"0.00000028","amount":"1547.63586460","type":"buy","timestamp":"2020-01-05
-        07:55:41"},{"price":"0.00000027","amount":"69.92000000","type":"sell","timestamp":"2020-01-05
-        07:10:58"},{"price":"0.00000027","amount":"411.23467503","type":"sell","timestamp":"2020-01-05
-        06:12:09"},{"price":"0.00000028","amount":"13.32142857","type":"buy","timestamp":"2020-01-05
-        05:32:38"},{"price":"0.00000027","amount":"1461.33246529","type":"sell","timestamp":"2020-01-05
-        05:28:28"},{"price":"0.00000028","amount":"473.10714286","type":"buy","timestamp":"2020-01-05
-        03:56:41"},{"price":"0.00000028","amount":"0.53571429","type":"buy","timestamp":"2020-01-05
-        03:06:40"},{"price":"0.00000028","amount":"342.21428571","type":"buy","timestamp":"2020-01-05
-        02:26:48"},{"price":"0.00000028","amount":"1.32142857","type":"buy","timestamp":"2020-01-05
-        01:32:06"},{"price":"0.00000028","amount":"2621.86413540","type":"buy","timestamp":"2020-01-05
-        00:42:57"},{"price":"0.00000028","amount":"1138.70729317","type":"buy","timestamp":"2020-01-05
-        00:42:57"},{"price":"0.00000027","amount":"0.25000000","type":"sell","timestamp":"2020-01-05
-        00:04:15"},{"price":"0.00000028","amount":"136.36683314","type":"buy","timestamp":"2020-01-04
-        23:38:25"},{"price":"0.00000028","amount":"3363.63316686","type":"buy","timestamp":"2020-01-04
-        23:38:25"},{"price":"0.00000028","amount":"113.85714286","type":"buy","timestamp":"2020-01-04
-        22:17:27"},{"price":"0.00000027","amount":"727.22200000","type":"sell","timestamp":"2020-01-04
-        21:50:11"},{"price":"0.00000027","amount":"95.25171375","type":"sell","timestamp":"2020-01-04
-        21:11:02"},{"price":"0.00000028","amount":"3000.00000000","type":"buy","timestamp":"2020-01-04
-        20:51:37"},{"price":"0.00000027","amount":"0.30000000","type":"sell","timestamp":"2020-01-04
-        20:28:42"},{"price":"0.00000027","amount":"2000.00000000","type":"sell","timestamp":"2020-01-04
-        19:57:37"},{"price":"0.00000028","amount":"0.35714286","type":"buy","timestamp":"2020-01-04
-        19:19:21"},{"price":"0.00000028","amount":"0.39285714","type":"buy","timestamp":"2020-01-04
-        18:36:20"},{"price":"0.00000027","amount":"817.80563608","type":"sell","timestamp":"2020-01-04
-        18:06:53"},{"price":"0.00000028","amount":"653.59718196","type":"sell","timestamp":"2020-01-04
-        18:06:53"},{"price":"0.00000028","amount":"424.09909088","type":"sell","timestamp":"2020-01-04
-        18:06:53"},{"price":"0.00000028","amount":"9.25000000","type":"sell","timestamp":"2020-01-04
-        18:06:53"},{"price":"0.00000028","amount":"21.85714286","type":"sell","timestamp":"2020-01-04
-        18:06:53"},{"price":"0.00000028","amount":"7.10714286","type":"sell","timestamp":"2020-01-04
-        18:06:53"},{"price":"0.00000028","amount":"191.28380536","type":"sell","timestamp":"2020-01-04
-        18:06:53"},{"price":"0.00000029","amount":"0.41379310","type":"buy","timestamp":"2020-01-04
-        17:59:57"},{"price":"0.00000029","amount":"7.34482759","type":"buy","timestamp":"2020-01-04
-        17:19:43"},{"price":"0.00000029","amount":"7.17241379","type":"buy","timestamp":"2020-01-04
-        17:17:32"},{"price":"0.00000029","amount":"0.58620690","type":"buy","timestamp":"2020-01-04
-        17:15:17"},{"price":"0.00000028","amount":"194.60099980","type":"sell","timestamp":"2020-01-04
-        17:09:40"},{"price":"0.00000029","amount":"0.24137931","type":"buy","timestamp":"2020-01-04
-        16:00:38"},{"price":"0.00000028","amount":"106.00000000","type":"sell","timestamp":"2020-01-04
-        14:56:48"},{"price":"0.00000028","amount":"0.50000000","type":"sell","timestamp":"2020-01-04
-        14:48:21"},{"price":"0.00000029","amount":"0.24137931","type":"buy","timestamp":"2020-01-04
-        13:59:33"},{"price":"0.00000028","amount":"764.72399530","type":"sell","timestamp":"2020-01-04
-        13:45:59"},{"price":"0.00000029","amount":"20.24137931","type":"buy","timestamp":"2020-01-04
-        13:35:07"},{"price":"0.00000029","amount":"0.20689655","type":"buy","timestamp":"2020-01-04
-        13:30:06"},{"price":"0.00000029","amount":"358.27586207","type":"buy","timestamp":"2020-01-04
-        13:25:03"},{"price":"0.00000028","amount":"0.10000000","type":"sell","timestamp":"2020-01-04
-        13:21:03"},{"price":"0.00000028","amount":"129.43405668","type":"buy","timestamp":"2020-01-04
-        13:11:54"},{"price":"0.00000028","amount":"118.56594332","type":"buy","timestamp":"2020-01-04
-        13:05:49"},{"price":"0.00000028","amount":"2292.64834239","type":"buy","timestamp":"2020-01-04
-        13:05:49"},{"price":"0.00000028","amount":"0.32142857","type":"buy","timestamp":"2020-01-04
-        12:52:26"},{"price":"0.00000028","amount":"1243.71428571","type":"buy","timestamp":"2020-01-04
-        12:51:03"},{"price":"0.00000028","amount":"3000.00000000","type":"buy","timestamp":"2020-01-04
-        12:48:09"},{"price":"0.00000027","amount":"0.55000000","type":"sell","timestamp":"2020-01-04
-        12:36:12"},{"price":"0.00000028","amount":"2144.31594333","type":"buy","timestamp":"2020-01-04
-        12:34:45"},{"price":"0.00000028","amount":"382.45498047","type":"buy","timestamp":"2020-01-04
-        12:34:45"},{"price":"0.00000028","amount":"591.47907620","type":"buy","timestamp":"2020-01-04
-        12:34:45"},{"price":"0.00000028","amount":"381.75000000","type":"buy","timestamp":"2020-01-04
-        12:34:45"},{"price":"0.00000028","amount":"1.10714286","type":"buy","timestamp":"2020-01-04
-        12:16:47"}]'
+      string: '[{"PRICE":"0.00000027","amount":"1340.70370370","type":"buy","timestamp":"2020-05-28
+        23:50:29"},{"PRICE":"0.00000027","amount":"56.48148148","type":"buy","timestamp":"2020-05-28
+        23:14:34"},{"PRICE":"0.00000027","amount":"18518.51851852","type":"buy","timestamp":"2020-05-28
+        23:12:55"},{"PRICE":"0.00000027","amount":"1078.92592593","type":"buy","timestamp":"2020-05-28
+        22:14:35"},{"PRICE":"0.00000027","amount":"204.33333333","type":"buy","timestamp":"2020-05-28
+        21:59:42"},{"PRICE":"0.00000026","amount":"77.88350801","type":"sell","timestamp":"2020-05-28
+        21:46:48"},{"PRICE":"0.00000027","amount":"9259.25925926","type":"buy","timestamp":"2020-05-28
+        21:35:42"},{"PRICE":"0.00000027","amount":"9259.25925926","type":"buy","timestamp":"2020-05-28
+        21:00:03"},{"PRICE":"0.00000027","amount":"196068.54515366","type":"sell","timestamp":"2020-05-28
+        20:46:03"},{"PRICE":"0.00000027","amount":"13764.30000000","type":"sell","timestamp":"2020-05-28
+        20:41:29"},{"PRICE":"0.00000027","amount":"127.03226223","type":"sell","timestamp":"2020-05-28
+        20:39:05"},{"PRICE":"0.00000027","amount":"20236.24649290","type":"sell","timestamp":"2020-05-28
+        19:59:31"},{"PRICE":"0.00000028","amount":"3571.42857143","type":"buy","timestamp":"2020-05-28
+        19:52:40"},{"PRICE":"0.00000027","amount":"169803.87609121","type":"sell","timestamp":"2020-05-28
+        19:34:09"},{"PRICE":"0.00000027","amount":"978.62962963","type":"sell","timestamp":"2020-05-28
+        19:34:09"},{"PRICE":"0.00000027","amount":"100.00000000","type":"sell","timestamp":"2020-05-28
+        19:34:09"},{"PRICE":"0.00000027","amount":"140.03703704","type":"sell","timestamp":"2020-05-28
+        19:34:09"},{"PRICE":"0.00000027","amount":"1000.00000000","type":"sell","timestamp":"2020-05-28
+        19:34:09"},{"PRICE":"0.00000027","amount":"115.88888889","type":"sell","timestamp":"2020-05-28
+        19:34:09"},{"PRICE":"0.00000027","amount":"1000.00000000","type":"sell","timestamp":"2020-05-28
+        19:34:09"},{"PRICE":"0.00000027","amount":"86.33333333","type":"sell","timestamp":"2020-05-28
+        19:34:09"},{"PRICE":"0.00000027","amount":"3979.00000000","type":"sell","timestamp":"2020-05-28
+        19:34:09"},{"PRICE":"0.00000027","amount":"3600.00000000","type":"sell","timestamp":"2020-05-28
+        19:34:09"},{"PRICE":"0.00000027","amount":"2800.00000000","type":"sell","timestamp":"2020-05-28
+        19:34:09"},{"PRICE":"0.00000027","amount":"3600.00000000","type":"sell","timestamp":"2020-05-28
+        19:34:09"},{"PRICE":"0.00000027","amount":"32421.88888889","type":"sell","timestamp":"2020-05-28
+        19:34:09"},{"PRICE":"0.00000027","amount":"1000.00000000","type":"sell","timestamp":"2020-05-28
+        19:34:09"},{"PRICE":"0.00000027","amount":"5000.00000000","type":"sell","timestamp":"2020-05-28
+        19:34:09"},{"PRICE":"0.00000027","amount":"18717.08613101","type":"sell","timestamp":"2020-05-28
+        19:34:09"},{"PRICE":"0.00000028","amount":"498.57142857","type":"buy","timestamp":"2020-05-28
+        19:28:05"},{"PRICE":"0.00000027","amount":"63.00000000","type":"sell","timestamp":"2020-05-28
+        19:24:07"},{"PRICE":"0.00000027","amount":"598.28423936","type":"sell","timestamp":"2020-05-28
+        19:07:57"},{"PRICE":"0.00000027","amount":"15000.88888889","type":"sell","timestamp":"2020-05-28
+        19:07:57"},{"PRICE":"0.00000027","amount":"94.18518519","type":"sell","timestamp":"2020-05-28
+        19:07:57"},{"PRICE":"0.00000027","amount":"55.55555556","type":"sell","timestamp":"2020-05-28
+        19:07:57"},{"PRICE":"0.00000027","amount":"228962.19613100","type":"sell","timestamp":"2020-05-28
+        19:07:57"},{"PRICE":"0.00000027","amount":"148.00000000","type":"sell","timestamp":"2020-05-28
+        19:07:29"},{"PRICE":"0.00000028","amount":"45105.13446313","type":"buy","timestamp":"2020-05-28
+        18:40:57"},{"PRICE":"0.00000028","amount":"65.65233919","type":"buy","timestamp":"2020-05-28
+        18:40:57"},{"PRICE":"0.00000028","amount":"1224.43556277","type":"buy","timestamp":"2020-05-28
+        18:40:57"},{"PRICE":"0.00000028","amount":"32011.70620634","type":"buy","timestamp":"2020-05-28
+        18:40:57"},{"PRICE":"0.00000027","amount":"12000.00000000","type":"sell","timestamp":"2020-05-28
+        18:38:28"},{"PRICE":"0.00000027","amount":"160.35000000","type":"sell","timestamp":"2020-05-28
+        18:29:57"},{"PRICE":"0.00000028","amount":"3571.42857143","type":"buy","timestamp":"2020-05-28
+        18:06:41"},{"PRICE":"0.00000027","amount":"123.00000000","type":"sell","timestamp":"2020-05-28
+        18:05:28"},{"PRICE":"0.00000027","amount":"30263.78657073","type":"sell","timestamp":"2020-05-28
+        17:51:52"},{"PRICE":"0.00000027","amount":"187.87577963","type":"sell","timestamp":"2020-05-28
+        17:30:46"},{"PRICE":"0.00000028","amount":"62.67857143","type":"buy","timestamp":"2020-05-28
+        17:24:24"},{"PRICE":"0.00000028","amount":"10871.22222222","type":"buy","timestamp":"2020-05-28
+        16:57:47"},{"PRICE":"0.00000027","amount":"18340.00000000","type":"sell","timestamp":"2020-05-28
+        16:31:46"},{"PRICE":"0.00000027","amount":"4057.10375598","type":"sell","timestamp":"2020-05-28
+        16:00:38"},{"PRICE":"0.00000027","amount":"414.28945074","type":"sell","timestamp":"2020-05-28
+        15:57:54"},{"PRICE":"0.00000027","amount":"1505.69460000","type":"sell","timestamp":"2020-05-28
+        15:44:36"},{"PRICE":"0.00000027","amount":"59.57557650","type":"sell","timestamp":"2020-05-28
+        14:50:26"},{"PRICE":"0.00000027","amount":"70.95979538","type":"sell","timestamp":"2020-05-28
+        13:07:36"},{"PRICE":"0.00000027","amount":"141.39742124","type":"sell","timestamp":"2020-05-28
+        12:58:37"},{"PRICE":"0.00000028","amount":"35714.28571429","type":"buy","timestamp":"2020-05-28
+        12:38:58"},{"PRICE":"0.00000027","amount":"56.72994722","type":"sell","timestamp":"2020-05-28
+        12:21:59"},{"PRICE":"0.00000028","amount":"766.53571429","type":"buy","timestamp":"2020-05-28
+        12:16:42"},{"PRICE":"0.00000027","amount":"1729.20000000","type":"sell","timestamp":"2020-05-28
+        12:14:29"},{"PRICE":"0.00000027","amount":"3132.49160671","type":"sell","timestamp":"2020-05-28
+        11:45:24"},{"PRICE":"0.00000028","amount":"873.57142857","type":"buy","timestamp":"2020-05-28
+        09:55:24"},{"PRICE":"0.00000027","amount":"31998.16756964","type":"sell","timestamp":"2020-05-28
+        09:54:13"},{"PRICE":"0.00000027","amount":"4960.26659754","type":"sell","timestamp":"2020-05-28
+        08:11:24"},{"PRICE":"0.00000027","amount":"67.11052798","type":"sell","timestamp":"2020-05-28
+        07:43:58"},{"PRICE":"0.00000027","amount":"2258.19104716","type":"sell","timestamp":"2020-05-28
+        06:28:55"},{"PRICE":"0.00000027","amount":"115.20019446","type":"sell","timestamp":"2020-05-28
+        04:30:19"},{"PRICE":"0.00000027","amount":"2270.15369728","type":"sell","timestamp":"2020-05-27
+        22:42:23"},{"PRICE":"0.00000027","amount":"6350.56000000","type":"sell","timestamp":"2020-05-27
+        22:06:09"},{"PRICE":"0.00000028","amount":"7142.85714286","type":"buy","timestamp":"2020-05-27
+        20:42:38"},{"PRICE":"0.00000028","amount":"1181.07142857","type":"buy","timestamp":"2020-05-27
+        19:32:56"},{"PRICE":"0.00000028","amount":"2001.50000000","type":"buy","timestamp":"2020-05-27
+        18:50:16"},{"PRICE":"0.00000028","amount":"135.17300000","type":"buy","timestamp":"2020-05-27
+        18:50:16"},{"PRICE":"0.00000028","amount":"77.00000000","type":"buy","timestamp":"2020-05-27
+        18:50:16"},{"PRICE":"0.00000028","amount":"3600.00000000","type":"buy","timestamp":"2020-05-27
+        18:50:16"},{"PRICE":"0.00000028","amount":"2215.07968848","type":"buy","timestamp":"2020-05-27
+        18:50:16"},{"PRICE":"0.00000027","amount":"93.81800000","type":"sell","timestamp":"2020-05-27
+        18:46:20"},{"PRICE":"0.00000028","amount":"2500.00000000","type":"buy","timestamp":"2020-05-27
+        18:32:53"},{"PRICE":"0.00000028","amount":"611.92857143","type":"buy","timestamp":"2020-05-27
+        18:21:32"},{"PRICE":"0.00000028","amount":"853.03571428","type":"buy","timestamp":"2020-05-27
+        18:20:02"},{"PRICE":"0.00000028","amount":"2801.42857143","type":"buy","timestamp":"2020-05-27
+        18:20:02"},{"PRICE":"0.00000028","amount":"3600.00000000","type":"buy","timestamp":"2020-05-27
+        18:05:22"},{"PRICE":"0.00000028","amount":"3598.57142857","type":"buy","timestamp":"2020-05-27
+        17:48:51"},{"PRICE":"0.00000027","amount":"13696.10265272","type":"sell","timestamp":"2020-05-27
+        17:33:23"},{"PRICE":"0.00000029","amount":"14807.72413793","type":"buy","timestamp":"2020-05-27
+        17:19:02"},{"PRICE":"0.00000029","amount":"46288.03130681","type":"buy","timestamp":"2020-05-27
+        17:12:25"},{"PRICE":"0.00000029","amount":"25352.86425168","type":"buy","timestamp":"2020-05-27
+        17:12:25"},{"PRICE":"0.00000028","amount":"77.00000000","type":"buy","timestamp":"2020-05-27
+        17:12:25"},{"PRICE":"0.00000028","amount":"18082.06995875","type":"buy","timestamp":"2020-05-27
+        17:12:25"},{"PRICE":"0.00000027","amount":"273.54909207","type":"sell","timestamp":"2020-05-27
+        16:39:20"},{"PRICE":"0.00000027","amount":"25575.33333333","type":"sell","timestamp":"2020-05-27
+        16:36:09"},{"PRICE":"0.00000027","amount":"860.56049910","type":"sell","timestamp":"2020-05-27
+        16:20:09"},{"PRICE":"0.00000027","amount":"82.65411039","type":"sell","timestamp":"2020-05-27
+        15:48:14"},{"PRICE":"0.00000028","amount":"69.92857143","type":"buy","timestamp":"2020-05-27
+        15:43:24"},{"PRICE":"0.00000027","amount":"500.00000000","type":"sell","timestamp":"2020-05-27
+        15:26:35"},{"PRICE":"0.00000027","amount":"125.07610097","type":"sell","timestamp":"2020-05-27
+        15:16:51"},{"PRICE":"0.00000027","amount":"9420.60594223","type":"sell","timestamp":"2020-05-27
+        14:58:37"},{"PRICE":"0.00000027","amount":"100.00000000","type":"sell","timestamp":"2020-05-27
+        14:58:37"},{"PRICE":"0.00000027","amount":"172.74074074","type":"sell","timestamp":"2020-05-27
+        14:58:37"},{"PRICE":"0.00000027","amount":"134.40740741","type":"sell","timestamp":"2020-05-27
+        14:58:37"}]'
     http_version: 
-  recorded_at: Mon, 06 Jan 2020 07:48:14 GMT
+  recorded_at: Fri, 29 May 2020 03:15:27 GMT
 recorded_with: VCR 4.0.0

@@ -17,7 +17,7 @@ module Cryptoexchange::Exchanges
             tr.base      = market_pair.base
             tr.target    = market_pair.target
             tr.type      = trade['type']
-            tr.price     = trade['price']
+            tr.price     = trade['PRICE']
             tr.amount    = trade['amount']
             tr.timestamp = DateTime.parse(trade['timestamp']).to_time.to_i
             tr.payload   = trade
