@@ -2,6 +2,8 @@ module Cryptoexchange::Exchanges
   module Uniswap
     module Services
       class Market < Cryptoexchange::Services::Market
+        RECOGNIZED_TARGETS = %w{ WETH DAI USDC USDT }
+
         class << self
           def supports_individual_ticker_query?
             false
@@ -10,9 +12,7 @@ module Cryptoexchange::Exchanges
 
         def fetch
           output = super(ticker_url)
-
-          # Support WETH only for now
-          output = output["results"].select { |ticker| ticker["assets"][1]["symbol"] == "WETH"}
+          output = output["results"].select { |ticker| RECOGNIZED_TARGETS.include? ticker["assets"][1]["symbol"] }
 
           adapt_all(output)
         end
@@ -27,7 +27,8 @@ module Cryptoexchange::Exchanges
 
           output.map do |pair|
             base = pair["assets"][0]["symbol"]
-            target = "ETH" # pair["assets"][1]["symbol"] # Fix WETH as ETH
+            target = pair["assets"][1]["symbol"]
+            target = "ETH" if pair["assets"][1]["symbol"] == "WETH" # Fix WETH as ETH
 
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: base,
@@ -44,7 +45,12 @@ module Cryptoexchange::Exchanges
           ticker.target    = market_pair.target
           ticker.market    = Uniswap::Market::NAME
           ticker.last      = NumericHelper.divide(output["assets"][1]["balance"], output["assets"][0]["balance"])
-          ticker.volume    = NumericHelper.divide(NumericHelper.divide(output['usdVolume'], eth_price_in_usd), ticker.last)
+
+          if market_pair.target == "ETH"
+            ticker.volume  = NumericHelper.divide(NumericHelper.divide(output['usdVolume'], eth_price_in_usd), ticker.last)
+          elsif ["USDC", "USDT", "DAI"].include? market_pair.target
+            ticker.volume  = NumericHelper.divide(output['usdVolume'], ticker.last)
+          end
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
