@@ -2,6 +2,8 @@ module Cryptoexchange::Exchanges
   module Uniswap
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
+        RECOGNIZED_TARGETS = %w{ WETH DAI USDC USDT }
+
         def pairs_url
           "#{Cryptoexchange::Exchanges::Uniswap::Market::API_URL}/exchanges?platform=uniswap-v2&key=#{Cryptoexchange::Exchanges::Uniswap::Market.api_key}"
         end
@@ -13,11 +15,12 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           market_pairs = []
-          # Support WETH only for now
-          output = output["results"].select { |ticker| ticker["assets"][1]["symbol"] == "WETH"}
+
+          output = output["results"].select { |ticker| RECOGNIZED_TARGETS.include? ticker["assets"][1]["symbol"] }
           output.each do |pair|
             base = pair["assets"][0]["symbol"]
-            target = "ETH" # pair["assets"][1]["symbol"] # Fix WETH as ETH
+            target = pair["assets"][1]["symbol"]
+            target = "ETH" if pair["assets"][1]["symbol"] == "WETH" # Fix WETH as ETH
 
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: base,
