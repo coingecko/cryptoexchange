@@ -2,7 +2,9 @@ module Cryptoexchange::Exchanges
   module Uniswap
     module Services
       class Market < Cryptoexchange::Services::Market
-        RECOGNIZED_TARGETS = %w{ WETH DAI USDC USDT }
+        STABLECOINS_TARGETS = %w{ DAI USDC USDT }
+        WETH_TARGET = ["WETH"]
+        RECOGNIZED_TARGETS = STABLECOINS_TARGETS + WETH_TARGET
 
         class << self
           def supports_individual_ticker_query?
@@ -48,7 +50,7 @@ module Cryptoexchange::Exchanges
 
           if market_pair.target == "ETH"
             ticker.volume  = NumericHelper.divide(NumericHelper.divide(output['usdVolume'], eth_price_in_usd), ticker.last)
-          elsif ["USDC", "USDT", "DAI"].include? market_pair.target
+          elsif STABLECOINS_TARGETS.include? market_pair.target
             ticker.volume  = NumericHelper.divide(output['usdVolume'], ticker.last)
           end
           ticker.timestamp = nil

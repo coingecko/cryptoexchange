@@ -2,7 +2,9 @@ module Cryptoexchange::Exchanges
   module Uniswap
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        RECOGNIZED_TARGETS = %w{ WETH DAI USDC USDT }
+        STABLECOINS_TARGETS = %w{ DAI USDC USDT }
+        WETH_TARGET = ["WETH"]
+        RECOGNIZED_TARGETS = STABLECOINS_TARGETS + WETH_TARGET
 
         def pairs_url
           "#{Cryptoexchange::Exchanges::Uniswap::Market::API_URL}/exchanges?platform=uniswap-v2&key=#{Cryptoexchange::Exchanges::Uniswap::Market.api_key}"
