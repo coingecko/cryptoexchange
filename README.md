@@ -467,7 +467,8 @@ Or install it yourself as:
 | Txbit             | Y       | Y [x]      |         |         | Y           | Y        | txbit             |       |
 | UEX               | Y       |            |         |         | Y           |          | uex               |       |
 | Unidax            | Y       | N          | N       |         | Y           | N        | unidax            |       |
-| Uniswap           | Y       | N          | N       |         | Y           | N        | uniswap           |       |
+| Uniswap (v2)      | Y       | N          | N       |         | Y           | N        | uniswap           |       |
+| Uniswap (v1)      | Y       | N          | N       |         | Y           | N        | uniswap_v1        |       |
 | Unnamed           | Y       | Y          | Y       |         | Y           | Y        | unnamed           |       |
 | Unocoin           |         |            |         |         |             |          | unocoin           |       |
 | Upbit             | Y       | Y [x]      | Y       |         | Y           | Y        | upbit             |       |
