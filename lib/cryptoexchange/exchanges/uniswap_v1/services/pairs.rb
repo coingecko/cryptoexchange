@@ -1,9 +1,9 @@
 module Cryptoexchange::Exchanges
-  module Uniswap
+  module UniswapV1
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
         def pairs_url
-          "#{Cryptoexchange::Exchanges::Uniswap::Market::API_URL}/exchanges?platform=uniswap-v2&key=#{Cryptoexchange::Exchanges::Uniswap::Market.api_key}"
+          "#{Cryptoexchange::Exchanges::UniswapV1::Market::API_URL}/exchanges?key=#{Cryptoexchange::Exchanges::UniswapV1::Market.api_key}"
         end
 
         def fetch
@@ -13,16 +13,17 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           market_pairs = []
-          # Support WETH only for now
-          output = output["results"].select { |ticker| ticker["assets"][1]["symbol"] == "WETH"}
           output.each do |pair|
-            base = pair["assets"][0]["symbol"]
-            target = "ETH" # pair["assets"][1]["symbol"] # Fix WETH as ETH
+            base = pair["tokenSymbol"]
+            target = "ETH"
+
+            # Temporary workaround for duplicate symbols
+            base = "#{pair['tokenSymbol']}-#{pair['token']}" if base == "ULT"
 
             market_pairs << Cryptoexchange::Models::MarketPair.new(
                               base: base,
                               target: target,
-                              market: Uniswap::Market::NAME
+                              market: UniswapV1::Market::NAME
                             )
           end
           market_pairs
