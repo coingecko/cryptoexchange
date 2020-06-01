@@ -1,8 +1,8 @@
 module Cryptoexchange::Exchanges
-  module Dydx
+  module DydxPerpetual
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Dydx::Market::API_URL}/stats/markets"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::DydxPerpetual::Market::API_URL}/stats/markets"
 
         def fetch
           output = super
@@ -11,13 +11,13 @@ module Cryptoexchange::Exchanges
 
         def adapt(output)
           output['markets'].map do |pair, value|
-            next if value["type"] == "PERPETUAL"
+            next if value["type"] != "PERPETUAL"
 
             base, target = pair.split("-")
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
-              market: Dydx::Market::NAME
+              market: DydxPerpetual::Market::NAME
             )
           end.compact
         end

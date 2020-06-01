@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dydx.exchange/v1/perpetual-markets/PBTC-USDC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dydx.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 28 May 2020 02:27:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '518'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc161b6f2adb11bad5146f856675a22641590632870; expires=Sat, 27-Jun-20
+        02:27:50 GMT; path=/; domain=.dydx.exchange; HttpOnly; SameSite=Lax; Secure
+      X-Powered-By:
+      - Express
+      X-Request-Id:
+      - 11308585-26ac-4b83-a209-f733a9714fcf
+      Access-Control-Allow-Origin:
+      - "*"
+      Surrogate-Control:
+      - no-store
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, proxy-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Etag:
+      - W/"206-QKSVMrUI6cMgiip1olfL/Msi9yI"
+      X-Response-Time:
+      - '2.273'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 02fab48ad80000dd56d0a92200000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 59a489f15989dd56-KUL
+    body:
+      encoding: UTF-8
+      string: '{"market":{"uuid":"f6d20698-32ac-4f3a-a9c4-b6b7528b7b94","market":"PBTC-USDC","oraclePrice":"91.707","fundingRate":"0.000000010820552107","minCollateral":"1.075","globalIndexValue":"1.559448030143359378","globalIndexTimestamp":"1590632360","decimals":"8","minimumTickSize":"0.01","minimumOrderSize":"10000","smallOrderThreshold":"1000000","makerFee":"-0.00025","largeTakerFee":"0.005","smallTakerFee":"0.00075","openInterest":"5559747102","createdAt":"2020-04-09T22:42:35.696Z","updatedAt":"2020-05-28T02:27:45.622Z"}}'
+    http_version: 
+  recorded_at: Thu, 28 May 2020 02:27:51 GMT
+recorded_with: VCR 4.0.0
