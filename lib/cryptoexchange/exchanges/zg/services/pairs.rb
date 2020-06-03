@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Zg
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Zg::Market::API_URL}/tickers"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Zg::Market::API_URL}/ticker/24hr"
 
         def fetch
           output = super
@@ -10,8 +10,8 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output['ticker'].map do |pair|
-            base, target = pair['symbol'].split('_')
+          output.map do |output|
+            base, target = Zg::Market.separate_symbol(output["symbol"])
             Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
