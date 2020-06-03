@@ -503,7 +503,7 @@ Or install it yourself as:
 | Zbmega            | Y       | N          | N       |         | Y           | Y        | zbmega            |       |
 | Zebpay            | Y       | Y [x]      |         |         | Y           | Y        | Zebpay            |       |
 | Zeniex            | Y       | Y          | Y       |         | Y           |          | zeniex            |       |
-| ZG                | Y       | Y [x]      | Y       |         | Y           | Y        | zg                |       |
+| ZG                | Y       |            |         |         | Y           | Y        | zg                |       |
 | ZG.TOP            | Y       |            |         |         | Y           |          | zgtop             |       |
 
 ### Derivatives (Perpetual & Futures)
