@@ -9,13 +9,22 @@ module Cryptoexchange::Exchanges
           adapt(output)
         end
 
+        def get_base(base)
+          if base == "PBTC"
+            return "BTC"
+          end
+
+          base
+        end
+
         def adapt(output)
           output['markets'].map do |pair, value|
             next if value["type"] != "PERPETUAL"
 
             base, target = pair.split("-")
+            converted_base = get_base(base)
             Cryptoexchange::Models::MarketPair.new(
-              base:   base,
+              base:   converted_base,
               target: target,
               inst_id: value["symbol"],
               contract_interval: "perpetual",

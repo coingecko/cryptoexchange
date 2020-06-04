@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe 'DydxPerpetual integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'dydx_perpetual' }
-  let(:pbtc_usdc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'PBTC', target: 'USDC', market: market, inst_id: "PBTC-USDC") }
+  let(:btc_usdc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDC', market: market, inst_id: "PBTC-USDC", contract_interval: "perpetual") }
 
   it 'fetch pairs' do
     pairs = client.pairs(market)
@@ -13,24 +13,24 @@ RSpec.describe 'DydxPerpetual integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq market
-    expect(pair.inst_id).to eq "PBTC-USDC"
-    expect(pair.contract_interval).to eq "perpetual"
+    expect(pair.inst_id).to eq btc_usdc_pair.inst_id
+    expect(pair.contract_interval).to eq btc_usdc_pair.contract_interval
   end
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url(market,
-      base: pbtc_usdc_pair.base,
-      target: pbtc_usdc_pair.target,
-      inst_id: "PBTC-USDC",
+      base: btc_usdc_pair.base,
+      target: btc_usdc_pair.target,
+      inst_id: btc_usdc_pair.inst_id,
     )
 
     expect(trade_page_url).to eq "https://trade.dydx.exchange/perpetual/PBTC-USDC"
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(pbtc_usdc_pair)
+    ticker = client.ticker(btc_usdc_pair)
 
-    expect(ticker.base).to eq 'PBTC'
+    expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USDC'
     expect(ticker.market).to eq market
     expect(ticker.last).to be_a Numeric
@@ -43,9 +43,9 @@ RSpec.describe 'DydxPerpetual integration specs' do
   end
 
   it 'fetch order book' do
-    order_book = client.order_book(pbtc_usdc_pair)
+    order_book = client.order_book(btc_usdc_pair)
 
-    expect(order_book.base).to eq 'PBTC'
+    expect(order_book.base).to eq 'BTC'
     expect(order_book.target).to eq 'USDC'
     expect(order_book.market).to eq market
     expect(order_book.asks).to_not be_empty
@@ -60,9 +60,9 @@ RSpec.describe 'DydxPerpetual integration specs' do
   end
 
   it 'fetch contract stat' do
-    contract_stat = client.contract_stat(pbtc_usdc_pair)
+    contract_stat = client.contract_stat(btc_usdc_pair)
 
-    expect(contract_stat.base).to eq 'PBTC'
+    expect(contract_stat.base).to eq 'BTC'
     expect(contract_stat.target).to eq 'USDC'
     expect(contract_stat.market).to eq market
     expect(contract_stat.index).to be nil

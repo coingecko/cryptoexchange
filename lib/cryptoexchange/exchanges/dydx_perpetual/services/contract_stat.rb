@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def contract_info_url(market_pair)
-          "#{Cryptoexchange::Exchanges::DydxPerpetual::Market::API_URL}/perpetual-markets/#{market_pair.base}-#{market_pair.target}"
+          "#{Cryptoexchange::Exchanges::DydxPerpetual::Market::API_URL}/perpetual-markets/#{market_pair.inst_id}"
         end
 
         def adapt(market_pair, contract_info)
