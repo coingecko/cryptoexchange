@@ -33,6 +33,8 @@ RSpec.describe 'DydxPerpetual integration specs' do
     expect(ticker.base).to eq 'BTC'
     expect(ticker.target).to eq 'USDC'
     expect(ticker.market).to eq market
+    expect(ticker.contract_interval).to eq btc_usdc_pair.contract_interval
+    expect(ticker.inst_id).to eq btc_usdc_pair.inst_id
     expect(ticker.last).to be_a Numeric
     expect(ticker.low).to be_a Numeric
     expect(ticker.high).to be_a Numeric
