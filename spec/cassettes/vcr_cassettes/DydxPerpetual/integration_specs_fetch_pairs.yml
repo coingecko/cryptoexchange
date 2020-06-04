@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dydx.exchange/v1/stats/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dydx.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 04 Jun 2020 06:19:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '859'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db006d90dfebd73b32371478bb157c1bb1591251579; expires=Sat, 04-Jul-20
+        06:19:39 GMT; path=/; domain=.dydx.exchange; HttpOnly; SameSite=Lax; Secure
+      X-Powered-By:
+      - Express
+      X-Request-Id:
+      - b7813318-8e79-4b78-bb8f-592027b96016
+      Access-Control-Allow-Origin:
+      - "*"
+      Surrogate-Control:
+      - no-store
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, proxy-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      Etag:
+      - W/"35b-Nw7iyKz2IwL4HAwQHjDn935Vi7A"
+      X-Response-Time:
+      - '1.019'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 031f954a1300007554220b0200000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 59df8b235f717554-KUL
+    body:
+      encoding: UTF-8
+      string: '{"markets":{"ETH-DAI":{"symbol":"ETH-DAI","low":"235.7300","high":"246.0000","open":"236.4900","last":"242.0200","count":"362","baseVolume":"4066.1717","quoteVolume":"982509.5414","usdVolume":"982509.5414","type":"SPOT"},"ETH-USDC":{"symbol":"ETH-USDC","low":"236.9700","high":"246.5400","open":"237.0000","last":"243.2100","count":"430","baseVolume":"9164.8429","quoteVolume":"2212495.3949","usdVolume":"2212495.3949","type":"SPOT"},"DAI-USDC":{"symbol":"DAI-USDC","low":"1.0018","high":"1.0034","open":"1.0018","last":"1.0034","count":"24","baseVolume":"108072.9814","quoteVolume":"108285.1441","usdVolume":"108285.1441","type":"SPOT"},"PBTC-USDC":{"symbol":"PBTC-USDC","low":"9527.0000","high":"9674.0000","open":"9527.0000","last":"9640.0000","count":"104","baseVolume":"69.5195","quoteVolume":"668923.8477","usdVolume":"668923.8477","type":"PERPETUAL"}}}'
+    http_version: 
+  recorded_at: Thu, 04 Jun 2020 06:19:39 GMT
+recorded_with: VCR 4.0.0

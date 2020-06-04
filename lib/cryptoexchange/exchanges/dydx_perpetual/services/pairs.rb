@@ -17,6 +17,8 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
+              inst_id: value["symbol"],
+              contract_interval: "perpetual",
               market: DydxPerpetual::Market::NAME
             )
           end.compact

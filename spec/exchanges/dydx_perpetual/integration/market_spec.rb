@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe 'DydxPerpetual integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'dydx_perpetual' }
-  let(:pbtc_usdc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'PBTC', target: 'USDC', market: market) }
+  let(:pbtc_usdc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'PBTC', target: 'USDC', market: market, inst_id: "PBTC-USDC") }
 
   it 'fetch pairs' do
     pairs = client.pairs(market)
@@ -13,11 +13,18 @@ RSpec.describe 'DydxPerpetual integration specs' do
     expect(pair.base).to_not be nil
     expect(pair.target).to_not be nil
     expect(pair.market).to eq market
+    expect(pair.inst_id).to eq "PBTC-USDC"
+    expect(pair.contract_interval).to eq "perpetual"
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url market, base: pbtc_usdc_pair.base, target: pbtc_usdc_pair.target
-    expect(trade_page_url).to eq "https://trade.dydx.exchange/perpetual/BTC-USDC"
+    trade_page_url = client.trade_page_url(market,
+      base: pbtc_usdc_pair.base,
+      target: pbtc_usdc_pair.target,
+      inst_id: "PBTC-USDC",
+    )
+
+    expect(trade_page_url).to eq "https://trade.dydx.exchange/perpetual/PBTC-USDC"
   end
 
   it 'fetch ticker' do
