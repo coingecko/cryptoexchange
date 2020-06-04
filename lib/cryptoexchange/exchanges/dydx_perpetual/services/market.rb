@@ -54,6 +54,8 @@ module Cryptoexchange::Exchanges
           ticker.volume    = NumericHelper.to_d(output['baseVolume'])
           ticker.timestamp = nil
           ticker.payload   = output
+          ticker.contract_interval = market_pair.contract_interval
+          ticker.inst_id    = market_pair.inst_id
           ticker
         end
       end
