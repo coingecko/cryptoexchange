@@ -38,7 +38,7 @@ module Cryptoexchange::Exchanges
           contract_stat.market    = DydxPerpetual::Market::NAME
           contract_stat.index_identifier = nil
           contract_stat.index_name = nil
-          contract_stat.funding_rate_percentage = contract_info['fundingRate'] ? contract_info['fundingRate'] * 100 : nil
+          contract_stat.funding_rate_percentage = contract_info['fundingRate'] ? contract_info['fundingRate'].to_f * 100 : nil
           contract_stat.open_interest = contract_info['openInterest'] ? contract_info['openInterest'].to_f : nil
           contract_stat.index     =  get_index(contract_info['oraclePrice'].to_f, market_pair)
           # contract_stat.payload
