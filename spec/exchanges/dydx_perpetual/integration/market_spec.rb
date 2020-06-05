@@ -67,7 +67,7 @@ RSpec.describe 'DydxPerpetual integration specs' do
     expect(contract_stat.base).to eq 'BTC'
     expect(contract_stat.target).to eq 'USDC'
     expect(contract_stat.market).to eq market
-    expect(contract_stat.index).to be nil
+    expect(contract_stat.index).to eq 9170.7
     expect(contract_stat.index_identifier).to be nil
     expect(contract_stat.index_name).to be nil
     expect(contract_stat.timestamp).to be nil
