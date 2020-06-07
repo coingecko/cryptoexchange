@@ -224,6 +224,7 @@ Or install it yourself as:
 | CRXZone           | Y       | Y [x]      | Y       |         | Y           | Y        | crxzone           |       |
 | Cryptagio         | Y       | Y          | Y       |         | Y           | Y        | cryptagio         |       |
 | Cryptaldash       | Y       | Y          | Y       |         | Y           |          | cryptaldash       |       |
+| Cryptlocex        | Y       | Y [x]         | N       |      | Y           | Y        | cryptlocex           |       |
 | Cryptex           | Y       | Y          | Y       |         | User-Defined| Y        | cryptex           |       |
 | CryptoBridge      | Y       |            |         |         | Y           | Y        | crypto_bridge     |       |
 | CryptoHub         | Y       | N          | N       |         | Y           |          | crypto_hub        |       |
