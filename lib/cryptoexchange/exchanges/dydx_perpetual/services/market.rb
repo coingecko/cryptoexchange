@@ -17,14 +17,26 @@ module Cryptoexchange::Exchanges
           "#{Cryptoexchange::Exchanges::DydxPerpetual::Market::API_URL}/stats/markets"
         end
 
+        def get_base(base)
+          if base == "PBTC"
+            return "BTC"
+          end
+
+          base
+        end
+
         def adapt_all(output)
           output["markets"].map do |ticker, value|
             next if value["type"] != "PERPETUAL"
 
             base, target = ticker.split('-')
+            converted_base = get_base(base)
+
             market_pair = Cryptoexchange::Models::MarketPair.new(
-              base: base,
+              base: converted_base,
               target: target,
+              contract_interval: "perpetual",
+              inst_id: value["symbol"],
               market: DydxPerpetual::Market::NAME
             )
             adapt(value, market_pair)
@@ -42,6 +54,8 @@ module Cryptoexchange::Exchanges
           ticker.volume    = NumericHelper.to_d(output['baseVolume'])
           ticker.timestamp = nil
           ticker.payload   = output
+          ticker.contract_interval = market_pair.contract_interval
+          ticker.inst_id    = market_pair.inst_id
           ticker
         end
       end

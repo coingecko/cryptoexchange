@@ -19,6 +19,7 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output.map do |pair, ticker|
+            next unless (ticker["last"] && ticker["lowest_ask"] && ticker["highest_bid"] && ticker["percent_change"] && ticker["volume"])
             base, target = pair.split('-')
             market_pair = Cryptoexchange::Models::MarketPair.new({
                             base: base,
@@ -26,7 +27,7 @@ module Cryptoexchange::Exchanges
                             market: Btse::Market::NAME
                           })
             adapt(ticker, market_pair)
-          end
+          end.compact
         end
 
         def adapt(output, market_pair)
