@@ -13,8 +13,8 @@ module Cryptoexchange::Exchanges
         def fetch(market_pair)
           base = market_pair.base
           target = market_pair.target
-          wrapped_base = "WETH" if market_pair.base == "ETH"
-          wrapped_target = "WETH" if market_pair.target == "ETH"
+          base = "WETH" if market_pair.base == "ETH"
+          target = "WETH" if market_pair.target == "ETH"
 
           # Get swaps from both direction
           # Example, DAI-ETH and ETH-DAI
