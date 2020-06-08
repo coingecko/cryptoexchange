@@ -13,8 +13,8 @@ module Cryptoexchange::Exchanges
         def fetch(market_pair)
           base = market_pair.base
           target = market_pair.target
-          base = "WETH" if market_pair.base == "ETH"
-          target = "WETH" if market_pair.target == "ETH"
+          wrapped_base = "WETH" if market_pair.base == "ETH"
+          wrapped_target = "WETH" if market_pair.target == "ETH"
 
           # Get swaps from both direction
           # Example, DAI-ETH and ETH-DAI
@@ -23,19 +23,16 @@ module Cryptoexchange::Exchanges
           latest_swap = swaps_response.data.swaps.first
           latest_swap_inverse = swaps_response_inverse.data.swaps.first
 
-          # Put the latest swap from both side together so we can compare and get the latest of the two
-          latest_swaps = []
-          latest_swaps << latest_swap if latest_swap
-          latest_swaps << latest_swap_inverse if latest_swap_inverse
-          last_swap =  latest_swaps.max_by { |k| k.timestamp}
-
-          if last_swap
-            last_price = last_swap.token_amount_out.to_f / last_swap.token_amount_in.to_f
-            volume = swaps_response.data.swaps.map(&:token_amount_in).map { |s| s.to_f }.sum
-            volume_inverse = swaps_response_inverse.data.swaps.map(&:token_amount_out).map { |s| s.to_f }.sum
-
-            adapt(last_price, market_pair, volume + volume_inverse)
+          # Depending on the latest swap, price derived differently, due to different direction
+          last_price = if latest_swap.timestamp > latest_swap_inverse.timestamp
+            latest_swap.token_amount_out.to_f / latest_swap.token_amount_in.to_f
+          else
+            latest_swap_inverse.token_amount_in.to_f / latest_swap_inverse.token_amount_out.to_f
           end
+          volume = swaps_response.data.swaps.map(&:token_amount_in).map { |s| s.to_f }.sum
+          volume_inverse = swaps_response_inverse.data.swaps.map(&:token_amount_out).map { |s| s.to_f }.sum
+
+          adapt(last_price, market_pair, volume + volume_inverse)
         end
 
         def adapt(last_price, market_pair, volume)

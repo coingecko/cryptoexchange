@@ -28,8 +28,8 @@ RSpec.describe 'Curve integration specs' do
     expect(ticker.base).to eq 'DAI'
     expect(ticker.target).to eq 'USDT'
     expect(ticker.market).to eq 'curve'
-    expect(ticker.last).to eq 0.9962905457670066
-    expect(ticker.volume).to eq 921922.257751789
+    expect(ticker.last).to eq 1.00282886625
+    expect(ticker.volume).to eq 707105.8709486402
     expect(ticker.timestamp).to be nil
 
     expect(ticker.payload).to_not be nil
