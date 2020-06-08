@@ -43,6 +43,7 @@ Or install it yourself as:
 | Atomars           | Y       | Y          | Y       |         | Y           | Y        | atomars           |       |
 | AXNET (halted)    | Y       | Y          | Y       |         | Y           | Y        | axnet             |       |
 | B2BX              | Y       | N          |         |         | Y           |          | b2bx              |       |
+| Balancer          | Y       |            |         |         | Y           |          | balancer          |       |
 | Bamboo Relay      | Y       | Y [x]      |         |         | Y           | Y        | bamboo_relay      |       |
 | Bancor            | Y       | N          | N       |         | Y           |          | bancor            |       |
 | Bankera           | Y       | Y [x]      | Y       |         | Y           | Y        | bankera           |       |
