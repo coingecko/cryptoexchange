@@ -2,6 +2,58 @@
 http_interactions:
 - request:
     method: get
+    uri: https://api.deversifi.com/v1/trading/r/last24HoursVolume
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.deversifi.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 09 Jun 2020 09:18:44 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db5e6d073a2a180ff671ef85f455434ff1591694324; expires=Thu, 09-Jul-20
+        09:18:44 GMT; path=/; domain=.deversifi.com; HttpOnly; SameSite=Lax; Secure
+      Vary:
+      - origin,accept-encoding
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      Cache-Control:
+      - max-age=43200
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - EXPIRED
+      Cf-Request-Id:
+      - '0339f90a42000073897201b200000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5a09c456dc397389-JHB
+    body:
+      encoding: UTF-8
+      string: '{"totalUSDVolume":140313.14677434333,"tokens":{"ETH":{"tokenAmount":561.7539645297319,"USDVolume":136921.24821328945},"DAI":{"tokenAmount":8243.01045006,"USDVolume":8294.425326783301},"DUSK":{"tokenAmount":0,"USDVolume":0},"MKR":{"tokenAmount":0.175,"USDVolume":98.175},"BTC":{"tokenAmount":0.00372748,"USDVolume":36.809237748},"ZRX":{"tokenAmount":71.73972307,"USDVolume":22.8659329396262},"NEC":{"tokenAmount":31586.41830275,"USDVolume":3234.0483903662507},"USDT":{"tokenAmount":132018.72144756003,"USDVolume":132018.72144756003},"OMG":{"tokenAmount":0,"USDVolume":0},"USDC":{"tokenAmount":0,"USDVolume":0},"FUN":{"tokenAmount":0,"USDVolume":0},"PNK":{"tokenAmount":0,"USDVolume":0}},"symbols":{"ETH:USDT":{"tokenAmount":528.35111721,"USDVolume":128626.82288650614,"lastUSDPrice":243.12,"lastTrade":"2020-06-09T08:50:37.783Z"},"MKR:ETH":{"tokenAmount":0,"USDVolume":0},"MKR:USDT":{"tokenAmount":0.175,"USDVolume":98.175,"lastUSDPrice":561,"lastTrade":"2020-06-09T07:02:24.661Z"},"MKR:DAI":{"tokenAmount":0,"USDVolume":0},"PNK:ETH":{"tokenAmount":0,"USDVolume":0},"PNK:USDT":{"tokenAmount":0,"USDVolume":0},"DAI:ETH":{"tokenAmount":8243.01045006,"USDVolume":8294.425326783301,"lastUSDPrice":0.994224862,"lastTrade":"2020-06-09T08:53:32.616Z"},"DAI:USDT":{"tokenAmount":0,"USDVolume":0},"NEC:ETH":{"tokenAmount":0,"USDVolume":0},"NEC:USDT":{"tokenAmount":31586.41830275,"USDVolume":3234.0483903662507,"lastUSDPrice":0.10611,"lastTrade":"2020-06-09T06:20:15.721Z"},"BTC:USDT":{"tokenAmount":0.00372748,"USDVolume":36.809237748,"lastUSDPrice":9875.1,"lastTrade":"2020-06-09T00:16:18.190Z"},"ZRX:ETH":{"tokenAmount":0,"USDVolume":0},"ZRX:USDT":{"tokenAmount":71.73972307,"USDVolume":22.8659329396262,"lastUSDPrice":0.3172,"lastTrade":"2020-06-08T21:00:22.329Z"},"DUSK:USDT":{"tokenAmount":0,"USDVolume":0}},"startDate":"2020-06-08T09:18:27.118Z"}'
+    http_version: 
+  recorded_at: Tue, 09 Jun 2020 09:18:44 GMT
+- request:
+    method: get
     uri: https://api.deversifi.com/bfx/v2/tickers?symbols=tETHUSD
     body:
       encoding: UTF-8
@@ -19,7 +71,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 12 Feb 2020 03:34:16 GMT
+      - Tue, 09 Jun 2020 09:18:44 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,8 +79,10 @@ http_interactions:
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d54b3fec47d07d7d6c7d034116e68b7f11581478456; expires=Fri, 13-Mar-20
-        03:34:16 GMT; path=/; domain=.deversifi.com; HttpOnly; SameSite=Lax; Secure
+      - __cfduid=d164f47682c2d791ee2b739724e193cf51591694324; expires=Thu, 09-Jul-20
+        09:18:44 GMT; path=/; domain=.deversifi.com; HttpOnly; SameSite=Lax; Secure
+      Uwebsockets:
+      - v0.17
       X-Frame-Options:
       - sameorigin
       X-Xss-Protection:
@@ -43,25 +97,25 @@ http_interactions:
       - none
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains;
+      Cf-Request-Id:
+      - '0339f90c550000738d35893200000001'
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Via:
       - 1.1 google
-      Alt-Svc:
-      - clear
       Cache-Control:
       - max-age=43200
       Cf-Cache-Status:
       - HIT
       Age:
-      - '626'
+      - '3848'
       Server:
       - cloudflare
       Cf-Ray:
-      - 563b817e9a12c0f5-KUL
+      - 5a09c45a2aea738d-JHB
     body:
       encoding: UTF-8
-      string: '[["tETHUSD",244.45,1017.48329102,244.58,653.9413403,24.71,0.1125,244.42,89863.50224368,246.88,218.24]]'
+      string: '[["tETHUSD",243.73,597.17391604,243.76,1508.64367834,-0.45,-0.0018,243.7,51772.88926162,249.97,238.18]]'
     http_version: 
-  recorded_at: Wed, 12 Feb 2020 03:34:16 GMT
+  recorded_at: Tue, 09 Jun 2020 09:18:44 GMT
 recorded_with: VCR 4.0.0
