@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitget.cc/data/v1/market/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitget.cc
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 10 Jun 2020 08:01:42 GMT
+      Content-Type:
+      - text/html;charset=UTF-8
+      Content-Length:
+      - '1827'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","ts":1591776102807,"data":[{"amount":"58433.0466","count":"35469","open":"9719.9","close":"9759.71","low":"9682.99","high":"9829","vol":"568637994.424046","symbol":"btc_usdt"},{"amount":"11931667.0498","count":"11677","open":"0.01693","close":"0.01657","low":"0.01651","high":"0.01693","vol":"199979.992754631","symbol":"bft_usdt"},{"amount":"31750.684","count":"37880","open":"243.29","close":"243.8","low":"240.81","high":"245.11","vol":"7729061.689753","symbol":"eth_usdt"},{"amount":"38616.3413","count":"36578","open":"46.17","close":"45.99","low":"45.31","high":"46.36","vol":"1779500.069722","symbol":"ltc_usdt"},{"amount":"205583.2148","count":"41240","open":"2.7553","close":"2.752","low":"2.6988","high":"2.7746","vol":"565351.34804916","symbol":"eos_usdt"},{"amount":"194431.538","count":"42084","open":"0.20189","close":"0.20178","low":"0.20007","high":"0.20284","vol":"39287.251045362","symbol":"xrp_usdt"},{"amount":"1332.8904","count":"1473","open":"253.29","close":"253.68","low":"251.15","high":"259.02","vol":"338170.58269","symbol":"bch_usdt"},{"amount":"34668.118","count":"42674","open":"6.7942","close":"6.7913","low":"6.7196","high":"6.8354","vol":"235464.83798599","symbol":"etc_usdt"},{"amount":"188509.3729","count":"41063","open":"0.017689","close":"0.01746","low":"0.017307","high":"0.017701","vol":"3317.9447486523","symbol":"trx_usdt"},{"amount":"1299388.996","count":"1940","open":"0.0155","close":"0.015","low":"0.0148","high":"0.0158","vol":"19942.4340484","symbol":"fdt_usdt"},{"amount":"3393.2213","count":"964","open":"0.025032","close":"0.024959","low":"0.024882","high":"0.02507","vol":"84.8805136044","symbol":"eth_btc"},{"amount":"2776.3548","count":"1362","open":"0.026089","close":"0.026039","low":"0.025739","high":"0.026481","vol":"72.3893620807","symbol":"bch_btc"}]}'
+    http_version: 
+  recorded_at: Wed, 10 Jun 2020 08:01:42 GMT
+recorded_with: VCR 4.0.0

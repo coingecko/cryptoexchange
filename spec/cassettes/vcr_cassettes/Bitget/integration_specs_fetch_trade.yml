@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitget.cc/data/v1/market/trade?symbol=BTC_USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitget.cc
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 10 Jun 2020 08:01:43 GMT
+      Content-Type:
+      - text/html;charset=UTF-8
+      Content-Length:
+      - '195'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","ch":"market.BTC_USDT.trade.detail","ts":1591776103827,"data":{"ts":"1591776102000","data":[{"id":"1","price":"9759.70","amount":"1.0079","direction":"buy","ts":"1591776102000"}]}}'
+    http_version: 
+  recorded_at: Wed, 10 Jun 2020 08:01:43 GMT
+recorded_with: VCR 4.0.0

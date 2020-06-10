@@ -91,6 +91,7 @@ Or install it yourself as:
 | Bitfinex          | Y       | Y [x]      |         |         | Y           |          | bitfinex          |       |
 | Bitflyer          | Y       | Y [x]      |         |         | Y           |          | bitflyer          |       |
 | Bitforex          | Y       | Y [x]      | N       |         | Y           |          | bitforex          |       |
+| Bitget            | Y       | Y [x]      | Y       |         | Y           | Y        | bitget            |       |
 | Bithash           | Y       | Y [x]      | Y       |         | Y           | Y        | bithash           |       |
 | Bitholic          | Y       | Y [x]      | Y       |         | Y           |          | bitholic          |       |
 | Bithumb           | Y       | Y [x]      |         |         | Y           |          | bithumb           |       |
