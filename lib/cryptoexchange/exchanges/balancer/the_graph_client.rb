@@ -12,7 +12,7 @@ module Cryptoexchange::Exchanges
       SwapsQuery = Client.parse <<-'GRAPHQL'
       query($from: String!, $to: String!, $range_timestamp: Int!)
       {
-        swaps(orderBy: timestamp, orderDirection: desc, where: { tokenInSym: $from, tokenOutSym: $to, timestamp_gte: $range_timestamp }) {
+        swaps(orderBy: timestamp, orderDirection: desc, first: 1000, where: { tokenInSym: $from, tokenOutSym: $to, timestamp_gte: $range_timestamp }) {
           id,
           tokenInSym,
           tokenOutSym,
