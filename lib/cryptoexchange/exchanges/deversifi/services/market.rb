@@ -18,6 +18,7 @@ module Cryptoexchange::Exchanges
         def ticker_url(market_pair)
           base = market_pair.base.upcase
           target = market_pair.target.upcase
+          target = "USD" if market_pair.target.upcase == "USDT"
           "#{Cryptoexchange::Exchanges::Deversifi::Market::API_URL}/bfx/v2/tickers?symbols=t#{base}#{target}"
         end
 
