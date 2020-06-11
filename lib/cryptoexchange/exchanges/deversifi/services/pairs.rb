@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Deversifi
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Deversifi::Market::API_URL}/v1/trading/r/get/conf"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Deversifi::Market::API_URL}/v1/trading/r/last24HoursVolume"
 
         def fetch
           output = super
@@ -10,11 +10,11 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output["0x"]["exchangeSymbols"].map do |pair|
-            pair = pair[1..-1]
+          output["symbols"].map do |pair, ticker|
+            base, target = pair.split(":")
             Cryptoexchange::Models::MarketPair.new(
-              base: pair[0..2],
-              target: pair[3..5],
+              base: base,
+              target: target,
               market: Deversifi::Market::NAME
             )
           end
