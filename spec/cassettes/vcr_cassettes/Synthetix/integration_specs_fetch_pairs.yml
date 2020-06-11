@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.synthetix.io/api/exchange/pairs/crypto
+    uri: https://exchange.api.synthetix.io/api/pairs/crypto
     body:
       encoding: UTF-8
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       Connection:
       - close
       Host:
-      - api.synthetix.io
+      - exchange.api.synthetix.io
       User-Agent:
       - http.rb/5.0.0.pre
   response:
@@ -18,35 +18,23 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Fri, 28 Jun 2019 12:34:14 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Content-Length:
-      - '37'
-      Connection:
-      - close
+      Date:
+      - Thu, 11 Jun 2020 00:29:42 GMT
+      Etag:
+      - W/"1379-5mEyCzdByhN/Q3wHDY6an5sa90M"
       Server:
-      - nginx/1.12.1
+      - nginx/1.16.1
       X-Powered-By:
       - Express
-      Set-Cookie:
-      - language=en-US; Path=/
-      X-Frame-Options:
-      - sameorigin
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET,PUT,POST,DELETE,OPTIONS
-      Access-Control-Allow-Headers:
-      - Content-Type, Authorization
-      Etag:
-      - W/"25-So0kTBzEdkUQi+C87szHEUqYfys"
-      Vary:
-      - Accept-Encoding
+      Content-Length:
+      - '4985'
+      Connection:
+      - Close
     body:
       encoding: UTF-8
-      string: '["sBTC-sETH","sBTC-sBNB","sETH-sBNB"]'
+      string: '["sETH-sBTC","sBNB-sBTC","sTRX-sBTC","sXTZ-sBTC","sXRP-sBTC","sLTC-sBTC","sLINK-sBTC","sEOS-sBTC","sBCH-sBTC","sETC-sBTC","sDASH-sBTC","sXMR-sBTC","sADA-sBTC","iBTC-sBTC","iETH-sBTC","iBNB-sBTC","iTRX-sBTC","iXTZ-sBTC","iXRP-sBTC","iLINK-sBTC","iLTC-sBTC","iEOS-sBTC","iBCH-sBTC","iETC-sBTC","iDASH-sBTC","iXMR-sBTC","iADA-sBTC","sBTC-sUSD","sBNB-sETH","sTRX-sETH","sXTZ-sETH","sXRP-sETH","sLTC-sETH","sLINK-sETH","sEOS-sETH","sBCH-sETH","sETC-sETH","sDASH-sETH","sXMR-sETH","sADA-sETH","iBTC-sETH","iETH-sETH","iBNB-sETH","iTRX-sETH","iXTZ-sETH","iXRP-sETH","iLINK-sETH","iLTC-sETH","iEOS-sETH","iBCH-sETH","iETC-sETH","iDASH-sETH","iXMR-sETH","iADA-sETH","sETH-sUSD","sBNB-sTRX","sBNB-sXTZ","sBNB-sXRP","sBNB-sLTC","sBNB-sLINK","sBNB-sEOS","sBNB-sBCH","sBNB-sETC","sBNB-sDASH","sBNB-sXMR","sBNB-sADA","sBNB-iBTC","sBNB-iETH","sBNB-iBNB","sBNB-iTRX","sBNB-iXTZ","sBNB-iXRP","sBNB-iLINK","sBNB-iLTC","sBNB-iEOS","sBNB-iBCH","sBNB-iETC","sBNB-iDASH","sBNB-iXMR","sBNB-iADA","sBNB-sUSD","sTRX-sXTZ","sTRX-sXRP","sTRX-sLTC","sTRX-sLINK","sTRX-sEOS","sTRX-sBCH","sTRX-sETC","sTRX-sDASH","sTRX-sXMR","sTRX-sADA","sTRX-iBTC","sTRX-iETH","sTRX-iBNB","sTRX-iTRX","sTRX-iXTZ","sTRX-iXRP","sTRX-iLINK","sTRX-iLTC","sTRX-iEOS","sTRX-iBCH","sTRX-iETC","sTRX-iDASH","sTRX-iXMR","sTRX-iADA","sTRX-sUSD","sXTZ-sXRP","sXTZ-sLTC","sXTZ-sLINK","sXTZ-sEOS","sXTZ-sBCH","sXTZ-sETC","sXTZ-sDASH","sXTZ-sXMR","sXTZ-sADA","sXTZ-iBTC","sXTZ-iETH","sXTZ-iBNB","sXTZ-iTRX","sXTZ-iXTZ","sXTZ-iXRP","sXTZ-iLINK","sXTZ-iLTC","sXTZ-iEOS","sXTZ-iBCH","sXTZ-iETC","sXTZ-iDASH","sXTZ-iXMR","sXTZ-iADA","sXTZ-sUSD","sXRP-sLTC","sXRP-sLINK","sXRP-sEOS","sXRP-sBCH","sXRP-sETC","sXRP-sDASH","sXRP-sXMR","sXRP-sADA","sXRP-iBTC","sXRP-iETH","sXRP-iBNB","sXRP-iTRX","sXRP-iXTZ","sXRP-iXRP","sXRP-iLINK","sXRP-iLTC","sXRP-iEOS","sXRP-iBCH","sXRP-iETC","sXRP-iDASH","sXRP-iXMR","sXRP-iADA","sXRP-sUSD","sLTC-sLINK","sLTC-sEOS","sLTC-sBCH","sLTC-sETC","sLTC-sDASH","sLTC-sXMR","sLTC-sADA","sLTC-iBTC","sLTC-iETH","sLTC-iBNB","sLTC-iTRX","sLTC-iXTZ","sLTC-iXRP","sLTC-iLINK","sLTC-iLTC","sLTC-iEOS","sLTC-iBCH","sLTC-iETC","sLTC-iDASH","sLTC-iXMR","sLTC-iADA","sLTC-sUSD","sLINK-sEOS","sLINK-sBCH","sLINK-sETC","sLINK-sDASH","sLINK-sXMR","sLINK-sADA","sLINK-iBTC","sLINK-iETH","sLINK-iBNB","sLINK-iTRX","sLINK-iXTZ","sLINK-iXRP","sLINK-iLINK","sLINK-iLTC","sLINK-iEOS","sLINK-iBCH","sLINK-iETC","sLINK-iDASH","sLINK-iXMR","sLINK-iADA","sLINK-sUSD","sEOS-sBCH","sEOS-sETC","sEOS-sDASH","sEOS-sXMR","sEOS-sADA","sEOS-iBTC","sEOS-iETH","sEOS-iBNB","sEOS-iTRX","sEOS-iXTZ","sEOS-iXRP","sEOS-iLINK","sEOS-iLTC","sEOS-iEOS","sEOS-iBCH","sEOS-iETC","sEOS-iDASH","sEOS-iXMR","sEOS-iADA","sEOS-sUSD","sBCH-sETC","sBCH-sDASH","sBCH-sXMR","sBCH-sADA","sBCH-iBTC","sBCH-iETH","sBCH-iBNB","sBCH-iTRX","sBCH-iXTZ","sBCH-iXRP","sBCH-iLINK","sBCH-iLTC","sBCH-iEOS","sBCH-iBCH","sBCH-iETC","sBCH-iDASH","sBCH-iXMR","sBCH-iADA","sBCH-sUSD","sETC-sDASH","sETC-sXMR","sETC-sADA","sETC-iBTC","sETC-iETH","sETC-iBNB","sETC-iTRX","sETC-iXTZ","sETC-iXRP","sETC-iLINK","sETC-iLTC","sETC-iEOS","sETC-iBCH","sETC-iETC","sETC-iDASH","sETC-iXMR","sETC-iADA","sETC-sUSD","sDASH-sXMR","sDASH-sADA","sDASH-iBTC","sDASH-iETH","sDASH-iBNB","sDASH-iTRX","sDASH-iXTZ","sDASH-iXRP","sDASH-iLINK","sDASH-iLTC","sDASH-iEOS","sDASH-iBCH","sDASH-iETC","sDASH-iDASH","sDASH-iXMR","sDASH-iADA","sDASH-sUSD","sXMR-sADA","sXMR-iBTC","sXMR-iETH","sXMR-iBNB","sXMR-iTRX","sXMR-iXTZ","sXMR-iXRP","sXMR-iLINK","sXMR-iLTC","sXMR-iEOS","sXMR-iBCH","sXMR-iETC","sXMR-iDASH","sXMR-iXMR","sXMR-iADA","sXMR-sUSD","sADA-iBTC","sADA-iETH","sADA-iBNB","sADA-iTRX","sADA-iXTZ","sADA-iXRP","sADA-iLINK","sADA-iLTC","sADA-iEOS","sADA-iBCH","sADA-iETC","sADA-iDASH","sADA-iXMR","sADA-iADA","sADA-sUSD","iBTC-iETH","iBTC-iBNB","iBTC-iTRX","iBTC-iXTZ","iBTC-iXRP","iBTC-iLINK","iBTC-iLTC","iBTC-iEOS","iBTC-iBCH","iBTC-iETC","iBTC-iDASH","iBTC-iXMR","iBTC-iADA","iBTC-sUSD","iETH-iBNB","iETH-iTRX","iETH-iXTZ","iETH-iXRP","iETH-iLINK","iETH-iLTC","iETH-iEOS","iETH-iBCH","iETH-iETC","iETH-iDASH","iETH-iXMR","iETH-iADA","iETH-sUSD","iBNB-iTRX","iBNB-iXTZ","iBNB-iXRP","iBNB-iLINK","iBNB-iLTC","iBNB-iEOS","iBNB-iBCH","iBNB-iETC","iBNB-iDASH","iBNB-iXMR","iBNB-iADA","iBNB-sUSD","iTRX-iXTZ","iTRX-iXRP","iTRX-iLINK","iTRX-iLTC","iTRX-iEOS","iTRX-iBCH","iTRX-iETC","iTRX-iDASH","iTRX-iXMR","iTRX-iADA","iTRX-sUSD","iXTZ-iXRP","iXTZ-iLINK","iXTZ-iLTC","iXTZ-iEOS","iXTZ-iBCH","iXTZ-iETC","iXTZ-iDASH","iXTZ-iXMR","iXTZ-iADA","iXTZ-sUSD","iXRP-iLINK","iXRP-iLTC","iXRP-iEOS","iXRP-iBCH","iXRP-iETC","iXRP-iDASH","iXRP-iXMR","iXRP-iADA","iXRP-sUSD","iLINK-iLTC","iLINK-iEOS","iLINK-iBCH","iLINK-iETC","iLINK-iDASH","iLINK-iXMR","iLINK-iADA","iLINK-sUSD","iLTC-iEOS","iLTC-iBCH","iLTC-iETC","iLTC-iDASH","iLTC-iXMR","iLTC-iADA","iLTC-sUSD","iEOS-iBCH","iEOS-iETC","iEOS-iDASH","iEOS-iXMR","iEOS-iADA","iEOS-sUSD","iBCH-iETC","iBCH-iDASH","iBCH-iXMR","iBCH-iADA","iBCH-sUSD","iETC-iDASH","iETC-iXMR","iETC-iADA","iETC-sUSD","iDASH-iXMR","iDASH-iADA","iDASH-sUSD","iXMR-iADA","iXMR-sUSD","iADA-sUSD"]'
     http_version: 
-  recorded_at: Fri, 28 Jun 2019 12:34:14 GMT
+  recorded_at: Thu, 11 Jun 2020 00:29:43 GMT
 recorded_with: VCR 4.0.0
