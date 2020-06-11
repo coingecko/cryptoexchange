@@ -30,19 +30,4 @@ RSpec.describe 'Synthetix integration specs' do
 
     expect(ticker.payload).to_not be nil
   end
-
-  it 'fetch trades' do
-    trades = client.trades(sbtc_seth_pair)
-    trade = trades.first
-
-    expect(trade.base).to eq 'SBTC'
-    expect(trade.target).to eq 'SETH'
-    expect(trade.market).to eq 'synthetix'
-
-    expect(trade.amount).to_not be_nil
-    expect(trade.price).to_not be_nil
-    expect(trade.timestamp).to be_a Numeric
-    expect(trade.trade_id).to be_nil
-    expect(trade.type).to eq("buy").or eq("sell")
-  end
 end
