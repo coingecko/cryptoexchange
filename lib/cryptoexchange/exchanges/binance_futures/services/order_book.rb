@@ -9,12 +9,17 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          output = super(order_book_url(market_pair))
+          root_api_url = if market_pair.contract_interval == "perpetual"
+            Cryptoexchange::Exchanges::BinanceFutures::Market::API_URL
+          elsif market_pair.contract_interval == "futures"
+            Cryptoexchange::Exchanges::BinanceFutures::Market::FUTURES_API_URL
+          end
+          output = super(order_book_url(root_api_url, market_pair))
           adapt(output, market_pair)
         end
 
-        def order_book_url(market_pair)
-          "#{Cryptoexchange::Exchanges::BinanceFutures::Market::API_URL}/depth?symbol=#{market_pair.inst_id}&limit=500"
+        def order_book_url(root_api_url, market_pair)
+          "#{root_api_url}/depth?symbol=#{market_pair.inst_id}&limit=500"
         end
 
         def adapt(output, market_pair)

@@ -4,6 +4,7 @@ RSpec.describe 'Binance Futures integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:market) { 'binance_futures' }
   let(:btc_usdt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USDT', market: market, inst_id: 'BTCUSDT', contract_interval: "perpetual") }
+  let(:btc_quarter) { Cryptoexchange::Models::MarketPair.new(base: 'BTC', target: 'USD', market: market, inst_id: 'BTCUSD_200925', contract_interval: "futures") }
 
   it 'fetch pairs' do
     pairs = client.pairs(market)
@@ -15,7 +16,7 @@ RSpec.describe 'Binance Futures integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url market, base: btc_usdt_pair.base, target: btc_usdt_pair.target, inst_id: btc_usdt_pair.inst_id
-    expect(trade_page_url).to eq "https://www.binance.com/en/futures/BTCUSDT"
+    expect(trade_page_url).to eq "https://www.binance.com/en/futuresng/BTCUSDT"
   end
 
   it 'fetch ticker' do
@@ -64,14 +65,29 @@ RSpec.describe 'Binance Futures integration specs' do
       expect(contract_stat.timestamp).to be nil
 
       expect(contract_stat.open_interest).to eq 14367.348
+      expect(contract_stat.payload).to_not be nil
+    end
+
+    it 'fetch perpetual contract details' do
+      contract_stat = client.contract_stat(btc_usdt_pair)
+
       expect(contract_stat.expire_timestamp).to be nil
       expect(contract_stat.start_timestamp).to be nil
       expect(contract_stat.contract_type).to eq 'perpetual'
       expect(contract_stat.funding_rate_percentage).to be_a Numeric
       expect(2018..Date.today.year).to include(Time.at(contract_stat.next_funding_rate_timestamp).year)
       expect(contract_stat.funding_rate_percentage_predicted).to be nil
+    end
 
-      expect(contract_stat.payload).to_not be nil
+    it 'fetch futures contract details' do
+      contract_stat = client.contract_stat(btc_quarter)
+
+      expect(2019..Date.today.year).to include(Time.at(contract_stat.expire_timestamp).year)
+      expect(2019..Date.today.year).to include(Time.at(contract_stat.start_timestamp).year)
+      expect(contract_stat.contract_type).to eq 'futures'
+      expect(contract_stat.funding_rate_percentage).to be nil
+      expect(contract_stat.next_funding_rate_timestamp).to be nil
+      expect(contract_stat.funding_rate_percentage_predicted).to be nil
     end
   end
 end

@@ -1,0 +1,145 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dapi.binance.com/dapi/v1/premiumIndex?symbol=BTCUSD_200925
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - dapi.binance.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '161'
+      Connection:
+      - close
+      Date:
+      - Fri, 12 Jun 2020 07:23:21 GMT
+      Server:
+      - Tengine
+      Vary:
+      - Accept-Encoding
+      X-Mbx-Used-Weight-1m:
+      - '1'
+      X-Response-Time:
+      - 0ms
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - "*,clienttype,Content-Type,lang,x-ui-request-trace"
+      Content-Security-Policy:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 4df30bf8d536ea82c0fd3fa1f9fb38b8.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50
+      X-Amz-Cf-Id:
+      - k0Am2whcp2RcjnVxOWmPoBn_ZIN-dUU-7f7khgRNXIolxqaaoGak-g==
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"symbol":"BTCUSD_200925","pair":"BTCUSD","markPrice":"9422.66642083","indexPrice":"9387.00750000","estimatedSettlePrice":"9374.10052837","time":1591946601000}]'
+    http_version: 
+  recorded_at: Fri, 12 Jun 2020 07:23:18 GMT
+- request:
+    method: get
+    uri: https://dapi.binance.com/dapi/v1/openInterest?symbol=BTCUSD_200925
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - dapi.binance.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '118'
+      Connection:
+      - close
+      Date:
+      - Fri, 12 Jun 2020 07:23:21 GMT
+      Server:
+      - Tengine
+      Vary:
+      - Accept-Encoding
+      X-Mbx-Used-Weight-1m:
+      - '2'
+      X-Response-Time:
+      - 0ms
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - "*,clienttype,Content-Type,lang,x-ui-request-trace"
+      Content-Security-Policy:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 ae9efac1cae1b07bcb1c97d186b5ab00.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50
+      X-Amz-Cf-Id:
+      - XobENEYN9Er93JjZtrnDNfA-MPa_GQ1z0slaVgU0B8hftleA_Tzoxw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"symbol":"BTCUSD_200925","pair":"BTCUSD","openInterest":"9511","contractType":"CURRENT_QUARTER","time":1591946361327}'
+    http_version: 
+  recorded_at: Fri, 12 Jun 2020 07:23:18 GMT
+recorded_with: VCR 4.0.0
