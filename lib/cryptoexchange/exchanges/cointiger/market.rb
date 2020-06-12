@@ -3,7 +3,7 @@ module Cryptoexchange::Exchanges
     class Market < Cryptoexchange::Models::Market
       NAME = 'cointiger'
       API_URL = 'https://api.cointiger.com/exchange/trading/api/market'
-      MARKET_URL = 'https://www.cointiger.com/exchange/api/public/market/detail/v4'
+      MARKET_URL = 'https://www.cointiger.com/exchange/api/public/market/detail'
     end
   end
 end
