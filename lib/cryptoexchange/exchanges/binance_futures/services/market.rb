@@ -46,7 +46,12 @@ module Cryptoexchange::Exchanges
           ticker.last      = NumericHelper.to_d(output['lastPrice'])
           ticker.high      = NumericHelper.to_d(output['highPrice'])
           ticker.low       = NumericHelper.to_d(output['lowPrice'])
-          ticker.volume    = NumericHelper.to_d(output['volume'])
+
+          if market_pair.contract_interval == "perpetual"
+            ticker.volume    = NumericHelper.to_d(output['volume'])
+          elsif market_pair.contract_interval == "futures"
+            ticker.volume    = NumericHelper.to_d(output['baseVolume']) if output['baseVolume'].to_f > 0
+          end
           ticker.timestamp = nil
           ticker.payload   = output
           ticker
