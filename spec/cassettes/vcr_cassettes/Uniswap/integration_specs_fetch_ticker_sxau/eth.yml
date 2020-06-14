@@ -8,7 +8,7 @@ http_interactions:
       string: '{"query":"query Cryptoexchange__Exchanges__Uniswap__TheGraphClient__TokenDayDataQuery($token:
         String!, $range_timestamp: Int!) {\n  tokenDayDatas(orderBy: date, orderDirection:
         desc, where: {token: $token, date_gte: $range_timestamp}) {\n    id\n    token
-        {\n      symbol\n      id\n      derivedETH\n    }\n    date\n    dailyVolumeToken\n    date\n  }\n}","variables":{"token":"0x6b175474e89094c44da98b954eedeac495271d0f","range_timestamp":1592005363},"operationName":"Cryptoexchange__Exchanges__Uniswap__TheGraphClient__TokenDayDataQuery"}'
+        {\n      symbol\n      id\n      derivedETH\n    }\n    date\n    dailyVolumeToken\n    date\n  }\n}","variables":{"token":"0x261efcdd24cea98652b9700800a13dfbca4103ff","range_timestamp":1592005363},"operationName":"Cryptoexchange__Exchanges__Uniswap__TheGraphClient__TokenDayDataQuery"}'
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -30,7 +30,7 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '532'
+      - '518'
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Headers:
@@ -43,7 +43,7 @@ http_interactions:
       - clear
     body:
       encoding: UTF-8
-      string: '{"data":{"tokenDayDatas":[{"dailyVolumeToken":"130639.584305309607123137","date":1592092800,"id":"0x6b175474e89094c44da98b954eedeac495271d0f-18427","token":{"derivedETH":"0.004247769552625996319955390793390432","id":"0x6b175474e89094c44da98b954eedeac495271d0f","symbol":"DAI"}},{"dailyVolumeToken":"313521.520254244890809231","date":1592006400,"id":"0x6b175474e89094c44da98b954eedeac495271d0f-18426","token":{"derivedETH":"0.004247769552625996319955390793390432","id":"0x6b175474e89094c44da98b954eedeac495271d0f","symbol":"DAI"}}]}}'
+      string: '{"data":{"tokenDayDatas":[{"dailyVolumeToken":"0.471071123529911389","date":1592092800,"id":"0x261efcdd24cea98652b9700800a13dfbca4103ff-18427","token":{"derivedETH":"7.379649782493822322047736710529888","id":"0x261efcdd24cea98652b9700800a13dfbca4103ff","symbol":"sXAU"}},{"dailyVolumeToken":"0.378588386666844109","date":1592006400,"id":"0x261efcdd24cea98652b9700800a13dfbca4103ff-18426","token":{"derivedETH":"7.379649782493822322047736710529888","id":"0x261efcdd24cea98652b9700800a13dfbca4103ff","symbol":"sXAU"}}]}}'
     http_version: 
   recorded_at: Sun, 14 Jun 2020 11:42:43 GMT
 recorded_with: VCR 4.0.0

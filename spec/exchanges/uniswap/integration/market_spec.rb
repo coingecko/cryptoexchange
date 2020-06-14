@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe 'Uniswap integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:dai_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: '0x6b175474e89094c44da98b954eedeac495271d0f', target: 'eth', market: 'uniswap') }
-  let(:sxau_usdc_pair) { Cryptoexchange::Models::MarketPair.new(base: '0x261efcdd24cea98652b9700800a13dfbca4103ff', target: 'usdc', market: 'uniswap') }
+  let(:sxau_usdc_pair) { Cryptoexchange::Models::MarketPair.new(base: '0x261efcdd24cea98652b9700800a13dfbca4103ff', target: 'eth', market: 'uniswap') }
 
   let(:filename) { Cryptoexchange::Credentials.send(:filename) }
 
@@ -14,16 +14,6 @@ RSpec.describe 'Uniswap integration specs' do
   describe "fetch pairs" do
     before do
       @pairs = client.pairs('uniswap')
-    end
-
-    it "has USDC target pair" do
-      expect(@pairs.select { |pair| pair.target_raw == "USDC" }.any?).to be true
-    end
-    it "has USDT target pair" do
-      expect(@pairs.select { |pair| pair.target_raw == "USDT" }.any?).to be true
-    end
-    it "has DAI target pair" do
-      expect(@pairs.select { |pair| pair.target_raw == "DAI" }.any?).to be true
     end
     it "has ETH target pair" do
       expect(@pairs.select { |pair| pair.target_raw == "ETH" }.any?).to be true
@@ -43,11 +33,11 @@ RSpec.describe 'Uniswap integration specs' do
     expect(ticker.payload).to_not be nil
   end
 
-  it 'fetch ticker sxau/usdc' do
+  it 'fetch ticker sxau/eth' do
     ticker = client.ticker(sxau_usdc_pair)
 
     expect(ticker.base).to eq '0X261EFCDD24CEA98652B9700800A13DFBCA4103FF'
-    expect(ticker.target).to eq 'USDC'
+    expect(ticker.target).to eq 'ETH'
     expect(ticker.market).to eq 'uniswap'
 
     expect(ticker.volume).to be_a Numeric
