@@ -20,7 +20,7 @@ module Cryptoexchange::Exchanges
 
           output = output["results"].select { |ticker| RECOGNIZED_TARGETS.include? ticker["assets"][1]["symbol"] }
           output.each do |pair|
-            base = pair["assets"][0]["symbol"]
+            base = pair["assets"][0]["address"]
             target = pair["assets"][1]["symbol"]
             target = "ETH" if pair["assets"][1]["symbol"] == "WETH" # Fix WETH as ETH
 

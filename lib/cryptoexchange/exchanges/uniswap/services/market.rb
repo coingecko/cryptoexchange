@@ -28,9 +28,9 @@ module Cryptoexchange::Exchanges
           eth_price_in_usd = dai_eth_ticker["assets"][0]["balance"] / dai_eth_ticker["assets"][1]["balance"]
 
           output.map do |pair|
-            base = pair["assets"][0]["symbol"]
+            base = pair["assets"][0]["address"]
             target = pair["assets"][1]["symbol"]
-            target = "ETH" if pair["assets"][1]["symbol"] == "WETH" # Fix WETH as ETH
+            target = "ETH" if target == "WETH" # Fix WETH as ETH
 
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: base,

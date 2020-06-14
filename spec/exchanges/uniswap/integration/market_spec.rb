@@ -2,8 +2,8 @@ require 'spec_helper'
 
 RSpec.describe 'Uniswap integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:dai_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'dai', target: 'eth', market: 'uniswap') }
-  let(:sxau_usdc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'sxau', target: 'usdc', market: 'uniswap') }
+  let(:dai_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: '0x6b175474e89094c44da98b954eedeac495271d0f', target: 'eth', market: 'uniswap') }
+  let(:sxau_usdc_pair) { Cryptoexchange::Models::MarketPair.new(base: '0x261efcdd24cea98652b9700800a13dfbca4103ff', target: 'usdc', market: 'uniswap') }
 
   let(:filename) { Cryptoexchange::Credentials.send(:filename) }
 
@@ -17,23 +17,23 @@ RSpec.describe 'Uniswap integration specs' do
     end
 
     it "has USDC target pair" do
-      expect(@pairs.select { |pair| pair.target == "USDC" }.any?).to be true
+      expect(@pairs.select { |pair| pair.target_raw == "USDC" }.any?).to be true
     end
     it "has USDT target pair" do
-      expect(@pairs.select { |pair| pair.target == "USDT" }.any?).to be true
+      expect(@pairs.select { |pair| pair.target_raw == "USDT" }.any?).to be true
     end
     it "has DAI target pair" do
-      expect(@pairs.select { |pair| pair.target == "DAI" }.any?).to be true
+      expect(@pairs.select { |pair| pair.target_raw == "DAI" }.any?).to be true
     end
     it "has ETH target pair" do
-      expect(@pairs.select { |pair| pair.target == "ETH" }.any?).to be true
+      expect(@pairs.select { |pair| pair.target_raw == "ETH" }.any?).to be true
     end
   end
 
   it 'fetch ticker dai/eth' do
     ticker = client.ticker(dai_eth_pair)
 
-    expect(ticker.base).to eq 'DAI'
+    expect(ticker.base).to eq '0X6B175474E89094C44DA98B954EEDEAC495271D0F'
     expect(ticker.target).to eq 'ETH'
     expect(ticker.market).to eq 'uniswap'
 
@@ -46,7 +46,7 @@ RSpec.describe 'Uniswap integration specs' do
   it 'fetch ticker sxau/usdc' do
     ticker = client.ticker(sxau_usdc_pair)
 
-    expect(ticker.base).to eq 'SXAU'
+    expect(ticker.base).to eq '0X261EFCDD24CEA98652B9700800A13DFBCA4103FF'
     expect(ticker.target).to eq 'USDC'
     expect(ticker.market).to eq 'uniswap'
 
