@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/coingecko/cryptoexchange.svg)](https://travis-ci.org/coingecko/cryptoexchange)
+# Cryptoexchange [UNMAINTAINED]
 
-# Cryptoexchange
+**Note: This public repository will no longer be maintained by the CoinGecko team.**
 
 Cryptoexchange is a rubygem for ruby developers to interact with over 200+ cryptocurrency exchange market data APIs in a single library.
 
