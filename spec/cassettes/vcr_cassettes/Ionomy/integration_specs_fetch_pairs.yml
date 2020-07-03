@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ionomy.com/api/v1/public/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ionomy.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Apr 2020 12:54:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc8fd26ff53b4a115a985c35b7654c2721588164879; expires=Fri, 29-May-20
+        12:54:39 GMT; path=/; domain=.ionomy.com; HttpOnly; SameSite=Lax; Secure
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=0; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Etag:
+      - W/"101c-hEcIxGnxq4qdjSF7boBMjPU118A"
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 58b92c415f00d224-MAN
+      Cf-Request-Id:
+      - '026799fcdb0000d224a4961200000001'
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"status":200,"message":null,"data":[{"market":"btc-dash","title":"Bitcoin:Dash","currencyBase":"btc","currencyMarket":"dash","orderMinSize":"0.00001000","buyFee":"0.20000000","sellFee":"0.20000000","inMaintenance":false},{"market":"btc-eth","title":"Bitcoin:Ethereum","currencyBase":"btc","currencyMarket":"eth","orderMinSize":"0.00001000","buyFee":"0.20000000","sellFee":"0.20000000","inMaintenance":false},{"market":"btc-pivx","title":"Bitcoin:Pivx","currencyBase":"btc","currencyMarket":"pivx","orderMinSize":"0.00001000","buyFee":"0.20000000","sellFee":"0.20000000","inMaintenance":false},{"market":"pivx-pivxsx","title":"Pivx:PivxSx","currencyBase":"pivx","currencyMarket":"pivxsx","orderMinSize":"0.10000000","buyFee":"0.50000000","sellFee":"0.50000000","inMaintenance":false},{"market":"btc-ltc","title":"Bitcoin:Litecoin","currencyBase":"btc","currencyMarket":"ltc","orderMinSize":"0.00001000","buyFee":"0.20000000","sellFee":"0.20000000","inMaintenance":false},{"market":"btc-ion","title":"Bitcoin:Ion","currencyBase":"btc","currencyMarket":"ion","orderMinSize":"0.00001000","buyFee":"0.20000000","sellFee":"0.20000000","inMaintenance":false},{"market":"btc-atoms","title":"Bitcoin:Atoms","currencyBase":"btc","currencyMarket":"atoms","orderMinSize":"0.00001000","buyFee":"0.00000000","sellFee":"0.40000000","inMaintenance":false},{"market":"ion-ionsx","title":"Ion:IonSx","currencyBase":"ion","currencyMarket":"ionsx","orderMinSize":"0.10000000","buyFee":"0.50000000","sellFee":"0.50000000","inMaintenance":false},{"market":"dash-dashsx","title":"Dash:DashSx","currencyBase":"dash","currencyMarket":"dashsx","orderMinSize":"0.00010000","buyFee":"0.50000000","sellFee":"0.50000000","inMaintenance":false},{"market":"btc-mnp","title":"Bitcoin:MNPCoin","currencyBase":"btc","currencyMarket":"mnp","orderMinSize":"0.00001000","buyFee":"0.20000000","sellFee":"0.20000000","inMaintenance":false},{"market":"btc-wgr","title":"Bitcoin:Wagerr","currencyBase":"btc","currencyMarket":"wgr","orderMinSize":"0.00001000","buyFee":"0.20000000","sellFee":"0.20000000","inMaintenance":false},{"market":"btc-ionsx","title":"Bitcoin:Ionsx","currencyBase":"btc","currencyMarket":"ionsx","orderMinSize":"0.00001000","buyFee":"0.50000000","sellFee":"0.50000000","inMaintenance":false},{"market":"ion-xdm","title":"ION:XDM","currencyBase":"ion","currencyMarket":"xdm","orderMinSize":"1.00000000","buyFee":"0.20000000","sellFee":"0.20000000","inMaintenance":false},{"market":"ion-atoms","title":"Ion:Atoms","currencyBase":"ion","currencyMarket":"atoms","orderMinSize":"1.00000000","buyFee":"0.00000000","sellFee":"0.40000000","inMaintenance":false},{"market":"btc-xdm","title":"Bitcoin:XDM","currencyBase":"btc","currencyMarket":"xdm","orderMinSize":"0.00001000","buyFee":"0.20000000","sellFee":"0.20000000","inMaintenance":false},{"market":"wgr-wgrsx","title":"Wagerr:Wgrsx","currencyBase":"wgr","currencyMarket":"wgrsx","orderMinSize":"0.10000000","buyFee":"0.50000000","sellFee":"0.50000000","inMaintenance":false},{"market":"btc-hive","title":"Bitcoin:HIVE","currencyBase":"btc","currencyMarket":"hive","orderMinSize":"0.00001000","buyFee":"0.20000000","sellFee":"0.20000000","inMaintenance":false},{"market":"btc-bytz","title":"Bitcoin:BYTZ","currencyBase":"btc","currencyMarket":"bytz","orderMinSize":"0.00001000","buyFee":"0.20000000","sellFee":"0.20000000","inMaintenance":false},{"market":"ion-hive","title":"Ion:Hive","currencyBase":"ion","currencyMarket":"hive","orderMinSize":"1.00000000","buyFee":"0.20000000","sellFee":"0.20000000","inMaintenance":false},{"market":"btc-steem","title":"Bitcoin:STEEM","currencyBase":"btc","currencyMarket":"steem","orderMinSize":"0.00001000","buyFee":"0.20000000","sellFee":"0.20000000","inMaintenance":false},{"market":"btc-hbd","title":"Bitcoin:HBD","currencyBase":"btc","currencyMarket":"hbd","orderMinSize":"0.00001000","buyFee":"0.20000000","sellFee":"0.20000000","inMaintenance":false},{"market":"btc-sbd","title":"Bitcoin:SBD","currencyBase":"btc","currencyMarket":"sbd","orderMinSize":"0.00001000","buyFee":"0.20000000","sellFee":"0.20000000","inMaintenance":false}]}'
+    http_version: 
+  recorded_at: Wed, 29 Apr 2020 12:54:39 GMT
+recorded_with: VCR 4.0.0

@@ -327,6 +327,7 @@ Or install it yourself as:
 | IndependentReserve| Y       | Y [x]      | N       |         | Y           | Y        |independent_reserve|       |
 | InfinityCoin      | Y       |            |         |         | Y           | Y        | infinity_coin     |       |
 | InstantBitex      | Y       | Y [x]      | Y       |         | Y           |          | instantbitex      |       |
+| ionomy            | Y       | Y          | Y       |         | Y           | Y        | ionomy            |       |
 | Iqfinex           | Y       | Y          | Y       |         | Y           | Y        | iqfinex           |       |
 | Ironex            | Y       |            |         |         | Y           |          | ironex            |       |
 | Itbit             | Y       | Y [x]      | Y       |         | User-Defined|          | itbit             |       |
