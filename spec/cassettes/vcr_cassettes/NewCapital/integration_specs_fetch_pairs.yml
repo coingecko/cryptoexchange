@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.new.capital/v1/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.new.capital
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 03 Jul 2019 11:08:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d44daa61adc8118f22f007d7f34c457241562152080; expires=Thu, 02-Jul-20
+        11:08:00 GMT; path=/; domain=.new.capital; HttpOnly; Secure
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4f086628d985bedd-FRA
+    body:
+      encoding: UTF-8
+      string: '[{"symbol":"BCH_TWINS","priceChange":"0","priceChangePercent":"0","lastPrice":"0","bidPrice":0,"askPrice":0,"openPrice":"0","highPrice":"0","lowPrice":"0","volume":"0.00000000","quoteVolume":"0.00000000","openTime":0,"closeTime":0,"firstId":0,"lastId":0,"count":0},{"symbol":"BTC_TWINS","priceChange":"-12409800","priceChangePercent":"-41.36627577","lastPrice":"17590000","bidPrice":"18000000","askPrice":"22000000","openPrice":"29999800","highPrice":"29999999","lowPrice":"17500000","volume":"0.41555907","quoteVolume":"9099404.59082880","openTime":1562073590,"closeTime":1562138583,"firstId":196,"lastId":276,"count":81},{"symbol":"FIX_TWINS","priceChange":"0.0000","priceChangePercent":"0","lastPrice":"0.0000","bidPrice":"1000.0000","askPrice":0,"openPrice":"0.0000","highPrice":"0.0000","lowPrice":"0.0000","volume":"0.00000000","quoteVolume":"0.00000000","openTime":0,"closeTime":0,"firstId":0,"lastId":0,"count":0},{"symbol":"LTC_TWINS","priceChange":"0.0000","priceChangePercent":"0","lastPrice":"0.0000","bidPrice":0,"askPrice":0,"openPrice":"0.0000","highPrice":"0.0000","lowPrice":"0.0000","volume":"0.00000000","quoteVolume":"0.00000000","openTime":0,"closeTime":0,"firstId":0,"lastId":0,"count":0},{"symbol":"XEM_TWINS","priceChange":"0.0000","priceChangePercent":"0","lastPrice":"0.0000","bidPrice":0,"askPrice":0,"openPrice":"0.0000","highPrice":"0.0000","lowPrice":"0.0000","volume":"0.00000000","quoteVolume":"0.00000000","openTime":0,"closeTime":0,"firstId":0,"lastId":0,"count":0}]'
+    http_version: 
+  recorded_at: Wed, 03 Jul 2019 11:08:01 GMT
+recorded_with: VCR 4.0.0
