@@ -221,6 +221,7 @@ Or install it yourself as:
 | Compound Finance  | Y       | N          | N       | N       | Y           | N        | compound_finance  |       |
 | COSS              | Y       |            |         |         | Y           | Y        | coss              |       |
 | Cpdax             | Y       | Y [x]      | Y       |         | Y           |          | cpdax             |       |
+| Cpufinex          | Y       | Y [x]      | Y       |         | Y           | Y        | cpufinex          |       |
 | CredoEx           | Y       |            |         |         | Y           |          | credoex           |       |
 | Crex24            | Y       | Y [x]      | Y       |         | Y           | Y        | crex24            |       |
 | CRXZone           | Y       | Y [x]      | Y       |         | Y           | Y        | crxzone           |       |
