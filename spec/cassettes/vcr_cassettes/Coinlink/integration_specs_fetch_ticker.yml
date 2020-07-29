@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://open-api.coinlink.co.kr/openApi/ticker?apiKey=TEST1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Secretheader:
+      - 06ebd3efa2bb6e9904452016edaa643c7ffa48f0f497feabb899ad898083c936
+      Connection:
+      - close
+      Host:
+      - open-api.coinlink.co.kr
+      User-Agent:
+      - http.rb/2.2.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 20 Apr 2018 07:19:04 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '449'
+      Connection:
+      - close
+      Set-Cookie:
+      - WMONID=Nc_qAa3ocqr; Expires=Sat, 20-Apr-2019 16:19:4 GMT; Path=/
+    body:
+      encoding: UTF-8
+      string: '{"status":"0","message":"정상처리","orderNumber":0,"data":[{"btc":{"date":1524208744,"close_price":"6750000"}},{"eth":{"date":1524208744,"close_price":"360100"}},{"etc":{"date":1524208744,"close_price":"0"}},{"ltc":{"date":1524208744,"close_price":"0"}},{"zec":{"date":1524208744,"close_price":"0"}},{"hsr":{"date":1524208744,"close_price":"4410"}},{"wtc":{"date":1524208744,"close_price":"8070"}},{"krm":{"date":1524208744,"close_price":"8"}}]}'
+    http_version: 
+  recorded_at: Fri, 20 Apr 2018 07:19:05 GMT
+recorded_with: VCR 3.0.3
