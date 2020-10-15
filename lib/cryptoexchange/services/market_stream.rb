@@ -1,6 +1,10 @@
 module Cryptoexchange
   module Services
     class MarketStream
+      def multiple_connections?
+        fail "Must define multiple_connections? as true or false"
+      end
+
       def url
         raise NotImplementedError, 'url method is not defined!'
       end

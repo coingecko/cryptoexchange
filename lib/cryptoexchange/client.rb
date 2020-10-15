@@ -194,10 +194,14 @@ module Cryptoexchange
     def fetch_stream(market_pair:, onopen: nil, onmessage:, onclose: nil, stream_type:)
       fail 'stream_type must be one of "market", "trade", "order_book"' unless %w(market trade order_book).include?(stream_type)
 
-      exchange         = market_pair.market
-      stream_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::#{StringHelper.camelize(stream_type)}Stream"
-      stream_class     = Object.const_get(stream_classname)
-      stream           = stream_class.new
+      exchange           = market_pair.market
+      stream_classname   = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::#{StringHelper.camelize(stream_type)}Stream"
+      stream_class       = Object.const_get(stream_classname)
+      stream             = stream_class.new
+
+      subscription_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Subscription"
+      subscription_class = Object.const_get(subscription_classname)
+      subscription       = subscription_class.new
 
       Thread.new do
         EM.run do
@@ -205,18 +209,23 @@ module Cryptoexchange
 
           ws.onopen do
             onopen.call if onopen
-            ws.send(stream.subscribe_event(market_pair))
+             if stream.multiple_connections?
+               ws.send(subscription.subscribe_event(market_pair))
+             else
+               ws.send(subscription.subscribe_event(self.pairs(exchange)))
+             end
           end
 
-          ws.onmessage do |message, _|
+          ws.onmessage do |message|
             message = JSON.parse(message)
 
-            if stream.valid_message?(message)
+            if stream.valid_message?(message, market_pair)
               onmessage.call(stream.parse_message(message, market_pair))
             end
           end
 
-          ws.onclose do
+          ws.onclose do |code|
+            puts "Code: #{code}"
             onclose.call if onclose
           end
         end

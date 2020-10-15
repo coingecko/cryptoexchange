@@ -3,6 +3,7 @@ module Cryptoexchange::Exchanges
     class Market < Cryptoexchange::Models::Market
       NAME = 'gdax'
       API_URL = 'https://api.gdax.com'
+      WS_URL = 'wss://ws-feed.pro.coinbase.com'
 
       def self.trade_page_url(args={})
         "https://pro.coinbase.com/trade/#{args[:base]}-#{args[:target]}"
