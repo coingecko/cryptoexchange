@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://exchange.drgx.io/cmc/public/orderbookCm?pair=drg_eth
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - exchange.drgx.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 24 Mar 2020 17:56:21 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '792'
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSELB=41076F071A4D5467FA79DEFB52FB48C8E92113E856F426869115B0173729FED900DEBF88A8893DB8C39ED0E1B43213196258E3B1CBFFC4C823092716457FB0E33FA0914D9C;PATH=/;MAX-AGE=1800
+      - AWSELBCORS=41076F071A4D5467FA79DEFB52FB48C8E92113E856F426869115B0173729FED900DEBF88A8893DB8C39ED0E1B43213196258E3B1CBFFC4C823092716457FB0E33FA0914D9C;PATH=/;MAX-AGE=1800;SECURE;SAMESITE=None
+      - __cfduid=dbe947ff1d9a0bce7ef8e76f360a54b2a1585072580; expires=Thu, 23-Apr-20
+        17:56:20 GMT; path=/; domain=.drgx.io; HttpOnly; SameSite=Lax; Secure
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - content-type, api-key, api-sign, auth-token
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, private, max-age=0
+      - no-cache="set-cookie"
+      Expires:
+      - Tue, 24 Mar 2020 17:56:21 GMT
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 579244ae7bf3d5a7-BOM
+    body:
+      encoding: UTF-8
+      string: '{"timestamp":1585031274,"asks":[["0.000295","1000"],["0.0003","1000"],["0.000305","1000"],["0.00031","1000"],["0.00033","1000"],["0.00034","1000"],["0.00045","50"],["0.000592","20000"],["0.000593","1982.24246503"],["0.0006","7414.78083637"],["0.00061","15200"],["0.00073","100"],["0.001","10000"],["0.00136","20000"],["0.0038","88"],["0.003995","4000.46209638"],["0.003996","50000"],["0.0051","20000"],["0.0054","50100"],["0.005499","100000"],["0.0055","150600"],["0.006","5700"],["0.013","25000"],["0.035","88"],["0.05","88"],["0.1","250000"],["0.999999","88"],["1","8321"]],"bids":[["0.000138","3758.55072464"],["0.000137","4000"],["0.000124","14427.05201613"],["0.000123","11382"],["0.00011","2161.66451314"],["0.000106","1345"],["0.000104","5000"],["0.000103","287"],["0.000101","5000"]]}'
+    http_version: 
+  recorded_at: Tue, 24 Mar 2020 17:56:04 GMT
+recorded_with: VCR 4.0.0
