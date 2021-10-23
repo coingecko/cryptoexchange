@@ -497,6 +497,7 @@ Or install it yourself as:
 | Worldcore         | Y       | Y          | Y       |         | Y           | Y        | worldcore         |       |
 | Xcoex             | Y       | Y [x]      |         |         | Y           | Y        | xcoex             |       |
 | Xfutures          | Y       | Y [x]      | Y       |         | Y           | Y        | xfutures          |       |
+| XS2               | Y       | Y          | Y       |         | Y           | Y        | xs2               |
 | Xt                | Y       | Y [x]      | Y       |         | Y           | Y        | xt                |       |
 | Yobit             | Y       | Y [x]      |         |         | Y           | Y        | yobit             |       |
 | Yuanbao           | Y       |            |         |         | User-Defined|          | yuanbao           |       |
