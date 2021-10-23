@@ -9,24 +9,26 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output['stats'], market_pair)
+          output = super ticker_url(market_pair)
+          adapt(output, market_pair)
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Crytrex::Market::API_URL}/stats?market=#{market_pair.target}&currency=#{market_pair.base}"
+          "#{Cryptoexchange::Exchanges::Crytrex::Market::API_URL}/ticker?market=#{market_pair.base}_#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
+          output           = output.first[1]
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Crytrex::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['last_price'])
-          ticker.change    = NumericHelper.to_d(output['daily_change_percent'])
-          ticker.ask       = NumericHelper.to_d(output['ask'])
-          ticker.bid       = NumericHelper.to_d(output['bid'])
-          ticker.volume    = NumericHelper.to_d(output['24h_volume'])
+          ticker.bid       = NumericHelper.to_d(output['buy'])
+          ticker.ask       = NumericHelper.to_d(output['sell'])
+          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.volume    = NumericHelper.to_d(output['vol'])
+          ticker.high      = NumericHelper.to_d(output['high'])
+          ticker.low       = NumericHelper.to_d(output['low'])
           ticker.timestamp = nil
           ticker.payload   = output
           ticker

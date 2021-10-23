@@ -1,0 +1,145 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fapi.binance.com/fapi/v1/exchangeInfo
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - fapi.binance.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '21153'
+      Connection:
+      - close
+      Date:
+      - Fri, 12 Jun 2020 07:15:30 GMT
+      Server:
+      - Tengine
+      Vary:
+      - Accept-Encoding
+      X-Mbx-Used-Weight-1m:
+      - '1'
+      X-Response-Time:
+      - 6ms
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - "*,clienttype,Content-Type,lang,x-ui-request-trace"
+      Content-Security-Policy:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 92fc9badf1364c8e80a7dd3e962fd998.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50
+      X-Amz-Cf-Id:
+      - M_D6KOCaIYr4k0--IrWJl9JLYUBOZ06Yr1gCvjd5kAe6D-eQGv2Aow==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timezone":"UTC","serverTime":1591946130799,"rateLimits":[{"rateLimitType":"REQUEST_WEIGHT","interval":"MINUTE","intervalNum":1,"limit":2400},{"rateLimitType":"ORDERS","interval":"MINUTE","intervalNum":1,"limit":1200}],"exchangeFilters":[],"symbols":[{"symbol":"BTCUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"BTC","quoteAsset":"USDT","pricePrecision":2,"quantityPrecision":3,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.01","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.01"},{"stepSize":"0.001","filterType":"LOT_SIZE","maxQty":"1000","minQty":"0.001"},{"stepSize":"0.001","filterType":"MARKET_LOT_SIZE","maxQty":"2366.180","minQty":"0.001"},{"limit":0,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"ETHUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"ETH","quoteAsset":"USDT","pricePrecision":2,"quantityPrecision":3,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.01","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.01"},{"stepSize":"0.001","filterType":"LOT_SIZE","maxQty":"10000","minQty":"0.001"},{"stepSize":"0.001","filterType":"MARKET_LOT_SIZE","maxQty":"41046.600","minQty":"0.001"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"BCHUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"BCH","quoteAsset":"USDT","pricePrecision":2,"quantityPrecision":3,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.01","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.01"},{"stepSize":"0.001","filterType":"LOT_SIZE","maxQty":"10000","minQty":"0.001"},{"stepSize":"0.001","filterType":"MARKET_LOT_SIZE","maxQty":"13525.090","minQty":"0.001"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"XRPUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"XRP","quoteAsset":"USDT","pricePrecision":4,"quantityPrecision":1,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.0001","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.0001"},{"stepSize":"0.1","filterType":"LOT_SIZE","maxQty":"1000000","minQty":"0.1"},{"stepSize":"0.1","filterType":"MARKET_LOT_SIZE","maxQty":"24578561.9","minQty":"0.1"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"EOSUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"EOS","quoteAsset":"USDT","pricePrecision":3,"quantityPrecision":1,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.001","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.001"},{"stepSize":"0.1","filterType":"LOT_SIZE","maxQty":"1000000","minQty":"0.1"},{"stepSize":"0.1","filterType":"MARKET_LOT_SIZE","maxQty":"2153868.3","minQty":"0.1"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"LTCUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"LTC","quoteAsset":"USDT","pricePrecision":2,"quantityPrecision":3,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.01","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.01"},{"stepSize":"0.001","filterType":"LOT_SIZE","maxQty":"10000","minQty":"0.001"},{"stepSize":"0.001","filterType":"MARKET_LOT_SIZE","maxQty":"106798.832","minQty":"0.001"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"TRXUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"TRX","quoteAsset":"USDT","pricePrecision":5,"quantityPrecision":0,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.00001","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.00001"},{"stepSize":"1","filterType":"LOT_SIZE","maxQty":"10000000","minQty":"1"},{"stepSize":"1","filterType":"MARKET_LOT_SIZE","maxQty":"205343512","minQty":"1"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"ETCUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"ETC","quoteAsset":"USDT","pricePrecision":3,"quantityPrecision":2,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.001","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.001"},{"stepSize":"0.01","filterType":"LOT_SIZE","maxQty":"100000","minQty":"0.01"},{"stepSize":"0.01","filterType":"MARKET_LOT_SIZE","maxQty":"573265.80","minQty":"0.01"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"LINKUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"LINK","quoteAsset":"USDT","pricePrecision":3,"quantityPrecision":2,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.001","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.001"},{"stepSize":"0.01","filterType":"LOT_SIZE","maxQty":"100000","minQty":"0.01"},{"stepSize":"0.01","filterType":"MARKET_LOT_SIZE","maxQty":"1559117.56","minQty":"0.01"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"XLMUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"XLM","quoteAsset":"USDT","pricePrecision":5,"quantityPrecision":0,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.00001","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.00001"},{"stepSize":"1","filterType":"LOT_SIZE","maxQty":"10000000","minQty":"1"},{"stepSize":"1","filterType":"MARKET_LOT_SIZE","maxQty":"37362428","minQty":"1"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"ADAUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"ADA","quoteAsset":"USDT","pricePrecision":5,"quantityPrecision":0,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.00001","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.00001"},{"stepSize":"1","filterType":"LOT_SIZE","maxQty":"10000000","minQty":"1"},{"stepSize":"1","filterType":"MARKET_LOT_SIZE","maxQty":"42882463","minQty":"1"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"XMRUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"XMR","quoteAsset":"USDT","pricePrecision":2,"quantityPrecision":3,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.01","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.01"},{"stepSize":"0.001","filterType":"LOT_SIZE","maxQty":"10000","minQty":"0.001"},{"stepSize":"0.001","filterType":"MARKET_LOT_SIZE","maxQty":"39047.500","minQty":"0.001"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"DASHUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"DASH","quoteAsset":"USDT","pricePrecision":2,"quantityPrecision":3,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.01","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.01"},{"stepSize":"0.001","filterType":"LOT_SIZE","maxQty":"10000","minQty":"0.001"},{"stepSize":"0.001","filterType":"MARKET_LOT_SIZE","maxQty":"23861.582","minQty":"0.001"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"ZECUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"ZEC","quoteAsset":"USDT","pricePrecision":2,"quantityPrecision":3,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.01","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.01"},{"stepSize":"0.001","filterType":"LOT_SIZE","maxQty":"10000","minQty":"0.001"},{"stepSize":"0.001","filterType":"MARKET_LOT_SIZE","maxQty":"55713.848","minQty":"0.001"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"XTZUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"XTZ","quoteAsset":"USDT","pricePrecision":3,"quantityPrecision":1,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.001","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.001"},{"stepSize":"0.1","filterType":"LOT_SIZE","maxQty":"1000000","minQty":"0.1"},{"stepSize":"0.1","filterType":"MARKET_LOT_SIZE","maxQty":"1771778.9","minQty":"0.1"},{"limit":0,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"BNBUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"BNB","quoteAsset":"USDT","pricePrecision":3,"quantityPrecision":2,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.001","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.001"},{"stepSize":"0.01","filterType":"LOT_SIZE","maxQty":"100000","minQty":"0.01"},{"stepSize":"0.01","filterType":"MARKET_LOT_SIZE","maxQty":"220161.46","minQty":"0.01"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"ATOMUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"ATOM","quoteAsset":"USDT","pricePrecision":3,"quantityPrecision":2,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.001","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.001"},{"stepSize":"0.01","filterType":"LOT_SIZE","maxQty":"100000","minQty":"0.01"},{"stepSize":"0.01","filterType":"MARKET_LOT_SIZE","maxQty":"785508.76","minQty":"0.01"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"ONTUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"ONT","quoteAsset":"USDT","pricePrecision":4,"quantityPrecision":1,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.0001","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.0001"},{"stepSize":"0.1","filterType":"LOT_SIZE","maxQty":"1000000","minQty":"0.1"},{"stepSize":"0.1","filterType":"MARKET_LOT_SIZE","maxQty":"3699939.1","minQty":"0.1"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"IOTAUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"IOTA","quoteAsset":"USDT","pricePrecision":4,"quantityPrecision":1,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.0001","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.0001"},{"stepSize":"0.1","filterType":"LOT_SIZE","maxQty":"1000000","minQty":"0.1"},{"stepSize":"0.1","filterType":"MARKET_LOT_SIZE","maxQty":"9305425.4","minQty":"0.1"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"BATUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"BAT","quoteAsset":"USDT","pricePrecision":4,"quantityPrecision":1,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.0001","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.0001"},{"stepSize":"0.1","filterType":"LOT_SIZE","maxQty":"1000000","minQty":"0.1"},{"stepSize":"0.1","filterType":"MARKET_LOT_SIZE","maxQty":"9944294.4","minQty":"0.1"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"VETUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"VET","quoteAsset":"USDT","pricePrecision":6,"quantityPrecision":0,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.000001","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.000001"},{"stepSize":"1","filterType":"LOT_SIZE","maxQty":"10000000","minQty":"1"},{"stepSize":"1","filterType":"MARKET_LOT_SIZE","maxQty":"191830016","minQty":"1"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"NEOUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"NEO","quoteAsset":"USDT","pricePrecision":3,"quantityPrecision":2,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.001","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.001"},{"stepSize":"0.01","filterType":"LOT_SIZE","maxQty":"100000","minQty":"0.01"},{"stepSize":"0.01","filterType":"MARKET_LOT_SIZE","maxQty":"209070.57","minQty":"0.01"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"QTUMUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"QTUM","quoteAsset":"USDT","pricePrecision":3,"quantityPrecision":1,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.001","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.001"},{"stepSize":"0.1","filterType":"LOT_SIZE","maxQty":"1000000","minQty":"0.1"},{"stepSize":"0.1","filterType":"MARKET_LOT_SIZE","maxQty":"1139212.2","minQty":"0.1"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"IOSTUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"IOST","quoteAsset":"USDT","pricePrecision":6,"quantityPrecision":0,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.000001","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.000001"},{"stepSize":"1","filterType":"LOT_SIZE","maxQty":"10000000","minQty":"1"},{"stepSize":"1","filterType":"MARKET_LOT_SIZE","maxQty":"211268684","minQty":"1"},{"limit":200,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.7000","multiplierUp":"1.3000","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"THETAUSDT","status":"TRADING","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"THETA","quoteAsset":"USDT","pricePrecision":4,"quantityPrecision":1,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.0001","maxPrice":"1000","filterType":"PRICE_FILTER","tickSize":"0.0001"},{"stepSize":"0.1","filterType":"LOT_SIZE","maxQty":"1000000","minQty":"0.1"},{"stepSize":"0.1","filterType":"MARKET_LOT_SIZE","maxQty":"11240774.8","minQty":"0.1"},{"limit":0,"filterType":"MAX_NUM_ORDERS"},{"limit":0,"filterType":"MAX_NUM_ALGO_ORDERS"},{"multiplierDown":"0.8500","multiplierUp":"1.1500","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]}]}'
+    http_version: 
+  recorded_at: Fri, 12 Jun 2020 07:15:27 GMT
+- request:
+    method: get
+    uri: https://dapi.binance.com/dapi/v1/exchangeInfo
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - dapi.binance.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2100'
+      Connection:
+      - close
+      Date:
+      - Fri, 12 Jun 2020 07:15:31 GMT
+      Server:
+      - Tengine
+      Vary:
+      - Accept-Encoding
+      X-Mbx-Used-Weight-1m:
+      - '1'
+      X-Response-Time:
+      - 0ms
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - "*,clienttype,Content-Type,lang,x-ui-request-trace"
+      Content-Security-Policy:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 82362d21bf48fb5f7ef1503593cf6dea.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50
+      X-Amz-Cf-Id:
+      - Afg-lZ8_zHIVaehpGv-liIIvkpltf-pE9dGKXU-3dT_0y58pmUep0A==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timezone":"UTC","serverTime":1591946131195,"rateLimits":[{"rateLimitType":"REQUEST_WEIGHT","interval":"MINUTE","intervalNum":1,"limit":2400},{"rateLimitType":"ORDERS","interval":"MINUTE","intervalNum":1,"limit":1200}],"exchangeFilters":[],"symbols":[{"symbol":"BTCUSD_200925","pair":"BTCUSD","contractType":"CURRENT_QUARTER","deliveryDate":1601020800000,"onboardDate":1591689600000,"contractStatus":"TRADING","contractSize":100,"marginAsset":"BTC","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"BTC","quoteAsset":"USD","pricePrecision":1,"quantityPrecision":0,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.1","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.1"},{"stepSize":"1","filterType":"LOT_SIZE","maxQty":"100000","minQty":"1"},{"stepSize":"1","filterType":"MARKET_LOT_SIZE","maxQty":"100000","minQty":"1"},{"limit":0,"filterType":"MAX_NUM_ORDERS"},{"multiplierDown":"0.8500","multiplierUp":"1.1500","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]},{"symbol":"BTCUSD_201225","pair":"BTCUSD","contractType":"","deliveryDate":1608883200000,"onboardDate":1593158400000,"contractStatus":"PENDING_TRADING","contractSize":100,"marginAsset":"BTC","maintMarginPercent":"2.5000","requiredMarginPercent":"5.0000","baseAsset":"BTC","quoteAsset":"USD","pricePrecision":1,"quantityPrecision":0,"baseAssetPrecision":8,"quotePrecision":8,"filters":[{"minPrice":"0.1","maxPrice":"100000","filterType":"PRICE_FILTER","tickSize":"0.1"},{"stepSize":"1","filterType":"LOT_SIZE","maxQty":"100000","minQty":"1"},{"stepSize":"1","filterType":"MARKET_LOT_SIZE","maxQty":"100000","minQty":"1"},{"limit":0,"filterType":"MAX_NUM_ORDERS"},{"multiplierDown":"0.8500","multiplierUp":"1.1500","multiplierDecimal":"4","filterType":"PERCENT_PRICE"}],"orderTypes":["LIMIT","MARKET","STOP","STOP_MARKET","TAKE_PROFIT","TAKE_PROFIT_MARKET","TRAILING_STOP_MARKET"],"timeInForce":["GTC","IOC","FOK","GTX"]}]}'
+    http_version: 
+  recorded_at: Fri, 12 Jun 2020 07:15:27 GMT
+recorded_with: VCR 4.0.0

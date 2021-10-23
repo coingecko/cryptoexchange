@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.fmex.com/v2/market/ticker/btcusd_p
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.fmex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 30 Nov 2019 07:47:25 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '162'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":0,"data":{"seq":980518546020,"type":"ticker.btcusd_p","ticker":[7750.0,1.0,7750.0,40.0,7750.5,68239.0,7466.0,7860.0,7421.5,47052101,6127.736603514908]}}'
+    http_version: 
+  recorded_at: Sat, 30 Nov 2019 07:47:22 GMT
+recorded_with: VCR 4.0.0

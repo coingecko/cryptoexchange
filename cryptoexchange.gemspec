@@ -21,8 +21,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.15"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "bundler", "~> 2.1.4"
+  spec.add_development_dependency "rake", "~> 13.0.1"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "rb-readline"
@@ -30,7 +30,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "webmock", '~> 3.3.0'
   spec.add_development_dependency "byebug"
 
-  spec.add_dependency "http", '~> 3.0.0'
+  spec.add_dependency "http", '5.0.0.pre'
+  spec.add_dependency "graphql", '1.10.6'
+  spec.add_dependency "graphql-client", '0.16.0'
   spec.add_dependency "lru_redux"
   spec.add_dependency "websocket-eventmachine-client"
 end

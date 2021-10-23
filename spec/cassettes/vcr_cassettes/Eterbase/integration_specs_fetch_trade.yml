@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.eterbase.exchange/api/markets/33/trades?limit=100
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.eterbase.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4410'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - origin, content-type, accept, authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS, HEAD
+      X-Ratelimit-Remaining-Second:
+      - '19'
+      X-Ratelimit-Limit-Second:
+      - '20'
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Dns-Prefetch-Control:
+      - 'on'
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      Content-Security-Policy:
+      - upgrade-insecure-requests
+      Referrer-Policy:
+      - same-origin
+      Feature-Policy:
+      - accelerometer 'self';ambient-light-sensor 'self';autoplay 'self';camera 'self';encrypted-media
+        'self';fullscreen 'self';geolocation 'self';gyroscope 'self';magnetometer
+        'self';microphone 'self';midi 'self';payment 'self';picture-in-picture 'self';speaker
+        'self';sync-xhr 'self';unsized-media 'self';usb 'self';vertical-scroll 'self';vibrate
+        'self';vr 'self'
+    body:
+      encoding: UTF-8
+      string: '[{"id":6207961,"side":1,"price":275,"executedAt":1562277269630,"qty":1.2689433,"makerId":"f82f3a71-832d-4b46-8dcb-f6e708f09887","takerId":"c354f528-a664-45c6-92a5-59da05ba54b0"},{"id":6207937,"side":1,"price":275,"executedAt":1562277089482,"qty":0.8666444,"makerId":"f82f3a71-832d-4b46-8dcb-f6e708f09887","takerId":"8ab9c67f-737e-42cb-b35c-05640b856017"},{"id":6207345,"side":1,"price":276,"executedAt":1562273051373,"qty":0.05,"makerId":"ee0d2b66-8442-46e9-a97c-7c5189138891","takerId":"b9ce7964-9985-4b8a-a4b9-5798f6e80a77"},{"id":6207313,"side":2,"price":281,"executedAt":1562273008809,"qty":1.05414915,"makerId":"00ec8bb2-a452-4324-bce8-662487a5a160","takerId":"3387f74b-e2a5-4404-9b6f-0b783256ebe4"},{"id":6205512,"side":1,"price":290,"executedAt":1562261782813,"qty":0.19496115,"makerId":"601e2dae-86d2-4e72-89fc-09efd0fbd19f","takerId":"00ec8bb2-a452-4324-bce8-662487a5a160"},{"id":6198152,"side":1,"price":290,"executedAt":1562172323477,"qty":0.25331471,"makerId":"601e2dae-86d2-4e72-89fc-09efd0fbd19f","takerId":"207d5c35-bcfe-445d-8335-2edf7bff2fe1"},{"id":6197070,"side":1,"price":292,"executedAt":1562164141067,"qty":3.4246575,"makerId":"26cc7f19-8d3a-48a2-98e3-55626c917584","takerId":"41fcd004-0156-4ad6-9f76-258aa1207e45"},{"id":6047496,"side":2,"price":330,"executedAt":1561937656902,"qty":0.41818181,"makerId":"762fbc4d-23c3-4c91-ab83-4ce7cf659834","takerId":"f8c02484-ad57-424f-9242-f57517e26151"},{"id":6044260,"side":1,"price":300,"executedAt":1561936089078,"qty":2.1162091,"makerId":"802a9448-e804-41b9-9a59-35aa63734e64","takerId":"f2f271de-3c27-4878-94f4-a17a4713f0d4"},{"id":6044244,"side":1,"price":305,"executedAt":1561936089078,"qty":1.6393442,"makerId":"71766899-fcb3-4415-86c8-7dd2b9c1bbe3","takerId":"f2f271de-3c27-4878-94f4-a17a4713f0d4"},{"id":6044228,"side":1,"price":310,"executedAt":1561936089078,"qty":0.0089177,"makerId":"706ef384-d3f7-4233-9eae-3c10ec03c971","takerId":"f2f271de-3c27-4878-94f4-a17a4713f0d4"},{"id":6037070,"side":1,"price":310,"executedAt":1561932566335,"qty":0.83543025,"makerId":"706ef384-d3f7-4233-9eae-3c10ec03c971","takerId":"0541a18e-ec23-41ab-b3b6-63c9bf60f4b1"},{"id":6034250,"side":1,"price":310,"executedAt":1561931192050,"qty":0.44597455,"makerId":"706ef384-d3f7-4233-9eae-3c10ec03c971","takerId":"eb3a7015-a6e3-40a0-9cf1-ac2f1781ed29"},{"id":6019382,"side":1,"price":300,"executedAt":1561924208468,"qty":0.0504575,"makerId":"802a9448-e804-41b9-9a59-35aa63734e64","takerId":"5be97d9a-6bc8-47b4-a246-51c1726eba2d"},{"id":6019366,"side":1,"price":310,"executedAt":1561924208468,"qty":0.00954251,"makerId":"8386651c-b14a-4b47-b02f-1dc27b479d67","takerId":"5be97d9a-6bc8-47b4-a246-51c1726eba2d"},{"id":6019347,"side":1,"price":310,"executedAt":1561924199382,"qty":0.36307693,"makerId":"8386651c-b14a-4b47-b02f-1dc27b479d67","takerId":"48bbbd14-8b91-4bea-882c-f79781130950"},{"id":6019331,"side":1,"price":312,"executedAt":1561924199382,"qty":0.00692307,"makerId":"4e0ce112-8cf9-4f5b-94b3-8bde3663fb41","takerId":"48bbbd14-8b91-4bea-882c-f79781130950"},{"id":6019312,"side":1,"price":312,"executedAt":1561924188694,"qty":0.57,"makerId":"4e0ce112-8cf9-4f5b-94b3-8bde3663fb41","takerId":"8c80572a-0ca2-4125-bd6e-e38398b1a1ad"},{"id":5847466,"side":1,"price":310,"executedAt":1561834901430,"qty":0.24028378,"makerId":"8386651c-b14a-4b47-b02f-1dc27b479d67","takerId":"3bf4f68c-0de8-4f17-b098-a89d5ecdd57c"},{"id":5847450,"side":1,"price":315,"executedAt":1561834901430,"qty":0.15971622,"makerId":"a6aea950-44ae-4124-8aaf-7ec03122c65a","takerId":"3bf4f68c-0de8-4f17-b098-a89d5ecdd57c"},{"id":5820043,"side":1,"price":315,"executedAt":1561821022611,"qty":2.940753,"makerId":"a6aea950-44ae-4124-8aaf-7ec03122c65a","takerId":"34158d15-15d3-4b2b-a4d4-3682eea8bda4"},{"id":5819707,"side":2,"price":349,"executedAt":1561820656868,"qty":0.1,"makerId":"15a1a64f-7ba7-4f48-b947-070eea79820f","takerId":"58b795d3-7687-4558-a146-1f78f4162de9"},{"id":5818955,"side":1,"price":315,"executedAt":1561820149058,"qty":0.07413388,"makerId":"a6aea950-44ae-4124-8aaf-7ec03122c65a","takerId":"5895034f-6ac3-4b36-9452-c06cd9d397f5"},{"id":5818932,"side":1,"price":320,"executedAt":1561820140043,"qty":3.125,"makerId":"abb84bea-1cf6-4799-bbf7-ebfcba427d66","takerId":"35e79549-4ec6-4069-9b28-596764c196e7"},{"id":5367632,"side":1,"price":31.1,"executedAt":1561293559211,"qty":1,"makerId":"742fe67a-1652-4cb3-b0a5-f8a8f29a34c1","takerId":"e698db2d-a43c-488e-86b0-9b5dcc5a4eec"}]'
+    http_version: 
+  recorded_at: Fri, 05 Jul 2019 04:28:55 GMT
+recorded_with: VCR 4.0.0

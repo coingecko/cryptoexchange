@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dex-trade.com/v1/coingecko/deals?symbol=btcusd
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dex-trade.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Jul 2019 07:47:21 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=lh4jcmtsbhemn1d5g9f3totgfs; path=/; HttpOnly
+      - __cfduid=d3ed99b190681c726e2f7b6a22f45a07e1563522440; expires=Sat, 18-Jul-20
+        07:47:20 GMT; path=/; domain=.dex-trade.com; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4f8b1637bdefcc7f-WAW
+    body:
+      encoding: UTF-8
+      string: '[{"direction":"BUY","price":10362.5629,"amount":0.01644,"trade_date":1563522423000},{"direction":"BUY","price":10333.97353,"amount":0.01595,"trade_date":1563521057000},{"direction":"BUY","price":10326.41729,"amount":0.01878,"trade_date":1563521915000},{"direction":"BUY","price":10307.07884,"amount":0.01575,"trade_date":1563521128000},{"direction":"BUY","price":10264.97773,"amount":0.02942,"trade_date":1563521237000},{"direction":"BUY","price":10261.26241,"amount":0.0322,"trade_date":1563521255000},{"direction":"BUY","price":10233.36315,"amount":0.02949,"trade_date":1563521273000},{"direction":"BUY","price":10208.56811,"amount":0.02934,"trade_date":1563521019000},{"direction":"BUY","price":10202.73872,"amount":0.03159,"trade_date":1563521903000},{"direction":"BUY","price":10193.32172,"amount":0.03026,"trade_date":1563521940000},{"direction":"BUY","price":10168.67684,"amount":0.03126,"trade_date":1563520859000},{"direction":"BUY","price":10148.74427,"amount":0.0316,"trade_date":1563522321000},{"direction":"BUY","price":10134.45468,"amount":0.03039,"trade_date":1563521693000},{"direction":"BUY","price":10112.4329,"amount":0.02875,"trade_date":1563522305000},{"direction":"BUY","price":10086.2337,"amount":0.03822,"trade_date":1563521974000},{"direction":"BUY","price":10069.14566,"amount":0.039,"trade_date":1563521239000},{"direction":"BUY","price":10063.54631,"amount":0.03837,"trade_date":1563521064000},{"direction":"BUY","price":10030.79489,"amount":0.03967,"trade_date":1563520981000},{"direction":"BUY","price":10027.08832,"amount":0.03947,"trade_date":1563520924000},{"direction":"BUY","price":10025.15233,"amount":0.03948,"trade_date":1563521983000},{"direction":"BUY","price":10004.17426,"amount":0.03941,"trade_date":1563520900000},{"direction":"BUY","price":10002.16681,"amount":0.03859,"trade_date":1563520879000},{"direction":"BUY","price":9979.21568,"amount":0.03955,"trade_date":1563522187000},{"direction":"BUY","price":9973.62654,"amount":0.03887,"trade_date":1563522004000},{"direction":"SELL","price":10985.25326,"amount":0.0393,"trade_date":1563522366000},{"direction":"SELL","price":10982.42754,"amount":0.03991,"trade_date":1563522433000},{"direction":"SELL","price":10970.87864,"amount":0.03922,"trade_date":1563522088000},{"direction":"SELL","price":10970.04227,"amount":0.0389,"trade_date":1563521291000},{"direction":"SELL","price":10965.12767,"amount":0.03945,"trade_date":1563521911000},{"direction":"SELL","price":10916.49853,"amount":0.03854,"trade_date":1563520736000},{"direction":"SELL","price":10885.77368,"amount":0.03884,"trade_date":1563521661000},{"direction":"SELL","price":10872.8998,"amount":0.03982,"trade_date":1563521529000},{"direction":"SELL","price":10857.04126,"amount":0.03942,"trade_date":1563521719000},{"direction":"SELL","price":10853.77372,"amount":0.03894,"trade_date":1563522276000},{"direction":"SELL","price":10844.90038,"amount":0.0288,"trade_date":1563521667000},{"direction":"SELL","price":10838.80161,"amount":0.03956,"trade_date":1563522229000},{"direction":"SELL","price":10821.30223,"amount":0.03115,"trade_date":1563521676000},{"direction":"SELL","price":10795.52817,"amount":0.03207,"trade_date":1563521980000},{"direction":"SELL","price":10769.42181,"amount":0.03005,"trade_date":1563522071000},{"direction":"SELL","price":10764.93879,"amount":0.03058,"trade_date":1563522242000},{"direction":"SELL","price":10720.30934,"amount":0.03231,"trade_date":1563522199000},{"direction":"SELL","price":10713.44063,"amount":0.03171,"trade_date":1563522172000},{"direction":"SELL","price":10630.0443,"amount":0.0179,"trade_date":1563520767000},{"direction":"SELL","price":10613.49305,"amount":0.01762,"trade_date":1563520917000},{"direction":"SELL","price":10593.39086,"amount":0.01828,"trade_date":1563521683000},{"direction":"SELL","price":10573.93278,"amount":0.01824,"trade_date":1563521967000}]'
+    http_version: 
+  recorded_at: Fri, 19 Jul 2019 07:47:25 GMT
+recorded_with: VCR 4.0.0

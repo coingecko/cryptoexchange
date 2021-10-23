@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.birake.com/ppppp
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.birake.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Thu, 16 May 2019 13:06:36 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d63c9becf13b8de5659596bf05c4c5bac1558011995; expires=Fri, 15-May-20
+        13:06:35 GMT; path=/; domain=.birake.com; HttpOnly
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d7d91de0ea9d433-BUD
+    body:
+      encoding: ASCII-8BIT
+      string: "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>404
+        Not Found</h1></center>\r\n<hr><center>nginx/1.14.1</center>\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Thu, 16 May 2019 13:06:38 GMT
+recorded_with: VCR 4.0.0

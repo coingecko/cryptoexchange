@@ -14,8 +14,8 @@ module Cryptoexchange::Exchanges
           market_pairs = []
           output.each do |pair|
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair[0..2],
-                              target: pair[3..-1],
+                              base: pair['base'],
+                              target: pair['quote'],
                               market: Alterdice::Market::NAME
                             )
           end

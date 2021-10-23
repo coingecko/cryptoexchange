@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.crex24.com/CryptoExchangeService/BotPublic/ReturnOrderBook?request=%5BPairName=BTC_DOGE%5D
+    uri: https://api.crex24.com/v2/public//orderBook?instrument=DOGE-BTC
     body:
       encoding: UTF-8
       string: ''
@@ -12,14 +12,14 @@ http_interactions:
       Host:
       - api.crex24.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Fri, 30 Mar 2018 06:46:52 GMT
+      - Thu, 12 Dec 2019 07:52:52 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,354 +27,224 @@ http_interactions:
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=de2c8ac566276b00b92a9b293caad2b221522392411; expires=Sat, 30-Mar-19
-        06:46:51 GMT; path=/; domain=.crex24.com; HttpOnly; Secure
-      Cache-Control:
-      - private
+      - __cfduid=df277da5bf189b3b2f5001ba9e4e479a41576137171; expires=Sat, 11-Jan-20
+        07:52:51 GMT; path=/; domain=.crex24.com; HttpOnly
       Vary:
       - Accept-Encoding
-      Access-Control-Allow-Origin:
-      - "*"
+      Cache-Control:
+      - public, max-age=1
+      Cf-Cache-Status:
+      - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 40389f1c5bdba2a8-HKG
+      - 543e1f0b3d1d2ceb-KUL
     body:
       encoding: UTF-8
-      string: "{\r\n  \"Error\": null,\r\n  \"BuyOrders\": [\r\n    {\r\n      \"Id\":
-        0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000384000000,\r\n      \"CoinCount\": 1427.000000000000000,\r\n      \"AccumulateMoneyVolume\":
-        0.000547968000,\r\n      \"AccumulateMoneyCount\": 1427.000000000000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
-        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000383000000,\r\n      \"CoinCount\": 5996.000000000000000,\r\n      \"AccumulateMoneyVolume\":
-        0.002844436000,\r\n      \"AccumulateMoneyCount\": 7423.000000000000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
-        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000382000000,\r\n      \"CoinCount\": 17539.000000000000000,\r\n      \"AccumulateMoneyVolume\":
-        0.009544334000,\r\n      \"AccumulateMoneyCount\": 24962.000000000000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
-        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000381000000,\r\n      \"CoinCount\": 13261.000000000000000,\r\n      \"AccumulateMoneyVolume\":
-        0.014596775000,\r\n      \"AccumulateMoneyCount\": 38223.000000000000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
-        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000380000000,\r\n      \"CoinCount\": 22.000000000000000,\r\n      \"AccumulateMoneyVolume\":
-        0.014605135000,\r\n      \"AccumulateMoneyCount\": 38245.000000000000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
-        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000375000000,\r\n      \"CoinCount\": 1500.000000000000000,\r\n      \"AccumulateMoneyVolume\":
-        0.015167635000,\r\n      \"AccumulateMoneyCount\": 39745.000000000000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
-        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000373000000,\r\n      \"CoinCount\": 18287.000000000000000,\r\n      \"AccumulateMoneyVolume\":
-        0.021988686000,\r\n      \"AccumulateMoneyCount\": 58032.000000000000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
-        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000372000000,\r\n      \"CoinCount\": 8288.000000000000000,\r\n      \"AccumulateMoneyVolume\":
-        0.025071822000,\r\n      \"AccumulateMoneyCount\": 66320.000000000000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
-        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000370000000,\r\n      \"CoinCount\": 262842.177043100000000,\r\n      \"AccumulateMoneyVolume\":
-        0.122323427506,\r\n      \"AccumulateMoneyCount\": 329162.177043100000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
-        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000362000000,\r\n      \"CoinCount\": 2000.000000000000000,\r\n      \"AccumulateMoneyVolume\":
-        0.123047427506,\r\n      \"AccumulateMoneyCount\": 331162.177043100000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
-        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000361000000,\r\n      \"CoinCount\": 203.000000000000000,\r\n      \"AccumulateMoneyVolume\":
-        0.123120710506,\r\n      \"AccumulateMoneyCount\": 331365.177043100000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
-        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000360000000,\r\n      \"CoinCount\": 286079.170737910000000,\r\n      \"AccumulateMoneyVolume\":
-        0.226109211972,\r\n      \"AccumulateMoneyCount\": 617444.347781010000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
-        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000355000000,\r\n      \"CoinCount\": 19.000000000000000,\r\n      \"AccumulateMoneyVolume\":
-        0.226115956972,\r\n      \"AccumulateMoneyCount\": 617463.347781010000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
-        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000350000000,\r\n      \"CoinCount\": 326921.728967890000000,\r\n      \"AccumulateMoneyVolume\":
-        0.340538562111,\r\n      \"AccumulateMoneyCount\": 944385.076748900000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
-        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000340000000,\r\n      \"CoinCount\": 40158.770111690000000,\r\n      \"AccumulateMoneyVolume\":
-        0.354192543949,\r\n      \"AccumulateMoneyCount\": 984543.846860590000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
-        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000270000000,\r\n      \"CoinCount\": 11227.000000000000000,\r\n      \"AccumulateMoneyVolume\":
-        0.357223833949,\r\n      \"AccumulateMoneyCount\": 995770.846860590000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
-        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000210000000,\r\n      \"CoinCount\": 25948.000000000000000,\r\n      \"AccumulateMoneyVolume\":
-        0.362672913949,\r\n      \"AccumulateMoneyCount\": 1021718.846860590000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n    {\r\n      \"Id\": 0,\r\n
-        \     \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\": false,\r\n      \"CoinPrice\":
-        0.000000010000000,\r\n      \"CoinCount\": 7550.000000000000000,\r\n      \"AccumulateMoneyVolume\":
-        0.362748413949,\r\n      \"AccumulateMoneyCount\": 1029268.846860590000,\r\n
-        \     \"IsCloseRequired\": false,\r\n      \"Type\": 0,\r\n      \"TypeProcessing\":
-        0,\r\n      \"StopPrice\": 0.0\r\n    }\r\n  ],\r\n  \"SellOrders\": [\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000395000000,\r\n      \"CoinCount\": 21817.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.008617715000,\r\n      \"AccumulateMoneyCount\":
-        21817.000000000000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000402000000,\r\n      \"CoinCount\": 5409.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.010792133000,\r\n      \"AccumulateMoneyCount\":
-        27226.000000000000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000403000000,\r\n      \"CoinCount\": 8118.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.014063687000,\r\n      \"AccumulateMoneyCount\":
-        35344.000000000000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000404000000,\r\n      \"CoinCount\": 3327.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.015407795000,\r\n      \"AccumulateMoneyCount\":
-        38671.000000000000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000405000000,\r\n      \"CoinCount\": 6368.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.017986835000,\r\n      \"AccumulateMoneyCount\":
-        45039.000000000000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000406000000,\r\n      \"CoinCount\": 2210.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.018884095000,\r\n      \"AccumulateMoneyCount\":
-        47249.000000000000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000409000000,\r\n      \"CoinCount\": 14120.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.024659175000,\r\n      \"AccumulateMoneyCount\":
-        61369.000000000000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000410000000,\r\n      \"CoinCount\": 146800.574676040000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.084847410617,\r\n      \"AccumulateMoneyCount\":
-        208169.574676040000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000411000000,\r\n      \"CoinCount\": 16807.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.091755087617,\r\n      \"AccumulateMoneyCount\":
-        224976.574676040000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000412000000,\r\n      \"CoinCount\": 49.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.091775275617,\r\n      \"AccumulateMoneyCount\":
-        225025.574676040000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000414000000,\r\n      \"CoinCount\": 2589.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.092847121617,\r\n      \"AccumulateMoneyCount\":
-        227614.574676040000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000417000000,\r\n      \"CoinCount\": 2077.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.093713230617,\r\n      \"AccumulateMoneyCount\":
-        229691.574676040000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000419000000,\r\n      \"CoinCount\": 15225.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.100092505617,\r\n      \"AccumulateMoneyCount\":
-        244916.574676040000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000420000000,\r\n      \"CoinCount\": 115281.982691040000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.148510938347,\r\n      \"AccumulateMoneyCount\":
-        360198.557367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000428000000,\r\n      \"CoinCount\": 1055.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.148962478347,\r\n      \"AccumulateMoneyCount\":
-        361253.557367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000435000000,\r\n      \"CoinCount\": 31642.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.162726748347,\r\n      \"AccumulateMoneyCount\":
-        392895.557367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000440000000,\r\n      \"CoinCount\": 14200.200000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.168974836347,\r\n      \"AccumulateMoneyCount\":
-        407095.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000442000000,\r\n      \"CoinCount\": 5000.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.171184836347,\r\n      \"AccumulateMoneyCount\":
-        412095.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000444000000,\r\n      \"CoinCount\": 5000.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.173404836347,\r\n      \"AccumulateMoneyCount\":
-        417095.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000446000000,\r\n      \"CoinCount\": 5000.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.175634836347,\r\n      \"AccumulateMoneyCount\":
-        422095.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000448000000,\r\n      \"CoinCount\": 5000.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.177874836347,\r\n      \"AccumulateMoneyCount\":
-        427095.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000450000000,\r\n      \"CoinCount\": 16993.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.185521686347,\r\n      \"AccumulateMoneyCount\":
-        444088.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000455000000,\r\n      \"CoinCount\": 5000.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.187796686347,\r\n      \"AccumulateMoneyCount\":
-        449088.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000460000000,\r\n      \"CoinCount\": 5047.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.190118306347,\r\n      \"AccumulateMoneyCount\":
-        454135.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000465000000,\r\n      \"CoinCount\": 5811.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.192820421347,\r\n      \"AccumulateMoneyCount\":
-        459946.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000480000000,\r\n      \"CoinCount\": 50.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.192844421347,\r\n      \"AccumulateMoneyCount\":
-        459996.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000550000000,\r\n      \"CoinCount\": 993.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.193390571347,\r\n      \"AccumulateMoneyCount\":
-        460989.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000590000000,\r\n      \"CoinCount\": 117.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.193459601347,\r\n      \"AccumulateMoneyCount\":
-        461106.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000620000000,\r\n      \"CoinCount\": 12265.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.201063901347,\r\n      \"AccumulateMoneyCount\":
-        473371.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000631000000,\r\n      \"CoinCount\": 37.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.201087248347,\r\n      \"AccumulateMoneyCount\":
-        473408.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000641000000,\r\n      \"CoinCount\": 699.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.201535307347,\r\n      \"AccumulateMoneyCount\":
-        474107.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000710000000,\r\n      \"CoinCount\": 5358.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.205339487347,\r\n      \"AccumulateMoneyCount\":
-        479465.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000750000000,\r\n      \"CoinCount\": 6000.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.209839487347,\r\n      \"AccumulateMoneyCount\":
-        485465.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000800000000,\r\n      \"CoinCount\": 77.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.209901087347,\r\n      \"AccumulateMoneyCount\":
-        485542.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000815000000,\r\n      \"CoinCount\": 6135.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.214901112347,\r\n      \"AccumulateMoneyCount\":
-        491677.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000860000000,\r\n      \"CoinCount\": 9000.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.222641112347,\r\n      \"AccumulateMoneyCount\":
-        500677.757367080000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000870000000,\r\n      \"CoinCount\": 83272.816563520000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.295088462757,\r\n      \"AccumulateMoneyCount\":
-        583950.573930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000900000000,\r\n      \"CoinCount\": 1682.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.296602262757,\r\n      \"AccumulateMoneyCount\":
-        585632.573930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000935000000,\r\n      \"CoinCount\": 16043.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.311602467757,\r\n      \"AccumulateMoneyCount\":
-        601675.573930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000000970000000,\r\n      \"CoinCount\": 8570.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.319915367757,\r\n      \"AccumulateMoneyCount\":
-        610245.573930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000001000000000,\r\n      \"CoinCount\": 30.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.319945367757,\r\n      \"AccumulateMoneyCount\":
-        610275.573930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000001060000000,\r\n      \"CoinCount\": 100014.520000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.425960758957,\r\n      \"AccumulateMoneyCount\":
-        710290.093930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000001070000000,\r\n      \"CoinCount\": 7477.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.433961148957,\r\n      \"AccumulateMoneyCount\":
-        717767.093930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000001100000000,\r\n      \"CoinCount\": 30.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.433994148957,\r\n      \"AccumulateMoneyCount\":
-        717797.093930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000001200000000,\r\n      \"CoinCount\": 10.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.434006148957,\r\n      \"AccumulateMoneyCount\":
-        717807.093930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000001230000000,\r\n      \"CoinCount\": 8130.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.444006048957,\r\n      \"AccumulateMoneyCount\":
-        725937.093930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000001470000000,\r\n      \"CoinCount\": 3501.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.449152518957,\r\n      \"AccumulateMoneyCount\":
-        729438.093930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    },\r\n
-        \   {\r\n      \"Id\": 0,\r\n      \"PairName\": \"BTC_DOGE\",\r\n      \"IsSell\":
-        true,\r\n      \"CoinPrice\": 0.000027800000000,\r\n      \"CoinCount\": 3589.000000000000000,\r\n
-        \     \"AccumulateMoneyVolume\": 0.548926718957,\r\n      \"AccumulateMoneyCount\":
-        733027.093930600000,\r\n      \"IsCloseRequired\": false,\r\n      \"Type\":
-        0,\r\n      \"TypeProcessing\": 0,\r\n      \"StopPrice\": 0.0\r\n    }\r\n
-        \ ]\r\n}"
+      string: "{\r\n  \"buyLevels\": [\r\n    {\r\n      \"price\": 0.000000296,\r\n
+        \     \"volume\": 239126.33699884\r\n    },\r\n    {\r\n      \"price\": 0.000000295,\r\n
+        \     \"volume\": 162736.0\r\n    },\r\n    {\r\n      \"price\": 0.000000294,\r\n
+        \     \"volume\": 253731.8770018\r\n    },\r\n    {\r\n      \"price\": 0.000000293,\r\n
+        \     \"volume\": 293647.334471\r\n    },\r\n    {\r\n      \"price\": 0.000000292,\r\n
+        \     \"volume\": 728968.0\r\n    },\r\n    {\r\n      \"price\": 0.000000291,\r\n
+        \     \"volume\": 804551.0\r\n    },\r\n    {\r\n      \"price\": 0.00000029,\r\n
+        \     \"volume\": 903144.46131188\r\n    },\r\n    {\r\n      \"price\": 0.000000289,\r\n
+        \     \"volume\": 142531.0\r\n    },\r\n    {\r\n      \"price\": 0.000000288,\r\n
+        \     \"volume\": 278260.0\r\n    },\r\n    {\r\n      \"price\": 0.000000287,\r\n
+        \     \"volume\": 75041.0\r\n    },\r\n    {\r\n      \"price\": 0.000000286,\r\n
+        \     \"volume\": 1086367.03\r\n    },\r\n    {\r\n      \"price\": 0.000000285,\r\n
+        \     \"volume\": 486238.29\r\n    },\r\n    {\r\n      \"price\": 0.000000284,\r\n
+        \     \"volume\": 266115.0\r\n    },\r\n    {\r\n      \"price\": 0.000000283,\r\n
+        \     \"volume\": 42776.73413902\r\n    },\r\n    {\r\n      \"price\": 0.000000282,\r\n
+        \     \"volume\": 46651.0\r\n    },\r\n    {\r\n      \"price\": 0.000000281,\r\n
+        \     \"volume\": 25280.0\r\n    },\r\n    {\r\n      \"price\": 0.00000028,\r\n
+        \     \"volume\": 527537.0\r\n    },\r\n    {\r\n      \"price\": 0.000000279,\r\n
+        \     \"volume\": 120055.86242231\r\n    },\r\n    {\r\n      \"price\": 0.000000278,\r\n
+        \     \"volume\": 14809.0\r\n    },\r\n    {\r\n      \"price\": 0.000000277,\r\n
+        \     \"volume\": 50494.544\r\n    },\r\n    {\r\n      \"price\": 0.000000276,\r\n
+        \     \"volume\": 1603.0\r\n    },\r\n    {\r\n      \"price\": 0.000000275,\r\n
+        \     \"volume\": 2366.0\r\n    },\r\n    {\r\n      \"price\": 0.000000274,\r\n
+        \     \"volume\": 2444.0\r\n    },\r\n    {\r\n      \"price\": 0.000000273,\r\n
+        \     \"volume\": 4672.0\r\n    },\r\n    {\r\n      \"price\": 0.000000272,\r\n
+        \     \"volume\": 2613.0\r\n    },\r\n    {\r\n      \"price\": 0.000000271,\r\n
+        \     \"volume\": 2771.0\r\n    },\r\n    {\r\n      \"price\": 0.00000027,\r\n
+        \     \"volume\": 85923.0\r\n    },\r\n    {\r\n      \"price\": 0.000000269,\r\n
+        \     \"volume\": 5026.0\r\n    },\r\n    {\r\n      \"price\": 0.000000268,\r\n
+        \     \"volume\": 1630.0\r\n    },\r\n    {\r\n      \"price\": 0.000000267,\r\n
+        \     \"volume\": 2718.0\r\n    },\r\n    {\r\n      \"price\": 0.000000266,\r\n
+        \     \"volume\": 2658.0\r\n    },\r\n    {\r\n      \"price\": 0.000000265,\r\n
+        \     \"volume\": 4267.0\r\n    },\r\n    {\r\n      \"price\": 0.000000264,\r\n
+        \     \"volume\": 2307.0\r\n    },\r\n    {\r\n      \"price\": 0.000000263,\r\n
+        \     \"volume\": 17657.0\r\n    },\r\n    {\r\n      \"price\": 0.000000262,\r\n
+        \     \"volume\": 1548.0\r\n    },\r\n    {\r\n      \"price\": 0.000000261,\r\n
+        \     \"volume\": 14882.0\r\n    },\r\n    {\r\n      \"price\": 0.00000026,\r\n
+        \     \"volume\": 3124.0\r\n    },\r\n    {\r\n      \"price\": 0.000000259,\r\n
+        \     \"volume\": 434.0\r\n    },\r\n    {\r\n      \"price\": 0.000000258,\r\n
+        \     \"volume\": 1017.0\r\n    },\r\n    {\r\n      \"price\": 0.000000257,\r\n
+        \     \"volume\": 3264.0\r\n    },\r\n    {\r\n      \"price\": 0.000000256,\r\n
+        \     \"volume\": 10065.0\r\n    },\r\n    {\r\n      \"price\": 0.000000255,\r\n
+        \     \"volume\": 23994.0\r\n    },\r\n    {\r\n      \"price\": 0.000000254,\r\n
+        \     \"volume\": 2370.0\r\n    },\r\n    {\r\n      \"price\": 0.000000253,\r\n
+        \     \"volume\": 1232.0\r\n    },\r\n    {\r\n      \"price\": 0.000000252,\r\n
+        \     \"volume\": 1546.0\r\n    },\r\n    {\r\n      \"price\": 0.000000251,\r\n
+        \     \"volume\": 6959.0\r\n    },\r\n    {\r\n      \"price\": 0.00000025,\r\n
+        \     \"volume\": 8214.0\r\n    },\r\n    {\r\n      \"price\": 0.000000249,\r\n
+        \     \"volume\": 1383.0\r\n    },\r\n    {\r\n      \"price\": 0.000000248,\r\n
+        \     \"volume\": 1350.0\r\n    },\r\n    {\r\n      \"price\": 0.000000247,\r\n
+        \     \"volume\": 5814.0\r\n    },\r\n    {\r\n      \"price\": 0.000000246,\r\n
+        \     \"volume\": 2268.0\r\n    },\r\n    {\r\n      \"price\": 0.000000245,\r\n
+        \     \"volume\": 8983.0\r\n    },\r\n    {\r\n      \"price\": 0.000000244,\r\n
+        \     \"volume\": 21112.0\r\n    },\r\n    {\r\n      \"price\": 0.000000243,\r\n
+        \     \"volume\": 4445.0\r\n    },\r\n    {\r\n      \"price\": 0.000000242,\r\n
+        \     \"volume\": 2249.0\r\n    },\r\n    {\r\n      \"price\": 0.000000241,\r\n
+        \     \"volume\": 6452.0\r\n    },\r\n    {\r\n      \"price\": 0.00000024,\r\n
+        \     \"volume\": 12405.0\r\n    },\r\n    {\r\n      \"price\": 0.000000239,\r\n
+        \     \"volume\": 1134.0\r\n    },\r\n    {\r\n      \"price\": 0.000000238,\r\n
+        \     \"volume\": 1433.0\r\n    },\r\n    {\r\n      \"price\": 0.000000237,\r\n
+        \     \"volume\": 247.0\r\n    },\r\n    {\r\n      \"price\": 0.000000236,\r\n
+        \     \"volume\": 2904.0\r\n    },\r\n    {\r\n      \"price\": 0.000000235,\r\n
+        \     \"volume\": 136267.0\r\n    },\r\n    {\r\n      \"price\": 0.000000234,\r\n
+        \     \"volume\": 220.0\r\n    },\r\n    {\r\n      \"price\": 0.000000233,\r\n
+        \     \"volume\": 26635.0\r\n    },\r\n    {\r\n      \"price\": 0.000000232,\r\n
+        \     \"volume\": 5089.0\r\n    },\r\n    {\r\n      \"price\": 0.000000231,\r\n
+        \     \"volume\": 5660.0\r\n    },\r\n    {\r\n      \"price\": 0.00000023,\r\n
+        \     \"volume\": 51057.0\r\n    },\r\n    {\r\n      \"price\": 0.000000229,\r\n
+        \     \"volume\": 1673.0\r\n    },\r\n    {\r\n      \"price\": 0.000000228,\r\n
+        \     \"volume\": 212.0\r\n    },\r\n    {\r\n      \"price\": 0.000000227,\r\n
+        \     \"volume\": 2181.0\r\n    },\r\n    {\r\n      \"price\": 0.000000226,\r\n
+        \     \"volume\": 225.0\r\n    },\r\n    {\r\n      \"price\": 0.000000225,\r\n
+        \     \"volume\": 2158.0\r\n    },\r\n    {\r\n      \"price\": 0.000000224,\r\n
+        \     \"volume\": 255.0\r\n    },\r\n    {\r\n      \"price\": 0.000000223,\r\n
+        \     \"volume\": 255.0\r\n    },\r\n    {\r\n      \"price\": 0.000000222,\r\n
+        \     \"volume\": 655.0\r\n    },\r\n    {\r\n      \"price\": 0.000000221,\r\n
+        \     \"volume\": 6255.0\r\n    },\r\n    {\r\n      \"price\": 0.00000022,\r\n
+        \     \"volume\": 1518.0\r\n    },\r\n    {\r\n      \"price\": 0.000000219,\r\n
+        \     \"volume\": 205.0\r\n    },\r\n    {\r\n      \"price\": 0.000000218,\r\n
+        \     \"volume\": 205.0\r\n    },\r\n    {\r\n      \"price\": 0.000000217,\r\n
+        \     \"volume\": 644.0\r\n    },\r\n    {\r\n      \"price\": 0.000000216,\r\n
+        \     \"volume\": 189.0\r\n    },\r\n    {\r\n      \"price\": 0.000000215,\r\n
+        \     \"volume\": 105.0\r\n    },\r\n    {\r\n      \"price\": 0.000000214,\r\n
+        \     \"volume\": 205.0\r\n    },\r\n    {\r\n      \"price\": 0.000000213,\r\n
+        \     \"volume\": 203.0\r\n    },\r\n    {\r\n      \"price\": 0.000000212,\r\n
+        \     \"volume\": 45.0\r\n    },\r\n    {\r\n      \"price\": 0.000000211,\r\n
+        \     \"volume\": 24775.0\r\n    },\r\n    {\r\n      \"price\": 0.00000021,\r\n
+        \     \"volume\": 30410.0\r\n    },\r\n    {\r\n      \"price\": 0.000000209,\r\n
+        \     \"volume\": 140.0\r\n    },\r\n    {\r\n      \"price\": 0.000000208,\r\n
+        \     \"volume\": 40.0\r\n    },\r\n    {\r\n      \"price\": 0.000000207,\r\n
+        \     \"volume\": 540.0\r\n    },\r\n    {\r\n      \"price\": 0.000000206,\r\n
+        \     \"volume\": 50.0\r\n    },\r\n    {\r\n      \"price\": 0.000000205,\r\n
+        \     \"volume\": 190.0\r\n    },\r\n    {\r\n      \"price\": 0.000000204,\r\n
+        \     \"volume\": 60.0\r\n    },\r\n    {\r\n      \"price\": 0.000000203,\r\n
+        \     \"volume\": 1369896.0\r\n    },\r\n    {\r\n      \"price\": 0.000000202,\r\n
+        \     \"volume\": 173.0\r\n    },\r\n    {\r\n      \"price\": 0.000000201,\r\n
+        \     \"volume\": 573.0\r\n    },\r\n    {\r\n      \"price\": 0.0000002,\r\n
+        \     \"volume\": 1801.0\r\n    },\r\n    {\r\n      \"price\": 0.000000199,\r\n
+        \     \"volume\": 43.0\r\n    },\r\n    {\r\n      \"price\": 0.000000198,\r\n
+        \     \"volume\": 43.0\r\n    },\r\n    {\r\n      \"price\": 0.000000197,\r\n
+        \     \"volume\": 43.0\r\n    }\r\n  ],\r\n  \"sellLevels\": [\r\n    {\r\n
+        \     \"price\": 0.000000298,\r\n      \"volume\": 283026.6933067\r\n    },\r\n
+        \   {\r\n      \"price\": 0.000000299,\r\n      \"volume\": 210129.12253829\r\n
+        \   },\r\n    {\r\n      \"price\": 0.0000003,\r\n      \"volume\": 1831916.56143856\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000301,\r\n      \"volume\": 5005.67332667\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000302,\r\n      \"volume\": 228410.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000303,\r\n      \"volume\": 1212288.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000304,\r\n      \"volume\": 459115.55144855\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000305,\r\n      \"volume\": 109207.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000306,\r\n      \"volume\": 31160.94476966\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000307,\r\n      \"volume\": 72936.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000308,\r\n      \"volume\": 66896.45746761\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000309,\r\n      \"volume\": 117805.760509\r\n
+        \   },\r\n    {\r\n      \"price\": 0.00000031,\r\n      \"volume\": 88072.28084818\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000311,\r\n      \"volume\": 2880.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000312,\r\n      \"volume\": 1973.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000313,\r\n      \"volume\": 747.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000314,\r\n      \"volume\": 13071.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000315,\r\n      \"volume\": 3607.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000316,\r\n      \"volume\": 810.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000317,\r\n      \"volume\": 13797.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000318,\r\n      \"volume\": 1609.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000319,\r\n      \"volume\": 45167.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.00000032,\r\n      \"volume\": 95344.78688525\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000321,\r\n      \"volume\": 1554.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000322,\r\n      \"volume\": 2740.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000323,\r\n      \"volume\": 9171.85814186\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000324,\r\n      \"volume\": 29828.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000325,\r\n      \"volume\": 49885.48387097\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000326,\r\n      \"volume\": 1525.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000327,\r\n      \"volume\": 3310.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000328,\r\n      \"volume\": 36328.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000329,\r\n      \"volume\": 78445.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.00000033,\r\n      \"volume\": 62562.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000331,\r\n      \"volume\": 1524.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000332,\r\n      \"volume\": 7094.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000333,\r\n      \"volume\": 1286592.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000334,\r\n      \"volume\": 3729.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000335,\r\n      \"volume\": 29473.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000336,\r\n      \"volume\": 55769.8991009\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000337,\r\n      \"volume\": 2522.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000338,\r\n      \"volume\": 28385.05894106\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000339,\r\n      \"volume\": 17103.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.00000034,\r\n      \"volume\": 10277.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000341,\r\n      \"volume\": 6451.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000342,\r\n      \"volume\": 1410.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000343,\r\n      \"volume\": 936.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000344,\r\n      \"volume\": 3401.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000345,\r\n      \"volume\": 557.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000346,\r\n      \"volume\": 1830.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000347,\r\n      \"volume\": 300.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000348,\r\n      \"volume\": 6169.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000349,\r\n      \"volume\": 1416.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.00000035,\r\n      \"volume\": 23666.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000351,\r\n      \"volume\": 1237.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000352,\r\n      \"volume\": 1390.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000353,\r\n      \"volume\": 330.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000354,\r\n      \"volume\": 482.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000355,\r\n      \"volume\": 3170.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000356,\r\n      \"volume\": 5139.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000357,\r\n      \"volume\": 2973.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000358,\r\n      \"volume\": 21386.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000359,\r\n      \"volume\": 11511.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.00000036,\r\n      \"volume\": 20845.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000361,\r\n      \"volume\": 400.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000362,\r\n      \"volume\": 3460.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000363,\r\n      \"volume\": 5707.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000364,\r\n      \"volume\": 360.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000365,\r\n      \"volume\": 3360.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000366,\r\n      \"volume\": 454.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000367,\r\n      \"volume\": 4332.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000368,\r\n      \"volume\": 446.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000369,\r\n      \"volume\": 612.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.00000037,\r\n      \"volume\": 7225.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000371,\r\n      \"volume\": 279.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000372,\r\n      \"volume\": 259.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000373,\r\n      \"volume\": 260.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000374,\r\n      \"volume\": 1522.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000375,\r\n      \"volume\": 4170.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000376,\r\n      \"volume\": 11806.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000377,\r\n      \"volume\": 24559.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000378,\r\n      \"volume\": 220.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000379,\r\n      \"volume\": 220.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.00000038,\r\n      \"volume\": 11165.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000381,\r\n      \"volume\": 40562.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000382,\r\n      \"volume\": 461.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000383,\r\n      \"volume\": 220.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000384,\r\n      \"volume\": 2825.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000385,\r\n      \"volume\": 250.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000386,\r\n      \"volume\": 370.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000387,\r\n      \"volume\": 70825.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000388,\r\n      \"volume\": 68280.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000389,\r\n      \"volume\": 10568.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.00000039,\r\n      \"volume\": 14858.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000391,\r\n      \"volume\": 5170.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000392,\r\n      \"volume\": 204.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000393,\r\n      \"volume\": 24654.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000394,\r\n      \"volume\": 46805.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000395,\r\n      \"volume\": 2373.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000396,\r\n      \"volume\": 1153.0\r\n
+        \   },\r\n    {\r\n      \"price\": 0.000000397,\r\n      \"volume\": 6289.0\r\n
+        \   }\r\n  ]\r\n}"
     http_version: 
-  recorded_at: Fri, 30 Mar 2018 06:46:52 GMT
+  recorded_at: Thu, 12 Dec 2019 07:52:49 GMT
 recorded_with: VCR 4.0.0

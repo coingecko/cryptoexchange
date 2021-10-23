@@ -1,0 +1,234 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bvnex.com/api/ticker/list
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bvnex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Dec 2019 09:23:08 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d4eb4f404510fd6b6058102080f95b4861575364987; expires=Thu, 02-Jan-20
+        09:23:07 GMT; path=/; domain=.bvnex.com; HttpOnly; Secure
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 53f47ae42fd62076-KIX
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "code" : 0,
+          "msg" : "ok",
+          "data" : {
+            "xmx_usdt" : {
+              "last" : "0.001263",
+              "lowestAsk" : "0.001273",
+              "highestBid" : "0.001240",
+              "percentChange" : "-7.00",
+              "baseVolume" : "42234.37612800",
+              "quoteVolume" : "33274477.00",
+              "high24hr" : "0.001308",
+              "low24hr" : "0.001241"
+            },
+            "ltc_usdt" : {
+              "last" : "45.48",
+              "lowestAsk" : "45.51",
+              "highestBid" : "45.45",
+              "percentChange" : "-108.00",
+              "baseVolume" : "520091.37353417",
+              "quoteVolume" : "11396.732821",
+              "high24hr" : "46.46",
+              "low24hr" : "44.74"
+            },
+            "bch_usdt" : {
+              "last" : "213.64",
+              "lowestAsk" : "213.64",
+              "highestBid" : "213.52",
+              "percentChange" : "44.00",
+              "baseVolume" : "914028.35474962",
+              "quoteVolume" : "4278.002620",
+              "high24hr" : "215.90",
+              "low24hr" : "211.51"
+            },
+            "eth_btc" : {
+              "last" : "0.02035",
+              "lowestAsk" : "0.02036",
+              "highestBid" : "0.02035",
+              "percentChange" : "-78.00",
+              "baseVolume" : "132.22610927",
+              "quoteVolume" : "6502.161",
+              "high24hr" : "0.02052",
+              "low24hr" : "0.02022"
+            },
+            "ont_vndt" : {
+              "last" : "14979",
+              "lowestAsk" : "15043",
+              "highestBid" : "14827",
+              "percentChange" : "40.00",
+              "baseVolume" : "1495454944.17351041",
+              "quoteVolume" : "100272.25853048",
+              "high24hr" : "15042",
+              "low24hr" : "14828"
+            },
+            "eth_usdt" : {
+              "last" : "148.58",
+              "lowestAsk" : "148.66",
+              "highestBid" : "148.55",
+              "percentChange" : "-43.00",
+              "baseVolume" : "854435.71173770",
+              "quoteVolume" : "5750.802214",
+              "high24hr" : "150.32",
+              "low24hr" : "146.95"
+            },
+            "okb_vndt" : {
+              "last" : "62877",
+              "lowestAsk" : "62878",
+              "highestBid" : "62876",
+              "percentChange" : "694.00",
+              "baseVolume" : "54029485843.39863419",
+              "quoteVolume" : "880312.00464249",
+              "high24hr" : "63467",
+              "low24hr" : "58462"
+            },
+            "btc_vndt" : {
+              "last" : "170750326",
+              "lowestAsk" : "170900000",
+              "highestBid" : "168656848",
+              "percentChange" : "13.00",
+              "baseVolume" : "60798437972.46411953",
+              "quoteVolume" : "355.64240435",
+              "high24hr" : "174265423",
+              "low24hr" : "169877274"
+            },
+            "dash_vndt" : {
+              "last" : "1218506",
+              "lowestAsk" : "1222746",
+              "highestBid" : "1198301",
+              "percentChange" : "-97.00",
+              "baseVolume" : "10250019282.45390156",
+              "quoteVolume" : "8362.07312370",
+              "high24hr" : "1247431",
+              "low24hr" : "1209843"
+            },
+            "zec_usdt" : {
+              "last" : "27.45",
+              "lowestAsk" : "27.50",
+              "highestBid" : "27.41",
+              "percentChange" : "-36.00",
+              "baseVolume" : "154592.00406745",
+              "quoteVolume" : "5604.146151",
+              "high24hr" : "28.00",
+              "low24hr" : "27.25"
+            },
+            "xrp_usdt" : {
+              "last" : "0.2196",
+              "lowestAsk" : "0.2197",
+              "highestBid" : "0.2195",
+              "percentChange" : "5.00",
+              "baseVolume" : "198300.19607014",
+              "quoteVolume" : "902887.6394",
+              "high24hr" : "0.2218",
+              "low24hr" : "0.2175"
+            },
+            "pax_vndt" : {
+              "last" : "22719",
+              "lowestAsk" : "22984",
+              "highestBid" : "22629",
+              "percentChange" : "-3.00",
+              "baseVolume" : "1146059454.73043431",
+              "quoteVolume" : "50317.47964291",
+              "high24hr" : "22983",
+              "low24hr" : "22630"
+            },
+            "usdt_vndt" : {
+              "last" : "23457",
+              "lowestAsk" : "23472",
+              "highestBid" : "23100",
+              "percentChange" : "42.00",
+              "baseVolume" : "21097407724.03161173",
+              "quoteVolume" : "898995.89291744",
+              "high24hr" : "23534",
+              "low24hr" : "23361"
+            },
+            "dash_usdt" : {
+              "last" : "51.62",
+              "lowestAsk" : "51.70",
+              "highestBid" : "51.56",
+              "percentChange" : "-120.00",
+              "baseVolume" : "116728.41656379",
+              "quoteVolume" : "2250.994420",
+              "high24hr" : "52.65",
+              "low24hr" : "51.25"
+            },
+            "btc_usdt" : {
+              "last" : "7296.60",
+              "lowestAsk" : "7370.37",
+              "highestBid" : "7223.88",
+              "percentChange" : "24.00",
+              "baseVolume" : "3243179.06023176",
+              "quoteVolume" : "443.926710",
+              "high24hr" : "7391.76",
+              "low24hr" : "7238.70"
+            },
+            "bnb_vndt" : {
+              "last" : "358405",
+              "lowestAsk" : "359966",
+              "highestBid" : "352575",
+              "percentChange" : "92.00",
+              "baseVolume" : "194141690147.71757627",
+              "quoteVolume" : "539429.98772673",
+              "high24hr" : "364144",
+              "low24hr" : "354811"
+            },
+            "eos_usdt" : {
+              "last" : "2.6907",
+              "lowestAsk" : "2.6910",
+              "highestBid" : "2.6906",
+              "percentChange" : "-133.00",
+              "baseVolume" : "690966.44618526",
+              "quoteVolume" : "256398.0784",
+              "high24hr" : "2.7485",
+              "low24hr" : "2.6505"
+            },
+            "bvnt_usdt" : {
+              "last" : "0.03500",
+              "lowestAsk" : "",
+              "highestBid" : "",
+              "percentChange" : "0.00",
+              "baseVolume" : "76999.99982500",
+              "quoteVolume" : "2199999.995",
+              "high24hr" : "0.03500",
+              "low24hr" : "0.03500"
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Tue, 03 Dec 2019 09:23:08 GMT
+recorded_with: VCR 4.0.0

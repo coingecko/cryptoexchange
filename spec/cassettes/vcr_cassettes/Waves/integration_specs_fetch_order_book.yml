@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://matcher.waves.exchange/matcher/orderbook/8ofu3VpEaVCFjRqLLqzTMNs5URKUUQMrPp3k6oFmiCc6/8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - matcher.waves.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 29 Apr 2020 06:34:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '502'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,signature,timestamp
+      Access-Control-Expose-Headers:
+      - Content-Length,Content-Range
+      Backend:
+      - fr-2
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timestamp":1588142073697,"pair":{"amountAsset":"8ofu3VpEaVCFjRqLLqzTMNs5URKUUQMrPp3k6oFmiCc6","priceAsset":"8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS"},"bids":[{"amount":1000000000000,"price":14},{"amount":5009250000000,"price":2},{"amount":50000000000000,"price":1}],"asks":[{"amount":46272675670,"price":821},{"amount":11735657664,"price":3000},{"amount":1800000000000,"price":4000},{"amount":692559999999,"price":4366},{"amount":675000000000,"price":7020},{"amount":675000000000,"price":9170}]}'
+    http_version: 
+  recorded_at: Wed, 29 Apr 2020 06:34:33 GMT
+recorded_with: VCR 4.0.0

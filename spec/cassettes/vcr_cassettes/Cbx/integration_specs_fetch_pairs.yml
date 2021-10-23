@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cbx.one/api/v3/asset_pairs
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.cbx.one
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Feb 2020 07:22:55 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dd9943e4ccbc9af18a6577228cc2bdc0b1580800975; expires=Thu, 05-Mar-20
+        07:22:55 GMT; path=/; domain=.cbx.one; HttpOnly; SameSite=Lax
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 55fae56ecad92d1b-KUL
+    body:
+      encoding: UTF-8
+      string: '{"code":0,"data":[{"id":"05100635-8d69-44c6-9032-bc8c5c48c351","name":"ELAD-ETH","quote_scale":6,"quote_asset":{"id":"c98f5d90-c619-4de2-b643-3d429f622239","symbol":"ETH","name":"Ethereum"},"base_asset":{"id":"9c3cc8e6-94ff-4f83-bdc9-f6aa08169ecb","symbol":"ELAD","name":"ELAD
+        Network "},"base_scale":4,"min_quote_value":"0.001"},{"id":"0aa6d0ac-6ff1-45fb-8911-7e6c4070b582","name":"XIN-BTC","quote_scale":6,"quote_asset":{"id":"0df9c3c3-255a-46d7-ab82-dedae169fba9","symbol":"BTC","name":"Bitcoin"},"base_asset":{"id":"e7e44097-0e11-4c56-90d9-3de695bf727c","symbol":"XIN","name":"Mixin"},"base_scale":5,"min_quote_value":"0.0001"},{"id":"0b50cef3-8929-4b73-be3d-265a3e70f23f","name":"PRS-BTC","quote_scale":8,"quote_asset":{"id":"0df9c3c3-255a-46d7-ab82-dedae169fba9","symbol":"BTC","name":"Bitcoin"},"base_asset":{"id":"d91f122f-5c1f-437d-9240-595658c35ecf","symbol":"PRS","name":"PressOne"},"base_scale":1,"min_quote_value":"0.0001"},{"id":"1fa695be-ba96-48ec-8965-8c335faaceae","name":"ELAD-USDT","quote_scale":4,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"9c3cc8e6-94ff-4f83-bdc9-f6aa08169ecb","symbol":"ELAD","name":"ELAD
+        Network "},"base_scale":4,"min_quote_value":"1"},{"id":"261a7ebc-30a5-404c-a131-d422604dc3f9","name":"PRS-ETH","quote_scale":7,"quote_asset":{"id":"c98f5d90-c619-4de2-b643-3d429f622239","symbol":"ETH","name":"Ethereum"},"base_asset":{"id":"d91f122f-5c1f-437d-9240-595658c35ecf","symbol":"PRS","name":"PressOne"},"base_scale":1,"min_quote_value":"0.001"},{"id":"287d7dae-7649-488b-ac8a-9954231f9dcf","name":"NEO-USDT","quote_scale":3,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"0c807851-70a3-4c8f-a544-4f8c24f79b8d","symbol":"NEO","name":"NEO
+        Share"},"base_scale":3,"min_quote_value":"1"},{"id":"2cad049f-d9bd-4047-86c8-4e499c62d225","name":"BCHSV-BTC","quote_scale":6,"quote_asset":{"id":"0df9c3c3-255a-46d7-ab82-dedae169fba9","symbol":"BTC","name":"Bitcoin"},"base_asset":{"id":"13b4abdc-5037-46f8-851f-9b0a06049c5a","symbol":"BCHSV","name":"Bitcoin
+        Cash SV"},"base_scale":3,"min_quote_value":"0.0001"},{"id":"2dab8bcf-cfdd-496b-8181-d670568d1daa","name":"ETH-USDT","quote_scale":2,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"c98f5d90-c619-4de2-b643-3d429f622239","symbol":"ETH","name":"Ethereum"},"base_scale":5,"min_quote_value":"1"},{"id":"32f5c4a4-243e-400c-8678-2aa17ef4b198","name":"MAG-BTC","quote_scale":10,"quote_asset":{"id":"0df9c3c3-255a-46d7-ab82-dedae169fba9","symbol":"BTC","name":"Bitcoin"},"base_asset":{"id":"8d81ce7e-cbb5-4166-ab5b-22cb5361f5a2","symbol":"MAG","name":"MAGGIE"},"base_scale":0,"min_quote_value":"0.0001"},{"id":"38dd30bf-76c2-4777-ae2a-a3222433eef3","name":"ETH-BTC","quote_scale":6,"quote_asset":{"id":"0df9c3c3-255a-46d7-ab82-dedae169fba9","symbol":"BTC","name":"Bitcoin"},"base_asset":{"id":"c98f5d90-c619-4de2-b643-3d429f622239","symbol":"ETH","name":"Ethereum"},"base_scale":5,"min_quote_value":"0.0001"},{"id":"3a7bb27c-7a4e-4aa0-95ab-87b3abae15c4","name":"EOS-ETH","quote_scale":6,"quote_asset":{"id":"c98f5d90-c619-4de2-b643-3d429f622239","symbol":"ETH","name":"Ethereum"},"base_asset":{"id":"b2708373-f732-4ccf-a8e8-e4f860a7e64a","symbol":"EOS","name":"EOS"},"base_scale":2,"min_quote_value":"0.001"},{"id":"550b34db-696e-4434-a126-196f827d9172","name":"BTC-USDT","quote_scale":2,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"0df9c3c3-255a-46d7-ab82-dedae169fba9","symbol":"BTC","name":"Bitcoin"},"base_scale":6,"min_quote_value":"1"},{"id":"705eb212-0ebb-48ae-a113-a0f58fe3172a","name":"BCHABC-USDT","quote_scale":2,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"5cf30606-b2ec-488f-ae53-0d8ac654bcf3","symbol":"BCHABC","name":"Bitcoin
+        Cash ABC"},"base_scale":5,"min_quote_value":"1"},{"id":"70f022e2-8102-4b6f-b6fd-9f75a337646d","name":"BCHSV-USDT","quote_scale":2,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"13b4abdc-5037-46f8-851f-9b0a06049c5a","symbol":"BCHSV","name":"Bitcoin
+        Cash SV"},"base_scale":5,"min_quote_value":"1"},{"id":"7365cacb-db9a-4cc0-a74a-a20aeab540de","name":"EVT-USDT","quote_scale":5,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"eac561a7-59b9-40a6-b3d6-9abee8a07772","symbol":"EVT","name":"EveriToken"},"base_scale":1,"min_quote_value":"1"},{"id":"76ea7553-a8c7-42bc-86e6-6d1583b5595e","name":"ZEC-BTC","quote_scale":6,"quote_asset":{"id":"0df9c3c3-255a-46d7-ab82-dedae169fba9","symbol":"BTC","name":"Bitcoin"},"base_asset":{"id":"5dfe602e-b8a7-4181-ae1e-18a349ce5e5b","symbol":"ZEC","name":"Zcash"},"base_scale":3,"min_quote_value":"0.0001"},{"id":"807cd971-89bb-49fd-9d89-00d22ede6d01","name":"LTC-USDT","quote_scale":2,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"1f88c67d-bcb0-45ff-b336-6de3b740b479","symbol":"LTC","name":"Litecoin"},"base_scale":5,"min_quote_value":"1"},{"id":"8338f883-0bdb-44e8-8b8f-89217b2f8490","name":"JOY-USDT","quote_scale":3,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"fbe18771-ccd2-40cb-9e8c-8e9b6663f6b8","symbol":"JOY","name":"Gojoy"},"base_scale":2,"min_quote_value":"1"},{"id":"88c19cb5-607d-4dfa-ad12-c5dba28897bb","name":"ELAD-BTC","quote_scale":8,"quote_asset":{"id":"0df9c3c3-255a-46d7-ab82-dedae169fba9","symbol":"BTC","name":"Bitcoin"},"base_asset":{"id":"9c3cc8e6-94ff-4f83-bdc9-f6aa08169ecb","symbol":"ELAD","name":"ELAD
+        Network "},"base_scale":4,"min_quote_value":"0.0001"},{"id":"8e155f30-9454-4a48-9194-50e1240f8876","name":"BCHABC-BTC","quote_scale":6,"quote_asset":{"id":"0df9c3c3-255a-46d7-ab82-dedae169fba9","symbol":"BTC","name":"Bitcoin"},"base_asset":{"id":"5cf30606-b2ec-488f-ae53-0d8ac654bcf3","symbol":"BCHABC","name":"Bitcoin
+        Cash ABC"},"base_scale":3,"min_quote_value":"0.0001"},{"id":"918f8bdf-ee5a-416d-9a46-1525dbba3e74","name":"BPOP-USDT","quote_scale":5,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"60777e66-f019-4a6b-a3be-c33ce1618182","symbol":"BPOP","name":"Bpop"},"base_scale":5,"min_quote_value":"1"},{"id":"a14d70e9-716d-4964-a3d4-38474533123f","name":"GRIN-BTC","quote_scale":7,"quote_asset":{"id":"0df9c3c3-255a-46d7-ab82-dedae169fba9","symbol":"BTC","name":"Bitcoin"},"base_asset":{"id":"f2a389f0-af16-41e8-8b2b-968bb2cc67f2","symbol":"GRIN","name":"GRIN"},"base_scale":2,"min_quote_value":"0.0001"},{"id":"a3edb60b-97dc-49b8-8b1e-a93341f49987","name":"QTUM-USDT","quote_scale":3,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"1c349c1e-bc58-4b06-9351-dd39a6df2bc7","symbol":"QTUM","name":"Qtum"},"base_scale":3,"min_quote_value":"1"},{"id":"aa459dd2-b5c6-4ac8-8217-956b90339a41","name":"XIN-USDT","quote_scale":2,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"e7e44097-0e11-4c56-90d9-3de695bf727c","symbol":"XIN","name":"Mixin"},"base_scale":5,"min_quote_value":"1"},{"id":"adf9e419-7390-483b-af2f-16055ad36da2","name":"HIP-USDT","quote_scale":3,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"1628ae12-e345-475b-9085-9b3c74213570","symbol":"HIP","name":"Hip
+        Token"},"base_scale":0,"min_quote_value":"1"},{"id":"b0e4d05f-cec2-4e4a-b914-c1a7b9e3567f","name":"DOGE-USDT","quote_scale":6,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"6f768068-728d-40bf-b2d3-c7f9d260097d","symbol":"DOGE","name":"DogeCoin"},"base_scale":0,"min_quote_value":"1"},{"id":"c17faf31-c035-458c-902c-9f5902970b16","name":"VCASH-USDT","quote_scale":3,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"9364cee1-1ef1-4a5a-b846-f095be7636e9","symbol":"VCASH","name":"Vcash"},"base_scale":3,"min_quote_value":"1"},{"id":"c4eaff30-3918-48c8-9fa1-92b62743090c","name":"EOS-BTC","quote_scale":7,"quote_asset":{"id":"0df9c3c3-255a-46d7-ab82-dedae169fba9","symbol":"BTC","name":"Bitcoin"},"base_asset":{"id":"b2708373-f732-4ccf-a8e8-e4f860a7e64a","symbol":"EOS","name":"EOS"},"base_scale":2,"min_quote_value":"0.0001"},{"id":"c53e47b6-a339-4b0f-812a-d61a23482c51","name":"LTC-BTC","quote_scale":6,"quote_asset":{"id":"0df9c3c3-255a-46d7-ab82-dedae169fba9","symbol":"BTC","name":"Bitcoin"},"base_asset":{"id":"1f88c67d-bcb0-45ff-b336-6de3b740b479","symbol":"LTC","name":"Litecoin"},"base_scale":2,"min_quote_value":"0.0001"},{"id":"c7d850aa-7ddf-4d30-ac38-36065f1c15ec","name":"XRP-USDT","quote_scale":5,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"51e29e36-7710-49d0-abbb-930d7c60f878","symbol":"XRP","name":"Ripple"},"base_scale":1,"min_quote_value":"1"},{"id":"d04b7d90-0e13-4f14-831a-33265eb796ed","name":"GRIN-USDT","quote_scale":4,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"f2a389f0-af16-41e8-8b2b-968bb2cc67f2","symbol":"GRIN","name":"GRIN"},"base_scale":2,"min_quote_value":"1"},{"id":"df775815-e44b-4956-bf31-4ced8b67c62a","name":"XRP-BTC","quote_scale":8,"quote_asset":{"id":"0df9c3c3-255a-46d7-ab82-dedae169fba9","symbol":"BTC","name":"Bitcoin"},"base_asset":{"id":"51e29e36-7710-49d0-abbb-930d7c60f878","symbol":"XRP","name":"Ripple"},"base_scale":1,"min_quote_value":"0.0001"},{"id":"eff6b4c9-5df4-40df-be7a-b635025ce158","name":"BCV-BTC","quote_scale":8,"quote_asset":{"id":"0df9c3c3-255a-46d7-ab82-dedae169fba9","symbol":"BTC","name":"Bitcoin"},"base_asset":{"id":"9d93160f-5946-4d46-8c00-cd1bf4e428cc","symbol":"BCV","name":"Bit
+        Capital Vendor"},"base_scale":2,"min_quote_value":"0.001"},{"id":"fe6a08d8-d62b-4f06-b7f1-8bae77cb22b7","name":"BCV-USDT","quote_scale":6,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"9d93160f-5946-4d46-8c00-cd1bf4e428cc","symbol":"BCV","name":"Bit
+        Capital Vendor"},"base_scale":2,"min_quote_value":"1"},{"id":"feefa85f-99d4-4eda-97c7-8de4c0c45931","name":"EOS-USDT","quote_scale":4,"quote_asset":{"id":"17082d1c-0195-4fb6-8779-2cdbcb9eeb3c","symbol":"USDT","name":"TetherUS"},"base_asset":{"id":"b2708373-f732-4ccf-a8e8-e4f860a7e64a","symbol":"EOS","name":"EOS"},"base_scale":2,"min_quote_value":"1"},{"id":"ffda278e-e4b2-4e58-8df1-b7dc1ed967a2","name":"HIP-BTC","quote_scale":7,"quote_asset":{"id":"0df9c3c3-255a-46d7-ab82-dedae169fba9","symbol":"BTC","name":"Bitcoin"},"base_asset":{"id":"1628ae12-e345-475b-9085-9b3c74213570","symbol":"HIP","name":"Hip
+        Token"},"base_scale":0,"min_quote_value":"0.0001"}]}
+
+'
+    http_version: 
+  recorded_at: Tue, 04 Feb 2020 07:22:55 GMT
+recorded_with: VCR 4.0.0

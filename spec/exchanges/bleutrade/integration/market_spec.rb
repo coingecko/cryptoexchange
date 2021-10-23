@@ -14,6 +14,11 @@ RSpec.describe 'Bleutrade integration specs' do
     expect(pair.market).to eq 'bleutrade'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'bleutrade', base: btc_adc_pair.base, target: btc_adc_pair.target
+    expect(trade_page_url).to eq "https://bleutrade.com/en/trade/basic/ADC/BTC"
+  end  
+
   it 'fetch pairs and assign the correct base/target' do
     pairs = client.pairs('bleutrade')
     expect(pairs).not_to be_empty
@@ -35,8 +40,6 @@ RSpec.describe 'Bleutrade integration specs' do
     expect(ticker.ask).to be_a Numeric
     expect(ticker.high).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
     expect(ticker.payload).to_not be nil
   end
 end

@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://webapi.coinfloor.co.uk/bist/XBT/GBP/ticker/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - webapi.coinfloor.co.uk
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 24 Oct 2019 06:33:54 GMT
+      Content-Type:
+      - application/json; charset=US-ASCII
+      Content-Length:
+      - '120'
+      Connection:
+      - close
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31557600
+    body:
+      encoding: US-ASCII
+      string: '{"last":"5733.00","high":"6253.00","low":"5710.00","vwap":"5956.57","volume":"294.3104","bid":"5731.00","ask":"5732.00"}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2019 06:33:54 GMT
+recorded_with: VCR 4.0.0

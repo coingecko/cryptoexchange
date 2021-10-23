@@ -1,0 +1,176 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://open-api.bitsonic.co.kr/api/external/transaction/history?symbol=btckrw
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - open-api.bitsonic.co.kr
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 13 Dec 2019 10:02:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - WMONID=PQYexiG719N; expires=Sat, 12-Dec-2020 10:02:49 GMT; Max-Age=31536000;
+        path=/
+      - __cfduid=de9c2df697bad8b7f92b1045d18d493461576231369; expires=Sun, 12-Jan-20
+        10:02:49 GMT; path=/; domain=.bitsonic.co.kr; HttpOnly; Secure
+      - csrftoken=e93406c6576f585482d9e1d16d795eb7; expires=Fri, 13-Dec-2019 12:02:49
+        GMT; Max-Age=7200; path=/
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 54471ac97a5cdd66-KUL
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "result": [
+                {
+                    "price": "8473000.000000000000",
+                    "qty": "0.001200000000",
+                    "time": "1576231354000",
+                    "isBuyerMaker": false
+                },
+                {
+                    "price": "8475000.000000000000",
+                    "qty": "0.006600000000",
+                    "time": "1576231245000",
+                    "isBuyerMaker": false
+                },
+                {
+                    "price": "8475000.000000000000",
+                    "qty": "0.000300000000",
+                    "time": "1576231208000",
+                    "isBuyerMaker": false
+                },
+                {
+                    "price": "8475000.000000000000",
+                    "qty": "0.001000000000",
+                    "time": "1576231070000",
+                    "isBuyerMaker": false
+                },
+                {
+                    "price": "8415000.000000000000",
+                    "qty": "0.010000000000",
+                    "time": "1576230664000",
+                    "isBuyerMaker": true
+                },
+                {
+                    "price": "8496000.000000000000",
+                    "qty": "0.039100000000",
+                    "time": "1576230523000",
+                    "isBuyerMaker": false
+                },
+                {
+                    "price": "8495000.000000000000",
+                    "qty": "0.215900000000",
+                    "time": "1576230523000",
+                    "isBuyerMaker": false
+                },
+                {
+                    "price": "8497000.000000000000",
+                    "qty": "0.000100000000",
+                    "time": "1576230462000",
+                    "isBuyerMaker": true
+                },
+                {
+                    "price": "8410000.000000000000",
+                    "qty": "0.007600000000",
+                    "time": "1576230348000",
+                    "isBuyerMaker": true
+                },
+                {
+                    "price": "8424000.000000000000",
+                    "qty": "0.110800000000",
+                    "time": "1576230043000",
+                    "isBuyerMaker": true
+                },
+                {
+                    "price": "8465000.000000000000",
+                    "qty": "0.000100000000",
+                    "time": "1576229965000",
+                    "isBuyerMaker": false
+                },
+                {
+                    "price": "8420000.000000000000",
+                    "qty": "0.100000000000",
+                    "time": "1576229962000",
+                    "isBuyerMaker": true
+                },
+                {
+                    "price": "8414000.000000000000",
+                    "qty": "0.000100000000",
+                    "time": "1576229844000",
+                    "isBuyerMaker": true
+                },
+                {
+                    "price": "8407000.000000000000",
+                    "qty": "0.005000000000",
+                    "time": "1576229706000",
+                    "isBuyerMaker": true
+                },
+                {
+                    "price": "8464000.000000000000",
+                    "qty": "0.022400000000",
+                    "time": "1576229638000",
+                    "isBuyerMaker": false
+                },
+                {
+                    "price": "8406000.000000000000",
+                    "qty": "0.116300000000",
+                    "time": "1576216753000",
+                    "isBuyerMaker": true
+                },
+                {
+                    "price": "8452000.000000000000",
+                    "qty": "0.000100000000",
+                    "time": "1576216753000",
+                    "isBuyerMaker": true
+                },
+                {
+                    "price": "8465000.000000000000",
+                    "qty": "0.125000000000",
+                    "time": "1576215859000",
+                    "isBuyerMaker": false
+                },
+                {
+                    "price": "8462000.000000000000",
+                    "qty": "0.050000000000",
+                    "time": "1576215859000",
+                    "isBuyerMaker": false
+                },
+                {
+                    "price": "8460000.000000000000",
+                    "qty": "0.055800000000",
+                    "time": "1576215263000",
+                    "isBuyerMaker": true
+                }
+            ],
+            "return_code": 1,
+            "timestamp": 1576231369,
+            "http_code": 200
+        }
+    http_version: 
+  recorded_at: Fri, 13 Dec 2019 10:02:49 GMT
+recorded_with: VCR 4.0.0

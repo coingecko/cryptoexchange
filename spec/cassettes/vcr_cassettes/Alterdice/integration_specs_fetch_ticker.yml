@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.alterdice.com/v1/pubticker/BTCUSD
+    uri: https://api.alterdice.com/v1/coingecko/pubticker/BTCUSD
     body:
       encoding: UTF-8
       string: ''
@@ -12,14 +12,14 @@ http_interactions:
       Host:
       - api.alterdice.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Thu, 15 Nov 2018 15:40:58 GMT
+      - Tue, 02 Jul 2019 12:39:17 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -27,9 +27,9 @@ http_interactions:
       Connection:
       - close
       Set-Cookie:
-      - PHPSESSID=ok9qifgobc1jpabcpgkjjm1gd0; path=/; HttpOnly
-      - __cfduid=db6a21adea865425136f29e7c75299a7d1542296458; expires=Fri, 15-Nov-19
-        15:40:58 GMT; path=/; domain=.alterdice.com; HttpOnly
+      - PHPSESSID=5pp7cpghfomep0k0ljuclar7cq; path=/; HttpOnly
+      - __cfduid=da0a46cf3bf7f51df18ffe4aa328b651a1562071157; expires=Wed, 01-Jul-20
+        12:39:17 GMT; path=/; domain=.alterdice.com; HttpOnly
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
@@ -41,10 +41,10 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 47a2d1c04c40823d-KBP
+      - 4f00ae7cbcd0d92d-AMS
     body:
       encoding: UTF-8
-      string: '{"last_price":5620.9734,"low":5426.568,"high":6272.86659999,"volume":67.52487239,"timestamp":1542296458.325024}'
+      string: '{"last_price":10149.26094,"low":9750.21083,"high":10763.37935,"volume":2928.98584206,"timestamp":1562071157.318959}'
     http_version: 
-  recorded_at: Thu, 15 Nov 2018 15:41:01 GMT
+  recorded_at: Tue, 02 Jul 2019 12:39:17 GMT
 recorded_with: VCR 4.0.0

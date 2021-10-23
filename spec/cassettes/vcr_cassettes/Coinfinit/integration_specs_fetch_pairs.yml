@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinfinit.com/public/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinfinit.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Mon, 08 Jul 2019 06:41:18 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"market":{"KRW_BSS":{"last":"37500.00000000","ask":"36500.00000000","bid":"34000.00000000","close24h":"38000.00000000","percentChange":"-1.32","volume24h":"10219.41113969"},"KRW_AIC":{"last":"5.50000000","ask":"5.50000000","bid":"5.10000000","close24h":"5.70000000","percentChange":"-3.51","volume24h":"2471786.51420596"},"KRW_FEMI":{"last":"21.00000000","ask":"22.00000000","bid":"21.00000000","close24h":"24.00000000","percentChange":"-12.50","volume24h":"459306.11559714"},"KRW_SDCU":{"last":"31500.00000000","ask":"31500.00000000","bid":"31000.00000000","close24h":"31000.00000000","percentChange":"1.61","volume24h":"7652.62365146"},"KRW_DN":{"last":"890.00000000","ask":"890.00000000","bid":"800.00000000","close24h":"760.00000000","percentChange":"17.11","volume24h":"94728.35640397"},"KRW_NPER":{"last":"120.00000000","ask":"120.00000000","bid":"110.00000000","close24h":"130.00000000","percentChange":"-7.69","volume24h":"334698.42239392"},"KRW_WAB":{"last":"9.60000000","ask":"9.50000000","bid":"8.50000000","close24h":"8.50000000","percentChange":"12.94","volume24h":"763666.37404348"},"KRW_CPL":{"last":"110.00000000","ask":"110.00000000","bid":"100.00000000","close24h":"98.00000000","percentChange":"12.24","volume24h":"1429525.77108593"},"KRW_CROBA":{"last":"440.00000000","ask":"450.00000000","bid":"440.00000000","close24h":"490.00000000","percentChange":"-10.20","volume24h":"387402.24188703"},"KRW_CTO":{"last":"26.00000000","ask":"26.00000000","bid":"25.00000000","close24h":"25.00000000","percentChange":"4.00","volume24h":"465755.01939736"},"KRW_IDC":{"last":"84.00000000","ask":"90.00000000","bid":"89.00000000","close24h":"85.00000000","percentChange":"-1.18","volume24h":"154141.93596574"},"KRW_IX":{"last":"1.80000000","ask":"1.90000000","bid":"1.70000000","close24h":"1.80000000","percentChange":"0.00","volume24h":"2824393.73373098"},"KRW_BWX":{"last":"3360.00000000","ask":"3360.00000000","bid":"3120.00000000","close24h":"3520.00000000","percentChange":"-4.55","volume24h":"38811.79382666"},"KRW_QNC":{"last":"2.00000000","ask":"2.20000000","bid":"2.00000000","close24h":"2.00000000","percentChange":"0.00","volume24h":"1805643.12136123"},"KRW_PXL":{"last":"18.00000000","ask":"19.00000000","bid":"18.00000000","close24h":"19.00000000","percentChange":"-5.26","volume24h":"572656.57088337"},"KRW_GSE":{"last":"4.70000000","ask":"4.80000000","bid":"4.50000000","close24h":"4.70000000","percentChange":"0.00","volume24h":"1387587.79325655"},"KRW_LFC":{"last":"50.00000000","ask":"50.00000000","bid":"49.00000000","close24h":"51.00000000","percentChange":"-1.96","volume24h":"440972.96098961"},"KRW_BTC":{"last":"12664000.00000000","ask":"14936000.00000000","bid":"12700000.00000000","close24h":"12604000.00000000","percentChange":"0.48","volume24h":"0.22442065"},"KRW_ETH":{"last":"362000.00000000","ask":"362000.00000000","bid":"325000.00000000","close24h":"326000.00000000","percentChange":"11.04","volume24h":"1.33425495"}}}'
+    http_version: 
+  recorded_at: Mon, 08 Jul 2019 06:41:18 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,161 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://open-api.bitsonic.co.kr/api/external/depth?symbol=BTCKRW
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - open-api.bitsonic.co.kr
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 13 Dec 2019 10:02:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - WMONID=PQFex-b4WQz; expires=Sat, 12-Dec-2020 10:02:47 GMT; Max-Age=31536000;
+        path=/
+      - __cfduid=df0b5f0321a42f1baa464bac8bf0dc46d1576231367; expires=Sun, 12-Jan-20
+        10:02:47 GMT; path=/; domain=.bitsonic.co.kr; HttpOnly; Secure
+      - csrftoken=3ca70a80d1f4c071f9ea808706a869e9; expires=Fri, 13-Dec-2019 12:02:47
+        GMT; Max-Age=7200; path=/
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 54471ac0eec1dd56-KUL
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "result": {
+                "e": "DEPTH",
+                "asks": [
+                    [
+                        "8473000",
+                        "0.0078",
+                        []
+                    ],
+                    [
+                        "8474000",
+                        "0.0021",
+                        []
+                    ],
+                    [
+                        "8475000",
+                        "0.4333",
+                        []
+                    ],
+                    [
+                        "8476000",
+                        "0.0906",
+                        []
+                    ],
+                    [
+                        "8492000",
+                        "0.0519",
+                        []
+                    ],
+                    [
+                        "8500000",
+                        "0.0744",
+                        []
+                    ],
+                    [
+                        "8513000",
+                        "1.4553",
+                        []
+                    ],
+                    [
+                        "8538000",
+                        "0.029",
+                        []
+                    ],
+                    [
+                        "8678000",
+                        "0.009",
+                        []
+                    ],
+                    [
+                        "8680000",
+                        "0.02",
+                        []
+                    ]
+                ],
+                "bids": [
+                    [
+                        "8424000",
+                        "0.1379",
+                        []
+                    ],
+                    [
+                        "8423000",
+                        "0.998",
+                        []
+                    ],
+                    [
+                        "8412000",
+                        "0.5942",
+                        []
+                    ],
+                    [
+                        "8410000",
+                        "0.0005",
+                        []
+                    ],
+                    [
+                        "8408000",
+                        "0.0291",
+                        []
+                    ],
+                    [
+                        "8405000",
+                        "4.8199",
+                        []
+                    ],
+                    [
+                        "8401000",
+                        "0.4521",
+                        []
+                    ],
+                    [
+                        "8400000",
+                        "0.0684",
+                        []
+                    ],
+                    [
+                        "8342000",
+                        "0.1138",
+                        []
+                    ],
+                    [
+                        "8308000",
+                        "0.006",
+                        []
+                    ]
+                ]
+            },
+            "return_code": 1,
+            "timestamp": 1576231367,
+            "http_code": 200
+        }
+    http_version: 
+  recorded_at: Fri, 13 Dec 2019 10:02:48 GMT
+recorded_with: VCR 4.0.0

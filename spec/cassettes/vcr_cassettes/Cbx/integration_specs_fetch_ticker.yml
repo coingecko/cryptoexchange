@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.cbx.one/api/v3/asset_pairs/XIN-BTC/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.cbx.one
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Feb 2020 07:22:55 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '293'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d652cd73854b0c4f81247c4ec36a2729a1580800975; expires=Thu, 05-Mar-20
+        07:22:55 GMT; path=/; domain=.cbx.one; HttpOnly; SameSite=Lax
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 55fae56fcc63dd62-KUL
+    body:
+      encoding: UTF-8
+      string: '{"code":0,"data":{"asset_pair_name":"XIN-BTC","bid":{"price":"0.025885","order_count":1,"quantity":"0.1506"},"ask":{"price":"0.026194","order_count":1,"quantity":"0.726"},"open":"0.026288","high":"0.026538","low":"0.02571","close":"0.026017","volume":"1021.98086","daily_change":"-0.000271"}}
+
+'
+    http_version: 
+  recorded_at: Tue, 04 Feb 2020 07:22:55 GMT
+recorded_with: VCR 4.0.0

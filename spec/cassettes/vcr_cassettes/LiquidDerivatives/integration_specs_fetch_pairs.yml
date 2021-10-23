@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.liquid.com/products?perpetual=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.liquid.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 02 Apr 2020 07:13:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8a259e15bf1960af073c2b8492dc7bb71585811587; expires=Sat, 02-May-20
+        07:13:07 GMT; path=/; domain=.liquid.com; HttpOnly; SameSite=Lax; Secure
+      - _vax_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTNlNmQ5ZDgxM2EwZTMxZDRlYmNiOWFmNzU2MDA2NjNjBjsAVEkiCWxhbmcGOwBGOgdlbg%3D%3D--1cbb497ac12cb0f7f807a4780d9a47725cb73d43;
+        path=/; secure; HttpOnly
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d9f235e8efaff109390bd253cb899102"
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=2592000
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 spaces-router (d1390724e8f6)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 94c40f70-8723-eef8-6361-36db8d0133df
+      X-Runtime:
+      - '0.008894'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57d8bed58a3fa946-SIN
+    body:
+      encoding: UTF-8
+      string: '[{"id":"604","product_type":"Perpetual","code":"CASH","name":null,"market_ask":6649.0,"market_bid":6644.0,"indicator":null,"currency":"USD","currency_pair_code":"P-BTCUSD","symbol":"$","btc_minimum_withdraw":null,"fiat_minimum_withdraw":null,"pusher_channel":"product_cash_p-btcusd_604","taker_fee":"0.0","maker_fee":"0.0","low_market_bid":"6176.5","high_market_ask":"6777.0","volume_24h":"179.16494616","last_price_24h":"6335.0","last_traded_price":"6651.0","last_traded_quantity":"0.016","quoted_currency":"USD","base_currency":"P-BTC","tick_size":"0.5","disabled":false,"margin_enabled":false,"cfd_enabled":false,"perpetual_enabled":true,"last_event_timestamp":"1585811585.449824765","timestamp":"1585811585.449824765","index_price":"6636.99833","mark_price":"6646.09573","funding_rate":"0.00092","fair_price":"6646.45316"},{"id":"603","product_type":"Perpetual","code":"CASH","name":null,"market_ask":713300.0,"market_bid":712750.0,"indicator":null,"currency":"JPY","currency_pair_code":"P-BTCJPY","symbol":"¥","btc_minimum_withdraw":null,"fiat_minimum_withdraw":null,"pusher_channel":"product_cash_p-btcjpy_603","taker_fee":"0.0","maker_fee":"0.0","low_market_bid":"661300.0","high_market_ask":"726800.0","volume_24h":"26.33748996","last_price_24h":"681700.0","last_traded_price":"714300.0","last_traded_quantity":"0.01","quoted_currency":"JPY","base_currency":"P-BTC","tick_size":"50.0","disabled":false,"margin_enabled":false,"cfd_enabled":false,"perpetual_enabled":true,"last_event_timestamp":"1585811585.449824765","timestamp":"1585811585.449824765","index_price":"711971.48079","mark_price":"712914.05309","funding_rate":"0.00087","fair_price":"713003.98664"}]'
+    http_version: 
+  recorded_at: Thu, 02 Apr 2020 07:13:07 GMT
+recorded_with: VCR 4.0.0

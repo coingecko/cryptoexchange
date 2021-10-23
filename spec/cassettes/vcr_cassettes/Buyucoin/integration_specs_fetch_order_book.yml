@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.buyucoin.com/ticker/v1.0/liveOrderBook?symbol=INR-BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.buyucoin.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 29 May 2020 11:26:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2384'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d65a31842957443ed98bc51152b3332bd1590751601; expires=Sun, 28-Jun-20
+        11:26:41 GMT; path=/; domain=.buyucoin.com; HttpOnly; SameSite=Lax
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"950-WlbRvrbROgj0QOTAbATMxKMMmeY"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 0301c83a890000ddcf91b90200000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 59afdca40d78ddcf-SIN
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","sub_status":null,"data":{"SELL":[{"price":"1427164.3","qty":"0.00550881","total":"7861.976967483"},{"price":"1000000","qty":"0.00277233","total":"2772.33"},{"price":"919212.8","qty":"0.00213852","total":"1965.754957056"},{"price":"873474.6","qty":"0.05838232","total":"50995.473609072"},{"price":"853686.1","qty":"0.002","total":"1707.3722"},{"price":"852181.6","qty":"0.00309818","total":"2640.211989488"},{"price":"837121.3","qty":"0.002","total":"1674.2426"},{"price":"836198","qty":"0.09183246","total":"76790.11938708"},{"price":"831621","qty":"0.002","total":"1663.242"},{"price":"829296.6","qty":"0.002","total":"1658.5932"},{"price":"825778.3","qty":"0.02217648","total":"18312.855954384"},{"price":"820055.1","qty":"0.02790118","total":"22880.504955018"},{"price":"818065.1","qty":"0.002","total":"1636.1302"},{"price":"816696","qty":"0.09622718","total":"78588.35299728"},{"price":"814578.6","qty":"0.002","total":"1629.1572"},{"price":"810000","qty":"0.00360347","total":"2918.8107"},{"price":"770000","qty":"0.0206","total":"15862"},{"price":"760000","qty":"0.9925","total":"754300"},{"price":"753308.5","qty":"0.002","total":"1506.617"}],"BUY":[{"price":"730484","qty":"0.003","total":"2191.452"},{"price":"705461.6","qty":"0.002","total":"1410.9232"},{"price":"701213","qty":"0.002","total":"1402.426"},{"price":"695773.8","qty":"0.002","total":"1391.5476"},{"price":"695390.1","qty":"0.002","total":"1390.7802"},{"price":"640466.6","qty":"0.002","total":"1280.9332"},{"price":"637061","qty":"0.0132054","total":"8412.6453294"},{"price":"635920.5","qty":"0.00955533","total":"6076.430231265"},{"price":"625030.5","qty":"0.002","total":"1250.061"},{"price":"622226.8","qty":"0.0023695","total":"1474.3664026"},{"price":"618171.8","qty":"0.002","total":"1236.3436"},{"price":"603551.5","qty":"0.00563526","total":"3401.16962589"},{"price":"583078.3","qty":"0.002","total":"1166.1566"},{"price":"582183.3","qty":"0.03719683","total":"21655.373238939"},{"price":"517635.3","qty":"0.002","total":"1035.2706"},{"price":"300009.6","qty":"0.1","total":"30000.96"},{"price":"1500","qty":"0.002","total":"3"},{"price":"1497","qty":"0.002","total":"2.994"},{"price":"1490","qty":"0.002","total":"2.98"},{"price":"100","qty":"0.01","total":"1"},{"price":"80","qty":"1","total":"80"},{"price":"20","qty":"4","total":"80"},{"price":"14","qty":"1","total":"14"}]}}'
+    http_version: 
+  recorded_at: Fri, 29 May 2020 11:26:41 GMT
+recorded_with: VCR 4.0.0

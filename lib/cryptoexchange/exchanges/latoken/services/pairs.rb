@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Latoken
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Latoken::Market::API_URL}/v1/coingecko/pairs"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Latoken::Market::API_URL}/ticker"
 
 
         def fetch
@@ -13,9 +13,10 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           market_pairs = []
           output.each do |pair|
+            base, target = pair['symbol'].split('/')
             market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair["targetSymbol"],
-                              target: pair["baseSymbol"],
+                              base: base,
+                              target: target,
                               market: Latoken::Market::NAME
                             )
           end

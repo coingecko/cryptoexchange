@@ -19,23 +19,30 @@ module Cryptoexchange::Exchanges
 
         def adapt_all(output)
           output['data'].map do |ticker|
-            adapt(ticker)
+            inst_id, base, target = ticker["symbol"].split('-')
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+              base: base,
+              target: target,
+              inst_id: inst_id,
+              market: Newdex::Market::NAME
+            )
+            adapt(ticker, market_pair)
           end
         end
 
-        def adapt(output)
-          base, target     = output['symbol'].split('_')
-          ticker           = Cryptoexchange::Models::Ticker.new
-          ticker.base      = base
-          ticker.target    = target
-          ticker.market    = Newdex::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['last'])
-          ticker.high      = NumericHelper.to_d(output['high'])
-          ticker.low       = NumericHelper.to_d(output['low'])
-          ticker.change    = NumericHelper.to_d(output['change'])
-          ticker.volume    = NumericHelper.to_d(output['amount'])
-          ticker.timestamp = nil
-          ticker.payload   = output
+        def adapt(output, market_pair)
+          ticker                = Cryptoexchange::Models::Ticker.new
+          ticker.base           = market_pair.base
+          ticker.target         = market_pair.target
+          ticker.inst_id        = market_pair.inst_id
+          ticker.market         = Newdex::Market::NAME
+          ticker.last           = NumericHelper.to_d(output['last'])
+          ticker.high           = NumericHelper.to_d(output['high'])
+          ticker.low            = NumericHelper.to_d(output['low'])
+          ticker.change         = NumericHelper.to_d(output['change'])
+          ticker.volume         = NumericHelper.to_d(output['amount'])
+          ticker.timestamp      = nil
+          ticker.payload        = output
           ticker
         end
       end

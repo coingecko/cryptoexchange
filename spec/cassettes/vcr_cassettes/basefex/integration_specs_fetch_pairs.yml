@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.basefex.com/instruments
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.basefex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 13 Nov 2019 04:44:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=deead88fc930fad1609100227a1b3fa211573620279; expires=Thu, 12-Nov-20
+        04:44:39 GMT; path=/; domain=.basefex.com; HttpOnly
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization,x-device-platform,X-TOKEN
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 534e177baed9dd66-KUL
+    body:
+      encoding: UTF-8
+      string: '[{"nextFundingRate":-0.00104261,"usdtPrice":0.9982,"turnover24h":992.6570807092766,"openInterest":1689831,"nextFundingTime":1573639200000,"volume24hInUsd":8625369,"fundingRate":-0.00122087,"volume24h":8625369,"last24hMaxPrice":8849,"btcPrice":8717.96,"latestPrice":8702.5,"symbol":"BTCUSD","last24hPriceChange":-0.0023501089074859567,"openValue":193.74524851825456,"last24hMinPrice":8556.5,"openTime":0,"markPrice":8710.96592941,"indexPrice":8717.96},{"nextFundingRate":0.0001,"usdtPrice":0.9982,"turnover24h":206.46252,"openInterest":949,"nextFundingTime":1573639200000,"volume24hInUsd":1799931.9908592,"fundingRate":0.0001,"volume24h":9724,"last24hMaxPrice":0.02142,"btcPrice":8717.96,"latestPrice":0.02125,"symbol":"ETHXBT","last24hPriceChange":0.00047080979284383533,"openValue":20.1903185879296,"last24hMinPrice":0.02113,"openTime":0,"markPrice":0.02125483,"indexPrice":0.02125343},{"nextFundingRate":0.0001,"usdtPrice":0.9982,"turnover24h":43.5161601,"openInterest":147322,"nextFundingTime":1573639200000,"volume24hInUsd":379067.094823095,"fundingRate":0.0001,"volume24h":1399354,"last24hMaxPrice":0.00003129,"btcPrice":8710.95,"latestPrice":0.00003111,"symbol":"XRPXBT","last24hPriceChange":-0.004161331626120373,"openValue":4.584418560646006,"last24hMinPrice":0.00003085,"openTime":0,"markPrice":0.0000311,"indexPrice":0.0000311},{"nextFundingRate":0.00245637,"usdtPrice":0.9982,"turnover24h":451.75146,"openInterest":1390,"nextFundingTime":1573639200000,"volume24hInUsd":3938509.2712326,"fundingRate":0.00080698,"volume24h":13731,"last24hMaxPrice":0.03329,"btcPrice":8718.31,"latestPrice":0.03275,"symbol":"BCHXBT","last24hPriceChange":0.0018354236769655705,"openValue":45.56827765229249,"last24hMinPrice":0.03262,"openTime":0,"markPrice":0.03276476,"indexPrice":0.03274739},{"nextFundingRate":0.0001,"usdtPrice":0.9982,"turnover24h":710.22399,"openInterest":9688,"nextFundingTime":1573639200000,"volume24hInUsd":6186796.688089499,"fundingRate":0.0001,"volume24h":101399,"last24hMaxPrice":0.0071,"btcPrice":8711.05,"latestPrice":0.007,"symbol":"LTCXBT","last24hPriceChange":-0.014084507042253558,"openValue":67.64173704016498,"last24hMinPrice":0.00694,"openTime":0,"markPrice":0.00698196,"indexPrice":0.0069815},{"nextFundingRate":0.0001,"usdtPrice":0.9982,"turnover24h":3517.839395,"openInterest":143976,"nextFundingTime":1573639200000,"volume24hInUsd":30668383.132034197,"fundingRate":0.0001,"volume24h":1496132,"last24hMaxPrice":0.002382,"btcPrice":8717.96,"latestPrice":0.002382,"symbol":"BNBXBT","last24hPriceChange":0.026724137931034477,"openValue":343.0998840348022,"last24hMinPrice":0.002309,"openTime":0,"markPrice":0.00238315,"indexPrice":0.00238299},{"nextFundingRate":0,"usdtPrice":0.9982,"turnover24h":62114187.64,"openInterest":68512,"nextFundingTime":1573639200000,"volume24hInUsd":62049063.58210385,"fundingRate":0,"volume24h":709944,"last24hMaxPrice":8869,"btcPrice":8717.96,"latestPrice":8727.5,"symbol":"BTCUSDT","last24hPriceChange":-0.0014302059496567505,"openValue":5979213.859333769,"last24hMinPrice":8587,"openTime":0,"markPrice":8727.11,"indexPrice":8727.11},{"nextFundingRate":0.0001,"usdtPrice":0.9982,"turnover24h":31388073.138,"openInterest":168115,"nextFundingTime":1573639200000,"volume24hInUsd":31355164.091452774,"fundingRate":0.0001,"volume24h":1689758,"last24hMaxPrice":187.41,"btcPrice":8717.96,"latestPrice":185.48,"symbol":"ETHUSDT","last24hPriceChange":-0.0017760077498520667,"openValue":3118576.7485913727,"last24hMinPrice":182.82,"openTime":0,"markPrice":185.49218789,"indexPrice":185.48}]'
+    http_version: 
+  recorded_at: Wed, 13 Nov 2019 04:44:39 GMT
+recorded_with: VCR 4.0.0

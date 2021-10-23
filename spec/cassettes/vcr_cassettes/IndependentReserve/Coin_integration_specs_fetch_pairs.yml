@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.independentreserve.com/Public/GetValidPrimaryCurrencyCodes
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.independentreserve.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 16 Apr 2019 09:25:47 GMT
+      Strict-Transport-Security:
+      - max-age=31536000
+      Content-Length:
+      - '61'
+      Connection:
+      - Close
+    body:
+      encoding: ASCII-8BIT
+      string: '["Xbt","Xrp","Eth","Eos","Bch","Ltc","Xlm","Pla","Omg","Zrx"]'
+    http_version: 
+  recorded_at: Tue, 16 Apr 2019 09:25:48 GMT
+- request:
+    method: get
+    uri: https://api.independentreserve.com/Public/GetValidSecondaryCurrencyCodes
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - close
+      Host:
+      - api.independentreserve.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 16 Apr 2019 09:25:48 GMT
+      Strict-Transport-Security:
+      - max-age=31536000
+      Content-Length:
+      - '19'
+      Connection:
+      - Close
+    body:
+      encoding: ASCII-8BIT
+      string: '["Aud","Usd","Nzd"]'
+    http_version: 
+  recorded_at: Tue, 16 Apr 2019 09:25:48 GMT
+recorded_with: VCR 4.0.0

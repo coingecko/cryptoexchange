@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://webapi.coinflex.com/tickers/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - webapi.coinflex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 17 Mar 2020 10:21:48 GMT
+      Content-Type:
+      - application/json; charset=US-ASCII
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d350d32ccfaacb189938894f6153983cf1584440508; expires=Thu, 16-Apr-20
+        10:21:48 GMT; path=/; domain=.coinflex.com; HttpOnly; SameSite=Lax; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5755fd3a3b26dd4a-KUL
+    body:
+      encoding: US-ASCII
+      string: '[{"base":51242,"counter":51882,"name":"ETHMAR/USDTMAR","spot_name":"ETH/USDT","last":1153000,"bid":1153000,"ask":1155000,"low":1003000,"high":1196000,"volume":3146686758,"time":1584440507878896623},{"base":65290,"counter":65291,"name":"DFNF/USDTDFN","spot_name":"DFN/USDT","last":35000,"bid":38000,"ask":41500,"low":null,"high":null,"volume":0,"time":1583940388016621125},{"base":63488,"counter":65283,"name":"XBT/USDT","spot_name":"XBT/USDT","last":51990000,"bid":52630000,"ask":52670000,"low":44850000,"high":54060000,"volume":3139686,"time":1584440492097176998},{"base":65285,"counter":65283,"name":"FLEX/USDT","spot_name":"FLEX/USDT","last":2900,"bid":2900,"ask":2950,"low":2500,"high":2900,"volume":364866990,"time":1584440498381914152},{"base":63496,"counter":65283,"name":"BCH/USDT","spot_name":"BCH/USDT","last":1730000,"bid":1805000,"ask":1807500,"low":null,"high":null,"volume":0,"time":1584440507925044731},{"base":65287,"counter":65288,"name":"DOTF/USDTDOT","spot_name":"DOT/USDT","last":800000,"bid":1000000,"ask":1250000,"low":null,"high":null,"volume":0,"time":1584359375794536228},{"base":63520,"counter":65283,"name":"ETH/USDT","spot_name":"ETH/USDT","last":1156000,"bid":1164000,"ask":1165000,"low":1026000,"high":1189000,"volume":4206391,"time":1584440487809404842},{"base":51202,"counter":51882,"name":"XBTMAR/USDTMAR","spot_name":"XBT/USDT","last":52465000,"bid":52460000,"ask":52485000,"low":44135000,"high":54260000,"volume":724953258,"time":1584440507836478671},{"base":51222,"counter":51882,"name":"BCHMAR/USDTMAR","spot_name":"BCH/USDT","last":1655000,"bid":1805000,"ask":1807500,"low":1655000,"high":1655000,"volume":17,"time":1584440484600276372},{"base":51862,"counter":51882,"name":"USDCMAR/USDTMAR","spot_name":"USDC/USDT","last":9946,"bid":9916,"ask":10017,"low":null,"high":null,"volume":0,"time":1584440472239583764}]'
+    http_version: 
+  recorded_at: Tue, 17 Mar 2020 10:21:46 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pub.bitstorage.finance/v2/trades/BTC_USD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - pub.bitstorage.finance
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 14 May 2020 06:42:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '7084'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d07823f4152e29b4d4b3d695c1c96e1101589438559; expires=Sat, 13-Jun-20
+        06:42:39 GMT; path=/; domain=.bitstorage.finance; HttpOnly; SameSite=Lax;
+        Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"1bac-hQqkoXBCr9GnCya9aWE/5noM3+4"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5932a3f229d90a3c-KIX
+      Cf-Request-Id:
+      - 02b384cb5800000a3c9384b200000001
+    body:
+      encoding: UTF-8
+      string: '[{"tradeID":1084216,"price":"9350.05500000","base_volume":"0.00000191","quote_volume":"0.01785861","trade_timestamp":1589438555,"type":"Sell"},{"tradeID":1084215,"price":"9350.05500000","base_volume":"0.00000110","quote_volume":"0.01028506","trade_timestamp":1589438537,"type":"Sell"},{"tradeID":1084213,"price":"9448.99999999","base_volume":"0.00000137","quote_volume":"0.01294513","trade_timestamp":1589438519,"type":"Buy"},{"tradeID":1084212,"price":"9448.99999999","base_volume":"0.00000142","quote_volume":"0.01341758","trade_timestamp":1589438501,"type":"Buy"},{"tradeID":1084211,"price":"9350.05500000","base_volume":"0.00000178","quote_volume":"0.01664310","trade_timestamp":1589438483,"type":"Sell"},{"tradeID":1084209,"price":"9350.05500000","base_volume":"0.00000139","quote_volume":"0.01299658","trade_timestamp":1589438465,"type":"Sell"},{"tradeID":1084207,"price":"9345.60990000","base_volume":"0.00000111","quote_volume":"0.01037363","trade_timestamp":1589438447,"type":"Sell"},{"tradeID":1084206,"price":"9448.99999999","base_volume":"0.00000115","quote_volume":"0.01086635","trade_timestamp":1589438429,"type":"Buy"},{"tradeID":1084204,"price":"9448.99999999","base_volume":"0.00000187","quote_volume":"0.01766963","trade_timestamp":1589438415,"type":"Buy"},{"tradeID":1084202,"price":"9345.60990000","base_volume":"0.00000192","quote_volume":"0.01794357","trade_timestamp":1589438393,"type":"Sell"},{"tradeID":1084201,"price":"9345.60990000","base_volume":"0.00000162","quote_volume":"0.01513989","trade_timestamp":1589438375,"type":"Sell"},{"tradeID":1084200,"price":"9345.60990000","base_volume":"0.00000167","quote_volume":"0.01560717","trade_timestamp":1589438357,"type":"Sell"},{"tradeID":1084198,"price":"9345.60000000","base_volume":"0.00000195","quote_volume":"0.01822392","trade_timestamp":1589438339,"type":"Sell"},{"tradeID":1084197,"price":"9442.50000000","base_volume":"0.00000148","quote_volume":"0.01397490","trade_timestamp":1589438321,"type":"Buy"},{"tradeID":1084196,"price":"9442.50000000","base_volume":"0.00000182","quote_volume":"0.01718535","trade_timestamp":1589438303,"type":"Buy"},{"tradeID":1084194,"price":"9345.60000000","base_volume":"0.00000143","quote_volume":"0.01336421","trade_timestamp":1589438285,"type":"Sell"},{"tradeID":1084192,"price":"9345.60000000","base_volume":"0.00000125","quote_volume":"0.01168200","trade_timestamp":1589438267,"type":"Sell"},{"tradeID":1084190,"price":"9345.59999999","base_volume":"0.00000178","quote_volume":"0.01663517","trade_timestamp":1589438249,"type":"Sell"},{"tradeID":1084189,"price":"9345.59999999","base_volume":"0.00000186","quote_volume":"0.01738282","trade_timestamp":1589438234,"type":"Sell"},{"tradeID":1084187,"price":"9440.00000000","base_volume":"0.00000188","quote_volume":"0.01774720","trade_timestamp":1589438213,"type":"Buy"},{"tradeID":1084186,"price":"9440.00000000","base_volume":"0.00000154","quote_volume":"0.01453760","trade_timestamp":1589438195,"type":"Buy"},{"tradeID":1084185,"price":"9345.59999999","base_volume":"0.00000150","quote_volume":"0.01401840","trade_timestamp":1589438177,"type":"Sell"},{"tradeID":1084183,"price":"9345.59999999","base_volume":"0.00000145","quote_volume":"0.01355112","trade_timestamp":1589438159,"type":"Sell"},{"tradeID":1084181,"price":"10100.79999999","base_volume":"0.00000194","quote_volume":"0.01959555","trade_timestamp":1589438141,"type":"Buy"},{"tradeID":1084179,"price":"9339.69960000","base_volume":"0.00000196","quote_volume":"0.01830581","trade_timestamp":1589438123,"type":"Sell"},{"tradeID":1084178,"price":"10100.79999999","base_volume":"0.00000165","quote_volume":"0.01666632","trade_timestamp":1589438105,"type":"Buy"},{"tradeID":1084177,"price":"9439.99999999","base_volume":"1.52281351","quote_volume":"14375.35953438","trade_timestamp":1589438101,"type":"Buy"},{"tradeID":1084176,"price":"9439.99999999","base_volume":"0.00000135","quote_volume":"0.01274400","trade_timestamp":1589438087,"type":"Buy"},{"tradeID":1084174,"price":"9439.99999999","base_volume":"0.00000130","quote_volume":"0.01227200","trade_timestamp":1589438069,"type":"Buy"},{"tradeID":1084173,"price":"9339.69960000","base_volume":"0.00000119","quote_volume":"0.01111424","trade_timestamp":1589438053,"type":"Sell"},{"tradeID":1084171,"price":"9439.93999999","base_volume":"0.00000196","quote_volume":"0.01850228","trade_timestamp":1589438033,"type":"Buy"},{"tradeID":1084170,"price":"9341.65980000","base_volume":"0.00000104","quote_volume":"0.00971533","trade_timestamp":1589438015,"type":"Sell"},{"tradeID":1084168,"price":"9439.93999999","base_volume":"0.00000180","quote_volume":"0.01699189","trade_timestamp":1589437997,"type":"Buy"},{"tradeID":1084167,"price":"9341.65980000","base_volume":"0.00000138","quote_volume":"0.01289149","trade_timestamp":1589437979,"type":"Sell"},{"tradeID":1084166,"price":"9341.65980000","base_volume":"0.00000122","quote_volume":"0.01139682","trade_timestamp":1589437961,"type":"Sell"},{"tradeID":1084165,"price":"9348.71850000","base_volume":"0.00000191","quote_volume":"0.01785605","trade_timestamp":1589437943,"type":"Sell"},{"tradeID":1084164,"price":"9445.84999999","base_volume":"0.00000152","quote_volume":"0.01435769","trade_timestamp":1589437925,"type":"Buy"},{"tradeID":1084163,"price":"9445.84999999","base_volume":"0.00000140","quote_volume":"0.01322419","trade_timestamp":1589437907,"type":"Buy"},{"tradeID":1084162,"price":"9445.84999999","base_volume":"0.00000105","quote_volume":"0.00991814","trade_timestamp":1589437889,"type":"Buy"},{"tradeID":1084161,"price":"9445.84999999","base_volume":"0.00000135","quote_volume":"0.01275190","trade_timestamp":1589437873,"type":"Buy"},{"tradeID":1084160,"price":"9348.71850000","base_volume":"0.00000132","quote_volume":"0.01234031","trade_timestamp":1589437853,"type":"Sell"},{"tradeID":1084158,"price":"9345.60000000","base_volume":"0.00000168","quote_volume":"0.01570061","trade_timestamp":1589437835,"type":"Sell"},{"tradeID":1084157,"price":"9345.60000000","base_volume":"0.00000176","quote_volume":"0.01644826","trade_timestamp":1589437817,"type":"Sell"},{"tradeID":1084155,"price":"9445.85000000","base_volume":"0.00000146","quote_volume":"0.01379094","trade_timestamp":1589437799,"type":"Buy"},{"tradeID":1084154,"price":"9445.85000000","base_volume":"0.00000194","quote_volume":"0.01832495","trade_timestamp":1589437781,"type":"Buy"},{"tradeID":1084153,"price":"9445.85000000","base_volume":"0.00000124","quote_volume":"0.01171285","trade_timestamp":1589437763,"type":"Buy"},{"tradeID":1084151,"price":"9445.00000000","base_volume":"0.00000111","quote_volume":"0.01048395","trade_timestamp":1589437745,"type":"Buy"},{"tradeID":1084150,"price":"9344.28330000","base_volume":"0.00000178","quote_volume":"0.01663282","trade_timestamp":1589437727,"type":"Sell"},{"tradeID":1084148,"price":"9344.28330000","base_volume":"0.00000184","quote_volume":"0.01719348","trade_timestamp":1589437709,"type":"Sell"},{"tradeID":1084146,"price":"9344.28330000","base_volume":"0.00000176","quote_volume":"0.01644594","trade_timestamp":1589437693,"type":"Sell"}]'
+    http_version: 
+  recorded_at: Thu, 14 May 2020 06:42:39 GMT
+recorded_with: VCR 4.0.0

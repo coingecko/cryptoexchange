@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.basefex.com/depth@BTCUSD/snapshot
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.basefex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 13 Nov 2019 04:44:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d6173cc3a913ae0f2a46d7d50e07cd2611573620280; expires=Thu, 12-Nov-20
+        04:44:40 GMT; path=/; domain=.basefex.com; HttpOnly
+      X-Ratelimit-Limit:
+      - '180'
+      X-Ratelimit-Remaining:
+      - '180'
+      X-Ratelimit-Reset:
+      - '1573620280'
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization,x-device-platform,X-TOKEN
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,PUT,DELETE,PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 534e177e0942dd52-KUL
+    body:
+      encoding: UTF-8
+      string: '{"to":156528817,"bestPrices":{"ask":8698.5,"bid":8698},"lastPrice":8702.5,"bids":{"8689.5":9880,"4444":100,"8696":2957,"8685.5":9126,"8696.5":9708,"6000":1000000,"8695.5":10029,"8690.5":9117,"8669.5":5,"8688":1000,"8684":9882,"8688.5":4,"8694":7765,"8693.5":6099,"8687.5":9882,"8100":40000,"8500":20000,"8698":2957,"8695":7530,"8692.5":15233,"5555":100,"8400":20000,"8689":9119,"8000":50000,"7000":100000,"8691.5":15657,"7500":100000,"8672.5":125,"8686.5":9882},"asks":{"8704.5":4489,"8724":125,"16000":500000,"8726.5":397,"8830":60,"8724.5":19106,"8710":10878,"8705":4105,"8703":8625,"8716.5":12648,"16666":150,"8722.5":16272,"8698.5":4142,"8720.5":15013,"8701.5":9857,"8713.5":12778,"14545":100,"12000":100000,"8709":4452,"8717.5":15008,"8711.5":7767,"8707.5":317,"11000":100000,"8699":4489,"8707":11169,"13000":500000,"8730":1000,"8701":5715},"from":0}'
+    http_version: 
+  recorded_at: Wed, 13 Nov 2019 04:44:40 GMT
+recorded_with: VCR 4.0.0

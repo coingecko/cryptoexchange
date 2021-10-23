@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://crytrex.com/public_api/order-book?currency=ETH&market=BTC
+    uri: https://crytrex.com/public_api/depth?market=BTC_USDT
     body:
       encoding: UTF-8
       string: ''
@@ -12,37 +12,31 @@ http_interactions:
       Host:
       - crytrex.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Wed, 14 Nov 2018 01:34:53 GMT
+      - Tue, 14 Apr 2020 07:48:31 GMT
       Server:
       - Apache
-      X-Powered-By:
-      - PHP/7.0.30
-      Cache-Control:
-      - max-age=2592000
-      Expires:
-      - Fri, 14 Dec 2018 01:34:53 GMT
+      Upgrade:
+      - h2,h2c
+      Connection:
+      - Upgrade, close
       Vary:
-      - User-Agent
+      - Accept-Encoding,User-Agent
       Access-Control-Allow-Origin:
       - "*"
+      Transfer-Encoding:
+      - chunked
       Content-Type:
-      - text/html; charset=UTF-8
-      Via:
-      - 1.1 stark
-      Connection:
-      - close
-      Content-Length:
-      - '0'
+      - application/json; charset=UTF-8
     body:
       encoding: UTF-8
-      string: ''
+      string: ' {"BTC_USDT":{"asks":[[6810.19020000,105.14146970334]],"bids":[[6947.76980000,98.132038389784]]}}'
     http_version: 
-  recorded_at: Wed, 14 Nov 2018 01:34:53 GMT
+  recorded_at: Tue, 14 Apr 2020 07:48:31 GMT
 recorded_with: VCR 4.0.0

@@ -2,7 +2,8 @@ module Cryptoexchange::Exchanges
   module Bitrabbit
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitrabbit::Market::API_URL}/tickets"
+        # https://bitrabbit.io/api/v2/markets
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitrabbit::Market::API_URL}/markets"
 
         def fetch
           output = super
@@ -10,9 +11,8 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output.map do |pair, ticker|
-            next unless ticker['isFrozen'] == '0'
-            target, base = pair.split('_')
+          output.map do |ticker|
+            base, target = ticker["name"].split("/")
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,

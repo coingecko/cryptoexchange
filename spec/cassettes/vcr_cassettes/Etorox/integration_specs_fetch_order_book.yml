@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://services.etorox.com/api/v1/marketdata/instruments/btcusdex/depth
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - services.etorox.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 21 Jan 2020 03:36:55 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '966'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8b2b13ff8d65a56d8aa3c8adf45389151579577814; expires=Thu, 20-Feb-20
+        03:36:54 GMT; path=/; domain=.etorox.com; HttpOnly; SameSite=Lax
+      X-Guploader-Uploadid:
+      - AEnB2Uo1WGFvD4iygsioJVLffJNpyadhn0PCOcHLV4B-EXYujgflT1b0fD7ljQ7jmnmFvE4VG7JNbdcWE-rRUhd6CUTOuZnK1YlUxEqxarvHNGZGq8UVg-c
+      Expires:
+      - Tue, 21 Jan 2020 03:36:55 GMT
+      Cache-Control:
+      - private, max-age=0
+      Last-Modified:
+      - Tue, 21 Jan 2020 03:36:14 GMT
+      Etag:
+      - '"7c4cfe9daf6d633c5feb8b29e304ccbe"'
+      X-Goog-Generation:
+      - '1579577774847887'
+      X-Goog-Metageneration:
+      - '1'
+      X-Goog-Stored-Content-Encoding:
+      - identity
+      X-Goog-Stored-Content-Length:
+      - '966'
+      X-Goog-Hash:
+      - crc32c=bM9OSA==
+      - md5=fEz+na9tYzxf64sp4wTMvg==
+      X-Goog-Storage-Class:
+      - STANDARD
+      Accept-Ranges:
+      - bytes
+      Vary:
+      - Origin
+      Alt-Svc:
+      - clear
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 55863f1d5b8bc118-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timestamp":"2020-01-21T03:36:11.000Z","asks":[["8657.16560","3.56250"],["8657.36560","1.17190"],["8659.96590","0.10950"],["8660.11000","0.05000"],["8660.23000","0.99350"],["8660.59000","0.25000"],["8662.27000","0.05200"],["8662.29000","0.25000"],["8667.70000","0.45000"],["8667.83000","0.30000"],["8667.86670","0.58000"],["8667.96670","1.35940"],["8668.06670","1.00150"],["8668.40000","0.50620"],["8668.66680","0.45000"],["8668.69000","1.86570"],["9500.00000","0.00100"],["11700.00000","0.04670"],["12000.00000","0.12950"],["12500.00000","0.02170"],["21000.00000","0.84640"]],"bids":[["8645.84000","1.19920"],["8645.64000","2.34210"],["8641.70000","4.84860"],["8641.53580","20.16420"],["8640.76000","19.99390"],["8640.74910","13.62230"],["8640.63580","13.27110"],["8640.54000","20.02480"],["8640.23590","19.83050"],["8640.13590","10.25910"],["8640.03590","19.89710"],["8639.93590","20.18120"],["8639.39000","7.70050"],["1.26330","0.79158"],["1.00000","21.00000"]]}'
+    http_version: 
+  recorded_at: Tue, 21 Jan 2020 03:36:55 GMT
+recorded_with: VCR 4.0.0

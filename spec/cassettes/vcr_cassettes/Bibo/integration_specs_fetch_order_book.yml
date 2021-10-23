@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bibo.gold/openApi/market/depth?symbol=BTC-USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bibo.gold
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jan 2020 02:06:21 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=da5013041683b81d40274662b7e01f5231580349981; expires=Sat, 29-Feb-20
+        02:06:21 GMT; path=/; domain=.bibo.gold; HttpOnly; SameSite=Lax; Secure
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, HEAD, PUT
+      Access-Control-Max-Age:
+      - '3600'
+      Access-Control-Allow-Headers:
+      - Accept, Origin, X-Requested-With, Content-Type, Last-Modified, Access-Control-Request-Headers,
+        Access-Control-Allow-Origin, If-Modified-Since, token, language
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 55cfe2d65eeedd66-KUL
+    body:
+      encoding: UTF-8
+      string: '{"errno":0,"errmsg":"success","result":{"ts":1580349981262,"symbol":"BTC-USDT","asks":[["9291.39","0.00165"],["9455.6","0.000719"],["9588.9","0.0005"],["9966.82","0.001605"],["9998.99","0.000453"],["10168","0.000816"],["12999.96","0.00262"]],"bids":[["8568.93","0.00232"]]}}'
+    http_version: 
+  recorded_at: Thu, 30 Jan 2020 02:06:21 GMT
+recorded_with: VCR 4.0.0

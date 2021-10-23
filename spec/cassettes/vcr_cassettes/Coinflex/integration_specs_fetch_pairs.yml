@@ -1,0 +1,95 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://webapi.coinflex.com/tickers/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - webapi.coinflex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 17 Mar 2020 12:16:44 GMT
+      Content-Type:
+      - application/json; charset=US-ASCII
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7adff0a612e2af4edfba9e4cfd590d751584447403; expires=Thu, 16-Apr-20
+        12:16:43 GMT; path=/; domain=.coinflex.com; HttpOnly; SameSite=Lax; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5756a5920db57574-KUL
+    body:
+      encoding: US-ASCII
+      string: '[{"base":51242,"counter":51882,"name":"ETHMAR/USDTMAR","spot_name":"ETH/USDT","last":1153000,"bid":1152000,"ask":1154000,"low":1016000,"high":1196000,"volume":2981177023,"time":1584447403375089612},{"base":65290,"counter":65291,"name":"DFNF/USDTDFN","spot_name":"DFN/USDT","last":35000,"bid":38000,"ask":41500,"low":null,"high":null,"volume":0,"time":1583940388016621125},{"base":63488,"counter":65283,"name":"XBT/USDT","spot_name":"XBT/USDT","last":52500000,"bid":52700000,"ask":52760000,"low":45180000,"high":54060000,"volume":2572840,"time":1584447402288033185},{"base":65285,"counter":65283,"name":"FLEX/USDT","spot_name":"FLEX/USDT","last":2850,"bid":2850,"ask":2900,"low":2500,"high":2950,"volume":635974033,"time":1584446027778705950},{"base":63496,"counter":65283,"name":"BCH/USDT","spot_name":"BCH/USDT","last":1730000,"bid":1800000,"ask":1802500,"low":null,"high":null,"volume":0,"time":1584447402030510592},{"base":65287,"counter":65288,"name":"DOTF/USDTDOT","spot_name":"DOT/USDT","last":800000,"bid":1000000,"ask":1250000,"low":null,"high":null,"volume":0,"time":1584359375794536228},{"base":63520,"counter":65283,"name":"ETH/USDT","spot_name":"ETH/USDT","last":1156000,"bid":1161000,"ask":1162000,"low":1026000,"high":1189000,"volume":4056391,"time":1584447401724725802},{"base":51202,"counter":51882,"name":"XBTMAR/USDTMAR","spot_name":"XBT/USDT","last":52620000,"bid":52555000,"ask":52600000,"low":44540000,"high":54260000,"volume":672881768,"time":1584447403866855897},{"base":51222,"counter":51882,"name":"BCHMAR/USDTMAR","spot_name":"BCH/USDT","last":1655000,"bid":1800000,"ask":1802500,"low":1655000,"high":1655000,"volume":17,"time":1584447398154870584},{"base":51862,"counter":51882,"name":"USDCMAR/USDTMAR","spot_name":"USDC/USDT","last":9946,"bid":9920,"ask":10021,"low":null,"high":null,"volume":0,"time":1584447402433792603}]'
+    http_version: 
+  recorded_at: Tue, 17 Mar 2020 12:16:41 GMT
+- request:
+    method: get
+    uri: https://webapi.coinflex.com/assets/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - webapi.coinflex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 17 Mar 2020 12:16:44 GMT
+      Content-Type:
+      - application/json; charset=US-ASCII
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=ddf5fe8756375fa682378381b756b73431584447404; expires=Thu, 16-Apr-20
+        12:16:44 GMT; path=/; domain=.coinflex.com; HttpOnly; SameSite=Lax; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5756a5943bcdc113-KUL
+    body:
+      encoding: US-ASCII
+      string: '[{"id":63488,"name":"XBT","scale":10000},{"id":63496,"name":"BCH","scale":10000},{"id":63520,"name":"ETH","scale":10000},{"id":65282,"name":"USDC","scale":10000},{"id":65283,"name":"USDT","scale":10000},{"id":51200,"name":"XBTJAN","spot_id":63488,"spot_name":"XBT","scale":10000},{"id":51202,"name":"XBTMAR","spot_id":63488,"spot_name":"XBT","scale":10000},{"id":51203,"name":"XBTAPR","spot_id":63488,"spot_name":"XBT","scale":10000},{"id":51204,"name":"XBTMAY","spot_id":63488,"spot_name":"XBT","scale":10000},{"id":51205,"name":"XBTJUN","spot_id":63488,"spot_name":"XBT","scale":10000},{"id":51206,"name":"XBTJUL","spot_id":63488,"spot_name":"XBT","scale":10000},{"id":51207,"name":"XBTAUG","spot_id":63488,"spot_name":"XBT","scale":10000},{"id":51208,"name":"XBTSEP","spot_id":63488,"spot_name":"XBT","scale":10000},{"id":51209,"name":"XBTOCT","spot_id":63488,"spot_name":"XBT","scale":10000},{"id":51211,"name":"XBTDEC","spot_id":63488,"spot_name":"XBT","scale":10000},{"id":51220,"name":"BCHJAN","spot_id":63496,"spot_name":"BCH","scale":10000},{"id":51222,"name":"BCHMAR","spot_id":63496,"spot_name":"BCH","scale":10000},{"id":51224,"name":"BCHMAY","spot_id":63496,"spot_name":"BCH","scale":10000},{"id":51225,"name":"BCHJUN","spot_id":63496,"spot_name":"BCH","scale":10000},{"id":51226,"name":"BCHJUL","spot_id":63496,"spot_name":"BCH","scale":10000},{"id":51227,"name":"BCHAUG","spot_id":63496,"spot_name":"BCH","scale":10000},{"id":51228,"name":"BCHSEP","spot_id":63496,"spot_name":"BCH","scale":10000},{"id":51229,"name":"BCHOCT","spot_id":63496,"spot_name":"BCH","scale":10000},{"id":51231,"name":"BCHDEC","spot_id":63496,"spot_name":"BCH","scale":10000},{"id":51240,"name":"ETHJAN","spot_id":63520,"spot_name":"ETH","scale":10000},{"id":51242,"name":"ETHMAR","spot_id":63520,"spot_name":"ETH","scale":10000},{"id":51245,"name":"ETHJUN","spot_id":63520,"spot_name":"ETH","scale":10000},{"id":51246,"name":"ETHJUL","spot_id":63520,"spot_name":"ETH","scale":10000},{"id":51247,"name":"ETHAUG","spot_id":63520,"spot_name":"ETH","scale":10000},{"id":51248,"name":"ETHSEP","spot_id":63520,"spot_name":"ETH","scale":10000},{"id":51249,"name":"ETHOCT","spot_id":63520,"spot_name":"ETH","scale":10000},{"id":51251,"name":"ETHDEC","spot_id":63520,"spot_name":"ETH","scale":10000},{"id":51860,"name":"USDCJAN","spot_id":65282,"spot_name":"USDC","scale":10000},{"id":51862,"name":"USDCMAR","spot_id":65282,"spot_name":"USDC","scale":10000},{"id":51865,"name":"USDCJUN","spot_id":65282,"spot_name":"USDC","scale":10000},{"id":51866,"name":"USDCJUL","spot_id":65282,"spot_name":"USDC","scale":10000},{"id":51867,"name":"USDCAUG","spot_id":65282,"spot_name":"USDC","scale":10000},{"id":51868,"name":"USDCSEP","spot_id":65282,"spot_name":"USDC","scale":10000},{"id":51869,"name":"USDCOCT","spot_id":65282,"spot_name":"USDC","scale":10000},{"id":51871,"name":"USDCDEC","spot_id":65282,"spot_name":"USDC","scale":10000},{"id":51880,"name":"USDTJAN","spot_id":65283,"spot_name":"USDT","scale":10000},{"id":51882,"name":"USDTMAR","spot_id":65283,"spot_name":"USDT","scale":10000},{"id":51883,"name":"USDTAPR","spot_id":65283,"spot_name":"USDT","scale":10000},{"id":51884,"name":"USDTMAY","spot_id":65283,"spot_name":"USDT","scale":10000},{"id":51885,"name":"USDTJUN","spot_id":65283,"spot_name":"USDT","scale":10000},{"id":51886,"name":"USDTJUL","spot_id":65283,"spot_name":"USDT","scale":10000},{"id":51887,"name":"USDTAUG","spot_id":65283,"spot_name":"USDT","scale":10000},{"id":51888,"name":"USDTSEP","spot_id":65283,"spot_name":"USDT","scale":10000},{"id":51889,"name":"USDTOCT","spot_id":65283,"spot_name":"USDT","scale":10000},{"id":51891,"name":"USDTDEC","spot_id":65283,"spot_name":"USDT","scale":10000},{"id":51907,"name":"TUSDAUG","spot_id":65284,"spot_name":"TUSD","scale":10000},{"id":65285,"name":"FLEX","scale":10000},{"id":65286,"name":"DOT","scale":10000},{"id":65287,"name":"DOTF","spot_id":65286,"spot_name":"DOT","scale":10000},{"id":65288,"name":"USDTDOT","spot_id":65283,"spot_name":"USDT","scale":10000},{"id":65289,"name":"DFN","scale":10000},{"id":65290,"name":"DFNF","spot_id":65289,"spot_name":"DFN","scale":10000},{"id":65291,"name":"USDTDFN","spot_id":65283,"spot_name":"USDT","scale":10000}]'
+    http_version: 
+  recorded_at: Tue, 17 Mar 2020 12:16:42 GMT
+recorded_with: VCR 4.0.0

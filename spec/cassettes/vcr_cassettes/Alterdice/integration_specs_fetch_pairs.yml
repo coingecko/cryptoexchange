@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.alterdice.com/v1/symbols
+    uri: https://api.alterdice.com/v1/coingecko/symbols
     body:
       encoding: UTF-8
       string: ''
@@ -12,14 +12,14 @@ http_interactions:
       Host:
       - api.alterdice.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Thu, 15 Nov 2018 15:40:58 GMT
+      - Tue, 02 Jul 2019 12:39:16 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -27,9 +27,9 @@ http_interactions:
       Connection:
       - close
       Set-Cookie:
-      - PHPSESSID=c0c1r186thajdefftduha27ep5; path=/; HttpOnly
-      - __cfduid=d616499258c075ee55b9f76e2aef77d4c1542296458; expires=Fri, 15-Nov-19
-        15:40:58 GMT; path=/; domain=.alterdice.com; HttpOnly
+      - PHPSESSID=ni94o1s6hdve0sgvrmcecsujqq; path=/; HttpOnly
+      - __cfduid=dcd39062d08a663b236f8ace3ab0031781562071156; expires=Wed, 01-Jul-20
+        12:39:16 GMT; path=/; domain=.alterdice.com; HttpOnly
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
@@ -41,10 +41,10 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 47a2d1beca038ac8-KBP
+      - 4f00ae798fcb9c93-AMS
     body:
       encoding: UTF-8
-      string: '["BTCUSD","ETHUSD","ETHBTC","BCHUSD","BCHBTC","LTCUSD","LTCBTC","EDRUSD","EDRBTC"]'
+      string: '[{"base":"BTC","quote":"USD"},{"base":"ETH","quote":"USD"},{"base":"ETH","quote":"BTC"},{"base":"ZEC","quote":"USD"},{"base":"ZEC","quote":"BTC"},{"base":"DASH","quote":"USD"},{"base":"DASH","quote":"BTC"},{"base":"XRP","quote":"USD"},{"base":"XRP","quote":"BTC"},{"base":"LTC","quote":"USD"},{"base":"GPS","quote":"BTC"},{"base":"LTC","quote":"BTC"},{"base":"EDC","quote":"USD"},{"base":"EDC","quote":"BTC"},{"base":"TUSD","quote":"USD"},{"base":"HOT","quote":"USD"},{"base":"ZEC","quote":"ETH"},{"base":"MNC","quote":"USD"},{"base":"MNC","quote":"BTC"},{"base":"AISI","quote":"USD"},{"base":"AISI","quote":"BTC"},{"base":"AISI","quote":"ETH"},{"base":"MNC","quote":"ETH"},{"base":"XRP","quote":"ETH"},{"base":"TKO","quote":"USD"},{"base":"TKO","quote":"BTC"},{"base":"TKO","quote":"ETH"},{"base":"TTTV","quote":"USD"},{"base":"TTTV","quote":"BTC"},{"base":"TTTV","quote":"ETH"},{"base":"AAAG","quote":"USD"},{"base":"AAAG","quote":"BTC"},{"base":"AAAG","quote":"ETH"},{"base":"RVC","quote":"USD"},{"base":"RVC","quote":"BTC"},{"base":"RVC","quote":"ETH"},{"base":"BRC","quote":"BTC"},{"base":"BNB","quote":"USD"},{"base":"BNB","quote":"BTC"},{"base":"BNB","quote":"ETH"},{"base":"OMG","quote":"USD"},{"base":"OMG","quote":"BTC"},{"base":"OMG","quote":"ETH"},{"base":"QTUM","quote":"USD"},{"base":"QTUM","quote":"BTC"},{"base":"QTUM","quote":"ETH"},{"base":"ZLD","quote":"USD"},{"base":"ZLD","quote":"BTC"},{"base":"ZLD","quote":"ETH"},{"base":"BCY","quote":"BTC"},{"base":"DOGE","quote":"USD"},{"base":"DOGE","quote":"BTC"},{"base":"DOGE","quote":"ETH"},{"base":"MKR","quote":"USD"},{"base":"MKR","quote":"BTC"},{"base":"MKR","quote":"ETH"},{"base":"BAT","quote":"USD"},{"base":"BAT","quote":"BTC"},{"base":"BAT","quote":"ETH"},{"base":"NEO","quote":"USD"},{"base":"NEO","quote":"BTC"},{"base":"NEO","quote":"ETH"},{"base":"ZRX","quote":"USD"},{"base":"ZRX","quote":"BTC"},{"base":"ZRX","quote":"ETH"},{"base":"ZIL","quote":"USD"},{"base":"ZIL","quote":"BTC"},{"base":"ZIL","quote":"ETH"},{"base":"NPXS","quote":"BTC"},{"base":"NPXS","quote":"ETH"},{"base":"LBN","quote":"USD"},{"base":"LBN","quote":"BTC"},{"base":"LBN","quote":"ETH"},{"base":"RVT","quote":"USD"},{"base":"RVT","quote":"BTC"},{"base":"RVT","quote":"ETH"},{"base":"WTC","quote":"ETH"},{"base":"LINK","quote":"ETH"},{"base":"MCO","quote":"BTC"},{"base":"MCO","quote":"ETH"},{"base":"MANA","quote":"BTC"},{"base":"MANA","quote":"ETH"},{"base":"DENT","quote":"BTC"},{"base":"DENT","quote":"ETH"},{"base":"DGD","quote":"BTC"},{"base":"DGD","quote":"ETH"},{"base":"ENG","quote":"BTC"},{"base":"ENG","quote":"ETH"},{"base":"LEND","quote":"BTC"},{"base":"LEND","quote":"ETH"},{"base":"ETHOS","quote":"BTC"},{"base":"ETHOS","quote":"ETH"},{"base":"GNT","quote":"BTC"},{"base":"GNT","quote":"ETH"},{"base":"HOT","quote":"BTC"},{"base":"HOT","quote":"ETH"},{"base":"LOOM","quote":"BTC"},{"base":"LOOM","quote":"ETH"},{"base":"LRC","quote":"BTC"},{"base":"LRC","quote":"ETH"},{"base":"POLY","quote":"BTC"},{"base":"PPT","quote":"BTC"},{"base":"PPT","quote":"ETH"},{"base":"POWR","quote":"BTC"},{"base":"POWR","quote":"ETH"},{"base":"AGI","quote":"BTC"},{"base":"AGI","quote":"ETH"},{"base":"SNT","quote":"BTC"},{"base":"SNT","quote":"ETH"},{"base":"WTC","quote":"BTC"},{"base":"LTC","quote":"ETH"},{"base":"POLY","quote":"ETH"}]'
     http_version: 
-  recorded_at: Thu, 15 Nov 2018 15:41:00 GMT
+  recorded_at: Tue, 02 Jul 2019 12:39:16 GMT
 recorded_with: VCR 4.0.0

@@ -14,10 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          pairs = Cryptoexchange::Exchanges::Bilaxy::Services::Pairs.new.fetch
-          pair = pairs.select { |p| p.base == market_pair.base && p.target == market_pair.target }.first
-          id = pair.id
-          "#{Cryptoexchange::Exchanges::Bilaxy::Market::API_URL}/depth?symbol=#{id}&merge=4"
+          "#{Cryptoexchange::Exchanges::Bilaxy::Market::API_URL}/orderbook?pair=#{market_pair.base}_#{market_pair.target}"
         end
 
         def adapt(output, market_pair)
@@ -26,17 +23,16 @@ module Cryptoexchange::Exchanges
           order_book.base      = market_pair.base
           order_book.target    = market_pair.target
           order_book.market    = Bilaxy::Market::NAME
-          order_book.asks      = adapt_orders(HashHelper.dig(output, 'data', 'asks'))
-          order_book.bids      = adapt_orders(HashHelper.dig(output, 'data', 'bids'))
-          order_book.timestamp = Time.now.to_i
+          order_book.asks      = adapt_orders(output['asks'])
+          order_book.bids      = adapt_orders(output['bids'])
+          order_book.timestamp = output['timestamp'] / 1000
           order_book.payload   = output
           order_book
         end
 
         def adapt_orders(orders)
           # cuz the output is the string, so need to get back to array first
-          data = JSON.load(orders)
-          data.collect do |order_entry|
+          orders.collect do |order_entry|
             Cryptoexchange::Models::Order.new(price:  order_entry[0],
                                               amount: order_entry[1]
             )

@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
         def ticker_url(market_pair)
           base   = market_pair.base
           target = market_pair.target
-          "#{Cryptoexchange::Exchanges::Coinex::Market::API_URL}/market/depth?market=#{base}#{target}&merge=0"
+          "#{Cryptoexchange::Exchanges::Coinex::Market::API_URL}/market/depth?market=#{base}#{target}&merge=0.0001&limit=50"
         end
 
         def adapt(output, market_pair)

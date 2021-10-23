@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tokocrypto.com/v1/rates/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.tokocrypto.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1553'
+      Connection:
+      - close
+      Date:
+      - Thu, 30 Jan 2020 02:58:08 GMT
+      X-Amzn-Requestid:
+      - 88379be8-97a1-433a-b56c-384c0af82c95
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amz-Apigw-Id:
+      - HF_qCHSPSQ0FfCw=
+      X-Amzn-Trace-Id:
+      - Root=1-5e324640-64f3241ffc1f6523bd6978c3;Sampled=1
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 16aa904c61908633fc4d20ccb7dc2798.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50-C1
+      X-Amz-Cf-Id:
+      - L_P54fKnjFYYWLKRoqc5PFz5dHQaEuhv_F-5ChgeOqXq8ndgh2Kzdw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"message_code":"get_tickers_success","data":[{"Name":"BTCIDR","Close":126351500,"Low":117335511,"High":127231500,"Open":126606000,"Volume":4601962386,"Buy":127489000,"Sell":125214000,"DateTime":"2020-01-30"},{"Name":"ETHIDR","Close":2312156,"Low":2312156,"High":2314156,"Open":2312156,"Volume":587160215,"Buy":2314311,"Sell":2310000,"DateTime":"2020-01-30"},{"Name":"XRPIDR","Close":3178,"Low":3163,"High":3576,"Open":3205,"Volume":55275790,"Buy":3203,"Sell":3152,"DateTime":"2020-01-30"},{"Name":"DGXIDR","Close":688881,"Low":677401,"High":693377,"Open":687947,"Volume":76102282,"Buy":691422,"Sell":686339,"DateTime":"2020-01-30"},{"Name":"TTCIDR","Close":258,"Low":248,"High":262,"Open":262,"Volume":13213728,"Buy":263,"Sell":253,"DateTime":"2020-01-30"},{"Name":"PAXIDR","Close":13669,"Low":13538,"High":13815,"Open":13642,"Volume":28291176,"Buy":13792,"Sell":13546,"DateTime":"2020-01-30"},{"Name":"USDCIDR","Close":13662,"Low":13500,"High":13732,"Open":13631,"Volume":65003073,"Buy":13785,"Sell":13539,"DateTime":"2020-01-30"},{"Name":"USDTIDR","Close":13611,"Low":13533,"High":13680,"Open":13599,"Volume":66634737,"Buy":13714,"Sell":13508,"DateTime":"2020-01-30"},{"Name":"TUSDIDR","Close":13669,"Low":13510,"High":13735,"Open":13637,"Volume":27128058,"Buy":13791,"Sell":13546,"DateTime":"2020-01-30"},{"Name":"SWIPEIDR","Close":7,"Low":7,"High":7,"Open":7,"Volume":0,"Buy":7,"Sell":7,"DateTime":"2020-01-30"},{"Name":"ZILIDR","Close":74,"Low":74,"High":75,"Open":75,"Volume":426856716,"Buy":75,"Sell":73,"DateTime":"2020-01-30"}]}'
+    http_version: 
+  recorded_at: Thu, 30 Jan 2020 02:58:08 GMT
+recorded_with: VCR 4.0.0

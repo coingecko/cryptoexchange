@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitsoda.com/v1/market/prices
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitsoda.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 02 Oct 2019 06:48:44 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - PUT, GET, POST, OPTIONS,DELETE
+      Access-Control-Allow-Headers:
+      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Accept-Language,Authorization
+      X-Permitted-Cross-Domain-Policies:
+      - master-only
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Referrer-Policy:
+      - unsafe-url
+      Expect-Ct:
+      - max-age=864000; enforce; report-uri='https://app.uriports.com/report/expect-ct'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '{"status":"success","data":{"BCH_USDT":"[1569912522404,229.15,231.13,219.03,222.42,1459.1321200000036]","BTC_USDT":"[1569912522404,8352.78,8492.0,8137.28,8196.34,130.81771900000024]","CKB_USDT":"[1569912522404,0.008172,0.008524,0.008,0.008031,1279282.9289999984]","ETC_USDT":"[1569912522404,4.73,4.78,4.54,4.59,48725.91277999998]","ETH_USDT":"[1569912522404,180.68,182.23,173.39,174.88,8476.21084000002]","LTC_USDT":"[1569912522404,56.39,56.79,54.84,56.19,3483.412179999996]"}}'
+    http_version: 
+  recorded_at: Wed, 02 Oct 2019 06:48:44 GMT
+recorded_with: VCR 4.0.0

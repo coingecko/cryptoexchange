@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://partner.gdac.com/v0.4/public/orderbook?pair=ETH/KRW
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - partner.gdac.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 08 Aug 2019 09:01:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2533'
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSALB=tkWtMXsdOhnNCvmlC3b5MZFnRgdkltHKLXzNCHz12XmpGFIag6EUusTWCdIkI1Widr07ZfFvrLXQ92auuprACgSEBRS8cxB7vmPL0NYbZ1o+SNokhlnR537OhFZ2;
+        Expires=Thu, 15 Aug 2019 09:01:10 GMT; Path=/
+      - pron_ip=6; path=/;
+      X-Xss-Protection:
+      - 1; mode=block
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Ratelimit-Limit:
+      - '200'
+      X-Ratelimit-Remaining:
+      - '81'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"9e5-JULwl6P6TEdashCs0woDHnrOdkU"
+    body:
+      encoding: UTF-8
+      string: '{"ask":[{"price":"270000","volume":"16.00000000"},{"price":"272000","volume":"5.35635000"},{"price":"272500","volume":"1.66455000"},{"price":"273500","volume":"3.42000000"},{"price":"274000","volume":"13.44285000"},{"price":"274500","volume":"62.12304000"},{"price":"275000","volume":"73.50001176"},{"price":"279500","volume":"10.22205101"},{"price":"280000","volume":"0.48621220"},{"price":"295000","volume":"0.62980918"},{"price":"311500","volume":"0.00697048"},{"price":"315000","volume":"0.81900000"},{"price":"335000","volume":"0.78000000"},{"price":"341500","volume":"0.01045573"},{"price":"352000","volume":"1.15300000"},{"price":"370000","volume":"2.67110000"},{"price":"375000","volume":"3.77248302"},{"price":"379500","volume":"1.00000000"},{"price":"391500","volume":"0.01045573"},{"price":"392000","volume":"1.00000000"},{"price":"393500","volume":"3.00000000"},{"price":"400000","volume":"3.24749434"},{"price":"401500","volume":"1.50000000"},{"price":"430000","volume":"0.01307149"},{"price":"499000","volume":"50.00000000"},{"price":"550000","volume":"0.04905094"},{"price":"598000","volume":"0.01660778"},{"price":"698000","volume":"0.01660778"},{"price":"798000","volume":"0.01660778"},{"price":"898000","volume":"0.01660778"},{"price":"10000000","volume":"1.47757586"},{"price":"100000000000","volume":"0.00561750"}],"bid":[{"price":"268500","volume":"24.31145239"},{"price":"268000","volume":"16.00000000"},{"price":"267500","volume":"91.52784000"},{"price":"267000","volume":"61.31673000"},{"price":"266500","volume":"12.49741000"},{"price":"265500","volume":"20.42073000"},{"price":"264500","volume":"0.97011000"},{"price":"264000","volume":"43.00848000"},{"price":"263000","volume":"0.23122690"},{"price":"260000","volume":"0.65402685"},{"price":"245500","volume":"0.16134483"},{"price":"245000","volume":"4.00000000"},{"price":"241000","volume":"0.78420499"},{"price":"235500","volume":"0.16819599"},{"price":"235000","volume":"4.25361770"},{"price":"233500","volume":"0.00762007"},{"price":"221500","volume":"0.01607032"},{"price":"211000","volume":"0.03264334"},{"price":"206500","volume":"0.22352318"},{"price":"201000","volume":"0.01713245"},{"price":"200000","volume":"5.74256683"},{"price":"193500","volume":"0.00919787"},{"price":"149000","volume":"0.09733890"},{"price":"73000","volume":"6.85602069"},{"price":"30000","volume":"39.40492969"},{"price":"26850","volume":"37.21849249"},{"price":"15200","volume":"1.06702508"},{"price":"2500","volume":"1.00000000"},{"price":"10","volume":"500.00000000"}]}'
+    http_version: 
+  recorded_at: Thu, 08 Aug 2019 09:01:10 GMT
+recorded_with: VCR 4.0.0

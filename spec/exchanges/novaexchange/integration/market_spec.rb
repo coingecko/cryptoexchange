@@ -15,6 +15,11 @@ RSpec.describe 'Novaexchange integration specs' do
     expect(pair.market).to eq 'novaexchange'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'novaexchange', base: doge_btc_pair.base, target: doge_btc_pair.target
+    expect(trade_page_url).to eq "https://novaexchange.com/market/BTC_DOGE/"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(ppc_btc_pair)
 
@@ -27,8 +32,25 @@ RSpec.describe 'Novaexchange integration specs' do
     expect(ticker.high).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
-    
+
     expect(ticker.payload).to_not be nil
+  end
+
+  it 'fetch order book' do
+    order_book = client.order_book(doge_btc_pair)
+
+    expect(order_book.base).to eq 'DOGE'
+    expect(order_book.target).to eq 'BTC'
+    expect(order_book.market).to eq 'novaexchange'
+
+    expect(order_book.asks).to_not be_empty
+    expect(order_book.bids).to_not be_empty
+    expect(order_book.asks.first.price).to_not be_nil
+    expect(order_book.bids.first.amount).to_not be_nil
+    expect(order_book.asks.count).to be > 5
+    expect(order_book.bids.count).to be > 5
+    expect(order_book.timestamp).to be_nil
+    expect(order_book.payload).to_not be nil
   end
 
   it 'base/target order' do

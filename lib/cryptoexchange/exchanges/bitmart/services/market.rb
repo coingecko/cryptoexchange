@@ -4,18 +4,29 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            true
+            false
           end
         end
 
-        def fetch(market_pair)
-          url = ticker_url(market_pair)
-          output = super(url)
-          adapt(output, market_pair)
+        def fetch
+          output = super(ticker_url)
+          adapt_all(output)
         end
 
-        def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bitmart::Market::API_URL}/ticker/#{market_pair.base}_#{market_pair.target}"
+        def ticker_url
+          "#{Cryptoexchange::Exchanges::Bitmart::Market::API_URL}/ticker"
+        end
+
+        def adapt_all(output)
+          output.map do |pair|
+            base, target = pair["symbol_id"].split('_')
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+              base: base,
+              target: target,
+              market: Bitmart::Market::NAME
+            )
+            adapt(pair, market_pair)
+          end
         end
 
         def adapt(output, market_pair)
@@ -25,12 +36,11 @@ module Cryptoexchange::Exchanges
           ticker.market    = Bitmart::Market::NAME
           ticker.ask       = NumericHelper.to_d(output['ask_1'])
           ticker.bid       = NumericHelper.to_d(output['bid_1'])
-          ticker.high      = NumericHelper.to_d(output['high_24h'])
-          ticker.low       = NumericHelper.to_d(output['low_24h'])
-          ticker.change    = NumericHelper.to_d(output['priceChange'])
-          ticker.last      = NumericHelper.to_d(output['new_24h'])
+          ticker.high      = NumericHelper.to_d(output['highest_price'])
+          ticker.low       = NumericHelper.to_d(output['lowest_price'])
+          ticker.last      = NumericHelper.to_d(output['current_price'])
           ticker.volume    = NumericHelper.to_d(output['volume'])
-          ticker.timestamp = output['closeTime'] / 1000
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

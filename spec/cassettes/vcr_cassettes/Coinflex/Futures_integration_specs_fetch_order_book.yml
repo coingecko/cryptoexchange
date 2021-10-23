@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://webapi.coinflex.com/depth/ETHMAR/USDTMAR
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - webapi.coinflex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 17 Mar 2020 10:21:49 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d5931abf8c284b2833818136ce751670b1584440508; expires=Thu, 16-Apr-20
+        10:21:48 GMT; path=/; domain=.coinflex.com; HttpOnly; SameSite=Lax; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5755fd3c58aa7574-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Tue, 17 Mar 2020 10:21:46 GMT
+recorded_with: VCR 4.0.0

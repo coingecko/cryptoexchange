@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-cloud.bitmart.com/contract/v1/ifcontract/tickers?contractID=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api-cloud.bitmart.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 17 Apr 2020 14:56:43 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d2462dadc65ddb400449ae00a15cd6c231587135403; expires=Sun, 17-May-20
+        14:56:43 GMT; path=/; domain=.bitmart.com; HttpOnly; SameSite=Lax; Secure
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5856fe91eb52dd2a-SIN
+      Cf-Request-Id:
+      - 022a3d6f330000dd2ad612c200000001
+    body:
+      encoding: UTF-8
+      string: '{"message":"OK","data":{"tickers":[{"last_price":"7035","open":"7057","close":"7035","low":"6968","high":"7212","avg_price":"7069.8571584399004826023","volume":"31380","total_volume":"187237164","timestamp":1587135380,"rise_fall_rate":"-0.0031174720136035142","rise_fall_value":"-22","contract_id":1,"position_size":"693013131","volume_day":"187237164","amount24":"132343418.8974000000000016657102","base_coin_volume":"18723.7164","quote_coin_volume":"132374000.42313856308046859918772","pps":"73465","index_price":"7035.665","fair_price":"7031.035795534555","fair_basis":"-0.000657962604","fair_value":"-4.629204465444","rate":{"quote_rate":"0.0006","base_rate":"0.0003","interest_rate":"0.000099999999"},"premium_index":"-0.000351989191","funding_rate":"-0.001041","next_funding_at":"2020-04-17T20:00:00Z"}]}}'
+    http_version: 
+  recorded_at: Fri, 17 Apr 2020 14:56:43 GMT
+recorded_with: VCR 4.0.0

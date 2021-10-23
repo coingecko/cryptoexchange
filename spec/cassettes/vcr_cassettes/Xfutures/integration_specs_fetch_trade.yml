@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.xfutures.io/api/spot/v3/instruments/XOCEAN-BTC/trades
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.xfutures.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Jul 2019 04:52:52 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=de02f4e27c64bfa1197f70306caf1bedf1563511972; expires=Sat, 18-Jul-20
+        04:52:52 GMT; path=/; domain=.xfutures.io; HttpOnly; Secure
+      - locale=en_US; Max-Age=604800; Expires=Fri, 26-Jul-2019 04:52:52 GMT; Path=/
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Cf-Ray:
+      - 4f8a16a11efac38b-SIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Expires:
+      - '0'
+      Ok-After:
+      - '3'
+      Ok-Before:
+      - '20'
+      Ok-From:
+      - '20'
+      Ok-Limit:
+      - '100'
+      Ok-To:
+      - '3'
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding
+      Via:
+      - kong/0.12.3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Kong-Proxy-Latency:
+      - '0'
+      X-Kong-Upstream-Latency:
+      - '10'
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"time":"2019-05-16T20:09:40.651Z","timestamp":"2019-05-16T20:09:40.651Z","trade_id":"20","price":"0.00000355","size":"25","side":"buy"},{"time":"2019-05-16T20:09:38.459Z","timestamp":"2019-05-16T20:09:38.459Z","trade_id":"18","price":"0.00000355","size":"25","side":"buy"},{"time":"2019-05-16T20:09:34.371Z","timestamp":"2019-05-16T20:09:34.371Z","trade_id":"16","price":"0.00000355","size":"25","side":"buy"},{"time":"2019-05-16T20:09:27.312Z","timestamp":"2019-05-16T20:09:27.312Z","trade_id":"14","price":"0.00000355","size":"25","side":"buy"},{"time":"2019-05-16T19:15:06.000Z","timestamp":"2019-05-16T19:15:06.000Z","trade_id":"12","price":"0.00000355","size":"15","side":"buy"},{"time":"2019-05-16T19:15:03.000Z","timestamp":"2019-05-16T19:15:03.000Z","trade_id":"10","price":"0.00000355","size":"25","side":"buy"},{"time":"2019-05-16T19:14:57.000Z","timestamp":"2019-05-16T19:14:57.000Z","trade_id":"8","price":"0.00000355","size":"25","side":"buy"},{"time":"2019-05-16T19:05:29.000Z","timestamp":"2019-05-16T19:05:29.000Z","trade_id":"5","price":"0.00000355","size":"10","side":"buy"},{"time":"2019-05-16T18:57:31.000Z","timestamp":"2019-05-16T18:57:31.000Z","trade_id":"3","price":"0.00000355","size":"25","side":"buy"}]'
+    http_version: 
+  recorded_at: Fri, 19 Jul 2019 04:52:52 GMT
+recorded_with: VCR 4.0.0

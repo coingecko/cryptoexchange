@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://altsbit.com/api/history?market=dp-btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - altsbit.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.1
+      Date:
+      - Fri, 31 Jan 2020 07:17:37 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '6661'
+      Connection:
+      - close
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"data":[{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000007","amount":"715.71714858","total":"0.00005010","timestamp":1580403237},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000011","amount":"453.63817819","total":"0.00004990","timestamp":1580161491},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000008","amount":"10647.00000000","total":"0.00085176","timestamp":1580137099},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000010","amount":"17754.76546906","total":"0.00177548","timestamp":1579990297},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000011","amount":"5000.00000000","total":"0.00055000","timestamp":1579990297},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000010","amount":"17227.44510978","total":"0.00172274","timestamp":1579989100},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000009","amount":"1000.00000000","total":"0.00009000","timestamp":1579988609},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000005","amount":"1100.00000000","total":"0.00005500","timestamp":1579831490},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000013","amount":"1532.31997543","total":"0.00019920","timestamp":1579800882},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000005","amount":"225365.23873219","total":"0.01126826","timestamp":1579781401},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000006","amount":"159855.44641141","total":"0.00959133","timestamp":1579781357},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000006","amount":"1992.00000000","total":"0.00011952","timestamp":1579781357},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000007","amount":"30000.00000000","total":"0.00210000","timestamp":1579781351},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000007","amount":"26805.10407756","total":"0.00187636","timestamp":1579781351},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000008","amount":"34982.21057884","total":"0.00279858","timestamp":1579781346},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000009","amount":"21000.00000000","total":"0.00189000","timestamp":1579781337},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000008","amount":"1100.00000000","total":"0.00008800","timestamp":1579725496},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000025","amount":"199.60079840","total":"0.00004990","timestamp":1579488252},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000006","amount":"5000.00000000","total":"0.00030000","timestamp":1579368983},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000006","amount":"48646.21692858","total":"0.00291877","timestamp":1579368983},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000007","amount":"15000.00000000","total":"0.00105000","timestamp":1579368976},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000007","amount":"3172.22697462","total":"0.00022206","timestamp":1579368976},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000007","amount":"38332.05018534","total":"0.00268324","timestamp":1579368976},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000008","amount":"95000.00000000","total":"0.00760000","timestamp":1579368970},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000009","amount":"10950.00000000","total":"0.00098550","timestamp":1579368963},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000031","amount":"5000.00000000","total":"0.00155000","timestamp":1579280810},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000031","amount":"460.00000000","total":"0.00014260","timestamp":1579280810},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000032","amount":"153.69004676","total":"0.00004918","timestamp":1579280810},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000031","amount":"163.30995324","total":"0.00005063","timestamp":1579280809},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000023","amount":"7325.00000000","total":"0.00168475","timestamp":1579280791},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000024","amount":"5000.00000000","total":"0.00120000","timestamp":1579280791},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000024","amount":"5000.00000000","total":"0.00120000","timestamp":1579280791},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000028","amount":"10000.00000000","total":"0.00280000","timestamp":1579280791},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000030","amount":"8980.00000000","total":"0.00269400","timestamp":1579280791},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000014","amount":"7068.81283434","total":"0.00098963","timestamp":1579280783},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000015","amount":"19321.00000000","total":"0.00289815","timestamp":1579280783},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000017","amount":"304.54656187","total":"0.00005177","timestamp":1579280783},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000018","amount":"9966.00000000","total":"0.00179388","timestamp":1579280783},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000019","amount":"5000.00000000","total":"0.00095000","timestamp":1579280783},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000019","amount":"400.00000000","total":"0.00007600","timestamp":1579280783},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000020","amount":"5000.00000000","total":"0.00100000","timestamp":1579280783},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000021","amount":"7580.64867914","total":"0.00159194","timestamp":1579280783},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000022","amount":"14175.00000000","total":"0.00311850","timestamp":1579280783},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000012","amount":"1000.00000000","total":"0.00012000","timestamp":1579280776},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000013","amount":"267670.38007244","total":"0.03479715","timestamp":1579280776},{"pairId":10,"url":"dp-btc","type":"Buy","price":"0.00000018","amount":"500.00000000","total":"0.00009000","timestamp":1578672018},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000008","amount":"8980.00000000","total":"0.00071840","timestamp":1578445139},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000007","amount":"10466.63815227","total":"0.00073266","timestamp":1578445139},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000006","amount":"2864.54656187","total":"0.00017187","timestamp":1578445139},{"pairId":10,"url":"dp-btc","type":"Sell","price":"0.00000005","amount":"87666.96736028","total":"0.00438335","timestamp":1578445139}]}'
+    http_version: 
+  recorded_at: Fri, 31 Jan 2020 07:17:37 GMT
+recorded_with: VCR 4.0.0

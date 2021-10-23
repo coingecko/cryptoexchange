@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fx-api.gateio.ws/api/v4/futures/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - fx-api.gateio.ws
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 07 May 2019 04:09:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - openresty/1.13.6.1
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,DELETE,PUT
+      Access-Control-Allow-Headers:
+      - DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type
+      Access-Control-Max-Age:
+      - '1728000'
+      Vary:
+      - Origin
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"total_size":"28128","volume_24h_usd":"1100","quanto_base_rate":"0.02054433","high_24h":"123.25","change_percentage":"3.22","volume_24h_btc":"0","last":"121.7","index_price":"121.21","mark_price":"121.27","funding_rate_indicative":"0.000889","funding_rate":"0.001076","contract":"DASH_USD","low_24h":"115.75","volume_24h":"1532"},{"total_size":"81975","volume_24h_usd":"23089","quanto_base_rate":"0.00015605","high_24h":"0.978","change_percentage":"2.40","volume_24h_btc":"3","last":"0.937","index_price":"0.9207","mark_price":"0.921","funding_rate_indicative":"0.0005","funding_rate":"0.000752","contract":"MDA_USD","low_24h":"0.909","volume_24h":"41765"},{"total_size":"14033","volume_24h_usd":"8892","quanto_base_rate":"4.693e-05","high_24h":"0.2852","change_percentage":"5.99","volume_24h_btc":"1","last":"0.2814","index_price":"0.276829","mark_price":"0.2768","funding_rate_indicative":"0.0001","funding_rate":"0.0001","contract":"ZRX_USD","low_24h":"0.2595","volume_24h":"5356"},{"total_size":"133992","volume_24h_usd":"218276","quanto_base_rate":"4.073e-06","high_24h":"0.02404","change_percentage":"5.72","volume_24h_btc":"36","last":"0.02402","index_price":"0.02405","mark_price":"0.02405","funding_rate_indicative":"0.0001","funding_rate":"0.0001","contract":"TRX_USD","low_24h":"0.02271","volume_24h":"154021"},{"total_size":"81405","volume_24h_usd":"27122","quanto_base_rate":"0.00156767","high_24h":"9.4","change_percentage":"4.91","volume_24h_btc":"4","last":"9.395","index_price":"9.247","mark_price":"9.247","funding_rate_indicative":"0.0001","funding_rate":"0.0001","contract":"NEO_USD","low_24h":"8.79","volume_24h":"48930"},{"total_size":"111768","volume_24h_usd":"1674741","quanto_base_rate":"0.01302289","high_24h":"77.89","change_percentage":"6.50","volume_24h_btc":"283","last":"76.67","index_price":"76.63","mark_price":"76.634","funding_rate_indicative":"0.0001","funding_rate":"0.0001","contract":"LTC_USD","low_24h":"71.51","volume_24h":"370227"},{"total_size":"31481","volume_24h_usd":"34013","quanto_base_rate":"1.668e-05","high_24h":"0.09895","change_percentage":"3.08","volume_24h_btc":"5","last":"0.09875","index_price":"0.098413","mark_price":"0.09842","funding_rate_indicative":"0.0001","funding_rate":"0.0001","contract":"XLM_USD","low_24h":"0.09285","volume_24h":"58379"},{"total_size":"559306","volume_24h_usd":"81085","quanto_base_rate":"0.00901243","high_24h":"53.6","change_percentage":"1.91","volume_24h_btc":"13","last":"53.25","index_price":"53.17","mark_price":"53.17","funding_rate_indicative":"0.0001","funding_rate":"0.0001","contract":"BSV_USD","low_24h":"51.5","volume_24h":"258088"},{"total_size":"904143","volume_24h_usd":"827269","quanto_base_rate":"0.00039613","high_24h":"2.3405","change_percentage":"1.04","volume_24h_btc":"140","last":"2.3305","index_price":"2.3374","mark_price":"2.3353","funding_rate_indicative":"-0.001534","funding_rate":"-0.001867","contract":"HT_USD","low_24h":"2.2545","volume_24h":"601650"},{"total_size":"96354","volume_24h_usd":"1062318","quanto_base_rate":"0.00018561","high_24h":"1.102","change_percentage":"5.85","volume_24h_btc":"180","last":"1.0955","index_price":"1.0953","mark_price":"1.096","funding_rate_indicative":"0.0001","funding_rate":"0.001371","contract":"ONT_USD","low_24h":"1.0155","volume_24h":"164357"},{"total_size":"1060991","volume_24h_usd":"1125924","quanto_base_rate":"0.00372973","high_24h":"22.655","change_percentage":"0.79","volume_24h_btc":"190","last":"22.425","index_price":"22.0098","mark_price":"22.027","funding_rate_indicative":"0.002836","funding_rate":"0.00163","contract":"BNB_USD","low_24h":"21.5","volume_24h":"850986"},{"total_size":"241383","volume_24h_usd":"92566","quanto_base_rate":"1.066e-07","high_24h":"0.000636","change_percentage":"4.81","volume_24h_btc":"15","last":"0.0006325","index_price":"0.0006289","mark_price":"0.00063","funding_rate_indicative":"0.0001","funding_rate":"0.003609","contract":"BTT_USD","low_24h":"0.000601","volume_24h":"248049"},{"total_size":"572922","volume_24h_usd":"3633376","quanto_base_rate":"0.04974588","high_24h":"297.2","change_percentage":"3.83","volume_24h_btc":"615","last":"292.75","index_price":"293.43","mark_price":"293.44","funding_rate_indicative":"0.0001","funding_rate":"0.0001","contract":"BCH_USD","low_24h":"274.75","volume_24h":"2103581"},{"total_size":"527087","volume_24h_usd":"3284225","quanto_base_rate":"0.0008386","high_24h":"5.018","change_percentage":"5.90","volume_24h_btc":"556","last":"4.968","index_price":"4.9484","mark_price":"4.95","funding_rate_indicative":"0.000244","funding_rate":"0.000667","contract":"EOS_USD","low_24h":"4.625","volume_24h":"1120462"},{"total_size":"61673","volume_24h_usd":"16888","quanto_base_rate":"0.01029233","high_24h":"61.75","change_percentage":"3.74","volume_24h_btc":"2","last":"61","index_price":"60.73","mark_price":"60.73","funding_rate_indicative":"0.00017","funding_rate":"0.0001","contract":"ZEC_USD","low_24h":"58.2","volume_24h":"46926"},{"total_size":"17792","volume_24h_usd":"31401","quanto_base_rate":"0.00036558","high_24h":"2.18","change_percentage":"5.17","volume_24h_btc":"5","last":"2.155","index_price":"2.1569","mark_price":"2.157","funding_rate_indicative":"0.0001","funding_rate":"0.0001","contract":"WAVES_USD","low_24h":"2.023","volume_24h":"24697"},{"total_size":"41706","volume_24h_usd":"203429","quanto_base_rate":"1.142e-05","high_24h":"0.06834","change_percentage":"5.19","volume_24h_btc":"34","last":"0.06744","index_price":"0.067378","mark_price":"0.06738","funding_rate_indicative":"0.0001","funding_rate":"0.0001","contract":"ADA_USD","low_24h":"0.06316","volume_24h":"51126"},{"total_size":"279055","volume_24h_usd":"453058","quanto_base_rate":"5.128e-05","high_24h":"0.3051","change_percentage":"2.75","volume_24h_btc":"76","last":"0.3031","index_price":"0.3026","mark_price":"0.3026","funding_rate_indicative":"0.0001","funding_rate":"0.0001","contract":"XRP_USD","low_24h":"0.2933","volume_24h":"253346"},{"total_size":"12373","volume_24h_usd":"18846","quanto_base_rate":"0.01182267","high_24h":"71.08","change_percentage":"9.02","volume_24h_btc":"3","last":"70.86","index_price":"69.75","mark_price":"69.753","funding_rate_indicative":"0.0001","funding_rate":"0.0001","contract":"XMR_USD","low_24h":"64.49","volume_24h":"4508"},{"total_size":"1958517","volume_24h_usd":"11530746","quanto_base_rate":"0.03012","high_24h":"180.85","change_percentage":"11.66","volume_24h_btc":"1954","last":"177.7","index_price":"177.67","mark_price":"177.68","funding_rate_indicative":"0.0001","funding_rate":"0.0001","contract":"ETH_USD","low_24h":"157.7","volume_24h":"10998052"},{"total_size":"63834","volume_24h_usd":"115338","quanto_base_rate":"0.00098853","high_24h":"5.9","change_percentage":"6.57","volume_24h_btc":"19","last":"5.84","index_price":"5.8319","mark_price":"5.832","funding_rate_indicative":"0.0001","funding_rate":"0.0001","contract":"ETC_USD","low_24h":"5.47","volume_24h":"33474"},{"total_size":"8491108","volume_24h_usd":"42219990","high_24h":"5950","change_percentage":"4.95","volume_24h_btc":"7155","last":"5890.5","index_price":"5900.03","mark_price":"5899.12","funding_rate_indicative":"-0.000174","funding_rate":"-0.000322","contract":"BTC_USD","low_24h":"5580","volume_24h":"42219990"}]
+
+'
+    http_version: 
+  recorded_at: Tue, 07 May 2019 04:09:17 GMT
+recorded_with: VCR 4.0.0

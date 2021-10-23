@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.btse.com/futures/api/v1/market_summary
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.btse.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 15 Nov 2019 09:46:17 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '4245'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - incap_ses_1234_1816178=RycVGkXm6FpMM7oR2AwgEehzzl0AAAAAGu8+oPdJB+gugHm8tZF9Bg==;
+        path=/; Domain=.btse.com
+      - nlbi_1816178=9DYFCUxIFjJAGx+JCV6+vwAAAAB3ZEdIm6yowJnHMhjQDdXZ; path=/; Domain=.btse.com
+      - visid_incap_1816178=AlX63euoSoSy+4cS2CHp5uhzzl0AAAAAQUIPAAAAAAC52p0zOLVDoIqXsqcyb8FK;
+        expires=Sat, 14 Nov 2020 09:16:32 GMT; path=/; Domain=.btse.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Iinfo:
+      - 11-79464079-79464134 NNNN CT(55 53 0) RT(1573811176013 617) q(0 0 1 -1) r(2
+        2) U5
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"contract_end":1585296030,"symbol":"BTCH20","last":8607.5,"openInterest":627406.0,"percentageChange":0.2504,"openInterestUSD":5388231.4,"lowestAsk":8596.0,"contract_start":1573027200,"low24Hr":8497.5,"target":"USD","volume":770633.757,"high24Hr":8772.0,"highestBid":8592.0,"base":"BTC"},{"contract_end":"","symbol":"BTCPFC","last":8586.0,"openInterest":1342751.0,"percentageChange":-0.099,"openInterestUSD":1.152713871E7,"lowestAsk":8587.5,"contract_start":"","low24Hr":8496.0,"target":"USD","volume":7.25952102935E7,"high24Hr":8768.5,"highestBid":8585.5,"base":"BTC"},{"contract_end":1577433630,"symbol":"LTCZ19","last":59.85,"openInterest":126365.0,"percentageChange":1.9591,"openInterestUSD":75624.84,"lowestAsk":59.95,"contract_start":1566547200,"low24Hr":58.45,"target":"USD","volume":149935.0425,"high24Hr":60.7,"highestBid":59.9,"base":"LTC"},{"contract_end":"","symbol":"USDTPFC","last":0.9984,"openInterest":51249.0,"percentageChange":-0.0201,"openInterestUSD":511347.74,"lowestAsk":0.9984,"contract_start":"","low24Hr":0.9965,"target":"USD","volume":1345067.6949999998,"high24Hr":0.9994,"highestBid":0.9974,"base":"USDT"},{"contract_end":1575014430,"symbol":"ETHX19","last":183.9,"openInterest":78023.0,"percentageChange":-0.4332,"openInterestUSD":143485.83,"lowestAsk":183.9,"contract_start":1571385600,"low24Hr":181.15,"target":"USD","volume":715211.8809999999,"high24Hr":186.25,"highestBid":183.75,"base":"ETH"},{"contract_end":1575014430,"symbol":"XMRX19","last":64.78,"openInterest":67746.0,"percentageChange":0.1236,"openInterestUSD":44055.78,"lowestAsk":65.4,"contract_start":1569916800,"low24Hr":64.54,"target":"USD","volume":14755.794,"high24Hr":65.43,"highestBid":64.88,"base":"XMR"},{"contract_end":1577433630,"symbol":"BBCXZ19","last":104.85,"openInterest":18348.0,"percentageChange":-0.1904,"openInterestUSD":19289.58,"lowestAsk":105.45,"contract_start":1566547200,"low24Hr":103.65,"target":"USD","volume":7450.2915,"high24Hr":108.3,"highestBid":104.8,"base":"BBCX"},{"contract_end":1575014430,"symbol":"BTCX19","last":8597.5,"openInterest":703926.0,"percentageChange":0.0931,"openInterestUSD":6043021.61,"lowestAsk":8589.0,"contract_start":1571385600,"low24Hr":8494.5,"target":"USD","volume":2646932.832,"high24Hr":8755.0,"highestBid":8585.0,"base":"BTC"},{"contract_end":1575014430,"symbol":"LTCX19","last":60.05,"openInterest":107949.0,"percentageChange":2.387,"openInterestUSD":64666.01,"lowestAsk":60.05,"contract_start":1571385600,"low24Hr":58.4,"target":"USD","volume":105807.1675,"high24Hr":60.6,"highestBid":59.95,"base":"LTC"},{"contract_end":1575014430,"symbol":"BBCXX19","last":105.1,"openInterest":28070.0,"percentageChange":-0.0951,"openInterestUSD":29504.36,"lowestAsk":105.35,"contract_start":1569916800,"low24Hr":104.0,"target":"USD","volume":5813.8005,"high24Hr":106.3,"highestBid":104.9,"base":"BBCX"},{"contract_end":1577433630,"symbol":"XMRZ19","last":65.59,"openInterest":31423.0,"percentageChange":-0.061,"openInterestUSD":20511.44,"lowestAsk":66.19,"contract_start":1566547200,"low24Hr":63.67,"target":"USD","volume":636.0213,"high24Hr":65.74,"highestBid":64.64,"base":"XMR"},{"contract_end":"","symbol":"ETHPFC","last":183.85,"openInterest":123277.0,"percentageChange":-0.5141,"openInterestUSD":226612.48,"lowestAsk":183.9,"contract_start":"","low24Hr":181.15,"target":"USD","volume":2313004.5130000003,"high24Hr":186.25,"highestBid":183.8,"base":"ETH"},{"contract_end":1577433630,"symbol":"ETHZ19","last":184.05,"openInterest":86883.0,"percentageChange":-0.271,"openInterestUSD":159742.33,"lowestAsk":184.1,"contract_start":1566547200,"low24Hr":180.8,"target":"USD","volume":695814.4555,"high24Hr":186.2,"highestBid":183.85,"base":"ETH"},{"contract_end":1577433630,"symbol":"BTCZ19","last":8590.0,"openInterest":690567.0,"percentageChange":0.1574,"openInterestUSD":5928782.76,"lowestAsk":8590.0,"contract_start":1566547200,"low24Hr":8512.5,"target":"USD","volume":782383.0845,"high24Hr":8760.0,"highestBid":8585.0,"base":"BTC"},{"contract_end":"","symbol":"LTCPFC","last":59.8,"openInterest":372222.0,"percentageChange":1.9607,"openInterestUSD":222729.35,"lowestAsk":59.85,"contract_start":"","low24Hr":58.45,"target":"USD","volume":376657.3535,"high24Hr":60.55,"highestBid":59.8,"base":"LTC"}]'
+    http_version: 
+  recorded_at: Fri, 15 Nov 2019 09:46:17 GMT
+recorded_with: VCR 4.0.0

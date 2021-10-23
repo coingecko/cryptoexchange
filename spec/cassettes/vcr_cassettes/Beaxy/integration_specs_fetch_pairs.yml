@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://services.beaxy.com/api/v2/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - services.beaxy.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 25 Feb 2020 03:39:38 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d5f684e02ae5fa8b3c54afe322cdac51b1582601977; expires=Thu, 26-Mar-20
+        03:39:37 GMT; path=/; domain=.beaxy.com; HttpOnly; SameSite=Lax; Secure
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 56a6a73a282dc0f5-KUL
+    body:
+      encoding: UTF-8
+      string: '[{"symbol":"ETCBTC","name":"ETCBTC","minimumQuantity":2.0,"maximumQuantity":1000000.0,"quantityIncrement":0.01,"quantityPrecision":2,"tickSize":1.0E-6,"baseCurrency":"ETC","termCurrency":"BTC","pricePrecision":6,"suspendedForTrading":false},{"symbol":"GOBTC","name":"GOBTC","minimumQuantity":700.0,"maximumQuantity":1000000.0,"quantityIncrement":1.0,"quantityPrecision":0,"tickSize":1.0E-8,"baseCurrency":"GO","termCurrency":"BTC","pricePrecision":8,"suspendedForTrading":false},{"symbol":"BTCUSDC","name":"BTCUSDC","minimumQuantity":0.0014,"maximumQuantity":1000000.0,"quantityIncrement":1.0E-6,"quantityPrecision":6,"tickSize":0.01,"baseCurrency":"BTC","termCurrency":"USDC","pricePrecision":2,"suspendedForTrading":false},{"symbol":"VIDBTC","name":"VIDBTC","minimumQuantity":74.5,"maximumQuantity":1000000.0,"quantityIncrement":0.1,"quantityPrecision":1,"tickSize":1.0E-7,"baseCurrency":"VID","termCurrency":"BTC","pricePrecision":7,"suspendedForTrading":false},{"symbol":"ZECBTC","name":"ZECBTC","minimumQuantity":0.3,"maximumQuantity":1000000.0,"quantityIncrement":0.01,"quantityPrecision":2,"tickSize":1.0E-6,"baseCurrency":"ZEC","termCurrency":"BTC","pricePrecision":6,"suspendedForTrading":false},{"symbol":"BATBTC","name":"BATBTC","minimumQuantity":45.0,"maximumQuantity":1000000.0,"quantityIncrement":1.0,"quantityPrecision":0,"tickSize":1.0E-8,"baseCurrency":"BAT","termCurrency":"BTC","pricePrecision":8,"suspendedForTrading":false},{"symbol":"XRPBTC","name":"XRPBTC","minimumQuantity":35.0,"maximumQuantity":1000000.0,"quantityIncrement":1.0,"quantityPrecision":0,"tickSize":1.0E-8,"baseCurrency":"XRP","termCurrency":"BTC","pricePrecision":8,"suspendedForTrading":false},{"symbol":"TOMOBTC","name":"TOMOBTC","minimumQuantity":28.4,"maximumQuantity":1000000.0,"quantityIncrement":0.1,"quantityPrecision":1,"tickSize":1.0E-8,"baseCurrency":"TOMO","termCurrency":"BTC","pricePrecision":8,"suspendedForTrading":false},{"symbol":"AIONBTC","name":"AIONBTC","minimumQuantity":111.5,"maximumQuantity":1000000.0,"quantityIncrement":0.01,"quantityPrecision":2,"tickSize":1.0E-7,"baseCurrency":"AION","termCurrency":"BTC","pricePrecision":7,"suspendedForTrading":false},{"symbol":"ZRXBTC","name":"ZRXBTC","minimumQuantity":35.0,"maximumQuantity":1000000.0,"quantityIncrement":1.0,"quantityPrecision":0,"tickSize":1.0E-8,"baseCurrency":"ZRX","termCurrency":"BTC","pricePrecision":8,"suspendedForTrading":false},{"symbol":"ETHUSDC","name":"ETHUSDC","minimumQuantity":0.068,"maximumQuantity":1000000.0,"quantityIncrement":1.0E-5,"quantityPrecision":5,"tickSize":0.01,"baseCurrency":"ETH","termCurrency":"USDC","pricePrecision":2,"suspendedForTrading":false},{"symbol":"EOSBTC","name":"EOSBTC","minimumQuantity":3.0,"maximumQuantity":1000000.0,"quantityIncrement":1.0,"quantityPrecision":0,"tickSize":1.0E-8,"baseCurrency":"EOS","termCurrency":"BTC","pricePrecision":8,"suspendedForTrading":false},{"symbol":"WAVESBTC","name":"WAVESBTC","minimumQuantity":15.0,"maximumQuantity":1000000.0,"quantityIncrement":0.01,"quantityPrecision":2,"tickSize":1.0E-6,"baseCurrency":"WAVES","termCurrency":"BTC","pricePrecision":6,"suspendedForTrading":false},{"symbol":"XMRBTC","name":"XMRBTC","minimumQuantity":0.15,"maximumQuantity":1000000.0,"quantityIncrement":0.01,"quantityPrecision":2,"tickSize":1.0E-6,"baseCurrency":"XMR","termCurrency":"BTC","pricePrecision":6,"suspendedForTrading":false},{"symbol":"DASHBTC","name":"DASHBTC","minimumQuantity":0.15,"maximumQuantity":1000000.0,"quantityIncrement":0.001,"quantityPrecision":3,"tickSize":1.0E-6,"baseCurrency":"DASH","termCurrency":"BTC","pricePrecision":6,"suspendedForTrading":false},{"symbol":"ICXBTC","name":"ICXBTC","minimumQuantity":60.0,"maximumQuantity":1000000.0,"quantityIncrement":0.1,"quantityPrecision":1,"tickSize":1.0E-7,"baseCurrency":"ICX","termCurrency":"BTC","pricePrecision":7,"suspendedForTrading":false},{"symbol":"BCHBTC","name":"BCHBTC","minimumQuantity":0.04,"maximumQuantity":1000000.0,"quantityIncrement":0.001,"quantityPrecision":3,"tickSize":1.0E-6,"baseCurrency":"BCH","termCurrency":"BTC","pricePrecision":6,"suspendedForTrading":false},{"symbol":"MTLBTC","name":"MTLBTC","minimumQuantity":30.0,"maximumQuantity":1000000.0,"quantityIncrement":1.0,"quantityPrecision":0,"tickSize":1.0E-8,"baseCurrency":"MTL","termCurrency":"BTC","pricePrecision":8,"suspendedForTrading":false},{"symbol":"FTMBTC","name":"FTMBTC","minimumQuantity":600.0,"maximumQuantity":1000000.0,"quantityIncrement":1.0,"quantityPrecision":0,"tickSize":1.0E-8,"baseCurrency":"FTM","termCurrency":"BTC","pricePrecision":8,"suspendedForTrading":false},{"symbol":"ETHBTC","name":"ETHBTC","minimumQuantity":0.055,"maximumQuantity":1000000.0,"quantityIncrement":0.001,"quantityPrecision":3,"tickSize":1.0E-6,"baseCurrency":"ETH","termCurrency":"BTC","pricePrecision":6,"suspendedForTrading":false},{"symbol":"BXYBTC","name":"BXYBTC","minimumQuantity":1.0,"maximumQuantity":1000000.0,"quantityIncrement":1.0,"quantityPrecision":0,"tickSize":1.0E-8,"baseCurrency":"BXY","termCurrency":"BTC","pricePrecision":8,"suspendedForTrading":false},{"symbol":"NRGBTC","name":"NRGBTC","minimumQuantity":5.3,"maximumQuantity":1000000.0,"quantityIncrement":0.01,"quantityPrecision":2,"tickSize":1.0E-7,"baseCurrency":"NRG","termCurrency":"BTC","pricePrecision":7,"suspendedForTrading":false},{"symbol":"NEOBTC","name":"NEOBTC","minimumQuantity":0.9,"maximumQuantity":1000000.0,"quantityIncrement":0.01,"quantityPrecision":2,"tickSize":1.0E-6,"baseCurrency":"NEO","termCurrency":"BTC","pricePrecision":6,"suspendedForTrading":false},{"symbol":"BXYUSDC","name":"BXYUSDC","minimumQuantity":1500.0,"maximumQuantity":1000000.0,"quantityIncrement":1.0,"quantityPrecision":0,"tickSize":1.0E-4,"baseCurrency":"BXY","termCurrency":"USDC","pricePrecision":4,"suspendedForTrading":false},{"symbol":"BEAMBTC","name":"BEAMBTC","minimumQuantity":14.5,"maximumQuantity":1000000.0,"quantityIncrement":0.1,"quantityPrecision":1,"tickSize":1.0E-7,"baseCurrency":"BEAM","termCurrency":"BTC","pricePrecision":7,"suspendedForTrading":false},{"symbol":"LTCBTC","name":"LTCBTC","minimumQuantity":0.2,"maximumQuantity":1000000.0,"quantityIncrement":0.01,"quantityPrecision":2,"tickSize":1.0E-6,"baseCurrency":"LTC","termCurrency":"BTC","pricePrecision":6,"suspendedForTrading":false},{"symbol":"POLYBTC","name":"POLYBTC","minimumQuantity":345.0,"maximumQuantity":1000000.0,"quantityIncrement":1.0,"quantityPrecision":0,"tickSize":1.0E-8,"baseCurrency":"POLY","termCurrency":"BTC","pricePrecision":8,"suspendedForTrading":false}]'
+    http_version: 
+  recorded_at: Tue, 25 Feb 2020 03:39:38 GMT
+recorded_with: VCR 4.0.0

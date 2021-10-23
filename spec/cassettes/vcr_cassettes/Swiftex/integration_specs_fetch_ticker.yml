@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://trade.swiftex.co/api/v2/peatio/public/markets/myntbtc/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - trade.swiftex.co
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Encoding:
+      - gzip
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Length:
+      - '234'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 03 Jul 2019 06:33:28 GMT
+      Etag:
+      - W/"9292b4541f6aa42e7bf6831800f3b3bd"
+      Host:
+      - trade.swiftex.co
+      Server:
+      - envoy
+      Set-Cookie:
+      - _session_id=rsw6RRYKbbYDb5DkRxtovbc248STxRwZ6POAJGEKCx8OoDPpsh2z7x5q7MxFl9Pb3czrgOqrDQyIOFTWVw%3D%3D--PQ32B%2BPWzxtwY8ni--O4QjvVTRCGLsNanTm5ecUw%3D%3D;
+        path=/; HttpOnly
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Vary:
+      - Origin
+      Version:
+      - HTTP/1.1
+      X-Envoy-Expected-Rq-Timeout-Ms:
+      - '15000'
+      X-Envoy-Original-Path:
+      - "/api/v2/peatio/public/markets/myntbtc/tickers"
+      X-Envoy-Upstream-Service-Time:
+      - '8'
+      X-Forwarded-For:
+      - 118.100.1.62
+      X-Forwarded-Host:
+      - trade.swiftex.co
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Forwarded-Server:
+      - swiftex
+      X-Real-Ip:
+      - 118.100.1.62
+      X-Request-Id:
+      - 7cea5c5f-5551-4bf9-b29b-d2fb4684ecc2
+      X-Runtime:
+      - '0.005714'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1562135609,"ticker":{"buy":"0.000000001","sell":"0.00000002","low":"0.000000019","high":"0.00000002","open":"0.00000002","last":"0.00000002","volume":"2.0","avg_price":"0.0000000195","price_change_percent":"+0.00%","vol":"2.0"}}'
+    http_version: 
+  recorded_at: Wed, 03 Jul 2019 06:33:29 GMT
+recorded_with: VCR 4.0.0

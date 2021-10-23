@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tdax.com/api/orders/?pair=btc_thb
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.tdax.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 21 Jan 2020 06:18:20 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '804'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d099a4628e1b4923801be6a049226a56d1579587499; expires=Thu, 20-Feb-20
+        06:18:19 GMT; path=/; domain=.tdax.com; HttpOnly; SameSite=Lax; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-New-Access-Token,X-New-Secret,X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset
+      Vary:
+      - Origin
+      Strict-Transport-Security:
+      - max-age=0
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 55872b8def2e338f-HKG
+    body:
+      encoding: UTF-8
+      string: '{"bid":[{"price":"261100","amount":"0.57802"},{"price":"261001","amount":"0.14"},{"price":"261000","amount":"0.88399472761715237"},{"price":"261000","amount":"0.191"},{"price":"261000","amount":"0.002"},{"price":"260500","amount":"0.001"},{"price":"260150","amount":"0.005"},{"price":"260101.0000001","amount":"0.5"},{"price":"260101","amount":"0.009611650858704888"},{"price":"260000","amount":"0.03033"}],"ask":[{"price":"263000","amount":"0.8693388593155893536"},{"price":"264000","amount":"0.04175"},{"price":"264989","amount":"0.001"},{"price":"265000","amount":"0.00536"},{"price":"265000","amount":"0.0019"},{"price":"265000","amount":"0.04471"},{"price":"265500","amount":"0.03"},{"price":"265899","amount":"0.00241"},{"price":"265899","amount":"0.00091"},{"price":"265899","amount":"0.01219"}]}
+
+'
+    http_version: 
+  recorded_at: Tue, 21 Jan 2020 06:18:20 GMT
+recorded_with: VCR 4.0.0

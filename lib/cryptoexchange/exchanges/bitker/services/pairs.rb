@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Bitker
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitker::Market::API_URL}/allticker/"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitker::Market::API_URL}/tickers"
 
         def fetch
           output = super

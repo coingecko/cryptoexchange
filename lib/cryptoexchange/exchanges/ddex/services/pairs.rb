@@ -10,8 +10,9 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output['data']['tickers'].map do |output|
-            base, target = output['pair'].split('-')
+          output['data']['tickers'].map do |pair|
+            base, target = pair['marketId'].split('-')
+
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,

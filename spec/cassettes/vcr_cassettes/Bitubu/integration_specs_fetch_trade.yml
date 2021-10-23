@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitubu.com/api/v2/trades?market=ltcbtc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitubu.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 24 Jan 2020 10:01:11 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '8535'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=da1516c7c55982f3e0ba1aacbf926e6411579860071; expires=Sun, 23-Feb-20
+        10:01:11 GMT; path=/; domain=.bitubu.com; HttpOnly; SameSite=Lax; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Version:
+      - HTTP/1.0
+      Host:
+      - bitubu.com
+      X-Forwarded-For:
+      - 124.82.12.43, 162.158.167.117
+      X-Forwarded-Proto:
+      - http
+      X-Real-Ip:
+      - 162.158.167.117
+      X-Forwarded-Ssl:
+      - 'on'
+      Accept-Encoding:
+      - gzip
+      Cf-Ipcountry:
+      - MY
+      Cf-Visitor:
+      - '{"scheme":"https"}'
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Cf-Connecting-Ip:
+      - 124.82.12.43
+      Cdn-Loop:
+      - cloudflare
+      Etag:
+      - W/"72490a7884d25b1a784cb3b3ce80f8fc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a3b9a614-c8c6-4850-93c1-02c24fb2ffac
+      X-Runtime:
+      - '0.055656'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 55a12a25fc23c331-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":2332947,"price":"0.006188","volume":"0.000123","funds":"0.000000761124","market":"ltcbtc","created_at":"2020-01-24T12:59:36+03:00","maker_type":"buy","type":"buy"},{"id":2332946,"price":"0.00619","volume":"0.002811","funds":"0.00001740009","market":"ltcbtc","created_at":"2020-01-24T12:59:36+03:00","maker_type":"buy","type":"buy"},{"id":2332926,"price":"0.006189","volume":"0.000145","funds":"0.000000897405","market":"ltcbtc","created_at":"2020-01-24T12:59:22+03:00","maker_type":"sell","type":"sell"},{"id":2332925,"price":"0.006187","volume":"0.000044","funds":"0.000000272228","market":"ltcbtc","created_at":"2020-01-24T12:59:22+03:00","maker_type":"sell","type":"sell"},{"id":2332922,"price":"0.006182","volume":"0.000313","funds":"0.000001934966","market":"ltcbtc","created_at":"2020-01-24T12:59:18+03:00","maker_type":"sell","type":"sell"},{"id":2332911,"price":"0.006182","volume":"0.002923","funds":"0.000018069986","market":"ltcbtc","created_at":"2020-01-24T12:59:14+03:00","maker_type":"sell","type":"sell"},{"id":2332910,"price":"0.006181","volume":"0.000077","funds":"0.000000475937","market":"ltcbtc","created_at":"2020-01-24T12:59:14+03:00","maker_type":"sell","type":"sell"},{"id":2332901,"price":"0.006181","volume":"0.002993","funds":"0.000018499733","market":"ltcbtc","created_at":"2020-01-24T12:59:10+03:00","maker_type":"sell","type":"sell"},{"id":2332896,"price":"0.00618","volume":"0.000555","funds":"0.0000034299","market":"ltcbtc","created_at":"2020-01-24T12:59:06+03:00","maker_type":"sell","type":"sell"},{"id":2332886,"price":"0.00618","volume":"0.001193","funds":"0.00000737274","market":"ltcbtc","created_at":"2020-01-24T12:59:02+03:00","maker_type":"sell","type":"sell"},{"id":2332885,"price":"0.006179","volume":"0.0019","funds":"0.0000117401","market":"ltcbtc","created_at":"2020-01-24T12:59:01+03:00","maker_type":"sell","type":"sell"},{"id":2332879,"price":"0.006179","volume":"0.003","funds":"0.000018537","market":"ltcbtc","created_at":"2020-01-24T12:58:57+03:00","maker_type":"sell","type":"sell"},{"id":2332855,"price":"0.006178","volume":"0.00264","funds":"0.00001630992","market":"ltcbtc","created_at":"2020-01-24T12:58:41+03:00","maker_type":"sell","type":"sell"},{"id":2332766,"price":"0.006175","volume":"0.000535","funds":"0.000003303625","market":"ltcbtc","created_at":"2020-01-24T12:56:53+03:00","maker_type":"buy","type":"buy"},{"id":2332749,"price":"0.006176","volume":"0.003","funds":"0.000018528","market":"ltcbtc","created_at":"2020-01-24T12:56:42+03:00","maker_type":"sell","type":"sell"},{"id":2332743,"price":"0.006174","volume":"0.004859","funds":"0.000029999466","market":"ltcbtc","created_at":"2020-01-24T12:56:38+03:00","maker_type":"sell","type":"sell"},{"id":2332742,"price":"0.006173","volume":"0.001915","funds":"0.000011821295","market":"ltcbtc","created_at":"2020-01-24T12:56:38+03:00","maker_type":"sell","type":"sell"},{"id":2332736,"price":"0.006171","volume":"0.003835","funds":"0.000023665785","market":"ltcbtc","created_at":"2020-01-24T12:56:34+03:00","maker_type":"sell","type":"sell"},{"id":2332729,"price":"0.006171","volume":"0.000948","funds":"0.000005850108","market":"ltcbtc","created_at":"2020-01-24T12:56:30+03:00","maker_type":"sell","type":"sell"},{"id":2332713,"price":"0.006171","volume":"0.00012","funds":"0.00000074052","market":"ltcbtc","created_at":"2020-01-24T12:56:18+03:00","maker_type":"sell","type":"sell"},{"id":2332709,"price":"0.006167","volume":"0.001392","funds":"0.000008584464","market":"ltcbtc","created_at":"2020-01-24T12:56:14+03:00","maker_type":"sell","type":"sell"},{"id":2332704,"price":"0.006167","volume":"0.003525","funds":"0.000021738675","market":"ltcbtc","created_at":"2020-01-24T12:56:10+03:00","maker_type":"sell","type":"sell"},{"id":2332691,"price":"0.006167","volume":"0.001177","funds":"0.000007258559","market":"ltcbtc","created_at":"2020-01-24T12:56:03+03:00","maker_type":"sell","type":"sell"},{"id":2332639,"price":"0.006167","volume":"0.000273","funds":"0.000001683591","market":"ltcbtc","created_at":"2020-01-24T12:55:46+03:00","maker_type":"sell","type":"sell"},{"id":2332638,"price":"0.006166","volume":"0.001","funds":"0.000006166","market":"ltcbtc","created_at":"2020-01-24T12:55:46+03:00","maker_type":"sell","type":"sell"},{"id":2332637,"price":"0.006165","volume":"0.001028","funds":"0.00000633762","market":"ltcbtc","created_at":"2020-01-24T12:55:45+03:00","maker_type":"sell","type":"sell"},{"id":2332636,"price":"0.006164","volume":"0.002595","funds":"0.00001599558","market":"ltcbtc","created_at":"2020-01-24T12:55:45+03:00","maker_type":"sell","type":"sell"},{"id":2332595,"price":"0.006164","volume":"0.003127","funds":"0.000019274828","market":"ltcbtc","created_at":"2020-01-24T12:55:37+03:00","maker_type":"sell","type":"sell"},{"id":2332578,"price":"0.006164","volume":"0.003","funds":"0.000018492","market":"ltcbtc","created_at":"2020-01-24T12:55:33+03:00","maker_type":"sell","type":"sell"},{"id":2332570,"price":"0.006164","volume":"0.005136","funds":"0.000031658304","market":"ltcbtc","created_at":"2020-01-24T12:55:29+03:00","maker_type":"sell","type":"sell"},{"id":2332534,"price":"0.006161","volume":"0.002535","funds":"0.000015618135","market":"ltcbtc","created_at":"2020-01-24T12:55:08+03:00","maker_type":"sell","type":"sell"},{"id":2332492,"price":"0.00616","volume":"0.007043","funds":"0.00004338488","market":"ltcbtc","created_at":"2020-01-24T12:54:38+03:00","maker_type":"buy","type":"buy"},{"id":2332463,"price":"0.006161","volume":"0.005496","funds":"0.000033860856","market":"ltcbtc","created_at":"2020-01-24T12:54:19+03:00","maker_type":"sell","type":"sell"},{"id":2332455,"price":"0.00616","volume":"0.003201","funds":"0.00001971816","market":"ltcbtc","created_at":"2020-01-24T12:54:16+03:00","maker_type":"sell","type":"sell"},{"id":2332454,"price":"0.006156","volume":"0.002449","funds":"0.000015076044","market":"ltcbtc","created_at":"2020-01-24T12:54:16+03:00","maker_type":"sell","type":"sell"},{"id":2332453,"price":"0.006155","volume":"0.010852","funds":"0.00006679406","market":"ltcbtc","created_at":"2020-01-24T12:54:15+03:00","maker_type":"sell","type":"sell"},{"id":2332452,"price":"0.006154","volume":"0.007626","funds":"0.000046930404","market":"ltcbtc","created_at":"2020-01-24T12:54:15+03:00","maker_type":"sell","type":"sell"},{"id":2332451,"price":"0.006152","volume":"0.000733","funds":"0.000004509416","market":"ltcbtc","created_at":"2020-01-24T12:54:15+03:00","maker_type":"sell","type":"sell"},{"id":2332430,"price":"0.006152","volume":"0.00012","funds":"0.00000073824","market":"ltcbtc","created_at":"2020-01-24T12:54:07+03:00","maker_type":"sell","type":"sell"},{"id":2332424,"price":"0.006152","volume":"0.000051","funds":"0.000000313752","market":"ltcbtc","created_at":"2020-01-24T12:53:59+03:00","maker_type":"sell","type":"sell"},{"id":2332420,"price":"0.006152","volume":"0.003","funds":"0.000018456","market":"ltcbtc","created_at":"2020-01-24T12:53:55+03:00","maker_type":"sell","type":"sell"},{"id":2332417,"price":"0.006152","volume":"0.001659","funds":"0.000010206168","market":"ltcbtc","created_at":"2020-01-24T12:53:51+03:00","maker_type":"sell","type":"sell"},{"id":2332416,"price":"0.006151","volume":"0.000156","funds":"0.000000959556","market":"ltcbtc","created_at":"2020-01-24T12:53:51+03:00","maker_type":"sell","type":"sell"},{"id":2332378,"price":"0.00615","volume":"0.000315","funds":"0.00000193725","market":"ltcbtc","created_at":"2020-01-24T12:53:22+03:00","maker_type":"sell","type":"sell"},{"id":2332377,"price":"0.006148","volume":"0.003201","funds":"0.000019679748","market":"ltcbtc","created_at":"2020-01-24T12:53:22+03:00","maker_type":"sell","type":"sell"},{"id":2332376,"price":"0.006146","volume":"0.000553","funds":"0.000003398738","market":"ltcbtc","created_at":"2020-01-24T12:53:22+03:00","maker_type":"sell","type":"sell"},{"id":2332374,"price":"0.006146","volume":"0.003073","funds":"0.000018886658","market":"ltcbtc","created_at":"2020-01-24T12:53:18+03:00","maker_type":"sell","type":"sell"},{"id":2332371,"price":"0.006146","volume":"0.001434","funds":"0.000008813364","market":"ltcbtc","created_at":"2020-01-24T12:53:14+03:00","maker_type":"sell","type":"sell"},{"id":2332370,"price":"0.006144","volume":"0.00083","funds":"0.00000509952","market":"ltcbtc","created_at":"2020-01-24T12:53:14+03:00","maker_type":"sell","type":"sell"},{"id":2332369,"price":"0.006143","volume":"0.001154","funds":"0.000007089022","market":"ltcbtc","created_at":"2020-01-24T12:53:14+03:00","maker_type":"sell","type":"sell"}]'
+    http_version: 
+  recorded_at: Fri, 24 Jan 2020 10:01:11 GMT
+recorded_with: VCR 4.0.0

@@ -24,13 +24,13 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Negociecoins::Market::NAME
-          ticker.ask       = NumericHelper.to_d(output['sell'])
-          ticker.bid       = NumericHelper.to_d(output['buy'])
+          ticker.ask       = NumericHelper.to_d(output['buy'])
+          ticker.bid       = NumericHelper.to_d(output['sell'])
           ticker.last      = NumericHelper.to_d(output['last'])
           ticker.high      = NumericHelper.to_d(output['high'])
           ticker.low       = NumericHelper.to_d(output['low'])
           ticker.volume    = NumericHelper.to_d(output['vol'])
-          ticker.timestamp = NumericHelper.to_d(output['date']).to_i
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

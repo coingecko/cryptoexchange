@@ -1,0 +1,132 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.deribit.com/api/v2/public/get_book_summary_by_instrument?instrument_name=BTC-PERPETUAL&kind=future
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.deribit.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Jan 2020 05:06:13 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '489'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Authorization,User-Agent,Range,X-Requested-With,Content-Type,Partner
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"jsonrpc":"2.0","result":[{"volume_usd":209783120.0,"volume":29719.0,"quote_currency":"USD","open_interest":78745760,"mid_price":7211.75,"mark_price":7211.66,"low":6856.5,"last":7212.0,"instrument_name":"BTC-PERPETUAL","high":7300.0,"funding_8h":0.00000508,"estimated_delivery_price":7211.55,"current_funding":0.0,"creation_timestamp":1578027973535,"bid_price":7211.5,"base_currency":"BTC","ask_price":7212.0}],"usIn":1578027973535913,"usOut":1578027973535974,"usDiff":61,"testnet":false}'
+    http_version: 
+  recorded_at: Fri, 03 Jan 2020 05:06:13 GMT
+- request:
+    method: get
+    uri: https://www.deribit.com/api/v2/public/get_index?currency=BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.deribit.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Jan 2020 05:06:14 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '133'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Authorization,User-Agent,Range,X-Requested-With,Content-Type,Partner
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"jsonrpc":"2.0","result":{"edp":7211.54,"BTC":7211.54},"usIn":1578027974711165,"usOut":1578027974711190,"usDiff":25,"testnet":false}'
+    http_version: 
+  recorded_at: Fri, 03 Jan 2020 05:06:14 GMT
+- request:
+    method: get
+    uri: https://www.deribit.com/api/v2/public/get_book_summary_by_instrument?instrument_name=BTC-PERPETUAL&kind=future
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.deribit.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Jan 2020 05:06:15 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '489'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Authorization,User-Agent,Range,X-Requested-With,Content-Type,Partner
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"jsonrpc":"2.0","result":[{"volume_usd":209860670.0,"volume":29729.76,"quote_currency":"USD","open_interest":78730980,"mid_price":7208.25,"mark_price":7210.6,"low":6856.5,"last":7208.5,"instrument_name":"BTC-PERPETUAL","high":7300.0,"funding_8h":0.00000508,"estimated_delivery_price":7210.65,"current_funding":0.0,"creation_timestamp":1578027975848,"bid_price":7208.0,"base_currency":"BTC","ask_price":7208.5}],"usIn":1578027975848537,"usOut":1578027975848620,"usDiff":83,"testnet":false}'
+    http_version: 
+  recorded_at: Fri, 03 Jan 2020 05:06:15 GMT
+recorded_with: VCR 4.0.0

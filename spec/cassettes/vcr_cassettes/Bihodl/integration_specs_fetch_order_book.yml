@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://service.bihodl.com/market/exchange-plate-mini?symbol=BTC/USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - service.bihodl.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.16.0
+      Date:
+      - Thu, 19 Sep 2019 04:40:50 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      X-Application-Context:
+      - bitrade-market:6004
+    body:
+      encoding: UTF-8
+      string: '{"ask":{"minAmount":1.1166E-4,"highestPrice":10273.25,"symbol":"BTC/USDT","lowestPrice":9858.39,"maxAmount":0.0497647,"items":[{"price":9858.39,"amount":0.01719721},{"price":9870.53,"amount":0.04105628},{"price":9874.22,"amount":0.01042046},{"price":9882.23,"amount":8.7965E-4},{"price":9891.38,"amount":0.01055165},{"price":9894.11,"amount":0.0217632},{"price":9914.02,"amount":0.0497647},{"price":9927.46,"amount":0.00312858},{"price":10009.75,"amount":0.02818214},{"price":10137.35,"amount":0.03412369},{"price":10148.11,"amount":0.00745073},{"price":10158.87,"amount":0.03391307},{"price":10168.71,"amount":0.03834948},{"price":10171.07,"amount":0.0300438},{"price":10179.24,"amount":0.0089024},{"price":10186.05,"amount":0.00191943},{"price":10186.66,"amount":0.04212596},{"price":10188.04,"amount":1.1166E-4},{"price":10192.05,"amount":0.0361618},{"price":10192.89,"amount":0.01849649},{"price":10197.27,"amount":0.00978377},{"price":10201.13,"amount":0.02880505},{"price":10204.21,"amount":0.01618568},{"price":10207.26,"amount":0.02112842}],"direction":"SELL"},"bid":{"minAmount":0.00793611,"highestPrice":9759.05,"symbol":"BTC/USDT","lowestPrice":9001.0,"maxAmount":0.24993603,"items":[{"price":9759.05,"amount":0.01112066},{"price":9756.57,"amount":0.01464773},{"price":9740.51,"amount":0.00793611},{"price":9737.0,"amount":0.02570248},{"price":9703.29,"amount":0.03203945},{"price":9642.04,"amount":0.03405174},{"price":9619.98,"amount":0.03353183},{"price":9568.57,"amount":0.036757},{"price":9556.64,"amount":0.04362446},{"price":9384.81,"amount":0.02423211},{"price":9100.0,"amount":0.06881441},{"price":9001.0,"amount":0.24993603}],"direction":"BUY"}}'
+    http_version: 
+  recorded_at: Thu, 19 Sep 2019 04:40:50 GMT
+recorded_with: VCR 4.0.0

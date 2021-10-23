@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.exrates.me/openapi/v1/public/orderbook/lsk_usd
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.exrates.me
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 07 May 2019 06:56:52 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - JSESSIONID=46B612A0F16579EC3D5FF2D495FC1A32;path=/;HttpOnly
+      - __cfduid=de154875fbc73e5029c7c8cbce5c512451557212211; expires=Wed, 06-May-20
+        06:56:51 GMT; path=/; domain=.exrates.me; HttpOnly; Secure
+      Cache-Control:
+      - max-age=30
+      - private
+      Pragma:
+      - no-cache
+      Expires:
+      - Tue, 07 May 2019 06:57:22 GMT
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d314be03a62332f-HKG
+    body:
+      encoding: UTF-8
+      string: '{"SELL":[{"amount":0.011191,"rate":9.99},{"amount":0.00177,"rate":12.94},{"amount":0.012961,"rate":12.94},{"amount":0.0177,"rate":24.94},{"amount":0.03622,"rate":24.94},{"amount":1.68,"rate":25.0},{"amount":0.1069947,"rate":99.989},{"amount":1.0,"rate":100.0},{"amount":1.0,"rate":200.0},{"amount":1.0,"rate":225.0},{"amount":1.0,"rate":300.0},{"amount":1.0,"rate":400.0},{"amount":1.0,"rate":500.0},{"amount":1.0,"rate":600.0},{"amount":1.0,"rate":700.0},{"amount":1.0,"rate":800.0},{"amount":1.0,"rate":900.0},{"amount":0.01,"rate":999.0},{"amount":1.0,"rate":1000.0},{"amount":1.0,"rate":1400.0},{"amount":1.0,"rate":1700.0},{"amount":1.0,"rate":2100.0},{"amount":1.0,"rate":2400.0},{"amount":1.0,"rate":2750.0},{"amount":1.0,"rate":3100.0},{"amount":1.0,"rate":4100.0},{"amount":1.0,"rate":5100.0},{"amount":1.0,"rate":6100.0},{"amount":1.0,"rate":8100.0},{"amount":1.0,"rate":18100.0},{"amount":7.93714E-4,"rate":398100.06}],"BUY":[{"amount":0.499999999,"rate":1.000000001},{"amount":0.104724041,"rate":0.415},{"amount":0.11411,"rate":0.414},{"amount":2.1,"rate":0.412546},{"amount":5.0,"rate":0.401},{"amount":0.224438903,"rate":0.401},{"amount":10.0,"rate":0.00319},{"amount":178.0,"rate":0.003180527},{"amount":10.0,"rate":0.003100501},{"amount":10.0,"rate":0.003100111},{"amount":3042.324438903,"rate":1.0017E-4},{"amount":1000000.0,"rate":1.1E-8},{"amount":100000.0,"rate":1.0E-8},{"amount":1000000.0,"rate":1.0E-9}]}'
+    http_version: 
+  recorded_at: Tue, 07 May 2019 06:56:51 GMT
+recorded_with: VCR 4.0.0

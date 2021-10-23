@@ -14,6 +14,7 @@ module Cryptoexchange::Exchanges
             Cryptoexchange::Models::MarketPair.new({
               base: market['MarketAssetCode'],
               target: market['BaseCurrencyCode'],
+              inst_id: market['MarketID'],
               market: CoinExchange::Market::NAME
             }) if market['Active']
           end.compact

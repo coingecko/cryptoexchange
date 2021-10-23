@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://market.coss.io/api/trades/BTC_USD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - market.coss.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 May 2020 09:18:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3882'
+      Connection:
+      - close
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"f2a-33Y1abb4EW1AmUz4/uoBuqKhP9o"
+    body:
+      encoding: UTF-8
+      string: '[{"tradeID":"4620879","price":"9753","type":"Buy","base_volume":"0.01","quote_volume":"97.53","trade_timestamp":1589789036000},{"tradeID":"4620875","price":"9798","type":"Buy","base_volume":"0.01","quote_volume":"97.98","trade_timestamp":1589787297000},{"tradeID":"4620430","price":"9645","type":"Sell","base_volume":"0.01","quote_volume":"96.45","trade_timestamp":1589531851000},{"tradeID":"4620398","price":"9482","type":"Buy","base_volume":"0.0025","quote_volume":"23.705000000000002","trade_timestamp":1589521593000},{"tradeID":"4620379","price":"9497","type":"Sell","base_volume":"0.001","quote_volume":"9.497","trade_timestamp":1589520357000},{"tradeID":"4620378","price":"9497","type":"Sell","base_volume":"0.001","quote_volume":"9.497","trade_timestamp":1589520347000},{"tradeID":"4620376","price":"9497","type":"Sell","base_volume":"0.001","quote_volume":"9.497","trade_timestamp":1589520334000},{"tradeID":"4620373","price":"9498","type":"Sell","base_volume":"0.001","quote_volume":"9.498","trade_timestamp":1589520329000},{"tradeID":"4620372","price":"9501","type":"Buy","base_volume":"0.001","quote_volume":"9.501","trade_timestamp":1589520308000},{"tradeID":"4620369","price":"9480","type":"Buy","base_volume":"0.01","quote_volume":"94.8","trade_timestamp":1589518672000},{"tradeID":"4620365","price":"9521.5","type":"Buy","base_volume":"0.0022","quote_volume":"20.947300000000002","trade_timestamp":1589516734000},{"tradeID":"4620364","price":"9536.5","type":"Sell","base_volume":"0.0022","quote_volume":"20.9803","trade_timestamp":1589516716000},{"tradeID":"4620200","price":"9510.5","type":"Sell","base_volume":"0.001","quote_volume":"9.5105","trade_timestamp":1589446704000},{"tradeID":"4620199","price":"9600","type":"Buy","base_volume":"0.001","quote_volume":"9.6","trade_timestamp":1589446473000},{"tradeID":"4620196","price":"9455","type":"Sell","base_volume":"0.001","quote_volume":"9.455","trade_timestamp":1589442748000},{"tradeID":"4620195","price":"9455","type":"Sell","base_volume":"0.001","quote_volume":"9.455","trade_timestamp":1589442742000},{"tradeID":"4620194","price":"9456","type":"Buy","base_volume":"0.001","quote_volume":"9.456","trade_timestamp":1589442719000},{"tradeID":"4620088","price":"8990","type":"Buy","base_volume":"0.001","quote_volume":"8.99","trade_timestamp":1589372334000},{"tradeID":"4620047","price":"8910.5","type":"Sell","base_volume":"0.1","quote_volume":"891.0500000000001","trade_timestamp":1589345222000},{"tradeID":"4619929","price":"8745","type":"Buy","base_volume":"0.001","quote_volume":"8.745000000000001","trade_timestamp":1589276852000},{"tradeID":"4619905","price":"8673.5","type":"Buy","base_volume":"0.01","quote_volume":"86.735","trade_timestamp":1589260848000},{"tradeID":"4619756","price":"8791.5","type":"Buy","base_volume":"0.021","quote_volume":"184.6215","trade_timestamp":1589197763000},{"tradeID":"4619754","price":"8810","type":"Sell","base_volume":"1","quote_volume":"8810","trade_timestamp":1589197750000},{"tradeID":"4619753","price":"8820.5","type":"Sell","base_volume":"0.021","quote_volume":"185.2305","trade_timestamp":1589197730000},{"tradeID":"4619752","price":"8824","type":"Buy","base_volume":"0.001","quote_volume":"8.824","trade_timestamp":1589197708000},{"tradeID":"4619751","price":"8680.5","type":"Sell","base_volume":"0.01","quote_volume":"86.805","trade_timestamp":1589196850000},{"tradeID":"4619742","price":"8545.5","type":"Buy","base_volume":"1","quote_volume":"8545.5","trade_timestamp":1589193894000},{"tradeID":"4619739","price":"8583","type":"Buy","base_volume":"10","quote_volume":"85830","trade_timestamp":1589192143000},{"tradeID":"4619738","price":"8598","type":"Sell","base_volume":"100","quote_volume":"859800","trade_timestamp":1589192068000},{"tradeID":"4619737","price":"8593","type":"Buy","base_volume":"100","quote_volume":"859300","trade_timestamp":1589192052000}]'
+    http_version: 
+  recorded_at: Mon, 18 May 2020 09:18:55 GMT
+recorded_with: VCR 4.0.0

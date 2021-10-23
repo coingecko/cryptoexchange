@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://prod-data-publisher.azurewebsites.net/api/orderbook?limit=5&symbol=BTCTRY
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - prod-data-publisher.azurewebsites.net
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '377'
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - ARRAffinity=146838c347f645f6238d55649b145f0b07798967f6aeae1eb78f9c5fd6737b68;Path=/;HttpOnly;Domain=prod-data-publisher.azurewebsites.net
+      Date:
+      - Wed, 13 May 2020 06:34:15 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"timestamp":1589351656203,"bids":[{"52,222,225.00000000":"0.00051369"},{"500,000.00000000":"0.00736929"},{"499,850.00000000":"0.01182720"},{"250,000.00000000":"0.06143507"},{"192,500.00000000":"0.01103512"}],"asks":[{"51.80000000":"2,949.30000000"},{"189.17711761":"47.29427940"},{"210.00000000":"150.39000000"},{"213.00000000":"53.48000000"},{"237.62640000":"237.62640000"}]}'
+    http_version: 
+  recorded_at: Wed, 13 May 2020 06:34:16 GMT
+recorded_with: VCR 4.0.0

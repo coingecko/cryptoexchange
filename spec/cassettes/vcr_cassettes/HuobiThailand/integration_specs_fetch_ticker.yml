@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.huobi.co.th/api/market/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.huobi.co.th
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 19 Mar 2020 05:05:56 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=da90b3c8b8391a811e1eaa12085f2c50d1584594356; expires=Sat, 18-Apr-20
+        05:05:56 GMT; path=/; domain=.www.huobi.co.th; HttpOnly; SameSite=Lax; Secure
+      X-Request-Id:
+      - 8648bfe43f7bccff3eb2dd32d9ee4b90
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5764a9465b8fc109-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","ts":1584594356291,"data":[{"symbol":"usdtthb","open":33.1732,"high":33.3198,"low":32.957,"close":33.129,"amount":66922.38999999997,"vol":2221017.3146610004,"count":468,"bid":32.91,"bidSize":0.91,"ask":33.328,"askSize":0.18},{"symbol":"btcthb","open":176042.07,"high":177591.2,"low":172640.46,"close":174954.76,"amount":42.47780000000002,"vol":7420662.250009001,"count":431,"bid":174020.0,"bidSize":0.25,"ask":176000.0,"askSize":0.2},{"symbol":"htthb","open":97.4483,"high":99.511,"low":95.739,"close":98.189,"amount":19434.10999999998,"vol":1890793.8274070001,"count":566,"bid":97.638,"bidSize":0.24,"ask":98.67,"askSize":0.1},{"symbol":"batthb","open":4.9482,"high":5.0028,"low":4.9482,"close":4.966,"amount":582.3,"vol":2900.4883860000004,"count":17,"bid":4.9,"bidSize":1.1,"ask":5.014,"askSize":18.75},{"symbol":"crothb","open":1.2701,"high":1.3189,"low":1.2524,"close":1.296,"amount":598.02,"vol":769.4253429999998,"count":17,"bid":1.1,"bidSize":2955.6,"ask":1.475,"askSize":71.22},{"symbol":"bchthb","open":5963.93,"high":6084.73,"low":5937.84,"close":5980.57,"amount":386.3691000000003,"vol":2312544.2986029987,"count":479,"bid":5895.48,"bidSize":0.25,"ask":6114.48,"askSize":0.5},{"symbol":"paxthb","open":34.1295,"high":34.4576,"low":33.5,"close":34.4576,"amount":466.77000000000004,"vol":15893.086501000002,"count":14,"bid":32.554,"bidSize":1.5,"ask":35.755,"askSize":4.56},{"symbol":"eththb","open":3810.07,"high":3887.85,"low":3756.88,"close":3833.91,"amount":584.1732999999999,"vol":2222939.146207001,"count":472,"bid":3806.4,"bidSize":0.1,"ask":3862.56,"askSize":0.6}]}'
+    http_version: 
+  recorded_at: Thu, 19 Mar 2020 05:05:56 GMT
+recorded_with: VCR 4.0.0

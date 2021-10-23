@@ -4,7 +4,7 @@ http_interactions:
     method: get
     uri: https://api.bancor.network/0.1/currencies/convertiblePairs
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       Connection:
@@ -12,58 +12,51 @@ http_interactions:
       Host:
       - api.bancor.network
       User-Agent:
-      - http.rb/1.0.4
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
-      X-Powered-By:
-      - Express
-      Access-Control-Expose-Headers:
-      - Content-Type, authorization
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Content-Type, authorization
-      Access-Control-Allow-Methods:
-      - GET,PUT,POST,DELETE
-      Cache-Control:
-      - no-cache, no-store, must-revalidate, max-age=0
-      Pragma:
-      - no-cache
-      Expires:
-      - '0'
+      Server:
+      - rhino-core-shield
+      Date:
+      - Mon, 23 Mar 2020 14:08:05 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '949'
+      - '3713'
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Access-Control-Expose-Headers:
+      - rbz-geo-countrycode
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Content-Type, authorization, X-Context-ID, pHash
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE
       Etag:
-      - W/"3b5-JOoaeTQdgh/W+TBnuRL3CqmEC6Q"
-      Date:
-      - Tue, 06 Feb 2018 07:10:59 GMT
+      - W/"e81-EropY1RoWEbT3dhej0H+Mkc2bBE"
+      Rbz-Geo-Countrycode:
+      - MY
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:01 GMT
+      Pragma:
+      - no-cache
       Via:
       - 1.1 google
       Alt-Svc:
       - clear
       Connection:
       - close
-      Set-Cookie:
-      - "___utmvaDouiMlIB=GNO\x01ojIG; path=/; Max-Age=900"
-      - '___utmvbDouiMlIB=eZdXKOOOalN: ktC; path=/; Max-Age=900'
-      - ___utmvmDouiMlIB=MVwZYtyFXpn; path=/; Max-Age=900
-      - incap_ses_572_1226739=ok21MdEI7Q1kV5AtlCfwBwNVeVoAAAAAiUB/JLoqYeXnW9YJkdIuoA==;
-        path=/; Domain=.bancor.network
-      - visid_incap_1226739=Bpe5pUdQRTevITXfZwdKRwNVeVoAAAAAQUIPAAAAAABEXuGiUjBeLWWumnMM0Gcs;
-        expires=Tue, 05 Feb 2019 15:14:58 GMT; path=/; Domain=.bancor.network
-      X-Iinfo:
-      - 5-33753420-33753422 NNNN CT(2 2 0) RT(1517901058683 16) q(0 0 1 -1) r(9 9)
-        U9
-      X-Cdn:
-      - Incapsula
     body:
       encoding: UTF-8
-      string: '{"data":{"BNT":"ETH","STX":"BNT","GNOBNT":"BNT","ENJBNT":"BNT","INDBNT":"BNT","BMCBNT":"BNT","DRTBNT":"BNT","KINBNT":"BNT","WINGSBNT":"BNT","EOSBNT":"BNT","WISHBNT":"BNT","BNBBNT":"BNT","OMGBNT":"BNT","TAASBNT":"BNT","STORMBNT":"BNT","MANABNT":"BNT","SNTBNT":"BNT","TBXBNT":"BNT","MNTPBNT":"BNT","WLKBNT":"BNT","AIXBNT":"BNT","CATBNT":"BNT","WAXBNT":"BNT","DRGNBNT":"BNT","TIOBNT":"BNT","SENSEBNT":"BNT","SRNBNT":"BNT","TRSTBNT":"BNT","EDGBNT":"BNT","RLCBNT":"BNT","DAIBNT":"BNT","BCSBNT":"BNT","TRXBNT":"BNT","SWMBNT":"BNT","CANBNT":"BNT","EOS":"BNT","SNT":"BNT","CAN":"BNT","SENSE":"BNT","TRX":"BNT","DAI":"BNT","TBX":"BNT","TIO":"BNT","SWM":"BNT","BNB":"BNT","DRT":"BNT","MANA":"BNT","BCS":"BNT","CAT":"BNT","SRN":"BNT","WLK":"BNT","RLC":"BNT","DRGN":"BNT","EDG":"BNT","TRST":"BNT","OMG":"BNT","ENJ":"BNT","STORM":"BNT","WINGS":"BNT","MNTP":"BNT","KIN":"BNT","GNO":"BNT","BMC":"BNT","WAX":"BNT","IND":"BNT","AIX":"BNT","WISH":"BNT","TAAS":"BNT"}}'
+      string: '{"data":{"ETH":"BNT","EOS":"BNT","STX":"BNT","MKRBNT":"BNT","BNBBNT":"BNT","AIDBNT":"BNT","REQBNT":"BNT","STACBNT":"BNT","XNKBNT":"BNT","AGRIBNT":"BNT","J8TBNT":"BNT","BNTHVT":"BNT","BNTEQA":"BNT","TKNBNT":"BNT","TBXBNT":"BNT","CANBNT":"BNT","ELFBNT":"BNT","LOCIBNT":"BNT","GTOBNT":"BNT","TNSBNT":"BNT","XPATBNT":"BNT","LOCBNT":"BNT","REFBNT":"BNT","BNTPEOS":"BNT","COTBNT":"BNT","GNOBNT":"BNT","OMGBNT":"BNT","XBPBNT":"BNT","WANDBNT":"BNT","KNCBNT":"BNT","RVTBNT":"BNT","BOXXBNT":"BNT","EURSBNT":"BNT","BNTIQ":"BNT","BNTMEV":"BNT","POWRBNT":"BNT","ONGBNT":"BNT","MRGBNT":"BNT","EMCOBNT":"BNT","BNTEOS":"BNT","DGDBNT":"BNT","FLIXXBNT":"BNT","AIXBNT":"BNT","SRNBNT":"BNT","TRSTBNT":"BNT","VEEBNT":"BNT","FTXBNT":"BNT","MFTBNT":"BNT","REALBNT":"BNT","MNTPBNT":"BNT","DRGNBNT":"BNT","EDGBNT":"BNT","INSTARBNT":"BNT","MDTBNT":"BNT","CEEKBNT":"BNT","BNTEPRA":"BNT","BNTKRM":"BNT","SANBNT":"BNT","BNTOCT":"BNT","BNTTAEL":"BNT","CATBNT":"BNT","RCNBNT":"BNT","BNTDICE":"BNT","BNTBLK":"BNT","RLCBNT":"BNT","MYBBNT":"BNT","SPDBNT":"BNT","PEG":"BNT","REMBNT":"BNT","DRTBNT":"BNT","WLKBNT":"BNT","SVDBNT":"BNT","MTLBNT":"BNT","MRPHBNT":"BNT","RDNBNT":"BNT","PLRBNT":"BNT","LDCBNT":"BNT","ABXBNT":"BNT","UPBNT":"BNT","MFGBNT":"BNT","ENJBNT":"BNT","MANABNT":"BNT","BETRBNT":"BNT","X8XBNT":"BNT","AMNBNT":"BNT","SCLBNT":"BNT","DATABNT":"BNT","BNTMEET":"BNT","SXLBNT":"BNT","SNTBNT":"BNT","DTRCBNT":"BNT","XDCEBNT":"BNT","CVTBNT":"BNT","AUCBNT":"BNT","ZIPTBNT":"BNT","GESBNT":"BNT","RBLXBNT":"BNT","POA20BNT":"BNT","INDBNT":"BNT","WINGSBNT":"BNT","BATBNT":"BNT","ANTBNT":"BNT","BCSBNT":"BNT","ATSBNT":"BNT","BNTHRUS":"BNT","BNTZOS":"BNT","VIBBNT":"BNT","BNTLUME":"BNT","BNTFINX":"BNT","BNTPIXE":"BNT","BNTCHEX":"BNT","BNTESDT":"BNT","BNTDAPP":"BNT","BNTEMT":"BNT","BNTNUT":"BNT","BNTDRGN":"BNT","ELETBNT":"BNT","AMPLBNT":"BNT","USDBBNT":"BNT","BNTSENS":"BNT","KINDBNT":"BNT","BNTUSDT":"BNT","ETHBNT":"BNT","UPTBNT":"BNT","PBTCBNT":"BNT","ETHUSDB":"BNT","NMRBNT":"BNT","METUSDB":"BNT","CUSDBNT":"BNT","UBTBNT":"BNT","ANKBNT":"BNT","DAIBNT":"BNT","BNB":"BNT","BAT":"BNT","PBTC":"BNT","OMG":"BNT","DICE":"BNT","BLACK":"BNT","KARMA":"BNT","IQ":"BNT","MANA":"BNT","SRN":"BNT","LOC":"BNT","MKR":"BNT","DRGN":"BNT","ENJ":"BNT","SNT":"BNT","GTO":"BNT","HORUS":"BNT","POWR":"BNT","EMCO":"BNT","KNC":"BNT","XDCE":"BNT","XPAT":"BNT","PLR":"BNT","EPRA":"BNT","AMN":"BNT","MEV":"BNT","MEETONE":"BNT","CEEK":"BNT","MYB":"BNT","TKN":"BNT","X8X":"BNT","SPD":"BNT","XNK":"BNT","AGRI":"BNT","REAL":"BNT","RBLX":"BNT","ONG":"BNT","ZIPT":"BNT","CAN":"BNT","WAND":"BNT","DTRC":"BNT","OCT":"BNT","VEE":"BNT","POA20":"BNT","REQ":"BNT","MFT":"BNT","RVT":"BNT","ELF":"BNT","RDN":"BNT","ANT":"BNT","WINGS":"BNT","EURS":"BNT","GNO":"BNT","AID":"BNT","TNS":"BNT","TAEL":"BNT","ZINC":"BNT","HVT":"BNT","SVD":"BNT","MRG":"BNT","EVO":"BNT","EDG":"BNT","LOCI":"BNT","BETR":"BNT","LDC":"BNT","MFG":"BNT","AUC":"BNT","BOXX":"BNT","DRT":"BNT","WLK":"BNT","PEGUSD":"BNT","RLC":"BNT","RCN":"BNT","DATA":"BNT","MRPH":"BNT","IND":"BNT","CAT":"BNT","INSTAR":"BNT","LUME":"BNT","DGD":"BNT","VIB":"BNT","SCL":"BNT","ATS":"BNT","GES":"BNT","REM":"BNT","AIX":"BNT","TBX":"BNT","STAC":"BNT","ABX":"BNT","COT":"BNT","PEOS":"BNT","TRST":"BNT","FTX":"BNT","ZOS":"BNT","BCS":"BNT","REF":"BNT","J8T":"BNT","FLIXX":"BNT","EQUA":"BNT","MNTP":"BNT","MTL":"BNT","MDT":"BNT","SXL":"BNT","XBP":"BNT","SAN":"BNT","UP":"BNT","DAPP":"BNT","EOSDT":"BNT","FINX":"BNT","FXC":"BNT","EMT":"BNT","NUT":"BNT","EFOOD":"BNT","HEDG":"BNT","PIXEOS":"BNT","CHEX":"BNT","PRTL":"BNT","DRAGON":"BNT","USDQ":"BNT","QDAO":"BNT","ELET":"BNT","EGX":"BNT","AMPL":"BNT","USDB":"BNT","SENSE":"BNT","KIND":"BNT","USDT":"BNT","UPT":"BNT","NMR":"BNT","MET":"BNT","CUSD":"BNT","UBT":"BNT","ANK":"BNT","DAI":"BNT"}}'
     http_version: 
-  recorded_at: Tue, 06 Feb 2018 07:10:59 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Mon, 23 Mar 2020 14:08:02 GMT
+recorded_with: VCR 4.0.0

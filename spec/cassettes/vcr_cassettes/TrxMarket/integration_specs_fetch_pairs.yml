@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.trx.market/api/exchange/marketPair/list
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.trx.market
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.2
+      Date:
+      - Wed, 24 Apr 2019 09:11:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS,DELETE,PUT
+      Access-Control-Allow-Headers:
+      - DNT,Origin,Accept,X-Key,X-Real-IP,Key,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization
+    body:
+      encoding: UTF-8
+      string: '{"code":0,"message":"OK","data":{"total":17,"rows":[{"id":44,"volume":1570873646633000,"gain":"-0.196286","price":3030,"fPrecision":6,"sPrecision":6,"fTokenName":"TronAce","sTokenName":"TRX","fShortName":"ACE","sShortName":"TRX","fTokenAddr":"TNYNLRkqq956bQc2buvoLbaLgh25RkJMiN","sTokenAddr":"T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb","highestPrice24h":0.004138,"lowestPrice24h":0.00241,"volume24h":4847881654886,"unit":"TRX","pairType":2},{"id":39,"volume":61168417628000,"gain":"0.023872","price":29080,"fPrecision":6,"sPrecision":6,"fTokenName":"BitTorrent","sTokenName":"TRX","fShortName":"BTT","sShortName":"TRX","fTokenAddr":"1002000","sTokenAddr":"T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb","highestPrice24h":0.02939,"lowestPrice24h":0.027905,"volume24h":1737706727532,"unit":"TRX","pairType":1},{"id":31,"volume":42298508806,"gain":"-0.011194","price":26500000,"fPrecision":6,"sPrecision":6,"fTokenName":"TRONbet","sTokenName":"TRX","fShortName":"ANTE","sShortName":"TRX","fTokenAddr":"TCN77KWWyUyi2A4Cu7vrh5dnmRyvUuME1E","sTokenAddr":"T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb","highestPrice24h":27.99,"lowestPrice24h":25.000002,"volume24h":1118827204294,"unit":"TRX","pairType":2},{"id":37,"volume":88278454127000,"gain":"0.117647","price":5700,"fPrecision":6,"sPrecision":6,"fTokenName":"IG
+        Gold","sTokenName":"TRX","fShortName":"IGG","sShortName":"TRX","fTokenAddr":"TVQ6jYV5yTtRsKcD8aRc1a4Kei4V45ixLn","sTokenAddr":"T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb","highestPrice24h":0.0057,"lowestPrice24h":0.0048,"volume24h":454677035831,"unit":"TRX","pairType":2},{"id":38,"volume":4565929026400,"gain":"-0.092016","price":67100,"fPrecision":6,"sPrecision":6,"fTokenName":"ATT","sTokenName":"TRX","fShortName":"ATT","sShortName":"TRX","fTokenAddr":"TVwXxvyYawS21PT1B7XZxBZCMbQZLUENoE","sTokenAddr":"T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb","highestPrice24h":0.082,"lowestPrice24h":0.06,"volume24h":334022916409,"unit":"TRX","pairType":2},{"id":43,"volume":70934881010000,"gain":"0.001814","price":1657,"fPrecision":6,"sPrecision":6,"fTokenName":"TronNfun","sTokenName":"TRX","fShortName":"NFUN","sShortName":"TRX","fTokenAddr":"TWvF96qcaNTmyJ8A9jc2DbT4Na26J365Yd","sTokenAddr":"T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb","highestPrice24h":0.00195,"lowestPrice24h":0.001654,"volume24h":132953142591,"unit":"TRX","pairType":2},{"id":42,"volume":25048,"gain":"0.088235","price":3700000,"fPrecision":0,"sPrecision":6,"fTokenName":"SeedTron","sTokenName":"TRX","fShortName":"SEED","sShortName":"TRX","fTokenAddr":"1000001","sTokenAddr":"T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb","highestPrice24h":3.989999,"lowestPrice24h":3.16,"volume24h":90303821717,"unit":"TRX","pairType":1},{"id":36,"volume":11647887860000,"gain":"0.056254","price":3699,"fPrecision":6,"sPrecision":6,"fTokenName":"TronWin","sTokenName":"TRX","fShortName":"WIN","sShortName":"TRX","fTokenAddr":"TBAo7PNyKo94YWUq1Cs2LBFxkhTphnAE4T","sTokenAddr":"T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb","highestPrice24h":0.004789,"lowestPrice24h":0.0035,"volume24h":44531978861,"unit":"TRX","pairType":2},{"id":40,"volume":6484006600,"gain":"-0.098197","price":5005002,"fPrecision":6,"sPrecision":6,"fTokenName":"888Tron","sTokenName":"TRX","fShortName":"888","sShortName":"TRX","fTokenAddr":"TLvDJcvKJDi3QuHgFbJC6SeTj3UacmtQU3","sTokenAddr":"T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb","highestPrice24h":5.56,"lowestPrice24h":4.921,"volume24h":33996727028,"unit":"TRX","pairType":2},{"id":33,"volume":417986637000000,"gain":"-0.048212","price":5350,"fPrecision":8,"sPrecision":6,"fTokenName":"TronWeeklyJournal","sTokenName":"TRX","fShortName":"TWJ","sShortName":"TRX","fTokenAddr":"TNq5PbSssK5XfmSYU4Aox4XkgTdpDoEDiY","sTokenAddr":"T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb","highestPrice24h":0.006519,"lowestPrice24h":0.00535,"volume24h":23828786383,"unit":"TRX","pairType":2},{"id":41,"volume":536616800,"gain":"0.000000","price":3120000,"fPrecision":6,"sPrecision":6,"fTokenName":"PoppyTron","sTokenName":"TRX","fShortName":"POPPY","sShortName":"TRX","fTokenAddr":"1001943","sTokenAddr":"T9yD14Nj9j7xAB4dbGeiX9h8unkKHxuWwb","highestPrice24h":3.19,"lowestPrice24h":2.55201,"volume24h":1654631946,"unit":"TRX","pairType":1}]}}'
+    http_version: 
+  recorded_at: Wed, 24 Apr 2019 09:11:40 GMT
+recorded_with: VCR 4.0.0

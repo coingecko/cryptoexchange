@@ -16,7 +16,7 @@ RSpec.describe 'Bcex integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'bcex', base: btc_ckusd_pair.base, target: btc_ckusd_pair.target
-    expect(trade_page_url).to eq "https://www.bcex.ca/trade/BTC2CKUSD"
+    expect(trade_page_url).to eq "https://www.bcex.ca/trade/btc_ckusd"
   end
 
   it 'fetch ticker' do
@@ -26,8 +26,6 @@ RSpec.describe 'Bcex integration specs' do
     expect(ticker.target).to eq 'CKUSD'
     expect(ticker.market).to eq 'bcex'
     expect(ticker.last).to be_a Numeric
-    expect(ticker.ask).to be_a Numeric
-    expect(ticker.bid).to be_a Numeric
     expect(ticker.high).to be_a Numeric
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
@@ -48,7 +46,7 @@ RSpec.describe 'Bcex integration specs' do
     expect(order_book.bids.first.timestamp).to be_nil
     expect(order_book.asks.count).to be > 0
     expect(order_book.bids.count).to be > 0
-    expect(order_book.timestamp).to be_a Numeric
+    expect(order_book.timestamp).to be nil
     expect(order_book.payload).to_not be nil
   end
 
@@ -57,7 +55,7 @@ RSpec.describe 'Bcex integration specs' do
     trade  = trades.sample
 
     expect(trades).to_not be_empty
-    expect(trade.trade_id).to_not be_nil
+    expect(trade.trade_id).to be nil
     expect(trade.base).to eq 'BTC'
     expect(trade.target).to eq 'CKUSD'
     expect(['buy', 'sell']).to include trade.type

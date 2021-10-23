@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dovewallet.com/v1/public/getorderbook?market=USDT-BTC&type=both
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dovewallet.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 31 Jul 2019 08:34:28 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Content-Length:
+      - '710'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d75af5bfdf875ba6e038e119427be33c11564562067; expires=Thu, 30-Jul-20
+        08:34:27 GMT; path=/; domain=.dovewallet.com; HttpOnly; Secure
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4fee3bb75b46cbf0-SIN
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"message":"","result":{"buy":[{"Quantity":0.002904104,"Rate":9750.3900156},{"Quantity":0.008404624,"Rate":9698.662554433},{"Quantity":0.007956342,"Rate":9657.82331978},{"Quantity":0.007078522,"Rate":9609.563437533},{"Quantity":0.004703555,"Rate":9557.670986733},{"Quantity":0.00838198,"Rate":9513.480602013},{"Quantity":0.007680209,"Rate":9459.306065307}],"sell":[{"Quantity":0.005392821,"Rate":9766.29261766},{"Quantity":0.004178721,"Rate":9806.613580199},{"Quantity":0.008895323,"Rate":9858.044164038},{"Quantity":0.003986614,"Rate":9907.75876589},{"Quantity":0.005799474,"Rate":9967.108541813},{"Quantity":0.004930172,"Rate":10016.025641026},{"Quantity":0.00719183,"Rate":10074.754679724}]}}'
+    http_version: 
+  recorded_at: Wed, 31 Jul 2019 08:34:28 GMT
+recorded_with: VCR 4.0.0

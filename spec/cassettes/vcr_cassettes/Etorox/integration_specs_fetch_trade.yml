@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://services.etorox.com/api/v1/marketdata/instruments/btcusdex/trades
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - services.etorox.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 21 Jan 2020 03:36:56 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '376'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d94706866f7e43b94d7415f3d4e34bc441579577815; expires=Thu, 20-Feb-20
+        03:36:55 GMT; path=/; domain=.etorox.com; HttpOnly; SameSite=Lax
+      X-Guploader-Uploadid:
+      - AEnB2UpNIlN1jSNH5HaAuW4NWQZalGE69I4NPGS31DJ_ZS4SGcc4fRHeASvaIDBxqPkThuWFliB2zUWF_-L9Ui4oQb60LDAwmA
+      Expires:
+      - Tue, 21 Jan 2020 03:36:56 GMT
+      Cache-Control:
+      - private, max-age=0
+      Last-Modified:
+      - Tue, 21 Jan 2020 03:36:16 GMT
+      Etag:
+      - '"c937537cb7f7f03da984fcf70fa745dd"'
+      X-Goog-Generation:
+      - '1579577776139163'
+      X-Goog-Metageneration:
+      - '1'
+      X-Goog-Stored-Content-Encoding:
+      - identity
+      X-Goog-Stored-Content-Length:
+      - '376'
+      X-Goog-Hash:
+      - crc32c=TArZTA==
+      - md5=yTdTfLf38D2phPz3D6dF3Q==
+      X-Goog-Storage-Class:
+      - STANDARD
+      Accept-Ranges:
+      - bytes
+      Vary:
+      - Origin
+      Alt-Svc:
+      - clear
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 55863f24da97c118-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"volume":"0.16000","price":"8657.06560","id":"f0cc5a63-7f13-4959-882a-8f9cc2068efc","timestamp":"2020-01-21T03:36:08.911Z"},{"volume":"0.04000","price":"8656.86560","id":"84cc5665-80c2-4c2e-8da2-78062a60c717","timestamp":"2020-01-21T03:36:08.876Z"},{"volume":"0.20000","price":"8656.86560","id":"b18e4021-5d39-4b1f-946b-81d13e1914e6","timestamp":"2020-01-21T03:36:08.150Z"}]'
+    http_version: 
+  recorded_at: Tue, 21 Jan 2020 03:36:56 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.cryptofacilities.com/derivatives/api/v3/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.cryptofacilities.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 11 Nov 2019 07:14:44 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0c28b210a473efdf7d596aafc78351561573456483; expires=Tue, 10-Nov-20
+        07:14:43 GMT; path=/; domain=.cryptofacilities.com; HttpOnly; Secure
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With,X-XSRF-TOKEN
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS, PATCH
+      Access-Control-Expose-Headers:
+      - Authorization,Content-Disposition
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 533e788f2aef6561-SYD
+    body:
+      encoding: UTF-8
+      string: '{"result":"success","tickers":[{"tag":"month","pair":"LTC:USD","symbol":"fi_ltcusd_191129","markPrice":62.13,"bid":62.09,"bidSize":11409,"ask":62.15,"askSize":410,"vol24h":108400,"openInterest":290794,"open24h":63.03,"last":62.11,"lastTime":"2019-11-11T07:14:21.729Z","lastSize":153,"suspended":false},{"tag":"perpetual","pair":"LTC:USD","symbol":"pi_ltcusd","markPrice":61.9,"bid":61.88,"bidSize":11659,"ask":61.91,"askSize":5102,"vol24h":2746379,"openInterest":1226322,"open24h":63.29,"last":61.85,"lastTime":"2019-11-11T07:12:01.843Z","lastSize":2340,"suspended":false,"fundingRate":-0.000000125213157547,"fundingRatePrediction":0.00000103971310014},{"tag":"quarter","pair":"LTC:USD","symbol":"fi_ltcusd_191227","markPrice":62.35,"bid":62.32,"bidSize":20999,"ask":62.36,"askSize":380,"vol24h":184102,"openInterest":381832,"open24h":63.96,"last":62.16,"lastTime":"2019-11-11T07:08:14.878Z","lastSize":782,"suspended":false},{"tag":"month","pair":"ETH:USD","symbol":"fi_ethusd_191129","markPrice":187.5,"bid":187.45,"bidSize":2606,"ask":187.55,"askSize":6899,"vol24h":429055,"openInterest":919617,"open24h":187.9,"last":187.1,"lastTime":"2019-11-11T06:48:40.923Z","lastSize":2000,"suspended":false},{"tag":"perpetual","pair":"BCH:USD","symbol":"pi_bchusd","markPrice":289,"bid":288.8,"bidSize":3515,"ask":289.1,"askSize":250,"vol24h":1077127,"openInterest":1619787,"open24h":286,"last":288.9,"lastTime":"2019-11-11T07:14:22.630Z","lastSize":1582,"suspended":false,"fundingRate":0.000000088084138161,"fundingRatePrediction":0.000000283334472791},{"tag":"quarter","pair":"XBT:USD","symbol":"fi_xbtusd_191227","markPrice":8893,"bid":8888.5,"bidSize":1800,"ask":8897.5,"askSize":1800,"vol24h":2176845,"openInterest":8637384,"open24h":8937,"last":8872,"lastTime":"2019-11-11T07:10:04.255Z","lastSize":10000,"suspended":false},{"tag":"perpetual","pair":"XRP:XBT","symbol":"pv_xrpxbt","markPrice":0.00003122,"bid":0.00003118,"bidSize":690,"ask":0.00003121,"askSize":397,"vol24h":351735,"openInterest":366179,"open24h":0.00003159,"last":0.00003112,"lastTime":"2019-11-11T06:50:37.616Z","lastSize":37,"suspended":false,"fundingRate":0.000000004741878116,"fundingRatePrediction":-0.000000001518317837},{"tag":"month","pair":"XBT:USD","symbol":"fi_xbtusd_191129","markPrice":8836.2,"bid":8833,"bidSize":1900,"ask":8836.5,"askSize":250,"vol24h":1681053,"openInterest":1561386,"open24h":8889,"last":8836.5,"lastTime":"2019-11-11T07:13:48.324Z","lastSize":1000,"suspended":false},{"tag":"perpetual","pair":"XBT:USD","symbol":"pi_xbtusd","markPrice":8797.2,"bid":8797,"bidSize":1901,"ask":8797.5,"askSize":86996,"vol24h":57572223,"openInterest":24349905,"open24h":8846.5,"last":8797.5,"lastTime":"2019-11-11T07:14:36.357Z","lastSize":1,"suspended":false,"fundingRate":0.000000005539059657,"fundingRatePrediction":0.000000001876919101},{"tag":"quarter","pair":"ETH:USD","symbol":"fi_ethusd_191227","markPrice":188.92,"bid":188.85,"bidSize":4812,"ask":188.95,"askSize":5148,"vol24h":356685,"openInterest":4499891,"open24h":189.3,"last":188.8,"lastTime":"2019-11-11T06:48:48.012Z","lastSize":324,"suspended":false},{"tag":"perpetual","pair":"ETH:USD","symbol":"pi_ethusd","markPrice":186.42,"bid":186.45,"bidSize":2,"ask":186.5,"askSize":71693,"vol24h":3337339,"openInterest":11801317,"open24h":187.45,"last":186.45,"lastTime":"2019-11-11T07:14:20.093Z","lastSize":980,"suspended":false,"fundingRate":0.000000224521340656,"fundingRatePrediction":0.000000299105133709},{"tag":"quarter","pair":"BCH:USD","symbol":"fi_bchusd_191227","markPrice":290.8,"bid":290.3,"bidSize":2000,"ask":291.4,"askSize":7550,"vol24h":57335,"openInterest":244256,"open24h":288.2,"last":289.6,"lastTime":"2019-11-11T06:26:02.358Z","lastSize":146,"suspended":false},{"tag":"month","pair":"XRP:USD","symbol":"fi_xrpusd_191129","markPrice":0.2756,"bid":0.2754,"bidSize":3410,"ask":0.2756,"askSize":410,"vol24h":54410,"openInterest":103224,"open24h":0.2801,"last":0.2755,"lastTime":"2019-11-11T06:53:12.752Z","lastSize":4590,"suspended":false},{"tag":"quarter","pair":"XRP:USD","symbol":"fi_xrpusd_191227","markPrice":0.2766,"bid":0.2764,"bidSize":34680,"ask":0.2765,"askSize":100,"vol24h":52224,"openInterest":1025961,"open24h":0.2813,"last":0.2764,"lastTime":"2019-11-11T07:01:28.842Z","lastSize":100,"suspended":false},{"tag":"month","pair":"BCH:USD","symbol":"fi_bchusd_191129","markPrice":289.8,"bid":289.3,"bidSize":11666,"ask":290.2,"askSize":2000,"vol24h":43063,"openInterest":70169,"open24h":289.6,"last":289.7,"lastTime":"2019-11-11T07:14:22.447Z","lastSize":1582,"suspended":false},{"tag":"perpetual","pair":"XRP:USD","symbol":"pi_xrpusd","markPrice":0.2748,"bid":0.2746,"bidSize":13037,"ask":0.2747,"askSize":410,"vol24h":1979999,"openInterest":1909895,"open24h":0.2791,"last":0.2746,"lastTime":"2019-11-11T07:14:38.478Z","lastSize":1,"suspended":false,"fundingRate":0.000075136457625199,"fundingRatePrediction":0.000171277805339109},{"tag":"quarter","pair":"XRP:XBT","symbol":"fv_xrpxbt_191227","markPrice":0.00003127,"bid":0.00003119,"bidSize":307,"ask":0.00003137,"askSize":20000,"vol24h":12229,"openInterest":196639,"open24h":0.00003182,"last":0.00003115,"lastTime":"2019-11-11T07:13:19.175Z","lastSize":1,"suspended":false},{"symbol":"in_xbtusd","last":8798,"lastTime":"2019-11-11T07:14:42.000Z"},{"symbol":"in_xrpusd","last":0.2746,"lastTime":"2019-11-11T07:14:42.000Z"},{"symbol":"in_ethusd","last":186.39,"lastTime":"2019-11-11T07:14:42.000Z"},{"symbol":"in_ltcusd","last":61.89,"lastTime":"2019-11-11T07:14:42.000Z"},{"symbol":"in_bchusd","last":288.84,"lastTime":"2019-11-11T07:14:42.000Z"},{"symbol":"in_xrpxbt","last":0.00003123,"lastTime":"2019-11-11T07:14:42.000Z"},{"symbol":"rr_xbtusd","last":8818,"lastTime":"2019-11-10T16:00:00.000Z"},{"symbol":"rr_xrpusd","last":0.2788,"lastTime":"2019-11-10T16:00:00.000Z"},{"symbol":"rr_ethusd","last":187.12,"lastTime":"2019-11-10T16:00:00.000Z"},{"symbol":"rr_ltcusd","last":62.76,"lastTime":"2019-11-10T16:00:00.000Z"},{"symbol":"rr_bchusd","last":284.68,"lastTime":"2019-11-10T16:00:00.000Z"},{"symbol":"rr_xrpxbt","last":0.0000316,"lastTime":"2019-11-10T16:00:00.000Z"}],"serverTime":"2019-11-11T07:14:44.094Z"}'
+    http_version: 
+  recorded_at: Mon, 11 Nov 2019 07:14:44 GMT
+recorded_with: VCR 4.0.0

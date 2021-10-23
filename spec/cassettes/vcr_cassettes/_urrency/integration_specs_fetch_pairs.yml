@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://marketcap.backend.currency.com/api/v1/token_crypto/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - marketcap.backend.currency.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 Feb 2020 02:42:24 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"BTC/BYN":{"base_currency":"BTC","quote_currency":"BYN","last_price":21381.6,"quote_volume":6842.831999999999534338712692260742187500000,"base_volume":0.32,"isFrozen":false,"past_24hrs_high_price":21895.7,"past_24hrs_low_price":20781.55,"past_24hrs_price_change":-5.9732,"lowest_ask_price":21395.45,"highest_bid_price":21383.85},"ETH/USD":{"base_currency":"ETH","quote_currency":"USD","last_price":270.35,"quote_volume":1745446.6925999999558740682914503850042819976806640625,"base_volume":6468.93,"isFrozen":false,"past_24hrs_high_price":271.98,"past_24hrs_low_price":242.27,"past_24hrs_price_change":6.8619,"lowest_ask_price":269.83,"highest_bid_price":269.82},"BCH/USD":{"base_currency":"BCH","quote_currency":"USD","last_price":408.5,"quote_volume":108930.95999999999394276528619229793548583984375000,"base_volume":266.4,"isFrozen":false,"past_24hrs_high_price":416.95,"past_24hrs_low_price":366.35,"past_24hrs_price_change":2.7414,"lowest_ask_price":409.45,"highest_bid_price":408.9},"LTC/USD":{"base_currency":"LTC","quote_currency":"USD","last_price":74.25,"quote_volume":129620.722000000004965016842106706462800502777099609375,"base_volume":1746.91,"isFrozen":false,"past_24hrs_high_price":75.51,"past_24hrs_low_price":68.56,"past_24hrs_price_change":3.7301,"lowest_ask_price":74.27,"highest_bid_price":74.2},"BCH/EUR":{"base_currency":"BCH","quote_currency":"EUR","last_price":377.3,"quote_volume":0E-44,"base_volume":0,"isFrozen":false,"past_24hrs_high_price":384.6,"past_24hrs_low_price":339.7,"past_24hrs_price_change":2.7226,"lowest_ask_price":378.8,"highest_bid_price":377.7},"ETH/BTC":{"base_currency":"ETH","quote_currency":"BTC","last_price":0.02772,"quote_volume":4.670169599999999956729812566891268943436443805694580078125000,"base_volume":168.72,"isFrozen":false,"past_24hrs_high_price":0.02785,"past_24hrs_low_price":0.02488,"past_24hrs_price_change":7.3171,"lowest_ask_price":0.02771,"highest_bid_price":0.02768},"LTC/BTC":{"base_currency":"LTC","quote_currency":"BTC","last_price":0.00762,"quote_volume":0.00129369999999999992813803917357518002972938120365142822265625,"base_volume":0.17,"isFrozen":false,"past_24hrs_high_price":0.00765,"past_24hrs_low_price":0.00708,"past_24hrs_price_change":4.3836,"lowest_ask_price":0.00764,"highest_bid_price":0.00761},"BTC/USD":{"base_currency":"BTC","quote_currency":"USD","last_price":9744.9,"quote_volume":1456081.332399999945642775855958461761474609375000,"base_volume":149.416,"isFrozen":false,"past_24hrs_high_price":9971.45,"past_24hrs_low_price":9466.9,"past_24hrs_price_change":-0.3864,"lowest_ask_price":9745.2,"highest_bid_price":9745.15},"ETH/BYN":{"base_currency":"ETH","quote_currency":"BYN","last_price":592.85,"quote_volume":3907.5299999999996998667484149336814880371093750,"base_volume":6.6,"isFrozen":false,"past_24hrs_high_price":595.65,"past_24hrs_low_price":532.66,"past_24hrs_price_change":-4.5883,"lowest_ask_price":592.63,"highest_bid_price":592.05},"BCH/BTC":{"base_currency":"BCH","quote_currency":"BTC","last_price":0.04192,"quote_volume":0.201504000000000016434853478131117299199104309082031250000,"base_volume":4.8,"isFrozen":false,"past_24hrs_high_price":0.04256,"past_24hrs_low_price":0.03786,"past_24hrs_price_change":3.1242,"lowest_ask_price":0.04207,"highest_bid_price":0.04198},"BTC/RUB":{"base_currency":"BTC","quote_currency":"RUB","last_price":618977.0,"quote_volume":342948.714,"base_volume":0.554,"isFrozen":false,"past_24hrs_high_price":630783.5,"past_24hrs_low_price":601171.5,"past_24hrs_price_change":-5.562,"lowest_ask_price":621528.0,"highest_bid_price":619041.0},"LTC/EUR":{"base_currency":"LTC","quote_currency":"EUR","last_price":68.64,"quote_volume":2675.587200000000022157564671942964196205139160156250,"base_volume":38.98,"isFrozen":false,"past_24hrs_high_price":69.6,"past_24hrs_low_price":63.38,"past_24hrs_price_change":3.8427,"lowest_ask_price":68.75,"highest_bid_price":68.64},"ETH/RUB":{"base_currency":"ETH","quote_currency":"RUB","last_price":17162.5,"quote_volume":4284.75,"base_volume":0.25,"isFrozen":false,"past_24hrs_high_price":17234.1,"past_24hrs_low_price":15356.7,"past_24hrs_price_change":-4.1073,"lowest_ask_price":17215.3,"highest_bid_price":17139.0},"BTC/EUR":{"base_currency":"BTC","quote_currency":"EUR","last_price":9002.65,"quote_volume":24610.1010,"base_volume":2.734,"isFrozen":false,"past_24hrs_high_price":9200.95,"past_24hrs_low_price":8734.9,"past_24hrs_price_change":-0.3178,"lowest_ask_price":9001.65,"highest_bid_price":9001.5},"ETH/EUR":{"base_currency":"ETH","quote_currency":"EUR","last_price":249.75,"quote_volume":26582.87179999999890867456997511908411979675292968750,"base_volume":106.66,"isFrozen":false,"past_24hrs_high_price":251.24,"past_24hrs_low_price":223.52,"past_24hrs_price_change":6.9318,"lowest_ask_price":249.25,"highest_bid_price":249.23}}'
+    http_version: 
+  recorded_at: Tue, 18 Feb 2020 02:42:24 GMT
+recorded_with: VCR 4.0.0

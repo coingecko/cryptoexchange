@@ -41,7 +41,7 @@ module Cryptoexchange::Exchanges
           ticker.ask       = NumericHelper.to_d(output['sell'].to_f)
           ticker.bid       = NumericHelper.to_d(output['buy'].to_f)
           ticker.volume    = NumericHelper.to_d(output['vol'].to_f)
-          ticker.timestamp = output['timestamp'].to_i
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

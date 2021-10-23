@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.paribu.com/api/v1/trades/btc_tl
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.paribu.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Nov 2019 06:39:37 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7bab321cb05c58e6e2f4adb60d2a6b7c1574836777; expires=Fri, 27-Dec-19
+        06:39:37 GMT; path=/; domain=.paribu.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - no-cache, private
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Content-Security-Policy:
+      - 'default-src * data: ''unsafe-eval'' ''unsafe-inline'''
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 53c21b20f96f2cf1-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"trades":[{"dt":"2019-11-27 09:39:14","mp":"41130.00000000","ma":"0.32760296","tr":"sell"},{"dt":"2019-11-27
+        09:38:58","mp":"41150.00000000","ma":"0.19197673","tr":"sell"},{"dt":"2019-11-27
+        09:38:58","mp":"41150.77000000","ma":"3.62466000","tr":"sell"},{"dt":"2019-11-27
+        09:38:58","mp":"41151.00000000","ma":"0.15372336","tr":"sell"},{"dt":"2019-11-27
+        09:38:58","mp":"41160.00000000","ma":"0.25288969","tr":"sell"},{"dt":"2019-11-27
+        09:38:34","mp":"41255.00000000","ma":"0.00120594","tr":"buy"},{"dt":"2019-11-27
+        09:38:11","mp":"41255.00000000","ma":"0.09679055","tr":"buy"},{"dt":"2019-11-27
+        09:38:05","mp":"41255.00000000","ma":"0.0015632","tr":"buy"},{"dt":"2019-11-27
+        09:37:36","mp":"41255.00000000","ma":"0.73227050","tr":"buy"},{"dt":"2019-11-27
+        09:37:36","mp":"41254.99000000","ma":"0.11611151","tr":"buy"},{"dt":"2019-11-27
+        09:37:32","mp":"41150.00000000","ma":"0.09544527","tr":"sell"},{"dt":"2019-11-27
+        09:35:47","mp":"41256.99000000","ma":"0.0273922","tr":"buy"},{"dt":"2019-11-27
+        09:33:42","mp":"41256.24000000","ma":"0.02411816","tr":"buy"},{"dt":"2019-11-27
+        09:33:15","mp":"41232.61000000","ma":"0.19848184","tr":"buy"},{"dt":"2019-11-27
+        09:33:15","mp":"41200.08000000","ma":"0.01530743","tr":"buy"}],"message":"\u0130\u015flem
+        ba\u015far\u0131l\u0131","success":true}'
+    http_version: 
+  recorded_at: Wed, 27 Nov 2019 06:39:37 GMT
+recorded_with: VCR 4.0.0

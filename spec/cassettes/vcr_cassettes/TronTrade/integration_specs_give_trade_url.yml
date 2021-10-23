@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://trontrade.io/graphql
+    body:
+      encoding: UTF-8
+      string: '{"operationName":null,"variables":{},"query":"{ exchanges { id stats
+        { h24_price high low volume volumeTrx h24_change lastPrice __typename } icon
+        buyAssetName sellAssetName tokenTypeA tokenIdA tokenTypeB tokenIdB tokenDecimalsA
+        tokenDecimalsB site __typename } } "}'
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Host:
+      - trontrade.io
+      User-Agent:
+      - http.rb/3.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.2
+      Date:
+      - Thu, 21 Mar 2019 03:21:14 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '5038'
+      Connection:
+      - close
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"exchanges":[{"id":"1","stats":{"h24_price":26600000,"high":27000000,"low":25000000,"volume":479553921196,"volumeTrx":12467832,"h24_change":-4.078947368421055,"lastPrice":25515000,"__typename":"ExchangeStats"},"icon":"ante.png","buyAssetName":"ANTE","sellAssetName":"TRX","tokenTypeA":"TRC20","tokenIdA":"TCN77KWWyUyi2A4Cu7vrh5dnmRyvUuME1E","tokenTypeB":"TRX","tokenIdB":null,"tokenDecimalsA":"6","tokenDecimalsB":"6","site":null,"__typename":"Exchange"},{"id":"2","stats":{"h24_price":2200000,"high":2400000,"low":2110000,"volume":43989,"volumeTrx":100700,"h24_change":-3.4090909090909065,"lastPrice":2125000,"__typename":"ExchangeStats"},"icon":"seed.png","buyAssetName":"SEED","sellAssetName":"TRX","tokenTypeA":"TRC10","tokenIdA":"1000001","tokenTypeB":"TRX","tokenIdB":null,"tokenDecimalsA":"0","tokenDecimalsB":"6","site":null,"__typename":"Exchange"},{"id":"3","stats":{"h24_price":34200,"high":38000,"low":34200,"volume":21446099306734,"volumeTrx":776010,"h24_change":8.187134502923982,"lastPrice":37000,"__typename":"ExchangeStats"},"icon":"btt.png","buyAssetName":"BTT","sellAssetName":"TRX","tokenTypeA":"TRC10","tokenIdA":"1002000","tokenTypeB":"TRX","tokenIdB":null,"tokenDecimalsA":"6","tokenDecimalsB":"6","site":null,"__typename":"Exchange"},{"id":"4","stats":{"h24_price":4499990,"high":4499990,"low":3910001,"volume":3332413075,"volumeTrx":14301,"h24_change":-2.2242493872208513,"lastPrice":4399899,"__typename":"ExchangeStats"},"icon":"poppy.jpeg","buyAssetName":"POPPY","sellAssetName":"TRX","tokenTypeA":"TRC10","tokenIdA":"1001943","tokenTypeB":"TRX","tokenIdB":null,"tokenDecimalsA":"6","tokenDecimalsB":"6","site":null,"__typename":"Exchange"},{"id":"5","stats":{"h24_price":3000,"high":5000,"low":2350,"volume":41476669024550,"volumeTrx":123783,"h24_change":-16.666666666666657,"lastPrice":2500,"__typename":"ExchangeStats"},"icon":"play.png","buyAssetName":"PLAY","sellAssetName":"TRX","tokenTypeA":"TRC20","tokenIdA":"TYbSzw3PqBWohc4DdyzFDJMd1hWeNN6FkB","tokenTypeB":"TRX","tokenIdB":null,"tokenDecimalsA":"6","tokenDecimalsB":"6","site":null,"__typename":"Exchange"},{"id":"6","stats":{"h24_price":9900,"high":10489,"low":9500,"volume":12686078128641,"volumeTrx":126075,"h24_change":-1.1111111111111143,"lastPrice":9790,"__typename":"ExchangeStats"},"icon":"igg.png","buyAssetName":"IGG","sellAssetName":"TRX","tokenTypeA":"TRC20","tokenIdA":"TVQ6jYV5yTtRsKcD8aRc1a4Kei4V45ixLn","tokenTypeB":"TRX","tokenIdB":null,"tokenDecimalsA":"6","tokenDecimalsB":"6","site":null,"__typename":"Exchange"},{"id":"8","stats":{"h24_price":420000,"high":420000,"low":340000,"volume":152649,"volumeTrx":60803,"h24_change":-19.04761904761905,"lastPrice":340000,"__typename":"ExchangeStats"},"icon":"tronwatch.png","buyAssetName":"TWM","sellAssetName":"TRX","tokenTypeA":"TRC10","tokenIdA":"1000933","tokenTypeB":"TRX","tokenIdB":null,"tokenDecimalsA":"0","tokenDecimalsB":"6","site":null,"__typename":"Exchange"},{"id":"9","stats":{"h24_price":220000,"high":220000,"low":175000,"volume":645415734183,"volumeTrx":125829,"h24_change":-13.63636363636364,"lastPrice":190000,"__typename":"ExchangeStats"},"icon":"tronwalletme.png","buyAssetName":"TWX","sellAssetName":"TRX","tokenTypeA":"TRC20","tokenIdA":"TKTcfBEKpp5ZRPwmiZ8SfLx8W7CDZ7PHCY","tokenTypeB":"TRX","tokenIdB":null,"tokenDecimalsA":"6","tokenDecimalsB":"6","site":null,"__typename":"Exchange"},{"id":"10","stats":{"h24_price":25000,"high":28000,"low":12000,"volume":1688143965393,"volumeTrx":29608,"h24_change":-43.99999999999999,"lastPrice":14000,"__typename":"ExchangeStats"},"icon":"tronwin.png","buyAssetName":"WIN","sellAssetName":"TRX","tokenTypeA":"TRC20","tokenIdA":"TBAo7PNyKo94YWUq1Cs2LBFxkhTphnAE4T","tokenTypeB":"TRX","tokenIdB":null,"tokenDecimalsA":"6","tokenDecimalsB":"6","site":null,"__typename":"Exchange"},{"id":"11","stats":{"h24_price":798,"high":950,"low":655,"volume":61806557,"volumeTrx":47757,"h24_change":0.250626566416031,"lastPrice":800,"__typename":"ExchangeStats"},"icon":"truc.png","buyAssetName":"TRUC","sellAssetName":"TRX","tokenTypeA":"TRC10","tokenIdA":"1000322","tokenTypeB":"TRX","tokenIdB":null,"tokenDecimalsA":"0","tokenDecimalsB":"6","site":null,"__typename":"Exchange"},{"id":"12","stats":{"h24_price":13690000,"high":15000000,"low":9800000,"volume":885138953085,"volumeTrx":10200622,"h24_change":-19.649379108838573,"lastPrice":11000000,"__typename":"ExchangeStats"},"icon":"888tron.png","buyAssetName":"888","sellAssetName":"TRX","tokenTypeA":"TRC20","tokenIdA":"TLvDJcvKJDi3QuHgFbJC6SeTj3UacmtQU3","tokenTypeB":"TRX","tokenIdB":null,"tokenDecimalsA":"6","tokenDecimalsB":"6","site":null,"__typename":"Exchange"},{"id":"13","stats":{"h24_price":287000,"high":287000,"low":241000,"volume":108582,"volumeTrx":27802,"h24_change":-11.149825783972119,"lastPrice":255000,"__typename":"ExchangeStats"},"icon":"terc.png","buyAssetName":"TERC","sellAssetName":"TRX","tokenTypeA":"TRC10","tokenIdA":"1000226","tokenTypeB":"TRX","tokenIdB":null,"tokenDecimalsA":"0","tokenDecimalsB":"6","site":null,"__typename":"Exchange"}]}}
+
+'
+    http_version: 
+  recorded_at: Thu, 21 Mar 2019 03:21:14 GMT
+recorded_with: VCR 4.0.0

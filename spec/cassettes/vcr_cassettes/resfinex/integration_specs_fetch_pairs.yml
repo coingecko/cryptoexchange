@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.resfinex.com/engine/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.resfinex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization, Account, Token,
+        Signature, Nonce, Sub
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3553'
+      Etag:
+      - W/"de1-fV0psAVYUbFTxCcAiN3rbDkRM0E"
+      Date:
+      - Mon, 25 Nov 2019 10:05:21 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","data":[{"pair":"ETH_USDT","timestamp":1574676320000,"last":136.92,"volume":47088350.0300262,"volumeBase":335763.9270996656,"change":-14.01000000000002,"high":150.93,"low":131.5},{"pair":"OMG_USDT","timestamp":1574676320000,"last":0.713363,"volume":516186.05978123844,"volumeBase":706064.3299998231,"change":-0.08010000000000006,"high":0.793463,"low":0.666802},{"pair":"RES_ETH","timestamp":1574676320000,"last":0.0007305,"volume":5258.677834133909,"volumeBase":7453411,"change":0.00006758000000000003,"high":0.00076047,"low":0.00066292},{"pair":"BAT_USDT","timestamp":1574676320000,"last":0.207151,"volume":2000065.6386438012,"volumeBase":9553995.480000794,"change":-0.011918000000000012,"high":0.223412,"low":0.193916},{"pair":"ZRX_USDT","timestamp":1574676320000,"last":0.234118,"volume":835737.4675166681,"volumeBase":3519433.479999423,"change":-0.019998000000000016,"high":0.254924,"low":0.21715},{"pair":"LINK_USDT","timestamp":1574676320000,"last":2.149178,"volume":14459950.590265512,"volumeBase":6505593.179996759,"change":-0.2513899999999998,"high":2.401275,"low":2.0407},{"pair":"NPXS_USDT","timestamp":1574676320000,"last":0.00013321,"volume":292334.4024280235,"volumeBase":2137126199,"change":-0.000012190000000000004,"high":0.00014567,"low":0.00012816},{"pair":"ENJ_USDT","timestamp":1574676320000,"last":0.0512474,"volume":598388.8252209853,"volumeBase":11229110.89999935,"change":-0.006817500000000004,"high":0.0581861,"low":0.0473387},{"pair":"CVC_USDT","timestamp":1574676320000,"last":0.0253166,"volume":128618.27194755338,"volumeBase":4859445.599998713,"change":-0.003357299999999997,"high":0.0286739,"low":0.0238075},{"pair":"OMG_ETH","timestamp":1574676320000,"last":0.005222,"volume":349.5248451199368,"volumeBase":66750.28000001702,"change":-0.00003500000000000031,"high":0.005366,"low":0.005058},{"pair":"BAT_ETH","timestamp":1574676320000,"last":0.001514,"volume":1663.1100597901313,"volumeBase":1124397.2499999031,"change":0.00006899999999999983,"high":0.001526,"low":0.001434},{"pair":"ZRX_ETH","timestamp":1574676320000,"last":0.001706,"volume":743.4359820700047,"volumeBase":440736.17000004277,"change":0.00003000000000000008,"high":0.001738,"low":0.001641},{"pair":"NPXS_ETH","timestamp":1574676320000,"last":9.6e-7,"volume":2326.39322116971,"volumeBase":2409776884,"change":9.999999999999904e-9,"high":9.9e-7,"low":9.5e-7},{"pair":"ENJ_ETH","timestamp":1574676320000,"last":0.0003723,"volume":818.6486130898229,"volumeBase":2178393.5999996215,"change":-0.000011400000000000006,"high":0.0003896,"low":0.0003619},{"pair":"CVC_ETH","timestamp":1574676320000,"last":0.0001851,"volume":435.00046020010996,"volumeBase":2313340.1999997497,"change":-0.000005000000000000013,"high":0.0001975,"low":0.0001805},{"pair":"ADX_ETH","timestamp":1574676320000,"last":0.0004497,"volume":122.58474614996703,"volumeBase":268507.29999998957,"change":-0.000008100000000000034,"high":0.0004674,"low":0.0004487},{"pair":"AGI_ETH","timestamp":1574676320000,"last":0.00013092,"volume":206.67488707999473,"volumeBase":1595690,"change":0.0000039000000000000135,"high":0.00013168,"low":0.00012611},{"pair":"POE_ETH","timestamp":1574676320000,"last":0.00001471,"volume":235.5604000999756,"volumeBase":16292574,"change":3.200000000000003e-7,"high":0.00001522,"low":0.0000138},{"pair":"BTB_ETH","timestamp":1574676320000,"last":0.00000969,"volume":0,"volumeBase":0,"change":0,"high":0.00000969,"low":0.00000969},{"pair":"BTRS_ETH","timestamp":1574676320000,"last":0.0291,"volume":0,"volumeBase":0,"change":0,"high":0.0291,"low":0.0291}]}'
+    http_version: 
+  recorded_at: Mon, 25 Nov 2019 10:05:22 GMT
+recorded_with: VCR 4.0.0

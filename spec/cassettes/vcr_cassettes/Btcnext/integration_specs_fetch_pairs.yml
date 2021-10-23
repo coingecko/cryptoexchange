@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cmc-gate.btcnext.io/marketdata/cmc/v1/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - cmc-gate.btcnext.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.15.8.2
+      Date:
+      - Mon, 06 Apr 2020 03:48:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"btc_usdt":{"base_name":"btc","quote_name":"usdt","last_price":"6843.51619505","base_volume":"52.97475800","quote_volume":"362195.66456430","isFrozen":"0"},"bch_btc":{"base_name":"bch","quote_name":"btc","last_price":"0.03428562","base_volume":"432.63020000","quote_volume":"14.87008230","isFrozen":"0"},"noahp_eth":{"base_name":"noahp","quote_name":"eth","last_price":"0.00002500","base_volume":"481021.53002200","quote_volume":"11.78318945","isFrozen":"0"},"zec_btc":{"base_name":"zec","quote_name":"btc","last_price":"0.00486382","base_volume":"510.15038900","quote_volume":"2.47836253","isFrozen":"0"},"xmr_btc":{"base_name":"xmr","quote_name":"btc","last_price":"0.00790310","base_volume":"140.95700000","quote_volume":"1.11134487","isFrozen":"0"},"usdq_usdt":{"base_name":"usdq","quote_name":"usdt","last_price":"0.99518291","base_volume":"785.12569459","quote_volume":"781.55621707","isFrozen":"0"},"bnx_btc":{"base_name":"bnx","quote_name":"btc","last_price":"0.00003526","base_volume":"81.12217068","quote_volume":"0.00312170","isFrozen":"0"},"ltc_usdt":{"base_name":"ltc","quote_name":"usdt","last_price":"40.61476867","base_volume":"407.86291500","quote_volume":"16560.48129911","isFrozen":"0"},"qdao_eth":{"base_name":"qdao","quote_name":"eth","last_price":"0.07146229","base_volume":"33.23150000","quote_volume":"2.45556489","isFrozen":"0"},"qdao_btc":{"base_name":"qdao","quote_name":"btc","last_price":"0.00129609","base_volume":"71.07020600","quote_volume":"0.09131142","isFrozen":"0"},"zec_usdt":{"base_name":"zec","quote_name":"usdt","last_price":"33.26668497","base_volume":"496.89125300","quote_volume":"16502.93560608","isFrozen":"0"},"eth_usdt":{"base_name":"eth","quote_name":"usdt","last_price":"144.02768631","base_volume":"1029.51463600","quote_volume":"148175.34052805","isFrozen":"0"},"eth_usdq":{"base_name":"eth","quote_name":"usdq","last_price":"144.76229082","base_volume":"16.98707148","quote_volume":"2443.34703693","isFrozen":"0"},"xem_btc":{"base_name":"xem","quote_name":"btc","last_price":"0.00000539","base_volume":"1815406.91140000","quote_volume":"9.82427071","isFrozen":"0"},"noahp_btc":{"base_name":"noahp","quote_name":"btc","last_price":"0.00000046","base_volume":"27245.91000000","quote_volume":"0.01273612","isFrozen":"0"},"ltc_btc":{"base_name":"ltc","quote_name":"btc","last_price":"0.00593177","base_volume":"388.42335900","quote_volume":"2.30796989","isFrozen":"0"},"xlm_btc":{"base_name":"xlm","quote_name":"btc","last_price":"0.00000643","base_volume":"564298.45780000","quote_volume":"3.61847020","isFrozen":"0"},"vest_btc":{"base_name":"vest","quote_name":"btc","last_price":"0","base_volume":"0","quote_volume":"0","isFrozen":"1"},"eth_btc":{"base_name":"eth","quote_name":"btc","last_price":"0.02107573","base_volume":"1074.23521852","quote_volume":"22.64287891","isFrozen":"0"},"xrp_usdt":{"base_name":"xrp","quote_name":"usdt","last_price":"0.17959244","base_volume":"568388.15220000","quote_volume":"102622.34418857","isFrozen":"0"},"xlm_usdt":{"base_name":"xlm","quote_name":"usdt","last_price":"0.04433930","base_volume":"592142.11570000","quote_volume":"26048.62963656","isFrozen":"0"},"qdao_usdt":{"base_name":"qdao","quote_name":"usdt","last_price":"9.98112661","base_volume":"29.47070000","quote_volume":"297.07788231","isFrozen":"0"},"dash_btc":{"base_name":"dash","quote_name":"btc","last_price":"0.00988988","base_volume":"146.01250000","quote_volume":"1.44592336","isFrozen":"0"},"bch_usdt":{"base_name":"bch","quote_name":"usdt","last_price":"233.56563618","base_volume":"475.44810000","quote_volume":"111203.36501284","isFrozen":"0"},"neo_btc":{"base_name":"neo","quote_name":"btc","last_price":"0.00103498","base_volume":"9369.00390000","quote_volume":"9.71970560","isFrozen":"0"},"noahp_usdt":{"base_name":"noahp","quote_name":"usdt","last_price":"0.00375000","base_volume":"0.00101000","quote_volume":"0.00000379","isFrozen":"0"},"btc_usdq":{"base_name":"btc","quote_name":"usdq","last_price":"6806.25989051","base_volume":"0.57145865","quote_volume":"3906.64606989","isFrozen":"0"},"dash_usdt":{"base_name":"dash","quote_name":"usdt","last_price":"67.64962824","base_volume":"7005.80000000","quote_volume":"474051.71908467","isFrozen":"0"},"bnx_eth":{"base_name":"bnx","quote_name":"eth","last_price":"0.00200390","base_volume":"234.25005467","quote_volume":"0.45852029","isFrozen":"0"},"bnx_usdt":{"base_name":"bnx","quote_name":"usdt","last_price":"0.29024609","base_volume":"427.28829463","quote_volume":"123.81721720","isFrozen":"0"},"xrp_btc":{"base_name":"xrp","quote_name":"btc","last_price":"0.00002655","base_volume":"72954.97500000","quote_volume":"1.92754144","isFrozen":"0"},"neo_usdt":{"base_name":"neo","quote_name":"usdt","last_price":"7.11513357","base_volume":"9551.93160000","quote_volume":"67594.44393321","isFrozen":"0"},"qdao_usdq":{"base_name":"qdao","quote_name":"usdq","last_price":"0","base_volume":"0","quote_volume":"0","isFrozen":"1"},"ada_usdt":{"base_name":"ada","quote_name":"usdt","last_price":"0.03223598","base_volume":"320758.14990000","quote_volume":"10330.01386777","isFrozen":"0"},"btc_krwq":{"base_name":"btc","quote_name":"krwq","last_price":"8387495.83000000","base_volume":"0.16950768","quote_volume":"1398878.27007135","isFrozen":"0"},"xmr_usdt":{"base_name":"xmr","quote_name":"usdt","last_price":"54.04313685","base_volume":"7523.57500000","quote_volume":"405319.63869163","isFrozen":"0"},"ada_btc":{"base_name":"ada","quote_name":"btc","last_price":"0.00000470","base_volume":"293729.07900000","quote_volume":"1.38493244","isFrozen":"0"}}'
+    http_version: 
+  recorded_at: Mon, 06 Apr 2020 03:48:27 GMT
+recorded_with: VCR 4.0.0

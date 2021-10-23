@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://coinfalcon.com/api/v1/markets/ETH-BTC/orders
+    uri: https://coinfalcon.com/api/v1/markets/ETH-BTC/orders?level=3
     body:
       encoding: UTF-8
       string: ''
@@ -12,72 +12,53 @@ http_interactions:
       Host:
       - coinfalcon.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Sun, 11 Mar 2018 07:26:48 GMT
+      - Fri, 13 Dec 2019 06:08:56 GMT
       Content-Type:
-      - application/json;charset=utf-8
-      Content-Length:
-      - '102'
+      - application/json
+      Transfer-Encoding:
+      - chunked
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d382c719902e8602f8f15c705bb4246b51520753207; expires=Mon, 11-Mar-19
-        07:26:47 GMT; path=/; domain=.coinfalcon.com; HttpOnly; Secure
-      Accept-Encoding:
-      - gzip
+      - __cfduid=d66027a635c21d799c2ea08d68d0762881576217336; expires=Sun, 12-Jan-20
+        06:08:56 GMT; path=/; domain=.coinfalcon.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Etag:
+      - W/"9ccfd03e947e2ba1706b4179fc3c9e97"
       Cache-Control:
       - max-age=0, private, must-revalidate
-      Cf-Connecting-Ip:
-      - 115.133.65.24
-      Cf-Ipcountry:
-      - MY
-      Cf-Visitor:
-      - '{"scheme":"https"}'
-      Etag:
-      - W/"c4a192ca58ec6b7764a8d7620037769e"
-      User-Agent:
-      - http.rb/3.0.0
-      Vary:
-      - Origin
-      Version:
-      - HTTP/1.1
-      X-Forwarded-For:
-      - 115.133.65.24, 162.158.166.160, 115.133.65.24
-      X-Forwarded-Port:
-      - '80'
-      X-Forwarded-Proto:
-      - http
-      X-Nginx-Proxy:
-      - 'true'
-      X-Ratelimit-Limit:
-      - '3'
-      X-Ratelimit-Remaining:
-      - '2'
-      X-Ratelimit-Reset:
-      - '1'
-      X-Real-Ip:
-      - 115.133.65.24
       X-Request-Id:
-      - c9821bc6-54d8-4427-94b9-9e13b6292c12
+      - 3e931b69e9e7a1757179c5acb9616d65
       X-Runtime:
-      - '0.041651'
+      - '0.032031'
       Strict-Transport-Security:
       - max-age=15552000
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      Cf-Cache-Status:
+      - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 3f9c4b7d3f887074-SIN
+      - 5445c42f6c26d9ac-SIN
     body:
-      encoding: UTF-8
-      string: '{"data":{"bids":[{"price":"0.078","size":"0.0033548"}],"asks":[{"price":"0.08182","size":"0.19316"}]}}'
+      encoding: ASCII-8BIT
+      string: '{"data":{"bids":[{"price":"0.02005","size":"0.58784792"},{"price":"0.01991","size":"0.68190396"},{"price":"0.019856","size":"0.504"},{"price":"0.019855","size":"0.11231422"},{"price":"0.01985","size":"0.1"},{"price":"0.019145","size":"0.112"},{"price":"0.019144","size":"0.08365702"},{"price":"0.019141","size":"0.112"},{"price":"0.018719","size":"0.09145788"},{"price":"0.018718","size":"1.01150606"},{"price":"0.018699","size":"0.9896046"},{"price":"0.01795","size":"0.37254769"},{"price":"0.017256","size":"0.041"},{"price":"0.017255","size":"0.36742974"},{"price":"0.017253","size":"0.97851595"},{"price":"0.0163","size":"0.69299452"},{"price":"0.016001","size":"0.18342604"},{"price":"0.015613","size":"0.1"},{"price":"0.015612","size":"5.44850116"},{"price":"0.015522","size":"0.21930164"},{"price":"0.0155","size":"2.0"},{"price":"0.015","size":"0.25"},{"price":"0.013265","size":"0.2809271"},{"price":"0.012113","size":"0.0597705"},{"price":"0.012111","size":"1.0"},{"price":"0.01188","size":"2.9441"},{"price":"0.01121","size":"0.2"},{"price":"0.01015","size":"2.0"},{"price":"0.007111","size":"2.0"},{"price":"0.003142","size":"3.64863145"},{"price":"0.003141","size":"0.5"},{"price":"0.003136","size":"2.87053572"},{"price":"0.003006","size":"0.57085829"},{"price":"0.003005","size":"14.6063228"},{"price":"0.003","size":"16.0"},{"price":"0.002526","size":"0.05106889"},{"price":"0.001145","size":"1.0"},{"price":"0.001136","size":"1.55721831"},{"price":"0.001103","size":"0.5"},{"price":"0.0011","size":"16.63636364"},{"price":"0.000528","size":"3.47632576"},{"price":"0.000406","size":"5.0"},{"price":"0.000404","size":"33.71287129"},{"price":"0.000399","size":"5.07518797"},{"price":"0.000379","size":"2.71240106"},{"price":"0.000355","size":"25.0"},{"price":"0.000317","size":"1.0"},{"price":"0.000152","size":"22.03947369"},{"price":"0.000151","size":"51.52317881"},{"price":"0.000121","size":"10.0"},{"price":"0.000109","size":"100.0"},{"price":"0.000105","size":"230.43809524"},{"price":"0.000103","size":"3.98058253"},{"price":"0.000099","size":"5.44444445"},{"price":"0.000093","size":"5.0"},{"price":"0.000069","size":"100.0"},{"price":"0.00006","size":"485.38333334"},{"price":"0.00004","size":"20.0"},{"price":"0.000031","size":"20.0"},{"price":"0.00002","size":"50.5"},{"price":"0.00001","size":"5568.0"}],"asks":[{"price":"0.020227","size":"0.112"},{"price":"0.020228","size":"0.18521518"},{"price":"0.02023","size":"1.12"},{"price":"0.02025","size":"6.368"},{"price":"0.020252","size":"0.29243611"},{"price":"0.021334","size":"0.024"},{"price":"0.021335","size":"0.08876802"},{"price":"0.02135","size":"0.32292141"},{"price":"0.022","size":"0.21638614"},{"price":"0.022222","size":"1.0"},{"price":"0.02241","size":"0.55316063"},{"price":"0.023","size":"0.48734491"},{"price":"0.023799","size":"0.008"},{"price":"0.0238","size":"0.05009743"},{"price":"0.02399","size":"0.0854713"},{"price":"0.024444","size":"1.0"},{"price":"0.024706","size":"0.0042"},{"price":"0.026595","size":"0.02"},{"price":"0.026665","size":"0.012075"},{"price":"0.026956","size":"0.045"},{"price":"0.028108","size":"0.03"},{"price":"0.0299","size":"0.043"},{"price":"0.029994","size":"0.01"},{"price":"0.03","size":"0.1"},{"price":"0.030999","size":"0.03545931"},{"price":"0.031014","size":"0.02"},{"price":"0.031793","size":"0.05"},{"price":"0.031999","size":"0.09929442"},{"price":"0.032","size":"1.0"},{"price":"0.033","size":"0.65246306"},{"price":"0.033277","size":"0.02"},{"price":"0.036","size":"0.75"},{"price":"0.039999","size":"1.28512807"},{"price":"0.04","size":"1.05998978"},{"price":"0.042111","size":"1.0"},{"price":"0.043892","size":"0.02"},{"price":"0.043999","size":"0.06004837"},{"price":"0.044966","size":"0.01"},{"price":"0.045","size":"0.21953982"},{"price":"0.047111","size":"1.0"},{"price":"0.049988","size":"0.02"},{"price":"0.05","size":"1.3"},{"price":"0.054989","size":"0.02"},{"price":"0.055","size":"0.41712994"},{"price":"0.058999","size":"0.03438347"},{"price":"0.059698","size":"1.6664635"},{"price":"0.059699","size":"0.1223514"},{"price":"0.059799","size":"3.87084288"},{"price":"0.059879","size":"0.02"},{"price":"0.069111","size":"0.25"},{"price":"0.069878","size":"0.02"},{"price":"0.07","size":"0.20856497"},{"price":"0.078974","size":"0.02"},{"price":"0.089979","size":"0.02"},{"price":"0.09","size":"0.25"},{"price":"0.099872","size":"0.01"},{"price":"0.099899","size":"0.03104288"},{"price":"0.099991","size":"0.01"},{"price":"0.1","size":"0.11675836"},{"price":"0.100033","size":"0.01"},{"price":"0.139877","size":"0.01"},{"price":"0.156978","size":"0.01"},{"price":"0.176589","size":"0.01"},{"price":"0.177778","size":"0.01884728"},{"price":"0.189878","size":"0.01"},{"price":"0.199962","size":"0.01"},{"price":"0.2","size":"0.43895554"},{"price":"0.211999","size":"0.16550958"},{"price":"0.255556","size":"0.04447959"},{"price":"0.299992","size":"0.01"},{"price":"0.3","size":"0.84447777"},{"price":"0.333333","size":"0.04447959"},{"price":"0.39998","size":"0.01"},{"price":"0.4","size":"0.65223888"},{"price":"0.40287","size":"0.40287"},{"price":"0.411111","size":"0.09423642"},{"price":"0.488889","size":"0.09423642"},{"price":"0.499969","size":"0.01"},{"price":"0.5","size":"0.50612253"},{"price":"0.55","size":"0.08000298"},{"price":"0.566667","size":"0.07463524"},{"price":"0.6","size":"0.5"},{"price":"0.644444","size":"0.07463524"},{"price":"0.666666","size":"0.01"},{"price":"0.6888","size":"0.87336068"},{"price":"0.7","size":"0.57305972"},{"price":"0.722222","size":"0.01884728"},{"price":"0.759938","size":"0.01"},{"price":"0.799985","size":"0.01"},{"price":"0.799998","size":"0.03104287"},{"price":"0.8","size":"0.01884728"},{"price":"0.8479","size":"0.001"},{"price":"0.89999","size":"0.01"},{"price":"0.9","size":"0.00305972"},{"price":"0.999898","size":"0.01"},{"price":"0.9999","size":"0.02"},{"price":"1.0","size":"0.34561354"},{"price":"1.99999","size":"0.10328385"},{"price":"2.0","size":"0.07"},{"price":"3.108","size":"0.021"},{"price":"4.9","size":"0.4"},{"price":"4.919995","size":"0.01"},{"price":"7.979988","size":"0.1"},{"price":"8.0","size":"0.02024947"},{"price":"9.98999","size":"0.01"},{"price":"9.99991","size":"0.002"},{"price":"10.0","size":"0.01"},{"price":"19.96","size":"0.01"},{"price":"19.979991","size":"0.01"},{"price":"794.94","size":"0.1"},{"price":"794.959996","size":"0.005"},{"price":"794.979999","size":"0.00870338"},{"price":"899.0","size":"0.02"},{"price":"900.0","size":"0.005"},{"price":"999.0","size":"0.00003281"},{"price":"99999.979986","size":"0.00001"},{"price":"99999.98","size":"0.005"},{"price":"99999999999999.0","size":"0.00001"},{"price":"999999999999999.0","size":"0.00000001"}]}}'
     http_version: 
-  recorded_at: Sun, 11 Mar 2018 07:26:48 GMT
+  recorded_at: Fri, 13 Dec 2019 06:08:56 GMT
 recorded_with: VCR 4.0.0

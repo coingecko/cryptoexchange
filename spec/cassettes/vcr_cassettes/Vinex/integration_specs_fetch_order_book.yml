@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.vinex.network/api/v2/get-order-book?market=BTC_ETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.vinex.network
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 17 May 2019 06:59:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '248'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d4a5c1be2c8313a7f347fb6d584bba6d81558076373; expires=Sat, 16-May-20
+        06:59:33 GMT; path=/; domain=.vinex.network; HttpOnly
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"f8-4MaOMtVC6O2TFRi5rKl+kGVUNLA"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d83b597fa0baa48-SIN
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"data":{"bids":[{"price":0.0295,"quantity":0.1432},{"price":0.029,"quantity":0.592},{"price":0.02755,"quantity":0.0426}],"asks":[{"price":0.048,"quantity":0.038},{"price":0.0485,"quantity":0.5969},{"price":0.0489,"quantity":0.0472}]}}'
+    http_version: 
+  recorded_at: Fri, 17 May 2019 06:59:32 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://datacenter.iqfinex.com/v1/assets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - datacenter.iqfinex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Date:
+      - Tue, 24 Sep 2019 04:29:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4484'
+      Connection:
+      - close
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Sid, X-XSS-Protection
+      Access-Control-Expose-Headers:
+      - Authorization, Sid
+      Access-Control-Max-Age:
+      - '360000'
+      Etag:
+      - W/"1184-U7hEDEyDv7UkL/0XDkgsxFqkOlQ"
+      Access-Controll-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"data":{"count":48,"rows":[{"pair":"AMCETH","right":"ETH","left":"AMC","accuracy":"8","min_volume":20000,"isTrade":true},{"pair":"BATBTC","right":"BTC","left":"BAT","accuracy":"8","min_volume":10,"isTrade":true},{"pair":"BATETH","right":"ETH","left":"BAT","accuracy":"8","min_volume":10,"isTrade":true},{"pair":"BCHBTC","right":"BTC","left":"BCH","accuracy":"6","min_volume":0.007,"isTrade":true},{"pair":"BCHETH","right":"ETH","left":"BCH","accuracy":"6","min_volume":0.007,"isTrade":true},{"pair":"BCHSVBTC","right":"BTC","left":"BCHSV","accuracy":"6","min_volume":0.005,"isTrade":true},{"pair":"BCHUSDC","right":"USDC","left":"BCH","accuracy":"2","min_volume":0.01,"isTrade":true},{"pair":"BTCUSDC","right":"USDC","left":"BTC","accuracy":"2","min_volume":0.001,"isTrade":true},{"pair":"BTGBTC","right":"BTC","left":"BTG","accuracy":"8","min_volume":0.5,"isTrade":true},{"pair":"DENTETH","right":"ETH","left":"DENT","accuracy":"8","min_volume":5000,"isTrade":true},{"pair":"DSHBTC","right":"BTC","left":"DSH","accuracy":"6","min_volume":0.02,"isTrade":true},{"pair":"DSHETH","right":"ETH","left":"DSH","accuracy":"5","min_volume":0.02,"isTrade":true},{"pair":"EOSBTC","right":"BTC","left":"EOS","accuracy":"7","min_volume":0.5,"isTrade":true},{"pair":"EOSETH","right":"ETH","left":"EOS","accuracy":"6","min_volume":0.5,"isTrade":true},{"pair":"EOSUSDC","right":"USDC","left":"EOS","accuracy":"4","min_volume":1,"isTrade":true},{"pair":"ETCBTC","right":"BTC","left":"ETC","accuracy":"7","min_volume":0.3,"isTrade":true},{"pair":"ETCETH","right":"ETH","left":"ETC","accuracy":"7","min_volume":0.3,"isTrade":true},{"pair":"ETCUSDC","right":"USDC","left":"ETC","accuracy":"4","min_volume":1,"isTrade":true},{"pair":"ETHBTC","right":"BTC","left":"ETH","accuracy":"6","min_volume":0.01,"isTrade":true},{"pair":"ETHUSDC","right":"USDC","left":"ETH","accuracy":"2","min_volume":0.01,"isTrade":true},{"pair":"FORKETH","right":"ETH","left":"FORK","accuracy":"8","min_volume":2000,"isTrade":true},{"pair":"GNTBTC","right":"BTC","left":"GNT","accuracy":"8","min_volume":30,"isTrade":true},{"pair":"GNTETH","right":"ETH","left":"GNT","accuracy":"8","min_volume":30,"isTrade":true},{"pair":"HUBRBTC","right":"BTC","left":"HUBR","accuracy":"8","min_volume":10,"isTrade":true},{"pair":"HUBRETH","right":"ETH","left":"HUBR","accuracy":"8","min_volume":10,"isTrade":true},{"pair":"IQFBTC","right":"BTC","left":"IQF","accuracy":"8","min_volume":20,"isTrade":true},{"pair":"IQFETH","right":"ETH","left":"IQF","accuracy":"8","min_volume":20,"isTrade":true},{"pair":"KITETH","right":"ETH","left":"KIT","accuracy":"8","min_volume":300000,"isTrade":true},{"pair":"LTCBTC","right":"BTC","left":"LTC","accuracy":"6","min_volume":0.03,"isTrade":true},{"pair":"LTCETH","right":"ETH","left":"LTC","accuracy":"6","min_volume":0.03,"isTrade":true},{"pair":"LTCUSDC","right":"USDC","left":"LTC","accuracy":"2","min_volume":0.1,"isTrade":true},{"pair":"MDABTC","right":"BTC","left":"MDA","accuracy":"8","min_volume":3,"isTrade":true},{"pair":"MDAETH","right":"ETH","left":"MDA","accuracy":"8","min_volume":3,"isTrade":true},{"pair":"MODETH","right":"ETH","left":"MOD","accuracy":"8","min_volume":10,"isTrade":true},{"pair":"NPXSETH","right":"ETH","left":"NPXS","accuracy":"8","min_volume":6000,"isTrade":true},{"pair":"OMGBTC","right":"BTC","left":"OMG","accuracy":"7","min_volume":2,"isTrade":true},{"pair":"OMGETH","right":"ETH","left":"OMG","accuracy":"6","min_volume":2,"isTrade":true},{"pair":"REPBTC","right":"BTC","left":"REP","accuracy":"8","min_volume":0.2,"isTrade":true},{"pair":"REPETH","right":"ETH","left":"REP","accuracy":"8","min_volume":0.2,"isTrade":true},{"pair":"SNTBTC","right":"BTC","left":"SNT","accuracy":"8","min_volume":100,"isTrade":true},{"pair":"SNTETH","right":"ETH","left":"SNT","accuracy":"8","min_volume":100,"isTrade":true},{"pair":"XLMBTC","right":"BTC","left":"XLM","accuracy":"8","min_volume":30,"isTrade":true},{"pair":"XLMETH","right":"ETH","left":"XLM","accuracy":"8","min_volume":30,"isTrade":true},{"pair":"XLMUSDC","right":"USDC","left":"XLM","accuracy":"5","min_volume":10,"isTrade":true},{"pair":"ZECBTC","right":"BTC","left":"ZEC","accuracy":"6","min_volume":0.05,"isTrade":true},{"pair":"ZECETH","right":"ETH","left":"ZEC","accuracy":"5","min_volume":0.05,"isTrade":true},{"pair":"ZRXBTC","right":"BTC","left":"ZRX","accuracy":"8","min_volume":9,"isTrade":true},{"pair":"ZRXETH","right":"ETH","left":"ZRX","accuracy":"8","min_volume":9,"isTrade":true}]}}'
+    http_version: 
+  recorded_at: Tue, 24 Sep 2019 04:29:52 GMT
+recorded_with: VCR 4.0.0

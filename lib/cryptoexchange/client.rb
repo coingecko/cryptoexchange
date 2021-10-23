@@ -1,13 +1,16 @@
 module Cryptoexchange
   class Client
-    def initialize(ticker_ttl: 3, cache_size: 200)
-      LruTtlCache.ticker_cache(ticker_ttl, cache_size)
+    def initialize
+    end
+
+    def cache
+      Cryptoexchange::Cache.ticker_cache
     end
 
     def trade_page_url(exchange, args={})
       pairs_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Market"
       pairs_class = Object.const_get(pairs_classname)
-      pairs_class.trade_page_url(base: args[:base], target: args[:target])
+      pairs_class.trade_page_url(base: args[:base], target: args[:target], inst_id: args[:inst_id])
     end
 
     def pairs(exchange)
@@ -15,6 +18,9 @@ module Cryptoexchange
       pairs_class = Object.const_get(pairs_classname)
       pairs_object = pairs_class.new
       pairs_object.fetch
+    rescue HttpResponseError, HttpConnectionError, HttpTimeoutError, HttpBadRequestError, JsonParseError, JSON::ParserError, TypeFormatError, CredentialsMissingError, OpenSSL::SSL::SSLError, HTTP::Redirector::EndlessRedirectError => e
+      # temporary or permanent failure, omit
+      return {error: [e]}
     end
 
     def ticker(market_pair)
@@ -24,12 +30,24 @@ module Cryptoexchange
       market = market_class.new
 
       if market_class.supports_individual_ticker_query?
-        market.fetch(market_pair)
+        begin
+          market.fetch(market_pair)
+        rescue NoMethodError => e
+          raise Cryptoexchange::ResultParseError, { response: e }
+        end
       else
         tickers = market.fetch
-        tickers.find do |t|
-          t.base.casecmp(market_pair.base) == 0 &&
-            t.target.casecmp(market_pair.target) == 0
+        ticker = tickers.find do |t|
+          if t.inst_id.nil? || t.inst_id == ""
+            (t.base.casecmp(market_pair.base) == 0 && t.target.casecmp(market_pair.target) == 0)
+          else
+            (t.inst_id.casecmp(market_pair.inst_id) == 0 )
+          end
+        end
+        if ticker.nil?
+          raise Cryptoexchange::ResultParseError, { response: nil }
+        else
+          ticker
         end
       end
     end
@@ -46,7 +64,7 @@ module Cryptoexchange
       available_exchanges.each do |exchange|
         pairs = pairs(exchange)
         next if pairs.is_a?(Hash) && !pairs[:error].empty?
-        pairs.each do |pair|
+        pairs.compact.each do |pair|
           if [pair.base, pair.target].include?(currency.upcase)
             exchanges << exchange
             break
@@ -67,6 +85,26 @@ module Cryptoexchange
       else
         order_books = order_book.fetch
         order_books.find do |o|
+          o.base.casecmp(market_pair.base) == 0 &&
+            o.target.casecmp(market_pair.target) == 0
+        end
+      end
+    rescue NoMethodError => e
+      raise Cryptoexchange::OrderbookNoMethodError, { error: e }
+    end
+
+    # contract_stats
+    def contract_stat(market_pair)
+      exchange = market_pair.market
+      market_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::ContractStat"
+      market_class = Object.const_get(market_classname)
+      contract_stat = market_class.new
+
+      if market_class.supports_individual_ticker_query?
+        contract_stat.fetch(market_pair)
+      else
+        contract_stats = contract_stat.fetch
+        contract_stats.find do |o|
           o.base.casecmp(market_pair.base) == 0 &&
             o.target.casecmp(market_pair.target) == 0
         end
@@ -109,6 +147,44 @@ module Cryptoexchange
         onclose: onclose,
         stream_type: 'order_book'
       )
+    end
+
+    def pair_url(market_pair)
+      exchange = market_pair.market
+      pairs_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Pairs"
+      pairs_class = Object.const_get(pairs_classname)
+      pair_url = pairs_class::PAIRS_URL
+    end
+
+    def market_url(market_pair)
+      exchange = market_pair.market
+      market_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Market"
+      market_class = Object.const_get(market_classname)
+
+      if market_class.supports_individual_ticker_query?
+        market_url = market_class.new.ticker_url(market_pair)
+      else
+        market_url = market_class.new.ticker_url
+      end
+    end
+
+    def order_book_url(market_pair)
+      exchange = market_pair.market
+      order_book_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::OrderBook"
+      order_book_class = Object.const_get(order_book_classname)
+
+      if order_book_class.supports_individual_ticker_query?
+        order_book_url = order_book_class.new.ticker_url(market_pair)
+      else
+        order_book_url = order_book_class.new.ticker_url
+      end
+    end
+
+    def trades_url(market_pair)
+      exchange = market_pair.market
+      trades_classname = "Cryptoexchange::Exchanges::#{StringHelper.camelize(exchange)}::Services::Trades"
+      trades_class = Object.const_get(trades_classname)
+      trades_url = trades_class.new.ticker_url(market_pair)
     end
 
     private

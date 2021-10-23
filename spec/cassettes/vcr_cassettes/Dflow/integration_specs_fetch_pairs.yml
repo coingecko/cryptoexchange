@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dflowx.com/v1/market/list
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dflowx.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.2
+      Date:
+      - Wed, 20 Feb 2019 03:37:20 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - SCOUTER=z55ip860qavtbd; Max-Age=2147483647; Expires=Mon, 10-Mar-2087 06:51:27
+        GMT; Path=/
+    body:
+      encoding: UTF-8
+      string: '{"code":"0","msg":"suc","data":[{"symbol":"ethusdt","count_coin":"usdt","amount_precision":3,"base_coin":"eth","price_precision":5},{"symbol":"fsnusdt","count_coin":"usdt","amount_precision":2,"base_coin":"fsn","price_precision":4},{"symbol":"ftmusdt","count_coin":"usdt","amount_precision":2,"base_coin":"ftm","price_precision":4},{"symbol":"ablusdt","count_coin":"usdt","amount_precision":2,"base_coin":"abl","price_precision":4},{"symbol":"btcusdt","count_coin":"usdt","amount_precision":4,"base_coin":"btc","price_precision":6},{"symbol":"dflusdt","count_coin":"usdt","amount_precision":2,"base_coin":"dfl","price_precision":4},{"symbol":"ethbtc","count_coin":"btc","amount_precision":4,"base_coin":"eth","price_precision":6},{"symbol":"fsnbtc","count_coin":"btc","amount_precision":6,"base_coin":"fsn","price_precision":8},{"symbol":"ftmbtc","count_coin":"btc","amount_precision":6,"base_coin":"ftm","price_precision":8},{"symbol":"ablbtc","count_coin":"btc","amount_precision":6,"base_coin":"abl","price_precision":8},{"symbol":"bchabcbtc","count_coin":"btc","amount_precision":4,"base_coin":"bchabc","price_precision":6},{"symbol":"bchsvbtc","count_coin":"btc","amount_precision":4,"base_coin":"bchsv","price_precision":6},{"symbol":"bchabcusdt","count_coin":"usdt","amount_precision":3,"base_coin":"bchabc","price_precision":5},{"symbol":"bchsvusdt","count_coin":"usdt","amount_precision":3,"base_coin":"bchsv","price_precision":5},{"symbol":"beebtc","count_coin":"btc","amount_precision":6,"base_coin":"bee","price_precision":8},{"symbol":"beeusdt","count_coin":"usdt","amount_precision":2,"base_coin":"bee","price_precision":4},{"symbol":"springbtc","count_coin":"btc","amount_precision":6,"base_coin":"spring","price_precision":8},{"symbol":"springusdt","count_coin":"usdt","amount_precision":2,"base_coin":"spring","price_precision":4},{"symbol":"c20btc","count_coin":"btc","amount_precision":6,"base_coin":"c20","price_precision":8},{"symbol":"c20usdt","count_coin":"usdt","amount_precision":2,"base_coin":"c20","price_precision":4},{"symbol":"atomusdt","count_coin":"usdt","amount_precision":0,"base_coin":"atom","price_precision":2}]}'
+    http_version: 
+  recorded_at: Wed, 20 Feb 2019 03:37:20 GMT
+recorded_with: VCR 4.0.0

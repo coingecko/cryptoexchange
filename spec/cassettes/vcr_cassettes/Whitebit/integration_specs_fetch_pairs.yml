@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://whitebit.com/api/v1/public/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - whitebit.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Jun 2019 07:30:34 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d55e7a25224c8d247def8eab6f7d9aae21560497433; expires=Sat, 13-Jun-20
+        07:30:33 GMT; path=/; domain=.whitebit.com; HttpOnly; Secure
+      Cache-Control:
+      - no-cache, private
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Xss-Protection:
+      - 1; mode=block
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e6a997ffee82e01-NRT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"message":"","result":[{"name":"BTC_USD","moneyPrec":"2","stock":"BTC","money":"USD","stockPrec":"6","feePrec":"4","minAmount":"0.001"},{"name":"ETH_BTC","moneyPrec":"6","stock":"ETH","money":"BTC","stockPrec":"3","feePrec":"4","minAmount":"0.001"},{"name":"ETH_USD","moneyPrec":"2","stock":"ETH","money":"USD","stockPrec":"5","feePrec":"4","minAmount":"0.001"},{"name":"LTC_BTC","moneyPrec":"6","stock":"LTC","money":"BTC","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"LTC_ETH","moneyPrec":"5","stock":"LTC","money":"ETH","stockPrec":"3","feePrec":"4","minAmount":"0.001"},{"name":"LTC_USD","moneyPrec":"2","stock":"LTC","money":"USD","stockPrec":"5","feePrec":"4","minAmount":"0.001"},{"name":"XLM_BTC","moneyPrec":"8","stock":"XLM","money":"BTC","stockPrec":"0","feePrec":"4","minAmount":"1"},{"name":"XLM_ETH","moneyPrec":"8","stock":"XLM","money":"ETH","stockPrec":"0","feePrec":"4","minAmount":"1"},{"name":"XLM_USD","moneyPrec":"5","stock":"XLM","money":"USD","stockPrec":"1","feePrec":"4","minAmount":"0.1"},{"name":"DASH_BTC","moneyPrec":"6","stock":"DASH","money":"BTC","stockPrec":"3","feePrec":"4","minAmount":"0.001"},{"name":"DASH_ETH","moneyPrec":"5","stock":"DASH","money":"ETH","stockPrec":"3","feePrec":"4","minAmount":"0.001"},{"name":"DASH_USD","moneyPrec":"2","stock":"DASH","money":"USD","stockPrec":"5","feePrec":"4","minAmount":"0.001"},{"name":"BCH_BTC","moneyPrec":"6","stock":"BCH","money":"BTC","stockPrec":"3","feePrec":"4","minAmount":"0.001"},{"name":"BCH_ETH","moneyPrec":"5","stock":"BCH","money":"ETH","stockPrec":"3","feePrec":"4","minAmount":"0.001"},{"name":"BCH_USD","moneyPrec":"2","stock":"BCH","money":"USD","stockPrec":"5","feePrec":"4","minAmount":"0.001"},{"name":"GAS_BTC","moneyPrec":"6","stock":"GAS","money":"BTC","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"NEO_BTC","moneyPrec":"6","stock":"NEO","money":"BTC","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"NEO_ETH","moneyPrec":"6","stock":"NEO","money":"ETH","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"NEO_USD","moneyPrec":"3","stock":"NEO","money":"USD","stockPrec":"3","feePrec":"4","minAmount":"0.001"},{"name":"ETC_BTC","moneyPrec":"6","stock":"ETC","money":"BTC","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"ETC_ETH","moneyPrec":"6","stock":"ETC","money":"ETH","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"ETC_USD","moneyPrec":"4","stock":"ETC","money":"USD","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"OMG_BTC","moneyPrec":"6","stock":"OMG","money":"BTC","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"OMG_ETH","moneyPrec":"6","stock":"OMG","money":"ETH","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"OMG_USD","moneyPrec":"4","stock":"OMG","money":"USD","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"PPT_BTC","moneyPrec":"7","stock":"PPT","money":"BTC","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"PPT_ETH","moneyPrec":"6","stock":"PPT","money":"ETH","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"PPT_USD","moneyPrec":"4","stock":"PPT","money":"USD","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"BNB_BTC","moneyPrec":"7","stock":"BNB","money":"BTC","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"BNB_ETH","moneyPrec":"6","stock":"BNB","money":"ETH","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"BNB_USD","moneyPrec":"4","stock":"BNB","money":"USD","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"BNB_USDT","moneyPrec":"4","stock":"BNB","money":"USDT","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"SNT_BTC","moneyPrec":"8","stock":"SNT","money":"BTC","stockPrec":"0","feePrec":"4","minAmount":"1"},{"name":"SNT_ETH","moneyPrec":"8","stock":"SNT","money":"ETH","stockPrec":"0","feePrec":"4","minAmount":"1"},{"name":"SNT_USD","moneyPrec":"4","stock":"SNT","money":"USD","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"MKR_BTC","moneyPrec":"6","stock":"MKR","money":"BTC","stockPrec":"3","feePrec":"4","minAmount":"0.001"},{"name":"MKR_ETH","moneyPrec":"6","stock":"MKR","money":"ETH","stockPrec":"3","feePrec":"4","minAmount":"0.001"},{"name":"MKR_USD","moneyPrec":"2","stock":"MKR","money":"USD","stockPrec":"6","feePrec":"4","minAmount":"0.001"},{"name":"DGD_BTC","moneyPrec":"6","stock":"DGD","money":"BTC","stockPrec":"3","feePrec":"4","minAmount":"0.001"},{"name":"DGD_ETH","moneyPrec":"5","stock":"DGD","money":"ETH","stockPrec":"3","feePrec":"4","minAmount":"0.001"},{"name":"DGD_USD","moneyPrec":"4","stock":"DGD","money":"USD","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"AE_BTC","moneyPrec":"7","stock":"AE","money":"BTC","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"AE_ETH","moneyPrec":"6","stock":"AE","money":"ETH","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"AE_USD","moneyPrec":"4","stock":"AE","money":"USD","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"WTC_BTC","moneyPrec":"7","stock":"WTC","money":"BTC","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"WTC_ETH","moneyPrec":"6","stock":"WTC","money":"ETH","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"WTC_USD","moneyPrec":"4","stock":"WTC","money":"USD","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"VERI_BTC","moneyPrec":"6","stock":"VERI","money":"BTC","stockPrec":"3","feePrec":"4","minAmount":"0.001"},{"name":"VERI_ETH","moneyPrec":"5","stock":"VERI","money":"ETH","stockPrec":"3","feePrec":"4","minAmount":"0.001"},{"name":"VERI_USD","moneyPrec":"4","stock":"VERI","money":"USD","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"ZRX_BTC","moneyPrec":"8","stock":"ZRX","money":"BTC","stockPrec":"0","feePrec":"4","minAmount":"1"},{"name":"ZRX_ETH","moneyPrec":"8","stock":"ZRX","money":"ETH","stockPrec":"0","feePrec":"4","minAmount":"1"},{"name":"ZRX_USD","moneyPrec":"4","stock":"ZRX","money":"USD","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"ZRX_USDT","moneyPrec":"4","stock":"ZRX","money":"USDT","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"R_BTC","moneyPrec":"8","stock":"R","money":"BTC","stockPrec":"0","feePrec":"4","minAmount":"1"},{"name":"R_ETH","moneyPrec":"8","stock":"R","money":"ETH","stockPrec":"0","feePrec":"4","minAmount":"1"},{"name":"R_USD","moneyPrec":"4","stock":"R","money":"USD","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"ZIL_BTC","moneyPrec":"8","stock":"ZIL","money":"BTC","stockPrec":"0","feePrec":"4","minAmount":"1"},{"name":"ZIL_ETH","moneyPrec":"8","stock":"ZIL","money":"ETH","stockPrec":"0","feePrec":"4","minAmount":"1"},{"name":"ZIL_USD","moneyPrec":"5","stock":"ZIL","money":"USD","stockPrec":"1","feePrec":"4","minAmount":"0.1"},{"name":"ZIL_USDT","moneyPrec":"5","stock":"ZIL","money":"USDT","stockPrec":"1","feePrec":"4","minAmount":"0.1"},{"name":"BAT_BTC","moneyPrec":"8","stock":"BAT","money":"BTC","stockPrec":"0","feePrec":"4","minAmount":"1"},{"name":"BAT_ETH","moneyPrec":"8","stock":"BAT","money":"ETH","stockPrec":"0","feePrec":"4","minAmount":"1"},{"name":"BAT_USD","moneyPrec":"4","stock":"BAT","money":"USD","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"BAT_USDT","moneyPrec":"4","stock":"BAT","money":"USDT","stockPrec":"2","feePrec":"4","minAmount":"0.01"},{"name":"LOT_USDT","moneyPrec":"4","stock":"LOT","money":"USDT","stockPrec":"2","feePrec":"4","minAmount":"1"},{"name":"LOT_BTC","moneyPrec":"8","stock":"LOT","money":"BTC","stockPrec":"2","feePrec":"4","minAmount":"1"},{"name":"LOT_ETH","moneyPrec":"6","stock":"LOT","money":"ETH","stockPrec":"2","feePrec":"4","minAmount":"1"},{"name":"KEY_BTC","moneyPrec":"8","stock":"KEY","money":"BTC","stockPrec":"0","feePrec":"4","minAmount":"1"},{"name":"KEY_ETH","moneyPrec":"8","stock":"KEY","money":"ETH","stockPrec":"0","feePrec":"4","minAmount":"1"},{"name":"KEY_USD","moneyPrec":"2","stock":"KEY","money":"USD","stockPrec":"0","feePrec":"4","minAmount":"1"},{"name":"XRC_BTC","moneyPrec":"8","stock":"XRC","money":"BTC","stockPrec":"3","feePrec":"4","minAmount":"0.001"},{"name":"XRC_ETH","moneyPrec":"8","stock":"XRC","money":"ETH","stockPrec":"3","feePrec":"4","minAmount":"0.001"},{"name":"XRC_USD","moneyPrec":"2","stock":"XRC","money":"USD","stockPrec":"3","feePrec":"4","minAmount":"0.001"}]}'
+    http_version: 
+  recorded_at: Fri, 14 Jun 2019 07:30:34 GMT
+recorded_with: VCR 4.0.0

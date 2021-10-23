@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.bitonbay.com/api-public-orderbook0x0ethbtc
+    uri: https://api.bitonbay.com/v1/orderbook?market=BTC&symbol=ETH
     body:
       encoding: UTF-8
       string: ''
@@ -10,58 +10,42 @@ http_interactions:
       Connection:
       - close
       Host:
-      - www.bitonbay.com
+      - api.bitonbay.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-store, no-cache, must-revalidate
-      Pragma:
-      - no-cache
+      Date:
+      - Mon, 04 Nov 2019 07:26:26 GMT
       Content-Type:
       - text/html; charset=UTF-8
-      Expires:
-      - Thu, 19 Nov 1981 08:52:00 GMT
-      Server:
-      - Microsoft-IIS/8.0
-      X-Powered-By:
-      - ASP.NET
-      - PHP/7.0.21
-      Set-Cookie:
-      - PHPSESSID=j6vltna4sek3mams5cdvb2mjr6; path=/
-      Date:
-      - Tue, 02 Oct 2018 21:18:00 GMT
+      Transfer-Encoding:
+      - chunked
       Connection:
       - close
-      Content-Length:
-      - '3566'
+      Set-Cookie:
+      - FNsessions=8cuRRmuGOx0eJrsNjWr%2FnwioVGZfD6Q0UfHao6b8nbl%2BuKX3M8fSt6MXYT0tapAHPQFFoG8syopxr%2B%2FJ2CLG%2FRxJICtWzH2Et0Pdf4T9rEx0h%2FfcP%2FmPgQWxc2PZ1o5%2BO0Oq74xARnYcV0CgBN5RbKXnoIrwl3EW3pbnV3HbtoLjaGKZGwD0zGeGa2A7%2Brq%2F8r%2BrpFgIls%2FubtyIi%2Fi7EuruRYsPaBIvkVwEVr%2BhvWbS2R%2BkE9z212Cdw1F2vRNWYAg0hKbuS5BhviuyzGB3Sep6F5IHIQjlSyi8Tanr9XKvkG7uWkkm57yGMjp1p7gR%2FgFe0xmowh%2BrIOz%2B2Ce9hQ%3D%3D9cb7459e9f397d541704faa6e243a33f18d7288f;
+        expires=Mon, 04-Nov-2019 07:56:26 GMT; Max-Age=1800; path=/
+      - __cfduid=d6b6e55dcfd561eaf31d25a270c515ec61572852386; expires=Tue, 03-Nov-20
+        07:26:26 GMT; path=/; domain=.bitonbay.com; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5304dc14bbe02d0f-KUL
     body:
       encoding: UTF-8
-      string: '[{"idx":"1","zone_type":"eth","currency_type":"btc","order_type":"b","order_price":"0.03359828","order_amount":"17.2498","order_date":"2018-10-03
-        04:12:58","order_idx":"24828127"},{"idx":"2","zone_type":"eth","currency_type":"btc","order_type":"b","order_price":"0.03319608","order_amount":"19.65787111","order_date":"2018-10-03
-        04:09:43","order_idx":"24827887"},{"idx":"3","zone_type":"eth","currency_type":"btc","order_type":"b","order_price":"0.032775","order_amount":"19.159078","order_date":"2018-10-03
-        04:14:50","order_idx":"24828238"},{"idx":"4","zone_type":"eth","currency_type":"btc","order_type":"b","order_price":"0.03243","order_amount":"5.1714779","order_date":"2018-10-03
-        04:14:50","order_idx":"24828239"},{"idx":"5","zone_type":"eth","currency_type":"btc","order_type":"b","order_price":"0.03176416","order_amount":"10.2","order_date":"2018-10-03
-        04:11:02","order_idx":"24827988"},{"idx":"6","zone_type":"eth","currency_type":"btc","order_type":"b","order_price":"0.03142827","order_amount":"18.4","order_date":"2018-10-03
-        04:16:47","order_idx":"24828394"},{"idx":"7","zone_type":"eth","currency_type":"btc","order_type":"b","order_price":"0.0310829","order_amount":"3.69988498","order_date":"2018-10-03
-        04:16:47","order_idx":"24828395"},{"idx":"8","zone_type":"eth","currency_type":"btc","order_type":"b","order_price":"0.03076391","order_amount":"1.9039","order_date":"2018-10-03
-        04:00:45","order_idx":"24827261"},{"idx":"9","zone_type":"eth","currency_type":"btc","order_type":"b","order_price":"0.03039217","order_amount":"14.7","order_date":"2018-10-03
-        04:16:47","order_idx":"24828396"},{"idx":"10","zone_type":"eth","currency_type":"btc","order_type":"b","order_price":"0.029756","order_amount":"18.7988","order_date":"2018-10-03
-        04:04:36","order_idx":"24827523"},{"idx":"11","zone_type":"eth","currency_type":"btc","order_type":"s","order_price":"0.03522728","order_amount":"9.37","order_date":"2018-10-03
-        04:16:47","order_idx":"24828397"},{"idx":"12","zone_type":"eth","currency_type":"btc","order_type":"s","order_price":"0.03588","order_amount":"7.5716","order_date":"2018-10-03
-        04:06:28","order_idx":"24827674"},{"idx":"13","zone_type":"eth","currency_type":"btc","order_type":"s","order_price":"0.03626337","order_amount":"18.20468","order_date":"2018-10-03
-        04:16:47","order_idx":"24828398"},{"idx":"14","zone_type":"eth","currency_type":"btc","order_type":"s","order_price":"0.03671562","order_amount":"8.4999","order_date":"2018-10-03
-        04:12:58","order_idx":"24828130"},{"idx":"15","zone_type":"eth","currency_type":"btc","order_type":"s","order_price":"0.03735678","order_amount":"8.8585","order_date":"2018-10-03
-        04:08:20","order_idx":"24827802"},{"idx":"16","zone_type":"eth","currency_type":"btc","order_type":"s","order_price":"0.037638","order_amount":"0.5","order_date":"2018-10-02
-        21:02:43","order_idx":"24797827"},{"idx":"17","zone_type":"eth","currency_type":"btc","order_type":"s","order_price":"0.03797887","order_amount":"2.016133","order_date":"2018-10-03
-        04:11:02","order_idx":"24827989"},{"idx":"18","zone_type":"eth","currency_type":"btc","order_type":"s","order_price":"0.03874037","order_amount":"1.3","order_date":"2018-10-03
-        04:08:20","order_idx":"24827804"},{"idx":"19","zone_type":"eth","currency_type":"btc","order_type":"s","order_price":"0.03937166","order_amount":"13","order_date":"2018-10-03
-        04:16:47","order_idx":"24828399"},{"idx":"20","zone_type":"eth","currency_type":"btc","order_type":"s","order_price":"0.03971703","order_amount":"14.9466345","order_date":"2018-10-03
-        04:16:47","order_idx":"24828400"}]'
+      string: '{"status":"0000","data":{"ask":[{"price":"0.02018792","qty":2.29623806},{"price":"0.02018847","qty":2.93652197},{"price":"0.02019296","qty":2.62104068},{"price":"0.02019297","qty":1.58235787},{"price":"0.02019500","qty":0.7251443},{"price":"0.02019576","qty":2.70838808},{"price":"0.02020254","qty":2.14838727},{"price":"0.02020255","qty":2.71499125},{"price":"0.02020850","qty":2.93307076},{"price":"0.02021272","qty":2.41461915},{"price":"0.02021563","qty":1.26878355},{"price":"0.02023012","qty":2.00684679},{"price":"0.02023014","qty":0.41898439},{"price":"0.02023704","qty":0.25116367},{"price":"0.02023705","qty":2.90465116},{"price":"0.03977643","qty":5},{"price":"0.04977643","qty":5}],"bid":[{"price":"0.01937344","qty":7.6897838499999995},{"price":"0.01937343","qty":1.01348105},{"price":"0.01936689","qty":2.69623805},{"price":"0.01936422","qty":2.79755279},{"price":"0.01934616","qty":2.59108889},{"price":"0.01934459","qty":1.62677115},{"price":"0.01934458","qty":2.88319505},{"price":"0.01933937","qty":1.61821649},{"price":"0.01933936","qty":0.05236341},{"price":"0.01933437","qty":1.5806029},{"price":"0.01931345","qty":1.52751598},{"price":"0.01930449","qty":0.47405629},{"price":"0.01930302","qty":2.55594776},{"price":"0.01930301","qty":1.18167045}]}}'
     http_version: 
-  recorded_at: Tue, 02 Oct 2018 21:18:04 GMT
+  recorded_at: Mon, 04 Nov 2019 07:26:26 GMT
 recorded_with: VCR 4.0.0

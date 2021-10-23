@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.btse.com/spot/v2/market_summary
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.btse.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 05 Sep 2019 06:28:17 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - XSRF-TOKEN=e3e1e570-b6b0-4550-ba5e-ff2d5c8c6b57; Path=/
+      - incap_ses_1234_1816178=Z3VNP+SYpC4yvEDLxwwgEQCrcF0AAAAAf9zYqSQR/YjhLagdgPcwOg==;
+        path=/; Domain=.btse.com
+      - nlbi_1816178=7y1hZ4PD1HNZsEJ+CV6+vwAAAADwdAm69es0qcb1cBXsGhw/; path=/; Domain=.btse.com
+      - visid_incap_1816178=iODfRsEiT1ykZVsF9YBD3QCrcF0AAAAAQUIPAAAAAACcP1/FXoYxE07al7O+IZvH;
+        expires=Thu, 03 Sep 2020 07:37:54 GMT; path=/; Domain=.btse.com
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Iinfo:
+      - 14-152309088-152309092 NNNN CT(51 114 0) RT(1567664896335 27) q(0 0 2 -1)
+        r(2 2) U5
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: UTF-8
+      string: '{"BTC-USD":{"last":"10582.0","lowest_ask":"10583.5","highest_bid":"10583.0","percent_change":"0.033085976","volume":"15796857","high24hr":"10822.5","low24hr":"10387.8"},"LTC-USD":{"last":"67.00","lowest_ask":"67.05","highest_bid":"66.95","percent_change":"-1.499558953","volume":"400562","high24hr":"68.65","low24hr":"66.63"},"ETH-USD":{"last":"174.70","lowest_ask":"174.70","highest_bid":"174.45","percent_change":"-2.483951996","volume":"209640","high24hr":"179.47","low24hr":"173.68"},"USDT-USD":{"last":"1.0018","lowest_ask":"1.0019","highest_bid":"1.0011","percent_change":"-0.01996008","volume":"358423","high24hr":"1.0029","low24hr":"0.9996"}}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 06:28:17 GMT
+recorded_with: VCR 4.0.0

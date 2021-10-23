@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://exmarkets.com/api/v1/general/information
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - exmarkets.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 19 Feb 2019 18:30:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d84ee39121d20878ffde15b669133ca3e1550601026; expires=Wed, 19-Feb-20
+        18:30:26 GMT; path=/; domain=.exmarkets.com; HttpOnly
+      X-Powered-By:
+      - PHP/7.2.15
+      Cache-Control:
+      - no-cache
+      Allow:
+      - GET
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubdomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4abacdfd2c59b4e6-VNO
+    body:
+      encoding: ASCII-8BIT
+      string: '{"currencies":[{"id":1,"code":"BTC","sign":"\u0e3f"},{"id":2,"code":"ETH","sign":"\u039e"},{"id":3,"code":"LTC","sign":"\u0141"},{"id":4,"code":"BCH","sign":""},{"id":5,"code":"DASH","sign":""},{"id":8,"code":"BAT","sign":""},{"id":13,"code":"OMG","sign":""},{"id":24,"code":"USDC","sign":""},{"id":25,"code":"UDOO","sign":""},{"id":26,"code":"XRM","sign":""},{"id":27,"code":"USAT","sign":""}],"markets":[{"id":1,"name":"ETH-BTC","slug":"eth-btc","currency":"ETH","withCurrency":"BTC"},{"id":2,"name":"LTC-BTC","slug":"ltc-btc","currency":"LTC","withCurrency":"BTC"},{"id":3,"name":"LTC-ETH","slug":"ltc-eth","currency":"LTC","withCurrency":"ETH"},{"id":6,"name":"DASH-BTC","slug":"dash-btc","currency":"DASH","withCurrency":"BTC"},{"id":7,"name":"DASH-ETH","slug":"dash-eth","currency":"DASH","withCurrency":"ETH"},{"id":21,"name":"OMG-BTC","slug":"omg-btc","currency":"OMG","withCurrency":"BTC"},{"id":23,"name":"OMG-ETH","slug":"omg-eth","currency":"OMG","withCurrency":"ETH"},{"id":44,"name":"BTC-USDC","slug":"btc-usdc","currency":"BTC","withCurrency":"USDC"},{"id":45,"name":"ETH-USDC","slug":"eth-usdc","currency":"ETH","withCurrency":"USDC"},{"id":47,"name":"UDOO-BTC","slug":"udoo-btc","currency":"UDOO","withCurrency":"BTC"},{"id":49,"name":"XRM-ETH","slug":"xrm-eth","currency":"XRM","withCurrency":"ETH"},{"id":50,"name":"USAT-BTC","slug":"usat-btc","currency":"USAT","withCurrency":"BTC"}]}'
+    http_version: 
+  recorded_at: Tue, 19 Feb 2019 18:30:26 GMT
+recorded_with: VCR 4.0.0

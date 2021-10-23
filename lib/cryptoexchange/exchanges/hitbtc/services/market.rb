@@ -17,8 +17,7 @@ module Cryptoexchange::Exchanges
 
         def ticker_url(market_pair)
           symbol = "#{market_pair.base}#{market_pair.target}"
-
-          "#{Cryptoexchange::Exchanges::Hitbtc::Market::API_URL}/public/#{symbol}/ticker"
+          "#{Cryptoexchange::Exchanges::Hitbtc::Market::API_URL}/public/ticker/#{symbol}"
         end
 
         def adapt(output, market_pair)
@@ -32,7 +31,7 @@ module Cryptoexchange::Exchanges
           ticker.high      = NumericHelper.to_d(output['high'])
           ticker.low       = NumericHelper.to_d(output['low'])
           ticker.volume    = NumericHelper.to_d(output['volume'])
-          ticker.timestamp = output['timestamp'].to_i / 1000
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

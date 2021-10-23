@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.topbtc.one/market/market.php?coin=ETH&market=BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.topbtc.one
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 07 Aug 2019 09:29:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"sell":[{"num":"0.3234","price":"0.02310000","r":1,"amount":"0.0075","scale":"4.84"},{"num":"0.0227","price":"0.02244000","r":1,"amount":"0.0005","scale":"0.34"},{"num":"1.5000","price":"0.02240000","r":1,"amount":"0.0336","scale":"22.44"},{"num":"4.6364","price":"0.02158673","r":0,"amount":"0.1001","scale":"69.36"},{"num":"4.5885","price":"0.02127828","r":0,"amount":"0.0976","scale":"68.64"},{"num":"1.5000","price":"0.02125000","r":1,"amount":"0.0319","scale":"22.44"},{"num":"2.2101","price":"0.02124000","r":1,"amount":"0.0469","scale":"33.06"},{"num":"0.7992","price":"0.02098000","r":1,"amount":"0.0168","scale":"11.96"},{"num":"6.6845","price":"0.02078415","r":0,"amount":"0.1389","scale":"100.00"},{"num":"0.5245","price":"0.01986000","r":1,"amount":"0.0104","scale":"7.85"}],"buy":[{"num":"0.1490","price":"0.01880000","r":1,"amount":"0.0028","scale":"2.79"},{"num":"0.2000","price":"0.01840000","r":1,"amount":"0.0037","scale":"3.74"},{"num":"0.2000","price":"0.01820000","r":1,"amount":"0.0036","scale":"3.74"},{"num":"0.2000","price":"0.01790000","r":1,"amount":"0.0036","scale":"3.74"},{"num":"0.2000","price":"0.01770000","r":1,"amount":"0.0035","scale":"3.74"},{"num":"0.2000","price":"0.01750000","r":1,"amount":"0.0035","scale":"3.74"},{"num":"5.3475","price":"0.01731000","r":1,"amount":"0.0926","scale":"100.00"},{"num":"0.2000","price":"0.01730000","r":1,"amount":"0.0035","scale":"3.74"},{"num":"0.2000","price":"0.01710000","r":1,"amount":"0.0034","scale":"3.74"},{"num":"0.2000","price":"0.01680000","r":1,"amount":"0.0034","scale":"3.74"}],"last":{"price":0.01935278},"symbol":"ETH","market":"BTC"}'
+    http_version: 
+  recorded_at: Wed, 07 Aug 2019 09:29:19 GMT
+recorded_with: VCR 4.0.0

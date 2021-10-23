@@ -2,8 +2,7 @@ module Cryptoexchange::Exchanges
   module Vebitcoin
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Vebitcoin::Market::API_URL}/Ticker/All"
-        TARGET    = "TRY"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Vebitcoin::Market::API_URL}/ticker"
 
         def fetch
           output = super
@@ -13,8 +12,8 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           output.map do |pair|
             Cryptoexchange::Models::MarketPair.new(
-              base:   pair['Code'],
-              target: TARGET,
+              base:   pair['SourceCoinCode'],
+              target: pair['TargetCoinCode'],
               market: Vebitcoin::Market::NAME
             )
           end

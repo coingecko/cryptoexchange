@@ -14,21 +14,30 @@ RSpec.describe 'Coinfalcon integration specs' do
     expect(pair.market).to eq 'coinfalcon'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'coinfalcon', base: eth_btc_pair.base, target: eth_btc_pair.target
+    expect(trade_page_url).to eq "https://coinfalcon.com/en/"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(eth_btc_pair)
 
     expect(ticker.base).to eq 'ETH'
     expect(ticker.target).to eq 'BTC'
     expect(ticker.market).to eq 'coinfalcon'
+    expect(ticker.high).to be_nil
+    expect(ticker.low).to be_nil
     expect(ticker.last).to be_a Numeric
+    expect(ticker.ask).to be_nil
+    expect(ticker.bid).to be_nil
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
-    
     expect(ticker.payload).to_not be nil
   end
 
   it 'fetch order book' do
     order_book = client.order_book(eth_btc_pair)
+
     expect(order_book.base).to eq 'ETH'
     expect(order_book.target).to eq 'BTC'
     expect(order_book.market).to eq 'coinfalcon'
@@ -36,8 +45,10 @@ RSpec.describe 'Coinfalcon integration specs' do
     expect(order_book.bids).to_not be_empty
     expect(order_book.asks.first.price).to_not be_nil
     expect(order_book.bids.first.amount).to_not be_nil
-    expect(order_book.bids.first.timestamp).to_not be_nil
-    expect(order_book.timestamp).to be_a Numeric
+    expect(order_book.bids.first.timestamp).to be_nil
+    expect(order_book.asks.count).to be > 10
+    expect(order_book.bids.count).to be > 10
+    expect(order_book.timestamp).to be_nil
     expect(order_book.payload).to_not be nil
   end
 

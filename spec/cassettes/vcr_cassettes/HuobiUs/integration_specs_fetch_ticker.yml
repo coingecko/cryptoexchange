@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.huobi.com/market/detail/merged?symbol=ethusd
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.huobi.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 12 Feb 2019 06:43:20 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d487cf3f6fe047944fabfc10378562a071549953800; expires=Wed, 12-Feb-20
+        06:43:20 GMT; path=/; domain=.huobi.com; HttpOnly
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4a7d1491f823c10b-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","ch":"market.ethusd.detail.merged","ts":1549953800276,"tick":{"amount":0.188,"open":119.23,"close":119.6,"high":122.36,"id":100039526773,"count":1,"low":117.69,"version":100039526773,"ask":[119.82,1.2401],"vol":19.21924,"bid":[119.45,17.226]}}'
+    http_version: 
+  recorded_at: Tue, 12 Feb 2019 06:43:20 GMT
+recorded_with: VCR 4.0.0

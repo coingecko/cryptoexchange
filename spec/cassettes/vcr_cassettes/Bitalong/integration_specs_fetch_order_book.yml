@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bitalong.com/api/index/orderBook/btc_usdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bitalong.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 28 Jan 2019 15:54:38 GMT
+      Content-Type:
+      - text/html;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d6c90a9bc937bdc09afc403d231ae5f131548690878; expires=Tue, 28-Jan-20
+        15:54:38 GMT; path=/; domain=.bitalong.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/7.1.21
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - X-Requested-With,X_Requested_With,TOKEN,ID
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4a04a385e971a9ae-SIN
+    body:
+      encoding: UTF-8
+      string: '{"result":"true","asks":[["3449.39","0.0020"],["3447.54","0.0179"],["3445.58","0.0108"],["3444.47","0.6378"],["3443.57","0.3066"],["3442.51","0.3070"],["3442.23","0.2650"],["3441.57","0.1118"],["3441.14","0.1683"],["3427.38","0.0017"],["3426.81","0.1191"],["3426.24","0.0010"]],"bids":[["3412.49","0.1192"],["3411.92","0.1192"],["3411.35","0.1199"],["3404.78","0.0117"],["3404.20","0.0319"],["3402.98","0.0448"],["3401.25","0.0856"],["3400.52","0.1372"],["3399.86","0.1390"],["3397.96","0.0046"],["3397.40","0.0589"],["3397.23","0.0521"]]}'
+    http_version: 
+  recorded_at: Mon, 28 Jan 2019 15:54:38 GMT
+recorded_with: VCR 4.0.0

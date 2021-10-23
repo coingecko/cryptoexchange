@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ticker.saturn.network/api/v2/trades/ETH/SATURN/0x0000000000000000000000000000000000000000/all.json
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ticker.saturn.network
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 408
+      message: Request Timeout
+    headers:
+      Date:
+      - Wed, 22 Apr 2020 09:35:29 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Content-Length:
+      - '15'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=da512b6663aad431cefe8cf874cb2a2ed1587548114; expires=Fri, 22-May-20
+        09:35:14 GMT; path=/; domain=.saturn.network; HttpOnly; SameSite=Lax; Secure
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 587e5a837f957395-JHB
+      Cf-Request-Id:
+      - 0242d6e62f000073953ebf4200000001
+    body:
+      encoding: UTF-8
+      string: Request timeout
+    http_version: 
+  recorded_at: Wed, 22 Apr 2020 09:35:27 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.theice.com/marketdata/DelayedMarkets.shtml?getContractsAsJson=&hubId=26066&productId=23808
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.theice.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 06 Nov 2019 05:04:24 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '898'
+      Connection:
+      - close
+      Set-Cookie:
+      - ICE_MARKETDATA=!RoCtYWz2z+TXqSWQmW/NR4Un8KL87E53c/y2V1mdxSBYp7NVwpvM0Q5nDbODUozLfHK8axSjUDkUJiZZMRb4RnaojeJuMMM1AD44JkXKvAP1n/AX/h1guZ5sTtQF6tEwgLH941/5F0cDjrdB4wMN05WNmg==;
+        path=/; Httponly; Secure
+      - JSESSIONID=EF2C4CA69F2FA078EBAB3EFD186ADB8F; Path=/marketdata/; Secure; HttpOnly
+      - TS0156c7aa=0100e6d495e7bb1a977ecd9a02abb899724cbc8c9c3f383cf7e0142b2c6f7c3c57421ff661aff6de1e2dd05c866da245b004b6550646c265026f067becc3e74e4e9f5b06fe;
+        Path=/; Domain=.www.theice.com
+      - TS015fb527=0100e6d495da06f303c985e75c385715f89f5ac57d3f383cf7e0142b2c6f7c3c57421ff661cab58e9e2404ff953e63defd23c0811994a145b22e59a54f0ed59319df26695f;
+        path=/marketdata/
+      - __cfduid=db63e0d770317dcce937faa7ef12337281573016664; expires=Thu, 05-Nov-20
+        05:04:24 GMT; path=/; domain=.theice.com; HttpOnly
+      Content-Language:
+      - en-US
+      Vary:
+      - Origin
+      Strict-Transport-Security:
+      - max-age=16070400
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 531486c66bdcc10e-KUL
+    body:
+      encoding: UTF-8
+      string: '[{"volume":862,"lastTime":"11/06/2019 04:50 AM GMT","endDate":"Sat
+        Nov 30 00:00:00 EST 2019","marketStrip":"Nov19","change":-1.4380825565912116,"marketId":6137542,"lastPrice":9387.5},{"volume":95,"lastTime":"11/05/2019
+        08:45 PM GMT","endDate":"Tue Dec 31 00:00:00 EST 2019","marketStrip":"Dec19","change":-1.2684989429175475,"marketId":6137543,"lastPrice":9460},{"volume":22,"lastTime":"11/05/2019
+        08:46 PM GMT","endDate":"Fri Jan 31 00:00:00 EST 2020","marketStrip":"Jan20","change":-1.3157894736842104,"marketId":6137544,"lastPrice":9500},{"volume":8,"lastTime":"11/05/2019
+        08:46 PM GMT","endDate":"Sat Feb 29 00:00:00 EST 2020","marketStrip":"Feb20","change":-1.4405447878470403,"marketId":6137545,"lastPrice":9545},{"volume":11,"lastTime":"11/05/2019
+        08:46 PM GMT","endDate":"Tue Mar 31 00:00:00 EDT 2020","marketStrip":"Mar20","change":-1.5127803860198226,"marketId":6137546,"lastPrice":9585}]'
+    http_version: 
+  recorded_at: Wed, 06 Nov 2019 05:04:22 GMT
+recorded_with: VCR 4.0.0

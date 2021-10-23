@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Coinfalcon::Market::API_URL}markets/#{market_pair.base}-#{market_pair.target}/orders"
+          "#{Cryptoexchange::Exchanges::Coinfalcon::Market::API_URL}markets/#{market_pair.base}-#{market_pair.target}/orders?level=3"
         end
 
         def adapt(output, market_pair)
@@ -24,7 +24,7 @@ module Cryptoexchange::Exchanges
           order_book.market = Coinfalcon::Market::NAME
           order_book.asks = adapt_orders output['asks']
           order_book.bids = adapt_orders output['bids']
-          order_book.timestamp = Time.now.to_i
+          order_book.timestamp = nil
           order_book.payload = output
           order_book
         end
@@ -33,7 +33,7 @@ module Cryptoexchange::Exchanges
           orders.collect do |order_entry|
             Cryptoexchange::Models::Order.new(price: order_entry['price'],
                                               amount: order_entry['size'],
-                                              timestamp: Time.now.to_i)
+                                              timestamp: nil)
           end
         end
       end

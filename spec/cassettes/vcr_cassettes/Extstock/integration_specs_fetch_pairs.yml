@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://extstock.com/api/v1/markets
+    uri: https://extstock.com/api/v2/ticker
     body:
       encoding: UTF-8
       string: ''
@@ -12,46 +12,38 @@ http_interactions:
       Host:
       - extstock.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Wed, 14 Mar 2018 07:51:29 GMT
+      - Tue, 21 Jan 2020 05:18:30 GMT
       Content-Type:
       - application/json
-      Content-Length:
-      - '801'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=dba2deaad4b168ae04248f084ff1d9d671521013889; expires=Thu, 14-Mar-19
-        07:51:29 GMT; path=/; domain=.extstock.com; HttpOnly; Secure
-      Status:
-      - 200 OK
+      - __cfduid=d878fbc157af72bc000c6af582e9367c61579583910; expires=Thu, 20-Feb-20
+        05:18:30 GMT; path=/; domain=.extstock.com; HttpOnly; SameSite=Lax; Secure
+      Vary:
+      - Accept-Encoding
       Cache-Control:
-      - max-age=0, private, must-revalidate
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Request-Id:
-      - 1aacfbf4-ca42-49e3-b2e9-a7d4a595d8ac
-      Etag:
-      - '"05588a85459500435c38f848b6153765"'
-      X-Runtime:
-      - '0.007673'
-      X-Powered-By:
-      - Phusion Passenger 5.2.1
+      - no-cache, private
+      Cf-Cache-Status:
+      - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 3fb527c6bf7731b6-SIN
+      - 5586d3f02ad2aaa2-SIN
     body:
       encoding: ASCII-8BIT
-      string: '[{"id":"btc_usd","name":"BTC/USD"},{"id":"btc_eur","name":"BTC/EUR"},{"id":"ltc_btc","name":"LTC/BTC"},{"id":"ltc_usd","name":"LTC/USD"},{"id":"ltc_eur","name":"LTC/EUR"},{"id":"dash_btc","name":"DASH/BTC"},{"id":"dash_usd","name":"DASH/USD"},{"id":"dash_eur","name":"DASH/EUR"},{"id":"dash_ltc","name":"DASH/LTC"},{"id":"dash_eth","name":"DASH/ETH"},{"id":"eth_btc","name":"ETH/BTC"},{"id":"eth_usd","name":"ETH/USD"},{"id":"eth_eur","name":"ETH/EUR"},{"id":"eth_ltc","name":"ETH/LTC"},{"id":"bch_usd","name":"BCH/USD"},{"id":"bch_btc","name":"BCH/BTC"},{"id":"bch_eur","name":"BCH/EUR"},{"id":"bch_ltc","name":"BCH/LTC"},{"id":"bch_eth","name":"BCH/ETH"},{"id":"bch_dash","name":"BCH/DASH"},{"id":"nebl_eth","name":"NEBL/ETH"},{"id":"xnode_eth","name":"XNODE/ETH"},{"id":"ctr_eth","name":"CTR/ETH"}]'
+      string: '{"success":true,"data":{"BTC_USD":{"base_id":1,"quote_id":null,"last_price":"8674.52000000","percent_change":"0.34149704","base_volume":"5374.07356323","quote_volume":"46629492.78975920","is_frozen":false,"high":"8729.61970630","low":"8533.96000000"},"BTC_EUR":{"base_id":1,"quote_id":null,"last_price":"7824.18732200","percent_change":"0.38199796","base_volume":"8668.34319928","quote_volume":"67805569.04402392","is_frozen":false,"high":"7847.64585612","low":"7725.97647559"},"LTC_BTC":{"base_id":2,"quote_id":1,"last_price":"0.00688856","percent_change":"-1.46213980","base_volume":"15127.54740641","quote_volume":"104.15104604","is_frozen":false,"high":"0.00867680","low":"0.00685556"},"LTC_USD":{"base_id":2,"quote_id":null,"last_price":"57.82000000","percent_change":"1.67140813","base_volume":"129080.63191010","quote_volume":"7472697.19124294","is_frozen":false,"high":"58.02000000","low":"56.06000000"},"LTC_EUR":{"base_id":2,"quote_id":null,"last_price":"52.08425600","percent_change":"1.79078020","base_volume":"106684.58488349","quote_volume":"5557548.24506607","is_frozen":false,"high":"52.31277900","low":"50.55490800"},"ETH_BTC":{"base_id":1027,"quote_id":1,"last_price":"0.01810032","percent_change":"-5.00934340","base_volume":"35074.31365513","quote_volume":"635.08077655","is_frozen":false,"high":"0.01907789","low":"0.01701895"},"ETH_USD":{"base_id":1027,"quote_id":null,"last_price":"167.34000000","percent_change":"1.40589020","base_volume":"133199.97853412","quote_volume":"22289684.40789968","is_frozen":false,"high":"168.63000000","low":"162.03000000"},"ETH_EUR":{"base_id":1027,"quote_id":null,"last_price":"150.81966900","percent_change":"1.38983729","base_volume":"65702.86781678","quote_volume":"9909284.77647757","is_frozen":false,"high":"151.80949000","low":"145.70530000"},"BCH_USD":{"base_id":1831,"quote_id":null,"last_price":"344.90413815","percent_change":"4.61321645","base_volume":"27962.63684956","quote_volume":"9680274.96295389","is_frozen":false,"high":"351.20000000","low":"324.73000000"},"BCH_BTC":{"base_id":1831,"quote_id":1,"last_price":"0.03979300","percent_change":"2.41041684","base_volume":"17281.25443287","quote_volume":"690.40339585","is_frozen":false,"high":"0.04047731","low":"0.03895558"},"BCH_EUR":{"base_id":1831,"quote_id":null,"last_price":"311.89299200","percent_change":"4.76122250","base_volume":"32066.09787216","quote_volume":"10006923.59929718","is_frozen":false,"high":"316.76724277","low":"293.26180400"},"DCS_ETH":{"base_id":4784,"quote_id":1027,"last_price":"0.00000001","percent_change":"0.00000000","base_volume":"8147637.00000000","quote_volume":"0.08147637","is_frozen":false,"high":"0.00000001","low":"0.00000001"},"BTB_ETH":{"base_id":3687,"quote_id":1027,"last_price":"0.00000900","percent_change":"0.00000000","base_volume":"0.00000000","quote_volume":"0.00000000","is_frozen":false,"high":"0.00000000","low":"0.00000000"},"P2PX_ETH":{"base_id":3940,"quote_id":1027,"last_price":"0.00000406","percent_change":"-22.22222222","base_volume":"81532.34751960","quote_volume":"0.33102133","is_frozen":false,"high":"0.00000599","low":"0.00000402"},"YUSDT_ETH":{"base_id":4962,"quote_id":1027,"last_price":"0.00000475","percent_change":"3.26086957","base_volume":"98479.27317970","quote_volume":"0.46777655","is_frozen":false,"high":"0.00000479","low":"0.00000305"},"LCX_ETH":{"base_id":4950,"quote_id":1027,"last_price":"0.00000271","percent_change":"-17.37804878","base_volume":"575964.63141150","quote_volume":"1.56086415","is_frozen":false,"high":"0.00000338","low":"0.00000231"},"TNT_ETH":{"base_id":1923,"quote_id":1027,"last_price":"0.00003005","percent_change":"0.00000000","base_volume":"0.00000000","quote_volume":"0.00000000","is_frozen":false,"high":"0.00000000","low":"0.00000000"},"HTX_ETH":{"base_id":5037,"quote_id":1027,"last_price":"0.00000498","percent_change":"0.60606061","base_volume":"13305.00100000","quote_volume":"0.06625890","is_frozen":false,"high":"0.00000620","low":"0.00000495"},"QUT_ETH":{"base_id":null,"quote_id":1027,"last_price":"0.00000001","percent_change":"0.00000000","base_volume":"99901.00000000","quote_volume":"0.00099901","is_frozen":false,"high":"0.00000001","low":"0.00000001"},"FLT_BTC":{"base_id":5069,"quote_id":1,"last_price":"0.00000002","percent_change":"0.00000000","base_volume":"1369682.50000000","quote_volume":"0.02739365","is_frozen":false,"high":"0.00000002","low":"0.00000001"},"MGT_ETH":{"base_id":null,"quote_id":1027,"last_price":"0.00000026","percent_change":"30.00000000","base_volume":"377504.89225900","quote_volume":"0.09815127","is_frozen":false,"high":"0.00000027","low":"0.00000017"},"CHESS_ETH":{"base_id":null,"quote_id":1027,"last_price":"0.00000137","percent_change":"-27.12765957","base_volume":"11061.93453908","quote_volume":"0.01515485","is_frozen":false,"high":"0.00000188","low":"0.00000137"},"BTC_GBP":{"base_id":1,"quote_id":null,"last_price":"6665.64631890","percent_change":"-0.33008889","base_volume":"5717.30113263","quote_volume":"38023524.41964746","is_frozen":false,"high":"6693.89348385","low":"6609.78105731"},"LTC_GBP":{"base_id":2,"quote_id":null,"last_price":"44.39618000","percent_change":"1.70620791","base_volume":"18836.39727046","quote_volume":"837317.45654629","is_frozen":false,"high":"44.66862843","low":"42.91749004"},"ETH_GBP":{"base_id":1027,"quote_id":null,"last_price":"128.62169400","percent_change":"1.43402798","base_volume":"11448.82851730","quote_volume":"1473829.26462495","is_frozen":false,"high":"129.51247000","low":"124.17047237"},"BCH_GBP":{"base_id":1831,"quote_id":null,"last_price":"265.83096960","percent_change":"4.25870910","base_volume":"6131.81098345","quote_volume":"1627353.28858950","is_frozen":false,"high":"270.42357460","low":"250.59565670"},"BTCP_ETH":{"base_id":null,"quote_id":1027,"last_price":"0.23980000","percent_change":"4.48801743","base_volume":"6.76960302","quote_volume":"1.62335080","is_frozen":false,"high":"0.23980000","low":"0.22950000"},"XT_ETH":{"base_id":null,"quote_id":1027,"last_price":"0.00000000","percent_change":"0.00000000","base_volume":"0.00000000","quote_volume":"0.00000000","is_frozen":true,"high":"0.00000000","low":"0.00000000"}}}'
     http_version: 
-  recorded_at: Wed, 14 Mar 2018 07:51:28 GMT
+  recorded_at: Tue, 21 Jan 2020 05:18:29 GMT
 recorded_with: VCR 4.0.0

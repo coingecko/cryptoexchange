@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.atomars.com/v1/coingecko/pubticker?symbol=BTCUSDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.atomars.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 12 Jul 2019 10:09:58 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=i3054i1d3h38ditm4n6f9le5rh; path=/; HttpOnly
+      - __cfduid=d0dbf4fdcd6906171aed0fd0c4ea5c9131562926198; expires=Sat, 11-Jul-20
+        10:09:58 GMT; path=/; domain=.atomars.com; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4f523985ab8cccaf-WAW
+    body:
+      encoding: UTF-8
+      string: '{"last_price":11738.35476,"low":11320.42734,"high":11776.79157,"volume":9.91287,"timestamp":1562926198.866969}'
+    http_version: 
+  recorded_at: Fri, 12 Jul 2019 10:09:58 GMT
+recorded_with: VCR 4.0.0

@@ -17,9 +17,9 @@ module Cryptoexchange::Exchanges
           "#{Cryptoexchange::Exchanges::Coss::Market::API_URL}/ticker"
         end
 
-        def adapt_all(output)
-          output.map do |_, value|
-            base, target = value['id'].split('-')
+        def adapt_all(result)
+          result.map do |market_name, value|
+            base, target = market_name.split('_')
             market_pair = Cryptoexchange::Models::MarketPair.new(
                 base: base,
                 target: target,
@@ -37,11 +37,8 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Coss::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['lastPrice'])
-          ticker.high      = NumericHelper.to_d(output['high24h'])
-          ticker.low       = NumericHelper.to_d(output['low24h'])
-          ticker.volume    = NumericHelper.to_d(output['volume'])
-          ticker.change    = NumericHelper.to_d(output['change24h'])
+          ticker.last      = NumericHelper.to_d(output['last_price'])
+          ticker.volume    = NumericHelper.to_d(output['base_volume'])
           ticker.timestamp = nil
           ticker.payload   = output
           ticker

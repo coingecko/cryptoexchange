@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.darbfinance.com/api/v1/ticker/24hr
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.darbfinance.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 24 Jul 2019 08:54:32 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1627'
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSALB=r6z5uE6+rTL02DLfGwMMs940CqXFv9QXV+baT6qIA1IXFLmYOo1nnVdxCLnwkFKx/OVmDNsmSpgISrzgprmA7hVeIltwyvqrUG5CnQYCFcGm/K4QVPPDoXBQfDLv;
+        Expires=Wed, 31 Jul 2019 08:54:32 GMT; Path=/
+      - XSRF-TOKEN=undefined; Path=/
+      X-Ratelimit-Limit:
+      - '6000'
+      X-Ratelimit-Remaining:
+      - '5999'
+      X-Ratelimit-Reset:
+      - '1563958476'
+    body:
+      encoding: UTF-8
+      string: '[{"symbol":"ETH_EUR","lowPrice":182.64,"highPrice":196.42,"volume":274.37510735,"lastPrice":186.31,"priceChangePercent":-0.72},{"symbol":"TRX_BTC","lowPrice":0.00000225,"highPrice":0.00000256,"volume":156205.18980605,"lastPrice":0.0000024,"priceChangePercent":-4},{"symbol":"BTC_EUR","lowPrice":8624.92,"highPrice":9169.36,"volume":7.43385505,"lastPrice":8768.09,"priceChangePercent":-1.52},{"symbol":"ADA_BTC","lowPrice":0.00000552,"highPrice":0.00000575,"volume":136901.71452936,"lastPrice":0.00000575,"priceChangePercent":1.23},{"symbol":"ZEC_BTC","lowPrice":0.0069729,"highPrice":0.0072239,"volume":373.83296669,"lastPrice":0.00718492,"priceChangePercent":1.66},{"symbol":"XRP_BTC","lowPrice":0.00003074,"highPrice":0.00003189,"volume":260898.44708114,"lastPrice":0.00003151,"priceChangePercent":1.35},{"symbol":"DASH_BTC","lowPrice":0.01089807,"highPrice":0.01124782,"volume":206.84284056,"lastPrice":0.01109416,"priceChangePercent":1.4},{"symbol":"LTC_BTC","lowPrice":0.00892893,"highPrice":0.00927633,"volume":836.73698362,"lastPrice":0.00916043,"priceChangePercent":0.18},{"symbol":"BTC_TUSD","lowPrice":9583.54400419,"highPrice":10207.65466223,"volume":1.72473671,"lastPrice":9731.80550623,"priceChangePercent":-1.8},{"symbol":"BTC_USD","lowPrice":9580.84,"highPrice":10230.96,"volume":6.50773838,"lastPrice":9735.34,"priceChangePercent":-2.08},{"symbol":"ETH_BTC","lowPrice":0.02104933,"highPrice":0.02160492,"volume":349.4282141,"lastPrice":0.02122991,"priceChangePercent":0.09},{"symbol":"BCH_BTC","lowPrice":0.0292738,"highPrice":0.03052521,"volume":117.30305602,"lastPrice":0.02987771,"priceChangePercent":-1.46}]'
+    http_version: 
+  recorded_at: Wed, 24 Jul 2019 08:54:32 GMT
+recorded_with: VCR 4.0.0

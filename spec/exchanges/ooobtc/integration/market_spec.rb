@@ -30,7 +30,7 @@ RSpec.describe 'Ooobtc integration specs' do
     expect(ticker.bid).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
+    expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
   end
 
@@ -53,15 +53,16 @@ RSpec.describe 'Ooobtc integration specs' do
 
   it 'fetch trades' do
     trades = client.trades(eth_btc_pair)
-    trade = trades.sample
+    trade = trades.first
 
-    expect(trades).to_not be_empty
     expect(trade.base).to eq 'ETH'
     expect(trade.target).to eq 'BTC'
     expect(trade.market).to eq 'ooobtc'
-    expect(trade.price).to_not be nil
-    expect(trade.amount).to_not be nil
-    expect(trade.timestamp).to be_a Numeric
-    expect(trade.payload).to_not be nil
+
+    expect(trade.amount).to_not be_nil
+    expect(trade.price).to_not be_nil
+    expect(2000..Date.today.year).to include(Time.at(trade.timestamp).year)
+    expect(trade.trade_id).to be_nil
+    expect(trade.type).to eq("buy").or eq("sell")
   end
 end

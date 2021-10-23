@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.alterdice.com/v1/coingecko/deals?symbol=btcusd
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.alterdice.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 02 Jul 2019 12:39:26 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=bt6742aiosf8t374sbco4n2a1e; path=/; HttpOnly
+      - __cfduid=df05ab3b4c27a069b0dc102ad776cb04f1562071162; expires=Wed, 01-Jul-20
+        12:39:22 GMT; path=/; domain=.alterdice.com; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4f00ae9d98e17263-AMS
+    body:
+      encoding: UTF-8
+      string: '[{"direction":"BUY","price":9912.3784,"amount":0.01833,"trade_date":1562071104000},{"direction":"BUY","price":9898.27497,"amount":0.01785,"trade_date":1562071043000},{"direction":"BUY","price":9896.47998,"amount":0.01854,"trade_date":1562071031000},{"direction":"BUY","price":9894.39372,"amount":0.01642,"trade_date":1562071016000},{"direction":"BUY","price":9894.00185,"amount":0.02928,"trade_date":1562070810000},{"direction":"BUY","price":9864.40704,"amount":0.03044,"trade_date":1562070956000},{"direction":"BUY","price":9853.87061,"amount":0.03236,"trade_date":1562071018000},{"direction":"BUY","price":9852.48973,"amount":0.02948,"trade_date":1562071045000},{"direction":"BUY","price":9750.15363,"amount":0.03824,"trade_date":1562070352000},{"direction":"BUY","price":9748.26521,"amount":0.03201,"trade_date":1562070595000},{"direction":"BUY","price":9735.20555,"amount":0.03925,"trade_date":1562069879000},{"direction":"BUY","price":9733.38558,"amount":0.03961,"trade_date":1562070289000},{"direction":"BUY","price":9729.17204,"amount":0.03985,"trade_date":1562071132000},{"direction":"BUY","price":9718.66582,"amount":0.03922,"trade_date":1562069589000},{"direction":"BUY","price":9717.72797,"amount":0.0393,"trade_date":1562070533000},{"direction":"BUY","price":9717.19221,"amount":0.03832,"trade_date":1562070332000},{"direction":"BUY","price":9694.35933,"amount":0.03819,"trade_date":1562069842000},{"direction":"BUY","price":9688.19845,"amount":0.03848,"trade_date":1562070378000},{"direction":"BUY","price":9674.80992,"amount":0.03901,"trade_date":1562070895000},{"direction":"SELL","price":10616.21888,"amount":0.03827,"trade_date":1562070854000},{"direction":"SELL","price":10581.87645,"amount":0.03988,"trade_date":1562071050000},{"direction":"SELL","price":10576.7577,"amount":0.03945,"trade_date":1562070952000},{"direction":"SELL","price":10571.84486,"amount":0.03907,"trade_date":1562070385000},{"direction":"SELL","price":10552.7997,"amount":0.03958,"trade_date":1562071084000},{"direction":"SELL","price":10548.09973,"amount":0.03939,"trade_date":1562070819000},{"direction":"SELL","price":10534.20896,"amount":0.03946,"trade_date":1562070588000},{"direction":"SELL","price":10529.6206,"amount":0.03893,"trade_date":1562071062000},{"direction":"SELL","price":10522.75871,"amount":0.03993,"trade_date":1562070766000},{"direction":"SELL","price":10509.66097,"amount":0.03966,"trade_date":1562071035000},{"direction":"SELL","price":10508.88403,"amount":0.0399,"trade_date":1562070760000},{"direction":"SELL","price":10488.80784,"amount":0.02977,"trade_date":1562070989000},{"direction":"SELL","price":10485.77171,"amount":0.03116,"trade_date":1562071004000},{"direction":"SELL","price":10461.80506,"amount":0.03075,"trade_date":1562070950000},{"direction":"SELL","price":10391.07903,"amount":0.01884,"trade_date":1562071144000}]'
+    http_version: 
+  recorded_at: Tue, 02 Jul 2019 12:39:26 GMT
+recorded_with: VCR 4.0.0

@@ -4,39 +4,31 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            false
+            true
           end
         end
 
-        def fetch
-          output = super ticker_url
-          adapt_all(output)
+        def fetch(market_pair)
+          output = super(ticker_url(market_pair))
+          adapt(market_pair, output)
         end
 
-        def ticker_url
-          "#{Cryptoexchange::Exchanges::Bitexlive::Market::API_URL}/ticker"
+        def ticker_url(market_pair)
+          "#{Cryptoexchange::Exchanges::Bitexlive::Market::API_URL}/tickers?filter=#{market_pair.base.upcase}_#{market_pair.target.upcase}"
         end
 
-        def adapt_all(output)
-          output.map do |pair, ticker|
-            next unless ticker['isFrozen'] == '0'
-            adapt(pair, ticker)
-          end.compact
-        end
-
-        def adapt(pair, output)
-          target, base     = pair.split('_')
+        def adapt(market_pair, output)
           ticker           = Cryptoexchange::Models::Ticker.new
-          ticker.base      = base
-          ticker.target    = target
+          ticker.base      = market_pair.base
+          ticker.target    = market_pair.target
           ticker.market    = Bitexlive::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['last'])
-          ticker.high      = NumericHelper.to_d(output['high24hr'])
-          ticker.low       = NumericHelper.to_d(output['low24hr'])
-          ticker.ask       = NumericHelper.to_d(output['lowestAsk'])
-          ticker.bid       = NumericHelper.to_d(output['highestBid'])
-          ticker.volume    = NumericHelper.to_d(output['quoteVolume'])
-          ticker.change    = NumericHelper.to_d(output['percentChange'])
+          ticker.last      = NumericHelper.to_d(output[0]['LastPrice'])
+          ticker.high      = NumericHelper.to_d(output[0]['high24h'])
+          ticker.low       = NumericHelper.to_d(output[0]['low24h'])
+          ticker.ask       = NumericHelper.to_d(output[0]['lowestAsk'])
+          ticker.bid       = NumericHelper.to_d(output[0]['highestBid'])
+          ticker.volume    = NumericHelper.to_d(output[0]['quoteVolume24h'])
+          ticker.change    = NumericHelper.to_d(output[0]['percentChange'])
           ticker.payload   = output
           ticker
         end

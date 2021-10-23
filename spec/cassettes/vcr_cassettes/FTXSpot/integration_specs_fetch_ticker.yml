@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ftx.com/api/markets/FTT/USD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ftx.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 29 Jul 2019 15:07:35 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=df2effc89445fb5be9697dfc73cb15d961564412855; expires=Tue, 28-Jul-20
+        15:07:35 GMT; path=/; domain=.ftx.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=0
+      Cf-Cache-Status:
+      - MISS
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4fe000db0980dd4e-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":{"ask":1.58,"baseCurrency":"FTT","bid":1.57,"change1h":0.21019108280254778,"change24h":0.35668789808917195,"enabled":true,"last":1.57,"name":"FTT/USD","priceIncrement":0.01,"quoteCurrency":"USD","quoteVolume24h":667281.71,"sizeIncrement":1.0,"type":"spot","underlying":null,"volumeUsd24h":667281.71},"success":true}
+
+'
+    http_version: 
+  recorded_at: Mon, 29 Jul 2019 15:07:30 GMT
+recorded_with: VCR 4.0.0

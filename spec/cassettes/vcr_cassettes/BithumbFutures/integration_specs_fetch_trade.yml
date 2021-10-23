@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bithumbfutures.com/api/pro/v1/trades?symbol=BTC-PERP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bithumbfutures.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 18 May 2020 08:27:10 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '907'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7e711f5b88e348f336d0c33597ae31c61589790429; expires=Wed, 17-Jun-20
+        08:27:09 GMT; path=/; domain=.bithumbfutures.com; HttpOnly; SameSite=Lax;
+        Secure
+      Instance:
+      - 2-_-2
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Accept-Ranges:
+      - bytes
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5954328b4bdf73a1-JHB
+      Cf-Request-Id:
+      - 02c87deb0c000073a1deab7200000001
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":0,"data":{"m":"trades","symbol":"BTC-PERP","data":[{"p":"9784.75","q":"0.0050","ts":1589789992379,"bm":false,"seqnum":180143985272088740},{"p":"9780","q":"0.1000","ts":1589790026618,"bm":true,"seqnum":180143985272090031},{"p":"9775","q":"0.0126","ts":1589790027060,"bm":true,"seqnum":180143985272090122},{"p":"9775","q":"0.0010","ts":1589790035661,"bm":true,"seqnum":180143985272090691},{"p":"9776","q":"0.0106","ts":1589790036637,"bm":true,"seqnum":180143985272090770},{"p":"9777.75","q":"0.0010","ts":1589790048477,"bm":true,"seqnum":180143985272091182},{"p":"9773","q":"0.00110","ts":1589790213870,"bm":true,"seqnum":180143985272095467},{"p":"9780.5","q":"0.0058","ts":1589790309310,"bm":false,"seqnum":180143985272098270},{"p":"9782.5","q":"0.0942","ts":1589790309310,"bm":false,"seqnum":180143985272098272},{"p":"9787.5","q":"0.0530","ts":1589790379816,"bm":true,"seqnum":180143985272100760}]}}'
+    http_version: 
+  recorded_at: Mon, 18 May 2020 08:27:10 GMT
+recorded_with: VCR 4.0.0

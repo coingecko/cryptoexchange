@@ -1,0 +1,282 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitopro.com/v2/order-book/BTC_TWD?limit=20
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitopro.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 02 Oct 2019 08:30:02 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Origin
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "bids": [
+          {
+           "price": "254182",
+           "amount": "0.01611435",
+           "count": 2,
+           "total": "0.01611435"
+          },
+          {
+           "price": "254101",
+           "amount": "0.01",
+           "count": 1,
+           "total": "0.02611435"
+          },
+          {
+           "price": "254066",
+           "amount": "0.01656262",
+           "count": 1,
+           "total": "0.04267697"
+          },
+          {
+           "price": "254060",
+           "amount": "0.04969692",
+           "count": 1,
+           "total": "0.09237389"
+          },
+          {
+           "price": "254016",
+           "amount": "0.06627141",
+           "count": 1,
+           "total": "0.1586453"
+          },
+          {
+           "price": "254011",
+           "amount": "1",
+           "count": 1,
+           "total": "1.1586453"
+          },
+          {
+           "price": "254008",
+           "amount": "0.21006456",
+           "count": 2,
+           "total": "1.36870986"
+          },
+          {
+           "price": "254000",
+           "amount": "1.1810433",
+           "count": 1,
+           "total": "2.54975316"
+          },
+          {
+           "price": "253230",
+           "amount": "0.2",
+           "count": 1,
+           "total": "2.74975316"
+          },
+          {
+           "price": "253205",
+           "amount": "0.2",
+           "count": 1,
+           "total": "2.94975316"
+          },
+          {
+           "price": "253130",
+           "amount": "0.2",
+           "count": 1,
+           "total": "3.14975316"
+          },
+          {
+           "price": "253129",
+           "amount": "0.1",
+           "count": 1,
+           "total": "3.24975316"
+          },
+          {
+           "price": "253125",
+           "amount": "0.02",
+           "count": 1,
+           "total": "3.26975316"
+          },
+          {
+           "price": "253123",
+           "amount": "0.01801434",
+           "count": 1,
+           "total": "3.2877675"
+          },
+          {
+           "price": "253111",
+           "amount": "0.00611435",
+           "count": 1,
+           "total": "3.29388185"
+          },
+          {
+           "price": "253100",
+           "amount": "0.024",
+           "count": 1,
+           "total": "3.31788185"
+          },
+          {
+           "price": "253076",
+           "amount": "0.00271102",
+           "count": 1,
+           "total": "3.32059287"
+          },
+          {
+           "price": "253010",
+           "amount": "0.19762",
+           "count": 1,
+           "total": "3.51821287"
+          },
+          {
+           "price": "253000",
+           "amount": "0.17119631",
+           "count": 1,
+           "total": "3.68940918"
+          },
+          {
+           "price": "252888",
+           "amount": "1",
+           "count": 1,
+           "total": "4.68940918"
+          }
+         ],
+         "asks": [
+          {
+           "price": "255490",
+           "amount": "0.04003088",
+           "count": 1,
+           "total": "0.04003088"
+          },
+          {
+           "price": "255640",
+           "amount": "0.022",
+           "count": 1,
+           "total": "0.06203088"
+          },
+          {
+           "price": "255641",
+           "amount": "0.00271102",
+           "count": 1,
+           "total": "0.0647419"
+          },
+          {
+           "price": "255900",
+           "amount": "0.055",
+           "count": 1,
+           "total": "0.1197419"
+          },
+          {
+           "price": "255904",
+           "amount": "0.01333777",
+           "count": 2,
+           "total": "0.13307967"
+          },
+          {
+           "price": "255999",
+           "amount": "0.11",
+           "count": 1,
+           "total": "0.24307967"
+          },
+          {
+           "price": "256000",
+           "amount": "0.03",
+           "count": 1,
+           "total": "0.27307967"
+          },
+          {
+           "price": "256113",
+           "amount": "0.00380189",
+           "count": 1,
+           "total": "0.27688156"
+          },
+          {
+           "price": "256246",
+           "amount": "0.01801434",
+           "count": 1,
+           "total": "0.2948959"
+          },
+          {
+           "price": "256325",
+           "amount": "0.00611435",
+           "count": 1,
+           "total": "0.30101025"
+          },
+          {
+           "price": "256500",
+           "amount": "0.074925",
+           "count": 1,
+           "total": "0.37593525"
+          },
+          {
+           "price": "256750",
+           "amount": "0.5",
+           "count": 1,
+           "total": "0.87593525"
+          },
+          {
+           "price": "256752",
+           "amount": "0.1608",
+           "count": 1,
+           "total": "1.03673525"
+          },
+          {
+           "price": "256900",
+           "amount": "0.01",
+           "count": 1,
+           "total": "1.04673525"
+          },
+          {
+           "price": "256923",
+           "amount": "1.00271102",
+           "count": 2,
+           "total": "2.04944627"
+          },
+          {
+           "price": "256999",
+           "amount": "0.22",
+           "count": 1,
+           "total": "2.26944627"
+          },
+          {
+           "price": "257200",
+           "amount": "0.01172264",
+           "count": 1,
+           "total": "2.28116891"
+          },
+          {
+           "price": "257397",
+           "amount": "0.00611435",
+           "count": 1,
+           "total": "2.28728326"
+          },
+          {
+           "price": "257399",
+           "amount": "0.24021563",
+           "count": 1,
+           "total": "2.52749889"
+          },
+          {
+           "price": "257523",
+           "amount": "0.271",
+           "count": 1,
+           "total": "2.79849889"
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Wed, 02 Oct 2019 08:30:02 GMT
+recorded_with: VCR 4.0.0

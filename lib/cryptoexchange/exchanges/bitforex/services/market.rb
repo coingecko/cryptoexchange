@@ -34,8 +34,8 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Bitforex::Market::NAME
-          ticker.bid       = NumericHelper.to_d(output['highestBid'])
-          ticker.ask       = NumericHelper.to_d(output['lowestAsk'])
+          ticker.bid       = NumericHelper.to_d(output['lowestAsk'])
+          ticker.ask       = NumericHelper.to_d(output['highestBid']) # Fix: Ask is higher
           ticker.last      = NumericHelper.to_d(output['last'])
           ticker.volume    = NumericHelper.to_d(output['baseVolume'])
           ticker.high      = NumericHelper.to_d(output['high24hr'])

@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.deversifi.com/v1/trading/r/last24HoursVolume
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.deversifi.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Jun 2020 07:49:29 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d2ab5b26ab792728a48fbbdd7e83b45e01591861769; expires=Sat, 11-Jul-20
+        07:49:29 GMT; path=/; domain=.deversifi.com; HttpOnly; SameSite=Lax; Secure
+      Vary:
+      - origin,accept-encoding
+      Access-Control-Expose-Headers:
+      - WWW-Authenticate,Server-Authorization
+      Cache-Control:
+      - max-age=43200
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - EXPIRED
+      Cf-Request-Id:
+      - 0343f40c7e0000d9a87b877200000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5a19bc5a6935d9a8-SIN
+    body:
+      encoding: UTF-8
+      string: '{"totalUSDVolume":588726.4657404253,"tokens":{"ETH":{"tokenAmount":2277.438646105068,"USDVolume":560267.7204623692},"DAI":{"tokenAmount":4298.10854994,"USDVolume":4249.329431881099},"DUSK":{"tokenAmount":0,"USDVolume":0},"MKR":{"tokenAmount":3.996,"USDVolume":2637.36},"BTC":{"tokenAmount":1.87011404,"USDVolume":18349.79650130598},"ZRX":{"tokenAmount":18393.76266029,"USDVolume":7259.194338837513},"NEC":{"tokenAmount":2350.6,"USDVolume":234.19321980055673},"USDT":{"tokenAmount":584455.3375266562,"USDVolume":584455.3375266562},"OMG":{"tokenAmount":0,"USDVolume":0},"USDC":{"tokenAmount":0,"USDVolume":0},"FUN":{"tokenAmount":0,"USDVolume":0},"PNK":{"tokenAmount":0,"USDVolume":0}},"symbols":{"ETH:USDT":{"tokenAmount":2265.3381586,"USDVolume":557316.5922486001,"lastUSDPrice":247.15,"lastTrade":"2020-06-11T07:11:16.686Z"},"MKR:ETH":{"tokenAmount":0,"USDVolume":0},"MKR:USDT":{"tokenAmount":1.996,"USDVolume":1317.36,"lastUSDPrice":660,"lastTrade":"2020-06-11T01:14:06.950Z"},"MKR:DAI":{"tokenAmount":2,"USDVolume":1320,"lastUSDPrice":660,"lastTrade":"2020-06-10T23:57:22.183Z"},"PNK:ETH":{"tokenAmount":0,"USDVolume":0},"PNK:USDT":{"tokenAmount":0,"USDVolume":0},"DAI:ETH":{"tokenAmount":2978.10854994,"USDVolume":2929.329431881099,"lastUSDPrice":0.983292292,"lastTrade":"2020-06-10T18:45:43.388Z"},"DAI:USDT":{"tokenAmount":0,"USDVolume":0},"NEC:ETH":{"tokenAmount":197,"USDVolume":21.798781887943527,"lastUSDPrice":0.11065371516722601,"lastTrade":"2020-06-10T23:18:04.960Z"},"NEC:USDT":{"tokenAmount":2153.6,"USDVolume":212.3944379126132,"lastUSDPrice":0.10667,"lastTrade":"2020-06-10T23:51:43.148Z"},"BTC:USDT":{"tokenAmount":1.87011404,"USDVolume":18349.79650130598,"lastUSDPrice":9823.3891254,"lastTrade":"2020-06-11T06:51:39.128Z"},"ZRX:ETH":{"tokenAmount":0,"USDVolume":0},"ZRX:USDT":{"tokenAmount":18393.76266029,"USDVolume":7259.194338837513,"lastUSDPrice":0.3899,"lastTrade":"2020-06-10T20:50:16.587Z"},"DUSK:USDT":{"tokenAmount":0,"USDVolume":0}},"startDate":"2020-06-10T07:48:40.818Z"}'
+    http_version: 
+  recorded_at: Thu, 11 Jun 2020 07:49:29 GMT
+recorded_with: VCR 4.0.0

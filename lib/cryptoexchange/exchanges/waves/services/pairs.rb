@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Waves
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Waves::Market::API_URL}/markets"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Waves::Market::API_URL}/pairs"
 
         def fetch
           output = super
@@ -10,10 +10,12 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output.collect do |pair|
-            base, target = pair['symbol'].split("/")
-            next if base.nil? || base.empty? || target.nil? || target.empty?
-
+          # fetch token symbol list first
+          symbols = Cryptoexchange::Exchanges::Waves::Market.fetch_symbol
+          output["data"].map do |ticker|
+            base   = symbols[ticker['amountAsset']]
+            next if base.nil?
+            target   = symbols[ticker['priceAsset']] || "WAVES"
             Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,

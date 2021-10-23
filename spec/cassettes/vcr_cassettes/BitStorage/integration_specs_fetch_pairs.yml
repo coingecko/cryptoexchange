@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pub.bitstorage.finance/v2/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - pub.bitstorage.finance
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 14 May 2020 06:42:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3620'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d08716cee3265228b9b927313a2d842b31589438555; expires=Sat, 13-Jun-20
+        06:42:35 GMT; path=/; domain=.bitstorage.finance; HttpOnly; SameSite=Lax;
+        Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"e24-P7AagZvFueDDUFrYhfHsCHMU38I"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5932a3d95c1e0a44-KIX
+      Cf-Request-Id:
+      - 02b384bbd700000a443d1e7200000001
+    body:
+      encoding: UTF-8
+      string: '{"SICC_BTC":{"base_id":0,"quote_id":1,"last_price":5e-8,"quote_volume":0,"base_volume":0,"isFrozen":1},"DOGE_BTC":{"base_id":74,"quote_id":1,"last_price":2.9e-7,"quote_volume":0.01919325,"base_volume":66154.68739282,"isFrozen":1},"ETH_BTC":{"base_id":1027,"quote_id":1,"last_price":0.0208791,"quote_volume":12.22450753,"base_volume":575.62809295,"isFrozen":1},"LTC_BTC":{"base_id":2,"quote_id":1,"last_price":0.004553,"quote_volume":2.49375213,"base_volume":534.44386266,"isFrozen":1},"SICC_ETH":{"base_id":0,"quote_id":1027,"last_price":0.0037,"quote_volume":0,"base_volume":0,"isFrozen":1},"CDT_ETH":{"base_id":1864,"quote_id":1027,"last_price":0.00001697,"quote_volume":0.4023748,"base_volume":22399.89708889,"isFrozen":1},"ETH_USD":{"base_id":1027,"quote_id":0,"last_price":199.25747108,"quote_volume":108908.49230409,"base_volume":565.73351233,"isFrozen":1},"BTC_USD":{"base_id":1,"quote_id":0,"last_price":9350.055,"quote_volume":1029211.89364291,"base_volume":112.93404893,"isFrozen":1},"BTC_USDT":{"base_id":1,"quote_id":825,"last_price":9432.99,"quote_volume":90025.4184561,"base_volume":9.93629417,"isFrozen":1},"ZIL_ETH":{"base_id":2469,"quote_id":1027,"last_price":0.00004511,"quote_volume":10.18315606,"base_volume":230132.66922693,"isFrozen":1},"LTC_USD":{"base_id":2,"quote_id":0,"last_price":62.9145,"quote_volume":0,"base_volume":0,"isFrozen":1},"DOGE_USD":{"base_id":74,"quote_id":0,"last_price":null,"quote_volume":0,"base_volume":0,"isFrozen":1},"USDT_RUB":{"base_id":825,"quote_id":0,"last_price":73.0719,"quote_volume":204535.25946161,"base_volume":2780.95066926,"isFrozen":1},"DOGE_RUB":{"base_id":74,"quote_id":0,"last_price":null,"quote_volume":0,"base_volume":0,"isFrozen":1},"LTC_RUB":{"base_id":2,"quote_id":0,"last_price":null,"quote_volume":0,"base_volume":0,"isFrozen":1},"BSV_BTC":{"base_id":3602,"quote_id":1,"last_price":0.01207,"quote_volume":0,"base_volume":0,"isFrozen":1},"XRP_BTC":{"base_id":52,"quote_id":1,"last_price":0.00002112,"quote_volume":3.91871024,"base_volume":178918.26628343,"isFrozen":1},"BTC_UAH":{"base_id":1,"quote_id":0,"last_price":249854.7447,"quote_volume":8245781.64422153,"base_volume":33.95352302,"isFrozen":1},"BTC_EUR":{"base_id":1,"quote_id":0,"last_price":8660.81310369,"quote_volume":214202.53322615,"base_volume":25.47798418,"isFrozen":1},"XRP_EUR":{"base_id":52,"quote_id":0,"last_price":0,"quote_volume":0,"base_volume":0,"isFrozen":1},"XRP_UAH":{"base_id":52,"quote_id":0,"last_price":5.31402349,"quote_volume":66762.16305076,"base_volume":12592.35607229,"isFrozen":1},"CNX_BTC":{"base_id":2027,"quote_id":1,"last_price":0,"quote_volume":0,"base_volume":0,"isFrozen":1},"DCN_BTC":{"base_id":1876,"quote_id":1,"last_price":1e-8,"quote_volume":0.05150815,"base_volume":5150813.96389015,"isFrozen":1},"DCN_USD":{"base_id":1876,"quote_id":0,"last_price":0.01,"quote_volume":570.4141,"base_volume":57041.41,"isFrozen":1},"LMY_BTC":{"base_id":0,"quote_id":1,"last_price":2.6e-7,"quote_volume":0,"base_volume":0,"isFrozen":1},"LMY_ETH":{"base_id":0,"quote_id":1027,"last_price":0.000028,"quote_volume":0,"base_volume":0,"isFrozen":1},"LMY_USDT":{"base_id":0,"quote_id":825,"last_price":0,"quote_volume":0,"base_volume":0,"isFrozen":1},"LMY_USD":{"base_id":0,"quote_id":0,"last_price":0,"quote_volume":0,"base_volume":0,"isFrozen":1},"BTB_ETH":{"base_id":0,"quote_id":0,"last_price":0.000007,"quote_volume":0.00539699,"base_volume":1234.27024015,"isFrozen":1},"NBX_BTC":{"base_id":0,"quote_id":0,"last_price":0,"quote_volume":0,"base_volume":0,"isFrozen":1},"NBX_ETH":{"base_id":0,"quote_id":0,"last_price":0,"quote_volume":0,"base_volume":0,"isFrozen":1}}'
+    http_version: 
+  recorded_at: Thu, 14 May 2020 06:42:35 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.elitex.io/api/v1/public/products
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.elitex.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 05 Nov 2019 07:37:42 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '5070'
+      Connection:
+      - close
+      Server:
+      - elite
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"data":[{"baseCurrency":"ETH","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"ETH_BTC","counterCurrency":"BTC","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":6},{"baseCurrency":"LSK","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"LSK_BTC","counterCurrency":"BTC","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"BTC","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"BTC_USDT","counterCurrency":"USDT","counterIncrement":1.000000000000E-8,"counterPrecision":5,"volumeIncrement":6},{"baseCurrency":"ETH","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"ETH_USDT","counterCurrency":"USDT","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":6},{"baseCurrency":"LSK","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"LSK_USDT","counterCurrency":"USDT","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"GNY","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"GNY_BTC","counterCurrency":"BTC","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"XRP","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"XRP_BTC","counterCurrency":"BTC","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"XRP","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"XRP_USDT","counterCurrency":"USDT","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"XRP","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"XRP_LSK","counterCurrency":"LSK","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"GNY","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"GNY_LSK","counterCurrency":"LSK","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"IOTX","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"IOTX_BTC","counterCurrency":"BTC","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"IOTX","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"IOTX_LSK","counterCurrency":"LSK","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"DCR","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"DCR_BTC","counterCurrency":"BTC","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"DCR","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"DCR_LSK","counterCurrency":"LSK","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"LML","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"LML_BTC","counterCurrency":"BTC","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"LML","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"LML_LSK","counterCurrency":"LSK","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"EOS","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"EOS_BTC","counterCurrency":"BTC","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"DCR","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"DCR_USDT","counterCurrency":"USDT","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"EOS","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"EOS_USDT","counterCurrency":"USDT","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"TRX","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"TRX_BTC","counterCurrency":"BTC","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"TRX","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"TRX_USDT","counterCurrency":"USDT","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"VET","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"VET_BTC","counterCurrency":"BTC","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4},{"baseCurrency":"VET","baseMaxSize":10.00000000000000000000,"baseMinSize":1.00000000000000000000,"code":"VET_USDT","counterCurrency":"USDT","counterIncrement":1.000000000000E-8,"counterPrecision":10,"volumeIncrement":4}],"msg":"success"}'
+    http_version: 
+  recorded_at: Tue, 05 Nov 2019 07:37:42 GMT
+recorded_with: VCR 4.0.0

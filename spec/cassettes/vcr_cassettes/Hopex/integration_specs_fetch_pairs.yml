@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api2.hopex.com/api/v1/markets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api2.hopex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Tengine
+      Date:
+      - Fri, 27 Mar 2020 06:18:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      X-Ratelimit-Remaining-Second:
+      - '9'
+      X-Ratelimit-Limit-Second:
+      - '10'
+      X-Cache:
+      - from 173.248.232.218
+      Cache-Control:
+      - no-cache,no-store
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"sumAmount24hUSDT":778674349.99815,"posVauleUSD":"98,761,280.56","contractCode":"BTCUSDT","contractName":"BTC/USDT永续","allowTrade":true,"hasPosition":false,"closeCurrency":"USDT","quotedCurrency":"USDT","precision":2,"minPriceMovement":0.5000000000,"pricePrecision":1,"lastestPrice":6666.5,"changePercent24h":0.0084713713032297103093563271,"sumAmount24h":778674349.99815},{"sumAmount24hUSDT":161755056.8635,"posVauleUSD":"13,095,248.68","contractCode":"ETHUSDT","contractName":"ETH/USDT永续","allowTrade":true,"hasPosition":false,"closeCurrency":"USDT","quotedCurrency":"USDT","precision":2,"minPriceMovement":0.0500000000,"pricePrecision":2,"lastestPrice":137.15,"changePercent24h":0.0170559881349647756766777901,"sumAmount24h":161755056.8635},{"sumAmount24hUSDT":192869031.04515841986366130,"posVauleUSD":"17,438,320.00","contractCode":"BTCUSD","contractName":"BTC/USD永续","allowTrade":true,"hasPosition":false,"closeCurrency":"BTC","quotedCurrency":"USD","precision":2,"minPriceMovement":0.5000000000,"pricePrecision":1,"lastestPrice":6679.0,"changePercent24h":0.0089123867069486404833836858,"sumAmount24h":28931.0779337221060322},{"sumAmount24hUSDT":47705441.330067841173364940,"posVauleUSD":"8,343,480.00","contractCode":"ETHUSD","contractName":"ETH/USD永续","allowTrade":true,"hasPosition":false,"closeCurrency":"ETH","quotedCurrency":"USD","precision":2,"minPriceMovement":0.0500000000,"pricePrecision":2,"lastestPrice":137.45,"changePercent24h":0.0162661737523105360443622921,"sumAmount24h":347834.0600077859363716},{"sumAmount24hUSDT":6739878.0311,"posVauleUSD":"2,464,581.14","contractCode":"LTCUSDT","contractName":"LTC/USDT永续","allowTrade":true,"hasPosition":false,"closeCurrency":"USDT","quotedCurrency":"USDT","precision":2,"minPriceMovement":0.0100000000,"pricePrecision":2,"lastestPrice":40.13,"changePercent24h":0.0345449858210879092549626192,"sumAmount24h":6739878.0311},{"sumAmount24hUSDT":6551252.854,"posVauleUSD":"827,681.40","contractCode":"XRPUSDT","contractName":"XRP/USDT永续","allowTrade":true,"hasPosition":false,"closeCurrency":"USDT","quotedCurrency":"USDT","precision":5,"minPriceMovement":0.0001000000,"pricePrecision":4,"lastestPrice":0.1722,"changePercent24h":0.0742358078602620087336244541,"sumAmount24h":6551252.854},{"sumAmount24hUSDT":39648537.077,"posVauleUSD":"7,367,378.83","contractCode":"EOSUSDT","contractName":"EOS/USDT永续","allowTrade":true,"hasPosition":false,"closeCurrency":"USDT","quotedCurrency":"USDT","precision":4,"minPriceMovement":0.0010000000,"pricePrecision":3,"lastestPrice":2.321,"changePercent24h":0.0144230769230769230769230769,"sumAmount24h":39648537.077},{"sumAmount24hUSDT":17092538.252,"posVauleUSD":"2,298,108.99","contractCode":"ETCUSDT","contractName":"ETC/USDT永续","allowTrade":true,"hasPosition":false,"closeCurrency":"USDT","quotedCurrency":"USDT","precision":4,"minPriceMovement":0.0010000000,"pricePrecision":3,"lastestPrice":5.098,"changePercent24h":0.0226680040120361083249749248,"sumAmount24h":17092538.252},{"sumAmount24hUSDT":49929241.598,"posVauleUSD":"16,145,371.27","contractCode":"BCHUSDT","contractName":"BCH/USDT永续","allowTrade":true,"hasPosition":false,"closeCurrency":"USDT","quotedCurrency":"USDT","precision":2,"minPriceMovement":0.0500000000,"pricePrecision":2,"lastestPrice":226.75,"changePercent24h":0.0209365150832958126969833408,"sumAmount24h":49929241.598}],"ret":0,"errCode":null,"errStr":null,"env":0,"timestamp":1585289902801}'
+    http_version: 
+  recorded_at: Fri, 27 Mar 2020 06:18:23 GMT
+recorded_with: VCR 4.0.0

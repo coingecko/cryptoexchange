@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://trade.swiftex.co/api/v2/peatio/public/markets/myntbtc/depth
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - trade.swiftex.co
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Encoding:
+      - gzip
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Length:
+      - '380'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 03 Jul 2019 06:33:30 GMT
+      Etag:
+      - W/"5d35efc2833c6fe2f3a54dc211446767"
+      Host:
+      - trade.swiftex.co
+      Server:
+      - envoy
+      Set-Cookie:
+      - _session_id=X4tEZxOLtIGySiW5lqRJzoRdf1opGpTvJL9f4pcd65KgIraDc15EheSiW043nbqK0JZ1WEV0Gb9rEJtwww%3D%3D--q3dm1TnhSZ4lt3rK--Z%2BquWOo25ay%2F2C7g%2FHkO4Q%3D%3D;
+        path=/; HttpOnly
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Vary:
+      - Origin
+      Version:
+      - HTTP/1.1
+      X-Envoy-Expected-Rq-Timeout-Ms:
+      - '15000'
+      X-Envoy-Original-Path:
+      - "/api/v2/peatio/public/markets/myntbtc/depth"
+      X-Envoy-Upstream-Service-Time:
+      - '7'
+      X-Forwarded-For:
+      - 118.100.1.62
+      X-Forwarded-Host:
+      - trade.swiftex.co
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Forwarded-Server:
+      - swiftex
+      X-Real-Ip:
+      - 118.100.1.62
+      X-Request-Id:
+      - cc7ceb60-7fd0-4769-9525-24515e0fdb90
+      X-Runtime:
+      - '0.004726'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"timestamp":1562135611,"asks":[["0.000005","1.0"],["0.0000003","1000000.0"],["0.0000002","1000000.0"],["0.0000001","1000000.0"],["0.00000009","100000.0"],["0.00000008","100000.0"],["0.00000007","100000.0"],["0.00000006","100000.0"],["0.00000005","100000.0"],["0.00000004","100000.0"],["0.00000003","100000.0"],["0.00000002","94303.9999548"]],"bids":[["0.000000001","2857580.0"]]}'
+    http_version: 
+  recorded_at: Wed, 03 Jul 2019 06:33:31 GMT
+recorded_with: VCR 4.0.0

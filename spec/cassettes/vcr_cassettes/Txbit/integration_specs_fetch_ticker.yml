@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.txbit.io/api/public/getmarketsummary?market=ETH/BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.txbit.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 15 May 2019 02:29:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d23adab2db75471bed22cec16c1b77d891557887343; expires=Thu, 14-May-20
+        02:29:03 GMT; path=/; domain=.txbit.io; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d71ae96fd256f76-SIN
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"message":"","result":{"MarketName":"ETH/BTC","High":0.02800000,"Low":0.02799858,"Volume":8.54310000,"Last":0.02800000,"BaseVolume":0.23920664,"TimeStamp":"2019-05-15T00:38:50.827Z","Bid":0.02700002,"Ask":0.02800000,"OpenBuyOrders":7,"OpenSellOrders":25,"PrevDay":0.02500000,"Created":"2019-01-27T20:43:12.49Z","DisplayMarketName":"Ethereum
+        - Bitcoin"}}'
+    http_version: 
+  recorded_at: Wed, 15 May 2019 02:29:03 GMT
+recorded_with: VCR 4.0.0

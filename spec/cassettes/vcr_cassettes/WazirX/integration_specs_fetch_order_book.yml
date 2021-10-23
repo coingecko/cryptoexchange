@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://x.wazirx.com/api/v2/depth?limit=100&market=btcinr
+    uri: https://api.wazirx.com/api/v2/depth?market=btcinr
     body:
       encoding: UTF-8
       string: ''
@@ -10,59 +10,61 @@ http_interactions:
       Connection:
       - close
       Host:
-      - x.wazirx.com
+      - api.wazirx.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Thu, 13 Sep 2018 10:45:41 GMT
+      - Fri, 09 Aug 2019 08:09:37 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '722'
+      - '729'
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d0ca75c8f1dbb498f1213c6e50bcd2a081536835541; expires=Fri, 13-Sep-19
-        10:45:41 GMT; path=/; domain=.wazirx.com; HttpOnly; Secure
+      - __cfduid=de75d3b6c809e92a7230944e04493dc461565338176; expires=Sat, 08-Aug-20
+        08:09:36 GMT; path=/; domain=.wazirx.com; HttpOnly; Secure
       Version:
       - HTTP/1.1
       Host:
       - wazirx.com
       X-Real-Ip:
-      - 100.127.0.0
+      - 100.108.128.0
       X-Forwarded-For:
-      - 86.181.90.72, 141.101.107.254, 100.127.0.0
+      - 60.53.87.161, 162.158.26.33, 100.108.128.0
       X-Forwarded-Proto:
       - https
       X-Forwarded-Port:
       - '443'
       X-Amzn-Trace-Id:
-      - Root=1-5b9a3fd5-f9124fee482d8b6165f68eb6
+      - Root=1-5d4d2a40-7721c248ca421b5fe2265447
       Accept-Encoding:
       - gzip
       Cf-Ipcountry:
-      - GB
+      - MY
       Cf-Visitor:
       - '{"scheme":"https"}'
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
       Cf-Connecting-Ip:
-      - 86.181.90.72
+      - 60.53.87.161
+      Cdn-Loop:
+      - cloudflare
       X-Forwarded-Host:
       - wazirx.com
       Etag:
-      - W/"9dc685c5b048c9636272df5852aa1690"
+      - W/"7f1dfbea6799805790cd63e1addad514"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3a49b94a-a5a9-4c78-ba02-cb91765bd777
+      - 48fb5bc2-ebe7-498e-b889-ffe662b1feb6
       X-Runtime:
-      - '0.007410'
+      - '0.003988'
       Access-Control-Allow-Origin:
       - https://wazirx.com
       Access-Control-Allow-Credentials:
@@ -70,7 +72,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '1728000'
       Access-Control-Allow-Headers:
-      - User-Agent,Keep-Alive,Content-Type,access-key,api-key,signature,tonce,username
+      - User-Agent,Keep-Alive,Content-Type,access-key,api-key,signature,tonce,username,Recaptcha-Token,Recaptcha-Type
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS, DELETE, PUT, PATCH
       Expect-Ct:
@@ -78,10 +80,10 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 459a06933b7b34b2-LHR
+      - 50383fb1899edd4a-KUL
     body:
       encoding: ASCII-8BIT
-      string: '{"timestamp":1536835541,"asks":[["507999.0","0.3131"],["508000.0","0.0769"],["508102.0","0.001"],["509999.0","0.0032"],["517500.0","0.0048"],["525000.0","0.0011"],["536000.0","0.0219"],["544400.0","0.001"],["550000.0","0.0065"],["556000.0","0.0018"],["560000.0","0.0036"],["565000.0","0.0188"],["590000.0","0.0017"],["600000.0","0.0337"],["618000.0","0.0504"],["632000.0","0.0016"]],"bids":[["494600.0","0.0312"],["494599.01","0.0157"],["494599.0","0.0817"],["494499.0","0.0031"],["490200.0","0.0099"],["487100.0","0.0586"],["475000.0","0.0095"],["462202.0","0.0039"],["450000.0","0.001"],["400000.0","0.0023"],["315000.0","0.0369"],["123.0","4.6463"],["100.0","1.0"],["6.0","35.1152"],["5.0","13.0948"],["1.0","15.955"]]}'
+      string: '{"timestamp":1565338176,"asks":[["729999.0","0.0007"],["730000.0","0.1024"],["748000.0","0.0602"],["750000.0","0.0035"],["750031.0","0.0015"],["750999.0","0.001"],["790000.0","0.001"],["799911.0","0.0101"],["799912.0","0.0209"],["800000.0","0.0012"],["810940.0","0.0074"],["813650.0","0.0499"],["831111.0","0.0307"],["890000.0","0.0288"],["900000.0","0.0089"],["950000.0","0.0015"]],"bids":[["658000.0","0.01"],["655557.0","0.0196"],["655556.0","0.01"],["655555.0","0.001"],["640556.0","0.01"],["640555.0","0.007"],["640000.0","0.0067"],["620000.0","0.0049"],["608000.0","0.0198"],["600000.0","0.0483"],["574700.0","0.0051"],["273180.0","0.001"],["273178.0","0.0084"],["100000.0","0.1657"],["56000.0","0.0107"],["5000.0","0.1"]]}'
     http_version: 
-  recorded_at: Thu, 13 Sep 2018 10:45:41 GMT
+  recorded_at: Fri, 09 Aug 2019 08:09:37 GMT
 recorded_with: VCR 4.0.0

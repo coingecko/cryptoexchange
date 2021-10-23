@@ -9,56 +9,43 @@ module Cryptoexchange::Exchanges
         end
 
         def fetch
-          output = super(self.ticker_url)
+          output = super(ticker_url)
           adapt_all(output)
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Jex::Market::API_URL}"
+          "#{Cryptoexchange::Exchanges::Jex::Market::API_URL}/spot/ticker/24hr"
         end
 
         def adapt_all(output)
-          market_pairs = {}
-          output.each do |pair|
-            if !derivative(pair[0])
-            market_pairs[pair[0]] = pair[1]
-            end
-          end
-          market_pairs.map do |pair, ticker|
-            base, target = pair.split('/')
-            market_pair = Cryptoexchange::Models::MarketPair.new(
-              base: base.upcase,
-              target: target.upcase,
+          client = Cryptoexchange::Client.new
+          pairs = client.pairs('jex')
+
+          output.map do |ticker|
+            # we don't want pair i.e., BINANACEETH, HUOBIETH etc
+            next if ticker["symbol"].include? "ETF"
+            pair = pairs.find { |i| "#{i.base}#{i.target}" == ticker["symbol"] }
+            market_pair  = Cryptoexchange::Models::MarketPair.new(
+              base:   pair.base,
+              target: pair.target,
               market: Jex::Market::NAME
             )
-            adapt(ticker, market_pair)
-          end
+            adapt(market_pair, ticker)
+          end.compact
         end
 
-        def derivative(pair)
-          etf = /(ETF)/ =~ pair
-          option = /(PUT|CALL)/ =~ pair
-          if etf && !pair.include?("/")
-            true  
-          elsif option
-            true
-          else
-            false
-          end
-        end
-
-        def adapt(output, market_pair)
+        def adapt(market_pair, output)
           ticker            = Cryptoexchange::Models::Ticker.new
           ticker.base       = market_pair.base
           ticker.target     = market_pair.target
           ticker.market     = Jex::Market::NAME
-          ticker.last       = NumericHelper.to_d(output['last'])
-          ticker.bid        = NumericHelper.to_d(output['highestBid'])
-          ticker.ask        = NumericHelper.to_d(output['lowestAsk'])
-          ticker.change     = NumericHelper.to_d(output['percentChange'])*100
-          ticker.high       = NumericHelper.to_d(output['high24hr'])
-          ticker.low        = NumericHelper.to_d(output['low24hr'])
-          ticker.volume     = NumericHelper.to_d(output['baseVolume'])
+          ticker.last       = NumericHelper.to_d(output['lastPrice'])
+          ticker.bid        = NumericHelper.to_d(output['bidPrice'])
+          ticker.ask        = NumericHelper.to_d(output['askPrice'])
+          ticker.change     = NumericHelper.to_d(output['priceChangePercent'])
+          ticker.high       = NumericHelper.to_d(output['highPrice'])
+          ticker.low        = NumericHelper.to_d(output['lowPrice'])
+          ticker.volume     = NumericHelper.to_d(output['volume'])
           ticker.timestamp  = nil
           ticker.payload    = output
           ticker

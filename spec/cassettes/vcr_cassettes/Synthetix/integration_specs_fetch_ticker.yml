@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://exchange.api.synthetix.io/api/ticker/SBTC-SETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - exchange.api.synthetix.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 11 Jun 2020 00:29:44 GMT
+      Etag:
+      - W/"a3-wahrc4sKsd/F12CF+s4YWUSYKrw"
+      Server:
+      - nginx/1.16.1
+      X-Powered-By:
+      - Express
+      Content-Length:
+      - '163'
+      Connection:
+      - Close
+    body:
+      encoding: UTF-8
+      string: '{"symbol":"sBTC-sETH","rate":39.779692753826545,"bid":39.779692753826545,"ask":39.779692753826545,"volume24hFrom":0,"volume24hTo":0,"low24hRate":0,"high24hRate":0}'
+    http_version: 
+  recorded_at: Thu, 11 Jun 2020 00:29:45 GMT
+recorded_with: VCR 4.0.0

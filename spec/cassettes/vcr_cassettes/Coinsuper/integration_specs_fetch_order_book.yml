@@ -1,0 +1,93 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.coinsuper.com/v1/order/symbol/symbolDetail
+    body:
+      encoding: UTF-8
+      string: '{"lang":"en-GB","language":"en-GB","community":"Coinsuper","data":{"source":"WEB","symbol":"BTC/USD"}}'
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.coinsuper.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 29 Aug 2019 07:32:01 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '356'
+      Connection:
+      - close
+      Set-Cookie:
+      - acw_tc=0bc1a04a15670639215313990eea420b4dc6d89f87da4e0382297efb9a78ed;path=/;HttpOnly;Max-Age=1800
+      - prod_hk_SESSION=d8dbff88-ec35-460a-b6e2-bf13b7b1b3d2; Domain=coinsuper.com;
+        Path=/; HttpOnly
+      X-Application-Context:
+      - coinsuper:35101
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Access-Control-Allow-Origin:
+      - https://www.coinsuper.info
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Headers:
+      - DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization,X-B3-Traceid,X-B3-Spanid,Lang
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":"1000","data":{"detailUrl":"https://support.coinsuper.info/hc/en-gb/articles/360023885334","slippagePoint":0.3,"steps":[{"code":"001","decimalValue":2,"value":"0.01"},{"code":"01","decimalValue":1,"value":"0.1"},{"code":"1","decimalValue":0,"value":"1.0"},{"code":"10","decimalValue":-1,"value":"10"}]},"msg":"success","traceId":"44b5f2bea50bf5dd"}'
+    http_version: 
+  recorded_at: Thu, 29 Aug 2019 07:32:01 GMT
+- request:
+    method: post
+    uri: https://www.coinsuper.com/rest/quotation/v1/web/orderBook
+    body:
+      encoding: UTF-8
+      string: '{"lang":"en-GB","language":"en-GB","community":"Coinsuper","data":{"source":"WEB","symbol":"BTC/USD","stepName":"001"}}'
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.coinsuper.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 29 Aug 2019 07:32:01 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '2984'
+      Connection:
+      - close
+      Set-Cookie:
+      - acw_tc=0bc1a04615670639217202668e1c171787598a5fccfa8f60897c94941c8497;path=/;HttpOnly;Max-Age=1800
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '{"code":"1000","data":{"asks":[{"amount":"1074.58","amountAccuracy":"1074.58","limitPrice":"9426.22","quantity":"0.1140"},{"amount":"2028.97","amountAccuracy":"2028.97","limitPrice":"9428.34","quantity":"0.2152"},{"amount":"1131.69","amountAccuracy":"1131.69","limitPrice":"9430.77","quantity":"0.1200"},{"amount":"13393.83","amountAccuracy":"13393.83","limitPrice":"9442.25","quantity":"1.4185"},{"amount":"9744.74","amountAccuracy":"9744.74","limitPrice":"9447.16","quantity":"1.0315"},{"amount":"15901.31","amountAccuracy":"15901.31","limitPrice":"9455.50","quantity":"1.6817"},{"amount":"5001.22","amountAccuracy":"5001.22","limitPrice":"9457.68","quantity":"0.5288"},{"amount":"11240.97","amountAccuracy":"11240.97","limitPrice":"9462.10","quantity":"1.1880"},{"amount":"11339.88","amountAccuracy":"11339.88","limitPrice":"9463.31","quantity":"1.1983"},{"amount":"11031.09","amountAccuracy":"11031.09","limitPrice":"9463.88","quantity":"1.1656"},{"amount":"8838.07","amountAccuracy":"8838.07","limitPrice":"9468.69","quantity":"0.9334"},{"amount":"8576.50","amountAccuracy":"8576.50","limitPrice":"9474.71","quantity":"0.9052"},{"amount":"8446.16","amountAccuracy":"8446.16","limitPrice":"9479.42","quantity":"0.8910"},{"amount":"4106.67","amountAccuracy":"4106.67","limitPrice":"9484.23","quantity":"0.4330"},{"amount":"8569.65","amountAccuracy":"8569.65","limitPrice":"9495.46","quantity":"0.9025"}],"asksQuantity":"0.9025","bids":[{"amount":"0.94","amountAccuracy":"0.94","limitPrice":"9420.01","quantity":"0.0001"},{"amount":"37.68","amountAccuracy":"37.68","limitPrice":"9420.00","quantity":"0.0040"},{"amount":"758.71","amountAccuracy":"758.71","limitPrice":"9401.69","quantity":"0.0807"},{"amount":"682.44","amountAccuracy":"682.44","limitPrice":"9400.00","quantity":"0.0726"},{"amount":"1781.60","amountAccuracy":"1781.60","limitPrice":"9396.67","quantity":"0.1896"},{"amount":"5112.43","amountAccuracy":"5112.43","limitPrice":"9394.40","quantity":"0.5442"},{"amount":"1412.34","amountAccuracy":"1412.34","limitPrice":"9390.60","quantity":"0.1504"},{"amount":"9204.80","amountAccuracy":"9204.80","limitPrice":"9383.08","quantity":"0.9810"},{"amount":"9738.40","amountAccuracy":"9738.40","limitPrice":"9379.18","quantity":"1.0383"},{"amount":"3842.83","amountAccuracy":"3842.83","limitPrice":"9372.76","quantity":"0.4100"},{"amount":"8994.31","amountAccuracy":"8994.31","limitPrice":"9369.08","quantity":"0.9600"},{"amount":"5340.03","amountAccuracy":"5340.03","limitPrice":"9368.49","quantity":"0.5700"},{"amount":"4277.01","amountAccuracy":"4277.01","limitPrice":"9367.10","quantity":"0.4566"},{"amount":"3745.30","amountAccuracy":"3745.30","limitPrice":"9363.25","quantity":"0.4000"},{"amount":"14208.88","amountAccuracy":"14208.88","limitPrice":"9361.50","quantity":"1.5178"}],"bidsQuantity":"1.5178","deal":{"direction":-1,"price":"9420.02","usdPrice":"9420.02"},"limitSize":15,"step":"0.01","symbol":"BTC/USD","timestamp":1567063921710},"msg":"success","traceId":""}'
+    http_version: 
+  recorded_at: Thu, 29 Aug 2019 07:32:01 GMT
+recorded_with: VCR 4.0.0

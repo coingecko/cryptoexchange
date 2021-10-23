@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hbdm.com/market/detail/merged?symbol=BTC_CW
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hbdm.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Apr 2020 11:23:49 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Content-Length:
+      - '304'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d50a60a81805ec587f28da3ec31c70d5f1585913029; expires=Sun, 03-May-20
+        11:23:49 GMT; path=/; domain=.hbdm.com; HttpOnly; SameSite=Lax
+      Accept-Language:
+      - en-US
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57e26b712a202cdf-KUL
+    body:
+      encoding: UTF-8
+      string: '{"ch":"market.BTC_CW.detail.merged","status":"ok","tick":{"amount":"98405.497978712221502178706335941841949759","ask":[6944.61,161],"bid":[6944.6,24],"close":"6945.09","count":178961,"high":"7332.96","id":1585913029,"low":"6644.82","open":"6818.24","ts":1585913029607,"vol":"6759594"},"ts":1585913029607}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2020 11:23:45 GMT
+recorded_with: VCR 4.0.0

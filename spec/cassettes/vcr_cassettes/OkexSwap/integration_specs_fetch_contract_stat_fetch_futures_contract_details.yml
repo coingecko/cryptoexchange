@@ -1,0 +1,133 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 11 Nov 2019 07:02:56 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d8379f77d0c4d6aff90aaed0e441130721573455776; expires=Tue, 10-Nov-20
+        07:02:56 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Mon, 18-Nov-2019 07:02:56 GMT; Path=/
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '10'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 533e674abfb86561-SYD
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"instrument_id":"BTC-USD-191115","underlying_index":"BTC","quote_currency":"USD","tick_size":"0.01","contract_val":"100","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"BTC-USD","base_currency":"BTC","settlement_currency":"BTC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"BTC-USD-191122","underlying_index":"BTC","quote_currency":"USD","tick_size":"0.01","contract_val":"100","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"BTC-USD","base_currency":"BTC","settlement_currency":"BTC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"BTC-USD-191227","underlying_index":"BTC","quote_currency":"USD","tick_size":"0.01","contract_val":"100","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"BTC-USD","base_currency":"BTC","settlement_currency":"BTC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"LTC-USD-191115","underlying_index":"LTC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"LTC-USD","base_currency":"LTC","settlement_currency":"LTC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"LTC-USD-191122","underlying_index":"LTC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"LTC-USD","base_currency":"LTC","settlement_currency":"LTC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"LTC-USD-191227","underlying_index":"LTC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"LTC-USD","base_currency":"LTC","settlement_currency":"LTC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"ETH-USD-191115","underlying_index":"ETH","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"ETH-USD","base_currency":"ETH","settlement_currency":"ETH","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"ETH-USD-191122","underlying_index":"ETH","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"ETH-USD","base_currency":"ETH","settlement_currency":"ETH","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"ETH-USD-191227","underlying_index":"ETH","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"ETH-USD","base_currency":"ETH","settlement_currency":"ETH","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"ETC-USD-191115","underlying_index":"ETC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"ETC-USD","base_currency":"ETC","settlement_currency":"ETC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"ETC-USD-191122","underlying_index":"ETC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"ETC-USD","base_currency":"ETC","settlement_currency":"ETC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"ETC-USD-191227","underlying_index":"ETC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"ETC-USD","base_currency":"ETC","settlement_currency":"ETC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"XRP-USD-191115","underlying_index":"XRP","quote_currency":"USD","tick_size":"0.0001","contract_val":"10","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"XRP-USD","base_currency":"XRP","settlement_currency":"XRP","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"XRP-USD-191122","underlying_index":"XRP","quote_currency":"USD","tick_size":"0.0001","contract_val":"10","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"XRP-USD","base_currency":"XRP","settlement_currency":"XRP","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"XRP-USD-191227","underlying_index":"XRP","quote_currency":"USD","tick_size":"0.0001","contract_val":"10","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"XRP-USD","base_currency":"XRP","settlement_currency":"XRP","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"BCH-USD-191115","underlying_index":"BCH","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"BCH-USD","base_currency":"BCH","settlement_currency":"BCH","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"BCH-USD-191122","underlying_index":"BCH","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"BCH-USD","base_currency":"BCH","settlement_currency":"BCH","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"BCH-USD-191227","underlying_index":"BCH","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"BCH-USD","base_currency":"BCH","settlement_currency":"BCH","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"BSV-USD-191115","underlying_index":"BSV","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"BSV-USD","base_currency":"BSV","settlement_currency":"BSV","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"BSV-USD-191122","underlying_index":"BSV","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"BSV-USD","base_currency":"BSV","settlement_currency":"BSV","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"BSV-USD-191227","underlying_index":"BSV","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"BSV-USD","base_currency":"BSV","settlement_currency":"BSV","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"EOS-USD-191115","underlying_index":"EOS","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"EOS-USD","base_currency":"EOS","settlement_currency":"EOS","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"EOS-USD-191122","underlying_index":"EOS","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"EOS-USD","base_currency":"EOS","settlement_currency":"EOS","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"EOS-USD-191227","underlying_index":"EOS","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"EOS-USD","base_currency":"EOS","settlement_currency":"EOS","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"TRX-USD-191115","underlying_index":"TRX","quote_currency":"USD","tick_size":"0.00001","contract_val":"10","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"TRX-USD","base_currency":"TRX","settlement_currency":"TRX","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"TRX-USD-191122","underlying_index":"TRX","quote_currency":"USD","tick_size":"0.00001","contract_val":"10","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"TRX-USD","base_currency":"TRX","settlement_currency":"TRX","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"TRX-USD-191227","underlying_index":"TRX","quote_currency":"USD","tick_size":"0.00001","contract_val":"10","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"TRX-USD","base_currency":"TRX","settlement_currency":"TRX","is_inverse":"true","contract_val_currency":"USD"}]'
+    http_version: 
+  recorded_at: Mon, 11 Nov 2019 07:02:56 GMT
+- request:
+    method: get
+    uri: https://www.okex.com/api/futures/v3/instruments
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 11 Nov 2019 07:02:57 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d03bd59d54d092ded64039e5b3d683cd51573455777; expires=Tue, 10-Nov-20
+        07:02:57 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Expires=Mon, 18-Nov-2019 07:02:57 GMT; Path=/
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 533e674e7da665cd-SYD
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"instrument_id":"BTC-USD-191115","underlying_index":"BTC","quote_currency":"USD","tick_size":"0.01","contract_val":"100","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"BTC-USD","base_currency":"BTC","settlement_currency":"BTC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"BTC-USD-191122","underlying_index":"BTC","quote_currency":"USD","tick_size":"0.01","contract_val":"100","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"BTC-USD","base_currency":"BTC","settlement_currency":"BTC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"BTC-USD-191227","underlying_index":"BTC","quote_currency":"USD","tick_size":"0.01","contract_val":"100","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"BTC-USD","base_currency":"BTC","settlement_currency":"BTC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"LTC-USD-191115","underlying_index":"LTC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"LTC-USD","base_currency":"LTC","settlement_currency":"LTC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"LTC-USD-191122","underlying_index":"LTC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"LTC-USD","base_currency":"LTC","settlement_currency":"LTC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"LTC-USD-191227","underlying_index":"LTC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"LTC-USD","base_currency":"LTC","settlement_currency":"LTC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"ETH-USD-191115","underlying_index":"ETH","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"ETH-USD","base_currency":"ETH","settlement_currency":"ETH","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"ETH-USD-191122","underlying_index":"ETH","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"ETH-USD","base_currency":"ETH","settlement_currency":"ETH","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"ETH-USD-191227","underlying_index":"ETH","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"ETH-USD","base_currency":"ETH","settlement_currency":"ETH","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"ETC-USD-191115","underlying_index":"ETC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"ETC-USD","base_currency":"ETC","settlement_currency":"ETC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"ETC-USD-191122","underlying_index":"ETC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"ETC-USD","base_currency":"ETC","settlement_currency":"ETC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"ETC-USD-191227","underlying_index":"ETC","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"ETC-USD","base_currency":"ETC","settlement_currency":"ETC","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"XRP-USD-191115","underlying_index":"XRP","quote_currency":"USD","tick_size":"0.0001","contract_val":"10","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"XRP-USD","base_currency":"XRP","settlement_currency":"XRP","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"XRP-USD-191122","underlying_index":"XRP","quote_currency":"USD","tick_size":"0.0001","contract_val":"10","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"XRP-USD","base_currency":"XRP","settlement_currency":"XRP","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"XRP-USD-191227","underlying_index":"XRP","quote_currency":"USD","tick_size":"0.0001","contract_val":"10","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"XRP-USD","base_currency":"XRP","settlement_currency":"XRP","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"BCH-USD-191115","underlying_index":"BCH","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"BCH-USD","base_currency":"BCH","settlement_currency":"BCH","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"BCH-USD-191122","underlying_index":"BCH","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"BCH-USD","base_currency":"BCH","settlement_currency":"BCH","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"BCH-USD-191227","underlying_index":"BCH","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"BCH-USD","base_currency":"BCH","settlement_currency":"BCH","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"BSV-USD-191115","underlying_index":"BSV","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"BSV-USD","base_currency":"BSV","settlement_currency":"BSV","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"BSV-USD-191122","underlying_index":"BSV","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"BSV-USD","base_currency":"BSV","settlement_currency":"BSV","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"BSV-USD-191227","underlying_index":"BSV","quote_currency":"USD","tick_size":"0.01","contract_val":"10","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"BSV-USD","base_currency":"BSV","settlement_currency":"BSV","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"EOS-USD-191115","underlying_index":"EOS","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"EOS-USD","base_currency":"EOS","settlement_currency":"EOS","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"EOS-USD-191122","underlying_index":"EOS","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"EOS-USD","base_currency":"EOS","settlement_currency":"EOS","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"EOS-USD-191227","underlying_index":"EOS","quote_currency":"USD","tick_size":"0.001","contract_val":"10","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"EOS-USD","base_currency":"EOS","settlement_currency":"EOS","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"TRX-USD-191115","underlying_index":"TRX","quote_currency":"USD","tick_size":"0.00001","contract_val":"10","listing":"2019-11-01","delivery":"2019-11-15","trade_increment":"1","alias":"this_week","underlying":"TRX-USD","base_currency":"TRX","settlement_currency":"TRX","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"TRX-USD-191122","underlying_index":"TRX","quote_currency":"USD","tick_size":"0.00001","contract_val":"10","listing":"2019-11-08","delivery":"2019-11-22","trade_increment":"1","alias":"next_week","underlying":"TRX-USD","base_currency":"TRX","settlement_currency":"TRX","is_inverse":"true","contract_val_currency":"USD"},{"instrument_id":"TRX-USD-191227","underlying_index":"TRX","quote_currency":"USD","tick_size":"0.00001","contract_val":"10","listing":"2019-09-13","delivery":"2019-12-27","trade_increment":"1","alias":"quarter","underlying":"TRX-USD","base_currency":"TRX","settlement_currency":"TRX","is_inverse":"true","contract_val_currency":"USD"}]'
+    http_version: 
+  recorded_at: Mon, 11 Nov 2019 07:02:57 GMT
+recorded_with: VCR 4.0.0

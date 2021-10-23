@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://zapi.mandalaex.com/market/get-market-summary
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - zapi.mandalaex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Sep 2019 21:36:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '6202'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d67a64436b2ab136293173e955474613f1569101788; expires=Sun, 20-Sep-20
+        21:36:28 GMT; path=/; domain=.mandalaex.com; HttpOnly; Secure
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      X-Frame-Options:
+      - DENY
+      Referrer-Policy:
+      - no-referrer
+      Content-Security-Policy:
+      - script-src 'self' https://cdnjs.cloudflare.com; object-src 'none'
+      Strict-Transport-Security:
+      - max-age=15552000
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 519f2cc43e69a403-PIT
+    body:
+      encoding: UTF-8
+      string: '{"status":"Success","errorMessage":null,"data":{"ETH_GNT":{"Last":0.00028914,"LowestAsk":0.00029277,"HeighestBid":0.00029014,"PercentChange":4.22,"BaseVolume":14.61713572,"QuoteVolume":49927.02709270,"High_24hr":0.00029329,"Low_24hr":0.00027393},"PAX_BTC":{"Last":9984.65300000,"LowestAsk":9963.75000000,"HeighestBid":9954.71100000,"PercentChange":-2.24,"BaseVolume":231578.47387500,"QuoteVolume":23.24210000,"High_24hr":10174.38300000,"Low_24hr":9910.92200000},"BTC_ETH":{"Last":0.02161340,"LowestAsk":0.02167042,"HeighestBid":0.02165459,"PercentChange":1.49,"BaseVolume":11.78621498,"QuoteVolume":543.75947415,"High_24hr":0.02178845,"Low_24hr":0.02140765},"BTC_LTC":{"Last":0.00729682,"LowestAsk":0.00733183,"HeighestBid":0.00732517,"PercentChange":0.11,"BaseVolume":2.01220259,"QuoteVolume":274.44752436,"High_24hr":0.00743786,"Low_24hr":0.00727218},"BTC_XRP":{"Last":0.00002895,"LowestAsk":0.00002908,"HeighestBid":0.00002905,"PercentChange":1.86,"BaseVolume":3.12702565,"QuoteVolume":107642.87956413,"High_24hr":0.00002924,"Low_24hr":0.00002868},"PAX_ETH":{"Last":215.66600000,"LowestAsk":215.95400000,"HeighestBid":215.89600000,"PercentChange":0.11,"BaseVolume":21527.07651840,"QuoteVolume":99.71040000,"High_24hr":221.65500000,"Low_24hr":214.08600000},"ETH_ZRX":{"Last":0.00096632,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"BTC_ZRX":{"Last":0.00001979,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"ETH_XRP":{"Last":0.00134825,"LowestAsk":0.00134314,"HeighestBid":0.00134082,"PercentChange":0.91,"BaseVolume":32.07938344,"QuoteVolume":23793.34948620,"High_24hr":0.00135034,"Low_24hr":0.00133458},"BTC_GNT":{"Last":0.00000629,"LowestAsk":0.00000632,"HeighestBid":0.00000628,"PercentChange":5.51,"BaseVolume":1.77942010,"QuoteVolume":281553.81366399,"High_24hr":0.00000636,"Low_24hr":0.00000594},"ETH_CVC":{"Last":0.00021294,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"ETH_DENT":{"Last":0.00000256,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"BTC_REP":{"Last":0.00104626,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"BTC_CVC":{"Last":0.00000435,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"ETH_REP":{"Last":0.05124281,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"BTC_DENT":{"Last":0.00000060,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"ETH_NPXS":{"Last":0.00000200,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"ETH_MDX":{"Last":0.00000700,"LowestAsk":0.00005000,"HeighestBid":0.00000512,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"ETH_LTC":{"Last":0.36731181,"LowestAsk":0.33842459,"HeighestBid":0.33785552,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"BTC_STORJ":{"Last":0.00001510,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"BTC_POLY":{"Last":0.00000900,"LowestAsk":0.00330000,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"BTC_DATA":{"Last":0.00000109,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"ETH_POWR":{"Last":0.00027747,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"BTC_POWR":{"Last":0.00000564,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"ETH_DATA":{"Last":0.00005475,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"BTC_MDX":{"Last":0.00000003,"LowestAsk":0.00000088,"HeighestBid":0.00000019,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"ETH_OMG":{"Last":0.00541865,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"BTC_NPXS":{"Last":0.00000004,"LowestAsk":0.00002000,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"ETH_STORJ":{"Last":0.00087480,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"BTC_OMG":{"Last":0.00011113,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"ETH_BCH":{"Last":1.75000000,"LowestAsk":0.0,"HeighestBid":0.06000000,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"ETH_POLY":{"Last":0.00006100,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"BTC_BCH":{"Last":0.13000000,"LowestAsk":0.09999999,"HeighestBid":0.00067006,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"BTC_BAT":{"Last":0.00001871,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0},"ETH_BAT":{"Last":0.00091158,"LowestAsk":0.0,"HeighestBid":0.0,"PercentChange":0.00,"BaseVolume":0.00000000,"QuoteVolume":0.00000000,"High_24hr":0.0,"Low_24hr":0.0}}}'
+    http_version: 
+  recorded_at: Sat, 21 Sep 2019 21:36:49 GMT
+recorded_with: VCR 4.0.0

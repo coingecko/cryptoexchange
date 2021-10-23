@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.exchange.bitcoin.com/api/2/public/symbol
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.exchange.bitcoin.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 24 Sep 2019 03:11:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d079cf33135ebc46f35bb787caae7175c1569294710; expires=Wed, 23-Sep-20
+        03:11:50 GMT; path=/; domain=.bitcoin.com; HttpOnly
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51b192c4087dc0f5-KUL
+    body:
+      encoding: UTF-8
+      string: '[{"id":"LTCBTC","baseCurrency":"LTC","quoteCurrency":"BTC","quantityIncrement":"0.001","tickSize":"0.0000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BTC"},{"id":"XRPBTC","baseCurrency":"XRP","quoteCurrency":"BTC","quantityIncrement":"0.1","tickSize":"0.000000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BTC"},{"id":"ETHBTC","baseCurrency":"ETH","quoteCurrency":"BTC","quantityIncrement":"0.0001","tickSize":"0.000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BTC"},{"id":"TRXBTC","baseCurrency":"TRX","quoteCurrency":"BTC","quantityIncrement":"1","tickSize":"0.0000000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BTC"},{"id":"XLMBTC","baseCurrency":"XLM","quoteCurrency":"BTC","quantityIncrement":"0.1","tickSize":"0.000000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BTC"},{"id":"DASHBTC","baseCurrency":"DASH","quoteCurrency":"BTC","quantityIncrement":"0.001","tickSize":"0.000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BTC"},{"id":"ETCBTC","baseCurrency":"ETC","quoteCurrency":"BTC","quantityIncrement":"0.01","tickSize":"0.0000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BTC"},{"id":"ZECBTC","baseCurrency":"ZEC","quoteCurrency":"BTC","quantityIncrement":"0.001","tickSize":"0.000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BTC"},{"id":"LTCETH","baseCurrency":"LTC","quoteCurrency":"ETH","quantityIncrement":"0.001","tickSize":"0.000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"ETH"},{"id":"XRPETH","baseCurrency":"XRP","quoteCurrency":"ETH","quantityIncrement":"0.1","tickSize":"0.00000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"ETH"},{"id":"TRXETH","baseCurrency":"TRX","quoteCurrency":"ETH","quantityIncrement":"1","tickSize":"0.000000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"ETH"},{"id":"XLMETH","baseCurrency":"XLM","quoteCurrency":"ETH","quantityIncrement":"0.1","tickSize":"0.00000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"ETH"},{"id":"DASHETH","baseCurrency":"DASH","quoteCurrency":"ETH","quantityIncrement":"0.001","tickSize":"0.000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"ETH"},{"id":"ETCETH","baseCurrency":"ETC","quoteCurrency":"ETH","quantityIncrement":"0.01","tickSize":"0.0000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"ETH"},{"id":"ZECETH","baseCurrency":"ZEC","quoteCurrency":"ETH","quantityIncrement":"0.001","tickSize":"0.000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"ETH"},{"id":"LTCUSD","baseCurrency":"LTC","quoteCurrency":"USD","quantityIncrement":"0.001","tickSize":"0.0001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"USD"},{"id":"XRPUSDT","baseCurrency":"XRP","quoteCurrency":"USD","quantityIncrement":"0.1","tickSize":"0.000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"USD"},{"id":"ETHUSD","baseCurrency":"ETH","quoteCurrency":"USD","quantityIncrement":"0.0001","tickSize":"0.001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"USD"},{"id":"TRXUSD","baseCurrency":"TRX","quoteCurrency":"USD","quantityIncrement":"1","tickSize":"0.0000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"USD"},{"id":"XLMUSD","baseCurrency":"XLM","quoteCurrency":"USD","quantityIncrement":"0.1","tickSize":"0.000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"USD"},{"id":"DASHUSD","baseCurrency":"DASH","quoteCurrency":"USD","quantityIncrement":"0.001","tickSize":"0.0001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"USD"},{"id":"ETCUSD","baseCurrency":"ETC","quoteCurrency":"USD","quantityIncrement":"0.01","tickSize":"0.00001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"USD"},{"id":"ZECUSD","baseCurrency":"ZEC","quoteCurrency":"USD","quantityIncrement":"0.001","tickSize":"0.0001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"USD"},{"id":"BTCUSD","baseCurrency":"BTC","quoteCurrency":"USD","quantityIncrement":"0.00001","tickSize":"0.01","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"USD"},{"id":"BCHBTC","baseCurrency":"BCH","quoteCurrency":"BTC","quantityIncrement":"0.0001","tickSize":"0.000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BTC"},{"id":"BCHUSD","baseCurrency":"BCH","quoteCurrency":"USD","quantityIncrement":"0.0001","tickSize":"0.001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"USD"},{"id":"EOSBCH","baseCurrency":"EOS","quoteCurrency":"BCH","quantityIncrement":"0.01","tickSize":"0.00000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BCH"},{"id":"LTCBCH","baseCurrency":"LTC","quoteCurrency":"BCH","quantityIncrement":"0.0001","tickSize":"0.00001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BCH"},{"id":"XRPBCH","baseCurrency":"XRP","quoteCurrency":"BCH","quantityIncrement":"0.1","tickSize":"0.00000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BCH"},{"id":"TRXBCH","baseCurrency":"TRX","quoteCurrency":"BCH","quantityIncrement":"1","tickSize":"0.000000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BCH"},{"id":"XLMBCH","baseCurrency":"XLM","quoteCurrency":"BCH","quantityIncrement":"0.1","tickSize":"0.00000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BCH"},{"id":"ETCBCH","baseCurrency":"ETC","quoteCurrency":"BCH","quantityIncrement":"0.01","tickSize":"0.0000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BCH"},{"id":"DASHBCH","baseCurrency":"DASH","quoteCurrency":"BCH","quantityIncrement":"0.0001","tickSize":"0.00001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BCH"},{"id":"ZECBCH","baseCurrency":"ZEC","quoteCurrency":"BCH","quantityIncrement":"0.0001","tickSize":"0.00001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BCH"},{"id":"ETHBCH","baseCurrency":"ETH","quoteCurrency":"BCH","quantityIncrement":"0.0001","tickSize":"0.00001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BCH"},{"id":"ONEBTC","baseCurrency":"ONE","quoteCurrency":"BTC","quantityIncrement":"10","tickSize":"0.00000000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BTC"},{"id":"RFRBTC","baseCurrency":"RFR","quoteCurrency":"BTC","quantityIncrement":"10","tickSize":"0.00000000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"BTC"},{"id":"RFRUSD","baseCurrency":"RFR","quoteCurrency":"USD","quantityIncrement":"10","tickSize":"0.00000001","takeLiquidityRate":"0.002","provideLiquidityRate":"0.001","feeCurrency":"USD"}]'
+    http_version: 
+  recorded_at: Tue, 24 Sep 2019 03:11:51 GMT
+recorded_with: VCR 4.0.0

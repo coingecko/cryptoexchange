@@ -18,16 +18,21 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          output.map do |pair|
-            adapt(pair)
-          end
+          output.map do |ticker|
+            base, target = Cryptoexchange::Exchanges::Altilly::Market.separate_symbol(ticker["symbol"])
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+                            base: base,
+                            target: target,
+                            market: Altilly::Market::NAME
+                          )
+            adapt(ticker, market_pair)
+          end.compact
         end
 
-        def adapt(output)
-          base, target = output['symbol'].split(/(BTC$)+|(ETH$)+|(USDT$)+|(LTC$)+|(DOGE$)+/)
+        def adapt(output, market_pair)
           ticker           = Cryptoexchange::Models::Ticker.new
-          ticker.base      = base
-          ticker.target    = target
+          ticker.base      = market_pair.base
+          ticker.target    = market_pair.target
           ticker.market    = Altilly::Market::NAME
           ticker.last      = NumericHelper.to_d(output['last'])
           ticker.high      = NumericHelper.to_d(output['high'])
@@ -35,7 +40,7 @@ module Cryptoexchange::Exchanges
           ticker.bid       = NumericHelper.to_d(output['bid'])
           ticker.ask       = NumericHelper.to_d(output['ask'])
           ticker.volume    = NumericHelper.to_d(output['volume'])
-          ticker.timestamp = DateTime.parse(output['timestamp']).to_time.to_i
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

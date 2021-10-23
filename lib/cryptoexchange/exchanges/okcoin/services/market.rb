@@ -4,26 +4,29 @@ module Cryptoexchange::Exchanges
       class Market < Cryptoexchange::Services::Market
         class << self
           def supports_individual_ticker_query?
-            true
+            false
           end
         end
 
-        def fetch(market_pair)
-          output = super(ticker_url(market_pair))
-          adapt(output, market_pair)
+        def fetch
+          output = super(ticker_url)
+          adapt_all(output)
         end
 
-        def ticker_url(market_pair)
-          base = market_pair.base.downcase
-          target = market_pair.target.downcase
-          "#{api_url(target)}/ticker.do?symbol=#{base}_#{target}"
+        def ticker_url
+          "#{Cryptoexchange::Exchanges::Okcoin::Market::API_URL}/instruments/ticker"
         end
 
-        def api_url(target)
-          if target == 'cny'
-            Cryptoexchange::Exchanges::Okcoin::Market::CN_API_URL
-          else
-            Cryptoexchange::Exchanges::Okcoin::Market::INT_API_URL
+
+        def adapt_all(output)
+          output.map do |ticker|
+            base, target = ticker['instrument_id'].split('-')
+            market_pair = Cryptoexchange::Models::MarketPair.new(
+              base: base,
+              target: target,
+              market: Okcoin::Market::NAME
+            )
+            adapt(ticker, market_pair)
           end
         end
 
@@ -32,13 +35,13 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Okcoin::Market::NAME
-          ticker.ask       = NumericHelper.to_d(output['ticker']['sell'])
-          ticker.bid       = NumericHelper.to_d(output['ticker']['buy'])
-          ticker.last      = NumericHelper.to_d(output['ticker']['last'])
-          ticker.high      = NumericHelper.to_d(output['ticker']['high'])
-          ticker.low       = NumericHelper.to_d(output['ticker']['low'])
-          ticker.volume    = NumericHelper.to_d(output['ticker']['vol'])
-          ticker.timestamp = output['date'].to_i
+          ticker.ask       = NumericHelper.to_d(output['ask'])
+          ticker.bid       = NumericHelper.to_d(output['bid'])
+          ticker.last      = NumericHelper.to_d(output['last'])
+          ticker.high      = NumericHelper.to_d(output['high_24h'])
+          ticker.low       = NumericHelper.to_d(output['low_24h'])
+          ticker.volume    = NumericHelper.to_d(output['base_volume_24h'])
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

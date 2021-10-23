@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.huobi.com.co/api/market/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.huobi.com.co
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 19 Feb 2020 06:55:58 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d887fa2ed5b6e1808e5c5bff47343be031582095358; expires=Fri, 20-Mar-20
+        06:55:58 GMT; path=/; domain=.www.huobi.com.co; HttpOnly; SameSite=Lax; Secure
+      X-Request-Id:
+      - 3d773d282fd71d812e5b9ef0df1f8fb5
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 56765693889b2d0f-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"ok","ts":1582095358092,"data":[{"symbol":"htbtc","open":4.9146E-4,"high":5.0485E-4,"low":4.8464E-4,"close":4.9535E-4,"amount":1226.1000000000001,"vol":0.5981035534000002,"count":49},{"symbol":"bsvbtc","open":0.031198,"high":0.031438,"low":0.030172,"close":0.030246,"amount":40.86528445039339,"vol":1.273884217,"count":14},{"symbol":"iosteth","open":2.413E-5,"high":2.45E-5,"low":2.366E-5,"close":2.393E-5,"amount":0.0,"vol":0.0,"count":0},{"symbol":"ethidr","open":3753396.39,"high":4191135.3,"low":3508417.34,"close":3848128.46,"amount":632.7647999999998,"vol":2.39356771435737E9,"count":2118},{"symbol":"ethbtc","open":0.02784,"high":0.028499,"low":0.027452,"close":0.027593,"amount":16.52930000000001,"vol":0.45717864539999986,"count":66},{"symbol":"etcusdt","open":9.5235,"high":9.9966,"low":9.4091,"close":9.4678,"amount":7836.33480078554,"vol":75003.17469933002,"count":311},{"symbol":"trxusdt","open":0.021707,"high":0.022964,"low":0.02158,"close":0.021861,"amount":1160493.035389134,"vol":25372.56636192998,"count":394},{"symbol":"nodeusdt","open":0.004199,"high":0.004298,"low":0.004063,"close":0.004216,"amount":3620878.7100188276,"vol":15163.63243916,"count":87},{"symbol":"ethusdt","open":273.63,"high":285.87,"low":272.83,"close":277.89,"amount":1888.1817672128134,"vol":518085.1065176776,"count":4583},{"symbol":"xrpbtc","open":2.946E-5,"high":2.997E-5,"low":2.899E-5,"close":2.916E-5,"amount":0.0,"vol":0.0,"count":0},{"symbol":"htusdt","open":4.8344,"high":5.0998,"low":4.8331,"close":4.9844,"amount":74385.31096456188,"vol":362901.7766890096,"count":1275},{"symbol":"btcusdt","open":9830.04,"high":10250.0,"low":9813.3,"close":10071.34,"amount":57.22720162546195,"vol":559845.53148278,"count":13560},{"symbol":"eosusdt","open":4.4393,"high":4.65,"low":4.4245,"close":4.5186,"amount":50181.391923060124,"vol":226858.86732816033,"count":595},{"symbol":"usdtidr","open":13791.85,"high":13846.77,"low":13759.2,"close":13780.0,"amount":97112.58999999995,"vol":1.3420758489702008E9,"count":1217},{"symbol":"bchusdt","open":407.13,"high":426.88,"low":403.17,"close":413.9,"amount":279.64778227861103,"vol":115091.97325900005,"count":810},{"symbol":"ftibtc","open":3.56E-8,"high":4.0E-8,"low":3.0E-8,"close":3.03E-8,"amount":668825.62,"vol":0.024775309826,"count":5},{"symbol":"adabtc","open":6.16E-6,"high":6.24E-6,"low":6.06E-6,"close":6.06E-6,"amount":0.0,"vol":0.0,"count":0},{"symbol":"iostusdt","open":0.006589,"high":0.006866,"low":0.006563,"close":0.00665,"amount":198405.1017,"vol":1328.389929835,"count":10},{"symbol":"bchbtc","open":0.041418,"high":0.042252,"low":0.040983,"close":0.041075,"amount":14.755300000000013,"vol":0.6101934389000002,"count":64},{"symbol":"hteth","open":0.01765151,"high":0.01819666,"low":0.01684997,"close":0.01792783,"amount":1093.67,"vol":19.3274291774,"count":43},{"symbol":"eoseth","open":0.01623693,"high":0.01649824,"low":0.01593638,"close":0.01625987,"amount":2200.49,"vol":36.19943182790001,"count":88},{"symbol":"xrpusdt","open":0.28956,"high":0.30288,"low":0.28827,"close":0.29336,"amount":224979.23,"vol":65948.54121249999,"count":60},{"symbol":"eosbtc","open":4.5173E-4,"high":4.6525E-4,"low":4.4578E-4,"close":4.4867E-4,"amount":1467.76,"vol":0.6639914908,"count":61},{"symbol":"adausdt","open":0.060445,"high":0.063662,"low":0.060127,"close":0.061066,"amount":1132.7069999999999,"vol":69.2471762626,"count":2},{"symbol":"trxbtc","open":2.2089E-6,"high":2.2431E-6,"low":2.17E-6,"close":2.17E-6,"amount":362875.65,"vol":0.8000350872029998,"count":372},{"symbol":"qtumbtc","open":2.59E-4,"high":2.62E-4,"low":2.56E-4,"close":2.6E-4,"amount":0.0,"vol":0.0,"count":0},{"symbol":"ltcbtc","open":0.007513,"high":0.007782,"low":0.007496,"close":0.007527,"amount":0.0,"vol":0.0,"count":0},{"symbol":"ltcusdt","open":73.86,"high":79.09,"low":73.59,"close":75.81,"amount":658.1527457003098,"vol":48034.13799799999,"count":107},{"symbol":"qtumusdt","open":2.5403,"high":2.6616,"low":2.5249,"close":2.6034,"amount":1.6893,"vol":4.16908212,"count":3},{"symbol":"etcbtc","open":9.69E-4,"high":9.85E-4,"low":9.34E-4,"close":9.39E-4,"amount":0.0,"vol":0.0,"count":0},{"symbol":"nodebtc","open":4.3E-7,"high":4.357E-7,"low":4.132E-7,"close":4.19E-7,"amount":758.45,"vol":3.1991421E-4,"count":1},{"symbol":"btcidr","open":1.360425E8,"high":1.4093279443E8,"low":1.3600902786E8,"close":1.3920225E8,"amount":33.03172200000009,"vol":4.538621018417955E9,"count":1867},{"symbol":"eosidr","open":61631.14,"high":64841.0,"low":60734.85,"close":62878.9,"amount":36811.11999999999,"vol":2.2921923844944997E9,"count":1837},{"symbol":"gslusdt","open":0.143916,"high":0.14759,"low":0.141111,"close":0.141131,"amount":1421336.8156972795,"vol":203940.2285879744,"count":4257}]}'
+    http_version: 
+  recorded_at: Wed, 19 Feb 2020 06:55:58 GMT
+recorded_with: VCR 4.0.0

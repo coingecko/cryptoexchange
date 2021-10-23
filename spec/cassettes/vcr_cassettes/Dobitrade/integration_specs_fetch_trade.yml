@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dobiexchange.com/market/trades?market=ltc_btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dobiexchange.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 30 Oct 2019 03:25:12 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Server:
+      - waf/4.17.1-2.el6
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Via:
+      - 1.1 PSxjpSin5uc165:4 (Cdn Cache Server V2.0), 1.1 VMtwtbTPE1ih126:1 (Cdn Cache
+        Server V2.0)
+    body:
+      encoding: UTF-8
+      string: '{"status":1,"msg":"Success","data":[{"p":"0.00645000","s":"sell","t":"1572405682000","n":"0.30865200"}]}'
+    http_version: 
+  recorded_at: Wed, 30 Oct 2019 03:25:12 GMT
+recorded_with: VCR 4.0.0

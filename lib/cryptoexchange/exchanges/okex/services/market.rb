@@ -14,35 +14,35 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Okex::Market::API_URL}/tickers.do"
+          "#{Cryptoexchange::Exchanges::Okex::Market::API_URL}/instruments/ticker"
         end
 
 
         def adapt_all(output)
-          timestamp = output['date']
-          output['tickers'].map do |ticker|
-            base, target = ticker['symbol'].split('_')
+          output.map do |pair|
+            base, target = pair['product_id'].split("-")
             market_pair = Cryptoexchange::Models::MarketPair.new(
-              base: base,
+              base:   base,
               target: target,
               market: Okex::Market::NAME
             )
-            adapt(ticker, market_pair, timestamp)
+
+            adapt(pair, market_pair)
           end
         end
 
-        def adapt(output, market_pair, timestamp)
+        def adapt(output, market_pair)
           ticker           = Cryptoexchange::Models::Ticker.new
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Okex::Market::NAME
-          ticker.ask       = NumericHelper.to_d(output['sell'])
-          ticker.bid       = NumericHelper.to_d(output['buy'])
+          ticker.ask       = NumericHelper.to_d(output['best_ask'])
+          ticker.bid       = NumericHelper.to_d(output['best_bid'])
           ticker.last      = NumericHelper.to_d(output['last'])
-          ticker.high      = NumericHelper.to_d(output['high'])
-          ticker.low       = NumericHelper.to_d(output['low'])
-          ticker.volume    = NumericHelper.to_d(output['vol'])
-          ticker.timestamp = NumericHelper.to_d(timestamp)
+          ticker.high      = NumericHelper.to_d(output['high_24h'])
+          ticker.low       = NumericHelper.to_d(output['low_24h'])
+          ticker.volume    = NumericHelper.to_d(output['base_volume_24h'])
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

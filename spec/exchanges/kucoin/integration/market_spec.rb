@@ -22,10 +22,11 @@ RSpec.describe 'Kucoin integration specs' do
     expect(ticker.market).to eq 'kucoin'
     expect(ticker.last).to be_a Numeric
     expect(ticker.high).to be_a Numeric
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.ask).to be_a Numeric
     expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil
   end
 
@@ -46,22 +47,8 @@ RSpec.describe 'Kucoin integration specs' do
     expect(order_book.payload).to_not be nil
   end
 
-  it 'fetch trade' do
-    trades = client.trades(kcs_btc_pair)
-    trade = trades.sample
-
-    expect(trades).to_not be_empty
-    expect(trade.base).to eq 'KCS'
-    expect(trade.target).to eq 'BTC'
-    expect(trade.price).to_not be nil
-    expect(trade.amount).to_not be nil
-    expect(trade.timestamp).to be_a Numeric
-    expect(trade.payload).to_not be nil
-    expect(trade.market).to eq 'kucoin'
-  end
-
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'kucoin', base: kcs_btc_pair.base, target: kcs_btc_pair.target
-    expect(trade_page_url).to eq "https://www.kucoin.com/#/trade.pro/KCS-BTC"
+    expect(trade_page_url).to eq "https://www.kucoin.com/trade/KCS-BTC"
   end
 end

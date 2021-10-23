@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tokocrypto.com/v1/orderbook/btcidr
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.tokocrypto.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '489'
+      Connection:
+      - close
+      Date:
+      - Thu, 30 Jan 2020 02:58:10 GMT
+      X-Amzn-Requestid:
+      - 5b4720a1-d1f3-4961-a3c6-34c3d020c55e
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Amz-Apigw-Id:
+      - HF_qXH8JyQ0FWaA=
+      X-Amzn-Trace-Id:
+      - Root=1-5e324642-b90e51aac28f4454c480273e;Sampled=1
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 cf54b9c26d34297996586f4552faa8b5.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50-C1
+      X-Amz-Cf-Id:
+      - bbv0fzXKvFJrM0GgypuKsdatZv2iFJbPRaZONXd1e_H9-Vh3wVxNAQ==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"bids":[[125200000,0.7462],[123965000,1.1521],[122712000,0.8036],[121471000,1.3087],[121470000,1.0113],[121468000,1.0193],[120242000,0.9835],[120231000,0.8191],[101124022,0.0275],[100099999,0.0058],[90000000,0.0006],[116500,0.0045],[100000,0.1]],"asks":[[127475000,0.8716],[127479000,1.2495],[127481000,1.2316],[127482000,0.7196],[127484000,0.5033],[127489000,0.6367],[127493000,0.6661],[127503000,0.896],[133547000,0.0007],[152186033,0.001],[178000000,0.0035]],"timestamp":1580353090882}'
+    http_version: 
+  recorded_at: Thu, 30 Jan 2020 02:58:10 GMT
+recorded_with: VCR 4.0.0

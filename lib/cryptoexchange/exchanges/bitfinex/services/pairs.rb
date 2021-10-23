@@ -2,8 +2,7 @@ module Cryptoexchange::Exchanges
   module Bitfinex
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitfinex::Market::API_URL}/symbols"
-
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitfinex::Market::API_URL}/tickers?symbols=ALL"
 
         def fetch
           output = super
@@ -11,15 +10,25 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          market_pairs = []
-          output.each do |pair|
-            market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair[0..2],
-                              target: pair[3..-1],
-                              market: Bitfinex::Market::NAME
-                            )
-          end
-          market_pairs
+          output.map do |pair|
+            pair = pair[0]
+
+            next if pair[0] != 't'
+
+            if pair.include? ":"
+              base, target = pair.split(":")
+            else
+              base = pair[1..pair.length - 4]
+              target = pair[-3..-1]
+            end
+
+            Cryptoexchange::Models::MarketPair.new(
+              base: base,
+              target: target,
+              market: Bitfinex::Market::NAME,
+              inst_id: pair,
+            )
+          end.compact
         end
       end
     end

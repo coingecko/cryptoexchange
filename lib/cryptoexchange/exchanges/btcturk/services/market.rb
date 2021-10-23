@@ -18,9 +18,9 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt_all(output)
-          output.map do |pair|
-            symbol = pair['pair']
-            base, target = symbol.split(/(TRY$)+(.*)|(USDT$)+(.*)/)
+          output['data'].map do |pair|
+            symbol = pair['pairNormalized']
+            base, target = symbol.split('_')
             market_pair  = Cryptoexchange::Models::MarketPair.new(
               base:   base,
               target: target,
@@ -41,7 +41,7 @@ module Cryptoexchange::Exchanges
           ticker.bid       = NumericHelper.to_d(output['bid'].to_f)
           ticker.ask       = NumericHelper.to_d(output['ask'].to_f)
           ticker.volume    = NumericHelper.to_d(output['volume'].to_f)
-          ticker.timestamp = output['timestamp'].to_i
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

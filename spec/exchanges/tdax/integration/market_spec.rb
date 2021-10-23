@@ -14,6 +14,11 @@ RSpec.describe 'Tdax integration specs' do
     expect(pair.market).to eq 'tdax'
   end
 
+  it 'give trade url' do
+    trade_page_url = client.trade_page_url 'tdax', base: btc_thb_pair.base, target: btc_thb_pair.target
+    expect(trade_page_url).to eq "https://satang.pro/exchange/market/BTC-THB"
+  end
+
   it 'fetch ticker' do
     ticker = client.ticker(btc_thb_pair)
 
@@ -32,19 +37,18 @@ RSpec.describe 'Tdax integration specs' do
     expect(ticker.payload).to_not be nil
   end
 
-  it 'fetch trade' do
-    trades = client.trades(btc_thb_pair)
-    trade = trades.sample
+  it 'fetch order book' do
+    order_book = client.order_book(btc_thb_pair)
 
-    expect(trades).to_not be_empty
-    expect(trade.base).to eq 'BTC'
-    expect(trade.target).to eq 'THB'
-    expect(trade.market).to eq 'tdax'
-    expect(trade.trade_id).to_not be_nil
-    expect(trade.type).to be_nil
-    expect(trade.price).to_not be_nil
-    expect(trade.amount).to_not be_nil
-    expect(trade.timestamp).to be_a Numeric
-    expect(trade.payload).to_not be nil
-  end
+    expect(order_book.base).to eq 'BTC'
+    expect(order_book.target).to eq 'THB'
+    expect(order_book.market).to eq 'tdax'
+    expect(order_book.asks).to_not be_empty
+    expect(order_book.bids).to_not be_empty
+    expect(order_book.asks.first.price).to_not be_nil
+    expect(order_book.bids.first.amount).to_not be_nil
+    expect(order_book.bids.first.timestamp).to be_nil
+    expect(order_book.timestamp).to be nil
+    expect(order_book.payload).to_not be nil
+  end  
 end

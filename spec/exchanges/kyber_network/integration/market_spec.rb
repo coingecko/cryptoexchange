@@ -16,7 +16,7 @@ RSpec.describe 'KyberNetwork integration specs' do
 
   it 'give trade url' do
     trade_page_url = client.trade_page_url 'kyber_network', base: knc_eth_pair.base, target: knc_eth_pair.target
-    expect(trade_page_url).to eq "https://kyber.network/swap/ETH_KNC"
+    expect(trade_page_url).to eq "https://kyberswap.com/swap/eth-knc"
   end
 
   it 'fetch ticker' do
@@ -26,12 +26,13 @@ RSpec.describe 'KyberNetwork integration specs' do
     expect(ticker.target).to eq 'ETH'
     expect(ticker.market).to eq 'kyber_network'
     expect(ticker.last).to be_a Numeric
-    expect(ticker.bid).to be_nil
-    expect(ticker.ask).to be_nil
-    expect(ticker.high).to be_nil
+    expect(ticker.bid).to be_a Numeric
+    expect(ticker.ask).to be_a Numeric
+    expect(ticker.high).to be_a Numeric
+    expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
-    expect(ticker.timestamp).to be_a Numeric
-    expect(2000..Date.today.year).to include(Time.at(ticker.timestamp).year)
+    expect(ticker.timestamp).to be nil
+
     expect(ticker.payload).to_not be nil
   end
 end

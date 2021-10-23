@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.okex.com/api/swap/v3/instruments/BTC-USD-SWAP/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 02 Oct 2019 07:57:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '187'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dd2f6b13dd86b83a0a9779e6fde60fdef1570003070; expires=Thu, 01-Oct-20
+        07:57:50 GMT; path=/; domain=.okex.com; HttpOnly
+      - locale=en_US; Max-Age=604800; Expires=Wed, 09-Oct-2019 07:57:50 GMT; Path=/
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '6'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51f520b849cadd56-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"instrument_id":"BTC-USD-SWAP","last":"8222.4","high_24h":"8522.9","low_24h":"8175","volume_24h":"3031771","best_ask":"8222.5","best_bid":"8222.4","timestamp":"2019-10-02T07:57:50.014Z"}'
+    http_version: 
+  recorded_at: Wed, 02 Oct 2019 07:57:50 GMT
+recorded_with: VCR 4.0.0

@@ -16,7 +16,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Dcoin::Market::API_URL}/allticker"
+          "#{Cryptoexchange::Exchanges::Dcoin::Market::API_URL}/api/v1/allticker"
         end
 
         def adapt_all(output)
@@ -39,7 +39,7 @@ module Cryptoexchange::Exchanges
           ticker.low       = NumericHelper.to_d(output['low'])
           ticker.high      = NumericHelper.to_d(output['high'])
           ticker.change    = NumericHelper.to_d(output['change'])
-          ticker.timestamp = NumericHelper.to_d(timestamp)
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

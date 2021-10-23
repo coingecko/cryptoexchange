@@ -1,0 +1,111 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fapi.binance.com/fapi/v1/premiumIndex?symbol=BTCUSDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - fapi.binance.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '133'
+      Connection:
+      - close
+      Date:
+      - Wed, 18 Dec 2019 08:59:35 GMT
+      Server:
+      - Tengine
+      Vary:
+      - Accept-Encoding
+      X-Mbx-Used-Weight-1m:
+      - '1'
+      X-Response-Time:
+      - 0ms
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - "*,clienttype,Content-Type,lang,x-ui-request-trace"
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 e45744c97381aa056cf8b022283ddaf0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50-C1
+      X-Amz-Cf-Id:
+      - tumy0hNeUOkhVnwySWNqj0x5PuJ76f1frvWGg1_Q9QvldyLuYRAoIw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"symbol":"BTCUSDT","markPrice":"6623.96371863","lastFundingRate":"-0.00021874","nextFundingTime":1576684800000,"time":1576659575000}'
+    http_version: 
+  recorded_at: Wed, 18 Dec 2019 08:59:34 GMT
+- request:
+    method: get
+    uri: https://fapi.binance.com/fapi/v1/openInterest?symbol=BTCUSDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - fapi.binance.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - close
+      Date:
+      - Wed, 18 Dec 2019 08:59:35 GMT
+      Server:
+      - Tengine
+      X-Mbx-Used-Weight-1m:
+      - '2'
+      X-Response-Time:
+      - 0ms
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - "*,clienttype,Content-Type,lang,x-ui-request-trace"
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 bfca96eb16850175239961a4e36ffad5.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50-C1
+      X-Amz-Cf-Id:
+      - tZ4-fzH6oY8rzPxpyZ0XFicOGfhf5VBRGzWE63UfV04Wl9qWu3PSAg==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"symbol":"BTCUSDT","openInterest":"14367.348"}'
+    http_version: 
+  recorded_at: Wed, 18 Dec 2019 08:59:34 GMT
+recorded_with: VCR 4.0.0

@@ -34,11 +34,11 @@ module Cryptoexchange::Exchanges
           ticker.base      = market_pair.base
           ticker.target    = market_pair.target
           ticker.market    = Bkex::Market::NAME
-          ticker.last      = NumericHelper.to_d(output['lastPrice'])
+          ticker.last      = NumericHelper.to_d(output['currentPrice'])
           ticker.high      = NumericHelper.to_d(output['maxPrice'])
           ticker.low       = NumericHelper.to_d(output['minPrice'])
           ticker.volume    = NumericHelper.to_d(output['totalAmount'])
-          ticker.timestamp = NumericHelper.to_d(output['statDate']) / 1000
+          ticker.timestamp = nil
           ticker.payload   = output
           ticker
         end

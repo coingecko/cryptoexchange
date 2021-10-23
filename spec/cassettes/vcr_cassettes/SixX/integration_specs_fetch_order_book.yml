@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://exapi.6x.com/exapi/api/v1/depth?symbol=BTC_USDX
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - exapi.6x.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 May 2019 04:17:59 GMT
+      Content-Type:
+      - text/html;charset=UTF-8
+      X-Cache:
+      - MISS from Thailand3
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"asks":[[8146.00,1.4015],[8146.27,0.4253],[8151.42,0.5328],[8156.07,0.6836],[8162.46,0.5649],[8166.08,0.4310],[8186.61,0.6156],[8198.42,0.2093],[8241.87,0.5848],[8245.61,1.4570],[8431.46,0.3985],[9041.35,0.8143]],"bids":[[8085.98,0.4620],[8069.79,0.6381],[8065.79,0.9229],[8058.59,0.0592],[8022.70,0.3066],[8005.21,1.5949],[8000.82,0.0376],[7993.60,0.5171],[7979.30,0.2648],[7973.96,0.2137],[7967.21,1.9637],[5212.37,0.2150],[5176.42,0.6431],[4824.64,0.6718],[4500.00,0.0182],[3256.31,0.3478],[3027.51,0.8134],[18.00,1.0047],[9.48,0.0031]]}'
+    http_version: 
+  recorded_at: Tue, 14 May 2019 04:17:59 GMT
+recorded_with: VCR 4.0.0

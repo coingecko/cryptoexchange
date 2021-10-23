@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Bitsten integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:stn_btc_pair) { Cryptoexchange::Models::Bilaxy::MarketPair.new(base: 'STN', target: 'BTC', market: 'bitsten') }
+  let(:stn_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'STN', target: 'BTC', market: 'bitsten') }
 
   it 'fetch pairs' do
     pairs = client.pairs('bitsten')

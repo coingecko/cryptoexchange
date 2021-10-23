@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://datacenter.raidofinance.eu/v1/assets
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - datacenter.raidofinance.eu
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Tue, 22 Oct 2019 05:33:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1146'
+      Connection:
+      - close
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Sid, X-XSS-Protection
+      Access-Control-Expose-Headers:
+      - Authorization, Sid
+      Access-Control-Max-Age:
+      - '360000'
+      Etag:
+      - W/"47a-Nl0D4JAEDO2wuB1fyzp6ACA3WTc"
+      Access-Controll-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"data":{"count":12,"rows":[{"pair":"BCHBTC","right":"BTC","left":"BCH","accuracy":"6","min_volume":0.01,"isTrade":true},{"pair":"BTCEURS","right":"EURS","left":"BTC","accuracy":"2","min_volume":0.001,"isTrade":true},{"pair":"ETCBTC","right":"BTC","left":"ETC","accuracy":"7","min_volume":1,"isTrade":true},{"pair":"ETCETH","right":"ETH","left":"ETC","accuracy":"8","min_volume":1,"isTrade":true},{"pair":"ETHBTC","right":"BTC","left":"ETH","accuracy":"6","min_volume":0.01,"isTrade":true},{"pair":"ETHEURS","right":"EURS","left":"ETH","accuracy":"2","min_volume":0.01,"isTrade":true},{"pair":"LTCBTC","right":"BTC","left":"LTC","accuracy":"6","min_volume":0.1,"isTrade":true},{"pair":"LTCETH","right":"ETH","left":"LTC","accuracy":"8","min_volume":0.1,"isTrade":true},{"pair":"MANAETH","right":"ETH","left":"MANA","accuracy":"8","min_volume":1,"isTrade":true},{"pair":"RFETH","right":"ETH","left":"RF","accuracy":"8","min_volume":1,"isTrade":true},{"pair":"XLMBTC","right":"BTC","left":"XLM","accuracy":"8","min_volume":10,"isTrade":true},{"pair":"XLMETH","right":"ETH","left":"XLM","accuracy":"8","min_volume":10,"isTrade":true}]}}'
+    http_version: 
+  recorded_at: Tue, 22 Oct 2019 05:33:56 GMT
+recorded_with: VCR 4.0.0

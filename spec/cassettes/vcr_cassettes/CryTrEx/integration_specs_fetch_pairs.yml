@@ -12,72 +12,58 @@ http_interactions:
       Host:
       - crytrex.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Wed, 14 Nov 2018 01:34:49 GMT
+      - Tue, 14 Apr 2020 07:48:27 GMT
       Server:
       - Apache
-      X-Powered-By:
-      - PHP/7.0.30
-      Cache-Control:
-      - max-age=2592000
-      Expires:
-      - Fri, 14 Dec 2018 01:34:49 GMT
+      Upgrade:
+      - h2,h2c
+      Connection:
+      - Upgrade, close
       Vary:
       - Accept-Encoding,User-Agent
       Access-Control-Allow-Origin:
       - "*"
-      Content-Type:
-      - text/html; charset=UTF-8
-      Via:
-      - 1.1 stark
-      Connection:
-      - close
       Transfer-Encoding:
       - chunked
+      Content-Type:
+      - application/json; charset=UTF-8
     body:
       encoding: UTF-8
-      string: "{\n\"success\":true,\n\"message\":\"\",\n\"result\":[\n {\n   \"Market\":\"BTC\",\n
+      string: " {\n\"success\":true,\n\"message\":\"\",\n\"result\":[\n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"BTC\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"ETH\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"DASH\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"BCH\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"LTC\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"ZEC\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"TRX\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"USDC\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"VELAS\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"BTT\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
         \  \"Currency\":\"CRYT\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
-        \  \"Currency\":\"BTC\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"CRYT\",\n
-        \  \"Currency\":\"LTC\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"CRYT\",\n
-        \  \"Currency\":\"DOGE\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"CRYT\",\n
-        \  \"Currency\":\"CPS\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
-        \  \"Currency\":\"CRYT\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"CRYT\",\n
-        \  \"Currency\":\"EURO\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"CRYT\",\n
-        \  \"Currency\":\"DGB\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"CRYT\",\n
-        \  \"Currency\":\"CMSH\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"CRYT\",\n
-        \  \"Currency\":\"ETH\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"BTC\",\n
-        \  \"Currency\":\"BCN\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"BTC\",\n
-        \  \"Currency\":\"XEM\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"BTC\",\n
-        \  \"Currency\":\"ETH\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"BTC\",\n
-        \  \"Currency\":\"XRP\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"BTC\",\n
-        \  \"Currency\":\"CPS\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"BTC\",\n
-        \  \"Currency\":\"DOGE\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"DOGE\",\n
-        \  \"Currency\":\"CPS\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"BTC\",\n
-        \  \"Currency\":\"TRX\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"BTC\",\n
-        \  \"Currency\":\"DGB\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"BTC\",\n
-        \  \"Currency\":\"TPAY\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"EURO\",\n
-        \  \"Currency\":\"BTC\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"DOGE\",\n
-        \  \"Currency\":\"CRYT\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
-        \  \"Currency\":\"EURO\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
-        \  \"Currency\":\"DGB\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"DOGE\",\n
-        \  \"Currency\":\"DGB\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"EURO\",\n
-        \  \"Currency\":\"DGB\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"CRYT\",\n
-        \  \"Currency\":\"GDM\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"BTC\",\n
-        \  \"Currency\":\"LTC\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"CRYT\",\n
-        \  \"Currency\":\"ACTIV\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"BTC\",\n
+        \  \"Currency\":\"DOGE\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"XRP\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
         \  \"Currency\":\"XLM\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
-        \  \"Currency\":\"XLM\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"CRYT\",\n
-        \  \"Currency\":\"XLM\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"BTC\",\n
-        \  \"Currency\":\"TBTC\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"CRYT\",\n
-        \  \"Currency\":\"TBTC\",\n   \"IsActive\":true\n },\n    {\n   \"Market\":\"XVG\",\n
-        \  \"Currency\":\"CRYT\",\n   \"IsActive\":true\n }\n  ]}"
+        \  \"Currency\":\"XTZ\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"ETC\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"EOS\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"DAI\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"ZRX\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"REP\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"BAT\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"KNC\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"LINK\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"ATOM\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"DGB\",\n   \"IsActive\":true\n },\n \n {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"BNB\",\n   \"IsActive\":true\n },\n    {\n   \"Market\":\"USDT\",\n
+        \  \"Currency\":\"VLX\",\n   \"IsActive\":true\n }\n  ]}"
     http_version: 
-  recorded_at: Wed, 14 Nov 2018 01:34:49 GMT
+  recorded_at: Tue, 14 Apr 2020 07:48:27 GMT
 recorded_with: VCR 4.0.0

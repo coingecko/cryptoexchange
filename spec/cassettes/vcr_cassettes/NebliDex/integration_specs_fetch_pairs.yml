@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.neblidex.xyz/seed/?api=get_market_ticker&v=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.neblidex.xyz
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 May 2019 03:30:45 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.5.38
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade, close
+      Vary:
+      - User-Agent
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"marketSymbol":"NEBLBTC","tradeAsset":"NEBL","baseAsset":"BTC","tradeAssetDescription":"Neblio","baseAssetDescription":"Bitcoin","lastPrice":"0.00055","tradeVolume24Hour":"0","baseVolume24Hour":"0"},{"marketSymbol":"NEBLLTC","tradeAsset":"NEBL","baseAsset":"LTC","tradeAssetDescription":"Neblio","baseAssetDescription":"Litecoin","lastPrice":"0.0234","tradeVolume24Hour":"0","baseVolume24Hour":"0"},{"marketSymbol":"NDEXNEBL","tradeAsset":"NDEX","baseAsset":"NEBL","tradeAssetDescription":"NebliDex
+        Token","baseAssetDescription":"Neblio","lastPrice":"0.0006","tradeVolume24Hour":"0","baseVolume24Hour":"0"},{"marketSymbol":"NDEXBTC","tradeAsset":"NDEX","baseAsset":"BTC","tradeAssetDescription":"NebliDex
+        Token","baseAssetDescription":"Bitcoin","lastPrice":"0","tradeVolume24Hour":"0","baseVolume24Hour":"0"},{"marketSymbol":"NDEXLTC","tradeAsset":"NDEX","baseAsset":"LTC","tradeAssetDescription":"NebliDex
+        Token","baseAssetDescription":"Litecoin","lastPrice":"0.000255","tradeVolume24Hour":"0","baseVolume24Hour":"0"},{"marketSymbol":"TRIFNEBL","tradeAsset":"TRIF","baseAsset":"NEBL","tradeAssetDescription":"Trifid
+        Token","baseAssetDescription":"Neblio","lastPrice":"0.0001","tradeVolume24Hour":"0","baseVolume24Hour":"0"},{"marketSymbol":"NAUTONEBL","tradeAsset":"NAUTO","baseAsset":"NEBL","tradeAssetDescription":"Nauto
+        Token","baseAssetDescription":"Neblio","lastPrice":"0","tradeVolume24Hour":"0","baseVolume24Hour":"0"},{"marketSymbol":"NCCNEBL","tradeAsset":"NCC","baseAsset":"NEBL","tradeAssetDescription":"Neblio
+        Country Club Token","baseAssetDescription":"Neblio","lastPrice":"0","tradeVolume24Hour":"0","baseVolume24Hour":"0"},{"marketSymbol":"HODLRNEBL","tradeAsset":"HODLR","baseAsset":"NEBL","tradeAssetDescription":"HODLR
+        Mining Token","baseAssetDescription":"Neblio","lastPrice":"70","tradeVolume24Hour":"0","baseVolume24Hour":"0"},{"marketSymbol":"NTDNEBL","tradeAsset":"NTD","baseAsset":"NEBL","tradeAssetDescription":"Neb
+        The Dragon Token","baseAssetDescription":"Neblio","lastPrice":"0","tradeVolume24Hour":"0","baseVolume24Hour":"0"},{"marketSymbol":"TGLNEBL","tradeAsset":"TGL","baseAsset":"NEBL","tradeAssetDescription":"Tangle
+        Token","baseAssetDescription":"Neblio","lastPrice":"0","tradeVolume24Hour":"0","baseVolume24Hour":"0"}]'
+    http_version: 
+  recorded_at: Thu, 30 May 2019 03:30:43 GMT
+recorded_with: VCR 4.0.0

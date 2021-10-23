@@ -2,7 +2,13 @@ require 'spec_helper'
 
 RSpec.describe 'Bancor integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:bnt_eth_pair) { Cryptoexchange::Models::MarketPair.new(base: 'BNT', target: 'ETH', market: 'bancor') }
+  let(:eth_bnt_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BNT', market: 'bancor') }
+
+  let(:filename) { Cryptoexchange::Credentials.send(:filename) }
+
+  before do
+    allow(Cryptoexchange::Credentials).to receive(:get).with('bancor').and_return({ 'api_key' => 'api_key' })
+  end
 
   it 'fetch pairs' do
     pairs = client.pairs('bancor')
@@ -15,14 +21,12 @@ RSpec.describe 'Bancor integration specs' do
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(bnt_eth_pair)
+    ticker = client.ticker(eth_bnt_pair)
 
-    expect(ticker.base).to eq 'BNT'
-    expect(ticker.target).to eq 'ETH'
+    expect(ticker.base).to eq 'ETH'
+    expect(ticker.target).to eq 'BNT'
     expect(ticker.market).to eq 'bancor'
     expect(ticker.last).to be_a Numeric
-    expect(ticker.high).to be_a Numeric
-    expect(ticker.low).to be_a Numeric
     expect(ticker.volume).to be_a Numeric
     expect(ticker.timestamp).to be nil
     expect(ticker.payload).to_not be nil

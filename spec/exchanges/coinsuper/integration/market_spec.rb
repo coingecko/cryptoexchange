@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Coinsuper integration specs' do
   let(:client) { Cryptoexchange::Client.new }
-  let(:bch_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'bch', target: 'btc', market: 'coinsuper') }
+  let(:btc_usd_pair) { Cryptoexchange::Models::MarketPair.new(base: 'btc', target: 'usd', market: 'coinsuper') }
 
   it 'fetch pairs' do
     pairs = client.pairs('coinsuper')
@@ -15,15 +15,15 @@ RSpec.describe 'Coinsuper integration specs' do
   end
 
   it 'give trade url' do
-    trade_page_url = client.trade_page_url 'coinsuper', base: bch_btc_pair.base, target: bch_btc_pair.target
-    expect(trade_page_url).to eq "https://www.coinsuper.com/trade?symbol=BCH%2FBTC"
+    trade_page_url = client.trade_page_url 'coinsuper', base: btc_usd_pair.base, target: btc_usd_pair.target
+    expect(trade_page_url).to eq "https://www.coinsuper.com/trade?symbol=BTC%2FUSD"
   end
 
   it 'fetch ticker' do
-    ticker = client.ticker(bch_btc_pair)
+    ticker = client.ticker(btc_usd_pair)
 
-    expect(ticker.base).to eq 'BCH'
-    expect(ticker.target).to eq 'BTC'
+    expect(ticker.base).to eq 'BTC'
+    expect(ticker.target).to eq 'USD'
     expect(ticker.market).to eq 'coinsuper'
     expect(ticker.last).to be_a Numeric
     expect(ticker.ask).to be_a Numeric
@@ -33,4 +33,18 @@ RSpec.describe 'Coinsuper integration specs' do
     
     expect(ticker.payload).to_not be nil
   end
+
+  it 'fetch order book' do
+    order_book = client.order_book(btc_usd_pair)
+    expect(order_book.base).to eq 'BTC'
+    expect(order_book.target).to eq 'USD'
+    expect(order_book.market).to eq 'coinsuper'
+    expect(order_book.asks).to_not be_empty
+    expect(order_book.bids).to_not be_empty
+    expect(order_book.asks.first.price).to_not be_nil
+    expect(order_book.bids.first.amount).to_not be_nil
+    expect(order_book.bids.first.timestamp).to be_nil
+    expect(order_book.timestamp).to be_nil
+    expect(order_book.payload).to_not be nil
+  end  
 end

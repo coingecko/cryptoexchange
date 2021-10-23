@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://bitfex.trade/api/3/info
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - bitfex.trade
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 Dec 2018 18:50:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.003053'
+    body:
+      encoding: UTF-8
+      string: '{"server_time":1544899847,"pairs":{"btc_rur":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"bch_rur":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"bch_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"bch_ltc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"bch_dash":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"ltc_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"ltc_rur":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"dash_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"dash_rur":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"dash_ltc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"steep_rur":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"steep_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"steep_ltc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"steep_bch":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"steep_dash":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"onion_rur":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"onion_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"btc_usd":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"bch_usd":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"ltc_usd":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"dash_usd":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"rth_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"eth_rur":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"eth_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"eth_bch":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"eth_ltc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"eth_dash":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"eth_usd":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"pcl_eth":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"kwh_eth":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"kwh_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"kwh_ltc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"kwh_dash":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"ben_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"ben_usd":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"ben_rur":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"ben_eth":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"ben_ltc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"rth_bch":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"rth_ltc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"rth_dash":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"rth_eth":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"rth_usd":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"rth_rur":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"odc_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"odc_eth":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"odc_usd":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"acm_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"acm_ltc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"acm_usd":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"acm_rur":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"yoc_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"odc_rur":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"xem_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"snrc_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"pul_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"rmc_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"flip_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"flip_rur":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"flip_usd":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"sla_usd":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"btcdm_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"btcdm_eth":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"help_eth":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15},"mnc_btc":{"decimal_places":8,"min_price":1e-05,"max_price":999999999,"min_amount":1e-05,"hidden":0,"fee":0.15}}}'
+    http_version: 
+  recorded_at: Sat, 15 Dec 2018 18:50:47 GMT
+recorded_with: VCR 4.0.0

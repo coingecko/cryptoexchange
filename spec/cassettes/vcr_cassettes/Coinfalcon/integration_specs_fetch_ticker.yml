@@ -12,66 +12,53 @@ http_interactions:
       Host:
       - coinfalcon.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Sun, 11 Mar 2018 07:15:11 GMT
+      - Fri, 13 Dec 2019 06:08:56 GMT
       Content-Type:
-      - application/json;charset=utf-8
-      Content-Length:
-      - '7812'
+      - application/json
+      Transfer-Encoding:
+      - chunked
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=de6940539aa6c74cfc9898d7032f39b581520752510; expires=Mon, 11-Mar-19
-        07:15:10 GMT; path=/; domain=.coinfalcon.com; HttpOnly; Secure
-      Accept-Encoding:
-      - gzip
+      - __cfduid=da67919e77d05fd939b68fa966ae56d861576217335; expires=Sun, 12-Jan-20
+        06:08:55 GMT; path=/; domain=.coinfalcon.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Etag:
+      - W/"a4867977b2ca084d9269123bc1c8f373"
       Cache-Control:
       - max-age=0, private, must-revalidate
-      Cf-Connecting-Ip:
-      - 115.133.65.24
-      Cf-Ipcountry:
-      - MY
-      Cf-Visitor:
-      - '{"scheme":"https"}'
-      Etag:
-      - W/"41afa1123c0b1645e4ccd213e19940a3"
-      User-Agent:
-      - http.rb/3.0.0
-      Vary:
-      - Origin
-      Version:
-      - HTTP/1.1
-      X-Forwarded-For:
-      - 115.133.65.24, 162.158.166.160, 115.133.65.24
-      X-Forwarded-Port:
-      - '80'
-      X-Forwarded-Proto:
-      - http
-      X-Nginx-Proxy:
-      - 'true'
-      X-Real-Ip:
-      - 115.133.65.24
       X-Request-Id:
-      - 34b0a33d-79d0-4976-a752-ad5735df8441
+      - 9f4dfdf386a4727b44a67c92b665eb38
       X-Runtime:
-      - '1.459823'
+      - '0.044024'
       Strict-Transport-Security:
       - max-age=15552000
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Security-Policy:
+      - frame-ancestors 'self'
+      Cf-Cache-Status:
+      - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 3f9c3a73bda47050-SIN
+      - 5445c42a8f8ce268-SIN
     body:
-      encoding: UTF-8
-      string: '{"data":[{"name":"IOT-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.42890351","last_price":"0.00014754","change_in_24h":"-6.46"},{"name":"ETH-BTC","precision":5,"min_volume":"0.00001","min_price":"0.00001","volume":"0.42976","last_price":"0.07987","change_in_24h":"1.31"},{"name":"LTC-BTC","precision":5,"min_volume":"0.00001","min_price":"0.00001","volume":"0.07473","last_price":"0.02038","change_in_24h":"-2.32"},{"name":"BTC-EUR","precision":2,"min_volume":"0.00001","min_price":"0.01","volume":"294597.24","last_price":"7152.07","change_in_24h":"-5.83"},{"name":"XRB-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.81319999","last_price":"0.01625998","change_in_24h":"-3.11"},{"name":"XRB-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.01072013","last_price":"0.00132496","change_in_24h":"-17.54"},{"name":"BCH-BTC","precision":5,"min_volume":"0.00001","min_price":"0.00001","volume":"0.00654","last_price":"0.1185","change_in_24h":"0.0"},{"name":"TAU-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.56000219","last_price":"0.00024","change_in_24h":"0.93"},{"name":"TAU-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.0","last_price":"0.0000189","change_in_24h":"0.0"},{"name":"CRED-BTC","precision":6,"min_volume":"0.000001","min_price":"0.000001","volume":"0.000638","last_price":"0.000044","change_in_24h":"-3.33"},{"name":"CRED-ETH","precision":6,"min_volume":"0.000001","min_price":"0.000001","volume":"0.0","last_price":"0.000539","change_in_24h":"0.0"},{"name":"KIN-BTC","precision":8,"min_volume":"0.1","min_price":"0.00000001","volume":"0.18463031","last_price":"0.00000003","change_in_24h":"-33.33"},{"name":"KIN-ETH","precision":8,"min_volume":"0.1","min_price":"0.00000001","volume":"2.12196103","last_price":"0.00000032","change_in_24h":"6.45"},{"name":"SPHTX-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.0","last_price":"0.00004696","change_in_24h":"0.0"},{"name":"SPHTX-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.06967","last_price":"0.00055502","change_in_24h":"12.24"},{"name":"TRX-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.0771461","last_price":"0.0000041","change_in_24h":"7.02"},{"name":"TRX-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.33794029","last_price":"0.00005554","change_in_24h":"0.32"},{"name":"VEN-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.0","last_price":"0.00042509","change_in_24h":"0.0"},{"name":"VEN-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.0","last_price":"0.00525011","change_in_24h":"0.0"},{"name":"CRPT-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.0869448","last_price":"0.00004847","change_in_24h":"-2.16"},{"name":"CRPT-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"2.11032161","last_price":"0.00057832","change_in_24h":"-2.38"},{"name":"GNT-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.0","last_price":"0.00003914","change_in_24h":"0.0"},{"name":"GNT-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.0","last_price":"0.0005075","change_in_24h":"0.0"},{"name":"DCN-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.0314852","last_price":"0.00000006","change_in_24h":"-16.67"},{"name":"DCN-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.39647737","last_price":"0.0000008","change_in_24h":"-1.09"},{"name":"REBL-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.00614694","last_price":"0.00000556","change_in_24h":"13.61"},{"name":"REBL-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.03990655","last_price":"0.00007014","change_in_24h":"89.68"},{"name":"VIU-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.0065","last_price":"0.00000112","change_in_24h":"78.08"},{"name":"EBTC-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.00084312","last_price":"0.00006207","change_in_24h":"61.33"},{"name":"EBTC-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.00000025","last_price":"0.00073702","change_in_24h":"81.9"},{"name":"TRAC-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.00059","last_price":"0.00002417","change_in_24h":"-0.04"},{"name":"TRAC-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.56","last_price":"0.0002775","change_in_24h":"63.82"},{"name":"CHSB-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.00389736","last_price":"0.00000475","change_in_24h":"-38.0"},{"name":"CHSB-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.0","last_price":"0.00007088","change_in_24h":"0.0"},{"name":"GRLC-BTC","precision":8,"min_volume":"0.00001","min_price":"0.00000001","volume":"0.06342374","last_price":"0.00000962","change_in_24h":"0.21"},{"name":"GRLC-ETH","precision":8,"min_volume":"0.00001","min_price":"0.00000001","volume":"0.33685436","last_price":"0.00012595","change_in_24h":"0.0"},{"name":"ECA-BTC","precision":8,"min_volume":"0.00001","min_price":"0.00000001","volume":"0.20770462","last_price":"0.00000008","change_in_24h":"0.0"},{"name":"ECA-ETH","precision":8,"min_volume":"0.00001","min_price":"0.00000001","volume":"1.8619165","last_price":"0.00000107","change_in_24h":"-1.94"},{"name":"XRP-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.06306405","last_price":"0.00008921","change_in_24h":"8.48"},{"name":"XRP-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.80090414","last_price":"0.00111809","change_in_24h":"-7.08"},{"name":"WPR-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.0","last_price":"0.00001326","change_in_24h":"0.0"},{"name":"WPR-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"1.09918744","last_price":"0.00020139","change_in_24h":"39.37"},{"name":"XBY-BTC","precision":8,"min_volume":"0.01","min_price":"0.00000001","volume":"0.0","last_price":"0.00001225","change_in_24h":"0.0"},{"name":"XBY-ETH","precision":8,"min_volume":"0.01","min_price":"0.00000001","volume":"0.50889218","last_price":"0.00015198","change_in_24h":"22.65"},{"name":"WAX-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.00060125","last_price":"0.00001947","change_in_24h":"-7.45"},{"name":"WAX-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.0040488","last_price":"0.00021352","change_in_24h":"3.71"},{"name":"DADI-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.0","last_price":"0.00003951","change_in_24h":"0.0"},{"name":"DADI-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.0","last_price":"0.00056362","change_in_24h":"0.0"},{"name":"REF-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.04559823","last_price":"0.00205526","change_in_24h":"-0.0"},{"name":"REF-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.12508869","last_price":"0.02791151","change_in_24h":"0.1"},{"name":"ADA-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.38203608","last_price":"0.00001457","change_in_24h":"-76.69"},{"name":"ADA-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":"0.55315073","last_price":"0.00030168","change_in_24h":"6.87"}]}'
+      encoding: ASCII-8BIT
+      string: '{"data":[{"name":"IOT-BTC","precision":8,"min_volume":"0.00000001","min_price":"0.00000001","volume":"0.014028","last_price":"0.000028","highest_bid":"0.00002705","lowest_ask":"0.00002782","change_in_24h":"0.29","size_precision":8,"price_precision":8},{"name":"ETH-BTC","precision":6,"min_volume":"0.00000001","min_price":"0.000001","volume":"0.015268","last_price":"0.020249","highest_bid":"0.02005","lowest_ask":"0.020227","change_in_24h":"1.96","size_precision":8,"price_precision":6},{"name":"LTC-BTC","precision":5,"min_volume":"0.00000001","min_price":"0.00001","volume":"0.00031","last_price":"0.00605","highest_bid":"0.006","lowest_ask":"0.00613","change_in_24h":"0.17","size_precision":8,"price_precision":5},{"name":"BTC-EUR","precision":2,"min_volume":"0.00000001","min_price":"0.01","volume":"22050.06","last_price":"6520.0","highest_bid":"6501.18","lowest_ask":"6600.0","change_in_24h":"0.23","size_precision":8,"price_precision":2},{"name":"BCH-BTC","precision":5,"min_volume":"0.00000001","min_price":"0.00001","volume":null,"last_price":"0.02867","highest_bid":"0.02848","lowest_ask":"0.02902","change_in_24h":"0.0","size_precision":8,"price_precision":5},{"name":"TRX-BTC","precision":8,"min_volume":"0.00000001","min_price":"0.00000001","volume":"0.04590268","last_price":"0.00000179","highest_bid":"0.00000188","lowest_ask":"0.00000196","change_in_24h":"-7.73","size_precision":8,"price_precision":8},{"name":"ECA-BTC","precision":10,"min_volume":"0.00000001","min_price":"0.0000000001","volume":"0.2053297963","last_price":"0.0000000259","highest_bid":"0.0000000242","lowest_ask":"0.0000000255","change_in_24h":"-5.47","size_precision":8,"price_precision":10},{"name":"ECA-ETH","precision":8,"min_volume":"0.00000001","min_price":"0.00000001","volume":"0.13630155","last_price":"0.00000106","highest_bid":"0.00000108","lowest_ask":"0.00000125","change_in_24h":"-20.9","size_precision":8,"price_precision":8},{"name":"XRP-BTC","precision":8,"min_volume":"0.00000001","min_price":"0.00000001","volume":"0.00213681","last_price":"0.0000304","highest_bid":"0.0000304","lowest_ask":"0.00003107","change_in_24h":"-0.62","size_precision":8,"price_precision":8},{"name":"ADA-BTC","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":null,"last_price":"0.00000501","highest_bid":"0.00000501","lowest_ask":"0.00000513","change_in_24h":"0.0","size_precision":6,"price_precision":8},{"name":"ADA-ETH","precision":8,"min_volume":"0.000001","min_price":"0.00000001","volume":null,"last_price":"0.00026","highest_bid":"0.00024801","lowest_ask":"0.00025998","change_in_24h":"0.0","size_precision":6,"price_precision":8},{"name":"DOGE-BTC","precision":8,"min_volume":"0.00001","min_price":"0.00000001","volume":null,"last_price":"0.00000029","highest_bid":"0.00000029","lowest_ask":"0.0000003","change_in_24h":"0.0","size_precision":5,"price_precision":8},{"name":"IOT-EUR","precision":4,"min_volume":"0.00001","min_price":"0.0001","volume":"944.9264","last_price":"0.1829","highest_bid":"0.1781","lowest_ask":"0.1817","change_in_24h":"1.67","size_precision":5,"price_precision":4},{"name":"GRN-BTC","precision":8,"min_volume":"0.00001","min_price":"0.00000001","volume":"0.62484701","last_price":"0.00000043","highest_bid":"0.00000042","lowest_ask":"0.00000043","change_in_24h":"0.0","size_precision":5,"price_precision":8},{"name":"GRN-ETH","precision":8,"min_volume":"0.00001","min_price":"0.00000001","volume":null,"last_price":"0.000021","highest_bid":"0.0000224","lowest_ask":"0.000027","change_in_24h":"0.0","size_precision":5,"price_precision":8},{"name":"GRN-EUR","precision":4,"min_volume":"0.00001","min_price":"0.0001","volume":"1674.4864","last_price":"0.0028","highest_bid":"0.0028","lowest_ask":"0.0029","change_in_24h":"-3.45","size_precision":5,"price_precision":4},{"name":"BTC-USDT","precision":2,"min_volume":"0.00000001","min_price":"0.01","volume":null,"last_price":"7186.03","highest_bid":"7220.0","lowest_ask":"7599.44","change_in_24h":"0.0","size_precision":8,"price_precision":2},{"name":"EOS-USDT","precision":2,"min_volume":"0.0001","min_price":"0.01","volume":null,"last_price":"2.7","highest_bid":"2.75","lowest_ask":"3.25","change_in_24h":"0.0","size_precision":4,"price_precision":2},{"name":"ETH-USDT","precision":2,"min_volume":"0.00001","min_price":"0.01","volume":null,"last_price":"148.99","highest_bid":"140.01","lowest_ask":"174.99","change_in_24h":"0.0","size_precision":5,"price_precision":2},{"name":"XD-BTC","precision":8,"min_volume":"0.00001","min_price":"0.00000001","volume":"0.00146062","last_price":"0.00000007","highest_bid":"0.00000007","lowest_ask":"0.00000009","change_in_24h":"40.0","size_precision":5,"price_precision":8},{"name":"XD-USDT","precision":6,"min_volume":"0.00001","min_price":"0.000001","volume":"0.01047","last_price":"0.003597","highest_bid":"0.00034","lowest_ask":"0.003586","change_in_24h":"56.46","size_precision":5,"price_precision":6}]}'
     http_version: 
-  recorded_at: Sun, 11 Mar 2018 07:15:11 GMT
+  recorded_at: Fri, 13 Dec 2019 06:08:56 GMT
 recorded_with: VCR 4.0.0

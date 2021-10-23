@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.delta.exchange/orderbook/116/l2
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.delta.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 02 May 2020 05:54:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '7797'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d69e474e62db5abf0bc1fd4d56ec0d3ea1588398864; expires=Mon, 01-Jun-20
+        05:54:24 GMT; path=/; domain=.delta.exchange; HttpOnly; SameSite=Lax; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - x-pagination-page-size,x-pagination-page-num,x-pagination-total
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 58cf7cc90bf07389-JHB
+      Cf-Request-Id:
+      - '02758c51a000007389b52d5200000001'
+    body:
+      encoding: UTF-8
+      string: '{"buy_book":[{"price":"8877.5","size":800},{"price":"8876.0","size":6200},{"price":"8875.5","size":5530},{"price":"8874.5","size":240},{"price":"8874.0","size":21251},{"price":"8873.5","size":2000},{"price":"8872.5","size":2401},{"price":"8869.0","size":50018},{"price":"8868.0","size":4635},{"price":"8867.0","size":2994},{"price":"8866.5","size":55543},{"price":"8865.5","size":10240},{"price":"8864.5","size":3500},{"price":"8864.0","size":113825},{"price":"8863.0","size":2190},{"price":"8861.0","size":25200},{"price":"8859.5","size":115421},{"price":"8855.0","size":9272},{"price":"8854.5","size":2190},{"price":"8609.0","size":806461}],"funding_rate":null,"last_trade":{"buyer_role":"taker","price":"8882","seller_role":"maker","size":291,"symbol":"BTCUSD_26Jun","timestamp":1588398863505421},"mark_price":"8876.390519","product_id":116,"recent_trades":[{"buyer_role":"taker","price":"8882","seller_role":"maker","size":291,"symbol":"BTCUSD_26Jun","timestamp":1588398863505421},{"buyer_role":"maker","price":"8860.5","seller_role":"taker","size":179,"symbol":"BTCUSD_26Jun","timestamp":1588398767286757},{"buyer_role":"maker","price":"8860.5","seller_role":"taker","size":381,"symbol":"BTCUSD_26Jun","timestamp":1588398767029560},{"buyer_role":"maker","price":"8860.5","seller_role":"taker","size":4,"symbol":"BTCUSD_26Jun","timestamp":1588398712683378},{"buyer_role":"maker","price":"8860.5","seller_role":"taker","size":16,"symbol":"BTCUSD_26Jun","timestamp":1588398712623290},{"buyer_role":"maker","price":"8860.5","seller_role":"taker","size":10,"symbol":"BTCUSD_26Jun","timestamp":1588398628317671},{"buyer_role":"maker","price":"8860.5","seller_role":"taker","size":150,"symbol":"BTCUSD_26Jun","timestamp":1588398571979071},{"buyer_role":"maker","price":"8860.5","seller_role":"taker","size":142,"symbol":"BTCUSD_26Jun","timestamp":1588398571889496},{"buyer_role":"taker","price":"8870.5","seller_role":"maker","size":602,"symbol":"BTCUSD_26Jun","timestamp":1588398523695670},{"buyer_role":"maker","price":"8862","seller_role":"taker","size":140,"symbol":"BTCUSD_26Jun","timestamp":1588398459336113},{"buyer_role":"taker","price":"8869","seller_role":"maker","size":85,"symbol":"BTCUSD_26Jun","timestamp":1588398390480844},{"buyer_role":"taker","price":"8869","seller_role":"maker","size":185,"symbol":"BTCUSD_26Jun","timestamp":1588398390327034},{"buyer_role":"maker","price":"8871","seller_role":"taker","size":133,"symbol":"BTCUSD_26Jun","timestamp":1588398205296939},{"buyer_role":"maker","price":"8866.5","seller_role":"taker","size":230,"symbol":"BTCUSD_26Jun","timestamp":1588398148780553},{"buyer_role":"maker","price":"8858","seller_role":"taker","size":20,"symbol":"BTCUSD_26Jun","timestamp":1588398056397999},{"buyer_role":"maker","price":"8862","seller_role":"taker","size":20,"symbol":"BTCUSD_26Jun","timestamp":1588397982125463},{"buyer_role":"taker","price":"8865","seller_role":"maker","size":214,"symbol":"BTCUSD_26Jun","timestamp":1588397929815850},{"buyer_role":"maker","price":"8873","seller_role":"taker","size":56,"symbol":"BTCUSD_26Jun","timestamp":1588397815413068},{"buyer_role":"maker","price":"8873","seller_role":"taker","size":274,"symbol":"BTCUSD_26Jun","timestamp":1588397815352934},{"buyer_role":"maker","price":"8873.5","seller_role":"taker","size":3,"symbol":"BTCUSD_26Jun","timestamp":1588397761060248},{"buyer_role":"maker","price":"8870.5","seller_role":"taker","size":37,"symbol":"BTCUSD_26Jun","timestamp":1588397694480626},{"buyer_role":"maker","price":"8870.5","seller_role":"taker","size":95,"symbol":"BTCUSD_26Jun","timestamp":1588397694379905},{"buyer_role":"maker","price":"8872.5","seller_role":"taker","size":86,"symbol":"BTCUSD_26Jun","timestamp":1588397643982171},{"buyer_role":"maker","price":"8872.5","seller_role":"taker","size":46,"symbol":"BTCUSD_26Jun","timestamp":1588397643812667},{"buyer_role":"maker","price":"8871.5","seller_role":"taker","size":287,"symbol":"BTCUSD_26Jun","timestamp":1588397560881048},{"buyer_role":"maker","price":"8871.5","seller_role":"taker","size":3,"symbol":"BTCUSD_26Jun","timestamp":1588397560794845},{"buyer_role":"taker","price":"8877","seller_role":"maker","size":781,"symbol":"BTCUSD_26Jun","timestamp":1588397474518034},{"buyer_role":"taker","price":"8877","seller_role":"maker","size":9,"symbol":"BTCUSD_26Jun","timestamp":1588397474414083},{"buyer_role":"taker","price":"8874","seller_role":"maker","size":212,"symbol":"BTCUSD_26Jun","timestamp":1588397437981549},{"buyer_role":"taker","price":"8874","seller_role":"maker","size":88,"symbol":"BTCUSD_26Jun","timestamp":1588397437785483},{"buyer_role":"taker","price":"8869","seller_role":"maker","size":14,"symbol":"BTCUSD_26Jun","timestamp":1588397413380815},{"buyer_role":"taker","price":"8869","seller_role":"maker","size":6,"symbol":"BTCUSD_26Jun","timestamp":1588397413313670},{"buyer_role":"taker","price":"8869.5","seller_role":"maker","size":5,"symbol":"BTCUSD_26Jun","timestamp":1588397359083106},{"buyer_role":"taker","price":"8869.5","seller_role":"maker","size":5,"symbol":"BTCUSD_26Jun","timestamp":1588397358982252},{"buyer_role":"maker","price":"8861.5","seller_role":"taker","size":644,"symbol":"BTCUSD_26Jun","timestamp":1588397310612008},{"buyer_role":"maker","price":"8861.5","seller_role":"taker","size":286,"symbol":"BTCUSD_26Jun","timestamp":1588397310480196},{"buyer_role":"maker","price":"8848.5","seller_role":"taker","size":312,"symbol":"BTCUSD_26Jun","timestamp":1588397234082662},{"buyer_role":"taker","price":"8854","seller_role":"maker","size":291,"symbol":"BTCUSD_26Jun","timestamp":1588397147718733},{"buyer_role":"maker","price":"8852.5","seller_role":"taker","size":2,"symbol":"BTCUSD_26Jun","timestamp":1588397113446872},{"buyer_role":"maker","price":"8852.5","seller_role":"taker","size":8,"symbol":"BTCUSD_26Jun","timestamp":1588397113389124},{"buyer_role":"taker","price":"8859.5","seller_role":"maker","size":5,"symbol":"BTCUSD_26Jun","timestamp":1588397073053540},{"buyer_role":"taker","price":"8859.5","seller_role":"maker","size":1,"symbol":"BTCUSD_26Jun","timestamp":1588397072902179},{"buyer_role":"maker","price":"8860","seller_role":"taker","size":20,"symbol":"BTCUSD_26Jun","timestamp":1588397016762365},{"buyer_role":"maker","price":"8858","seller_role":"taker","size":11,"symbol":"BTCUSD_26Jun","timestamp":1588396942588005},{"buyer_role":"maker","price":"8858.5","seller_role":"taker","size":223,"symbol":"BTCUSD_26Jun","timestamp":1588396942582882},{"buyer_role":"maker","price":"8858.5","seller_role":"taker","size":116,"symbol":"BTCUSD_26Jun","timestamp":1588396942410715},{"buyer_role":"taker","price":"8866","seller_role":"maker","size":3,"symbol":"BTCUSD_26Jun","timestamp":1588396914282234},{"buyer_role":"taker","price":"8866","seller_role":"maker","size":2,"symbol":"BTCUSD_26Jun","timestamp":1588396914221743},{"buyer_role":"maker","price":"8858.5","seller_role":"taker","size":1,"symbol":"BTCUSD_26Jun","timestamp":1588396836002007},{"buyer_role":"maker","price":"8858.5","seller_role":"taker","size":29,"symbol":"BTCUSD_26Jun","timestamp":1588396835943380}],"sell_book":[{"price":"8882.0","size":19922},{"price":"8886.5","size":112689},{"price":"8888.5","size":58512},{"price":"8890.5","size":141472},{"price":"8891.0","size":49925},{"price":"8893.0","size":2397},{"price":"8893.5","size":3500},{"price":"8894.5","size":13800},{"price":"8897.5","size":8580},{"price":"8899.0","size":2432},{"price":"8901.0","size":2460},{"price":"8905.0","size":120},{"price":"8908.5","size":7560},{"price":"8911.5","size":120},{"price":"8912.0","size":2000},{"price":"8916.5","size":24360},{"price":"8920.0","size":7725},{"price":"8920.5","size":6773},{"price":"8926.0","size":120},{"price":"9182.0","size":793050},{"price":"9495.0","size":1000}],"spot_price":"8824.57","symbol":"BTCUSD_26Jun"}'
+    http_version: 
+  recorded_at: Fri, 10 Jan 2020 00:00:00 GMT
+recorded_with: VCR 4.0.0

@@ -20,31 +20,33 @@ module Cryptoexchange
       end
 
       def fetch_via_api(endpoint = self.class::PAIRS_URL, params = self.class::POST_PARAMS)
-        begin
-          fetch_response = self.class::HTTP_METHOD == 'POST' ? http_post(endpoint, params) : http_get(endpoint)
-          if fetch_response.code == 200
-            fetch_response.parse :json
-          elsif fetch_response.code == 400
-            raise Cryptoexchange::HttpBadRequestError, { response: fetch_response }
-          else
-            raise Cryptoexchange::HttpResponseError, { response: fetch_response }
+        Cryptoexchange::Cache.ticker_cache.fetch(endpoint) do
+          begin
+            fetch_response = self.class::HTTP_METHOD == 'POST' ? http_post(endpoint, params) : http_get(endpoint)
+            if fetch_response.code == 200
+              JSON.parse fetch_response, allow_nan: true
+            elsif fetch_response.code == 400
+              raise Cryptoexchange::HttpBadRequestError, { response: fetch_response }
+            else
+              raise Cryptoexchange::HttpResponseError, { response: fetch_response }
+            end
+          rescue HTTP::ConnectionError => e
+            raise Cryptoexchange::HttpConnectionError, { error: e, response: fetch_response }
+          rescue HTTP::TimeoutError => e
+            raise Cryptoexchange::HttpTimeoutError, { error: e, response: fetch_response }
+          rescue JSON::ParserError => e
+            raise Cryptoexchange::JsonParseError, { error: e, response: fetch_response }
+          rescue TypeError => e
+            raise Cryptoexchange::TypeFormatError, { error: e, response: fetch_response }
           end
-        rescue HTTP::ConnectionError => e
-          raise Cryptoexchange::HttpConnectionError, { error: e, response: fetch_response }
-        rescue HTTP::TimeoutError => e
-          raise Cryptoexchange::HttpTimeoutError, { error: e, response: fetch_response }
-        rescue JSON::ParserError => e
-          raise Cryptoexchange::JsonParseError, { error: e, response: fetch_response }
-        rescue TypeError => e
-          raise Cryptoexchange::TypeFormatError, { error: e, response: fetch_response }
         end
       end
 
       def fetch_via_api_using_post(endpoint = self.class::PAIRS_URL, headers = false, body = false)
         fetch_response = if headers && body
-                           HTTP.timeout(:write => 2, :connect => 5, :read => 8).headers(headers).post(endpoint, body: body)
+                           WrappedHTTP.client.timeout(10).headers(headers).post(endpoint, body: body)
                          else
-                           HTTP.timeout(:write => 2, :connect => 5, :read => 8).post(endpoint)
+                           WrappedHTTP.client.timeout(10).post(endpoint)
                          end
         JSON.parse(fetch_response.to_s)
       end
@@ -75,11 +77,11 @@ module Cryptoexchange
       end
 
       def http_get(endpoint)
-        HTTP.timeout(:write => 2, :connect => 15, :read => 18).follow.get(endpoint)
+        WrappedHTTP.client.timeout(25).follow.use(:auto_inflate).get(endpoint)
       end
 
       def http_post(endpoint, params)
-        HTTP.timeout(:write => 2, :connect => 5, :read => 8).post(endpoint, json: params)
+        WrappedHTTP.client.timeout(15).post(endpoint, json: params)
       end
     end
   end

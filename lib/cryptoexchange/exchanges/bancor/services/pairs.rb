@@ -2,21 +2,25 @@ module Cryptoexchange::Exchanges
   module Bancor
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bancor::Market::API_URL}/currencies/convertiblePairs"
+        def pairs_url
+          "#{Cryptoexchange::Exchanges::Bancor::Market::API_URL}/currencies/convertiblePairs"
+        end
 
         def fetch
-          output = super
+          output = fetch_via_api(pairs_url)
           adapt(output)
         end
 
         def adapt(output)
-          output['data'].map do |base, target|
+          pairs_ex_liquidity_pool = output['data'].select { |pair,_| !/BNT/.match?(pair) }
+
+          pairs_ex_liquidity_pool.map do |base, target|
             Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
               market: Bancor::Market::NAME
             )
-          end
+          end.compact
         end
       end
     end

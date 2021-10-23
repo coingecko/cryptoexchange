@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pub.bitstorage.finance/v2/orderbook/BTC_USD/0/3
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - pub.bitstorage.finance
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 14 May 2020 06:42:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '356'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d78d32b5d1d364b7abbc648e7b96784ed1589438557; expires=Sat, 13-Jun-20
+        06:42:37 GMT; path=/; domain=.bitstorage.finance; HttpOnly; SameSite=Lax;
+        Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"164-Qvsq3DSWxXzJae1JDpnEiE3rsp8"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5932a3e62e970a64-KIX
+      Cf-Request-Id:
+      - 02b384c3d600000a64f33dc200000001
+    body:
+      encoding: UTF-8
+      string: '{"timestamp":1589438558,"asks":[["9444.99999999","1.53872298"],["10106.14999999","2.35138747"],["10389.49999999","0.99028468"],["10578.39999999","2.15164033"],["10861.74999999","3.05396590"]],"bids":[["9350.05500000","0.32833040"],["8783.38500000","0.13851828"],["8500.05000000","0.63188650"],["8311.16000000","0.36681391"],["8027.82500000","1.53215491"]]}'
+    http_version: 
+  recorded_at: Thu, 14 May 2020 06:42:37 GMT
+recorded_with: VCR 4.0.0

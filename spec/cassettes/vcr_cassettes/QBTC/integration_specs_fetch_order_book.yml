@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://www.qbtc.com/json/depthTable.do?symbol=BCH&tradeMarket=USDT
+    uri: https://www.qbtc.me/json/depthTable.do?symbol=BTX&tradeMarket=USDT
     body:
       encoding: UTF-8
       string: ''
@@ -10,47 +10,42 @@ http_interactions:
       Connection:
       - close
       Host:
-      - www.qbtc.com
+      - www.qbtc.me
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
-      Date:
-      - Sun, 15 Jul 2018 15:02:33 GMT
-      Content-Type:
-      - application/json;charset=UTF-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - close
-      Vary:
-      - Accept-Encoding
-      Set-Cookie:
-      - JSESSIONID=659407E3E1D6952B9D36C0663FB31807; Path=/; HttpOnly
-      - __cdnuid=a864adbea42f1bdb4a8d6ca383183f99; max-age=31536000; path=/; HttpOnly
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS, DELETE
-      Access-Control-Max-Age:
-      - '0'
+      Access-Control-Allow-Credentials:
+      - 'true'
       Access-Control-Allow-Headers:
       - Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified,
         Cache-Control, Expires, Content-Type, X-E4M-With,userId,token
-      Access-Control-Allow-Credentials:
-      - 'true'
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '0'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 05 May 2020 08:38:16 GMT
+      Server:
+      - nginx/1.12.1
+      Set-Cookie:
+      - acw_tc=0bc1a01215886678968801084eb9bc792fb2359fb49c50dddbf7c1d41cecb4;path=/;HttpOnly;Max-Age=1800
       Xdomainrequestallowed:
       - '1'
-      X-Cdn-Edge:
-      - 2774ac3,-
-      X-Cache:
-      - bypass
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: UTF-8
-      string: '{"statusCode":200,"message":"操作成功","result":{"sell":[{"amount":"0.06014319","price":"895.21"},{"amount":"0.1568","price":"905.6"},{"amount":"0.225","price":"935.82"},{"amount":"0.053","price":"953.8"},{"amount":"0.042","price":"999.5"},{"amount":"0.0389","price":"1015.82"},{"amount":"0.04","price":"1055.82"},{"amount":"0.04153","price":"1098.53"},{"amount":"0.042","price":"1125.3"},{"amount":"0.0386","price":"1151.65"},{"amount":"0.0296","price":"1189.2"},{"amount":"0.03","price":"1200.01"},{"amount":"0.0351","price":"1215.6"},{"amount":"0.05","price":"1252.02"},{"amount":"0.05","price":"1278.7"},{"amount":"0.052","price":"1300"},{"amount":"0.0523","price":"1325.87"},{"amount":"0.1126","price":"1390.98"},{"amount":"0.1","price":"1412.3"},{"amount":"0.112","price":"1468.989"},{"amount":"0.2038914","price":"1500"},{"amount":"0.06","price":"1538.85"},{"amount":"0.0521","price":"1635.831"},{"amount":"0.1","price":"1700.01"},{"amount":"0.1","price":"1728.62"},{"amount":"0.11","price":"1805.812"},{"amount":"0.06","price":"1835.82"},{"amount":"0.051","price":"1865.02"},{"amount":"0.035","price":"1895.53"},{"amount":"0.3","price":"1989"},{"amount":"0.23","price":"1997"},{"amount":"0.5","price":"1999"},{"amount":"0.0123","price":"2011.7"},{"amount":"0.056","price":"2056.7"},{"amount":"0.041","price":"2121.13"},{"amount":"0.0312","price":"2178.98"},{"amount":"0.0412","price":"2207.7"}],"buy":[{"amount":"0.342045","price":"643.7"},{"amount":"0.11","price":"620"},{"amount":"0.12","price":"600"},{"amount":"0.32","price":"593.7"},{"amount":"0.22","price":"581.06"},{"amount":"0.227","price":"572.02"},{"amount":"0.3","price":"550.6"},{"amount":"0.23","price":"523.6"},{"amount":"0.27","price":"510.8"},{"amount":"0.6","price":"500"},{"amount":"0.35","price":"486.58"},{"amount":"0.25","price":"480.02"}]}}'
+      string: '{"result":{"buy":[{"amount":68.54,"price":0.29300},{"amount":63.45,"price":0.28220},{"amount":45.45,"price":0.28000},{"amount":52.45,"price":0.27550},{"amount":725.81546000,"price":0.27500},{"amount":68.45,"price":0.27250},{"amount":47.45,"price":0.27000},{"amount":34.98810000,"price":0.25000},{"amount":32.00,"price":0.24220},{"amount":66.00,"price":0.24000},{"amount":125.87,"price":0.23500},{"amount":98.44,"price":0.23220},{"amount":30.00,"price":0.23000},{"amount":90.00,"price":0.22700},{"amount":120.00,"price":0.22500},{"amount":100.00,"price":0.22330},{"amount":90.87,"price":0.22000},{"amount":135.45,"price":0.21770},{"amount":50.00,"price":0.21400},{"amount":120.00,"price":0.21350},{"amount":123.00,"price":0.21000},{"amount":30.00,"price":0.20770},{"amount":32.00,"price":0.20450},{"amount":63.00,"price":0.20330},{"amount":35.87,"price":0.20000},{"amount":76.00,"price":0.19300},{"amount":211.00,"price":0.19000},{"amount":135.45,"price":0.18500},{"amount":425.45,"price":0.18200},{"amount":102.45,"price":0.18100},{"amount":135.45,"price":0.17800},{"amount":186.00000000,"price":0.17660000},{"amount":86.45,"price":0.17400},{"amount":100.00,"price":0.17350},{"amount":100.00,"price":0.17220},{"amount":98.45000000,"price":0.17000000},{"amount":43.45000000,"price":0.16990000},{"amount":102.45000000,"price":0.16800000},{"amount":98.45000000,"price":0.16550000},{"amount":98.45000000,"price":0.16200000},{"amount":205.45000000,"price":0.16100000},{"amount":98.45000000,"price":0.16000000},{"amount":135.45000000,"price":0.15880000},{"amount":135.45000000,"price":0.15500000},{"amount":135.45000000,"price":0.15100000},{"amount":103.45000000,"price":0.14880000},{"amount":430.00000000,"price":0.14700000},{"amount":600.00000000,"price":0.14550000},{"amount":520.00000000,"price":0.14200000},{"amount":500.00000000,"price":0.14000000},{"amount":200.00000000,"price":0.13777000},{"amount":486.00000000,"price":0.13300000},{"amount":200.00000000,"price":0.13200000},{"amount":187.00000000,"price":0.13100000},{"amount":200.00000000,"price":0.13000000},{"amount":200.00000000,"price":0.12880000},{"amount":200.00000000,"price":0.12500000},{"amount":200.00000000,"price":0.12000000},{"amount":12.00000000,"price":0.11300000},{"amount":30.00000000,"price":0.10700000},{"amount":30.00000000,"price":0.10200000},{"amount":30.00000000,"price":0.10000000}],"sell":[{"amount":208.51990000,"price":0.30000},{"amount":12.97400000,"price":0.31499},{"amount":75.45000000,"price":0.31500000},{"amount":75.45000000,"price":0.32200000},{"amount":36.45000000,"price":0.33000000},{"amount":125.00000000,"price":0.33500000},{"amount":85.45000000,"price":0.34000000},{"amount":70.00000000,"price":0.34550000},{"amount":253.20000000,"price":0.35000000},{"amount":23.45000000,"price":0.35500000},{"amount":45.45000000,"price":0.36150000},{"amount":23.45000000,"price":0.36800000},{"amount":25.45000000,"price":0.37000000},{"amount":85.00000000,"price":0.37220000},{"amount":43.45000000,"price":0.37850000},{"amount":25.45000000,"price":0.38000000},{"amount":12.45000000,"price":0.38600000},{"amount":75.45000000,"price":0.39040000},{"amount":53.45000000,"price":0.39220000},{"amount":40.35000000,"price":0.39500000},{"amount":12.00000000,"price":0.39880000},{"amount":20.00000000,"price":0.40000000},{"amount":86.45000000,"price":0.40350000},{"amount":50.44000000,"price":0.40680000},{"amount":13.45000000,"price":0.41000000},{"amount":25.45000000,"price":0.41580000},{"amount":11.00000000,"price":0.42740000},{"amount":6.54000000,"price":0.43250000},{"amount":13.45000000,"price":0.44150000},{"amount":12.00000000,"price":0.44980000},{"amount":16.45000000,"price":0.45150000},{"amount":20.35000000,"price":0.46500000},{"amount":15.45000000,"price":0.47110000},{"amount":16.45000000,"price":0.47580000},{"amount":15.00000000,"price":0.49580000},{"amount":10.25000000,"price":0.49990000},{"amount":184.01124000,"price":0.50000},{"amount":13.54000000,"price":0.50240000},{"amount":10.00000000,"price":0.50580000},{"amount":15.44000000,"price":0.50980000},{"amount":5.45000000,"price":0.51025000},{"amount":10.00000000,"price":0.51580000},{"amount":13.65000000,"price":0.52050000},{"amount":16.35000000,"price":0.52850000},{"amount":5.45000000,"price":0.53000000},{"amount":50.00000000,"price":0.57050000},{"amount":35.45000000,"price":0.58000000},{"amount":9.69000000,"price":0.58990000},{"amount":12.00000000,"price":0.59000000},{"amount":35.45000000,"price":0.59250000},{"amount":11.00000000,"price":0.59580000},{"amount":13.00000000,"price":0.59880000},{"amount":10.00000000,"price":0.60250000},{"amount":13.00000000,"price":0.60350000},{"amount":23.45000000,"price":0.61120000},{"amount":2.45000000,"price":0.61850000},{"amount":15.00000000,"price":0.61980000},{"amount":35.45000000,"price":0.62000000},{"amount":15.45000000,"price":0.62250000},{"amount":13.45000000,"price":0.62850000},{"amount":10.00000000,"price":0.63000000},{"amount":35.45000000,"price":0.64000000},{"amount":42.00000000,"price":0.64350000},{"amount":35.45000000,"price":0.64550000},{"amount":12.45000000,"price":0.65500000},{"amount":13.45000000,"price":0.65550000},{"amount":15.45000000,"price":0.65880000},{"amount":20.00000000,"price":0.67700000},{"amount":30.00000000,"price":0.68000000},{"amount":15.45000000,"price":0.68250000},{"amount":13.00000000,"price":0.68990000},{"amount":12.00000000,"price":0.69220000},{"amount":15.00000000,"price":0.70000000},{"amount":15.00000000,"price":0.72250000},{"amount":23.45000000,"price":0.73150000},{"amount":25.45000000,"price":0.74115000},{"amount":10.00000000,"price":0.75340000},{"amount":10.00000000,"price":0.75990000},{"amount":15.45000000,"price":0.76120000},{"amount":10.00000000,"price":0.76550000}]},"message":"操作成功","statusCode":200}'
     http_version: 
-  recorded_at: Sun, 15 Jul 2018 15:02:33 GMT
+  recorded_at: Tue, 05 May 2020 08:38:16 GMT
 recorded_with: VCR 4.0.0

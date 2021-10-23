@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.btcbox.co.jp/api/v1/ticker/BTC
+    uri: https://www.btcbox.co.jp/api/v1/ticker?coin=btc
     body:
       encoding: UTF-8
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 25 Mar 2018 13:30:08 GMT
+      - Mon, 23 Sep 2019 06:53:21 GMT
       Content-Type:
       - text/html; charset=UTF-8
       Transfer-Encoding:
@@ -27,9 +27,10 @@ http_interactions:
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=dfece8f18cfcb9b1f61712d438de3d6741521984608; expires=Mon, 25-Mar-19
-        13:30:08 GMT; path=/; domain=.btcbox.co.jp; HttpOnly
-      - lang=ja_JP; expires=Wed, 22-Mar-2028 13:30:08 GMT; Max-Age=315360000; path=/
+      - __cfduid=db4d437e8db5bd8da10375d02b735f61b1569221601; expires=Tue, 22-Sep-20
+        06:53:21 GMT; path=/; domain=.btcbox.co.jp; HttpOnly
+      - lang=ja_JP; expires=Thu, 20-Sep-2029 06:53:21 GMT; Max-Age=315360000; path=/;
+        secure
       Vary:
       - Accept-Encoding
       Expect-Ct:
@@ -37,53 +38,10 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 4011baf92c032d0b-KUL
+      - 51aa99e11d7dc10e-KUL
     body:
       encoding: UTF-8
-      string: '{"high":943000,"low":886074,"buy":895903,"sell":898203,"last":896690,"vol":11218.9257}'
+      string: '{"high":1090666,"low":1064166,"buy":1065896,"sell":1071164,"last":1068099,"vol":1524.2297}'
     http_version: 
-  recorded_at: Sun, 25 Mar 2018 13:30:08 GMT
-- request:
-    method: get
-    uri: https://www.btcbox.co.jp/api/v1/ticker/BTC
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - curl/7.54.0
-      Connection:
-      - close
-      Host:
-      - www.btcbox.co.jp
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Sun, 25 Mar 2018 13:30:31 GMT
-      Content-Type:
-      - text/html; charset=UTF-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - close
-      Set-Cookie:
-      - __cfduid=d923981618aad61f9221e8c3c4707bbd71521984631; expires=Mon, 25-Mar-19
-        13:30:31 GMT; path=/; domain=.btcbox.co.jp; HttpOnly
-      - lang=ja_JP; expires=Wed, 22-Mar-2028 13:30:31 GMT; Max-Age=315360000; path=/
-      Vary:
-      - Accept-Encoding
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 4011bb8a3dae2d17-KUL
-    body:
-      encoding: UTF-8
-      string: '{"high":943000,"low":886074,"buy":896024,"sell":899123,"last":896690,"vol":11218.9257}'
-    http_version: 
-  recorded_at: Sun, 25 Mar 2018 13:30:31 GMT
+  recorded_at: Mon, 23 Sep 2019 06:53:18 GMT
 recorded_with: VCR 4.0.0

@@ -1,0 +1,37 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bybit.com/v2/public/symbols
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bybit.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 05 Sep 2019 03:29:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1047'
+      Connection:
+      - close
+      X-Via:
+      - 1.1 VMxjpSIN4ux55:2 (Cdn Cache Server V2.0), 1.1 VMtwtbTPE1ih126:5 (Cdn Cache
+        Server V2.0)
+    body:
+      encoding: UTF-8
+      string: '{"ret_code":0,"ret_msg":"OK","ext_code":"","ext_info":"","result":[{"name":"BTCUSD","base_currency":"BTC","quote_currency":"USD","price_scale":2,"price_filter":{"min_price":"0.5","max_price":"999999.5","tick_size":"0.5"},"lot_size_filter":{"max_trading_qty":1000000,"min_trading_qty":1,"qty_step":1}},{"name":"ETHUSD","base_currency":"ETH","quote_currency":"USD","price_scale":2,"price_filter":{"min_price":"0.05","max_price":"99999.95","tick_size":"0.05"},"lot_size_filter":{"max_trading_qty":1000000,"min_trading_qty":1,"qty_step":1}},{"name":"EOSUSD","base_currency":"EOS","quote_currency":"USD","price_scale":3,"price_filter":{"min_price":"0.001","max_price":"1999.999","tick_size":"0.001"},"lot_size_filter":{"max_trading_qty":1000000,"min_trading_qty":1,"qty_step":1}},{"name":"XRPUSD","base_currency":"XRP","quote_currency":"USD","price_scale":4,"price_filter":{"min_price":"0.0001","max_price":"199.9999","tick_size":"0.0001"},"lot_size_filter":{"max_trading_qty":1000000,"min_trading_qty":1,"qty_step":1}}],"time_now":"1567654169.418044"}'
+    http_version: 
+  recorded_at: Thu, 05 Sep 2019 03:29:29 GMT
+recorded_with: VCR 4.0.0

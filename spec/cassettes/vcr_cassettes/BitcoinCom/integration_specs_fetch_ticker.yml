@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.exchange.bitcoin.com/api/2/public/ticker/ETHBTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.exchange.bitcoin.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 24 Sep 2019 03:11:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '217'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d176e9a20a52df34cf350c192fe05c8ea1569294711; expires=Wed, 23-Sep-20
+        03:11:51 GMT; path=/; domain=.bitcoin.com; HttpOnly
+      Accept-Ranges:
+      - bytes
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51b192ca9b64dd5a-KUL
+    body:
+      encoding: UTF-8
+      string: '{"ask":"0.020709","bid":"0.020704","last":"0.020705","open":"0.020909","low":"0.020551","high":"0.021343","volume":"79913.8865","volumeQuote":"1678.3881344038","timestamp":"2019-09-24T03:11:51.208Z","symbol":"ETHBTC"}'
+    http_version: 
+  recorded_at: Tue, 24 Sep 2019 03:11:52 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kumex.com/api/v1/contracts/active
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.kumex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Date:
+      - Mon, 06 Apr 2020 06:30:10 GMT
+      Set-Cookie:
+      - AWSALB=VI60pHRBgsVqu1VlCwT3OmGZZV1P0/V7G/aoHoJPLTfp79QorJ7rEk0jD+S7JnCD5KwvFPj4vddSof35GW721/hfzpAkI0Z3NaWr36DcGOlatT8ICrj8FFg9biCW;
+        Expires=Mon, 13 Apr 2020 06:30:10 GMT; Path=/
+      - AWSALBCORS=VI60pHRBgsVqu1VlCwT3OmGZZV1P0/V7G/aoHoJPLTfp79QorJ7rEk0jD+S7JnCD5KwvFPj4vddSof35GW721/hfzpAkI0Z3NaWr36DcGOlatT8ICrj8FFg9biCW;
+        Expires=Mon, 13 Apr 2020 06:30:10 GMT; Path=/; SameSite=None; Secure
+      X-Trace-Id:
+      - ea0c16a45aec5043
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      Server:
+      - "-"
+      Web-Tag:
+      - kumex-api
+      X-Cache-Status:
+      - EXPIRED
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 c795828dd110eb9881b0d985e479eaac.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SIN2-C1
+      X-Amz-Cf-Id:
+      - UqMQJS99ha6a34IjsrWXkJLajFyx6ScOfjWDEdghHBZmp1z3YolebQ==
+    body:
+      encoding: UTF-8
+      string: '{"code":"200000","data":[{"symbol":"XBTUSDTM","takerFixFee":0E-10,"riskStep":1000000,"makerFixFee":0E-10,"isQuanto":true,"maxRiskLimit":2000000,"type":"FFWCSX","rootSymbol":"USDT","baseCurrency":"XBT","firstOpenDate":1585555200000,"tickSize":1.0,"initialMargin":0.01,"isDeleverage":true,"markMethod":"FairPrice","indexSymbol":".KXBTUSDT","minRiskLimit":2000000,"fundingBaseSymbol":".XBTINT8H","settlementFixFee":0E-10,"fairMethod":"FundingRate","settlementSymbol":"","takerFeeRate":0.00060,"fundingRateSymbol":".XBTUSDTMFPI8H","makerFeeRate":0.00020,"isInverse":false,"lotSize":1,"multiplier":0.001,"settlementFeeRate":0.0,"maxLeverage":100,"fundingQuoteSymbol":".USDTINT8H","quoteCurrency":"USDT","maxOrderQty":1000000,"maxPrice":1000000.0000000000,"maintainMargin":0.005,"status":"Open"},{"symbol":"XBTUSDM","takerFixFee":0E-10,"riskStep":100,"makerFixFee":0E-10,"isQuanto":false,"maxRiskLimit":200,"type":"FFWCSX","rootSymbol":"XBT","baseCurrency":"XBT","firstOpenDate":1552638575000,"tickSize":1.0,"initialMargin":0.01,"isDeleverage":true,"markMethod":"FairPrice","indexSymbol":".BXBT","minRiskLimit":200,"fundingBaseSymbol":".XBTINT8H","settlementFixFee":0E-10,"fairMethod":"FundingRate","takerFeeRate":0.00060,"fundingRateSymbol":".XBTUSDMFPI8H","makerFeeRate":0.00020,"isInverse":true,"lotSize":1,"multiplier":-1.0,"settlementFeeRate":0.0,"maxLeverage":100,"fundingQuoteSymbol":".USDINT8H","quoteCurrency":"USD","maxOrderQty":10000000,"maxPrice":1000000.0000000000,"maintainMargin":0.005,"status":"Open"},{"symbol":"XBTMM20","takerFixFee":0E-10,"riskStep":10,"makerFixFee":0E-10,"isQuanto":false,"settleDate":1593172800000,"maxRiskLimit":50,"type":"FFICSX","rootSymbol":"XBT","baseCurrency":"XBT","firstOpenDate":1576238400000,"tickSize":1.0,"initialMargin":0.01,"isDeleverage":true,"markMethod":"FairPrice","indexSymbol":".BXBT","minRiskLimit":50,"settlementFixFee":0E-10,"settlementSymbol":".BXBT30M","takerFeeRate":0.00060,"makerFeeRate":0.00020,"isInverse":true,"lotSize":1,"multiplier":-1.0,"settlementFeeRate":0.00025,"maxLeverage":20,"quoteCurrency":"USD","maxOrderQty":10000000,"maxPrice":1000000.0000000000,"maintainMargin":0.005,"status":"Open"},{"symbol":"XBTMU20","takerFixFee":0E-10,"riskStep":10,"makerFixFee":0E-10,"isQuanto":false,"settleDate":1601020800000,"maxRiskLimit":50,"type":"FFICSX","rootSymbol":"XBT","baseCurrency":"XBT","firstOpenDate":1584691200000,"tickSize":1.0,"initialMargin":0.01,"isDeleverage":true,"markMethod":"FairPrice","indexSymbol":".BXBT","minRiskLimit":50,"settlementFixFee":0E-10,"settlementSymbol":".BXBT30M","takerFeeRate":0.00060,"makerFeeRate":0.00020,"isInverse":true,"lotSize":1,"multiplier":-1.0,"settlementFeeRate":0.00025,"maxLeverage":20,"quoteCurrency":"USD","maxOrderQty":10000000,"maxPrice":1000000.0000000000,"maintainMargin":0.005,"status":"Open"}]}'
+    http_version: 
+  recorded_at: Mon, 06 Apr 2020 06:30:11 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.go.exchange/exchange/order-book/BTCUSDC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.go.exchange
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 25 Jul 2019 06:41:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d1cb55e93f3742446de9df9992118c2de1564036916; expires=Fri, 24-Jul-20
+        06:41:56 GMT; path=/; domain=.go.exchange; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9b701b05da14338ecddc53b23de55f7c
+      X-Frame-Options:
+      - DENY
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4fbc26a8d983c0ff-KUL
+    body:
+      encoding: UTF-8
+      string: '{"result":{"buy":[{"amount":"0.3732","price":"10051.53","symbol":"BTCUSDC","total":"3751.230996"},{"amount":"0.3993","price":"10051.03","symbol":"BTCUSDC","total":"4013.376279"},{"amount":"0.7341","price":"10050.53","symbol":"BTCUSDC","total":"7378.094073"},{"amount":"0.089","price":"10020.57","symbol":"BTCUSDC","total":"891.83073"},{"amount":"0.1666","price":"9966.63","symbol":"BTCUSDC","total":"1660.440558"},{"amount":"0.2664","price":"9910.62","symbol":"BTCUSDC","total":"2640.189168"},{"amount":"0.054","price":"9890.71","symbol":"BTCUSDC","total":"534.09834"},{"amount":"0.2986","price":"9874.04","symbol":"BTCUSDC","total":"2948.388344"},{"amount":"0.0809","price":"9829.36","symbol":"BTCUSDC","total":"795.195224"},{"amount":"0.4803","price":"9812.84","symbol":"BTCUSDC","total":"4713.107052"},{"amount":"0.8677","price":"9757.33","symbol":"BTCUSDC","total":"8466.435241"},{"amount":"0.145","price":"9687.43","symbol":"BTCUSDC","total":"1404.67735"},{"amount":"0.1722","price":"9557.97","symbol":"BTCUSDC","total":"1645.882434"},{"amount":"0.2839","price":"9452.56","symbol":"BTCUSDC","total":"2683.581784"},{"amount":"0.3341","price":"9378.32","symbol":"BTCUSDC","total":"3133.296712"},{"amount":"0.3942","price":"9294.50","symbol":"BTCUSDC","total":"3663.891900"},{"amount":"0.4249","price":"9221.42","symbol":"BTCUSDC","total":"3918.181358"},{"amount":"0.2664","price":"9102.90","symbol":"BTCUSDC","total":"2425.012560"},{"amount":"0.4994","price":"8975.56","symbol":"BTCUSDC","total":"4482.394664"},{"amount":"0.352473","price":"8500.00","symbol":"BTCUSDC","total":"2996.02050000"},{"amount":"0.03","price":"121.00","symbol":"BTCUSDC","total":"3.6300"}],"sell":[{"amount":"0.3045","price":"10077.70","symbol":"BTCUSDC","total":"3068.659650"},{"amount":"0.4067","price":"10078.20","symbol":"BTCUSDC","total":"4098.803940"},{"amount":"0.6046","price":"10078.70","symbol":"BTCUSDC","total":"6093.582020"},{"amount":"0.1014","price":"10115.50","symbol":"BTCUSDC","total":"1025.711700"},{"amount":"0.1445","price":"10162.24","symbol":"BTCUSDC","total":"1468.443680"},{"amount":"0.3869","price":"10240.71","symbol":"BTCUSDC","total":"3962.130699"},{"amount":"0.6843","price":"10249.36","symbol":"BTCUSDC","total":"7013.637048"},{"amount":"0.0626","price":"10287.67","symbol":"BTCUSDC","total":"644.008142"},{"amount":"0.8134","price":"10316.10","symbol":"BTCUSDC","total":"8391.115740"},{"amount":"0.5875","price":"10388.24","symbol":"BTCUSDC","total":"6103.091000"},{"amount":"0.0922","price":"10413.55","symbol":"BTCUSDC","total":"960.129310"},{"amount":"0.1981","price":"10516.09","symbol":"BTCUSDC","total":"2083.237429"},{"amount":"0.2864","price":"10639.86","symbol":"BTCUSDC","total":"3047.255904"},{"amount":"0.2111","price":"10658.95","symbol":"BTCUSDC","total":"2250.104345"},{"amount":"0.2529","price":"10820.40","symbol":"BTCUSDC","total":"2736.479160"},{"amount":"0.3293","price":"10916.35","symbol":"BTCUSDC","total":"3594.754055"},{"amount":"0.4242","price":"10959.92","symbol":"BTCUSDC","total":"4649.198064"},{"amount":"0.6226","price":"11130.66","symbol":"BTCUSDC","total":"6929.948916"},{"amount":"0.4485","price":"11256.17","symbol":"BTCUSDC","total":"5048.392245"}]}}'
+    http_version: 
+  recorded_at: Thu, 25 Jul 2019 06:41:56 GMT
+recorded_with: VCR 4.0.0

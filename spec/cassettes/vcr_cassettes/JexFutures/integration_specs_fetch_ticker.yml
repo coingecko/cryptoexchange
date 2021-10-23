@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.jex.com/api/v1/contract/ticker/24hr
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.jex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 20 Sep 2019 04:53:49 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d755993cb714fdf621ca86526170350dc1568955228; expires=Sat, 19-Sep-20
+        04:53:48 GMT; path=/; domain=.jex.com; HttpOnly
+      - aliyungf_tc=AQAAAChUMGO3bgcAchqeokm81vdm3zgP; Path=/; HttpOnly
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 519132a2bc822cbb-KUL
+    body:
+      encoding: UTF-8
+      string: '[{"symbol":"EOSUSDT","priceChange":"0.057","priceChangePercent":"0.0148","weightedAvgPrice":"3.901","lastPrice":"3.920","bidPrice":"3.917","bidQty":"5538.2","askPrice":"3.920","askQty":"2941.5","openPrice":"3.863","highPrice":"3.988","lowPrice":"3.810","volume":"20210072.5","quoteVolume":"78830318.138","openTime":1568955229499,"closeTime":1568868829497,"indexPrice":"3.9","markPrice":"3.9"},{"symbol":"ETHUSDT","priceChange":"7.58","priceChangePercent":"0.0360","weightedAvgPrice":"216.05","lastPrice":"218.24","bidPrice":"218.27","bidQty":"81.88","askPrice":"218.31","askQty":"103.16","openPrice":"210.66","highPrice":"224.05","lowPrice":"204.03","volume":"670496.87","quoteVolume":"144860633.11","openTime":1568955229499,"closeTime":1568868829499,"indexPrice":"218.33","markPrice":"218.36"},{"symbol":"BTCUSDT","priceChange":"330.8","priceChangePercent":"0.0335","weightedAvgPrice":"10033.9000","lastPrice":"10210.9","bidPrice":"10209.1","bidQty":"3.9205","askPrice":"10210.9","askQty":"6.5864","openPrice":"9880.1","highPrice":"10357.4","lowPrice":"9806.1","volume":"13926.2030","quoteVolume":"139733923.7","openTime":1568955229499,"closeTime":1568868829494,"indexPrice":"10202.0380","markPrice":"10202.8847"}]'
+    http_version: 
+  recorded_at: Fri, 20 Sep 2019 04:53:49 GMT
+recorded_with: VCR 4.0.0

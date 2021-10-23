@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.okcoin.com/api/spot/v3/instruments/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.okcoin.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 28 May 2019 08:03:34 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dcd1ce48cd4e5f86ec9f9e1d87f0d41451559030613; expires=Wed, 27-May-20
+        08:03:33 GMT; path=/; domain=.okcoin.com; HttpOnly
+      - locale=en_US; Max-Age=604800; Expires=Tue, 04-Jun-2019 08:03:34 GMT; Path=/
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      X-Kong-Upstream-Latency:
+      - '5'
+      X-Kong-Proxy-Latency:
+      - '0'
+      Via:
+      - kong/0.12.3
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ddeb6797f662cf1-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"best_ask":"8.287","best_bid":"8.261","instrument_id":"ETC-USD","product_id":"ETC-USD","last":"8.271","ask":"8.287","bid":"8.261","open_24h":"7.733","high_24h":"8.418","low_24h":"7.684","base_volume_24h":"4826.7448","timestamp":"2019-05-28T08:03:24.029Z","quote_volume_24h":"38365.759804"},{"best_ask":"8740.37","best_bid":"8738.21","instrument_id":"BTC-USD","product_id":"BTC-USD","last":"8740.97","ask":"8740.37","bid":"8738.21","open_24h":"8774","high_24h":"8935.22","low_24h":"8638.06","base_volume_24h":"140.9069","timestamp":"2019-05-28T08:03:15.465Z","quote_volume_24h":"1236942.77726"},{"best_ask":"114.47","best_bid":"114.36","instrument_id":"LTC-USD","product_id":"LTC-USD","last":"114.36","ask":"114.47","bid":"114.36","open_24h":"113.7","high_24h":"121.1","low_24h":"111.27","base_volume_24h":"2038.2202","timestamp":"2019-05-28T08:03:09.230Z","quote_volume_24h":"236069.223182"},{"best_ask":"271.05","best_bid":"271.04","instrument_id":"ETH-USD","product_id":"ETH-USD","last":"271.04","ask":"271.05","bid":"271.04","open_24h":"269.48","high_24h":"280.3","low_24h":"265.64","base_volume_24h":"712.9059","timestamp":"2019-05-28T07:56:40.261Z","quote_volume_24h":"192892.605672"},{"best_ask":"1.0009","best_bid":"0.9975","instrument_id":"TUSD-USD","product_id":"TUSD-USD","last":"1.003","ask":"1.0009","bid":"0.9975","open_24h":"1.003","high_24h":"1.003","low_24h":"1.003","base_volume_24h":"39.8802","timestamp":"2019-05-28T08:02:01.047Z","quote_volume_24h":"39.9998406"},{"best_ask":"1.0039","best_bid":"1.0035","instrument_id":"USDT-USD","product_id":"USDT-USD","last":"1.0035","ask":"1.0039","bid":"1.0035","open_24h":"1.0099","high_24h":"1.01","low_24h":"1.0021","base_volume_24h":"484454.2931","timestamp":"2019-05-28T08:02:13.732Z","quote_volume_24h":"487019.39565423"},{"best_ask":"84.97","best_bid":"84.82","instrument_id":"ZEC-USD","product_id":"ZEC-USD","last":"84.95","ask":"84.97","bid":"84.82","open_24h":"75.58","high_24h":"87.97","low_24h":"74.87","base_volume_24h":"154.426173","timestamp":"2019-05-28T08:03:25.610Z","quote_volume_24h":"12470.44605261"},{"best_ask":"0.0887","best_bid":"0.0886","instrument_id":"ADA-USD","product_id":"ADA-USD","last":"0.0886","ask":"0.0887","bid":"0.0886","open_24h":"0.086","high_24h":"0.0934","low_24h":"0.0854","base_volume_24h":"149125.19000927","timestamp":"2019-05-28T08:01:43.598Z","quote_volume_24h":"13368.1564872614"},{"best_ask":"0.1357","best_bid":"0.1355","instrument_id":"XLM-USD","product_id":"XLM-USD","last":"0.1356","ask":"0.1357","bid":"0.1355","open_24h":"0.1331","high_24h":"0.1445","low_24h":"0.1324","base_volume_24h":"143443.978","timestamp":"2019-05-28T08:03:20.532Z","quote_volume_24h":"19717.7154027"},{"best_ask":"0.3364","best_bid":"0.3354","instrument_id":"ZRX-USD","product_id":"ZRX-USD","last":"0.3367","ask":"0.3364","bid":"0.3354","open_24h":"0.3316","high_24h":"0.3413","low_24h":"0.3266","base_volume_24h":"619.432","timestamp":"2019-05-28T08:02:42.529Z","quote_volume_24h":"208.321933"},{"best_ask":"0.4283","best_bid":"0.4272","instrument_id":"XRP-USD","product_id":"XRP-USD","last":"0.4282","ask":"0.4283","bid":"0.4272","open_24h":"0.4111","high_24h":"0.4475","low_24h":"0.4078","base_volume_24h":"202819.78","timestamp":"2019-05-28T08:03:25.795Z","quote_volume_24h":"86057.3966625"},{"best_ask":"0.3699","best_bid":"0.3682","instrument_id":"BAT-USD","product_id":"BAT-USD","last":"0.336","ask":"0.3699","bid":"0.3682","open_24h":"0.336","high_24h":"0.336","low_24h":"0.336","base_volume_24h":"2593.8675","timestamp":"2019-05-28T08:03:25.334Z","quote_volume_24h":"871.53948"},{"best_ask":"1.0006","best_bid":"0.998","instrument_id":"PAX-USD","product_id":"PAX-USD","last":"0.99","ask":"1.0006","bid":"0.998","open_24h":"0.99","high_24h":"0.99","low_24h":"0.99","base_volume_24h":"10101.0101","timestamp":"2019-05-28T08:03:02.865Z","quote_volume_24h":"9999.999999"},{"best_ask":"1.0018","best_bid":"0.9487","instrument_id":"GUSD-USD","product_id":"GUSD-USD","last":"0.9518","ask":"1.0018","bid":"0.9487","open_24h":"0.9518","high_24h":"0.9518","low_24h":"0.9518","base_volume_24h":"20","timestamp":"2019-05-28T08:01:33.181Z","quote_volume_24h":"19.036"},{"best_ask":"1.0006","best_bid":"0.998","instrument_id":"USDC-USD","product_id":"USDC-USD","last":"0.99","ask":"1.0006","bid":"0.998","open_24h":"0.99","high_24h":"0.99","low_24h":"0.99","base_volume_24h":"10101.0101","timestamp":"2019-05-28T07:48:39.010Z","quote_volume_24h":"9999.999999"},{"best_ask":"433.39","best_bid":"432.21","instrument_id":"BCH-USD","product_id":"BCH-USD","last":"431.24","ask":"433.39","bid":"432.21","open_24h":"432.52","high_24h":"606.44","low_24h":"417.83","base_volume_24h":"402.914","timestamp":"2019-05-28T08:03:18.211Z","quote_volume_24h":"175472.259143"},{"best_ask":"120.84","best_bid":"119.91","instrument_id":"BSV-USD","product_id":"BSV-USD","last":"120.98","ask":"120.84","bid":"119.91","open_24h":"116.21","high_24h":"126.98","low_24h":"111.07","base_volume_24h":"536.9377","timestamp":"2019-05-28T08:03:24.077Z","quote_volume_24h":"62983.366974"},{"best_ask":"0.03466","best_bid":"0.03439","instrument_id":"TRX-USD","product_id":"TRX-USD","last":"0.03402","ask":"0.03466","bid":"0.03439","open_24h":"0.03223","high_24h":"0.03516","low_24h":"0.03223","base_volume_24h":"180284.177","timestamp":"2019-05-28T08:03:28.424Z","quote_volume_24h":"6222.584082894"},{"best_ask":"2.463","best_bid":"2.374","instrument_id":"GRIN-USD","product_id":"GRIN-USD","last":"1.903","ask":"2.463","bid":"2.374","open_24h":"1.903","high_24h":"1.903","low_24h":"1.903","base_volume_24h":"2.4172","timestamp":"2019-05-28T08:03:24.901Z","quote_volume_24h":"4.5999316"},{"best_ask":"28.26","best_bid":"28.24","instrument_id":"DCR-USD","product_id":"DCR-USD","last":"28.18","ask":"28.26","bid":"28.24","open_24h":"28.18","high_24h":"28.18","low_24h":"28.18","base_volume_24h":"1.83573199","timestamp":"2019-05-28T08:02:38.022Z","quote_volume_24h":"51.7309274782"},{"best_ask":"7.932","best_bid":"7.928","instrument_id":"EOS-USD","product_id":"EOS-USD","last":"7.931","ask":"7.932","bid":"7.928","open_24h":"6.981","high_24h":"8.207","low_24h":"6.957","base_volume_24h":"33816.1721","timestamp":"2019-05-28T08:03:27.130Z","quote_volume_24h":"261262.2374614"},{"best_ask":"8794.2","best_bid":"8679.6","instrument_id":"BTC-USDC","product_id":"BTC-USDC","last":"7236.1","ask":"8794.2","bid":"8679.6","open_24h":"7236.1","high_24h":"7236.1","low_24h":"7236.1","base_volume_24h":"0.6062","timestamp":"2019-05-28T08:03:19.790Z","quote_volume_24h":"4386.52382"},{"best_ask":"8795.2","best_bid":"8681","instrument_id":"BTC-TUSD","product_id":"BTC-TUSD","last":"7235.9","ask":"8795.2","bid":"8681","open_24h":"7235.9","high_24h":"7235.9","low_24h":"7235.9","base_volume_24h":"0.3424","timestamp":"2019-05-28T08:03:27.721Z","quote_volume_24h":"2477.57216"},{"best_ask":"8769","best_bid":"8651.5","instrument_id":"BTC-USDT","product_id":"BTC-USDT","last":"8660.4","ask":"8769","bid":"8651.5","open_24h":"8622.4","high_24h":"8810","low_24h":"8622.4","base_volume_24h":"1.7744","timestamp":"2019-05-28T08:03:22.689Z","quote_volume_24h":"15511.72866"},{"best_ask":"8794","best_bid":"8672.1","instrument_id":"BTC-PAX","product_id":"BTC-PAX","last":"7858.2","ask":"8794","bid":"8672.1","open_24h":"7858.2","high_24h":"7858.2","low_24h":"7858.2","base_volume_24h":"0.8631","timestamp":"2019-05-28T08:03:28.030Z","quote_volume_24h":"6782.41242"},{"best_ask":"8844.6","best_bid":"8724.5","instrument_id":"BTC-GUSD","product_id":"BTC-GUSD","last":"7277.8","ask":"8844.6","bid":"8724.5","open_24h":"7277.8","high_24h":"7277.8","low_24h":"7277.8","base_volume_24h":"0.0088","timestamp":"2019-05-28T08:03:22.492Z","quote_volume_24h":"64.04464"}]'
+    http_version: 
+  recorded_at: Tue, 28 May 2019 08:03:34 GMT
+recorded_with: VCR 4.0.0

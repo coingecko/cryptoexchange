@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.novadax.com/v1/market/depth?symbol=BTC_BRL
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.novadax.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 04 Dec 2019 05:48:05 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - AWSALB=cqr4bZu1HhWBIVmm1jQkj5efuhEWD88nHCnYEN3yrjucOxqKnVk437rCRui7aYsaNYlqHXmi7QLx56ic6QdIhAj7IY+xm1OUF7j0UufXNOwlVoJ+Alu7uJf2WkOv;
+        Expires=Wed, 11 Dec 2019 05:48:05 GMT; Path=/
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '{"code":"A10000","data":{"asks":[["30569.94","0.05057406"],["30572.68","0.13839945"],["30575.82","0.05865819"],["30577.66","0.08465786"],["30586","0.05433687"],["30588.67","0.1119524"],["30605.6","0.07896781"],["30608.51","0.02836842"],["30611.01","0.0713193"],["30617.64","0.03204279"]],"bids":[["30479.68","0.09794291"],["30478.27","0.09554775"],["30477.84","0.11676461"],["30477.28","0.03351839"],["30477.16","0.07055752"],["30469.01","0.11693052"],["30466.75","0.07370803"],["30455.68","0.06455737"],["30453.85","0.14119175"],["30444.24","0.06078736"]],"timestamp":1575438485073},"message":"Success"}'
+    http_version: 
+  recorded_at: Wed, 04 Dec 2019 05:48:05 GMT
+recorded_with: VCR 4.0.0

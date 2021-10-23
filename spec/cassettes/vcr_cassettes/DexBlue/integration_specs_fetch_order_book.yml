@@ -1,0 +1,564 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dex.blue/rest/v1/market/SNXDAI/orderbook
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dex.blue
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 02 Apr 2020 06:37:24 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d940881c5b07f0655ed85e76f78cf68761585809443; expires=Sat, 02-May-20
+        06:37:23 GMT; path=/; domain=.dex.blue; HttpOnly; SameSite=Lax; Secure
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      Feature-Policy:
+      - sync-xhr *
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      X-Frame-Options:
+      - sameorigin
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57d88a80982cdcca-SIN
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "status": 0,
+          "message": "success",
+          "data": [
+            {
+              "direction": "BUY",
+              "rate": "0.63637",
+              "amount": "142590000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.63551",
+              "amount": "321720000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.63143",
+              "amount": "1673200000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.62972",
+              "amount": "1959900000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.62777",
+              "amount": "2249100000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.62642",
+              "amount": "1565100000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.62455",
+              "amount": "2182400000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.62325",
+              "amount": "1524100000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.62189",
+              "amount": "1608200000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.62058",
+              "amount": "1549700000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.61855",
+              "amount": "2414000000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.61694",
+              "amount": "1929100000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.61535",
+              "amount": "1900800000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.61334",
+              "amount": "2441900000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.61158",
+              "amount": "2131500000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.60971",
+              "amount": "2291200000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.60853",
+              "amount": "1460600000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.60682",
+              "amount": "2110100000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.60521",
+              "amount": "1999800000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "BUY",
+              "rate": "0.60362",
+              "amount": "1988100000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.63904",
+              "amount": "115520000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.64004",
+              "amount": "174530000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.64427",
+              "amount": "1290500000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.64638",
+              "amount": "2331200000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.6483",
+              "amount": "2125300000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.64953",
+              "amount": "1357600000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.65121",
+              "amount": "1853800000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.65292",
+              "amount": "1871400000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.65459",
+              "amount": "1831800000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.65616",
+              "amount": "1713900000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.65786",
+              "amount": "1845600000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.65987",
+              "amount": "2187500000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.66157",
+              "amount": "1841500000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.6636",
+              "amount": "2191600000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.66536",
+              "amount": "1899000000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.66696",
+              "amount": "1720700000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.66868",
+              "amount": "1838000000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.66982",
+              "amount": "1218800000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.67119",
+              "amount": "1466600000000000000000",
+              "orderCount": 1
+            },
+            {
+              "direction": "SELL",
+              "rate": "0.67296",
+              "amount": "1880200000000000000000",
+              "orderCount": 1
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Thu, 02 Apr 2020 06:37:25 GMT
+- request:
+    method: get
+    uri: https://api.dex.blue/rest/v1/listed
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.dex.blue
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 02 Apr 2020 06:37:26 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc50cbef345ff48cef38df08cfcaa8b701585809445; expires=Sat, 02-May-20
+        06:37:25 GMT; path=/; domain=.dex.blue; HttpOnly; SameSite=Lax; Secure
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      Feature-Policy:
+      - sync-xhr *
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      X-Frame-Options:
+      - sameorigin
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57d88a8cabc7d9b8-SIN
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "status": 0,
+          "message": "success",
+          "data": {
+            "tokens": {
+              "OMG": {
+                "contract": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
+                "name": "OmiseGO",
+                "decimals": 18
+              },
+              "ZRX": {
+                "contract": "0xe41d2489571d322189246dafa5ebde1f4699f498",
+                "name": "0x",
+                "decimals": 18
+              },
+              "SNX": {
+                "contract": "0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f",
+                "name": "Synthetix",
+                "decimals": 18
+              },
+              "ETH": {
+                "contract": "0x0000000000000000000000000000000000000000",
+                "name": "Ethereum",
+                "decimals": 18
+              },
+              "SAI": {
+                "contract": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
+                "name": "Single Collateral DAI",
+                "decimals": 18
+              },
+              "MKR": {
+                "contract": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2",
+                "name": "Maker",
+                "decimals": 18
+              },
+              "REN": {
+                "contract": "0x408e41876cccdc0f92210600ef50372656052a38",
+                "name": "Republic",
+                "decimals": 18
+              },
+              "ENG": {
+                "contract": "0xf0ee6b27b759c9893ce4f094b49ad28fd15a23e4",
+                "name": "Enigma",
+                "decimals": 8
+              },
+              "GNO": {
+                "contract": "0x6810e776880c02933d47db1b9fc05908e5386b96",
+                "name": "Gnosis",
+                "decimals": 18
+              },
+              "TRB": {
+                "contract": "0x0ba45a8b5d5575935b8158a88c631e9f9c95a2e5",
+                "name": "Tellor",
+                "decimals": 18
+              },
+              "WBTC": {
+                "contract": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+                "name": "Wrapped Bitcoin",
+                "decimals": 8
+              },
+              "PNK": {
+                "contract": "0x93ed3fbe21207ec2e8f2d3c3de6e058cb73bc04d",
+                "name": "Kleros Pinakion",
+                "decimals": 18
+              },
+              "LINK": {
+                "contract": "0x514910771af9ca656af840dff83e8264ecf986ca",
+                "name": "Chainlink",
+                "decimals": 18
+              },
+              "sETH": {
+                "contract": "0x5e74c9036fb86bd7ecdcb084a0673efc32ea31cb",
+                "name": "Synthetic ETH",
+                "decimals": 18
+              },
+              "DAI": {
+                "contract": "0x6b175474e89094c44da98b954eedeac495271d0f",
+                "name": "Multi-Collateral DAI",
+                "decimals": 18
+              },
+              "REP": {
+                "contract": "0x1985365e9f78359a9b6ad760e32412f4a445e862",
+                "name": "Augur",
+                "decimals": 18
+              },
+              "BAT": {
+                "contract": "0x0d8775f648430679a709e98d2b0cb6250d2887ef",
+                "name": "Basic Attention Token",
+                "decimals": 18
+              }
+            },
+            "markets": {
+              "WBTCSAI": {
+                "traded": "WBTC",
+                "quote": "SAI"
+              },
+              "TRBETH": {
+                "traded": "TRB",
+                "quote": "ETH"
+              },
+              "WBTCDAI": {
+                "traded": "WBTC",
+                "quote": "DAI"
+              },
+              "BATDAI": {
+                "traded": "BAT",
+                "quote": "DAI"
+              },
+              "REPDAI": {
+                "traded": "REP",
+                "quote": "DAI"
+              },
+              "MKRDAI": {
+                "traded": "MKR",
+                "quote": "DAI"
+              },
+              "SAIDAI": {
+                "traded": "SAI",
+                "quote": "DAI"
+              },
+              "MKRETH": {
+                "traded": "MKR",
+                "quote": "ETH"
+              },
+              "LINKDAI": {
+                "traded": "LINK",
+                "quote": "DAI"
+              },
+              "SNXDAI": {
+                "traded": "SNX",
+                "quote": "DAI"
+              },
+              "GNOETH": {
+                "traded": "GNO",
+                "quote": "ETH"
+              },
+              "sETHETH": {
+                "traded": "sETH",
+                "quote": "ETH"
+              },
+              "PNKETH": {
+                "traded": "PNK",
+                "quote": "ETH"
+              },
+              "RENETH": {
+                "traded": "REN",
+                "quote": "ETH"
+              },
+              "ETHWBTC": {
+                "traded": "ETH",
+                "quote": "WBTC"
+              },
+              "RENDAI": {
+                "traded": "REN",
+                "quote": "DAI"
+              },
+              "LINKETH": {
+                "traded": "LINK",
+                "quote": "ETH"
+              },
+              "MKRSAI": {
+                "traded": "MKR",
+                "quote": "SAI"
+              },
+              "ETHDAI": {
+                "traded": "ETH",
+                "quote": "DAI"
+              },
+              "SNXETH": {
+                "traded": "SNX",
+                "quote": "ETH"
+              },
+              "OMGETH": {
+                "traded": "OMG",
+                "quote": "ETH"
+              },
+              "ZRXETH": {
+                "traded": "ZRX",
+                "quote": "ETH"
+              },
+              "ETHSAI": {
+                "traded": "ETH",
+                "quote": "SAI"
+              },
+              "REPETH": {
+                "traded": "REP",
+                "quote": "ETH"
+              },
+              "ENGETH": {
+                "traded": "ENG",
+                "quote": "ETH"
+              },
+              "ZRXDAI": {
+                "traded": "ZRX",
+                "quote": "DAI"
+              },
+              "BATETH": {
+                "traded": "BAT",
+                "quote": "ETH"
+              }
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Thu, 02 Apr 2020 06:37:26 GMT
+recorded_with: VCR 4.0.0

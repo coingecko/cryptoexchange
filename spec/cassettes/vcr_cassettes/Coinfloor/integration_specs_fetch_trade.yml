@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://webapi.coinfloor.co.uk/bist/XBT/GBP/transactions/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - webapi.coinfloor.co.uk
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 24 Oct 2019 06:33:56 GMT
+      Content-Type:
+      - application/json; charset=US-ASCII
+      Content-Length:
+      - '791'
+      Connection:
+      - close
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31557600
+    body:
+      encoding: US-ASCII
+      string: '[{"date":1571898672,"tid":1571898672329560,"price":"5733.00","amount":"0.9997"},{"date":1571898085,"tid":1571898085732554,"price":"5743.00","amount":"0.9999"},{"date":1571897810,"tid":1571897810777992,"price":"5759.00","amount":"0.0102"},{"date":1571897510,"tid":1571897510454589,"price":"5760.00","amount":"0.0200"},{"date":1571897452,"tid":1571897452402133,"price":"5761.00","amount":"0.0072"},{"date":1571896483,"tid":1571896483186627,"price":"5768.00","amount":"0.0083"},{"date":1571896403,"tid":1571896403116522,"price":"5765.00","amount":"0.0299"},{"date":1571895707,"tid":1571895707521940,"price":"5770.00","amount":"0.0099"},{"date":1571895599,"tid":1571895599339745,"price":"5771.00","amount":"0.0200"},{"date":1571895587,"tid":1571895587847377,"price":"5774.00","amount":"0.0200"}]'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2019 06:33:56 GMT
+recorded_with: VCR 4.0.0

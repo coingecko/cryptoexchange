@@ -1,0 +1,109 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ftx.com/api/futures/BTC-1227/stats
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ftx.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 29 Sep 2019 16:39:42 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db5ff8f293930eac7008e43e51965d2e91569775182; expires=Mon, 28-Sep-20
+        16:39:42 GMT; path=/; domain=.ftx.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=10
+      Cf-Cache-Status:
+      - EXPIRED
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51df650b9e0bd9c4-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":{"openInterest":653.5539,"predictedExpirationPrice":8022.09237239,"volume":695.2278},"success":true}
+
+        '
+    http_version: 
+  recorded_at: Sun, 29 Sep 2019 16:39:40 GMT
+- request:
+    method: get
+    uri: https://ftx.com/api/futures/BTC-1227
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - ftx.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 29 Sep 2019 16:39:42 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d28bee870ba5eef5ea90d888b0734632a1569775182; expires=Mon, 28-Sep-20
+        16:39:42 GMT; path=/; domain=.ftx.com; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=0
+      Cf-Cache-Status:
+      - MISS
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51df650ccc13d9f8-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":{"ask":8070.75,"bid":8070.0,"change1h":0.006016209476309227,"change24h":-0.01009140543524937,"description":"Bitcoin
+        December 2019 Futures","enabled":true,"expired":false,"expiry":"2019-12-27T03:00:00+00:00","expiryDescription":"December
+        2019","index":8022.09237239,"indexAdjustment":0.0,"last":8066.0,"lowerBound":7621.0,"mark":8068.25,"name":"BTC-1227","perpetual":false,"postOnly":false,"priceIncrement":0.25,"sizeIncrement":0.0001,"type":"future","underlying":"BTC","underlyingDescription":"Bitcoin","upperBound":8472.5,"volumeUsd24h":5679521.0965},"success":true}
+
+        '
+    http_version: 
+  recorded_at: Sun, 29 Sep 2019 16:39:41 GMT
+recorded_with: VCR 4.0.0

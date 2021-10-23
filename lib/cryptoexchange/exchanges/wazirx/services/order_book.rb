@@ -14,7 +14,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Wazirx::Market::API_URL2}/depth?limit=100&market=#{market_pair.base.downcase}#{market_pair.target.downcase}"
+          "#{Cryptoexchange::Exchanges::Wazirx::Market::API_URL}/depth?market=#{market_pair.base.downcase}#{market_pair.target.downcase}"
         end
 
         def adapt(output, market_pair)

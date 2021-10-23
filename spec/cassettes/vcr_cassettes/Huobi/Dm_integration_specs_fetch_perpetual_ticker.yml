@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hbdm.com/swap-ex/market/detail/merged?contract_code=ETH-USD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hbdm.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Apr 2020 11:23:49 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Content-Length:
+      - '291'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dc3418cba48fe6a4cb99a7d844d68fdcd1585913028; expires=Sun, 03-May-20
+        11:23:48 GMT; path=/; domain=.hbdm.com; HttpOnly; SameSite=Lax
+      Accept-Language:
+      - en-US
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57e26b6e7aa42ce5-KUL
+    body:
+      encoding: UTF-8
+      string: '{"ch":"market.ETH-USD.detail.merged","status":"ok","tick":{"amount":"476.273554886025999507281020778680460635","ask":[144.95,7],"bid":[144.87,700],"close":"144.91","count":257,"high":"146.64","id":1585913029,"low":"144.23","open":"144.28","ts":1585913029179,"vol":"6926"},"ts":1585913029179}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2020 11:23:44 GMT
+recorded_with: VCR 4.0.0

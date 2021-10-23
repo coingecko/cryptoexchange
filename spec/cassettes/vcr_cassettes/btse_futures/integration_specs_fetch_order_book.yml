@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.btse.com/futures/api/v1/orderbook/BTCZ19
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.btse.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 15 Nov 2019 09:46:18 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '727'
+      Connection:
+      - close
+      Set-Cookie:
+      - incap_ses_1234_1816178=wosFEazE/k6+M7oR2AwgEepzzl0AAAAAm5XmAiwlakJXJIBStIYUfQ==;
+        path=/; Domain=.btse.com
+      - nlbi_1816178=NnW3DgBbyGoqqwHBCV6+vwAAAABRZbwDXffu8/eSwBeOJFiu; path=/; Domain=.btse.com
+      - visid_incap_1816178=KqlNvn43S4yh4lxx2523E+pzzl0AAAAAQUIPAAAAAADOD0QgmiuGYxhMd2+1lC9t;
+        expires=Sat, 14 Nov 2020 09:16:33 GMT; path=/; Domain=.btse.com
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Iinfo:
+      - 8-25605211-25605229 NNNN CT(51 52 0) RT(1573811177354 544) q(0 0 2 -1) r(2
+        2) U5
+      X-Cdn:
+      - Incapsula
+    body:
+      encoding: ASCII-8BIT
+      string: '{"buyQuote":[{"price":"8586.0","size":"1519"},{"price":"8585.5","size":"1549"},{"price":"8585.0","size":"1644"},{"price":"8584.5","size":"1027"},{"price":"8584.0","size":"13926"},{"price":"8583.5","size":"5044"},{"price":"8571.5","size":"545"},{"price":"8560.5","size":"466"},{"price":"8556.0","size":"1696"},{"price":"8555.0","size":"718"}],"sellQuote":[{"price":"8620.5","size":"2074"},{"price":"8620.0","size":"571"},{"price":"8619.5","size":"666"},{"price":"8618.0","size":"1683"},{"price":"8611.5","size":"530"},{"price":"8593.0","size":"8663"},{"price":"8592.5","size":"5873"},{"price":"8592.0","size":"6001"},{"price":"8591.5","size":"1583"},{"price":"8591.0","size":"1039"}],"timestamp":1573811178366,"symbol":"BTCZ19"}'
+    http_version: 
+  recorded_at: Fri, 15 Nov 2019 09:46:19 GMT
+recorded_with: VCR 4.0.0

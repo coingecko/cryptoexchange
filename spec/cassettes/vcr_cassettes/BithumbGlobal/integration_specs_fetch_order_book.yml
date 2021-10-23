@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://global-openapi.bithumb.pro/openapi/v1/spot/orderBook?symbol=BTC-USDT
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - global-openapi.bithumb.pro
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 16 May 2019 09:15:58 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dee2d1520c757d47fbe929adeb9d012fe1557998158; expires=Fri, 15-May-20
+        09:15:58 GMT; path=/; domain=.bithumb.pro; HttpOnly; Secure
+      Vary:
+      - Accept-Encoding
+      X-Application-Context:
+      - cex_transaction:prod:8050
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d7c400b9fbd3148-SIN
+    body:
+      encoding: UTF-8
+      string: '{"data":{"symbol":"BTC-USDT","b":[["8029.9","0.0471497"],["8029.3","0.0478376"],["8028.4","0.0341822"],["8028.3","0.0268901"],["8027.9","0.0283398"],["8027.8","0.0473222"],["8027.7","0.0268274"],["8027.1","0.0324841"],["8027","0.0328484"],["8026.9","0.0388673"],["8026.8","0.0464999"],["8026.2","0.0456493"],["8025.7","0.0277508"],["8025.3","0.0432481"],["8025.2","0.0245114"],["8022.9","0.0341767"],["7942.2","0.0448726"],["7861.5","0.0418111"],["7780.8","0.0207909"],["7700.2","0.0490096"],["7000","0.0311448"],["6666","0.3625352"],["5555","0.8830836"],["1","5.2990007"]],"ver":"5051490","s":[["8086.3","0.0244483"],["8087","0.0448001"],["8087.5","0.0322782"],["8087.8","0.0479813"],["8087.9","0.0239435"],["8089.8","0.0456442"],["8090.7","0.0447512"],["8090.8","0.0252504"],["8090.9","0.025709"],["8091","0.0463642"],["8091.1","0.0473365"],["8091.2","0.0477121"],["8091.7","0.0301246"],["8091.8","0.0404165"],["8092","0.0251994"],["8172.5","0.0412413"],["8253","0.0375843"],["8333.5","0.04948"],["8414","0.022223"],["8494.5","0.0294277"]]},"code":"0","msg":"success","timestamp":1557998158680}'
+    http_version: 
+  recorded_at: Thu, 16 May 2019 09:15:58 GMT
+recorded_with: VCR 4.0.0

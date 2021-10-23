@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.chiliz.net/openapi/quote/v1/ticker/24hr
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.chiliz.net
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '7062'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Date:
+      - Fri, 17 Apr 2020 01:32:31 GMT
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 fedf532d69f6dd10ea788e532bd23298.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50-C1
+      X-Amz-Cf-Id:
+      - pEP1iwfDqhtG-XtTzIRz7FFmcnFKLq9_ITzmBLCR9iu1Esk6dKVhgw==
+    body:
+      encoding: UTF-8
+      string: '[{"time":1587087151659,"symbol":"ETCBTC","volume":"3555940.7128","quoteVolume":"2727.0068343769","lastPrice":"0.000769","highPrice":"0.000784","lowPrice":"0.000752","openPrice":"0.000755"},{"time":1587087151990,"symbol":"CAICHZ","volume":"0","quoteVolume":"0","lastPrice":"0","highPrice":"0","lowPrice":"0","openPrice":"0"},{"time":1587087123050,"symbol":"EOSUSDT","volume":"2692347.7495","quoteVolume":"7008810.07092761","lastPrice":"2.6566","highPrice":"2.7168","lowPrice":"2.3792","openPrice":"2.39"},{"time":1587087151990,"symbol":"OGCHZ","volume":"0","quoteVolume":"0","lastPrice":"0","highPrice":"0","lowPrice":"0","openPrice":"0"},{"time":1587087151990,"symbol":"PSGCHZ","volume":"0","quoteVolume":"0","lastPrice":"0","highPrice":"0","lowPrice":"0","openPrice":"0"},{"time":1587087146907,"symbol":"XRPBTC","volume":"47330915","quoteVolume":"1275.66425394","lastPrice":"0.00002691","highPrice":"0.00002719","lowPrice":"0.00002676","openPrice":"0.0000269"},{"time":1587087129737,"symbol":"CHZBTC","volume":"223275.99","quoteVolume":"0.2105516273","lastPrice":"0.00000098","highPrice":"0.000001","lowPrice":"0.00000091","openPrice":"0.00000091"},{"time":1587087150157,"symbol":"ALGOBTC","volume":"7143603.88","quoteVolume":"183.9823603577","lastPrice":"0.0000261","highPrice":"0.0000267","lowPrice":"0.00002516","openPrice":"0.00002529"},{"time":1587087149736,"symbol":"EOSETH","volume":"481400.8111","quoteVolume":"7486.6581721437","lastPrice":"0.015392","highPrice":"0.016133","lowPrice":"0.015311","openPrice":"0.015683"},{"time":1587087150988,"symbol":"QTUMUSDT","volume":"4885046.63","quoteVolume":"6657647.658711","lastPrice":"1.4011","highPrice":"1.4336","lowPrice":"1.2819","openPrice":"1.2912"},{"time":1587087151546,"symbol":"TRXBTC","volume":"281902349.51","quoteVolume":"517.081166408655","lastPrice":"0.0000018342","highPrice":"0.0000018573","lowPrice":"0.0000018018","openPrice":"0.0000018246"},{"time":1587087149845,"symbol":"BTCUSDT","volume":"86954.905352","quoteVolume":"605238664.70728589","lastPrice":"7106.58","highPrice":"7190.92","lowPrice":"6595.96","openPrice":"6624.77"},{"time":1587087150773,"symbol":"EOSBTC","volume":"2190190.2992","quoteVolume":"817.655605946258","lastPrice":"0.00037386","highPrice":"0.00038359","lowPrice":"0.00035916","openPrice":"0.0003609"},{"time":1587087140282,"symbol":"JUVCHZ","volume":"129761.03","quoteVolume":"45445237.0375","lastPrice":"366.83","highPrice":"500","lowPrice":"65.05","openPrice":"356.2"},{"time":1587087122319,"symbol":"QTUMBTC","volume":"1771119.96","quoteVolume":"348.24372975","lastPrice":"0.000198","highPrice":"0.000201","lowPrice":"0.000192","openPrice":"0.000194"},{"time":1587087151990,"symbol":"ASRCHZ","volume":"0","quoteVolume":"0","lastPrice":"0","highPrice":"0","lowPrice":"0","openPrice":"0"},{"time":1587087151990,"symbol":"BARCHZ","volume":"0","quoteVolume":"0","lastPrice":"0","highPrice":"0","lowPrice":"0","openPrice":"0"},{"time":1587087150457,"symbol":"TRXETH","volume":"111455282.73","quoteVolume":"8524.4302363603","lastPrice":"0.0000756","highPrice":"0.00007938","lowPrice":"0.00007461","openPrice":"0.00007917"},{"time":1587087123698,"symbol":"VOLUSDT","volume":"0","quoteVolume":"0","lastPrice":"0.004091","highPrice":"0.004091","lowPrice":"0.004091","openPrice":"0.004091"},{"time":1587087121147,"symbol":"ETCUSDT","volume":"492015.1326","quoteVolume":"2632826.33915735","lastPrice":"5.4691","highPrice":"5.559","lowPrice":"4.9842","openPrice":"4.9993"},{"time":1587087142921,"symbol":"QTUMETH","volume":"237443.1141","quoteVolume":"1945.0094426979","lastPrice":"0.00814","highPrice":"0.008501","lowPrice":"0.007933","openPrice":"0.008474"},{"time":1587087122412,"symbol":"LTCUSDT","volume":"15605.3074","quoteVolume":"656467.328451","lastPrice":"42.49","highPrice":"43.66","lowPrice":"38.74","openPrice":"38.76"},{"time":1587087151990,"symbol":"WHUCHZ","volume":"0","quoteVolume":"0","lastPrice":"0","highPrice":"0","lowPrice":"0","openPrice":"0"},{"time":1587087151102,"symbol":"ETHUSDT","volume":"780135.5989","quoteVolume":"131070050.373142","lastPrice":"172.46","highPrice":"174.69","lowPrice":"152.06","openPrice":"152.33"},{"time":1587087124161,"symbol":"XRPUSDT","volume":"12995322.24","quoteVolume":"2437106.6218478","lastPrice":"0.1912","highPrice":"0.19289","lowPrice":"0.17743","openPrice":"0.17829"},{"time":1587087151360,"symbol":"ETHBTC","volume":"258033.1557","quoteVolume":"6168.9650167872","lastPrice":"0.024268","highPrice":"0.024725","lowPrice":"0.022969","openPrice":"0.023008"},{"time":1587087151541,"symbol":"ALGOUSDT","volume":"12372051.93","quoteVolume":"2213671.02276","lastPrice":"0.1841","highPrice":"0.1901","lowPrice":"0.1658","openPrice":"0.1666"},{"time":1587087146128,"symbol":"ONTUSDT","volume":"3503169.72","quoteVolume":"1401592.428268","lastPrice":"0.4118","highPrice":"0.4205","lowPrice":"0.3751","openPrice":"0.3775"},{"time":1587087121450,"symbol":"TRXUSDT","volume":"27876494.53","quoteVolume":"352885.23452844","lastPrice":"0.013038","highPrice":"0.013207","lowPrice":"0.011957","openPrice":"0.012043"},{"time":1587087151705,"symbol":"XRPETH","volume":"24899154.295","quoteVolume":"27948.5474845997","lastPrice":"0.0011093","highPrice":"0.0011735","lowPrice":"0.001097","openPrice":"0.0011712"},{"time":1587087147609,"symbol":"LTCETH","volume":"109506.9437","quoteVolume":"27343.9503688702","lastPrice":"0.246115","highPrice":"0.257126","lowPrice":"0.245735","openPrice":"0.253854"},{"time":1587087125722,"symbol":"BTP1CHZ","volume":"0","quoteVolume":"0","lastPrice":"20.51","highPrice":"20.51","lowPrice":"20.51","openPrice":"20.51"},{"time":1587087151990,"symbol":"BSVUSDT","volume":"0","quoteVolume":"0","lastPrice":"0","highPrice":"0","lowPrice":"0","openPrice":"0"},{"time":1587087149568,"symbol":"ALGOETH","volume":"4115783.9502","quoteVolume":"4420.6455261605","lastPrice":"0.00106","highPrice":"0.001118","lowPrice":"0.001034","openPrice":"0.001107"},{"time":1587087151990,"symbol":"BSVBTC","volume":"0","quoteVolume":"0","lastPrice":"0","highPrice":"0","lowPrice":"0","openPrice":"0"},{"time":1587087151990,"symbol":"ATMCHZ","volume":"0","quoteVolume":"0","lastPrice":"0","highPrice":"0","lowPrice":"0","openPrice":"0"},{"time":1587087149279,"symbol":"ETCETH","volume":"216814.872","quoteVolume":"6931.976144757","lastPrice":"0.031626","highPrice":"0.032984","lowPrice":"0.031039","openPrice":"0.032763"},{"time":1587087150663,"symbol":"LTCBTC","volume":"212235.6306","quoteVolume":"1270.6633371024","lastPrice":"0.005971","highPrice":"0.006139","lowPrice":"0.005824","openPrice":"0.005845"},{"time":1587087151990,"symbol":"GALCHZ","volume":"0","quoteVolume":"0","lastPrice":"0","highPrice":"0","lowPrice":"0","openPrice":"0"},{"time":1587087150541,"symbol":"BTMETH","volume":"15326369.276","quoteVolume":"5268.101946058","lastPrice":"0.000344","highPrice":"0.000363","lowPrice":"0.000331","openPrice":"0.000357"},{"time":1587087127021,"symbol":"ONTBTC","volume":"1208538.1","quoteVolume":"69.5541734687","lastPrice":"0.00005789","highPrice":"0.00005868","lowPrice":"0.00005671","openPrice":"0.00005696"}]'
+    http_version: 
+  recorded_at: Fri, 17 Apr 2020 01:32:29 GMT
+recorded_with: VCR 4.0.0

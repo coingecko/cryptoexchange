@@ -1,0 +1,121 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hbdm.com/swap-api/v1/swap_contract_info
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hbdm.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Apr 2020 11:23:48 GMT
+      Content-Type:
+      - text/plain;charset=UTF-8
+      Content-Length:
+      - '397'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3875a1e6cd67db4d870f703cb957fe211585913028; expires=Sun, 03-May-20
+        11:23:48 GMT; path=/; domain=.hbdm.com; HttpOnly; SameSite=Lax
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Reqid:
+      - b1ad1e4418304034beeae63cdb60357c
+      Ratelimit-Remaining:
+      - '59'
+      Ratelimit-Reset:
+      - '1585913031292'
+      Ratelimit-Interval:
+      - '3000'
+      Ratelimit-Limit:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57e26b68fc94dd4a-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","data":[{"symbol":"BTC","contract_code":"BTC-USD","contract_size":100.000000000000000000,"price_tick":0.100000000000000000,"create_date":"20200325","contract_status":1,"settlement_date":"1585915200000"},{"symbol":"ETH","contract_code":"ETH-USD","contract_size":10,"price_tick":0.01,"create_date":"20200403","contract_status":1,"settlement_date":"1585915200000"}],"ts":1585913028293}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2020 11:23:43 GMT
+- request:
+    method: get
+    uri: https://api.hbdm.com/api/v1/contract_contract_info
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hbdm.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Apr 2020 11:23:48 GMT
+      Content-Type:
+      - text/plain;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=ddb738bc0fee5b7e9572b255e50eb73741585913028; expires=Sun, 03-May-20
+        11:23:48 GMT; path=/; domain=.hbdm.com; HttpOnly; SameSite=Lax
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Reqid:
+      - 5f3db1f012164a35ba68ec33fe58f9d6
+      Ratelimit-Remaining:
+      - '59'
+      Ratelimit-Reset:
+      - '1585913031711'
+      Ratelimit-Interval:
+      - '3000'
+      Ratelimit-Limit:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57e26b6b9cc42cd3-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","data":[{"symbol":"BTC","contract_code":"BTC200410","contract_type":"this_week","contract_size":100.000000000000000000,"price_tick":0.010000000000000000,"delivery_date":"20200410","create_date":"20200327","contract_status":1},{"symbol":"BTC","contract_code":"BTC200417","contract_type":"next_week","contract_size":100.000000000000000000,"price_tick":0.010000000000000000,"delivery_date":"20200417","create_date":"20200403","contract_status":1},{"symbol":"BTC","contract_code":"BTC200626","contract_type":"quarter","contract_size":100.000000000000000000,"price_tick":0.010000000000000000,"delivery_date":"20200626","create_date":"20200313","contract_status":1},{"symbol":"ETH","contract_code":"ETH200410","contract_type":"this_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200410","create_date":"20200327","contract_status":1},{"symbol":"ETH","contract_code":"ETH200417","contract_type":"next_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200417","create_date":"20200403","contract_status":1},{"symbol":"ETH","contract_code":"ETH200626","contract_type":"quarter","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200626","create_date":"20200313","contract_status":1},{"symbol":"EOS","contract_code":"EOS200410","contract_type":"this_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200410","create_date":"20200327","contract_status":1},{"symbol":"EOS","contract_code":"EOS200417","contract_type":"next_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200417","create_date":"20200403","contract_status":1},{"symbol":"EOS","contract_code":"EOS200626","contract_type":"quarter","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200626","create_date":"20200313","contract_status":1},{"symbol":"LTC","contract_code":"LTC200410","contract_type":"this_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200410","create_date":"20200327","contract_status":1},{"symbol":"LTC","contract_code":"LTC200417","contract_type":"next_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200417","create_date":"20200403","contract_status":1},{"symbol":"LTC","contract_code":"LTC200626","contract_type":"quarter","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200626","create_date":"20200313","contract_status":1},{"symbol":"BCH","contract_code":"BCH200410","contract_type":"this_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200410","create_date":"20200327","contract_status":1},{"symbol":"BCH","contract_code":"BCH200417","contract_type":"next_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200417","create_date":"20200403","contract_status":1},{"symbol":"BCH","contract_code":"BCH200626","contract_type":"quarter","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200626","create_date":"20200313","contract_status":1},{"symbol":"XRP","contract_code":"XRP200410","contract_type":"this_week","contract_size":10.000000000000000000,"price_tick":0.000100000000000000,"delivery_date":"20200410","create_date":"20200327","contract_status":1},{"symbol":"XRP","contract_code":"XRP200417","contract_type":"next_week","contract_size":10.000000000000000000,"price_tick":0.000100000000000000,"delivery_date":"20200417","create_date":"20200403","contract_status":1},{"symbol":"XRP","contract_code":"XRP200626","contract_type":"quarter","contract_size":10.000000000000000000,"price_tick":0.000100000000000000,"delivery_date":"20200626","create_date":"20200313","contract_status":1},{"symbol":"ETC","contract_code":"ETC200410","contract_type":"this_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200410","create_date":"20200327","contract_status":1},{"symbol":"ETC","contract_code":"ETC200417","contract_type":"next_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200417","create_date":"20200403","contract_status":1},{"symbol":"ETC","contract_code":"ETC200626","contract_type":"quarter","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200626","create_date":"20200313","contract_status":1},{"symbol":"TRX","contract_code":"TRX200410","contract_type":"this_week","contract_size":10.000000000000000000,"price_tick":0.000010000000000000,"delivery_date":"20200410","create_date":"20200327","contract_status":1},{"symbol":"TRX","contract_code":"TRX200417","contract_type":"next_week","contract_size":10.000000000000000000,"price_tick":0.000010000000000000,"delivery_date":"20200417","create_date":"20200403","contract_status":1},{"symbol":"TRX","contract_code":"TRX200626","contract_type":"quarter","contract_size":10.000000000000000000,"price_tick":0.000010000000000000,"delivery_date":"20200626","create_date":"20200313","contract_status":1},{"symbol":"BSV","contract_code":"BSV200410","contract_type":"this_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200410","create_date":"20200327","contract_status":1},{"symbol":"BSV","contract_code":"BSV200417","contract_type":"next_week","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200417","create_date":"20200403","contract_status":1},{"symbol":"BSV","contract_code":"BSV200626","contract_type":"quarter","contract_size":10.000000000000000000,"price_tick":0.001000000000000000,"delivery_date":"20200626","create_date":"20200313","contract_status":1}],"ts":1585913028713}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2020 11:23:44 GMT
+recorded_with: VCR 4.0.0

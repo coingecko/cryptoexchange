@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bitforex.com/contract/mkapi/v2//tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bitforex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 25 Sep 2019 10:02:27 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - HttpOnly=true
+      - __cfduid=d35941cfe0d6cd95034b42359a517ad3f1569405747; expires=Thu, 24-Sep-20
+        10:02:27 GMT; path=/; domain=.bitforex.com; HttpOnly
+      - secure=true
+      X-B3-Sampled:
+      - '1'
+      X-B3-Spanid:
+      - 9a20a75c1c8afc56
+      X-B3-Traceid:
+      - 9a20a75c1c8afc56
+      X-Application-Context:
+      - bitforex-marketquery-new-swap:9301
+      Strict-Transport-Security:
+      - max-age=15768000
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51bc29a38bfbc0f5-KUL
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"code":"200","msg":null,"data":{"swap-usd-btc":{"startdate":1569319347597,"enddate":1569405747597,"type":"24H","high":9755,"low":7909.0,"last":8410.5,"open":9730.5,"productvol":360651629,"currencyvol":41721.20843490,"allVol":2023972910,"allCurrencyVol":203125.42562387,"rate":-0.1356},"swap-usd-grin":{"startdate":1569319347568,"enddate":1569405747568,"type":"24H","high":1.766,"low":1.099,"last":1.399,"open":1.723,"productvol":9301723,"currencyvol":6483300.71883037,"allVol":78240796,"allCurrencyVol":41569027.19575330,"rate":-0.1880},"swap-usd-xrp":{"startdate":1569319347620,"enddate":1569405747620,"type":"24H","high":0.270,"low":0.221,"last":0.238,"open":0.270,"productvol":6569062,"currencyvol":27068849.84550938,"allVol":91582749,"allCurrencyVol":339486789.74592335,"rate":-0.1185},"swap-usd-ltc":{"startdate":1569319347701,"enddate":1569405747701,"type":"24H","high":67.00,"low":53.9,"last":55.35,"open":66.80,"productvol":10009507,"currencyvol":169770.82779863,"allVol":138409376,"allCurrencyVol":1959565.75254335,"rate":-0.1714},"swap-usd-eth":{"startdate":1569319347658,"enddate":1569405747658,"type":"24H","high":198,"low":153.6,"last":168.75,"open":196.85,"productvol":49841898,"currencyvol":288345.60196182,"allVol":503507836,"allCurrencyVol":2663080.23740863,"rate":-0.1427}}}'
+    http_version: 
+  recorded_at: Wed, 25 Sep 2019 10:02:26 GMT
+recorded_with: VCR 4.0.0

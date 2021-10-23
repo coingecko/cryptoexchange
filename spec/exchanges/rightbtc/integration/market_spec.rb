@@ -4,7 +4,7 @@ RSpec.describe 'RightBTC integration specs' do
   let(:client) { Cryptoexchange::Client.new }
   let(:eth_btc_pair) { Cryptoexchange::Models::MarketPair.new(base: 'ETH', target: 'BTC', market: 'rightbtc') }
 
-  it 'fetch pairs' do
+  xit 'fetch pairs' do
     pairs = client.pairs('rightbtc')
     expect(pairs).not_to be_empty
 
@@ -14,7 +14,7 @@ RSpec.describe 'RightBTC integration specs' do
     expect(pair.market).to eq 'rightbtc'
   end
 
-  it 'fetch ticker' do
+  xit 'fetch ticker' do
     ticker = client.ticker(eth_btc_pair)
 
     expect(ticker.base).to eq 'ETH'
@@ -31,7 +31,7 @@ RSpec.describe 'RightBTC integration specs' do
     expect(ticker.payload).to_not be nil
   end
 
-  it 'fetch order book' do
+  xit 'fetch order book' do
     order_book = client.order_book(eth_btc_pair)
 
     expect(order_book.base).to eq 'ETH'
@@ -49,7 +49,7 @@ RSpec.describe 'RightBTC integration specs' do
     expect(order_book.payload).to_not be nil
   end
 
-  it 'fetch trade' do
+  xit 'fetch trade' do
     trades = client.trades(eth_btc_pair)
     trade = trades.sample
 

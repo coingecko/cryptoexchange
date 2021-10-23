@@ -1,5 +1,5 @@
 module Cryptoexchange::Exchanges
-  module Bigone
+  module Bitinka
     module Services
       class Trades < Cryptoexchange::Services::Market
         def fetch(market_pair)
@@ -8,7 +8,7 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url(market_pair)
-          "#{Cryptoexchange::Exchanges::Bigone::Market::API_URL}/markets/#{market_pair.base}-#{market_pair.target}/trades"
+          "#{Cryptoexchange::Exchanges::Bitinka::Market::API_URL}/markets/#{market_pair.base}-#{market_pair.target}/trades"
         end
 
         def adapt(output, market_pair)
@@ -17,7 +17,7 @@ module Cryptoexchange::Exchanges
             tr.trade_id  = HashHelper.dig(trade, 'node', 'id')
             tr.base      = market_pair.base
             tr.target    = market_pair.target
-            tr.market    = Bigone::Market::NAME
+            tr.market    = Bitinka::Market::NAME
             tr.type      = HashHelper.dig(trade, 'node', 'taker_side') == "ASK" ? "sell" : "buy"
             tr.price     = HashHelper.dig(trade, 'node', 'price')
             tr.amount    = HashHelper.dig(trade, 'node', 'amount')

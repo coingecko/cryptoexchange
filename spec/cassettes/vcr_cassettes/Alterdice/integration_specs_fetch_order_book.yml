@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.alterdice.com/v1/coingecko/depth?limit_asks=100&limit_bids=100&symbol=BTCUSD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.alterdice.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 02 Jul 2019 12:39:22 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=iiqt3pfksgja7ednk8bvm45q9m; path=/; HttpOnly
+      - __cfduid=da75c5e5112b2684327e8c8d74ae3f4be1562071157; expires=Wed, 01-Jul-20
+        12:39:17 GMT; path=/; domain=.alterdice.com; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4f00ae7e9f3bbf3c-AMS
+    body:
+      encoding: UTF-8
+      string: '{"asks":[{"price":"10391","amount":"0.04894","timestamp":"1562071144.338"},{"price":"10462","amount":"0.03075","timestamp":"1562070950.259"},{"price":"10486","amount":"0.03116","timestamp":"1562071004.298"},{"price":"10489","amount":"0.02977","timestamp":"1562070989.324"},{"price":"10509","amount":"0.0399","timestamp":"1562070760.314"},{"price":"10510","amount":"0.03966","timestamp":"1562071035.234"},{"price":"10523","amount":"0.03993","timestamp":"1562070766.42"},{"price":"10530","amount":"0.03893","timestamp":"1562071062.355"},{"price":"10534","amount":"0.03946","timestamp":"1562070588.364"},{"price":"10553","amount":"0.03958","timestamp":"1562071084.324"},{"price":"10572","amount":"0.03907","timestamp":"1562070385.31"},{"price":"10577","amount":"0.03945","timestamp":"1562070952.307"},{"price":"10582","amount":"0.03988","timestamp":"1562071050.316"},{"price":"10616","amount":"0.03827","timestamp":"1562070854.303"}],"bids":[{"price":"9912.4","amount":"0.01833","timestamp":"1562071104.36"},{"price":"9898.3","amount":"0.01785","timestamp":"1562071043.274"},{"price":"9896.5","amount":"0.01854","timestamp":"1562071031.333"},{"price":"9894.4","amount":"0.01642","timestamp":"1562071016.348"},{"price":"9894","amount":"0.02928","timestamp":"1562070810.408"},{"price":"9864.4","amount":"0.03044","timestamp":"1562070956.271"},{"price":"9853.9","amount":"0.03236","timestamp":"1562071018.339"},{"price":"9852.5","amount":"0.02948","timestamp":"1562071045.374"},{"price":"9750.2","amount":"0.03824","timestamp":"1562070352.341"},{"price":"9748.3","amount":"0.03201","timestamp":"1562070595.343"},{"price":"9735.2","amount":"0.03925","timestamp":"1562069879.622"},{"price":"9733.4","amount":"0.03961","timestamp":"1562070289.256"},{"price":"9729.2","amount":"0.03985","timestamp":"1562071132.337"},{"price":"9718.7","amount":"0.03922","timestamp":"1562069589.36"},{"price":"9717.7","amount":"0.0393","timestamp":"1562070533.253"},{"price":"9717.2","amount":"0.03832","timestamp":"1562070332.461"},{"price":"9694.4","amount":"0.03819","timestamp":"1562069842.311"},{"price":"9688.2","amount":"0.03848","timestamp":"1562070378.372"},{"price":"9674.8","amount":"0.03901","timestamp":"1562070895.274"}]}'
+    http_version: 
+  recorded_at: Tue, 02 Jul 2019 12:39:22 GMT
+recorded_with: VCR 4.0.0

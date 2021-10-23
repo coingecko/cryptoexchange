@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitoffer.com/v1/api/cash/instrument
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitoffer.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 16 Oct 2019 08:19:09 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '162'
+      Location:
+      - https://api.bitoffer.com/v1/api/cash/instrument/
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301
+        Moved Permanently</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Wed, 16 Oct 2019 08:19:09 GMT
+- request:
+    method: get
+    uri: https://api.bitoffer.com/v1/api/cash/instrument/
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Host:
+      - api.bitoffer.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 16 Oct 2019 08:19:09 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - '0'
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Set-Cookie:
+      - JSESSIONID=_AYEh_x6QWChBeDL-kV4lW3-3FB8Z8GUYGIQr2mW; path=/
+      X-Xss-Protection:
+      - 1; mode=block
+      Pragma:
+      - no-cache
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Application-Context:
+      - api-gateway:prod:8080
+    body:
+      encoding: UTF-8
+      string: '{"code":0,"msg":"success","data":[{"instrumentId":15,"symbol":"AKRO-USDT","productId":18,"coinId":3,"priceTick":"0.00001","lotSize":"0.01","status":2,"fresh":1,"position":6},{"instrumentId":57,"symbol":"BCH-BTC","productId":35,"coinId":2,"priceTick":"0.000001","lotSize":"0.0001","status":2,"fresh":1,"position":1},{"instrumentId":58,"symbol":"BCH-USDT","productId":35,"coinId":3,"priceTick":"0.01","lotSize":"0.0001","status":2,"fresh":1,"position":4},{"instrumentId":61,"symbol":"BSV-BTC","productId":34,"coinId":2,"priceTick":"0.000001","lotSize":"0.0001","status":2,"fresh":1,"position":7},{"instrumentId":62,"symbol":"BSV-USDT","productId":34,"coinId":3,"priceTick":"0.0001","lotSize":"0.0001","status":2,"fresh":1,"position":7},{"instrumentId":3,"symbol":"BTC-USDT","productId":2,"coinId":3,"priceTick":"0.01","lotSize":"0.000001","status":2,"fresh":0,"position":0},{"instrumentId":16,"symbol":"CARM-USDT","productId":15,"coinId":3,"priceTick":"0.000001","lotSize":"0.01","status":2,"fresh":1,"position":12},{"instrumentId":44,"symbol":"CRE-BTC","productId":37,"coinId":2,"priceTick":"0.00000001","lotSize":"0.01","status":2,"fresh":1,"position":22},{"instrumentId":45,"symbol":"CRE-USDT","productId":37,"coinId":3,"priceTick":"0.000001","lotSize":"0.01","status":2,"fresh":1,"position":18},{"instrumentId":42,"symbol":"CRO-BTC","productId":25,"coinId":2,"priceTick":"0.00000001","lotSize":"0.01","status":2,"fresh":1,"position":21},{"instrumentId":43,"symbol":"CRO-USDT","productId":25,"coinId":3,"priceTick":"0.0001","lotSize":"0.01","status":2,"fresh":1,"position":17},{"instrumentId":27,"symbol":"DASH-BTC","productId":22,"coinId":2,"priceTick":"0.000001","lotSize":"0.001","status":2,"fresh":1,"position":4},{"instrumentId":26,"symbol":"DASH-ETH","productId":22,"coinId":1,"priceTick":"0.00001","lotSize":"0.001","status":2,"fresh":1,"position":0},{"instrumentId":28,"symbol":"DASH-USDT","productId":22,"coinId":3,"priceTick":"0.01","lotSize":"0.00001","status":2,"fresh":1,"position":5},{"instrumentId":65,"symbol":"DEB-ETH","productId":46,"coinId":1,"priceTick":"0.00000001","lotSize":"0.01","status":2,"fresh":0,"position":1},{"instrumentId":1,"symbol":"ETH-BTC","productId":1,"coinId":2,"priceTick":"0.000001","lotSize":"0.0001","status":2,"fresh":0,"position":0},{"instrumentId":2,"symbol":"ETH-USDT","productId":1,"coinId":3,"priceTick":"0.01","lotSize":"0.00001","status":2,"fresh":0,"position":1},{"instrumentId":12,"symbol":"FET-BTC","productId":7,"coinId":2,"priceTick":"0.00000001","lotSize":"0.1","status":2,"fresh":1,"position":10},{"instrumentId":13,"symbol":"FET-USDT","productId":7,"coinId":3,"priceTick":"0.0001","lotSize":"0.01","status":2,"fresh":1,"position":11},{"instrumentId":29,"symbol":"FRM-BTC","productId":30,"coinId":2,"priceTick":"0.000000001","lotSize":"0.1","status":2,"fresh":1,"position":15},{"instrumentId":30,"symbol":"FRM-USDT","productId":30,"coinId":3,"priceTick":"0.000001","lotSize":"0.1","status":2,"fresh":1,"position":13},{"instrumentId":31,"symbol":"FSN-BTC","productId":26,"coinId":2,"priceTick":"0.000000001","lotSize":"0.01","status":2,"fresh":1,"position":16},{"instrumentId":32,"symbol":"FSN-USDT","productId":26,"coinId":3,"priceTick":"0.00001","lotSize":"0.0001","status":2,"fresh":1,"position":14},{"instrumentId":63,"symbol":"INFT-BTC","productId":45,"coinId":2,"priceTick":"0.0000000001","lotSize":"0.0001","status":2,"fresh":1,"position":27},{"instrumentId":64,"symbol":"INFT-USDT","productId":45,"coinId":3,"priceTick":"0.0000000001","lotSize":"0.0001","status":2,"fresh":1,"position":21},{"instrumentId":10,"symbol":"IOST-BTC","productId":6,"coinId":2,"priceTick":"0.00000001","lotSize":"0.1","status":2,"fresh":1,"position":9},{"instrumentId":9,"symbol":"IOST-ETH","productId":6,"coinId":1,"priceTick":"0.00000001","lotSize":"0.1","status":2,"fresh":1,"position":3},{"instrumentId":11,"symbol":"IOST-USDT","productId":6,"coinId":3,"priceTick":"0.000001","lotSize":"0.1","status":2,"fresh":1,"position":10},{"instrumentId":18,"symbol":"IOTX-BTC","productId":17,"coinId":2,"priceTick":"0.00000001","lotSize":"0.1","status":2,"fresh":1,"position":12},{"instrumentId":17,"symbol":"IOTX-ETH","productId":17,"coinId":1,"priceTick":"0.00000001","lotSize":"0.1","status":2,"fresh":1,"position":4},{"instrumentId":59,"symbol":"LTC-BTC","productId":23,"coinId":2,"priceTick":"0.000001","lotSize":"0.0001","status":2,"fresh":1,"position":3},{"instrumentId":60,"symbol":"LTC-USDT","productId":23,"coinId":3,"priceTick":"0.01","lotSize":"0.0001","status":2,"fresh":1,"position":3},{"instrumentId":24,"symbol":"NEO-BTC","productId":21,"coinId":2,"priceTick":"0.000001","lotSize":"0.01","status":2,"fresh":1,"position":5},{"instrumentId":25,"symbol":"NEO-USDT","productId":21,"coinId":3,"priceTick":"0.01","lotSize":"0.0001","status":2,"fresh":1,"position":8},{"instrumentId":5,"symbol":"OMG-BTC","productId":4,"coinId":2,"priceTick":"0.000001","lotSize":"0.01","status":2,"fresh":1,"position":6},{"instrumentId":4,"symbol":"OMG-ETH","productId":4,"coinId":1,"priceTick":"0.000001","lotSize":"0.01","status":2,"fresh":1,"position":1},{"instrumentId":6,"symbol":"OMG-USDT","productId":4,"coinId":3,"priceTick":"0.0001","lotSize":"0.01","status":2,"fresh":1,"position":9},{"instrumentId":20,"symbol":"SOLVE-BTC","productId":20,"coinId":2,"priceTick":"0.00000001","lotSize":"0.001","status":2,"fresh":1,"position":13},{"instrumentId":19,"symbol":"SOLVE-ETH","productId":20,"coinId":1,"priceTick":"0.00000001","lotSize":"0.001","status":2,"fresh":1,"position":5},{"instrumentId":40,"symbol":"SREUR-BTC","productId":27,"coinId":2,"priceTick":"0.0000001","lotSize":"0.01","status":2,"fresh":1,"position":19},{"instrumentId":39,"symbol":"SREUR-ETH","productId":27,"coinId":1,"priceTick":"0.000001","lotSize":"0.0001","status":2,"fresh":1,"position":10},{"instrumentId":41,"symbol":"TUDA-BTC","productId":33,"coinId":2,"priceTick":"0.00000001","lotSize":"0.001","status":2,"fresh":1,"position":20},{"instrumentId":50,"symbol":"TUNE-USDT","productId":41,"coinId":3,"priceTick":"0.000001","lotSize":"0.0001","status":2,"fresh":1,"position":19},{"instrumentId":34,"symbol":"UIP-BTC","productId":28,"coinId":2,"priceTick":"0.0000000001","lotSize":"0.01","status":2,"fresh":1,"position":17},{"instrumentId":33,"symbol":"UIP-ETH","productId":28,"coinId":1,"priceTick":"0.00000001","lotSize":"0.01","status":2,"fresh":1,"position":8},{"instrumentId":35,"symbol":"UIP-USDT","productId":28,"coinId":3,"priceTick":"0.000001","lotSize":"0.01","status":2,"fresh":1,"position":15},{"instrumentId":54,"symbol":"VID-USDT","productId":44,"coinId":3,"priceTick":"0.0000001","lotSize":"0.0001","status":2,"fresh":1,"position":20},{"instrumentId":8,"symbol":"WTC-BTC","productId":5,"coinId":2,"priceTick":"0.0000001","lotSize":"0.01","status":2,"fresh":1,"position":8},{"instrumentId":7,"symbol":"WTC-ETH","productId":5,"coinId":1,"priceTick":"0.000001","lotSize":"0.01","status":2,"fresh":1,"position":2},{"instrumentId":22,"symbol":"XEM-BTC","productId":19,"coinId":2,"priceTick":"0.00000001","lotSize":"0.1","status":2,"fresh":1,"position":14},{"instrumentId":21,"symbol":"XEM-ETH","productId":19,"coinId":1,"priceTick":"0.00000001","lotSize":"0.1","status":2,"fresh":1,"position":6},{"instrumentId":55,"symbol":"XRP-BTC","productId":36,"coinId":2,"priceTick":"0.00000001","lotSize":"0.1","status":2,"fresh":1,"position":2},{"instrumentId":56,"symbol":"XRP-USDT","productId":36,"coinId":3,"priceTick":"0.00001","lotSize":"0.01","status":2,"fresh":1,"position":2}]}'
+    http_version: 
+  recorded_at: Wed, 16 Oct 2019 08:19:09 GMT
+recorded_with: VCR 4.0.0

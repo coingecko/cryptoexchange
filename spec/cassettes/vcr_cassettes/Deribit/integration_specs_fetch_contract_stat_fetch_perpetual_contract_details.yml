@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.deribit.com/api/v2/public/get_book_summary_by_instrument?instrument_name=BTC-PERPETUAL&kind=future
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.deribit.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 03 Jan 2020 05:06:16 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '490'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - Authorization,User-Agent,Range,X-Requested-With,Content-Type,Partner
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"jsonrpc":"2.0","result":[{"volume_usd":209860710.0,"volume":29729.76,"quote_currency":"USD","open_interest":78731020,"mid_price":7207.75,"mark_price":7209.62,"low":6856.5,"last":7208.5,"instrument_name":"BTC-PERPETUAL","high":7300.0,"funding_8h":0.00000508,"estimated_delivery_price":7209.83,"current_funding":0.0,"creation_timestamp":1578027976916,"bid_price":7207.5,"base_currency":"BTC","ask_price":7208.0}],"usIn":1578027976916390,"usOut":1578027976916481,"usDiff":91,"testnet":false}'
+    http_version: 
+  recorded_at: Fri, 03 Jan 2020 05:06:17 GMT
+recorded_with: VCR 4.0.0

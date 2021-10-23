@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.deversifi.com/bfx/v2/tickers?symbols=tETHUSD
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.deversifi.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Jun 2020 07:49:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=dab150b1814213a80c0b112a0e2e349cf1591861769; expires=Sat, 11-Jul-20
+        07:49:29 GMT; path=/; domain=.deversifi.com; HttpOnly; SameSite=Lax; Secure
+      - __cfduid=db162c1efc02d3269e6a36cf950369a851591861770; expires=Sat, 11-Jul-20
+        07:49:30 GMT; path=/; domain=.bitfinex.com; HttpOnly; SameSite=Lax
+      X-Frame-Options:
+      - sameorigin
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains;
+      Cf-Request-Id:
+      - 0343f40ed70000017a059db200000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - BYPASS
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5a19bc5e2ba1017a-SIN
+    body:
+      encoding: UTF-8
+      string: '[["tETHUSD",246.71,851.22279976,246.72,880.2045623,3.0530679,0.0125,246.7230679,86007.55404605,250.53480726,241.57]]'
+    http_version: 
+  recorded_at: Thu, 11 Jun 2020 07:49:30 GMT
+recorded_with: VCR 4.0.0

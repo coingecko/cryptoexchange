@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.zbm.com/api/v1/ticker/all
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.zbm.com
+      User-Agent:
+      - http.rb/3.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 14 Mar 2019 07:20:41 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d6363ca77d5c4b49aa9f87db387b4aef41552548040; expires=Fri, 13-Mar-20
+        07:20:40 GMT; path=/; domain=.zbm.com; HttpOnly
+      Access-Control-Allow-Headers:
+      - Authorization,Accept,Origin,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Clienttype,Sign,Timestamp,Userid
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4b747c87bfed2d0b-KUL
+    body:
+      encoding: UTF-8
+      string: '{"date":"1552548041142","ticker":[{"symbol":"BKBT_USDT","high":"0","vol":"0","last":"0.00102","low":"0","change":"0.0","buy":"0.0008","sell":"0.00102"},{"symbol":"OMG_QC","high":"0","vol":"0","last":"2.5","low":"0","change":"0.0","buy":"0","sell":"0"},{"symbol":"EOS_USDT","high":"3.6635","vol":"521333.1436","last":"3.5509","low":"3.4765","change":"-1.59","buy":"3.55","sell":"3.555"},{"symbol":"BTC_USD","high":"0","vol":"0","last":"3888","low":"0","change":"0.0","buy":"0","sell":"0"},{"symbol":"BAT_QC","high":"0","vol":"0","last":"0.82","low":"0","change":"0.0","buy":"0","sell":"0"},{"symbol":"ETH_USDT","high":"133.3373","vol":"30759.3662","last":"131.69","low":"130.84","change":"-0.27","buy":"131.59","sell":"131.78"},{"symbol":"XRP_USDT","high":"0.3253","vol":"5941258.932","last":"0.3106","low":"0.3069","change":"0.32","buy":"0.3104","sell":"0.3116"},{"symbol":"BTC_USDT","high":"3890.9578","vol":"2796.8904","last":"3863.0251","low":"3844.9","change":"-0.38","buy":"3862.7","sell":"3863.1"},{"symbol":"LTC_USDT","high":"56.8019","vol":"11561.4568","last":"55.4","low":"54.28","change":"-1.6","buy":"55.26","sell":"55.5"},{"symbol":"BTH_USDT","high":"0.009116","vol":"1875477.74","last":"0.008991","low":"0.008931","change":"-1.35","buy":"0.008989","sell":"0.008999"}]}'
+    http_version: 
+  recorded_at: Thu, 14 Mar 2019 07:20:41 GMT
+recorded_with: VCR 4.0.0

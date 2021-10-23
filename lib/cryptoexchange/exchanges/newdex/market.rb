@@ -5,7 +5,7 @@ module Cryptoexchange::Exchanges
       API_URL = 'https://api.newdex.io'
 
       def self.trade_page_url(args={})
-        "https://newdex.io/trade/#{args[:base]}_#{args[:target]}"
+        "https://newdex.io/trade/#{args[:inst_id].downcase}-#{args[:base].downcase}-#{args[:target].downcase}"
       end
     end
   end

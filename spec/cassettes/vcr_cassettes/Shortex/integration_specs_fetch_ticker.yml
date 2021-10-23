@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://exchange.shortex.net/api/v2/backend/public/markets/btcusdc/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - exchange.shortex.net
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 19 Nov 2019 06:25:52 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '254'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d1bda9903ae96cab58c89b6703717c5de1574144750; expires=Wed, 18-Nov-20
+        06:25:50 GMT; path=/; domain=.shortex.net; HttpOnly; Secure
+      Etag:
+      - W/"b7fec4d84486506d88867ebd986504d2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d2f94144810703f4ccbdf63e43c2bde1
+      X-Runtime:
+      - '0.024858'
+      Vary:
+      - Origin
+      X-Envoy-Upstream-Service-Time:
+      - '444'
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 53801bf3bf2ddd4e-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"at":1574144752,"ticker":{"buy":"8121.1783","sell":"8122.5574","low":"8094.8018","high":"8471.4923","open":8479.0447,"last":"8121.1783","volume":"489.7126","vol":"489.7126","avg_price":"8240.779672734094817348538026467","price_change_percent":"-4.22%"}}'
+    http_version: 
+  recorded_at: Tue, 19 Nov 2019 06:25:44 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://trade.cryptlocex.com/Api/Exchange/activeorders/market/ltc_usdt
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - trade.cryptlocex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 07 Jun 2020 09:14:16 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - PHPSESSID=78mc2idvggjjubln1ddm97n25r; path=/; HttpOnly
+      - __cfduid=da3d30a866e2271a2649bb8cbebcaf9461591521255; expires=Tue, 07-Jul-20
+        09:14:15 GMT; path=/; domain=.cryptlocex.com; HttpOnly; SameSite=Lax
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - PleskLin
+      - trade.cryptlocex.com
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      - private, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      - "*"
+      - "*"
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, content-type,id,token,ID,TOKEN,XMLHttpRequest
+      - token,Origin, X-Requested-With, Content-Type, Accept,ID,TOKEN
+      Access-Control-Allow-Methods:
+      - POST,GET
+      - PUT, GET, POST, DELETE, OPTIONS
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 032fa837fb0000dd5e58073200000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 59f94306589ddd5e-KUL
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":1,"data":{"depth":{"buy":[{"price":"34.95000000","nums":"10.72616000"},{"price":"34.94250000","nums":"366.94332000"},{"price":"34.93500000","nums":"324.86799000"},{"price":"34.92750000","nums":"557.52559000"},{"price":"34.92000000","nums":"920.20976000"}],"sell":[{"price":"58.46250000","nums":"318.64398000"},{"price":"58.47500000","nums":"63.55734000"},{"price":"58.48750000","nums":"2165.98475000"},{"price":"58.50000000","nums":"199.67416000"},{"price":"58.51250000","nums":"45.39036000"}]}}}'
+    http_version: 
+  recorded_at: Sun, 07 Jun 2020 09:14:14 GMT
+recorded_with: VCR 4.0.0

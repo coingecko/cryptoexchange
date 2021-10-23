@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.bitinka.com/api/apinka/order_book/ETH?format=json
+    uri: https://www.bitinka.com/api/apinka/order_book/ETH_BTC?format=json
     body:
       encoding: UTF-8
       string: ''
@@ -12,32 +12,32 @@ http_interactions:
       Host:
       - www.bitinka.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Mon, 27 Aug 2018 17:49:48 GMT
+      - Fri, 10 May 2019 05:05:18 GMT
       Server:
-      - Apache/2.4.29 (Debian)
+      - Apache/2.4.10 (Debian)
       Set-Cookie:
-      - ci_session=a%3A5%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%22260c02ee30d4bd1cf4b33c944d51bfe3%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A11%3A%2281.152.9.82%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A13%3A%22http.rb%2F3.0.0%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1535392188%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3B%7Df826d4a8ecda534e8181cd8c825200a0;
+      - ci_session=a%3A5%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%22a7e56bd0b1a3fdbd69d1defcee659d1d%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A15%3A%22115.132.234.243%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A17%3A%22http.rb%2F5.0.0.pre%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1557464718%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3B%7D684de4efc050453900ec4d21c8884276;
         path=/
-      - ci_session=a%3A6%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%22260c02ee30d4bd1cf4b33c944d51bfe3%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A11%3A%2281.152.9.82%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A13%3A%22http.rb%2F3.0.0%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1535392188%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3Bs%3A8%3A%22language%22%3Bs%3A4%3A%22peru%22%3B%7D4d56dcd5970c720113816d64135e1ba3;
+      - ci_session=a%3A6%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%22a7e56bd0b1a3fdbd69d1defcee659d1d%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A15%3A%22115.132.234.243%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A17%3A%22http.rb%2F5.0.0.pre%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1557464718%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3Bs%3A8%3A%22language%22%3Bs%3A7%3A%22english%22%3B%7D2119512b50382f2fea3565f50dd76a89;
         path=/
       Status:
       - '200'
       Content-Length:
-      - '752'
+      - '1744'
       Connection:
       - close
       Content-Type:
       - application/json
     body:
       encoding: ASCII-8BIT
-      string: '{"orders":{"sales":{"ETH":[{"Amount":6.44,"Price":0.04164061},{"Amount":6.97,"Price":0.04164061},{"Amount":3.14,"Price":0.04164061},{"Amount":3.86,"Price":0.04164061},{"Amount":4.26,"Price":0.04164061},{"Amount":0.05,"Price":0.04164061},{"Amount":2.41,"Price":0.04162428},{"Amount":6.33,"Price":0.04162428},{"Amount":7.23,"Price":0.04162428},{"Amount":6.04,"Price":0.04162428}]},"purchases":{"ETH":[{"Amount":4.37,"Price":0.04083849},{"Amount":3.45,"Price":0.04083849},{"Amount":3.13,"Price":0.04082166},{"Amount":1.7,"Price":0.04082166},{"Amount":10.05,"Price":0.04082166},{"Amount":6.84,"Price":0.04081572},{"Amount":0.18,"Price":0.04081572},{"Amount":6.91,"Price":0.04081572},{"Amount":10.7,"Price":0.04083387},{"Amount":2.05,"Price":0.04083387}]}}}'
+      string: '{"orders":{"sales":{"ETH":[{"Amount":134.21513583,"Price":0.02776232},{"Amount":127.60370418,"Price":0.02772752},{"Amount":91.60103565,"Price":0.02772363},{"Amount":108.06719692,"Price":0.02769487},{"Amount":2.30306888,"Price":0.02743142},{"Amount":1.83475661,"Price":0.0274132},{"Amount":5.85196151,"Price":0.02718158},{"Amount":19.34434959,"Price":0.02717709},{"Amount":125.93728114,"Price":0.02708994},{"Amount":106.07473506,"Price":0.02708715},{"Amount":161.01962245,"Price":0.02708631},{"Amount":138.70354817,"Price":0.02708602},{"Amount":121.19901712,"Price":0.02708576},{"Amount":244.20592008,"Price":0.02708274},{"Amount":274.68419376,"Price":0.02708186},{"Amount":259.60746276,"Price":0.02708054},{"Amount":120.26009779,"Price":0.02708043},{"Amount":128.34229306,"Price":0.02708001},{"Amount":32.8962334,"Price":0.02707991},{"Amount":0.81853693,"Price":0.02707945}]},"purchases":{"ETH":[{"Amount":66.62181666,"Price":0.02780005},{"Amount":105.07040586,"Price":0.02785984},{"Amount":97.77261535,"Price":0.02788289},{"Amount":132.88957613,"Price":0.02797794},{"Amount":209.14088576,"Price":0.02811045},{"Amount":3.53818317,"Price":0.02811122},{"Amount":148.14824611,"Price":0.02811128},{"Amount":71.16344048,"Price":0.02811232},{"Amount":1.27867971,"Price":0.02811306},{"Amount":123.35975102,"Price":0.02811353},{"Amount":87.66198233,"Price":0.02811381},{"Amount":138.16982536,"Price":0.02811409},{"Amount":93.18625313,"Price":0.02811443},{"Amount":2.16038603,"Price":0.02811464},{"Amount":187.95027306,"Price":0.02811483},{"Amount":3.17600119,"Price":0.02811546},{"Amount":88.55782823,"Price":0.02811549},{"Amount":127.70449751,"Price":0.02811577},{"Amount":133.07731539,"Price":0.02811579},{"Amount":68.68980457,"Price":0.02811609}]}}}'
     http_version: 
-  recorded_at: Mon, 27 Aug 2018 17:49:46 GMT
+  recorded_at: Fri, 10 May 2019 05:05:18 GMT
 recorded_with: VCR 4.0.0

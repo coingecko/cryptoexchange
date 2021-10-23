@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://data.block.cc/api/v1/market/digifinex
+    uri: https://openapi.digifinex.vip/v2/ticker?apiKey=15cad9a55217c4
     body:
       encoding: UTF-8
       string: ''
@@ -10,159 +10,40 @@ http_interactions:
       Connection:
       - close
       Host:
-      - data.block.cc
+      - openapi.digifinex.vip
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
-      Server:
-      - nginx
       Date:
-      - Tue, 31 Jul 2018 09:11:55 GMT
+      - Fri, 07 Jun 2019 03:56:44 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Content-Length:
-      - '2151'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - close
+      Set-Cookie:
+      - __cfduid=d580028744bd4c8ab348d1e6f0cd872ef1559879804; expires=Sat, 06-Jun-20
+        03:56:44 GMT; path=/; domain=.digifinex.vip; HttpOnly
       Vary:
       - Accept-Encoding
-      - Origin
-      Rate-Limit-Remaining:
-      - '128'
-      Rate-Limit-Reset:
-      - '59'
-      Rate-Limit-Total:
-      - '128'
+      Expires:
+      - Fri, 14 Jun 2019 03:56:44 GMT
+      Cache-Control:
+      - max-age=604800
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e2fb2a7df31cc08-SIN
     body:
       encoding: UTF-8
-      string: |-
-        {
-          "code": 0,
-          "message": "success",
-          "data": {
-            "name": "digifinex",
-            "display_name": "DigiFinex",
-            "volume": 0,
-            "display_volume": 0,
-            "home_url": "digifinex.com",
-            "symbol_pairs": [
-              "EOS_USDT",
-              "BCH_USDT",
-              "BTC_USDT",
-              "ETH_USDT",
-              "BCH_BTC",
-              "LTC_USDT",
-              "XRP_USDT",
-              "EOS_ETH",
-              "RCT_USDT",
-              "ETH_BTC",
-              "OMG_USDT",
-              "EOS_BTC",
-              "XRP_BTC",
-              "RCT_BTC",
-              "BHPC_ETH",
-              "DFT_ETH",
-              "DIY_ETH",
-              "BQT_BTC",
-              "IOST_USDT",
-              "BTW_BTC",
-              "CMT_BTC",
-              "CMT_ETH",
-              "CMT_USDT",
-              "COC_ETH",
-              "CPS_ETH",
-              "CPS_USDT",
-              "DATX_BTC",
-              "DATX_ETH",
-              "DATX_USDT",
-              "BCK_BTC",
-              "DFT_USDT",
-              "BCX_BTC",
-              "DIY_USDT",
-              "EES_ETH",
-              "EMO_ETH",
-              "BHC_ETH",
-              "ACCE_ETH",
-              "BIT_ETH",
-              "EPCC_ETH",
-              "BCH_ETH",
-              "BQT_ETH",
-              "ETZ_ETH",
-              "FAIR_BTC",
-              "FAIR_ETH",
-              "FAIR_USDT",
-              "GGPC_BTC",
-              "GGPC_ETH",
-              "GGPC_USDT",
-              "GNX_BTC",
-              "GNX_ETH",
-              "GNX_USDT",
-              "GVE_ETH",
-              "IFC_ETH",
-              "INSUR_ETH",
-              "IOST_ETH",
-              "ALC_USDT",
-              "LBTC_BTC",
-              "LET_ETH",
-              "LET_USDT",
-              "LME_ETH",
-              "LME_USDT",
-              "LTC_BTC",
-              "B2X_BTC",
-              "MGD_ETH",
-              "MT_ETH",
-              "NEWOS_ETH",
-              "NFSC_ETH",
-              "NFSC_USDT",
-              "OMG_BTC",
-              "OMG_ETH",
-              "BTCS_BTC",
-              "OSCH_ETH",
-              "POWR_BTC",
-              "POWR_ETH",
-              "PRW_USDT",
-              "QBT_ETH",
-              "QTUM_BTC",
-              "QTUM_ETH",
-              "QTUM_USDT",
-              "BTF_BTC",
-              "RCT_ETH",
-              "BTH_BTC",
-              "RUFF_ETH",
-              "RUFF_USDT",
-              "SBTC_BTC",
-              "SC_BTC",
-              "SCC_BTC",
-              "SEED_ETH",
-              "SHOW_USDT",
-              "SSP_ETH",
-              "TIX_ETH",
-              "TIX_USDT",
-              "UBTC_BTC",
-              "BTP_BTC",
-              "XRP_ETH",
-              "BTPAY_BTC",
-              "XWC_BTC",
-              "YEE_BTC",
-              "YEE_ETH",
-              "YEE_USDT",
-              "ZAG_BTC",
-              "ZAG_ETH",
-              "ZAG_USDT",
-              "ZIL_ETH",
-              "ZIL_USDT",
-              "ZIP_ETH",
-              "ZIP_USDT",
-              "ZRX_BTC",
-              "ZRX_ETH",
-              "ZRX_USDT"
-            ]
-          }
-        }
+      string: '{"ticker":{"btc_grs":{"last":5.116e-05,"change":-0.55,"vol":714455,"sell":5.136e-05,"low":5e-05,"buy":5.108e-05,"high":5.307e-05},"eth_ees":{"last":6.239e-05,"change":-2.35,"vol":31986,"sell":7.294e-05,"low":5.507e-05,"buy":5.5e-05,"high":7.279e-05},"usdt_ont":{"last":1.294,"change":-2.08,"vol":2455923.849,"sell":1.3,"low":1.232,"buy":1.294,"high":1.326},"btc_powr":{"last":1.456e-05,"change":3.04,"vol":104269,"sell":1.456e-05,"low":1.394e-05,"buy":1.438e-05,"high":1.474e-05},"eth_mgd":{"last":0.000268,"change":-7.91,"vol":1379.34398056,"sell":0.00028997,"low":0.000267,"buy":0.000268,"high":0.00029101},"usdt_bhc":{"last":0.035,"change":9.28,"vol":61014.73,"sell":0.035,"low":0.029001,"buy":0.0298,"high":0.0355},"usdt_elf":{"last":0.1938,"change":4.05,"vol":5461445.822,"sell":0.1938,"low":0.1809,"buy":0.1927,"high":0.1958},"btc_mdt":{"last":1.17e-06,"change":-8.59,"vol":610285.65,"sell":1.26e-06,"low":1.12e-06,"buy":1.15e-06,"high":1.3e-06},"usdt_r":{"last":0.113518,"change":-5.47,"vol":1410590.31,"sell":0.118142,"low":0.104794,"buy":0.112,"high":0.122122},"eth_zil":{"last":9.325e-05,"change":8.79,"vol":7043198.33,"sell":9.325e-05,"low":8.318e-05,"buy":9.239e-05,"high":9.47e-05},"usdt_dogz":{"last":0.00013989,"change":-2.17,"vol":393778570,"sell":0.0001399,"low":0.000135,"buy":0.00013754,"high":0.00014402},"usdt_vex":{"last":0.011551,"change":-0.93,"vol":3143235.48,"sell":0.011551,"low":0.011127,"buy":0.01155,"high":0.011999},"eth_iost":{"last":4.541e-05,"change":-0.03,"vol":5358740.46,"sell":4.541e-05,"low":4.417e-05,"buy":4.517e-05,"high":4.603e-05},"btc_mco":{"last":0.000749,"change":0.33,"vol":173067.65,"sell":0.000755,"low":0.000738,"buy":0.000749,"high":0.000769},"btc_etz":{"last":3e-05,"change":0,"vol":0,"sell":3.299e-05,"low":3e-05,"buy":2.672e-05,"high":3e-05},"btc_tmtg":{"last":2.6e-07,"change":-7.14,"vol":21678644.6,"sell":2.7e-07,"low":2.4e-07,"buy":2.4e-07,"high":2.9e-07},"eth_datx":{"last":3.23e-06,"change":14.34,"vol":17040021.26,"sell":3.23e-06,"low":2.79e-06,"buy":3.14e-06,"high":3.59e-06},"usdt_mith":{"last":0.0409,"change":-6.83,"vol":24929951.905,"sell":0.041,"low":0.0371,"buy":0.0408,"high":0.0446},"btc_bsv":{"last":0.024757,"change":-9.21,"vol":93037.88,"sell":0.024744,"low":0.023034,"buy":0.024654,"high":0.027324},"usdt_fiii":{"last":0.017718,"change":-1.79,"vol":1381259.88,"sell":0.018056,"low":0.017094,"buy":0.017458,"high":0.01968},"usdt_cps":{"last":6.353e-05,"change":-22.37,"vol":6622582.38,"sell":9.652e-05,"low":6.353e-05,"buy":6.692e-05,"high":9.699e-05},"usdt_ist":{"last":0.251601,"change":0.22,"vol":153267.1,"sell":0.296306,"low":0.169901,"buy":0.218154,"high":0.273243},"usdt_und":{"last":0.034881,"change":-4.01,"vol":2059513.76,"sell":0.035563,"low":0.032625,"buy":0.034452,"high":0.0377},"usdt_diy":{"last":0.001748,"change":-10.54,"vol":7040.8,"sell":0.001954,"low":0.001748,"buy":0.001748,"high":0.001954},"usdt2_eth":{"last":245.72,"change":-0.57,"vol":329408.1914,"sell":245.82,"low":235.48,"buy":245.54,"high":250.69},"usdt_usdt2":{"last":0.997,"change":-0.53,"vol":2846012.2491,"sell":1.0001,"low":0.9942,"buy":0.996,"high":1.0047},"usdt_trx":{"last":0.032631,"change":-4.19,"vol":1424076289.62,"sell":0.03266,"low":0.030674,"buy":0.032577,"high":0.034116},"usdt_edr":{"last":0.028471,"change":58.17,"vol":59.56,"sell":0.028374,"low":0.018,"buy":0.01,"high":0.028471},"btc_bora":{"last":7.79e-06,"change":1.83,"vol":291390.43,"sell":7.97e-06,"low":7.59e-06,"buy":7.78e-06,"high":8.06e-06},"eth_und":{"last":0.00014409,"change":-5.05,"vol":1806784.23,"sell":0.00014409,"low":0.0001367,"buy":0.00014026,"high":0.00015942},"usdt_mesg":{"last":0.030811,"change":2.28,"vol":791142.4,"sell":0.031706,"low":0.027899,"buy":0.030639,"high":0.03151},"btc_gnx":{"last":2.99e-06,"change":1.7,"vol":187888.78,"sell":3.19e-06,"low":2.66e-06,"buy":3.05e-06,"high":3.26e-06},"btc_pltc":{"last":2.556e-05,"change":-2.29,"vol":464190.81,"sell":2.59e-05,"low":2.032e-05,"buy":2.433e-05,"high":2.616e-05},"eth_powr":{"last":0.00046122,"change":2.93,"vol":14783,"sell":0.00046113,"low":0.00044171,"buy":0.00045668,"high":0.00047008},"eth_osch":{"last":3.7e-07,"change":-5.13,"vol":47204175.74,"sell":4e-07,"low":3.5e-07,"buy":3.5e-07,"high":4.6e-07},"eth_gnx":{"last":0.00010213,"change":21.7,"vol":1150343.579,"sell":0.00010213,"low":8.392e-05,"buy":9.197e-05,"high":0.00011015},"usdt_btt":{"last":0.0012798,"change":-2.45,"vol":8071601524,"sell":0.0012798,"low":0.0012001,"buy":0.0012746,"high":0.0013178},"btc_elac":{"last":5.13e-06,"change":-8.06,"vol":4524930.96,"sell":5.73e-06,"low":4.95e-06,"buy":5.17e-06,"high":6.55e-06},"eth_rct":{"last":4.75e-06,"change":-1.45,"vol":98885516.71,"sell":4.75e-06,"low":4.56e-06,"buy":4.48e-06,"high":4.82e-06},"eth_bqt":{"last":7.399e-05,"change":0,"vol":0,"sell":7.396e-05,"low":7.399e-05,"buy":3.104e-05,"high":7.399e-05},"eth_ruff":{"last":5.153e-05,"change":-0.39,"vol":273893.4,"sell":5.211e-05,"low":4.95e-05,"buy":5.052e-05,"high":5.267e-05},"eth_mesg":{"last":0.00012737,"change":6.11,"vol":430640.66,"sell":0.0001287,"low":0.00011663,"buy":0.00012549,"high":0.00012737},"eth_xem":{"last":0.00033736,"change":-0.45,"vol":382182,"sell":0.00033898,"low":0.00033085,"buy":0.0003344,"high":0.00034457},"eth_xzc":{"last":0.028467,"change":3.6,"vol":4619.26,"sell":0.028467,"low":0.027025,"buy":0.028218,"high":0.028473},"eth_qbt":{"last":7.958e-05,"change":-1.23,"vol":4911,"sell":8.079e-05,"low":7.895e-05,"buy":2.835e-05,"high":8.078e-05},"btc_ont":{"last":0.0001669,"change":-0.89,"vol":745877.43,"sell":0.000167,"low":0.0001629,"buy":0.0001662,"high":0.0001696},"btc_block":{"last":0.00034939,"change":1.18,"vol":709.81,"sell":0.00035242,"low":0.00030999,"buy":0.00034212,"high":0.00035234},"usdt_iq":{"last":0.003845,"change":-7.26,"vol":2023642.97,"sell":0.004221,"low":0.003845,"buy":0.00368,"high":0.00449},"eth_insur":{"last":9.7e-07,"change":2.11,"vol":39140916.7,"sell":9.7e-07,"low":9.1e-07,"buy":9.1e-07,"high":1.01e-06},"btc_xem":{"last":1.062e-05,"change":0.19,"vol":7083768,"sell":1.063e-05,"low":1.047e-05,"buy":1.06e-05,"high":1.079e-05},"eth_mt":{"last":1.245e-05,"change":0.04,"vol":48550706.99,"sell":1.255e-05,"low":1.228e-05,"buy":1.245e-05,"high":1.381e-05},"eth_zag":{"last":9.98e-06,"change":0,"vol":0,"sell":9.9e-06,"low":9.98e-06,"buy":1.12e-06,"high":9.98e-06},"eth_qtum":{"last":0.012169,"change":-0.87,"vol":20927.5142,"sell":0.012191,"low":0.01198,"buy":0.012122,"high":0.012328},"eth_cps":{"last":4e-07,"change":0,"vol":0,"sell":3.8e-07,"low":4e-07,"buy":2.3e-07,"high":4e-07},"eth_elf":{"last":0.00079119,"change":4.91,"vol":459865.449,"sell":0.00079018,"low":0.00075157,"buy":0.0007845,"high":0.00079804},"dft_jqb":{"last":0.01109,"change":-2.55,"vol":173324.35,"sell":0.01113,"low":0.01097,"buy":0.01109,"high":0.01146},"usdt_ect":{"last":0.0001049,"change":0.87,"vol":37942844,"sell":0.0001044,"low":9.19e-05,"buy":9.41e-05,"high":0.000126},"btc_btt":{"last":1.7e-07,"change":6.25,"vol":700856262,"sell":1.7e-07,"low":1.5e-07,"buy":1.6e-07,"high":1.7e-07},"eth_gve":{"last":2.19e-06,"change":7.35,"vol":49464235.89,"sell":2.31e-06,"low":1.88e-06,"buy":2.1e-06,"high":2.48e-06},"btc_ist":{"last":3.06e-05,"change":2.41,"vol":221808.1,"sell":3.153e-05,"low":2.386e-05,"buy":2.999e-05,"high":3.159e-05},"usdt_qtum":{"last":2.98,"change":-1.65,"vol":1027375.2494,"sell":3,"low":2.87,"buy":2.98,"high":3.03},"eth_kbc":{"last":0.00020668,"change":-20.51,"vol":1940133.48,"sell":0.00023999,"low":0.00019,"buy":0.00020745,"high":0.0003479},"eth_sc":{"last":1.255e-05,"change":-1.3,"vol":17735114,"sell":1.255e-05,"low":1.217e-05,"buy":1.245e-05,"high":1.281e-05},"eth_pltc":{"last":0.00078097,"change":0.23,"vol":176031.29,"sell":0.00083999,"low":0.0006,"buy":0.00078001,"high":0.00085},"usdt_zip":{"last":0.000628,"change":3.63,"vol":2184645952,"sell":0.000632,"low":0.000588,"buy":0.000629,"high":0.000631},"usdt_tusd":{"last":0.9978,"change":-0.12,"vol":4768604.369,"sell":0.9985,"low":0.9963,"buy":0.9973,"high":1.0012},"btc_lbxc":{"last":2.6e-07,"change":-3.7,"vol":9310901.51,"sell":2.7e-07,"low":2.4e-07,"buy":2.5e-07,"high":2.8e-07},"btc_fair":{"last":3.8e-07,"change":52,"vol":1210.27,"sell":4.7e-07,"low":2.5e-07,"buy":3.8e-07,"high":4e-07},"usdt_eos":{"last":6.3292,"change":-1.7,"vol":6481596.7579,"sell":6.3332,"low":5.9112,"buy":6.3224,"high":6.4464},"eth_mdt":{"last":4.155e-05,"change":0.51,"vol":5214652.77,"sell":3.935e-05,"low":3.625e-05,"buy":3.701e-05,"high":4.155e-05},"usdt_doge":{"last":0.003051,"change":-0.13,"vol":100862670,"sell":0.003051,"low":0.002969,"buy":0.003037,"high":0.003076},"eth_grs":{"last":0.00165272,"change":1.48,"vol":38963,"sell":0.00165154,"low":0.00158178,"buy":0.00161074,"high":0.00170187},"eth_r":{"last":0.00041,"change":-16.33,"vol":156.607,"sell":0.0005,"low":0.0004,"buy":0.0004,"high":0.00051},"usdt_scsc":{"last":0.00107,"change":120.62,"vol":2714699,"sell":0.00107,"low":0.000485,"buy":0.001042,"high":0.001099},"btc_xmr":{"last":0.011021,"change":0.99,"vol":39840.02,"sell":0.011029,"low":0.010905,"buy":0.011006,"high":0.01119},"eth_bhd":{"last":0.00855725,"change":-3.03,"vol":37048.13,"sell":0.00868003,"low":0.00838811,"buy":0.00843447,"high":0.00901077},"eth_bzky":{"last":2.2e-06,"change":-25.93,"vol":500560.5393,"sell":3.2e-06,"low":2.2e-06,"buy":2.31e-06,"high":3e-06},"btc_mgo":{"last":6e-06,"change":0,"vol":0,"sell":1.2e-05,"low":6e-06,"buy":6.21e-06,"high":6e-06},"eth_qnt":{"last":0.0154,"change":0,"vol":426.66,"sell":0,"low":0.0154,"buy":8.602e-05,"high":0.0154},"eth_flc":{"last":0.02144633,"change":0.11,"vol":75898.52,"sell":0.02144847,"low":0.02123282,"buy":0.02128385,"high":0.0223913},"btc_csm":{"last":7.3e-05,"change":17.72,"vol":8316.2395,"sell":7.3e-05,"low":6.201e-05,"buy":6.781e-05,"high":7.3e-05},"eth_axl":{"last":0.000112,"change":0.03,"vol":172428.09,"sell":0.000112,"low":7.2e-05,"buy":8.004e-05,"high":0.000112},"usdt_dash":{"last":141.88,"change":-4.54,"vol":34999.2678,"sell":142.07,"low":138.5,"buy":141.78,"high":148.94},"eth_mfg":{"last":7.14e-06,"change":-38.45,"vol":11395.64,"sell":7.14e-06,"low":7.14e-06,"buy":6.86e-06,"high":1.16e-05},"btc_ong":{"last":5.252e-05,"change":1.98,"vol":666961,"sell":5.262e-05,"low":5.139e-05,"buy":5.218e-05,"high":5.355e-05},"usdt_lv":{"last":0.000762,"change":0.66,"vol":1116189.821,"sell":0.000798,"low":0.000756,"buy":0.000762,"high":0.000772},"eth_dex":{"last":0.0001078,"change":-0.18,"vol":460706.2359,"sell":0.000108,"low":0.0001,"buy":2.635e-05,"high":0.00010799},"btc_fiii":{"last":2.27e-06,"change":-1.3,"vol":1078932.37,"sell":2.34e-06,"low":1.82e-06,"buy":2.11e-06,"high":2.4e-06},"usdt_qnt":{"last":2.1,"change":0,"vol":0,"sell":40,"low":2.1,"buy":0.016,"high":2.1},"usdt2_ltc":{"last":110.63,"change":5.17,"vol":443249.0187,"sell":110.68,"low":101.05,"buy":110.53,"high":111.97},"btc_ltc":{"last":0.014203,"change":6.09,"vol":843935.9287,"sell":0.014216,"low":0.013253,"buy":0.01419,"high":0.014479},"usdt_ong":{"last":0.4105,"change":1.55,"vol":426714.95,"sell":0.4104,"low":0.39,"buy":0.4055,"high":0.4136},"eth_mcs":{"last":1.35e-06,"change":0,"vol":0,"sell":2e-06,"low":1.35e-06,"buy":1.21e-06,"high":1.35e-06},"usdt_brc":{"last":6,"change":0,"vol":0,"sell":0,"low":6,"buy":1.2,"high":6},"usdt_cmt":{"last":0.034,"change":-1.02,"vol":43798491.8583,"sell":0.034,"low":0.0325,"buy":0.0337,"high":0.0351},"btc_mith":{"last":5.33e-06,"change":-4.82,"vol":21243824.753,"sell":5.26e-06,"low":4.75e-06,"buy":5.21e-06,"high":5.99e-06},"btc_gxc":{"last":0.000191,"change":-4.88,"vol":518600.29,"sell":0.0001923,"low":0.000184,"buy":0.000191,"high":0.0002021},"eth_cst":{"last":7.99e-06,"change":0,"vol":0,"sell":7.98e-06,"low":7.99e-06,"buy":3e-06,"high":7.99e-06},"eth_let":{"last":2.603e-05,"change":3.73,"vol":17201826.99,"sell":2.603e-05,"low":2.454e-05,"buy":2.566e-05,"high":2.69e-05},"usdt_btc":{"last":7787.34,"change":-0.9,"vol":45360.1357,"sell":7794.22,"low":7469.94,"buy":7785.04,"high":7865.55},"eth_fair":{"last":1.433e-05,"change":16.55,"vol":38222402.82,"sell":1.44e-05,"low":1.195e-05,"buy":1.402e-05,"high":1.985e-05},"usdt_brst":{"last":0.016493,"change":3.03,"vol":16256586.74,"sell":0.017258,"low":0.015801,"buy":0.0161,"high":0.018996},"eth_gas":{"last":0.0110889,"change":-8.45,"vol":74.34562,"sell":0.01191784,"low":0.010989,"buy":0.01118881,"high":0.0121121},"usdt_woc":{"last":0.0063,"change":11.46,"vol":3172102.16802,"sell":0.006494,"low":0.004101,"buy":0.005802,"high":0.006695},"eth_gxc":{"last":0.006119,"change":-3.79,"vol":62238.79,"sell":0.006115,"low":0.005811,"buy":0.006048,"high":0.006423},"eth_doge":{"last":1.237e-05,"change":0.04,"vol":9785128.7,"sell":1.243e-05,"low":1.219e-05,"buy":1.236e-05,"high":1.27e-05},"usdt_dft":{"last":0.2989,"change":1.72,"vol":1748561.47,"sell":0.2991,"low":0.292,"buy":0.2976,"high":0.299},"eth_senno":{"last":3.4e-07,"change":38.78,"vol":449294353.59,"sell":5.1e-07,"low":2.3e-07,"buy":2.3e-07,"high":3.5e-07},"btc_bep":{"last":2.68e-06,"change":11.2,"vol":2241096.4,"sell":2.79e-06,"low":2.2e-06,"buy":2.68e-06,"high":2.7e-06},"usdt_tix":{"last":8.42e-06,"change":-6.96,"vol":821213564.19,"sell":8.79e-06,"low":8.42e-06,"buy":8.44e-06,"high":9.18e-06},"usdt_xrp":{"last":0.4178,"change":3.45,"vol":136052087.953,"sell":0.4191,"low":0.3901,"buy":0.416,"high":0.4265},"eth_etz":{"last":0.00096085,"change":11.11,"vol":6945.0692296,"sell":0.0009612,"low":0.00086481,"buy":0.00088902,"high":0.0009612},"eth_zec":{"last":0.32675,"change":-0.42,"vol":1357.007,"sell":0.32727,"low":0.31965,"buy":0.32507,"high":0.32978},"eth_ont":{"last":0.005268,"change":-1.64,"vol":64713.9,"sell":0.005301,"low":0.005145,"buy":0.005268,"high":0.00536},"btc_gib":{"last":7e-08,"change":0,"vol":16098120.573,"sell":7e-08,"low":5e-08,"buy":5e-08,"high":8e-08},"usdt_mch":{"last":0.599539,"change":3.52,"vol":99869.27,"sell":0.6,"low":0.550001,"buy":0.586004,"high":0.65},"usdt_gmb":{"last":0.003147,"change":-3.29,"vol":1884313,"sell":0.0033,"low":0.0026,"buy":0.002982,"high":0.003392},"btc_zrx":{"last":4.11e-05,"change":-0.8,"vol":714842.582,"sell":4.112e-05,"low":4.058e-05,"buy":4.083e-05,"high":4.236e-05},"btc_xrp":{"last":5.375e-05,"change":4.57,"vol":96880856.381,"sell":5.379e-05,"low":5.115e-05,"buy":5.372e-05,"high":5.529e-05},"eth_xmr":{"last":0.34997,"change":0.83,"vol":6173.343,"sell":0.35055,"low":0.34603,"buy":0.34927,"high":0.35374},"usdt_gusd":{"last":0.9965,"change":0.02,"vol":307227.94,"sell":0.9967,"low":0.9886,"buy":0.993,"high":0.9998},"usdt_acce":{"last":0.00619,"change":1.48,"vol":427917.60236322,"sell":0.006287,"low":0.0055,"buy":0.0055,"high":0.006281},"dft_tsf":{"last":0.0699,"change":-1.69,"vol":46688.46,"sell":0.064,"low":0.0699,"buy":0.032,"high":0.0711},"eth_zip":{"last":2.58e-06,"change":4.45,"vol":4600472,"sell":2.58e-06,"low":2.39e-06,"buy":2.55e-06,"high":2.58e-06},"usdt_pigx":{"last":5.501e-05,"change":16.87,"vol":2262687717,"sell":5.644e-05,"low":4.605e-05,"buy":5.45e-05,"high":5.677e-05},"btc_b2g":{"last":2.994e-05,"change":-9.6,"vol":513129.2088,"sell":3.005e-05,"low":2.906e-05,"buy":2.915e-05,"high":3.332e-05},"usdt_gas":{"last":2.8369,"change":-3.63,"vol":6472.17496,"sell":2.8929,"low":2.7364,"buy":2.8473,"high":2.9438},"eth_omg":{"last":0.008143,"change":1.9,"vol":140906.4342,"sell":0.00816,"low":0.007927,"buy":0.008124,"high":0.008191},"btc_eth":{"last":0.031529,"change":0.22,"vol":182304.8002,"sell":0.031534,"low":0.031287,"buy":0.031517,"high":0.03209},"eth_cmt":{"last":0.00013697,"change":-1.76,"vol":485171.75,"sell":0.00013866,"low":0.00013632,"buy":0.00013697,"high":0.00014284},"usdt_ilc":{"last":0.0636,"change":-3.34,"vol":341326.89,"sell":0.064541,"low":0.055,"buy":0.055003,"high":0.0658},"eth_zrx":{"last":0.00133133,"change":4.98,"vol":3147.813,"sell":0.00135132,"low":0.00126822,"buy":0.00125875,"high":0.00137151},"usdt_zil":{"last":0.022864,"change":7.02,"vol":68169662.9301,"sell":0.022864,"low":0.019968,"buy":0.02275,"high":0.02304},"btc_theta":{"last":1.698e-05,"change":-1.54,"vol":1416691.19,"sell":1.698e-05,"low":1.635e-05,"buy":1.68e-05,"high":1.778e-05},"btc_npxs":{"last":1e-07,"change":-9.09,"vol":15137489,"sell":1.2e-07,"low":1e-07,"buy":1e-07,"high":1.1e-07},"btc_trx":{"last":4.19e-06,"change":-3.34,"vol":830836206.85,"sell":4.2e-06,"low":4.09e-06,"buy":4.18e-06,"high":4.35e-06},"eth_ssp":{"last":4.42e-06,"change":27.75,"vol":376533293.91,"sell":4.56e-06,"low":3.4e-06,"buy":4.43e-06,"high":5e-06},"usdt_alc":{"last":2.915e-05,"change":-3.7,"vol":1002709550.7,"sell":3.025e-05,"low":2.812e-05,"buy":2.917e-05,"high":3.165e-05},"eth_neo":{"last":0.04695,"change":-1.6,"vol":92995.67,"sell":0.047074,"low":0.046539,"buy":0.046911,"high":0.047741},"usdt_mdt":{"last":0.009306,"change":-3.24,"vol":24939661.56,"sell":0.009351,"low":0.008878,"buy":0.009268,"high":0.009922},"eth_ggpc":{"last":9e-08,"change":0,"vol":0,"sell":3.3e-07,"low":9e-08,"buy":9e-08,"high":9e-08},"eth_trx":{"last":0.00013286,"change":-3.62,"vol":218463354.98,"sell":0.00013307,"low":0.00012991,"buy":0.00013263,"high":0.00013847},"dft_brst":{"last":0.0559,"change":-8.73,"vol":12742107.19,"sell":0.0615,"low":0.0531,"buy":0.0503,"high":0.0641},"eth_dash":{"last":0.579103,"change":-3.77,"vol":621.1801,"sell":0.579442,"low":0.573944,"buy":0.578547,"high":0.602757},"eth_etc":{"last":0.032072,"change":-2.59,"vol":983694.55,"sell":0.032143,"low":0.030891,"buy":0.03202,"high":0.033073},"btc_sc":{"last":3.8e-07,"change":-2.56,"vol":56817707,"sell":4e-07,"low":3.8e-07,"buy":3.8e-07,"high":4.2e-07},"eth_xrp":{"last":0.00170367,"change":4.29,"vol":5834538.493,"sell":0.00170535,"low":0.00162035,"buy":0.00170206,"high":0.00175216},"usdt_mfg":{"last":0.001764,"change":24.66,"vol":6808.7,"sell":0.001835,"low":0.001415,"buy":0.001415,"high":0.001764},"usdt_mkey":{"last":0.32,"change":-36,"vol":807.87,"sell":0.499998,"low":0.300007,"buy":0.320001,"high":0.5},"usdt_yee":{"last":0.0022,"change":4.76,"vol":18923905.2,"sell":0.0022,"low":0.0019,"buy":0.002,"high":0.0022},"eth_eos":{"last":0.02578426,"change":-1.05,"vol":1828466.83,"sell":0.025786,"low":0.02508576,"buy":0.02578342,"high":0.02605942},"btc_fct":{"last":0.00081141,"change":-11.84,"vol":252.1,"sell":0.0008414,"low":0.00079,"buy":0.00079,"high":0.00094564},"btc_eos":{"last":0.00081219,"change":-0.83,"vol":11939024.74,"sell":0.00081286,"low":0.00078983,"buy":0.00081159,"high":0.00081938},"btc_itco":{"last":7.75e-06,"change":0,"vol":280,"sell":7.75e-06,"low":1.86e-06,"buy":1.9e-06,"high":7.75e-06},"btc_zec":{"last":0.01027,"change":-0.46,"vol":52090.194,"sell":0.010278,"low":0.010131,"buy":0.010256,"high":0.010383},"eth_gana":{"last":8.24e-06,"change":0.86,"vol":131269101.66,"sell":8.29e-06,"low":8.17e-06,"buy":8.15e-06,"high":8.28e-06},"btc_dex":{"last":3.5e-06,"change":0,"vol":400100,"sell":3.52e-06,"low":3.5e-06,"buy":1.67e-06,"high":3.5e-06},"usdt_pax":{"last":0.9981,"change":-0.05,"vol":3500326.43,"sell":0.9981,"low":0.9945,"buy":0.9948,"high":1.0005},"btc_xzc":{"last":0.000897,"change":4.67,"vol":26381.8,"sell":0.000897,"low":0.000847,"buy":0.000891,"high":0.000897},"usdt_bch":{"last":392.81,"change":-1.92,"vol":92225.17542,"sell":393.06,"low":368.84,"buy":392.42,"high":400.96},"btc_cmt":{"last":4.33e-06,"change":-1.14,"vol":1906033.8,"sell":4.37e-06,"low":4.32e-06,"buy":4.33e-06,"high":4.48e-06},"eth_newos":{"last":3.94e-06,"change":-0.76,"vol":12185416.58,"sell":4.09e-06,"low":3.91e-06,"buy":3.9e-06,"high":4.08e-06},"btc_datx":{"last":1.1e-07,"change":10,"vol":34220504.31,"sell":1.1e-07,"low":9e-08,"buy":1e-07,"high":1.1e-07},"btc_lbtc":{"last":0.0006145,"change":-2.93,"vol":3411.40283743,"sell":0.00063977,"low":0.00059193,"buy":0.00059193,"high":0.00064126},"btc_dash":{"last":0.018219,"change":-3.78,"vol":40520.5729,"sell":0.018238,"low":0.018211,"buy":0.018204,"high":0.018987},"usdt_neo":{"last":11.534,"change":-2.21,"vol":485918.355,"sell":11.558,"low":11.018,"buy":11.508,"high":11.804},"usdt_theta":{"last":0.132372,"change":-2.3,"vol":2660254.26,"sell":0.132372,"low":0.123339,"buy":0.131142,"high":0.139008},"btc_cst":{"last":1.2e-07,"change":0,"vol":0,"sell":6.1e-07,"low":1.2e-07,"buy":1.2e-07,"high":1.2e-07},"btc_vinci":{"last":8.584e-05,"change":0.15,"vol":2240051.21,"sell":8.585e-05,"low":8.525e-05,"buy":8.574e-05,"high":8.762e-05},"eth_mith":{"last":0.00016316,"change":-11.89,"vol":921030.969,"sell":0.00018817,"low":0.00015183,"buy":0.00016184,"high":0.00020523},"btc_omg":{"last":0.000257,"change":2.19,"vol":3400824.3046,"sell":0.000258,"low":0.000249,"buy":0.000256,"high":0.00026},"usdt_lme":{"last":0.00322997,"change":12.54,"vol":128640274.4,"sell":0.00322996,"low":0.0026,"buy":0.0029,"high":0.00337777},"usdt2_eos":{"last":6.328,"change":-1.7,"vol":4551304.888,"sell":6.3332,"low":5.9303,"buy":6.3237,"high":6.4449},"btc_ilc":{"last":7.36e-06,"change":-12.17,"vol":1370821.36,"sell":7.99e-06,"low":7.35e-06,"buy":7.36e-06,"high":8.38e-06},"usdt_bhd":{"last":2.099431,"change":-3.34,"vol":36857.07,"sell":2.132079,"low":2.053276,"buy":2.066783,"high":2.183579},"usdt_iost":{"last":0.011101,"change":-1.13,"vol":618462328.9569,"sell":0.011146,"low":0.010501,"buy":0.011096,"high":0.011309},"btc_kbc":{"last":6.83e-06,"change":-13.32,"vol":2902747.51,"sell":6.98e-06,"low":5.84e-06,"buy":6.8e-06,"high":7.88e-06},"btc_mkey":{"last":4.1e-05,"change":2.5,"vol":994.51,"sell":4.23e-05,"low":4e-05,"buy":3.503e-05,"high":4.1e-05},"usdt_elac":{"last":0.04799,"change":11.97,"vol":507568.05,"sell":0.050498,"low":0.0356,"buy":0.035604,"high":0.05066},"btc_r":{"last":1.439e-05,"change":-7.4,"vol":473352.323,"sell":1.502e-05,"low":1.348e-05,"buy":1.412e-05,"high":1.602e-05},"usdt_bsv":{"last":192.39,"change":-10.09,"vol":345338.15576,"sell":193.01,"low":172.16,"buy":191.92,"high":214.08},"btc_edc":{"last":5.5e-07,"change":5.77,"vol":3529836.34,"sell":5.8e-07,"low":4.9e-07,"buy":5.5e-07,"high":5.5e-07},"btc_mfg":{"last":2.3e-07,"change":0,"vol":0,"sell":2.4e-07,"low":2.3e-07,"buy":2.2e-07,"high":2.3e-07},"usdt_ruff":{"last":0.012436,"change":-1.87,"vol":4967031.7441,"sell":0.012535,"low":0.011905,"buy":0.012437,"high":0.012818},"btc_elf":{"last":2.49e-05,"change":4.86,"vol":2573735.042,"sell":2.49e-05,"low":2.365e-05,"buy":2.474e-05,"high":2.516e-05},"btc_bhd":{"last":0.00027192,"change":-2.19,"vol":26854,"sell":0.00027329,"low":0.00026606,"buy":0.00026537,"high":0.00028163},"btc_und":{"last":4.54e-06,"change":-3.4,"vol":1940081.37,"sell":4.54e-06,"low":4.32e-06,"buy":4.41e-06,"high":5.43e-06},"usdt_eth":{"last":245.9,"change":-0.46,"vol":469613.5991,"sell":246.05,"low":235.61,"buy":245.53,"high":250.68},"eth_upe":{"last":1.6e-05,"change":20.94,"vol":23379310.89,"sell":1.768e-05,"low":1.126e-05,"buy":1.6e-05,"high":1.664e-05},"usdt_senno":{"last":5.9e-05,"change":1.72,"vol":594565370.85996,"sell":6e-05,"low":5.2e-05,"buy":5.4e-05,"high":6.5e-05},"btc_mesg":{"last":3.91e-06,"change":3.44,"vol":585841.83,"sell":4.07e-06,"low":3.67e-06,"buy":3.88e-06,"high":3.97e-06},"dft_eth":{"last":822.12,"change":-2.17,"vol":4594.8275,"sell":823.77,"low":798.27,"buy":822.12,"high":845.69},"usdt_zec":{"last":79.97,"change":-1.29,"vol":65833.73726,"sell":80.08,"low":76.55,"buy":79.89,"high":81.07},"usdt_show":{"last":0.001221,"change":0.99,"vol":3941022.8,"sell":0.00121,"low":0.00116,"buy":0.001185,"high":0.001223},"btc_edr":{"last":5.02e-06,"change":0,"vol":0,"sell":5.81e-06,"low":5.02e-06,"buy":0,"high":5.02e-06},"usdt_kbc":{"last":0.0589,"change":47.02,"vol":2704114.64,"sell":0.057,"low":0.040063,"buy":0.054004,"high":0.0589},"btc_ftm":{"last":2.49e-06,"change":5.29,"vol":26843667.1,"sell":2.51e-06,"low":2.29e-06,"buy":2.48e-06,"high":2.58e-06},"btc_rvn":{"last":8.18e-06,"change":-0.73,"vol":103086981,"sell":8.21e-06,"low":7.81e-06,"buy":8.18e-06,"high":8.32e-06},"btc_bhp":{"last":0.00019991,"change":6.25,"vol":3112651.3723,"sell":0.00020031,"low":0.00018784,"buy":0.00019991,"high":0.00020239},"usdt_fair":{"last":0.00357,"change":15.16,"vol":310531666.5,"sell":0.00357,"low":0.00306,"buy":0.00349,"high":0.00389},"dft_btc":{"last":26085.41,"change":-2.35,"vol":69.8019,"sell":26115.86,"low":25292.18,"buy":26039.05,"high":26790.47},"eth_hum":{"last":1.26e-06,"change":0,"vol":39938.19,"sell":1.77e-06,"low":1.26e-06,"buy":1.26e-06,"high":1.26e-06},"btc_fnk":{"last":1.9e-07,"change":5.56,"vol":6542771,"sell":1.3e-07,"low":6e-08,"buy":1e-07,"high":1.9e-07},"btc_kst":{"last":1.6e-07,"change":0,"vol":0,"sell":1e-07,"low":1.6e-07,"buy":3e-08,"high":1.6e-07},"usdt_tsc":{"last":0.00129,"change":222.5,"vol":202797,"sell":0.0012,"low":0.0004,"buy":0.00057,"high":0.00129},"usdt_wpp":{"last":0.001353,"change":-1.74,"vol":16338571.76,"sell":0.001353,"low":0.001026,"buy":0.001324,"high":0.001401},"usdt2_btc":{"last":7792.47,"change":-0.85,"vol":31678.028,"sell":7795,"low":7452.52,"buy":7785.14,"high":7865.73},"btc_cnus":{"last":2.53e-06,"change":0.8,"vol":2968.03,"sell":3.2e-06,"low":2.51e-06,"buy":2.54e-06,"high":2.75e-06},"usdt_zrx":{"last":0.3214,"change":-1.41,"vol":599189.39,"sell":0.3212,"low":0.3055,"buy":0.3178,"high":0.3324},"usdt_aid":{"last":0.028821,"change":3.96,"vol":2342076.59,"sell":0.028999,"low":0.0274,"buy":0.028669,"high":0.029},"btc_gas":{"last":0.00036545,"change":-2.12,"vol":5515.44478,"sell":0.00036944,"low":0.00036453,"buy":0.00036461,"high":0.00037541},"btc_cro":{"last":8.2e-06,"change":-4.21,"vol":60811733.2,"sell":8.22e-06,"low":7.85e-06,"buy":7.87e-06,"high":8.56e-06},"usdt_god":{"last":0.7,"change":1.45,"vol":2226.1092,"sell":0.72,"low":0.51,"buy":0.65,"high":0.7},"usdt_etz":{"last":0.231999,"change":4.55,"vol":672484.8582,"sell":0.23209,"low":0.21621,"buy":0.231999,"high":0.232009},"usdt_omg":{"last":1.9986,"change":1.21,"vol":5844654.6891,"sell":2.0046,"low":1.8832,"buy":1.9964,"high":2.0194},"usdt_bhp":{"last":1.5568,"change":5.82,"vol":3209465.86,"sell":1.5599,"low":1.4672,"buy":1.5568,"high":1.5677},"btc_qtum":{"last":0.000381,"change":-1.3,"vol":1052474.5013,"sell":0.000388,"low":0.000378,"buy":0.000379,"high":0.00039},"usdt_usdc":{"last":0.9997,"change":0.16,"vol":2331193.258,"sell":0.9996,"low":0.9945,"buy":0.9963,"high":1.0025},"usdt_ldbc":{"last":0.000296,"change":0,"vol":0,"sell":0.000252,"low":0.000296,"buy":0.000112,"high":0.000296},"eth_bora":{"last":0.00025199,"change":4.45,"vol":109491.61,"sell":0.00025312,"low":0.00023741,"buy":0.00024617,"high":0.00025392},"usdt_nfsc":{"last":1.393e-05,"change":6.42,"vol":270116164.37,"sell":1.394e-05,"low":1.139e-05,"buy":1.316e-05,"high":1.394e-05},"usdt_xmr":{"last":85.89,"change":0.25,"vol":31387.4705,"sell":85.97,"low":82.8,"buy":85.7,"high":87.22},"usdt2_xrp":{"last":0.4189,"change":3.71,"vol":96614558.507,"sell":0.4191,"low":0.3901,"buy":0.4182,"high":0.4261},"eth_gmb":{"last":1.249e-05,"change":-11.67,"vol":6792666,"sell":1.263e-05,"low":1.074e-05,"buy":1.235e-05,"high":1.421e-05},"usdt_let":{"last":0.006332,"change":2.67,"vol":37114321.5638,"sell":0.006387,"low":0.006041,"buy":0.006336,"high":0.006389},"btc_qnt":{"last":7e-05,"change":0,"vol":0,"sell":0,"low":7e-05,"buy":7e-05,"high":7e-05},"usdt_etc":{"last":7.8774,"change":-3.13,"vol":3057628.26,"sell":7.8841,"low":7.306,"buy":7.8699,"high":8.1367},"btc_etc":{"last":0.001011,"change":-2.37,"vol":2574547.32,"sell":0.001012,"low":0.000975,"buy":0.00101,"high":0.001038},"usdt_csm":{"last":0.568,"change":2.99,"vol":448228.9536,"sell":0.569,"low":0.548,"buy":0.568,"high":0.57},"usdt_block":{"last":2.815778,"change":1.3,"vol":351.46,"sell":3.090509,"low":2.509299,"buy":2.528612,"high":2.815778},"btc_nrg":{"last":0.00029249,"change":4.46,"vol":65978.7326,"sell":0.00029249,"low":0.0002675,"buy":0.000285,"high":0.0002925},"btc_bch":{"last":0.050391,"change":-1.12,"vol":38394.687,"sell":0.050448,"low":0.049219,"buy":0.05036,"high":0.051002},"btc_neo":{"last":0.001478,"change":-1.63,"vol":554097.43,"sell":0.001479,"low":0.001463,"buy":0.001477,"high":0.00151},"btc_ole":{"last":1.67e-06,"change":0,"vol":0,"sell":1.66e-06,"low":1.67e-06,"buy":9.7e-07,"high":1.67e-06},"usdt_ltc":{"last":110.64,"change":5.17,"vol":638489.6418,"sell":110.71,"low":101.04,"buy":110.52,"high":111.98},"eth_npxsxem":{"last":2.63e-06,"change":0,"vol":0,"sell":3.68e-06,"low":2.63e-06,"buy":2.63e-06,"high":2.63e-06},"usdt_aipe":{"last":0.014594,"change":-10.38,"vol":1507756905.97,"sell":0.016197,"low":0.01385,"buy":0.014532,"high":0.016738}},"date":1559879804,"code":0}'
     http_version: 
-  recorded_at: Tue, 31 Jul 2018 09:11:55 GMT
+  recorded_at: Fri, 07 Jun 2019 03:56:44 GMT
 recorded_with: VCR 4.0.0

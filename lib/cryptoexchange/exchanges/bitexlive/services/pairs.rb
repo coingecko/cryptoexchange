@@ -2,7 +2,7 @@ module Cryptoexchange::Exchanges
   module Bitexlive
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitexlive::Market::API_URL}/ticker"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitexlive::Market::API_URL}/tickers"
 
         def fetch
           output = super
@@ -10,9 +10,9 @@ module Cryptoexchange::Exchanges
         end
 
         def adapt(output)
-          output.map do |pair, ticker|
-            next unless ticker['isFrozen'] == '0'
-            target, base = pair.split('_')
+          output.map do |ticker|
+            next unless ticker['tradesEnabled'] == true
+            base, target = ticker["tradingPairs"].split('_')
             Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,

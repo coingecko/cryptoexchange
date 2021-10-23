@@ -12,12 +12,11 @@ module Cryptoexchange::Exchanges
         def adapt(output)
           pairs = output['attachment']
           pairs.map do |pair|
-            Cryptoexchange::Models::Chaoex::MarketPair.new(
+            Cryptoexchange::Models::MarketPair.new(
               base:      pair['tradeCurrencyNameEn'],
               target:    pair['baseCurrencyNameEn'],
-              base_id:   pair['tradeCurrencyId'],
-              target_id: pair['baseCurrencyId'],
-              market:    Chaoex::Market::NAME
+              market:    Chaoex::Market::NAME,
+              inst_id:   "#{pair['tradeCurrencyId']}-#{pair['baseCurrencyId']}"
             )
           end
         end

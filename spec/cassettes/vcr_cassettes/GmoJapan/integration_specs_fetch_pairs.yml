@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coin.z.com/public/v1/ticker
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coin.z.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '1568'
+      Connection:
+      - close
+      Date:
+      - Fri, 21 Jun 2019 06:02:31 GMT
+      X-Amzn-Requestid:
+      - 2809508b-93ea-11e9-9e91-df22677f6ca1
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=3600; includeSubdomains
+      X-Amzn-Remapped-Content-Length:
+      - '1568'
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Amzn-Remapped-Connection:
+      - keep-alive
+      X-Amz-Apigw-Id:
+      - bnbmqG4MtjMFmEQ=
+      X-Amzn-Remapped-Server:
+      - nginx
+      X-Content-Type-Options:
+      - nosniff
+      X-Amzn-Remapped-Date:
+      - Fri, 21 Jun 2019 06:02:31 GMT
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 2fdc135ee3fc62ca8028e67323f87aba.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - KUL50
+      X-Amz-Cf-Id:
+      - zQNdPLAkuE9H2BdKSIKhPbwfdCixho7OKrwyASIAXjPsPMFE0pLSeg==
+    body:
+      encoding: UTF-8
+      string: '{"status":0,"data":[{"ask":"1045237","bid":"1045104","high":"1051896","last":"1044894","low":"1015000","symbol":"BTC_JPY","timestamp":"2019-06-21T06:02:30.360Z","volume":"10365.13"},{"ask":"30782","bid":"30721","high":"31000","last":"30969","low":"29063","symbol":"ETH_JPY","timestamp":"2019-06-21T06:02:31.291Z","volume":"4472.3"},{"ask":"45750","bid":"45701","high":"45850","last":"45800","low":"44127","symbol":"BCH_JPY","timestamp":"2019-06-21T06:02:31.459Z","volume":"856.7"},{"ask":"14791","bid":"14763","high":"14888","last":"14796","low":"14450","symbol":"LTC_JPY","timestamp":"2019-06-21T06:02:30.990Z","volume":"18885"},{"ask":"47.198","bid":"47.086","high":"47.74","last":"47.117","low":"46.077","symbol":"XRP_JPY","timestamp":"2019-06-21T06:02:31.148Z","volume":"6099400"},{"ask":"1045038","bid":"1044792","high":"1050844","last":"1045876","low":"1016099","symbol":"BTC","timestamp":"2019-06-21T06:02:31.317Z","volume":"639.8724"},{"ask":"30819","bid":"30745","high":"30870","last":"30870","low":"29078","symbol":"ETH","timestamp":"2019-06-21T06:02:31.338Z","volume":"1896.71"},{"ask":"45800","bid":"45649","high":"45862","last":"45535","low":"44030","symbol":"BCH","timestamp":"2019-06-21T06:02:31.296Z","volume":"468.91"},{"ask":"14800","bid":"14745","high":"14800","last":"14790","low":"14490","symbol":"LTC","timestamp":"2019-06-21T06:02:31.393Z","volume":"5163.4"},{"ask":"47.2","bid":"47.01","high":"47.5","last":"47.027","low":"46.045","symbol":"XRP","timestamp":"2019-06-21T06:02:30.996Z","volume":"2586370"}],"responsetime":"2019-06-21T06:02:31Z"}'
+    http_version: 
+  recorded_at: Fri, 21 Jun 2019 06:02:31 GMT
+recorded_with: VCR 4.0.0

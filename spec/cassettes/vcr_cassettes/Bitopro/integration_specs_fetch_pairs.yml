@@ -1,0 +1,427 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitopro.com/v2/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.bitopro.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 02 Oct 2019 08:30:02 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Vary:
+      - Origin
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "data": [
+          {
+           "pair": "xem_btc",
+           "lastPrice": "0.00000804",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "0.00000000",
+           "high24hr": "0.00000804",
+           "low24hr": "0.00000804"
+          },
+          {
+           "pair": "bch_eth",
+           "lastPrice": "1.36500000",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "0.00000000",
+           "high24hr": "1.36500000",
+           "low24hr": "1.36500000"
+          },
+          {
+           "pair": "eth_usdt",
+           "lastPrice": "175.47000000",
+           "isBuyer": false,
+           "priceChange24hr": "-2.62",
+           "volume24hr": "101.24205914",
+           "high24hr": "181.76000000",
+           "low24hr": "174.44000000"
+          },
+          {
+           "pair": "qntu_eth",
+           "lastPrice": "0.00000047",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "0.00000000",
+           "high24hr": "0.00000047",
+           "low24hr": "0.00000047"
+          },
+          {
+           "pair": "panda_twd",
+           "lastPrice": "0.02000000",
+           "isBuyer": false,
+           "priceChange24hr": "-33.33",
+           "volume24hr": "2656755.55555550",
+           "high24hr": "0.03000000",
+           "low24hr": "0.02000000"
+          },
+          {
+           "pair": "btg_twd",
+           "lastPrice": "237.00000000",
+           "isBuyer": true,
+           "priceChange24hr": "0.42",
+           "volume24hr": "0.10100000",
+           "high24hr": "237.00000000",
+           "low24hr": "237.00000000"
+          },
+          {
+           "pair": "xrp_twd",
+           "lastPrice": "7.60000000",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "4610.00000000",
+           "high24hr": "7.94770000",
+           "low24hr": "7.60000000"
+          },
+          {
+           "pair": "xem_twd",
+           "lastPrice": "1.03000000",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "0.00000000",
+           "high24hr": "1.03000000",
+           "low24hr": "1.03000000"
+          },
+          {
+           "pair": "eth_twd",
+           "lastPrice": "5430.00000000",
+           "isBuyer": false,
+           "priceChange24hr": "-1.88",
+           "volume24hr": "1538.01965134",
+           "high24hr": "5609.00000000",
+           "low24hr": "5376.00000000"
+          },
+          {
+           "pair": "bch_twd",
+           "lastPrice": "6895.00000000",
+           "isBuyer": false,
+           "priceChange24hr": "-2.68",
+           "volume24hr": "0.94940000",
+           "high24hr": "7075.00000000",
+           "low24hr": "6790.00000000"
+          },
+          {
+           "pair": "btg_usdt",
+           "lastPrice": "12.50000000",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "0.00000000",
+           "high24hr": "12.50000000",
+           "low24hr": "12.50000000"
+          },
+          {
+           "pair": "eos_twd",
+           "lastPrice": "90.95000000",
+           "isBuyer": false,
+           "priceChange24hr": "-3.38",
+           "volume24hr": "2970.72248004",
+           "high24hr": "400.00000000",
+           "low24hr": "88.70000000"
+          },
+          {
+           "pair": "btc_twd",
+           "lastPrice": "255490.00000000",
+           "isBuyer": false,
+           "priceChange24hr": "-1.32",
+           "volume24hr": "99.38603644",
+           "high24hr": "261680.00000000",
+           "low24hr": "253000.00000000"
+          },
+          {
+           "pair": "bito_eth",
+           "lastPrice": "0.00008300",
+           "isBuyer": false,
+           "priceChange24hr": "-3.49",
+           "volume24hr": "3657.81600000",
+           "high24hr": "0.00008500",
+           "low24hr": "0.00008300"
+          },
+          {
+           "pair": "rpc_twd",
+           "lastPrice": "0.12000000",
+           "isBuyer": false,
+           "priceChange24hr": "-7.69",
+           "volume24hr": "2000.00000000",
+           "high24hr": "0.12000000",
+           "low24hr": "0.12000000"
+          },
+          {
+           "pair": "btg_eth",
+           "lastPrice": "0.06500000",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "0.00000000",
+           "high24hr": "0.06500000",
+           "low24hr": "0.06500000"
+          },
+          {
+           "pair": "mith_twd",
+           "lastPrice": "0.40000000",
+           "isBuyer": true,
+           "priceChange24hr": "2.56",
+           "volume24hr": "11521.20000000",
+           "high24hr": "0.40000000",
+           "low24hr": "0.39000000"
+          },
+          {
+           "pair": "ltc_btc",
+           "lastPrice": "0.00676500",
+           "isBuyer": true,
+           "priceChange24hr": "0.59",
+           "volume24hr": "16.18480342",
+           "high24hr": "0.00676500",
+           "low24hr": "0.00664500"
+          },
+          {
+           "pair": "bch_btc",
+           "lastPrice": "0.02703300",
+           "isBuyer": false,
+           "priceChange24hr": "-1.34",
+           "volume24hr": "11.51200000",
+           "high24hr": "0.02716500",
+           "low24hr": "0.02663300"
+          },
+          {
+           "pair": "ltc_usdt",
+           "lastPrice": "55.04000000",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "0.00000000",
+           "high24hr": "55.04000000",
+           "low24hr": "55.04000000"
+          },
+          {
+           "pair": "bito_usdt",
+           "lastPrice": "0.01430000",
+           "isBuyer": false,
+           "priceChange24hr": "-7.14",
+           "volume24hr": "40342.45029410",
+           "high24hr": "0.01560000",
+           "low24hr": "0.01330000"
+          },
+          {
+           "pair": "bito_twd",
+           "lastPrice": "0.46000000",
+           "isBuyer": false,
+           "priceChange24hr": "-2.13",
+           "volume24hr": "416713.47090122",
+           "high24hr": "0.48000000",
+           "low24hr": "0.44000000"
+          },
+          {
+           "pair": "bcd_twd",
+           "lastPrice": "32.00000000",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "0.00000000",
+           "high24hr": "32.00000000",
+           "low24hr": "32.00000000"
+          },
+          {
+           "pair": "ltc_eth",
+           "lastPrice": "0.29002200",
+           "isBuyer": false,
+           "priceChange24hr": "-10.91",
+           "volume24hr": "27.19608340",
+           "high24hr": "0.29002200",
+           "low24hr": "0.29002200"
+          },
+          {
+           "pair": "bnb_usdt",
+           "lastPrice": "15.90100000",
+           "isBuyer": false,
+           "priceChange24hr": "-0.87",
+           "volume24hr": "158.46391896",
+           "high24hr": "16.19700000",
+           "low24hr": "15.89600000"
+          },
+          {
+           "pair": "bch_usdt",
+           "lastPrice": "232.00000000",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "0.00000000",
+           "high24hr": "232.00000000",
+           "low24hr": "232.00000000"
+          },
+          {
+           "pair": "bchsv_twd",
+           "lastPrice": "2200.00000000",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "0.00000000",
+           "high24hr": "2200.00000000",
+           "low24hr": "2200.00000000"
+          },
+          {
+           "pair": "panda_eth",
+           "lastPrice": "0.00000500",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "0.00000000",
+           "high24hr": "0.00000500",
+           "low24hr": "0.00000500"
+          },
+          {
+           "pair": "eth_btc",
+           "lastPrice": "0.02131500",
+           "isBuyer": false,
+           "priceChange24hr": "-0.49",
+           "volume24hr": "60.28902302",
+           "high24hr": "0.02159700",
+           "low24hr": "0.02109800"
+          },
+          {
+           "pair": "bito_btc",
+           "lastPrice": "0.00000179",
+           "isBuyer": false,
+           "priceChange24hr": "-2.72",
+           "volume24hr": "14544.88113306",
+           "high24hr": "0.00000186",
+           "low24hr": "0.00000176"
+          },
+          {
+           "pair": "cgp_twd",
+           "lastPrice": "4.32000000",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "0.00000000",
+           "high24hr": "4.32000000",
+           "low24hr": "4.32000000"
+          },
+          {
+           "pair": "npxs_eth",
+           "lastPrice": "0.00000202",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "0.00000000",
+           "high24hr": "0.00000202",
+           "low24hr": "0.00000202"
+          },
+          {
+           "pair": "btc_usdt",
+           "lastPrice": "8254.40000000",
+           "isBuyer": false,
+           "priceChange24hr": "-1.72",
+           "volume24hr": "1.91670386",
+           "high24hr": "8399.22000000",
+           "low24hr": "8226.25000000"
+          },
+          {
+           "pair": "rpc_eth",
+           "lastPrice": "0.00002350",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "325678.29680480",
+           "high24hr": "0.00002350",
+           "low24hr": "0.00002300"
+          },
+          {
+           "pair": "trx_twd",
+           "lastPrice": "0.43000000",
+           "isBuyer": false,
+           "priceChange24hr": "-4.44",
+           "volume24hr": "1131.20000000",
+           "high24hr": "0.43000000",
+           "low24hr": "0.43000000"
+          },
+          {
+           "pair": "twdt_eth",
+           "lastPrice": "0.00009669",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "0.00000000",
+           "high24hr": "0.00009669",
+           "low24hr": "0.00009669"
+          },
+          {
+           "pair": "sda_twd",
+           "lastPrice": "0.04000000",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "0.00000000",
+           "high24hr": "0.04000000",
+           "low24hr": "0.04000000"
+          },
+          {
+           "pair": "usdt_twd",
+           "lastPrice": "30.95000000",
+           "isBuyer": true,
+           "priceChange24hr": "0.42",
+           "volume24hr": "1148083.76168022",
+           "high24hr": "30.96000000",
+           "low24hr": "30.77000000"
+          },
+          {
+           "pair": "bnb_twd",
+           "lastPrice": "479.96000000",
+           "isBuyer": false,
+           "priceChange24hr": "-3.23",
+           "volume24hr": "198.84677490",
+           "high24hr": "503.67000000",
+           "low24hr": "479.96000000"
+          },
+          {
+           "pair": "eos_usdt",
+           "lastPrice": "2.90000000",
+           "isBuyer": false,
+           "priceChange24hr": "-4.29",
+           "volume24hr": "362.91404418",
+           "high24hr": "3.03600000",
+           "low24hr": "2.90000000"
+          },
+          {
+           "pair": "xem_usdt",
+           "lastPrice": "0.05350000",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "0.00000000",
+           "high24hr": "0.05350000",
+           "low24hr": "0.05350000"
+          },
+          {
+           "pair": "ltc_twd",
+           "lastPrice": "1730.00000000",
+           "isBuyer": false,
+           "priceChange24hr": "-0.57",
+           "volume24hr": "31.99217312",
+           "high24hr": "1756.00000000",
+           "low24hr": "1699.00000000"
+          },
+          {
+           "pair": "xem_eth",
+           "lastPrice": "0.00029300",
+           "isBuyer": false,
+           "priceChange24hr": "0",
+           "volume24hr": "0.00000000",
+           "high24hr": "0.00029300",
+           "low24hr": "0.00029300"
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Wed, 02 Oct 2019 08:30:02 GMT
+recorded_with: VCR 4.0.0

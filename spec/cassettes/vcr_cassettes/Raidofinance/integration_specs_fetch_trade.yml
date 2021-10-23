@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://datacenter.raidofinance.eu/v1/trades/BCHBTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - datacenter.raidofinance.eu
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Tue, 22 Oct 2019 05:33:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1084'
+      Connection:
+      - close
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization, Sid, X-XSS-Protection
+      Access-Control-Expose-Headers:
+      - Authorization, Sid
+      Access-Control-Max-Age:
+      - '360000'
+      Etag:
+      - W/"43c-dEdN4Kryy0YF9GOGGn4jQmrfaqU"
+      Access-Controll-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: '{"status":200,"data":{"count":277851,"rows":[{"id":2899879,"type":"buy","volume":0.0280206,"price":0.028269,"close_time":1571720670,"asset":"BCHBTC"},{"id":2899878,"type":"buy","volume":0.0353,"price":0.028269,"close_time":1571720660,"asset":"BCHBTC"},{"id":2899876,"type":"buy","volume":0.010835,"price":0.028269,"close_time":1571720598,"asset":"BCHBTC"},{"id":2899875,"type":"buy","volume":0.03946,"price":0.028269,"close_time":1571720594,"asset":"BCHBTC"},{"id":2899846,"type":"buy","volume":0.0232102,"price":0.028555,"close_time":1571715237,"asset":"BCHBTC"},{"id":2899845,"type":"buy","volume":0.03957,"price":0.028544,"close_time":1571715237,"asset":"BCHBTC"},{"id":2899844,"type":"buy","volume":0.02154,"price":0.028541,"close_time":1571715237,"asset":"BCHBTC"},{"id":2899843,"type":"buy","volume":0.010965,"price":0.028539,"close_time":1571715237,"asset":"BCHBTC"},{"id":2899829,"type":"buy","volume":0.051863,"price":0.028507,"close_time":1571712227,"asset":"BCHBTC"},{"id":2899828,"type":"buy","volume":0.014585,"price":0.028498,"close_time":1571712227,"asset":"BCHBTC"}]}}'
+    http_version: 
+  recorded_at: Tue, 22 Oct 2019 05:33:58 GMT
+recorded_with: VCR 4.0.0

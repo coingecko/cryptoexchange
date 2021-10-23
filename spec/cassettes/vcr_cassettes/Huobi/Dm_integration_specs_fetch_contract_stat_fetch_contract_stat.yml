@@ -1,0 +1,177 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hbdm.com/api/v1/contract_open_interest?contract_type=this_week&symbol=BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hbdm.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Apr 2020 11:23:52 GMT
+      Content-Type:
+      - text/plain;charset=UTF-8
+      Content-Length:
+      - '184'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0eedaf0683aef2a5c8a3ebe7157f9e421585913032; expires=Sun, 03-May-20
+        11:23:52 GMT; path=/; domain=.hbdm.com; HttpOnly; SameSite=Lax
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Reqid:
+      - 395a0860681c411bac786daa269328bd
+      Ratelimit-Remaining:
+      - '59'
+      Ratelimit-Reset:
+      - '1585913035509'
+      Ratelimit-Interval:
+      - '3000'
+      Ratelimit-Limit:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57e26b84dfb77570-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","data":[{"volume":218216.000000000000000000,"amount":3142.235489105939714397,"symbol":"BTC","contract_type":"this_week","contract_code":"BTC200410"}],"ts":1585913032509}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2020 11:23:48 GMT
+- request:
+    method: get
+    uri: https://api.hbdm.com/api/v1/contract_index?symbol=BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hbdm.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Apr 2020 11:23:52 GMT
+      Content-Type:
+      - text/plain;charset=UTF-8
+      Content-Length:
+      - '123'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d0eedaf0683aef2a5c8a3ebe7157f9e421585913032; expires=Sun, 03-May-20
+        11:23:52 GMT; path=/; domain=.hbdm.com; HttpOnly; SameSite=Lax
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Reqid:
+      - 148772c7f7b341898b78de5b89ebbecd
+      Ratelimit-Remaining:
+      - '58'
+      Ratelimit-Reset:
+      - '1585913035510'
+      Ratelimit-Interval:
+      - '3000'
+      Ratelimit-Limit:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57e26b85eae67570-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","data":[{"symbol":"BTC","index_price":6961.947500000000000000,"index_ts":1585913028022}],"ts":1585913032918}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2020 11:23:48 GMT
+- request:
+    method: get
+    uri: https://api.hbdm.com/api/v1/contract_contract_info?contract_type=this_week&symbol=BTC
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.hbdm.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Apr 2020 11:23:53 GMT
+      Content-Type:
+      - text/plain;charset=UTF-8
+      Content-Length:
+      - '261'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d7cc89d7d193b439abb669eafcf7ca7821585913033; expires=Sun, 03-May-20
+        11:23:53 GMT; path=/; domain=.hbdm.com; HttpOnly; SameSite=Lax
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Reqid:
+      - 2fbce66634b14a02b2e9dcd941681b64
+      Ratelimit-Remaining:
+      - '57'
+      Ratelimit-Reset:
+      - '1585913035510'
+      Ratelimit-Interval:
+      - '3000'
+      Ratelimit-Limit:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57e26b886956c109-KUL
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","data":[{"symbol":"BTC","contract_code":"BTC200410","contract_type":"this_week","contract_size":100.000000000000000000,"price_tick":0.010000000000000000,"delivery_date":"20200410","create_date":"20200327","contract_status":1}],"ts":1585913033319}'
+    http_version: 
+  recorded_at: Fri, 03 Apr 2020 11:23:48 GMT
+recorded_with: VCR 4.0.0

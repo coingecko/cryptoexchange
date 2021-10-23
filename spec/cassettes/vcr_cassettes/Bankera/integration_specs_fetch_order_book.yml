@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-exchange.bankera.com/orderbooks/eth-btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api-exchange.bankera.com
+      User-Agent:
+      - http.rb/3.0.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 09 Jan 2019 02:48:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d3e355513db8c88ecfeec7260a390965c1547002099; expires=Thu, 09-Jan-20
+        02:48:19 GMT; path=/; domain=.bankera.com; HttpOnly; Secure
+      Allow:
+      - GET
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      - DENY
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4963958faa8ba32c-HKG
+    body:
+      encoding: ASCII-8BIT
+      string: '{"bids":[{"id":554490,"price":"0.03713583","amount":"0.18306422"},{"id":554484,"price":"0.03709797","amount":"1.52476559"},{"id":554507,"price":"0.03706076","amount":"1.75479374"},{"id":554485,"price":"0.03702347","amount":"2.98173664"},{"id":554510,"price":"0.0369863","amount":"3.04288047"},{"id":554495,"price":"0.03694912","amount":"3.26773715"},{"id":554489,"price":"0.03691192","amount":"3.87969329"},{"id":554508,"price":"0.03687461","amount":"4.63560466"},{"id":554505,"price":"0.03683749","amount":"4.52348764"},{"id":554519,"price":"0.03679957","amount":"7.16901623"},{"id":554496,"price":"0.03668886","amount":"4.40668133"},{"id":554527,"price":"0.0365772","amount":"4.72639289"},{"id":554499,"price":"0.03646587","amount":"3.49421563"},{"id":554509,"price":"0.0363909","amount":"6.13683544"},{"id":554522,"price":"0.03620454","amount":"9.32198806"},{"id":554483,"price":"0.03564679","amount":"11.60128446"},{"id":554525,"price":"0.03501464","amount":"17.50649872"},{"id":554514,"price":"0.03434547","amount":"21.6694171"},{"id":554502,"price":"0.03341614","amount":"27.11634154"},{"id":554494,"price":"0.03230093","amount":"40.95092445"},{"id":490591,"price":"0.00135","amount":"2.36"},{"id":491038,"price":"0.0005","amount":"1"}],"asks":[{"id":554493,"price":"0.03771402","amount":"3.73859618"},{"id":554497,"price":"0.038164","amount":"1.52476559"},{"id":554521,"price":"0.03816513","amount":"1.75479374"},{"id":554526,"price":"0.03816588","amount":"2.98173664"},{"id":554506,"price":"0.03816701","amount":"3.04288047"},{"id":554487,"price":"0.03816814","amount":"3.26773715"},{"id":554520,"price":"0.03816927","amount":"3.87969329"},{"id":554512,"price":"0.03817078","amount":"4.63560466"},{"id":554516,"price":"0.03817229","amount":"4.52348764"},{"id":554503,"price":"0.03817381","amount":"7.16901623"},{"id":554500,"price":"0.03820488","amount":"4.29835605"},{"id":554515,"price":"0.03821638","amount":"3.61385843"},{"id":554488,"price":"0.03822409","amount":"6.04060163"},{"id":554513,"price":"0.03823586","amount":"6.59784565"},{"id":554492,"price":"0.0387263","amount":"11.29504304"},{"id":554482,"price":"0.03936137","amount":"18.2095014"},{"id":554523,"price":"0.04003191","amount":"22.2741006"},{"id":554517,"price":"0.04096274","amount":"27.18328365"},{"id":490627,"price":"0.04185914","amount":"0.25"},{"id":554498,"price":"0.04207983","amount":"37.68739269"},{"id":554268,"price":"10","amount":"0.01"}]}'
+    http_version: 
+  recorded_at: Wed, 09 Jan 2019 02:48:19 GMT
+recorded_with: VCR 4.0.0

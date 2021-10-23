@@ -27,25 +27,29 @@ module Cryptoexchange::Exchanges
                             market: Bithumb::Market::NAME
                           )
             adapt(ticker, market_pair, output['data']['date'])
-          end
+          end.compact
         end
 
         def adapt(output, market_pair, date)
           market = output
-          ticker = Cryptoexchange::Models::Ticker.new
-          ticker.base = market_pair.base
-          ticker.target = market_pair.target
-          ticker.market = Bithumb::Market::NAME
-          ticker.ask = NumericHelper.to_d(market['sell_price'])
-          ticker.bid = NumericHelper.to_d(market['buy_price'])
-          ticker.last = NumericHelper.to_d(market['closing_price'])
-          ticker.high = NumericHelper.to_d(market['max_price'])
-          ticker.low = NumericHelper.to_d(market['min_price'])
-          #use 1day volume instead of 7days
-          ticker.volume = NumericHelper.to_d(market['volume_1day'])
-          ticker.timestamp = date.to_i / 1000
-          ticker.payload = market
-          ticker
+          if output.empty?
+            nil
+          else
+            ticker = Cryptoexchange::Models::Ticker.new
+            ticker.base = market_pair.base
+            ticker.target = market_pair.target
+            ticker.market = Bithumb::Market::NAME
+            ticker.ask = NumericHelper.to_d(market['sell_price'])
+            ticker.bid = NumericHelper.to_d(market['buy_price'])
+            ticker.last = NumericHelper.to_d(market['closing_price'])
+            ticker.high = NumericHelper.to_d(market['max_price'])
+            ticker.low = NumericHelper.to_d(market['min_price'])
+            #use 1day volume instead of 7days
+            ticker.volume = NumericHelper.to_d(market['units_traded_24H'])
+            ticker.timestamp = nil
+            ticker.payload = market
+            ticker
+          end
         end
       end
     end

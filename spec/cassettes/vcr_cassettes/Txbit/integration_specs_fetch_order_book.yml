@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.txbit.io/api/public/getorderbook?market=ETH/BTC&type=both
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.txbit.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 15 May 2019 02:29:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=db41a08cbc69e92eb3f4b190960c07e341557887345; expires=Thu, 14-May-20
+        02:29:05 GMT; path=/; domain=.txbit.io; HttpOnly; Secure
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4d71aea2898da9dc-SIN
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"message":"","result":{"buy":[{"Quantity":0.02140000,"Rate":0.02700002},{"Quantity":0.06810000,"Rate":0.02700001},{"Quantity":1.00000000,"Rate":0.02700000},{"Quantity":1.00000000,"Rate":0.02600000},{"Quantity":0.27600000,"Rate":0.02500001},{"Quantity":0.67550000,"Rate":0.02500000},{"Quantity":7.28970000,"Rate":0.02450000}],"sell":[{"Quantity":0.03330000,"Rate":0.03610000},{"Quantity":10.29690000,"Rate":0.03600000},{"Quantity":9.00730000,"Rate":0.03550000},{"Quantity":4.60540000,"Rate":0.03500000},{"Quantity":3.14750000,"Rate":0.03450000},{"Quantity":1.17110000,"Rate":0.03400000},{"Quantity":0.33490000,"Rate":0.03399998},{"Quantity":0.29200000,"Rate":0.03399997},{"Quantity":0.15070000,"Rate":0.03399980},{"Quantity":0.04590000,"Rate":0.03399974},{"Quantity":0.01970000,"Rate":0.03399973},{"Quantity":0.05550000,"Rate":0.03399969},{"Quantity":9.59410000,"Rate":0.03350000},{"Quantity":0.06840000,"Rate":0.03349999},{"Quantity":0.08020000,"Rate":0.03349998},{"Quantity":0.05130000,"Rate":0.03349997},{"Quantity":0.03780000,"Rate":0.03349995},{"Quantity":0.03830000,"Rate":0.03349898},{"Quantity":15.17340000,"Rate":0.03300000},{"Quantity":5.22310000,"Rate":0.03200000},{"Quantity":6.86350000,"Rate":0.03100000},{"Quantity":5.91960000,"Rate":0.03000000},{"Quantity":7.49720000,"Rate":0.02900000},{"Quantity":3.22780000,"Rate":0.02800000}]}}'
+    http_version: 
+  recorded_at: Wed, 15 May 2019 02:29:05 GMT
+recorded_with: VCR 4.0.0

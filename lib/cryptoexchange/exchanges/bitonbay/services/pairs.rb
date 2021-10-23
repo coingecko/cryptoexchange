@@ -2,19 +2,20 @@ module Cryptoexchange::Exchanges
   module Bitonbay
     module Services
       class Pairs < Cryptoexchange::Services::Pairs
-        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitonbay::Market::API_URL}/api-public-ticker"
+        PAIRS_URL = "#{Cryptoexchange::Exchanges::Bitonbay::Market::API_URL}/ticker"
 
         def fetch
           output = super
-          market_pairs = []
-          output.each do |pair|
-            market_pairs << Cryptoexchange::Models::MarketPair.new(
-                              base: pair['zone_type'],
-                              target: pair['currency_type'],
-                              market: Bitonbay::Market::NAME
-                            )
+          output['data'].map do |output|
+            base = output["coin_type"]
+            target = output["market_type"]
+            
+            Cryptoexchange::Models::MarketPair.new(
+              base: base,
+              target: target,
+              market: Bitonbay::Market::NAME
+            )
           end
-          market_pairs
         end
       end
     end

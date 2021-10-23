@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coinx.pro/rest/v1/tickers
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.coinx.pro
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 06 May 2019 08:21:17 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '4636'
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      Vary:
+      - Accept-Language, Cookie
+      Content-Language:
+      - zh-hans
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data": [{"contract": "ETH/BTC", "commodity": "ETH", "currency": "BTC",
+        "last": 0.0291, "volume": 0.0, "change": 0.0, "timestamp": 1557130875689717,
+        "bid": 8e-05, "ask": 0.0462}, {"contract": "BTC/USDT", "commodity": "BTC",
+        "currency": "USDT", "last": 5662.13, "volume": 35.46218, "change": -1.3609163363964965,
+        "timestamp": 1557130876483806, "bid": 5654.4, "ask": 5666.4}, {"contract":
+        "ETH/USDT", "commodity": "ETH", "currency": "USDT", "last": 161.07, "volume":
+        4.81454, "change": -2.2099447513812245, "timestamp": 1557130876102462, "bid":
+        159.77, "ask": 160.55}, {"contract": "UUU/BTC", "commodity": "UUU", "currency":
+        "BTC", "last": 8.21e-08, "volume": 760997.43, "change": -2.378121284185499,
+        "timestamp": 1557130875583616, "bid": 7.67e-08, "ask": 8.78e-08}, {"contract":
+        "UUU/ETH", "commodity": "UUU", "currency": "ETH", "last": 2.8974e-06, "volume":
+        1528029.5, "change": -2.6542131433947054, "timestamp": 1557130875525513, "bid":
+        2.7835e-06, "ask": 3.0128e-06}, {"contract": "OMG/BTC", "commodity": "OMG",
+        "currency": "BTC", "last": 0.000269, "volume": 15722.3958, "change": -1.82481751824818,
+        "timestamp": 1557130875866497, "bid": 0.000249, "ask": 0.00029}, {"contract":
+        "OMG/ETH", "commodity": "OMG", "currency": "ETH", "last": 0.009529, "volume":
+        41589.5737, "change": -1.5802520140466882, "timestamp": 1557130875641236,
+        "bid": 0.009219, "ask": 0.009842}, {"contract": "ZRX/BTC", "commodity": "ZRX",
+        "currency": "BTC", "last": 4.645e-05, "volume": 21156.97, "change": 0.6936917407327052,
+        "timestamp": 1557130875880536, "bid": 4.438e-05, "ask": 4.847e-05}, {"contract":
+        "ZRX/ETH", "commodity": "ZRX", "currency": "ETH", "last": 0.00164147, "volume":
+        13790.51, "change": 0.785917343599371, "timestamp": 1557130876098780, "bid":
+        0.00161713, "ask": 0.00166582}, {"contract": "EOS/USDT", "commodity": "EOS",
+        "currency": "USDT", "last": 4.6771, "volume": 38568.0514, "change": -4.461331045471275,
+        "timestamp": 1557130876644752, "bid": 4.4771, "ask": 4.8778}, {"contract":
+        "EOS/BTC", "commodity": "EOS", "currency": "BTC", "last": 0.0008267, "volume":
+        54832.4188, "change": -3.037766830870283, "timestamp": 1557130875525378, "bid":
+        0.0007964, "ask": 0.0008569}, {"contract": "EOS/ETH", "commodity": "EOS",
+        "currency": "ETH", "last": 0.029204, "volume": 43683.2678, "change": -3.070131766736363,
+        "timestamp": 1557130876644622, "bid": 0.028199, "ask": 0.030209}, {"contract":
+        "XRP/USDT", "commodity": "XRP", "currency": "USDT", "last": 0.2955, "volume":
+        323114.58, "change": -1.038178164768919, "timestamp": 1557130876439525, "bid":
+        0.2754, "ask": 0.2986}, {"contract": "XRP/BTC", "commodity": "XRP", "currency":
+        "BTC", "last": 5.224e-05, "volume": 75696.0, "change": -0.26727758686521963,
+        "timestamp": 1557130875264952, "bid": 5.023e-05, "ask": 5.426e-05}, {"contract":
+        "LTC/USDT", "commodity": "LTC", "currency": "USDT", "last": 72.27, "volume":
+        3.4925, "change": -5.082742316784876, "timestamp": 1557130875821112, "bid":
+        70.32, "ask": 74.36}, {"contract": "LTC/BTC", "commodity": "LTC", "currency":
+        "BTC", "last": 0.012769, "volume": 14.9331, "change": -3.739163211458725,
+        "timestamp": 1557130875821327, "bid": 0.012383, "ask": 0.013185}, {"contract":
+        "BCH/USDT", "commodity": "BCH", "currency": "USDT", "last": 264.85, "volume":
+        400.1964, "change": -3.053302834962224, "timestamp": 1554257095521920, "bid":
+        259.77, "ask": 269.95}, {"contract": "BCH/BTC", "commodity": "BCH", "currency":
+        "BTC", "last": 0.053586, "volume": 236.4744, "change": -1.7146830915954752,
+        "timestamp": 1554257095555146, "bid": 0.051577, "ask": 0.055619}, {"contract":
+        "VNST/ETH", "commodity": "VNST", "currency": "ETH", "last": 8.697e-05, "volume":
+        0.0, "change": 0.0, "timestamp": 1557130876316773, "bid": 3.999e-05, "ask":
+        9.799e-05}, {"contract": "VNS/USDT", "commodity": "VNS", "currency": "USDT",
+        "last": 0.012102, "volume": 3008953.98, "change": -6.900530810062314, "timestamp":
+        1557130877085342, "bid": 0.012102, "ask": 0.01299}, {"contract": "VNST/USDT",
+        "commodity": "VNST", "currency": "USDT", "last": 0.013986, "volume": 143306.44,
+        "change": 5.237020316027092, "timestamp": 1557130876656995, "bid": 0.0121,
+        "ask": 0.013986}, {"contract": "NXBT/USDT", "commodity": "NXBT", "currency":
+        "USDT", "last": 0.22055, "volume": 0.0, "change": 0.0, "timestamp": 1557130875671490,
+        "bid": 0.22, "ask": 0.221}, {"contract": "NXBT/BTC", "commodity": "NXBT",
+        "currency": "BTC", "last": 6.18e-05, "volume": 0.0, "change": 0.0, "timestamp":
+        1557130876925578, "bid": 0.0, "ask": 4.82e-05}, {"contract": "ZCN/BTC", "commodity":
+        "ZCN", "currency": "BTC", "last": 1.1e-06, "volume": 0.0, "change": 0.0, "timestamp":
+        1557130876809000, "bid": 3e-07, "ask": 1.1e-06}]}'
+    http_version: 
+  recorded_at: Mon, 06 May 2019 08:21:17 GMT
+recorded_with: VCR 4.0.0

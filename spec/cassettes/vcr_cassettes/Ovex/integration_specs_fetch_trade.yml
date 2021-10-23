@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.ovex.io/api/v2/trades?market=btctusd
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.ovex.io
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.13.12
+      Date:
+      - Mon, 05 Aug 2019 03:06:26 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '8017'
+      Connection:
+      - close
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Version:
+      - HTTP/1.1
+      Host:
+      - www.ovex.io
+      X-Real-Ip:
+      - 203.106.141.124
+      X-Forwarded-For:
+      - 203.106.141.124
+      X-Forwarded-Host:
+      - www.ovex.io
+      X-Forwarded-Port:
+      - '443'
+      X-Forwarded-Proto:
+      - https
+      X-Original-Uri:
+      - "/api/v2/trades?market=btctusd"
+      X-Scheme:
+      - https
+      User-Agent:
+      - http.rb/5.0.0.pre
+      Etag:
+      - W/"72ed408c24d33cea74fa64259b4fb957"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - efea6f46-ab73-46a9-95c1-df65821dc239
+      X-Runtime:
+      - '0.021606'
+      X-Cloud-Trace-Context:
+      - ba37fb1674124f6389a3e124c65b24e5;o=0
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":127302,"price":"10632.7","volume":"0.011892","funds":"126.4440684","market":"btctusd","created_at":"2019-08-03T23:32:16+02:00","maker_type":"buy"},{"id":127212,"price":"10632.7","volume":"0.010018","funds":"106.5183886","market":"btctusd","created_at":"2019-08-03T14:53:49+02:00","maker_type":"buy"},{"id":127183,"price":"10644.9","volume":"0.003966","funds":"42.2176734","market":"btctusd","created_at":"2019-08-03T11:15:42+02:00","maker_type":"sell"},{"id":127182,"price":"10634.5","volume":"0.001788","funds":"19.014486","market":"btctusd","created_at":"2019-08-03T11:15:42+02:00","maker_type":"sell"},{"id":127150,"price":"10634.5","volume":"0.007359","funds":"78.2592855","market":"btctusd","created_at":"2019-08-03T09:20:55+02:00","maker_type":"sell"},{"id":127130,"price":"10642.6","volume":"0.008048","funds":"85.6516448","market":"btctusd","created_at":"2019-08-03T05:42:17+02:00","maker_type":"buy"},{"id":127114,"price":"10646.5","volume":"0.009266","funds":"98.650469","market":"btctusd","created_at":"2019-08-03T03:48:37+02:00","maker_type":"buy"},{"id":127084,"price":"10646.5","volume":"0.0118","funds":"125.6287","market":"btctusd","created_at":"2019-08-02T23:06:17+02:00","maker_type":"buy"},{"id":127014,"price":"10499.4827","volume":"0.004135","funds":"43.4153609645","market":"btctusd","created_at":"2019-08-02T16:45:39+02:00","maker_type":"buy"},{"id":126999,"price":"10448.648895","volume":"0.000852","funds":"8.90224885854","market":"btctusd","created_at":"2019-08-02T16:33:51+02:00","maker_type":"buy"},{"id":126998,"price":"10479.308012","volume":"0.016577","funds":"173.715488914924","market":"btctusd","created_at":"2019-08-02T16:33:51+02:00","maker_type":"buy"},{"id":126972,"price":"10479.069258","volume":"0.014796","funds":"155.048308741368","market":"btctusd","created_at":"2019-08-02T16:05:21+02:00","maker_type":"buy"},{"id":126952,"price":"10480.054117","volume":"0.005397","funds":"56.560852069449","market":"btctusd","created_at":"2019-08-02T15:44:44+02:00","maker_type":"buy"},{"id":126949,"price":"10420.329211","volume":"0.007787","funds":"81.143103566057","market":"btctusd","created_at":"2019-08-02T15:38:33+02:00","maker_type":"buy"},{"id":126948,"price":"10470.862099","volume":"0.013429","funds":"140.613207127471","market":"btctusd","created_at":"2019-08-02T15:38:32+02:00","maker_type":"buy"},{"id":126939,"price":"10433.533727","volume":"0.010712","funds":"111.764013283624","market":"btctusd","created_at":"2019-08-02T15:30:27+02:00","maker_type":"buy"},{"id":126938,"price":"10482.003939","volume":"0.010455","funds":"109.589351182245","market":"btctusd","created_at":"2019-08-02T15:30:27+02:00","maker_type":"buy"},{"id":126929,"price":"10429.02515","volume":"0.007162","funds":"74.6926781243","market":"btctusd","created_at":"2019-08-02T15:21:53+02:00","maker_type":"buy"},{"id":126928,"price":"10463.789021","volume":"0.015579","funds":"163.015369158159","market":"btctusd","created_at":"2019-08-02T15:21:53+02:00","maker_type":"buy"},{"id":126924,"price":"10438.506978","volume":"0.002199","funds":"22.954276844622","market":"btctusd","created_at":"2019-08-02T15:15:52+02:00","maker_type":"buy"},{"id":126923,"price":"10480.103857","volume":"0.019535","funds":"204.728828846495","market":"btctusd","created_at":"2019-08-02T15:15:52+02:00","maker_type":"buy"},{"id":126912,"price":"10459.613139","volume":"0.003855","funds":"40.321808650845","market":"btctusd","created_at":"2019-08-02T15:03:30+02:00","maker_type":"buy"},{"id":126911,"price":"10498.318775","volume":"0.020067","funds":"210.669762857925","market":"btctusd","created_at":"2019-08-02T15:03:29+02:00","maker_type":"buy"},{"id":126884,"price":"10435.165535","volume":"0.003148","funds":"32.84990110418","market":"btctusd","created_at":"2019-08-02T14:37:55+02:00","maker_type":"buy"},{"id":126883,"price":"10465.052426","volume":"0.019477","funds":"203.827826101202","market":"btctusd","created_at":"2019-08-02T14:37:55+02:00","maker_type":"buy"},{"id":126875,"price":"10412.67234","volume":"0.009557","funds":"99.51390955338","market":"btctusd","created_at":"2019-08-02T14:27:36+02:00","maker_type":"buy"},{"id":126874,"price":"10449.811981","volume":"0.009862","funds":"103.056045756622","market":"btctusd","created_at":"2019-08-02T14:27:35+02:00","maker_type":"buy"},{"id":126866,"price":"10449.772189","volume":"0.006102","funds":"63.764509897278","market":"btctusd","created_at":"2019-08-02T14:17:45+02:00","maker_type":"buy"},{"id":126851,"price":"10437.725075","volume":"0.011987","funds":"125.117010474025","market":"btctusd","created_at":"2019-08-02T14:04:37+02:00","maker_type":"buy"},{"id":126839,"price":"10430.68184","volume":"0.003949","funds":"41.19076258616","market":"btctusd","created_at":"2019-08-02T13:55:27+02:00","maker_type":"buy"},{"id":126834,"price":"10458.039036","volume":"0.001765","funds":"18.45843889854","market":"btctusd","created_at":"2019-08-02T13:47:09+02:00","maker_type":"buy"},{"id":126815,"price":"10442.054368","volume":"0.001924","funds":"20.090512604032","market":"btctusd","created_at":"2019-08-02T13:29:37+02:00","maker_type":"buy"},{"id":126814,"price":"10458.168361","volume":"0.013801","funds":"144.333181550161","market":"btctusd","created_at":"2019-08-02T13:29:37+02:00","maker_type":"buy"},{"id":126803,"price":"10468.912277","volume":"0.012614","funds":"132.054859462078","market":"btctusd","created_at":"2019-08-02T13:19:38+02:00","maker_type":"buy"},{"id":126780,"price":"10446.419689","volume":"0.008652","funds":"90.382423149228","market":"btctusd","created_at":"2019-08-02T13:01:57+02:00","maker_type":"buy"},{"id":126753,"price":"10432.671455","volume":"0.000922","funds":"9.61892308151","market":"btctusd","created_at":"2019-08-02T12:36:58+02:00","maker_type":"buy"},{"id":126749,"price":"10426.374326","volume":"0.016567","funds":"172.733743458842","market":"btctusd","created_at":"2019-08-02T12:32:14+02:00","maker_type":"buy"},{"id":126741,"price":"10385.525519","volume":"0.006364","funds":"66.093484402916","market":"btctusd","created_at":"2019-08-02T12:24:18+02:00","maker_type":"buy"},{"id":126740,"price":"10422.643799","volume":"0.016684","funds":"173.891389142516","market":"btctusd","created_at":"2019-08-02T12:24:17+02:00","maker_type":"buy"},{"id":126723,"price":"10402.687968","volume":"0.008796","funds":"91.502043366528","market":"btctusd","created_at":"2019-08-02T12:10:32+02:00","maker_type":"buy"},{"id":126704,"price":"10391.67643","volume":"0.004496","funds":"46.72097722928","market":"btctusd","created_at":"2019-08-02T11:53:48+02:00","maker_type":"buy"},{"id":126703,"price":"10416.406358","volume":"0.016996","funds":"177.037242460568","market":"btctusd","created_at":"2019-08-02T11:53:48+02:00","maker_type":"buy"},{"id":126689,"price":"10412.230952","volume":"0.003728","funds":"38.816796989056","market":"btctusd","created_at":"2019-08-02T11:45:20+02:00","maker_type":"buy"},{"id":126688,"price":"10432.701299","volume":"0.014237","funds":"148.530368393863","market":"btctusd","created_at":"2019-08-02T11:45:19+02:00","maker_type":"buy"},{"id":126668,"price":"10414.18396","volume":"0.004751","funds":"49.47778799396","market":"btctusd","created_at":"2019-08-02T11:25:57+02:00","maker_type":"buy"},{"id":126667,"price":"10442.271343","volume":"0.019464","funds":"203.248369420152","market":"btctusd","created_at":"2019-08-02T11:25:57+02:00","maker_type":"buy"},{"id":126657,"price":"10482.97885","volume":"0.013142","funds":"137.7673080467","market":"btctusd","created_at":"2019-08-02T11:17:09+02:00","maker_type":"buy"},{"id":126650,"price":"10480.869859","volume":"0.018052","funds":"189.200662694668","market":"btctusd","created_at":"2019-08-02T11:12:42+02:00","maker_type":"buy"},{"id":126646,"price":"10469.180875","volume":"0.018295","funds":"191.533664108125","market":"btctusd","created_at":"2019-08-02T11:06:00+02:00","maker_type":"buy"},{"id":126629,"price":"10453.224169","volume":"0.005078","funds":"53.081472330182","market":"btctusd","created_at":"2019-08-02T10:56:14+02:00","maker_type":"buy"}]'
+    http_version: 
+  recorded_at: Mon, 05 Aug 2019 03:06:26 GMT
+recorded_with: VCR 4.0.0

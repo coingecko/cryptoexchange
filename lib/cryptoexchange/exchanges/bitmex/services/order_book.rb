@@ -15,8 +15,7 @@ module Cryptoexchange::Exchanges
         end
 
         def orderbook_url(market_pair)
-          symbol = (market_pair.target = "USD") ? market_pair.base : market_pair.target
-          "#{Cryptoexchange::Exchanges::Bitmex::Market::API_URL}/orderBook/L2?symbol=#{symbol}&depth=0"
+          "#{Cryptoexchange::Exchanges::Bitmex::Market::API_URL}/orderBook/L2?symbol=#{market_pair.inst_id}&depth=0"
         end
 
         def split(output)
@@ -25,7 +24,7 @@ module Cryptoexchange::Exchanges
             output.each do |order|
               order['side'].include?("Buy") ? bids<<order : asks<<order
             end
-          {asks: asks, bids: bids}
+          { asks: asks, bids: bids }
         end
 
         def adapt(output, market_pair)

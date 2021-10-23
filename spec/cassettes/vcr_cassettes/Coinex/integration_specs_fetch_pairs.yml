@@ -12,50 +12,55 @@ http_interactions:
       Host:
       - api.coinex.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Sat, 22 Sep 2018 01:16:57 GMT
+      - Thu, 09 May 2019 08:52:45 GMT
+      Content-Type:
+      - application/json
       Content-Length:
-      - '1647'
+      - '1690'
       Connection:
       - close
       Set-Cookie:
-      - __cfduid=d2c81e2be436cfc203a5cc40d4690c3181537579016; expires=Sun, 22-Sep-19
-        01:16:56 GMT; path=/; domain=.coinex.com; HttpOnly; Secure
+      - __cfduid=d01bb5ac89d92ab384f2665b4201665131557391965; expires=Fri, 08-May-20
+        08:52:45 GMT; path=/; domain=.coinex.com; HttpOnly; Secure
+      Accept-Ranges:
+      - bytes
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 45e0edd5783b2d0b-KUL
+      - 4d4270673e1fc0fa-KUL
     body:
       encoding: ASCII-8BIT
-      string: '{"code": 0, "data": ["TRXETH", "SOPBTC", "VITEBCH", "SEERBTC", "HOTBCH",
-        "SEELEBTC", "CETBTC", "GNTBTC", "DOGEBTC", "KANETH", "LFTBTC", "LTCBTC", "VITEETH",
-        "QTUMBTC", "ETHBCH", "EOSUSDT", "MGDBTC", "WINGSBTC", "LFTBCH", "THPCETH",
-        "VETETH", "ETHBTC", "LTCBCH", "BBNBTC", "OLTETH", "SOPBCH", "ULTBTC", "OLTBCH",
-        "DCRBCH", "BBNETH", "OLTBTC", "DCRBTC", "DACCBCH", "MTBCH", "XMRBCH", "NOBSBCH",
-        "SEELEUSDT", "CETUSDT", "NEOBTC", "CTXCBCH", "LFTUSDT", "ZILBCH", "BTCBCH",
-        "WINGSETH", "CTXCBTC", "XRPBCH", "ETCBCH", "CNNBCH", "DACCETH", "MTETH", "XRPBTC",
-        "ETCBTC", "SEELEBCH", "CETBCH", "BTMETH", "OMGETH", "EOSETH", "DASHUSDT",
-        "CTXCETH", "CMTBTC", "ZILETH", "HSRBCH", "SOPETH", "NOBSBTC", "OLTUSDT", "DASHBCH",
-        "THPCBTC", "VETBTC", "SEERBCH", "NOBSETH", "HYDROBTC", "CMTBCH", "WHCBCH",
-        "BTUCET", "ZRXETH", "SCBTC", "BBNBCH", "DACCBTC", "MTBTC", "XMRBTC", "OMGBTC",
-        "BTMBTC", "EOSBTC", "THPCBCH", "VETBCH", "CMTETH", "BCHUSDT", "HOTETH", "WWBBCH",
-        "EGTBCH", "NASHBCH", "CNNBTC", "TCTBCH", "LOOMBCH", "LTCUSDT", "TCTBTC", "LOOMBTC",
-        "OMGBCH", "BTMBCH", "EOSBCH", "BTCUSDT", "CARDBCH", "EGTETH", "NASHETH", "NANOBTC",
-        "ZRXBTC", "HYDROBCH", "TCTETH", "LOOMETH", "ZILBTC", "ETHUSDT", "DASHBTC",
-        "MGDBCH", "WINGSBCH", "ETCUSDT", "XRPUSDT", "GNTBCH", "DOGEBCH", "WWBBTC",
-        "CARDETH", "EGTBTC", "NASHBTC", "TRXBCH", "RHOCBCH", "CDYBCH", "ZECBCH", "SCUSDT",
-        "HOTBTC", "ULTBCH", "CNNETH", "HSRBTC", "CODYBCH", "KANBCH", "GNTETH", "QTUMBCH",
-        "LFTETH", "XMRUSDT", "KANBTC", "SCBCH", "VITEBTC", "NEOBCH", "ULTETH", "CODYETH",
-        "HYDROETH", "TRXBTC", "RHOCBTC", "ZECBTC", "NANOBCH", "ZRXBCH", "SEERETH",
-        "ZECUSDT", "SEELEETH", "CETETH", "CARDBTC"], "message": "OK"}'
+      string: '{"code": 0, "data": ["ONTUSDT", "TRXETH", "ADABCH", "XLMBCH", "HOTBCH",
+        "SEELEBTC", "CETBTC", "BATETH", "BTUBCH", "GNTBTC", "DOGEBTC", "ETHUSDC",
+        "NEOUSDT", "LTCBTC", "NNBBTC", "BTCUSDC", "HCBCH", "BSVBCH", "ETHBCH", "QTUMBTC",
+        "EOSUSDT", "WINGSBTC", "VETETH", "THPCETH", "LTCBCH", "HCBTC", "BSVBTC", "ETHBTC",
+        "LAMBUSDT", "BTUBTC", "PAXUSDT", "BCHUSDC", "DCRBCH", "ULTBTC", "CODYBTC",
+        "XMRBCH", "MTBCH", "OLTBTC", "DCRBTC", "CETUSDT", "BATUSDT", "NEOBTC", "ZILBCH",
+        "GUSDUSDT", "XRPBCH", "ETCBCH", "CTXCBTC", "NANOUSDT", "MTETH", "SEELEBCH",
+        "CETBCH", "XRPBTC", "ETCBTC", "DASHUSDT", "OMGETH", "EOSETH", "BTMETH", "XZCBCH",
+        "ONTBCH", "LINKBCH", "CMTBTC", "ADAUSDT", "ZILETH", "BATBCH", "ONGBCH", "DASHBCH",
+        "BTTBCH", "VETBTC", "THPCBTC", "USDCUSDT", "WHCBCH", "HYDROBTC", "BTCPAX",
+        "CETUSDC", "ZRXETH", "SCBTC", "XMRBTC", "MTBTC", "BTCTUSD", "ETHPAX", "VETBCH",
+        "THPCBCH", "OMGBTC", "EOSBTC", "BTMBTC", "BCHUSDT", "NNBBCH", "BTCGUSD", "HOTETH",
+        "BATBTC", "XLMUSDT", "LINKETH", "TUSDUSDT", "CNNBTC", "BCHBTC", "LTCUSDT",
+        "OMGBCH", "EOSBCH", "BTMBCH", "TCTBTC", "LOOMBTC", "LFCBTC", "BTCUSDT", "CARDBCH",
+        "LAMBBTC", "ZRXBTC", "NANOBTC", "TCTETH", "LOOMETH", "ZILBTC", "BSVUSDT",
+        "ETHUSDT", "LAMBETH", "ONGBTC", "DASHBTC", "BTTBTC", "XRPUSDT", "ETCUSDT",
+        "GNTBCH", "DOGEBCH", "CARDETH", "ZECBCH", "TRXBCH", "WWBBTC", "EGTBTC", "XLMBTC",
+        "HOTBTC", "XRPUSDC", "LINKBTC", "CODYBCH", "BCHTUSD", "GNTETH", "QTUMBCH",
+        "ETHTUSD", "XMRUSDT", "SCBCH", "KANBTC", "NEOBCH", "ADABTC", "BCHPAX", "ETHGUSD",
+        "NNBCET", "LTCUSDC", "ULTETH", "CODYETH", "XZCBTC", "ONTBTC", "HYDROETH",
+        "ZRXBCH", "NANOBCH", "ZECBTC", "TRXBTC", "BCHGUSD", "ZECUSDT", "TRXUSDT",
+        "SEELEETH", "CETETH", "CARDBTC"], "message": "OK"}'
     http_version: 
-  recorded_at: Sat, 22 Sep 2018 01:16:57 GMT
+  recorded_at: Thu, 09 May 2019 08:52:45 GMT
 recorded_with: VCR 4.0.0

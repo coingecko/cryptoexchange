@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bitforex.com/api/v1/market/depth?size=200&symbol=coin-usdt-btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bitforex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Aug 2019 08:54:58 GMT
+      Content-Type:
+      - text/html;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - HttpOnly=true
+      - __cfduid=d271bad2ea27b05ec3db8fc70f66d695c1564649698; expires=Fri, 31-Jul-20
+        08:54:58 GMT; path=/; domain=.bitforex.com; HttpOnly
+      - secure=true
+      Vary:
+      - Accept-Encoding
+      X-Application-Context:
+      - www-bitforex-gateway:7979
+      Accept-Charset:
+      - big5, big5-hkscs, cesu-8, euc-jp, euc-kr, gb18030, gb2312, gbk, ibm-thai,
+        ibm00858, ibm01140, ibm01141, ibm01142, ibm01143, ibm01144, ibm01145, ibm01146,
+        ibm01147, ibm01148, ibm01149, ibm037, ibm1026, ibm1047, ibm273, ibm277, ibm278,
+        ibm280, ibm284, ibm285, ibm290, ibm297, ibm420, ibm424, ibm437, ibm500, ibm775,
+        ibm850, ibm852, ibm855, ibm857, ibm860, ibm861, ibm862, ibm863, ibm864, ibm865,
+        ibm866, ibm868, ibm869, ibm870, ibm871, ibm918, iso-2022-cn, iso-2022-jp,
+        iso-2022-jp-2, iso-2022-kr, iso-8859-1, iso-8859-13, iso-8859-15, iso-8859-2,
+        iso-8859-3, iso-8859-4, iso-8859-5, iso-8859-6, iso-8859-7, iso-8859-8, iso-8859-9,
+        jis_x0201, jis_x0212-1990, koi8-r, koi8-u, shift_jis, tis-620, us-ascii, utf-16,
+        utf-16be, utf-16le, utf-32, utf-32be, utf-32le, utf-8, windows-1250, windows-1251,
+        windows-1252, windows-1253, windows-1254, windows-1255, windows-1256, windows-1257,
+        windows-1258, windows-31j, x-big5-hkscs-2001, x-big5-solaris, x-compound_text,
+        x-euc-jp-linux, x-euc-tw, x-eucjp-open, x-
+      - ibm1006, x-ibm1025, x-ibm1046, x-ibm1097, x-ibm1098, x-ibm1112, x-ibm1122,
+        x-ibm1123, x-ibm1124, x-ibm1166, x-ibm1364, x-ibm1381, x-ibm1383, x-ibm300,
+        x-ibm33722, x-ibm737, x-ibm833, x-ibm834, x-ibm856, x-ibm874, x-ibm875, x-ibm921,
+        x-ibm922, x-ibm930, x-ibm933, x-ibm935, x-ibm937, x-ibm939, x-ibm942, x-ibm942c,
+        x-ibm943, x-ibm943c, x-ibm948, x-ibm949, x-ibm949c, x-ibm950, x-ibm964, x-ibm970,
+        x-iscii91, x-iso-2022-cn-cns, x-iso-2022-cn-gb, x-iso-8859-11, x-jis0208,
+        x-jisautodetect, x-johab, x-macarabic, x-maccentraleurope, x-maccroatian,
+        x-maccyrillic, x-macdingbat, x-macgreek, x-machebrew, x-maciceland, x-macroman,
+        x-macromania, x-macsymbol, x-macthai, x-macturkish, x-macukraine, x-ms932_0213,
+        x-ms950-hkscs, x-ms950-hkscs-xp, x-mswin-936, x-pck, x-sjis_0213, x-utf-16le-bom,
+        x-utf-32be-bom, x-utf-32le-bom, x-windows-50220, x-windows-50221, x-windows-874,
+        x-windows-949, x-windows-950, x-windows-iso2022jp
+      Strict-Transport-Security:
+      - max-age=15768000
+      - max-age=63072000; includeSubdomains; preload
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4ff69728b8732d1b-KUL
+    body:
+      encoding: UTF-8
+      string: '{"data":{"asks":[{"amount":0.002,"price":100000},{"amount":0.0149,"price":50000},{"amount":0.0545,"price":19000},{"amount":0.0132,"price":17990},{"amount":0.1563,"price":15000},{"amount":0.0039,"price":14926.2},{"amount":0.0637,"price":14800},{"amount":0.0161,"price":14500},{"amount":0.0026,"price":14049},{"amount":1.0033,"price":14000},{"amount":0.0039,"price":13926.2},{"amount":0.0636,"price":13785},{"amount":0.0107,"price":13500},{"amount":0.158,"price":13489},{"amount":0.0081,"price":13450},{"amount":0.0051,"price":13290.14},{"amount":0.0654,"price":13100},{"amount":0.1261,"price":13050},{"amount":0.1126,"price":13000},{"amount":0.012,"price":12940},{"amount":0.004,"price":12923.36},{"amount":0.0037,"price":12900},{"amount":0.005,"price":12700},{"amount":0.0882,"price":12530.02},{"amount":0.1255,"price":12482.5},{"amount":0.026,"price":12200},{"amount":0.5358,"price":12000},{"amount":0.0021,"price":11995.56},{"amount":0.2,"price":11985.79},{"amount":0.033,"price":11700},{"amount":0.0143,"price":11500},{"amount":0.0096,"price":11350.35},{"amount":0.0288,"price":11000},{"amount":0.01,"price":10980.18},{"amount":0.01,"price":10877},{"amount":0.0125,"price":10800.95},{"amount":0.01,"price":10777},{"amount":0.4495,"price":10510},{"amount":0.01,"price":10477},{"amount":0.01,"price":10377},{"amount":0.15,"price":10310},{"amount":0.0153,"price":10250},{"amount":0.01,"price":10233},{"amount":0.0093,"price":10160.4},{"amount":0.0067,"price":10085.08},{"amount":0.541,"price":10015.94},{"amount":0.9865,"price":10013.66},{"amount":0.198,"price":10011.38},{"amount":0.4221,"price":10009.1},{"amount":0.2675,"price":10006.82},{"amount":2.9094,"price":10004.54},{"amount":0.5894,"price":10002.26},{"amount":0.3393,"price":9999.98},{"amount":0.441,"price":9997.7},{"amount":1.3085,"price":9995.42},{"amount":2.3798,"price":9993.14},{"amount":0.8839,"price":9990.86},{"amount":1.12,"price":9988.58},{"amount":0.9562,"price":9986.3},{"amount":0.7889,"price":9984.02},{"amount":1.4448,"price":9981.74},{"amount":0.2932,"price":9979.46},{"amount":0.2897,"price":9977.18},{"amount":0.0034,"price":9975.92},{"amount":4.9631,"price":9974.9},{"amount":0.3076,"price":9972.09}],"bids":[{"amount":0.5285,"price":9966.71},{"amount":1.1314,"price":9964.43},{"amount":0.9393,"price":9962.15},{"amount":1.2051,"price":9959.87},{"amount":0.3809,"price":9957.59},{"amount":0.1521,"price":9955.31},{"amount":1.1803,"price":9953.03},{"amount":0.1987,"price":9950.75},{"amount":0.6891,"price":9948.47},{"amount":0.8282,"price":9946.19},{"amount":1.3605,"price":9943.91},{"amount":0.842,"price":9941.63},{"amount":0.1852,"price":9939.35},{"amount":0.1427,"price":9937.07},{"amount":0.0189,"price":9934.79},{"amount":0.2234,"price":9932.51},{"amount":0.9142,"price":9930.23},{"amount":0.3584,"price":9927.95},{"amount":0.0468,"price":9925.67},{"amount":0.0072,"price":9923.39},{"amount":0.1728,"price":9921.11},{"amount":0.014,"price":9918.83},{"amount":2.7625,"price":9916.55},{"amount":0.0743,"price":9911.99},{"amount":0.0242,"price":9909.71},{"amount":0.0068,"price":9751},{"amount":0.0807,"price":9300},{"amount":0.3,"price":9100},{"amount":5.786,"price":9041.52},{"amount":3.8967,"price":8986.56},{"amount":0.0167,"price":8971.11},{"amount":0.0031,"price":8800},{"amount":5.3323,"price":8785.24},{"amount":0.0071,"price":8630},{"amount":0.0069,"price":8592.3},{"amount":0.0327,"price":8552},{"amount":0.0067,"price":8500},{"amount":0.0021,"price":8434.9},{"amount":0.1624,"price":8344},{"amount":0.0055,"price":7600},{"amount":0.0407,"price":7150},{"amount":0.0758,"price":7100},{"amount":0.0212,"price":6852},{"amount":0.0108,"price":6800},{"amount":0.0219,"price":6634},{"amount":0.4818,"price":6400},{"amount":0.01,"price":6000},{"amount":0.01,"price":5750},{"amount":0.01,"price":5500},{"amount":0.21,"price":5395},{"amount":0.0135,"price":5350},{"amount":0.02,"price":5250},{"amount":0.03,"price":5000},{"amount":0.02,"price":4069.92},{"amount":0.035,"price":3800},{"amount":0.003,"price":3793.26},{"amount":0.0817,"price":3704.25},{"amount":0.002,"price":3678.35},{"amount":0.002,"price":3576.34},{"amount":0.0091,"price":3104.99},{"amount":0.0278,"price":3000},{"amount":0.0021,"price":2912.59},{"amount":0.004,"price":2874.59},{"amount":0.002,"price":2636.59},{"amount":0.004,"price":2525.59},{"amount":0.002,"price":2364.59},{"amount":0.0417,"price":2295.98},{"amount":0.002,"price":2235.59},{"amount":0.0021,"price":2183.59},{"amount":1,"price":1500},{"amount":0.0106,"price":1000},{"amount":0.0448,"price":577.79},{"amount":9.8275,"price":400},{"amount":0.0053,"price":62.27},{"amount":0.0099,"price":4.1},{"amount":1.0926,"price":2},{"amount":0.999,"price":1.63},{"amount":2.2189,"price":1},{"amount":0.02,"price":0.98},{"amount":0.02,"price":0.57},{"amount":1.0338,"price":0.13},{"amount":1.1018,"price":0.1},{"amount":10,"price":0.01}]},"success":true,"time":1564649698691}'
+    http_version: 
+  recorded_at: Thu, 01 Aug 2019 08:54:57 GMT
+recorded_with: VCR 4.0.0

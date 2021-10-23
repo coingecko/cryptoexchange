@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.artisturba.com/api/order_book/ETN_ETH
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.artisturba.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Date:
+      - Thu, 23 Jan 2020 07:34:31 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '766'
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d55fc5df1bec229d8bd594003ba77666a1579764871; expires=Sat, 22-Feb-20
+        07:34:31 GMT; path=/; domain=.artisturba.com; HttpOnly; SameSite=Lax
+      - ci_session=eomei2gp9lltpmraguetib5laur7lt81; path=/; HttpOnly
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 559815ebbb0ba952-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"1","message":"Success","bids":[["7400.93800000","0.00002275"],["5144.00000000","0.0000225"],["1400.00000000","0.000022"],["1450.00000000","0.0000215"],["1253.00000000","0.000021"],["1133.00000000","0.0000205"],["150000.00000000","0.00002"],["10000.00000000","0.000013"],["10000.00000000","0.000012"],["10000.00000000","0.000011"],["10000.00000000","0.00001"],["10000.00000000","0.000009"],["10000.00000000","0.000008"],["10000.00000000","0.000007"]],"asks":[["7300.00000000","0.00002325"],["5500.00000000","0.0000235"],["2500.00000000","0.000024"],["1261.00000000","0.0000245"],["2696.50000000","0.0000265"],["2345.06000000","0.000027"],["1670.00000000","0.0000275"],["1735.00000000","0.000028"],["125000.00000000","0.00003"],["0.03566459","1.00002041"]]}'
+    http_version: 
+  recorded_at: Thu, 23 Jan 2020 07:34:31 GMT
+recorded_with: VCR 4.0.0

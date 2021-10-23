@@ -1,0 +1,115 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.bitforex.com/contract/swap/contract/contractDetail/swap-usd-btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bitforex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Oct 2019 08:38:51 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - HttpOnly=true
+      - JSESSIONID=4DBF96702438E7D7D20B186951C2CFA5-n1; Path=/; HttpOnly
+      - __cfduid=da8c95cfdfa79042251183433a8b29eda1570091931; expires=Fri, 02-Oct-20
+        08:38:51 GMT; path=/; domain=.bitforex.com; HttpOnly
+      - secure=true
+      Vary:
+      - Access-Control-Request-Headers
+      - Access-Control-Request-Method
+      - Origin
+      Access-Control-Allow-Origin:
+      - www.bitforex.com
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Strict-Transport-Security:
+      - max-age=15768000
+      - max-age=63072000; includeSubdomains; preload
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51fd9a2bcb25dd4e-KUL
+    body:
+      encoding: UTF-8
+      string: '{"data":{"symbol":"swap-usd-btc","endDate":"永续","iniMargins":0.0100000000000000,"maintenanceMargins":0.0050000000000000,"baseSymbol":"BTC","priceSymbol":"USD","premiumSymbol":"BTC","fundRate":0.00004348,"fundRatePeriod":8.00,"nextFundRateTime":1570118400000,"flagPrice":8286.33,"isAutoReduce":true,"limitQuota":200000.0000000000000000,"notBalanceNum":5561620,"contractType":"1","contractFactor":1.0000000000000000,"minChangePrice":0.5000000000000000,"maxUserVolume":5500000,"maxDelegateNum":2000000,"minDelegateNum":1,"pricePrecision":2,"basePrecision":8,"feeRateTaker":0.0006000000000000,"feeRateMaker":0.0004000000000000,"baseLoanRate":0.00030,"quotaLoanRate":0.00060,"openBuyLimitRateMax":0.0200000000000000,"openSellLimitRateMax":1000.0000000000000000,"openBuyLimitRateMin":1.0000000000000000,"openSellLimitRateMin":0.0200000000000000,"priceOrderPrecision":1,"baseShowPrecision":8,"deepJoinNum":"2","depthConfig":"1,2,5,10,20"},"code":"200","message":"成功"}'
+    http_version: 
+  recorded_at: Thu, 03 Oct 2019 08:38:50 GMT
+- request:
+    method: get
+    uri: https://www.bitforex.com/contract/swap/contract/commonInfo/swap-usd-btc
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.bitforex.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 03 Oct 2019 08:38:51 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - HttpOnly=true
+      - JSESSIONID=0061DA5BEAA6FA51B738E73FA1E00BBA-n1; Path=/; HttpOnly
+      - __cfduid=d874e5faca065f21b5a80705e25a80e951570091931; expires=Fri, 02-Oct-20
+        08:38:51 GMT; path=/; domain=.bitforex.com; HttpOnly
+      - secure=true
+      Vary:
+      - Access-Control-Request-Headers
+      - Access-Control-Request-Method
+      - Origin
+      Access-Control-Allow-Origin:
+      - www.bitforex.com
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Strict-Transport-Security:
+      - max-age=15768000
+      - max-age=63072000; includeSubdomains; preload
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51fd9a2c991edd4a-KUL
+    body:
+      encoding: UTF-8
+      string: '{"data":{"symbol":"swap-usd-btc","indexPrice":"8286.00","flagPrice":"8286.33","fundRate":"0.00004348","nextFundTime":1570118400000,"loanRate":0.000100,"thirdPriceWeight":"BitStamp,33.33;CoinbasePro,33.33;GEMINI,33.34"},"code":"200","message":"成功"}'
+    http_version: 
+  recorded_at: Thu, 03 Oct 2019 08:38:50 GMT
+recorded_with: VCR 4.0.0

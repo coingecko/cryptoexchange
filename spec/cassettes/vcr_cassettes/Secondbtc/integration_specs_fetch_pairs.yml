@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://secondbtc.com/api/ticker
+    uri: https://secondbtc.com/api/public/tickers
     body:
       encoding: UTF-8
       string: ''
@@ -12,43 +12,53 @@ http_interactions:
       Host:
       - secondbtc.com
       User-Agent:
-      - http.rb/3.0.0
+      - http.rb/5.0.0.pre
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Sun, 11 Nov 2018 04:21:10 GMT
+      - Mon, 09 Mar 2020 16:10:00 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Content-Length:
-      - '3331'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - close
       Set-Cookie:
-      - PHPSESSID=e671q35jd1vlmhl06oaspavgr0; path=/
-      - __cfduid=d00ae92aa798ea0cab40a97b942f233c11541910068; expires=Mon, 11-Nov-19
-        04:21:08 GMT; path=/; domain=.secondbtc.com; HttpOnly
+      - __cfduid=da95e9b56f8daa0797dfaa977c931afa61583770199; expires=Wed, 08-Apr-20
+        16:09:59 GMT; path=/; domain=.secondbtc.com; HttpOnly; SameSite=Lax
+      - ci_session=ebeab4b60bbac8b52a3bca2f5b758e926f668286; expires=Mon, 09-Mar-2020
+        18:09:59 GMT; Max-Age=7200; path=/; HttpOnly
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
-      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      - no-store, no-cache, must-revalidate
       Pragma:
       - no-cache
-      Accept-Ranges:
-      - bytes
-      X-Turbo-Charged-By:
-      - LiteSpeed
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 477df86ae8e6a548-NRT
+      - 57161043598dc322-SIN
     body:
       encoding: UTF-8
-      string: '{"BTC_ETH":{"id":200,"last":"0.03305047","lowestAsk":"0.03425000","highestBid":"0.03303536","percentChange":0.48185,"baseVolume":"100.68435947","quoteVolume":"3038.66037300","isFrozen":"0","high24hr":"0.03333332","low24hr":"0.03289042"},"BTC_XRP":{"id":205,"last":"0.00007904","lowestAsk":"0.00012900","highestBid":"0.00007885","percentChange":0.03797,"baseVolume":"8.23240683","quoteVolume":"103798.87000000","isFrozen":"0","high24hr":"0.00008019","low24hr":"0.00007826"},"BTC_LTC":{"id":206,"last":"0.00811544","lowestAsk":"0.01180000","highestBid":"0.00810154","percentChange":-0.138556,"baseVolume":"70.13449640","quoteVolume":"8605.93742700","isFrozen":"0","high24hr":"0.00819788","low24hr":"0.00808000"},"BTC_WTC":{"id":210,"last":"0.00047080","lowestAsk":"0.00064836","highestBid":"0.00047109","percentChange":1.260378,"baseVolume":"1.13969251","quoteVolume":"2420.08190000","isFrozen":"0","high24hr":"0.00047920","low24hr":"0.00046098"},"BTC_GNT":{"id":211,"last":"0.00002608","lowestAsk":"0.00003262","highestBid":"0.00002575","percentChange":1.755755,"baseVolume":"0.27665971","quoteVolume":"10763.27900000","isFrozen":"0","high24hr":"0.00002637","low24hr":"0.00002546"},"ETH_LTC":{"id":206,"last":"0.24549601","lowestAsk":"0.45000000","highestBid":"0.24509729","percentChange":-0.722369,"baseVolume":"12.81302700","quoteVolume":"52.02342333","isFrozen":"0","high24hr":"0.24807193","low24hr":"0.24517371"},"ETH_WTC":{"id":210,"last":"0.01421865","lowestAsk":"0.01921933","highestBid":"0.01424860","percentChange":1.236023,"baseVolume":"25.86419477","quoteVolume":"1819.79910000","isFrozen":"0","high24hr":"0.01458801","low24hr":"0.01399356"},"ETH_GNT":{"id":211,"last":"0.00078206","lowestAsk":"0.00090825","highestBid":"0.00077974","percentChange":0.900552,"baseVolume":"1.73341141","quoteVolume":"2208.40300000","isFrozen":"0","high24hr":"0.00079611","low24hr":"0.00077054"},"ETH_BBC":{"id":215,"last":"0.00247496","lowestAsk":"0.00020000","highestBid":"0.00000000","percentChange":-100,"baseVolume":"0.00000000","quoteVolume":"0.00000000","isFrozen":"0","high24hr":"0.00000000","low24hr":"0.00000000"},"USDT_BTC":{"id":199,"last":"6429.01000000","lowestAsk":"6550.00000000","highestBid":"6465.46980000","percentChange":-0.134311,"baseVolume":"117326.37770371","quoteVolume":"18.20014092","isFrozen":"0","high24hr":"6468.75640000","low24hr":"6423.50000000"},"USDT_ETH":{"id":200,"last":"212.36010000","lowestAsk":"219.34900000","highestBid":"212.33850000","percentChange":0.30366,"baseVolume":"12773.11059056","quoteVolume":"59.77707870","isFrozen":"0","high24hr":"215.42900000","low24hr":"211.81230000"},"USDT_XRP":{"id":205,"last":"0.50760000","lowestAsk":"0.56624864","highestBid":"0.50740000","percentChange":-0.235849,"baseVolume":"3655.50674825","quoteVolume":"7153.67995000","isFrozen":"0","high24hr":"0.51730000","low24hr":"0.50360000"},"USDT_LTC":{"id":206,"last":"52.19340000","lowestAsk":"56.77960000","highestBid":"52.09490000","percentChange":-0.320276,"baseVolume":"15627.74706782","quoteVolume":"297.37652848","isFrozen":"0","high24hr":"52.95700000","low24hr":"51.92650000"},"USDT_BBC":{"id":215,"last":"0.59990000","lowestAsk":"0.02000000","highestBid":"0.00000000","percentChange":-100,"baseVolume":"0.00000000","quoteVolume":"0.00000000","isFrozen":"0","high24hr":"0.00000000","low24hr":"0.00000000"}}'
+      string: '[{"tradingPairs":"ETH_BTC","LastPrice":0.02502000000000000057287508070658077485859394073486328125,"percentChange":-1.7600000000000000088817841970012523233890533447265625,"low24h":0.0249739999999999996715960293158786953426897525787353515625,"high24h":0.0260839999999999995472510505578611628152430057525634765625,"baseVolume24h":2.647600000000000175504055732744745910167694091796875,"quoteVolume24h":102.88020000000000209183781407773494720458984375,"lowestAsk":0.025011999999999999511057779955081059597432613372802734375,"highestBid":0.0250030000000000009185985305748545215465128421783447265625,"lastUpdateTimestamp":"2020-03-09
+        15:34:25","tradesEnabled":true},{"tradingPairs":"BTC_USDT","LastPrice":7690,"percentChange":-8.019999999999999573674358543939888477325439453125,"low24h":7653.7100000000000363797880709171295166015625,"high24h":8360.899999999999636202119290828704833984375,"baseVolume24h":63022.21140000000013969838619232177734375,"quoteVolume24h":7.97890000000000032542857297812588512897491455078125,"lowestAsk":7710.829999999999927240423858165740966796875,"highestBid":7703.8699999999998908606357872486114501953125,"lastUpdateTimestamp":"2020-03-09
+        15:46:54","tradesEnabled":true},{"tradingPairs":"ETH_USDT","LastPrice":193.599999999999994315658113919198513031005859375,"percentChange":-10.5800000000000000710542735760100185871124267578125,"low24h":192.349999999999994315658113919198513031005859375,"high24h":216.5,"baseVolume24h":42483.347699999998440034687519073486328125,"quoteVolume24h":207.493300000000004956746124662458896636962890625,"lowestAsk":193.009999999999990905052982270717620849609375,"highestBid":192.93999999999999772626324556767940521240234375,"lastUpdateTimestamp":"2020-03-09
+        16:00:49","tradesEnabled":true},{"tradingPairs":"WTC_BTC","LastPrice":4.569999999999999952017548654481515768566168844699859619140625e-5,"percentChange":0.2200000000000000011102230246251565404236316680908203125,"low24h":4.39000000000000032015189110889963330919272266328334808349609375e-5,"high24h":4.67999999999999991527610543329274150892160832881927490234375e-5,"baseVolume24h":0.943599999999999994315658113919198513031005859375,"quoteVolume24h":20690.436000000001513399183750152587890625,"lowestAsk":4.7299999999999997753706570957632493445998989045619964599609375e-5,"highestBid":4.70999999999999996685810799146310046126018278300762176513671875e-5,"lastUpdateTimestamp":"2020-03-09
+        14:28:56","tradesEnabled":true},{"tradingPairs":"EDU_BTC","LastPrice":0,"percentChange":0,"low24h":0,"high24h":0,"baseVolume24h":0,"quoteVolume24h":0,"lowestAsk":0,"highestBid":0,"lastUpdateTimestamp":"2019-12-25
+        15:21:07","tradesEnabled":true},{"tradingPairs":"EDU_ETH","LastPrice":0,"percentChange":0,"low24h":0,"high24h":0,"baseVolume24h":0,"quoteVolume24h":0,"lowestAsk":0,"highestBid":0,"lastUpdateTimestamp":"2019-12-25
+        15:21:09","tradesEnabled":true},{"tradingPairs":"POWR_BTC","LastPrice":1.0119999999999999669105833766113988758661434985697269439697265625e-5,"percentChange":-2.600000000000000088817841970012523233890533447265625,"low24h":1.00100000000000007222868136924631699002929963171482086181640625e-5,"high24h":1.099999999999999971398746689832393030883395113050937652587890625e-5,"baseVolume24h":1.414800000000000057553961596568115055561065673828125,"quoteVolume24h":133925.2000000000116415321826934814453125,"lowestAsk":1.0159999999999999286130931974714286525340867228806018829345703125e-5,"highestBid":1.010999999999999976484955921396391431699157692492008209228515625e-5,"lastUpdateTimestamp":"2020-03-09
+        15:56:07","tradesEnabled":true},{"tradingPairs":"POWR_ETH","LastPrice":0,"percentChange":0,"low24h":0,"high24h":0,"baseVolume24h":0,"quoteVolume24h":0,"lowestAsk":0,"highestBid":0,"lastUpdateTimestamp":"2019-12-25
+        15:21:31","tradesEnabled":true},{"tradingPairs":"WTC_ETH","LastPrice":0,"percentChange":0,"low24h":0,"high24h":0,"baseVolume24h":0,"quoteVolume24h":0,"lowestAsk":0,"highestBid":0,"lastUpdateTimestamp":"2019-12-25
+        15:25:54","tradesEnabled":true}]'
     http_version: 
-  recorded_at: Sun, 11 Nov 2018 04:21:10 GMT
+  recorded_at: Mon, 09 Mar 2020 16:10:00 GMT
 recorded_with: VCR 4.0.0

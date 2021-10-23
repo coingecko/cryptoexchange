@@ -1,7 +1,8 @@
 sudo: false
 language: ruby
 rvm:
-  - 2.2.4
-  - 2.3.4
-  - 2.4.1
-before_install: gem install bundler -v 1.14.6
+  - 2.4.6
+  - 2.5.7
+before_install:
+  - gem uninstall -v '>= 2' -i $(rvm gemdir)@global -ax bundler || true
+  - gem install bundler -v 2.1.4

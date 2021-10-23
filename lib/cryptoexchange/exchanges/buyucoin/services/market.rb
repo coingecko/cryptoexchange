@@ -14,12 +14,12 @@ module Cryptoexchange::Exchanges
         end
 
         def ticker_url
-          "#{Cryptoexchange::Exchanges::Buyucoin::Market::API_URL}/currency/markets"
+          "#{Cryptoexchange::Exchanges::Buyucoin::Market::API_URL}/liveData"
         end
 
         def adapt_all(output)
-          output['data'].map do |pair, ticker|
-            base, target = pair.split('_')
+          output['data'].map do |ticker|
+            target, base = ticker['marketName'].split('-')
             market_pair = Cryptoexchange::Models::MarketPair.new(
               base: base,
               target: target,
@@ -36,11 +36,11 @@ module Cryptoexchange::Exchanges
           ticker.market    = Buyucoin::Market::NAME
           ticker.ask       = NumericHelper.to_d(output['ask'])
           ticker.bid       = NumericHelper.to_d(output['bid'])
-          ticker.high      = NumericHelper.to_d(output['high_24'])
-          ticker.low       = NumericHelper.to_d(output['low_24'])
-          ticker.change    = NumericHelper.to_d(output['change'])
-          ticker.last      = NumericHelper.to_d(output['last_trade'])
-          ticker.volume    = NumericHelper.to_d(output['vol'])
+          ticker.high      = NumericHelper.to_d(output['h24'])
+          ticker.low       = NumericHelper.to_d(output['l24'])
+          ticker.change    = NumericHelper.to_d(output['c24'])
+          ticker.last      = NumericHelper.to_d(output['LTRate'])
+          ticker.volume    = NumericHelper.to_d(output['v24'])
           ticker.timestamp = nil
           ticker.payload   = output
           ticker

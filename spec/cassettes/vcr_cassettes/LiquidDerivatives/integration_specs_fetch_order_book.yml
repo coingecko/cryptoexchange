@@ -1,0 +1,149 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.liquid.com/products?perpetual=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.liquid.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 02 Apr 2020 07:13:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=d222504a1887063f61f7b22e3f884e3b91585811588; expires=Sat, 02-May-20
+        07:13:08 GMT; path=/; domain=.liquid.com; HttpOnly; SameSite=Lax; Secure
+      - _vax_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWU3NmVhMjM4NTMwNzhmZmVlNjc2NzhkM2U2ZTlmMDIwBjsAVEkiCWxhbmcGOwBGOgdlbg%3D%3D--fbf40592c4c239d78a00d8adaeb4c9982d7ae1e4;
+        path=/; secure; HttpOnly
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"eeaa6cde0f631e7223fa16d95c753a38"
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=2592000
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 spaces-router (d1390724e8f6)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 4ee0861a-655c-b4cf-c7c5-cda75f9bf9d5
+      X-Runtime:
+      - '0.059936'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57d8bedc3a97cc08-SIN
+    body:
+      encoding: UTF-8
+      string: '[{"id":"604","product_type":"Perpetual","code":"CASH","name":null,"market_ask":6650.0,"market_bid":6646.5,"indicator":null,"currency":"USD","currency_pair_code":"P-BTCUSD","symbol":"$","btc_minimum_withdraw":null,"fiat_minimum_withdraw":null,"pusher_channel":"product_cash_p-btcusd_604","taker_fee":"0.0","maker_fee":"0.0","low_market_bid":"6176.5","high_market_ask":"6777.0","volume_24h":"179.16494616","last_price_24h":"6335.0","last_traded_price":"6651.0","last_traded_quantity":"0.016","quoted_currency":"USD","base_currency":"P-BTC","tick_size":"0.5","disabled":false,"margin_enabled":false,"cfd_enabled":false,"perpetual_enabled":true,"last_event_timestamp":"1585811588.325","timestamp":"1585811588.325","index_price":"6638.43167","mark_price":"6647.25048","funding_rate":"0.00088","fair_price":"6646.34284"},{"id":"603","product_type":"Perpetual","code":"CASH","name":null,"market_ask":713400.0,"market_bid":712950.0,"indicator":null,"currency":"JPY","currency_pair_code":"P-BTCJPY","symbol":"¥","btc_minimum_withdraw":null,"fiat_minimum_withdraw":null,"pusher_channel":"product_cash_p-btcjpy_603","taker_fee":"0.0","maker_fee":"0.0","low_market_bid":"661300.0","high_market_ask":"726800.0","volume_24h":"26.33748996","last_price_24h":"681700.0","last_traded_price":"714300.0","last_traded_quantity":"0.01","quoted_currency":"JPY","base_currency":"P-BTC","tick_size":"50.0","disabled":false,"margin_enabled":false,"cfd_enabled":false,"perpetual_enabled":true,"last_event_timestamp":"1585811588.325","timestamp":"1585811588.325","index_price":"712137.75704","mark_price":"713069.63713","funding_rate":"0.00086","fair_price":"712996.29202"}]'
+    http_version: 
+  recorded_at: Thu, 02 Apr 2020 07:13:09 GMT
+- request:
+    method: get
+    uri: https://api.liquid.com/products/604/price_levels
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - api.liquid.com
+      User-Agent:
+      - http.rb/5.0.0.pre
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 02 Apr 2020 07:13:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Set-Cookie:
+      - __cfduid=da4a9192058d2f05e59bbcc71fe5f24591585811589; expires=Sat, 02-May-20
+        07:13:09 GMT; path=/; domain=.liquid.com; HttpOnly; SameSite=Lax; Secure
+      Cache-Control:
+      - public, max-age=30
+      Etag:
+      - W/"466c93aad3973fca3052359ad7788f02"
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=2592000
+      Vary:
+      - Accept-Encoding
+      Via:
+      - 1.1 spaces-router (d1390724e8f6)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 1d7d5350-7ba6-2fa9-e434-1c34486424ae
+      X-Runtime:
+      - '0.033876'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - EXPIRED
+      Expires:
+      - Thu, 02 Apr 2020 07:13:40 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 57d8bee41adad9f0-SIN
+    body:
+      encoding: UTF-8
+      string: '{"buy_price_levels":[["6646.50000","0.01900000"],["6645.50000","0.00544681"],["6644.50000","0.53757814"],["6644.00000","0.08797890"],["6643.50000","0.54525386"],["6643.00000","0.75054151"],["6641.50000","0.06308075"],["6641.00000","0.55000013"],["6640.50000","1.02500013"],["6639.50000","0.34500000"],["6639.00000","0.53172925"],["6638.00000","0.06000000"],["6637.50000","0.02000000"],["6637.00000","0.34188975"],["6636.00000","0.62416443"],["6635.50000","0.29565000"],["6634.00000","0.43200000"],["6633.50000","1.32000000"],["6633.00000","0.28800000"],["6632.50000","0.48166443"],["6632.00000","0.45116443"]],
+        "sell_price_levels":[["6650.00000","0.05000000"],["6650.50000","0.08800000"],["6651.00000","0.04297814"],["6651.50000","0.31607890"],["6652.00000","1.25672966"],["6652.50000","0.31900000"],["6653.00000","0.24210000"],["6653.50000","0.59500000"],["6654.00000","0.14410000"],["6654.50000","0.04200000"],["6655.00000","5.14495080"],["6655.50000","0.35583557"],["6656.00000","0.57250001"],["6656.50000","1.44685000"],["6657.00000","0.01600000"],["6657.50000","0.20000000"],["6658.00000","0.39500008"],["6659.50000","0.46800000"],["6660.00000","2.24155000"],["6660.50000","0.31150000"],["6662.00000","0.31400000"]],
+        "timestamp":"1585811588.618679431"}'
+    http_version: 
+  recorded_at: Thu, 02 Apr 2020 07:13:10 GMT
+recorded_with: VCR 4.0.0
